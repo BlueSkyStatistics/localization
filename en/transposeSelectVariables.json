@@ -1,0 +1,11 @@
+{
+  "title": "Transpose Dataset, select variables",
+  "navigation": "Select Variables",
+  "transposedDataset": "Enter a name for the transposed dataset",
+  "destination": "Select variables to transpose",
+  "help": {
+    "title": "Transpose Selected Variables",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Description</b></br>\nInvokes the transpose function in the base package that transposes the variables selected and stores the results in the new dataset. You have to specify the name of the dataset that stores the transposed dataset. The new transposed dataset is displayed in the grid.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: is a matrix or dataframe\n</li>\n</ul>\n<b>Value</b><br/>\nA matrix, with dim and dimnames constructed appropriately from those of x, and other attributes except names copied across.<br/>\n<b>Package</b></br>\nbase<br/>\n<b>Help</b></br>\nhelp(t, package='base')\n"
+  }
+}

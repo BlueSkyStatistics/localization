@@ -1,0 +1,13 @@
+{
+  "title":"Ein Datensatz aus einem R-Paket laden",
+  "navigation":"Datensatz laden",
+  "label1":"Wenn das R-Paket nicht verfügbar ist, gehen Sie zu Tools> Paket> Installieren Sie das R-Paket von CRAN, um es zu installieren.",
+  "label2":"Wenn Sie in der Dropdown-Liste keinen Datensatz sehen, enthält das ausgewählte Paket den Datensatz nicht.",
+  "selectAPackage":"Wählen Sie ein R-Paket aus, aus dem ein Datensatz geladen werden soll",
+  "selectADataset":"Wählen Sie einen Datensatz aus, der in das Raster geladen werden soll",
+  "help":{
+    "title":"Ein Datensatz aus einem R-Paket laden",
+    "r_help":"help(data,package='utils')",
+    "body":"<b>Beschreibung</b></br>Lädt den ausgewählten Datensatz in das BlueSky Statistics Datenraster. Verwendet die Funktion data, die spezifizierte Datensätze lädt oder die verfügbaren Datensätze auflistet.<br/><b>Verwendung</b><br/><code>#Lädt den Datensatz in den Speicher<br/>data(..., package = NULL, overwrite = TRUE)<br/>#Lädt den Datensatz in das BlueSky Statistics Datenraster<br/>BSkyLoadRefresh(\"Name des Datensatzes\")<br/></code> <br/><b>Argumente</b><br/><ul><li>...: literal Zeichenketten oder Namen der zu ladenden Datensätze</li><li>package: ein Zeichenvektor, der angibt, in welchen Paketen nach Datensätzen gesucht werden soll, oder NULL.</li><li>overwrite: logisch: Sollen vorhandene Objekte mit dem gleichen Namen in envir ersetzt werden?</li></ul><b>Details</b></br>Lädt den spezifizierten Datensatz in das Datenraster</br><b>Wert</b><br/>Ein Datenrahmen.<br/><b>Beispiele</b><br/><code>## Ein lächerliches Beispiel...data(oil)BSkyLoadRefresh(\"oil\")</code> <br/><b>Paket</b></br>utils</br><b>Hilfe</b></br>Für detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfeldes oder führen Sie den folgenden Befehl aus help(data, package ='utils') durch Erstellen eines R-Code-Abschnitts durch Klicken auf + im Ausgabefenster"
+  }
+}
