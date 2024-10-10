@@ -1,0 +1,14 @@
+{
+    "title": "Numerical Statistics, using summarize",
+    "navigation": "Numerical Summaries, using summarize (Legacy)",
+    "tvarbox1": "Selected Variables",
+    "tvarbox2": "Group by",
+    "label1": "Display Options",
+    "horizontal": "Horizontal display",
+    "vertical": "Vertical display",
+    "help": {
+        "title": "Numerical Statistics, using summarize",
+        "r_help": "",
+        "body": "\n<b>Description</b></br>\nOutputs the  following numerical statistics for each group of the target variables. The target variables can be optionally grouped by one or more factor or numeric variables. Prints the following information for the target variables or each group that the target variables are grouped by namely min, 1st quantile (25%), max, mean, median, 3rd Quantile (75%), sum,variance,  standard deviation, stdard error, skewness, kurtosis\n<br/>\n<b>Usage</b>\n<br/>\n<code> \n##The function below is run for each target variable and the resulting dataframes  are transposed and combined<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndataset1: This is the dataset\n</li>\n<li>\ngroup_by: Optionally group the target variables by one or more factor or numeric variables\n</li>\n<li>\nsummarize: Summarize the target variables or groups of the target variables (if variables specified in the group_by) by the summary functions specified namely mean, median, min...\n</li>\n</ul>\n<b>Value</b></br>\nAn object of class \"data.frame\", giving the results for each function on each variable.</br>\n<b>Package</b></br>\ncaret</br>\n<b>Help</b></br>\nR Help is not available because in we have written custom code using  multiple  R functions. If you need to inspect the code click the \"<>\" button.</br>\n    "
+    }
+}

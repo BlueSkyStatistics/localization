@@ -1,0 +1,18 @@
+{
+    "title": "Sample Size, Test One Mean or Paired Means",
+    "navigation": "One Mean or Paired Means",
+    "howtouse": "Specify two of sample size, difference between means, and power, and the third will be computed",
+    "n": "Sample Size",
+    "delta": "Difference Between Means",
+    "power": "Power (0-1)",
+    "sd": "Standard Deviation",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "help": {
+        "title": "Sample Size, Test One Mean",
+        "r_help": "help(power.t.test, package ='stats')",
+        "body": "\nThis is an assessment of sample size for a one-sample t-test of a mean or a test of paired means.  It computes the sample size, difference between means, or the power, when the user \nspecifies two of them.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Difference Between Means:</b> If a one-sample t-test, specify the difference between the mean under the alternative hypothesis and the mean under the null hypothesis.  If a\npaired t-test, specify the difference between the paired means under the alternative hypothesis.\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Standard Deviation:</b> Specify an estimate of the standard deviation of the outcome measure.  For paired tests, this is the standard deviation of the paired differences.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Required R Packages:</b> stats, broom\n\t\t\t"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Simple Rasch Model (Multi-faceted)",
+    "navigation": "Simple Rasch Model (Multi-faceted)",
+    "modelname": "Enter model name",
+    "destinationvars": "Items",
+    "firstlevel": "First level variable",
+    "secondlevel": "Second level variable",
+    "help": {
+        "title": "Simple Rasch Model (Multi-faceted)",
+        "r_help": "help(tam.mml.mfr, package=TAM)",
+        "body": "\n            <b>Description</b>\n            <br/>\n            Generates parameter estimates for a multi-faceted simple rasch model\n            <br/><br/>\n            <b>Usage</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Data frame with polychotomous item responses k=0,...,K. Missing responses must be declared as NA.\n            </li>\n            <li>\n            formulaA: Design formula (only applies to tam.mml.mfr). See detailed help. It is also to possible to set all effects of a facet to zero, e.g. item*step + 0*rater (see detailed help).\n            </li>\n            <li>\n            facets: A data frame with facet entries (only applies to tam.mml.mfr)\n            </li>\n            <li>\n            pid: An optional vector of person identifiers\n            </li>\n            <li>\n            verbose: Logical indicating whether output should be printed during iterations. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Packages</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Help</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+    }
+}

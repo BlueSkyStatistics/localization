@@ -1,0 +1,13 @@
+{
+    "title": "Cumulative Statistic Variable",
+    "navigation": "Cumulative Statistic Variable",
+    "varname": "New Variable Name (no spaces)",
+    "statvar": "Variable for Cumulative Statistic",
+    "groupbyvars": "Variables to Group By",
+    "func": "Cumulative Statistic",
+    "help": {
+        "title": "Cumulative Statistic Variable",
+        "r_help": "help(cumsum, package ='base')",
+        "body": "\n<b>Cumulative Statistics</b>\n<br/><br/>\nThis dialog creates a new variable that stores the cumulative value of a chosen statistic as you go down the rows in the current order of the dataset.  You can optionally compute this cumulative value within one or more groups.\n<br/><br/>\n\n<b>New Variable Name:</b> Name of variable that will store the cumulative values\n<br/><br/>\n\n<b>Variable for Cumulative Statistic:</b> Variable for which the cumulative values will be computed.  Must be numeric.\n<br/><br/>\n\n<b>Variables to Group By:</b> Optional variables to compute the cumulative statistic within.\n<br/><br/>\n\n<b>Cumulative Statistic:</b> Which statistic will be used for the cumulative statistic.\n<br/><br/>\n<ul>\n<li>cumsum: cumulative sum</li>\n<li>cummin: cumulative minimum</li>\n<li>cummax: cumulative maximum</li>\n<li>cummean: cumulative mean</li>\n<li>cummedian: cumulative median</li>\n<li>cumgmean: cumulative geometric mean</li>\n<li>cumhmean: cumulative harmonic mean</li>\n<li>cumvar: cumulative variance</li>\n</ul>\n<br/><br/>\n<b>Required R Packages:</b> cumstats, dplyr\n\t\t\t"
+    }
+}

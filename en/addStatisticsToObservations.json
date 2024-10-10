@@ -1,0 +1,23 @@
+{
+    "title": "Add Model Statistics To Dataset",
+    "navigation": "Add Statistics to Dataset",
+    "label1": "Models of the following classes are supported (R class in parenthesis)- Linear models (lm), Cox proportional hazards regression model (coxph), Generalized linear models (glm), Local Polynomial Regression (loess), Robust linear regression (rlm), Parametric survival regression model (survreg), Quantile Regression (rq)",
+    "label2": "STATISTICS ARE ADDED TO THE CURRENT DATASET. NUMERIC SUFFIX WILL BE USED TO ENSURE UNIQUE VARIABLE NAMES. CURRENT DATASET SHOULD MATCH DATASET USED TO BUILD MODEL.",
+    "modelselector1": "Select a model:",
+    "suff": "Enter a suffix for the statistics variable name",
+    "label3": "Select the statistics to add to the observations in the dataset",
+    "label4": "NOTE: Statistics supported vary by model class. All statistics below except .tau are supported by linear and generalized linear models, Quantile regression supports .resid, .fitted, .tau. The rest of the model classes support .fitted, .se.fit, .resid.",
+    "chk1": ".hat (Diagonal of the hat matrix)",
+    "chk2": ".sigma (Estimate of residual standard deviation when corresponding observation is dropped from model)",
+    "chk3": ".cooksd (Cooks distance)",
+    "chk4": ".fitted (fitted values of the model)",
+    "chk5": ".se.fit (Standard errors of fitted values)",
+    "chk6": ".resid (Residuals)",
+    "chk7": ".std.resid (Standardized residuals)",
+    "chk8": ".tau (Quantile estimated) *Supported for Quantile Regression only",
+    "help": {
+        "title": "Add Model Statistics to Dataset",
+        "r_help": "help(augment, package='broom')",
+        "body": "\n                <b>Description</b></br>\nAugment data with information from an object\n<br/>\n<b>Usage</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: Model object or other R object with information to append to observations.\n</li>\n<li>\n...: Addition arguments to augment method.\n</li>\n</ul>\n<b>Value</b><br/>\nA tibble::tibble() with information about data points.</br>\n<b>Methods</b><br/>\nSee the following help topics for more details about individual methods:<br/>\naugment.betareg: betareg<br/>\naugment.coxph: coxph<br/>\naugment.decomposed.ts: decomposed.ts<br/>\naugment.factanal: factanal<br/>\naugment.felm: felm<br/>\naugment.glm: glm<br/>\naugment.glmRob: glmRob<br/>\naugment.htest: htest<br/>\naugment.ivreg: ivreg<br/>\naugment.kmeans: kmeans<br/>\naugment.lm: lm<br/>\naugment.lmRob: lmRob<br/>\naugment.loess: loess<br/>\naugment.Mclust: Mclust<br/>\naugment.mjoint: mjoint<br/>\naugment.nlrq: nlrq<br/>\naugment.nls: nls<br/>\naugment.plm: plm<br/>\naugment.poLCA: poLCA<br/>\naugment.prcomp: prcomp<br/>\naugment.rlm: rlm<br/>\naugment.rq: rq<br/>\naugment.rqs: rqs<br/>\naugment.smooth.spline: smooth.spline<br/>\naugment.speedlm: speedlm<br/>\naugment.stl: stl<br/>\naugment.survreg: survreg<br/>\nlme4_tidiers: merMod<br/>\nnlme_tidiers: lme<br/>\nnull_tidiers: NULL<br/>\nordinal_tidiers: clm, polr<br/>\nrowwise_df_tidiers: rowwise_df, tbl_df<br/>\n<b>Package</b></br>\nbroom</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(augment, package=\"broom\")\n"
+    }
+}

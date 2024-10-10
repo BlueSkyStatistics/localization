@@ -1,0 +1,18 @@
+{
+    "title": "Find Duplicates",
+    "navigation": "Find Duplicates",
+    "keysnote": "NOTE: Specifying no key variables will result in a complete case duplicate search.  Specifying key variables will seach for duplicates by key variable values only.",
+    "keyvarslabel": "Key Variables (optional)",
+    "allduprowschecklabel": "Create dataset with all rows associated with the duplicates",
+    "allduprowsnamelabel": "Dataset name",
+    "alldatachecklabel": "Create dataset with original data and column indicating duplicates",
+    "alldatanamelabel": "Dataset name",
+    "dupvarnamelabel": "Duplicate variable name",
+    "nodupdatachecklabel": "Create dataset with all duplicates removed",
+    "nodupdatanamelabel": "Dataset name",
+    "help": {
+        "title": "Find Duplicates",
+        "r_help": "help(duplicated, package = 'base')",
+        "body": "\nThis dialog will find duplicates either by complete cases or by key variables.  Complete case duplicates are equal for every value for every variable.  Duplicates using key \nvariables are duplicates defined only by equal values for specific variables, called \"keys\".  Duplicates are searched from the top to the bottom of the data set.  So, a \nduplicate row means the values are equal to a previous row.  Summaries of the duplicates are provided.\n<br/><br/>\n<b>Key Variables:</b>  Specify optional key variables that define the duplicates.  If no key variables are selected, complete case duplicates will be searched for.\n<br/><br/>\n<b>Create dataset with all rows associated with the duplicates:</b>  This will create a dataset of all duplicate rows and the first instance of each row corresponding to \neach duplicate.  The output dataset will be sorted by all the variables in the complete duplicate case and by the key variables in the key variable case.  The key variables \nwill also be moved to the beginning of the output data set.  The <b>Dataset name</b> field can be used to name this output data set.\n<br/><br/>\n<b>Create dataset with original data and column indicating duplicates:</b>  This will create a dataset including all the original data plus an additional column indicating \nthe duplicate rows (0=not duplicate, 1=duplicate).  The <b>Dataset name</b> field can be used to name this output data set.  The <b>Duplicate variable name</b> field can be used to name \nthis additional column.\n<br/><br/>\n<b>Create dataset with all duplicates removed:</b>  This will create a dataset that removes all the duplicate rows (either complete case or by key variables) where the \nduplicates are searched from top to bottom in the data set.  This means all 2nd, 3rd, etc. instances of the rows will be removed.  The </b>Dataset name</b> field can be used to name \nthis output data set.\n<br/><br/>\n<b>Required R Packages:</b> dplyr, arsenal\n"
+    }
+}

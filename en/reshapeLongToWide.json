@@ -1,0 +1,23 @@
+{
+    "toplabel": "By default all dataset columns except the selected repeated factor and value variables will be used to identify each observation. To overide, see below",
+    "id_cols": "Optional: By default all dataset columns except the selected repeated factor and value variables will be used to identify each observation. To overide, select and move variables",
+    "title": "Reshape, long to wide",
+    "navigation": "Wider",
+    "labelTop": "When a single repeated factor and value variable is specified, new variable names are prefixed with the name of the repeated factor. In all other cases, they are prefixed by the name of the value variable",
+    "label0": "You can choose to save the results in a new dataset or overwrite the existing dataset",
+    "label1": "Options",
+    "New": "Save results to a new dataset",
+    "newdatasetname": "Enter a dataset name",
+    "Existing": "Overwrite existing dataset",
+    "subsetvars": "Enter variable name(s) of the repeated factor(s), for e.g. Time",
+    "dontReshape": "Enter variable name(s) for the repeated value(s) e.g. Counts",
+    "names_sort": "Order column names alphabetically",
+    "appearence_sort": "Order column names by appearance",
+    "names_sep": "Optional separator to use when joining specified variable names to form new variable names",
+    "label2": "Sort Options",
+    "help": {
+        "title": "Reshape (long to wide)",
+        "r_help": "help(pivot_wider, package=tidyr)",
+        "body": "\n           <b>Description</b></br>\nSee video at <a href=\"https://youtu.be/ypLXqmFp3jY\">Reshape long to wide</a></br>\nTakes a wide dataset and converts it to a long dataset by converting (widening) columns. Pivot_wider \"lengthens\" data, increasing the number of rows and decreasing the number of columns. You use pivot_wider when you have variables/columns whose values need to be in rows. \n<br/>\nNOTE: When one repeated factor is specified, new variable names are prefixed with the name of the repeated factor. When multiple repeated factors are specified, they are prefixed by the name of the value variable</br>\n<b>Usage</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndataset: A dataframe/tibble\n</li>\n<li>\nnames_from: the name of the output column \n</li>\n<li>\nvalues_from: the column  to get the cell values from \n</li>\n<li>\nnames_sort: Should the column names be sorted? If FALSE, the default, column names are ordered by first appearance.\n</li>\n<li>\nnames_sep: Optional separator to use when joining specified variable names to form new variable names\n</li>\n<li>\n<b>Value</b><br/>\nReturns the reshaped dataset\n<br/>\n<b>Package</b></br>\ntidyr\n<b>Help</b></br>\nhelp(pivot_wider)\n"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "title": "Sample Size, Test Cox Model",
+    "navigation": "Cox Model",
+    "howtouse": "To compute sample size: specify power\nTo compute power: specify sample size",
+    "n": "Sample Size",
+    "power": "Power (0-1)",
+    "sd": "Standard Deviation of Covariate",
+    "propevent": "Proportion with the Event (0-1)",
+    "hr": "Hazard Ratio of Covariate",
+    "rsquared": "R-squared between the covariate and other covariates (0-1); enter 0 for unadjusted test",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "help": {
+        "title": "Sample Size, Test Cox Model",
+        "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+        "body": "\nThis is an assessment of sample size for a single covariate in a Cox proportional hazards model.  It computes the sample size or power, when the user specifies the other one, given a hazard ratio to detect.\n<br/><br/>\n<b>Sample Size:</b> Specify the total number of subjects\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Standard Deviation of Covariate:</b> Specify the standard deviation of the covariate pertaining to the hazard ratio\n<br/><br/>\n<b>Hazard Ratio, Group 1 vs Group 2:</b> Specify the desired hazard ratio to detect for the covariate\n<br/><br/>\n<b>Proportion with the Event:</b> Specify the expected proportion of the sample with the event (or one minus the censoring proportion).  If you specify a probability of 1, it assumes no censoring.\n<br/><br/>\n<b>R-squared between the covariate and other covariates; enter 0 for unadjusted test:</b> Specify the r-squared value (squared multiple correlation), between the covariate and \nall other covariates in the Cox model.  A value of 0 corresponds to an anadjusted test with no other covariates.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\nThis uses the ssizeEpiCont.default and powerEpiCont.default functions in the powerSurvEpi package.  See triple dot menu>Help>R Function Help for more information.\n<br/><br/>\n<b>Required R Packages:</b> powerSurvEpi\n\t\t\t"
+    }
+}

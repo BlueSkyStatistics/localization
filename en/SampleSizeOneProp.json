@@ -1,0 +1,18 @@
+{
+    "title": "Sample Size, Test One Proportion",
+    "navigation": "One Proportion",
+    "howtouse": "Specify either sample size or power, and the other will be computed",
+    "n": "Sample Size",
+    "power": "Power (0-1)",
+    "prop": "Alternative Proportion (0-1)",
+    "prop0": "Null Proportion (0-1)",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "help": {
+        "title": "Sample Size, Test One Proportion",
+        "r_help": "help(pnorm, package ='stats')",
+        "body": "\nThis is an assessment of sample size for a one-sample proportion test.  It computes the sample size or the power, when the user \nspecifies one of them.  The computation uses the formula as found in Chow S, Shao J, Wang H. Sample Size Calculations in Clinical Research (2008).  It uses a normal approximation with\nthe standard deviation based on the alternative proportion.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Alternative Proportion (0-1):</b> Specify the proportion under the alternative hypothesis\n<br/><br/>\n<b>Null Proportion (0-1):</b> Specify the proportion under the null hypothesis\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Required R Packages:</b> stats\n\t\t\t"
+    }
+}

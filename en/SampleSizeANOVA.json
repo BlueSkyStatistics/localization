@@ -1,0 +1,16 @@
+{
+    "title": "Sample Size, ANOVA",
+    "navigation": "ANOVA",
+    "howtouse": "To compute sample size: specify the group means and power\nTo compute power: specify sample size and the group means\nTo compute detectable variance of the group means: specify sample size and power",
+    "numgrps": "Number of Groups",
+    "n": "Sample Size per Group",
+    "grpmeans": "Group Means, specify as values separated by commas, e.g. 20, 25, 40",
+    "power": "Power (0-1)",
+    "sd": "Standard Deviation",
+    "siglevel": "Significance Level (0-1)",
+    "help": {
+        "title": "Sample Size, ANOVA",
+        "r_help": "help(power.anova.test, package ='stats')",
+        "body": "\nThis is an assessment of sample size for a balanced one-way ANOVA.  It computes the sample size, power, or difference in means (calculated as the variance between the means) when the user \nspecifies the other two.\n<br/><br/>\n<b>Number of Groups:</b> Specify the number of groups in the study\n<br/><br/>\n<b>Sample Size per Group:</b> Specify the number of subjects in each group\n<br/><br/>\n<b>Group Means:</b> Specify the means in each group that you want to be able to detect.  At least one mean has to be different than the others.\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Standard Deviation:</b> Specify the standard deviation of the outcome.  This is assumed to be the same across the groups.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Required R Packages:</b> stats\n\t\t\t"
+    }
+}

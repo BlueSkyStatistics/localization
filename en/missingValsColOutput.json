@@ -1,0 +1,10 @@
+{
+    "title": "Missing Value Analysis, column layout",
+    "navigation": "Column Layout",
+    "label1": "Displays the results of missing values in columnar format",
+    "help": {
+        "title": "Missing Value Analysis",
+        "r_help": "help(sapply)",
+        "body": "\n            <b>Description</b></br>\n            Displays the following information on missing values<br/>\n            1. The number of variables and observations in the dataset<br/>\n            2. The count of missing values per variable<br/>\n            3. The count of non-missing values per variable<br/>\n            4. The row numbers of the variables that contain missing values<br/>\n            We use several functions in the base package including sapply, which, ifelse<br/>\n            <b>Package</b></br>\n            base</br>\n            <b>Help</b></br>\n            For detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(sapply) by creating a R code chunk by clicking + in the output window\n"
+    }
+}

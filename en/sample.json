@@ -1,0 +1,21 @@
+{
+    "title": "Sample Data",
+    "navigation": "Sample",
+    "label1": "Dataset options",
+    "radio2": "Save results to a new dataset",
+    "dsname": "Enter a name of a dataset",
+    "radio1": "Overwrite dataset",
+    "label2": "Sampling options",
+    "rd1": "Specify the percentage of the dataset to sample",
+    "percentage": "Enter the percentage",
+    "rd2": "Specify the number of rows to select",
+    "size": "Enter the number of rows",
+    "textn": "Optionally enter a variable name or formula for weights",
+    "seed": "Optionally set a seed for data reproducibility",
+    "chk2": "Sample with replacement",
+    "help": {
+        "title": "Sample Dataset",
+        "r_help": "help(sample_n, package='dplyr')",
+        "body": "\n<b>Description</b></br>\nTakes a random sample of the rows from the existing dataset. Samples a % of rows or a specified number of rows with or without replacement. Saves the result to a new dataset or overwrites the existing dataset.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \n#Samples a specified number of rows</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#Samples a fraction of the rows</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ntbl: table of data. See ‘Details.’\n</li>\n<li>\nsize: For sample_n(), the number of rows to select. For sample_frac(), the fraction of rows to select. \n</li>\n<li>\nreplace: Should sampling be with replacement?\n</li>\n<li>\nweights: Sampling weights. This must evaluate to a vector of non-negative numbers the same length as the input. Weights are automatically standardised to sum to 1.\n</li>\n</ul>\n<b>Package</b></br>\ndplyr\n<b>Help</b></br>\nhelp(sample_n, package='dplyr')\n"
+    }
+}

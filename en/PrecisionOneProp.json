@@ -1,0 +1,15 @@
+{
+    "title": "Sample Size, Precision of One Proportion",
+    "navigation": "One Proportion",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n": "Sample Size",
+    "width": "Confidence Interval Width",
+    "prop": "Outcome Proportion",
+    "conflevel": "Confidence Level (0-1)",
+    "method": "Confidence Interval Method",
+    "help": {
+        "title": "Sample Size, Precision of One Proportion",
+        "r_help": "help(prec_prop, package ='presize')",
+        "body": "\nThis is an assessment of sample size for a proportion based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Outcome Proportion:</b> Specify the proportion of subjects with the 'positive' outcome\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Confidence Interval Method:</b> Specify the type of confidence interval method to use. The wilson method is suggested for small n (< 40), and the agresti-coull method is \nsuggested for larger n. The wald method is not suggested, but provided due to its widely distributed use.\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

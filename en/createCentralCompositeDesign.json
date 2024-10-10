@@ -1,0 +1,18 @@
+{
+    "title": "Create Central Composite (Quantitative) Design from an exsiting FrF2 Design",
+    "navigation": "Create Central Composite (Quantitative) Design",
+    "datasetname": "Design name",
+    "datasetFrF2": "Select an exisiting FrF2 (Quantitative) design",
+    "alpha": "Number of star points(alpha)",
+    "alphalbl": "“orthogonal”, “rotatable”, or a number that indicates the position of the star points",
+    "numOfCenterPts": "Number of center points, or two numbers seperated by comma (for cube and the star portion)",
+    "blockName": "Name of the block",
+    "lbl1": "You may not need to change the randomization settings",
+    "randomseeds": "Seed for randomization",
+    "randomizationChk": "Randomize the design generation",
+    "help": {
+        "title": "Create Central Composite (Quantitative) Design from an exsiting FrF2 Design",
+        "r_help": "help(ccd.augment, package = DoE.wrapper)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tccd.augment function for augmenting an existing fractional factorial with a star portion (using rsm package) in case of a late decision for a sequential procedure\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(ccd.augment, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factors for FrF2 design for CCD.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tCreate the FrF2 design first (with the 4 factors) - choose option number of runs as 0 and resolution as 5.\n\t\t\t\tThen ceate the central composite design from the above FrF2 design keeping all the deafult options on this central composite design dialog/UI  \n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

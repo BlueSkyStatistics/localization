@@ -1,0 +1,18 @@
+{
+    "title": "Design of Experiments analysis with Response Surface Model (Quantitative)",
+    "navigation": "Design Analysis - Response Surface Model",
+    "modelname": "Enter Response Surface model name",
+    "dependent": "Response (dependent) variable",
+    "formulaboxhint": "You can also enter SO(var1, var2,...) for second-order effects and interactions, or FO(...),... from rsm pkg in the above formula builder box.",
+    "independent": "Numeric Predictors - insert below the numeric formula variables",
+    "generateContourPlotChk": "Display Contour(plots)",
+    "generateRSMPlotChk": "Display Response Surface (plots)",
+    "generatePathSteepestAscentChk": "Show path of steepest ascent from ridge analysis",
+    "checkShapiroNormalityTestChk": "Shapiro normality test",
+    "normalityPlotsChk": "Plot for checking normality",
+    "help": {
+        "title": "Response Surface Model with a model formula builder",
+        "r_help": "help(rsm, package = rsm)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tResponse-surface regression - fit a linear model with a response-surface component, and produce appropriate analyses and summaries\n\t\t\t\t<br/> In the formula builder, you can type SO(var1, var2, var3, ...) or FO(var1, ..) or other function from the rsm package - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor more details, see R help for the following\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+    }
+}

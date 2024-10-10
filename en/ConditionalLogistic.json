@@ -1,0 +1,16 @@
+{
+    "title": "Logistic, Conditional",
+    "navigation": "Logistic, Conditional",
+    "modelname": "Enter model name",
+    "outcomevarlabel": "Dependent Variable (numeric; 1 = event, 0 = no event)",
+    "stratavarlabel": "Strata",
+    "methodgrplabel": "Estimation Method",
+    "exactlabel": "Exact",
+    "efronlabel": "Efron",
+    "breslowlabel": "Breslow",
+    "help": {
+        "title": "Logistic, Conditional",
+        "r_help": "help(clogit, package = 'survival')",
+        "body": "\nThis fits a conditional logistic regression model, which is similar to standard logistic regression, but incorporates a stratification variable.  Common applications of this \nmodel are in matched case-control, matched cohort, and nested case-control studies.  The output includes the number of strata used in the analysis, outcome frequency patterns \nwithin strata, various model summary statistics, parameter estimates, and odds ratios.\n<br/><br/>\n<b>Dependent Variable:</b> This is the variable indicating the event for each subject, with 1 signifying an event, and 0 signifying a non-event.  This variable must be numeric.\n<br/><br/>\n<b>Formula Builder:</b> Specify the desired model terms.\n<br/><br/>\n<b>Strata:</b> Specify the stratification variable.  Can be numeric, character, or a nominal/ordinal factor.\n<br/><br/>\n<b>Estimation Method:</b> Specify the model estimation method.  The \"Exact\" method is the default.  As long as there are not too many ways to select events within strata, this \nshould be the option chosen. The estimation may take some time or lead to errors if many combinations can result within some strata, say 100 events out of 500 subjects.  The Efron \nand Breslow approximations are adequate in these cases, with Efron being preferred.  See the references in the R help for details.\n<br/><br/>\n<b>Required R Packages:</b> survival, broom, arsenal, dplyr\n\t\t"
+    }
+}

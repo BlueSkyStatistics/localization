@@ -1,0 +1,20 @@
+{
+    "title": "Update Merge",
+    "navigation": "Update Merge",
+    "join": "Join mapping",
+    "description": "Update merge updates one dataset with values from another dataset.",
+    "out": "Enter the name of the merged dataset",
+    "in1": "Select the 1st dataset",
+    "in2": "Select the 2nd dataset",
+    "label1": "Merge Options",
+    "upsert": "Update variables in first (left) dataset with matches from second (right) dataset, insert non-matches",
+    "update": "Update variables in first (left) dataset with matches from second (right) dataset, ignore non-matches",
+    "insert": "Only insert non-matches in first (left) dataset",
+    "patch": "Update only variables with NAs in first (left) dataset with matches from second (right) dataset",
+    "delete": "Delete rows from first (left) dataset with matches from second (right) dataset",
+    "help": {
+        "title": "Update Merge",
+        "r_help": "help(rows_upsert, package=dplyr)",
+        "body": "\n            <b>Description</b></br>\n            Update merge updates a dataset with values from a second dataset based on exact variable name matching for observations with matching join mapping variable values. \n\t\t\t<br/>You need to specify one or more variables in the active dataset and in the selected target dataset that you want the join to be performed on.\n\t\t\t<br/>The results will be saved in a new dataset.\n\t\t\t<br/><br/>\n\t\t\t<b>Merge Options</b>\n\t\t\t<br/><br/>\n\t\t\t<b>Update variables in first (left) dataset with matches from second (right) dataset, insert non-matches:</b> This is a combination of updating variables in the left dataset for matches and creating new rows for unmatched rows.\n\t\t\t<br/><br/>\n\t\t\t<b>Update variables in first (left) dataset with matches from second (right) dataset, ignore non-matches:</b> This only updates existing variables in the left datasets for matches.  Unmatched rows are ignored.\n\t\t\t<br/><br/>\n\t\t\t<b>Only insert non-matches in first (left) dataset:</b> This leaves intact all matching rows in the left dataset.  Only non-matching rows from the right dataset are added to the left dataset.\n\t\t\t<br/><br/>\n\t\t\t<b>Update only variables with NAs in first (left) dataset with matches from second (right) dataset, ignore non-matches:</b>  This updates rows that match, but only when the values in the left dataset are NA (i.e. are missing values).\n\t\t\t<br/><br/>\n\t\t\t<b>Delete rows from first (left) dataset with matches from second (right) dataset:</b>  This only deletes rows from the left dataset that match rows in the right dataset.\n\t\t\t<br/><br/>\n            <b>R Packages Required:</b> dplyr\n"
+    }
+}

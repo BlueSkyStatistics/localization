@@ -1,0 +1,11 @@
+{
+    "title": "Import Design - must be a csv file with added response column(s) to the previously exported design",
+    "navigation": "Import Design Response",
+    "datasetname": "Name to create the design with response(s)",
+    "importResp": "File path for the design file (must be a csv file) that contains response column(s)",
+    "help": {
+        "title": "Import Responses to an exsiting Design",
+        "r_help": "help(add.response, package = DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tImport the Design csv file with added response columns i.e. results recoded from the experiments conducted from the original design previously exported\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe purpose of importing the csv file against a design already open in the dataset UI grid is to add the response columns automatically from the csv file to the design in the UI grid and create a new design with the name specified \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOnce the new design with the response columns is created - this can be analyzed with various analysis methods under DOE -> Analyze Design menu\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIn addition, designating/un-designating one or more response column(s) can be performed by DOE -> Modify Design - > Add/Remove Response menu \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIf the required design is not already opened on the dataset UI grid, using the file Open menu, load the design R object (.rda file) that was previously exported with \"Export Design\" menu into a directory on the file system.  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor additional information - use R help(add.response, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

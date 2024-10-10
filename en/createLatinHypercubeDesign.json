@@ -1,0 +1,18 @@
+{
+    "title": "Create Latin Hypercube Design (for Quantitative Factors)",
+    "navigation": "Create Latin Hypercube (Quantitative) Design",
+    "selectedvars": "Select variables",
+    "datasetname": "Design name",
+    "lblheading": "Size and randomization",
+    "numOfRuns": "Number of runs",
+    "numOfDeciPlaces": "Number of decimal places",
+    "lbl1": "You may not need to change the randomization settings",
+    "randomseeds": "Seed for randomization",
+    "randomizationChk": "Randomize the design generation",
+    "lhsDesignType": "latin hypercube sampling designs (check lhs or DiceDesign packages for other types)",
+    "help": {
+        "title": "Create Latin Hypercube Design (for Quantitative Factors)",
+        "r_help": "help(lhs.design, package = DoE.wrapper)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tlhs.design function for accessing latin hypercube sampling designs from package lhs or space-filling designs from package DiceDesign, which are useful for quantitative factors with many possible levels. In particular, they can be used in computer experiments. Most of the designs are random samples.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(lhs.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factor_grid__latin_hypercube_Design.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

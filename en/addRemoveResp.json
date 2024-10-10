@@ -1,0 +1,10 @@
+{
+    "title": "Add/Remove Response Variable(s) - first check the list of exsiting response variables with the DOE -> Inspect Design menu",
+    "navigation": "Add/Remove Response",
+    "subsetvars": "Select response variables",
+    "help": {
+        "title": "Add/Remove Response Variable(s)",
+        "r_help": "help(response.names, package = DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tTo designate one or more variables to be response variable(s) for the design \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(response.names, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

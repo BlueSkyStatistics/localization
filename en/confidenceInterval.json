@@ -1,0 +1,16 @@
+{
+    "title": "Confidence Interval",
+    "navigation": "Confidence Interval",
+    "label1": "Select a model of one of the following classes. (R class is listed in parenthesis below)",
+    "label2": "Linear model (lm), Generalized linear model (glm), Nonlinear Least Squares (nls), Ordered Logistic/Probit regression (polr), Multinomial Log-Linear models (multinom), Cox regession models (coxph)",
+    "label3": "Based on",
+    "modelselector1": "Select a model",
+    "conlevel": "Confidence interval",
+    "lr": "Likelihood-ratio statistic",
+    "wald": "Wald statistic",
+    "help": {
+        "title": "Confidence Interval",
+        "r_help": "help(confint,package='stats')",
+        "body": "\n                <b>Description</b></br>\nComputes confidence intervals for one or more parameters in a fitted model. There is a default and a method for objects inheriting from class \"lm\". lm and coxph models only use the Wald method.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nconfint(object, parm, level = 0.95, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: a fitted model object.\n</li>\n<li>\nparm: a specification of which parameters are to be given confidence intervals, either a vector of numbers or a vector of names. If missing, all parameters are considered.\n</li>\n<li>\nlevel: the confidence level required.\n</li>\n<li>\n...: arguments to be passed down to methods.\n</li>\n</ul>\n<b>Details</b></br>\nconfint is a generic function. The default method assumes normality, and needs suitable coef and vcov methods to be available. The default method can be called directly for comparison with other methods.</br>\nFor objects of class \"lm\" the direct formulae based on t values are used.</br>\nThere are stub methods in package stats for classes \"glm\" and \"nls\" which call those in package MASS (if installed): if the MASS namespace has been loaded, its methods will be used directly. (Those methods are based on profile likelihood.)</br>\n<b>Value</b></br>\nA matrix (or vector) with columns giving lower and upper confidence limits for each parameter. These will be labelled as (1-level)/2 and 1 - (1-level)/2 in % (by default 2.5% and 97.5%).</br>\n<b>Examples</b><br/>\n<code> \nfit <- lm(100/mpg ~ disp + hp + wt + am, data = mtcars)<br/>\nconfint(fit)<br/>\nconfint(fit, \"wt\")<br/>\n## from example(glm)\ncounts <- c(18,17,15,20,10,20,25,13,12)\noutcome <- gl(3, 1, 9); treatment <- gl(3, 3)\nglm.D93 <- glm(counts ~ outcome + treatment, family = poisson())\nconfint(glm.D93) # needs MASS to be installed\nconfint.default(glm.D93)  # based on asymptotic normality\n</code> <br/>\n<b>Package</b></br>\nstats;MASS;knitr</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(confint , package='stats')\n                "
+    }
+}

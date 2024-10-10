@@ -1,0 +1,18 @@
+{
+    "title": "Multivariate Quality Control Chart (MQCC)",
+    "navigation": "MQCC Chart",
+    "summaryPrintChk": "Print summary in addition to chart(s)",
+    "variableListSelcted": "Data (select one or more variables) to chart",
+    "groupingVariable": "(Optional) Select grouping Variable if subgroups are present",
+    "excludeGroups": "(Optional) exclude groups (if subgroups are numeric) from computation/charting (e.g. specify as 1:10 or comma seperated as 1,4,5,7:12)",
+    "groupsTobeUsedAsNewData": "(Optional) New Data - groups (if subgroups are numeric) to be used as New Data to chart (e.g. specify as 1:25 or 1,4,5,7:12) - new data to plot but not included in the limit computations",
+    "limitsChk": "If control limits (Phase I) must be computed and plotted",
+    "pred_limitsChk": "If prediction limits (Phase II) must be computed and plotted",
+    "confidence_level": "(Optional) Confidence level: leave the deafult formula as shown (where p will be computed automatically as the number of variables selected). Otherwise specify a numeric value between 0 and 1 to be used as the confidence level to compute the probability limits",
+    "genVarianceChk": "Plot control chart for the Generalized Variance |S| for the variables selected (and a grouping variable must be selected)",
+    "help": {
+        "title": "Multivariate Quality Control Chart(mqcc)",
+        "r_help": "help(mqcc, package = qcc)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tmqcc function to perform multivariate statistical quality control and the generalized variance |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(mqcc, package = qcc) and help(GVcontrol, package = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called boiler from the qcc package with Load Dataset menu by selecting qcc package and then select boiler dataset to load\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSeelct the variables from the boiler dataset, leave everything as deafult, and run the dialog\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYou may also use the sample dataset file called widgets_mqcc.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo plot generalized variance |S|, the dataset must have a column with the subgroup numbers - othrwise it will not plot\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

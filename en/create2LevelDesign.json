@@ -1,0 +1,20 @@
+{
+    "title": "Create non-regular (Fractional) Factorial 2-level Screening Design",
+    "navigation": "Create 2-level Screening Design",
+    "selectedvars": "Select variables",
+    "datasetname": "Design name",
+    "numOfRuns": "Number of runs (multiple of 4, >=8)",
+    "taguchiOrderChk": "(Only relevant for) 12 run design in Taguchi order",
+    "numOfCenterPts": "Number of center points (if used, have minimum 2)",
+    "centerPointDistribution": "Number of positions for center point distribution (have >1)",
+    "replications": "Replications",
+    "repeatOnlyChk": "Repeat only",
+    "lbl1": "You may not need to change the randomization settings",
+    "randomseeds": "Seed for randomization",
+    "randomizationChk": "Randomize the design generation",
+    "help": {
+        "title": "Create 2-level Screening Design",
+        "r_help": "help(pb, package = FrF2)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tPlackett-Burman(pb) function to generate non-regular fractional factorial 2-level screening designs\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(pb, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factor_grid_twolevel_screen_Design.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

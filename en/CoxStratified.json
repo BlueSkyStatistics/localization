@@ -1,0 +1,17 @@
+{
+    "title": "Cox, Stratified",
+    "navigation": "Cox, Stratified",
+    "modelname": "Enter model name",
+    "timevar": "Time to event or censor",
+    "eventvar": "Events (1 = event 1, 0 = censor)",
+    "modelterms": "Model expression builder for independent variables",
+    "stratavarslabel": "Stratification Variables",
+    "weightvar": "Weights (optional)",
+    "tiemethod": "Tied Time Method",
+    "diagnosticsbox": "Model Diagnostics",
+    "help": {
+        "title": "Cox, Stratified",
+        "r_help": "help(coxph, package = 'survival')",
+        "body": "\n            Fits a stratified Cox proportional hazards model for time-to-event data with censored observations. This is a Cox model that allows a separate baseline hazard \n\t\t\tfunction for each strata level.  Model fitting statistics, parameter estimates, and hazard ratios are provided.  Options available include the tied time method \n\t\t\tand model diagnostics.  The model is fit using the coxph function in the survival package. \n            <br/>\n            <br/>\n            <b>Time to event or censor:</b> Time to event for those experiencing the event or time to last follow-up for those not experiencing the event\n            <br/><br/>\n            <b>Events (1=event, 0=censor):</b> Numerical event indicator; 1=event, 0=censor\n            <br/><br/>\n            <b>Formula Builder:</b> Construct terms to include in the model.  Factors, strings, and logical variables will be dummy coded.  The provided buttons allow you to \n\t\t\tspecify main effects, full factorial effects (main effects and all interactions with the involved variables), polynomials, specific interactions, and delete terms \n\t\t\tfrom the list.  Interactions with stratification variables is allowed.\n            <br/><br/>\n\t\t\t<b>Stratification Variables:</b> Specify one or more stratification variables.  These can be numeric, factor, ordered factor, or character variables.  The strata \n\t\t\tdivide the subjects into separate groups whereby each group has a distinct baseline hazard function.  If multiple stratification variables are given, a separate \n\t\t\tbaseline hazard function is used for every combination of stratification variable levels.\n\t\t\t<br/><br/>\n            <b>Weights:</b> Numeric variable for observation weights. Useful in situations where each record should not be counted as one observation. \n            <br/>\n            <br/>\n            <b>Required packages:</b> survival, broom, survminer\n            <br/>\n            <br/>\n            Click the R Help button to get detailed R help about the coxph function.\n            <br/>\n            <br/>\n            <br/>\n            <br/>\n            <b>Options</b>\n            <br/>\n            <br/>\n            <b>Tied Time Method:</b>\n            <br/>\n            Method of breaking tied observed times.  Efron is usually the better choice when there aren't many tied times.  The exact method can be beneficial if there are many tied times, as in discrete time situations, but can take a little longer for the model to be fit. \n            <br/>\n            <br/>\n            <b>Model Diagnostics:</b>\n            <br/>\n            If selected, proportional hazards tests and plots will be provided, in addition to a Martingale residual plot.\n"
+    }
+}

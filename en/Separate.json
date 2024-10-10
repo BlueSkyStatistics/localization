@@ -1,0 +1,11 @@
+{
+    "title": "Separate Variable",
+    "navigation": "Separate",
+    "sepvarlabel": "Variable to separate",
+    "delimiterlabel": "Characters used to separate",
+    "help": {
+        "title": "Separate Variable",
+        "r_help": "help(separate_wider_delim, package = 'tidyr')",
+        "body": "\n            This separates a variable's values into parts (one variable for each part) based on characters that define the separate parts.\n\t\t\t<br/><br/>\n\t\t\tFor example, if the character used to separate is a comma (,) , it will separate the values into parts around the commas.  \n\t\t\t<br/><br/>\n\t\t\tThe number of variables added to the dataset will be the maximum number of parts that any observation was separated into.  The names of the new variables will be the variable name being separated, plus a numbered suffix that corresponds to each part.  The variables will contain missing values if an observation cannot be separated into the maximum number of variables.  If the characters used to separate cannot be found in the value, then the original value will be returned (i.e. there is only one part).\n\t\t\t<br/><br/>\n\t\t\t<b>Variable to separate:</b>\n\t\t\t<br/>Specify the variable you want to separate into parts.  This can be a character, numeric, factor, ordinal factor, or a date variable.  A non-character variable will be coerced to a character variable for the purposes of separating, but the original variable will be left as-is.\n\t\t\t<br/><br/>\n\t\t\t<b>Characters used to separate:</b>\n\t\t\t<br/>Specify the character pattern that is the separator of the parts.  This can be one or more characters.\n\t\t\t<br/><br/>\n            <b>Required R packages:</b> tidyr, dplyr\n"
+    }
+}
