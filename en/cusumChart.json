@@ -1,0 +1,23 @@
+{
+    "title": "Cusum chart",
+    "navigation": "Cusum chart",
+    "summaryPrintChk": "Print summary in addition to charts",
+    "label2": "Two options - either select a variable to chart (and a grouping variable as needed) or select the variables in dataset to chart if already grouped",
+    "selectVariableRad": "Option 1: Select a variable from the dataset that needs to be grouped",
+    "variableSelcted": "Variable(observed data) to chart",
+    "groupingNeededChk": "Required for xbar, R and S charts - Variable to use for grouping data",
+    "groupingVariable": "Grouping Variable",
+    "variableControlLimits": "Rows to be discarded if any before grouping for variable control limits e.g. specify as 1:25 or 1,4,5,7:12",
+    "displayGroupsChk": "Display the groupings on the dataset UI grid",
+    "selectDatasetRad": "Option 2: Select the variables from the Dataset if already grouped",
+    "variablelistSelcted": "Select one or more grouped variables (observed data) to chart",
+    "decisionInterval": "decision Interval - the number of standard errors of the summary statistics at which the cumulative sum is out of control",
+    "seShift": "Shif - the amount of shift to detect in the process, measured in standard errors of the summary statistics",
+    "rowsTobeUsed": "Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
+    "rowsTobeUsedAsNewData": "New Data - grouped Rows to be used as New Data to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12) - new data to plot but not included in the computations",
+    "help": {
+        "title": "Cusum chart",
+        "r_help": "help(qcc, package = qcc)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to perform statistical quality control and to plot Shewhart charts\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called pistonrings from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose option 1, diameter to variable(observed..), sample to Grouping variable, \n\t\t\t\t<br/>\n\t\t\t\tType 1:25 in Grouped rows to be used, 30:40 in New Data\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

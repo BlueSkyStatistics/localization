@@ -1,0 +1,32 @@
+{
+    "title": "Gage R&R - Measurement System Analysis",
+    "navigation": "Gage R&R",
+    "mainTitle": "Main title for the graphic output",
+    "subTitle": "Subtitle for the graphic output (e.g. the name of the project)",
+    "measuredVar": "Measured variable",
+    "part": "Part variable",
+    "appr": "Appraiser (operators, machines, ...) variable",
+    "lsl": "LSL - numeric value of lower specification limit used with USL to calculate Study Variation as %Tolerance",
+    "usl": "USL - numeric value of upper specification limit used with LSL to calculate Study Variation as %Tolerance",
+    "historicalStdv": "Historical process std deviaion (if not specified, type NA)",
+    "useHistStdDevProcVarChk": "Use historical std dev to estimate Gage Evaluation values (%StudyVar table)",
+    "sigma": "Sigma - numeric value for number of std deviations to use in calculating Study Variation",
+    "tolerance": "Tolerance - numeric value for the tolerance - default (usl - lsl)",
+    "alphaLim": "Alpha - Limit to take into account interaction",
+    "errorTerm": "Which term of the model should be used as error term (for the model with interation)",
+    "method": "Type of analysis to perform, crossed (default) or nested",
+    "label1": "Gage R&R study report header details",
+    "gageName": "Gage name",
+    "dateStudy": "Date of study",
+    "partDescription": "Part description",
+    "machineName": "Machine name",
+    "reportedBy": "Reported by",
+    "operatorNames": "Names of the operators",
+    "testLocation": "Test location",
+    "miscellaneous": "Miscellaneous",
+    "help": {
+        "title": "Gage R&R - Measurement System Analysis",
+        "r_help": "help(ss.rr, package = SixSigma)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tss.rr function to perform Gage R&R analysis for the assessment of the measurement system of a process\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called gageR_R_piston_diameter_with_measurements.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tfrom the sample dataset, select diameter variable to Measured variable, Pistonring to Part variable and Operator to Appraiser \n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Make Predictions with KNN",
+    "navigation": "Predict with KNN",
+    "dataset_var": "Open datasets",
+    "header": "KNN is a lazy classifier, it does not create a fitted model that can be used to predict later. It fits and makes predictions at the same time. You need to follow the steps below to make predictions/score.",
+    "NOTE1": "THE ACTIVE DATASET MUST BE THE DATASET YOU WANT TO BUILD A MODEL ON AND NOT THE DATASET YOU WANT TO SCORE",
+    "step1": "Step1: As usual, you must select the training dataset in the Datagrid before opening this dialog.",
+    "step2": "Step2: Select the dependent variable in the training dataset used to fit the model.",
+    "step3": "Step3: Specify the independent variables in the training dataset.",
+    "step4": "Step4: Specify the number of neighbors to use to build the model.",
+    "step5": "Step5: Enter a variable prefix for the new variable containing the predictions.",
+    "step6": "Step6: Specify the dataset to add predictions to. It must contain the same independent variables used to train the model.",
+    "dependentvar": "Dependent variable (from training dataset)",
+    "independentvars": "Independent variable(s) (from training dataset)",
+    "Seed": "Set Seed",
+    "datasetToScore": "Dataset to score/predict",
+    "Group2": "Tuning parameters for KNN",
+    "noneighbhors": "No. of neighbors (When a value is not specified, default is set to the square root of the number of observations in dataset)",
+    "testDatasetName": "Enter the name of the dataset to make predictions",
+    "predictedValues": "Enter variable prefix for predicted values. A new variable is created by appending the prefix to the dependent variable name.",
+    "help": {
+        "title": "K Nearest Neighbhors",
+        "r_help": "help(knn, package ='class')",
+        "body": "\n                <b>Description</b></br>\nk-Nearest Neighbor Classification\n<br/>\n<b>Note: </b></br>\nSee the help text on the dialog\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ntrain: This is the source(active) dataset used to create a fitted model.\n</li>\n<li>\ntest: This is the dataset that predicted values will be saved to when the prefix you specified. A new variable is created by appending the prefix to the dependent variable specified from the source dataset.\n</li>\n<li>\ncl: factor of true classifications from the dataset used to fit the model\n</li>\n<li>\nk: number of neighbors considered.\n</li>\n<li>\nl: minimum vote for definite decision, otherwise doubt. (More precisely, less than k-l dissenting votes are allowed, even if k is increased by ties.)\n</li>\n<li>\nprob: If this is true, the proportion of the votes for the winning class are returned as attribute prob.\n</li>\n<li>\nuse.all: controls handling of ties. If true, all distances equal to the kth largest are included. If false, a random selection of distances equal to the kth is chosen to use exactly k neighbors.\n</li>\n</ul>\n<b>Value</b></br>\nFactor of classifications of test set. doubt will be returned as NA.</br>\n<b>Package</b></br>\ncaret;class</br>\n<b>Help</b></br>\nhelp(knn, package ='class')\n                "
+    }
+}

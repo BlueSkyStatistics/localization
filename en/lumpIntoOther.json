@@ -1,0 +1,27 @@
+{
+    "title": "Lump the least or most common factor levels",
+    "navigation": "Lump into Other (Automatically)",
+    "target": "Select variables to lump sparse levels for",
+    "label1": "The  default name of the  new category containing the lumped levels is \"other\". Specifying weights is optional. You can overwrite existing variable(s) with the lumped  levels or save the results to new variable(s)",
+    "other": "Name for the lumped level",
+    "label3": "Method to use",
+    "defaultOption": "Lump together least frequent levels into \"other\" while ensuring that \"other\" is the smallest level",
+    "categories": "Keep most common (+n)/least common (-n) categories",
+    "category": "Enter the number of categories",
+    "proportion1": "Keep categories that appear at least (+ prop)/at most (- prop) proportion of the time",
+    "proportion": "Enter the proportion",
+    "dropOption": "Enter levels to replace by \"Other\" for e.g. level1,level2,level3",
+    "varweights": "Variable weights",
+    "label2": "Save results to new variable(s) or overwrite existing variable(s)",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "ties": "Options for handling ties",
+    "help": {
+        "title": "Lump Into Other",
+        "r_help": "help(fct_lump, package =forcats)",
+        "body": "\n<b>Description</b></br>\nLump together the least or the most common factor levels into the  \"other\" level. The  default name of the  new category containing the lumped levels is \"other\". Specifying weights is optional. You can overwrite existing variable(s) with the lumped  levels or save the results to new variable(s)\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Other\",ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"other\",ties.method =\"min\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: A factor. If both n and prop are missing, fct_lump lumps together the least frequent levels into \"other\", while ensuring that \"other\" is still the smallest level. It's particularly useful in conjunction with fct_inorder().\n</li>\n<li>\nn: Positive n preserves the most common n values. Negative n preserves the least common -n values. It there are ties, you will get at least abs(n) values.\n</li>\n<li>\nprop: Positive prop preserves values that appear at least prop of the time. Negative prop preserves values that appear at most -prop of the time.\n</li>\n<li>\nw:  An optional numeric vector giving weights for frequency of each value (not level) in f.\n</li>\n<li>\nother_level: Value of level used for \"other\" values. Always placed at end of levels.\n</li>\n<li>\nties.method: A character string specifying how ties are treated. See rank() for details.\n</li>\n<li>\nmin: Preserves values that appear at least min number of times.\n</li>\n</ul>\n<b>Package</b></br>\nforcats</br>\n<b>Help</b></br>\nType the line below in the BlueSky Statistics  R syntax editor</br>\nhelp(fct_lump, package =forcats)\n"
+    }
+}

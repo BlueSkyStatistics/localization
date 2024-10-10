@@ -1,0 +1,25 @@
+{
+    "title": "Plot of Means",
+    "navigation": "Plot of Means",
+    "x": "X axis, specify a factor variable",
+    "y": "Y axis, mean is calculated for this variable(s)",
+    "fill": "Group by, specify a factor variable",
+    "label1": "Error bars",
+    "radiobuttonNo": "No error bars",
+    "radioButtonSe": "Standard errors",
+    "radiobuttonSd": "Standard deviations",
+    "radiobuttonCi": "Confidence intervals",
+    "confidenceInterval": "Specify Interval e.g. 0.95",
+    "alpha": "Opacity (0-1)",
+    "flip": "Flip axis",
+    "specify_a_title": "Enter a title",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Plot of Means",
+        "r_help": "",
+        "body": "\n            <b>Description</b></br>\n            Plot of Means are used to see if the mean varies between different groups of the data. The grouping is variable is defined by the analyst. There is an optional level of grouping that allows you to divide each group into sub-groups for which the mean is calculated. Along with the means you can optionally display the standard errors, standard deviations and confidence intervals.  Facets can be optionally created by specifying a factor variable.</br>\n            You can also optionally specify themes, and specify a title and labels for the x and y axis</br>\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            #We first create a dataset for the summaries. The plot of means is run on the dataset of summaries</br>\n            #After the plot is run the dataset of summaries can be deleted.</br>\n            #test contains the datasetof summaries</br>\n            test <- summarySE(Dataset2,measurevar=\"mpg\",groupvars=c(\"origin\",\"cylinder\"),na.rm=TRUE)</br>\n            #If errorbars overlap,position_dodge to move them horizontally,.03 to the left and right</br>\n            pd <- position_dodge(0.3)\n            ggplot(test,aes(x=origin,y=mpg,colour=cylinder,group=cylinder)) + geom_errorbar(aes(ymin=mpg-sd,ymax=mpg+sd),width=.1,position=pd) +geom_line(position=pd) +geom_point(position=pd) + labs(x = \"origin\",y = \"mpg\")</br>\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset\n            </li>\n            <li>\n            aes(): Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.\n            </li>\n            <li>\n            x: A factor/categorical variable used to group data in the y variable. The mean is plotted for each group.\n            </li>\n            <li>\n            y: A numeric variable\n            </li>\n            <li>\n            colour: An optional factor variable used to split the groups created by the x: variable (see above) into sub-groups. If specified, the mean is plotted for each sub-group. Each sub-group is shown in a distinct color.\n            </li>\n            <li>\n            group: Optional factor variable that plots a line through the means of all the sub group.\n            </li>\n            <li>\n            geom_line(): draws a line\n            </li>\n            <li>\n            geom_errorbar(): plots error bars\n            </li>\n            <li>\n            labs(): Change axis labels and legend titles(This is optional)\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)\n            </li>\n            <li>\n            theme_calc(): Specifies the calculator theme(This is optional)\n            </li>\n            <li>\n            coord_flip(): Flip axis(This is optional)\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Help</b></br>\n            help(geom_line, package='ggplot2')</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_errorbar),help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+    }
+}

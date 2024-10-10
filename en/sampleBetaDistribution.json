@@ -1,0 +1,19 @@
+{
+    "title": "Sample from Beta Distribution",
+    "navigation": "Sample from Beta Distribution",
+    "entrdsname": "Enter name for dataset",
+    "shape1": "Shape 1",
+    "shape2": "Shape 2",
+    "lblnoofsamples": "Number of samples (rows)",
+    "lblnoofobsv": "Number of observations (columns)",
+    "lblseed": "Seed",
+    "lblAddtoDS": "Add to dataset",
+    "chklbl1": "Sample means",
+    "chklbl2": "Sample sums",
+    "chklbl3": "Sample standard deviations",
+    "help": {
+        "title": "Sample from Beta Distribution",
+        "r_help": "help(rbeta, package=stats)",
+        "body": "\n            <b>Description</b>\n<br/>\nDensity, distribution function, quantile function and random generation for the Beta distribution with parameters shape1 and shape2 (and optional non-centrality parameter ncp).\n<br/>\n<b>Usage</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>Arguments</b>\n<br/>\n<ul>\n    <li>x, q : vector of quantiles.</li>\n    \n    \n    <li>p : vector of probabilities.</li>\n    \n    \n    <li>n : number of observations. If length(n) > 1, the length is taken to be the number required.</li>\n    \n    \n    <li>shape1, shape2 : non-negative parameters of the Beta distribution.</li>\n    \n    \n    <li>ncp : non-centrality parameter.</li>\n    \n    \n    <li>log, log.p : logical; if TRUE, probabilities p are given as log(p).</li>\n    \n    \n    <li>lower.tail : logical; if TRUE (default), probabilities are P[X ≤ x], otherwise, P[X > x].</li>\n    \n</ul>\n\n\n\n<br/>\n<b>Details</b>\n<br/>\nThe Beta distribution with parameters shape1 = a and shape2 = b has density\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\nfor a > 0, b > 0 and 0 ≤ x ≤ 1 where the boundary values at x=0 or x=1 are defined as by continuity (as limits). \n<br/>\n The mean is a/(a+b) and the variance is ab/((a+b)^2 (a+b+1)). These moments and all distributional properties can be defined as limits (leading to point masses at 0, 1/2, or 1) when a or b are zero or infinite, and the corresponding [dpqr]beta() functions are defined correspondingly.\n <br/>\npbeta is closely related to the incomplete beta function. As defined by Abramowitz and Stegun 6.6.1\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\nand 6.6.2 I_x(a,b) = B_x(a,b) / B(a,b) where B(a,b) = B_1(a,b) is the Beta function (beta).\n<br/>\n<code>I_x(a,b) is pbeta(x, a, b).</code>\n<br/>\nThe noncentral Beta distribution (with ncp = λ) is defined (Johnson et al, 1995, pp. 502) as the distribution of X/(X+Y) where X ~ chi^2_2a(λ) and Y ~ chi^2_2b.\n<br/>\n<br/><b>Value</b>\n<br/>\ndbeta gives the density, pbeta the distribution function, qbeta the quantile function, and rbeta generates random deviates.\n<br/>\nInvalid arguments will result in return value NaN, with a warning.\n<br/>\nThe length of the result is determined by n for rbeta, and is the maximum of the lengths of the numerical arguments for the other functions.\n<br/>\nThe numerical arguments other than n are recycled to the length of the result. Only the first elements of the logical arguments are used.\n<br/>\n<br/><b>Note</b>\n<br/>\nSupplying ncp = 0 uses the algorithm for the non-central distribution, which is not the same algorithm used if ncp is omitted. This is to give consistent behaviour in extreme cases with values of ncp very near zero.\n"
+    }
+}

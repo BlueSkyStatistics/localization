@@ -1,0 +1,17 @@
+{
+    "navigation": "Bonett-Seier kurtosis test",
+    "title": "Bonett-Seier test of Geary's kurtosis",
+    "hypothesisType": "Test hypothesis (H1)",
+    "twosided": "Two-sided",
+    "greater": "Greater",
+    "less": "Less",
+    "label2": "Other options",
+    "showLengthNAs": "Show length and NAs",
+    "verbose": "Verbose alternative hypothesis",
+    "Target": "Select one or more variables",
+    "help": {
+        "title": "Bonett-Seier test of Geary's kurtosis",
+        "r_help": "help(bonett.test, package ='moments')",
+        "body": "\n<b>Description</b></br>\nPerforms a Bonett-Seier test of Geary's measure of kurtosis for normally distributed data.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nbonett.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: a numeric vector of data values.\n</li>\n<li>\ny: a character string specifying the alternative hypothesis, must be one of '\"two.sided\"' (default), '\"greater\"' or '\"less\"'. You can specify just the initial letter.\n</li>\n</ul>\n<b>Details</b></br>\nUnder the hypothesis of normality, data should have Geary's kurtosis equal to sqrt(2/pi) (0.7979). This test has such null hypothesis and is useful to detect a significant difference of Geary's kurtosis in normally distributed data.\n<br/>\n<b>Values</b></br>\nA list with class htest containing the following components:\n<ul>\n<li>\nstatistic: the list containing Geary's kurtosis estimator and its transformation.</br>\n</li>\n<li>\np.value: pvalue of the test. </br>\n</li>\n<li>\nalternative: a character string describing the alternative hypothesis</br>\n</li>\n<li>\nmethod: a character string indicating what type of test was performed.\n</li>\n<li>\ndata.name: Name of the data argument.</br>\n</li>\n</ul>\n<b>Example</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\ngeary(x)</br>\nbonett.test(x)</br>\n</code> <br/>\n<b>Package</b></br>\nmoments</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(bonett.test, package ='moments') in the BlueSky Statistics R editor.           \n<br/>\n<br/>\n"
+    }
+}

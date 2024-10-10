@@ -1,0 +1,31 @@
+{
+    "title": "Holt Winters, non seasonal",
+    "navigation": "Holt Winters, non-seasonal",
+    "destination": "Variable to predict",
+    "firstObservation": "Time of first observation e.g.1: enter 1961,1 for January 1961 e.g.2: enter 1961,3 for 3nd  Quarter of 1961, e.g.3: enter 1 for a continuous series",
+    "frequency": "Number of observations per unit of time e.g.1: enter 12 for one observation for each month of a year, e.g. 2: enter 4 for one observation per quarter, e.g. 3: enter 1 for a  continuous series.",
+    "label1": "Plots",
+    "plotSeries": "Plot series",
+    "yaxisLabel": "Y axis label",
+    "mainTitle": "Main title",
+    "label2": "Options for fitted values",
+    "saveFitted": "Save fitted values",
+    "fittedValsDatasetName": "Specify dataset name to store fitted values",
+    "oriVsFitted": "Plot original vs. Fitted",
+    "plotResiduals": "Plot residuals",
+    "label3": "Predict using the model",
+    "predict": "Make predictions using model",
+    "confInterval": "Specify the confidence interval in percents e.g. 95 for 95%",
+    "periodToPredict": "Specify the number of intervals to predict",
+    "savePredictedVals": "Save predicted values",
+    "predictedValsDatasetName": "Specify dataset name to store predicted values",
+    "plotPredicted": "Plot predicted values",
+    "correlogram": "Generate correlogram",
+    "maxlag": "Enter max lag",
+    "Boxtest": " Ljung-Box test ",
+    "help": {
+        "title": "Holt Winters, non seasonal",
+        "r_help": "help(HoltWinters , package=stats)",
+        "body": "\n            <b>Description</b></br>\n            BSkyHoltWintersSeasonal is a wrapper function for HoltWinters from package stats.<br/>\nComputes Holt-Winters Filtering of a given time series. Unknown parameters are determined by minimizing the squared prediction error. Internally calls HoltWinters with  gamma parameter used for the seasonal component set to FALSE. A non-seasonal model is fitted with gamma = 0/FALSE <br/> \n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,Ljung_Boxtest=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArguments\n<ul>\n<li>\nvars: select a variable to build a model for\n</li>\n<li>\nstart: Time of first observation should be entered in the format year,month or year,quarter e.g.( if your data is organized in months the 1992,1 for Jan 1992 or if your data is organized in quarters then 1992,1 refers to the first quarter of 1992.\n</li>\n<li>\nfrequency: Number of observations in unit time. Example: for monthly there are 12 observation in a year. For quarterly there are 4 observation in a year.\n</li>\n<li>\nexponential: Determines whether exponential smoothing will be done, value set to FALSE\n</li>\n<li>\nseasonal: a character string  \"Non Seasonal\"  for a  non seasonal model.  \n</li>\n<li>\nplotSeries: if TRUE a  time series plot will also be generated.\n</li>\n<li>\nsaveFitted: if TRUE fit values are saved.\n</li>\n<li>\nplotOriginalandForecast: Plot original and forecasted series\n</li>\n<li>\npredict: if TRUE predicted values  will also be generated.\n</li>\n<li>\nsavePredictedVals: predicted values will be saved.\n</li>\n<li>\nplotPredictedValues: predicted values will also be plotted.\n</li>\n<li>\ncorrelogram: if TRUE a correlogram will be generated.\n</li>\n<li>\nmain: main title of the plot\n</li>\n<li>\nylab: title for the y axis\n</li>\n<li>\ndataset: the name of the dataset from which the variables have been selected\n</li>\n</ul>\n<b>Value</b><br/>\nAn object of class \"HoltWinters\", a list with components:<br/>\nfitted: A multiple time series with one column for the filtered series as well as for the level, trend and seasonal components, estimated contemporaneously (that is at time t and not at the end of the series).<br/>\nx: The original series<br/>\nalpha: alpha used for filtering<br/>\nbeta: beta used for filtering<br/>\ngamma: gamma used for filtering<br/>\ncoefficients: A vector with named components a, b, s1, ..., sp containing the estimated values for the level, trend and seasonal components<br/>\nseasonal: The specified seasonal parameter<br/>\nSSE: The final sum of squared errors achieved in optimizing<br/>\ncall: The call used<br/>\n<b>Package</b></br>\nforecast</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(HoltWinters , package=stats)\n"
+    }
+}

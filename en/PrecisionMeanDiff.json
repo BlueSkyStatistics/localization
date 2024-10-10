@@ -1,0 +1,18 @@
+{
+    "title": "Sample Size, Precision of a Mean Difference",
+    "navigation": "Difference of Means",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n1": "Group 1 Sample Size",
+    "width": "Confidence Interval Width",
+    "ratio": "Ratio of Group 2 to Group 1 Sample Size",
+    "meandiff": "Mean Difference",
+    "sd1": "Group 1 Standard Deviation",
+    "sd2": "Group 2 Standard Deviation",
+    "conflevel": "Confidence Level (0-1)",
+    "variance": "Variance Assumption",
+    "help": {
+        "title": "Sample Size, Precision of a Mean Difference",
+        "r_help": "help(prec_meandiff, package ='presize')",
+        "body": "\nThis is an assessment of sample size for a difference of means based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Group 1 Sample Size:</b> Specify the number of subjects in group 1\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Ratio of Group 2 to Group 1 Sample Size:</b> Specify the ratio of the group 2 sample size to the group 1 sample size.  A value of 1 means equal sample sizes.\n<br/><br/>\n<b>Mean Difference:</b> Specify the expected difference in group means \n<br/><br/>\n<b>Group 1 Standard Deviation:</b> Specify the standard deviation of the outcome in group 1\n<br/><br/>\n<b>Group 2 Standard Deviation:</b> Specify the standard deviation of the outcome in group 2\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Variance Assumption:</b> Specify whether the group variances are assumed to be equal or unequal.  Specifying equal variances uses a pooled common estimate of the variance.\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

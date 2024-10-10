@@ -1,0 +1,23 @@
+{
+    "title": "Tolerance Intervals",
+    "navigation": "Tolerance Intervals",
+    "label1": "Select a distribution function that fits the data best",
+    "variableSelcted": "Select a variable (observed data) to analyze",
+    "x": "The number of defective (or acceptable) units in the sample",
+    "m": "The quantity produced in future groups",
+    "alpha": "Confidence interval (e.g. 0.95)",
+    "P": "Minimum (specify a value between 0 and 1) percentage of population in interval",
+    "side": "1-sided or 2-sided tolerance interval is required (type 1 or 2)",
+    "method": "The method for calculating the k-factors (only applicable for Normal, Log Normal, Gamma)",
+    "selectDistFuncNormalRad": "Normal",
+    "selectDistFuncWeibullRad": "Weibull",
+    "selectDistFuncExpRad": "Exponential",
+    "selectDistFuncGammaRad": "Gamma",
+    "selectDistFuncLnormalRad": "Log Normal",
+    "selectDistFuncCauchyRad": "Cauchy",
+    "help": {
+        "title": "Tolerance Intervals",
+        "r_help": "help(normtol.int, package = tolerance)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to compute tolerance intervals \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(package = 'tolerance'), help(normtol.int, package = tolerance), help(exttol.int, package = tolerance)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe method for calculating the k-factors\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe method for calculating the k-factors is only applicable for Normal, Log Normal, and Gamma distribution. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                The k-factor for the 1-sided tolerance intervals is performed exactly and\n\t\t\t\tthus is the same for the chosen method. \"HE\" is the Howe method and is often viewed as being extremely accurate, \n\t\t\t\t<br/>\n\t\t\t\teven for small sample sizes. \"HE2\" is a second method due to Howe, which performs similarly to the Weissberg-Beatty\n\t\t\t\t<br/>\n\t\t\t\tmethod, but is computationally simpler. \"WBE\" is the Weissberg-Beatty method (also called the Wald-Wolfowitz method),\n\t\t\t\t<br/>\n\t\t\t\twhich performs similarly to the first Howe method for larger sample sizes. \"ELL\" is the Ellison correction to the\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\tWeissberg-Beatty method when f is appreciably larger than n^2. A warning message is displayed if f is not larger\n\t\t\t\t<br/>\n\t\t\t\tthan n^2. \"KM\" is the Krishnamoorthy-Mathew approximation to the exact solution, which works well for larger sample sizes.\n\t\t\t\t<br/>\n\t\t\t\t\"EXACT\" computes the k-factor exactly by finding the integral solution to the problem via the integrate function.\n\t\t\t\t<br/>\n\t\t\t\tNote the computation time of this method is largely determined by m. \"OCT\" is the Owen approach to compute the k-factor\n\t\t\t\t<br/>\n\t\t\t\twhen controlling the tails so that there is not more than (1-P)/2 of the data in each tail of the distribution.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called tolerance.xlsx. Open the file in the data grid with file open menu \n\t\t\t\t<br/>\n\t\t\t\tChoose ND to variable(observed..), \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

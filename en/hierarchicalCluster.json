@@ -1,0 +1,16 @@
+{
+    "title": "Hierarchical Cluster",
+    "navigation": "Hierarchical",
+    "destination": "Destination",
+    "clusters": "No of clusters",
+    "storeClusterInDataset": "Assign clusters to the dataset",
+    "variablename": "Variable name to store clusters",
+    "biplot": "Show cluster biplot",
+    "dendogram": "Plot cluster dendogram",
+    "labelForClusteringMethod": "Clustering method",
+    "help": {
+        "title": "Hierarchical Cluster",
+        "r_help": "help(hclust, package ='stats')",
+        "body": "\n<b>Description</b></br>\nHierarchical cluster analysis on a set of dissimilarities and methods for analyzing it.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvarsToCluster: The variables to analyze \n</li>\n<li>\nmethod: the agglomeration method to be used. This should be (an unambiguous abbreviation of) one of \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) or \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: The number of clusters desired\n</li>\n<li>\nplotDendogram: Plot a dendogram True or false\n</li>\n<li>\nassignClusterToDataset: Save the cluster assignments to the dataset\n</li>\n<li>\nlabel: name for the new variable that stores the cluster assignments\n</li>\n<li>\nplotBiplot: plot Biplot TRUE or FALSE\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Help</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>Description</b></br>\nplotDendrogram: Calls the plot function to plot the cluster dendrogram\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmethod: see above\n</li>\n<li>\ndistance: see above\nplotBiplot: plot Biplot TRUE or FALSE\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Help</b></br>\nhelp(plot)\n    "
+    }
+}

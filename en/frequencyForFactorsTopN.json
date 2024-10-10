@@ -1,0 +1,13 @@
+{
+    "navigation": "Factors Only (Legacy)",
+    "title": "Summaries, factors only",
+    "subsetvars": "Response variables, 2 or more",
+    "ChkboxShowOnlyTopFewFactors": "Show counts for only top N factor levels",
+    "txtNumTopFactorsToShow": "Enter a value for N",
+    "label1": "Note: When the checkbox is un-checked counts for ALL levels will be displayed. This may take a considerable amount of time if you have many factor levels",
+    "help": {
+        "title": "Factors only",
+        "r_help": "",
+        "body": "\n<b>Description</b></br>\nDisplays the counts of every level of each factor variable.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: The factor variables to display level counts\n</li>\n<li>\ndata: The dataset name\n</li>\n<li>\nshow.only.top.factors: A boolean determining whether counts of only top levels or all levels should be displayed.\n</li>\n<li>\nmax.number.top.factors: if show.only.top.factors = TRUE , specifies the number of levels to display counts for\n</li>\n</ul>\n"
+    }
+}

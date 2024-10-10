@@ -1,0 +1,16 @@
+{
+    "title": "Tune Random Forest Model",
+    "navigation": "Tune",
+    "dependentvar": "Dependent variable",
+    "independentvars": "Independent variable(s)",
+    "ntreetry": "No. of trees to try",
+    "stepfactor": "Step factor",
+    "improve": "Improve",
+    "trace": "Trace",
+    "plot": "Plot",
+    "help": {
+        "title": "Tune Random Forest Model",
+        "r_help": "help(tuneRF,package='randomForest')",
+        "body": "\n                <b>Description</b></br>\nStarting with the default value of mtry, search for the optimal value (with respect to Out-of-Bag error estimate) of mtry for randomForest. \n<br/>\n<b>Usage</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : matrix or data frame of predictor variables\n</li>\n<li>\ny : response vector (factor for classification, numeric for regression)\n</li>\n<li>\nntreeTry : number of trees used at the tuning step.\n</li>\n<li>\nstepFactor : at each iteration, mtry is inflated (or deflated) by this value.\n</li>\n<li>\nimprove : the (relative) improvement in OOB error must be by this much for the search to continue\n</li>\n<li>\ntrace : whether to print the progress of the search.\n</li>\n<li>\nplot : whether to plot the OOB error as function of mtry.\n</li>\n<li>\n... : options to be given to randomForest\n</li>\n</ul>\n<b>Value</b></br>\nReturns a matrix whose first column contains the mtry values searched, and the second column the corresponding OOB error.</br>\n<b>Package</b></br>\nrandomForest​;BlueSky</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(tuneRF,package='randomForest')\n"
+    }
+}

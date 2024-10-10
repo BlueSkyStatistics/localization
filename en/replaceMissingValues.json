@@ -1,0 +1,11 @@
+{
+    "title": "Replace Missing Values (String/Factor Variables)",
+    "navigation": "Character/Factor",
+    "destination": "Destination Variables",
+    "repString": "Enter string to replace NAs by. Note: Don't enclose the string by quotes. For factor variables, the specified value must be a level of the factor, see Variables>Factor Levels>Add",
+    "help": {
+        "title": "Replace Missing Values (String/Factor Variables)",
+        "r_help": "help(is.na,package=base)",
+        "body": "\n<b>Description</b></br>\nReplace missing values in the variables selected by the specified value. When using the dialog, you don't have to enclose the string in double quotes\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('String to replace')\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nThe dataset variables (var1, var2) where NAs need to be replaced\n</li>\n</ul>\n<b>Value</b><br/>\nReplaces the missing values in the dataset with the sting specified<br/>\n<b>Package</b></br>\nbase</br>\n<b>Help</b></br>\nhelp(is.na,package=base)"
+    }
+}

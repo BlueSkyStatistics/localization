@@ -1,0 +1,26 @@
+{
+    "title": "Nonlinear Least Squares (NLS) Model",
+    "navigation": "Nonlinear Least Squares",
+    "modelname": "NLS Model name",
+    "DependentVar": "Response (Dependent) Variable",
+    "IndependentVarsformula": "Build or Paste any equation (formula) with Independent (predictor) variable(s) and model parameters e.g. a * exp(b * x) where a and b are parameters to be estimated and x is the predictor variable. it will create a model equation as y ~ a * exp(b * x) where y is response variable",
+    "IndependentVar": "An independent (predictor) variable needed for scatter and fitted plot",
+    "weights": "A variable used as weight (Y) with a power value",
+    "PowerKweight": "Power: for just Y, choose (-1), for 1/Y, choose 1, 1/(Y^2), choose 2, .. 1/(Y^5), choose 5,..",
+    "covMatrixChk": "Estimated covariance matrix for parameters",
+    "resPlotChk": "Plot fitted and residuals",
+    "resNormalityTestChk": "Normality test of the model residuals",
+    "modelConstraintLabel": "(Optional) Various Model constraints for parameter estimations",
+    "pmodels": "Starting values for parameters to guide model optimization/convergence e.g. param1 = 1, param2 = 10, param3 = 0 for a three parameter model",
+    "paramConstraintsLower": "Set the constraint for lower limit (must choose port as algorithm) e.g. 3, -Inf, -Inf for a three parameter model",
+    "paramConstraintsUpper": "Set the constraint for upper limit (must choose port as algorithm) e.g. 3, Inf, Inf, 2 for a four parameter model",
+    "algorithm": "Algorithm to use. The default is a Gauss-Newton algorithm",
+    "maxIter": "Maximum number of iterations allowed for model to converge. Default is 50",
+    "logScaleAxis": "X axis is plotted in log scale by default. Choose ' ' for original scale",
+    "doseInLogScaleChk": "Check if the dose/concentration is already in logarithmic values in the dataset",
+    "help": {
+        "title": "Nonlinear Least Squares (NLS) Model",
+        "r_help": "help(nls, package ='stats')",
+        "body": "\n            <b>Description</b></br> \n\t\t\tPerform nonlinear regression. Build or type in any equation (formula) to build the nonlinear regression model.\n\t\t\tDetermine the nonlinear (weighted) least-squares estimates of the parameters of the nonlinear model. \n\t\t\tAnalyze model fit with graphs. \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tCheck help(nls, package ='stats') for details \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tYou can try this dialog\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\tExample 1\n\t\t\t</br>\n\t\t\tLoad dataset DNase from Load Datasets menu (leave all installed packages in the first dropdown and choose DNase from the second dropdown)\t\t\t\n\t\t\t<br/>\n\t\t\tChoose (or drag) density as response variable\n\t\t\t<br/>\n\t\t\tType Asym/(1 + exp((xmid - log(conc))/scal)) in the Independent (formula) field where Asym, xmid, and scal\n\t\t\tare three model parameters (i.e. coefficients) to be estimated \n\t\t\t<br/>\n\t\t\tCheck Estimated Covariance Matrix\n\t\t\t</br>\n\t\t\tCheck Plot fitted and residuals \n\t\t\t</br>\n\t\t\tChoose (or drag) conc into the field An independent (predictor) variable needed for scatter and fitted plot\n\t\t\t</br>\n\t\t\tType in Asym = 3, xmid = 0, scal = 1 in the field Starting values for parameters to guide model\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tExample 2\n\t\t\t</br>\n\t\t\tLoad dataset DNase from Load Datasets menu (leave all installed packages in the first dropdown and choose DNase from the second dropdown)\t\t\t\n\t\t\t<br/>\n\t\t\tChoose (or drag) density as response variable\n\t\t\t<br/>\n\t\t\tType Asym/(1 + exp((xmid - log(conc))/scal)) in the Independent (formula) field\n\t\t\t<br/>\n\t\t\tCheck Estimated Covariance Matrix\n\t\t\t</br>\n\t\t\tCheck Plot fitted and residuals \n\t\t\t</br>\n\t\t\tChoose (or drag) conc into the field An independent (predictor) variable needed for scatter and fitted plot\n\t\t\t</br>\n\t\t\tType in Asym = 3, xmid = 0, scal = 1 in the field Starting values for parameters to guide model\n\t\t\t</br>\n\t\t\tType in Asym = 0, xmid = -Inf, scal = -Inf in the field constraint for lower limit (set lower limit for Asym to 0, and leave the lower limit of xmid and scal unconstraint)\n\t\t\t</br>\n\t\t\tType in Asym = Inf, xmid = 4, scal = Inf in the field constraint for upper limit (set lower limit for xmid to 0, and leave the upper limit of Asym and scal unconstraint)\n\t\t\t</br>\n\t\t\tchoose port from the dropdown of algorithm to use instead of default\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tExecute the dialog\n\t\t\t</br>\n\t\t\t</br>\n"
+    }
+}

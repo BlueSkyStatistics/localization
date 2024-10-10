@@ -1,0 +1,20 @@
+{
+    "title": "Concordance Correlation Coefficient",
+    "navigation": "Concordance Correlation Coefficient",
+    "obs1var": "Observer 1:",
+    "obs2var": "Observer 2:",
+    "cilevel": "Confidence Level:",
+    "label1": "Confidence Interval Method",
+    "ztrans": "Z-transform",
+    "asymp": "Asymptotic",
+    "plotoptionslabel": "Plot Options",
+    "plottitle": "Title",
+    "xlabel": "X-axis Label",
+    "ylabel": "Y-axis Label",
+    "plottheme": "Plot Theme",
+    "help": {
+        "title": "Concordance Correlation Coefficient",
+        "r_help": "help(epi.ccc,package=epiR)",
+        "body": "\nThe concordance correlation coefficient (CCC) measures agreement between two observers that measure the same subjects on the same scale for continuous data.  The CCC can range \nbetween -1 and 1, with 1 being perfect agreement and 0 being no agreement.  Negative values indicate negative agreement, but is rare in practice.  A plot of the observer 1 variable \n(x-axis) vs the observer 2 variable (y-axis) is also provided with a line of perfect agreement (y=x).\n<br/><br/>\n<b>Observer 1:</b> Variable containing the values provided by an observer; must be numeric\n<br/>\n<b>Observer 2:</b> Variable containing the values provided by a second observer; must be numeric\n<br/>\n<b>Confidence Level:</b> Desired confidence interval level for the CCC\n<br/>\n<b>Confidence Interval Method:</b>  Desired confidence interval method.  The z-transform method (or inverse hyperbolic tangent transformation) is usually a better choice because \nit better approximates a normal distribution.   \n<br/><br/>\n<b>Required R packages:</b> epiR, ggplot2, ggthemes\n                "
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Replace Misssing values (Numeric variables)",
+    "navigation": "Numeric",
+    "label1": "Missing values (NAs) in the variables selected are replaced by applying a function  i.e. median, mean, min, max or the value specified.",
+    "target": "Select Variables to Replace Missing Values for",
+    "label2": "Select a function or specify a value to replace NAs",
+    "rd1": "Use a function to compute missing values",
+    "selectctrl": "Select the function",
+    "rd2": "Specify a numeric value to replace missing values",
+    "valueEntered": "Enter a numeric value",
+    "help": {
+        "title": "Replace Missing values (Numeric)",
+        "r_help": "help(mean)",
+        "body": "\n<b>Description</b></br>\nReplace missing values in variables selected by the operation selected i.e. median, mean, min, max\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvar: Character string representing the numeric variable with missing values (na), for e.g. var = c('sales')\n</li>\n<li>\nDataset: The dataset that contains the variable var\n</li>\n</ul>\n<b>Value</b><br/>\nComputed values are stored directly in Dataset<br/>\n<b>Package</b></br>\nbase</br>\n<b>Help</b></br>\nhelp(mean)"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Levene's Test",
+    "navigation": "Levene's Test",
+    "tvarbox1": "Response Variable (one) ",
+    "tvarbox3": "Factor Variable",
+    "label1": "Center",
+    "median": "Median",
+    "mean": "Mean",
+    "help": {
+        "title": "Levene's Test",
+        "r_help": "help(Anova, package='car')",
+        "body": "\n<b>Description</b></br>\nComputes Levene's test for homogeneity of variance across groups.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## S3 method for class 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## S3 method for class 'lm'<br/>\nleveneTest(y, ...)<br/>\n## Default S3 method:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ny: response variable for the default method, or a lm or formula object. If y is a linear-model object or a formula, the variables on the right-hand-side of the model must all be factors and must be completely crossed.\n</li>\n<li>\ngroup: factor defining groups.\n</li>\n<li>\ncenter: The name of a function to compute the center of each group; mean gives the original Levene's test; the default, median, provides a more robust test.\n</li>\n<li>\ndata: a data frame for evaluating the formula.\n</li>\n<li>\n...: arguments to be passed down, e.g., data for the formula and lm methods; can also be used to pass arguments to the function given by center (e.g., center=mean and trim=0.1 specify the 10% trimmed mean).\n</li>\n</ul>\n<b>Value</b><br/>\nreturns an object meant to be printed showing the results of the test.<br/>\n<b>Examples</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>Package</b></br>\ncar;moments;dplyr</br>\n<b>Help</b></br>\nhelp(leveneTest, package=car)\n"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Display Levels",
+    "navigation": "Display",
+    "target": "Factor variables to display levels for",
+    "help": {
+        "title": "Display Levels",
+        "r_help": "help(map,package=purrr)",
+        "body": "\n<b>Description</b></br>\nApplies the levels function in base to the selected variables in the dataset. Users the select function in dplyr to pipe the variables to the map function that applies the levels function to each variable\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nDataset %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvar1,var2: Variables in the dataset to display levels for\n</li>\n<li>\nDataset: The dataset that contains the variable var1, var2\n</li>\n</ul>\n<b>Value</b><br/>\nThe levels of the selected variables are displayed<br/>\n<b>Package</b></br>\npurrr, dplyr</br>\n<b>Help</b></br>\nhelp(map,package=purrr)\n"
+    }
+}

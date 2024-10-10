@@ -1,0 +1,11 @@
+{
+    "title": "Expand Weights",
+    "navigation": "Expand",
+    "datasetname": "Name of the dataset with weights expanded",
+    "destination": "Enter column that contains the weights",
+    "help": {
+        "title": "Expand Weights",
+        "r_help": "help(expandRows, package=splitstackshape)",
+        "body": "<b>Description</b></br>\n        Creates a new dataset with rows expanded as per weights. Expands (replicates) the rows of a data.frame  by a value contained in one of the columns in the source data.frame or data.table. BSkySetWeights() calls expandRows() from the package splitstackshape.\n        <br/>\n        <b>Usage</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>Arguments</b><br/>\n         <ul>\n           <li>\n        weights: The dataset variable that contains the weights. \n        </li>\n        <li>\n        data: The input data.frame or data.table.\n        </li>\n        <li>\n        newdata: The new dataset where the rows are replicated for the weights specified.\n        </li>\n        </ul>\n        <b>Package</b></br>\n        splitstackshape</br>\n        <b>Help</b></br>\n        help (expandRows)\n        "
+    }
+}

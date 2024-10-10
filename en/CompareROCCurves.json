@@ -1,0 +1,33 @@
+{
+    "title": "Compare ROC Curves",
+    "navigation": "Compare ROC Curves",
+    "outcomevar": "Binary Outcome Variable (numeric/factor)",
+    "predprobvars": "Predicted Probability Variables from Each Model, specify at least 2",
+    "outcomeorderlabel": "Outcome 'Positive' Value",
+    "outcomeorderhigh": "Higher ordered value",
+    "outcomeorderlow": "Lower ordered value",
+    "specopt": "Plot specificity instead of 1-specificity",
+    "cilevel": "Confidence Level",
+    "multcompopt": "Multiple Comparison Adjustment",
+    "multcompmethod": "Multiple Comparison Method",
+    "plotoptions": "Plot Options",
+    "plottitle": "Plot Title",
+    "plottitlesize": "Plot Title Size (5-50)",
+    "themedropdown": "Plot Theme",
+    "lineoptionslabel": "Line Options",
+    "linesize": "Line Size (0-5)",
+    "colorpalette": "Color Palette",
+    "axisoptionslabel": "Axis Options",
+    "axislabelsize": "Axis Label Size (5-50)",
+    "ticklabelsize": "Axis Tick Mark Label Size (5-50)",
+    "legendoptionslabel": "Legend Options",
+    "legendtitle": "Title",
+    "legendpos": "Position",
+    "curvelabels": "Curve Labels, specify as 'Label 1', 'Label 2', 'Label 3'; use \\n within a label for a line break",
+    "legendfontsize": "Legend Labels Size (5-50)",
+    "help": {
+        "title": "Compare ROC Curves",
+        "r_help": "help(roc.test, package = 'pROC')",
+        "body": "\nThis dialog compares receiver operating characteristic (ROC) curves given a set of predicted probabilities from a model (e.g. logistic regression).  Each model must have\nbeen fit using the same ordering of the outcome variabe.  It provides a table of individual areas under the ROC curves with confidence intervals, a table of pairwise comparisons \nusing DeLong's test, and an overlaid set of ROC curves.  Subjects with missing values for the outcome or the predicted probabilities are removed so that every model is assessed \non the same set of subjects.  See Model Evaluation > Predict > Model Scoring to obtain predicted probablities from candidate models. \n<br/><br/><br/>\n<b>Binary Outcome Variable:</b> The binary outcome used for predictions.  Must be numeric or factor.\n<br/><br/>\n<b>Predicted Probability Variables from Each Model:</b> Specify predicted probability columns from each fitted model you want to compare.\n<br/><br/>\n<b>Outcome 'Positive' Value:</b> Specify whether the higher or lower ordered value of the specified binary outcome variable should be considered the 'positive' value.  This is the \nlevel that the predicted proabilities pertain to.  For example, if the binary outcome was coded as 0/1, the higher ordered value would mean that 1 is the 'positive' response and\nthe lower ordered value would mean that 0 is the 'positive' response. \n<br/><br/>\n<b>Plot specificity instead of 1-specificity:</b> This changes the x-axis of the ROC curve plot to use specificity instead.  The axis will be decreasing from 1 to 0, as you go\nleft to right.\n<br/><br/> \n<b>Confidence Level:</b> Confidence level for ROC curve area intervals\n<br/><br/>\n<b>Multiple Comparison Adjustment:</b> Apply a multiple comparison adjustment to the pairwise comparisons of ROC curve areas.\n<br/><br/><br/>\n<b>Plot Options:</b>\n<br/><br/>\n<b>Plot Title:</b> Specify the title for the plot.  Can be removed.\n<br/><br/>\n<b>Plot Theme:</b> Specify the general theme for the plot\n<br/><br/>\n<b>Line Options:</b>\n<br/><br/>\n<b>Line Size:</b> Specify the size of the lines on the ROC curve plot\n<br/><br/>\n<b>Color Palette:</b> Specify the color palette used for the ROC curve lines\n<br/><br/>\n<b>Axis Options:</b>\n<br/><br/>\n<b>Axis Label Size:</b> Specify the size of the axis labels used on the plot.\n<br/><br/>\n<b>Axis Tick Mark Label Size:</b> Specify the size of the axis tick mark labels.\n<br/><br/>\n<b>Legend Options:</b>\n<br/><br/>\n<b>Position:</b> Specify the position of the legend in the plot.  Can be right, top, bottom, or left.\n<br/><br/>\n<b>Title:</b> Specify the title for the legend.  Can be removed.\n<br/><br/>\n<b>Curve Labels:</b> Specify the curve labels used in the legend corresponding to the order of the curves (curve 1, curve 2, curve 3, etc.).  Specifying nothing will yield curve \nlabels of 1, 2, 3, etc.  If you specify any labels, you must specify labels for all curves.  The order of the curves is the same as the specified order of the predicted probabilities.\n<br/><br/>\n<b>Legend Labels Size:</b> Size of all text in the legend.\n<br/><br/>\n<b>Required R Packages:</b> pROC, ggthemes, RColorBrewer, ggsci, ggplot2\n"
+    }
+}

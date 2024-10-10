@@ -1,0 +1,17 @@
+{
+    "title": "Inverse Box-Cox transformation (convert back to non-transformed value)",
+    "navigation": "Inverse Box-Cox",
+    "label2": "Select a variable or type in numeric value to be converted back from a prior Box-Cox transformation with the Lambda (λ) value",
+    "variableSelcted": "Select a variable",
+    "selectVariableRad": "Option 1: Select a variable to be converted back from a prior Box-Cox transformation",
+    "invBoxCoxColName": "(Optional) Specify a new variable name to store the converted values. Otherwise <variable_Invbcox> will be created",
+    "selectNumberRad": "Option 2: Type in a numeric value to be converted back from Box-Cox transformation",
+    "invNumber": "Type in the numeric value",
+    "lambda": "(Optional) Specify a Lambda (λ) value in (-2 to 2) to be used to convert back from Box-Cox transformation. Otherwise, if left blank, the Lambda (λ) value wil be used that was used for the original Box-Cox tranformation for the variable selected above",
+    "digits": "Digits - rounds to the specified number of decimal places",
+    "help": {
+        "title": "Transform back (inverse) from a prior Box-Cox transformed value",
+        "r_help": "help(boxcox, package = MASS)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tTransform back (inverse) from a prior Box-Cox transformed value using the specified lambda or the lambda associated with the variable selected \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help on Box-Cox or Lambda (λ) - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">For a good overview of MASS Box-Cox, see https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLambda (λ) values associated with familiar Box-Cox transformations \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: square transformation ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: no transformation; returns the original data ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: square root transformation ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: cube root transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: fourth root transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: natural log transformation ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: reciprocal square root transformation ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: reciprocal (inverse) transformation ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: reciprocal square transformation ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

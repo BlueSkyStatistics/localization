@@ -1,0 +1,10 @@
+{
+    "title": "Summarize A Model",
+    "navigation": "Summarize a model",
+    "modelselector1": "Select a model",
+    "help": {
+        "title": "Summarize A Model",
+        "r_help": "help(summary)",
+        "body": "\n                <b>Description</b></br>\nsummary is a generic function used to produce result summaries of the results of various model fitting functions. The function invokes particular methods which depend on the class of the first argument e.g. summary.lm (linear model), summary.glm (generalized linear model)\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: an object for which a summary is desired.\n</li>\n</ul>\n<b>Value</b><br/>\nThe form of the value returned by summary depends on the class of its argument. See the documentation of the particular methods i.e. help(summary.lm), help(summary.glm)for details of what is produced by that method.</br>\n<b>Package</b></br>\nbase</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(summary)\n                "
+    }
+}

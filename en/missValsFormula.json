@@ -1,0 +1,13 @@
+{
+    "title": "Impute Missing Values (Using a formula)",
+    "navigation": "Use a formula",
+    "depVar": "Select a variable to impute missing values for (This is the dependent variable in the model)",
+    "label1": "Move the independent variables into the formula builder control to construct a formula. Mouse over the symbols in the formula builder for help",
+    "formula": "Moving multiple variables with the move button uses a default separator of +, indicating independent variables without interaction terms. Click on the symbol to build a model with interaction terms.",
+    "independent": "Independent Variables (one or more)",
+    "help": {
+        "title": "Impute Missing Values (Using a formula)",
+        "r_help": "help(if_else,package='dplyr')",
+        "body": "\n            <b>Description</b></br>\n            Construct a formula to replace missing values. For example you build a regression model to develop estimates for the missing values, once the equation is generated, you can plug the equation into the dialog and only the missing values in the variable selected will be computed.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # substituting expression by var2*4+1.32<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            var: The name of the variable in dataset where missing values are to be replaced for e.g. var=c(\"sales\"). The variable must be of class numeric\n            </li>\n            <li>\n            Dataset: The dataset/dataframe that contains the variable var\n            </li>\n            <li>\n            expression: The expression used to replace the missing value, in the example above its var2*4+ 1.32\n            </li>\n            </ul>\n            <b>Package</b></br>\n            dplyr</br>\n            <b>Help</b></br>\n            For detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(if_else, package ='dplyr') by creating a R code chunk by clicking + in the output window\n            "
+    }
+}

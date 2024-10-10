@@ -1,0 +1,13 @@
+{
+    "title": "Compare N SEM Models",
+    "navigation": "Compare N SEM Models",
+    "label1": "Compares N SEM models.",
+    "label2": "Select models of the following classes (R class is in parenthesis below)",
+    "label3": "Structural equation models (lavaan)",
+    "modelselector1": "Select one or more models to compare:",
+    "help": {
+        "title": "Compare N SEM Models",
+        "r_help": "help(lavTestLRT, package='lavaan')",
+        "body": "\n                <b>\nLRT test for comparing (nested) lavaan models.</b></br>\n<b>Usage</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject:  an object of class lavaan.\n</li>\n</ul>\n<b>Value</b><br/>\nAn object of class anova. When given a single argument, it simply returns the test statistic of this model. When given a sequence of objects, this function tests the models against one another, after reordering the models according to their degrees of freedom<br/>\n<b>Package</b></br>\nlavaan</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(lavTestLRT,package='lavaan')</br></br>\n<b>Examples</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+    }
+}

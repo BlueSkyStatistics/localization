@@ -1,0 +1,12 @@
+{
+    "title": "Up Sample",
+    "navigation": "Sample, Up Sample",
+    "downsample": "Enter the name of the dataset",
+    "seed": "Set seed",
+    "dependent": "Variable to up sample by",
+    "help": {
+        "title": "Up Sample",
+        "r_help": "help(createDataPartition, package=\"caret\")",
+        "body": "\n<b>Description</b></br>\nUp-Sampling Imbalanced Data. upSample samples with replacement to make the class distributions equal\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: a matrix or data frame of predictor variables\n</li>\n<li>\ny: a factor variable with the class memberships\n</li>\n<li>\nlist: should the function return list(x, y) or bind x and y together? If TRUE, the output will be coerced to a data frame.\n</li>\n<li>\nyname: if list = FALSE, a label for the class column\n</li>\n</ul>\n<b>Details</b></br>\nSimple random sampling is used to down-sample for the majority class(es). Note that the minority class data are left intact and that the samples will be re-ordered in the down-sampled version.</br>\nFor up-sampling, all the original data are left intact and additional samples are added to the minority classes with replacement.</br>\n<b>Value</b><br/>\nEither a data frame or a list with elements x and y.<br/>\n<b>Examples</b><br/>\n<code> \n## A ridiculous example...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Package</b></br>\ncaret</br>\n<b>Help</b></br>\nhelp(upSample, package ='caret')\n"
+    }
+}

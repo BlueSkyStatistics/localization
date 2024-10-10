@@ -1,0 +1,17 @@
+{
+    "title": "Concordance Correlation Coefficient, multiple raters",
+    "navigation": "Concordance Correlation Coefficient, multiple raters",
+    "ratervars": "Rater Variables, at least 2",
+    "cilevel": "Confidence Level:",
+    "bootsamp": "Number of bootstrap samples",
+    "plotoptionslabel": "Plot Options",
+    "plotchkbox": "Scatterplots for all rater pairs",
+    "plottitle": "Title",
+    "varlabels": "Variable Labels (if used, must specify labels for all variables, in order, as 'label 1', 'label 2', etc.)",
+    "plottheme": "Plot Theme",
+    "help": {
+        "title": "Concordance Correlation Coefficient, multiple raters",
+        "r_help": "help(epi.occc,package=epiR)",
+        "body": "\nThe concordance correlation coefficient (CCC) measures agreement between observers that measure the same subjects on the same scale for continuous data.  The CCC can range between \n-1 and 1, with 1 being perfect agreement and 0 being no agreement.  Negative values indicate negative agreement, but is rare in practice.  The overall CCC and pairwise CCC's \n(all pairs of raters) are computed with bootstrap percentile and adjusted bootstrap percentile confidence intervals.  Any observation with a missing value for the specified rater \nvariables is removed from the analysis.\n<br/><br/>\n<b>Rater Variables:</b> Variables containing the values provided by the observers; must be numeric\n<br/>\n<b>Confidence Interval Level:</b> Desired confidence interval level for the CCC\n<br/>\n<b>Number of bootstrap samples:</b>  The desired number of bootstrap samples to draw from the original data to compute the confidence intervals.  At least 1000 is recommended, \nif practically feasible.\n<br/>\n<b>Scatterplots for all rater pairs:</b>  Option to create scatterplots for all pairs of raters in a matrix format.   \n<br/><br/>\n<b>Required R packages:</b> epiR, boot, GGally, ggthemes\n                "
+    }
+}

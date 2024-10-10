@@ -1,0 +1,20 @@
+{
+    "title": "Box-Cox transformation of non normal data to normal",
+    "navigation": "Box-Cox transformation",
+    "label2": "Two options - either select a non-normal variable to be transformed to normal or select the entire dataset to be transformed",
+    "selectVariableRad": "Option 1: Select a non-normal variable from the dataset to be transformed to normal",
+    "variableSelcted": "A non-normal variable to be transformed",
+    "boxcoxColName": "(Optional) Specify a new variable name to store the transformed values. Otherwise <variable_bcox> will be created",
+    "selectDatasetRad": "Option 2: Transform the entire Dataset to normal",
+    "boxcoxDatasetName": "(Optional) Specify a new dataset name to store the transformed values. Otherwise <dataset_bcox> will be created",
+    "johnsonDatasetName": "(Optional) Specify a new dataset name for Johnson (required if option 2 is chosen above)",
+    "boxcoxChk": "Box-Cox transformation",
+    "johnsonChk": "Johnson transformation",
+    "lambda": "(Optional) Lambda (λ) value in (-2 to 2) to be used for Box-Cox transformation. If not specified, it will automatically identify the best Lambda value",
+    "digits": "Digits - rounds to the specified number of decimal places",
+    "help": {
+        "title": "Transform non-normal data to normal",
+        "r_help": "help(boxcox, package = MASS)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to transform non-normal variable to normal with MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tBox-Cox transformation cannot be performed on negaive values\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">For a good overview of MASS Box-Cox, see https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLambda (λ) values associated with familiar Box-Cox transformations \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: square transformation ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: no transformation; returns the original data ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: square root transformation ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: cube root transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: fourth root transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: natural log transformation ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: reciprocal square root transformation ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: reciprocal (inverse) transformation ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: reciprocal square transformation ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

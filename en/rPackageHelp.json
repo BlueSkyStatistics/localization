@@ -1,0 +1,10 @@
+{
+    "title": "R Package Help",
+    "navigation": "R Package Help",
+    "packageName": "Select an installed R package",
+    "help": {
+        "title": "R Package Help",
+        "r_help": "help()",
+        "body": "\n<b>Description</b></br>\nhelp is the primary interface to the help systems.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nhelp(topic, package = NULL, lib.loc = NULL,\n    verbose = getOption(\"verbose\"),\n    try.all.packages = getOption(\"help.try.all.packages\"),\n    help_type = getOption(\"help_type\"))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ntopic: usually, a name or character string specifying the topic for which help is sought. A character string (enclosed in explicit single or double quotes) is always taken as naming a topic. If the value of topic is a length-one character vector the topic is taken to be the value of the only element. Otherwise topic must be a name or a reserved word (if syntactically valid) or character string. \n</li>\n<li>\npackage: a name or character vector giving the packages to look into for documentation, or NULL. By default, all packages whose namespaces are loaded are used. To avoid a name being deparsed use e.g. (pkg_ref).\n</li>\n<li>\nlib.loc: a character vector of directory names of R libraries, or NULL. The default value of NULL corresponds to all libraries currently known. If the default is used, the loaded packages and namespaces are searched before the libraries.\n</li>\n<li>\nverbose: logical; if TRUE, the file name is reported.\n</li>\n<li>\ntry.all.packages: logical; see Note.\n</li>\n<li>\nhelp_type: character string: the type of help required. Possible values are \"text\", \"html\" and \"pdf\". Case is ignored, and partial matching is allowed.\n</li>\n</ul>\n<b>Details</b></br>\nThe help on the package</br>\n<b>Examples</b><br/>\n<code> \nhelp(package = \"splines\")\n</code> <br/>\n<b>Package</b></br>\nutils</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help()\n                "
+    }
+}

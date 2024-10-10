@@ -1,0 +1,23 @@
+{
+    "title": "Process Capability Analysis",
+    "navigation": "Process Capability (SixSigma package)",
+    "measuredVar": "Variable with the data of the process performance",
+    "lsl": "LSL - numeric value of lower specification limit",
+    "usl": "USL - numeric value of upper specification limit",
+    "ciChk": "Compute a Confidence Interval",
+    "alphaLim": "Alpha - Type I error (α) for the Confidence Interval",
+    "capabilityStudyChk": "Show graphs and figures for the Process Capability Study",
+    "target": "Target of the process",
+    "futureProcessVar": "Variable with the data of the long term process performance",
+    "mainTitle": "Main title for the graphic output",
+    "subTitle": "Subtitle for the graphic output (e.g. the name of the Six Sigma project)",
+    "ciMeanChk": "Plot Confidence Interval for the mean",
+    "sigma2": "The population variance, if known",
+    "ciMeanMainTitle": "Main title for the Confidence Interval for the mean graphic output",
+    "ciMeanSubTitle": "Subtitle for the graphic output (e.g. the name of the Six Sigma project)",
+    "help": {
+        "title": "Process Capability Analysis",
+        "r_help": "help(ss.ca.cp, package = SixSigma)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tss.ca.cp function to compute the Capability Indices of a process, Z (Sigma Score), C_p and C_{pk}.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(ss.ca.cp, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called process_capability_study_table.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tfrom the sample dataset, select widgets variable, type 745 in LSL, 760 in USL, 755 in Target \n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

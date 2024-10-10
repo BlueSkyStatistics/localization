@@ -1,0 +1,15 @@
+{
+    "title": "Linear Regression",
+    "navigation": "Linear, basic(Legacy)",
+    "modelname": "Enter Model Name",
+    "dependent": "Dependent variable",
+    "independent": "Independent variable(s)",
+    "nointercept": "Ignore intercept",
+    "generateplotchk": "Plot residuals vs fitted, normal Q-Q , scale-location and residuals vs leverage",
+    "weights": "Specify a variable with weights",
+    "help": {
+        "title": "Linear Regression",
+        "r_help": "help(lm, package ='stats')",
+        "body": "\n            <b>Description</b></br>\nBuilds a linear regression model. Internally calls function lm in stats package. Returns an object called BSkyLinearRegression which is an object  of class lm. Displays a summary of the model, coefficient table, Anova table and sum of squares table and plots the following  residuals vs. fitted, normal Q-Q, theoretical quantiles, residuals vs. leverage. You can optionally specify a variable with weights and choose to ignore the intercept.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Summarizing the model<br/>\nsummary(LinearRegModel1)<br/>\n#Displaying the Anova table<br/>\nanova(LinearRegModel1)<br/>\n#Plots residuals vs. fitted, normal Q-Q, scale-location, residuals vs. leverage<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndepVar: Name of the dependent variable.  If we have a dataset cars, with a variable mpg that we want to predict mpg (dependent variable is mpg) enter mpg​\n</li>\n<li>\nindepVars: Names of the dependent variable. If we have a dataset cars, with dependent  variable horsepower, enginesize, enter horsepower+enginesize. Categorical variables are automatically dummy coded.​\n</li>\n<li>\ndataset: Name of the dataframe. When you open data frames or datasets e.g. csv, Excel files, SAS files in BlueSky Statistics, they are named Dataset1, Dataset2, Dataset3 so enter Dataset1\n</li>\n</ul>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    }
+}

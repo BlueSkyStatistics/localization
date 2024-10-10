@@ -1,0 +1,18 @@
+{
+    "title": "Transform Variable(s)",
+    "navigation": "Transform",
+    "label1": "Use the drop down to select the  operation (log, log10,as.numeric...) to transform the selected variables. You can overwrite existing variables or create new variables by specifying a prefix/suffix.",
+    "target": "Select the variable(s) to transform",
+    "selectctrl": "Select an operation to apply",
+    "label2": "Create new or overwrite existing variables",
+    "suffix": "Specify a suffix",
+    "prefix": "Specify a prefix",
+    "overwrite": "Overwrite",
+    "enterPrefix": "Enter a prefix",
+    "enterSuffix": "Enter a suffix",
+    "help": {
+        "title": "Transform Variables",
+        "r_help": "help(log, package ='base')",
+        "body": "\n<b>Description</b></br>\nUse the drop down to select the operation (log, log10,as.numeric...) to transform the selected variables. You can overwrite existing variables or create new variables by specifying a prefix/suffix.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvar: The variable to be transformed\n</li>\n<li>\nDataset: The dataset that contains the variable var\n</li>\n</ul>\n<b>Value</b></br>\nTransformed values are stored directly in the dataset</br>\n<b>Package</b></br>\nbase</br>\n<b>Help</b></br>\nhelp(log, package ='base')\n"
+    }
+}

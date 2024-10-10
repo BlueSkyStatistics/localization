@@ -1,0 +1,26 @@
+{
+    "title": "Gumbel Distribution Plot",
+    "navigation": "Gumbel Distribution Plot",
+    "location": "Location",
+    "scale": "Scale",
+    "pdenfun": "Plot density function",
+    "pdstfun": "Plot distribution function",
+    "lblregions": "Optionally specify regions under the density function by",
+    "xvals": "x-values",
+    "quantiles": "quantiles",
+    "lblRegFill": "Regions to fill (specify one or two, or leave blank)",
+    "lblreg1": "Region 1 :",
+    "lblreg2": "Region 2 :",
+    "lblregfrm": "From",
+    "lblregto": "To",
+    "lblregcol": "Color",
+    "lblLegPos": "Position of legend",
+    "toprt": "Top right",
+    "toplt": "Top left",
+    "topmid": "Top center",
+    "help": {
+        "title": "Gumbel Distribution Plot",
+        "r_help": "help(qgumbel, package=RcmdrMisc)",
+        "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Density, distribution function, quantile function and random generation for the Gumbel distribution with specified location and scale parameters.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vector of quantiles (values of the variable).</li>\n                \n                \n                <li>p : vector of probabilities.</li>\n                \n                \n                <li>n : number of observations. If length(n) > 1, the length is taken to be the number required.</li>\n                \n                \n                <li>location : location parameter (default 0); potentially a vector.</li>\n                \n                \n                <li>scale : scale parameter (default 1); potentially a vector.</li>\n                \n                <li>lower.tail : logical; if TRUE (the default) probabilities and quantiles correspond to P(X ≤ x), if FALSE to P(X > x).</li>\n            </ul>            \n"
+    }
+}

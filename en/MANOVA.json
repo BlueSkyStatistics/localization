@@ -1,0 +1,22 @@
+{
+    "title": "Multivariate ANOVA",
+    "navigation": "MANOVA",
+    "modelname": "Model name",
+    "tvarbox1": "Dependent variables",
+    "tvarbox2": "Fixed factor",
+    "blockVar": "Covariate(s)",
+    "testStatistic": "Test statistic",
+    "label2": "Options for posthocs ",
+    "combon": "Compare Means using:",
+    "emm": "Estimated marginal means",
+    "displayBoxMDetails": "Display details associated with Box's M test (Note: Results of Box's M test are always shown)",
+    "adjust": "Method for adjusting p-values",
+    "levenesTest": "Levene's test",
+    "posthocs": "Posthocs",
+    "plotMeansCI": "Plot of means and confidence intervals",
+    "help": {
+        "title": "Multivariate ANOVA",
+        "r_help": "help(manova, package='stats')",
+        "body": "\n<b>Description</b></br>\nMultivariate ANOVA: Omnibus multivariate tests and corresponding F and  p values are provided. Follow up univariate tests are also provided.</br> NOTE: We currently support a single independent factor</br>\nNOTE: We don't display the confidence interval in the plot of means as there are unnecessary warnings displayed. We are working with the author of the gplots package to rectify this.</br>\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n...: Arguments passed to aov\n</li>\n</ul>\n<b>Details</b></br>\nClass \"manova\" differs from class \"aov\" in selecting a different summary method. Function manova calls aov and then add class \"manova\" to the result object for each stratum.​</br>\n<b>Value</b><br/>\nSee aov help, details below<br/>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nClick the R Help button to get detailed R help.</br> You can also enter help(manova, package ='stats') and hit CTRL Enter in the R syntax editor to get help</br>\n"
+    }
+}

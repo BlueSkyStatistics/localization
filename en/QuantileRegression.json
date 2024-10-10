@@ -1,0 +1,25 @@
+{
+    "label1": "To compare quantile regression model slopes, see \"Model Evaluation > Compare > Quant Reg Models\"",
+    "title": "Quantile Regression",
+    "navigation": "Quantile",
+    "modelname": "Enter model name",
+    "depvarlabel": "Dependent Variable",
+    "quantilelabel": "Quantile (0-1)",
+    "estgrplabel": "Estimation Method",
+    "brlabel": "Barrodale and Roberts",
+    "fnlabel": "Frisch-Newton",
+    "pfnlabel": "Frisch-Newton, preprocessing",
+    "sfnlabel": "Frisch-Newton, sparse",
+    "stderrgrplabel": "Standard Error Method",
+    "ranklabel": "Rank",
+    "iidlabel": "IID",
+    "nidlabel": "NID",
+    "kernallabel": "Kernal",
+    "bootstraplabel": "Bootstrap",
+    "bootsamplabel": "Bootstrap Samples",
+    "help": {
+        "title": "Quantile Regression",
+        "r_help": "help(rq, package = 'quantreg')",
+        "body": "\nThis fits a quantile regression model, which models a desired quantile (i.e. percentile) of the outcome variable.  A typical quantile to model is 0.5, i.e. the median.  \nA model summary and parameter estimates with 95% confidence intervals are provided.\n<br/><br/>\n<b>Enter Model Name:</b>  the desired name of the model\n<br/><br/>\n<b>Dependent Variable:</b>  Specify the dependent variable for the model.  The desired quantile of this variable will be modeled.  This must be numeric.\n<br/><br/>\n<b>Formula Builder:</b>  Specify the model terms using formula notation.  Numeric, factor, ordered factor, and character variables are allowed.  Character variables will be coerced to factors.\n<br/><br/>\n<b>Quantile (0-1):</b>  Specify the desired quantile to model for the dependent variable.  0.5 (the median) is the default and is a typical quantity.\n<br/><br/>\n<b>Estimation Method:</b>  Specify the estimation method for the model parameters.  The Barrodale and Roberts method is the default and is efficient for models with \nseveral thousand observations.  The Frisch-Newton and the Frisch-Newton, preprocessing approach might be advantageous for large and very large problems, respectively, \nespecially in cases with a small number of estimated parameters.  For large sample sizes with a large number of parameters, the Frisch-Newton, sparse method may be needed.  \nSee the references in the R Help for details.\n<br/><br/>\n<b>Standard Error Method:</b>  Specify the method used to estimate standard errors and confidence intervals.  The Rank method provides confidence intervals only, can be slow \nto run for larger sample sizes (n > 1000), and is based on inverting a rank test.  The IID method assumes the errors are independent and identically distributed (iid).  The NID \nmethod presumes local linearity in the quantile and computes a sandwich estimate using a local estimate of sparsity.  The Kernal method uses a kernal estimate of the sandwich.  \nThe Bootstrap method uses a re-sampling bootstrap approach to estimate the standard errors.  See the references in the R Help for details.\n<br/><br/>\n<b>Bootstrap Samples:</b>  Desired number of bootstrap samples for the bootstrap standard error approach.  The default is 2000 samples.\n<br/><br/>\n<b>Required R Packages:</b> quantreg, broom\n\t\t"
+    }
+}

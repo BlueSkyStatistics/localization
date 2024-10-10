@@ -1,0 +1,18 @@
+{
+    "title": "Sample Size, Test Two Paired Proportions",
+    "navigation": "Two Paired Proportions",
+    "howtouse": "To compute sample size (number of pairs): specify power\nTo compute power: specify sample size (number of pairs)",
+    "n": "Sample Size (number of pairs)",
+    "power": "Power (0-1)",
+    "pdisc": "Discordant Pairs Proportion (PD) (0-1)",
+    "pdiff": "Difference in Proportions, must be between -PD and PD",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "help": {
+        "title": "Sample Size, Test Two Paired Proportions",
+        "r_help": "help(qnorm, package ='stats')",
+        "body": "\nThis is an assessment of sample size for a paired test of proportions using McNemar's Test.  It computes the sample size (number of pairs) or power when the user \nspecifies the other.  The computations use a normal approximation conditional on the proportion of discordant pairs.  See Connor R. J. 1987. Sample size for testing \ndifferences in proportions for the paired-sample design. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Sample Size (number of pairs):</b> Specify the sample size in the study.  This is the number of subjects that will provide binary outcome values at both time points\nin a pre vs post design or the number of pairs in a matched subject (e.g. matched case-control) design. \n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Discordant Pairs Proportion:</b> Specify the expected proportion of pairs that will disagree, e.g. 'yes'/'no' or 'no'/'yes' responses, out of the total number of pairs\n<br/><br/>\n<b>Difference in Proportions:</b> Specify the difference in outcome proportions (i.e. proportion that are 'yes') that is desired to detect.  For example, in a matched case-control\nstudy this is the difference between the proportion of cases that are 'yes' and the proportion of controls that are 'yes'. \n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Required R Packages:</b> stats\n\t\t\t"
+    }
+}

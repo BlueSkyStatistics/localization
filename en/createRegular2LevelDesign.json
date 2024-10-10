@@ -1,0 +1,32 @@
+{
+    "title": "Create Regular (Fractional) Factorial 2-level Design",
+    "navigation": "Create Regular (Fractional) Factorial 2-level Design",
+    "selectedvars": "Select variables",
+    "datasetname": "Design name",
+    "lblheading": "Size and randomization",
+    "numOfRuns": "Number of runs (if specified, it must be a power of 2 otherwise make it 0)",
+    "numOfBlocks": "Number of blocks",
+    "alias2FIsChk": "blocks may be aliased with 2fis",
+    "numOfCenterPts": "Number of center points (if used, have minimum 2)",
+    "centerPointDistribution": "Number of positions for center point distribution (have >1)",
+    "replications": "Replications",
+    "repeatOnlyChk": "Repeat only",
+    "lbl1": "You may not need to change the randomization settings",
+    "randomseeds": "Seed for randomization",
+    "randomizationChk": "Randomize the design generation",
+    "lbl2": "NOTE: affects design generation for MaxC2 choice OR unspecified number of runs only",
+    "lbldesignheading": "Design properties",
+    "roman": "Minimum resolution(III, IV, V...)",
+    "marad": "MA (Maximum resolution and minimum aberration)",
+    "maxC2rad": "MaxC2 (Maximum number of clear 2fis)",
+    "lbl3": "Specify a design catalog (optional)",
+    "designChk": "Use a design from the catalog",
+    "designcatlgname": "Design catalog name e.g. catlg",
+    "designnamefromcatlg": "Design name from the design catalog",
+    "nrunsChk": "Auto calculate number of runs from the design specified above",
+    "help": {
+        "title": "Create Regular (Fractional) Factorial 2-level Design",
+        "r_help": "help(FrF2, package = FrF2)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFrF2 function to generate regular Fractional Factorial 2-level designs\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(FrF2, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUse the menu DOE->Inpect Design->Inspect FrF2 Catalog to browse avaiable FrF2 Designs to reference from the loaded design catalog in FrF2 package\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factor_grid_Injection Molding FrF2.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Add centerpoint to a 2-level Design (quantitative) with no prior centerpoint) - the selected design is the active design on the dataset UI grid",
+    "navigation": "Add centerpoint 2-level Design (Quantitative)",
+    "datasetname": "Modified Design name with centerpoints",
+    "numOfCenterPts": "Number of center points (if used, must be minimum 2)",
+    "centerPointDistribution": "Number of positions for center point distribution (must be >1)",
+    "help": {
+        "title": "Add centerpoint to a 2-level Design (with no prior centerpoint)",
+        "r_help": "help(add.center, package = FrF2)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tadd.center function to add center points to a 2-level fractional factorial design. All factors must be quantitative \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(add.center, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

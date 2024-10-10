@@ -1,0 +1,17 @@
+{
+    "title": "Create Full Factorial Design",
+    "navigation": "Create Full Factorial Design",
+    "datasetname": "Design name",
+    "selectedvars": "Select variables",
+    "numOfBlocks": "Number of blocks",
+    "replications": "Replications",
+    "repeatOnlyChk": "Repeat only",
+    "lbl1": "You may not need to change the randomization settings",
+    "randomseeds": "Seed for randomization",
+    "randomizationChk": "Randomize the design generation",
+    "help": {
+        "title": "Create Full Factorial Design",
+        "r_help": "help(fac.design, package = DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tfac.design function to generate full factorial designs\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factor_grid_full_factorial_Design.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

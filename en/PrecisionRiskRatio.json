@@ -1,0 +1,17 @@
+{
+    "title": "Sample Size, Precision of a Risk Ratio",
+    "navigation": "Risk Ratio",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n1": "Group 1 Sample Size",
+    "width": "Confidence Interval Width",
+    "ratio": "Ratio of Group 2 to Group 1 Sample Size",
+    "prop1": "Group 1 Outcome Proportion",
+    "prop2": "Group 2 Outcome Proportion",
+    "conflevel": "Confidence Level (0-1)",
+    "method": "Confidence Interval Method",
+    "help": {
+        "title": "Sample Size, Precision of a Risk Ratio",
+        "r_help": "help(prec_riskratio, package ='presize')",
+        "body": "\nThis is an assessment of sample size for a ratio of proportions (risk ratio / relative risk) based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Group 1 Sample Size:</b> Specify the number of subjects in group 1\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Ratio of Group 2 to Group 1 Sample Size:</b> Specify the ratio of the group 2 sample size to the group 1 sample size.  A value of 1 means equal sample sizes.\n<br/><br/>\n<b>Group 1 Outcome Proportion:</b> Specify the proportion of subjects in group 1 with the 'positive' outcome\n<br/><br/>\n<b>Group 2 Outcome Proportion:</b> Specify the proportion of subjects in group 2 with the 'positive' outcome\n<br/><br/>\nNote that the risk ratio will be computed as the proportion in group 1 divided by the proportion in group 2.\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Confidence Interval Method:</b> Specify the type of confidence interval to use. Koopman (koopman) provides an asymptotic score confidence interval that is always consistent \nwith Pearsons chi-squared test. It is the recommended interval (Fagerland et al.). Katz (katz) uses a logarithmic transformation to calculate the confidence interval. The CI cannot \nbe computed if one of the proportions is zero. If both proportions are 1, the estimate of the standard error becomes zero, resulting in a CI of [1, 1].\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

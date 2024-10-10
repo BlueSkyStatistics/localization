@@ -1,0 +1,20 @@
+{
+    "title": "Subset Dataset by Logic",
+    "navigation": "Subset Dataset by Logic",
+    "label0": "You can choose to save the results in a new dataset or overwrite the existing dataset",
+    "label1": "Options",
+    "New": "Save results to a new dataset",
+    "newdatasetname": "Enter a dataset name",
+    "Existing": "Overwrite existing dataset",
+    "Output": "Display results in the output window",
+    "distinct": "Select distinct cases",
+    "chkbox2": "Remove unused factor levels",
+    "subsetvars": "Select variables to include in subsetted dataset",
+    "label12": "Subsetting criteria is applied against each row, see examples below. \n1: Select rows where var 1 is non empty and var2 is empty specify:\n!is.na(var1) & is.na(var2) \n2: Select rows where var1 > 30 and var 2 is Male specify:\nvar1>30 & var2=='Male' \n3: Complex and or criteria specify:\n(var1 !=10 & var2>20) | var3==40 \n4: Pattern match (xxx) or an exact match (abc) specify:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Match a substring by position specify: substr(var1,2,4) ==\"abc\"",
+    "subsetexpression": "Enter subsetting criteria.",
+    "help": {
+        "title": "Subset Dataset",
+        "r_help": "help(filter, package=dplyr)",
+        "body": "\n            <b>Description</b></br>\nReturns a subset of the dataset. You can specify the columns/variables that you want in the smaller dataset. You can also specify selection criteria to be applied against each row of the dataframe.\n<br/><br/>\n<b>Save results to a new dataset:</b> Specify a new dataset to store the subsetted data\n<br/><br/>\n<b>Overwrite existing dataset:</b> This saves the subsetted dataset to the existing dataset name\n<br/><br/>\n<b>Display results in the output window:</b> This prints the subsetted dataset in the output window only.  The subsetted dataset is not saved in a dataset.\n<br/><br/>\n<b>Selected distinct cases:</b> This removes duplicates from the subsetted dataset. All variables have to be the same to be considered a duplicate.\n<br/><br/>\n<b>Remove unused factor levels:</b> This deletes factor levels that were excluded by the subset (i.e. no longer appear in the data).\n<br/><br/>\n<b>Select variables to include in subsetted dataset:</b> This allows the user to select specific columns they want to include in the dataset.  If any are specified, then only the specified variables will show up in the subsetted dataset.  If no variables are specified, then all variables will be kept.\n<br/><br/>\n<b>Enter subsetting criteria:</b> Specify variable logic that will be used to filter the rows of the dataset.\n<br/><br/>\n<b>R Package</b></br>\ndplyr<br/>  \n<b>Help</b></br>\nhelp(filter, package=dplyr)\n"
+    }
+}

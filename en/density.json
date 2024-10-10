@@ -1,0 +1,25 @@
+{
+    "title": "Density Plot",
+    "navigation": "Density",
+    "x": "Select a variable(s) to plot",
+    "y": "Color, specify a factor variable",
+    "fill": "Fill, specify a factor variable",
+    "label1": "Select a position to control overlapping",
+    "rd1": "Stack densities",
+    "rd2": "Stack densities and standardize each stack to have unit height",
+    "rd3": "Side by side (Dodge)",
+    "alpha": "Opacity (0-1)",
+    "flip": "Flip Axis",
+    "specify_a_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Density Plot",
+        "r_help": "help(geom_density, package='ggplot2')",
+        "body": "\n            <b>Description</b></br>\n            Plots the density counts (1d kernel density estimate).Allows you to separate densities by a factor variable. You can also optionally create facets, themes and specify a title and labels for the x and y axis.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Density plot for variable var1\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Density plot for variable var1, color by levels of var2\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset\n            </li>\n            <li>\n            aes():Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.\n            </li>\n            <li>\n            x: the numeric variable to plot densities for\n            </li>\n            <li>\n            y: ..count specifies counts of the numeric variable\n            </li>\n            <li>\n            fill: the factor variable to group plot by\n            </li>\n            <li>\n            position: Position adjustment, either as a string, or the result of a call to a position adjustment function. Valid values are \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density ():1d kernel density estimate, the position parameter allows you to specify the position adjustment to use for overlapping points on this layer.\n            </li>\n            <li>\n            Labs(): Change axis labels and legend titles(This is optional).\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)\n            </li>\n            <li>\n            theme_excel(): The excel theme(This is optional)\n            </li>\n            <li>\n            alpha: sets transparency\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes</br>\n            <b>Help</b></br>\n            help(geom_density)</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(geom_density), help(labs), help(aes), help(facet_grid), help(theme_excel)\n    "
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "title": "Shapiro-Wilk Normality Test",
+    "navigation": "Shapiro-Wilk Normality Test (Legacy)",
+    "tvarbox1": "Select numeric variables",
+    "help": {
+        "title": "Shapiro-Wilk Normality Test",
+        "r_help": "help(shapiro.test, package=stats)",
+        "body": "\n<b>Description</b></br>\nPerforms the Shapiro-Wilk test of normality.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: a numeric vector of data values. Missing values are allowed, but the number of non-missing values must be between 3 and 5000.\n</li>\n</ul>\n<b>Value</b><br/>\nA list with class \"htest\" containing the following components:<br/>\nstatistic: the value of the Shapiro-Wilk statistic.<br/>\np.value: an approximate p-value for the test. This is said in Royston (1995) to be adequate for p.value < 0.1.<br/>\nmethod: the character string \"Shapiro-Wilk normality test\".<br/>\ndata.name: a character string giving the name(s) of the data.<br/>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nhelp(shapiro.test, package=stats)\n"
+    }
+}

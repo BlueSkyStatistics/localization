@@ -1,0 +1,26 @@
+{
+    "title": "Lognormal Distribution Plot",
+    "navigation": "Lognormal Distribution Plot",
+    "meanlog": "Mean (log scale)",
+    "sdlog": "Standard deviation (log scale)",
+    "pdenfun": "Plot density function",
+    "pdstfun": "Plot distribution function",
+    "lblregions": "Optionally specify regions under the density function by",
+    "xvals": "x-values",
+    "quantiles": "quantiles",
+    "lblRegFill": "Regions to fill (specify one or two, or leave blank)",
+    "lblreg1": "Region 1 :",
+    "lblreg2": "Region 2 :",
+    "lblregfrm": "From",
+    "lblregto": "To",
+    "lblregcol": "Color",
+    "lblLegPos": "Position of legend",
+    "toprt": "Top right",
+    "toplt": "Top left",
+    "topmid": "Top center",
+    "help": {
+        "title": "Lognormal Distribution Plot",
+        "r_help": "help(qlnorm, package=stats)",
+        "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Density, distribution function, quantile function and random generation for the log normal distribution whose logarithm has mean equal to meanlog and standard deviation equal to sdlog.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code>\n                dlnorm(x, meanlog = 0, sdlog = 1, log = FALSE)\n                <br/>\n                plnorm(q, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlnorm(p, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlnorm(n, meanlog = 0, sdlog = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vector of quantiles.</li>\n                \n                \n                <li>p : vector of probabilities.</li>\n                \n                \n                <li>n : number of observations. If length(n) > 1, the length is taken to be the number required.</li>\n                \n                \n                <li>meanlog, sdlog : mean and standard deviation of the distribution on the log scale with default values of 0 and 1 respectively.</li>\n                \n                \n                <li>log, log.p : logical; if TRUE, probabilities p are given as log(p).</li>\n                \n                \n                <li>lower.tail : logical; if TRUE (default), probabilities are P[X ≤ x], otherwise, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Details</b>\n            <br/>\n            The log normal distribution has density\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ x) e^-((log x - μ)^2 / (2 σ^2))</code>\n            <br/>\n            where μ and σ are the mean and standard deviation of the logarithm. The mean is E(X) = exp(μ + 1/2 σ^2), the median is med(X) = exp(μ), and the variance Var(X) = exp(2*μ + σ^2)*(exp(σ^2) - 1) and hence the coefficient of variation is sqrt(exp(σ^2) - 1) which is approximately σ when that is small (e.g., σ < 1/2).\n            <br/>\n            <br/><b>Value</b>\n            <br/>\n            dlnorm gives the density, plnorm gives the distribution function, qlnorm gives the quantile function, and rlnorm generates random deviates.\n            <br/>\n            The length of the result is determined by n for rlnorm, and is the maximum of the lengths of the numerical arguments for the other functions.\n            <br/>\n            The numerical arguments other than n are recycled to the length of the result. Only the first elements of the logical arguments are used.\n            <br/>\n            <br/><b>Note</b>\n            <br/>\n            The cumulative hazard H(t) = - log(1 - F(t)) is -plnorm(t, r, lower = FALSE, log = TRUE).            \n"
+    }
+}

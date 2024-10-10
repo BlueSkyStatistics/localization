@@ -1,0 +1,14 @@
+{
+    "title": "Fill Values Downward or Upward",
+    "navigation": "Fill Values Downward or Upward",
+    "fillinvars": "Variables to Fill In Values",
+    "groupbyvars": "Variables to Group By",
+    "directionlabel": "Direction",
+    "downward": "Downward",
+    "upward": "Upward",
+    "help": {
+        "title": "Fill Values Downward or Upward",
+        "r_help": "help(fill, package ='tidyr')",
+        "body": "\nThis dialog fills in missing values in dataset columns by using the previous entry in each column.  This can be useful in cases where values are not repeated, but recorded each time they change.  Typically, this means the dataset is sorted in a meaningful way.  The variables where values are filled in will be overwritten.\n<br/><br/>\n<b>Variables to Fill In Values:</b> Specify variables for which missing values will be filled in\n<br/><br/>\n<b>Variables to Group By:</b> Specify variables that group rows together.  Missing values will be filled in within groups defined by these variables.  For example, grouping by a subject identifier would fill in values within subjects.\n<br/><br/>\n<b>Direction:</b> Specify the direction for which the values will be filled in.\n<br/><br/>\n<b>R Packages Required:</b> tidyverse\n\t\t\t"
+    }
+}

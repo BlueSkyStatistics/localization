@@ -1,0 +1,24 @@
+{
+    "title": "Save Models to a file",
+    "navigation": "Save Models",
+    "filterModels": "Filter models by class",
+    "modelSelection": "Select a model(s) to save",
+    "importResp": "Select a file to save a model to",
+    "label1": "NOTE: The model will be saved to a file in the path selected below ONLY when you execute the dialog.",
+    "levelOfInterest": "When the variable to predict has 2 levels, specify the level of interest. The confusion matrix and related statistics are displayed with the specified level of interest as the reference",
+    "label12": "Test results: As soon as a model is selected, we will run tests to see whether dependent variables specified in the model are \navailable in the dataset to be scored. The results will be displayed here",
+    "label2": "Save predicted values and supporting statistics.",
+    "label3": "Predictions and predicted probabilities where applicable are stored in the dataset being scored as new variables with prefix below",
+    "label4": "**For dependent variables with 2 levels, the 2nd level is treated as the positive level. See Data > Factor Levels > Reorder Levels Manually to change the order of factor levels and rebuild the model.",
+    "conflevel": "Save confidence intervals for individual predicted values  **(Valid only for linear models (class lm))",
+    "roctable": "Show ROC table (**For binary dependent variables only)",
+    "colname": "Specify column name prefix",
+    "label5": "**Checking the checkbox above will incur a performance penalty for large datasets.",
+    "level": "Specify the confidence level",
+    "confusioncheck": "Generate Confusion Matrix",
+    "help": {
+        "title": "Save Models",
+        "r_help": "help(save, package='base')",
+        "body": "\n    <b>Description</b></br>\n    Models selected will be saved to a file in the R data format (.RData extension)</br>\n    You can specify a new file by entering a name or selecting an existing file</br>\n    If you select an existing file, it will be overwritten.</br>\n    You have to click the execute button (the horizontal triangle button) to run the dialog and save the objects to a file. \n    <br/>\n    <b>Usage</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"path of the file\")\n    </code> <br/>\n    <b>Arguments</b><br/>\n    <ul>\n    <li>\n    model1, model2...: fitted model objects\n    </li>\n    <li>\n    file:file name with path, the model objects selected will be saved to this RData file\n    </li>\n    </ul>\n    <b>Package</b></br>\n    base</br>\n    <b>Help</b></br>\n    For detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(save, package = 'base') in the R editor window\n    </br>\n    "
+    }
+}

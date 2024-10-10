@@ -1,0 +1,24 @@
+{
+    "title": "Split/Collapse a dataset with repeating group of variables",
+    "navigation": "Repeating Variable Sets",
+    "removeColsWithConstantChk": "Remove all columns with constant values (case insensitive) before splitting or collapsing",
+    "removeRowsWithNAsChk": "Keep only complete cases i.e. remove entire row with any empty or NA values in output dataset(s)",
+    "resultDatasetNameSuffix": "(Optional) one or more strings (comma separated) to be used as a suffix for the output dataset name(s)",
+    "splitDatasetRad": "Split the dataset into multiple datasets based on the repeating variable set",
+    "autoDetectColGroupLengthRad": "Automatically detect the repeating variable set to split or collapse",
+    "manualColGroupLengthRad": "Specify the length of the repeating variable set to be used for splitting or collapsing",
+    "manualRepeatingColumnGroupLength": "Length of the repeating variable set",
+    "outputColumnNames": "(Optional) List of variable names (comma separated) to be used for the output dataset(s)",
+    "collapseDatasetRad": "Collapse to create one long dataset instead of splitting into multiple datasets",
+    "collapseGpIDPrefix": "Prefix to Set ID values",
+    "collapseGpIDColName": "Set ID variable name (a new variable will be created in the output dataset)",
+    "collapseGpIDColFirstChk": "Make the Set ID variable the first column (uncheck for last column)",
+    "makeCollapseGpIDColFactorChk": "Make Set ID variable a factor",
+    "label1": "Detection of repeating variable set",
+    "label2": "Split or Collapse the dataset?",
+    "help": {
+        "title": "Split/Collapse a dataset with repeating group of variables",
+        "r_help": "",
+        "body": "\n            <b>Description</b></br>\n            This dialog is used to split (into multiple datasets) or collapse (into one long dataset) a dataset with repeated set of variables\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExample 1: To try this, you may use the sample dataset file called Repeating Variable Sets.xlsx\n\t\t\t<br/>\n\t\t\tOpen the file in the data grid with the file open menu\n\t\t\t<br/>\n\t\t\tIn the dialog - type\n\t\t\t<br/>\n\t\t\tThere will be three datasets created as there are three repeating variable sets. you can type none, one, or more\n\t\t\tstrings for output dataset name suffixes as abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tKeep every other item in the dialog as the default  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExample 2: To try this, you may use the sample dataset file called Repeating Variable Sets2.xlsx\n\t\t\t<br/>\n\t\t\tOpen the file in the data grid with the file open menu\n\t\t\t<br/>\n\t\t\tIn the dialog - type\n\t\t\t<br/>\n\t\t\tThere will be four datasets created as there are four repeating variable sets\n\t\t\t<br/>\n\t\t\tKeep every item in the dialog as the default \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tYou may use the same two sample dataset files to try the option of Collapse in \"Split or Collapse the dataset?\" section of the dialog to create a single output dataset\n\t\t\t<br/>\n\t\t\t<br/>\n"
+    }
+}

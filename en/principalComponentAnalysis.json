@@ -1,0 +1,18 @@
+{
+    "title": "Principal Component Analysis",
+    "navigation": "Principal Components",
+    "lab40": "NOTE: The correlation or covariance matrix is automatically created from the variables selected",
+    "destination": "Select variables",
+    "label1": "Select a correlation or covariance matrix",
+    "rd1": "Correlation matrix",
+    "rd2": "Covariance matrix",
+    "addToDataset": "Add principal components to dataset. You must specify a prefix for the variable names and the number of components to add",
+    "variablePrefix": "Enter a prefix for the components added to the dataset",
+    "noOfComponents": "Enter the no of components to add to the dataset",
+    "screeplot": "Screeplot",
+    "help": {
+        "title": "Principal Component Analysis",
+        "r_help": "help(princomp, package ='stats')",
+        "body": "\n<b>Description</b></br>\nPerforms a principal components analysis on the given numeric data matrix and returns the results as an object of class princomp. Internally calls princomp in the stats package.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyPCARes <-BSkyPrinCompAnalysis(vars=c(),cor =TRUE, componentsToRetain =0, generateScreeplot=FALSE,prefixForComponents =\"\",dataset=\"\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: The variables in a character vector to extract components from\n</li>\n<li>\ncor: A boolean that specifies whether the calculation should use a correlation or covariance matrix\n</li>\n<li>\ncomponentsToRetain: A numeric that Specifies the number of components to retain in the dataset. A new variable is created in the dataset for each component invoked\n</li>\n<li>\n​generateScreeplot: Generates a screeplot\n</li>\n<li>\nprefixForComponents: Prefix to use when saving the components to a dataset\n</li>\n<li>\ndataset: The name of the dataset as a string\n</li>\n</ul>\n<b>Value</b></br>\nprincomp returns a list with class \"princomp\" containing the following components</br>\nsdev: the standard deviations of the principal components.</br>\nloadings: the matrix of variable loadings (i.e., a matrix whose columns contain the eigenvectors). This is of class \"loadings\": see loadings for its print method.</br>\ncenter: the means that were subtracted.</br>\nscale: the scalings applied to each variable.</br>\nn.obs: the number of observations.</br>\nscores: if scores = TRUE, the scores of the supplied data on the principal components. These are non-null only if x was supplied, and if covmat was also supplied if it was a covariance list. For the formula method, napredict() is applied to handle the treatment of values omitted by the na.action.</br>\ncall: the matched call.</br>\nna.action: If relevant.</br>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nhelp(princomp, package ='stats')\n"
+    }
+}

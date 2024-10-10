@@ -1,0 +1,18 @@
+{
+    "title": "Sample Size, Test Correlation",
+    "navigation": "Correlation",
+    "howtouse": "To compute sample size: specify correlation and power\nTo compute power: specify sample size and correlation\nTo compute detectable correlation: specify sample size and power",
+    "n": "Sample Size",
+    "corr": "Correlation (-1 to 1)",
+    "power": "Power (0-1)",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "greater": "Greater Than",
+    "less": "Less Than",
+    "help": {
+        "title": "Sample Size, Test Correlation",
+        "r_help": "help(pwr.r.test, package ='pwr')",
+        "body": "\nThis is an assessment of sample size for a Pearson correlation coefficient.  It computes the sample size, power, or correlation when the user \nspecifies the other two.  The null hypothesis correlation is 0.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Correlation:</b> Specify the correlation to detect\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided, greater than (one-sided), or less than (one-sided)\n<br/><br/>\n<b>Required R Packages:</b> pwr\n\t\t\t"
+    }
+}

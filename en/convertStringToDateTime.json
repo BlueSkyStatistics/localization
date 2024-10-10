@@ -1,0 +1,16 @@
+{
+    "title": "Convert Character Variables To Date & Time",
+    "navigation": "Character to Date & Time",
+    "label1": "Select a suffix or prefix for converted variables",
+    "suffix": "Suffix",
+    "prefix": "Prefix",
+    "prefixOrSuffix": "Enter a prefix or suffix",
+    "Destination": "Select character variables to convert to date",
+    "DateFormat": "Select the format of the character string",
+    "TimeZone": "Select a time zone (default -nothing  selected is the local time zone of the PC)",
+    "help": {
+        "title": "Convert Character To Date",
+        "r_help": "help(strptime, package=\"base\")",
+        "body": "\n<b>Description</b></br>\nConverts a character to a date (POSIXct class). You need to specify the format of the date  stored in a character string.\nThe function above internally calls strptime in the base package. We have extended strftime to support multiple variables.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkystrptime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndata: The dataset name as a character string.\n</li>\n<li>\nvarNames: The variable names of class character that need to be converted to date (POSIXct class)\n</li>\n<li>\ndateFormat: A character string. The default for the format methods is \"%Y-%m-%d %H:%M:%S\" if any element has a time component which is not midnight, and \"%Y-%m-%d\" otherwise. If options(\"digits.secs\") is set, up to the specified number of digits will be printed for seconds\n</li>\n<li>\ntimezone: A character string specifying the time zone to be used for the conversion. System-specific (see as.POSIXlt), but \"\" is the current time zone, and \"GMT\" is UTC. Invalid values are most commonly treated as UTC, on some platforms with a warning.\n</li>\n<li>\nprefixOrSuffix: Specific a prefix or suffix for the converted variables of class POSIXct . Takes either c(\"prefix\") or c(\"suffix\"). New variables that are created with this prefix/suffix to the original variable name. \n</li>\n<li>\nprefixOrSuffixValue = A character vector that specifies the name of the prefix or suffix to be used.\n</li>\n</ul>\n<b>Package</b></br>\nbase</br>\n<b>Help</b></br>\nhelp(strptime)\n"
+    }
+}

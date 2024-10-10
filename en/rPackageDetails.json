@@ -1,0 +1,10 @@
+{
+    "title": "R Package Details",
+    "navigation": "Package details",
+    "packageName": "Select an installed R package",
+    "help": {
+        "title": "R Package Details",
+        "r_help": "help(packageDescription, package='utils')",
+        "body": "\n<b>Description</b></br>\nDisplays the description of the selected package\n<br/>\n<b>Usage</b>\n<br/>\n<code> \npackageDescription(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\npkg: a character string with the package name.\n</li>\n<li>\nlib.loc: a character vector of directory names of R libraries, or NULL. The default value of NULL corresponds to all libraries currently known. If the default is used, the loaded packages and namespaces are searched before the libraries.\n</li>\n<li>\nfields: a character vector giving the tags of fields to return (if other fields occur in the file they are ignored).\n</li>\n<li>\ndrop: If TRUE and the length of fields is 1, then a single character string with the value of the respective field is returned instead of an object of class \"packageDescription\".\n</li>\n</ul>\n<b>Details</b></br>\nThe description of the package</br>\n<b>Examples</b><br/>\n<code> \npackageDescription(\"stats\")\n</code> <br/>\n<b>Package</b></br>\nutils</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(packageDescription, package='utils')\n                "
+    }
+}

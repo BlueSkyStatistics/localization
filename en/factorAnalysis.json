@@ -1,0 +1,31 @@
+{
+    "title": "Factor Analysis",
+    "navigation": "Factor",
+    "destination": "Select variables",
+    "label1": "Factor extraction",
+    "factorextraction1": "Automatically extract factors",
+    "factorextraction2": "Specify number of factors to extract",
+    "noOfFactors": "Enter the number of factors to extract",
+    "screeplot": "Screeplot",
+    "label2": "Factor Scores",
+    "saveScores": "Save factor scores to the dataset",
+    "scores1": "Bartlett's method, enter a variable name prefix",
+    "scores2": "Regression method, enter a variable name prefix",
+    "varForScores": "Enter variable name prefix for scores:",
+    "label3": "Rotation Options",
+    "grpBox21": "None",
+    "grpBox22": "Varimax",
+    "grpBox23": "Promax",
+    "grpBox24": "BentlerQ",
+    "grpBox25": "Quartimax",
+    "grpBox26": "Oblimin",
+    "grpBox27": "GeominQ",
+    "grpBox28": "GeominT",
+    "grpBox29": "Simplimax",
+    "parallel": "Parallel analysis",
+    "help": {
+        "title": "Factor Analysis",
+        "r_help": "help(factanal, package ='stats')",
+        "body": "\n<b>Description</b></br>\n​Perform maximum-likelihood factor analysis on a covariance matrix or data matrix and generates a screeplot. Calls the function factanal in the stats package.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: One or more numeric variables to extract factors from.\n</li>\n<li>\nautoextraction: Automatically determine the number factors or extract specific numbers of factors.\n</li>\n<li>\nscreeplot: If TRUE generates a screeplot.\n</li>\n<li>\nrotation: determine the type of rotation and takes one of the values (none, quartimax, geominT, varimax, oblimin, simplimax, promax, geominQ and bentlerQ)\n</li>\n<li>\nsaveScores: saves the factor scores in the dataset\n</li>\n<li>\ndataset: The dataset from which the 'vars' have been picked.\n</li>\n</ul>\n<b>Details</b></br>\nAn object of class \"factanal\" with components</br>\nloadings: A matrix of loadings, one column for each factor. The factors are ordered in decreasing order of sums of squares of loadings, and given the sign that will make the sum of the loadings positive. This is of class \"loadings\": see loadings for its print method.</br>\nuniquenesses: The uniquenesses computed.</br>\ncorrelation: The correlation matrix used.</br>\ncriteria: The results of the optimization: the value of the criterion (a linear function of the negative log-likelihood) and information on the iterations used.</br>\nfactors: The argument factors.</br>\ndof: The number of degrees of freedom of the factor analysis model.</br>\nmethod: The method: always \"mle\".</br>\nrotmat:\tThe rotation matrix if relevant.</br>\nscores: If requested, a matrix of scores. napredict is applied to handle the treatment of values omitted by the na.action.</br>\nn.obs: The number of observations if available, or NA.</br>\ncall: The matched call.</br>\nna.action: If relevant.</br>\nSTATISTIC, PVAL:The significance-test statistic and P value, if it can be computed.</br>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nhelp(factanal, package ='stats')\n"
+    }
+}

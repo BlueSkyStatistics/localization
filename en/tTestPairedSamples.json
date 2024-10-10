@@ -1,0 +1,17 @@
+{
+    "title": "t-test, Paired Samples",
+    "navigation": "t-test, paired samples",
+    "tvarbox1": "First Numeric Variable (One)",
+    "tvarbox2": "Second Numeric Variable (One)",
+    "label1": "Alternative Hypothesis",
+    "test1": "Difference != 0",
+    "test2": "Difference > 0",
+    "test3": "Difference < 0",
+    "txtbox2": "Null hypothesis (mu)",
+    "txtbox1": "Confidence level",
+    "help": {
+        "title": "Paired Sample t-test",
+        "r_help": "help(sample_n, package='dplyr')",
+        "body": "\n    "
+    }
+}

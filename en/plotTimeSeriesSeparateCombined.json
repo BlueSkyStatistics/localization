@@ -1,0 +1,20 @@
+{
+    "title": "Plot Time Series",
+    "navigation": "Plot Time Series, separate or combined",
+    "destination": "Variables to plot",
+    "firstObservation": "Time of first observation e.g.1: enter 1961,1 for January 1961 e.g.2: enter 1961,3 for 3nd  Quarter of 1961, e.g.3: enter 1 for a continuous series",
+    "frequency": "Number of observations per unit of time e.g.1: enter 12 for one observation for each month of a year, e.g. 2: enter 4 for one observation per quarter, e.g. 3: enter 1 for a  continuous series.",
+    "label0": "Plot Options",
+    "separately": "Plot each series separately",
+    "combine": "Combine series",
+    "label1": "Transform variables",
+    "chkboxForTransform": "Natural log",
+    "label2": "Options for fitted values",
+    "yaxisLabel": "Y axis label",
+    "mainTitle": "Main title",
+    "help": {
+        "title": "Plot Time Series",
+        "r_help": "help(plot.ts, package ='stats')",
+        "body": "\n<b>Description</b></br>\nCreates time series plot in combined or separately. When combined multiple variables are plotted together, when separate each variable is plotted independently. BSkyPlotSeriesWithCorrelations is a wrapper function that creates a time series object and internally calls plot.ts. \n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='title', ylab='y axis label', dataset=\"Dataset1\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: selected variables to plot\n</li>\n<li>\nstart: Time of first observation should be entered in the format year,month or year,quarter e.g.( if your data is organized in months the 1992,1 for Jan 1992 or if your data is organized in quarters then 1992,1 refers to the first quarter of 1992.\n</li>\n<li>\nfrequency: Number of observations in unit time. Example: for monthly there are 12 observation in a year. For quarterly there are 4 observation in a year.\n</li>\n<li>\nplot.type: \"multiple\" for separate and \"single\" for combined plot.\n</li>\n<li>\nnaturalLogYaxis: if TRUE an Y axis is shown as natural log value.\n</li>\n<li>\nmain: main title of the plot\n</li>\n<li>\nylab: title for the y axis\n</li>\n<li>\ndataset: the name of the dataset from which the vars has been picked.\n</li>\n</ul>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(plot.ts, package ='stats') by creating a R code chunk by clicking + in the output window\n"
+    }
+}

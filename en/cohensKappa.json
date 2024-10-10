@@ -1,0 +1,16 @@
+{
+    "title": "Cohen's Kappa",
+    "navigation": "Cohen's Kappa",
+    "obs1var": "Observer 1:",
+    "obs2var": "Observer 2:",
+    "cilevel": "Confidence Level:",
+    "label1": "Category Weights",
+    "equal": "Cicchetti-Allison (equal-spacing)",
+    "quadratic": "Fleiss-Cohen (quadratic)",
+    "agreeplot": "Agreement plot and Bangdiwala statistics",
+    "help": {
+        "title": "Cohen's Kappa",
+        "r_help": "help(Kappa,package=vcd)",
+        "body": "\n                <b>Description</b></br>\nCohen's kappa measures agreement between two observers that measure the same subjects.  Unweighted kappa is for unordered categories, while weighted kappa is for ordered categories.  For weighted kappa, more weight is given the closer the categories are.  Kappa can range between -1 and 1, with 1 being perfect agreement and 0 no better than chance.  Negative values indicate agreement worse than chance alone, but is rare in practice.  The observers must measure the subjects on the same scale with all categories used by each observer.  This yields a square contingency table.  A contingency table and the kappa statistics are provided.</br>\nObserver 1: Variable containing the values provided by an observer; can be either numeric or a factor</br>\nObserver 2: Variable containing the values provided by a second observer; can be either numeric or a factor</br>\nConfidence Level: Desired confidence interval level for the kappa statistics</br>\nCategory Weights:  Desired weight for levels of category disagreement</br>\nAgreement plot and Bangdiwala statistics: option to produce an agreement plot with Bangdiwala statistics</br>\n<b>Package</b></br>\ngmodels;vcd</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(Kappa,package=vcd) by creating a R code chunk by clicking + in the output window\n                "
+    }
+}

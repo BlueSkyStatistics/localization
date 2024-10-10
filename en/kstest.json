@@ -1,0 +1,10 @@
+{
+    "title": "Kolmogorov-Smirnov Test of Normality",
+    "navigation": "Kolmogorov-Smirnov Normality Test",
+    "trg": "Target variables",
+    "help": {
+        "title": "Kolmogorov-Smirnov Test of Normality",
+        "r_help": "help(ks.test, package=stats)",
+        "body": "\n<b>Description</b></br>\nKolmogorov-Smirnov Test for conformance with a normal distribution \n<br/>\n<b>Usage</b>\n<br/>\n<code>\nks.test(x, y =\"pnorm\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: A numeric vector of data values.\n</li>\n<li>\ny:\ta character string naming a cumulative distribution function or an actual cumulative distribution function such as pnorm. Only continuous CDFs are valid..\n</li>\n</ul>\n<b>Details</b></br>\nIn this case, a one-sample test is carried out of the null that the distribution function which generated x is distribution y (i.e. the normal distribution).<br/>\nThe presence of ties always generates a warning, since continuous distributions do not generate them. If the ties arose from rounding the tests may be approximately valid, but even modest amounts of rounding can have a significant effect on the calculated statistic.<br/>\nMissing values are silently omitted from x. </br>\n<b>Value</b><br/>\nA list with class “htest” containing the following components:<br/>\n<ul>\n<li>\nstatistic: the value of the test statistic.\n</li>\n<li>\np.value: p value of the test.\n</li>\n</ul>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nhelp(ks.test, package =stats)\n"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "title": "ANCOVA, analysis of covariance",
+    "navigation": "ANCOVA",
+    "response": "Dependent Variable",
+    "Fixed": "Fixed Factor",
+    "Block": "Covariate",
+    "Summary": "Model Summary",
+    "Scatter_plot": "Scatter plot for each level of the factor variable",
+    "Residual": "Residual vs. Fitted plot",
+    "Histogram": "Histogram plot of residuals",
+    "help": {
+        "title": "ANCOVA",
+        "r_help": "help(Anova, package='car')",
+        "body": "\n<b>Description</b></br>\nAnalysis of covariance (ANCOVA) combines features of both ANOVA and regression. It augments the ANOVA model with one or more additional quantitative variables, called covariates, which are related to the response variable. The covariates are included to reduce the variance in the error terms and provide more precise measurement of the treatment effects.</br> ANCOVA is used to test the main and interaction effects of the factors, while controlling for the effects of the covariate.</br>\nWe first generate an Anova table with the interaction term. The goal is to examine whether the interaction term is not significant i.e. the slopes of the dependent variable against the covariate for each level of the fixed factor is not different. We use the Anova package in the car package to generate this Anova table.</br>\nWe then regenerate the Anova table controlling for the interaction term to determine whether the intercepts of the dependent variable against the covariate for each level of the fixed factor are different.</br> \nWe provide the option to generating a scatter plot for of dependent variable against the covariate variable for each level of the fixed factor.</br>\nWe provide the option to plot the residuals vs. fitted plot For the model where we have controlled the interaction term. The residuals should be unbiased and homoscedastic.</br>\nWe provide the option to generate a histogram for the residuals for model where we have controlled the interaction term. (Distribution should be approx normal).</br>\nWe give you the option to summarize the model</br>\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nformula: an object of class \"formula\" (or one that can be coerced to that class): a symbolic description of the model to be fitted. The details of model specification are given under ‘Details’.\n</li>\n<li>\ndata: an optional data frame, list or environment (or object coercible by as.data.frame to a data frame) containing the variables in the model. If not found in data, the variables are taken from environment(formula), typically the environment from which lm is called.\n</li>\n</ul>\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm, or other suitable model object.​\n</li>\n<li>\ntype: type of test, \"II\", \"III\", 2, or 3.\n</li>\n</ul>\n<b>Package</b></br>\nAnova</br>\n<b>Help</b></br>\nhelp(Anova, package ='car')\n    "
+    }
+}

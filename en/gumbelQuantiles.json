@@ -1,0 +1,15 @@
+{
+    "title": "Gumbel Quantiles",
+    "navigation": "Gumbel Quantiles",
+    "prob": "Enter probabilities separated by a comma. Example: 0.3,0.2,0.5",
+    "location": "Location",
+    "scale": "Scale",
+    "labelSig": "Significance level",
+    "lowtail": "Lower tail",
+    "uptail": "Upper tail",
+    "help": {
+        "title": "Gumbel Quantile",
+        "r_help": "help(qgumbel, package=RcmdrMisc)",
+        "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Density, distribution function, quantile function and random generation for the Gumbel distribution with specified location and scale parameters.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vector of quantiles (values of the variable).</li>\n                \n                \n                <li>p : vector of probabilities.</li>\n                \n                \n                <li>n : number of observations. If length(n) > 1, the length is taken to be the number required.</li>\n                \n                \n                <li>location : location parameter (default 0); potentially a vector.</li>\n                \n                \n                <li>scale : scale parameter (default 1); potentially a vector.</li>\n                \n                <li>lower.tail : logical; if TRUE (the default) probabilities and quantiles correspond to P(X ≤ x), if FALSE to P(X > x).</li>\n            </ul>            \n"
+    }
+}

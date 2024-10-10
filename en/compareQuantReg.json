@@ -1,0 +1,12 @@
+{
+    "title": "Compare Quantile Regression Model Slopes",
+    "navigation": "Quant Reg Models",
+    "label1": "Compares N Quantile Regression models.",
+    "label4": "**NOTE: Models created from Model Tuning  (class train) are not supported",
+    "modelselector1": "Select 2 or more Quantile Regression models to compare slopes for:",
+    "help": {
+        "title": "Compare Quantile Regression Model Slopes",
+        "r_help": "help(anova.rq,package='quantreg')",
+        "body": "\n<b>Description</b></br>\nCompute test statistics for two or more quantile regression fits. \n<br/>\n<b>Usage</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: objects of class rq, originating from a call to rq.\n</li>\n</ul>\n<b>Details</b><br/>\nT   he hypothesis of interest is that the slope coefficients of the models are identical. The test statistic is a variant of the Wald test described in Koenker and Bassett (1982).<br/>\n<b>Value</b><br/>\nAn object of class \"anova\" inheriting from class \"data.frame\".<br/>\n<b>Package</b></br>\nquantreg</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(anova.rq,package='quantreg')</br></br>\n"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "title": "Frequency Chart",
+    "navigation": "Frequencies",
+    "x": "X axis",
+    "y": "Color, specify a factor variable",
+    "bins": "Number of bins (applies only when the variable on the X axis is a factor variable)",
+    "barcolor": "Line Color (After color selection, click outside the control to apply)",
+    "tab1": "Numeric",
+    "tab2": "Factor",
+    "alpha": "Opacity (0-1)",
+    "flip": "Flip Axis",
+    "specify_a_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Frequency Chart",
+        "r_help": "help(geom_freqpoly, package='ggplot2')",
+        "body": "\n            <b>Description</b></br>\n            Visualise the distribution of a single continuous variable by dividing the x axis into bins and counting the number of observations in each bin. Histograms (geom_histogram()) display the counts with bars; frequency polygons (geom_freqpoly()) display the counts with lines. Frequency polygons are more suitable when you want to compare the distribution across the levels of a categorical variable. </br>\n            NOTE: We ignore the color selected if there is a grouping/color variable specified as a different color is selected for each level of the grouping variable.</br>\n            When you specify multiple x variables, we create a separate Frequency chart for each x variable.</br>\n            <b>Usage</b>\n            <br/>\n            <code>\n            #You can create a Frequency chart for one or more numeric variables. The default number of bins is set to 30.</br>\n            #The example below uses the mtcars dataset in the datasets package<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #You can create a Frequency chart for one or more numeric variables and group the chart by a factor variable. The default number of bins is set to 30.</br>\n            #The example below uses the mtcars dataset in the datasets package<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #You can create a frequency chart/line chart by grouping one factor variable by another</br>\n            #You need to right click on cyl and am in the variable view to make it a factor</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset​\n            </li>\n            <li>\n            aes(): Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.​\n            </li>\n            <li>\n            group:  An optional factor/categorical variable. \n            </li>\n            <li>\n            geom_freqpoly(): Creates the frequency plot\n            </li>\n            <li>\n            bins: Number of bins.\n            </li>\n            <li>\n            Labs(): Change axis labels and legend titles(This is optional)​\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)​\n            </li>\n            <li>\n            theme_calc(): Specifies the calculator theme(This is optional)​\n            </li>\n            <li>\n            coord_flip(): Flip axis(This is optional)​\n            </li>\n            <li>\n            alpha: Controls opacity, takes values between 0-1. 1 means no opacity.\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Help</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​           \n      "
+    }
+}

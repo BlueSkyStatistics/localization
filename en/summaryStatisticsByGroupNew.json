@@ -1,0 +1,14 @@
+{
+    "title": "Summary Statistics(old)",
+    "navigation": "Summary Statistics (Legacy)",
+    "tvarbox1": "Selected variables",
+    "tvarbox2": "Group by",
+    "ChkboxShowOnlyTopFewFactors": "Show counts for only top N factor levels",
+    "txtNumTopFactorsToShow": "Enter a value for N",
+    "label1": "Note: When the checkbox is un-checked counts for ALL levels will be displayed. This may take a considerable amount of time if you have many factor levels",
+    "help": {
+        "title": "Summary Statistics",
+        "r_help": "",
+        "body": "\n<b>Description</b></br>\nGenerates the summaries for every group. One or more source variables are grouped by the destination variables. Shows Minimum, 1st Quartile, Median, Mean, 3rd Quartile, Maximum and count of NAs for numeric and date variables.</br>\nR Help is not available because in we have written custom code using  multiple  R functions. If you need to inspect the code click the \"<>\" button.</br>\n    "
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Naive Bayes",
+    "navigation": "Naive Bayes",
+    "modelname": "Enter model name",
+    "dependentvar": "Dependent variable",
+    "independentvars": "Independent variable(s)",
+    "help": {
+        "title": "Naive Bayes",
+        "r_help": "help(NaiveBayes,package='klaR')",
+        "body": "\n                <b>Description</b></br>\nComputes the conditional a-posterior probabilities of a categorical class variable given independent predictor variables using the Bayes rule. \n<br/>\n<b>Usage</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nformula : a formula of the form class ~ x1 + x2 + .... Interactions are not allowed.\n</li>\n<li>\ndata: a data frame of predictors (caegorical and/or numeric).\n</li>\n<li>\nna.action : a function to specify the action to be taken if NAs are found. The default action is not to count them for the computation of the probability factors. An alternative is na.omit, which leads to rejection of cases with missing values on any required variable. (NOTE: If given, this argument must be named.)\n</li>\n<li>\n... : arguments passed to density.\n</li>\n</ul>\n<b>Package</b></br>\ncaret;klaR</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor</br>\nhelp(NaiveBayes,package='klaR')\n"
+    }
+}

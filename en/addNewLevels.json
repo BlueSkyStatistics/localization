@@ -1,0 +1,18 @@
+{
+    "title": "Add New Levels",
+    "navigation": "Add",
+    "target": "Factor variables to add new levels to",
+    "label1": "Add new levels to one or more factor variable(s). Save results to existing variables or create new variables by specifying a prefix/suffix. New variables will be created with the prefix/suffix appended to existing names. ",
+    "newLevels": "Enter new levels enclosed in quotes and separated by a comma for e.g. \"level1\",\"level2\",\"level3",
+    "label2": "Save new levels to new variable(s) or overwrite existing variable(s)",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "help": {
+        "title": "Add New Levels",
+        "r_help": "help(fct_expand, package=\"forcats\")",
+        "body": "\n<b>NOTE: DON'T ENCLOSE LEVELS IN DOUBLE QUOTES OR SINGLE QUOTES, THERE CANNOT BE SPACES IN THE LEVEL NAMES. ENTER LEVELS SEPARATED BY COMMAS IN THE FORMAT LEVEL1,LEVEL2, LEVEL3</b></br>\n<b>Description</b></br>\nAdd additional levels to a factor. Add new levels to one or more factor variable(s). The results can be into existing variables (overwriting) or creating new variables by specifying a prefix/suffix. New variables will be created with the prefix/suffix appended to existing names. \n<br/>\n<b>Usage</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: A factor (or character vector).\n</li>\n<li>\n...: Additional levels to add to the factor. Levels that already exist will be silently ignored.\n</li>\n</ul>\n<b>Examples</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Package</b></br>\nforcats</br>\n<b>Help</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+    }
+}

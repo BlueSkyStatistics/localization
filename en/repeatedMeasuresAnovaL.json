@@ -1,0 +1,28 @@
+{
+    "helpText": "Repeated measures ANOVA requires data to be in the long format. If your data is not in the long format, see Datasets > ReShape > Longer",
+    "modelname": "Enter model name",
+    "title": "Repeated Measures ANOVA",
+    "subjectID": "Variable to use as a subject identifier",
+    "dependentVariable": "Dependent variable",
+    "navigation": "ANOVA, Repeated Measures, Long",
+    "response": "Within-subjects variable(s) e.g. Time",
+    "Fixed": "Between-subjects factor(s)",
+    "covariates": "Covariates",
+    "Summary": "Estimated marginal means",
+    "Scatter_plot": "Posthocs",
+    "Residual": "Residual vs. Fitted plot",
+    "Histogram": "Histogram plot of residuals",
+    "brownForsythe": "Brown-Forsythe test",
+    "levenesTest": "Levene's test",
+    "plotMeansCI": "Plot of means and confidence intervals",
+    "simpleEffectsTest": "Simple effects test",
+    "label2": "Options for posthocs and simple effects test",
+    "combon": "Compare Means using:",
+    "adjust": "Method for adjusting p-values",
+    "displayBoxMDetails": "Display details associated with Box's M test (Note: Results of Box's M test are always shown)",
+    "help": {
+        "title": "Repeated Measures ANOVA",
+        "r_help": "help(aov_ez , package='afex')",
+        "body": "\n<b>Description</b></br>\nWith repeated measures ANOVA F statistics are computed for each within subjects factor, between subject factor and the interaction term for mixed ANOVA</br>\nLook for the additional ANOVA values tables in the output which display MSE (mean sum of squares for error) and pes (partial eta squared)</br>\nWe currently support a single within subject and between subject factor, the between subject factor is optional.</br>\n<br/>\n<b>Usage</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Identifier\", within = c(\"Time\"), \tbetween = c(\"Treatment\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndata: A data.frame containing the data. Mandatory\n</li>\n<li>\ndv: character vector (of length 1) indicating the column containing the dependent variable in data.\n</li>\n<li>\nbetween: character vector indicating the between-subject(s) factor(s)/column(s) in data. Default is NULL indicating no between-subjects factors.\n</li>\n<li>\nwithin: character vector indicating the within-subject(s)(or repeated-measures) factor(s)/column(s) in data. Default is NULL indicating no within-subjects factors.\n</li>\n<li>\ncovariate: character vector indicating the between-subject(s) covariate(s) (i.e., column(s)) in data. Default is NULL indicating no covariates. Please note that factorize needs to be set to FALSE in case the covariate is numeric and should be treated as such.\n</li>\n<li>\nanovatable: list of further arguments passed to function producing the ANOVA table. \n</li>\n</ul>\n<br/>\n<b>Details</b></br>\nSee detailed R help</br>\n<b>Value</b><br/>\naov_car, aov_4, and aov_ez are wrappers for Anova and aov, the return value is dependent on the return argument. Per default, an S3 object of class \"afex_aov\" is returned containing the following slots:<br/>\n\"anova_table\": An ANOVA table of class c(\"anova\", \"data.frame\").<br/>\n\"aov\": aov object returned from aov (should not be used to evaluate significance of effects, but can be passed to emmeans for post-hoc tests).<br/>\n\"Anova\": object returned from Anova, an object of class \"Anova.mlm\" (if within-subjects factors are present) or of class c(\"anova\", \"data.frame\").<br/>\n\"lm\": the object fitted with lm and passed to Anova (i.e., an object of class \"lm\" or \"mlm\"). Also returned if return = \"lm\".<br/>\n\"data\": a list containing: (1) long (the possibly aggregated data in long format used for aov), wide (the data used to fit the lm object), and idata (if within-subject factors are present, the idata argument passed to car::Anova). Also returned if return = \"data\".<br/>\n<b>Package</b></br>\nafex</br>\n<b>Help</b></br>\nhelp(aov_ez, package ='afex')\nClick the R Help button to get detailed R help. You can also enter help(aov_ez, package ='afex') and hit CTRL Enter in the R syntax editor to get help\n    "
+    }
+}

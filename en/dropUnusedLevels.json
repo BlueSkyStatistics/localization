@@ -1,0 +1,21 @@
+{
+    "title": "Drop Unused Levels",
+    "navigation": "Drop Unused",
+    "target": "Factor variables to drop levels for",
+    "label1": "Enter the factor variables to drop levels for.  You can specify unused levels to drop by entering them or select to drop all unused levels for the variable(s) selected.  If the dataset variable has a NA value(s) in the data, then that level is NOT dropped.",
+    "label2": "Save new levels to new variable(s) or overwrite existing variable(s)",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "label3": "Method to use",
+    "dropUnused": "Drop all unused levels ",
+    "levelsToDrop": "Specify levels to drop ",
+    "drop": "Enter levels to drop separated by comma, for e.g. level1,level2,level3 NOTE: Don't use spaces as separators between the levels",
+    "help": {
+        "title": "Drop Unused Levels",
+        "r_help": "help(fct_drop, package =forcats)",
+        "body": "\n<b>NOTE: DON'T ENCLOSE LEVELS IN DOUBLE QUOTES OR SINGLE QUOTES, THERE CANNOT BE SPACES IN THE LEVEL NAMES. ENTER LEVELS SEPARATED BY COMMAS IN THE FORMAT LEVEL1,LEVEL2, LEVEL3</b></br>\n<b>Description</b></br>\nEnter the factor variable(s) to drop unused levels for.  You can specify unused levels to drop by entering them or select to drop all unused levels for the variable(s) selected.  If the dataset variable has a NA value(s) in the data, then that level is NOT dropped.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: A factor (or character vector).\n</li>\n<li>\nonly: A character vector restricting the set of levels to be dropped. If supplied, only levels that have no entries and appear in this vector will be removed.\n</li>\n</ul>\n<b>Examples</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Set only to restrict which levels to drop<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Package</b></br>\nforcats</br>\n<b>Help</b></br>\nhelp(fct_drop, package =forcats)\n"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Hosmer-Lemeshow Test",
+    "navigation": "Hosmer-Lemeshow Test",
+    "label1": "NOTE: THE ACTIVE DATASET MUST BE THE SAME DATASET USED TO BUILD THE MODEL",
+    "modelselector1": "Select a generalized linear model (model of class glm):",
+    "destination": "Target variable:",
+    "bins": "Number of bins",
+    "help": {
+        "title": "Hosmer-Lemeshow Test",
+        "r_help": "help(HLgof.test, package='MKmisc')",
+        "body": "\n                <b>Description</b></br>\nThe function computes Hosmer-Lemeshow goodness of fit tests for C and H statistic as well as the le Cessie-van Houwelingen-Copas-Hosmer unweighted sum of squares test for global goodness of fit.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nfit: numeric vector with fitted probabilities.\n</li>\n<li>\nobs: numeric vector with observed values.\n</li>\n<li>\nngr: number of groups for C and H statistic.\n</li>\n<li>\nX: covariate(s) for le Cessie-van Houwelingen-Copas-Hosmer global goodness of fit test.\n</li>\n<li>\nverbose: logical, print intermediate results.\n</li>\n</ul>\n<b>Details</b></br>\nHosmer-Lemeshow goodness of fit tests are computed; see Lemeshow and Hosmer (1982). If X is specified, the le Cessie-van Houwelingen-Copas-Hosmer unweighted sum of squares test for global goodness of fit is additionally determined; see Hosmer et al. (1997). A more general version of this test is implemented in function residuals.lrm in package rms.</br>\n<b>Value</b><br/>\nA list of test results.\n<b>Examples</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>Package</b></br>\nMKmisc</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(HLgof.test, package=\"MKmisc\")\n                "
+    }
+}

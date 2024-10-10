@@ -1,0 +1,18 @@
+{
+    "title": "Specify a label for NAs",
+    "navigation": "Label NAs",
+    "target": "Factor variables to label NA values ",
+    "label1": "Enter a label for the \"NA\" level for factor variable(s). New label can be saved to existing variable(s) or new variables by specifying a prefix/suffix. New variables will be created with the prefix/suffix appended to existing names. ",
+    "newLevels": "Enter a label for the \"NA\" level",
+    "label2": "Create new or overwrite existing variables",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "help": {
+        "title": "Remove NAs",
+        "r_help": "help(fct_explicit_na, package =forcats)",
+        "body": "\n<b>Description</b></br>\nEnter a label for the \"NA\" level for factor variable(s). New label can be saved to existing variable(s) (we overwrite existing variables) or new label for NA can be saved to new variables by specifying a prefix/suffix. New variables will be created with the prefix/suffix appended to existing names. \nThis gives missing value an explicit factor level, ensuring that they appear in summaries and on plots.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(Missing)\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf :A factor (or character vector).\n</li>\n<li>\nna_level :Level to use for missing values.\n</li>\n</ul>\n<b>Examples</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>Package</b></br>\nforcats</br>\n<b>Help</b></br>\nType the line below in the BlueSky Statistics  R syntax editor</br>\nhelp(fct_explicit_na, package =forcats)\n"
+    }
+}

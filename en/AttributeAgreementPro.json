@@ -1,0 +1,29 @@
+{
+    "title": "Attribute Agreement Analysis",
+    "navigation": "Attribute Agreement",
+    "variablePartSelcted": "Select the variable for sample/part",
+    "variableOpSelcted": "Select the variable for appraiser/operator",
+    "variableRespSelcted": "Select the variable for attribute/response",
+    "variableRefSelcted": "(Optional) Select the variable for reference/standard response",
+    "variableTrialSelcted": "(Optional) Select the variable for trial/replication number",
+    "alpha": "Confidence interval (alpha) between 0 to 1",
+    "misclassificationStatChk": "Show accuracy and misclassification rates",
+    "summaryDisagreementChk": "Show summary of appraiser disagreement vs standard",
+    "CohenKappaChk": "Compute Cohen’s Kappa statistics between appraiser/operator",
+    "CohenKappaWeight": "Weight to be applied for Cohen’s Kappa",
+    "label1": "Attribute agreement study report header details",
+    "gageName": "Gage name",
+    "dateStudy": "Date of study",
+    "partDescription": "Part description",
+    "machineName": "Machine name",
+    "reportedBy": "Reported by",
+    "operatorNames": "Names of the operators",
+    "testLocation": "Test location",
+    "miscellaneous": "Miscellaneous",
+    "rowsTobeUsed": "Leave blank if all the rows to be used. Otherwise specify the Rows to be used to analyze (e.g.  specify as 1:25 or 1,4,5,7:12)",
+    "help": {
+        "title": "Attribute agreement analysis",
+        "r_help": "help(kappam.fleiss, package = irr)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to perform attribute agreement analysis\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset files attributemsaAB.xlsx for \n\t\t\t\ttwo Operators, A and B, each with 20 observations repated twice with P and F ratings.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYou may also try the sample dataset file attributemsaABCordered.RData with three operators, A, B, C, each with 10 obsevations repeated twice with \"ordered\" (ordinal) \n\t\t\t\tratings as Disagree, Somewhat Disagree, Neutral, Somewhat Agree, and Agree. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOpen the files in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

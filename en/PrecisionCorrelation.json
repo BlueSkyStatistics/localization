@@ -1,0 +1,15 @@
+{
+    "title": "Sample Size, Precision of a Correlation",
+    "navigation": "Correlation",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n": "Sample Size",
+    "width": "Confidence Interval Width",
+    "corr": "Correlation (-1 to 1)",
+    "conflevel": "Confidence Level (0-1)",
+    "corrtype": "Correlation Type",
+    "help": {
+        "title": "Sample Size, Precision of a Correlation",
+        "r_help": "help(prec_cor, package ='presize')",
+        "body": "\nThis is an assessment of sample size for a Pearson, Spearman, or Kendall correlation based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Correlation:</b> Specify the expected correlation value\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Correlation Type:</b> Specify the type of correlation being computed\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

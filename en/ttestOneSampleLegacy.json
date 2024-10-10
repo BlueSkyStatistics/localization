@@ -1,0 +1,33 @@
+{
+    "title": "t-test, One Sample",
+    "navigation": "t-test, One Sample (Legacy)",
+    "tvarbox1": "Select variables",
+    "textbox1": "Confidence interval",
+    "textbox2": "Null hypothesis (mu)",
+    "label1": "Aternative hypothesis",
+    "test1": "Population mean !=mu",
+    "test2": "Population mean > mu",
+    "test3": "Population mean < mu",
+    "testval": "Test value (mu)",
+    "label2": "Missing values",
+    "Analysis": "Analysis by analysis",
+    "Listwise": "Listwise",
+    "conflevel": "Confidence interval:",
+    "MissingVals": "Options for missing values",
+    "cohensdNoCorrection": "Cohen's d",
+    "hedgesgNoCorrection": "Hedges' g",
+    "glassd": "Glass's delta",
+    "hedgesgCorrect": "Hedges' g with bias corrected",
+    "glassdCorrect": "Correct bias for Glass's Delta",
+    "hedgesg": "Hedges' g",
+    "effectsizes": "Effect sizes",
+    "cohensdCorrect": "Cohen's d with bias corrected",
+    "label3": "Options for Cohen's d",
+    "label4": "Options for Hedges' g",
+    "showEffectSizes": "Display effect sizes",
+    "help": {
+        "title": "t-test, One Sample",
+        "r_help": "help(t.test, package=stats)",
+        "body": "\n<b>Description</b></br>\nPerforms one sample t-tests on selected variables. Optionally computes effect size indices for standardized differences: Cohen's d and Hedges' g (This function returns the population estimate.)\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyOneSmTTest(varNamesOrVarGlobalIndices  =c('var1','var2'), mu=.9, conf.level=0.95, alternative= \"two.sided\",datasetNameOrDatasetGlobalIndex='Dataset', missing=1) \ncohens_d(var1~1, mu=valuetocompare, correction =FALSE, ci = 0.95)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: selected scale variables (say var1, var2)\n</li>\n<li>\nmu: a number indicating the true value of the mean. (say 10)\n</li>\n<li>\nconf.level: a numeric value  (say 0.95) .\n</li>\n<li>\nmissing: missing values are handled on a per variable basis (missing =0) or list wise across all variables (missing=1). \n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: Name of the dataset (say Dataset)  from which var1, var2 and var3 are selected.\n</li>\n<li>\nalternative:  a character string specifying the alternative hypothesis, must be one of \"two.sided\"  (default), \"greater\" or \"less\". You can specify just the initial letter.\n</li>\n</ul>\n<b>Details</b></br>\nA list with the results of the test\n<br/>\n<b>Example</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# Dataset must also be loaded in the UI grid</br>\nBSkyLoadRefreshDataframe(Dataset)</br> \nBSky_One_Simple_T_Test = BSkyOneSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),mu=.9,conf.level=0.95,alternative =\"two.sided\", datasetNameOrDatasetGlobalIndex ='Dataset',missing=1</br>\n</code> <br/>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(t.test, package ='stats') by creating a R code chunk by clicking + in the output window\n"
+    }
+}

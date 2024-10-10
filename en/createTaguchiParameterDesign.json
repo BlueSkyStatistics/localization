@@ -1,0 +1,16 @@
+{
+    "title": "Create Taguchi Style Inner-Outer Parameter Design",
+    "navigation": "Create Taguchi Parameter Design",
+    "datasetname": "Design name",
+    "inner": "Inner Design (must have been randomized already)",
+    "outer": "Outer Design",
+    "lbl1": "Direction - Generate Design in Long or Wide format",
+    "directionLongrad": "Long format",
+    "directionWiderad": "Wide format",
+    "responses": "Leave it blank or specify one or more response names (separated by comma without any quote or space in between names)",
+    "help": {
+        "title": "Create Taguchi Style Inner-Outer Parameter Design",
+        "r_help": "help(param.design, package = DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tparam.design function to generate Taguchi style parameter designs. It creates parameter designs for signal-to-noise investigations with inner and outer arrays and facilitate their formatting and data aggregation. The experiment crosses the control factors in the “inner array” with the noise factors in the “outer array”.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(param.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factor_grid_twolevel_screen_Design.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Create a full factorial design with design name FFinnerRandom with the selected factors - AirVolume, Valve, Barrel, and Angle and check the \"Randomize the design generation\" box\n\t\t\t\t<br/>\n\t\t\t\t2. Create an orthogonal array design with design name FFouter with the selected factors - WadType','Voltage','BallType'\n\t\t\t\t<br/>\n\t\t\t\t3. Create a Taguchi design (this dialog/UI) and select the FFinnerRandom and FFouter designs already created in step 1 and step 2\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Histogram",
+    "navigation": "Histogram",
+    "x": "X axis, specify a numeric variable(s)",
+    "bins": "Specify the number of bins",
+    "fill": "Group by (factor variable)",
+    "binwidth": "Bin width",
+    "barcolor": "Optionally select a fill color (After color selection, click outside the control to apply)",
+    "alpha": "Opacity (0-1)",
+    "flip": "Flip Axis",
+    "specify_a_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "normalCurveColor": "Optionally select a normal curve color (After color selection, click outside the control to apply)",
+    "rugPlot": "Display a rug plot (suitable for small datasets)",
+    "normalCurve": "Display a normal curve (Missing values are removed for curve to display. Works only when no facets or grouping variables selected)",
+    "help": {
+        "title": "Histogram",
+        "r_help": "help(geom_histogram, package=ggplot2)",
+        "body": "\n            <b>Description</b></br>\n            A histogram is a graphical representation of the distribution of numerical data. It is an estimate of the probability distribution of a continuous variable (quantitative variable). You can specify a bib width or use the default, see below. Facets can be optionally created by specifying a factor variable. You can also optionally specify themes, and specify a title and labels for the x and y axis.</br>\n            When you have multiple variables selected for the X axis variable, we create a separate histogram for ach x axis variable. We optionally overlay a normal curve and a rug plot</br>\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(x=engine) )+  geom_histogram(binwidth=10) +labs(x=\"engine\",y=\"Counts\") +  xlab(\"\")​\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset​\n            </li>\n            <li>\n            aes(): Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.​\n            </li>\n            <li>\n            x: A numeric/scale variable to plot the histogram for .​\n            </li>\n            <li>\n            geom_histogram: Creates a histogram, by default, stat_bin uses 30 bins - this is not a good default, but the idea is to get you experimenting with different binwidths..\n            </li>\n            <li>\n            geom_rug: Creates a rug plot    \n            </li>\n            <li>\n            stat_function: Creates a normal curve (Note: Missing values need to be removed for curve to display)    \n            </li>\n            <li>\n            Labs(): Change axis labels and legend titles(This is optional)​\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)​\n            </li>\n            <li>\n            theme_calc(): Specifies the calculator theme(This is optional)​\n            </li>\n            <li>\n            coord_flip(): Flip axis(This is optional)\n            </li>\n            <li>\n            alpha: Takes a value between 0-1, 1 means no opacity. The opacity applies to the fill color of the histogram\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Help</b></br>\n            help(geom_histogram, package=ggplot2)</br>\n            Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_bar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
+    }
+}

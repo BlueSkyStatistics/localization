@@ -1,0 +1,15 @@
+{
+    "title": "Sample Size, Precision of a Mean",
+    "navigation": "One Mean",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n": "Sample Size",
+    "width": "Confidence Interval Width",
+    "mean": "Mean",
+    "sd": "Standard Deviation",
+    "conflevel": "Confidence Level (0-1)",
+    "help": {
+        "title": "Sample Size, Precision of a Mean",
+        "r_help": "help(prec_mean, package ='presize')",
+        "body": "\nThis is an assessment of sample size for one mean based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Mean:</b> Specify the expected mean value\n<br/><br/>\n<b>Standard Deviation:</b> Specify the standard deviation of the outcome\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

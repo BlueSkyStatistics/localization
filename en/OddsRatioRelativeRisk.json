@@ -1,0 +1,28 @@
+{
+    "title": "Odds Ratios / Relative Risks, M by 2 Table",
+    "navigation": "Odds Ratios / Relative Risks, M by 2 Table",
+    "outcomevarlabel": "Outcome Variable (Binary Factor)",
+    "expvarlabel": "Exposure/Predictor Variable (Factor)",
+    "statlabel": "Statistic",
+    "orlabel": "Odds Ratios",
+    "rrlabel": "Relative Risks",
+    "oresttypelabel": "Odds Ratio Estimation Type",
+    "orestwaldlabel": "Wald",
+    "orestfisherlabel": "Fisher",
+    "orestmidplabel": "Mid-p",
+    "orestsmalllabel": "Small Sample Adjusted",
+    "rresttypelabel": "Relative Risk Estimation Type",
+    "rrestwaldlabel": "Wald",
+    "rrestsmalllabel": "Small Sample Adjusted",
+    "reversallabel": "Category Reversal",
+    "revnonelabel": "No Reversal",
+    "revexplabel": "Exposure",
+    "revoutlabel": "Outcome",
+    "revbothlabel": "Both",
+    "cilevellabel": "Confidence Level (0-1)",
+    "help": {
+        "title": "Odds Ratios / Relative Risks, M by 2 Table",
+        "r_help": "help(epitab, package ='epitools')",
+        "body": "\nThis is used to compare probabilities of having a \"disease\" for one group relative to another, in a ratio of odds (odds ratio) form or probability ratio (relative risk) form.  \nThe odds of \"disease\" is defined as the probability of \"disease\" divided by the probability of \"no disease\". A contingency table of outcome frequencies in each group is provided.  \nIn addition, a table of odds ratios or relative risks for each group relative to the reference group with confidence intervals and a Wald Chi-Square p-value is included.  Lastly, \na table of p-values is shown with mid-p exact, Fisher's exact, and Wald Chi-Square versions, comparing each group to the reference group. \n<br/><br/>\n<b>Outcome Variable:</b> Binary \"disease\" (yes/no) variable of interest.  By default, the highest category in the sort order is defined as \"disease yes\".\n<br/><br/>\n<b>Exposure/Predictor Variable:</b> Groups to compare.  Can have more than 2 groups.\n<br/><br/>\n<b>Statistic:</b> Which statistic to compute\n<br/><br/>\n<b>Odds Ratio / Relative Risk Estimation Type:</b> Wald (unconditional maximum likelihood), Fisher (conditional maximum likelihood), Mid-p (median unbiased method), or Small Sample Adjusted\n<br/><br/>\n<b>Category Reversal:</b>  This controls whether or not to reverse the ordering of the exposure variable categories or the outcome variable categories.  Reversing the exposure \nvariable will change the reference group for the odds ratios.  Reversing the outcome variable will change the category that corresponds to \"disease\".\n<br/><br/>\n<b>Confidence Level:</b> level for the confidence intervals; default is 0.95\n<br/><br/>\n<b>Required R Packages:</b> epitools\n\t\t\t"
+    }
+}

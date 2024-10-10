@@ -1,0 +1,20 @@
+{
+    "title": "Subset Dataset",
+    "navigation": "Subset",
+    "label0": "You can choose to save the results in a new dataset or overwrite the existing dataset",
+    "label1": "Options",
+    "New": "Save results to a new dataset",
+    "newdatasetname": "Enter a dataset name",
+    "Existing": "Overwrite existing dataset",
+    "Output": "Display results in the output window",
+    "distinct": "Select distinct cases",
+    "chkbox2": "Remove unused factor levels",
+    "subsetvars": "Select variables to include in subsetted dataset",
+    "label12": "\n\nSubsetting criteria is applied against each row, see examples below. \n1: Select rows where var 1 is non empty and var2 is empty specify:\n!is.na(var1) & is.na(var2) \n2: Select rows where var1 > 30 and var 2 is Male specify:\nvar1>30 & var2=='Male' \n3: Complex and or criteria specify:\n(var1 !=10 & var2>20) | var3==40 \n4: Pattern match (xxx) or an exact match (abc) specify:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Match a substring by position specify: substr(var1,2,4) ==\"abc\"",
+    "subsetexpression": "Enter subsetting criteria.",
+    "help": {
+        "title": "Subset Dataset",
+        "r_help": "help(select, package=dplyr)",
+        "body": "\n            <b>Description</b></br>\nSubset datasets/dataframe. Returns a subset of the dataframe/dataset. You can specify the columns/variables that you want in the smaller dataset. You can also specify selection criteria to be applied against each row of the dataframe.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: object to be subsetted.\n</li>\n<li>\nsubset: logical expression indicating elements or rows to keep: missing values are taken as false.\n</li>\n<li>\nselect: expression, indicating columns to select from a data frame.\n</li>\n</ul>\n<b>Value</b><br/>\nReturns a subsetted dataset<br/>\n<b>Package</b></br>\ndplyr<br/>  \n<b>Help</b></br>\nhelp(select, package=dplyr)\n"
+    }
+}
