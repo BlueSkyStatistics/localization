@@ -1,0 +1,29 @@
+{
+    "title": "Process Capability (Non-normal)",
+    "navigation": "Process Capability (Non-normal)",
+    "printObjectSummaryChk": "Print QCC object summary for the process capability",
+    "label1": "Select a distribution function that fits the data best",
+    "variableSelcted": "Select a variable (observed data) to analyze",
+    "rowsTobeUsed": "If selected, the rows to be used to analyze for process capability ( e.g.  specify as 1:25 or 1,4,5,7:12)",
+    "lower": "LSL - numeric value of lower specification limit (type NA to specify one-sided specification limits)",
+    "upper": "USL - numeric value of upper specification limit (type NA to specify one-sided specification limits)",
+    "target": "Target specification limits (optional)",
+    "selectDistFuncWeibullRad": "Weibull",
+    "selectDistFuncExpRad": "Exponential",
+    "selectDistFuncGammaRad": "Gamma",
+    "selectDistFuncLnormalRad": "Log Normal",
+    "selectDistFuncPoissonRad": "Poisson",
+    "selectDistFuncNBinomRad": "Negative Binomial",
+    "selectDistFuncGeomRad": "Geometric",
+    "selectDistFuncBetaRad": "Beta",
+    "selectDistFuncUnifRad": "Uniform",
+    "selectDistFuncLogisRad": "Logistic",
+    "selectDistFuncCauchyRad": "Cauchy",
+    "selectDistFuncNormRad": "Normal",
+    "digits": "Digits - number of digits to display",
+    "help": {
+        "title": "Process Capability for Non-normal Distribution",
+        "r_help": "help(process.capability, package = qcc)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to computes capability indices \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), and help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called pistonrings from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose option 1, diameter to variable(observed..), sample to Grouping variable, \n\t\t\t\t<br/>\n\t\t\t\tType 1:25 in Grouped rows to be used\n\t\t\t\t<br/>\n\t\t\t\tFor Process capability analysis - type 73.95 in LSL, 74.05 in USL, and 74.0 in Target Limit\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

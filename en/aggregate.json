@@ -1,0 +1,15 @@
+{
+    "title": "Aggregate Data",
+    "navigation": "Aggregate",
+    "description": "Aggregates one or more numeric(scale) variables by one or more factor variables and creates a new aggregated dataset. For numeric variables we calculate the following:\n        mean, median, sum, sd, n_distinct, max, min and var. \n        It also compute counts in the aggregated dataset.",
+    "label1": "Aggregate options",
+    "upperdesc": "Select the function you want applied to the variables being aggregated",
+    "datasetname": "Enter the name of the aggregated dataset",
+    "showResultsinOutput": "Display results in the output window",
+    "groupBy": "Group by (Variables of type factor or date)",
+    "help": {
+        "title": "Aggregate to Dataset",
+        "r_help": "help(group_by, package=dplyr)",
+        "body": "\n            <b>Description</b></br>\nAggregates one or more numeric(scale) variables by one or more factor variables and creates a new aggregated dataset. For numeric variables we calculate the following:\nmean, median, sum, sd, n_distinct, max, min and var. \nIt also compute counts in the aggregated dataset.\n<br/>\n<b>Usage</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Refresh the dataset</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Arguments</b>\n <ul>\n   <li>\nvar1: factor to group by\n</li>\n<li>\nvar2, var3: variable to aggregate\n</li>\n<li>\nnewvarmean: mean of var2 grouped by var1 in the aggregated dataset\n</li>\n<li>\n​newvarmedian: median of var3 grouped by var1 in the aggregated dataset\n</li>\n</ul>\n            "
+    }
+}

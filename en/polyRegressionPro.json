@@ -1,0 +1,15 @@
+{
+    "title": "Polynomial Regression Model",
+    "navigation": "Polynomial",
+    "modelname": "Polynomial Regression model name",
+    "dependentVar": "Dependent (e.g. response) Variable",
+    "independentVar": "Independent (e.g. dose, concentration,..) Variable",
+    "polyDegree": "The degree of the polynomial equation. Must be less than the number of unique data points",
+    "comparePolyModelsChk": "Compute additional Polynomial models to compare",
+    "addlPolyDegrees": "Specify one or more degrees to create multiple Polynomial models (e.g. 3, 4, 5)",
+    "help": {
+        "title": "Polynomial Regression Model",
+        "r_help": "help(poly, package ='stats')",
+        "body": "\n            <b>Description</b></br>\n            This dialog is used to compute and fit an orthogonal polynomial model with specified degree\n\t\t\t<br/>\n\t\t\tusing lm(response ~ poly(a predictor, degree), data = dataset)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tIn addition to help(poly, package ='stats'), check the following R help pages\n            <br/>\n\t\t\thelp(anova, package ='stats') - used for comparing poly models with different degrees \n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - used for computing AIC for comparing poly models\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - used for computing BIC for comparing poly models\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - A good reference where lm() and poly() are used together\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\tYou can try this dialog by loading dataset cars from Load Datasets menu\t\t\t\n\t\t\t<br/>\n\t\t\tChoose dist as dependent variable and speed as independent variable\n\t\t\t<br/>\n"
+    }
+}

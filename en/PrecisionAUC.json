@@ -1,0 +1,15 @@
+{
+    "title": "Sample Size, Precision of the AUC",
+    "navigation": "AUC",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n": "Sample Size",
+    "width": "Confidence Interval Width",
+    "auc": "AUC (area under ROC curve, 0.5-1)",
+    "conflevel": "Confidence Level (0-1)",
+    "prev": "Outcome Prevalence (0-1)",
+    "help": {
+        "title": "Sample Size, Precision of the AUC",
+        "r_help": "help(prec_auc, package ='presize')",
+        "body": "\nThis is an assessment of sample size for the area under a receiver operating characteristic curve based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>AUC:</b> Specify the expected AUC value\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Outcome Prevalence:</b> Specify the proportion of subjects with the 'positive' outcome.  This corresponds to the level being modelled with the candidate statistical model.\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

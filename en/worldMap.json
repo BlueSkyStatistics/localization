@@ -1,0 +1,15 @@
+{
+    "title": "World Map",
+    "navigation": "World Map",
+    "region": "Variable with country names:",
+    "value": "Variable with values to map:",
+    "colors": "Enter number of colors",
+    "zoomByStates": "Enter the countries to zoom into, for e.g. united states of america, canada, mexico",
+    "specify_a_title": "Enter a title",
+    "legend": "Legend:",
+    "help": {
+        "title": "World Map",
+        "r_help": "help(country_choropleth, package='choroplethr')",
+        "body": "\n            <b>Description</b></br>\n            Draws a world map and allows you to optionally zoom into 1 or more countries\n             <br/>\n             <b>Usage</b>\n             <br/>\n             <code> \n            country_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n             </code> <br/>\n             <b>Arguments</b><br/>\n             <ul>\n             <li>\n             BSkyDfForMap: A data.frame with a column named \"region\" and a column named \"value\". Elements in the \"region\" column must exactly match how regions are named in the \"region\" column in ?country.map. Run code below under the other section to see the variables in country.map\n             </li>\n             <li>\n             Title: An optional title for the map.\n             </li>\n             <li>\n             Legend: An optional name for the legend.\n             </li>\n             <li>\n             num_colors: The number of colors on the map. A value of 1 will use a continuous scale. A value in [2, 9] will use that many colors.\n             </li>\n             <li>\n             zoom: An optional vector of countries to zoom in on. Elements of this vector must exactly match the names of countries as they appear in the \"region\" column of ?country.regions\n             </li>\n             </ul>\n             <b>Package</b></br>\n             choroplethr;choroplethrMaps;</br>\n             <b>Help</b></br>\n             help(country_choropleth, package='choroplethr')</br>\n             <b>Other</b></br>\n             <code> \n             # Run the code below to access the state.map dataset<br/>\n             library(choroplethr)<br/>\n             library(choroplethrMaps)<br/>\n             data(country.map)<br/>\n             country.map<br/>\n             </code> <br/>\n    "
+    }
+}

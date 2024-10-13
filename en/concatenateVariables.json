@@ -1,0 +1,12 @@
+{
+    "title": "Concatenate Variables",
+    "navigation": "Concatenate",
+    "newvar": "Enter new/existing variable for concatenated results",
+    "concatenate": "Select the variables to concatenate",
+    "repString": "Enter an optional separator for the concatenated variables",
+    "help": {
+        "title": "Concatenate Variables",
+        "r_help": "help(binVariable,package='RcmdrMisc')",
+        "body": "\n<b>Description</b></br>\nCreate a factor dissecting the range of a numeric variable into bins of equal width, (roughly) equal frequency, or at \"natural\" cut points (determined by K-means clustering)\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nX: numeric variable to be binned.\n</li>\n<li>\nBins: number of bins.\n</li>\n<li>\nmethod: one of \"intervals\" for equal-width bins; \"proportions\" for equal-count bins; \"natural\" for cut points between bins to be determined by  k-means clustering.\n</li>\n<li>\nLabels: if FALSE, numeric labels will be used for the factor levels; if NULL, the cut points are used to define labels; otherwise a character vector of level names.\n</li>\n</ul>\n<b>Package</b></br>\nRcmdrMisc</br>\n<b>Help</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "Pareto Chart, Basic",
+    "navigation": "Pareto Chart, Basic",
+    "label1": "Two options - Long format (default) i.e. categories and counts in vertical columns and Wide format i.e. categories as column names and counts as row",
+    "selectLongRad": "Option 1: Long format - choose categories and counts",
+    "selectWideRad": "Option 2: Wide format - Columns names will be used as categories and 1st row (default) will be used as counts",
+    "rownumForCounts": "Row number (default 1st row) to be used for counts",
+    "mainTitle": "Chart Title",
+    "category": "Variable (e.g. categories) to plot",
+    "counts": "Variable to use as counts to plot",
+    "xlab": "A string specifying the label for the x-axis",
+    "ylab": "A string specifying the label for the y-axis",
+    "ylab2": "A string specifying the label for the second y-axis on the right side",
+    "percentStep": "Percentage step to be used as tickmarks for the second y-axis on the right side",
+    "digits": "Number of decimal points for the Stats table",
+    "help": {
+        "title": "Pareto Chart",
+        "r_help": "help(pareto.chart, package = qcc)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tpareto.chart function to create a table of statistics and plot a Pareto chart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called defects_frequency_pareto_chart.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

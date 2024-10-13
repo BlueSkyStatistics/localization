@@ -1,0 +1,13 @@
+{
+    "title": "Applying a function to all rows of selected variable(s).",
+    "navigation": "Apply a function to rows",
+    "label1": "Create a new variable or overwrite an existing variable by applying a function to all row values of the selected variable(s).",
+    "newvar": "Enter a new variable/Overwrite an existing variable",
+    "target": "Select variable(s)",
+    "selectctrl": "Select an operation to apply",
+    "help": {
+        "title": "Applying a function",
+        "r_help": "help(apply,package='base')",
+        "body": "\n<b>Description</b></br>\nApplies a function across all rows of the selected variables (columns) in a dataset. We use the select function and the pipe ( %>% ) operator from the dplyr package to select the variables whose rows we will apply a function to. (These variables are piped into the apply function)\n<br/>\n<b>Usage</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nX: An array including a matrix. The selected variables are piped in via dplyr\n</li>\n<li>\nMARGIN: The a vector giving the subscripts which the function will be applied over. E.g., for a matrix 1 indicates rows, 2 indicates columns, c(1, 2) indicates rows and columns. Where\nX has named dimnames, it can be a character vector selecting dimension names.dataset that contains the variable var\n</li>\n<li>\nFUN: The function to be applied\n</li>\n</ul>\n<b>Value</b><br/>\nComputed values are stored directly in Dataset\n<b>Package</b></br>\ndplyr</br>\n<b>Help</b></br>\nhelp(apply)\n"
+    }
+}

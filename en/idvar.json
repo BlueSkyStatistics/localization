@@ -1,0 +1,16 @@
+{
+    "title": "ID Variable",
+    "navigation": "ID Variable",
+    "varnamelabel": "Name of ID variable to Create",
+    "sortbyvarslabel": "Variables to Sort By First",
+    "groupbyvarslabel": "Variables to Group By",
+    "outputdatalabel": "Output Dataset",
+    "newdatalabel": "Create New Dataset",
+    "overwritelabel": "Overwrite Existing Dataset",
+    "newdatasetlabel": "Enter a Name for the New Dataset",
+    "help": {
+        "title": "ID Variable",
+        "r_help": "help(row_number, package ='dplyr')",
+        "body": "\nCreates a numeric row identification (ID) variable in either the current dataset or in a separate copy of the current dataset.  \nThe ID variable created will consist of the numeric values 1, 2, 3, etc., in that order, from top to bottom in the dataset.  \nCan optionally specify variables to sort by or group by before the identification variable is created.  The variables to sort by and group \nby can be the same or different variables.  If no grouping variables are specified, the overall row number of the dataset will be assigned \nto the ID variable.\n<br/><br/>\n<b>Name of ID variable to create:</b> Specify the desired name of the ID variable in the output dataset.\n<br/><br/>\n<b>Variables to sort by first (optional): </b> Specify variables to sort by before groups are defined or the ID variable is created\n<br/><br/>\n<b>Variables to Group By (optional):</b> Specify variables whose levels will define the separate assignment of ID values.  For example, grouping by \ngender will create values of 1, 2, 3, etc. separately for males and females, in order of appearance in the data set.\n<br/><br/>\n<b>Output Dataset:</b> Specify whether to create a new dataset or overwrite the current dataset\n<br/><br/>\n<b>Required R Packages:</b> tidyverse\n\t\t\t"
+    }
+}

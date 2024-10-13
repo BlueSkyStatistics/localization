@@ -1,0 +1,16 @@
+{
+    "title": "Loss Function Analysis",
+    "navigation": "Loss Function Analysis",
+    "lfaSubTitle": "Subtitle for the graphic output",
+    "independent": "Column containing the data for the loss function analysis",
+    "lfaDelta": "Tolerance of the process",
+    "lfaY0": "Target of the process",
+    "lfaL0": "Cost of poor quality at tolerance limit",
+    "lfaSize": "Size of the production, batch, etc. to calculate the total loss in a group (span, batch, period, ...)",
+    "lfaOutput": "Type of output (possible values - text, plot or both)",
+    "help": {
+        "title": "Loss Function Analysis",
+        "r_help": "help(ss.lfa, package = SixSigma)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tss.lfa function to perform a Quality Loss Function Analysis based in the Taguchi Loss Function for \"Nominal-the-Best\" characteristics.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called loss_function_table.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

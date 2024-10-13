@@ -1,0 +1,20 @@
+{
+    "title": "K Nearest Neighbors",
+    "navigation": "KNN",
+    "dependentvar": "Dependent variable",
+    "independentvars": "Independent variable(s)",
+    "header": "KNN is a lazy classifier, it does not create a fit to predict later. It fits and evaluates at the same time. We split the dataset into train and test datasets, then build the model on the training dataset, making predictions on the test dataset and use those predictions to display model evaluation statistics.",
+    "Seed": "Set Seed",
+    "Group2": "Tuning parameters for KNN",
+    "noneighbhors": "No. of neighbors (When a value is not specified, default is set to the square root of the number of observations in dataset)",
+    "Group1": "Train and test datasets",
+    "splitPercentage": "Enter split percentage",
+    "trainDatasetName": "Enter the name of the training dataset",
+    "testDatasetName": "Enter the name of the testing dataset",
+    "predictedValues": "Enter variable prefix for predicted values. (You must specify a prefix) Prefixed variables are created in the testing dataset.",
+    "help": {
+        "title": "K Nearest Neighbors",
+        "r_help": "help(knn, package ='class')",
+        "body": "\n                <b>Description</b></br>\nk-Nearest Neighbor Classification\n<br/>\n<b>Note: </b></br>\n1. Training and testing datasets are automatically created with KNN based on the split percentage specified<br/>\n2. The predicted values are stored in the testing dataset and are used to compute model statistics namely accuracy, kappa, sensitivity.... The confusion matrix is also displayed\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ntrain: matrix or data frame of training set cases.\n</li>\n<li>\ntest: matrix or data frame of test set cases. A vector will be interpreted as a row vector for a single case.\n</li>\n<li>\ncl: factor of true classifications of training set\n</li>\n<li>\nk: number of neighbors considered.\n</li>\n<li>\nl: minimum vote for definite decision, otherwise doubt. (More precisely, less than k-l dissenting votes are allowed, even if k is increased by ties.)\n</li>\n<li>\nprob: If this is true, the proportion of the votes for the winning class are returned as attribute prob.\n</li>\n<li>\nuse.all: controls handling of ties. If true, all distances equal to the kth largest are included. If false, a random selection of distances equal to the kth is chosen to use exactly k neighbors.\n</li>\n</ul>\n<b>Value</b></br>\nFactor of classifications of test set. doubt will be returned as NA.</br>\n<b>Package</b></br>\ncaret;class</br>\n<b>Help</b></br>\nhelp(knn, package ='class')\n                "
+    }
+}

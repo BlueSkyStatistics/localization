@@ -1,0 +1,13 @@
+{
+    "title": "Pseudo R Squared",
+    "navigation": "Pseudo R Squared",
+    "modelselector1": "Select a model",
+    "label1": "Select a model of one of the following classes (class in parenthesis)",
+    "label2": "Generalized linear models (glm), Multinomial Log-Linear Models (multinom), Ordered Logistic Or Probit Regression (polr) ",
+    "label3": "NOTE: MODELS BUILT USING MODEL TUNING (TRAIN) ARE NOT SUPPORTED",
+    "help": {
+        "title": "Pseudo R Squared",
+        "r_help": "help(pR2, package='pscl')",
+        "body": "\n                <b>Description</b></br>\ncompute various pseudo-R2 measures for various GLMs\n<br/>\n<b>Usage</b>\n<br/>\n<code> \npR2(object, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: a fitted model object, for now of class glm, polr, or mulitnom\n</li>\n<li>\n... additional arguments to be passed to or from functions\n</li>\n</ul>\n<b>Details</b></br>\nNumerous pseudo r-squared measures have been proposed for generalized linear models, involving a comparison of the log-likelihood for the fitted model against the log-likelihood of a null/restricted model with no predictors, normalized to run from zero to one as the fitted model provides a better fit to the data (providing a rough analogue to the computation of r-squared in a linear regression).</br>\n<b>Value</b><br/>\nA vector of length 6 containing<br/>\nllh: The log-likelihood from the fitted model<br/>\nllhNull: The log-likelihood from the intercept-only restricted model<br/>\nG2: Minus two times the difference in the log-likelihoods<br/>\nMcFadden: McFadden's pseudo r-squared<br/>\nr2ML: Maximum likelihood pseudo r-squared<br/>\nr2CU: Cragg and Uhler's pseudo r-squared<br/>\n<b>Examples</b><br/>\n<code> \ndata(admit)<br/>\n## ordered probit model<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            data=admit,\n            method=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>Package</b></br>\npscl</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(pR2, package=\"pscl\")\n                "
+    }
+}

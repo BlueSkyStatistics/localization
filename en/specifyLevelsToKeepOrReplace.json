@@ -1,0 +1,23 @@
+{
+    "title": "Specify levels to keep or replace by other",
+    "navigation": "Lump into Other (Manually)",
+    "target": "Factor variables to reorder",
+    "label1": "Enter the factor levels to keep or replace by other. When levels to keep is selected, remaining levels will be replaced by \"Other\". When replace is selected, specified levels will be replaced by \"Other\"",
+    "other": "Level name used for \"Other\" values",
+    "label3": "Method to use",
+    "keep": "Keep levels",
+    "drop": "Drop levels",
+    "keepOption": "Enter levels to keep separated by , remaining levels will be replaced by \"Other\" for e.g. level1,level2,level3",
+    "dropOption": "Enter levels to replace by \"Other\" for e.g. level1,level2,level3",
+    "label2": "Save results to new variable(s) or overwrite existing variable(s)",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "help": {
+        "title": "Levels to keep or replace",
+        "r_help": "help(fct_other, package =forcats)",
+        "body": "\n<b>NOTE: DON'T ENCLOSE LEVELS IN DOUBLE QUOTES OR SINGLE QUOTES, THERE CANNOT BE SPACES IN THE LEVEL NAMES. ENTER LEVELS SEPARATED BY COMMAS IN THE FORMAT LEVEL1,LEVEL2, LEVEL3</b><br/>\n<b>Description</b></br>\nEnter the factor levels to keep or drop. When keep is selected, remaining levels will be replaced by \"Other\". When drop is selected, dropped levels will be replaced by \"Other\"\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Other\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf :A factor (or character vector).\n</li>\n<li>\nkeep, drop: keep will preserve listed levels, replacing all others with other_level. drop will replace listed levels with other_level, keeping all others as they are.\n</li>\n<li>\nother_level: Value of level used for \"other\" values. Always placed at end of levels.\n</li>\n</ul>\n<b>Examples</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>Package</b></br>\nforcats</br>\n<b>Help</b></br>\nhelp(fct_other, package =forcats)\n    "
+    }
+}

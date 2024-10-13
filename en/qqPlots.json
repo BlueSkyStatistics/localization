@@ -1,0 +1,27 @@
+{
+    "title": "Q-Q Plots",
+    "navigation": "Q-Q",
+    "x": "X axis, specify a numeric variable(s)",
+    "alpha": "Opacity (0-1)",
+    "y": "Shape, specify a factor variable",
+    "color": "Color, specify a factor variable",
+    "referenceline": "Reference line",
+    "band": "Show bands",
+    "detrend": "Detrend",
+    "flip": "Flip Axis",
+    "distribution": "Select a distribution",
+    "x_title": "X Axis Label",
+    "y_title": "Y Axis Label",
+    "label1": "Distibution parameters, for e.g. for a normal distribution, the distribution parameters could be  mean=2, sd=2 so enter mean=2, sd=2 . For an exponential distribution the parameters could be rate =2, so enter rate=2.",
+    "specify_a_title": "Enter a title",
+    "dparams": "Optionally enter distribution parameters",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Q-Q Plots",
+        "r_help": "help(stat_qq_point,package='qqplotr')",
+        "body": "\n            <b>Description</b></br>\n            A Q–Q (quantile-quantile) plot is a probability plot, which is a graphical method for comparing two probability distributions by plotting their quantiles against each other. By default we compare the probability distribution of selected variable against the normal distribution, however you can compare against several other distributions including beta, cauchy, chisq, exp, f, gamma... You can also specify the distribution parameters associated with the distribution being compared against.  Click options button on the main dialog to select a distribution and specify distribution parameters. You can select a factor variable to group the selected variable. In this case a separate Q-Q plot is drawn for each group.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_line(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_point(distribution=\"norm\",detrend = TRUE) +\n             coord_flip() +\n             labs(x = \"Probability Points\",y =\"Sample Quantiles\",title = \"QQ Plot for variable var1\")</br></br>\n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_line(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_point(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE)+\n             labs(x = \"Probability Points\",y =\"Sample Quantiles\",title = \"QQ Plot for variable var1\")\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset​\n            </li>\n            <li>\n            aes(): Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.​\n            </li>\n            <li>\n            sample: the  numeric  variable to plot the P-P plot for\n            </li>\n            <li>\n            stat_qq_point: This is a modified version of ggplot2::stat_qq with some parameters adjustments and a new option to detrend the points.\n            </li>\n            <li>\n            stat_qq_line: Draws a reference line based on the data quantiles, as in stats::qqline.\n            </li>\n            <li>\n            stat_qq_band: Draws confidence bands based on three methods: \"normal\",\"boot\" and\"ts\":\n            \"normal\" constructs simultaneous confidence bands based on Normal confidence intervals;\n            \"boot\" creates pointwise confidence bands based on a parametric boostrap;\n            \"ts\" constructs tail-sensitive confidence bands, as proposed by Aldor-Noiman et al. (2013).\n            </li>\n            <li>\n            shape: An optional factor variable that groups the values assigned to sample. A separate P-P plot is created for each group as determined by levels of the factor variable​. Each group is indicated by a different shape\n            </li>\n            <li>\n            Labs(): Change axis labels and legend titles(This is optional)​\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)​. See help(facet_grid) for more details.\n            </li>\n            <li>  ​\n            coord_flip(): Flip axis(This is optional)​\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>Help</b></br>\n            help(stat_qq_point,package='qqplotr')</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(labs), help(stat_qq_point), help(aes), help(facet_grid), help(coord_flip)​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Gage Bias Analysis, Basic",
+    "navigation": "Gage Bias Analysis, Basic",
+    "variableRespSelcted": "(Optional if bias variable is selected) Select the variable for measurement/response",
+    "variableRefSelcted": "Select the variable for reference/standard value",
+    "variableBiasSelcted": "(Optional) Select the variable for bias if avaiable; Otherwise it will be computed automatically",
+    "alpha": "Confidence interval for linearity (between 0 to 1)",
+    "help": {
+        "title": "Gage bias analysis",
+        "r_help": "help(lm, package = stats)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to perform linearity bias analysis\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset files linearityBias.xlsx. Open the files in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tChoose the variables from the selection box, Reference and Measurement\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Sample Size, Precision of Cohen's Kappa",
+    "navigation": "Cohen's Kappa",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n": "Sample Size",
+    "width": "Confidence Interval Width",
+    "kappa": "Kappa (0-1)",
+    "conflevel": "Confidence Level (0-1)",
+    "raters": "Number of Raters (2-6)",
+    "categories": "Number of Categories (2-5)",
+    "props": "Proportions in Each Category; separate with commas, e.g. .3, .7; must match the number of categories and sum to 1",
+    "help": {
+        "title": "Sample Size, Precision of Cohen's Kappa",
+        "r_help": "help(prec_kappa, package ='presize')",
+        "body": "\nThis is an assessment of sample size for Cohen's kappa based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Kappa:</b> Specify the expected kappa value\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Number of Raters:</b> Specify the number of raters that will provide values for each subject.\n<br/><br/>\n<b>Number of Categories:</b> Specify the number of categories in the outcome variable\n<br/><br/>\n<b>Proportions in Each Category:</b> Specify the expected proportion of subjects in each category, separated by commas.  Note that the number of specified values must match the\nthe number of specified categories and sum to 1.\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

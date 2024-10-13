@@ -1,0 +1,30 @@
+{
+    "title": "Create an Experiment Table for a MSA Gage Study",
+    "navigation": "Design MSA Study",
+    "datasetname": "MSA Gage Study table name",
+    "label1": "Details for Parts",
+    "label2": "Details for Operators",
+    "factor1": "Name of the Part variable (e.g. Part as default)",
+    "numOfFactorLevels1": "Number of Parts",
+    "factorLevels1": "Leave blank to auto-generate values or specify values - example: -1, 1, 'string1', 2, 0",
+    "prefixForfactorLevels1": "If auto-generate, specify any Prefix. If blank, it will create values as 1,2,3,..",
+    "factor2": "Name of the Operator variable (e.g. Operator as default)",
+    "numOfFactorLevels2": "Number of Operators",
+    "factorLevels2": "Leave blank to auto-generate values or specify values - example: -1, 1, 'string1', 2, 0",
+    "prefixForfactorLevels2": "If auto-generate, specify any Prefix. If blank, it will create values as 1,2,3,..",
+    "numOfBlocks": "Number of blocks",
+    "replicationVarName": "if not left blank, name for replication iteration variable if replication > 1",
+    "replications": "Replications",
+    "repeatOnlyChk": "Repeat only (instead of true replication - not recommended)",
+    "randomizationChk": "Randomize the runs",
+    "selectRandomSeedRad": "Auto generate Random seed (unique every time)",
+    "selectFixedRandomSeedRad": "Choose as shown or manually change the following Random seed",
+    "lbl1": "You may not need to change the randomization seed value",
+    "randomseeds": "Seed for randomization",
+    "sortByOperatorChk": "Sort by Operator within each replication",
+    "help": {
+        "title": "Auto generate an experiment table for a MSA Gage Study",
+        "r_help": "help(fac.design, package=DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAutomatically generates a MSA study table to set up the experiment runs with Part and Operator details based on the parameter specified. \n\t\t\t\tIf non numeric values are used for Part and Operator, specify within single quote for example 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOnce the experment run details are automatically generated, the run table will show up on the data grid UI. \n\t\t\t\tThe run table can be saved (or 'save as' from the file menu) to create an excel file to use for setting up the experiments\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Browse the Orthogonal Array (oacat) design catalog",
+    "navigation": "Browse Orthogonal Design Catalog",
+    "designNamefromCatalog": "Name of the Orthogonal Array design in the catalog (e.g. L18.3.6.6.1)",
+    "numRuns": "Number of runs or a 2-element vector e.g. 4,16 with a minimum and maximum for the number of runs",
+    "numFactors": "Number of factors (seperate them by , e.g. 4,2,1)",
+    "numLevels": "Number of levels (seperate them by , e.g. 3,2,5)",
+    "showQualityMetricsChk": "Show all array quality metrics with the resulting arrays;",
+    "maxDigits": "Significant digits to show for GR and A metrics",
+    "maxNumberofDesignPrint": "Show maximum number of designs",
+    "help": {
+        "title": "Browse the Orthogonal Array (oacat) design catalog",
+        "r_help": "help(show.oas, package = DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tBrowse/Inspect design elements or extract information from the list of available orthogonal arrays, optionally specifying selection criteria\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(show.oas, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Crosstab List",
+    "navigation": "Crosstab List",
+    "destvarslabel": "Variables for Table",
+    "missinglabel": "Missing Values",
+    "removelabel": "Remove",
+    "showexcludelabel": "Show and Exclude from Percentages",
+    "includelabel": "Show and Include in Percentages",
+    "sparseoptlabel": "Include Combinations with 0 Counts",
+    "toplistoptlabel": "Show Top N Most Frequent Values",
+    "topnumlabel": "N",
+    "help": {
+        "title": "Crosstab List",
+        "r_help": "help(freqlist, package ='arsenal')",
+        "body": "\nThis creates frequency tables in a list format for combinations of one or more variables.  Every combination of values across all specified variables will be tabled, \nwith their observed frequencies.  The specified variables can be any class, including numeric, continuous variables.  While this can be used for summary frequencies and \npercentages, a major use is checking data for inconsistencies.  Care should be taken about how many variables to cross-classify and how many possibilities can result, as \nsome tables may take longer to produce. \n<br/><br/>\n<b>Variables for Table:</b>  <br/>Variables to be included in the table, which can be any class.  The table will be sorted according to the order of variables in this list.  \nThis means if variables A and B are the specified order, then the table will be sorted by levels of A, then levels of B within A.\n<br/><br/>\n<b>Missing Values</b>\n<br/>\n<ul>\n\t<li><b>Remove:</b>  Variable value combinations that have NA's will be excluded from the table.</li>\n\t<li><b>Show and Exclude from Percentages:</b>  Variable value combinations that have NA's will be included in the table, but will not be included in percentage computations.</li>\n\t<li><b>Show and Include in Percentages:</b>  Variable value combinations that have NA's will be included in the table and be included in percentage computations.</li> \n</ul>\n<br/><br/>\n<b>Include Combinations with 0 Counts:</b>  <br/>Whether to include variable value combinations that don't exist in the dataset.  For example, if variables A and B both have observed values of 1, 2, and 3, but (A, B) combination (1, 3) isn't observed in the data, this option would include a row for the (1, 3) combination with a frequency of 0.\n<br/><br/>\n<b>Show Top N Most Frequent Values:</b>  <br/>If checked, this would create a separate table with the top N most frequent variable combinations.\n<ul>\n\t<li><b>N:</b> How many variable combinations to show for the top N table.</li>\n</ul>\n<b>R Packages Required:</b> arsenal\n\t\t\t"
+    }
+}

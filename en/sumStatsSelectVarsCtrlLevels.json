@@ -1,0 +1,11 @@
+{
+    "title": "Summary Statistics (Selected variables)",
+    "navigation": "Summary Statistics, selected variables, control levels (Legacy)",
+    "subsetvars": "Selected Variables",
+    "levels": "Specify the number of levels to display counts for factor variables. NOTE: Less frequent levels of factor variables are summarized in the (Other) category.",
+    "help": {
+        "title": "Summary Statistics (Control levels)",
+        "r_help": "",
+        "body": "\n<b>Description</b></br>\nGenerates the summaries for every variable selected while allowing you to control the number of levels for which counts are displayed.</br>\nNOTE: COUNTS OF LESS FREQUENT VARIABLES ARE SUMMARIZED IN THE (OTHER) CATEGORY</br>\nShows Minimum, 1st Quartile, Median, Mean, 3rd Quartile, Maximum and count of NAs for numeric and date variables.</br>\nFor factor variable it displays the counts of each level.</br>\nFor logical variable it displays the counts of TRUE, FALSE and NAs</br>\nR Help is not available because in we have written custom code using  multiple  R functions. If you need to inspect the code click the \"<>\" button.</br>\n"
+    }
+}

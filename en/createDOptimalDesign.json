@@ -1,0 +1,20 @@
+{
+    "title": "Create D-Optimal Design",
+    "navigation": "Create D-Optimal Design",
+    "datasetname": "D-optimal Design name",
+    "candidateDesignChk": "Create D-optimal design from an existing candidate design (full factorial, FrF2, Orthogonal, or Latin) - make sure this dialog is opened on the existing design on the data grid to choose the candidate design implicitely",
+    "selectedvars": "Select variables (Ignored if candidate design is checked above) to create a D-optmal design not from an exsiting candidate design",
+    "numOfRuns": "Number of runs",
+    "formula": "Formula - leave it deafult to include all factiors in the model or type in a linear model formula e.g. ~quad(.)",
+    "numOfOptiRepeats": "Number of optimization Repeats",
+    "numOfBlocks": "Number of blocks",
+    "blockName": "Name of the block",
+    "lbl1": "You may not need to change the randomization settings",
+    "randomseeds": "Seed for randomization",
+    "randomizationChk": "Randomize the design generation",
+    "help": {
+        "title": "Create D-Optimal Design",
+        "r_help": "help(Dopt.design, package = DoE.wrapper)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tDopt.design function for creating D-optimal designs with or without blocking\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called factor_grid_full_factorial_to use_for_Doptimal_Design.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tCreate the full factorial design first, choose the full fatorial design from this dialog/UI and specify runs = 16 to create a D-optimal design from a full factorial design  \n\t\t\t"
+    }
+}

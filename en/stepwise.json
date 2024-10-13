@@ -1,0 +1,22 @@
+{
+    "title": "Stepwise",
+    "navigation": "Stepwise",
+    "label1": "Select a model of one of the following classes. (R class is listed in parenthesis below)",
+    "label2": "Linear model (lm), Generalized linear model (glm), Ordered Logistic/Probit regression (polr), Feed-Forward Neural Networks and Multinomial Log-Linear Models (nnet)",
+    "label3": "**NOTE: Stepwise does not work for models built by Model > Tuning (train)",
+    "label4": "**NOTE: Stepwise does not work for  Multinomial Log-Linear Models (multinom) due to an incompatibility that we have raised with the R package authors",
+    "modelselector1": "Select a model",
+    "label5": "Direction",
+    "backforward": "backward/forward",
+    "forwardback": "forward/backward",
+    "backward": "backward",
+    "forward": "forward",
+    "aic": "AIC (degress of freedom used for penalty k = 2)",
+    "bic": "BIC (degrees of freedom used for penalty k = log(no of rows in model matrix)) NOTE: Output displays AIC even even when BIC is selected)",
+    "label6": "Criterion",
+    "help": {
+        "title": "Stepwise",
+        "r_help": "help(stepwise, package='RcmdrMisc')",
+        "body": "\n            <b>Description</b></br>\nThis function is a front end to the ‘stepwise’ function in the RcmdrMisc package. Which in turn is a front end to the stepAIC function in the MASS package.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"backward/forward\", \"forward/backward\", \"backward\", \"forward\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmod : a model object of a class that can be handled by stepAIC.\n</li>\n<li>\ndirection : if \"backward/forward\" (the default), selection starts with the full model and eliminates predictors one at a time, at each step considering whether the criterion will be improved by adding back in a variable removed at a previous step; if \"forward/backwards\", selection starts with a model including only a constant, and adds predictors one at a time, at each step considering whether the criterion will be improved by removing a previously added variable; \"backwards\" and \"forward\" are similar without the reconsideration at each step.\n</li>\n<li>\ncriterion : for selection. Either \"BIC\" (the default) or \"AIC\". Note that stepAIC labels the criterion in the output as \"AIC\" regardless of which criterion is employed.\n</li>\n<li>\n... : arguments to be passed to stepAIC.\n</li>\n</ul>\n<b>Value</b><br/>\nThe model selected by stepAIC.<br/>\n<b>Package</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(stepwise, package=\"RcmdrMisc\")\n"
+    }
+}

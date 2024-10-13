@@ -1,0 +1,12 @@
+{
+    "title": "Conditional Compute, multiple",
+    "navigation": "Conditional Compute, multiple",
+    "newvar": "New/Existing Variable name (no spaces/special characters):",
+    "label2": "Expression Builder: Construct the desired expression, for e.g. var1+var2, as.numeric(var2), substr(var4,2,4)...",
+    "formula": "Construct a compute command",
+    "help": {
+        "title": "Conditional Compute, multiple",
+        "r_help": "help(log, package ='base')",
+        "body": "\n<b>Description</b></br>\nComputes an expression and stores the result in a variable/column of a dataframe/dataset</br>\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expression)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nDatasetX:  dataframe/dataset name.​\n</li>\n<li>\nvar1: The new/existing column in the dataset/dataframe that needs to be computed\n</li>\n<li>\nExpression: An expression in the form variable1 =variable2+variable3\n</li>\n</ul>\n<b>Details</b></br>\nEvaluates the expression and stores the result in variable/column of a dataframe/dataset</br>\n<b>Package</b></br>\ndplyr</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(mutate, package ='dplyr') in the R editor window\n            "
+    }
+}

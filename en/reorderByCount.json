@@ -1,0 +1,21 @@
+{
+    "title": "Reorder Factor Levels by Count",
+    "navigation": "Reorder by Count",
+    "target": "Select factor variables to re-order",
+    "label1": "Select the factor variables to reorder by count. You can overwrite existing variables or create new variables by specifying a prefix/suffix. New variables will be created with the prefix/suffix appended to existing names.",
+    "label2": "Save new levels to new variable(s) or overwrite existing variable(s)",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "label3": "Specify an order",
+    "Descending": "In the descending order by count",
+    "Ascending": "In the ascending order by count",
+    "ordered": "Make an ordered factor (ordinal)",
+    "help": {
+        "title": "Reorder Variables Alphabetically",
+        "r_help": "help(sort)",
+        "body": "\n<b>Description</b></br>\nRe-order variables in the dataset in alphabetical order. We use the sort function to sort the names of the columns/variables in the dataset and the select function in the package dplyr to select the column names in the correct alphabetical order \n<br/>\n<b>Usage</b>\n<br/>\n<code> \n##Reordering alphabetically (A-Z)\nDataset_name <- Dataset_name %>%   select(sort(names(.)))\n##Reordering alphabetically (Z-A)\nDataset_name <- Dataset_name %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>Arguments</b><br/>\nNone<br/>\n<b>Package</b></br>\ndplyr</br>\n<b>Help</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n"
+    }
+}

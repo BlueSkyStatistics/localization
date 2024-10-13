@@ -1,0 +1,13 @@
+{
+    "title": "Rating Scale Model (Multi-faceted)",
+    "navigation": "Rating Scale Model (Multi-faceted)",
+    "modelname": "Enter model name",
+    "destinationvars": "Items",
+    "firstlevel": "First level variable",
+    "secondlevel": "Second level variable",
+    "help": {
+        "title": "Rating Scale Model (Multi-faceted)",
+        "r_help": "help(tam.mml.mfr, package=TAM)",
+        "body": "\n            <b>Description</b>\n            <br/>\n            Generates parameter estmates for a multi-faceted rating scale model\n            <br/><br/>\n            <b>Usage</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Data frame with polytomous item responses k=0,...,K. Missing responses must be declared as NA.\n            </li>\n            <li>\n            formulaA: Design formula (only applies to tam.mml.mfr). See example 8 in detailed help. It is also to possible to set all effects of a facet to zero, e.g. item*step + 0*rater (see Example 10a in detailed help).\n            </li>\n            <li>\n            facets: A data frame with facet entries (only applies to tam.mml.mfr)\n            </li>\n            <li>\n            pid: An optional vector of person identifiers\n            </li>\n            <li>\n            verbose: Logical indicating whether output should be printed during iterations. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Packages</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Help</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+    }
+}

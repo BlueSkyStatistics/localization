@@ -1,0 +1,15 @@
+{
+    "title": "US County Map",
+    "navigation": "US County Map",
+    "region": "Variable with county names:",
+    "value": "Variable with values to map:",
+    "colors": "Enter number of colors",
+    "zoomByStates": "Enter the states to zoom into, for e.g. california,oregon,washington",
+    "specify_a_title": "Enter a title",
+    "legend": "Legend:",
+    "help": {
+        "title": "US County Map",
+        "r_help": "help(county_choropleth, package='choroplethr')",
+        "body": "\n            <b>Description</b></br>\n            Draws a county map and allows you to optionally zoom into 1 or more states\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            county_choropleth(BSkyDfForMap, title=\"{{title}}\", legend=\"{{legend}}\",num_colors ={{colors}}, state_zoom={{zoomByStates}})\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: A data.frame with a column named \"region\" and a column named \"value\". Elements in the \"region\" column must exactly match how regions are named in the \"region\" column in county.map. To see the variables in county.map, run the R commands in the other section below.\n                </li>\n                <li>\n            Title: An optional title for the map.\n            </li>\n            <li>\n            Legend: An optional name for the legend.\n            </li>\n            <li>\n            num_colors: The number of colors on the map. A value of 1 will use a continuous scale. A value in [2, 9] will use that many colors.\n            </li>\n            <li>\n            ​state_zoom: An optional vector of states to zoom in on. Elements of this vector must exactly match the names of states as they appear in the \"region\" column of ?state.regions.\n            Accessing state.regions is similar to accessing county.map\n            </li>\n            </ul>\n            <b>Package</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Help</b></br>\n            help(county_choropleth, package='choroplethr')</br>\n            <b>Other</b></br>\n            <code> \n            # Run the code below to access the county.map dataset</br>\n            library(choroplethr)</br>\n            library(choroplethrMaps)</br>\n            data(county.map)</br>\n            county.map </br>\n            </code> <br/>\n    "
+    }
+}

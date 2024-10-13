@@ -1,0 +1,31 @@
+{
+    "title": "HeatMap",
+    "navigation": "HeatMap",
+    "rowVariables": "Target variable",
+    "columnVariables": "Column variables",
+    "options": "Options",
+    "title1": "Title of Heatmap",
+    "dendrogram": "Dendogram:",
+    "label1": "Row dendrogram options:",
+    "plotRowYes": "Reorder dendrogram based on row means",
+    "plotRowNo": "No reordering (dendrogram will not be computed)",
+    "label2": "Column dendrogram options",
+    "plotColumnYes": "Reorder dendrogram based on column means",
+    "plotColumnNo": "No",
+    "symmetric": "In the case of symmetric matrix treat columns like rows",
+    "trace": "Options for drawing solid trace line across rows, columns, both rows and columns or none",
+    "density": "Density options:",
+    "scale": "Values should be centered in row direction, column direction or none",
+    "label3": "Missing values",
+    "Remove": "Remove all rows that contain a missing value",
+    "Keep": "Keep rows that contain missing values",
+    "label4": "Place values in the cell",
+    "valuesNo": "Yes",
+    "valuesYes": "No",
+    "noteColors": "Choose a color for cell values (After color selection, click outside the control to apply):",
+    "help": {
+        "title": "HeatMap",
+        "r_help": "help(heatmap.2,package='gplots')",
+        "body": "\n            <b>Description</b></br>\n            A heat map is a graphical representation of data where the individual values contained in a matrix are represented as colors.  Facets can be optionally created by specifying a factor variable. You can also optionally specify themes, and specify a title and labels for the x and y axis</br>\n            The dataset must be in the format  column1, column2…columnN where</br>\n            column1: Identifies the subjects e.g. names of people whose the cholesterol values are plotted</br>\n            column2:  Identifies the cholesterol values at time 1</br>\n            column3:  Identifies the cholesterol values at time 2</br>\n            column4:  Identifies the cholesterol values at time 3</br>\n            column5:  Identifies the cholesterol values at time 4…</br>\n            Column1 is a label for each row in the heatmap.</br>\n            For Column 2 onwards, values in each row of the column are represented as colors in the heatmap.</br>\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Subject'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            The above function is in the BlueSky package and invokes the heatmap.2 function in the gplots package.\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset\n            </li>\n            <li>\n            rowVariable: The column variable that contains information about the subjects that the graph is constructed for, see above\n            </li>\n            <li>\n            colVariables:  a list of column variables that contain values that will be represented as colors in the heatmap\n            </li>\n            <li>\n            Colv: determines if and how the column dendrogram should be reordered. Has the options as the Rowv argument above and additionally when x is a square matrix, Colv=\"Rowv\" means that columns should be treated identically to the rows.\n            </li>\n            <li>\n            Rowv:   determines if and how the row dendrogram should be reordered. By default, it is TRUE, which implies dendrogram is computed and reordered based on row means. If NULL or FALSE, then no dendrogram is computed and no reordering is done. If a dendrogram, then it is used \"as-is\", i.e. without any reordering. If a vector of integers, then dendrogram is computed and reordered based on the order of the vector.\n            </li>\n            <li>\n            na.rm: logical determining whether NA’s should be removed\n            </li>\n            <li>\n            dendrogram: character string indicating whether to draw 'none', 'row', 'column' or 'both' dendrograms. Defaults to 'both'. However, if Rowv (or Colv) is FALSE or NULL and dendrogram is 'both', then a warning is issued and Rowv (or Colv) arguments are honored.\n            </li>\n            <li>\n            scale: character indicating if the values should be centered and scaled in either the row direction or the column direction, or none. The default is \"none\".\n            </li>\n            <li>\n            trace: character indicating if the values should be centered and scaled in either the row direction or the column direction, or none. The default is \"none\".\n            </li>\n            <li>\n            density.info: character string indicating whether to superimpose a 'histogram', a 'density' plot, or no plot ('none') on the color-key.\n            </li>\n            <li>\n            noteForCells: logical indicating whether values should be placed in the cells of the heatmap.\n            </li>\n            <li>\n            notecol: color of notes. If specified values are noted in the heatmap cells in color specified..\n            </li>\n            </ul>\n            <b>Package</b></br>\n            BlueSky;gplots;</br>\n            <b>Help</b></br>\n            help(heatmap.2,package='gplots')</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)</br>\n            Sample Datasets: See Heatmaps.Rdata in the Sample DatasetsSample R Datasets folder</br>\n     "
+    }
+}

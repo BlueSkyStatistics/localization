@@ -1,0 +1,10 @@
+{
+    "title": "Remove Split",
+    "navigation": "Remove Split",
+    "label1": "Removes the split (if a split is set on the dataset). Click the button on the top right to execute the dialog",
+    "help": {
+        "title": "Remove Split",
+        "r_help": "",
+        "body": "<b>Description</b></br>\n        Removes the split on the dataset. Splits, see Data>Group By>Set Split splits the data into groups based on the factors selected, once the dataset is split, the analysis you select is performed independently for each split. For example if you run a crosstabulation analysis or a hypothesis test, this analysis is performed independently for each split (the output of the analysis is also generated separately for each split). \n         <br/>\n                <b>Usage</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(colnames =c(),datasetnameorindex='dataset name')\n          </code> <br/>\n            <b>Arguments</b><br/>\n                 <ul>\n                   <li>\n        col.names: These are the column names/variable names that you want to split the dataset by, e.g. col.names =c(\"var1\", \"var2\"). To reset the split, set to c()\n         </li>\n                <li>\n        datasetnameorindex: this is the name of the dataset.​\n          </li>\n               \n                </ul>\n            <b>Package</b></br>\n               Not applicable, this function is an internal function in the BlueSky package. This function basically removes the split attribute on the dataset. </br>\n                <b>Help</b></br>\n        NA\n        "
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Box Plot",
+    "dropna": "Drop missing values",
+    "navigation": "Box Plot",
+    "x": "X variable, specify a factor variable",
+    "y": "Y variable(s), specify a numeric variable(s)",
+    "fill": "Fill, specify a factor variable",
+    "dataPoints": "Select an option to plot data points",
+    "alpha": "Opacity (0-1)",
+    "flip": "Flip axis",
+    "notch": "Notch",
+    "outliers": "Show Outliers (In Red)",
+    "specify_a_title": "Enter a title",
+    "x_title": "X Axis Label",
+    "y_title": "Y Axis Label",
+    "barcolor": "Select a color for the lines around the boxes (After color selection, click outside the control to apply)",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Box Plot",
+        "r_help": "help(geom_boxplot, package=ggplot2)",
+        "body": "\n        <b>Description</b></br>\n        In descriptive statistics, a box plot or boxplot is a convenient way of graphically depicting groups of numerical data through their quartiles. Box plots may also have lines extending vertically from the boxes (whiskers) indicating variability outside the upper and lower quartiles, hence the terms box-and-whisker plot and box-and-whisker diagram. Outliers may be plotted as individual points. Box and whisker plots are uniform in their use of the box: the bottom and top of the box are always the first and third quartiles, and the band inside the box is always the second quartile (the median). The upper whisker extends from the hinge to the highest value that is within 1.5 * IQR of the hinge, where IQR is the inter-quartile range, or distance between the first and third quartiles. The lower whisker extends from the hinge to the lowest value within 1.5 * IQR of the hinge. Data beyond the end of the whiskers are outliers and plotted as points (as specified by Tukey).​</br>\n        Facets can be optionally created by specifying a factor variable. You can also optionally specify themes, and specify a title and labels for the x and y axis​</br>\n        When you select the option to plot the data points, we do so using geom_dotplot</br>\n        By default outliers are shown with black points, when you select the option to show outliers (In Red) via the checkbox, outliers are made more prominent.\n        <br/>\n        <b>Usage</b>\n        <br/>\n        <code> \n        ggplot(data =Dataset,aes(x = var1,y = var2,fill = var3)) + geom_boxplot()  + \n        geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.1)+ coord_flip()+ labs(x = \"var1\",y = \"var2\",fill = \"var3\")   +facet_grid(var4~.)​\n        </code> <br/>\n        <b>Arguments</b><br/>\n        <ul>\n        <li>\n        data: The default dataset​\n        </li>\n        <li>\n        x: A factor/categorical variable that defines the grouping of the y variable​\n        </li>\n        <li>\n        y: A numeric  variable for which the boxplot is calculated​\n        </li>\n        <li>\n        fill: An optional factor/categorical variable to further group the existing groups. Each sub group will be shown in a distinct color.​\n        </li>\n        <li>\n        aes():    Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.​\n        </li>\n        <li>\n        geom_boxplot():Creates the boxplot. The upper and lower \"hinges\" correspond to the first and third quartiles (the 25th and 75th percentiles).​\n        </li>\n        <li>\n        geom_dotplot: Plots the data points\n        </li>\n        <li>\n        Labs(): Change axis labels and legend titles (This is optional)​\n        </li>\n        <li>\n        facet_grid(): Lay out panels in a grid(This is optional)​\n        </li>\n        <li>\n        theme_calc(): Specifies the calculator theme(This is optional)​\n        </li>\n        <li>\n        coord_flip(): Flip axis(This is optional)​\n        </li>\n        <li>\n        notch: Notched box plots apply a \"notch\" or narrowing of the box around the median. Notches are useful in offering a rough guide to significance of difference of medians; if the notches of two boxes do not overlap, this offers evidence of a statistically significant difference between the medians. In a notched box plot, the notches extend 1.58 * IQR / sqrt(n)\n        </li>\n        </ul>\n        <b>Package</b></br>\n        ggplot2;ggthemes;stringr</br>\n        <b>Help</b></br>\n        help(geom_boxplot, package=ggplot2)</br>\n        Click the R Help button to get detailed R help. You can also enter help(geom_boxplot), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip), help (geom_dotplot)\n        "
+    }
+}

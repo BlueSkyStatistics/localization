@@ -1,0 +1,9 @@
+{
+    "title": "Export Design - three files (csv, html, rda) will be created with the same name as the design",
+    "navigation": "Export Design",
+    "exportPath": "File path to export the design",
+    "help": {
+        "title": "Export Design",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tExporting the Design will create three files (csv, html, rda) with the same name as the design in the directory path chosen\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe purpose of exporting the design is to set up and conduct the experiments per the design in the real world and collect the results. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAdd column(s) that are compliant with R variable naming convention to the csv file to record the results. These additional columns are known as the response(s) per the vocabulary of Design of Experiments. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOnce the response column(s) are added to the csv file, DOE -> Import Design menu can be used to load the csv file against the correct design (already open) on the dataset UI grid.  \n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}

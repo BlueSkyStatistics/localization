@@ -1,0 +1,24 @@
+{
+    "title": "Display Rules",
+    "navigation": "Display Rules",
+    "rulename": "Enter an existing rules object",
+    "dosortingchk": "Sort the rules",
+    "sortopt": "Sort Options",
+    "sortby": "Sort by",
+    "confchk": "confidence",
+    "liftchk": "lift",
+    "suppchk": "support",
+    "sortord": "Sort order",
+    "increasing": "Ascending",
+    "decreasing": "Descending",
+    "noofrules": "Number of rules to display",
+    "rulecount": "",
+    "fromto": "Display rules",
+    "from": "From",
+    "to": "To",
+    "help": {
+        "title": "Display Rules",
+        "r_help": "help(inspect, package='arules')",
+        "body": "\n            <b>\n\t\t\tPackage : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspect\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\tDescription\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Provides the generic function inspect and S4 methods to display associations and transactions plus additional information formatted for online inspection.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUsage\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspect(x, ...)\n            </code>\n            <br/><br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x: a set of associations or transactions or an itemMatrix.\n            </li>\n            <li>\n            ...: additional arguments can be used to customize the output: setStart, setEnd, itemSep and ruleSep. Items are printed only one per line in case the output lines get very long. This can also be directly controlled using linebreak.\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sort\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\tDescription\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Provides the method sort to sort elements in class associations (e.g., itemsets or rules) according to the value of measures stored in the association's slot quality (e.g., support).\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUsage\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## S4 method for signature 'associations'\n            arules::sort(x, decreasing = TRUE, na.last = NA, \n            by = \"support\", order = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 method for signature 'associations'\n            head(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 method for signature 'associations'\n            tail(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x: an object to be sorted.\n            </li>\n            <li>\n            decreasing: a logical. Should the sort be increasing or decreasing? (default is decreasing)\n            </li>\n            <li>\n            na.last: na.last is not supported for associations. NAs are always put last.\n            </li>\n            <li>\n            by: a character string specifying the quality measure stored in x to be used to sort x. If a vector of character strings is specified then the additional strings are used to sort x in case of ties.\n            </li>\n            <li>\n            order: should a order vector be returned instead of the sorted associations?\n            </li>\n            <li>\n            n: a single integer indicating the number of associations returned.\n            </li>\n            <li>\n            ... : Further arguments are ignored.\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            Details\n            </b> \n            <br/>\n            sort is relatively slow for large sets of associations since it has to copy and rearrange a large data structure. Note that sorting creates a second copy of the set of associations which can be slow and memory consuming for large sets. With order = TRUE a integer vector with the order is returned instead of the reordered associations.\n            If only the top n associations are needed then head using by performs this faster than calling sort and then head since it does it without copying and rearranging all the data. tail works in the same way.\n            <br/><br/>  \n            <b> \n            Value\n            </b> \n            <br/>\n            An object of the same class as x.                  \n    "
+    }
+}
