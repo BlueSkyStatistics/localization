@@ -1,0 +1,25 @@
+{
+    "title": "Forest Plot",
+    "navigation": "Forest Plot",
+    "modelselectorlabel": "Select Model Name",
+    "plotvarslabel": "Variables to Plot (none specified plots all variables)",
+    "varlabelslabel": "Variable Labels (specify as varname='label' separated by commas, e.g. age='Age in years', bmi='Body Mass Index'); can use \\n for line breaks within a label",
+    "notelabel": "NOTE: Changing labels requires a model re-fit, so large data could take time",
+    "label3": "NOTE: MODELS BUILT USING MODEL TUNING (TRAIN) ARE NOT SUPPORTED",
+    "estimateoptlabel": "Estimate Options",
+    "estimatelabellabel": "Label",
+    "exponentiatelabel": "Force Parameter Estimate Exponentiation",
+    "linecolorlabel": "Line Color",
+    "pointshapelabel": "Point Shape",
+    "pointsizelabel": "Point Size (0-10 mm)",
+    "styleoptlabel": "Style Options",
+    "factorseplinelabel": "Factor Names on Separate Lines",
+    "plotbandslabel": "Plot Bands",
+    "textsizelabel": "Text Size (1-10 mm)",
+    "estticklabelsizelabel": "Estimate Tick Mark Label Size (1-50)",
+    "help": {
+        "title": "Forest Plot",
+        "r_help": "help(forest_model, package = 'forestmodel')",
+        "body": "\nThis creates a plot of model coefficients, or exponentiated coefficients, from a regression model.  Each variable is plotted in its own row with totals, parameter estimates, \n95% confidence intervals, and p-values. Variables can be labelled to allow for a nicer presentation.  Currently, models of class lm (linear models), glm (generalized linear models, \nwhich includes logistic and Poisson), coxph (Cox proportional hazards), and rq (quantile regression) are supported.\n<br/><br/>\n<b>Select Model Name:</b> Choose the name of the model as specified when the model was fit.  This is a required field.\n<br/><br/>\n<b>Variables to Plot:</b> If you have access to the data that created the model, you can specify a subset of the variables in the model to include in the plot.  If no variables \nare specified, then it defaults to all variables included.\n<br/><br/>\n<b>Variable Labels:</b> Specify nicer labels to use instead of the variable names.  If a variable does not get labelled, the variable name or the existing variable label used when \nthe model was fit (if it exists) will be plotted.  These must be specified in a variablename=\"label\" format, separated by commas. Note that including \\n in a label will force\na line break within the label.  This means you can specify multi-line labels and might be advantageous for long labels, as long labels left on one line leave less space for the estimates.  Doing \na summary of the model with Model Evaluation -> Summarize -> Summarize a Model will print the model variables used in case you don't have access to the dataset.  NOTE: There is a \ncurrent bug in the forestmodel R package that does not use variable labels for factors in Cox models - the package developer has been notified.  An alternative until the package is \nfixed is to refit the model with dummy-coded variables instead of factors.\n<br/><br/><br/>\n<b>Estimate Options:</b>\n<br/><br/>\n<b>Label:</b> Optional label for the estimate column in the plot. Logistic regression and Cox models will automatically be detected and estimates labeled as \"Odds Ratio\" and \n\"Hazard Ratio\", respectively.  Other models will use the default of \"Estimate\" if you don't specify anything.\n<br/><br/>   \n<b>Force Parameter Estimate Exponentiation:</b> Choose this to force values of exp(coefficient) to be displayed, i.e. 2.718 raised to the power of the coefficient.  Exponentiated \ncoefficients are commonly used in Cox proportional hazards models (for hazard ratios), logistic regression (for odds ratios), log-binomial models (for relative risks), and Poisson \nregression (for rate ratios).  By default, logistic regression and Cox models will automatically be detected and exp(coefficient) will be used.\n<br/><br/>\n<b>Line Color:</b> Line color for the confidence intervals.\n<br/><br/>\n<b>Point Shape:</b> The shape of the points for the parameter estimates in the plot.\n<br/><br/>\n<b>Point Size (0-10 mm):</b>  The size of the points, in millimeters, for the parameter estimates in the plot.  0 mm would remove the points.  The default is 4 mm.\n<br/><br/><br/>\n<b>Style Options:</b>\n<br/><br/>\n<b>Factor Names on Separate Lines:</b> Choose this to display factor variable names on a separate line from the levels of the factor.\n<br/><br/>\n<b>Plot Bands:</b> Choose this to display alternating shaded regions for each row of the plot.\n<br/><br/>\n<b>Text Size (1-10 mm):</b> Size of the text, in millimeters, in the plot.  The default is 4 mm.\n<br/><br/>\nNote: If you want to change the overall size of the plot, the plot size can be set using the Themes button in the triple dot menu.\n<br/><br/>\n<b>Estimate Tick Mark Label Size (1-50):</b> Size of the tick mark labels for the estimate axis.\n<br/><br/>\n<b>Required R Packages:</b>  forestmodel, arsenal, survival, quantreg, insight\n"
+    }
+}

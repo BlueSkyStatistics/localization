@@ -1,0 +1,16 @@
+{
+    "title": "Convert Date Variables To Character",
+    "navigation": "Date to Character",
+    "label1": "Select a suffix or prefix for converted variables",
+    "suffix": "Suffix",
+    "prefix": "Prefix",
+    "prefixOrSuffix": "Enter a prefix or suffix",
+    "Destination": "Select date variables to convert to character",
+    "DateFormat": "Select the date format to convert to",
+    "TimeZone": "Select a time zone (default -nothing  selected is the local time zone of the PC)",
+    "help": {
+        "title": "Convert Date To character",
+        "r_help": "help(strftime, package=\"base\")",
+        "body": "\n<b>Description</b></br>\nConverts date (posixct and date class) to character -to control the format in which the date is displayed. You specify as input the format in which the string should be generated i.e. year/month/Day or month-dat=year etc.\nThe function above internally calls strftime in the base package. We have extended strftime to support multiple variables.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n​data: The dataset name\n</li>\n<li>\nvarNames: The variables of class posixct and date class that need to be converted​ to character\n</li>\n<li>\ndateFormat: A character string. The default for the format methods is \"%Y-%m-%d %H:%M:%S\" if any element has a time component which is not midnight, and \"%Y-%m-%d\" otherwise. If options(\"digits.secs\") is set, up to the specified number of digits will be printed for seconds\n</li>\n<li>\ntimezone: A character string specifying the time zone to be used for the conversion. System-specific (see as.POSIXlt), but \"\" is the current time zone, and \"GMT\" is UTC. Invalid values are most commonly treated as UTC, on some platforms with a warning.\n</li>\n<li>\nprefixOrSuffix: Specific a prefix or suffix for the new string variables. Takes either c(\"prefix\") or c(\"suffix\"). New variables that are created with this prefix/suffix to the original variable name. \n</li>\n</ul>\n<b>Package</b></br>\nbase</br>\n<b>Help</b></br>\nhelp(strftime)    \n"
+    }
+}

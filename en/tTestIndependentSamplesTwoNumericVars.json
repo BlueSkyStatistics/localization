@@ -1,0 +1,29 @@
+{
+    "title": "t-test, Paired Samples",
+    "navigation": "t-test, Paired Samples",
+    "tvarbox1": "First numeric variable",
+    "tvarbox3": "Second numeric variable",
+    "label1": "Alternative hypothesis",
+    "test1": "Difference != mu",
+    "test2": "Difference > mu",
+    "test3": "Difference < mu",
+    "chkbox1": "Assume equal variance",
+    "txtbox2": "Null hypothesis (mu)",
+    "txtbox1": "Confidence level",
+    "cohensdNoCorrection": "Cohen's d",
+    "hedgesgNoCorrection": "Hedges' g",
+    "glassdNoCorrection": "Glass's delta",
+    "hedgesgCorrect": "Hedges' g with bias corrected",
+    "glassdCorrect": "Glass's delta with bias corrected",
+    "effectsizes": "Effect sizes",
+    "showEffectSizes": "Display effect sizes",
+    "cohensdCorrect": "Cohen's d with bias corrected",
+    "label3": "Options for Cohen's d",
+    "label4": "Options for Hedges' g",
+    "label5": "Options for Glass's delta",
+    "help": {
+        "title": "t-test, independent samples",
+        "r_help": "help(t.test, package ='stats')",
+        "body": "\n<b>Description</b></br>\nPerforms one and two sample t-tests on vectors of data.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## Default S3 method:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## S3 method for class 'formula'<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: a (non-empty) numeric vector of data values.\n</li>\n<li>\ny: an optional (non-empty) numeric vector of data values.\n</li>\n<li>\nalternative: a character string specifying the alternative hypothesis, must be one of \"two.sided\" (default), \"greater\" or \"less\". You can specify just the initial letter.\n</li>\n<li>\nmu: a number indicating the true value of the mean (or difference in means if you are performing a two sample test).\n</li>\n<li>\npaired: a logical indicating whether you want a paired t-test.\n</li>\n<li>\nvar.equal: A logical variable indicating whether to treat the two variances as being equal. If TRUE then the pooled variance is used to estimate the variance otherwise the Welch (or Satterthwaite) approximation to the degrees of freedom is used.\n</li>\n<li>\nconf.level: confidence level of the interval.\n</li>\n<li>\nformula: a formula of the form lhs ~ rhs where lhs is a numeric variable giving the data values and rhs a factor with two levels giving the corresponding groups.\n</li>\n<li>\ndata: an optional matrix or data frame (or similar: see model.frame) containing the variables in the formula formula. By default the variables are taken from environment(formula).\n</li>\n<li>\nsubset: an optional vector specifying a subset of observations to be used.\n</li>\n<li>\nna.action: a function which indicates what should happen when the data contain NAs. Defaults to getOption(\"na.action\").\n</li>\n<li>\n...: further arguments to be passed to or from methods.\n</li>\n</ul>\n<b>Details</b></br>\nThe formula interface is only applicable for the 2-sample tests.</br>\nalternative = \"greater\" is the alternative that x has a larger mean than y.</br>\nIf paired is TRUE then both x and y must be specified and they must be the same length. Missing values are silently removed (in pairs if paired is TRUE). If var.equal is TRUE then the pooled estimate of the variance is used. By default, if var.equal is FALSE then the variance is estimated separately for both groups and the Welch modification to the degrees of freedom is used.</br>\nIf the input data are effectively constant (compared to the larger of the two means) an error is generated.</br>\n<b>Value</b><br/>\nA list with class \"htest\" containing the following components:<br/>\nstatistic: the value of the t-statistic.<br/>\nparameter: the degrees of freedom for the t-statistic.<br/>\np.value: the p-value for the test.<br/>\nconf.int: a confidence interval for the mean appropriate to the specified alternative hypothesis.<br/>\nestimate: the estimated mean or difference in means depending on whether it was a one-sample test or a two-sample test.<br/>\nnull.value: the specified hypothesized value of the mean or mean difference depending on whether it was a one-sample test or a two-sample test.<br/>\nalternative: a character string describing the alternative hypothesis.<br/>\nmethod: a character string indicating what type of t-test was performed.<br/>\ndata.name: a character string giving the name(s) of the data.<br/>\n<b>Package</b></br>\nstats</br>\n<b>Help</b></br>\nhelp(t.test, package ='stats')\n"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Cause and Effect Diagram",
+    "navigation": "Cause and Effect",
+    "effectName": "A short character string that represents the effect to analyse",
+    "mainTitle": "Six Sigma Cause-and-effect Diagram Title",
+    "subTitle": "Cause-and-effect Diagram Footer Title (normally SixSigma project name)",
+    "independent": "Cause Catagories",
+    "help": {
+        "title": "Cause and Effect Diagram",
+        "r_help": "help(ss.ceDiag, package = SixSigma)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tceDiag function to create a Cause and Effect diagram by cause group\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(ss.ceDiag, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset file called cause_and_effect_table.xlsx. Open the file in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

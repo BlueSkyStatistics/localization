@@ -1,0 +1,17 @@
+{
+    "title": "Sample Size, Precision of a Risk Difference",
+    "navigation": "Risk Difference",
+    "howtouse": "Specify either the sample size or the confidence interval width and the other will be computed",
+    "n1": "Group 1 Sample Size",
+    "width": "Confidence Interval Width",
+    "ratio": "Ratio of Group 1 to Group 2 Sample Size",
+    "prop1": "Group 1 Outcome Proportion",
+    "prop2": "Group 2 Outcome Proportion",
+    "conflevel": "Confidence Level (0-1)",
+    "method": "Confidence Interval Method",
+    "help": {
+        "title": "Sample Size, Precision of a Risk Difference",
+        "r_help": "help(prec_riskdiff, package ='presize')",
+        "body": "\nThis is an assessment of sample size for a difference in proportions based on confidence interval width.  It computes the sample size or the confidence interval width when the user \nspecifies the other.\n<br/><br/>\n<b>Group 1 Sample Size:</b> Specify the number of subjects in group 1\n<br/><br/>\n<b>Confidence Interval Width:</b> Specify the confidence interval width desired.  The width of a confidence interval is a measure of precision of an estimate and is the upper bound minus the lower bound.\n<br/><br/>\n<b>Ratio of Group 1 to Group 2 Sample Size:</b> Specify the ratio of the group 2 sample size to the group 1 sample size.  A value of 1 means equal sample sizes.\n<br/><br/>\n<b>Group 1 Outcome Proportion:</b> Specify the proportion of subjects in group 1 with the 'positive' outcome\n<br/><br/>\n<b>Group 2 Outcome Proportion:</b> Specify the proportion of subjects in group 2 with the 'positive' outcome\n<br/><br/>\nNote that the risk difference will be computed as the proportion in group 1 minus the proportion in group 2.\n<br/><br/>\n<b>Confidence Level:</b> Specify the desired level of the confidence interval\n<br/><br/>\n<b>Confidence Interval Method:</b> Specify the type of confidence interval to use. Newcombe (newcombe) proposed a confidence interval based on the wilson score method for the\nsingle proportion. The confidence interval without continuity correction is implemented from equation 10 in Newcombe (1998). Miettinen-Nurminen (mn) provide a closed form \nequation for the restricted maximum likelihood estimate . The implementation is based on code provided by Yongyi Min on https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html.\nAgresti-Caffo (ac) confidence interval is based on the Wald confidence interval, adding 1 success to each cell of the 2 x 2 table (see Agresti and Caffo 2000).\n<br/><br/>\n<b>Required R Packages:</b> presize\n\t\t\t"
+    }
+}

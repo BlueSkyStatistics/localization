@@ -1,0 +1,32 @@
+{
+    "title": "Automated ARIMA",
+    "navigation": "Automated ARIMA",
+    "destination": "Variable to predict",
+    "firstObservation": "Time of first observation e.g.1: enter 1961,1 for January 1961 e.g.2: enter 1961,3 for 3nd  Quarter of 1961, e.g.3: enter 1 for a continuous series",
+    "frequency": "Number of observations per unit of time e.g.1: enter 12 for one observation for each month of a year, e.g. 2: enter 4 for one observation per quarter, e.g. 3: enter 1 for a  continuous series.",
+    "criteria": "Model criteria",
+    "label1": "Plots",
+    "plotSeries": "Plot series",
+    "yaxisLabel": "Y axis label",
+    "mainTitle": "Main title",
+    "label2": "Options for fitted values",
+    "saveFitted": "Save fitted values",
+    "fittedValsDatasetName": "Specify dataset name to store fitted values",
+    "oriVsFitted": "Plot original vs. Fitted",
+    "plotResiduals": "Plot residuals",
+    "label3": "Predict using the model",
+    "predict": "Make predictions using model",
+    "periodToPredict": "Specify the number of intervals to predict",
+    "confInterval": "Specify the confidence interval in percents e.g. 95 for 95%",
+    "savePredictedVals": "Save predicted values",
+    "predictedValsDatasetName": "Specify dataset name to store predicted values",
+    "plotPredicted": "Plot predicted values",
+    "correlogram": "Generate correlogram",
+    "maxlag": "Enter max lag",
+    "Boxtest": " Ljung-Box test ",
+    "help": {
+        "title": "Automated ARIMA",
+        "r_help": "help(auto.arima, package=forecast)",
+        "body": "\n            <b>Description</b></br>\nReturns best ARIMA model according to either AIC, AICc or BIC value. The function conducts a search over possible model within the order constraints provided. Internally calls auto.arima in the forecast package\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: selected variables to build an automatic arima model for.\n</li>\n<li>\nstart: Time of first observation should be entered in the format year,month or year,quarter e.g.( if your data is organized in months the 1992,1 for Jan 1992 or if your data is organized in quarters then 1992,1 refers to the first quarter of 1992.\n</li>\n<li>\nfrequency: Number of observations in unit time. Example: for monthly there are 12 observation in a year. For quarterly there are 4 observation in a year.\n</li>\n<li>\nic: Information criterion to be used in model selection. It must be one of \"aic\", \"aicc\" or \"bic\"\n</li>\n<li>\nplotSeries: if TRUE a  time series plot will also be generated.\n</li>\n<li>\nplotResiduals: if TRUE residuals will also be plotted.\n</li>\n<li>\npredict: if TRUE predicted values  will also be generated.\n</li>\n<li>\nsavePredictedVals: predicted values will be saved.\n</li>\n<li>\nPlotPredictedValues: predicted values will also be plotted.\n</li>\n<li>\ncorrelogram: if TRUE a correlogram will be generated.\n</li>\n<li>\nmain: main title of the plot\n</li>\n<li>\nylab: title for the y axis\n</li>\n<li>\ndataset: the name of the dataset from which the vars have been picked.\n</li>\n</ul>\n<b>Details</b></br>\nThe default arguments are designed for rapid estimation of models for many time series. If you are analysing just one time series, and can afford to take some more time, it is recommended that you set stepwise=FALSE and approximation=FALSE.</br>\nNon-stepwise selection can be slow, especially for seasonal data. The stepwise algorithm outlined in Hyndman & Khandakar (2008) is used except that the default method for selecting seasonal differences is now based on an estimate of seasonal strength (Wang, Smith & Hyndman, 2006) rather than the Canova-Hansen test. There are also some other minor variations to the algorithm described in Hyndman and Khandakar (2008).</br>\n<b>Value</b><br/>\nA list of class \"Arima\" with components:<br/>\ncoef: a vector of AR, MA and regression coefficients, which can be extracted by the coef method.<br/>\nsigma2: the MLE of the innovations variance.<br/>\nvar.coef: the estimated variance matrix of the coefficients coef, which can be extracted by the vcov method.<br/>\nloglik: the maximized log-likelihood (of the differenced data), or the approximation to it used.<br/>\narma: A compact form of the specification, as a vector giving the number of AR, MA, seasonal AR and seasonal MA coefficients, plus the period and the number of non-seasonal and seasonal differences.<br/>\naic: the AIC value corresponding to the log-likelihood. Only valid for method = \"ML\" fits.<br/>\nresiduals: the fitted innovations.<br/>\nseries: the name of the series x.<br/>\ncode: the convergence value returned by optim.<br/>\nn.cond\t:the number of initial observations not used in the fitting.<br/>\nnobs: the number of “used” observations for the fitting, can also be extracted via nobs() and is used by BIC.<br/>\nmodel: A list representing the Kalman Filter used in the fitting. See KalmanLike.<br/>\n<b>Package</b></br>\nforecast</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(auto.arima, package=forecast)\n\t\t\t"
+    }
+}

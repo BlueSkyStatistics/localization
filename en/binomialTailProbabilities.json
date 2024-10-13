@@ -1,0 +1,15 @@
+{
+    "title": "Binomial Tail Probabilities",
+    "navigation": "Binomial Tail Probabilities",
+    "varvals": "Enter variable valie(s) separated by a comma. Example: 3,0.5",
+    "size": "Binomial trials",
+    "prob": "Probabilities of success",
+    "labelSig": "Significance level",
+    "lowtail": "Lower tail",
+    "uptail": "Upper tail",
+    "help": {
+        "title": "Binomial Tail Probabilities",
+        "r_help": "help(pbinom, package=stats)",
+        "body": "\n            <b>Description</b>\n            <br/>\nDensity, distribution function, quantile function and random generation for the binomial distribution with parameters size and prob.\n<br/>\nThis is conventionally interpreted as the number of ‘successes’ in size trials.\n<br/>\n<b>Usage</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>Arguments</b>\n<br/>\n<ul>\n    <li>x, q : vector of quantiles.</li>\n    \n    \n    <li>p : vector of probabilities.</li>\n    \n    \n    <li>n : number of observations. If length(n) > 1, the length is taken to be the number required.</li>\n    \n    \n    <li>size : number of trials (zero or more).</li>\n    \n    \n    <li>prob : probability of success on each trial.</li>\n    \n    \n    <li>log, log.p : logical; if TRUE, probabilities p are given as log(p).</li>\n    \n    \n    <li>lower.tail : logical; if TRUE (default), probabilities are P[X ≤ x], otherwise, P[X > x].</li>\n</ul>\n\n\n\n<br/>\n<b>Details</b>\n<br/>\nThe binomial distribution with size = n and prob = p has density\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\nfor x = 0, …, n. Note that binomial coefficients can be computed by choose in R.\n<br/>\nIf an element of x is not integer, the result of dbinom is zero, with a warning.\n<br/>\np(x) is computed using Loader's algorithm, see the reference below.\n<br/>\nThe quantile is defined as the smallest value x such that F(x) ≥ p, where F is the distribution function.\n<br/>\n<br/><b>Value</b>\n<br/>\ndbinom gives the density, pbinom gives the distribution function, qbinom gives the quantile function and rbinom generates random deviates.\n<br/>\nIf size is not an integer, NaN is returned.\n<br/>\nThe length of the result is determined by n for rbinom, and is the maximum of the lengths of the numerical arguments for the other functions.\n<br/>\nThe numerical arguments other than n are recycled to the length of the result. Only the first elements of the logical arguments are used.\n   "
+    }
+}

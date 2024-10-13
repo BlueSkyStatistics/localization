@@ -1,0 +1,19 @@
+{
+    "title": "Stack Datasets",
+    "navigation": "Stack",
+    "out": "Enter the name of the stacked dataset",
+    "in1": "Select 2 or more datasets",
+    "in2": "Select the 2nd dataset",
+    "label1": "Stack Options",
+    "label2": "All the options below require 2 datasets with exactly the same variable names",
+    "bindrows": "Bind Rows (stack datasets as is, may result in duplicate rows)",
+    "union": "Union (Stack datasets and remove exact duplicates)",
+    "intersect": "Intersect (Keep rows common to both datasets)",
+    "setdiff": "Difference (Keep only rows in 1st dataset but not in 2nd)",
+    "id": "If you would like to track which data set each observation came from, specify a name for that variable here. NOTE: The new variable gets appended to the beginning of the resulting dataset.",
+    "help": {
+        "title": "Stack Datasets",
+        "r_help": "help(bind_rows, package=dplyr)",
+        "body": "\n            <b>Description</b></br>\nThis dialog will help you stack 2 or more datasets on top of each other. You can select one of the following options.<br/>\n1. Bind Rows:  Stacks the 2 or more datasets exactly as they are. If a variable name is common to both datasets, values will fill in as you expect. If a dataset A contains a variable say var1 that is not present in the other dataset B, NA's will appear in variable var1 for all rows that correspond to dataset B.<br/>\nAll options below operate on ONLY 2 datasets and require that both datasets share the same variables.<br/>\n2. Union: stacks the datasets and removes duplicates<br/>\n3. Intersect: keeps rows common to both<br/>\n4. Difference: Keeps rows in 1st dataset, not in 2nd<br/>\nDepending on the option selected, the functions bind_rows, union, intersect and setdiff in the package dplyr are called.\nNOTE: you can optionally track which dataset the original observation came from. The dataset ID (1st/2nd) is appended to the beginning of the dataset that contains the results.<br/>\n<b>Package</b></br>\ndplyr</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(bind_rows, package=\"dplyr\") in the R syntax window\n            "
+    }
+}

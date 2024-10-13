@@ -1,0 +1,19 @@
+{
+    "title": "Sample Size, Test Two Proportions",
+    "navigation": "Two Proportions",
+    "howtouse": "To compute sample size: specify both group proportions and power\nTo compute power: specify both group proportions and sample size\nTo compute detectable proportion difference: specify sample size, power, and group 2 proportion",
+    "n": "Sample Size",
+    "power": "Power (0-1)",
+    "propgrp1": "Group 1 Proportion",
+    "propgrp2": "Group 2 Proportion",
+    "ratio": "Group 1 vs Group 2 Sample Size Ratio",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "help": {
+        "title": "Sample Size, Test Two Proportions",
+        "r_help": "help(epi.sscohortc, package ='epiR')",
+        "body": "\nThis is an assessment of sample size for a two-sample test of proportions.  It computes the sample size, power, or effect size (difference in proportions, rate ratio, odds ratio) when the user \nspecifies the other two.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Group 1 Proportion:</b> Specify the proportion in group 1\n<br/><br/>\n<b>Group 2 Proportion:</b> Specify the proportion in group 2\n<br/><br/>\n<b>Group 1 vs Group 2 Sample Size Ratio:</b> Specify the desired ratio of the sample sizes (group 1 N divided by group 2 N). A ratio of 1 means equal sample sizes.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Required R Packages:</b> epiR\n\t\t\t"
+    }
+}

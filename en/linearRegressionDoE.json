@@ -1,0 +1,30 @@
+{
+    "title": "Design of Experiments analysis with Linear Model",
+    "navigation": "Design Analysis - Linear Model",
+    "modelname": "Enter Model Name",
+    "dependent": "Response (dependent) variable",
+    "independent": "Independent variable(s)",
+    "nointercept": "Ignore intercept (if checked, then do not check the specific options below for the 2-level Factor Design)",
+    "degree": "Degree (leave it blank or type 2 for the linear model with main effects and 2-factor interactions)",
+    "effectsplot": "All effects plot (generated only when Degree is not specified)",
+    "generateplotchk": "Plot residuals vs fitted, normal Q-Q , scale-location and residuals vs leverage",
+    "weights": "Specify a variable with weights",
+    "twoLevelDesignTypeChk": "The following options are only applicable for a 2-level Factor Design (e.g. pb, FrF2, ..) - also do not check this if Ignore intercept option is checked above",
+    "AliasChk": "Determine aliases",
+    "AliasCodedChk": "Coded aliases",
+    "DanielplotChk": "Daniel Plot (plot of effects)",
+    "DanielplotCodeChk": "Coded label",
+    "DanielplotHalfChk": "Half Normal",
+    "DanielplotAlpha": "Alpha (significance level for labelling)",
+    "MEPlotChk": "MEPlot(main effects plots)",
+    "IAPlotChk": "IAPlot(interaction plots)",
+    "IAPlotShowAliasChk": "Show aliases in the plot",
+    "cubePlotChk": "Cube plot of three factor interactions with modeled means",
+    "cubePlotModelMeanChk": "Plot both modeled means and non-modeled means",
+    "cubePlotIndependent": "Select three independent variable(s) for the cube plot",
+    "help": {
+        "title": "Design of Experiments analysis with Linear Model",
+        "r_help": "help(lm, package = 'stats')",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tBuilds a linear regression model for the design to analyze the response (i.e. the results recorded/collected from the experiments). Internally calls function lm in stats package. Displays a summary of the model, coefficient table, Anova table and sum of squares table and plots the following  residuals vs. fitted, normal Q-Q, theoretical quantiles, residuals vs. leverage. You can optionally specify a variable with weights and choose to ignore the intercept.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor more details, see R help for the following\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Usage</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#Summarizing the model<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Displaying the Anova table<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#Plots residuals vs. fitted, normal Q-Q, scale-location, residuals vs. leverage<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+    }
+}

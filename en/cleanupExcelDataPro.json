@@ -1,0 +1,30 @@
+{
+    "title": "Cleanup Excel or CSV data - adjust, delete rows and columns",
+    "navigation": "Excel Cleanup",
+    "resultDatasetName": "Name of the new dataset to be created",
+    "listofRowNumbersRemove": "(Optional) List of row numbers (comma separated e.g. 1,4,5,20:30) to be removed",
+    "listofColumnNumbersRemove": "(Optional) List of column numbers (comma separated e.g. 1,2,6:10) to be removed",
+    "chooseColumnNamesRad": "Specify column names from dataset",
+    "rowNumbersContaingColNames": "Enter row numbers (comma separated e.g. 3,4) to be used for column names for the output dataset",
+    "deleteRowNumbersContaingColNamesChk": "Delete the rows containing column names for the output dataset",
+    "combineWithExsitingColNamesChk": "Column names created, combine them with existing column header names",
+    "specifyColumnNamesRad": "Specify column names manually for the output dataset",
+    "outputColumnNames": "Enter column names (comma separated) to be used for the output dataset",
+    "removeColsWithConstantChk": "Remove all columns with constant values (case insensitive)",
+    "removeColsWithNoDataChk": "Remove all empty columns",
+    "removeRowsWithNoDataChk": "Remove all empty rows",
+    "removeRowsWithNAsChk": "Keep only complete cases i.e. remove the entire row if any empty or NA value",
+    "label1": "Converting column types in the output dataset",
+    "convertColumnDataTypeAuto": "Determine column data type automatically and convert",
+    "convertColumnDataTypeNone": "Do nothing",
+    "convertColumnDataTypeFactorToCharInt": "Convert all factor columns to character and integer type",
+    "convertColumnDataTypeCharToFactor": "Convert all character columns to factors",
+    "convertColumnDataTypeAllToFactor": "Convert all columns to factors",
+    "convertColumnDataTypeManual": "Type in the data type for each column to convert",
+    "outputColumnTypes": "List of column types (comma separated e.g. numeric, factor, character, ..)",
+    "help": {
+        "title": "Cleanup Excel or CSV data - adjust, delete rows and columns",
+        "r_help": "",
+        "body": "\n            <b>Description</b></br>\n            This dialog is used to clean up a complex Excel sheet to add and remove rows and columns to create a new dataset\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tTo try this, you may use the sample dataset file called Excel cleanup.xlsx\n\t\t\t<br/>\n\t\t\tOpen the file in the data grid with the file open menu\n\t\t\t<br/>\n\t\t\tIn the dialog - type\n\t\t\t<br/>\n\t\t\tSampleGp for the new dataset name\n\t\t\t<br/>\n\t\t\t1:3 for list of row numbers to be removed\n\t\t\t<br/>\n\t\t\t1,2,5:8 for list of column numbers to be removed\n\t\t\t<br/>\n\t\t\tSelect the option - Specify column names from the datasets\n\t\t\t<br/>\n\t\t\t2,3 for Enter row numbers  \n\t\t\t<br/>\n\t\t\t<br/>\n"
+    }
+}

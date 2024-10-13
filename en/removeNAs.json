@@ -1,0 +1,16 @@
+{
+    "title": "Remove NAs",
+    "navigation": "Remove NAs",
+    "label0": "Creates new/Overwrites existing dataset by removing rows with one or more missing values. Select the variables to be analyzed for missing values. All rows containing missing values in variables selected will be removed. To analyze the entire dataset, select all variables.",
+    "label1": "Options",
+    "New": "Save results to a new dataset",
+    "newdatasetname": "Enter a dataset name",
+    "Existing": "Overwrite existing dataset",
+    "subsetvars": "Select variables (one or more) to include in the dataset",
+    "subsetexpression": "Enter subsetting criteria. Subsetting criteria is applied against each dataset row. Example 1: !is.na(var1) & is.na(var2). Example 2: var1>30 & var2=='male'. Example 3: (var1 !=10 & var2>20) | var3==40. Example 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". Example 5: substr(var1,2,4) ==\"abc\"",
+    "help": {
+        "title": "Remove NAs",
+        "r_help": "help(na.omit, package=data.table)",
+        "body": "\n<b>Description</b></br>\nRemove missing values/NA from dataset/dataframe\nCreates new/Overwrites existing dataset by removing rows with one or more missing values for the columns/variable names selected\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n​object: an R object.​\n</li>\n</ul>\n<b>Package</b></br>\ndata.table</br>\n<b>Help</b></br>\nhelp(na.omit)\n    "
+    }
+}

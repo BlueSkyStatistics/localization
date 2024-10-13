@@ -1,0 +1,20 @@
+{
+    "title": "Sample Size, Test Two Means",
+    "navigation": "Two Means",
+    "howtouse": "To compute sample size: specify both group means and power\nTo compute power: specify both group means and sample size\nTo compute detectable mean difference: specify sample size and power",
+    "n": "Sample Size",
+    "power": "Power (0-1)",
+    "meangrp1": "Treatment Group Mean",
+    "meangrp2": "Control Group Mean",
+    "ratio": "Treatment vs Control Sample Size Ratio",
+    "sd": "Standard Deviation",
+    "siglevel": "Significance Level (0-1)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "help": {
+        "title": "Sample Size, Test Two Means",
+        "r_help": "help(epi.sscompc, package ='epiR')",
+        "body": "\nThis is an assessment of sample size for a two-sample t-test of means.  It computes the sample size, power, or mean difference (delta) when the user \nspecifies the other two.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true.\n<br/><br/>\n<b>Treatment Group Mean:</b> Specify the mean for the treatment group\n<br/><br/>\n<b>Control Group Mean:</b> Specify the mean for the control group\n<br/><br/>\n<b>Treatment vs Control Sample Size Ratio:</b> Specify the desired ratio of the sample sizes (treatment N divided by control N). A ratio of 1 means equal sample sizes.\n<br/><br/>\n<b>Standard Deviation:</b> Estimate of the pooled standard deviation of the groups\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Required R Packages:</b> epiR\n\t\t\t"
+    }
+}

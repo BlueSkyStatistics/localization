@@ -1,0 +1,15 @@
+{
+    "title": "Set Contrasts For Factor variables",
+    "navigation": "Set Contrasts",
+    "target": "Destination",
+    "label1": "Contrasts",
+    "Dummy": "Treatment (dummy) contrasts",
+    "Deviation": "Sum (deviation) contrasts",
+    "Helmert": "Helmert contrasts",
+    "Poly": "Polynomial contrasts",
+    "help": {
+        "title": "Set Contrasts",
+        "r_help": "help(contrasts, package ='stats')",
+        "body": "\n            <b>Description</b></br>\n            ​Set and view the contrasts associated with a factor.\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x: an R object.​\n            </li>\n            <li>\n            value: either a numeric matrix (or a sparse or dense matrix of a class extending dMatrix from package Matrix) whose columns give coefficients for contrasts in the levels of x, or the (quoted) name of a function which computes such matrices e.g. “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>Package</b></br>\n            stats</br>\n            <b>Help</b></br>\n            help(contrasts, package ='stats')       \n            "
+    }
+}

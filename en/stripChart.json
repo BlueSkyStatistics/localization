@@ -1,0 +1,24 @@
+{
+    "title": "Strip Chart",
+    "navigation": "Strip Chart",
+    "x": "X variable, specify a numeric variable",
+    "y": "Y variable, specify a numeric variable(s)",
+    "Fill": "Color, specify a factor variable",
+    "size": "Make the size of the point proportional to",
+    "shape": "Shape",
+    "alpha": "Opacity (0-1)",
+    "flipaxis": "Flip axis",
+    "jitter": "Apply jitter effect",
+    "specify_a_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Strip Chart",
+        "r_help": "help(geom_point, package=ggplot2)",
+        "body": "\n            <b>Description</b></br>\n            A strip chart is the most basic type of plot available. It plots the data in order along a line with each data point represented as a box.  The shape of the point is dependent on the levels of the factor variable (x). Points can be optionally grouped by a factor variable (y). Facets can be optionally created by specifying a factor variable.</br>\n            You can also optionally specify themes, and specify a title and labels for the x and y axis</br>\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset​\n            </li>\n            <li>\n            aes(): Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.​\n            </li>\n            <li>\n            x: the  grouping variable. The shape of the point is dependent on the levels of the factor variable​\n            </li>\n            <li>\n            y: the variable for which points are plotted​\n            </li>\n            <li>\n            color: an optional factor variable to group points (by color)​\n            </li>\n            <li>\n            Labs(): Change axis labels and legend titles(This is optional)​\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)​\n            </li>\n            <li>\n            theme_calc(): Specifies the calculator theme(This is optional)​\n            </li>\n            <li>\n            geom_jitter():The jitter geom is a convenient default for geom_point with position = 'jitter'. See position_jitter to see how to adjust amount of jittering.\n            </li>\n            <li>\n            coord_flip(): Flip axis(This is optional)​\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Help</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+    }
+}

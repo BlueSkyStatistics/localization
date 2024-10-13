@@ -1,0 +1,18 @@
+{
+    "title": "Standardize Variable(s)",
+    "navigation": "Standardize",
+    "label1": "Standardized values will be saved to new variables with the prefix/suffix specified.",
+    "dest": "Select the variable(s) to standardize",
+    "label2": "Select a prefix or suffix",
+    "suffix": "Suffix",
+    "prefix": "Prefix",
+    "txt1": "Enter a prefix/suffix",
+    "label3": "Center and/or scale",
+    "Center": "Center",
+    "Scale": "Scale",
+    "help": {
+        "title": "Standardize Variable(s)",
+        "r_help": "",
+        "body": "\n<b>Description</b></br>\nStandardizes variables (z scores).  The standardized values are stored in new variables with either the prefix or suffix of the original variables. The option is provide to center and/or scale.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: One or more variables to standardize. Only numeric variables (not factors) supported.\n</li>\n<li>\ncenter:  If center is TRUE then centering is done by subtracting the column means (omitting NAs) of x from their corresponding columns, and if center is FALSE, no centering is done.\n</li>\n<li>\nscale: If scale is TRUE then scaling is done by dividing the (centered) columns of x by their standard deviations if center is TRUE, and the root mean square otherwise. If scale is FALSE, no scaling is done.\n</li>\n<li>\nstingToPrefixOrSuffix:  A character string that specifies the prefixor suffix  to use for the new standardized variables( i.e. new columns in the dataset).\n</li>\n<li>\nprefixOrSuffix: specify if you want a prefix or a suffix\n</li>\n<li>\ndatasetname: The dataset/dataframe name\n</li>\n</ul>\nNote: We will not convert from numeric to factor. When  a numeric is recoded, it will remain a numeric, when a factor variable is recoded it will remain a factor.</br>\n<b>Package</b></br>\nBlueSky</br>\n"
+    }
+}

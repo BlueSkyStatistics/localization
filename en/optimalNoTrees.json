@@ -1,0 +1,16 @@
+{
+    "title": "Optimal No of Trees",
+    "navigation": "Optimize",
+    "dependentvar": "Dependent variable",
+    "independentvars": "Independent variable(s)",
+    "label1": "Tree simulating settings",
+    "startval": "Start value",
+    "endval": "End value",
+    "stepval": "Step value",
+    "mtry": "mtry",
+    "help": {
+        "title": "Optimal No of Trees",
+        "r_help": "help(randomForest,package='randomForest')",
+        "body": "\n                <b>Description</b></br>\nStarting with the default value of mtry, search for the optimal value (with respect to Out-of-Bag error estimate) of ntree (no of trees to grow) for randomForest. The function BSkyMultiRandomForest calls the function randomForest with the arguments defined below\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : a data frame or a matrix of predictors, or a formula describing the model to be fitted (for the print method, an randomForest object).\n</li>\n<li>\ny :  A response vector. If a factor, classification is assumed, otherwise regression is assumed. If omitted, randomForest will run in unsupervised mode.\n</li>\n<li>\nstartval : starting value for ntree argument in randomForest().\n</li>\n<li>\nendval : ending value for ntree argument in randomForest().\n</li>\n<li>\nstepval : count by which startval should be incremented in every iteration till it reaches endval value.\n</li>\n<li>\nmtry : Number of variables randomly sampled as candidates at each split. Note that the default values are different for classification (sqrt(p) where p is number of variables in x) and regression (p/3)\n</li>\n</ul>\n<b>Value</b><br/>\nPrints the optimal number of trees. Also displays a table with ntree and the corresponding Out-of-Bag error<br/>\n<b>Package</b></br>\nrandomForest​;BlueSky</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(randomForest,package='randomForest')\n                "
+    }
+}

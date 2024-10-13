@@ -1,0 +1,30 @@
+{
+    "title": "Descriptives",
+    "ChkboxShowOnlyTopFewFactors": "Show counts for only top N factor levels",
+    "txtNumTopFactorsToShow": "Enter a value for N",
+    "skew": "Skewness",
+    "mad": "Median absolute deviation",
+    "kurtos": "Kurtosis",
+    "label2": "Note: When the checkbox is un-checked counts for ALL levels will be displayed. This may take a considerable amount of time if you have many factor levels",
+    "navigation": "Descriptives",
+    "tvarbox1": "Selected variables",
+    "tvarbox2": "Group by",
+    "min": "Min",
+    "max": "Max",
+    "mean": "Mean",
+    "median": "Median",
+    "sum": "Sum",
+    "sd": "Standard deviation",
+    "stderror": "Std error of mean",
+    "iqr": "Inter quartile range",
+    "quantiles": "Quantiles",
+    "probs": "Specify quantiles (if quartile is selected)",
+    "addIsstatnames": "Additonal statistical function names comma separated, for e.g. var)",
+    "label1": "Options for numeric variables",
+    "label3": "Options for factor variables",
+    "help": {
+        "title": "Descriptives",
+        "r_help": "",
+        "body": "\n<b>Description</b></br>\nOutputs the  following descriptive statistics:</br>\nmin, max, mean, median, sum, sd, stderror, iqr,  Quantiles. If Quantiles is selected, you can specify the comma separated quantiles needed.</br>\nIn addition to these, the user can pass, a list of comma separated statistical function names for example var.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), long_table=FALSE, datasetName=\"name of dataset\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: selected scale variables (say Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: one or more factor variables to group by (say  Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: List of functions. The ones set to TRUE will be executed. (say min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilities of the quantiles\n</li>\n<li>\nadditionalStats: Addition statistical function that user can pass (say var)\n</li>\n<li>\ndatasetName: Name of the dataset from which datasetColumnObjects and groupByColumnObjects are chosen\n</li>\n<li>\nlong_table: Long table option is introduced to accommodate analysis done on a large number of variables. Choosing the long format controls the width of the output table making it easy to view results withing having to scroll right on the output window. \n</li>\n</ul>\n<b>Value</b></br>\nAn object of class \"data.frame\", giving the results for each function on each variable.</br>\n<b>Examples</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Package</b></br>\nBlueSky</br>\n<b>Help</b></br>\nR Help is not available because in we have written custom code using  multiple  R functions. If you need to inspect the code click the \"<>\" button.</br>\n    "
+    }
+}

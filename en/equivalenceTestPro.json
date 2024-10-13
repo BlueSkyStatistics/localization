@@ -1,0 +1,27 @@
+{
+    "title": "Equivalence Test",
+    "navigation": "Equivalence Test",
+    "variableSelcted1": "Select the first variable",
+    "label1": "To compare two variables either choose a grouping variable (two levels only) or a second (independent or paired) variable",
+    "variableSelcted2": "Select a second variable",
+    "label2": "How to treat the second variable if selected",
+    "groupingNeededRad": "The second variable selected is a grouping variable",
+    "referenceGpValue": "Type in the group value to be used as reference",
+    "pairedTestRad": "Perform Paired Test - the second variables selected is paired",
+    "noneRad": "None of the above",
+    "targetMean": "Target (mean) - not applicable for Two-Sample",
+    "lower": "Lower limit - numeric value of lower equivalence bound",
+    "upper": "Upper limit - numeric value of upper equivalence bound",
+    "smdChk": "Equivalence bounds specified in SMD (Standardized Mean Difference)",
+    "label3": "Type of test",
+    "EQUtestRad": "Perform equivalence test",
+    "METtestRad": "Perform minimal effects test (MET)",
+    "alpha": "alpha level (default = 0.05)",
+    "HedgesCorrectionChk": "Compute Hedges correction automatically (otherwise shows Cohen's d)",
+    "plotChk": "Consonance plot (this may take a while to display the plot)",
+    "help": {
+        "title": "Equivalence Test",
+        "r_help": "help(t_TOST, package = TOSTER)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to perform Equivalence test or minimal effects test (MET)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(t_TOST, package = TOSTER)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called iris with Load Dataset menu by selecting iris dataset from the second dropdown (type quickly iris)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSelect Sepal.Length as the first variable and (optionally) choose Sepal.Width as the second variable, and select Paired test\n\t\t\t\t<br/>\n\t\t\t\ttype 5.5 as the lower bound and 8.5 as the upper bound for the Equivalence margin, click run \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the tutorial at https://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

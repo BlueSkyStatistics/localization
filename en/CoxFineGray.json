@@ -1,0 +1,20 @@
+{
+    "title": "Cox, Fine-Gray",
+    "navigation": "Cox, Fine-Gray",
+    "modelname": "Enter model name",
+    "timevar": "Time to event or censor",
+    "eventvar": "Events (0 = censor, 1 = event 1, 2 = event 2, ...)",
+    "eventcodelabel": "Event Code",
+    "modelterms": "Model expression builder for independent variables",
+    "stratavarslabel": "Stratification Variables (optional)",
+    "weightvar": "Weights (optional)",
+    "tiemethod": "Tied Time Method",
+    "diagnosticsbox": "Model Diagnostics",
+    "martminlabel": "Null Model Martingale Residual Axis Minimum Value (-Inf to 1)",
+    "anovachkboxlabel": "Analysis of Deviance (Type II)",
+    "help": {
+        "title": "Cox, Fine-Gray",
+        "r_help": "help(coxph, package = 'survival')",
+        "body": "\nFits a Fine-Gray Cox proportional hazards model for time-to-event data with censored observations when competing risks are present.  Fine-Gray models model the effect of \ncovariates on the cumulative incidence function.  An alternative is to model the effect of covariates on the cause-specific hazard, for which standard Cox regression models \ncan be used.  An introduction to the topic of competing risks can be found in \"Introduction to the Analysis of Survival Data in the Presence of Competing Risks\" by Peter Austin, \net. al., Circulation, 2016; 133:601-609. \n<br/><br/>\nModel fitting statistics, parameter estimates, and hazard ratios are provided.  Options available include the tied time method and model diagnostics.  The model is fit using the \nfinegray and coxph functions in the survival package.\n<br/><br/>\n<b>Enter model name:</b> Specify the name of the model where the results will be stored.\n<br/><br/>\n<b>Time to event or censor:</b> Time to the first event for those experiencing an event or time to last follow-up for those not experiencing any event\n<br/><br/>\n<b>Events (0 = censor, 1 = event 1, 2 = event 2, ...):</b> Numerical event indicator; 0=censor, 1=event 1, 2=event 2, etc.\n<br/><br/>\n<b>Event Code:</b> Select the event of interest you want to model.  Can either be selected or typed in.\n<br/><br/>\n<b>Formula Builder:</b> Construct terms to include in the model.  Factors, strings, and logical variables will be dummy coded.  The provided buttons allow you to specify main \neffects, full factorial effects (main effects and all interactions with the involved variables), polynomials, specific interactions, and delete terms from the list.  Interactions \nwith stratification variables is allowed.\n<br/><br/>\n<b>Stratification Variables:</b> Specify one or more stratification variables.  These can be numeric, factor, ordered factor, or character variables.  The strata divide the \nsubjects into separate groups whereby each group has a distinct baseline hazard function.  If multiple stratification variables are given, a separate baseline hazard function is \nused for every combination of stratification variable levels.\n<br/><br/>\n<b>Weights:</b> Numeric variable for observation weights. Useful in situations where each record should not be counted as one observation. \n<br/><br/>\n<b>Tied Time Method:</b> Method of breaking tied observed times.  Efron is usually the better choice when there aren't many tied times.\n<br/><br/>\n<b>Model Diagnostics:</b> If selected, an assessment of proportional hazards and functional form of covariates will be assessed, including relevant plots. \nIf there are stratification variables or non-numeric predictors, functional form plots will not be produced. \nThe <b>Null Model Martingale Residual Axis Minimum Value</b> might need to be changed in order to see all Martingale residuals.\n<br/><br/>\n<b>Analysis of Deviance (Type II):</b> If selected, whole variable tests (including multi-degree of freedom tests for multi-category covariates) will be provided.  Wald tests \nare used.\n<br/><br/>\n<b>Required R packages:</b> survival, broom, survminer, car, dplyr\n<br/><br/>\nClick the R Help button to get detailed R help about the coxph function.  Go to Help-> R Function Help to get more information about the finegray function, which creates the \nneeded dataset.\n"
+    }
+}

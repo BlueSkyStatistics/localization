@@ -1,0 +1,11 @@
+{
+    "title": "Numerical Statistics, using describe",
+    "navigation": "Numerical Summaries, using describe (Legacy)",
+    "tvarbox1": "Select variables",
+    "tvarbox2": "Select grouping variables",
+    "help": {
+        "title": "Numerical Statistics, using describe",
+        "r_help": "help(describe, package=psych)",
+        "body": "\n<b>Description</b></br>\nOutputs the  following numerical statistics:</br>\ncount, mean, standard deviation, median, trimmed, mad, min, max, range, skew,  kurtosis, standard error\n<br/>\n<b>Usage</b>\n<br/>\n<code> \n#BSkyFormat displays nicely formatted output<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: A dataframe or matrix\n</li>\n</ul>\n<b>Package</b></br>\npsych</br>\n<b>Help</b></br>\nhelp(describe, package=psych)\n"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "Reorder Factor Levels by Occurrence",
+    "navigation": "Reorder by Occurrence",
+    "target": "Factor variables to re-order levels",
+    "label1": "Select the factor variables to reorder by occurrence of data in the variable. You can overwrite existing variables or create new variables by specifying a prefix/suffix. New variables will be created with the prefix/suffix appended to existing names.",
+    "label2": "Save new levels to new variable(s) or overwrite existing variable(s)",
+    "rd3": "Specify a suffix (A new variable will be created with the suffix) ",
+    "txt3": "Enter a suffix",
+    "rd2": "Specify a prefix (A new variable will be created with the prefix) ",
+    "txt4": "Enter a prefix",
+    "rd1": "Overwrite  existing variables",
+    "label3": "Specify an order",
+    "Descending": "In the order of occurrence",
+    "Ascending": "In the reverse order of occurrence",
+    "ordered": "Make an ordered factor (ordinal)",
+    "help": {
+        "title": "Remove NAs",
+        "r_help": "help(fct_inorder, package=forcats)",
+        "body": "\n<b>Description</b></br>\nReorder factors levels by first appearance (occurence). See reorder by count for ordering by count/frequency.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: A factor\n</li>\n<li>\nordered: A logical which determines the \"ordered\" status of the output factor. NA preserves the existing status of the factor.\n</li>\n</ul>\n<b>Examples</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+    }
+}

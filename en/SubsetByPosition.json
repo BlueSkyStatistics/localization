@@ -1,0 +1,27 @@
+{
+    "title": "Subset by Position",
+    "navigation": "Subset By Position",
+    "newdatasetlabel": "Specify New Dataset Name",
+    "sortbyvarslabel": "Variables to Sort By First (Ascending Order)",
+    "groupbyvarslabel": "Groups to Subset Within",
+    "subsettypelabel": "Subset Type",
+    "firstnlabel": "First N Rows",
+    "lastnlabel": "Last N Rows",
+    "lowestnlabel": "Rows with Lowest N Values for a Variable",
+    "highestnlabel": "Rows with Highest N Values for a Variable",
+    "firstproplabel": "First Proportion of Rows",
+    "lastproplabel": "Last Proportion of Rows",
+    "lowestproplabel": "Rows within Lowest Percentile for a Variable",
+    "highestproplabel": "Rows within Highest Percentile for a Variable",
+    "nlabel": "N (positive keeps, negative removes)",
+    "proplabel": "Proportion (positive keeps, negative removes)",
+    "varlabel": "Variable",
+    "tieslabel": "Include Tied Values",
+    "rownumlabel": "Specify Row Numbers",
+    "rownumboxlabel": "Numbers or ranges separated by commas (e.g. 1,3,5 or 20:30 or seq(2,10,by=2), positive keeps, negative removes)",
+    "help": {
+        "title": "Subset by Position",
+        "r_help": "help(slice, package ='dplyr')",
+        "body": "\nThis subsets a dataset according to row position.\n<br/><br/>\n<b>Specify New Dataset Name:</b> Dataset name where the subsetted data will be stored\n<br/><br/>\n<b>Variables to Sort By First:</b> Variables used to sort the rows before any subsetting is undertaken.  This only will affect options that select the number of rows, e.g. \nFirst/Last N Rows, First/Last Proportion of Rows, and Specify Row Numbers. It will always be in ascending order.\n<br/><br/>\n<b>Groups to Subset Within:</b> Specifying no variables will subset according to the row position of the entire dataset.  Specifying variables will subset according to the row position\nwithin groups defined by all combinations of values for the specified variables.\n<br/><br/>\n<b>Subset Type</b>\n<br/><br/>\n<b>First N Rows:</b> Keeps the first N rows of the dataset overall or within groups\n<br/><br/>\n<b>Last N Rows:</b> Keeps the last N rows of the dataset overall or within groups\n<br/><br/>\n<b>Rows with Lowest N Values for a Variable:</b> Keeps the rows that have the lowest ordered values for a specified variable overall or within groups. For example, specifying 10 would \nkeep the rows with the lowest 10 values for a variable.\n<br/><br/>\n<b>Rows with Highest N Values for a Variable:</b> Keeps the rows that have the highest ordered values for a specified variable overall or within groups. For example, specifying 10 would \nkeep the rows with the highest 10 values for a variable.\n<br/><br/>\n<b>First Proportion of Rows:</b> Keeps the rows in the top proportion of the dataset overall or within groups. For example, specifying .10 would keep the top 10% of the dataset \naccording to the total number of rows.\n<br/><br/> \n<b>Last Proportion of Rows:</b> Keeps the rows in the bottom proportion of the dataset overall or within groups. For example, specifying .10 would keep the bottom 10% of the dataset \naccording to the total number of rows.\n<br/><br/>\n<b>Rows within Lowest Percentile for a Variable:</b> Keeps the rows in the lowest percentile for a specified variable, overall or within groups. For example, specifying .10 would \nkeep the lowest 10th percentile for a variable (minimum to the 10th percentile).\n<br/><br/>\n<b>Rows within Highest Percentile for a Variable:</b> Keeps the rows in the highest percentile for a specified variable, overall or within groups. For example, specifying .10 would \nkeep the highest 10th percentile for a variable (90th percentile to the maximum).\n<br/><br/>\n<b>Specify Row Numbers:</b> Keeps the exact numbered rows specified. For example, specifying 1,3,5 would keep the first, third, and fifth rows. Specifying 20:30 would keep rows 20 \nto 30.  Specifying seq(2,10,by=2) would keep the even numbered rows up to the 10th row.\n<br/><br/>\n<b>Include Tied Values:</b> Specifies whether tied values should be included or not.  For example, if you want the rows for the lowest 10 values of a variable and the 10th lowest \nvalue appears more than once, including the tied values will keep all rows that equal the duplicated value. \n<br/><br/>\nNote that specifying negative values for N or the proportion removes the corresponding rows from the dataset.  For example, specifying -10 for the First N Rows would remove \nthe first 10 rows.  Specifying -.10 for the First Proportion of Rows, would remove the first 10% of the rows.\n<br/><br/>\n<b>R Packages Required:</b> dplyr\n\t\t\t"
+    }
+}

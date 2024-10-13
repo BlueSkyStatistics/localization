@@ -1,0 +1,16 @@
+{
+    "title": "Lag or Lead Variable",
+    "navigation": "Lag or Lead Variable",
+    "varnamelabel": "New Variable Name (no spaces)",
+    "lagleadvarlabel": "Variable to Lag / Lead",
+    "groupbyvarslabel": "Variables to Group By",
+    "typelabel": "Lag or Lead",
+    "laglabel": "Lag",
+    "leadlabel": "Lead",
+    "positionlabel": "Number of Positions",
+    "help": {
+        "title": "Lag or Lead Variable",
+        "r_help": "help(lag, package ='dplyr')",
+        "body": "\nThis creates a new variable that finds the previous (lag) or next (lead) value in an existing variable based on the row position.\n<br/><br/>\n<b>New Variable Name:</b> Variable name to store the lagged or leading values\n<br/><br/>\n<b>Variable to Lag / Lead:</b> Specify the existing variable to extract the lagged or leading values from\n<br/><br/>\n<b>Variables to Group By (optional):</b> Specify the variables to group by.  If variables are specified here, the lagged and lead \nvalues will be obtained only within groups defined by these variables.  If no variables are specified here, the lagged and leading values \nwill be obtained based on the entire column specified in Variable to Lag / Lead.  Typically, values should be sorted by the grouping variables \nprior to doing a lag or lead.\n<br/><br/>\n<b>Lag or Lead:</b> Choose whether you want to find the previous (lag) or next value (lead)\n<br/><br/>\n<b>Number of Positions:</b> Specify the number of positions to lag or lead by.  For example, a lagged value of 1 would extract the previous value and a lagged value of 2 would extract the value 2 positions previous.\n<br/><br/>\n<b>Required R Packages:</b> dplyr\n\t\t\t"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Recode Variables",
+    "navigation": "Recode",
+    "oldvars": "Variables to Recode",
+    "label1": "Options",
+    "newvarradio": "New Variable(s)",
+    "newvar": "Enter new variable names separated by , for e.g. newVar1, newVar2",
+    "oldvarradio": "Overwrite existing variable(s)",
+    "suffix": "Specify a suffix for recoded variables",
+    "prefix": "Specify a prefix for recoded variables",
+    "enterSuffix": "Enter a suffix",
+    "enterPrefix": "Enter a prefix",
+    "label3": "When specifying multiple recode criteria, use the ; as a separator.",
+    "label4": "NOTE: STRING VALUES MUST BE ENCLOSED IN DOUBLE QUOTES(\") AND NOT SINGLE QUOTE(').",
+    "label5": "Enter old values and new values separated by ; for e.g. \"Male\"=\"Man\";\"Fem\"=2;\"Houston, Texas\"=\"Texas\";Not Available\"=NA ",
+    "label5a": "For recoding numeric type enter 70=100;71=101;99=NA",
+    "label5b": "Range of values is supported, for e.g. 5:10=\"medium\" Special values lo and hi may appear in a range, for e.g. lo:10=\"low\";11:89=\"medium\";90:hi=\"High\"",
+    "label6": "The keyword else can be used for everything that does not fit a specification, for e.g. else =NA",
+    "dontMakeFactor": "By default, the recoded variable will be a factor if the source variable is a factor. To override check the checkbox",
+    "oldnewvals": "Enter recode criteria",
+    "help": {
+        "title": "Recode Variables",
+        "r_help": "help(recode, package=car)",
+        "body": "\n<b>Description</b></br>\nRecodes one or more a numeric vector, character vector, or factors according to  recode specifications. You can store the results by overwriting existing variables, specifying new variable names to store recoded values or choosing to store the recoded values in  new variables with a suitable prefix or suffix. the prefix or suffix will be applied to the existing variable name.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ncolNames: A character vector containing one or more variables in the dataset to recode\n</li>\n<li>\nnewColNames:  A character vector containing the names of the new columns.\n</li>\n<li>\nOldNewVals: A character string of recode specifications in the form oldval1,newval1, oldval2,newval2\n</li>\n<li>\nNewCol: A Boolean indicating whether recoded values are stored in new  variables (TRUE) or existing variables are overwritten(FALSE).\n</li>\n<li>\nprefixOrSuffix: Specify if you want to store the recoded values in new variables prefixed or suffixed with the name you specify.  Enter prefix or suffix.\n</li>\n<li>\nprefixOrSuffixString: Enter a string to use as a prefix or suffix to the existing variable name. Recoded values will be stored in these variables.\n</li>\n<li>\ndataSetNameOrIndex: The dataset/dataframe name\n</li>\n</ul>\nNote: We will not convert from numeric to factor. When  a numeric is recoded, it will remain a numeric, when a factor variable is recoded it will remain a factor.<br/>\n<b>Package</b></br>\ncar</br>\n<b>Help</b></br>\nType the line below in the BlueSky Statistics  R syntax editor</br>\nhelp(recode, package=car)\n"
+    }
+}

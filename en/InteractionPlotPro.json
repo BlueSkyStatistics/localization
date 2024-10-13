@@ -1,0 +1,16 @@
+{
+    "title": "Main Effect and Interaction Plot",
+    "navigation": "Main Effect and Interaction",
+    "response": "Response variable (specify a numeric variable to compute mean)",
+    "Fixed": "Specify one or more grouping (Category) variable(s)",
+    "mainEffectChk": "Plot main effect",
+    "interactionEffectChk": "Plot interaction effect",
+    "chartTitle": "Enter a title",
+    "onePlotChk": "All interactions in one plot (Uncheck for plotting each interaction separately)",
+    "noPlotsPerRow": "Number of interaction plots per row (when left blank, default: number of groups -1)",
+    "angleX_axis_text": "Angle to slant x-axis text labels for the interaction plot (when left blank, default: 25 degrees)",
+    "help": {
+        "title": "Interaction Plot",
+        "body": "\n\t\t\tMain effect plot to analyze effect of each categorical variables chosen on the mean of response variable\n\t\t\tInteraction Plot to analysze effect of interation of (pairwaise) two categorical variables on the mean of the response variable\n    "
+    }
+}

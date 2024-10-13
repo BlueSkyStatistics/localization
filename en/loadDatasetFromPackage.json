@@ -1,37 +1,13 @@
 {
-  "title": "Load a Dataset from a R Package",
-  "navigation": "Load Dataset",
-  "label1": "If the R Package is not available, go to Tools> Package> Install R Package from CRAN to install it.",
-  "label2": "If you don't see a dataset in the dropdown, the package selected does not contain the dataset.",
-  "selectAPackage": "Select a R package from which to load a dataset",
-  "selectADataset": "Select a dataset to load in the grid",
-  "help": {
     "title": "Load a Dataset from a R Package",
-    "r_help": "help(data,package='utils')",
-    "body": {
-      "descriptionTitle": "Description",
-      "descriptionText": "Loads the selected dataset in the BlueSky Statistics data grid. Uses the function data that loads specified data sets or lists the available data sets.",
-      "usageTitle": "Usage",
-      "usageCode1": "#Loads the dataset into memory",
-      "usageCode2": "data(..., package = NULL, overwrite = TRUE)",
-      "usageCode3": "#Loads the dataset into the BlueSky Statistics data grid",
-      "usageCode4": "BSkyLoadRefresh(\"dataset name\")",
-      "argumentsTitle": "Arguments",
-      "argumentsList": [
-        "...: literal character strings or names of the datasets to be loaded",
-        "package: a character vector giving the package(s) to look in for data sets, or NULL.",
-        "overwrite: logical: should existing objects of the same name in envir be replaced?"
-      ],
-      "detailsTitle": "Details",
-      "detailsText": "Loads the specified dataset into the data grid",
-      "valueTitle": "Value",
-      "valueText": "A data frame.",
-      "examplesTitle": "Examples",
-      "exampleCode": "## A ridiculous example...data(oil)BSkyLoadRefresh(\"oil\")",
-      "packageTitle": "Package",
-      "packageText": "utils",
-      "helpTitle": "Help",
-      "helpText": "For detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command {{r_help}} by creating a R code chunk by clicking + in the output window"
+    "navigation": "Load Dataset",
+    "label1": "If the R Package is not available, go to Tools> Package> Install R Package from CRAN to install it.",
+    "label2": "If you don't see a dataset in the dropdown, the package selected does not contain the dataset.",
+    "selectAPackage": "Select a R package from which to load a dataset",
+    "selectADataset": "Select a dataset to load in the grid",
+    "help": {
+        "title": "Load a Dataset from a R Package",
+        "r_help": "help(data,package='utils')",
+        "body": "\n<b>Description</b></br>\nLoads the selected dataset in the BlueSky Statistics data grid. Uses the function data that loads specified data sets or lists the available data sets.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \n#Loads the dataset into memory<br/>\ndata(..., package = NULL, overwrite = TRUE)<br/>\n#Loads the dataset into the BlueSky Statistics data grid<br/>\nBSkyLoadRefresh(\"dataset name\")<br/>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n...: literal character strings or names of the datasets to be loaded\n</li>\n<li>\npackage: a character vector giving the package(s) to look in for data sets, or NULL.\n</li>\n<li>\noverwrite: logical: should existing objects of the same name in envir be replaced?\n</li>\n</ul>\n<b>Details</b></br>\nLoads the specified dataset into the data grid</br>\n<b>Value</b><br/>\nA data frame.<br/>\n<b>Examples</b><br/>\n<code> \n## A ridiculous example...\ndata(oil)\nBSkyLoadRefresh(\"oil\")\n</code> <br/>\n<b>Package</b></br>\nutils</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(data, package ='utils') by creating a R code chunk by clicking + in the output window           \n"
     }
-  }
 }
