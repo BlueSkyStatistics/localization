@@ -4,6 +4,7 @@
     "label1": "Models of the following classes are supported, classes are listed in parenthesis below",
     "label2": "Linear models (lm), Generalized linear models (glm), Multinomial log-linear (multinom), Quantile regression (rq), Robust linear regression (rlm), Survival curve object (survfit), Linear mixed effects model (lme), Proportional hazards regression object (coxph), Parametric survival regression model (survreg), Ordered logistic/Probit regression (polr), Factor analysis (factanal), Lasso and Elastic-net regularized generalized linear models (glmnet)",
     "modelselector1": "Select a model",
+    "showModelEquationChk": "Show model equation (only for lm,glm, quadratic,cubic models)",
     "help": {
         "title": "Model Level Statistics",
         "r_help": "help(glance, package ='broom')",
