@@ -1,0 +1,23 @@
+{
+  "title": "过程能力分析",
+  "navigation": "过程能力（SixSigma包）",
+  "measuredVar": "包含过程性能数据的变量",
+  "lsl": "LSL - 下限规格值的数值",
+  "usl": "USL - 上限规格值的数值",
+  "ciChk": "计算置信区间",
+  "alphaLim": "Alpha - 置信区间的第一类错误（α）",
+  "capabilityStudyChk": "显示过程能力研究的图表和图形",
+  "target": "过程的目标",
+  "futureProcessVar": "包含长期过程性能数据的变量",
+  "mainTitle": "图形输出的主标题",
+  "subTitle": "图形输出的副标题（例如Six Sigma项目的名称）",
+  "ciMeanChk": "绘制均值的置信区间",
+  "sigma2": "已知的总体方差",
+  "ciMeanMainTitle": "均值置信区间图形输出的主标题",
+  "ciMeanSubTitle": "图形输出的副标题（例如Six Sigma项目的名称）",
+  "help": {
+    "title": "过程能力分析",
+    "r_help": "help(ss.ca.cp, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.ca.cp函数用于计算过程的能力指数，Z（Sigma分数），C_p和C_{pk}。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R help(ss.ca.cp, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为process_capability_study_table.xlsx的示例数据集文件。通过文件打开菜单在数据网格中打开文件\n\t\t\t\t<br/>\n\t\t\t\t从示例数据集中选择小部件变量，在LSL中输入745，在USL中输入760，在目标中输入755\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

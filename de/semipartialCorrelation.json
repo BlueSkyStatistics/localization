@@ -1,0 +1,12 @@
+{
+  "title": "Partielle Korrelationen",
+  "navigation": "Teilweise",
+  "tvarbox1": "Variablen auswählen",
+  "statistic": "Eine Methode auswählen",
+  "tvarbox2": "Kontrollvariablen auswählen",
+  "help": {
+    "title": "Partielle Korrelationen",
+    "r_help": "help(pcor.test, package=ppcor)",
+    "body": "\n<b>Beschreibung</b></br>\nPartielle Korrelation für zwei Variablen gegeben eine dritte Variable. Wir berechnen die paarweise partielle Korrelation zwischen jeder der in der Auswahl der Variablen angegebenen Variablen, wobei wir die in der Auswahl der Kontrollvariablen angegebenen Variablen kontrollieren.<br/>\nWir haben eine Wrapper-Funktion um die Funktion pcor.test geschrieben, die pcor.test für jedes Paar der angegebenen Variablen aufruft.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \npcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nArgumente\nx: ein numerischer Vektor.\n</li>\n<li>\ny: ein numerischer Vektor.\n</li>\n<li>\ny: ein numerischer Vektor.\n</li>\n<li>\nmethod: ein Zeichenstring, der angibt, welcher partielle Korrelationskoeffizient berechnet werden soll. Einer von \"pearson\" (Standard), \"kendall\" oder \"spearman\" kann abgekürzt werden..\n</li>\n</ul>\n<b>Details</b></br>\nDie partielle Korrelation ist die Korrelation von zwei Variablen unter Kontrolle einer dritten Variablen. Wenn der Determinant der Varianz-Kovarianz-Matrix numerisch null ist, wird die Moore-Penrose-generalisierten Matrixinversion verwendet. In diesem Fall werden kein p-Wert und keine Statistik bereitgestellt, wenn die Anzahl der Variablen größer oder gleich der Stichprobengröße ist.</br>\n<b>Wert</b><br/>\nschätzung: der partielle Korrelationskoeffizient zwischen zwei Variablen.<br/>\np.wert: der p-Wert des Tests.<br/>\nn: Die Anzahl der Proben.<br/>\n<b>Beispiele</b><br/>\n<code> \npcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n</code> <br/>\n<b>Paket</b></br>\nppcor</br>\n<b>Hilfe</b></br>\nhelp(pcor.test, package=ppcor)\n"
+  }
+}

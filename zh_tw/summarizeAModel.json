@@ -1,0 +1,10 @@
+{
+  "title": "總結模型",
+  "navigation": "總結模型",
+  "modelselector1": "選擇模型",
+  "help": {
+    "title": "總結模型",
+    "r_help": "幫助(總結)",
+    "body": "\n                <b>描述</b></br>\nsummary是一個通用函數，用於生成各種模型擬合函數結果的摘要。該函數調用特定的方法，這些方法取決於第一個參數的類別，例如summary.lm（線性模型），summary.glm（廣義線性模型）\n<br/>\n<b>用法</b>\n<br/>\n<code> \nsummary(物件)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n物件：希望獲得摘要的物件。\n</li>\n</ul>\n<b>值</b><br/>\nsummary返回的值的形式取決於其參數的類別。有關該方法生成的內容的詳細信息，請參見特定方法的文檔，即幫助(summary.lm)，幫助(summary.glm)。</br>\n<b>包</b></br>\n基礎</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋的右上角的R圖標，或在R語法編輯器中運行以下命令幫助(summary)\n                "
+  }
+}

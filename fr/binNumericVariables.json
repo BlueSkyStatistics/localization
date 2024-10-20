@@ -1,0 +1,21 @@
+{
+  "title": "Binning",
+  "navigation": "Bin",
+  "vartobin": "Sélectionnez une variable à bin",
+  "varname": "Entrez un nom de variable pour enregistrer la valeur binned",
+  "noofbins": "Spécifiez le nombre de bins",
+  "label1": "Noms des niveaux",
+  "Names": "Spécifiez les noms",
+  "levelnames": "Entrez les noms des niveaux séparés par des virgules (,), par ex. bon,mieux,mieux",
+  "Numbers": "Nombres",
+  "Ranges": "Plages",
+  "label2": "Méthode de binning",
+  "equalwidth": "Bins de largeur égale",
+  "equalcount": "Bins de compte égal",
+  "natural": "Coupures naturelles (clustering K-means)",
+  "help": {
+    "title": "Binning",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Description</b></br>\nCréez un facteur disséquant la plage d'une variable numérique en bins de largeur égale, (approximativement) fréquence égale, ou à des points de coupure \"naturels\" (déterminés par le clustering K-means).\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nX: variable numérique à bin.\n</li>\n<li>\nBins: nombre de bins.\n</li>\n<li>\nméthode: l'un des \"intervals\" pour des bins de largeur égale; \"proportions\" pour des bins de compte égal; \"natural\" pour que les points de coupure entre les bins soient déterminés par le clustering K-means.\n</li>\n<li>\nLabels: si FALSE, des labels numériques seront utilisés pour les niveaux de facteur; si NULL, les points de coupure sont utilisés pour définir les labels; sinon un vecteur de caractères de noms de niveaux.\n</li>\n</ul>\n<b>Paquet</b></br>\nRcmdrMisc</br>\n<b>Aide</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

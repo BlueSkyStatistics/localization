@@ -1,0 +1,15 @@
+{
+  "title": "柯西概率",
+  "navigation": "柯西概率",
+  "varvals": "輸入變數值，以逗號分隔。例如：3,0.5",
+  "location": "位置",
+  "scale": "尺度",
+  "labelSig": "顯著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "柯西概率",
+    "r_help": "help(pcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            柯西分佈的密度、分佈函數、分位數函數和隨機生成，具有位置參數location和尺度參數scale。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果長度(n) > 1，則長度被視為所需數量。</li>\n                \n                \n                <li>location, scale : 位置和尺度參數。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則機率p以log(p)給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（預設），機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細資訊</b>\n            <br/>\n            如果未指定位置或尺度，則默認為0和1。\n            <br/>\n            具有位置l和尺度s的柯西分佈的密度為\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            對於所有x。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dcauchy、pcauchy和qcauchy分別是柯西分佈的密度、分佈函數和分位數函數。rcauchy生成來自柯西的隨機偏差。\n            <br/>\n            結果的長度由rcauchy的n決定，並且是其他函數的數值參數長度的最大值。\n            <br/>\n            除n以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <b>來源</b>\n            <br/>\n            dcauchy、pcauchy和qcauchy都是從數值穩定版本的定義中計算得出的。\n            <br/>\n            rcauchy使用反演。"
+  }
+}

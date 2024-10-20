@@ -1,0 +1,16 @@
+{
+  "title": "Reemplazar valores faltantes (Variables numéricas)",
+  "navigation": "Numérico",
+  "label1": "Los valores faltantes (NAs) en las variables seleccionadas se reemplazan aplicando una función, es decir, mediana, media, mínimo, máximo o el valor especificado.",
+  "target": "Seleccione las variables para reemplazar los valores faltantes",
+  "label2": "Seleccione una función o especifique un valor para reemplazar los NAs",
+  "rd1": "Utilizar una función para calcular los valores faltantes",
+  "selectctrl": "Seleccione la función",
+  "rd2": "Especifique un valor numérico para reemplazar los valores faltantes",
+  "valueEntered": "Ingrese un valor numérico",
+  "help": {
+    "title": "Reemplazar valores faltantes (Numérico)",
+    "r_help": "ayuda(media)",
+    "body": "\n<b>Descripción</b></br>\nReemplace los valores faltantes en las variables seleccionadas por la operación seleccionada, es decir, mediana, media, mínimo, máximo\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvar: Cadena de caracteres que representa la variable numérica con valores faltantes (na), por ejemplo var = c('sales')\n</li>\n<li>\nDataset: El conjunto de datos que contiene la variable var\n</li>\n</ul>\n<b>Valor</b><br/>\nLos valores calculados se almacenan directamente en el Dataset<br/>\n<b>Paquete</b></br>\nbásico</br>\n<b>Ayuda</b></br>\nayuda(media)"
+  }
+}

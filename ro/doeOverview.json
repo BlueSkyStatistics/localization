@@ -1,0 +1,15 @@
+{
+  "title": "O prezentare rapidă a funcționalității Designului Experimentelor (DoE)",
+  "navigation": "Prezentare generală DoE",
+  "lbl1": "1. Pentru a crea orice design sub DoE -> meniul de creare a designului, mai întâi aveți nevoie de un set de date cu detalii despre factori pentru a crea designul.",
+  "lbl2": "2. Pentru a începe, alegeți unul dintre seturile de date de exemplu (fișier Excel) furnizate în directorul seturilor de date de exemplu din directorul de instalare BlueSky Statistics sau puteți crea o tabelă/set de date cu detalii despre factori pe loc cu meniul DoE -> Creare Detalii Factori DoE.",
+  "lbl3": "3. Odată ce un set de date este deschis cu meniul deschidere fișier sau creat pe loc în pasul 2 de mai sus, mergeți la DoE -> meniul de creare a designului pentru a crea un design adecvat.",
+  "lbl4": "4. După ce un design este creat cu succes, acesta va apărea pe grila UI a setului de date. Puteți folosi meniul DoE -> Inspectare Design pentru a inspecta designul tocmai creat.",
+  "lbl5": "5. Să exportăm designul într-un director al sistemului de fișiere cu meniul DoE -> Exportare Design. Acesta va crea automat trei fișiere (.csv, .rda, .html) cu aceleași nume ca setul de date de design pe grila UI în calea directorului de fișiere specificat.",
+  "lbl6": "6. Fișierul CSV exportat în pasul 5 este destinat să fie folosit pentru a configura experimentele în lumea reală conform designului pentru a colecta/înregistra rezultate pentru o analiză ulterioară.",
+  "lbl7": "7. Rezultatele sunt înregistrate și adăugate ca coloană(e) separată(e) numite răspunsuri în vocabularul DoE în fișierul CSV. Nu schimbați extensia fișierului CSV în niciun alt format de fișier. Consultați directorul seturilor de date de exemplu pentru DoE, exemple de fișiere CSV etichetate ca withresp pentru a obține valorile pentru coloanele de rezultate/răspunsuri pentru a copia din acestea pentru a crea coloane de răspuns în propriul fișier CSV care a fost exportat ca parte a exportului de design în pasul 5 de mai sus.",
+  "lbl8": "8. Să importăm fișierul de design CSV cu coloanele de răspuns adăugate înapoi în aplicația BlueSky Statistics cu meniul DoE -> Importare Răspuns Design.",
+  "lbl9": "9. Pentru a importa fișierul CSV de design în pasul 8, designul original (care a fost exportat) trebuie să fie disponibil în grila UI a setului de date. Dacă nu este disponibil, folosiți meniul deschidere fișier pentru a încărca fișierul .rda de design care a fost creat ca parte a exportului de design în pasul 5.",
+  "lbl10": "10. După ce fișierul CSV este importat cu succes împotriva setului de date de design activ corect și a creat un nou design cu coloanele de răspuns, puteți folosi meniul DoE -> Inspectare Design pentru a inspecta designul cu coloanele de răspuns.",
+  "lbl11": "11. Acum designul cu coloanele de răspuns este pregătit pentru analiză cu meniul DoE -> Analiză Design cu diverse metode de analiză, de exemplu, model liniar, model de suprafață de răspuns etc."
+}

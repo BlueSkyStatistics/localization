@@ -1,0 +1,16 @@
+{
+  "title": "Supprimer les NAs",
+  "navigation": "Supprimer les NAs",
+  "label0": "Crée un nouvel ensemble de données / écrase l'ensemble de données existant en supprimant les lignes avec une ou plusieurs valeurs manquantes. Sélectionnez les variables à analyser pour les valeurs manquantes. Toutes les lignes contenant des valeurs manquantes dans les variables sélectionnées seront supprimées. Pour analyser l'ensemble de données entier, sélectionnez toutes les variables.",
+  "label1": "Options",
+  "New": "Enregistrer les résultats dans un nouvel ensemble de données",
+  "newdatasetname": "Entrez un nom de jeu de données",
+  "Existing": "Écraser l'ensemble de données existant",
+  "subsetvars": "Sélectionnez les variables (une ou plusieurs) à inclure dans l'ensemble de données",
+  "subsetexpression": "Entrez les critères de sous-ensemble. Les critères de sous-ensemble sont appliqués à chaque ligne de l'ensemble de données. Exemple 1 : !is.na(var1) & is.na(var2). Exemple 2 : var1>30 & var2=='masculin'. Exemple 3 : (var1 !=10 & var2>20) | var3==40. Exemple 4 : (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". Exemple 5 : substr(var1,2,4) ==\"abc\"",
+  "help": {
+    "title": "Supprimer les NAs",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>Description</b></br>\nSupprimer les valeurs manquantes/NA de l'ensemble de données/dataframe\nCrée un nouvel ensemble de données / écrase l'ensemble de données existant en supprimant les lignes avec une ou plusieurs valeurs manquantes pour les colonnes/noms de variables sélectionnés\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n​object: un objet R.​\n</li>\n</ul>\n<b>Paquet</b></br>\ndata.table</br>\n<b>Aide</b></br>\nhelp(na.omit)\n    "
+  }
+}

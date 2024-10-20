@@ -1,0 +1,16 @@
+{
+  "title": "ID變數",
+  "navigation": "ID變數",
+  "varnamelabel": "要創建的ID變數名稱",
+  "sortbyvarslabel": "首先排序的變數",
+  "groupbyvarslabel": "按變數分組",
+  "outputdatalabel": "輸出數據集",
+  "newdatalabel": "創建新數據集",
+  "overwritelabel": "覆蓋現有數據集",
+  "newdatasetlabel": "輸入新數據集的名稱",
+  "help": {
+    "title": "ID變數",
+    "r_help": "help(row_number, package ='dplyr')",
+    "body": "\n在當前數據集或當前數據集的單獨副本中創建一個數字行識別（ID）變數。  \n創建的ID變數將由數字值1、2、3等按順序從上到下組成。  \n可以選擇指定在創建識別變數之前按哪些變數排序或分組。  排序和分組的變數可以是相同或不同的變數。  如果未指定分組變數，則數據集的整體行號將分配給ID變數。\n<br/><br/>\n<b>要創建的ID變數名稱：</b>指定輸出數據集中ID變數的所需名稱。\n<br/><br/>\n<b>首先排序的變數（可選）：</b>指定在定義組或創建ID變數之前要排序的變數。\n<br/><br/>\n<b>按變數分組（可選）：</b>指定將定義ID值單獨分配的變數的級別。例如，按性別分組將為男性和女性分別創建1、2、3等的值，按數據集中的出現順序。\n<br/><br/>\n<b>輸出數據集：</b>指定是創建新數據集還是覆蓋當前數據集。\n<br/><br/>\n<b>所需的R包：</b>tidyverse\n\t\t\t"
+  }
+}

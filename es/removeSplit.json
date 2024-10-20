@@ -1,0 +1,10 @@
+{
+  "title": "Eliminar División",
+  "navigation": "Eliminar División",
+  "label1": "Elimina la división (si hay una división establecida en el conjunto de datos). Haga clic en el botón en la esquina superior derecha para ejecutar el diálogo.",
+  "help": {
+    "title": "Eliminar División",
+    "r_help": "",
+    "body": "<b>Descripción</b></br>\n        Elimina la división en el conjunto de datos. Las divisiones, ver Datos>Agrupar por>Establecer División, dividen los datos en grupos según los factores seleccionados. Una vez que el conjunto de datos está dividido, el análisis que seleccione se realiza de forma independiente para cada división. Por ejemplo, si realiza un análisis de tabla cruzada o una prueba de hipótesis, este análisis se realiza de forma independiente para cada división (la salida del análisis también se genera por separado para cada división). \n         <br/>\n                <b>Uso</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(colnames =c(),datasetnameorindex='nombre del conjunto de datos')\n          </code> <br/>\n            <b>Argumentos</b><br/>\n                 <ul>\n                   <li>\n        col.names: Estos son los nombres de columna/nombres de variable por los que desea dividir el conjunto de datos, por ejemplo col.names =c(\"var1\", \"var2\"). Para restablecer la división, establezca en c()\n         </li>\n                <li>\n        datasetnameorindex: este es el nombre del conjunto de datos.​\n          </li>\n               \n                </ul>\n            <b>Paquete</b></br>\n               No aplicable, esta función es una función interna en el paquete BlueSky. Esta función elimina básicamente el atributo de división en el conjunto de datos. </br>\n                <b>Ayuda</b></br>\n        NA\n        "
+  }
+}

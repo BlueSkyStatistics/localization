@@ -1,0 +1,17 @@
+{
+  "title": "浏览 FrF2 设计目录（例如 catlg）",
+  "navigation": "浏览 FrF2 设计目录",
+  "designCatalog": "设计目录的名称（必须是 catlg 类的对象）",
+  "designNamefromCatalog": "目录中设计的名称",
+  "numRuns": "运行次数（如果超过一个，用 , 分隔，例如 8,16,64）",
+  "numFactors": "因素数量（如果超过一个，用 , 分隔，例如 4,5,11）",
+  "minResolution": "最小设计分辨率（例如，输入 3 表示 III，4 表示 IV，5 表示 V，..）",
+  "MaxC2Chk": "如果未选中 - 设计按最小像差排序，如果选中 - 按最大清晰 2fis 数量排序",
+  "showAliasChk": "显示别名结构（最多 2fis）",
+  "maxNumberofDesignPrint": "显示最大设计数量",
+  "help": {
+    "title": "浏览 FrF2 设计目录（例如 catlg）",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t浏览/检查设计元素或从 FrF2 包中的 catlg 类设计目录中提取信息\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

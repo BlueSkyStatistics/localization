@@ -1,0 +1,16 @@
+{
+  "title": "瀏覽正交陣列（oacat）設計目錄",
+  "navigation": "瀏覽正交設計目錄",
+  "designNamefromCatalog": "目錄中正交陣列設計的名稱（例如 L18.3.6.6.1）",
+  "numRuns": "運行次數或一個2元素向量，例如 4,16，表示運行次數的最小值和最大值",
+  "numFactors": "因素數量（用 , 分隔，例如 4,2,1）",
+  "numLevels": "層級數量（用 , 分隔，例如 3,2,5）",
+  "showQualityMetricsChk": "顯示所有陣列質量指標及其結果陣列；",
+  "maxDigits": "顯示 GR 和 A 指標的有效數字",
+  "maxNumberofDesignPrint": "顯示最大設計數量",
+  "help": {
+    "title": "瀏覽正交陣列（oacat）設計目錄",
+    "r_help": "幫助(show.oas, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t瀏覽/檢查設計元素或從可用正交陣列列表中提取信息，選擇性地指定選擇標準\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用 R 幫助(show.oas, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

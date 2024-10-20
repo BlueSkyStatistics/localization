@@ -1,0 +1,16 @@
+{
+  "title": "ANCOVA, analyse de la covariance",
+  "navigation": "ANCOVA",
+  "response": "Variable Dépendante",
+  "Fixed": "Facteur Fixe",
+  "Block": "Covariate",
+  "Summary": "Résumé du Modèle",
+  "Scatter_plot": "Nuage de points pour chaque niveau de la variable facteur",
+  "Residual": "Résidu vs. Ajusté",
+  "Histogram": "Histogramme des résidus",
+  "help": {
+    "title": "ANCOVA",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Description</b></br>\nL'analyse de covariance (ANCOVA) combine des caractéristiques à la fois de l'ANOVA et de la régression. Elle augmente le modèle ANOVA avec une ou plusieurs variables quantitatives supplémentaires, appelées covariables, qui sont liées à la variable dépendante. Les covariables sont incluses pour réduire la variance dans les termes d'erreur et fournir une mesure plus précise des effets du traitement.</br> L'ANCOVA est utilisée pour tester les effets principaux et d'interaction des facteurs, tout en contrôlant les effets de la covariable.</br>\nNous générons d'abord un tableau Anova avec le terme d'interaction. L'objectif est d'examiner si le terme d'interaction n'est pas significatif, c'est-à-dire que les pentes de la variable dépendante par rapport à la covariable pour chaque niveau du facteur fixe ne sont pas différentes. Nous utilisons le paquet Anova dans le paquet car pour générer ce tableau Anova.</br>\nNous régénérons ensuite le tableau Anova en contrôlant le terme d'interaction pour déterminer si les intercepts de la variable dépendante par rapport à la covariable pour chaque niveau du facteur fixe sont différents.</br> \nNous offrons la possibilité de générer un nuage de points de la variable dépendante par rapport à la variable covariable pour chaque niveau du facteur fixe.</br>\nNous offrons la possibilité de tracer les résidus vs. le graphique ajusté pour le modèle où nous avons contrôlé le terme d'interaction. Les résidus devraient être non biaisés et homoscédastiques.</br>\nNous offrons la possibilité de générer un histogramme pour les résidus du modèle où nous avons contrôlé le terme d'interaction. (La distribution devrait être approximativement normale).</br>\nNous vous donnons la possibilité de résumer le modèle</br>\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nformule: un objet de classe \"formule\" (ou un qui peut être converti en cette classe): une description symbolique du modèle à ajuster. Les détails de la spécification du modèle sont donnés sous 'Détails'.\n</li>\n<li>\ndonnées: un cadre de données, une liste ou un environnement optionnel (ou un objet convertible par as.data.frame en un cadre de données) contenant les variables du modèle. Si non trouvé dans les données, les variables sont prises de l'environnement(formula), typiquement l'environnement à partir duquel lm est appelé.\n</li>\n</ul>\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm ou autre objet de modèle approprié.​\n</li>\n<li>\ntype: type de test, \"II\", \"III\", 2 ou 3.\n</li>\n</ul>\n<b>Paquet</b></br>\nAnova</br>\n<b>Aide</b></br>\nhelp(Anova, package ='car')\n    "
+  }
+}

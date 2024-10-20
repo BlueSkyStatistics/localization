@@ -1,0 +1,16 @@
+{
+  "title": "替換缺失值（數值變數）",
+  "navigation": "數值",
+  "label1": "所選變數中的缺失值（NAs）通過應用函數進行替換，即中位數、均值、最小值、最大值或指定的值。",
+  "target": "選擇要替換缺失值的變數",
+  "label2": "選擇一個函數或指定一個值來替換NAs",
+  "rd1": "使用函數計算缺失值",
+  "selectctrl": "選擇函數",
+  "rd2": "指定一個數值來替換缺失值",
+  "valueEntered": "輸入一個數值",
+  "help": {
+    "title": "替換缺失值（數值）",
+    "r_help": "幫助(均值)",
+    "body": "\n<b>描述</b></br>\n通過所選操作替換所選變數中的缺失值，即中位數、均值、最小值、最大值\n<br/>\n<b>用法</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvar: 表示具有缺失值（na）的數值變數的字符字符串，例如 var = c('sales')\n</li>\n<li>\nDataset: 包含變數 var 的數據集\n</li>\n</ul>\n<b>值</b><br/>\n計算的值直接存儲在數據集中<br/>\n<b>包</b></br>\n基礎</br>\n<b>幫助</b></br>\n幫助(均值)"
+  }
+}

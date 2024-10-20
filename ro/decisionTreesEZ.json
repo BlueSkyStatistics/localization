@@ -1,0 +1,24 @@
+{
+  "title": "Arbori de decizie",
+  "navigation": "Arbori de decizie",
+  "TxtTreeName": "Introduceți numele modelului",
+  "TreeGenChkbox": "Nu regenerați dacă arborele există deja",
+  "dependent": "Variabilă dependentă",
+  "independent": "Variabilă(variabile) independent(e)",
+  "weights": "Greutăți de sondaj",
+  "TxtMinSplit": "Împărțire minimă",
+  "minBucket": "Bucket minim",
+  "TxtCP": "Parametru de complexitate",
+  "maxDepth": "Adâncime maximă",
+  "PruneTreeChkbox": "Tăierea arborelui",
+  "rd0": "Nu tăia",
+  "rd1": "Utilizați parametrul de complexitate optim",
+  "rd2": "Specificați parametrul de complexitate",
+  "TxtCPPrune": "Introduceți parametrul de complexitate",
+  "PlotCVChkbox": "Trasați validarea încrucișată",
+  "PlotRSQRChkbox": "Trasați R-pătrat",
+  "help": {
+    "title": "Arbori de decizie",
+    "r_help": "ajutor(rpart, pachet ='rpart')"
+  }
+}

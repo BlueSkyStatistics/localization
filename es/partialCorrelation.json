@@ -1,0 +1,13 @@
+{
+  "title": "Correlaciones semi-parciales",
+  "navigation": "Semi-parcial",
+  "statistic": "Seleccione un método",
+  "tvarbox1": "Seleccione variables",
+  "correlationType": "Tipo de correlación",
+  "tvarbox2": "Seleccione variables de control",
+  "help": {
+    "title": "Correlaciones semi-parciales",
+    "r_help": "ayuda(spcor.test, paquete=ppcor)",
+    "body": "\n            <b>Descripción</b></br>\n            Correlación semi-parcial para dos variables dadas una tercera variable. Calcularemos la correlación semi-parcial por pares entre cada una de las variables especificadas en el control de variables seleccionadas, controlando las variables especificadas en el control de variables de control.<br/>\n            Hemos escrito un envoltorio alrededor de la función spcor.test que llama a spcor.test para cada par de las variables especificadas.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            Argumentos\n            x: un vector numérico.\n            </li>\n            <li>\n            y: un vector numérico.\n            </li>\n            <li>\n            y: un vector numérico.\n            </li>\n            <li>\n            method: una cadena de caracteres que indica qué coeficiente de correlación parcial se debe calcular. Uno de \"pearson\" (predeterminado), \"kendall\" o \"spearman\" puede ser abreviado..\n            </li>\n            </ul>\n            <b>Detalles</b></br>\n            La correlación semi-parcial es la correlación de dos variables con la variación de una tercera variable eliminada solo de la segunda variable. Cuando el determinante de la matriz de varianza-covarianza es numéricamente cero, se utiliza la inversa generalizada de Moore-Penrose. En este caso, no se proporcionará ningún valor p y estadística si el número de variables es mayor o igual al tamaño de la muestra.</br>\n            <b>Valor</b><br/>\n            estimate: el coeficiente de correlación semi-parcial (parcial) entre dos variables.<br/>\n            p.value: el valor p de la prueba.<br/>\n            n: El número de muestras.<br/>\n            <b>Ejemplos</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>Paquete</b></br>\n            ppcor</br>\n            <b>Ayuda</b></br>\n            ayuda(pcor.test, paquete=ppcor)\n"
+  }
+}

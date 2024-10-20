@@ -1,0 +1,10 @@
+{
+  "title": "弗里德曼检验",
+  "navigation": "弗里德曼检验",
+  "tvarbox1": "响应变量，2个或更多",
+  "help": {
+    "title": "弗里德曼检验",
+    "r_help": "help(friedman.test, package=stats)",
+    "body": "\n<b>描述</b></br>\n执行带有未重复阻塞数据的弗里德曼秩和检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfriedman.test(y, ...)\n## 默认 S3 方法:\nfriedman.test(y, groups, blocks, ...)\n## 'formula' 类的 S3 方法\nfriedman.test(formula, data, subset, na.action, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ny: 可以是数据值的数值向量，也可以是数据矩阵。\n</li>\n<li>\ngroups: 如果 y 是向量，则给出 y 的相应元素的组的向量；如果 y 是矩阵，则被忽略。如果不是因子对象，则会被强制转换为因子。\n</li>\n<li>\nblocks: 如果 y 是向量，则给出 y 的相应元素的块的向量；如果 y 是矩阵，则被忽略。如果不是因子对象，则会被强制转换为因子。\n</li>\n<li>\nformula: 形式为 a ~ b | c 的公式，其中 a、b 和 c 分别给出数据值和相应的组和块。\n</li>\n<li>\ndata: 一个可选的矩阵或数据框（或类似：见 model.frame），包含公式中的变量。默认情况下，变量来自 environment(formula)。\n</li>\n<li>\nsubset: 一个可选的向量，指定要使用的观察子集。\n</li>\n<li>\nna.action: 一个函数，指示当数据包含 NAs 时应该发生什么。默认值为 getOption(\"na.action\").\n</li>\n<li>\n...: 进一步的参数传递给方法。\n</li>\n</ul>\n<b>详细信息</b></br>\nfriedman.test 可用于分析未重复的完整区组设计（即，对于每个组和块的水平组合，y 中恰好有一个观察值），其中可能违反正态性假设。</br>\n零假设是，除了块的效应外，y 的位置参数在每个组中是相同的。\n如果 y 是矩阵，则从列和行索引分别获得组和块。组或块中不允许有 NA；如果 y 包含 NA，则相应的块将被删除。</br>\n<b>值</b><br/>\n一个类为 \"htest\" 的列表，包含以下组件：<br/>\nstatistic: 弗里德曼的卡方统计量的值。<br/>\nparameter: 测试统计量的近似卡方分布的自由度。<br/>\np.value: 测试的 p 值。<br/>\nmethod: 字符串 \"弗里德曼秩和检验\"。<br/>\ndata.name: 给出数据名称的字符串。​<br/>\n<b>示例</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))<br/>\nmy_samples <- na.omit( with(Dataframe,cbind(Sales,Expenses)))<br/>\nResult_Friedman_Test = friedman.test(my_samples)<br/>\n</code> <br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(friedman.test, package=stats)\n"
+  }
+}

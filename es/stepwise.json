@@ -1,0 +1,22 @@
+{
+  "title": "Paso a paso",
+  "navigation": "Paso a paso",
+  "label1": "Seleccione un modelo de una de las siguientes clases. (La clase R se enumera entre paréntesis a continuación)",
+  "label2": "Modelo lineal (lm), Modelo lineal generalizado (glm), Regresión logística/probit ordenada (polr), Redes neuronales de retroalimentación y Modelos log-lineales multinomiales (nnet)",
+  "label3": "**NOTA: Paso a paso no funciona para modelos construidos por Modelo > Ajuste (train)",
+  "label4": "**NOTA: Paso a paso no funciona para Modelos log-lineales multinomiales (multinom) debido a una incompatibilidad que hemos planteado con los autores del paquete R",
+  "modelselector1": "Seleccione un modelo",
+  "label5": "Dirección",
+  "backforward": "hacia atrás/hacia adelante",
+  "forwardback": "hacia adelante/hacia atrás",
+  "backward": "hacia atrás",
+  "forward": "hacia adelante",
+  "aic": "AIC (grados de libertad utilizados para la penalización k = 2)",
+  "bic": "BIC (grados de libertad utilizados para la penalización k = log(número de filas en la matriz del modelo)) NOTA: La salida muestra AIC incluso cuando se selecciona BIC)",
+  "label6": "Criterio",
+  "help": {
+    "title": "Paso a paso",
+    "r_help": "ayuda(paso a paso, paquete='RcmdrMisc')",
+    "body": "\n            <b>Descripción</b></br>\nEsta función es una interfaz a la función ‘paso a paso’ en el paquete RcmdrMisc. Que a su vez es una interfaz a la función stepAIC en el paquete MASS.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"hacia atrás/hacia adelante\", \"hacia adelante/hacia atrás\", \"hacia atrás\", \"hacia adelante\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nmod : un objeto de modelo de una clase que puede ser manejada por stepAIC.\n</li>\n<li>\ndirection : si \"hacia atrás/hacia adelante\" (por defecto), la selección comienza con el modelo completo y elimina los predictores uno a la vez, en cada paso considerando si el criterio se mejorará al agregar de nuevo una variable eliminada en un paso anterior; si \"hacia adelante/hacia atrás\", la selección comienza con un modelo que incluye solo una constante, y agrega predictores uno a la vez, en cada paso considerando si el criterio se mejorará al eliminar una variable previamente agregada; \"hacia atrás\" y \"hacia adelante\" son similares sin la reconsideración en cada paso.\n</li>\n<li>\ncriterio : para la selección. Ya sea \"BIC\" (el predeterminado) o \"AIC\". Tenga en cuenta que stepAIC etiqueta el criterio en la salida como \"AIC\" independientemente de qué criterio se emplee.\n</li>\n<li>\n... : argumentos que se pasarán a stepAIC.\n</li>\n</ul>\n<b>Valor</b><br/>\nEl modelo seleccionado por stepAIC.<br/>\n<b>Paquete</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de esta superposición de diálogo o ejecute el siguiente comando en el editor de sintaxis R ayuda(paso a paso, paquete=\"RcmdrMisc\")\n"
+  }
+}

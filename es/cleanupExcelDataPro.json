@@ -1,0 +1,30 @@
+{
+  "title": "Limpiar datos de Excel o CSV - ajustar, eliminar filas y columnas",
+  "navigation": "Limpieza de Excel",
+  "resultDatasetName": "Nombre del nuevo conjunto de datos a crear",
+  "listofRowNumbersRemove": "(Opcional) Lista de números de fila a eliminar (separados por comas, por ejemplo, 1,4,5,20:30)",
+  "listofColumnNumbersRemove": "(Opcional) Lista de números de columna a eliminar (separados por comas, por ejemplo, 1,2,6:10)",
+  "chooseColumnNamesRad": "Especificar nombres de columnas del conjunto de datos",
+  "rowNumbersContaingColNames": "Ingrese los números de fila (separados por comas, por ejemplo, 3,4) que se utilizarán para los nombres de columna del conjunto de datos de salida",
+  "deleteRowNumbersContaingColNamesChk": "Eliminar las filas que contienen nombres de columna para el conjunto de datos de salida",
+  "combineWithExsitingColNamesChk": "Nombres de columnas creados, combinarlos con los nombres de encabezado de columna existentes",
+  "specifyColumnNamesRad": "Especificar nombres de columnas manualmente para el conjunto de datos de salida",
+  "outputColumnNames": "Ingrese los nombres de columnas (separados por comas) que se utilizarán para el conjunto de datos de salida",
+  "removeColsWithConstantChk": "Eliminar todas las columnas con valores constantes (sin distinción entre mayúsculas y minúsculas)",
+  "removeColsWithNoDataChk": "Eliminar todas las columnas vacías",
+  "removeRowsWithNoDataChk": "Eliminar todas las filas vacías",
+  "removeRowsWithNAsChk": "Conservar solo casos completos, es decir, eliminar toda la fila si hay algún valor vacío o NA",
+  "label1": "Conversión de tipos de columna en el conjunto de datos de salida",
+  "convertColumnDataTypeAuto": "Determinar automáticamente el tipo de datos de la columna y convertir",
+  "convertColumnDataTypeNone": "No hacer nada",
+  "convertColumnDataTypeFactorToCharInt": "Convertir todas las columnas de factor a tipo carácter e entero",
+  "convertColumnDataTypeCharToFactor": "Convertir todas las columnas de carácter a factores",
+  "convertColumnDataTypeAllToFactor": "Convertir todas las columnas a factores",
+  "convertColumnDataTypeManual": "Escriba el tipo de datos para cada columna a convertir",
+  "outputColumnTypes": "Lista de tipos de columna (separados por comas, por ejemplo, numérico, factor, carácter, ..)",
+  "help": {
+    "title": "Limpiar datos de Excel o CSV - ajustar, eliminar filas y columnas",
+    "r_help": "",
+    "body": "\n            <b>Descripción</b></br>\n            Este diálogo se utiliza para limpiar una hoja de Excel compleja para agregar y eliminar filas y columnas para crear un nuevo conjunto de datos\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado Excel cleanup.xlsx\n\t\t\t<br/>\n\t\t\tAbra el archivo en la cuadrícula de datos con el menú abrir archivo\n\t\t\t<br/>\n\t\t\tEn el diálogo, escriba\n\t\t\t<br/>\n\t\t\tSampleGp como el nombre del nuevo conjunto de datos\n\t\t\t<br/>\n\t\t\t1:3 para la lista de números de fila a eliminar\n\t\t\t<br/>\n\t\t\t1,2,5:8 para la lista de números de columna a eliminar\n\t\t\t<br/>\n\t\t\tSeleccione la opción - Especificar nombres de columnas de los conjuntos de datos\n\t\t\t<br/>\n\t\t\t2,3 para ingresar números de fila  \n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

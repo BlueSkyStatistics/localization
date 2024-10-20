@@ -1,0 +1,20 @@
+{
+  "title": "K Plus Proches Voisins",
+  "navigation": "KNN",
+  "dependentvar": "Variable dépendante",
+  "independentvars": "Variable(s) indépendante(s)",
+  "header": "KNN est un classificateur paresseux, il ne crée pas d'ajustement pour prédire plus tard. Il ajuste et évalue en même temps. Nous divisons le jeu de données en ensembles d'entraînement et de test, puis construisons le modèle sur l'ensemble d'entraînement, faisons des prédictions sur l'ensemble de test et utilisons ces prédictions pour afficher des statistiques d'évaluation du modèle.",
+  "Seed": "Définir la graine",
+  "Group2": "Paramètres d'ajustement pour KNN",
+  "noneighbhors": "Nombre de voisins (Lorsqu'une valeur n'est pas spécifiée, la valeur par défaut est la racine carrée du nombre d'observations dans le jeu de données)",
+  "Group1": "Ensembles de données d'entraînement et de test",
+  "splitPercentage": "Entrez le pourcentage de séparation",
+  "trainDatasetName": "Entrez le nom de l'ensemble de données d'entraînement",
+  "testDatasetName": "Entrez le nom de l'ensemble de données de test",
+  "predictedValues": "Entrez le préfixe de variable pour les valeurs prédites. (Vous devez spécifier un préfixe) Les variables préfixées sont créées dans l'ensemble de données de test.",
+  "help": {
+    "title": "K Plus Proches Voisins",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Description</b></br>\nClassification par k-plus proches voisins\n<br/>\n<b>Remarque : </b></br>\n1. Les ensembles de données d'entraînement et de test sont automatiquement créés avec KNN en fonction du pourcentage de séparation spécifié<br/>\n2. Les valeurs prédites sont stockées dans l'ensemble de données de test et sont utilisées pour calculer les statistiques du modèle, à savoir la précision, le kappa, la sensibilité... La matrice de confusion est également affichée\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ntrain: matrice ou cadre de données des cas d'ensemble d'entraînement.\n</li>\n<li>\ntest: matrice ou cadre de données des cas d'ensemble de test. Un vecteur sera interprété comme un vecteur de ligne pour un seul cas.\n</li>\n<li>\ncl: facteur des classifications réelles de l'ensemble d'entraînement\n</li>\n<li>\nk: nombre de voisins considérés.\n</li>\n<li>\nl: vote minimum pour une décision définitive, sinon doute. (Plus précisément, moins de k-l votes dissidents sont autorisés, même si k est augmenté par des égalités.)\n</li>\n<li>\nprob: Si cela est vrai, la proportion des votes pour la classe gagnante est renvoyée comme attribut prob.\n</li>\n<li>\nuse.all: contrôle la gestion des égalités. Si vrai, toutes les distances égales au k-ième plus grand sont incluses. Si faux, une sélection aléatoire de distances égales au k-ième est choisie pour utiliser exactement k voisins.\n</li>\n</ul>\n<b>Valeur</b></br>\nFacteur des classifications de l'ensemble de test. le doute sera renvoyé comme NA.</br>\n<b>Paquet</b></br>\ncaret;class</br>\n<b>Aide</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

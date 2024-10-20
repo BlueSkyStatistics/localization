@@ -1,0 +1,27 @@
+{
+  "title": "Prueba de Equivalencia",
+  "navigation": "Prueba de Equivalencia",
+  "variableSelcted1": "Seleccione la primera variable",
+  "label1": "Para comparar dos variables, elija una variable de agrupación (solo dos niveles) o una segunda variable (independiente o emparejada)",
+  "variableSelcted2": "Seleccione una segunda variable",
+  "label2": "Cómo tratar la segunda variable si se selecciona",
+  "groupingNeededRad": "La segunda variable seleccionada es una variable de agrupación",
+  "referenceGpValue": "Escriba el valor del grupo que se utilizará como referencia",
+  "pairedTestRad": "Realizar prueba emparejada - la segunda variable seleccionada está emparejada",
+  "noneRad": "Ninguna de las anteriores",
+  "targetMean": "Objetivo (media) - no aplicable para dos muestras",
+  "lower": "Límite inferior - valor numérico del límite inferior de equivalencia",
+  "upper": "Límite superior - valor numérico del límite superior de equivalencia",
+  "smdChk": "Límites de equivalencia especificados en SMD (Diferencia de Media Estandarizada)",
+  "label3": "Tipo de prueba",
+  "EQUtestRad": "Realizar prueba de equivalencia",
+  "METtestRad": "Realizar prueba de efectos mínimos (MET)",
+  "alpha": "nivel alfa (predeterminado = 0.05)",
+  "HedgesCorrectionChk": "Calcular automáticamente la corrección de Hedges (de lo contrario, muestra d de Cohen)",
+  "plotChk": "Gráfico de consonancia (esto puede tardar un tiempo en mostrar el gráfico)",
+  "help": {
+    "title": "Prueba de Equivalencia",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar prueba de equivalencia o prueba de efectos mínimos (MET)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(t_TOST, package = TOSTER)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado iris con el menú Cargar conjunto de datos seleccionando el conjunto de datos iris del segundo menú desplegable (escriba rápidamente iris)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSeleccione Sepal.Length como la primera variable y (opcionalmente) elija Sepal.Width como la segunda variable, y seleccione la prueba emparejada\n\t\t\t\t<br/>\n\t\t\t\tescriba 5.5 como el límite inferior y 8.5 como el límite superior para el margen de equivalencia, haga clic en ejecutar \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial en https://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

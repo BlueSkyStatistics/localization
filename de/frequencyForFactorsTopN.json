@@ -1,0 +1,13 @@
+{
+  "navigation": "Nur Faktoren (Legacy)",
+  "title": "Zusammenfassungen, nur Faktoren",
+  "subsetvars": "Antwortvariablen, 2 oder mehr",
+  "ChkboxShowOnlyTopFewFactors": "Zähle nur die obersten N Faktorstufen",
+  "txtNumTopFactorsToShow": "Geben Sie einen Wert für N ein",
+  "label1": "Hinweis: Wenn das Kontrollkästchen deaktiviert ist, werden die Zählungen für ALLE Ebenen angezeigt. Dies kann eine beträchtliche Zeit in Anspruch nehmen, wenn Sie viele Faktorstufen haben.",
+  "help": {
+    "title": "Nur Faktoren",
+    "r_help": "",
+    "body": "\n<b>Beschreibung</b></br>\nZeigt die Zählungen jeder Ebene jeder Faktorvariablen an.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: Die Faktorvariablen, für die die Zählungen der Ebenen angezeigt werden\n</li>\n<li>\ndata: Der Datensatzname\n</li>\n<li>\nshow.only.top.factors: Ein boolescher Wert, der bestimmt, ob nur die Zählungen der obersten Ebenen oder alle Ebenen angezeigt werden sollen.\n</li>\n<li>\nmax.number.top.factors: wenn show.only.top.factors = TRUE, gibt die Anzahl der Ebenen an, für die Zählungen angezeigt werden sollen\n</li>\n</ul>\n"
+  }
+}

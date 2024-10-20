@@ -1,0 +1,33 @@
+{
+  "title": "t-test, Un Échantillon",
+  "navigation": "t-test, Un Échantillon (Legacy)",
+  "tvarbox1": "Sélectionner des variables",
+  "textbox1": "Intervalle de confiance",
+  "textbox2": "Hypothèse nulle (mu)",
+  "label1": "Hypothèse alternative",
+  "test1": "Moyenne de la population != mu",
+  "test2": "Moyenne de la population > mu",
+  "test3": "Moyenne de la population < mu",
+  "testval": "Valeur du test (mu)",
+  "label2": "Valeurs manquantes",
+  "Analysis": "Analyse par analyse",
+  "Listwise": "Liste complète",
+  "conflevel": "Intervalle de confiance :",
+  "MissingVals": "Options pour les valeurs manquantes",
+  "cohensdNoCorrection": "d de Cohen",
+  "hedgesgNoCorrection": "g de Hedges",
+  "glassd": "Delta de Glass",
+  "hedgesgCorrect": "g de Hedges avec biais corrigé",
+  "glassdCorrect": "Corriger le biais pour le Delta de Glass",
+  "hedgesg": "g de Hedges",
+  "effectsizes": "Tailles d'effet",
+  "cohensdCorrect": "d de Cohen avec biais corrigé",
+  "label3": "Options pour d de Cohen",
+  "label4": "Options pour g de Hedges",
+  "showEffectSizes": "Afficher les tailles d'effet",
+  "help": {
+    "title": "t-test, Un Échantillon",
+    "r_help": "help(t.test, package=stats)",
+    "body": "\n<b>Description</b></br>\nEffectue des t-tests à un échantillon sur des variables sélectionnées. Calcule éventuellement des indices de taille d'effet pour les différences standardisées : d de Cohen et g de Hedges (Cette fonction renvoie l'estimation de la population.)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyOneSmTTest(varNamesOrVarGlobalIndices  =c('var1','var2'), mu=.9, conf.level=0.95, alternative= \"two.sided\",datasetNameOrDatasetGlobalIndex='Dataset', missing=1) \ncohens_d(var1~1, mu=valuetocompare, correction =FALSE, ci = 0.95)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: variables d'échelle sélectionnées (par exemple var1, var2)\n</li>\n<li>\nmu: un nombre indiquant la vraie valeur de la moyenne. (par exemple 10)\n</li>\n<li>\nconf.level: une valeur numérique (par exemple 0.95).\n</li>\n<li>\nmissing: les valeurs manquantes sont traitées sur une base par variable (missing =0) ou liste complète sur toutes les variables (missing=1).\n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: Nom du jeu de données (par exemple Dataset) à partir duquel var1, var2 et var3 sont sélectionnés.\n</li>\n<li>\nalternative: une chaîne de caractères spécifiant l'hypothèse alternative, doit être l'un de \"two.sided\" (par défaut), \"greater\" ou \"less\". Vous pouvez spécifier juste la première lettre.\n</li>\n</ul>\n<b>Détails</b></br>\nUne liste avec les résultats du test\n<br/>\n<b>Exemple</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# Le jeu de données doit également être chargé dans la grille UI</br>\nBSkyLoadRefreshDataframe(Dataset)</br> \nBSky_One_Simple_T_Test = BSkyOneSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),mu=.9,conf.level=0.95,alternative =\"two.sided\", datasetNameOrDatasetGlobalIndex ='Dataset',missing=1</br>\n</code> <br/>\n<b>Paquet</b></br>\nstats</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette fenêtre de dialogue ou exécutez la commande suivante help(t.test, package ='stats') en créant un bloc de code R en cliquant sur + dans la fenêtre de sortie\n"
+  }
+}

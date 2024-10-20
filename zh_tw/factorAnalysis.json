@@ -1,0 +1,31 @@
+{
+  "title": "因子分析",
+  "navigation": "因子",
+  "destination": "選擇變數",
+  "label1": "因子提取",
+  "factorextraction1": "自動提取因子",
+  "factorextraction2": "指定要提取的因子數量",
+  "noOfFactors": "輸入要提取的因子數量",
+  "screeplot": "碎石圖",
+  "label2": "因子得分",
+  "saveScores": "將因子得分保存到數據集中",
+  "scores1": "巴特利特方法，輸入變數名稱前綴",
+  "scores2": "回歸方法，輸入變數名稱前綴",
+  "varForScores": "輸入得分的變數名稱前綴：",
+  "label3": "旋轉選項",
+  "grpBox21": "無",
+  "grpBox22": "Varimax",
+  "grpBox23": "Promax",
+  "grpBox24": "BentlerQ",
+  "grpBox25": "Quartimax",
+  "grpBox26": "Oblimin",
+  "grpBox27": "GeominQ",
+  "grpBox28": "GeominT",
+  "grpBox29": "Simplimax",
+  "parallel": "平行分析",
+  "help": {
+    "title": "因子分析",
+    "r_help": "幫助(factanal, 包='stats')",
+    "body": "\n<b>描述</b></br>\n​對協方差矩陣或數據矩陣執行最大似然因子分析並生成碎石圖。調用stats包中的factanal函數。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"數據集\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 一個或多個用於提取因子的數值變數。\n</li>\n<li>\nautoextraction: 自動確定因子的數量或提取特定數量的因子。\n</li>\n<li>\nscreeplot: 如果為TRUE，則生成碎石圖。\n</li>\n<li>\nrotation: 確定旋轉類型並取以下值之一（無，quartimax，geominT，varimax，oblimin，simplimax，promax，geominQ和bentlerQ）\n</li>\n<li>\nsaveScores: 將因子得分保存在數據集中\n</li>\n<li>\ndataset: 從中選擇'vars'的數據集。\n</li>\n</ul>\n<b>詳細信息</b></br>\n一個\"factanal\"類的對象，具有以下組件</br>\nloadings: 一個加載矩陣，每個因子一列。因子按加載平方和的降序排列，並賦予使加載和為正的符號。這是\"loadings\"類：請參見loadings以獲取其打印方法。</br>\nuniquenesses: 計算出的唯一性。</br>\ncorrelation: 使用的相關矩陣。</br>\ncriteria: 優化的結果：標準的值（負對數似然的線性函數）和有關所用迭代的信息。</br>\nfactors: 參數因素。</br>\ndof: 因子分析模型的自由度數量。</br>\nmethod: 方法：始終為\"mle\"。</br>\nrotmat:\t如果相關，則為旋轉矩陣。</br>\nscores: 如果請求，則為得分矩陣。napredict用於處理na.action省略的值。</br>\nn.obs: 如果可用，則為觀察數量，或NA。</br>\ncall: 匹配的調用。</br>\nna.action: 如果相關。</br>\nSTATISTIC, PVAL: 如果可以計算，則為顯著性檢驗統計量和P值。</br>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\n幫助(factanal, 包='stats')\n"
+  }
+}

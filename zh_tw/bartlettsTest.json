@@ -1,0 +1,11 @@
+{
+  "title": "巴特利特檢驗",
+  "navigation": "巴特利特檢驗",
+  "tvarbox1": "響應變數",
+  "tvarbox2": "數值或因子變數",
+  "help": {
+    "title": "巴特利特檢驗",
+    "r_help": "幫助(bartlett.test, 套件=stats)",
+    "body": "\n<b>描述</b></br>\n執行巴特利特檢驗的零假設，即每個組（樣本）的方差相同。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbartlett.test(x, ...)</br>\n## 預設 S3 方法:</br>\nbartlett.test(x, g, ...)</br>\n## 類 'formula' 的 S3 方法</br>\nbartlett.test(formula, data, subset, na.action, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n參數\nx: 一個數值數據值的向量，或一個表示各自樣本的數值數據向量的列表，或擬合的線性模型物件（繼承自類 \"lm\"）。\n</li>\n<li>\ng: 一個向量或因子物件，給出 x 的相應元素的組。如果 x 是列表，則被忽略。\n</li>\n<li>\nformula: 形式為 lhs ~ rhs 的公式，其中 lhs 給出數據值，rhs 給出相應的組。\n</li>\n<li>\ndata: 一個可選的矩陣或數據框（或類似：見 model.frame），包含公式中的變數。預設情況下，變數來自環境(formula)。\n</li>\n<li>\nsubset: 一個可選的向量，指定要使用的觀察子集。\n</li>\n<li>\nna.action: 一個函數，指示當數據包含 NAs 時應發生什麼。預設值為 getOption(\"na.action\").\n</li>\n<li>\n...: 進一步的參數傳遞給或從方法。\n</li>\n</ul>\n<b>細節</b></br>\n如果 x 是列表，則其元素被視為要比較的樣本或擬合的線性模型，以檢驗方差的同質性。在這種情況下，元素必須都是數值數據向量或擬合的線性模型物件，g 被忽略，可以簡單地使用 bartlett.test(x) 來執行測試。如果樣本尚未包含在列表中，請使用 bartlett.test(list(x, ...)).</br>\n否則，x 必須是一個數值數據向量，g 必須是與 x 長度相同的向量或因子物件，給出 x 的相應元素的組。</br>\n<b>值</b><br/>\n一個類為 \"htest\" 的列表，包含以下組件:<br/>\nstatistic: Bartlett 的 K 平方檢驗統計量。<br/>\nparameter: 檢驗統計量的近似卡方分布的自由度。<br/>\np.value: 檢驗的 p 值。<br/>\nmethod: 字符串 \"Bartlett 方差同質性檢驗\"。<br/>\ndata.name: 一個字符串，給出數據的名稱。<br/>\n<b>示例</b><br/>\n<code> \nDataset <- data.frame(Age=c(20,23,19,25,26), Weight=c(48,50,55,51,49), Gender=c('m','f','f','m','m' ))\nResult_Bartlett_Test = bartlett.test(sales ~ interaction(Dataset$Gender),data=Dataset)\n</code> <br/>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\nhelp(bartlett.test, package=stats)\n"
+  }
+}

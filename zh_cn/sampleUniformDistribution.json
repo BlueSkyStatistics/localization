@@ -1,0 +1,19 @@
+{
+  "title": "均匀分布示例",
+  "navigation": "均匀分布示例",
+  "entrdsname": "输入数据集名称",
+  "min": "最小值",
+  "max": "最大值",
+  "lblnoofsamples": "样本数量（行）",
+  "lblnoofobsv": "观察数量（列）",
+  "lblseed": "种子",
+  "lblAddtoDS": "添加到数据集",
+  "chklbl1": "样本均值",
+  "chklbl2": "样本总和",
+  "chklbl3": "样本标准差",
+  "help": {
+    "title": "均匀分布示例",
+    "r_help": "help(runif, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            这些函数提供有关从最小值到最大值的均匀分布的信息。dunif给出密度，punif给出分布函数，qunif给出分位数函数，runif生成随机偏差。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dunif(x, min = 0, max = 1, log = FALSE)\n                <br/>\n                punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                runif(n, min = 0, max = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察数量。如果长度(n) > 1，则长度被视为所需数量。</li>\n                \n                \n                <li>min, max : 分布的下限和上限。必须是有限的。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            如果未指定min或max，则假定它们的默认值分别为0和1。\n            <br/>\n            均匀分布的密度为\n            <br/>\n            <code>f(x) = 1/(max-min)</code>\n            <br/>\n            对于min ≤ x ≤ max。\n            <br/>\n            对于u := min == max的情况，假定X == u的极限情况，尽管在这种情况下没有密度，dunif将返回NaN（错误条件）。\n            <br/>\n            除非max = min或max-min相对于min较小，runif将不会生成任何极端值，特别是对于默认参数。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dunif给出密度，punif给出分布函数，qunif给出分位数函数，runif生成随机偏差。\n            <br/>\n            结果的长度由n决定，对于runif，结果的长度是其他函数的数值参数长度的最大值。\n            <br/>\n            除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            伪随机数生成器的输出特性（如精度和周期性）差异很大。有关R的随机数生成算法的更多信息，请参见.Random.seed。            \n"
+  }
+}

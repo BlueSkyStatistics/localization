@@ -1,0 +1,21 @@
+{
+  "title": "Eliminare Niveluri Neutilizate",
+  "navigation": "Eliminare Neutilizate",
+  "target": "Variabile factor pentru a elimina niveluri pentru",
+  "label1": "Introduceți variabilele factor pentru care doriți să eliminați niveluri. Puteți specifica niveluri neutilizate pentru a le elimina introducându-le sau selectând să eliminați toate nivelurile neutilizate pentru variabilele selectate. Dacă variabila din setul de date are o valoare NA în date, atunci acel nivel NU este eliminat.",
+  "label2": "Salvați nivelurile noi în variabile noi sau suprascrieți variabilele existente",
+  "rd3": "Specificați un sufix (se va crea o nouă variabilă cu sufixul)",
+  "txt3": "Introduceți un sufix",
+  "rd2": "Specificați un prefix (se va crea o nouă variabilă cu prefixul)",
+  "txt4": "Introduceți un prefix",
+  "rd1": "Suprascrieți variabilele existente",
+  "label3": "Metodă de utilizat",
+  "dropUnused": "Eliminați toate nivelurile neutilizate",
+  "levelsToDrop": "Specificați nivelurile de eliminat",
+  "drop": "Introduceți nivelurile de eliminat separate prin virgulă, de exemplu, nivel1,nivel2,nivel3 NOTĂ: Nu folosiți spații ca separatori între niveluri",
+  "help": {
+    "title": "Eliminare Niveluri Neutilizate",
+    "r_help": "help(fct_drop, package =forcats)",
+    "body": "\n<b>NOTĂ: NU ÎNCHIDEȚI NIVELURILE ÎN GHILIMELE DUBLE SAU SIMPLE, NU POT FI SPAȚII ÎN NUMELE NIVELURILOR. INTRODUCEȚI NIVELURI SEPARATE PRIN VIRGULE ÎN FORMATUL NIVEL1,NIVEL2,NIVEL3</b></br>\n<b>Descriere</b></br>\nIntroduceți variabilele factor pentru care doriți să eliminați niveluri neutilizate. Puteți specifica niveluri neutilizate pentru a le elimina introducându-le sau selectând să eliminați toate nivelurile neutilizate pentru variabilele selectate. Dacă variabila din setul de date are o valoare NA în date, atunci acel nivel NU este eliminat.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf: Un factor (sau vector de caractere).\n</li>\n<li>\nonly: Un vector de caractere care restricționează setul de niveluri de eliminat. Dacă este furnizat, vor fi eliminate doar nivelurile care nu au intrări și apar în acest vector.\n</li>\n</ul>\n<b>Exemple</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Setați doar pentru a restricționa ce niveluri să eliminați<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Pachet</b></br>\nforcats</br>\n<b>Ajutor</b></br>\nhelp(fct_drop, package =forcats)\n"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Mise à l'échelle multidimensionnelle",
+  "navigation": "Mise à l'échelle multidimensionnelle",
+  "betRows": "Entre les lignes",
+  "betVariables": "Entre les variables",
+  "textSize": "Taille du texte",
+  "textPos": "Position du texte",
+  "destination": "Sélectionner des variables",
+  "maxDimensions": "Dimensions maximales",
+  "label1": "Matrice de distance",
+  "computationMethod": "Méthode de calcul",
+  "power": "Puissance de la distance de Minkowski",
+  "dispDist": "Afficher la matrice de distance",
+  "saveDims": "Enregistrer les dimensions dans un nouveau jeu de données",
+  "datasetName": "Entrez éventuellement un nom de jeu de données pour enregistrer les dimensions",
+  "label2": "Options avancées",
+  "scalingMethod": "Méthode de mise à l'échelle",
+  "maxIter": "Nombre maximum d'itérations (*Non applicable pour la métrique classique)",
+  "plotResults": "Tracer les résultats",
+  "help": {
+    "title": "Mise à l'échelle multidimensionnelle",
+    "r_help": "aide(cmdscale, package=stats)",
+    "body": "\n<b>Description</b></br>\nIl existe différents types d'algorithmes MDS, y compris</br>\n<b>Mise à l'échelle multidimensionnelle classique</b></br>\nPréserve la métrique de distance d'origine entre les points autant que possible. Cela signifie que les distances ajustées sur la carte MDS et les distances d'origine sont dans la même métrique. La MDS classique appartient à la catégorie de la mise à l'échelle multidimensionnelle métrique.</br>\nElle est également connue sous le nom d'analyse des coordonnées principales. Elle est adaptée aux données quantitatives.</br></br>\n<b>Mise à l'échelle multidimensionnelle non métrique</b></br>\nElle est également connue sous le nom de MDS ordinale. Ici, ce n'est pas la métrique d'une valeur de distance qui est importante ou significative, mais sa valeur par rapport aux distances entre d'autres paires d'objets.</br>\nLa MDS ordinale construit des distances ajustées qui sont dans le même ordre de rang que la distance d'origine. Par exemple, si la distance entre les objets 1 et 5 est classée cinquième dans les données de distance d'origine, alors ils devraient également être classés cinquième dans la configuration MDS.</br>\nElle est adaptée aux données qualitatives.</br>\nNous utilisons les fonctions R suivantes</br>\ncmdscale() [package stats]: Calcule la mise à l'échelle multidimensionnelle classique (métrique).</br>\nisoMDS() [package MASS]: Calcule la mise à l'échelle multidimensionnelle non métrique de Kruskal (une forme de MDS non métrique).</br>\nsammon() [package MASS]: Calcule la cartographie non linéaire de Sammon (une forme de MDS non métrique).</br>\nToutes ces fonctions prennent un objet de distance comme argument principal et k est le nombre de dimensions souhaité dans la sortie mise à l'échelle. Par défaut, elles renvoient des solutions à deux dimensions, mais nous pouvons changer cela via le paramètre k qui est par défaut à 2.</br>\n<br/>\nDes options pour afficher la matrice de distance, enregistrer les dimensions dans un nouveau jeu de données et tracer les dimensions peuvent être sélectionnées. </br>\nLorsque la méthode de mise à l'échelle métrique classique est sélectionnée, nous affichons les valeurs propres, la statistique de qualité d'ajustement et le screeplot. Pour d'autres méthodes de mise à l'échelle, nous affichons la valeur de stress.\n<b>Aide</b></br>\nPour une aide détaillée, exécutez les commandes suivantes aide(dist, package=\"stats\") ou aide(cmdscale, package ='stats') ou aide(isoMDS, package = \"MASS\") ou aide(sammon, package =\"MASS\") dans l'éditeur R de BlueSky Statistics.           \n<br/>\n<br/>"
+  }
+}

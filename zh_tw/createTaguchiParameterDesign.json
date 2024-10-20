@@ -1,0 +1,16 @@
+{
+  "title": "創建田口風格的內外參數設計",
+  "navigation": "創建田口參數設計",
+  "datasetname": "設計名稱",
+  "inner": "內部設計（必須已隨機化）",
+  "outer": "外部設計",
+  "lbl1": "方向 - 以長格式或寬格式生成設計",
+  "directionLongrad": "長格式",
+  "directionWiderad": "寬格式",
+  "responses": "留空或指定一個或多個響應名稱（用逗號分隔，名稱之間不加引號或空格）",
+  "help": {
+    "title": "創建田口風格的內外參數設計",
+    "r_help": "幫助(param.design, 包 = DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tparam.design函數用於生成田口風格的參數設計。它為信噪比調查創建參數設計，具有內外數組，並促進其格式化和數據聚合。實驗將“內數組”中的控制因素與“外數組”中的噪聲因素交叉。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R幫助(param.design, 包 = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為factor_grid_twolevel_screen_Design.xlsx的示例數據集文件。通過文件打開菜單在數據網格中打開文件\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. 創建一個完整的因子設計，設計名稱為FFinnerRandom，選擇的因素為 - AirVolume, Valve, Barrel和Angle，並勾選“隨機生成設計”框\n\t\t\t\t<br/>\n\t\t\t\t2. 創建一個正交數組設計，設計名稱為FFouter，選擇的因素為 - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. 創建一個田口設計（此對話框/UI），選擇在步驟1和步驟2中已創建的FFinnerRandom和FFouter設計\n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

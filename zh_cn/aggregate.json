@@ -1,0 +1,15 @@
+{
+  "title": "汇总数据",
+  "navigation": "汇总",
+  "description": "通过一个或多个因子变量聚合一个或多个数值（尺度）变量，并创建一个新的聚合数据集。对于数值变量，我们计算以下内容：\n        均值、中位数、总和、标准差、不同值的数量、最大值、最小值和方差。\n        它还计算聚合数据集中的计数。",
+  "label1": "聚合选项",
+  "upperdesc": "选择要应用于被聚合变量的函数",
+  "datasetname": "输入聚合数据集的名称",
+  "showResultsinOutput": "在输出窗口中显示结果",
+  "groupBy": "按（因子或日期类型的变量）分组",
+  "help": {
+    "title": "聚合到数据集",
+    "r_help": "帮助(分组, 包=dplyr)",
+    "body": "\n            <b>描述</b></br>\n通过一个或多个因子变量聚合一个或多个数值（尺度）变量，并创建一个新的聚合数据集。对于数值变量，我们计算以下内容：\n均值、中位数、总和、标准差、不同值的数量、最大值、最小值和方差。\n它还计算聚合数据集中的计数。\n<br/>\n<b>用法</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## 刷新数据集</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>参数</b>\n <ul>\n   <li>\nvar1: 用于分组的因子\n</li>\n<li>\nvar2, var3: 要聚合的变量\n</li>\n<li>\nnewvarmean: 在聚合数据集中按var1分组的var2的均值\n</li>\n<li>\n​newvarmedian: 在聚合数据集中按var1分组的var3的中位数\n</li>\n</ul>\n            "
+  }
+}

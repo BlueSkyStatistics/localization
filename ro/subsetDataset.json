@@ -1,0 +1,20 @@
+{
+  "title": "Subset Dataset",
+  "navigation": "Subset",
+  "label0": "Puteți alege să salvați rezultatele într-un nou set de date sau să suprascrieți setul de date existent",
+  "label1": "Opțiuni",
+  "New": "Salvați rezultatele într-un nou set de date",
+  "newdatasetname": "Introduceți un nume de set de date",
+  "Existing": "Suprascrieți setul de date existent",
+  "Output": "Afișați rezultatele în fereastra de ieșire",
+  "distinct": "Selectați cazuri distincte",
+  "chkbox2": "Eliminați nivelurile de factor neutilizate",
+  "subsetvars": "Selectați variabilele de inclus în setul de date subset",
+  "label12": "\n\nCriteriile de subsetare se aplică fiecărei rânduri, vedeți exemplele de mai jos. \n1: Selectați rânduri unde var 1 nu este gol și var2 este gol, specificați:\n!is.na(var1) & is.na(var2) \n2: Selectați rânduri unde var1 > 30 și var 2 este Masculin, specificați:\nvar1>30 & var2=='Masculin' \n3: Criterii complexe și/sau specificați:\n(var1 !=10 & var2>20) | var3==40 \n4: Potrivire de model (xxx) sau o potrivire exactă (abc) specificați:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Potrivire a unui subșir după poziție specificați: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Introduceți criteriile de subsetare.",
+  "help": {
+    "title": "Subset Dataset",
+    "r_help": "ajutor(select, pachet=dplyr)",
+    "body": "\n            <b>Descriere</b></br>\nSubsetare seturi de date/dataframe. Returnează un subset al dataframe-ului/setului de date. Puteți specifica coloanele/variabilele pe care le doriți în setul de date mai mic. De asemenea, puteți specifica criterii de selecție care să fie aplicate fiecărei rânduri din dataframe.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: obiectul care trebuie subsetat.\n</li>\n<li>\nsubset: expresie logică care indică elementele sau rândurile de păstrat: valorile lipsă sunt considerate false.\n</li>\n<li>\nselect: expresie, care indică coloanele de selectat dintr-un dataframe.\n</li>\n</ul>\n<b>Valoare</b><br/>\nReturnează un set de date subsetat<br/>\n<b>Pachet</b></br>\ndplyr<br/>  \n<b>Ajutor</b></br>\najutor(select, pachet=dplyr)\n"
+  }
+}

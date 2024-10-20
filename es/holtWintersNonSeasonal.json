@@ -1,0 +1,31 @@
+{
+  "title": "Holt Winters, no estacional",
+  "navigation": "Holt Winters, no estacional",
+  "destination": "Variable a predecir",
+  "firstObservation": "Tiempo de la primera observación e.g.1: ingresar 1961,1 para enero de 1961 e.g.2: ingresar 1961,3 para el 3er trimestre de 1961, e.g.3: ingresar 1 para una serie continua",
+  "frequency": "Número de observaciones por unidad de tiempo e.g.1: ingresar 12 para una observación por cada mes de un año, e.g. 2: ingresar 4 para una observación por trimestre, e.g. 3: ingresar 1 para una serie continua.",
+  "label1": "Gráficas",
+  "plotSeries": "Graficar series",
+  "yaxisLabel": "Etiqueta del eje Y",
+  "mainTitle": "Título principal",
+  "label2": "Opciones para valores ajustados",
+  "saveFitted": "Guardar valores ajustados",
+  "fittedValsDatasetName": "Especificar el nombre del conjunto de datos para almacenar valores ajustados",
+  "oriVsFitted": "Graficar original vs. Ajustado",
+  "plotResiduals": "Graficar residuos",
+  "label3": "Predecir usando el modelo",
+  "predict": "Hacer predicciones usando el modelo",
+  "confInterval": "Especificar el intervalo de confianza en porcentajes e.g. 95 para 95%",
+  "periodToPredict": "Especificar el número de intervalos a predecir",
+  "savePredictedVals": "Guardar valores predichos",
+  "predictedValsDatasetName": "Especificar el nombre del conjunto de datos para almacenar valores predichos",
+  "plotPredicted": "Graficar valores predichos",
+  "correlogram": "Generar correlograma",
+  "maxlag": "Ingresar el máximo rezago",
+  "Boxtest": "Prueba de Ljung-Box",
+  "help": {
+    "title": "Holt Winters, no estacional",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>Descripción</b></br>\n            BSkyHoltWintersSeasonal es una función envoltura para HoltWinters del paquete stats.<br/>\nCalcula el filtrado de Holt-Winters de una serie temporal dada. Los parámetros desconocidos se determinan minimizando el error cuadrático de predicción. Internamente llama a HoltWinters con el parámetro gamma utilizado para el componente estacional establecido en FALSE. Se ajusta un modelo no estacional con gamma = 0/FALSE <br/> \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,Ljung_Boxtest=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArgumentos\n<ul>\n<li>\nvars: seleccionar una variable para construir un modelo\n</li>\n<li>\nstart: El tiempo de la primera observación debe ingresarse en el formato año,mes o año,trimestre e.g.( si sus datos están organizados en meses el 1992,1 para enero de 1992 o si sus datos están organizados en trimestres entonces 1992,1 se refiere al primer trimestre de 1992.\n</li>\n<li>\nfrequency: Número de observaciones en unidad de tiempo. Ejemplo: para mensual hay 12 observaciones en un año. Para trimestral hay 4 observaciones en un año.\n</li>\n<li>\nexponential: Determina si se realizará un suavizado exponencial, valor establecido en FALSE\n</li>\n<li>\nseasonal: una cadena de caracteres \"No Estacional\" para un modelo no estacional.  \n</li>\n<li>\nplotSeries: si es TRUE también se generará un gráfico de series temporales.\n</li>\n<li>\nsaveFitted: si es TRUE se guardan los valores ajustados.\n</li>\n<li>\nplotOriginalandForecast: Graficar series originales y pronosticadas\n</li>\n<li>\npredict: si es TRUE también se generarán valores predichos.\n</li>\n<li>\nsavePredictedVals: los valores predichos se guardarán.\n</li>\n<li>\nplotPredictedValues: los valores predichos también se graficarán.\n</li>\n<li>\ncorrelogram: si es TRUE se generará un correlograma.\n</li>\n<li>\nmain: título principal del gráfico\n</li>\n<li>\nylab: título para el eje y\n</li>\n<li>\ndataset: el nombre del conjunto de datos del cual se han seleccionado las variables\n</li>\n</ul>\n<b>Valor</b><br/>\nUn objeto de clase \"HoltWinters\", una lista con componentes:<br/>\nfitted: Una serie temporal múltiple con una columna para la serie filtrada así como para el nivel, tendencia y componentes estacionales, estimados contemporáneamente (es decir, en el tiempo t y no al final de la serie).<br/>\nx: La serie original<br/>\nalpha: alpha utilizado para el filtrado<br/>\nbeta: beta utilizado para el filtrado<br/>\ngamma: gamma utilizado para el filtrado<br/>\ncoefficients: Un vector con componentes nombrados a, b, s1, ..., sp que contienen los valores estimados para los componentes de nivel, tendencia y estacionales<br/>\nseasonal: El parámetro estacional especificado<br/>\nSSE: La suma final de errores cuadrados lograda en la optimización<br/>\ncall: La llamada utilizada<br/>\n<b>Paquete</b></br>\nforecast</br>\n<b>Ayuda</b></br>\nPara ayuda detallada haga clic en el ícono de R en la parte superior derecha de este diálogo o ejecute el siguiente comando en el editor de sintaxis de R help(HoltWinters , package=stats)\n"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Dichteplot",
+  "navigation": "Dichte",
+  "x": "Wählen Sie eine(n) Variable(n) zum Plotten aus",
+  "y": "Farbe, geben Sie eine Faktorvariable an",
+  "fill": "Füllung, geben Sie eine Faktorvariable an",
+  "label1": "Wählen Sie eine Position, um Überlappungen zu steuern",
+  "rd1": "Dichten stapeln",
+  "rd2": "Dichten stapeln und jede Stapel auf Einheitshöhe standardisieren",
+  "rd3": "Nebeneinander (Dodge)",
+  "alpha": "Opazität (0-1)",
+  "flip": "Achse umdrehen",
+  "specify_a_title": "Geben Sie einen Titel ein",
+  "x_title": "X-Achsenbeschriftung",
+  "y_title": "Y-Achsenbeschriftung",
+  "Facetrow": "Facetreihe",
+  "Facetcolumn": "Facetspalte",
+  "Facetwrap": "Facetumwicklung",
+  "Facetscale": "Facetmaßstab",
+  "help": {
+    "title": "Dichteplot",
+    "r_help": "hilfe(geom_density, paket='ggplot2')",
+    "body": "\n            <b>Beschreibung</b></br>\n            Plots die Dichtezählungen (1d Kernel-Dichteschätzung). Ermöglicht es Ihnen, Dichten nach einer Faktorvariablen zu trennen. Sie können auch optional Facetten, Themen und einen Titel sowie Beschriftungen für die x- und y-Achse erstellen.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Dichteplot für Variable var1\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Dichteplot für Variable var1, farblich nach Stufen von var2\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Das Standarddatenset\n            </li>\n            <li>\n            aes(): Generieren Sie ästhetische Zuordnungen, die beschreiben, wie Variablen in den Daten auf visuelle Eigenschaften (Ästhetik) von Geoms abgebildet werden.\n            </li>\n            <li>\n            x: die numerische Variable, für die Dichten geplottet werden sollen\n            </li>\n            <li>\n            y: ..count gibt die Zählungen der numerischen Variable an\n            </li>\n            <li>\n            fill: die Faktorvariable, nach der das Diagramm gruppiert wird\n            </li>\n            <li>\n            position: Positionsanpassung, entweder als Zeichenfolge oder das Ergebnis eines Aufrufs an eine Positionsanpassungsfunktion. Gültige Werte sind \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density (): 1d Kernel-Dichteschätzung, der Positionsparameter ermöglicht es Ihnen, die Positionsanpassung für überlappende Punkte auf dieser Ebene anzugeben.\n            </li>\n            <li>\n            Labs(): Ändern Sie Achsenbeschriftungen und Legendentitel (dies ist optional).\n            </li>\n            <li>\n            facet_grid(): Panels in einem Raster anordnen (dies ist optional)\n            </li>\n            <li>\n            theme_excel(): Das Excel-Thema (dies ist optional)\n            </li>\n            <li>\n            alpha: setzt die Transparenz\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes</br>\n            <b>Hilfe</b></br>\n            hilfe(geom_density)</br>\n            Andere: Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch eingeben hilfe(geom_density), hilfe(labs), hilfe(aes), hilfe(facet_grid), hilfe(theme_excel)\n    "
+  }
+}

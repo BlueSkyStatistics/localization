@@ -1,0 +1,16 @@
+{
+  "title": "Taille d'échantillon, ANOVA",
+  "navigation": "ANOVA",
+  "howtouse": "Pour calculer la taille de l'échantillon : spécifiez les moyennes de groupe et la puissance\nPour calculer la puissance : spécifiez la taille de l'échantillon et les moyennes de groupe\nPour calculer la variance détectable des moyennes de groupe : spécifiez la taille de l'échantillon et la puissance",
+  "numgrps": "Nombre de groupes",
+  "n": "Taille de l'échantillon par groupe",
+  "grpmeans": "Moyennes de groupe, spécifiez comme des valeurs séparées par des virgules, par exemple 20, 25, 40",
+  "power": "Puissance (0-1)",
+  "sd": "Écart type",
+  "siglevel": "Niveau de signification (0-1)",
+  "help": {
+    "title": "Taille d'échantillon, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour une ANOVA à un facteur équilibrée. Elle calcule la taille de l'échantillon, la puissance ou la différence de moyennes (calculée comme la variance entre les moyennes) lorsque l'utilisateur spécifie les deux autres.\n<br/><br/>\n<b>Nombre de groupes :</b> Spécifiez le nombre de groupes dans l'étude\n<br/><br/>\n<b>Taille de l'échantillon par groupe :</b> Spécifiez le nombre de sujets dans chaque groupe\n<br/><br/>\n<b>Moyennes de groupe :</b> Spécifiez les moyennes dans chaque groupe que vous souhaitez pouvoir détecter. Au moins une moyenne doit être différente des autres.\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance souhaitée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Écart type :</b> Spécifiez l'écart type du résultat. On suppose que cela est le même dans tous les groupes.\n<br/><br/>\n<b>Niveau de signification :</b> Spécifiez le niveau de signification souhaité (c'est-à-dire l'erreur de type I) du test\n<br/><br/>\n<b>Packages R requis :</b> stats\n\t\t\t"
+  }
+}

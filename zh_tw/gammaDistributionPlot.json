@@ -1,0 +1,26 @@
+{
+  "title": "伽瑪分布圖",
+  "navigation": "伽瑪分布圖",
+  "shape": "形狀",
+  "scale": "尺度（逆速率）",
+  "pdenfun": "繪製密度函數",
+  "pdstfun": "繪製分布函數",
+  "lblregions": "可選地通過指定密度函數下的區域",
+  "xvals": "x值",
+  "quantiles": "分位數",
+  "lblRegFill": "要填充的區域（指定一或兩個，或留空）",
+  "lblreg1": "區域 1 :",
+  "lblreg2": "區域 2 :",
+  "lblregfrm": "從",
+  "lblregto": "到",
+  "lblregcol": "顏色",
+  "lblLegPos": "圖例位置",
+  "toprt": "右上角",
+  "toplt": "左上角",
+  "topmid": "頂部中心",
+  "help": {
+    "title": "伽瑪分布圖",
+    "r_help": "help(qgamma, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            伽瑪分布的密度、分布函數、分位數函數和隨機生成，參數為形狀和尺度。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dgamma(x, shape, rate = 1, scale = 1/rate, log = FALSE)\n                <br/>\n                pgamma(q, shape, rate = 1, scale = 1/rate, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qgamma(p, shape, rate = 1, scale = 1/rate, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rgamma(n, shape, rate = 1, scale = 1/rate)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li></li>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果 length(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>rate : 指定尺度的另一種方式。</li>\n                \n                \n                <li>shape, scale : 形狀和尺度參數。必須為正，尺度嚴格。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為 TRUE，則返回概率/密度 p 的對數。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為 TRUE（默認），概率為 P[X ≤ x]，否則為 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            詳細信息\n            <br/>\n            如果省略尺度，則假定默認值為 1。\n            <br/>\n            具有參數 shape = a 和 scale = s 的伽瑪分布的密度\n            <br/>\n            <code>f(x)= 1/(s^a Gamma(a)) x^(a-1) e^-(x/s)</code>\n            <br/>\n            對於 x ≥ 0，a > 0 和 s > 0。（這裡 Gamma(a) 是 R 的 gamma() 實現的函數，並在其幫助中定義。注意 a = 0 對應於所有質量集中在點 0 的平凡分布。）\n            <br/>\n            均值和方差為 <code>E(X) = a*s 和 Var(X) = a*s^2.</code>\n            <br/>\n            累積風險 <code>H(t) = - log(1 - F(t))</code> 是\n            <br/>\n            -pgamma(t, ..., lower = FALSE, log = TRUE)\n            <br/>\n            注意，對於較小的形狀值（和適度的尺度），伽瑪分布的大部分質量在接近零的 x 值上，因此在計算機算術中將表示為零。因此 rgamma 可能會返回表示為零的值。（對於非常大的尺度值也會發生這種情況，因為實際生成是在 scale = 1 時進行的。）\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dgamma 給出密度，pgamma 給出分布函數，qgamma 給出分位數函數，rgamma 生成隨機偏差。\n            <br/>\n            無效參數將導致返回值 NaN，並發出警告。\n            <br/>\n            結果的長度由 rgamma 的 n 決定，對於其他函數則為數值參數的最大長度。\n            <br/>\n            除 n 之外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            S（Becker 等，1988）參數化是通過形狀和速率：S 沒有尺度參數。提供尺度和速率是錯誤的。\n            <br/>\n            pgamma 與不完全伽馬函數密切相關。根據 Abramowitz 和 Stegun 6.5.1（以及《數值計算》）的定義，這是\n            <br/>\n            <code>P(a,x) = 1/Gamma(a) integral_0^x t^(a-1) exp(-t) dt</code>\n            <br/>\n            P(a, x) 是 pgamma(x, a)。其他作者（例如 Karl Pearson 在他的 1922 年表中）省略了歸一化因子，定義不完全伽馬函數 γ(a,x) 為 gamma(a,x) = integral_0^x t^(a-1) exp(-t) dt，即 pgamma(x, a) * gamma(a)。還有其他人使用“上”不完全伽馬函數，\n            <br/>\n            <code>Gamma(a,x) = integral_x^Inf t^(a-1) exp(-t) dt,</code>\n            <br/>\n            可以通過 pgamma(x, a, lower = FALSE) * gamma(a) 計算。\n            <br/>\n            但是請注意，pgamma(x, a, ..) 當前要求 a > 0，而不完全伽馬函數也定義為負 a。在這種情況下，您可以使用來自 gsl 包的 gamma_inc(a,x)（對於 Γ(a,x)）。\n            <br/>\n            另請參見 https://en.wikipedia.org/wiki/Incomplete_gamma_function，或 http://dlmf.nist.gov/8.2#i.            \n"
+  }
+}

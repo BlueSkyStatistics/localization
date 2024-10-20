@@ -1,0 +1,21 @@
+{
+  "title": "Données d'exemple",
+  "navigation": "Exemple",
+  "label1": "Options de jeu de données",
+  "radio2": "Enregistrer les résultats dans un nouveau jeu de données",
+  "dsname": "Entrez un nom de jeu de données",
+  "radio1": "Écraser le jeu de données",
+  "label2": "Options d'échantillonnage",
+  "rd1": "Spécifiez le pourcentage du jeu de données à échantillonner",
+  "percentage": "Entrez le pourcentage",
+  "rd2": "Spécifiez le nombre de lignes à sélectionner",
+  "size": "Entrez le nombre de lignes",
+  "textn": "Entrez éventuellement un nom de variable ou une formule pour les poids",
+  "seed": "Définissez éventuellement une graine pour la reproductibilité des données",
+  "chk2": "Échantillon avec remplacement",
+  "help": {
+    "title": "Échantillon de jeu de données",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>Description</b></br>\nPrend un échantillon aléatoire des lignes du jeu de données existant. Échantillonne un % de lignes ou un nombre spécifié de lignes avec ou sans remplacement. Enregistre le résultat dans un nouveau jeu de données ou écrase le jeu de données existant.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \n#Échantillonne un nombre spécifié de lignes</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#Échantillonne une fraction des lignes</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ntbl: table de données. Voir ‘Détails.’\n</li>\n<li>\nsize: Pour sample_n(), le nombre de lignes à sélectionner. Pour sample_frac(), la fraction de lignes à sélectionner. \n</li>\n<li>\nreplace: L'échantillonnage doit-il se faire avec remplacement ?\n</li>\n<li>\nweights: Poids d'échantillonnage. Cela doit évaluer à un vecteur de nombres non négatifs de la même longueur que l'entrée. Les poids sont automatiquement standardisés pour faire 1.\n</li>\n</ul>\n<b>Paquet</b></br>\ndplyr\n<b>Aide</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

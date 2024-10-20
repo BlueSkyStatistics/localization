@@ -1,0 +1,15 @@
+{
+  "title": "貝塔機率",
+  "navigation": "貝塔機率",
+  "varvals": "輸入變數值，以逗號分隔。例如：3,0.5",
+  "shape1": "形狀 1",
+  "shape2": "形狀 2",
+  "labelSig": "顯著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "貝塔機率",
+    "r_help": "help(pbeta, package=stats)",
+    "body": "\n            <b>描述</b>\n<br/>\n密度、分布函數、分位數函數和隨機生成用於具有參數 shape1 和 shape2 的貝塔分布（可選的非中心參數 ncp）。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>參數</b>\n<br/>\n<ul>\n    <li>x, q : 分位數向量。</li>\n    \n    \n    <li>p : 機率向量。</li>\n    \n    \n    <li>n : 觀察數量。如果 length(n) > 1，則長度被視為所需的長度。</li>\n    \n    \n    <li>shape1, shape2 : 貝塔分布的非負參數。</li>\n    \n    \n    <li>ncp : 非中心參數。</li>\n    \n    \n    <li>log, log.p : 邏輯；如果為 TRUE，則機率 p 以 log(p) 的形式給出。</li>\n    \n    \n    <li>lower.tail : 邏輯；如果為 TRUE（默認），機率為 P[X ≤ x]，否則為 P[X > x]。</li>\n    \n</ul>\n\n\n\n<br/>\n<b>細節</b>\n<br/>\n具有參數 shape1 = a 和 shape2 = b 的貝塔分布的密度為\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\n對於 a > 0, b > 0 和 0 ≤ x ≤ 1，其中 x=0 或 x=1 的邊界值通過連續性（作為極限）定義。 \n<br/>\n 平均值為 a/(a+b)，方差為 ab/((a+b)^2 (a+b+1))。這些時刻和所有分布屬性可以定義為極限（導致在 0、1/2 或 1 處的點質量），當 a 或 b 為零或無窮大時，相應的 [dpqr]beta() 函數也相應定義。\n <br/>\npbeta 與不完全貝塔函數密切相關。根據 Abramowitz 和 Stegun 6.6.1 的定義\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\n和 6.6.2 I_x(a,b) = B_x(a,b) / B(a,b)，其中 B(a,b) = B_1(a,b) 是貝塔函數 (beta)。\n<br/>\n<code>I_x(a,b) 是 pbeta(x, a, b).</code>\n<br/>\n非中心貝塔分布（ncp = λ）被定義為 (Johnson et al, 1995, 第 502 頁) 為 X/(X+Y) 的分布，其中 X ~ chi^2_2a(λ) 和 Y ~ chi^2_2b。\n<br/>\n<br/><b>值</b>\n<br/>\ndbeta 給出密度，pbeta 給出分布函數，qbeta 給出分位數函數，rbeta 生成隨機偏差。\n<br/>\n無效參數將導致返回值 NaN，並發出警告。\n<br/>\n結果的長度由 n 確定，對於 rbeta，結果的長度是其他函數的數值參數長度的最大值。\n<br/>\n除 n 以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n<br/>\n<br/><b>注意</b>\n<br/>\n提供 ncp = 0 使用非中心分布的算法，這與省略 ncp 時使用的算法不同。這是為了在極端情況下與非常接近零的 ncp 值保持一致的行為。\n"
+  }
+}

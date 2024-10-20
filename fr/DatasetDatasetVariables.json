@@ -1,0 +1,13 @@
+{
+  "title": "Explorer les variable(s)",
+  "navigation": "Explorer les variables",
+  "variableListSelcted": "Sélectionnez une ou plusieurs variables à explorer",
+  "histCurveDispChk": "Afficher une courbe normale sur l'histogramme (les valeurs manquantes sont supprimées pour afficher la courbe)",
+  "statTableOrientionChk": "Statistiques résumées en colonnes",
+  "histBins": "Spécifiez le nombre de bacs pour l'histogramme",
+  "help": {
+    "title": "Explorer les caractéristiques d'une ou plusieurs variable(s)",
+    "r_help": "aide(résumé)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAffiche les statistiques descriptives et les graphiques suivants :\n\t\t\t\tmin, max, moyenne, médiane, modes, somme, sd, cv (coefficient de variation), var, erreur standard, asymétrie, kurtose, mad, iqr et quartiles. De plus, l'intervalle de confiance à 95 % pour la moyenne et la sd est calculé. L'histogramme et les graphiques QQ sont affichés. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R aide(résumé, paquet = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour calculer l'asymétrie et la kurtose, le type = 3 est utilisé par défaut. Avec le paramètre type = 2, les valeurs pour l'asymétrie et la kurtose correspondront probablement aux valeurs de la formule SKEW() et KURT() de MS Excel\n\t\t\t\t<br/>\n\t\t\t\tpsych::asymétrie(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtose(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVoir plus de détails \n\t\t\t\t<br/>\n\t\t\t\taide(asymétrie, paquet = psych)\n\t\t\t\t<br/>\n\t\t\t\taide(kurtose, paquet = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

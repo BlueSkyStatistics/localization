@@ -1,0 +1,18 @@
+{
+  "title": "Găsiți duplicatele",
+  "navigation": "Găsiți duplicatele",
+  "keysnote": "NOTĂ: Specificarea fără variabile cheie va duce la o căutare completă a cazurilor duplicate. Specificarea variabilelor cheie va căuta duplicate doar după valorile variabilelor cheie.",
+  "keyvarslabel": "Variabile cheie (opțional)",
+  "allduprowschecklabel": "Creează un set de date cu toate rândurile asociate cu duplicatele",
+  "allduprowsnamelabel": "Numele setului de date",
+  "alldatachecklabel": "Creează un set de date cu date originale și o coloană care indică duplicatele",
+  "alldatanamelabel": "Numele setului de date",
+  "dupvarnamelabel": "Numele variabilei duplicate",
+  "nodupdatachecklabel": "Creează un set de date cu toate duplicatele eliminate",
+  "nodupdatanamelabel": "Numele setului de date",
+  "help": {
+    "title": "Găsiți duplicatele",
+    "r_help": "help(duplicated, package = 'base')",
+    "body": "\nAceastă fereastră de dialog va găsi duplicate fie prin cazuri complete, fie prin variabile cheie. Duplicatele de caz complet sunt egale pentru fiecare valoare a fiecărei variabile. Duplicatele care folosesc variabile cheie sunt duplicate definite doar prin valori egale pentru variabile specifice, numite „chei”. Duplicatele sunt căutate de sus în jos în setul de date. Așadar, un rând duplicat înseamnă că valorile sunt egale cu un rând anterior. Se oferă rezumate ale duplicatelor.\n<br/><br/>\n<b>Variabile cheie:</b> Specificați variabile cheie opționale care definesc duplicatele. Dacă nu sunt selectate variabile cheie, se vor căuta duplicate de caz complet.\n<br/><br/>\n<b>Creează un set de date cu toate rândurile asociate cu duplicatele:</b> Acest lucru va crea un set de date cu toate rândurile duplicate și prima instanță a fiecărui rând corespunzător fiecărui duplicat. Setul de date de ieșire va fi sortat după toate variabilele din cazul duplicatelor complete și după variabilele cheie în cazul variabilelor cheie. Variabilele cheie vor fi, de asemenea, mutate la începutul setului de date de ieșire. Câmpul <b>Numele setului de date</b> poate fi folosit pentru a numi acest set de date de ieșire.\n<br/><br/>\n<b>Creează un set de date cu date originale și o coloană care indică duplicatele:</b> Acest lucru va crea un set de date care include toate datele originale plus o coloană suplimentară care indică rândurile duplicate (0=nu este duplicat, 1=duplicat). Câmpul <b>Numele setului de date</b> poate fi folosit pentru a numi acest set de date de ieșire. Câmpul <b>Numele variabilei duplicate</b> poate fi folosit pentru a numi această coloană suplimentară.\n<br/><br/>\n<b>Creează un set de date cu toate duplicatele eliminate:</b> Acest lucru va crea un set de date care elimină toate rândurile duplicate (fie caz complet, fie prin variabile cheie) unde duplicatele sunt căutate de sus în jos în setul de date. Aceasta înseamnă că toate instanțele 2, 3 etc. ale rândurilor vor fi eliminate. Câmpul </b>Numele setului de date</b> poate fi folosit pentru a numi acest set de date de ieșire.\n<br/><br/>\n<b>Pachete R necesare:</b> dplyr, arsenal\n"
+  }
+}

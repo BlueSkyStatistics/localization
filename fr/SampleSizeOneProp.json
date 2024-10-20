@@ -1,0 +1,18 @@
+{
+  "title": "Taille d'échantillon, Test d'une proportion",
+  "navigation": "Une proportion",
+  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la puissance, et l'autre sera calculée",
+  "n": "Taille de l'échantillon",
+  "power": "Puissance (0-1)",
+  "prop": "Proportion alternative (0-1)",
+  "prop0": "Proportion nulle (0-1)",
+  "siglevel": "Niveau de signification (0-1)",
+  "alternativeopt": "Hypothèse alternative",
+  "twosided": "Deux côtés",
+  "onesided": "Un côté",
+  "help": {
+    "title": "Taille d'échantillon, Test d'une proportion",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour un test de proportion à un échantillon. Il calcule la taille de l'échantillon ou la puissance, lorsque l'utilisateur spécifie l'un d'eux. Le calcul utilise la formule trouvée dans Chow S, Shao J, Wang H. Calculs de taille d'échantillon en recherche clinique (2008). Il utilise une approximation normale avec l'écart type basé sur la proportion alternative.\n<br/><br/>\n<b>Taille de l'échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance souhaitée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Proportion alternative (0-1) :</b> Spécifiez la proportion sous l'hypothèse alternative\n<br/><br/>\n<b>Proportion nulle (0-1) :</b> Spécifiez la proportion sous l'hypothèse nulle\n<br/><br/>\n<b>Niveau de signification :</b> Spécifiez le niveau de signification souhaité (c'est-à-dire l'erreur de type I) du test\n<br/><br/>\n<b>Hypothèse alternative :</b> Spécifiez si le test est bilatéral ou unilatéral\n<br/><br/>\n<b>Packages R requis :</b> stats\n\t\t\t"
+  }
+}

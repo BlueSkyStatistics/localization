@@ -1,0 +1,19 @@
+{
+  "title": "Exemplu din distribuția Cauchy",
+  "navigation": "Exemplu din distribuția Cauchy",
+  "entrdsname": "Introduceți numele pentru setul de date",
+  "location": "Locație",
+  "scale": "Scală",
+  "lblnoofsamples": "Numărul de mostre (rânduri)",
+  "lblnoofobsv": "Numărul de observații (coloane)",
+  "lblseed": "Sămânță",
+  "lblAddtoDS": "Adăugați la setul de date",
+  "chklbl1": "Mediile mostrelor",
+  "chklbl2": "Sumele mostrelor",
+  "chklbl3": "Abaterea standard a mostrelor",
+  "help": {
+    "title": "Exemplu din distribuția Cauchy",
+    "r_help": "ajutor(rcauchy, pachet=stats)",
+    "body": "\n            ​​\n            <b>Descriere</b>\n            <br/>\n            Densitate, funcție de distribuție, funcție quantil și generare aleatorie pentru distribuția Cauchy cu parametrul de locație locație și parametrul de scală scală.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n                dcauchy(x, locație = 0, scală = 1, log = FALSE)\n                <br/>\n                pcauchy(q, locație = 0, scală = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, locație = 0, scală = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, locație = 0, scală = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantile.</li>\n                \n                \n                <li>p : vector de probabilități.</li>\n                \n                \n                <li>n : numărul de observații. Dacă lungimea(n) > 1, lungimea este considerată ca fiind numărul necesar.</li>\n                \n                \n                <li>locație, scală : parametrii de locație și scală.</li>\n                \n                \n                <li>log, log.p : logic; dacă este TRUE, probabilitățile p sunt date ca log(p).</li>\n                \n                \n                <li>lower.tail : logic; dacă este TRUE (implicit), probabilitățile sunt P[X ≤ x], altfel, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalii</b>\n            <br/>\n            Dacă locația sau scala nu sunt specificate, acestea își asumă valorile implicite de 0 și 1, respectiv.\n            <br/>\n            Distribuția Cauchy cu locație l și scală s are densitate\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            pentru toate x.\n            <br/>\n            <br/><b>Valoare</b>\n            <br/>\n            dcauchy, pcauchy și qcauchy sunt respectiv densitatea, funcția de distribuție și funcția quantil a distribuției Cauchy. rcauchy generează deviate aleatoare din Cauchy.\n            <br/>\n            Lungimea rezultatului este determinată de n pentru rcauchy și este maximul lungimilor argumentelor numerice pentru celelalte funcții.\n            <br/>\n            Argumentele numerice, altele decât n, sunt reciclate la lungimea rezultatului. Numai primele elemente ale argumentelor logice sunt utilizate.\n            <br/>\n            <b>Sursa</b>\n            <br/>\n            dcauchy, pcauchy și qcauchy sunt toate calculate din versiuni numerice stabile ale definițiilor.\n            <br/>\n            rcauchy folosește inversiunea."
+  }
+}

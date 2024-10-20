@@ -1,0 +1,13 @@
+{
+  "title": "因果图",
+  "navigation": "因果关系",
+  "effectName": "表示要分析的效果的短字符字符串",
+  "mainTitle": "六西格玛因果图标题",
+  "subTitle": "因果图页脚标题（通常是六西格玛项目名称）",
+  "independent": "原因类别",
+  "help": {
+    "title": "因果图",
+    "r_help": "帮助(ss.ceDiag, 包 = SixSigma)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tceDiag函数用于按原因组创建因果图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R帮助(ss.ceDiag, 包 = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为cause_and_effect_table.xlsx的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

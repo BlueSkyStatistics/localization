@@ -1,0 +1,16 @@
+{
+  "title": "層次聚類",
+  "navigation": "層次",
+  "destination": "目的地",
+  "clusters": "聚類數量",
+  "storeClusterInDataset": "將聚類分配給數據集",
+  "variablename": "存儲聚類的變量名",
+  "biplot": "顯示聚類雙變量圖",
+  "dendogram": "繪製聚類樹狀圖",
+  "labelForClusteringMethod": "聚類方法",
+  "help": {
+    "title": "層次聚類",
+    "r_help": "幫助(hclust, 包 ='stats')",
+    "body": "\n<b>描述</b></br>\n對一組不相似性進行層次聚類分析及其分析方法。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvarsToCluster: 要分析的變量 \n</li>\n<li>\nmethod: 要使用的聚合方法。這應該是（一個明確的縮寫）之一 \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) 或 \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: 所需的聚類數量\n</li>\n<li>\nplotDendogram: 繪製樹狀圖 真或假\n</li>\n<li>\nassignClusterToDataset: 將聚類分配保存到數據集中\n</li>\n<li>\nlabel: 存儲聚類分配的新變量的名稱\n</li>\n<li>\nplotBiplot: 繪製雙變量圖 真或假\n</li>\n</ul>\n<b>包</b></br>\nBlueSky</br>\n<b>幫助</b></br>\n幫助(hclust, 包 ='stats')</br></br>\n<b>描述</b></br>\nplotDendrogram: 調用繪圖函數繪製聚類樹狀圖\n<br/>\n<b>用法</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmethod: 見上文\n</li>\n<li>\ndistance: 見上文\nplotBiplot: 繪製雙變量圖 真或假\n</li>\n</ul>\n<b>包</b></br>\nBlueSky</br>\n<b>幫助</b></br>\n幫助(plot)\n    "
+  }
+}

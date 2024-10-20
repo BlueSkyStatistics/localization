@@ -1,0 +1,15 @@
+{
+  "title": "Dimensiunea eșantionului, Precizia unei Corelații",
+  "navigation": "Corelație",
+  "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar celălalt va fi calculat",
+  "n": "Dimensiunea eșantionului",
+  "width": "Lățimea intervalului de încredere",
+  "corr": "Corelație (-1 la 1)",
+  "conflevel": "Nivel de încredere (0-1)",
+  "corrtype": "Tip de corelație",
+  "help": {
+    "title": "Dimensiunea eșantionului, Precizia unei Corelații",
+    "r_help": "help(prec_cor, package ='presize')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru o corelație Pearson, Spearman sau Kendall bazată pe lățimea intervalului de încredere. Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul specifică cealaltă.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Lățimea intervalului de încredere:</b> Specificați lățimea dorită a intervalului de încredere. Lățimea unui interval de încredere este o măsură a preciziei unei estimări și este limita superioară minus limita inferioară.\n<br/><br/>\n<b>Corelație:</b> Specificați valoarea de corelație așteptată\n<br/><br/>\n<b>Nivel de încredere:</b> Specificați nivelul dorit al intervalului de încredere\n<br/><br/>\n<b>Tip de corelație:</b> Specificați tipul de corelație care se calculează\n<br/><br/>\n<b>Pachete R necesare:</b> presize\n\t\t\t"
+  }
+}

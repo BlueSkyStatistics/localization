@@ -1,0 +1,17 @@
+{
+  "navigation": "Momento de muestra",
+  "title": "Momento de muestra",
+  "label2": "Configuraciones de prueba específicas",
+  "label3": "Configuraciones adicionales",
+  "showLengthNAs": "Mostrar longitud y NAs",
+  "order": "Orden",
+  "centralMoments": "Calcular momentos centrales",
+  "absoluteMoments": "Calcular momentos absolutos",
+  "missingValues": "Eliminar valores faltantes",
+  "Target": "Seleccione una o más variables",
+  "help": {
+    "title": "Momento de muestra",
+    "r_help": "help(moment, package ='moments')",
+    "body": "\n<b>Descripción</b></br>\nEsta función calcula el momento de muestra de orden especificado.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nmoment(x, order = 1, central = FALSE, absolute = FALSE, na.rm = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: un vector numérico de valores de datos.\n</li>\n<li>\norder: orden del momento a calcular\n</li>\n<li>\ncentral: un valor lógico - si se deben calcular momentos centrales.</br>\n</li>\n<li>\n</li>\n<li>\nabsolute: un valor lógico - si se deben calcular momentos absolutos.</br>\n</li>\n<li>\nna.rm: un valor lógico - ¿eliminar valores NA?.</br>\n</li>\n</ul>\n<b>Ejemplo</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nmoment(x))</br>\nmoment(x,order=3,absolute=TRUE)</br>\n</code> <br/>\n<b>Paquete</b></br>\nmoments</br>\n<b>Ayuda</b></br>\nPara obtener ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de este cuadro de diálogo o ejecute el siguiente comando help(moment, package ='moments') en el editor R de BlueSky Statistics.           \n<br/>\n<br/>\t\n\t\t\t"
+  }
+}

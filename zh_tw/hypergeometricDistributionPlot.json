@@ -1,0 +1,15 @@
+{
+  "title": "超幾何分布",
+  "navigation": "超幾何分布",
+  "m": "m ( urn 中的白球數量)",
+  "n": "n ( urn 中的黑球數量)",
+  "k": "k (從 urn 中抽取的球的數量)",
+  "labelSig": "顯著性水平",
+  "plotProb": "繪製概率質量函數",
+  "plotDistr": "繪製分佈函數",
+  "help": {
+    "title": "超幾何分布",
+    "r_help": "幫助(qhyper, 套件=stats)",
+    "body": "\n\n            <b>描述</b>\n            <br/>\n            超幾何分布的密度、分佈函數、分位數函數和隨機生成。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dhyper(x, m, n, k, log = FALSE)\n                <br/>\n                phyper(q, m, n, k, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qhyper(p, m, n, k, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rhyper(nn, m, n, k)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 表示從包含黑球和白球的 urn 中不放回抽取的白球數量的分位數向量。</li>\n                \n                \n                <li>m : urn 中的白球數量。</li>\n                \n                \n                <li>n : urn 中的黑球數量。</li>\n                \n                \n                <li>k : 從 urn 中抽取的球的數量。</li>\n                \n                \n                <li>p : 概率，必須在 0 和 1 之間。</li>\n                \n                \n                <li>nn : 觀察數量。如果長度(nn) > 1，則長度被視為所需數量。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為 TRUE，則概率 p 以 log(p) 的形式給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為 TRUE（默認），則概率為 P[X ≤ x]，否則為 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            超幾何分布用於不放回抽樣。該分布的密度與參數 m、n 和 k（在下面的參考文獻中分別稱為 Np、N-Np 和 n）由以下公式給出\n            <br/>\n            <code>\n                p(x) = choose(m, x) choose(n, k-x) / choose(m+n, k)\n                對於 x = 0, …, k.\n            </code>\n            <br/>\n            請注意，p(x) 僅在 max(0, k-n) <= x <= min(k, m) 時非零。\n            <br/>\n            設 p := m/(m+n)（因此 Np = N \times p 在參考文獻的符號中），前兩個矩的均值為\n            <br/>\n            <code>E[X] = μ = k p</code>\n            <br/>\n            和方差\n            <br/>\n            <code>Var(X) = k p (1 - p) * (m+n-k)/(m+n-1),</code>\n            <br/>\n            這表明與 Binomial(k,p) 的接近性（當 k = 1 時，超幾何分布的方差較小）。\n            <br/>\n            分位數定義為使得 F(x) ≥ p 的最小值 x，其中 F 是分佈函數。\n            <br/>\n            如果 m、n、k 中的某一個超過 .Machine$integer.max，目前使用 qhyper(runif(nn), m,n,k) 的等效值，當二項式近似可能更有效時。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dhyper 給出密度，phyper 給出分佈函數，qhyper 給出分位數函數，rhyper 生成隨機變數。\n            <br/>\n            無效參數將導致返回值 NaN，並發出警告。\n            <br/>\n            結果的長度由 rhyper 的 n 決定，並且是其他函數的數值參數長度的最大值。\n            <br/>\n            除 n 以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。            \n      "
+  }
+}

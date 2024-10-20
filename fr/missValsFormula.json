@@ -1,0 +1,13 @@
+{
+  "title": "Imputer les valeurs manquantes (À l'aide d'une formule)",
+  "navigation": "Utiliser une formule",
+  "depVar": "Sélectionnez une variable pour imputer les valeurs manquantes (C'est la variable dépendante dans le modèle)",
+  "label1": "Déplacez les variables indépendantes dans le contrôle du générateur de formules pour construire une formule. Survolez les symboles dans le générateur de formules pour obtenir de l'aide",
+  "formula": "Déplacer plusieurs variables avec le bouton de déplacement utilise un séparateur par défaut de +, indiquant des variables indépendantes sans termes d'interaction. Cliquez sur le symbole pour construire un modèle avec des termes d'interaction.",
+  "independent": "Variables indépendantes (une ou plusieurs)",
+  "help": {
+    "title": "Imputer les valeurs manquantes (À l'aide d'une formule)",
+    "r_help": "aide(if_else,package='dplyr')",
+    "body": "\n            <b>Description</b></br>\n            Construisez une formule pour remplacer les valeurs manquantes. Par exemple, vous construisez un modèle de régression pour développer des estimations pour les valeurs manquantes. Une fois l'équation générée, vous pouvez insérer l'équation dans la boîte de dialogue et seules les valeurs manquantes dans la variable sélectionnée seront calculées.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # substituer expression par var2*4+1.32<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            var: Le nom de la variable dans le jeu de données où les valeurs manquantes doivent être remplacées, par exemple var=c(\"sales\"). La variable doit être de classe numérique\n            </li>\n            <li>\n            Dataset: Le jeu de données/dataframe qui contient la variable var\n            </li>\n            <li>\n            expression: L'expression utilisée pour remplacer la valeur manquante, dans l'exemple ci-dessus c'est var2*4+ 1.32\n            </li>\n            </ul>\n            <b>Package</b></br>\n            dplyr</br>\n            <b>Aide</b></br>\n            Pour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante help(if_else, package ='dplyr') en créant un bloc de code R en cliquant sur + dans la fenêtre de sortie\n            "
+  }
+}

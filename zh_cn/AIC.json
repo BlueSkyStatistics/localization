@@ -1,0 +1,10 @@
+{
+  "title": "AIC",
+  "navigation": "AIC",
+  "modelselector1": "选择以下类别之一的模型（括号中的类别）线性模型（lm）广义线性模型（glm）有序逻辑回归或Probit回归（polr）多项式对数线性模型（multinom）",
+  "help": {
+    "title": "AIC",
+    "r_help": "help(AIC,package='stats')",
+    "body": "\n                <b>描述</b></br>\n通用函数计算Akaike的‘信息准则’用于一个或多个拟合模型对象，对于这些对象可以获得对数似然值，按照公式-2*log-likelihood + k*npar，其中npar表示拟合模型中的参数数量，k = 2为通常的AIC，或k = log(n)（n为观察数量）为所谓的BIC或SBC（Schwarz的贝叶斯准则）。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nAIC(object, ..., k = 2)\nBIC(object, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nobject: 一个拟合模型对象，对于该对象存在logLik方法以提取相应的对数似然，或一个继承自logLik类的对象。\n</li>\n<li>\n... 可选的更多拟合模型对象。\n</li>\n<li>\nk: 数值，使用的每个参数的惩罚；默认k = 2是经典的AIC。\n</li>\n</ul>\n<b>详细信息</b></br>\n在比较通过最大似然拟合到相同数据的模型时，AIC或BIC越小，拟合越好。\nAIC的理论要求对数似然已被最大化：虽然可以计算未通过最大似然拟合的模型的AIC，但不应比较它们的AIC值。</br>\n未“拟合到相同数据”的模型示例是响应被转换的情况（加速寿命模型拟合到对数时间）以及使用列联表汇总数据的情况。</br>\n这些是通用函数（在stats4包中定义了S4通用函数）：但是应该为log-likelihood函数logLik定义方法，而不是这些函数：它们的默认方法的作用是对所有提供的对象调用logLik并汇总结果。请注意，在几个常见情况下，logLik不会返回MLE的值：请参阅其帮助页面。</br>\n对数似然，因此AIC/BIC仅在加法常数的情况下定义。不同的常数通常用于不同的目的，因此extractAIC和AIC可能会给出不同的值（并且对于“lm”类的模型确实如此：请参阅extractAIC的帮助）。在比较不同类的拟合时需要特别小心（例如，比较Poisson和gamma GLM是没有意义的，因为一个有离散响应，另一个是连续的）。</br>\nBIC定义为AIC(object, ..., k = log(nobs(object)))。这需要知道观察数量：默认方法首先查找logLik方法返回值上的“nobs”属性，然后尝试nobs通用函数，如果两者都不成功，则返回BIC为NA。</br>\n<b>值</b><br/>\n如果只提供一个对象，则返回一个与相应AIC（或BIC，或...，取决于k）对应的数值。\n如果提供多个对象，则返回一个data.frame，行对应于对象，列表示模型中的参数数量（df）和AIC或BIC。<br/>\n<b>示例</b><br/>\n<code> \nlm1 <- lm(Fertility ~ . , data = swiss)</br>\nAIC(lm1)</br>\nstopifnot(all.equal(AIC(lm1),<br/>\n                    AIC(logLik(lm1))))<br/>\nBIC(lm1)</br>\nlm2 <- update(lm1, . ~ . -Examination)</br>\nAIC(lm1, lm2)</br>\nBIC(lm1, lm2)</br>\n</code> <br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖层右上角的R图标，或在R语法编辑器中运行以下命令help(AIC,package='stats')\n                "
+  }
+}

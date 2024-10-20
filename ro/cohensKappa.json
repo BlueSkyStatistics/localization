@@ -1,0 +1,16 @@
+{
+  "title": "Kappa lui Cohen",
+  "navigation": "Kappa lui Cohen",
+  "obs1var": "Observator 1:",
+  "obs2var": "Observator 2:",
+  "cilevel": "Nivel de încredere:",
+  "label1": "Greutăți ale categoriilor",
+  "equal": "Cicchetti-Allison (spațiere egală)",
+  "quadratic": "Fleiss-Cohen (cadratic)",
+  "agreeplot": "Grafic de acord și statistici Bangdiwala",
+  "help": {
+    "title": "Kappa lui Cohen",
+    "r_help": "ajutor(Kappa,package=vcd)",
+    "body": "\n                <b>Descriere</b></br>\nKappa lui Cohen măsoară acordul între doi observatori care măsoară aceleași subiecte. Kappa neponderat este pentru categorii neordonate, în timp ce kappa ponderat este pentru categorii ordonate. Pentru kappa ponderat, se acordă mai multă greutate categoriilor care sunt mai aproape. Kappa poate varia între -1 și 1, 1 fiind un acord perfect și 0 nu mai bun decât șansa. Valorile negative indică un acord mai rău decât șansa, dar acest lucru este rar în practică. Observatorii trebuie să măsoare subiecții pe aceeași scară, cu toate categoriile utilizate de fiecare observator. Acest lucru produce o tabelă de contingență pătrată. O tabelă de contingență și statisticile kappa sunt furnizate.</br>\nObservator 1: Variabilă care conține valorile furnizate de un observator; poate fi numerică sau un factor</br>\nObservator 2: Variabilă care conține valorile furnizate de un al doilea observator; poate fi numerică sau un factor</br>\nNivel de încredere: Nivelul dorit al intervalului de încredere pentru statisticile kappa</br>\nGreutăți ale categoriilor: Greutatea dorită pentru nivelurile de dezacord ale categoriilor</br>\nGrafic de acord și statistici Bangdiwala: opțiune de a produce un grafic de acord cu statistici Bangdiwala</br>\n<b>Pachet</b></br>\ngmodels;vcd</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă ajutor(Kappa,package=vcd) creând un bloc de cod R făcând clic pe + în fereastra de ieșire\n                "
+  }
+}

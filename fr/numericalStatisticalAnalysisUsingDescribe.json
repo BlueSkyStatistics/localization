@@ -1,0 +1,11 @@
+{
+  "title": "Statistiques Numériques, utilisant describe",
+  "navigation": "Sommaires Numériques, utilisant describe (Legacy)",
+  "tvarbox1": "Sélectionner des variables",
+  "tvarbox2": "Sélectionner des variables de regroupement",
+  "help": {
+    "title": "Statistiques Numériques, utilisant describe",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>Description</b></br>\nAffiche les statistiques numériques suivantes :</br>\ncompte, moyenne, écart type, médiane, tronqué, mad, min, max, plage, asymétrie, kurtosis, erreur standard\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \n#BSkyFormat affiche une sortie bien formatée<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : Un dataframe ou une matrice\n</li>\n</ul>\n<b>Paquet</b></br>\npsych</br>\n<b>Aide</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

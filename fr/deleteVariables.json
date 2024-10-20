@@ -1,0 +1,10 @@
+{
+  "title": "Supprimer des variables",
+  "navigation": "Supprimer",
+  "trg": "Variables à supprimer",
+  "help": {
+    "title": "Supprimer les NAs",
+    "r_help": "aide(na.omit, package=data.table)",
+    "body": "\n<b>Description</b></br>\nSupprimer les valeurs manquantes/NA du jeu de données/dataframe\nCrée un nouveau/Écrase le jeu de données existant en supprimant les lignes avec une ou plusieurs valeurs manquantes pour les colonnes/noms de variables sélectionnés\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n​object: un objet R.​\n</li>\n</ul>\n<b>Paquet</b></br>\ndata.table</br>\n<b>Aide</b></br>\naide(na.omit)\n"
+  }
+}

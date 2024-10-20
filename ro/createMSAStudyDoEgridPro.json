@@ -1,0 +1,30 @@
+{
+  "title": "Cree un tabel experiment pentru un studiu MSA Gage",
+  "navigation": "Proiectați studiul MSA",
+  "datasetname": "Numele tabelului studiului MSA Gage",
+  "label1": "Detalii pentru piese",
+  "label2": "Detalii pentru operatori",
+  "factor1": "Numele variabilei piesă (de exemplu, piesă ca implicit)",
+  "numOfFactorLevels1": "Numărul de piese",
+  "factorLevels1": "Lăsați gol pentru a genera automat valori sau specificați valori - exemplu: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "Dacă se generează automat, specificați orice prefix. Dacă este gol, va crea valori ca 1,2,3,..",
+  "factor2": "Numele variabilei operator (de exemplu, operator ca implicit)",
+  "numOfFactorLevels2": "Numărul de operatori",
+  "factorLevels2": "Lăsați gol pentru a genera automat valori sau specificați valori - exemplu: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "Dacă se generează automat, specificați orice prefix. Dacă este gol, va crea valori ca 1,2,3,..",
+  "numOfBlocks": "Numărul de blocuri",
+  "replicationVarName": "dacă nu este lăsat gol, numele pentru variabila de iterație a replicării dacă replicarea > 1",
+  "replications": "Replicări",
+  "repeatOnlyChk": "Repetați doar (în loc de replicare adevărată - nu este recomandat)",
+  "randomizationChk": "Rasfoiți execuțiile",
+  "selectRandomSeedRad": "Generați automat o sămânță aleatoare (unică de fiecare dată)",
+  "selectFixedRandomSeedRad": "Alegeți așa cum este arătat sau schimbați manual următoarea sămânță aleatoare",
+  "lbl1": "S-ar putea să nu fie necesar să schimbați valoarea seminței de randomizare",
+  "randomseeds": "Sămânță pentru randomizare",
+  "sortByOperatorChk": "Sortează după operator în fiecare replicare",
+  "help": {
+    "title": "Generați automat un tabel de experimente pentru un studiu MSA Gage",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tGenerează automat un tabel de studiu MSA pentru a configura execuțiile experimentului cu detalii despre piese și operatori pe baza parametrilor specificați. \n\t\t\t\tDacă se folosesc valori non-numerice pentru piesă și operator, specificați între ghilimele simple, de exemplu 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOdată ce detaliile execuțiilor experimentului sunt generate automat, tabelul de execuții va apărea în UI-ul grilei de date. \n\t\t\t\tTabelul de execuții poate fi salvat (sau 'salvați ca' din meniul fișier) pentru a crea un fișier Excel care să fie utilizat pentru configurarea experimentelor\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

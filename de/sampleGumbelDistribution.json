@@ -1,0 +1,19 @@
+{
+  "title": "Beispiel aus der Gumbel-Verteilung",
+  "navigation": "Beispiel aus der Gumbel-Verteilung",
+  "entrdsname": "Geben Sie den Namen für den Datensatz ein",
+  "location": "Standort",
+  "scale": "Skala",
+  "lblnoofsamples": "Anzahl der Proben (Zeilen)",
+  "lblnoofobsv": "Anzahl der Beobachtungen (Spalten)",
+  "lblseed": "Saat",
+  "lblAddtoDS": "Zum Datensatz hinzufügen",
+  "chklbl1": "Stichprobenmittelwerte",
+  "chklbl2": "Stichprobensummen",
+  "chklbl3": "Stichprobenstandardabweichungen",
+  "help": {
+    "title": "Beispiel aus der Gumbel-Verteilung",
+    "r_help": "help(rgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Beschreibung</b>\n            <br/>\n            Dichte, Verteilungsfunktion, Quantilsfunktion und Zufallszahlengenerierung für die Gumbel-Verteilung mit angegebenen Standort- und Skalenparametern.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : Vektor von Quantilen (Werte der Variablen).</li>\n                \n                \n                <li>p : Vektor von Wahrscheinlichkeiten.</li>\n                \n                \n                <li>n : Anzahl der Beobachtungen. Wenn die Länge(n) > 1 ist, wird die Länge als die benötigte Anzahl betrachtet.</li>\n                \n                \n                <li>location : Standortparameter (Standard 0); möglicherweise ein Vektor.</li>\n                \n                \n                <li>scale : Skalenparameter (Standard 1); möglicherweise ein Vektor.</li>\n                \n                <li>lower.tail : logisch; wenn TRUE (Standard), entsprechen Wahrscheinlichkeiten und Quantile P(X ≤ x), wenn FALSE P(X > x).</li>\n            </ul>            \n"
+  }
+}

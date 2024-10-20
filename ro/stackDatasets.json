@@ -1,0 +1,19 @@
+{
+  "title": "Stivuirea Seturilor de Date",
+  "navigation": "Stivuire",
+  "out": "Introduceți numele setului de date stivuit",
+  "in1": "Selectați 2 sau mai multe seturi de date",
+  "in2": "Selectați al 2-lea set de date",
+  "label1": "Opțiuni de Stivuire",
+  "label2": "Toate opțiunile de mai jos necesită 2 seturi de date cu exact aceleași nume de variabile",
+  "bindrows": "Legare Rânduri (stivuirea seturilor de date așa cum sunt, poate duce la rânduri duplicate)",
+  "union": "Uniune (stivuirea seturilor de date și eliminarea duplicatelor exacte)",
+  "intersect": "Intersecție (păstrează rândurile comune ambelor seturi de date)",
+  "setdiff": "Diferență (păstrează doar rândurile din 1st set de date, dar nu în 2nd)",
+  "id": "Dacă doriți să urmăriți din ce set de date provine fiecare observație, specificați un nume pentru această variabilă aici. NOTĂ: Noua variabilă este adăugată la începutul setului de date rezultat.",
+  "help": {
+    "title": "Stivuirea Seturilor de Date",
+    "r_help": "ajutor(bind_rows, pachet=dplyr)",
+    "body": "\n            <b>Descriere</b></br>\nAceastă fereastră de dialog vă va ajuta să stivuiți 2 sau mai multe seturi de date unul peste altul. Puteți selecta una dintre următoarele opțiuni.<br/>\n1. Legare Rânduri: Stivuiește cele 2 sau mai multe seturi de date exact așa cum sunt. Dacă un nume de variabilă este comun ambelor seturi de date, valorile se vor completa așa cum vă așteptați. Dacă un set de date A conține o variabilă numită var1 care nu este prezentă în celălalt set de date B, vor apărea NA în variabila var1 pentru toate rândurile care corespund setului de date B.<br/>\nToate opțiunile de mai jos funcționează DOAR pe 2 seturi de date și necesită ca ambele seturi de date să împărtășească aceleași variabile.<br/>\n2. Uniune: stivuiește seturile de date și elimină duplicatele<br/>\n3. Intersecție: păstrează rândurile comune ambelor<br/>\n4. Diferență: păstrează rândurile din 1st set de date, nu în 2nd<br/>\nÎn funcție de opțiunea selectată, se apelează funcțiile bind_rows, union, intersect și setdiff din pachetul dplyr.\nNOTĂ: puteți urmări opțional din ce set de date provine observația originală. ID-ul setului de date (1st/2nd) este adăugat la începutul setului de date care conține rezultatele.<br/>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapunerii de dialog sau rulați următoarea comandă ajutor(bind_rows, pachet=\"dplyr\") în fereastra de sintaxă R\n            "
+  }
+}

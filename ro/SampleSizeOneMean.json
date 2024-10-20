@@ -1,0 +1,18 @@
+{
+  "title": "Dimensiunea eșantionului, Test pentru o medie sau medii pereche",
+  "navigation": "O medie sau medii pereche",
+  "howtouse": "Specificați două din dimensiunea eșantionului, diferența dintre medii și puterea, iar al treilea va fi calculat",
+  "n": "Dimensiunea eșantionului",
+  "delta": "Diferența dintre medii",
+  "power": "Putere (0-1)",
+  "sd": "Deviație standard",
+  "siglevel": "Nivel de semnificație (0-1)",
+  "alternativeopt": "Ipoteza alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "help": {
+    "title": "Dimensiunea eșantionului, Test pentru o medie",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test t cu o medie sau un test de medii pereche. Calculează dimensiunea eșantionului, diferența dintre medii sau puterea, atunci când utilizatorul specifică două dintre ele.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Diferența dintre medii:</b> Dacă este un test t cu o medie, specificați diferența dintre media sub ipoteza alternativă și media sub ipoteza nulă. Dacă este un test t pereche, specificați diferența dintre mediile pereche sub ipoteza alternativă.\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă este adevărată.\n<br/><br/>\n<b>Deviație standard:</b> Specificați o estimare a deviației standard a măsurii de rezultat. Pentru teste pereche, aceasta este deviația standard a diferențelor pereche.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) al testului\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Pachete R necesare:</b> stats, broom\n\t\t\t"
+  }
+}

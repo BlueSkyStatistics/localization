@@ -1,0 +1,30 @@
+{
+  "title": "Analyse de la conception des expériences avec le modèle linéaire",
+  "navigation": "Analyse de la conception - Modèle linéaire",
+  "modelname": "Entrez le nom du modèle",
+  "dependent": "Variable de réponse (dépendante)",
+  "independent": "Variable(s) indépendante(s)",
+  "nointercept": "Ignorer l'intercept (si coché, ne pas cocher les options spécifiques ci-dessous pour la conception à 2 niveaux)",
+  "degree": "Degré (laisser vide ou taper 2 pour le modèle linéaire avec effets principaux et interactions à 2 facteurs)",
+  "effectsplot": "Tous les effets du graphique (généré uniquement lorsque le degré n'est pas spécifié)",
+  "generateplotchk": "Tracer les résidus vs ajustés, normal Q-Q, échelle-lieu et résidus vs levier",
+  "weights": "Spécifiez une variable avec des poids",
+  "twoLevelDesignTypeChk": "Les options suivantes ne s'appliquent qu'à une conception à 2 niveaux (par exemple, pb, FrF2, ..) - ne pas cocher cela si l'option Ignorer l'intercept est cochée ci-dessus",
+  "AliasChk": "Déterminer les alias",
+  "AliasCodedChk": "Alias codés",
+  "DanielplotChk": "Graphique de Daniel (graphique des effets)",
+  "DanielplotCodeChk": "Étiquette codée",
+  "DanielplotHalfChk": "Normal demi",
+  "DanielplotAlpha": "Alpha (niveau de signification pour l'étiquetage)",
+  "MEPlotChk": "MEPlot (graphiques des effets principaux)",
+  "IAPlotChk": "IAPlot (graphiques d'interaction)",
+  "IAPlotShowAliasChk": "Afficher les alias dans le graphique",
+  "cubePlotChk": "Graphique en cube des interactions de trois facteurs avec des moyennes modélisées",
+  "cubePlotModelMeanChk": "Tracer à la fois les moyennes modélisées et non modélisées",
+  "cubePlotIndependent": "Sélectionnez trois variable(s) indépendante(s) pour le graphique en cube",
+  "help": {
+    "title": "Analyse de la conception des expériences avec le modèle linéaire",
+    "r_help": "help(lm, package = 'stats')",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tConstruit un modèle de régression linéaire pour la conception afin d'analyser la réponse (c'est-à-dire les résultats enregistrés/collectés lors des expériences). Appelle en interne la fonction lm dans le package stats. Affiche un résumé du modèle, un tableau des coefficients, un tableau Anova et un tableau des sommes des carrés et trace les résidus suivants vs. ajustés, normal Q-Q, quantiles théoriques, résidus vs. levier. Vous pouvez optionnellement spécifier une variable avec des poids et choisir d'ignorer l'intercept.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour plus de détails, voir l'aide R pour les suivants\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Utilisation</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#Résumé du modèle<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Affichage du tableau Anova<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#Tracer les résidus vs. ajustés, normal Q-Q, échelle-lieu, résidus vs. levier<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+  }
+}

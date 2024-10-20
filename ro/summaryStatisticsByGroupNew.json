@@ -1,0 +1,14 @@
+{
+  "title": "Statistici Sumare (vechi)",
+  "navigation": "Statistici Sumare (Legacy)",
+  "tvarbox1": "Variabile selectate",
+  "tvarbox2": "Grupare după",
+  "ChkboxShowOnlyTopFewFactors": "Afișați numerele doar pentru cele mai importante N niveluri de factori",
+  "txtNumTopFactorsToShow": "Introduceți o valoare pentru N",
+  "label1": "Notă: Când caseta de selectare nu este bifată, numerele pentru TOATE nivelurile vor fi afișate. Acest lucru poate dura un timp considerabil dacă aveți multe niveluri de factori.",
+  "help": {
+    "title": "Statistici Sumare",
+    "r_help": "",
+    "body": "\n<b>Descriere</b></br>\nGenerează rezumate pentru fiecare grup. Una sau mai multe variabile sursă sunt grupate după variabilele destinație. Afișează Minim, 1st Quartile, Mediană, Medie, 3rd Quartile, Maxim și numărul de NAs pentru variabile numerice și de dată.</br>\nAjutorul R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă trebuie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
+  }
+}

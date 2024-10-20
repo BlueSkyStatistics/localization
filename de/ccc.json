@@ -1,0 +1,20 @@
+{
+  "title": "Korrelation-Koeffizient",
+  "navigation": "Korrelation-Koeffizient",
+  "obs1var": "Beobachter 1:",
+  "obs2var": "Beobachter 2:",
+  "cilevel": "Konfidenzniveau:",
+  "label1": "Methode des Konfidenzintervalls",
+  "ztrans": "Z-Transformation",
+  "asymp": "Asymptotisch",
+  "plotoptionslabel": "Plot-Optionen",
+  "plottitle": "Titel",
+  "xlabel": "X-Achsen-Beschriftung",
+  "ylabel": "Y-Achsen-Beschriftung",
+  "plottheme": "Plot-Thema",
+  "help": {
+    "title": "Korrelation-Koeffizient",
+    "r_help": "help(epi.ccc,package=epiR)",
+    "body": "\nDer Korrelation-Koeffizient (CCC) misst die Übereinstimmung zwischen zwei Beobachtern, die dieselben Subjekte auf derselben Skala für kontinuierliche Daten messen. Der CCC kann zwischen -1 und 1 liegen, wobei 1 perfekte Übereinstimmung und 0 keine Übereinstimmung bedeutet. Negative Werte zeigen negative Übereinstimmung an, was in der Praxis jedoch selten vorkommt. Ein Diagramm der Beobachter 1-Variable (x-Achse) vs. der Beobachter 2-Variable (y-Achse) wird ebenfalls mit einer Linie perfekter Übereinstimmung (y=x) bereitgestellt.\n<br/><br/>\n<b>Beobachter 1:</b> Variable, die die von einem Beobachter bereitgestellten Werte enthält; muss numerisch sein\n<br/>\n<b>Beobachter 2:</b> Variable, die die von einem zweiten Beobachter bereitgestellten Werte enthält; muss numerisch sein\n<br/>\n<b>Konfidenzniveau:</b> Gewünschtes Konfidenzintervallniveau für den CCC\n<br/>\n<b>Methode des Konfidenzintervalls:</b> Gewünschte Methode des Konfidenzintervalls. Die Z-Transformationsmethode (oder inverse hyperbolische Tangens-Transformation) ist normalerweise die bessere Wahl, da sie eine Normalverteilung besser approximiert.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> epiR, ggplot2, ggthemes\n                "
+  }
+}

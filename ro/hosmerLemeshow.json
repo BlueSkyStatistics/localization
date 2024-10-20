@@ -1,0 +1,13 @@
+{
+  "title": "Testul Hosmer-Lemeshow",
+  "navigation": "Testul Hosmer-Lemeshow",
+  "label1": "NOTĂ: SETUL DE DATE ACTIV TREBUIE SĂ FIE ACELAȘI SET DE DATE FOLOSIT PENTRU A CONSTRUI MODELUL",
+  "modelselector1": "Selectați un model liniar generalizat (model de clasă glm):",
+  "destination": "Variabila țintă:",
+  "bins": "Numărul de bins",
+  "help": {
+    "title": "Testul Hosmer-Lemeshow",
+    "r_help": "help(HLgof.test, package='MKmisc')",
+    "body": "\n                <b>Descriere</b></br>\nFuncția calculează teste de bontate a ajustării Hosmer-Lemeshow pentru statisticile C și H, precum și testul de sumă a pătratelor neponderate Cessie-van Houwelingen-Copas-Hosmer pentru bontatea ajustării globale.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nfit: vector numeric cu probabilități ajustate.\n</li>\n<li>\nobs: vector numeric cu valori observate.\n</li>\n<li>\nngr: numărul de grupuri pentru statisticile C și H.\n</li>\n<li>\nX: covariate pentru testul de bontate a ajustării globale Cessie-van Houwelingen-Copas-Hosmer.\n</li>\n<li>\nverbose: logic, imprimă rezultate intermediare.\n</li>\n</ul>\n<b>Detalii</b></br>\nTeste de bontate a ajustării Hosmer-Lemeshow sunt calculate; vezi Lemeshow și Hosmer (1982). Dacă X este specificat, se determină suplimentar testul de sumă a pătratelor neponderate Cessie-van Houwelingen-Copas-Hosmer pentru bontatea ajustării globale; vezi Hosmer et al. (1997). O versiune mai generală a acestui test este implementată în funcția residuals.lrm din pachetul rms.</br>\n<b>Valoare</b><br/>\nO listă de rezultate ale testului.\n<b>Exemple</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>Pachet</b></br>\nMKmisc</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă în editorul de sintaxă R help(HLgof.test, package=\"MKmisc\")\n                "
+  }
+}

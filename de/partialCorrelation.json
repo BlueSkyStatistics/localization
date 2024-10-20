@@ -1,0 +1,13 @@
+{
+  "title": "Semi-partielle Korrelationen",
+  "navigation": "Semi-partiell",
+  "statistic": "Wählen Sie eine Methode",
+  "tvarbox1": "Variablen auswählen",
+  "correlationType": "Art der Korrelation",
+  "tvarbox2": "Kontrollvariablen auswählen",
+  "help": {
+    "title": "Semi-partielle Korrelationen",
+    "r_help": "hilfe(spcor.test, paket=ppcor)",
+    "body": "\n            <b>Beschreibung</b></br>\n            Semi-partielle Korrelation für zwei Variablen unter Berücksichtigung einer dritten Variablen. Wir berechnen die paarweise semi-partielle Korrelation zwischen jeder der in den ausgewählten Variablen angegebenen Variablen, wobei wir die in den Kontrollvariablen angegebenen Variablen kontrollieren.<br/>\n            Wir haben eine Wrapper-Funktion um die Funktion spcor.test geschrieben, die spcor.test für jedes Paar der angegebenen Variablen aufruft.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            Argumente\n            x: ein numerischer Vektor.\n            </li>\n            <li>\n            y: ein numerischer Vektor.\n            </li>\n            <li>\n            y: ein numerischer Vektor.\n            </li>\n            <li>\n            method: ein Zeichenstring, der angibt, welcher partielle Korrelationskoeffizient berechnet werden soll. Einer von \"pearson\" (Standard), \"kendall\" oder \"spearman\" kann abgekürzt werden..\n            </li>\n            </ul>\n            <b>Details</b></br>\n            Die semi-partielle Korrelation ist die Korrelation von zwei Variablen, wobei die Variation einer dritten Variablen nur von der zweiten Variablen entfernt wird. Wenn der Determinant der Varianz-Kovarianz-Matrix numerisch null ist, wird die Moore-Penrose-generalisierten Matrixinversion verwendet. In diesem Fall werden kein p-Wert und keine Statistik bereitgestellt, wenn die Anzahl der Variablen größer oder gleich der Stichprobengröße ist.</br>\n            <b>Wert</b><br/>\n            estimate: der semi-partielle (Teil-) Korrelationskoeffizient zwischen zwei Variablen.<br/>\n            p.value: der p-Wert des Tests.<br/>\n            n: Die Anzahl der Proben.<br/>\n            <b>Beispiele</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>Paket</b></br>\n            ppcor</br>\n            <b>Hilfe</b></br>\n            hilfe(pcor.test, paket=ppcor)\n"
+  }
+}

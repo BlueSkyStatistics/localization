@@ -1,0 +1,12 @@
+{
+  "title": "缺失值分析，行佈局",
+  "navigation": "行佈局",
+  "subsetvars": "選擇要分析缺失值的變數",
+  "chk1": "按缺失值數量排序結果",
+  "chk2": "將缺失值的累積和添加到數據中",
+  "help": {
+    "title": "缺失值分析，行佈局",
+    "r_help": "help(miss_var_summary, package ='naniar')",
+    "body": "\n<b>描述</b></br>\n分析缺失值並以行的形式顯示結果，顯示變數級別缺失值的彙總信息，並列出被分析變數在每行中的缺失值數量。 </br>\n為每個變數提供缺失值數量、缺失百分比和缺失值的累積和的彙總，默認按每個變數的缺失值數量排序。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nmiss_var_summary(data, order = FALSE, add_cumsum = FALSE, ...)\n</code> <br/>\n參數\n<ul>\n<li>\ndata: 數據框\n</li>\n<li>\norder: 一個邏輯值，指示是否按 n_miss 排序結果。默認值為 TRUE。如果為 FALSE，則變數的順序為輸入順序。\n</li>\n<li>\nadd_cumsum: 一個邏輯值，指示是否將缺失值的累積和添加到數據中。這在探索非回應模式時可能很有用。這些是作為缺失值在變數中首次呈現給函數時的累積和計算的。</br>\n</li>\n</ul>\n<b>詳細信息</b></br>\n每個變數缺失數據的百分比的 tibble<br/>\n<b>包</b></br>\nnaniar</br>\n<b>幫助</b></br>\nhelp(miss_var_summary, package ='naniar')<br/><br/>\n<b>描述</b></br>\n為數據中的每個案例提供缺失值數量、缺失百分比和缺失值的累積和的彙總，默認按每個變數的缺失值數量排序。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nmiss_case_summary(data, order = TRUE, add_cumsum = FALSE, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndata: 數據框\n</li>\n<li>\norder: 一個邏輯值，指示是否按 n_miss 排序結果。默認值為 TRUE。如果為 FALSE，則變數的順序為輸入順序。\n</li>\n<li>\nadd_cumsum: 一個邏輯值，指示是否將缺失值的累積和添加到數據中。這在探索非回應模式時可能很有用。這些是作為缺失值在變數中首次呈現給函數時的累積和計算的。</li>\n</ul>\n<b>值</b><br/>\n每個案例缺失數據的百分比的 tibble。<br/>\n<b>包</b></br>\nnaniar</br>\n<b>幫助</b></br>\nhelp(miss_case_summary, package ='naniar')\n"
+  }
+}

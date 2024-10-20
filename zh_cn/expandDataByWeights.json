@@ -1,0 +1,11 @@
+{
+  "title": "扩展权重",
+  "navigation": "扩展",
+  "datasetname": "扩展权重的数据集名称",
+  "destination": "输入包含权重的列",
+  "help": {
+    "title": "扩展权重",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>描述</b></br>\n        创建一个新数据集，按权重扩展行。根据源数据集或数据表中某一列包含的值扩展（复制）data.frame的行。BSkySetWeights()调用来自splitstackshape包的expandRows()。\n        <br/>\n        <b>用法</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>参数</b><br/>\n         <ul>\n           <li>\n        weights: 包含权重的数据集变量。 \n        </li>\n        <li>\n        data: 输入的data.frame或data.table。\n        </li>\n        <li>\n        newdata: 新数据集，其中的行根据指定的权重进行复制。\n        </li>\n        </ul>\n        <b>包</b></br>\n        splitstackshape</br>\n        <b>帮助</b></br>\n        help (expandRows)\n        "
+  }
+}

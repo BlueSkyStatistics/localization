@@ -1,0 +1,18 @@
+{
+  "title": "Rang Variable(s)",
+  "navigation": "Rang",
+  "label1": "Entrez un suffixe ou un préfixe pour les nouvelles variables classées",
+  "suffix": "Suffixe",
+  "prefix": "Préfixe",
+  "txt1": "Entrez un suffixe/préfixe",
+  "dest": "Sélectionnez la ou les variable(s) à classer",
+  "rankby": "Sélectionnez éventuellement la ou les variable(s) pour classer les valeurs à l'intérieur",
+  "label2": "Spécifiez une fonction de classement",
+  "rankfn": "Sélectionnez une fonction de classement, cliquez sur aide pour des informations supplémentaires",
+  "nooftiles": "Pour la fonction de classement ntile, spécifiez le nombre de groupes à diviser en :",
+  "help": {
+    "title": "Rang Variable(s)",
+    "r_help": "aide(moyenne)",
+    "body": "\n<b>Description</b></br>\nLES RANGS SERONT STOCKÉS DANS DE NOUVELLES VARIABLES AVEC LE PRÉFIXE OU SUFFIXE SPÉCIFIÉ</br>\nSix variations sur les fonctions de classement, imitant les fonctions de classement décrites dans SQL2003. Elles sont actuellement mises en œuvre à l'aide de la fonction de rang intégrée et sont fournies principalement comme une commodité lors de la conversion entre R et SQL. Toutes les fonctions de classement associent les plus petites entrées aux plus petites sorties. Utilisez desc() pour inverser la direction.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nrow_number(x)\nntile(x, n)\nmin_rank(x)\ndense_rank(x)\npercent_rank(x)\ncume_dist(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: Un vecteur de valeurs à classer. Les valeurs manquantes sont laissées telles quelles. Si vous souhaitez les traiter comme les plus petites ou les plus grandes valeurs, remplacez-les par Inf ou -Inf avant le classement.\n</li>\n<li>\nn: nombre de groupes à diviser.\n</li>\n</ul>\n<b>Détails</b><br/>\nrow_number(): équivalent à rank(ties.method = \"first\")<br/>\nmin_rank(): équivalent à rank(ties.method = \"min\")<br/>\ndense_rank(): comme min_rank(), mais sans lacunes entre les rangs<br/>\npercent_rank(): un nombre entre 0 et 1 calculé en redimensionnant min_rank à [0, 1]<br/>\ncume_dist(): une fonction de distribution cumulative. Proportion de toutes les valeurs inférieures ou égales au rang actuel.<br/>\nntile(): un rang approximatif, qui divise le vecteur d'entrée en n seaux.<br/>\n<b>Exemples</b><br/>\n<code> \nx <- c(5, 1, 3, 2, 2, NA)<br/>\nrow_number(x)<br/>\nmin_rank(x)<br/>\ndense_rank(x)<br/>\n</code><br/>\n<b>Paquet</b></br>\ndplyr</br>\n<b>Aide</b></br>\naide(classement, paquet='dplyr')"
+  }
+}

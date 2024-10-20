@@ -1,0 +1,15 @@
+{
+  "title": "Taille d'échantillon, Précision de l'AUC",
+  "navigation": "AUC",
+  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la largeur de l'intervalle de confiance, et l'autre sera calculée",
+  "n": "Taille d'échantillon",
+  "width": "Largeur de l'intervalle de confiance",
+  "auc": "AUC (aire sous la courbe ROC, 0.5-1)",
+  "conflevel": "Niveau de confiance (0-1)",
+  "prev": "Prévalence des résultats (0-1)",
+  "help": {
+    "title": "Taille d'échantillon, Précision de l'AUC",
+    "r_help": "help(prec_auc, package ='presize')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour l'aire sous une courbe caractéristique de fonctionnement du récepteur basée sur la largeur de l'intervalle de confiance. Il calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur spécifie l'autre.\n<br/><br/>\n<b>Taille d'échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Largeur de l'intervalle de confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de la précision d'une estimation et est la limite supérieure moins la limite inférieure.\n<br/><br/>\n<b>AUC :</b> Spécifiez la valeur AUC attendue\n<br/><br/>\n<b>Niveau de confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<b>Prévalence des résultats :</b> Spécifiez la proportion de sujets ayant le résultat 'positif'. Cela correspond au niveau modélisé avec le modèle statistique candidat.\n<br/><br/>\n<b>Packages R requis :</b> presize\n\t\t\t"
+  }
+}

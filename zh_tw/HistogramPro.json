@@ -1,0 +1,26 @@
+{
+  "title": "每個面和組的疊加正態曲線直方圖",
+  "navigation": "直方圖",
+  "x": "X軸，指定一個或多個數值變量",
+  "bins": "指定箱的數量",
+  "fill": "指定一個分組（類別）變量",
+  "binwidth": "箱寬",
+  "barcolor": "可選擇填充顏色（選擇顏色後，單擊控件外部以應用）",
+  "alpha": "不透明度（0-1）",
+  "flip": "翻轉軸",
+  "specify_a_title": "輸入標題",
+  "x_title": "X軸標籤",
+  "y_title": "Y軸標籤",
+  "Facetrow": "面行",
+  "Facetcolumn": "面列",
+  "Facetwrap": "面包裹（如果選擇，將忽略任何面行和列的選擇）",
+  "Facetscale": "面比例",
+  "normalCurveColor": "可選擇正態曲線顏色（選擇顏色後，單擊控件外部以應用）",
+  "rugPlot": "顯示小數據集的毛毯圖",
+  "normalCurve": "顯示正態曲線（缺失值被移除以顯示曲線）",
+  "help": {
+    "title": "直方圖",
+    "r_help": "help(geom_histogram, package=ggplot2)",
+    "body": "\n            <b>描述</b></br>\n            直方圖是數值數據分佈的圖形表示。它是對連續變量（定量變量）概率分佈的估計。您可以指定箱寬或使用默認值，見下文。可以通過指定因子變量來選擇性地創建面。您還可以選擇性地指定主題，並為X軸和Y軸指定標題和標籤。</br>\n            當您為X軸變量選擇多個變量時，我們為每個X軸變量創建一個單獨的直方圖。我們可以選擇性地疊加正態曲線和毛毯圖。</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(x=engine) )+  geom_histogram(binwidth=10) +labs(x=\"engine\",y=\"Counts\") +  xlab(\"\")​\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集​\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變量如何映射到幾何圖形的視覺屬性（美學）。​\n            </li>\n            <li>\n            x: 要繪製直方圖的數值/比例變量。​\n            </li>\n            <li>\n            geom_histogram: 創建直方圖，默認情況下，stat_bin使用30個箱 - 這不是一個好的默認值，但目的是讓您嘗試不同的箱寬..\n            </li>\n            <li>\n            geom_rug: 創建毛毯圖    \n            </li>\n            <li>\n            stat_function: 創建正態曲線（注意：需要刪除缺失值以顯示曲線）    \n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）\n            </li>\n            <li>\n            alpha: 取值範圍在0-1之間，1表示沒有不透明度。不透明度適用於直方圖的填充顏色\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>幫助</b></br>\n            help(geom_histogram, package=ggplot2)</br>\n            點擊R幫助按鈕以獲取詳細的R幫助。您還可以輸入help(labs)，help(geom_bar)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)​\n           "
+  }
+}

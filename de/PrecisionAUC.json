@@ -1,0 +1,15 @@
+{
+  "title": "Stichprobengröße, Präzision des AUC",
+  "navigation": "AUC",
+  "howtouse": "Geben Sie entweder die Stichprobengröße oder die Breite des Konfidenzintervalls an, und das andere wird berechnet",
+  "n": "Stichprobengröße",
+  "width": "Breite des Konfidenzintervalls",
+  "auc": "AUC (Fläche unter der ROC-Kurve, 0.5-1)",
+  "conflevel": "Konfidenzniveau (0-1)",
+  "prev": "Ergebnisprävalenz (0-1)",
+  "help": {
+    "title": "Stichprobengröße, Präzision des AUC",
+    "r_help": "help(prec_auc, package ='presize')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für die Fläche unter einer Receiver Operating Characteristic-Kurve basierend auf der Breite des Konfidenzintervalls. Es berechnet die Stichprobengröße oder die Breite des Konfidenzintervalls, wenn der Benutzer das andere angibt.\n<br/><br/>\n<b>Stichprobengröße:</b> Geben Sie die Anzahl der Probanden in der Studie an\n<br/><br/>\n<b>Breite des Konfidenzintervalls:</b> Geben Sie die gewünschte Breite des Konfidenzintervalls an. Die Breite eines Konfidenzintervalls ist ein Maß für die Präzision einer Schätzung und ist die obere Grenze minus die untere Grenze.\n<br/><br/>\n<b>AUC:</b> Geben Sie den erwarteten AUC-Wert an\n<br/><br/>\n<b>Konfidenzniveau:</b> Geben Sie das gewünschte Niveau des Konfidenzintervalls an\n<br/><br/>\n<b>Ergebnisprävalenz:</b> Geben Sie den Anteil der Probanden mit dem 'positiven' Ergebnis an. Dies entspricht dem Niveau, das mit dem Kandidatenstatistikmodell modelliert wird.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Dimensiunea eșantionului, Precizia unei Rate de Risc",
+  "navigation": "Rata de Risc",
+  "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar cealaltă va fi calculată",
+  "n1": "Dimensiunea Eșantionului Grup 1",
+  "width": "Lățimea Intervalului de Încredere",
+  "ratio": "Raportul Dimensiunii Eșantionului Grup 2 la Grup 1",
+  "prop1": "Proporția Rezultatului Grup 1",
+  "prop2": "Proporția Rezultatului Grup 2",
+  "conflevel": "Nivel de Încredere (0-1)",
+  "method": "Metoda Intervalului de Încredere",
+  "help": {
+    "title": "Dimensiunea eșantionului, Precizia unei Rate de Risc",
+    "r_help": "help(prec_riskratio, package ='presize')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un raport de proporții (rată de risc / risc relativ) bazată pe lățimea intervalului de încredere. Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul specifică cealaltă.\n<br/><br/>\n<b>Dimensiunea Eșantionului Grup 1:</b> Specificați numărul de subiecți din grupul 1\n<br/><br/>\n<b>Lățimea Intervalului de Încredere:</b> Specificați lățimea dorită a intervalului de încredere. Lățimea unui interval de încredere este o măsură a preciziei unei estimări și este limita superioară minus limita inferioară.\n<br/><br/>\n<b>Raportul Dimensiunii Eșantionului Grup 2 la Grup 1:</b> Specificați raportul dimensiunii eșantionului grupului 2 la dimensiunea eșantionului grupului 1. O valoare de 1 înseamnă dimensiuni egale ale eșantionului.\n<br/><br/>\n<b>Proporția Rezultatului Grup 1:</b> Specificați proporția subiecților din grupul 1 cu rezultatul 'pozitiv'\n<br/><br/>\n<b>Proporția Rezultatului Grup 2:</b> Specificați proporția subiecților din grupul 2 cu rezultatul 'pozitiv'\n<br/><br/>\nRețineți că rata de risc va fi calculată ca proporția din grupul 1 împărțită la proporția din grupul 2.\n<br/><br/>\n<b>Nivel de Încredere:</b> Specificați nivelul dorit al intervalului de încredere\n<br/><br/>\n<b>Metoda Intervalului de Încredere:</b> Specificați tipul de interval de încredere de utilizat. Koopman (koopman) oferă un interval de încredere de scor asimptotic care este întotdeauna consistent cu testul chi-pătrat al lui Pearson. Este intervalul recomandat (Fagerland et al.). Katz (katz) folosește o transformare logaritmică pentru a calcula intervalul de încredere. CI nu poate fi calculat dacă una dintre proporții este zero. Dacă ambele proporții sunt 1, estimarea erorii standard devine zero, rezultând un CI de [1, 1].\n<br/><br/>\n<b>Pachete R Necesare:</b> presize\n\t\t\t"
+  }
+}

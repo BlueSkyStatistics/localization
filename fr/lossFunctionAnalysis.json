@@ -1,0 +1,16 @@
+{
+  "title": "Analyse de la fonction de perte",
+  "navigation": "Analyse de la fonction de perte",
+  "lfaSubTitle": "Sous-titre pour la sortie graphique",
+  "independent": "Colonne contenant les données pour l'analyse de la fonction de perte",
+  "lfaDelta": "Tolérance du processus",
+  "lfaY0": "Cible du processus",
+  "lfaL0": "Coût de la mauvaise qualité à la limite de tolérance",
+  "lfaSize": "Taille de la production, lot, etc. pour calculer la perte totale dans un groupe (plage, lot, période, ...)",
+  "lfaOutput": "Type de sortie (valeurs possibles - texte, graphique ou les deux)",
+  "help": {
+    "title": "Analyse de la fonction de perte",
+    "r_help": "help(ss.lfa, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction ss.lfa effectue une analyse de la fonction de perte de qualité basée sur la fonction de perte de Taguchi pour les caractéristiques \"Nominal-the-Best\".\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé loss_function_table.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

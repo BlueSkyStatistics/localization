@@ -1,0 +1,31 @@
+{
+  "title": "Heatmap",
+  "navigation": "Heatmap",
+  "rowVariables": "Zielvariable",
+  "columnVariables": "Spaltenvariablen",
+  "options": "Optionen",
+  "title1": "Titel der Heatmap",
+  "dendrogram": "Dendrogramm:",
+  "label1": "Optionen für das Zeilen-Dendrogramm:",
+  "plotRowYes": "Dendrogramm basierend auf Zeilenmittelwerten neu anordnen",
+  "plotRowNo": "Keine Neuanordnung (Dendrogramm wird nicht berechnet)",
+  "label2": "Optionen für das Spalten-Dendrogramm",
+  "plotColumnYes": "Dendrogramm basierend auf Spaltenmittelwerten neu anordnen",
+  "plotColumnNo": "Nein",
+  "symmetric": "Im Falle einer symmetrischen Matrix Spalten wie Zeilen behandeln",
+  "trace": "Optionen zum Zeichnen einer durchgehenden Trace-Linie über Zeilen, Spalten, sowohl Zeilen als auch Spalten oder keine",
+  "density": "Dichteoptionen:",
+  "scale": "Werte sollten in Zeilenrichtung, Spaltenrichtung oder nicht zentriert werden",
+  "label3": "Fehlende Werte",
+  "Remove": "Alle Zeilen entfernen, die einen fehlenden Wert enthalten",
+  "Keep": "Zeilen beibehalten, die fehlende Werte enthalten",
+  "label4": "Werte in der Zelle platzieren",
+  "valuesNo": "Ja",
+  "valuesYes": "Nein",
+  "noteColors": "Wählen Sie eine Farbe für Zellwerte (Nach der Farbauswahl klicken Sie außerhalb der Steuerung, um anzuwenden):",
+  "help": {
+    "title": "Heatmap",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>Beschreibung</b></br>\n            Eine Heatmap ist eine grafische Darstellung von Daten, bei der die einzelnen Werte in einer Matrix als Farben dargestellt werden. Facetten können optional erstellt werden, indem eine Faktorvariable angegeben wird. Sie können auch optional Themen angeben und einen Titel sowie Beschriftungen für die x- und y-Achse festlegen.</br>\n            Der Datensatz muss im Format column1, column2…columnN vorliegen, wobei</br>\n            column1: Die Subjekte identifiziert, z.B. Namen von Personen, deren Cholesterinwerte dargestellt werden</br>\n            column2:  Die Cholesterinwerte zu Zeitpunkt 1 identifiziert</br>\n            column3:  Die Cholesterinwerte zu Zeitpunkt 2 identifiziert</br>\n            column4:  Die Cholesterinwerte zu Zeitpunkt 3 identifiziert</br>\n            column5:  Die Cholesterinwerte zu Zeitpunkt 4…</br>\n            Column1 ist ein Label für jede Zeile in der Heatmap.</br>\n            Für Column 2 und folgende werden die Werte in jeder Zeile der Spalte als Farben in der Heatmap dargestellt.</br>\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Subjekt'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            Die obige Funktion befindet sich im BlueSky-Paket und ruft die Funktion heatmap.2 im gplots-Paket auf.\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Der Standarddatensatz\n            </li>\n            <li>\n            rowVariable: Die Spaltenvariable, die Informationen über die Subjekte enthält, für die das Diagramm erstellt wird, siehe oben\n            </li>\n            <li>\n            colVariables:  eine Liste von Spaltenvariablen, die Werte enthalten, die als Farben in der Heatmap dargestellt werden\n            </li>\n            <li>\n            Colv: bestimmt, ob und wie das Spalten-Dendrogramm neu angeordnet werden soll. Hat die Optionen wie das Rowv-Argument oben und zusätzlich, wenn x eine quadratische Matrix ist, bedeutet Colv=\"Rowv\", dass Spalten identisch zu den Zeilen behandelt werden sollen.\n            </li>\n            <li>\n            Rowv:   bestimmt, ob und wie das Zeilen-Dendrogramm neu angeordnet werden soll. Standardmäßig ist es TRUE, was impliziert, dass das Dendrogramm berechnet und basierend auf den Zeilenmittelwerten neu angeordnet wird. Wenn NULL oder FALSE, wird kein Dendrogramm berechnet und keine Neuanordnung vorgenommen. Wenn ein Dendrogramm, wird es \"wie es ist\" verwendet, d.h. ohne Neuanordnung. Wenn ein Vektor von Ganzzahlen, wird das Dendrogramm berechnet und basierend auf der Reihenfolge des Vektors neu angeordnet.\n            </li>\n            <li>\n            na.rm: logisch, das bestimmt, ob NAs entfernt werden sollen\n            </li>\n            <li>\n            dendrogram: Zeichenfolge, die angibt, ob 'none', 'row', 'column' oder 'both' Dendrogramme gezeichnet werden sollen. Standardmäßig ist es 'both'. Wenn jedoch Rowv (oder Colv) FALSE oder NULL ist und das Dendrogramm 'both' ist, wird eine Warnung ausgegeben und die Rowv (oder Colv) Argumente werden beachtet.\n            </li>\n            <li>\n            scale: Zeichenfolge, die angibt, ob die Werte in der Zeilenrichtung oder der Spaltenrichtung zentriert und skaliert werden sollen, oder nicht. Der Standardwert ist \"none\".\n            </li>\n            <li>\n            trace: Zeichenfolge, die angibt, ob die Werte in der Zeilenrichtung oder der Spaltenrichtung zentriert und skaliert werden sollen, oder nicht. Der Standardwert ist \"none\".\n            </li>\n            <li>\n            density.info: Zeichenfolge, die angibt, ob ein 'Histogramm', ein 'Dichte'-Diagramm oder kein Diagramm ('none') auf dem Farb-Schlüssel überlagert werden soll.\n            </li>\n            <li>\n            noteForCells: logisch, das angibt, ob Werte in den Zellen der Heatmap platziert werden sollen.\n            </li>\n            <li>\n            notecol: Farbe der Notizen. Wenn angegeben, werden Werte in den Zellen der Heatmap in der angegebenen Farbe notiert..\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            BlueSky;gplots;</br>\n            <b>Hilfe</b></br>\n            help(heatmap.2,package='gplots')</br>\n            Andere: Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) eingeben.</br>\n            Beispiel-Datensätze: Siehe Heatmaps.Rdata im Ordner Beispiel-DatensätzeSample R Datasets</br>\n     "
+  }
+}

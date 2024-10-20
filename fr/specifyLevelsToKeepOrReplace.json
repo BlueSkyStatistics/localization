@@ -1,0 +1,23 @@
+{
+  "title": "Spécifiez les niveaux à conserver ou à remplacer par d'autres",
+  "navigation": "Regrouper dans Autre (Manuellement)",
+  "target": "Facteurs à réorganiser",
+  "label1": "Entrez les niveaux de facteur à conserver ou à remplacer par d'autres. Lorsque les niveaux à conserver sont sélectionnés, les niveaux restants seront remplacés par \"Autre\". Lorsque remplacer est sélectionné, les niveaux spécifiés seront remplacés par \"Autre\".",
+  "other": "Nom de niveau utilisé pour les valeurs \"Autre\"",
+  "label3": "Méthode à utiliser",
+  "keep": "Conserver les niveaux",
+  "drop": "Supprimer les niveaux",
+  "keepOption": "Entrez les niveaux à conserver séparés par des virgules, les niveaux restants seront remplacés par \"Autre\", par exemple niveau1,niveau2,niveau3",
+  "dropOption": "Entrez les niveaux à remplacer par \"Autre\", par exemple niveau1,niveau2,niveau3",
+  "label2": "Enregistrer les résultats dans de nouvelles variables ou écraser les variables existantes",
+  "rd3": "Spécifiez un suffixe (Une nouvelle variable sera créée avec le suffixe)",
+  "txt3": "Entrez un suffixe",
+  "rd2": "Spécifiez un préfixe (Une nouvelle variable sera créée avec le préfixe)",
+  "txt4": "Entrez un préfixe",
+  "rd1": "Écraser les variables existantes",
+  "help": {
+    "title": "Niveaux à conserver ou à remplacer",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>REMARQUE : NE PAS ENFERMER LES NIVEAUX DANS DES GUILLEMETS SIMPLES OU DOUBLES, IL NE DOIT PAS Y AVOIR D'ESPACES DANS LES NOMS DE NIVEAUX. ENTREZ LES NIVEAUX SÉPARÉS PAR DES VIRGULES AU FORMAT NIVEAU1,NIVEAU2, NIVEAU3</b><br/>\n<b>Description</b></br>\nEntrez les niveaux de facteur à conserver ou à supprimer. Lorsque conserver est sélectionné, les niveaux restants seront remplacés par \"Autre\". Lorsque supprimer est sélectionné, les niveaux supprimés seront remplacés par \"Autre\".\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Autre\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf : Un facteur (ou vecteur de caractères).\n</li>\n<li>\nconserver, supprimer : conserver préservera les niveaux listés, remplaçant tous les autres par other_level. supprimer remplacera les niveaux listés par other_level, gardant tous les autres tels quels.\n</li>\n<li>\nother_level : Valeur de niveau utilisée pour les valeurs \"autres\". Toujours placé à la fin des niveaux.\n</li>\n</ul>\n<b>Exemples</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>Paquet</b></br>\nforcats</br>\n<b>Aide</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

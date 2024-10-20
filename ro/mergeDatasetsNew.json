@@ -1,0 +1,28 @@
+{
+  "title": "Fuzionare Seturi de Date",
+  "join": "Îmbinare mapare",
+  "navigation": "Fuzionare",
+  "description": "Fuzionarea seturilor de date te va ajuta să îmbini 2 seturi de date. În mod implicit, acest dialog va căuta nume de variabile comune în cele 2 seturi de date și va fuziona pe întregul set de variabile comune.",
+  "out": "Introdu numele setului de date fuzionat",
+  "in1": "Selectează primul set de date",
+  "in2": "Selectează al doilea set de date",
+  "label1": "Opțiuni de Fuzionare",
+  "leftjoin": "Fuzionare Stângă (Păstrează doar rândurile din primul set de date (stâng))",
+  "rightjoin": "Fuzionare Dreaptă (Păstrează doar rândurile din al doilea set de date (drept))",
+  "innerjoin": "Fuzionare Internă (Păstrează rândurile comune ambelor seturi de date)",
+  "fulljoin": "Fuzionare Completă (Păstrează toate rândurile din oricare set de date)",
+  "semijoin": "Fuzionare Semi (Păstrează toate rândurile din primul set de date (stâng) cu o potrivire în al doilea set de date (drept))",
+  "antijoin": "Fuzionare Anti (Păstrează toate rândurile din primul set de date (stâng) fără o potrivire în al doilea set de date (drept))",
+  "label2": "Suprascrie fuzionarea efectuată pe toate numele de coloane comune",
+  "by": "Pentru a suprascrie setarea implicită a fuzionării efectuate pe toate numele de coloane comune, introdu un subset de numele de coloane comune mai jos, separate prin , De exemplu, țară, regiune. Fuzionarea se va efectua doar pe numele de coloane comune introduse. Formatează această listă ca valori separate printr-o virgulă, de exemplu, A,B,C",
+  "label3": "Dacă numele coloanelor pe care se face fuzionarea sunt diferite în fiecare set de date",
+  "byDiffNames": "Introdu numele coloanelor corespunzătoare separate printr-o virgulă, de exemplu, 'C'='D', 'B'='A'. Te rugăm să folosești ghilimele simple ( ' ) aici.",
+  "label4": "Dacă există nume de coloane comune în ambele seturi de date",
+  "suffix": "În mod implicit, .x și .y vor fi folosite ca sufixe pentru variabilele comune. Dacă dorești să le schimbi, introdu-le aici separate printr-o virgulă, de exemplu, 1,2. Reține că orice . va fi înlocuit cu un _ în setul de date de ieșire",
+  "advOptions": "Opțiuni Avansate",
+  "help": {
+    "title": "Fuzionare Seturi de Date",
+    "r_help": "help(join, package=dplyr)",
+    "body": "\n            <b>Descriere</b></br>\n            Fuzionarea seturilor de date te va ajuta să îmbini 2 seturi de date.<br/>Trebuie să specifici una sau mai multe variabile în setul de date activ și în setul de date țintă selectat pe care dorești să se efectueze fuzionarea.<br/>\n            Rezultatele vor fi salvate într-un nou set de date.<br/>\n            inner_join: returnează toate rândurile din x unde există valori corespunzătoare în y, și toate coloanele din x și y. Dacă există mai multe potriviri între x și y, se returnează toate combinațiile potrivirilor.</br>\n            left_join: returnează toate rândurile din x, și toate coloanele din x și y. Rândurile din x fără potrivire în y vor avea valori NA în noile coloane. Dacă există mai multe potriviri între x și y, se returnează toate combinațiile potrivirilor.</br>\n            right_join: returnează toate rândurile din y, și toate coloanele din x și y. Rândurile din y fără potrivire în x vor avea valori NA în noile coloane. Dacă există mai multe potriviri între x și y, se returnează toate combinațiile potrivirilor.</br>\n            full_join: returnează toate rândurile și toate coloanele din ambele x și y. Acolo unde nu există valori corespunzătoare, returnează NA pentru cel lipsă.</br>\n            semi_join: Păstrează toate rândurile din primul set de date cu o potrivire în al doilea set de date</br>\n            anti_join: Păstrează toate rândurile din primul set de date fără o potrivire în al doilea set de date)</br>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            left_join(x, y, by = c(NULL), suffix = c(\".x\", \".y\"), ...)\n            right_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            inner_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            full_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            semi_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            anti_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: set de date de îmbinat\n            </li>\n            <li>\n            y: set de date de îmbinat\n            </li>\n            <li>\n            by: un vector de caractere de variabile de îmbinat. Dacă este NULL, implicit, *_join() va face o îmbinare naturală, folosind toate variabilele cu nume comune în cele două tabele. Un mesaj listează variabilele astfel încât să poți verifica că sunt corecte (pentru a suprima mesajul, enumeră explicit variabilele pe care dorești să le îmbini). Pentru a îmbina prin variabile diferite în x și y folosește un vector numit. De exemplu, by = c(\"a\" = \"b\") va potrivi x.a cu y.b.\n            </li>\n            <li>\n            suffix: Dacă există variabile duplicate neîmbinate în x și y, aceste sufixe vor fi adăugate la ieșire pentru a le deosebi. Ar trebui să fie un vector de caractere de lungime 2.\n            </li>\n            </ul>\n            <b>Valoare</b><br/>\n            Un tibble.<br/>\n            <b>Pachet</b></br>\n            dplyr</br>\n            <b>Ajutor</b></br>\n            Pentru ajutor detaliat, fă clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulează următoarea comandă help(left_join, package=\"dplyr\") creând un bloc de cod R făcând clic pe + în fereastra de ieșire\n"
+  }
+}

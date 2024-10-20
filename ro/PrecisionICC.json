@@ -1,0 +1,15 @@
+{
+  "title": "Dimensiunea eșantionului, Precizia ICC",
+  "navigation": "ICC",
+  "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar cealaltă va fi calculată",
+  "n": "Dimensiunea eșantionului",
+  "width": "Lățimea intervalului de încredere",
+  "icc": "ICC (coeficientul de corelație intraclasa, 0-1)",
+  "conflevel": "Nivelul de încredere (0-1)",
+  "raters": "Numărul de evaluatori",
+  "help": {
+    "title": "Dimensiunea eșantionului, Precizia AUC",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un coeficient de corelație intraclasa (ICC) bazat pe lățimea intervalului de încredere. Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul specifică cealaltă. Faptul că ICC este calculat pentru o ANOVA unidirecțională sau bidirecțională nu contează în aproximația utilizată. Consultați Bonett DG (2002), Cerințe de dimensiune a eșantionului pentru estimarea corelațiilor intraclasa cu precizia dorită, Statistics in Medicine, 21:1331-1335.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Lățimea intervalului de încredere:</b> Specificați lățimea intervalului de încredere dorită. Lățimea unui interval de încredere este o măsură a preciziei unei estimări și este limita superioară minus limita inferioară.\n<br/><br/>\n<b>ICC:</b> Specificați valoarea ICC așteptată\n<br/><br/>\n<b>Nivelul de încredere:</b> Specificați nivelul dorit al intervalului de încredere\n<br/><br/>\n<b>Numărul de evaluatori:</b> Specificați numărul de evaluatori care vor oferi valori pentru fiecare subiect.\n<br/><br/>\n<b>Pachete R necesare:</b> presize\n\t\t\t"
+  }
+}

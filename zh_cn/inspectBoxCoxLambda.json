@@ -1,0 +1,11 @@
+{
+  "title": "具有先前Box-Cox变换的变量的Lambda (λ)值",
+  "navigation": "检查Lambda",
+  "label2": "选择一个或多个变量以检查是否应用了Box-Cox变换，如果是，相关的Lambda (λ)值",
+  "variablelistSelcted": "待检查的变量",
+  "help": {
+    "title": "检查与所选变量相关的Lambda (λ)值",
+    "r_help": "帮助(boxcox, 包 = MASS)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t检查与先前Box-Cox变换的所选变量相关的Lambda (λ)值（如果有）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关Box-Cox或Lambda (λ)的详细帮助 - 使用R帮助(boxcox, 包 = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">有关MASS Box-Cox的良好概述，请参见 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t与熟悉的Box-Cox变换相关的Lambda (λ)值\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方变换 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 无变换; 返回原始数据 ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根变换 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根变换\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根变换\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然对数变换 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 倒数平方根变换 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 倒数 (逆) 变换 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 倒数平方变换 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

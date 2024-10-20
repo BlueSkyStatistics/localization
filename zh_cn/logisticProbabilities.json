@@ -1,0 +1,15 @@
+{
+  "title": "逻辑概率",
+  "navigation": "逻辑概率",
+  "varvals": "输入变量值，用逗号分隔。例如：3,0.5",
+  "location": "位置",
+  "scale": "尺度",
+  "labelSig": "显著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "逻辑概率",
+    "r_help": "帮助(plogis, 包=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            逻辑分布的密度、分布函数、分位数函数和随机生成，参数为位置和尺度。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dlogis(x, 位置 = 0, 尺度 = 1, log = FALSE)\n                <br/>\n                plogis(q, 位置 = 0, 尺度 = 1, 下尾 = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, 位置 = 0, 尺度 = 1, 下尾 = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, 位置 = 0, 尺度 = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察数量。如果长度(n) > 1，则长度被视为所需数量。</li>\n                \n                \n                <li>位置, 尺度 : 位置和尺度参数。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n                \n                \n                <li>下尾 : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            如果省略位置或尺度，则默认为0和1。\n            位置=m和尺度=s的逻辑分布的分布函数为\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            密度为\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            这是一个长尾分布，均值为m，方差为π^2 /3 s^2。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dlogis给出密度，plogis给出分布函数，qlogis给出分位数函数，rlogis生成随机偏差。\n            <br/>\n            结果的长度由rlogis的n决定，并且是其他函数的数值参数长度的最大值。\n            <br/>\n            除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            qlogis(p)与著名的“logit”函数相同，logit(p) = log(p/(1-p))，因此plogis(x)被称为“逆logit”。\n            <br/>\n            分布函数是一个缩放的双曲正切，plogis(x) == (1+ tanh(x/2))/2，在神经网络等上下文中称为sigmoid函数。\n            \n      "
+  }
+}

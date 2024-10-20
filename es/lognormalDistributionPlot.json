@@ -1,0 +1,26 @@
+{
+  "title": "Gráfico de Distribución Lognormal",
+  "navigation": "Gráfico de Distribución Lognormal",
+  "meanlog": "Media (escala logarítmica)",
+  "sdlog": "Desviación estándar (escala logarítmica)",
+  "pdenfun": "Graficar función de densidad",
+  "pdstfun": "Graficar función de distribución",
+  "lblregions": "Especificar opcionalmente regiones bajo la función de densidad mediante",
+  "xvals": "valores x",
+  "quantiles": "cuantiles",
+  "lblRegFill": "Regiones a llenar (especificar una o dos, o dejar en blanco)",
+  "lblreg1": "Región 1 :",
+  "lblreg2": "Región 2 :",
+  "lblregfrm": "Desde",
+  "lblregto": "Hasta",
+  "lblregcol": "Color",
+  "lblLegPos": "Posición de la leyenda",
+  "toprt": "Arriba a la derecha",
+  "toplt": "Arriba a la izquierda",
+  "topmid": "Centro arriba",
+  "help": {
+    "title": "Gráfico de Distribución Lognormal",
+    "r_help": "help(qlnorm, package=stats)",
+    "body": "\n            ​​\n            <b>Descripción</b>\n            <br/>\n            Densidad, función de distribución, función cuantil y generación aleatoria para la distribución lognormal cuyo logaritmo tiene una media igual a meanlog y una desviación estándar igual a sdlog.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dlnorm(x, meanlog = 0, sdlog = 1, log = FALSE)\n                <br/>\n                plnorm(q, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlnorm(p, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlnorm(n, meanlog = 0, sdlog = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantiles.</li>\n                \n                \n                <li>p : vector de probabilidades.</li>\n                \n                \n                <li>n : número de observaciones. Si la longitud(n) > 1, se toma la longitud como la requerida.</li>\n                \n                \n                <li>meanlog, sdlog : media y desviación estándar de la distribución en la escala logarítmica con valores predeterminados de 0 y 1 respectivamente.</li>\n                \n                \n                <li>log, log.p : lógico; si TRUE, las probabilidades p se dan como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; si TRUE (predeterminado), las probabilidades son P[X ≤ x], de lo contrario, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalles</b>\n            <br/>\n            La distribución lognormal tiene densidad\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ x) e^-((log x - μ)^2 / (2 σ^2))</code>\n            <br/>\n            donde μ y σ son la media y la desviación estándar del logaritmo. La media es E(X) = exp(μ + 1/2 σ^2), la mediana es med(X) = exp(μ), y la varianza Var(X) = exp(2*μ + σ^2)*(exp(σ^2) - 1) y por lo tanto el coeficiente de variación es sqrt(exp(σ^2) - 1) que es aproximadamente σ cuando es pequeño (por ejemplo, σ < 1/2).\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dlnorm da la densidad, plnorm da la función de distribución, qlnorm da la función cuantil, y rlnorm genera desviaciones aleatorias.\n            <br/>\n            La longitud del resultado está determinada por n para rlnorm, y es el máximo de las longitudes de los argumentos numéricos para las otras funciones.\n            <br/>\n            Los argumentos numéricos que no son n se reciclan a la longitud del resultado. Solo se utilizan los primeros elementos de los argumentos lógicos.\n            <br/>\n            <br/><b>Nota</b>\n            <br/>\n            El riesgo acumulado H(t) = - log(1 - F(t)) es -plnorm(t, r, lower = FALSE, log = TRUE).            \n      "
+  }
+}

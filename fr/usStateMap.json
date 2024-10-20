@@ -1,0 +1,15 @@
+{
+  "title": "Carte des États-Unis",
+  "navigation": "Carte des États-Unis",
+  "region": "Variable avec les noms des États-Unis :",
+  "value": "Variable avec des valeurs à cartographier :",
+  "colors": "Entrez le nombre de couleurs",
+  "zoomByStates": "Entrez les États à zoomer, par exemple : californie, oregon, washington",
+  "specify_a_title": "Entrez un titre",
+  "legend": "Légende :",
+  "help": {
+    "title": "Carte des États-Unis",
+    "r_help": "aide(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>Description</b></br>\n            Dessine une carte des États et vous permet de zoomer sur 1 ou plusieurs États\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap : Un data.frame avec une colonne nommée \"region\" et une colonne nommée \"value\". Les éléments de la colonne \"region\" doivent correspondre exactement à la façon dont les régions sont nommées dans la colonne \"region\" de state.map. Exécutez les commandes dans l'autre section ci-dessous pour accéder au jeu de données state.map\n            </li>\n            <li>\n            Titre : Un titre optionnel pour la carte.\n            </li>\n            <li>\n            Légende : Un nom optionnel pour la légende.\n            </li>\n            <li>\n            num_colors : Le nombre de couleurs sur la carte. Une valeur de 1 utilisera une échelle continue. Une valeur dans [2, 9] utilisera ce nombre de couleurs.\n            </li>\n            <li>\n            zoom : Un vecteur optionnel d'États à zoomer. Les éléments de ce vecteur doivent correspondre exactement aux noms des États tels qu'ils apparaissent dans la colonne \"region\" de ?state.regions.\n            </li>\n            </ul>\n            <b>Package</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Aide</b></br>\n            aide(state_choropleth, package='choroplethr')</br>\n            <b>Autre</b></br>\n            <code> \n            # Exécutez le code ci-dessous pour accéder au jeu de données state.map<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+  }
+}

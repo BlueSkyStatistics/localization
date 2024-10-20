@@ -1,0 +1,17 @@
+{
+  "navigation": "Bonett-Seier-Kurtosis-Test",
+  "title": "Bonett-Seier-Test der Kurtosis de Geary",
+  "hypothesisType": "Hypothese testen (H1)",
+  "twosided": "Zweiseitig",
+  "greater": "Größer",
+  "less": "Weniger",
+  "label2": "Weitere Optionen",
+  "showLengthNAs": "Länge und NAs anzeigen",
+  "verbose": "Ausführliche alternative Hypothese",
+  "Target": "Wählen Sie eine oder mehrere Variablen aus",
+  "help": {
+    "title": "Bonett-Seier-Test der Kurtosis de Geary",
+    "r_help": "help(bonett.test, package ='moments')",
+    "body": "\n<b>Beschreibung</b></br>\nFührt einen Bonett-Seier-Test der Gearyschen Kurtosis für normalverteilte Daten durch.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nbonett.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: ein numerischer Vektor von Datenwerten.\n</li>\n<li>\ny: ein Zeichenstring, der die alternative Hypothese angibt, muss einer von '\"two.sided\"' (Standard), '\"greater\"' oder '\"less\"' sein. Sie können nur den Anfangsbuchstaben angeben.\n</li>\n</ul>\n<b>Details</b></br>\nUnter der Hypothese der Normalverteilung sollte die Gearyschen Kurtosis gleich sqrt(2/pi) (0.7979) sein. Dieser Test hat eine solche Nullhypothese und ist nützlich, um einen signifikanten Unterschied der Gearyschen Kurtosis in normalverteilten Daten zu erkennen.\n<br/>\n<b>Werte</b></br>\nEine Liste mit der Klasse htest, die die folgenden Komponenten enthält:\n<ul>\n<li>\nstatistic: die Liste, die den Schätzer der Gearyschen Kurtosis und seine Transformation enthält.</br>\n</li>\n<li>\np.value: p-Wert des Tests. </br>\n</li>\n<li>\nalternative: ein Zeichenstring, der die alternative Hypothese beschreibt</br>\n</li>\n<li>\nmethod: ein Zeichenstring, der angibt, welcher Test durchgeführt wurde.\n</li>\n<li>\ndata.name: Name des Datenarguments.</br>\n</li>\n</ul>\n<b>Beispiel</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\ngeary(x)</br>\nbonett.test(x)</br>\n</code> <br/>\n<b>Paket</b></br>\nmoments</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl aus help(bonett.test, package ='moments') im BlueSky Statistics R-Editor.           \n<br/>\n<br/>"
+  }
+}

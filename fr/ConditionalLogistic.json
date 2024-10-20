@@ -1,0 +1,16 @@
+{
+  "title": "Logistique, Conditionnelle",
+  "navigation": "Logistique, Conditionnelle",
+  "modelname": "Entrez le nom du modèle",
+  "outcomevarlabel": "Variable Dépendante (numérique; 1 = événement, 0 = pas d'événement)",
+  "stratavarlabel": "Strates",
+  "methodgrplabel": "Méthode d'Estimation",
+  "exactlabel": "Exact",
+  "efronlabel": "Efron",
+  "breslowlabel": "Breslow",
+  "help": {
+    "title": "Logistique, Conditionnelle",
+    "r_help": "help(clogit, package = 'survival')",
+    "body": "\nCela ajuste un modèle de régression logistique conditionnelle, qui est similaire à la régression logistique standard, mais intègre une variable de stratification. Les applications courantes de ce \nmodèle se trouvent dans les études de cas-témoins appariés, de cohortes appariées et de cas-témoins imbriqués. La sortie comprend le nombre de strates utilisées dans l'analyse, les modèles de fréquence des résultats \ndans les strates, diverses statistiques de résumé du modèle, des estimations de paramètres et des rapports de cotes.\n<br/><br/>\n<b>Variable Dépendante:</b> C'est la variable indiquant l'événement pour chaque sujet, avec 1 signifiant un événement, et 0 signifiant un non-événement. Cette variable doit être numérique.\n<br/><br/>\n<b>Constructeur de Formule:</b> Spécifiez les termes de modèle souhaités.\n<br/><br/>\n<b>Strates:</b> Spécifiez la variable de stratification. Peut être numérique, caractère, ou un facteur nominal/ordinal.\n<br/><br/>\n<b>Méthode d'Estimation:</b> Spécifiez la méthode d'estimation du modèle. La méthode \"Exact\" est la méthode par défaut. Tant qu'il n'y a pas trop de façons de sélectionner des événements dans les strates, cela devrait être l'option choisie. L'estimation peut prendre du temps ou entraîner des erreurs si de nombreuses combinaisons peuvent résulter dans certaines strates, disons 100 événements sur 500 sujets. Les approximations d'Efron et de Breslow sont adéquates dans ces cas, Efron étant préféré. Voir les références dans l'aide R pour plus de détails.\n<br/><br/>\n<b>Packages R Requis:</b> survival, broom, arsenal, dplyr\n\t\t"
+  }
+}

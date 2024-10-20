@@ -1,0 +1,19 @@
+{
+  "title": "Gráfico de contorno",
+  "navigation": "Gráfico de contorno",
+  "x": "Variable X, especifique una variable numérica",
+  "y": "Variable(s) Y, especifique una o más variables numéricas",
+  "flip": "Invertir eje",
+  "specify_a_title": "Ingrese un título",
+  "x_title": "Etiqueta del eje X",
+  "y_title": "Etiqueta del eje Y",
+  "Facetrow": "Fila de facetas",
+  "Facetcolumn": "Columna de facetas",
+  "Facetwrap": "Envoltura de facetas",
+  "Facetscale": "Escala de facetas",
+  "help": {
+    "title": "Gráfico de contorno",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>Descripción</b></br>\n            Realice una estimación de densidad de núcleo 2D utilizando MASS::kde2d() y muestre los resultados con contornos. Esto puede ser útil para lidiar con el superpoblado. Esta es una versión 2D de geom_density().</br>\n            Las facetas se pueden crear opcionalmente especificando una variable de factor. También puede especificar temas opcionalmente, y especificar un título y etiquetas para los ejes x e y​\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"Gráfico de contorno para...\")\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: El conjunto de datos predeterminado​\n            </li>\n            <li>\n            aes(): Generar mapeos estéticos que describen cómo las variables en los datos se mapean a propiedades visuales (estéticas) de los geoms.​\n            </li>\n            <li>\n            x: Una variable numérica\n            </li>\n            <li>\n            y: Una variable numérica\n            </li>\n            <li>\n            geomdensity2d: Crea el gráfico\n            </li>\n            <li>\n            Labs(): Cambiar etiquetas de ejes y títulos de leyenda (esto es opcional)​\n            </li>\n            <li>\n            facet_grid(): Disponer paneles en una cuadrícula (esto es opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica el tema de la calculadora (esto es opcional)​\n            </li>\n            <li>\n            coord_flip(): Invertir eje (esto es opcional)​\n            </li>\n            </ul>\n            <b>Paquete</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ayuda</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            Otro: Haga clic en el botón de ayuda de R para obtener ayuda detallada de R. También puede ingresar help(labs), help(geom_density2d), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n    "
+  }
+}

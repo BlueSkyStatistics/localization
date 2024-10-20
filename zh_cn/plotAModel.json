@@ -1,0 +1,10 @@
+{
+  "title": "绘制模型",
+  "navigation": "绘制模型",
+  "modelselector1": "选择以下类别之一的模型（括号中的类别）线性模型（lm），广义线性模型（glm）",
+  "help": {
+    "title": "绘制模型",
+    "r_help": "帮助(plot, 包='graphics')",
+    "body": "\n                <b>描述</b></br>\n用于绘制R对象的通用函数。有关图形参数参数的更多详细信息，请参见par。\n对于简单的散点图，将使用plot.default。然而，对于许多不同的R对象，包括函数、data.frames、密度对象等，存在绘图方法。使用methods(plot)和这些的文档。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nplot(对象)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n对象：可以提供任何具有绘图方法的R对象。\n</li>\n</ul>\n<b>包</b></br>\ngraphics</br>\n<b>帮助</b></br>\n要获取详细帮助，请单击此对话框覆盖的右上角的R图标，或在R语法编辑器中运行以下命令：帮助(plot, 包='graphics')\n"
+  }
+}

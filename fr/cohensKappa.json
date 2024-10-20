@@ -1,0 +1,16 @@
+{
+  "title": "Kappa de Cohen",
+  "navigation": "Kappa de Cohen",
+  "obs1var": "Observateur 1 :",
+  "obs2var": "Observateur 2 :",
+  "cilevel": "Niveau de confiance :",
+  "label1": "Poids des catégories",
+  "equal": "Cicchetti-Allison (espacement égal)",
+  "quadratic": "Fleiss-Cohen (quadratique)",
+  "agreeplot": "Graphique d'accord et statistiques de Bangdiwala",
+  "help": {
+    "title": "Kappa de Cohen",
+    "r_help": "aide(Kappa,package=vcd)",
+    "body": "\n                <b>Description</b></br>\nLe kappa de Cohen mesure l'accord entre deux observateurs qui mesurent les mêmes sujets. Le kappa non pondéré est pour les catégories non ordonnées, tandis que le kappa pondéré est pour les catégories ordonnées. Pour le kappa pondéré, plus de poids est donné aux catégories qui sont plus proches. Le kappa peut varier entre -1 et 1, 1 étant un accord parfait et 0 pas mieux que le hasard. Les valeurs négatives indiquent un accord pire que le hasard seul, mais cela est rare en pratique. Les observateurs doivent mesurer les sujets sur la même échelle avec toutes les catégories utilisées par chaque observateur. Cela donne une table de contingence carrée. Une table de contingence et les statistiques de kappa sont fournies.</br>\nObservateur 1 : Variable contenant les valeurs fournies par un observateur ; peut être soit numérique soit un facteur</br>\nObservateur 2 : Variable contenant les valeurs fournies par un second observateur ; peut être soit numérique soit un facteur</br>\nNiveau de confiance : Niveau d'intervalle de confiance souhaité pour les statistiques de kappa</br>\nPoids des catégories : Poids souhaité pour les niveaux de désaccord des catégories</br>\nGraphique d'accord et statistiques de Bangdiwala : option pour produire un graphique d'accord avec des statistiques de Bangdiwala</br>\n<b>Paquet</b></br>\ngmodels;vcd</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante aide(Kappa,package=vcd) en créant un bloc de code R en cliquant sur + dans la fenêtre de sortie\n                "
+  }
+}
