@@ -1,0 +1,18 @@
+{
+  "title": "Faktorstufen manuell neu anordnen",
+  "navigation": "Manuell neu anordnen",
+  "reordervarlabel": "Faktor neu anordnen",
+  "levelslabel": "Faktorstufen angeben, die verschoben werden sollen (in Anführungszeichen): z.B. 'Stufe 1', 'Stufe 2' usw.",
+  "placelabel": "Wo die Stufen platziert werden sollen",
+  "firstlabel": "Erste",
+  "lastlabel": "Letzte",
+  "newoverwritelabel": "Neue Variable erstellen oder vorhandene überschreiben",
+  "newvarlabel": "Neue Variable",
+  "overwritevarlabel": "Variable überschreiben",
+  "newvarnamelabel": "Neuer Variablenname (keine Leerzeichen / Sonderzeichen)",
+  "help": {
+    "title": "Faktorstufen manuell neu anordnen",
+    "r_help": "help(fct_relevel, package ='forcats')",
+    "body": "\nDies wird verwendet, um eine oder mehrere Faktorstufen anzugeben, die Sie zuerst oder zuletzt in der Sortierreihenfolge platzieren möchten. Dies kann nützlich für Modelle sein, \n da die erste Faktorstufe die Referenzgruppe für Parameterschätzungen bei Verwendung der Referenzzellenkodierung wird. Sie können auch nützlich sein in \nDiagrammen, da die Sortierreihenfolge verwendet wird, um die Kategorien anzuzeigen.\n<br/><br/>\n<b>Faktor neu anordnen:</b> Faktor, den Sie neu anordnen möchten\n<br/><br/>\n<b>Faktorstufen angeben, die verschoben werden sollen (in Anführungszeichen): </b> Dies sind die Faktorstufen, die Sie neu anordnen möchten. \nNur vorhandene Stufen werden neu angeordnet. Wenn Sie eine nicht vorhandene Stufe angeben, wird eine Warnung ausgegeben, aber alle vorhandenen Stufen werden in der \nvon Ihnen angegebenen Weise angeordnet. Sehen Sie sich die Stufen im Variablen-Tab des Datenrasters an, um die aktuellen Stufen und die Sortierreihenfolge zu sehen, oder gehen Sie zu Variablen > Faktorstufen > Anzeigen. \nBeachten Sie, dass die Angabe aller vorhandenen Faktorstufen alle Stufen neu anordnen wird, unabhängig davon, ob Sie \"Erste\" oder \"Letzte\" für die Platzierung der Stufen auswählen.\n<br/><br/>\n<b>Wo die Stufen platziert werden sollen:</b> Die Auswahl von \"Erste\" platziert die angegebenen Stufen zuerst in der Sortierreihenfolge. Die Auswahl von \"Letzte\" platziert die angegebenen \nStufen zuletzt in der Sortierreihenfolge.\n<br/><br/>\n<b>Neue Variable erstellen oder vorhandene überschreiben:</b> Steuert, ob Sie eine neue Variable mit einem neuen Namen erstellen oder die vorhandene Variable überschreiben möchten. Der \nneue Variablenname darf keine Sonderzeichen wie #, $, %, &, (, ), = usw. enthalten. Unterstriche, \"_\", sind erlaubt.\n<br/><br/>\n<b>Beispiele:</b> Angenommen, Sie haben einen vierstufigen Faktor mit den Bezeichnungen \"a\", \"b\", \"c\", \"d\" mit einer Sortierreihenfolge von \"a\",\"b\",\"c\",\"d\" (von zuerst bis zuletzt). Wenn Sie \"d\" als \nErstes in der Sortierreihenfolge angeben, würde dies einen Faktor mit einer Sortierreihenfolge von \"d\", \"a\", \"b\", \"c\" erstellen. Wenn Sie \"b\", \"a\" als Letzte in der Sortierreihenfolge angeben, würde dies einen Faktor \nmit einer Sortierreihenfolge von \"c\",\"d\",\"b\",\"a\" erstellen. Wenn Sie \"b\",\"c\",\"d\",\"a\" (d.h. alle Stufen) angeben, würde dies einen Faktor mit einer Sortierreihenfolge von \"b\",\"c\",\"d\",\"a\" erstellen.\n<br/><br/>  \n<b>Erforderliche R-Pakete:</b> dplyr, forcats\n\t\t\t"
+  }
+}

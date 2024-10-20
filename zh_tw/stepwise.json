@@ -1,0 +1,22 @@
+{
+  "title": "逐步",
+  "navigation": "逐步",
+  "label1": "選擇以下類別之一的模型。 （R類在下面括號中列出）",
+  "label2": "線性模型 (lm)、廣義線性模型 (glm)、有序邏輯/概率回歸 (polr)、前饋神經網絡和多項式對數線性模型 (nnet)",
+  "label3": "**注意：逐步不適用於通過模型 > 調整 (train) 構建的模型",
+  "label4": "**注意：由於與 R 包作者提出的不兼容性，逐步不適用於多項式對數線性模型 (multinom)",
+  "modelselector1": "選擇模型",
+  "label5": "方向",
+  "backforward": "向後/向前",
+  "forwardback": "向前/向後",
+  "backward": "向後",
+  "forward": "向前",
+  "aic": "AIC（用於懲罰 k = 2 的自由度）",
+  "bic": "BIC（用於懲罰 k = log(模型矩陣中行數) 的自由度）注意：即使選擇了 BIC，輸出仍顯示 AIC）",
+  "label6": "標準",
+  "help": {
+    "title": "逐步",
+    "r_help": "幫助(逐步, 包='RcmdrMisc')",
+    "body": "\n            <b>描述</b></br>\n此函數是 RcmdrMisc 包中 ‘逐步’ 函數的前端。 反過來又是 MASS 包中 stepAIC 函數的前端。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"向後/向前\", \"向前/向後\", \"向後\", \"向前\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod : 一個可以由 stepAIC 處理的類的模型對象。\n</li>\n<li>\ndirection : 如果 \"向後/向前\"（默認），選擇從完整模型開始，並逐個消除預測變量，在每一步考慮通過重新添加先前步驟中刪除的變量是否會改善標準；如果 \"向前/向後\"，選擇從僅包含常數的模型開始，並逐個添加預測變量，在每一步考慮通過刪除先前添加的變量是否會改善標準；\"向後\" 和 \"向前\" 是類似的，但在每一步沒有重新考慮。\n</li>\n<li>\ncriterion : 用於選擇。 可以是 \"BIC\"（默認）或 \"AIC\"。 請注意，stepAIC 在輸出中將標準標記為 \"AIC\"，無論使用哪個標準。\n</li>\n<li>\n... : 要傳遞給 stepAIC 的參數。\n</li>\n</ul>\n<b>值</b><br/>\nstepAIC 選擇的模型。<br/>\n<b>包</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標或在 R 語法編輯器中運行以下命令幫助(逐步, 包=\"RcmdrMisc\")\n"
+  }
+}

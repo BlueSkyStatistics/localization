@@ -1,0 +1,33 @@
+{
+  "title": "Compară Curbele ROC",
+  "navigation": "Compară Curbele ROC",
+  "outcomevar": "Variabilă de Rezultat Binara (numeric/factor)",
+  "predprobvars": "Variabile de Probabilitate Prezisă din Fiecare Model, specificați cel puțin 2",
+  "outcomeorderlabel": "Valoarea 'Pozitivă' a Rezultatului",
+  "outcomeorderhigh": "Valoare ordonată mai mare",
+  "outcomeorderlow": "Valoare ordonată mai mică",
+  "specopt": "Plotează specificitatea în loc de 1-specificitate",
+  "cilevel": "Nivel de Încredere",
+  "multcompopt": "Ajustare Comparare Multipla",
+  "multcompmethod": "Metodă de Comparare Multipla",
+  "plotoptions": "Opțiuni de Grafic",
+  "plottitle": "Titlul Graficului",
+  "plottitlesize": "Dimensiunea Titlului Graficului (5-50)",
+  "themedropdown": "Tema Graficului",
+  "lineoptionslabel": "Opțiuni de Linie",
+  "linesize": "Dimensiunea Liniei (0-5)",
+  "colorpalette": "Paleta de Culori",
+  "axisoptionslabel": "Opțiuni de Axă",
+  "axislabelsize": "Dimensiunea Etichetei Axei (5-50)",
+  "ticklabelsize": "Dimensiunea Etichetei Marcajului Axei (5-50)",
+  "legendoptionslabel": "Opțiuni de Legendă",
+  "legendtitle": "Titlu",
+  "legendpos": "Poziție",
+  "curvelabels": "Etichete de Curbe, specificați ca 'Eticheta 1', 'Eticheta 2', 'Eticheta 3'; folosiți \\n într-o etichetă pentru o întrerupere de linie",
+  "legendfontsize": "Dimensiunea Etichetelor Legendei (5-50)",
+  "help": {
+    "title": "Compară Curbele ROC",
+    "r_help": "help(roc.test, package = 'pROC')",
+    "body": "\nAcest dialog compară curbele caracteristicilor operaționale ale receptorului (ROC) având un set de probabilități prezise dintr-un model (de exemplu, regresie logistică). Fiecare model trebuie să fi fost ajustat folosind aceeași ordine a variabilei de rezultat. Oferă un tabel cu zone individuale sub curbele ROC cu intervale de încredere, un tabel cu comparații pereche folosind testul DeLong și un set suprapus de curbe ROC. Subiecții cu valori lipsă pentru rezultat sau probabilitățile prezise sunt eliminați astfel încât fiecare model să fie evaluat pe același set de subiecți. Consultați Evaluarea Modelului > Prezice > Scorarea Modelului pentru a obține probabilități prezise din modelele candidate. \n<br/><br/><br/>\n<b>Variabilă de Rezultat Binara:</b> Rezultatul binar utilizat pentru predicții. Trebuie să fie numeric sau factor.\n<br/><br/>\n<b>Variabile de Probabilitate Prezisă din Fiecare Model:</b> Specificați coloanele de probabilitate prezisă din fiecare model ajustat pe care doriți să le comparați.\n<br/><br/>\n<b>Valoarea 'Pozitivă' a Rezultatului:</b> Specificați dacă valoarea ordonată mai mare sau mai mică a variabilei de rezultat binar specificate ar trebui considerată valoarea 'pozitivă'. Acesta este nivelul la care se referă probabilitățile prezise. De exemplu, dacă rezultatul binar a fost codificat ca 0/1, valoarea ordonată mai mare ar însemna că 1 este răspunsul 'pozitiv' și valoarea ordonată mai mică ar însemna că 0 este răspunsul 'pozitiv'. \n<br/><br/>\n<b>Plotează specificitatea în loc de 1-specificitate:</b> Aceasta schimbă axa x a graficului curbei ROC pentru a folosi specificitatea în schimb. Axa va scădea de la 1 la 0, de la stânga la dreapta.\n<br/><br/> \n<b>Nivel de Încredere:</b> Nivel de încredere pentru intervalele de zonă ale curbei ROC\n<br/><br/>\n<b>Ajustare Comparare Multipla:</b> Aplicați o ajustare de comparare multipla la comparațiile pereche ale zonelor curbei ROC.\n<br/><br/><br/>\n<b>Opțiuni de Grafic:</b>\n<br/><br/>\n<b>Titlul Graficului:</b> Specificați titlul pentru grafic. Poate fi eliminat.\n<br/><br/>\n<b>Tema Graficului:</b> Specificați tema generală pentru grafic\n<br/><br/>\n<b>Opțiuni de Linie:</b>\n<br/><br/>\n<b>Dimensiunea Liniei:</b> Specificați dimensiunea liniilor pe graficul curbei ROC\n<br/><br/>\n<b>Paleta de Culori:</b> Specificați paleta de culori utilizată pentru liniile curbei ROC\n<br/><br/>\n<b>Opțiuni de Axă:</b>\n<br/><br/>\n<b>Dimensiunea Etichetei Axei:</b> Specificați dimensiunea etichetelor axei utilizate pe grafic.\n<br/><br/>\n<b>Dimensiunea Etichetei Marcajului Axei:</b> Specificați dimensiunea etichetelor marcajelor axei.\n<br/><br/>\n<b>Opțiuni de Legendă:</b>\n<br/><br/>\n<b>Poziție:</b> Specificați poziția legendei în grafic. Poate fi dreapta, sus, jos sau stânga.\n<br/><br/>\n<b>Titlu:</b> Specificați titlul pentru legendă. Poate fi eliminat.\n<br/><br/>\n<b>Etichete de Curbe:</b> Specificați etichetele de curbe utilizate în legendă corespunzătoare ordinii curbelor (curba 1, curba 2, curba 3, etc.). Specificarea nimic va da etichete de curbe de 1, 2, 3, etc. Dacă specificați orice etichete, trebuie să specificați etichete pentru toate curbele. Ordinea curbelor este aceeași cu ordinea specificată a probabilităților prezise.\n<br/><br/>\n<b>Dimensiunea Etichetelor Legendei:</b> Dimensiunea tuturor textelor din legendă.\n<br/><br/>\n<b>Pachete R Necesare:</b> pROC, ggthemes, RColorBrewer, ggsci, ggplot2\n"
+  }
+}

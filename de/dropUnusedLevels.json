@@ -1,0 +1,21 @@
+{
+  "title": "Nicht verwendete Ebenen entfernen",
+  "navigation": "Nicht verwendete entfernen",
+  "target": "Faktorenvariablen, um Ebenen zu entfernen für",
+  "label1": "Geben Sie die Faktorenvariablen ein, für die Ebenen entfernt werden sollen. Sie können nicht verwendete Ebenen angeben, die entfernt werden sollen, indem Sie sie eingeben oder auswählen, um alle nicht verwendeten Ebenen für die ausgewählten Variablen zu entfernen. Wenn die Datensatzvariable einen NA-Wert in den Daten hat, wird diese Ebene NICHT entfernt.",
+  "label2": "Neue Ebenen in neue Variablen speichern oder vorhandene Variablen überschreiben",
+  "rd3": "Geben Sie ein Suffix an (Eine neue Variable wird mit dem Suffix erstellt)",
+  "txt3": "Geben Sie ein Suffix ein",
+  "rd2": "Geben Sie ein Präfix an (Eine neue Variable wird mit dem Präfix erstellt)",
+  "txt4": "Geben Sie ein Präfix ein",
+  "rd1": "Vorhandene Variablen überschreiben",
+  "label3": "Verwendete Methode",
+  "dropUnused": "Alle nicht verwendeten Ebenen entfernen",
+  "levelsToDrop": "Ebenen angeben, die entfernt werden sollen",
+  "drop": "Geben Sie Ebenen an, die durch Kommas getrennt sind, z. B. Ebene1,Ebene2,Ebene3 HINWEIS: Verwenden Sie keine Leerzeichen als Trennzeichen zwischen den Ebenen",
+  "help": {
+    "title": "Nicht verwendete Ebenen entfernen",
+    "r_help": "help(fct_drop, package =forcats)",
+    "body": "\n<b>HINWEIS: SCHLIESSEN SIE EBENEN NICHT IN DOPPELTE ODER EINZELNE ANFÜHRUNGSZEICHEN EIN, ES DARF KEINE LEERZEICHEN IN DEN EBENENNAMEN GEBEN. GEBEN SIE EBENEN GETRENNT DURCH KOMMAS IM FORMAT EBENE1,EBENE2, EBENE3 EIN</b></br>\n<b>Beschreibung</b></br>\nGeben Sie die Faktorenvariablen ein, für die nicht verwendete Ebenen entfernt werden sollen. Sie können nicht verwendete Ebenen angeben, die entfernt werden sollen, indem Sie sie eingeben oder auswählen, um alle nicht verwendeten Ebenen für die ausgewählten Variablen zu entfernen. Wenn die Datensatzvariable einen NA-Wert in den Daten hat, wird diese Ebene NICHT entfernt.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf: Ein Faktor (oder Zeichenvektor).\n</li>\n<li>\nonly: Ein Zeichenvektor, der die Menge der zu entfernenden Ebenen einschränkt. Wenn angegeben, werden nur Ebenen entfernt, die keine Einträge haben und in diesem Vektor erscheinen.\n</li>\n</ul>\n<b>Beispiele</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Setzen Sie nur, um einzuschränken, welche Ebenen entfernt werden sollen<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Paket</b></br>\nforcats</br>\n<b>Hilfe</b></br>\nhelp(fct_drop, package =forcats)\n"
+  }
+}

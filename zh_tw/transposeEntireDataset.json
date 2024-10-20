@@ -1,0 +1,10 @@
+{
+  "title": "轉置，整個數據集",
+  "navigation": "整個數據集",
+  "transposedDataset": "輸入轉置數據集的名稱",
+  "help": {
+    "title": "轉置整個數據集",
+    "r_help": "幫助(t, 包='base')",
+    "body": "\n<b>描述</b></br>\n調用基礎包中的轉置函數，該函數轉置數據集。您必須指定存儲轉置數據集的數據集名稱。新的轉置數據集將在網格中顯示。\n<br/>\n<b>用法</b>\n<br/>\n<code> \n調用的函數：base::t(x)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx：是一個矩陣或數據框\n</li>\n</ul>\n<b>值</b><br/>\n一個矩陣，具有從x構造的適當的dim和dimnames，其他屬性除了名稱被複製。\n<br/>\n<b>包</b></br>\n基礎<br/>\n<b>幫助</b></br>\n幫助(t, 包='base')\n"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Date Agregate",
+  "navigation": "Agregat",
+  "description": "Agregă una sau mai multe variabile numerice (scale) după una sau mai multe variabile factor și creează un nou set de date agregat. Pentru variabilele numerice, calculăm următoarele:\n        medie, mediană, sumă, sd, n_distinct, max, min și var. \n        De asemenea, calculează numărătorile în setul de date agregat.",
+  "label1": "Opțiuni de Agregare",
+  "upperdesc": "Selectați funcția pe care doriți să o aplicați variabilelor care sunt agregate",
+  "datasetname": "Introduceți numele setului de date agregat",
+  "showResultsinOutput": "Afișați rezultatele în fereastra de ieșire",
+  "groupBy": "Grupare după (Variabile de tip factor sau dată)",
+  "help": {
+    "title": "Agregare la Set de Date",
+    "r_help": "ajutor(grupare, pachet=dplyr)",
+    "body": "\n            <b>Descriere</b></br>\nAgregă una sau mai multe variabile numerice (scale) după una sau mai multe variabile factor și creează un nou set de date agregat. Pentru variabilele numerice, calculăm următoarele:\nmedie, mediană, sumă, sd, n_distinct, max, min și var. \nDe asemenea, calculează numărătorile în setul de date agregat.\n<br/>\n<b>Utilizare</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Actualizați setul de date</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Argumente</b>\n <ul>\n   <li>\nvar1: factor după care se grupează\n</li>\n<li>\nvar2, var3: variabile de agregat\n</li>\n<li>\nnewvarmean: media var2 grupată după var1 în setul de date agregat\n</li>\n<li>\n​newvarmedian: mediana var3 grupată după var1 în setul de date agregat\n</li>\n</ul>\n            "
+  }
+}

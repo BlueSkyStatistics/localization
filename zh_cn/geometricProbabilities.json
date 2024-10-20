@@ -1,0 +1,10 @@
+{
+  "title": "几何概率",
+  "navigation": "几何概率",
+  "prob": "成功的概率",
+  "help": {
+    "title": "几何概率",
+    "r_help": "help(dgeom, package=stats)",
+    "body": "\n\n            <b>描述</b>\n            <br/>\n            密度、分布函数、分位数函数和几何分布的随机生成，参数为 prob。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dgeom(x, prob, log = FALSE)\n                <br/>\n                pgeom(q, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qgeom(p, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rgeom(n, prob)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 表示在一系列伯努利试验中成功发生之前的失败次数的分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察次数。如果 length(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>prob : 每次试验成功的概率。0 < prob <= 1。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为 TRUE，则概率 p 以 log(p) 的形式给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为 TRUE（默认），则概率为 P[X ≤ x]，否则为 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            当 prob = p 时，几何分布的密度为\n            <br/>\n            <code>\n                p(x) = p (1-p)^x\n                对于 x = 0, 1, 2, …, 0 < p ≤ 1。\n            </code>\n            <br/>\n            如果 x 的一个元素不是整数，则 dgeom 的结果为零，并发出警告。\n            <br/>\n            分位数定义为使得 F(x) ≥ p 的最小值 x，其中 F 是分布函数。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dgeom 给出密度，pgeom 给出分布函数，qgeom 给出分位数函数，rgeom 生成随机偏差。\n            <br/>\n            无效的 prob 将导致返回值 NaN，并发出警告。\n            <br/>\n            结果的长度由 rgeom 的 n 决定，并且是其他函数的数值参数长度的最大值。\n            <br/>\n            除 n 以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。            \n      "
+  }
+}

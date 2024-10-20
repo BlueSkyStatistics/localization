@@ -1,0 +1,23 @@
+{
+  "toplabel": "Implicit, toate coloanele setului de date, cu excepția factorului repetat selectat și a variabilelor de valoare, vor fi utilizate pentru a identifica fiecare observație. Pentru a suprascrie, consultați mai jos",
+  "id_cols": "Opțional: Implicit, toate coloanele setului de date, cu excepția factorului repetat selectat și a variabilelor de valoare, vor fi utilizate pentru a identifica fiecare observație. Pentru a suprascrie, selectați și mutați variabilele",
+  "title": "Restructurare, de la lung la lat",
+  "navigation": "Mai lat",
+  "labelTop": "Când un singur factor repetat și o variabilă de valoare sunt specificate, noile nume de variabile sunt prefixate cu numele factorului repetat. În toate celelalte cazuri, acestea sunt prefixate cu numele variabilei de valoare",
+  "label0": "Puteți alege să salvați rezultatele într-un nou set de date sau să suprascrieți setul de date existent",
+  "label1": "Opțiuni",
+  "New": "Salvați rezultatele într-un nou set de date",
+  "newdatasetname": "Introduceți un nume de set de date",
+  "Existing": "Suprascrieți setul de date existent",
+  "subsetvars": "Introduceți numele variabilei/variabilelor repetate, de exemplu, Timp",
+  "dontReshape": "Introduceți numele valorii/valorilor repetate, de exemplu, Număr",
+  "names_sort": "Sortează numele coloanelor în ordine alfabetică",
+  "appearence_sort": "Sortează numele coloanelor după apariție",
+  "names_sep": "Separator opțional de utilizat atunci când se unesc numele variabilelor specificate pentru a forma noi nume de variabile",
+  "label2": "Opțiuni de sortare",
+  "help": {
+    "title": "Restructurare (de la lung la lat)",
+    "r_help": "ajutor(pivot_wider, pachet=tidyr)",
+    "body": "\n           <b>Descriere</b></br>\nVezi videoclipul la <a href=\"https://youtu.be/ypLXqmFp3jY\">Restructurare de la lung la lat</a></br>\nIa un set de date larg și îl convertește într-un set de date lat prin conversia (lățirea) coloanelor. Pivot_wider \"întinde\" datele, crescând numărul de rânduri și scăzând numărul de coloane. Folosești pivot_wider atunci când ai variabile/coloane ale căror valori trebuie să fie în rânduri. \n<br/>\nNOTĂ: Când un factor repetat este specificat, noile nume de variabile sunt prefixate cu numele factorului repetat. Când sunt specificate mai multe factori repetate, acestea sunt prefixate cu numele variabilei de valoare</br>\n<b>Utilizare</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndataset: Un dataframe/tibble\n</li>\n<li>\nnames_from: numele coloanei de ieșire \n</li>\n<li>\nvalues_from: coloana din care obții valorile celulelor \n</li>\n<li>\nnames_sort: Numele coloanelor trebuie să fie sortate? Dacă FALSE, implicit, numele coloanelor sunt ordonate după prima apariție.\n</li>\n<li>\nnames_sep: Separator opțional de utilizat atunci când se unesc numele variabilelor specificate pentru a forma noi nume de variabile\n</li>\n<li>\n<b>Valoare</b><br/>\nReturnează setul de date restructurat\n<br/>\n<b>Pachet</b></br>\ntidyr\n<b>Ajutor</b></br>\najutor(pivot_wider)\n"
+  }
+}

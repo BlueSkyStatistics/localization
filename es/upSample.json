@@ -1,0 +1,12 @@
+{
+  "title": "Muestra superior",
+  "navigation": "Ejemplo, Muestra superior",
+  "downsample": "Ingrese el nombre del conjunto de datos",
+  "seed": "Establecer semilla",
+  "dependent": "Variable para muestrear",
+  "help": {
+    "title": "Muestra superior",
+    "r_help": "ayuda(createDataPartition, paquete=\"caret\")",
+    "body": "\n<b>Descripción</b></br>\nMuestreo superior de datos desbalanceados. upSample muestrea con reemplazo para hacer que las distribuciones de clases sean iguales\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Clase\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: una matriz o marco de datos de variables predictivas\n</li>\n<li>\ny: una variable de factor con las membresías de clase\n</li>\n<li>\nlist: ¿debe la función devolver list(x, y) o unir x e y? Si TRUE, la salida se convertirá en un marco de datos.\n</li>\n<li>\nyname: si list = FALSE, una etiqueta para la columna de clase\n</li>\n</ul>\n<b>Detalles</b></br>\nSe utiliza un muestreo aleatorio simple para submuestrear la(s) clase(s) mayoritaria(s). Tenga en cuenta que los datos de la clase minoritaria permanecen intactos y que las muestras se reordenarán en la versión submuestreada.</br>\nPara el muestreo superior, todos los datos originales permanecen intactos y se añaden muestras adicionales a las clases minoritarias con reemplazo.</br>\n<b>Valor</b><br/>\nYa sea un marco de datos o una lista con los elementos x e y.<br/>\n<b>Ejemplos</b><br/>\n<code> \n## Un ejemplo ridículo...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Paquete</b></br>\ncaret</br>\n<b>Ayuda</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

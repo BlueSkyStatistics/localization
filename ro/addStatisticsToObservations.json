@@ -1,0 +1,23 @@
+{
+  "title": "Adăugați statistici ale modelului la setul de date",
+  "navigation": "Adăugați statistici la setul de date",
+  "label1": "Modelele următoarelor clase sunt acceptate (clasa R între paranteze) - Modele liniare (lm), Model de regresie Cox cu riscuri proporționale (coxph), Modele liniare generalizate (glm), Regresie polinomială locală (loess), Regresie liniară robustă (rlm), Model de regresie de supraviețuire parametric (survreg), Regresie cuantilă (rq)",
+  "label2": "STATISTICILE SUNT ADĂUGATE LA SETUL DE DATE ACTUAL. SE VA UTILIZA UN SUFIX NUMERIC PENTRU A ASIGURA NUME UNICE PENTRU VARIABILE. SETUL DE DATE ACTUAL TREBUIE SĂ COINCIDĂ CU SETUL DE DATE UTILIZAT PENTRU A CONSTRUI MODELUL.",
+  "modelselector1": "Selectați un model:",
+  "suff": "Introduceți un sufix pentru numele variabilei statistice",
+  "label3": "Selectați statisticile care trebuie adăugate observațiilor din setul de date",
+  "label4": "NOTĂ: Statisticile acceptate variază în funcție de clasa modelului. Toate statisticile de mai jos, cu excepția .tau, sunt acceptate de modelele liniare și liniare generalizate, regresia cuantilă acceptă .resid, .fitted, .tau. Celelalte clase de modele acceptă .fitted, .se.fit, .resid.",
+  "chk1": ".hat (Diagonală a matricei pălăriei)",
+  "chk2": ".sigma (Estimarea deviației standard reziduale atunci când observația corespunzătoare este eliminată din model)",
+  "chk3": ".cooksd (Distanța Cook)",
+  "chk4": ".fitted (valori ajustate ale modelului)",
+  "chk5": ".se.fit (Erori standard ale valorilor ajustate)",
+  "chk6": ".resid (Reziduuri)",
+  "chk7": ".std.resid (Reziduuri standardizate)",
+  "chk8": ".tau (Cuantila estimată) *Acceptat doar pentru regresia cuantilă",
+  "help": {
+    "title": "Adăugați statistici ale modelului la setul de date",
+    "r_help": "help(augment, package='broom')",
+    "body": "\n                <b>Descriere</b></br>\nÎmbogățiți datele cu informații dintr-un obiect\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: Obiect de model sau alt obiect R cu informații de adăugat la observații.\n</li>\n<li>\n...: Argumente suplimentare pentru metoda de augmentare.\n</li>\n</ul>\n<b>Valoare</b><br/>\nUn tibble::tibble() cu informații despre punctele de date.</br>\n<b>Metode</b><br/>\nConsultați următoarele subiecte de ajutor pentru mai multe detalii despre metodele individuale:<br/>\naugment.betareg: betareg<br/>\naugment.coxph: coxph<br/>\naugment.decomposed.ts: decomposed.ts<br/>\naugment.factanal: factanal<br/>\naugment.felm: felm<br/>\naugment.glm: glm<br/>\naugment.glmRob: glmRob<br/>\naugment.htest: htest<br/>\naugment.ivreg: ivreg<br/>\naugment.kmeans: kmeans<br/>\naugment.lm: lm<br/>\naugment.lmRob: lmRob<br/>\naugment.loess: loess<br/>\naugment.Mclust: Mclust<br/>\naugment.mjoint: mjoint<br/>\naugment.nlrq: nlrq<br/>\naugment.nls: nls<br/>\naugment.plm: plm<br/>\naugment.poLCA: poLCA<br/>\naugment.prcomp: prcomp<br/>\naugment.rlm: rlm<br/>\naugment.rq: rq<br/>\naugment.rqs: rqs<br/>\naugment.smooth.spline: smooth.spline<br/>\naugment.speedlm: speedlm<br/>\naugment.stl: stl<br/>\naugment.survreg: survreg<br/>\nlme4_tidiers: merMod<br/>\nnlme_tidiers: lme<br/>\nnull_tidiers: NULL<br/>\nordinal_tidiers: clm, polr<br/>\nrowwise_df_tidiers: rowwise_df, tbl_df<br/>\n<b>Pachet</b></br>\nbroom</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă în editorul de sintaxă R help(augment, package=\"broom\")\n"
+  }
+}

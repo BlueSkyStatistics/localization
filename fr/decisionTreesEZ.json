@@ -1,0 +1,24 @@
+{
+  "title": "Arbres de décision",
+  "navigation": "Arbres de décision",
+  "TxtTreeName": "Entrez le nom du modèle",
+  "TreeGenChkbox": "Ne pas régénérer si l'arbre existe déjà",
+  "dependent": "Variable dépendante",
+  "independent": "Variable(s) indépendante(s)",
+  "weights": "Poids d'enquête",
+  "TxtMinSplit": "Division minimale",
+  "minBucket": "Seau minimum",
+  "TxtCP": "Paramètre de complexité",
+  "maxDepth": "Profondeur maximale",
+  "PruneTreeChkbox": "Élaguer l'arbre",
+  "rd0": "Ne pas élaguer",
+  "rd1": "Utiliser le paramètre de complexité optimal",
+  "rd2": "Spécifier le paramètre de complexité",
+  "TxtCPPrune": "Entrez le paramètre de complexité",
+  "PlotCVChkbox": "Tracer la validation croisée",
+  "PlotRSQRChkbox": "Tracer R-carré",
+  "help": {
+    "title": "Arbres de décision",
+    "r_help": "aide(rpart, package ='rpart')"
+  }
+}

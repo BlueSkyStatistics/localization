@@ -1,0 +1,28 @@
+{
+  "title": "Razones de Momento / Riesgos Relativos, M por Tabla de 2",
+  "navigation": "Razones de Momento / Riesgos Relativos, M por Tabla de 2",
+  "outcomevarlabel": "Variable de Resultado (Factor Binario)",
+  "expvarlabel": "Variable de Exposición/Predictor (Factor)",
+  "statlabel": "Estadística",
+  "orlabel": "Razones de Momento",
+  "rrlabel": "Riesgos Relativos",
+  "oresttypelabel": "Tipo de Estimación de Razones de Momento",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "Mid-p",
+  "orestsmalllabel": "Ajustado para Muestras Pequeñas",
+  "rresttypelabel": "Tipo de Estimación de Riesgo Relativo",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "Ajustado para Muestras Pequeñas",
+  "reversallabel": "Inversión de Categoría",
+  "revnonelabel": "Sin Inversión",
+  "revexplabel": "Exposición",
+  "revoutlabel": "Resultado",
+  "revbothlabel": "Ambos",
+  "cilevellabel": "Nivel de Confianza (0-1)",
+  "help": {
+    "title": "Razones de Momento / Riesgos Relativos, M por Tabla de 2",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\nEsto se utiliza para comparar las probabilidades de tener una \"enfermedad\" para un grupo en relación con otro, en forma de razón de probabilidades (odds ratio) o razón de probabilidad (riesgo relativo).  \nLas probabilidades de \"enfermedad\" se definen como la probabilidad de \"enfermedad\" dividida por la probabilidad de \"sin enfermedad\". Se proporciona una tabla de contingencia de frecuencias de resultados en cada grupo.  \nAdemás, se incluye una tabla de razones de momento o riesgos relativos para cada grupo en relación con el grupo de referencia con intervalos de confianza y un valor p de Wald Chi-Cuadrado. Finalmente, \nse muestra una tabla de valores p con versiones exactas de mid-p, Fisher y Wald Chi-Cuadrado, comparando cada grupo con el grupo de referencia. \n<br/><br/>\n<b>Variable de Resultado:</b> Variable binaria \"enfermedad\" (sí/no) de interés.  Por defecto, la categoría más alta en el orden de clasificación se define como \"enfermedad sí\".\n<br/><br/>\n<b>Variable de Exposición/Predictor:</b> Grupos a comparar.  Puede tener más de 2 grupos.\n<br/><br/>\n<b>Estadística:</b> Qué estadística calcular\n<br/><br/>\n<b>Tipo de Estimación de Razones de Momento / Riesgo Relativo:</b> Wald (verosimilitud máxima incondicional), Fisher (verosimilitud máxima condicional), Mid-p (método de mediana no sesgada) o Ajustado para Muestras Pequeñas\n<br/><br/>\n<b>Inversión de Categoría:</b>  Esto controla si se debe invertir o no el orden de las categorías de la variable de exposición o las categorías de la variable de resultado.  Invertir la variable de exposición cambiará el grupo de referencia para las razones de momento.  Invertir la variable de resultado cambiará la categoría que corresponde a \"enfermedad\".\n<br/><br/>\n<b>Nivel de Confianza:</b> nivel para los intervalos de confianza; el valor predeterminado es 0.95\n<br/><br/>\n<b>Paquetes R Requeridos:</b> epitools\n\t\t\t"
+  }
+}

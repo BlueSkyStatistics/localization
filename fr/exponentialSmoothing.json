@@ -1,0 +1,31 @@
+{
+  "title": "Lissage exponentiel",
+  "navigation": "Lissage exponentiel",
+  "destination": "Variables à prédire",
+  "firstObservation": "Temps de la première observation par ex.1: entrez 1961,1 pour janvier 1961 par ex.2: entrez 1961,3 pour le 3ème trimestre de 1961, par ex.3: entrez 1 pour une série continue",
+  "frequency": "Nombre d'observations par unité de temps par ex.1: entrez 12 pour une observation pour chaque mois d'une année, par ex. 2: entrez 4 pour une observation par trimestre, par ex. 3: entrez 1 pour une série continue.",
+  "label1": "Graphiques",
+  "plotSeries": "Tracer la série",
+  "yaxisLabel": "Étiquette de l'axe Y",
+  "mainTitle": "Titre principal",
+  "label2": "Options pour les valeurs ajustées",
+  "saveFitted": "Enregistrer les valeurs ajustées",
+  "fittedValsDatasetName": "Spécifiez le nom du jeu de données pour stocker les valeurs ajustées",
+  "oriVsFitted": "Tracer original vs. Ajusté",
+  "plotResiduals": "Tracer les résidus",
+  "label3": "Prédire en utilisant le modèle",
+  "predict": "Faire des prédictions en utilisant le modèle",
+  "periodToPredict": "Spécifiez le nombre d'intervalles à prédire",
+  "confInterval": "Spécifiez l'intervalle de confiance en pourcentages par ex. 95 pour 95%",
+  "savePredictedVals": "Enregistrer les valeurs prédites",
+  "predictedValsDatasetName": "Spécifiez le nom du jeu de données pour stocker les valeurs prédites",
+  "plotPredicted": "Tracer les valeurs prédites",
+  "correlogram": "Générer un correlogramme",
+  "maxlag": "Entrez le retard maximal",
+  "Boxtest": "Test de Ljung-Box",
+  "help": {
+    "title": "Lissage exponentiel",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>Description</b></br>\nBSkyHoltWintersSeasonal est une fonction wrapper pour HoltWinters du package stats qui calcule le filtrage Holt-Winters d'une série temporelle donnée. Les paramètres inconnus sont déterminés en minimisant l'erreur de prédiction au carré. Appelle en interne HoltWinters avec le paramètre gamma utilisé pour la composante saisonnière défini sur FALSE, le paramètre beta du filtre Holt-Winters est défini sur FALSE pour effectuer un lissage exponentiel et saisonnier = \"None\".<br/> \n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArguments\n<ul>\n<li>\nvars: sélectionnez une variable pour construire un modèle\n</li>\n<li>\nstart: Le temps de la première observation doit être saisi au format année,mois ou année, trimestre par ex. (si vos données sont organisées par mois, alors 1992,1 pour Jan 1992 ou si vos données sont organisées par trimestre, alors 1992,1 fait référence au premier trimestre de 1992.\n</li>\n<li>\nfrequency: Nombre d'observations dans l'unité de temps. Exemple : pour mensuel, il y a 12 observations dans une année. Pour trimestriel, il y a 4 observations dans une année.\n</li>\n<li>\nexponential: Détermine si un lissage exponentiel sera effectué, valeur définie sur TRUE\n</li>\n<li>\nseasonal: une chaîne de caractères \"None\" pour le lissage exponentiel. \n</li>\n<li>\nplotSeries: si TRUE, un graphique de série temporelle sera également généré.\n</li>\n<li>\nsaveFitted: si TRUE, les valeurs ajustées sont enregistrées.\n</li>\n<li>\nplotOriginalandForecast: Tracer les séries originales et prédites\n</li>\n<li>\npredict: si TRUE, les valeurs prédites seront également générées.\n</li>\n<li>\nsavePredictedVals: les valeurs prédites seront enregistrées.\n</li>\n<li>\nplotPredictedValues: les valeurs prédites seront également tracées.\n</li>\n<li>\ncorrelogram: si TRUE, un correlogramme sera généré.\n</li>\n<li>\nmain: titre principal du graphique\n</li>\n<li>\nylab: titre pour l'axe Y\n</li>\n<li>\ndataset: le nom du jeu de données à partir duquel les variables ont été sélectionnées\n</li>\n</ul>\n<b>Valeur</b><br/>\nUn objet de la classe \"HoltWinters\", une liste avec des composants:<br/>\nfitted: Une série temporelle multiple avec une colonne pour la série filtrée ainsi que pour le niveau, la tendance et les composants saisonniers, estimés simultanément (c'est-à-dire au moment t et non à la fin de la série).<br/>\nx: La série originale<br/>\nalpha: alpha utilisé pour le filtrage<br/>\nbeta: beta utilisé pour le filtrage<br/>\ngamma: gamma utilisé pour le filtrage<br/>\ncoefficients: Un vecteur avec des composants nommés a, b, s1, ..., sp contenant les valeurs estimées pour le niveau, la tendance et les composants saisonniers<br/>\nseasonal: Le paramètre saisonnier spécifié<br/>\nSSE: La somme finale des erreurs au carré atteinte lors de l'optimisation<br/>\ncall: L'appel utilisé<br/>\n<b>Package</b></br>\nstats</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette boîte de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(HoltWinters , package=stats)\n\t\t\t"
+  }
+}

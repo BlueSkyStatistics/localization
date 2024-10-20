@@ -1,0 +1,24 @@
+{
+  "title": "Graphique de Fréquence",
+  "navigation": "Fréquences",
+  "x": "Axe X",
+  "y": "Couleur, spécifiez une variable facteur",
+  "bins": "Nombre de bins (s'applique uniquement lorsque la variable sur l'axe X est une variable facteur)",
+  "barcolor": "Couleur de la ligne (Après la sélection de la couleur, cliquez en dehors du contrôle pour appliquer)",
+  "tab1": "Numérique",
+  "tab2": "Facteur",
+  "alpha": "Opacité (0-1)",
+  "flip": "Inverser l'axe",
+  "specify_a_title": "Entrez un titre",
+  "x_title": "Étiquette de l'axe X",
+  "y_title": "Étiquette de l'axe Y",
+  "Facetrow": "Ligne de Facette",
+  "Facetcolumn": "Colonne de Facette",
+  "Facetwrap": "Enveloppe de Facette",
+  "Facetscale": "Échelle de Facette",
+  "help": {
+    "title": "Graphique de Fréquence",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>Description</b></br>\n            Visualisez la distribution d'une seule variable continue en divisant l'axe X en bins et en comptant le nombre d'observations dans chaque bin. Les histogrammes (geom_histogram()) affichent les comptes avec des barres ; les polygones de fréquence (geom_freqpoly()) affichent les comptes avec des lignes. Les polygones de fréquence sont plus adaptés lorsque vous souhaitez comparer la distribution à travers les niveaux d'une variable catégorielle. </br>\n            REMARQUE : Nous ignorons la couleur sélectionnée s'il y a une variable de regroupement/couleur spécifiée, car une couleur différente est sélectionnée pour chaque niveau de la variable de regroupement.</br>\n            Lorsque vous spécifiez plusieurs variables X, nous créons un graphique de fréquence séparé pour chaque variable X.</br>\n            <b>Utilisation</b>\n            <br/>\n            <code>\n            # Vous pouvez créer un graphique de fréquence pour une ou plusieurs variables numériques. Le nombre par défaut de bins est fixé à 30.</br>\n            # L'exemple ci-dessous utilise le jeu de données mtcars dans le package datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            # Vous pouvez créer un graphique de fréquence pour une ou plusieurs variables numériques et grouper le graphique par une variable facteur. Le nombre par défaut de bins est fixé à 30.</br>\n            # L'exemple ci-dessous utilise le jeu de données mtcars dans le package datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            # Vous pouvez créer un graphique de fréquence/graphique linéaire en regroupant une variable facteur par une autre</br>\n            # Vous devez faire un clic droit sur cyl et am dans la vue des variables pour en faire un facteur</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: Le jeu de données par défaut​\n            </li>\n            <li>\n            aes(): Générer des mappages esthétiques qui décrivent comment les variables dans les données sont mappées aux propriétés visuelles (esthétiques) des geoms.​\n            </li>\n            <li>\n            group: Une variable facteur/catégorielle optionnelle. \n            </li>\n            <li>\n            geom_freqpoly(): Crée le graphique de fréquence\n            </li>\n            <li>\n            bins: Nombre de bins.\n            </li>\n            <li>\n            Labs(): Changez les étiquettes des axes et les titres de légende (c'est optionnel)​\n            </li>\n            <li>\n            facet_grid(): Disposez les panneaux dans une grille (c'est optionnel)​\n            </li>\n            <li>\n            theme_calc(): Spécifie le thème de la calculatrice (c'est optionnel)​\n            </li>\n            <li>\n            coord_flip(): Inverser l'axe (c'est optionnel)​\n            </li>\n            <li>\n            alpha: Contrôle l'opacité, prend des valeurs entre 0-1. 1 signifie aucune opacité.\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aide</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Autre : Cliquez sur le bouton d'aide R pour obtenir une aide détaillée sur R. Vous pouvez également entrer help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​           \n      "
+  }
+}

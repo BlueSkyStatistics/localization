@@ -1,0 +1,12 @@
+{
+  "title": "Ajustarea Elementelor",
+  "navigation": "Ajustarea Elementelor",
+  "label1": "Selectați un model (modele de clasă Rm, dRm, tam.mml, tam.mml.2pl, tam.mml.mfr acceptate)",
+  "label1b": "Dacă nu sunt disponibile modele, trebuie să creați mai întâi un model selectând Ajustarea Modelului -> IRT",
+  "modelselector1": "Selectați un model",
+  "help": {
+    "title": "Ajustarea Elementelor",
+    "r_help": "ajutor(itemfit, pachet='eRm')",
+    "body": "\n                <b>Descriere</b></br>\n                Pentru modelele de clasă Rm sau dRm (create folosind IRT->Model Rasch Simplu cu estimare CML) folosește funcția itemfit pentru a afișa statistici de ajustare a elementelor.\n                <br/>\n                Pentru modelele de clasă tam.mml, tam.mml.2pl, tam.mml.2pl, tam.mml.mfr (create folosind IRT->Model Rasch Simplu, Model de Credit Parțial, Model de Scară de Evaluare și modele multifacetate (Credit Parțial și Scară de Evaluare) cu estimare MML folosește funcția msq.itemfit pentru statistici de ajustare a elementelor bazate pe reziduuri pătrate medii (Infit, Outfit)\n\n                <br/><br/>\n                <b>Utilizare</b>\n                <br/>\n                <code>\n                eRm::itemfit(obiect)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(obiect)\n                </code>\n                <br/><br/>\n                <b>Detalii</b>\n                <br/>  \n                Rulați următoarele din editorul de sintaxă BlueSky Statistics: ajutor(itemfit, pachet ='eRm')\n                <br/>\n                Rulați următoarele din editorul de sintaxă BlueSky Statistics: ajutor(msq.itemfit, pachet ='TAM')\n                <br/>\n                Ajutorul detaliat se va deschide în browserul dvs. implicit         \n                <br/><br/>\n                <b>Pachete</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>Ajutor</b>\n                <br/>\n                ajutor(itemfit, pachet='eRm')\n                "
+  }
+}

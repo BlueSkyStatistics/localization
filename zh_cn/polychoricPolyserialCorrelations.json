@@ -1,0 +1,52 @@
+{
+  "correlationType": "相关类型",
+  "Polychoric": "多序列相关",
+  "Polyserial": "多序列相关",
+  "title": "多序列/多序列相关",
+  "bins": "对于多序列相关 - 用于双变量正态性检验的x的分箱数",
+  "navigation": "多序列，多序列",
+  "Target": "选择一个或多个x变量",
+  "textbox1": "置信区间",
+  "textbox2": "零假设（μ）",
+  "Target2": "选择一个有序因子变量y",
+  "label1": "估计类型",
+  "test1": "两步近似",
+  "test2": "最大似然估计",
+  "label2": "标准误差",
+  "Missvals": "显示标准误差",
+  "conflevel": "最大绝对相关性（以确保数值稳定性）。",
+  "Seed": "可选起始值",
+  "header": "在每个x变量和y变量之间估计相关性",
+  "showEffectSizes": "返回估计的阈值",
+  "help": {
+    "title": "多序列/多序列相关",
+    "r_help": "help(polychor, package ='polycor')",
+    "body": "\n<b>描述</b></br>\n计算多序列或多序列相关。相关性在每个x变量和y变量之间进行估计\n<br/>\n<br/>\n<b>描述-多序列</b></br>\n计算两个有序变量之间的多序列相关（及其标准误差），假设有序变量分解为双变量正态的连续潜在变量。可以使用最大似然估计或（可能更快的）“两步”近似。对于ML估计，阈值的估计和估计的协方差矩阵也可用。\n<br/>\n<b>用法</b>\n<br/>\n<code> \npolychor(x, y, ML = FALSE, control = list(), \n  std.err = FALSE, maxcor=.9999, start, thresholds=FALSE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 有序分类变量；变量可以是数字、逻辑、因子、有序因子或字符变量，但如果是因子，其水平应按正确顺序排列，字符变量的值按字母顺序排列。\n</li>\n<li>\ny: 一个有序因子变量\n</li>\n<li>\nML: 如果为TRUE，计算最大似然估计；如果为FALSE，默认情况下，计算更快的“两步”近似。\n</li>\n<li>\nstd.err: 如果为TRUE，返回相关性的估计方差（对于两步估计）或相关性和阈值的估计协方差矩阵（对于ML估计）；默认值为FALSE。 \n</li>\n<li>\nmaxcor: 最大绝对相关性（以确保数值稳定性）。\n</li>\n<li>\nstart: 可选起始值：如果是单个数字，则为相关性的起始值。\n</li>\n<li>\nthresholds: 如果为TRUE（默认值为FALSE），即使未计算标准误差，也返回估计的阈值和估计的相关性。\n</li>\n</ul>\n<b>值</b></br>\n值：如果std.err或thresholds为TRUE，则返回一个类“polycor”的对象，具有以下组件：</br>\ntype: 设置为“多序列”。</br>\nrho: 多序列相关。</br>\nrow.cuts: 行变量（x）的估计阈值，适用于ML估计。</br>\ncol.cuts: 列变量（y）的估计阈值，适用于ML估计。</br>\nvar: 相关性的估计方差，或者对于ML估计，相关性和阈值的估计协方差矩阵。</br>\nn: 相关性基于的观察数量。</br>\nchisq: 双变量正态性的卡方检验。</br>\ndf: 双变量正态性检验的自由度。</br>\nML: 对于ML估计为TRUE，对于两步估计为FALSE\n<b>详细信息</b></br>\nML估计通过最大化关于两个变量的阈值（τ^x[i], i = 1,…, r - 1; τ^y[j], j = 1,…, c - 1）和总体相关性（ρ）的双变量正态似然来计算。这里，r和c分别是x和y的水平数量。似然通过使用optim函数进行数值最大化，估计参数的协方差矩阵基于optim计算的数值Hessian。</br>\n两步估计通过首先从每个变量的边际分布单独估计阈值（τ^x[i], i = 1,…, r - 1和τ^y[j], i = j,…, c - 1）。然后，使用optim（如果请求标准误差）或optimize（如果不请求）数值最大化ρ的一维似然。计算的标准误差将阈值视为固定。\n<br/>\n<b>示例</b></br>\n<code> \nif(require(mvtnorm)){\n    set.seed(12345)\n    data <- rmvnorm(1000, c(0, 0), matrix(c(1, .5, .5, 1), 2, 2))\n    x <- data[,1]\n    y <- data[,2]\n    cor(x, y)  # 样本相关\n    }\n\nif(require(mvtnorm)){\n    x <- cut(x, c(-Inf, .75, Inf))\n    y <- cut(y, c(-Inf, -1, .5, 1.5, Inf))\n    polychor(x, y)  # 两步估计\n    }\n\nif(require(mvtnorm)){\n    polychor(x, y, ML=TRUE, std.err=TRUE)  # ML估计\n    }\n</code> <br/>\n<b>包</b></br>\npolycor</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的R图标，或通过创建R代码块运行以下命令help(polycor, package ='polychor')，方法是单击输出窗口中的+           \n<br/>\n<br/>\n<b>描述-多序列</b></br>\n计算定量变量和有序变量之间的多序列相关（及其标准误差），基于定量变量和潜在的连续变量的联合分布，该潜在变量是有序变量的基础，假设是双变量正态的。可以使用最大似然估计或更快的“两步”近似。对于ML估计，阈值的估计和估计的协方差矩阵也可用。\n<br/>\n<b>用法</b>\n<br/>\n<code> \npolyserial(x, y, ML = FALSE, control = list(), \n  std.err = FALSE, maxcor=.9999, bins=4, start, thresholds=FALSE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个数字变量\n</li>\n<li>\ny: 一个有序分类变量；可以是数字、逻辑、因子、有序因子或字符变量，但如果是因子，其水平应按正确顺序排列，字符变量的值按字母顺序排列。\n</li>\n<li>\nML: 如果为TRUE，计算最大似然估计；如果为FALSE，默认情况下，计算更快的“两步”近似。\n</li>\n<li>\nstd.err: 如果为TRUE，返回相关性的估计方差（对于两步估计）或相关性和阈值的估计协方差矩阵（对于ML估计）；默认值为FALSE。 \n</li>\n<li>\nbins: 用于对x进行双变量正态性检验的分箱数；默认值为4。\n</li>\n<li>\nmaxcor: 最大绝对相关性（以确保数值稳定性）。\n</li>\n<li>\nstart: 可选起始值：如果是单个数字，则为相关性的起始值。\n</li>\n<li>\nthresholds: 如果为TRUE（默认值为FALSE），即使未计算标准误差，也返回估计的阈值和估计的相关性。\n</li>\n</ul>\n<b>值</b></br>\n值：如果std.err或thresholds为TRUE，则返回一个类“polycor”的对象，具有以下组件：</br>\ntype: 设置为“多序列”。</br>\nrho: 多序列相关。</br>\ncuts: 有序变量（y）的估计阈值，适用于ML估计。</br>\nvar: 相关性的估计方差，或者对于ML估计，相关性和阈值的估计协方差矩阵。</br>\nn: 相关性基于的观察数量。</br>\nchisq: 双变量正态性的卡方检验。</br>\ndf: 双变量正态性检验的自由度。</br>\nML: 对于ML估计为TRUE，对于两步估计为FALSE\n<b>示例</b></br>\n<code> \nif(require(mvtnorm)){\n    set.seed(12345)\n    data <- rmvnorm(1000, c(0, 0), matrix(c(1, .5, .5, 1), 2, 2))\n    x <- data[,1]\n    y <- data[,2]\n    cor(x, y)  # 样本相关\n    }\n\nif(require(mvtnorm)){\n    y <- cut(y, c(-Inf, -1, .5, 1.5, Inf))\n    polyserial(x, y)  # 两步估计\n    }\n\nif(require(mvtnorm)){\n    polyserial(x, y, ML=TRUE, std.err=TRUE) # ML估计\n    }\n\n</code> <br/>\n<b>包</b></br>\npolycor</br>\n<b>帮助</b></br>\n有关详细帮助，请运行以下命令help(polyserial, package ='polychor')，方法是创建R代码块并单击输出窗口中的+           \n\n\t\t\t"
+  },
+  "zh_tw": {
+    "correlationType": "相關類型",
+    "Polychoric": "多序列相關",
+    "Polyserial": "多序列相關",
+    "title": "多序列/多序列相關",
+    "bins": "對於多序列相關 - 用於雙變量正態性檢驗的x的分箱數",
+    "navigation": "多序列，多序列",
+    "Target": "選擇一個或多個x變量",
+    "textbox1": "信賴區間",
+    "textbox2": "零假設（μ）",
+    "Target2": "選擇一個有序因子變量y",
+    "label1": "估計類型",
+    "test1": "兩步近似",
+    "test2": "最大似然估計",
+    "label2": "標準誤差",
+    "Missvals": "顯示標準誤差",
+    "conflevel": "最大絕對相關性（以確保數值穩定性）。",
+    "Seed": "可選起始值",
+    "header": "在每個x變量和y變量之間估計相關性",
+    "showEffectSizes": "返回估計的閾值",
+    "help": {
+      "title": "多序列/多序列相關",
+      "r_help": "help(polychor, package ='polycor')",
+      "body": "\n<b>描述</b></br>\n計算多序列或多序列相關。相關性在每個x變量和y變量之間進行估計\n<br/>\n<br/>\n<b>描述-多序列</b></br>\n計算兩個有序變量之間的多序列相關（及其標準誤差），假設有序變量分解為雙變量正態的連續潛在變量。可以使用最大似然估計或（可能更快的）“兩步”近似。對於ML估計，閾值的估計和估計的協方差矩陣也可用。\n<br/>\n<b>用法</b>\n<br/>\n<code> \npolychor(x, y, ML = FALSE, control = list(), \n  std.err = FALSE, maxcor=.9999, start, thresholds=FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 有序分類變量；變量可以是數字、邏輯、因子、有序因子或字符變量，但如果是因子，其水平應按正確順序排列，字符變量的值按字母順序排列。\n</li>\n<li>\ny: 一個有序因子變量\n</li>\n<li>\nML: 如果為TRUE，計算最大似然估計；如果為FALSE，默認情況下，計算更快的“兩步”近似。\n</li>\n<li>\nstd.err: 如果為TRUE，返回相關性的估計方差（對於兩步估計）或相關性和閾值的估計協方差矩陣（對於ML估計）；默認值為FALSE。 \n</li>\n<li>\nmaxcor: 最大絕對相關性（以確保數值穩定性）。\n</li>\n<li>\nstart: 可選起始值：如果是單個數字，則為相關性的起始值。\n</li>\n<li>\nthresholds: 如果為TRUE（默認值為FALSE），即使未計算標準誤差，也返回估計的閾值和估計的相關性。\n</li>\n</ul>\n<b>值</b></br>\n值：如果std.err或thresholds為TRUE，則返回一個類“polycor”的對象，具有以下組件：</br>\ntype: 設置為“多序列”。</br>\nrho: 多序列相關。</br>\nrow.cuts: 行變量（x）的估計閾值，適用於ML估計。</br>\ncol.cuts: 列變量（y）的估計閾值，適用於ML估計。</br>\nvar: 相關性的估計方差，或者對於ML估計，相關性和閾值的估計協方差矩陣。</br>\nn: 相關性基於的觀察數量。</br>\nchisq: 雙變量正態性的卡方檢驗。</br>\ndf: 雙變量正態性檢驗的自由度。</br>\nML: 對於ML估計為TRUE，對於兩步估計為FALSE\n<b>詳細信息</b></br>\nML估計通過最大化關於兩個變量的閾值（τ^x[i], i = 1,…, r - 1; τ^y[j], j = 1,…, c - 1）和總體相關性（ρ）的雙變量正態似然來計算。這裡，r和c分別是x和y的水平數量。似然通過使用optim函數進行數值最大化，估計參數的協方差矩陣基於optim計算的數值Hessian。</br>\n兩步估計通過首先從每個變量的邊際分布單獨估計閾值（τ^x[i], i = 1,…, r - 1和τ^y[j], i = j,…, c - 1）。然後，使用optim（如果請求標準誤差）或optimize（如果不請求）數值最大化ρ的一維似然。計算的標準誤差將閾值視為固定。\n<br/>\n<b>示例</b></br>\n<code> \nif(require(mvtnorm)){\n    set.seed(12345)\n    data <- rmvnorm(1000, c(0, 0), matrix(c(1, .5, .5, 1), 2, 2))\n    x <- data[,1]\n    y <- data[,2]\n    cor(x, y)  # 樣本相關\n    }\n\nif(require(mvtnorm)){\n    x <- cut(x, c(-Inf, .75, Inf))\n    y <- cut(y, c(-Inf, -1, .5, 1.5, Inf))\n    polychor(x, y)  # 兩步估計\n    }\n\nif(require(mvtnorm)){\n    polychor(x, y, ML=TRUE, std.err=TRUE)  # ML估計\n    }\n</code> <br/>\n<b>包</b></br>\npolycor</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或通過創建R代碼塊運行以下命令help(polycor, package ='polychor')，方法是單擊輸出窗口中的+           \n<br/>\n<br/>\n<b>描述-多序列</b></br>\n計算定量變量和有序變量之間的多序列相關（及其標準誤差），基於定量變量和潛在的連續變量的聯合分布，該潛在變量是有序變量的基礎，假設是雙變量正態的。可以使用最大似然估計或更快的“兩步”近似。對於ML估計，閾值的估計和估計的協方差矩陣也可用。\n<br/>\n<b>用法</b>\n<br/>\n<code> \npolyserial(x, y, ML = FALSE, control = list(), \n  std.err = FALSE, maxcor=.9999, bins=4, start, thresholds=FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個數字變量\n</li>\n<li>\ny: 一個有序分類變量；可以是數字、邏輯、因子、有序因子或字符變量，但如果是因子，其水平應按正確順序排列，字符變量的值按字母順序排列。\n</li>\n<li>\nML: 如果為TRUE，計算最大似然估計；如果為FALSE，默認情況下，計算更快的“兩步”近似。\n</li>\n<li>\nstd.err: 如果為TRUE，返回相關性的估計方差（對於兩步估計）或相關性和閾值的估計協方差矩陣（對於ML估計）；默認值為FALSE。 \n</li>\n<li>\nbins: 用於對x進行雙變量正態性檢驗的分箱數；默認值為4。\n</li>\n<li>\nmaxcor: 最大絕對相關性（以確保數值穩定性）。\n</li>\n<li>\nstart: 可選起始值：如果是單個數字，則為相關性的起始值。\n</li>\n<li>\nthresholds: 如果為TRUE（默認值為FALSE），即使未計算標準誤差，也返回估計的閾值和估計的相關性。\n</li>\n</ul>\n<b>值</b></br>\n值：如果std.err或thresholds為TRUE，則返回一個類“polycor”的對象，具有以下組件：</br>\ntype: 設置為“多序列”。</br>\nrho: 多序列相關。</br>\ncuts: 有序變量（y）的估計閾值，適用於ML估計。</br>\nvar: 相關性的估計方差，或者對於ML估計，相關性和閾值的估計協方差矩陣。</br>\nn: 相關性基於的觀察數量。</br>\nchisq: 雙變量正態性的卡方檢驗。</br>\ndf: 雙變量正態性檢驗的自由度。</br>\nML: 對於ML估計為TRUE，對於兩步估計為FALSE\n<b>示例</b></br>\n<code> \nif(require(mvtnorm)){\n    set.seed(12345)\n    data <- rmvnorm(1000, c(0, 0), matrix(c(1, .5, .5, 1), 2, 2))\n    x <- data[,1]\n    y <- data[,2]\n    cor(x, y)  # 樣本相關\n    }\n\nif(require(mvtnorm)){\n    y <- cut(y, c(-Inf, -1, .5, 1.5, Inf))\n    polyserial(x, y)  # 兩步估計\n    }\n\nif(require(mvtnorm)){\n    polyserial(x, y, ML=TRUE, std.err=TRUE) # ML估計\n    }\n\n</code> <br/>\n<b>包</b></br>\npolycor</br>\n<b>幫助</b></br>\n有關詳細幫助，請運行以下命令help(polyserial, package ='polychor')，方法是創建R代碼塊並單擊輸出窗口中的+           \n\n\t\t\t"
+    }
+  }
+}

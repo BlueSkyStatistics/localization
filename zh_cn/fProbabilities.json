@@ -1,0 +1,15 @@
+{
+  "title": "F 概率",
+  "navigation": "F 概率",
+  "varvals": "输入变量值，用逗号分隔。示例：3,0.5",
+  "dfnumerator": "分子自由度",
+  "dfdenominator": "分母自由度",
+  "labelSig": "显著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "F 概率",
+    "r_help": "help(pf, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            F 分布的密度、分布函数、分位数函数和随机生成，具有 df1 和 df2 自由度（可选的非中心参数 ncp）。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                df(x, df1, df2, ncp, log = FALSE)\n                <br/>\n                pf(q, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qf(p, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rf(n, df1, df2, ncp)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察数量。如果 length(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>df1, df2 : 自由度。允许为无穷大。</li>\n                \n                \n                <li>ncp : 非中心参数。如果省略，则假定为中心 F。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为 TRUE，则概率 p 以 log(p) 的形式给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为 TRUE（默认），概率为 P[X ≤ x]，否则为 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            F 分布的密度为 df1 = n1 和 df2 = n2 自由度\n            <br/>\n            <code>f(x) = Γ((n1 + n2)/2) / (Γ(n1/2) Γ(n2/2)) (n1/n2)^(n1/2) x^(n1/2 - 1) (1 + (n1/n2) x)^-(n1 + n2)/2</code>\n            <br/>\n            对于 x > 0。\n            <br/>\n            它是 n1 和 n2 独立标准正态分布的均方比的分布，因此是两个独立的卡方变量的比率，每个变量都除以其自由度。由于正态分布与 m 个独立正态分布的均方根的比率具有 Student's t_m 分布，因此 t_m 变量的平方在 1 和 m 自由度上具有 F 分布。\n            <br/>\n            非中心 F 分布再次是单位方差独立正态分布均方的比率，但分子中的那些可以具有非零均值，ncp 是均值的平方和。有关非中心分布的更多详细信息，请参见卡方。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            df 给出密度，pf 给出分布函数，qf 给出分位数函数，rf 生成随机变量。\n            <br/>\n            无效参数将导致返回值 NaN，并发出警告。\n            <br/>\n            结果的长度由 rf 的 n 决定，并且是其他函数的数值参数长度的最大值。\n            <br/>\n            除 n 以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            提供 ncp = 0 使用非中心分布的算法，这与省略 ncp 时使用的算法不同。这是为了在极端情况下与非常接近零的 ncp 值保持一致的行为。\n            <br/>\n            非零 ncp 的代码主要用于中等值的 ncp：对于大值，它不会非常准确，尤其是在尾部。"
+  }
+}

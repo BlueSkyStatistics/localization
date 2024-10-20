@@ -1,0 +1,14 @@
+{
+  "title": "Datensatz erkunden",
+  "navigation": "Datensatz erkunden",
+  "destdatalabel": "Zu erkundender Datensatz",
+  "htmloutlabel": "Ausgabe in einer Webseite anzeigen",
+  "standardgraphlabel": "Diagramme im Ausgabefenster einfügen",
+  "maxdistvalueslabel": "Maximale unterschiedliche Werte",
+  "rounddigitslabel": "Signifikante Ziffern",
+  "help": {
+    "title": "Datensatz erkunden",
+    "r_help": "help(dfSummary, package ='summarytools')",
+    "body": "\nDies erstellt eine Tabelle, die einen Datensatz beschreibt. Die Beschreibungen umfassen den Namen des Datensatzes, die Anzahl der Beobachtungen, die Anzahl der Variablen, die Anzahl der doppelten Datensätze, \nVariablennamen, Variablenklassen, Zusammenfassungsstatistiken der Variablen und Diagramme. Dieses Tool dient mehr der Datenexploration und -bereinigung als der Datenanalyse.   \nEine Textversion der Tabelle wird standardmäßig angezeigt, aber eine hübsche HTML-Version kann optional im Standard-Webbrowser angezeigt werden.\n<br/><br/>  \n<b>Zu erkundender Datensatz:</b> Datensatz, den Sie beschreiben möchten\n<br/><br/>  \n<b>Ausgabe in einer Webseite anzeigen:</b> Aktivieren Sie dieses Feld, wenn Sie eine hübsche Version der Tabelle im Standard-Webbrowser anzeigen möchten. Diese Version enthält Diagramme.\n<br/><br/>\n<b>Diagramme im Ausgabefenster einfügen:</b> Aktivieren Sie dieses Feld, wenn Sie Textversionen der Diagramme im BlueSky-Ausgabefenster einfügen möchten\n<br/><br/>\n<b>Maximale unterschiedliche Werte:</b> Die maximale Anzahl von Werten, für die Häufigkeiten angezeigt werden sollen. Wenn eine Variable mehr unterschiedliche Werte hat als diese Zahl, werden die verbleibenden Häufigkeiten als ganze Kategorie gemeldet, zusammen mit der Anzahl zusätzlicher unterschiedlicher Werte. Für Zeichenvariablen werden die häufigsten Werte angezeigt, sodass dies auch steuert, wie viele in diesem Fall angezeigt werden. Der Standardwert ist 10.\n<br/><br/>\n<b>Signifikante Ziffern:</b> Anzahl der anzuzeigenden signifikanten Ziffern. Der Standardwert ist 2.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> summarytools\n\t\t\t"
+  }
+}

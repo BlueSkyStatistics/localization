@@ -1,0 +1,12 @@
+{
+  "title": "列出已安裝的R套件",
+  "navigation": "已安裝的套件",
+  "label1": "注意：從...\\BlueSky Statistics\\10\\R-3.6.3庫路徑安裝的套件將始終覆蓋其他庫路徑中的套件",
+  "allPackages": "顯示所有庫路徑中的已安裝套件",
+  "path": "選擇一個庫路徑。安裝到所選庫路徑的套件將顯示",
+  "help": {
+    "title": "列出已安裝的R套件",
+    "r_help": "help(installed.packages, package='utils')",
+    "body": "\n<b>描述</b></br>\n顯示指定庫中所有已安裝套件的詳細信息。\n<br/>\n<b>用法</b>\n<br/>\n<code> \ninstalled.packages(lib.loc = NULL, priority = NULL,\n    noCache = FALSE, fields = NULL,\n    subarch = .Platform$r_arch, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nlib.loc: 描述要搜索的R庫樹位置的字符向量，或NULL表示所有已知樹（見.libPaths）。\n</li>\n<li>\npriority: 字符向量或NULL（默認）。如果非空，則用於選擇包；\"high\"等同於c(\"base\", \"recommended\"). 要選擇所有沒有分配優先級的包，請使用priority = \"NA\"。\n</li>\n<li>\nnoCache: 不使用快取信息，也不快取。\n</li>\n<li>\nfields: 一個字符向量，給出要從每個包的DESCRIPTION文件中提取的字段，除了默認字段，或NULL（默認）。不可用字段將導致NA值。\n</li>\n<li>\nsubarch: 字符串或NULL。如果非空且非空，則用於選擇為該子架構安裝的包。\n</li>\n<li>\n...: 傳遞給方法函數的參數。\n</li>\n</ul>\n<b>詳細信息</b></br>\ninstalled.packages掃描lib.loc中找到的每個包的'DESCRIPTION'文件，並返回一個包含包名、庫路徑和版本號的矩陣。<br/>\n<b>值</b><br/>\n一個矩陣，每個包一行，行名為包名，列名（當前）為\"Package\", \"LibPath\", \"Version\", \"Priority\", \"Depends\", \"Imports\", \"LinkingTo\", \"Suggests\", \"Enhances\", \"OS_type\", \"License\"和\"Built\"（包構建時的R版本）。可以使用fields參數指定其他列..<br/>\n<b>示例</b><br/>\n<code> \nBSkyInstalledPackages <- installed.packages(lib.loc ='C:/Program Files/BlueSky Statistics/R-3.6.3/library')\nBSkyFormat(BSkyInstalledPackages, singleTableOutputHeader = \"在路徑C:/Program Files/BlueSky Statistics/R-3.6.3/library中安裝的包列表\")\n</code> <br/>\n<b>包</b></br>\nutils</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋的右上角的R圖標，或在R語法編輯器中運行以下命令 help(installed.packages, package='utils')\n                "
+  }
+}

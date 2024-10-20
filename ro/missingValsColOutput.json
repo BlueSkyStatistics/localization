@@ -1,0 +1,10 @@
+{
+  "title": "Analiza valorilor lipsă, layout pe coloane",
+  "navigation": "Layout pe coloane",
+  "label1": "Afișează rezultatele valorilor lipsă în format pe coloane",
+  "help": {
+    "title": "Analiza valorilor lipsă",
+    "r_help": "ajutor(sapply)",
+    "body": "\n            <b>Descriere</b></br>\n            Afișează următoarele informații despre valorile lipsă<br/>\n            1. Numărul de variabile și observații din setul de date<br/>\n            2. Numărul de valori lipsă pe variabilă<br/>\n            3. Numărul de valori non-lipsă pe variabilă<br/>\n            4. Numerele de rând ale variabilelor care conțin valori lipsă<br/>\n            Folosim mai multe funcții din pachetul de bază, inclusiv sapply, care, ifelse<br/>\n            <b>Pachet</b></br>\n            bază</br>\n            <b>Ajutor</b></br>\n            Pentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapunerii de dialog sau rulați următoarea comandă ajutor(sapply) creând un chunk de cod R făcând clic pe + în fereastra de ieșire\n"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "K Cei Mai Aproape Vecini",
+  "navigation": "KNN",
+  "dependentvar": "Variabilă dependentă",
+  "independentvars": "Variabilă(e) independent(e)",
+  "header": "KNN este un clasificator leneș, nu creează un model pentru a prezice mai târziu. Se potrivește și evaluează în același timp. Împărțim setul de date în seturi de antrenament și testare, apoi construim modelul pe setul de antrenament, făcând predicții pe setul de testare și folosim aceste predicții pentru a afișa statistici de evaluare a modelului.",
+  "Seed": "Setați Sămânța",
+  "Group2": "Parametrii de ajustare pentru KNN",
+  "noneighbhors": "Numărul de vecini (Când o valoare nu este specificată, valoarea implicită este setată la rădăcina pătrată a numărului de observații din setul de date)",
+  "Group1": "Seturi de date de antrenament și testare",
+  "splitPercentage": "Introduceți procentajul de împărțire",
+  "trainDatasetName": "Introduceți numele setului de date de antrenament",
+  "testDatasetName": "Introduceți numele setului de date de testare",
+  "predictedValues": "Introduceți prefixul variabilei pentru valorile prezise. (Trebuie să specificați un prefix) Variabilele prefixate sunt create în setul de date de testare.",
+  "help": {
+    "title": "K Cei Mai Aproape Vecini",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Descriere</b></br>\nClasificare k-Cei Mai Aproape Vecini\n<br/>\n<b>Notă: </b></br>\n1. Seturile de date de antrenament și testare sunt create automat cu KNN pe baza procentajului de împărțire specificat<br/>\n2. Valorile prezise sunt stocate în setul de date de testare și sunt utilizate pentru a calcula statisticile modelului, și anume acuratețea, kappa, sensibilitatea... Matricea de confuzie este, de asemenea, afișată\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ntrain: matrice sau cadru de date al cazurilor din setul de antrenament.\n</li>\n<li>\ntest: matrice sau cadru de date al cazurilor din setul de testare. Un vector va fi interpretat ca un vector de rând pentru un singur caz.\n</li>\n<li>\ncl: factor al clasificărilor adevărate ale setului de antrenament\n</li>\n<li>\nk: numărul de vecini considerați.\n</li>\n<li>\nl: votul minim pentru o decizie definitivă, altfel îndoială. (Mai precis, sunt permise mai puțin de k-l voturi de dezacord, chiar dacă k este crescut prin egalitate.)\n</li>\n<li>\nprob: Dacă acest lucru este adevărat, proporția voturilor pentru clasa câștigătoare este returnată ca atribut prob.\n</li>\n<li>\nuse.all: controlează gestionarea egalităților. Dacă este adevărat, toate distanțele egale cu cea de-a k-a cea mai mare sunt incluse. Dacă este fals, se alege o selecție aleatorie de distanțe egale cu cea de-a k-a pentru a folosi exact k vecini.\n</li>\n</ul>\n<b>Valoare</b></br>\nFactor al clasificărilor setului de testare. îndoiala va fi returnată ca NA.</br>\n<b>Pachet</b></br>\ncaret;class</br>\n<b>Ajutor</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

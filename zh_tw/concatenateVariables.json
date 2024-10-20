@@ -1,0 +1,12 @@
+{
+  "title": "連接變數",
+  "navigation": "連接",
+  "newvar": "輸入用於連接結果的新/現有變數",
+  "concatenate": "選擇要連接的變數",
+  "repString": "輸入連接變數的可選分隔符",
+  "help": {
+    "title": "連接變數",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>描述</b></br>\n創建一個因子，將數值變數的範圍分解為等寬、（大致）等頻率的區間，或在\"自然\"切點（由K均值聚類確定）\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nX: 要分箱的數值變數。\n</li>\n<li>\nBins: 區間數量。\n</li>\n<li>\nmethod: \"intervals\"表示等寬區間；\"proportions\"表示等計數區間；\"natural\"表示通過K均值聚類確定的區間之間的切點。\n</li>\n<li>\nLabels: 如果為FALSE，將使用數字標籤作為因子水平；如果為NULL，則使用切點定義標籤；否則為字符向量的水平名稱。\n</li>\n</ul>\n<b>包</b></br>\nRcmdrMisc</br>\n<b>幫助</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

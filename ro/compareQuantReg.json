@@ -1,0 +1,12 @@
+{
+  "title": "Compararea pantei modelului de regresie cuantile",
+  "navigation": "Modele de regresie cuantile",
+  "label1": "Compară N modele de regresie cuantile.",
+  "label4": "**NOTĂ: Modelele create din optimizarea modelului (clasa train) nu sunt acceptate",
+  "modelselector1": "Selectați 2 sau mai multe modele de regresie cuantile pentru a compara pantele:",
+  "help": {
+    "title": "Compararea pantei modelului de regresie cuantile",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>Descriere</b></br>\nCalculați statisticile de test pentru două sau mai multe ajustări de regresie cuantile. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject: obiecte de clasă rq, provenind dintr-un apel la rq.\n</li>\n</ul>\n<b>Detalii</b><br/>\nIpoteza de interes este că coeficientii de pantă ai modelelor sunt identici. Statistica de test este o variantă a testului Wald descris în Koenker și Bassett (1982).<br/>\n<b>Valoare</b><br/>\nUn obiect de clasă \"anova\" care moștenește din clasa \"data.frame\".<br/>\n<b>Pachet</b></br>\nquantreg</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapuneri de dialog sau rulați următoarea comandă în editorul de sintaxă R help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Créer un tableau d'expérimentation pour une étude MSA Gage",
+  "navigation": "Concevoir une étude MSA",
+  "datasetname": "Nom du tableau d'étude MSA Gage",
+  "label1": "Détails sur les pièces",
+  "label2": "Détails sur les opérateurs",
+  "factor1": "Nom de la variable Pièce (par exemple, Pièce par défaut)",
+  "numOfFactorLevels1": "Nombre de pièces",
+  "factorLevels1": "Laissez vide pour générer automatiquement des valeurs ou spécifiez des valeurs - exemple : -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "Si généré automatiquement, spécifiez un préfixe. Si vide, il créera des valeurs comme 1,2,3,..",
+  "factor2": "Nom de la variable Opérateur (par exemple, Opérateur par défaut)",
+  "numOfFactorLevels2": "Nombre d'opérateurs",
+  "factorLevels2": "Laissez vide pour générer automatiquement des valeurs ou spécifiez des valeurs - exemple : -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "Si généré automatiquement, spécifiez un préfixe. Si vide, il créera des valeurs comme 1,2,3,..",
+  "numOfBlocks": "Nombre de blocs",
+  "replicationVarName": "si non laissé vide, nom de la variable d'itération de réplication si réplication > 1",
+  "replications": "Réplications",
+  "repeatOnlyChk": "Répéter uniquement (au lieu de vraie réplication - pas recommandé)",
+  "randomizationChk": "Randomiser les exécutions",
+  "selectRandomSeedRad": "Générer automatiquement une graine aléatoire (unique à chaque fois)",
+  "selectFixedRandomSeedRad": "Choisissez comme indiqué ou modifiez manuellement la graine aléatoire suivante",
+  "lbl1": "Vous n'avez peut-être pas besoin de changer la valeur de la graine de randomisation",
+  "randomseeds": "Graine pour la randomisation",
+  "sortByOperatorChk": "Trier par opérateur dans chaque réplication",
+  "help": {
+    "title": "Générer automatiquement un tableau d'expérimentation pour une étude MSA Gage",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tGénère automatiquement un tableau d'étude MSA pour configurer les exécutions d'expérimentation avec des détails sur les pièces et les opérateurs basés sur les paramètres spécifiés. \n\t\t\t\tSi des valeurs non numériques sont utilisées pour les pièces et les opérateurs, spécifiez-les entre guillemets simples par exemple 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUne fois les détails des exécutions d'expérimentation générés automatiquement, le tableau des exécutions apparaîtra dans l'interface utilisateur de la grille de données. \n\t\t\t\tLe tableau des exécutions peut être enregistré (ou 'enregistrer sous' dans le menu fichier) pour créer un fichier Excel à utiliser pour configurer les expériences\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

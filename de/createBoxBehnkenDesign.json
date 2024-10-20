@@ -1,0 +1,16 @@
+{
+  "title": "Erstellen Sie Box-Behnken (Quantitative) Design",
+  "navigation": "Erstellen Sie Box-Behnken (Quantitative) Design",
+  "selectedvars": "Variablen auswählen",
+  "datasetname": "Designname",
+  "numCenter": "Ganzzahlige Anzahl von Mittelpunktpunkten für jeden Block",
+  "blockName": "Name des Blocks",
+  "lbl1": "Sie müssen möglicherweise die Randomisierungseinstellungen nicht ändern",
+  "randomseeds": "Saatgut für die Randomisierung",
+  "randomizationChk": "Randomisieren Sie die Designgenerierung",
+  "help": {
+    "title": "Erstellen Sie Box-Behnken (Quantitative) Design",
+    "r_help": "help(bbd.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tbbd.design-Funktion zur Generierung von Box-Behnken-Designs unter Verwendung des Pakets rsm\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(bbd.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens Faktoren für bbd design.xlsx verwenden. Öffnen Sie die Datei im Datenraster mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

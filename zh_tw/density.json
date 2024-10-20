@@ -1,0 +1,25 @@
+{
+  "title": "密度圖",
+  "navigation": "密度",
+  "x": "選擇要繪製的變數",
+  "y": "顏色，指定一個因子變數",
+  "fill": "填充，指定一個因子變數",
+  "label1": "選擇一個位置以控制重疊",
+  "rd1": "堆疊密度",
+  "rd2": "堆疊密度並將每個堆標準化為單位高度",
+  "rd3": "並排（躲避）",
+  "alpha": "不透明度 (0-1)",
+  "flip": "翻轉軸",
+  "specify_a_title": "輸入標題",
+  "x_title": "X軸標籤",
+  "y_title": "Y軸標籤",
+  "Facetrow": "分面行",
+  "Facetcolumn": "分面列",
+  "Facetwrap": "分面包裝",
+  "Facetscale": "分面比例",
+  "help": {
+    "title": "密度圖",
+    "r_help": "幫助(geom_density, 套件='ggplot2')",
+    "body": "\n            <b>描述</b></br>\n            繪製密度計數（1d 核密度估計）。允許您通過因子變數分離密度。您還可以選擇創建面板、主題，並為 x 和 y 軸指定標題和標籤。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"變數 var1 的密度圖\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"變數 var1 的密度圖，顏色由 var2 的水平決定\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 預設數據集\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變數如何映射到幾何的視覺屬性（美學）。\n            </li>\n            <li>\n            x: 要繪製密度的數值變數\n            </li>\n            <li>\n            y: ..count 指定數值變數的計數\n            </li>\n            <li>\n            fill: 按因子變數分組繪圖\n            </li>\n            <li>\n            position: 位置調整，可以是字符串，也可以是對位置調整函數的調用結果。有效值為 \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density (): 1d 核密度估計，位置參數允許您指定用於重疊點的位置信息。\n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）。\n            </li>\n            <li>\n            facet_grid(): 在網格中排列面板（這是可選的）\n            </li>\n            <li>\n            theme_excel(): Excel 主題（這是可選的）\n            </li>\n            <li>\n            alpha: 設置透明度\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes</br>\n            <b>幫助</b></br>\n            幫助(geom_density)</br>\n            其他：點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入幫助(geom_density)，幫助(labs)，幫助(aes)，幫助(facet_grid)，幫助(theme_excel)\n    "
+  }
+}

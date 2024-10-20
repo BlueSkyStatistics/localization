@@ -1,0 +1,21 @@
+{
+  "title": "Eliminar Niveles No Utilizados",
+  "navigation": "Eliminar No Utilizados",
+  "target": "Variables de factor para eliminar niveles de",
+  "label1": "Ingrese las variables de factor para las que desea eliminar niveles. Puede especificar niveles no utilizados para eliminar ingresándolos o seleccionar eliminar todos los niveles no utilizados para las variables seleccionadas. Si la variable del conjunto de datos tiene un valor NA en los datos, entonces ese nivel NO se elimina.",
+  "label2": "Guardar nuevos niveles en nuevas variables o sobrescribir variables existentes",
+  "rd3": "Especificar un sufijo (se creará una nueva variable con el sufijo)",
+  "txt3": "Ingrese un sufijo",
+  "rd2": "Especificar un prefijo (se creará una nueva variable con el prefijo)",
+  "txt4": "Ingrese un prefijo",
+  "rd1": "Sobrescribir variables existentes",
+  "label3": "Método a utilizar",
+  "dropUnused": "Eliminar todos los niveles no utilizados",
+  "levelsToDrop": "Especificar niveles a eliminar",
+  "drop": "Ingrese niveles a eliminar separados por comas, por ejemplo, nivel1,nivel2,nivel3 NOTA: No use espacios como separadores entre los niveles",
+  "help": {
+    "title": "Eliminar Niveles No Utilizados",
+    "r_help": "help(fct_drop, package =forcats)",
+    "body": "\n<b>NOTA: NO ENCIERRA LOS NIVELES EN COMILLAS DOBLES O SIMPLES, NO PUEDE HABER ESPACIOS EN LOS NOMBRES DE LOS NIVELES. INGRESE NIVELES SEPARADOS POR COMAS EN EL FORMATO NIVEL1,NIVEL2,NIVEL3</b></br>\n<b>Descripción</b></br>\nIngrese las variables de factor para las que desea eliminar niveles no utilizados. Puede especificar niveles no utilizados para eliminar ingresándolos o seleccionar eliminar todos los niveles no utilizados para las variables seleccionadas. Si la variable del conjunto de datos tiene un valor NA en los datos, entonces ese nivel NO se elimina.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf: Un factor (o vector de caracteres).\n</li>\n<li>\nonly: Un vector de caracteres que restringe el conjunto de niveles a eliminar. Si se proporciona, solo se eliminarán los niveles que no tienen entradas y aparecen en este vector.\n</li>\n</ul>\n<b>Ejemplos</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Establecer solo para restringir qué niveles eliminar<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Paquete</b></br>\nforcats</br>\n<b>Ayuda</b></br>\nhelp(fct_drop, package =forcats)\n"
+  }
+}

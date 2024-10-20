@@ -1,0 +1,16 @@
+{
+  "title": "Ajusta modelul de pădure aleatoare",
+  "navigation": "Ajustare",
+  "dependentvar": "Variabilă dependentă",
+  "independentvars": "Variabilă(e) independent(e)",
+  "ntreetry": "Numărul de arbori de încercat",
+  "stepfactor": "Factor de pas",
+  "improve": "Îmbunătăți",
+  "trace": "Urmărire",
+  "plot": "Grafic",
+  "help": {
+    "title": "Ajusta modelul de pădure aleatoare",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>Descriere</b></br>\nÎncepând cu valoarea implicită a mtry, căutați valoarea optimă (în raport cu estimarea erorii Out-of-Bag) a mtry pentru randomForest. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx : matrice sau cadru de date al variabilelor predictive\n</li>\n<li>\ny : vector de răspuns (factor pentru clasificare, numeric pentru regresie)\n</li>\n<li>\nntreeTry : numărul de arbori utilizați în pasul de ajustare.\n</li>\n<li>\nstepFactor : la fiecare iterație, mtry este mărit (sau micșorat) cu această valoare.\n</li>\n<li>\nimprove : îmbunătățirea (relativă) a erorii OOB trebuie să fie de cel puțin această valoare pentru ca căutarea să continue\n</li>\n<li>\ntrace : dacă trebuie să se imprime progresul căutării.\n</li>\n<li>\nplot : dacă trebuie să se ploteze eroarea OOB ca funcție de mtry.\n</li>\n<li>\n... : opțiuni care trebuie date randomForest\n</li>\n</ul>\n<b>Valoare</b></br>\nReturnează o matrice al cărei prima coloană conține valorile mtry căutate, iar a doua coloană eroarea OOB corespunzătoare.</br>\n<b>Pachet</b></br>\nrandomForest​;BlueSky</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă în editorul de sintaxă R: help(tuneRF,package='randomForest')\n"
+  }
+}

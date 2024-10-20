@@ -1,0 +1,29 @@
+{
+  "title": "Capacidad de Proceso (No normal)",
+  "navigation": "Capacidad de Proceso (No normal)",
+  "printObjectSummaryChk": "Imprimir resumen del objeto QCC para la capacidad de proceso",
+  "label1": "Seleccione una función de distribución que se ajuste mejor a los datos",
+  "variableSelcted": "Seleccione una variable (datos observados) para analizar",
+  "rowsTobeUsed": "Si se selecciona, las filas a utilizar para analizar la capacidad de proceso (por ejemplo, especifique como 1:25 o 1,4,5,7:12)",
+  "lower": "LSL - valor numérico del límite de especificación inferior (escriba NA para especificar límites de especificación unilaterales)",
+  "upper": "USL - valor numérico del límite de especificación superior (escriba NA para especificar límites de especificación unilaterales)",
+  "target": "Límites de especificación objetivo (opcional)",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponencial",
+  "selectDistFuncGammaRad": "Gamma",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncPoissonRad": "Poisson",
+  "selectDistFuncNBinomRad": "Binomial Negativo",
+  "selectDistFuncGeomRad": "Geométrico",
+  "selectDistFuncBetaRad": "Beta",
+  "selectDistFuncUnifRad": "Uniforme",
+  "selectDistFuncLogisRad": "Logístico",
+  "selectDistFuncCauchyRad": "Cauchy",
+  "selectDistFuncNormRad": "Normal",
+  "digits": "Dígitos - número de dígitos a mostrar",
+  "help": {
+    "title": "Capacidad de Proceso para Distribución No normal",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para calcular índices de capacidad \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) y help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija la opción 1, diámetro a variable (observado..), muestra a variable de agrupación, \n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en las filas agrupadas a utilizar\n\t\t\t\t<br/>\n\t\t\t\tPara el análisis de capacidad de proceso - escriba 73.95 en LSL, 74.05 en USL y 74.0 en el Límite Objetivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

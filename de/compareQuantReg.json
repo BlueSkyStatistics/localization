@@ -1,0 +1,12 @@
+{
+  "title": "Vergleichen Sie die Steigungen des Quantilregressionsmodells",
+  "navigation": "Quant Reg Modelle",
+  "label1": "Vergleicht N Quantilregressionsmodelle.",
+  "label4": "**HINWEIS: Modelle, die aus der Modelloptimierung (Klasse train) erstellt wurden, werden nicht unterstützt",
+  "modelselector1": "Wählen Sie 2 oder mehr Quantilregressionsmodelle aus, um die Steigungen zu vergleichen:",
+  "help": {
+    "title": "Vergleichen Sie die Steigungen des Quantilregressionsmodells",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>Beschreibung</b></br>\nBerechnen Sie Teststatistiken für zwei oder mehr Quantilregressionsanpassungen. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject: Objekte der Klasse rq, die aus einem Aufruf von rq stammen.\n</li>\n</ul>\n<b>Details</b><br/>\nDie Hypothese von Interesse ist, dass die Steigungskoeffizienten der Modelle identisch sind. Die Teststatistik ist eine Variante des Waldtests, der in Koenker und Bassett (1982) beschrieben wird.<br/>\n<b>Wert</b><br/>\nEin Objekt der Klasse \"anova\", das von der Klasse \"data.frame\" erbt.<br/>\n<b>Paket</b></br>\nquantreg</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl im R-Syntax-Editor aus help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

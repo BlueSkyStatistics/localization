@@ -1,0 +1,14 @@
+{
+  "title": "Rellenar valores hacia abajo o hacia arriba",
+  "navigation": "Rellenar valores hacia abajo o hacia arriba",
+  "fillinvars": "Variables para rellenar valores",
+  "groupbyvars": "Variables para agrupar",
+  "directionlabel": "Dirección",
+  "downward": "Hacia abajo",
+  "upward": "Hacia arriba",
+  "help": {
+    "title": "Rellenar valores hacia abajo o hacia arriba",
+    "r_help": "help(fill, package ='tidyr')",
+    "body": "\nEste diálogo rellena los valores faltantes en las columnas del conjunto de datos utilizando la entrada anterior en cada columna. Esto puede ser útil en casos donde los valores no se repiten, sino que se registran cada vez que cambian. Típicamente, esto significa que el conjunto de datos está ordenado de manera significativa. Las variables donde se rellenan los valores serán sobrescritas.\n<br/><br/>\n<b>Variables para rellenar valores:</b> Especifique las variables para las cuales se rellenarán los valores faltantes.\n<br/><br/>\n<b>Variables para agrupar:</b> Especifique las variables que agrupan filas juntas. Los valores faltantes se rellenarán dentro de los grupos definidos por estas variables. Por ejemplo, agrupar por un identificador de sujeto rellenaría los valores dentro de los sujetos.\n<br/><br/>\n<b>Dirección:</b> Especifique la dirección en la que se rellenarán los valores.\n<br/><br/>\n<b>Paquetes R requeridos:</b> tidyverse\n\t\t\t"
+  }
+}

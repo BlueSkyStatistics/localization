@@ -1,0 +1,24 @@
+{
+  "title": "玫瑰图",
+  "navigation": "玫瑰图",
+  "x": "X 轴变量，指定一个因子变量",
+  "y": "Y 变量，指定一个数值变量",
+  "fill": "填充，指定一个因子变量",
+  "alpha": "不透明度 (0-1)",
+  "width": "宽度",
+  "rdgrp1": "填充比例",
+  "flip": "翻转轴",
+  "barcolor": "条形颜色（选择颜色后，点击控件外部以应用）",
+  "specify_a_title": "输入标题",
+  "x_title": "X 轴标签",
+  "y_title": "Y 轴标签",
+  "Facetrow": "分面行",
+  "Facetcolumn": "分面列",
+  "Facetwrap": "分面包装",
+  "Facetscale": "分面比例",
+  "help": {
+    "title": "玫瑰图",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>描述</b></br>\n玫瑰图/牛眼图（或圆形图）是一种圆形统计图形，分为切片/同心圆以说明数值比例。在玫瑰图/牛眼图中，每个同心圆的宽度（因此其面积）与其所代表的数量成比例。数量可以表示为计数或百分比。</br>​\n可以通过指定一个因子变量来选择性地创建分面。您还可以选择性地指定主题，并为 x 和 y 轴指定标题和标签。</br>\n当您指定多个 x 变量时，我们为每个 x 变量创建一个单独的玫瑰图/牛眼图。</br>\n<b>用法</b>\n<br/>\n<code>\n#您可以为单个因子变量创建牛眼图，每个因子变量的每个级别将创建一个同心圆。 同心圆的宽度与每个因子级别的计数成比例。 这里因子变量将对应于填充，如下所示<br/>\n#penguins 是 equatiomatic R 包中的数据集\nggplot(data=penguins,aes(x ='',fill=species)) +​\n                 geom_bar(alpha=1,width =0.9) +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"计数\",fill =\"var1\",title= \"牛眼图  填充: 物种\")​</br></br>\n#您可以通过指定一个数值/数值变量作为 y 变量和一个作为填充的因子变量来创建牛眼图。 这里为每个填充因子变量的级别创建一个同心圆。 同心圆的宽度与每个因子级别的 y 值之和成比例。 这里因子变量将对应于填充，如下所示<br/>\nggplot(data=penguins,aes(x ='', y = bill_length_mm, fill = species)) +​\n                 geom_bar(alpha=1,width =0.9,stat=\"identity\") +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"var1\",fill =\"var2\",title= \"牛眼图  X 美学:,Y 美学: var1,填充: var2\") </br></br>\n\n#您可以通过指定 x 变量创建玫瑰图，切片为每个 x 变量的每个级别创建，切片的半径与计数成比例<br/>\n    ggplot(data=penguins, aes(x=island, )) +\n        geom_bar( alpha=1,width=1,) +\n        coord_polar(\"x\") +\n        labs(x=\"岛屿\",  title= \"玫瑰图 X 美学: 岛屿\") +\n        xlab(\"岛屿\") + ylab(\"计数\")</br></br>\n\n#您可以通过指定 x 变量、y 变量和填充来生成玫瑰图。 切片为每个 x 变量的每个级别创建，并由填充变量中每个级别的 y 变量值之和填充。 切片按填充变量的级别划分。 填充变量在切片内占据的面积与与切片和填充变量匹配的 y 变量的计数之和成比例。<br/>\nggplot(data=penguins, aes(x=island,y=bill_depth_mm,fill=species )) +\n\tgeom_bar( alpha=1,width=1,stat = \"identity\") +\n\tcoord_polar(\"x\") +\n\tlabs(x=\"岛屿\", y=\"bill_depth_mm\", title= \"玫瑰图 X 美学: 岛屿 Y 美学: bill_depth_mm 填充: 物种\") +\n\txlab(\"岛屿\") + ylab(\"bill_depth_mm\")</br></br>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndata: 默认数据集​\n</li>\n<li>\naes(): 生成美学映射，描述数据中的变量如何映射到几何的视觉属性（美学）。​\n</li>\n<li>\nx: （可选）一个因子/分类变量。 条形的长度对应于每个因子变量级别的计数。​\n</li>\n<li>\nY: （可选）一个数值变量\n</li>\n<li>\nfill: （可选）一个可选的因子/分类变量，用于分组 x 中级别的计数:（见上文）​\n</li>\n<li>\ngeom_bar(): 创建条形图，position =\"fill\" 用每个分组级别的百分比填充条形。​\n</li>\n<li>\nCoor_polar(): 极坐标系统最常用于饼图，它是极坐标中的堆叠条形图。\n</li>\n<li>\nLabs(): 更改轴标签和图例标题（这是可选的）​\n</li>\n<li>\nfacet_grid(): 在网格中布局面板（这是可选的）​\n</li>\n<li>\ntheme_calc(): 指定计算器主题（这是可选的）​\n</li>\n<li>\ncoord_flip(): 翻转轴（这是可选的）​\n</li>\n<li>\nalpha: 控制不透明度，取值在 0-1 之间。 1 表示没有不透明度。\n</li>\n</ul>\n<b>包</b></br>\nggplot2;ggthemes;</br>\n<b>帮助</b></br>\nhelp(coord_polar, package=ggplot2)</br>\n其他：点击 R 帮助按钮以获取详细的 R 帮助。 您还可以输入 help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n    "
+  }
+}

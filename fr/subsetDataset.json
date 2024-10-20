@@ -1,0 +1,20 @@
+{
+  "title": "Sous-ensemble de données",
+  "navigation": "Sous-ensemble",
+  "label0": "Vous pouvez choisir de sauvegarder les résultats dans un nouveau jeu de données ou de remplacer le jeu de données existant",
+  "label1": "Options",
+  "New": "Sauvegarder les résultats dans un nouveau jeu de données",
+  "newdatasetname": "Entrez un nom de jeu de données",
+  "Existing": "Écraser le jeu de données existant",
+  "Output": "Afficher les résultats dans la fenêtre de sortie",
+  "distinct": "Sélectionnez des cas distincts",
+  "chkbox2": "Supprimer les niveaux de facteur non utilisés",
+  "subsetvars": "Sélectionnez les variables à inclure dans le jeu de données sous-ensemble",
+  "label12": "\n\nLes critères de sous-ensemble sont appliqués à chaque ligne, voir les exemples ci-dessous. \n1: Sélectionnez les lignes où var 1 n'est pas vide et var2 est vide, spécifiez:\n!is.na(var1) & is.na(var2) \n2: Sélectionnez les lignes où var1 > 30 et var 2 est Masculin, spécifiez:\nvar1>30 & var2=='Masculin' \n3: Critères complexes et/ou spécifiez:\n(var1 !=10 & var2>20) | var3==40 \n4: Correspondance de motif (xxx) ou correspondance exacte (abc) spécifiez:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Correspondance d'une sous-chaîne par position spécifiez: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Entrez les critères de sous-ensemble.",
+  "help": {
+    "title": "Sous-ensemble de données",
+    "r_help": "aide(select, package=dplyr)",
+    "body": "\n            <b>Description</b></br>\nSous-ensembles de jeux de données/dataframe. Renvoie un sous-ensemble du dataframe/jeu de données. Vous pouvez spécifier les colonnes/variables que vous souhaitez dans le plus petit jeu de données. Vous pouvez également spécifier des critères de sélection à appliquer à chaque ligne du dataframe.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: objet à sous-ensembler.\n</li>\n<li>\nsubset: expression logique indiquant les éléments ou lignes à conserver : les valeurs manquantes sont considérées comme fausses.\n</li>\n<li>\nselect: expression, indiquant les colonnes à sélectionner d'un dataframe.\n</li>\n</ul>\n<b>Valeur</b><br/>\nRenvoie un jeu de données sous-ensemble<br/>\n<b>Paquet</b></br>\ndplyr<br/>  \n<b>Aide</b></br>\naide(select, package=dplyr)\n"
+  }
+}

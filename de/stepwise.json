@@ -1,0 +1,22 @@
+{
+  "title": "Schrittweise",
+  "navigation": "Schrittweise",
+  "label1": "Wählen Sie ein Modell einer der folgenden Klassen aus. (R-Klasse ist in Klammern unten aufgeführt)",
+  "label2": "Lineares Modell (lm), Verallgemeinertes lineares Modell (glm), Ordinales logistisches/probit Regression (polr), Feed-Forward-Neuronale Netze und multinomiale log-lineare Modelle (nnet)",
+  "label3": "**HINWEIS: Schrittweise funktioniert nicht für Modelle, die durch Modell > Tuning (train) erstellt wurden",
+  "label4": "**HINWEIS: Schrittweise funktioniert nicht für multinomiale log-lineare Modelle (multinom) aufgrund einer Inkompatibilität, die wir mit den Autoren des R-Pakets angesprochen haben",
+  "modelselector1": "Wählen Sie ein Modell",
+  "label5": "Richtung",
+  "backforward": "rückwärts/vorwärts",
+  "forwardback": "vorwärts/rückwärts",
+  "backward": "rückwärts",
+  "forward": "vorwärts",
+  "aic": "AIC (Freiheitsgrade, die für die Strafe k = 2 verwendet werden)",
+  "bic": "BIC (Freiheitsgrade, die für die Strafe k = log(Anzahl der Zeilen in der Modellmatrix) verwendet werden) HINWEIS: Die Ausgabe zeigt AIC an, selbst wenn BIC ausgewählt ist)",
+  "label6": "Kriterium",
+  "help": {
+    "title": "Schrittweise",
+    "r_help": "hilfe(schrittweise, paket='RcmdrMisc')",
+    "body": "\n            <b>Beschreibung</b></br>\nDiese Funktion ist eine Schnittstelle zur ‘schrittweisen’ Funktion im RcmdrMisc-Paket. Die wiederum eine Schnittstelle zur stepAIC-Funktion im MASS-Paket ist.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"rückwärts/vorwärts\", \"vorwärts/rückwärts\", \"rückwärts\", \"vorwärts\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nmod : ein Modellobjekt einer Klasse, die von stepAIC verarbeitet werden kann.\n</li>\n<li>\nrichtung : wenn \"rückwärts/vorwärts\" (Standard), beginnt die Auswahl mit dem vollständigen Modell und entfernt Prädiktoren nacheinander, wobei in jedem Schritt berücksichtigt wird, ob das Kriterium durch das Hinzufügen einer zuvor entfernten Variablen verbessert wird; wenn \"vorwärts/rückwärts\", beginnt die Auswahl mit einem Modell, das nur eine Konstante enthält, und fügt Prädiktoren nacheinander hinzu, wobei in jedem Schritt berücksichtigt wird, ob das Kriterium durch das Entfernen einer zuvor hinzugefügten Variablen verbessert wird; \"rückwärts\" und \"vorwärts\" sind ähnlich, ohne die Überlegung in jedem Schritt.\n</li>\n<li>\nkriterium : zur Auswahl. Entweder \"BIC\" (Standard) oder \"AIC\". Beachten Sie, dass stepAIC das Kriterium in der Ausgabe als \"AIC\" kennzeichnet, unabhängig davon, welches Kriterium verwendet wird.\n</li>\n<li>\n... : Argumente, die an stepAIC übergeben werden sollen.\n</li>\n</ul>\n<b>Wert</b><br/>\nDas von stepAIC ausgewählte Modell.<br/>\n<b>Paket</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: hilfe(schrittweise, paket=\"RcmdrMisc\")\n"
+  }
+}

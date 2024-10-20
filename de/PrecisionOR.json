@@ -1,0 +1,17 @@
+{
+  "title": "Stichprobengröße, Präzision eines Odds Ratios",
+  "navigation": "Odds Ratio",
+  "howtouse": "Geben Sie entweder die Stichprobengröße oder die Breite des Konfidenzintervalls an, und das andere wird berechnet",
+  "n1": "Stichprobengröße Gruppe 1",
+  "width": "Breite des Konfidenzintervalls",
+  "ratio": "Verhältnis der Stichprobengröße Gruppe 2 zu Gruppe 1",
+  "prop1": "Ergebnisproportion Gruppe 1",
+  "prop2": "Ergebnisproportion Gruppe 2",
+  "conflevel": "Konfidenzniveau (0-1)",
+  "method": "Methode des Konfidenzintervalls",
+  "help": {
+    "title": "Stichprobengröße, Präzision eines Odds Ratios",
+    "r_help": "help(prec_or, package ='presize')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für ein Odds Ratio basierend auf der Breite des Konfidenzintervalls. Es berechnet die Stichprobengröße oder die Breite des Konfidenzintervalls, wenn der Benutzer \ndas andere angibt.\n<br/><br/>\n<b>Stichprobengröße Gruppe 1:</b> Geben Sie die Anzahl der Probanden in Gruppe 1 an\n<br/><br/>\n<b>Breite des Konfidenzintervalls:</b> Geben Sie die gewünschte Breite des Konfidenzintervalls an. Die Breite eines Konfidenzintervalls ist ein Maß für die Präzision einer Schätzung und ist die obere Grenze minus die untere Grenze.\n<br/><br/>\n<b>Verhältnis der Stichprobengröße Gruppe 2 zu Gruppe 1:</b> Geben Sie das Verhältnis der Stichprobengröße von Gruppe 2 zur Stichprobengröße von Gruppe 1 an. Ein Wert von 1 bedeutet gleiche Stichprobengrößen.\n<br/><br/>\n<b>Ergebnisproportion Gruppe 1:</b> Geben Sie die Proportion der Probanden in Gruppe 1 mit dem 'positiven' Ergebnis an\n<br/><br/>\n<b>Ergebnisproportion Gruppe 2:</b> Geben Sie die Proportion der Probanden in Gruppe 2 mit dem 'positiven' Ergebnis an\n<br/><br/>\nBeachten Sie, dass das Odds Ratio den Odds des 'positiven' Ergebnisses in Gruppe 1 im Verhältnis zu den Odds des 'positiven' Ergebnisses in Gruppe 2 entspricht.\n<br/><br/>\n<b>Konfidenzniveau:</b> Geben Sie das gewünschte Niveau des Konfidenzintervalls an\n<br/><br/>\n<b>Methode des Konfidenzintervalls:</b> Geben Sie die Art des angepassten Konfidenzintervalls an, das verwendet werden soll. Woolf (woolf), Gart (gart) und Independence-smoothed logit (indip_smooth) gehören zu \neiner allgemeinen Familie von angepassten Konfidenzintervallen, die 0 (woolf) zu jeder Zelle, 0,5 (gart) zu jeder Zelle oder eine Anpassung für jede Zelle basierend auf beobachteten Daten \n(independence-smoothed) hinzufügen. Bei gart und indip_smooth ist eine Schätzung des CI nicht möglich, wenn p1 = 0, in diesem Fall wird das OR 0, aber die untere Grenze des CI ist > 0. Darüber hinaus, \nwenn p1 = 1 und p2 < 1, oder wenn p1 > 0 und p2 = 0, wird das OR ∞, aber die obere Grenze des CI ist endlich. Für die ungefähren Intervalle sind gart und indip_smooth die empfohlenen \nIntervalle (Fagerland et al. 2011).\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> presize\n\t\t\t"
+  }
+}

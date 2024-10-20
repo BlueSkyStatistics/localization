@@ -1,0 +1,19 @@
+{
+  "title": "Dimensiunea eșantionului, Testul a Două Proporții",
+  "navigation": "Două Proporții",
+  "howtouse": "Pentru a calcula dimensiunea eșantionului: specificați ambele proporții ale grupului și puterea\nPentru a calcula puterea: specificați ambele proporții ale grupului și dimensiunea eșantionului\nPentru a calcula diferența de proporție detectabilă: specificați dimensiunea eșantionului, puterea și proporția grupului 2",
+  "n": "Dimensiunea Eșantionului",
+  "power": "Putere (0-1)",
+  "propgrp1": "Proporția Grupului 1",
+  "propgrp2": "Proporția Grupului 2",
+  "ratio": "Raportul Dimensiunii Eșantionului Grup 1 vs Grup 2",
+  "siglevel": "Nivel de Semnificație (0-1)",
+  "alternativeopt": "Ipoteza Alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "help": {
+    "title": "Dimensiunea eșantionului, Testul a Două Proporții",
+    "r_help": "help(epi.sscohortc, package ='epiR')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test de proporții cu două eșantioane. Calculează dimensiunea eșantionului, puterea sau dimensiunea efectului (diferența în proporții, raportul de rate, raportul de șanse) atunci când utilizatorul \nspecifice celelalte două.\n<br/><br/>\n<b>Dimensiunea Eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă este adevărată.\n<br/><br/>\n<b>Proporția Grupului 1:</b> Specificați proporția din grupul 1\n<br/><br/>\n<b>Proporția Grupului 2:</b> Specificați proporția din grupul 2\n<br/><br/>\n<b>Raportul Dimensiunii Eșantionului Grup 1 vs Grup 2:</b> Specificați raportul dorit al dimensiunilor eșantionului (grup 1 N împărțit la grup 2 N). Un raport de 1 înseamnă dimensiuni egale ale eșantionului.\n<br/><br/>\n<b>Nivel de Semnificație:</b> Specificați nivelul dorit de semnificație (adică eroarea de tip I) al testului\n<br/><br/>\n<b>Ipoteza Alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Pachete R Necesare:</b> epiR\n\t\t\t"
+  }
+}

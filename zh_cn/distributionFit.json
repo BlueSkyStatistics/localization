@@ -1,0 +1,25 @@
+{
+  "title": "对非截断数据的单变量分布拟合",
+  "navigation": "分布拟合",
+  "variableSelcted": "选择一个包含分布的变量",
+  "label2": "各种分布的拟合测试",
+  "normDistChk": "正态",
+  "weibullDistChk": "威布尔",
+  "lnormDistChk": "对数正态",
+  "poissonDistChk": "泊松",
+  "expDistChk": "指数",
+  "gammaDistChk": "伽马",
+  "nbinomDistChk": "负二项",
+  "geomDistChk": "几何",
+  "betaDistChk": "贝塔",
+  "unifDistChk": "均匀",
+  "logisDistChk": "逻辑斯蒂",
+  "cauchyDistChk": "柯西",
+  "method": "拟合方法",
+  "gof": "拟合优度（gof） - 仅在选择上面的'mge'拟合方法时需要",
+  "help": {
+    "title": "对非截断数据的单变量分布拟合",
+    "r_help": "help(fitdist, package = fitdistrplus)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t通过最大似然（mle）、矩匹配（mme）、分位数匹配（qme）或最大化拟合优度估计（mge）对非截断数据的单变量分布进行拟合，这也被称为最小化距离估计。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用 R help(fitdist, package = fitdistrplus) 和 help(gofstat, package = fitdistrplus)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t四种可能的拟合方法如下所述：\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当方法=\"mle\"（默认）\n\t\t\t\t最大似然估计是通过最大化对数似然来进行的。在 mledist 中通过 optim 进行数值优化，以找到最佳值（有关详细信息，请参见 mledist）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当方法=\"mme\"\n\t\t\t\t矩匹配估计是通过平衡理论和经验矩来进行的。通过封闭形式公式计算分布参数的估计值，适用于以下分布：\"norm\"、\"lnorm\"、\"pois\"、\"exp\"、\"gamma\"、\"nbinom\"、\"geom\"、\"beta\"、\"unif\" 和 \"logis\"。否则，理论和经验矩通过最小化观察和理论矩之间的平方差之和进行数值匹配。在这种情况下，调用 fitdist 时需要进一步的参数：order 和 memp（有关详细信息，请参见 mmedist）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当方法 = \"qme\"\n\t\t\t\t分位数匹配估计是通过平衡理论和经验分位数来进行的。在 qmedist 中通过 optim 进行数值优化，以最小化观察和理论分位数之间的平方差之和。使用此方法需要一个额外的参数 probs，定义为要匹配的分位数的概率的数值向量（有关详细信息，请参见 qmedist）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当方法 = \"mge\"\n\t\t\t\t最大拟合优度估计是通过最大化拟合优度统计量来进行的。在 mgedist 中通过 optim 进行数值优化，以最小化拟合优度距离。使用此方法需要一个额外的参数 gof，定义为选择的拟合优度距离。可以使用经典的 Cramer-von Mises 距离（\"CvM\"）、经典的 Kolmogorov-Smirnov 距离（\"KS\"）、经典的 Anderson-Darling 距离（\"AD\"），后者对分布的尾部给予更多权重，或 Luceno（2006）提出的此最后一种距离的变体（有关详细信息，请参见 mgedist）。此方法不适用于离散分布。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当方法 = \"mse\"\n\t\t\t\t最大拟合优度估计是通过最大化平均对数间隔来进行的。在 msedist 中通过 optim 进行数值优化。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t收敛是 \n\t\t\t\t一个整数代码，用于定义 optim/constrOptim 的收敛，定义如下或由用户在用户提供的优化函数中定义。0 表示成功收敛。1 表示已达到 optim 的迭代限制。10 表示 Nealder-Mead 单纯形的退化。100 表示 optim 遇到内部错误。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t拟合优度统计量由 gofstat() 计算。卡方统计量使用由参数 chisqbreaks 定义的单元计算，或从数据自动定义的单元，以达到每个单元大致相同的观察数量，大致等于参数 meancount，或者如果有一些平局，则略多。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t对于连续分布，Kolmogorov-Smirnov、Cramer-von Mises 和 Anderson-Darling 统计量也会计算，如 Stephens（1986）所定义。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t重要统计量是 Cramer-von Mises、Anderson-Darling 和 Kolmogorov 统计量用于连续分布，卡方统计量用于离散分布（\"binom\"、\"nbinom\"、\"geom\"、\"hyper\" 和 \"pois\"）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">有关分布拟合的良好概述，请参见 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">有关分布拟合的良好概述，请参见 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best</a>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

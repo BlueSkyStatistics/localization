@@ -1,0 +1,18 @@
+{
+  "title": "排名變數",
+  "navigation": "排名",
+  "label1": "輸入新排名變數的後綴或前綴",
+  "suffix": "後綴",
+  "prefix": "前綴",
+  "txt1": "輸入後綴/前綴",
+  "dest": "選擇要排名的變數",
+  "rankby": "可選擇變數以在其中排名值",
+  "label2": "指定排名函數",
+  "rankfn": "選擇排名函數，點擊幫助以獲取更多信息",
+  "nooftiles": "對於排名函數ntile，請指定要拆分的組數：",
+  "help": {
+    "title": "排名變數",
+    "r_help": "幫助(平均值)",
+    "body": "\n<b>描述</b></br>\n排名將存儲在指定前綴或後綴的新變數中</br>\n六種排名函數的變體，模仿SQL2003中描述的排名函數。它們目前使用內置的排名函數實現，主要作為在R和SQL之間轉換時的便利。所有排名函數將最小輸入映射到最小輸出。使用desc()來反轉方向。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nrow_number(x)\nntile(x, n)\nmin_rank(x)\ndense_rank(x)\npercent_rank(x)\ncume_dist(x)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 要排名的值向量。缺失值保持不變。如果您想將它們視為最小或最大值，請在排名之前用Inf或-Inf替換。\n</li>\n<li>\nn: 要拆分的組數。\n</li>\n</ul>\n<b>詳細信息</b><br/>\nrow_number(): 相當於rank(ties.method = \"first\")<br/>\nmin_rank(): 相當於rank(ties.method = \"min\")<br/>\ndense_rank(): 類似於min_rank()，但排名之間沒有間隙<br/>\npercent_rank(): 通過將min_rank重新縮放到[0, 1]計算的0到1之間的數字<br/>\ncume_dist(): 累積分佈函數。所有小於或等於當前排名的值的比例。<br/>\nntile(): 粗略排名，將輸入向量分成n個桶。<br/>\n<b>示例</b><br/>\n<code> \nx <- c(5, 1, 3, 2, 2, NA)<br/>\nrow_number(x)<br/>\nmin_rank(x)<br/>\ndense_rank(x)<br/>\n</code><br/>\n<b>包</b></br>\ndplyr</br>\n<b>幫助</b></br>\n幫助(排名, 包='dplyr')"
+  }
+}

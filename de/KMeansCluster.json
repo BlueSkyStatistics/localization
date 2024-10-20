@@ -1,0 +1,16 @@
+{
+  "title": "K-Means Cluster",
+  "navigation": "K-Means",
+  "destination": "Ziel",
+  "clusters": "Anzahl der Cluster",
+  "seeds": "Anzahl der Start-Samen",
+  "iterations": "Maximale Iterationen",
+  "storeClusterInDataset": "Cluster dem Datensatz zuweisen",
+  "variablename": "Variable zur Speicherung der Clusterzahlen",
+  "biplot": "Cluster-Biplot anzeigen",
+  "help": {
+    "title": "K-Means Cluster",
+    "r_help": "hilfe(kmeans, paket ='stats')",
+    "body": "\n<b>Beschreibung</b></br>\nFührt K-Means-Clustering durch\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset =FALSE, varNameForCluster=\"\", dataset=\"Datensatzname\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: Die zu analysierenden Variablen in einem Vektor der Form c('var1','var2'...)\n</li>\n<li>\ncenters: entweder die Anzahl der Cluster, sagen wir k, oder eine Menge von initialen (verschiedenen) Clusterzentren. Wenn eine Zahl, wird eine zufällige Menge von (verschiedenen) \nZeilen in x als die initialen Zentren gewählt.\n</li>\n<li>\niter.max: die maximale Anzahl an erlaubten Iterationen.\n</li>\n<li>\nnum.seeds: Die Anzahl der verschiedenen Start-Zufalls-Samen, die verwendet werden sollen. Jeder Zufalls-Samen führt zu einer anderen K-Means-Lösung.\n</li>\n<li>\nstoreClusterInDataset : Speichern Sie die Clusterzuweisungen im Datensatz\n</li>\n<li>\nvarNameForCluster: Die Variablennamen für die zugewiesenen Cluster\n</li>\n<li>\ndataset: Der zu analysierende Datensatz\n</li>\n</ul>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Hilfe</b></br>\nhilfe(kmeans, paket=\"stats\")\n    "
+  }
+}

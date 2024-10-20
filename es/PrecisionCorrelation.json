@@ -1,0 +1,15 @@
+{
+  "title": "Tamaño de Muestra, Precisión de una Correlación",
+  "navigation": "Correlación",
+  "howtouse": "Especifique el tamaño de la muestra o el ancho del intervalo de confianza y se calculará el otro",
+  "n": "Tamaño de Muestra",
+  "width": "Ancho del Intervalo de Confianza",
+  "corr": "Correlación (-1 a 1)",
+  "conflevel": "Nivel de Confianza (0-1)",
+  "corrtype": "Tipo de Correlación",
+  "help": {
+    "title": "Tamaño de Muestra, Precisión de una Correlación",
+    "r_help": "help(prec_cor, package ='presize')",
+    "body": "\nEsta es una evaluación del tamaño de la muestra para una correlación de Pearson, Spearman o Kendall basada en el ancho del intervalo de confianza. Calcula el tamaño de la muestra o el ancho del intervalo de confianza cuando el usuario especifica el otro.\n<br/><br/>\n<b>Tamaño de Muestra:</b> Especifique el número de sujetos en el estudio\n<br/><br/>\n<b>Ancho del Intervalo de Confianza:</b> Especifique el ancho del intervalo de confianza deseado. El ancho de un intervalo de confianza es una medida de la precisión de una estimación y es el límite superior menos el límite inferior.\n<br/><br/>\n<b>Correlación:</b> Especifique el valor de correlación esperado\n<br/><br/>\n<b>Nivel de Confianza:</b> Especifique el nivel deseado del intervalo de confianza\n<br/><br/>\n<b>Tipo de Correlación:</b> Especifique el tipo de correlación que se está calculando\n<br/><br/>\n<b>Paquetes R Requeridos:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Zeichenvariablen in Datum & Uhrzeit umwandeln",
+  "navigation": "Zeichen in Datum & Uhrzeit",
+  "label1": "Wählen Sie ein Suffix oder Präfix für konvertierte Variablen",
+  "suffix": "Suffix",
+  "prefix": "Präfix",
+  "prefixOrSuffix": "Geben Sie ein Präfix oder Suffix ein",
+  "Destination": "Wählen Sie Zeichenvariablen aus, die in Datum umgewandelt werden sollen",
+  "DateFormat": "Wählen Sie das Format der Zeichenkette",
+  "TimeZone": "Wählen Sie eine Zeitzone (Standard - nichts ausgewählt ist die lokale Zeitzone des PCs)",
+  "help": {
+    "title": "Zeichen in Datum umwandeln",
+    "r_help": "help(strptime, package=\"base\")",
+    "body": "\n<b>Beschreibung</b></br>\nKonvertiert ein Zeichen in ein Datum (POSIXct-Klasse). Sie müssen das Format des Datums angeben, das in einer Zeichenkette gespeichert ist.\nDie obige Funktion ruft intern strptime im Basis-Paket auf. Wir haben strftime erweitert, um mehrere Variablen zu unterstützen.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkystrptime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDaten: Der Datensatzname als Zeichenkette.\n</li>\n<li>\nvarNames: Die Variablennamen der Klasse Zeichen, die in Datum (POSIXct-Klasse) umgewandelt werden müssen.\n</li>\n<li>\ndateFormat: Eine Zeichenkette. Der Standard für die Formatmethoden ist \"%Y-%m-%d %H:%M:%S\", wenn ein Element eine Zeitkomponente hat, die nicht Mitternacht ist, und \"%Y-%m-%d\" andernfalls. Wenn options(\"digits.secs\") gesetzt ist, werden bis zu der angegebenen Anzahl von Ziffern für Sekunden ausgegeben.\n</li>\n<li>\nzeit: Eine Zeichenkette, die die Zeitzone angibt, die für die Umwandlung verwendet werden soll. Systemspezifisch (siehe as.POSIXlt), aber \"\" ist die aktuelle Zeitzone, und \"GMT\" ist UTC. Ungültige Werte werden in der Regel als UTC behandelt, auf einigen Plattformen mit einer Warnung.\n</li>\n<li>\nprefixOrSuffix: Gibt ein Präfix oder Suffix für die konvertierten Variablen der Klasse POSIXct an. Nimmt entweder c(\"prefix\") oder c(\"suffix\"). Neue Variablen, die mit diesem Präfix/Suffix zum ursprünglichen Variablennamen erstellt werden.\n</li>\n<li>\nprefixOrSuffixValue = Ein Zeichenvektor, der den Namen des zu verwendenden Präfix oder Suffix angibt.\n</li>\n</ul>\n<b>Paket</b></br>\nbasis</br>\n<b>Hilfe</b></br>\nhilfe(strptime)\n"
+  }
+}

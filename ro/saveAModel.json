@@ -1,0 +1,24 @@
+{
+  "title": "Salvați modelele într-un fișier",
+  "navigation": "Salvați modelele",
+  "filterModels": "Filtrați modelele după clasă",
+  "modelSelection": "Selectați un model(e) de salvat",
+  "importResp": "Selectați un fișier pentru a salva un model",
+  "label1": "NOTĂ: Modelul va fi salvat într-un fișier în calea selectată mai jos DOAR atunci când executați dialogul.",
+  "levelOfInterest": "Când variabila de prezis are 2 niveluri, specificați nivelul de interes. Matricea de confuzie și statisticile aferente sunt afișate cu nivelul de interes specificat ca referință.",
+  "label12": "Rezultatele testelor: De îndată ce un model este selectat, vom efectua teste pentru a vedea dacă variabilele dependente specificate în model sunt disponibile în setul de date care urmează a fi evaluat. Rezultatele vor fi afișate aici.",
+  "label2": "Salvați valorile prezise și statisticile de suport.",
+  "label3": "Predicțiile și probabilitățile prezise, acolo unde este cazul, sunt stocate în setul de date evaluat ca noi variabile cu prefixul de mai jos.",
+  "label4": "**Pentru variabilele dependente cu 2 niveluri, al 2-lea nivel este considerat nivelul pozitiv. Consultați Date > Niveluri de factor > Reordonare manuală a nivelurilor pentru a schimba ordinea nivelurilor de factor și a reconstrui modelul.",
+  "conflevel": "Salvați intervalele de încredere pentru valorile prezise individuale **(Valabil doar pentru modelele liniare (clasa lm))",
+  "roctable": "Afișați tabelul ROC (**Numai pentru variabilele dependente binare)",
+  "colname": "Specificați prefixul numelui coloanei",
+  "label5": "**Bifarea casetei de mai sus va duce la o penalizare a performanței pentru seturi mari de date.",
+  "level": "Specificați nivelul de încredere",
+  "confusioncheck": "Generați matricea de confuzie",
+  "help": {
+    "title": "Salvați modelele",
+    "r_help": "help(save, package='base')",
+    "body": "\n    <b>Descriere</b></br>\n    Modelele selectate vor fi salvate într-un fișier în formatul de date R (.RData extensie)</br>\n    Puteți specifica un fișier nou introducând un nume sau selectând un fișier existent.</br>\n    Dacă selectați un fișier existent, acesta va fi suprascris.</br>\n    Trebuie să faceți clic pe butonul de execuție (butonul cu triunghi orizontal) pentru a rula dialogul și a salva obiectele într-un fișier. \n    <br/>\n    <b>Utilizare</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"calea fișierului\")\n    </code> <br/>\n    <b>Argumente</b><br/>\n    <ul>\n    <li>\n    model1, model2...: obiecte de model ajustate\n    </li>\n    <li>\n    file: numele fișierului cu calea, obiectele de model selectate vor fi salvate în acest fișier RData\n    </li>\n    </ul>\n    <b>Pachet</b></br>\n    bază</br>\n    <b>Ajutor</b></br>\n    Pentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapunerii de dialog sau rulați următoarea comandă help(save, package = 'base') în fereastra editorului R\n    </br>\n    "
+  }
+}

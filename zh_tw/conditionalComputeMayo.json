@@ -1,0 +1,12 @@
+{
+  "title": "條件計算，多個",
+  "navigation": "條件計算，多個",
+  "newvar": "新/現有變數名稱（無空格/特殊字符）：",
+  "label2": "表達式構建器：構建所需的表達式，例如 var1+var2, as.numeric(var2), substr(var4,2,4)...",
+  "formula": "構建計算命令",
+  "help": {
+    "title": "條件計算，多個",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>描述</b></br>\n計算一個表達式並將結果存儲在數據框/數據集的變數/列中</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = 表達式)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nDatasetX:  數據框/數據集名稱。​\n</li>\n<li>\nvar1: 數據集/數據框中需要計算的新/現有列\n</li>\n<li>\n表達式: 以 variable1 =variable2+variable3 形式的表達式\n</li>\n</ul>\n<b>詳情</b></br>\n評估表達式並將結果存儲在數據框/數據集的變數/列中</br>\n<b>包</b></br>\ndplyr</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋的右上角的 R 圖標，或在 R 編輯器窗口中運行以下命令 help(mutate, package ='dplyr')\n            "
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "自动化 ARIMA",
+  "navigation": "自动化 ARIMA",
+  "destination": "要预测的变量",
+  "firstObservation": "第一次观察的时间，例如：1：输入 1961,1 表示 1961 年 1 月；例如：2：输入 1961,3 表示 1961 年第 3 季度；例如：3：输入 1 表示连续系列",
+  "frequency": "每单位时间的观察次数，例如：1：输入 12 表示每年每月一次观察；例如：2：输入 4 表示每季度一次观察；例如：3：输入 1 表示连续系列。",
+  "criteria": "模型标准",
+  "label1": "图表",
+  "plotSeries": "绘制系列",
+  "yaxisLabel": "Y 轴标签",
+  "mainTitle": "主标题",
+  "label2": "拟合值选项",
+  "saveFitted": "保存拟合值",
+  "fittedValsDatasetName": "指定存储拟合值的数据集名称",
+  "oriVsFitted": "绘制原始值与拟合值",
+  "plotResiduals": "绘制残差",
+  "label3": "使用模型进行预测",
+  "predict": "使用模型进行预测",
+  "periodToPredict": "指定要预测的时间间隔数量",
+  "confInterval": "指定置信区间的百分比，例如 95 表示 95%",
+  "savePredictedVals": "保存预测值",
+  "predictedValsDatasetName": "指定存储预测值的数据集名称",
+  "plotPredicted": "绘制预测值",
+  "correlogram": "生成自相关图",
+  "maxlag": "输入最大滞后",
+  "Boxtest": "Ljung-Box 检验",
+  "help": {
+    "title": "自动化 ARIMA",
+    "r_help": "help(auto.arima, package=forecast)",
+    "body": "\n            <b>描述</b></br>\n根据 AIC、AICc 或 BIC 值返回最佳 ARIMA 模型。该函数在提供的顺序约束内对可能的模型进行搜索。内部调用 forecast 包中的 auto.arima\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvars: 用于构建自动 ARIMA 模型的选定变量。\n</li>\n<li>\nstart: 第一次观察的时间应以年、月或年、季度的格式输入，例如（如果您的数据按月组织，则 1992,1 表示 1992 年 1 月；如果您的数据按季度组织，则 1992,1 表示 1992 年的第一季度。\n</li>\n<li>\nfrequency: 单位时间内的观察次数。例如：每月有 12 次观察，每年有 4 次观察。\n</li>\n<li>\nic: 用于模型选择的信息标准。它必须是 \"aic\"、\"aicc\" 或 \"bic\" 之一。\n</li>\n<li>\nplotSeries: 如果为 TRUE，将生成时间序列图。\n</li>\n<li>\nplotResiduals: 如果为 TRUE，将绘制残差。\n</li>\n<li>\npredict: 如果为 TRUE，将生成预测值。\n</li>\n<li>\nsavePredictedVals: 将保存预测值。\n</li>\n<li>\nPlotPredictedValues: 预测值也将被绘制。\n</li>\n<li>\ncorrelogram: 如果为 TRUE，将生成自相关图。\n</li>\n<li>\nmain: 图表的主标题\n</li>\n<li>\nylab: Y 轴的标题\n</li>\n<li>\ndataset: 从中选择变量的数据集名称。\n</li>\n</ul>\n<b>详细信息</b></br>\n默认参数旨在快速估计多个时间序列的模型。如果您只分析一个时间序列，并且可以花费更多时间，建议将 stepwise=FALSE 和 approximation=FALSE。</br>\n非逐步选择可能会很慢，尤其是对于季节性数据。使用 Hyndman 和 Khandakar（2008）中概述的逐步算法，除了选择季节性差异的默认方法现在基于季节性强度的估计（Wang、Smith 和 Hyndman，2006），而不是 Canova-Hansen 检验。该算法还存在一些其他小的变化。</br>\n<b>值</b><br/>\n一个类为 \"Arima\" 的列表，包含以下组件：<br/>\ncoef: AR、MA 和回归系数的向量，可以通过 coef 方法提取。<br/>\nsigma2: 创新方差的最大似然估计。<br/>\nvar.coef: 系数 coef 的估计方差矩阵，可以通过 vcov 方法提取。<br/>\nloglik: 最大化的对数似然（差分数据），或用于此的近似值。<br/>\narma: 规范的紧凑形式，作为一个向量给出 AR、MA、季节性 AR 和季节性 MA 系数的数量，以及周期和非季节性和季节性差异的数量。<br/>\naic: 对应于对数似然的 AIC 值。仅对 method = \"ML\" 拟合有效。<br/>\nresiduals: 拟合的创新。<br/>\nseries: 系列 x 的名称。<br/>\ncode: optim 返回的收敛值。<br/>\nn.cond\t:未用于拟合的初始观察数量。<br/>\nnobs: 用于拟合的“使用”观察数量，也可以通过 nobs() 提取，并由 BIC 使用。<br/>\nmodel: 表示用于拟合的卡尔曼滤波器的列表。请参见 KalmanLike。<br/>\n<b>包</b></br>\nforecast</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 语法编辑器中运行以下命令 help(auto.arima, package=forecast)\n\t\t\t"
+  }
+}

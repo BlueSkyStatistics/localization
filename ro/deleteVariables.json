@@ -1,0 +1,10 @@
+{
+  "title": "Șterge variabilele",
+  "navigation": "Șterge",
+  "trg": "Variabile de șters",
+  "help": {
+    "title": "Elimină NAs",
+    "r_help": "ajutor(na.omit, pachet=data.table)",
+    "body": "\n<b>Descriere</b></br>\nElimină valorile lipsă/NA din setul de date/dataframe\nCreează un nou/Suprascrie setul de date existent prin eliminarea rândurilor cu una sau mai multe valori lipsă pentru coloanele/numele variabilelor selectate\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n​object: un obiect R.​\n</li>\n</ul>\n<b>Pachet</b></br>\ndata.table</br>\n<b>Ajutor</b></br>\najutor(na.omit)\n"
+  }
+}

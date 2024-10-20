@@ -1,0 +1,29 @@
+{
+  "helpText": "重複測量方差分析要求數據為長格式。如果您的數據不是長格式，請參見數據集 > 重塑 > 更長",
+  "repMeasuresConfig": "配置",
+  "modelname": "輸入模型名稱",
+  "title": "重複測量方差分析 - 寬",
+  "subjectID": "可選指定一個變量作為受試者標識符",
+  "dependentVariable": "因變量",
+  "navigation": "方差分析，重複測量，寬",
+  "response": "被試內變量，例如時間",
+  "Fixed": "被試間因素",
+  "covariates": "協變量",
+  "Summary": "估計的邊際均值",
+  "Scatter_plot": "後續檢驗",
+  "Residual": "殘差與擬合圖",
+  "Histogram": "殘差的直方圖",
+  "brownForsythe": "布朗-福賽斯檢驗",
+  "levenesTest": "萊文檢驗",
+  "plotMeansCI": "均值和置信區間的圖",
+  "simpleEffectsTest": "簡單效應檢驗",
+  "label2": "後續檢驗和簡單效應檢驗的選項",
+  "combon": "使用以下方法比較均值：",
+  "adjust": "調整p值的方法",
+  "displayBoxMDetails": "顯示與Box的M檢驗相關的詳細信息（注意：Box的M檢驗結果始終顯示）",
+  "help": {
+    "title": "重複測量方差分析",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>描述</b></br>\n注意：<br/>\n1. 在寬數據集上運行重複測量方差分析時，我們需要重塑數據<br/>\n2. 我們支持單個變量的多個重複測量，例如在預試驗、後試驗和隨訪訪問時測量的血糖<br/>\n3. 您需要指定一個重複因素名稱，例如血糖和水平數。我們將創建一個因素變量，例如命名為血糖，其水平由包含重複測量的變量名稱創建，例如因素的水平將是預試驗、後試驗和隨訪<br/>\n4. 您需要指定一個測量名稱，例如值。我們將創建一個變量，例如值，包含每個受試者對應於預試驗、後試驗和隨訪的所有血糖值。<br/>\n5. 我們支持單個被試間和被試內因素變量。<br/>\n6. 未來版本將支持多個測量以及多個被試間和被試內因素變量。<br/>\n7. 默認情況下，數據集的每一行對應於一個唯一的受試者，您還可以指定一個變量作為受試者ID。</br>\n<br/>\n使用重複測量方差分析時，為每個被試內因素、被試間因素和混合方差分析的交互項計算F統計量</br>\n查找輸出的附加方差分析值表，顯示MSE（均方誤差的平均值）和pes（部分eta平方）</br>\n我們目前支持單個被試內和被試間因素，被試間因素是可選的。</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Identifier\", within = c(\"Time\"), \tbetween = c(\"Treatment\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndata: 包含數據的數據框。強制性\n</li>\n<li>\ndv: 字符向量（長度為1），指示數據中包含因變量的列。\n</li>\n<li>\nbetween: 字符向量，指示數據中的被試間因素/列。默認值為NULL，表示沒有被試間因素。\n</li>\n<li>\nwithin: 字符向量，指示數據中的被試內（或重複測量）因素/列。默認值為NULL，表示沒有被試內因素。\n</li>\n<li>\ncovariate: 字符向量，指示數據中的被試間協變量（即列）。默認值為NULL，表示沒有協變量。請注意，如果協變量是數字並且應按此處理，則需要將factorize設置為FALSE。\n</li>\n<li>\nanovatable: 傳遞給生成方差分析表的函數的進一步參數的列表。 \n</li>\n</ul>\n<br/>\n<b>詳細信息</b></br>\n請參見詳細的R幫助</br>\n<b>值</b><br/>\naov_car, aov_4和aov_ez是Anova和aov的包裝器，返回值取決於返回參數。默認情況下，返回一個類為\"afex_aov\"的S3對象，包含以下插槽：<br/>\n\"anova_table\": 類為c(\"anova\", \"data.frame\")的方差分析表。<br/>\n\"aov\": 從aov返回的aov對象（不應用於評估效應的顯著性，但可以傳遞給emmeans進行後續檢驗）。<br/>\n\"Anova\": 從Anova返回的對象，類為\"Anova.mlm\"（如果存在被試內因素）或類為c(\"anova\", \"data.frame\")。<br/>\n\"lm\": 擬合的lm對象並傳遞給Anova（即，類為\"lm\"或\"mlm\"的對象）。如果返回=\"lm\"，也會返回。<br/>\n\"data\": 包含以下內容的列表：（1）長格式（用於aov的可能聚合數據），寬格式（用於擬合lm對象的數據），以及idata（如果存在被試內因素，則傳遞給car::Anova的idata參數）。如果返回=\"data\"，也會返回。<br/>\n<b>包</b></br>\nafex</br>\n<b>幫助</b></br>\nhelp(aov_ez, package ='afex')\n單擊R幫助按鈕以獲取詳細的R幫助。您還可以輸入help(aov_ez, package ='afex')並在R語法編輯器中按CTRL Enter以獲取幫助\n    "
+  }
+}

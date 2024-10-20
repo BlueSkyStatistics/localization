@@ -1,0 +1,15 @@
+{
+  "title": "拟合不同的参数化gamlss.family分布（来自R包gamlss）",
+  "navigation": "使用gamlss进行分布拟合",
+  "variableSelcted": "选择一个包含分布的变量",
+  "distType": "要尝试的gamlss.family分布类型",
+  "tryGamlssChk": "如果选中（对于大数据点会很慢），如果拟合模型失败，将尝试gamlss()而不是gamlssML()",
+  "traceFitProcessingChk": "处理时显示更多信息",
+  "additionalDetailChk": "显示所有成功拟合测试的AIC分数和所有失败拟合测试的列表",
+  "wormPlotChk": "绘制虫图",
+  "help": {
+    "title": "拟合不同的参数化gamlss.family分布",
+    "r_help": "help(fitDist , package = gamlss)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t函数fitDist()使用函数gamlssML()拟合所有相关的参数化gamlss.family分布，\n\t\t\t\t由参数type指定，拟合到单个数据向量（没有解释变量）。最终的边际\n\t\t\t\t分布是由带惩罚k的广义Akaike信息准则选择的。\n\t\t\t\t默认k=2，即AIC，这意味着根据经典AIC选择\"最佳\"分布。\n\t\t\t\tk可以设置为任何值，例如log(n)用于BIC（此时未在对话框中提供）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R help(fitDist , package = gamlss)，有关虫图，help(wp , package = gamlss)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t以下是不同的类型参数：\n\t\t\t\t<br/>\n\t\t\t\trealAll: 所有gamlss.family（此时未在对话框中提供）在实线上的连续分布，即realline和正实线即realplus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\trealline: gamlss.family连续分布：\"NO\", \"GU\", \"RG\", \"LO\", \"NET\", \"TF\", \"TF2\", \"PE\", \"PE2\", \"SN1\", \"SN2\", \"exGAUS\", \"SHASH\", \"SHASHo\", \"SHASHo2\", \"EGB2\", \"JSU\", \"JSUo\", \"SEP1\", \"SEP2\", \"SEP3\", \"SEP4\", \"ST1\", \"ST2\", \"ST3\", \"ST4\", \"ST5\", \"SST\", \"GT\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\trealplus: 在正实线上的gamlss.family连续分布：\"EXP\", \"GA\", \"IG\", \"LOGNO\", \"LOGNO2\", \"WEI\", \"WEI2\", \"WEI3\", \"IGAMMA\", \"PARETO2\", \"PARETO2o\", \"GP\", \"BCCG\", \"BCCGo\", \"exGAUS\", \"GG\", \"GIG\", \"LNO\", \"BCTo\", \"BCT\", \"BCPEo\", \"BCPE\", \"GB2\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\treal0to1: 从0到1的gamlss.family连续分布：\"BE\", \"BEo\", \"BEINF0\", \"BEINF1\", \"BEOI\", \"BEZI\", \"BEINF\", \"GB1\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tcounts: 计数的gamlss.family分布：\"PO\", \"GEOM\", \"GEOMo\", \"LG\", \"YULE\", \"ZIPF\", \"WARING\", \"GPO\", \"DPO\", \"BNB\", \"NBF\", \"NBI\", \"NBII\", \"PIG\", \"ZIP\", \"ZIP2\", \"ZAP\", \"ZALG\", \"DEL\", \"ZAZIPF\", \"SI\", \"SICHEL\", \"ZANBI\", \"ZAPIG\", \"ZINBI\", \"ZIPIG\", \"ZINBF\", \"ZABNB\", \"ZASICHEL\", \"ZINBF\", \"ZIBNB\", \"ZISICHEL\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tbinom: 二项类型数据的gamlss.family分布：\"BI\", \"BB\", \"DB\", \"ZIBI\", \"ZIBB\", \"ZABI\", \"ZABB\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t函数fitDist()使用函数gamlssML()拟合不同的模型\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">有关分布拟合的良好概述，请参见 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
+  }
+}

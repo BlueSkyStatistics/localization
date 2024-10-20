@@ -1,0 +1,29 @@
+{
+  "title": "Analyse de l'accord d'attribut",
+  "navigation": "Accord d'attribut",
+  "variablePartSelcted": "Sélectionnez la variable pour l'échantillon/pièce",
+  "variableOpSelcted": "Sélectionnez la variable pour l'évaluateur/opérateur",
+  "variableRespSelcted": "Sélectionnez la variable pour l'attribut/réponse",
+  "variableRefSelcted": "(Optionnel) Sélectionnez la variable pour la réponse de référence/standard",
+  "variableTrialSelcted": "(Optionnel) Sélectionnez la variable pour le numéro d'essai/répétition",
+  "alpha": "Intervalle de confiance (alpha) entre 0 et 1",
+  "misclassificationStatChk": "Afficher les taux de précision et de mauvaise classification",
+  "summaryDisagreementChk": "Afficher le résumé des désaccords des évaluateurs par rapport au standard",
+  "CohenKappaChk": "Calculer les statistiques Kappa de Cohen entre évaluateur/opérateur",
+  "CohenKappaWeight": "Poids à appliquer pour le Kappa de Cohen",
+  "label1": "Détails de l'en-tête du rapport d'étude d'accord d'attribut",
+  "gageName": "Nom de l'instrument",
+  "dateStudy": "Date de l'étude",
+  "partDescription": "Description de la pièce",
+  "machineName": "Nom de la machine",
+  "reportedBy": "Signalé par",
+  "operatorNames": "Noms des opérateurs",
+  "testLocation": "Lieu du test",
+  "miscellaneous": "Divers",
+  "rowsTobeUsed": "Laissez vide si toutes les lignes doivent être utilisées. Sinon, spécifiez les lignes à utiliser pour analyser (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12)",
+  "help": {
+    "title": "Analyse de l'accord d'attribut",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer une analyse de l'accord d'attribut\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser les fichiers de jeu de données d'exemple attributemsaAB.xlsx pour \n\t\t\t\tdeux opérateurs, A et B, chacun avec 20 observations répétées deux fois avec des évaluations P et F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVous pouvez également essayer le fichier de jeu de données d'exemple attributemsaABCordered.RData avec trois opérateurs, A, B, C, chacun avec 10 observations répétées deux fois avec des évaluations \"ordonnées\" (ordinales) \n\t\t\t\tcomme Pas d'accord, Un peu pas d'accord, Neutre, Un peu d'accord et D'accord.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOuvrez les fichiers dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

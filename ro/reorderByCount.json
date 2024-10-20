@@ -1,0 +1,21 @@
+{
+  "title": "Reordonați nivelurile factorilor după număr",
+  "navigation": "Reordonați după număr",
+  "target": "Selectați variabilele factor pentru a le reordona",
+  "label1": "Selectați variabilele factor pentru a le reordona după număr. Puteți suprascrie variabilele existente sau crea variabile noi specificând un prefix/sufix. Noile variabile vor fi create cu prefixul/sufixul adăugat la numele existente.",
+  "label2": "Salvați noi niveluri în variabile noi sau suprascrieți variabile existente",
+  "rd3": "Specificați un sufix (se va crea o nouă variabilă cu sufixul)",
+  "txt3": "Introduceți un sufix",
+  "rd2": "Specificați un prefix (se va crea o nouă variabilă cu prefixul)",
+  "txt4": "Introduceți un prefix",
+  "rd1": "Suprascrieți variabilele existente",
+  "label3": "Specificați o ordine",
+  "Descending": "În ordine descrescătoare după număr",
+  "Ascending": "În ordine crescătoare după număr",
+  "ordered": "Faceți un factor ordonat (ordinal)",
+  "help": {
+    "title": "Reordonați variabilele în ordine alfabetică",
+    "r_help": "ajutor(sortare)",
+    "body": "\n<b>Descriere</b></br>\nReordonați variabilele din setul de date în ordine alfabetică. Folosim funcția de sortare pentru a sorta numele coloanelor/variabilelor din setul de date și funcția de selecție din pachetul dplyr pentru a selecta numele coloanelor în ordinea alfabetică corectă.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code>\n##Reordonare alfabetică (A-Z)\nDataset_name <- Dataset_name %>% select(sort(names(.)))\n##Reordonare alfabetică (Z-A)\nDataset_name <- Dataset_name %>% select(rev(sort(names(.))))\n</code><br/>\n<b>Argumente</b><br/>\nNiciunul<br/>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\najutor(select, package='dplyr')<br/>\najutor(sort)"
+  }
+}

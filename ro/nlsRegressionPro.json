@@ -1,0 +1,26 @@
+{
+  "title": "Modelul de Cele Mai Mici Pătrate Nelineare (NLS)",
+  "navigation": "Cele Mai Mici Pătrate Nelineare",
+  "modelname": "Numele modelului NLS",
+  "DependentVar": "Variabila de răspuns (dependentă)",
+  "IndependentVarsformula": "Construiți sau lipiți orice ecuație (formulă) cu variabilele independente (predictori) și parametrii modelului, de exemplu, a * exp(b * x) unde a și b sunt parametrii de estimat, iar x este variabila predictivă. Va crea o ecuație de model ca y ~ a * exp(b * x) unde y este variabila de răspuns",
+  "IndependentVar": "O variabilă independentă (predictor) necesară pentru graficul de dispersie și graficul ajustat",
+  "weights": "O variabilă utilizată ca greutate (Y) cu o valoare de putere",
+  "PowerKweight": "Putere: pentru doar Y, alegeți (-1), pentru 1/Y, alegeți 1, 1/(Y^2), alegeți 2, .. 1/(Y^5), alegeți 5,..",
+  "covMatrixChk": "Matricea de covarianță estimată pentru parametri",
+  "resPlotChk": "Graficul ajustat și reziduurile",
+  "resNormalityTestChk": "Testul de normalitate al reziduurilor modelului",
+  "modelConstraintLabel": "(Opțional) Diverse constrângeri ale modelului pentru estimările parametrilor",
+  "pmodels": "Valori de început pentru parametrii pentru a ghida optimizarea/convergența modelului, de exemplu, param1 = 1, param2 = 10, param3 = 0 pentru un model cu trei parametri",
+  "paramConstraintsLower": "Stabiliți constrângerea pentru limita inferioară (trebuie să alegeți port ca algoritm), de exemplu, 3, -Inf, -Inf pentru un model cu trei parametri",
+  "paramConstraintsUpper": "Stabiliți constrângerea pentru limita superioară (trebuie să alegeți port ca algoritm), de exemplu, 3, Inf, Inf, 2 pentru un model cu patru parametri",
+  "algorithm": "Algoritmul de utilizat. Implicit este un algoritm Gauss-Newton",
+  "maxIter": "Numărul maxim de iterații permise pentru ca modelul să conveargă. Implicit este 50",
+  "logScaleAxis": "Axa X este reprezentată în scară logaritmică implicit. Alegeți ' ' pentru scala originală",
+  "doseInLogScaleChk": "Verificați dacă doza/concentrația este deja în valori logaritmice în setul de date",
+  "help": {
+    "title": "Modelul de Cele Mai Mici Pătrate Nelineare (NLS)",
+    "r_help": "help(nls, package ='stats')",
+    "body": "\n            <b>Descriere</b></br> \n\t\t\tEfectuați regresie nelineară. Construiți sau tastați orice ecuație (formulă) pentru a construi modelul de regresie nelineară.\n\t\t\tDeterminați estimările de cele mai mici pătrate nelineare (ponderate) ale parametrilor modelului nelinear. \n\t\t\tAnalizați ajustarea modelului cu grafice. \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tConsultați help(nls, package ='stats') pentru detalii \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tPuteți încerca acest dialog\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\tExemplu 1\n\t\t\t</br>\n\t\t\tÎncărcați setul de date DNase din meniul Încărcați seturi de date (lăsați toate pachetele instalate în primul meniu derulant și alegeți DNase din al doilea meniu derulant)\t\t\t\n\t\t\t<br/>\n\t\t\tAlegeți (sau trageți) densitatea ca variabilă de răspuns\n\t\t\t<br/>\n\t\t\tTastați Asym/(1 + exp((xmid - log(conc))/scal)) în câmpul Independent (formulă) unde Asym, xmid și scal\n\t\t\tsunt trei parametri ai modelului (adică coeficienți) de estimat \n\t\t\t<br/>\n\t\t\tVerificați matricea de covarianță estimată\n\t\t\t</br>\n\t\t\tVerificați graficul ajustat și reziduurile \n\t\t\t</br>\n\t\t\tAlegeți (sau trageți) conc în câmpul O variabilă independentă (predictor) necesară pentru graficul de dispersie și graficul ajustat\n\t\t\t</br>\n\t\t\tTastați Asym = 3, xmid = 0, scal = 1 în câmpul Valorile de început pentru parametrii pentru a ghida modelul\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tExemplu 2\n\t\t\t</br>\n\t\t\tÎncărcați setul de date DNase din meniul Încărcați seturi de date (lăsați toate pachetele instalate în primul meniu derulant și alegeți DNase din al doilea meniu derulant)\t\t\t\n\t\t\t<br/>\n\t\t\tAlegeți (sau trageți) densitatea ca variabilă de răspuns\n\t\t\t<br/>\n\t\t\tTastați Asym/(1 + exp((xmid - log(conc))/scal)) în câmpul Independent (formulă)\n\t\t\t<br/>\n\t\t\tVerificați matricea de covarianță estimată\n\t\t\t</br>\n\t\t\tVerificați graficul ajustat și reziduurile \n\t\t\t</br>\n\t\t\tAlegeți (sau trageți) conc în câmpul O variabilă independentă (predictor) necesară pentru graficul de dispersie și graficul ajustat\n\t\t\t</br>\n\t\t\tTastați Asym = 3, xmid = 0, scal = 1 în câmpul Valorile de început pentru parametrii pentru a ghida modelul\n\t\t\t</br>\n\t\t\tTastați Asym = 0, xmid = -Inf, scal = -Inf în câmpul constrângerea pentru limita inferioară (stabiliți limita inferioară pentru Asym la 0 și lăsați limita inferioară a xmid și scal fără constrângeri)\n\t\t\t</br>\n\t\t\tTastați Asym = Inf, xmid = 4, scal = Inf în câmpul constrângerea pentru limita superioară (stabiliți limita inferioară pentru xmid la 0 și lăsați limita superioară a Asym și scal fără constrângeri)\n\t\t\t</br>\n\t\t\talegeți port din meniul derulant al algoritmului de utilizat în loc de implicit\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tExecutați dialogul\n\t\t\t</br>\n\t\t\t</br>\n    "
+  }
+}

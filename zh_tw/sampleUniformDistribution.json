@@ -1,0 +1,19 @@
+{
+  "title": "均勻分布範例",
+  "navigation": "均勻分布範例",
+  "entrdsname": "輸入數據集名稱",
+  "min": "最小值",
+  "max": "最大值",
+  "lblnoofsamples": "樣本數量（行）",
+  "lblnoofobsv": "觀察數量（列）",
+  "lblseed": "種子",
+  "lblAddtoDS": "添加到數據集",
+  "chklbl1": "樣本均值",
+  "chklbl2": "樣本總和",
+  "chklbl3": "樣本標準差",
+  "help": {
+    "title": "均勻分布範例",
+    "r_help": "help(runif, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            這些函數提供有關從最小值到最大值的均勻分布的信息。dunif給出密度，punif給出分布函數，qunif給出分位數函數，runif生成隨機偏差。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dunif(x, min = 0, max = 1, log = FALSE)\n                <br/>\n                punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                runif(n, min = 0, max = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果長度(n) > 1，則長度被視為所需數量。</li>\n                \n                \n                <li>min, max : 分布的下限和上限。必須是有限的。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則概率p以log(p)給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（默認），概率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            如果未指定min或max，則假定它們的默認值分別為0和1。\n            <br/>\n            均勻分布的密度為\n            <br/>\n            <code>f(x) = 1/(max-min)</code>\n            <br/>\n            對於min ≤ x ≤ max。\n            <br/>\n            對於u := min == max的情況，假定X == u的極限情況，儘管在這種情況下沒有密度，dunif將返回NaN（錯誤條件）。\n            <br/>\n            除非max = min或max-min相對於min較小，runif將不會生成任何極端值，特別是對於默認參數。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dunif給出密度，punif給出分布函數，qunif給出分位數函數，runif生成隨機偏差。\n            <br/>\n            結果的長度由n決定，對於runif，結果的長度是其他函數的數值參數長度的最大值。\n            <br/>\n            除n以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            假隨機數生成器的輸出特性（如精度和周期性）差異很大。有關R的隨機數生成算法的更多信息，請參見.Random.seed。            \n"
+  }
+}

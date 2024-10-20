@@ -1,0 +1,15 @@
+{
+  "title": "Tamaño de la muestra, Precisión del ICC",
+  "navigation": "ICC",
+  "howtouse": "Especifique el tamaño de la muestra o el ancho del intervalo de confianza y se calculará el otro",
+  "n": "Tamaño de la muestra",
+  "width": "Ancho del intervalo de confianza",
+  "icc": "ICC (coeficiente de correlación intraclase, 0-1)",
+  "conflevel": "Nivel de confianza (0-1)",
+  "raters": "Número de evaluadores",
+  "help": {
+    "title": "Tamaño de la muestra, Precisión del AUC",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nEsta es una evaluación del tamaño de la muestra para un coeficiente de correlación intraclase (ICC) basado en el ancho del intervalo de confianza. Calcula el tamaño de la muestra o el ancho del intervalo de confianza cuando el usuario especifica el otro. Si el ICC se calcula para un ANOVA de un solo sentido o de dos sentidos no importa en la aproximación utilizada. Ver Bonett DG (2002), Requisitos de tamaño de muestra para estimar correlaciones intraclase con la precisión deseada, Statistics in Medicine, 21:1331-1335.\n<br/><br/>\n<b>Tamaño de la muestra:</b> Especifique el número de sujetos en el estudio\n<br/><br/>\n<b>Ancho del intervalo de confianza:</b> Especifique el ancho del intervalo de confianza deseado. El ancho de un intervalo de confianza es una medida de la precisión de una estimación y es el límite superior menos el límite inferior.\n<br/><br/>\n<b>ICC:</b> Especifique el valor ICC esperado\n<br/><br/>\n<b>Nivel de confianza:</b> Especifique el nivel deseado del intervalo de confianza\n<br/><br/>\n<b>Número de evaluadores:</b> Especifique el número de evaluadores que proporcionarán valores para cada sujeto.\n<br/><br/>\n<b>Paquetes R requeridos:</b> presize\n\t\t\t"
+  }
+}

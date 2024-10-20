@@ -1,0 +1,20 @@
+{
+  "title": "Calcula variabilele fictive",
+  "navigation": "Cod fictiv",
+  "label1": "Introduceți variabilele care vor fi codificate ca fictive. Noile variabile sunt create cu numele în formatul \"numele variabilei_nivel nume\". În mod implicit, nivelul cel mai frecvent este tratat ca referință.",
+  "target": "Selectați variabila/variabilele care vor fi codificate ca fictive",
+  "label2": "Nivelul care va fi tratat ca referință",
+  "MostFrequent": "Cea mai frecventă valoare",
+  "first": "Prima valoare",
+  "None": "Păstrați toate nivelurile (nu este recomandat pentru modelele statistice) De asemenea, cunoscut sub numele de codare one-hot",
+  "prefix": "Prefix",
+  "txt1": "Introduceți un prefix/sufix",
+  "label3": "Alte opțiuni",
+  "chk3": "Eliminați variabilele originale",
+  "chk4": "Creează variabile fictive pentru valorile lipsă",
+  "help": {
+    "title": "Calculați variabilele fictive",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Descriere</b></br>\nCalculați variabilele fictive\n<br/>\n<b>Utilizare</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n.data:\tUn obiect cu setul de date din care doriți să creați coloane fictive.\n</li>\n<li>\nselect_columns:\tVector de nume de coloane din care doriți să creați variabile fictive. Dacă NULL (implicit), folosește toate coloanele de tip caracter și factor.\n</li>\n<li>\nremove_first_dummy: Elimină prima variabilă fictivă din fiecare variabilă, astfel încât să rămână doar n-1 fictive. Acest lucru evită problemele de multicoliniaritate în modele.\n</li>\n<li>\nremove_most_frequent_dummy: Elimină categoria observată cel mai frecvent, astfel încât să rămână doar n-1 fictive. Dacă există un egal pentru cea mai frecventă, se va elimina prima categorie (în ordine alfabetică) care este la egalitate pentru cea mai frecventă.\n</li>\n<li>\nignore_na: Dacă TRUE, ignoră orice valori NA din coloană. Dacă FALSE (implicit), atunci va crea o coloană fictivă pentru value_NA și va da un 1 în orice rând care are o valoare NA.\n</li>\n<li>\nsplit: Un șir pentru a împărți o coloană atunci când există mai multe categorii în celulă. De exemplu, dacă o variabilă este animale de companie și rândurile sunt \"pisică\", \"câine\" și \"broască țestoasă\", fiecare dintre aceste animale ar deveni propria coloană fictivă. Dacă un rând este \"pisică, câine\", atunci o valoare de împărțire de \",\" acest rând ar avea o valoare de 1 pentru ambele coloane fictive de pisică și câine.\n</li>\n<li>\nremove_selected_columns: Dacă TRUE (nu implicit), elimină coloanele utilizate pentru generarea coloanelor fictive.\n</li>\n<li>\nValoare: Un data.frame (sau tibble sau data.table, în funcție de tipul de date de intrare) cu același număr de rânduri ca datele introduse și coloanele originale plus noile coloane fictive create.\n</li>\n<li>\nVezi de asemenea\ndummy_rows pentru a crea rânduri fictive\n</li>\n<li>\nAlte funcții fictive: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Exemple</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Includeți coloana an\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Elimină prima variabilă fictivă pentru fiecare pereche de coloane fictive create</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Pachet</b></br>\nfastDummies</br>\n<b>Ajutor</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

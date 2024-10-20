@@ -1,0 +1,11 @@
+{
+  "title": "Valoarea Lambda (λ) pentru variabile cu transformare Box-Cox anterioară",
+  "navigation": "Inspectați Lambda",
+  "label2": "Selectați una sau mai multe variabile pentru a verifica dacă a fost aplicată o transformare Box-Cox și, dacă da, valoarea Lambda (λ) asociată",
+  "variablelistSelcted": "Variabile de inspectat",
+  "help": {
+    "title": "Verificați valoarea Lambda (λ) asociată cu variabila selectată",
+    "r_help": "ajutor(boxcox, pachet = MASS)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tVerificați valoarea Lambda (λ) asociată, dacă este cazul, variabilelor selectate cu transformare Box-Cox anterioară \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat despre Box-Cox sau Lambda (λ) - utilizați R ajutor(boxcox, pachet = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Pentru o bună prezentare generală a MASS Box-Cox, consultați https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValorile Lambda (λ) asociate cu transformările Box-Cox familiare \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformare pătrată ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: fără transformare; returnează datele originale ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformare rădăcină pătrată ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformare rădăcină cubică\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformare rădăcină de patru\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformare logaritmică naturală ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformare rădăcină pătrată reciprocă ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformare reciprocă (inversă) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformare pătrată reciprocă ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

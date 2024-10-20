@@ -1,0 +1,11 @@
+{
+  "title": "Înlocuirea valorilor lipsă (variabile de tip șir/factor)",
+  "navigation": "Caracter/Factor",
+  "destination": "Variabile de destinație",
+  "repString": "Introduceți șirul pentru a înlocui NAs. Notă: Nu închideți șirul între ghilimele. Pentru variabilele de tip factor, valoarea specificată trebuie să fie un nivel al factorului, consultați Variabile>Nivele de factor>Adăugați",
+  "help": {
+    "title": "Înlocuirea valorilor lipsă (variabile de tip șir/factor)",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>Descriere</b></br>\nÎnlocuiți valorile lipsă din variabilele selectate cu valoarea specificată. Când utilizați dialogul, nu trebuie să închideți șirul între ghilimele\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('Șir de înlocuire')\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nVariabilele din setul de date (var1, var2) unde trebuie înlocuite NAs\n</li>\n</ul>\n<b>Valoare</b><br/>\nÎnlocuiește valorile lipsă din setul de date cu șirul specificat<br/>\n<b>Pachet</b></br>\nbas</br>\n<b>Ajutor</b></br>\nhelp(is.na,package=base)"
+  }
+}

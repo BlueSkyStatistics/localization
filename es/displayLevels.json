@@ -1,0 +1,10 @@
+{
+  "title": "Niveles de visualización",
+  "navigation": "Visualización",
+  "target": "Variables de factor para mostrar niveles de",
+  "help": {
+    "title": "Niveles de visualización",
+    "r_help": "ayuda(mapa,paquete=purrr)",
+    "body": "\n<b>Descripción</b></br>\nAplica la función levels en base a las variables seleccionadas en el conjunto de datos. Los usuarios utilizan la función select en dplyr para pasar las variables a la función map que aplica la función levels a cada variable\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nConjunto_de_datos %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvar1,var2: Variables en el conjunto de datos para mostrar niveles\n</li>\n<li>\nConjunto_de_datos: El conjunto de datos que contiene las variables var1, var2\n</li>\n</ul>\n<b>Valor</b><br/>\nLos niveles de las variables seleccionadas se muestran<br/>\n<b>Paquete</b></br>\npurrr, dplyr</br>\n<b>Ayuda</b></br>\nayuda(mapa,paquete=purrr)\n"
+  }
+}

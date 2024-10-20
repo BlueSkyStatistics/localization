@@ -1,0 +1,24 @@
+{
+  "title": "Reguli de afișare",
+  "navigation": "Reguli de afișare",
+  "rulename": "Introduceți un obiect de reguli existent",
+  "dosortingchk": "Sortează regulile",
+  "sortopt": "Opțiuni de sortare",
+  "sortby": "Sortează după",
+  "confchk": "Încredere",
+  "liftchk": "Lift",
+  "suppchk": "Suport",
+  "sortord": "Ordinea de sortare",
+  "increasing": "Crescător",
+  "decreasing": "Descrescător",
+  "noofrules": "Numărul de reguli de afișat",
+  "rulecount": "",
+  "fromto": "Afișează regulile",
+  "from": "De la",
+  "to": "Până la",
+  "help": {
+    "title": "Reguli de afișare",
+    "r_help": "ajutor(inspect, pachet='arules')",
+    "body": "\n            <b>\n\t\t\tPachet : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspecta\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\tDescriere\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Oferă funcția generică inspecta și metode S4 pentru a afișa asociații și tranzacții plus informații suplimentare formatate pentru inspecția online.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUtilizare\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspecta(x, ...)\n            </code>\n            <br/><br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: un set de asociații sau tranzacții sau un itemMatrix.\n            </li>\n            <li>\n            ...: argumente suplimentare pot fi utilizate pentru a personaliza ieșirea: setStart, setEnd, itemSep și ruleSep. Elementele sunt imprimate doar câte unul pe linie în cazul în care liniile de ieșire devin foarte lungi. Acest lucru poate fi, de asemenea, controlat direct folosind linebreak.\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sortează\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\tDescriere\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Oferă metoda sortează pentru a sorta elementele din clasa asociații (de exemplu, itemsets sau reguli) conform valorii măsurilor stocate în slotul de calitate al asociației (de exemplu, suport).\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUtilizare\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## Metodă S4 pentru semnătura 'asociații'\n            arules::sortează(x, descrescător = TRUE, na.ultimul = NA, \n            după = \"suport\", ordine = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Metodă S4 pentru semnătura 'asociații'\n            cap(x, n = 6L, după = NULL, descrescător = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Metodă S4 pentru semnătura 'asociații'\n            coadă(x, n = 6L, după = NULL, descrescător = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: un obiect care trebuie sortat.\n            </li>\n            <li>\n            descrescător: un logic. Ar trebui ca sortarea să fie crescătoare sau descrescătoare? (valoarea implicită este descrescătoare)\n            </li>\n            <li>\n            na.ultimul: na.ultimul nu este suportat pentru asociații. NAs sunt întotdeauna plasate la sfârșit.\n            </li>\n            <li>\n            după: un șir de caractere care specifică măsura de calitate stocată în x care trebuie utilizată pentru a sorta x. Dacă se specifică un vector de șiruri de caractere, atunci șirurile suplimentare sunt utilizate pentru a sorta x în cazul legăturilor.\n            </li>\n            <li>\n            ordine: ar trebui să fie returnat un vector de ordine în loc de asociațiile sortate?\n            </li>\n            <li>\n            n: un singur întreg care indică numărul de asociații returnate.\n            </li>\n            <li>\n            ... : Alte argumente sunt ignorate.\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            Detalii\n            </b> \n            <br/>\n            sortează este relativ lent pentru seturi mari de asociații, deoarece trebuie să copieze și să reorganizeze o mare structură de date. Rețineți că sortarea creează o a doua copie a setului de asociații, ceea ce poate fi lent și consumator de memorie pentru seturi mari. Cu ordine = TRUE, se returnează un vector întreg cu ordinea în loc de asociațiile reordonate.\n            Dacă sunt necesare doar primele n asociații, atunci cap folosind după funcționează mai repede decât apelarea sortează și apoi cap, deoarece o face fără a copia și reorganiza toate datele. coadă funcționează în același mod.\n            <br/><br/>  \n            <b> \n            Valoare\n            </b> \n            <br/>\n            Un obiect din aceeași clasă ca x.                  \n    "
+  }
+}

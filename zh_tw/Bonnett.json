@@ -1,0 +1,17 @@
+{
+  "navigation": "Bonett-Seier峰度檢驗",
+  "title": "Bonett-Seier檢驗Geary的峰度",
+  "hypothesisType": "檢驗假設 (H1)",
+  "twosided": "雙側",
+  "greater": "更大",
+  "less": "更少",
+  "label2": "其他選項",
+  "showLengthNAs": "顯示長度和NAs",
+  "verbose": "詳細的替代假設",
+  "Target": "選擇一個或多個變量",
+  "help": {
+    "title": "Bonett-Seier檢驗Geary的峰度",
+    "r_help": "help(bonett.test, package ='moments')",
+    "body": "\n<b>描述</b></br>\n執行Bonett-Seier檢驗Geary的峰度，適用於正態分佈的數據。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbonett.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 數據值的數值向量。\n</li>\n<li>\ny: 一個字符字符串，指定替代假設，必須是'\"two.sided\"'（默認），'\"greater\"'或'\"less\"'之一。您可以只指定首字母。\n</li>\n</ul>\n<b>詳細信息</b></br>\n在正態性假設下，數據的Geary峰度應等於sqrt(2/pi)（0.7979）。該檢驗具有這樣的零假設，並且對於檢測正態分佈數據中Geary峰度的顯著差異是有用的。\n<br/>\n<b>值</b></br>\n一個包含類htest的列表，包含以下組件：\n<ul>\n<li>\nstatistic: 包含Geary峰度估計量及其變換的列表。</br>\n</li>\n<li>\np.value: 檢驗的p值。 </br>\n</li>\n<li>\nalternative: 描述替代假設的字符字符串</br>\n</li>\n<li>\nmethod: 指示執行了哪種類型檢驗的字符字符串。\n</li>\n<li>\ndata.name: 數據參數的名稱。</br>\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\ngeary(x)</br>\nbonett.test(x)</br>\n</code> <br/>\n<b>包</b></br>\nmoments</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的R圖標，或在BlueSky Statistics R編輯器中運行以下命令help(bonett.test, package ='moments')。           \n<br/>\n<br/>"
+  }
+}

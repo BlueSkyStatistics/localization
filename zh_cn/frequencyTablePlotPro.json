@@ -1,0 +1,17 @@
+{
+  "title": "频率图",
+  "navigation": "频率图",
+  "subsetvars": "选择变量",
+  "paretoChartChk": "绘制帕累托图",
+  "createDatasetChk": "从频率表创建数据集",
+  "label1": "频率表的排序选项",
+  "selectFreqSortRad": "按频率排序频率表",
+  "selectVarSortRad": "按变量值排序频率表",
+  "selectNoSortRad": "无",
+  "selectSortOrderChk": "降序排序（取消选中以进行升序排序）",
+  "help": {
+    "title": "频率表",
+    "r_help": "帮助(ftable, package=stats)",
+    "body": "\n<b>描述</b></br>\n生成所选一个或多个变量或列名中每个唯一值的频率。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>详细信息</b></br>\n此对话框使用以下函数：</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

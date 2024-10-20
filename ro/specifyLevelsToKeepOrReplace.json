@@ -1,0 +1,23 @@
+{
+  "title": "Specificați nivelurile de păstrat sau de înlocuit cu altele",
+  "navigation": "Agrupați în Altceva (Manual)",
+  "target": "Variabile de factor pentru reordonare",
+  "label1": "Introduceți nivelurile de factor de păstrat sau de înlocuit cu altele. Când sunt selectate nivelurile de păstrat, nivelurile rămase vor fi înlocuite cu \"Altceva\". Când se selectează înlocuirea, nivelurile specificate vor fi înlocuite cu \"Altceva\".",
+  "other": "Numele nivelului utilizat pentru valorile \"Altceva\"",
+  "label3": "Metoda de utilizat",
+  "keep": "Păstrați nivelurile",
+  "drop": "Eliminați nivelurile",
+  "keepOption": "Introduceți nivelurile de păstrat separate prin , nivelurile rămase vor fi înlocuite cu \"Altceva\", de exemplu, nivel1,nivel2,nivel3",
+  "dropOption": "Introduceți nivelurile de înlocuit cu \"Altceva\", de exemplu, nivel1,nivel2,nivel3",
+  "label2": "Salvați rezultatele în variabile noi sau suprascrieți variabile existente",
+  "rd3": "Specificați un sufix (Se va crea o nouă variabilă cu sufixul)",
+  "txt3": "Introduceți un sufix",
+  "rd2": "Specificați un prefix (Se va crea o nouă variabilă cu prefixul)",
+  "txt4": "Introduceți un prefix",
+  "rd1": "Suprascrieți variabilele existente",
+  "help": {
+    "title": "Niveluri de păstrat sau de înlocuit",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>NOTĂ: NU ÎNCHIDEȚI NIVELURILE ÎN GHILIMELE DUBLE SAU SIMPLE, NU POT FI SPAȚII ÎN NUMELE NIVELURILOR. INTRODUCEȚI NIVELURI SEPARATE PRIN VIRGULE ÎN FORMATUL NIVEL1,NIVEL2, NIVEL3</b><br/>\n<b>Descriere</b></br>\nIntroduceți nivelurile de factor de păstrat sau de eliminat. Când se selectează păstrarea, nivelurile rămase vor fi înlocuite cu \"Altceva\". Când se selectează eliminarea, nivelurile eliminate vor fi înlocuite cu \"Altceva\".\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Altceva\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf : Un factor (sau vector de caractere).\n</li>\n<li>\npăstrați, eliminați: păstrați va păstra nivelurile listate, înlocuind toate celelalte cu other_level. eliminați va înlocui nivelurile listate cu other_level, păstrând toate celelalte așa cum sunt.\n</li>\n<li>\nother_level: Valoarea nivelului utilizată pentru valorile \"alte\". Întotdeauna plasată la sfârșitul nivelurilor.\n</li>\n</ul>\n<b>Exemple</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>Pachet</b></br>\nforcats</br>\n<b>Ajutor</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

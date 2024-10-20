@@ -1,0 +1,23 @@
+{
+  "title": "指定要保留或替換為其他的級別",
+  "navigation": "手動合併為其他",
+  "target": "因子變量重新排序",
+  "label1": "輸入要保留或替換為其他的因子級別。當選擇保留級別時，剩餘級別將被替換為\"其他\"。當選擇替換時，指定的級別將被替換為\"其他\"。",
+  "other": "用於\"其他\"值的級別名稱",
+  "label3": "使用的方法",
+  "keep": "保留級別",
+  "drop": "刪除級別",
+  "keepOption": "輸入要保留的級別，用逗號分隔，剩餘級別將被替換為\"其他\"，例如級別1,級別2,級別3",
+  "dropOption": "輸入要替換為\"其他\"的級別，例如級別1,級別2,級別3",
+  "label2": "將結果保存到新變量或覆蓋現有變量",
+  "rd3": "指定後綴（將創建一個帶有後綴的新變量）",
+  "txt3": "輸入後綴",
+  "rd2": "指定前綴（將創建一個帶有前綴的新變量）",
+  "txt4": "輸入前綴",
+  "rd1": "覆蓋現有變量",
+  "help": {
+    "title": "保留或替換的級別",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>注意：不要將級別用雙引號或單引號括起來，級別名稱中不能有空格。輸入用逗號分隔的級別，格式為級別1,級別2, 級別3</b><br/>\n<b>描述</b></br>\n輸入要保留或刪除的因子級別。當選擇保留時，剩餘級別將被替換為\"其他\"。當選擇刪除時，刪除的級別將被替換為\"其他\"。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"其他\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nf : 一個因子（或字符向量）。\n</li>\n<li>\nkeep, drop: keep將保留列出的級別，將所有其他級別替換為other_level。drop將用other_level替換列出的級別，保留所有其他級別。\n</li>\n<li>\nother_level: 用於\"其他\"值的級別值。始終放在級別的末尾。\n</li>\n</ul>\n<b>示例</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>包</b></br>\nforcats</br>\n<b>幫助</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

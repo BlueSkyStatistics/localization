@@ -1,0 +1,14 @@
+{
+  "title": "似然比和绘图贝塔",
+  "navigation": "似然比和绘图贝塔",
+  "label1": "选择一个模型（支持Rm、dRm和eRm类的模型）",
+  "label1b": "如果没有可用的模型，您需要先通过选择模型拟合 -> IRT -> 简单Rasch模型并选择CML估计来创建一个模型",
+  "modelselector1": "选择一个模型",
+  "spcr": "分割标准",
+  "destination": "选择要绘制贝塔的变量",
+  "help": {
+    "title": "似然比和绘图贝塔",
+    "r_help": "help(LRtest, package='eRm')",
+    "body": "\n                <b>描述</b></br>\n                此LR测试基于受试者子组分割。\n<br/>\n<b>用法</b>\n<br/>\n<code> \n## S3方法用于类'Rm'\n<br/>\nLRtest(object, splitcr = \"median\", se = TRUE)\n<br/>\n## S3方法用于类'LR'\n<br/>\nplotGOF(x, beta.subset = \"all\", main = \"图形模型检查\", xlab, ylab,\n    tlab = \"项目\", xlim, ylim, type = \"p\", pos = 4, conf = NULL, ctrline = NULL, \n    smooline = NULL, asp = 1, x_axis = TRUE, y_axis = TRUE, set_par = TRUE, \n    reset_par = TRUE, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nobject: 类\"Rm\"的对象。\n</li>\n<li>\nsplitcr: 用于受试者原始分数分割的分割标准。\"all.r\"对应于完整的原始分数分割，\"median\"使用中位数作为分割标准，\"mean\"执行均值分割。可选的splitcr也可以是一个向量，将每个人分配到某个特定子组（例如，遵循外部标准）。该向量可以是数字、字符或因子。\n</li>\n<li>\nse: 控制子模型中标准误差的计算（默认：TRUE）\n</li>\n<li>\nx: 类\"LR\"的对象。也用于可视化单个项目的拟合。\n</li>\n<li>\nbeta.subset: 如果是\"all\"，则绘制所有项目。否则可以指定数字子集向量。\n</li>\n<li>\ntlab: 项目标签的规格：\"item\"打印项目名称，\"number\"给出与贝塔参数顺序对应的整数，如果\"none\"则不打印标签。\"identify\"允许进行交互式标记。最初不打印标签，点击项目点附近后，添加相应的标签。通过点击第二个按钮并从菜单中选择'停止'，或从图形窗口的'停止'菜单终止识别过程。有关更多信息和基本操作，请参见identify。\n</li>\n<li>\nconf: 用于绘制项目参数的置信椭圆。如果conf = NULL（默认值），则不绘制椭圆。否则，conf必须指定为一个列表，包含可选元素：gamma，是置信水平（数字），col和lty，颜色和线型（见par），指定绘制椭圆的项目（必须是beta.subset的子集），以及ia，逻辑值，如果椭圆要交互式绘制（参见上面的tlab = \"identify\"）。有关默认行为的详细信息，如果conf被指定为空列表，请参见下面的详细信息和示例。要使用conf，LR对象x必须使用选项se = TRUE在LRtest()中生成。有关更多详细信息，请参见help(MLoef)。\n</li>\n</ul>\n<b>详细信息</b></br>\n如果数据集包含缺失值，并且指定了均值或中位数作为分割标准，则为每个缺失值子组计算均值或中位数，并因此用于原始分数分割。\n<br/>\n在使用交互式选择进行单点标记（tlab = \"identify\"）和在某些点绘制置信椭圆（ia = TRUE）时，首先标记所有绘制的点，然后生成所有椭圆。通过点击第二个（右）鼠标按钮并从菜单中选择‘停止’，或从图形窗口的‘停止’菜单终止这两个识别过程。\n<br/>\n使用允许仅为某些项目选择性绘制椭圆的规格，例如，which = 1:3为项目1到3绘制椭圆（只要它们包含在beta.subset中）。默认情况下为所有项目绘制椭圆。conf列表中的元素col可以是单个颜色规格，例如\"blue\"，或是所有项目的颜色规格向量。长度必须与要绘制的椭圆数量相同。对于颜色规格，可以使用标准调色板（例如，rainbow）或来自colorspace或RColorBrewer包的调色板设置调色板。下面给出了一个示例。\n<br/>\nsummary和print方法可用于类LR的对象。\n<br/><br/>\n<b>值</b><br/>\nLRtest返回一个类LR的对象，包含：\n<br/><br/>\nLR: LR值。\n<br/>\ndf: 测试统计量的自由度。\n<br/>\nChisq: 具有相应df的卡方值。\n<br/>\n<br/>\n<b>包</b></br>\neRm\n<br/><br/>\n<b>帮助</b>\nhelp(LRtest, package='eRm')\n\n                "
+  }
+}

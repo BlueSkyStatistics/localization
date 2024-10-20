@@ -1,0 +1,13 @@
+{
+  "title": "Sub-eșantionare",
+  "navigation": "Eșantion, Sub-eșantionare",
+  "description": "Sub-eșantionarea Datelor Dezechilibrate. DownSample va selecta aleatoriu un set de date astfel încât toate clasele să aibă aceeași frecvență ca și clasa minoritară.",
+  "downsample": "Introduceți numele setului de date",
+  "seed": "Setați semința",
+  "dependent": "Variabilă pentru sub-eșantionare",
+  "help": {
+    "title": "Sub-eșantionare",
+    "r_help": "ajutor(createDataPartition, pachet=\"caret\")",
+    "body": "\n<b>Descriere</b></br>\nSub-eșantionarea Datelor Dezechilibrate. DownSample va selecta aleatoriu un set de date astfel încât toate clasele să aibă aceeași frecvență ca și clasa minoritară.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Clasă\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: o matrice sau un cadru de date de variabile predictive\n</li>\n<li>\ny: o variabilă factor cu apartenențele de clasă\n</li>\n<li>\nlist: ar trebui funcția să returneze list(x, y) sau să lege x și y împreună? Dacă este TRUE, ieșirea va fi convertită într-un cadru de date.\n</li>\n<li>\nyname: dacă list = FALSE, o etichetă pentru coloana de clasă\n</li>\n</ul>\n<b>Detalii</b></br>\nSe folosește un eșantionare aleatorie simplă pentru a sub-eșantiona pentru clasa(e) majoritar(e). Rețineți că datele clasei minoritare rămân intacte și că eșantioanele vor fi reordonate în versiunea sub-eșantionată.\nPentru supra-eșantionare, toate datele originale rămân intacte și se adaugă eșantioane suplimentare la clasele minoritare cu înlocuire.\n<b>Valoare</b><br/>\nFie un cadru de date, fie o listă cu elementele x și y.\n<b>Exemple</b></br>\n## Un exemplu ridicol...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Pachet</b></br>\ncaret</br>\n<b>Ajutor</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

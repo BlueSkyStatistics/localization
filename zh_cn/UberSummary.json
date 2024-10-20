@@ -1,0 +1,30 @@
+{
+  "title": "描述性统计",
+  "ChkboxShowOnlyTopFewFactors": "仅显示前 N 个因子水平的计数",
+  "txtNumTopFactorsToShow": "输入 N 的值",
+  "skew": "偏度",
+  "mad": "中位数绝对偏差",
+  "kurtos": "峰度",
+  "label2": "注意：如果未选中复选框，将显示所有水平的计数。如果您有许多因子水平，这可能会花费相当长的时间。",
+  "navigation": "描述性统计",
+  "tvarbox1": "选择的变量",
+  "tvarbox2": "按分组",
+  "min": "最小值",
+  "max": "最大值",
+  "mean": "均值",
+  "median": "中位数",
+  "sum": "总和",
+  "sd": "标准差",
+  "stderror": "均值的标准误",
+  "iqr": "四分位距",
+  "quantiles": "分位数",
+  "probs": "指定分位数（如果选择了四分位数）",
+  "addIsstatnames": "额外的统计函数名称，用逗号分隔，例如 var)",
+  "label1": "数值变量选项",
+  "label3": "因子变量选项",
+  "help": {
+    "title": "描述性统计",
+    "r_help": "",
+    "body": "\n<b>描述</b></br>\n输出以下描述性统计：</br>\n最小值、最大值、均值、中位数、总和、标准差、标准误、四分位距、分位数。如果选择了分位数，您可以指定所需的逗号分隔的分位数。</br>\n除了这些，用户还可以传递一组逗号分隔的统计函数名称，例如 var。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), long_table=FALSE, datasetName=\"数据集名称\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: 选择的比例变量（例如 Dataset$var1, Dataset$var2）\n</li>\n<li>\ngroupByColumnObjects: 一个或多个因子变量进行分组（例如 Dataset$var3, Dataset$var4）\n</li>\n<li>\nstatFunctionList: 函数列表。设置为 TRUE 的函数将被执行。（例如 min=TRUE, sd=TRUE）\n</li>\n<li>\nquantilesProbs: 分位数的概率\n</li>\n<li>\nadditionalStats: 用户可以传递的额外统计函数（例如 var）\n</li>\n<li>\ndatasetName: 从中选择 datasetColumnObjects 和 groupByColumnObjects 的数据集名称\n</li>\n<li>\nlong_table: 引入长表选项以适应对大量变量进行的分析。选择长格式控制输出表的宽度，使其易于查看结果，而无需在输出窗口中向右滚动。\n</li>\n</ul>\n<b>值</b></br>\n一个 \"data.frame\" 类的对象，给出每个函数在每个变量上的结果。</br>\n<b>示例</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', '销售', 'IT','销售','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"数据集\" )\n</code> <br/>\n<b>包</b></br>\nBlueSky</br>\n<b>帮助</b></br>\nR 帮助不可用，因为我们使用多个 R 函数编写了自定义代码。如果您需要检查代码，请单击 \"<>\" 按钮。</br>\n    "
+  }
+}

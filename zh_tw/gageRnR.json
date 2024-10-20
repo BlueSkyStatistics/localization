@@ -1,0 +1,20 @@
+{
+  "title": "Gage R&R - 測量系統分析，基礎",
+  "navigation": "Gage R&R，基礎",
+  "mainTitle": "圖形輸出的主標題",
+  "subTitle": "圖形輸出的副標題（例如，SixSigma專案的名稱）",
+  "measuredVar": "測量變數",
+  "part": "部件變數",
+  "appr": "評估者（操作員，機器，...）變數",
+  "lsl": "LSL - 用於計算研究變異的下限規格限制的數值，與USL一起使用，作為%容差",
+  "usl": "USL - 用於計算研究變異的上限規格限制的數值，與LSL一起使用，作為%容差",
+  "sigma": "Sigma - 用於計算研究變異的標準差數量的數值",
+  "tolerance": "容差 - 容差的數值 - 預設（usl - lsl）",
+  "alphaLim": "Alpha - 考慮交互作用的限制",
+  "errorTerm": "模型的哪個項應作為誤差項使用（對於具有交互作用的模型）",
+  "help": {
+    "title": "Gage R&R - 測量系統分析",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.rr函數用於執行Gage R&R分析，以評估過程的測量系統\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為gageR_R_piston_diameter_with_measurements.xlsx的示例數據集文件。在文件打開菜單中打開數據網格中的文件\n\t\t\t\t<br/>\n\t\t\t\t從示例數據集中，選擇直徑變數作為測量變數，Pistonring作為部件變數，Operator作為評估者\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

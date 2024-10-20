@@ -1,0 +1,16 @@
+{
+  "title": "最佳樹木數量",
+  "navigation": "優化",
+  "dependentvar": "因變量",
+  "independentvars": "自變量",
+  "label1": "樹模擬設置",
+  "startval": "起始值",
+  "endval": "結束值",
+  "stepval": "步長值",
+  "mtry": "mtry",
+  "help": {
+    "title": "最佳樹木數量",
+    "r_help": "幫助(randomForest, 包='randomForest')",
+    "body": "\n                <b>描述</b></br>\n從mtry的預設值開始，搜尋ntree（要生長的樹木數量）的最佳值（相對於袋外誤差估計）用於randomForest。函數BSkyMultiRandomForest調用下面定義的參數的randomForest函數\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx : 一個數據框或預測變量的矩陣，或描述要擬合的模型的公式（對於打印方法，一個randomForest對象）。\n</li>\n<li>\ny :  響應向量。如果是因子，則假定為分類，否則假定為回歸。如果省略，randomForest將以無監督模式運行。\n</li>\n<li>\nstartval : randomForest()中ntree參數的起始值。\n</li>\n<li>\nendval : randomForest()中ntree參數的結束值。\n</li>\n<li>\nstepval : 在每次迭代中startval應增加的計數，直到達到endval值。\n</li>\n<li>\nmtry : 每次分裂時隨機抽樣的候選變量數量。請注意，分類（sqrt(p)，其中p是x中的變量數量）和回歸（p/3）的預設值是不同的。\n</li>\n</ul>\n<b>值</b><br/>\n打印最佳樹木數量。還顯示一個包含ntree和相應袋外誤差的表格<br/>\n<b>包</b></br>\nrandomForest​;BlueSky</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋層右上角的R圖標，或在R語法編輯器中運行以下命令：幫助(randomForest, 包='randomForest')\n                "
+  }
+}

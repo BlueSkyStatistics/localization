@@ -1,0 +1,29 @@
+{
+  "title": "t-test, Eșantioane Pereche",
+  "navigation": "t-test, Eșantioane Pereche",
+  "tvarbox1": "Prima variabilă numerică",
+  "tvarbox3": "A doua variabilă numerică",
+  "label1": "Ipoteza alternativă",
+  "test1": "Diferența != mu",
+  "test2": "Diferența > mu",
+  "test3": "Diferența < mu",
+  "chkbox1": "Presupune varianță egală",
+  "txtbox2": "Ipoteza nulă (mu)",
+  "txtbox1": "Nivel de încredere",
+  "cohensdNoCorrection": "d-ul lui Cohen",
+  "hedgesgNoCorrection": "g-ul lui Hedges",
+  "glassdNoCorrection": "delta lui Glass",
+  "hedgesgCorrect": "g-ul lui Hedges cu corecție de bias",
+  "glassdCorrect": "delta lui Glass cu corecție de bias",
+  "effectsizes": "Mărimi ale efectului",
+  "showEffectSizes": "Afișează mărimile efectului",
+  "cohensdCorrect": "d-ul lui Cohen cu corecție de bias",
+  "label3": "Opțiuni pentru d-ul lui Cohen",
+  "label4": "Opțiuni pentru g-ul lui Hedges",
+  "label5": "Opțiuni pentru delta lui Glass",
+  "help": {
+    "title": "t-test, eșantioane independente",
+    "r_help": "help(t.test, package ='stats')",
+    "body": "\n<b>Descriere</b></br>\nEfectuează teste t pentru un eșantion și două eșantioane pe vectori de date.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## Metodă S3 implicită:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## Metodă S3 pentru clasa 'formula'<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: un vector numeric (nevid) de valori de date.\n</li>\n<li>\ny: un vector numeric opțional (nevid) de valori de date.\n</li>\n<li>\nalternative: un șir de caractere care specifică ipoteza alternativă, trebuie să fie unul dintre \"two.sided\" (implicit), \"greater\" sau \"less\". Poți specifica doar litera inițială.\n</li>\n<li>\nmu: un număr care indică valoarea adevărată a mediei (sau diferența în medii dacă efectuezi un test de două eșantioane).\n</li>\n<li>\npaired: un logic care indică dacă dorești un test t pereche.\n</li>\n<li>\nvar.equal: O variabilă logică care indică dacă trebuie tratate cele două varianțe ca fiind egale. Dacă este TRUE, se folosește varianța combinată pentru a estima varianța; în caz contrar, se folosește aproximarea Welch (sau Satterthwaite) pentru gradele de libertate.\n</li>\n<li>\nconf.level: nivelul de încredere al intervalului.\n</li>\n<li>\nformula: o formulă de forma lhs ~ rhs unde lhs este o variabilă numerică care dă valorile datelor și rhs un factor cu două niveluri care dă grupurile corespunzătoare.\n</li>\n<li>\ndata: o matrice sau un cadru de date opțional (sau similar: vezi model.frame) care conține variabilele din formulă. În mod implicit, variabilele sunt preluate din mediu (formula).\n</li>\n<li>\nsubset: un vector opțional care specifică un subset de observații de utilizat.\n</li>\n<li>\nna.action: o funcție care indică ce ar trebui să se întâmple atunci când datele conțin NAs. Implicit, se folosește getOption(\"na.action\").\n</li>\n<li>\n...: alte argumente care vor fi transmise către sau de la metode.\n</li>\n</ul>\n<b>Detalii</b></br>\nInterfața de formulă este aplicabilă doar pentru testele de 2 eșantioane.</br>\nalternative = \"greater\" este alternativa că x are o medie mai mare decât y.</br>\nDacă paired este TRUE, atunci atât x cât și y trebuie specificate și trebuie să aibă aceeași lungime. Valorile lipsă sunt eliminate silențios (în perechi dacă paired este TRUE). Dacă var.equal este TRUE, se folosește estimarea combinată a varianței. În mod implicit, dacă var.equal este FALSE, varianța este estimată separat pentru ambele grupuri și se folosește modificarea Welch pentru gradele de libertate.</br>\nDacă datele de intrare sunt efectiv constante (în comparație cu cea mai mare dintre cele două medii), se generează o eroare.</br>\n<b>Valoare</b><br/>\nO listă cu clasa \"htest\" care conține următoarele componente:<br/>\nstatistic: valoarea statisticii t.<br/>\nparameter: gradele de libertate pentru statistica t.<br/>\np.value: valoarea p pentru test.<br/>\nconf.int: un interval de încredere pentru medie adecvat ipotezei alternative specificate.<br/>\nestimate: media estimată sau diferența în medii în funcție de dacă a fost un test de un eșantion sau de două eșantioane.<br/>\nnull.value: valoarea ipotetică specificată a mediei sau diferența în medii în funcție de dacă a fost un test de un eșantion sau de două eșantioane.<br/>\nalternative: un șir de caractere care descrie ipoteza alternativă.<br/>\nmethod: un șir de caractere care indică ce tip de test t a fost efectuat.<br/>\ndata.name: un șir de caractere care dă numele datelor.<br/>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nhelp(t.test, package ='stats')\n"
+  }
+}

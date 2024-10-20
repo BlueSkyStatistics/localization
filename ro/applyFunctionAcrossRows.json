@@ -1,0 +1,13 @@
+{
+  "title": "Aplicarea unei funcții pe toate rândurile variabilelor selectate.",
+  "navigation": "Aplicarea unei funcții pe rânduri",
+  "label1": "Creează o nouă variabilă sau suprascrie o variabilă existentă aplicând o funcție pe toate valorile de rând ale variabilelor selectate.",
+  "newvar": "Introduceți o nouă variabilă/Suprascrieți o variabilă existentă",
+  "target": "Selectați variabilă(variabile)",
+  "selectctrl": "Selectați o operație de aplicat",
+  "help": {
+    "title": "Aplicarea unei funcții",
+    "r_help": "help(apply,package='base')",
+    "body": "\n<b>Descriere</b></br>\nAplică o funcție pe toate rândurile variabilelor selectate (coloane) dintr-un set de date. Folosim funcția select și operatorul pipe (%>%) din pachetul dplyr pentru a selecta variabilele pe care vom aplica o funcție. (Aceste variabile sunt transmise funcției apply)\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nX: Un array care include o matrice. Variabilele selectate sunt transmise prin dplyr\n</li>\n<li>\nMARGIN: Un vector care oferă subscripturile pe care funcția va fi aplicată. De exemplu, pentru o matrice, 1 indică rânduri, 2 indică coloane, c(1, 2) indică rânduri și coloane. Când\nX are dimensiuni numite, poate fi un vector de caractere care selectează numele dimensiunilor. set de date care conține variabila var\n</li>\n<li>\nFUN: Funcția care va fi aplicată\n</li>\n</ul>\n<b>Valoare</b><br/>\nValorile calculate sunt stocate direct în setul de date\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\nhelp(apply)\n"
+  }
+}

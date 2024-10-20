@@ -1,0 +1,24 @@
+{
+  "title": "Règles d'affichage",
+  "navigation": "Règles d'affichage",
+  "rulename": "Entrez un objet de règle existant",
+  "dosortingchk": "Trier les règles",
+  "sortopt": "Options de tri",
+  "sortby": "Trier par",
+  "confchk": "Confiance",
+  "liftchk": "Lift",
+  "suppchk": "Soutien",
+  "sortord": "Ordre de tri",
+  "increasing": "Croissant",
+  "decreasing": "Décroissant",
+  "noofrules": "Nombre de règles à afficher",
+  "rulecount": "",
+  "fromto": "Afficher les règles",
+  "from": "De",
+  "to": "À",
+  "help": {
+    "title": "Règles d'affichage",
+    "r_help": "aide(inspect, paquet='arules')",
+    "body": "\n            <b>\n\t\t\tPaquet : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspecter\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\tDescription\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Fournit la fonction générique inspecter et les méthodes S4 pour afficher les associations et les transactions ainsi que des informations supplémentaires formatées pour l'inspection en ligne.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUtilisation\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspecter(x, ...)\n            </code>\n            <br/><br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x : un ensemble d'associations ou de transactions ou une itemMatrix.\n            </li>\n            <li>\n            ... : des arguments supplémentaires peuvent être utilisés pour personnaliser la sortie : setStart, setEnd, itemSep et ruleSep. Les éléments sont imprimés un par ligne au cas où les lignes de sortie deviennent très longues. Cela peut également être contrôlé directement à l'aide de linebreak.\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. trier\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\tDescription\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Fournit la méthode trier pour trier les éléments de la classe associations (par exemple, itemsets ou règles) selon la valeur des mesures stockées dans le slot qualité de l'association (par exemple, support).\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUtilisation\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## Méthode S4 pour la signature 'associations'\n            arules::trier(x, décroissant = TRUE, na.dernière = NA, \n            par = \"support\", ordre = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Méthode S4 pour la signature 'associations'\n            tête(x, n = 6L, par = NULL, décroissant = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Méthode S4 pour la signature 'associations'\n            queue(x, n = 6L, par = NULL, décroissant = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x : un objet à trier.\n            </li>\n            <li>\n            décroissant : un logique. La tri doit-elle être croissante ou décroissante ? (par défaut est décroissant)\n            </li>\n            <li>\n            na.dernière : na.dernière n'est pas supporté pour les associations. Les NAs sont toujours mis en dernier.\n            </li>\n            <li>\n            par : une chaîne de caractères spécifiant la mesure de qualité stockée dans x à utiliser pour trier x. Si un vecteur de chaînes de caractères est spécifié, alors les chaînes supplémentaires sont utilisées pour trier x en cas d'égalité.\n            </li>\n            <li>\n            ordre : un vecteur d'ordre doit-il être retourné au lieu des associations triées ?\n            </li>\n            <li>\n            n : un entier unique indiquant le nombre d'associations retournées.\n            </li>\n            <li>\n            ... : D'autres arguments sont ignorés.\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            Détails\n            </b> \n            <br/>\n            trier est relativement lent pour de grands ensembles d'associations car il doit copier et réorganiser une grande structure de données. Notez que le tri crée une seconde copie de l'ensemble des associations, ce qui peut être lent et consommer beaucoup de mémoire pour de grands ensembles. Avec ordre = TRUE, un vecteur entier avec l'ordre est retourné au lieu des associations réorganisées.\n            Si seules les n premières associations sont nécessaires, alors tête utilisant par fonctionne plus rapidement que d'appeler trier puis tête, car cela le fait sans copier et réorganiser toutes les données. queue fonctionne de la même manière.\n            <br/><br/>  \n            <b> \n            Valeur\n            </b> \n            <br/>\n            Un objet de la même classe que x.                  \n    "
+  }
+}

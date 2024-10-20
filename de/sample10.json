@@ -1,0 +1,12 @@
+{
+  "title": "Variablen alphabetisch neu anordnen",
+  "navigation": "Variablen neu anordnen",
+  "label1": "Variablen alphabetisch neu anordnen",
+  "rd1": "A-Z",
+  "rd2": "Z-A",
+  "help": {
+    "title": "Variablen alphabetisch neu anordnen",
+    "r_help": "hilfe(sort)",
+    "body": "\n<b>Beschreibung</b></br>\nVariablen im Datensatz in alphabetischer Reihenfolge neu anordnen. Wir verwenden die Sortierfunktion, um die Namen der Spalten/Variablen im Datensatz zu sortieren, und die Auswahlfunktion im Paket dplyr, um die Spaltennamen in der richtigen alphabetischen Reihenfolge auszuwählen.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \n##Alphabetisch neu anordnen (A-Z)\nDataset_name <- Dataset_name %>%   dplyr::select(sort(names(.)))\n##Alphabetisch neu anordnen (Z-A)\nDataset_name <- Dataset_name %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumente</b><br/>\nKeine<br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Hilfe</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)"
+  }
+}

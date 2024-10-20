@@ -1,0 +1,12 @@
+{
+  "title": "项目拟合",
+  "navigation": "项目拟合",
+  "label1": "选择一个模型（支持Rm、dRm、tam.mml、tam.mml.2pl、tam.mml.mfr类的模型）",
+  "label1b": "如果没有可用的模型，您需要先通过选择模型拟合 -> IRT来创建一个模型",
+  "modelselector1": "选择一个模型",
+  "help": {
+    "title": "项目拟合",
+    "r_help": "帮助(itemfit, 包='eRm')",
+    "body": "\n                <b>描述</b></br>\n                对于Rm或dRm类的模型（通过使用IRT->简单Rasch模型与CML估计创建）使用函数itemfit来显示项目拟合统计数据。\n                <br/>\n                对于tam.mml、tam.mml.2pl、tam.mml.2pl、tam.mml.mfr类的模型（通过使用IRT->简单Rasch模型、部分信用模型、评分量表模型和多面模型（部分信用和评分量表）与MML估计创建）使用函数msq.itemfit来计算基于均方残差的项目拟合统计数据（Infit，Outfit）\n\n                <br/><br/>\n                <b>用法</b>\n                <br/>\n                <code>\n                eRm::itemfit(对象)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(对象)\n                </code>\n                <br/><br/>\n                <b>详细信息</b>\n                <br/>  \n                从BlueSky Statistics语法编辑器中运行以下内容：帮助(itemfit, 包 ='eRm')\n                <br/>\n                从BlueSky Statistics语法编辑器中运行以下内容：帮助(msq.itemfit, 包 ='TAM')\n                <br/>\n                详细帮助将在您的默认浏览器中启动         \n                <br/><br/>\n                <b>包</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>帮助</b>\n                <br/>\n                帮助(itemfit, 包='eRm')\n                "
+  }
+}

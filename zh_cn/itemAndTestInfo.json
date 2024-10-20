@@ -1,0 +1,12 @@
+{
+  "title": "项目和测试信息",
+  "navigation": "项目和测试信息",
+  "label1": "选择一个模型（支持Rm类和eRm模型）",
+  "label1b": "如果没有可用的模型，您需要先创建一个模型，选择模型拟合 -> IRT -> 简单Rasch模型并选择CML估计",
+  "modelselector1": "选择一个模型",
+  "help": {
+    "title": "'eRm'对象的绘图信息",
+    "r_help": "帮助(plotINFO, 包='eRm')",
+    "body": "\n                <b>描述</b></br>\n                根据Samejima（1969）计算并绘制单个或总项目信息\n                <br/><br/>\n                <b>用法</b>\n                <br/>\n                <code>\n                plotINFO(ermobject, type = \"两者\", theta = seq(-6, 6, length.out = 1001L), ...)\n                </code>\n                <br/><br/>\n                <b>参数</b>\n                <br/>  \n                object: eRm类的对象\n                <br/>\n                type:  一个字符串，表示要绘制的信息类型。目前支持\"项目\"、\"测试\"和\"两者\"（默认）。\n                <br/>\n                theta:  潜在特征上的支持或采样点         \n                <br/><br/>\n                <b>包</b>\n                <br/>\n                eRm\n                <br/><br/>\n                <b>帮助</b>\n                <br/>\n                帮助(plotINFO, 包='eRm')\n                "
+  }
+}

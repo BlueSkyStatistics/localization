@@ -1,0 +1,10 @@
+{
+  "title": "顯示級別",
+  "navigation": "顯示",
+  "target": "用於顯示級別的因子變量",
+  "help": {
+    "title": "顯示級別",
+    "r_help": "幫助(地圖,包=purrr)",
+    "body": "\n<b>描述</b></br>\n將基礎中的 levels 函數應用於數據集中選擇的變量。用戶使用 dplyr 中的 select 函數將變量傳遞給 map 函數，該函數將 levels 函數應用於每個變量\n<br/>\n<b>用法</b>\n<br/>\n<code> \n數據集 %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvar1,var2: 數據集中要顯示級別的變量\n</li>\n<li>\n數據集: 包含變量 var1, var2 的數據集\n</li>\n</ul>\n<b>值</b><br/>\n顯示所選變量的級別<br/>\n<b>包</b></br>\npurrr, dplyr</br>\n<b>幫助</b></br>\n幫助(地圖,包=purrr)\n"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Netezerea Exponențială",
+  "navigation": "Netezerea Exponențială",
+  "destination": "Variabile de prezis",
+  "firstObservation": "Timpul primei observații e.g.1: introduceți 1961,1 pentru ianuarie 1961 e.g.2: introduceți 1961,3 pentru trimestrul 3 din 1961, e.g.3: introduceți 1 pentru o serie continuă",
+  "frequency": "Numărul de observații pe unitate de timp e.g.1: introduceți 12 pentru o observație pentru fiecare lună dintr-un an, e.g. 2: introduceți 4 pentru o observație pe trimestru, e.g. 3: introduceți 1 pentru o serie continuă.",
+  "label1": "Grafice",
+  "plotSeries": "Graficați serii",
+  "yaxisLabel": "Eticheta axei Y",
+  "mainTitle": "Titlu principal",
+  "label2": "Opțiuni pentru valorile ajustate",
+  "saveFitted": "Salvați valorile ajustate",
+  "fittedValsDatasetName": "Specificați numele setului de date pentru a stoca valorile ajustate",
+  "oriVsFitted": "Graficați original vs. Ajustat",
+  "plotResiduals": "Graficați reziduurile",
+  "label3": "Preziceți folosind modelul",
+  "predict": "Faceți predicții folosind modelul",
+  "periodToPredict": "Specificați numărul de intervale de prezis",
+  "confInterval": "Specificați intervalul de încredere în procente e.g. 95 pentru 95%",
+  "savePredictedVals": "Salvați valorile prezise",
+  "predictedValsDatasetName": "Specificați numele setului de date pentru a stoca valorile prezise",
+  "plotPredicted": "Graficați valorile prezise",
+  "correlogram": "Generați correlogramă",
+  "maxlag": "Introduceți maximul întârziere",
+  "Boxtest": "Testul Ljung-Box",
+  "help": {
+    "title": "Netezerea Exponențială",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>Descriere</b></br>\nBSkyHoltWintersSeasonal este o funcție wrapper pentru HoltWinters din pachetul stats care calculează filtrarea Holt-Winters a unei serii temporale date. Parametrii necunoscuți sunt determinați prin minimizarea erorii pătratice de predicție. Apelează intern HoltWinters cu parametrul gamma utilizat pentru componenta sezonieră setat pe FALSE, parametrul beta al filtrului Holt-Winters este setat pe FALSE pentru a face netezerea exponențială și sezonier = \"Niciunul\".<br/> \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArgumente\n<ul>\n<li>\nvars: selectați o variabilă pentru a construi un model\n</li>\n<li>\nstart: Timpul primei observații trebuie introdus în formatul an,lună sau an,trimestru e.g.( dacă datele dvs. sunt organizate pe luni 1992,1 pentru ian 1992 sau dacă datele dvs. sunt organizate pe trimestre atunci 1992,1 se referă la primul trimestru din 1992.\n</li>\n<li>\nfrequency: Numărul de observații în unitatea de timp. Exemplu: pentru lunar sunt 12 observații într-un an. Pentru trimestrial sunt 4 observații într-un an.\n</li>\n<li>\nexponential: Determină dacă se va face netezerea exponențială, valoarea setată pe TRUE\n</li>\n<li>\nseasonal: un șir de caractere \"Niciunul\" pentru netezerea exponențială. \n</li>\n<li>\nplotSeries: dacă este TRUE, se va genera și un grafic de serii temporale.\n</li>\n<li>\nsaveFitted: dacă este TRUE, valorile ajustate sunt salvate.\n</li>\n<li>\nplotOriginalandForecast: Graficați seriile originale și prognozate\n</li>\n<li>\npredict: dacă este TRUE, valorile prezise vor fi generate de asemenea.\n</li>\n<li>\nsavePredictedVals: valorile prezise vor fi salvate.\n</li>\n<li>\nplotPredictedValues: valorile prezise vor fi de asemenea graficate.\n</li>\n<li>\ncorrelogram: dacă este TRUE, se va genera o correlogramă.\n</li>\n<li>\nmain: titlul principal al graficului\n</li>\n<li>\nylab: titlul pentru axa y\n</li>\n<li>\ndataset: numele setului de date din care au fost selectate variabilele\n</li>\n</ul>\n<b>Valoare</b><br/>\nUn obiect de clasă \"HoltWinters\", o listă cu componente:<br/>\nfitted: O serie temporală multiplă cu o coloană pentru seria filtrată, precum și pentru nivelul, tendința și componentele sezoniere, estimate contemporan (adică la timpul t și nu la sfârșitul seriei).<br/>\nx: Seria originală<br/>\nalpha: alpha utilizat pentru filtrare<br/>\nbeta: beta utilizat pentru filtrare<br/>\ngamma: gamma utilizat pentru filtrare<br/>\ncoefficients: Un vector cu componente numite a, b, s1, ..., sp care conțin valorile estimate pentru componentele de nivel, tendință și sezonale<br/>\nseasonal: Parametrul sezonier specificat<br/>\nSSE: Suma finală a erorilor pătratice obținute în optimizare<br/>\ncall: Apelul utilizat<br/>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă în editorul de sintaxă R help(HoltWinters , package=stats)\n\t\t\t"
+  }
+}

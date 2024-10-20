@@ -1,0 +1,20 @@
+{
+  "title": "Taille d'échantillon, Test du modèle de Cox",
+  "navigation": "Modèle de Cox",
+  "howtouse": "Pour calculer la taille de l'échantillon : spécifiez la puissance\nPour calculer la puissance : spécifiez la taille de l'échantillon",
+  "n": "Taille d'échantillon",
+  "power": "Puissance (0-1)",
+  "sd": "Écart type de la covariate",
+  "propevent": "Proportion avec l'événement (0-1)",
+  "hr": "Ratio de risque de la covariate",
+  "rsquared": "R-carré entre la covariate et d'autres covariates (0-1); entrez 0 pour un test non ajusté",
+  "siglevel": "Niveau de signification (0-1)",
+  "alternativeopt": "Hypothèse alternative",
+  "twosided": "Bilatéral",
+  "onesided": "Unilatéral",
+  "help": {
+    "title": "Taille d'échantillon, Test du modèle de Cox",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour une seule covariate dans un modèle de risques proportionnels de Cox. Il calcule la taille de l'échantillon ou la puissance, lorsque l'utilisateur spécifie l'autre, donné un ratio de risque à détecter.\n<br/><br/>\n<b>Taille d'échantillon :</b> Spécifiez le nombre total de sujets\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance souhaitée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Écart type de la covariate :</b> Spécifiez l'écart type de la covariate concernant le ratio de risque\n<br/><br/>\n<b>Ratio de risque, Groupe 1 vs Groupe 2 :</b> Spécifiez le ratio de risque souhaité à détecter pour la covariate\n<br/><br/>\n<b>Proportion avec l'événement :</b> Spécifiez la proportion attendue de l'échantillon avec l'événement (ou un moins la proportion de censure). Si vous spécifiez une probabilité de 1, cela suppose qu'il n'y a pas de censure.\n<br/><br/>\n<b>R-carré entre la covariate et d'autres covariates ; entrez 0 pour un test non ajusté :</b> Spécifiez la valeur de r-carré (correlation multiple au carré), entre la covariate et\n toutes les autres covariates dans le modèle de Cox. Une valeur de 0 correspond à un test non ajusté sans autres covariates.\n<br/><br/>\n<b>Niveau de signification :</b> Spécifiez le niveau de signification souhaité (c'est-à-dire l'erreur de type I) du test\n<br/><br/>\nCela utilise les fonctions ssizeEpiCont.default et powerEpiCont.default dans le package powerSurvEpi. Voir le menu à trois points>Aide>Aide sur les fonctions R pour plus d'informations.\n<br/><br/>\n<b>Packages R requis :</b> powerSurvEpi\n\t\t\t"
+  }
+}

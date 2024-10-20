@@ -1,0 +1,10 @@
+{
+  "title": "Trasează un model",
+  "navigation": "Trasează un model",
+  "modelselector1": "Selectați un model din una dintre următoarele clase (clasa între paranteze) Model liniar (lm), Modele liniare generalizate (glm)",
+  "help": {
+    "title": "Trasează un model",
+    "r_help": "ajutor(plot, pachet ='graphics')",
+    "body": "\n                <b>Descriere</b></br>\nFuncție generică pentru trasarea obiectelor R. Pentru mai multe detalii despre argumentele parametrilor grafici, consultați par.\nPentru grafice de dispersie simple, se va folosi plot.default. Cu toate acestea, există metode de trasare pentru multe obiecte R diferite, inclusiv funcții, data.frames, obiecte de densitate etc. Utilizați methods(plot) și documentația pentru acestea.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nplot(obiect)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobiect: orice obiect R cu o metodă de trasare poate fi furnizat.\n</li>\n</ul>\n<b>Pachet</b></br>\ngraphics</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapunerii de dialog sau rulați următoarea comandă în editorul de sintaxă R: ajutor(plot, pachet ='graphics')\n"
+  }
+}

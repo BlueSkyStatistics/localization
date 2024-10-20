@@ -1,0 +1,26 @@
+{
+  "title": "非線性最小二乘 (NLS) 模型",
+  "navigation": "非線性最小二乘",
+  "modelname": "NLS 模型名稱",
+  "DependentVar": "響應（因變量）",
+  "IndependentVarsformula": "構建或粘貼任何包含自變量（預測變量）和模型參數的方程（公式），例如 a * exp(b * x)，其中 a 和 b 是待估計的參數，x 是預測變量。它將創建一個模型方程 y ~ a * exp(b * x)，其中 y 是響應變量",
+  "IndependentVar": "散點圖和擬合圖所需的自變量（預測變量）",
+  "weights": "用作權重 (Y) 的變量，具有一個幂值",
+  "PowerKweight": "幂：僅用於 Y 時選擇 (-1)，用於 1/Y 時選擇 1，1/(Y^2) 時選擇 2，.. 1/(Y^5) 時選擇 5，..",
+  "covMatrixChk": "參數的估計協方差矩陣",
+  "resPlotChk": "繪製擬合和殘差",
+  "resNormalityTestChk": "模型殘差的正態性檢驗",
+  "modelConstraintLabel": "(可選) 參數估計的各種模型約束",
+  "pmodels": "參數的起始值，以指導模型優化/收斂，例如 param1 = 1，param2 = 10，param3 = 0，用於三參數模型",
+  "paramConstraintsLower": "設置下限約束（必須選擇端口作為算法），例如 3，-Inf，-Inf 用於三參數模型",
+  "paramConstraintsUpper": "設置上限約束（必須選擇端口作為算法），例如 3，Inf，Inf，2 用於四參數模型",
+  "algorithm": "要使用的算法。默認是高斯-牛頓算法",
+  "maxIter": "允許模型收斂的最大迭代次數。默認是 50",
+  "logScaleAxis": "X 軸默認以對數刻度繪製。選擇 ' ' 以使用原始刻度",
+  "doseInLogScaleChk": "檢查數據集中劑量/濃度是否已經是對數值",
+  "help": {
+    "title": "非線性最小二乘 (NLS) 模型",
+    "r_help": "help(nls, package ='stats')",
+    "body": "\n            <b>描述</b></br> \n\t\t\t執行非線性回歸。構建或輸入任何方程（公式）以構建非線性回歸模型。\n\t\t\t確定非線性（加權）最小二乘估計的非線性模型參數。\n\t\t\t使用圖形分析模型擬合。\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t查看 help(nls, package ='stats') 以獲取詳細信息\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t您可以嘗試此對話框\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\t示例 1\n\t\t\t</br>\n\t\t\t從加載數據集菜單加載 DNase 數據集（在第一個下拉菜單中保留所有已安裝的包，並在第二個下拉菜單中選擇 DNase）\t\t\t\n\t\t\t<br/>\n\t\t\t選擇（或拖動）密度作為響應變量\n\t\t\t<br/>\n\t\t\t在自變量（公式）字段中輸入 Asym/(1 + exp((xmid - log(conc))/scal))，其中 Asym、xmid 和 scal\n\t\t\t是三個待估計的模型參數（即係數）\n\t\t\t<br/>\n\t\t\t檢查估計的協方差矩陣\n\t\t\t</br>\n\t\t\t檢查繪製擬合和殘差\n\t\t\t</br>\n\t\t\t選擇（或拖動）conc 進入散點圖和擬合圖所需的自變量字段\n\t\t\t</br>\n\t\t\t在字段中輸入 Asym = 3，xmid = 0，scal = 1，以指導模型的參數起始值\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t示例 2\n\t\t\t</br>\n\t\t\t從加載數據集菜單加載 DNase 數據集（在第一個下拉菜單中保留所有已安裝的包，並在第二個下拉菜單中選擇 DNase）\t\t\t\n\t\t\t<br/>\n\t\t\t選擇（或拖動）密度作為響應變量\n\t\t\t<br/>\n\t\t\t在自變量（公式）字段中輸入 Asym/(1 + exp((xmid - log(conc))/scal))\n\t\t\t<br/>\n\t\t\t檢查估計的協方差矩陣\n\t\t\t</br>\n\t\t\t檢查繪製擬合和殘差\n\t\t\t</br>\n\t\t\t選擇（或拖動）conc 進入散點圖和擬合圖所需的自變量字段\n\t\t\t</br>\n\t\t\t在字段中輸入 Asym = 3，xmid = 0，scal = 1，以指導模型的參數起始值\n\t\t\t</br>\n\t\t\t在字段中輸入 Asym = 0，xmid = -Inf，scal = -Inf，以設置下限約束（將 Asym 的下限設置為 0，保留 xmid 和 scal 的下限不約束）\n\t\t\t</br>\n\t\t\t在字段中輸入 Asym = Inf，xmid = 4，scal = Inf，以設置上限約束（將 xmid 的下限設置為 0，保留 Asym 和 scal 的上限不約束）\n\t\t\t</br>\n\t\t\t從要使用的算法下拉菜單中選擇端口，而不是默認值\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t執行對話框\n\t\t\t</br>\n\t\t\t</br>\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "替換缺失值（字串/因子變數）",
+  "navigation": "字元/因子",
+  "destination": "目標變數",
+  "repString": "輸入字串以替換NAs。注意：不要用引號括住字串。對於因子變數，指定的值必須是因子的某個層級，請參見變數>因子層級>添加",
+  "help": {
+    "title": "替換缺失值（字串/因子變數）",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>描述</b></br>\n用指定的值替換所選變數中的缺失值。使用對話框時，您不必將字串用雙引號括起來\n<br/>\n<b>用法</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('要替換的字串')\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n需要替換NAs的資料集變數（var1，var2）\n</li>\n</ul>\n<b>值</b><br/>\n用指定的字串替換資料集中的缺失值<br/>\n<b>套件</b></br>\nbase</br>\n<b>幫助</b></br>\nhelp(is.na,package=base)"
+  }
+}

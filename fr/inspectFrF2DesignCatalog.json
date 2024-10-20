@@ -1,0 +1,17 @@
+{
+  "title": "Parcourir un catalogue de conception FrF2 (par exemple, catlg)",
+  "navigation": "Parcourir le catalogue de conception FrF2",
+  "designCatalog": "Nom du catalogue de conception (doit être un objet de la classe catlg)",
+  "designNamefromCatalog": "Nom de la conception dans le catalogue",
+  "numRuns": "Nombre de courses (si plus d'une, les séparer par , par exemple 8,16,64)",
+  "numFactors": "Nombre de facteurs (si plus d'un, les séparer par , par exemple 4,5,11)",
+  "minResolution": "Résolution de conception minimale (par exemple, tapez 3 pour III, 4 pour IV, 5 pour V, ..)",
+  "MaxC2Chk": "Si non coché - les conceptions sont ordonnées par aberration minimale ou si coché - par le nombre maximum de 2fis clairs",
+  "showAliasChk": "Afficher la structure d'alias (jusqu'à 2fis)",
+  "maxNumberofDesignPrint": "Afficher le nombre maximum de conceptions",
+  "help": {
+    "title": "Parcourir un catalogue de conception FrF2 (par exemple, catlg)",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tParcourir/Inspecter les éléments de conception ou extraire des informations du catalogue de conception de la classe catlg dans le paquet FrF2\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

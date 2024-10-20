@@ -1,0 +1,20 @@
+{
+  "title": "D-optimal Design erstellen",
+  "navigation": "D-optimal Design erstellen",
+  "datasetname": "D-optimaler Designname",
+  "candidateDesignChk": "D-optimalen Design aus einem bestehenden Kandidatendesign erstellen (vollständige Faktorisierung, FrF2, orthogonal oder lateinisch) - stellen Sie sicher, dass dieser Dialog auf dem bestehenden Design im Datenraster geöffnet ist, um das Kandidatendesign implizit auszuwählen",
+  "selectedvars": "Wählen Sie Variablen aus (ignoriert, wenn das Kandidatendesign oben aktiviert ist), um ein D-optimal Design nicht aus einem bestehenden Kandidatendesign zu erstellen",
+  "numOfRuns": "Anzahl der Durchläufe",
+  "formula": "Formel - lassen Sie es standardmäßig, um alle Faktoren im Modell einzuschließen, oder geben Sie eine lineare Modellformel ein, z.B. ~quad(.)",
+  "numOfOptiRepeats": "Anzahl der Optimierungswiederholungen",
+  "numOfBlocks": "Anzahl der Blöcke",
+  "blockName": "Name des Blocks",
+  "lbl1": "Sie müssen möglicherweise die Randomisierungseinstellungen nicht ändern",
+  "randomseeds": "Saat für die Randomisierung",
+  "randomizationChk": "Die Designgenerierung randomisieren",
+  "help": {
+    "title": "D-optimal Design erstellen",
+    "r_help": "help(Dopt.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDopt.design-Funktion zur Erstellung von D-optimalen Designs mit oder ohne Blockierung\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx verwenden. Öffnen Sie die Datei im Datenraster mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\tErstellen Sie zuerst das vollständige faktoriale Design, wählen Sie das vollständige faktoriale Design aus diesem Dialog/UI aus und geben Sie runs = 16 an, um ein D-optimal Design aus einem vollständigen faktorialen Design zu erstellen\n\t\t\t"
+  }
+}

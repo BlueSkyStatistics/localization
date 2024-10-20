@@ -1,0 +1,21 @@
+{
+  "title": "Diagramme en violon",
+  "navigation": "Violon",
+  "x": "Axe X, spécifiez une variable facteur",
+  "y": "Axe Y, spécifiez une ou plusieurs variables numériques",
+  "fill": "Remplissage, spécifiez une variable facteur",
+  "alpha": "Opacité (0-1)",
+  "flip": "Inverser l'axe",
+  "specify_a_title": "Entrez un titre",
+  "x_title": "Étiquette de l'axe X",
+  "y_title": "Étiquette de l'axe Y",
+  "Facetrow": "Ligne de facette",
+  "Facetcolumn": "Colonne de facette",
+  "Facetwrap": "Enveloppe de facette",
+  "Facetscale": "Échelle de facette",
+  "help": {
+    "title": "Diagramme en violon",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>Description</b></br>\n            Un diagramme en violon est une représentation compacte d'une distribution continue. C'est un mélange de geom_boxplot() et geom_density(): un diagramme en violon est un graphique de densité miroir affiché de la même manière qu'un boxplot.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"Diagramme en violon pour ...\")\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: Le jeu de données par défaut​\n            </li>\n            <li>\n            x: Une variable facteur​ qui divise la variable y ci-dessous en groupes.\n            </li>\n            <li>\n            y: Une variable numérique pour laquelle le diagramme en violon est généré\n            </li>\n            <li>\n            fill: Une variable facteur/catégorique optionnelle pour regrouper davantage les groupes existants. Chaque sous-groupe sera affiché dans une couleur distincte.​\n            </li>\n            <li>\n            aes(): Génère des mappages esthétiques qui décrivent comment les variables des données sont mappées aux propriétés visuelles (esthétiques) des geoms.​\n            </li>\n            <li>\n            geom_violin(): Crée le diagramme en violon. \n            </li>\n            <li>\n            Labs(): Change les étiquettes des axes et les titres de légende (c'est optionnel)​\n            </li>\n            <li>\n            facet_grid(): Dispose les panneaux dans une grille (c'est optionnel)​\n            </li>\n            <li>\n            theme_calc(): Spécifie le thème du calculateur (c'est optionnel)​\n            </li>\n            <li>\n            coord_flip(): Inverser l'axe (c'est optionnel)​\n            </li>\n            </ul>\n            <b>Paquet</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aide</b></br>\n            Autre: Cliquez sur le bouton d'aide R pour obtenir une aide R détaillée. Vous pouvez également entrer help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip).\n    "
+  }
+}

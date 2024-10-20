@@ -1,0 +1,16 @@
+{
+  "title": "Créer un design Box-Behnken (Quantitatif)",
+  "navigation": "Créer un design Box-Behnken (Quantitatif)",
+  "selectedvars": "Sélectionner les variables",
+  "datasetname": "Nom du design",
+  "numCenter": "nombre entier de points centraux pour chaque bloc",
+  "blockName": "Nom du bloc",
+  "lbl1": "Vous n'avez peut-être pas besoin de changer les paramètres de randomisation",
+  "randomseeds": "Graine pour la randomisation",
+  "randomizationChk": "Randomiser la génération de design",
+  "help": {
+    "title": "Créer un design Box-Behnken (Quantitatif)",
+    "r_help": "help(bbd.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction bbd.design pour générer des designs Box-Behnken, utilisant le package rsm\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(bbd.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de données d'exemple appelé facteurs pour bbd design.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

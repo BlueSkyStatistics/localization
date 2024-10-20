@@ -1,0 +1,13 @@
+{
+  "title": "Corelații semi-partiale",
+  "navigation": "Semi-parțial",
+  "statistic": "Selectați o metodă",
+  "tvarbox1": "Selectați variabile",
+  "correlationType": "Tip de corelație",
+  "tvarbox2": "Selectați variabile de control",
+  "help": {
+    "title": "Corelații semi-partiale",
+    "r_help": "ajutor(spcor.test, pachet=ppcor)",
+    "body": "\n            <b>Descriere</b></br>\n            Corelație semi-partială pentru două variabile date o a treia variabilă. Vom calcula corelația semi-partială pereche între fiecare dintre variabilele specificate în controlul variabilelor selectate, controlând variabilele specificate în controlul variabilelor de control.<br/>\n            Am scris un wrapper în jurul funcției spcor.test care apelează spcor.test pentru fiecare pereche de variabile specificate.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            Argumente\n            x: un vector numeric.\n            </li>\n            <li>\n            y: un vector numeric.\n            </li>\n            <li>\n            y: un vector numeric.\n            </li>\n            <li>\n            method: un șir de caractere care indică ce coeficient de corelație parțial trebuie calculat. Unul dintre \"pearson\" (implicit), \"kendall\" sau \"spearman\" poate fi abreviat..\n            </li>\n            </ul>\n            <b>Detalii</b></br>\n            Corelația semi-partială este corelația a două variabile cu variația unei a treia variabile eliminată doar din a doua variabilă. Când determinantul matricei de varianță-covarianță este numeric zero, se folosește inversa generalizată Moore-Penrose. În acest caz, nu se va furniza niciun p-valoare și statistică dacă numărul de variabile este mai mare sau egal cu dimensiunea eșantionului.</br>\n            <b>Valoare</b><br/>\n            estimate: coeficientul de corelație semi-partială (parțial) între două variabile.<br/>\n            p.value: valoarea p a testului.<br/>\n            n: Numărul de probe.<br/>\n            <b>Exemple</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>Pachet</b></br>\n            ppcor</br>\n            <b>Ajutor</b></br>\n            ajutor(pcor.test, pachet=ppcor)\n"
+  }
+}

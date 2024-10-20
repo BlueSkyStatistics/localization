@@ -1,0 +1,15 @@
+{
+  "title": "Tamaño de muestra, Precisión de una media",
+  "navigation": "Una media",
+  "howtouse": "Especifique el tamaño de la muestra o el ancho del intervalo de confianza y se calculará el otro",
+  "n": "Tamaño de muestra",
+  "width": "Ancho del intervalo de confianza",
+  "mean": "Media",
+  "sd": "Desviación estándar",
+  "conflevel": "Nivel de confianza (0-1)",
+  "help": {
+    "title": "Tamaño de muestra, Precisión de una media",
+    "r_help": "help(prec_mean, package ='presize')",
+    "body": "\nEsta es una evaluación del tamaño de muestra para una media basada en el ancho del intervalo de confianza. Calcula el tamaño de la muestra o el ancho del intervalo de confianza cuando el usuario especifica el otro.\n<br/><br/>\n<b>Tamaño de muestra:</b> Especifique el número de sujetos en el estudio\n<br/><br/>\n<b>Ancho del intervalo de confianza:</b> Especifique el ancho del intervalo de confianza deseado. El ancho de un intervalo de confianza es una medida de la precisión de una estimación y es el límite superior menos el límite inferior.\n<br/><br/>\n<b>Media:</b> Especifique el valor medio esperado\n<br/><br/>\n<b>Desviación estándar:</b> Especifique la desviación estándar del resultado\n<br/><br/>\n<b>Nivel de confianza:</b> Especifique el nivel deseado del intervalo de confianza\n<br/><br/>\n<br/><br/>\n<b>Paquetes R requeridos:</b> presize\n\t\t\t"
+  }
+}

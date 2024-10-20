@@ -1,0 +1,13 @@
+{
+  "title": "Fehlende Werte imputieren (Mit einer Formel)",
+  "navigation": "Verwenden Sie eine Formel",
+  "depVar": "Wählen Sie eine Variable aus, für die fehlende Werte imputiert werden sollen (Dies ist die abhängige Variable im Modell)",
+  "label1": "Bewegen Sie die unabhängigen Variablen in die Formel-Builder-Steuerung, um eine Formel zu erstellen. Fahren Sie mit der Maus über die Symbole im Formel-Builder für Hilfe",
+  "formula": "Das Bewegen mehrerer Variablen mit der Verschiebe-Taste verwendet einen Standardtrennzeichen von +, was unabhängige Variablen ohne Interaktionstermen anzeigt. Klicken Sie auf das Symbol, um ein Modell mit Interaktionstermen zu erstellen.",
+  "independent": "Unabhängige Variablen (eine oder mehrere)",
+  "help": {
+    "title": "Fehlende Werte imputieren (Mit einer Formel)",
+    "r_help": "hilfe(if_else,paket='dplyr')",
+    "body": "\n            <b>Beschreibung</b></br>\n            Erstellen Sie eine Formel, um fehlende Werte zu ersetzen. Zum Beispiel erstellen Sie ein Regressionsmodell, um Schätzungen für die fehlenden Werte zu entwickeln. Sobald die Gleichung generiert ist, können Sie die Gleichung in den Dialog eingeben und nur die fehlenden Werte in der ausgewählten Variablen werden berechnet.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # Ersetzen von expression durch var2*4+1.32<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            var: Der Name der Variablen im Datensatz, für die fehlende Werte ersetzt werden sollen, z.B. var=c(\"sales\"). Die Variable muss vom Typ numerisch sein\n            </li>\n            <li>\n            Dataset: Der Datensatz/Dataframe, der die Variable var enthält\n            </li>\n            <li>\n            expression: Der Ausdruck, der verwendet wird, um den fehlenden Wert zu ersetzen, im obigen Beispiel ist es var2*4+ 1.32\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            dplyr</br>\n            <b>Hilfe</b></br>\n            Für detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl aus: help(if_else, package ='dplyr'), indem Sie einen R-Code-Chunk erstellen, indem Sie auf + im Ausgabefenster klicken\n            "
+  }
+}

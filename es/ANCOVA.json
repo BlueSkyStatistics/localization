@@ -1,0 +1,16 @@
+{
+  "title": "ANCOVA, análisis de covarianza",
+  "navigation": "ANCOVA",
+  "response": "Variable Dependiente",
+  "Fixed": "Factor Fijo",
+  "Block": "Covariable",
+  "Summary": "Resumen del Modelo",
+  "Scatter_plot": "Gráfico de dispersión para cada nivel de la variable de factor",
+  "Residual": "Gráfico de residuos vs. ajustados",
+  "Histogram": "Gráfico de histograma de residuos",
+  "help": {
+    "title": "ANCOVA",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Descripción</b></br>\nEl análisis de covarianza (ANCOVA) combina características de ANOVA y regresión. Aumenta el modelo ANOVA con una o más variables cuantitativas adicionales, llamadas covariables, que están relacionadas con la variable de respuesta. Las covariables se incluyen para reducir la varianza en los términos de error y proporcionar una medición más precisa de los efectos del tratamiento.</br> ANCOVA se utiliza para probar los efectos principales e interacción de los factores, mientras se controla los efectos de la covariable.</br>\nPrimero generamos una tabla Anova con el término de interacción. El objetivo es examinar si el término de interacción no es significativo, es decir, que las pendientes de la variable dependiente contra la covariable para cada nivel del factor fijo no son diferentes. Usamos el paquete Anova en el paquete car para generar esta tabla Anova.</br>\nLuego regeneramos la tabla Anova controlando el término de interacción para determinar si los interceptos de la variable dependiente contra la covariable para cada nivel del factor fijo son diferentes.</br> \nProporcionamos la opción de generar un gráfico de dispersión de la variable dependiente contra la variable covariable para cada nivel del factor fijo.</br>\nProporcionamos la opción de graficar los residuos vs. el gráfico ajustado para el modelo donde hemos controlado el término de interacción. Los residuos deben ser imparciales y homocedásticos.</br>\nProporcionamos la opción de generar un histograma para los residuos del modelo donde hemos controlado el término de interacción. (La distribución debe ser aproximadamente normal).</br>\nTe damos la opción de resumir el modelo</br>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nformula: un objeto de clase \"formula\" (o uno que se pueda convertir a esa clase): una descripción simbólica del modelo a ajustar. Los detalles de la especificación del modelo se dan en 'Detalles'.\n</li>\n<li>\ndata: un marco de datos opcional, lista o entorno (o un objeto que se pueda convertir mediante as.data.frame a un marco de datos) que contiene las variables en el modelo. Si no se encuentra en los datos, las variables se toman del entorno(formula), típicamente el entorno desde el cual se llama a lm.\n</li>\n</ul>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm, u otro objeto de modelo adecuado.​\n</li>\n<li>\ntype: tipo de prueba, \"II\", \"III\", 2, o 3.\n</li>\n</ul>\n<b>Paquete</b></br>\nAnova</br>\n<b>Ayuda</b></br>\nhelp(Anova, package ='car')\n    "
+  }
+}

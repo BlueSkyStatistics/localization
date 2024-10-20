@@ -1,0 +1,16 @@
+{
+  "title": "ANCOVA, analiza covarianței",
+  "navigation": "ANCOVA",
+  "response": "Variabila dependentă",
+  "Fixed": "Factor fix",
+  "Block": "Covariată",
+  "Summary": "Rezumatul modelului",
+  "Scatter_plot": "Diagramă de dispersie pentru fiecare nivel al variabilei factor",
+  "Residual": "Diagramă reziduală vs. ajustată",
+  "Histogram": "Diagramă histogramă a rezidualelor",
+  "help": {
+    "title": "ANCOVA",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Descriere</b></br>\nAnaliza covarianței (ANCOVA) combină caracteristici ale ANOVA și regresiei. Aceasta completează modelul ANOVA cu una sau mai multe variabile cantitative suplimentare, numite covariate, care sunt legate de variabila de răspuns. Covariatele sunt incluse pentru a reduce variația în termenii de eroare și a oferi o măsurare mai precisă a efectelor tratamentului.</br> ANCOVA este utilizată pentru a testa efectele principale și de interacțiune ale factorilor, în timp ce controlează efectele covariatei.</br>\nMai întâi generăm un tabel Anova cu termenul de interacțiune. Scopul este de a examina dacă termenul de interacțiune nu este semnificativ, adică pantele variabilei dependente față de covariată pentru fiecare nivel al factorului fix nu sunt diferite. Folosim pachetul Anova din pachetul car pentru a genera acest tabel Anova.</br>\nApoi regenerăm tabelul Anova controlând termenul de interacțiune pentru a determina dacă interceptările variabilei dependente față de covariată pentru fiecare nivel al factorului fix sunt diferite.</br> \nOferim opțiunea de a genera o diagramă de dispersie pentru variabila dependentă față de variabila covariată pentru fiecare nivel al factorului fix.</br>\nOferim opțiunea de a plota rezidualele vs. diagramă ajustată pentru modelul în care am controlat termenul de interacțiune. Reziduurile ar trebui să fie neîndemânatice și omoscedastice.</br>\nOferim opțiunea de a genera o histogramă pentru reziduale pentru modelul în care am controlat termenul de interacțiune. (Distribuția ar trebui să fie aproximativ normală).</br>\nÎți oferim opțiunea de a rezuma modelul</br>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nformula: un obiect de clasă \"formula\" (sau unul care poate fi forțat în acea clasă): o descriere simbolică a modelului care trebuie ajustat. Detaliile specificației modelului sunt date în secțiunea „Detalii”.\n</li>\n<li>\ndata: un cadru de date opțional, listă sau mediu (sau obiect care poate fi forțat prin as.data.frame într-un cadru de date) care conține variabilele din model. Dacă nu sunt găsite în date, variabilele sunt preluate din mediu(formula), de obicei mediu din care este apelat lm.\n</li>\n</ul>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm sau alt obiect de model adecvat.​\n</li>\n<li>\ntype: tipul de test, \"II\", \"III\", 2 sau 3.\n</li>\n</ul>\n<b>Pachet</b></br>\nAnova</br>\n<b>Ajutor</b></br>\nhelp(Anova, package ='car')\n    "
+  }
+}

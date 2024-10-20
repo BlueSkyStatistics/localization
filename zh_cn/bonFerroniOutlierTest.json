@@ -1,0 +1,11 @@
+{
+  "title": "Bonferroni异常值检验",
+  "navigation": "异常值检验",
+  "label1": "选择以下类别之一的模型（括号中的类别）- 线性模型（lm），广义线性模型（glm）",
+  "modelselector1": "选择一个模型",
+  "help": {
+    "title": "Bonferroni异常值检验",
+    "r_help": "help(outlierTest, package='car')",
+    "body": "\n                <b>描述</b></br>\n报告Bonferroni p值，以逐个测试每个观察值是否为均值偏移异常值，基于线性（t检验）、广义线性模型（正态检验）和线性混合模型中的学生化残差。\n<br/>\n<b>用法</b>\n<br/>\n<code> \noutlierTest(model, ...)<br/>\n## S3方法，类为'lm'<br/>\noutlierTest(model, cutoff=0.05, n.max=10, order=TRUE, \nlabels=names(rstudent), ...)<br/>\n## S3方法，类为'lmerMod'<br/>\noutlierTest(model, ...)<br/>\n## S3方法，类为'outlierTest'<br/>\nprint(x, digits=5, ...)<br/>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nmodel: 一个lm、glm或lmerMod模型对象；\"lmerMod\"方法调用\"lm\"方法并可以接受相同的参数。\n</li>\n<li>\ncutoff: 超过cutoff的Bonferroni p值的观察值不被报告，除非没有观察值被提名，在这种情况下报告具有最大学生化残差的观察值。\n</li>\n<li>\nn.max: 最大报告观察值的数量（默认，10）。\n</li>\n<li>\norder: 是否按大小降序报告学生化残差？（默认，TRUE）。\n</li>\n<li>\nlabels: 可选的观察名称向量。\n</li>\n<li>\n...: 传递给方法函数的参数。\n</li>\n<li>\nx: outlierTest对象。\n</li>\n<li>\ndigits: 报告的p值的小数位数。\n</li>\n</ul>\n<b>详细信息</b></br>\n对于线性模型，报告的p值使用t分布，自由度比模型的残差df少一个。对于广义线性模型，p值基于标准正态分布。Bonferroni调整将通常的双侧p值乘以观察值的数量。lm方法适用于glm对象。要显示所有观察值，请将cutoff=Inf和n.max=Inf。<br/>\n<b>值</b><br/>\n一个类为outlierTest的对象，通常只是打印出来。<br/>\n<b>示例</b><br/>\n<code> \noutlierTest(lm(prestige ~ income + education, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖层右上角的R图标，或在R语法编辑器中运行以下命令 help(outlierTest, package=\"car\")\n                "
+  }
+}

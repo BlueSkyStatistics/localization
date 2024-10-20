@@ -1,0 +1,18 @@
+{
+  "title": "Dimensiunea eșantionului, Testul unei proporții",
+  "navigation": "O proporție",
+  "howtouse": "Specificați fie dimensiunea eșantionului, fie puterea, iar cealaltă va fi calculată",
+  "n": "Dimensiunea eșantionului",
+  "power": "Putere (0-1)",
+  "prop": "Proporție alternativă (0-1)",
+  "prop0": "Proporție nulă (0-1)",
+  "siglevel": "Nivel de semnificație (0-1)",
+  "alternativeopt": "Ipoteză alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "help": {
+    "title": "Dimensiunea eșantionului, Testul unei proporții",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test de proporție pe un eșantion. Calculează dimensiunea eșantionului sau puterea, atunci când utilizatorul specifică unul dintre ele. Calculul folosește formula găsită în Chow S, Shao J, Wang H. Calculul dimensiunii eșantionului în cercetarea clinică (2008). Folosește o aproximare normală cu deviația standard bazată pe proporția alternativă.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă era adevărată.\n<br/><br/>\n<b>Proporție alternativă (0-1):</b> Specificați proporția sub ipoteza alternativă\n<br/><br/>\n<b>Proporție nulă (0-1):</b> Specificați proporția sub ipoteza nulă\n<br/><br/>\n<b> Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) al testului\n<br/><br/>\n<b>Ipoteză alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Pachete R necesare:</b> stats\n\t\t\t"
+  }
+}

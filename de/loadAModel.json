@@ -1,0 +1,24 @@
+{
+  "title": "Modelle aus einer Datei laden",
+  "navigation": "Modelle laden",
+  "filterModels": "Modelle nach Klasse filtern",
+  "modelSelection": "Wählen Sie ein Modell zum Speichern aus",
+  "importResp": "Wählen Sie eine Datei aus, um Modelle zu laden",
+  "label1": "Alle Modelle in der angegebenen Datei werden in den Speicher geladen. Hinweis: Wenn Sie bereits vorhandene Modelle mit demselben Namen haben, werden diese überschrieben.",
+  "levelOfInterest": "Wenn die vorherzusagende Variable 2 Ebenen hat, geben Sie die Ebene von Interesse an. Die Verwirrungsmatrix und verwandte Statistiken werden mit der angegebenen Ebene von Interesse als Referenz angezeigt.",
+  "label12": "Testergebnisse: Sobald ein Modell ausgewählt ist, führen wir Tests durch, um zu sehen, ob die im Modell angegebenen abhängigen Variablen im Datensatz vorhanden sind, der bewertet werden soll. Die Ergebnisse werden hier angezeigt.",
+  "label2": "Vorhergesagte Werte und unterstützende Statistiken speichern.",
+  "label3": "Vorhersagen und vorhergesagte Wahrscheinlichkeiten, wo zutreffend, werden im bewerteten Datensatz als neue Variablen mit dem untenstehenden Präfix gespeichert.",
+  "label4": "**Für abhängige Variablen mit 2 Ebenen wird die 2. Ebene als positive Ebene behandelt. Siehe Daten > Faktorstufen > Stufen manuell neu anordnen, um die Reihenfolge der Faktorstufen zu ändern und das Modell neu zu erstellen.",
+  "conflevel": "Konfidenzintervalle für einzelne vorhergesagte Werte speichern **(Gültig nur für lineare Modelle (Klasse lm))",
+  "roctable": "ROC-Tabelle anzeigen (**Nur für binäre abhängige Variablen)",
+  "colname": "Geben Sie das Präfix für den Spaltennamen an",
+  "label5": "**Das Aktivieren des Kontrollkästchens oben führt zu einer Leistungseinbuße bei großen Datensätzen.",
+  "level": "Geben Sie das Konfidenzniveau an",
+  "confusioncheck": "Verwirrungsmatrix generieren",
+  "help": {
+    "title": "Modelle laden",
+    "r_help": "help(load, package='base')",
+    "body": "\n<b>Beschreibung</b></br>\nR-Modellobjekte, die in die ausgewählte Datei gespeichert wurden, werden geladen.</br>\nWir laden ALLE R-Objekte, die in die ausgewählte Datei gespeichert wurden. Wenn Objekte mit demselben Namen im globalen R-Umfeld existieren, werden diese überschrieben.</br>\nWir zeigen eine Nachricht an, die die mit der BlueSky-Anwendung erstellten Modelle bestätigt, die geladen wurden.</br>\nSie müssen die Schaltfläche Ausführen (die horizontale Dreiecksschaltfläche) klicken, um die in die ausgewählte Datei gespeicherten R-Objekte zu laden. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nload(file =\"Pfad zur Datei\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nfile: Dateiname mit Pfad, die ausgewählten Modellobjekte werden in dieser RData-Datei gespeichert\n</li>\n</ul>\n<b>Pakete</b></br>\nbasis</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl aus: help(load, package = 'base') im R-Editorfenster\n</br>\n                "
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "決策樹",
+  "navigation": "決策樹",
+  "TxtTreeName": "輸入模型名稱",
+  "TreeGenChkbox": "如果樹已存在，則不重新生成",
+  "dependent": "因變量",
+  "independent": "自變量",
+  "weights": "調查權重",
+  "TxtMinSplit": "最小分割",
+  "minBucket": "最小桶",
+  "TxtCP": "複雜性參數",
+  "maxDepth": "最大深度",
+  "PruneTreeChkbox": "修剪樹",
+  "rd0": "不修剪",
+  "rd1": "使用最佳複雜性參數",
+  "rd2": "指定複雜性參數",
+  "TxtCPPrune": "輸入複雜性參數",
+  "PlotCVChkbox": "繪製交叉驗證",
+  "PlotRSQRChkbox": "繪製R平方",
+  "help": {
+    "title": "決策樹",
+    "r_help": "幫助(rpart, 套件 ='rpart')"
+  }
+}

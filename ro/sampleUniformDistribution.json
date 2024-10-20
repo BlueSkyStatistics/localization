@@ -1,0 +1,19 @@
+{
+  "title": "Exemplu de distribuție uniformă",
+  "navigation": "Exemplu de distribuție uniformă",
+  "entrdsname": "Introduceți numele pentru setul de date",
+  "min": "Minim",
+  "max": "Maxim",
+  "lblnoofsamples": "Numărul de mostre (rânduri)",
+  "lblnoofobsv": "Numărul de observații (coloane)",
+  "lblseed": "Semință",
+  "lblAddtoDS": "Adăugați la setul de date",
+  "chklbl1": "Mediile mostrelor",
+  "chklbl2": "Sumele mostrelor",
+  "chklbl3": "Abaterea standard a mostrelor",
+  "help": {
+    "title": "Exemplu de distribuție uniformă",
+    "r_help": "help(runif, package=stats)",
+    "body": "\n            ​​\n            <b>Descriere</b>\n            <br/>\n            Aceste funcții oferă informații despre distribuția uniformă pe intervalul de la min la max. dunif oferă densitatea, punif oferă funcția de distribuție, qunif oferă funcția cuantile și runif generează deviații aleatorii.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n                dunif(x, min = 0, max = 1, log = FALSE)\n                <br/>\n                punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                runif(n, min = 0, max = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantile.</li>\n                \n                \n                <li>p : vector de probabilități.</li>\n                \n                \n                <li>n : numărul de observații. Dacă lungimea(n) > 1, lungimea este considerată ca fiind numărul necesar.</li>\n                \n                \n                <li>min, max : limitele inferioară și superioară ale distribuției. Trebuie să fie finite.</li>\n                \n                \n                <li>log, log.p : logic; dacă este TRUE, probabilitățile p sunt date ca log(p).</li>\n                \n                \n                <li>lower.tail : logic; dacă este TRUE (implicit), probabilitățile sunt P[X ≤ x], altfel, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalii</b>\n            <br/>\n            Dacă min sau max nu sunt specificate, acestea își asumă valorile implicite de 0 și 1 respectiv.\n            <br/>\n            Distribuția uniformă are densitate\n            <br/>\n            <code>f(x) = 1/(max-min)</code>\n            <br/>\n            pentru min ≤ x ≤ max.\n            <br/>\n            În cazul în care u := min == max, se presupune cazul limită de X == u, deși în acest caz nu există densitate și dunif va returna NaN (condiția de eroare).\n            <br/>\n            runif nu va genera niciuna dintre valorile extreme decât dacă max = min sau max-min este mic în comparație cu min, și în special nu pentru argumentele implicite.\n            <br/>\n            <br/><b>Valoare</b>\n            <br/>\n            dunif oferă densitatea, punif oferă funcția de distribuție, qunif oferă funcția cuantile, iar runif generează deviații aleatorii.\n            <br/>\n            Lungimea rezultatului este determinată de n pentru runif și este maximul lungimilor argumentelor numerice pentru celelalte funcții.\n            <br/>\n            Argumentele numerice, altele decât n, sunt reciclate la lungimea rezultatului. Numai primele elemente ale argumentelor logice sunt utilizate.\n            <br/>\n            <br/><b>Notă</b>\n            <br/>\n            Caracteristicile ieșirii de la generatoarele de numere pseudo-aleatoare (cum ar fi precizia și periodicitatea) variază foarte mult. Consultați .Random.seed pentru mai multe informații despre algoritmii de generare a numerelor aleatoare din R.            \n"
+  }
+}
