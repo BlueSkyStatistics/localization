@@ -1,0 +1,10 @@
+{
+  "title": "Rezuma un model",
+  "navigation": "Rezuma un model",
+  "modelselector1": "Selectați un model",
+  "help": {
+    "title": "Rezuma un model",
+    "r_help": "ajutor(rezumat)",
+    "body": "\n                <b>Descriere</b></br>\nrezumat este o funcție generică utilizată pentru a produce rezumate ale rezultatelor diferitelor funcții de ajustare a modelului. Funcția invocă metode particulare care depind de clasa primului argument, de exemplu, rezumat.lm (model liniar), rezumat.glm (model liniar generalizat)\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nrezumat(obiect)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobiect: un obiect pentru care se dorește un rezumat.\n</li>\n</ul>\n<b>Valoare</b><br/>\nForma valorii returnate de rezumat depinde de clasa argumentului său. Consultați documentația metodelor particulare, adică ajutor(rezumat.lm), ajutor(rezumat.glm) pentru detalii despre ceea ce produce acea metodă.</br>\n<b>Pachet</b></br>\nbază</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapuneri de dialog sau rulați următoarea comandă în editorul de sintaxă R ajutor(rezumat)\n                "
+  }
+}

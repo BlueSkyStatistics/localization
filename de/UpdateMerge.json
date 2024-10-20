@@ -1,0 +1,20 @@
+{
+  "title": "Aktualisieren Zusammenführen",
+  "navigation": "Aktualisieren Zusammenführen",
+  "join": "Mapping zusammenführen",
+  "description": "Das Aktualisieren des Zusammenführens aktualisiert einen Datensatz mit Werten aus einem anderen Datensatz.",
+  "out": "Geben Sie den Namen des zusammengeführten Datensatzes ein",
+  "in1": "Wählen Sie den 1. Datensatz aus",
+  "in2": "Wählen Sie den 2. Datensatz aus",
+  "label1": "Zusammenführungsoptionen",
+  "upsert": "Aktualisieren Sie Variablen im ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz, fügen Sie Nichtübereinstimmungen ein",
+  "update": "Aktualisieren Sie Variablen im ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz, ignorieren Sie Nichtübereinstimmungen",
+  "insert": "Nur Nichtübereinstimmungen im ersten (linken) Datensatz einfügen",
+  "patch": "Aktualisieren Sie nur Variablen mit NAs im ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz",
+  "delete": "Löschen Sie Zeilen aus dem ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz",
+  "help": {
+    "title": "Aktualisieren Zusammenführen",
+    "r_help": "help(rows_upsert, package=dplyr)",
+    "body": "\n            <b>Beschreibung</b></br>\n            Das Aktualisieren des Zusammenführens aktualisiert einen Datensatz mit Werten aus einem zweiten Datensatz basierend auf exakter Variablenbenennung für Beobachtungen mit übereinstimmenden Werten der Join-Mapping-Variablen. \n\t\t\t<br/>Sie müssen eine oder mehrere Variablen im aktiven Datensatz und im ausgewählten Ziel-Datensatz angeben, auf denen der Join durchgeführt werden soll.\n\t\t\t<br/>Die Ergebnisse werden in einem neuen Datensatz gespeichert.\n\t\t\t<br/><br/>\n\t\t\t<b>Zusammenführungsoptionen</b>\n\t\t\t<br/><br/>\n\t\t\t<b>Aktualisieren Sie Variablen im ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz, fügen Sie Nichtübereinstimmungen ein:</b> Dies ist eine Kombination aus der Aktualisierung von Variablen im linken Datensatz für Übereinstimmungen und der Erstellung neuer Zeilen für nicht übereinstimmende Zeilen.\n\t\t\t<br/><br/>\n\t\t\t<b>Aktualisieren Sie Variablen im ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz, ignorieren Sie Nichtübereinstimmungen:</b> Dies aktualisiert nur vorhandene Variablen im linken Datensatz für Übereinstimmungen. Nicht übereinstimmende Zeilen werden ignoriert.\n\t\t\t<br/><br/>\n\t\t\t<b>Nur Nichtübereinstimmungen im ersten (linken) Datensatz einfügen:</b> Dies lässt alle übereinstimmenden Zeilen im linken Datensatz intakt. Nur nicht übereinstimmende Zeilen aus dem rechten Datensatz werden dem linken Datensatz hinzugefügt.\n\t\t\t<br/><br/>\n\t\t\t<b>Aktualisieren Sie nur Variablen mit NAs im ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz, ignorieren Sie Nichtübereinstimmungen:</b> Dies aktualisiert Zeilen, die übereinstimmen, aber nur, wenn die Werte im linken Datensatz NA (d.h. fehlende Werte) sind.\n\t\t\t<br/><br/>\n\t\t\t<b>Löschen Sie Zeilen aus dem ersten (linken) Datensatz mit Übereinstimmungen aus dem zweiten (rechten) Datensatz:</b> Dies löscht nur Zeilen aus dem linken Datensatz, die mit Zeilen im rechten Datensatz übereinstimmen.\n\t\t\t<br/><br/>\n            <b>Erforderliche R-Pakete:</b> dplyr\n"
+  }
+}

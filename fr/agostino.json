@@ -1,0 +1,17 @@
+{
+  "navigation": "Test de skewness de D'Agostino",
+  "title": "Test de D'Agostino sur la skewness",
+  "hypothesisType": "Tester l'hypothèse (H1)",
+  "twosided": "Deux côtés",
+  "greater": "Plus grand",
+  "less": "Moins",
+  "label2": "Autres options",
+  "showLengthNAs": "Afficher la longueur et les NAs",
+  "verbose": "Hypothèse alternative détaillée",
+  "Target": "Sélectionnez une ou plusieurs variables",
+  "help": {
+    "title": "Test de D'Agostino sur la skewness",
+    "r_help": "help(agostino.test, package ='moments')",
+    "body": "\n<b>Description</b></br>\nEffectue le test de D'Agostino pour la skewness dans des données normalement distribuées.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nagostino.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: un vecteur numérique de valeurs de données.\n</li>\n<li>\ny: une chaîne de caractères spécifiant l'hypothèse alternative, doit être l'une des '\"two.sided\"' (par défaut), '\"greater\"' ou '\"less\"'. Vous pouvez spécifier juste la première lettre.\n</li>\n</ul>\n<b>Détails</b></br>\nSous l'hypothèse de normalité, les données doivent être symétriques (c'est-à-dire que la skewness doit être égale à zéro). Ce test a une telle hypothèse nulle et est utile pour détecter une skewness significative dans des données normalement distribuées.\n<br/>\n<b>Valeurs</b></br>\nUne liste avec la classe htest contenant les composants suivants :\n<ul>\n<li>\nstatistic: la liste contenant l'estimateur de skewness et sa transformation.</br>\n</li>\n<li>\np.value: p-value du test. </br>\n</li>\n<li>\nalternative: une chaîne de caractères décrivant l'hypothèse alternative</br>\n</li>\n<li>\nmethod: une chaîne de caractères indiquant quel type de test a été effectué.\n</li>\n<li>\ndata.name: Nom de l'argument de données.</br>\n</li>\n</ul>\n<b>Exemple</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nskewness(x)</br>\nagostino.test(x)</br>\n</code> <br/>\n<b>Package</b></br>\nmoments</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante help(agostino.test, package ='moments') dans l'éditeur R de BlueSky Statistics.           \n<br/>\n<br/>\t\n"
+  }
+}

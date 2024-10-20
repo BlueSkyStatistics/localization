@@ -1,0 +1,17 @@
+{
+  "title": "t-test, Muestras apareadas",
+  "navigation": "t-test, muestras apareadas",
+  "tvarbox1": "Primera variable numérica (Uno)",
+  "tvarbox2": "Segunda variable numérica (Uno)",
+  "label1": "Hipótesis alternativa",
+  "test1": "Diferencia != 0",
+  "test2": "Diferencia > 0",
+  "test3": "Diferencia < 0",
+  "txtbox2": "Hipótesis nula (mu)",
+  "txtbox1": "Nivel de confianza",
+  "help": {
+    "title": "t-test para muestras apareadas",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n    "
+  }
+}

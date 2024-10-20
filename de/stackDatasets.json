@@ -1,0 +1,19 @@
+{
+  "title": "Datenstapel",
+  "navigation": "Stapel",
+  "out": "Geben Sie den Namen des gestapelten Datensatzes ein",
+  "in1": "Wählen Sie 2 oder mehr Datensätze aus",
+  "in2": "Wählen Sie den 2. Datensatz aus",
+  "label1": "Stapeloptionen",
+  "label2": "Alle Optionen unten erfordern 2 Datensätze mit genau denselben Variablennamen",
+  "bindrows": "Zeilen binden (Datensätze stapeln, wie sie sind, kann zu doppelten Zeilen führen)",
+  "union": "Vereinigung (Datensätze stapeln und exakte Duplikate entfernen)",
+  "intersect": "Schnittmenge (Behalte Zeilen, die in beiden Datensätzen gemeinsam sind)",
+  "setdiff": "Differenz (Behalte nur Zeilen im 1. Datensatz, die nicht im 2. sind)",
+  "id": "Wenn Sie verfolgen möchten, aus welchem Datensatz jede Beobachtung stammt, geben Sie hier einen Namen für diese Variable an. HINWEIS: Die neue Variable wird am Anfang des resultierenden Datensatzes angehängt.",
+  "help": {
+    "title": "Datenstapel",
+    "r_help": "hilfe(bind_rows, paket=dplyr)",
+    "body": "\n            <b>Beschreibung</b></br>\nDieser Dialog hilft Ihnen, 2 oder mehr Datensätze übereinander zu stapeln. Sie können eine der folgenden Optionen auswählen.<br/>\n1. Zeilen binden: Stapelt die 2 oder mehr Datensätze genau so, wie sie sind. Wenn ein Variablenname in beiden Datensätzen vorhanden ist, werden die Werte wie erwartet ausgefüllt. Wenn ein Datensatz A eine Variable namens var1 enthält, die im anderen Datensatz B nicht vorhanden ist, erscheinen NA's in der Variablen var1 für alle Zeilen, die dem Datensatz B entsprechen.<br/>\nAlle Optionen unten funktionieren NUR mit 2 Datensätzen und erfordern, dass beide Datensätze die gleichen Variablen teilen.<br/>\n2. Vereinigung: Stapelt die Datensätze und entfernt Duplikate<br/>\n3. Schnittmenge: Behalte Zeilen, die gemeinsam sind<br/>\n4. Differenz: Behalte Zeilen im 1. Datensatz, nicht im 2.<br/>\nJe nach ausgewählter Option werden die Funktionen bind_rows, union, intersect und setdiff im Paket dplyr aufgerufen.\nHINWEIS: Sie können optional verfolgen, aus welchem Datensatz die ursprüngliche Beobachtung stammt. Die Datensatz-ID (1. / 2.) wird am Anfang des Datensatzes angehängt, der die Ergebnisse enthält.<br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl aus: hilfe(bind_rows, paket=\"dplyr\") im R-Syntaxfenster\n            "
+  }
+}

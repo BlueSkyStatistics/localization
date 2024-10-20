@@ -1,0 +1,18 @@
+{
+  "title": "Stichprobengröße, Präzision eines Mittelwertunterschieds",
+  "navigation": "Unterschied der Mittelwerte",
+  "howtouse": "Geben Sie entweder die Stichprobengröße oder die Breite des Konfidenzintervalls an, und das andere wird berechnet",
+  "n1": "Stichprobengröße Gruppe 1",
+  "width": "Breite des Konfidenzintervalls",
+  "ratio": "Verhältnis der Stichprobengröße Gruppe 2 zu Gruppe 1",
+  "meandiff": "Mittelwertunterschied",
+  "sd1": "Standardabweichung Gruppe 1",
+  "sd2": "Standardabweichung Gruppe 2",
+  "conflevel": "Konfidenzniveau (0-1)",
+  "variance": "Varianzannahme",
+  "help": {
+    "title": "Stichprobengröße, Präzision eines Mittelwertunterschieds",
+    "r_help": "help(prec_meandiff, package ='presize')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen Unterschied der Mittelwerte basierend auf der Breite des Konfidenzintervalls. Es berechnet die Stichprobengröße oder die Breite des Konfidenzintervalls, wenn der Benutzer das andere angibt.\n<br/><br/>\n<b>Stichprobengröße Gruppe 1:</b> Geben Sie die Anzahl der Probanden in Gruppe 1 an\n<br/><br/>\n<b>Breite des Konfidenzintervalls:</b> Geben Sie die gewünschte Breite des Konfidenzintervalls an. Die Breite eines Konfidenzintervalls ist ein Maß für die Präzision einer Schätzung und ist die obere Grenze minus die untere Grenze.\n<br/><br/>\n<b>Verhältnis der Stichprobengröße Gruppe 2 zu Gruppe 1:</b> Geben Sie das Verhältnis der Stichprobengröße von Gruppe 2 zur Stichprobengröße von Gruppe 1 an. Ein Wert von 1 bedeutet gleiche Stichprobengrößen.\n<br/><br/>\n<b>Mittelwertunterschied:</b> Geben Sie den erwarteten Unterschied der Gruppenmittelwerte an\n<br/><br/>\n<b>Standardabweichung Gruppe 1:</b> Geben Sie die Standardabweichung des Ergebnisses in Gruppe 1 an\n<br/><br/>\n<b>Standardabweichung Gruppe 2:</b> Geben Sie die Standardabweichung des Ergebnisses in Gruppe 2 an\n<br/><br/>\n<b>Konfidenzniveau:</b> Geben Sie das gewünschte Niveau des Konfidenzintervalls an\n<br/><br/>\n<b>Varianzannahme:</b> Geben Sie an, ob die Gruppenvarianzen als gleich oder ungleich angenommen werden. Die Angabe gleicher Varianzen verwendet eine gepoolte gemeinsame Schätzung der Varianz.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> presize\n\t\t\t"
+  }
+}

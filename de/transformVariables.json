@@ -1,0 +1,18 @@
+{
+  "title": "Variablen transformieren",
+  "navigation": "Transformieren",
+  "label1": "Verwenden Sie das Dropdown-Menü, um die Operation (log, log10, as.numeric...) auszuwählen, um die ausgewählten Variablen zu transformieren. Sie können vorhandene Variablen überschreiben oder neue Variablen erstellen, indem Sie ein Präfix/Nachsuffix angeben.",
+  "target": "Wählen Sie die zu transformierenden Variablen aus",
+  "selectctrl": "Wählen Sie eine anzuwendende Operation aus",
+  "label2": "Neue Variablen erstellen oder vorhandene überschreiben",
+  "suffix": "Geben Sie ein Nachsuffix an",
+  "prefix": "Geben Sie ein Präfix an",
+  "overwrite": "Überschreiben",
+  "enterPrefix": "Geben Sie ein Präfix ein",
+  "enterSuffix": "Geben Sie ein Nachsuffix ein",
+  "help": {
+    "title": "Variablen transformieren",
+    "r_help": "hilfe(log, paket ='base')",
+    "body": "\n<b>Beschreibung</b></br>\nVerwenden Sie das Dropdown-Menü, um die Operation (log, log10, as.numeric...) auszuwählen, um die ausgewählten Variablen zu transformieren. Sie können vorhandene Variablen überschreiben oder neue Variablen erstellen, indem Sie ein Präfix/Nachsuffix angeben.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvar: Die zu transformierende Variable\n</li>\n<li>\nDataset: Das Dataset, das die Variable var enthält\n</li>\n</ul>\n<b>Wert</b></br>\nTransformierte Werte werden direkt im Dataset gespeichert</br>\n<b>Paket</b></br>\nbasis</br>\n<b>Hilfe</b></br>\nhilfe(log, paket ='base')\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Statistici Rezumate (Variabile Selectate)",
+  "navigation": "Statistici Rezumate, variabile selectate, niveluri de control (Legacy)",
+  "subsetvars": "Variabile Selectate",
+  "levels": "Specificați numărul de niveluri pentru care să afișați numerele pentru variabilele factor. NOTĂ: Nivelurile mai puțin frecvente ale variabilelor factor sunt rezumate în categoria (Altele).",
+  "help": {
+    "title": "Statistici Rezumate (Niveluri de Control)",
+    "r_help": "",
+    "body": "\n<b>Descriere</b></br>\nGenerează rezumatele pentru fiecare variabilă selectată, permițându-vă să controlați numărul de niveluri pentru care sunt afișate numerele.</br>\nNOTĂ: NUMERELE VARIABILELOR MAI PUȚIN FRECVENȚE SUNT REZUMATE ÎN CATEGORIA (ALTE)</br>\nAfișează Minim, 1st Quartil, Mediană, Medie, 3rd Quartil, Maxim și numărul de NAs pentru variabile numerice și de dată.</br>\nPentru variabilele factor, afișează numerele fiecărui nivel.</br>\nPentru variabilele logice, afișează numerele de ADEVĂRAT, FALS și NAs.</br>\nAjutorul R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă aveți nevoie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n"
+  }
+}

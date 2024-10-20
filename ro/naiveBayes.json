@@ -1,0 +1,12 @@
+{
+  "title": "Naive Bayes",
+  "navigation": "Naive Bayes",
+  "modelname": "Introduceți numele modelului",
+  "dependentvar": "Variabilă dependentă",
+  "independentvars": "Variabilă(variabile) independent(e)",
+  "help": {
+    "title": "Naive Bayes",
+    "r_help": "help(NaiveBayes,package='klaR')",
+    "body": "\n                <b>Descriere</b></br>\nCalculează probabilitățile condiționale a posteriori ale unei variabile de clasă categorică date variabilele predictoare independente folosind regula lui Bayes. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nformulă : o formulă de forma class ~ x1 + x2 + .... Interacțiunile nu sunt permise.\n</li>\n<li>\ndate: un cadru de date de predictori (categorici și/sau numerici).\n</li>\n<li>\nna.action : o funcție pentru a specifica acțiunea care trebuie întreprinsă dacă se găsesc NAs. Acțiunea implicită este de a nu le număra pentru calculul factorilor de probabilitate. O alternativă este na.omit, care duce la respingerea cazurilor cu valori lipsă pe orice variabilă necesară. (NOTĂ: Dacă este dat, acest argument trebuie să fie numit.)\n</li>\n<li>\n... : argumente transmise densității.\n</li>\n</ul>\n<b>Pachet</b></br>\ncaret;klaR</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapuneri de dialog sau rulați următoarea comandă în editorul de sintaxă R</br>\nhelp(NaiveBayes,package='klaR')\n"
+  }
+}

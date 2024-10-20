@@ -1,0 +1,9 @@
+{
+  "title": "Design exportieren - drei Dateien (csv, html, rda) werden mit dem gleichen Namen wie das Design erstellt",
+  "navigation": "Design exportieren",
+  "exportPath": "Dateipfad zum Exportieren des Designs",
+  "help": {
+    "title": "Design exportieren",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDas Exportieren des Designs erstellt drei Dateien (csv, html, rda) mit dem gleichen Namen wie das Design im gewählten Verzeichnispfad\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tZweck des Exports des Designs ist es, die Experimente gemäß dem Design in der realen Welt einzurichten und durchzuführen und die Ergebnisse zu sammeln. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFügen Sie Spalte(n) hinzu, die den R-Variablenbenennungsrichtlinien entsprechen, um die Ergebnisse in der csv-Datei aufzuzeichnen. Diese zusätzlichen Spalten sind gemäß dem Vokabular des Designs von Experimenten als Antwort(en) bekannt. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSobald die Antwortspalte(n) zur csv-Datei hinzugefügt wurden, kann das Menü DOE -> Design importieren verwendet werden, um die csv-Datei gegen das richtige Design (bereits geöffnet) im Dataset-UI-Raster zu laden.  \n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "模型級別統計",
+  "navigation": "模型統計",
+  "label1": "支持以下類別的模型，類別在下面括號中列出",
+  "label2": "線性模型 (lm)，廣義線性模型 (glm)，多項式對數線性模型 (multinom)，分位數回歸 (rq)，穩健線性回歸 (rlm)，生存曲線對象 (survfit)，線性混合效應模型 (lme)，比例風險回歸對象 (coxph)，參數生存回歸模型 (survreg)，有序邏輯/Probit 回歸 (polr)，因子分析 (factanal)，Lasso 和彈性網正則化的廣義線性模型 (glmnet)",
+  "modelselector1": "選擇一個模型",
+  "help": {
+    "title": "模型級別統計",
+    "r_help": "help(glance, package ='broom')",
+    "body": "\n                <b>描述</b></br>\n構建模型、擬合或其他對象的單行摘要 \"glance\"\n<br/>\n<b>用法</b>\n<br/>\n<code> \nglance(x, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 模型或其他 R 對象摘要\n</li>\n</ul>\n<b>詳細信息</b></br>\nglance 方法始終返回一個包含值的一行數據框，見下面的值（除非為 NULL，返回一個空數據框）</br>\n總結以下模型</br>\n線性模型 (模型類 lm)</br>\n廣義線性模型 (模型類 glm)</br>\n多項式對數線性模型 (模型類 multinom)</br>\n有序邏輯或 Probit 回歸 (模型類 polr)</br>\nLasso 和彈性網正則化的廣義線性模型 (模型類 glmnet)</br>\n穩健線性回歸 (模型類 rlm)</br>\n分位數回歸 (模型類 rq)</br>\n線性混合效應模型 (lme)</br>\n比例風險回歸對象 (coxph)</br>\n參數生存回歸模型 (survreg)</br>\n因子分析 (factanal)</br>\n<b>值</b><br/>\n一個包含列的一行 tibble::tibble:<br/>\nr.squared: 模型解釋的方差百分比<br/>\nadj.r.squared: 基於自由度調整的 r.squared<br/>\nsigma: 估計的殘差方差的平方根<br/>\nstatistic: F 統計量<br/>\np.value: F 檢驗的 p 值，描述完整回歸是否顯著<br/>\ndf: 由係數使用的自由度<br/>\nlogLik: 模型下數據的對數似然<br/>\nAIC: 赤池信息量準則<br/>\nBIC: 貝葉斯信息量準則<br/>\ndeviance: 偏差<br/>\ndf.residual: 殘差自由度<br/>\n<b>包</b></br>\nbroom</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋層右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(glance, package ='broom')\n                "
+  }
+}

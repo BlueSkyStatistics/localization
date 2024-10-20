@@ -1,0 +1,24 @@
+{
+  "title": "决策树",
+  "navigation": "决策树",
+  "TxtTreeName": "输入模型名称",
+  "TreeGenChkbox": "如果树已存在，则不重新生成",
+  "dependent": "因变量",
+  "independent": "自变量",
+  "weights": "调查权重",
+  "TxtMinSplit": "最小分割",
+  "minBucket": "最小桶",
+  "TxtCP": "复杂性参数",
+  "maxDepth": "最大深度",
+  "PruneTreeChkbox": "修剪树",
+  "rd0": "不修剪",
+  "rd1": "使用最佳复杂性参数",
+  "rd2": "指定复杂性参数",
+  "TxtCPPrune": "输入复杂性参数",
+  "PlotCVChkbox": "绘制交叉验证",
+  "PlotRSQRChkbox": "绘制R平方",
+  "help": {
+    "title": "决策树",
+    "r_help": "帮助(rpart, 包 ='rpart')"
+  }
+}

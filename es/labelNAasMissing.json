@@ -1,0 +1,18 @@
+{
+  "title": "Especificar una etiqueta para los NAs",
+  "navigation": "Etiquetar NAs",
+  "target": "Variables de factor para etiquetar valores NA",
+  "label1": "Ingrese una etiqueta para el nivel \"NA\" para las variables de factor. La nueva etiqueta se puede guardar en variables existentes o en nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo agregado a los nombres existentes.",
+  "newLevels": "Ingrese una etiqueta para el nivel \"NA\"",
+  "label2": "Crear nuevas variables o sobrescribir las existentes",
+  "rd3": "Especificar un sufijo (se creará una nueva variable con el sufijo)",
+  "txt3": "Ingrese un sufijo",
+  "rd2": "Especificar un prefijo (se creará una nueva variable con el prefijo)",
+  "txt4": "Ingrese un prefijo",
+  "rd1": "Sobrescribir variables existentes",
+  "help": {
+    "title": "Eliminar NAs",
+    "r_help": "help(fct_explicit_na, package =forcats)",
+    "body": "\n<b>Descripción</b></br>\nIngrese una etiqueta para el nivel \"NA\" para las variables de factor. La nueva etiqueta se puede guardar en variables existentes (sobrescribimos las variables existentes) o una nueva etiqueta para NA se puede guardar en nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo agregado a los nombres existentes. \nEsto da a los valores faltantes un nivel de factor explícito, asegurando que aparezcan en resúmenes y en gráficos.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(Faltante)\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf : Un factor (o vector de caracteres).\n</li>\n<li>\nna_level : Nivel a utilizar para los valores faltantes.\n</li>\n</ul>\n<b>Ejemplos</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>Paquete</b></br>\nforcats</br>\n<b>Ayuda</b></br>\nEscriba la línea a continuación en el editor de sintaxis R de BlueSky Statistics</br>\nhelp(fct_explicit_na, package =forcats)\n"
+  }
+}

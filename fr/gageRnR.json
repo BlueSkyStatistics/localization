@@ -1,0 +1,20 @@
+{
+  "title": "Gage R&R - Analyse du Système de Mesure, Basique",
+  "navigation": "Gage R&R, Basique",
+  "mainTitle": "Titre principal pour la sortie graphique",
+  "subTitle": "Sous-titre pour la sortie graphique (par exemple, le nom du projet SixSigma)",
+  "measuredVar": "Variable mesurée",
+  "part": "Variable de pièce",
+  "appr": "Évaluateur (opérateurs, machines, ...) variable",
+  "lsl": "LSL - valeur numérique de la limite de spécification inférieure utilisée avec USL pour calculer la variation de l'étude en % de tolérance",
+  "usl": "USL - valeur numérique de la limite de spécification supérieure utilisée avec LSL pour calculer la variation de l'étude en % de tolérance",
+  "sigma": "Sigma - valeur numérique pour le nombre d'écarts-types à utiliser dans le calcul de la variation de l'étude",
+  "tolerance": "Tolérance - valeur numérique pour la tolérance - par défaut (usl - lsl)",
+  "alphaLim": "Alpha - Limite à prendre en compte pour l'interaction",
+  "errorTerm": "Quel terme du modèle doit être utilisé comme terme d'erreur (pour le modèle avec interaction)",
+  "help": {
+    "title": "Gage R&R - Analyse du Système de Mesure",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tÀ partir du jeu de données d'exemple, sélectionnez la variable de diamètre comme Variable Mesurée, Pistonring comme Variable de Pièce et Opérateur comme Évaluateur\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

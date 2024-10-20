@@ -1,0 +1,10 @@
+{
+  "title": "Transponer, conjunto de datos completo",
+  "navigation": "Conjunto de datos completo",
+  "transposedDataset": "Ingrese un nombre para el conjunto de datos transpuesto",
+  "help": {
+    "title": "Transponer el conjunto de datos completo",
+    "r_help": "ayuda(t, paquete='base')",
+    "body": "\n<b>Descripción</b></br>\nInvoca la función de transposición en el paquete base que transpone el conjunto de datos. Debe especificar el nombre del conjunto de datos que almacena el conjunto de datos transpuesto. El nuevo conjunto de datos transpuesto se muestra en la cuadrícula.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nFunción llamada: base::t(x)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: es una matriz o dataframe\n</li>\n</ul>\n<b>Valor</b><br/>\nUna matriz, con dim y dimnames construidos apropiadamente a partir de los de x, y otros atributos excepto nombres copiados.\n<br/>\n<b>Paquete</b></br>\nbasico<br/>\n<b>Ayuda</b></br>\nayuda(t, paquete='base')\n"
+  }
+}

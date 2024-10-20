@@ -1,0 +1,14 @@
+{
+  "title": "莱文检验",
+  "navigation": "莱文检验",
+  "tvarbox1": "响应变量（一个）",
+  "tvarbox3": "因子变量",
+  "label1": "中心",
+  "median": "中位数",
+  "mean": "均值",
+  "help": {
+    "title": "莱文检验",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>描述</b></br>\n计算莱文检验以检验组间方差的齐性。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## S3 方法，类 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## S3 方法，类 'lm'<br/>\nleveneTest(y, ...)<br/>\n## 默认 S3 方法:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ny: 默认方法的响应变量，或 lm 或 formula 对象。如果 y 是线性模型对象或公式，则模型右侧的变量必须都是因子，并且必须完全交叉。\n</li>\n<li>\ngroup: 定义组的因子。\n</li>\n<li>\ncenter: 计算每组中心的函数名称；mean 给出原始的莱文检验；默认值 median 提供更稳健的检验。\n</li>\n<li>\ndata: 用于评估公式的数据框。\n</li>\n<li>\n...: 要传递的参数，例如，公式和 lm 方法的数据；也可以用于传递给 center 指定的函数的参数（例如，center=mean 和 trim=0.1 指定 10% 的截尾均值）。\n</li>\n</ul>\n<b>值</b><br/>\n返回一个对象，旨在打印显示测试结果。<br/>\n<b>示例</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>包</b></br>\ncar;moments;dplyr</br>\n<b>帮助</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

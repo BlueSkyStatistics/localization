@@ -1,0 +1,18 @@
+{
+  "title": "Tamaño de muestra, Prueba de una media o medias apareadas",
+  "navigation": "Una media o medias apareadas",
+  "howtouse": "Especifique dos del tamaño de muestra, la diferencia entre medias y la potencia, y el tercero se calculará",
+  "n": "Tamaño de muestra",
+  "delta": "Diferencia entre medias",
+  "power": "Potencia (0-1)",
+  "sd": "Desviación estándar",
+  "siglevel": "Nivel de significación (0-1)",
+  "alternativeopt": "Hipótesis alternativa",
+  "twosided": "Dos lados",
+  "onesided": "Un lado",
+  "help": {
+    "title": "Tamaño de muestra, Prueba de una media",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nEsta es una evaluación del tamaño de muestra para una prueba t de una muestra de una media o una prueba de medias apareadas. Calcula el tamaño de muestra, la diferencia entre medias o la potencia, cuando el usuario especifica dos de ellos.\n<br/><br/>\n<b>Tamaño de muestra:</b> Especifique el número de sujetos en el estudio\n<br/><br/>\n<b>Diferencia entre medias:</b> Si es una prueba t de una muestra, especifique la diferencia entre la media bajo la hipótesis alternativa y la media bajo la hipótesis nula. Si es una prueba t apareada, especifique la diferencia entre las medias apareadas bajo la hipótesis alternativa.\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa es verdadera.\n<br/><br/>\n<b>Desviación estándar:</b> Especifique una estimación de la desviación estándar de la medida de resultado. Para pruebas apareadas, esta es la desviación estándar de las diferencias apareadas.\n<br/><br/>\n<b>Nivel de significación:</b> Especifique el nivel de significación deseado (es decir, error de tipo I) de la prueba\n<br/><br/>\n<b>Hipótesis alternativa:</b> Especifique si la prueba es de dos lados o de un lado\n<br/><br/>\n<b>Paquetes R requeridos:</b> stats, broom\n\t\t\t"
+  }
+}

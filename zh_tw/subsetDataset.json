@@ -1,0 +1,20 @@
+{
+  "title": "子集數據集",
+  "navigation": "子集",
+  "label0": "您可以選擇將結果保存到新數據集或覆蓋現有數據集",
+  "label1": "選項",
+  "New": "將結果保存到新數據集中",
+  "newdatasetname": "輸入數據集名稱",
+  "Existing": "覆蓋現有數據集",
+  "Output": "在輸出窗口中顯示結果",
+  "distinct": "選擇唯一案例",
+  "chkbox2": "刪除未使用的因子水平",
+  "subsetvars": "選擇要包含在子集數據集中的變量",
+  "label12": "\n\n子集標準應用於每一行，見下面的示例。 \n1: 選擇var 1非空且var2為空的行，指定：\n!is.na(var1) & is.na(var2) \n2: 選擇var1 > 30且var 2為男性的行，指定：\nvar1>30 & var2=='男性' \n3: 複雜的與或標準，指定：\n(var1 !=10 & var2>20) | var3==40 \n4: 模式匹配（xxx）或精確匹配（abc），指定：\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: 按位置匹配子字符串，指定：substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "輸入子集標準。",
+  "help": {
+    "title": "子集數據集",
+    "r_help": "幫助(select, package=dplyr)",
+    "body": "\n            <b>描述</b></br>\n子集數據集/數據框。返回數據框/數據集的子集。您可以指定希望在較小數據集中包含的列/變量。您還可以指定要應用於數據框每一行的選擇標準。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 要進行子集的對象。\n</li>\n<li>\nsubset: 指示要保留的元素或行的邏輯表達式：缺失值視為假。\n</li>\n<li>\nselect: 表達式，指示要從數據框中選擇的列。\n</li>\n</ul>\n<b>值</b><br/>\n返回一個子集數據集<br/>\n<b>包</b></br>\ndplyr<br/>  \n<b>幫助</b></br>\n幫助(select, package=dplyr)\n"
+  }
+}

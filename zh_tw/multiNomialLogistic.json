@@ -1,0 +1,14 @@
+{
+  "title": "多項式邏輯回歸",
+  "navigation": "多項式邏輯回歸",
+  "modelname": "輸入模型名稱",
+  "dependent": "因變量",
+  "independent": "自變量",
+  "generateplotchk": "繪製殘差與擬合、正態Q-Q、尺度-位置和殘差與槓桿的圖",
+  "destination2": "指定一個帶權重的變數",
+  "help": {
+    "title": "多項式邏輯回歸",
+    "r_help": "幫助(multinom, 套件=nnet)",
+    "body": "\n            <b>描述</b></br>\n            通過神經網絡擬合多項式對數線性模型。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            multinom(公式, 數據, 權重, 子集, na.action,<br/>\n                     對比 = NULL, Hess = FALSE, summ = 0, 截斷 = FALSE,<br/>\n                     模型 = FALSE, ...)<br/>\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            公式: 一個公式表達式，類似於回歸模型，形式為響應 ~ 預測變量。響應應該是一個因子或一個具有 K 列的矩陣，這將被解釋為每個 K 類的計數。擬合一個對數線性模型，對於第一類的係數為零。可以包含一個偏移量：如果響應是一個具有 K 列的矩陣或一個具有 K >= 2 類的因子，則它應該是一個具有 K 列的數值矩陣，或者對於具有 2 個級別的響應因子，它應該是一個數值向量。有關其他詳細信息，請參見 formula() 的文檔。\n            </li>\n            <li>\n            數據: 一個可選的數據框，用於解釋公式中出現的變量。\n            </li>\n            <li>\n            權重: 擬合時的可選案例權重。\n            </li>\n            <li>\n            子集: 表達式，說明應使用數據的哪些行進行擬合。默認情況下包含所有觀察。\n            </li>\n            <li>\n            na.action: 用於過濾缺失數據的函數。\n            </li>\n            <li>\n            對比: 用於模型公式中作為變量出現的某些或所有因子的對比列表。\n            </li>\n            <li>\n            Hess: 邏輯值，指示是否應返回 Hessian（觀察/期望信息矩陣）。\n            </li>\n            <li>\n            summ: 整數；如果不為零，則通過刪除重複行並調整權重進行匯總。方法 1 和 2 在速度上有所不同（2 使用 C）；方法 3 還結合具有相同 X 和不同 Y 的行，這改變了偏差的基線。\n            </li>\n            <li>\n            截斷: 如果 Y 是一個具有 K 列的矩陣，則將條目解釋為可能類的一個，不可能類的零，而不是計數。\n            </li>\n            <li>\n            模型: 邏輯值。如果為真，則模型框架作為返回對象的組件保存。\n            </li>\n            <li>\n            ... nnet 的其他參數\n            </li>\n            </ul>\n            <b>詳細信息</b></br>\n            multinom 調用 nnet。公式右側的變量應大致縮放到 [0,1]，否則擬合將緩慢或根本無法收斂。</br>\n            <b>值</b><br/>\n            一個 nnet 對象，具有附加組件：<br/>\n            <li>\n            deviance: 殘差偏差，與完全飽和模型相比（該模型準確解釋個別觀察）。此外，減去兩倍的對數似然。\n            </li>\n            <li>\n            edf: 模型使用的（有效）自由度數量\n            </li>\n            <li>\n            AIC: 此擬合的 AIC。\n            </li>\n            <li>\n            Hessian: （如果 Hess 為真）。\n            </li>\n            <li>\n            模型: （如果模型為真）。\n            </li>\n            <b>示例</b><br/>\n            <code> \n            options(contrasts = c(\"contr.treatment\", \"contr.poly\"))<br/>\n            library(MASS)<br/>\n            example(birthwt)<br/>\n            (bwt.mu <- multinom(low ~ ., bwt))<br/>\n            </code>\n            <b>包</b></br>\n            nnet</br>\n            <b>幫助</b></br>\n            要獲得詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或通過創建 R 代碼塊運行以下命令 help(multinom, package=nnet)，方法是單擊輸出窗口中的 +\n           "
+  }
+}

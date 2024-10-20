@@ -1,0 +1,10 @@
+{
+  "title": "移除分割",
+  "navigation": "移除分割",
+  "label1": "移除分割（如果数据集上设置了分割）。点击右上角的按钮执行对话框。",
+  "help": {
+    "title": "移除分割",
+    "r_help": "",
+    "body": "<b>描述</b></br>\n        移除数据集上的分割。分割，见数据>按组分组>设置分割，将数据根据所选因素分成组。一旦数据集被分割，您选择的分析将独立于每个分割进行。例如，如果您运行交叉表分析或假设检验，这个分析将独立于每个分割进行（分析的输出也会为每个分割单独生成）。 \n         <br/>\n                <b>用法</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(colnames =c(),datasetnameorindex='数据集名称')\n          </code> <br/>\n            <b>参数</b><br/>\n                 <ul>\n                   <li>\n        col.names: 这些是您希望按其分割数据集的列名/变量名，例如 col.names =c(\"var1\", \"var2\")。要重置分割，请设置为 c()\n         </li>\n                <li>\n        datasetnameorindex: 这是数据集的名称。​\n          </li>\n               \n                </ul>\n            <b>包</b></br>\n               不适用，此函数是 BlueSky 包中的内部函数。此函数基本上移除数据集上的分割属性。 </br>\n                <b>帮助</b></br>\n        NA\n        "
+  }
+}

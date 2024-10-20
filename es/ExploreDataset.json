@@ -1,0 +1,14 @@
+{
+  "title": "Explorar Conjunto de Datos",
+  "navigation": "Explorar Conjunto de Datos",
+  "destdatalabel": "Conjunto de Datos a Explorar",
+  "htmloutlabel": "Mostrar Salida en una Página Web",
+  "standardgraphlabel": "Incluir Gráficos en la Ventana de Salida",
+  "maxdistvalueslabel": "Valores Distintos Máximos",
+  "rounddigitslabel": "Cifras Significativas",
+  "help": {
+    "title": "Explorar Conjunto de Datos",
+    "r_help": "help(dfSummary, package ='summarytools')",
+    "body": "\nEsto crea una tabla que describe un conjunto de datos. Las descripciones incluyen el nombre del conjunto de datos, el número de observaciones, el número de variables, el número de registros duplicados, \nnombres de variables, clases de variables, estadísticas resumidas de variables y gráficos. Esta herramienta está destinada más a la exploración y limpieza de datos que a fines de análisis de datos.   \nUna versión de texto de la tabla se muestra por defecto, pero se puede mostrar opcionalmente una bonita versión HTML en el navegador web predeterminado.\n<br/><br/>  \n<b>Conjunto de Datos a Explorar:</b> Conjunto de datos que desea describir\n<br/><br/>  \n<b>Mostrar Salida en una Página Web:</b> Marque si desea mostrar una versión bonita de la tabla en el navegador web predeterminado. Esta versión incluirá gráficos.\n<br/><br/>\n<b>Incluir Gráficos en la Ventana de Salida:</b> Marque si desea incluir versiones de texto de los gráficos en la ventana de salida de BlueSky\n<br/><br/>\n<b>Valores Distintos Máximos:</b> El número máximo de valores para mostrar frecuencias. Si una variable tiene más valores distintos que este número, las frecuencias restantes se informarán como una categoría completa, junto con el número de valores distintos adicionales. Para las variables de caracteres, se muestran los valores más frecuentes, por lo que esto también controla cuántos mostrar en ese caso. El valor predeterminado es 10.\n<br/><br/>\n<b>Cifras Significativas:</b> Número de cifras significativas a mostrar. El valor predeterminado es 2.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> summarytools\n\t\t\t"
+  }
+}

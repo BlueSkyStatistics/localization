@@ -1,0 +1,24 @@
+{
+  "title": "顯示規則",
+  "navigation": "顯示規則",
+  "rulename": "輸入現有規則對象",
+  "dosortingchk": "排序規則",
+  "sortopt": "排序選項",
+  "sortby": "排序依據",
+  "confchk": "信心",
+  "liftchk": "提升度",
+  "suppchk": "支持度",
+  "sortord": "排序順序",
+  "increasing": "升序",
+  "decreasing": "降序",
+  "noofrules": "要顯示的規則數量",
+  "rulecount": "",
+  "fromto": "顯示規則",
+  "from": "從",
+  "to": "到",
+  "help": {
+    "title": "顯示規則",
+    "r_help": "幫助(檢查，包='arules')",
+    "body": "\n            <b>\n\t\t\t套件 : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  檢查\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\t描述\n\t\t\t</b>\n\t\t\t<br/><br/>\n            提供通用函數檢查和 S4 方法來顯示關聯和交易以及格式化為線上檢查的附加資訊。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            檢查(x, ...)\n            </code>\n            <br/><br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            x: 一組關聯或交易或 itemMatrix。\n            </li>\n            <li>\n            ...: 可以使用其他參數來自定義輸出：setStart、setEnd、itemSep 和 ruleSep。如果輸出行變得非常長，則每行僅打印一個項目。這也可以直接使用 linebreak 控制。\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. 排序\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\t描述\n\t\t\t</b>\n\t\t\t<br/><br/>\n            提供排序方法以根據存儲在關聯的質量槽中的度量值（例如，支持度）對類關聯中的元素（例如，itemsets 或規則）進行排序。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## S4 方法用於簽名 '關聯'\n            arules::排序(x, decreasing = TRUE, na.last = NA, \n            按 = \"支持\", 順序 = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 方法用於簽名 '關聯'\n            頭(x, n = 6L, 按 = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 方法用於簽名 '關聯'\n            尾(x, n = 6L, 按 = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>參數</b><br/>\n            <ul>\n            <li>\n            x: 一個要排序的對象。\n            </li>\n            <li>\n            decreasing: 一個邏輯。排序是遞增還是遞減？（默認是遞減）\n            </li>\n            <li>\n            na.last: 對於關聯不支持 na.last。NAs 始終放在最後。\n            </li>\n            <li>\n            按: 一個字符字符串，指定存儲在 x 中的質量度量，用於對 x 進行排序。如果指定了字符字符串的向量，則在平局的情況下使用附加字符串對 x 進行排序。\n            </li>\n            <li>\n            順序: 是否應返回一個順序向量，而不是排序的關聯？\n            </li>\n            <li>\n            n: 一個單一整數，指示返回的關聯數量。\n            </li>\n            <li>\n            ... : 其他參數被忽略。\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            詳細信息\n            </b> \n            <br/>\n            排序對於大型關聯集相對較慢，因為它必須複製和重新排列大型數據結構。請注意，排序會創建關聯集的第二個副本，這對於大型集合可能會很慢且消耗內存。如果只需要前 n 個關聯，則使用按的頭比調用排序然後頭更快，因為它在不複製和重新排列所有數據的情況下執行此操作。尾以相同的方式工作。\n            <br/><br/>  \n            <b> \n            值\n            </b> \n            <br/>\n            與 x 相同類的對象。                  \n    "
+  }
+}

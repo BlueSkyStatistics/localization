@@ -1,0 +1,20 @@
+{
+  "title": "Orthogonales Array-Design erstellen",
+  "navigation": "Orthogonales Array-Design erstellen",
+  "selectedvars": "Variablen auswählen",
+  "datasetname": "Designname",
+  "numOfRuns": "Mindestanzahl an Durchläufen (kann leer gelassen werden)",
+  "minNumOfResidual": "Mindestanzahl an Residualfreiheitsgraden",
+  "replications": "Wiederholungen",
+  "repeatOnlyChk": "Nur wiederholen",
+  "lbl1": "Sie müssen möglicherweise die Randomisierungseinstellungen nicht ändern",
+  "randomseeds": "Saat für die Randomisierung",
+  "randomizationChk": "Randomisieren Sie die Designgenerierung",
+  "designnamefromcatlg": "(Optional) Orthogonales Design-Array (Beispiel: von oacat$name als L12.2.2.6.1)",
+  "columnOptimization": "Spaltenoptimierung (Standard ist Reihenfolge, andere Optionen min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr)",
+  "help": {
+    "title": "Orthogonales Array-Design erstellen",
+    "r_help": "help(oa.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\toa.design-Funktion zum Zugriff auf orthogonale Arrays, die eine begrenzte optimale Zuweisung von Spalten ermöglicht\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVerwenden Sie das Menü DOE->Design inspizieren->Orthogonales Design-Katalog (oacat), um verfügbare orthogonale Designs zu durchsuchen, auf die aus dem geladenen Designkatalog im DoE.base-Paket verwiesen werden kann\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens factor_grid_orthogonal_array_Design.xlsx verwenden. Öffnen Sie die Datei im Datenraster mit dem Menü Datei öffnen\n\t\t\t\tOptional können Sie L72.2.53.3.2.4.1 als Design von oacat$name angeben\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Diviser/Réduire un ensemble de données avec un groupe de variables répétées",
+  "navigation": "Ensembles de variables répétées",
+  "removeColsWithConstantChk": "Supprimer toutes les colonnes avec des valeurs constantes (insensible à la casse) avant de diviser ou de réduire",
+  "removeRowsWithNAsChk": "Conserver uniquement les cas complets, c'est-à-dire supprimer toute la ligne avec des valeurs vides ou NA dans le(s) ensemble(s) de données de sortie",
+  "resultDatasetNameSuffix": "(Optionnel) une ou plusieurs chaînes (séparées par des virgules) à utiliser comme suffixe pour le(s) nom(s) de l'ensemble de données de sortie",
+  "splitDatasetRad": "Diviser l'ensemble de données en plusieurs ensembles de données en fonction de l'ensemble de variables répétées",
+  "autoDetectColGroupLengthRad": "Détecter automatiquement l'ensemble de variables répétées à diviser ou à réduire",
+  "manualColGroupLengthRad": "Spécifier la longueur de l'ensemble de variables répétées à utiliser pour diviser ou réduire",
+  "manualRepeatingColumnGroupLength": "Longueur de l'ensemble de variables répétées",
+  "outputColumnNames": "(Optionnel) Liste des noms de variables (séparés par des virgules) à utiliser pour le(s) ensemble(s) de données de sortie",
+  "collapseDatasetRad": "Réduire pour créer un long ensemble de données au lieu de diviser en plusieurs ensembles de données",
+  "collapseGpIDPrefix": "Préfixe pour les valeurs d'ID de l'ensemble",
+  "collapseGpIDColName": "Nom de la variable ID de l'ensemble (une nouvelle variable sera créée dans l'ensemble de données de sortie)",
+  "collapseGpIDColFirstChk": "Faire de la variable ID de l'ensemble la première colonne (décocher pour la dernière colonne)",
+  "makeCollapseGpIDColFactorChk": "Faire de la variable ID de l'ensemble un facteur",
+  "label1": "Détection de l'ensemble de variables répétées",
+  "label2": "Diviser ou réduire l'ensemble de données ?",
+  "help": {
+    "title": "Diviser/Réduire un ensemble de données avec un groupe de variables répétées",
+    "r_help": "",
+    "body": "\n            <b>Description</b></br>\n            Cette boîte de dialogue est utilisée pour diviser (en plusieurs ensembles de données) ou réduire (en un long ensemble de données) un ensemble de données avec un ensemble de variables répétées\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemple 1 : Pour essayer cela, vous pouvez utiliser le fichier d'ensemble de données d'exemple appelé Repeating Variable Sets.xlsx\n\t\t\t<br/>\n\t\t\tOuvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t<br/>\n\t\t\tDans la boîte de dialogue - tapez\n\t\t\t<br/>\n\t\t\tTrois ensembles de données seront créés car il y a trois ensembles de variables répétées. Vous pouvez taper aucune, une ou plusieurs\n\t\t\tchaînes pour les suffixes de nom de l'ensemble de données de sortie comme abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tConservez chaque autre élément de la boîte de dialogue par défaut  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemple 2 : Pour essayer cela, vous pouvez utiliser le fichier d'ensemble de données d'exemple appelé Repeating Variable Sets2.xlsx\n\t\t\t<br/>\n\t\t\tOuvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t<br/>\n\t\t\tDans la boîte de dialogue - tapez\n\t\t\t<br/>\n\t\t\tQuatre ensembles de données seront créés car il y a quatre ensembles de variables répétées\n\t\t\t<br/>\n\t\t\tConservez chaque élément de la boîte de dialogue par défaut \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tVous pouvez utiliser les mêmes deux fichiers d'ensemble de données d'exemple pour essayer l'option Réduire dans la section \"Diviser ou réduire l'ensemble de données ?\" de la boîte de dialogue pour créer un seul ensemble de données de sortie\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

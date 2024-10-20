@@ -1,0 +1,30 @@
+{
+  "title": "為MSA Gage研究創建實驗表",
+  "navigation": "設計MSA研究",
+  "datasetname": "MSA Gage研究表名稱",
+  "label1": "零件詳細信息",
+  "label2": "操作員詳細信息",
+  "factor1": "零件變量名稱（例如，默認零件）",
+  "numOfFactorLevels1": "零件數量",
+  "factorLevels1": "留空以自動生成值或指定值 - 示例：-1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "如果自動生成，請指定任何前綴。如果為空，將創建值為1,2,3,..",
+  "factor2": "操作員變量名稱（例如，默認操作員）",
+  "numOfFactorLevels2": "操作員數量",
+  "factorLevels2": "留空以自動生成值或指定值 - 示例：-1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "如果自動生成，請指定任何前綴。如果為空，將創建值為1,2,3,..",
+  "numOfBlocks": "區塊數",
+  "replicationVarName": "如果不留空，複製迭代變量的名稱（如果複製 > 1）",
+  "replications": "複製",
+  "repeatOnlyChk": "僅重複（而不是實際複製 - 不建議）",
+  "randomizationChk": "隨機化運行",
+  "selectRandomSeedRad": "自動生成隨機種子（每次唯一）",
+  "selectFixedRandomSeedRad": "選擇如所示或手動更改以下隨機種子",
+  "lbl1": "您可能不需要更改隨機種子值",
+  "randomseeds": "隨機化種子",
+  "sortByOperatorChk": "在每次複製中按操作員排序",
+  "help": {
+    "title": "為MSA Gage研究自動生成實驗表",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t自動生成MSA研究表，以根據指定的參數設置實驗運行的零件和操作員詳細信息。 \n\t\t\t\t如果對零件和操作員使用非數字值，請在單引號內指定，例如1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一旦實驗運行的詳細信息自動生成，運行表將在數據網格UI中顯示。 \n\t\t\t\t運行表可以保存（或從文件菜單中選擇“另存為”）以創建Excel文件，用於設置實驗\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

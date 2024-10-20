@@ -1,0 +1,16 @@
+{
+  "title": "Parcourir le catalogue de conception de l'Array Orthogonal (oacat)",
+  "navigation": "Parcourir le catalogue de conception orthogonale",
+  "designNamefromCatalog": "Nom de la conception de l'Array Orthogonal dans le catalogue (par exemple L18.3.6.6.1)",
+  "numRuns": "Nombre de courses ou un vecteur à 2 éléments par exemple 4,16 avec un minimum et un maximum pour le nombre de courses",
+  "numFactors": "Nombre de facteurs (séparez-les par , par exemple 4,2,1)",
+  "numLevels": "Nombre de niveaux (séparez-les par , par exemple 3,2,5)",
+  "showQualityMetricsChk": "Afficher toutes les métriques de qualité de l'array avec les arrays résultants;",
+  "maxDigits": "Chiffres significatifs à afficher pour les métriques GR et A",
+  "maxNumberofDesignPrint": "Afficher le nombre maximum de conceptions",
+  "help": {
+    "title": "Parcourir le catalogue de conception de l'Array Orthogonal (oacat)",
+    "r_help": "aide(show.oas, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tParcourez/Inspectez les éléments de conception ou extrayez des informations de la liste des arrays orthogonaux disponibles, en spécifiant éventuellement des critères de sélection\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R aide(show.oas, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Creează un design de parametru interior-exterior de stil Taguchi",
+  "navigation": "Creează design de parametru Taguchi",
+  "datasetname": "Numele designului",
+  "inner": "Design interior (trebuie să fi fost deja randomizat)",
+  "outer": "Design exterior",
+  "lbl1": "Direcție - Generează design în format lung sau lat",
+  "directionLongrad": "Format lung",
+  "directionWiderad": "Format lat",
+  "responses": "Lăsați-l gol sau specificați unul sau mai multe nume de răspuns (separate prin virgulă fără ghilimele sau spații între nume)",
+  "help": {
+    "title": "Creează un design de parametru interior-exterior de stil Taguchi",
+    "r_help": "ajutor(param.design, pachet = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția param.design generează designuri de parametru de stil Taguchi. Creează designuri de parametru pentru investigații semnal-zgomot cu aranjamente interioare și exterioare și facilitează formatarea și agregarea datelor. Experimentul intersectează factorii de control din „aranjamentul interior” cu factorii de zgomot din „aranjamentul exterior”.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R ajutor(param.design, pachet = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit factor_grid_twolevel_screen_Design.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierelor\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Creați un design factorial complet cu numele de design FFinnerRandom cu factorii selectați - AirVolume, Valve, Barrel și Angle și bifați caseta „Randomize the design generation”\n\t\t\t\t<br/>\n\t\t\t\t2. Creați un design de aranjament ortogonal cu numele de design FFouter cu factorii selectați - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. Creați un design Taguchi (aceast dialog/UI) și selectați designurile FFinnerRandom și FFouter deja create în pașii 1 și 2\n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "分箱",
+  "navigation": "箱",
+  "vartobin": "选择一个变量进行分箱",
+  "varname": "输入一个变量名以保存分箱值",
+  "noofbins": "指定箱的数量",
+  "label1": "级别名称",
+  "Names": "指定名称",
+  "levelnames": "输入用逗号 (,) 分隔的级别名称，例如：好，更好，最好",
+  "Numbers": "数字",
+  "Ranges": "范围",
+  "label2": "分箱方法",
+  "equalwidth": "等宽箱",
+  "equalcount": "等计数箱",
+  "natural": "自然断点（K均值聚类）",
+  "help": {
+    "title": "分箱",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>描述</b></br>\n创建一个因子，将数值变量的范围分解为等宽、（大致）等频率或在“自然”切点（由K均值聚类确定）中的箱。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nX: 要分箱的数值变量。\n</li>\n<li>\nBins: 箱的数量。\n</li>\n<li>\nmethod: \"intervals\"表示等宽箱；\"proportions\"表示等计数箱；\"natural\"表示箱之间的切点由K均值聚类确定。\n</li>\n<li>\nLabels: 如果为FALSE，则将使用数字标签作为因子水平；如果为NULL，则使用切点定义标签；否则为字符向量的级别名称。\n</li>\n</ul>\n<b>包</b></br>\nRcmdrMisc</br>\n<b>帮助</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Guardar modelos en un archivo",
+  "navigation": "Guardar modelos",
+  "filterModels": "Filtrar modelos por clase",
+  "modelSelection": "Seleccione un modelo(s) para guardar",
+  "importResp": "Seleccione un archivo para guardar un modelo",
+  "label1": "NOTA: El modelo se guardará en un archivo en la ruta seleccionada a continuación SOLO cuando ejecute el cuadro de diálogo.",
+  "levelOfInterest": "Cuando la variable a predecir tiene 2 niveles, especifique el nivel de interés. La matriz de confusión y las estadísticas relacionadas se muestran con el nivel de interés especificado como referencia.",
+  "label12": "Resultados de la prueba: Tan pronto como se selecciona un modelo, realizaremos pruebas para ver si las variables dependientes especificadas en el modelo están disponibles en el conjunto de datos a evaluar. Los resultados se mostrarán aquí.",
+  "label2": "Guardar valores predichos y estadísticas de apoyo.",
+  "label3": "Las predicciones y probabilidades predichas, cuando sea aplicable, se almacenan en el conjunto de datos que se está evaluando como nuevas variables con el prefijo a continuación.",
+  "label4": "**Para variables dependientes con 2 niveles, el 2º nivel se considera como el nivel positivo. Ver Datos > Niveles de factor > Reordenar niveles manualmente para cambiar el orden de los niveles de factor y reconstruir el modelo.",
+  "conflevel": "Guardar intervalos de confianza para valores predichos individuales **(Válido solo para modelos lineales (clase lm))",
+  "roctable": "Mostrar tabla ROC (**Solo para variables dependientes binarias)",
+  "colname": "Especificar prefijo del nombre de columna",
+  "label5": "**Marcar la casilla anterior incurrirá en una penalización de rendimiento para conjuntos de datos grandes.",
+  "level": "Especificar el nivel de confianza",
+  "confusioncheck": "Generar matriz de confusión",
+  "help": {
+    "title": "Guardar modelos",
+    "r_help": "help(save, package='base')",
+    "body": "\n    <b>Descripción</b></br>\n    Los modelos seleccionados se guardarán en un archivo en el formato de datos de R (.RData extensión)</br>\n    Puede especificar un nuevo archivo ingresando un nombre o seleccionando un archivo existente.</br>\n    Si selecciona un archivo existente, se sobrescribirá.</br>\n    Debe hacer clic en el botón de ejecutar (el botón de triángulo horizontal) para ejecutar el cuadro de diálogo y guardar los objetos en un archivo. \n    <br/>\n    <b>Uso</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"ruta del archivo\")\n    </code> <br/>\n    <b>Argumentos</b><br/>\n    <ul>\n    <li>\n    model1, model2...: objetos de modelo ajustados\n    </li>\n    <li>\n    file: nombre de archivo con ruta, los objetos de modelo seleccionados se guardarán en este archivo RData\n    </li>\n    </ul>\n    <b>Paquete</b></br>\n    base</br>\n    <b>Ayuda</b></br>\n    Para ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de esta superposición de cuadro de diálogo o ejecute el siguiente comando help(save, package = 'base') en la ventana del editor R\n    </br>\n    "
+  }
+}

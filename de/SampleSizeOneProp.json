@@ -1,0 +1,18 @@
+{
+  "title": "Stichprobengröße, Test einer Proportion",
+  "navigation": "Eine Proportion",
+  "howtouse": "Geben Sie entweder die Stichprobengröße oder die Power an, und das andere wird berechnet",
+  "n": "Stichprobengröße",
+  "power": "Power (0-1)",
+  "prop": "Alternative Proportion (0-1)",
+  "prop0": "Nullproportion (0-1)",
+  "siglevel": "Signifikanzniveau (0-1)",
+  "alternativeopt": "Alternative Hypothese",
+  "twosided": "Zweiseitig",
+  "onesided": "Einseitig",
+  "help": {
+    "title": "Stichprobengröße, Test einer Proportion",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen Test einer einproportionierten Stichprobe. Es berechnet die Stichprobengröße oder die Power, wenn der Benutzer eines von beiden angibt. Die Berechnung verwendet die Formel, die in Chow S, Shao J, Wang H. Stichprobengrößenberechnungen in der klinischen Forschung (2008) zu finden ist. Es verwendet eine normale Approximation mit der Standardabweichung basierend auf der alternativen Proportion.\n<br/><br/>\n<b>Stichprobengröße:</b> Geben Sie die Anzahl der Probanden in der Studie an\n<br/><br/>\n<b>Power:</b> Geben Sie die gewünschte Power der Studie an, d.h. die Wahrscheinlichkeit, dass der Test die Nullhypothese ablehnt, wenn die alternative Hypothese wahr ist.\n<br/><br/>\n<b>Alternative Proportion (0-1):</b> Geben Sie die Proportion unter der alternativen Hypothese an\n<br/><br/>\n<b>Nullproportion (0-1):</b> Geben Sie die Proportion unter der Nullhypothese an\n<br/><br/>\n<b>Signifikanzniveau:</b> Geben Sie das gewünschte Signifikanzniveau (d.h. Typ-I-Fehler) des Tests an\n<br/><br/>\n<b>Alternative Hypothese:</b> Geben Sie an, ob der Test zweiseitig oder einseitig ist\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> stats\n\t\t\t"
+  }
+}

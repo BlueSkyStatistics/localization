@@ -1,0 +1,20 @@
+{
+  "title": "Transformarea Box-Cox a datelor non-normale în normale",
+  "navigation": "Transformarea Box-Cox",
+  "label2": "Două opțiuni - fie selectați o variabilă non-normală pentru a fi transformată în normal, fie selectați întregul set de date pentru a fi transformat",
+  "selectVariableRad": "Opțiunea 1: Selectați o variabilă non-normală din setul de date pentru a fi transformată în normal",
+  "variableSelcted": "O variabilă non-normală de transformat",
+  "boxcoxColName": "(Opțional) Specificați un nou nume de variabilă pentru a stoca valorile transformate. În caz contrar, se va crea <variable_bcox>",
+  "selectDatasetRad": "Opțiunea 2: Transformarea întregului set de date în normal",
+  "boxcoxDatasetName": "(Opțional) Specificați un nou nume de set de date pentru a stoca valorile transformate. În caz contrar, se va crea <dataset_bcox>",
+  "johnsonDatasetName": "(Opțional) Specificați un nou nume de set de date pentru Johnson (necesar dacă se alege opțiunea 2 de mai sus)",
+  "boxcoxChk": "Transformarea Box-Cox",
+  "johnsonChk": "Transformarea Johnson",
+  "lambda": "(Opțional) Valoarea Lambda (λ) în (-2 la 2) care va fi utilizată pentru transformarea Box-Cox. Dacă nu este specificată, va identifica automat cea mai bună valoare Lambda",
+  "digits": "Cifre - rotunjește la numărul specificat de zecimale",
+  "help": {
+    "title": "Transformați datele non-normale în normale",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția de a transforma variabila non-normală în normal cu MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tTransformarea Box-Cox nu poate fi efectuată pe valori negative\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Pentru o bună prezentare generală a MASS Box-Cox, consultați https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValorile Lambda (λ) asociate cu transformările Box-Cox familiare \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformare pătrată ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: fără transformare; returnează datele originale ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformare rădăcină pătrată ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformare rădăcină cubică\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformare rădăcină de patru\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformare logaritmică naturală ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformare rădăcină pătrată reciprocă ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformare reciprocă (inversă) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformare pătrată reciprocă ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

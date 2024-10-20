@@ -1,0 +1,13 @@
+{
+  "title": "評分量表模型（多面向）",
+  "navigation": "評分量表模型（多面向）",
+  "modelname": "輸入模型名稱",
+  "destinationvars": "項目",
+  "firstlevel": "第一層變數",
+  "secondlevel": "第二層變數",
+  "help": {
+    "title": "評分量表模型（多面向）",
+    "r_help": "幫助(tam.mml.mfr, 套件=TAM)",
+    "body": "\n            <b>描述</b>\n            <br/>\n            為多面向評分量表模型生成參數估計\n            <br/><br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n            <li>\n            resp: 包含多項選擇題回應的資料框 k=0,...,K。缺失回應必須聲明為 NA。\n            </li>\n            <li>\n            formulaA: 設計公式（僅適用於 tam.mml.mfr）。請參見詳細幫助中的範例 8。也可以將一個 facet 的所有效應設置為零，例如 item*step + 0*rater（請參見詳細幫助中的範例 10a）。\n            </li>\n            <li>\n            facets: 包含 facet 條目的資料框（僅適用於 tam.mml.mfr）\n            </li>\n            <li>\n            pid: 可選的個人識別符向量\n            </li>\n            <li>\n            verbose: 邏輯值，指示是否在迭代過程中打印輸出。\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>包</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>幫助</b>\n            <br/>\n            幫助(tam.mml.mfr, 包='TAM')\n"
+  }
+}

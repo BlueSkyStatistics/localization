@@ -1,0 +1,20 @@
+{
+  "title": "Sous-ensemble de données par logique",
+  "navigation": "Sous-ensemble de données par logique",
+  "label0": "Vous pouvez choisir de sauvegarder les résultats dans un nouveau jeu de données ou de remplacer le jeu de données existant",
+  "label1": "Options",
+  "New": "Sauvegarder les résultats dans un nouveau jeu de données",
+  "newdatasetname": "Entrez un nom de jeu de données",
+  "Existing": "Remplacer le jeu de données existant",
+  "Output": "Afficher les résultats dans la fenêtre de sortie",
+  "distinct": "Sélectionner des cas distincts",
+  "chkbox2": "Supprimer les niveaux de facteur inutilisés",
+  "subsetvars": "Sélectionner les variables à inclure dans le jeu de données sous-ensemble",
+  "label12": "Les critères de sous-ensemble sont appliqués à chaque ligne, voir les exemples ci-dessous. \n1: Sélectionner les lignes où var 1 n'est pas vide et var2 est vide spécifiez :\n!is.na(var1) & is.na(var2) \n2: Sélectionner les lignes où var1 > 30 et var 2 est Masculin spécifiez :\nvar1>30 & var2=='Male' \n3: Critères complexes et/ou spécifiez :\n(var1 !=10 & var2>20) | var3==40 \n4: Correspondance de motif (xxx) ou une correspondance exacte (abc) spécifiez :\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Correspondre à une sous-chaîne par position spécifiez : substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Entrez les critères de sous-ensemble.",
+  "help": {
+    "title": "Sous-ensemble de données",
+    "r_help": "aide(filter, package=dplyr)",
+    "body": "\n            <b>Description</b></br>\nRenvoie un sous-ensemble du jeu de données. Vous pouvez spécifier les colonnes/variables que vous souhaitez dans le plus petit jeu de données. Vous pouvez également spécifier des critères de sélection à appliquer à chaque ligne du dataframe.\n<br/><br/>\n<b>Sauvegarder les résultats dans un nouveau jeu de données :</b> Spécifiez un nouveau jeu de données pour stocker les données sous-ensembles\n<br/><br/>\n<b>Remplacer le jeu de données existant :</b> Cela sauvegarde le jeu de données sous-ensemble sous le nom de jeu de données existant\n<br/><br/>\n<b>Afficher les résultats dans la fenêtre de sortie :</b> Cela imprime le jeu de données sous-ensemble uniquement dans la fenêtre de sortie. Le jeu de données sous-ensemble n'est pas sauvegardé dans un jeu de données.\n<br/><br/>\n<b>Cas distincts sélectionnés :</b> Cela supprime les doublons du jeu de données sous-ensemble. Toutes les variables doivent être les mêmes pour être considérées comme un doublon.\n<br/><br/>\n<b>Supprimer les niveaux de facteur inutilisés :</b> Cela supprime les niveaux de facteur qui ont été exclus par le sous-ensemble (c'est-à-dire qui n'apparaissent plus dans les données).\n<br/><br/>\n<b>Sélectionner les variables à inclure dans le jeu de données sous-ensemble :</b> Cela permet à l'utilisateur de sélectionner des colonnes spécifiques qu'il souhaite inclure dans le jeu de données. Si des variables sont spécifiées, seules les variables spécifiées apparaîtront dans le jeu de données sous-ensemble. Si aucune variable n'est spécifiée, toutes les variables seront conservées.\n<br/><br/>\n<b>Entrez les critères de sous-ensemble :</b> Spécifiez la logique des variables qui sera utilisée pour filtrer les lignes du jeu de données.\n<br/><br/>\n<b>Paquet R</b></br>\ndplyr<br/>  \n<b>Aide</b></br>\naide(filter, package=dplyr)\n"
+  }
+}

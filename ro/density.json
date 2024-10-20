@@ -1,0 +1,25 @@
+{
+  "title": "Grafic de densitate",
+  "navigation": "Densitate",
+  "x": "Selectați o variabilă (variabile) de reprezentat",
+  "y": "Culoare, specificați o variabilă factor",
+  "fill": "Umplere, specificați o variabilă factor",
+  "label1": "Selectați o poziție pentru a controla suprapunerile",
+  "rd1": "Stiva densităților",
+  "rd2": "Stivați densitățile și standardizați fiecare stivă pentru a avea înălțime unitară",
+  "rd3": "Lângă lângă (Dodge)",
+  "alpha": "Opacitate (0-1)",
+  "flip": "Răsturnați axa",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare de fațete",
+  "Facetscale": "Scara de fațete",
+  "help": {
+    "title": "Grafic de densitate",
+    "r_help": "ajutor(geom_density, pachet='ggplot2')",
+    "body": "\n            <b>Descriere</b></br>\n            Plotează numărul de densitate (estimare de densitate kernel 1d). Vă permite să separați densitățile printr-o variabilă factor. De asemenea, puteți crea opțional fațete, teme și specificați un titlu și etichete pentru axele x și y.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Grafic de densitate pentru variabila var1\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Grafic de densitate pentru variabila var1, colorat după nivelurile lui var2\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit\n            </li>\n            <li>\n            aes(): Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.\n            </li>\n            <li>\n            x: variabila numerică pentru care se plotează densitățile\n            </li>\n            <li>\n            y: ..count specifică numărul variabilei numerice\n            </li>\n            <li>\n            fill: variabila factor pentru a grupa graficul\n            </li>\n            <li>\n            position: Ajustare de poziție, fie ca un șir, fie ca rezultatul unui apel la o funcție de ajustare a poziției. Valorile valide sunt \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density (): estimare de densitate kernel 1d, parametrul de poziție vă permite să specificați ajustarea de poziție de utilizat pentru punctele suprapuse pe acest strat.\n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (aceasta este opțional).\n            </li>\n            <li>\n            facet_grid(): Aranjați panourile într-o grilă (aceasta este opțional)\n            </li>\n            <li>\n            theme_excel(): Tema Excel (aceasta este opțional)\n            </li>\n            <li>\n            alpha: setează transparența\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes</br>\n            <b>Ajutor</b></br>\n            ajutor(geom_density)</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce ajutor(geom_density), ajutor(labs), ajutor(aes), ajutor(facet_grid), ajutor(theme_excel)\n    "
+  }
+}

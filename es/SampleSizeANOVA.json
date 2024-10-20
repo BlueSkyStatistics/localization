@@ -1,0 +1,16 @@
+{
+  "title": "Tamaño de Muestra, ANOVA",
+  "navigation": "ANOVA",
+  "howtouse": "Para calcular el tamaño de la muestra: especifique las medias de grupo y la potencia\nPara calcular la potencia: especifique el tamaño de la muestra y las medias de grupo\nPara calcular la varianza detectable de las medias de grupo: especifique el tamaño de la muestra y la potencia",
+  "numgrps": "Número de Grupos",
+  "n": "Tamaño de Muestra por Grupo",
+  "grpmeans": "Medias de Grupo, especifique como valores separados por comas, por ejemplo 20, 25, 40",
+  "power": "Potencia (0-1)",
+  "sd": "Desviación Estándar",
+  "siglevel": "Nivel de Significancia (0-1)",
+  "help": {
+    "title": "Tamaño de Muestra, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nEsta es una evaluación del tamaño de la muestra para un ANOVA de un solo factor equilibrado. Calcula el tamaño de la muestra, la potencia o la diferencia en las medias (calculada como la varianza entre las medias) cuando el usuario especifica las otras dos.\n<br/><br/>\n<b>Número de Grupos:</b> Especifique el número de grupos en el estudio\n<br/><br/>\n<b>Tamaño de Muestra por Grupo:</b> Especifique el número de sujetos en cada grupo\n<br/><br/>\n<b>Medias de Grupo:</b> Especifique las medias en cada grupo que desea poder detectar. Al menos una media debe ser diferente de las demás.\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa es verdadera.\n<br/><br/>\n<b>Desviación Estándar:</b> Especifique la desviación estándar del resultado. Se supone que es la misma en todos los grupos.\n<br/><br/>\n<b>Nivel de Significancia:</b> Especifique el nivel de significancia deseado (es decir, error tipo I) de la prueba\n<br/><br/>\n<b>Paquetes R Requeridos:</b> stats\n\t\t\t"
+  }
+}

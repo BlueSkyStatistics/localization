@@ -1,0 +1,16 @@
+{
+  "title": "Cohens Kappa",
+  "navigation": "Cohens Kappa",
+  "obs1var": "Beobachter 1:",
+  "obs2var": "Beobachter 2:",
+  "cilevel": "Konfidenzniveau:",
+  "label1": "Kategoriewerte",
+  "equal": "Cicchetti-Allison (gleichmäßige Abstände)",
+  "quadratic": "Fleiss-Cohen (quadratisch)",
+  "agreeplot": "Zustimmungsdiagramm und Bangdiwala-Statistiken",
+  "help": {
+    "title": "Cohens Kappa",
+    "r_help": "hilfe(Kappa,paket=vcd)",
+    "body": "\n                <b>Beschreibung</b></br>\nCohens Kappa misst die Übereinstimmung zwischen zwei Beobachtern, die dieselben Objekte messen. Ungewichtetes Kappa ist für ungeordnete Kategorien, während gewichtiges Kappa für geordnete Kategorien verwendet wird. Für gewichtiges Kappa wird den Kategorien, die näher beieinander liegen, mehr Gewicht beigemessen. Kappa kann zwischen -1 und 1 liegen, wobei 1 perfekte Übereinstimmung und 0 nicht besser als Zufall bedeutet. Negative Werte zeigen eine schlechtere Übereinstimmung als Zufall an, was in der Praxis jedoch selten vorkommt. Die Beobachter müssen die Objekte auf derselben Skala messen, wobei alle Kategorien von jedem Beobachter verwendet werden. Dies ergibt eine quadratische Kontingenztabelle. Eine Kontingenztabelle und die Kappa-Statistiken werden bereitgestellt.</br>\nBeobachter 1: Variable, die die von einem Beobachter bereitgestellten Werte enthält; kann entweder numerisch oder ein Faktor sein</br>\nBeobachter 2: Variable, die die von einem zweiten Beobachter bereitgestellten Werte enthält; kann entweder numerisch oder ein Faktor sein</br>\nKonfidenzniveau: Gewünschtes Konfidenzintervallniveau für die Kappa-Statistiken</br>\nKategoriewerte: Gewünschtes Gewicht für die Ebenen der Kategoriediskrepanz</br>\nZustimmungsdiagramm und Bangdiwala-Statistiken: Option zur Erstellung eines Zustimmungsdiagramms mit Bangdiwala-Statistiken</br>\n<b>Paket</b></br>\ngmodels;vcd</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl aus: hilfe(Kappa,paket=vcd), indem Sie einen R-Code-Chunk erstellen, indem Sie + im Ausgabefenster klicken\n                "
+  }
+}

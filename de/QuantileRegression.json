@@ -1,0 +1,25 @@
+{
+  "label1": "Um die Steigungen des quantilen Regressionsmodells zu vergleichen, siehe \"Modellbewertung > Vergleichen > Quant Reg Modelle\"",
+  "title": "Quantile Regression",
+  "navigation": "Quantil",
+  "modelname": "Modellnamen eingeben",
+  "depvarlabel": "Abhängige Variable",
+  "quantilelabel": "Quantil (0-1)",
+  "estgrplabel": "Schätzmethode",
+  "brlabel": "Barrodale und Roberts",
+  "fnlabel": "Frisch-Newton",
+  "pfnlabel": "Frisch-Newton, Vorverarbeitung",
+  "sfnlabel": "Frisch-Newton, spärlich",
+  "stderrgrplabel": "Standardfehlermethode",
+  "ranklabel": "Rang",
+  "iidlabel": "IID",
+  "nidlabel": "NID",
+  "kernallabel": "Kern",
+  "bootstraplabel": "Bootstrap",
+  "bootsamplabel": "Bootstrap-Stichproben",
+  "help": {
+    "title": "Quantile Regression",
+    "r_help": "hilfe(rq, paket = 'quantreg')",
+    "body": "\nDies passt ein quantiles Regressionsmodell an, das ein gewünschtes Quantil (d.h. Perzentil) der Ergebnisvariable modelliert. Ein typisches Quantil, das modelliert wird, ist 0,5, d.h. der Median. \nEine Modellzusammenfassung und Parameterschätzungen mit 95% Konfidenzintervallen werden bereitgestellt.\n<br/><br/>\n<b>Modellnamen eingeben:</b> der gewünschte Name des Modells\n<br/><br/>\n<b>Abhängige Variable:</b> Geben Sie die abhängige Variable für das Modell an. Das gewünschte Quantil dieser Variablen wird modelliert. Dies muss numerisch sein.\n<br/><br/>\n<b>Formel-Builder:</b> Geben Sie die Modellterme unter Verwendung der Formelnotation an. Numerische, Faktor-, geordnete Faktor- und Zeichenvariablen sind erlaubt. Zeichenvariablen werden in Faktoren umgewandelt.\n<br/><br/>\n<b>Quantil (0-1):</b> Geben Sie das gewünschte Quantil an, das für die abhängige Variable modelliert werden soll. 0,5 (der Median) ist der Standardwert und eine typische Größe.\n<br/><br/>\n<b>Schätzmethode:</b> Geben Sie die Schätzmethode für die Modellparameter an. Die Methode von Barrodale und Roberts ist der Standardwert und effizient für Modelle mit \nmehreren tausend Beobachtungen. Die Frisch-Newton- und die Frisch-Newton-Vorverarbeitungsmethode könnten für große und sehr große Probleme vorteilhaft sein, \ninsbesondere in Fällen mit einer kleinen Anzahl geschätzter Parameter. Für große Stichprobengrößen mit einer großen Anzahl von Parametern kann die Frisch-Newton, spärlich Methode erforderlich sein. \nSiehe die Referenzen in der R-Hilfe für Details.\n<br/><br/>\n<b>Standardfehlermethode:</b> Geben Sie die Methode an, die verwendet wird, um Standardfehler und Konfidenzintervalle zu schätzen. Die Rangmethode bietet nur Konfidenzintervalle, kann langsam \nfür größere Stichprobengrößen (n > 1000) sein und basiert auf der Inversion eines Rangtests. Die IID-Methode geht davon aus, dass die Fehler unabhängig und identisch verteilt sind (iid). Die NID \nMethode nimmt lokale Linearität im Quantil an und berechnet eine Sandwich-Schätzung unter Verwendung einer lokalen Schätzung der Sparsamkeit. Die Kernalmethode verwendet eine Kernal-Schätzung des Sandwichs. \nDie Bootstrap-Methode verwendet einen Resampling-Bootstrap-Ansatz zur Schätzung der Standardfehler. Siehe die Referenzen in der R-Hilfe für Details.\n<br/><br/>\n<b>Bootstrap-Stichproben:</b> Gewünschte Anzahl von Bootstrap-Stichproben für den Bootstrap-Standardfehleransatz. Der Standardwert sind 2000 Stichproben.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> quantreg, broom\n\t\t"
+  }
+}

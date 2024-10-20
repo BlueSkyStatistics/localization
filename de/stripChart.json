@@ -1,0 +1,24 @@
+{
+  "title": "Streifen Diagramm",
+  "navigation": "Streifen Diagramm",
+  "x": "X-Variable, geben Sie eine numerische Variable an",
+  "y": "Y-Variable, geben Sie eine(n) numerische(n) Variable(n) an",
+  "Fill": "Farbe, geben Sie eine Faktorvariable an",
+  "size": "Machen Sie die Größe des Punktes proportional zu",
+  "shape": "Form",
+  "alpha": "Opazität (0-1)",
+  "flipaxis": "Achse umkehren",
+  "jitter": "Jitter-Effekt anwenden",
+  "specify_a_title": "Geben Sie einen Titel ein",
+  "x_title": "X-Achsenbeschriftung",
+  "y_title": "Y-Achsenbeschriftung",
+  "Facetrow": "Facetreihe",
+  "Facetcolumn": "Facetspalte",
+  "Facetwrap": "Facet-Wrap",
+  "Facetscale": "Facet-Skala",
+  "help": {
+    "title": "Streifen Diagramm",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>Beschreibung</b></br>\n            Ein Streifendiagramm ist die grundlegendste Art von Diagramm. Es plottet die Daten in Reihenfolge entlang einer Linie, wobei jeder Datenpunkt als Box dargestellt wird. Die Form des Punktes hängt von den Ebenen der Faktorvariable (x) ab. Punkte können optional nach einer Faktorvariable (y) gruppiert werden. Facetten können optional erstellt werden, indem eine Faktorvariable angegeben wird.</br>\n            Sie können auch optional Themen angeben und einen Titel sowie Beschriftungen für die x- und y-Achse angeben.</br>\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Das Standarddatenset​\n            </li>\n            <li>\n            aes(): Generieren Sie ästhetische Zuordnungen, die beschreiben, wie Variablen in den Daten auf visuelle Eigenschaften (Ästhetik) von Geoms abgebildet werden.​\n            </li>\n            <li>\n            x: die Gruppierungsvariable. Die Form des Punktes hängt von den Ebenen der Faktorvariable ab.​\n            </li>\n            <li>\n            y: die Variable, für die Punkte geplottet werden.​\n            </li>\n            <li>\n            color: eine optionale Faktorvariable zur Gruppierung von Punkten (nach Farbe).​\n            </li>\n            <li>\n            Labs(): Ändern Sie Achsenbeschriftungen und Legendentitel (dies ist optional).​\n            </li>\n            <li>\n            facet_grid(): Panels in einem Raster anordnen (dies ist optional).​\n            </li>\n            <li>\n            theme_calc(): Gibt das Rechnerdesign an (dies ist optional).​\n            </li>\n            <li>\n            geom_jitter(): Der Jitter-Geometrie ist ein praktischer Standard für geom_point mit position = 'jitter'. Siehe position_jitter, um zu sehen, wie man die Menge des Jitterings anpasst.\n            </li>\n            <li>\n            coord_flip(): Achse umkehren (dies ist optional).​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Hilfe</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Andere: Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) eingeben.\n    "
+  }
+}

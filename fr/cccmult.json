@@ -1,0 +1,17 @@
+{
+  "title": "Coefficient de Corrélation de Concordance, plusieurs évaluateurs",
+  "navigation": "Coefficient de Corrélation de Concordance, plusieurs évaluateurs",
+  "ratervars": "Variables d'Évaluateur, au moins 2",
+  "cilevel": "Niveau de Confiance :",
+  "bootsamp": "Nombre d'échantillons bootstrap",
+  "plotoptionslabel": "Options de Tracé",
+  "plotchkbox": "Nuages de points pour toutes les paires d'évaluateurs",
+  "plottitle": "Titre",
+  "varlabels": "Étiquettes de Variables (si utilisées, doivent spécifier des étiquettes pour toutes les variables, dans l'ordre, comme 'étiquette 1', 'étiquette 2', etc.)",
+  "plottheme": "Thème de Tracé",
+  "help": {
+    "title": "Coefficient de Corrélation de Concordance, plusieurs évaluateurs",
+    "r_help": "help(epi.occc,package=epiR)",
+    "body": "\nLe coefficient de corrélation de concordance (CCC) mesure l'accord entre les observateurs qui mesurent les mêmes sujets sur la même échelle pour des données continues. Le CCC peut varier entre \n-1 et 1, 1 étant un accord parfait et 0 n'étant aucun accord. Les valeurs négatives indiquent un accord négatif, mais cela est rare en pratique. Le CCC global et les CCC pair par pair \n(toutes les paires d'évaluateurs) sont calculés avec des intervalles de confiance bootstrap percentile et des intervalles de confiance bootstrap percentile ajustés. Toute observation avec une valeur manquante pour les variables d'évaluateur spécifiées est retirée de l'analyse.\n<br/><br/>\n<b>Variables d'Évaluateur :</b> Variables contenant les valeurs fournies par les observateurs ; doivent être numériques\n<br/>\n<b>Niveau d'Intervalle de Confiance :</b> Niveau d'intervalle de confiance souhaité pour le CCC\n<br/>\n<b>Nombre d'échantillons bootstrap :</b> Le nombre souhaité d'échantillons bootstrap à tirer des données originales pour calculer les intervalles de confiance. Au moins 1000 est recommandé, \nsi pratiquement faisable.\n<br/>\n<b>Nuages de points pour toutes les paires d'évaluateurs :</b> Option pour créer des nuages de points pour toutes les paires d'évaluateurs dans un format matriciel.   \n<br/><br/>\n<b>Packages R requis :</b> epiR, boot, GGally, ggthemes\n                "
+  }
+}

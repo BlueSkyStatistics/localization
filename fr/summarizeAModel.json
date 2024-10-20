@@ -1,0 +1,10 @@
+{
+  "title": "Résumer un modèle",
+  "navigation": "Résumer un modèle",
+  "modelselector1": "Sélectionner un modèle",
+  "help": {
+    "title": "Résumer un modèle",
+    "r_help": "aide(résumé)",
+    "body": "\n                <b>Description</b></br>\nRésumé est une fonction générique utilisée pour produire des résumés des résultats de diverses fonctions d'ajustement de modèle. La fonction invoque des méthodes particulières qui dépendent de la classe du premier argument, par exemple résumé.lm (modèle linéaire), résumé.glm (modèle linéaire généralisé)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nrésumé(objet)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobjet: un objet pour lequel un résumé est souhaité.\n</li>\n</ul>\n<b>Valeur</b><br/>\nLa forme de la valeur retournée par résumé dépend de la classe de son argument. Voir la documentation des méthodes particulières, c'est-à-dire aide(résumé.lm), aide(résumé.glm) pour les détails de ce qui est produit par cette méthode.</br>\n<b>Paquet</b></br>\nbase</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R aide(résumé)\n                "
+  }
+}

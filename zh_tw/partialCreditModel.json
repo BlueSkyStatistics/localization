@@ -1,0 +1,16 @@
+{
+  "title": "部分信用模型",
+  "navigation": "部分信用模型",
+  "modelname": "輸入模型名稱",
+  "destinationvars": "目標變數",
+  "estimationlbl": "估計",
+  "rad1": "使用CML估計",
+  "chk1": "計算標準誤差",
+  "chk2": "將參數正規化為和為（0）",
+  "rad2": "使用MML估計",
+  "help": {
+    "title": "部分信用模型",
+    "r_help": "help(PCM, package='eRm')",
+    "body": "\n            <b>描述</b>\n            <br/>\n            生成部分信用模型的參數估計\n            <br/><br/>\n            對於CML估計，我們調用eRm::PCM來計算部分信用模型的參數估計，適用於多項選擇題的回應。\n            <br/><br/>\n            對於MML估計，我們調用tam.mml，使用適當的參數，見下文 \n            <br/><br/>\n            <b>CML估計的用法</b>\n            <br/>\n            <code>\n            eRm::PCM(X,se=FALSE,sum0=FALSE) \n            </code>    \n            <br/><br/>\n            <b>參數</b>\n            <br/>       \n            <ul>\n\n            <li>\n            X:  輸入的0/1數據矩陣或數據框；行表示個體，列表示項目。缺失值插入為NA。\n            </li>\n            <li>\n            W:  Rasch模型的設計矩陣。如果省略，函數將自動計算W。\n            </li>\n            <li>\n            se: 如果為TRUE，則計算標準誤差。\n            </li>\n            <li>\n            sum0: 如果為TRUE，則通過指定適當的W將參數正規化為和為0。如果為FALSE，則第一個參數限制為0。\n            </li>\n            <li>\n            etaStart: 可以指定eta參數的起始值向量。如果缺失，則使用0向量。\n            </li>\n            </ul>\n            <br/><br/><br/>\n            <b>MML估計的用法</b>\n            <br/>\n            <code>\n            tam.mml(resp,irtmodel=\"PCM\",verbose=FALSE )\n            </code>\n            <br/><br/>\n            <b>參數</b>\n            <br/>             \n            <ul>\n            <li>\n            resp: 數據框，包含多項選擇題的回應k=0,...,K。缺失回應必須聲明為NA。\n            </li>\n            <li>\n            irtmodel: 對於固定項目斜率（在tam.mml中），選項包括PCM（部分信用模型）、PCM2（帶有ConQuest參數化的部分信用模型'item+item*step'）和RSM（評分量表模型；ConQuest參數化'item+step'）。 \n            <br/>\n            對於估計的項目斜率（僅在tam.mml.2pl中可用），選項為2PL（所有項目類別的斜率均被估計；名義項目反應模型）、GPCM（每個項目在每個維度上獲得一個且僅一個斜率參數的廣義部分信用模型）和2PL.groups（項目子集獲得相同的項目斜率估計）以及在廣義部分信用模型中的項目斜率的設計矩陣E（GPCM.design，見示例）。請注意，使用tam.mml.mfr函數無法估計帶有分面設計的項目斜率。然而，使用預先指定的設計矩陣並對tam.mml.2pl施加一些限制是很簡單的。\n            </li>\n            <li>\n            verbose: 邏輯值，指示在迭代過程中是否應打印輸出。 \n            </li>\n            </ul>\n            <br/><br/>\n            <b>包</b>\n            <br/>\n            TAM, eRm\n            <br/><br/>\n            <b>幫助</b>\n            <br/>\n            help(PCM, package='eRm')\n            <br/>\n            help(tam.mml, package='TAM')\n"
+  }
+}

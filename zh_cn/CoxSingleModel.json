@@ -1,0 +1,21 @@
+{
+  "title": "Cox, 基础",
+  "navigation": "Cox, 基础",
+  "helplabel": "点击对话框右上角的 ? 按钮以获取有关示例数据集和支持的数据格式的详细信息。",
+  "modelname": "输入模型名称",
+  "timevar": "事件发生或审查的时间",
+  "eventvar": "事件 (1 = 事件 1, 0 = 审查)",
+  "destvars": "自变量",
+  "weightvar": "权重（可选）",
+  "tiemethod": "绑定时间方法",
+  "forestplotbox": "森林图",
+  "diagnosticsbox": "模型诊断",
+  "martscalebox": "空模型马丁盖尔残差轴最小值 (-Inf 到 1)：",
+  "devbox": "偏差分析（类型 II）",
+  "devtype": "检验统计量",
+  "help": {
+    "title": "Cox, 基础",
+    "r_help": "help(coxph, package = 'survival')",
+    "body": "\n\t\t\t请参阅安装目录中的示例数据集，默认位置在驱动器：&bsol;program files&bsol;BlueSky Statistics&bsol;10&bsol;Samples_and_Documents&bsol;Datasets_and_Demos&bsol;Regression_Cox&bsol;mockstudy_upd.RData。变量 Followup_time 应作为事件或审查的时间输入，变量 Event 应作为事件（1 = 事件，0 = 审查）输入。性别、年龄和 BMI 可以是自变量。 \n\t\t\t<br/>\n            事件变量必须是数字，因子不被允许。如果您有一个类型为因子的事件变量，具有 2 个值，例如 0 和 1，请将其转换为数字\n\t\t\t该数据集是 arsenal 包中 mockstudy 数据集的更新版本。\n\t\t\t<br/><br/>\n            <b>Cox 比例风险模型</b>\n            <br/>\n            <br/>\n            为带有审查观察的时间到事件数据拟合 Cox 比例风险模型。提供模型拟合统计、参数估计和风险比。可用选项包括绑定时间方法、模型诊断（如比例风险和协变量功能形式评估）以及带有置信区间的风险比森林图。该模型使用 survival 包中的 coxph 函数进行拟合。\n            <br/>\n            <br/>\n            <b>时间：</b> 事件发生者的事件时间或未发生事件者的最后随访时间\n            <br/><br/>\n            <b>事件：</b> 数字事件指示符；1=事件，0=审查\n            <br/><br/>\n            <b>自变量：</b> 要包含在模型中的自变量。因子、字符串和逻辑变量将被虚拟编码。\n            <br/><br/>\n            <b>权重：</b> 观察权重的数字变量。在每条记录不应被视为一个观察的情况下很有用。 \n            <br/>\n            <br/>\n            <b>所需包：</b> survival, broom, survminer, car, BlueSky\n            <br/>\n            <br/>\n            点击获取 R 帮助按钮以获取有关 coxph 函数的详细 R 帮助。\n            <br/>\n            <br/>\n            <br/>\n            <br/>\n            <b>选项</b>\n            <br/>\n            <br/>\n            <b>绑定时间方法：</b>\n            <br/>\n            破坏绑定观察时间的方法。当没有很多绑定时间时，Efron 通常是更好的选择。如果有很多绑定时间，例如在离散时间情况下，精确方法可能是有益的，但可能需要更长的时间来拟合模型。 \n            <br/>\n            <br/>\n            <b>森林图：</b>\n            <br/>\n            模型中每个预测变量的风险比和置信区间图。\n            <br/>\n            <br/>\n            <b>模型诊断：</b>\n            <br/>\n            如果选择，将提供比例风险测试和图表，以及对模型中每个协变量的功能形式评估。空模型马丁盖尔残差轴的最小值选项可能需要更改，以便所有残差出现在图中。要获得功能形式评估，您必须仅指定数字预测变量，并且没有缺失数据。请参见变量 > 缺失值 > 删除 NAs。\n            <br/>\n            <br/>\n            <b>偏差分析（类型 II）：</b>\n            模型中每个预测变量的全局测试。将为具有超过 2 个水平的效应提供多自由度测试。可以获得 Wald 和似然比测试，似然比测试在小样本中具有更好的属性。\n            \n      "
+  }
+}

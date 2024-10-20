@@ -1,0 +1,32 @@
+{
+  "title": "Crear diseño factorial regular (fraccionario) de 2 niveles",
+  "navigation": "Crear diseño factorial regular (fraccionario) de 2 niveles",
+  "selectedvars": "Seleccionar variables",
+  "datasetname": "Nombre del diseño",
+  "lblheading": "Tamaño y aleatorización",
+  "numOfRuns": "Número de ejecuciones (si se especifica, debe ser una potencia de 2, de lo contrario, poner 0)",
+  "numOfBlocks": "Número de bloques",
+  "alias2FIsChk": "los bloques pueden estar aliasados con 2fis",
+  "numOfCenterPts": "Número de puntos centrales (si se usa, tener mínimo 2)",
+  "centerPointDistribution": "Número de posiciones para la distribución de puntos centrales (tener >1)",
+  "replications": "Replicaciones",
+  "repeatOnlyChk": "Repetir solo",
+  "lbl1": "Es posible que no necesite cambiar la configuración de aleatorización",
+  "randomseeds": "Semilla para la aleatorización",
+  "randomizationChk": "Aleatorizar la generación del diseño",
+  "lbl2": "NOTA: afecta la generación del diseño solo para la elección de MaxC2 O el número de ejecuciones no especificado",
+  "lbldesignheading": "Propiedades del diseño",
+  "roman": "Resolución mínima (III, IV, V...)",
+  "marad": "MA (Resolución máxima y mínima aberración)",
+  "maxC2rad": "MaxC2 (Número máximo de 2fis claros)",
+  "lbl3": "Especifique un catálogo de diseño (opcional)",
+  "designChk": "Usar un diseño del catálogo",
+  "designcatlgname": "Nombre del catálogo de diseño, por ejemplo, catlg",
+  "designnamefromcatlg": "Nombre del diseño del catálogo de diseño",
+  "nrunsChk": "Calcular automáticamente el número de ejecuciones a partir del diseño especificado anteriormente",
+  "help": {
+    "title": "Crear diseño factorial regular (fraccionario) de 2 niveles",
+    "r_help": "ayuda(FrF2, paquete = FrF2)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción FrF2 para generar diseños factoriales regulares de 2 niveles fraccionarios\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R ayuda(FrF2, paquete = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUtilice el menú DOE->Inspeccionar diseño->Inspeccionar catálogo FrF2 para navegar por los diseños FrF2 disponibles desde el catálogo de diseño cargado en el paquete FrF2\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado factor_grid_Injection Molding FrF2.xlsx. Abra el archivo en la cuadrícula de datos con el menú de apertura de archivos\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

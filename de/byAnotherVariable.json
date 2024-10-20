@@ -1,0 +1,22 @@
+{
+  "title": "Faktorebenen nach einer anderen Variablen neu anordnen",
+  "navigation": "Nach einer anderen Variablen neu anordnen",
+  "target": "Wählen Sie die Faktorvariable zum Neuordnen aus",
+  "variableToOrderBy": "Variable zum Ordnen",
+  "label1": "Faktorebenen basierend auf einer arithmetischen Funktion, d.h. Mittelwert, Median, Summe der Werte in einer anderen Variablen neu anordnen. Wählen Sie die Faktorvariable zum Neuordnen aus, wählen Sie eine numerische Variable zur Berechnung des Mittelwerts, Medians oder der Summe. Dies wird für jede Ebene der Faktorvariable berechnet. Die Ebenen werden dann basierend auf dieser Berechnung geordnet. Sie können vorhandene Variablen überschreiben oder neue Variablen erstellen, indem Sie ein Präfix/Nachsuffix angeben. Neue Variablen werden mit dem Präfix/Nachsuffix an die vorhandenen Namen angehängt.",
+  "function": "Wählen Sie eine Funktion zum Ordnen aus",
+  "label2": "Ergebnisse in einer neuen Variablen speichern oder vorhandene Variable überschreiben",
+  "rd3": "Geben Sie ein Nachsuffix an (Eine neue Variable wird mit dem Nachsuffix erstellt)",
+  "txt3": "Geben Sie ein Nachsuffix ein",
+  "rd2": "Geben Sie ein Präfix an (Eine neue Variable wird mit dem Präfix erstellt)",
+  "txt4": "Geben Sie ein Präfix ein",
+  "rd1": "Vorhandene Variable überschreiben",
+  "label3": "Ordnung angeben",
+  "Descending": "Absteigend",
+  "Ascending": "Aufsteigend",
+  "help": {
+    "title": "Nach einer anderen neu anordnen",
+    "r_help": "help(fct_reorder, package =forcats)",
+    "body": "\n<b>Beschreibung</b></br>\nFaktorebenen neu anordnen, indem man entlang einer anderen Variablen sortiert. Faktorebenen werden basierend auf einer arithmetischen Funktion, d.h. Mittelwert, Median, Summe der Werte in einer anderen Variablen, neu angeordnet. Wählen Sie die Faktorvariable zum Neuordnen aus, wählen Sie eine numerische Variable zur Berechnung des Mittelwerts, Medians oder der Summe. Dies wird für jede Ebene der Faktorvariable berechnet. Die Ebenen werden dann basierend auf dieser Berechnung geordnet. Die Ergebnisse können in die vorhandene(n) Variable(n) gespeichert werden oder Sie können neue Variablen erstellen, indem Sie ein Präfix/Nachsuffix angeben. Neue Variablen werden mit dem Präfix/Nachsuffix an die vorhandenen Namen angehängt. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nfct_reorder(.f, .x, .fun = median, ..., .desc = FALSE)\nDataset1$col1 <-forcats::fct_reorder( .f=Dataset1$col1,.x=Dataset1$col2,.fun=median,.desc=TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n.f: Ein Faktor (oder Zeichenvektor).\n</li>\n<li>\n.x, .y: Die Ebenen von f werden neu angeordnet, sodass die Werte von .fun(.x) (für fct_reorder()) und fun(.x, .y) (für fct_reorder2()) in aufsteigender Reihenfolge sind.\n</li>\n<li>\n.fun: n Zusammenfassungsfunktion. Sie sollte einen Vektor für fct_reorder und zwei Vektoren für fct_reorder2 annehmen und einen einzelnen Wert zurückgeben.\n</li>\n<li>\n...: Andere Argumente, die an .fun übergeben werden. Ein häufiges Argument ist na.rm = TRUE.\n</li>\n<li>\n.desc: In absteigender Reihenfolge anordnen? Beachten Sie, dass die Standardeinstellung zwischen fct_reorder und fct_reorder2 unterschiedlich ist, um die Standardanordnung von Faktoren in der Legende zu entsprechen.\n</li>\n</ul>\n<b>Beispiele</b></br>\n<code> \nboxplot(Sepal.Width ~ Species, data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width), data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width, .desc = TRUE), data = iris)<br/>\nchks <- subset(ChickWeight, as.integer(Chick) < 10)<br/>\nchks <- transform(chks, Chick = fct_shuffle(Chick))<br/>\nif (require(\"ggplot2\")) {<br/>\nggplot(chks, aes(Time, weight, colour = Chick)) +<br/>\n    geom_point() +<br/>\n    geom_line()<br/>\n# Beachten Sie, dass die Linien der Reihenfolge in der Legende entsprechen<br/>\nggplot(chks, aes(Time, weight, colour = fct_reorder2(Chick, Time, weight))) +<br/>\n    geom_point() +<br/>\n    geom_line() +<br/>\n    labs(colour = \"Chick\")<br/>\n}<br/>\n</code>\n<b>Paket</b></br>\nforcats</br>\n<b>Hilfe</b></br>\nGeben Sie die Zeile unten im BlueSky Statistics R-Syntax-Editor ein</br>\nhelp(fct_reorder, package =forcats)\n"
+  }
+}

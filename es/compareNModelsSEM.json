@@ -1,0 +1,13 @@
+{
+  "title": "Comparar N modelos SEM",
+  "navigation": "Comparar N modelos SEM",
+  "label1": "Compara N modelos SEM.",
+  "label2": "Seleccione modelos de las siguientes clases (la clase R está entre paréntesis a continuación)",
+  "label3": "Modelos de ecuaciones estructurales (lavaan)",
+  "modelselector1": "Seleccione uno o más modelos para comparar:",
+  "help": {
+    "title": "Comparar N modelos SEM",
+    "r_help": "help(lavTestLRT, package='lavaan')",
+    "body": "\n                <b>\nPrueba LRT para comparar modelos lavaan (anidados).</b></br>\n<b>Uso</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobject:  un objeto de clase lavaan.\n</li>\n</ul>\n<b>Valor</b><br/>\nUn objeto de clase anova. Cuando se proporciona un solo argumento, simplemente devuelve la estadística de prueba de este modelo. Cuando se proporciona una secuencia de objetos, esta función prueba los modelos entre sí, después de reordenar los modelos según sus grados de libertad.<br/>\n<b>Paquete</b></br>\nlavaan</br>\n<b>Ayuda</b></br>\nPara obtener ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de este cuadro de diálogo o ejecute el siguiente comando en el editor de sintaxis R: help(lavTestLRT,package='lavaan')</br></br>\n<b>Ejemplos</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+  }
+}

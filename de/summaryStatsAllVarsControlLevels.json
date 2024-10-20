@@ -1,0 +1,10 @@
+{
+  "title": "Zusammenfassende Statistiken, Kontrollstufen",
+  "navigation": "Zusammenfassende Statistiken, alle Variablen, Kontrollstufen (Legacy)",
+  "levels": "Geben Sie die Anzahl der Stufen an, für die Zählungen für Faktorvariablen angezeigt werden sollen. HINWEIS: Weniger häufige Stufen von Faktorvariablen werden in der Kategorie (Andere) zusammengefasst.",
+  "help": {
+    "title": "Zusammenfassende Statistiken, Kontrollstufen",
+    "r_help": "",
+    "body": "\n    <b>Beschreibung</b></br>\n    Generiert die Zusammenfassungen für alle Variablen des Datensatzes, während Sie die Anzahl der Stufen steuern, für die Zählungen angezeigt werden.</br>\n    HINWEIS: ZÄHLUNGEN VON WENIGER HÄUFIGEN VARIABLEN WERDEN IN DER KATEGORIE (ANDERE) ZUSAMMENGEFASST</br>\n    Zeigt Minimum, 1. Quartil, Median, Mittelwert, 3. Quartil, Maximum und Anzahl der NAs für numerische und Datumsvariablen an.</br>\n    Für Faktorvariablen werden die Zählungen jeder Stufe angezeigt.</br>\n    Für logische Variablen werden die Zählungen von WAHR, FALSCH und NAs angezeigt.</br>\n    R-Hilfe ist nicht verfügbar, da wir benutzerdefinierten Code mit mehreren R-Funktionen geschrieben haben. Wenn Sie den Code überprüfen möchten, klicken Sie auf die Schaltfläche \"<>\".</br>\n    "
+  }
+}

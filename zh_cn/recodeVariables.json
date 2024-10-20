@@ -1,0 +1,26 @@
+{
+  "title": "重新编码变量",
+  "navigation": "重新编码",
+  "oldvars": "要重新编码的变量",
+  "label1": "选项",
+  "newvarradio": "新变量",
+  "newvar": "输入新的变量名称，用逗号分隔，例如 newVar1, newVar2",
+  "oldvarradio": "覆盖现有变量",
+  "suffix": "为重新编码的变量指定后缀",
+  "prefix": "为重新编码的变量指定前缀",
+  "enterSuffix": "输入后缀",
+  "enterPrefix": "输入前缀",
+  "label3": "在指定多个重新编码标准时，使用 ; 作为分隔符。",
+  "label4": "注意：字符串值必须用双引号(\")括起来，而不是单引号(')。",
+  "label5": "输入旧值和新值，用 ; 分隔，例如 \"男\"=\"男\";\"女\"=2;\"休斯顿，德克萨斯州\"=\"德克萨斯州\";\"不可用\"=NA ",
+  "label5a": "对于数值类型的重新编码，输入 70=100;71=101;99=NA",
+  "label5b": "支持值的范围，例如 5:10=\"中\" 特殊值 lo 和 hi 可以出现在范围内，例如 lo:10=\"低\";11:89=\"中\";90:hi=\"高\"",
+  "label6": "关键字 else 可用于所有不符合规范的内容，例如 else =NA",
+  "dontMakeFactor": "默认情况下，如果源变量是因子，则重新编码的变量将是因子。要覆盖，请勾选复选框",
+  "oldnewvals": "输入重新编码标准",
+  "help": {
+    "title": "重新编码变量",
+    "r_help": "help(recode, package=car)",
+    "body": "\n<b>描述</b></br>\n根据重新编码规范重新编码一个或多个数值向量、字符向量或因子。您可以通过覆盖现有变量、指定新的变量名称来存储结果，或者选择将重新编码的值存储在具有适当前缀或后缀的新变量中。前缀或后缀将应用于现有变量名称。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ncolNames: 包含要重新编码的数据集中一个或多个变量的字符向量\n</li>\n<li>\nnewColNames:  包含新列名称的字符向量。\n</li>\n<li>\nOldNewVals: 以 oldval1,newval1, oldval2,newval2 形式的重新编码规范的字符字符串\n</li>\n<li>\nNewCol: 一个布尔值，指示是否将重新编码的值存储在新变量中（TRUE）或覆盖现有变量（FALSE）。\n</li>\n<li>\nprefixOrSuffix: 指定是否希望将重新编码的值存储在以您指定的名称为前缀或后缀的新变量中。 输入前缀或后缀。\n</li>\n<li>\nprefixOrSuffixString: 输入一个字符串，用作现有变量名称的前缀或后缀。重新编码的值将存储在这些变量中。\n</li>\n<li>\ndataSetNameOrIndex: 数据集/数据框的名称\n</li>\n</ul>\n注意：我们不会从数值转换为因子。当数值被重新编码时，它将保持为数值，当因子变量被重新编码时，它将保持为因子。<br/>\n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\n在 BlueSky Statistics R 语法编辑器中输入以下行</br>\nhelp(recode, package=car)\n"
+  }
+}

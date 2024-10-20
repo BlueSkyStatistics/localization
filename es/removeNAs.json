@@ -1,0 +1,16 @@
+{
+  "title": "Eliminar NAs",
+  "navigation": "Eliminar NAs",
+  "label0": "Crea un nuevo conjunto de datos / sobrescribe el conjunto de datos existente eliminando filas con uno o más valores faltantes. Seleccione las variables a analizar para valores faltantes. Se eliminarán todas las filas que contengan valores faltantes en las variables seleccionadas. Para analizar todo el conjunto de datos, seleccione todas las variables.",
+  "label1": "Opciones",
+  "New": "Guardar resultados en un nuevo conjunto de datos",
+  "newdatasetname": "Ingrese un nombre de conjunto de datos",
+  "Existing": "Sobrescribir conjunto de datos existente",
+  "subsetvars": "Seleccione variables (una o más) para incluir en el conjunto de datos",
+  "subsetexpression": "Ingrese los criterios de subconjunto. Los criterios de subconjunto se aplican a cada fila del conjunto de datos. Ejemplo 1: !is.na(var1) & is.na(var2). Ejemplo 2: var1>30 & var2=='masculino'. Ejemplo 3: (var1 !=10 & var2>20) | var3==40. Ejemplo 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". Ejemplo 5: substr(var1,2,4) ==\"abc\"",
+  "help": {
+    "title": "Eliminar NAs",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>Descripción</b></br>\nEliminar valores faltantes/NA del conjunto de datos/dataframe\nCrea un nuevo conjunto de datos / sobrescribe el conjunto de datos existente eliminando filas con uno o más valores faltantes para las columnas/nombres de variables seleccionados\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n​object: un objeto R.​\n</li>\n</ul>\n<b>Paquete</b></br>\ndata.table</br>\n<b>Ayuda</b></br>\nhelp(na.omit)\n    "
+  }
+}

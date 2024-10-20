@@ -1,0 +1,19 @@
+{
+  "title": "負二項分布範例",
+  "navigation": "負二項分布範例",
+  "entrdsname": "輸入數據集名稱",
+  "size": "目標成功次數",
+  "prob": "概率",
+  "lblnoofsamples": "樣本數量（行）",
+  "lblnoofobsv": "觀察數量（列）",
+  "lblseed": "種子",
+  "lblAddtoDS": "添加到數據集",
+  "chklbl1": "樣本均值",
+  "chklbl2": "樣本總和",
+  "chklbl3": "樣本標準差",
+  "help": {
+    "title": "負二項分布範例",
+    "r_help": "help(rnbinom, package=stats)",
+    "body": "\n\n            <b>描述</b>\n            <br/>\n            負二項分布的密度、分布函數、分位數函數和隨機生成，參數為 size 和 prob。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dnbinom(x, size, prob, mu, log = FALSE)\n                <br/>\n                pnbinom(q, size, prob, mu, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnbinom(p, size, prob, mu, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnbinom(n, size, prob, mu)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x : （非負整數）分位數的向量。</li>\n                \n                \n                <li>q : 分位數的向量。</li>\n                \n                \n                <li>p : 機率的向量。</li>\n                \n                \n                <li>n : 觀察數量。如果 length(n) > 1，則長度被視為所需數量。</li>\n                \n                \n                <li>size : 成功試驗的目標數量，或離散參數（伽馬混合分布的形狀參數）。必須嚴格為正，不必為整數。</li>\n                \n                \n                <li>prob : 每次試驗成功的機率。0 < prob <= 1。</li>\n                \n                \n                <li>mu : 通過均值的替代參數化：見“詳細信息”。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為 TRUE，則機率 p 以 log(p) 給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為 TRUE（預設），機率為 P[X ≤ x]，否則為 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            負二項分布的密度為 size = n 和 prob = p\n            <br/>\n            <code>\n                Γ(x+n)/(Γ(n) x!) p^n (1-p)^x\n                對於 x = 0, 1, 2, …, n > 0 和 0 < p ≤ 1。\n            </code>\n            <br/>\n            這表示在達到目標成功次數之前，在一系列伯努利試驗中發生的失敗次數。均值為 μ = n(1-p)/p，方差為 n(1-p)/p^2。\n            <br/>\n            負二項分布也可以作為均值分布為伽馬分布的泊松分布的混合（見 pgamma），其規模參數為 (1 - prob)/prob，形狀參數為 size。（此定義允許 size 為非整數值。）\n            <br/>\n            另一種參數化（通常用於生態學）是通過均值 mu（見上文）和 size，離散參數，其中 prob = size/(size+mu)。在這種參數化中，方差為 mu + mu^2/size。\n            <br/>\n            如果 x 的某個元素不是整數，則 dnbinom 的結果為零，並發出警告。\n            當 size == 0 時，分布集中在零。這是 size 接近零的極限分布，即使 mu 而不是 prob 保持不變。請注意，極限分布的均值為 0，無論 mu 的值如何。\n            <br/>\n            分位數定義為最小值 x，使得 F(x) ≥ p，其中 F 是分布函數。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dnbinom 給出密度，pnbinom 給出分布函數，qnbinom 給出分位數函數，rnbinom 生成隨機偏差。\n            <br/>\n            無效的 size 或 prob 將導致返回值 NaN，並發出警告。\n            <br/>\n            結果的長度由 rnbinom 的 n 決定，對於其他函數，則為數值參數的最大長度。\n            <br/>\n            除 n 以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。            \n"
+  }
+}

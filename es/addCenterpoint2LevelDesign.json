@@ -1,0 +1,12 @@
+{
+  "title": "Agregar un punto central a un diseño de 2 niveles (cuantitativo) sin punto central previo - el diseño seleccionado es el diseño activo en la cuadrícula de la interfaz de usuario del conjunto de datos",
+  "navigation": "Agregar punto central a un diseño de 2 niveles (cuantitativo)",
+  "datasetname": "Nombre de diseño modificado con puntos centrales",
+  "numOfCenterPts": "Número de puntos centrales (si se usa, debe ser un mínimo de 2)",
+  "centerPointDistribution": "Número de posiciones para la distribución de puntos centrales (debe ser >1)",
+  "help": {
+    "title": "Agregar un punto central a un diseño de 2 niveles (sin punto central previo)",
+    "r_help": "help(add.center, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función add.center agrega puntos centrales a un diseño factorial fraccionado de 2 niveles. Todos los factores deben ser cuantitativos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(add.center, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

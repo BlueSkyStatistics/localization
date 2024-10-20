@@ -1,0 +1,16 @@
+{
+  "title": "Clúster Jerárquico",
+  "navigation": "Jerárquico",
+  "destination": "Destino",
+  "clusters": "Número de clústeres",
+  "storeClusterInDataset": "Asignar clústeres al conjunto de datos",
+  "variablename": "Nombre de la variable para almacenar clústeres",
+  "biplot": "Mostrar biplot de clústeres",
+  "dendogram": "Trazar dendrograma de clústeres",
+  "labelForClusteringMethod": "Método de agrupamiento",
+  "help": {
+    "title": "Clúster Jerárquico",
+    "r_help": "ayuda(hclust, paquete ='stats')",
+    "body": "\n<b>Descripción</b></br>\nAnálisis de clúster jerárquico sobre un conjunto de disimilitudes y métodos para analizarlo.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvarsToCluster: Las variables a analizar \n</li>\n<li>\nmethod: el método de aglomeración a utilizar. Esto debería ser (una abreviatura inequívoca de) uno de \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) o \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: El número de clústeres deseados\n</li>\n<li>\nplotDendogram: Trazar un dendrograma Verdadero o falso\n</li>\n<li>\nassignClusterToDataset: Guardar las asignaciones de clústeres en el conjunto de datos\n</li>\n<li>\nlabel: nombre de la nueva variable que almacena las asignaciones de clústeres\n</li>\n<li>\nplotBiplot: trazar biplot VERDADERO o FALSO\n</li>\n</ul>\n<b>Paquete</b></br>\nBlueSky</br>\n<b>Ayuda</b></br>\nayuda(hclust, paquete ='stats')</br></br>\n<b>Descripción</b></br>\nplotDendrogram: Llama a la función de trazado para trazar el dendrograma de clústeres\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nmethod: ver arriba\n</li>\n<li>\ndistance: ver arriba\nplotBiplot: trazar biplot VERDADERO o FALSO\n</li>\n</ul>\n<b>Paquete</b></br>\nBlueSky</br>\n<b>Ayuda</b></br>\nayuda(plot)\n    "
+  }
+}

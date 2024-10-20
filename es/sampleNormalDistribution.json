@@ -1,0 +1,22 @@
+{
+  "title": "Ejemplo de distribución normal",
+  "navigation": "Ejemplo de distribución normal",
+  "entrdsname": "Ingrese el nombre del conjunto de datos",
+  "mean": "Media",
+  "sd": "Desviación estándar",
+  "lblnoofsamples": "Número de muestras (filas)",
+  "lblnoofobsv": "Número de observaciones (columnas)",
+  "lbl1": "Aleatorización",
+  "selectRandomSeedRad": "Generar automáticamente una semilla aleatoria (única cada vez)",
+  "selectFixedRandomSeedRad": "Elija como se muestra o cambie manualmente la siguiente semilla aleatoria",
+  "lblseed": "Semilla para la aleatorización",
+  "lblAddtoDS": "Agregar al conjunto de datos",
+  "chklbl1": "Medias de muestras",
+  "chklbl2": "Sumas de muestras",
+  "chklbl3": "Desviaciones estándar de muestras",
+  "help": {
+    "title": "Ejemplo de distribución normal",
+    "r_help": "ayuda(rnorm, paquete=stats)",
+    "body": "\n            ​​\n            <b>Descripción</b>\n            <br/>\n            Densidad, función de distribución, función cuantil y generación aleatoria para la distribución normal con media igual a la media y desviación estándar igual a sd.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantiles.</li>\n                \n                \n                <li>p : vector de probabilidades.</li>\n                \n                \n                <li>n : número de observaciones. Si la longitud(n) > 1, se considera que la longitud es la cantidad requerida.</li>\n                \n                \n                <li>mean : vector de medias.</li>\n                \n                \n                <li>sd : vector de desviaciones estándar.</li>\n                \n                \n                <li>log, log.p : lógico; si es TRUE, las probabilidades p se dan como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; si es TRUE (por defecto), las probabilidades son P[X ≤ x], de lo contrario, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalles</b>\n            <br/>\n            Si no se especifican mean o sd, se asumen los valores predeterminados de 0 y 1, respectivamente.\n            <br/>\n            La distribución normal tiene densidad\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            donde μ es la media de la distribución y σ la desviación estándar.\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dnorm da la densidad, pnorm da la función de distribución, qnorm da la función cuantil, y rnorm genera desviaciones aleatorias.\n            <br/>\n            La longitud del resultado está determinada por n para rnorm, y es el máximo de las longitudes de los argumentos numéricos para las otras funciones.\n            <br/>\n            Los argumentos numéricos que no son n se reciclan a la longitud del resultado. Solo se utilizan los primeros elementos de los argumentos lógicos.\n            <br/>\n            Para sd = 0, esto da el límite a medida que sd disminuye a 0, una masa puntual en mu. sd < 0 es un error y devuelve NaN.\n            \n"
+  }
+}

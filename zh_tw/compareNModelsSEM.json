@@ -1,0 +1,13 @@
+{
+  "title": "比較 N 個 SEM 模型",
+  "navigation": "比較 N 個 SEM 模型",
+  "label1": "比較 N 個 SEM 模型。",
+  "label2": "選擇以下類別的模型（R 類在下面的括號中）",
+  "label3": "結構方程模型 (lavaan)",
+  "modelselector1": "選擇一個或多個模型進行比較：",
+  "help": {
+    "title": "比較 N 個 SEM 模型",
+    "r_help": "help(lavTestLRT, package='lavaan')",
+    "body": "\n                <b>\n用於比較（嵌套）lavaan模型的LRT測試。</b></br>\n<b>用法</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nobject:  一個lavaan類的對象。\n</li>\n</ul>\n<b>返回值</b><br/>\n一個anova類的對象。當給定一個參數時，它簡單地返回該模型的測試統計量。當給定一系列對象時，該函數測試模型之間的關係，重新排序模型以根據其自由度進行比較。<br/>\n<b>包</b></br>\nlavaan</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的R圖標，或在R語法編輯器中運行以下命令：help(lavTestLRT,package='lavaan')</br></br>\n<b>示例</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+  }
+}

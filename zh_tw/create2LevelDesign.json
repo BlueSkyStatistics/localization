@@ -1,0 +1,20 @@
+{
+  "title": "創建非規則（分數）因子2級篩選設計",
+  "navigation": "創建2級篩選設計",
+  "selectedvars": "選擇變量",
+  "datasetname": "設計名稱",
+  "numOfRuns": "運行次數（4的倍數，>=8）",
+  "taguchiOrderChk": "(僅適用於) 12次運行的田口設計",
+  "numOfCenterPts": "中心點數量（如果使用，至少2個）",
+  "centerPointDistribution": "中心點分佈的位置數量（大於1）",
+  "replications": "重複",
+  "repeatOnlyChk": "僅重複",
+  "lbl1": "您可能不需要更改隨機化設置",
+  "randomseeds": "隨機化種子",
+  "randomizationChk": "隨機化設計生成",
+  "help": {
+    "title": "創建2級篩選設計",
+    "r_help": "幫助(pb, 包 = FrF2)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tPlackett-Burman(pb)函數生成非規則分數因子2級篩選設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用R幫助(pb, 包 = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為factor_grid_twolevel_screen_Design.xlsx的示例數據集文件。通過文件打開菜單在數據網格中打開文件\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

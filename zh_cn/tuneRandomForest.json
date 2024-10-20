@@ -1,0 +1,16 @@
+{
+  "title": "调整随机森林模型",
+  "navigation": "调整",
+  "dependentvar": "因变量",
+  "independentvars": "自变量",
+  "ntreetry": "尝试的树木数量",
+  "stepfactor": "步长因子",
+  "improve": "改进",
+  "trace": "跟踪",
+  "plot": "绘图",
+  "help": {
+    "title": "调整随机森林模型",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>描述</b></br>\n从 mtry 的默认值开始，搜索 randomForest 的 mtry 的最佳值（相对于袋外误差估计）。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx : 预测变量的矩阵或数据框\n</li>\n<li>\ny : 响应向量（分类的因子，回归的数值）\n</li>\n<li>\nntreeTry : 调整步骤中使用的树木数量。\n</li>\n<li>\nstepFactor : 在每次迭代中，mtry 由此值增加（或减少）。\n</li>\n<li>\nimprove : OOB 错误的（相对）改进必须达到此值，搜索才能继续\n</li>\n<li>\ntrace : 是否打印搜索进度。\n</li>\n<li>\nplot : 是否将 OOB 错误绘制为 mtry 的函数。\n</li>\n<li>\n... : 传递给 randomForest 的选项\n</li>\n</ul>\n<b>值</b></br>\n返回一个矩阵，其第一列包含搜索的 mtry 值，第二列包含相应的 OOB 错误。</br>\n<b>包</b></br>\nrandomForest​;BlueSky</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框右上角的 R 图标，或在 R 语法编辑器中运行以下命令 help(tuneRF,package='randomForest')\n"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Grafic de contur",
+  "navigation": "Grafic de contur",
+  "x": "Variabila X, specificați o variabilă numerică",
+  "y": "Variabila(e) Y, specificați o sau mai multe variabile numerice",
+  "flip": "Răsturnați axa",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare de fațete",
+  "Facetscale": "Scara de fațete",
+  "help": {
+    "title": "Grafic de contur",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>Descriere</b></br>\n            Efectuați o estimare a densității kernel 2D folosind MASS::kde2d() și afișați rezultatele cu contururi. Acest lucru poate fi util pentru a face față suprapunerii. Aceasta este o versiune 2D a geom_density().</br>\n            Facetele pot fi create opțional specificând o variabilă factor. De asemenea, puteți specifica opțional teme și specifica un titlu și etichete pentru axele x și y​\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"Grafic de contur pentru...\")\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            aes(): Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            x: O variabilă numerică\n            </li>\n            <li>\n            y: O variabilă numerică\n            </li>\n            <li>\n            geomdensity2d: Creează graficul\n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (acesta este opțional)​\n            </li>\n            <li>\n            facet_grid(): Aranjați panourile într-o rețea (acesta este opțional)​\n            </li>\n            <li>\n            theme_calc(): Specifică tema calculatorului (acesta este opțional)​\n            </li>\n            <li>\n            coord_flip(): Răsturnați axa (acesta este opțional)​\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajutor</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_density2d), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n    "
+  }
+}

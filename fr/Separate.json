@@ -1,0 +1,11 @@
+{
+  "title": "Variable Séparée",
+  "navigation": "Séparé",
+  "sepvarlabel": "Variable à séparer",
+  "delimiterlabel": "Caractères utilisés pour séparer",
+  "help": {
+    "title": "Variable Séparée",
+    "r_help": "help(separate_wider_delim, package = 'tidyr')",
+    "body": "\n            Cela sépare les valeurs d'une variable en parties (une variable pour chaque partie) en fonction des caractères qui définissent les parties séparées.\n\t\t\t<br/><br/>\n\t\t\tPar exemple, si le caractère utilisé pour séparer est une virgule (,), il séparera les valeurs autour des virgules.  \n\t\t\t<br/><br/>\n\t\t\tLe nombre de variables ajoutées au jeu de données sera le nombre maximum de parties dans lesquelles une observation a été séparée.  Les noms des nouvelles variables seront le nom de la variable à séparer, plus un suffixe numéroté correspondant à chaque partie.  Les variables contiendront des valeurs manquantes si une observation ne peut pas être séparée en le nombre maximum de variables.  Si les caractères utilisés pour séparer ne peuvent pas être trouvés dans la valeur, alors la valeur d'origine sera renvoyée (c'est-à-dire qu'il n'y a qu'une seule partie).\n\t\t\t<br/><br/>\n\t\t\t<b>Variable à séparer :</b>\n\t\t\t<br/>Spécifiez la variable que vous souhaitez séparer en parties.  Cela peut être une variable de caractère, numérique, facteur, facteur ordinal ou une variable de date.  Une variable non caractérielle sera convertie en variable de caractère aux fins de séparation, mais la variable d'origine restera inchangée.\n\t\t\t<br/><br/>\n\t\t\t<b>Caractères utilisés pour séparer :</b>\n\t\t\t<br/>Spécifiez le motif de caractère qui est le séparateur des parties.  Cela peut être un ou plusieurs caractères.\n\t\t\t<br/><br/>\n            <b>Packages R requis :</b> tidyr, dplyr\n"
+  }
+}

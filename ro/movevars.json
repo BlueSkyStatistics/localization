@@ -1,0 +1,15 @@
+{
+  "title": "Mutare Variabile",
+  "navigation": "Mutare Variabile",
+  "varstomovelabel": "Variabile de Mutat",
+  "locationlabel": "Locație",
+  "firstlabel": "Primul",
+  "lastlabel": "Ultimul",
+  "afterselectedlabel": "După Variabila Selectată",
+  "aftervarlabel": "",
+  "help": {
+    "title": "Mutare Variabile",
+    "r_help": "ajutor(mutare, pachet ='dplyr')",
+    "body": "\nAceasta va muta variabilele într-o locație specificată în setul de date.\n<br/><br/>\n<b>Variabile de Mutat:</b> Variabile care vor fi mutate într-o altă locație. Ele vor fi plasate în ordinea specificată în această casetă.\n<br/><br/>\n<b>Locație:</b> Locația în setul de date pentru a muta variabilele. <b>Primul</b> plasează variabilele la începutul setului de date.  \n<b>Ultimul</b> plasează variabilele la sfârșitul setului de date.  <b>După Variabila Selectată</b> plasează variabilele după această variabilă în setul de date.\n<br/><br/>\n<b>Pachete R Necesare:</b> dplyr\n\t\t\t"
+  }
+}

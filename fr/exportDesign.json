@@ -1,0 +1,9 @@
+{
+  "title": "Exporter le design - trois fichiers (csv, html, rda) seront créés avec le même nom que le design",
+  "navigation": "Exporter le design",
+  "exportPath": "Chemin du fichier pour exporter le design",
+  "help": {
+    "title": "Exporter le design",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tL'exportation du design créera trois fichiers (csv, html, rda) avec le même nom que le design dans le chemin de répertoire choisi\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLe but de l'exportation du design est de mettre en place et de réaliser les expériences selon le design dans le monde réel et de collecter les résultats. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAjoutez des colonnes conformes à la convention de nommage des variables R au fichier csv pour enregistrer les résultats. Ces colonnes supplémentaires sont connues sous le nom de réponse(s) selon le vocabulaire du design des expériences. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUne fois que la ou les colonnes de réponse ont été ajoutées au fichier csv, le menu DOE -> Importer le design peut être utilisé pour charger le fichier csv contre le bon design (déjà ouvert) sur la grille de l'interface utilisateur du jeu de données.  \n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

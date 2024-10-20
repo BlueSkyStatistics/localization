@@ -1,0 +1,15 @@
+{
+  "title": "Stichprobengröße, Präzision des ICC",
+  "navigation": "ICC",
+  "howtouse": "Geben Sie entweder die Stichprobengröße oder die Breite des Konfidenzintervalls an, und das andere wird berechnet",
+  "n": "Stichprobengröße",
+  "width": "Breite des Konfidenzintervalls",
+  "icc": "ICC (Intraklassenkorrelationskoeffizient, 0-1)",
+  "conflevel": "Konfidenzniveau (0-1)",
+  "raters": "Anzahl der Bewerter",
+  "help": {
+    "title": "Stichprobengröße, Präzision der AUC",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen Intraklassenkorrelationskoeffizienten (ICC) basierend auf der Breite des Konfidenzintervalls. Es berechnet die Stichprobengröße oder die Breite des Konfidenzintervalls, wenn der Benutzer das andere angibt. Ob der ICC für eine einseitige oder zweiseitige ANOVA berechnet wird, spielt bei der verwendeten Näherung keine Rolle. Siehe Bonett DG (2002), Stichprobengrößenanforderungen zur Schätzung von Intraklassenkorrelationen mit gewünschter Präzision, Statistics in Medicine, 21:1331-1335.\n<br/><br/>\n<b>Stichprobengröße:</b> Geben Sie die Anzahl der Probanden in der Studie an\n<br/><br/>\n<b>Breite des Konfidenzintervalls:</b> Geben Sie die gewünschte Breite des Konfidenzintervalls an. Die Breite eines Konfidenzintervalls ist ein Maß für die Präzision einer Schätzung und ist die obere Grenze minus die untere Grenze.\n<br/><br/>\n<b>ICC:</b> Geben Sie den erwarteten ICC-Wert an\n<br/><br/>\n<b>Konfidenzniveau:</b> Geben Sie das gewünschte Niveau des Konfidenzintervalls an\n<br/><br/>\n<b>Anzahl der Bewerter:</b> Geben Sie die Anzahl der Bewerter an, die Werte für jeden Probanden bereitstellen.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "繪製模型",
+  "navigation": "繪製模型",
+  "modelselector1": "選擇以下類別之一的模型（括號中的類別）線性模型（lm），廣義線性模型（glm）",
+  "help": {
+    "title": "繪製模型",
+    "r_help": "幫助(plot, 包='graphics')",
+    "body": "\n                <b>描述</b></br>\n用於繪製R對象的通用函數。關於圖形參數參數的更多詳細信息，請參見par。\n對於簡單的散點圖，將使用plot.default。然而，對於許多不同的R對象，包括函數、data.frames、密度對象等，存在繪圖方法。使用methods(plot)和這些的文檔。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nplot(對象)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n對象：可以提供任何具有繪圖方法的R對象。\n</li>\n</ul>\n<b>包</b></br>\ngraphics</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋的右上角的R圖標，或在R語法編輯器中運行以下命令：幫助(plot, 包='graphics')\n"
+  }
+}

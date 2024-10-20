@@ -1,0 +1,18 @@
+{
+  "title": "創建拉丁超立方體設計（用於定量因素）",
+  "navigation": "創建拉丁超立方體（定量）設計",
+  "selectedvars": "選擇變數",
+  "datasetname": "設計名稱",
+  "lblheading": "大小和隨機化",
+  "numOfRuns": "運行次數",
+  "numOfDeciPlaces": "小數位數",
+  "lbl1": "您可能不需要更改隨機化設置",
+  "randomseeds": "隨機化的種子",
+  "randomizationChk": "隨機化設計生成",
+  "lhsDesignType": "拉丁超立方體抽樣設計（檢查lhs或DiceDesign包以獲取其他類型）",
+  "help": {
+    "title": "創建拉丁超立方體設計（用於定量因素）",
+    "r_help": "幫助(lhs.design, 套件 = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tlhs.design函數用於訪問來自lhs包的拉丁超立方體抽樣設計或來自DiceDesign包的空間填充設計，這些設計對於具有許多可能級別的定量因素非常有用。特別是，它們可以用於計算機實驗。大多數設計都是隨機樣本。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R幫助(lhs.design, 包 = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為factor_grid__latin_hypercube_Design.xlsx的示例數據集文件。通過文件打開菜單在數據網格中打開文件\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

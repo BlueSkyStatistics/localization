@@ -1,0 +1,23 @@
+{
+  "title": "Sumarizări, doar numerice",
+  "navigation": "Variabile numerice doar (Legacy)",
+  "tvarbox1": "Variabile selectate",
+  "tvarbox2": "Grupare după",
+  "min": "Min",
+  "max": "Max",
+  "mean": "Medie",
+  "median": "Mediana",
+  "sum": "Sumă",
+  "sd": "Abatere standard",
+  "stderror": "Eroare standard a mediei",
+  "iqr": "Interval intercuartilic",
+  "quantiles": "Cuartile",
+  "probs": "Specificați cuartile (dacă cuartilul este selectat)",
+  "addIsstatnames": "Nume de funcții statistice suplimentare separate prin virgulă, de exemplu var)",
+  "label1": "Opțiuni",
+  "help": {
+    "title": "Sumarizări, doar numerice",
+    "r_help": "",
+    "body": "\n<b>Descriere</b></br>\nProduce următoarele statistici numerice:</br>\nmin, max, medie, mediană, sumă, sd, eroare standard, iqr, cuartile. Dacă cuartile sunt selectate, puteți specifica cuartile necesare separate prin virgulă.</br>\nÎn plus, utilizatorul poate trece o listă de nume de funcții statistice separate prin virgulă, de exemplu var.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"numele dataset-ului\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variabilele de scară selectate (de exemplu Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: una sau mai multe variabile factor pentru grupare (de exemplu Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Lista de funcții. Cele setate pe TRUE vor fi executate. (de exemplu min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilitățile cuartilelor\n</li>\n<li>\nadditionalStats: Funcție statistică suplimentară pe care utilizatorul o poate trece (de exemplu var)\n</li>\n<li>\ndatasetName: Numele dataset-ului din care sunt alese datasetColumnObjects și groupByColumnObjects\n</li>\n</ul>\n<b>Valoare</b></br>\nUn obiect de clasă \"data.frame\", care oferă rezultatele pentru fiecare funcție pe fiecare variabilă.</br>\n<b>Exemple</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Pachet</b></br>\nBlueSky</br>\n<b>Ajutor</b></br>\nAjutorul R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă trebuie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
+  }
+}

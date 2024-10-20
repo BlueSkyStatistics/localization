@@ -1,0 +1,16 @@
+{
+  "title": "Variable de Décalage ou de Lead",
+  "navigation": "Variable de Décalage ou de Lead",
+  "varnamelabel": "Nouveau Nom de Variable (sans espaces)",
+  "lagleadvarlabel": "Variable à Décaler / à Mener",
+  "groupbyvarslabel": "Variables à Regrouper",
+  "typelabel": "Décalage ou Lead",
+  "laglabel": "Décalage",
+  "leadlabel": "Lead",
+  "positionlabel": "Nombre de Positions",
+  "help": {
+    "title": "Variable de Décalage ou de Lead",
+    "r_help": "help(lag, package ='dplyr')",
+    "body": "\nCela crée une nouvelle variable qui trouve la valeur précédente (décalage) ou suivante (lead) dans une variable existante en fonction de la position de la ligne.\n<br/><br/>\n<b>Nouveau Nom de Variable:</b> Nom de la variable pour stocker les valeurs décalées ou de lead\n<br/><br/>\n<b>Variable à Décaler / à Mener:</b> Spécifiez la variable existante à partir de laquelle extraire les valeurs décalées ou de lead\n<br/><br/>\n<b>Variables à Regrouper (optionnel):</b> Spécifiez les variables à regrouper. Si des variables sont spécifiées ici, les valeurs décalées et de lead \nseront obtenues uniquement au sein des groupes définis par ces variables. Si aucune variable n'est spécifiée ici, les valeurs décalées et de lead \nseront obtenues en fonction de l'ensemble de la colonne spécifiée dans la Variable à Décaler / à Mener. En général, les valeurs doivent être triées par les variables de regroupement \navant de faire un décalage ou un lead.\n<br/><br/>\n<b>Décalage ou Lead:</b> Choisissez si vous souhaitez trouver la valeur précédente (décalage) ou la valeur suivante (lead)\n<br/><br/>\n<b>Nombre de Positions:</b> Spécifiez le nombre de positions à décaler ou à mener. Par exemple, une valeur décalée de 1 extrairait la valeur précédente et une valeur décalée de 2 extrairait la valeur 2 positions auparavant.\n<br/><br/>\n<b>Packages R Requis:</b> dplyr\n\t\t\t"
+  }
+}

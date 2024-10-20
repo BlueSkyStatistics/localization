@@ -1,0 +1,21 @@
+{
+  "title": "Cox, 高級",
+  "navigation": "Cox, 高級",
+  "helplabel": "點擊對話框右上角的 ? 按鈕以獲取有關示例數據集和支持的數據格式的詳細信息。",
+  "modelname": "輸入模型名稱",
+  "timevar": "事件發生或審查的時間",
+  "eventvar": "事件 (1 = 事件 1, 0 = 審查)",
+  "modelterms": "獨立變量的模型表達式構建器",
+  "weightvar": "權重 (可選)",
+  "tiemethod": "綁定時間方法",
+  "forestplotbox": "森林圖",
+  "diagnosticsbox": "模型診斷",
+  "martscalebox": "空模型馬丁蓋爾殘差軸最小值 (-Inf 到 1)：",
+  "devbox": "偏差分析 (類型 II)",
+  "devtype": "檢驗統計量",
+  "help": {
+    "title": "Cox, 高級",
+    "r_help": "help(coxph, package = 'survival')",
+    "body": "\n\t\t\t請參閱安裝目錄中的示例數據集，默認位置在驅動器：&bsol;program files&bsol;BlueSky Statistics&bsol;10&bsol;Samples_and_Documents&bsol;Datasets_and_Demos&bsol;Regression_Cox&bsol;mockstudy_upd.RData。變量 Followup_time 應作為事件或審查的時間輸入，變量 Event 應作為事件 (1 = 事件, 0 = 審查) 輸入。性別、年齡和 BMI 可以是獨立變量。 \n\t\t\t<br/>\n\t\t\t該數據集是 arsenal 包中 mockstudy 數據集的更新版本。\n\t\t\t<br/><br/>\n            <b>Cox 比例風險模型</b>\n            <br/>\n            <br/>\n            為帶有審查觀察的時間到事件數據擬合 Cox 比例風險模型。提供模型擬合統計、參數估計和風險比。可用選項包括綁定時間方法、模型診斷（如比例風險和協變量功能形式評估）以及帶有置信區間的風險比森林圖。該模型使用 survival 包中的 coxph 函數進行擬合。\n            <br/>\n            <br/>\n            <b>時間：</b> 事件發生者的事件時間或未發生事件者的最後隨訪時間\n            <br/><br/>\n            <b>事件：</b> 數值事件指示符；1=事件，0=審查\n            <br/><br/>\n            <b>獨立變量：</b> 要包含在模型中的獨立變量。因子、字符串和邏輯變量將被虛擬編碼。\n            <br/><br/>\n            <b>權重：</b> 觀察權重的數值變量。在每條記錄不應被視為一個觀察的情況下很有用。 \n            <br/>\n            <br/>\n            <b>所需包：</b> survival, broom, survminer, car, BlueSky\n            <br/>\n            <br/>\n            點擊獲取 R 幫助按鈕以獲取有關 coxph 函數的詳細 R 幫助。\n            <br/>\n            <br/>\n            <br/>\n            <br/>\n            <b>選項</b>\n            <br/>\n            <br/>\n            <b>綁定時間方法：</b>\n            <br/>\n            破壞綁定觀察時間的方法。當沒有很多綁定時間時，Efron 通常是更好的選擇。如果有很多綁定時間，例如在離散時間情況下，精確方法可能會有益，但可能需要更長時間來擬合模型。 \n            <br/>\n            <br/>\n            <b>森林圖：</b>\n            <br/>\n            模型中每個預測變量的風險比和置信區間圖。\n            <br/>\n            <br/>\n            <b>模型診斷：</b>\n            <br/>\n            如果選擇，將提供比例風險測試和圖表，以及對模型中每個協變量的功能形式評估。空模型馬丁蓋爾殘差軸的最小值選項可能需要更改，以便所有殘差出現在圖中。要獲得功能形式評估，您必須僅指定數值預測變量，並且沒有缺失數據。請參見變量 > 缺失值 > 刪除 NAs。\n            <br/>\n            <br/>\n            <b>偏差分析 (類型 II)：</b>\n            模型中每個預測變量的全局測試。將為具有超過 2 個水平的效應提供多自由度測試。可以獲得 Wald 和似然比測試，似然比測試在小樣本中具有更好的屬性。\n            \n      "
+  }
+}

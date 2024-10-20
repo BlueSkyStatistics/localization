@@ -1,0 +1,16 @@
+{
+  "title": "建立經過調整的模型與自助重採樣",
+  "navigation": "自助重採樣",
+  "modelname": "輸入調整模型的名稱",
+  "iterator": "輸入重採樣迭代次數",
+  "dependent": "要預測的變數",
+  "levelOfInterest": "當要預測的變數有兩個層級時，請指定感興趣的層級。混淆矩陣和相關統計信息將以指定的感興趣層級作為參考顯示",
+  "independent": "自變數",
+  "label1": "某些模型對缺失值或因子型的因變數有要求。關於處理缺失值的信息，請參見 [ 變數 > 缺失值 ]，關於虛擬編碼因子變數的信息，請參見 [ 變數 > 計算 > 虛擬編碼 ]。點擊對話框右上角的 ? 圖標以獲取詳細信息。",
+  "ModelSelection": "選擇模型類別，然後選擇模型類型",
+  "help": {
+    "title": "建立經過調整的模型與自助重採樣",
+    "r_help": "help(train, package=caret)",
+    "body": "\n<b>描述</b></br>\n自助重採樣使用 caret 包中的 trainControl 和 train 函數來創建經過調整/優化的模型。<br/>\n通過在調整參數上重採樣結果來建立經過調整的模型。調整的結果顯示在輸出底部表格下方<br/>\n一旦建立了經過調整的模型，我們使用該模型對訓練數據集（用於建立模型）進行預測，並顯示混淆矩陣和相關統計信息。<br/>\n注意：有關需要虛擬編碼因變數的模型及其支持的因變數的詳細信息，請參見 URL https://www.blueskystatistics.com/Articles.asp?ID=330。還有一些模型不支持缺失值，如果在建立模型時顯示錯誤，請刪除缺失值。<br/>\n經過調整的模型存儲在您在文本框控件中指定的 train 類對象中。<br/>\n最終經過調整的模型所選參數值顯示在輸出底部。<br/>\n在具有兩個層級的預測變數的情況下，您可以選擇參考層級/感興趣層級。<br/>\n混淆矩陣和相關統計信息是使用指定的感興趣層級創建的。<br/>\n<code> \ntrain_control <- caret::trainControl(method=\"boot\", number=5)<br/>\n#一般語法<br/>\ntunedModel <- caret::train(x = 用於訓練模型的樣本數據, y = 因變數, trControl = train_control, method = \"使用的模型\", prob.model=TRUE )<br/>\n#示例填充語法<br/>\ntunedModel <- caret::train(as.data.frame(TrainData), dependentVariable, trControl=train_control, method = \"adaboost\", preProcess = NULL, prob.model = TRUE )<br/>\n</code>\n我們為經過調整的模型生成混淆矩陣和模型準確性統計信息。具體如下：\n<ul>\n<li>\n我們通過在優化的 train 類模型上調用 predict 函數，從訓練數據集中生成預測值（內部 predict.train 是 R 調用的 caret 包中的函數）<br/>\n<code> \npredictedValues = predict(由 train 函數返回的 tunedModel)<br/>\n</code> <br/>\n</li>\n<li>\n我們從生成的混淆矩陣計算準確性統計信息，如下所示<br/>\n<code> \ncaret::confusionMatrix (predictions = predictedValues, reference = 模型因變數)<br/>\n</code> \n</li>\n</ul>\n您可以使用最終的經過調整/優化的模型對數據集進行評分。為此，請按照以下步驟操作：<br/>\n1. 轉到您想要評分的數據集。注意：要評分的數據集中的變數名稱（即自變數）必須與您用於最初創建經過調整模型的數據集中的變數名稱匹配。如果不匹配，將顯示錯誤。此錯誤消息將在模型評分對話框的診斷測試部分下顯示，請參見下面的第 2 點。<br/>\n2. 在模型評估>預測>模型評分下打開模型評分對話框。<br/>\n3. 選擇您想要用於評分的數據集的模型。您可以按類別過濾您構建的模型。<br/>\n4. 選擇模型後，指定一個前綴以存儲預測值。您可以選擇性地保存預測的置信區間並生成混淆矩陣。您必須為包含預測/評分的變數指定前綴。預測值和預測概率（如適用）將作為新變數存儲在數據集的末尾。例如，如果指定的前綴為 AA，則預測值存儲在變數 AA_original 因變數名稱_Predictions 中，預測概率存儲在變數 AA_Level1_PredictedProbs 中。<br/>\n5. 點擊運行按鈕對數據集進行評分。<br/>\n<b>包</b></br>\ncaret</br>\n<b>幫助</b></br>\n有關詳細幫助，請點擊此對話框右上角的 R 圖標，或在 R 編輯器窗口中運行以下命令 help(train, package ='caret')"
+  }
+}

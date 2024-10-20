@@ -1,0 +1,23 @@
+{
+  "toplabel": "預設情況下，除了選定的重複因子和數值變量外，所有數據集列都將用於識別每個觀察值。要覆蓋，請參見下方",
+  "id_cols": "可選：預設情況下，除了選定的重複因子和數值變量外，所有數據集列都將用於識別每個觀察值。要覆蓋，請選擇並移動變量",
+  "title": "重塑，從長到寬",
+  "navigation": "更寬",
+  "labelTop": "當指定單一重複因子和數值變量時，新變量名稱以重複因子的名稱為前綴。在所有其他情況下，它們以數值變量的名稱為前綴",
+  "label0": "您可以選擇將結果保存到新數據集中或覆蓋現有數據集",
+  "label1": "選項",
+  "New": "將結果保存到新數據集中",
+  "newdatasetname": "輸入數據集名稱",
+  "Existing": "覆蓋現有數據集",
+  "subsetvars": "輸入重複因子的變量名稱，例如時間",
+  "dontReshape": "輸入重複值的變量名稱，例如計數",
+  "names_sort": "按字母順序排列列名",
+  "appearence_sort": "按出現順序排列列名",
+  "names_sep": "可選分隔符，用於在連接指定的變量名稱以形成新變量名稱時使用",
+  "label2": "排序選項",
+  "help": {
+    "title": "重塑（從長到寬）",
+    "r_help": "幫助(pivot_wider, 套件=tidyr)",
+    "body": "\n           <b>描述</b></br>\n請查看視頻 <a href=\"https://youtu.be/ypLXqmFp3jY\">從長到寬重塑</a></br>\n將寬數據集轉換為長數據集，通過轉換（擴展）列。Pivot_wider \"延長\" 數據，增加行數並減少列數。當您有需要在行中顯示的變量/列時，使用 pivot_wider。 \n<br/>\n注意：當指定一個重複因子時，新變量名稱以重複因子的名稱為前綴。當指定多個重複因子時，它們以數值變量的名稱為前綴</br>\n<b>用法</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndataset: 一個數據框/tibble\n</li>\n<li>\nnames_from: 輸出列的名稱 \n</li>\n<li>\nvalues_from: 獲取單元格值的列 \n</li>\n<li>\nnames_sort: 列名是否應該排序？如果為 FALSE，默認情況下，列名按首次出現的順序排列。\n</li>\n<li>\nnames_sep: 可選分隔符，用於在連接指定的變量名稱以形成新變量名稱時使用\n</li>\n<li>\n<b>值</b><br/>\n返回重塑的數據集\n<br/>\n<b>包</b></br>\ntidyr\n<b>幫助</b></br>\n幫助(pivot_wider)\n"
+  }
+}

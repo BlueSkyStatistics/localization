@@ -1,0 +1,18 @@
+{
+  "title": "Verificarea ordinii datelor",
+  "navigation": "Verificarea ordinii datelor",
+  "datevarslabel": "Variabile de dată (specificați de la cea mai veche la cea mai recentă; aceeași clasă; cel puțin 2)",
+  "compgrplabel": "Comparare",
+  "compgrpnote": "Notă: Aceasta este compararea între toate datele specificate mai sus care vor fi verificate pentru erori de ordine, de exemplu, valorile ar trebui să fie data1<data2<data3.",
+  "ltlabel": "<",
+  "ltelabel": "<=",
+  "idvarslabel": "Variabile de identificare a rândurilor (opțional)",
+  "dateerrorboxlabel": "Creează un set de date cu variabila de eroare de dată",
+  "dateerrordatanamelabel": "Numele setului de date",
+  "dateerrorvarlabel": "Numele variabilei de eroare de dată",
+  "help": {
+    "title": "Verificarea ordinii datelor",
+    "r_help": "ajutor('<', pachet = 'bază')",
+    "body": "\nAceasta creează o listă de rânduri în setul de date activ în care valorile variabilelor de dată nu sunt într-o ordine specificată. Acest lucru ajută la identificarea posibilelor erori ale variabilelor de dată atunci când sunt necesare date sau\nore pentru o analiză. De exemplu, dacă trei coloane de date ar trebui să fie în ordinea data1 < data2 < data3, acest dialog va imprima toate observațiile în care\nvalorile acelor variabile nu respectă acea ordine. Valorile de dată lipsă sunt permise în variabilele specificate și nu vor fi utilizate pentru comparații.\n<br/><br/>\n<b>Variabile de dată (specificați de la cea mai veche la cea mai recentă; aceeași clasă; cel puțin 2):</b> Specificați cel puțin 2 variabile de dată în ordinea de la cea mai veche la cea mai recentă. Acestea pot fi orice clasă de dată\n(POSIXct, Dată), dar toate variabilele specificate trebuie să fie din aceeași clasă de dată. Dacă nu, va apărea o eroare.\n<br/><br/>\n<b>Comparare:</b> Specificați operatorul de comparare utilizat pentru a compara valorile de dată. \"<\" înseamnă mai mic decât și \"<=\" înseamnă mai mic sau egal cu. Dacă se alege \"<\", atunci datele care\nsunt egale vor fi marcate ca erori. Dacă se alege \"<=\" atunci datele care sunt egale nu vor fi marcate ca erori.\n<br/><br/>\n<b>Variabile de identificare a rândurilor (opțional):</b> Specificați una sau mai multe variabile care ar putea fi utile pentru a identifica rândurile. De exemplu, numărul de identificare al subiectului. Acestea vor fi\ninclusă în lista de erori. Dacă nu sunt specificate variabile, numărul de rând al setului de date va fi singurul identificator.\n<br/><br/>\n<b>Creează un set de date cu variabila de eroare de dată:</b> Aceasta va crea un set de date separat cu datele originale și o variabilă care indică dacă fiecare observație are o eroare de ordine de dată\n(codificat ca 1=eroare de ordine de dată și 0=fără eroare de ordine de dată). <b>Numele setului de date</b> este numele dorit al acestui set de date și <b>Numele variabilei de eroare de dată</b> este numele dorit\nal variabilei de eroare de ordine de dată în acest set de date.\n\t\t"
+  }
+}

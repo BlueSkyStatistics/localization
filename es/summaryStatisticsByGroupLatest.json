@@ -1,0 +1,14 @@
+{
+  "title": "Estadísticas Resumidas",
+  "navigation": "Estadísticas Resumidas (Legacy)",
+  "tvarbox1": "Variables Seleccionadas",
+  "tvarbox2": "Agrupar por",
+  "ChkboxShowOnlyTopFewFactors": "Mostrar conteos solo para los N niveles de factores superiores",
+  "txtNumTopFactorsToShow": "Ingrese un valor para N",
+  "label1": "Nota: Cuando la casilla de verificación no está marcada, se mostrarán los conteos para TODOS los niveles. Esto puede llevar un tiempo considerable si tiene muchos niveles de factores.",
+  "help": {
+    "title": "Estadísticas Resumidas",
+    "r_help": "",
+    "body": "\n<b>Descripción</b></br>\nGenera los resúmenes para cada grupo. Una o más variables de origen se agrupan por las variables de destino. Muestra el Mínimo, el 1er Cuartil, la Mediana, la Media, el 3er Cuartil, el Máximo y el conteo de NAs para variables numéricas y de fecha.</br>\nLa ayuda de R no está disponible porque hemos escrito código personalizado utilizando múltiples funciones de R. Si necesita inspeccionar el código, haga clic en el botón \"<>\".</br>\n    "
+  }
+}

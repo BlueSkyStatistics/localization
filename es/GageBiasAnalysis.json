@@ -1,0 +1,13 @@
+{
+  "title": "Análisis de sesgo de gage, básico",
+  "navigation": "Análisis de sesgo de gage, básico",
+  "variableRespSelcted": "(Opcional si se selecciona la variable de sesgo) Seleccione la variable para medición/respuesta",
+  "variableRefSelcted": "Seleccione la variable para el valor de referencia/estándar",
+  "variableBiasSelcted": "(Opcional) Seleccione la variable para el sesgo si está disponible; de lo contrario, se calculará automáticamente",
+  "alpha": "Intervalo de confianza para linealidad (entre 0 y 1)",
+  "help": {
+    "title": "Análisis de sesgo de gage",
+    "r_help": "ayuda(lm, paquete = stats)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar el análisis de sesgo de linealidad\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R ayuda(lm, paquete = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar los archivos de conjunto de datos de muestra linearityBias.xlsx. Abra los archivos en la cuadrícula de datos con el menú de apertura de archivos\n\t\t\t\t<br/>\n\t\t\t\tElija las variables del cuadro de selección, Referencia y Medición\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

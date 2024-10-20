@@ -1,0 +1,18 @@
+{
+  "title": "Reordonarea manuală a nivelurilor de factor",
+  "navigation": "Reordonare manuală",
+  "reordervarlabel": "Factor de reordonat",
+  "levelslabel": "Specificați nivelurile de factor de mutat (între ghilimele): de exemplu, 'nivel 1', 'nivel 2', etc.",
+  "placelabel": "Unde să plasați nivelurile",
+  "firstlabel": "Primul",
+  "lastlabel": "Ultimul",
+  "newoverwritelabel": "Creează o variabilă nouă sau suprascrie variabila existentă",
+  "newvarlabel": "Variabilă nouă",
+  "overwritevarlabel": "Suprascrie variabila",
+  "newvarnamelabel": "Numele noii variabile (fără spații / caractere speciale)",
+  "help": {
+    "title": "Reordonarea manuală a nivelurilor de factor",
+    "r_help": "help(fct_relevel, package ='forcats')",
+    "body": "\nAcesta este folosit pentru a specifica unul sau mai multe niveluri de factor pe care doriți să le plasați mai întâi sau la sfârșit în ordinea de sortare. Acest lucru poate fi util pentru modele, \n deoarece primul nivel de factor devine grupul de referință pentru estimările parametrilor atunci când se folosește codificarea celulei de referință. De asemenea, pot fi utile în \nreprezentarea grafică, deoarece ordinea de sortare este folosită pentru a afișa categoriile.\n<br/><br/>\n<b>Factor de reordonat:</b> factor pe care doriți să-l reordonați\n<br/><br/>\n<b>Specificați nivelurile de factor de mutat (între ghilimele):</b> Acestea sunt nivelurile de factor pe care doriți să le reordonați. \nNumai nivelurile existente vor fi reordonate. Dacă specificați un nivel inexistent, va fi emis un avertisment, dar orice nivel existent va fi ordonat în \nmodul specificat de dumneavoastră. Vizualizați nivelurile în fila Variabile din grila de date pentru a vedea nivelurile curente și ordinea de sortare sau mergeți la Variabile > Niveluri de factor > Afișare. \nRețineți că specificarea tuturor nivelurilor de factor existente va reordona toate nivelurile, indiferent dacă selectați \"Primul\" sau \"Ultimul\" pentru plasarea nivelurilor.\n<br/><br/>\n<b>Unde să plasați nivelurile:</b> Selectarea \"Primul\" va plasa nivelurile specificate primele în ordinea de sortare. Selectarea \"Ultimul\" va plasa nivelurile specificate ultimele în ordinea de sortare.\n<br/><br/>\n<b>Creează o variabilă nouă sau suprascrie o variabilă existentă:</b> Controlează dacă doriți să creați o variabilă nouă cu un nume nou sau să suprascrieți variabila existentă. Numele \nnevei variabile nu poate conține caractere speciale precum #, $, %, &, (, ), =, etc. Sunt permise caracterele de subliniere, \"_\".\n<br/><br/>\n<b>Exemple:</b> Presupuneți că aveți un factor cu patru niveluri cu etichetele \"a\", \"b\", \"c\", \"d\" cu o ordine de sortare de \"a\",\"b\",\"c\",\"d\" (de la primul la ultimul). Specificarea \"d\" ca \nprimul în ordinea de sortare ar crea un factor cu o ordine de sortare de \"d\", \"a\", \"b\", \"c\". Specificarea \"b\", \"a\" ca ultimele în ordinea de sortare ar crea un factor \ncu o ordine de sortare de \"c\",\"d\",\"b\",\"a\". Specificarea \"b\",\"c\",\"d\",\"a\" (adică toate nivelurile) ar crea un factor cu o ordine de sortare de \"b\",\"c\",\"d\",\"a\".\n<br/><br/>  \n<b>Pachete R necesare:</b> dplyr, forcats\n\t\t\t"
+  }
+}

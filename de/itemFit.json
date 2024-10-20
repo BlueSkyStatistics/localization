@@ -1,0 +1,12 @@
+{
+  "title": "Item Fit",
+  "navigation": "Item Fit",
+  "label1": "Wählen Sie ein Modell aus (Modelle der Klassen Rm, dRm, tam.mml, tam.mml.2pl, tam.mml.mfr unterstützt)",
+  "label1b": "Wenn keine Modelle verfügbar sind, müssen Sie zuerst ein Modell erstellen, indem Sie Modellanpassung -> IRT auswählen",
+  "modelselector1": "Wählen Sie ein Modell aus",
+  "help": {
+    "title": "Item Fit",
+    "r_help": "hilfe(itemfit, paket='eRm')",
+    "body": "\n                <b>Beschreibung</b></br>\n                Für Modelle der Klassen Rm oder dRm (erstellt mit IRT->Einfaches Rasch-Modell mit CML-Schätzung) verwendet die Funktion itemfit, um Itemfit-Statistiken anzuzeigen.\n                <br/>\n                Für Modelle der Klassen tam.mml, tam.mml.2pl, tam.mml.2pl, tam.mml.mfr (erstellt mit IRT->Einfaches Rasch-Modell, Teilkreditmodell, Ratingskalenmodell und multifazettierte Modelle (Teil-Kredit und Ratingskala) mit MML-Schätzung verwendet die Funktion msq.itemfit zur Berechnung der mittleren quadratischen Residuen-basierten Item-Fit-Statistiken (Infit, Outfit)\n\n                <br/><br/>\n                <b>Verwendung</b>\n                <br/>\n                <code>\n                eRm::itemfit(objekt)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(objekt)\n                </code>\n                <br/><br/>\n                <b>Details</b>\n                <br/>  \n                Führen Sie Folgendes im BlueSky Statistics Syntax-Editor aus: hilfe(itemfit, paket ='eRm')\n                <br/>\n                Führen Sie Folgendes im BlueSky Statistics Syntax-Editor aus: hilfe(msq.itemfit, paket ='TAM')\n                <br/>\n                Die detaillierte Hilfe wird in Ihrem Standardbrowser geöffnet         \n                <br/><br/>\n                <b>Pakete</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>Hilfe</b>\n                <br/>\n                hilfe(itemfit, paket='eRm')\n                "
+  }
+}

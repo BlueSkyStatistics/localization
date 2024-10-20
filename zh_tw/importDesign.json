@@ -1,0 +1,11 @@
+{
+  "title": "導入設計 - 必須是帶有添加的回應列的csv文件，之前導出的設計",
+  "navigation": "導入設計回應",
+  "datasetname": "用於創建帶有回應的設計的名稱",
+  "importResp": "設計文件的文件路徑（必須是csv文件），其中包含回應列",
+  "help": {
+    "title": "將回應導入現有設計",
+    "r_help": "幫助(add.response, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t導入帶有添加回應列的設計csv文件，即從之前導出的原始設計中進行的實驗結果的編碼\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t導入csv文件的目的是在數據集UI網格中自動將回應列從csv文件添加到已打開的設計中，並創建一個指定名稱的新設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一旦創建了帶有回應列的新設計 - 可以通過DOE -> 分析設計菜單使用各種分析方法進行分析\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t此外，可以通過DOE -> 修改設計 -> 添加/刪除回應菜單來指定/取消指定一個或多個回應列\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果所需的設計尚未在數據集UI網格中打開，請使用文件打開菜單加載之前通過“導出設計”菜單導出的設計R對象（.rda文件）到文件系統中的目錄中。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關更多信息 - 使用R幫助(add.response, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

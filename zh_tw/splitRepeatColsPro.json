@@ -1,0 +1,24 @@
+{
+  "title": "拆分/合併具有重複變數組的數據集",
+  "navigation": "重複變數集",
+  "removeColsWithConstantChk": "在拆分或合併之前，刪除所有具有常量值的列（不區分大小寫）",
+  "removeRowsWithNAsChk": "僅保留完整案例，即在輸出數據集中刪除任何空或NA值的整行",
+  "resultDatasetNameSuffix": "(可選) 一個或多個字符串（用逗號分隔），用作輸出數據集名稱的後綴",
+  "splitDatasetRad": "根據重複變數集將數據集拆分為多個數據集",
+  "autoDetectColGroupLengthRad": "自動檢測要拆分或合併的重複變數集",
+  "manualColGroupLengthRad": "指定用於拆分或合併的重複變數集的長度",
+  "manualRepeatingColumnGroupLength": "重複變數集的長度",
+  "outputColumnNames": "(可選) 變數名稱列表（用逗號分隔），用於輸出數據集",
+  "collapseDatasetRad": "合併以創建一個長數據集，而不是拆分為多個數據集",
+  "collapseGpIDPrefix": "設置ID值的前綴",
+  "collapseGpIDColName": "設置ID變數名稱（將在輸出數據集中創建一個新變數）",
+  "collapseGpIDColFirstChk": "將設置ID變數設為第一列（取消選中為最後一列）",
+  "makeCollapseGpIDColFactorChk": "將設置ID變數設為因子",
+  "label1": "重複變數集的檢測",
+  "label2": "拆分或合併數據集？",
+  "help": {
+    "title": "拆分/合併具有重複變數組的數據集",
+    "r_help": "",
+    "body": "\n            <b>描述</b></br>\n            此對話框用於拆分（為多個數據集）或合併（為一個長數據集）具有重複變數集的數據集\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t示例 1：要嘗試此操作，您可以使用名為 Repeating Variable Sets.xlsx 的示例數據集文件\n\t\t\t<br/>\n\t\t\t通過文件打開菜單在數據網格中打開該文件\n\t\t\t<br/>\n\t\t\t在對話框中 - 輸入\n\t\t\t<br/>\n\t\t\t將創建三個數據集，因為有三個重複變數集。您可以輸入零個、一個或多個\n\t\t\t輸出數據集名稱後綴的字符串，如 abcX、abcY、abcZ\n\t\t\t<br/>\n\t\t\t將對話框中的每個其他項目保留為默認值  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t示例 2：要嘗試此操作，您可以使用名為 Repeating Variable Sets2.xlsx 的示例數據集文件\n\t\t\t<br/>\n\t\t\t通過文件打開菜單在數據網格中打開該文件\n\t\t\t<br/>\n\t\t\t在對話框中 - 輸入\n\t\t\t<br/>\n\t\t\t將創建四個數據集，因為有四個重複變數集\n\t\t\t<br/>\n\t\t\t將對話框中的每個項目保留為默認值 \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t您可以使用同樣的兩個示例數據集文件嘗試對話框中“拆分或合併數據集？”部分的合併選項，以創建一個單一的輸出數據集\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

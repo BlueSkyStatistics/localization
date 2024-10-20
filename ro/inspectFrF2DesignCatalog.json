@@ -1,0 +1,17 @@
+{
+  "title": "Răsfoiți un catalog de design FrF2 (de exemplu, catlg)",
+  "navigation": "Răsfoiți catalogul de design FrF2",
+  "designCatalog": "Numele catalogului de design (trebuie să fie un obiect de clasă catlg)",
+  "designNamefromCatalog": "Numele designului din catalog",
+  "numRuns": "Numărul de rulări (dacă sunt mai mult de una, separați-le prin , de exemplu 8,16,64)",
+  "numFactors": "Numărul de factori (dacă sunt mai mult de unul, separați-i prin , de exemplu 4,5,11)",
+  "minResolution": "Rezoluția minimă a designului (de exemplu, tastați 3 pentru III, 4 pentru IV, 5 pentru V, ..)",
+  "MaxC2Chk": "Dacă nu este bifat - designurile sunt ordonate după aberația minimă sau dacă este bifat - după numărul maxim de 2fis clare",
+  "showAliasChk": "Arată structura alias (până la 2fis)",
+  "maxNumberofDesignPrint": "Arată numărul maxim de designuri",
+  "help": {
+    "title": "Răsfoiți un catalog de design FrF2 (de exemplu, catlg)",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tRăsfoiți/Inspectați elementele de design sau extrageți informații din catalogul de design de clasă catlg din pachetul FrF2\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Diagramă Pareto",
+  "navigation": "Diagramă Pareto",
+  "label1": "Trei opțiuni - Format lung (implicit), adică defecte și număr în coloane verticale, Format lat, adică defecte ca nume de coloană și număr ca rânduri, și Calculați numerele din datele brute",
+  "selectLongRad": "Opțiunea 1: Format lung - alegeți categoria de defecte și numărul de defecte",
+  "selectWideRad": "Opțiunea 2: Format lat - Numele coloanelor vor fi folosite ca categorie de defecte, iar prima linie (implicit) va fi folosită ca număr",
+  "selectRawRad": "Opțiunea 3: Date brute - calculați numerele pentru a trasa diagrama Pareto",
+  "rownumForCounts": "Numărul rândului (implicit 1) care va fi folosit pentru numere",
+  "mainTitle": "Titlul diagramei",
+  "defects": "Variabilă (de exemplu, categorii) de trasat",
+  "counts": "(Opțional) Variabilă de utilizat ca număr pentru a trasa",
+  "grouping": "(Opțional) Variabilă de grupare pentru a trasa mai multe diagrame Pareto una lângă alta",
+  "uniformBarOrderChk": "Trasați barele în aceeași ordine alfabetică (pe grupuri). Debifați pentru a ordona barele în funcție de frecvența descrescătoare (în fiecare grup)",
+  "grouping2": "(Opțional) O variabilă de grupare pentru a trasa mai multe Pareto una lângă alta",
+  "rawVariable": "Variabilă (de exemplu, categorii) cu date brute",
+  "xlab": "Un șir care specifică eticheta pentru axa x",
+  "ylab": "Un șir care specifică eticheta pentru axa y",
+  "ylab2": "Un șir care specifică eticheta pentru a doua axă y pe partea dreaptă",
+  "percentStep": "Pasul procentual care va fi folosit ca marcaje pentru a doua axă y pe partea dreaptă",
+  "digits": "Numărul de zecimale pentru tabelul statistic",
+  "help": {
+    "title": "Diagramă Pareto",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția pareto.chart creează un tabel de statistici și trasează o diagramă Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit defects_frequency_pareto_chart.xlsx. Deschideți fișierul în grila de date prin meniul de deschidere a fișierelor\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

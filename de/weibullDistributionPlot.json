@@ -1,0 +1,26 @@
+{
+  "title": "Weibull-Verteilungsdiagramm",
+  "navigation": "Weibull-Verteilungsdiagramm",
+  "shape": "Form",
+  "scale": "Skala",
+  "pdenfun": "Dichtefunktion plotten",
+  "pdstfun": "Verteilungsfunktion plotten",
+  "lblregions": "Optional Regionen unter der Dichtefunktion angeben durch",
+  "xvals": "x-Werte",
+  "quantiles": "Quantile",
+  "lblRegFill": "Zu füllende Regionen (eine oder zwei angeben oder leer lassen)",
+  "lblreg1": "Region 1 :",
+  "lblreg2": "Region 2 :",
+  "lblregfrm": "Von",
+  "lblregto": "Bis",
+  "lblregcol": "Farbe",
+  "lblLegPos": "Position der Legende",
+  "toprt": "Oben rechts",
+  "toplt": "Oben links",
+  "topmid": "Oben Mitte",
+  "help": {
+    "title": "Weibull-Verteilungsdiagramm",
+    "r_help": "hilfe(qweibull, paket=stats)",
+    "body": "\n            ​​\n            <b>Beschreibung</b>\n            <br/>\n            Dichte, Verteilungsfunktion, Quantilfunktion und Zufallszahlen für die Weibull-Verteilung mit den Parametern Form und Skala.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : Vektor von Quantilen.</li>\n                \n                \n                <li>p : Vektor von Wahrscheinlichkeiten.</li>\n                \n                \n                <li>n : Anzahl der Beobachtungen. Wenn die Länge(n) > 1 ist, wird die Länge als die benötigte Anzahl betrachtet.</li>\n                \n                \n                <li>shape, scale : Form- und Skalenparameter, letzterer standardmäßig 1.</li>\n                \n                \n                <li>log, log.p : logisch; wenn TRUE, werden die Wahrscheinlichkeiten p als log(p) angegeben.</li>\n                \n                \n                <li>lower.tail : logisch; wenn TRUE (Standard), sind die Wahrscheinlichkeiten P[X ≤ x], andernfalls P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Details</b>\n            <br/>\n            Die Weibull-Verteilung mit dem Formparameter a und dem Skalenparameter b hat die Dichte gegeben durch\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            für x > 0. Die kumulative Verteilungsfunktion ist F(x) = 1 - exp(- (x/b)^a) für x > 0, der Mittelwert ist E(X) = b Γ(1 + 1/a), und die Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2).\n            <br/>\n            <br/><b>Wert</b>\n            <br/>\n            dweibull gibt die Dichte, pweibull gibt die Verteilungsfunktion, qweibull gibt die Quantilfunktion, und rweibull generiert Zufallszahlen.\n            <br/>\n            Ungültige Argumente führen zu einem Rückgabewert NaN, mit einer Warnung.\n            <br/>\n            Die Länge des Ergebnisses wird durch n für rweibull bestimmt und ist das Maximum der Längen der numerischen Argumente für die anderen Funktionen.\n            <br/>\n            Die numerischen Argumente außer n werden auf die Länge des Ergebnisses wiederverwendet. Nur die ersten Elemente der logischen Argumente werden verwendet.\n            <br/>\n            <br/><b>Hinweis</b>\n            <br/>\n            Die kumulative Hazard <code>H(t) = - log(1 - F(t))</code> ist\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            was einfach <code>H(t) = (t/b)^a</code> ist.            \n"
+  }
+}

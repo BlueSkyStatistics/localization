@@ -1,0 +1,33 @@
+{
+  "title": "t檢驗，單樣本",
+  "navigation": "t檢驗，單樣本（遺留）",
+  "tvarbox1": "選擇變數",
+  "textbox1": "信賴區間",
+  "textbox2": "零假設（mu）",
+  "label1": "備擇假設",
+  "test1": "母體均值 != mu",
+  "test2": "母體均值 > mu",
+  "test3": "母體均值 < mu",
+  "testval": "測試值（mu）",
+  "label2": "缺失值",
+  "Analysis": "逐項分析",
+  "Listwise": "逐項",
+  "conflevel": "信賴區間：",
+  "MissingVals": "缺失值選項",
+  "cohensdNoCorrection": "Cohen's d",
+  "hedgesgNoCorrection": "Hedges' g",
+  "glassd": "Glass's delta",
+  "hedgesgCorrect": "Hedges' g（偏差修正）",
+  "glassdCorrect": "Glass's Delta（偏差修正）",
+  "hedgesg": "Hedges' g",
+  "effectsizes": "效應大小",
+  "cohensdCorrect": "Cohen's d（偏差修正）",
+  "label3": "Cohen's d選項",
+  "label4": "Hedges' g選項",
+  "showEffectSizes": "顯示效應大小",
+  "help": {
+    "title": "t檢驗，單樣本",
+    "r_help": "help(t.test, package=stats)",
+    "body": "\n<b>描述</b></br>\n對選定變數進行單樣本t檢驗。可選地計算標準化差異的效應大小指數：Cohen's d和Hedges' g（該函數返回母體估計。）\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyOneSmTTest(varNamesOrVarGlobalIndices  =c('var1','var2'), mu=.9, conf.level=0.95, alternative= \"two.sided\",datasetNameOrDatasetGlobalIndex='Dataset', missing=1) \ncohens_d(var1~1, mu=valuetocompare, correction =FALSE, ci = 0.95)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: 選擇的量表變數（例如 var1, var2）\n</li>\n<li>\nmu: 一個數字，表示均值的真實值。（例如 10）\n</li>\n<li>\nconf.level: 一個數值（例如 0.95）。\n</li>\n<li>\nmissing: 缺失值按變數處理（missing =0）或在所有變數中逐項處理（missing=1）。\n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: 數據集的名稱（例如 Dataset），從中選擇 var1、var2 和 var3。\n</li>\n<li>\nalternative: 一個字符字符串，指定備擇假設，必須是 \"two.sided\"（默認）、\"greater\" 或 \"less\" 之一。您可以只指定第一個字母。\n</li>\n</ul>\n<b>詳細信息</b></br>\n測試結果的列表\n<br/>\n<b>示例</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# 數據集也必須在 UI 網格中加載</br>\nBSkyLoadRefreshDataframe(Dataset)</br> \nBSky_One_Simple_T_Test = BSkyOneSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),mu=.9,conf.level=0.95,alternative =\"two.sided\", datasetNameOrDatasetGlobalIndex ='Dataset',missing=1</br>\n</code> <br/>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的 R 圖標，或通過創建 R 代碼塊並單擊輸出窗口中的 + 來運行以下命令 help(t.test, package ='stats')\n"
+  }
+}

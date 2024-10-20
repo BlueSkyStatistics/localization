@@ -1,0 +1,15 @@
+{
+  "title": "Variablen Verschieben",
+  "navigation": "Variablen Verschieben",
+  "varstomovelabel": "Zu Verschiebende Variablen",
+  "locationlabel": "Standort",
+  "firstlabel": "Erste",
+  "lastlabel": "Letzte",
+  "afterselectedlabel": "Nach Ausgewählter Variable",
+  "aftervarlabel": "",
+  "help": {
+    "title": "Variablen Verschieben",
+    "r_help": "hilfe(verschieben, paket ='dplyr')",
+    "body": "\nDies wird Variablen an einen bestimmten Ort im Datensatz verschieben.\n<br/><br/>\n<b>Zu Verschiebende Variablen:</b> Variablen, die an einen anderen Ort verschoben werden sollen. Sie werden in der Reihenfolge platziert, die in diesem Feld angegeben ist.\n<br/><br/>\n<b>Standort:</b> Ort im Datensatz, um die Variablen zu verschieben. <b>Erste</b> platziert die Variablen am Anfang des Datensatzes.  \n<b>Letzte</b> platziert die Variablen am Ende des Datensatzes.  <b>Nach Ausgewählter Variable</b> platziert die Variablen nach dieser Variable im Datensatz.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> dplyr\n\t\t\t"
+  }
+}

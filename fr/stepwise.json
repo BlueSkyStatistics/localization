@@ -1,0 +1,22 @@
+{
+  "title": "Étape par étape",
+  "navigation": "Étape par étape",
+  "label1": "Sélectionnez un modèle d'une des classes suivantes. (La classe R est indiquée entre parenthèses ci-dessous)",
+  "label2": "Modèle linéaire (lm), Modèle linéaire généralisé (glm), Régression logistique/probit ordonnée (polr), Réseaux de neurones à propagation avant et Modèles log-linéaires multinomiaux (nnet)",
+  "label3": "**REMARQUE : Étape par étape ne fonctionne pas pour les modèles construits par Modèle > Réglage (train)",
+  "label4": "**REMARQUE : Étape par étape ne fonctionne pas pour les Modèles log-linéaires multinomiaux (multinom) en raison d'une incompatibilité que nous avons soulevée avec les auteurs du package R",
+  "modelselector1": "Sélectionnez un modèle",
+  "label5": "Direction",
+  "backforward": "arrière/avant",
+  "forwardback": "avant/arrière",
+  "backward": "arrière",
+  "forward": "avant",
+  "aic": "AIC (degrés de liberté utilisés pour la pénalité k = 2)",
+  "bic": "BIC (degrés de liberté utilisés pour la pénalité k = log(nombre de lignes dans la matrice du modèle)) REMARQUE : La sortie affiche AIC même lorsque BIC est sélectionné)",
+  "label6": "Critère",
+  "help": {
+    "title": "Étape par étape",
+    "r_help": "aide(stepwise, package='RcmdrMisc')",
+    "body": "\n            <b>Description</b></br>\nCette fonction est une interface à la fonction ‘stepwise’ dans le package RcmdrMisc. Qui à son tour est une interface à la fonction stepAIC dans le package MASS.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"arrière/avant\", \"avant/arrière\", \"arrière\", \"avant\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmod : un objet modèle d'une classe qui peut être gérée par stepAIC.\n</li>\n<li>\ndirection : si \"arrière/avant\" (par défaut), la sélection commence avec le modèle complet et élimine les prédicteurs un par un, à chaque étape en considérant si le critère sera amélioré en ajoutant à nouveau une variable supprimée à une étape précédente ; si \"avant/arrière\", la sélection commence avec un modèle n'incluant qu'une constante, et ajoute les prédicteurs un par un, à chaque étape en considérant si le critère sera amélioré en supprimant une variable précédemment ajoutée ; \"arrière\" et \"avant\" sont similaires sans la reconsidération à chaque étape.\n</li>\n<li>\ncritère : pour la sélection. Soit \"BIC\" (par défaut) ou \"AIC\". Notez que stepAIC étiquette le critère dans la sortie comme \"AIC\" indépendamment du critère utilisé.\n</li>\n<li>\n... : arguments à passer à stepAIC.\n</li>\n</ul>\n<b>Valeur</b><br/>\nLe modèle sélectionné par stepAIC.<br/>\n<b>Package</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R : aide(stepwise, package=\"RcmdrMisc\")\n"
+  }
+}

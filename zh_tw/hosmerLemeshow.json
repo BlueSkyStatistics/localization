@@ -1,0 +1,13 @@
+{
+  "title": "Hosmer-Lemeshow檢驗",
+  "navigation": "Hosmer-Lemeshow檢驗",
+  "label1": "注意：活動數據集必須與構建模型時使用的數據集相同",
+  "modelselector1": "選擇一個廣義線性模型（glm類模型）：",
+  "destination": "目標變數：",
+  "bins": "箱數",
+  "help": {
+    "title": "Hosmer-Lemeshow檢驗",
+    "r_help": "help(HLgof.test, package='MKmisc')",
+    "body": "\n                <b>描述</b></br>\n該函數計算Hosmer-Lemeshow擬合優度檢驗的C和H統計量，以及Cessie-van Houwelingen-Copas-Hosmer的無權平方和檢驗的全局擬合優度。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nfit: 帶有擬合概率的數值向量。\n</li>\n<li>\nobs: 帶有觀察值的數值向量。\n</li>\n<li>\nngr: C和H統計量的組數。\n</li>\n<li>\nX: 用於Cessie-van Houwelingen-Copas-Hosmer全局擬合優度檢驗的協變量。\n</li>\n<li>\nverbose: 邏輯值，打印中間結果。\n</li>\n</ul>\n<b>詳細信息</b></br>\n計算Hosmer-Lemeshow擬合優度檢驗；見Lemeshow和Hosmer（1982）。如果指定了X，則還會確定Cessie-van Houwelingen-Copas-Hosmer的無權平方和檢驗的全局擬合優度；見Hosmer等（1997）。該測試的更一般版本在包rms中的函數residuals.lrm中實現。</br>\n<b>值</b><br/>\n測試結果的列表。\n<b>示例</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>包</b></br>\nMKmisc</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的R圖標，或在R語法編輯器中運行以下命令 help(HLgof.test, package=\"MKmisc\")\n                "
+  }
+}

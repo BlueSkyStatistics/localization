@@ -1,0 +1,13 @@
+{
+  "title": "下采样",
+  "navigation": "样本, 下采样",
+  "description": "下采样不平衡数据。DownSample将随机抽样数据集，使所有类别的频率与少数类别相同。",
+  "downsample": "输入数据集名称",
+  "seed": "设置种子",
+  "dependent": "按此变量下采样",
+  "help": {
+    "title": "下采样",
+    "r_help": "帮助(createDataPartition, 包=\"caret\")",
+    "body": "\n<b>描述</b></br>\n下采样不平衡数据。DownSample将随机抽样数据集，使所有类别的频率与少数类别相同。\n<br/>\n<b>用法</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"类别\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 预测变量的矩阵或数据框\n</li>\n<li>\ny: 带有类别成员资格的因子变量\n</li>\n<li>\nlist: 函数应该返回list(x, y)还是将x和y绑定在一起？如果为TRUE，输出将被强制转换为数据框。\n</li>\n<li>\nyname: 如果list = FALSE，类别列的标签\n</li>\n</ul>\n<b>详细信息</b></br>\n使用简单随机抽样来对多数类进行下采样。请注意，少数类数据保持不变，样本将在下采样版本中重新排序。\n对于上采样，所有原始数据保持不变，并且额外的样本将被添加到少数类中，带有替换。\n<b>值</b><br/>\n返回一个数据框或包含元素x和y的列表。\n<b>示例</b></br>\n## 一个荒谬的例子...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>包</b></br>\ncaret</br>\n<b>帮助</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}
