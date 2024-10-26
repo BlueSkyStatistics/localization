@@ -1,0 +1,75 @@
+name: Translate New or Changed Files
+
+on:
+  workflow_dispatch:
+  # pull_request:
+  #   types: [closed]
+  #   branches:
+  #     - main
+
+jobs:
+  translate:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
+
+      - name: Identify new or changed files
+        id: file_changes
+        run: |
+          echo "##[group]Changed or new files"
+          FILES=$(git diff --name-only HEAD~1 HEAD)
+          echo "$FILES"
+          echo "##[endgroup]"
+          echo "::set-output name=files::$FILES"
+
+      - name: Run translation script for new files
+        if: steps.file_changes.outputs.files != ''
+        run: |
+          FILES=$(echo "${{ steps.file_changes.outputs.files }}" | tr ' ' '\n')
+          for FILE in $FILES; do
+            if [[ $FILE == en/* ]]; then
+              echo "Processing $FILE"
+              python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" $FILE
+            fi
+          done
+
+      - name: Configure Git
+        run: |
+         git config --global user.name 'github-actions[bot]'
+         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit changes
+        run: |
+         git checkout -b translation-updates
+         git add .
+         git commit -m "Add translations for new or changed files"
+
+      - name: Push changes
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+         git push --set-upstream origin translation-updates
+
+      - name: Create Pull Request
+        id: create_pr
+        uses: peter-evans/create-pull-request@v3
+        with:
+         token: ${{ secrets.GITHUB_TOKEN }}
+         commit-message: "Add translations for new or changed files"
+         branch: translation-updates
+         title: "Add translations for new or changed files"
+         body: "This PR contains translations for the new or changed files."
+         base: main
