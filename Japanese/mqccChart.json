@@ -1,0 +1,18 @@
+{
+  "title": "多変量品質管理チャート (MQCC)",
+  "navigation": "MQCCチャート",
+  "summaryPrintChk": "チャートに加えて要約を印刷する",
+  "variableListSelcted": "チャートにするデータ（1つ以上の変数を選択）",
+  "groupingVariable": "(オプション) サブグループが存在する場合はグループ化変数を選択",
+  "excludeGroups": "(オプション) 計算/チャートからグループを除外する（サブグループが数値の場合）（例：1:10またはカンマ区切りで1,4,5,7:12と指定）",
+  "groupsTobeUsedAsNewData": "(オプション) 新しいデータ - チャートに使用するグループ（サブグループが数値の場合）（例：1:25または1,4,5,7:12と指定） - 限界計算には含まれない新しいデータをプロット",
+  "limitsChk": "制御限界（フェーズI）を計算してプロットする必要がある場合",
+  "pred_limitsChk": "予測限界（フェーズII）を計算してプロットする必要がある場合",
+  "confidence_level": "(オプション) 信頼レベル：デフォルトの数式をそのままにしておく（選択された変数の数が自動的に計算される）。そうでない場合は、0と1の間の数値を指定して信頼レベルとして使用",
+  "genVarianceChk": "選択された変数のための一般化された分散 |S| の制御チャートをプロットする（グループ化変数を選択する必要があります）",
+  "help": {
+    "title": "多変量品質管理チャート(mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tmqcc関数は多変量統計的品質管理と一般化された分散 |S| を実行します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプを得るには、Rのhelp(mqcc, package = qcc)およびhelp(GVcontrol, package = IAcsSPCR)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、qccパッケージからboilerというデータセットをLoad Datasetメニューで選択してロードします\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tboilerデータセットから変数を選択し、すべてをデフォルトのままにしてダイアログを実行します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\twidgets_mqcc.xlsxというサンプルデータセットファイルも使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一般化された分散 |S| をプロットするには、データセットにサブグループ番号の列が必要です - そうでないとプロットされません\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqccチュートリアルをフォローしてください https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

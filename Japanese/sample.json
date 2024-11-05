@@ -1,0 +1,21 @@
+{
+  "title": "サンプルデータ",
+  "navigation": "サンプル",
+  "label1": "データセットオプション",
+  "radio2": "新しいデータセットに結果を保存",
+  "dsname": "データセットの名前を入力してください",
+  "radio1": "データセットを上書き",
+  "label2": "サンプリングオプション",
+  "rd1": "サンプルするデータセットの割合を指定してください",
+  "percentage": "割合を入力してください",
+  "rd2": "選択する行数を指定してください",
+  "size": "行数を入力してください",
+  "textn": "オプションで重みのための変数名または式を入力してください",
+  "seed": "データの再現性のためにシードをオプションで設定してください",
+  "chk2": "置き換えありでサンプル",
+  "help": {
+    "title": "サンプルデータセット",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>説明</b></br>\n既存のデータセットから行のランダムサンプルを取得します。行の%または指定された行数を置き換えありまたはなしでサンプリングします。結果を新しいデータセットに保存するか、既存のデータセットを上書きします。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \n#指定された行数をサンプルします</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#行の割合をサンプルします</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ntbl: データのテーブル。詳細を参照してください。\n</li>\n<li>\nsize: sample_n()の場合、選択する行数。sample_frac()の場合、選択する行の割合。\n</li>\n<li>\nreplace: サンプリングは置き換えありですか？\n</li>\n<li>\nweights: サンプリングの重み。これは入力と同じ長さの非負の数のベクトルに評価される必要があります。重みは自動的に合計が1になるように標準化されます。\n</li>\n</ul>\n<b>パッケージ</b></br>\ndplyr\n<b>ヘルプ</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

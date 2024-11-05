@@ -1,0 +1,31 @@
+{
+  "title": "因素分析",
+  "navigation": "因素",
+  "destination": "選擇變數",
+  "label1": "因素提取",
+  "factorextraction1": "自動提取因素",
+  "factorextraction2": "指定要提取的因素數量",
+  "noOfFactors": "輸入要提取的因素數量",
+  "screeplot": "碎石圖",
+  "label2": "因素分數",
+  "saveScores": "將因素分數保存到數據集",
+  "scores1": "巴特利特方法，輸入變數名稱前綴",
+  "scores2": "回歸方法，輸入變數名稱前綴",
+  "varForScores": "輸入分數的變數名稱前綴：",
+  "label3": "旋轉選項",
+  "grpBox21": "無",
+  "grpBox22": "Varimax",
+  "grpBox23": "Promax",
+  "grpBox24": "BentlerQ",
+  "grpBox25": "Quartimax",
+  "grpBox26": "Oblimin",
+  "grpBox27": "GeominQ",
+  "grpBox28": "GeominT",
+  "grpBox29": "Simplimax",
+  "parallel": "平行分析",
+  "help": {
+    "title": "因素分析",
+    "r_help": "help(factanal, package ='stats')",
+    "body": "\n<b>描述</b></br>\n​對協方差矩陣或數據矩陣執行最大似然因素分析並生成碎石圖。調用stats包中的factanal函數。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 一個或多個數值變數以提取因素。\n</li>\n<li>\nautoextraction: 自動確定因素數量或提取特定數量的因素。\n</li>\n<li>\nscreeplot: 如果為TRUE，則生成碎石圖。\n</li>\n<li>\nrotation: 確定旋轉類型，並取以下值之一（none, quartimax, geominT, varimax, oblimin, simplimax, promax, geominQ和bentlerQ）\n</li>\n<li>\nsaveScores: 將因素分數保存在數據集中\n</li>\n<li>\ndataset: 從中選擇'vars'的數據集。\n</li>\n</ul>\n<b>詳細信息</b></br>\n一個\"factanal\"類的對象，包含以下組件</br>\nloadings: 一個加載矩陣，每個因素一列。因素按加載平方和的降序排列，並給予使加載總和為正的符號。這是\"loadings\"類：請參見loadings的打印方法。</br>\nuniquenesses: 計算出的唯一性。</br>\ncorrelation: 使用的相關矩陣。</br>\ncriteria: 優化的結果：準則的值（負對數似然的線性函數）和有關使用的迭代的信息。</br>\nfactors: 參數因素。</br>\ndof: 因素分析模型的自由度數量。</br>\nmethod: 方法：始終為\"mle\"。</br>\nrotmat:\t如果相關，則為旋轉矩陣。</br>\nscores: 如果請求，則為分數矩陣。napredict用於處理na.action省略的值。</br>\nn.obs: 如果可用，則為觀察數量，或NA。</br>\ncall: 匹配的調用。</br>\nna.action: 如果相關。</br>\nSTATISTIC, PVAL: 如果可以計算，則為顯著性檢驗統計量和P值。</br>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\nhelp(factanal, package ='stats')\n"
+  }
+}

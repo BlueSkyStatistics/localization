@@ -1,0 +1,30 @@
+{
+  "title": "円グラフ",
+  "suppressLabels": "カウントとパーセンテージのすべてのラベルを抑制",
+  "optionsLabels": "ラベルのオプション",
+  "suppressThreshold": "指定された閾値パーセンテージ未満のカウントとパーセンテージのラベルを抑制",
+  "radius": "ラベルを表示する半径を指定（半径を増やすとラベルが外側に移動）",
+  "radiusNote": "注：上記のオプションは、同心円を表示するオプションが選択されている場合には適用されません。",
+  "navigation": "円グラフ",
+  "concentricCircles": "同心円を表示（X軸変数が指定されている場合のみ適用）",
+  "x": "X軸、因子変数を指定",
+  "y": "Y変数、数値変数を指定",
+  "fill": "塗りつぶし、因子変数を指定",
+  "alpha": "不透明度（0-1）",
+  "width": "幅",
+  "rdgrp1": "塗りつぶしの割合",
+  "flip": "軸を反転",
+  "barcolor": "バーの色（色を選択した後、コントロールの外をクリックして適用）",
+  "specify_a_title": "タイトルを入力",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "help": {
+    "title": "円グラフ",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>説明</b></br>\n            円グラフ（または円チャート）は、数値の割合を示すためにスライスに分割された円形の統計グラフィックです。円グラフでは、各スライスの弧の長さ（したがって、その中心角と面積）は、表す数量に比例します。数量はカウントまたはパーセンテージとして表すことができます。\n            ファセットは、因子変数を指定することでオプションで作成できます。また、テーマをオプションで指定し、X軸とY軸のタイトルとラベルを指定することもできます。</br>\n            複数のX変数を指定すると、各X変数に対して別々の円グラフが作成されます。</br>\n            半径はラベルの配置を制御します。半径1はラベルを円の中心に配置し、半径1.6はラベルを円の外側に配置します。</br>\n            外側の薄い灰色の円はカウントまたは合計を表します。詳細は円グラフの下部のテキストを参照してください。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n            #単一の因子変数の円グラフを作成できます。円は因子レベルの各レベルのカウントを表します。ここで因子変数は塗りつぶしに対応します<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"塗りつぶし：種の円グラフ\") +\n\tylab(\"\") + \n\txlab(\"カウント\")</br></br>\n            #スケール/数値変数をY変数として指定し、因子変数によって円のスライスを塗りつぶすことで円グラフを作成できます。円は因子変数の各レベルのY変数の値を合計して塗りつぶされます。以下の例を参照してください<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #X変数、Y変数、塗りつぶしを指定できます。スライスはX変数の各レベルに対して作成され、塗りつぶしで指定された変数の各レベルのY変数の値の合計で塗りつぶされます。<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            aes():    データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            x: （オプション）因子/カテゴリ変数。バーの長さは因子変数の各レベルのカウントに対応します。​\n            </li>\n            <li>\n            Y: （オプション）数値変数\n            </li>\n            <li>\n            fill: （オプション）Xのレベルのカウントをグループ化するためのオプションの因子/カテゴリ変数（上記参照）​\n            </li>\n            <li>\n            geom_bar(): バーグラフを作成します。position =\"fill\"はバーを各グループレベルの割合で塗りつぶします。​\n            </li>\n            <li>\n            Coor_polar(): 極座標系は、円グラフに最も一般的に使用されます。円グラフは極座標のスタックされたバーグラフです。\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例タイトルを変更します（これはオプション）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプション）​\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します（これはオプション）​\n            </li>\n            <li>\n            coord_flip(): 軸を反転します（これはオプション）​\n            </li>\n            <li>\n            alpha: 不透明度を制御し、0-1の値を取ります。1は不透明度なしを意味します。\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;</br>\n            <b>ヘルプ</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            その他：詳細なRヘルプを取得するにはRヘルプボタンをクリックしてください。help(labs)、help(geom_bar)、help(cord_polar)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。​            \n    "
+  }
+}

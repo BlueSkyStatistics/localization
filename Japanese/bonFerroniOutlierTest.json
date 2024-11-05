@@ -1,0 +1,11 @@
+{
+  "title": "ボンフェローニ外れ値テスト",
+  "navigation": "外れ値テスト",
+  "label1": "次のクラスのいずれかのモデルを選択してください（括弧内はクラス）- 線形モデル（lm）、一般化線形モデル（glm）",
+  "modelselector1": "モデルを選択",
+  "help": {
+    "title": "ボンフェローニ外れ値テスト",
+    "r_help": "help(outlierTest, package='car')",
+    "body": "\n                <b>説明</b></br>\n各観測値が平均シフト外れ値であるかをテストするためのボンフェローニp値を報告します。これは、線形（t検定）、一般化線形モデル（正規検定）、および線形混合モデルにおけるStudentized残差に基づいています。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \noutlierTest(model, ...)<br/>\n## クラス 'lm' のS3メソッド<br/>\noutlierTest(model, cutoff=0.05, n.max=10, order=TRUE, \nlabels=names(rstudent), ...)<br/>\n## クラス 'lmerMod' のS3メソッド<br/>\noutlierTest(model, ...)<br/>\n## クラス 'outlierTest' のS3メソッド<br/>\nprint(x, digits=5, ...)<br/>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nmodel: lm、glm、またはlmerModモデルオブジェクト; \"lmerMod\"メソッドは\"lm\"メソッドを呼び出し、同じ引数を取ることができます。\n</li>\n<li>\ncutoff: ボンフェローニp値がカットオフを超える観測値は報告されません。ただし、観測値が指定されていない場合は、最大のStudentized残差を持つものが報告されます。\n</li>\n<li>\nn.max: 報告する最大観測数（デフォルトは10）。\n</li>\n<li>\norder: Studentized残差を大きさの降順で報告しますか？（デフォルトはTRUE）。\n</li>\n<li>\nlabels: 観測名のオプションベクトル。\n</li>\n<li>\n...: メソッド関数に渡される引数。\n</li>\n<li>\nx: outlierTestオブジェクト。\n</li>\n<li>\ndigits: 報告されるp値の桁数。\n</li>\n</ul>\n<b>詳細</b></br>\n線形モデルの場合、報告されるp値はモデルの残差自由度より1少ないt分布を使用します。一般化線形モデルの場合、p値は標準正規分布に基づいています。ボンフェローニ調整は、通常の両側p値に観測数を掛けます。lmメソッドはglmオブジェクトにも適用されます。すべての観測を表示するには、cutoff=Infおよびn.max=Infに設定します。<br/>\n<b>値</b><br/>\n通常は印刷されるoutlierTestクラスのオブジェクトです。<br/>\n<b>例</b><br/>\n<code> \noutlierTest(lm(prestige ~ income + education, data=Duncan))\n</code> <br/>\n<b>パッケージ</b></br>\ncar</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(outlierTest, package=\"car\")\n                "
+  }
+}

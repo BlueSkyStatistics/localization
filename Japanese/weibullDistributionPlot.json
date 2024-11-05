@@ -1,0 +1,26 @@
+{
+  "title": "ワイブル分布プロット",
+  "navigation": "ワイブル分布プロット",
+  "shape": "形状",
+  "scale": "スケール",
+  "pdenfun": "密度関数をプロット",
+  "pdstfun": "分布関数をプロット",
+  "lblregions": "密度関数の下の領域をオプションで指定するには",
+  "xvals": "x値",
+  "quantiles": "分位数",
+  "lblRegFill": "塗りつぶす領域（1つまたは2つ指定するか、空白のままにしてください）",
+  "lblreg1": "領域 1 :",
+  "lblreg2": "領域 2 :",
+  "lblregfrm": "から",
+  "lblregto": "まで",
+  "lblregcol": "色",
+  "lblLegPos": "凡例の位置",
+  "toprt": "右上",
+  "toplt": "左上",
+  "topmid": "中央上",
+  "help": {
+    "title": "ワイブル分布プロット",
+    "r_help": "help(qweibull, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            ワイブル分布の密度、分布関数、分位数関数、およびランダム生成のパラメータは形状とスケールです。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測の数。もし length(n) > 1 の場合、必要な長さが取られます。</li>\n                \n                \n                <li>shape, scale : 形状とスケールのパラメータ、後者はデフォルトで1です。</li>\n                \n                \n                <li>log, log.p : 論理; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理; TRUE（デフォルト）の場合、確率はP[X ≤ x]、そうでない場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            形状パラメータaとスケールパラメータbを持つワイブル分布の密度は次のように与えられます\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            x > 0のとき。累積分布関数はF(x) = 1 - exp(- (x/b)^a)で、x > 0のとき、平均はE(X) = b Γ(1 + 1/a)、分散はVar(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2)です。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dweibullは密度を与え、pweibullは分布関数を与え、qweibullは分位数関数を与え、rweibullはランダム偏差を生成します。\n            <br/>\n            無効な引数はNaNの戻り値をもたらし、警告が表示されます。\n            <br/>\n            結果の長さはrweibullのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累積ハザード <code>H(t) = - log(1 - F(t))</code> は\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            これは単に <code>H(t) = (t/b)^a</code> です。            \n      "
+  }
+}

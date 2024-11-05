@@ -1,0 +1,24 @@
+{
+  "title": "Coxcomb 圖",
+  "navigation": "Coxcomb",
+  "x": "X 軸變數，指定一個因子變數",
+  "y": "Y 變數，指定一個數值變數",
+  "fill": "填充，指定一個因子變數",
+  "alpha": "不透明度 (0-1)",
+  "width": "寬度",
+  "rdgrp1": "填充比例",
+  "flip": "翻轉軸",
+  "barcolor": "條形顏色（選擇顏色後，點擊控制外部以應用）",
+  "specify_a_title": "輸入標題",
+  "x_title": "X 軸標籤",
+  "y_title": "Y 軸標籤",
+  "Facetrow": "Facet 行",
+  "Facetcolumn": "Facet 列",
+  "Facetwrap": "Facet 包裝",
+  "Facetscale": "Facet 比例",
+  "help": {
+    "title": "Coxcomb 圖",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>描述</b></br>\nCoxcomb/Bulls Eye 圖（或圓形圖）是一種圓形統計圖形，分為切片/同心圓以說明數值比例。在 Coxcomb/Bulls Eye 圖中，每個同心圓的寬度（因此其面積）與其所代表的數量成比例。數量可以表示為計數或百分比。</br>​\n可以通過指定因子變數來選擇性地創建 Facets。您還可以選擇性地指定主題，並為 x 和 y 軸指定標題和標籤。</br>\n當您指定多個 x 變數時，我們為每個 x 變數創建一個單獨的 Coxcomb/Bulls Eye 圖。</br>\n<b>用法</b>\n<br/>\n<code>\n#您可以為單個因子變數創建 Bulls Eye 圖，將為因子變數的每個級別創建一個同心圓。每個同心圓的寬度與因子級別的計數成比例。這裡的因子變數將對應於填充，如下所示<br/>\n#penguins 是 equatiomatic R 包中的數據集\nggplot(data=penguins,aes(x ='',fill=species)) +​\n                 geom_bar(alpha=1,width =0.9) +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"計數\",fill =\"var1\",title= \"Bulls Eye 圖  填充: species\")​</br></br>\n#您可以通過指定一個數值變數作為 y 變數和一個作為填充的因子變數來創建 Bulls Eye 圖。這裡為每個填充因子變數的級別創建一個同心圓。每個同心圓的寬度與因子級別的 y 值總和成比例。這裡的因子變數將對應於填充，如下所示<br/>\nggplot(data=penguins,aes(x ='', y = bill_length_mm, fill = species)) +​\n                 geom_bar(alpha=1,width =0.9,stat=\"identity\") +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"var1\",fill =\"var2\",title= \"Bulls Eye 圖  X 美學:,Y 美學: var1,填充: var2\") </br></br>\n\n#您可以通過指定 x 變數創建 Coxcomb 圖，為每個 x 變數的級別創建切片，切片的半徑與計數成比例<br/>\n    ggplot(data=penguins, aes(x=island, )) +\n        geom_bar( alpha=1,width=1,) +\n        coord_polar(\"x\") +\n        labs(x=\"island\",  title= \"Coxcomb 圖 X 美學: island\") +\n        xlab(\"island\") + ylab(\"計數\")</br></br>\n\n#您可以通過指定 X 變數和填充來生成 Coxcomb 圖。為每個 x 變數的級別創建切片。每個切片由指定的填充變數的計數填充。\nggplot(data=penguins, aes(x=island,fill=species )) +\n\tgeom_bar( alpha=1, width=1) +\n\tcoord_polar(\"x\") +\n\tlabs(x=\"island\",  title= \"Coxcomb 圖 X 美學: island 填充: species\") +\n\txlab(\"island\") + ylab(\"計數\")</br></br>\n\n\n#您可以通過指定 x 變數、y 變數和填充來創建 Coxcomb 圖。為每個 x 變數的級別創建切片，並根據填充中指定的變數的 y 值總和填充。切片按填充變數的級別劃分。每個填充變數在切片中佔據的面積與匹配切片和填充變數的 y 值的計數總和成比例。<br/>\nggplot(data=penguins, aes(x=island,y=bill_depth_mm,fill=species )) +\n\tgeom_bar( alpha=1,width=1,stat = \"identity\") +\n\tcoord_polar(\"x\") +\n\tlabs(x=\"island\", y=\"bill_depth_mm\", title= \"Coxcomb 圖 X 美學: island Y 美學: bill_depth_mm 填充: species\") +\n\txlab(\"island\") + ylab(\"bill_depth_mm\")</br></br>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndata: 默認數據集​\n</li>\n<li>\naes(): 生成美學映射，描述數據中的變數如何映射到幾何的視覺屬性（美學）。​\n</li>\n<li>\nx: （可選）一個因子/類別變數。條形的長度對應於因子變數的每個級別的計數。​\n</li>\n<li>\nY: （可選）一個數值變數\n</li>\n<li>\nfill: （可選）一個可選的因子/類別變數，用於分組 x 中的級別計數（見上文）​\n</li>\n<li>\ngeom_bar(): 創建條形圖，position =\"fill\" 用每個分組級別的百分比填充條形。​\n</li>\n<li>\nCoor_polar(): 極坐標系統最常用於餅圖，這是一種極坐標中的堆疊條形圖。\n</li>\n<li>\nLabs(): 更改軸標籤和圖例標題（這是可選的）​\n</li>\n<li>\nfacet_grid(): 在網格中佈局面板（這是可選的）​\n</li>\n<li>\ntheme_calc(): 指定計算器主題（這是可選的）​\n</li>\n<li>\ncoord_flip(): 翻轉軸（這是可選的）​\n</li>\n<li>\nalpha: 控制不透明度，取值範圍在 0-1 之間。1 表示無不透明度。\n</li>\n</ul>\n<b>包</b></br>\nggplot2;ggthemes;</br>\n<b>幫助</b></br>\nhelp(coord_polar, package=ggplot2)</br>\n其他：點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs)，help(geom_bar)，help(cord_polar)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)​\n    "
+  }
+}

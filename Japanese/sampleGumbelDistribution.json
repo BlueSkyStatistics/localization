@@ -1,0 +1,19 @@
+{
+  "title": "ガンベル分布のサンプル",
+  "navigation": "ガンベル分布のサンプル",
+  "entrdsname": "データセットの名前を入力",
+  "location": "位置",
+  "scale": "スケール",
+  "lblnoofsamples": "サンプル数（行）",
+  "lblnoofobsv": "観測数（列）",
+  "lblseed": "シード",
+  "lblAddtoDS": "データセットに追加",
+  "chklbl1": "サンプル平均",
+  "chklbl2": "サンプル合計",
+  "chklbl3": "サンプル標準偏差",
+  "help": {
+    "title": "ガンベル分布のサンプル",
+    "r_help": "help(rgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            指定された位置とスケールパラメータを持つガンベル分布の密度、分布関数、分位数関数、および乱数生成。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル（変数の値）。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>location : 位置パラメータ（デフォルトは0）；ベクトルの可能性あり。</li>\n                \n                \n                <li>scale : スケールパラメータ（デフォルトは1）；ベクトルの可能性あり。</li>\n                \n                <li>lower.tail : 論理値；TRUE（デフォルト）の場合、確率と分位数はP(X ≤ x)に対応し、FALSEの場合はP(X > x)に対応します。</li>\n            </ul>            \n"
+  }
+}

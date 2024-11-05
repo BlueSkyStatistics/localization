@@ -1,0 +1,10 @@
+{
+  "title": "アンダーソン-ダーリング正規性検定",
+  "navigation": "アンダーソン-ダーリング正規性検定",
+  "trg": "ターゲット変数",
+  "help": {
+    "title": "アンダーソン-ダーリング正規性検定",
+    "r_help": "help(ad.test, package=nortest)",
+    "body": "\n<b>説明</b></br>\nアンダーソン-ダーリング正規性検定。 \n<br/>\n<b>使用法</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: データ値の数値ベクトルで、数は7より大きくなければなりません。欠損値は許可されています。\n</li>\n</ul>\n<b>詳細</b></br>\nアンダーソン-ダーリング検定は、正規性の複合仮説に対するEDFオムニバス検定です。<br/>\n<b>値</b><br/>\nクラス「test」を持つリストで、以下のコンポーネントを含みます:<br/>\n<ul>\n<li>\nstatistic: アンダーソン-ダーリング統計量の値。\n</li>\n<li>\np.value: 検定のP値。\n</li>\n</ul>\n<b>パッケージ</b></br>\nnortest</br>\n<b>ヘルプ</b></br>\nhelp(ad.test, package =nortest)\n"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "モデルの要約",
+  "navigation": "モデルを要約する",
+  "modelselector1": "モデルを選択",
+  "help": {
+    "title": "モデルの要約",
+    "r_help": "help(summary)",
+    "body": "\n                <b>説明</b></br>\nsummaryは、さまざまなモデルフィッティング関数の結果の要約を生成するために使用される一般的な関数です。この関数は、最初の引数のクラスに依存する特定のメソッドを呼び出します。例：summary.lm（線形モデル）、summary.glm（一般化線形モデル）\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject: 要約が必要なオブジェクト。\n</li>\n</ul>\n<b>値</b><br/>\nsummaryによって返される値の形式は、その引数のクラスに依存します。特定のメソッドのドキュメントを参照してください。すなわち、help(summary.lm)、help(summary.glm)は、そのメソッドによって生成されるものの詳細です。</br>\n<b>パッケージ</b></br>\nbase</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください：help(summary)\n                "
+  }
+}

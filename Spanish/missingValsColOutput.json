@@ -1,0 +1,10 @@
+{
+  "title": "Análisis de Valores Faltantes, diseño de columnas",
+  "navigation": "Diseño de Columnas",
+  "label1": "Muestra los resultados de los valores faltantes en formato columnar",
+  "help": {
+    "title": "Análisis de Valores Faltantes",
+    "r_help": "ayuda(sapply)",
+    "body": "\n            <b>Descripción</b></br>\n            Muestra la siguiente información sobre los valores faltantes<br/>\n            1. El número de variables y observaciones en el conjunto de datos<br/>\n            2. El conteo de valores faltantes por variable<br/>\n            3. El conteo de valores no faltantes por variable<br/>\n            4. Los números de fila de las variables que contienen valores faltantes<br/>\n            Usamos varias funciones en el paquete base, incluyendo sapply, que, ifelse<br/>\n            <b>Paquete</b></br>\n            base</br>\n            <b>Ayuda</b></br>\n            Para ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de este diálogo o ejecute el siguiente comando ayuda(sapply) creando un bloque de código R haciendo clic en + en la ventana de salida\n"
+  }
+}

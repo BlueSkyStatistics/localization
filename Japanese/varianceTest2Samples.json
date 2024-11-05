@@ -1,0 +1,16 @@
+{
+  "title": "分散検定、F検定",
+  "navigation": "分散検定、二つのサンプル",
+  "tvarbox1": "応答変数",
+  "tvarbox2": "因子変数、二つのレベルのみ",
+  "label1": "対立仮説",
+  "test1": "差 != 1",
+  "test2": "差 > 1",
+  "test3": "差 < 1",
+  "txtbox1": "信頼水準",
+  "help": {
+    "title": "分散検定、F検定",
+    "r_help": "help(var.test, package=stats)",
+    "body": "\n                <b>説明</b></br>\n                正規分布からの二つのサンプルの分散を比較するためのF検定を実行します。\n                <br/>\n                <b>使用法</b>\n                <br/>\n                <code> \n                var.test(x, ...)</br>\n                ## デフォルトS3メソッド:</br>\n                var.test(x, y, ratio = 1,\n                         alternative = c(\"two.sided\", \"less\", \"greater\"),\n                         conf.level = 0.95, ...)</br>\n                ## 'formula'クラスのS3メソッド</br>\n                var.test(formula, data, subset, na.action, ...)\n                </code> <br/>\n                <b>引数</b><br/>\n                <ul>\n                <li>\n                x, y: データ値の数値ベクトル、または線形モデルオブジェクト（クラス\"lm\"を継承）。\n                </li>\n                <li>\n                ratio: xとyの母集団分散の仮定された比率。\n                </li>\n                <li>\n                alternative: 対立仮説を指定する文字列で、\"two.sided\"（デフォルト）、\"greater\"または\"less\"のいずれかでなければなりません。最初の文字だけを指定できます。\n                </li>\n                <li>\n                conf.level: 返される信頼区間の信頼水準。\n                </li>\n                <li>\n                formula: lhs ~ rhsの形の式で、lhsはデータ値を与える数値変数、rhsは対応するグループを与える二つのレベルの因子。\n                </li>\n                <li>\n                data: 式に含まれる変数を含むオプションの行列またはデータフレーム（または類似のもの）。デフォルトでは、変数はenvironment(formula)から取得されます。\n                </li>\n                <li>\n                subset: 使用する観測のサブセットを指定するオプションのベクトル。\n                </li>\n                <li>\n                na.action: データにNAが含まれている場合に何が起こるべきかを示す関数。デフォルトはgetOption(\"na.action\")です。\n                </li>\n                <li>\n                ...: メソッドに渡されるさらなる引数。\n                </li>\n                </ul>\n                <b>詳細</b></br>\n                帰無仮説は、xとyが抽出された母集団の分散の比率、または線形モデルxとyが適合されたデータの分散の比率がratioに等しいことです。</br>\n                <b>値</b><br/>\n                \"htest\"クラスのリストで、以下のコンポーネントを含みます:\n                statistic: F検定統計量の値。\n                parameter: 検定統計量のF分布の自由度。\n                p.value: 検定のp値。\n                conf.int: 母集団分散の比率の信頼区間。\n                estimate: xとyのサンプル分散の比率。\n                null.value: 帰無仮説の下での母集団分散の比率。\n                alternative: 対立仮説を説明する文字列。\n                method: \"二つの分散を比較するためのF検定\"という文字列。\n                data.name: データの名前を与える文字列。\n                <b>例</b><br/>\n                <code>\n                Dataframe <- data.frame(Age=c(20,23,19,25,26), Weight=c(48,50,55,51,49), Gender=c('m','f','f','m','m' ))<br/>\n                Result_Variance_Test = var.test( Age ~Gender,alternative='two.sided',conf.level=0.95,data=Dataframe )\n                </code> <br/>\n                <b>パッケージ</b></br>\n                stats</br>\n                <b>ヘルプ</b></br>\n                help(var.test, package=stats)\n    "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "ボックスコックス変換を事前に行った変数のためのラムダ (λ) 値",
+  "navigation": "ラムダを検査",
+  "label2": "ボックスコックス変換が適用されたかどうかを確認するために、1つまたは複数の変数を選択し、関連するラムダ (λ) 値を確認します",
+  "variablelistSelcted": "検査する変数",
+  "help": {
+    "title": "選択した変数に関連するラムダ (λ) 値を確認する",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t選択した変数に対して、事前にボックスコックス変換が行われた場合の関連するラムダ (λ) 値を確認します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックスコックスまたはラムダ (λ) に関する詳細なヘルプは、R help(boxcox, package = MASS) を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS ボックスコックスの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html を参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックスコックス変換に関連するラムダ (λ) 値\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータを返します ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 逆変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 逆平方変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

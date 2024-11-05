@@ -1,0 +1,25 @@
+{
+  "title": "Mittelwertdiagramm",
+  "navigation": "Mittelwertdiagramm",
+  "x": "X-Achse, geben Sie eine Faktorvariable an",
+  "y": "Y-Achse, der Mittelwert wird für diese Variable(n) berechnet",
+  "fill": "Gruppieren nach, geben Sie eine Faktorvariable an",
+  "label1": "Fehlerbalken",
+  "radiobuttonNo": "Keine Fehlerbalken",
+  "radioButtonSe": "Standardfehler",
+  "radiobuttonSd": "Standardabweichungen",
+  "radiobuttonCi": "Konfidenzintervalle",
+  "confidenceInterval": "Geben Sie das Intervall an, z.B. 0.95",
+  "alpha": "Opazität (0-1)",
+  "flip": "Achse umdrehen",
+  "specify_a_title": "Geben Sie einen Titel ein",
+  "Facetrow": "Facet-Reihe",
+  "Facetcolumn": "Facet-Spalte",
+  "Facetwrap": "Facet-Wickel",
+  "Facetscale": "Facet-Skala",
+  "help": {
+    "title": "Mittelwertdiagramm",
+    "r_help": "",
+    "body": "\n            <b>Beschreibung</b></br>\n            Mittelwertdiagramme werden verwendet, um zu sehen, ob der Mittelwert zwischen verschiedenen Gruppen der Daten variiert. Die Gruppierungsvariable wird vom Analysten definiert. Es gibt eine optionale Gruppierungsebene, die es Ihnen ermöglicht, jede Gruppe in Untergruppen zu unterteilen, für die der Mittelwert berechnet wird. Neben den Mittelwerten können Sie optional die Standardfehler, Standardabweichungen und Konfidenzintervalle anzeigen. Facetten können optional erstellt werden, indem Sie eine Faktorvariable angeben.</br>\n            Sie können auch optional Themen angeben und einen Titel sowie Beschriftungen für die x- und y-Achse angeben.</br>\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            #Zuerst erstellen wir einen Datensatz für die Zusammenfassungen. Das Mittelwertdiagramm wird auf dem Datensatz der Zusammenfassungen ausgeführt.</br>\n            #Nachdem das Diagramm ausgeführt wurde, kann der Datensatz der Zusammenfassungen gelöscht werden.</br>\n            #test enthält den Datensatz der Zusammenfassungen</br>\n            test <- summarySE(Dataset2,measurevar=\"mpg\",groupvars=c(\"origin\",\"cylinder\"),na.rm=TRUE)</br>\n            #Wenn sich die Fehlerbalken überlappen, position_dodge, um sie horizontal zu verschieben, .03 nach links und rechts</br>\n            pd <- position_dodge(0.3)\n            ggplot(test,aes(x=origin,y=mpg,colour=cylinder,group=cylinder)) + geom_errorbar(aes(ymin=mpg-sd,ymax=mpg+sd),width=.1,position=pd) +geom_line(position=pd) +geom_point(position=pd) + labs(x = \"origin\",y = \"mpg\")</br>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Der Standarddatensatz\n            </li>\n            <li>\n            aes(): Generiert ästhetische Zuordnungen, die beschreiben, wie Variablen in den Daten auf visuelle Eigenschaften (Ästhetik) von Geoms abgebildet werden.\n            </li>\n            <li>\n            x: Eine Faktor-/kategorische Variable, die verwendet wird, um Daten in der y-Variable zu gruppieren. Der Mittelwert wird für jede Gruppe geplottet.\n            </li>\n            <li>\n            y: Eine numerische Variable\n            </li>\n            <li>\n            colour: Eine optionale Faktorvariable, die verwendet wird, um die Gruppen, die durch die x-Variable (siehe oben) erstellt wurden, in Untergruppen zu unterteilen. Wenn angegeben, wird der Mittelwert für jede Untergruppe geplottet. Jede Untergruppe wird in einer anderen Farbe angezeigt.\n            </li>\n            <li>\n            group: Optionale Faktorvariable, die eine Linie durch die Mittelwerte aller Untergruppen plottet.\n            </li>\n            <li>\n            geom_line(): zeichnet eine Linie\n            </li>\n            <li>\n            geom_errorbar(): plottet Fehlerbalken\n            </li>\n            <li>\n            labs(): Ändert Achsenbeschriftungen und Legendentitel (dies ist optional)\n            </li>\n            <li>\n            facet_grid(): Legt Panels in einem Raster an (dies ist optional)\n            </li>\n            <li>\n            theme_calc(): Gibt das Rechner-Thema an (dies ist optional)\n            </li>\n            <li>\n            coord_flip(): Achse umdrehen (dies ist optional)\n            </li>\n            </ul>\n            <b>Pakete</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Hilfe</b></br>\n            help(geom_line, package='ggplot2')</br>\n            Sonstiges: Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_errorbar), help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) eingeben.\n    "
+  }
+}

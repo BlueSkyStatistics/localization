@@ -1,0 +1,23 @@
+{
+  "toplabel": "Par défaut, toutes les colonnes du jeu de données, sauf le facteur répété sélectionné et les variables de valeur, seront utilisées pour identifier chaque observation. Pour remplacer, voir ci-dessous",
+  "id_cols": "Optionnel : Par défaut, toutes les colonnes du jeu de données, sauf le facteur répété sélectionné et les variables de valeur, seront utilisées pour identifier chaque observation. Pour remplacer, sélectionnez et déplacez les variables",
+  "title": "Restructurer, long à large",
+  "navigation": "Plus large",
+  "labelTop": "Lorsqu'un seul facteur répété et une variable de valeur sont spécifiés, les nouveaux noms de variables sont préfixés par le nom du facteur répété. Dans tous les autres cas, ils sont préfixés par le nom de la variable de valeur",
+  "label0": "Vous pouvez choisir de sauvegarder les résultats dans un nouveau jeu de données ou de remplacer le jeu de données existant",
+  "label1": "Options",
+  "New": "Sauvegarder les résultats dans un nouveau jeu de données",
+  "newdatasetname": "Entrez un nom de jeu de données",
+  "Existing": "Remplacer le jeu de données existant",
+  "subsetvars": "Entrez le(s) nom(s) de variable(s) des facteurs répétés, par exemple, Temps",
+  "dontReshape": "Entrez le(s) nom(s) de variable(s) pour les valeurs répétées, par exemple, Comptes",
+  "names_sort": "Trier les noms de colonnes par ordre alphabétique",
+  "appearence_sort": "Trier les noms de colonnes par apparence",
+  "names_sep": "Séparateur optionnel à utiliser lors de la jonction des noms de variables spécifiés pour former de nouveaux noms de variables",
+  "label2": "Options de tri",
+  "help": {
+    "title": "Restructurer (long à large)",
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>Description</b></br>\nVoir la vidéo à <a href=\"https://youtu.be/ypLXqmFp3jY\">Restructurer long à large</a></br>\nPrend un jeu de données large et le convertit en un jeu de données long en convertissant (élargissant) les colonnes. Pivot_wider \"allonge\" les données, augmentant le nombre de lignes et diminuant le nombre de colonnes. Vous utilisez pivot_wider lorsque vous avez des variables/colonnes dont les valeurs doivent être dans des lignes. \n<br/>\nREMARQUE : Lorsqu'un facteur répété est spécifié, les nouveaux noms de variables sont préfixés par le nom du facteur répété. Lorsque plusieurs facteurs répétés sont spécifiés, ils sont préfixés par le nom de la variable de valeur</br>\n<b>Utilisation</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndataset: Un dataframe/tibble\n</li>\n<li>\nnames_from: le nom de la colonne de sortie \n</li>\n<li>\nvalues_from: la colonne pour obtenir les valeurs des cellules \n</li>\n<li>\nnames_sort: Les noms de colonnes doivent-ils être triés ? Si FALSE, par défaut, les noms de colonnes sont ordonnés par première apparition.\n</li>\n<li>\nnames_sep: Séparateur optionnel à utiliser lors de la jonction des noms de variables spécifiés pour former de nouveaux noms de variables\n</li>\n<li>\n<b>Valeur</b><br/>\nRenvoie le jeu de données restructuré\n<br/>\n<b>Package</b></br>\ntidyr\n<b>Aide</b></br>\nhelp(pivot_wider)\n"
+  }
+}

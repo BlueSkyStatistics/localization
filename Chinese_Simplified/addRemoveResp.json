@@ -1,0 +1,10 @@
+{
+  "title": "添加/删除响应变量 - 首先检查 DOE -> 检查设计菜单中的现有响应变量列表",
+  "navigation": "添加/删除响应",
+  "subsetvars": "选择响应变量",
+  "help": {
+    "title": "添加/删除响应变量",
+    "r_help": "help(response.names, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t指定一个或多个变量作为设计的响应变量\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R help(response.names, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

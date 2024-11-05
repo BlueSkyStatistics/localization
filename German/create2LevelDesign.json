@@ -1,0 +1,20 @@
+{
+  "title": "Erstellen Sie ein nicht-regelmäßiges (fraktionales) Faktorial-2-Ebenen-Screening-Design",
+  "navigation": "Erstellen Sie ein 2-Ebenen-Screening-Design",
+  "selectedvars": "Variablen auswählen",
+  "datasetname": "Designname",
+  "numOfRuns": "Anzahl der Durchläufe (Vielfaches von 4, >=8)",
+  "taguchiOrderChk": "(Nur relevant für) 12 Durchläufe im Taguchi-Design",
+  "numOfCenterPts": "Anzahl der Mittelpunktpunkte (wenn verwendet, mindestens 2)",
+  "centerPointDistribution": "Anzahl der Positionen für die Verteilung der Mittelpunktpunkte (mehr als 1)",
+  "replications": "Wiederholungen",
+  "repeatOnlyChk": "Nur wiederholen",
+  "lbl1": "Sie müssen möglicherweise die Randomisierungseinstellungen nicht ändern",
+  "randomseeds": "Saatgut für die Randomisierung",
+  "randomizationChk": "Randomisieren Sie die Designgenerierung",
+  "help": {
+    "title": "Erstellen Sie ein 2-Ebenen-Screening-Design",
+    "r_help": "hilfe(pb, paket = FrF2)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tPlackett-Burman(pb) Funktion zur Generierung nicht-regelmäßiger fraktionaler Faktorial-2-Ebenen-Screening-Designs\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R Hilfe(pb, Paket = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens factor_grid_twolevel_screen_Design.xlsx verwenden. Öffnen Sie die Datei im Datengitter mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

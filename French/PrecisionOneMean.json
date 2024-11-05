@@ -1,0 +1,15 @@
+{
+  "title": "Taille d'échantillon, Précision d'une moyenne",
+  "navigation": "Une moyenne",
+  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la largeur de l'intervalle de confiance et l'autre sera calculée",
+  "n": "Taille d'échantillon",
+  "width": "Largeur de l'intervalle de confiance",
+  "mean": "Moyenne",
+  "sd": "Écart type",
+  "conflevel": "Niveau de confiance (0-1)",
+  "help": {
+    "title": "Taille d'échantillon, Précision d'une moyenne",
+    "r_help": "help(prec_mean, package ='presize')",
+    "body": "\nCeci est une évaluation de la taille d'échantillon pour une moyenne basée sur la largeur de l'intervalle de confiance. Il calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur \nspécifie l'autre.\n<br/><br/>\n<b>Taille d'échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Largeur de l'intervalle de confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de la précision d'une estimation et est la limite supérieure moins la limite inférieure.\n<br/><br/>\n<b>Moyenne :</b> Spécifiez la valeur moyenne attendue\n<br/><br/>\n<b>Écart type :</b> Spécifiez l'écart type du résultat\n<br/><br/>\n<b>Niveau de confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<br/><br/>\n<b>Packages R requis :</b> presize\n\t\t\t"
+  }
+}

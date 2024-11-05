@@ -1,0 +1,24 @@
+{
+  "title": "ストリップチャート",
+  "navigation": "ストリップチャート",
+  "x": "X変数、数値変数を指定してください",
+  "y": "Y変数、数値変数を指定してください",
+  "Fill": "色、因子変数を指定してください",
+  "size": "点のサイズを次に比例させる",
+  "shape": "形状",
+  "alpha": "不透明度 (0-1)",
+  "flipaxis": "軸を反転",
+  "jitter": "ジッター効果を適用",
+  "specify_a_title": "タイトルを入力",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "help": {
+    "title": "ストリップチャート",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>説明</b></br>\n            ストリップチャートは、利用可能な最も基本的なプロットタイプです。データを線に沿って順番にプロットし、各データポイントをボックスとして表現します。ポイントの形状は因子変数 (x) のレベルに依存します。ポイントは因子変数 (y) によってオプションでグループ化できます。因子変数を指定することでオプションでファセットを作成できます。</br>\n            テーマをオプションで指定し、x軸とy軸のタイトルとラベルを指定することもできます。</br>\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性 (美学) にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            x: グループ化変数。ポイントの形状は因子変数のレベルに依存します。​\n            </li>\n            <li>\n            y: ポイントがプロットされる変数​\n            </li>\n            <li>\n            color: ポイントをグループ化するためのオプションの因子変数 (色による)​\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例タイトルを変更します (これはオプションです)​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします (これはオプションです)​\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します (これはオプションです)​\n            </li>\n            <li>\n            geom_jitter(): ジッタージオムは、position = 'jitter' の geom_point の便利なデフォルトです。ジッターの量を調整する方法については position_jitter を参照してください。\n            </li>\n            <li>\n            coord_flip(): 軸を反転します (これはオプションです)​\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;</br>\n            <b>ヘルプ</b></br>\n            help(geom_point, package='ggplot2')</br>\n            その他: 詳細なRヘルプを取得するには、Rヘルプボタンをクリックしてください。また、help(labs)、help(geom_jitter)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。\n    "
+  }
+}

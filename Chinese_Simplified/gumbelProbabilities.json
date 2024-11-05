@@ -1,0 +1,15 @@
+{
+  "title": "甘博尔概率",
+  "navigation": "甘博尔概率",
+  "varvals": "输入变量值，用逗号分隔。例如：3,0.5",
+  "location": "位置",
+  "scale": "尺度",
+  "labelSig": "显著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "甘博尔概率",
+    "r_help": "help(pgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            密度、分布函数、分位数函数和随机生成用于具有指定位置和尺度参数的甘博尔分布。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数的向量（变量的值）。</li>\n                \n                \n                <li>p : 概率的向量。</li>\n                \n                \n                <li>n : 观察值的数量。如果长度(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>location : 位置参数（默认值为0）；可能是一个向量。</li>\n                \n                \n                <li>scale : 尺度参数（默认值为1）；可能是一个向量。</li>\n                \n                <li>lower.tail : 逻辑；如果为TRUE（默认值），概率和分位数对应于P(X ≤ x)，如果为FALSE，则对应于P(X > x)。</li>\n            </ul>            \n"
+  }
+}

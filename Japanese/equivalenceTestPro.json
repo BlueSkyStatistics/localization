@@ -1,0 +1,27 @@
+{
+  "title": "同等性テスト",
+  "navigation": "同等性テスト",
+  "variableSelcted1": "最初の変数を選択してください",
+  "label1": "2つの変数を比較するには、グループ化変数（2レベルのみ）を選択するか、2番目の（独立またはペア）変数を選択してください",
+  "variableSelcted2": "2番目の変数を選択してください",
+  "label2": "選択した場合、2番目の変数をどのように扱うか",
+  "groupingNeededRad": "選択した2番目の変数はグループ化変数です",
+  "referenceGpValue": "参照として使用するグループ値を入力してください",
+  "pairedTestRad": "ペアテストを実行 - 選択した2つの変数はペアです",
+  "noneRad": "上記のいずれでもない",
+  "targetMean": "ターゲット（平均） - 2サンプルには適用されません",
+  "lower": "下限 - 下の同等性境界の数値",
+  "upper": "上限 - 上の同等性境界の数値",
+  "smdChk": "SMD（標準化平均差）で指定された同等性境界",
+  "label3": "テストの種類",
+  "EQUtestRad": "同等性テストを実行",
+  "METtestRad": "最小効果テスト（MET）を実行",
+  "alpha": "アルファレベル（デフォルト = 0.05）",
+  "HedgesCorrectionChk": "ヘッジの補正を自動的に計算（そうでない場合はコーエンのdを表示）",
+  "plotChk": "コンソナンスプロット（プロットの表示には時間がかかる場合があります）",
+  "help": {
+    "title": "同等性テスト",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t同等性テストまたは最小効果テスト（MET）を実行する関数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプを使用するには、R help(t_TOST, package = TOSTER)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、Load Datasetメニューからirisデータセットを選択してirisというデータセットをロードしてください（素早くirisと入力）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t最初の変数としてSepal.Lengthを選択し、（オプションで）2番目の変数としてSepal.Widthを選択し、ペアテストを選択してください\n\t\t\t\t<br/>\n\t\t\t\t5.5を下限、8.5を上限として同等性マージンを設定し、実行をクリックしてください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.htmlでチュートリアルに従ってください\n\t\t\t"
+  }
+}

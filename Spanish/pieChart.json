@@ -1,0 +1,30 @@
+{
+  "title": "Gráfico de Pastel",
+  "suppressLabels": "Suprimir todas las etiquetas para conteos y porcentajes",
+  "optionsLabels": "Opciones para etiquetas",
+  "suppressThreshold": "Suprimir etiquetas para conteos y porcentajes por debajo del porcentaje umbral especificado",
+  "radius": "Especificar un radio para mostrar etiquetas (aumentar el radio mueve las etiquetas hacia afuera)",
+  "radiusNote": "Nota: La opción anterior no se aplica cuando se selecciona la opción de mostrar círculos concéntricos.",
+  "navigation": "Gráfico de Pastel",
+  "concentricCircles": "Mostrar círculos concéntricos (aplica solo cuando se especifica la variable del eje X)",
+  "x": "Eje X, especificar variable(s) de factor",
+  "y": "Variable Y, especificar una variable numérica",
+  "fill": "Relleno, especificar una variable de factor",
+  "alpha": "Opacidad (0-1)",
+  "width": "Ancho",
+  "rdgrp1": "Proporciones de relleno",
+  "flip": "Invertir eje",
+  "barcolor": "Color de la barra (después de seleccionar el color, haga clic fuera del control para aplicar)",
+  "specify_a_title": "Ingrese un título",
+  "x_title": "Etiqueta del eje X",
+  "y_title": "Etiqueta del eje Y",
+  "Facetrow": "Fila de Facetas",
+  "Facetcolumn": "Columna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "help": {
+    "title": "Gráfico de Pastel",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>Descripción</b></br>\n            Un gráfico de pastel (o gráfico circular) es un gráfico estadístico circular, que se divide en rebanadas para ilustrar proporciones numéricas. En un gráfico de pastel, la longitud del arco de cada rebanada (y, en consecuencia, su ángulo central y área) es proporcional a la cantidad que representa. La cantidad puede representarse como un conteo o porcentaje.\n            Las facetas se pueden crear opcionalmente especificando una variable de factor. También puede especificar temas opcionalmente, y especificar un título y etiquetas para los ejes x e y.</br>\n            Cuando especifica múltiples variables x, creamos un gráfico de pastel separado para cada variable x. </br>\n            El radio le permite controlar la colocación de las etiquetas. Un radio de 1 coloca las etiquetas en el centro del pastel, un radio de 1.6 coloca las etiquetas fuera del pastel.</br>\n            El círculo exterior de color gris claro representa el conteo o total. Vea el texto en la parte inferior del gráfico de pastel para más detalles.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n            #Puede crear un gráfico de pastel para una sola variable de factor, los pasteles representarán los conteos de cada nivel del nivel de factor. Aquí la variable de factor corresponderá al relleno<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"Gráfico de pastel con relleno: especie\") +\n\tylab(\"\") + \n\txlab(\"Conteo\")</br></br>\n            #Puede crear un gráfico de pastel especificando una variable de escala/númerica como la variable y, y rellenando las rebanadas del pastel con una variable de factor. Los pasteles se rellenan sumando los valores de la variable y para cada nivel de la variable de factor, vea el ejemplo a continuación<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #Puede especificar una variable x, variable y y relleno. Las rebanadas se crean para cada nivel de la variable x y se rellenan con la suma de los valores de la variable y para cada nivel de la variable especificada en el relleno.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: El conjunto de datos predeterminado​\n            </li>\n            <li>\n            aes():    Generar mapeos estéticos que describen cómo las variables en los datos se asignan a propiedades visuales (estéticas) de los geoms.​\n            </li>\n            <li>\n            x: (Opcional) Una variable de factor/categórica. La longitud de la barra corresponde a los conteos de cada nivel de la variable de factor.​\n            </li>\n            <li>\n            Y: (Opcional) una variable numérica\n            </li>\n            <li>\n            fill: (Opcional) Una variable de factor/categórica opcional para agrupar los conteos de los niveles en x: (ver arriba)​\n            </li>\n            <li>\n            geom_bar(): Crea el gráfico de barras, position =\"fill\" llena la barra con un porcentaje de cada nivel de agrupamiento.​\n            </li>\n            <li>\n            Coor_polar(): El sistema de coordenadas polares se utiliza comúnmente para gráficos de pastel, que son un gráfico de barras apiladas en coordenadas polares.\n            </li>\n            <li>\n            Labs(): Cambiar etiquetas de ejes y títulos de leyenda (esto es opcional)​\n            </li>\n            <li>\n            facet_grid(): Disponer paneles en una cuadrícula (esto es opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica el tema de la calculadora (esto es opcional)​\n            </li>\n            <li>\n            coord_flip(): Invertir eje (esto es opcional)​\n            </li>\n            <li>\n            alpha: Controla la opacidad, toma valores entre 0-1. 1 significa sin opacidad.\n            </li>\n            </ul>\n            <b>Paquete</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ayuda</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            Otro: Haga clic en el botón de Ayuda de R para obtener ayuda detallada de R. También puede ingresar help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​            \n    "
+  }
+}

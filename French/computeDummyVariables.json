@@ -1,0 +1,20 @@
+{
+  "title": "Calculer des variables fictives",
+  "navigation": "Code fictif",
+  "label1": "Entrez les variables à coder en variables fictives. De nouvelles variables sont créées avec le nom au format \"nom de la variable_niveau nom\". Par défaut, le niveau le plus fréquent est traité comme référence",
+  "target": "Sélectionnez la ou les variable(s) à coder",
+  "label2": "Niveau à traiter comme référence",
+  "MostFrequent": "Valeur la plus fréquente",
+  "first": "Première valeur",
+  "None": "Conserver tous les niveaux (non recommandé pour les modèles statistiques) A.k.a encodage one hot",
+  "prefix": "Préfixe",
+  "txt1": "Entrez un préfixe/suffixe",
+  "label3": "Autres options",
+  "chk3": "Supprimer les variables d'origine",
+  "chk4": "Créer des variables fictives pour les valeurs manquantes",
+  "help": {
+    "title": "Calculer des variables fictives",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Description</b></br>\nCalculer des variables fictives\n<br/>\n<b>Utilisation</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n.data:\tUn objet avec le jeu de données à partir duquel vous souhaitez créer des colonnes fictives.\n</li>\n<li>\nselect_columns:\tVecteur de noms de colonnes à partir desquelles vous souhaitez créer des variables fictives. Si NULL (par défaut), utilise toutes les colonnes de caractères et de facteurs.\n</li>\n<li>\nremove_first_dummy: Supprime le premier fictif de chaque variable de sorte qu'il ne reste que n-1 fictifs. Cela évite les problèmes de multicolinéarité dans les modèles.\n</li>\n<li>\nremove_most_frequent_dummy: Supprime la catégorie observée le plus fréquemment de sorte qu'il ne reste que n-1 fictifs. S'il y a une égalité pour le plus fréquent, la première catégorie (par ordre alphabétique) qui est à égalité pour le plus fréquent sera supprimée.\n</li>\n<li>\nignore_na: Si TRUE, ignore toutes les valeurs NA dans la colonne. Si FALSE (par défaut), alors il créera une colonne fictive pour la valeur_NA et donnera un 1 dans toute ligne qui a une valeur NA.\n</li>\n<li>\nsplit: Une chaîne pour diviser une colonne lorsque plusieurs catégories sont dans la cellule. Par exemple, si une variable est Animaux de compagnie et que les lignes sont \"chat\", \"chien\" et \"tortue\", chacun de ces animaux deviendrait sa propre colonne fictive. Si une ligne est \"chat, chien\", alors une valeur de séparation de \",\" cette ligne aurait une valeur de 1 pour les colonnes fictives de chat et de chien.\n</li>\n<li>\nremove_selected_columns: Si TRUE (pas par défaut), supprime les colonnes utilisées pour générer les colonnes fictives.\n</li>\n<li>\nValeur: Un data.frame (ou tibble ou data.table, selon le type de données d'entrée) avec le même nombre de lignes que les données saisies et les colonnes d'origine plus les nouvelles colonnes fictives créées.\n</li>\n<li>\nVoir aussi\ndummy_rows Pour créer des lignes fictives\n</li>\n<li>\nAutres fonctions fictives : dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Exemples</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Inclure la colonne année\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Supprimer le premier fictif pour chaque paire de colonnes fictives créées</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Package</b></br>\nfastDummies</br>\n<b>Aide</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

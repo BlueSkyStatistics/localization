@@ -1,0 +1,19 @@
+{
+  "title": "一様分布からのサンプル",
+  "navigation": "一様分布からのサンプル",
+  "entrdsname": "データセットの名前を入力",
+  "min": "最小",
+  "max": "最大",
+  "lblnoofsamples": "サンプル数（行）",
+  "lblnoofobsv": "観測数（列）",
+  "lblseed": "シード",
+  "lblAddtoDS": "データセットに追加",
+  "chklbl1": "サンプル平均",
+  "chklbl2": "サンプル合計",
+  "chklbl3": "サンプル標準偏差",
+  "help": {
+    "title": "一様分布からのサンプル",
+    "r_help": "help(runif, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            これらの関数は、最小値から最大値までの区間における一様分布に関する情報を提供します。dunifは密度を、punifは分布関数を、qunifは分位数関数を、runifはランダム変数を生成します。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dunif(x, min = 0, max = 1, log = FALSE)\n                <br/>\n                punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                runif(n, min = 0, max = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>min, max : 分布の下限と上限。有限でなければなりません。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            minまたはmaxが指定されていない場合、デフォルト値の0と1が仮定されます。\n            <br/>\n            一様分布の密度は\n            <br/>\n            <code>f(x) = 1/(max-min)</code>\n            <br/>\n            min ≤ x ≤ maxの場合です。\n            <br/>\n            u := min == maxの場合、X == uの極限ケースが仮定されますが、その場合には密度は存在せず、dunifはNaN（エラー条件）を返します。\n            <br/>\n            runifは、max = minまたはmax-minがminに比べて小さい場合を除き、極端な値のいずれも生成しません。特にデフォルト引数の場合には生成しません。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dunifは密度を、punifは分布関数を、qunifは分位数関数を、runifはランダム変数を生成します。\n            <br/>\n            結果の長さはrunifの場合はnによって決定され、他の関数の場合は数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さに合わせて再利用されます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            擬似乱数生成器からの出力の特性（精度や周期性など）は大きく異なります。Rの乱数生成アルゴリズムに関する詳細は.Random.seedを参照してください。            \n      "
+  }
+}

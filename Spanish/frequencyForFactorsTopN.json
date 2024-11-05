@@ -1,0 +1,13 @@
+{
+  "navigation": "Factores Solo (Legado)",
+  "title": "Resúmenes, solo factores",
+  "subsetvars": "Variables de respuesta, 2 o más",
+  "ChkboxShowOnlyTopFewFactors": "Mostrar conteos solo para los N niveles de factores principales",
+  "txtNumTopFactorsToShow": "Ingrese un valor para N",
+  "label1": "Nota: Cuando la casilla de verificación está desmarcada, se mostrarán los conteos de TODOS los niveles. Esto puede llevar un tiempo considerable si tiene muchos niveles de factores.",
+  "help": {
+    "title": "Solo factores",
+    "r_help": "",
+    "body": "\n<b>Descripción</b></br>\nMuestra los conteos de cada nivel de cada variable de factor.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"nombre_del_conjunto_de_datos\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: Las variables de factor para mostrar conteos de niveles\n</li>\n<li>\ndata: El nombre del conjunto de datos\n</li>\n<li>\nshow.only.top.factors: Un booleano que determina si se deben mostrar los conteos solo de los niveles principales o de todos los niveles.\n</li>\n<li>\nmax.number.top.factors: si show.only.top.factors = TRUE, especifica el número de niveles para mostrar conteos\n</li>\n</ul>\n"
+  }
+}

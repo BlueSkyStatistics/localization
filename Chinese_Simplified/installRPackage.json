@@ -1,0 +1,16 @@
+{
+  "title": "安装 R 包",
+  "navigation": "安装 R 包",
+  "package_name": "请输入一个或多个包的名称，用逗号分隔",
+  "instruction_text": "\n注意：R 包名称区分大小写。您可以使用逗号作为分隔符安装多个包名称\n示例 1：foreign\n示例 2：foreign, car, MASS",
+  "instruction_text1": "\n注意：您必须对下面选择的路径具有写入权限，否则请通过选择以管理员身份运行选项重新启动应用程序",
+  "repository": "输入 CRAN 仓库的 URL，默认 https://cloud.r-project.org/ 从离您最近的 CRAN 镜像安装。",
+  "label1": "示例 1：foreign",
+  "label2": "注意：菜单栏上显示的 R 标志是 R 基金会的版权财产",
+  "installPath": "选择 R 库路径，R 包将安装到该路径",
+  "help": {
+    "title": "安装 R 包",
+    "r_help": "help(install.packages)",
+    "body": "\n            <b>描述</b></br>\n            安装或更新一个或多个 R 包到选定的库路径。</br>\n            注意：</br>\n            1. 我们将安装指定包所依赖、导入或链接的所有包。</br>\n            2. 如果您正在更新现有包，您必须重新启动 BlueSky Statistics 应用程序。</br>\n            3. 我们将在安装后加载新安装/更新的包。</br>\n            4. 默认情况下，我们将始终安装到本地计算机的用户个人 R 库。</br>\n            5. 如果同一个 R 包同时安装到个人和系统库位置（系统库位置是默认安装位置，包含我们随 BlueSky Statistics 打包的包），我们将从个人位置加载包。</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            install.packages(pkgs = c(\"package1\", \"package2\", lib = \"用户或系统库的路径\", repos = \"包含包的仓库路径\", BSkypackageinstall = TRUE)\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            pkgs：字符向量，包含应从指定仓库下载的包的当前版本的名称。\n            </li>\n            <li>\n            lib：字符向量，给出本地计算机上安装包的库路径。我们始终默认使用用户个人库位置。\n            </li>\n            <li>\n            repos：字符向量，使用的仓库的基本 URL，例如 CRAN 镜像的 URL，如 \"https://cloud.r-project.org\"。\n            </li>\n            <li>\n            BSkypackageinstall：这是 BlueSky Statistics 应用程序内部使用的标志，用于指示包是通过菜单安装的，并将其传递。\n            </li>\n            </ul>\n            <b>值</b><br/>\n            隐藏的 NULL。<br/>\n            <b>示例</b><br/>\n            <code> \n            install.packages(pkgs = c('package1','package2'), lib = \"C:/Users/user1/Documents\", repos = \"https://cloud.r-project.org/\", BSkypackageinstall = TRUE)\n            </code> <br/>\n            <b>包</b></br>\n            broom</br>\n            <b>帮助</b></br>\n            要获取详细帮助，请单击此对话框覆盖右上角的 R 图标\n\n"
+  }
+}

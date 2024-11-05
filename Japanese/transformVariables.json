@@ -1,0 +1,18 @@
+{
+  "title": "変数を変換する",
+  "navigation": "変換",
+  "label1": "ドロップダウンを使用して、選択した変数を変換する操作（log、log10、as.numeric...）を選択してください。既存の変数を上書きするか、プレフィックス/サフィックスを指定して新しい変数を作成できます。",
+  "target": "変換する変数を選択してください",
+  "selectctrl": "適用する操作を選択してください",
+  "label2": "新しい変数を作成するか、既存の変数を上書きする",
+  "suffix": "サフィックスを指定してください",
+  "prefix": "プレフィックスを指定してください",
+  "overwrite": "上書きする",
+  "enterPrefix": "プレフィックスを入力してください",
+  "enterSuffix": "サフィックスを入力してください",
+  "help": {
+    "title": "変数を変換する",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>説明</b></br>\nドロップダウンを使用して、選択した変数を変換する操作（log、log10、as.numeric...）を選択してください。既存の変数を上書きするか、プレフィックス/サフィックスを指定して新しい変数を作成できます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvar: 変換される変数\n</li>\n<li>\nDataset: 変数varを含むデータセット\n</li>\n</ul>\n<b>値</b></br>\n変換された値はデータセットに直接保存されます</br>\n<b>パッケージ</b></br>\nbase</br>\n<b>ヘルプ</b></br>\nhelp(log, package ='base')\n"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "help": {
+    "title": "相関分析",
+    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+    "body": "\n<b>説明</b>\nこの関数は、Hmiscパッケージのrcorr関数を使用して、ピアソンまたはスピアマンの相関行列と相関間のペアワイズp値を計算します。p値は、複数の推論に対してホルムの方法を使用して修正されます（p.adjustを参照）。観察は欠損データでフィルタリングされ、完全な観察のみが使用されます。\n<br/>\n<b>使用法</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## 'rcorr.adjust'クラスのS3メソッド\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>引数</b>\n   <ul>\n   <li>\nx: 印刷される数値行列またはデータフレーム、またはクラス\"rcorr.adjust\"のオブジェクト。\n</li>\n<li>\ntype: \"pearson\"または\"spearman\"、必要な相関のタイプに応じて; デフォルトは\"pearson\"です。\n</li>\n<li>\nuse: 欠損データの扱い方: \"complete.obs\"、デフォルト、完全なケースのみを使用; \"pairwise.complete.obs\"、各ペアの有効なデータを持つすべてのケースを使用します。\n</li>\n<li>\n...: 使用されません。\n</li>\n</ul>\n<b>値</b>\n\"rcorr.adjust\"クラスのオブジェクトを返します。通常は印刷されます。\n"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Cullen 和 Frey 圖表及非截斷數據的經驗分佈描述",
+  "navigation": "分佈分析 (Cullen 和 Frey 圖表)",
+  "variableSelcted": "選擇包含分佈的變數",
+  "boot": "(可選) 偏度和峰度的引導值。如果指定，必須是大於 10 的整數",
+  "discreteChk": "離散 - 未勾選（默認）用於均勻、正態、邏輯、對數正態、貝塔和伽瑪。勾選用於泊松和負二項",
+  "method": "無偏（默認）用於統計的無偏估計值或樣本的樣本值",
+  "help": {
+    "title": "非截斷數據的經驗分佈描述",
+    "r_help": "help(descdist, package = fitdistrplus)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t計算非截斷數據的經驗分佈的描述性參數並提供偏度-峰度圖\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(descdist, package = fitdistrplus)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t最小值、最大值、中位數、均值、樣本標準差，以及樣本（如果方法==\"sample\"）或默認的無偏估計的 \n\t\t\t\t偏度和皮爾森峰度值會被打印（Sokal 和 Rohlf, 1995）。給定的偏度-峰度圖是根據 Cullen 和 Frey（1999）提出的 \n\t\t\t\t經驗分佈。該圖上，常見分佈的值也顯示為幫助選擇擬合數據的分佈的工具。對於某些 \n\t\t\t\t分佈（例如正態、均勻、邏輯、指數），偏度和峰度只有一個可能的值（例如對於正態分佈，偏度 = 0 和峰度 = 3），因此該分佈在圖上 \n\t\t\t\t表示為一個點。對於其他分佈，可能值的區域被表示為線（例如伽瑪和對數正態分佈），或更大的區域（例如貝塔分佈）。 \n\t\t\t\t韋布爾分佈未在圖上表示，但在圖例中指出，接近對數正態和伽瑪分佈的形狀可能會通過此分佈獲得。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t為了考慮從數據中估計的峰度和偏度值的不確定性，數據集 \n\t\t\t\t可以通過將引導參數設置為大於 10 的整數來進行引導。對應於引導樣本的偏度和峰度的引導值 \n\t\t\t\t然後在偏度-峰度圖上以藍色報告。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果離散為 TRUE，則表示的分佈為泊松、負二項分佈，以及可能收斂的正態分佈。 如果離散為 FALSE，則為均勻、正態、 \n\t\t\t\t邏輯、對數正態、貝塔和伽瑪分佈。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">有關分佈擬合的良好概述，請參見 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
+  }
+}

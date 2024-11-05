@@ -1,0 +1,33 @@
+{
+  "title": "t-prueba, Muestras Independientes",
+  "navigation": "t-prueba, Muestras Independientes (Legado)",
+  "Target": "Seleccionar variables",
+  "textbox1": "Intervalo de confianza",
+  "textbox2": "Hipótesis nula (mu)",
+  "label1": "Hipótesis alternativa",
+  "test1": "grupo1 != grupo2",
+  "test2": "grupo1 > grupo2",
+  "test3": "grupo1 < grupo2",
+  "Target2": "Variable de factor con 2 niveles",
+  "label2": "Valores faltantes",
+  "Analysis": "Análisis por análisis",
+  "Listwise": "Lista completa",
+  "conflevel": "Intervalo de Confianza:",
+  "MissingVals": "Opciones para valores faltantes",
+  "cohensdNoCorrection": "d de Cohen",
+  "hedgesgNoCorrection": "g de Hedges",
+  "glassdNoCorrection": "delta de Glass",
+  "hedgesgCorrect": "g de Hedges con corrección de sesgo",
+  "glassdCorrect": "delta de Glass con corrección de sesgo",
+  "effectsizes": "Tamaños del efecto",
+  "cohensdCorrect": "d de Cohen con corrección de sesgo",
+  "label3": "Opciones para d de Cohen",
+  "label4": "Opciones para g de Hedges",
+  "label5": "Opciones para delta de Glass",
+  "showEffectSizes": "Mostrar tamaños del efecto",
+  "help": {
+    "title": "t-prueba, Muestras Independientes",
+    "r_help": "help(t.test, package ='stats')",
+    "body": "\n<b>Descripción</b></br>\nRealiza una prueba t de una muestra contra los dos grupos formados por una variable de factor (con dos niveles). Muestra resultados para varianzas iguales VERDADERO y FALSO. Para varianzas iguales se utiliza la varianza agrupada, de lo contrario se utiliza la aproximación de Welch (o Satterthwaite) a los grados de libertad. Internamente llama a t.test en el paquete stats para cada variable seleccionada \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyIndSmTTest(varNamesOrVarGlobalIndices=c('var1','var2'), group=c('var3'), conf.level = 0.95, alternative=\"two.sided\", missing =0, datasetNameOrDatasetGlobalIndex = 'Dataset') \n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: variables escala seleccionadas (por ejemplo, var1, var2)\n</li>\n<li>\ngroup: una variable de factor con dos niveles (por ejemplo, var3)\n</li>\n<li>\nconf.level: un valor numérico (por ejemplo, 0.95).\n</li>\n<li>\nmissing: los valores faltantes se manejan de manera individual por variable (missing =0) o de manera lista completa a través de todas las variables (missing=1). \n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: Nombre del conjunto de datos (por ejemplo, Dataset) del cual se seleccionan var1, var2 y var3.\n</li>\n<li>\nalternative: una cadena de caracteres que especifica la hipótesis alternativa, debe ser una de \"two.sided\" (predeterminado), \"greater\" o \"less\". Puedes especificar solo la letra inicial.\n</li>\n</ul>\n<b>Detalles</b></br>\nSe devuelve una lista con las tablas resultantes.\n<br/>\n<b>Ejemplo</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Ventas', 'IT','Ventas','IT'))</br>\n# El conjunto de datos debe cargarse en la cuadrícula de la interfaz de usuario</br>\nBSkyLoadRefresh(\"Dataset\")</br>\nBSky_One_Simple_T_Test = BSkyIndSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),group=c('Deptt'),conf.level=0.95, alternative=\"less\", datasetNameOrDatasetGlobalIndex ='Dataset')</br>\n</code> <br/>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haz clic en el ícono de R en la esquina superior derecha de este diálogo o ejecuta el siguiente comando help(t.test, package ='stats') creando un bloque de código R haciendo clic en + en la ventana de salida           \n    "
+  }
+}

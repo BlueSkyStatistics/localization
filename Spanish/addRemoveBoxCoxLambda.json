@@ -1,0 +1,14 @@
+{
+  "title": "Agregar/Reemplazar/Eliminar Lambda (λ) para una variable con transformación Box-Cox previa",
+  "navigation": "Agregar/Eliminar Lambda",
+  "label2": "Seleccione una variable para agregar/reemplazar/eliminar Lambda (λ) donde se aplicó previamente la transformación Box-Cox",
+  "variableSelcted": "Seleccione una variable",
+  "selectAddLambdaRad": "Opción 1: Agregar/Reemplazar el valor de Lambda (λ) si se aplicó previamente la transformación Box-Cox",
+  "selectRemoveLambdaRad": "Opción 2: Eliminar el valor de Lambda (λ) si se agregó erróneamente a la variable",
+  "lambda": "Especifique un valor de Lambda (λ) en (-2 a 2) que se registrará para la variable seleccionada",
+  "help": {
+    "title": "Agregar/Reemplazar/Eliminar Lambda (λ) que se utilizó para la transformación Box-Cox previa",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tEste diálogo se proporciona por conveniencia si el Lambda (λ) asociado con la variable necesita ser registrado \n\t\t\t\tcorrectamente o ajustado. El valor correcto de Lambda (λ) es importante ya que se utilizará si se necesita la inversa de Box-Cox\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada sobre Box-Cox o Lambda (λ) - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Para una buena visión general de MASS Box-Cox, vea https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValores de Lambda (λ) asociados con transformaciones Box-Cox familiares \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformación cuadrada ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: sin transformación; devuelve los datos originales ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformación de raíz cuadrada ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformación de raíz cúbica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformación de raíz cuarta\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformación logarítmica natural ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformación de raíz cuadrada recíproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformación recíproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformación cuadrada recíproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

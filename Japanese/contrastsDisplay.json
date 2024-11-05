@@ -1,0 +1,10 @@
+{
+  "title": "コントラストを表示",
+  "navigation": "コントラストを表示",
+  "target": "目的地",
+  "help": {
+    "title": "コントラストを表示",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>説明</b></br>\n            ファクター変数に関連するコントラストを表示します。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            x: Rオブジェクト。​\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            stats</br>\n            <b>ヘルプ</b></br>\n            help(contrasts, package ='stats')        \n            "
+  }
+}

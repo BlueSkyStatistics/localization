@@ -1,0 +1,29 @@
+{
+  "helpText": "重複測量的 ANOVA 需要數據以長格式呈現。如果您的數據不是長格式，請參見數據集 > 重塑 > 更長",
+  "repMeasuresConfig": "配置",
+  "modelname": "輸入模型名稱",
+  "title": "重複測量 ANOVA - 寬格式",
+  "subjectID": "可選擇指定一個變量作為主體識別符",
+  "dependentVariable": "因變量",
+  "navigation": "ANOVA, 重複測量, 寬格式",
+  "response": "受試者內變量，例如時間",
+  "Fixed": "受試者間因素",
+  "covariates": "協變量",
+  "Summary": "估計的邊際均值",
+  "Scatter_plot": "事後檢驗",
+  "Residual": "殘差與擬合圖",
+  "Histogram": "殘差的直方圖",
+  "brownForsythe": "布朗-福賽特檢驗",
+  "levenesTest": "列文檢驗",
+  "plotMeansCI": "均值和置信區間的圖",
+  "simpleEffectsTest": "簡單效應檢驗",
+  "label2": "事後檢驗和簡單效應檢驗的選項",
+  "combon": "使用以下方法比較均值：",
+  "adjust": "調整 p 值的方法",
+  "displayBoxMDetails": "顯示與 Box 的 M 檢驗相關的詳細信息（注意：Box 的 M 檢驗結果始終顯示）",
+  "help": {
+    "title": "重複測量 ANOVA",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>描述</b></br>\n注意：<br/>\n1. 在寬數據集上運行重複測量 ANOVA 時，我們需要重塑數據<br/>\n2. 我們支持對單個變量的多次重複測量，例如在預測試、後測和隨訪訪問時測量的血糖<br/>\n3. 您需要指定一個重複因素名稱，例如血糖，及其水平數。我們將創建一個因素變量，例如名為血糖，並從包含重複測量的變量名稱中創建水平，例如因素的水平將是預測試、後測和隨訪<br/>\n4. 您需要指定一個測量名稱，例如值。我們將創建一個變量，例如值，包含每個主體在預測試、後測和隨訪時的所有血糖值。<br/>\n5. 我們支持單個受試者間和受試者內因素變量。<br/>\n6. 未來版本將支持多次測量以及多個受試者間和受試者內因素變量。<br/>\n7. 默認情況下，數據集的每一行對應於唯一的主體，您還可以指定一個變量作為主體 ID。</br>\n<br/>\n使用重複測量 ANOVA 時，計算每個受試者內因素、受試者間因素和混合 ANOVA 的交互項的 F 統計量</br>\n查找輸出中的附加 ANOVA 值表，顯示 MSE（均方誤差的平均值）和 pes（部分 eta 平方）</br>\n我們目前支持單個受試者內和受試者間因素，受試者間因素是可選的。</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Identifier\", within = c(\"Time\"), \tbetween = c(\"Treatment\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndata: 包含數據的 data.frame。必填\n</li>\n<li>\ndv: 字符向量（長度為 1）指示數據中包含因變量的列。\n</li>\n<li>\nbetween: 字符向量指示數據中的受試者間因素/列。默認為 NULL，表示沒有受試者間因素。\n</li>\n<li>\nwithin: 字符向量指示數據中的受試者內（或重複測量）因素/列。默認為 NULL，表示沒有受試者內因素。\n</li>\n<li>\ncovariate: 字符向量指示數據中的受試者間協變量（即列）。默認為 NULL，表示沒有協變量。請注意，如果協變量是數字並應被視為這樣，則需要將 factorize 設置為 FALSE。\n</li>\n<li>\nanovatable: 傳遞給生成 ANOVA 表的函數的進一步參數的列表。 \n</li>\n</ul>\n<br/>\n<b>詳細信息</b></br>\n請參見詳細的 R 幫助</br>\n<b>值</b><br/>\naov_car、aov_4 和 aov_ez 是 Anova 和 aov 的包裝器，返回值取決於返回參數。默認情況下，返回一個類別為 \"afex_aov\" 的 S3 對象，包含以下插槽：<br/>\n\"anova_table\": 類別為 c(\"anova\", \"data.frame\") 的 ANOVA 表。<br/>\n\"aov\": 從 aov 返回的 aov 對象（不應用於評估效應的顯著性，但可以傳遞給 emmeans 進行事後檢驗）。<br/>\n\"Anova\": 從 Anova 返回的對象，類別為 \"Anova.mlm\"（如果存在受試者內因素）或類別為 c(\"anova\", \"data.frame\")。<br/>\n\"lm\": 擬合的 lm 對象並傳遞給 Anova（即，類別為 \"lm\" 或 \"mlm\" 的對象）。如果返回 = \"lm\"，也會返回。<br/>\n\"data\": 包含以下內容的列表：（1）長（用於 aov 的可能聚合數據的長格式）、寬（用於擬合 lm 對象的數據）和 idata（如果存在受試者內因素，傳遞給 car::Anova 的 idata 參數）。如果返回 = \"data\"，也會返回。<br/>\n<b>包</b></br>\nafex</br>\n<b>幫助</b></br>\nhelp(aov_ez, package ='afex')\n單擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(aov_ez, package ='afex') 並在 R 語法編輯器中按 CTRL Enter 獲取幫助\n    "
+  }
+}

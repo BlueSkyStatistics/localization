@@ -1,0 +1,24 @@
+{
+  "title": "Grafic de Frecvență",
+  "navigation": "Frecvențe",
+  "x": "Axa X",
+  "y": "Culoare, specificați o variabilă factor",
+  "bins": "Numărul de bin-uri (se aplică doar când variabila de pe axa X este o variabilă factor)",
+  "barcolor": "Culoarea Liniei (După selectarea culorii, faceți clic în afara controlului pentru a aplica)",
+  "tab1": "Numeric",
+  "tab2": "Factor",
+  "alpha": "Opacitate (0-1)",
+  "flip": "Răsturnați Axa",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de Facet",
+  "Facetcolumn": "Coloană de Facet",
+  "Facetwrap": "Împachetare Facet",
+  "Facetscale": "Scală Facet",
+  "help": {
+    "title": "Grafic de Frecvență",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>Descriere</b></br>\n            Vizualizați distribuția unei singure variabile continue prin împărțirea axei x în bin-uri și numărarea observațiilor din fiecare bin. Histogramele (geom_histogram()) afișează numărul cu bare; poligoanele de frecvență (geom_freqpoly()) afișează numărul cu linii. Poligoanele de frecvență sunt mai potrivite atunci când doriți să comparați distribuția între nivelurile unei variabile categorice. </br>\n            NOTĂ: Ignorăm culoarea selectată dacă există o variabilă de grupare/culoare specificată, deoarece o culoare diferită este selectată pentru fiecare nivel al variabilei de grupare.</br>\n            Când specificați mai multe variabile x, creăm un grafic de frecvență separat pentru fiecare variabilă x.</br>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n            #Puteți crea un grafic de frecvență pentru una sau mai multe variabile numerice. Numărul implicit de bin-uri este setat la 30.</br>\n            #Exemplul de mai jos folosește setul de date mtcars din pachetul datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #Puteți crea un grafic de frecvență pentru una sau mai multe variabile numerice și grupa graficul după o variabilă factor. Numărul implicit de bin-uri este setat la 30.</br>\n            #Exemplul de mai jos folosește setul de date mtcars din pachetul datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #Puteți crea un grafic de frecvență/grafic de linii prin gruparea unei variabile factor după alta</br>\n            #Trebuie să faceți clic dreapta pe cyl și am în vizualizarea variabilelor pentru a o face o variabilă factor</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            aes(): Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            group:  O variabilă factor/categorică opțională. \n            </li>\n            <li>\n            geom_freqpoly(): Creează graficul de frecvență\n            </li>\n            <li>\n            bins: Numărul de bin-uri.\n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (Aceasta este opțional)​\n            </li>\n            <li>\n            facet_grid(): Așezați panourile într-o grilă (Aceasta este opțional)​\n            </li>\n            <li>\n            theme_calc(): Specifică tema calculatorului (Aceasta este opțional)​\n            </li>\n            <li>\n            coord_flip(): Răsturnați axa (Aceasta este opțional)​\n            </li>\n            <li>\n            alpha: Controlează opacitatea, ia valori între 0-1. 1 înseamnă fără opacitate.\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajutor</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​           \n      "
+  }
+}

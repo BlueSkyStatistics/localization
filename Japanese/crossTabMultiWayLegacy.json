@@ -1,0 +1,7 @@
+{
+  "help": {
+    "title": "クロス集計",
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>説明</b></br>\n行、列、レイヤー変数を持つクロス集計を作成し、以下をオプションで表示します<br/>\n期待されるカウント<br/>\n行および列のパーセンテージ<br/>\n非標準化、標準化、調整済み残差<br/>\nオッズ比、McNemarおよびFisher統計を用いたカイ二乗<br/>\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 行変数\n</li>\n<li>\ny: 列変数\n</li>\n<li>\nlayers: レイヤー用の1つ以上の変数\n</li>\n<li>\nweights: 頻度重みを含む数値変数\n</li>\n<li>\ndatasetname: x,yおよびlayers（変数）が選択されるデータセットの名前\n</li>\n<li>\nchisq: TRUEの場合、カイ二乗テーブルを生成します\n</li>\n<li>\nprop.r: これがTRUEの場合、行のパーセンテージが生成されます\n</li>\n<li>\nprop.c: これがTRUEの場合、列のパーセンテージが生成されます\n</li>\n<li>\nresid: TRUEの場合、非標準化残差が生成されます\n</li>\n<li>\nsresid: TRUEの場合、標準化残差が生成されます\n</li>\n<li>\nexpected: これがTRUEの場合、期待されるカウントが生成されます\n</li>\n<li>\nasresid: TRUEの場合、調整済み残差が生成されます\n</li>\n</ul>\n<b>値</b></br>\n結果を含むリスト\n<br/>\n<b>例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>パッケージ</b></br>\ngmodels</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、出力ウィンドウで+をクリックしてRコードチャンクを作成し、次のコマンドhelp(CrossTable, package=gmodels)を実行してください。\n    "
+  }
+}

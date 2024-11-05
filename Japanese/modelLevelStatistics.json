@@ -1,0 +1,13 @@
+{
+  "title": "モデルレベル統計",
+  "navigation": "モデル統計",
+  "label1": "以下のクラスのモデルがサポートされています。クラスは以下の括弧内にリストされています。",
+  "label2": "線形モデル (lm)、一般化線形モデル (glm)、多項ロジスティック回帰 (multinom)、分位点回帰 (rq)、ロバスト線形回帰 (rlm)、生存曲線オブジェクト (survfit)、線形混合効果モデル (lme)、比例ハザード回帰オブジェクト (coxph)、パラメトリック生存回帰モデル (survreg)、順序ロジスティック/プロビット回帰 (polr)、因子分析 (factanal)、ラッソおよびエラスティックネット正則化一般化線形モデル (glmnet)",
+  "modelselector1": "モデルを選択",
+  "showModelEquationChk": "モデル方程式を表示 (lm、glm、二次、三次モデルのみ)",
+  "help": {
+    "title": "モデルレベル統計",
+    "r_help": "help(glance, package ='broom')",
+    "body": "\n                <b>説明</b></br>\nモデル、フィット、または他のオブジェクトの単一行要約「glance」を構築します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nglance(x, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: モデルまたは他のRオブジェクトを要約します\n</li>\n</ul>\n<b>詳細</b></br>\nglanceメソッドは常に、値を持つ1行のデータフレームを返します。NULLの場合は空のデータフレームを返します。</br>\n以下のモデルを要約します。</br>\n線形モデル (モデルクラス lm)</br>\n一般化線形モデル (モデルクラス glm)</br>\n多項ロジスティック回帰モデル (モデルクラス multinom)</br>\n順序ロジスティックまたはプロビット回帰 (モデルクラス polr)</br>\nラッソおよびエラスティックネット正則化一般化線形モデル (モデルクラス glmnet)</br>\nロバスト線形回帰 (モデルクラス rlm)</br>\n分位点回帰 (モデルクラス rq)</br>\n線形混合効果モデル (lme)</br>\n比例ハザード回帰オブジェクト (coxph)</br>\nパラメトリック生存回帰モデル (survreg)</br>\n因子分析 (factanal)</br>\n<b>値</b><br/>\n列を持つ1行のtibble::tibble:<br/>\nr.squared: モデルによって説明される分散の割合<br/>\nadj.r.squared: 自由度に基づいて調整されたr.squared<br/>\nsigma: 推定残差分散の平方根<br/>\nstatistic: F統計量<br/>\np.value: 完全回帰が有意かどうかを示すF検定のp値<br/>\ndf: 係数によって使用される自由度<br/>\nlogLik: モデル下でのデータの対数尤度<br/>\nAIC: 赤池情報量基準<br/>\nBIC: ベイズ情報量基準<br/>\ndeviance: 偏差<br/>\ndf.residual: 残差自由度<br/>\n<b>パッケージ</b></br>\nbroom</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください: help(glance, package ='broom')\n                "
+  }
+}

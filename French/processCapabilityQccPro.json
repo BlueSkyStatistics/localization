@@ -1,0 +1,31 @@
+{
+  "title": "Capacité de Processus",
+  "navigation": "Capacité de Processus",
+  "summaryPlotChk": "Tracer les graphiques xbar et I sous-jacents utilisés pour calculer la capacité du processus",
+  "displaySLlineonPlotChk": "Afficher les lignes LSL et USL sur les graphiques sous-jacents",
+  "printObjectSummaryChk": "Imprimer le résumé de l'objet QCC pour la capacité du processus",
+  "label1": "Deux options - soit sélectionner une variable (et une variable de regroupement si nécessaire) ou sélectionner les variables dans le jeu de données si déjà regroupées",
+  "label2": "Options avancées",
+  "selectVariableRad": "Option 1 : Sélectionner une variable du jeu de données (éventuellement à regrouper)",
+  "variableSelcted": "Sélectionner une variable (données observées) à analyser",
+  "groupingVariable": "Variable de regroupement (facultatif - si les données doivent être regroupées)",
+  "variableControlLimits": "Lignes de données à écarter, le cas échéant, avant le regroupement pour les limites de contrôle des variables (par exemple, spécifier comme 1:25 ou 1,4,5,7:12)",
+  "displayGroupsChk": "Afficher les regroupements sur l'interface utilisateur du jeu de données à titre de référence uniquement",
+  "selectDatasetRad": "Option 2 : Sélectionner les variables du jeu de données si déjà regroupées",
+  "variablelistSelcted": "Sélectionner une ou plusieurs variables regroupées (données observées) à analyser",
+  "rowsTobeUsed": "Si les lignes sélectionnées (regroupées) doivent être utilisées pour analyser la capacité du processus (par exemple, spécifier comme 1:25 ou 1,4,5,7:12)",
+  "nsigmas": "Sigma - nombre de sigmas à utiliser pour le calcul des limites de contrôle",
+  "confidence_level": "Une valeur numérique entre 0 et 1 spécifiant le niveau à utiliser pour le calcul des intervalles de confiance",
+  "stddev": "Méthode d'écart type pour calculer xbar (pour une taille de groupe > 1)",
+  "stddevXbarOne": "Méthode d'écart type pour calculer I-MR",
+  "DoNotUseUnbiasingConstantChk": "Ne pas utiliser de constante de déséquilibre pour estimer l'écart type pour les indices de capacité de processus globaux",
+  "lower": "LSL - valeur numérique de la limite de spécification inférieure (tapez NA pour spécifier des limites de spécification unilatérales)",
+  "upper": "USL - valeur numérique de la limite de spécification supérieure (tapez NA pour spécifier des limites de spécification unilatérales)",
+  "target": "Cible - une valeur facultative spécifiant la cible du processus",
+  "digits": "Chiffres - nombre de chiffres à afficher",
+  "help": {
+    "title": "Capacité de Processus (paquet qcc)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction qcc calcule les indices de capacité \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour une aide détaillée - utilisez R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), et help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé pistonrings du paquet qcc avec le menu Charger le jeu de données en sélectionnant le paquet qcc puis en sélectionnant le jeu de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre pour variable(observé..), échantillon pour variable de regroupement, \n\t\t\t\t<br/>\n\t\t\t\tTapez 1:25 dans les lignes regroupées à utiliser\n\t\t\t\t<br/>\n\t\t\t\tPour l'analyse de capacité de processus - tapez 73.95 dans LSL, 74.05 dans USL, et 74.0 dans la limite cible\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

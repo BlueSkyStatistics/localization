@@ -1,0 +1,18 @@
+{
+  "title": "標準化變數",
+  "navigation": "標準化",
+  "label1": "標準化的值將以指定的前綴/後綴保存到新變數中。",
+  "dest": "選擇要標準化的變數",
+  "label2": "選擇前綴或後綴",
+  "suffix": "後綴",
+  "prefix": "前綴",
+  "txt1": "輸入前綴/後綴",
+  "label3": "中心化和/或縮放",
+  "Center": "中心化",
+  "Scale": "縮放",
+  "help": {
+    "title": "標準化變數",
+    "r_help": "",
+    "body": "\n<b>描述</b></br>\n標準化變數（z 分數）。標準化的值存儲在新變數中，使用原始變數的前綴或後綴。提供選項以進行中心化和/或縮放。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 一個或多個要標準化的變數。僅支持數值變數（不支持因子）。\n</li>\n<li>\ncenter: 如果 center 為 TRUE，則通過從 x 的相應列中減去列均值（忽略 NAs）來進行中心化；如果 center 為 FALSE，則不進行中心化。\n</li>\n<li>\nscale: 如果 scale 為 TRUE，則通過將 x 的（中心化）列除以其標準差來進行縮放（如果 center 為 TRUE），否則除以均方根。如果 scale 為 FALSE，則不進行縮放。\n</li>\n<li>\nstingToPrefixOrSuffix: 一個字符字符串，指定用於新標準化變數的前綴或後綴（即數據集中的新列）。\n</li>\n<li>\nprefixOrSuffix: 指定您想要前綴還是後綴\n</li>\n<li>\ndatasetname: 數據集/數據框名稱\n</li>\n</ul>\n注意：我們不會將數值轉換為因子。當數值被重新編碼時，它將保持為數值，當因子變數被重新編碼時，它將保持為因子。</br>\n<b>包</b></br>\nBlueSky</br>\n"
+  }
+}

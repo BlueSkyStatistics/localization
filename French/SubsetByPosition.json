@@ -1,0 +1,27 @@
+{
+  "title": "Sous-ensemble par Position",
+  "navigation": "Sous-ensemble par Position",
+  "newdatasetlabel": "Spécifiez le Nom du Nouveau Jeu de Données",
+  "sortbyvarslabel": "Variables à Trier en Premier (Ordre Croissant)",
+  "groupbyvarslabel": "Groupes à Sous-ensemble",
+  "subsettypelabel": "Type de Sous-ensemble",
+  "firstnlabel": "Premières N Lignes",
+  "lastnlabel": "Dernières N Lignes",
+  "lowestnlabel": "Lignes avec les N Valeurs les Plus Basses pour une Variable",
+  "highestnlabel": "Lignes avec les N Valeurs les Plus Élevées pour une Variable",
+  "firstproplabel": "Première Proportion de Lignes",
+  "lastproplabel": "Dernière Proportion de Lignes",
+  "lowestproplabel": "Lignes dans le Percentile le Plus Bas pour une Variable",
+  "highestproplabel": "Lignes dans le Percentile le Plus Élevé pour une Variable",
+  "nlabel": "N (positif garde, négatif enlève)",
+  "proplabel": "Proportion (positif garde, négatif enlève)",
+  "varlabel": "Variable",
+  "tieslabel": "Inclure les Valeurs Égalées",
+  "rownumlabel": "Spécifiez les Numéros de Lignes",
+  "rownumboxlabel": "Nombres ou plages séparés par des virgules (ex. 1,3,5 ou 20:30 ou seq(2,10,by=2), positif garde, négatif enlève)",
+  "help": {
+    "title": "Sous-ensemble par Position",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nCela sous-ensemble un jeu de données selon la position des lignes.\n<br/><br/>\n<b>Spécifiez le Nom du Nouveau Jeu de Données :</b> Nom du jeu de données où les données sous-ensemblées seront stockées\n<br/><br/>\n<b>Variables à Trier en Premier :</b> Variables utilisées pour trier les lignes avant que tout sous-ensemble ne soit entrepris. Cela n'affectera que les options qui sélectionnent le nombre de lignes, par ex. \nPremières/Dernières N Lignes, Première/Dernière Proportion de Lignes, et Spécifiez les Numéros de Lignes. Cela sera toujours en ordre croissant.\n<br/><br/>\n<b>Groupes à Sous-ensemble :</b> Ne spécifiant aucune variable, cela sous-ensemble selon la position des lignes de l'ensemble du jeu de données. En spécifiant des variables, cela sous-ensemble selon la position des lignes\nau sein des groupes définis par toutes les combinaisons de valeurs pour les variables spécifiées.\n<br/><br/>\n<b>Type de Sous-ensemble</b>\n<br/><br/>\n<b>Premières N Lignes :</b> Garde les premières N lignes de l'ensemble de données global ou au sein des groupes\n<br/><br/>\n<b>Dernières N Lignes :</b> Garde les dernières N lignes de l'ensemble de données global ou au sein des groupes\n<br/><br/>\n<b>Lignes avec les N Valeurs les Plus Basses pour une Variable :</b> Garde les lignes qui ont les valeurs ordonnées les plus basses pour une variable spécifiée globalement ou au sein des groupes. Par exemple, spécifier 10 garderait \nles lignes avec les 10 valeurs les plus basses pour une variable.\n<br/><br/>\n<b>Lignes avec les N Valeurs les Plus Élevées pour une Variable :</b> Garde les lignes qui ont les valeurs ordonnées les plus élevées pour une variable spécifiée globalement ou au sein des groupes. Par exemple, spécifier 10 garderait \nles lignes avec les 10 valeurs les plus élevées pour une variable.\n<br/><br/>\n<b>Première Proportion de Lignes :</b> Garde les lignes dans la proportion supérieure de l'ensemble de données global ou au sein des groupes. Par exemple, spécifier .10 garderait le top 10% de l'ensemble de données \nselon le nombre total de lignes.\n<br/><br/> \n<b>Dernière Proportion de Lignes :</b> Garde les lignes dans la proportion inférieure de l'ensemble de données global ou au sein des groupes. Par exemple, spécifier .10 garderait le bas 10% de l'ensemble de données \nselon le nombre total de lignes.\n<br/><br/>\n<b>Lignes dans le Percentile le Plus Bas pour une Variable :</b> Garde les lignes dans le percentile le plus bas pour une variable spécifiée, globalement ou au sein des groupes. Par exemple, spécifier .10 garderait \nle 10ème percentile le plus bas pour une variable (minimum au 10ème percentile).\n<br/><br/>\n<b>Lignes dans le Percentile le Plus Élevé pour une Variable :</b> Garde les lignes dans le percentile le plus élevé pour une variable spécifiée, globalement ou au sein des groupes. Par exemple, spécifier .10 garderait \nle 10ème percentile le plus élevé pour une variable (90ème percentile au maximum).\n<br/><br/>\n<b>Spécifiez les Numéros de Lignes :</b> Garde les lignes numérotées exactes spécifiées. Par exemple, spécifier 1,3,5 garderait la première, la troisième et la cinquième lignes. Spécifier 20:30 garderait les lignes 20 \nà 30. Spécifier seq(2,10,by=2) garderait les lignes numérotées paires jusqu'à la 10ème ligne.\n<br/><br/>\n<b>Inclure les Valeurs Égalées :</b> Spécifie si les valeurs égales doivent être incluses ou non. Par exemple, si vous voulez les lignes pour les 10 valeurs les plus basses d'une variable et que la 10ème valeur la plus basse \napparaît plus d'une fois, inclure les valeurs égales gardera toutes les lignes qui égalent la valeur dupliquée. \n<br/><br/>\nNotez que spécifier des valeurs négatives pour N ou la proportion enlève les lignes correspondantes de l'ensemble de données. Par exemple, spécifier -10 pour les Premières N Lignes enlèverait \nles 10 premières lignes. Spécifier -.10 pour la Première Proportion de Lignes enlèverait les 10% premiers des lignes.\n<br/><br/>\n<b>Packages R Requis :</b> dplyr\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Grafic Pareto, de bază",
+  "navigation": "Grafic Pareto, de bază",
+  "label1": "Două opțiuni - Format lung (implicit) adică categorii și numere în coloane verticale și Format lat adică categorii ca nume de coloane și numere ca rând",
+  "selectLongRad": "Opțiunea 1: Format lung - alegeți categorii și numere",
+  "selectWideRad": "Opțiunea 2: Format lat - Numele coloanelor vor fi folosite ca categorii și 1st rând (implicit) va fi folosit ca numere",
+  "rownumForCounts": "Numărul rândului (implicit 1st rând) care va fi folosit pentru numere",
+  "mainTitle": "Titlul graficului",
+  "category": "Variabilă (de exemplu, categorii) de reprezentat",
+  "counts": "Variabilă de folosit ca numere de reprezentat",
+  "xlab": "Un șir care specifică eticheta pentru axa x",
+  "ylab": "Un șir care specifică eticheta pentru axa y",
+  "ylab2": "Un șir care specifică eticheta pentru a doua axă y pe partea dreaptă",
+  "percentStep": "Pasul procentual care va fi folosit ca marcaje pentru a doua axă y pe partea dreaptă",
+  "digits": "Numărul de zecimale pentru tabelul de statistici",
+  "help": {
+    "title": "Grafic Pareto",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tfuncția pareto.chart pentru a crea un tabel de statistici și a reprezenta un grafic Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de probă numit defects_frequency_pareto_chart.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

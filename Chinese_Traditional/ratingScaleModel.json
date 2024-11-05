@@ -1,0 +1,16 @@
+{
+  "title": "評分量表模型",
+  "navigation": "評分量表模型",
+  "modelname": "輸入模型名稱",
+  "destinationvars": "目的變數",
+  "estimationlbl": "估計",
+  "rad1": "使用 CML 估計",
+  "chk1": "計算標準誤差",
+  "chk2": "將參數正規化為總和 (0)",
+  "rad2": "使用 MML 估計",
+  "help": {
+    "title": "評分量表模型",
+    "r_help": "help(RSM, package='eRm')",
+    "body": "\n            <b>描述</b>\n            <br/>\n            生成評分量表模型的參數估計\n            <br/><br/>\n            對於 CML 估計，我們調用 eRm::RSM 來計算多項選擇題反應的評分量表模型的參數估計\n            <br/><br/>\n            對於 MML 估計，我們調用 tam.mml，使用適當的參數，見下文\n            <br/><br/>\n            <b>CML 估計的用法</b>\n            <br/>\n            <code>\n            eRm::RSM(X,se=FALSE,sum0=FALSE) \n            </code>  \n            <br/><br/>\n            <b>參數</b>\n            <br/>                      \n            <ul>\n            <li>\n            X:  輸入的 0/1 數據矩陣或數據框；行代表個體，列代表項目。缺失值以 NA 插入。\n            </li>\n            <li>\n            W:  Rasch 模型的設計矩陣。如果省略，函數將自動計算 W。\n            </li>\n            <li>\n            se: 如果為 TRUE，則計算標準誤差。\n            </li>\n            <li>\n            sum0: 如果為 TRUE，則通過指定適當的 W 將參數正規化為總和為 0。如果為 FALSE，則第一個參數限制為 0。\n            </li>\n            <li>\n            etaStart: 可以指定 eta 參數的起始值向量。如果缺失，則使用 0 向量。\n            </li>\n            </ul>\n            <br/><br/><br/>\n            <b>MML 估計的用法</b>\n            <br/>\n            <code>\n            tam.mml(resp,irtmodel=\"RSM\",verbose=FALSE )\n            </code>\n            <br/><br/>\n            <b>參數</b>\n            <br/>             \n            <ul>\n            <li>\n            resp: 包含多項選擇題反應的數據框 k=0,...,K。缺失反應必須聲明為 NA。\n            </li>\n            <li>\n            irtmodel: 對於固定項目斜率（在 tam.mml 中），選項包括 PCM（部分信用模型）、PCM2（部分信用模型，使用 ConQuest 參數化 'item+item*step'）和 RSM（評分量表模型；ConQuest 參數化 'item+step'）。 \n            <br/>\n            對於估計的項目斜率（僅在 tam.mml.2pl 中可用），選項為 2PL（所有項目類別的斜率均被估計；名義項目反應模型）、GPCM（每個項目在每個維度上僅獲得一個斜率參數的廣義部分信用模型）和 2PL.groups（項目的子集獲得相同的項目斜率估計）以及在廣義部分信用模型中的項目斜率的設計矩陣（GPCM.design，見示例）。請注意，使用 tam.mml.mfr 函數的分面設計無法估計項目斜率。然而，使用預先指定的設計矩陣並對 tam.mml.2pl 應用一些限制是很容易的。\n            </li>\n            <li>\n            verbose: 邏輯值，指示在迭代過程中是否應打印輸出。 \n            </li>\n            </ul>\n            <br/><br/>\n            <b>包</b>\n            <br/>\n            TAM, eRm\n            <br/><br/>\n            <b>幫助</b>\n            <br/>\n            help(RSM, package='eRm')\n            <br/>\n            help(tam.mml, package='TAM')\n"
+  }
+}

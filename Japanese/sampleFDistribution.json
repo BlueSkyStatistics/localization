@@ -1,0 +1,19 @@
+{
+  "title": "F分布のサンプル",
+  "navigation": "F分布のサンプル",
+  "entrdsname": "データセットの名前を入力",
+  "dfnumerator": "分子自由度",
+  "dfdenominator": "分母自由度",
+  "lblnoofsamples": "サンプル数（行）",
+  "lblnoofobsv": "観測数（列）",
+  "lblseed": "シード",
+  "lblAddtoDS": "データセットに追加",
+  "chklbl1": "サンプル平均",
+  "chklbl2": "サンプル合計",
+  "chklbl3": "サンプル標準偏差",
+  "help": {
+    "title": "F分布のサンプル",
+    "r_help": "help(rf, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            自由度df1およびdf2を持つF分布の密度、分布関数、分位関数、および乱数生成（オプションの非中心性パラメータncpを含む）。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                df(x, df1, df2, ncp, log = FALSE)\n                <br/>\n                pf(q, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qf(p, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rf(n, df1, df2, ncp)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>df1, df2 : 自由度。Infが許可されています。</li>\n                \n                \n                <li>ncp : 非中心性パラメータ。省略すると中心Fが仮定されます。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            df1 = n1およびdf2 = n2の自由度を持つF分布は、密度を持ちます\n            <br/>\n            <code>f(x) = Γ((n1 + n2)/2) / (Γ(n1/2) Γ(n2/2)) (n1/n2)^(n1/2) x^(n1/2 - 1) (1 + (n1/n2) x)^-(n1 + n2)/2</code>\n            <br/>\n            x > 0のとき。\n            <br/>\n            これは、n1およびn2の独立した標準正規分布の平均平方の比の分布であり、したがって、自由度で割られた2つの独立したカイ二乗変数の比です。正規分布とm個の独立した正規分布の平方根の比は、Studentのt_m分布を持ち、t_m変数の平方は1およびmの自由度のF分布を持ちます。\n            <br/>\n            非中心F分布は、単位分散の独立した正規分布の平均平方の比ですが、分子のものはゼロ以外の平均を持つことが許可され、ncpは平均の平方和です。非中心分布に関する詳細はChisquareを参照してください。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dfは密度を与え、pfは分布関数を与え、qfは分位関数を与え、rfは乱数を生成します。\n            <br/>\n            無効な引数は、警告とともに戻り値NaNをもたらします。\n            <br/>\n            結果の長さはrfのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さに再利用されます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            ncp = 0を指定すると、非中心分布のアルゴリズムが使用されますが、ncpが省略された場合に使用されるアルゴリズムとは異なります。これは、ncpが非常にゼロに近い値の場合に一貫した動作を提供するためです。\n            <br/>\n            非ゼロのncpのコードは、主に中程度のncpの値に使用されることを意図しており、大きな値に対しては特に尾部で高い精度を持ちません。            \n      "
+  }
+}

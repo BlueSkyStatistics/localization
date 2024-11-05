@@ -1,0 +1,13 @@
+{
+  "title": "Teilmenge Datensatz",
+  "navigation": "Teilmenge, Ergebnisse im Output",
+  "label0": "Die Ergebnisse werden im Ausgabefenster angezeigt",
+  "label1": "Optionen",
+  "New": "Ergebnisse in einem neuen Datensatz speichern",
+  "newdatasetname": "Geben Sie einen Datensatznamen ein",
+  "Existing": "Vorhandenen Datensatz überschreiben",
+  "distinct": "Wählen Sie eindeutige Fälle aus",
+  "chkbox2": "Nicht verwendete Faktorstufen entfernen",
+  "subsetvars": "Wählen Sie Variablen aus, die im Teilmengen-Datensatz enthalten sein sollen",
+  "subsetexpression": "Geben Sie die Kriterien für die Teilmenge ein. Die Kriterien für die Teilmenge werden auf jede Zeile des Datensatzes angewendet. Beispiel 1: !is.na(var1) & is.na(var2). Beispiel 2: var1>30 & var2=='männlich'. Beispiel 3: (var1 !=10 & var2>20) | var3==40. Beispiel 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". Beispiel 5: substr(var1,2,4) ==\"abc\""
+}

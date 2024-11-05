@@ -1,0 +1,30 @@
+{
+  "title": "Diagramă circulară",
+  "suppressLabels": "Suprimă toate etichetele pentru număr și procente",
+  "optionsLabels": "Opțiuni pentru etichete",
+  "suppressThreshold": "Suprimă etichetele pentru număr și procente sub procentul prag specificat",
+  "radius": "Specificați un rază pentru a afișa etichetele (creșterea razei mută etichetele în exterior)",
+  "radiusNote": "Notă: Opțiunea de mai sus nu se aplică atunci când opțiunea de a afișa cercuri concentrice este selectată.",
+  "navigation": "Diagramă circulară",
+  "concentricCircles": "Afișați cercuri concentrice (se aplică doar când variabila de pe axa X este specificată)",
+  "x": "Axa X, specificați variabila(e) factor",
+  "y": "Variabila Y, specificați o variabilă numerică",
+  "fill": "Umplere, specificați o variabilă factor",
+  "alpha": "Opacitate (0-1)",
+  "width": "Lățime",
+  "rdgrp1": "Proporții de umplere",
+  "flip": "Răsturnați axa",
+  "barcolor": "Culoarea barei (după selectarea culorii, faceți clic în afara controlului pentru a aplica)",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare de fațete",
+  "Facetscale": "Scală de fațete",
+  "help": {
+    "title": "Diagramă circulară",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>Descriere</b></br>\n            O diagramă circulară (sau o diagramă în cerc) este un grafic statistic circular, care este împărțit în felii pentru a ilustra proporția numerică. Într-o diagramă circulară, lungimea arcului fiecărei felii (și, prin urmare, unghiul său central și aria) este proporțională cu cantitatea pe care o reprezintă. Cantitatea poate fi reprezentată ca un număr sau procent.\n            Fațetele pot fi create opțional specificând o variabilă factor. De asemenea, puteți specifica opțional teme și un titlu și etichete pentru axele x și y.</br>\n            Când specificați mai multe variabile x, creăm o diagramă circulară separată pentru fiecare variabilă x. </br>\n            Raza vă permite să controlați plasarea etichetelor. O rază de 1 plasează etichetele în centrul diagramei, o rază de 1.6 plasează etichetele în exteriorul diagramei.</br>\n            Cercul exterior de culoare gri deschis reprezintă numărul sau totalul. Consultați textul de la baza diagramei circulare pentru detalii.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n            #Puteți crea o diagramă circulară pentru o singură variabilă factor, iar cercurile vor reprezenta numerele fiecărui nivel al variabilei factor. Aici variabila factor va corespunde umplerii<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"Diagramă circulară cu umplere: specii\") +\n\tylab(\"\") + \n\txlab(\"Număr\")</br></br>\n            #Puteți crea o diagramă circulară specificând o variabilă scală/numerică ca variabilă y, și umplând feliile diagramei cu o variabilă factor. Cercurile sunt umplute prin sumarea valorilor variabilei y pentru fiecare nivel al variabilei factor, consultați exemplul de mai jos<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #Puteți specifica o variabilă x, o variabilă y și umplere. Feliile sunt create pentru fiecare nivel al variabilei x și umplute prin suma valorilor variabilei y pentru fiecare nivel al variabilei specificate în umplere.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            aes():    Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            x: (Opțional) O variabilă factor/categorială. Lungimea barei corespunde numărului fiecărui nivel al variabilei factor.​\n            </li>\n            <li>\n            Y: (Opțional) o variabilă numerică\n            </li>\n            <li>\n            fill: (Opțional) O variabilă factor/categorială opțională pentru a grupa numerele nivelurilor în x: (vezi mai sus)​\n            </li>\n            <li>\n            geom_bar(): Creează graficul cu bare, poziția =\"fill\" umple bara cu un procent din fiecare nivel de grupare.​\n            </li>\n            <li>\n            Coor_polar(): Sistemul de coordonate polare este cel mai frecvent utilizat pentru diagrame circulare, care sunt un grafic cu bare stivuite în coordonate polare.\n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (aceasta este opțional)​\n            </li>\n            <li>\n            facet_grid(): Aranjați panourile într-o rețea (aceasta este opțional)​\n            </li>\n            <li>\n            theme_calc(): Specifică tema calculatorului (aceasta este opțional)​\n            </li>\n            <li>\n            coord_flip(): Răsturnați axa (aceasta este opțional)​\n            </li>\n            <li>\n            alpha: Controlează opacitatea, ia valori între 0-1. 1 înseamnă fără opacitate.\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajutor</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​            \n    "
+  }
+}

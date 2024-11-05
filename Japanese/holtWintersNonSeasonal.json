@@ -1,0 +1,31 @@
+{
+  "title": "ホルト・ウィンターズ、非季節性",
+  "navigation": "ホルト・ウィンターズ、非季節性",
+  "destination": "予測する変数",
+  "firstObservation": "最初の観測の時間 例: 1: 1961,1 と入力すると1961年1月、例: 2: 1961,3 と入力すると1961年第3四半期、例: 3: 1 と入力すると連続系列",
+  "frequency": "単位時間あたりの観測数 例: 1: 年間の各月に1回の観測をするために12と入力、例: 2: 四半期ごとに1回の観測をするために4と入力、例: 3: 連続系列のために1と入力。",
+  "label1": "プロット",
+  "plotSeries": "プロット系列",
+  "yaxisLabel": "Y軸ラベル",
+  "mainTitle": "メインタイトル",
+  "label2": "フィッティング値のオプション",
+  "saveFitted": "フィッティング値を保存",
+  "fittedValsDatasetName": "フィッティング値を保存するデータセット名を指定",
+  "oriVsFitted": "元のデータとフィッティングデータをプロット",
+  "plotResiduals": "残差をプロット",
+  "label3": "モデルを使用して予測",
+  "predict": "モデルを使用して予測を行う",
+  "confInterval": "信頼区間をパーセントで指定 例: 95 は95%",
+  "periodToPredict": "予測する間隔の数を指定",
+  "savePredictedVals": "予測値を保存",
+  "predictedValsDatasetName": "予測値を保存するデータセット名を指定",
+  "plotPredicted": "予測値をプロット",
+  "correlogram": "相関図を生成",
+  "maxlag": "最大ラグを入力",
+  "Boxtest": "リュン・ボックス検定",
+  "help": {
+    "title": "ホルト・ウィンターズ、非季節性",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>説明</b></br>\n            BSkyHoltWintersSeasonalは、statsパッケージのHoltWintersのラッパー関数です。<br/>\n指定された時系列のホルト・ウィンターズフィルタリングを計算します。未知のパラメータは、二乗予測誤差を最小化することによって決定されます。内部的に、季節成分のためのガンマパラメータがFALSEに設定されたHoltWintersを呼び出します。非季節モデルがガンマ=0/FALSEでフィッティングされます。<br/> \n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,Ljung_Boxtest=FALSE,dataset=\"Dataset2\")\n</code> <br/>\n引数\n<ul>\n<li>\nvars: モデルを構築するための変数を選択\n</li>\n<li>\nstart: 最初の観測の時間は年、月または年、四半期の形式で入力する必要があります。例: (データが月単位で整理されている場合、1992,1は1992年1月、データが四半期単位で整理されている場合、1992,1は1992年第1四半期を指します。\n</li>\n<li>\nfrequency: 単位時間あたりの観測数。例: 月次の場合、年間に12回の観測があります。四半期の場合、年間に4回の観測があります。\n</li>\n<li>\nexponential: 指数平滑化が行われるかどうかを決定します。値はFALSEに設定されます。\n</li>\n<li>\nseasonal: 非季節モデルのための文字列 \"Non Seasonal\" です。\n</li>\n<li>\nplotSeries: TRUEの場合、時系列プロットも生成されます。\n</li>\n<li>\nsaveFitted: TRUEの場合、フィット値が保存されます。\n</li>\n<li>\nplotOriginalandForecast: 元のデータと予測された系列をプロット\n</li>\n<li>\npredict: TRUEの場合、予測値も生成されます。\n</li>\n<li>\nsavePredictedVals: 予測値が保存されます。\n</li>\n<li>\nplotPredictedValues: 予測値もプロットされます。\n</li>\n<li>\ncorrelogram: TRUEの場合、相関図が生成されます。\n</li>\n<li>\nmain: プロットのメインタイトル\n</li>\n<li>\nylab: Y軸のタイトル\n</li>\n<li>\ndataset: 変数が選択されたデータセットの名前\n</li>\n</ul>\n<b>値</b><br/>\n\"HoltWinters\"クラスのオブジェクト、フィルタリングされた系列の列とレベル、トレンド、季節成分のための列を持つリスト。<br/>\nx: 元の系列<br/>\nalpha: フィルタリングに使用されるアルファ<br/>\nbeta: フィルタリングに使用されるベータ<br/>\ngamma: フィルタリングに使用されるガンマ<br/>\ncoefficients: レベル、トレンド、季節成分の推定値を含む名前付きコンポーネントのベクトル<br/>\nseasonal: 指定された季節パラメータ<br/>\nSSE: 最適化で達成された最終的な二乗誤差の合計<br/>\ncall: 使用された呼び出し<br/>\n<b>パッケージ</b></br>\nforecast</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください: help(HoltWinters , package=stats)\n"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "navigation": "要因のみ（レガシー）",
+  "title": "要約、要因のみ",
+  "subsetvars": "応答変数、2つ以上",
+  "ChkboxShowOnlyTopFewFactors": "上位N要因レベルのカウントのみを表示",
+  "txtNumTopFactorsToShow": "Nの値を入力してください",
+  "label1": "注意: チェックボックスがオフの場合、すべてのレベルのカウントが表示されます。要因レベルが多い場合、かなりの時間がかかることがあります。",
+  "help": {
+    "title": "要因のみ",
+    "r_help": "",
+    "body": "\n<b>説明</b></br>\n各要因変数のすべてのレベルのカウントを表示します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvars: レベルカウントを表示する要因変数\n</li>\n<li>\ndata: データセット名\n</li>\n<li>\nshow.only.top.factors: 上位レベルのみのカウントを表示するか、すべてのレベルを表示するかを決定するブール値。\n</li>\n<li>\nmax.number.top.factors: show.only.top.factors = TRUE の場合、カウントを表示するレベルの数を指定します\n</li>\n</ul>\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "二項式機率",
+  "navigation": "二項式機率",
+  "size": "二項式試驗",
+  "prob": "成功的機率",
+  "help": {
+    "title": "二項式機率",
+    "r_help": "help(dbinom, package=stats)",
+    "body": "\n            <b>描述</b>\n            <br/>\n密度、分佈函數、分位數函數和隨機生成的二項式分佈，參數為大小和機率。\n<br/>\n這通常被解釋為在大小試驗中獲得的「成功」次數。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>參數</b>\n<br/>\n<ul>\n    <li>x, q : 分位數的向量。</li>\n    \n    \n    <li>p : 機率的向量。</li>\n    \n    \n    <li>n : 觀察數。如果長度(n) > 1，則長度被視為所需的數量。</li>\n    \n    \n    <li>size : 試驗的數量（零或更多）。</li>\n    \n    \n    <li>prob : 每次試驗成功的機率。</li>\n    \n    \n    <li>log, log.p : 邏輯；如果為 TRUE，則機率 p 以 log(p) 的形式給出。</li>\n    \n    \n    <li>lower.tail : 邏輯；如果為 TRUE（默認），則機率為 P[X ≤ x]，否則為 P[X > x]。</li>\n</ul>\n\n\n\n<br/>\n<b>詳細信息</b>\n<br/>\n二項式分佈的大小 = n 和機率 = p 的密度\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\n對於 x = 0, …, n。請注意，二項式係數可以通過 R 中的 choose 計算。\n<br/>\n如果 x 的某個元素不是整數，則 dbinom 的結果為零，並發出警告。\n<br/>\np(x) 是使用 Loader 的算法計算的，請參見下面的參考文獻。\n<br/>\n分位數定義為滿足 F(x) ≥ p 的最小值 x，其中 F 是分佈函數。\n<br/>\n<br/><b>值</b>\n<br/>\ndbinom 給出密度，pbinom 給出分佈函數，qbinom 給出分位數函數，rbinom 生成隨機偏差。\n<br/>\n如果大小不是整數，則返回 NaN。\n<br/>\n結果的長度由 rbinom 的 n 決定，並且是其他函數數值參數長度的最大值。\n<br/>\n除了 n 以外的數值參數會回收至結果的長度。僅使用邏輯參數的第一個元素。\n   "
+  }
+}

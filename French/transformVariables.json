@@ -1,0 +1,18 @@
+{
+  "title": "Transformer la ou les variables",
+  "navigation": "Transformer",
+  "label1": "Utilisez le menu déroulant pour sélectionner l'opération (log, log10, as.numeric...) pour transformer les variables sélectionnées. Vous pouvez écraser les variables existantes ou créer de nouvelles variables en spécifiant un préfixe/suffixe.",
+  "target": "Sélectionnez la ou les variables à transformer",
+  "selectctrl": "Sélectionnez une opération à appliquer",
+  "label2": "Créer de nouvelles variables ou écraser les variables existantes",
+  "suffix": "Spécifiez un suffixe",
+  "prefix": "Spécifiez un préfixe",
+  "overwrite": "Écraser",
+  "enterPrefix": "Entrez un préfixe",
+  "enterSuffix": "Entrez un suffixe",
+  "help": {
+    "title": "Transformer des variables",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Description</b></br>\nUtilisez le menu déroulant pour sélectionner l'opération (log, log10, as.numeric...) pour transformer les variables sélectionnées. Vous pouvez écraser les variables existantes ou créer de nouvelles variables en spécifiant un préfixe/suffixe.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvar: La variable à transformer\n</li>\n<li>\nDataset: Le jeu de données qui contient la variable var\n</li>\n</ul>\n<b>Valeur</b></br>\nLes valeurs transformées sont stockées directement dans le jeu de données</br>\n<b>Package</b></br>\nbase</br>\n<b>Aide</b></br>\nhelp(log, package ='base')\n"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "总结模型",
+  "navigation": "总结模型",
+  "modelselector1": "选择模型",
+  "help": {
+    "title": "总结模型",
+    "r_help": "help(summary)",
+    "body": "\n                <b>描述</b></br>\nsummary 是一个通用函数，用于生成各种模型拟合函数结果的摘要。该函数调用特定的方法，这些方法取决于第一个参数的类，例如 summary.lm（线性模型），summary.glm（广义线性模型）\n<br/>\n<b>用法</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nobject: 需要摘要的对象。\n</li>\n</ul>\n<b>返回值</b><br/>\nsummary 返回的值的形式取决于其参数的类。有关该方法生成的内容的详细信息，请参见特定方法的文档，即 help(summary.lm)，help(summary.glm)。</br>\n<b>包</b></br>\nbase</br>\n<b>帮助</b></br>\n要获取详细帮助，请单击此对话框覆盖层右上角的 R 图标，或在 R 语法编辑器中运行以下命令 help(summary)\n                "
+  }
+}

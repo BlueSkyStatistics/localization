@@ -1,0 +1,26 @@
+{
+  "title": "ベータ分布プロット",
+  "navigation": "ベータ分布プロット",
+  "shape1": "形状1",
+  "shape2": "形状2",
+  "pdenfun": "密度関数をプロット",
+  "pdstfun": "分布関数をプロット",
+  "lblregions": "密度関数の下の領域をオプションで指定するには",
+  "xvals": "x値",
+  "quantiles": "分位数",
+  "lblRegFill": "塗りつぶす領域（1つまたは2つを指定するか、空白のままにします）",
+  "lblreg1": "領域1 :",
+  "lblreg2": "領域2 :",
+  "lblregfrm": "から",
+  "lblregto": "まで",
+  "lblregcol": "色",
+  "lblLegPos": "凡例の位置",
+  "toprt": "右上",
+  "toplt": "左上",
+  "topmid": "中央上",
+  "help": {
+    "title": "ベータ分布プロット",
+    "r_help": "help(qbeta, package=stats)",
+    "body": "\n            <b>説明</b>\n<br/>\nベータ分布の密度、分布関数、分位数関数、およびランダム生成は、パラメータshape1およびshape2（およびオプションの非中心性パラメータncp）を使用します。\n<br/>\n<b>使用法</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>引数</b>\n<br/>\n<ul>\n    <li>x, q : 分位数のベクトル。</li>\n    \n    \n    <li>p : 確率のベクトル。</li>\n    \n    \n    <li>n : 観測の数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n    \n    \n    <li>shape1, shape2 : ベータ分布の非負のパラメータ。</li>\n    \n    \n    <li>ncp : 非中心性パラメータ。</li>\n    \n    \n    <li>log, log.p : 論理; TRUEの場合、確率pはlog(p)として与えられます。</li>\n    \n    \n    <li>lower.tail : 論理; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n    \n</ul>\n\n\n\n<br/>\n<b>詳細</b>\n<br/>\nパラメータshape1 = aおよびshape2 = bを持つベータ分布は、密度を持ちます\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\na > 0, b > 0および0 ≤ x ≤ 1の場合、x=0またはx=1での境界値は連続性によって定義されます（限界として）。\n<br/>\n平均はa/(a+b)であり、分散はab/((a+b)^2 (a+b+1))です。これらのモーメントおよびすべての分布特性は、aまたはbがゼロまたは無限大の場合に限界として定義され、対応する[dpqr]beta()関数がそれに応じて定義されます。\n<br/>\npbetaは不完全ベータ関数に密接に関連しています。AbramowitzとStegunによって定義された6.6.1\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\nおよび6.6.2 I_x(a,b) = B_x(a,b) / B(a,b) ここでB(a,b) = B_1(a,b)はベータ関数（ベータ）です。\n<br/>\n<code>I_x(a,b)はpbeta(x, a, b)です。</code>\n<br/>\n非中心ベータ分布（ncp = λを持つ）は、X/(X+Y)の分布として定義されます。ここでX ~ chi^2_2a(λ)およびY ~ chi^2_2bです。\n<br/>\n<br/><b>値</b>\n<br/>\ndbetaは密度を与え、pbetaは分布関数を、qbetaは分位数関数を、rbetaはランダム偏差を生成します。\n<br/>\n無効な引数はNaNの戻り値をもたらし、警告が表示されます。\n<br/>\n結果の長さはrbetaの場合はnによって決定され、他の関数の場合は数値引数の最大の長さです。\n<br/>\nn以外の数値引数は結果の長さに再利用されます。論理引数の最初の要素のみが使用されます。\n<br/>\n<br/><b>注意</b>\n<br/>\nncp = 0を供給すると、非中心分布のアルゴリズムが使用され、ncpが省略された場合に使用されるアルゴリズムとは異なります。これは、ncpの値が非常にゼロに近い場合の極端なケースで一貫した動作を提供するためです。\n"
+  }
+}

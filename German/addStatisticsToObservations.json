@@ -1,0 +1,23 @@
+{
+  "title": "Modellstatistiken zum Datensatz hinzufügen",
+  "navigation": "Statistiken zum Datensatz hinzufügen",
+  "label1": "Modelle der folgenden Klassen werden unterstützt (R-Klasse in Klammern) - Lineare Modelle (lm), Cox-Proportional-Hazards-Regressionsmodell (coxph), Generalisierte lineare Modelle (glm), Lokale polynomial Regression (loess), Robuste lineare Regression (rlm), Parametrisches Überlebensregressionsmodell (survreg), Quantilregression (rq)",
+  "label2": "STATISTIKEN WERDEN ZUM AKTUELLEN DATENSATZ HINZUGEFÜGT. EIN NUMERISCHER SUFFIX WIRD VERWENDET, UM EINE EINZIGARTIGE VARIABLE ZU GARANTIEREN. DER AKTUELLE DATENSATZ SOLLTE DEM DATENSATZ ENTSPRECHEN, DER ZUR ERSTELLUNG DES MODELLS VERWENDET WURDE.",
+  "modelselector1": "Wählen Sie ein Modell:",
+  "suff": "Geben Sie einen Suffix für den Namen der Statistikvariablen ein",
+  "label3": "Wählen Sie die Statistiken aus, die zu den Beobachtungen im Datensatz hinzugefügt werden sollen",
+  "label4": "HINWEIS: Die unterstützten Statistiken variieren je nach Modellklasse. Alle Statistiken unten, außer .tau, werden von linearen und generalisierten linearen Modellen unterstützt, die Quantilregression unterstützt .resid, .fitted, .tau. Die restlichen Modellklassen unterstützen .fitted, .se.fit, .resid.",
+  "chk1": ".hat (Diagonale der Hat-Matrix)",
+  "chk2": ".sigma (Schätzung der Residuenstandardabweichung, wenn die entsprechende Beobachtung aus dem Modell entfernt wird)",
+  "chk3": ".cooksd (Cooks-Distanz)",
+  "chk4": ".fitted (angepasste Werte des Modells)",
+  "chk5": ".se.fit (Standardfehler der angepassten Werte)",
+  "chk6": ".resid (Residuen)",
+  "chk7": ".std.resid (Standardisierte Residuen)",
+  "chk8": ".tau (Quantil geschätzt) *Nur für Quantilregression unterstützt",
+  "help": {
+    "title": "Modellstatistiken zum Datensatz hinzufügen",
+    "r_help": "help(augment, package='broom')",
+    "body": "\n                <b>Beschreibung</b></br>\nDaten mit Informationen aus einem Objekt anreichern\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: Modellobjekt oder anderes R-Objekt mit Informationen, die zu den Beobachtungen hinzugefügt werden sollen.\n</li>\n<li>\n...: Zusätzliche Argumente für die augment-Methode.\n</li>\n</ul>\n<b>Wert</b><br/>\nEin tibble::tibble() mit Informationen über Datenpunkte.</br>\n<b>Methoden</b><br/>\nSiehe die folgenden Hilfethemen für weitere Details zu einzelnen Methoden:<br/>\naugment.betareg: betareg<br/>\naugment.coxph: coxph<br/>\naugment.decomposed.ts: decomposed.ts<br/>\naugment.factanal: factanal<br/>\naugment.felm: felm<br/>\naugment.glm: glm<br/>\naugment.glmRob: glmRob<br/>\naugment.htest: htest<br/>\naugment.ivreg: ivreg<br/>\naugment.kmeans: kmeans<br/>\naugment.lm: lm<br/>\naugment.lmRob: lmRob<br/>\naugment.loess: loess<br/>\naugment.Mclust: Mclust<br/>\naugment.mjoint: mjoint<br/>\naugment.nlrq: nlrq<br/>\naugment.nls: nls<br/>\naugment.plm: plm<br/>\naugment.poLCA: poLCA<br/>\naugment.prcomp: prcomp<br/>\naugment.rlm: rlm<br/>\naugment.rq: rq<br/>\naugment.rqs: rqs<br/>\naugment.smooth.spline: smooth.spline<br/>\naugment.speedlm: speedlm<br/>\naugment.stl: stl<br/>\naugment.survreg: survreg<br/>\nlme4_tidiers: merMod<br/>\nnlme_tidiers: lme<br/>\nnull_tidiers: NULL<br/>\nordinal_tidiers: clm, polr<br/>\nrowwise_df_tidiers: rowwise_df, tbl_df<br/>\n<b>Paket</b></br>\nbroom</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl im R-Syntax-Editor aus help(augment, package=\"broom\")\n"
+  }
+}

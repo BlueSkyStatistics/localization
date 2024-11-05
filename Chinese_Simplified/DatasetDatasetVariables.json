@@ -1,0 +1,13 @@
+{
+  "title": "探索变量",
+  "navigation": "探索变量",
+  "variableListSelcted": "选择一个或多个变量进行探索",
+  "histCurveDispChk": "在直方图上显示正态曲线（缺失值已被移除以显示曲线）",
+  "statTableOrientionChk": "摘要统计以列形式显示",
+  "histBins": "指定直方图的箱数",
+  "help": {
+    "title": "探索一个或多个变量的特征",
+    "r_help": "帮助（摘要）",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t输出以下描述性统计和图表：\n\t\t\t\t最小值，最大值，均值，中位数，众数，总和，标准差，变异系数，方差，标准误，偏度，峰度，绝对离差，中位数绝对离差，四分位数。此外，还计算均值和标准差的95%置信区间。直方图和QQ图将被显示。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R帮助（摘要，包 = base）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要计算偏度和峰度，默认使用参数类型 = 3。使用参数类型 = 2时，偏度和峰度的值可能与MS Excel公式SKEW()和KURT()的值相匹配。\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\t查看更多详细信息\n\t\t\t\t<br/>\n\t\t\t\thelp(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

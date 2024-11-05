@@ -1,0 +1,18 @@
+{
+  "title": "Analyse en Composantes Principales",
+  "navigation": "Composantes Principales",
+  "lab40": "REMARQUE : La matrice de corrélation ou de covariance est automatiquement créée à partir des variables sélectionnées",
+  "destination": "Sélectionner des variables",
+  "label1": "Sélectionner une matrice de corrélation ou de covariance",
+  "rd1": "Matrice de corrélation",
+  "rd2": "Matrice de covariance",
+  "addToDataset": "Ajouter des composantes principales au jeu de données. Vous devez spécifier un préfixe pour les noms de variables et le nombre de composantes à ajouter",
+  "variablePrefix": "Entrez un préfixe pour les composantes ajoutées au jeu de données",
+  "noOfComponents": "Entrez le nombre de composantes à ajouter au jeu de données",
+  "screeplot": "Diagramme de scree",
+  "help": {
+    "title": "Analyse en Composantes Principales",
+    "r_help": "help(princomp, package ='stats')",
+    "body": "\n<b>Description</b></br>\nEffectue une analyse en composantes principales sur la matrice de données numériques donnée et renvoie les résultats sous forme d'objet de classe princomp. Appelle en interne princomp dans le package stats.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyPCARes <-BSkyPrinCompAnalysis(vars=c(),cor =TRUE, componentsToRetain =0, generateScreeplot=FALSE,prefixForComponents =\"\",dataset=\"\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars: Les variables dans un vecteur de caractères pour extraire des composantes\n</li>\n<li>\ncor: Un booléen qui spécifie si le calcul doit utiliser une matrice de corrélation ou de covariance\n</li>\n<li>\ncomponentsToRetain: Un numérique qui spécifie le nombre de composantes à conserver dans le jeu de données. Une nouvelle variable est créée dans le jeu de données pour chaque composante invoquée\n</li>\n<li>\n​generateScreeplot: Génère un diagramme de scree\n</li>\n<li>\nprefixForComponents: Préfixe à utiliser lors de l'enregistrement des composantes dans un jeu de données\n</li>\n<li>\ndataset: Le nom du jeu de données sous forme de chaîne\n</li>\n</ul>\n<b>Valeur</b></br>\nprincomp renvoie une liste avec la classe \"princomp\" contenant les composants suivants</br>\nsdev: les écarts-types des composantes principales.</br>\nloadings: la matrice des charges des variables (c'est-à-dire, une matrice dont les colonnes contiennent les vecteurs propres). Ceci est de classe \"loadings\": voir loadings pour sa méthode d'impression.</br>\ncenter: les moyennes qui ont été soustraites.</br>\nscale: les mises à l'échelle appliquées à chaque variable.</br>\nn.obs: le nombre d'observations.</br>\nscores: si scores = TRUE, les scores des données fournies sur les composantes principales. Ceux-ci ne sont pas nuls uniquement si x a été fourni, et si covmat a également été fourni s'il s'agissait d'une liste de covariance. Pour la méthode de formule, napredict() est appliqué pour gérer le traitement des valeurs omises par la na.action.</br>\ncall: l'appel correspondant.</br>\nna.action: Si pertinent.</br>\n<b>Package</b></br>\nstats</br>\n<b>Aide</b></br>\nhelp(princomp, package ='stats')\n"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "ラテンハイパーキューブデザインの作成（定量的要因用）",
+  "navigation": "ラテンハイパーキューブ（定量的）デザインの作成",
+  "selectedvars": "変数を選択",
+  "datasetname": "デザイン名",
+  "lblheading": "サイズとランダム化",
+  "numOfRuns": "実行回数",
+  "numOfDeciPlaces": "小数点以下の桁数",
+  "lbl1": "ランダム化設定を変更する必要はないかもしれません",
+  "randomseeds": "ランダム化のためのシード",
+  "randomizationChk": "デザイン生成をランダム化する",
+  "lhsDesignType": "ラテンハイパーキューブサンプリングデザイン（他のタイプについてはlhsまたはDiceDesignパッケージを確認）",
+  "help": {
+    "title": "ラテンハイパーキューブデザインの作成（定量的要因用）",
+    "r_help": "help(lhs.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tlhs.design関数は、lhsパッケージからのラテンハイパーキューブサンプリングデザインや、DiceDesignパッケージからのスペースフィリングデザインにアクセスするためのもので、可能なレベルが多い定量的要因に役立ちます。特に、コンピュータ実験に使用できます。ほとんどのデザインはランダムサンプルです。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプを得るには、R help(lhs.design, package = DoE.wrapper)を使用してください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、factor_grid__latin_hypercube_Design.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください。\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

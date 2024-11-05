@@ -1,0 +1,32 @@
+{
+  "title": "Gage R&R - 测量系统分析",
+  "navigation": "Gage R&R",
+  "mainTitle": "图形输出的主标题",
+  "subTitle": "图形输出的副标题（例如项目名称）",
+  "measuredVar": "测量变量",
+  "part": "部件变量",
+  "appr": "评估者（操作员、机器等）变量",
+  "lsl": "LSL - 用于计算研究变异的下限规格值，单位为 %Tolerance",
+  "usl": "USL - 用于计算研究变异的上限规格值，单位为 %Tolerance",
+  "historicalStdv": "历史过程标准偏差（如果未指定，请输入 NA）",
+  "useHistStdDevProcVarChk": "使用历史标准偏差来估计 Gage 评估值（%StudyVar 表）",
+  "sigma": "Sigma - 用于计算研究变异的标准偏差数量的数值",
+  "tolerance": "公差 - 公差的数值 - 默认值（usl - lsl）",
+  "alphaLim": "Alpha - 考虑交互作用的限制",
+  "errorTerm": "模型的哪个项应作为误差项（对于具有交互作用的模型）",
+  "method": "要执行的分析类型，交叉（默认）或嵌套",
+  "label1": "Gage R&R 研究报告头部详细信息",
+  "gageName": "Gage 名称",
+  "dateStudy": "研究日期",
+  "partDescription": "部件描述",
+  "machineName": "机器名称",
+  "reportedBy": "报告人",
+  "operatorNames": "操作员姓名",
+  "testLocation": "测试地点",
+  "miscellaneous": "其他",
+  "help": {
+    "title": "Gage R&R - 测量系统分析",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.rr 函数用于执行 Gage R&R 分析，以评估过程的测量系统\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为 gageR_R_piston_diameter_with_measurements.xlsx 的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t\t从示例数据集中，选择直径变量作为测量变量，活塞环作为部件变量，操作员作为评估者\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

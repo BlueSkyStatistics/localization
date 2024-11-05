@@ -1,0 +1,20 @@
+{
+  "title": "K 最近鄰居",
+  "navigation": "KNN",
+  "dependentvar": "依賴變數",
+  "independentvars": "獨立變數",
+  "header": "KNN 是一種懶惰分類器，它不會創建擬合以便後續預測。它同時擬合和評估。我們將數據集分為訓練和測試數據集，然後在訓練數據集上構建模型，對測試數據集進行預測，並使用這些預測來顯示模型評估統計數據。",
+  "Seed": "設置種子",
+  "Group2": "KNN 的調整參數",
+  "noneighbhors": "鄰居數量（當未指定值時，默認設置為數據集中觀察數量的平方根）",
+  "Group1": "訓練和測試數據集",
+  "splitPercentage": "輸入分割百分比",
+  "trainDatasetName": "輸入訓練數據集的名稱",
+  "testDatasetName": "輸入測試數據集的名稱",
+  "predictedValues": "輸入預測值的變數前綴。（您必須指定前綴）帶前綴的變數會在測試數據集中創建。",
+  "help": {
+    "title": "K 最近鄰居",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>描述</b></br>\nk-最近鄰分類\n<br/>\n<b>注意：</b></br>\n1. 根據指定的分割百分比，自動創建訓練和測試數據集<br/>\n2. 預測值存儲在測試數據集中，並用於計算模型統計數據，即準確性、kappa、敏感性.... 混淆矩陣也會顯示\n<br/>\n<b>用法</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ntrain: 訓練集案例的矩陣或數據框。\n</li>\n<li>\ntest: 測試集案例的矩陣或數據框。向量將被解釋為單個案例的行向量。\n</li>\n<li>\ncl: 訓練集的真實分類因子\n</li>\n<li>\nk: 考慮的鄰居數量。\n</li>\n<li>\nl: 明確決策的最小投票數，否則為懷疑。（更準確地說，允許少於 k-l 的反對票，即使 k 由平局增加。）\n</li>\n<li>\nprob: 如果這是真的，則返回獲勝類別的投票比例作為屬性 prob。\n</li>\n<li>\nuse.all: 控制平局的處理。如果為真，則包括所有等於第 k 大的距離。如果為假，則隨機選擇等於第 k 的距離以使用恰好 k 個鄰居。\n</li>\n</ul>\n<b>值</b></br>\n測試集的分類因子。懷疑將返回為 NA。</br>\n<b>包</b></br>\ncaret;class</br>\n<b>幫助</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Personfit 統計與 Martin-Löf 的似然比檢驗",
+  "navigation": "人員適合度",
+  "label1": "選擇一個模型（支持 Rm、dRm 和 eRm 類別的模型）",
+  "label1b": "如果沒有可用的模型，您需要先通過選擇模型擬合 -> IRT -> 簡單 Rasch 模型並選擇 CML 估計來創建一個模型",
+  "modelselector1": "選擇一個模型",
+  "chkbox": "顯示 Martin-Löf 的似然比檢驗統計量",
+  "lbl2": "似然比檢驗的分割標準",
+  "rd1": "中位數",
+  "rd2": "平均數",
+  "help": {
+    "title": "Personfit 統計與 Martin-Löf 的似然比檢驗",
+    "r_help": "help(personfit, package='eRm')",
+    "body": "\n                <b>描述：personfit 統計</b></br>\n                對於 Rm、eRm 或 dRm 類別的模型（通過使用 IRT -> 簡單 Rasch 模型與 CML 估計創建）使用函數 personfit 顯示 personfit 統計。\n\n                <br/><br/>\n                <b>用法</b>\n                <br/>\n                <code>\n                eRm::personfit(object)\n                </code>\n                <br/><br/>\n                <b>詳細信息</b>\n                <br/>  \n                object: ppar 類別的對象，源自 person.parameter，從語法編輯器運行 help(person.parameter) 獲取幫助。\n                <br/><br/>\n                <b>值</b>\n                <br/>\n                p.df: personfit 統計的自由度\n                <br/>\n                st.res: 標準化殘差（來自函數 personfit）。\n                <br/>\n                p.outfitMSQ: 服裝均方統計（來自函數 personfit）。\n                <br/>\n                p.infitMSQ: 內部均方統計（來自函數 personfit）。\n                <br/><br/>\n                <b>幫助</b>\n                <br/>\n                從 BlueSky Statistics 語法編輯器運行以下命令 help(personfit, package ='eRm')\n                <br/><br/>\n                <b>包</b>\n                <br/>\n                eRm\n                <br/>\n\n                <b>描述：Martin-Löf 的似然比檢驗</b></br>\n                此似然比檢驗基於項目子組分割。\n                <br/><br/>\n                <b>用法</b>\n                <br/>\n                <code>\n                MLoef(robj, splitcr = \"median\")\n                </code>\n                <br/><br/>\n                <b>詳細信息</b>\n                <br/>  \n                robj: 'Rm' 類別的對象。\n                <br/>\n                splitcr: 定義項目組的分割標準。\"中位數\" 和 \"平均數\" 根據項目的原始分數將項目分為兩組。splitcr 也可以是一個長度為 k 的向量（其中 k 表示項目的數量），該向量取兩個或更多不同的值以定義用於 Martin-Löf 檢驗的組。\n                <br/><br/>\n                <b>值</b>\n                <br/>\n                MLoef 返回一個 MLoef 類別的對象，包含：\n                <br/><br/>\n                LR: LR 值\n                <br/>\n                df: 自由度\n                <br/>\n                p.value: 檢驗的 p 值\n                <br/>\n                fullModel: 整體 Rasch 模型\n                <br/>\n                subModels: 包含子模型的列表\n                <br/>\n                Lf: 整體模型的對數似然\n                <br/>\n                Ls: 子模型的對數似然列表\n                <br/>\n                i.groups: 項目組的列表\n                <br/>\n                splitcr: 提交的分割標準\n                <br/>\n                split.vector: 項目分配到組的二進制分配\n                <br/>\n                warning: 對於相應的分割標準，項目等於中位數或平均數\n                <br/><br/>\n                <b>包</b>\n                <br/>\n                eRm                \n                <br/><br/>\n                <b>幫助</b>\n                <br/>\n                從 BlueSky Statistics 語法編輯器運行以下命令 help(MLoef, package ='eRm')\n\n                "
+  }
+}

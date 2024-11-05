@@ -1,0 +1,21 @@
+{
+  "title": "Gráfico de Violín",
+  "navigation": "Violín",
+  "x": "Eje X, especificar una variable de factor",
+  "y": "Eje Y, especificar una o más variables numéricas",
+  "fill": "Relleno, especificar una variable de factor",
+  "alpha": "Opacidad (0-1)",
+  "flip": "Invertir eje",
+  "specify_a_title": "Ingrese un título",
+  "x_title": "Etiqueta del eje X",
+  "y_title": "Etiqueta del eje Y",
+  "Facetrow": "Fila de Facetas",
+  "Facetcolumn": "Columna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "help": {
+    "title": "Gráfico de Violín",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>Descripción</b></br>\n            Un gráfico de violín es una representación compacta de una distribución continua. Es una combinación de geom_boxplot() y geom_density(): un gráfico de violín es un gráfico de densidad reflejado mostrado de la misma manera que un boxplot.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"Gráfico de violín para ...\")\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: El conjunto de datos predeterminado​\n            </li>\n            <li>\n            x: Una variable de factor​ que divide la variable y a continuación en grupos.\n            </li>\n            <li>\n            y: Una variable numérica para la cual se genera el gráfico de violín\n            </li>\n            <li>\n            fill: Una variable de factor/categórica opcional para agrupar aún más los grupos existentes. Cada subgrupo se mostrará en un color distinto.​\n            </li>\n            <li>\n            aes(): Genera mapeos estéticos que describen cómo las variables en los datos se asignan a propiedades visuales (estéticas) de los geoms.​\n            </li>\n            <li>\n            geom_violin(): Crea el gráfico de violín. \n            </li>\n            <li>\n            Labs(): Cambia las etiquetas de los ejes y los títulos de la leyenda (esto es opcional)​\n            </li>\n            <li>\n            facet_grid(): Organiza los paneles en una cuadrícula (esto es opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica el tema de la calculadora (esto es opcional)​\n            </li>\n            <li>\n            coord_flip(): Invertir eje (esto es opcional)​\n            </li>\n            </ul>\n            <b>Paquete</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ayuda</b></br>\n            Otro: Haga clic en el botón de Ayuda de R para obtener ayuda detallada de R. También puede ingresar help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

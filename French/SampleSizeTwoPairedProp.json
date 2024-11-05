@@ -1,0 +1,18 @@
+{
+  "title": "Taille d'échantillon, Test de deux proportions appariées",
+  "navigation": "Deux Proportions Apparentées",
+  "howtouse": "Pour calculer la taille de l'échantillon (nombre de paires) : spécifiez la puissance\nPour calculer la puissance : spécifiez la taille de l'échantillon (nombre de paires)",
+  "n": "Taille d'échantillon (nombre de paires)",
+  "power": "Puissance (0-1)",
+  "pdisc": "Proportion de Paires Discordantes (PD) (0-1)",
+  "pdiff": "Différence de Proportions, doit être entre -PD et PD",
+  "siglevel": "Niveau de Signification (0-1)",
+  "alternativeopt": "Hypothèse Alternative",
+  "twosided": "Bicatégorique",
+  "onesided": "Monocatégorique",
+  "help": {
+    "title": "Taille d'échantillon, Test de deux proportions appariées",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour un test apparié de proportions utilisant le Test de McNemar. Il calcule la taille de l'échantillon (nombre de paires) ou la puissance lorsque l'utilisateur \nspecifie l'autre. Les calculs utilisent une approximation normale conditionnelle à la proportion de paires discordantes. Voir Connor R. J. 1987. Taille d'échantillon pour tester \ndifférences de proportions pour le design d'échantillons appariés. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Taille d'échantillon (nombre de paires) :</b> Spécifiez la taille de l'échantillon dans l'étude. C'est le nombre de sujets qui fourniront des valeurs de résultats binaires aux deux points temporels\ndans un design pré vs post ou le nombre de paires dans un design de sujet apparié (par exemple, cas-témoins appariés).\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance désirée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Proportion de Paires Discordantes :</b> Spécifiez la proportion attendue de paires qui ne seront pas d'accord, par exemple, réponses 'oui'/'non' ou 'non'/'oui', sur le nombre total de paires.\n<br/><br/>\n<b>Différence de Proportions :</b> Spécifiez la différence dans les proportions de résultats (c'est-à-dire la proportion qui est 'oui') que vous souhaitez détecter. Par exemple, dans une étude de cas-témoins appariés,\nc'est la différence entre la proportion de cas qui sont 'oui' et la proportion de témoins qui sont 'oui'.\n<br/><br/>\n<b>Niveau de Signification :</b> Spécifiez le niveau de signification désiré (c'est-à-dire l'erreur de type I) du test.\n<br/><br/>\n<b>Hypothèse Alternative :</b> Spécifiez si le test est bicatégorique ou monocatégorique.\n<br/><br/>\n<b>Packages R Requis :</b> stats\n\t\t\t"
+  }
+}

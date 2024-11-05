@@ -1,0 +1,16 @@
+{
+  "title": "欠損値の置換 (数値変数)",
+  "navigation": "数値",
+  "label1": "選択した変数の欠損値 (NA) は、中央値、平均、最小、最大、または指定された値を適用する関数によって置換されます。",
+  "target": "欠損値を置換する変数を選択",
+  "label2": "NAを置換するための関数を選択するか、値を指定してください",
+  "rd1": "欠損値を計算するために関数を使用",
+  "selectctrl": "関数を選択",
+  "rd2": "欠損値を置換するための数値を指定",
+  "valueEntered": "数値を入力",
+  "help": {
+    "title": "欠損値の置換 (数値)",
+    "r_help": "help(mean)",
+    "body": "\n<b>説明</b></br>\n選択した変数の欠損値を選択した操作、すなわち中央値、平均、最小、最大によって置換します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvar: 欠損値 (na) を持つ数値変数を表す文字列、例えば var = c('sales')\n</li>\n<li>\nDataset: 変数 var を含むデータセット\n</li>\n</ul>\n<b>値</b><br/>\n計算された値は直接 Dataset に保存されます<br/>\n<b>パッケージ</b></br>\nbase</br>\n<b>ヘルプ</b></br>\nhelp(mean)"
+  }
+}

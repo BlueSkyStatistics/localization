@@ -1,0 +1,20 @@
+{
+  "title": "D-最適設計の作成",
+  "navigation": "D-最適設計の作成",
+  "datasetname": "D-最適設計名",
+  "candidateDesignChk": "既存の候補設計からD-最適設計を作成します（フルファクタリアル、FrF2、直交、またはラテン） - データグリッド上の既存の設計でこのダイアログを開いて、候補設計を暗黙的に選択してください",
+  "selectedvars": "D-最適設計を既存の候補設計からではなく作成するための変数を選択します（上記の候補設計がチェックされている場合は無視されます）",
+  "numOfRuns": "実行回数",
+  "formula": "数式 - モデルにすべての因子を含めるためにデフォルトのままにするか、線形モデルの数式を入力します（例：~quad(.)）",
+  "numOfOptiRepeats": "最適化の繰り返し回数",
+  "numOfBlocks": "ブロックの数",
+  "blockName": "ブロックの名前",
+  "lbl1": "ランダム化設定を変更する必要はないかもしれません",
+  "randomseeds": "ランダム化のためのシード",
+  "randomizationChk": "設計生成をランダム化する",
+  "help": {
+    "title": "D-最適設計の作成",
+    "r_help": "help(Dopt.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tDopt.design関数は、ブロックありまたはなしでD-最適設計を作成します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(Dopt.design, package = DoE.wrapper)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください\n\t\t\t\t<br/>\n\t\t\t\t最初にフルファクタリアル設計を作成し、このダイアログ/UIからフルファクタリアル設計を選択し、実行回数を16に指定してフルファクタリアル設計からD-最適設計を作成します\n\t\t\t"
+  }
+}

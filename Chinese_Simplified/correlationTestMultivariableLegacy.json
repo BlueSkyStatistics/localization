@@ -1,0 +1,7 @@
+{
+  "help": {
+    "title": "相关性分析",
+    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+    "body": "\n<b>描述</b>\n此函数使用 Hmisc 包中的 rcorr 函数计算 Pearson 或 Spearman 相关矩阵以及相关性之间的成对 p 值。p 值使用 Holm 方法进行多重推断校正（参见 p.adjust）。观察值会过滤缺失数据，仅使用完整的观察值。\n<br/>\n<b>用法</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## S3 方法用于类 'rcorr.adjust'\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>参数</b>\n   <ul>\n   <li>\nx: 一个数值矩阵或数据框，或一个类为 \"rcorr.adjust\" 的对象，待打印。\n</li>\n<li>\ntype: \"pearson\" 或 \"spearman\"，取决于所需的相关性类型；默认值为 \"pearson\"。\n</li>\n<li>\nuse: 如何处理缺失数据：\"complete.obs\"，默认值，仅使用完整案例；\"pairwise.complete.obs\"，对每对使用所有有效数据的案例。\n</li>\n<li>\n...: 不使用。\n</li>\n</ul>\n<b>值</b>\n返回一个类为 \"rcorr.adjust\" 的对象，通常只是打印。"
+  }
+}

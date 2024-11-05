@@ -1,0 +1,15 @@
+{
+  "title": "世界地図",
+  "navigation": "世界地図",
+  "region": "国名の変数:",
+  "value": "地図に表示する値の変数:",
+  "colors": "色の数を入力してください",
+  "zoomByStates": "ズームインする国を入力してください。例：アメリカ合衆国、カナダ、メキシコ",
+  "specify_a_title": "タイトルを入力してください",
+  "legend": "凡例:",
+  "help": {
+    "title": "世界地図",
+    "r_help": "help(country_choropleth, package='choroplethr')",
+    "body": "\n            <b>説明</b></br>\n            世界地図を描画し、1つ以上の国にズームインするオプションを提供します\n             <br/>\n             <b>使用法</b>\n             <br/>\n             <code> \n            country_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n             </code> <br/>\n             <b>引数</b><br/>\n             <ul>\n             <li>\n             BSkyDfForMap: \"region\"という名前の列と\"value\"という名前の列を持つデータフレーム。\"region\"列の要素は、?country.mapの\"region\"列に名前が一致する必要があります。下のコードを他のセクションで実行して、country.mapの変数を確認してください\n             </li>\n             <li>\n             タイトル: 地図のオプションのタイトル。\n             </li>\n             <li>\n             凡例: 凡例のオプションの名前。\n             </li>\n             <li>\n             num_colors: 地図上の色の数。1の値は連続スケールを使用します。[2, 9]の値はその数の色を使用します。\n             </li>\n             <li>\n             zoom: ズームインする国のオプションのベクトル。このベクトルの要素は、?country.regionsの\"region\"列に表示される国名と正確に一致する必要があります\n             </li>\n             </ul>\n             <b>パッケージ</b></br>\n             choroplethr;choroplethrMaps;</br>\n             <b>ヘルプ</b></br>\n             help(country_choropleth, package='choroplethr')</br>\n             <b>その他</b></br>\n             <code> \n             # 下のコードを実行してstate.mapデータセットにアクセスします<br/>\n             library(choroplethr)<br/>\n             library(choroplethrMaps)<br/>\n             data(country.map)<br/>\n             country.map<br/>\n             </code> <br/>\n    "
+  }
+}

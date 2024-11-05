@@ -1,0 +1,15 @@
+{
+  "title": "Lineare Regression",
+  "navigation": "Linear, grundlegend",
+  "modelname": "Modellnamen eingeben",
+  "dependent": "Abhängige Variable",
+  "independent": "Unabhängige Variable(n)",
+  "nointercept": "Intercept ignorieren",
+  "generateplotchk": "Residuen vs. Fitted, normales Q-Q, Skalen-Standort und Residuen vs. Hebel",
+  "weights": "Eine Variable mit Gewichten angeben",
+  "help": {
+    "title": "Lineare Regression",
+    "r_help": "help(lm, package ='stats')",
+    "body": "\n            <b>Beschreibung</b></br>\nBaut ein lineares Regressionsmodell auf. Ruft intern die Funktion lm im stats-Paket auf. Gibt ein Objekt namens BSkyLinearRegression zurück, das ein Objekt der Klasse lm ist. Zeigt eine Zusammenfassung des Modells, eine Koeffiziententabelle, eine Anova-Tabelle und eine Tabelle der Quadratsummen an und plottet die folgenden Residuen vs. Fitted, normales Q-Q, theoretische Quantile, Residuen vs. Hebel. Sie können optional eine Variable mit Gewichten angeben und entscheiden, ob das Intercept ignoriert werden soll.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Zusammenfassung des Modells<br/>\nsummary(LinearRegModel1)<br/>\n#Anzeigen der Anova-Tabelle<br/>\nanova(LinearRegModel1)<br/>\n#Plottet Residuen vs. Fitted, normales Q-Q, Skalen-Standort, Residuen vs. Hebel<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndepVar: Name der abhängigen Variable. Wenn wir einen Datensatz mit Autos haben, mit einer Variable mpg, die wir vorhersagen möchten, geben Sie mpg ein​\n</li>\n<li>\nindepVars: Namen der unabhängigen Variablen. Wenn wir einen Datensatz mit Autos haben, mit abhängigen Variablen wie horsepower, enginesize, geben Sie horsepower+enginesize ein. Kategorische Variablen werden automatisch dummy-codiert.​\n</li>\n<li>\ndataset: Name des Dataframes. Wenn Sie Datenrahmen oder Datensätze öffnen, z.B. csv, Excel-Dateien, SAS-Dateien in BlueSky Statistics, werden sie Dataset1, Dataset2, Dataset3 genannt, also geben Sie Dataset1 ein\n</li>\n</ul>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+  }
+}

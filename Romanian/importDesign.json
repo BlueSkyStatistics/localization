@@ -1,0 +1,11 @@
+{
+  "title": "Importa Design - trebuie să fie un fișier csv cu coloana(e) de răspuns adăugată(e) la designul exportat anterior",
+  "navigation": "Importa Răspuns Design",
+  "datasetname": "Numele pentru a crea designul cu răspuns(e)",
+  "importResp": "Calea fișierului pentru fișierul de design (trebuie să fie un fișier csv) care conține coloana(e) de răspuns",
+  "help": {
+    "title": "Importă Răspunsuri într-un Design existent",
+    "r_help": "help(add.response, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tImportați fișierul csv de Design cu coloanele de răspuns adăugate, adică rezultatele recodificate din experimentele efectuate din designul original exportat anterior\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tScopul importării fișierului csv într-un design deja deschis în grila UI a setului de date este de a adăuga coloanele de răspuns automat din fișierul csv la designul din grila UI și de a crea un nou design cu numele specificat \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOdată ce noul design cu coloanele de răspuns este creat - acesta poate fi analizat cu diverse metode de analiză sub meniul DOE -> Analiza Design\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÎn plus, desemnarea/nesemnarea uneia sau mai multor coloane de răspuns poate fi efectuată prin DOE -> Modifică Design -> Adaugă/Șterge Răspuns în meniu \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDacă designul necesar nu este deja deschis în grila UI a setului de date, folosind meniul Fișier Deschide, încărcați obiectul R de design (.rda fișier) care a fost exportat anterior cu meniul \"Export Design\" într-un director de pe sistemul de fișiere.  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru informații suplimentare - folosiți R help(add.response, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

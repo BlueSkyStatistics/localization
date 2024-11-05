@@ -1,0 +1,15 @@
+{
+  "title": "Generar automáticamente detalles de factores (tamaño igual) para un estudio de DoE",
+  "navigation": "Detalles del Factor (tamaño igual)",
+  "datasetname": "Nombre de la tabla de detalles del factor",
+  "numOfVars": "Número de factores",
+  "numOfFactorLevels": "Número máximo de niveles entre factores",
+  "factorLevels": "Valores de nivel separados por una coma - ejemplo: -1, 1, 'cadena1', 2, 0",
+  "autoFillChkbx": "Rellenar niveles automáticamente",
+  "label1": "Ignorar la siguiente opción - opción de limpieza de datos para uso posterior",
+  "convertFactorToCharInt": "Para el conjunto de datos activo seleccionado - convertir todas las columnas de tipo factor a carácter o entero (y cuando se selecciona esta opción, se ignorarán todas las opciones anteriores en esta interfaz)",
+  "help": {
+    "title": "Generar automáticamente detalles de factores",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tGenera automáticamente una tabla con detalles de factores basada en los parámetros especificados - número de factores y los niveles máximos para los factores junto con los valores predeterminados para el factor a utilizar. Si se utilizan valores no numéricos para el factor, especifique entre comillas simples, por ejemplo 1,-1,'nombre1',0,'cadena2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna vez que los detalles del factor se generan automáticamente y la tabla de factores aparece en la interfaz de la cuadrícula de datos, puede cambiar los valores y/o eliminar algunos valores de la cuadrícula para manipular la tabla como desee, incluidos factores con diferentes números de valores \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSi el número de factores es <= 26, los factores se nombran con letras mayúsculas como A, B, C, .., de lo contrario, se nombran como F1, F2, ..., F27, F28, ..\n\t\t\t\t"
+  }
+}

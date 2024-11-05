@@ -1,0 +1,24 @@
+{
+  "title": "條形圖",
+  "navigation": "條形圖",
+  "x": "X 變數，指定一個數值變數",
+  "y": "Y 變數，指定一個或多個數值變數",
+  "Fill": "顏色，指定一個因子變數",
+  "size": "使點的大小與之成比例",
+  "shape": "形狀",
+  "alpha": "不透明度 (0-1)",
+  "flipaxis": "翻轉軸",
+  "jitter": "應用抖動效果",
+  "specify_a_title": "輸入標題",
+  "x_title": "X 軸標籤",
+  "y_title": "Y 軸標籤",
+  "Facetrow": "面板行",
+  "Facetcolumn": "面板列",
+  "Facetwrap": "面板包裝",
+  "Facetscale": "面板比例",
+  "help": {
+    "title": "條形圖",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>描述</b></br>\n            條形圖是最基本的可用圖表類型。它沿著一條線按順序繪製數據，每個數據點表示為一個框。點的形狀取決於因子變數 (x) 的級別。點可以選擇性地按因子變數 (y) 分組。可以通過指定因子變數選擇性地創建面板。</br>\n            您還可以選擇性地指定主題，並為 x 和 y 軸指定標題和標籤</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集​\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變數如何映射到幾何圖形的視覺屬性（美學）。​\n            </li>\n            <li>\n            x: 分組變數。點的形狀取決於因子變數的級別​\n            </li>\n            <li>\n            y: 繪製點的變數​\n            </li>\n            <li>\n            color: 一個可選的因子變數，用於按顏色分組點​\n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            geom_jitter(): 抖動幾何圖形是 geom_point 的方便默認值，位置 = 'jitter'。請參見 position_jitter 以了解如何調整抖動量。\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）​\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>幫助</b></br>\n            help(geom_point, package='ggplot2')</br>\n            其他: 點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

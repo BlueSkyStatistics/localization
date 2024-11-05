@@ -1,0 +1,11 @@
+{
+  "title": "Expandir Pesos",
+  "navigation": "Expandir",
+  "datasetname": "Nombre del conjunto de datos con pesos expandido",
+  "destination": "Ingrese la columna que contiene los pesos",
+  "help": {
+    "title": "Expandir Pesos",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>Descripción</b></br>\n        Crea un nuevo conjunto de datos con filas expandidas según los pesos. Expande (replica) las filas de un data.frame por un valor contenido en una de las columnas del data.frame o data.table de origen. BSkySetWeights() llama a expandRows() del paquete splitstackshape.\n        <br/>\n        <b>Uso</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>Argumentos</b><br/>\n         <ul>\n           <li>\n        weights: La variable del conjunto de datos que contiene los pesos. \n        </li>\n        <li>\n        data: El data.frame o data.table de entrada.\n        </li>\n        <li>\n        newdata: El nuevo conjunto de datos donde las filas se replican para los pesos especificados.\n        </li>\n        </ul>\n        <b>Paquete</b></br>\n        splitstackshape</br>\n        <b>Ayuda</b></br>\n        help (expandRows)\n        "
+  }
+}

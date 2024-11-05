@@ -1,0 +1,23 @@
+{
+  "title": "Analiza Capacității Procesului",
+  "navigation": "Capacitatea Procesului (pachetul SixSigma)",
+  "measuredVar": "Variabilă cu datele performanței procesului",
+  "lsl": "LSL - valoare numerică a limitei inferioare de specificație",
+  "usl": "USL - valoare numerică a limitei superioare de specificație",
+  "ciChk": "Calculați un Interval de Încredere",
+  "alphaLim": "Alpha - Eroare de Tip I (α) pentru Intervalul de Încredere",
+  "capabilityStudyChk": "Arătați graficele și figurile pentru Studiul Capacității Procesului",
+  "target": "Obiectivul procesului",
+  "futureProcessVar": "Variabilă cu datele performanței procesului pe termen lung",
+  "mainTitle": "Titlul principal pentru ieșirea grafică",
+  "subTitle": "Subtitlu pentru ieșirea grafică (de exemplu, numele proiectului Six Sigma)",
+  "ciMeanChk": "Trasați Intervalul de Încredere pentru medie",
+  "sigma2": "Varianța populației, dacă este cunoscută",
+  "ciMeanMainTitle": "Titlul principal pentru Intervalul de Încredere pentru ieșirea grafică a mediei",
+  "ciMeanSubTitle": "Subtitlu pentru ieșirea grafică (de exemplu, numele proiectului Six Sigma)",
+  "help": {
+    "title": "Analiza Capacității Procesului",
+    "r_help": "help(ss.ca.cp, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția ss.ca.cp pentru a calcula Indicii de Capacitate ai unui proces, Z (Scor Sigma), C_p și C_{pk}.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(ss.ca.cp, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit process_capability_study_table.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t\tdin setul de date de exemplu, selectați variabila widgets, tastați 745 în LSL, 760 în USL, 755 în Obiectiv \n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

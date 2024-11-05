@@ -1,0 +1,10 @@
+{
+  "title": "信頼性分析 (マクドナルドのオメガ)",
+  "navigation": "マクドナルドのオメガ",
+  "tvarbox1": "すべての項目",
+  "help": {
+    "title": "マクドナルドのオメガ",
+    "r_help": "help(omega, package=psych)",
+    "body": "\n            <b>説明</b></br>\nマクドナルドのオメガの一般的および総因子飽和度の推定値を計算します\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nomega(m,nfactors=3,fm=\"minres\",n.iter=1,p=.05,poly=FALSE,key=NULL,\n    flip=TRUE,digits=2, title=\"オメガ\",sl=TRUE,labels=NULL,\nplot=TRUE,n.obs=NA,rotate=\"oblimin\",Phi=NULL,option=\"equal\",covar=FALSE, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nm​: 相関行列、またはデータのデータフレーム/行列、または (Phi) が指定されている場合は、斜め因子パターン行列\n</li>\n<li>\nnfactors: グループ化された因子の数\n</li>\n<li>\nfm​: 因子法 (デフォルトは minres) fm=\"pa\" は主軸、fm=\"minres\" は最小残差 (OLS) ソリューション、fm=\"pc\" は主成分 (注を参照)、または fm=\"ml\" は最尤法。\n</li>\n<li>\nn.iter: ブートストラップ推定のために omega で行う複製の数​\n</li>\n<li>\np: 両側信頼区間の境界の確率\n</li>\n<li>\ndigits​: 指定された場合、出力を桁数で丸める​\n</li>\n<li>\npoly: 相関行列はポリコリック/テトラコリックまたは通常のピアソン相関を使用して見つけるべきか\n</li>\n<li>\nkey​: 項目のスコアリングの方向を指定するための +/- 1 のベクトル。デフォルトはすべての項目が正のキーであると仮定しますが、一部の項目が逆スコアの場合は、key を指定する必要があります。​\n</li>\n</ul>\n<b>値</b><br/>\nomega hierarchical: ω_h係数<br/>\nomega.lim: テストが無限に大きくなるときの ω_h の限界<br/>\nomega total: omega_t係数<br/>\nalpha: クロンバックの α<br/>\nschmid: シュミット・ライマン変換因子行列および関連行列<br/>\nschmid$sl: g因子負荷量および残差化された因子<br/>\nschmid$orthog: 元の因子のバリマックス回転ソリューション<br/>\nschmid$oblique: オブリミンまたはプロマックス変換因子<br/>\nschmid$phi: 斜め因子の相関行列<br/>\nschmid$gloading: オブリミン因子の高次の g 因子への負荷量<br/>\nkey: 項目がどの方向にスコアされたかを示す -1 または 1 のベクトル。<br/>\nmodel: 構造方程式モデルのために sem 関数に渡すのに適した2つの要素からなるリスト<br/>\nsem: sem 分析からの出力<br/>\nomega.group: omega total、omega hierarchical (一般) および各グループ内の omega の要約統計量。<br/>\nscores: シュミット・ライマンソリューションの因子スコア推定値が見つかります。階層モデルのスコアを取得するには、詳細な R ヘルプの注を参照してください。<br/>\nさまざまな適合統計さまざまな適合統計、出力を参照<br/>\n<b>パッケージ</b></br>\npsych​</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にある R アイコンをクリックするか、次のコマンド help(omega, package=psych) を実行して、出力ウィンドウで + をクリックして R コードチャンクを作成します\n\t\t\t"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "ヒートマップ",
+  "navigation": "ヒートマップ",
+  "rowVariables": "ターゲット変数",
+  "columnVariables": "列変数",
+  "options": "オプション",
+  "title1": "ヒートマップのタイトル",
+  "dendrogram": "デンドログラム:",
+  "label1": "行デンドログラムオプション:",
+  "plotRowYes": "行の平均に基づいてデンドログラムを再配置",
+  "plotRowNo": "再配置しない（デンドログラムは計算されません）",
+  "label2": "列デンドログラムオプション",
+  "plotColumnYes": "列の平均に基づいてデンドログラムを再配置",
+  "plotColumnNo": "いいえ",
+  "symmetric": "対称行列の場合、列を行のように扱う",
+  "trace": "行、列、両方の行と列、またはなしのいずれかで実線を描画するオプション",
+  "density": "密度オプション:",
+  "scale": "値は行方向、列方向、またはなしで中心に配置する必要があります",
+  "label3": "欠損値",
+  "Remove": "欠損値を含むすべての行を削除",
+  "Keep": "欠損値を含む行を保持",
+  "label4": "セルに値を配置",
+  "valuesNo": "はい",
+  "valuesYes": "いいえ",
+  "noteColors": "セルの値の色を選択してください（色を選択した後、制御の外をクリックして適用）：",
+  "help": {
+    "title": "ヒートマップ",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>説明</b></br>\n            ヒートマップは、行列に含まれる個々の値が色で表現されるデータのグラフィカルな表現です。ファセットは、因子変数を指定することでオプションで作成できます。また、テーマを指定し、x軸とy軸のタイトルとラベルを指定することもできます。</br>\n            データセットは、column1, column2…columnNの形式でなければなりません。</br>\n            column1: プロットされるコレステロール値を持つ人々の名前など、対象を特定します。</br>\n            column2: 時間1のコレステロール値を特定します。</br>\n            column3: 時間2のコレステロール値を特定します。</br>\n            column4: 時間3のコレステロール値を特定します。</br>\n            column5: 時間4のコレステロール値を特定します…</br>\n            Column1はヒートマップの各行のラベルです。</br>\n            Column2以降では、各行の値がヒートマップの色として表現されます。</br>\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Subject'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            上記の関数はBlueSkyパッケージにあり、gplotsパッケージのheatmap.2関数を呼び出します。\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット\n            </li>\n            <li>\n            rowVariable: グラフが構築される対象に関する情報を含む列変数\n            </li>\n            <li>\n            colVariables: ヒートマップで色として表現される値を含む列変数のリスト\n            </li>\n            <li>\n            Colv: 列デンドログラムがどのように再配置されるかを決定します。上記のRowv引数と同様のオプションがあります。また、xが正方行列の場合、Colv=\"Rowv\"は列が行と同様に扱われることを意味します。\n            </li>\n            <li>\n            Rowv: 行デンドログラムがどのように再配置されるかを決定します。デフォルトはTRUEで、これはデンドログラムが計算され、行の平均に基づいて再配置されることを意味します。NULLまたはFALSEの場合、デンドログラムは計算されず、再配置は行われません。デンドログラムがある場合、それは「そのまま」使用されます。整数のベクトルの場合、デンドログラムはベクトルの順序に基づいて計算され、再配置されます。\n            </li>\n            <li>\n            na.rm: NAを削除するかどうかを決定する論理値\n            </li>\n            <li>\n            dendrogram: 'none', 'row', 'column'または'both'のデンドログラムを描画するかどうかを示す文字列。デフォルトは'both'です。ただし、Rowv（またはColv）がFALSEまたはNULLで、dendrogramが'both'の場合、警告が発行され、Rowv（またはColv）引数が尊重されます。\n            </li>\n            <li>\n            scale: 値が行方向または列方向で中心に配置され、スケーリングされるべきか、またはなしであるかを示す文字列。デフォルトは「なし」です。\n            </li>\n            <li>\n            trace: 値が行方向または列方向で中心に配置され、スケーリングされるべきか、またはなしであるかを示す文字列。デフォルトは「なし」です。\n            </li>\n            <li>\n            density.info: カラーキーに「ヒストグラム」、「密度」プロット、またはプロットなし（「なし」）を重ねるかどうかを示す文字列。\n            </li>\n            <li>\n            noteForCells: ヒートマップのセルに値を配置するかどうかを示す論理値。\n            </li>\n            <li>\n            notecol: メモの色。指定された場合、値は指定された色でヒートマップのセルに記載されます。\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            BlueSky;gplots;</br>\n            <b>ヘルプ</b></br>\n            help(heatmap.2,package='gplots')</br>\n            その他: 詳細なRヘルプを取得するには、Rヘルプボタンをクリックしてください。また、help(labs)、help(geom_histogram)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。</br>\n            サンプルデータセット: サンプルデータセットフォルダーのHeatmaps.Rdataを参照してください。</br>\n     "
+  }
+}

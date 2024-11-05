@@ -1,0 +1,21 @@
+{
+  "title": "ビニング",
+  "navigation": "ビン",
+  "vartobin": "ビンする変数を選択してください",
+  "varname": "ビン化された値を保存するための変数名を入力してください",
+  "noofbins": "ビンの数を指定してください",
+  "label1": "レベル名",
+  "Names": "名前を指定してください",
+  "levelnames": "カンマ（,）で区切ったレベル名を入力してください。例：良い、より良い、最高",
+  "Numbers": "数字",
+  "Ranges": "範囲",
+  "label2": "ビニング方法",
+  "equalwidth": "等幅ビン",
+  "equalcount": "等カウントビン",
+  "natural": "自然なブレーク（K平均クラスタリング）",
+  "help": {
+    "title": "ビニング",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>説明</b></br>\n数値変数の範囲を等幅、（おおよそ）等頻度、または「自然」なカットポイント（K平均クラスタリングによって決定される）に分解するファクターを作成します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nX: ビン化される数値変数。\n</li>\n<li>\nBins: ビンの数。\n</li>\n<li>\nmethod: 等幅ビンのための「intervals」; 等カウントビンのための「proportions」; K平均クラスタリングによってビン間のカットポイントを決定するための「natural」。\n</li>\n<li>\nLabels: FALSEの場合、ファクターレベルには数値ラベルが使用されます; NULLの場合、カットポイントがラベルを定義するために使用されます; それ以外の場合はレベル名の文字ベクトル。\n</li>\n</ul>\n<b>パッケージ</b></br>\nRcmdrMisc</br>\n<b>ヘルプ</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

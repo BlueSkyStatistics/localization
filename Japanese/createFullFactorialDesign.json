@@ -1,0 +1,17 @@
+{
+  "title": "フルファクターデザインの作成",
+  "navigation": "フルファクターデザインの作成",
+  "datasetname": "デザイン名",
+  "selectedvars": "変数を選択",
+  "numOfBlocks": "ブロック数",
+  "replications": "繰り返し",
+  "repeatOnlyChk": "繰り返しのみ",
+  "lbl1": "ランダム化設定を変更する必要はないかもしれません",
+  "randomseeds": "ランダム化のためのシード",
+  "randomizationChk": "デザイン生成をランダム化する",
+  "help": {
+    "title": "フルファクターデザインの作成",
+    "r_help": "help(fac.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tfac.design関数はフルファクターデザインを生成します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(fac.design, package = DoE.base)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、factor_grid_full_factorial_Design.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

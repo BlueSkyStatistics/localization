@@ -1,0 +1,7 @@
+{
+  "help": {
+    "title": "Analyse de Corrélation",
+    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+    "body": "\n<b>Description</b>\nCette fonction utilise la fonction rcorr dans le package Hmisc pour calculer des matrices de corrélations de Pearson ou de Spearman ainsi que les p-values pairwise parmi les corrélations. Les p-values sont corrigées pour les inférences multiples en utilisant la méthode de Holm (voir p.adjust). Les observations sont filtrées pour les données manquantes, et seules les observations complètes sont utilisées.\n<br/>\n<b>Utilisation</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## Méthode S3 pour la classe 'rcorr.adjust'\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>Arguments</b>\n   <ul>\n   <li>\nx: une matrice numérique ou un cadre de données, ou un objet de la classe \"rcorr.adjust\" à imprimer.\n</li>\n<li>\ntype: \"pearson\" ou \"spearman\", selon le type de corrélations souhaitées ; par défaut, c'est \"pearson\".\n</li>\n<li>\nuse: comment gérer les données manquantes : \"complete.obs\", par défaut, utilise uniquement les cas complets ; \"pairwise.complete.obs\", utilise tous les cas avec des données valides pour chaque paire.\n</li>\n<li>\n...: non utilisé.\n</li>\n</ul>\n<b>Valeur</b>\nRenvoie un objet de la classe \"rcorr.adjust\", qui est normalement juste imprimé.\n"
+  }
+}

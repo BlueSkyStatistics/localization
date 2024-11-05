@@ -1,0 +1,16 @@
+{
+  "title": "Convertiți variabilele de caracter în dată și oră",
+  "navigation": "Caracter în dată și oră",
+  "label1": "Selectați un sufix sau un prefix pentru variabilele convertite",
+  "suffix": "Sufix",
+  "prefix": "Prefix",
+  "prefixOrSuffix": "Introduceți un prefix sau un sufix",
+  "Destination": "Selectați variabilele de caracter de convertit în dată",
+  "DateFormat": "Selectați formatul șirului de caractere",
+  "TimeZone": "Selectați un fus orar (implicit - nimic selectat este fusul orar local al PC-ului)",
+  "help": {
+    "title": "Convertiți caracterul în dată",
+    "r_help": "help(strptime, package=\"base\")",
+    "body": "\n<b>Descriere</b></br>\nConvertește un caracter într-o dată (clasa POSIXct). Trebuie să specificați formatul datei stocate într-un șir de caractere.\nFuncția de mai sus apelează intern strptime din pachetul de bază. Am extins strftime pentru a suporta variabile multiple.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkystrptime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"sufix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndata: Numele setului de date ca un șir de caractere.\n</li>\n<li>\nvarNames: Numele variabilelor de clasă caracter care trebuie convertite în dată (clasa POSIXct)\n</li>\n<li>\ndateFormat: Un șir de caractere. Implicit pentru metodele de format este \"%Y-%m-%d %H:%M:%S\" dacă orice element are o componentă de timp care nu este miezul nopții, și \"%Y-%m-%d\" în caz contrar. Dacă options(\"digits.secs\") este setat, până la numărul specificat de cifre va fi imprimat pentru secunde\n</li>\n<li>\ntimezone: Un șir de caractere care specifică fusul orar care va fi utilizat pentru conversie. Specific pentru sistem (vezi as.POSIXlt), dar \"\" este fusul orar curent, iar \"GMT\" este UTC. Valorile invalide sunt tratate cel mai frecvent ca UTC, pe unele platforme cu un avertisment.\n</li>\n<li>\nprefixOrSuffix: Specificați un prefix sau un sufix pentru variabilele convertite de clasă POSIXct. Acceptă fie c(\"prefix\"), fie c(\"sufix\"). Noile variabile care sunt create cu acest prefix/sufix la numele variabilei originale. \n</li>\n<li>\nprefixOrSuffixValue = Un vector de caractere care specifică numele prefixului sau sufixului care va fi utilizat.\n</li>\n</ul>\n<b>Pachet</b></br>\nbază</br>\n<b>Ajutor</b></br>\nhelp(strptime)\n"
+  }
+}

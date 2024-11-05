@@ -1,0 +1,21 @@
+{
+  "title": "バイオリンプロット",
+  "navigation": "バイオリン",
+  "x": "X軸、因子変数を指定してください",
+  "y": "Y軸、数値変数を指定してください",
+  "fill": "塗りつぶし、因子変数を指定してください",
+  "alpha": "不透明度 (0-1)",
+  "flip": "軸を反転",
+  "specify_a_title": "タイトルを入力してください",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "help": {
+    "title": "バイオリンプロット",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>説明</b></br>\n            バイオリンプロットは、連続分布のコンパクトな表示です。これは、geom_boxplot()とgeom_density()のブレンドです：バイオリンプロットは、ボックスプロットと同じ方法で表示されるミラー密度プロットです。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"...のためのバイオリンチャート\")\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            x: Y変数をグループに分ける因子変数​\n            </li>\n            <li>\n            y: バイオリンプロットが生成される数値変数\n            </li>\n            <li>\n            fill: 既存のグループをさらにグループ化するためのオプションの因子/カテゴリ変数。各サブグループは異なる色で表示されます。​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            geom_violin(): バイオリンプロットを作成します。\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例のタイトルを変更します（これはオプションです）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）​\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します（これはオプションです）​\n            </li>\n            <li>\n            coord_flip(): 軸を反転します（これはオプションです）​\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;</br>\n            <b>ヘルプ</b></br>\n            その他: Rヘルプボタンをクリックして詳細なRヘルプを取得します。また、help(geom_violin)、help(labs)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。\n    "
+  }
+}

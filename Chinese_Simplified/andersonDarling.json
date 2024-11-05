@@ -1,0 +1,10 @@
+{
+  "title": "安德森-达林正态性检验",
+  "navigation": "安德森-达林正态性检验",
+  "trg": "目标变量",
+  "help": {
+    "title": "安德森-达林正态性检验",
+    "r_help": "help(ad.test, package=nortest)",
+    "body": "\n<b>描述</b></br>\n安德森-达林正态性检验。 \n<br/>\n<b>用法</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个数值向量，数据值的数量必须大于7。允许缺失值。\n</li>\n</ul>\n<b>细节</b></br>\n安德森-达林检验是一个EDF综合检验，用于检验正态性假设。<br/>\n<b>值</b><br/>\n一个包含以下组件的“检验”类列表：<br/>\n<ul>\n<li>\nstatistic: 安德森-达林统计量的值。\n</li>\n<li>\np.value: 检验的P值。\n</li>\n</ul>\n<b>包</b></br>\nnortest</br>\n<b>帮助</b></br>\nhelp(ad.test, package =nortest)\n"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "参数水平估计",
+  "navigation": "参数估计",
+  "label1": "支持以下类别的模型，类别在下面括号中列出",
+  "label2": "线性模型 (lm)，广义线性模型 (glm)，多项式对数线性模型 (multinom)，分位数回归 (rq)，稳健线性回归 (rlm)，生存曲线对象 (survfit)，线性混合效应模型 (lme)，比例风险回归对象 (coxph)，参数生存回归模型 (survreg)，有序逻辑/Probit 回归 (polr)，因子分析 (factanal)，Lasso 和弹性网正则化广义线性模型 (glmnet)",
+  "modelselector1": "选择一个模型",
+  "help": {
+    "title": "参数水平估计",
+    "r_help": "help(tidy, package ='broom')",
+    "body": "\n                <b>描述</b></br>\n显示所选模型的参数估计\n<br/>\n<b>用法</b>\n<br/>\n<code> \ntidy(x, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 要转换为单行数据框的模型或其他 R 对象\n</li>\n</ul>\n<b>详细信息</b></br>\n显示以下模型的参数估计</br>\n线性模型 (模型类 lm)</br>\n广义线性模型 (模型类 glm)</br>\n多项式对数线性模型 (模型类 multinom)</br>\n有序逻辑或 Probit 回归 (模型类 polr)</br>\nLasso 和弹性网正则化广义线性模型 (模型类 glmnet)</br>\n稳健线性回归 (模型类 rlm)</br>\n分位数回归 (模型类 rq)</br>\n线性混合效应模型 (lme)</br>\n比例风险回归对象 (coxph)</br>\n参数生存回归模型 (survreg)</br>\n因子分析 (factanal)</br>\n<b>值</b></br>\n一个 tibble::tibble()，包含有关模型组件的信息。</br>\nterm: 回归项的名称。</br>\nestimate: 回归项的估计值。</br>\nstd.error: 回归项的标准误差。</br>\nstatistic: 统计量的值，几乎总是 T 统计量，用于假设回归项非零。</br>\np.value: 与观察到的统计量相关的双侧 p 值。</br>\nconf.low: 回归项的置信区间的低端。仅在 conf.int = TRUE 时包含。</br>\nconf.high: 回归项的置信区间的高端。仅在 conf.int = TRUE 时包含。</br>\n如果线性模型是 mlm 对象（多元线性模型），则有一个额外的列：</br>\nresponse: 系数对应的响应列（通常为 Y1、Y2 等）</br>\n<b>包</b></br>\nbroom</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标或在 R 语法编辑器中运行以下命令 help(tidy, package ='broom')\n"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Explorați variabilele",
+  "navigation": "Explorați variabilele",
+  "variableListSelcted": "Selectați una sau mai multe variabile pentru a explora",
+  "histCurveDispChk": "Afișați o curbă normală pe histogramă (valorile lipsă sunt eliminate pentru a permite afișarea curbei)",
+  "statTableOrientionChk": "Statistici sumare în coloane",
+  "histBins": "Specificați numărul de bin-uri pentru histogramă",
+  "help": {
+    "title": "Explorați caracteristicile uneia sau mai multor variabile",
+    "r_help": "ajutor(sumă)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tOferă următoarele statistici descriptive și grafice:\n\t\t\t\tmin, max, medie, mediană, moduri, sumă, sd, cv (coeficient de variație), var, eroare standard, asimetrie, kurtosis, mad, iqr și quartile. În plus, intervalul de încredere de 95% pentru medie și sd sunt calculate. Histogramă și grafice QQ sunt afișate. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R ajutor(sumă, pachet = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a calcula asimetria și kurtosis, tipul = 3 este folosit ca parametru implicit. Cu parametrul tip = 2, valorile pentru asimetrie și kurtosis vor corespunde probabil cu valorile din formula MS Excel SKEW() și KURT()\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVezi mai multe detalii \n\t\t\t\t<br/>\n\t\t\t\thelp(asimetrie, pachet = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosis, pachet = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

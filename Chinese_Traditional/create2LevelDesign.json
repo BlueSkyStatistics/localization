@@ -1,0 +1,20 @@
+{
+  "title": "創建非正規（分數）階層 2 級篩選設計",
+  "navigation": "創建 2 級篩選設計",
+  "selectedvars": "選擇變數",
+  "datasetname": "設計名稱",
+  "numOfRuns": "運行次數（4 的倍數，>=8）",
+  "taguchiOrderChk": "(僅適用於) 12 次運行設計的田口順序",
+  "numOfCenterPts": "中心點數量（如果使用，至少 2 個）",
+  "centerPointDistribution": "中心點分佈的位置數量（必須 >1）",
+  "replications": "重複次數",
+  "repeatOnlyChk": "僅重複",
+  "lbl1": "您可能不需要更改隨機化設置",
+  "randomseeds": "隨機化的種子",
+  "randomizationChk": "隨機生成設計",
+  "help": {
+    "title": "創建 2 級篩選設計",
+    "r_help": "help(pb, package = FrF2)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tPlackett-Burman(pb) 函數生成非正規分數階層 2 級篩選設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(pb, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 factor_grid_twolevel_screen_Design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

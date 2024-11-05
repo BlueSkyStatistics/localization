@@ -1,0 +1,24 @@
+{
+  "title": "Îmbină seturi de date",
+  "navigation": "Îmbină",
+  "out": "Introduceți numele setului de date îmbinat",
+  "in1": "Selectați primul set de date",
+  "in2": "Selectați al doilea set de date",
+  "label1": "Opțiuni de îmbinare",
+  "leftjoin": "Îmbinare stânga (Păstrează doar rândurile din primul set de date)",
+  "rightjoin": "Îmbinare dreapta (Păstrează doar rândurile din al doilea set de date)",
+  "innerjoin": "Îmbinare internă (Păstrează rândurile comune ambelor seturi de date)",
+  "fulljoin": "Îmbinare completă (Păstrează toate rândurile din oricare set de date)",
+  "label2": "Suprascrie îmbinarea efectuată pe toate numele de coloane comune",
+  "by": "Pentru a suprascrie setarea implicită a îmbinării efectuate pe toate numele de coloane comune, introduceți un subset al numelui coloanelor comune de mai jos, separate prin , De exemplu, țară,regiune Îmbinarea va fi efectuată doar pe numele de coloane comune introduse. Formatați această listă ca valori separate printr-o virgulă, de exemplu, A,B,C",
+  "label3": "Dacă numele coloanelor pe care se face îmbinarea sunt diferite în fiecare set de date",
+  "byDiffNames": "Introduceți numele coloanelor corespunzătoare separate printr-o virgulă, de exemplu, 'C'='D', 'B'='A'. Vă rugăm să folosiți ghilimele simple ( ' ) aici.",
+  "label4": "Dacă există nume de coloane comune în ambele seturi de date",
+  "suffix": "Implicit, .x și .y vor fi folosite ca sufixe pentru variabilele comune. Dacă doriți să le schimbați, introduceți-le aici separate printr-o virgulă, de exemplu, 1,2. Rețineți că orice . va fi înlocuit cu un _ în setul de date de ieșire",
+  "advOptions": "Opțiuni avansate",
+  "help": {
+    "title": "Îmbină seturi de date",
+    "r_help": "help(join, package=dplyr)",
+    "body": "\n            <b>Descriere</b></br>\n            Îmbinarea seturilor de date vă va ajuta să îmbinați 2 seturi de date împreună. Implicit, acest dialog va căuta nume de variabile comune în cele 2 seturi de date și va îmbina pe setul complet de variabile comune.<br/> Dacă doriți să îmbinați pe un set specific de variabile, le puteți specifica în meniul Avansat.<br/>\n            inner_join: returnează toate rândurile din x unde există valori corespunzătoare în y, și toate coloanele din x și y. Dacă există mai multe corespondențe între x și y, toate combinațiile corespondențelor sunt returnate.</br>\n            left_join: returnează toate rândurile din x, și toate coloanele din x și y. Rândurile din x fără corespondență în y vor avea valori NA în noile coloane. Dacă există mai multe corespondențe între x și y, toate combinațiile corespondențelor sunt returnate.</br>\n            right_join: returnează toate rândurile din y, și toate coloanele din x și y. Rândurile din y fără corespondență în x vor avea valori NA în noile coloane. Dacă există mai multe corespondențe între x și y, toate combinațiile corespondențelor sunt returnate.</br>\n            full_join: returnează toate rândurile și toate coloanele din ambele x și y. Acolo unde nu există valori corespunzătoare, returnează NA pentru cel care lipsește.</br>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            left_join(x, y, by = c(NULL), suffix = c(\".x\", \".y\"), ...)\n            right_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            inner_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            full_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: set de date de îmbinat\n            </li>\n            <li>\n            y: set de date de îmbinat\n            </li>\n            <li>\n            by: un vector de caractere de variabile pentru a îmbina. Dacă NULL, implicit, *_join() va face o îmbinare naturală, folosind toate variabilele cu nume comune în cele două tabele. Un mesaj listează variabilele astfel încât să puteți verifica dacă sunt corecte (pentru a suprima mesajul, pur și simplu listați explicit variabilele pe care doriți să le îmbinați). Pentru a îmbina prin variabile diferite pe x și y, utilizați un vector numit. De exemplu, by = c(\"a\" = \"b\") va potrivi x.a cu y.b.\n            </li>\n            <li>\n            suffix: Dacă există variabile duplicate neîmbinate în x și y, aceste sufixe vor fi adăugate la ieșire pentru a le deosebi. Ar trebui să fie un vector de caractere de lungime 2.\n            </li>\n            </ul>\n            <b>Valoare</b><br/>\n            Un tibble.<br/>\n            <b>Pachet</b></br>\n            dplyr</br>\n            <b>Ajutor</b></br>\n            Pentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(left_join, package=\"dplyr\") creând un chunk de cod R făcând clic pe + în fereastra de ieșire\n"
+  }
+}

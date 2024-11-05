@@ -1,0 +1,31 @@
+{
+  "title": "Hartă de căldură",
+  "navigation": "Hartă de căldură",
+  "rowVariables": "Variabila țintă",
+  "columnVariables": "Variabilele coloanei",
+  "options": "Opțiuni",
+  "title1": "Titlul hărții de căldură",
+  "dendrogram": "Dendrogram:",
+  "label1": "Opțiuni pentru dendrograma pe rânduri:",
+  "plotRowYes": "Reordonează dendrograma pe baza mediei rândurilor",
+  "plotRowNo": "Fără reordonare (dendrograma nu va fi calculată)",
+  "label2": "Opțiuni pentru dendrograma pe coloane",
+  "plotColumnYes": "Reordonează dendrograma pe baza mediei coloanelor",
+  "plotColumnNo": "Nu",
+  "symmetric": "În cazul unei matrice simetrice, tratează coloanele ca rânduri",
+  "trace": "Opțiuni pentru desenarea unei linii continue pe rânduri, coloane, atât rânduri cât și coloane sau niciuna",
+  "density": "Opțiuni de densitate:",
+  "scale": "Valorile ar trebui să fie centrate în direcția rândului, direcția coloanei sau niciuna",
+  "label3": "Valori lipsă",
+  "Remove": "Elimină toate rândurile care conțin o valoare lipsă",
+  "Keep": "Păstrează rândurile care conțin valori lipsă",
+  "label4": "Plasează valorile în celulă",
+  "valuesNo": "Da",
+  "valuesYes": "Nu",
+  "noteColors": "Alege o culoare pentru valorile celulelor (După selectarea culorii, dă click în afara controlului pentru a aplica):",
+  "help": {
+    "title": "Hartă de căldură",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>Descriere</b></br>\n            O hartă de căldură este o reprezentare grafică a datelor în care valorile individuale conținute într-o matrice sunt reprezentate ca culori. Facetele pot fi create opțional prin specificarea unei variabile factor. De asemenea, poți specifica opțional teme și un titlu și etichete pentru axele x și y</br>\n            Setul de date trebuie să fie în formatul  col1, col2…colN unde</br>\n            col1: Identifică subiecții, de exemplu, numele persoanelor ale căror valori de colesterol sunt reprezentate</br>\n            col2:  Identifică valorile colesterolului la timpul 1</br>\n            col3:  Identifică valorile colesterolului la timpul 2</br>\n            col4:  Identifică valorile colesterolului la timpul 3</br>\n            col5:  Identifică valorile colesterolului la timpul 4…</br>\n            Col1 este o etichetă pentru fiecare rând din harta de căldură.</br>\n            Pentru coloana 2 încolo, valorile din fiecare rând al coloanei sunt reprezentate ca culori în harta de căldură.</br>\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Subiect'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            Funcția de mai sus este în pachetul BlueSky și invocă funcția heatmap.2 din pachetul gplots.\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit\n            </li>\n            <li>\n            rowVariable: Variabila de coloană care conține informații despre subiecții pentru care este construit graficul, vezi mai sus\n            </li>\n            <li>\n            colVariables:  o listă de variabile de coloană care conțin valori ce vor fi reprezentate ca culori în harta de căldură\n            </li>\n            <li>\n            Colv: determină dacă și cum ar trebui să fie reordonată dendrograma coloanei. Are opțiunile ca argumentul Rowv de mai sus și, în plus, când x este o matrice pătrată, Colv=\"Rowv\" înseamnă că coloanele ar trebui tratate identic cu rândurile.\n            </li>\n            <li>\n            Rowv:   determină dacă și cum ar trebui să fie reordonată dendrograma rândului. Implicit, este TRUE, ceea ce implică faptul că dendrograma este calculată și reordonată pe baza mediei rândurilor. Dacă este NULL sau FALSE, atunci nu se calculează nicio dendrogramă și nu se face nicio reordonare. Dacă este o dendrogramă, atunci este utilizată \"așa cum este\", adică fără nicio reordonare. Dacă este un vector de întregi, atunci dendrograma este calculată și reordonată pe baza ordinii vectorului.\n            </li>\n            <li>\n            na.rm: logic determinând dacă NA-urile ar trebui să fie eliminate\n            </li>\n            <li>\n            dendrogram: șir de caractere care indică dacă să deseneze 'niciuna', 'rând', 'coloană' sau 'ambele' dendrograme. Implicit este 'ambele'. Cu toate acestea, dacă Rowv (sau Colv) este FALSE sau NULL și dendrograma este 'ambele', atunci se emite un avertisment și argumentele Rowv (sau Colv) sunt onorate.\n            </li>\n            <li>\n            scale: șir de caractere care indică dacă valorile ar trebui să fie centrate și scalate fie în direcția rândului, fie în direcția coloanei, sau niciuna. Implicit este \"niciuna\".\n            </li>\n            <li>\n            trace: șir de caractere care indică dacă valorile ar trebui să fie centrate și scalate fie în direcția rândului, fie în direcția coloanei, sau niciuna. Implicit este \"niciuna\".\n            </li>\n            <li>\n            density.info: șir de caractere care indică dacă să suprapui un 'histogramă', un grafic de 'densitate', sau niciun grafic ('niciuna') pe cheia de culoare.\n            </li>\n            <li>\n            noteForCells: logic indicând dacă valorile ar trebui să fie plasate în celulele hărții de căldură.\n            </li>\n            <li>\n            notecol: culoarea notelor. Dacă este specificată, valorile sunt notate în celulele hărții de căldură în culoarea specificată..\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            BlueSky;gplots;</br>\n            <b>Ajutor</b></br>\n            help(heatmap.2,package='gplots')</br>\n            Alte: Dă click pe butonul Ajutor R pentru a obține ajutor detaliat R. Poți de asemenea să introduci help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)</br>\n            Seturi de date de exemplu: Vezi Heatmaps.Rdata în folderul Seturi de date R de exemplu</br>\n     "
+  }
+}

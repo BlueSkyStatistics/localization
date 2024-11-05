@@ -1,0 +1,11 @@
+{
+  "title": "Set Split",
+  "navigation": "Split",
+  "label0": "Splits ermöglichen es Ihnen, den Datensatz in Gruppen zu unterteilen, die durch eine oder mehrere Split-Variablen definiert sind. Die Analyse wird separat für jede Gruppe durchgeführt.",
+  "SelectedVars": "Wählen Sie Variablen zum Splitten aus",
+  "help": {
+    "title": "Set Split",
+    "r_help": "",
+    "body": "<b>Beschreibung</b></br>\n        Teilt die Daten in Gruppen basierend auf den ausgewählten Faktoren. Sobald der Datensatz aufgeteilt ist, wird die von Ihnen ausgewählte Analyse unabhängig für jedes Split durchgeführt. Wenn Sie beispielsweise eine Kreuztabellanalyse oder einen Hypothesentest durchführen, wird diese Analyse unabhängig für jedes Split durchgeführt (die Ausgabe der Analyse wird ebenfalls separat für jedes Split generiert). \n         <br/>\n                <b>Verwendung</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(col.names, datasetnameorindex, removeall.splits = FALSE)\n          </code> <br/>\n            <b>Argumente</b><br/>\n                 <ul>\n                   <li>\n        col.names: Dies sind die Spaltennamen/Variablen, nach denen Sie den Datensatz aufteilen möchten, z.B. col.names =c(\"var1\", \"var2\").\n         </li>\n                <li>\n        datasetnameorindex: dies ist der Name des Index.​\n          </li>\n                <li>\n        removeall.splits: TRUE entfernt Splits, FALSE fügt Splits hinzu.\n         </li>\n                </ul>\n            <b>Paket</b></br>\n               Nicht anwendbar, diese Funktion ist eine interne Funktion im BlueSky-Paket. Diese Funktion setzt im Wesentlichen Attribute auf dem Datensatz. Basierend auf diesen Attributen führen wir die Analyse für jedes Split unabhängig durch.</br>\n                <b>Hilfe</b></br>\n        NA\n        "
+  }
+}

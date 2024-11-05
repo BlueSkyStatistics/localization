@@ -1,0 +1,13 @@
+{
+  "title": "N SEMモデルの比較",
+  "navigation": "N SEMモデルの比較",
+  "label1": "N SEMモデルを比較します。",
+  "label2": "以下のクラスのモデルを選択してください（Rクラスは下に括弧で示されています）",
+  "label3": "構造方程式モデル（lavaan）",
+  "modelselector1": "比較するモデルを1つ以上選択してください：",
+  "help": {
+    "title": "N SEMモデルの比較",
+    "r_help": "help(lavTestLRT, package='lavaan')",
+    "body": "\n                <b>\n（ネストされた）lavaanモデルを比較するためのLRTテスト。</b></br>\n<b>使用法</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject:  lavaanクラスのオブジェクト。\n</li>\n</ul>\n<b>値</b><br/>\nanovaクラスのオブジェクト。単一の引数が与えられた場合、このモデルのテスト統計量を単に返します。オブジェクトのシーケンスが与えられた場合、この関数はモデルを自由度に従って再配置した後、互いにテストします。<br/>\n<b>パッケージ</b></br>\nlavaan</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(lavTestLRT,package='lavaan')</br></br>\n<b>例</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+  }
+}

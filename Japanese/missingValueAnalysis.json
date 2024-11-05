@@ -1,0 +1,12 @@
+{
+  "title": "欠損値分析、行レイアウト",
+  "navigation": "行レイアウト",
+  "subsetvars": "欠損値を分析する変数を選択してください",
+  "chk1": "欠損値の数で結果をソートする",
+  "chk2": "データに欠損値の累積和を追加する",
+  "help": {
+    "title": "欠損値分析、行レイアウト",
+    "r_help": "help(miss_var_summary, package ='naniar')",
+    "body": "\n<b>説明</b></br>\n欠損値を分析し、結果を行に表示し、変数レベルでの欠損値の要約情報を表示し、分析される変数ごとの各行の欠損値の数をリストします。</br>\n各変数の欠損数、欠損の割合、変数の順序の累積和の要約を提供します。デフォルトでは、各変数の最も欠損が多い順に並べられます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nmiss_var_summary(data, order = FALSE, add_cumsum = FALSE, ...)\n</code> <br/>\n引数\n<ul>\n<li>\ndata: データフレーム\n</li>\n<li>\norder: 結果をn_missでソートするかどうかを示す論理値。デフォルトはTRUEです。FALSEの場合、変数の順序は入力順になります。\n</li>\n<li>\nadd_cumsum: データに欠損値の累積和を追加するかどうかを示す論理値。これは、非応答のパターンを探る際に便利です。これらは、関数に最初に提示された変数の欠損値の累積和として計算されます。</br>\n</li>\n</ul>\n<b>詳細</b></br>\n各変数の欠損データの割合のティブル<br/>\n<b>パッケージ</b></br>\nnaniar</br>\n<b>ヘルプ</b></br>\nhelp(miss_var_summary, package ='naniar')<br/><br/>\n<b>説明</b></br>\nデータ内の各ケースの欠損数、欠損の割合、変数の順序の累積和の要約を提供します。デフォルトでは、各変数の最も欠損が多い順に並べられます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nmiss_case_summary(data, order = TRUE, add_cumsum = FALSE, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndata: データフレーム\n</li>\n<li>\norder: 結果をn_missでソートするかどうかを示す論理値。デフォルトはTRUEです。FALSEの場合、変数の順序は入力順になります。\n</li>\n<li>\nadd_cumsum: データに欠損値の累積和を追加するかどうかを示す論理値。これは、非応答のパターンを探る際に便利です。これらは、関数に最初に提示された変数の欠損値の累積和として計算されます。\n</li>\n</ul>\n<b>値</b><br/>\n各ケースの欠損データの割合のティブル。<br/>\n<b>パッケージ</b></br>\nnaniar</br>\n<b>ヘルプ</b></br>\nhelp(miss_case_summary, package ='naniar')\n"
+  }
+}

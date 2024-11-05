@@ -1,0 +1,20 @@
+{
+  "title": "Box-Cox-Transformation von nicht-normalen Daten zu normalen",
+  "navigation": "Box-Cox-Transformation",
+  "label2": "Zwei Optionen - entweder wählen Sie eine nicht-normale Variable, die in eine normale umgewandelt werden soll, oder wählen Sie den gesamten Datensatz zur Umwandlung aus",
+  "selectVariableRad": "Option 1: Wählen Sie eine nicht-normale Variable aus dem Datensatz, die in eine normale umgewandelt werden soll",
+  "variableSelcted": "Eine nicht-normale Variable zur Umwandlung",
+  "boxcoxColName": "(Optional) Geben Sie einen neuen Variablennamen an, um die transformierten Werte zu speichern. Andernfalls wird <variable_bcox> erstellt",
+  "selectDatasetRad": "Option 2: Transformieren Sie den gesamten Datensatz in eine normale Verteilung",
+  "boxcoxDatasetName": "(Optional) Geben Sie einen neuen Datensatznamen an, um die transformierten Werte zu speichern. Andernfalls wird <dataset_bcox> erstellt",
+  "johnsonDatasetName": "(Optional) Geben Sie einen neuen Datensatznamen für Johnson an (erforderlich, wenn Option 2 oben gewählt wird)",
+  "boxcoxChk": "Box-Cox-Transformation",
+  "johnsonChk": "Johnson-Transformation",
+  "lambda": "(Optional) Lambda (λ) Wert in (-2 bis 2), der für die Box-Cox-Transformation verwendet werden soll. Wenn nicht angegeben, wird automatisch der beste Lambda-Wert identifiziert",
+  "digits": "Ziffern - rundet auf die angegebene Anzahl von Dezimalstellen",
+  "help": {
+    "title": "Transformieren Sie nicht-normale Daten in normale",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFunktion zur Transformation einer nicht-normalen Variable in eine normale mit MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tDie Box-Cox-Transformation kann nicht auf negative Werte angewendet werden\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür detaillierte Hilfe - verwenden Sie R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Für einen guten Überblick über MASS Box-Cox, siehe https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLambda (λ) Werte, die mit bekannten Box-Cox-Transformationen verbunden sind \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: Quadrat-Transformation ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: keine Transformation; gibt die ursprünglichen Daten zurück ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: Quadratwurzel-Transformation ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: Kubikwurzel-Transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: vierte Wurzel-Transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: natürliche Logarithmus-Transformation ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: reziproke Quadratwurzel-Transformation ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: reziproke (inverse) Transformation ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: reziproke Quadrat-Transformation ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

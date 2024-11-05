@@ -1,0 +1,12 @@
+{
+  "title": "列出已安装的 R 包",
+  "navigation": "已安装的包",
+  "label1": "注意：从 ...\\BlueSky Statistics\\10\\R-3.6.3 库路径安装的包将始终覆盖其他库路径中的包",
+  "allPackages": "显示所有库路径中已安装的包",
+  "path": "选择一个库路径。将显示安装到所选库路径的包",
+  "help": {
+    "title": "列出已安装的 R 包",
+    "r_help": "help(installed.packages, package='utils')",
+    "body": "\n<b>描述</b></br>\n显示指定库中所有已安装包的详细信息。\n<br/>\n<b>用法</b>\n<br/>\n<code> \ninstalled.packages(lib.loc = NULL, priority = NULL,\n    noCache = FALSE, fields = NULL,\n    subarch = .Platform$r_arch, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nlib.loc: 字符向量，描述要搜索的 R 库树的位置，或 NULL 表示所有已知树（见 .libPaths）。\n</li>\n<li>\npriority: 字符向量或 NULL（默认）。如果非空，则用于选择包；\"high\" 等同于 c(\"base\", \"recommended\"). 要选择没有分配优先级的所有包，请使用 priority = \"NA\"。\n</li>\n<li>\nnoCache: 不使用缓存信息，也不缓存它。\n</li>\n<li>\nfields: 字符向量，给出要从每个包的 DESCRIPTION 文件中提取的字段，除了默认字段，或 NULL（默认）。不可用字段将导致 NA 值。\n</li>\n<li>\nsubarch: 字符串或 NULL。如果非空且非空，则用于选择为该子架构安装的包。\n</li>\n<li>\n...: 传递给方法函数的参数。\n</li>\n</ul>\n<b>详细信息</b></br>\ninstalled.packages 扫描 lib.loc 中找到的每个包的 ‘DESCRIPTION’ 文件，并返回一个包含包名称、库路径和版本号的矩阵。<br/>\n<b>值</b><br/>\n一个矩阵，每个包一行，行名为包名称，列名（当前）为 \"Package\", \"LibPath\", \"Version\", \"Priority\", \"Depends\", \"Imports\", \"LinkingTo\", \"Suggests\", \"Enhances\", \"OS_type\", \"License\" 和 \"Built\"（包构建时的 R 版本）。可以使用 fields 参数指定其他列。<br/>\n<b>示例</b><br/>\n<code> \nBSkyInstalledPackages <- installed.packages(lib.loc ='C:/Program Files/BlueSky Statistics/R-3.6.3/library')\nBSkyFormat(BSkyInstalledPackages, singleTableOutputHeader = \"在路径 C:/Program Files/BlueSky Statistics/R-3.6.3/library 中已安装包的列表\")\n</code> <br/>\n<b>包</b></br>\nutils</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 语法编辑器中运行以下命令 help(installed.packages, package='utils')\n                "
+  }
+}

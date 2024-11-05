@@ -1,0 +1,30 @@
+{
+  "title": "ExcelまたはCSVデータのクリーンアップ - 行と列を調整、削除する",
+  "navigation": "Excelクリーンアップ",
+  "resultDatasetName": "作成される新しいデータセットの名前",
+  "listofRowNumbersRemove": "(オプション) 削除する行番号のリスト（カンマ区切り、例：1,4,5,20:30）",
+  "listofColumnNumbersRemove": "(オプション) 削除する列番号のリスト（カンマ区切り、例：1,2,6:10）",
+  "chooseColumnNamesRad": "データセットから列名を指定する",
+  "rowNumbersContaingColNames": "出力データセットの列名として使用する行番号を入力してください（カンマ区切り、例：3,4）",
+  "deleteRowNumbersContaingColNamesChk": "出力データセットの列名を含む行を削除する",
+  "combineWithExsitingColNamesChk": "作成された列名を既存の列ヘッダー名と結合する",
+  "specifyColumnNamesRad": "出力データセットの列名を手動で指定する",
+  "outputColumnNames": "出力データセットで使用する列名を入力してください（カンマ区切り）",
+  "removeColsWithConstantChk": "定数値を持つすべての列を削除する（大文字と小文字を区別しない）",
+  "removeColsWithNoDataChk": "すべての空の列を削除する",
+  "removeRowsWithNoDataChk": "すべての空の行を削除する",
+  "removeRowsWithNAsChk": "完全なケースのみを保持する。すなわち、空またはNA値がある場合は行全体を削除する",
+  "label1": "出力データセットの列タイプを変換する",
+  "convertColumnDataTypeAuto": "列データタイプを自動的に決定して変換する",
+  "convertColumnDataTypeNone": "何もしない",
+  "convertColumnDataTypeFactorToCharInt": "すべての因子列を文字列および整数型に変換する",
+  "convertColumnDataTypeCharToFactor": "すべての文字列列を因子に変換する",
+  "convertColumnDataTypeAllToFactor": "すべての列を因子に変換する",
+  "convertColumnDataTypeManual": "変換する各列のデータタイプを入力する",
+  "outputColumnTypes": "列タイプのリスト（カンマ区切り、例：数値、因子、文字列、..）",
+  "help": {
+    "title": "ExcelまたはCSVデータのクリーンアップ - 行と列を調整、削除する",
+    "r_help": "",
+    "body": "\n            <b>説明</b></br>\n            このダイアログは、複雑なExcelシートをクリーンアップして、新しいデータセットを作成するために行と列を追加および削除するために使用されます\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tこれを試すには、Excel cleanup.xlsxというサンプルデータセットファイルを使用できます\n\t\t\t<br/>\n\t\t\tファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください\n\t\t\t<br/>\n\t\t\tダイアログに入力してください\n\t\t\t<br/>\n\t\t\t新しいデータセット名にはSampleGpを入力してください\n\t\t\t<br/>\n\t\t\t削除する行番号のリストには1:3を入力してください\n\t\t\t<br/>\n\t\t\t削除する列番号のリストには1,2,5:8を入力してください\n\t\t\t<br/>\n\t\t\tオプションを選択してください - データセットから列名を指定する\n\t\t\t<br/>\n\t\t\t行番号を入力するには2,3を入力してください\n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "最適な木の数",
+  "navigation": "最適化",
+  "dependentvar": "従属変数",
+  "independentvars": "独立変数",
+  "label1": "木のシミュレーション設定",
+  "startval": "開始値",
+  "endval": "終了値",
+  "stepval": "ステップ値",
+  "mtry": "mtry",
+  "help": {
+    "title": "最適な木の数",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>説明</b></br>\nデフォルトのmtry値から始めて、randomForestのntree（成長させる木の数）の最適値（バギングエラー推定に関して）を検索します。関数BSkyMultiRandomForestは、以下に定義された引数でrandomForest関数を呼び出します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx : 予測子のデータフレームまたは行列、または適合させるモデルを記述する式（printメソッドの場合、randomForestオブジェクト）。\n</li>\n<li>\ny :  応答ベクトル。因子の場合、分類が仮定され、それ以外の場合は回帰が仮定されます。省略された場合、randomForestは教師なしモードで実行されます。\n</li>\n<li>\nstartval : randomForest()のntree引数の開始値。\n</li>\n<li>\nendval : randomForest()のntree引数の終了値。\n</li>\n<li>\nstepval : startvalがendval値に達するまでの各反復で増加すべきカウント。\n</li>\n<li>\nmtry : 各分割で候補としてランダムにサンプリングされる変数の数。分類（pはxの変数の数）と回帰（p/3）ではデフォルト値が異なることに注意してください。\n</li>\n</ul>\n<b>値</b><br/>\n最適な木の数を印刷します。また、ntreeと対応するバギングエラーの表を表示します。<br/>\n<b>パッケージ</b></br>\nrandomForest​;BlueSky</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(randomForest,package='randomForest')\n                "
+  }
+}

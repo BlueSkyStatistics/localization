@@ -1,0 +1,12 @@
+{
+  "title": "変数の連結",
+  "navigation": "連結",
+  "newvar": "連結結果のための新しい/既存の変数を入力してください",
+  "concatenate": "連結する変数を選択してください",
+  "repString": "連結された変数のためのオプションの区切り文字を入力してください",
+  "help": {
+    "title": "変数の連結",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>説明</b></br>\n数値変数の範囲を等幅のビン、（おおよそ）等頻度のビン、または「自然な」カットポイント（K-meansクラスタリングによって決定される）に分解するファクターを作成します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nX: ビンに分ける数値変数。\n</li>\n<li>\nBins: ビンの数。\n</li>\n<li>\nmethod: 等幅ビンのための「intervals」; 等カウントビンのための「proportions」; k-meansクラスタリングによってビン間のカットポイントを決定するための「natural」。\n</li>\n<li>\nLabels: FALSEの場合、数値ラベルがファクターレベルに使用されます; NULLの場合、カットポイントがラベルを定義するために使用されます; それ以外の場合はレベル名の文字ベクトル。\n</li>\n</ul>\n<b>パッケージ</b></br>\nRcmdrMisc</br>\n<b>ヘルプ</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

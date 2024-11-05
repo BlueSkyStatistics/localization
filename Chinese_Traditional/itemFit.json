@@ -1,0 +1,12 @@
+{
+  "title": "項目適配",
+  "navigation": "項目適配",
+  "label1": "選擇一個模型（支持Rm、dRm、tam.mml、tam.mml.2pl、tam.mml.mfr類別的模型）",
+  "label1b": "如果沒有可用的模型，您需要先通過選擇模型擬合 -> IRT來創建一個模型",
+  "modelselector1": "選擇一個模型",
+  "help": {
+    "title": "項目適配",
+    "r_help": "help(itemfit, package='eRm')",
+    "body": "\n                <b>描述</b></br>\n                對於Rm或dRm類別的模型（通過使用IRT->簡單Rasch模型和CML估計創建）使用函數itemfit來顯示項目適配統計數據。\n                <br/>\n                對於tam.mml、tam.mml.2pl、tam.mml.2pl、tam.mml.mfr類別的模型（通過使用IRT->簡單Rasch模型、部分信用模型、評分量表模型和多面向模型（部分信用和評分量表）與MML估計創建）使用函數msq.itemfit來計算基於均方殘差的項目適配統計數據（Infit、Outfit）\n\n                <br/><br/>\n                <b>用法</b>\n                <br/>\n                <code>\n                eRm::itemfit(object)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(object)\n                </code>\n                <br/><br/>\n                <b>詳細信息</b>\n                <br/>  \n                從BlueSky Statistics語法編輯器運行以下命令 help(itemfit, package ='eRm')\n                <br/>\n                從BlueSky Statistics語法編輯器運行以下命令 help(msq.itemfit, package ='TAM')\n                <br/>\n                詳細幫助將在您的默認瀏覽器中啟動         \n                <br/><br/>\n                <b>包</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>幫助</b>\n                <br/>\n                help(itemfit, package='eRm')\n                "
+  }
+}

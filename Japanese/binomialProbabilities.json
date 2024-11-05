@@ -1,0 +1,11 @@
+{
+  "title": "二項確率",
+  "navigation": "二項確率",
+  "size": "二項試行",
+  "prob": "成功の確率",
+  "help": {
+    "title": "二項確率",
+    "r_help": "help(dbinom, package=stats)",
+    "body": "\n            <b>説明</b>\n            <br/>\nサイズと確率のパラメータを持つ二項分布の密度、分布関数、分位数関数、および乱数生成。\n<br/>\nこれは通常、サイズの試行における「成功」の数として解釈されます。\n<br/>\n<b>使用法</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>引数</b>\n<br/>\n<ul>\n    <li>x, q : 分位数のベクトル。</li>\n    \n    \n    <li>p : 確率のベクトル。</li>\n    \n    \n    <li>n : 観測の数。もし length(n) > 1 の場合、必要な長さが取られます。</li>\n    \n    \n    <li>size : 試行の数（ゼロ以上）。</li>\n    \n    \n    <li>prob : 各試行の成功の確率。</li>\n    \n    \n    <li>log, log.p : 論理値; TRUE の場合、確率 p は log(p) として与えられます。</li>\n    \n    \n    <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率は P[X ≤ x] であり、そうでない場合は P[X > x] です。</li>\n</ul>\n\n\n\n<br/>\n<b>詳細</b>\n<br/>\nサイズ = n および prob = p の二項分布は密度を持ちます\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\nx = 0, …, n の場合。x の要素が整数でない場合、dbinom の結果はゼロになり、警告が表示されます。\n<br/>\np(x) は Loader のアルゴリズムを使用して計算されます。以下の参考文献を参照してください。\n<br/>\n分位数は、F(x) ≥ p となる最小の値 x として定義されます。ここで、F は分布関数です。\n<br/>\n<br/><b>値</b>\n<br/>\ndbinom は密度を、pbinom は分布関数を、qbinom は分位数関数を、rbinom は乱数を生成します。\n<br/>\nサイズが整数でない場合、NaN が返されます。\n<br/>\n結果の長さは rbinom の n によって決定され、他の関数の数値引数の長さの最大値です。\n<br/>\nn以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。\n   "
+  }
+}

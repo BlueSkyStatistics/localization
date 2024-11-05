@@ -1,0 +1,7 @@
+{
+  "help": {
+    "title": "交叉表",
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>描述</b></br>\n創建具有行、列和層變量的交叉表，並可選擇性地顯示以下內容<br/>\n預期計數<br/>\n行和列百分比<br/>\n未標準化、標準化和調整的殘差<br/>\n卡方檢驗與比值比、McNemar和Fisher統計量<br/>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 行變量\n</li>\n<li>\ny: 列變量\n</li>\n<li>\nlayers: 一個或多個層變量\n</li>\n<li>\nweights: 包含頻率權重的數值變量\n</li>\n<li>\ndatasetname: 從中選擇x、y和層（變量）的數據集名稱\n</li>\n<li>\nchisq: 如果為TRUE，則生成卡方表\n</li>\n<li>\nprop.r: 如果為TRUE，則生成行百分比\n</li>\n<li>\nprop.c: 如果為TRUE，則生成列百分比\n</li>\n<li>\nresid: 如果為TRUE，則生成未標準化的殘差\n</li>\n<li>\nsresid: 如果為TRUE，則生成標準化的殘差\n</li>\n<li>\nexpected: 如果為TRUE，則生成預期計數\n</li>\n<li>\nasresid: 如果為TRUE，則生成調整的殘差\n</li>\n</ul>\n<b>返回值</b></br>\n包含結果的列表\n<br/>\n<b>示例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>包</b></br>\ngmodels</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或通過創建R代碼塊運行以下命令help(CrossTable, package=gmodels)，方法是單擊輸出窗口中的+  \n    "
+  }
+}

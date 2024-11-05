@@ -1,0 +1,30 @@
+{
+  "title": "饼图",
+  "suppressLabels": "抑制所有计数和百分比的标签",
+  "optionsLabels": "标签选项",
+  "suppressThreshold": "抑制低于指定阈值百分比的计数和百分比标签",
+  "radius": "指定显示标签的半径（增加半径会将标签向外移动）",
+  "radiusNote": "注意：当选择显示同心圆的选项时，上述选项不适用。",
+  "navigation": "饼图",
+  "concentricCircles": "显示同心圆（仅在指定X轴变量时适用）",
+  "x": "X轴，指定因子变量",
+  "y": "Y变量，指定数值变量",
+  "fill": "填充，指定因子变量",
+  "alpha": "不透明度（0-1）",
+  "width": "宽度",
+  "rdgrp1": "填充比例",
+  "flip": "翻转轴",
+  "barcolor": "条形颜色（选择颜色后，单击控件外部以应用）",
+  "specify_a_title": "输入标题",
+  "x_title": "X轴标签",
+  "y_title": "Y轴标签",
+  "Facetrow": "分面行",
+  "Facetcolumn": "分面列",
+  "Facetwrap": "分面包裹",
+  "Facetscale": "分面比例",
+  "help": {
+    "title": "饼图",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>描述</b></br>\n            饼图（或圆形图）是一种圆形统计图形，分为多个切片以说明数值比例。在饼图中，每个切片的弧长（因此其中心角和面积）与其所代表的数量成比例。数量可以表示为计数或百分比。\n            可以通过指定因子变量来选择性地创建分面。您还可以选择性地指定主题，并为X轴和Y轴指定标题和标签。</br>\n            当您指定多个X变量时，我们为每个X变量创建一个单独的饼图。</br>\n            半径允许您控制标签的位置。半径为1时，标签位于饼图中心，半径为1.6时，标签位于饼图外部。</br>\n            外部浅灰色圆圈表示计数或总数。有关详细信息，请参见饼图底部的文本。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            #您可以为单个因子变量创建饼图，饼图将表示每个因子水平的计数。这里的因子变量将对应于填充<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"带填充的饼图：物种\") +\n\tylab(\"\") + \n\txlab(\"计数\")</br></br>\n            #您可以通过指定一个数值变量作为Y变量来创建饼图，并通过因子变量填充饼图的切片。饼图通过对每个因子变量水平的Y变量值求和来填充，见下面的示例<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #您可以指定X变量、Y变量和填充。切片为每个X变量的每个水平创建，并通过指定填充的变量的Y变量值的总和填充。<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            data: 默认数据集​\n            </li>\n            <li>\n            aes():    生成美学映射，描述数据中的变量如何映射到几何图形的视觉属性（美学）。​\n            </li>\n            <li>\n            x: （可选）因子/分类变量。条形的长度对应于每个因子变量的计数。​\n            </li>\n            <li>\n            Y: （可选）数值变量\n            </li>\n            <li>\n            fill: （可选）一个可选的因子/分类变量，用于对X中的水平计数进行分组（见上文）​\n            </li>\n            <li>\n            geom_bar(): 创建条形图，position =\"fill\"将条形填充为每个分组水平的百分比。​\n            </li>\n            <li>\n            Coor_polar(): 极坐标系统最常用于饼图，饼图是极坐标中的堆叠条形图。\n            </li>\n            <li>\n            Labs(): 更改轴标签和图例标题（这是可选的）​\n            </li>\n            <li>\n            facet_grid(): 在网格中布局面板（这是可选的）​\n            </li>\n            <li>\n            theme_calc(): 指定计算器主题（这是可选的）​\n            </li>\n            <li>\n            coord_flip(): 翻转轴（这是可选的）​\n            </li>\n            <li>\n            alpha: 控制不透明度，取值范围为0-1。1表示没有不透明度。\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>帮助</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            其他：单击R帮助按钮以获取详细的R帮助。您还可以输入help(labs)，help(geom_bar)，help(cord_polar)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)​            \n    "
+  }
+}

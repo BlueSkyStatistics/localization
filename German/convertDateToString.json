@@ -1,0 +1,16 @@
+{
+  "title": "Datum Variablen In Zeichenfolge Konvertieren",
+  "navigation": "Datum zu Zeichenfolge",
+  "label1": "Wählen Sie ein Suffix oder Präfix für konvertierte Variablen",
+  "suffix": "Suffix",
+  "prefix": "Präfix",
+  "prefixOrSuffix": "Geben Sie ein Präfix oder Suffix ein",
+  "Destination": "Wählen Sie Datumsvariablen aus, die in Zeichenfolgen konvertiert werden sollen",
+  "DateFormat": "Wählen Sie das Datumsformat aus, in das konvertiert werden soll",
+  "TimeZone": "Wählen Sie eine Zeitzone (Standard - nichts ausgewählt ist die lokale Zeitzone des PCs)",
+  "help": {
+    "title": "Datum In Zeichenfolge Konvertieren",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>Beschreibung</b></br>\nKonvertiert Datum (posixct und Datumsklasse) in Zeichenfolge - um das Format zu steuern, in dem das Datum angezeigt wird. Sie geben als Eingabe das Format an, in dem die Zeichenfolge generiert werden soll, d.h. Jahr/Monat/Tag oder Monat-Tag=Jahr usw.\nDie obige Funktion ruft intern strftime im Basis-Paket auf. Wir haben strftime erweitert, um mehrere Variablen zu unterstützen.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n​data: Der Name des Datensatzes\n</li>\n<li>\nvarNames: Die Variablen der Klasse posixct und Datumsklasse, die in Zeichenfolgen konvertiert werden müssen​\n</li>\n<li>\ndateFormat: Eine Zeichenfolge. Der Standard für die Formatmethoden ist \"%Y-%m-%d %H:%M:%S\", wenn ein Element eine Zeitkomponente hat, die nicht Mitternacht ist, und \"%Y-%m-%d\" andernfalls. Wenn options(\"digits.secs\") gesetzt ist, werden bis zu der angegebenen Anzahl von Ziffern für Sekunden ausgegeben\n</li>\n<li>\ntimezone: Eine Zeichenfolge, die die Zeitzone angibt, die für die Konvertierung verwendet werden soll. System-spezifisch (siehe as.POSIXlt), aber \"\" ist die aktuelle Zeitzone, und \"GMT\" ist UTC. Ungültige Werte werden in der Regel als UTC behandelt, auf einigen Plattformen mit einer Warnung.\n</li>\n<li>\nprefixOrSuffix: Gibt ein Präfix oder Suffix für die neuen Zeichenfolgenvariablen an. Nimmt entweder c(\"prefix\") oder c(\"suffix\"). Neue Variablen, die mit diesem Präfix/Suffix zum ursprünglichen Variablennamen erstellt werden.\n</li>\n</ul>\n<b>Pakete</b></br>\nbasis</br>\n<b>Hilfe</b></br>\nhilfe(strftime)    \n"
+  }
+}

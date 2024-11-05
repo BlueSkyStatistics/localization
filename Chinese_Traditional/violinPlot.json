@@ -1,0 +1,21 @@
+{
+  "title": "小提琴圖",
+  "navigation": "小提琴",
+  "x": "X 軸，指定一個因子變量",
+  "y": "Y 軸，指定一個或多個數值變量",
+  "fill": "填充，指定一個因子變量",
+  "alpha": "不透明度 (0-1)",
+  "flip": "翻轉軸",
+  "specify_a_title": "輸入標題",
+  "x_title": "X 軸標籤",
+  "y_title": "Y 軸標籤",
+  "Facetrow": "面板行",
+  "Facetcolumn": "面板列",
+  "Facetwrap": "面板包裝",
+  "Facetscale": "面板比例",
+  "help": {
+    "title": "小提琴圖",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>描述</b></br>\n            小提琴圖是連續分佈的緊湊顯示。它是 geom_boxplot() 和 geom_density() 的結合：小提琴圖是一個鏡像密度圖，以與箱形圖相同的方式顯示。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"小提琴圖表 ...\")\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集​\n            </li>\n            <li>\n            x: 一個因子變量​，將下面的 y 變量分為組。\n            </li>\n            <li>\n            y: 用於生成小提琴圖的數值變量\n            </li>\n            <li>\n            fill: 一個可選的因子/類別變量，用於進一步分組現有組。每個子組將以不同顏色顯示。​\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變量如何映射到幾何圖形的視覺屬性（美學）。​\n            </li>\n            <li>\n            geom_violin(): 創建小提琴圖。\n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）​\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>幫助</b></br>\n            其他：點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(geom_violin)，help(labs)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)\n    "
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Subset nach Position",
+  "navigation": "Subset Nach Position",
+  "newdatasetlabel": "Neuen Datensatznamen angeben",
+  "sortbyvarslabel": "Variablen, nach denen zuerst (aufsteigend) sortiert werden soll",
+  "groupbyvarslabel": "Gruppen, innerhalb derer unterteilt werden soll",
+  "subsettypelabel": "Subset-Typ",
+  "firstnlabel": "Erste N Zeilen",
+  "lastnlabel": "Letzte N Zeilen",
+  "lowestnlabel": "Zeilen mit den niedrigsten N Werten für eine Variable",
+  "highestnlabel": "Zeilen mit den höchsten N Werten für eine Variable",
+  "firstproplabel": "Erster Anteil der Zeilen",
+  "lastproplabel": "Letzter Anteil der Zeilen",
+  "lowestproplabel": "Zeilen innerhalb des niedrigsten Perzentils für eine Variable",
+  "highestproplabel": "Zeilen innerhalb des höchsten Perzentils für eine Variable",
+  "nlabel": "N (positiv behält, negativ entfernt)",
+  "proplabel": "Anteil (positiv behält, negativ entfernt)",
+  "varlabel": "Variable",
+  "tieslabel": "Eingeschlossene gebundene Werte",
+  "rownumlabel": "Zeilennummern angeben",
+  "rownumboxlabel": "Nummern oder Bereiche durch Kommas getrennt (z.B. 1,3,5 oder 20:30 oder seq(2,10,by=2), positiv behält, negativ entfernt)",
+  "help": {
+    "title": "Subset nach Position",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nDies unterteilt einen Datensatz nach Zeilenposition.\n<br/><br/>\n<b>Neuen Datensatznamen angeben:</b> Datensatzname, in dem die unterteilten Daten gespeichert werden.\n<br/><br/>\n<b>Variablen, nach denen zuerst sortiert werden soll:</b> Variablen, die verwendet werden, um die Zeilen vor der Unterteilung zu sortieren. Dies beeinflusst nur Optionen, die die Anzahl der Zeilen auswählen, z.B. \nErste/Letzte N Zeilen, Erster/Letzter Anteil der Zeilen und Zeilennummern angeben. Es wird immer in aufsteigender Reihenfolge sein.\n<br/><br/>\n<b>Gruppen, innerhalb derer unterteilt werden soll:</b> Wenn keine Variablen angegeben werden, wird nach der Zeilenposition des gesamten Datensatzes unterteilt. Wenn Variablen angegeben werden, wird nach der Zeilenposition\ninnerhalb von Gruppen unterteilt, die durch alle Kombinationen von Werten für die angegebenen Variablen definiert sind.\n<br/><br/>\n<b>Subset-Typ</b>\n<br/><br/>\n<b>Erste N Zeilen:</b> Behalten Sie die ersten N Zeilen des Datensatzes insgesamt oder innerhalb von Gruppen.\n<br/><br/>\n<b>Letzte N Zeilen:</b> Behalten Sie die letzten N Zeilen des Datensatzes insgesamt oder innerhalb von Gruppen.\n<br/><br/>\n<b>Zeilen mit den niedrigsten N Werten für eine Variable:</b> Behalten Sie die Zeilen, die die niedrigsten geordneten Werte für eine angegebene Variable insgesamt oder innerhalb von Gruppen haben. Zum Beispiel würde die Angabe von 10 \n die Zeilen mit den niedrigsten 10 Werten für eine Variable behalten.\n<br/><br/>\n<b>Zeilen mit den höchsten N Werten für eine Variable:</b> Behalten Sie die Zeilen, die die höchsten geordneten Werte für eine angegebene Variable insgesamt oder innerhalb von Gruppen haben. Zum Beispiel würde die Angabe von 10 \n die Zeilen mit den höchsten 10 Werten für eine Variable behalten.\n<br/><br/>\n<b>Erster Anteil der Zeilen:</b> Behalten Sie die Zeilen im oberen Anteil des Datensatzes insgesamt oder innerhalb von Gruppen. Zum Beispiel würde die Angabe von .10 die obersten 10% des Datensatzes \n entsprechend der Gesamtzahl der Zeilen behalten.\n<br/><br/> \n<b>Letzter Anteil der Zeilen:</b> Behalten Sie die Zeilen im unteren Anteil des Datensatzes insgesamt oder innerhalb von Gruppen. Zum Beispiel würde die Angabe von .10 die unteren 10% des Datensatzes \n entsprechend der Gesamtzahl der Zeilen behalten.\n<br/><br/>\n<b>Zeilen innerhalb des niedrigsten Perzentils für eine Variable:</b> Behalten Sie die Zeilen im niedrigsten Perzentil für eine angegebene Variable, insgesamt oder innerhalb von Gruppen. Zum Beispiel würde die Angabe von .10 \n die niedrigsten 10. Perzentil für eine Variable (Minimum bis zum 10. Perzentil) behalten.\n<br/><br/>\n<b>Zeilen innerhalb des höchsten Perzentils für eine Variable:</b> Behalten Sie die Zeilen im höchsten Perzentil für eine angegebene Variable, insgesamt oder innerhalb von Gruppen. Zum Beispiel würde die Angabe von .10 \n die höchsten 10. Perzentil für eine Variable (90. Perzentil bis zum Maximum) behalten.\n<br/><br/>\n<b>Zeilennummern angeben:</b> Behalten Sie die genau angegebenen nummerierten Zeilen. Zum Beispiel würde die Angabe von 1,3,5 die erste, dritte und fünfte Zeile behalten. Die Angabe von 20:30 würde die Zeilen 20 \n bis 30 behalten. Die Angabe von seq(2,10,by=2) würde die geraden nummerierten Zeilen bis zur 10. Zeile behalten.\n<br/><br/>\n<b>Eingeschlossene gebundene Werte:</b> Gibt an, ob gebundene Werte einbezogen werden sollen oder nicht. Zum Beispiel, wenn Sie die Zeilen für die niedrigsten 10 Werte einer Variablen möchten und der 10. niedrigste \n Wert mehr als einmal erscheint, wird das Einbeziehen der gebundenen Werte alle Zeilen behalten, die dem duplizierten Wert entsprechen. \n<br/><br/>\nBeachten Sie, dass die Angabe negativer Werte für N oder den Anteil die entsprechenden Zeilen aus dem Datensatz entfernt. Zum Beispiel würde die Angabe von -10 für die ersten N Zeilen die ersten 10 Zeilen entfernen.  Die Angabe von -.10 für den ersten Anteil der Zeilen würde die ersten 10% der Zeilen entfernen.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> dplyr\n\t\t\t"
+  }
+}

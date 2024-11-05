@@ -1,0 +1,12 @@
+{
+  "title": "Exemplu de Up Sampling",
+  "navigation": "Exemplu, Exemplu de Up Sampling",
+  "downsample": "Introduceți numele setului de date",
+  "seed": "Setați seed-ul",
+  "dependent": "Variabila pentru up sampling",
+  "help": {
+    "title": "Exemplu de Up Sampling",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descriere</b></br>\nUp-Sampling a datelor dezechilibrate. upSample eșantionează cu înlocuire pentru a face distribuțiile claselor egale\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Clasă\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: o matrice sau un cadru de date cu variabilele predictori\n</li>\n<li>\ny: o variabilă factor cu apartenențele la clasă\n</li>\n<li>\nlist: ar trebui funcția să returneze list(x, y) sau să lege x și y împreună? Dacă este TRUE, ieșirea va fi convertită într-un cadru de date.\n</li>\n<li>\nyname: dacă list = FALSE, o etichetă pentru coloana de clasă\n</li>\n</ul>\n<b>Detalii</b></br>\nSe folosește eșantionare aleatoare simplă pentru a reduce dimensiunea claselor majoritare. Rețineți că datele clasei minoritare rămân intacte și că eșantioanele vor fi reordonate în versiunea redusă.\nPentru up-sampling, toate datele originale rămân intacte și eșantioane suplimentare sunt adăugate la clasele minoritare cu înlocuire.\n<b>Valoare</b><br/>\nFie un cadru de date sau o listă cu elementele x și y.<br/>\n<b>Exemple</b><br/>\n<code> \n## Un exemplu ridicol...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Pachet</b></br>\ncaret</br>\n<b>Ajutor</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

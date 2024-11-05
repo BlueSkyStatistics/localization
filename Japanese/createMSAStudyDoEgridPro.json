@@ -1,0 +1,30 @@
+{
+  "title": "MSAゲージ研究のための実験テーブルを作成する",
+  "navigation": "MSA研究の設計",
+  "datasetname": "MSAゲージ研究テーブル名",
+  "label1": "部品の詳細",
+  "label2": "オペレーターの詳細",
+  "factor1": "部品変数の名前（例：デフォルトとしての部品）",
+  "numOfFactorLevels1": "部品の数",
+  "factorLevels1": "値を自動生成するには空白のままにするか、値を指定します - 例：-1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "自動生成する場合は、任意のプレフィックスを指定します。空白の場合、1,2,3,..として値が作成されます",
+  "factor2": "オペレーター変数の名前（例：デフォルトとしてのオペレーター）",
+  "numOfFactorLevels2": "オペレーターの数",
+  "factorLevels2": "値を自動生成するには空白のままにするか、値を指定します - 例：-1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "自動生成する場合は、任意のプレフィックスを指定します。空白の場合、1,2,3,..として値が作成されます",
+  "numOfBlocks": "ブロックの数",
+  "replicationVarName": "空白のままにしない場合、複製が1より大きい場合の複製反復変数の名前",
+  "replications": "複製",
+  "repeatOnlyChk": "繰り返しのみ（真の複製の代わりに - 推奨されません）",
+  "randomizationChk": "実行をランダム化する",
+  "selectRandomSeedRad": "自動生成されたランダムシード（毎回ユニーク）",
+  "selectFixedRandomSeedRad": "以下のランダムシードを手動で変更するか、表示されたものを選択します",
+  "lbl1": "ランダム化シード値を変更する必要はないかもしれません",
+  "randomseeds": "ランダム化のためのシード",
+  "sortByOperatorChk": "各複製内でオペレーターによってソートする",
+  "help": {
+    "title": "MSAゲージ研究のための実験テーブルを自動生成する",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t指定されたパラメータに基づいて、部品とオペレーターの詳細を使用して実験実行を設定するためのMSA研究テーブルを自動生成します。\n\t\t\t\t部品とオペレーターに非数値の値を使用する場合は、例として1,-1,'name1',0,'string2'のように単一引用符内で指定します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t実験実行の詳細が自動生成されると、実行テーブルがデータグリッドUIに表示されます。\n\t\t\t\t実行テーブルは保存できます（またはファイルメニューから「名前を付けて保存」）し、実験の設定に使用するためのExcelファイルを作成します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

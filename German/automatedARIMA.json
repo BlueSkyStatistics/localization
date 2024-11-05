@@ -1,0 +1,32 @@
+{
+  "title": "Automatisiertes ARIMA",
+  "navigation": "Automatisiertes ARIMA",
+  "destination": "Variable zur Vorhersage",
+  "firstObservation": "Zeitpunkt der ersten Beobachtung z.B.1: geben Sie 1961,1 für Januar 1961 ein, z.B.2: geben Sie 1961,3 für das 3. Quartal 1961 ein, z.B.3: geben Sie 1 für eine kontinuierliche Serie ein",
+  "frequency": "Anzahl der Beobachtungen pro Zeiteinheit z.B.1: geben Sie 12 für eine Beobachtung pro Monat eines Jahres ein, z.B. 2: geben Sie 4 für eine Beobachtung pro Quartal ein, z.B. 3: geben Sie 1 für eine kontinuierliche Serie ein.",
+  "criteria": "Modellkriterien",
+  "label1": "Diagramme",
+  "plotSeries": "Serien plotten",
+  "yaxisLabel": "Y-Achsenbeschriftung",
+  "mainTitle": "Haupttitel",
+  "label2": "Optionen für angepasste Werte",
+  "saveFitted": "Angepasste Werte speichern",
+  "fittedValsDatasetName": "Geben Sie den Datensatznamen an, um angepasste Werte zu speichern",
+  "oriVsFitted": "Original vs. Angepasst plotten",
+  "plotResiduals": "Residuen plotten",
+  "label3": "Vorhersage mit dem Modell",
+  "predict": "Vorhersagen mit dem Modell erstellen",
+  "periodToPredict": "Geben Sie die Anzahl der Intervalle an, die vorhergesagt werden sollen",
+  "confInterval": "Geben Sie das Konfidenzintervall in Prozent an z.B. 95 für 95%",
+  "savePredictedVals": "Vorhergesagte Werte speichern",
+  "predictedValsDatasetName": "Geben Sie den Datensatznamen an, um vorhergesagte Werte zu speichern",
+  "plotPredicted": "Vorhergesagte Werte plotten",
+  "correlogram": "Korrelogramm generieren",
+  "maxlag": "Maximale Verzögerung eingeben",
+  "Boxtest": "Ljung-Box-Test",
+  "help": {
+    "title": "Automatisiertes ARIMA",
+    "r_help": "hilfe(auto.arima, paket=forecast)",
+    "body": "\n            <b>Beschreibung</b></br>\nGibt das beste ARIMA-Modell gemäß AIC, AICc oder BIC-Wert zurück. Die Funktion führt eine Suche über mögliche Modelle innerhalb der angegebenen Ordnungsbeschränkungen durch. Intern wird auto.arima im Prognosepaket aufgerufen\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: ausgewählte Variablen zum Erstellen eines automatischen ARIMA-Modells.\n</li>\n<li>\nstart: Zeitpunkt der ersten Beobachtung sollte im Format Jahr,Monat oder Jahr,Quartal eingegeben werden z.B. (wenn Ihre Daten in Monaten organisiert sind, dann 1992,1 für Jan 1992 oder wenn Ihre Daten in Quartalen organisiert sind, dann bezieht sich 1992,1 auf das erste Quartal von 1992.\n</li>\n<li>\nfrequency: Anzahl der Beobachtungen in der Zeiteinheit. Beispiel: für monatlich gibt es 12 Beobachtungen in einem Jahr. Für vierteljährlich gibt es 4 Beobachtungen in einem Jahr.\n</li>\n<li>\nic: Informationskriterium, das bei der Modellauswahl verwendet werden soll. Es muss eines von \"aic\", \"aicc\" oder \"bic\" sein\n</li>\n<li>\nplotSeries: wenn TRUE, wird auch ein Zeitreihendiagramm generiert.\n</li>\n<li>\nplotResiduals: wenn TRUE, werden auch die Residuen geplottet.\n</li>\n<li>\npredict: wenn TRUE, werden auch die vorhergesagten Werte generiert.\n</li>\n<li>\nsavePredictedVals: vorhergesagte Werte werden gespeichert.\n</li>\n<li>\nPlotPredictedValues: vorhergesagte Werte werden ebenfalls geplottet.\n</li>\n<li>\ncorrelogram: wenn TRUE, wird ein Korrelogramm generiert.\n</li>\n<li>\nmain: Haupttitel des Diagramms\n</li>\n<li>\nylab: Titel für die Y-Achse\n</li>\n<li>\ndataset: der Name des Datensatzes, aus dem die Variablen ausgewählt wurden.\n</li>\n</ul>\n<b>Details</b></br>\nDie Standardargumente sind für die schnelle Schätzung von Modellen für viele Zeitreihen ausgelegt. Wenn Sie nur eine Zeitreihe analysieren und sich etwas mehr Zeit nehmen können, wird empfohlen, stepwise=FALSE und approximation=FALSE einzustellen.</br>\nDie nicht-schrittweise Auswahl kann langsam sein, insbesondere bei saisonalen Daten. Der schrittweise Algorithmus, der in Hyndman & Khandakar (2008) beschrieben ist, wird verwendet, es sei denn, die Standardmethode zur Auswahl saisonaler Differenzen basiert jetzt auf einer Schätzung der saisonalen Stärke (Wang, Smith & Hyndman, 2006) anstelle des Canova-Hansen-Tests. Es gibt auch einige andere geringfügige Variationen des Algorithmus, der in Hyndman und Khandakar (2008) beschrieben ist.</br>\n<b>Wert</b><br/>\nEine Liste der Klasse \"Arima\" mit Komponenten:<br/>\ncoef: ein Vektor von AR-, MA- und Regressionskoeffizienten, die mit der coef-Methode extrahiert werden können.<br/>\nsigma2: die MLE der Innovationsvarianz.<br/>\nvar.coef: die geschätzte Varianzmatrix der Koeffizienten coef, die mit der vcov-Methode extrahiert werden kann.<br/>\nloglik: die maximierte Log-Likelihood (der differenzierten Daten) oder die verwendete Näherung.<br/>\narma: Eine kompakte Form der Spezifikation, als Vektor, der die Anzahl der AR-, MA-, saisonalen AR- und saisonalen MA-Koeffizienten sowie die Periode und die Anzahl der nicht-saisonalen und saisonalen Differenzen angibt.<br/>\naic: der AIC-Wert, der der Log-Likelihood entspricht. Nur gültig für die Methode = \"ML\"-Anpassungen.<br/>\nresiduals: die angepassten Innovationen.<br/>\nseries: der Name der Serie x.<br/>\ncode: der Konvergenzwert, der von optim zurückgegeben wird.<br/>\nn.cond\t: die Anzahl der anfänglichen Beobachtungen, die nicht in die Anpassung einbezogen wurden.<br/>\nnobs: die Anzahl der \"verwendeten\" Beobachtungen für die Anpassung, die auch über nobs() extrahiert werden kann und von BIC verwendet wird.<br/>\nmodel: Eine Liste, die den Kalman-Filter darstellt, der in der Anpassung verwendet wird. Siehe KalmanLike.<br/>\n<b>Pakete</b></br>\nprognose</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: hilfe(auto.arima, paket=forecast)\n\t\t\t"
+  }
+}

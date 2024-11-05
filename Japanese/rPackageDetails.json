@@ -1,0 +1,10 @@
+{
+  "title": "Rパッケージの詳細",
+  "navigation": "パッケージの詳細",
+  "packageName": "インストールされたRパッケージを選択",
+  "help": {
+    "title": "Rパッケージの詳細",
+    "r_help": "help(packageDescription, package='utils')",
+    "body": "\n<b>説明</b></br>\n選択したパッケージの説明を表示します\n<br/>\n<b>使用法</b>\n<br/>\n<code> \npackageDescription(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\npkg: パッケージ名を含む文字列。\n</li>\n<li>\nlib.loc: Rライブラリのディレクトリ名の文字列ベクトル、またはNULL。NULLのデフォルト値は現在知られているすべてのライブラリに対応します。デフォルトが使用される場合、読み込まれたパッケージと名前空間がライブラリの前に検索されます。\n</li>\n<li>\nfields: 戻すフィールドのタグを指定する文字列ベクトル（ファイルに他のフィールドが存在する場合は無視されます）。\n</li>\n<li>\ndrop: TRUEで、fieldsの長さが1の場合、対応するフィールドの値を持つ単一の文字列が\"packageDescription\"クラスのオブジェクトの代わりに返されます。\n</li>\n</ul>\n<b>詳細</b></br>\nパッケージの説明</br>\n<b>例</b><br/>\n<code> \npackageDescription(\"stats\")\n</code> <br/>\n<b>パッケージ</b></br>\nutils</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(packageDescription, package='utils')\n                "
+  }
+}

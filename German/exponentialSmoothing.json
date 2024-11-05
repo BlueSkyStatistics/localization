@@ -1,0 +1,31 @@
+{
+  "title": "Exponentielle Glättung",
+  "navigation": "Exponentielle Glättung",
+  "destination": "Variablen zur Vorhersage",
+  "firstObservation": "Zeitpunkt der ersten Beobachtung z.B.1: geben Sie 1961,1 für Januar 1961 ein, z.B.2: geben Sie 1961,3 für das 3. Quartal 1961 ein, z.B.3: geben Sie 1 für eine kontinuierliche Serie ein",
+  "frequency": "Anzahl der Beobachtungen pro Zeiteinheit z.B.1: geben Sie 12 für eine Beobachtung pro Monat eines Jahres ein, z.B. 2: geben Sie 4 für eine Beobachtung pro Quartal ein, z.B. 3: geben Sie 1 für eine kontinuierliche Serie ein.",
+  "label1": "Diagramme",
+  "plotSeries": "Diagrammserie",
+  "yaxisLabel": "Y-Achsenbeschriftung",
+  "mainTitle": "Haupttitel",
+  "label2": "Optionen für angepasste Werte",
+  "saveFitted": "Angepasste Werte speichern",
+  "fittedValsDatasetName": "Geben Sie den Datensatznamen an, um angepasste Werte zu speichern",
+  "oriVsFitted": "Original vs. Angepasst darstellen",
+  "plotResiduals": "Residuen darstellen",
+  "label3": "Vorhersage mit dem Modell",
+  "predict": "Vorhersagen mit dem Modell erstellen",
+  "periodToPredict": "Geben Sie die Anzahl der Intervalle an, die vorhergesagt werden sollen",
+  "confInterval": "Geben Sie das Konfidenzintervall in Prozent an z.B. 95 für 95%",
+  "savePredictedVals": "Vorhergesagte Werte speichern",
+  "predictedValsDatasetName": "Geben Sie den Datensatznamen an, um vorhergesagte Werte zu speichern",
+  "plotPredicted": "Vorhergesagte Werte darstellen",
+  "correlogram": "Korrelogramm generieren",
+  "maxlag": "Maximale Verzögerung eingeben",
+  "Boxtest": "Ljung-Box-Test",
+  "help": {
+    "title": "Exponentielle Glättung",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>Beschreibung</b></br>\nBSkyHoltWintersSeasonal ist eine Wrapper-Funktion für HoltWinters aus dem Paket stats, die die Holt-Winters-Filterung einer gegebenen Zeitreihe berechnet. Unbekannte Parameter werden durch Minimierung des quadratischen Vorhersagefehlers bestimmt. Intern wird HoltWinters mit dem Gamma-Parameter für die saisonale Komponente auf FALSE gesetzt, der Beta-Parameter des Holt-Winters-Filters wird auf FALSE gesetzt, um exponentielle Glättung durchzuführen, und saisonal = \"None\".<br/> \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArgumente\n<ul>\n<li>\nvars: Wählen Sie eine Variable aus, um ein Modell zu erstellen\n</li>\n<li>\nstart: Zeitpunkt der ersten Beobachtung sollte im Format Jahr,Monat oder Jahr,Quartal eingegeben werden z.B. (wenn Ihre Daten in Monaten organisiert sind, dann 1992,1 für Jan 1992 oder wenn Ihre Daten in Quartalen organisiert sind, dann bezieht sich 1992,1 auf das erste Quartal von 1992.\n</li>\n<li>\nfrequency: Anzahl der Beobachtungen in der Zeiteinheit. Beispiel: für monatlich gibt es 12 Beobachtungen in einem Jahr. Für vierteljährlich gibt es 4 Beobachtungen in einem Jahr.\n</li>\n<li>\nexponential: Bestimmt, ob eine exponentielle Glättung durchgeführt wird, Wert auf TRUE gesetzt\n</li>\n<li>\nseasonal: ein Zeichenstring \"None\" für exponentielle Glättung. \n</li>\n<li>\nplotSeries: wenn TRUE, wird auch ein Zeitreihendiagramm generiert.\n</li>\n<li>\nsaveFitted: wenn TRUE, werden die angepassten Werte gespeichert.\n</li>\n<li>\nplotOriginalandForecast: Original- und prognostizierte Serien darstellen\n</li>\n<li>\npredict: wenn TRUE, werden auch die vorhergesagten Werte generiert.\n</li>\n<li>\nsavePredictedVals: vorhergesagte Werte werden gespeichert.\n</li>\n<li>\nplotPredictedValues: vorhergesagte Werte werden ebenfalls dargestellt.\n</li>\n<li>\ncorrelogram: wenn TRUE, wird ein Korrelogramm generiert.\n</li>\n<li>\nmain: Haupttitel des Diagramms\n</li>\n<li>\nylab: Titel für die Y-Achse\n</li>\n<li>\ndataset: der Name des Datensatzes, aus dem die Variablen ausgewählt wurden\n</li>\n</ul>\n<b>Wert</b><br/>\nEin Objekt der Klasse \"HoltWinters\", eine Liste mit Komponenten:<br/>\nfitted: Eine multiple Zeitreihe mit einer Spalte für die gefilterte Serie sowie für die Ebene, den Trend und die saisonalen Komponenten, die zeitgleich geschätzt werden (d.h. zu Zeitpunkt t und nicht am Ende der Serie).<br/>\nx: Die ursprüngliche Serie<br/>\nalpha: alpha, das für die Filterung verwendet wird<br/>\nbeta: beta, das für die Filterung verwendet wird<br/>\ngamma: gamma, das für die Filterung verwendet wird<br/>\ncoefficients: Ein Vektor mit benannten Komponenten a, b, s1, ..., sp, der die geschätzten Werte für die Ebene, den Trend und die saisonalen Komponenten enthält<br/>\nseasonal: Der angegebene saisonale Parameter<br/>\nSSE: Die endgültige Summe der quadrierten Fehler, die bei der Optimierung erreicht wurde<br/>\ncall: Der verwendete Aufruf<br/>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: help(HoltWinters , package=stats)\n\t\t\t"
+  }
+}

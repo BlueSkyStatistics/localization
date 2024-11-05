@@ -1,0 +1,15 @@
+{
+  "title": "データの集約",
+  "navigation": "集約",
+  "description": "1つ以上の数値（スケール）変数を1つ以上の因子変数で集約し、新しい集約データセットを作成します。数値変数については、以下を計算します：\n        平均、中央値、合計、標準偏差、異なる値の数、最大、最小、分散。\n        また、集約データセット内のカウントも計算します。",
+  "label1": "集約オプション",
+  "upperdesc": "集約される変数に適用したい関数を選択してください",
+  "datasetname": "集約データセットの名前を入力してください",
+  "showResultsinOutput": "出力ウィンドウに結果を表示",
+  "groupBy": "グループ化（因子または日付の型の変数）",
+  "help": {
+    "title": "データセットへの集約",
+    "r_help": "help(group_by, package=dplyr)",
+    "body": "\n            <b>説明</b></br>\n1つ以上の数値（スケール）変数を1つ以上の因子変数で集約し、新しい集約データセットを作成します。数値変数については、以下を計算します：\n平均、中央値、合計、標準偏差、異なる値の数、最大、最小、分散。\n集約データセット内のカウントも計算します。\n<br/>\n<b>使用法</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## データセットを更新</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>引数</b>\n <ul>\n   <li>\nvar1: グループ化する因子\n</li>\n<li>\nvar2, var3: 集約する変数\n</li>\n<li>\nnewvarmean: 集約データセット内のvar1でグループ化されたvar2の平均\n</li>\n<li>\n​newvarmedian: 集約データセット内のvar1でグループ化されたvar3の中央値\n</li>\n</ul>\n            "
+  }
+}

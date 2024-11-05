@@ -1,0 +1,32 @@
+{
+  "title": "劑量反應曲線模型",
+  "navigation": "劑量反應曲線",
+  "modelname": "DRC 模型名稱",
+  "DependentVarformula": "反應變數",
+  "IndependentVarsformula": "劑量、濃度、酶等",
+  "drEquation": "從下拉選單中選擇一個劑量反應方程式。預設為 LL.4（四參數對數-邏輯斯模型）",
+  "drDataType": "如有需要，根據所分析的數據類型從下拉選單中選擇",
+  "ED": "有效劑量反應的估計。預設為 50%。您可以指定多個水平（例如 10、50、90）",
+  "curveid": "包含數據分組的變數",
+  "weights": "用作權重 (Y) 的變數，具有一個幂值",
+  "PowerKweight": "幂：僅對 Y 選擇 (-1)，對 1/Y 選擇 1，對 1/(Y^2) 選擇 2，.. 1/(Y^5) 選擇 5，..",
+  "covMatrixChk": "參數的估計協方差矩陣",
+  "resPlotChk": "繪製殘差",
+  "resNormalityTestChk": "模型殘差的正態性檢驗",
+  "modelConstraintLabel": "(可選) 參數估計的各種模型約束",
+  "pmodels": "設置參數的起始值以指導模型優化/收斂，例如 LL.4 data.frame(除草劑,1,1,除草劑) 或 LL.3 list(~group, ~1, ~group)",
+  "paramConstraints": "將一個或多個參數固定為常數值，例如 NA、0.5，NA 將 LL.3 的上限固定為 0.5，這是一個三參數函數",
+  "paramConstraintsLower": "設置下限約束，例如 Brain-Cousens 模型 BC.5，約束 b>3 為 (3, -Inf, -Inf, -Inf, -Inf)",
+  "paramConstraintsUpper": "設置上限約束，例如 Log Logistic LL.4，約束為 (3, Inf, Inf, 2)",
+  "dosePotencyChk": "相對劑量效能的比較",
+  "logScaleAxis": "X 軸預設以對數刻度繪製。從下拉選單中選擇空選項以原始刻度繪製",
+  "EDpointValueChk": "在圖上繪製 ED 點旁邊的值",
+  "doseInLogScaleChk": "檢查數據集中劑量/濃度是否已經是對數值",
+  "ModelSelectTestChk": "執行模型擬合測試以與一個或多個模型進行比較",
+  "modelSelectTest": "選擇（點擊/取消點擊）一個或多個模型以比較擬合",
+  "help": {
+    "title": "劑量反應曲線模型 (DRC)",
+    "r_help": "help(drm, package ='drc')",
+    "body": "\n            <b>描述</b></br> \n\t\t\t通過一系列靈活和多功能的模型擬合及擬合後分析函數來分析劑量反應數據，以估計參數與各種劑量反應方程式函數\n            <br/>\n\t\t\t<br/>\n\t\t\t根據從下拉列表中選擇的劑量反應方程式，DRC 模型中出現的參數名稱\n\t\t\t<br/>\t\t\t\n\t\t\t斜率 (b)\n\t\t\t<br/>\n\t\t\t下漸近線 (c)\n\t\t\t<br/>\n\t\t\t上漸近線 (d)\n\t\t\t<br/>\n\t\t\tED50 (e)\n\t\t\t<br/>\n\t\t\t額外斜率 (f) \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對於 mm.2 或 mm.3 模型（米氏-門滕模型，具有 2 或 3 個參數）\n\t\t\t<br/>\t\t\t\n\t\t\tVmax (d) 最大反應速率\n\t\t\t<br/>\n\t\t\tKm (e) 米氏常數\n\t\t\t<br/>\n\t\t\th (c) 希爾係數\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t請查看以下 R 頁面以獲取詳細信息 \n\t\t\t<br/>\n\t\t\thelp(package ='drc') \n\t\t\t<br/>\n\t\t\thelp(drm, package ='drc')\n\t\t\t<br/>\n\t\t\thelp(getMeanFunctions, package ='drc') \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t除了 R help(drm, package ='drc') 的一些很好的參考材料\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t五個劑量反應建模的示例\n\t\t\t<br/>\t\n\t\t\t<a href=\"https://doi.org/10.1371/journal.pone.0146021.s001\">https://doi.org/10.1371/journal.pone.0146021.s001</a>\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tDRC 包的作者撰寫的 R 中劑量反應曲線的草稿手冊\n\t\t\t<br/>\t\n\t\t\t<a href=\"https://www.researchgate.net/profile/Alan-Reynolds-4/post/dose_response_curves_is_better_to_create_different_models_or_just_one/attachment/59d63b8c79197b8077998961/AS%3A411294889988097%401475071751844/download/DraftDrcManual.pdf\">\n\t\t\thttps://www.researchgate.net/profile/Alan-Reynolds-4/post/dose_response_curves_is_better_to_create_different_models_or_just_one/attachment/59d63b8c79197b8077998961/AS%3A411294889988097%401475071751844/download/DraftDrcManual.pdf\n\t\t\t</a>\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tDRC 包的完整在線手冊\n\t\t\t<a href=\"https://rdrr.io/cran/drc/man/\">\n\t\t\thttps://rdrr.io/cran/drc/man/\n\t\t\t</a>\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t您可以嘗試這個對話框\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\t示例 1\n\t\t\t</br>\n\t\t\t從加載數據集菜單中加載 S.alba 數據集（選擇 drc 作為包）\t\t\t\n\t\t\t<br/>\n\t\t\t選擇（拖動）乾物質作為反應變數\n\t\t\t<br/>\n\t\t\t選擇（拖動）劑量作為劑量變數，並（可選）選擇除草劑作為分組數據字段\n\t\t\t<br/>\n\t\t\t也可以選擇檢查/點擊“執行模型擬合測試以與一個或多個模型進行比較”，以比較幾個替代模型的擬合\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t示例 2\n\t\t\t</br>\n\t\t\t從加載數據集菜單中加載 earthworms 數據集（選擇 drc 作為包）\n\t\t\t<br/>\n\t\t\t選擇（拖動）數量，然後拖動總數到反應字段。手動輸入 / 以在反應字段中創建表達式作為數量/總數\n\t\t\t<br/>\n\t\t\t選擇（拖動）劑量作為劑量變數\n\t\t\t<br/>\n\t\t\t從下拉選單中選擇“選擇一個劑量反應方程式..” LL.3 而不是預設的 LL.4\n\t\t\t<br/>\n\t\t\t從下拉選單中選擇二項式而不是預設的空值\n\t\t\t<br/>\n\t\t\t在有效劑量反應估計字段中輸入 50,10, 90，以查看模型圖上的 10%、50%、90% 的劑量反應\n\t\t\t<br/>\n\t\t\t在對話框中將其他所有內容保留為預設。執行對話框 \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t下拉列表中可用的劑量反應方程式函數的描述\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（ED50 作為參數），下限為 0，上限為 1\n\t\t\t（2 個參數）\n\t\t\tLL.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（ED50 作為參數），下限為 0\n\t\t\t（3 個參數）\n\t\t\tLL.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（ED50 作為參數），上限為 1\n\t\t\t（3 個參數）\n\t\t\tLL.3u\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（ED50 作為參數）\n\t\t\t（4 個參數）\n\t\t\tLL.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t廣義對數-邏輯斯（ED50 作為參數）\n\t\t\t（5 個參數）\n\t\t\tLL.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t威布爾（類型 1），下限為 0，上限為 1\n\t\t\t（2 個參數）\n\t\t\tW1.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t威布爾（類型 1），下限為 0\n\t\t\t（3 個參數）\n\t\t\tW1.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t威布爾（類型 1）\n\t\t\t（4 個參數）\n\t\t\tW1.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t威布爾（類型 2），下限為 0，上限為 1\n\t\t\t（2 個參數）\n\t\t\tW2.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t威布爾（類型 2），下限為 0\n\t\t\t（3 個參數）\n\t\t\tW2.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t威布爾（類型 2）\n\t\t\t（4 個參數）\n\t\t\tW2.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t腦-庫森斯（激素作用），下限固定為 0\n\t\t\t（4 個參數）\n\t\t\tBC.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t腦-庫森斯（激素作用）\n\t\t\t（5 個參數）\n\t\t\tBC.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（log(ED50) 作為參數），下限為 0，上限為 1\n\t\t\t（2 個參數）\n\t\t\tLL2.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（log(ED50) 作為參數），下限為 0\n\t\t\t（3 個參數）\n\t\t\tLL2.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（log(ED50) 作為參數），上限為 1\n\t\t\t（3 個參數）\n\t\t\tLL2.3u\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t對數-邏輯斯（log(ED50) 作為參數）\n\t\t\t（4 個參數）\n\t\t\tLL2.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t廣義對數-邏輯斯（log(ED50) 作為參數）\n\t\t\t（5 個參數）\n\t\t\tLL2.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t漸近回歸，下限為 0\n\t\t\t（2 個參數）\n\t\t\tAR.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t移位漸近回歸\n\t\t\t（3 個參數）\n\t\t\tAR.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t米氏-門滕\n\t\t\t（2 個參數）\n\t\t\tMM.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t移位米氏-門滕\n\t\t\t（3 個參數）\n\t\t\tMM.3\t\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t指數 \n\t\t\t（2 個參數）\n\t\t\tEXD.2  （AR.2 也可以使用）\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t指數 \n\t\t\t（3 個參數）\n\t\t\tEXD.3  （AR.3 也可以使用）\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t指數 \n\t\t\t（3 個參數）\n\t\t\tEXD.3  （AR.3 也可以使用）\n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

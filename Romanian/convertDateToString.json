@@ -1,0 +1,16 @@
+{
+  "title": "Convertiți variabilele de dată în caracter",
+  "navigation": "Dată în caracter",
+  "label1": "Selectați un sufix sau un prefix pentru variabilele convertite",
+  "suffix": "Sufix",
+  "prefix": "Prefix",
+  "prefixOrSuffix": "Introduceți un prefix sau un sufix",
+  "Destination": "Selectați variabilele de dată de convertit în caracter",
+  "DateFormat": "Selectați formatul de dată pentru a converti",
+  "TimeZone": "Selectați un fus orar (implicit - nimic selectat este fusul orar local al PC-ului)",
+  "help": {
+    "title": "Convertiți data în caracter",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>Descriere</b></br>\nConvertește data (clasa posixct și data) în caracter - pentru a controla formatul în care este afișată data. Specificați ca input formatul în care ar trebui să fie generat șirul, adică an/lună/zi sau lună-zi=an etc.\nFuncția de mai sus apelează intern strftime în pachetul de bază. Am extins strftime pentru a suporta variabile multiple.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"sufix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n​data: Numele setului de date\n</li>\n<li>\nvarNames: Variabilele de clasă posixct și data care trebuie convertite​ în caracter\n</li>\n<li>\ndateFormat: Un șir de caractere. Implicit pentru metodele de format este \"%Y-%m-%d %H:%M:%S\" dacă orice element are o componentă de timp care nu este miezul nopții, și \"%Y-%m-%d\" în caz contrar. Dacă options(\"digits.secs\") este setat, până la numărul specificat de cifre va fi imprimat pentru secunde\n</li>\n<li>\ntimezone: Un șir de caractere care specifică fusul orar care va fi utilizat pentru conversie. Specific pentru sistem (vezi as.POSIXlt), dar \"\" este fusul orar curent, iar \"GMT\" este UTC. Valorile invalide sunt tratate cel mai frecvent ca UTC, pe unele platforme cu un avertisment.\n</li>\n<li>\nprefixOrSuffix: Specificați un prefix sau un sufix pentru noile variabile de șir. Acceptă fie c(\"prefix\"), fie c(\"sufix\"). Noile variabile care sunt create cu acest prefix/sufix la numele variabilei originale. \n</li>\n</ul>\n<b>Pachet</b></br>\nbază</br>\n<b>Ajutor</b></br>\najutor(strftime)    \n"
+  }
+}

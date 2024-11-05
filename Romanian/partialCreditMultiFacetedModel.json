@@ -1,0 +1,13 @@
+{
+  "title": "Model de Credit Parțial (Multi-facetat)",
+  "navigation": "Model de Credit Parțial (Multi-facetat)",
+  "modelname": "Introduceți numele modelului",
+  "destinationvars": "Elemente",
+  "firstlevel": "Variabilă de prim nivel",
+  "secondlevel": "Variabilă de al doilea nivel",
+  "help": {
+    "title": "Model de Credit Parțial (Multi-facetat)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Descriere</b>\n            <br/>\n            Generează estimări ale parametrilor pentru un model de credit parțial multi-facetat\n            <br/><br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item*step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Cadru de date cu răspunsuri polihotomice la iteme k=0,...,K. Răspunsurile lipsă trebuie declarate ca NA\n            </li>\n            <li>\n            formulaA: Formula de design (se aplică doar la tam.mml.mfr). Consultați ajutorul detaliat. Este, de asemenea, posibil să setați toate efectele unui facet la zero, de exemplu, item*step + 0*rater (consultați ajutorul detaliat).\n            </li>\n            <li>\n            facets: Un cadru de date cu intrări de facet (se aplică doar la tam.mml.mfr)\n            </li>\n            <li>\n            pid: Un vector opțional de identificatori de persoane\n            </li>\n            <li>\n            verbose: Logic indicând dacă ieșirea ar trebui să fie imprimată în timpul iterațiilor.\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Pachete</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Ajutor</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

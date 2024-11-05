@@ -1,0 +1,16 @@
+{
+  "title": "Convertir les variables de date en caractère",
+  "navigation": "Date en caractère",
+  "label1": "Sélectionnez un suffixe ou un préfixe pour les variables converties",
+  "suffix": "Suffixe",
+  "prefix": "Préfixe",
+  "prefixOrSuffix": "Entrez un préfixe ou un suffixe",
+  "Destination": "Sélectionnez les variables de date à convertir en caractère",
+  "DateFormat": "Sélectionnez le format de date à convertir",
+  "TimeZone": "Sélectionnez un fuseau horaire (par défaut - rien sélectionné est le fuseau horaire local du PC)",
+  "help": {
+    "title": "Convertir la date en caractère",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>Description</b></br>\nConvertit la date (posixct et classe date) en caractère - pour contrôler le format dans lequel la date est affichée. Vous spécifiez en entrée le format dans lequel la chaîne doit être générée c'est-à-dire année/mois/jour ou mois-jour=année etc.\nLa fonction ci-dessus appelle en interne strftime dans le package de base. Nous avons étendu strftime pour prendre en charge plusieurs variables.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\n​data: Le nom du jeu de données\n</li>\n<li>\nvarNames: Les variables de classe posixct et classe date qui doivent être converties​ en caractère\n</li>\n<li>\ndateFormat: Une chaîne de caractères. La valeur par défaut pour les méthodes de format est \"%Y-%m-%d %H:%M:%S\" si un élément a un composant temporel qui n'est pas minuit, et \"%Y-%m-%d\" sinon. Si options(\"digits.secs\") est défini, jusqu'au nombre spécifié de chiffres sera imprimé pour les secondes\n</li>\n<li>\ntimezone: Une chaîne de caractères spécifiant le fuseau horaire à utiliser pour la conversion. Spécifique au système (voir as.POSIXlt), mais \"\" est le fuseau horaire actuel, et \"GMT\" est UTC. Les valeurs invalides sont le plus souvent traitées comme UTC, sur certaines plateformes avec un avertissement.\n</li>\n<li>\nprefixOrSuffix: Spécifiez un préfixe ou un suffixe pour les nouvelles variables de chaîne. Prend soit c(\"prefix\") soit c(\"suffix\"). Les nouvelles variables qui sont créées avec ce préfixe/suffixe au nom de la variable d'origine. \n</li>\n</ul>\n<b>Package</b></br>\nbase</br>\n<b>Aide</b></br>\nhelp(strftime)    \n"
+  }
+}

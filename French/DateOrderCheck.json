@@ -1,0 +1,18 @@
+{
+  "title": "Vérification de l'ordre des dates",
+  "navigation": "Vérification de l'ordre des dates",
+  "datevarslabel": "Variables de date (spécifiez de la plus ancienne à la plus récente ; même classe ; au moins 2)",
+  "compgrplabel": "Comparaison",
+  "compgrpnote": "Remarque : Ceci est la comparaison entre toutes les dates spécifiées ci-dessus qui seront vérifiées pour des erreurs d'ordre, par exemple, les valeurs doivent être date1<date2<date3.",
+  "ltlabel": "<",
+  "ltelabel": "<=",
+  "idvarslabel": "Variables d'identification des lignes (facultatif)",
+  "dateerrorboxlabel": "Créer un ensemble de données avec une variable d'erreur de date",
+  "dateerrordatanamelabel": "Nom de l'ensemble de données",
+  "dateerrorvarlabel": "Nom de la variable d'erreur de date",
+  "help": {
+    "title": "Vérification de l'ordre des dates",
+    "r_help": "help('<', package = 'base')",
+    "body": "\nCela crée une liste de lignes dans l'ensemble de données actif où les valeurs des variables de date ne sont pas dans un ordre spécifié. Cela aide à identifier les erreurs potentielles des variables de date lorsque des dates ou des heures sont nécessaires pour une analyse. Par exemple, si trois colonnes de date sont censées être dans l'ordre de date1 < date2 < date3, cette boîte de dialogue imprimera toutes les observations où les valeurs de ces variables ne suivent pas cet ordre. Les valeurs de date manquantes sont autorisées dans les variables spécifiées et ne seront pas utilisées pour des comparaisons.\n<br/><br/>\n<b>Variables de date (spécifiez de la plus ancienne à la plus récente ; même classe ; au moins 2) :</b> Spécifiez au moins 2 variables de date dans l'ordre de la plus ancienne à la plus récente. Celles-ci peuvent être de n'importe quelle classe de date (POSIXct, Date), mais toutes les variables spécifiées doivent être de la même classe de date. Sinon, une erreur en résultera.\n<br/><br/>\n<b>Comparaison :</b> Spécifiez l'opérateur de comparaison utilisé pour comparer les valeurs de date. \"<\" signifie moins que et \"<=\" signifie moins que ou égal à. Si \"<\" est choisi, alors les dates qui sont égales seront signalées comme des erreurs. Si \"<=\" est choisi, alors les dates qui sont égales ne seront pas signalées comme des erreurs.\n<br/><br/>\n<b>Variables d'identification des lignes (facultatif) :</b> Spécifiez une ou plusieurs variables qui peuvent être utiles pour identifier les lignes. Par exemple, le numéro d'identification du sujet. Celles-ci seront incluses dans la liste des erreurs. Si aucune variable n'est spécifiée, le numéro de ligne de l'ensemble de données sera le seul identifiant.\n<br/><br/>\n<b>Créer un ensemble de données avec une variable d'erreur de date :</b> Cela créera un ensemble de données séparé avec les données originales et une variable indiquant si chaque observation a une erreur d'ordre de date (codée comme 1=erreur d'ordre de date et 0=pas d'erreur d'ordre de date). Le <b>Nom de l'ensemble de données</b> est le nom souhaité de cet ensemble de données et <b>Nom de la variable d'erreur de date</b> est le nom souhaité de la variable d'erreur d'ordre de date dans cet ensemble de données.\n\t\t"
+  }
+}

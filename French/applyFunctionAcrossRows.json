@@ -1,0 +1,13 @@
+{
+  "title": "Appliquer une fonction à toutes les lignes des variables sélectionnées.",
+  "navigation": "Appliquer une fonction aux lignes",
+  "label1": "Créer une nouvelle variable ou écraser une variable existante en appliquant une fonction à toutes les valeurs des lignes des variables sélectionnées.",
+  "newvar": "Entrer une nouvelle variable/Écraser une variable existante",
+  "target": "Sélectionner variable(s)",
+  "selectctrl": "Sélectionner une opération à appliquer",
+  "help": {
+    "title": "Appliquer une fonction",
+    "r_help": "help(apply,package='base')",
+    "body": "\n<b>Description</b></br>\nApplique une fonction à toutes les lignes des variables sélectionnées (colonnes) dans un ensemble de données. Nous utilisons la fonction select et l'opérateur pipe ( %>% ) du package dplyr pour sélectionner les variables dont nous allons appliquer une fonction aux lignes. (Ces variables sont passées à la fonction apply)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nX: Un tableau incluant une matrice. Les variables sélectionnées sont passées via dplyr\n</li>\n<li>\nMARGIN: Un vecteur donnant les sous-indices sur lesquels la fonction sera appliquée. Par exemple, pour une matrice 1 indique les lignes, 2 indique les colonnes, c(1, 2) indique les lignes et les colonnes. Lorsque\nX a des noms de dimensions nommés, cela peut être un vecteur de caractères sélectionnant les noms de dimension. ensemble de données contenant la variable var\n</li>\n<li>\nFUN: La fonction à appliquer\n</li>\n</ul>\n<b>Valeur</b><br/>\nLes valeurs calculées sont stockées directement dans l'ensemble de données\n<b>Package</b></br>\ndplyr</br>\n<b>Aide</b></br>\nhelp(apply)\n"
+  }
+}

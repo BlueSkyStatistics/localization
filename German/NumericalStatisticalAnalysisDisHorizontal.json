@@ -1,0 +1,14 @@
+{
+  "title": "Numerische Statistiken, unter Verwendung von summarize",
+  "navigation": "Numerische Zusammenfassungen, unter Verwendung von summarize (Legacy)",
+  "tvarbox1": "Ausgewählte Variablen",
+  "tvarbox2": "Gruppieren nach",
+  "label1": "Anzeigeoptionen",
+  "horizontal": "Horizontale Anzeige",
+  "vertical": "Vertikale Anzeige",
+  "help": {
+    "title": "Numerische Statistiken, unter Verwendung von summarize",
+    "r_help": "",
+    "body": "\n<b>Beschreibung</b></br>\nGibt die folgenden numerischen Statistiken für jede Gruppe der Zielvariablen aus. Die Zielvariablen können optional nach einer oder mehreren Faktor- oder numerischen Variablen gruppiert werden. Druckt die folgenden Informationen für die Zielvariablen oder jede Gruppe, nach der die Zielvariablen gruppiert sind, nämlich min, 1. Quantil (25%), max, Mittelwert, Median, 3. Quantil (75%), Summe, Varianz, Standardabweichung, Standardfehler, Schiefe, Kurtosis\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \n##Die Funktion unten wird für jede Zielvariable ausgeführt und die resultierenden Datenrahmen werden transponiert und kombiniert<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndataset1: Dies ist der Datensatz\n</li>\n<li>\ngroup_by: Optional die Zielvariablen nach einer oder mehreren Faktor- oder numerischen Variablen gruppieren\n</li>\n<li>\nsummarize: Die Zielvariablen oder Gruppen der Zielvariablen (wenn Variablen im group_by angegeben) mit den angegebenen Zusammenfassungsfunktionen zusammenfassen, nämlich Mittelwert, Median, min...\n</li>\n</ul>\n<b>Wert</b></br>\nEin Objekt der Klasse \"data.frame\", das die Ergebnisse für jede Funktion auf jeder Variablen angibt.</br>\n<b>Paket</b></br>\ncaret</br>\n<b>Hilfe</b></br>\nR-Hilfe ist nicht verfügbar, da wir benutzerdefinierten Code unter Verwendung mehrerer R-Funktionen geschrieben haben. Wenn Sie den Code überprüfen möchten, klicken Sie auf die \"<>\"-Schaltfläche.</br>\n    "
+  }
+}

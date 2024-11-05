@@ -1,0 +1,20 @@
+{
+  "title": "Calculați variabilele dummy",
+  "navigation": "Codificare dummy",
+  "label1": "Introduceți variabilele care vor fi codificate ca dummy. Noile variabile sunt create cu numele în formatul \"numele variabilei_nivel nume\". În mod implicit, cel mai frecvent nivel este tratat ca referință",
+  "target": "Selectați variabilele care vor fi codificate ca dummy",
+  "label2": "Nivelul tratat ca referință",
+  "MostFrequent": "Cea mai frecventă valoare",
+  "first": "Prima valoare",
+  "None": "Păstrați toate nivelurile (nu este recomandat pentru modele statistice) A.k.a codificare one hot",
+  "prefix": "Prefix",
+  "txt1": "Introduceți un prefix/sufix",
+  "label3": "Alte opțiuni",
+  "chk3": "Eliminați variabilele originale",
+  "chk4": "Creați variabile dummy pentru valorile lipsă",
+  "help": {
+    "title": "Calculați variabilele dummy",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Descriere</b></br>\nCalculați variabilele dummy\n<br/>\n<b>Utilizare</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n.data:\tUn obiect cu setul de date din care doriți să creați coloane dummy.\n</li>\n<li>\nselect_columns:\tVector de nume de coloane din care doriți să creați variabile dummy. Dacă este NULL (implicit), folosește toate coloanele de tip caracter și factor.\n</li>\n<li>\nremove_first_dummy: Elimină prima dummy din fiecare variabilă astfel încât să rămână doar n-1 dummy. Acest lucru evită problemele de multicoliniaritate în modele.\n</li>\n<li>\nremove_most_frequent_dummy: Elimină categoria observată cel mai frecvent astfel încât să rămână doar n-1 dummy. Dacă există o egalitate pentru cel mai frecvent, va elimina prima categorie (în ordinea alfabetică) care este legată de cel mai frecvent.\n</li>\n<li>\nignore_na: Dacă este TRUE, ignoră orice valori NA din coloană. Dacă este FALSE (implicit), atunci va crea o coloană dummy pentru valoarea_NA și va da un 1 în orice rând care are o valoare NA.\n</li>\n<li>\nsplit: Un șir pentru a împărți o coloană atunci când mai multe categorii sunt în celulă. De exemplu, dacă o variabilă este animale de companie și rândurile sunt \"pisică\", \"câine\" și \"broască țestoasă\", fiecare dintre aceste animale de companie ar deveni propria coloană dummy. Dacă un rând este \"pisică, câine\", atunci o valoare de împărțire de \",\" acest rând ar avea o valoare de 1 pentru ambele coloane dummy pentru pisică și câine.\n</li>\n<li>\nremove_selected_columns: Dacă este TRUE (nu implicit), elimină coloanele folosite pentru a genera coloanele dummy.\n</li>\n<li>\nValoare: Un data.frame (sau tibble sau data.table, în funcție de tipul de date de intrare) cu același număr de rânduri ca datele introduse și coloanele originale plus coloanele dummy nou create.\n</li>\n<li>\nVezi de asemenea\ndummy_rows Pentru crearea rândurilor dummy\n</li>\n<li>\nAlte funcții dummy: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Exemple</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Includeți coloana an\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Eliminați prima dummy pentru fiecare pereche de coloane dummy create</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Pachet</b></br>\nfastDummies</br>\n<b>Ajutor</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

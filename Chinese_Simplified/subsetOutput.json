@@ -1,0 +1,13 @@
+{
+  "title": "子集数据集",
+  "navigation": "子集，结果在输出中",
+  "label0": "结果将在输出窗口中显示",
+  "label1": "选项",
+  "New": "将结果保存到新数据集中",
+  "newdatasetname": "输入数据集名称",
+  "Existing": "覆盖现有数据集",
+  "distinct": "选择不同的案例",
+  "chkbox2": "删除未使用的因子水平",
+  "subsetvars": "选择要包含在子集数据集中的变量",
+  "subsetexpression": "输入子集标准。子集标准应用于每个数据集行。示例 1: !is.na(var1) & is.na(var2)。示例 2: var1>30 & var2=='male'。示例 3: (var1 !=10 & var2>20) | var3==40。示例 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\"。示例 5: substr(var1,2,4) ==\"abc\""
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Convertir Variables de Caracteres a Fecha y Hora",
+  "navigation": "De Caracter a Fecha y Hora",
+  "label1": "Seleccione un sufijo o prefijo para las variables convertidas",
+  "suffix": "Sufijo",
+  "prefix": "Prefijo",
+  "prefixOrSuffix": "Ingrese un prefijo o sufijo",
+  "Destination": "Seleccione variables de caracteres para convertir a fecha",
+  "DateFormat": "Seleccione el formato de la cadena de caracteres",
+  "TimeZone": "Seleccione una zona horaria (por defecto - si no se selecciona nada, es la zona horaria local de la PC)",
+  "help": {
+    "title": "Convertir Caracter a Fecha",
+    "r_help": "help(strptime, package=\"base\")",
+    "body": "\n<b>Descripción</b></br>\nConvierte un carácter a una fecha (clase POSIXct). Necesita especificar el formato de la fecha almacenada en una cadena de caracteres.\nLa función anterior llama internamente a strptime en el paquete base. Hemos extendido strftime para soportar múltiples variables.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkystrptime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"sufijo\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndata: El nombre del conjunto de datos como una cadena de caracteres.\n</li>\n<li>\nvarNames: Los nombres de las variables de clase carácter que necesitan ser convertidas a fecha (clase POSIXct)\n</li>\n<li>\ndateFormat: Una cadena de caracteres. El valor predeterminado para los métodos de formato es \"%Y-%m-%d %H:%M:%S\" si algún elemento tiene un componente de tiempo que no es medianoche, y \"%Y-%m-%d\" de lo contrario. Si options(\"digits.secs\") está configurado, se imprimirán hasta el número especificado de dígitos para los segundos\n</li>\n<li>\ntimezone: Una cadena de caracteres que especifica la zona horaria que se utilizará para la conversión. Específica del sistema (ver as.POSIXlt), pero \"\" es la zona horaria actual, y \"GMT\" es UTC. Los valores inválidos se tratan comúnmente como UTC, en algunas plataformas con una advertencia.\n</li>\n<li>\nprefixOrSuffix: Especifica un prefijo o sufijo para las variables convertidas de clase POSIXct. Toma c(\"prefijo\") o c(\"sufijo\"). Nuevas variables que se crean con este prefijo/sufijo al nombre de la variable original. \n</li>\n<li>\nprefixOrSuffixValue = Un vector de caracteres que especifica el nombre del prefijo o sufijo a utilizar.\n</li>\n</ul>\n<b>Paquete</b></br>\nbase</br>\n<b>Ayuda</b></br>\nhelp(strptime)\n"
+  }
+}

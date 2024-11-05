@@ -1,0 +1,12 @@
+{
+  "title": "ナイーブベイズ",
+  "navigation": "ナイーブベイズ",
+  "modelname": "モデル名を入力してください",
+  "dependentvar": "従属変数",
+  "independentvars": "独立変数",
+  "help": {
+    "title": "ナイーブベイズ",
+    "r_help": "help(NaiveBayes,package='klaR')",
+    "body": "\n                <b>説明</b></br>\n条件付き事後確率を計算します。これは、ベイズの法則を使用して、独立した予測変数が与えられた場合のカテゴリカルクラス変数の確率です。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nformula : class ~ x1 + x2 + ... の形式の式。相互作用は許可されていません。\n</li>\n<li>\ndata: 予測因子のデータフレーム（カテゴリカルおよび/または数値）。\n</li>\n<li>\nna.action : NAsが見つかった場合に取るべきアクションを指定する関数。デフォルトのアクションは、確率因子の計算に対してそれらをカウントしないことです。代替としてna.omitがあり、これは必要な変数のいずれかに欠損値があるケースを拒否します。（注意：指定された場合、この引数には名前を付ける必要があります。）\n</li>\n<li>\n... : densityに渡される引数。\n</li>\n</ul>\n<b>パッケージ</b></br>\ncaret;klaR</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください</br>\nhelp(NaiveBayes,package='klaR')\n"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Graphique en bande",
+  "navigation": "Graphique en bande",
+  "x": "Variable X, spécifiez une variable numérique",
+  "y": "Variable Y, spécifiez une ou plusieurs variables numériques",
+  "Fill": "Couleur, spécifiez une variable factorielle",
+  "size": "Rendre la taille du point proportionnelle à",
+  "shape": "Forme",
+  "alpha": "Opacité (0-1)",
+  "flipaxis": "Inverser l'axe",
+  "jitter": "Appliquer un effet de jitter",
+  "specify_a_title": "Entrez un titre",
+  "x_title": "Étiquette de l'axe X",
+  "y_title": "Étiquette de l'axe Y",
+  "Facetrow": "Ligne de facette",
+  "Facetcolumn": "Colonne de facette",
+  "Facetwrap": "Enveloppe de facette",
+  "Facetscale": "Échelle de facette",
+  "help": {
+    "title": "Graphique en bande",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>Description</b></br>\n            Un graphique en bande est le type de graphique le plus basique disponible. Il trace les données dans l'ordre le long d'une ligne avec chaque point de données représenté comme une boîte. La forme du point dépend des niveaux de la variable factorielle (x). Les points peuvent être optionnellement regroupés par une variable factorielle (y). Des facettes peuvent être créées en spécifiant une variable factorielle.</br>\n            Vous pouvez également spécifier des thèmes, et spécifier un titre et des étiquettes pour les axes x et y</br>\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: Le jeu de données par défaut​\n            </li>\n            <li>\n            aes(): Générer des mappages esthétiques qui décrivent comment les variables dans les données sont mappées aux propriétés visuelles (esthétiques) des géométries.​\n            </li>\n            <li>\n            x: la variable de regroupement. La forme du point dépend des niveaux de la variable factorielle​\n            </li>\n            <li>\n            y: la variable pour laquelle les points sont tracés​\n            </li>\n            <li>\n            color: une variable factorielle optionnelle pour regrouper les points (par couleur)​\n            </li>\n            <li>\n            Labs(): Changer les étiquettes des axes et les titres de légende (Ceci est optionnel)​\n            </li>\n            <li>\n            facet_grid(): Disposer les panneaux dans une grille (Ceci est optionnel)​\n            </li>\n            <li>\n            theme_calc(): Spécifie le thème calculateur (Ceci est optionnel)​\n            </li>\n            <li>\n            geom_jitter(): Le géomètre de jitter est un défaut pratique pour geom_point avec position = 'jitter'. Voir position_jitter pour voir comment ajuster la quantité de jitter.\n            </li>\n            <li>\n            coord_flip(): Inverser l'axe (Ceci est optionnel)​\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aide</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Autre: Cliquez sur le bouton Aide R pour obtenir une aide détaillée sur R. Vous pouvez également entrer help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

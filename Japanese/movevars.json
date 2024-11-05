@@ -1,0 +1,15 @@
+{
+  "title": "変数を移動",
+  "navigation": "変数を移動",
+  "varstomovelabel": "移動する変数",
+  "locationlabel": "位置",
+  "firstlabel": "最初",
+  "lastlabel": "最後",
+  "afterselectedlabel": "選択した変数の後",
+  "aftervarlabel": "",
+  "help": {
+    "title": "変数を移動",
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\nこれは、データセット内の指定された位置に変数を移動します。\n<br/><br/>\n<b>移動する変数:</b> 別の位置に移動する変数。 このボックスに指定された順序で配置されます。\n<br/><br/>\n<b>位置:</b> 変数を移動するデータセット内の位置。 <b>最初</b>は、変数をデータセットの最初に配置します。  \n<b>最後</b>は、変数をデータセットの最後に配置します。  <b>選択した変数の後</b>は、この変数の後にデータセット内の変数を配置します。\n<br/><br/>\n<b>必要なRパッケージ:</b> dplyr\n\t\t\t"
+  }
+}

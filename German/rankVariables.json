@@ -1,0 +1,18 @@
+{
+  "title": "Rangvariable(n)",
+  "navigation": "Rang",
+  "label1": "Geben Sie ein Suffix oder Präfix für die neuen Rangvariablen ein",
+  "suffix": "Suffix",
+  "prefix": "Präfix",
+  "txt1": "Geben Sie ein Suffix/Präfix ein",
+  "dest": "Wählen Sie die zu rangierenden Variable(n) aus",
+  "rankby": "Optional wählen Sie Variable(n) aus, um Werte innerhalb zu rangieren",
+  "label2": "Geben Sie eine Rangfunktion an",
+  "rankfn": "Wählen Sie eine Rangfunktion aus, klicken Sie auf Hilfe für zusätzliche Informationen",
+  "nooftiles": "Für die Rangfunktion ntile geben Sie die Anzahl der Gruppen an, in die aufgeteilt werden soll:",
+  "help": {
+    "title": "Rangvariable(n)",
+    "r_help": "hilfe(mean)",
+    "body": "\n<b>Beschreibung</b></br>\nRANGIERUNGEN WERDEN IN NEUEN VARIABLEN MIT DEM ANGEGEBENEN PRÄFIX ODER SUFFIX GESPEICHERT</br>\nSechs Variationen von Rangfunktionen, die die in SQL2003 beschriebenen Rangfunktionen nachahmen. Sie werden derzeit unter Verwendung der integrierten Rangfunktion implementiert und hauptsächlich als Komfort bei der Konvertierung zwischen R und SQL bereitgestellt. Alle Rangfunktionen ordnen die kleinsten Eingaben den kleinsten Ausgaben zu. Verwenden Sie desc(), um die Richtung umzukehren.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nrow_number(x)\nntile(x, n)\nmin_rank(x)\ndense_rank(x)\npercent_rank(x)\ncume_dist(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: Ein Vektor von Werten, die gerankt werden sollen. Fehlende Werte bleiben unverändert. Wenn Sie sie als die kleinsten oder größten Werte behandeln möchten, ersetzen Sie sie vor dem Ranken durch Inf oder -Inf.\n</li>\n<li>\nn: Anzahl der Gruppen, in die aufgeteilt werden soll.\n</li>\n</ul>\n<b>Details</b><br/>\nrow_number(): entspricht rank(ties.method = \"first\")<br/>\nmin_rank(): entspricht rank(ties.method = \"min\")<br/>\ndense_rank(): wie min_rank(), aber ohne Lücken zwischen den Rängen<br/>\npercent_rank(): eine Zahl zwischen 0 und 1, die durch Reskalierung von min_rank auf [0, 1] berechnet wird<br/>\ncume_dist(): eine kumulative Verteilungsfunktion. Anteil aller Werte, die kleiner oder gleich dem aktuellen Rang sind.<br/>\nntile(): ein grober Rang, der den Eingangsvektor in n Eimer aufteilt.<br/>\n<b>Beispiele</b><br/>\n<code> \nx <- c(5, 1, 3, 2, 2, NA)<br/>\nrow_number(x)<br/>\nmin_rank(x)<br/>\ndense_rank(x)<br/>\n</code><br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Hilfe</b></br>\nhilfe(ranking, paket='dplyr')"
+  }
+}

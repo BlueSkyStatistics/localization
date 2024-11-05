@@ -1,0 +1,22 @@
+{
+  "title": "Análisis Discriminante",
+  "navigation": "Discriminante",
+  "modelname": "Nombre del modelo",
+  "tvarbox1": "Variables dependientes",
+  "tvarbox2": "Factor fijo",
+  "blockVar": "Covariada(s)",
+  "testStatistic": "Estadístico de prueba",
+  "label2": "Opciones para posthocs",
+  "combon": "Comparar medias usando:",
+  "emm": "Medias marginales estimadas",
+  "displayBoxMDetails": "Mostrar detalles asociados con la prueba de Box's M (Nota: Los resultados de la prueba de Box's M siempre se muestran)",
+  "adjust": "Método para ajustar valores p",
+  "levenesTest": "Prueba de Levene",
+  "posthocs": "Posthocs",
+  "plotMeansCI": "Gráfico de medias e intervalos de confianza",
+  "help": {
+    "title": "Análisis Discriminante",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>Descripción</b></br>\nAnálisis Discriminante: Se proporcionan pruebas multivariantes omnibus y los correspondientes valores F y p. También se proporcionan pruebas univariantes de seguimiento.</br> NOTA: Actualmente soportamos un solo factor independiente</br>\nNOTA: No mostramos el intervalo de confianza en el gráfico de medias ya que se muestran advertencias innecesarias. Estamos trabajando con el autor del paquete gplots para rectificar esto.</br>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n...: Argumentos pasados a aov\n</li>\n</ul>\n<b>Detalles</b></br>\nLa clase \"manova\" difiere de la clase \"aov\" en la selección de un método de resumen diferente. La función manova llama a aov y luego agrega la clase \"manova\" al objeto de resultado para cada estrato.​</br>\n<b>Valor</b><br/>\nConsulte la ayuda de aov, detalles a continuación<br/>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nHaga clic en el botón de Ayuda de R para obtener ayuda detallada de R.</br> También puede ingresar help(manova, package ='stats') y presionar CTRL Enter en el editor de sintaxis de R para obtener ayuda</br>\n"
+  }
+}

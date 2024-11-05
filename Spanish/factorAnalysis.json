@@ -1,0 +1,31 @@
+{
+  "title": "Análisis de Factores",
+  "navigation": "Factor",
+  "destination": "Seleccionar variables",
+  "label1": "Extracción de factores",
+  "factorextraction1": "Extraer factores automáticamente",
+  "factorextraction2": "Especificar el número de factores a extraer",
+  "noOfFactors": "Ingrese el número de factores a extraer",
+  "screeplot": "Gráfico de sedimentación",
+  "label2": "Puntuaciones de Factores",
+  "saveScores": "Guardar puntuaciones de factores en el conjunto de datos",
+  "scores1": "Método de Bartlett, ingrese un prefijo de nombre de variable",
+  "scores2": "Método de regresión, ingrese un prefijo de nombre de variable",
+  "varForScores": "Ingrese el prefijo de nombre de variable para las puntuaciones:",
+  "label3": "Opciones de Rotación",
+  "grpBox21": "Ninguno",
+  "grpBox22": "Varimax",
+  "grpBox23": "Promax",
+  "grpBox24": "BentlerQ",
+  "grpBox25": "Quartimax",
+  "grpBox26": "Oblimin",
+  "grpBox27": "GeominQ",
+  "grpBox28": "GeominT",
+  "grpBox29": "Simplimax",
+  "parallel": "Análisis paralelo",
+  "help": {
+    "title": "Análisis de Factores",
+    "r_help": "help(factanal, package ='stats')",
+    "body": "\n<b>Descripción</b></br>\n​Realiza un análisis de factores de máxima verosimilitud sobre una matriz de covarianza o matriz de datos y genera un gráfico de sedimentación. Llama a la función factanal en el paquete stats.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: Una o más variables numéricas de las que extraer factores.\n</li>\n<li>\nautoextraction: Determinar automáticamente el número de factores o extraer números específicos de factores.\n</li>\n<li>\nscreeplot: Si es VERDADERO, genera un gráfico de sedimentación.\n</li>\n<li>\nrotation: determina el tipo de rotación y toma uno de los valores (ninguno, quartimax, geominT, varimax, oblimin, simplimax, promax, geominQ y bentlerQ)\n</li>\n<li>\nsaveScores: guarda las puntuaciones de factores en el conjunto de datos\n</li>\n<li>\ndataset: El conjunto de datos del cual se han seleccionado las 'vars'.\n</li>\n</ul>\n<b>Detalles</b></br>\nUn objeto de clase \"factanal\" con componentes</br>\nloadings: Una matriz de cargas, una columna para cada factor. Los factores están ordenados en orden decreciente de sumas de cuadrados de cargas, y se les da el signo que hará que la suma de las cargas sea positiva. Esto es de clase \"loadings\": ver cargas para su método de impresión.</br>\nuniquenesses: Las unicidades computadas.</br>\ncorrelation: La matriz de correlación utilizada.</br>\ncriteria: Los resultados de la optimización: el valor del criterio (una función lineal de la log-verosimilitud negativa) y la información sobre las iteraciones utilizadas.</br>\nfactors: El argumento factores.</br>\ndof: El número de grados de libertad del modelo de análisis de factores.</br>\nmethod: El método: siempre \"mle\".</br>\nrotmat:\tLa matriz de rotación si es relevante.</br>\nscores: Si se solicita, una matriz de puntuaciones. napredict se aplica para manejar el tratamiento de valores omitidos por la na.action.</br>\nn.obs: El número de observaciones si está disponible, o NA.</br>\ncall: La llamada coincidente.</br>\nna.action: Si es relevante.</br>\nSTATISTIC, PVAL: La estadística de prueba de significancia y el valor P, si se puede calcular.</br>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nhelp(factanal, package ='stats')\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Importar Diseño - debe ser un archivo csv con columnas de respuesta añadidas al diseño exportado previamente",
+  "navigation": "Importar Respuesta del Diseño",
+  "datasetname": "Nombre para crear el diseño con respuesta(s)",
+  "importResp": "Ruta del archivo para el archivo de diseño (debe ser un archivo csv) que contiene columnas de respuesta",
+  "help": {
+    "title": "Importar Respuestas a un Diseño Existente",
+    "r_help": "help(add.response, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tImportar el archivo csv del Diseño con columnas de respuesta añadidas, es decir, resultados recodificados de los experimentos realizados a partir del diseño original exportado previamente\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl propósito de importar el archivo csv contra un diseño ya abierto en la cuadrícula de la interfaz de usuario del conjunto de datos es añadir automáticamente las columnas de respuesta del archivo csv al diseño en la cuadrícula de la interfaz de usuario y crear un nuevo diseño con el nombre especificado\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna vez que se crea el nuevo diseño con las columnas de respuesta, este puede ser analizado con varios métodos de análisis bajo el menú DOE -> Analizar Diseño\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAdemás, designar/desdesignar una o más columnas de respuesta se puede realizar mediante el menú DOE -> Modificar Diseño -> Añadir/Eliminar Respuesta\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSi el diseño requerido no está ya abierto en la cuadrícula de la interfaz de usuario del conjunto de datos, utilizando el menú Archivo Abrir, carga el objeto R de diseño (.rda) que fue exportado previamente con el menú \"Exportar Diseño\" en un directorio del sistema de archivos.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara información adicional - utiliza R help(add.response, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

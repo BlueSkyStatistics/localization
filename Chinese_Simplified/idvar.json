@@ -1,0 +1,16 @@
+{
+  "title": "ID变量",
+  "navigation": "ID变量",
+  "varnamelabel": "要创建的ID变量名称",
+  "sortbyvarslabel": "首先排序的变量",
+  "groupbyvarslabel": "分组变量",
+  "outputdatalabel": "输出数据集",
+  "newdatalabel": "创建新数据集",
+  "overwritelabel": "覆盖现有数据集",
+  "newdatasetlabel": "输入新数据集的名称",
+  "help": {
+    "title": "ID变量",
+    "r_help": "help(row_number, package ='dplyr')",
+    "body": "\n在当前数据集或当前数据集的单独副本中创建一个数字行识别（ID）变量。  \n创建的ID变量将由数字值1、2、3等组成，按顺序从上到下排列在数据集中。  \n可以选择指定在创建识别变量之前要排序或分组的变量。  要排序和分组的变量可以是相同或不同的变量。  如果未指定分组变量，则数据集的整体行号将分配给ID变量。\n<br/><br/>\n<b>要创建的ID变量名称：</b>指定输出数据集中ID变量的所需名称。\n<br/><br/>\n<b>首先排序的变量（可选）：</b>在定义组或创建ID变量之前指定要排序的变量\n<br/><br/>\n<b>分组变量（可选）：</b>指定其级别将定义ID值的单独分配的变量。例如，按性别分组将为男性和女性分别创建1、2、3等值，按数据集中的出现顺序。\n<br/><br/>\n<b>输出数据集：</b>指定是创建新数据集还是覆盖当前数据集\n<br/><br/>\n<b>所需的R包：</b>tidyverse\n\t\t\t"
+  }
+}

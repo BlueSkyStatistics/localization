@@ -1,0 +1,24 @@
+{
+  "title": "コックスコムプロット",
+  "navigation": "コックスコム",
+  "x": "X軸変数、因子変数を指定してください",
+  "y": "Y変数、数値変数を指定してください",
+  "fill": "塗りつぶし、因子変数を指定してください",
+  "alpha": "不透明度 (0-1)",
+  "width": "幅",
+  "rdgrp1": "塗りつぶしの割合",
+  "flip": "軸を反転",
+  "barcolor": "バーの色（色を選択した後、コントロールの外をクリックして適用）",
+  "specify_a_title": "タイトルを入力してください",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "help": {
+    "title": "コックスコムプロット",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>説明</b></br>\nコックスコム/ブルズアイチャート（または円チャート）は、数値の割合を示すためにスライス/同心円に分割された円形の統計グラフィックです。コックスコム/ブルズアイチャートでは、各同心円の幅の長さ（したがってその面積）は、表す数量に比例します。数量はカウントまたはパーセンテージとして表すことができます。</br>​\nファセットは、因子変数を指定することでオプションで作成できます。また、テーマをオプションで指定し、x軸とy軸のタイトルとラベルを指定することもできます。</br>\n複数のx変数を指定すると、各x変数に対して別々のコックスコム/ブルズアイが作成されます。</br>\n<b>使用法</b>\n<br/>\n<code>\n#単一の因子変数に対してブルズアイチャートを作成できます。因子変数の各レベルに対して同心円が作成されます。同心円の幅は、因子レベルの各レベルのカウントに比例します。ここで因子変数は以下のように塗りつぶしに対応します<br/>\n#penguinsはequatiomatic Rパッケージのデータセットです\nggplot(data=penguins,aes(x ='',fill=species)) +​\n                 geom_bar(alpha=1,width =0.9) +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"カウント\",fill =\"var1\",title= \"塗りつぶし: speciesのブルズアイチャート\")​</br></br>\n#y変数としてスケール/数値変数を指定し、塗りつぶしとして機能する因子変数を指定することでブルズアイチャートを作成できます。ここでは、塗りつぶし因子変数の各レベルに対して同心円が作成されます。同心円の幅は、因子レベルの各レベルでのy値の合計に比例します。ここで因子変数は以下のように塗りつぶしに対応します<br/>\nggplot(data=penguins,aes(x ='', y = bill_length_mm, fill = species)) +​\n                 geom_bar(alpha=1,width =0.9,stat=\"identity\") +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"var1\",fill =\"var2\",title= \"X美学: var1, 塗りつぶし: var2のブルズアイチャート\") </br></br>\n\n#x変数を指定することでコックスコムプロットを作成できます。スライスはx変数の各レベルに対して作成され、各スライスの半径はカウントに比例します<br/>\n    ggplot(data=penguins, aes(x=island, )) +\n        geom_bar( alpha=1,width=1,) +\n        coord_polar(\"x\") +\n        labs(x=\"島\",  title= \"島のX美学を持つコックスコムプロット\") +\n        xlab(\"島\") + ylab(\"カウント\")</br></br>\n\n#x変数、y変数、塗りつぶしを指定することでコックスコムプロットを生成できます。スライスはx変数の各レベルに対して作成され、塗りつぶしで指定された変数の各レベルのy変数の値の合計で塗りつぶされます。スライスは塗りつぶし変数のレベルによって分割されます。スライス内の塗りつぶし変数の各レベルが占める面積は、スライスと塗りつぶし変数に一致するy変数のカウントの合計に比例します。<br/>\nggplot(data=penguins, aes(x=island,y=bill_depth_mm,fill=species )) +\n\tgeom_bar( alpha=1,width=1,stat = \"identity\") +\n\tcoord_polar(\"x\") +\n\tlabs(x=\"島\", y=\"bill_depth_mm\", title= \"島のX美学、bill_depth_mmのY美学、塗りつぶし: speciesのコックスコムプロット\") +\n\txlab(\"島\") + ylab(\"bill_depth_mm\")</br></br>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndata: デフォルトのデータセット​\n</li>\n<li>\naes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美学マッピングを生成します。​\n</li>\n<li>\nx: （オプション）因子/カテゴリ変数。バーの長さは因子変数の各レベルのカウントに対応します。​\n</li>\n<li>\nY: （オプション）数値変数\n</li>\n<li>\nfill: （オプション）xのレベルのカウントをグループ化するためのオプションの因子/カテゴリ変数（上記参照）​\n</li>\n<li>\ngeom_bar(): バーグラフを作成します。position =\"fill\"はバーを各グループレベルの割合で塗りつぶします。​\n</li>\n<li>\nCoor_polar(): 極座標系は、円グラフに最も一般的に使用されます。これは極座標の積み上げ棒グラフです。\n</li>\n<li>\nLabs(): 軸ラベルと凡例のタイトルを変更します（これはオプション）​\n</li>\n<li>\nfacet_grid(): パネルをグリッドにレイアウトします（これはオプション）​\n</li>\n<li>\ntheme_calc(): 計算機テーマを指定します（これはオプション）​\n</li>\n<li>\ncoord_flip(): 軸を反転します（これはオプション）​\n</li>\n<li>\nalpha: 不透明度を制御し、0-1の値を取ります。1は不透明度なしを意味します。\n</li>\n</ul>\n<b>パッケージ</b></br>\nggplot2;ggthemes;</br>\n<b>ヘルプ</b></br>\nhelp(coord_polar, package=ggplot2)</br>\nその他: 詳細なRヘルプを取得するにはRヘルプボタンをクリックしてください。また、help(labs)、help(geom_bar)、help(cord_polar)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。​\n    "
+  }
+}

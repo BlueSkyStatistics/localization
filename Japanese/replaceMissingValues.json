@@ -1,0 +1,11 @@
+{
+  "title": "欠損値の置換（文字列/因子変数）",
+  "navigation": "文字/因子",
+  "destination": "目的変数",
+  "repString": "NAsを置き換える文字列を入力してください。注意：文字列を引用符で囲まないでください。因子変数の場合、指定された値は因子のレベルである必要があります。変数>因子レベル>追加を参照してください。",
+  "help": {
+    "title": "欠損値の置換（文字列/因子変数）",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>説明</b></br>\n指定された値で選択された変数の欠損値を置き換えます。ダイアログを使用する場合、文字列を二重引用符で囲む必要はありません。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('置き換える文字列')\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nNAsを置き換える必要があるデータセット変数（var1、var2）\n</li>\n</ul>\n<b>値</b><br/>\nデータセット内の欠損値を指定された文字列で置き換えます<br/>\n<b>パッケージ</b></br>\nbase</br>\n<b>ヘルプ</b></br>\nhelp(is.na,package=base)"
+  }
+}

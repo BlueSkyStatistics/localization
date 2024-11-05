@@ -1,0 +1,32 @@
+{
+  "title": "用量反応曲線モデル",
+  "navigation": "用量反応曲線",
+  "modelname": "DRCモデル名",
+  "DependentVarformula": "応答変数",
+  "IndependentVarsformula": "用量、濃度、酵素など",
+  "drEquation": "ドロップダウンから用量反応方程式を選択してください。デフォルトはLL.4（4パラメータの対数ロジスティックモデル）です。",
+  "drDataType": "必要に応じて、分析しているデータタイプに基づいてドロップダウンから選択してください。",
+  "ED": "有効用量反応の推定。デフォルトは50％です。複数のレベルを指定できます（例：10、50、90）。",
+  "curveid": "データのグループ化を含む変数",
+  "weights": "重み（Y）として使用される変数とそのパワー値",
+  "PowerKweight": "パワー：Yのみの場合は（-1）を選択、1/Yの場合は1、1/(Y^2)の場合は2、.. 1/(Y^5)の場合は5を選択します。",
+  "covMatrixChk": "パラメータの推定共分散行列",
+  "resPlotChk": "残差をプロット",
+  "resNormalityTestChk": "モデル残差の正規性テスト",
+  "modelConstraintLabel": "(オプション) パラメータ推定のためのさまざまなモデル制約",
+  "pmodels": "モデルの最適化/収束を導くためのパラメータの開始値を設定します。例：LL.4 data.frame(Herbicide,1,1,Herbicide)またはLL.3 list(~group, ~1, ~group)",
+  "paramConstraints": "1つ以上のパラメータを定数値に固定します。例：NA、0.5、NAはLL.3の上限を0.5に固定します。",
+  "paramConstraintsLower": "下限の制約を設定します。例：Brain-CousensモデルBC.5で制約b>3を(3, -Inf, -Inf, -Inf, -Inf)として設定します。",
+  "paramConstraintsUpper": "上限の制約を設定します。例：Log Logistic LL.4で制約を(3, Inf, Inf, 2)として設定します。",
+  "dosePotencyChk": "相対用量の強さの比較",
+  "logScaleAxis": "X軸はデフォルトで対数スケールでプロットされます。元のスケールでプロットするには、ドロップダウンから空のオプションを選択してください。",
+  "EDpointValueChk": "プロット上のEDポイントの隣に値をプロット",
+  "doseInLogScaleChk": "データセット内の用量/濃度がすでに対数値であるか確認します。",
+  "ModelSelectTestChk": "1つ以上のモデルと比較するためのモデル適合テストを実行します。",
+  "modelSelectTest": "適合を比較するために1つ以上のモデルを選択（クリック/クリック解除）します。",
+  "help": {
+    "title": "用量反応曲線モデル (DRC)",
+    "r_help": "help(drm, package ='drc')",
+    "body": "\n            <b>説明</b></br> \n\t\t\t用量反応データの分析を通じて、さまざまな用量反応方程式関数を使用してパラメータを推定するための柔軟で多用途なモデルフィッティングおよびフィッティング後の分析関数のスイート\n            <br/>\n\t\t\t<br/>\n\t\t\t選択した用量反応方程式関数に応じてDRCモデルに存在するパラメータ名\n\t\t\t<br/>\t\t\t\n\t\t\t傾き (b)\n\t\t\t<br/>\n\t\t\t下限漸近線 (c)\n\t\t\t<br/>\n\t\t\t上限漸近線 (d)\n\t\t\t<br/>\n\t\t\tED50 (e)\n\t\t\t<br/>\n\t\t\t追加の傾き (f) \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tmm.2またはmm.3モデル（2または3パラメータのミカエリス・メンテンモデル）の場合\n\t\t\t<br/>\t\t\t\n\t\t\tVmax (d) 最大反応速度\n\t\t\t<br/>\n\t\t\tKm (e) ミカエリス定数\n\t\t\t<br/>\n\t\t\th (c) ヒル係数\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t詳細については、以下のRページを確認してください\n\t\t\t<br/>\n\t\t\thelp(package ='drc') \n\t\t\t<br/>\n\t\t\thelp(drm, package ='drc')\n\t\t\t<br/>\n\t\t\thelp(getMeanFunctions, package ='drc') \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tRパッケージの著者によって書かれた用量反応曲線のドラフトマニュアル\n\t\t\t<br/>\t\n\t\t\t<a href=\"https://doi.org/10.1371/journal.pone.0146021.s001\">https://doi.org/10.1371/journal.pone.0146021.s001</a>\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tDRCパッケージの完全なオンラインマニュアル\n\t\t\t<a href=\"https://rdrr.io/cran/drc/man/\">\n\t\t\thttps://rdrr.io/cran/drc/man/\n\t\t\t</a>\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tこのダイアログを試すことができます\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\t例1\n\t\t\t</br>\n\t\t\tデータセットS.albaをデータセットの読み込みメニューから読み込みます（パッケージとしてdrcを選択）\t\t\t\n\t\t\t<br/>\n\t\t\t応答変数としてDryMatterを選択（ドラッグ）します\n\t\t\t<br/>\n\t\t\t用量変数としてDoseを選択（ドラッグ）し、（オプションで）データフィールドをグループ化するためにHerbicideを選択します\n\t\t\t<br/>\n\t\t\tまた、オプションで「1つ以上のモデルと比較するためのモデル適合テストを実行」をチェック/クリックして、適合のためのいくつかの代替モデルを比較します\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t例2\n\t\t\t</br>\n\t\t\tデータセットearthwormsをデータセットの読み込みメニューから読み込みます（パッケージとしてdrcを選択）\n\t\t\t<br/>\n\t\t\t数を選択（ドラッグ）し、次に合計を応答フィールドにドラッグします。応答フィールドに数/合計として表現を作成するために手動で入力します\n\t\t\t<br/>\n\t\t\t用量変数としてdoseを選択（ドラッグ）します\n\t\t\t<br/>\n\t\t\tドロップダウンから「用量反応方程式を選択..」をデフォルトのLL.4の代わりにLL.3を選択します\n\t\t\t<br/>\n\t\t\tドロップダウンからデフォルトの空の値の代わりに二項を選択します\n\t\t\t<br/>\n\t\t\t有効用量反応の推定フィールドに50,10,90を入力して、モデルプロット上で10％、50％、90％の用量反応を確認します\n\t\t\t<br/>\n\t\t\tダイアログ内の他のすべてをデフォルトのままにします。ダイアログを実行します\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tドロップダウンリストで利用可能な用量反応方程式関数の説明\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（ED50をパラメータとして）で下限が0、上限が1\n\t\t\t（2パラメータ）\n\t\t\tLL.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（ED50をパラメータとして）で下限が0\n\t\t\t（3パラメータ）\n\t\t\tLL.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（ED50をパラメータとして）で上限が1\n\t\t\t（3パラメータ）\n\t\t\tLL.3u\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（ED50をパラメータとして）\n\t\t\t（4パラメータ）\n\t\t\tLL.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t一般化対数ロジスティック（ED50をパラメータとして）\n\t\t\t（5パラメータ）\n\t\t\tLL.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tワイブル（タイプ1）で下限が0、上限が1\n\t\t\t（2パラメータ）\n\t\t\tW1.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tワイブル（タイプ1）で下限が0\n\t\t\t（3パラメータ）\n\t\t\tW1.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tワイブル（タイプ1）\n\t\t\t（4パラメータ）\n\t\t\tW1.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tワイブル（タイプ2）で下限が0、上限が1\n\t\t\t（2パラメータ）\n\t\t\tW2.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tワイブル（タイプ2）で下限が0\n\t\t\t（3パラメータ）\n\t\t\tW2.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tワイブル（タイプ2）\n\t\t\t（4パラメータ）\n\t\t\tW2.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tブレイン・カウゼンス（ホルメシス）で下限が0に固定\n\t\t\t（4パラメータ）\n\t\t\tBC.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tブレイン・カウゼンス（ホルメシス）\n\t\t\t（5パラメータ）\n\t\t\tBC.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（log(ED50)をパラメータとして）で下限が0、上限が1\n\t\t\t（2パラメータ）\n\t\t\tLL2.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（log(ED50)をパラメータとして）で下限が0\n\t\t\t（3パラメータ）\n\t\t\tLL2.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（log(ED50)をパラメータとして）で上限が1\n\t\t\t（3パラメータ）\n\t\t\tLL2.3u\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t対数ロジスティック（log(ED50)をパラメータとして）\n\t\t\t（4パラメータ）\n\t\t\tLL2.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t一般化対数ロジスティック（log(ED50)をパラメータとして）\n\t\t\t（5パラメータ）\n\t\t\tLL2.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t漸近回帰で下限が0\n\t\t\t（2パラメータ）\n\t\t\tAR.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tシフトした漸近回帰\n\t\t\t（3パラメータ）\n\t\t\tAR.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tミカエリス・メンテン\n\t\t\t（2パラメータ）\n\t\t\tMM.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tシフトしたミカエリス・メンテン\n\t\t\t（3パラメータ）\n\t\t\tMM.3\t\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t指数関数\n\t\t\t（2パラメータ）\n\t\t\tEXD.2  （AR.2も使用可能）\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t指数関数\n\t\t\t（3パラメータ）\n\t\t\tEXD.3  （AR.3も使用可能）\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t指数関数\n\t\t\t（3パラメータ）\n\t\t\tEXD.3  （AR.3も使用可能）\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Ajouter des statistiques de modèle au jeu de données",
+  "navigation": "Ajouter des statistiques au jeu de données",
+  "label1": "Les modèles des classes suivantes sont pris en charge (classe R entre parenthèses) - Modèles linéaires (lm), Modèle de régression des risques proportionnels de Cox (coxph), Modèles linéaires généralisés (glm), Régression polynomiale locale (loess), Régression linéaire robuste (rlm), Modèle de régression de survie paramétrique (survreg), Régression quantile (rq)",
+  "label2": "LES STATISTIQUES SONT AJOUTÉES AU JEU DE DONNÉES ACTUEL. UN SUFFIXE NUMÉRIQUE SERA UTILISÉ POUR ASSURER DES NOMS DE VARIABLES UNIQUES. LE JEU DE DONNÉES ACTUEL DOIT CORRESPONDRE AU JEU DE DONNÉES UTILISÉ POUR CONSTRUIRE LE MODÈLE.",
+  "modelselector1": "Sélectionnez un modèle :",
+  "suff": "Entrez un suffixe pour le nom de la variable de statistiques",
+  "label3": "Sélectionnez les statistiques à ajouter aux observations dans le jeu de données",
+  "label4": "REMARQUE : Les statistiques prises en charge varient selon la classe de modèle. Toutes les statistiques ci-dessous sauf .tau sont prises en charge par les modèles linéaires et linéaires généralisés, la régression quantile prend en charge .resid, .fitted, .tau. Le reste des classes de modèles prend en charge .fitted, .se.fit, .resid.",
+  "chk1": ".hat (Diagonale de la matrice des chapeaux)",
+  "chk2": ".sigma (Estimation de l'écart type résiduel lorsque l'observation correspondante est supprimée du modèle)",
+  "chk3": ".cooksd (Distance de Cook)",
+  "chk4": ".fitted (valeurs ajustées du modèle)",
+  "chk5": ".se.fit (Erreurs standards des valeurs ajustées)",
+  "chk6": ".resid (Résidus)",
+  "chk7": ".std.resid (Résidus standardisés)",
+  "chk8": ".tau (Quantile estimé) *Soutenu uniquement pour la régression quantile",
+  "help": {
+    "title": "Ajouter des statistiques de modèle au jeu de données",
+    "r_help": "help(augment, package='broom')",
+    "body": "\n                <b>Description</b></br>\nAugmentez les données avec des informations d'un objet\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : Objet de modèle ou autre objet R avec des informations à ajouter aux observations.\n</li>\n<li>\n... : Arguments supplémentaires pour la méthode augment.\n</li>\n</ul>\n<b>Valeur</b><br/>\nUn tibble::tibble() avec des informations sur les points de données.</br>\n<b>Méthodes</b><br/>\nVoir les sujets d'aide suivants pour plus de détails sur les méthodes individuelles :<br/>\naugment.betareg : betareg<br/>\naugment.coxph : coxph<br/>\naugment.decomposed.ts : decomposed.ts<br/>\naugment.factanal : factanal<br/>\naugment.felm : felm<br/>\naugment.glm : glm<br/>\naugment.glmRob : glmRob<br/>\naugment.htest : htest<br/>\naugment.ivreg : ivreg<br/>\naugment.kmeans : kmeans<br/>\naugment.lm : lm<br/>\naugment.lmRob : lmRob<br/>\naugment.loess : loess<br/>\naugment.Mclust : Mclust<br/>\naugment.mjoint : mjoint<br/>\naugment.nlrq : nlrq<br/>\naugment.nls : nls<br/>\naugment.plm : plm<br/>\naugment.poLCA : poLCA<br/>\naugment.prcomp : prcomp<br/>\naugment.rlm : rlm<br/>\naugment.rq : rq<br/>\naugment.rqs : rqs<br/>\naugment.smooth.spline : smooth.spline<br/>\naugment.speedlm : speedlm<br/>\naugment.stl : stl<br/>\naugment.survreg : survreg<br/>\nlme4_tidiers : merMod<br/>\nnlme_tidiers : lme<br/>\nnull_tidiers : NULL<br/>\nordinal_tidiers : clm, polr<br/>\nrowwise_df_tidiers : rowwise_df, tbl_df<br/>\n<b>Package</b></br>\nbroom</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette fenêtre contextuelle ou exécutez la commande suivante dans l'éditeur de syntaxe R help(augment, package=\"broom\")\n"
+  }
+}

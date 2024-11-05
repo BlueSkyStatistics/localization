@@ -1,0 +1,31 @@
+{
+  "title": "热图",
+  "navigation": "热图",
+  "rowVariables": "目标变量",
+  "columnVariables": "列变量",
+  "options": "选项",
+  "title1": "热图标题",
+  "dendrogram": "树状图：",
+  "label1": "行树状图选项：",
+  "plotRowYes": "根据行均值重新排序树状图",
+  "plotRowNo": "不重新排序（树状图将不被计算）",
+  "label2": "列树状图选项",
+  "plotColumnYes": "根据列均值重新排序树状图",
+  "plotColumnNo": "否",
+  "symmetric": "在对称矩阵的情况下，将列视为行",
+  "trace": "绘制跨行、列、行和列或无的实线选项",
+  "density": "密度选项：",
+  "scale": "值应在行方向、列方向或无方向上居中",
+  "label3": "缺失值",
+  "Remove": "删除所有包含缺失值的行",
+  "Keep": "保留包含缺失值的行",
+  "label4": "将值放入单元格中",
+  "valuesNo": "是",
+  "valuesYes": "否",
+  "noteColors": "选择单元格值的颜色（选择颜色后，单击控件外以应用）：",
+  "help": {
+    "title": "热图",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>描述</b></br>\n            热图是数据的图形表示，其中矩阵中包含的单个值以颜色表示。可以通过指定因子变量选择性地创建面板。您还可以选择性地指定主题，并为x轴和y轴指定标题和标签</br>\n            数据集必须采用格式 column1, column2…columnN，其中</br>\n            column1：标识主题，例如绘制胆固醇值的人的姓名</br>\n            column2：标识时间1的胆固醇值</br>\n            column3：标识时间2的胆固醇值</br>\n            column4：标识时间3的胆固醇值</br>\n            column5：标识时间4的胆固醇值…</br>\n            Column1是热图中每行的标签。</br>\n            从Column 2开始，列中每行的值在热图中表示为颜色。</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Subject'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            上述函数在BlueSky包中，并调用gplots包中的heatmap.2函数。\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            data：默认数据集\n            </li>\n            <li>\n            rowVariable：包含有关构建图形的主题的信息的列变量，见上文\n            </li>\n            <li>\n            colVariables：包含将在热图中表示为颜色的值的列变量列表\n            </li>\n            <li>\n            Colv：确定列树状图是否以及如何重新排序。具有与上面的Rowv参数相同的选项，此外，当x是方阵时，Colv=\"Rowv\"意味着列应与行相同对待。\n            </li>\n            <li>\n            Rowv：确定行树状图是否以及如何重新排序。默认情况下，它为TRUE，这意味着根据行均值计算并重新排序树状图。如果为NULL或FALSE，则不计算树状图且不进行重新排序。如果是树状图，则按原样使用，即不进行任何重新排序。如果是整数向量，则根据向量的顺序计算并重新排序树状图。\n            </li>\n            <li>\n            na.rm：逻辑值，确定是否应删除NA\n            </li>\n            <li>\n            dendrogram：字符字符串，指示是否绘制'none'、'row'、'column'或'both'树状图。默认为'both'。但是，如果Rowv（或Colv）为FALSE或NULL且dendrogram为'both'，则会发出警告，并遵循Rowv（或Colv）参数。\n            </li>\n            <li>\n            scale：字符，指示值是否应在行方向或列方向上居中和缩放，或无。默认值为\"none\"。\n            </li>\n            <li>\n            trace：字符，指示值是否应在行方向或列方向上居中和缩放，或无。默认值为\"none\"。\n            </li>\n            <li>\n            density.info：字符字符串，指示是否在颜色键上叠加'histogram'、'density'图或无图（'none'）。\n            </li>\n            <li>\n            noteForCells：逻辑值，指示是否应将值放入热图的单元格中。\n            </li>\n            <li>\n            notecol：注释的颜色。如果指定，则在热图单元格中以指定的颜色注释值..\n            </li>\n            </ul>\n            <b>包</b></br>\n            BlueSky;gplots;</br>\n            <b>帮助</b></br>\n            help(heatmap.2,package='gplots')</br>\n            其他：单击R帮助按钮以获取详细的R帮助。您还可以输入help(labs)、help(geom_histogram)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)</br>\n            示例数据集：请参见示例数据集文件夹中的Heatmaps.Rdata</br>\n     "
+  }
+}

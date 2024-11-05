@@ -1,0 +1,20 @@
+{
+  "title": "Tamaño de Muestra, Modelo de Cox",
+  "navigation": "Modelo de Cox",
+  "howtouse": "Para calcular el tamaño de la muestra: especifique la potencia\nPara calcular la potencia: especifique el tamaño de la muestra",
+  "n": "Tamaño de Muestra",
+  "power": "Potencia (0-1)",
+  "sd": "Desviación Estándar de la Covariable",
+  "propevent": "Proporción con el Evento (0-1)",
+  "hr": "Razón de Riesgo de la Covariable",
+  "rsquared": "R-cuadrado entre la covariable y otras covariables (0-1); ingrese 0 para prueba no ajustada",
+  "siglevel": "Nivel de Significancia (0-1)",
+  "alternativeopt": "Hipótesis Alternativa",
+  "twosided": "Dos Caras",
+  "onesided": "Una Cara",
+  "help": {
+    "title": "Tamaño de Muestra, Modelo de Cox",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nEsta es una evaluación del tamaño de muestra para una sola covariable en un modelo de riesgos proporcionales de Cox. Calcula el tamaño de muestra o la potencia, cuando el usuario especifica el otro, dado una razón de riesgo a detectar.\n<br/><br/>\n<b>Tamaño de Muestra:</b> Especifique el número total de sujetos\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa es verdadera.\n<br/><br/>\n<b>Desviación Estándar de la Covariable:</b> Especifique la desviación estándar de la covariable relacionada con la razón de riesgo\n<br/><br/>\n<b>Razón de Riesgo, Grupo 1 vs Grupo 2:</b> Especifique la razón de riesgo deseada a detectar para la covariable\n<br/><br/>\n<b>Proporción con el Evento:</b> Especifique la proporción esperada de la muestra con el evento (o uno menos la proporción de censura). Si especifica una probabilidad de 1, asume que no hay censura.\n<br/><br/>\n<b>R-cuadrado entre la covariable y otras covariables; ingrese 0 para prueba no ajustada:</b> Especifique el valor de r-cuadrado (correlación múltiple al cuadrado), entre la covariable y \ntodas las otras covariables en el modelo de Cox. Un valor de 0 corresponde a una prueba no ajustada sin otras covariables.\n<br/><br/>\n<b>Nivel de Significancia:</b> Especifique el nivel de significancia deseado (es decir, error tipo I) de la prueba\n<br/><br/>\nEsto utiliza las funciones ssizeEpiCont.default y powerEpiCont.default en el paquete powerSurvEpi. Consulte el menú de tres puntos>Ayuda>Ayuda de Función R para más información.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> powerSurvEpi\n\t\t\t"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Attributvereinbarungsanalyse, Grundlegend",
+  "navigation": "Attributvereinbarung, Grundlegend",
+  "variablePartSelcted": "Wählen Sie die Variable für Probe/Teil",
+  "variableOpSelcted": "Wählen Sie die Variable für Bewerter/Betriebsführer",
+  "variableRespSelcted": "Wählen Sie die Variable für Attribut/Antwort",
+  "variableRefSelcted": "(Optional) Wählen Sie die Variable für Referenz/Standardantwort",
+  "alpha": "Konfidenzintervall (Alpha) zwischen 0 und 1",
+  "rowsTobeUsed": "Leer lassen, wenn alle Zeilen verwendet werden sollen. Andernfalls geben Sie die zu verwendenden Zeilen zur Analyse an (z.B. 1:25 oder 1,4,5,7:12)",
+  "help": {
+    "title": "Attributvereinbarungsanalyse",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFunktion zur Durchführung der Attributvereinbarungsanalyse\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatensatzdateien attributemsaAB.xlsx verwenden für \n\t\t\t\tzwei Betreiber, A und B, jeweils mit 20 Beobachtungen, die zweimal mit P- und F-Bewertungen wiederholt wurden.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSie können auch die Beispieldatensatzdatei attributemsaABCordered.RData mit drei Betreibern, A, B, C, jeweils mit 10 Beobachtungen, die zweimal mit \"geordneten\" (ordinalen) \n\t\t\t\tBewertungen wie Nicht einverstanden, Etwas nicht einverstanden, Neutral, Etwas einverstanden und Einverstanden wiederholt wurden, ausprobieren.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÖffnen Sie die Dateien im Datenraster mit dem Menü Datei öffnen\n\t\t\t"
+  }
+}

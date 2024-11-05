@@ -1,0 +1,18 @@
+{
+  "title": "応答面モデルによる実験計画分析（定量的）",
+  "navigation": "設計分析 - 応答面モデル",
+  "modelname": "応答面モデル名を入力してください",
+  "dependent": "応答（従属）変数",
+  "formulaboxhint": "上記の数式ビルダーボックスにSO(var1, var2,...)を入力して二次効果や相互作用を追加することもできます。または、rsmパッケージからFO(...),...を使用できます。",
+  "independent": "数値予測子 - 数式変数を下に挿入してください",
+  "generateContourPlotChk": "等高線（プロット）を表示",
+  "generateRSMPlotChk": "応答面（プロット）を表示",
+  "generatePathSteepestAscentChk": "リッジ分析からの最急上昇経路を表示",
+  "checkShapiroNormalityTestChk": "シャピロ正規性検定",
+  "normalityPlotsChk": "正規性を確認するためのプロット",
+  "help": {
+    "title": "モデル数式ビルダーを使用した応答面モデル",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t応答面回帰 - 応答面成分を持つ線形モデルを適合させ、適切な分析と要約を生成します\n\t\t\t\t<br/> 数式ビルダーでは、SO(var1, var2, var3, ...)またはFO(var1, ..)またはrsmパッケージの他の関数を入力できます - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細については、次のRヘルプを参照してください\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

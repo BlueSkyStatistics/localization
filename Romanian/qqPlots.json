@@ -1,0 +1,27 @@
+{
+  "title": "Grafice Q-Q",
+  "navigation": "Q-Q",
+  "x": "Axa X, specificați o variabilă numerică",
+  "alpha": "Opacitate (0-1)",
+  "y": "Formă, specificați o variabilă factor",
+  "color": "Culoare, specificați o variabilă factor",
+  "referenceline": "Linie de referință",
+  "band": "Arată benzi",
+  "detrend": "Detrendează",
+  "flip": "Răsturnați axa",
+  "distribution": "Selectați o distribuție",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "label1": "Parametrii distribuției, de exemplu, pentru o distribuție normală, parametrii distribuției ar putea fi media=2, sd=2, așa că introduceți media=2, sd=2. Pentru o distribuție exponențială, parametrii ar putea fi rata=2, așa că introduceți rata=2.",
+  "specify_a_title": "Introduceți un titlu",
+  "dparams": "Introduceți opțional parametrii distribuției",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare fațete",
+  "Facetscale": "Scală fațete",
+  "help": {
+    "title": "Grafice Q-Q",
+    "r_help": "help(stat_qq_point,package='qqplotr')",
+    "body": "\n            <b>Descriere</b></br>\n            Un grafic Q–Q (quantile-quantile) este un grafic de probabilitate, care este o metodă grafică pentru compararea a două distribuții de probabilitate prin reprezentarea quantilelor lor una față de cealaltă. În mod implicit, comparăm distribuția de probabilitate a variabilei selectate cu distribuția normală, totuși puteți compara cu mai multe alte distribuții, inclusiv beta, cauchy, chisq, exp, f, gamma... De asemenea, puteți specifica parametrii distribuției asociați cu distribuția cu care se compară. Faceți clic pe butonul opțiuni din dialogul principal pentru a selecta o distribuție și a specifica parametrii distribuției. Puteți selecta o variabilă factor pentru a grupa variabila selectată. În acest caz, se desenează un grafic Q-Q separat pentru fiecare grup.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_line(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_point(distribution=\"norm\",detrend = TRUE) +\n             coord_flip() +\n             labs(x = \"Puncte de probabilitate\",y =\"Quantile de eșantion\",title = \"Grafic QQ pentru variabila var1\")</br></br>\n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_line(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_point(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE)+\n             labs(x = \"Puncte de probabilitate\",y =\"Quantile de eșantion\",title = \"Grafic QQ pentru variabila var1\")\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            aes(): Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            sample: variabila numerică pentru care se plotează graficul P-P\n            </li>\n            <li>\n            stat_qq_point: Aceasta este o versiune modificată a ggplot2::stat_qq cu unele ajustări de parametru și o nouă opțiune de detrendare a punctelor.\n            </li>\n            <li>\n            stat_qq_line: Trasează o linie de referință bazată pe quantilele datelor, ca în stats::qqline.\n            </li>\n            <li>\n            stat_qq_band: Trasează benzi de încredere bazate pe trei metode: \"normal\",\"boot\" și\"ts\":\n            \"normal\" construiește benzi de încredere simultane bazate pe intervale de încredere normale;\n            \"boot\" creează benzi de încredere punctuale bazate pe un bootstrap parametric;\n            \"ts\" construiește benzi de încredere sensibile la coadă, așa cum a fost propus de Aldor-Noiman et al. (2013).\n            </li>\n            <li>\n            shape: O variabilă factor opțională care grupează valorile atribuite eșantionului. Un grafic P-P separat este creat pentru fiecare grup, așa cum este determinat de nivelurile variabilei factor​. Fiecare grup este indicat printr-o formă diferită\n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (Aceasta este opțional)​\n            </li>\n            <li>\n            facet_grid(): Așezați panourile într-o rețea (Aceasta este opțional)​. Consultați help(facet_grid) pentru mai multe detalii.\n            </li>\n            <li>  ​\n            coord_flip(): Răsturnați axa (Aceasta este opțional)​\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>Ajutor</b></br>\n            help(stat_qq_point,package='qqplotr')</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(stat_qq_point), help(aes), help(facet_grid), help(coord_flip)​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n"
+  }
+}

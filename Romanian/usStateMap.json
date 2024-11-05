@@ -1,0 +1,15 @@
+{
+  "title": "Hartă a Statelor din SUA",
+  "navigation": "Hartă a Statelor din SUA",
+  "region": "Variabilă cu numele statelor din SUA:",
+  "value": "Variabilă cu valorile de mapat:",
+  "colors": "Introduceți numărul de culori",
+  "zoomByStates": "Introduceți statele în care doriți să faceți zoom, de exemplu, california,oregon,washington",
+  "specify_a_title": "Introduceți un titlu",
+  "legend": "Legendă:",
+  "help": {
+    "title": "Hartă a Statelor din SUA",
+    "r_help": "help(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>Descriere</b></br>\n            Trasează o hartă a statelor și permite opțional să faceți zoom în 1 sau mai multe state\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: Un data.frame cu o coloană numită \"region\" și o coloană numită \"value\". Elementele din coloana \"region\" trebuie să se potrivească exact cu modul în care sunt numite regiunile în coloana \"region\" din state.map. Rulați comenzile din secțiunea de mai jos pentru a accesa setul de date state.map\n            </li>\n            <li>\n            Titlu: Un titlu opțional pentru hartă.\n            </li>\n            <li>\n            Legendă: Un nume opțional pentru legendă.\n            </li>\n            <li>\n            num_colors: Numărul de culori pe hartă. O valoare de 1 va folosi o scară continuă. O valoare în [2, 9] va folosi atâtea culori.\n            </li>\n            <li>\n            zoom: Un vector opțional de state pentru a face zoom. Elementele acestui vector trebuie să se potrivească exact cu numele statelor așa cum apar în coloana \"region\" din ?state.regions.\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Ajutor</b></br>\n            help(state_choropleth, package='choroplethr')</br>\n            <b>Altele</b></br>\n            <code> \n            # Rulați codul de mai jos pentru a accesa setul de date state.map<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+  }
+}

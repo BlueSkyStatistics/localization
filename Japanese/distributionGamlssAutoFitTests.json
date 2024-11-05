@@ -1,0 +1,15 @@
+{
+  "title": "異なるパラメトリックgamlss.family分布の適合（Rパッケージgamlssから）",
+  "navigation": "gamlssによる分布適合",
+  "variableSelcted": "分布を含む変数を選択してください",
+  "distType": "試すgamlss.family分布のタイプ",
+  "tryGamlssChk": "チェックされている場合（大きなデータポイントでは遅くなります）、モデルの適合に失敗した場合はgamlss()を試みます",
+  "traceFitProcessingChk": "処理中に詳細情報を表示",
+  "additionalDetailChk": "すべての成功した適合テストのAICスコアとすべての失敗した適合テストのリストを表示",
+  "wormPlotChk": "ワームプロットグラフを描画",
+  "help": {
+    "title": "異なるパラメトリックgamlss.family分布の適合",
+    "r_help": "help(fitDist , package = gamlss)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tfitDist()関数は、gamlssML()関数を使用して、引数typeで指定されたすべての関連するパラメトリックgamlss.family分布を単一のデータベクター（説明変数なし）に適合させます。最終的な周辺分布は、ペナルティkを持つ一般化されたAkaike情報基準によって選択されます。\n\t\t\t\tデフォルトはk=2、すなわちAICであり、これは「最良」の分布が古典的AICに従って選択されることを意味します。\n\t\t\t\tkは任意の値に設定できます。たとえば、BICの場合はlog(n)（この時点ではダイアログに提供されていません）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(fitDist , package = gamlss)を使用し、ワームプロットについてはhelp(wp , package = gamlss)を参照してください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t以下は異なるタイプの引数です：\n\t\t\t\t<br/>\n\t\t\t\trealAll: 実数直線上で定義されたすべてのgamlss.family（この時点ではダイアログに提供されていません）連続分布、すなわちreallineおよび正の実数直線realplus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\trealline: gamlss.family連続分布：\"NO\", \"GU\", \"RG\", \"LO\", \"NET\", \"TF\", \"TF2\", \"PE\", \"PE2\", \"SN1\", \"SN2\", \"exGAUS\", \"SHASH\", \"SHASHo\", \"SHASHo2\", \"EGB2\", \"JSU\", \"JSUo\", \"SEP1\", \"SEP2\", \"SEP3\", \"SEP4\", \"ST1\", \"ST2\", \"ST3\", \"ST4\", \"ST5\", \"SST\", \"GT\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\trealplus: 正の実数直線上のgamlss.family連続分布：\"EXP\", \"GA\", \"IG\", \"LOGNO\", \"LOGNO2\", \"WEI\", \"WEI2\", \"WEI3\", \"IGAMMA\", \"PARETO2\", \"PARETO2o\", \"GP\", \"BCCG\", \"BCCGo\", \"exGAUS\", \"GG\", \"GIG\", \"LNO\", \"BCTo\", \"BCT\", \"BCPEo\", \"BCPE\", \"GB2\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\treal0to1: 0から1までのgamlss.family連続分布：\"BE\", \"BEo\", \"BEINF0\", \"BEINF1\", \"BEOI\", \"BEZI\", \"BEINF\", \"GB1\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tcounts: カウント用のgamlss.family分布：\"PO\", \"GEOM\", \"GEOMo\", \"LG\", \"YULE\", \"ZIPF\", \"WARING\", \"GPO\", \"DPO\", \"BNB\", \"NBF\", \"NBI\", \"NBII\", \"PIG\", \"ZIP\", \"ZIP2\", \"ZAP\", \"ZALG\", \"DEL\", \"ZAZIPF\", \"SI\", \"SICHEL\", \"ZANBI\", \"ZAPIG\", \"ZINBI\", \"ZIPIG\", \"ZINBF\", \"ZABNB\", \"ZASICHEL\", \"ZINBF\", \"ZIBNB\", \"ZISICHEL\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tbinom: 二項型データ用のgamlss.family分布：\"BI\", \"BB\", \"DB\", \"ZIBI\", \"ZIBB\", \"ZABI\", \"ZABB\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tfitDist()関数は、gamlssML()関数を使用して異なるモデルを適合させます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">分布適合の良い概要については、https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-bestを参照してください。</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
+  }
+}

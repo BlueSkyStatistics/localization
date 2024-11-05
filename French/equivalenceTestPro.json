@@ -1,0 +1,27 @@
+{
+  "title": "Test d'Équivalence",
+  "navigation": "Test d'Équivalence",
+  "variableSelcted1": "Sélectionnez la première variable",
+  "label1": "Pour comparer deux variables, choisissez soit une variable de regroupement (deux niveaux seulement), soit une seconde variable (indépendante ou appariée)",
+  "variableSelcted2": "Sélectionnez une seconde variable",
+  "label2": "Comment traiter la seconde variable si sélectionnée",
+  "groupingNeededRad": "La seconde variable sélectionnée est une variable de regroupement",
+  "referenceGpValue": "Tapez la valeur du groupe à utiliser comme référence",
+  "pairedTestRad": "Effectuer un test apparié - les secondes variables sélectionnées sont appariées",
+  "noneRad": "Aucune des réponses ci-dessus",
+  "targetMean": "Cible (moyenne) - non applicable pour l'échantillon à deux échantillons",
+  "lower": "Limite inférieure - valeur numérique de la limite inférieure d'équivalence",
+  "upper": "Limite supérieure - valeur numérique de la limite supérieure d'équivalence",
+  "smdChk": "Limites d'équivalence spécifiées en SMD (Différence de Moyenne Standardisée)",
+  "label3": "Type de test",
+  "EQUtestRad": "Effectuer un test d'équivalence",
+  "METtestRad": "Effectuer un test d'effets minimaux (MET)",
+  "alpha": "niveau alpha (par défaut = 0.05)",
+  "HedgesCorrectionChk": "Calculer automatiquement la correction de Hedges (sinon montre d de Cohen)",
+  "plotChk": "Graphique de consonance (cela peut prendre un certain temps pour afficher le graphique)",
+  "help": {
+    "title": "Test d'Équivalence",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer un test d'équivalence ou un test d'effets minimaux (MET)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(t_TOST, package = TOSTER)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé iris avec le menu Charger le jeu de données en sélectionnant le jeu de données iris dans le second menu déroulant (tapez rapidement iris)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSélectionnez Sepal.Length comme première variable et (facultativement) choisissez Sepal.Width comme seconde variable, et sélectionnez le test apparié\n\t\t\t\t<br/>\n\t\t\t\ttapez 5.5 comme limite inférieure et 8.5 comme limite supérieure pour la marge d'équivalence, cliquez sur exécuter \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel à https://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html\n\t\t\t"
+  }
+}

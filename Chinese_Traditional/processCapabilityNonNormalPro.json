@@ -1,0 +1,29 @@
+{
+  "title": "過程能力（非正態）",
+  "navigation": "過程能力（非正態）",
+  "printObjectSummaryChk": "列印過程能力的QCC物件摘要",
+  "label1": "選擇最適合數據的分佈函數",
+  "variableSelcted": "選擇要分析的變數（觀察數據）",
+  "rowsTobeUsed": "如果選擇，將用於分析過程能力的行（例如，指定為1:25或1,4,5,7:12）",
+  "lower": "LSL - 下限規範的數值（輸入NA以指定單邊規範限制）",
+  "upper": "USL - 上限規範的數值（輸入NA以指定單邊規範限制）",
+  "target": "目標規範限制（可選）",
+  "selectDistFuncWeibullRad": "威布爾",
+  "selectDistFuncExpRad": "指數",
+  "selectDistFuncGammaRad": "伽瑪",
+  "selectDistFuncLnormalRad": "對數正態",
+  "selectDistFuncPoissonRad": "泊松",
+  "selectDistFuncNBinomRad": "負二項",
+  "selectDistFuncGeomRad": "幾何",
+  "selectDistFuncBetaRad": "貝塔",
+  "selectDistFuncUnifRad": "均勻",
+  "selectDistFuncLogisRad": "邏輯斯",
+  "selectDistFuncCauchyRad": "柯西",
+  "selectDistFuncNormRad": "正態",
+  "digits": "數字 - 顯示的數字位數",
+  "help": {
+    "title": "非正態分佈的過程能力",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tqcc函數計算能力指數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), 和help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以從qcc包中加載名為pistonrings的數據集，通過選擇qcc包然後選擇pistonrings數據集的加載數據集菜單\n\t\t\t\t<br/>\n\t\t\t\t選擇選項1，直徑作為變數（觀察..），樣本作為分組變數，\n\t\t\t\t<br/>\n\t\t\t\t在要使用的分組行中輸入1:25\n\t\t\t\t<br/>\n\t\t\t\t對於過程能力分析 - 在LSL中輸入73.95，在USL中輸入74.05，在目標限制中輸入74.0\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t請參閱qcc教程 https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
