@@ -29,35 +29,37 @@ jobs:
           echo "new_files=$NEW_FILES" >> $GITHUB_OUTPUT
           echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
           echo "##[endgroup]"
+          echo $NEW_FILES
+          echo $CHANGED_FILES
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install aiohttp
+      # - name: Install dependencies
+      #   run: |
+      #     python -m pip install --upgrade pip
+      #     pip install aiohttp
 
       
 
       - name: Run translation script for new files
         if: steps.file_changes.outputs.changed_files != ''
         run: |
-          FILES=$(echo "${{ steps.file_changes.outputs.new_files }}" | tr ' ' '\n')
-          for FILE in $FILES; do
-            if [[ $FILE == en/* ]]; then
+          # FILES=$(echo "${{ steps.file_changes.outputs.new_files }}" | tr ' ' '\n')
+          for FILE in ${{ steps.file_changes.outputs.new_files }}; do
+            # if [[ $FILE == en/* ]]; then
               echo "Processing NEW $FILE"
               python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" $FILE
-            fi
+            # fi
           done
-          FILES=$(echo "${{ steps.file_changes.outputs.changed_files }}" | tr ' ' '\n')
-          for FILE in $FILES; do
-            if [[ $FILE == en/* ]]; then
+          # FILES=$(echo "${{ steps.file_changes.outputs.changed_files }}" | tr ' ' '\n')
+          for FILE in ${{ steps.file_changes.outputs.changed_files }}; do
+            # if [[ $FILE == en/* ]]; then
               echo "Processing CHANGED $FILE"
               python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" $FILE
-            fi
+            # fi
           done
 
       # - name: Configure Git
