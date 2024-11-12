@@ -20,7 +20,8 @@ jobs:
       - name: Identify new or changed files
         id: file_changes
         run: |
-          git diff HEAD~1
+          echo "$GITHUB_REF"
+          git diff HEAD^1
 
           
       # echo "##[group]Checking for new or changed files in 'en' folder"
