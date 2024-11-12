@@ -20,7 +20,7 @@ jobs:
       - name: Identify new or changed files
         id: file_changes
         run: |
-          cd localization
+          echo $(ls)
           echo "##[group]Changed or new files"
           FILES=$(git diff --name-only HEAD~1 HEAD)
           echo "$FILES"
