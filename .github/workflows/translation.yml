@@ -17,6 +17,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Identify new or changed files
+        id: file_changes
+        run: |
+          cd localization
+          echo "##[group]Changed or new files"
+          FILES=$(git diff --name-only HEAD~1 HEAD)
+          echo "$FILES"
+          echo "##[endgroup]"
+          echo "::set-output name=files::$FILES"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -27,14 +37,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install aiohttp
 
-      - name: Identify new or changed files
-        id: file_changes
-        run: |
-          echo "##[group]Changed or new files"
-          FILES=$(git diff --name-only HEAD~1 HEAD)
-          echo "$FILES"
-          echo "##[endgroup]"
-          echo "::set-output name=files::$FILES"
+      
 
       - name: Run translation script for new files
         if: steps.file_changes.outputs.files != ''
