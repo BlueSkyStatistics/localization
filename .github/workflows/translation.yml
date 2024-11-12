@@ -21,7 +21,7 @@ jobs:
         id: file_changes
         run: |
           echo "$GITHUB_REF"
-          git diff HEAD^1
+          git diff $GITHUB_REF^1
 
           
       # echo "##[group]Checking for new or changed files in 'en' folder"
