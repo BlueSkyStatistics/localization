@@ -20,10 +20,7 @@ jobs:
       - name: Identify new or changed files
         id: file_changes
         run: |
-          echo $(ls)
-
-          git status
-          echo "${{ github.head_ref }}"
+          git diff --name-only HEAD~1 HEAD
 
           
       # echo "##[group]Checking for new or changed files in 'en' folder"
