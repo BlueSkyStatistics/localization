@@ -21,7 +21,7 @@ jobs:
         id: file_changes
         run: |
           git log
-          git diff --name-only HEAD~1 HEAD
+          git diff -- --name-only HEAD~1 HEAD
 
           
       # echo "##[group]Checking for new or changed files in 'en' folder"
