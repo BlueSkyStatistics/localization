@@ -20,7 +20,7 @@ jobs:
       - name: Identify new or changed files
         id: file_changes
         run: |
-          git diff -- --name-only HEAD~1 HEAD
+          echo $(git diff -- --name-only HEAD~1 HEAD)
 
           
       # echo "##[group]Checking for new or changed files in 'en' folder"
