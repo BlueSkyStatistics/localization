@@ -20,6 +20,7 @@ jobs:
       - name: Identify new or changed files
         id: file_changes
         run: |
+          git log
           git diff --name-only HEAD~1 HEAD
 
           
