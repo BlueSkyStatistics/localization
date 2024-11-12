@@ -23,7 +23,7 @@ jobs:
           echo "$GITHUB_REF"
           echo ${{ github.head_ref }}
           git fetch
-          git diff ${{ github.head_ref }}^1
+          git diff HEAD^1
 
           
       # echo "##[group]Checking for new or changed files in 'en' folder"
