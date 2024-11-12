@@ -23,41 +23,42 @@ jobs:
       - name: Identify new or changed files
         id: file_changes
         run: |
-          echo "$GITHUB_REF"
-          echo ${{ github.head_ref }}
-          git fetch
-          git diff HEAD^1
+          echo "##[group]Checking for new or changed files in 'en' folder"
+          NEW_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^A' | awk '{print $2}')
+          CHANGED_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^M' | awk '{print $2}')
+          echo "new_files=$NEW_FILES" >> $GITHUB_OUTPUT
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "##[endgroup]"
 
-          
-      # echo "##[group]Checking for new or changed files in 'en' folder"
-      # NEW_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^A' | awk '{print $2}')
-      # CHANGED_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^M' | awk '{print $2}')
-      # echo "NEW_FILES=$NEW_FILES" >> $GITHUB_ENV
-      # echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
-      # echo "##[endgroup]"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
 
-      # - name: Set up Python
-      #   uses: actions/setup-python@v5
-      #   with:
-      #     python-version: '3.13'
-
-      # - name: Install dependencies
-      #   run: |
-      #     python -m pip install --upgrade pip
-      #     pip install aiohttp
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
 
       
 
-      # - name: Run translation script for new files
-      #   if: steps.file_changes.outputs.files != ''
-      #   run: |
-      #     FILES=$(echo "${{ steps.file_changes.outputs.files }}" | tr ' ' '\n')
-      #     for FILE in $FILES; do
-      #       if [[ $FILE == en/* ]]; then
-      #         echo "Processing $FILE"
-      #         python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" $FILE
-      #       fi
-      #     done
+      - name: Run translation script for new files
+        if: steps.file_changes.outputs.changed_files != ''
+        run: |
+          FILES=$(echo "${{ steps.file_changes.outputs.new_files }}" | tr ' ' '\n')
+          for FILE in $FILES; do
+            if [[ $FILE == en/* ]]; then
+              echo "Processing NEW $FILE"
+              python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" $FILE
+            fi
+          done
+          FILES=$(echo "${{ steps.file_changes.outputs.changed_files }}" | tr ' ' '\n')
+          for FILE in $FILES; do
+            if [[ $FILE == en/* ]]; then
+              echo "Processing CHANGED $FILE"
+              python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" $FILE
+            fi
+          done
 
       # - name: Configure Git
       #   run: |
