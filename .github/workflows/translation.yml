@@ -33,6 +33,7 @@ jobs:
           echo $CHANGED_FILES
 
       - name: Set up Python
+        if: steps.file_changes.outputs.new_files != '' || steps.file_changes.outputs.changed_files != ''
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
@@ -85,7 +86,7 @@ jobs:
           exit(123)
           EOF
 
-          python tmp.py --new_files '${{ steps.file_changes.outputs.new_files }}' --changed_files '${{ steps.file_changes.outputs.new_files }}' --alita_project_id '${{ vars.ALITA_PROJECT_ID }}' --token '${{ secrets.LLM_TOKEN }}' --llm_url '${{ vars.LLM_URL }}' --prompt_version_id '${{ vars.PROMPT_VERSION_ID }}' --lang_map '${{ vars.LANG_MAP }}'
+          python tmp.py --new_files '${{ steps.file_changes.outputs.new_files }}' --changed_files '${{ steps.file_changes.outputs.changed_files }}' --alita_project_id '${{ vars.ALITA_PROJECT_ID }}' --token '${{ secrets.LLM_TOKEN }}' --llm_url '${{ vars.LLM_URL }}' --prompt_version_id '${{ vars.PROMPT_VERSION_ID }}' --lang_map '${{ vars.LANG_MAP }}'
           
           # echo "Processing NEW files"
           # python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.new_files }}
