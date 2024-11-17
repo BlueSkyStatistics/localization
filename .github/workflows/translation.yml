@@ -60,7 +60,7 @@ jobs:
           from traceback import format_exc
           from typing import Dict, List, Tuple
           from csv import DictWriter
-          import aiohttp
+          # import aiohttp
           import logging
           
           parser = argparse.ArgumentParser(
