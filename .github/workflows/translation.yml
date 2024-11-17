@@ -44,14 +44,54 @@ jobs:
 
       
 
-      - name: Run translation script for new files
+      - name: Run translation script
         if: steps.file_changes.outputs.new_files != '' || steps.file_changes.outputs.changed_files != ''
         run: |
-          echo "Processing NEW files"
-          python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.new_files }}
-          echo "Processing CHANGED $FILE"
-          python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.changed_files }}
+          echo > tmp.py << EOF
+          # pip install aiohttp
+          import argparse
+          import sys
+          import json
+          import asyncio
+          from datetime import datetime
+          from collections import defaultdict
+          from itertools import chain
+          from pathlib import Path
+          from traceback import format_exc
+          from typing import Dict, List, Tuple
+          from csv import DictWriter
+          import aiohttp
+          import logging
+          
+          parser = argparse.ArgumentParser(
+              prog='Translator',
+              description='Translator for new/changed .json files',
+              # epilog=''
+          )
+          parser.add_argument('--new_files', help='List of new files', default=None)
+          parser.add_argument('--changed_files', help='List of changed files', default=None)
+          parser.add_argument('--concurrent_tasks', help='Number of concurrent translation tasks', type=int, default=5)
+          parser.add_argument('--max_langs_per_request', help='Maximum languages per one prediction request', type=int, default=2)
+          
+          parser.add_argument('--alita_project_id', help='Project id in alita', required=True, type=int)
+          parser.add_argument('--token', help='Project id in alita', required=True, type=str)
+          parser.add_argument('--lang_map', help='A folder-name mapping of languages', required=True)
+          parser.add_argument('--llm_url', help='Llm prediction provider url', required=True, type=str)
+          parser.add_argument('--prompt_version_id', help='Prediction prompt version id in alita', required=True, type=int)
 
+          args = parser.parse_args()
+          print(args)
+          print(json.loads(args.lang_map))
+          exit(123)
+          EOF
+
+          python tmp.py --new_files ${{ steps.file_changes.outputs.new_files }} --changed_files ${{ steps.file_changes.outputs.new_files }} --alita_project_id '${{ vars.ALITA_PROJECT_ID }}' --token '${{ secrets.LLM_TOKEN }}' --llm_url '${{ vars.LLM_URL }}' --prompt_version_id '${{ vars.PROMPT_VERSION_ID }}' --lang_map '${{ vars.LANG_MAP }}'
+          
+          # echo "Processing NEW files"
+          # python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.new_files }}
+          # echo "Processing CHANGED $FILE"
+          # python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.changed_files }}
+          
       # - name: Configure Git
       #   run: |
       #    git config --global user.name 'github-actions[bot]'
