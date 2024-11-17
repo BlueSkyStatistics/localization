@@ -319,6 +319,17 @@ jobs:
           # python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.new_files }}
           # echo "Processing CHANGED $FILE"
           # python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.changed_files }}
+
+      - name: Upload logs artifact
+        # https://github.com/actions/upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: run_log
+          path: |
+            .tmp/_log.log
+            .tmp/_exec_log.csv
+          retention-days: 1
+          if-no-files-found: warn
           
       # - name: Configure Git
       #   run: |
