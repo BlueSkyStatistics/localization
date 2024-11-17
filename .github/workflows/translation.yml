@@ -26,8 +26,8 @@ jobs:
           echo "##[group]Checking for new or changed files"
           NEW_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^A' | awk '{print $2}')
           CHANGED_FILES=$(git diff --name-status HEAD~1 HEAD | grep '^M' | awk '{print $2}')
-          echo "new_files='$NEW_FILES'" >> $GITHUB_OUTPUT
-          echo "changed_files='$CHANGED_FILES'" >> $GITHUB_OUTPUT
+          echo "new_files=($NEW_FILES)" >> $GITHUB_OUTPUT
+          echo "changed_files=($CHANGED_FILES)" >> $GITHUB_OUTPUT
           echo "##[endgroup]"
           echo $NEW_FILES
           echo $CHANGED_FILES
