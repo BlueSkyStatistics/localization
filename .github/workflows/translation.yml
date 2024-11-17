@@ -47,7 +47,7 @@ jobs:
       - name: Run translation script
         if: steps.file_changes.outputs.new_files != '' || steps.file_changes.outputs.changed_files != ''
         run: |
-          echo > tmp.py << EOF
+          cat > tmp.py << EOF
           # pip install aiohttp
           import argparse
           import sys
