@@ -243,9 +243,7 @@ def extract_data(folder_path: Path, languages: Dict[str, str], force_overwrite: 
     logger.info('Extraction done')
 
 
-
 if __name__ == '__main__':
-    # if args
     new_files = [Path(i.strip()) for i in args.new_files.split('\n') if str(i).startswith('en/')]
     changed_files = [Path(i.strip()) for i in args.changed_files.split('\n') if str(i).startswith('en/')]
 
