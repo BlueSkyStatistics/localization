@@ -45,7 +45,7 @@ jobs:
       
 
       - name: Run translation script for new files
-        if: steps.file_changes.outputs.changed_files != ''
+        if: steps.file_changes.outputs.new_files != '' || steps.file_changes.outputs.changed_files != ''
         run: |
           echo "Processing NEW files"
           python -c "import sys; print(f'python file: {sys.argv[1]}' if len(sys.argv) > 1 else 'No args')" ${{ steps.file_changes.outputs.new_files }}
