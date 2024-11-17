@@ -100,7 +100,7 @@ jobs:
           args.lang_map = json.loads(args.lang_map)
           
           # Constants
-          TMP_DIR = Path('./tmp')
+          TMP_DIR = Path('.tmp')
           TMP_DIR.mkdir(parents=True, exist_ok=True)
           PREDICT_URL = f'{args.llm_url}/api/v1/prompt_lib/predict/prompt_lib/{args.alita_project_id}/{args.prompt_version_id}'
           
