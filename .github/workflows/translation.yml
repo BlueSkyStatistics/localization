@@ -163,7 +163,9 @@ jobs:
                   return
           
               payload = {'user_input': json.dumps({'languages': filtered_langs, 'original_json': contents})}
-              exec_log[file_path.name][i['key']] = 'MOCKED'
+              print(payload)
+              for i in lang_list:
+                  exec_log[file_path.name][i['key']] = 'MOCKED'
               return
           
               try:
