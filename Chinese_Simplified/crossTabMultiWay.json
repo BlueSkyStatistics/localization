@@ -1,7 +1,107 @@
 {
-  "help": {
     "title": "交叉表",
-    "r_help": "help(CrossTable, package=gmodels)",
-    "body": "\n            <b>描述</b></br>\n创建具有行、列和层变量的交叉表。当指定多个行和列变量时，我们为每对行和列变量生成一个单独的交叉表。此外，还显示以下内容<br/>\n预期计数<br/>\n行和列百分比<br/>\n未标准化、标准化和调整后的残差<br/>\n带有赔率比的卡方、McNemar和Fisher统计量<br/>\n注意：我们会自动删除所有计数为0的行。这可能会影响卡方、McNemar和Fisher测试的运行。例如，您可能期望有3行和2列，因为行变量有3个级别，列变量有2个级别。然而，由于某个行级别的计数全为0，您得到的是一个2*2的表。虽然Fisher测试的Monte Carlo模拟在3*2的表上运行，但它不适用于2*2的表，正常的Fisher测试将被运行。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE,long_table = FALSE )\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 行变量\n</li>\n<li>\ny: 列变量\n</li>\n<li>\nlayers: 一个或多个层变量\n</li>\n<li>\nweights: 包含频率权重的数值变量\n</li>\n<li>\ndatasetname: 从中选择x、y和层（变量）的数据集名称\n</li>\n<li>\nchisq: 如果为TRUE，则生成卡方表\n</li>\n<li>\nprop.r: 如果为TRUE，则生成行百分比\n</li>\n<li>\nprop.c: 如果为TRUE，则生成列百分比\n</li>\n<li>\nresid: 如果为TRUE，则生成未标准化的残差\n</li>\n<li>\nsresid: 如果为TRUE，则生成标准化的残差\n</li>\n<li>\nexpected: 如果为TRUE，则生成预期计数\n</li>\n<li>\nasresid: 如果为TRUE，则生成调整后的残差\n</li>\n<li>\nlong_table: 引入长表选项以适应对大量变量进行的分析。选择长格式控制输出表的宽度，使其易于查看结果，而无需在输出窗口中向右滚动。 \n</li>\n</ul>\n<b>值</b></br>\n包含结果的列表\n<br/>\n<b>示例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>包</b></br>\ngmodels</br>\n<b>帮助</b></br>\n要详细帮助，请单击此对话框覆盖右上角的R图标，或通过在输出窗口中单击+创建R代码块，运行以下命令help(CrossTable, package=gmodels)  \n    "
-  }
+    "navigation": "交叉表",
+    "label6": "当指定多个行变量和列变量时，我们为每一对行变量和列变量生成一个单独的交叉表。",
+    "rowlabel": "行变量",
+    "collabel": "列变量",
+    "layerlabel": "层变量",
+    "weightlabel": "权重 (一个)",
+    "label1": "统计量",
+    "chisqlabel": "卡方检验",
+    "chisqNoContCorrection": "卡方检验不应用连续性校正",
+    "chisqContCorrection": "卡方检验应用连续性校正 (适用于2x2表)",
+    "chisqSimulatePValues": "使用蒙特卡洛模拟计算P值",
+    "chisqNoOfReplicates": "蒙特卡洛测试中使用的重复次数",
+    "mcnemar": "McNemar检验",
+    "mcnemarContCorrection": "McNemar检验应用连续性校正 (适用于2x2表)",
+    "fisher": "Fisher检验",
+    "fisherSimulatePValues": "使用蒙特卡洛模拟计算P值",
+    "fisherNoOfReplicates": "蒙特卡洛测试中使用的重复次数",
+    "fishersAlternative": "Fisher精确检验的备择假设",
+    "label2": "残差",
+    "unstandardized": "未标准化",
+    "standardized": "标准化",
+    "adjusted": "调整后",
+    "label3": "百分比",
+    "rowpercent": "行",
+    "colpercent": "列",
+    "label4": "计数",
+    "expected": "期望值",
+    "label5": "输出格式",
+    "longTbl": "列表样式表格 (当有许多级别时限制表格宽度)",
+	"help": {
+		"title": "交叉表",
+		"r_help": "help(CrossTable, package=gmodels)",
+		"body":"<b>描述</b></br>
+创建一个带有行、列和层变量的交叉表。当指定多个行和列变量时，我们会为每一对行和列变量生成一个单独的交叉表。此外，还显示以下内容：<br/>
+期望计数<br/>
+行和列百分比<br/>
+非标准化、标准化和调整后的残差<br/>
+卡方、赔率比、McNemar 和 Fisher 统计量<br/>
+注意：我们会自动删除所有计数为 0 的行。这可能会影响卡方、McNemar 和 Fisher 测试的执行方式。例如，您可能期望 3 行和 2 列，因为行变量有 3 个级别，列变量有 2 个级别。然而，如果某一行的所有计数都为 0，您将得到一个 2*2 的表格。尽管 Monte Carlo 模拟的 Fisher 测试在 3*2 表格上执行，但它不适用于 2*2 表格，此时会执行正常的 Fisher 测试。
+<br/>
+<b>用法</b>
+<br/>
+<code> 
+BSkyCrossTable(x,y,层, 权重, 数据集名称, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE, long_table = FALSE )
+</code> <br/>
+<b>参数</b><br/>
+<ul>
+<li>
+x: 行变量
+</li>
+<li>
+y: 列变量
+</li>
+<li>
+层: 一个或多个层变量
+</li>
+<li>
+权重: 一个包含频率权重的数值变量
+</li>
+<li>
+数据集名称: 从中选择 x、y 和层（变量）的数据集名称
+</li>
+<li>
+chisq: 如果为 TRUE，生成卡方表
+</li>
+<li>
+prop.r: 如果为 TRUE，生成行百分比
+</li>
+<li>
+prop.c: 如果为 TRUE，生成列百分比
+</li>
+<li>
+resid: 如果为 TRUE，生成非标准化残差
+</li>
+<li>
+sresid: 如果为 TRUE，生成标准化残差
+</li>
+<li>
+expected: 如果为 TRUE，生成期望计数
+</li>
+<li>
+asresid: 如果为 TRUE，生成调整后的残差
+</li>
+<li>
+long_table: 引入了长表选项，以适应处理大量变量的分析。选择长格式控制输出表格的宽度，使得可以轻松查看结果，而无需向右滚动输出窗口。
+</li>
+</ul>
+<b>结果</b></br>
+一个包含结果的列表
+<br/>
+<b>示例</b></br>
+<code> 
+BSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>
+层=c('type'),数据集名称='Dataset2',<br/>
+chisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>
+resid=FALSE,sresid=FALSE,expected=FALSE,<br/>
+asresid=FALSE)</br>
+BSkyFormat(BSky_Multiway_Cross_Tab)</br>
+</code> <br/>
+<b>包</b></br>
+gmodels</br>
+<b>帮助</b></br>
+详细帮助请点击此对话框右上角的 R 图标，或执行以下命令：help(CrossTable, package=gmodels)，并通过点击输出窗口中的 + 创建一个 R 代码块。"
+	}
 }

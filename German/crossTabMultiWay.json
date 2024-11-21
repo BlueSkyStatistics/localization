@@ -1,7 +1,107 @@
 {
-  "help": {
     "title": "Kreuztabelle",
-    "r_help": "hilfe(KreuzTabelle, paket=gmodels)",
-    "body": "\n            <b>Beschreibung</b></br>\nErstellt eine Kreuztabelle mit Zeilen-, Spalten- und Schichtenvariablen. Wenn mehrere Zeilen- und Spaltenvariablen angegeben sind, generieren wir eine separate Kreuztabelle für jedes Paar von Zeilen- und Spaltenvariablen. Zusätzlich werden die folgenden Informationen angezeigt:<br/>\nErwartete Häufigkeiten<br/>\nZeilen- und Spaltenprozentsätze<br/>\nUnstandardisierte, standardisierte und angepasste Residuen<br/>\nChi-Quadrat mit Odds Ratio, McNemar- und Fisher-Statistiken<br/>\nHINWEIS: Wir entfernen automatisch alle Zeilen, in denen jede Häufigkeit 0 ist. Dies kann Auswirkungen darauf haben, wie die Chi-Quadrat-, McNemar- und Fisher-Tests durchgeführt werden. Zum Beispiel könnten Sie 3 Zeilen und 2 Spalten erwarten, da die Zeilenvariable 3 Ebenen und die Spaltenvariable 2 Ebenen hat. Wenn jedoch eine Zeilenebene alle 0-Häufigkeiten hat, erhalten Sie eine 2*2-Tabelle. Während die Monte-Carlo-Simulation mit dem Fisher-Test auf einer 3*2-Tabelle läuft, gilt dies nicht für eine 2*2-Tabelle, und der normale Fisher-Test wird durchgeführt. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, gewicht, datensatzname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE,long_table = FALSE )\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: Zeilenvariable\n</li>\n<li>\ny: Spaltenvariable\n</li>\n<li>\nlayers: eine oder mehrere Variablen für Schichten\n</li>\n<li>\ngewichte: eine numerische Variable, die die Häufigkeitsgewichte enthält\n</li>\n<li>\ndatensatzname: Name des Datensatzes, aus dem x, y und layers (Variablen) ausgewählt werden\n</li>\n<li>\nchisq:  wenn TRUE, wird eine Chi-Quadrat-Tabelle generiert\n</li>\n<li>\nprop.r: Zeilenprozentsätze werden erzeugt, wenn dies TRUE ist\n</li>\n<li>\nprop.c: Spaltenprozentsätze werden erzeugt, wenn dies TRUE ist\n</li>\n<li>\nresid: wenn TRUE, werden unstandardisierte Residuen erzeugt\n</li>\n<li>\nsresid: wenn TRUE, werden standardisierte Residuen erzeugt\n</li>\n<li>\nerwartet: Erwartete Häufigkeiten werden erzeugt, wenn dies TRUE ist\n</li>\n<li>\nasresid:  wenn TRUE, werden angepasste Residuen erzeugt\n</li>\n<li>\nlong_table: Die Option für lange Tabellen wurde eingeführt, um Analysen mit einer großen Anzahl von Variablen zu berücksichtigen. Die Wahl des langen Formats steuert die Breite der Ausgabetabelle, sodass es einfach ist, Ergebnisse zu sehen, ohne nach rechts im Ausgabefenster scrollen zu müssen. \n</li>\n</ul>\n<b>Wert</b></br>\nEine Liste mit den Ergebnissen\n<br/>\n<b>Beispiel</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('hersteller'),y=c('modell'),<br/>\nlayers=c('typ'),datensatzname='Datensatz2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>Paket</b></br>\ngmodels</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl aus: hilfe(KreuzTabelle, paket=gmodels), indem Sie einen R-Code-Chunk erstellen, indem Sie + im Ausgabefenster klicken  \n    "
-  }
+    "navigation": "Kreuztabelle",
+    "label6": "Wenn mehrere Zeilen- und Spaltenvariablen angegeben sind, erstellen wir für jedes Paar aus Zeilen- und Spaltenvariablen eine separate Kreuztabelle.",
+    "rowlabel": "Zeilenvariable",
+    "collabel": "Spaltenvariable",
+    "layerlabel": "Schichtvariable(n)",
+    "weightlabel": "Gewichtung (eine)",
+    "label1": "Statistiken",
+    "chisqlabel": "Chisq",
+    "chisqNoContCorrection": "Keine Kontinuitätskorrektur für den Chi-Quadrat-Test",
+    "chisqContCorrection": "Kontinuitätskorrektur für den Chi-Quadrat-Test anwenden (Gilt für eine 2x2-Tabelle)",
+    "chisqSimulatePValues": "P-Werte mit Monte-Carlo-Simulation berechnen",
+    "chisqNoOfReplicates": "Anzahl der Wiederholungen im Monte-Carlo-Test",
+    "mcnemar": "McNemar",
+    "mcnemarContCorrection": "Kontinuitätskorrektur für den McNemar-Test anwenden (Gilt für eine 2x2-Tabelle)",
+    "fisher": "Fisher",
+    "fisherSimulatePValues": "P-Werte mit Monte-Carlo-Simulation berechnen",
+    "fisherNoOfReplicates": "Anzahl der Wiederholungen im Monte-Carlo-Test",
+    "fishersAlternative": "Alternativhypothese für den Fisher-Exakt-Test",
+    "label2": "Residuals",
+    "unstandardized": "Unstandardisiert",
+    "standardized": "Standardisiert",
+    "adjusted": "Angepasst",
+    "label3": "Prozentangaben",
+    "rowpercent": "Zeile",
+    "colpercent": "Spalte",
+    "label4": "Zählungen",
+    "expected": "Erwartet",
+    "label5": "Ausgabeformat",
+    "longTbl": "Listenstil-Tabelle (Tabellenbreite bei vielen Ebenen einschränken)"
+    "help": {
+        "title": "Kreuztabelle",
+        "r_help": "help(CrossTable, package=gmodels)",	
+	"body":"<b>Beschreibung</b></br>
+Erstellt eine Kreuztabelle mit Zeilen-, Spalten- und Schichtvariablen. Wenn mehrere Zeilen- und Spaltenvariablen angegeben sind, wird für jedes Paar von Zeilen- und Spaltenvariablen eine separate Kreuztabelle erstellt. Zusätzlich werden die folgenden angezeigt:<br/>
+Erwartete Werte<br/>
+Zeilen- und Spaltenprozentsätze<br/>
+Nicht standardisierte, standardisierte und angepasste Residuen<br/>
+Chi-Quadrat mit Odds Ratio, McNemar- und Fisher-Statistiken<br/>
+HINWEIS: Wir entfernen automatisch alle Zeilen, in denen jeder Zähler 0 ist. Dies kann beeinflussen, wie die Tests Chi-Quadrat, McNemar und Fisher durchgeführt werden. Zum Beispiel können Sie drei Zeilen und zwei Spalten erwarten, da die Zeilenvariable drei Stufen und die Spaltenvariable zwei Stufen hat. Wenn jedoch eine Zeilenebene nur Nullen enthält, erhalten Sie eine 2*2-Tabelle. Während die Monte-Carlo-Simulation mit dem Fisher-Test auf einer 3*2-Tabelle läuft, gilt sie nicht für eine 2*2-Tabelle, und der normale Fisher-Test wird durchgeführt. 
+<br/>
+<b>Verwendung</b>
+<br/>
+<code> 
+BSkyCrossTable(x,y,schichten, gewicht, datensatzname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE, long_table = FALSE )
+</code> <br/>
+<b>Argumente</b><br/>
+<ul>
+<li>
+x: Zeilenvariable
+</li>
+<li>
+y: Spaltenvariable
+</li>
+<li>
+schichten: eine oder mehrere Variablen für Schichten
+</li>
+<li>
+gewicht: eine numerische Variable, die die Häufigkeitsgewichte enthält
+</li>
+<li>
+datensatzname: Name des Datensatzes, aus dem x, y und Schichten (Variablen) ausgewählt werden
+</li>
+<li>
+chisq: Wenn TRUE, wird eine Chi-Quadrat-Tabelle generiert
+</li>
+<li>
+prop.r: Zeilenprozentsätze werden erzeugt, wenn dies TRUE ist
+</li>
+<li>
+prop.c: Spaltenprozentsätze werden erzeugt, wenn dies TRUE ist
+</li>
+<li>
+resid: Wenn TRUE, werden nicht standardisierte Residuen generiert
+</li>
+<li>
+sresid: Wenn TRUE, werden standardisierte Residuen generiert
+</li>
+<li>
+expected: Erwartete Werte werden erzeugt, wenn dies TRUE ist
+</li>
+<li>
+asresid: Wenn TRUE, werden angepasste Residuen generiert
+</li>
+<li>
+long_table: Die Option für lange Tabellen wurde eingeführt, um Analysen mit einer großen Anzahl von Variablen zu ermöglichen. Die Wahl des langen Formats steuert die Breite der Ausgabetabelle, sodass die Ergebnisse leicht angezeigt werden können, ohne in der Ausgabeseite nach rechts scrollen zu müssen.
+</li>
+</ul>
+<b>Ergebnis</b></br>
+Eine Liste mit den Ergebnissen
+<br/>
+<b>Beispiel</b></br>
+<code> 
+BSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>
+schichten=c('type'),datensatzname='Dataset2',<br/>
+chisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>
+resid=FALSE,sresid=FALSE,expected=FALSE,<br/>
+asresid=FALSE)</br>
+BSkyFormat(BSky_Multiway_Cross_Tab)</br>
+</code> <br/>
+<b>Paket</b></br>
+gmodels</br>
+<b>Hilfe</b></br>
+Für detaillierte Hilfe klicken Sie auf das R-Symbol oben rechts in diesem Dialog-Overlay oder führen Sie den folgenden Befehl aus: help(CrossTable, package=gmodels), indem Sie ein R-Code-Chunk erstellen, indem Sie auf + im Ausgabefenster klicken."
+	}
 }

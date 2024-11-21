@@ -1,7 +1,22 @@
 {
-  "help": {
-    "title": "相関分析",
-    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
-    "body": "\n<b>説明</b>\nこの関数は、Hmiscパッケージのrcorr関数を使用して、ピアソンまたはスピアマンの相関行列と相関間のペアワイズp値を計算します。p値は、複数の推論に対してホルムの方法を使用して修正されます（p.adjustを参照）。観察は欠損データでフィルタリングされ、完全な観察のみが使用されます。\n<br/>\n<b>使用法</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## 'rcorr.adjust'クラスのS3メソッド\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>引数</b>\n   <ul>\n   <li>\nx: 印刷される数値行列またはデータフレーム、またはクラス\"rcorr.adjust\"のオブジェクト。\n</li>\n<li>\ntype: \"pearson\"または\"spearman\"、必要な相関のタイプに応じて; デフォルトは\"pearson\"です。\n</li>\n<li>\nuse: 欠損データの扱い方: \"complete.obs\"、デフォルト、完全なケースのみを使用; \"pairwise.complete.obs\"、各ペアの有効なデータを持つすべてのケースを使用します。\n</li>\n<li>\n...: 使用されません。\n</li>\n</ul>\n<b>値</b>\n\"rcorr.adjust\"クラスのオブジェクトを返します。通常は印刷されます。\n"
-  }
+    "title": "相関テスト",
+    "navigation": "ピアソン (レガシー)",
+    "tvarbox": "選択された変数（少なくとも2つ）",
+    "lable1": "相関の種類",
+    "radio_pearson": "ピアソン",
+    "radio_spearman": "スピアマン",
+    "lable2": "欠損値の処理オプション",
+    "radio_cc": "完全ケースのみ",
+    "radio_pairwise": "ペアごとの完全ケース",
+    "lable3": "P値を表示",
+    "ajp": "調整されたP値",
+    "unajp": "調整されていないP値",
+    "bothp": "両方のP値",
+    "vis_cor": "相関行列を可視化",
+    "vis_plot": "ウェブプロットを可視化",
+    "help": {
+        "title": "相関分析",
+        "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+        "body": "\n<b>説明</b>\nこの関数は、Hmiscパッケージのrcorr関数を使用して、ピアソンまたはスピアマンの相関行列と、それらの相関間のペアワイズP値を計算します。P値は、Holm法（p.adjust参照）を使用して多重推論のために補正されます。不足データがフィルタリングされ、完全な観測値のみが使用されます。\n<br/>\n<b>使用法</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## クラス 'rcorr.adjust' 用のS3メソッド\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>引数</b>\n   <ul>\n   <li>\nx: 数値マトリックスまたはデータフレーム、またはクラス \"rcorr.adjust\" のオブジェクトで印刷されるもの。\n</li>\n<li>\ntype: \"pearson\"または\"spearman\"、希望する相関の種類に応じます。デフォルトは\"pearson\"です。\n</li>\n<li>\nuse: 欠損データの処理方法: \"complete.obs\"（デフォルト）は完全ケースのみを使用します; \"pairwise.complete.obs\"は各ペアの有効なデータを使用します。\n</li>\n<li>\n...: 使用されません。\n</li>\n</ul>\n<b>値</b>\n通常は印刷されるだけの \"rcorr.adjust\" クラスのオブジェクトを返します。\n"
+    }
 }

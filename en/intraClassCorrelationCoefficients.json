@@ -1,0 +1,12 @@
+{
+    "title": "Intraclass Correlation Coefficients",
+    "navigation": "Intraclass Correlation Coefficients",
+    "ratervars": "Rater Variables:",
+    "cilevel": "Confidence Level:",
+    "modeldetails": "Model Details",
+    "help": {
+        "title": "Intraclass Correlation Coefficients",
+        "r_help": "help(ICC, package=psych)",
+        "body": "\n<b>Description</b></br>\nThis computes the 6 intraclass correlation coefficients (ICC) of Shrout and Fleiss (1979, Psychological Bulletin).  Estimation is done using linear mixed effects models with restricted maximum likelihood, so this can handle missing data.</br>\nShrout and Fleiss consider six cases of reliability of ratings done by k raters on n targets.</br>\nICC1: Each target is rated by a different set of k judges and the judges are selected at random.  This is a measure of absolute agreement in the ratings.</br>\nICC2: A random sample of k judges rate each target.</br>\nICC3: A fixed set of k judges rate each target. There is no generalization to a larger population of judges.</br>\nThen, for each of these cases, is reliability to be estimated for a single rating or for the average of k ratings? ICC1 is sensitive to differences in means between raters and is a measure of absolute agreement. ICC2 and ICC3 remove mean differences between raters, but are sensitive to interactions of raters by subjects. The difference between ICC2 and ICC3 is whether raters are seen as fixed or random effects.  ICC1k, ICC2k, and ICC3K reflect the means of k raters.</br>\nRater Variables:  Variables corresponding to each rater.  These must be numeric variables.</br>\nConfidence Interval Level:  Desired level of the confidence interval for the ICC's</br>\nModel Details:  Show details from the underlying mixed effects linear models</br>\n<b>Package</b></br>\npsych</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command help(ICC, package=psych) by creating a R code chunk by clicking + in the output window\n\t\t\t"
+    }
+}
