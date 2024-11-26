@@ -32,78 +32,7 @@
 	    "help": {
         "title": "交叉表",
         "r_help": "help(CrossTable, package=gmodels)",
-		"body":"<b>描述</b></br>
-創建一個帶有行、列和層變數的交叉表。當指定多個行和列變數時，我們會為每一對行和列變數生成一個單獨的交叉表。此外，還顯示以下內容：<br/>
-期望計數<br/>
-行和列百分比<br/>
-非標準化、標準化和調整後的殘差<br/>
-卡方、賠率比、McNemar 和 Fisher 統計量<br/>
-注意：我們會自動刪除所有計數為 0 的行。這可能會影響卡方、McNemar 和 Fisher 測試的執行方式。例如，您可能期望 3 行和 2 列，因為行變數有 3 個級別，列變數有 2 個級別。然而，如果某一行的所有計數都為 0，您將得到一個 2*2 的表格。儘管 Monte Carlo 模擬的 Fisher 測試在 3*2 表格上執行，但它不適用於 2*2 表格，此時會執行正常的 Fisher 測試。 
-<br/>
-<b>用法</b>
-<br/>
-<code> 
-BSkyCrossTable(x,y,層, 權重, 資料集名稱, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE, long_table = FALSE )
-</code> <br/>
-<b>參數</b><br/>
-<ul>
-<li>
-x: 行變數
-</li>
-<li>
-y: 列變數
-</li>
-<li>
-層: 一個或多個層變數
-</li>
-<li>
-權重: 一個包含頻率權重的數值變數
-</li>
-<li>
-資料集名稱: 從中選擇 x、y 和層（變數）的資料集名稱
-</li>
-<li>
-chisq: 如果為 TRUE，生成卡方表
-</li>
-<li>
-prop.r: 如果為 TRUE，生成行百分比
-</li>
-<li>
-prop.c: 如果為 TRUE，生成列百分比
-</li>
-<li>
-resid: 如果為 TRUE，生成非標準化殘差
-</li>
-<li>
-sresid: 如果為 TRUE，生成標準化殘差
-</li>
-<li>
-expected: 如果為 TRUE，生成期望計數
-</li>
-<li>
-asresid: 如果為 TRUE，生成調整後的殘差
-</li>
-<li>
-long_table: 引入了長表選項，以適應處理大量變數的分析。選擇長格式控制輸出表格的寬度，使得可以輕鬆查看結果，而無需向右滾動輸出窗口。
-</li>
-</ul>
-<b>結果</b></br>
-一個包含結果的列表
-<br/>
-<b>範例</b></br>
-<code> 
-BSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>
-層=c('type'),資料集名稱='Dataset2',<br/>
-chisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>
-resid=FALSE,sresid=FALSE,expected=FALSE,<br/>
-asresid=FALSE)</br>
-BSkyFormat(BSky_Multiway_Cross_Tab)</br>
-</code> <br/>
-<b>套件</b></br>
-gmodels</br>
-<b>幫助</b></br>
-詳細幫助請點擊此對話框右上角的 R 圖示，或執行以下命令：help(CrossTable, package=gmodels)，並透過點擊輸出窗口中的 + 創建一個 R 代碼區塊。
-"
+		"body":"<b>描述</b></br>創建一個帶有行、列和層變數的交叉表。當指定多個行和列變數時，我們會為每一對行和列變數生成一個單獨的交叉表。此外，還顯示以下內容：<br/>期望計數<br/>行和列百分比<br/>非標準化、標準化和調整後的殘差<br/>卡方、賠率比、McNemar 和 Fisher 統計量<br/>注意：我們會自動刪除所有計數為 0 的行。這可能會影響卡方、McNemar 和 Fisher 測試的執行方式。例如，您可能期望 3 行和 2 列，因為行變數有 3 個級別，列變數有 2 個級別。然而，如果某一行的所有計數都為 0，您將得到一個 2*2 的表格。儘管 Monte Carlo 模擬的 Fisher 測試在 3*2 表格上執行，但它不適用於 2*2 表格，此時會執行正常的 Fisher 測試。 <br/><b>用法</b><br/><code> BSkyCrossTable(x,y,層, 權重, 資料集名稱, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE, long_table = FALSE )</code> <br/><b>參數</b><br/><ul><li>x: 行變數</li><li>y: 列變數</li><li>層: 一個或多個層變數</li><li>權重: 一個包含頻率權重的數值變數</li><li>資料集名稱: 從中選擇 x、y 和層（變數）的資料集名稱</li><li>chisq: 如果為 TRUE，生成卡方表</li><li>prop.r: 如果為 TRUE，生成行百分比</li><li>prop.c: 如果為 TRUE，生成列百分比</li><li>resid: 如果為 TRUE，生成非標準化殘差</li><li>sresid: 如果為 TRUE，生成標準化殘差</li><li>expected: 如果為 TRUE，生成期望計數</li><li>asresid: 如果為 TRUE，生成調整後的殘差</li><li>long_table: 引入了長表選項，以適應處理大量變數的分析。選擇長格式控制輸出表格的寬度，使得可以輕鬆查看結果，而無需向右滾動輸出窗口。</li></ul><b>結果</b></br>一個包含結果的列表<br/><b>範例</b></br><code> BSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>層=c('type'),資料集名稱='Dataset2',<br/>chisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>resid=FALSE,sresid=FALSE,expected=FALSE,<br/>asresid=FALSE)</br>BSkyFormat(BSky_Multiway_Cross_Tab)</br></code> <br/><b>套件</b></br>gmodels</br><b>幫助</b></br>詳細幫助請點擊此對話框右上角的 R 圖示，或執行以下命令：help(CrossTable, package=gmodels)，並透過點擊輸出窗口中的 + 創建一個 R 代碼區塊。"
 	}
 }
 
