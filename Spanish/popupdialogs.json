@@ -1,0 +1,37 @@
+{  
+	"CSV_Options": "Opciones CSV",
+	"CSVopt_first_row_header_chk" : "La primera fila del archivo CSV/TXT contiene encabezados",
+	"CSVopt_field_sep_label": "Especificar separador de campos:",
+	"CSVopt_commas_radio": "Comas (,)",
+	"CSVopt_semicolons_radio": "Punto y coma (;)",
+	"CSVopt_tabs_radio": "Tabulaciones",
+	"CSVopt_whitespace_radio": "Espacios en blanco",
+	"CSVopt_other_radio": "Otro,",
+	"CSVopt_specify_tbox": "Especificar",
+
+	"CSVopt_deci_sep_label": "Especificar carácter decimal:",
+	"CSVopt_decimal_radio": "Punto decimal (.) [por ejemplo, 1.234]",
+	"CSVopt_comma_radio": "Coma (,) [por ejemplo, 1,234]",
+	"CSVopt_grp_char_label": "Opcionalmente, especifique un carácter de agrupación [por ejemplo, 1,000,000]. No es necesario escribir la coma, que es predeterminada:",
+
+	"CSVopt_ok_btn": "Aceptar",
+	"CSVopt_cancel_btn": "Cancelar",
+
+	"OpenWrkSheet": "Abrir hoja de trabajo",
+	"OpnWrkSht_label": "Para el nombre de una columna, se admiten letras, números y guiones bajos. Todos los demás caracteres no admitidos se reemplazarán por un guion bajo. Puede renombrar la columna desde la cuadrícula de variables.",
+	"OpnWrkSht_first_row_header_chk": "La primera fila contiene encabezados de columna",
+	"OpnWrkSht_dropdown": "Seleccione la hoja de trabajo para abrir",
+	"OpnWrkSht_open_btn": "Abrir",
+
+	"Save_project_title": "Guardar proyecto",
+	"Save_prj_label": "Guardar el proyecto actual",
+	"Save_prj_name": "Introduzca el nombre del proyecto:",
+	"Save_prj_options": "Opciones de guardado:",
+	"Save_prj_defaultDir_radio": "Guardar el proyecto en el directorio de proyectos predeterminado:",
+	"Save_prj_customDir_radio": "Guardar el proyecto en una ubicación específica",
+	"Save_prj_customDir_label": "Seleccione una ubicación donde desee guardar el proyecto:",
+	"Save_prj_chooseDir_btn": "Elegir carpeta",
+	"Save_prj_save_btn": "Guardar",
+	"Save_prj_dontsave_btn": "No guardar",
+	"Save_prj_cancelsave_btn": "Cancelar"
+}

@@ -1,0 +1,37 @@
+{  
+	"CSV_Options": "CSV 選項",
+	"CSVopt_first_row_header_chk" : "CSV/TXT 檔案的第一行包含標題",
+	"CSVopt_field_sep_label": "指定欄位分隔符：",
+	"CSVopt_commas_radio": "逗號 (,)",
+	"CSVopt_semicolons_radio": "分號 (;)",
+	"CSVopt_tabs_radio": "定位鍵",
+	"CSVopt_whitespace_radio": "空白",
+	"CSVopt_other_radio": "其他，",
+	"CSVopt_specify_tbox": "指定",
+
+	"CSVopt_deci_sep_label": "指定小數點符號：",
+	"CSVopt_decimal_radio": "小數點 (.) [例如 1.234]",
+	"CSVopt_comma_radio": "逗號 (,) [例如 1,234]",
+	"CSVopt_grp_char_label": "選填分組符號 [例如 1,000,000]。無需輸入預設的逗號：",
+
+	"CSVopt_ok_btn": "確定",
+	"CSVopt_cancel_btn": "取消",
+
+	"OpenWrkSheet": "打開工作表",
+	"OpnWrkSht_label": "欄位名稱支持字母、數字和底線。所有不支持的字符將被替換為底線。您可以從變數網格中重新命名欄位。",
+	"OpnWrkSht_first_row_header_chk": "第一行包含欄位標題",
+	"OpnWrkSht_dropdown": "選擇要打開的工作表",
+	"OpnWrkSht_open_btn": "打開",
+
+	"Save_project_title": "保存項目",
+	"Save_prj_label": "保存當前項目",
+	"Save_prj_name": "輸入項目名稱：",
+	"Save_prj_options": "保存選項：",
+	"Save_prj_defaultDir_radio": "將項目保存到默認項目目錄：",
+	"Save_prj_customDir_radio": "將項目保存到指定位置",
+	"Save_prj_customDir_label": "選擇要保存項目的位置：",
+	"Save_prj_chooseDir_btn": "選擇資料夾",
+	"Save_prj_save_btn": "保存",
+	"Save_prj_dontsave_btn": "不保存",
+	"Save_prj_cancelsave_btn": "取消"
+}
