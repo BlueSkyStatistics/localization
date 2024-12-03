@@ -199,8 +199,6 @@
   "CBbtnlbl77" : "String to date",
   "CBttip77" : "Click String to date and move a string variable that you want to convert to date, to insert generic code double click",
   "jsoncomment002" : "switchCase below this line",
-  
-  
   "SCStr1":"Click on a button and drag and drop variables to create an expression.",
   "SCStr2":" Clicking a selected button will toggle its state.",
   "SCStr3":" To insert at a designated position, drag and drop directly to that position.",
@@ -378,7 +376,27 @@
   "RMstr4" : "4. You need to specify a measure name e.g. Value. We will create a variable e.g. Value with all the Blood Sugar values corresponding to the pretest, posttest and followup for each subject.",
   "RMstr5" : "5. We support a single between-subject and within-subject factor variable.",
   "RMstr6" : "6. Future versions will support multiple measures as well as multiple between subject and within subject factor variables.",
-  "RMstr7" : "",  
+  "RMlbl1" : "Within-Subject Factor Name",  
+  "RMlbl2" : "Number of levels",
+  "RMaddbtn" :"Add",
+  "RMlbl3" : "New Within-subject factor variable",
+  "RMdelbtn" :"Delete",
+  "RMlbl4" : "Measure Name",
+  "RMlbl5":"New measure variable",
+  "RMdefinebtn":"Define",
+  
+  "RMmsgboxTitle1":"Incorrect levels for factor",
+  "RMmsgboxMsg1":"You must specify a Factor name with more that one level.",
+  "RMmsgboxTitle2":"More than 1 within-subject factor specified",
+  "RMmsgboxMsg2":"We currently support a single within-subject factor. We will support multiple within-subject factor variables in an upcoming release.",
+  "RMmsgboxTitle3":"More than 1 measure specified",
+  "RMmsgboxMsg3":"We currently support a single measure. We will support multiple measures in an upcoming release.",
+  "RMmsgboxTitle4":"Measure variable not specified",
+  "RMmsgboxMsg4":"Name for the neasure variable is not specified. You need to specify a measure name and click add.",
+  "RMmsgboxTitle5":"Within-subject factor variable is not specified",
+  "RMmsgboxMsg5":"You need to click the Define button after entering a repeated factor variable name and measure name.",
+
+  
   "jsoncomment004" : "DST Variable below this line",
   
   "jsoncomment005" : "Top level menus and sub-menu dropdown below this line",
