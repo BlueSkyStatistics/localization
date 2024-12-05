@@ -9,6 +9,9 @@
   "y": "Variable(s) Y, especifique una variable numérica",
   "fill": "Especifique una variable de factor para llenar las barras.",
   "dropna": "Eliminar valores faltantes",
+    "bottomlbl": "Seleccionar gráfico de barras ",
+    "meanlbl": "Media",
+    "countlbl": " Recuento",  
   "fill1": "Seleccione un color para las barras. Nota: Esto se ignora cuando se especifica una variable para llenar las barras.",
   "barType": "Tipo de gráfico de barras",
   "stackedBar": "Gráfico de barras apiladas",
@@ -31,6 +34,7 @@
   "Facetwrap": "Envolver Facetas",
   "Facetscale": "Escala de Facetas",
   "relFreq": "Frecuencias relativas",
+  "facets_lbl" : "Facets",
   "help": {
     "title": "Ayuda del Gráfico de Barras",
     "r_help": "help(geom_bar, package=ggplot2)",

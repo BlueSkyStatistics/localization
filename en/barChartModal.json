@@ -9,6 +9,9 @@
     "y": "Y variable(s), specify a numeric variable(s)",
     "fill": "Specify a factor variable to fill bars by.",
     "dropna": "Drop missing values",
+    "bottomlbl": "Select Bar Chart ",
+    "meanlbl": "Mean",
+    "countlbl": " Count",
     "fill1": "Select a color for the bars. Note: This is ignored when a variable to fill bars by is specified",
     "barType": "Type of bar graph",
     "stackedBar": "Stacked bar graph",
@@ -31,6 +34,7 @@
     "Facetwrap": "Facet wrap",
     "Facetscale": "Facet scale",
     "relFreq": "Relative frequencies",
+	"facets_lbl" : "Facets",
     "help": {
         "title": "Bar Chart Help",
         "r_help": "help(geom_bar, package=ggplot2)",

@@ -9,6 +9,9 @@
   "y": "Variabila(e) Y, specificați o variabilă numerică",
   "fill": "Specificați o variabilă factor pentru a umple barele.",
   "dropna": "Eliminați valorile lipsă",
+    "bottomlbl": "Selectați diagramă cu bare ",
+    "meanlbl": "Medie",
+    "countlbl": " Număr",  
   "fill1": "Selectați o culoare pentru bare. Notă: Aceasta este ignorată atunci când o variabilă pentru umplerea barelor este specificată",
   "barType": "Tipul graficului cu bare",
   "stackedBar": "Grafic cu bare suprapuse",
@@ -31,6 +34,7 @@
   "Facetwrap": "Împachetare de fațete",
   "Facetscale": "Scală de fațete",
   "relFreq": "Frecvențe relative",
+  "facets_lbl" : "Facets",
   "help": {
     "title": "Ajutor pentru graficul cu bare",
     "r_help": "help(geom_bar, package=ggplot2)",

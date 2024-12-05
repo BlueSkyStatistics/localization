@@ -9,6 +9,9 @@
   "y": "Y变量，指定一个数值变量",
   "fill": "指定一个因子变量以填充条形",
   "dropna": "删除缺失值",
+	"bottomlbl": "选择柱状图 ",
+	"meanlbl": "平均值",
+	"countlbl": " 计数",
   "fill1": "选择条形的颜色。注意：当指定填充条形的变量时，此选项将被忽略",
   "barType": "条形图类型",
   "stackedBar": "堆叠条形图",
@@ -31,6 +34,7 @@
   "Facetwrap": "分面包裹",
   "Facetscale": "分面比例",
   "relFreq": "相对频率",
+  "facets_lbl" : "Facets",
   "help": {
     "title": "条形图帮助",
     "r_help": "help(geom_bar, package=ggplot2)",

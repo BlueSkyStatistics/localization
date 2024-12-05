@@ -9,6 +9,9 @@
   "y": "Y-Variable(n), geben Sie eine numerische Variable(n) an",
   "fill": "Geben Sie eine Faktorvariable an, um die Balken zu füllen.",
   "dropna": "Fehlende Werte entfernen",
+    "bottomlbl": "Balkendiagramm auswählen ",
+    "meanlbl": "Mittelwert",
+    "countlbl": " Anzahl",
   "fill1": "Wählen Sie eine Farbe für die Balken aus. Hinweis: Dies wird ignoriert, wenn eine Variable zum Füllen der Balken angegeben ist.",
   "barType": "Art des Balkendiagramms",
   "stackedBar": "Gestapeltes Balkendiagramm",
@@ -31,6 +34,7 @@
   "Facetwrap": "Facet-Wicklung",
   "Facetscale": "Facet-Skala",
   "relFreq": "Relative Häufigkeiten",
+  "facets_lbl" : "Facets",
   "help": {
     "title": "Hilfe zum Balkendiagramm",
     "r_help": "help(geom_bar, package=ggplot2)",

@@ -9,6 +9,9 @@
   "y": "Y変数（数値変数を指定）",
   "fill": "バーを塗りつぶすための因子変数を指定してください。",
   "dropna": "欠損値を削除",
+    "bottomlbl": "棒グラフを選択 ",
+    "meanlbl": "平均",
+    "countlbl": " カウント",  
   "fill1": "バーの色を選択してください。注意：バーを塗りつぶす変数が指定されている場合、これは無視されます。",
   "barType": "棒グラフの種類",
   "stackedBar": "積み上げ棒グラフ",
@@ -31,6 +34,7 @@
   "Facetwrap": "ファセットラップ",
   "Facetscale": "ファセットスケール",
   "relFreq": "相対頻度",
+  "facets_lbl" : "Facets",
   "help": {
     "title": "バーグラフヘルプ",
     "r_help": "help(geom_bar, package=ggplot2)",
