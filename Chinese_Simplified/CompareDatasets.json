@@ -25,10 +25,10 @@
   "varnamecaselabel": "忽略变量名称中的大小写",
   "varnamebothlabel": "忽略大小写并将点、下划线和空格视为等同",
   "idoptionslabel": "ID 选项",
-  "bylabel": "如果要合并的公共列名，请输入用引号分隔的列名（例如 'country', 'region'）",
+  "bylabel": "如果要合并的公共列名，请输入用引号分隔的列名（例如 '国家', '地区'）",
   "bydifflabel": "如果合并所用的列名在每个数据集中不同",
-  "byxlabel": "输入第一个数据集中用于合并的列名，用引号分隔（例如 'nations', 'location'）",
-  "byylabel": "输入第二个数据集中用于合并的列名，用引号分隔（例如 'country', 'location'）",
+  "byxlabel": "输入第一个数据集中用于合并的列名，用引号分隔（例如 '国家', '位置'）",
+  "byylabel": "输入第二个数据集中用于合并的列名，用引号分隔（例如 '国家', '位置'）",
   "help": {
     "title": "比较数据集",
     "r_help": "help(comparedf, package ='arsenal')",

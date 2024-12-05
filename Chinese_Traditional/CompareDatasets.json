@@ -25,10 +25,10 @@
   "varnamecaselabel": "忽略變量名稱中的大小寫",
   "varnamebothlabel": "忽略大小寫並將點、下劃線和空格視為等同",
   "idoptionslabel": "ID 選項",
-  "bylabel": "如果有共同的列名進行合併，請輸入用引號分隔的列名（例如 'country', 'region'）",
+  "bylabel": "如果有共同的列名進行合併，請輸入用引號分隔的列名（例如 '國家', '地區'）",
   "bydifflabel": "如果合併所用的列名在每個數據集中不同",
-  "byxlabel": "輸入第一個數據集中用於合併的列名，用引號分隔（例如 'nations', 'location'）",
-  "byylabel": "輸入第二個數據集中用於合併的列名，用引號分隔（例如 'country', 'location'）",
+  "byxlabel": "輸入第一個數據集中用於合併的列名，用引號分隔（例如 '國家', '位置'）",
+  "byylabel": "輸入第二個數據集中用於合併的列名，用引號分隔（例如 '國家', '位置'）",
   "help": {
     "title": "比較數據集",
     "r_help": "help(comparedf, package ='arsenal')",
