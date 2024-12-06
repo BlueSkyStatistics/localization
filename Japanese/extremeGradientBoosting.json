@@ -17,6 +17,9 @@
   "basescore": "ベーススコア",
   "Verbose": "詳細モード（0=サイレント、1=パフォーマンス情報、2=その他の情報）",
   "printevery": "詳細が>0のとき、n回ごとに評価メッセージを印刷",
+  "OptvarTaskparam": "タスクパラメーター",
+  "OptvarAdvDiagnostics": "高度な診断",
+  "OptvarTreeBoostparam": "ツリーブーストのパラメーター",  
   "help": {
     "title": "エクストリームグラデーションブースティング",
     "r_help": "help(xgboost, package ='xgboost')",

@@ -17,6 +17,9 @@
   "basescore": "Basiswert",
   "Verbose": "Ausführlicher Modus (0=Still, 1=Leistungsinfo, 2=andere Infos)",
   "printevery": "Drucke jede n-te Iteration Bewertungsnachricht, wenn ausführlich > 0",
+  "OptvarTaskparam": "Aufgabenparameter",
+  "OptvarAdvDiagnostics": "Erweiterte Diagnosen",
+  "OptvarTreeBoostparam": "Parameter für Baum-Boosting",  
   "help": {
     "title": "Extreme Gradient Boosting",
     "r_help": "help(xgboost, package ='xgboost')",

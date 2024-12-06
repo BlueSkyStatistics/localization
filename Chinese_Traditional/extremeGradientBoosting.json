@@ -17,6 +17,9 @@
   "basescore": "基準分數",
   "Verbose": "詳細模式（0=靜音，1=性能信息，2=其他信息）",
   "printevery": "當詳細模式 > 0 時，打印每 n 次迭代評估消息",
+  "OptvarTaskparam": "任務參數",
+  "OptvarAdvDiagnostics": "高級診斷",
+  "OptvarTreeBoostparam": "樹提升參數",  
   "help": {
     "title": "極端梯度提升",
     "r_help": "help(xgboost, package ='xgboost')",

@@ -17,6 +17,9 @@
   "basescore": "Puntuación base",
   "Verbose": "Modo detallado (0=Silencioso, 1=info de rendimiento, 2=otra info)",
   "printevery": "Imprimir mensajes de evaluación de cada n-ésima iteración cuando verbose > 0",
+  "OptvarTaskparam": "Parámetros de tarea",
+  "OptvarAdvDiagnostics": "Diagnósticos avanzados",
+  "OptvarTreeBoostparam": "Parámetros para el refuerzo de árboles",  
   "help": {
     "title": "Aumento de Gradiente Extremo",
     "r_help": "help(xgboost, package ='xgboost')",

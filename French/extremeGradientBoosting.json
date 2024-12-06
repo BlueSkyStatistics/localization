@@ -17,6 +17,9 @@
   "basescore": "Score de base",
   "Verbose": "Mode verbeux (0=Silencieux, 1=info de performance, 2= autre info)",
   "printevery": "Imprimer chaque n-ième message d'évaluation d'itération lorsque verbeux > 0",
+  "OptvarTaskparam": "Paramètres de tâche",
+  "OptvarAdvDiagnostics": "Diagnostics avancés",
+  "OptvarTreeBoostparam": "Paramètres pour le renforcement des arbres",  
   "help": {
     "title": "Boosting de Gradient Extrême",
     "r_help": "help(xgboost, package ='xgboost')",
