@@ -1,6 +1,6 @@
 {
-  "title": "Gage R&R - 測量系統分析",
-  "navigation": "Gage R&R",
+  "title": "測量系統分析 - R&R",
+  "navigation": "測量系統分析（R&R）",
   "mainTitle": "圖形輸出的主標題",
   "subTitle": "圖形輸出的副標題（例如項目名稱）",
   "measuredVar": "測量變數",
@@ -25,7 +25,7 @@
   "testLocation": "測試位置",
   "miscellaneous": "其他",
   "help": {
-    "title": "Gage R&R - 測量系統分析",
+    "title": "測量系統分析 - R&R",
     "r_help": "help(ss.rr, package = SixSigma)",
     "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.rr函數用於執行Gage R&R分析，以評估過程的測量系統\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為gageR_R_piston_diameter_with_measurements.xlsx的示例數據集文件。使用文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t從示例數據集中，選擇直徑變數作為測量變數，Pistonring作為部件變數，Operator作為評估者\n\t\t\t\t<br/>\n\t\t\t"
   }
