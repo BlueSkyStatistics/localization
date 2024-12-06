@@ -4,6 +4,13 @@
     "anote": "NOTE: The 'Remove Project' only removes it from the project dropdown. However, your project content will be available at following location.",
     "delFolder": "Delete the project folder permanently.",
 	"selproj" : "Select a project to remove, from the dropdown",
+    "warnlbl": " Warning!!! The project cannot be recovered if you use this option.",
+    "errTitle1": "Select a project from the dropdown",
+    "errMsg1": "Please select a project from the dropdown that you want to remove",
+    "errTitle2": "Currently active project cannot be removed",
+    "errMsg2": "Please select a project from the dropdown other than the currently active project",
+    "errTitle3": "Project not available in the project dropdown",
+    "errMsg3": "Please select a project that is also available in the project dropdown, using the 'Choose folder' button",	
     "help": {
         "title": "Export Project",
         "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tRemoves the project from the dropdown.\n\t\t\t\t<br/>\n\t\t\t"

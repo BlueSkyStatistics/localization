@@ -4,6 +4,13 @@
   "anote": "REMARQUE : La 'Suppression du projet' ne le retire que du menu déroulant des projets. Cependant, le contenu de votre projet sera disponible à l'emplacement suivant.",
   "delFolder": "Supprimer définitivement le dossier du projet.",
   "selproj" : "Sélectionnez un projet à supprimer dans le menu déroulant.",
+  "warnlbl": "Avertissement !!! Le projet ne peut pas être récupéré si vous utilisez cette option.",
+  "errTitle1": "Sélectionnez un projet dans le menu déroulant",
+  "errMsg1": "Veuillez sélectionner un projet dans le menu déroulant que vous souhaitez supprimer",
+  "errTitle2": "Le projet actif actuellement ne peut pas être supprimé",
+  "errMsg2": "Veuillez sélectionner un projet dans le menu déroulant autre que le projet actif actuellement",
+  "errTitle3": "Projet non disponible dans le menu déroulant des projets",
+  "errMsg3": "Veuillez sélectionner un projet qui est également disponible dans le menu déroulant des projets, en utilisant le bouton 'Choisir un dossier'",
   "help": {
     "title": "Exporter le projet",
     "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tSupprime le projet du menu déroulant.\n\t\t\t\t<br/>"
