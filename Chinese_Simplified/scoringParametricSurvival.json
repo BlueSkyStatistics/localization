@@ -1,25 +1,25 @@
 {
-    "title": "预测的参数生存概率",
-    "label100": "此对话框输出在一个或多个指定时间点的预测生存概率。\n必须满足以下要求。\n1. 您必须在一个数据集上建立一个 flexsurvreg 参数生存回归模型，其中 1 或更高值 = 事件，0 或更低值 = 右删失。\n2. 要生成预测的数据集必须包含用于创建原始模型的所有独立变量。\n3. 用于时间的时间尺度必须与创建原始模型时使用的时间尺度匹配。\n4. 如果您想为单个观察值生成预测，则需要创建一个包含该单个观察值的新数据集。",
-    "navigation": "参数生存评分",
-    "filterModels": "按类筛选模型",
-    "modelSelection": "选择要评分的数据集的模型",
-    "label1": "诊断测试",
-    "followUpTime": "指定一个或多个时间，例如 200, 1200, 1250，将为每个时间点生成预测的生存和失败概率",
-    "levelOfInterest": "当要预测的变量有 2 个水平时，请指定感兴趣的水平。 混淆矩阵和相关统计数据将以指定的参考水平显示。",
-    "label12": "测试结果：一旦选择了模型，我们将运行测试以查看模型中指定的因变量是否在要评分的数据集中可用。 结果将在此处显示。",
-    "label2": "保存生存和失败概率。",
-    "label3": "将预测的概率存储为新变量（如果指定了前缀）",
-    "label4": "**对于具有 2 个水平的因变量，将第 2 个水平视为正水平。 请参阅数据 > 因子水平 > 手动重新排序以更改因子水平的顺序并重新构建模型。",
-    "conflevel": "保存单个预测值的置信区间 **（仅对线性模型（lm 类）有效）",
-    "roctable": "显示 ROC 表（**仅适用于二元因变量）",
-    "colname": "指定列名前缀",
-    "label5": "**选中上面的复选框将对大数据集产生性能影响。",
-    "level": "指定置信水平",
-    "confusioncheck": "生成混淆矩阵",
-    "help": {
-        "title": "使用 flexsurvreg（参数生存）模型评分数据集",
-        "r_help": "help(flexsurvreg, package = 'flexsurv')",
-        "body": "\n    当指定多个时间段时，仅为第一个时间段生成混淆矩阵和 ROC 曲线。\n    <b>描述</b></br>\n    模型评分的功能如下</br>\n    1. 使用选定的预构建模型对当前数据集进行评分。 使用指定的前缀在当前数据集中存储具有指定置信区间的预测。</br>\n    2. 可选地创建混淆矩阵和 ROC 曲线。</br>\n    3. 在评分包含因变量/预测变量的数据集时，如果因变量有 2 个水平，您可以选择参考水平/感兴趣的水平。<br/>\n    4. 使用指定的感兴趣水平创建混淆矩阵和相关统计信息。<br/>\n    请参阅下面有关预测函数和混淆矩阵的详细信息。\n    <br/>\n    <br/>\n    <b>描述</b></br>\n    predict 是一个通用函数，用于使用选定的模型进行预测。\n    <br/>\n    <b>用法</b>\n    <br/>\n    <code> \n    BSkyPredict(modelname, prefix, datasetname)\n    </code> <br/>\n    <b>参数</b><br/>\n    <ul>\n    <li>\n    modelname：要进行预测的模型对象。\n    </li>\n    <li>\n    prefix：将用于创建包含预测的新变量的前缀字符串。\n    </li>\n    <li>\n    datasetname：当前数据集的名称，用于评分和保存预测结果。\n    </li>\n    </ul>\n    <b>详细信息</b></br>\n    使用指定的前缀在当前数据集中存储具有指定置信区间的预测结果。</br>\n    <b>包</b></br>\n    stats</br>\n    <b>帮助</b></br>\n    要获取详细帮助，请单击此对话框覆盖的右上角的 R 图标，或在 R 编辑器窗口中运行以下命令 help(predict, package ='stats')\n    </br>\n    </br>\n    <b>描述</b></br>\n    通过交叉列出观察到的类和预测的类来创建混淆矩阵，并提供相关统计数据。\n    <br/>\n    <b>用法</b>\n    <br/>\n    <code> \n    BSkyConfusionMartix(modelname,showCofusionMatrix,predictions,datasetname)\n    </code> <br/>\n    <b>参数</b><br/>\n    <ul>\n    <li>\n    modelname：要生成混淆矩阵的模型对象。\n    </li>\n    <li>\n    showCofusionMatrix：逻辑值，如果为 TRUE，则生成混淆矩阵（如果适用），如果为 FALSE，则不生成混淆矩阵。\n    </li>\n    <li>\n    predictions：作为预测() 调用的结果返回的对象。\n    </li>\n    <li>\n    datasetname：我们希望使用的当前数据集名称，以进行预测。\n    </li>\n    </ul>\n    <b>详细信息</b></br>\n    使用包 caret 中的 confusionMatrix 函数显示混淆矩阵。</br>\n    <b>包</b></br>\n    caret</br>\n    <b>帮助</b></br>\n    要获取详细帮助，请单击此对话框覆盖的右上角的 R 图标，或在 R 编辑器窗口中运行以下命令 help(confusionMatrix, package ='caret')"
-    }
+  "title": "预测的参数生存概率",
+  "label100": "此对话框输出在一个或多个指定时间的预测生存概率。\n必须满足以下要求。\n1. 您必须在数据集中构建一个 flexsurvreg 参数生存回归模型，其中 1 或更高值 = 事件，0 或更低值 = 右删失。\n2. 您要生成预测的数据集必须具有用于创建原始模型的所有自变量。\n3. 用于时间的时间尺度必须与创建原始模型时使用的时间尺度匹配。\n4. 如果您想要单个观察值的预测，您需要创建一个包含该单个观察值的新数据集。",
+  "navigation": "参数生存评分",
+  "filterModels": "按类别过滤模型",
+  "modelSelection": "选择一个模型来评分数据集",
+  "label1": "诊断测试",
+  "followUpTime": "指定一个或多个时间，例如 200、1200、1250，将为每个时间生成预测的生存和失败概率",
+  "levelOfInterest": "当要预测的变量有 2 个水平时，指定感兴趣的水平。混淆矩阵和相关统计信息将以指定的感兴趣水平作为参考显示",
+  "label12": "测试结果：一旦选择了模型，我们将运行测试以查看模型中指定的因变量是否在要评分的数据集中可用。结果将在此处显示",
+  "label2": "保存生存和失败概率。",
+  "label3": "预测的概率作为新变量存储（如果指定则带前缀）",
+  "label4": "**对于具有 2 个水平的因变量，第 2 个水平被视为正水平。请参见数据 > 因子水平 > 手动重新排序水平以更改因子水平的顺序并重建模型。",
+  "conflevel": "保存单个预测值的置信区间 **（仅对线性模型（类 lm）有效）",
+  "roctable": "显示 ROC 表（**仅适用于二元因变量）",
+  "colname": "指定列名前缀",
+  "label5": "**选中上面的复选框将对大型数据集产生性能影响。",
+  "level": "指定置信水平",
+  "confusioncheck": "生成混淆矩阵",
+  "help": {
+    "title": "使用 flexsurvreg（参数生存）模型评分数据集",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n    当指定多个时间段时，仅为第一个时间段生成混淆矩阵和 ROC 曲线\n    <b>描述</b></br>\n    模型评分执行以下操作</br>\n    1. 使用选定的预构建模型对当前数据集进行评分。使用指定的前缀将预测存储在当前数据集中，并带有指定的置信区间。</br>\n    2. 可选择创建混淆矩阵和 ROC 曲线</br>\n    3. 如果您正在评分包含因变量/要预测变量的训练数据集，并且因变量有 2 个水平，您可以选择参考水平/感兴趣的水平。<br/>\n    4. 使用指定的感兴趣水平创建混淆矩阵和相关统计信息。<br/>\n    有关 predict 函数和混淆矩阵的详细信息，请参见下面\n    <br/>\n    <br/>\n    <b>描述</b></br>\n    predict 是一个用于使用选定模型进行预测的通用函数。 \n    <br/>\n    <b>用法</b>\n    <br/>\n    <code> \n    BSkyPredict(modelname, prefix, datasetname)\n    </code> <br/>\n    <b>参数</b><br/>\n    <ul>\n    <li>\n    modelname: 期望进行预测的模型对象。\n    </li>\n    <li>\n    prefix: 将用于创建包含预测的新变量的前缀字符串。\n    </li>\n    <li>\n    datasetname: 当前数据集，用于评分和保存预测。\n    </li>\n    </ul>\n    <b>详细信息</b></br>\n    使用指定的前缀将预测存储在当前数据集中，并带有指定的置信区间。</br>\n    <b>包</b></br>\n    stats</br>\n    <b>帮助</b></br>\n    有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 编辑器窗口中运行以下命令 help(predict, package ='stats')\n    </br>\n    </br>\n    <b>描述</b></br>\n    通过交叉列出观察到的和预测的类别及相关统计信息来创建混淆矩阵。 \n    <br/>\n    <b>用法</b>\n    <br/>\n    <code> \n    BSkyConfusionMartix(modelname,showCofusionMatrix,predictions,datasetname)\n    </code> <br/>\n    <b>参数</b><br/>\n    <ul>\n    <li>\n    modelname : 期望生成混淆矩阵的模型对象。\n    </li>\n    <li>\n    showCofusionMatrix:  逻辑，如果为 TRUE，则生成混淆矩阵（如果适用），如果为 FALSE，则不生成混淆矩阵。\n    </li>\n    <li>\n    predictions : 作为 predict() 调用的结果返回的对象。\n    </li>\n    <li>\n    datasetname: 当前数据集名称，用于进行预测。\n    </li>\n    </ul>\n    <b>详细信息</b></br>\n    使用包 caret 中的函数 confusionMatrix 显示混淆矩阵</br>\n    <b>包</b></br>\n    caret</br>\n    <b>帮助</b></br>\n    有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 编辑器窗口中运行以下命令 help(confusionMatrix, package ='caret')\n                "
+  }
 }
