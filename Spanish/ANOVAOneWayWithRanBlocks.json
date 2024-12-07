@@ -1,14 +1,14 @@
 {
-    "title": "ANOVA, unidireccional con bloques aleatorios",
-    "navigation": "ANOVA, 1 vía (bloques aleatorios)",
-    "tvarbox1": "Variable de respuesta",
-    "tvarbox2": "Efecto fijo",
-    "blockVar": "Variable(s) de bloqueo",
-    "Post_hoc": "Análisis post-hoc",
-    "chk1": "Histograma de residuos",
-    "help": {
-        "title": "ANOVA, unidireccional con bloques aleatorios",
-        "r_help": "help(lmer, package ='lme4')",
-        "body": "Descripción y argumentos en español."
-    }
+  "title": "ANOVA, de una vía con bloques aleatorios",
+  "navigation": "ANOVA, 1 vía (bloques aleatorios)",
+  "tvarbox1": "Variable de Respuesta",
+  "tvarbox2": "Efecto Fijo",
+  "blockVar": "Variable(s) de Bloqueo",
+  "Post_hoc": "Análisis post-hoc",
+  "chk1": "Histograma de residuos",
+  "help": {
+    "title": "ANOVA, de una vía con bloques aleatorios",
+    "r_help": "help(lmer, package ='lme4')",
+    "body": "\n<b>Descripción</b></br>\nAjusta un modelo lineal de efectos mixtos (LMM) a los datos, a través de REML o máxima verosimilitud.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nlmer(formula, data = NULL, REML = TRUE, control = lmerControl(),\n        start = NULL, verbose = 0L, subset, weights, na.action,\n        offset, contrasts = NULL, devFunOnly = FALSE, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nformula: un objeto de fórmula lineal de dos lados que describe tanto la parte de efectos fijos como la parte de efectos aleatorios del modelo, con la respuesta a la izquierda de un operador ~ y los términos, separados por operadores +, a la derecha. Los términos de efectos aleatorios se distinguen por barras verticales (|) que separan expresiones para matrices de diseño de factores de agrupamiento. Se pueden usar dos barras verticales (||) para especificar múltiples efectos aleatorios no correlacionados para la misma variable de agrupamiento. (Debido a la forma en que se implementa, la sintaxis || solo funciona para matrices de diseño que contienen predictores numéricos (continuos); para ajustar modelos con efectos categóricos independientes, consulte dummy o la función lmer_alt del paquete afex.)\n</li>\n<li>\ndata: un marco de datos opcional que contiene las variables nombradas en la fórmula. Por defecto, las variables se toman del entorno desde el cual se llama a lmer. Si bien los datos son opcionales, los autores del paquete recomiendan encarecidamente su uso, especialmente al aplicar métodos como update y drop1 al modelo ajustado (dichos métodos no están garantizados para funcionar correctamente si se omiten los datos). Si se omiten los datos, las variables se tomarán del entorno de la fórmula (si se especifica como una fórmula) o del marco padre (si se especifica como un vector de caracteres).\n</li>\n<li>\nREML: escalar lógico - ¿Deben elegirse las estimaciones para optimizar el criterio REML (en lugar de la log-verosimilitud)?\nna.action: una función que indica qué debe suceder cuando los datos contienen NAs. La acción predeterminada (na.omit, heredada del valor 'fábrica nueva' de getOption(\"na.action\")) elimina cualquier observación con valores faltantes en cualquier variable.\n</li>\n</ul>\n<b>Valor</b></br>\nUn objeto de clase merMod (más específicamente, un objeto de subclase lmerMod), para el cual están disponibles muchos métodos (por ejemplo, methods(class=\"merMod\"))</br>\n<b>Paquete</b></br>\nlme4</br>\n<b>Ayuda</b></br>\nhelp(lmer, package ='lme4')</br></br>\n<b>Descripción</b></br>\nMétodos de descripción para la función anova en el paquete lmerTest\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n## Método S4 para la firma 'merModLmerTest' anova(object, ... , ddf=\"Satterthwaite\", type=3)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobject: objeto de clase \"merModLmerTest\" ... objeto de clase \"merModLmerTest\". Luego se calcularán las estadísticas de comparación del modelo\n</li>\n<li>\nddf: Por defecto, se calcula la aproximación de Satterthwaite a los grados de libertad. Si ddf=\"Kenward-Roger\", entonces se calcula la aproximación de Kenward-Roger utilizando la función KRmodcomp del paquete pbkrtest. Si ddf=\"lme4\" entonces se devuelve la tabla anova que proviene del paquete lme4.\n</li>\n<li>\nType: tipo de hipótesis a ser probada. Podría ser type=3 o type=2 o type = 1 (La definición proviene de la teoría SAS) Detalles Según (Goodnight, J.H. 1976) el comportamiento de la hipótesis tipo 3 no se ha estudiado completamente para las situaciones con celdas faltantes (donde faltan observaciones en alguna combinación de nivel de factor). Se devuelve una advertencia en tales casos.\n</li>\n</ul>\n<b>Detalles</b></br>\nSegún (Goodnight, J.H. 1976) el comportamiento de la hipótesis tipo 3 no se ha estudiado completamente para las situaciones con celdas faltantes (donde faltan observaciones en alguna combinación de nivel de factor). Se devuelve una advertencia en tales casos.</br>\n<b>Paquete</b></br>\nlme4;lmerTest;rcompanion;ggplot2;multcomp</br>\n<b>Ayuda</b></br>\nhttps://cran.r-project.org/web/packages/lmerTest/lmerTest.pdf</br>\nhelp(nagelkerke, package ='rcompanion')</br>\nhelp(emmeans,package=\"cld\")</br>\nhelp(cld,package='emmeans')</br>\n<b>Material de referencia</b></br>\nhttp://rcompanion.org/handbook/I_07.html\n"
+  }
 }
