@@ -1,14 +1,14 @@
 {
-    "title": "ANOVA, ランダムブロックを使用した一元配置",
-    "navigation": "ANOVA, 1要因（ランダムブロック）",
-    "tvarbox1": "応答変数",
-    "tvarbox2": "固定効果",
-    "blockVar": "ブロック変数",
-    "Post_hoc": "事後解析",
-    "chk1": "残差のヒストグラム",
-    "help": {
-        "title": "ANOVA, ランダムブロックを使用した一元配置",
-        "r_help": "help(lmer, package ='lme4')",
-        "body": "説明と引数（日本語）。"
-    }
+  "title": "一元配置のANOVA（ランダムブロック）",
+  "navigation": "ANOVA, 1 way (ランダムブロック)",
+  "tvarbox1": "応答変数",
+  "tvarbox2": "固定効果",
+  "blockVar": "ブロッキング変数",
+  "Post_hoc": "事後分析",
+  "chk1": "残差のヒストグラム",
+  "help": {
+    "title": "一元配置のANOVA（ランダムブロック）",
+    "r_help": "help(lmer, package ='lme4')",
+    "body": "\n<b>説明</b></br>\nデータに線形混合効果モデル（LMM）を適合させます。REMLまたは最尤法を使用します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nlmer(formula, data = NULL, REML = TRUE, control = lmerControl(),\n        start = NULL, verbose = 0L, subset, weights, na.action,\n        offset, contrasts = NULL, devFunOnly = FALSE, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nformula: モデルの固定効果とランダム効果の部分を記述する二項線形式オブジェクト。応答は~演算子の左側にあり、項は+演算子で右側に分けられます。ランダム効果の項は、設計行列とグループ化因子の式を分ける縦棒（|）で区別されます。二つの縦棒（||）を使用して、同じグループ化変数に対して相関のない複数のランダム効果を指定できます。（実装の方法のため、||構文は数値（連続）予測子を含む設計行列にのみ機能します。独立したカテゴリ効果を持つモデルを適合させるには、dummyまたはafexパッケージのlmer_alt関数を参照してください。）\n</li>\n<li>\ndata: formulaで指定された変数を含むオプションのデータフレーム。デフォルトでは、lmerが呼び出された環境から変数が取得されます。データはオプションですが、パッケージの著者はその使用を強く推奨します。特に、後でupdateやdrop1などのメソッドを適用する際に、データが省略されると、これらのメソッドが正しく機能することは保証されません。データが省略されると、変数はformulaの環境（formulaとして指定された場合）または親フレームから取得されます。\n</li>\n<li>\nREML: 論理スカラー - 推定値はREML基準を最適化するように選択されるべきですか（対数尤度に対して）？\nna.action: データにNAが含まれている場合に何が起こるべきかを示す関数。デフォルトのアクション（na.omit、'工場出荷時'のgetOption(\"na.action\")から継承）は、任意の変数に欠損値がある観測を削除します。\n</li>\n</ul>\n<b>値</b></br>\nmerModクラスのオブジェクト（より具体的には、lmerModサブクラスのオブジェクト）であり、多くのメソッドが利用可能です（例：methods(class=\"merMod\"))</br>\n<b>パッケージ</b></br>\nlme4</br>\n<b>ヘルプ</b></br>\nhelp(lmer, package ='lme4')</br></br>\n<b>説明</b></br>\nパッケージlmerTestの関数anovaのためのメソッド\n<br/>\n<b>使用法</b>\n<br/>\n<code> \n## S4メソッドの署名 'merModLmerTest' anova(object, ... , ddf=\"Satterthwaite\", type=3)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject: クラス\"merModLmerTest\"のオブジェクト ... クラス\"merModLmerTest\"のオブジェクト。モデル比較統計が計算されます\n</li>\n<li>\nddf: デフォルトでは、自由度のSatterthwaite近似が計算されます。ddf=\"Kenward-Roger\"の場合、pbkrtestパッケージのKRmodcomp関数を使用してKenward-Rogerの近似が計算されます。ddf=\"lme4\"の場合、lme4パッケージからのanovaテーブルが返されます。\n</li>\n<li>\nタイプ: テストされる仮説のタイプ。type=3またはtype=2またはtype=1（定義はSAS理論から来ています）詳細は、(Goodnight, J.H. 1976)によると、タイプ3仮説の挙動は、欠損セルのある状況（観測がいくつかの因子レベルの組み合わせで欠落している場合）について完全には研究されていません。そのような場合には警告が返されます。\n</li>\n</ul>\n<b>詳細</b></br>\n(Goodnight, J.H. 1976)によると、タイプ3仮説の挙動は、欠損セルのある状況（観測がいくつかの因子レベルの組み合わせで欠落している場合）について完全には研究されていません。そのような場合には警告が返されます。</br>\n<b>パッケージ</b></br>\nlme4;lmerTest;rcompanion;ggplot2;multcomp</br>\n<b>ヘルプ</b></br>\nhttps://cran.r-project.org/web/packages/lmerTest/lmerTest.pdf</br>\nhelp(nagelkerke, package ='rcompanion')</br>\nhelp(emmeans,package=\"cld\")</br>\nhelp(cld,package='emmeans')</br>\n<b>参考資料</b></br>\nhttp://rcompanion.org/handbook/I_07.html\n"
+  }
 }

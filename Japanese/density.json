@@ -1,16 +1,16 @@
 {
   "title": "密度プロット",
   "navigation": "密度",
-  "x": "プロットする変数を選択してください",
-  "y": "色、因子変数を指定してください",
-  "fill": "塗りつぶし、因子変数を指定してください",
-  "label1": "重なりを制御する位置を選択してください",
-  "rd1": "密度をスタックする",
-  "rd2": "密度をスタックし、各スタックを単位高さに標準化する",
+  "x": "プロットする変数を選択",
+  "y": "色、因子変数を指定",
+  "fill": "塗りつぶし、因子変数を指定",
+  "label1": "重なりを制御する位置を選択",
+  "rd1": "密度をスタック",
+  "rd2": "密度をスタックし、各スタックを単位高さに標準化",
   "rd3": "横に並べる（ダッジ）",
   "alpha": "不透明度（0-1）",
-  "flip": "軸を反転する",
-  "specify_a_title": "タイトルを入力してください",
+  "flip": "軸を反転",
+  "specify_a_title": "タイトルを入力",
   "x_title": "X軸ラベル",
   "y_title": "Y軸ラベル",
   "Facetrow": "ファセット行",
@@ -21,6 +21,6 @@
   "help": {
     "title": "密度プロット",
     "r_help": "help(geom_density, package='ggplot2')",
-    "body": "\n            <b>説明</b></br>\n            密度カウント（1dカーネル密度推定）をプロットします。因子変数によって密度を分けることができます。また、オプションでファセット、テーマを作成し、タイトルとx軸およびy軸のラベルを指定することもできます。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"変数var1の密度プロット\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"変数var1の密度プロット、var2のレベルによる色分け\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。\n            </li>\n            <li>\n            x: 密度をプロットする数値変数\n            </li>\n            <li>\n            y: ..countは数値変数のカウントを指定します\n            </li>\n            <li>\n            fill: プロットをグループ化する因子変数\n            </li>\n            <li>\n            position: 位置調整、文字列として、または位置調整関数への呼び出しの結果として。 有効な値は「stack」、「dodge」、「fill」です。\n            </li>\n            <li>\n            geom_density (): 1dカーネル密度推定、位置パラメータはこのレイヤーの重なり合うポイントに使用する位置調整を指定できます。\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例タイトルを変更します（これはオプションです）。\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）。\n            </li>\n            <li>\n            theme_excel(): エクセルテーマ（これはオプションです）。\n            </li>\n            <li>\n            alpha: 不透明度を設定します\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes</br>\n            <b>ヘルプ</b></br>\n            help(geom_density)</br>\n            その他: 詳細なRヘルプを取得するにはRヘルプボタンをクリックしてください。また、help(geom_density)、help(labs)、help(aes)、help(facet_grid)、help(theme_excel)を入力することもできます。\n    "
+    "body": "\n            <b>説明</b></br>\n            密度カウント（1dカーネル密度推定）をプロットします。因子変数によって密度を分けることができます。また、オプションでファセット、テーマを作成し、タイトルやx軸とy軸のラベルを指定することもできます。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"変数var1の密度プロット\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"変数var1の密度プロット、var2のレベルによる色分け\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。\n            </li>\n            <li>\n            x: 密度をプロットする数値変数\n            </li>\n            <li>\n            y: ..countは数値変数のカウントを指定します\n            </li>\n            <li>\n            fill: プロットをグループ化する因子変数\n            </li>\n            <li>\n            position: 位置調整、文字列として、または位置調整関数への呼び出しの結果として。 有効な値は「stack」、「dodge」、「fill」です。\n            </li>\n            <li>\n            geom_density (): 1dカーネル密度推定、位置パラメータはこのレイヤーの重なり合うポイントに使用する位置調整を指定できます。\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例のタイトルを変更します（これはオプションです）。\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）。\n            </li>\n            <li>\n            theme_excel(): エクセルテーマ（これはオプションです）。\n            </li>\n            <li>\n            alpha: 不透明度を設定します。\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes</br>\n            <b>ヘルプ</b></br>\n            help(geom_density)</br>\n            その他: 詳細なRヘルプを取得するには、Rヘルプボタンをクリックしてください。また、help(geom_density)、help(labs)、help(aes)、help(facet_grid)、help(theme_excel)を入力することもできます。\n    "
   }
 }
