@@ -1,14 +1,14 @@
 {
-    "title": "ANOVA，單因素隨機塊",
-    "navigation": "ANOVA，1因素（隨機塊）",
-    "tvarbox1": "響應變量",
-    "tvarbox2": "固定效應",
-    "blockVar": "阻斷變量",
-    "Post_hoc": "事後分析",
-    "chk1": "殘差直方圖",
-    "help": {
-        "title": "ANOVA，單因素隨機塊",
-        "r_help": "help(lmer, package ='lme4')",
-        "body": "描述和參數（繁體中文）。"
-    }
+  "title": "單因子變異數分析，隨機區塊",
+  "navigation": "單因子變異數分析 (隨機區塊)",
+  "tvarbox1": "反應變數",
+  "tvarbox2": "固定效應",
+  "blockVar": "區塊變數",
+  "Post_hoc": "事後分析",
+  "chk1": "殘差的直方圖",
+  "help": {
+    "title": "單因子變異數分析，隨機區塊",
+    "r_help": "help(lmer, package ='lme4')",
+    "body": "\n<b>描述</b></br>\n擬合一個線性混合效應模型 (LMM) 到數據，通過REML或最大似然法。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nlmer(formula, data = NULL, REML = TRUE, control = lmerControl(),\n        start = NULL, verbose = 0L, subset, weights, na.action,\n        offset, contrasts = NULL, devFunOnly = FALSE, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nformula: 一個雙側線性公式對象，描述模型的固定效應和隨機效應部分，反應變數在~運算符的左側，項目由+運算符分隔在右側。隨機效應項由垂直條 (|) 分隔設計矩陣和分組因子的表達式。可以使用兩個垂直條 (||) 來指定相同分組變數的多個不相關隨機效應。(由於其實現方式，||語法僅適用於包含數值 (連續) 預測變數的設計矩陣；要擬合具有獨立類別效應的模型，請參見dummy或afex包中的lmer_alt函數。)\n</li>\n<li>\ndata: 一個可選的數據框，包含公式中命名的變數。默認情況下，變數來自調用lmer的環境。雖然數據是可選的，但包的作者強烈建議使用它，特別是在稍後應用如update和drop1等方法到擬合模型時（如果省略數據，這些方法不保證能正常工作）。如果省略數據，變數將從公式的環境中獲取（如果指定為公式）或從父框架中獲取（如果指定為字符向量）。\n</li>\n<li>\nREML: 邏輯標量 - 應該選擇估計值以優化REML準則（與對數似然相對）嗎？\nna.action: 一個函數，指示當數據包含NAs時應該發生什麼。默認行為 (na.omit，繼承自getOption(\"na.action\")的'工廠新鮮'值) 刪除任何在任何變數中有缺失值的觀察。\n</li>\n</ul>\n<b>值</b></br>\n一個merMod類的對象（更具體地說，是lmerMod子類的對象），對於該對象有許多方法可用（例如，methods(class=\"merMod\"))</br>\n<b>包</b></br>\nlme4</br>\n<b>幫助</b></br>\nhelp(lmer, package ='lme4')</br></br>\n<b>描述</b></br>\nlmerTest包中anova函數的方法\n<br/>\n<b>用法</b>\n<br/>\n<code> \n## S4方法的簽名 'merModLmerTest' anova(object, ... , ddf=\"Satterthwaite\", type=3)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nobject: \"merModLmerTest\"類的對象 ... \"merModLmerTest\"類的對象。然後將計算模型比較統計量\n</li>\n<li>\nddf: 默認情況下，計算Satterthwaite的自由度近似。如果ddf=\"Kenward-Roger\"，則使用pbkrtest包中的KRmodcomp函數計算Kenward-Roger的近似。如果ddf=\"lme4\"，則返回來自lme4包的anova表。\n</li>\n<li>\nType: 要測試的假設類型。可以是type=3或type=2或type=1（定義來自SAS理論）詳細信息根據（Goodnight, J.H. 1976），類型3假設的行為在缺失單元的情況下（某些因子級別組合缺失觀察）尚未完全研究。在這種情況下會返回警告。\n</li>\n</ul>\n<b>詳細信息</b></br>\n根據（Goodnight, J.H. 1976），類型3假設的行為在缺失單元的情況下（某些因子級別組合缺失觀察）尚未完全研究。在這種情況下會返回警告。</br>\n<b>包</b></br>\nlme4;lmerTest;rcompanion;ggplot2;multcomp</br>\n<b>幫助</b></br>\nhttps://cran.r-project.org/web/packages/lmerTest/lmerTest.pdf</br>\nhelp(nagelkerke, package ='rcompanion')</br>\nhelp(emmeans,package=\"cld\")</br>\nhelp(cld,package='emmeans')</br>\n<b>參考資料</b></br>\nhttp://rcompanion.org/handbook/I_07.html\n"
+  }
 }
