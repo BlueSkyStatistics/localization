@@ -1,0 +1,12 @@
+{
+  "title": "中心点を持たない2レベルデザイン（定量的）に中心点を追加する - 選択されたデザインはデータセットUIグリッド上のアクティブデザインです",
+  "navigation": "中心点を追加する2レベルデザイン（定量的）",
+  "datasetname": "中心点を持つ修正デザイン名",
+  "numOfCenterPts": "中心点の数（使用する場合、最小2つ必要）",
+  "centerPointDistribution": "中心点分布の位置数（>1でなければならない）",
+  "help": {
+    "title": "中心点を持たない2レベルデザインに中心点を追加する",
+    "r_help": "help(add.center, package = FrF2)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tadd.center関数は、2レベルの分数因子デザインに中心点を追加します。すべての因子は定量的でなければなりません\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(add.center, package = FrF2)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

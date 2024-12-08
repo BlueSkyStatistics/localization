@@ -1,0 +1,28 @@
+{
+  "title": "Q-Q プロット",
+  "navigation": "Q-Q",
+  "x": "X軸、数値変数を指定してください",
+  "alpha": "不透明度 (0-1)",
+  "y": "形状、因子変数を指定してください",
+  "color": "色、因子変数を指定してください",
+  "referenceline": "基準線",
+  "band": "バンドを表示",
+  "detrend": "トレンド除去",
+  "flip": "軸を反転",
+  "distribution": "分布を選択",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "label1": "分布パラメータ、例えば正規分布の場合、分布パラメータは mean=2, sd=2 ですので、mean=2, sd=2 と入力してください。指数分布の場合、パラメータは rate=2 ですので、rate=2 と入力してください。",
+  "specify_a_title": "タイトルを入力してください",
+  "dparams": "オプションで分布パラメータを入力してください",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "facets_lbl" : "様相",
+  "help": {
+    "title": "Q-Q プロット",
+    "r_help": "help(stat_qq_point,package='qqplotr')",
+    "body": "\n            <b>説明</b></br>\n            Q-Q（分位数-分位数）プロットは、確率プロットであり、2つの確率分布を比較するためのグラフィカルな方法です。選択した変数の確率分布を正規分布と比較しますが、ベータ、コーシー、カイ二乗、指数、F、ガンマなど、他のいくつかの分布と比較することもできます。また、比較対象の分布に関連する分布パラメータを指定することもできます。メインダイアログのオプションボタンをクリックして、分布を選択し、分布パラメータを指定してください。選択した変数をグループ化するために因子変数を選択できます。この場合、各グループに対して別々のQ-Qプロットが描画されます。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_line(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_point(distribution=\"norm\",detrend = TRUE) +\n             coord_flip() +\n             labs(x = \"確率ポイント\",y =\"サンプル分位数\",title = \"変数 var1 のQQプロット\")</br></br>\n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_line(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_point(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE)+\n             labs(x = \"確率ポイント\",y =\"サンプル分位数\",title = \"変数 var1 のQQプロット\")\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            sample: P-Pプロットを描画するための数値変数\n            </li>\n            <li>\n            stat_qq_point: これはggplot2::stat_qqの修正バージョンで、いくつかのパラメータ調整とポイントをトレンド除去する新しいオプションがあります。\n            </li>\n            <li>\n            stat_qq_line: stats::qqlineのように、データの分位数に基づいて基準線を描画します。\n            </li>\n            <li>\n            stat_qq_band: \"normal\",\"boot\"および\"ts\"の3つの方法に基づいて信頼バンドを描画します：\n            \"normal\"は正規信頼区間に基づいて同時信頼バンドを構築します;\n            \"boot\"はパラメトリックブートストラップに基づいてポイントごとの信頼バンドを作成します;\n            \"ts\"は、Aldor-Noiman et al.（2013）によって提案されたテール感度信頼バンドを構築します。\n            </li>\n            <li>\n            shape: サンプルに割り当てられた値をグループ化するオプションの因子変数。因子変数のレベルによって決定された各グループに対して別々のP-Pプロットが作成されます​。各グループは異なる形状で示されます\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例タイトルを変更します（これはオプションです）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）​。詳細についてはhelp(facet_grid)を参照してください。\n            </li>\n            <li>  ​\n            coord_flip(): 軸を反転します（これはオプションです）​\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>ヘルプ</b></br>\n            help(stat_qq_point,package='qqplotr')</br>\n            その他: 詳細なRヘルプを取得するにはRヘルプボタンをクリックしてください。help(labs)、help(stat_qq_point)、help(aes)、help(facet_grid)、help(coord_flip)を入力することもできます。​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n"
+  }
+}

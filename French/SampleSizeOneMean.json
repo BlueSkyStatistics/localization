@@ -1,0 +1,18 @@
+{
+  "title": "Taille d'Échantillon, Test d'une Moyenne ou Moyennes Appariées",
+  "navigation": "Une Moyenne ou Moyennes Appariées",
+  "howtouse": "Spécifiez deux des tailles d'échantillon, la différence entre les moyennes et la puissance, et la troisième sera calculée",
+  "n": "Taille d'Échantillon",
+  "delta": "Différence Entre les Moyennes",
+  "power": "Puissance (0-1)",
+  "sd": "Écart-Type",
+  "siglevel": "Niveau de Signification (0-1)",
+  "alternativeopt": "Hypothèse Alternative",
+  "twosided": "Deux-Sidée",
+  "onesided": "Un-Sidée",
+  "help": {
+    "title": "Taille d'Échantillon, Test d'une Moyenne",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nCeci est une évaluation de la taille d'échantillon pour un test t à un échantillon d'une moyenne ou un test de moyennes appariées. Il calcule la taille d'échantillon, la différence entre les moyennes, ou la puissance, lorsque l'utilisateur \nspécifie deux d'entre eux.\n<br/><br/>\n<b>Taille d'Échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Différence Entre les Moyennes :</b> Si un test t à un échantillon, spécifiez la différence entre la moyenne sous l'hypothèse alternative et la moyenne sous l'hypothèse nulle. Si un\n test t apparié, spécifiez la différence entre les moyennes appariées sous l'hypothèse alternative.\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance désirée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Écart-Type :</b> Spécifiez une estimation de l'écart-type de la mesure de résultat. Pour les tests appariés, c'est l'écart-type des différences appariées.\n<br/><br/>\n<b>Niveau de Signification :</b> Spécifiez le niveau de signification désiré (c'est-à-dire l'erreur de type I) du test\n<br/><br/>\n<b>Hypothèse Alternative :</b> Spécifiez si le test est à deux côtés ou à un côté\n<br/><br/>\n<b>Packages R Requis :</b> stats, broom\n\t\t\t"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Imputarea valorilor lipsă (Folosind o formulă)",
+  "navigation": "Folosește o formulă",
+  "depVar": "Selectează o variabilă pentru a imputare valorile lipsă (Aceasta este variabila dependentă în model)",
+  "label1": "Mută variabilele independente în controlul constructorului de formule pentru a construi o formulă. Treci cu mouse-ul peste simbolurile din constructorul de formule pentru ajutor",
+  "formula": "Mutarea mai multor variabile cu butonul de mutare folosește un separator implicit de +, indicând variabile independente fără termeni de interacțiune. Fă clic pe simbol pentru a construi un model cu termeni de interacțiune.",
+  "independent": "Variabile independente (una sau mai multe)",
+  "help": {
+    "title": "Imputarea valorilor lipsă (Folosind o formulă)",
+    "r_help": "help(if_else,package='dplyr')",
+    "body": "\n            <b>Descriere</b></br>\n            Construiește o formulă pentru a înlocui valorile lipsă. De exemplu, construiești un model de regresie pentru a dezvolta estimări pentru valorile lipsă, odată ce ecuația este generată, poți introduce ecuația în dialog și doar valorile lipsă din variabila selectată vor fi calculate.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # substituind expresia cu var2*4+1.32<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            var: Numele variabilei din setul de date unde valorile lipsă trebuie înlocuite, de exemplu var=c(\"sales\"). Variabila trebuie să fie de clasă numerică\n            </li>\n            <li>\n            Dataset: Setul de date/dataframe care conține variabila var\n            </li>\n            <li>\n            expresie: Expresia folosită pentru a înlocui valoarea lipsă, în exemplul de mai sus este var2*4+ 1.32\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            dplyr</br>\n            <b>Ajutor</b></br>\n            Pentru ajutor detaliat, fă clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulează următoarea comandă help(if_else, package ='dplyr') creând un chunk de cod R făcând clic pe + în fereastra de ieșire\n            "
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Regrouper le facteur le moins ou le plus commun",
+  "navigation": "Regrouper dans Autre (Automatiquement)",
+  "target": "Sélectionner les variables pour regrouper les niveaux rares",
+  "label1": "Le nom par défaut de la nouvelle catégorie contenant les niveaux regroupés est \"autre\". La spécification des poids est optionnelle. Vous pouvez écraser les variable(s) existante(s) avec les niveaux regroupés ou enregistrer les résultats dans de nouvelles variable(s)",
+  "other": "Nom pour le niveau regroupé",
+  "label3": "Méthode à utiliser",
+  "defaultOption": "Regrouper ensemble les niveaux les moins fréquents dans \"autre\" tout en s'assurant que \"autre\" est le plus petit niveau",
+  "categories": "Conserver les catégories les plus communes (+n)/les moins communes (-n)",
+  "category": "Entrez le nombre de catégories",
+  "proportion1": "Conserver les catégories qui apparaissent au moins (+ prop)/au plus (- prop) proportion du temps",
+  "proportion": "Entrez la proportion",
+  "dropOption": "Entrez les niveaux à remplacer par \"Autre\" par exemple niveau1,niveau2,niveau3",
+  "varweights": "Poids des variables",
+  "label2": "Enregistrer les résultats dans de nouvelles variable(s) ou écraser les variable(s) existante(s)",
+  "rd3": "Spécifiez un suffixe (Une nouvelle variable sera créée avec le suffixe)",
+  "txt3": "Entrez un suffixe",
+  "rd2": "Spécifiez un préfixe (Une nouvelle variable sera créée avec le préfixe)",
+  "txt4": "Entrez un préfixe",
+  "rd1": "Écraser les variables existantes",
+  "ties": "Options pour gérer les égalités",
+  "help": {
+    "title": "Regrouper dans Autre",
+    "r_help": "help(fct_lump, package =forcats)",
+    "body": "\n<b>Description</b></br>\nRegrouper les niveaux de facteur les moins ou les plus communs dans le niveau \"autre\". Le nom par défaut de la nouvelle catégorie contenant les niveaux regroupés est \"autre\". La spécification des poids est optionnelle. Vous pouvez écraser les variable(s) existante(s) avec les niveaux regroupés ou enregistrer les résultats dans de nouvelles variable(s)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Autre\",ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"autre\",ties.method =\"min\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: Un facteur. Si n et prop sont tous deux manquants, fct_lump regroupe les niveaux les moins fréquents dans \"autre\", tout en s'assurant que \"autre\" est toujours le plus petit niveau. C'est particulièrement utile en conjonction avec fct_inorder().\n</li>\n<li>\nn: n positif préserve les n valeurs les plus communes. n négatif préserve les -n valeurs les moins communes. S'il y a des égalités, vous obtiendrez au moins abs(n) valeurs.\n</li>\n<li>\nprop: prop positif préserve les valeurs qui apparaissent au moins prop du temps. prop négatif préserve les valeurs qui apparaissent au plus -prop du temps.\n</li>\n<li>\nw: Un vecteur numérique optionnel donnant des poids pour la fréquence de chaque valeur (pas niveau) dans f.\n</li>\n<li>\nother_level: Valeur du niveau utilisé pour les valeurs \"autres\". Toujours placé à la fin des niveaux.\n</li>\n<li>\nties.method: Une chaîne de caractères spécifiant comment les égalités sont traitées. Voir rank() pour plus de détails.\n</li>\n<li>\nmin: Préserve les valeurs qui apparaissent au moins min fois.\n</li>\n</ul>\n<b>Package</b></br>\nforcats</br>\n<b>Aide</b></br>\nTapez la ligne ci-dessous dans l'éditeur de syntaxe R de BlueSky Statistics</br>\nhelp(fct_lump, package =forcats)\n"
+  }
+}

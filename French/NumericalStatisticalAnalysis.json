@@ -1,0 +1,23 @@
+{
+  "title": "Sommaires, uniquement numériques",
+  "navigation": "Variables numériques uniquement (héritées)",
+  "tvarbox1": "Variables sélectionnées",
+  "tvarbox2": "Grouper par",
+  "min": "Min",
+  "max": "Max",
+  "mean": "Moyenne",
+  "median": "Médiane",
+  "sum": "Somme",
+  "sd": "Écart type",
+  "stderror": "Erreur standard de la moyenne",
+  "iqr": "Plage interquartile",
+  "quantiles": "Quartiles",
+  "probs": "Spécifiez les quartiles (si le quartile est sélectionné)",
+  "addIsstatnames": "Noms de fonctions statistiques supplémentaires séparés par des virgules, par exemple var)",
+  "label1": "Options",
+  "help": {
+    "title": "Sommaires, uniquement numériques",
+    "r_help": "",
+    "body": "\n<b>Description</b></br>\nProduits les statistiques numériques suivantes :</br>\nmin, max, moyenne, médiane, somme, écart type, erreur standard, plage interquartile, quartiles. Si les quartiles sont sélectionnés, vous pouvez spécifier les quartiles nécessaires séparés par des virgules.</br>\nEn plus de cela, l'utilisateur peut passer une liste de noms de fonctions statistiques séparés par des virgules, par exemple var.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"nom du dataset\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variables d'échelle sélectionnées (par exemple Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: une ou plusieurs variables factorielles à grouper (par exemple Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Liste de fonctions. Celles définies sur TRUE seront exécutées. (par exemple min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilités des quartiles\n</li>\n<li>\nadditionalStats: Fonction statistique supplémentaire que l'utilisateur peut passer (par exemple var)\n</li>\n<li>\ndatasetName: Nom du dataset à partir duquel datasetColumnObjects et groupByColumnObjects sont choisis\n</li>\n</ul>\n<b>Valeur</b></br>\nUn objet de classe \"data.frame\", donnant les résultats pour chaque fonction sur chaque variable.</br>\n<b>Exemples</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Ventes', 'IT','Ventes','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Package</b></br>\nBlueSky</br>\n<b>Aide</b></br>\nL'aide R n'est pas disponible car nous avons écrit un code personnalisé utilisant plusieurs fonctions R. Si vous avez besoin d'inspecter le code, cliquez sur le bouton \"<>\".</br>\n    "
+  }
+}

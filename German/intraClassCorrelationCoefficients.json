@@ -1,0 +1,12 @@
+{
+    "title": "Intraklassenkorrelationskoeffizienten",
+    "navigation": "Intraklassenkorrelationskoeffizienten",
+    "ratervars": "Beurteiler-Variablen:",
+    "cilevel": "Vertrauensniveau:",
+    "modeldetails": "Modelldetails",
+    "help": {
+        "title": "Intraklassenkorrelationskoeffizienten",
+        "r_help": "help(ICC, package=psych)",
+        "body": "\n<b>Beschreibung</b></br>\nBerechnet die 6 Intraklassenkorrelationskoeffizienten (ICC) von Shrout und Fleiss (1979, Psychological Bulletin). Die Schätzung erfolgt mit linearen gemischten Effektmodellen mit eingeschränkter maximaler Wahrscheinlichkeit, sodass fehlende Daten behandelt werden können.</br>\n<b>Paket</b></br>\npsych</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol oben rechts in diesem Dialogfenster oder führen Sie den Befehl help(ICC, package=psych) aus.\n\t\t\t"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Transposer, ensemble du jeu de données",
+  "navigation": "Ensemble du jeu de données",
+  "transposedDataset": "Entrez un nom pour le jeu de données transposé",
+  "help": {
+    "title": "Transposer l'ensemble du jeu de données",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Description</b></br>\nInvoque la fonction de transposition dans le package de base qui transpose le jeu de données. Vous devez spécifier le nom du jeu de données qui stocke le jeu de données transposé. Le nouveau jeu de données transposé est affiché dans la grille.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nFonction appelée : base::t(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : est une matrice ou un dataframe\n</li>\n</ul>\n<b>Valeur</b><br/>\nUne matrice, avec dim et dimnames construites de manière appropriée à partir de celles de x, et d'autres attributs sauf les noms copiés.\n<br/>\n<b>Package</b></br>\nbase<br/>\n<b>Aide</b></br>\naide(t, package='base')\n"
+  }
+}

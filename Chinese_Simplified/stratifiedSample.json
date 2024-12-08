@@ -1,0 +1,14 @@
+{
+  "title": "分层拆分",
+  "navigation": "分层拆分",
+  "traindataset": "输入训练数据集的名称",
+  "testdataset": "输入测试数据集的名称",
+  "split": "输入拆分百分比",
+  "seed": "设置种子",
+  "dependent": "用于构建分层样本的变量",
+  "help": {
+    "title": "分层拆分",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>描述</b></br>\n使用createDataPartition创建一系列测试/训练分区，而createResample创建一个或多个自助样本。createFolds将数据分成k组，而createTimeSlices为序列数据创建交叉验证拆分。groupKFold根据分组因子拆分数据。\n<br/>\n<b>用法</b>\n<br/>\n<code> \ncreateDataPartition(y, times = 1, p = 0.5, list = TRUE, groups = min(5,length(y)))<br/>\ncreateFolds(y, k = 10, list = TRUE, returnTrain = FALSE)<br/>\ncreateTimeSlices(y, initialWindow, horizon = 1, fixedWindow = TRUE,skip = 0)<br/>\ngroupKFold(group, k = length(unique(group)))<br/>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ny: 一个结果向量。对于createTimeSlices，这些应该按时间顺序排列。\n</li>\n<li>\ntimes: 要创建的分区数量\n</li>\n<li>\np: 进入训练的百分比数据\n</li>\n<li>\nlist: 逻辑 - 结果应该是列表（TRUE）还是矩阵，行数等于floor(p * length(y))，列数为times。\n</li>\n<li>\ngroups: 对于数值y，分位数的断点数量（见下文）\n</li>\n<li>\nk: 用于折叠数量的整数。\n</li>\n<li>\nreturnTrain: 逻辑。当为真时，返回的值是与训练期间使用的数据对应的样本位置。此参数仅在与list = TRUE结合使用时有效\n</li>\n<li>\ninitialWindow: 每个训练集样本中的连续值的初始数量\n</li>\n<li>\nhorizon: 测试集样本中的连续值数量\n</li>\n<li>\nfixedWindow: 逻辑，如果为FALSE，所有训练样本从1开始\n</li>\n<li>\nskip: 整数，跳过多少（如果有的话）重采样以减少总量\n</li>\n<li>\ngroup: 一个组向量，其长度与整体数据集中的行数匹配。\n</li>\n</ul>\n<b>详细信息</b></br>\n对于自助样本，使用简单随机抽样。\n对于其他数据拆分，随机抽样是在y的水平内进行的，当y是因子时，试图平衡拆分中的类分布。</br>\n对于数值y，样本根据百分位数分成组部分，并在这些子组内进行抽样。对于createDataPartition，分位数的数量通过groups参数设置。对于createFolds和createMultiFolds，组的数量根据样本大小和k动态设置。对于较小的样本大小，这两个函数可能不会进行分层拆分，最多将数据拆分为四分位数。</br>\n此外，对于createDataPartition，类大小非常小（<= 3）时，类可能不会出现在训练和测试数据中。</br>\n对于多个k折交叉验证，创建完全独立的折叠。列表对象的名称将使用模式\"Foldi.Repj\"表示折叠成员资格，意味着第i部分（k的）第j个交叉验证集（times）。请注意，此函数调用createFolds，list = TRUE和returnTrain = TRUE。</br>\nHyndman和Athanasopoulos（2013）讨论了滚动预测起源技术，这些技术在时间上移动训练和测试集。createTimeSlices可以为这种类型的拆分创建索引。</br>\n对于组k折交叉验证，数据被拆分，使得没有组包含在建模和保留集中的一个或多个组可能会被省略，具体取决于k的值。</br>\n<b>值</b><br/>\n一个列表或矩阵，行位置整数对应于训练数据。对于createTimeSlices，子样本按每个训练子样本的结束索引命名。</br>\n<b>包</b></br>\ncaret</br>\nklaR</br>\n<b>帮助</b></br>\nhelp(createDataPartition, package=\"caret\")\n        "
+  }
+}

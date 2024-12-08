@@ -1,0 +1,21 @@
+{
+  "title": "等高線プロット",
+  "navigation": "等高線プロット",
+  "x": "X変数、数値変数を指定してください",
+  "y": "Y変数、数値変数を指定してください",
+  "flip": "軸を反転",
+  "specify_a_title": "タイトルを入力",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "facets_lbl" : "様相",
+  "colorHintLabel1": "色を選択してください（色を選択した後、コントロールの外側をクリックして適用してください）",
+  "help": {
+    "title": "等高線プロット",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>説明</b></br>\n            MASS::kde2d()を使用して2Dカーネル密度推定を実行し、結果を等高線で表示します。これはオーバープロットの処理に役立ちます。これはgeom_density()の2Dバージョンです。</br>\n            ファセットは、因子変数を指定することでオプションで作成できます。また、テーマを指定し、x軸とy軸のタイトルとラベルを指定することもできます。​\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"等高線チャート...\")\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            x: 数値変数\n            </li>\n            <li>\n            y: 数値変数\n            </li>\n            <li>\n            geomdensity2d: プロットを作成します\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例タイトルを変更します（これはオプションです）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）​\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します（これはオプションです）​\n            </li>\n            <li>\n            coord_flip(): 軸を反転します（これはオプションです）​\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;</br>\n            <b>ヘルプ</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            その他: Rヘルプボタンをクリックして詳細なRヘルプを取得します。help(labs)、help(geom_density2d)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。​\n    "
+  }
+}

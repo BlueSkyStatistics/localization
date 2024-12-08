@@ -1,0 +1,15 @@
+{
+  "title": "Generați automat detalii despre factori (dimensiune egală) pentru un studiu DoE",
+  "navigation": "Detalii despre factori (dimensiune egală)",
+  "datasetname": "Numele tabelului de detalii despre factori",
+  "numOfVars": "Numărul de factori",
+  "numOfFactorLevels": "Numărul maxim de niveluri între factori",
+  "factorLevels": "Valori ale nivelurilor separate prin virgulă - exemplu: -1, 1, 'string1', 2, 0",
+  "autoFillChkbx": "Umpleți automat nivelurile",
+  "label1": "Ignorați următoarea opțiune - opțiune de curățare a setului de date pentru utilizare ulterioară",
+  "convertFactorToCharInt": "Pentru setul de date activ selectat - convertiți toate coloanele de tip factor în caracter sau întreg (și când această opțiune este selectată, toate celelalte opțiuni de pe această interfață vor fi ignorate)",
+  "help": {
+    "title": "Generați automat detalii despre factori",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tGenerați automat un tabel cu detalii despre factori pe baza parametrului specificat - numărul de factori și nivelurile maxime pentru factori împreună cu valorile implicite pentru factorii care urmează a fi utilizați. Dacă se folosesc valori non-numerice pentru factor, specificați-le între ghilimele simple, de exemplu 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOdată ce detaliile despre factori sunt generate automat și tabelul de factori apare pe interfața de utilizare a grilei de date, puteți schimba valorile și/sau elimina unele valori din grilă pentru a manipula tabelul așa cum doriți, inclusiv factori cu un număr diferit de valori \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDacă numărul de factori este <= 26, factorii sunt denumiți cu litere mari ca A, B, C, .., altfel, denumiți ca F1, F2, ..., F27, F28, ..\n\t\t\t"
+  }
+}

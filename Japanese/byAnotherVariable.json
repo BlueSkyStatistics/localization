@@ -1,0 +1,22 @@
+{
+  "title": "別の変数による因子レベルの再順序付け",
+  "navigation": "別の変数による再順序付け",
+  "target": "再順序付けする因子変数を選択",
+  "variableToOrderBy": "順序付けする変数",
+  "label1": "別の変数の値の算術関数（平均、中央値、合計）に基づいて因子レベルを再順序付けします。再順序付けする因子変数を選択し、平均、中央値、または合計を計算する数値変数を選択します。これは因子変数の各レベルに対して計算されます。レベルはこの計算に基づいて順序付けられます。既存の変数を上書きするか、接頭辞/接尾辞を指定して新しい変数を作成できます。新しい変数は既存の名前に接頭辞/接尾辞が追加されて作成されます。",
+  "function": "順序付けする関数を選択",
+  "label2": "結果を新しい変数に保存するか、既存の変数を上書きする",
+  "rd3": "接尾辞を指定します（接尾辞付きの新しい変数が作成されます）",
+  "txt3": "接尾辞を入力",
+  "rd2": "接頭辞を指定します（接頭辞付きの新しい変数が作成されます）",
+  "txt4": "接頭辞を入力",
+  "rd1": "既存の変数を上書きする",
+  "label3": "順序を指定",
+  "Descending": "降順",
+  "Ascending": "昇順",
+  "help": {
+    "title": "別の変数による再順序付け",
+    "r_help": "help(fct_reorder, package =forcats)",
+    "body": "\n<b>説明</b></br>\n別の変数に沿って因子レベルを再順序付けします。因子レベルは、別の変数の値の算術関数（平均、中央値、合計）に基づいて再順序付けされます。再順序付けする因子変数を選択し、平均、中央値、または合計を計算する数値変数を選択します。これは因子変数の各レベルに対して計算されます。レベルはこの計算に基づいて順序付けられます。結果は既存の変数に保存することも、新しい変数を接頭辞/接尾辞を指定して作成することもできます。新しい変数は既存の名前に接頭辞/接尾辞が追加されて作成されます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nfct_reorder(.f, .x, .fun = median, ..., .desc = FALSE)\nDataset1$col1 <-forcats::fct_reorder( .f=Dataset1$col1,.x=Dataset1$col2,.fun=median,.desc=TRUE)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\n.f: 因子（または文字ベクトル）。\n</li>\n<li>\n.x, .y: fのレベルは、.fun(.x)（fct_reorder()用）およびfun(.x, .y)（fct_reorder2()用）の値が昇順になるように再順序付けされます。\n</li>\n<li>\n.fun: n要約関数。fct_reorder用には1つのベクトルを、fct_reorder2用には2つのベクトルを受け取り、単一の値を返す必要があります。\n</li>\n<li>\n...: .funに渡される他の引数。一般的な引数はna.rm = TRUEです。\n</li>\n<li>\n.desc: 降順にしますか？fct_reorderとfct_reorder2のデフォルトは異なるため、凡例の因子のデフォルト順序に一致させる必要があります。\n</li>\n</ul>\n<b>例</b></br>\n<code> \nboxplot(Sepal.Width ~ Species, data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width), data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width, .desc = TRUE), data = iris)<br/>\nchks <- subset(ChickWeight, as.integer(Chick) < 10)<br/>\nchks <- transform(chks, Chick = fct_shuffle(Chick))<br/>\nif (require(\"ggplot2\")) {<br/>\nggplot(chks, aes(Time, weight, colour = Chick)) +<br/>\n    geom_point() +<br/>\n    geom_line()<br/>\n# 凡例の順序に一致するように線がマッチします<br/>\nggplot(chks, aes(Time, weight, colour = fct_reorder2(Chick, Time, weight))) +<br/>\n    geom_point() +<br/>\n    geom_line() +<br/>\n    labs(colour = \"Chick\")<br/>\n}<br/>\n</code>\n<b>パッケージ</b></br>\nforcats</br>\n<b>ヘルプ</b></br>\nBlueSky Statistics Rシンタックスエディタに以下の行を入力してください</br>\nhelp(fct_reorder, package =forcats)\n"
+  }
+}

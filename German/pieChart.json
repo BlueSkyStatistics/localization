@@ -1,0 +1,31 @@
+{
+  "title": "Kreisdiagramm",
+  "suppressLabels": "Alle Beschriftungen für Zählungen und Prozentsätze unterdrücken",
+  "optionsLabels": "Optionen für Beschriftungen",
+  "suppressThreshold": "Beschriftungen für Zählungen und Prozentsätze unterdrücken, die unter dem angegebenen Schwellenwert liegen",
+  "radius": "Geben Sie einen Radius an, um Beschriftungen anzuzeigen (Erhöhung des Radius bewegt die Beschriftungen nach außen)",
+  "radiusNote": "Hinweis: Die obige Option gilt nicht, wenn die Option zum Anzeigen von konzentrischen Kreisen ausgewählt ist.",
+  "navigation": "Kreisdiagramm",
+  "concentricCircles": "Konzentrische Kreise anzeigen (Gilt nur, wenn eine X-Achsenvariable angegeben ist)",
+  "x": "X-Achse, geben Sie Faktorvariable(n) an",
+  "y": "Y-Variable, geben Sie eine numerische Variable an",
+  "fill": "Füllung, geben Sie eine Faktorvariable an",
+  "alpha": "Opazität (0-1)",
+  "width": "Breite",
+  "rdgrp1": "Füllproportionen",
+  "flip": "Achse umdrehen",
+  "barcolor": "Balkenfarbe (Nach Farbauswahl klicken Sie außerhalb der Steuerung, um anzuwenden)",
+  "specify_a_title": "Geben Sie einen Titel ein",
+  "x_title": "X-Achsenbeschriftung",
+  "y_title": "Y-Achsenbeschriftung",
+  "Facetrow": "Facet-Reihe",
+  "Facetcolumn": "Facet-Spalte",
+  "Facetwrap": "Facet-Wicklung",
+  "Facetscale": "Facet-Skala",
+  "facets_lbl" : "Facetten",
+  "help": {
+    "title": "Kreisdiagramm",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>Beschreibung</b></br>\n            Ein Kreisdiagramm (oder ein Kreisdiagramm) ist eine kreisförmige statistische Grafik, die in Scheiben unterteilt ist, um numerische Proportionen zu veranschaulichen. In einem Kreisdiagramm ist die Bogenlänge jeder Scheibe (und folglich ihr zentraler Winkel und ihre Fläche) proportional zur Menge, die sie darstellt. Die Menge kann als Zählung oder Prozentsatz dargestellt werden.\n            Facetten können optional erstellt werden, indem eine Faktorvariable angegeben wird. Sie können auch optional Themen angeben und einen Titel sowie Beschriftungen für die X- und Y-Achse angeben.</br>\n            Wenn Sie mehrere X-Variablen angeben, erstellen wir ein separates Kreisdiagramm für jede X-Variable. </br>\n            Der Radius ermöglicht es Ihnen, die Platzierung der Beschriftungen zu steuern. Ein Radius von 1 platziert die Beschriftungen in der Mitte des Kreises, ein Radius von 1,6 platziert die Beschriftungen außerhalb des Kreises.</br>\n            Der äußere hellgraue Kreis stellt die Zählung oder die Gesamtsumme dar. Siehe Text am unteren Rand des Kreisdiagramms für Details.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n            #Sie können ein Kreisdiagramm für eine einzelne Faktorvariable erstellen, die Kreise stellen die Zählungen jeder Ebene der Faktorvariable dar. Hier entspricht die Faktorvariable der Füllung<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"Kreisdiagramm mit Füllung: Art\") +\n\tylab(\"\") + \n\txlab(\"Zählung\")</br></br>\n            #Sie können ein Kreisdiagramm erstellen, indem Sie eine Skala/numerische Variable als Y-Variable angeben und die Scheiben des Kreises mit einer Faktorvariable füllen. Die Kreise werden gefüllt, indem die Werte der Y-Variable für jede Ebene der Faktorvariable summiert werden, siehe Beispiel unten<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #Sie können eine X-Variable, Y-Variable und Füllung angeben. Die Scheiben werden für jede Ebene der X-Variable erstellt und mit der Summe der Werte der Y-Variable für jede Ebene der in der Füllung angegebenen Variablen gefüllt.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Der Standarddatensatz​\n            </li>\n            <li>\n            aes():    Generiert ästhetische Zuordnungen, die beschreiben, wie Variablen in den Daten auf visuelle Eigenschaften (Ästhetik) von Geoms abgebildet werden.​\n            </li>\n            <li>\n            x: (Optional) Eine Faktor-/kategorische Variable. Die Länge des Balkens entspricht den Zählungen jeder Ebene der Faktorvariable.​\n            </li>\n            <li>\n            Y: (Optional) eine numerische Variable\n            </li>\n            <li>\n            fill: (Optional) Eine optionale Faktor-/kategorische Variable, um die Zählungen der Ebenen in x zu gruppieren: (siehe oben)​\n            </li>\n            <li>\n            geom_bar(): Erstellt das Balkendiagramm, position =\"fill\" füllt den Balken mit einem Prozentsatz jeder Gruppierungsebene.​\n            </li>\n            <li>\n            Coor_polar(): Das polare Koordinatensystem wird am häufigsten für Kreisdiagramme verwendet, die ein gestapeltes Balkendiagramm in polarer Koordinaten sind.\n            </li>\n            <li>\n            Labs(): Ändert Achsenbeschriftungen und Legendentitel (dies ist optional)​\n            </li>\n            <li>\n            facet_grid(): Legt Panels in einem Raster an (dies ist optional)​\n            </li>\n            <li>\n            theme_calc(): Gibt das Rechnerdesign an (dies ist optional)​\n            </li>\n            <li>\n            coord_flip(): Achse umdrehen (dies ist optional)​\n            </li>\n            <li>\n            alpha: Steuert die Opazität, nimmt Werte zwischen 0-1 an. 1 bedeutet keine Opazität.\n            </li>\n            </ul>\n            <b>Pakete</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Hilfe</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            Andere: Klicken Sie auf die Schaltfläche R-Hilfe, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) eingeben​            \n    "
+  }
+}

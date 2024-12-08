@@ -1,0 +1,18 @@
+{
+  "title": "主成分分析",
+  "navigation": "主成分",
+  "lab40": "注意: 相関行列または共分散行列は、選択された変数から自動的に作成されます",
+  "destination": "変数を選択",
+  "label1": "相関行列または共分散行列を選択",
+  "rd1": "相関行列",
+  "rd2": "共分散行列",
+  "addToDataset": "主成分をデータセットに追加します。変数名の接頭辞と追加する成分の数を指定する必要があります",
+  "variablePrefix": "データセットに追加される成分の接頭辞を入力",
+  "noOfComponents": "データセットに追加する成分の数を入力",
+  "screeplot": "スクリープロット",
+  "help": {
+    "title": "主成分分析",
+    "r_help": "help(princomp, package ='stats')",
+    "body": "\n<b>説明</b></br>\n指定された数値データ行列に対して主成分分析を実行し、結果をprincompクラスのオブジェクトとして返します。内部的にはstatsパッケージのprincompを呼び出します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyPCARes <-BSkyPrinCompAnalysis(vars=c(),cor =TRUE, componentsToRetain =0, generateScreeplot=FALSE,prefixForComponents =\"\",dataset=\"\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvars: コンポーネントを抽出するための文字ベクトル内の変数\n</li>\n<li>\ncor: 計算が相関行列または共分散行列を使用するかどうかを指定するブール値\n</li>\n<li>\ncomponentsToRetain: データセットに保持するコンポーネントの数を指定する数値。呼び出された各コンポーネントのためにデータセットに新しい変数が作成されます\n</li>\n<li>\n​generateScreeplot: スクリープロットを生成します\n</li>\n<li>\nprefixForComponents: コンポーネントをデータセットに保存する際に使用する接頭辞\n</li>\n<li>\ndataset: 文字列としてのデータセットの名前\n</li>\n</ul>\n<b>値</b></br>\nprincompは、次のコンポーネントを含む\"princomp\"クラスのリストを返します</br>\nsdev: 主成分の標準偏差。</br>\nloadings: 変数の負荷行列（すなわち、列に固有ベクトルを含む行列）。これは\"loadings\"クラスです: その印刷メソッドについてはloadingsを参照してください。</br>\ncenter: 引かれた平均値。</br>\nscale: 各変数に適用されたスケーリング。</br>\nn.obs: 観測の数。</br>\nscores: scores = TRUEの場合、主成分に対する供給データのスコア。これらはxが供給された場合のみ非nullであり、covmatが共分散リストとして供給された場合にも非nullです。式メソッドの場合、na.actionによって省略された値の処理を行うためにnapredict()が適用されます。</br>\ncall: 一致した呼び出し。</br>\nna.action: 関連する場合。</br>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(princomp, package ='stats')\n"
+  }
+}

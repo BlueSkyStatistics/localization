@@ -1,0 +1,18 @@
+{
+  "title": "Tamaño de Muestra, Prueba de Una Proporción",
+  "navigation": "Una Proporción",
+  "howtouse": "Especifique el tamaño de muestra o la potencia, y el otro será calculado",
+  "n": "Tamaño de Muestra",
+  "power": "Potencia (0-1)",
+  "prop": "Proporción Alternativa (0-1)",
+  "prop0": "Proporción Nula (0-1)",
+  "siglevel": "Nivel de Significancia (0-1)",
+  "alternativeopt": "Hipótesis Alternativa",
+  "twosided": "Dos Lados",
+  "onesided": "Un Lado",
+  "help": {
+    "title": "Tamaño de Muestra, Prueba de Una Proporción",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nEsta es una evaluación del tamaño de muestra para una prueba de proporción de una muestra. Calcula el tamaño de muestra o la potencia, cuando el usuario \nespecifica uno de ellos. El cálculo utiliza la fórmula encontrada en Chow S, Shao J, Wang H. Cálculos de Tamaño de Muestra en Investigación Clínica (2008). Utiliza una aproximación normal con\nla desviación estándar basada en la proporción alternativa.\n<br/><br/>\n<b>Tamaño de Muestra:</b> Especifique el número de sujetos en el estudio\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa era verdadera.\n<br/><br/>\n<b>Proporción Alternativa (0-1):</b> Especifique la proporción bajo la hipótesis alternativa\n<br/><br/>\n<b>Proporción Nula (0-1):</b> Especifique la proporción bajo la hipótesis nula\n<br/><br/>\n<b>Nivel de Significancia:</b> Especifique el nivel de significancia deseado (es decir, error tipo I) de la prueba\n<br/><br/>\n<b>Hipótesis Alternativa:</b> Especifique si la prueba es de dos lados o de un lado\n<br/><br/>\n<b>Paquetes R Requeridos:</b> stats\n\t\t\t"
+  }
+}

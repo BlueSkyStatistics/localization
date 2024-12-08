@@ -1,0 +1,15 @@
+{
+  "title": "对数正态分位数",
+  "navigation": "对数正态分位数",
+  "prob": "输入以逗号分隔的概率。例如：0.3,0.2,0.5",
+  "meanlog": "均值（对数尺度）",
+  "sdlog": "标准差（对数尺度）",
+  "labelSig": "显著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "对数正态分位数",
+    "r_help": "help(qlnorm, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            对数正态分布的密度、分布函数、分位数函数和随机生成，其对数的均值等于meanlog，标准差等于sdlog。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dlnorm(x, meanlog = 0, sdlog = 1, log = FALSE)\n                <br/>\n                plnorm(q, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlnorm(p, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlnorm(n, meanlog = 0, sdlog = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察值的数量。如果length(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>meanlog, sdlog : 对数尺度上分布的均值和标准差，默认值分别为0和1。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            对数正态分布的密度为\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ x) e^-((log x - μ)^2 / (2 σ^2))</code>\n            <br/>\n            其中μ和σ是对数的均值和标准差。均值为E(X) = exp(μ + 1/2 σ^2)，中位数为med(X) = exp(μ)，方差Var(X) = exp(2*μ + σ^2)*(exp(σ^2) - 1)，因此变异系数为sqrt(exp(σ^2) - 1)，当σ较小时（例如，σ < 1/2）大约等于σ。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dlnorm给出密度，plnorm给出分布函数，qlnorm给出分位数函数，rlnorm生成随机偏差。\n            <br/>\n            结果的长度由rlnorm的n决定，对于其他函数则为数值参数的最大长度。\n            <br/>\n            除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累积风险H(t) = - log(1 - F(t))为-plnorm(t, r, lower = FALSE, log = TRUE)。            \n"
+  }
+}

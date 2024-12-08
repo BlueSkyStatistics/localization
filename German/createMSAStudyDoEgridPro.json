@@ -1,0 +1,30 @@
+{
+  "title": "Erstellen Sie eine Experimenttabelle für eine MSA-Gage-Studie",
+  "navigation": "MSA-Studie entwerfen",
+  "datasetname": "MSA-Gage-Studienname",
+  "label1": "Details zu Teilen",
+  "label2": "Details zu Bedienern",
+  "factor1": "Name der Teilvariable (z.B. Teil als Standard)",
+  "numOfFactorLevels1": "Anzahl der Teile",
+  "factorLevels1": "Leer lassen, um Werte automatisch zu generieren, oder Werte angeben - Beispiel: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "Wenn automatisch generiert, geben Sie ein Präfix an. Wenn leer, werden Werte als 1,2,3,.. erstellt",
+  "factor2": "Name der Bedienervariable (z.B. Bediener als Standard)",
+  "numOfFactorLevels2": "Anzahl der Bediener",
+  "factorLevels2": "Leer lassen, um Werte automatisch zu generieren, oder Werte angeben - Beispiel: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "Wenn automatisch generiert, geben Sie ein Präfix an. Wenn leer, werden Werte als 1,2,3,.. erstellt",
+  "numOfBlocks": "Anzahl der Blöcke",
+  "replicationVarName": "Wenn nicht leer gelassen, Name für die Replikationsiterationsvariable, wenn Replikation > 1",
+  "replications": "Replikationen",
+  "repeatOnlyChk": "Nur wiederholen (anstatt wahrer Replikation - nicht empfohlen)",
+  "randomizationChk": "Die Durchläufe randomisieren",
+  "selectRandomSeedRad": "Zufälligen Seed automatisch generieren (einzigartig jedes Mal)",
+  "selectFixedRandomSeedRad": "Wählen Sie wie gezeigt oder ändern Sie manuell den folgenden Zufallsseed",
+  "lbl1": "Sie müssen möglicherweise den Wert des Randomisierungs-Seed nicht ändern",
+  "randomseeds": "Seed für Randomisierung",
+  "sortByOperatorChk": "Nach Bediener innerhalb jeder Replikation sortieren",
+  "help": {
+    "title": "Automatisch eine Experimenttabelle für eine MSA-Gage-Studie generieren",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tAutomatisch eine MSA-Studientabelle generieren, um die Experimentdurchläufe mit Teil- und Bedienerdetails basierend auf den angegebenen Parametern einzurichten. \n\t\t\t\tWenn nicht-numerische Werte für Teil und Bediener verwendet werden, geben Sie diese in einfachen Anführungszeichen an, z.B. 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSobald die Details der Experimentdurchläufe automatisch generiert werden, wird die Durchlauftabelle in der Datenraster-Benutzeroberfläche angezeigt. \n\t\t\t\tDie Durchlauftabelle kann gespeichert werden (oder 'speichern unter' im Dateimenü), um eine Excel-Datei zu erstellen, die zur Einrichtung der Experimente verwendet werden kann\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

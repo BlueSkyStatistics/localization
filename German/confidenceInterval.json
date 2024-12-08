@@ -1,0 +1,16 @@
+{
+  "title": "Konfidenzintervall",
+  "navigation": "Konfidenzintervall",
+  "label1": "Wählen Sie ein Modell einer der folgenden Klassen aus. (Die R-Klasse ist in Klammern unten aufgeführt)",
+  "label2": "Lineares Modell (lm), Generalisiertes lineares Modell (glm), Nichtlineare kleinste Quadrate (nls), Ordinale logistische/probit Regression (polr), Multinomiale Log-Linear-Modelle (multinom), Cox-Regression-Modelle (coxph)",
+  "label3": "Basierend auf",
+  "modelselector1": "Wählen Sie ein Modell",
+  "conlevel": "Konfidenzintervall",
+  "lr": "Likelihood-Ratio-Statistik",
+  "wald": "Wald-Statistik",
+  "help": {
+    "title": "Konfidenzintervall",
+    "r_help": "help(confint,package='stats')",
+    "body": "\n                <b>Beschreibung</b></br>\nBerechnet Konfidenzintervalle für ein oder mehrere Parameter in einem angepassten Modell. Es gibt eine Standardmethode und eine Methode für Objekte, die von der Klasse \"lm\" erben. lm- und coxph-Modelle verwenden nur die Wald-Methode.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nconfint(object, parm, level = 0.95, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject: ein angepasstes Modellobjekt.\n</li>\n<li>\nparm: eine Spezifikation, welche Parameter Konfidenzintervalle erhalten sollen, entweder ein Vektor von Zahlen oder ein Vektor von Namen. Wenn nicht angegeben, werden alle Parameter berücksichtigt.\n</li>\n<li>\nlevel: das erforderliche Konfidenzniveau.\n</li>\n<li>\n...: Argumente, die an Methoden weitergegeben werden sollen.\n</li>\n</ul>\n<b>Details</b></br>\nconfint ist eine generische Funktion. Die Standardmethode geht von Normalverteilung aus und benötigt geeignete coef- und vcov-Methoden. Die Standardmethode kann direkt aufgerufen werden, um sie mit anderen Methoden zu vergleichen.</br>\nFür Objekte der Klasse \"lm\" werden die direkten Formeln basierend auf t-Werten verwendet.</br>\nEs gibt Stub-Methoden im Paket stats für die Klassen \"glm\" und \"nls\", die die Methoden im Paket MASS (sofern installiert) aufrufen: Wenn der MASS-Namespace geladen wurde, werden seine Methoden direkt verwendet. (Diese Methoden basieren auf dem Profil-Likelihood.)</br>\n<b>Wert</b></br>\nEine Matrix (oder ein Vektor) mit Spalten, die untere und obere Konfidenzgrenzen für jeden Parameter angeben. Diese werden als (1-level)/2 und 1 - (1-level)/2 in % (standardmäßig 2,5% und 97,5%) beschriftet.</br>\n<b>Beispiele</b><br/>\n<code> \nfit <- lm(100/mpg ~ disp + hp + wt + am, data = mtcars)<br/>\nconfint(fit)<br/>\nconfint(fit, \"wt\")<br/>\n## aus Beispiel(glm)\ncounts <- c(18,17,15,20,10,20,25,13,12)\noutcome <- gl(3, 1, 9); treatment <- gl(3, 3)\nglm.D93 <- glm(counts ~ outcome + treatment, family = poisson())\nconfint(glm.D93) # benötigt MASS, um installiert zu sein\nconfint.default(glm.D93)  # basiert auf asymptotischer Normalität\n</code> <br/>\n<b>Paket</b></br>\nstats;MASS;knitr</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: help(confint , package='stats')\n                "
+  }
+}

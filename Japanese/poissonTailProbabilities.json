@@ -1,0 +1,14 @@
+{
+  "title": "ポアソン尾確率",
+  "navigation": "ポアソン尾確率",
+  "varvals": "変数値をカンマで区切って入力してください。例：3,0.5",
+  "lambda": "平均",
+  "labelSig": "有意水準",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "ポアソン尾確率",
+    "r_help": "help(ppois, package=stats)",
+    "body": "\n\n            <b>説明</b>\n            <br/>\n            パラメータlambdaを持つポアソン分布の密度、分布関数、分位数関数、および乱数生成。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dpois(x, lambda, log = FALSE)\n                <br/>\n                ppois(q, lambda, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qpois(p, lambda, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rpois(n, lambda)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x : （非負整数）分位数のベクトル。</li>\n                \n                \n                <li>q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 返す乱数の数。</li>\n                \n                \n                <li>lambda : （非負）平均のベクトル。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            ポアソン分布の密度は\n            <br/>\n            <code>p(x) = λ^x exp(-λ)/x!</code>\n            <br/>\n            x = 0, 1, 2, … の場合。平均と分散はE(X) = Var(X) = λです。\n            <br/>\n            λ = 0は実際には限界ケース（0^0 = 1を設定）であり、0での点質量をもたらします。例も参照してください。\n            <br/>\n            xの要素が整数でない場合、dpoisの結果はゼロで、警告が表示されます。p(x)はLoaderのアルゴリズムを使用して計算されます。dbinomの参照を参照してください。\n            <br/>\n            分位数は右連続です：qpois(p, lambda)はP(X ≤ x) ≥ pとなる最小の整数xです。\n            <br/>\n            lower.tail = FALSEを設定すると、デフォルトのlower.tail = TRUEが1を返す場合に、より正確な結果を得ることができます。以下の例を参照してください。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dpoisは（ログ）密度を、ppoisは（ログ）分布関数を、qpoisは分位数関数を、rpoisは乱数を生成します。\n            <br/>\n            無効なlambdaは、警告とともに戻り値NaNをもたらします。\n            <br/>\n            結果の長さはrpoisのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。            \n"
+  }
+}

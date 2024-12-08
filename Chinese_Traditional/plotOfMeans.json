@@ -1,0 +1,26 @@
+{
+  "title": "均值圖",
+  "navigation": "均值圖",
+  "x": "X 軸，指定一個因子變量",
+  "y": "Y 軸，對此變量計算均值",
+  "fill": "按組分組，指定一個因子變量",
+  "label1": "誤差條",
+  "radiobuttonNo": "無誤差條",
+  "radioButtonSe": "標準誤差",
+  "radiobuttonSd": "標準差",
+  "radiobuttonCi": "置信區間",
+  "confidenceInterval": "指定區間，例如 0.95",
+  "alpha": "不透明度 (0-1)",
+  "flip": "翻轉軸",
+  "specify_a_title": "輸入標題",
+  "Facetrow": "Facet 行",
+  "Facetcolumn": "Facet 列",
+  "Facetwrap": "Facet 包裝",
+  "Facetscale": "Facet 比例",
+  "facets_lbl" : "面",
+  "help": {
+    "title": "均值圖",
+    "r_help": "",
+    "body": "\n            <b>描述</b></br>\n            均值圖用於查看不同數據組之間的均值是否變化。分組變量由分析師定義。還有一個可選的分組級別，允許您將每個組劃分為子組，並計算均值。除了均值，您還可以選擇顯示標準誤差、標準差和置信區間。可以通過指定因子變量來選擇性地創建 Facets。</br>\n            您還可以選擇性地指定主題，並為 x 和 y 軸指定標題和標籤</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            #我們首先創建一個數據集以進行摘要。均值圖在摘要數據集上運行</br>\n            #運行圖後，可以刪除摘要數據集。</br>\n            #test 包含摘要數據集</br>\n            test <- summarySE(Dataset2,measurevar=\"mpg\",groupvars=c(\"origin\",\"cylinder\"),na.rm=TRUE)</br>\n            #如果誤差條重疊，使用 position_dodge 將其水平移動，.03 向左和向右</br>\n            pd <- position_dodge(0.3)\n            ggplot(test,aes(x=origin,y=mpg,colour=cylinder,group=cylinder)) + geom_errorbar(aes(ymin=mpg-sd,ymax=mpg+sd),width=.1,position=pd) +geom_line(position=pd) +geom_point(position=pd) + labs(x = \"origin\",y = \"mpg\")</br>\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變量如何映射到幾何的視覺屬性（美學）。\n            </li>\n            <li>\n            x: 用於將 y 變量中的數據分組的因子/類別變量。每個組的均值被繪製。\n            </li>\n            <li>\n            y: 數值變量\n            </li>\n            <li>\n            colour: 可選的因子變量，用於將 x 變量（見上文）創建的組劃分為子組。如果指定，則為每個子組繪製均值。每個子組以不同顏色顯示。\n            </li>\n            <li>\n            group: 可選的因子變量，通過所有子組的均值繪製一條線。\n            </li>\n            <li>\n            geom_line(): 繪製一條線\n            </li>\n            <li>\n            geom_errorbar(): 繪製誤差條\n            </li>\n            <li>\n            labs(): 更改軸標籤和圖例標題（這是可選的）\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>幫助</b></br>\n            help(geom_line, package='ggplot2')</br>\n            其他：點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs)，help(geom_errorbar)，help(geom_line)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)\n    "
+  }
+}

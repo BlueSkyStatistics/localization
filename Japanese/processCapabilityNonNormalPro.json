@@ -1,0 +1,29 @@
+{
+  "title": "プロセス能力（非正規）",
+  "navigation": "プロセス能力（非正規）",
+  "printObjectSummaryChk": "プロセス能力のためのQCCオブジェクトサマリーを印刷",
+  "label1": "データに最も適した分布関数を選択してください",
+  "variableSelcted": "分析する変数（観測データ）を選択してください",
+  "rowsTobeUsed": "選択した場合、プロセス能力を分析するために使用する行（例：1:25または1,4,5,7:12として指定）",
+  "lower": "LSL - 下限仕様値の数値（片側仕様限界を指定するにはNAと入力）",
+  "upper": "USL - 上限仕様値の数値（片側仕様限界を指定するにはNAと入力）",
+  "target": "目標仕様限界（オプション）",
+  "selectDistFuncWeibullRad": "ワイブル",
+  "selectDistFuncExpRad": "指数",
+  "selectDistFuncGammaRad": "ガンマ",
+  "selectDistFuncLnormalRad": "対数正規",
+  "selectDistFuncPoissonRad": "ポアソン",
+  "selectDistFuncNBinomRad": "負の二項",
+  "selectDistFuncGeomRad": "幾何",
+  "selectDistFuncBetaRad": "ベータ",
+  "selectDistFuncUnifRad": "一様",
+  "selectDistFuncLogisRad": "ロジスティック",
+  "selectDistFuncCauchyRad": "コーシー",
+  "selectDistFuncNormRad": "正規",
+  "digits": "桁数 - 表示する桁数",
+  "help": {
+    "title": "非正規分布のプロセス能力",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tqcc関数は能力指数を計算します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(process.capability, package = qcc)、help(qcc, package = qcc)、help(sd.xbar, package = qcc)、およびhelp(sd.xbar.one, package = qcc)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、qccパッケージからpistonringsというデータセットをLoad Datasetメニューでロードしてください。qccパッケージを選択し、次にpistonringsデータセットを選択します\n\t\t\t\t<br/>\n\t\t\t\tオプション1を選択し、直径を変数（観測..）に、サンプルをグループ化変数にします\n\t\t\t\t<br/>\n\t\t\t\t使用するグループ化された行に1:25と入力します\n\t\t\t\t<br/>\n\t\t\t\tプロセス能力分析のために、LSLに73.95、USLに74.05、ターゲット限界に74.0と入力します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqccチュートリアルはhttps://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.htmlを参照してください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Dataset mit wiederholter Variablen-Gruppe aufteilen/zusammenfassen",
+  "navigation": "Wiederholende Variablen-Sets",
+  "removeColsWithConstantChk": "Alle Spalten mit konstanten Werten (groß-/kleinschreibungsempfindlich) vor dem Aufteilen oder Zusammenfassen entfernen",
+  "removeRowsWithNAsChk": "Nur vollständige Fälle behalten, d.h. gesamte Zeilen mit leeren oder NA-Werten im Ausgabedataset entfernen",
+  "resultDatasetNameSuffix": "(Optional) eine oder mehrere Zeichenfolgen (durch Kommas getrennt), die als Suffix für die Ausgabedatasetnamen verwendet werden sollen",
+  "splitDatasetRad": "Das Dataset in mehrere Datasets basierend auf dem wiederholenden Variablen-Set aufteilen",
+  "autoDetectColGroupLengthRad": "Automatisch das wiederholende Variablen-Set zum Aufteilen oder Zusammenfassen erkennen",
+  "manualColGroupLengthRad": "Die Länge des wiederholenden Variablen-Sets angeben, das zum Aufteilen oder Zusammenfassen verwendet werden soll",
+  "manualRepeatingColumnGroupLength": "Länge des wiederholenden Variablen-Sets",
+  "outputColumnNames": "(Optional) Liste von Variablennamen (durch Kommas getrennt), die für die Ausgabedatasets verwendet werden sollen",
+  "collapseDatasetRad": "Zusammenfassen, um ein langes Dataset anstelle von mehreren Datasets zu erstellen",
+  "collapseGpIDPrefix": "Präfix für Set-ID-Werte",
+  "collapseGpIDColName": "Set-ID-Variablenname (eine neue Variable wird im Ausgabedataset erstellt)",
+  "collapseGpIDColFirstChk": "Die Set-ID-Variable zur ersten Spalte machen (abwählen für die letzte Spalte)",
+  "makeCollapseGpIDColFactorChk": "Set-ID-Variable als Faktor erstellen",
+  "label1": "Erkennung des wiederholenden Variablen-Sets",
+  "label2": "Dataset aufteilen oder zusammenfassen?",
+  "help": {
+    "title": "Dataset mit wiederholter Variablen-Gruppe aufteilen/zusammenfassen",
+    "r_help": "",
+    "body": "\n            <b>Beschreibung</b></br>\n            Dieser Dialog wird verwendet, um ein Dataset mit wiederholten Variablen-Sets aufzuteilen (in mehrere Datasets) oder zusammenzufassen (in ein langes Dataset)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tBeispiel 1: Um dies auszuprobieren, können Sie die Beispieldatendatei namens Repeating Variable Sets.xlsx verwenden\n\t\t\t<br/>\n\t\t\tÖffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t<br/>\n\t\t\tIm Dialog - geben Sie ein\n\t\t\t<br/>\n\t\t\tEs werden drei Datasets erstellt, da es drei wiederholende Variablen-Sets gibt. Sie können keine, eine oder mehrere\n\t\t\tZeichenfolgen für die Suffixe der Ausgabedatasets eingeben, wie abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tBehalten Sie jeden anderen Punkt im Dialog als Standard  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tBeispiel 2: Um dies auszuprobieren, können Sie die Beispieldatendatei namens Repeating Variable Sets2.xlsx verwenden\n\t\t\t<br/>\n\t\t\tÖffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t<br/>\n\t\t\tIm Dialog - geben Sie ein\n\t\t\t<br/>\n\t\t\tEs werden vier Datasets erstellt, da es vier wiederholende Variablen-Sets gibt\n\t\t\t<br/>\n\t\t\tBehalten Sie jeden Punkt im Dialog als Standard \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tSie können dieselben beiden Beispieldatendateien verwenden, um die Option Zusammenfassen im Abschnitt \"Dataset aufteilen oder zusammenfassen?\" des Dialogs auszuprobieren, um ein einzelnes Ausgabedataset zu erstellen\n\t\t\t<br/>\n\t\t\t<br/>\n    "
+  }
+}

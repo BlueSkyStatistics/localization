@@ -1,0 +1,11 @@
+{
+  "title": "扩展权重",
+  "navigation": "扩展",
+  "datasetname": "扩展权重的数据集名称",
+  "destination": "输入包含权重的列",
+  "help": {
+    "title": "扩展权重",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>描述</b></br>\n        创建一个新的数据集，按权重扩展行。根据源数据框或数据表中某一列的值扩展（复制）数据框的行。BSkySetWeights() 调用来自 splitstackshape 包的 expandRows()。\n        <br/>\n        <b>用法</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>参数</b><br/>\n         <ul>\n           <li>\n        weights: 包含权重的数据集变量。 \n        </li>\n        <li>\n        data: 输入的数据框或数据表。\n        </li>\n        <li>\n        newdata: 按指定权重复制行的新数据集。\n        </li>\n        </ul>\n        <b>包</b></br>\n        splitstackshape</br>\n        <b>帮助</b></br>\n        help (expandRows)\n        "
+  }
+}

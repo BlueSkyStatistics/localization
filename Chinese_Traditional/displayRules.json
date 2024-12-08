@@ -1,0 +1,24 @@
+{
+  "title": "顯示規則",
+  "navigation": "顯示規則",
+  "rulename": "輸入現有的規則對象",
+  "dosortingchk": "排序規則",
+  "sortopt": "排序選項",
+  "sortby": "排序依據",
+  "confchk": "置信度",
+  "liftchk": "提升度",
+  "suppchk": "支持度",
+  "sortord": "排序順序",
+  "increasing": "遞增",
+  "decreasing": "遞減",
+  "noofrules": "顯示的規則數量",
+  "rulecount": "",
+  "fromto": "顯示規則",
+  "from": "從",
+  "to": "到",
+  "help": {
+    "title": "顯示規則",
+    "r_help": "help(inspect, package='arules')",
+    "body": "\n            <b>\n\t\t\t套件 : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspect\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\t描述\n\t\t\t</b>\n\t\t\t<br/><br/>\n            提供通用函數 inspect 和 S4 方法來顯示關聯和交易以及格式化的額外信息以供在線檢查。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspect(x, ...)\n            </code>\n            <br/><br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            x: 一組關聯或交易或一個 itemMatrix。\n            </li>\n            <li>\n            ...: 可以使用額外的參數來自定義輸出：setStart、setEnd、itemSep 和 ruleSep。項目僅在輸出行變得非常長的情況下每行打印一個。這也可以通過 linebreak 直接控制。\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sort\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\t描述\n\t\t\t</b>\n\t\t\t<br/><br/>\n            提供方法 sort 來根據存儲在關聯的質量槽中的度量值（例如，支持度）對類別關聯中的元素（例如，項集或規則）進行排序。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## S4 方法的簽名 'associations'\n            arules::sort(x, decreasing = TRUE, na.last = NA, \n            by = \"support\", order = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 方法的簽名 'associations'\n            head(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 方法的簽名 'associations'\n            tail(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>參數</b><br/>\n            <ul>\n            <li>\n            x: 要排序的對象。\n            </li>\n            <li>\n            decreasing: 邏輯值。排序應該是遞增還是遞減？（默認為遞減）\n            </li>\n            <li>\n            na.last: 對於關聯不支持 na.last。NAs 始終放在最後。\n            </li>\n            <li>\n            by: 一個字符字符串，指定用於排序 x 的質量度量。如果指定了一個字符字符串的向量，則在平局的情況下使用額外的字符串來排序 x。\n            </li>\n            <li>\n            order: 是否應返回一個排序向量而不是排序的關聯？\n            </li>\n            <li>\n            n: 一個單一的整數，指示返回的關聯數量。\n            </li>\n            <li>\n            ... : 進一步的參數將被忽略。\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            詳情\n            </b> \n            <br/>\n            sort 對於大型關聯集相對較慢，因為它必須複製和重新排列大型數據結構。請注意，排序會創建關聯集的第二個副本，這對於大型集可能會很慢且消耗內存。如果只需要前 n 個關聯，則使用 by 的 head 比調用 sort 然後 head 更快，因為它不需要複製和重新排列所有數據。tail 以相同的方式工作。\n            <br/><br/>  \n            <b> \n            值\n            </b> \n            <br/>\n            與 x 相同類別的對象。                  \n    "
+  }
+}

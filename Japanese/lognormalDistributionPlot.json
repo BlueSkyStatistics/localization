@@ -1,0 +1,26 @@
+{
+  "title": "対数正規分布プロット",
+  "navigation": "対数正規分布プロット",
+  "meanlog": "平均 (対数スケール)",
+  "sdlog": "標準偏差 (対数スケール)",
+  "pdenfun": "密度関数をプロット",
+  "pdstfun": "分布関数をプロット",
+  "lblregions": "密度関数の下の領域をオプションで指定するには",
+  "xvals": "x値",
+  "quantiles": "分位数",
+  "lblRegFill": "塗りつぶす領域 (1つまたは2つ指定するか、空白のままにします)",
+  "lblreg1": "領域 1 :",
+  "lblreg2": "領域 2 :",
+  "lblregfrm": "から",
+  "lblregto": "まで",
+  "lblregcol": "色",
+  "lblLegPos": "凡例の位置",
+  "toprt": "右上",
+  "toplt": "左上",
+  "topmid": "中央上",
+  "help": {
+    "title": "対数正規分布プロット",
+    "r_help": "help(qlnorm, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            対数正規分布の密度、分布関数、分位数関数、および乱数生成。対数の平均はmeanlog、標準偏差はsdlogに等しい。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dlnorm(x, meanlog = 0, sdlog = 1, log = FALSE)\n                <br/>\n                plnorm(q, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlnorm(p, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlnorm(n, meanlog = 0, sdlog = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測の数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>meanlog, sdlog : 対数スケールの分布の平均と標準偏差。デフォルト値はそれぞれ0と1。</li>\n                \n                \n                <li>log, log.p : 論理; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理; TRUEの場合（デフォルト）、確率はP[X ≤ x]、それ以外の場合はP[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            対数正規分布の密度は\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ x) e^-((log x - μ)^2 / (2 σ^2))</code>\n            <br/>\n            ここで、μとσは対数の平均と標準偏差です。平均はE(X) = exp(μ + 1/2 σ^2)、中央値はmed(X) = exp(μ)、分散Var(X) = exp(2*μ + σ^2)*(exp(σ^2) - 1)であり、したがって変動係数はsqrt(exp(σ^2) - 1)であり、これは小さい場合（例：σ < 1/2）にはおおよそσに等しい。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dlnormは密度を、plnormは分布関数を、qlnormは分位数関数を、rlnormは乱数を生成します。\n            <br/>\n            結果の長さはrlnormのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さに合わせて再利用されます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累積ハザードH(t) = - log(1 - F(t))は-plnorm(t, r, lower = FALSE, log = TRUE)です。            \n"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Ajustement d'élément",
+  "navigation": "Ajustement d'élément",
+  "label1": "Sélectionnez un modèle (modèles de classe Rm, dRm, tam.mml, tam.mml.2pl, tam.mml.mfr pris en charge)",
+  "label1b": "Si aucun modèle n'est disponible, vous devez d'abord créer un modèle en sélectionnant Ajustement de modèle -> IRT",
+  "modelselector1": "Sélectionnez un modèle",
+  "help": {
+    "title": "Ajustement d'élément",
+    "r_help": "help(itemfit, package='eRm')",
+    "body": "\n                <b>Description</b></br>\n                Pour les modèles de classe Rm ou dRm (Créés en utilisant IRT->Modèle de Rasch simple avec estimation CML) utilise la fonction itemfit pour afficher les statistiques d'ajustement d'élément.\n                <br/>\n                Pour les modèles de classe tam.mml,tam.mml.2pl, tam.mml.2pl, tam.mml.mfr (Créés en utilisant IRT->Modèle de Rasch simple, Modèle de crédit partiel, Modèle d'échelle de notation et modèles multifacettes (Crédit partiel et échelle de notation) avec estimation MML utilise la fonction msq.itemfit pour les statistiques d'ajustement d'élément basées sur les résidus carrés moyens (Infit, Outfit)\n\n                <br/><br/>\n                <b>Utilisation</b>\n                <br/>\n                <code>\n                eRm::itemfit(object)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(object)\n                </code>\n                <br/><br/>\n                <b>Détails</b>\n                <br/>  \n                Exécutez ce qui suit depuis l'éditeur de syntaxe de BlueSky Statistics  help(itemfit, package ='eRm')\n                <br/>\n                Exécutez ce qui suit depuis l'éditeur de syntaxe de BlueSky Statistics help(msq.itemfit, package ='TAM')\n                <br/>\n                L'aide détaillée s'ouvrira dans votre navigateur par défaut         \n                <br/><br/>\n                <b>Packages</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>Aide</b>\n                <br/>\n                help(itemfit, package='eRm')\n                "
+  }
+}

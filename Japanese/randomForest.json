@@ -1,0 +1,19 @@
+{
+  "title": "ランダムフォレスト",
+  "label1": "ランダムフォレストは、教師ありまたは教師なしノードで実行できます。教師なしモードで実行するには、従属変数を指定しないでください。",
+  "navigation": "ランダムフォレスト",
+  "modelname": "モデル名を入力してください",
+  "dependentvar": "従属変数",
+  "independentvars": "独立変数",
+  "ntree": "木の数",
+  "mtry": "mtry",
+  "proximity": "近接性:",
+  "newds": "近接性を保存するデータセット名を指定してください:",
+  "predictor": "予測値を保存:",
+  "newcolname": "予測値の新しい列名を指定してください:",
+  "help": {
+    "title": "ランダムフォレスト",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>説明</b></br>\nrandomForestは、分類と回帰のためのBreimanのランダムフォレストアルゴリズム（BreimanとCutlerの元のFortranコードに基づく）を実装しています。データポイント間の近接性を評価するために教師なしモードでも使用できます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nrandomForest(x, y=NULL,  ntree=500, importance=FALSE, proximity, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx : 予測子のデータフレームまたは行列、または適合させるモデルを記述する式（printメソッドの場合、randomForestオブジェクト）。\n</li>\n<li>\ny: 応答ベクトル。ファクターの場合、分類が仮定され、それ以外の場合は回帰が仮定されます。省略した場合、randomForestは教師なしモードで実行されます。\n</li>\n<li>\nntree : 成長させる木の数。この数はあまり小さく設定しないでください。すべての入力行が少なくとも数回予測されることを保証するためです。\n</li>\n<li>\nimportance : 予測子の重要性を評価するべきですか？ \n</li>\n<li>\nproximity : 行間の近接性測定を計算するべきですか？\n</li>\n<li>\n... : low level function randomForest.defaultに渡されるオプションのパラメータ。\n</li>\n</ul>\n<b>値</b><br/>\nrandomForestクラスのオブジェクトで、以下のコンポーネントを持つリストです:<br/>\ncall: randomForestへの元の呼び出し<br/>\ntype: 回帰、分類、または教師なしのいずれか。<br/>\npredicted: バックサンプルに基づく入力データの予測値。<br/>\nimportance:\tnclass + 2（分類の場合）または2（回帰の場合）列を持つ行列。分類の場合、最初のnclass列は、精度の平均減少として計算されたクラス固有の測定値です。nclass + 1列目は、すべてのクラスにわたる精度の平均減少です。最後の列は、ジニ指数の平均減少です。回帰の場合、最初の列は精度の平均減少で、2番目はMSEの平均減少です。importance=FALSEの場合、最後の測定値はベクトルとして返されます。<br/>\nimportanceSD: パーミュテーションベースの重要性測定の「標準誤差」。分類の場合、重要性行列の最初のnclass + 1列に対応するp x nclass + 1行列。回帰の場合、長さpのベクトル。<br/>\nlocalImp: ケースごとの重要性測定を含むp x n行列で、[i,j]要素はj番目のケースに対するi番目の変数の重要性です。localImp=FALSEの場合はNULL。<br/>\nntree: 成長させた木の数。<br/>\nmtry: 各ノードで分割のためにサンプリングされた予測子の数。<br/>\nforest: （全体の森林を含むリスト; randomForestが教師なしモードで実行されるか、keep.forest=FALSEの場合はNULL）。<br/>\nerr.rate: （分類のみ）入力データの予測に対するベクトルエラー率で、i番目の要素はi番目までのすべての木の（OOB）エラー率です。<br/>\nconfusion: （分類のみ）予測の混同行列（OOBデータに基づく）。<br/>\nvotes: （分類のみ）各入力データポイントに対して1行、各クラスに対して1列を持つ行列で、ランダムフォレストからの（OOB）「投票」の割合または数を示します。<br/>\noob.times: ケースが「バグアウト」される回数（したがってOOBエラー推定の計算に使用される）<br/>\nproximity: randomForestが呼び出されたときにproximity=TRUEの場合、入力間の近接性測定の行列（ペアのデータポイントが同じ端末ノードにいる頻度に基づく）。<br/>\nmse\t: （回帰のみ）平均二乗誤差のベクトル：平方残差の合計をnで割ったもの。<br/>\nrsq\t: （回帰のみ）「擬似R二乗」：1 - mse / Var(y)。<br/>\ntest: テストセットが与えられた場合（xtestまたは追加のytest引数を通じて）、このコンポーネントは、テストセットの対応する予測、err.rate、混同行列、投票（分類の場合）または予測、mseおよびrsq（回帰の場合）を含むリストです。proximity=TRUEの場合、テストセット間の近接性とトレーニングデータとの間の近接性を含むコンポーネントもあります。<br/>\n<b>パッケージ</b></br>\nrandomForest​;BlueSky</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください</br>\nhelp(randomForest,package='randomForest')\n                "
+  }
+}

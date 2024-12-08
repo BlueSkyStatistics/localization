@@ -1,0 +1,19 @@
+{
+  "title": "克鲁斯克尔-瓦利斯秩和检验",
+  "navigation": "克鲁斯克尔-瓦利斯检验",
+  "tvarbox1": "响应变量",
+  "tvarbox2": "因子变量",
+  "label1": "估计方法",
+  "default": "渐近",
+  "exact": "精确 注意：因子变量必须恰好有2个水平，否则将显示错误",
+  "normal": "蒙特卡洛",
+  "header": "注意：选择精确估计方法时，因子变量必须恰好有2个水平，否则将显示错误",
+  "padjust": "多重比较调整",
+  "ties": "处理平局的选项",
+  "simulations": "输入模拟次数",
+  "help": {
+    "title": "克鲁斯克尔-瓦利斯秩和检验",
+    "r_help": "help(kruskal.test, package=stats)",
+    "body": "\n<b>描述</b></br>\n执行克鲁斯克尔-瓦利斯秩和检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nkruskal.test(x, ...)\n## 默认 S3 方法：\nkruskal.test(x, g, ...)\n## S3 方法用于 'formula' 类\nkruskal.test(formula, data, subset, na.action, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n参数\nx: 一个数值向量的数据值，或一个数值数据向量的列表。列表中的非数值元素将被强制转换，并发出警告。\n</li>\n<li>\ng: 一个向量或因子对象，给出x的相应元素的组。 如果x是列表，则会被忽略并发出警告。\n</li>\n<li>\nformula: 形式为 response ~ group 的公式，其中 response 给出数据值，group 是相应组的向量或因子。\n</li>\n<li>\ndata: 一个可选的矩阵或数据框（或类似：见 model.frame），包含公式中的变量。 默认情况下，变量来自环境(formula)。\n</li>\n<li>\nsubset: 一个可选的向量，指定要使用的观察子集。\n</li>\n<li>\nna.action: 一个函数，指示当数据包含NAs时应该发生什么。 默认值为 getOption(\"na.action\").\n</li>\n<li>\n...: 进一步的参数，将传递给或从方法中传递。\n</li>\n</ul>\n<b>详细信息</b></br>\nkruskal.test 执行克鲁斯克尔-瓦利斯秩和检验，零假设是x的分布位置参数在每个组（样本）中相同。替代假设是它们至少在一个组中不同。</br>\n如果x是列表，则其元素被视为要比较的样本，因此必须是数值数据向量。在这种情况下，g被忽略，可以简单地使用 kruskal.test(x) 来执行检验。如果样本尚未包含在列表中，请使用 kruskal.test(list(x, ...))。</br>\n否则，x必须是数值数据向量，g必须是与x长度相同的向量或因子对象，给出x的相应元素的组。</br>\n<b>值</b><br/>\n一个类为 \"htest\" 的列表，包含以下组件：<br/>\nstatistic: 克鲁斯克尔-瓦利斯秩和统计量<br/>\nparameter: 检验统计量的近似卡方分布的自由度<br/>\np.value: 检验的p值<br/>\nmethod: 字符串 \"克鲁斯克尔-瓦利斯秩和检验\"<br/>\ndata.name: 字符串，给出数据的名称<br/>\n<b>描述</b></br>\n多重比较调整</br>\n调整方法包括 Bonferroni 校正（\"bonferroni\"），其中p值乘以比较的数量。 还包括Holm（1979）（\"holm\"）、Hochberg（1988）（\"hochberg\"）、Hommel（1988）（\"hommel\"）、Benjamini & Hochberg（1995）（\"BH\"或其别名\"fdr\"）和Benjamini & Yekutieli（2001）（\"BY\"）等较不保守的校正。 还包括一个直通选项（\"none\"）。 这些方法的集合包含在p.adjust.methods向量中，以便需要将方法作为选项并传递给p.adjust的方法使用。</br>\n前四种方法旨在强有力地控制家庭错误率。似乎没有理由使用未修改的Bonferroni校正，因为它被Holm的方法所主导，该方法在任意假设下也是有效的。</br>\nHochberg和Hommel的方法在假设检验独立或非负相关时有效（Sarkar，1998；Sarkar和Chang，1997）。Hommel的方法比Hochberg的方法更强大，但差异通常很小，Hochberg的p值计算速度更快。</br>\n\"BH\"（即\"fdr\"）和Benjamini、Hochberg和Yekutieli的\"BY\"方法控制虚假发现率，即被拒绝假设中虚假发现的预期比例。虚假发现率是比家庭错误率更不严格的条件，因此这些方法比其他方法更强大。</br>\n</br>\n成对组比较的检验方法：</br>\n默认：如果样本包含少于50个有限值且没有平局，则计算精确p值。否则，使用正态近似。</br>\n精确：计算精确p值；由于计算时间，不推荐用于大样本量</br>\n正态近似：使用正态近似计算p值</br>\n带连续性校正：使用带连续性校正的正态近似计算p值 </br>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(kruskal.test, package=stats)\n"
+  }
+}

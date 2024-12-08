@@ -1,0 +1,26 @@
+{
+  "title": "Graphique de distribution F",
+  "navigation": "Graphique de distribution F",
+  "dfnumerator": "Degrés de liberté du numérateur",
+  "dfdenominator": "Degrés de liberté du dénominateur",
+  "pdenfun": "Tracer la fonction de densité",
+  "pdstfun": "Tracer la fonction de distribution",
+  "lblregions": "Spécifiez éventuellement des régions sous la fonction de densité par",
+  "xvals": "valeurs x",
+  "quantiles": "quantiles",
+  "lblRegFill": "Régions à remplir (spécifiez une ou deux, ou laissez vide)",
+  "lblreg1": "Région 1 :",
+  "lblreg2": "Région 2 :",
+  "lblregfrm": "De",
+  "lblregto": "À",
+  "lblregcol": "Couleur",
+  "lblLegPos": "Position de la légende",
+  "toprt": "Haut à droite",
+  "toplt": "Haut à gauche",
+  "topmid": "Haut au centre",
+  "help": {
+    "title": "Graphique de distribution F",
+    "r_help": "help(qf, package=stats)",
+    "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Densité, fonction de distribution, fonction quantile et génération aléatoire pour la distribution F avec df1 et df2 degrés de liberté (et un paramètre de non-centralité ncp optionnel).\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code>\n                df(x, df1, df2, ncp, log = FALSE)\n                <br/>\n                pf(q, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qf(p, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rf(n, df1, df2, ncp)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vecteur de quantiles.</li>\n                \n                \n                <li>p : vecteur de probabilités.</li>\n                \n                \n                <li>n : nombre d'observations. Si length(n) > 1, la longueur est considérée comme le nombre requis.</li>\n                \n                \n                <li>df1, df2 : degrés de liberté. Inf est autorisé.</li>\n                \n                \n                <li>ncp : paramètre de non-centralité. Si omis, la distribution F centrale est supposée.</li>\n                \n                \n                <li>log, log.p : logique; si TRUE, les probabilités p sont données comme log(p).</li>\n                \n                \n                <li>lower.tail : logique; si TRUE (par défaut), les probabilités sont P[X ≤ x], sinon, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Détails</b>\n            <br/>\n            La distribution F avec df1 = n1 et df2 = n2 degrés de liberté a une densité\n            <br/>\n            <code>f(x) = Γ((n1 + n2)/2) / (Γ(n1/2) Γ(n2/2)) (n1/n2)^(n1/2) x^(n1/2 - 1) (1 + (n1/n2) x)^-(n1 + n2)/2</code>\n            <br/>\n            pour x > 0.\n            <br/>\n            C'est la distribution du rapport des carrés moyens de n1 et n2 normales standard indépendantes, et donc du rapport de deux variates chi-carrés indépendants chacun divisé par ses degrés de liberté. Puisque le rapport d'une normale et de la racine carrée moyenne de m normales indépendantes a une distribution t_m de Student, le carré d'une variate t_m a une distribution F sur 1 et m degrés de liberté.\n            <br/>\n            La distribution F non centrale est à nouveau le rapport des carrés moyens de normales indépendantes de variance unitaire, mais celles du numérateur peuvent avoir des moyennes non nulles et ncp est la somme des carrés des moyennes. Voir Chisquare pour plus de détails sur les distributions non centrales.\n            <br/>\n            <br/><b>Valeur</b>\n            <br/>\n            df donne la densité, pf donne la fonction de distribution, qf donne la fonction quantile, et rf génère des déviations aléatoires.\n            <br/>\n            Des arguments invalides entraîneront un retour de valeur NaN, avec un avertissement.\n            <br/>\n            La longueur du résultat est déterminée par n pour rf, et est le maximum des longueurs des arguments numériques pour les autres fonctions.\n            <br/>\n            Les arguments numériques autres que n sont recyclés à la longueur du résultat. Seuls les premiers éléments des arguments logiques sont utilisés.\n            <br/>\n            <br/><b>Remarque</b>\n            <br/>\n            Fournir ncp = 0 utilise l'algorithme pour la distribution non centrale, qui n'est pas le même algorithme utilisé si ncp est omis. Cela vise à donner un comportement cohérent dans des cas extrêmes avec des valeurs de ncp très proches de zéro.\n            <br/>\n            Le code pour ncp non nul est principalement destiné à être utilisé pour des valeurs modérées de ncp : il ne sera pas très précis, surtout dans les queues, pour de grandes valeurs."
+  }
+}

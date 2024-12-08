@@ -1,0 +1,32 @@
+{
+  "title": "ゲージR&R - 測定システム分析",
+  "navigation": "ゲージR&R",
+  "mainTitle": "グラフィック出力のメインタイトル",
+  "subTitle": "グラフィック出力のサブタイトル（例：プロジェクト名）",
+  "measuredVar": "測定変数",
+  "part": "部品変数",
+  "appr": "評価者（オペレーター、機械など）変数",
+  "lsl": "LSL - スペック下限の数値（USLと共に使用して、研究変動を%トレランスとして計算）",
+  "usl": "USL - スペック上限の数値（LSLと共に使用して、研究変動を%トレランスとして計算）",
+  "historicalStdv": "過去のプロセス標準偏差（指定がない場合はNAと入力）",
+  "useHistStdDevProcVarChk": "ゲージ評価値を推定するために過去の標準偏差を使用する（%StudyVarテーブル）",
+  "sigma": "シグマ - 研究変動を計算するために使用する標準偏差の数値",
+  "tolerance": "トレランス - トレランスの数値 - デフォルト（usl - lsl）",
+  "alphaLim": "アルファ - 相互作用を考慮するための制限",
+  "errorTerm": "モデルのどの項を誤差項として使用するか（相互作用のあるモデルの場合）",
+  "method": "実行する分析の種類、交差（デフォルト）またはネスト",
+  "label1": "ゲージR&R研究報告のヘッダー詳細",
+  "gageName": "ゲージ名",
+  "dateStudy": "研究の日付",
+  "partDescription": "部品の説明",
+  "machineName": "機械名",
+  "reportedBy": "報告者",
+  "operatorNames": "オペレーターの名前",
+  "testLocation": "テスト場所",
+  "miscellaneous": "その他",
+  "help": {
+    "title": "ゲージR&R - 測定システム分析",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tss.rr関数は、プロセスの測定システムの評価のためにゲージR&R分析を実行します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプを得るには、R help(ss.rr, package = SixSigma)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、gageR_R_piston_diameter_with_measurements.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開いてください\n\t\t\t\t<br/>\n\t\t\t\tサンプルデータセットから、測定変数に直径変数を、部品変数にピストンリングを、評価者にオペレーターを選択してください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

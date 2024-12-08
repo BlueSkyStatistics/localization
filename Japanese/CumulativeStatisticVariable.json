@@ -1,0 +1,13 @@
+{
+  "title": "累積統計変数",
+  "navigation": "累積統計変数",
+  "varname": "新しい変数名（スペースなし）",
+  "statvar": "累積統計のための変数",
+  "groupbyvars": "グループ化する変数",
+  "func": "累積統計",
+  "help": {
+    "title": "累積統計変数",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>累積統計</b>\n<br/><br/>\nこのダイアログは、データセットの現在の順序で行を下に進むにつれて、選択した統計の累積値を保存する新しい変数を作成します。 1つ以上のグループ内でこの累積値を計算することもできます。\n<br/><br/>\n\n<b>新しい変数名：</b>累積値を保存する変数の名前\n<br/><br/>\n\n<b>累積統計のための変数：</b>累積値が計算される変数。 数値である必要があります。\n<br/><br/>\n\n<b>グループ化する変数：</b>累積統計を計算するためのオプションの変数。\n<br/><br/>\n\n<b>累積統計：</b>累積統計に使用される統計。\n<br/><br/>\n<ul>\n<li>cumsum: 累積和</li>\n<li>cummin: 累積最小値</li>\n<li>cummax: 累積最大値</li>\n<li>cummean: 累積平均</li>\n<li>cummedian: 累積中央値</li>\n<li>cumgmean: 累積幾何平均</li>\n<li>cumhmean: 累積調和平均</li>\n<li>cumvar: 累積分散</li>\n</ul>\n<br/><br/>\n<b>必要なRパッケージ：</b>cumstats, dplyr\n\t\t\t"
+  }
+}

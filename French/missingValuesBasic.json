@@ -1,0 +1,16 @@
+{
+  "title": "Remplacer les valeurs manquantes (Variables numériques)",
+  "navigation": "Numérique",
+  "label1": "Les valeurs manquantes (NAs) dans les variables sélectionnées sont remplacées en appliquant une fonction, c'est-à-dire la médiane, la moyenne, le minimum, le maximum ou la valeur spécifiée.",
+  "target": "Sélectionner les variables pour remplacer les valeurs manquantes",
+  "label2": "Sélectionner une fonction ou spécifier une valeur pour remplacer les NAs",
+  "rd1": "Utiliser une fonction pour calculer les valeurs manquantes",
+  "selectctrl": "Sélectionner la fonction",
+  "rd2": "Spécifier une valeur numérique pour remplacer les valeurs manquantes",
+  "valueEntered": "Entrer une valeur numérique",
+  "help": {
+    "title": "Remplacer les valeurs manquantes (Numérique)",
+    "r_help": "help(mean)",
+    "body": "\n<b>Description</b></br>\nRemplacer les valeurs manquantes dans les variables sélectionnées par l'opération sélectionnée, c'est-à-dire la médiane, la moyenne, le minimum, le maximum\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvar: Chaîne de caractères représentant la variable numérique avec des valeurs manquantes (na), par exemple var = c('ventes')\n</li>\n<li>\nDataset: Le jeu de données qui contient la variable var\n</li>\n</ul>\n<b>Valeur</b><br/>\nLes valeurs calculées sont stockées directement dans Dataset<br/>\n<b>Package</b></br>\nbase</br>\n<b>Aide</b></br>\nhelp(mean)"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "清理 Excel 或 CSV 数据 - 调整、删除行和列",
+  "navigation": "Excel 清理",
+  "resultDatasetName": "要创建的新数据集的名称",
+  "listofRowNumbersRemove": "(可选) 要删除的行号列表（以逗号分隔，例如 1,4,5,20:30）",
+  "listofColumnNumbersRemove": "(可选) 要删除的列号列表（以逗号分隔，例如 1,2,6:10）",
+  "chooseColumnNamesRad": "从数据集中指定列名",
+  "rowNumbersContaingColNames": "输入用于输出数据集的列名的行号（以逗号分隔，例如 3,4）",
+  "deleteRowNumbersContaingColNamesChk": "删除包含输出数据集列名的行",
+  "combineWithExsitingColNamesChk": "创建的列名与现有列标题名称合并",
+  "specifyColumnNamesRad": "手动指定输出数据集的列名",
+  "outputColumnNames": "输入要用于输出数据集的列名（以逗号分隔）",
+  "removeColsWithConstantChk": "删除所有具有常量值的列（不区分大小写）",
+  "removeColsWithNoDataChk": "删除所有空列",
+  "removeRowsWithNoDataChk": "删除所有空行",
+  "removeRowsWithNAsChk": "仅保留完整案例，即如果有任何空值或 NA 值则删除整行",
+  "label1": "在输出数据集中转换列类型",
+  "convertColumnDataTypeAuto": "自动确定列数据类型并转换",
+  "convertColumnDataTypeNone": "不做任何操作",
+  "convertColumnDataTypeFactorToCharInt": "将所有因子列转换为字符和整数类型",
+  "convertColumnDataTypeCharToFactor": "将所有字符列转换为因子",
+  "convertColumnDataTypeAllToFactor": "将所有列转换为因子",
+  "convertColumnDataTypeManual": "输入每列要转换的数据类型",
+  "outputColumnTypes": "列类型列表（以逗号分隔，例如 数值型, 因子型, 字符型, ..）",
+  "help": {
+    "title": "清理 Excel 或 CSV 数据 - 调整、删除行和列",
+    "r_help": "",
+    "body": "\n            <b>描述</b></br>\n            此对话框用于清理复杂的 Excel 表，以添加和删除行和列以创建新数据集\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t要尝试此操作，您可以使用名为 Excel cleanup.xlsx 的示例数据集文件\n\t\t\t<br/>\n\t\t\t在文件打开菜单中打开数据网格中的文件\n\t\t\t<br/>\n\t\t\t在对话框中 - 输入\n\t\t\t<br/>\n\t\t\tSampleGp 作为新数据集名称\n\t\t\t<br/>\n\t\t\t1:3 作为要删除的行号列表\n\t\t\t<br/>\n\t\t\t1,2,5:8 作为要删除的列号列表\n\t\t\t<br/>\n\t\t\t选择选项 - 从数据集中指定列名\n\t\t\t<br/>\n\t\t\t2,3 作为输入行号\n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

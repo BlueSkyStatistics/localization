@@ -1,0 +1,13 @@
+{
+  "title": "Reducere",
+  "navigation": "Exemplu, Reducere",
+  "description": "Reducerea datelor dezechilibrate. DownSample va selecta aleatoriu un set de date astfel încât toate clasele să aibă aceeași frecvență ca și clasa minoritară",
+  "downsample": "Introduceți numele setului de date",
+  "seed": "Setați semințele",
+  "dependent": "Variabila după care se face reducerea",
+  "help": {
+    "title": "Reducere",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descriere</b></br>\nReducerea datelor dezechilibrate. DownSample va selecta aleatoriu un set de date astfel încât toate clasele să aibă aceeași frecvență ca și clasa minoritară\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Clasă\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: o matrice sau un cadru de date cu variabilele predictori\n</li>\n<li>\ny: o variabilă factor cu apartenențele la clasă\n</li>\n<li>\nlist: ar trebui funcția să returneze list(x, y) sau să lege x și y împreună? Dacă este TRUE, ieșirea va fi convertită într-un cadru de date.\n</li>\n<li>\nyname: dacă list = FALSE, o etichetă pentru coloana de clasă\n</li>\n</ul>\n<b>Detalii</b></br>\nSe folosește o selecție aleatorie simplă pentru a reduce clasele majoritare. Rețineți că datele clasei minoritare rămân intacte și că eșantioanele vor fi reordonate în versiunea redusă.</br>\nPentru creșterea eșantionului, toate datele originale rămân intacte și eșantioane suplimentare sunt adăugate la clasele minoritare cu înlocuire.</br>\n<b>Valoare</b><br/>\nFie un cadru de date, fie o listă cu elementele x și y.</br>\n<b>Exemple</b></br>\n## Un exemplu ridicol...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Pachet</b></br>\ncaret</br>\n<b>Ajutor</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

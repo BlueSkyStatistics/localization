@@ -1,0 +1,31 @@
+{
+  "title": "Prozessfähigkeit",
+  "navigation": "Prozessfähigkeit",
+  "summaryPlotChk": "Zeichnen Sie die zugrunde liegenden xbar- und I-Diagramme, die zur Berechnung der Prozessfähigkeit verwendet werden",
+  "displaySLlineonPlotChk": "LSL- und USL-Linien auf den zugrunde liegenden Diagrammen anzeigen",
+  "printObjectSummaryChk": "Drucken Sie die Zusammenfassung des QCC-Objekts für die Prozessfähigkeit",
+  "label1": "Zwei Optionen - entweder eine Variable (und eine Gruppierungsvariable nach Bedarf) auswählen oder die Variablen im Datensatz auswählen, wenn sie bereits gruppiert sind",
+  "label2": "Erweiterte Optionen",
+  "selectVariableRad": "Option 1: Wählen Sie eine Variable aus dem Datensatz aus (möglicherweise muss diese gruppiert werden)",
+  "variableSelcted": "Wählen Sie eine Variable (beobachtete Daten) zur Analyse aus",
+  "groupingVariable": "Gruppierungsvariable (optional - wenn die Daten gruppiert werden müssen)",
+  "variableControlLimits": "Datenzeilen, die verworfen werden sollen, falls vorhanden, bevor sie für die Variablenkontrollgrenzen gruppiert werden (z. B. als 1:25 oder 1,4,5,7:12 angeben)",
+  "displayGroupsChk": "Die Gruppierungen im UI-Raster des Datensatzes nur zur Referenz anzeigen",
+  "selectDatasetRad": "Option 2: Wählen Sie die Variablen aus dem Datensatz aus, wenn sie bereits gruppiert sind",
+  "variablelistSelcted": "Wählen Sie eine oder mehrere gruppierte Variablen (beobachtete Daten) zur Analyse aus",
+  "rowsTobeUsed": "Wenn ausgewählte (gruppierte) Zeilen zur Analyse der Prozessfähigkeit verwendet werden sollen (z. B. als 1:25 oder 1,4,5,7:12 angeben)",
+  "nsigmas": "Sigma - Anzahl der Sigmas, die zur Berechnung der Kontrollgrenzen verwendet werden sollen",
+  "confidence_level": "Ein numerischer Wert zwischen 0 und 1, der das Niveau angibt, das zur Berechnung der Konfidenzintervalle verwendet werden soll",
+  "stddev": "Standardabweichungsmethode zur Berechnung von xbar (für Gruppengröße > 1)",
+  "stddevXbarOne": "Standardabweichungsmethode zur Berechnung von I-MR",
+  "DoNotUseUnbiasingConstantChk": "Verwenden Sie keine Entbiasierungs-Konstante zur Schätzung der Standardabweichung für die Gesamtprozessfähigkeitsindizes",
+  "lower": "LSL - numerischer Wert der unteren Spezifikationsgrenze (geben Sie NA an, um einseitige Spezifikationsgrenzen anzugeben)",
+  "upper": "USL - numerischer Wert der oberen Spezifikationsgrenze (geben Sie NA an, um einseitige Spezifikationsgrenzen anzugeben)",
+  "target": "Ziel - ein optionaler Wert, der das Ziel des Prozesses angibt",
+  "digits": "Ziffern - Anzahl der anzuzeigenden Ziffern",
+  "help": {
+    "title": "Prozessfähigkeit (qcc pkg)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tqcc-Funktion zur Berechnung von Fähigkeitsindizes \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür detaillierte Hilfe - verwenden Sie R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) und help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie den Datensatz namens pistonrings aus dem qcc-Paket mit dem Menü Datensatz laden, indem Sie das qcc-Paket auswählen und dann den Datensatz pistonrings auswählen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie Option 1, Durchmesser zur Variable (beobachtet..), Probe zur Gruppierungsvariable, \n\t\t\t\t<br/>\n\t\t\t\tGeben Sie 1:25 in Gruppierte Zeilen ein, die verwendet werden sollen\n\t\t\t\t<br/>\n\t\t\t\tFür die Analyse der Prozessfähigkeit - geben Sie 73,95 in LSL, 74,05 in USL und 74,0 in Zielgrenze ein\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBefolgen Sie das qcc-Tutorial unter https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

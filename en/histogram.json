@@ -18,6 +18,7 @@
     "normalCurveColor": "Optionally select a normal curve color (After color selection, click outside the control to apply)",
     "rugPlot": "Display a rug plot (suitable for small datasets)",
     "normalCurve": "Display a normal curve (Missing values are removed for curve to display. Works only when no facets or grouping variables selected)",
+	"facets_lbl" : "Facets",
     "help": {
         "title": "Histogram",
         "r_help": "help(geom_histogram, package=ggplot2)",

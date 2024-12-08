@@ -1,0 +1,12 @@
+{
+  "title": "変数をアルファベット順に再配置",
+  "navigation": "変数を再配置",
+  "label1": "変数をアルファベット順に再配置",
+  "rd1": "A-Z",
+  "rd2": "Z-A",
+  "help": {
+    "title": "変数をアルファベット順に再配置",
+    "r_help": "help(sort)",
+    "body": "\n<b>説明</b></br>\nデータセット内の変数をアルファベット順に再配置します。データセット内の列/変数の名前をソートするためにsort関数を使用し、dplyrパッケージのselect関数を使用して正しいアルファベット順で列名を選択します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \n##アルファベット順に再配置 (A-Z)\nDataset_name <- Dataset_name %>%   dplyr::select(sort(names(.)))\n##アルファベット順に再配置 (Z-A)\nDataset_name <- Dataset_name %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>引数</b><br/>\nなし<br/>\n<b>パッケージ</b></br>\ndplyr</br>\n<b>ヘルプ</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n    "
+  }
+}

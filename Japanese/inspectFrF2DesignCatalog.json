@@ -1,0 +1,17 @@
+{
+  "title": "FrF2デザインカタログをブラウズする (例: catlg)",
+  "navigation": "FrF2デザインカタログをブラウズする",
+  "designCatalog": "デザインカタログの名前 (catlgクラスのオブジェクトである必要があります)",
+  "designNamefromCatalog": "カタログ内のデザイン名",
+  "numRuns": "実行回数 (複数の場合は, で区切る, 例: 8,16,64)",
+  "numFactors": "因子の数 (複数の場合は, で区切る, 例: 4,5,11)",
+  "minResolution": "最小デザイン解像度 (例: IIIの場合は3, IVの場合は4, Vの場合は5, ..)",
+  "MaxC2Chk": "チェックされていない場合 - デザインは最小の歪みで順序付けられ、チェックされている場合 - 最大のクリア2fisの数で順序付けられます",
+  "showAliasChk": "エイリアス構造を表示 (最大2fisまで)",
+  "maxNumberofDesignPrint": "デザインの最大数を表示",
+  "help": {
+    "title": "FrF2デザインカタログをブラウズする (例: catlg)",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tFrF2パッケージのcatlgクラスのデザインカタログからデザイン要素をブラウズ/検査するか、情報を抽出します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(catlg, package = FrF2)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

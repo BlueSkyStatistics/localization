@@ -1,0 +1,18 @@
+{
+  "title": "Standardize Variable(e)",
+  "navigation": "Standardizare",
+  "label1": "Valorile standardizate vor fi salvate în variabile noi cu prefixul/sufixul specificat.",
+  "dest": "Selectați variabila(e) de standardizat",
+  "label2": "Selectați un prefix sau sufix",
+  "suffix": "Sufix",
+  "prefix": "Prefix",
+  "txt1": "Introduceți un prefix/sufix",
+  "label3": "Centrați și/sau scalați",
+  "Center": "Centru",
+  "Scale": "Scală",
+  "help": {
+    "title": "Standardize Variable(e)",
+    "r_help": "",
+    "body": "\n<b>Descriere</b></br>\nStandardizează variabile (scoruri z). Valorile standardizate sunt stocate în variabile noi cu prefixul sau sufixul variabilelor originale. Opțiunea este de a centra și/sau scala.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: Una sau mai multe variabile de standardizat. Numai variabile numerice (nu factori) sunt acceptate.\n</li>\n<li>\ncenter: Dacă center este ADEVĂRAT, atunci centrul se face prin scăderea mediei coloanelor (omitem NAs) din x din coloanele corespunzătoare, iar dacă center este FALS, nu se face nicio centră.\n</li>\n<li>\nscale: Dacă scale este ADEVĂRAT, atunci scalarea se face prin împărțirea coloanelor (centrate) din x la deviațiile standard dacă center este ADEVĂRAT, și la rădăcina medie pătrată în caz contrar. Dacă scale este FALS, nu se face nicio scalare.\n</li>\n<li>\nstingToPrefixOrSuffix: O șir de caractere care specifică prefixul sau sufixul de utilizat pentru noile variabile standardizate (adică coloane noi în setul de date).\n</li>\n<li>\nprefixOrSuffix: specificați dacă doriți un prefix sau un sufix\n</li>\n<li>\ndatasetname: Numele setului de date/dataframe\n</li>\n</ul>\nNotă: Nu vom converti din numeric în factor. Când un numeric este recodificat, va rămâne numeric, când o variabilă factor este recodificată, va rămâne factor.</br>\n<b>Pachet</b></br>\nBlueSky</br>\n"
+  }
+}

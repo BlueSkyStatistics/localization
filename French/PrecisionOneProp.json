@@ -1,0 +1,15 @@
+{
+  "title": "Taille d'échantillon, Précision d'une Proportion",
+  "navigation": "Une Proportion",
+  "howtouse": "Spécifiez soit la taille de l'échantillon soit la largeur de l'intervalle de confiance et l'autre sera calculée",
+  "n": "Taille d'Échantillon",
+  "width": "Largeur de l'Intervalle de Confiance",
+  "prop": "Proportion de Résultat",
+  "conflevel": "Niveau de Confiance (0-1)",
+  "method": "Méthode d'Intervalle de Confiance",
+  "help": {
+    "title": "Taille d'échantillon, Précision d'une Proportion",
+    "r_help": "help(prec_prop, package ='presize')",
+    "body": "\nCeci est une évaluation de la taille d'échantillon pour une proportion basée sur la largeur de l'intervalle de confiance. Il calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur \nspécifie l'autre.\n<br/><br/>\n<b>Taille d'Échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Largeur de l'Intervalle de Confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de précision d'une estimation et est la limite supérieure moins la limite inférieure.\n<br/><br/>\n<b>Proportion de Résultat :</b> Spécifiez la proportion de sujets avec le résultat 'positif'\n<br/><br/>\n<b>Niveau de Confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<b>Méthode d'Intervalle de Confiance :</b> Spécifiez le type de méthode d'intervalle de confiance à utiliser. La méthode de Wilson est suggérée pour de petits n (< 40), et la méthode Agresti-Coull est \nsuggérée pour des n plus grands. La méthode de Wald n'est pas suggérée, mais fournie en raison de son utilisation largement répandue.\n<br/><br/>\n<b>Packages R Requis :</b> presize\n\t\t\t"
+  }
+}

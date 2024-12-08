@@ -1,0 +1,16 @@
+{
+  "title": "Durchsuchen Sie den Katalog für orthogonale Array-Designs (oacat)",
+  "navigation": "Durchsuchen Sie den Katalog für orthogonale Designs",
+  "designNamefromCatalog": "Name des orthogonalen Array-Designs im Katalog (z.B. L18.3.6.6.1)",
+  "numRuns": "Anzahl der Durchläufe oder ein 2-Element-Vektor z.B. 4,16 mit einem Minimum und Maximum für die Anzahl der Durchläufe",
+  "numFactors": "Anzahl der Faktoren (durch , trennen, z.B. 4,2,1)",
+  "numLevels": "Anzahl der Ebenen (durch , trennen, z.B. 3,2,5)",
+  "showQualityMetricsChk": "Alle Qualitätsmetriken des Arrays mit den resultierenden Arrays anzeigen;",
+  "maxDigits": "Signifikante Ziffern, die für GR- und A-Metriken angezeigt werden sollen",
+  "maxNumberofDesignPrint": "Maximale Anzahl der Designs anzeigen",
+  "help": {
+    "title": "Durchsuchen Sie den Katalog für orthogonale Array-Designs (oacat)",
+    "r_help": "help(show.oas, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDurchsuchen/Inspektieren von Designelementen oder Extrahieren von Informationen aus der Liste der verfügbaren orthogonalen Arrays, optional unter Angabe von Auswahlkriterien\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R-Hilfe(show.oas, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Reordonați nivelurile factorilor după apariție",
+  "navigation": "Reordonați după apariție",
+  "target": "Variabilele factor pentru a reordona nivelurile",
+  "label1": "Selectați variabilele factor pe care doriți să le reordonați după apariția datelor în variabilă. Puteți suprascrie variabilele existente sau crea variabile noi specificând un prefix/sufix. Variabilele noi vor fi create cu prefixul/sufixul adăugat la numele existente.",
+  "label2": "Salvați noile niveluri în variabile noi sau suprascrieți variabile existente",
+  "rd3": "Specificați un sufix (O nouă variabilă va fi creată cu sufixul)",
+  "txt3": "Introduceți un sufix",
+  "rd2": "Specificați un prefix (O nouă variabilă va fi creată cu prefixul)",
+  "txt4": "Introduceți un prefix",
+  "rd1": "Suprascrieți variabilele existente",
+  "label3": "Specificați o ordine",
+  "Descending": "În ordinea apariției",
+  "Ascending": "În ordinea inversă a apariției",
+  "ordered": "Faceți un factor ordonat (ordinal)",
+  "help": {
+    "title": "Eliminați NAs",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>Descriere</b></br>\nReordonați nivelurile factorilor după prima apariție (apariție). Consultați reordonarea după număr pentru ordonarea după număr/frecvență.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf: Un factor\n</li>\n<li>\nordered: Un logic care determină statutul \"ordonat\" al factorului de ieșire. NA păstrează statutul existent al factorului.\n</li>\n</ul>\n<b>Exemple</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

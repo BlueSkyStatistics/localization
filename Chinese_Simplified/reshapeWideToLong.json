@@ -1,0 +1,27 @@
+{
+    "title": "重塑，宽表到长表",
+    "label2": "选择要重塑的变量，或选择不重塑的变量。在后一种情况下，所有剩余变量将被重塑为列",
+    "navigation": "长表",
+    "label0": "您可以选择将结果保存到新的数据集或覆盖现有数据集",
+    "label1": "选项",
+    "advanced": "高级",
+    "New": "将结果保存到新的数据集",
+    "newdatasetname": "输入数据集名称",
+    "Existing": "覆盖现有数据集",
+    "label12": "输入新重复因子变量的名称",
+    "repeatedMeasure": "注意：当指定多个存储重复因子的变量名称时，用逗号分隔，例如 Month, Day。您还需要点击高级来指定变量名称的生成方式。",
+    "repeatedValue": "重复值的变量名称，例如 Count",
+    "labelChoice": "选择以下选项之一",
+    "subsetvars": "选项1：选择要重塑为一个或多个变量的变量",
+    "names_sep": "选项2：指定一个字符或正则表达式以分隔列名称，用于生成变量名称。与 separate() 的规范相同，可以是一个指定分割位置的数值向量，也可以是一个正则表达式字符串。",
+    "names_pattern": "选项1：包含匹配组的正则表达式 (())。正则表达式中 () 的匹配部分将用于生成变量名称。",
+    "dontReshape": "选项2：选择不重塑的变量（所有剩余变量将重塑为列）",
+    "removeNA": "删除重复值为 NA 的行。",
+    "makeString": "将重复因子变为 R 字符串类型而不是因子",
+    "label3": "如果为重复因子创建了多个新变量，以下选项控制如何分割列名称。请选择以下两种选项之一。",
+    "help": {
+        "title": "重塑（宽表到长表）",
+        "r_help": "help(pivot_longer, package=tidyr)",
+        "body": "\n<b>描述</b></br>\n参见视频<a href=\"https://youtu.be/ypLXqmFp3jY\">宽表到长表重塑</a></br>\n将宽数据集转换为长数据集，将列转换为键值对。pivot_longer 会将多个列合并为键值对，重复所有其他列。您可以在列不是变量时使用 pivot_longer()。</br>\n在 R 编辑器中输入 vignette(\"pivot\") 以查看 R 帮助。如果有多个列需要创建，您需要指定参数来定义列名的构建方式。</br>\n在此情况下，请点击高级并输入一个正则表达式，以指定如何根据列名创建变量。</br>\n注意：当为重复因子指定多个变量时，用逗号分隔，例如，</br>\n<b>用法</b>\n<br/>\n<code> \npivot_longer(cols=c(col1, col2...),names_to=\"key\",values_to=\"value\",values_drop_na = TRUE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ncols：要转换为长格式的列。\n</li>\n<li>\nvalues_to：指定要从单元格值中创建的数据列的名称字符串。如果 names_to 包含特殊的 .value 标记，则此值将被忽略，值列的名称将从现有列名称的一部分派生。如果为空，将选择所有变量，使用 -y 排除变量 y。在排除变量时，所有剩余变量将转换为长表。\n</li>\n<li>\nvalues_drop_na：如果为 TRUE，将删除 value_to 列中仅包含 NA 的行。通常只有在数据结构导致缺失值时才使用此选项，以将显式缺失值转换为隐式缺失值。\n</li>\n<li>\nnames_sep：与 separate() 的规范相同，可以是指定分割位置的数值向量，或指定分隔正则表达式的字符串。</br>\n假设列为 Height_1_1, Height_1_2, Weight_1_1, Weight_1_2, Sagur_1_1, Sagur_2_1，第一个数字表示月份，第二个数字表示周数，指定 _ 作为分隔符将创建三个变量，第一个变量值为 Height, Weight, Sagur，第二个变量值为 1 和 2，第三个变量值为 1 和 2。</br>\n在 R 代码编辑器中键入 help(regex) 以获取更多详情。\n</li>\n<li>\nnames_pattern：与 extract() 的规范相同，为包含匹配组 (()) 的正则表达式。</br>\n假设列为 Height_33.1_1, Height_44.1_2, Weight_66.1_1, Weight_55.1_2，其中第一个下划线后的两个数字忽略，小数点后的数字表示月份，最后一个下划线后的数字表示周数。</br>\n匹配组 () 中的正则表达式会生成新变量的值。正则表达式为 (.*)_.*.(.*)_(.)</br>\n注意：. 在正则表达式中表示任意字符</br>\n* 表示零个或多个，因此 .* 表示零个或多个字符</br>\n因此字符串可以解释为查找以下模式：</br>\n(.*) 0 或多个字符，后跟</br>\n_ 下划线，后跟</br>\n.*. 一个或多个字符，后跟 . (转义的 . 表示字符本身)，后跟</br>\n.* 一个或多个字符，后跟</br>\n_ 下划线，后跟</br>\n. 一个字符</br>\n() 中的所有模式组成每个新因子变量的值</br>\n</li>\n</ul>\n<b>值</b><br/>\n返回重塑后的数据集\n<br/>\n<b>包</b></br>\ntidyr</br>\n<b>帮助</b></br>\nhelp(pivot_longer, package=tidyr)<br/>\nvignette(\"pivot\")\n"
+    }
+}

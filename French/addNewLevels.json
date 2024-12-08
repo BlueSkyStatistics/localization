@@ -1,0 +1,18 @@
+{
+  "title": "Ajouter de nouveaux niveaux",
+  "navigation": "Ajouter",
+  "target": "Facteurs variables pour ajouter de nouveaux niveaux à",
+  "label1": "Ajouter de nouveaux niveaux à une ou plusieurs variable(s) de facteur. Enregistrer les résultats dans des variables existantes ou créer de nouvelles variables en spécifiant un préfixe/suffixe. De nouvelles variables seront créées avec le préfixe/suffixe ajouté aux noms existants.",
+  "newLevels": "Entrez de nouveaux niveaux entre guillemets et séparés par une virgule par exemple \"niveau1\",\"niveau2\",\"niveau3\"",
+  "label2": "Enregistrer de nouveaux niveaux dans de nouvelles variable(s) ou écraser les variable(s) existante(s)",
+  "rd3": "Spécifiez un suffixe (une nouvelle variable sera créée avec le suffixe)",
+  "txt3": "Entrez un suffixe",
+  "rd2": "Spécifiez un préfixe (une nouvelle variable sera créée avec le préfixe)",
+  "txt4": "Entrez un préfixe",
+  "rd1": "Écraser les variables existantes",
+  "help": {
+    "title": "Ajouter de nouveaux niveaux",
+    "r_help": "help(fct_expand, package=\"forcats\")",
+    "body": "\n<b>REMARQUE : NE PAS ENTOURER LES NIVEAUX DE GUILLEMETS SIMPLES OU DOUBLE, IL NE PEUT PAS Y AVOIR D'ESPACES DANS LES NOMS DE NIVEAUX. ENTREZ LES NIVEAUX SÉPARÉS PAR DES VIRGULES AU FORMAT NIVEAU1,NIVEAU2,NIVEAU3</b></br>\n<b>Description</b></br>\nAjouter des niveaux supplémentaires à un facteur. Ajouter de nouveaux niveaux à une ou plusieurs variable(s) de facteur. Les résultats peuvent être enregistrés dans des variables existantes (écrasement) ou créer de nouvelles variables en spécifiant un préfixe/suffixe. De nouvelles variables seront créées avec le préfixe/suffixe ajouté aux noms existants. \n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: Un facteur (ou vecteur de caractères).\n</li>\n<li>\n...: Niveaux supplémentaires à ajouter au facteur. Les niveaux qui existent déjà seront silencieusement ignorés.\n</li>\n</ul>\n<b>Exemples</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Package</b></br>\nforcats</br>\n<b>Aide</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+  }
+}

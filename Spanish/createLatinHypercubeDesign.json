@@ -1,0 +1,18 @@
+{
+  "title": "Crear Diseño de Hiper Cubo Latino (para Factores Cuantitativos)",
+  "navigation": "Crear Diseño de Hiper Cubo Latino (Cuantitativo)",
+  "selectedvars": "Seleccionar variables",
+  "datasetname": "Nombre del diseño",
+  "lblheading": "Tamaño y aleatorización",
+  "numOfRuns": "Número de ejecuciones",
+  "numOfDeciPlaces": "Número de decimales",
+  "lbl1": "Es posible que no necesite cambiar la configuración de aleatorización",
+  "randomseeds": "Semilla para la aleatorización",
+  "randomizationChk": "Aleatorizar la generación del diseño",
+  "lhsDesignType": "diseños de muestreo de hiper cubo latino (ver paquetes lhs o DiceDesign para otros tipos)",
+  "help": {
+    "title": "Crear Diseño de Hiper Cubo Latino (para Factores Cuantitativos)",
+    "r_help": "help(lhs.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función lhs.design para acceder a diseños de muestreo de hiper cubo latino del paquete lhs o diseños de llenado de espacio del paquete DiceDesign, que son útiles para factores cuantitativos con muchos niveles posibles. En particular, pueden ser utilizados en experimentos computacionales. La mayoría de los diseños son muestras aleatorias.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(lhs.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado factor_grid__latin_hypercube_Design.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

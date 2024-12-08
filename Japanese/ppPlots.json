@@ -1,0 +1,28 @@
+{
+  "title": "P-P プロット",
+  "navigation": "P-P",
+  "alpha": "不透明度 (0-1)",
+  "x": "X軸、数値変数を指定してください",
+  "y": "形状、因子変数を指定してください",
+  "color": "色、因子変数を指定してください",
+  "referenceline": "基準線",
+  "band": "バンドを表示",
+  "detrend": "トレンドを除去",
+  "flip": "軸を反転",
+  "distribution": "分布を選択",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "label1": "分布パラメータ、例えば正規分布の場合、分布パラメータは mean=2, sd=2 ですので、mean=2, sd=2 と入力してください。指数分布の場合、パラメータは rate=2 ですので、rate=2 と入力してください。",
+  "dparams": "オプションで分布パラメータを入力してください",
+  "specify_a_title": "タイトルを入力してください",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "facets_lbl" : "様相",
+  "help": {
+    "title": "P-P プロット",
+    "r_help": "help(stat_pp_point, package='qqplotr')",
+    "body": "\n            <b>説明</b></br>\n            P-P プロット（確率-確率プロットまたはパーセント-パーセントプロットまたはP値プロット）は、2つのデータセットがどれだけ一致しているかを評価するための確率プロットであり、2つの累積分布関数を互いにプロットします。デフォルトでは、選択した変数の累積分布を正規分布と比較しますが、ベータ、コーシー、カイ二乗、指数、F、ガンマなど、他のいくつかの分布と比較することもできます。また、比較対象の分布に関連する分布パラメータを指定することもできます。メインダイアログのオプションボタンをクリックして、分布を選択し、分布パラメータを指定してください。選択した変数をグループ化するために因子変数を選択できます。この場合、各グループに対して別々のP-Pプロットが描画されます。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data = datasetname, mapping= aes(sample = var1, shape = var2)) + stat_pp_band() + stat_pp_line() + stat_pp_point() + labs(x = \"確率ポイント\", y = \"累積確率\", title = paste(\"変数のPPプロット \", var1, sep='')) + facet_grid(var3 ~.)\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            sample: P-Pプロットを描くための数値変数\n            </li>\n            <li>\n            stat_pp_point: 累積確率を確率ポイントに対してプロットします。累積確率関数はサンプルデータで構築され、その後各確率ポイントで評価されます。\n            </li>\n            <li>\n            stat_pp_line: 基準のアイデンティティライン（x=y）を描画します。\n            </li>\n            <li>\n            stat_pp_band: 信頼区間バンドを描画します。現在のところ、ブートストラップバージョン（\"boot\"）のみが利用可能です。\n            </li>\n            <li>\n            shape: サンプルに割り当てられた値をグループ化するオプションの因子変数。因子変数のレベルによって決定される各グループに対して別々のP-Pプロットが作成されます。​各グループは異なる形状で示されます\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例のタイトルを変更します（これはオプションです）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）​。詳細についてはhelp(facet_grid)を参照してください。\n            </li>\n            <li>  ​\n            coord_flip(): 軸を反転します（これはオプションです）​\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2; ggthemes; qqplotr;</br>\n            <b>ヘルプ</b></br>\n            help(stat_pp_point, package='qqplotr')</br>\n            その他: 詳細なRヘルプを取得するにはRヘルプボタンをクリックしてください。また、help(labs)、help(stat_pp_point)、help(aes)、help(facet_grid)、help(coord_flip)を入力することもできます。</br>​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n        "
+  }
+}

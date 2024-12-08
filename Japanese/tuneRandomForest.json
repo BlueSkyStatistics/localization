@@ -1,0 +1,16 @@
+{
+  "title": "ランダムフォレストモデルの調整",
+  "navigation": "調整",
+  "dependentvar": "従属変数",
+  "independentvars": "独立変数",
+  "ntreetry": "試す木の数",
+  "stepfactor": "ステップファクター",
+  "improve": "改善",
+  "trace": "トレース",
+  "plot": "プロット",
+  "help": {
+    "title": "ランダムフォレストモデルの調整",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>説明</b></br>\nデフォルトのmtry値から始めて、randomForestのmtryの最適値（バギング誤差推定に関して）を検索します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx : 予測変数の行列またはデータフレーム\n</li>\n<li>\ny : 応答ベクトル（分類用の因子、回帰用の数値）\n</li>\n<li>\nntreeTry : 調整ステップで使用される木の数。\n</li>\n<li>\nstepFactor : 各イテレーションで、mtryはこの値によって増加（または減少）します。\n</li>\n<li>\nimprove : OOB誤差の（相対的）改善は、検索を続けるためにこの程度でなければなりません。\n</li>\n<li>\ntrace : 検索の進行状況を印刷するかどうか。\n</li>\n<li>\nplot : mtryの関数としてOOB誤差をプロットするかどうか。\n</li>\n<li>\n... : randomForestに渡されるオプション\n</li>\n</ul>\n<b>値</b></br>\n検索されたmtry値を含む最初の列と、対応するOOB誤差を含む2番目の列を持つ行列を返します。</br>\n<b>パッケージ</b></br>\nrandomForest​;BlueSky</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(tuneRF,package='randomForest')\n"
+  }
+}

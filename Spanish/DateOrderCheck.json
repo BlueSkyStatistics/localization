@@ -1,0 +1,18 @@
+{
+  "title": "Verificación del Orden de Fechas",
+  "navigation": "Verificación del Orden de Fechas",
+  "datevarslabel": "Variables de Fecha (especificar de la más temprana a la más tardía; misma clase; al menos 2)",
+  "compgrplabel": "Comparación",
+  "compgrpnote": "Nota: Esta es la comparación entre todas las fechas especificadas arriba que se verificarán en busca de errores de orden, por ejemplo, los valores deben ser fecha1<fecha2<fecha3.",
+  "ltlabel": "<",
+  "ltelabel": "<=",
+  "idvarslabel": "Variables de Identificación de Filas (opcional)",
+  "dateerrorboxlabel": "Crear conjunto de datos con variable de error de fecha",
+  "dateerrordatanamelabel": "Nombre del conjunto de datos",
+  "dateerrorvarlabel": "Nombre de la variable de error de fecha",
+  "help": {
+    "title": "Verificación del Orden de Fechas",
+    "r_help": "help('<', package = 'base')",
+    "body": "\nEsto crea una lista de filas en el conjunto de datos activo donde los valores de las variables de fecha no están en un orden especificado. Esto ayuda a identificar posibles errores en las variables de fecha cuando se necesitan fechas o \ntiempos para un análisis. Por ejemplo, si se supone que tres columnas de fecha deben estar en el orden de fecha1 < fecha2 < fecha3, este diálogo imprimirá todas las observaciones donde \nlos valores de esas variables no siguen ese orden. Los valores de fecha faltantes están permitidos en las variables especificadas y no se utilizarán para ninguna comparación.\n<br/><br/>\n<b>Variables de Fecha (especificar de la más temprana a la más tardía; misma clase; al menos 2):</b> Especificar al menos 2 variables de fecha en el orden de la más temprana a la más tardía. Estas pueden ser de cualquier clase de fecha \n(POSIXct, Date), pero todas las variables especificadas deben ser de la misma clase de fecha. Si no, resultará en un error.\n<br/><br/>\n<b>Comparación:</b> Especificar el operador de comparación utilizado para comparar los valores de fecha. \"<\" significa menor que y \"<=\" significa menor o igual que. Si se elige \"<\", entonces las fechas que\nson iguales se marcarán como errores. Si se elige \"<=\", entonces las fechas que son iguales no se marcarán como errores.\n<br/><br/>\n<b>Variables de Identificación de Filas (opcional):</b> Especificar una o más variables que pueden ser útiles para identificar las filas. Por ejemplo, número de identificación del sujeto. Estas se incluirán en la lista de errores. Si no se especifican variables, el número de fila del conjunto de datos será el único identificador.\n<br/><br/>\n<b>Crear conjunto de datos con variable de error de fecha:</b> Esto creará un conjunto de datos separado con los datos originales y una variable que indica si cada observación tiene un error de orden de fecha \n(codificado como 1=error de orden de fecha y 0=no error de orden de fecha). El <b>Nombre del conjunto de datos</b> es el nombre deseado de este conjunto de datos y <b>Nombre de la variable de error de fecha</b> es el nombre deseado \nde la variable de error de orden de fecha en este conjunto de datos.\n\t\t"
+  }
+}

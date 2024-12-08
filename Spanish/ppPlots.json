@@ -1,0 +1,28 @@
+{
+  "title": "Gráficos P-P",
+  "navigation": "P-P",
+  "alpha": "Opacidad (0-1)",
+  "x": "Eje X, especificar una variable numérica",
+  "y": "Forma, especificar una variable de factor",
+  "color": "Color, especificar una variable de factor",
+  "referenceline": "Línea de referencia",
+  "band": "Mostrar bandas",
+  "detrend": "Destrendir",
+  "flip": "Invertir eje",
+  "distribution": "Seleccionar una distribución",
+  "x_title": "Etiqueta del eje X",
+  "y_title": "Etiqueta del eje Y",
+  "label1": "Parámetros de distribución, por ejemplo, para una distribución normal, los parámetros de distribución podrían ser media=2, sd=2, así que ingrese media=2, sd=2. Para una distribución exponencial, los parámetros podrían ser tasa=2, así que ingrese tasa=2.",
+  "dparams": "Opcionalmente ingrese parámetros de distribución",
+  "specify_a_title": "Ingrese un título",
+  "Facetrow": "Fila de facetas",
+  "Facetcolumn": "Columna de facetas",
+  "Facetwrap": "Envolver facetas",
+  "Facetscale": "Escala de facetas",
+  "facets_lbl" : "Facetas",
+  "help": {
+    "title": "Gráficos P-P",
+    "r_help": "help(stat_pp_point,package='qqplotr')",
+    "body": "\n            <b>Descripción</b></br>\n            Un gráfico P–P (gráfico de probabilidad–probabilidad o gráfico de percentil–percentil o gráfico de valor P) es un gráfico de probabilidad para evaluar cuán de cerca dos conjuntos de datos coinciden, que grafica las dos funciones de distribución acumulativa entre sí. Por defecto, comparamos la distribución acumulativa de la variable seleccionada contra la distribución normal, sin embargo, puede comparar contra varias otras distribuciones, incluyendo beta, cauchy, chisq, exp, f, gamma... También puede especificar los parámetros de distribución asociados con la distribución que se está comparando. Haga clic en el botón de opciones en el diálogo principal para seleccionar una distribución y especificar los parámetros de distribución. Puede seleccionar una variable de factor para agrupar la variable seleccionada. En este caso, se dibuja un gráfico P-P separado para cada grupo.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data = datasetname,mapping= aes(sample = var1 ,shape = var2 ))  +stat_pp_band() + stat_pp_line() + stat_pp_point()  +labs(x = \"Puntos de probabilidad\",y = \"Probabilidad acumulativa\",title =paste(\"Gráfico PP para la variable \",var1,sep=''))+facet_grid(var3 ~.)\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: El conjunto de datos predeterminado\n            </li>\n            <li>\n            aes(): Generar mapeos estéticos que describen cómo las variables en los datos se asignan a propiedades visuales (estéticas) de geoms.\n            </li>\n            <li>\n            sample: la variable numérica para graficar el gráfico P-P\n            </li>\n            <li>\n            stat_pp_point: Grafica probabilidades acumulativas versus puntos de probabilidad. La función de probabilidad acumulativa se construye con los datos de la muestra y luego se evalúa en cada punto de probabilidad.\n            </li>\n            <li>\n            stat_pp_line: Dibuja una línea de identidad de referencia (x=y).\n            </li>\n            <li>\n            stat_pp_band: Dibuja bandas de confianza. Por ahora, solo está disponible la versión bootstrap (\"boot\").\n            </li>\n            <li>\n            shape: Una variable de factor opcional que agrupa los valores asignados a la muestra. Se crea un gráfico P-P separado para cada grupo según los niveles de la variable de factor. Cada grupo se indica con una forma diferente\n            </li>\n            <li>\n            Labs(): Cambiar etiquetas de ejes y títulos de leyenda (esto es opcional)\n            </li>\n            <li>\n            facet_grid(): Disponer paneles en una cuadrícula (esto es opcional). Consulte help(facet_grid) para más detalles.\n            </li>\n            <li>  \n            coord_flip(): Invertir eje (esto es opcional)\n            </li>\n            </ul>\n            <b>Paquete</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>Ayuda</b></br>\n            help(stat_pp_point, package='qqplotr')</br>\n            Otro: Haga clic en el botón de ayuda de R para obtener ayuda detallada de R. También puede ingresar help(labs), help(stat_pp_point), help(aes), help(facet_grid), help(coord_flip)</br>\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n        "
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "輪廓圖",
+  "navigation": "輪廓圖",
+  "x": "X 變數，指定一個數值變數",
+  "y": "Y 變數，指定一個或多個數值變數",
+  "flip": "翻轉軸",
+  "specify_a_title": "輸入標題",
+  "x_title": "X 軸標籤",
+  "y_title": "Y 軸標籤",
+  "Facetrow": "面板行",
+  "Facetcolumn": "面板列",
+  "Facetwrap": "面板包裝",
+  "Facetscale": "面板比例",
+  "facets_lbl" : "面",
+  "colorHintLabel1": "選擇一種顏色（選擇顏色後，點擊控制外部以應用）",
+  "help": {
+    "title": "輪廓圖",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>描述</b></br>\n            使用 MASS::kde2d() 進行 2D 核密度估計並顯示輪廓結果。這對於處理重疊圖形非常有用。這是 geom_density() 的 2D 版本。</br>\n            可以通過指定因子變數來選擇性地創建面板。您還可以選擇性地指定主題，並為 x 和 y 軸指定標題和標籤​\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"輪廓圖...\")\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 預設數據集​\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變數如何映射到幾何圖形的視覺屬性（美學）。​\n            </li>\n            <li>\n            x: 一個數值變數\n            </li>\n            <li>\n            y: 一個數值變數\n            </li>\n            <li>\n            geomdensity2d: 創建圖形\n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）​\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>幫助</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            其他：點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs)，help(geom_density2d)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)​\n    "
+  }
+}

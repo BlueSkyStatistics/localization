@@ -1,0 +1,20 @@
+{
+  "title": "Crear diseño de cribado fraccional no regular (factorial de 2 niveles)",
+  "navigation": "Crear diseño de cribado de 2 niveles",
+  "selectedvars": "Seleccionar variables",
+  "datasetname": "Nombre del diseño",
+  "numOfRuns": "Número de ejecuciones (múltiplo de 4, >=8)",
+  "taguchiOrderChk": "(Solo relevante para) diseño de 12 ejecuciones en orden Taguchi",
+  "numOfCenterPts": "Número de puntos centrales (si se utilizan, tener un mínimo de 2)",
+  "centerPointDistribution": "Número de posiciones para la distribución de puntos centrales (tener >1)",
+  "replications": "Replicaciones",
+  "repeatOnlyChk": "Repetir solo",
+  "lbl1": "Es posible que no necesite cambiar la configuración de aleatorización",
+  "randomseeds": "Semilla para la aleatorización",
+  "randomizationChk": "Aleatorizar la generación del diseño",
+  "help": {
+    "title": "Crear diseño de cribado de 2 niveles",
+    "r_help": "help(pb, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción Plackett-Burman(pb) para generar diseños de cribado fraccionales no regulares de 2 niveles\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(pb, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado factor_grid_twolevel_screen_Design.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

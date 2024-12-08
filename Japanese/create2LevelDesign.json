@@ -1,0 +1,20 @@
+{
+  "title": "非正則（分数）階乗2レベルスクリーニングデザインの作成",
+  "navigation": "2レベルスクリーニングデザインの作成",
+  "selectedvars": "変数を選択",
+  "datasetname": "デザイン名",
+  "numOfRuns": "実行回数（4の倍数、>=8）",
+  "taguchiOrderChk": "(関連するのは) タグチ順の12回実行デザイン",
+  "numOfCenterPts": "中心点の数（使用する場合、最低2つ必要）",
+  "centerPointDistribution": "中心点分布の位置数（>1必要）",
+  "replications": "複製",
+  "repeatOnlyChk": "繰り返しのみ",
+  "lbl1": "ランダム化設定を変更する必要はないかもしれません",
+  "randomseeds": "ランダム化のためのシード",
+  "randomizationChk": "デザイン生成をランダム化する",
+  "help": {
+    "title": "2レベルスクリーニングデザインの作成",
+    "r_help": "help(pb, package = FrF2)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tプラケット-バーマン(pb)関数を使用して非正則分数階乗2レベルスクリーニングデザインを生成します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(pb, package = FrF2)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、factor_grid_twolevel_screen_Design.xlsxというサンプルデータセットファイルを使用できます。ファイルオープンメニューでデータグリッドにファイルを開いてください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

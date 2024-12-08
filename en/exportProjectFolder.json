@@ -1,0 +1,15 @@
+{
+    "title": "Export Project",
+    "navigation": "Export Project",
+    "expProjDescription": "Export the entire project to a .bsp file",
+    "chooseProjTitle": "Choose the project:",
+    "selDropLbl": "Select a project to export, from the dropdown",
+    "chooseExportLocTitle": "Choose the export location:",
+    "customLocationForBSP": "Select a location where you want to save the exported .bsp file",
+    "currentprojpath": "Current project path:",
+    "customBSPpath": "Current export path:",
+    "help": {
+        "title": "Export Project",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tExporting the project will create a .bsp (zipped file) from the project folder.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe .bsp project file can be shared with others and they can use 'File -> Import Project' dialog to import the .bsp file. \n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

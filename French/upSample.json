@@ -1,0 +1,12 @@
+{
+  "title": "Échantillon supérieur",
+  "navigation": "Échantillon, Échantillon supérieur",
+  "downsample": "Entrez le nom de l'ensemble de données",
+  "seed": "Définir la graine",
+  "dependent": "Variable à échantillonner par le haut",
+  "help": {
+    "title": "Échantillon supérieur",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Description</b></br>\nÉchantillonnage supérieur des données déséquilibrées. upSample échantillonne avec remplacement pour rendre les distributions de classe égales\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Classe\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: une matrice ou un cadre de données de variables prédictives\n</li>\n<li>\ny: une variable facteur avec les appartenances de classe\n</li>\n<li>\nlist: la fonction doit-elle retourner list(x, y) ou lier x et y ensemble ? Si TRUE, la sortie sera convertie en un cadre de données.\n</li>\n<li>\nyname: si list = FALSE, une étiquette pour la colonne de classe\n</li>\n</ul>\n<b>Détails</b></br>\nUn échantillonnage aléatoire simple est utilisé pour sous-échantillonner pour la ou les classes majoritaires. Notez que les données de la classe minoritaire restent intactes et que les échantillons seront réordonnés dans la version sous-échantillonnée.</br>\nPour l'échantillonnage supérieur, toutes les données originales restent intactes et des échantillons supplémentaires sont ajoutés aux classes minoritaires avec remplacement.</br>\n<b>Valeur</b><br/>\nSoit un cadre de données ou une liste avec les éléments x et y.<br/>\n<b>Exemples</b><br/>\n<code> \n## Un exemple ridicule...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Paquet</b></br>\ncaret</br>\n<b>Aide</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

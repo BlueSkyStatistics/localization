@@ -1,0 +1,30 @@
+{
+  "title": "記述統計",
+  "ChkboxShowOnlyTopFewFactors": "上位N因子レベルのカウントのみを表示",
+  "txtNumTopFactorsToShow": "Nの値を入力してください",
+  "skew": "歪度",
+  "mad": "中央値絶対偏差",
+  "kurtos": "尖度",
+  "label2": "注意: チェックボックスがオフの場合、すべてのレベルのカウントが表示されます。因子レベルが多い場合、かなりの時間がかかることがあります。",
+  "navigation": "記述統計 (レガシー)",
+  "tvarbox1": "選択された変数",
+  "tvarbox2": "グループ化",
+  "min": "最小",
+  "max": "最大",
+  "mean": "平均",
+  "median": "中央値",
+  "sum": "合計",
+  "sd": "標準偏差",
+  "stderror": "平均の標準誤差",
+  "iqr": "四分位範囲",
+  "quantiles": "四分位数",
+  "probs": "四分位数を指定してください（四分位数が選択されている場合）",
+  "addIsstatnames": "追加の統計関数名をカンマ区切りで追加（例: var）",
+  "label1": "数値変数のオプション",
+  "label3": "因子変数のオプション",
+  "help": {
+    "title": "記述統計",
+    "r_help": "",
+    "body": "\n<b>説明</b></br>\n次の記述統計を出力します:</br>\n最小、最大、平均、中央値、合計、標準偏差、標準誤差、四分位数。四分位数が選択されている場合、必要なカンマ区切りの四分位数を指定できます。</br>\nこれに加えて、ユーザーは、例えばvarのようなカンマ区切りの統計関数名のリストを渡すことができます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"データセットの名前\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: 選択されたスケール変数（例: Dataset$var1, Dataset$var2）\n</li>\n<li>\ngroupByColumnObjects: グループ化する1つ以上の因子変数（例: Dataset$var3, Dataset$var4）\n</li>\n<li>\nstatFunctionList: 関数のリスト。TRUEに設定されたものが実行されます（例: min=TRUE, sd=TRUE）\n</li>\n<li>\nquantilesProbs: 四分位数の確率\n</li>\n<li>\nadditionalStats: ユーザーが渡すことができる追加の統計関数（例: var）\n</li>\n<li>\ndatasetName: datasetColumnObjectsおよびgroupByColumnObjectsが選択されるデータセットの名前\n</li>\n</ul>\n<b>値</b></br>\n各関数の各変数に対する結果を提供する\"data.frame\"クラスのオブジェクト。</br>\n<b>例</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"データセット\" )\n</code> <br/>\n<b>パッケージ</b></br>\nBlueSky</br>\n<b>ヘルプ</b></br>\nRヘルプは、複数のR関数を使用してカスタムコードを記述しているため利用できません。コードを確認する必要がある場合は、「<>」ボタンをクリックしてください。</br>\n    "
+  }
+}

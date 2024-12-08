@@ -1,0 +1,14 @@
+{
+  "title": "層別分割",
+  "navigation": "層別分割",
+  "traindataset": "トレーニングデータセットの名前を入力してください",
+  "testdataset": "テストデータセットの名前を入力してください",
+  "split": "分割割合を入力してください",
+  "seed": "シードを設定",
+  "dependent": "層別サンプルを構築するための変数",
+  "help": {
+    "title": "層別分割",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>説明</b></br>\ncreateDataPartitionを使用して一連のテスト/トレーニングパーティションが作成され、createResampleは1つ以上のブートストラップサンプルを作成します。createFoldsはデータをkグループに分割し、createTimeSlicesは系列データの交差検証分割を作成します。groupKFoldはグループ化因子に基づいてデータを分割します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \ncreateDataPartition(y, times = 1, p = 0.5, list = TRUE, groups = min(5,length(y)))<br/>\ncreateFolds(y, k = 10, list = TRUE, returnTrain = FALSE)<br/>\ncreateTimeSlices(y, initialWindow, horizon = 1, fixedWindow = TRUE,skip = 0)<br/>\ngroupKFold(group, k = length(unique(group)))<br/>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ny: 結果のベクトル。createTimeSlicesの場合、これらは時系列順である必要があります。\n</li>\n<li>\ntimes: 作成するパーティションの数\n</li>\n<li>\np: トレーニングに使用されるデータの割合\n</li>\n<li>\nlist: 論理 - 結果をリスト（TRUE）または行数がfloor(p * length(y))で列数がtimesの行列にするべきか。\n</li>\n<li>\ngroups: 数値yの場合、分位数のブレーク数（以下参照）\n</li>\n<li>\nk: フォールドの数の整数。\n</li>\n<li>\nreturnTrain: 論理。真の場合、返される値はトレーニング中に使用されたデータに対応するサンプル位置です。この引数はlist = TRUEと一緒にのみ機能します。\n</li>\n<li>\ninitialWindow: 各トレーニングセットサンプル内の連続する値の初期数\n</li>\n<li>\nhorizon: テストセットサンプル内の連続する値の数\n</li>\n<li>\nfixedWindow: 論理、FALSEの場合、すべてのトレーニングサンプルは1から始まります\n</li>\n<li>\nskip: 整数、全体の量を薄くするためにスキップする（もしあれば）リサンプルの数\n</li>\n<li>\ngroup: 全体のデータセットの行数に一致する長さのグループのベクトル。\n</li>\n</ul>\n<b>詳細</b></br>\nブートストラップサンプルの場合、単純なランダムサンプリングが使用されます。\n他のデータ分割の場合、yが因子であるとき、分割内のクラス分布を均等に保つためにyのレベル内でランダムサンプリングが行われます。</br>\n数値yの場合、サンプルはパーセンタイルに基づいてグループセクションに分割され、これらのサブグループ内でサンプリングが行われます。createDataPartitionの場合、パーセンタイルの数はgroups引数を介して設定されます。createFoldsおよびcreateMultiFoldsの場合、グループの数はサンプルサイズとkに基づいて動的に設定されます。サンプルサイズが小さい場合、これらの2つの関数は層別分割を行わない場合があり、最大でデータを四分位数に分割します。</br>\nまた、createDataPartitionの場合、非常に小さなクラスサイズ（<= 3）の場合、クラスはトレーニングデータとテストデータの両方に表示されない可能性があります。</br>\n複数のk-フォールド交差検証の場合、完全に独立したフォールドが作成されます。リストオブジェクトの名前は、\"Foldi.Repj\"というパターンを使用してフォールドメンバーシップを示します。これは、j番目の交差検証セット（times）のi番目のセクション（k）の意味です。この関数はlist = TRUEおよびreturnTrain = TRUEでcreateFoldsを呼び出します。</br>\nHyndmanとAthanasopoulos（2013）は、トレーニングセットとテストセットを時間的に移動させるローリング予測起源技術について説明しています。createTimeSlicesはこのタイプの分割のためのインデックスを作成できます。</br>\nグループk-フォールド交差検証の場合、データは、モデル化セットとホールドアウトセットの両方にグループが含まれないように分割されます。kの値に応じて、1つ以上のグループが除外される可能性があります。</br>\n<b>値</b><br/>\nトレーニングデータに対応する行位置整数のリストまたは行列。createTimeSlicesのサブサンプルは、各トレーニングサブサンプルの終了インデックスによって名前が付けられます。</br>\n<b>パッケージ</b></br>\ncaret</br>\nklaR</br>\n<b>ヘルプ</b></br>\nhelp(createDataPartition, package=\"caret\")\n        "
+  }
+}

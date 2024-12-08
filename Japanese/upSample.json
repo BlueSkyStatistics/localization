@@ -1,0 +1,12 @@
+{
+  "title": "アップサンプル",
+  "navigation": "サンプル, アップサンプル",
+  "downsample": "データセットの名前を入力してください",
+  "seed": "シードを設定",
+  "dependent": "アップサンプルする変数",
+  "help": {
+    "title": "アップサンプル",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>説明</b></br>\n不均衡データのアップサンプリング。upSampleは、クラス分布を等しくするために置換でサンプリングします\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 予測変数の行列またはデータフレーム\n</li>\n<li>\ny: クラスメンバーシップを持つ因子変数\n</li>\n<li>\nlist: 関数はlist(x, y)を返すべきか、それともxとyを結合すべきか？ TRUEの場合、出力はデータフレームに強制されます。\n</li>\n<li>\nyname: list = FALSEの場合、クラス列のラベル\n</li>\n</ul>\n<b>詳細</b></br>\n単純なランダムサンプリングが多数派クラスのダウンサンプリングに使用されます。少数派クラスのデータはそのまま残され、サンプルはダウンサンプリングされたバージョンで再順序付けされます。</br>\nアップサンプリングの場合、元のデータはそのまま残され、少数派クラスに置換で追加サンプルが追加されます。</br>\n<b>値</b><br/>\nデータフレームまたは要素xとyを持つリストのいずれかです。<br/>\n<b>例</b><br/>\n<code> \n## ばかげた例...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>パッケージ</b></br>\ncaret</br>\n<b>ヘルプ</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

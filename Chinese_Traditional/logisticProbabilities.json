@@ -1,0 +1,15 @@
+{
+  "title": "邏輯機率",
+  "navigation": "邏輯機率",
+  "varvals": "輸入變數值，以逗號分隔。例如：3,0.5",
+  "location": "位置",
+  "scale": "尺度",
+  "labelSig": "顯著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "邏輯機率",
+    "r_help": "help(plogis, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            密度、分佈函數、分位數函數和隨機生成的邏輯分佈，參數為位置和尺度。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dlogis(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                plogis(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數。如果長度(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>location, scale : 位置和尺度參數。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則機率p以log(p)表示。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（默認），則機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            如果省略位置或尺度，則默認值為0和1。\n            位置=m和尺度=s的邏輯分佈的分佈函數\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            和密度\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            這是一個長尾分佈，均值為m，方差為π^2 /3 s^2。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dlogis給出密度，plogis給出分佈函數，qlogis給出分位數函數，rlogis生成隨機偏差。\n            <br/>\n            結果的長度由rlogis的n決定，並且是其他函數數值參數的最大長度。\n            <br/>\n            除n以外的數值參數會回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            qlogis(p)與著名的“logit”函數相同，logit(p) = log(p/(1-p))，因此plogis(x)被稱為“反logit”。\n            <br/>\n            分佈函數是一個重新縮放的雙曲正切，plogis(x) == (1+ tanh(x/2))/2，在神經網絡等上下文中稱為sigmoid函數。\n            \n      "
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Durchsuchen Sie einen FrF2-Designkatalog (z. B. catlg)",
+  "navigation": "FrF2 Designkatalog durchsuchen",
+  "designCatalog": "Name des Designkatalogs (muss ein Objekt der Klasse catlg sein)",
+  "designNamefromCatalog": "Name des Designs im Katalog",
+  "numRuns": "Anzahl der Durchläufe (wenn mehr als einer, durch , trennen, z. B. 8,16,64)",
+  "numFactors": "Anzahl der Faktoren (wenn mehr als einer, durch , trennen, z. B. 4,5,11)",
+  "minResolution": "Minimale Designauflösung (z. B. geben Sie 3 für III, 4 für IV, 5 für V ein, ...)",
+  "MaxC2Chk": "Wenn nicht ausgewählt - Designs werden nach minimaler Aberration sortiert oder wenn ausgewählt - nach maximaler Anzahl klarer 2fis",
+  "showAliasChk": "Aliasstruktur anzeigen (bis zu 2fis)",
+  "maxNumberofDesignPrint": "Maximale Anzahl der Designs anzeigen",
+  "help": {
+    "title": "Durchsuchen Sie einen FrF2-Designkatalog (z. B. catlg)",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDurchsuchen/Überprüfen Sie Designelemente oder extrahieren Sie Informationen aus dem Designkatalog der Klasse catlg im FrF2-Paket\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

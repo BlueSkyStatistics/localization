@@ -1,0 +1,19 @@
+{
+  "title": "Empiler des ensembles de données",
+  "navigation": "Empiler",
+  "out": "Entrez le nom de l'ensemble de données empilé",
+  "in1": "Sélectionnez 2 ensembles de données ou plus",
+  "in2": "Sélectionnez le 2ème ensemble de données",
+  "label1": "Options d'empilage",
+  "label2": "Toutes les options ci-dessous nécessitent 2 ensembles de données avec exactement les mêmes noms de variables",
+  "bindrows": "Lier les lignes (empiler les ensembles de données tels quels, peut entraîner des lignes en double)",
+  "union": "Union (empiler les ensembles de données et supprimer les doublons exacts)",
+  "intersect": "Intersection (conserver les lignes communes aux deux ensembles de données)",
+  "setdiff": "Différence (conserver uniquement les lignes dans le 1er ensemble de données mais pas dans le 2ème)",
+  "id": "Si vous souhaitez suivre de quel ensemble de données provient chaque observation, spécifiez un nom pour cette variable ici. REMARQUE : La nouvelle variable est ajoutée au début de l'ensemble de données résultant.",
+  "help": {
+    "title": "Empiler des ensembles de données",
+    "r_help": "help(bind_rows, package=dplyr)",
+    "body": "\n            <b>Description</b></br>\nCette boîte de dialogue vous aidera à empiler 2 ensembles de données ou plus les uns sur les autres. Vous pouvez sélectionner l'une des options suivantes.<br/>\n1. Lier les lignes : empile les 2 ensembles de données ou plus exactement comme ils sont. Si un nom de variable est commun aux deux ensembles de données, les valeurs se rempliront comme vous vous y attendez. Si un ensemble de données A contient une variable appelée var1 qui n'est pas présente dans l'autre ensemble de données B, des NA apparaîtront dans la variable var1 pour toutes les lignes correspondant à l'ensemble de données B.<br/>\nToutes les options ci-dessous fonctionnent UNIQUEMENT sur 2 ensembles de données et nécessitent que les deux ensembles de données partagent les mêmes variables.<br/>\n2. Union : empile les ensembles de données et supprime les doublons<br/>\n3. Intersection : conserve les lignes communes aux deux<br/>\n4. Différence : conserve les lignes dans le 1er ensemble de données, pas dans le 2ème<br/>\nSelon l'option sélectionnée, les fonctions bind_rows, union, intersect et setdiff dans le package dplyr sont appelées.\nREMARQUE : vous pouvez suivre en option de quel ensemble de données provient l'observation originale. L'ID de l'ensemble de données (1er/2ème) est ajouté au début de l'ensemble de données contenant les résultats.<br/>\n<b>Package</b></br>\ndplyr</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette boîte de dialogue ou exécutez la commande suivante help(bind_rows, package=\"dplyr\") dans la fenêtre de syntaxe R\n            "
+  }
+}

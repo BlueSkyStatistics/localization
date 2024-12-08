@@ -1,0 +1,20 @@
+{
+  "title": "Stichprobengröße, Test für zwei Gruppen Überleben",
+  "navigation": "Überleben von zwei Gruppen",
+  "howtouse": "Um die Stichprobengröße zu berechnen: geben Sie die Power an\nUm die Power zu berechnen: geben Sie die Stichprobengröße an",
+  "n": "Stichprobengröße",
+  "power": "Power (0-1)",
+  "propgrp1": "Proportion der Stichprobe in Gruppe 1 (0-1)",
+  "propevent": "Proportion mit dem Ereignis (0-1)",
+  "hr": "Hazard Ratio, Gruppe 1 vs Gruppe 2",
+  "rsquared": "R-Quadrat zwischen Gruppe und anderen Kovariaten (0-1); geben Sie 0 für unadjustierten Test ein",
+  "siglevel": "Signifikanzniveau (0-1)",
+  "alternativeopt": "Alternativhypothese",
+  "twosided": "Zweiseitig",
+  "onesided": "Einseitig",
+  "help": {
+    "title": "Stichprobengröße, Test für zwei Gruppen Überleben",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen Test mit zwei Stichproben zum Überleben. Es berechnet die Stichprobengröße oder die Power, wenn der Benutzer das andere angibt, gegeben ein zu detektierendes Hazard Ratio.\nDie Berechnungen gehen von einem Cox-proportionalen Hazard-Modell aus.\n<br/><br/>\n<b>Stichprobengröße:</b> Geben Sie die Gesamtzahl der Probanden an\n<br/><br/>\n<b>Power:</b> Geben Sie die gewünschte Power der Studie an, d.h. die Wahrscheinlichkeit, dass der Test die Nullhypothese ablehnt, wenn die Alternativhypothese wahr ist.\n<br/><br/>\n<b>Proportion der Stichprobe in Gruppe 1:</b> Geben Sie die Proportion der Gesamtstichprobe an, die in Gruppe 1 ist. Die Proportion der Stichprobe in Gruppe 2 ist eins minus dieser Menge.\n<br/><br/>\n<b>Hazard Ratio, Gruppe 1 vs Gruppe 2:</b> Geben Sie das gewünschte Hazard Ratio an, das für Gruppe 1 im Verhältnis zu Gruppe 2 zu detektieren ist\n<br/><br/>\n<b>Proportion mit dem Ereignis:</b> Geben Sie die erwartete Proportion der Stichprobe mit dem Ereignis an (oder eins minus die Zensurproportion). Wenn Sie eine Wahrscheinlichkeit von 1 angeben, wird davon ausgegangen, dass es keine Zensur gibt.\n<br/><br/>\n<b>R-Quadrat zwischen Gruppe und anderen Kovariaten; geben Sie 0 für unadjustierten Test ein:</b> Geben Sie den R-Quadrat-Wert (quadratische multiple Korrelation) zwischen der Gruppierungsvariablen und \nallen anderen Kovariaten im Cox-Modell an. Ein Wert von 0 entspricht einem unadjustierten Test ohne andere Kovariaten.\n<br/><br/>\n<b>Signifikanzniveau:</b> Geben Sie das gewünschte Signifikanzniveau (d.h. Typ-I-Fehler) des Tests an\n<br/><br/>\nDies verwendet die Funktionen ssizeEpiCont.default und powerEpiCont.default im powerSurvEpi-Paket. Siehe Dreipunktmenü>Hilfe>R-Funktionshilfe für weitere Informationen.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> powerSurvEpi\n\t\t\t"
+  }
+}

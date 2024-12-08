@@ -1,0 +1,21 @@
+{
+  "title": "Faktorebenen nach Vorkommen neu anordnen",
+  "navigation": "Nach Vorkommen neu anordnen",
+  "target": "Faktorvariablen zur Neuordnung der Ebenen",
+  "label1": "Wählen Sie die Faktorvariablen aus, die nach dem Vorkommen der Daten in der Variablen neu angeordnet werden sollen. Sie können vorhandene Variablen überschreiben oder neue Variablen erstellen, indem Sie ein Präfix/Suffix angeben. Neue Variablen werden mit dem Präfix/Suffix an die vorhandenen Namen angehängt.",
+  "label2": "Neue Ebenen in neue Variable(n) speichern oder vorhandene Variable(n) überschreiben",
+  "rd3": "Geben Sie ein Suffix an (Eine neue Variable wird mit dem Suffix erstellt)",
+  "txt3": "Geben Sie ein Suffix ein",
+  "rd2": "Geben Sie ein Präfix an (Eine neue Variable wird mit dem Präfix erstellt)",
+  "txt4": "Geben Sie ein Präfix ein",
+  "rd1": "Vorhandene Variablen überschreiben",
+  "label3": "Eine Reihenfolge angeben",
+  "Descending": "In der Reihenfolge des Vorkommens",
+  "Ascending": "In umgekehrter Reihenfolge des Vorkommens",
+  "ordered": "Einen geordneten Faktor erstellen (ordinal)",
+  "help": {
+    "title": "NAs entfernen",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>Beschreibung</b></br>\nFaktorebenen nach dem ersten Auftreten (Vorkommen) neu anordnen. Siehe nach Häufigkeit neu anordnen für die Anordnung nach Häufigkeit/Zählung.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf: Ein Faktor\n</li>\n<li>\nordered: Ein logischer Wert, der den \"geordneten\" Status des Ausgabefaktors bestimmt. NA bewahrt den bestehenden Status des Faktors.\n</li>\n</ul>\n<b>Beispiele</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

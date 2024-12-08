@@ -1,0 +1,29 @@
+{
+  "helpText": "Analiza ANOVA cu măsuri repetate necesită ca datele să fie în format lung. Dacă datele tale nu sunt în format lung, vezi Seturi de date > ReShape > Mai lung",
+  "repMeasuresConfig": "Configurare",
+  "modelname": "Introduceți numele modelului",
+  "title": "ANOVA cu măsuri repetate - Larg",
+  "subjectID": "Specificați opțional o variabilă pentru a fi utilizată ca identificator al subiectului",
+  "dependentVariable": "Variabilă dependentă",
+  "navigation": "ANOVA, Măsuri repetate, Larg",
+  "response": "Variabilă(e) în cadrul subiectului, de exemplu, Timp",
+  "Fixed": "Factor între subiecți",
+  "covariates": "Covariate",
+  "Summary": "Mediile marginale estimate",
+  "Scatter_plot": "Posthocs",
+  "Residual": "Grafic rezidual vs. Ajustat",
+  "Histogram": "Grafic histogramă a rezidualelor",
+  "brownForsythe": "Testul Brown-Forsythe",
+  "levenesTest": "Testul Levene",
+  "plotMeansCI": "Grafic al mediilor și intervalelor de încredere",
+  "simpleEffectsTest": "Testul efectelor simple",
+  "label2": "Opțiuni pentru posthocs și testul efectelor simple",
+  "combon": "Compară mediile folosind:",
+  "adjust": "Metodă pentru ajustarea valorilor p",
+  "displayBoxMDetails": "Afișează detalii asociate cu testul Box's M (Notă: Rezultatele testului Box's M sunt întotdeauna afișate)",
+  "help": {
+    "title": "ANOVA cu măsuri repetate",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>Descriere</b></br>\nNOTĂ:<br/>\n1. Trebuie să remodelăm datele atunci când rulăm o ANOVA cu măsuri repetate pe un set de date larg<br/>\n2. Susținem măsuri repetate multiple pentru o singură variabilă, de exemplu, Glucoză în sânge măsurată la pretest, posttest și la o vizită de urmărire<br/>\n3. Trebuie să specificați un nume de factor repetat, de exemplu, Glucoză în sânge și numărul de niveluri. Vom crea o variabilă de factor, de exemplu, numită Glucoză în sânge cu niveluri create din numele variabilelor care conțin măsurile repetate, de exemplu, nivelurile factorului vor fi pretest, posttest și urmărire<br/>\n4. Trebuie să specificați un nume de măsură, de exemplu, Valoare. Vom crea o variabilă, de exemplu, Valoare cu toate valorile Glucozei în sânge corespunzătoare pretestului, posttestului și urmării pentru fiecare subiect.<br/>\n5. Susținem o singură variabilă de factor între subiecți și în cadrul subiecților.<br/>\n6. Versiunile viitoare vor susține măsuri multiple, precum și variabile de factor între subiecți și în cadrul subiecților multiple.<br/>\n7. În mod implicit, fiecare rând al setului de date corespunde unui subiect unic, de asemenea, puteți specifica o variabilă pentru ID-ul subiectului.</br>\n<br/>\nCu ANOVA cu măsuri repetate, statisticile F sunt calculate pentru fiecare factor în cadrul subiecților, factor între subiecți și termenul de interacțiune pentru ANOVA mixtă</br>\nCăutați tabelele suplimentare de valori ANOVA în ieșire care afișează MSE (media pătrată a erorii) și pes (eta pătrată parțială)</br>\nÎn prezent, susținem o singură variabilă de factor în cadrul subiecților și între subiecți, factorul între subiecți este opțional.</br>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"variabilaDependenta\", \n\tid = \"Identificator\", within = c(\"Timp\"), \tbetween = c(\"Tratament\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndata: Un data.frame care conține datele. Obligatoriu\n</li>\n<li>\ndv: vector de caractere (de lungime 1) care indică coloana care conține variabila dependentă în date.\n</li>\n<li>\nbetween: vector de caractere care indică factorii/coloanele între subiecți în date. Implicit este NULL, indicând că nu există factori între subiecți.\n</li>\n<li>\nwithin: vector de caractere care indică factorii/coloanele în cadrul subiecților (sau măsurile repetate) în date. Implicit este NULL, indicând că nu există factori în cadrul subiecților.\n</li>\n<li>\ncovariate: vector de caractere care indică covariatele între subiecți (adică, coloanele) în date. Implicit este NULL, indicând că nu există covariate. Vă rugăm să rețineți că factorize trebuie să fie setat pe FALSE în cazul în care covariata este numerică și ar trebui tratată ca atare.\n</li>\n<li>\nanovatable: listă de argumente suplimentare transmise funcției care produce tabelul ANOVA. \n</li>\n</ul>\n<br/>\n<b>Detalii</b></br>\nConsultați ajutorul detaliat R</br>\n<b>Valoare</b><br/>\naov_car, aov_4 și aov_ez sunt wrapper-uri pentru Anova și aov, valoarea returnată depinde de argumentul return. În mod implicit, un obiect S3 de clasă \"afex_aov\" este returnat conținând următoarele sloturi:<br/>\n\"anova_table\": Un tabel ANOVA de clasă c(\"anova\", \"data.frame\").<br/>\n\"aov\": obiect aov returnat din aov (nu ar trebui utilizat pentru a evalua semnificația efectelor, dar poate fi transmis la emmeans pentru teste post-hoc).<br/>\n\"Anova\": obiect returnat din Anova, un obiect de clasă \"Anova.mlm\" (dacă sunt prezente factori în cadrul subiecților) sau de clasă c(\"anova\", \"data.frame\").<br/>\n\"lm\": obiectul ajustat cu lm și transmis la Anova (adică, un obiect de clasă \"lm\" sau \"mlm\"). De asemenea, returnat dacă return = \"lm\".<br/>\n\"data\": o listă care conține: (1) lung (datele posibil agregate în format lung utilizate pentru aov), larg (datele utilizate pentru a ajusta obiectul lm) și idata (dacă sunt prezente factori în cadrul subiecților, argumentul idata transmis la car::Anova). De asemenea, returnat dacă return = \"data\".<br/>\n<b>Pachet</b></br>\nafex</br>\n<b>Ajutor</b></br>\nhelp(aov_ez, package ='afex')\nFaceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(aov_ez, package ='afex') și apăsa CTRL Enter în editorul de sintaxă R pentru a obține ajutor"
+  }
+}

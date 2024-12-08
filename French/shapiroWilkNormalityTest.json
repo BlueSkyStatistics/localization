@@ -1,0 +1,10 @@
+{
+  "title": "Test de normalité de Shapiro-Wilk",
+  "navigation": "Test de normalité de Shapiro-Wilk",
+  "tvarbox1": "Sélectionner des variables numériques",
+  "help": {
+    "title": "Test de normalité de Shapiro-Wilk",
+    "r_help": "help(shapiro.test, package=stats)",
+    "body": "\n<b>Description</b></br>\nEffectue le test de normalité de Shapiro-Wilk.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : un vecteur numérique de valeurs de données. Les valeurs manquantes sont autorisées, mais le nombre de valeurs non manquantes doit être compris entre 3 et 5000.\n</li>\n</ul>\n<b>Valeur</b><br/>\nUne liste de classe \"htest\" contenant les composants suivants :<br/>\nstatistic : la valeur de la statistique de Shapiro-Wilk.<br/>\np.value : une p-value approximative pour le test. Cela est dit dans Royston (1995) comme étant adéquat pour p.value < 0.1.<br/>\nmethod : la chaîne de caractères \"test de normalité de Shapiro-Wilk\".<br/>\ndata.name : une chaîne de caractères donnant le(s) nom(s) des données.<br/>\n<b>Package</b></br>\nstats</br>\n<b>Aide</b></br>\nhelp(shapiro.test, package=stats)\n"
+  }
+}

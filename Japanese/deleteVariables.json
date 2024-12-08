@@ -1,0 +1,10 @@
+{
+  "title": "変数を削除",
+  "navigation": "削除",
+  "trg": "削除される変数",
+  "help": {
+    "title": "NAを削除",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>説明</b></br>\nデータセット/データフレームから欠損値/NAを削除します\n選択した列/変数名の欠損値を含む行を削除することによって、新しいデータセットを作成または既存のデータセットを上書きします\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\n​object: Rオブジェクト。​\n</li>\n</ul>\n<b>パッケージ</b></br>\ndata.table</br>\n<b>ヘルプ</b></br>\nhelp(na.omit)\n"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "带标签的正态分布图",
+  "navigation": "带标签的正态分布图",
+  "mean": "均值",
+  "sd": "标准差",
+  "pdenfun": "绘制密度函数",
+  "pdstfun": "绘制分布函数",
+  "lblregions": "可选地通过以下方式指定密度函数下的区域",
+  "xvals": "x值",
+  "quantiles": "分位数",
+  "lblRegFill": "要填充的区域（指定一个或两个，或留空以选择x值或分位数选项）。将“从”字段留空以绘制左（下）尾，将“到”字段留空以绘制右（上）尾",
+  "lblreg1": "区域 1 :",
+  "lblreg2": "区域 2 :",
+  "lblregfrm": "从",
+  "lblregto": "到",
+  "lblregcol": "颜色",
+  "lowProbBound": "用于生成样本分布的概率下限",
+  "upperProbBound": "用于生成样本分布的概率上限",
+  "lblLegPos": "图例位置",
+  "toprt": "右上",
+  "toplt": "左上",
+  "topmid": "顶部中心",
+  "help": {
+    "title": "带标签的正态分布图",
+    "r_help": "help(qnorm, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            正态分布的密度、分布函数、分位数函数和随机生成，均值等于均值，标准差等于sd。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察数量。如果length(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>mean : 均值向量。</li>\n                \n                \n                <li>sd : 标准差向量。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为TRUE（默认），则概率为P[X ≤ x]，否则为P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            如果未指定均值或sd，则假定默认值为0和1。\n            <br/>\n            正态分布的密度为\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            其中μ是分布的均值，σ是标准差。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dnorm给出密度，pnorm给出分布函数，qnorm给出分位数函数，rnorm生成随机偏差。\n            <br/>\n            结果的长度由n决定，对于rnorm，结果的长度由其他函数的数值参数的最大长度决定。\n            <br/>\n            除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            对于sd = 0，这给出了sd减少到0时的极限，即在mu处的点质量。sd < 0是错误并返回NaN。            \n"
+  }
+}

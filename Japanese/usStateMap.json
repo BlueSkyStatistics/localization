@@ -1,0 +1,15 @@
+{
+  "title": "アメリカ州地図",
+  "navigation": "アメリカ州地図",
+  "region": "アメリカ州名の変数:",
+  "value": "地図にマッピングする値の変数:",
+  "colors": "色の数を入力してください",
+  "zoomByStates": "ズームインする州を入力してください。例：カリフォルニア、オレゴン、ワシントン",
+  "specify_a_title": "タイトルを入力してください",
+  "legend": "凡例:",
+  "help": {
+    "title": "アメリカ州地図",
+    "r_help": "help(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>説明</b></br>\n            州の地図を描画し、1つ以上の州にズームインするオプションを提供します\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: \"region\"という名前の列と\"value\"という名前の列を持つデータフレーム。\"region\"列の要素は、state.mapの\"region\"列に名前が一致する必要があります。以下の他のセクションのコマンドを実行してstate.mapデータセットにアクセスしてください\n            </li>\n            <li>\n            タイトル: 地図のオプションのタイトル。\n            </li>\n            <li>\n            凡例: 凡例のオプションの名前。\n            </li>\n            <li>\n            num_colors: 地図上の色の数。1の値は連続スケールを使用します。[2, 9]の値はその数の色を使用します。\n            </li>\n            <li>\n            zoom: ズームインする州のオプションのベクトル。このベクトルの要素は、?state.regionsの\"region\"列に表示される州の名前と正確に一致する必要があります。\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>ヘルプ</b></br>\n            help(state_choropleth, package='choroplethr')</br>\n            <b>その他</b></br>\n            <code> \n            # 以下のコードを実行してstate.mapデータセットにアクセスします<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+  }
+}

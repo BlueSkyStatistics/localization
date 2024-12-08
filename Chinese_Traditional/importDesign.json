@@ -1,0 +1,11 @@
+{
+  "title": "導入設計 - 必須是帶有附加響應列的 csv 文件，該響應列來自之前導出的設計",
+  "navigation": "導入設計響應",
+  "datasetname": "用於創建帶有響應的設計的名稱",
+  "importResp": "設計文件的文件路徑（必須是 csv 文件），該文件包含響應列",
+  "help": {
+    "title": "將響應導入現有設計",
+    "r_help": "help(add.response, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t導入帶有附加響應列的設計 csv 文件，即從之前導出的原始設計中進行的實驗結果的編碼\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t導入 csv 文件到已在數據集 UI 網格中打開的設計的目的是自動將 csv 文件中的響應列添加到 UI 網格中的設計中，並創建一個指定名稱的新設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一旦創建了帶有響應列的新設計 - 可以使用 DOE -> 分析設計菜單下的各種分析方法進行分析\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t此外，可以通過 DOE -> 修改設計 -> 添加/移除響應菜單來指定/取消指定一個或多個響應列\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果所需的設計尚未在數據集 UI 網格中打開，請使用文件打開菜單，將之前使用“導出設計”菜單導出的設計 R 對象 (.rda 文件) 加載到文件系統的目錄中。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如需更多信息 - 請使用 R help(add.response, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

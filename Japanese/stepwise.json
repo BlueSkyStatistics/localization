@@ -1,0 +1,22 @@
+{
+  "title": "ステップワイズ",
+  "navigation": "ステップワイズ",
+  "label1": "次のクラスのいずれかのモデルを選択してください。（Rクラスは以下に括弧で示されています）",
+  "label2": "線形モデル (lm)、一般化線形モデル (glm)、順序ロジスティック/プロビット回帰 (polr)、フィードフォワードニューラルネットワークおよび多項ロジスティック回帰モデル (nnet)",
+  "label3": "**注意: ステップワイズはモデル > チューニング (train) によって構築されたモデルには機能しません",
+  "label4": "**注意: ステップワイズは多項ロジスティック回帰モデル (multinom) には、Rパッケージの著者に提起した互換性の問題のため機能しません",
+  "modelselector1": "モデルを選択",
+  "label5": "方向",
+  "backforward": "後方/前方",
+  "forwardback": "前方/後方",
+  "backward": "後方",
+  "forward": "前方",
+  "aic": "AIC (ペナルティの自由度 k = 2 に使用される)",
+  "bic": "BIC (モデルマトリックスの行数の対数に対してペナルティ k = log(no of rows in model matrix) に使用される) 注意: BICが選択されている場合でも出力はAICを表示します)",
+  "label6": "基準",
+  "help": {
+    "title": "ステップワイズ",
+    "r_help": "help(stepwise, package='RcmdrMisc')",
+    "body": "\n            <b>説明</b></br>\nこの関数は、RcmdrMiscパッケージの「stepwise」関数のフロントエンドです。これは、MASSパッケージのstepAIC関数のフロントエンドでもあります。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"backward/forward\", \"forward/backward\", \"backward\", \"forward\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nmod : stepAICで処理できるクラスのモデルオブジェクト。\n</li>\n<li>\ndirection : \"backward/forward\"（デフォルト）の場合、選択はフルモデルから始まり、各ステップで前のステップで削除された変数を追加することで基準が改善されるかどうかを考慮しながら、予測子を1つずつ削除します; \"forward/backwards\"の場合、選択は定数のみを含むモデルから始まり、各ステップで以前に追加された変数を削除することで基準が改善されるかどうかを考慮しながら、予測子を1つずつ追加します; \"backwards\"と\"forward\"は、各ステップでの再考なしに類似しています。\n</li>\n<li>\ncriterion : 選択のため。\"BIC\"（デフォルト）または\"AIC\"のいずれか。stepAICは、どの基準が使用されているかに関係なく、出力で基準を\"AIC\"としてラベル付けします。\n</li>\n<li>\n... : stepAICに渡される引数。\n</li>\n</ul>\n<b>値</b><br/>\nstepAICによって選択されたモデル。<br/>\n<b>パッケージ</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(stepwise, package=\"RcmdrMisc\")\n"
+  }
+}

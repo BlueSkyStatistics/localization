@@ -1,0 +1,25 @@
+{
+  "title": "Grafic Strip",
+  "navigation": "Grafic Strip",
+  "x": "Variabila X, specificați o variabilă numerică",
+  "y": "Variabila Y, specificați o variabilă numerică (s)",
+  "Fill": "Culoare, specificați o variabilă factor",
+  "size": "Faceți dimensiunea punctului proporțională cu",
+  "shape": "Formă",
+  "alpha": "Opacitate (0-1)",
+  "flipaxis": "Răsturnați axa",
+  "jitter": "Aplicați efectul jitter",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare fațete",
+  "Facetscale": "Scală fațete",
+  "facets_lbl" : "Fațete",
+  "help": {
+    "title": "Grafic Strip",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>Descriere</b></br>\n            Un grafic strip este cel mai simplu tip de grafic disponibil. Acesta plasează datele în ordine de-a lungul unei linii, fiecare punct de date fiind reprezentat ca o cutie. Forma punctului depinde de nivelurile variabilei factor (x). Punctele pot fi opțional grupate după o variabilă factor (y). Fațetele pot fi opțional create specificând o variabilă factor.</br>\n            De asemenea, puteți specifica opțional teme și un titlu și etichete pentru axele x și y.</br>\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            aes(): Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            x: variabila de grupare. Forma punctului depinde de nivelurile variabilei factor​\n            </li>\n            <li>\n            y: variabila pentru care sunt plasate punctele​\n            </li>\n            <li>\n            color: o variabilă factor opțională pentru a grupa punctele (după culoare)​\n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (Aceasta este opțională)​\n            </li>\n            <li>\n            facet_grid(): Aranjați panourile într-o grilă (Aceasta este opțională)​\n            </li>\n            <li>\n            theme_calc(): Specifică tema calculatorului (Aceasta este opțională)​\n            </li>\n            <li>\n            geom_jitter(): Geom jitter este un default convenabil pentru geom_point cu poziția = 'jitter'. Consultați position_jitter pentru a vedea cum să ajustați cantitatea de jittering.\n            </li>\n            <li>\n            coord_flip(): Răsturnați axa (Aceasta este opțională)​\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajutor</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "使用公式填补缺失值",
+  "navigation": "使用公式",
+  "depVar": "选择一个变量以填补缺失值（这是模型中的因变量）",
+  "label1": "将自变量移动到公式构建器控件中以构建公式。将鼠标悬停在公式构建器中的符号上以获取帮助",
+  "formula": "使用移动按钮移动多个变量时，默认分隔符为 +，表示没有交互项的自变量。单击符号以构建带有交互项的模型。",
+  "independent": "自变量（一个或多个）",
+  "help": {
+    "title": "使用公式填补缺失值",
+    "r_help": "help(if_else,package='dplyr')",
+    "body": "\n            <b>描述</b></br>\n            构建一个公式来替换缺失值。例如，您可以构建一个回归模型来为缺失值生成估计，一旦生成方程，您可以将方程插入对话框中，只有所选变量中的缺失值将被计算。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # 用 var2*4+1.32 替换表达式<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            var: 数据集中要替换缺失值的变量名称，例如 var=c(\"sales\")。该变量必须为数值型\n            </li>\n            <li>\n            Dataset: 包含变量 var 的数据集/数据框\n            </li>\n            <li>\n            expression: 用于替换缺失值的表达式，在上面的示例中为 var2*4+1.32\n            </li>\n            </ul>\n            <b>包</b></br>\n            dplyr</br>\n            <b>帮助</b></br>\n            要获取详细帮助，请单击此对话框覆盖右上角的 R 图标，或通过在输出窗口中单击 + 创建 R 代码块并运行以下命令 help(if_else, package ='dplyr')\n            "
+  }
+}

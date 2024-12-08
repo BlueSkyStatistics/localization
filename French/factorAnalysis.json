@@ -1,0 +1,31 @@
+{
+  "title": "Analyse Factorielle",
+  "navigation": "Facteur",
+  "destination": "Sélectionner des variables",
+  "label1": "Extraction de facteurs",
+  "factorextraction1": "Extraire automatiquement des facteurs",
+  "factorextraction2": "Spécifier le nombre de facteurs à extraire",
+  "noOfFactors": "Entrez le nombre de facteurs à extraire",
+  "screeplot": "Screeplot",
+  "label2": "Scores de Facteurs",
+  "saveScores": "Enregistrer les scores de facteurs dans le jeu de données",
+  "scores1": "Méthode de Bartlett, entrez un préfixe de nom de variable",
+  "scores2": "Méthode de régression, entrez un préfixe de nom de variable",
+  "varForScores": "Entrez le préfixe de nom de variable pour les scores :",
+  "label3": "Options de Rotation",
+  "grpBox21": "Aucun",
+  "grpBox22": "Varimax",
+  "grpBox23": "Promax",
+  "grpBox24": "BentlerQ",
+  "grpBox25": "Quartimax",
+  "grpBox26": "Oblimin",
+  "grpBox27": "GeominQ",
+  "grpBox28": "GeominT",
+  "grpBox29": "Simplimax",
+  "parallel": "Analyse parallèle",
+  "help": {
+    "title": "Analyse Factorielle",
+    "r_help": "help(factanal, package ='stats')",
+    "body": "\n<b>Description</b></br>\n​Effectuer une analyse factorielle par maximum de vraisemblance sur une matrice de covariance ou une matrice de données et génère un screeplot. Appelle la fonction factanal dans le package stats.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvars : Une ou plusieurs variables numériques à partir desquelles extraire des facteurs.\n</li>\n<li>\nautoextraction : Déterminer automatiquement le nombre de facteurs ou extraire des nombres spécifiques de facteurs.\n</li>\n<li>\nscreeplot : Si TRUE, génère un screeplot.\n</li>\n<li>\nrotation : Déterminer le type de rotation et prend l'une des valeurs (aucun, quartimax, geominT, varimax, oblimin, simplimax, promax, geominQ et bentlerQ)\n</li>\n<li>\nsaveScores : Enregistre les scores de facteurs dans le jeu de données\n</li>\n<li>\ndataset : Le jeu de données à partir duquel les 'vars' ont été sélectionnées.\n</li>\n</ul>\n<b>Détails</b></br>\nUn objet de classe \"factanal\" avec des composants</br>\nloadings : Une matrice de chargements, une colonne pour chaque facteur. Les facteurs sont ordonnés par ordre décroissant des sommes des carrés des chargements, et donnés le signe qui rendra la somme des chargements positive. Ceci est de classe \"loadings\" : voir loadings pour sa méthode d'impression.</br>\nuniquenesses : Les unicités calculées.</br>\ncorrelation : La matrice de corrélation utilisée.</br>\ncriteria : Les résultats de l'optimisation : la valeur du critère (une fonction linéaire de la log-vraisemblance négative) et des informations sur les itérations utilisées.</br>\nfactors : L'argument facteurs.</br>\ndof : Le nombre de degrés de liberté du modèle d'analyse factorielle.</br>\nmethod : La méthode : toujours \"mle\".</br>\nrotmat : La matrice de rotation si pertinent.</br>\nscores : Si demandé, une matrice de scores. napredict est appliqué pour gérer le traitement des valeurs omises par la na.action.</br>\nn.obs : Le nombre d'observations si disponible, ou NA.</br>\ncall : L'appel correspondant.</br>\nna.action : Si pertinent.</br>\nSTATISTIC, PVAL : La statistique de test de signification et la valeur P, si elle peut être calculée.</br>\n<b>Package</b></br>\nstats</br>\n<b>Aide</b></br>\nhelp(factanal, package ='stats')\n"
+  }
+}

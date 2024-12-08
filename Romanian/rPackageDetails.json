@@ -1,0 +1,10 @@
+{
+  "title": "Detalii Pachet R",
+  "navigation": "Detalii pachet",
+  "packageName": "Selectați un pachet R instalat",
+  "help": {
+    "title": "Detalii Pachet R",
+    "r_help": "help(packageDescription, package='utils')",
+    "body": "\n<b>Descriere</b></br>\nAfișează descrierea pachetului selectat\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \npackageDescription(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\npkg: un șir de caractere cu numele pachetului.\n</li>\n<li>\nlib.loc: un vector de caractere cu numele directoarelor bibliotecilor R, sau NULL. Valoarea implicită NULL corespunde tuturor bibliotecilor cunoscute în prezent. Dacă se folosește valoarea implicită, pachetele și spațiile de nume încărcate sunt căutate înaintea bibliotecilor.\n</li>\n<li>\nfields: un vector de caractere care oferă etichetele câmpurilor de returnat (dacă alte câmpuri apar în fișier, acestea sunt ignorate).\n</li>\n<li>\ndrop: Dacă este TRUE și lungimea câmpurilor este 1, atunci un singur șir de caractere cu valoarea câmpului respectiv este returnat în locul unui obiect de clasă \"packageDescription\".\n</li>\n</ul>\n<b>Detalii</b></br>\nDescrierea pachetului</br>\n<b>Exemple</b><br/>\n<code> \npackageDescription(\"stats\")\n</code> <br/>\n<b>Pachet</b></br>\nutils</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă în editorul de sintaxă R help(packageDescription, package='utils')\n                "
+  }
+}

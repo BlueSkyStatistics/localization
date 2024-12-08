@@ -1,0 +1,10 @@
+{
+  "title": "Test de Kolmogorov-Smirnov de normalité",
+  "navigation": "Test de normalité de Kolmogorov-Smirnov",
+  "trg": "Variables cibles",
+  "help": {
+    "title": "Test de Kolmogorov-Smirnov de normalité",
+    "r_help": "help(ks.test, package=stats)",
+    "body": "\n<b>Description</b></br>\nTest de Kolmogorov-Smirnov pour la conformité à une distribution normale \n<br/>\n<b>Utilisation</b>\n<br/>\n<code>\nks.test(x, y =\"pnorm\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : Un vecteur numérique de valeurs de données.\n</li>\n<li>\ny : une chaîne de caractères nommant une fonction de distribution cumulative ou une fonction de distribution cumulative réelle telle que pnorm. Seules les CDF continues sont valides..\n</li>\n</ul>\n<b>Détails</b></br>\nDans ce cas, un test à un échantillon est effectué sur l'hypothèse nulle selon laquelle la fonction de distribution qui a généré x est la distribution y (c'est-à-dire la distribution normale).<br/>\nLa présence de valeurs identiques génère toujours un avertissement, car les distributions continues ne les génèrent pas. Si les valeurs identiques proviennent d'un arrondi, les tests peuvent être approximativement valides, mais même de modestes quantités d'arrondi peuvent avoir un effet significatif sur la statistique calculée.<br/>\nLes valeurs manquantes sont silencieusement omises de x. </br>\n<b>Valeur</b><br/>\nUne liste avec la classe “htest” contenant les composants suivants :<br/>\n<ul>\n<li>\nstatistic : la valeur de la statistique de test.\n</li>\n<li>\np.value : valeur p du test.\n</li>\n</ul>\n<b>Paquet</b></br>\nstats</br>\n<b>Aide</b></br>\nhelp(ks.test, package =stats)\n"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Faktoranalyse",
+  "navigation": "Faktor",
+  "destination": "Variablen auswählen",
+  "label1": "Faktorextraktion",
+  "factorextraction1": "Faktoren automatisch extrahieren",
+  "factorextraction2": "Anzahl der zu extrahierenden Faktoren angeben",
+  "noOfFactors": "Geben Sie die Anzahl der zu extrahierenden Faktoren ein",
+  "screeplot": "Screeplot",
+  "label2": "Faktorwerte",
+  "saveScores": "Faktorwerte im Datensatz speichern",
+  "scores1": "Bartletts Methode, geben Sie ein Variablenname-Präfix ein",
+  "scores2": "Regressionsmethode, geben Sie ein Variablenname-Präfix ein",
+  "varForScores": "Geben Sie das Variablenname-Präfix für die Werte ein:",
+  "label3": "Rotationsoptionen",
+  "grpBox21": "Keine",
+  "grpBox22": "Varimax",
+  "grpBox23": "Promax",
+  "grpBox24": "BentlerQ",
+  "grpBox25": "Quartimax",
+  "grpBox26": "Oblimin",
+  "grpBox27": "GeominQ",
+  "grpBox28": "GeominT",
+  "grpBox29": "Simplimax",
+  "parallel": "Parallelanalyse",
+  "help": {
+    "title": "Faktoranalyse",
+    "r_help": "help(factanal, package ='stats')",
+    "body": "\n<b>Beschreibung</b></br>\n​Führen Sie eine Maximum-Likelihood-Faktoranalyse auf einer Kovarianzmatrix oder Datenmatrix durch und erstellen Sie ein Screeplot. Ruft die Funktion factanal im stats-Paket auf.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: Eine oder mehrere numerische Variablen, aus denen Faktoren extrahiert werden sollen.\n</li>\n<li>\nautoextraction: Bestimmen Sie automatisch die Anzahl der Faktoren oder extrahieren Sie spezifische Zahlen von Faktoren.\n</li>\n<li>\nscreeplot: Wenn TRUE, wird ein Screeplot generiert.\n</li>\n<li>\nrotation: Bestimmen Sie die Art der Rotation und wählen Sie einen der Werte (keine, quartimax, geominT, varimax, oblimin, simplimax, promax, geominQ und bentlerQ)\n</li>\n<li>\nsaveScores: Speichert die Faktorwerte im Datensatz\n</li>\n<li>\ndataset: Der Datensatz, aus dem die 'vars' ausgewählt wurden.\n</li>\n</ul>\n<b>Details</b></br>\nEin Objekt der Klasse \"factanal\" mit Komponenten</br>\nloadings: Eine Matrix der Ladungen, eine Spalte für jeden Faktor. Die Faktoren sind in absteigender Reihenfolge der Quadratsummen der Ladungen angeordnet und erhalten das Vorzeichen, das die Summe der Ladungen positiv macht. Dies ist der Klasse \"loadings\": siehe Ladungen für seine Druckmethode.</br>\nuniquenesses: Die berechneten Einzigartigkeiten.</br>\ncorrelation: Die verwendete Korrelationsmatrix.</br>\ncriteria: Die Ergebnisse der Optimierung: der Wert des Kriteriums (eine lineare Funktion der negativen Log-Likelihood) und Informationen zu den verwendeten Iterationen.</br>\nfactors: Das Argument Faktoren.</br>\ndof: Die Anzahl der Freiheitsgrade des Faktoranalysemodells.</br>\nmethod: Die Methode: immer \"mle\".</br>\nrotmat:\tDie Rotationsmatrix, falls relevant.</br>\nscores: Wenn angefordert, eine Matrix der Werte. napredict wird angewendet, um die Behandlung von Werten zu handhaben, die durch die na.action weggelassen wurden.</br>\nn.obs: Die Anzahl der Beobachtungen, falls verfügbar, oder NA.</br>\ncall: Der übereinstimmende Aufruf.</br>\nna.action: Falls relevant.</br>\nSTATISTIC, PVAL: Der Signifikanz-Teststatistik und P-Wert, falls er berechnet werden kann.</br>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nhelp(factanal, package ='stats')\n"
+  }
+}

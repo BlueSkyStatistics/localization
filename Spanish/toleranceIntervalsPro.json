@@ -1,0 +1,23 @@
+{
+  "title": "Intervalos de Tolerancia",
+  "navigation": "Intervalos de Tolerancia",
+  "label1": "Seleccione una función de distribución que se ajuste mejor a los datos",
+  "variableSelcted": "Seleccione una variable (datos observados) para analizar",
+  "x": "El número de unidades defectuosas (o aceptables) en la muestra",
+  "m": "La cantidad producida en grupos futuros",
+  "alpha": "Intervalo de confianza (por ejemplo, 0.95)",
+  "P": "Porcentaje mínimo (especifique un valor entre 0 y 1) de la población en el intervalo",
+  "side": "Se requiere un intervalo de tolerancia de 1 lado o 2 lados (tipo 1 o 2)",
+  "method": "El método para calcular los factores k (solo aplicable para Normal, Log Normal, Gamma)",
+  "selectDistFuncNormalRad": "Normal",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponencial",
+  "selectDistFuncGammaRad": "Gamma",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncCauchyRad": "Cauchy",
+  "help": {
+    "title": "Intervalos de Tolerancia",
+    "r_help": "help(normtol.int, package = tolerance)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para calcular intervalos de tolerancia \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(package = 'tolerance'), help(normtol.int, package = tolerance), help(exttol.int, package = tolerance)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl método para calcular los factores k\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl método para calcular los factores k solo es aplicable para distribuciones Normal, Log Normal y Gamma. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                El factor k para los intervalos de tolerancia de 1 lado se realiza exactamente y\n\t\t\t\tpor lo tanto es el mismo para el método elegido. \"HE\" es el método Howe y a menudo se considera extremadamente preciso, \n\t\t\t\t<br/>\n\t\t\t\teven para tamaños de muestra pequeños. \"HE2\" es un segundo método debido a Howe, que funciona de manera similar al método Weissberg-Beatty\n\t\t\t\t<br/>\n\t\t\t\tpero es computacionalmente más simple. \"WBE\" es el método Weissberg-Beatty (también llamado método Wald-Wolfowitz),\n\t\t\t\t<br/>\n\t\t\t\tque funciona de manera similar al primer método Howe para tamaños de muestra más grandes. \"ELL\" es la corrección de Ellison al\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\tmétodo Weissberg-Beatty cuando f es apreciablemente mayor que n^2. Se muestra un mensaje de advertencia si f no es mayor\n\t\t\t\t<br/>\n\t\t\t\tque n^2. \"KM\" es la aproximación de Krishnamoorthy-Mathew a la solución exacta, que funciona bien para tamaños de muestra más grandes.\n\t\t\t\t<br/>\n\t\t\t\t\"EXACTO\" calcula el factor k exactamente encontrando la solución integral al problema a través de la función integrar.\n\t\t\t\t<br/>\n\t\t\t\tTenga en cuenta que el tiempo de cálculo de este método está determinado en gran medida por m. \"OCT\" es el enfoque de Owen para calcular el factor k\n\t\t\t\t<br/>\n\t\t\t\tcuando se controlan las colas para que no haya más de (1-P)/2 de los datos en cada cola de la distribución.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado tolerance.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo \n\t\t\t\t<br/>\n\t\t\t\tElija ND a variable(observado..), \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

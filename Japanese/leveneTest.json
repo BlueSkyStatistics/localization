@@ -1,0 +1,14 @@
+{
+  "title": "レビーンのテスト",
+  "navigation": "レビーンのテスト",
+  "tvarbox1": "応答変数（1つ）",
+  "tvarbox3": "因子変数",
+  "label1": "中心",
+  "median": "中央値",
+  "mean": "平均",
+  "help": {
+    "title": "レビーンのテスト",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>説明</b></br>\nグループ間の分散の均一性のためのレビーンのテストを計算します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## 'formula' クラスの S3 メソッド<br/>\nleveneTest(y, data, ...)<br/>\n## 'lm' クラスの S3 メソッド<br/>\nleveneTest(y, ...)<br/>\n## デフォルトの S3 メソッド:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ny: デフォルトメソッドの応答変数、または lm または formula オブジェクト。y が線形モデルオブジェクトまたは式の場合、モデルの右側の変数はすべて因子であり、完全に交差している必要があります。\n</li>\n<li>\ngroup: グループを定義する因子。\n</li>\n<li>\ncenter: 各グループの中心を計算する関数の名前; mean は元のレビーンのテストを提供し、デフォルトの median はより堅牢なテストを提供します。\n</li>\n<li>\ndata: 式を評価するためのデータフレーム。\n</li>\n<li>\n...: 引数を渡すために使用される、例えば、式と lm メソッドのデータ; center によって与えられた関数に引数を渡すためにも使用できます（例: center=mean および trim=0.1 は 10% 切り捨てた平均を指定します）。\n</li>\n</ul>\n<b>値</b><br/>\nテストの結果を示す印刷用のオブジェクトを返します。<br/>\n<b>例</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>パッケージ</b></br>\ncar;moments;dplyr</br>\n<b>ヘルプ</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

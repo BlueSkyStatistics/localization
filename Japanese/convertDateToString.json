@@ -1,0 +1,17 @@
+{
+  "title": "日付変数を文字列に変換",
+  "navigation": "日付から文字列へ",
+  "label1": "変換された変数の接尾辞または接頭辞を選択してください",
+  "suffix": "接尾辞",
+  "prefix": "接頭辞",
+  "prefixOrSuffix": "接頭辞または接尾辞を入力してください",
+  "Destination": "文字列に変換する日付変数を選択してください",
+  "DateFormat": "変換する日付形式を選択してください",
+  "TimeZone": "タイムゾーンを選択してください（デフォルト - 何も選択されていない場合はPCのローカルタイムゾーン）",
+  "advanced_lbl" : "高度 (こうど)",
+  "help": {
+    "title": "日付を文字列に変換",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>説明</b></br>\n日付（posixctおよびdateクラス）を文字列に変換します - 日付が表示される形式を制御します。文字列が生成される形式、すなわち年/月/日または月-日=年などを入力として指定します。\n上記の関数は内部的にbaseパッケージのstrftimeを呼び出します。複数の変数をサポートするためにstrftimeを拡張しました。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\n​data: データセット名\n</li>\n<li>\nvarNames: 文字列に変換する必要があるposixctおよびdateクラスの変数​\n</li>\n<li>\ndateFormat: 文字列。フォーマットメソッドのデフォルトは、時間成分が真夜中でない場合は \"%Y-%m-%d %H:%M:%S\"、それ以外の場合は \"%Y-%m-%d\" です。options(\"digits.secs\") が設定されている場合、指定された桁数まで秒が印刷されます\n</li>\n<li>\ntimezone: 変換に使用するタイムゾーンを指定する文字列。システム固有（as.POSIXltを参照）、ただし \"\" は現在のタイムゾーンであり、\"GMT\" はUTCです。無効な値は最も一般的にUTCとして扱われ、一部のプラットフォームでは警告が表示されます。\n</li>\n<li>\nprefixOrSuffix: 新しい文字列変数の接頭辞または接尾辞を指定します。c(\"prefix\") または c(\"suffix\") のいずれかを取ります。この接頭辞/接尾辞を元の変数名に付けた新しい変数が作成されます。\n</li>\n</ul>\n<b>パッケージ</b></br>\nbase</br>\n<b>ヘルプ</b></br>\nhelp(strftime)    \n"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "navigation": "因素僅（舊版）",
+  "title": "摘要，僅因素",
+  "subsetvars": "反應變數，2個或更多",
+  "ChkboxShowOnlyTopFewFactors": "僅顯示前N個因素級別的計數",
+  "txtNumTopFactorsToShow": "輸入N的值",
+  "label1": "注意：當復選框未選中時，將顯示所有級別的計數。如果您有許多因素級別，這可能需要相當長的時間",
+  "help": {
+    "title": "僅因素",
+    "r_help": "",
+    "body": "\n<b>描述</b></br>\n顯示每個因素變數的每個級別的計數。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 要顯示級別計數的因素變數\n</li>\n<li>\ndata: 數據集名稱\n</li>\n<li>\nshow.only.top.factors: 一個布爾值，決定是否僅顯示頂級級別的計數或所有級別的計數。\n</li>\n<li>\nmax.number.top.factors: 如果show.only.top.factors = TRUE，指定要顯示計數的級別數\n</li>\n</ul>\n"
+  }
+}

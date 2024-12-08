@@ -1,0 +1,15 @@
+{
+  "title": "Automatisch generierte Faktordetails (gleiche Größe) für eine DoE-Studie",
+  "navigation": "Faktordetails (gleiche Größe)",
+  "datasetname": "Name der Faktordetailtabelle",
+  "numOfVars": "Anzahl der Faktoren",
+  "numOfFactorLevels": "Maximale Anzahl der Ebenen unter den Faktoren",
+  "factorLevels": "Ebenenwerte durch ein Komma getrennt - Beispiel: -1, 1, 'string1', 2, 0",
+  "autoFillChkbx": "Ebenen automatisch ausfüllen",
+  "label1": "Ignorieren Sie die folgende Option - Datenbereinigungsoption für späteren Gebrauch",
+  "convertFactorToCharInt": "Für das ausgewählte aktive Dataset - konvertieren Sie alle Spalten des Faktortyps in Zeichen oder Ganzzahlen (und wenn diese Option ausgewählt ist, werden alle oben genannten Optionen in dieser Benutzeroberfläche ignoriert)",
+  "help": {
+    "title": "Automatisch generierte Faktordetails",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tAutomatisch wird eine Tabelle mit Faktordetails basierend auf den angegebenen Parametern generiert - Anzahl der Faktoren und die maximalen Ebenen für die Faktoren zusammen mit den Standardwerten für den zu verwendenden Faktor. Wenn nicht numerische Werte für den Faktor verwendet werden, geben Sie diese in einfachen Anführungszeichen an, z. B. 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSobald die Faktordetails automatisch generiert wurden und die Faktortabelle im Datenraster-UI angezeigt wird, können Sie die Werte ändern und/oder einige Werte aus dem Raster entfernen, um die Tabelle nach Ihren Wünschen zu manipulieren, einschließlich Faktoren mit unterschiedlichen Anzahl von Werten \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tWenn die Anzahl der Faktoren <= 26 ist, werden die Faktoren mit Großbuchstaben als A, B, C, .. benannt, andernfalls als F1, F2, ..., F27, F28, ..\n\t\t\t"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Ajouter/Retirer des variables de réponse - vérifiez d'abord la liste des variables de réponse existantes avec le DOE -> Menu Inspecter le design",
+  "navigation": "Ajouter/Retirer une réponse",
+  "subsetvars": "Sélectionner les variables de réponse",
+  "help": {
+    "title": "Ajouter/Retirer des variables de réponse",
+    "r_help": "aide(response.names, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tPour désigner une ou plusieurs variables comme variables de réponse pour le design \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R aide(response.names, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

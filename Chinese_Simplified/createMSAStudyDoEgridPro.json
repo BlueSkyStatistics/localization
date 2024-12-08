@@ -1,0 +1,30 @@
+{
+  "title": "为MSA量具研究创建实验表",
+  "navigation": "设计MSA研究",
+  "datasetname": "MSA量具研究表名称",
+  "label1": "零件详情",
+  "label2": "操作员详情",
+  "factor1": "零件变量名称（例如，默认零件）",
+  "numOfFactorLevels1": "零件数量",
+  "factorLevels1": "留空以自动生成值或指定值 - 示例：-1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "如果自动生成，请指定任何前缀。如果留空，将生成值为1,2,3,..",
+  "factor2": "操作员变量名称（例如，默认操作员）",
+  "numOfFactorLevels2": "操作员数量",
+  "factorLevels2": "留空以自动生成值或指定值 - 示例：-1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "如果自动生成，请指定任何前缀。如果留空，将生成值为1,2,3,..",
+  "numOfBlocks": "块数",
+  "replicationVarName": "如果不留空，复制迭代变量的名称（如果复制 > 1）",
+  "replications": "复制",
+  "repeatOnlyChk": "仅重复（而不是实际复制 - 不推荐）",
+  "randomizationChk": "随机化运行",
+  "selectRandomSeedRad": "自动生成随机种子（每次唯一）",
+  "selectFixedRandomSeedRad": "按所示选择或手动更改以下随机种子",
+  "lbl1": "您可能不需要更改随机化种子值",
+  "randomseeds": "随机化种子",
+  "sortByOperatorChk": "在每次复制中按操作员排序",
+  "help": {
+    "title": "为MSA量具研究自动生成实验表",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t自动生成MSA研究表，以根据指定的参数设置实验运行的零件和操作员详情。\n\t\t\t\t如果对零件和操作员使用非数字值，请在单引号内指定，例如1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一旦实验运行详情自动生成，运行表将显示在数据网格UI上。\n\t\t\t\t运行表可以保存（或从文件菜单中选择“另存为”）以创建Excel文件，用于设置实验\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

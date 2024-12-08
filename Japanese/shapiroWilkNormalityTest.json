@@ -1,0 +1,10 @@
+{
+  "title": "シャピロ・ウィルク正規性検定",
+  "navigation": "シャピロ・ウィルク正規性検定",
+  "tvarbox1": "数値変数を選択",
+  "help": {
+    "title": "シャピロ・ウィルク正規性検定",
+    "r_help": "help(shapiro.test, package=stats)",
+    "body": "\n<b>説明</b></br>\nシャピロ・ウィルク正規性検定を実行します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: データ値の数値ベクトル。欠損値は許可されますが、非欠損値の数は3から5000の間でなければなりません。\n</li>\n</ul>\n<b>値</b><br/>\n以下のコンポーネントを含むクラス \"htest\" のリスト:<br/>\nstatistic: シャピロ・ウィルク統計量の値。<br/>\np.value: 検定の近似p値。これはRoyston (1995)でp.value < 0.1に対して適切であると言われています。<br/>\nmethod: 文字列 \"シャピロ・ウィルク正規性検定\"。<br/>\ndata.name: データの名前を示す文字列。<br/>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(shapiro.test, package=stats)\n"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Gráfico de Tiras",
+  "navigation": "Gráfico de Tiras",
+  "x": "Variable X, especificar una variable numérica",
+  "y": "Variable Y, especificar una o más variables numéricas",
+  "Fill": "Color, especificar una variable de factor",
+  "size": "Hacer que el tamaño del punto sea proporcional a",
+  "shape": "Forma",
+  "alpha": "Opacidad (0-1)",
+  "flipaxis": "Invertir eje",
+  "jitter": "Aplicar efecto de jitter",
+  "specify_a_title": "Ingrese un título",
+  "x_title": "Etiqueta del eje X",
+  "y_title": "Etiqueta del eje Y",
+  "Facetrow": "Fila de Facetas",
+  "Facetcolumn": "Columna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl" : "Facetas",
+  "help": {
+    "title": "Gráfico de Tiras",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>Descripción</b></br>\n            Un gráfico de tiras es el tipo más básico de gráfico disponible. Representa los datos en orden a lo largo de una línea con cada punto de datos representado como una caja. La forma del punto depende de los niveles de la variable de factor (x). Los puntos pueden agruparse opcionalmente por una variable de factor (y). Las facetas pueden crearse opcionalmente especificando una variable de factor.</br>\n            También puede especificar temas opcionalmente, y especificar un título y etiquetas para los ejes x e y</br>\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: El conjunto de datos predeterminado​\n            </li>\n            <li>\n            aes(): Generar mapeos estéticos que describen cómo las variables en los datos se mapean a propiedades visuales (estéticas) de los geoms.​\n            </li>\n            <li>\n            x: la variable de agrupamiento. La forma del punto depende de los niveles de la variable de factor​\n            </li>\n            <li>\n            y: la variable para la cual se grafican los puntos​\n            </li>\n            <li>\n            color: una variable de factor opcional para agrupar puntos (por color)​\n            </li>\n            <li>\n            Labs(): Cambiar etiquetas de ejes y títulos de leyenda (esto es opcional)​\n            </li>\n            <li>\n            facet_grid(): Disponer paneles en una cuadrícula (esto es opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica el tema de la calculadora (esto es opcional)​\n            </li>\n            <li>\n            geom_jitter(): El geom de jitter es un predeterminado conveniente para geom_point con posición = 'jitter'. Vea position_jitter para ver cómo ajustar la cantidad de jittering.\n            </li>\n            <li>\n            coord_flip(): Invertir eje (esto es opcional)​\n            </li>\n            </ul>\n            <b>Paquete</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ayuda</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Otro: Haga clic en el botón de Ayuda de R para obtener ayuda detallada de R. También puede ingresar help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

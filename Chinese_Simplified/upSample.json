@@ -1,0 +1,12 @@
+{
+  "title": "上采样",
+  "navigation": "示例, 上采样",
+  "downsample": "输入数据集的名称",
+  "seed": "设置种子",
+  "dependent": "按变量上采样",
+  "help": {
+    "title": "上采样",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>描述</b></br>\n上采样不平衡数据。upSample 通过替换进行采样，以使类分布相等\n<br/>\n<b>用法</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 预测变量的矩阵或数据框\n</li>\n<li>\ny: 具有类成员资格的因子变量\n</li>\n<li>\nlist: 函数应该返回 list(x, y) 还是将 x 和 y 绑定在一起？如果为 TRUE，输出将被强制转换为数据框。\n</li>\n<li>\nyname: 如果 list = FALSE，类列的标签\n</li>\n</ul>\n<b>详细信息</b></br>\n简单随机抽样用于对多数类进行下采样。请注意，少数类数据保持不变，并且样本将在下采样版本中重新排序。</br>\n对于上采样，所有原始数据保持不变，并且额外的样本被添加到少数类中，采用替换方式。</br>\n<b>值</b><br/>\n返回一个数据框或包含元素 x 和 y 的列表。<br/>\n<b>示例</b><br/>\n<code> \n## 一个荒谬的例子...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>包</b></br>\ncaret</br>\n<b>帮助</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

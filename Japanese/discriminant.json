@@ -1,0 +1,22 @@
+{
+  "title": "判別分析",
+  "navigation": "判別",
+  "modelname": "モデル名",
+  "tvarbox1": "従属変数",
+  "tvarbox2": "固定因子",
+  "blockVar": "共変量",
+  "testStatistic": "検定統計量",
+  "label2": "ポストホックのオプション",
+  "combon": "平均を比較する方法:",
+  "emm": "推定限界平均",
+  "displayBoxMDetails": "BoxのM検定に関連する詳細を表示します（注意：BoxのM検定の結果は常に表示されます）",
+  "adjust": "p値を調整する方法",
+  "levenesTest": "レビンの検定",
+  "posthocs": "ポストホック",
+  "plotMeansCI": "平均と信頼区間のプロット",
+  "help": {
+    "title": "判別分析",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>説明</b></br>\n判別分析：オムニバス多変量検定と対応するF値およびp値が提供されます。フォローアップの単変量検定も提供されます。</br> 注意：現在、単一の独立因子のみをサポートしています。</br>\n注意：平均のプロットには信頼区間を表示しません。不要な警告が表示されるためです。gplotsパッケージの著者と協力してこれを修正しています。</br>\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\n...: aovに渡される引数\n</li>\n</ul>\n<b>詳細</b></br>\nクラス「manova」は、異なる要約方法を選択する点でクラス「aov」と異なります。関数manovaはaovを呼び出し、各層の結果オブジェクトに「manova」クラスを追加します。​</br>\n<b>値</b><br/>\naovのヘルプを参照してください。詳細は以下に記載されています<br/>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nRヘルプボタンをクリックして詳細なRヘルプを取得します。</br> また、help(manova, package ='stats')と入力し、R構文エディタでCTRL Enterを押すとヘルプが得られます。</br>\n"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "茎葉プロット",
+  "navigation": "茎葉",
+  "Destination": "プロットする変数を選択",
+  "label1": "葉の桁",
+  "label2": "茎ごとの部分",
+  "label3": "分割茎のスタイル",
+  "label4": "オプション",
+  "Value": "値を入力",
+  "Automatic": "自動",
+  "EnterValue": "値を指定",
+  "StemAutomatic": "自動",
+  "SpecifyStemValue": "値を指定",
+  "StemValue": "値を入力",
+  "Tukey": "チューキー",
+  "Repeated": "繰り返しの茎の桁",
+  "Trim": "外れ値をトリム",
+  "Depths": "深さを表示",
+  "NegativeLeaves": "負の葉を逆にする",
+  "help": {
+    "title": "茎葉プロット",
+    "r_help": "help(stem.leaf, package='aplpack')",
+    "body": "\n            <b>説明</b></br>\n            茎葉表示および背中合わせの茎葉表示\n            古典的な（\"チューキー風\"）の茎葉表示 / 背中合わせの茎葉表示を作成します。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            stem.leaf(data, unit, m, Min, Max, rule.line = c(\"Dixon\", \"Velleman\", \"Sturges\"),\n                style = c(\"Tukey\", \"bare\"), trim.outliers = TRUE, depths = TRUE,\n                reverse.negative.leaves = TRUE, na.rm = FALSE, printresult = TRUE)<br/><br/>\n            stem.leaf.backback(x,y, unit, m, Min, Max, rule.line = c(\"Dixon\", \"Velleman\", \n                \"Sturges\"), style = c(\"Tukey\", \"bare\"), trim.outliers = TRUE, \n                depths = TRUE, reverse.negative.leaves = TRUE, na.rm = FALSE,\n                printresult=TRUE, show.no.depths = FALSE, add.more.blanks = 0,\n                back.to.back = TRUE)\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: 数値ベクトルのデータ\n            </li>\n            <li>\n            x: stem.leaf.backbackの最初のデータセット\n            </li>\n            <li>\n            y: stem.leaf.backbackの最初のデータセット\n            </li>\n            <li>\n            unit: 葉の単位、10の累乗（例：100、.01）；単位が欠けている場合、stem.leafによって単位が選択されます。\n            </li>\n            <li>\n            m: 各茎が分けられる部分の数（1、2、または5）；mが欠けている場合、stem.leafによって部分の数/mが選択されます。\n            </li>\n            <li>\n            Min: 最小の非外れ値；自動選択の場合は省略。\n            </li>\n            <li>\n            Max: 最大の非外れ値；自動選択の場合は省略。\n            </li>\n            <li>\n            rule.line: 表示に必要な行数を選択するためのルール；\"Dixon\" = 10*log10(n); \"Velleman\" = 2*sqrt(n); \"Sturges\" = 1 + log2(n); デフォルトは\"Dixon\"です。\n            </li>\n            <li>\n            style: \"Tukey\"（デフォルト）で\"Tukey風\"の分割茎；\"bare\"は単に茎の桁を繰り返す分割茎です。\n            </li>\n            <li>\n            trim.outliers: TRUEの場合（デフォルト）、外れ値はLOおよびHIの茎に配置されます。\n            </li>\n            <li>\n            depths: TRUEの場合（デフォルト）、茎の左側に\"深さ\"の列を印刷します；中央値を含む茎の深さは、括弧内に茎のカウントが表示されます。\n            </li>\n            <li>\n            reverse.negative.leaves: TRUEの場合（デフォルト）、負の茎の葉の方向を逆にします（つまり、葉9が葉8の前に来るなど）。\n            </li>\n            <li>\n            na.rm: TRUEの場合、\"NA\"の値が削除され、それ以外の場合はNAの数がカウントされます。\n            </li>\n            <li>\n            printresult: TRUEの場合、茎葉表示の出力がcatによって行われます。\n            </li>\n            <li>\n            show.no.depths: TRUEの場合、深さは印刷されません。\n            </li>\n            <li>\n            add.more.blanks: 葉の他に追加される空白の数。\n            </li>\n            <li>\n            back.to.back: FALSEの場合、2つの平行な茎葉表示が構築されます。\n            </li>\n            </ul>\n            <b>詳細</b></br>\n            基本パッケージのstem関数とは異なり、stem.leafはチューキーの探索的データ分析で説明されている古典的な茎葉表示を生成します。関数stem.leaf.backbackは背中合わせの茎葉表示を作成します。\n            <br/>\n            <b>値</b></br>\n            計算された茎葉表示が印刷されます。非表示でstem.leafは、info（凡例）、display（文字ベクトルとしての茎葉表示）、lower（非常に小さい値）、upper（非常に大きい値）、depths（深さのベクトル）、stem（ベクトルとしての茎情報）、leaves（葉のベクトル）を含むリストとして茎葉表示を返します。</br>\n            <b>例</b></br>\n            stem.leaf(co2)\n            stem.leaf.backback(co2[1:120],co2[121:240])</br>\n            stem.leaf.backback(co2[1:120],co2[121:240], back.to.back = FALSE)</br>\n            stem.leaf.backback(co2[1:120],co2[121:240], back.to.back = FALSE,\n                               add.more.blanks = 3, show.no.depths = TRUE)</br>\n            stem.leaf.backback(rivers[-(1:30)],rivers[1:30], back.to.back = FALSE, unit=10, m=5, \n                               Min=200, Max=900, add.more.blanks = 20, show.no.depths = TRUE)</br>\n            <b>パッケージ</b></br>\n            aplpack</br>\n            <b>ヘルプ</b></br>\n            help(stem.leaf, package=aplpack)</br>\n    "
+  }
+}

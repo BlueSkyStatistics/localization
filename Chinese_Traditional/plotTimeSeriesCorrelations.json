@@ -1,0 +1,19 @@
+{
+  "title": "繪製時間序列，並顯示相關性",
+  "navigation": "繪製時間序列，並顯示相關性",
+  "destination": "要繪製的變數",
+  "firstObservation": "第一次觀察的時間，例如：1：輸入1961,1表示1961年1月；例如：2：輸入1961,3表示1961年第三季度；例如：3：輸入1表示連續系列",
+  "frequency": "每單位時間的觀察次數，例如：1：輸入12表示每年每月有一次觀察；例如：2：輸入4表示每季度有一次觀察；例如：3：輸入1表示連續系列。",
+  "label0": "附加圖表",
+  "autocorrelations": "繪製自相關",
+  "autocovariance": "繪製自協方差",
+  "partialcorrelations": "繪製部分相關",
+  "label2": "擬合值的選項",
+  "mainTitle": "主標題",
+  "yaxisLabel": "Y軸標籤",
+  "help": {
+    "title": "繪製時間序列（帶相關性）",
+    "r_help": "help(acf, package='forecast')",
+    "body": "\n<b>描述</b></br>\n創建帶有自相關、自協方差和部分相關的時間序列圖。BSkyPlotSeriesWithCorrelations是一個包裝函數，內部調用forecast包中的acf和/或pacf。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyPlotSeriesWithCorrelations(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='title', ylab='y軸標籤', dataset=\"Dataset2\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 要繪製的選定變數\n</li>\n<li>\nstart: 第一次觀察的時間應以年、月或年、季度的格式輸入，例如（如果您的數據按月組織，則1992,1表示1992年1月；如果您的數據按季度組織，則1992,1表示1992年的第一季度。\n</li>\n<li>\nfrequency: 單位時間內的觀察次數。示例：每月有12次觀察，每年有12次觀察；每季度有4次觀察，每年有4次觀察。\n</li>\n<li>\nautocorrelation: 如果為TRUE，則還將生成自相關圖。\n</li>\n<li>\nautocovariance: 如果為TRUE，則還將生成自協方差圖。\n</li>\n<li>\npartialautocorrelations: 如果為TRUE，則還將生成部分自相關圖。\n</li>\n<li>\nplot.type: \"multiple\"表示分開圖，\"single\"表示合併圖。\n</li>\n<li>\nmain: 圖的主標題\n</li>\n<li>\nylab: Y軸的標題\n</li>\n<li>\ndataset: 從中選擇變數的數據集名稱。\n</li>\n</ul>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或通過創建R代碼塊，單擊輸出窗口中的+，運行以下命令help(acf, package ='forecast')"
+  }
+}

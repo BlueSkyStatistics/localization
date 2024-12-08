@@ -1,0 +1,12 @@
+{
+  "title": "朴素貝葉斯",
+  "navigation": "朴素貝葉斯",
+  "modelname": "輸入模型名稱",
+  "dependentvar": "因變量",
+  "independentvars": "自變量(們)",
+  "help": {
+    "title": "朴素貝葉斯",
+    "r_help": "help(NaiveBayes,package='klaR')",
+    "body": "\n                <b>描述</b></br>\n計算給定獨立預測變量的類別變量的條件後驗概率，使用貝葉斯法則。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nformula : 形式為 class ~ x1 + x2 + .... 不允許交互作用。\n</li>\n<li>\ndata: 預測變量的數據框（類別和/或數值）。\n</li>\n<li>\nna.action : 一個函數，用於指定如果找到 NAs 時要採取的行動。默認行動是不計算它們對概率因子的計算。另一種選擇是 na.omit，這會導致拒絕任何缺少所需變量的案例。（注意：如果給定，該參數必須命名。）\n</li>\n<li>\n... : 傳遞給密度的參數。\n</li>\n</ul>\n<b>包</b></br>\ncaret;klaR</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋的右上角的 R 圖標，或在 R 語法編輯器中運行以下命令</br>\nhelp(NaiveBayes,package='klaR')\n"
+  }
+}

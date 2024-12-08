@@ -1,0 +1,33 @@
+{
+  "title": "Comparer les courbes ROC",
+  "navigation": "Comparer les courbes ROC",
+  "outcomevar": "Variable de résultat binaire (numérique/facteur)",
+  "predprobvars": "Variables de probabilité prédite de chaque modèle, spécifiez au moins 2",
+  "outcomeorderlabel": "Valeur 'Positive' du résultat",
+  "outcomeorderhigh": "Valeur ordonnée supérieure",
+  "outcomeorderlow": "Valeur ordonnée inférieure",
+  "specopt": "Tracer la spécificité au lieu de 1-spécificité",
+  "cilevel": "Niveau de confiance",
+  "multcompopt": "Ajustement de comparaison multiple",
+  "multcompmethod": "Méthode de comparaison multiple",
+  "plotoptions": "Options de tracé",
+  "plottitle": "Titre du tracé",
+  "plottitlesize": "Taille du titre du tracé (5-50)",
+  "themedropdown": "Thème du tracé",
+  "lineoptionslabel": "Options de ligne",
+  "linesize": "Taille de ligne (0-5)",
+  "colorpalette": "Palette de couleurs",
+  "axisoptionslabel": "Options d'axe",
+  "axislabelsize": "Taille des étiquettes d'axe (5-50)",
+  "ticklabelsize": "Taille des étiquettes de marque de graduation (5-50)",
+  "legendoptionslabel": "Options de légende",
+  "legendtitle": "Titre",
+  "legendpos": "Position",
+  "curvelabels": "Étiquettes de courbe, spécifiez comme 'Étiquette 1', 'Étiquette 2', 'Étiquette 3'; utilisez \\n dans une étiquette pour un saut de ligne",
+  "legendfontsize": "Taille des étiquettes de légende (5-50)",
+  "help": {
+    "title": "Comparer les courbes ROC",
+    "r_help": "help(roc.test, package = 'pROC')",
+    "body": "\nCette boîte de dialogue compare les courbes caractéristiques de fonctionnement du récepteur (ROC) données un ensemble de probabilités prédites d'un modèle (par exemple, régression logistique). Chaque modèle doit avoir été ajusté en utilisant le même ordre de la variable de résultat. Elle fournit un tableau des aires individuelles sous les courbes ROC avec des intervalles de confiance, un tableau des comparaisons par paires utilisant le test de DeLong, et un ensemble de courbes ROC superposées. Les sujets avec des valeurs manquantes pour le résultat ou les probabilités prédites sont supprimés afin que chaque modèle soit évalué sur le même ensemble de sujets. Voir Évaluation du modèle > Prédire > Scoring du modèle pour obtenir des probabilités prédites à partir des modèles candidats. \n<br/><br/><br/>\n<b>Variable de résultat binaire :</b> La variable de résultat binaire utilisée pour les prédictions. Doit être numérique ou facteur.\n<br/><br/>\n<b>Variables de probabilité prédite de chaque modèle :</b> Spécifiez les colonnes de probabilité prédite de chaque modèle ajusté que vous souhaitez comparer.\n<br/><br/>\n<b>Valeur 'Positive' du résultat :</b> Spécifiez si la valeur ordonnée supérieure ou inférieure de la variable de résultat binaire spécifiée doit être considérée comme la valeur 'positive'. C'est le niveau auquel les probabilités prédites se rapportent. Par exemple, si le résultat binaire était codé comme 0/1, la valeur ordonnée supérieure signifierait que 1 est la réponse 'positive' et la valeur ordonnée inférieure signifierait que 0 est la réponse 'positive'. \n<br/><br/>\n<b>Tracer la spécificité au lieu de 1-spécificité :</b> Cela change l'axe des x du tracé de la courbe ROC pour utiliser la spécificité à la place. L'axe diminuera de 1 à 0, de gauche à droite.\n<br/><br/> \n<b>Niveau de confiance :</b> Niveau de confiance pour les intervalles de zone de la courbe ROC\n<br/><br/>\n<b>Ajustement de comparaison multiple :</b> Appliquez un ajustement de comparaison multiple aux comparaisons par paires des zones de la courbe ROC.\n<br/><br/><br/>\n<b>Options de tracé :</b>\n<br/><br/>\n<b>Titre du tracé :</b> Spécifiez le titre du tracé. Peut être supprimé.\n<br/><br/>\n<b>Thème du tracé :</b> Spécifiez le thème général du tracé\n<br/><br/>\n<b>Options de ligne :</b>\n<br/><br/>\n<b>Taille de ligne :</b> Spécifiez la taille des lignes sur le tracé de la courbe ROC\n<br/><br/>\n<b>Palette de couleurs :</b> Spécifiez la palette de couleurs utilisée pour les lignes de la courbe ROC\n<br/><br/>\n<b>Options d'axe :</b>\n<br/><br/>\n<b>Taille des étiquettes d'axe :</b> Spécifiez la taille des étiquettes d'axe utilisées sur le tracé.\n<br/><br/>\n<b>Taille des étiquettes de marque de graduation :</b> Spécifiez la taille des étiquettes de marque de graduation de l'axe.\n<br/><br/>\n<b>Options de légende :</b>\n<br/><br/>\n<b>Position :</b> Spécifiez la position de la légende dans le tracé. Peut être à droite, en haut, en bas ou à gauche.\n<br/><br/>\n<b>Titre :</b> Spécifiez le titre de la légende. Peut être supprimé.\n<br/><br/>\n<b>Étiquettes de courbe :</b> Spécifiez les étiquettes de courbe utilisées dans la légende correspondant à l'ordre des courbes (courbe 1, courbe 2, courbe 3, etc.). Ne spécifiant rien donnera des étiquettes de courbe de 1, 2, 3, etc. Si vous spécifiez des étiquettes, vous devez spécifier des étiquettes pour toutes les courbes. L'ordre des courbes est le même que l'ordre spécifié des probabilités prédites.\n<br/><br/>\n<b>Taille des étiquettes de légende :</b> Taille de tout le texte dans la légende.\n<br/><br/>\n<b>Packages R requis :</b> pROC, ggthemes, RColorBrewer, ggsci, ggplot2\n"
+  }
+}

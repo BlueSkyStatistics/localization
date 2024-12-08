@@ -1,0 +1,26 @@
+{
+  "title": "Gráfico de Distribución Beta",
+  "navigation": "Gráfico de Distribución Beta",
+  "shape1": "Forma 1",
+  "shape2": "Forma 2",
+  "pdenfun": "Graficar función de densidad",
+  "pdstfun": "Graficar función de distribución",
+  "lblregions": "Especificar opcionalmente regiones bajo la función de densidad por",
+  "xvals": "valores de x",
+  "quantiles": "cuantiles",
+  "lblRegFill": "Regiones a llenar (especificar una o dos, o dejar en blanco)",
+  "lblreg1": "Región 1 :",
+  "lblreg2": "Región 2 :",
+  "lblregfrm": "Desde",
+  "lblregto": "Hasta",
+  "lblregcol": "Color",
+  "lblLegPos": "Posición de la leyenda",
+  "toprt": "Arriba derecha",
+  "toplt": "Arriba izquierda",
+  "topmid": "Arriba centro",
+  "help": {
+    "title": "Gráfico de Distribución Beta",
+    "r_help": "ayuda(qbeta, paquete=stats)",
+    "body": "\n            <b>Descripción</b>\n<br/>\nFunción de densidad, función de distribución, función cuantil y generación aleatoria para la distribución Beta con parámetros shape1 y shape2 (y parámetro de no centralidad opcional ncp).\n<br/>\n<b>Uso</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>Argumentos</b>\n<br/>\n<ul>\n    <li>x, q : vector de cuantiles.</li>\n    \n    \n    <li>p : vector de probabilidades.</li>\n    \n    \n    <li>n : número de observaciones. Si la longitud(n) > 1, se toma la longitud como la requerida.</li>\n    \n    \n    <li>shape1, shape2 : parámetros no negativos de la distribución Beta.</li>\n    \n    \n    <li>ncp : parámetro de no centralidad.</li>\n    \n    \n    <li>log, log.p : lógico; si es TRUE, las probabilidades p se dan como log(p).</li>\n    \n    \n    <li>lower.tail : lógico; si es TRUE (por defecto), las probabilidades son P[X ≤ x], de lo contrario, P[X > x].</li>\n    \n</ul>\n\n\n\n<br/>\n<b>Detalles</b>\n<br/>\nLa distribución Beta con parámetros shape1 = a y shape2 = b tiene densidad\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\npara a > 0, b > 0 y 0 ≤ x ≤ 1 donde los valores límite en x=0 o x=1 se definen como por continuidad (como límites). \n<br/>\n La media es a/(a+b) y la varianza es ab/((a+b)^2 (a+b+1)). Estos momentos y todas las propiedades de distribución pueden definirse como límites (lo que lleva a masas puntuales en 0, 1/2 o 1) cuando a o b son cero o infinitos, y las funciones correspondientes [dpqr]beta() se definen correspondientemente.\n <br/>\npbeta está estrechamente relacionada con la función beta incompleta. Como se define por Abramowitz y Stegun 6.6.1\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\ny 6.6.2 I_x(a,b) = B_x(a,b) / B(a,b) donde B(a,b) = B_1(a,b) es la función Beta (beta).\n<br/>\n<code>I_x(a,b) es pbeta(x, a, b).</code>\n<br/>\nLa distribución Beta no central (con ncp = λ) se define (Johnson et al, 1995, pp. 502) como la distribución de X/(X+Y) donde X ~ chi^2_2a(λ) y Y ~ chi^2_2b.\n<br/>\n<br/><b>Valor</b>\n<br/>\ndbeta da la densidad, pbeta la función de distribución, qbeta la función cuantil, y rbeta genera desviaciones aleatorias.\n<br/>\nArgumentos inválidos resultarán en un valor de retorno NaN, con una advertencia.\n<br/>\nLa longitud del resultado está determinada por n para rbeta, y es el máximo de las longitudes de los argumentos numéricos para las otras funciones.\n<br/>\nLos argumentos numéricos distintos de n se reciclan a la longitud del resultado. Solo se utilizan los primeros elementos de los argumentos lógicos.\n<br/>\n<br/><b>Nota</b>\n<br/>\nSuministrar ncp = 0 utiliza el algoritmo para la distribución no central, que no es el mismo algoritmo utilizado si se omite ncp. Esto es para dar un comportamiento consistente en casos extremos con valores de ncp muy cercanos a cero.\n"
+  }
+}

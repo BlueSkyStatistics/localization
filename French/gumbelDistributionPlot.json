@@ -1,0 +1,26 @@
+{
+  "title": "Graphique de la distribution de Gumbel",
+  "navigation": "Graphique de la distribution de Gumbel",
+  "location": "Emplacement",
+  "scale": "Échelle",
+  "pdenfun": "Tracer la fonction de densité",
+  "pdstfun": "Tracer la fonction de distribution",
+  "lblregions": "Spécifiez éventuellement les régions sous la fonction de densité par",
+  "xvals": "valeurs x",
+  "quantiles": "quantiles",
+  "lblRegFill": "Régions à remplir (spécifiez une ou deux, ou laissez vide)",
+  "lblreg1": "Région 1 :",
+  "lblreg2": "Région 2 :",
+  "lblregfrm": "De",
+  "lblregto": "À",
+  "lblregcol": "Couleur",
+  "lblLegPos": "Position de la légende",
+  "toprt": "Haut à droite",
+  "toplt": "Haut à gauche",
+  "topmid": "Haut au centre",
+  "help": {
+    "title": "Graphique de la distribution de Gumbel",
+    "r_help": "aide(qgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Densité, fonction de distribution, fonction quantile et génération aléatoire pour la distribution de Gumbel avec des paramètres d'emplacement et d'échelle spécifiés.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vecteur de quantiles (valeurs de la variable).</li>\n                \n                \n                <li>p : vecteur de probabilités.</li>\n                \n                \n                <li>n : nombre d'observations. Si length(n) > 1, la longueur est considérée comme le nombre requis.</li>\n                \n                \n                <li>location : paramètre d'emplacement (par défaut 0); potentiellement un vecteur.</li>\n                \n                \n                <li>scale : paramètre d'échelle (par défaut 1); potentiellement un vecteur.</li>\n                \n                <li>lower.tail : logique; si TRUE (par défaut) les probabilités et les quantiles correspondent à P(X ≤ x), si FALSE à P(X > x).</li>\n            </ul>            \n"
+  }
+}

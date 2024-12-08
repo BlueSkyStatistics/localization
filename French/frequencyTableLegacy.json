@@ -1,0 +1,10 @@
+{
+  "title": "Table de Fréquence (Héritage)",
+  "navigation": "Fréquences (Héritage)",
+  "subsetvars": "Sélectionner des variables",
+  "help": {
+    "title": "Table de Fréquence",
+    "r_help": "aide(ftable, package=stats)",
+    "body": "\n<b>Description</b></br>\nGénère les fréquences pour chaque valeur unique dans une ou plusieurs variables ou noms de colonnes sélectionnés.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"nom_du_dataset\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Détails</b></br>\nCette boîte de dialogue utilise les fonctions suivantes :</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

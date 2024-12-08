@@ -1,0 +1,26 @@
+{
+  "title": "ロジスティック分布プロット",
+  "navigation": "ロジスティック分布プロット",
+  "location": "位置",
+  "scale": "スケール",
+  "pdenfun": "密度関数をプロット",
+  "pdstfun": "分布関数をプロット",
+  "lblregions": "密度関数の下の領域をオプションで指定するには",
+  "xvals": "x値",
+  "quantiles": "分位数",
+  "lblRegFill": "塗りつぶす領域（1つまたは2つを指定するか、空白のままにします）",
+  "lblreg1": "領域 1 :",
+  "lblreg2": "領域 2 :",
+  "lblregfrm": "から",
+  "lblregto": "まで",
+  "lblregcol": "色",
+  "lblLegPos": "凡例の位置",
+  "toprt": "右上",
+  "toplt": "左上",
+  "topmid": "中央上",
+  "help": {
+    "title": "ロジスティック分布プロット",
+    "r_help": "help(qlogis, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            ロジスティック分布の密度、分布関数、分位数関数、およびランダム生成のための位置とスケールのパラメータ。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dlogis(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                plogis(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測の数。もしlength(n) > 1の場合、長さは必要な数と見なされます。</li>\n                \n                \n                <li>location, scale : 位置とスケールのパラメータ。</li>\n                \n                \n                <li>log, log.p : 論理; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理; TRUE（デフォルト）の場合、確率はP[X ≤ x]、そうでない場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            位置またはスケールが省略された場合、デフォルト値の0と1が仮定されます。\n            位置=m、スケール=sのロジスティック分布は、分布関数\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            および密度\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            これは、平均mおよび分散π^2 /3 s^2を持つ長い尾の分布です。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dlogisは密度を与え、plogisは分布関数を与え、qlogisは分位数関数を与え、rlogisはランダム偏差を生成します。\n            <br/>\n            結果の長さはrlogisのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さに再利用されます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            qlogis(p)はよく知られた「ロジット」関数と同じであり、logit(p) = log(p/(1-p))であり、plogis(x)はしたがって「逆ロジット」と呼ばれています。\n            <br/>\n            分布関数は再スケーリングされた双曲線タンジェントであり、plogis(x) == (1+ tanh(x/2))/2であり、神経ネットワークなどの文脈ではシグモイド関数と呼ばれます。\n            \n      "
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Laden Sie einen Datensatz aus einem R-Paket",
+  "navigation": "Datensatz laden",
+  "label1": "Wenn das R-Paket nicht verfügbar ist, gehen Sie zu Werkzeuge > Paket > R-Paket von CRAN installieren, um es zu installieren.",
+  "label2": "Wenn Sie keinen Datensatz im Dropdown-Menü sehen, enthält das ausgewählte Paket den Datensatz nicht.",
+  "selectAPackage": "Wählen Sie ein R-Paket aus, aus dem Sie einen Datensatz laden möchten",
+  "selectADataset": "Wählen Sie einen Datensatz aus, der im Grid geladen werden soll",
+  "help": {
+    "title": "Laden Sie einen Datensatz aus einem R-Paket",
+    "r_help": "hilfe(daten,paket='utils')",
+    "body": "\n<b>Beschreibung</b></br>\nLädt den ausgewählten Datensatz in das Datenraster von BlueSky Statistics. Verwendet die Funktion data, die angegebene Datensätze lädt oder die verfügbaren Datensätze auflistet.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \n#Lädt den Datensatz in den Speicher<br/>\ndata(..., paket = NULL, überschreiben = TRUE)<br/>\n#Lädt den Datensatz in das Datenraster von BlueSky Statistics<br/>\nBSkyLoadRefresh(\"datensatzname\")<br/>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n...: literale Zeichenfolgen oder Namen der zu ladenden Datensätze\n</li>\n<li>\npaket: ein Zeichenvektor, der die Pakete angibt, in denen nach Datensätzen gesucht werden soll, oder NULL.\n</li>\n<li>\nüberschreiben: logisch: sollten vorhandene Objekte mit demselben Namen in envir ersetzt werden?\n</li>\n</ul>\n<b>Details</b></br>\nLädt den angegebenen Datensatz in das Datenraster</br>\n<b>Wert</b><br/>\nEin Datenrahmen.<br/>\n<b>Beispiele</b><br/>\n<code> \n## Ein lächerliches Beispiel...\ndata(öl)\nBSkyLoadRefresh(\"öl\")\n</code> <br/>\n<b>Paket</b></br>\nutils</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl aus: hilfe(daten, paket ='utils'), indem Sie einen R-Code-Chunk erstellen, indem Sie + im Ausgabefenster klicken           \n"
+  }
+}

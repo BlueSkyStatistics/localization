@@ -1,0 +1,15 @@
+{
+  "title": "Taille d'échantillon, Précision de l'ICC",
+  "navigation": "ICC",
+  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la largeur de l'intervalle de confiance et l'autre sera calculée",
+  "n": "Taille d'échantillon",
+  "width": "Largeur de l'intervalle de confiance",
+  "icc": "ICC (coefficient de corrélation intraclasse, 0-1)",
+  "conflevel": "Niveau de confiance (0-1)",
+  "raters": "Nombre d'évaluateurs",
+  "help": {
+    "title": "Taille d'échantillon, Précision de l'AUC",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nCeci est une évaluation de la taille d'échantillon pour un coefficient de corrélation intraclasse (ICC) basé sur la largeur de l'intervalle de confiance. Il calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur \nspécifie l'autre. Que l'ICC soit calculé pour une ANOVA à un sens ou à deux sens n'a pas d'importance dans l'approximation utilisée. Voir Bonett DG (2002), Exigences de taille d'échantillon pour estimer les corrélations intraclasse \navec la précision souhaitée, Statistics in Medicine, 21:1331-1335.\n<br/><br/>\n<b>Taille d'échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Largeur de l'intervalle de confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de la précision d'une estimation et est la limite supérieure moins la limite inférieure.\n<br/><br/>\n<b>ICC :</b> Spécifiez la valeur ICC attendue\n<br/><br/>\n<b>Niveau de confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<b>Nombre d'évaluateurs :</b> Spécifiez le nombre d'évaluateurs qui fourniront des valeurs pour chaque sujet.\n<br/><br/>\n<b>Packages R requis :</b> presize\n\t\t\t"
+  }
+}

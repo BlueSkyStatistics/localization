@@ -1,0 +1,27 @@
+{
+  "title": "Histogramă cu Curbe Normale Suprapuse pe Fiecare Facetă și Grup",
+  "navigation": "Histogramă",
+  "x": "Axa X, specificați o variabilă numerică",
+  "bins": "Specificați numărul de bin-uri",
+  "fill": "Specificați o variabilă de grupare (Categorie)",
+  "binwidth": "Lățimea bin-ului",
+  "barcolor": "Selectați opțional o culoare de umplere (După selectarea culorii, faceți clic în afara controlului pentru a aplica)",
+  "alpha": "Opacitate (0-1)",
+  "flip": "Rotiți Axa",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "facets_lbl" : "Fațete",
+  "Facetrow": "Rândul Facet",
+  "Facetcolumn": "Coloana Facet",
+  "Facetwrap": "Împachetare Facet (dacă este ales, orice selecție a rândului și coloanei Facet va fi ignorată)",
+  "Facetscale": "Scara Facet",
+  "normalCurveColor": "Selectați opțional o culoare pentru curba normală (După selectarea culorii, faceți clic în afara controlului pentru a aplica)",
+  "rugPlot": "Afișați un grafic rug (potrivit pentru seturi de date mici)",
+  "normalCurve": "Afișați o curbă normală (Valorile lipsă sunt eliminate pentru a permite afișarea curbei)",
+  "help": {
+    "title": "Histogramă",
+    "r_help": "help(geom_histogram, package=ggplot2)",
+    "body": "\n            <b>Descriere</b></br>\n            O histogramă este o reprezentare grafică a distribuției datelor numerice. Este o estimare a distribuției de probabilitate a unei variabile continue (variabilă cantitativă). Puteți specifica o lățime a bin-ului sau utiliza valoarea implicită, vezi mai jos. Facetele pot fi create opțional specificând o variabilă factor. De asemenea, puteți specifica opțional teme și un titlu și etichete pentru axele x și y.</br>\n            Când aveți mai multe variabile selectate pentru variabila axei X, creăm o histogramă separată pentru fiecare variabilă de pe axa x. Suprapunem opțional o curbă normală și un grafic rug</br>\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(x=engine) )+  geom_histogram(binwidth=10) +labs(x=\"engine\",y=\"Counts\") +  xlab(\"\")​\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            aes(): Generați mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            x: O variabilă numerică/scală pentru a plota histograma.​\n            </li>\n            <li>\n            geom_histogram: Creează o histogramă, în mod implicit, stat_bin folosește 30 de bin-uri - aceasta nu este o valoare implicită bună, dar ideea este să vă încurajeze să experimentați cu diferite lățimi de bin..\n            </li>\n            <li>\n            geom_rug: Creează un grafic rug    \n            </li>\n            <li>\n            stat_function: Creează o curbă normală (Notă: Valorile lipsă trebuie eliminate pentru a permite afișarea curbei)    \n            </li>\n            <li>\n            Labs(): Schimbați etichetele axelor și titlurile legendelor (Aceasta este opțional)​\n            </li>\n            <li>\n            facet_grid(): Așezați panourile într-o grilă (Aceasta este opțional)​\n            </li>\n            <li>\n            theme_calc(): Specifică tema calculatorului (Aceasta este opțional)​\n            </li>\n            <li>\n            coord_flip(): Rotiți axa (Aceasta este opțional)\n            </li>\n            <li>\n            alpha: Ia o valoare între 0-1, 1 înseamnă fără opacitate. Opacitatea se aplică culorii de umplere a histogramei\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Ajutor</b></br>\n            help(geom_histogram, package=ggplot2)</br>\n            Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_bar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
+  }
+}

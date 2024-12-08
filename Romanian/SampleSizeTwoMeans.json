@@ -1,0 +1,20 @@
+{
+  "title": "Dimensiunea eșantionului, Testul a două medii",
+  "navigation": "Două medii",
+  "howtouse": "Pentru a calcula dimensiunea eșantionului: specificați ambele medii ale grupurilor și puterea\nPentru a calcula puterea: specificați ambele medii ale grupurilor și dimensiunea eșantionului\nPentru a calcula diferența medie detectabilă: specificați dimensiunea eșantionului și puterea",
+  "n": "Dimensiunea eșantionului",
+  "power": "Putere (0-1)",
+  "meangrp1": "Media grupului de tratament",
+  "meangrp2": "Media grupului de control",
+  "ratio": "Raportul dimensiunii eșantionului Tratament vs Control",
+  "sd": "Deviația standard",
+  "siglevel": "Nivelul de semnificație (0-1)",
+  "alternativeopt": "Ipoteza alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "help": {
+    "title": "Dimensiunea eșantionului, Testul a două medii",
+    "r_help": "help(epi.sscompc, package ='epiR')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test t cu două eșantioane de medii.  Calculează dimensiunea eșantionului, puterea sau diferența medie (delta) atunci când utilizatorul \nspecifice celelalte două.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată.\n<br/><br/>\n<b>Media grupului de tratament:</b> Specificați media pentru grupul de tratament\n<br/><br/>\n<b>Media grupului de control:</b> Specificați media pentru grupul de control\n<br/><br/>\n<b>Raportul dimensiunii eșantionului Tratament vs Control:</b> Specificați raportul dorit al dimensiunilor eșantionului (N tratament împărțit la N control). Un raport de 1 înseamnă dimensiuni egale ale eșantionului.\n<br/><br/>\n<b>Deviația standard:</b> Estimarea deviației standard combinate a grupurilor\n<br/><br/>\n<b>Nivelul de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Pachete R necesare:</b> epiR\n\t\t\t"
+  }
+}

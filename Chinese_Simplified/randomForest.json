@@ -1,0 +1,19 @@
+{
+  "title": "随机森林",
+  "label1": "随机森林可以在监督或无监督节点中运行。要在无监督模式下运行，请不要指定因变量。",
+  "navigation": "随机森林",
+  "modelname": "输入模型名称",
+  "dependentvar": "因变量",
+  "independentvars": "自变量",
+  "ntree": "树的数量",
+  "mtry": "mtry",
+  "proximity": "接近度：",
+  "newds": "指定存储接近度的数据集名称：",
+  "predictor": "保存预测值：",
+  "newcolname": "指定预测值的新列名称：",
+  "help": {
+    "title": "随机森林",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>描述</b></br>\nrandomForest 实现了 Breiman 的随机森林算法（基于 Breiman 和 Cutler 的原始 Fortran 代码），用于分类和回归。它也可以在无监督模式下用于评估数据点之间的接近度。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nrandomForest(x, y=NULL,  ntree=500, importance=FALSE, proximity, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx : 一个数据框或预测变量的矩阵，或描述要拟合的模型的公式（对于打印方法，一个 randomForest 对象）。\n</li>\n<li>\ny: 一个响应向量。如果是因子，则假定为分类，否则假定为回归。如果省略，randomForest 将在无监督模式下运行。\n</li>\n<li>\nntree : 要生长的树的数量。这个数字不应设置得太小，以确保每个输入行至少被预测几次。\n</li>\n<li>\nimportance : 是否应评估预测变量的重要性？ \n</li>\n<li>\nproximity : 是否应计算行之间的接近度测量？\n</li>\n<li>\n... : 传递给低级函数 randomForest.default 的可选参数。\n</li>\n</ul>\n<b>值</b><br/>\n一个 randomForest 类的对象，它是一个包含以下组件的列表：<br/>\ncall: 对 randomForest 的原始调用<br/>\ntype: 回归、分类或无监督之一。<br/>\npredicted: 基于袋外样本的输入数据的预测值。<br/>\nimportance:\t一个具有 nclass + 2（对于分类）或两个（对于回归）列的矩阵。对于分类，前 nclass 列是作为准确性平均减少计算的类特定度量。第 nclass + 1 列是所有类的准确性平均减少。最后一列是基尼指数的平均减少。对于回归，第一列是准确性平均减少，第二列是均方误差的平均减少。如果 importance=FALSE，最后的度量仍然作为向量返回。<br/>\nimportanceSD: 基于置换的重要性度量的“标准误差”。对于分类，p 乘以 nclass + 1 矩阵对应于重要性矩阵的前 nclass + 1 列。对于回归，长度为 p 的向量。<br/>\nlocalImp: 一个 p 乘以 n 的矩阵，包含逐案例的重要性度量，其中 [i,j] 元素是第 i 个变量对第 j 个案例的重要性。如果 localImp=FALSE，则为 NULL。<br/>\nntree: 生长的树的数量。<br/>\nmtry: 每个节点分裂时采样的预测变量数量。<br/>\nforest: （包含整个森林的列表；如果 randomForest 在无监督模式下运行或如果 keep.forest=FALSE，则为 NULL。<br/>\nerr.rate: （仅分类）输入数据的预测的向量错误率，第 i 个元素是所有树到第 i 个的（OOB）错误率。<br/>\nconfusion: （仅分类）预测的混淆矩阵（基于 OOB 数据）。<br/>\nvotes: （仅分类）一个矩阵，每个输入数据点一行，每个类一列，给出来自随机森林的（OOB）“投票”的比例或数量。<br/>\noob.times: 案例“袋外”的次数（因此用于计算 OOB 错误估计）<br/>\nproximity: 如果在调用 randomForest 时 proximity=TRUE，则输入之间的接近度测量矩阵（基于数据点在同一终端节点中的频率）。<br/>\nmse\t: （仅回归）均方误差的向量：平方残差的总和除以 n。<br/>\nrsq\t: （仅回归）“伪 R 平方”：1 - mse / Var(y)。<br/>\ntest: 如果给定测试集（通过 xtest 或附加的 ytest 参数），此组件是一个列表，包含测试集的相应预测、err.rate、confusion、votes（对于分类）或预测、mse 和 rsq（对于回归）。如果 proximity=TRUE，还有一个组件 proximity，包含测试集之间的接近度以及测试和训练数据之间的接近度。<br/>\n<b>包</b></br>\nrandomForest​;BlueSky</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 语法编辑器中运行以下命令</br>\nhelp(randomForest,package='randomForest')\n                "
+  }
+}

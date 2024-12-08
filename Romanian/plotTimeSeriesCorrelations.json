@@ -1,0 +1,19 @@
+{
+  "title": "Trasează serii temporale, cu corelații",
+  "navigation": "Trasează serii temporale, cu corelații",
+  "destination": "Variabile de trasat",
+  "firstObservation": "Timpul primei observații de exemplu: 1: introduceți 1961,1 pentru ianuarie 1961, de exemplu: 2: introduceți 1961,3 pentru trimestrul 3 din 1961, de exemplu: 3: introduceți 1 pentru o serie continuă",
+  "frequency": "Numărul de observații pe unitate de timp de exemplu: 1: introduceți 12 pentru o observație pentru fiecare lună a unui an, de exemplu: 2: introduceți 4 pentru o observație pe trimestru, de exemplu: 3: introduceți 1 pentru o serie continuă.",
+  "label0": "Trasee suplimentare",
+  "autocorrelations": "Trasează autocorelatii",
+  "autocovariance": "Trasează autocovarianța",
+  "partialcorrelations": "Trasează corelațiile parțiale",
+  "label2": "Opțiuni pentru valorile ajustate",
+  "mainTitle": "Titlul principal",
+  "yaxisLabel": "Eticheta axei Y",
+  "help": {
+    "title": "Trasează serii temporale (cu corelații)",
+    "r_help": "help(acf, package='forecast')",
+    "body": "\n<b>Descriere</b></br>\nCreează un grafic de serii temporale cu autocorelatii, autocovarianță și corelații parțiale. BSkyPlotSeriesWithCorrelations este o funcție wrapper care apelează intern acf și/sau pacf în pachetul forecast.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyPlotSeriesWithCorrelations(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='titlu', ylab='eticheta axei y', dataset=\"Dataset2\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: variabilele selectate pentru a fi trase\n</li>\n<li>\nstart: Timpul primei observații ar trebui să fie introdus în formatul an,lună sau an,trimestru de exemplu (dacă datele dvs. sunt organizate pe luni, 1992,1 pentru ian 1992 sau dacă datele dvs. sunt organizate pe trimestre, atunci 1992,1 se referă la primul trimestru din 1992.\n</li>\n<li>\nfrequency: Numărul de observații în unitatea de timp. Exemplu: pentru lunar sunt 12 observații într-un an. Pentru trimestrial sunt 4 observații într-un an.\n</li>\n<li>\nautocorrelation: dacă este TRUE, un grafic de autocorelatie va fi generat de asemenea.\n</li>\n<li>\nautocovariance: dacă este TRUE, un grafic de autocovarianță va fi generat de asemenea.\n</li>\n<li>\npartialautocorrelations: dacă este TRUE, un grafic de corelații parțiale va fi generat de asemenea.\n</li>\n<li>\nplot.type: \"multiple\" pentru grafic separat și \"single\" pentru grafic combinat.\n</li>\n<li>\nmain: titlul principal al graficului\n</li>\n<li>\nylab: titlul pentru axa y\n</li>\n<li>\ndataset: numele setului de date din care au fost selectate variabilele.\n</li>\n</ul>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(acf, package ='forecast') creând un chunk de cod R făcând clic pe + în fereastra de ieșire\n"
+  }
+}
