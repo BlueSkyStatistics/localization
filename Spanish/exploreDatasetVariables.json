@@ -1,0 +1,13 @@
+{
+  "title": "Explorar variable(s)",
+  "navigation": "Explorar variables",
+  "variableListSelcted": "Selecciona una o más variables para explorar",
+  "histCurveDispChk": "Mostrar una curva normal en el histograma (los valores faltantes se eliminan para que la curva se muestre)",
+  "statTableOrientionChk": "Estadísticas resumidas en columnas",
+  "histBins": "Especifica el número de intervalos para el histograma",
+  "help": {
+    "title": "Explorar características de una o más variable(s)",
+    "r_help": "ayuda(resumen)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tGenera las siguientes estadísticas descriptivas y gráficos:\n\t\t\t\tmín, máx, media, mediana, modas, suma, sd, cv (coeficiente de variación), var, error estándar, sesgo, curtosis, mad, iqr y cuartiles. Además, se calcula el intervalo de confianza del 95% para la media y sd. Se muestran histogramas y gráficos QQ. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - usa R ayuda(resumen, paquete = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara calcular el sesgo y la curtosis, se utiliza el parámetro tipo = 3 como predeterminado. Con el parámetro tipo = 2, los valores de sesgo y curtosis probablemente coincidirán con los valores de la fórmula de MS Excel SKEW() y KURT()\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVer más detalles \n\t\t\t\t<br/>\n\t\t\t\thelp(skew, paquete = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, paquete = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

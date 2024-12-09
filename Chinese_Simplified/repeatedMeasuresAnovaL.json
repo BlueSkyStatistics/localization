@@ -1,0 +1,28 @@
+{
+  "helpText": "重复测量方差分析要求数据为长格式。如果您的数据不是长格式，请参见 数据集 > 重塑 > 更长",
+  "modelname": "输入模型名称",
+  "title": "重复测量方差分析",
+  "subjectID": "用作受试者标识符的变量",
+  "dependentVariable": "因变量",
+  "navigation": "方差分析，重复测量，长",
+  "response": "被试内变量，例如时间",
+  "Fixed": "被试间因素",
+  "covariates": "协变量",
+  "Summary": "估计的边际均值",
+  "Scatter_plot": "后续检验",
+  "Residual": "残差与拟合图",
+  "Histogram": "残差的直方图",
+  "brownForsythe": "布朗-福赛斯检验",
+  "levenesTest": "莱文检验",
+  "plotMeansCI": "均值和置信区间的图",
+  "simpleEffectsTest": "简单效应检验",
+  "label2": "后续检验和简单效应检验的选项",
+  "combon": "使用以下方法比较均值：",
+  "adjust": "调整p值的方法",
+  "displayBoxMDetails": "显示与Box的M检验相关的详细信息（注意：Box的M检验结果始终显示）",
+  "help": {
+    "title": "重复测量方差分析",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>描述</b></br>\n使用重复测量方差分析计算每个被试内因素、被试间因素和混合方差分析的交互项的F统计量</br>\n查找输出中的附加方差分析值表，显示MSE（均方误差）和pes（部分eta平方）</br>\n我们目前支持一个被试内和一个被试间因素，被试间因素是可选的。</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Identifier\", within = c(\"Time\"), \tbetween = c(\"Treatment\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndata: 包含数据的数据框。强制性\n</li>\n<li>\ndv: 字符向量（长度为1），指示数据中包含因变量的列。\n</li>\n<li>\nbetween: 字符向量，指示数据中的被试间因素/列。默认值为NULL，表示没有被试间因素。\n</li>\n<li>\nwithin: 字符向量，指示数据中的被试内（或重复测量）因素/列。默认值为NULL，表示没有被试内因素。\n</li>\n<li>\ncovariate: 字符向量，指示数据中的被试间协变量（即列）。默认值为NULL，表示没有协变量。请注意，如果协变量是数值型并应作为此类处理，则需要将factorize设置为FALSE。\n</li>\n<li>\nanovatable: 传递给生成ANOVA表的函数的进一步参数的列表。\n</li>\n</ul>\n<br/>\n<b>详细信息</b></br>\n请参见详细的R帮助</br>\n<b>值</b><br/>\naov_car、aov_4和aov_ez是Anova和aov的包装器，返回值取决于返回参数。默认情况下，返回一个类为\"afex_aov\"的S3对象，包含以下插槽：<br/>\n\"anova_table\": 类为c(\"anova\", \"data.frame\")的ANOVA表。<br/>\n\"aov\": 从aov返回的aov对象（不应用于评估效应的显著性，但可以传递给emmeans进行后续检验）。<br/>\n\"Anova\": 从Anova返回的对象，类为\"Anova.mlm\"（如果存在被试内因素）或类为c(\"anova\", \"data.frame\")。<br/>\n\"lm\": 拟合的lm对象并传递给Anova（即，类为\"lm\"或\"mlm\"的对象）。如果返回 = \"lm\"，也会返回。<br/>\n\"data\": 包含以下内容的列表：（1）长格式（用于aov的可能聚合数据），宽格式（用于拟合lm对象的数据），以及idata（如果存在被试内因素，则传递给car::Anova的idata参数）。如果返回 = \"data\"，也会返回。<br/>\n<b>包</b></br>\nafex</br>\n<b>帮助</b></br>\nhelp(aov_ez, package ='afex')\n单击R帮助按钮以获取详细的R帮助。您还可以输入help(aov_ez, package ='afex')并在R语法编辑器中按CTRL Enter以获取帮助\n    "
+  }
+}

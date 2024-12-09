@@ -1,0 +1,11 @@
+{
+  "title": "数値統計、describeを使用",
+  "navigation": "数値要約、describeを使用（レガシー）",
+  "tvarbox1": "変数を選択",
+  "tvarbox2": "グループ化変数を選択",
+  "help": {
+    "title": "数値統計、describeを使用",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>説明</b></br>\n次の数値統計を出力します：</br>\nカウント、平均、標準偏差、中央値、トリム、mad、最小、最大、範囲、歪度、尖度、標準誤差\n<br/>\n<b>使用法</b>\n<br/>\n<code> \n#BSkyFormatはきれいにフォーマットされた出力を表示します<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: データフレームまたは行列\n</li>\n</ul>\n<b>パッケージ</b></br>\npsych</br>\n<b>ヘルプ</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Mover Variables",
+  "navigation": "Mover Variables",
+  "varstomovelabel": "Variables a Mover",
+  "locationlabel": "Ubicación",
+  "firstlabel": "Primero",
+  "lastlabel": "Último",
+  "afterselectedlabel": "Después de la Variable Seleccionada",
+  "aftervarlabel": "",
+  "help": {
+    "title": "Mover Variables",
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\nEsto moverá variables a una ubicación especificada en el conjunto de datos.\n<br/><br/>\n<b>Variables a Mover:</b> Variables para mover a una ubicación diferente. Se colocarán en el orden especificado en este cuadro.\n<br/><br/>\n<b>Ubicación:</b> Ubicación en el conjunto de datos para mover las variables. <b>Primero</b> coloca las variables al principio del conjunto de datos.  \n<b>Último</b> coloca las variables al final del conjunto de datos.  <b>Después de la Variable Seleccionada</b> coloca las variables después de esta variable en el conjunto de datos.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> dplyr\n\t\t\t"
+  }
+}

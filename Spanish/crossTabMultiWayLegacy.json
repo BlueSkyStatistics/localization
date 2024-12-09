@@ -1,0 +1,29 @@
+{
+    "title": "Tabla cruzada",
+    "navigation": "Tabla cruzada (Legado)",
+    "row": "Variable de fila",
+    "column": "Variable de columna",
+    "layer": "Variable(s) de capa",
+    "weight": "Peso (uno)",
+    "label1": "Estadísticas",
+    "chisq": "Chi-cuadrado",
+    "mcnemar": "McNemar",
+    "fisher": "Fisher",
+    "label2": "Residuos",
+    "unstandardized": "No estandarizado",
+    "standardized": "Estandarizado",
+    "ro": "Standardizat",
+    "adjusted": "Ajustado",
+    "label3": "Porcentajes",
+    "rowpercent":"Fila",
+    "colpercent": "Columna",
+    "label4": "Conteos",
+    "expected": "Esperado",
+    "label5": "Formato de salida de tabla larga",
+    "longTbl": "Tabla larga",
+    "help": {
+        "title": "Tabla cruzada",
+        "r_help": "help(CrossTable, package=gmodels)",
+        "body": "<b>Descripción</b></br>\nCrea una tabla cruzada con variables de fila, columna y capa y, opcionalmente, muestra lo siguiente:<br/>\nConteos esperados<br/>\nPorcentajes de filas y columnas<br/>\nResiduos no estandarizados, estandarizados y ajustados<br/>\nChi-cuadrado con razón de probabilidades, estadísticas de McNemar y Fisher<br/>\n<br/>\n<b>Uso</b>\n<br/>\n<code>\nBSkyCrossTable(x,y,capas, peso, nombre_de_dataset, chisq= FALSO, prop.r=FALSO, prop.c=FALSO, resid=FALSO, sresid=FALSO, esperado=FALSO, asresid=FALSO)\n</code><br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>x: variable de fila</li>\n<li>y: variable de columna</li>\n<li>capas: una o más variables para capas</li>\n<li>peso: una variable numérica que contiene los pesos de frecuencia</li>\n<li>nombre_de_dataset: Nombre del conjunto de datos del que se eligen x, y y capas (variables)</li>\n<li>chisq: si es VERDADERO genera una tabla de chi-cuadrado</li>\n<li>prop.r: Se producen porcentajes de fila si esto es VERDADERO</li>\n<li>prop.c: Se generan porcentajes de columna si esto es VERDADERO</li>\n<li>resid: Si es VERDADERO, se generan residuos no estandarizados</li>\n<li>sresid: Si es VERDADERO, se generan residuos estandarizados</li>\n<li>esperado: Si es VERDADERO, se generan conteos esperados</li>\n<li>asresid: Si es VERDADERO, se generan residuos ajustados</li>\n</ul>\n<b>valor</b><br/>Una lista con los resultados<br/>\n<b>Ejemplo</b><br/>\n<code>\nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('fabricante'),y=c('modelo'),<br/>\ncapas=c('tipo'),nombre_de_dataset='Dataset2',<br/>\nchisq = FALSO,prop.r=FALSO,prop.c=FALSO,<br/>\nresid=FALSO,sresid=FALSO,esperado=FALSO,<br/>\nasresid=FALSO)<br/>\nBSkyFormat(BSky_Multiway_Cross_Tab)</code><br/>\n<b>Paquete</b><br/>gmodels<br/>\n<b>Ayuda</b><br/>Para obtener ayuda detallada, haga clic en el icono de R en la esquina superior derecha de este cuadro de diálogo o ejecute el siguiente comando: ayuda(CrossTable, paquete=gmodels) y cree un bloque de código R haciendo clic en + en la ventana de salida\n"
+        }
+}

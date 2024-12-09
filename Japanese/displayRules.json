@@ -1,0 +1,24 @@
+{
+  "title": "表示ルール",
+  "navigation": "表示ルール",
+  "rulename": "既存のルールオブジェクトを入力してください",
+  "dosortingchk": "ルールをソートする",
+  "sortopt": "ソートオプション",
+  "sortby": "ソート基準",
+  "confchk": "信頼度",
+  "liftchk": "リフト",
+  "suppchk": "サポート",
+  "sortord": "ソート順",
+  "increasing": "昇順",
+  "decreasing": "降順",
+  "noofrules": "表示するルールの数",
+  "rulecount": "",
+  "fromto": "ルールを表示",
+  "from": "から",
+  "to": "まで",
+  "help": {
+    "title": "表示ルール",
+    "r_help": "help(inspect, package='arules')",
+    "body": "\n            <b>\n\t\t\tパッケージ : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspect\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\t説明\n\t\t\t</b>\n\t\t\t<br/><br/>\n            関連性やトランザクションを表示するための一般的な関数inspectとS4メソッドを提供し、オンライン検査用にフォーマットされた追加情報を表示します。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t使用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspect(x, ...)\n            </code>\n            <br/><br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            x: 関連性またはトランザクションのセットまたはitemMatrix。\n            </li>\n            <li>\n            ...: 出力をカスタマイズするために使用できる追加の引数: setStart, setEnd, itemSepおよびruleSep。出力行が非常に長くなる場合、アイテムは1行に1つだけ印刷されます。これはlinebreakを使用して直接制御することもできます。\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sort\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\t説明\n\t\t\t</b>\n\t\t\t<br/><br/>\n            関連性のクラス（例：アイテムセットまたはルール）の要素を、関連性のスロット品質に格納された測定値の値に従ってソートするためのメソッドsortを提供します。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t使用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## S4メソッドの署名 'associations'\n            arules::sort(x, decreasing = TRUE, na.last = NA, \n            by = \"support\", order = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4メソッドの署名 'associations'\n            head(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4メソッドの署名 'associations'\n            tail(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>引数</b><br/>\n            <ul>\n            <li>\n            x: ソートされるオブジェクト。\n            </li>\n            <li>\n            decreasing: 論理値。ソートは昇順または降順にすべきですか？（デフォルトは降順）\n            </li>\n            <li>\n            na.last: associationsではna.lastはサポートされていません。NAsは常に最後に配置されます。\n            </li>\n            <li>\n            by: xをソートするために使用される品質測定値を指定する文字列。\n            </li>\n            <li>\n            order: ソートされた関連性の代わりに順序ベクトルを返すべきですか？\n            </li>\n            <li>\n            n: 返される関連性の数を示す単一の整数。\n            </li>\n            <li>\n            ... : さらなる引数は無視されます。\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            詳細\n            </b> \n            <br/>\n            sortは、大規模な関連性のセットに対して比較的遅いため、大きなデータ構造をコピーして再配置する必要があります。ソートは関連性のセットの2番目のコピーを作成するため、遅くなり、メモリを消費する可能性があります。必要な関連性が上位n個だけの場合、headを使用してbyを使用すると、すべてのデータをコピーして再配置することなく、これをより早く実行できます。tailも同様に機能します。\n            <br/><br/>  \n            <b> \n            値\n            </b> \n            <br/>\n            xと同じクラスのオブジェクト。                  \n    "
+  }
+}

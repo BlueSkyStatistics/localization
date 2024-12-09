@@ -1,0 +1,16 @@
+{
+  "title": "创建 Box-Behnken (定量) 设计",
+  "navigation": "创建 Box-Behnken (定量) 设计",
+  "selectedvars": "选择变量",
+  "datasetname": "设计名称",
+  "numCenter": "每个区块的中心点整数数量",
+  "blockName": "区块名称",
+  "lbl1": "您可能不需要更改随机化设置",
+  "randomseeds": "随机化种子",
+  "randomizationChk": "随机生成设计",
+  "help": {
+    "title": "创建 Box-Behnken (定量) 设计",
+    "r_help": "help(bbd.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tbbd.design 函数用于生成 Box-Behnken 设计，使用 rsm 包\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用 R help(bbd.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为 factors for bbd design.xlsx 的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

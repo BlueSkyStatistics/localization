@@ -1,0 +1,31 @@
+{
+  "title": "圓餅圖",
+  "suppressLabels": "隱藏所有計數和百分比的標籤",
+  "optionsLabels": "標籤選項",
+  "suppressThreshold": "隱藏低於指定閾值百分比的計數和百分比標籤",
+  "radius": "指定顯示標籤的半徑（增加半徑會將標籤移出）",
+  "radiusNote": "注意：當選擇顯示同心圓的選項時，上述選項不適用。",
+  "navigation": "圓餅圖",
+  "concentricCircles": "顯示同心圓（僅在指定X軸變量時適用）",
+  "x": "X軸，指定因子變量",
+  "y": "Y變量，指定數值變量",
+  "fill": "填充，指定因子變量",
+  "alpha": "不透明度（0-1）",
+  "width": "寬度",
+  "rdgrp1": "填充比例",
+  "flip": "翻轉軸",
+  "barcolor": "條形顏色（選擇顏色後，點擊控制外部以應用）",
+  "specify_a_title": "輸入標題",
+  "x_title": "X軸標籤",
+  "y_title": "Y軸標籤",
+  "Facetrow": "面板行",
+  "Facetcolumn": "面板列",
+  "Facetwrap": "面板包裝",
+  "Facetscale": "面板比例",
+  "facets_lbl" : "面",
+  "help": {
+    "title": "圓餅圖",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>描述</b></br>\n            圓餅圖（或圓形圖）是一種圓形統計圖形，分為幾個切片以說明數值比例。在圓餅圖中，每個切片的弧長（因此其中心角和面積）與其所代表的數量成比例。數量可以表示為計數或百分比。\n            可以通過指定因子變量選擇性地創建面板。您還可以選擇性地指定主題，並為X軸和Y軸指定標題和標籤。</br>\n            當您指定多個X變量時，我們會為每個X變量創建一個單獨的圓餅圖。</br>\n            半徑允許您控制標籤的位置。半徑為1時，標籤位於圓餅的中心，半徑為1.6時，標籤位於圓餅外部。</br>\n            外圍的淺灰色圓圈代表計數或總數。請參見圓餅圖底部的文本以獲取詳細信息。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            #您可以為單個因子變量創建圓餅圖，圓餅將代表每個因子級別的計數。這裡的因子變量將對應於填充<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"圓餅圖，填充：物種\") +\n\tylab(\"\") + \n\txlab(\"計數\")</br></br>\n            #您可以通過指定一個比例/數值變量作為Y變量來創建圓餅圖，並通過因子變量填充圓餅的切片。圓餅的填充是通過對每個因子變量的級別的Y變量的值進行求和來實現的，請參見下面的示例<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #您可以指定X變量、Y變量和填充。切片是為每個X變量的級別創建的，並通過每個在填充中指定的變量的Y變量的值的總和進行填充。<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集​\n            </li>\n            <li>\n            aes():    生成美學映射，描述數據中的變量如何映射到視覺屬性（美學）上。​\n            </li>\n            <li>\n            x: （可選）因子/類別變量。條形的長度對應於每個因子變量的計數。​\n            </li>\n            <li>\n            Y: （可選）數值變量\n            </li>\n            <li>\n            fill: （可選）一個可選的因子/類別變量，用於分組X中的級別計數（見上文）​\n            </li>\n            <li>\n            geom_bar(): 創建條形圖，position =\"fill\"用每個分組級別的百分比填充條形。​\n            </li>\n            <li>\n            Coor_polar(): 極坐標系統最常用於圓餅圖，這是一種極坐標中的堆疊條形圖。\n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）​\n            </li>\n            <li>\n            alpha: 控制不透明度，取值範圍在0-1之間。1表示無不透明度。\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>幫助</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            其他：點擊R幫助按鈕以獲取詳細的R幫助。您還可以輸入help(labs)、help(geom_bar)、help(cord_polar)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)​            \n    "
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Rapports de cotes / Risques relatifs, tableau M par 2",
+  "navigation": "Rapports de cotes / Risques relatifs, tableau M par 2",
+  "outcomevarlabel": "Variable de résultat (facteur binaire)",
+  "expvarlabel": "Variable d'exposition/prévision (facteur)",
+  "statlabel": "Statistique",
+  "orlabel": "Rapports de cotes",
+  "rrlabel": "Risques relatifs",
+  "oresttypelabel": "Type d'estimation des rapports de cotes",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "Mid-p",
+  "orestsmalllabel": "Ajusté pour petits échantillons",
+  "rresttypelabel": "Type d'estimation des risques relatifs",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "Ajusté pour petits échantillons",
+  "reversallabel": "Inversion de catégorie",
+  "revnonelabel": "Pas d'inversion",
+  "revexplabel": "Exposition",
+  "revoutlabel": "Résultat",
+  "revbothlabel": "Les deux",
+  "cilevellabel": "Niveau de confiance (0-1)",
+  "help": {
+    "title": "Rapports de cotes / Risques relatifs, tableau M par 2",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\nCeci est utilisé pour comparer les probabilités d'avoir une \"maladie\" pour un groupe par rapport à un autre, sous forme de rapport de cotes (rapport de cotes) ou de rapport de probabilité (risque relatif).  \nLes cotes de \"maladie\" sont définies comme la probabilité de \"maladie\" divisée par la probabilité de \"pas de maladie\". Un tableau de fréquences de résultats dans chaque groupe est fourni.  \nDe plus, un tableau de rapports de cotes ou de risques relatifs pour chaque groupe par rapport au groupe de référence avec des intervalles de confiance et une valeur p de Chi-Carré de Wald est inclus.  Enfin, \nun tableau de valeurs p est montré avec des versions exactes de mid-p, exact de Fisher et Chi-Carré de Wald, comparant chaque groupe au groupe de référence. \n<br/><br/>\n<b>Variable de résultat :</b> Variable binaire \"maladie\" (oui/non) d'intérêt.  Par défaut, la catégorie la plus élevée dans l'ordre de tri est définie comme \"maladie oui\".\n<br/><br/>\n<b>Variable d'exposition/prévision :</b> Groupes à comparer.  Peut avoir plus de 2 groupes.\n<br/><br/>\n<b>Statistique :</b> Quelle statistique à calculer\n<br/><br/>\n<b>Type d'estimation des rapports de cotes / risque relatif :</b> Wald (vraisemblance maximale inconditionnelle), Fisher (vraisemblance maximale conditionnelle), Mid-p (méthode médiane non biaisée), ou Ajusté pour petits échantillons\n<br/><br/>\n<b>Inversion de catégorie :</b>  Cela contrôle si oui ou non inverser l'ordre des catégories de la variable d'exposition ou des catégories de la variable de résultat.  Inverser la variable d'exposition \nchangera le groupe de référence pour les rapports de cotes.  Inverser la variable de résultat changera la catégorie qui correspond à \"maladie\".\n<br/><br/>\n<b>Niveau de confiance :</b> niveau pour les intervalles de confiance ; par défaut 0,95\n<br/><br/>\n<b>Packages R requis :</b> epitools\n\t\t\t"
+  }
+}

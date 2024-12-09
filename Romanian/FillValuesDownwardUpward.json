@@ -1,0 +1,14 @@
+{
+  "title": "Umpleți valorile în jos sau în sus",
+  "navigation": "Umpleți valorile în jos sau în sus",
+  "fillinvars": "Variabile pentru umplerea valorilor",
+  "groupbyvars": "Variabile pentru grupare",
+  "directionlabel": "Direcție",
+  "downward": "În jos",
+  "upward": "În sus",
+  "help": {
+    "title": "Umpleți valorile în jos sau în sus",
+    "r_help": "help(fill, package ='tidyr')",
+    "body": "\nAceastă fereastră de dialog umple valorile lipsă în coloanele setului de date folosind intrarea anterioară din fiecare coloană. Acest lucru poate fi util în cazurile în care valorile nu sunt repetate, ci sunt înregistrate de fiecare dată când se schimbă. De obicei, acest lucru înseamnă că setul de date este sortat într-un mod semnificativ. Variabilele pentru care valorile sunt umplute vor fi suprascrise.\n<br/><br/>\n<b>Variabile pentru umplerea valorilor:</b> Specificați variabilele pentru care valorile lipsă vor fi umplute\n<br/><br/>\n<b>Variabile pentru grupare:</b> Specificați variabilele care grupează rândurile împreună. Valorile lipsă vor fi umplute în cadrul grupurilor definite de aceste variabile. De exemplu, gruparea după un identificator de subiect ar umple valorile în cadrul subiecților.\n<br/><br/>\n<b>Direcție:</b> Specificați direcția pentru care valorile vor fi umplute.\n<br/><br/>\n<b>Pachete R necesare:</b> tidyverse\n\t\t\t"
+  }
+}

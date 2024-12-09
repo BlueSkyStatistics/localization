@@ -1,0 +1,16 @@
+{
+  "title": "Ajuster le modèle de forêt aléatoire",
+  "navigation": "Ajuster",
+  "dependentvar": "Variable dépendante",
+  "independentvars": "Variable(s) indépendante(s)",
+  "ntreetry": "Nombre d'arbres à essayer",
+  "stepfactor": "Facteur de pas",
+  "improve": "Améliorer",
+  "trace": "Trace",
+  "plot": "Tracer",
+  "help": {
+    "title": "Ajuster le modèle de forêt aléatoire",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>Description</b></br>\nEn commençant par la valeur par défaut de mtry, recherchez la valeur optimale (par rapport à l'estimation de l'erreur hors sac) de mtry pour randomForest. \n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : matrice ou cadre de données des variables prédictives\n</li>\n<li>\ny : vecteur de réponse (facteur pour la classification, numérique pour la régression)\n</li>\n<li>\nntreeTry : nombre d'arbres utilisés à l'étape d'ajustement.\n</li>\n<li>\nstepFactor : à chaque itération, mtry est gonflé (ou dégonflé) par cette valeur.\n</li>\n<li>\nimprove : l'amélioration (relative) de l'erreur OOB doit être d'au moins cette valeur pour que la recherche continue\n</li>\n<li>\ntrace : s'il faut imprimer la progression de la recherche.\n</li>\n<li>\nplot : s'il faut tracer l'erreur OOB en fonction de mtry.\n</li>\n<li>\n... : options à donner à randomForest\n</li>\n</ul>\n<b>Valeur</b></br>\nRenvoie une matrice dont la première colonne contient les valeurs de mtry recherchées, et la deuxième colonne l'erreur OOB correspondante.</br>\n<b>Paquet</b></br>\nrandomForest​;BlueSky</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(tuneRF,package='randomForest')\n"
+  }
+}

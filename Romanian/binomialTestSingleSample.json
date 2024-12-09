@@ -1,0 +1,16 @@
+{
+  "title": "Test binomial exact pentru un singur eșantion",
+  "navigation": "Test binomial",
+  "tvarbox1": "Factor (unu) cu doar 2 niveluri",
+  "label1": "Ipoteza alternativă",
+  "test1": "Media populației != mu",
+  "test2": "Media populației > mu",
+  "test3": "Media populației < mu",
+  "txtbox1": "Nivel de încredere",
+  "txtbox2": "Ipoteza nulă (mu în intervalul 0-1)",
+  "help": {
+    "title": "Test binomial exact",
+    "r_help": "help(binom.test, package=stats)",
+    "body": "\n                <b>Descriere</b></br>\nExecută un test exact al unei ipoteze nule simple despre probabilitatea de succes într-un experiment Bernoulli.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code>\nbinom.test(x, n, p = 0.5,<br/>\n           alternativă = c(\"two.sided\", \"less\", \"greater\"),<br/>\n           conf.level = 0.95)<br/>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: numărul de succese, sau un vector de lungime 2 care dă numerele de succese și eșecuri, respectiv.\n</li>\n<li>\nn: numărul de încercări; ignorat dacă x are lungimea 2.\n</li>\n<li>\np: probabilitatea ipotetică de succes.\n</li>\n<li>\nalternativă: indică ipoteza alternativă și trebuie să fie una dintre \"two.sided\", \"greater\" sau \"less\". Poți specifica doar litera inițială.\n</li>\n<li>\nconf.level: nivelul de încredere pentru intervalul de încredere returnat.\n</li>\n</ul>\n<b>Detalii</b></br>\nIntervalele de încredere sunt obținute printr-o procedură dată prima dată de Clopper și Pearson (1934). Aceasta garantează că nivelul de încredere este cel puțin conf.level, dar în general nu oferă cele mai scurte intervale de încredere.<br/>\n<b>Valoare</b><br/>\nO listă cu clasa \"htest\" conținând următoarele componente:<br/>\nstatistică: numărul de succese.<br/>\nparametru: numărul de încercări.<br/>\np.value: valoarea p a testului.<br/>\nconf.int: un interval de încredere pentru probabilitatea de succes.<br/>\nestimate: probabilitatea estimată de succes.<br/>\nnull.value: probabilitatea de succes sub nul, p.<br/>\nalternativă: un șir de caractere descriind ipoteza alternativă.<br/>\nmetodă: șirul de caractere \"Test binomial exact\".<br/>\ndata.name: un șir de caractere care dă numele datelor.<br/>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nhelp(binom.test, package=stats)\n    "
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "比较分位数回归模型斜率",
+  "navigation": "分位数回归模型",
+  "label1": "比较N个分位数回归模型。",
+  "label4": "**注意：从模型调优（类训练）创建的模型不受支持",
+  "modelselector1": "选择2个或更多分位数回归模型以比较斜率：",
+  "help": {
+    "title": "比较分位数回归模型斜率",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>描述</b></br>\n计算两个或多个分位数回归拟合的检验统计量。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nobject: rq类的对象，源自对rq的调用。\n</li>\n</ul>\n<b>详细信息</b><br/>\n感兴趣的假设是模型的斜率系数是相同的。检验统计量是Koenker和Bassett（1982）中描述的Wald检验的一个变体。<br/>\n<b>值</b><br/>\n一个继承自\"data.frame\"类的\"anova\"类对象。<br/>\n<b>包</b></br>\nquantreg</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的R图标，或在R语法编辑器中运行以下命令 help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

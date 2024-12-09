@@ -1,0 +1,13 @@
+{
+  "title": "Muestra Reducida",
+  "navigation": "Muestra, Muestra Reducida",
+  "description": "Reducción de Datos Desequilibrados. DownSample muestreará aleatoriamente un conjunto de datos para que todas las clases tengan la misma frecuencia que la clase minoritaria",
+  "downsample": "Ingrese el nombre del conjunto de datos",
+  "seed": "Establecer semilla",
+  "dependent": "Variable para reducir la muestra por",
+  "help": {
+    "title": "Muestra Reducida",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descripción</b></br>\nReducción de Datos Desequilibrados. DownSample muestreará aleatoriamente un conjunto de datos para que todas las clases tengan la misma frecuencia que la clase minoritaria\n<br/>\n<b>Uso</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Clase\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: una matriz o marco de datos de variables predictoras\n</li>\n<li>\ny: una variable de factor con las membresías de clase\n</li>\n<li>\nlist: ¿debería la función devolver list(x, y) o unir x e y? Si es TRUE, la salida se convertirá en un marco de datos.\n</li>\n<li>\nyname: si list = FALSE, una etiqueta para la columna de clase\n</li>\n</ul>\n<b>Detalles</b></br>\nSe utiliza muestreo aleatorio simple para reducir la muestra de la(s) clase(s) mayoritaria(s). Tenga en cuenta que los datos de la clase minoritaria se dejan intactos y que las muestras se reordenarán en la versión reducida.\nPara aumentar la muestra, todos los datos originales se dejan intactos y se añaden muestras adicionales a las clases minoritarias con reemplazo.\n<b>Valor</b><br/>\nYa sea un marco de datos o una lista con elementos x e y.</br>\n<b>Ejemplos</b></br>\n## Un ejemplo ridículo...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Paquete</b></br>\ncaret</br>\n<b>Ayuda</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

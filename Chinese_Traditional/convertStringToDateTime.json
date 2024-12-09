@@ -1,0 +1,17 @@
+{
+  "title": "將字符變量轉換為日期和時間",
+  "navigation": "字符到日期和時間",
+  "label1": "選擇轉換變量的後綴或前綴",
+  "suffix": "後綴",
+  "prefix": "前綴",
+  "prefixOrSuffix": "輸入前綴或後綴",
+  "Destination": "選擇要轉換為日期的字符變量",
+  "DateFormat": "選擇字符字符串的格式",
+  "TimeZone": "選擇時區（默認 - 未選擇的情況下為PC的本地時區）",
+  "advanced_lbl" : "進階",
+  "help": {
+    "title": "將字符轉換為日期",
+    "r_help": "help(strptime, package=\"base\")",
+    "body": "\n<b>描述</b></br>\n將字符轉換為日期（POSIXct類）。您需要指定存儲在字符字符串中的日期格式。\n上述函數在基礎包中內部調用strptime。我們擴展了strftime以支持多個變量。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkystrptime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n數據：作為字符字符串的數據集名稱。\n</li>\n<li>\nvarNames：需要轉換為日期（POSIXct類）的字符類變量名稱\n</li>\n<li>\ndateFormat：字符字符串。格式方法的默認值是 \"%Y-%m-%d %H:%M:%S\" 如果任何元素有非午夜的時間組件，否則為 \"%Y-%m-%d\"。如果設置了 options(\"digits.secs\")，則將為秒打印指定數量的數字\n</li>\n<li>\ntimezone：指定用於轉換的時區的字符字符串。系統特定（見 as.POSIXlt），但 \"\" 是當前時區，而 \"GMT\" 是UTC。無效值通常被視為UTC，在某些平台上會發出警告。\n</li>\n<li>\nprefixOrSuffix：為POSIXct類的轉換變量指定前綴或後綴。可以是 c(\"prefix\") 或 c(\"suffix\")。使用此前綴/後綴創建的新變量將附加到原始變量名稱。\n</li>\n<li>\nprefixOrSuffixValue = 指定要使用的前綴或後綴名稱的字符向量。\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>幫助</b></br>\nhelp(strptime)\n"
+  }
+}

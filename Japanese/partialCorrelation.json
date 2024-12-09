@@ -1,0 +1,13 @@
+{
+  "title": "セミ部分相関",
+  "navigation": "セミ部分",
+  "statistic": "方法を選択",
+  "tvarbox1": "変数を選択",
+  "correlationType": "相関の種類",
+  "tvarbox2": "制御変数を選択",
+  "help": {
+    "title": "セミ部分相関",
+    "r_help": "help(spcor.test, package=ppcor)",
+    "body": "\n            <b>説明</b></br>\n            第三の変数を考慮した二つの変数のセミ部分相関。選択した変数の制御において、指定された各変数間のペアワイズセミ部分相関を計算します。制御変数の制御で指定された変数を考慮します。<br/>\n            spcor.test関数のラッパーを作成し、指定された各変数のペアに対してspcor.testを呼び出します。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            引数\n            x: 数値ベクトル。\n            </li>\n            <li>\n            y: 数値ベクトル。\n            </li>\n            <li>\n            y: 数値ベクトル。\n            </li>\n            <li>\n            method: 計算する部分相関係数を示す文字列。\"pearson\"（デフォルト）、\"kendall\"、または\"spearman\"のいずれかを省略できます。\n            </li>\n            </ul>\n            <b>詳細</b></br>\n            セミ部分相関は、第三の変数からの変動を第二の変数からのみ除去した二つの変数の相関です。分散共分散行列の行列式が数値的にゼロの場合、Moore-Penrose一般化逆行列が使用されます。この場合、変数の数がサンプルサイズ以上である場合、p値と統計量は提供されません。</br>\n            <b>値</b><br/>\n            estimate: 二つの変数間のセミ部分（部分）相関係数。<br/>\n            p.value: テストのp値。<br/>\n            n: サンプルの数。<br/>\n            <b>例</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>パッケージ</b></br>\n            ppcor</br>\n            <b>ヘルプ</b></br>\n            help(pcor.test, package=ppcor)\n"
+  }
+}

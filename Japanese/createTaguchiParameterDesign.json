@@ -1,0 +1,16 @@
+{
+  "title": "田口スタイルの内外パラメータ設計を作成する",
+  "navigation": "田口パラメータ設計を作成する",
+  "datasetname": "設計名",
+  "inner": "内設計（すでにランダム化されている必要があります）",
+  "outer": "外設計",
+  "lbl1": "方向 - 縦または横形式で設計を生成する",
+  "directionLongrad": "縦形式",
+  "directionWiderad": "横形式",
+  "responses": "空白のままにするか、1つ以上の応答名を指定してください（名前の間にカンマを入れ、引用符やスペースは入れないでください）",
+  "help": {
+    "title": "田口スタイルの内外パラメータ設計を作成する",
+    "r_help": "help(param.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tparam.design関数は、田口スタイルのパラメータ設計を生成します。これは、内配列と外配列を使用した信号対ノイズ調査のためのパラメータ設計を作成し、それらのフォーマットとデータ集約を容易にします。実験は、内配列の制御因子と外配列のノイズ因子を交差させます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプを得るには、R help(param.design, package = DoE.base)を使用してください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、factor_grid_twolevel_screen_Design.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くメニューから開いてください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. 選択した因子 - AirVolume、Valve、Barrel、Angleを使用して、設計名FFinnerRandomの完全因子設計を作成し、「設計生成のランダム化」ボックスにチェックを入れてください。\n\t\t\t\t<br/>\n\t\t\t\t2. 選択した因子 - WadType、Voltage、BallTypeを使用して、設計名FFouterの直交配列設計を作成してください。\n\t\t\t\t<br/>\n\t\t\t\t3. タグチ設計（このダイアログ/UI）を作成し、ステップ1およびステップ2で既に作成したFFinnerRandomおよびFFouter設計を選択してください。\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

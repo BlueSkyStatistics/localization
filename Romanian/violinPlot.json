@@ -1,0 +1,22 @@
+{
+  "title": "Grafic Violin",
+  "navigation": "Violin",
+  "x": "Axa X, specificați o variabilă factor",
+  "y": "Axa Y, specificați o variabilă numerică",
+  "fill": "Umplere, specificați o variabilă factor",
+  "alpha": "Opacitate (0-1)",
+  "flip": "Răsturnați axa",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare de fațete",
+  "Facetscale": "Scală de fațete",
+  "facets_lbl" : "Fațete",
+  "help": {
+    "title": "Grafic Violin",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>Descriere</b></br>\n            Un grafic violin este o afișare compactă a unei distribuții continue. Este o combinație între geom_boxplot() și geom_density(): un grafic violin este un grafic de densitate oglindit afișat în același mod ca un boxplot.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"Grafic violin pentru ...\")\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Setul de date implicit​\n            </li>\n            <li>\n            x: O variabilă factor​ care împarte variabila y de mai jos în grupuri.\n            </li>\n            <li>\n            y: O variabilă numerică pentru care se generează graficul violin\n            </li>\n            <li>\n            fill: O variabilă factor/categorială opțională pentru a grupa suplimentar grupurile existente. Fiecare subgrup va fi afișat într-o culoare distinctă.​\n            </li>\n            <li>\n            aes(): Generează mapări estetice care descriu modul în care variabilele din date sunt mapate la proprietăți vizuale (estetice) ale geoms.​\n            </li>\n            <li>\n            geom_violin(): Creează graficul violin. \n            </li>\n            <li>\n            Labs(): Schimbă etichetele axelor și titlurile legendelor (Aceasta este opțional)​\n            </li>\n            <li>\n            facet_grid(): Așează panourile într-o grilă (Aceasta este opțional)​\n            </li>\n            <li>\n            theme_calc(): Specifică tema calculatorului (Aceasta este opțional)​\n            </li>\n            <li>\n            coord_flip(): Răsturnați axa (Aceasta este opțional)​\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajutor</b></br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

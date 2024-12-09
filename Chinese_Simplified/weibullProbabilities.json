@@ -1,0 +1,15 @@
+{
+  "title": "韦布尔概率",
+  "navigation": "韦布尔概率",
+  "varvals": "输入变量值，用逗号分隔。例如：3,0.5",
+  "shape": "形状",
+  "scale": "尺度",
+  "labelSig": "显著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "韦布尔概率",
+    "r_help": "help(pweibull, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            韦布尔分布的密度、分布函数、分位数函数和随机生成，参数为形状和尺度。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察数量。如果length(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>shape, scale : 形状和尺度参数，后者默认为1。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>细节</b>\n            <br/>\n            形状参数为a，尺度参数为b的韦布尔分布的密度为\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            对于x > 0，累积分布函数为F(x) = 1 - exp(- (x/b)^a)，均值为E(X) = b Γ(1 + 1/a)，方差Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2)。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dweibull给出密度，pweibull给出分布函数，qweibull给出分位数函数，rweibull生成随机偏差。\n            <br/>\n            无效参数将导致返回值NaN，并发出警告。\n            <br/>\n            结果的长度由rweibull的n决定，对于其他函数则为数值参数的最大长度。\n            <br/>\n            除n以外的数值参数会回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累计风险 <code>H(t) = - log(1 - F(t))</code> 为\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            这只是 <code>H(t) = (t/b)^a</code>。            \n      "
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "因子変数のコントラストを設定する",
+  "navigation": "コントラストを設定",
+  "target": "目的地",
+  "label1": "コントラスト",
+  "Dummy": "処置（ダミー）コントラスト",
+  "Deviation": "合計（偏差）コントラスト",
+  "Helmert": "ヘルマートコントラスト",
+  "Poly": "多項式コントラスト",
+  "help": {
+    "title": "コントラストを設定する",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>説明</b></br>\n            ​因子に関連付けられたコントラストを設定および表示します。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            x: Rオブジェクト。​\n            </li>\n            <li>\n            value: xのレベルにおけるコントラストの係数を与える列を持つ数値行列（またはスパースまたは密な行列）であるか、またはそのような行列を計算する関数の（引用された）名前、例えば「contr.treatment」、「contr.sum」、「contr.helmert」、「contr.poly」\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            stats</br>\n            <b>ヘルプ</b></br>\n            help(contrasts, package ='stats')       \n            "
+  }
+}

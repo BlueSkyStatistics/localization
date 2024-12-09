@@ -1,0 +1,32 @@
+{
+  "title": "创建常规（分数）因子2级设计",
+  "navigation": "创建常规（分数）因子2级设计",
+  "selectedvars": "选择变量",
+  "datasetname": "设计名称",
+  "lblheading": "大小和随机化",
+  "numOfRuns": "运行次数（如果指定，必须是2的幂，否则设为0）",
+  "numOfBlocks": "块数",
+  "alias2FIsChk": "块可能与2fis混淆",
+  "numOfCenterPts": "中心点数量（如果使用，至少2个）",
+  "centerPointDistribution": "中心点分布的位置数量（大于1）",
+  "replications": "重复",
+  "repeatOnlyChk": "仅重复",
+  "lbl1": "您可能不需要更改随机化设置",
+  "randomseeds": "随机化的种子",
+  "randomizationChk": "随机化设计生成",
+  "lbl2": "注意：仅影响MaxC2选择或未指定的运行次数的设计生成",
+  "lbldesignheading": "设计属性",
+  "roman": "最小分辨率（III，IV，V...）",
+  "marad": "MA（最大分辨率和最小失真）",
+  "maxC2rad": "MaxC2（最大清晰2fis的数量）",
+  "lbl3": "指定设计目录（可选）",
+  "designChk": "使用目录中的设计",
+  "designcatlgname": "设计目录名称，例如catlg",
+  "designnamefromcatlg": "来自设计目录的设计名称",
+  "nrunsChk": "从上述指定的设计自动计算运行次数",
+  "help": {
+    "title": "创建常规（分数）因子2级设计",
+    "r_help": "help(FrF2, package = FrF2)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tFrF2函数生成常规分数因子2级设计\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R help(FrF2, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t使用菜单DOE->检查设计->检查FrF2目录浏览可用的FrF2设计，以便从FrF2包中加载的设计目录中引用\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为factor_grid_Injection Molding FrF2.xlsx的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

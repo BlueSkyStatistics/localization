@@ -1,0 +1,10 @@
+{
+  "title": "R 套件詳細資訊",
+  "navigation": "套件詳細資訊",
+  "packageName": "選擇已安裝的 R 套件",
+  "help": {
+    "title": "R 套件詳細資訊",
+    "r_help": "help(packageDescription, package='utils')",
+    "body": "\n<b>描述</b></br>\n顯示所選套件的描述\n<br/>\n<b>用法</b>\n<br/>\n<code> \npackageDescription(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\npkg: 一個包含套件名稱的字串。\n</li>\n<li>\nlib.loc: 一個包含 R 函式庫目錄名稱的字串向量，或為 NULL。預設值為 NULL，對應於當前已知的所有函式庫。如果使用預設值，則在函式庫之前會搜索已加載的套件和命名空間。\n</li>\n<li>\nfields: 一個字串向量，給出要返回的字段標籤（如果文件中出現其他字段則會被忽略）。\n</li>\n<li>\ndrop: 如果為 TRUE 且 fields 的長度為 1，則返回一個包含相應字段值的單一字串，而不是 \"packageDescription\" 類別的對象。\n</li>\n</ul>\n<b>詳細資訊</b></br>\n套件的描述</br>\n<b>範例</b><br/>\n<code> \npackageDescription(\"stats\")\n</code> <br/>\n<b>套件</b></br>\nutils</br>\n<b>幫助</b></br>\n如需詳細幫助，請點擊此對話框覆蓋右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(packageDescription, package='utils')\n                "
+  }
+}

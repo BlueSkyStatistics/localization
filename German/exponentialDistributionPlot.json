@@ -1,0 +1,25 @@
+{
+  "title": "Exponentialverteilung Diagramm",
+  "navigation": "Exponentialverteilung Diagramm",
+  "rate": "Rate",
+  "pdenfun": "Dichtefunktion plotten",
+  "pdstfun": "Verteilungsfunktion plotten",
+  "lblregions": "Optional Regionen unter der Dichtefunktion angeben durch",
+  "xvals": "x-Werte",
+  "quantiles": "Quantile",
+  "lblRegFill": "Zu füllende Regionen (eine oder zwei angeben oder leer lassen)",
+  "lblreg1": "Region 1 :",
+  "lblreg2": "Region 2 :",
+  "lblregfrm": "Von",
+  "lblregto": "Bis",
+  "lblregcol": "Farbe",
+  "lblLegPos": "Position der Legende",
+  "toprt": "Oben rechts",
+  "toplt": "Oben links",
+  "topmid": "Oben Mitte",
+  "help": {
+    "title": "Exponentialverteilung Diagramm",
+    "r_help": "help(qexp, package=stats)",
+    "body": "\n            ​​\n            <b>Beschreibung</b>\n            <br/>\n            Dichte, Verteilungsfunktion, Quantilfunktion und Zufallszahlen für die Exponentialverteilung mit Rate rate (d.h. Mittelwert 1/rate).\n            <br/>\n            Verwendung\n            <br/>\n            <code>\n                dexp(x, rate = 1, log = FALSE)\n                <br/>\n                pexp(q, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qexp(p, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rexp(n, rate = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : Vektor von Quantilen.</li>\n                \n                \n                <li>p : Vektor von Wahrscheinlichkeiten.</li>\n                \n                \n                <li>n : Anzahl der Beobachtungen. Wenn length(n) > 1, wird die Länge als die benötigte Anzahl betrachtet.</li>\n                \n                \n                <li>rate : Vektor von Raten.</li>\n                \n                \n                <li>log, log.p : logisch; wenn TRUE, werden Wahrscheinlichkeiten p als log(p) angegeben.</li>\n                \n                \n                <li>lower.tail : logisch; wenn TRUE (Standard), sind die Wahrscheinlichkeiten P[X ≤ x], andernfalls P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Details</b>\n            <br/>\n            Wenn die Rate nicht angegeben ist, wird der Standardwert von 1 angenommen.\n            <br/>\n            Die Exponentialverteilung mit Rate λ hat die Dichte\n            <br/>\n            <code>f(x) = λ {e}^{- λ x}</code>\n            <br/>\n            für x ≥ 0.\n            <br/>\n            <br/><b>Wert</b>\n            <br/>\n            dexp gibt die Dichte an, pexp gibt die Verteilungsfunktion an, qexp gibt die Quantilfunktion an, und rexp generiert Zufallszahlen.\n            <br/>\n            Die Länge des Ergebnisses wird durch n für rexp bestimmt und ist das Maximum der Längen der numerischen Argumente für die anderen Funktionen.\n            <br/>\n            Die numerischen Argumente, die nicht n sind, werden auf die Länge des Ergebnisses wiederverwendet. Nur die ersten Elemente der logischen Argumente werden verwendet.\n            <br/>\n            <br/><b>Hinweis</b>\n            <br/>\n            Die kumulative Hazard H(t) = - log(1 - F(t)) ist -pexp(t, r, lower = FALSE, log = TRUE).            \n      "
+  }
+}

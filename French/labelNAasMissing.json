@@ -1,0 +1,18 @@
+{
+  "title": "Spécifiez une étiquette pour les NAs",
+  "navigation": "Étiqueter les NAs",
+  "target": "Variables factorielles pour étiqueter les valeurs NA",
+  "label1": "Entrez une étiquette pour le niveau \"NA\" pour les variables factorielles. La nouvelle étiquette peut être enregistrée dans les variables existantes ou de nouvelles variables en spécifiant un préfixe/suffixe. De nouvelles variables seront créées avec le préfixe/suffixe ajouté aux noms existants.",
+  "newLevels": "Entrez une étiquette pour le niveau \"NA\"",
+  "label2": "Créer de nouvelles variables ou écraser les variables existantes",
+  "rd3": "Spécifiez un suffixe (une nouvelle variable sera créée avec le suffixe)",
+  "txt3": "Entrez un suffixe",
+  "rd2": "Spécifiez un préfixe (une nouvelle variable sera créée avec le préfixe)",
+  "txt4": "Entrez un préfixe",
+  "rd1": "Écraser les variables existantes",
+  "help": {
+    "title": "Supprimer les NAs",
+    "r_help": "help(fct_explicit_na, package =forcats)",
+    "body": "\n<b>Description</b></br>\nEntrez une étiquette pour le niveau \"NA\" pour les variables factorielles. La nouvelle étiquette peut être enregistrée dans les variables existantes (nous écrasons les variables existantes) ou une nouvelle étiquette pour NA peut être enregistrée dans de nouvelles variables en spécifiant un préfixe/suffixe. De nouvelles variables seront créées avec le préfixe/suffixe ajouté aux noms existants. \nCela donne aux valeurs manquantes un niveau de facteur explicite, garantissant qu'elles apparaissent dans les résumés et sur les graphiques.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(Manquant)\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf : Un facteur (ou un vecteur de caractères).\n</li>\n<li>\nna_level : Niveau à utiliser pour les valeurs manquantes.\n</li>\n</ul>\n<b>Exemples</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>Package</b></br>\nforcats</br>\n<b>Aide</b></br>\nTapez la ligne ci-dessous dans l'éditeur de syntaxe R de BlueSky Statistics</br>\nhelp(fct_explicit_na, package =forcats)\n"
+  }
+}

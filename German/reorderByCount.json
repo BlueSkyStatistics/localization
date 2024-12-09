@@ -1,0 +1,21 @@
+{
+  "title": "Faktorebenen nach Anzahl neu anordnen",
+  "navigation": "Nach Anzahl neu anordnen",
+  "target": "Wählen Sie Faktorvariablen zur Neuordnung aus",
+  "label1": "Wählen Sie die Faktorvariablen aus, die nach Anzahl neu angeordnet werden sollen. Sie können vorhandene Variablen überschreiben oder neue Variablen erstellen, indem Sie ein Präfix/Nachsuffix angeben. Neue Variablen werden mit dem angehängten Präfix/Nachsuffix zu den vorhandenen Namen erstellt.",
+  "label2": "Neue Ebenen in neue Variable(n) speichern oder vorhandene Variable(n) überschreiben",
+  "rd3": "Geben Sie ein Nachsuffix an (Eine neue Variable wird mit dem Nachsuffix erstellt)",
+  "txt3": "Geben Sie ein Nachsuffix ein",
+  "rd2": "Geben Sie ein Präfix an (Eine neue Variable wird mit dem Präfix erstellt)",
+  "txt4": "Geben Sie ein Präfix ein",
+  "rd1": "Vorhandene Variablen überschreiben",
+  "label3": "Eine Reihenfolge angeben",
+  "Descending": "In absteigender Reihenfolge nach Anzahl",
+  "Ascending": "In aufsteigender Reihenfolge nach Anzahl",
+  "ordered": "Eine geordnete Faktorvariable erstellen (ordinal)",
+  "help": {
+    "title": "Variablen alphabetisch neu anordnen",
+    "r_help": "hilfe(sort)",
+    "body": "\n<b>Beschreibung</b></br>\nVariablen im Datensatz alphabetisch neu anordnen. Wir verwenden die Sortierfunktion, um die Namen der Spalten/Variablen im Datensatz zu sortieren, und die Auswahlfunktion im Paket dplyr, um die Spaltennamen in der richtigen alphabetischen Reihenfolge auszuwählen.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \n##Alphabetisch neu anordnen (A-Z)\nDatensatz_name <- Datensatz_name %>%   select(sort(names(.)))\n##Alphabetisch neu anordnen (Z-A)\nDatensatz_name <- Datensatz_name %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumente</b><br/>\nKeine<br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Hilfe</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Transpose Dataset, Variablen auswählen",
+  "navigation": "Variablen auswählen",
+  "transposedDataset": "Geben Sie einen Namen für das transponierte Dataset ein",
+  "destination": "Wählen Sie Variablen zum Transponieren aus",
+  "help": {
+    "title": "Ausgewählte Variablen transponieren",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Beschreibung</b></br>\nRuft die Transponierfunktion im Basis-Paket auf, die die ausgewählten Variablen transponiert und die Ergebnisse im neuen Dataset speichert. Sie müssen den Namen des Datasets angeben, das das transponierte Dataset speichert. Das neue transponierte Dataset wird im Raster angezeigt.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: ist eine Matrix oder ein Dataframe\n</li>\n</ul>\n<b>Wert</b><br/>\nEine Matrix, mit dim und dimnames, die entsprechend von denen von x konstruiert sind, und andere Attribute außer Namen werden übernommen.<br/>\n<b>Paket</b></br>\nbase<br/>\n<b>Hilfe</b></br>\nhelp(t, package='base')\n"
+  }
+}

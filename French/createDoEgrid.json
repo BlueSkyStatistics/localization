@@ -1,0 +1,15 @@
+{
+  "title": "Générer automatiquement les détails des facteurs (taille égale) pour une étude DoE",
+  "navigation": "Détails des facteurs (taille égale)",
+  "datasetname": "Nom de la table des détails des facteurs",
+  "numOfVars": "Nombre de facteurs",
+  "numOfFactorLevels": "Nombre maximum de niveaux parmi les facteurs",
+  "factorLevels": "Valeurs de niveau séparées par une virgule - exemple : -1, 1, 'chaîne1', 2, 0",
+  "autoFillChkbx": "Remplissage automatique des niveaux",
+  "label1": "Ignorer l'option suivante - option de nettoyage du jeu de données pour une utilisation ultérieure",
+  "convertFactorToCharInt": "Pour le jeu de données actif sélectionné - convertir toutes les colonnes de type facteur en caractère ou entier (et lorsque cette option est sélectionnée, toutes les options ci-dessus sur cette interface utilisateur seront ignorées)",
+  "help": {
+    "title": "Générer automatiquement les détails des facteurs",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tGénère automatiquement une table avec les détails des facteurs en fonction des paramètres spécifiés - nombre de facteurs et niveaux maximum pour les facteurs ainsi que les valeurs par défaut pour le facteur à utiliser. Si des valeurs non numériques sont utilisées pour le facteur, spécifiez-les entre guillemets simples par exemple 1,-1,'nom1',0,'chaîne2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUne fois que les détails des facteurs sont générés automatiquement et que la table des facteurs apparaît sur l'interface utilisateur de la grille de données, vous pouvez modifier les valeurs et/ou supprimer certaines valeurs de la grille pour manipuler la table comme vous le souhaitez, y compris des facteurs avec un nombre différent de valeurs \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSi le nombre de facteurs est <= 26, les facteurs sont nommés avec des lettres majuscules comme A, B, C, .., sinon, nommés comme F1, F2, ..., F27, F28, ..\n\t\t\t"
+  }
+}

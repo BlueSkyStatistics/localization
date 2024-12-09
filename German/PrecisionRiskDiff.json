@@ -1,0 +1,17 @@
+{
+  "title": "Stichprobengröße, Präzision einer Risikodifferenz",
+  "navigation": "Risikodifferenz",
+  "howtouse": "Geben Sie entweder die Stichprobengröße oder die Breite des Konfidenzintervalls an, und das andere wird berechnet",
+  "n1": "Stichprobengröße Gruppe 1",
+  "width": "Breite des Konfidenzintervalls",
+  "ratio": "Verhältnis der Stichprobengröße von Gruppe 1 zu Gruppe 2",
+  "prop1": "Ergebnisproportion Gruppe 1",
+  "prop2": "Ergebnisproportion Gruppe 2",
+  "conflevel": "Konfidenzniveau (0-1)",
+  "method": "Methode des Konfidenzintervalls",
+  "help": {
+    "title": "Stichprobengröße, Präzision einer Risikodifferenz",
+    "r_help": "help(prec_riskdiff, package ='presize')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen Unterschied in Proportionen basierend auf der Breite des Konfidenzintervalls. Es berechnet die Stichprobengröße oder die Breite des Konfidenzintervalls, wenn der Benutzer \ndas andere angibt.\n<br/><br/>\n<b>Stichprobengröße Gruppe 1:</b> Geben Sie die Anzahl der Probanden in Gruppe 1 an\n<br/><br/>\n<b>Breite des Konfidenzintervalls:</b> Geben Sie die gewünschte Breite des Konfidenzintervalls an. Die Breite eines Konfidenzintervalls ist ein Maß für die Präzision einer Schätzung und ist die obere Grenze minus die untere Grenze.\n<br/><br/>\n<b>Verhältnis der Stichprobengröße von Gruppe 1 zu Gruppe 2:</b> Geben Sie das Verhältnis der Stichprobengröße von Gruppe 2 zur Stichprobengröße von Gruppe 1 an. Ein Wert von 1 bedeutet gleiche Stichprobengrößen.\n<br/><br/>\n<b>Ergebnisproportion Gruppe 1:</b> Geben Sie die Proportion der Probanden in Gruppe 1 mit dem 'positiven' Ergebnis an\n<br/><br/>\n<b>Ergebnisproportion Gruppe 2:</b> Geben Sie die Proportion der Probanden in Gruppe 2 mit dem 'positiven' Ergebnis an\n<br/><br/>\nBeachten Sie, dass die Risikodifferenz als die Proportion in Gruppe 1 minus die Proportion in Gruppe 2 berechnet wird.\n<br/><br/>\n<b>Konfidenzniveau:</b> Geben Sie das gewünschte Niveau des Konfidenzintervalls an\n<br/><br/>\n<b>Methode des Konfidenzintervalls:</b> Geben Sie den Typ des zu verwendenden Konfidenzintervalls an. Newcombe (newcombe) schlug ein Konfidenzintervall basierend auf der Wilson-Score-Methode für die\nEinzelproportion vor. Das Konfidenzintervall ohne Kontinuitätskorrektur wird aus Gleichung 10 in Newcombe (1998) implementiert. Miettinen-Nurminen (mn) bietet eine geschlossene Form \nGleichung für die eingeschränkte Maximum-Likelihood-Schätzung. Die Implementierung basiert auf dem von Yongyi Min bereitgestellten Code auf https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html.\nDas Agresti-Caffo (ac) Konfidenzintervall basiert auf dem Wald-Konfidenzintervall, wobei 1 Erfolg zu jeder Zelle der 2 x 2 Tabelle hinzugefügt wird (siehe Agresti und Caffo 2000).\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> presize\n\t\t\t"
+  }
+}

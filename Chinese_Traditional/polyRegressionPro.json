@@ -1,0 +1,15 @@
+{
+  "title": "多項式回歸模型",
+  "navigation": "多項式",
+  "modelname": "多項式回歸模型名稱",
+  "dependentVar": "依賴變數（例如：反應）",
+  "independentVar": "獨立變數（例如：劑量、濃度等）",
+  "polyDegree": "多項式方程的次數。必須小於唯一數據點的數量",
+  "comparePolyModelsChk": "計算額外的多項式模型以進行比較",
+  "addlPolyDegrees": "指定一個或多個次數以創建多個多項式模型（例如：3、4、5）",
+  "help": {
+    "title": "多項式回歸模型",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>描述</b></br>\n            此對話框用於計算和擬合具有指定次數的正交多項式模型\n\t\t\t<br/>\n\t\t\t使用 lm(response ~ poly(一個預測變數, 次數), data = 數據集)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t除了 help(poly, package ='stats')，還可以查看以下 R 幫助頁面\n            <br/>\n\t\t\thelp(anova, package ='stats') - 用於比較不同次數的多項式模型\n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - 用於計算 AIC 以比較多項式模型\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - 用於計算 BIC 以比較多項式模型\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - lm() 和 poly() 一起使用的良好參考\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\t您可以通過從加載數據集菜單加載數據集 cars 來嘗試此對話框\t\t\t\n\t\t\t<br/>\n\t\t\t選擇 dist 作為依賴變數，speed 作為獨立變數\n\t\t\t<br/>\n"
+  }
+}

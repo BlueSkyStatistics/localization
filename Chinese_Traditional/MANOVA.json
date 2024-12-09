@@ -1,0 +1,22 @@
+{
+  "title": "多變量 ANOVA",
+  "navigation": "MANOVA",
+  "modelname": "模型名稱",
+  "tvarbox1": "因變量",
+  "tvarbox2": "固定因子",
+  "blockVar": "協變量",
+  "testStatistic": "檢驗統計量",
+  "label2": "後續檢定選項",
+  "combon": "使用以下方式比較均值：",
+  "emm": "估計邊際均值",
+  "displayBoxMDetails": "顯示與 Box 的 M 檢驗相關的詳細信息（注意：Box 的 M 檢驗結果始終顯示）",
+  "adjust": "調整 p 值的方法",
+  "levenesTest": "Levene 檢驗",
+  "posthocs": "後續檢定",
+  "plotMeansCI": "均值和置信區間的圖",
+  "help": {
+    "title": "多變量 ANOVA",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>描述</b></br>\n多變量 ANOVA：提供全體多變量檢驗及相應的 F 和 p 值。還提供後續的單變量檢驗。</br> 注意：我們目前支持單一獨立因子</br>\n注意：我們不在均值的圖中顯示置信區間，因為顯示了不必要的警告。我們正在與 gplots 包的作者合作以解決此問題。</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n...: 傳遞給 aov 的參數\n</li>\n</ul>\n<b>詳細信息</b></br>\n類別 \"manova\" 與類別 \"aov\" 在選擇不同的摘要方法上有所不同。函數 manova 調用 aov，然後將類別 \"manova\" 添加到每個層次的結果對象中。​</br>\n<b>值</b><br/>\n請參見 aov 幫助，詳細信息如下<br/>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\n點擊 R 幫助按鈕以獲取詳細的 R 幫助。</br> 您也可以輸入 help(manova, package ='stats') 並在 R 語法編輯器中按 CTRL Enter 獲取幫助</br>\n"
+  }
+}

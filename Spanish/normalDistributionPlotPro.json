@@ -1,0 +1,28 @@
+{
+  "title": "Gráfico de Distribución Normal con etiquetas",
+  "navigation": "Gráfico de Distribución Normal Con Etiquetas",
+  "mean": "Media",
+  "sd": "Desviación estándar",
+  "pdenfun": "Graficar función de densidad",
+  "pdstfun": "Graficar función de distribución",
+  "lblregions": "Especificar opcionalmente regiones bajo la función de densidad por",
+  "xvals": "valores de x",
+  "quantiles": "cuantiles",
+  "lblRegFill": "Regiones a llenar (especificar una o dos, o dejar en blanco para opción de valores de x o cuantiles). Dejar el campo 'Desde' vacío para graficar la cola izquierda (inferior) y dejar el campo 'Hasta' vacío para graficar la cola derecha (superior)",
+  "lblreg1": "Región 1 :",
+  "lblreg2": "Región 2 :",
+  "lblregfrm": "Desde",
+  "lblregto": "Hasta",
+  "lblregcol": "Color",
+  "lowProbBound": "Límite inferior de probabilidad utilizado para generar la distribución de muestra",
+  "upperProbBound": "Límite superior de probabilidad utilizado para generar la distribución de muestra",
+  "lblLegPos": "Posición de la leyenda",
+  "toprt": "Arriba derecha",
+  "toplt": "Arriba izquierda",
+  "topmid": "Arriba centro",
+  "help": {
+    "title": "Gráfico de Distribución Normal con etiquetas",
+    "r_help": "help(qnorm, package=stats)",
+    "body": "\n            ​​\n            <b>Descripción</b>\n            <br/>\n            Densidad, función de distribución, función cuantil y generación aleatoria para la distribución normal con media igual a la media y desviación estándar igual a sd.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantiles.</li>\n                \n                \n                <li>p : vector de probabilidades.</li>\n                \n                \n                <li>n : número de observaciones. Si length(n) > 1, se toma la longitud como la cantidad requerida.</li>\n                \n                \n                <li>mean : vector de medias.</li>\n                \n                \n                <li>sd : vector de desviaciones estándar.</li>\n                \n                \n                <li>log, log.p : lógico; si es TRUE, las probabilidades p se dan como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; si es TRUE (por defecto), las probabilidades son P[X ≤ x] de lo contrario, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalles</b>\n            <br/>\n            Si la media o sd no están especificadas, asumen los valores predeterminados de 0 y 1, respectivamente.\n            <br/>\n            La distribución normal tiene densidad\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            donde μ es la media de la distribución y σ la desviación estándar.\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dnorm da la densidad, pnorm da la función de distribución, qnorm da la función cuantil, y rnorm genera desviaciones aleatorias.\n            <br/>\n            La longitud del resultado está determinada por n para rnorm, y es el máximo de las longitudes de los argumentos numéricos para las otras funciones.\n            <br/>\n            Los argumentos numéricos que no son n se reciclan a la longitud del resultado. Solo se utilizan los primeros elementos de los argumentos lógicos.\n            <br/>\n            Para sd = 0 esto da el límite a medida que sd disminuye a 0, una masa puntual en mu. sd < 0 es un error y devuelve NaN.            \n      "
+  }
+}

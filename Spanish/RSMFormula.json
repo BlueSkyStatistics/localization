@@ -1,0 +1,18 @@
+{
+  "title": "Análisis de Diseño de Experimentos con Modelo de Superficie de Respuesta (Cuantitativo)",
+  "navigation": "Análisis de Diseño - Modelo de Superficie de Respuesta",
+  "modelname": "Ingrese el nombre del modelo de superficie de respuesta",
+  "dependent": "Variable de respuesta (dependiente)",
+  "formulaboxhint": "También puede ingresar SO(var1, var2,...) para efectos de segundo orden e interacciones, o FO(...),... del paquete rsm en el cuadro de construcción de fórmulas anterior.",
+  "independent": "Predictores numéricos - inserte a continuación las variables de fórmula numérica",
+  "generateContourPlotChk": "Mostrar Contorno(gráficos)",
+  "generateRSMPlotChk": "Mostrar Superficie de Respuesta (gráficos)",
+  "generatePathSteepestAscentChk": "Mostrar el camino de mayor ascenso desde el análisis de crestas",
+  "checkShapiroNormalityTestChk": "Prueba de normalidad de Shapiro",
+  "normalityPlotsChk": "Gráfico para verificar la normalidad",
+  "help": {
+    "title": "Modelo de Superficie de Respuesta con un constructor de fórmulas de modelo",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tRegresión de superficie de respuesta - ajuste un modelo lineal con un componente de superficie de respuesta, y produzca análisis y resúmenes apropiados\n\t\t\t\t<br/> En el constructor de fórmulas, puede escribir SO(var1, var2, var3, ...) o FO(var1, ..) u otra función del paquete rsm - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara más detalles, consulte la ayuda de R para lo siguiente\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

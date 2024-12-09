@@ -1,0 +1,18 @@
+{
+  "title": "Graphique de Contrôle de Qualité Multivarié (MQCC)",
+  "navigation": "Graphique MQCC",
+  "summaryPrintChk": "Imprimer le résumé en plus du/des graphique(s)",
+  "variableListSelcted": "Données (sélectionnez une ou plusieurs variables) à représenter",
+  "groupingVariable": "(Optionnel) Sélectionnez la variable de regroupement si des sous-groupes sont présents",
+  "excludeGroups": "(Optionnel) exclure les groupes (si les sous-groupes sont numériques) du calcul/de la représentation (par exemple, spécifiez comme 1:10 ou séparés par des virgules comme 1,4,5,7:12)",
+  "groupsTobeUsedAsNewData": "(Optionnel) Nouvelles Données - groupes (si les sous-groupes sont numériques) à utiliser comme Nouvelles Données à représenter (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12) - nouvelles données à tracer mais non incluses dans les calculs de limites",
+  "limitsChk": "Si les limites de contrôle (Phase I) doivent être calculées et tracées",
+  "pred_limitsChk": "Si les limites de prédiction (Phase II) doivent être calculées et tracées",
+  "confidence_level": "(Optionnel) Niveau de confiance : laissez la formule par défaut comme indiqué (où p sera calculé automatiquement en fonction du nombre de variables sélectionnées). Sinon, spécifiez une valeur numérique entre 0 et 1 à utiliser comme niveau de confiance pour calculer les limites de probabilité",
+  "genVarianceChk": "Tracer le graphique de contrôle pour la Variance Généralisée |S| pour les variables sélectionnées (et une variable de regroupement doit être sélectionnée)",
+  "help": {
+    "title": "Graphique de Contrôle de Qualité Multivarié (mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction mqcc pour effectuer un contrôle de qualité statistique multivarié et la variance généralisée |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(mqcc, package = qcc) et help(GVcontrol, package = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé boiler depuis le package qcc avec le menu Charger le Jeu de Données en sélectionnant le package qcc puis en sélectionnant le jeu de données boiler à charger\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSélectionnez les variables du jeu de données boiler, laissez tout par défaut, et exécutez la boîte de dialogue\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVous pouvez également utiliser le fichier de jeu de données d'exemple appelé widgets_mqcc.xlsx. Ouvrez le fichier dans la grille de données avec le menu ouvrir le fichier\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour tracer la variance généralisée |S|, le jeu de données doit avoir une colonne avec les numéros de sous-groupe - sinon, il ne sera pas tracé\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

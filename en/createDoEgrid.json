@@ -12,15 +12,4 @@
         "title": "Auto generate factor details",
         "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAutomatically generates a table with factor details based on the parameter specified - number of factors and the maximum levels for the factors along with the default values for the factor to be used. If non numeric values are used for factor, specify within single quote for example 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOnce the factor details are automatically generated and the factor table shows up on the data grid UI, you can change the values and/or remove some values from the grid to manipulate the table as you choose including factors with different number of values \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIf the number of factors are <= 26, the factors are named with upper case alphabets as A, B, C, .., otherwise, named as F1, F2, ..., F27, F28, ..\n\t\t\t"
     }
-}ave blank to auto-generate values or specify values - example: -1, 1, 'string1', 2, 0",
-    "prefixForfactorLevels4": "If auto-generate, specify any Prefix. If blank, it will create values as 1,2,3,..",
-    "factor5": "Name of the factor5 (e.g. Parts, Operator, Machine, etc)",
-    "numOfFactorLevels5": "Number of levels for factor5",
-    "factorLevels5": "Leave blank to auto-generate values or specify values - example: -1, 1, 'string1', 2, 0",
-    "prefixForfactorLevels5": "If auto-generate, specify any Prefix. If blank, it will create values as 1,2,3,..",
-    "autoFillChkbx": "Auto fill levels",
-    "help": {
-        "title": "Auto generate factor details",
-        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFactors can variable sizes i.e. each factor can have different number of levels\n\t\t\t\tAutomatically generates a table with factor details based on the parameter specified - number of factors and the maximum levels for the factors along with the default values for the factor to be used. If non numeric values are used for factor, specify within single quote for example 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOnce the factor details are automatically generated and the factor table shows up on the data grid UI, you can change the values and/or remove some values from the grid to manipulate the table as you choose \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOnce the factor table is ready, go to DoE -> Create Design menu to create a design from this factor table \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIf the number of factors are <= 26, the factors are named with upper case alphabets as A, B, C, .., otherwise, named as F1, F2, ..., F27, F28, ..\n\t\t\t"
-    }
 }

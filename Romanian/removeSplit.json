@@ -1,0 +1,10 @@
+{
+  "title": "Eliminare Divizare",
+  "navigation": "Eliminare Divizare",
+  "label1": "Elimină divizarea (dacă o divizare este setată pe setul de date). Faceți clic pe butonul din dreapta sus pentru a executa dialogul",
+  "help": {
+    "title": "Eliminare Divizare",
+    "r_help": "",
+    "body": "<b>Descriere</b></br>\n        Elimină divizarea pe setul de date. Divizările, vezi Date>Grupare>Setare Divizare, împart datele în grupuri pe baza factorilor selectați, odată ce setul de date este divizat, analiza pe care o selectați este efectuată independent pentru fiecare divizare. De exemplu, dacă rulați o analiză de crosstabulație sau un test de ipoteză, această analiză este efectuată independent pentru fiecare divizare (ieșirea analizei este, de asemenea, generată separat pentru fiecare divizare). \n         <br/>\n                <b>Utilizare</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(colnames =c(),datasetnameorindex='numele setului de date')\n          </code> <br/>\n            <b>Argumente</b><br/>\n                 <ul>\n                   <li>\n        col.names: Acestea sunt numele coloanelor/numele variabilelor pe care doriți să le împărțiți în setul de date, de exemplu, col.names =c(\"var1\", \"var2\"). Pentru a reseta divizarea, setați la c()\n         </li>\n                <li>\n        datasetnameorindex: acesta este numele setului de date.​\n          </li>\n               \n                </ul>\n            <b>Pachet</b></br>\n               Nu se aplică, această funcție este o funcție internă în pachetul BlueSky. Această funcție elimină practic atributul de divizare pe setul de date. </br>\n                <b>Ajutor</b></br>\n        NA\n        "
+  }
+}

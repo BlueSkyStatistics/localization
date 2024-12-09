@@ -1,0 +1,11 @@
+{
+  "title": "Lambda (λ) Wert für Variablen mit vorheriger Box-Cox-Transformation",
+  "navigation": "Lambda überprüfen",
+  "label2": "Wählen Sie eine oder mehrere Variablen aus, um zu überprüfen, ob eine Box-Cox-Transformation angewendet wurde und falls ja, den zugehörigen Lambda (λ) Wert",
+  "variablelistSelcted": "Zu überprüfende Variablen",
+  "help": {
+    "title": "Überprüfen Sie den Lambda (λ) Wert, der mit der ausgewählten Variablen verbunden ist",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tÜberprüfen Sie den zugehörigen Lambda (λ) Wert, falls vorhanden, für die ausgewählten Variablen mit vorheriger Box-Cox-Transformation \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür detaillierte Hilfe zu Box-Cox oder Lambda (λ) - verwenden Sie R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Für einen guten Überblick über MASS Box-Cox, siehe https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLambda (λ) Werte, die mit bekannten Box-Cox-Transformationen verbunden sind \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: quadratische Transformation ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: keine Transformation; gibt die ursprünglichen Daten zurück ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: Quadratwurzel-Transformation ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: Kubikwurzel-Transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: vierte Wurzel-Transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: natürliche Logarithmus-Transformation ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: reziproke Quadratwurzel-Transformation ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: reziproke (inverse) Transformation ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: reziproke quadratische Transformation ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

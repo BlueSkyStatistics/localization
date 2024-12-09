@@ -1,0 +1,16 @@
+{
+  "title": "ボックス・ベンケン（定量的）デザインの作成",
+  "navigation": "ボックス・ベンケン（定量的）デザインの作成",
+  "selectedvars": "変数を選択",
+  "datasetname": "デザイン名",
+  "numCenter": "各ブロックの中心点の整数数",
+  "blockName": "ブロックの名前",
+  "lbl1": "ランダム化設定を変更する必要はないかもしれません",
+  "randomseeds": "ランダム化のためのシード",
+  "randomizationChk": "デザイン生成をランダム化する",
+  "help": {
+    "title": "ボックス・ベンケン（定量的）デザインの作成",
+    "r_help": "help(bbd.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tbbd.design関数は、rsmパッケージを利用してボックス・ベンケンデザインを生成します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(bbd.design, package = DoE.wrapper)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、bbdデザイン用のファクターと呼ばれるサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

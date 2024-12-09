@@ -1,0 +1,30 @@
+{
+  "title": "Excel- oder CSV-Daten bereinigen - Zeilen und Spalten anpassen, löschen",
+  "navigation": "Excel-Bereinigung",
+  "resultDatasetName": "Name des zu erstellenden neuen Datensatzes",
+  "listofRowNumbersRemove": "(Optional) Liste der zu entfernenden Zeilennummern (kommagetrennt, z.B. 1,4,5,20:30)",
+  "listofColumnNumbersRemove": "(Optional) Liste der zu entfernenden Spaltennummern (kommagetrennt, z.B. 1,2,6:10)",
+  "chooseColumnNamesRad": "Spaltennamen aus dem Datensatz angeben",
+  "rowNumbersContaingColNames": "Geben Sie die Zeilennummern (kommagetrennt, z.B. 3,4) ein, die für die Spaltennamen des Ausgabedatensatzes verwendet werden sollen",
+  "deleteRowNumbersContaingColNamesChk": "Die Zeilen löschen, die Spaltennamen für den Ausgabedatensatz enthalten",
+  "combineWithExsitingColNamesChk": "Erstellte Spaltennamen mit vorhandenen Spaltenüberschriften kombinieren",
+  "specifyColumnNamesRad": "Spaltennamen manuell für den Ausgabedatensatz angeben",
+  "outputColumnNames": "Geben Sie die Spaltennamen (kommagetrennt) ein, die für den Ausgabedatensatz verwendet werden sollen",
+  "removeColsWithConstantChk": "Alle Spalten mit konstanten Werten entfernen (nicht groß-/kleinschreibungsempfindlich)",
+  "removeColsWithNoDataChk": "Alle leeren Spalten entfernen",
+  "removeRowsWithNoDataChk": "Alle leeren Zeilen entfernen",
+  "removeRowsWithNAsChk": "Nur vollständige Fälle behalten, d.h. die gesamte Zeile entfernen, wenn ein leerer oder NA-Wert vorhanden ist",
+  "label1": "Konvertierung von Spaltentypen im Ausgabedatensatz",
+  "convertColumnDataTypeAuto": "Spaltentyp automatisch bestimmen und konvertieren",
+  "convertColumnDataTypeNone": "Nichts tun",
+  "convertColumnDataTypeFactorToCharInt": "Alle Faktor-Spalten in Zeichen- und Ganzzahltyp konvertieren",
+  "convertColumnDataTypeCharToFactor": "Alle Zeichen-Spalten in Faktoren konvertieren",
+  "convertColumnDataTypeAllToFactor": "Alle Spalten in Faktoren konvertieren",
+  "convertColumnDataTypeManual": "Geben Sie den Datentyp für jede Spalte zur Konvertierung ein",
+  "outputColumnTypes": "Liste der Spaltentypen (kommagetrennt, z.B. numerisch, Faktor, Zeichen, ..)",
+  "help": {
+    "title": "Excel- oder CSV-Daten bereinigen - Zeilen und Spalten anpassen, löschen",
+    "r_help": "",
+    "body": "\n            <b>Beschreibung</b></br>\n            Dieser Dialog wird verwendet, um ein komplexes Excel-Blatt zu bereinigen, um Zeilen und Spalten hinzuzufügen und zu entfernen, um einen neuen Datensatz zu erstellen\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tUm dies auszuprobieren, können Sie die Beispieldatensatzdatei namens Excel cleanup.xlsx verwenden\n\t\t\t<br/>\n\t\t\tÖffnen Sie die Datei im Datenraster mit dem Menü Datei öffnen\n\t\t\t<br/>\n\t\t\tGeben Sie im Dialog ein\n\t\t\t<br/>\n\t\t\tSampleGp für den neuen Datensatznamen\n\t\t\t<br/>\n\t\t\t1:3 für die Liste der zu entfernenden Zeilennummern\n\t\t\t<br/>\n\t\t\t1,2,5:8 für die Liste der zu entfernenden Spaltennummern\n\t\t\t<br/>\n\t\t\tWählen Sie die Option - Spaltennamen aus den Datensätzen angeben\n\t\t\t<br/>\n\t\t\t2,3 für die Eingabe der Zeilennummern  \n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

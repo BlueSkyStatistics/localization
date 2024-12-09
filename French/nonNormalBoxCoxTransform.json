@@ -1,0 +1,20 @@
+{
+  "title": "Transformation de Box-Cox de données non normales à normales",
+  "navigation": "Transformation de Box-Cox",
+  "label2": "Deux options - soit sélectionner une variable non normale à transformer en normale, soit sélectionner l'ensemble du jeu de données à transformer",
+  "selectVariableRad": "Option 1 : Sélectionner une variable non normale du jeu de données à transformer en normale",
+  "variableSelcted": "Une variable non normale à transformer",
+  "boxcoxColName": "(Optionnel) Spécifiez un nouveau nom de variable pour stocker les valeurs transformées. Sinon, <variable_bcox> sera créé",
+  "selectDatasetRad": "Option 2 : Transformer l'ensemble du jeu de données en normale",
+  "boxcoxDatasetName": "(Optionnel) Spécifiez un nouveau nom de jeu de données pour stocker les valeurs transformées. Sinon, <dataset_bcox> sera créé",
+  "johnsonDatasetName": "(Optionnel) Spécifiez un nouveau nom de jeu de données pour Johnson (nécessaire si l'option 2 est choisie ci-dessus)",
+  "boxcoxChk": "Transformation de Box-Cox",
+  "johnsonChk": "Transformation de Johnson",
+  "lambda": "(Optionnel) Valeur de Lambda (λ) dans (-2 à 2) à utiliser pour la transformation de Box-Cox. Si non spécifié, il identifiera automatiquement la meilleure valeur de Lambda",
+  "digits": "Chiffres - arrondit au nombre spécifié de décimales",
+  "help": {
+    "title": "Transformer des données non normales en normales",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour transformer une variable non normale en normale avec MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tLa transformation de Box-Cox ne peut pas être effectuée sur des valeurs négatives\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour une aide détaillée - utilisez R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Pour un bon aperçu de MASS Box-Cox, voir https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValeurs de Lambda (λ) associées aux transformations de Box-Cox familières \n\t\t\t\t<br/>\n\t\t\t\tλ = 2 : transformation carrée ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1 : pas de transformation ; retourne les données originales ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50 : transformation racine carrée ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33 : transformation racine cubique\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25 : transformation racine quatrième\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : transformation logarithmique naturelle ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50 : transformation racine carrée réciproque ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1 : transformation réciproque (inverse) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2 : transformation carrée réciproque ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

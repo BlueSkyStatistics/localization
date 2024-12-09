@@ -1,0 +1,20 @@
+{
+  "title": "Actualizare Îmbinare",
+  "navigation": "Actualizare Îmbinare",
+  "join": "Îmbinare mapping",
+  "description": "Actualizarea îmbinării actualizează un set de date cu valori dintr-un alt set de date.",
+  "out": "Introduceți numele setului de date îmbinat",
+  "in1": "Selectați primul set de date",
+  "in2": "Selectați al doilea set de date",
+  "label1": "Opțiuni de Îmbinare",
+  "upsert": "Actualizați variabilele din primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date, inserați necorespondențele",
+  "update": "Actualizați variabilele din primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date, ignorați necorespondențele",
+  "insert": "Inserare doar necorespondențe în primul (stânga) set de date",
+  "patch": "Actualizați doar variabilele cu NAs în primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date",
+  "delete": "Ștergeți rândurile din primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date",
+  "help": {
+    "title": "Actualizare Îmbinare",
+    "r_help": "help(rows_upsert, package=dplyr)",
+    "body": "\n            <b>Descriere</b></br>\n            Actualizarea îmbinării actualizează un set de date cu valori dintr-un al doilea set de date pe baza potrivirii exacte a numelui variabilei pentru observațiile cu valori corespunzătoare ale variabilei de îmbinare. \n\t\t\t<br/>Trebuie să specificați una sau mai multe variabile în setul de date activ și în setul de date țintă selectat pe care doriți să se efectueze îmbinarea.\n\t\t\t<br/>Rezultatele vor fi salvate într-un nou set de date.\n\t\t\t<br/><br/>\n\t\t\t<b>Opțiuni de Îmbinare</b>\n\t\t\t<br/><br/>\n\t\t\t<b>Actualizați variabilele din primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date, inserați necorespondențele:</b> Aceasta este o combinație de actualizare a variabilelor în setul de date din stânga pentru potriviri și crearea de rânduri noi pentru rândurile necorespunzătoare.\n\t\t\t<br/><br/>\n\t\t\t<b>Actualizați variabilele din primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date, ignorați necorespondențele:</b> Aceasta actualizează doar variabilele existente în seturile de date din stânga pentru potriviri. Rândurile necorespunzătoare sunt ignorate.\n\t\t\t<br/><br/>\n\t\t\t<b>Inserare doar necorespondențe în primul (stânga) set de date:</b> Aceasta păstrează intacte toate rândurile corespunzătoare în setul de date din stânga. Numai rândurile necorespunzătoare din setul de date din dreapta sunt adăugate în setul de date din stânga.\n\t\t\t<br/><br/>\n\t\t\t<b>Actualizați doar variabilele cu NAs în primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date, ignorați necorespondențele:</b> Aceasta actualizează rândurile care se potrivesc, dar doar atunci când valorile din setul de date din stânga sunt NA (adică sunt valori lipsă).\n\t\t\t<br/><br/>\n\t\t\t<b>Ștergeți rândurile din primul (stânga) set de date cu potrivirile din al doilea (dreapta) set de date:</b> Aceasta șterge doar rândurile din setul de date din stânga care se potrivesc cu rândurile din setul de date din dreapta.\n\t\t\t<br/><br/>\n            <b>Pachete R necesare:</b> dplyr\n    "
+  }
+}

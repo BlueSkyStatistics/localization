@@ -1,0 +1,21 @@
+{
+  "title": "删除未使用的级别",
+  "navigation": "删除未使用的",
+  "target": "要删除级别的因子变量",
+  "label1": "输入要删除级别的因子变量。您可以通过输入未使用的级别来指定要删除的级别，或者选择删除所选变量的所有未使用级别。如果数据集变量在数据中有 NA 值，则该级别不会被删除。",
+  "label2": "将新级别保存到新变量或覆盖现有变量",
+  "rd3": "指定后缀（将创建一个带有后缀的新变量）",
+  "txt3": "输入后缀",
+  "rd2": "指定前缀（将创建一个带有前缀的新变量）",
+  "txt4": "输入前缀",
+  "rd1": "覆盖现有变量",
+  "label3": "使用的方法",
+  "dropUnused": "删除所有未使用的级别",
+  "levelsToDrop": "指定要删除的级别",
+  "drop": "输入以逗号分隔的要删除的级别，例如 level1,level2,level3 注意：不要在级别之间使用空格作为分隔符",
+  "help": {
+    "title": "删除未使用的级别",
+    "r_help": "help(fct_drop, package =forcats)",
+    "body": "\n<b>注意：不要将级别用双引号或单引号括起来，级别名称中不能有空格。输入以逗号分隔的级别，格式为 LEVEL1,LEVEL2,LEVEL3</b></br>\n<b>描述</b></br>\n输入要删除未使用级别的因子变量。您可以通过输入未使用的级别来指定要删除的级别，或者选择删除所选变量的所有未使用级别。如果数据集变量在数据中有 NA 值，则该级别不会被删除。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nf: 一个因子（或字符向量）。\n</li>\n<li>\nonly: 一个字符向量，限制要删除的级别集。如果提供，只有在此向量中没有条目的级别将被删除。\n</li>\n</ul>\n<b>示例</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# 设置 only 来限制要删除的级别<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>包</b></br>\nforcats</br>\n<b>帮助</b></br>\nhelp(fct_drop, package =forcats)\n"
+  }
+}

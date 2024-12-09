@@ -1,0 +1,10 @@
+{
+  "title": "Anderson-Darling-Test auf Normalität",
+  "navigation": "Anderson-Darling-Normalitätstest",
+  "trg": "Zielvariablen",
+  "help": {
+    "title": "Anderson-Darling-Test auf Normalität",
+    "r_help": "help(ad.test, package=nortest)",
+    "body": "\n<b>Beschreibung</b></br>\nAnderson-Darling-Test auf Normalität. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: ein numerischer Vektor von Datenwerten, dessen Anzahl größer als 7 sein muss. Fehlende Werte sind erlaubt.\n</li>\n</ul>\n<b>Details</b></br>\nDer Anderson-Darling-Test ist ein EDF-Omnibus-Test für die zusammengesetzte Hypothese der Normalität.<br/>\n<b>Wert</b><br/>\nEine Liste mit der Klasse “htest”, die die folgenden Komponenten enthält:<br/>\n<ul>\n<li>\nstatistic: der Wert der Anderson-Darling-Statistik.\n</li>\n<li>\np.value: P-Wert des Tests.\n</li>\n</ul>\n<b>Paket</b></br>\nnortest</br>\n<b>Hilfe</b></br>\nhelp(ad.test, package =nortest)\n"
+  }
+}

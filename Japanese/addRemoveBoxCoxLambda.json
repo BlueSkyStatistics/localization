@@ -1,0 +1,14 @@
+{
+  "title": "変数に対するLambda（λ）の追加/置換/削除（Box-Cox変換が以前に適用された場合）",
+  "navigation": "Lambdaの追加/削除",
+  "label2": "以前にBox-Cox変換が適用された変数を追加/置換/削除するために選択してください",
+  "variableSelcted": "変数を選択",
+  "selectAddLambdaRad": "オプション1: Box-Cox変換が以前に適用された場合、Lambda（λ）値を追加/置換します",
+  "selectRemoveLambdaRad": "オプション2: 変数に誤って追加されたLambda（λ）値を削除します",
+  "lambda": "選択した変数のために記録されるLambda（λ）値を（-2から2の範囲で）指定してください",
+  "help": {
+    "title": "以前のBox-Cox変換に使用されたLambda（λ）の追加/置換/削除",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tこのダイアログは、変数に関連付けられたLambda（λ）を正しく記録または調整する必要がある場合に便利です。\n\t\t\t\t正しいLambda（λ）値は、逆Box-Coxが必要な場合に使用されるため重要です。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-CoxまたはLambda（λ）に関する詳細なヘルプは、R help(boxcox, package = MASS)を使用してください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Coxの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.htmlを参照してください。</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-Cox変換に関連するLambda（λ）値\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータを返します ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 逆変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 逆平方変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

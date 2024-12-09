@@ -1,0 +1,22 @@
+{
+  "title": "多元方差分析",
+  "navigation": "MANOVA",
+  "modelname": "模型名称",
+  "tvarbox1": "因变量",
+  "tvarbox2": "固定因子",
+  "blockVar": "协变量",
+  "testStatistic": "检验统计量",
+  "label2": "后续检验选项",
+  "combon": "使用以下方法比较均值：",
+  "emm": "估计的边际均值",
+  "displayBoxMDetails": "显示与Box的M检验相关的详细信息（注意：Box的M检验结果始终显示）",
+  "adjust": "调整p值的方法",
+  "levenesTest": "Levene检验",
+  "posthocs": "后续检验",
+  "plotMeansCI": "均值和置信区间的图",
+  "help": {
+    "title": "多元方差分析",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>描述</b></br>\n多元方差分析：提供总体多元检验及相应的F值和p值。后续的单变量检验也提供。</br> 注意：我们目前支持单一独立因子</br>\n注意：我们不在均值图中显示置信区间，因为会显示不必要的警告。我们正在与gplots包的作者合作解决此问题。</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n...: 传递给aov的参数\n</li>\n</ul>\n<b>详细信息</b></br>\n类\"manova\"与类\"aov\"在选择不同的摘要方法上有所不同。函数manova调用aov，然后为每个层次的结果对象添加类\"manova\"。​</br>\n<b>值</b><br/>\n请参见aov帮助，详细信息如下<br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\n点击R帮助按钮以获取详细的R帮助。</br> 您还可以输入help(manova, package ='stats')并在R语法编辑器中按CTRL Enter以获取帮助</br>\n"
+  }
+}

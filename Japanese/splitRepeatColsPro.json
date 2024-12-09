@@ -1,0 +1,24 @@
+{
+  "title": "繰り返し変数グループを持つデータセットを分割/折りたたむ",
+  "navigation": "繰り返し変数セット",
+  "removeColsWithConstantChk": "分割または折りたたむ前に、定数値を持つすべての列を削除します（大文字と小文字を区別しない）",
+  "removeRowsWithNAsChk": "完全なケースのみを保持します。すなわち、出力データセット内の空またはNA値を持つ行全体を削除します",
+  "resultDatasetNameSuffix": "(オプション) 出力データセット名に使用する1つ以上の文字列（カンマ区切り）",
+  "splitDatasetRad": "繰り返し変数セットに基づいてデータセットを複数のデータセットに分割します",
+  "autoDetectColGroupLengthRad": "分割または折りたたむために繰り返し変数セットを自動的に検出します",
+  "manualColGroupLengthRad": "分割または折りたたむために使用する繰り返し変数セットの長さを指定します",
+  "manualRepeatingColumnGroupLength": "繰り返し変数セットの長さ",
+  "outputColumnNames": "(オプション) 出力データセットに使用する変数名のリスト（カンマ区切り）",
+  "collapseDatasetRad": "複数のデータセットに分割するのではなく、1つの長いデータセットを作成するために折りたたみます",
+  "collapseGpIDPrefix": "セットID値のプレフィックス",
+  "collapseGpIDColName": "セットID変数名（出力データセットに新しい変数が作成されます）",
+  "collapseGpIDColFirstChk": "セットID変数を最初の列にします（チェックを外すと最後の列になります）",
+  "makeCollapseGpIDColFactorChk": "セットID変数をファクターにします",
+  "label1": "繰り返し変数セットの検出",
+  "label2": "データセットを分割または折りたたむ？",
+  "help": {
+    "title": "繰り返し変数グループを持つデータセットを分割/折りたたむ",
+    "r_help": "",
+    "body": "\n            <b>説明</b></br>\n            このダイアログは、繰り返し変数のセットを持つデータセットを分割（複数のデータセットに）または折りたたむ（1つの長いデータセットに）ために使用されます\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t例1: これを試すには、Repeating Variable Sets.xlsxというサンプルデータセットファイルを使用できます\n\t\t\t<br/>\n\t\t\tファイルをデータグリッドで開くメニューで開きます\n\t\t\t<br/>\n\t\t\tダイアログに入力します\n\t\t\t<br/>\n\t\t\t繰り返し変数セットが3つあるため、3つのデータセットが作成されます。出力データセット名のサフィックスとしてabcX、abcY、abcZのように、none、one、またはそれ以上の文字列を入力できます\n\t\t\t<br/>\n\t\t\tダイアログ内の他のすべての項目はデフォルトのままにします\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t例2: これを試すには、Repeating Variable Sets2.xlsxというサンプルデータセットファイルを使用できます\n\t\t\t<br/>\n\t\t\tファイルをデータグリッドで開くメニューで開きます\n\t\t\t<br/>\n\t\t\tダイアログに入力します\n\t\t\t<br/>\n\t\t\t繰り返し変数セットが4つあるため、4つのデータセットが作成されます\n\t\t\t<br/>\n\t\t\tダイアログ内のすべての項目をデフォルトのままにします\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t同じ2つのサンプルデータセットファイルを使用して、ダイアログの「データセットを分割または折りたたむ？」セクションのCollapseオプションを試して、単一の出力データセットを作成できます\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

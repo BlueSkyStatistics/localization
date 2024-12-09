@@ -1,0 +1,23 @@
+{
+  "title": "ポリコリック相関",
+  "navigation": "ポリコリック",
+  "Target": "1つ以上のx変数を選択",
+  "textbox1": "信頼区間",
+  "textbox2": "帰無仮説 (μ)",
+  "Target2": "単一の順序付けられた因子変数yを選択",
+  "label1": "推定の種類",
+  "test1": "二段階近似",
+  "test2": "最尤推定量",
+  "label2": "標準誤差",
+  "Missvals": "標準誤差を表示",
+  "conflevel": "最大絶対相関（数値的安定性を確保するため）。",
+  "Seed": "オプションの開始値",
+  "header": "相関は各x変数とy変数の間で推定されます",
+  "showEffectSizes": "推定された閾値を返す",
+  "advanced_lbl" : "高度 (こうど)",
+  "help": {
+    "title": "ポリコリック相関",
+    "r_help": "help(polychor, package ='polycor')",
+    "body": "\n<b>説明</b></br>\n2つの順序変数間のポリコリック相関（およびその標準誤差）を計算します。順序変数が二項正規分布の連続潜在変数を分割するという仮定の下で。最尤推定量または（おそらくはるかに）迅速な「二段階」近似が利用可能です。ML推定量の場合、閾値の推定値と推定値の共分散行列も利用可能です。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \npolychor(x, y, ML = FALSE, control = list(), \n  std.err = FALSE, maxcor=.9999, start, thresholds=FALSE)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 順序カテゴリ変数; 変数は数値、論理、因子、順序因子、または文字変数であることができますが、因子の場合、そのレベルは適切な順序である必要があり、文字変数の値はアルファベット順に並べられます。\n</li>\n<li>\ny: 順序因子変数\n</li>\n<li>\nML: TRUEの場合、最尤推定を計算します。FALSEの場合、デフォルトで、より迅速な「二段階」近似を計算します。\n</li>\n<li>\nstd.err: TRUEの場合、相関の推定分散（2段階推定量の場合）または相関と閾値の推定共分散行列（ML推定量の場合）を返します。デフォルトはFALSEです。\n</li>\n<li>\nmaxcor: 最大絶対相関（数値的安定性を確保するため）。\n</li>\n<li>\nstart: オプションの開始値: 単一の数値の場合、相関の開始値。\n</li>\n<li>\nthresholds: TRUEの場合（デフォルトはFALSE）、標準誤差が計算されていなくても、推定された相関とともに推定された閾値を返します。\n</li>\n</ul>\n<b>値</b></br>\n値: std.errまたはthresholdsがTRUEの場合、次のコンポーネントを持つ「polycor」クラスのオブジェクトを返します:</br>\ntype: 「ポリコリック」に設定されます。</br>\nrho: ポリコリック相関。</br>\nrow.cuts: 行変数（x）のための推定閾値、ML推定のため。</br>\ncol.cuts: 列変数（y）のための推定閾値、ML推定のため。</br>\nvar: 相関の推定分散、またはML推定の場合、相関と閾値の推定共分散行列。</br>\nn: 相関が基づく観測数。</br>\nchisq: 二項正規性のためのカイ二乗検定。</br>\ndf: 二項正規性の検定の自由度。</br>\nML: ML推定の場合はTRUE、二段階推定の場合はFALSE\n<b>詳細</b></br>\nML推定量は、2つの変数の閾値（τ^x[i], i = 1,…, r - 1; τ^y[j], j = 1,…, c - 1）と母集団相関（ρ）に関して二項正規対数尤度を最大化することによって計算されます。ここで、rとcはそれぞれxとyのレベルの数です。尤度はoptim関数を使用して数値的に最大化され、推定パラメータの共分散行列はoptimによって計算された数値的ヘッセ行列に基づいています。</br>二段階推定量は、まず各変数の周辺分布から閾値（τ^x[i], i = 1,…, r - 1およびτ^y[j], i = j,…, c - 1）を別々に推定することによって計算されます。次に、相関のための1次元尤度が数値的に最大化され、標準誤差が要求される場合はoptimを使用し、そうでない場合はoptimiseを使用します。計算された標準誤差は、閾値を固定されたものとして扱います。\n<br/>\n<b>例</b></br>\n<code> \nif(require(mvtnorm)){\n    set.seed(12345)\n    data <- rmvnorm(1000, c(0, 0), matrix(c(1, .5, .5, 1), 2, 2))\n    x <- data[,1]\n    y <- data[,2]\n    cor(x, y)  # サンプル相関\n    }\n\nif(require(mvtnorm)){\n    x <- cut(x, c(-Inf, .75, Inf))\n    y <- cut(y, c(-Inf, -1, .5, 1.5, Inf))\n    polychor(x, y)  # 2段階推定\n    }\n\nif(require(mvtnorm)){\n    polychor(x, y, ML=TRUE, std.err=TRUE)  # ML推定\n    }\n</code> <br/>\n<b>パッケージ</b></br>\npolycor</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、次のコマンドhelp(polycor, package ='polychor')を実行して、出力ウィンドウで+をクリックしてRコードチャンクを作成します。"
+  }
+}

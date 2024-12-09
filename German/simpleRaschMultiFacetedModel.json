@@ -1,0 +1,13 @@
+{
+  "title": "Einfaches Rasch-Modell (Mehrdimensional)",
+  "navigation": "Einfaches Rasch-Modell (Mehrdimensional)",
+  "modelname": "Modellnamen eingeben",
+  "destinationvars": "Elemente",
+  "firstlevel": "Erste Ebene Variable",
+  "secondlevel": "Zweite Ebene Variable",
+  "help": {
+    "title": "Einfaches Rasch-Modell (Mehrdimensional)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Beschreibung</b>\n            <br/>\n            Generiert Parameterschätzungen für ein mehrdimensionales einfaches Rasch-Modell\n            <br/><br/>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Datenrahmen mit polychotomischen Itemantworten k=0,...,K. Fehlende Antworten müssen als NA deklariert werden.\n            </li>\n            <li>\n            formulaA: Entwurfsformel (gilt nur für tam.mml.mfr). Siehe detaillierte Hilfe. Es ist auch möglich, alle Effekte eines Facets auf null zu setzen, z.B. item*step + 0*rater (siehe detaillierte Hilfe).\n            </li>\n            <li>\n            facets: Ein Datenrahmen mit Facet-Einträgen (gilt nur für tam.mml.mfr)\n            </li>\n            <li>\n            pid: Ein optionaler Vektor von Personenidentifikatoren\n            </li>\n            <li>\n            verbose: Logisch, das angibt, ob die Ausgabe während der Iterationen gedruckt werden soll.\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Pakete</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Hilfe</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

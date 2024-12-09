@@ -1,0 +1,10 @@
+{
+  "title": "R Paketdetails",
+  "navigation": "Paketdetails",
+  "packageName": "Wählen Sie ein installiertes R-Paket aus",
+  "help": {
+    "title": "R Paketdetails",
+    "r_help": "hilfe(Paketbeschreibung, paket='utils')",
+    "body": "\n<b>Beschreibung</b></br>\nZeigt die Beschreibung des ausgewählten Pakets an\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nPaketbeschreibung(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\npkg: ein Zeichenstring mit dem Paketnamen.\n</li>\n<li>\nlib.loc: ein Zeichenvektor von Verzeichnisnamen von R-Bibliotheken oder NULL. Der Standardwert NULL entspricht allen derzeit bekannten Bibliotheken. Wenn der Standardwert verwendet wird, werden die geladenen Pakete und Namensräume vor den Bibliotheken durchsucht.\n</li>\n<li>\nfields: ein Zeichenvektor, der die Tags der zurückzugebenden Felder angibt (wenn andere Felder in der Datei vorkommen, werden sie ignoriert).\n</li>\n<li>\ndrop: Wenn TRUE und die Länge von fields 1 ist, wird anstelle eines Objekts der Klasse \"Paketbeschreibung\" ein einzelner Zeichenstring mit dem Wert des jeweiligen Feldes zurückgegeben.\n</li>\n</ul>\n<b>Details</b></br>\nDie Beschreibung des Pakets</br>\n<b>Beispiele</b><br/>\n<code> \nPaketbeschreibung(\"stats\")\n</code> <br/>\n<b>Paket</b></br>\nutils</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: hilfe(Paketbeschreibung, paket='utils')\n                "
+  }
+}

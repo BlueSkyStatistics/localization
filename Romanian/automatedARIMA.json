@@ -1,0 +1,33 @@
+{
+  "title": "ARIMA Automatizat",
+  "navigation": "ARIMA Automatizat",
+  "destination": "Variabila de prezis",
+  "firstObservation": "Timpul primei observații, de exemplu 1: introduceți 1961,1 pentru ianuarie 1961, de exemplu 2: introduceți 1961,3 pentru trimestrul 3 din 1961, de exemplu 3: introduceți 1 pentru o serie continuă",
+  "frequency": "Numărul de observații pe unitate de timp, de exemplu 1: introduceți 12 pentru o observație pentru fiecare lună a anului, de exemplu 2: introduceți 4 pentru o observație pe trimestru, de exemplu 3: introduceți 1 pentru o serie continuă.",
+  "criteria": "Criterii de model",
+  "label1": "Grafice",
+  "plotSeries": "Grafice serii",
+  "yaxisLabel": "Eticheta axei Y",
+  "mainTitle": "Titlul principal",
+  "label2": "Opțiuni pentru valorile ajustate",
+  "saveFitted": "Salvează valorile ajustate",
+  "fittedValsDatasetName": "Specificați numele setului de date pentru a stoca valorile ajustate",
+  "oriVsFitted": "Grafice originale vs. Ajustate",
+  "plotResiduals": "Grafice reziduale",
+  "label3": "Preziceți folosind modelul",
+  "predict": "Faceți predicții folosind modelul",
+  "periodToPredict": "Specificați numărul de intervale de prezis",
+  "confInterval": "Specificați intervalul de încredere în procente, de exemplu 95 pentru 95%",
+  "savePredictedVals": "Salvează valorile prezise",
+  "predictedValsDatasetName": "Specificați numele setului de date pentru a stoca valorile prezise",
+  "plotPredicted": "Grafice valori prezise",
+  "correlogram": "Generați correlogramă",
+  "maxlag": "Introduceți întârzierea maximă",
+  "Boxtest": "Test Ljung-Box",
+  "advanced_lbl" : "Avansat",
+  "help": {
+    "title": "ARIMA Automatizat",
+    "r_help": "help(auto.arima, package=forecast)",
+    "body": "\n            <b>Descriere</b></br>\nReturnează cel mai bun model ARIMA conform valorii AIC, AICc sau BIC. Funcția efectuează o căutare asupra modelului posibil în cadrul constrângerilor de ordine furnizate. Apelează intern auto.arima în pachetul forecast\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: variabilele selectate pentru a construi un model arima automat.\n</li>\n<li>\nstart: Timpul primei observații ar trebui să fie introdus în formatul an,lună sau an,trimestru, de exemplu (dacă datele dvs. sunt organizate pe luni, 1992,1 pentru ian 1992 sau dacă datele dvs. sunt organizate pe trimestre, atunci 1992,1 se referă la primul trimestru din 1992.\n</li>\n<li>\nfrequency: Numărul de observații în unitatea de timp. Exemplu: pentru lunar sunt 12 observații într-un an. Pentru trimestrial sunt 4 observații într-un an.\n</li>\n<li>\nic: Criteriul de informație care trebuie utilizat în selecția modelului. Trebuie să fie unul dintre \"aic\", \"aicc\" sau \"bic\"\n</li>\n<li>\nplotSeries: dacă este ADEVĂRAT, un grafic de serie temporală va fi generat.\n</li>\n<li>\nplotResiduals: dacă este ADEVĂRAT, reziduurile vor fi de asemenea reprezentate grafic.\n</li>\n<li>\npredict: dacă este ADEVĂRAT, valorile prezise vor fi de asemenea generate.\n</li>\n<li>\nsavePredictedVals: valorile prezise vor fi salvate.\n</li>\n<li>\nPlotPredictedValues: valorile prezise vor fi de asemenea reprezentate grafic.\n</li>\n<li>\ncorrelogram: dacă este ADEVĂRAT, o correlogramă va fi generată.\n</li>\n<li>\nmain: titlul principal al graficului\n</li>\n<li>\nylab: titlul pentru axa y\n</li>\n<li>\ndataset: numele setului de date din care au fost selectate variabilele.\n</li>\n</ul>\n<b>Detalii</b></br>\nArgumentele implicite sunt concepute pentru estimarea rapidă a modelelor pentru multe serii temporale. Dacă analizați doar o singură serie temporală și vă puteți permite să luați mai mult timp, se recomandă să setați stepwise=FALSE și approximation=FALSE.</br>\nSelecția non-stepwise poate fi lentă, în special pentru date sezoniere. Algoritmul stepwise descris în Hyndman & Khandakar (2008) este utilizat, cu excepția faptului că metoda implicită pentru selectarea diferențelor sezoniere se bazează acum pe o estimare a puterii sezoniere (Wang, Smith & Hyndman, 2006) mai degrabă decât pe testul Canova-Hansen. Există, de asemenea, unele alte variații minore ale algoritmului descris în Hyndman și Khandakar (2008).</br>\n<b>Valoare</b><br/>\nO listă de clasă \"Arima\" cu componente:<br/>\ncoef: un vector de coeficienți AR, MA și regresie, care pot fi extrase prin metoda coef.<br/>\nsigma2: MLE al varianței inovațiilor.<br/>\nvar.coef: matricea de varianță estimată a coeficientelor coef, care poate fi extrasă prin metoda vcov.<br/>\nloglik: log-verosimilitatea maximizată (a datelor diferențiate), sau aproximația acesteia utilizate.<br/>\narma: O formă compactă a specificației, ca un vector care oferă numărul de coeficienți AR, MA, AR sezonieri și MA sezonieri, plus perioada și numărul de diferențe non-sezoniere și sezoniere.<br/>\naic: valoarea AIC corespunzătoare log-verosimilității. Valabilă doar pentru metodele = \"ML\".<br/>\nresiduals: inovațiile ajustate.<br/>\nseries: numele seriei x.<br/>\ncode: valoarea de convergență returnată de optim.<br/>\nn.cond\t:numărul de observații inițiale neutilizate în ajustare.<br/>\nnobs: numărul de observații „utilizate” pentru ajustare, care poate fi de asemenea extras prin nobs() și este utilizat de BIC.<br/>\nmodel: O listă care reprezintă Filtrul Kalman utilizat în ajustare. Consultați KalmanLike.<br/>\n<b>Pachet</b></br>\nforecast</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă în editorul de sintaxă R help(auto.arima, package=forecast)\n\t\t\t"
+  }
+}

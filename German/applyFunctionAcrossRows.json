@@ -1,0 +1,13 @@
+{
+  "title": "Eine Funktion auf alle Zeilen der ausgewählten Variablen anwenden.",
+  "navigation": "Eine Funktion auf Zeilen anwenden",
+  "label1": "Erstellen Sie eine neue Variable oder überschreiben Sie eine vorhandene Variable, indem Sie eine Funktion auf alle Zeilenwerte der ausgewählten Variablen anwenden.",
+  "newvar": "Geben Sie eine neue Variable ein/Überschreiben Sie eine vorhandene Variable",
+  "target": "Wählen Sie Variable(n) aus",
+  "selectctrl": "Wählen Sie eine anzuwendende Operation aus",
+  "help": {
+    "title": "Eine Funktion anwenden",
+    "r_help": "help(apply,package='base')",
+    "body": "\n<b>Beschreibung</b></br>\nWendet eine Funktion auf alle Zeilen der ausgewählten Variablen (Spalten) in einem Datensatz an. Wir verwenden die Funktion select und den Pipe (%>%) Operator aus dem dplyr-Paket, um die Variablen auszuwählen, auf deren Zeilen wir eine Funktion anwenden werden. (Diese Variablen werden in die apply-Funktion gepiped)\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nX: Ein Array, das eine Matrix enthält. Die ausgewählten Variablen werden über dplyr gepiped\n</li>\n<li>\nMARGIN: Ein Vektor, der die Indizes angibt, über die die Funktion angewendet wird. Zum Beispiel bedeutet für eine Matrix 1 Zeilen, 2 Spalten, c(1, 2) Zeilen und Spalten. Wenn\nX benannte Dimnames hat, kann es ein Zeichenvektor sein, der Dimensionennamen auswählt. Datensatz, der die Variable var enthält\n</li>\n<li>\nFUN: Die anzuwendende Funktion\n</li>\n</ul>\n<b>Wert</b><br/>\nBerechnete Werte werden direkt im Datensatz gespeichert\n<b>Paket</b></br>\ndplyr</br>\n<b>Hilfe</b></br>\nhelp(apply)\n"
+  }
+}

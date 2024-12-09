@@ -1,0 +1,18 @@
+{
+  "title": "Trouver des doublons",
+  "navigation": "Trouver des doublons",
+  "keysnote": "REMARQUE : Ne spécifier aucune variable clé entraînera une recherche de doublons sur l'ensemble des cas. Spécifier des variables clés recherchera des doublons uniquement par les valeurs des variables clés.",
+  "keyvarslabel": "Variables clés (facultatif)",
+  "allduprowschecklabel": "Créer un ensemble de données avec toutes les lignes associées aux doublons",
+  "allduprowsnamelabel": "Nom de l'ensemble de données",
+  "alldatachecklabel": "Créer un ensemble de données avec les données originales et une colonne indiquant les doublons",
+  "alldatanamelabel": "Nom de l'ensemble de données",
+  "dupvarnamelabel": "Nom de la variable dupliquée",
+  "nodupdatachecklabel": "Créer un ensemble de données avec tous les doublons supprimés",
+  "nodupdatanamelabel": "Nom de l'ensemble de données",
+  "help": {
+    "title": "Trouver des doublons",
+    "r_help": "help(duplicated, package = 'base')",
+    "body": "\nCette boîte de dialogue trouvera des doublons soit par cas complets, soit par variables clés. Les doublons de cas complets sont égaux pour chaque valeur de chaque variable. Les doublons utilisant des variables clés sont des doublons définis uniquement par des valeurs égales pour des variables spécifiques, appelées \"clés\". Les doublons sont recherchés de haut en bas de l'ensemble de données. Ainsi, une ligne dupliquée signifie que les valeurs sont égales à une ligne précédente. Des résumés des doublons sont fournis.\n<br/><br/>\n<b>Variables clés :</b> Spécifiez des variables clés facultatives qui définissent les doublons. Si aucune variable clé n'est sélectionnée, des doublons de cas complets seront recherchés.\n<br/><br/>\n<b>Créer un ensemble de données avec toutes les lignes associées aux doublons :</b> Cela créera un ensemble de données de toutes les lignes dupliquées et la première instance de chaque ligne correspondant à chaque doublon. L'ensemble de données de sortie sera trié par toutes les variables dans le cas de doublon complet et par les variables clés dans le cas de variable clé. Les variables clés seront également déplacées au début de l'ensemble de données de sortie. Le champ <b>Nom de l'ensemble de données</b> peut être utilisé pour nommer cet ensemble de données de sortie.\n<br/><br/>\n<b>Créer un ensemble de données avec les données originales et une colonne indiquant les doublons :</b> Cela créera un ensemble de données incluant toutes les données originales plus une colonne supplémentaire indiquant les lignes dupliquées (0 = pas de doublon, 1 = doublon). Le champ <b>Nom de l'ensemble de données</b> peut être utilisé pour nommer cet ensemble de données de sortie. Le champ <b>Nom de la variable dupliquée</b> peut être utilisé pour nommer cette colonne supplémentaire.\n<br/><br/>\n<b>Créer un ensemble de données avec tous les doublons supprimés :</b> Cela créera un ensemble de données qui supprime toutes les lignes dupliquées (soit des cas complets, soit par variables clés) où les doublons sont recherchés de haut en bas dans l'ensemble de données. Cela signifie que toutes les 2ème, 3ème, etc. instances des lignes seront supprimées. Le champ <b>Nom de l'ensemble de données</b> peut être utilisé pour nommer cet ensemble de données de sortie.\n<br/><br/>\n<b>Packages R requis :</b> dplyr, arsenal\n"
+  }
+}

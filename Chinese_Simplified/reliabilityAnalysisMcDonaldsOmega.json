@@ -1,0 +1,10 @@
+{
+  "title": "可靠性分析（麦克唐纳的欧米伽）",
+  "navigation": "麦克唐纳的欧米伽",
+  "tvarbox1": "所有项目",
+  "help": {
+    "title": "麦克唐纳的欧米伽",
+    "r_help": "help(omega, package=psych)",
+    "body": "\n            <b>描述</b></br>\n计算麦克唐纳的欧米伽估计的总体和总因子饱和度\n<br/>\n<b>用法</b>\n<br/>\n<code> \nomega(m,nfactors=3,fm=\"minres\",n.iter=1,p=.05,poly=FALSE,key=NULL,\n    flip=TRUE,digits=2, title=\"Omega\",sl=TRUE,labels=NULL,\nplot=TRUE,n.obs=NA,rotate=\"oblimin\",Phi=NULL,option=\"equal\",covar=FALSE, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nm​: 一个相关矩阵，或数据的 data.frame/matrix，或（如果指定了 Phi）一个倾斜因子模式矩阵\n</li>\n<li>\nnfactors: 分组因子的数量\n</li>\n<li>\nfm​: 因子方法（默认是 minres）fm=\"pa\" 表示主轴，fm=\"minres\" 表示最小残差（OLS）解，fm=\"pc\" 表示主成分（见注释），或 fm=\"ml\" 表示最大似然。\n</li>\n<li>\nn.iter: 在 omega 中进行多少次复制以获得自助法估计​\n</li>\n<li>\np: 双尾置信边界的概率\n</li>\n<li>\ndigits​: 如果指定，输出四舍五入到 digits​\n</li>\n<li>\npoly: 是否使用多序列/四序列或正常皮尔逊相关来找到相关矩阵\n</li>\n<li>\nkey​: 一个 +/- 1 的向量，用于指定项目评分的方向。默认假设所有项目都是正向评分，但如果某些项目是反向评分，则应指定 key。​\n</li>\n</ul>\n<b>值</b><br/>\nomega hierarchical: ω_h 系数<br/>\nomega.lim: 测试变得无限大时 ω_h 的极限<br/>\nomega total: omega_t 系数<br/>\nalpha: 克朗巴赫的 α<br/>\nschmid: Schmid Leiman 转换的因子矩阵及相关矩阵<br/>\nschmid$sl: g 因子载荷以及残差因子<br/>\nschmid$orthog: 原始因子的 Varimax 旋转解<br/>\nschmid$oblique: 倾斜或 promax 转换的因子<br/>\nschmid$phi: 倾斜因子的相关矩阵<br/>\nschmid$gloading: 倾斜因子的高阶 g 因子的载荷<br/>\nkey: 一个 -1 或 1 的向量，显示项目评分的方向。<br/>\nmodel: 一个包含两个元素的列表，一个适合提供给 sem 函数用于结构方程模型，另一个提供给 lavaan 包。<br/>\nsem: sem 分析的输出<br/>\nomega.group: omega total、omega hierarchical（一般）和每个组内的 omega 的摘要统计。<br/>\nscores: Schmid-Leiman 解的因子得分估计。要获取层次模型的得分，请参见详细 R 帮助中的注释。<br/>\n各种拟合统计，见输出<br/>\n<b>包</b></br>\npsych​</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或通过创建 R 代码块点击输出窗口中的 +，运行以下命令 help(omega, package=psych)"
+  }
+}

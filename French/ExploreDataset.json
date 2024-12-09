@@ -1,0 +1,14 @@
+{
+  "title": "Explorer le jeu de données",
+  "navigation": "Explorer le jeu de données",
+  "destdatalabel": "Jeu de données à explorer",
+  "htmloutlabel": "Afficher la sortie dans une page Web",
+  "standardgraphlabel": "Inclure des graphiques dans la fenêtre de sortie",
+  "maxdistvalueslabel": "Valeurs distinctes maximales",
+  "rounddigitslabel": "Chiffres significatifs",
+  "help": {
+    "title": "Explorer le jeu de données",
+    "r_help": "help(dfSummary, package ='summarytools')",
+    "body": "\nCela crée un tableau décrivant un jeu de données. Les descriptions incluent le nom du jeu de données, le nombre d'observations, le nombre de variables, le nombre d'enregistrements dupliqués, \nnoms des variables, classes des variables, statistiques résumées des variables et graphiques. Cet outil est davantage destiné à l'exploration et au nettoyage des données, plutôt qu'à des fins d'analyse des données. \nUne version texte du tableau est affichée par défaut, mais une version HTML plus jolie peut être affichée dans le navigateur Web par défaut.\n<br/><br/>  \n<b>Jeu de données à explorer :</b> Jeu de données que vous souhaitez décrire\n<br/><br/>  \n<b>Afficher la sortie dans une page Web :</b> Cochez si vous souhaitez afficher une version jolie du tableau dans le navigateur Web par défaut. Cette version inclura des graphiques.\n<br/><br/>\n<b>Inclure des graphiques dans la fenêtre de sortie :</b> Cochez si vous souhaitez inclure des versions texte des graphiques dans la fenêtre de sortie BlueSky\n<br/><br/>\n<b>Valeurs distinctes maximales :</b> Le nombre maximum de valeurs pour lesquelles afficher les fréquences. Si une variable a plus de valeurs distinctes que ce nombre, les fréquences restantes seront rapportées \nen tant que catégorie entière, avec le nombre de valeurs distinctes supplémentaires. Pour les variables de caractères, les valeurs les plus fréquentes sont affichées, donc cela contrôle également combien montrer dans \nce cas. La valeur par défaut est 10.\n<br/><br/>\n<b>Chiffres significatifs :</b> Nombre de chiffres significatifs à afficher. La valeur par défaut est 2.\n<br/><br/>\n<b>Packages R requis :</b> summarytools\n\t\t\t"
+  }
+}

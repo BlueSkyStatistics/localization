@@ -1,0 +1,16 @@
+{
+  "title": "Fehlende Werte ersetzen (Numerische Variablen)",
+  "navigation": "Numerisch",
+  "label1": "Fehlende Werte (NAs) in den ausgewählten Variablen werden durch eine Funktion ersetzt, d.h. Median, Mittelwert, Minimum, Maximum oder den angegebenen Wert.",
+  "target": "Wählen Sie Variablen aus, für die fehlende Werte ersetzt werden sollen",
+  "label2": "Wählen Sie eine Funktion aus oder geben Sie einen Wert an, um NAs zu ersetzen",
+  "rd1": "Verwenden Sie eine Funktion zur Berechnung fehlender Werte",
+  "selectctrl": "Wählen Sie die Funktion aus",
+  "rd2": "Geben Sie einen numerischen Wert an, um fehlende Werte zu ersetzen",
+  "valueEntered": "Geben Sie einen numerischen Wert ein",
+  "help": {
+    "title": "Fehlende Werte ersetzen (Numerisch)",
+    "r_help": "hilfe(mittel)",
+    "body": "\n<b>Beschreibung</b></br>\nErsetzen Sie fehlende Werte in den ausgewählten Variablen durch die ausgewählte Operation, d.h. Median, Mittelwert, Minimum, Maximum\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvar: Zeichenfolge, die die numerische Variable mit fehlenden Werten (na) darstellt, z.B. var = c('sales')\n</li>\n<li>\nDataset: Der Datensatz, der die Variable var enthält\n</li>\n</ul>\n<b>Wert</b><br/>\nBerechnete Werte werden direkt im Dataset gespeichert<br/>\n<b>Paket</b></br>\nbasis</br>\n<b>Hilfe</b></br>\nhilfe(mittel)"
+  }
+}

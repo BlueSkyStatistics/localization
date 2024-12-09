@@ -1,0 +1,16 @@
+{
+  "title": "評価スケールモデル",
+  "navigation": "評価スケールモデル",
+  "modelname": "モデル名を入力してください",
+  "destinationvars": "目的変数",
+  "estimationlbl": "推定",
+  "rad1": "CML推定を使用",
+  "chk1": "標準化誤差を計算",
+  "chk2": "パラメータを合計（0）に正規化",
+  "rad2": "MML推定を使用",
+  "help": {
+    "title": "評価スケールモデル",
+    "r_help": "help(RSM, package='eRm')",
+    "body": "\n            <b>説明</b>\n            <br/>\n            評価スケールモデルのパラメータ推定を生成します\n            <br/><br/>\n            CML推定の場合、eRm::RSMを呼び出して多項選択項目応答の評価スケールモデルのパラメータ推定を計算します\n            <br/><br/>\n            MML推定の場合、適切なパラメータでtam.mmlを呼び出します\n            <br/><br/>\n            <b>CML推定の使用法</b>\n            <br/>\n            <code>\n            eRm::RSM(X,se=FALSE,sum0=FALSE) \n            </code>  \n            <br/><br/>\n            <b>引数</b>\n            <br/>                      \n            <ul>\n            <li>\n            X:  入力0/1データ行列またはデータフレーム; 行は個人を表し、列は項目を表します。欠損値はNAとして挿入されます。\n            </li>\n            <li>\n            W:  Raschモデルの設計行列。省略した場合、関数はWを自動的に計算します。\n            </li>\n            <li>\n            se: TRUEの場合、標準誤差が計算されます。\n            </li>\n            <li>\n            sum0: TRUEの場合、適切なWを指定してパラメータが合計0に正規化されます。FALSEの場合、最初のパラメータは0に制限されます。\n            </li>\n            <li>\n            etaStart: etaパラメータの開始値のベクトルを指定できます。省略した場合、0ベクトルが使用されます。\n            </li>\n            </ul>\n            <br/><br/><br/>\n            <b>MML推定の使用法</b>\n            <br/>\n            <code>\n            tam.mml(resp,irtmodel=\"RSM\",verbose=FALSE )\n            </code>\n            <br/><br/>\n            <b>引数</b>\n            <br/>             \n            <ul>\n            <li>\n            resp: 多項選択項目応答を持つデータフレームk=0,...,K。欠損応答はNAとして宣言する必要があります。\n            </li>\n            <li>\n            irtmodel: 固定項目傾斜（tam.mml内）のオプションにはPCM（部分的クレジットモデル）、PCM2（ConQuestパラメータ化の部分的クレジットモデル 'item+item*step'）、およびRSM（評価スケールモデル; ConQuestパラメータ化 'item+step'）が含まれます。\n            <br/>\n            推定項目傾斜（tam.mml.2plでのみ利用可能）のオプションには2PL（項目カテゴリのすべての傾斜が推定される; 名義項目応答モデル）、GPCM（各項目が次元ごとに1つの傾斜パラメータを持つ一般化部分的クレジットモデル）、および2PL.groups（項目のサブセットが同じ項目傾斜推定を受ける）があります。一般化部分的クレジットモデルの項目傾斜に関する設計行列E（GPCM.design、例を参照）もあります。項目傾斜は、tam.mml.mfr関数を使用したファセットデザインでは推定できません。ただし、事前に指定された設計行列を使用し、tam.mml.2plにいくつかの制限を適用することは簡単です。\n            </li>\n            <li>\n            verbose: 反復中に出力を印刷するかどうかを示す論理値。\n            </li>\n            </ul>\n            <br/><br/>\n            <b>パッケージ</b>\n            <br/>\n            TAM, eRm\n            <br/><br/>\n            <b>ヘルプ</b>\n            <br/>\n            help(RSM, package='eRm')\n            <br/>\n            help(tam.mml, package='TAM')\n"
+  }
+}

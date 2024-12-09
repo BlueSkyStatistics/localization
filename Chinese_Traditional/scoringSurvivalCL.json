@@ -1,0 +1,25 @@
+{
+  "title": "預測生存概率",
+  "label100": "此對話框輸出在一個或多個指定的隨訪時間的預測生存概率。\n必須滿足以下要求。\n1. 您必須在數據集中構建了一個Cox回歸模型，其中1=事件，0=審查。\n2. 您想要生成預測的數據集必須具有用於創建原始模型的所有自變量。\n3. 用於隨訪時間的時間尺度必須與創建原始模型所用的時間尺度匹配。\n4. 如果您想要單個觀察的預測，您需要創建一個包含該觀察的新數據集。",
+  "navigation": "Cox評分",
+  "filterModels": "按類別過濾模型",
+  "modelSelection": "選擇一個模型來評分數據集",
+  "label1": "診斷測試",
+  "followUpTime": "指定一個或多個隨訪時間，例如1200、1250，將為每個隨訪時間生成預測生存概率",
+  "levelOfInterest": "當要預測的變量有2個級別時，指定感興趣的級別。混淆矩陣和相關統計將顯示指定的參考級別",
+  "label12": "測試結果：一旦選擇了模型，我們將運行測試以查看模型中指定的因變量是否在要評分的數據集中可用。結果將顯示在這裡",
+  "label2": "保存生存概率。",
+  "label3": "預測概率將作為新變量存儲，前綴將附加到原始事件變量名稱之前",
+  "label4": "**對於具有2個級別的因變量，第二級別被視為正級別。請參見數據 > 因子級別 > 手動重新排序級別以更改因子級別的順序並重建模型。",
+  "conflevel": "保存個別預測值的置信區間 **（僅對線性模型（類lm）有效）",
+  "roctable": "顯示ROC表（**僅對二元因變量有效）",
+  "colname": "指定列名前綴",
+  "label5": "**勾選上面的復選框將對大型數據集產生性能懲罰。",
+  "level": "指定置信水平",
+  "confusioncheck": "生成混淆矩陣",
+  "help": {
+    "title": "使用模型對數據集進行評分",
+    "r_help": "help(predict, package='stats')",
+    "body": "\n    當指定多個時間段時，僅為第一個時間段生成混淆矩陣和ROC曲線\n    <b>描述</b></br>\n    模型評分執行以下操作</br>\n    1. 使用選定的預構建模型對當前數據集進行評分。使用指定的前綴將預測存儲在當前數據集中，並使用指定的置信區間。</br>\n    2. 可選地創建混淆矩陣和ROC曲線</br>\n    3. 如果您正在對包含因變量/要預測的變量的訓練數據集進行評分，並且因變量有2個級別，您可以選擇參考級別/感興趣的級別。<br/>\n    4. 使用指定的感興趣級別創建混淆矩陣和相關統計。<br/>\n    有關predict函數和混淆矩陣的詳細信息，請參見下面\n    <br/>\n    <br/>\n    <b>描述</b></br>\n    predict是一個通用函數，用於使用選定的模型進行預測。 \n    <br/>\n    <b>用法</b>\n    <br/>\n    <code> \n    BSkyPredict(modelname, prefix, datasetname)\n    </code> <br/>\n    <b>參數</b><br/>\n    <ul>\n    <li>\n    modelname:希望進行預測的模型對象。\n    </li>\n    <li>\n    prefix:將用於創建包含預測的新變量的前綴字符串。\n    </li>\n    <li>\n    datasetname:是要評分並保存預測的當前數據集。\n    </li>\n    </ul>\n    <b>詳細信息</b></br>\n    使用指定的前綴將預測存儲在當前數據集中，並使用指定的置信區間。</br>\n    <b>包</b></br>\n    stats</br>\n    <b>幫助</b></br>\n    有關詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或在R編輯器窗口中運行以下命令help(predict, package ='stats')\n    </br>\n    </br>\n    <b>描述</b></br>\n    通過交叉列出觀察到的類別和預測類別及相關統計來創建混淆矩陣。 \n    <br/>\n    <b>用法</b>\n    <br/>\n    <code> \n    BSkyConfusionMartix(modelname,showCofusionMatrix,predictions,datasetname)\n    </code> <br/>\n    <b>參數</b><br/>\n    <ul>\n    <li>\n    modelname :希望獲得混淆矩陣的模型對象。\n    </li>\n    <li>\n    showCofusionMatrix:邏輯，如果為TRUE，則生成混淆矩陣（如果適用），如果為FALSE，則不生成混淆矩陣。\n    </li>\n    <li>\n    predictions :作為predict()調用的結果返回的對象。\n    </li>\n    <li>\n    datasetname:是當前數據集名稱，我們希望使用該數據集進行預測。\n    </li>\n    </ul>\n    <b>詳細信息</b></br>\n    使用包caret中的函數confusionMatrix顯示混淆矩陣</br>\n    <b>包</b></br>\n    caret</br>\n    <b>幫助</b></br>\n    有關詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或在R編輯器窗口中運行以下命令help(confusionMatrix, package ='caret')\n                "
+  }
+}

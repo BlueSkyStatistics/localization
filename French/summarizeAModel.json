@@ -1,0 +1,10 @@
+{
+  "title": "Résumer un modèle",
+  "navigation": "Résumer un modèle",
+  "modelselector1": "Sélectionner un modèle",
+  "help": {
+    "title": "Résumer un modèle",
+    "r_help": "aide(résumé)",
+    "body": "\n                <b>Description</b></br>\nsummary est une fonction générique utilisée pour produire des résumés des résultats de diverses fonctions d'ajustement de modèles. La fonction invoque des méthodes particulières qui dépendent de la classe du premier argument, par exemple summary.lm (modèle linéaire), summary.glm (modèle linéaire généralisé)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject : un objet pour lequel un résumé est souhaité.\n</li>\n</ul>\n<b>Valeur</b><br/>\nLa forme de la valeur retournée par summary dépend de la classe de son argument. Voir la documentation des méthodes particulières, c'est-à-dire help(summary.lm), help(summary.glm) pour des détails sur ce qui est produit par cette méthode.</br>\n<b>Paquet</b></br>\nbase</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(summary)\n                "
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "组内相关系数",
+    "navigation": "组内相关系数",
+    "ratervars": "评分者变量：",
+    "cilevel": "置信水平：",
+    "modeldetails": "模型详情",
+    "help": {
+        "title": "组内相关系数",
+        "r_help": "help(ICC, package=psych)",
+        "body": "\n<b>描述</b></br>\n计算 Shrout 和 Fleiss (1979, Psychological Bulletin) 的 6 个组内相关系数 (ICC)。估计使用限制最大似然的线性混合效应模型完成，因此可以处理缺失数据。</br>\n<b>包</b></br>\npsych</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框右上角的 R 图标或运行命令 help(ICC, package=psych)。\n\t\t\t"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "階層クラスタ",
+  "navigation": "階層的",
+  "destination": "目的地",
+  "clusters": "クラスタ数",
+  "storeClusterInDataset": "クラスタをデータセットに割り当てる",
+  "variablename": "クラスタを保存するための変数名",
+  "biplot": "クラスタのバイプロットを表示",
+  "dendogram": "クラスタのデンドログラムをプロット",
+  "labelForClusteringMethod": "クラスタリング手法",
+    "Methodlabel": "方法",
+    "MethodRadlabel1": "ウォード法",
+    "MethodRadlabel2": "単一連結法",
+    "MethodRadlabel3": "完全連結法",
+    "MethodRadlabel4": "平均連結法",
+    "MethodRadlabel5": "マックウィッティ法",
+    "MethodRadlabel6": "中央値連結法",
+    "MethodRadlabel7": "重心連結法",
+    "Metriclabel": "距離尺度",
+    "MetricRadlabel1": "ユークリッド距離",
+    "MetricRadlabel2": "二乗ユークリッド距離",
+    "MetricRadlabel3": "マンハッタン距離（市街ブロック）",
+    "MetricRadlabel4": "変換なし",
+  "help": {
+    "title": "階層クラスタ",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>説明</b></br>\n階層クラスタ分析は、一連の非類似性に基づいており、それを分析するための方法です。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvarsToCluster: 分析する変数\n</li>\n<li>\nmethod: 使用する凝集法。この方法は、\"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) または \"centroid\" (= UPGMC) のいずれかの明確な略語である必要があります。\n</li>\n<li>\nnoOfClusters: 希望するクラスタの数\n</li>\n<li>\nplotDendogram: デンドログラムをプロットするかどうか（真または偽）\n</li>\n<li>\nassignClusterToDataset: クラスタの割り当てをデータセットに保存するかどうか\n</li>\n<li>\nlabel: クラスタの割り当てを保存する新しい変数の名前\n</li>\n<li>\nplotBiplot: バイプロットをプロットするかどうか（真または偽）\n</li>\n</ul>\n<b>パッケージ</b></br>\nBlueSky</br>\n<b>ヘルプ</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>説明</b></br>\nplotDendrogram: クラスタのデンドログラムをプロットするためにプロット関数を呼び出します\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nmethod: 上記を参照\n</li>\n<li>\ndistance: 上記を参照\nplotBiplot: バイプロットをプロットするかどうか（真または偽）\n</li>\n</ul>\n<b>パッケージ</b></br>\nBlueSky</br>\n<b>ヘルプ</b></br>\nhelp(plot)\n    "
+  }
+}

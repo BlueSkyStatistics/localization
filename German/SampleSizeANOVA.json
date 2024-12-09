@@ -1,0 +1,16 @@
+{
+  "title": "Stichprobengröße, ANOVA",
+  "navigation": "ANOVA",
+  "howtouse": "Um die Stichprobengröße zu berechnen: Geben Sie die Gruppenmittelwerte und die Power an\nUm die Power zu berechnen: Geben Sie die Stichprobengröße und die Gruppenmittelwerte an\nUm die nachweisbare Varianz der Gruppenmittelwerte zu berechnen: Geben Sie die Stichprobengröße und die Power an",
+  "numgrps": "Anzahl der Gruppen",
+  "n": "Stichprobengröße pro Gruppe",
+  "grpmeans": "Gruppenmittelwerte, geben Sie Werte getrennt durch Kommas an, z.B. 20, 25, 40",
+  "power": "Power (0-1)",
+  "sd": "Standardabweichung",
+  "siglevel": "Signifikanzniveau (0-1)",
+  "help": {
+    "title": "Stichprobengröße, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für eine ausgewogene einfaktorielle ANOVA. Es berechnet die Stichprobengröße, die Power oder den Unterschied in den Mittelwerten (berechnet als die Varianz zwischen den Mittelwerten), wenn der Benutzer die anderen beiden angibt.\n<br/><br/>\n<b>Anzahl der Gruppen:</b> Geben Sie die Anzahl der Gruppen in der Studie an\n<br/><br/>\n<b>Stichprobengröße pro Gruppe:</b> Geben Sie die Anzahl der Probanden in jeder Gruppe an\n<br/><br/>\n<b>Gruppenmittelwerte:</b> Geben Sie die Mittelwerte in jeder Gruppe an, die Sie nachweisen möchten. Mindestens ein Mittelwert muss sich von den anderen unterscheiden.\n<br/><br/>\n<b>Power:</b> Geben Sie die gewünschte Power der Studie an, d.h. die Wahrscheinlichkeit, dass der Test die Nullhypothese ablehnt, wenn die Alternativhypothese wahr ist.\n<br/><br/>\n<b>Standardabweichung:</b> Geben Sie die Standardabweichung des Ergebnisses an. Dies wird angenommen, dass es in den Gruppen gleich ist.\n<br/><br/>\n<b>Signifikanzniveau:</b> Geben Sie das gewünschte Signifikanzniveau (d.h. Typ-I-Fehler) des Tests an\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> stats\n\t\t\t"
+  }
+}

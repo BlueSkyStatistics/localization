@@ -1,0 +1,13 @@
+{
+  "title": "Variable Statistique Cumulative",
+  "navigation": "Variable Statistique Cumulative",
+  "varname": "Nom de la Nouvelle Variable (sans espaces)",
+  "statvar": "Variable pour Statistique Cumulative",
+  "groupbyvars": "Variables à Regrouper",
+  "func": "Statistique Cumulative",
+  "help": {
+    "title": "Variable Statistique Cumulative",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>Statistiques Cumulatives</b>\n<br/><br/>\nCette boîte de dialogue crée une nouvelle variable qui stocke la valeur cumulative d'une statistique choisie au fur et à mesure que vous descendez les lignes dans l'ordre actuel du jeu de données. Vous pouvez éventuellement calculer cette valeur cumulative au sein d'un ou plusieurs groupes.\n<br/><br/>\n\n<b>Nom de la Nouvelle Variable :</b> Nom de la variable qui stockera les valeurs cumulatives\n<br/><br/>\n\n<b>Variable pour Statistique Cumulative :</b> Variable pour laquelle les valeurs cumulatives seront calculées. Doit être numérique.\n<br/><br/>\n\n<b>Variables à Regrouper :</b> Variables optionnelles pour calculer la statistique cumulative.\n<br/><br/>\n\n<b>Statistique Cumulative :</b> Quelle statistique sera utilisée pour la statistique cumulative.\n<br/><br/>\n<ul>\n<li>cumsum : somme cumulative</li>\n<li>cummin : minimum cumulatif</li>\n<li>cummax : maximum cumulatif</li>\n<li>cummean : moyenne cumulative</li>\n<li>cummedian : médiane cumulative</li>\n<li>cumgmean : moyenne géométrique cumulative</li>\n<li>cumhmean : moyenne harmonique cumulative</li>\n<li>cumvar : variance cumulative</li>\n</ul>\n<br/><br/>\n<b>Packages R Requis :</b> cumstats, dplyr\n\t\t\t"
+  }
+}

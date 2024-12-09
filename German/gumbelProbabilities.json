@@ -1,0 +1,15 @@
+{
+  "title": "Gumbel-Wahrscheinlichkeiten",
+  "navigation": "Gumbel-Wahrscheinlichkeiten",
+  "varvals": "Geben Sie die Variablenwerte durch ein Komma getrennt ein. Beispiel: 3,0.5",
+  "location": "Standort",
+  "scale": "Skala",
+  "labelSig": "Signifikanzniveau",
+  "lowtail": "Unteres Ende",
+  "uptail": "Oberes Ende",
+  "help": {
+    "title": "Gumbel-Wahrscheinlichkeiten",
+    "r_help": "hilfe(pgumbel, paket=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Beschreibung</b>\n            <br/>\n            Dichte, Verteilungsfunktion, Quantilsfunktion und Zufallszahlengenerierung für die Gumbel-Verteilung mit angegebenen Standort- und Skalenparametern.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n                dgumbel(x, standort = 0, skala = 1)\n                <br/>\n                pgumbel(q, standort=0, skala=1, unteres.ende=TRUE)\n                <br/>\n                qgumbel(p, standort=0, skala=1, unteres.ende=TRUE)\n                <br/>\n                rgumbel(n, standort=0, skala=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : Vektor von Quantilen (Werte der Variablen).</li>\n                \n                \n                <li>p : Vektor von Wahrscheinlichkeiten.</li>\n                \n                \n                <li>n : Anzahl der Beobachtungen. Wenn die Länge(n) > 1 ist, wird die Länge als die benötigte Anzahl betrachtet.</li>\n                \n                \n                <li>standort : Standortparameter (Standard 0); möglicherweise ein Vektor.</li>\n                \n                \n                <li>skala : Skalenparameter (Standard 1); möglicherweise ein Vektor.</li>\n                \n                <li>unteres.ende : logisch; wenn TRUE (Standard) entsprechen Wahrscheinlichkeiten und Quantile P(X ≤ x), wenn FALSE P(X > x).</li>\n            </ul>            \n"
+  }
+}

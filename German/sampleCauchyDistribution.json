@@ -1,0 +1,19 @@
+{
+  "title": "Beispiel aus der Cauchy-Verteilung",
+  "navigation": "Beispiel aus der Cauchy-Verteilung",
+  "entrdsname": "Geben Sie den Namen für den Datensatz ein",
+  "location": "Standort",
+  "scale": "Skala",
+  "lblnoofsamples": "Anzahl der Proben (Zeilen)",
+  "lblnoofobsv": "Anzahl der Beobachtungen (Spalten)",
+  "lblseed": "Saat",
+  "lblAddtoDS": "Zum Datensatz hinzufügen",
+  "chklbl1": "Stichprobenmittelwerte",
+  "chklbl2": "Stichprobensummen",
+  "chklbl3": "Stichprobenstandardabweichungen",
+  "help": {
+    "title": "Beispiel aus der Cauchy-Verteilung",
+    "r_help": "help(rcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>Beschreibung</b>\n            <br/>\n            Dichte, Verteilungsfunktion, Quantilsfunktion und Zufallszahlen für die Cauchy-Verteilung mit Standortparameter location und Skalenparameter scale.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : Vektor von Quantilen.</li>\n                \n                \n                <li>p : Vektor von Wahrscheinlichkeiten.</li>\n                \n                \n                <li>n : Anzahl der Beobachtungen. Wenn die Länge(n) > 1, wird die Länge als die benötigte Anzahl betrachtet.</li>\n                \n                \n                <li>location, scale : Standort- und Skalenparameter.</li>\n                \n                \n                <li>log, log.p : logisch; wenn TRUE, werden Wahrscheinlichkeiten p als log(p) angegeben.</li>\n                \n                \n                <li>lower.tail : logisch; wenn TRUE (Standard), sind die Wahrscheinlichkeiten P[X ≤ x], andernfalls P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Details</b>\n            <br/>\n            Wenn Standort oder Skala nicht angegeben sind, nehmen sie die Standardwerte von 0 und 1 an.\n            <br/>\n            Die Cauchy-Verteilung mit Standort l und Skala s hat die Dichte\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            für alle x.\n            <br/>\n            <br/><b>Wert</b>\n            <br/>\n            dcauchy, pcauchy und qcauchy sind jeweils die Dichte, Verteilungsfunktion und Quantilsfunktion der Cauchy-Verteilung. rcauchy erzeugt Zufallszahlen aus der Cauchy.\n            <br/>\n            Die Länge des Ergebnisses wird durch n für rcauchy bestimmt und ist das Maximum der Längen der numerischen Argumente für die anderen Funktionen.\n            <br/>\n            Die numerischen Argumente außer n werden auf die Länge des Ergebnisses wiederverwendet. Nur die ersten Elemente der logischen Argumente werden verwendet.\n            <br/>\n            <b>Quelle</b>\n            <br/>\n            dcauchy, pcauchy und qcauchy werden alle aus numerisch stabilen Versionen der Definitionen berechnet.\n            <br/>\n            rcauchy verwendet Inversion."
+  }
+}

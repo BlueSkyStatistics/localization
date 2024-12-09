@@ -1,0 +1,20 @@
+{
+  "title": "Dummy-Variablen berechnen",
+  "navigation": "Dummy-Code",
+  "label1": "Geben Sie die Variablen ein, die dummy-codiert werden sollen. Neue Variablen werden mit dem Namen im Format \"Variablenname_Ebene Name\" erstellt. Standardmäßig wird die häufigste Ebene als Referenz behandelt.",
+  "target": "Wählen Sie die Variable(n) aus, die dummy-codiert werden sollen",
+  "label2": "Ebene, die als Referenz behandelt werden soll",
+  "MostFrequent": "Häufigster Wert",
+  "first": "Erster Wert",
+  "None": "Alle Ebenen beibehalten (nicht empfohlen für statistische Modelle) A.k.a. One-Hot-Encoding",
+  "prefix": "Präfix",
+  "txt1": "Geben Sie ein Präfix/Suffix ein",
+  "label3": "Weitere Optionen",
+  "chk3": "Ursprüngliche Variablen entfernen",
+  "chk4": "Dummy-Variablen für fehlende Werte erstellen",
+  "help": {
+    "title": "Dummy-Variablen berechnen",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Beschreibung</b></br>\nDummy-Variablen berechnen\n<br/>\n<b>Verwendung</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n.data:\tEin Objekt mit dem Datensatz, aus dem Sie Dummy-Spalten erstellen möchten.\n</li>\n<li>\nselect_columns:\tVektor von Spaltennamen, aus denen Sie Dummy-Variablen erstellen möchten. Wenn NULL (Standard), werden alle Zeichen- und Faktor-Spalten verwendet.\n</li>\n<li>\nremove_first_dummy: Entfernt die erste Dummy-Variable jeder Variablen, sodass nur n-1 Dummies verbleiben. Dies vermeidet Multikollinearitätsprobleme in Modellen.\n</li>\n<li>\nremove_most_frequent_dummy: Entfernt die am häufigsten beobachtete Kategorie, sodass nur n-1 Dummies verbleiben. Wenn es einen Gleichstand für die häufigste gibt, wird die erste (in alphabetischer Reihenfolge) Kategorie entfernt, die am häufigsten ist.\n</li>\n<li>\nignore_na: Wenn TRUE, ignoriert alle NA-Werte in der Spalte. Wenn FALSE (Standard), wird eine Dummy-Spalte für value_NA erstellt und in jeder Zeile, die einen NA-Wert hat, wird eine 1 vergeben.\n</li>\n<li>\nsplit: Ein String, um eine Spalte zu teilen, wenn mehrere Kategorien in der Zelle vorhanden sind. Wenn eine Variable Haustiere ist und die Zeilen \"Katze\", \"Hund\" und \"Schildkröte\" sind, würde jedes dieser Haustiere seine eigene Dummy-Spalte werden. Wenn eine Zeile \"Katze, Hund\" ist, dann hätte diese Zeile bei einem Split-Wert von \",\" einen Wert von 1 für sowohl die Katze als auch die Hund-Dummy-Spalten.\n</li>\n<li>\nremove_selected_columns: Wenn TRUE (nicht Standard), entfernt die Spalten, die zur Generierung der Dummy-Spalten verwendet wurden.\n</li>\n<li>\nWert: Ein data.frame (oder tibble oder data.table, abhängig vom Eingabedatentyp) mit der gleichen Anzahl von Zeilen wie die eingegebenen Daten und den ursprünglichen Spalten plus den neu erstellten Dummy-Spalten.\n</li>\n<li>\nSiehe auch\ndummy_rows zum Erstellen von Dummy-Zeilen\n</li>\n<li>\nAndere Dummy-Funktionen: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Beispiele</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Jahr-Spalte einbeziehen\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Erste Dummy-Variable für jedes Paar von Dummy-Spalten entfernen</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Paket</b></br>\nfastDummies</br>\n<b>Hilfe</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

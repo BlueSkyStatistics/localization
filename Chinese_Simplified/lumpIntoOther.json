@@ -1,0 +1,27 @@
+{
+  "title": "将最少或最多常见的因子水平合并",
+  "navigation": "自动合并为其他",
+  "target": "选择要合并稀疏水平的变量",
+  "label1": "合并水平的新类别的默认名称为“其他”。指定权重是可选的。您可以用合并的水平覆盖现有变量，或将结果保存到新变量中",
+  "other": "合并水平的名称",
+  "label3": "使用的方法",
+  "defaultOption": "将最少频率的水平合并为“其他”，同时确保“其他”是最小的水平",
+  "categories": "保留最常见的 (+n)/最不常见的 (-n) 类别",
+  "category": "输入类别的数量",
+  "proportion1": "保留至少 (+ prop)/至多 (- prop) 比例的类别",
+  "proportion": "输入比例",
+  "dropOption": "输入要替换为“其他”的水平，例如 level1,level2,level3",
+  "varweights": "变量权重",
+  "label2": "将结果保存到新变量或覆盖现有变量",
+  "rd3": "指定后缀（将创建一个带有后缀的新变量）",
+  "txt3": "输入后缀",
+  "rd2": "指定前缀（将创建一个带有前缀的新变量）",
+  "txt4": "输入前缀",
+  "rd1": "覆盖现有变量",
+  "ties": "处理平局的选项",
+  "help": {
+    "title": "合并为其他",
+    "r_help": "help(fct_lump, package =forcats)",
+    "body": "\n<b>描述</b></br>\n将最少或最多常见的因子水平合并为“其他”水平。合并水平的新类别的默认名称为“其他”。指定权重是可选的。您可以用合并的水平覆盖现有变量，或将结果保存到新变量中\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Other\",ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"other\",ties.method =\"min\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nf: 一个因子。如果 n 和 prop 都缺失，fct_lump 将最少频率的水平合并为“其他”，同时确保“其他”仍然是最小的水平。这在与 fct_inorder() 结合使用时特别有用。\n</li>\n<li>\nn: 正数 n 保留最常见的 n 个值。负数 n 保留最不常见的 -n 个值。如果有平局，您将至少获得 abs(n) 个值。\n</li>\n<li>\nprop: 正数 prop 保留至少 prop 次出现的值。负数 prop 保留至多 -prop 次出现的值。\n</li>\n<li>\nw: 一个可选的数值向量，给出每个值（而不是水平）在 f 中的频率权重。\n</li>\n<li>\nother_level: 用于“其他”值的水平值。始终放在水平的末尾。\n</li>\n<li>\nties.method: 一个字符字符串，指定如何处理平局。有关详细信息，请参见 rank()。\n</li>\n<li>\nmin: 保留至少出现 min 次的值。\n</li>\n</ul>\n<b>包</b></br>\nforcats</br>\n<b>帮助</b></br>\n在 BlueSky Statistics R 语法编辑器中输入以下行</br>\nhelp(fct_lump, package =forcats)\n"
+  }
+}

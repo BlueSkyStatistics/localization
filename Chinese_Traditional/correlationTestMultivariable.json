@@ -1,0 +1,22 @@
+{
+  "title": "相關性測試",
+  "navigation": "皮爾森, 斯皮爾曼",
+  "tvarbox": "選擇的變數（至少兩個）",
+  "lable1": "相關性類型",
+  "radio_pearson": "皮爾森",
+  "radio_spearman": "斯皮爾曼",
+  "lable2": "處理缺失值的選項",
+  "radio_cc": "僅完整案例",
+  "radio_pairwise": "成對完整案例",
+  "lable3": "顯示 P 值",
+  "ajp": "調整後的 P 值",
+  "unajp": "未調整的 P 值",
+  "bothp": "兩個 P 值",
+  "vis_cor": "可視化相關性矩陣",
+  "vis_plot": "可視化網絡圖",
+  "help": {
+    "title": "相關性分析",
+    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+    "body": "\n<b>描述</b>\n此函數使用 Hmisc 套件中的 rcorr 函數計算皮爾森或斯皮爾曼相關性矩陣以及相關性之間的成對 p 值。p 值使用霍爾姆方法進行多重推斷的修正（見 p.adjust）。觀察值會過濾缺失數據，僅使用完整觀察值。\n<br/>\n<b>用法</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## S3 方法類別 'rcorr.adjust'\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>參數</b>\n   <ul>\n   <li>\nx: 一個數值矩陣或數據框，或一個類別為 \"rcorr.adjust\" 的對象，將被打印。\n</li>\n<li>\ntype: \"pearson\" 或 \"spearman\"，根據所需的相關性類型；默認為 \"pearson\"。\n</li>\n<li>\nuse: 如何處理缺失數據：\"complete.obs\"，默認情況下僅使用完整案例；\"pairwise.complete.obs\"，對於每對使用所有有效數據的案例。\n</li>\n<li>\n...: 不使用。\n</li>\n</ul>\n<b>值</b>\n返回一個類別為 \"rcorr.adjust\" 的對象，通常只是打印。"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "重みを展開",
+  "navigation": "展開",
+  "datasetname": "重みが展開されたデータセットの名前",
+  "destination": "重みを含む列を入力してください",
+  "help": {
+    "title": "重みを展開",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>説明</b></br>\n        重みに従って行を展開した新しいデータセットを作成します。データフレームの行を、ソースデータフレームまたはデータテーブルの列に含まれる値によって展開（複製）します。BSkySetWeights()は、splitstackshapeパッケージのexpandRows()を呼び出します。\n        <br/>\n        <b>使用法</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>引数</b><br/>\n         <ul>\n           <li>\n        weights: 重みを含むデータセット変数。 \n        </li>\n        <li>\n        data: 入力データフレームまたはデータテーブル。\n        </li>\n        <li>\n        newdata: 指定された重みに対して行が複製される新しいデータセット。\n        </li>\n        </ul>\n        <b>パッケージ</b></br>\n        splitstackshape</br>\n        <b>ヘルプ</b></br>\n        help (expandRows)\n        "
+  }
+}

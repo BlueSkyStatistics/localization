@@ -1,0 +1,10 @@
+{
+  "title": "显示级别",
+  "navigation": "显示",
+  "target": "要显示级别的因子变量",
+  "help": {
+    "title": "显示级别",
+    "r_help": "help(map,package=purrr)",
+    "body": "\n<b>描述</b></br>\n将基础中的 levels 函数应用于数据集中选择的变量。用户使用 dplyr 中的 select 函数将变量传递给 map 函数，该函数将 levels 函数应用于每个变量\n<br/>\n<b>用法</b>\n<br/>\n<code> \n数据集 %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvar1,var2: 数据集中要显示级别的变量\n</li>\n<li>\n数据集: 包含变量 var1, var2 的数据集\n</li>\n</ul>\n<b>值</b><br/>\n所选变量的级别被显示<br/>\n<b>包</b></br>\npurrr, dplyr</br>\n<b>帮助</b></br>\nhelp(map,package=purrr)\n"
+  }
+}

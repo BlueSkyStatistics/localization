@@ -1,0 +1,23 @@
+{
+  "title": "データセットにモデル統計を追加",
+  "navigation": "データセットに統計を追加",
+  "label1": "以下のクラスのモデルがサポートされています（親のRクラス）- 線形モデル（lm）、コックス比例ハザード回帰モデル（coxph）、一般化線形モデル（glm）、局所多項式回帰（loess）、ロバスト線形回帰（rlm）、パラメトリック生存回帰モデル（survreg）、分位点回帰（rq）",
+  "label2": "統計は現在のデータセットに追加されます。ユニークな変数名を確保するために数値のサフィックスが使用されます。現在のデータセットはモデルを構築するために使用されたデータセットと一致する必要があります。",
+  "modelselector1": "モデルを選択:",
+  "suff": "統計変数名のサフィックスを入力してください",
+  "label3": "データセットの観測に追加する統計を選択してください",
+  "label4": "注意: サポートされる統計はモデルクラスによって異なります。以下のすべての統計は線形および一般化線形モデルによってサポートされており、分位点回帰は.resid、.fitted、.tauをサポートします。他のモデルクラスは.fitted、.se.fit、.residをサポートします。",
+  "chk1": ".hat（ハット行列の対角）",
+  "chk2": ".sigma（対応する観測がモデルから削除されたときの残差標準偏差の推定値）",
+  "chk3": ".cooksd（クック距離）",
+  "chk4": ".fitted（モデルのフィッティング値）",
+  "chk5": ".se.fit（フィッティング値の標準誤差）",
+  "chk6": ".resid（残差）",
+  "chk7": ".std.resid（標準化残差）",
+  "chk8": ".tau（推定された分位点） *分位点回帰のみサポート",
+  "help": {
+    "title": "データセットにモデル統計を追加",
+    "r_help": "help(augment, package='broom')",
+    "body": "\n                <b>説明</b></br>\nオブジェクトからの情報でデータを増強します\n<br/>\n<b>使用法</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: モデルオブジェクトまたは観測に追加する情報を持つ他のRオブジェクト。\n</li>\n<li>\n...: 増強メソッドへの追加引数。\n</li>\n</ul>\n<b>値</b><br/>\nデータポイントに関する情報を持つtibble::tibble()。</br>\n<b>メソッド</b><br/>\n個々のメソッドに関する詳細については、以下のヘルプトピックを参照してください:<br/>\naugment.betareg: betareg<br/>\naugment.coxph: coxph<br/>\naugment.decomposed.ts: decomposed.ts<br/>\naugment.factanal: factanal<br/>\naugment.felm: felm<br/>\naugment.glm: glm<br/>\naugment.glmRob: glmRob<br/>\naugment.htest: htest<br/>\naugment.ivreg: ivreg<br/>\naugment.kmeans: kmeans<br/>\naugment.lm: lm<br/>\naugment.lmRob: lmRob<br/>\naugment.loess: loess<br/>\naugment.Mclust: Mclust<br/>\naugment.mjoint: mjoint<br/>\naugment.nlrq: nlrq<br/>\naugment.nls: nls<br/>\naugment.plm: plm<br/>\naugment.poLCA: poLCA<br/>\naugment.prcomp: prcomp<br/>\naugment.rlm: rlm<br/>\naugment.rq: rq<br/>\naugment.rqs: rqs<br/>\naugment.smooth.spline: smooth.spline<br/>\naugment.speedlm: speedlm<br/>\naugment.stl: stl<br/>\naugment.survreg: survreg<br/>\nlme4_tidiers: merMod<br/>\nnlme_tidiers: lme<br/>\nnull_tidiers: NULL<br/>\nordinal_tidiers: clm, polr<br/>\nrowwise_df_tidiers: rowwise_df, tbl_df<br/>\n<b>パッケージ</b></br>\nbroom</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(augment, package=\"broom\")\n"
+  }
+}

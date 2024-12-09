@@ -1,0 +1,24 @@
+{
+  "title": "Modelle in eine Datei speichern",
+  "navigation": "Modelle speichern",
+  "filterModels": "Modelle nach Klasse filtern",
+  "modelSelection": "Wählen Sie ein Modell(e) zum Speichern aus",
+  "importResp": "Wählen Sie eine Datei aus, um ein Modell zu speichern",
+  "label1": "HINWEIS: Das Modell wird nur gespeichert, wenn Sie den Dialog ausführen, in die unten ausgewählte Datei.",
+  "levelOfInterest": "Wenn die zu prognostizierende Variable 2 Ebenen hat, geben Sie die Ebene von Interesse an. Die Verwirrungsmatrix und verwandte Statistiken werden mit der angegebenen Ebene von Interesse als Referenz angezeigt.",
+  "label12": "Testergebnisse: Sobald ein Modell ausgewählt ist, führen wir Tests durch, um zu sehen, ob die im Modell angegebenen abhängigen Variablen im Datensatz verfügbar sind, der bewertet werden soll. Die Ergebnisse werden hier angezeigt.",
+  "label2": "Speichern Sie die vorhergesagten Werte und unterstützenden Statistiken.",
+  "label3": "Vorhersagen und vorhergesagte Wahrscheinlichkeiten, wo anwendbar, werden im bewerteten Datensatz als neue Variablen mit dem unten angegebenen Präfix gespeichert.",
+  "label4": "**Für abhängige Variablen mit 2 Ebenen wird die 2. Ebene als positive Ebene behandelt. Siehe Daten > Faktorstufen > Stufen manuell neu anordnen, um die Reihenfolge der Faktorstufen zu ändern und das Modell neu zu erstellen.",
+  "conflevel": "Speichern Sie Konfidenzintervalle für einzelne vorhergesagte Werte **(Gültig nur für lineare Modelle (Klasse lm))",
+  "roctable": "ROC-Tabelle anzeigen (**Nur für binäre abhängige Variablen)",
+  "colname": "Geben Sie das Präfix für den Spaltennamen an",
+  "label5": "**Das Aktivieren des Kontrollkästchens oben führt zu einem Leistungsabfall bei großen Datensätzen.",
+  "level": "Geben Sie das Konfidenzniveau an",
+  "confusioncheck": "Verwirrungsmatrix generieren",
+  "help": {
+    "title": "Modelle speichern",
+    "r_help": "help(save, package='base')",
+    "body": "\n    <b>Beschreibung</b></br>\n    Ausgewählte Modelle werden in einer Datei im R-Datenformat (.RData-Erweiterung) gespeichert.</br>\n    Sie können eine neue Datei angeben, indem Sie einen Namen eingeben oder eine vorhandene Datei auswählen.</br>\n    Wenn Sie eine vorhandene Datei auswählen, wird sie überschrieben.</br>\n    Sie müssen die Schaltfläche Ausführen (die horizontale Dreiecksschaltfläche) klicken, um den Dialog auszuführen und die Objekte in eine Datei zu speichern. \n    <br/>\n    <b>Verwendung</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"Pfad der Datei\")\n    </code> <br/>\n    <b>Argumente</b><br/>\n    <ul>\n    <li>\n    model1, model2...: angepasste Modellobjekte\n    </li>\n    <li>\n    file: Dateiname mit Pfad, die ausgewählten Modellobjekte werden in dieser RData-Datei gespeichert\n    </li>\n    </ul>\n    <b>Pakete</b></br>\n    base</br>\n    <b>Hilfe</b></br>\n    Für detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl help(save, package = 'base') im R-Editorfenster aus.\n    </br>\n    "
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Adăugați niveluri noi",
+  "navigation": "Adăugați",
+  "target": "Factor variabile pentru a adăuga niveluri noi la",
+  "label1": "Adăugați niveluri noi la una sau mai multe variabile de tip factor. Salvați rezultatele în variabile existente sau creați variabile noi specificând un prefix/sufix. Noile variabile vor fi create cu prefixul/sufixul adăugat la numele existente.",
+  "newLevels": "Introduceți niveluri noi între ghilimele și separate prin virgulă, de exemplu \"nivel1\",\"nivel2\",\"nivel3\"",
+  "label2": "Salvați nivelurile noi în variabile noi sau suprascrieți variabile existente",
+  "rd3": "Specificați un sufix (o nouă variabilă va fi creată cu sufixul)",
+  "txt3": "Introduceți un sufix",
+  "rd2": "Specificați un prefix (o nouă variabilă va fi creată cu prefixul)",
+  "txt4": "Introduceți un prefix",
+  "rd1": "Suprascrieți variabilele existente",
+  "help": {
+    "title": "Adăugați niveluri noi",
+    "r_help": "help(fct_expand, package=\"forcats\")",
+    "body": "\n<b>NOTĂ: NU ÎNCHIDEȚI NIVELURILE ÎN GHILIMELE DUBLE SAU SINGURE, NU POT FI SPAȚII ÎN NUMELE NIVELURILOR. INTRODUCEȚI NIVELURI SEPARATE PRIN VIRGULE ÎN FORMATUL NIVEL1,NIVEL2,NIVEL3</b></br>\n<b>Descriere</b></br>\nAdăugați niveluri suplimentare la un factor. Adăugați niveluri noi la una sau mai multe variabile de tip factor. Rezultatele pot fi în variabile existente (suprascriere) sau creând variabile noi specificând un prefix/sufix. Noile variabile vor fi create cu prefixul/sufixul adăugat la numele existente. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf: Un factor (sau vector de caractere).\n</li>\n<li>\n...: Niveluri suplimentare de adăugat la factor. Nivelurile care există deja vor fi ignorate în tăcere.\n</li>\n</ul>\n<b>Exemple</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Pachet</b></br>\nforcats</br>\n<b>Ajutor</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+  }
+}

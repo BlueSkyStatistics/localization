@@ -1,0 +1,18 @@
+{
+  "title": "Duplikate finden",
+  "navigation": "Duplikate finden",
+  "keysnote": "HINWEIS: Wenn keine Schlüsselvariablen angegeben werden, führt dies zu einer vollständigen Fall-Duplikatsuche. Das Angeben von Schlüsselvariablen sucht nur nach Duplikaten anhand der Werte der Schlüsselvariablen.",
+  "keyvarslabel": "Schlüsselvariablen (optional)",
+  "allduprowschecklabel": "Datensatz mit allen Zeilen erstellen, die mit den Duplikaten verbunden sind",
+  "allduprowsnamelabel": "Datensatzname",
+  "alldatachecklabel": "Datensatz mit den Originaldaten und einer Spalte, die Duplikate anzeigt, erstellen",
+  "alldatanamelabel": "Datensatzname",
+  "dupvarnamelabel": "Name der Duplikatvariable",
+  "nodupdatachecklabel": "Datensatz mit allen entfernten Duplikaten erstellen",
+  "nodupdatanamelabel": "Datensatzname",
+  "help": {
+    "title": "Duplikate finden",
+    "r_help": "help(duplicated, package = 'base')",
+    "body": "\nDieser Dialog findet Duplikate entweder durch vollständige Fälle oder durch Schlüsselvariablen. Vollständige Fall-Duplikate sind für jeden Wert jeder Variablen gleich. Duplikate, die Schlüsselvariablen verwenden, sind Duplikate, die nur durch gleiche Werte für spezifische Variablen, die \"Schlüssel\" genannt werden, definiert sind. Duplikate werden von oben nach unten im Datensatz gesucht. Ein Duplikat bedeutet, dass die Werte gleich einem vorherigen Datensatz sind. Zusammenfassungen der Duplikate werden bereitgestellt.\n<br/><br/>\n<b>Schlüsselvariablen:</b> Geben Sie optionale Schlüsselvariablen an, die die Duplikate definieren. Wenn keine Schlüsselvariablen ausgewählt sind, werden vollständige Fall-Duplikate gesucht.\n<br/><br/>\n<b>Datensatz mit allen Zeilen erstellen, die mit den Duplikaten verbunden sind:</b> Dies erstellt einen Datensatz aller Duplikatzeilen und der ersten Instanz jeder Zeile, die jedem Duplikat entspricht. Der Ausgabedatensatz wird nach allen Variablen im vollständigen Duplikatsfall und nach den Schlüsselvariablen im Schlüsselvariablenfall sortiert. Die Schlüsselvariablen werden auch an den Anfang des Ausgabedatensatzes verschoben. Das <b>Datensatzname</b>-Feld kann verwendet werden, um diesen Ausgabedatensatz zu benennen.\n<br/><br/>\n<b>Datensatz mit Originaldaten und einer Spalte, die Duplikate anzeigt, erstellen:</b> Dies erstellt einen Datensatz, der alle Originaldaten plus eine zusätzliche Spalte enthält, die die Duplikatzeilen anzeigt (0=nicht dupliziert, 1=dupliziert). Das <b>Datensatzname</b>-Feld kann verwendet werden, um diesen Ausgabedatensatz zu benennen. Das <b>Name der Duplikatvariable</b>-Feld kann verwendet werden, um diese zusätzliche Spalte zu benennen.\n<br/><br/>\n<b>Datensatz mit allen entfernten Duplikaten erstellen:</b> Dies erstellt einen Datensatz, der alle Duplikatzeilen entfernt (entweder vollständiger Fall oder nach Schlüsselvariablen), wobei die Duplikate von oben nach unten im Datensatz gesucht werden. Das bedeutet, dass alle 2., 3. usw. Instanzen der Zeilen entfernt werden. Das </b>Datensatzname</b>-Feld kann verwendet werden, um diesen Ausgabedatensatz zu benennen.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> dplyr, arsenal\n"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "相関を持つ時系列をプロット",
+  "navigation": "相関を持つ時系列をプロット",
+  "destination": "プロットする変数",
+  "firstObservation": "最初の観察の時間 例:1: 1961,1 を入力して1961年1月、例:2: 1961,3 を入力して1961年の第3四半期、例:3: 連続系列の場合は1を入力",
+  "frequency": "単位時間あたりの観察数 例:1: 年間の各月に1回の観察のために12を入力、例:2: 四半期ごとに1回の観察のために4を入力、例:3: 連続系列の場合は1を入力。",
+  "label0": "追加のプロット",
+  "autocorrelations": "自己相関をプロット",
+  "autocovariance": "自己共分散をプロット",
+  "partialcorrelations": "部分相関をプロット",
+  "label2": "フィッティング値のオプション",
+  "mainTitle": "メインタイトル",
+  "yaxisLabel": "Y軸ラベル",
+  "help": {
+    "title": "相関を持つ時系列をプロット",
+    "r_help": "help(acf, package='forecast')",
+    "body": "\n<b>説明</b></br>\n自己相関、自己共分散、部分相関を持つ時系列プロットを作成します。BSkyPlotSeriesWithCorrelationsは、forecastパッケージ内のacfおよび/またはpacfを内部的に呼び出すラッパー関数です。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyPlotSeriesWithCorrelations(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='タイトル', ylab='y軸ラベル', dataset=\"Dataset2\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvars: プロットする選択された変数\n</li>\n<li>\nstart: 最初の観察の時間は年、月または年、四半期の形式で入力する必要があります。例: (データが月単位で整理されている場合は1992,1は1992年1月、データが四半期単位で整理されている場合は1992,1は1992年の第1四半期を指します。\n</li>\n<li>\nfrequency: 単位時間あたりの観察数。例: 月次の場合は年間に12回の観察があります。四半期ごとの場合は年間に4回の観察があります。\n</li>\n<li>\nautocorrelation: TRUEの場合、自己相関プロットも生成されます。\n</li>\n<li>\nautocovariance: TRUEの場合、自己共分散プロットも生成されます。\n</li>\n<li>\npartialautocorrelations: TRUEの場合、部分自己相関プロットも生成されます。\n</li>\n<li>\nplot.type: \"multiple\"は別々のプロット、\"single\"は結合プロット。\n</li>\n<li>\nmain: プロットのメインタイトル\n</li>\n<li>\nylab: y軸のタイトル\n</li>\n<li>\ndataset: varsが選択されたデータセットの名前。\n</li>\n</ul>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、出力ウィンドウで+をクリックしてRコードチャンクを作成し、次のコマンドhelp(acf, package ='forecast')を実行してください。\n"
+  }
+}

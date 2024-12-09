@@ -1,0 +1,17 @@
+{
+  "title": "Grafic de Frecvență",
+  "navigation": "Grafic de Frecvență",
+  "subsetvars": "Selectați variabilele",
+  "paretoChartChk": "Trasați graficul Pareto",
+  "createDatasetChk": "Creează set de date din tabelul de frecvență",
+  "label1": "Opțiuni de sortare pentru tabelul de frecvență",
+  "selectFreqSortRad": "Sortează tabelul de frecvență după frecvență",
+  "selectVarSortRad": "Sortează tabelul de frecvență după valorile variabilei",
+  "selectNoSortRad": "Niciuna",
+  "selectSortOrderChk": "Ordine de sortare descrescătoare (debifați pentru ordine crescătoare)",
+  "help": {
+    "title": "Tabel de Frecvență",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>Descriere</b></br>\nGenerează frecvențele pentru fiecare valoare unică din una sau mai multe variabile sau nume de coloane selectate.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"numele_datasetului\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Detalii</b></br>\nAceastă dialog folosește următoarele funcții:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Analiza experimentelor cu modelul de suprafață de răspuns (cantitativ)",
+  "navigation": "Analiza designului - Model de suprafață de răspuns",
+  "modelname": "Introduceți numele modelului de suprafață de răspuns",
+  "dependent": "Variabila de răspuns (dependentă)",
+  "formulaboxhint": "Puteți introduce, de asemenea, SO(var1, var2,...) pentru efecte de ordinul doi și interacțiuni, sau FO(...),... din pachetul rsm în caseta de construire a formulei de mai sus.",
+  "independent": "Predictori numerici - introduceți mai jos variabilele numerice ale formulei",
+  "generateContourPlotChk": "Afișați contururi (grafice)",
+  "generateRSMPlotChk": "Afișați suprafața de răspuns (grafice)",
+  "generatePathSteepestAscentChk": "Arătați calea de cea mai abruptă ascensiune din analiza crestei",
+  "checkShapiroNormalityTestChk": "Testul de normalitate Shapiro",
+  "normalityPlotsChk": "Grafic pentru verificarea normalității",
+  "help": {
+    "title": "Model de suprafață de răspuns cu un constructor de formule de model",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tRegresie pe suprafață de răspuns - se potrivește un model liniar cu un component de suprafață de răspuns și produce analize și rezumate corespunzătoare\n\t\t\t\t<br/> În constructorul de formule, puteți tasta SO(var1, var2, var3, ...) sau FO(var1, ..) sau alte funcții din pachetul rsm - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru mai multe detalii, consultați ajutorul R pentru următoarele\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

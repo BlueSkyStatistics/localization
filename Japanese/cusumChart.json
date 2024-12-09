@@ -1,0 +1,23 @@
+{
+  "title": "クスムチャート",
+  "navigation": "クスムチャート",
+  "summaryPrintChk": "チャートに加えて要約を印刷する",
+  "label2": "2つのオプション - 変数を選択するか、データセット内の変数を選択する（すでにグループ化されている場合）",
+  "selectVariableRad": "オプション1: グループ化する必要のあるデータセットから変数を選択",
+  "variableSelcted": "チャートにする変数（観測データ）",
+  "groupingNeededChk": "xbar、R、Sチャートに必要 - データをグループ化するために使用する変数",
+  "groupingVariable": "グループ化変数",
+  "variableControlLimits": "変数の制御限界のためにグループ化前に破棄される行（例：1:25または1,4,5,7:12として指定）",
+  "displayGroupsChk": "データセットUIグリッドにグループを表示",
+  "selectDatasetRad": "オプション2: すでにグループ化されている場合はデータセットから変数を選択",
+  "variablelistSelcted": "チャートにするために1つ以上のグループ化された変数（観測データ）を選択",
+  "decisionInterval": "決定間隔 - 累積和が制御外になる要約統計の標準誤差の数",
+  "seShift": "シフト - プロセスで検出するシフトの量、要約統計の標準誤差で測定",
+  "rowsTobeUsed": "チャートに使用するグループ化された行（例：1:25または1,4,5,7:12として指定）",
+  "rowsTobeUsedAsNewData": "新しいデータ - チャートに使用する新しいデータとしてのグループ化された行（例：1:25または1,4,5,7:12として指定） - 計算には含まれないがプロットする新しいデータ",
+  "help": {
+    "title": "クスムチャート",
+    "r_help": "help(qcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tqcc関数は統計的品質管理を行い、シェワートチャートをプロットします\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(qcc, package = qcc)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、qccパッケージからpistonringsというデータセットをLoad Datasetメニューでロードします。qccパッケージを選択し、次にpistonringsデータセットを選択します\n\t\t\t\t<br/>\n\t\t\t\tオプション1を選択し、直径を変数（観測..）に、サンプルをグループ化変数にします。\n\t\t\t\t<br/>\n\t\t\t\tグループ化された行に1:25を、 新しいデータに30:40を入力します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.htmlでqccチュートリアルをフォローしてください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "クラス内相関係数",
+    "navigation": "クラス内相関係数",
+    "ratervars": "評価者変数：",
+    "cilevel": "信頼水準：",
+    "modeldetails": "モデルの詳細",
+    "help": {
+        "title": "クラス内相関係数",
+        "r_help": "help(ICC, package=psych)",
+        "body": "\n<b>説明</b></br>\nShrout と Fleiss (1979, Psychological Bulletin) の 6 つのクラス内相関係数 (ICC) を計算します。推定は制限付き最尤法を使用した線形混合効果モデルを使用して行われるため、欠損データを処理できます。</br>\n<b>パッケージ</b></br>\npsych</br>\n<b>ヘルプ</b></br>\n詳しいヘルプについては、このダイアログオーバーレイの右上にある R アイコンをクリックするか、help(ICC, package=psych) コマンドを実行してください。\n\t\t\t"
+    }
+}

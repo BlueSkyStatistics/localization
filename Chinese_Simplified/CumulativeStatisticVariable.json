@@ -1,0 +1,13 @@
+{
+  "title": "累积统计变量",
+  "navigation": "累积统计变量",
+  "varname": "新变量名称（无空格）",
+  "statvar": "累积统计的变量",
+  "groupbyvars": "分组变量",
+  "func": "累积统计",
+  "help": {
+    "title": "累积统计变量",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>累积统计</b>\n<br/><br/>\n此对话框创建一个新变量，该变量存储所选统计量的累积值，随着您在当前数据集的行中向下移动。您可以选择在一个或多个组内计算此累积值。\n<br/><br/>\n\n<b>新变量名称：</b>将存储累积值的变量名称\n<br/><br/>\n\n<b>累积统计的变量：</b>将计算累积值的变量。必须是数值型。\n<br/><br/>\n\n<b>分组变量：</b>可选变量，用于在其中计算累积统计。\n<br/><br/>\n\n<b>累积统计：</b>将用于累积统计的统计量。\n<br/><br/>\n<ul>\n<li>cumsum: 累积和</li>\n<li>cummin: 累积最小值</li>\n<li>cummax: 累积最大值</li>\n<li>cummean: 累积均值</li>\n<li>cummedian: 累积中位数</li>\n<li>cumgmean: 累积几何均值</li>\n<li>cumhmean: 累积调和均值</li>\n<li>cumvar: 累积方差</li>\n</ul>\n<br/><br/>\n<b>所需的 R 包：</b>cumstats, dplyr\n\t\t\t"
+  }
+}

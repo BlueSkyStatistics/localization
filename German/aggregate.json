@@ -1,0 +1,15 @@
+{
+  "title": "Aggregierte Daten",
+  "navigation": "Aggregat",
+  "description": "Aggregiert eine oder mehrere numerische (Skalen-)Variablen nach einer oder mehreren Faktorvariablen und erstellt einen neuen aggregierten Datensatz. Für numerische Variablen berechnen wir Folgendes:\n        Mittelwert, Median, Summe, Standardabweichung, n_distinct, Max, Min und Varianz. \n        Es werden auch Zählungen im aggregierten Datensatz berechnet.",
+  "label1": "Aggregationsoptionen",
+  "upperdesc": "Wählen Sie die Funktion aus, die auf die zu aggregierenden Variablen angewendet werden soll",
+  "datasetname": "Geben Sie den Namen des aggregierten Datensatzes ein",
+  "showResultsinOutput": "Ergebnisse im Ausgabefenster anzeigen",
+  "groupBy": "Gruppieren nach (Variablen vom Typ Faktor oder Datum)",
+  "help": {
+    "title": "Aggregieren zu Datensatz",
+    "r_help": "hilfe(gruppen_nach, paket=dplyr)",
+    "body": "\n            <b>Beschreibung</b></br>\nAggregiert eine oder mehrere numerische (Skalen-)Variablen nach einer oder mehreren Faktorvariablen und erstellt einen neuen aggregierten Datensatz. Für numerische Variablen berechnen wir Folgendes:\nMittelwert, Median, Summe, Standardabweichung, n_distinct, Max, Min und Varianz. \nEs werden auch Zählungen im aggregierten Datensatz berechnet.\n<br/>\n<b>Verwendung</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Aktualisieren Sie den Datensatz</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Argumente</b>\n <ul>\n   <li>\nvar1: Faktor, nach dem gruppiert wird\n</li>\n<li>\nvar2, var3: Variablen zur Aggregation\n</li>\n<li>\nnewvarmean: Mittelwert von var2 gruppiert nach var1 im aggregierten Datensatz\n</li>\n<li>\n​newvarmedian: Median von var3 gruppiert nach var1 im aggregierten Datensatz\n</li>\n</ul>\n            "
+  }
+}

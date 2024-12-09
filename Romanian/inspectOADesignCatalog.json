@@ -1,0 +1,16 @@
+{
+  "title": "Răsfoiți catalogul de design al Array-ului Ortogonal (oacat)",
+  "navigation": "Răsfoiți catalogul de design ortogonal",
+  "designNamefromCatalog": "Numele design-ului Array-ului Ortogonal din catalog (de exemplu, L18.3.6.6.1)",
+  "numRuns": "Numărul de rulări sau un vector de 2 elemente de exemplu 4,16 cu un minim și un maxim pentru numărul de rulări",
+  "numFactors": "Numărul de factori (separați-i prin , de exemplu 4,2,1)",
+  "numLevels": "Numărul de niveluri (separați-le prin , de exemplu 3,2,5)",
+  "showQualityMetricsChk": "Arată toate metricile de calitate ale array-ului cu array-urile rezultate;",
+  "maxDigits": "Cifre semnificative de arătat pentru metricile GR și A",
+  "maxNumberofDesignPrint": "Arată numărul maxim de design-uri",
+  "help": {
+    "title": "Răsfoiți catalogul de design al Array-ului Ortogonal (oacat)",
+    "r_help": "help(show.oas, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tRăsfoiți/Inspectați elementele de design sau extrageți informații din lista de array-uri ortogonale disponibile, specificând opțional criteriile de selecție\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(show.oas, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

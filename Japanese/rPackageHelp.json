@@ -1,0 +1,10 @@
+{
+  "title": "Rパッケージヘルプ",
+  "navigation": "Rパッケージヘルプ",
+  "packageName": "インストールされたRパッケージを選択",
+  "help": {
+    "title": "Rパッケージヘルプ",
+    "r_help": "help()",
+    "body": "\n<b>説明</b></br>\nhelpはヘルプシステムへの主要なインターフェースです。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nhelp(topic, package = NULL, lib.loc = NULL,\n    verbose = getOption(\"verbose\"),\n    try.all.packages = getOption(\"help.try.all.packages\"),\n    help_type = getOption(\"help_type\"))\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ntopic: 通常、ヘルプを求めるトピックを指定する名前または文字列です。文字列（明示的なシングルまたはダブルクオートで囲まれたもの）は常にトピックの名前として扱われます。topicの値が長さ1の文字ベクトルである場合、トピックは唯一の要素の値として扱われます。それ以外の場合、topicは名前または予約語（構文的に有効であれば）または文字列でなければなりません。\n</li>\n<li>\npackage: ドキュメントを探すために調べるパッケージを指定する名前または文字ベクトル、またはNULLです。デフォルトでは、名前空間がロードされているすべてのパッケージが使用されます。名前がデパースされるのを避けるために、例えば(pkg_ref)を使用します。\n</li>\n<li>\nlib.loc: Rライブラリのディレクトリ名の文字ベクトル、またはNULLです。NULLのデフォルト値は、現在知られているすべてのライブラリに対応します。デフォルトが使用される場合、ロードされたパッケージと名前空間がライブラリの前に検索されます。\n</li>\n<li>\nverbose: 論理値; TRUEの場合、ファイル名が報告されます。\n</li>\n<li>\ntry.all.packages: 論理値; 注意を参照してください。\n</li>\n<li>\nhelp_type: 文字列: 必要なヘルプの種類。可能な値は「text」、「html」、「pdf」です。大文字小文字は無視され、部分一致が許可されます。\n</li>\n</ul>\n<b>詳細</b></br>\nパッケージに関するヘルプ</br>\n<b>例</b><br/>\n<code> \nhelp(package = \"splines\")\n</code> <br/>\n<b>パッケージ</b></br>\nutils</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help()\n                "
+  }
+}

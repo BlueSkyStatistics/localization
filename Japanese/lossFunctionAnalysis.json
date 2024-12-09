@@ -1,0 +1,16 @@
+{
+  "title": "ロス関数分析",
+  "navigation": "ロス関数分析",
+  "lfaSubTitle": "グラフィック出力のサブタイトル",
+  "independent": "ロス関数分析のためのデータを含む列",
+  "lfaDelta": "プロセスの許容範囲",
+  "lfaY0": "プロセスの目標",
+  "lfaL0": "許容限界での不良品質のコスト",
+  "lfaSize": "グループ内の総損失を計算するための生産サイズ、バッチなど（スパン、バッチ、期間など）",
+  "lfaOutput": "出力の種類（可能な値 - テキスト、プロット、または両方）",
+  "help": {
+    "title": "ロス関数分析",
+    "r_help": "help(ss.lfa, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tss.lfa関数は、「名目が最良」の特性に基づくタグチ損失関数の品質損失関数分析を実行します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(ss.lfa, package = SixSigma)を使用してください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、loss_function_table.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください。\n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

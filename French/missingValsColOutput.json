@@ -1,0 +1,10 @@
+{
+  "title": "Analyse des valeurs manquantes, mise en page des colonnes",
+  "navigation": "Mise en page des colonnes",
+  "label1": "Affiche les résultats des valeurs manquantes au format colonne",
+  "help": {
+    "title": "Analyse des valeurs manquantes",
+    "r_help": "aide(sapply)",
+    "body": "\n            <b>Description</b></br>\n            Affiche les informations suivantes sur les valeurs manquantes<br/>\n            1. Le nombre de variables et d'observations dans le jeu de données<br/>\n            2. Le nombre de valeurs manquantes par variable<br/>\n            3. Le nombre de valeurs non manquantes par variable<br/>\n            4. Les numéros de ligne des variables qui contiennent des valeurs manquantes<br/>\n            Nous utilisons plusieurs fonctions dans le package de base, y compris sapply, qui, ifelse<br/>\n            <b>Package</b></br>\n            base</br>\n            <b>Aide</b></br>\n            Pour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante aide(sapply) en créant un bloc de code R en cliquant sur + dans la fenêtre de sortie\n"
+  }
+}

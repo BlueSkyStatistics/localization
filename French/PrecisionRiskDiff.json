@@ -1,0 +1,17 @@
+{
+  "title": "Taille d'échantillon, Précision d'une différence de risque",
+  "navigation": "Différence de risque",
+  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la largeur de l'intervalle de confiance et l'autre sera calculé",
+  "n1": "Taille de l'échantillon du groupe 1",
+  "width": "Largeur de l'intervalle de confiance",
+  "ratio": "Ratio de la taille de l'échantillon du groupe 1 à celle du groupe 2",
+  "prop1": "Proportion de résultats du groupe 1",
+  "prop2": "Proportion de résultats du groupe 2",
+  "conflevel": "Niveau de confiance (0-1)",
+  "method": "Méthode de l'intervalle de confiance",
+  "help": {
+    "title": "Taille d'échantillon, Précision d'une différence de risque",
+    "r_help": "help(prec_riskdiff, package ='presize')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour une différence de proportions basée sur la largeur de l'intervalle de confiance. Il calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur \nspécifie l'autre.\n<br/><br/>\n<b>Taille de l'échantillon du groupe 1 :</b> Spécifiez le nombre de sujets dans le groupe 1\n<br/><br/>\n<b>Largeur de l'intervalle de confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de la précision d'une estimation et est la borne supérieure moins la borne inférieure.\n<br/><br/>\n<b>Ratio de la taille de l'échantillon du groupe 1 à celle du groupe 2 :</b> Spécifiez le ratio de la taille de l'échantillon du groupe 2 à celle du groupe 1. Une valeur de 1 signifie des tailles d'échantillon égales.\n<br/><br/>\n<b>Proportion de résultats du groupe 1 :</b> Spécifiez la proportion de sujets dans le groupe 1 ayant le résultat 'positif'\n<br/><br/>\n<b>Proportion de résultats du groupe 2 :</b> Spécifiez la proportion de sujets dans le groupe 2 ayant le résultat 'positif'\n<br/><br/>\nNotez que la différence de risque sera calculée comme la proportion dans le groupe 1 moins la proportion dans le groupe 2.\n<br/><br/>\n<b>Niveau de confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<b>Méthode de l'intervalle de confiance :</b> Spécifiez le type d'intervalle de confiance à utiliser. Newcombe (newcombe) a proposé un intervalle de confiance basé sur la méthode de score de Wilson pour la\nproportion unique. L'intervalle de confiance sans correction de continuité est implémenté à partir de l'équation 10 dans Newcombe (1998). Miettinen-Nurminen (mn) fournit une forme fermée \néquation pour l'estimation de la vraisemblance maximale restreinte. L'implémentation est basée sur le code fourni par Yongyi Min sur https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html.\nL'intervalle de confiance Agresti-Caffo (ac) est basé sur l'intervalle de confiance de Wald, ajoutant 1 succès à chaque cellule du tableau 2 x 2 (voir Agresti et Caffo 2000).\n<br/><br/>\n<b>Packages R requis :</b> presize\n\t\t\t"
+  }
+}

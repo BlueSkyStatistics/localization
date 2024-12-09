@@ -17,6 +17,9 @@
     "basescore": "Base score",
     "Verbose": "Verbose mode (0=Silent, 1=performance info, 2= other info)",
     "printevery": "Print each n-th iteration evaluation messages when verbose > 0",
+    "OptvarTaskparam": "Task Parameters",
+    "OptvarAdvDiagnostics": "Advanced Diagnostics",
+    "OptvarTreeBoostparam": "Parameters for Tree Boosting",
     "help": {
         "title": "Extreme Gradient Boosting",
         "r_help": "help(xgboost, package ='xgboost')",

@@ -1,0 +1,26 @@
+{
+  "title": "對數常態分佈圖",
+  "navigation": "對數常態分佈圖",
+  "meanlog": "平均值 (對數尺度)",
+  "sdlog": "標準差 (對數尺度)",
+  "pdenfun": "繪製密度函數",
+  "pdstfun": "繪製分佈函數",
+  "lblregions": "可選擇性地通過以下方式指定密度函數下的區域",
+  "xvals": "x 值",
+  "quantiles": "分位數",
+  "lblRegFill": "要填充的區域 (指定一個或兩個，或留空)",
+  "lblreg1": "區域 1 :",
+  "lblreg2": "區域 2 :",
+  "lblregfrm": "從",
+  "lblregto": "到",
+  "lblregcol": "顏色",
+  "lblLegPos": "圖例位置",
+  "toprt": "右上角",
+  "toplt": "左上角",
+  "topmid": "中上",
+  "help": {
+    "title": "對數常態分佈圖",
+    "r_help": "help(qlnorm, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            對數常態分佈的密度、分佈函數、分位數函數和隨機生成，其對數的平均值等於 meanlog，標準差等於 sdlog。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dlnorm(x, meanlog = 0, sdlog = 1, log = FALSE)\n                <br/>\n                plnorm(q, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlnorm(p, meanlog = 0, sdlog = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlnorm(n, meanlog = 0, sdlog = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數的向量。</li>\n                \n                \n                <li>p : 機率的向量。</li>\n                \n                \n                <li>n : 觀察數。如果 length(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>meanlog, sdlog : 對數尺度上分佈的平均值和標準差，默認值分別為 0 和 1。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為 TRUE，則機率 p 以 log(p) 的形式給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為 TRUE（默認），則機率為 P[X ≤ x]，否則為 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            對數常態分佈的密度\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ x) e^-((log x - μ)^2 / (2 σ^2))</code>\n            <br/>\n            其中 μ 和 σ 是對數的平均值和標準差。平均值是 E(X) = exp(μ + 1/2 σ^2)，中位數是 med(X) = exp(μ)，方差 Var(X) = exp(2*μ + σ^2)*(exp(σ^2) - 1)，因此變異係數是 sqrt(exp(σ^2) - 1)，當 σ 小時（例如，σ < 1/2）大約等於 σ。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dlnorm 給出密度，plnorm 給出分佈函數，qlnorm 給出分位數函數，rlnorm 生成隨機偏差。\n            <br/>\n            結果的長度由 rlnorm 的 n 決定，對於其他函數，則是數值參數的長度的最大值。\n            <br/>\n            除 n 以外的數值參數會回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累積危害 H(t) = - log(1 - F(t)) 是 -plnorm(t, r, lower = FALSE, log = TRUE)。            \n      "
+  }
+}

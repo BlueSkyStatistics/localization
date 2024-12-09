@@ -1,0 +1,24 @@
+{
+  "title": "显示规则",
+  "navigation": "显示规则",
+  "rulename": "输入现有规则对象",
+  "dosortingchk": "排序规则",
+  "sortopt": "排序选项",
+  "sortby": "排序依据",
+  "confchk": "置信度",
+  "liftchk": "提升度",
+  "suppchk": "支持度",
+  "sortord": "排序顺序",
+  "increasing": "升序",
+  "decreasing": "降序",
+  "noofrules": "显示的规则数量",
+  "rulecount": "",
+  "fromto": "显示规则",
+  "from": "从",
+  "to": "到",
+  "help": {
+    "title": "显示规则",
+    "r_help": "help(inspect, package='arules')",
+    "body": "\n            <b>\n\t\t\t包 : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspect\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\t描述\n\t\t\t</b>\n\t\t\t<br/><br/>\n            提供通用函数inspect和S4方法来显示关联和事务，以及格式化的额外信息以供在线检查。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspect(x, ...)\n            </code>\n            <br/><br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            x: 一组关联或事务或一个itemMatrix。\n            </li>\n            <li>\n            ...: 可以使用额外参数自定义输出：setStart, setEnd, itemSep和ruleSep。项目仅在输出行非常长的情况下逐行打印。这也可以通过linebreak直接控制。\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sort\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\t描述\n\t\t\t</b>\n\t\t\t<br/><br/>\n            提供sort方法以根据存储在关联的质量槽中的度量值（例如，支持度）对类关联中的元素进行排序（例如，itemsets或规则）。\n            <br/><br/>\n\t\t\t<b>\n\t\t\t用法\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## S4方法用于签名'associations'\n            arules::sort(x, decreasing = TRUE, na.last = NA, \n            by = \"support\", order = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4方法用于签名'associations'\n            head(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4方法用于签名'associations'\n            tail(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>参数</b><br/>\n            <ul>\n            <li>\n            x: 一个要排序的对象。\n            </li>\n            <li>\n            decreasing: 逻辑值。排序是升序还是降序？（默认是降序）\n            </li>\n            <li>\n            na.last: associations不支持na.last。NAs总是放在最后。\n            </li>\n            <li>\n            by: 一个字符字符串，指定用于排序x的质量度量。如果指定了字符字符串的向量，则在平局情况下使用附加字符串对x进行排序。\n            </li>\n            <li>\n            order: 是否应返回一个排序向量而不是排序后的关联？\n            </li>\n            <li>\n            n: 一个单一整数，指示返回的关联数量。\n            </li>\n            <li>\n            ... : 进一步的参数被忽略。\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            详细信息\n            </b> \n            <br/>\n            对于大型关联集，排序相对较慢，因为它必须复制和重新排列大型数据结构。请注意，排序会创建关联集的第二个副本，这对于大型集合可能会很慢且消耗内存。如果只需要前n个关联，则使用by的head比调用sort然后head更快，因为它不需要复制和重新排列所有数据。tail的工作方式相同。\n            <br/><br/>  \n            <b> \n            值\n            </b> \n            <br/>\n            与x相同类的对象。                  \n    "
+  }
+}

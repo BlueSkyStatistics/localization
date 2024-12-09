@@ -1,0 +1,18 @@
+{
+  "title": "转换变量",
+  "navigation": "转换",
+  "label1": "使用下拉菜单选择操作（log, log10, as.numeric...）以转换所选变量。您可以通过指定前缀/后缀来覆盖现有变量或创建新变量。",
+  "target": "选择要转换的变量",
+  "selectctrl": "选择要应用的操作",
+  "label2": "创建新变量或覆盖现有变量",
+  "suffix": "指定后缀",
+  "prefix": "指定前缀",
+  "overwrite": "覆盖",
+  "enterPrefix": "输入前缀",
+  "enterSuffix": "输入后缀",
+  "help": {
+    "title": "转换变量",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>描述</b></br>\n使用下拉菜单选择操作（log, log10, as.numeric...）以转换所选变量。您可以通过指定前缀/后缀来覆盖现有变量或创建新变量。\n<br/>\n<b>用法</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvar: 要转换的变量\n</li>\n<li>\n数据集: 包含变量var的数据集\n</li>\n</ul>\n<b>值</b></br>\n转换后的值直接存储在数据集中</br>\n<b>包</b></br>\nbase</br>\n<b>帮助</b></br>\nhelp(log, package ='base')\n"
+  }
+}
