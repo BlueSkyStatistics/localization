@@ -9,6 +9,6 @@
   "help": {
     "title": "Grafic de Contur 2D",
     "r_help": "help(geom_contour_filled, package='ggplot2')",
-    "body": "\n\n    "
+    "body": "\n\t\t\t <b>Descriere</b></br>\n\t\t\tRegiuni de contur umplute\n\t\t\t</br>\n\t\t\tLiniile de contur separă regiunile în care variabila z se încadrează în intervale diferite.\n\t\t\t</br>\n\t\t\tZonele dintre liniile de contur sunt umplute cu culori, reprezentând diferite intervale de valori z.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tScară de culori\n\t\t\t</br>\n\t\t\tPaleta Spectral de la ColorBrewer este aplicată pentru a umple regiunile de contur.\n\t\t\t</br>\n\t\t\tPaleta Spectral este o schemă de culori divergentă, care trece de la culori reci la culori calde, ideală pentru a arăta gradele în date.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tAdăugarea opțională a punctelor de date brute în grafic\n\t\t\t</br>\n\t\t\tAcest strat trasează puncte individuale pe baza valorilor x și y din setul de date (punctele sunt puncte negre).\n\t\t\t</br>\n\t\t\tOferă o modalitate de a suprapune punctele de date brute pe graficul de contur, oferind mai mult context vizualizării conturului.\n    "
   }
 }
