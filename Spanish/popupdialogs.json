@@ -35,5 +35,11 @@
 	"Save_prj_dontsave_btn": "No guardar",
 	"Save_prj_cancelsave_btn": "Cancelar",
 	
+	"rerun_missingDSTitle": "Conjunto(s) de datos no disponible(s)",
+	"rerun_missingDSLbl": "Los siguientes conjuntos de datos no están abiertos en la cuadrícula de datos. Ábralos e intente nuevamente, o use 'Archivo > Volver a ejecutar salida' para ejecutar con nombres de conjuntos de datos diferentes.",
+	"rerun_missingDScancelBtn": "Cancelar",	
+	"reproducibilityErrMsg" : "La reproducibilidad no es compatible con los archivos de salida creados con versiones antiguas. Los archivos de salida deben crearse con la versión 10.3.7 o superior.",
+	"reproducibilityErrTitle": "No compatible",	
+	
 	"closeDSsaveWarn" : "Esta versión de BlueSky Statistics no rastrea si ha guardado sus cambios. Si no ha guardado sus cambios, hágalo, de lo contrario, se perderán."
 }

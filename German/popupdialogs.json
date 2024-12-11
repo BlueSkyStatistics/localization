@@ -35,6 +35,12 @@
 	"Save_prj_dontsave_btn": "Nicht speichern",
 	"Save_prj_cancelsave_btn": "Abbrechen",
 	
+	"rerun_missingDSTitle": "Datensatz/Daten nicht verfügbar",
+	"rerun_missingDSLbl": "Die folgenden Datensätze sind im Datengitter nicht geöffnet. Öffnen Sie sie und versuchen Sie es erneut, oder verwenden Sie 'Datei > Ausgabe erneut ausführen', um mit anderen Datensatznamen zu arbeiten.",
+	"rerun_missingDScancelBtn": "Abbrechen",	
+	"reproducibilityErrMsg" : "Reproduzierbarkeit wird bei Ausgabedateien, die mit alten Versionen erstellt wurden, nicht unterstützt. Ausgabedateien müssen mit Version 10.3.7 oder höher erstellt werden.",
+	"reproducibilityErrTitle": "Nicht unterstützt",	
+	
 	"closeDSsaveWarn" : "Diese Version von BlueSky Statistics verfolgt nicht, ob Sie Ihre Änderungen gespeichert haben. Wenn Sie Ihre Änderungen nicht gespeichert haben, tun Sie dies bitte, sonst gehen sie verloren."
 	
 }

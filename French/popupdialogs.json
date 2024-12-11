@@ -35,5 +35,11 @@
 	"Save_prj_dontsave_btn": "Ne pas enregistrer",
 	"Save_prj_cancelsave_btn": "Annuler",
 	
+	"rerun_missingDSTitle": "Jeu(x) de données non disponible(s)",
+	"rerun_missingDSLbl": "Les jeux de données suivants ne sont pas ouverts dans la grille de données. Ouvrez-les et réessayez, ou utilisez 'Fichier > Relancer la sortie' pour exécuter un autre nom de jeu de données.",
+	"rerun_missingDScancelBtn": "Annuler",
+	"reproducibilityErrMsg" : "La reproductibilité n'est pas prise en charge pour les fichiers de sortie créés avec d'anciennes versions. Les fichiers de sortie doivent être créés avec la version 10.3.7 ou supérieure.",
+	"reproducibilityErrTitle": "Non pris en charge",
+	
 	"closeDSsaveWarn" : "Cette version de BlueSky Statistics ne suit pas si vous avez enregistré vos modifications. Si vous n'avez pas enregistré vos modifications, veuillez le faire, sinon elles seront perdues."
 }

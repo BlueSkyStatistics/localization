@@ -33,5 +33,11 @@
 	"Save_prj_dontsave_btn": "不保存",
 	"Save_prj_cancelsave_btn": "取消",
 	
+	"rerun_missingDSTitle": "数据集不可用",
+	"rerun_missingDSLbl": " 以下数据集未在数据网格中打开。请打开它们后重试，或者使用“文件 > 重新运行输出”以运行其他数据集名称。",
+	"rerun_missingDScancelBtn": "取消",	
+	"reproducibilityErrMsg" : "旧版本创建的输出文件不支持可重复性。输出文件必须使用10.3.7及以上版本创建。",
+	"reproducibilityErrTitle": "不支持",	
+	
 	"closeDSsaveWarn" : "该版本的BlueSky Statistics不会跟踪您是否已保存更改。如果您尚未保存更改，请保存，否则更改将会丢失。"
 }

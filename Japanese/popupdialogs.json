@@ -35,5 +35,11 @@
 	"Save_prj_dontsave_btn": "保存しない",
 	"Save_prj_cancelsave_btn": "キャンセル",
 	
+	"rerun_missingDSTitle": "データセットが利用できません",
+	"rerun_missingDSLbl": " 以下のデータセットはデータグリッドで開かれていません。それらを開いて再試行するか、「ファイル > 出力を再実行」を使用して別のデータセット名で実行してください。",
+	"rerun_missingDScancelBtn": "キャンセル",	
+	"reproducibilityErrMsg" : "古いバージョンで作成された出力ファイルでは再現性がサポートされていません。出力ファイルはバージョン10.3.7以降で作成する必要があります。",
+	"reproducibilityErrTitle": "サポートされていません",	
+	
 	"closeDSsaveWarn" : "このバージョンのBlueSky Statisticsは、変更を保存したかどうかを追跡しません。変更を保存していない場合は、保存してください。そうしないと、変更が失われます。"
 }
