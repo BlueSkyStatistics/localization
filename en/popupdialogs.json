@@ -1,0 +1,46 @@
+{  
+	"CSV_Options": "CSV Options",
+	"CSVopt_first_row_header_chk" : "First row of CSV/TXT file contains headers",
+	"CSVopt_field_sep_label" : "Specify field separator:",
+	"CSVopt_commas_radio":"Commas (,)",
+	"CSVopt_semicolons_radio":"Semicolons (;)",
+	"CSVopt_tabs_radio":"Tabs",
+	"CSVopt_whitespace_radio":"White Space",
+	"CSVopt_other_radio":"Other,",
+	"CSVopt_specify_tbox":"Specify",
+
+	"CSVopt_deci_sep_label":"Specify decimal character:",
+	"CSVopt_decimal_radio":"Decimal point (.) [e.g. 1.234]",
+	"CSVopt_comma_radio":"Comma (,) [e.g. 1,234]",
+	"CSVopt_grp_char_label":"Optionally specify a grouping character [e.g. 1,000,000]. No need to type comma which is default:",
+
+	"CSVopt_ok_btn":"OK",
+	"CSVopt_cancel_btn":"Cancel",
+  
+	"OpenWrkSheet": "Open worksheet",
+	"OpnWrkSht_label": "For a column name we support alphabets, numbers and underscores. All other unsupported characters will be replaced by an underscore. You can rename the column from the variable grid.",
+	"OpnWrkSht_first_row_header_chk":"First row contains column headers",
+	"OpnWrkSht_dropdown":"Select worksheet to open",
+	"OpnWrkSht_open_btn":"Open",
+
+	"Save_project_title":"Save Project",
+	"Save_prj_label":"Save the current project",
+	"Save_prj_name":"Enter project name:",
+	"Save_prj_options":"Save options:",
+	"Save_prj_defaultDir_radio":"Save the project in default project directory:",
+	"Save_prj_customDir_radio":"Save the project in a specified location",
+	"Save_prj_customDir_label":"Select a location where you want to save the project:",
+	"Save_prj_chooseDir_btn":"Choose folder",
+	"Save_prj_save_btn":"Save",
+	"Save_prj_dontsave_btn":"Don't Save",
+	"Save_prj_cancelsave_btn":"Cancel",
+	
+	"rerun_missingDSTitle": "Dataset(s) not available",
+	"rerun_missingDSLbl": "The following dataset(s) are not open in the Datagrid. Either open them and try again, or use 'File > ReRun Output' to run on different dataset name(s).",
+	"rerun_missingDScancelBtn": "Cancel",	
+	"reproducibilityErrMsg" : "Reproducibility is not supported on output files created with old versions. Output files must be created with version 10.3.7 and above.",
+	"reproducibilityErrTitle": "Not supported",	
+	
+	"closeDSsaveWarn" : "This version of BlueSky Statistics does not track whether you have saved your changes. If you haven't saved your changes please do so, else they will be lost"
+	
+}

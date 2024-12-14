@@ -1,0 +1,11 @@
+{
+  "title": "Valeur de Lambda (λ) pour les variables avec transformation Box-Cox préalable",
+  "navigation": "Inspecter Lambda",
+  "label2": "Sélectionnez une ou plusieurs variables pour vérifier si une transformation Box-Cox a été appliquée et, le cas échéant, la valeur de Lambda (λ) associée",
+  "variablelistSelcted": "Variables à inspecter",
+  "help": {
+    "title": "Vérifiez la valeur de Lambda (λ) associée à la variable sélectionnée",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tVérifiez la valeur de Lambda (λ) associée, le cas échéant, pour les variables sélectionnées avec transformation Box-Cox préalable \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour une aide détaillée sur Box-Cox ou Lambda (λ) - utilisez l'aide R (boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Pour un bon aperçu de MASS Box-Cox, voir https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValeurs de Lambda (λ) associées aux transformations Box-Cox familières \n\t\t\t\t<br/>\n\t\t\t\tλ = 2 : transformation carrée ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1 : pas de transformation ; retourne les données originales ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50 : transformation racine carrée ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33 : transformation racine cubique\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25 : transformation racine quatrième\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : transformation logarithmique naturelle ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50 : transformation racine carrée réciproque ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1 : transformation réciproque (inverse) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2 : transformation carrée réciproque ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

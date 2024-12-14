@@ -1,0 +1,25 @@
+{
+  "title": "頻度チャート",
+  "navigation": "頻度",
+  "x": "X軸",
+  "y": "色、因子変数を指定してください",
+  "bins": "ビンの数（X軸の変数が因子変数の場合のみ適用されます）",
+  "barcolor": "ラインカラー（色を選択した後、コントロールの外をクリックして適用します）",
+  "tab1": "数値",
+  "tab2": "因子",
+  "alpha": "不透明度（0-1）",
+  "flip": "軸を反転",
+  "specify_a_title": "タイトルを入力",
+  "x_title": "X軸ラベル",
+  "y_title": "Y軸ラベル",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "facets_lbl" : "様相",
+  "help": {
+    "title": "頻度チャート",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>説明</b></br>\n            単一の連続変数の分布を視覚化するために、X軸をビンに分割し、各ビンの観測数をカウントします。ヒストグラム（geom_histogram()）はバーでカウントを表示し、頻度ポリゴン（geom_freqpoly()）はラインでカウントを表示します。頻度ポリゴンは、カテゴリ変数のレベル間で分布を比較したい場合により適しています。</br>\n            注意：異なる色が選択された場合、グループ化/色変数が指定されている場合は選択した色を無視します。</br>\n            複数のX変数を指定すると、各X変数に対して別々の頻度チャートを作成します。</br>\n            <b>使用法</b>\n            <br/>\n            <code>\n            #1つ以上の数値変数のための頻度チャートを作成できます。デフォルトのビンの数は30に設定されています。</br>\n            #以下の例は、datasetsパッケージのmtcarsデータセットを使用しています<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #1つ以上の数値変数のための頻度チャートを作成し、因子変数でチャートをグループ化できます。デフォルトのビンの数は30に設定されています。</br>\n            #以下の例は、datasetsパッケージのmtcarsデータセットを使用しています<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #1つの因子変数を別の因子変数でグループ化することによって、頻度チャート/ラインチャートを作成できます</br>\n            #cylとamを因子にするには、変数ビューで右クリックする必要があります</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。​\n            </li>\n            <li>\n            group: オプションの因子/カテゴリ変数。\n            </li>\n            <li>\n            geom_freqpoly(): 頻度プロットを作成します\n            </li>\n            <li>\n            bins: ビンの数。\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例のタイトルを変更します（これはオプションです）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドに配置します（これはオプションです）​\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します（これはオプションです）​\n            </li>\n            <li>\n            coord_flip(): 軸を反転します（これはオプションです）​\n            </li>\n            <li>\n            alpha: 不透明度を制御し、0-1の値を取ります。1は不透明度なしを意味します。\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;</br>\n            <b>ヘルプ</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            その他：詳細なRヘルプを取得するには、Rヘルプボタンをクリックしてください。help(labs)、help(geom_freqpoly)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。​           \n      "
+  }
+}

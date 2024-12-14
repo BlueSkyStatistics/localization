@@ -1,0 +1,23 @@
+{
+  "title": "許容区間",
+  "navigation": "許容区間",
+  "label1": "データに最も適した分布関数を選択してください",
+  "variableSelcted": "分析する変数（観測データ）を選択してください",
+  "x": "サンプル内の欠陥（または許容可能）ユニットの数",
+  "m": "将来のグループで生産される数量",
+  "alpha": "信頼区間（例：0.95）",
+  "P": "区間内の母集団の最小（0と1の間の値を指定）割合",
+  "side": "1側または2側の許容区間が必要です（タイプ1または2）",
+  "method": "k因子を計算するための方法（正規分布、対数正規分布、ガンマ分布にのみ適用）",
+  "selectDistFuncNormalRad": "正規分布",
+  "selectDistFuncWeibullRad": "ワイブル分布",
+  "selectDistFuncExpRad": "指数分布",
+  "selectDistFuncGammaRad": "ガンマ分布",
+  "selectDistFuncLnormalRad": "対数正規分布",
+  "selectDistFuncCauchyRad": "コーシー分布",
+  "help": {
+    "title": "許容区間",
+    "r_help": "help(normtol.int, package = tolerance)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t許容区間を計算するための関数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのヘルプ（package = 'tolerance'）、help(normtol.int, package = tolerance）、help(exttol.int, package = tolerance）を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tk因子を計算するための方法\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tk因子を計算するための方法は、正規分布、対数正規分布、ガンマ分布にのみ適用されます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                1側の許容区間のk因子は正確に計算され、選択した方法と同じです。「HE」はハウ法であり、非常に正確であると見なされることが多いです。\n\t\t\t\t<br/>\n\t\t\t\teven for small sample sizes. 「HE2」はハウによる第二の方法で、ワイスバーグ-ビーティ法に似た性能を持ちますが、計算が簡単です。「WBE」はワイスバーグ-ビーティ法（ワルド-ウルフォウィッツ法とも呼ばれる）であり、より大きなサンプルサイズに対して最初のハウ法に似た性能を持ちます。「ELL」は、fがn^2よりもかなり大きい場合のワイスバーグ-ビーティ法へのエリソン補正です。fがn^2よりも大きくない場合、警告メッセージが表示されます。「KM」は、正確な解への近似であり、大きなサンプルサイズに対してうまく機能します。\n\t\t\t\t<br/>\n\t\t\t\t「EXACT」は、問題の積分解を見つけることによってk因子を正確に計算します。\n\t\t\t\t<br/>\n\t\t\t\tこの方法の計算時間は、主にmによって決まります。「OCT」は、分布の各尾にデータが(1-P)/2を超えないようにk因子を計算するオーウェンアプローチです。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、tolerance.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください。\n\t\t\t\t<br/>\n\t\t\t\tNDを変数（観測..）に選択してください。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "摘要，僅限數字",
+  "navigation": "僅限數字變數（舊版）",
+  "tvarbox1": "選定變數",
+  "tvarbox2": "分組依據",
+  "min": "最小值",
+  "max": "最大值",
+  "mean": "平均值",
+  "median": "中位數",
+  "sum": "總和",
+  "sd": "標準差",
+  "stderror": "平均值的標準誤",
+  "iqr": "四分位距",
+  "quantiles": "四分位數",
+  "probs": "指定四分位數（如果選擇了四分位數）",
+  "addIsstatnames": "附加統計函數名稱，以逗號分隔，例如 var)",
+  "label1": "選項",
+  "help": {
+    "title": "摘要，僅限數字",
+    "r_help": "",
+    "body": "\n<b>描述</b></br>\n輸出以下數值統計：</br>\n最小值、最大值、平均值、中位數、總和、標準差、標準誤、四分位距、四分位數。如果選擇了四分位數，您可以指定所需的逗號分隔四分位數。</br>\n除了這些，使用者還可以傳遞一個以逗號分隔的統計函數名稱列表，例如 var。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"數據集名稱\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: 選定的尺度變數（例如 Dataset$var1, Dataset$var2）\n</li>\n<li>\ngroupByColumnObjects: 一個或多個因子變數進行分組（例如 Dataset$var3, Dataset$var4）\n</li>\n<li>\nstatFunctionList: 函數列表。設置為 TRUE 的將被執行。（例如 min=TRUE, sd=TRUE）\n</li>\n<li>\nquantilesProbs: 四分位數的概率\n</li>\n<li>\nadditionalStats: 使用者可以傳遞的附加統計函數（例如 var）\n</li>\n<li>\ndatasetName: 從中選擇 datasetColumnObjects 和 groupByColumnObjects 的數據集名稱\n</li>\n</ul>\n<b>值</b></br>\n一個類別為 \"data.frame\" 的對象，給出每個函數對每個變數的結果。</br>\n<b>示例</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"數據集\" )\n</code> <br/>\n<b>包</b></br>\nBlueSky</br>\n<b>幫助</b></br>\nR 幫助不可用，因為我們已經使用多個 R 函數編寫了自定義代碼。如果您需要檢查代碼，請點擊 \"<>\" 按鈕。</br>\n    "
+  }
+}

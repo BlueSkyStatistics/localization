@@ -1,0 +1,17 @@
+{
+  "navigation": "安斯科姆-格林庫爾特斯檢驗",
+  "title": "安斯科姆-格林檢驗的庫爾特斯",
+  "hypothesisType": "檢驗假設 (H1)",
+  "twosided": "雙側",
+  "greater": "大於",
+  "less": "小於",
+  "label2": "其他選項",
+  "showLengthNAs": "顯示長度和 NAs",
+  "verbose": "詳細的替代假設",
+  "Target": "選擇一個或多個變數",
+  "help": {
+    "title": "安斯科姆-格林檢驗的庫爾特斯",
+    "r_help": "help(anscombe.test, package ='moments')",
+    "body": "\n<b>描述</b></br>\n對正態樣本執行安斯科姆-格林庫爾特斯檢驗\n<br/>\n<b>用法</b>\n<br/>\n<code> \nanscombe.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 數值數據向量。\n</li>\n<li>\ny: 字符串指定替代假設，必須是 '\"two.sided\"'（默認），'\"greater\"' 或 '\"less\"' 之一。您可以僅指定首字母。\n</li>\n</ul>\n<b>詳情</b></br>\n在正態性假設下，數據的庫爾特斯應等於 3。此檢驗具有此虛無假設，並且對於檢測正態分佈數據中庫爾特斯的顯著差異非常有用。\n<br/>\n<b>值</b></br>\n包含以下組件的 htest 類列表：\n<ul>\n<li>\nstatistic: 包含庫爾特斯估計量及其轉換的列表。</br>\n</li>\n<li>\np.value: 檢驗的 p 值。 </br>\n</li>\n<li>\nalternative: 描述替代假設的字符串</br>\n</li>\n<li>\nmethod: 指示執行的檢驗類型的字符串。\n</li>\n<li>\ndata.name: 數據參數的名稱。</br>\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nkurtosis(x)</br>\nanscombe.test(x)</br>\n</code> <br/>\n<b>包</b></br>\nmoments</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或在 BlueSky Statistics R 編輯器中運行以下命令 help(anscombe.test, package ='moments')。           \n<br/>\n<br/>\t\n"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "正規分布からのサンプル",
+  "navigation": "正規分布からのサンプル",
+  "entrdsname": "データセットの名前を入力",
+  "mean": "平均",
+  "sd": "標準偏差",
+  "lblnoofsamples": "サンプル数（行）",
+  "lblnoofobsv": "観測数（列）",
+  "lbl1": "ランダム化",
+  "selectRandomSeedRad": "ランダムシードを自動生成（毎回ユニーク）",
+  "selectFixedRandomSeedRad": "表示されたものを選択するか、以下のランダムシードを手動で変更",
+  "lblseed": "ランダム化のためのシード",
+  "lblAddtoDS": "データセットに追加",
+  "chklbl1": "サンプル平均",
+  "chklbl2": "サンプル合計",
+  "chklbl3": "サンプル標準偏差",
+  "help": {
+    "title": "正規分布からのサンプル",
+    "r_help": "help(rnorm, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            平均がmean、標準偏差がsdの正規分布の密度、分布関数、分位関数、およびランダム生成。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>mean : 平均のベクトル。</li>\n                \n                \n                <li>sd : 標準偏差のベクトル。</li>\n                \n                \n                <li>log, log.p : 論理; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            meanまたはsdが指定されていない場合、デフォルト値0および1が仮定されます。\n            <br/>\n            正規分布の密度は\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            ここで、μは分布の平均、σは標準偏差です。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dnormは密度を、pnormは分布関数を、qnormは分位関数を、rnormはランダム偏差を生成します。\n            <br/>\n            結果の長さはrnormのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            sd = 0の場合、これはsdが0に減少する際の限界を与え、muでの点質量を生成します。sd < 0はエラーで、NaNを返します。            \n"
+  }
+}

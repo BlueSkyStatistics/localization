@@ -1,0 +1,12 @@
+{
+  "title": "条件付き計算、複数",
+  "navigation": "条件付き計算、複数",
+  "newvar": "新しい/既存の変数名（スペース/特殊文字は使用しないでください）：",
+  "label2": "式ビルダー：例えば、var1+var2、as.numeric(var2)、substr(var4,2,4)...のように、望ましい式を構築します。",
+  "formula": "計算コマンドを構築する",
+  "help": {
+    "title": "条件付き計算、複数",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>説明</b></br>\n式を計算し、その結果をデータフレーム/データセットの変数/列に格納します。</br>\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expression)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nDatasetX: データフレーム/データセット名。​\n</li>\n<li>\nvar1: 計算が必要なデータセット/データフレームの新しい/既存の列\n</li>\n<li>\nExpression: 変数1 = 変数2 + 変数3の形式の式\n</li>\n</ul>\n<b>詳細</b></br>\n式を評価し、その結果をデータフレーム/データセットの変数/列に格納します。</br>\n<b>パッケージ</b></br>\ndplyr</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、Rエディタウィンドウで次のコマンドhelp(mutate, package ='dplyr')を実行してください。\n            "
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Remplacer les valeurs manquantes (variables de chaîne/facteur)",
+  "navigation": "Caractère/Facteur",
+  "destination": "Variables de destination",
+  "repString": "Entrez la chaîne pour remplacer les NAs. Remarque : Ne pas entourer la chaîne de guillemets. Pour les variables de facteur, la valeur spécifiée doit être un niveau du facteur, voir Variables>Niveaux de facteur>Ajouter",
+  "help": {
+    "title": "Remplacer les valeurs manquantes (variables de chaîne/facteur)",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>Description</b></br>\nRemplacer les valeurs manquantes dans les variables sélectionnées par la valeur spécifiée. Lors de l'utilisation de la boîte de dialogue, vous n'avez pas à entourer la chaîne de guillemets\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('Chaîne à remplacer')\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nLes variables du jeu de données (var1, var2) où les NAs doivent être remplacés\n</li>\n</ul>\n<b>Valeur</b><br/>\nRemplace les valeurs manquantes dans le jeu de données par la chaîne spécifiée<br/>\n<b>Paquet</b></br>\nbase</br>\n<b>Aide</b></br>\nhelp(is.na,package=base)"
+  }
+}

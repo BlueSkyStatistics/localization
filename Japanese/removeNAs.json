@@ -1,0 +1,16 @@
+{
+  "title": "NAを削除",
+  "navigation": "NAを削除",
+  "label0": "1つ以上の欠損値を持つ行を削除することによって、新しいデータセットを作成/既存のデータセットを上書きします。欠損値を分析する変数を選択してください。選択した変数に欠損値が含まれるすべての行が削除されます。データセット全体を分析するには、すべての変数を選択してください。",
+  "label1": "オプション",
+  "New": "結果を新しいデータセットに保存",
+  "newdatasetname": "データセット名を入力",
+  "Existing": "既存のデータセットを上書き",
+  "subsetvars": "データセットに含める変数を選択（1つ以上）",
+  "subsetexpression": "サブセット基準を入力してください。サブセット基準は各データセットの行に対して適用されます。例1: !is.na(var1) & is.na(var2)。例2: var1>30 & var2=='male'。例3: (var1 !=10 & var2>20) | var3==40。例4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\"。例5: substr(var1,2,4) ==\"abc\"",
+  "help": {
+    "title": "NAを削除",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>説明</b></br>\nデータセット/データフレームから欠損値/NAを削除します。\n選択した列/変数名の1つ以上の欠損値を持つ行を削除することによって、新しいデータセットを作成/既存のデータセットを上書きします。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\n​object: Rオブジェクト。​\n</li>\n</ul>\n<b>パッケージ</b></br>\ndata.table</br>\n<b>ヘルプ</b></br>\nhelp(na.omit)\n    "
+  }
+}

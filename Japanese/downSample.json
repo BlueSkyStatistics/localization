@@ -1,0 +1,13 @@
+{
+  "title": "ダウンサンプル",
+  "navigation": "サンプル, ダウンサンプル",
+  "description": "不均衡データのダウンサンプリング。DownSampleは、すべてのクラスがマイノリティクラスと同じ頻度になるようにデータセットをランダムにサンプリングします。",
+  "downsample": "データセットの名前を入力してください",
+  "seed": "シードを設定",
+  "dependent": "ダウンサンプルする変数",
+  "help": {
+    "title": "ダウンサンプル",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>説明</b></br>\n不均衡データのダウンサンプリング。DownSampleは、すべてのクラスがマイノリティクラスと同じ頻度になるようにデータセットをランダムにサンプリングします。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 予測変数の行列またはデータフレーム\n</li>\n<li>\ny: クラスメンバーシップを持つ因子変数\n</li>\n<li>\nlist: 関数はlist(x, y)を返すべきか、それともxとyを結合すべきか？TRUEの場合、出力はデータフレームに強制されます。\n</li>\n<li>\nyname: list = FALSEの場合、クラス列のラベル\n</li>\n</ul>\n<b>詳細</b></br>\n単純なランダムサンプリングが多数派クラスのダウンサンプリングに使用されます。マイノリティクラスのデータはそのまま残され、サンプルはダウンサンプリングされたバージョンで再順序付けされます。</br>\nアップサンプリングの場合、元のデータはそのまま残され、マイノリティクラスに追加のサンプルが置換で追加されます。</br>\n<b>値</b><br/>\nデータフレームまたは要素xとyを持つリストのいずれか。</br>\n<b>例</b></br>\n## ばかげた例...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>パッケージ</b></br>\ncaret</br>\n<b>ヘルプ</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

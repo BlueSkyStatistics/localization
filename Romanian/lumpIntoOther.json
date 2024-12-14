@@ -1,0 +1,27 @@
+{
+  "title": "Gruparea celor mai puțin sau cel mai frecvent niveluri de factori",
+  "navigation": "Grupare în Alte (Automat)",
+  "target": "Selectați variabilele pentru a grupa nivelurile rare",
+  "label1": "Numele implicit al noii categorii care conține nivelurile grupate este \"alte\". Specificarea greutăților este opțională. Puteți suprascrie variabilele existente cu nivelurile grupate sau salva rezultatele în variabile noi",
+  "other": "Nume pentru nivelul grupat",
+  "label3": "Metoda de utilizat",
+  "defaultOption": "Grupare a celor mai puțin frecvente niveluri în \"alte\" asigurându-se că \"alte\" este cel mai mic nivel",
+  "categories": "Păstrați cele mai frecvente (+n)/cele mai puțin frecvente (-n) categorii",
+  "category": "Introduceți numărul de categorii",
+  "proportion1": "Păstrați categoriile care apar cel puțin (+ prop)/cel mult (- prop) proporție din timp",
+  "proportion": "Introduceți proporția",
+  "dropOption": "Introduceți nivelurile de înlocuit cu \"Altele\" de exemplu: nivel1,nivel2,nivel3",
+  "varweights": "Greutăți variabile",
+  "label2": "Salvați rezultatele în variabile noi sau suprascrieți variabilele existente",
+  "rd3": "Specificați un sufix (O nouă variabilă va fi creată cu sufixul)",
+  "txt3": "Introduceți un sufix",
+  "rd2": "Specificați un prefix (O nouă variabilă va fi creată cu prefixul)",
+  "txt4": "Introduceți un prefix",
+  "rd1": "Suprascrieți variabilele existente",
+  "ties": "Opțiuni pentru gestionarea legăturilor",
+  "help": {
+    "title": "Grupare în Alte",
+    "r_help": "help(fct_lump, package =forcats)",
+    "body": "\n<b>Descriere</b></br>\nGrupare a celor mai puțin sau cel mai frecvent niveluri de factori în nivelul \"alte\". Numele implicit al noii categorii care conține nivelurile grupate este \"alte\". Specificarea greutăților este opțională. Puteți suprascrie variabilele existente cu nivelurile grupate sau salva rezultatele în variabile noi\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Altele\", ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"alte\",ties.method =\"min\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nf: Un factor. Dacă atât n cât și prop sunt lipsă, fct_lump grupează nivelurile cele mai puțin frecvente în \"alte\", asigurându-se că \"alte\" este încă cel mai mic nivel. Este deosebit de util în combinație cu fct_inorder().\n</li>\n<li>\nn: n pozitiv păstrează cele mai frecvente n valori. n negativ păstrează cele mai puțin frecvente -n valori. Dacă există legături, veți obține cel puțin abs(n) valori.\n</li>\n<li>\nprop: prop pozitiv păstrează valorile care apar cel puțin prop din timp. prop negativ păstrează valorile care apar cel mult -prop din timp.\n</li>\n<li>\nw: Un vector numeric opțional care oferă greutăți pentru frecvența fiecărei valori (nu nivel) în f.\n</li>\n<li>\nother_level: Valoarea nivelului utilizat pentru valorile \"alte\". Întotdeauna plasat la sfârșitul nivelurilor.\n</li>\n<li>\nties.method: Un șir de caractere care specifică modul în care sunt tratate legăturile. Consultați rank() pentru detalii.\n</li>\n<li>\nmin: Păstrează valorile care apar cel puțin min număr de ori.\n</li>\n</ul>\n<b>Pachet</b></br>\nforcats</br>\n<b>Ajutor</b></br>\nIntroduceți linia de mai jos în editorul de sintaxă R BlueSky</br>\nhelp(fct_lump, package =forcats)\n"
+  }
+}

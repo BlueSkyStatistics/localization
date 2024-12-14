@@ -1,0 +1,16 @@
+{
+  "title": "部分信用模型",
+  "navigation": "部分信用模型",
+  "modelname": "输入模型名称",
+  "destinationvars": "目标变量",
+  "estimationlbl": "估计",
+  "rad1": "使用CML估计",
+  "chk1": "计算标准误差",
+  "chk2": "将参数归一化为和为0",
+  "rad2": "使用MML估计",
+  "help": {
+    "title": "部分信用模型",
+    "r_help": "help(PCM, package='eRm')",
+    "body": "\n            <b>描述</b>\n            <br/>\n            生成部分信用模型的参数估计\n            <br/><br/>\n            对于CML估计，我们调用eRm::PCM来计算多项选择项响应的部分信用模型的参数估计。\n            <br/><br/>\n            对于MML估计，我们调用tam.mml，使用适当的参数，见下文\n            <br/><br/>\n            <b>CML估计的用法</b>\n            <br/>\n            <code>\n            eRm::PCM(X,se=FALSE,sum0=FALSE) \n            </code>    \n            <br/><br/>\n            <b>参数</b>\n            <br/>       \n            <ul>\n\n            <li>\n            X: 输入的0/1数据矩阵或数据框；行表示个体，列表示项目。缺失值插入为NA。\n            </li>\n            <li>\n            W: Rasch模型的设计矩阵。如果省略，函数将自动计算W。\n            </li>\n            <li>\n            se: 如果为TRUE，则计算标准误差。\n            </li>\n            <li>\n            sum0: 如果为TRUE，则通过指定适当的W将参数归一化为和为0。如果为FALSE，则第一个参数限制为0。\n            </li>\n            <li>\n            etaStart: 可以指定eta参数的起始值向量。如果缺失，则使用0向量。\n            </li>\n            </ul>\n            <br/><br/><br/>\n            <b>MML估计的用法</b>\n            <br/>\n            <code>\n            tam.mml(resp,irtmodel=\"PCM\",verbose=FALSE )\n            </code>\n            <br/><br/>\n            <b>参数</b>\n            <br/>             \n            <ul>\n            <li>\n            resp: 带有多项选择项响应的数据框k=0,...,K。缺失响应必须声明为NA。\n            </li>\n            <li>\n            irtmodel: 对于固定项目斜率（在tam.mml中），选项包括PCM（部分信用模型）、PCM2（带有ConQuest参数化的部分信用模型'item+item*step'）和RSM（评分量表模型；ConQuest参数化'item+step'）。 \n            <br/>\n            对于估计的项目斜率（仅在tam.mml.2pl中可用），选项为2PL（所有项目类别的斜率都被估计；名义项目响应模型）、GPCM（每个项目在每个维度上只有一个斜率参数的广义部分信用模型）和2PL.groups（项目子集获得相同的项目斜率估计）以及广义部分信用模型（GPCM.design，见示例）中的项目斜率的设计矩阵。请注意，使用函数tam.mml.mfr无法估计项目斜率。然而，使用预先指定的设计矩阵并对tam.mml.2pl施加一些限制是很容易的。\n            </li>\n            <li>\n            verbose: 逻辑值，指示在迭代过程中是否应打印输出。\n            </li>\n            </ul>\n            <br/><br/>\n            <b>包</b>\n            <br/>\n            TAM, eRm\n            <br/><br/>\n            <b>帮助</b>\n            <br/>\n            help(PCM, package='eRm')\n            <br/>\n            help(tam.mml, package='TAM')\n"
+  }
+}

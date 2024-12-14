@@ -1,0 +1,13 @@
+{
+  "title": "欠損値の補完（数式を使用）",
+  "navigation": "数式を使用",
+  "depVar": "欠損値を補完する変数を選択してください（これはモデルの従属変数です）",
+  "label1": "独立変数を数式ビルダーコントロールに移動して数式を構築します。数式ビルダーの記号にマウスオーバーしてヘルプを参照してください",
+  "formula": "移動ボタンで複数の変数を移動すると、デフォルトの区切り文字は + になり、相互作用項のない独立変数を示します。記号をクリックして相互作用項を持つモデルを構築します。",
+  "independent": "独立変数（1つ以上）",
+  "help": {
+    "title": "欠損値の補完（数式を使用）",
+    "r_help": "help(if_else, package='dplyr')",
+    "body": "\n            <b>説明</b></br>\n            欠損値を置き換えるための数式を構築します。例えば、欠損値の推定値を開発するために回帰モデルを構築し、方程式が生成されたら、その方程式をダイアログに入力し、選択した変数の欠損値のみを計算できます。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # expressionをvar2*4+1.32に置き換えます<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            var: 欠損値を置き換えるデータセット内の変数の名前。例：var=c(\"sales\")。変数は数値クラスでなければなりません\n            </li>\n            <li>\n            Dataset: 変数varを含むデータセット/データフレーム\n            </li>\n            <li>\n            expression: 欠損値を置き換えるために使用される式。上記の例ではvar2*4+1.32です\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            dplyr</br>\n            <b>ヘルプ</b></br>\n            詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、出力ウィンドウで+をクリックしてRコードチャンクを作成し、次のコマンドhelp(if_else, package ='dplyr')を実行してください\n            "
+  }
+}

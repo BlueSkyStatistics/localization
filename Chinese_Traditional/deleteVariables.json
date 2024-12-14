@@ -1,0 +1,10 @@
+{
+  "title": "刪除變數",
+  "navigation": "刪除",
+  "trg": "要刪除的變數",
+  "help": {
+    "title": "移除 NAs",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>描述</b></br>\n從數據集/數據框中移除缺失值/NA\n通過刪除選定列/變數名稱中有一個或多個缺失值的行來創建新數據集/覆蓋現有數據集\n<br/>\n<b>用法</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n​object: 一個 R 對象。​\n</li>\n</ul>\n<b>包</b></br>\ndata.table</br>\n<b>幫助</b></br>\nhelp(na.omit)\n"
+  }
+}

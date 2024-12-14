@@ -1,0 +1,27 @@
+{
+  "title": "等價性測試",
+  "navigation": "等價性測試",
+  "variableSelcted1": "選擇第一個變數",
+  "label1": "要比較兩個變數，請選擇一個分組變數（僅限兩個層級）或第二個（獨立或配對）變數",
+  "variableSelcted2": "選擇第二個變數",
+  "label2": "如果選擇了第二個變數，如何處理",
+  "groupingNeededRad": "所選的第二個變數是分組變數",
+  "referenceGpValue": "輸入作為參考的組值",
+  "pairedTestRad": "執行配對測試 - 所選的第二個變數是配對的",
+  "noneRad": "以上皆非",
+  "targetMean": "目標（均值） - 不適用於兩樣本",
+  "lower": "下限 - 下等價界限的數值",
+  "upper": "上限 - 上等價界限的數值",
+  "smdChk": "在SMD（標準化均值差）中指定的等價界限",
+  "label3": "測試類型",
+  "EQUtestRad": "執行等價性測試",
+  "METtestRad": "執行最小效應測試（MET）",
+  "alpha": "alpha水準（預設 = 0.05）",
+  "HedgesCorrectionChk": "自動計算Hedges修正（否則顯示Cohen's d）",
+  "plotChk": "一致性圖（這可能需要一段時間來顯示圖形）",
+  "help": {
+    "title": "等價性測試",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t執行等價性測試或最小效應測試（MET）的函數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用R help(t_TOST, package = TOSTER)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以通過從第二個下拉菜單選擇iris數據集來加載名為iris的數據集（快速輸入iris）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t選擇Sepal.Length作為第一個變數，並（可選）選擇Sepal.Width作為第二個變數，並選擇配對測試\n\t\t\t\t<br/>\n\t\t\t\t輸入5.5作為下限，8.5作為上限以設置等價邊界，然後點擊運行\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t請參閱教程 https://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

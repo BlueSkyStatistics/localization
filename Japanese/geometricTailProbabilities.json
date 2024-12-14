@@ -1,0 +1,14 @@
+{
+  "title": "幾何的尾部確率",
+  "navigation": "幾何的尾部確率",
+  "varvals": "変数の値をカンマで区切って入力してください。例：3, .5",
+  "prob": "平均",
+  "labelSig": "有意水準",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "幾何的尾部確率",
+    "r_help": "help(pgeom, package=stats)",
+    "body": "\n\n            <b>説明</b>\n            <br/>\n            幾何分布の密度、分布関数、分位数関数、および確率パラメータprobに基づく乱数生成。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dgeom(x, prob, log = FALSE)\n                <br/>\n                pgeom(q, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qgeom(p, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rgeom(n, prob)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 成功が発生する前のベルヌーイ試行の失敗回数を表す分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測の数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>prob : 各試行の成功確率。0 < prob <= 1。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            prob = pの幾何分布は密度を持ちます\n            <br/>\n            <code>\n                p(x) = p (1-p)^x\n                x = 0, 1, 2, …, 0 < p ≤ 1の場合。\n            </code>\n            <br/>\n            xの要素が整数でない場合、dgeomの結果はゼロになり、警告が表示されます。\n            <br/>\n            分位数は、F(x) ≥ pとなる最小の値xとして定義されます。ここでFは分布関数です。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dgeomは密度を、pgeomは分布関数を、qgeomは分位数関数を、rgeomは乱数を生成します。\n            <br/>\n            無効なprobはNaNを返し、警告が表示されます。\n            <br/>\n            結果の長さはrgeomのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さに再利用されます。論理引数の最初の要素のみが使用されます。            \n"
+  }
+}

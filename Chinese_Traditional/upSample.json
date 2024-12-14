@@ -1,0 +1,12 @@
+{
+  "title": "上取樣",
+  "navigation": "範例, 上取樣",
+  "downsample": "輸入數據集的名稱",
+  "seed": "設置隨機種子",
+  "dependent": "按此變量進行上取樣",
+  "help": {
+    "title": "上取樣",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>描述</b></br>\n上取樣不平衡數據。upSample 進行有放回的取樣以使類別分佈相等\n<br/>\n<b>用法</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個預測變量的矩陣或數據框\n</li>\n<li>\ny: 一個具有類別成員資格的因子變量\n</li>\n<li>\nlist: 函數應該返回 list(x, y) 還是將 x 和 y 綁定在一起？如果為 TRUE，輸出將被強制轉換為數據框。\n</li>\n<li>\nyname: 如果 list = FALSE，類別列的標籤\n</li>\n</ul>\n<b>詳細信息</b></br>\n使用簡單隨機取樣對多數類別進行下取樣。請注意，少數類別數據保持不變，並且樣本將在下取樣版本中重新排序。</br>\n對於上取樣，所有原始數據保持不變，並且額外的樣本將以放回的方式添加到少數類別中。</br>\n<b>返回值</b><br/>\n返回一個數據框或包含元素 x 和 y 的列表。<br/>\n<b>示例</b><br/>\n<code> \n## 一個荒謬的例子...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>包</b></br>\ncaret</br>\n<b>幫助</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

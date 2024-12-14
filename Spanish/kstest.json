@@ -1,0 +1,10 @@
+{
+  "title": "Prueba de Kolmogorov-Smirnov de Normalidad",
+  "navigation": "Prueba de Normalidad de Kolmogorov-Smirnov",
+  "trg": "Variables objetivo",
+  "help": {
+    "title": "Prueba de Kolmogorov-Smirnov de Normalidad",
+    "r_help": "help(ks.test, package=stats)",
+    "body": "\n<b>Descripción</b></br>\nPrueba de Kolmogorov-Smirnov para conformidad con una distribución normal \n<br/>\n<b>Uso</b>\n<br/>\n<code>\nks.test(x, y =\"pnorm\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: Un vector numérico de valores de datos.\n</li>\n<li>\ny:\tuna cadena de caracteres que nombra una función de distribución acumulativa o una función de distribución acumulativa real como pnorm. Solo las CDF continuas son válidas..\n</li>\n</ul>\n<b>Detalles</b></br>\nEn este caso, se lleva a cabo una prueba de una muestra de la hipótesis nula de que la función de distribución que generó x es la distribución y (es decir, la distribución normal).<br/>\nLa presencia de empates siempre genera una advertencia, ya que las distribuciones continuas no los generan. Si los empates surgieron de redondeos, las pruebas pueden ser aproximadamente válidas, pero incluso cantidades modestas de redondeo pueden tener un efecto significativo en la estadística calculada.<br/>\nLos valores faltantes se omiten silenciosamente de x. </br>\n<b>Valor</b><br/>\nUna lista con clase “htest” que contiene los siguientes componentes:<br/>\n<ul>\n<li>\nstatistic: el valor de la estadística de la prueba.\n</li>\n<li>\np.value: valor p de la prueba.\n</li>\n</ul>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nhelp(ks.test, package =stats)\n"
+  }
+}

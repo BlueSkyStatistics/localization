@@ -1,0 +1,17 @@
+{
+  "title": "廣義線性模型",
+  "navigation": "GLZM",
+  "modelname": "模型名稱",
+  "dependent": "因變量",
+  "offset": "偏移量",
+  "weights": "權重",
+  "formulaBuilder": "公式生成器",
+  "family": "選擇一個族和連結函數",
+  "theta": "指定 theta 的值（僅適用於負二項族）",
+  "expCoefficients": "指數化係數",
+  "help": {
+    "title": "廣義線性模型",
+    "r_help": "help(glm, package ='stats')",
+    "body": "\n            <b>描述</b></br>\n            glm 用於擬合廣義線性模型，通過給出線性預測器的符號描述和誤差分佈的描述來指定。\n            <br/>\n注意 1：提供了一個文本框來指定 theta 的初始值，這僅適用於負二項族。如果省略，則使用 Poisson GLM 的初始擬合後的矩估計量。<br/>\n計算出的初始 theta 顯示在 GLM 摘要表上方的輸出中。<br/>\n注意 2：在指定包含權重的變量時，請注意，由於我們使用 na.exclude 選項來構建模型，所有 NA 值會自動從因變量和自變量中刪除。<br/> \n這可能會導致不匹配，因為 NA 值不會自動從權重變量中刪除。<br/>\n在這種情況下，您將看到錯誤變量長度不同（發現於（權重））<br/>\n要解決此錯誤，請轉到變量>缺失值>刪除 NAs，並選擇要刪除缺失值的因變量、自變量和權重變量，然後重建模型。<br/>\n注意 3：虛擬編碼因子變量，使用負二項族時，請參見變量 > 計算 > 虛擬編碼。<br/>\n注意 4：默認情況下包含截距，若要刪除截距，請在公式生成器中輸入 -1\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            glm(formula, family = gaussian, data, weights, subset,\n                na.action, start = NULL, etastart, mustart, offset,\n                control = list(...), model = TRUE, method = \"glm.fit\",\n                x = FALSE, y = TRUE, singular.ok = TRUE, contrasts = NULL, ...)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            formula: 一個類別為 \"formula\" 的對象（或可以轉換為該類別的對象）：擬合模型的符號描述。模型規範的詳細信息在“詳細信息”中給出。\n            </li>\n            <li>\n            family: 用於模型的誤差分佈和連結函數的描述。對於 glm，這可以是命名族函數的字符字符串、族函數或對族函數調用的結果。對於 glm.fit，僅支持第三個選項。（有關族函數的詳細信息，請參見 family。）\n            </li>\n            <li>\n            data: 一個可選的數據框、列表或環境（或可以通過 as.data.frame 轉換為數據框的對象），包含模型中的變量。如果在數據中未找到，則從 environment(formula) 中獲取變量，通常是從中調用 glm 的環境。\n            </li>\n            <li>\n            weights: 一個可選的“先前權重”向量，用於擬合過程。應為 NULL 或數值向量。\n            </li>\n            <li>\n            subset: 一個可選的向量，指定在擬合過程中使用的觀察子集。\n            </li>\n            <li>\n            na.action: 一個函數，指示當數據包含 NAs 時應該發生什麼。默認由選項的 na.action 設置，若未設置則為 na.fail。“出廠設置”默認為 na.omit。另一個可能的值是 NULL，無操作。值 na.exclude 可能會有用。\n            </li>\n            </ul>\n            <b>詳細信息</b><br/>\n            一個典型的預測器的形式為 response ~ terms，其中 response 是（數值）響應向量，terms 是一系列指定響應的線性預測器的項。對於二項和準二項族，響應也可以指定為因子（當第一個級別表示失敗，所有其他級別表示成功）或作為兩列矩陣，列給出成功和失敗的數量。形式為 first + second 的項規範表示 first 中的所有項與 second 中的所有項，並刪除任何重複項。<br/>\n            <b>值</b><br/>\n            類別為 \"glm\" 的對象是一個包含至少以下組件的列表：\n            <ul>\n            <li>\n            coefficients: 一個命名的係數向量\n            </li>\n            <li>\n            residuals: 工作殘差，即 IWLS 擬合的最終迭代中的殘差。由於權重為零的案例被省略，因此它們的工作殘差為 NA。\n            </li>\n            <li>\n            fitted.values: 擬合的均值值，通過將線性預測器轉換為連結函數的反函數來獲得。\n            </li>\n            <li>\n            rank: 擬合線性模型的數值秩。\n            </li>\n            <li>\n            family: 使用的族對象。\n            </li>\n            <li>\n            linear.predictors: 連結尺度上的線性擬合。\n            deviance: 在常數的基礎上，減去兩倍的最大化對數似然。合理的情況下，常數的選擇使得飽和模型的偏差為零。\n            </li>\n            <li>\n            aic\t: Akaike 信息準則的一個版本，減去兩倍的最大化對數似然，加上兩倍的參數數量，通過族的 aic 組件計算。對於二項和 Poisson 家族，擴散固定為一，參數數量為係數的數量。對於高斯、伽馬和反高斯家族，擴散從殘差偏差中估計，參數數量為係數的數量加一。對於高斯族，使用擴散的 MLE，因此這是一個有效的 AIC 值，但對於伽馬和反高斯族則不是。對於通過準似然擬合的族，值為 NA。\n            </li>\n            </ul>\n            <b>包</b></br>\nglm</br>\n<b>幫助</b></br>\nhelp(glm, package ='stats')\n"
+  }
+}

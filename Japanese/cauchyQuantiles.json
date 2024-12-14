@@ -1,0 +1,15 @@
+{
+  "title": "コーシー分位数",
+  "navigation": "コーシー分位数",
+  "varvals": "変数値をカンマで区切って入力してください。例：0.3,0.2,0.5",
+  "location": "位置",
+  "scale": "スケール",
+  "labelSig": "有意水準",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "コーシー分位数",
+    "r_help": "help(qcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            コーシー分布の密度、分布関数、分位数関数、およびランダム生成のための位置パラメータとスケールパラメータを持つ。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測の数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>location, scale : 位置とスケールのパラメータ。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            位置またはスケールが指定されていない場合、デフォルト値の0と1が仮定されます。\n            <br/>\n            位置lとスケールsを持つコーシー分布の密度は\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            すべてのxに対して。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dcauchy、pcauchy、およびqcauchyはそれぞれコーシー分布の密度、分布関数、および分位数関数です。rcauchyはコーシーからのランダム偏差を生成します。\n            <br/>\n            結果の長さはrcauchyのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <b>出典</b>\n            <br/>\n            dcauchy、pcauchy、およびqcauchyはすべて数値的に安定した定義から計算されます。\n            <br/>\n            rcauchyは逆数を使用します。            \n      "
+  }
+}

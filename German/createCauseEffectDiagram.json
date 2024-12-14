@@ -1,0 +1,13 @@
+{
+  "title": "Ursache-Wirkungs-Diagramm",
+  "navigation": "Ursache und Wirkung",
+  "effectName": "Eine kurze Zeichenfolge, die den zu analysierenden Effekt darstellt",
+  "mainTitle": "Titel des Ursache-Wirkungs-Diagramms für Six Sigma",
+  "subTitle": "Fußzeile des Ursache-Wirkungs-Diagramms (normalerweise der Name des Six Sigma-Projekts)",
+  "independent": "Ursachekategorien",
+  "help": {
+    "title": "Ursache-Wirkungs-Diagramm",
+    "r_help": "help(ss.ceDiag, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tceDiag-Funktion zur Erstellung eines Ursache-Wirkungs-Diagramms nach Ursachengruppen\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(ss.ceDiag, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens cause_and_effect_table.xlsx verwenden. Öffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

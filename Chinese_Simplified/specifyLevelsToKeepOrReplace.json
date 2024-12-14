@@ -1,0 +1,23 @@
+{
+  "title": "指定要保留或替换为其他的级别",
+  "navigation": "手动合并为其他",
+  "target": "因子变量重新排序",
+  "label1": "输入要保留或替换为其他的因子级别。当选择保留级别时，剩余级别将被替换为“其他”。当选择替换时，指定的级别将被替换为“其他”",
+  "other": "用于“其他”值的级别名称",
+  "label3": "使用的方法",
+  "keep": "保留级别",
+  "drop": "删除级别",
+  "keepOption": "输入要保留的级别，用逗号分隔，剩余级别将被替换为“其他”，例如：level1,level2,level3",
+  "dropOption": "输入要替换为“其他”的级别，例如：level1,level2,level3",
+  "label2": "将结果保存到新变量或覆盖现有变量",
+  "rd3": "指定后缀（将创建一个带有后缀的新变量）",
+  "txt3": "输入后缀",
+  "rd2": "指定前缀（将创建一个带有前缀的新变量）",
+  "txt4": "输入前缀",
+  "rd1": "覆盖现有变量",
+  "help": {
+    "title": "要保留或替换的级别",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>注意：不要将级别用双引号或单引号括起来，级别名称中不能有空格。输入格式为LEVEL1,LEVEL2,LEVEL3的逗号分隔级别</b><br/>\n<b>描述</b></br>\n输入要保留或删除的因子级别。当选择保留时，剩余级别将被替换为“其他”。当选择删除时，被删除的级别将被替换为“其他”\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Other\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nf : 一个因子（或字符向量）。\n</li>\n<li>\nkeep, drop: keep将保留列出的级别，将所有其他级别替换为other_level。drop将用other_level替换列出的级别，保留所有其他级别。\n</li>\n<li>\nother_level: 用于“其他”值的级别值。始终放在级别的末尾。\n</li>\n</ul>\n<b>示例</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>包</b></br>\nforcats</br>\n<b>帮助</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

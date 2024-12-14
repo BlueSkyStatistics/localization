@@ -1,0 +1,18 @@
+{
+  "title": "Stichprobengröße, Testkorrelation",
+  "navigation": "Korrelation",
+  "howtouse": "Um die Stichprobengröße zu berechnen: geben Sie Korrelation und Power an\nUm die Power zu berechnen: geben Sie Stichprobengröße und Korrelation an\nUm die nachweisbare Korrelation zu berechnen: geben Sie Stichprobengröße und Power an",
+  "n": "Stichprobengröße",
+  "corr": "Korrelation (-1 bis 1)",
+  "power": "Power (0-1)",
+  "siglevel": "Signifikanzniveau (0-1)",
+  "alternativeopt": "Alternativhypothese",
+  "twosided": "Zweiseitig",
+  "greater": "Größer als",
+  "less": "Weniger als",
+  "help": {
+    "title": "Stichprobengröße, Testkorrelation",
+    "r_help": "help(pwr.r.test, package ='pwr')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen Pearson-Korrelationskoeffizienten. Es berechnet die Stichprobengröße, Power oder Korrelation, wenn der Benutzer \ndie anderen beiden angibt. Die Nullhypothese Korrelation ist 0.\n<br/><br/>\n<b>Stichprobengröße:</b> Geben Sie die Anzahl der Probanden in der Studie an\n<br/><br/>\n<b>Korrelation:</b> Geben Sie die Korrelation an, die nachgewiesen werden soll\n<br/><br/>\n<b>Power:</b> Geben Sie die gewünschte Power der Studie an, d.h. die Wahrscheinlichkeit, dass der Test die Nullhypothese ablehnt, wenn die Alternativhypothese wahr ist.\n<br/><br/>\n<b>Signifikanzniveau:</b> Geben Sie das gewünschte Signifikanzniveau (d.h. Typ-I-Fehler) des Tests an\n<br/><br/>\n<b>Alternativhypothese:</b> Geben Sie an, ob der Test zweiseitig, größer als (einseitig) oder kleiner als (einseitig) ist\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> pwr\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Actualizar Fusión",
+  "navigation": "Actualizar Fusión",
+  "join": "Unir mapeo",
+  "description": "La fusión de actualización actualiza un conjunto de datos con valores de otro conjunto de datos.",
+  "out": "Ingrese el nombre del conjunto de datos fusionado",
+  "in1": "Seleccione el 1er conjunto de datos",
+  "in2": "Seleccione el 2do conjunto de datos",
+  "label1": "Opciones de Fusión",
+  "upsert": "Actualizar variables en el primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha), insertar no coincidencias",
+  "update": "Actualizar variables en el primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha), ignorar no coincidencias",
+  "insert": "Solo insertar no coincidencias en el primer conjunto de datos (izquierda)",
+  "patch": "Actualizar solo variables con NAs en el primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha)",
+  "delete": "Eliminar filas del primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha)",
+  "help": {
+    "title": "Actualizar Fusión",
+    "r_help": "help(rows_upsert, package=dplyr)",
+    "body": "\n            <b>Descripción</b></br>\n            La fusión de actualización actualiza un conjunto de datos con valores de un segundo conjunto de datos basado en la coincidencia exacta del nombre de la variable para observaciones con valores de variable de mapeo de unión coincidentes. \n\t\t\t<br/>Necesita especificar una o más variables en el conjunto de datos activo y en el conjunto de datos de destino seleccionado en el que desea realizar la unión.\n\t\t\t<br/>Los resultados se guardarán en un nuevo conjunto de datos.\n\t\t\t<br/><br/>\n\t\t\t<b>Opciones de Fusión</b>\n\t\t\t<br/><br/>\n\t\t\t<b>Actualizar variables en el primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha), insertar no coincidencias:</b> Esta es una combinación de actualizar variables en el conjunto de datos izquierdo para coincidencias y crear nuevas filas para filas no coincidentes.\n\t\t\t<br/><br/>\n\t\t\t<b>Actualizar variables en el primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha), ignorar no coincidencias:</b> Esto solo actualiza variables existentes en los conjuntos de datos izquierdos para coincidencias. Las filas no coincidentes se ignoran.\n\t\t\t<br/><br/>\n\t\t\t<b>Solo insertar no coincidencias en el primer conjunto de datos (izquierda):</b> Esto deja intactas todas las filas coincidentes en el conjunto de datos izquierdo. Solo se agregan filas no coincidentes del conjunto de datos derecho al conjunto de datos izquierdo.\n\t\t\t<br/><br/>\n\t\t\t<b>Actualizar solo variables con NAs en el primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha), ignorar no coincidencias:</b> Esto actualiza filas que coinciden, pero solo cuando los valores en el conjunto de datos izquierdo son NA (es decir, son valores faltantes).\n\t\t\t<br/><br/>\n\t\t\t<b>Eliminar filas del primer conjunto de datos (izquierda) con coincidencias del segundo conjunto de datos (derecha):</b> Esto solo elimina filas del conjunto de datos izquierdo que coinciden con filas en el conjunto de datos derecho.\n\t\t\t<br/><br/>\n            <b>Paquetes R Requeridos:</b> dplyr\n"
+  }
+}

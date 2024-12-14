@@ -1,0 +1,16 @@
+{
+  "title": "Variable de Décalage ou d'Avance",
+  "navigation": "Variable de Décalage ou d'Avance",
+  "varnamelabel": "Nom de la Nouvelle Variable (sans espaces)",
+  "lagleadvarlabel": "Variable à Décaler / Avancer",
+  "groupbyvarslabel": "Variables à Regrouper Par",
+  "typelabel": "Décalage ou Avance",
+  "laglabel": "Décalage",
+  "leadlabel": "Avance",
+  "positionlabel": "Nombre de Positions",
+  "help": {
+    "title": "Variable de Décalage ou d'Avance",
+    "r_help": "help(lag, package ='dplyr')",
+    "body": "\nCela crée une nouvelle variable qui trouve la valeur précédente (décalage) ou la valeur suivante (avance) dans une variable existante en fonction de la position de la ligne.\n<br/><br/>\n<b>Nom de la Nouvelle Variable :</b> Nom de la variable pour stocker les valeurs décalées ou avancées\n<br/><br/>\n<b>Variable à Décaler / Avancer :</b> Spécifiez la variable existante pour extraire les valeurs décalées ou avancées\n<br/><br/>\n<b>Variables à Regrouper Par (facultatif) :</b> Spécifiez les variables à regrouper. Si des variables sont spécifiées ici, les valeurs décalées et avancées seront obtenues uniquement au sein des groupes définis par ces variables. Si aucune variable n'est spécifiée ici, les valeurs décalées et avancées seront obtenues en fonction de l'ensemble de la colonne spécifiée dans la Variable à Décaler / Avancer. En général, les valeurs doivent être triées par les variables de regroupement avant de faire un décalage ou une avance.\n<br/><br/>\n<b>Décalage ou Avance :</b> Choisissez si vous souhaitez trouver la valeur précédente (décalage) ou la valeur suivante (avance)\n<br/><br/>\n<b>Nombre de Positions :</b> Spécifiez le nombre de positions à décaler ou avancer. Par exemple, une valeur décalée de 1 extraira la valeur précédente et une valeur décalée de 2 extraira la valeur 2 positions précédentes.\n<br/><br/>\n<b>Packages R Requis :</b> dplyr\n\t\t\t"
+  }
+}

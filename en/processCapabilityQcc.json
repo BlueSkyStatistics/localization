@@ -1,7 +1,7 @@
 {
-    "title": "Process Capability",
-    "navigation": "Process Capability",
-    "summaryPlotChk": "Plot the underlying xbar and I charts used for computing the process capability",
+    "title": "Process Capability (does not handle missing values)",
+    "navigation": "Process Capability, Basic",
+    "summaryPlotChk": "Plot the underlying xbar and xbar.one charts used for computing the process capability",
     "displaySLlineonPlotChk": "Display LSL and USL lines on the underlying plots",
     "printObjectSummaryChk": "Print QCC object summary for the process capability",
     "label1": "Two options - either select a variable (and a grouping variable as needed) or select the variables in dataset if already grouped",
@@ -17,13 +17,12 @@
     "nsigmas": "Sigma - number of sigmas to use for computing control limits",
     "confidence_level": "A numeric value between 0 and 1 specifying the level to use for computing confidence intervals",
     "stddev": "Standard deviation method for calculating xbar (for group size > 1)",
-    "stddevXbarOne": "Standard deviation method for calculating I-MR",
     "lower": "LSL - numeric value of lower specification limit (type NA to specify one-sided specification limits)",
     "upper": "USL - numeric value of upper specification limit (type NA to specify one-sided specification limits)",
     "target": "Target specification limits (optional)",
     "digits": "Digits - number of digits to display",
     "help": {
-        "title": "Process Capability (qcc pkg)",
+        "title": "Process Capability",
         "r_help": "help(process.capability, package = qcc)",
         "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to computes capability indices \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), and help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called pistonrings from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose option 1, diameter to variable(observed..), sample to Grouping variable, \n\t\t\t\t<br/>\n\t\t\t\tType 1:25 in Grouped rows to be used\n\t\t\t\t<br/>\n\t\t\t\tFor Process capability analysis - type 73.95 in LSL, 74.05 in USL, and 74.0 in Target Limit\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
     }

@@ -1,0 +1,30 @@
+{
+  "title": "實驗設計分析與線性模型",
+  "navigation": "設計分析 - 線性模型",
+  "modelname": "輸入模型名稱",
+  "dependent": "響應（依賴）變量",
+  "independent": "獨立變量（s）",
+  "nointercept": "忽略截距（如果選中，則不檢查下面的特定選項以進行2級因子設計）",
+  "degree": "學位（留空或輸入2以獲得具有主要效應和2因子交互作用的線性模型）",
+  "effectsplot": "所有效應圖（僅在未指定學位時生成）",
+  "generateplotchk": "繪製殘差與擬合、正態Q-Q、比例-位置和殘差與杠桿",
+  "weights": "指定一個帶權重的變量",
+  "twoLevelDesignTypeChk": "以下選項僅適用於2級因子設計（例如pb，FrF2等） - 如果上面選中忽略截距選項，則也不要檢查此項",
+  "AliasChk": "確定別名",
+  "AliasCodedChk": "編碼別名",
+  "DanielplotChk": "丹尼爾圖（效應圖）",
+  "DanielplotCodeChk": "編碼標籤",
+  "DanielplotHalfChk": "半正態",
+  "DanielplotAlpha": "阿爾法（標籤的顯著性水平）",
+  "MEPlotChk": "MEPlot（主要效應圖）",
+  "IAPlotChk": "IAPlot（交互作用圖）",
+  "IAPlotShowAliasChk": "在圖中顯示別名",
+  "cubePlotChk": "三因子交互作用的立方圖與建模均值",
+  "cubePlotModelMeanChk": "繪製建模均值和非建模均值",
+  "cubePlotIndependent": "選擇三個獨立變量以進行立方圖",
+  "help": {
+    "title": "實驗設計分析與線性模型",
+    "r_help": "help(lm, package = 'stats')",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t構建線性回歸模型以分析響應（即從實驗中記錄/收集的結果）。內部調用stats包中的lm函數。顯示模型摘要、係數表、Anova表和平方和表，並繪製以下內容：殘差與擬合、正態Q-Q、理論分位數、殘差與杠桿。您可以選擇指定一個帶權重的變量並選擇忽略截距。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關更多詳細信息，請參見R幫助以下內容\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>用法</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#總結模型<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#顯示Anova表<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#繪製殘差與擬合、正態Q-Q、比例-位置、殘差與杠桿<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+  }
+}

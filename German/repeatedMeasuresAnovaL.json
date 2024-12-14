@@ -1,0 +1,28 @@
+{
+  "helpText": "Die wiederholte Messungen ANOVA erfordert, dass die Daten im langen Format vorliegen. Wenn Ihre Daten nicht im langen Format vorliegen, siehe Datensätze > Umformen > Länger",
+  "modelname": "Modellnamen eingeben",
+  "title": "Wiederholte Messungen ANOVA",
+  "subjectID": "Variable zur Verwendung als Subjektidentifikator",
+  "dependentVariable": "Abhängige Variable",
+  "navigation": "ANOVA, Wiederholte Messungen, Lang",
+  "response": "Innerhalb der Subjekte Variable(n) z.B. Zeit",
+  "Fixed": "Zwischen den Subjekten Faktor(en)",
+  "covariates": "Kovariaten",
+  "Summary": "Geschätzte marginale Mittelwerte",
+  "Scatter_plot": "Posthocs",
+  "Residual": "Residual vs. Angepasster Plot",
+  "Histogram": "Histogrammplot der Residuen",
+  "brownForsythe": "Brown-Forsythe-Test",
+  "levenesTest": "Levene's Test",
+  "plotMeansCI": "Plot der Mittelwerte und Konfidenzintervalle",
+  "simpleEffectsTest": "Einfacher Effekttest",
+  "label2": "Optionen für Posthocs und einfachen Effekttest",
+  "combon": "Mittelwerte vergleichen mit:",
+  "adjust": "Methode zur Anpassung der p-Werte",
+  "displayBoxMDetails": "Details zu Box's M-Test anzeigen (Hinweis: Die Ergebnisse des Box's M-Tests werden immer angezeigt)",
+  "help": {
+    "title": "Wiederholte Messungen ANOVA",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>Beschreibung</b></br>\nBei der wiederholten Messungen ANOVA werden F-Statistiken für jeden innerhalb der Subjekte Faktor, zwischen den Subjekten Faktor und den Interaktionsterm für gemischte ANOVA berechnet</br>\nSuchen Sie nach den zusätzlichen ANOVA-Wertetabellen in der Ausgabe, die MSE (mittlere Quadratsumme für Fehler) und pes (partielles Eta-Quadrat) anzeigen</br>\nWir unterstützen derzeit einen einzelnen innerhalb der Subjekte und zwischen den Subjekten Faktor, der zwischen den Subjekten Faktor ist optional.</br>\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Identifier\", within = c(\"Time\"), \tbetween = c(\"Treatment\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndata: Ein data.frame, das die Daten enthält. Obligatorisch\n</li>\n<li>\ndv: Zeichenvektor (Länge 1), der die Spalte angibt, die die abhängige Variable in den Daten enthält.\n</li>\n<li>\nbetween: Zeichenvektor, der die zwischen den Subjekten Faktor(en)/Spalte(n) in den Daten angibt. Standard ist NULL, was keine zwischen den Subjekten Faktoren bedeutet.\n</li>\n<li>\nwithin: Zeichenvektor, der die innerhalb der Subjekte (oder wiederholten Messungen) Faktor(en)/Spalte(n) in den Daten angibt. Standard ist NULL, was keine innerhalb der Subjekte Faktoren bedeutet.\n</li>\n<li>\nkowariate: Zeichenvektor, der die zwischen den Subjekten Kovariate(n) (d.h. Spalte(n)) in den Daten angibt. Standard ist NULL, was keine Kovariaten bedeutet. Bitte beachten Sie, dass factorize auf FALSE gesetzt werden muss, falls die Kovariate numerisch ist und als solche behandelt werden soll.\n</li>\n<li>\nanovatable: Liste weiterer Argumente, die an die Funktion übergeben werden, die die ANOVA-Tabelle erzeugt. \n</li>\n</ul>\n<br/>\n<b>Details</b></br>\nSiehe detaillierte R-Hilfe</br>\n<b>Wert</b><br/>\naov_car, aov_4 und aov_ez sind Wrapper für Anova und aov, der Rückgabewert hängt vom Rückgabeargument ab. Standardmäßig wird ein S3-Objekt der Klasse \"afex_aov\" zurückgegeben, das die folgenden Slots enthält:<br/>\n\"anova_table\": Eine ANOVA-Tabelle der Klasse c(\"anova\", \"data.frame\").<br/>\n\"aov\": aov-Objekt, das von aov zurückgegeben wird (sollte nicht verwendet werden, um die Signifikanz von Effekten zu bewerten, kann aber an emmeans für Post-hoc-Tests übergeben werden).<br/>\n\"Anova\": Objekt, das von Anova zurückgegeben wird, ein Objekt der Klasse \"Anova.mlm\" (wenn innerhalb der Subjekte Faktoren vorhanden sind) oder der Klasse c(\"anova\", \"data.frame\").<br/>\n\"lm\": das Objekt, das mit lm angepasst und an Anova übergeben wird (d.h. ein Objekt der Klasse \"lm\" oder \"mlm\"). Wird auch zurückgegeben, wenn return = \"lm\".<br/>\n\"data\": eine Liste, die enthält: (1) lang (die möglicherweise aggregierten Daten im langen Format, die für aov verwendet werden), breit (die Daten, die verwendet werden, um das lm-Objekt anzupassen) und idata (wenn innerhalb der Subjekte Faktoren vorhanden sind, das idata-Argument, das an car::Anova übergeben wird). Wird auch zurückgegeben, wenn return = \"data\".<br/>\n<b>Paket</b></br>\nafex</br>\n<b>Hilfe</b></br>\nhelp(aov_ez, package ='afex')\nKlicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(aov_ez, package ='afex') eingeben und STRG + Eingabetaste im R-Syntax-Editor drücken, um Hilfe zu erhalten\n    "
+  }
+}

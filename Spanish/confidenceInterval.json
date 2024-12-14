@@ -1,0 +1,16 @@
+{
+  "title": "Intervalo de Confianza",
+  "navigation": "Intervalo de Confianza",
+  "label1": "Seleccione un modelo de una de las siguientes clases. (La clase R se enumera entre paréntesis a continuación)",
+  "label2": "Modelo lineal (lm), Modelo lineal generalizado (glm), Mínimos cuadrados no lineales (nls), Regresión logística/probit ordenada (polr), Modelos de log-lineales multinomiales (multinom), Modelos de regresión de Cox (coxph)",
+  "label3": "Basado en",
+  "modelselector1": "Seleccione un modelo",
+  "conlevel": "Intervalo de confianza",
+  "lr": "Estadístico de razón de verosimilitud",
+  "wald": "Estadístico de Wald",
+  "help": {
+    "title": "Intervalo de Confianza",
+    "r_help": "help(confint,package='stats')",
+    "body": "\n                <b>Descripción</b></br>\nCalcula intervalos de confianza para uno o más parámetros en un modelo ajustado. Hay un método predeterminado y un método para objetos que heredan de la clase \"lm\". Los modelos lm y coxph solo utilizan el método de Wald.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nconfint(object, parm, level = 0.95, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobject: un objeto de modelo ajustado.\n</li>\n<li>\nparm: una especificación de qué parámetros deben tener intervalos de confianza, ya sea un vector de números o un vector de nombres. Si falta, se consideran todos los parámetros.\n</li>\n<li>\nlevel: el nivel de confianza requerido.\n</li>\n<li>\n...: argumentos que se pasarán a los métodos.\n</li>\n</ul>\n<b>Detalles</b></br>\nconfint es una función genérica. El método predeterminado asume normalidad y necesita métodos adecuados de coef y vcov disponibles. El método predeterminado se puede llamar directamente para comparación con otros métodos.</br>\nPara objetos de clase \"lm\", se utilizan las fórmulas directas basadas en valores t.</br>\nHay métodos de stub en el paquete stats para las clases \"glm\" y \"nls\" que llaman a los de paquete MASS (si está instalado): si se ha cargado el espacio de nombres de MASS, sus métodos se utilizarán directamente. (Esos métodos se basan en la verosimilitud de perfil.)</br>\n<b>Valor</b></br>\nUna matriz (o vector) con columnas que dan límites de confianza inferiores y superiores para cada parámetro. Estos se etiquetarán como (1-nivel)/2 y 1 - (1-nivel)/2 en % (por defecto 2.5% y 97.5%).</br>\n<b>Ejemplos</b><br/>\n<code> \nfit <- lm(100/mpg ~ disp + hp + wt + am, data = mtcars)<br/>\nconfint(fit)<br/>\nconfint(fit, \"wt\")<br/>\n## del ejemplo(glm)\ncounts <- c(18,17,15,20,10,20,25,13,12)\noutcome <- gl(3, 1, 9); treatment <- gl(3, 3)\nglm.D93 <- glm(counts ~ outcome + treatment, family = poisson())\nconfint(glm.D93) # necesita que MASS esté instalado\nconfint.default(glm.D93)  # basado en normalidad asintótica\n</code> <br/>\n<b>Paquete</b></br>\nstats;MASS;knitr</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haga clic en el icono de R en la parte superior derecha de este diálogo o ejecute el siguiente comando en el editor de sintaxis de R help(confint , package='stats')\n                "
+  }
+}

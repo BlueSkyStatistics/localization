@@ -1,0 +1,16 @@
+{
+  "title": "パーソンフィット統計とマーチン・ローフの尤度比検定",
+  "navigation": "パーソンフィット",
+  "label1": "モデルを選択してください（Rm、dRm、eRmクラスのモデルがサポートされています）",
+  "label1b": "利用可能なモデルがない場合は、モデルフィッティング -> IRT -> シンプルラッシュモデルを選択し、CML推定を選択して最初にモデルを作成する必要があります",
+  "modelselector1": "モデルを選択",
+  "chkbox": "マーチン・ローフの尤度比検定統計を表示",
+  "lbl2": "尤度比検定の分割基準",
+  "rd1": "中央値",
+  "rd2": "平均",
+  "help": {
+    "title": "パーソンフィット統計とマーチン・ローフの尤度比検定",
+    "r_help": "help(personfit, package='eRm')",
+    "body": "\n                <b>説明: パーソンフィット統計</b></br>\n                Rm、eRm、またはdRmクラスのモデル（CML推定を使用してIRT -> シンプルラッシュモデルを作成）に対して、personfit関数を使用してパーソンフィット統計を表示します。\n\n                <br/><br/>\n                <b>使用法</b>\n                <br/>\n                <code>\n                eRm::personfit(object)\n                </code>\n                <br/><br/>\n                <b>詳細</b>\n                <br/>  \n                object: person.parameterから派生したpparクラスのオブジェクト。ヘルプが必要な場合は、構文エディタからhelp(person.parameter)を実行してください。\n                <br/><br/>\n                <b>値</b>\n                <br/>\n                p.df: パーソンフィット統計の自由度\n                <br/>\n                st.res: 標準化残差（personfit関数から）。\n                <br/>\n                p.outfitMSQ: アウトフィット平均二乗統計（personfit関数から）。\n                <br/>\n                p.infitMSQ: インフィット平均二乗統計（personfit関数から）。\n                <br/><br/>\n                <b>ヘルプ</b>\n                <br/>\n                BlueSky Statistics Syntaxエディタから次のコマンドを実行してください help(personfit, package ='eRm')\n                <br/><br/>\n                <b>パッケージ</b>\n                <br/>\n                eRm\n                <br/>\n\n                <b>説明: マーチン・ローフの尤度比検定</b></br>\n                この尤度比検定は、アイテムサブグループの分割に基づいています。\n                <br/><br/>\n                <b>使用法</b>\n                <br/>\n                <code>\n                MLoef(robj, splitcr = \"median\")\n                </code>\n                <br/><br/>\n                <b>詳細</b>\n                <br/>  \n                robj: 'Rm'クラスのオブジェクト。\n                <br/>\n                splitcr: アイテムグループを定義するための分割基準。\"中央値\"と\"平均\"は、アイテムの生スコアに基づいてアイテムを2つのグループに分割します。splitcrは、k（kはアイテムの数を示す）長のベクトルでもあり、マーチン・ローフのテストに使用されるグループを定義するために2つ以上の異なる値を取ることができます。\n                <br/><br/>\n                <b>値</b>\n                <br/>\n                MLoefは、次の内容を含むMLoefクラスのオブジェクトを返します:\n                <br/><br/>\n                LR: LR値\n                <br/>\n                df: 自由度\n                <br/>\n                p.value: テストのp値\n                <br/>\n                fullModel: 全体のラッシュモデル\n                <br/>\n                subModels: サブモデルを含むリスト\n                <br/>\n                Lf: 全体モデルの対数尤度\n                <br/>\n                Ls: サブモデルの対数尤度のリスト\n                <br/>\n                i.groups: アイテムグループのリスト\n                <br/>\n                splitcr: 提出された分割基準\n                <br/>\n                split.vector: アイテムをグループに割り当てるバイナリ割り当て\n                <br/>\n                warning: 各分割基準の中央値または平均に等しいアイテム\n                <br/><br/>\n                <b>パッケージ</b>\n                <br/>\n                eRm                \n                <br/><br/>\n                <b>ヘルプ</b>\n                <br/>\n                BlueSky Statistics Syntaxエディタから次のコマンドを実行してください help(MLoef, package ='eRm')\n\n                "
+  }
+}

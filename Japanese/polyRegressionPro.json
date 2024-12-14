@@ -1,0 +1,15 @@
+{
+  "title": "多項式回帰モデル",
+  "navigation": "多項式",
+  "modelname": "多項式回帰モデル名",
+  "dependentVar": "従属変数（例：応答）",
+  "independentVar": "独立変数（例：用量、濃度など）",
+  "polyDegree": "多項式方程式の次数。ユニークなデータポイントの数未満でなければなりません",
+  "comparePolyModelsChk": "比較のために追加の多項式モデルを計算する",
+  "addlPolyDegrees": "複数の多項式モデルを作成するために1つ以上の次数を指定する（例：3、4、5）",
+  "help": {
+    "title": "多項式回帰モデル",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>説明</b></br>\n            このダイアログは、指定された次数の直交多項式モデルを計算し、適合させるために使用されます\n\t\t\t<br/>\n\t\t\tlm(response ~ poly(a predictor, degree), data = dataset)を使用します\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\thelp(poly, package ='stats')に加えて、以下のRヘルプページを確認してください\n            <br/>\n\t\t\thelp(anova, package ='stats') - 異なる次数の多項式モデルを比較するために使用されます\n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - 多項式モデルを比較するためのAICを計算するために使用されます\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - 多項式モデルを比較するためのBICを計算するために使用されます\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - lm()とpoly()が一緒に使用される良い参考文献です\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\tデータセットメニューからcarsデータセットを読み込むことでこのダイアログを試すことができます\t\t\t\n\t\t\t従属変数としてdistを選択し、独立変数としてspeedを選択してください\n\t\t\t<br/>\n"
+  }
+}

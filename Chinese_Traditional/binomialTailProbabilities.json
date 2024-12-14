@@ -1,0 +1,15 @@
+{
+  "title": "二項尾概率",
+  "navigation": "二項尾概率",
+  "varvals": "輸入變量值，以逗號分隔。範例：3,0.5",
+  "size": "二項試驗",
+  "prob": "成功的概率",
+  "labelSig": "顯著性水平",
+  "lowtail": "下尾",
+  "uptail": "上尾",
+  "help": {
+    "title": "二項尾概率",
+    "r_help": "help(pbinom, package=stats)",
+    "body": "\n            <b>描述</b>\n            <br/>\n密度、分佈函數、分位數函數和隨機生成的二項分佈，參數為大小和概率。\n<br/>\n這通常解釋為在大小試驗中的“成功”次數。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>參數</b>\n<br/>\n<ul>\n    <li>x, q : 分位數向量。</li>\n    \n    \n    <li>p : 概率向量。</li>\n    \n    \n    <li>n : 觀察數。如果長度(n) > 1，則長度被視為所需的數量。</li>\n    \n    \n    <li>size : 試驗次數（零或更多）。</li>\n    \n    \n    <li>prob : 每次試驗的成功概率。</li>\n    \n    \n    <li>log, log.p : 邏輯；如果為TRUE，則概率p以log(p)給出。</li>\n    \n    \n    <li>lower.tail : 邏輯；如果為TRUE（默認），則概率為P[X ≤ x]，否則為P[X > x]。</li>\n</ul>\n\n\n\n<br/>\n<b>詳細信息</b>\n<br/>\n二項分佈的大小 = n 和概率 = p 的密度\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\n對於x = 0, …, n。請注意，二項係數可以通過R中的choose計算。\n<br/>\n如果x的某個元素不是整數，則dbinom的結果為零，並發出警告。\n<br/>\np(x)是使用Loader算法計算的，請參見下面的參考文獻。\n<br/>\n分位數定義為滿足F(x) ≥ p的最小值x，其中F是分佈函數。\n<br/>\n<br/><b>值</b>\n<br/>\ndbinom給出密度，pbinom給出分佈函數，qbinom給出分位數函數，rbinom生成隨機偏差。\n<br/>\n如果size不是整數，則返回NaN。\n<br/>\n結果的長度由rbinom的n決定，並且是其他函數的數值參數的最大長度。\n<br/>\n除了n的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n   "
+  }
+}

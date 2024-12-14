@@ -1,0 +1,23 @@
+{
+  "title": "Toleranzintervalle",
+  "navigation": "Toleranzintervalle",
+  "label1": "Wählen Sie eine Verteilungsfunktion, die am besten zu den Daten passt",
+  "variableSelcted": "Wählen Sie eine Variable (beobachtete Daten) zur Analyse",
+  "x": "Die Anzahl der fehlerhaften (oder akzeptablen) Einheiten in der Stichprobe",
+  "m": "Die Menge, die in zukünftigen Gruppen produziert wird",
+  "alpha": "Konfidenzintervall (z. B. 0,95)",
+  "P": "Minimale (geben Sie einen Wert zwischen 0 und 1 an) Prozentzahl der Bevölkerung im Intervall",
+  "side": "Einseitiges oder zweiseitiges Toleranzintervall erforderlich (Typ 1 oder 2)",
+  "method": "Die Methode zur Berechnung der k-Faktoren (nur anwendbar für Normal-, Log-Normal- und Gamma-Verteilung)",
+  "selectDistFuncNormalRad": "Normal",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponential",
+  "selectDistFuncGammaRad": "Gamma",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncCauchyRad": "Cauchy",
+  "help": {
+    "title": "Toleranzintervalle",
+    "r_help": "help(normtol.int, package = tolerance)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFunktion zur Berechnung von Toleranzintervallen \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür detaillierte Hilfe - verwenden Sie R-Hilfe (package = 'tolerance'), help(normtol.int, package = tolerance), help(exttol.int, package = tolerance)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDie Methode zur Berechnung der k-Faktoren\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDie Methode zur Berechnung der k-Faktoren ist nur anwendbar für Normal-, Log-Normal- und Gamma-Verteilung. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                Der k-Faktor für die einseitigen Toleranzintervalle wird genau durchgeführt und\n\t\t\t\tist somit derselbe für die gewählte Methode. \"HE\" ist die Howe-Methode und wird oft als äußerst genau angesehen, \n\t\t\t\t<br/>\n\t\t\t\tsogar für kleine Stichprobengrößen. \"HE2\" ist eine zweite Methode von Howe, die ähnlich wie die Weissberg-Beatty\n\t\t\t\t<br/>\n\t\t\t\tMethode funktioniert, aber rechnerisch einfacher ist. \"WBE\" ist die Weissberg-Beatty-Methode (auch als Wald-Wolfowitz-Methode bekannt),\n\t\t\t\t<br/>\n\t\t\t\tdie für größere Stichprobengrößen ähnlich wie die erste Howe-Methode funktioniert. \"ELL\" ist die Ellison-Korrektur zur\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\tWeissberg-Beatty-Methode, wenn f erheblich größer als n^2 ist. Eine Warnmeldung wird angezeigt, wenn f nicht größer ist\n\t\t\t\t<br/>\n\t\t\t\tals n^2. \"KM\" ist die Krishnamoorthy-Mathew-Näherung an die exakte Lösung, die gut für größere Stichprobengrößen funktioniert.\n\t\t\t\t<br/>\n\t\t\t\t\"EXACT\" berechnet den k-Faktor genau, indem die integrale Lösung des Problems über die Integrationsfunktion gefunden wird.\n\t\t\t\t<br/>\n\t\t\t\tBeachten Sie, dass die Berechnungszeit dieser Methode weitgehend von m bestimmt wird. \"OCT\" ist der Owen-Ansatz zur Berechnung des k-Faktors\n\t\t\t\t<br/>\n\t\t\t\tbei der Kontrolle der Ränder, sodass nicht mehr als (1-P)/2 der Daten in jedem Rand der Verteilung sind.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens tolerance.xlsx verwenden. Öffnen Sie die Datei im Datenraster über das Menü Datei öffnen \n\t\t\t\t<br/>\n\t\t\t\tWählen Sie ND zur Variable (beobachtet..), \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

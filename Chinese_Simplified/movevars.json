@@ -1,0 +1,15 @@
+{
+  "title": "移动变量",
+  "navigation": "移动变量",
+  "varstomovelabel": "要移动的变量",
+  "locationlabel": "位置",
+  "firstlabel": "第一个",
+  "lastlabel": "最后一个",
+  "afterselectedlabel": "在选定变量之后",
+  "aftervarlabel": "",
+  "help": {
+    "title": "移动变量",
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\n这将把变量移动到数据集中的指定位置。\n<br/><br/>\n<b>要移动的变量：</b> 要移动到不同位置的变量。它们将按照此框中指定的顺序放置。\n<br/><br/>\n<b>位置：</b> 在数据集中移动变量的位置。<b>第一个</b> 将变量放在数据集的开头。\n<b>最后一个</b> 将变量放在数据集的末尾。<b>在选定变量之后</b> 将变量放在数据集中此变量之后。\n<br/><br/>\n<b>所需的 R 包：</b> dplyr\n\t\t\t"
+  }
+}

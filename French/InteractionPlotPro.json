@@ -1,0 +1,17 @@
+{
+  "title": "Graphique des Effets Principaux et d'Interaction",
+  "navigation": "Effet Principal et Interaction",
+  "response": "Variable de réponse (spécifiez une variable numérique pour calculer la moyenne)",
+  "Fixed": "Spécifiez une ou plusieurs variable(s) de regroupement (Catégorie)",
+  "mainEffectChk": "Tracer l'effet principal",
+  "interactionEffectChk": "Tracer l'effet d'interaction",
+  "chartTitle": "Entrez un titre",
+  "onePlotChk": "Toutes les interactions dans un seul graphique (Décochez pour tracer chaque interaction séparément)",
+  "noPlotsPerRow": "Nombre de graphiques d'interaction par ligne (lorsque laissé vide, par défaut : nombre de groupes -1)",
+  "angleX_axis_text": "Angle pour incliner les étiquettes de texte de l'axe x pour le graphique d'interaction (lorsque laissé vide, par défaut : 25 degrés)",
+  "colorHintLabel1": "Sélectionnez une couleur (Après avoir sélectionné une couleur, cliquez en dehors du contrôle pour appliquer)",
+  "help": {
+    "title": "Graphique d'Interaction",
+    "body": "\n\t\t\tGraphique des effets principaux pour analyser l'effet de chaque variable catégorique choisie sur la moyenne de la variable de réponse\n\t\t\tGraphique d'Interaction pour analyser l'effet de l'interaction de (paires) deux variables catégoriques sur la moyenne de la variable de réponse\n    "
+  }
+}

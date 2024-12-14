@@ -1,0 +1,30 @@
+{
+  "title": "Curățare date Excel sau CSV - ajustați, ștergeți rânduri și coloane",
+  "navigation": "Curățare Excel",
+  "resultDatasetName": "Numele noului set de date care va fi creat",
+  "listofRowNumbersRemove": "(Opțional) Lista numerelor de rânduri (separate prin virgulă, de exemplu 1,4,5,20:30) care trebuie șterse",
+  "listofColumnNumbersRemove": "(Opțional) Lista numerelor de coloane (separate prin virgulă, de exemplu 1,2,6:10) care trebuie șterse",
+  "chooseColumnNamesRad": "Specificați numele coloanelor din setul de date",
+  "rowNumbersContaingColNames": "Introduceți numerele de rânduri (separate prin virgulă, de exemplu 3,4) care vor fi folosite pentru numele coloanelor pentru setul de date de ieșire",
+  "deleteRowNumbersContaingColNamesChk": "Ștergeți rândurile care conțin numele coloanelor pentru setul de date de ieșire",
+  "combineWithExsitingColNamesChk": "Numele coloanelor create, combinați-le cu numele antetelor existente",
+  "specifyColumnNamesRad": "Specificați manual numele coloanelor pentru setul de date de ieșire",
+  "outputColumnNames": "Introduceți numele coloanelor (separate prin virgulă) care vor fi folosite pentru setul de date de ieșire",
+  "removeColsWithConstantChk": "Eliminați toate coloanele cu valori constante (insensibil la majuscule/minuscule)",
+  "removeColsWithNoDataChk": "Eliminați toate coloanele goale",
+  "removeRowsWithNoDataChk": "Eliminați toate rândurile goale",
+  "removeRowsWithNAsChk": "Păstrați doar cazurile complete, adică eliminați întregul rând dacă există vreo valoare goală sau NA",
+  "label1": "Conversia tipurilor de coloane în setul de date de ieșire",
+  "convertColumnDataTypeAuto": "Determinați automat tipul de date al coloanei și convertiți",
+  "convertColumnDataTypeNone": "Nu faceți nimic",
+  "convertColumnDataTypeFactorToCharInt": "Convertiți toate coloanele de tip factor în tipuri de caracter și întreg",
+  "convertColumnDataTypeCharToFactor": "Convertiți toate coloanele de tip caracter în factori",
+  "convertColumnDataTypeAllToFactor": "Convertiți toate coloanele în factori",
+  "convertColumnDataTypeManual": "Introduceți tipul de date pentru fiecare coloană de convertit",
+  "outputColumnTypes": "Lista tipurilor de coloane (separate prin virgulă, de exemplu numeric, factor, caracter, ..)",
+  "help": {
+    "title": "Curățare date Excel sau CSV - ajustați, ștergeți rânduri și coloane",
+    "r_help": "",
+    "body": "\n            <b>Descriere</b></br>\n            Acest dialog este folosit pentru a curăța o foaie Excel complexă pentru a adăuga și elimina rânduri și coloane pentru a crea un nou set de date\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit Excel cleanup.xlsx\n\t\t\t<br/>\n\t\t\tDeschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t<br/>\n\t\t\tÎn dialog - tastați\n\t\t\t<br/>\n\t\t\tSampleGp pentru numele noului set de date\n\t\t\t<br/>\n\t\t\t1:3 pentru lista numerelor de rânduri care trebuie șterse\n\t\t\t<br/>\n\t\t\t1,2,5:8 pentru lista numerelor de coloane care trebuie șterse\n\t\t\t<br/>\n\t\t\tSelectați opțiunea - Specificați numele coloanelor din seturile de date\n\t\t\t<br/>\n\t\t\t2,3 pentru Introduceți numerele de rânduri  \n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

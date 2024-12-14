@@ -1,0 +1,17 @@
+{
+  "navigation": "樣本矩",
+  "title": "樣本矩",
+  "label2": "特定測試設置",
+  "label3": "附加設置",
+  "showLengthNAs": "顯示長度和 NAs",
+  "order": "順序",
+  "centralMoments": "計算中心矩",
+  "absoluteMoments": "計算絕對矩",
+  "missingValues": "移除缺失值",
+  "Target": "選擇一個或多個變量",
+  "help": {
+    "title": "樣本矩",
+    "r_help": "help(moment, package ='moments')",
+    "body": "\n<b>描述</b></br>\n此函數計算指定階數的樣本矩。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nmoment(x, order = 1, central = FALSE, absolute = FALSE, na.rm = FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 數值數據向量。\n</li>\n<li>\norder: 要計算的矩的階數\n</li>\n<li>\ncentral: 邏輯值 - 是否計算中心矩。</br>\n</li>\n<li>\n</li>\n<li>\nabsolute: 邏輯值 - 是否計算絕對矩。</br>\n</li>\n<li>\nna.rm: 邏輯值 - 是否移除 NA 值？。</br>\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nmoment(x))</br>\nmoment(x,order=3,absolute=TRUE)</br>\n</code> <br/>\n<b>包</b></br>\nmoments</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或在 BlueSky Statistics R 編輯器中運行以下命令 help(moment, package ='moments')。           \n<br/>\n<br/>\t\n\t\t\t"
+  }
+}

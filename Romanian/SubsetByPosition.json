@@ -1,0 +1,27 @@
+{
+  "title": "Subsetat după Poziție",
+  "navigation": "Subsetat după Poziție",
+  "newdatasetlabel": "Specificați Noul Nume al Dataset-ului",
+  "sortbyvarslabel": "Variabile de Sortat Mai Întâi (Ordine Ascendentă)",
+  "groupbyvarslabel": "Grupuri pentru Subsetare",
+  "subsettypelabel": "Tip Subset",
+  "firstnlabel": "Primele N Rânduri",
+  "lastnlabel": "Ultimele N Rânduri",
+  "lowestnlabel": "Rânduri cu Cele Mai Mici N Valori pentru o Variabilă",
+  "highestnlabel": "Rânduri cu Cele Mai Mari N Valori pentru o Variabilă",
+  "firstproplabel": "Prima Proporție de Rânduri",
+  "lastproplabel": "Ultima Proporție de Rânduri",
+  "lowestproplabel": "Rânduri în Cel Mai Mic Percentil pentru o Variabilă",
+  "highestproplabel": "Rânduri în Cel Mai Mare Percentil pentru o Variabilă",
+  "nlabel": "N (pozitiv păstrează, negativ elimină)",
+  "proplabel": "Proporție (pozitiv păstrează, negativ elimină)",
+  "varlabel": "Variabilă",
+  "tieslabel": "Include Valori Egale",
+  "rownumlabel": "Specificați Numerele Rândurilor",
+  "rownumboxlabel": "Numere sau intervale separate prin virgule (de exemplu, 1,3,5 sau 20:30 sau seq(2,10,by=2), pozitiv păstrează, negativ elimină)",
+  "help": {
+    "title": "Subsetat după Poziție",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nAcest lucru subsetează un dataset conform poziției rândului.\n<br/><br/>\n<b>Specificați Noul Nume al Dataset-ului:</b> Numele dataset-ului unde vor fi stocate datele subsetate\n<br/><br/>\n<b>Variabile de Sortat Mai Întâi:</b> Variabile utilizate pentru a sorta rândurile înainte de a se efectua orice subsetare. Acest lucru va afecta doar opțiunile care selectează numărul de rânduri, de exemplu, \nPrimele/Ultimele N Rânduri, Prima/Ultima Proporție de Rânduri și Specificați Numerele Rândurilor. Va fi întotdeauna în ordine ascendentă.\n<br/><br/>\n<b>Grupuri pentru Subsetare:</b> Specificarea fără variabile va subseta conform poziției rândului din întregul dataset. Specificarea variabilelor va subseta conform poziției rândului\nîn cadrul grupurilor definite de toate combinațiile de valori pentru variabilele specificate.\n<br/><br/>\n<b>Tip Subset</b>\n<br/><br/>\n<b>Primele N Rânduri:</b> Păstrează primele N rânduri ale dataset-ului în general sau în cadrul grupurilor\n<br/><br/>\n<b>Ultimele N Rânduri:</b> Păstrează ultimele N rânduri ale dataset-ului în general sau în cadrul grupurilor\n<br/><br/>\n<b>Rânduri cu Cele Mai Mici N Valori pentru o Variabilă:</b> Păstrează rândurile care au cele mai mici valori ordonate pentru o variabilă specificată în general sau în cadrul grupurilor. De exemplu, specificarea 10 ar \npăstra rândurile cu cele mai mici 10 valori pentru o variabilă.\n<br/><br/>\n<b>Rânduri cu Cele Mai Mari N Valori pentru o Variabilă:</b> Păstrează rândurile care au cele mai mari valori ordonate pentru o variabilă specificată în general sau în cadrul grupurilor. De exemplu, specificarea 10 ar \npăstra rândurile cu cele mai mari 10 valori pentru o variabilă.\n<br/><br/>\n<b>Prima Proporție de Rânduri:</b> Păstrează rândurile în proporția superioară a dataset-ului în general sau în cadrul grupurilor. De exemplu, specificarea .10 ar păstra cele mai bune 10% din dataset \nconform numărului total de rânduri.\n<br/><br/> \n<b>Ultima Proporție de Rânduri:</b> Păstrează rândurile în proporția inferioară a dataset-ului în general sau în cadrul grupurilor. De exemplu, specificarea .10 ar păstra cele mai proaste 10% din dataset \nconform numărului total de rânduri.\n<br/><br/>\n<b>Rânduri în Cel Mai Mic Percentil pentru o Variabilă:</b> Păstrează rândurile în cel mai mic percentil pentru o variabilă specificată, în general sau în cadrul grupurilor. De exemplu, specificarea .10 ar \npăstra cel mai mic percentil de 10 pentru o variabilă (minim până la percentilul 10).\n<br/><br/>\n<b>Rânduri în Cel Mai Mare Percentil pentru o Variabilă:</b> Păstrează rândurile în cel mai mare percentil pentru o variabilă specificată, în general sau în cadrul grupurilor. De exemplu, specificarea .10 ar \npăstra cel mai mare percentil de 10 pentru o variabilă (percentilul 90 până la maxim).\n<br/><br/>\n<b>Specificați Numerele Rândurilor:</b> Păstrează exact rândurile numerotate specificate. De exemplu, specificarea 1,3,5 ar păstra primul, al treilea și al cincilea rând. Specificarea 20:30 ar păstra rândurile 20 \npână la 30. Specificarea seq(2,10,by=2) ar păstra rândurile numerotate par până la rândul 10.\n<br/><br/>\n<b>Include Valori Egale:</b> Specifică dacă valorile egale ar trebui incluse sau nu. De exemplu, dacă doriți rândurile pentru cele mai mici 10 valori ale unei variabile și a 10-a valoare cea mai mică \napare de mai multe ori, includerea valorilor egale va păstra toate rândurile care sunt egale cu valoarea duplicată. \n<br/><br/>\nRețineți că specificarea valorilor negative pentru N sau proporție elimină rândurile corespunzătoare din dataset. De exemplu, specificarea -10 pentru Primele N Rânduri ar elimina \nprimele 10 rânduri. Specificarea -.10 pentru Prima Proporție de Rânduri ar elimina primele 10% din rânduri.\n<br/><br/>\n<b>Pachete R necesare:</b> dplyr\n\t\t\t"
+  }
+}

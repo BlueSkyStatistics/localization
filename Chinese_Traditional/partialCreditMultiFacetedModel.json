@@ -1,0 +1,13 @@
+{
+  "title": "部分信用模型（多面向）",
+  "navigation": "部分信用模型（多面向）",
+  "modelname": "輸入模型名稱",
+  "destinationvars": "項目",
+  "firstlevel": "第一層變數",
+  "secondlevel": "第二層變數",
+  "help": {
+    "title": "部分信用模型（多面向）",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>描述</b>\n            <br/>\n            生成多面向部分信用模型的參數估計\n            <br/><br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp, facets=, formulaA = ~ formulaA = ~ item*step+rater, pid = , verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n            <li>\n            resp: 包含多項選擇項目反應的數據框 k=0,...,K。缺失的反應必須標記為 NA\n            </li>\n            <li>\n            formulaA: 設計公式（僅適用於 tam.mml.mfr）。請參見詳細幫助。也可以將一個面向的所有效應設置為零，例如 item*step + 0*rater（請參見詳細幫助）。\n            </li>\n            <li>\n            facets: 包含面向條目的數據框（僅適用於 tam.mml.mfr）\n            </li>\n            <li>\n            pid: 可選的人員標識符向量\n            </li>\n            <li>\n            verbose: 邏輯值，指示在迭代過程中是否應打印輸出。\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>包</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>幫助</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

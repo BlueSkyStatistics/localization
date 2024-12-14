@@ -1,0 +1,82 @@
+{
+    "banks": [],
+    "menu": [
+        {
+            "name": "File",
+            "tab": "file",
+            "buttons": [
+                {
+                    "name": "Open",
+                    "icon": "fas fa-folder-open",
+                    "onclick": "openFileDialog(undefined)",
+                    "visible": true
+                },
+                {
+                    "name": "Sample Datasets",
+                    "icon": "fas fa-folder-open",
+                    "onclick": "openSampleDataset()",
+                    "visible": true
+                },
+                {
+                    "name": "Save Dataset",
+                    "icon": "fas fa-save",
+                    "onclick": "saveDataset()",
+                    "visible": true
+                },
+                {
+                    "name": "Save As",
+                    "icon": "fas fa-file-export",
+                    "onclick": "saveasDataset()",
+                    "visible": true
+                },
+                {
+                    "name": "Close Dataset",
+                    "icon": "fas fa-times",
+                    "onclick": "closeDataset()",
+                    "visible": true
+                },
+                {
+                    "name": "Export Output",
+                    "icon": "fas fa-file-export",
+                    "onclick": "exportOutput()",
+                    "visible": true
+                }
+                
+              
+            ]
+        },
+        {
+            "icon": "fas fa-ellipsis-v",
+            "tab": "tools",
+            "buttons": [
+                "./assets/js/modals/appSettings", 
+                {
+                    "name": "Theme",
+                    "icon": "icon-theme",
+                    "onclick": "showhideThemeDialog()"
+                },   
+                {
+                    "name": "Help",
+                    "icon": "icon-help-circled",
+                    "children": [
+                        "./assets/js/modals/Help/helpAbout",
+                        "./assets/js/modals/Help/Help",
+                        "./assets/js/modals/Help/rFunctionHelp",
+                        "./assets/js/modals/Help/rPackageHelp",
+                        "./assets/js/modals/Help/rVersionDetails"
+                    ]
+                },
+                {
+                    "name": "Diagnostics",
+                    "icon": "icon-magnifying_glass",
+                    "children": [
+                        "./assets/js/modals/Help/rPackageDetails",
+                        "./assets/js/modals/Help/rInstalledPackages"
+                    ]
+                },
+                "./assets/js/modals/Help/installRPackage",
+                "./assets/js/modals/Help/updateBlueSkyPackage"
+            ]
+        }
+    ]
+}

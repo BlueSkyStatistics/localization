@@ -1,0 +1,13 @@
+{
+  "title": "量具偏差分析，基础",
+  "navigation": "量具偏差分析，基础",
+  "variableRespSelcted": "(如果选择了偏差变量，则可选) 选择测量/响应变量",
+  "variableRefSelcted": "选择参考/标准值变量",
+  "variableBiasSelcted": "(可选) 如果可用，选择偏差变量；否则将自动计算",
+  "alpha": "线性置信区间（介于0到1之间）",
+  "help": {
+    "title": "量具偏差分析",
+    "r_help": "help(lm, package = stats)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t执行线性偏差分析的函数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用 R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用示例数据集文件 linearityBias.xlsx。通过文件打开菜单在数据网格中打开文件\n\t\t\t\t<br/>\n\t\t\t\t从选择框中选择变量，参考和测量\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

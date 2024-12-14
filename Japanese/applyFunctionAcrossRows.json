@@ -1,0 +1,13 @@
+{
+  "title": "選択した変数に関数を適用する。",
+  "navigation": "行に関数を適用する",
+  "label1": "選択した変数のすべての行の値に関数を適用することで、新しい変数を作成するか、既存の変数を上書きします。",
+  "newvar": "新しい変数を入力/既存の変数を上書き",
+  "target": "変数を選択",
+  "selectctrl": "適用する操作を選択",
+  "help": {
+    "title": "関数を適用する",
+    "r_help": "help(apply,package='base')",
+    "body": "\n<b>説明</b></br>\nデータセット内の選択した変数（列）のすべての行に関数を適用します。dplyrパッケージのselect関数とパイプ（ %>% ）演算子を使用して、関数を適用する行を持つ変数を選択します。（これらの変数はapply関数にパイプされます）\n<br/>\n<b>使用法</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nX: 行列を含む配列。選択した変数はdplyrを介してパイプされます\n</li>\n<li>\nMARGIN: 関数が適用されるサブスクリプトを与えるベクトル。例えば、行列の場合、1は行を示し、2は列を示し、c(1, 2)は行と列を示します。Xに名前付きの次元名がある場合、次元名を選択する文字ベクトルにすることができます。変数varを含むデータセット\n</li>\n<li>\nFUN: 適用される関数\n</li>\n</ul>\n<b>値</b><br/>\n計算された値はデータセットに直接保存されます\n<b>パッケージ</b></br>\ndplyr</br>\n<b>ヘルプ</b></br>\nhelp(apply)\n"
+  }
+}

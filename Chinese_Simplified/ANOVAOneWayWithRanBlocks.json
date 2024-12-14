@@ -1,0 +1,14 @@
+{
+  "title": "单因素方差分析，随机区组",
+  "navigation": "单因素方差分析（随机区组）",
+  "tvarbox1": "响应变量",
+  "tvarbox2": "固定效应",
+  "blockVar": "区组变量",
+  "Post_hoc": "事后分析",
+  "chk1": "残差直方图",
+  "help": {
+    "title": "单因素方差分析，随机区组",
+    "r_help": "help(lmer, package ='lme4')",
+    "body": "\n<b>描述</b></br>\n通过REML或最大似然法拟合线性混合效应模型（LMM）到数据。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nlmer(formula, data = NULL, REML = TRUE, control = lmerControl(),\n        start = NULL, verbose = 0L, subset, weights, na.action,\n        offset, contrasts = NULL, devFunOnly = FALSE, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nformula: 一个双侧线性公式对象，描述模型的固定效应和随机效应部分，响应变量在~运算符的左侧，术语在右侧用+运算符分隔。随机效应项通过竖线（|）区分设计矩阵和分组因子的表达式。可以使用两个竖线（||）来指定同一分组变量的多个不相关随机效应。（由于其实现方式，||语法仅适用于包含数值（连续）预测变量的设计矩阵；要拟合具有独立分类效应的模型，请参见dummy或afex包中的lmer_alt函数。）\n</li>\n<li>\ndata: 一个可选的数据框，包含公式中命名的变量。默认情况下，变量来自调用lmer的环境。虽然数据是可选的，但包的作者强烈建议使用，特别是在后续应用如update和drop1等方法时（如果省略数据，这些方法不能保证正常工作）。如果省略数据，变量将从公式的环境中获取（如果指定为公式）或从父框架中获取（如果指定为字符向量）。\n</li>\n<li>\nREML: 逻辑标量 - 应该选择估计值以优化REML标准（与对数似然相对）吗？\nna.action: 一个函数，指示当数据包含NAs时应该发生什么。默认操作（na.omit，继承自getOption(\"na.action\")的“工厂新鲜”值）会剥离任何在任何变量中有缺失值的观察。\n</li>\n</ul>\n<b>值</b></br>\n一个merMod类的对象（更具体地说，是lmerMod子类的对象），可用许多方法（例如，methods(class=\"merMod\"））</br>\n<b>包</b></br>\nlme4</br>\n<b>帮助</b></br>\nhelp(lmer, package ='lme4')</br></br>\n<b>描述</b></br>\nlmerTest包中anova函数的方法\n<br/>\n<b>用法</b>\n<br/>\n<code> \n## S4方法用于签名'merModLmerTest' anova(object, ... , ddf=\"Satterthwaite\", type=3)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nobject: \"merModLmerTest\"类的对象 ... \"merModLmerTest\"类的对象。然后将计算模型比较统计量\n</li>\n<li>\nddf: 默认情况下，计算Satterthwaite的自由度近似。如果ddf=\"Kenward-Roger\"，则使用pbkrtest包中的KRmodcomp函数计算Kenward-Roger的近似。如果ddf=\"lme4\"，则返回来自lme4包的anova表。\n</li>\n<li>\n类型: 要测试的假设类型。可以是type=3或type=2或type=1（定义来自SAS理论）详细信息根据（Goodnight, J.H. 1976），类型3假设的行为在缺失单元的情况下（观察在某些因子水平组合中缺失）尚未完全研究。在这种情况下返回警告。\n</li>\n</ul>\n<b>详细信息</b></br>\n根据（Goodnight, J.H. 1976），类型3假设的行为在缺失单元的情况下（观察在某些因子水平组合中缺失）尚未完全研究。在这种情况下返回警告。</br>\n<b>包</b></br>\nlme4;lmerTest;rcompanion;ggplot2;multcomp</br>\n<b>帮助</b></br>\nhttps://cran.r-project.org/web/packages/lmerTest/lmerTest.pdf</br>\nhelp(nagelkerke, package ='rcompanion')</br>\nhelp(emmeans,package=\"cld\")</br>\nhelp(cld,package='emmeans')</br>\n<b>参考材料</b></br>\nhttp://rcompanion.org/handbook/I_07.html\n"
+  }
+}

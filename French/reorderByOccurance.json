@@ -1,0 +1,21 @@
+{
+  "title": "Réorganiser les niveaux de facteur par occurrence",
+  "navigation": "Réorganiser par occurrence",
+  "target": "Variables de facteur à réorganiser par niveaux",
+  "label1": "Sélectionnez les variables de facteur à réorganiser par occurrence des données dans la variable. Vous pouvez écraser les variables existantes ou créer de nouvelles variables en spécifiant un préfixe/suffixe. De nouvelles variables seront créées avec le préfixe/suffixe ajouté aux noms existants.",
+  "label2": "Enregistrer les nouveaux niveaux dans de nouvelles variables ou écraser les variables existantes",
+  "rd3": "Spécifiez un suffixe (Une nouvelle variable sera créée avec le suffixe)",
+  "txt3": "Entrez un suffixe",
+  "rd2": "Spécifiez un préfixe (Une nouvelle variable sera créée avec le préfixe)",
+  "txt4": "Entrez un préfixe",
+  "rd1": "Écraser les variables existantes",
+  "label3": "Spécifiez un ordre",
+  "Descending": "Dans l'ordre d'occurrence",
+  "Ascending": "Dans l'ordre inverse d'occurrence",
+  "ordered": "Faire un facteur ordonné (ordinal)",
+  "help": {
+    "title": "Supprimer les NAs",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>Description</b></br>\nRéorganiser les niveaux de facteurs par première apparition (occurrence). Voir réorganiser par compte pour l'ordre par compte/fréquence.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: Un facteur\n</li>\n<li>\nordered: Un logique qui détermine le statut \"ordonné\" du facteur de sortie. NA préserve le statut existant du facteur.\n</li>\n</ul>\n<b>Exemples</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

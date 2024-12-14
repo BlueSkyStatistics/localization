@@ -1,0 +1,13 @@
+{
+  "title": "Variablen erkunden",
+  "navigation": "Variablen erkunden",
+  "variableListSelcted": "Wählen Sie eine oder mehrere Variablen zur Erkundung aus",
+  "histCurveDispChk": "Eine Normalverteilungskurve im Histogramm anzeigen (fehlende Werte werden entfernt, damit die Kurve angezeigt werden kann)",
+  "statTableOrientionChk": "Zusammenfassende Statistiken in Spalten",
+  "histBins": "Geben Sie die Anzahl der Bins für das Histogramm an",
+  "help": {
+    "title": "Erforschen Sie die Eigenschaften einer oder mehrerer Variablen",
+    "r_help": "hilfe(zusammenfassung)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tGibt die folgenden beschreibenden Statistiken und Diagramme aus:\n\t\t\t\tmin, max, mittelwert, median, modi, summe, sd, cv (Variationskoeffizient), var, standardfehler, schiefe, kurtosis, mad, iqr und quartile. Darüber hinaus werden 95% Konfidenzintervalle für den Mittelwert und sd berechnet. Histogramm und QQ-Diagramme werden angezeigt. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R hilfe(zusammenfassung, paket = basis)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm Schiefe und Kurtosis zu berechnen, wird der Parameter typ = 3 standardmäßig verwendet. Mit dem Parameter typ = 2 stimmen die Werte für Schiefe und Kurtosis wahrscheinlich mit den Werten aus der MS Excel-Formel SKEW() und KURT() überein.\n\t\t\t\t<br/>\n\t\t\t\tpsych::schiefe(x, na.rm = TRUE, typ=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosis(x, na.rm = TRUE, typ=3)\n\t\t\t\t<br/>\n\t\t\t\tSiehe weitere Details \n\t\t\t\t<br/>\n\t\t\t\thilfe(schiefe, paket = psych)\n\t\t\t\t<br/>\n\t\t\t\thilfe(kurtosis, paket = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

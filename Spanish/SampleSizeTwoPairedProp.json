@@ -1,0 +1,18 @@
+{
+  "title": "Tamaño de Muestra, Prueba de Dos Proporciones Emparejadas",
+  "navigation": "Dos Proporciones Emparejadas",
+  "howtouse": "Para calcular el tamaño de la muestra (número de pares): especifique la potencia\nPara calcular la potencia: especifique el tamaño de la muestra (número de pares)",
+  "n": "Tamaño de Muestra (número de pares)",
+  "power": "Potencia (0-1)",
+  "pdisc": "Proporción de Pares Discordantes (PD) (0-1)",
+  "pdiff": "Diferencia en Proporciones, debe estar entre -PD y PD",
+  "siglevel": "Nivel de Significancia (0-1)",
+  "alternativeopt": "Hipótesis Alternativa",
+  "twosided": "Dos Lados",
+  "onesided": "Un Lado",
+  "help": {
+    "title": "Tamaño de Muestra, Prueba de Dos Proporciones Emparejadas",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nEsta es una evaluación del tamaño de la muestra para una prueba emparejada de proporciones utilizando la Prueba de McNemar. Calcula el tamaño de la muestra (número de pares) o la potencia cuando el usuario \nespecifica lo otro. Los cálculos utilizan una aproximación normal condicional a la proporción de pares discordantes. Ver Connor R. J. 1987. Tamaño de muestra para probar \ndiferencias en proporciones para el diseño de muestra emparejada. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Tamaño de Muestra (número de pares):</b> Especifique el tamaño de la muestra en el estudio. Este es el número de sujetos que proporcionarán valores de resultado binarios en ambos puntos de tiempo\nen un diseño pre vs post o el número de pares en un diseño de sujeto emparejado (por ejemplo, caso-control emparejado).\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa es verdadera.\n<br/><br/>\n<b>Proporción de Pares Discordantes:</b> Especifique la proporción esperada de pares que estarán en desacuerdo, por ejemplo, respuestas 'sí'/'no' o 'no'/'sí', de el número total de pares\n<br/><br/>\n<b>Diferencia en Proporciones:</b> Especifique la diferencia en proporciones de resultados (es decir, proporción que son 'sí') que se desea detectar. Por ejemplo, en un estudio de caso-control emparejado\nesto es la diferencia entre la proporción de casos que son 'sí' y la proporción de controles que son 'sí'.\n<br/><br/>\n<b>Nivel de Significancia:</b> Especifique el nivel de significancia deseado (es decir, error tipo I) de la prueba\n<br/><br/>\n<b>Hipótesis Alternativa:</b> Especifique si la prueba es de dos lados o de un lado\n<br/><br/>\n<b>Paquetes R Requeridos:</b> stats\n\t\t\t"
+  }
+}

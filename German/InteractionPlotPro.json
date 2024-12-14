@@ -1,0 +1,17 @@
+{
+  "title": "Hauptwirkung und Interaktionsdiagramm",
+  "navigation": "Hauptwirkung und Interaktion",
+  "response": "Antwortvariable (geben Sie eine numerische Variable an, um den Mittelwert zu berechnen)",
+  "Fixed": "Geben Sie eine oder mehrere Gruppierungsvariablen (Kategorie) an",
+  "mainEffectChk": "Hauptwirkung darstellen",
+  "interactionEffectChk": "Interaktionseffekt darstellen",
+  "chartTitle": "Titel eingeben",
+  "onePlotChk": "Alle Interaktionen in einem Diagramm (Abwählen, um jede Interaktion separat darzustellen)",
+  "noPlotsPerRow": "Anzahl der Interaktionsdiagramme pro Reihe (wenn leer gelassen, Standard: Anzahl der Gruppen -1)",
+  "angleX_axis_text": "Winkel zum Neigen der x-Achsen-Beschriftungen für das Interaktionsdiagramm (wenn leer gelassen, Standard: 25 Grad)",
+  "colorHintLabel1": "Wählen Sie eine Farbe aus (Nach der Farbauswahl außerhalb der Steuerung klicken, um anzuwenden)",
+  "help": {
+    "title": "Interaktionsdiagramm",
+    "body": "\n\t\t\tHauptwirkungdiagramm zur Analyse der Wirkung jeder gewählten kategorialen Variablen auf den Mittelwert der Antwortvariable\n\t\t\tInteraktionsdiagramm zur Analyse der Wirkung der Interaktion von (paarweise) zwei kategorialen Variablen auf den Mittelwert der Antwortvariable\n    "
+  }
+}

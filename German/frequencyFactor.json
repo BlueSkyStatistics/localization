@@ -1,0 +1,25 @@
+{
+  "title": "Häufigkeitsdiagramm",
+  "navigation": "Häufigkeiten",
+  "x": "X-Achse",
+  "y": "Farbe, geben Sie eine Faktorvariable an",
+  "bins": "Anzahl der Bins (gilt nur, wenn die Variable auf der X-Achse eine Faktorvariable ist)",
+  "barcolor": "Linienfarbe (Nach der Farbauswahl klicken Sie außerhalb der Steuerung, um anzuwenden)",
+  "tab1": "Numerisch",
+  "tab2": "Faktor",
+  "alpha": "Opazität (0-1)",
+  "flip": "Achse umdrehen",
+  "specify_a_title": "Geben Sie einen Titel ein",
+  "x_title": "X-Achsenbeschriftung",
+  "y_title": "Y-Achsenbeschriftung",
+  "Facetrow": "Facet-Reihe",
+  "Facetcolumn": "Facet-Spalte",
+  "Facetwrap": "Facet-Wrap",
+  "Facetscale": "Facet-Skala",
+  "facets_lbl" : "Facetten",
+  "help": {
+    "title": "Häufigkeitsdiagramm",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>Beschreibung</b></br>\n            Visualisieren Sie die Verteilung einer einzelnen kontinuierlichen Variablen, indem Sie die X-Achse in Bins unterteilen und die Anzahl der Beobachtungen in jedem Bin zählen. Histogramme (geom_histogram()) zeigen die Zählungen mit Balken; Häufigkeitspolygonen (geom_freqpoly()) zeigen die Zählungen mit Linien. Häufigkeitspolygonen sind geeigneter, wenn Sie die Verteilung über die Ebenen einer kategorialen Variablen vergleichen möchten. </br>\n            HINWEIS: Wir ignorieren die ausgewählte Farbe, wenn eine Gruppierungs-/Farbvariable angegeben ist, da für jede Ebene der Gruppierungsvariable eine andere Farbe ausgewählt wird.</br>\n            Wenn Sie mehrere X-Variablen angeben, erstellen wir ein separates Häufigkeitsdiagramm für jede X-Variable.</br>\n            <b>Verwendung</b>\n            <br/>\n            <code>\n            #Sie können ein Häufigkeitsdiagramm für eine oder mehrere numerische Variablen erstellen. Die Standardanzahl der Bins ist auf 30 eingestellt.</br>\n            #Das folgende Beispiel verwendet den mtcars-Datensatz im datasets-Paket<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #Sie können ein Häufigkeitsdiagramm für eine oder mehrere numerische Variablen erstellen und das Diagramm nach einer Faktorvariablen gruppieren. Die Standardanzahl der Bins ist auf 30 eingestellt.</br>\n            #Das folgende Beispiel verwendet den mtcars-Datensatz im datasets-Paket<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #Sie können ein Häufigkeitsdiagramm/Liniendiagramm erstellen, indem Sie eine Faktorvariable nach einer anderen gruppieren</br>\n            #Sie müssen mit der rechten Maustaste auf cyl und am im Variablenansicht klicken, um es zu einer Faktorvariable zu machen</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            data: Der Standarddatensatz​\n            </li>\n            <li>\n            aes(): Generieren Sie ästhetische Zuordnungen, die beschreiben, wie Variablen in den Daten auf visuelle Eigenschaften (Ästhetik) von Geoms abgebildet werden.​\n            </li>\n            <li>\n            group:  Eine optionale Faktor-/kategoriale Variable. \n            </li>\n            <li>\n            geom_freqpoly(): Erstellt das Häufigkeitsdiagramm\n            </li>\n            <li>\n            bins: Anzahl der Bins.\n            </li>\n            <li>\n            Labs(): Ändern Sie Achsenbeschriftungen und Legendentitel (dies ist optional)​\n            </li>\n            <li>\n            facet_grid(): Ordnen Sie Panels in einem Raster an (dies ist optional)​\n            </li>\n            <li>\n            theme_calc(): Gibt das Rechnerdesign an (dies ist optional)​\n            </li>\n            <li>\n            coord_flip(): Achse umdrehen (dies ist optional)​\n            </li>\n            <li>\n            alpha: Steuert die Opazität, nimmt Werte zwischen 0-1 an. 1 bedeutet keine Opazität.\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Hilfe</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Andere: Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​           \n      "
+  }
+}

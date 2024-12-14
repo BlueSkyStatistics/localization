@@ -1,0 +1,12 @@
+{
+  "title": "アイテムとテスト情報",
+  "navigation": "アイテムとテスト情報",
+  "label1": "モデルを選択してください（クラスRm、eRmのモデルがサポートされています）",
+  "label1b": "利用可能なモデルがない場合は、まずモデルフィッティング -> IRT -> シンプルラッシュモデルを選択し、CML推定を選択してモデルを作成する必要があります。",
+  "modelselector1": "モデルを選択",
+  "help": {
+    "title": "'eRm'オブジェクトのプロット情報",
+    "r_help": "help(plotINFO, package='eRm')",
+    "body": "\n                <b>説明</b></br>\n                Samejima (1969) による個々のアイテム情報または合計アイテム情報を計算し、プロットします。\n                <br/><br/>\n                <b>使用法</b>\n                <br/>\n                <code>\n                plotINFO(ermobject, type = \"both\", theta = seq(-6, 6, length.out = 1001L), ...)\n                </code>\n                <br/><br/>\n                <b>引数</b>\n                <br/>  \n                object: eRmクラスのオブジェクト\n                <br/>\n                type: プロットする情報のタイプを示す文字列。現在は「item」、「test」、および「both」（デフォルト）をサポートしています。\n                <br/>\n                theta: 潜在特性のサポートまたはサンプリングポイント\n                <br/><br/>\n                <b>パッケージ</b>\n                <br/>\n                eRm\n                <br/><br/>\n                <b>ヘルプ</b>\n                <br/>\n                help(plotINFO, package='eRm')\n                "
+  }
+}

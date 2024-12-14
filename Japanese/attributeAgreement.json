@@ -1,0 +1,15 @@
+{
+  "title": "属性合意分析、基本",
+  "navigation": "属性合意、基本",
+  "variablePartSelcted": "サンプル/部品の変数を選択してください",
+  "variableOpSelcted": "評価者/オペレーターの変数を選択してください",
+  "variableRespSelcted": "属性/応答の変数を選択してください",
+  "variableRefSelcted": "(オプション) 参照/標準応答の変数を選択してください",
+  "alpha": "信頼区間 (アルファ) は 0 から 1 の間",
+  "rowsTobeUsed": "すべての行を使用する場合は空白のままにしてください。そうでない場合は、分析に使用する行を指定してください (例: 1:25 または 1,4,5,7:12 と指定)",
+  "help": {
+    "title": "属性合意分析",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t属性合意分析を実行するための関数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(kappam.fleiss, package = irr)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、サンプルデータセットファイル attributemsaAB.xlsx を使用できます。\n\t\t\t\tオペレーターAとBのそれぞれに20の観察が2回繰り返され、PおよびF評価が付けられています。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tサンプルデータセットファイル attributemsaABCordered.RData を使用して、オペレーターA、B、Cのそれぞれに10の観察が2回繰り返され、\n\t\t\t\t「順序付き」（順序尺度）評価として「不同意」、「やや不同意」、「中立」、「やや同意」、「同意」が付けられています。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tファイルオープンメニューでデータグリッドにファイルを開いてください\n\t\t\t"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "信頼区間",
+  "navigation": "信頼区間",
+  "label1": "次のクラスのいずれかのモデルを選択してください。（Rクラスは以下に括弧で示されています）",
+  "label2": "線形モデル (lm)、一般化線形モデル (glm)、非線形最小二乗法 (nls)、順序ロジスティック/プロビット回帰 (polr)、多項ロジスティック線形モデル (multinom)、コックス回帰モデル (coxph)",
+  "label3": "基づいて",
+  "modelselector1": "モデルを選択",
+  "conlevel": "信頼区間",
+  "lr": "尤度比統計量",
+  "wald": "ワルド統計量",
+  "help": {
+    "title": "信頼区間",
+    "r_help": "help(confint,package='stats')",
+    "body": "\n                <b>説明</b></br>\nフィッティングされたモデルの1つまたは複数のパラメータの信頼区間を計算します。デフォルトと「lm」クラスから継承されたオブジェクトのためのメソッドがあります。lmおよびcoxphモデルはワルド法のみを使用します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nconfint(object, parm, level = 0.95, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject: フィッティングされたモデルオブジェクト。\n</li>\n<li>\nparm: 信頼区間を与えるパラメータの指定、数値のベクトルまたは名前のベクトル。省略した場合、すべてのパラメータが考慮されます。\n</li>\n<li>\nlevel: 必要な信頼レベル。\n</li>\n<li>\n...: メソッドに渡される引数。\n</li>\n</ul>\n<b>詳細</b></br>\nconfintは一般的な関数です。デフォルトメソッドは正規性を仮定し、適切なcoefおよびvcovメソッドが利用可能である必要があります。デフォルトメソッドは、他のメソッドとの比較のために直接呼び出すことができます。</br>\n「lm」クラスのオブジェクトの場合、t値に基づく直接的な公式が使用されます。</br>\n「glm」および「nls」クラスのためのスタブメソッドがstatsパッケージにあり、MASSパッケージ（インストールされている場合）のメソッドを呼び出します：MASS名前空間がロードされている場合、そのメソッドが直接使用されます。（これらのメソッドはプロファイル尤度に基づいています。）</br>\n<b>値</b></br>\n各パラメータの下限および上限の信頼限界を示す列を持つ行列（またはベクトル）。これらはデフォルトで2.5%および97.5%として(1-level)/2および1 - (1-level)/2としてラベル付けされます。</br>\n<b>例</b><br/>\n<code> \nfit <- lm(100/mpg ~ disp + hp + wt + am, data = mtcars)<br/>\nconfint(fit)<br/>\nconfint(fit, \"wt\")<br/>\n## example(glm)から\ncounts <- c(18,17,15,20,10,20,25,13,12)\noutcome <- gl(3, 1, 9); treatment <- gl(3, 3)\nglm.D93 <- glm(counts ~ outcome + treatment, family = poisson())\nconfint(glm.D93) # MASSがインストールされている必要があります\nconfint.default(glm.D93)  # 漸近的正規性に基づく\n</code> <br/>\n<b>パッケージ</b></br>\nstats;MASS;knitr</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(confint , package='stats')\n                "
+  }
+}

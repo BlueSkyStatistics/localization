@@ -1,0 +1,11 @@
+{
+  "title": "数值统计，使用描述",
+  "navigation": "数值摘要，使用描述（遗留）",
+  "tvarbox1": "选择变量",
+  "tvarbox2": "选择分组变量",
+  "help": {
+    "title": "数值统计，使用描述",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>描述</b></br>\n输出以下数值统计：</br>\n计数，均值，标准差，中位数，修剪，mad，最小值，最大值，范围，偏度，峰度，标准误差\n<br/>\n<b>用法</b>\n<br/>\n<code> \n#BSkyFormat 显示格式良好的输出<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个数据框或矩阵\n</li>\n</ul>\n<b>包</b></br>\npsych</br>\n<b>帮助</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

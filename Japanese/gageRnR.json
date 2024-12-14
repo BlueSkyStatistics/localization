@@ -1,0 +1,20 @@
+{
+  "title": "ゲージR&R - 測定システム分析、基本",
+  "navigation": "ゲージR&R、基本",
+  "mainTitle": "グラフィック出力のメインタイトル",
+  "subTitle": "グラフィック出力のサブタイトル（例：SixSigmaプロジェクトの名前）",
+  "measuredVar": "測定変数",
+  "part": "部品変数",
+  "appr": "評価者（オペレーター、機械、...）変数",
+  "lsl": "LSL - スペック下限の数値（USLと共に使用して、研究変動を%トレランスとして計算）",
+  "usl": "USL - スペック上限の数値（LSLと共に使用して、研究変動を%トレランスとして計算）",
+  "sigma": "シグマ - 研究変動を計算するために使用する標準偏差の数値",
+  "tolerance": "トレランス - トレランスの数値 - デフォルト（usl - lsl）",
+  "alphaLim": "アルファ - 相互作用を考慮するための制限",
+  "errorTerm": "モデルのどの項を誤差項として使用するべきか（相互作用のあるモデルの場合）",
+  "help": {
+    "title": "ゲージR&R - 測定システム分析",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tss.rr関数は、プロセスの測定システムの評価のためにゲージR&R分析を実行します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプを得るには、R help(ss.rr, package = SixSigma)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、gageR_R_piston_diameter_with_measurements.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開いてください\n\t\t\t\t<br/>\n\t\t\t\tサンプルデータセットから、直径変数を測定変数に、ピストンリングを部品変数に、オペレーターを評価者に選択してください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

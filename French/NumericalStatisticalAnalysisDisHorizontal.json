@@ -1,0 +1,14 @@
+{
+  "title": "Statistiques Numériques, utilisant résumer",
+  "navigation": "Sommaires Numériques, utilisant résumer (Héritage)",
+  "tvarbox1": "Variables Sélectionnées",
+  "tvarbox2": "Grouper par",
+  "label1": "Options d'Affichage",
+  "horizontal": "Affichage Horizontal",
+  "vertical": "Affichage Vertical",
+  "help": {
+    "title": "Statistiques Numériques, utilisant résumer",
+    "r_help": "",
+    "body": "\n<b>Description</b></br>\nAffiche les statistiques numériques suivantes pour chaque groupe des variables cibles. Les variables cibles peuvent être optionnellement regroupées par une ou plusieurs variables factorielles ou numériques. Imprime les informations suivantes pour les variables cibles ou chaque groupe par lequel les variables cibles sont regroupées, à savoir min, 1er quantile (25%), max, moyenne, médiane, 3ème quantile (75%), somme, variance, écart type, erreur standard, asymétrie, kurtosis\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \n##La fonction ci-dessous est exécutée pour chaque variable cible et les dataframes résultants sont transposés et combinés<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1er_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),moyenne=base::mean(var3,na.rm =TRUE),médiane=stats::median(var3,na.rm =TRUE),Quantile_3ème_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),asymétrie=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndataset1: C'est le jeu de données\n</li>\n<li>\ngroup_by: Regrouper optionnellement les variables cibles par une ou plusieurs variables factorielles ou numériques\n</li>\n<li>\nsummarize: Résumer les variables cibles ou les groupes de variables cibles (si des variables spécifiées dans le group_by) par les fonctions de résumé spécifiées, à savoir moyenne, médiane, min...\n</li>\n</ul>\n<b>Valeur</b></br>\nUn objet de classe \"data.frame\", donnant les résultats pour chaque fonction sur chaque variable.</br>\n<b>Paquet</b></br>\ncaret</br>\n<b>Aide</b></br>\nL'aide R n'est pas disponible car nous avons écrit un code personnalisé utilisant plusieurs fonctions R. Si vous avez besoin d'inspecter le code, cliquez sur le bouton \"<>\".</br>\n    "
+  }
+}

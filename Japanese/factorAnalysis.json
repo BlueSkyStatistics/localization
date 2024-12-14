@@ -1,0 +1,31 @@
+{
+  "title": "因子分析",
+  "navigation": "因子",
+  "destination": "変数を選択",
+  "label1": "因子抽出",
+  "factorextraction1": "因子を自動的に抽出",
+  "factorextraction2": "抽出する因子の数を指定",
+  "noOfFactors": "抽出する因子の数を入力",
+  "screeplot": "スクリープロット",
+  "label2": "因子スコア",
+  "saveScores": "因子スコアをデータセットに保存",
+  "scores1": "バートレット法、変数名のプレフィックスを入力",
+  "scores2": "回帰法、変数名のプレフィックスを入力",
+  "varForScores": "スコアのための変数名のプレフィックスを入力:",
+  "label3": "回転オプション",
+  "grpBox21": "なし",
+  "grpBox22": "バリマックス",
+  "grpBox23": "プロマックス",
+  "grpBox24": "ベントラーQ",
+  "grpBox25": "クォータマックス",
+  "grpBox26": "オブリミン",
+  "grpBox27": "ジオミンQ",
+  "grpBox28": "ジオミンT",
+  "grpBox29": "シンプリマックス",
+  "parallel": "並行分析",
+  "help": {
+    "title": "因子分析",
+    "r_help": "help(factanal, package ='stats')",
+    "body": "\n<b>説明</b></br>\n​共分散行列またはデータ行列に対して最尤因子分析を実行し、スクリープロットを生成します。statsパッケージのfactanal関数を呼び出します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvars: 因子を抽出するための1つ以上の数値変数。\n</li>\n<li>\nautoextraction: 自動的に因子の数を決定するか、特定の数の因子を抽出します。\n</li>\n<li>\nscreeplot: TRUEの場合、スクリープロットを生成します。\n</li>\n<li>\nrotation: 回転の種類を決定し、次の値のいずれかを取ります（none、quartimax、geominT、varimax、oblimin、simplimax、promax、geominQ、bentlerQ）\n</li>\n<li>\nsaveScores: データセットに因子スコアを保存します。\n</li>\n<li>\ndataset: 'vars'が選択されたデータセット。\n</li>\n</ul>\n<b>詳細</b></br>\n\"factanal\"クラスのオブジェクトで、コンポーネント</br>\nloadings: 各因子の1列の負荷行列。因子は負荷の二乗和の降順に並べられ、負荷の合計を正にする符号が与えられます。これは\"loadings\"クラスです：その印刷メソッドについてはloadingsを参照してください。</br>\nuniquenesses: 計算されたユニーク性。</br>\ncorrelation: 使用された相関行列。</br>\ncriteria: 最適化の結果：基準の値（負の対数尤度の線形関数）と使用された反復に関する情報。</br>\nfactors: 引数因子。</br>\ndof: 因子分析モデルの自由度の数。</br>\nmethod: メソッド：常に\"mle\"。</br>\nrotmat:\t関連する場合の回転行列。</br>\nscores: 要求された場合、スコアの行列。napredictはna.actionによって省略された値の処理を扱うために適用されます。</br>\nn.obs: 利用可能な場合の観測数、またはNA。</br>\ncall: 一致した呼び出し。</br>\nna.action: 関連する場合。</br>\nSTATISTIC, PVAL: 計算可能な場合の有意性検定統計量とP値。</br>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(factanal, package ='stats')\n"
+  }
+}

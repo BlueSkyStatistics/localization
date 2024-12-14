@@ -1,0 +1,12 @@
+{
+  "title": "量子回帰モデルのスロープを比較する",
+  "navigation": "量子回帰モデル",
+  "label1": "N個の量子回帰モデルを比較します。",
+  "label4": "**注意: モデルチューニング（クラスtrain）から作成されたモデルはサポートされていません",
+  "modelselector1": "スロープを比較するために2つ以上の量子回帰モデルを選択してください:",
+  "help": {
+    "title": "量子回帰モデルのスロープを比較する",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>説明</b></br>\n2つ以上の量子回帰フィットのためのテスト統計量を計算します。 \n<br/>\n<b>使用法</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject: rqクラスのオブジェクトで、rqへの呼び出しから派生します。\n</li>\n</ul>\n<b>詳細</b><br/>\n関心のある仮説は、モデルのスロープ係数が同一であるということです。テスト統計量は、KoenkerとBassett（1982）で説明されているWaldテストの変種です。<br/>\n<b>値</b><br/>\n\"anova\"クラスのオブジェクトで、\"data.frame\"クラスを継承します。<br/>\n<b>パッケージ</b></br>\nquantreg</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

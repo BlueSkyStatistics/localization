@@ -1,0 +1,18 @@
+{
+  "title": "幾何分布からのサンプル",
+  "navigation": "幾何分布からのサンプル",
+  "entrdsname": "データセットの名前を入力",
+  "prob": "確率",
+  "lblnoofsamples": "サンプル数（行）",
+  "lblnoofobsv": "観測数（列）",
+  "lblseed": "シード",
+  "lblAddtoDS": "データセットに追加",
+  "chklbl1": "サンプル平均",
+  "chklbl2": "サンプル合計",
+  "chklbl3": "サンプル標準偏差",
+  "help": {
+    "title": "幾何分布からのサンプル",
+    "r_help": "help(rgeom, package=stats)",
+    "body": "\n\n            <b>説明</b>\n            <br/>\n            幾何分布の密度、分布関数、分位数関数、および確率パラメータprobによる乱数生成。\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n                dgeom(x, prob, log = FALSE)\n                <br/>\n                pgeom(q, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qgeom(p, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rgeom(n, prob)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 成功が発生するまでのベルヌーイ試行の失敗数を表す分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>prob : 各試行の成功の確率。0 < prob <= 1。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            prob = pの幾何分布は密度を持ちます\n            <br/>\n            <code>\n                p(x) = p (1-p)^x\n                x = 0, 1, 2, …, 0 < p ≤ 1.\n            </code>\n            <br/>\n            xの要素が整数でない場合、dgeomの結果はゼロになり、警告が表示されます。\n            <br/>\n            分位数は、F(x) ≥ pとなる最小の値xとして定義されます。ここでFは分布関数です。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dgeomは密度を与え、pgeomは分布関数を与え、qgeomは分位数関数を与え、rgeomは乱数を生成します。\n            <br/>\n            無効なprobは、警告とともに戻り値NaNをもたらします。\n            <br/>\n            結果の長さはrgeomのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。            \n"
+  }
+}

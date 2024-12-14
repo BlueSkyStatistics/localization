@@ -1,0 +1,26 @@
+{
+  "title": "非线性最小二乘 (NLS) 模型",
+  "navigation": "非线性最小二乘",
+  "modelname": "NLS 模型名称",
+  "DependentVar": "响应（因变量）",
+  "IndependentVarsformula": "构建或粘贴任何包含自变量（预测变量）和模型参数的方程（公式），例如 a * exp(b * x)，其中 a 和 b 是待估计的参数，x 是预测变量。它将创建一个模型方程 y ~ a * exp(b * x)，其中 y 是响应变量",
+  "IndependentVar": "散点图和拟合图所需的自变量（预测变量）",
+  "weights": "用作权重（Y）的变量，具有一个幂值",
+  "PowerKweight": "幂：仅用于 Y，选择 (-1)，用于 1/Y，选择 1，1/(Y^2)，选择 2，.. 1/(Y^5)，选择 5，..",
+  "covMatrixChk": "参数的估计协方差矩阵",
+  "resPlotChk": "绘制拟合和残差",
+  "resNormalityTestChk": "模型残差的正态性检验",
+  "modelConstraintLabel": "(可选) 各种模型约束以进行参数估计",
+  "pmodels": "参数的起始值以指导模型优化/收敛，例如 param1 = 1，param2 = 10，param3 = 0，适用于三参数模型",
+  "paramConstraintsLower": "设置下限约束（必须选择端口作为算法），例如 3，-Inf，-Inf，适用于三参数模型",
+  "paramConstraintsUpper": "设置上限约束（必须选择端口作为算法），例如 3，Inf，Inf，2，适用于四参数模型",
+  "algorithm": "要使用的算法。默认是高斯-牛顿算法",
+  "maxIter": "允许模型收敛的最大迭代次数。默认是 50",
+  "logScaleAxis": "X 轴默认以对数刻度绘制。选择 ' ' 以使用原始刻度",
+  "doseInLogScaleChk": "检查数据集中剂量/浓度是否已经是对数值",
+  "help": {
+    "title": "非线性最小二乘 (NLS) 模型",
+    "r_help": "help(nls, package ='stats')",
+    "body": "\n            <b>描述</b></br> \n\t\t\t执行非线性回归。构建或输入任何方程（公式）以构建非线性回归模型。\n\t\t\t确定非线性（加权）最小二乘估计的非线性模型参数。\n\t\t\t使用图形分析模型拟合。\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t检查 help(nls, package ='stats') 以获取详细信息\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t您可以尝试此对话框\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\t示例 1\n\t\t\t</br>\n\t\t\t从加载数据集菜单加载 DNase 数据集（在第一个下拉菜单中保留所有已安装的包，并在第二个下拉菜单中选择 DNase）\t\t\t\n\t\t\t<br/>\n\t\t\t选择（或拖动）密度作为响应变量\n\t\t\t<br/>\n\t\t\t在自变量（公式）字段中输入 Asym/(1 + exp((xmid - log(conc))/scal))，其中 Asym、xmid 和 scal\n\t\t\t是三个待估计的模型参数（即系数）\n\t\t\t<br/>\n\t\t\t检查估计的协方差矩阵\n\t\t\t</br>\n\t\t\t检查绘制拟合和残差\n\t\t\t</br>\n\t\t\t选择（或拖动）conc 进入散点图和拟合图所需的自变量字段\n\t\t\t</br>\n\t\t\t在字段中输入 Asym = 3，xmid = 0，scal = 1 以指导模型的起始值\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t示例 2\n\t\t\t</br>\n\t\t\t从加载数据集菜单加载 DNase 数据集（在第一个下拉菜单中保留所有已安装的包，并在第二个下拉菜单中选择 DNase）\t\t\t\n\t\t\t<br/>\n\t\t\t选择（或拖动）密度作为响应变量\n\t\t\t<br/>\n\t\t\t在自变量（公式）字段中输入 Asym/(1 + exp((xmid - log(conc))/scal))\n\t\t\t<br/>\n\t\t\t检查估计的协方差矩阵\n\t\t\t</br>\n\t\t\t检查绘制拟合和残差\n\t\t\t</br>\n\t\t\t选择（或拖动）conc 进入散点图和拟合图所需的自变量字段\n\t\t\t</br>\n\t\t\t在字段中输入 Asym = 3，xmid = 0，scal = 1 以指导模型的起始值\n\t\t\t</br>\n\t\t\t在字段中输入 Asym = 0，xmid = -Inf，scal = -Inf 以设置下限约束（将 Asym 的下限设置为 0，保持 xmid 和 scal 的下限不受约束）\n\t\t\t</br>\n\t\t\t在字段中输入 Asym = Inf，xmid = 4，scal = Inf 以设置上限约束（将 xmid 的下限设置为 0，保持 Asym 和 scal 的上限不受约束）\n\t\t\t</br>\n\t\t\t从算法下拉菜单中选择端口以使用而不是默认值\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t执行对话框\n\t\t\t</br>\n\t\t\t</br>\n"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "応答変数の追加/削除 - まず、DOE -> 設計を検査メニューで既存の応答変数のリストを確認してください",
+  "navigation": "応答の追加/削除",
+  "subsetvars": "応答変数を選択",
+  "help": {
+    "title": "応答変数の追加/削除",
+    "r_help": "help(response.names, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t設計の応答変数として1つ以上の変数を指定するためのものです\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(response.names, package = DoE.base)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

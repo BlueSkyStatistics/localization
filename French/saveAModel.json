@@ -1,0 +1,24 @@
+{
+  "title": "Enregistrer des modèles dans un fichier",
+  "navigation": "Enregistrer des modèles",
+  "filterModels": "Filtrer les modèles par classe",
+  "modelSelection": "Sélectionnez un ou plusieurs modèles à enregistrer",
+  "importResp": "Sélectionnez un fichier pour enregistrer un modèle",
+  "label1": "REMARQUE : Le modèle sera enregistré dans un fichier dans le chemin sélectionné ci-dessous UNIQUEMENT lorsque vous exécuterez la boîte de dialogue.",
+  "levelOfInterest": "Lorsque la variable à prédire a 2 niveaux, spécifiez le niveau d'intérêt. La matrice de confusion et les statistiques connexes sont affichées avec le niveau d'intérêt spécifié comme référence.",
+  "label12": "Résultats des tests : Dès qu'un modèle est sélectionné, nous exécuterons des tests pour voir si les variables dépendantes spécifiées dans le modèle sont disponibles dans le jeu de données à évaluer. Les résultats seront affichés ici.",
+  "label2": "Enregistrer les valeurs prédites et les statistiques de soutien.",
+  "label3": "Les prédictions et les probabilités prédites, le cas échéant, sont stockées dans le jeu de données évalué en tant que nouvelles variables avec le préfixe ci-dessous.",
+  "label4": "**Pour les variables dépendantes avec 2 niveaux, le 2ème niveau est traité comme le niveau positif. Voir Données > Niveaux de facteur > Réorganiser les niveaux manuellement pour changer l'ordre des niveaux de facteur et reconstruire le modèle.",
+  "conflevel": "Enregistrer les intervalles de confiance pour les valeurs prédites individuelles **(Valide uniquement pour les modèles linéaires (classe lm))",
+  "roctable": "Afficher le tableau ROC (**Pour les variables dépendantes binaires uniquement)",
+  "colname": "Spécifiez le préfixe du nom de colonne",
+  "label5": "**Cocher la case ci-dessus entraînera une pénalité de performance pour les grands ensembles de données.",
+  "level": "Spécifiez le niveau de confiance",
+  "confusioncheck": "Générer la matrice de confusion",
+  "help": {
+    "title": "Enregistrer des modèles",
+    "r_help": "help(save, package='base')",
+    "body": "\n    <b>Description</b></br>\n    Les modèles sélectionnés seront enregistrés dans un fichier au format de données R (.RData extension)</br>\n    Vous pouvez spécifier un nouveau fichier en entrant un nom ou en sélectionnant un fichier existant</br>\n    Si vous sélectionnez un fichier existant, il sera écrasé.</br>\n    Vous devez cliquer sur le bouton d'exécution (le bouton en forme de triangle horizontal) pour exécuter la boîte de dialogue et enregistrer les objets dans un fichier. \n    <br/>\n    <b>Utilisation</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"chemin du fichier\")\n    </code> <br/>\n    <b>Arguments</b><br/>\n    <ul>\n    <li>\n    model1, model2... : objets de modèle ajustés\n    </li>\n    <li>\n    file : nom de fichier avec chemin, les objets de modèle sélectionnés seront enregistrés dans ce fichier RData\n    </li>\n    </ul>\n    <b>Package</b></br>\n    base</br>\n    <b>Aide</b></br>\n    Pour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de boîte de dialogue ou exécutez la commande suivante help(save, package = 'base') dans la fenêtre de l'éditeur R\n    </br>\n    "
+  }
+}

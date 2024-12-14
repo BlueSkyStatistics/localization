@@ -1,0 +1,21 @@
+{
+  "title": "Diagramme de Contour",
+  "navigation": "Diagramme de Contour",
+  "x": "Variable X, spécifiez une variable numérique",
+  "y": "Variable(s) Y, spécifiez une variable numérique(s)",
+  "flip": "Inverser l'Axe",
+  "specify_a_title": "Entrez un titre",
+  "x_title": "Étiquette de l'axe X",
+  "y_title": "Étiquette de l'axe Y",
+  "Facetrow": "Ligne de Facette",
+  "Facetcolumn": "Colonne de Facette",
+  "Facetwrap": "Enveloppe de Facette",
+  "Facetscale": "Échelle de Facette",
+  "facets_lbl" : "Facettes",
+  "colorHintLabel1": "Sélectionnez une couleur (Après avoir sélectionné une couleur, cliquez en dehors du contrôle pour appliquer)",
+  "help": {
+    "title": "Diagramme de Contour",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>Description</b></br>\n            Effectuer une estimation de densité kernel 2D en utilisant MASS::kde2d() et afficher les résultats avec des contours. Cela peut être utile pour gérer le surplomb. C'est une version 2D de geom_density().</br>\n            Des facettes peuvent être créées en spécifiant une variable facteur. Vous pouvez également spécifier des thèmes, et spécifier un titre et des étiquettes pour les axes x et y​\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"Diagramme de contour pour...\")\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: Le jeu de données par défaut​\n            </li>\n            <li>\n            aes(): Générer des mappages esthétiques qui décrivent comment les variables dans les données sont mappées aux propriétés visuelles (esthétiques) des géométries.​\n            </li>\n            <li>\n            x: Une variable numérique\n            </li>\n            <li>\n            y: Une variable numérique\n            </li>\n            <li>\n            geomdensity2d: Crée le graphique\n            </li>\n            <li>\n            Labs(): Changer les étiquettes des axes et les titres de légende (C'est optionnel)​\n            </li>\n            <li>\n            facet_grid(): Disposer les panneaux dans une grille (C'est optionnel)​\n            </li>\n            <li>\n            theme_calc(): Spécifie le thème de la calculatrice (C'est optionnel)​\n            </li>\n            <li>\n            coord_flip(): Inverser l'axe (C'est optionnel)​\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aide</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            Autre: Cliquez sur le bouton Aide R pour obtenir une aide détaillée sur R. Vous pouvez également entrer help(labs), help(geom_density2d), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n    "
+  }
+}

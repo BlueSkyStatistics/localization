@@ -1,0 +1,26 @@
+{
+  "title": "平均のプロット",
+  "navigation": "平均のプロット",
+  "x": "X軸、因子変数を指定してください",
+  "y": "Y軸、この変数の平均が計算されます",
+  "fill": "グループ化、因子変数を指定してください",
+  "label1": "誤差バー",
+  "radiobuttonNo": "誤差バーなし",
+  "radioButtonSe": "標準誤差",
+  "radiobuttonSd": "標準偏差",
+  "radiobuttonCi": "信頼区間",
+  "confidenceInterval": "区間を指定してください（例：0.95）",
+  "alpha": "不透明度（0-1）",
+  "flip": "軸を反転",
+  "specify_a_title": "タイトルを入力してください",
+  "Facetrow": "ファセット行",
+  "Facetcolumn": "ファセット列",
+  "Facetwrap": "ファセットラップ",
+  "Facetscale": "ファセットスケール",
+  "facets_lbl" : "様相",
+  "help": {
+    "title": "平均のプロット",
+    "r_help": "",
+    "body": "\n            <b>説明</b></br>\n            平均のプロットは、データの異なるグループ間で平均がどのように変化するかを確認するために使用されます。グループ化はアナリストによって定義される変数です。各グループをサブグループに分割し、その平均を計算するためのオプションのグループ化レベルがあります。平均とともに、標準誤差、標準偏差、信頼区間をオプションで表示できます。ファセットは、因子変数を指定することでオプションで作成できます。</br>\n            また、テーマをオプションで指定し、x軸とy軸のタイトルとラベルを指定することもできます。</br>\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            #まず、要約のためのデータセットを作成します。平均のプロットは要約のデータセットで実行されます。</br>\n            #プロットが実行された後、要約のデータセットは削除できます。</br>\n            #testは要約のデータセットを含みます。</br>\n            test <- summarySE(Dataset2,measurevar=\"mpg\",groupvars=c(\"origin\",\"cylinder\"),na.rm=TRUE)</br>\n            #誤差バーが重なる場合、position_dodgeを使用して水平方向に移動します。左と右に0.03移動します。</br>\n            pd <- position_dodge(0.3)\n            ggplot(test,aes(x=origin,y=mpg,colour=cylinder,group=cylinder)) + geom_errorbar(aes(ymin=mpg-sd,ymax=mpg+sd),width=.1,position=pd) +geom_line(position=pd) +geom_point(position=pd) + labs(x = \"origin\",y = \"mpg\")</br>\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトのデータセット\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。\n            </li>\n            <li>\n            x: y変数のデータをグループ化するために使用される因子/カテゴリ変数。各グループの平均がプロットされます。\n            </li>\n            <li>\n            y: 数値変数\n            </li>\n            <li>\n            colour: x変数によって作成されたグループをサブグループに分割するために使用されるオプションの因子変数。指定された場合、各サブグループの平均がプロットされます。各サブグループは異なる色で表示されます。\n            </li>\n            <li>\n            group: すべてのサブグループの平均を通る線をプロットするオプションの因子変数。\n            </li>\n            <li>\n            geom_line(): 線を描画します\n            </li>\n            <li>\n            geom_errorbar(): 誤差バーをプロットします\n            </li>\n            <li>\n            labs(): 軸ラベルと凡例のタイトルを変更します（これはオプションです）\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドにレイアウトします（これはオプションです）\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します（これはオプションです）\n            </li>\n            <li>\n            coord_flip(): 軸を反転します（これはオプションです）\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;</br>\n            <b>ヘルプ</b></br>\n            help(geom_line, package='ggplot2')</br>\n            その他: 詳細なRヘルプを取得するにはRヘルプボタンをクリックしてください。help(labs)、help(geom_errorbar)、help(geom_line)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。\n    "
+  }
+}

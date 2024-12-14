@@ -1,0 +1,28 @@
+{
+  "title": "賠率比 / 相對風險，M by 2 表",
+  "navigation": "賠率比 / 相對風險，M by 2 表",
+  "outcomevarlabel": "結果變數（二元因子）",
+  "expvarlabel": "暴露/預測變數（因子）",
+  "statlabel": "統計量",
+  "orlabel": "賠率比",
+  "rrlabel": "相對風險",
+  "oresttypelabel": "賠率比估計類型",
+  "orestwaldlabel": "瓦爾德",
+  "orestfisherlabel": "費雪",
+  "orestmidplabel": "中位數p",
+  "orestsmalllabel": "小樣本調整",
+  "rresttypelabel": "相對風險估計類型",
+  "rrestwaldlabel": "瓦爾德",
+  "rrestsmalllabel": "小樣本調整",
+  "reversallabel": "類別反轉",
+  "revnonelabel": "無反轉",
+  "revexplabel": "暴露",
+  "revoutlabel": "結果",
+  "revbothlabel": "兩者",
+  "cilevellabel": "置信水平（0-1）",
+  "help": {
+    "title": "賠率比 / 相對風險，M by 2 表",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\n這用於比較一組相對於另一組的\"疾病\"概率，以賠率比（odds ratio）形式或概率比（relative risk）形式。  \n\"疾病\"的賠率定義為\"疾病\"的概率除以\"無疾病\"的概率。提供每組的結果頻率的列聯表。  \n此外，還包括每組相對於參考組的賠率比或相對風險的表格，並附有置信區間和瓦爾德卡方p值。最後，\n顯示一個p值的表格，包含中位數p精確、費雪精確和瓦爾德卡方版本，將每組與參考組進行比較。 \n<br/><br/>\n<b>結果變數：</b> 二元\"疾病\"（是/否）變數。默認情況下，排序順序中的最高類別定義為\"疾病是\"。\n<br/><br/>\n<b>暴露/預測變數：</b> 要比較的組。可以有多於2組。\n<br/><br/>\n<b>統計量：</b> 要計算的統計量\n<br/><br/>\n<b>賠率比 / 相對風險估計類型：</b> 瓦爾德（無條件最大似然）、費雪（條件最大似然）、中位數p（中位數無偏方法）或小樣本調整\n<br/><br/>\n<b>類別反轉：</b> 這控制是否反轉暴露變數類別或結果變數類別的排序。反轉暴露變數將改變賠率比的參考組。反轉結果變數將改變對應於\"疾病\"的類別。\n<br/><br/>\n<b>置信水平：</b> 置信區間的水平；默認為0.95\n<br/><br/>\n<b>所需的R包：</b> epitools\n\t\t\t"
+  }
+}

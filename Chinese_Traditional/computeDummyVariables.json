@@ -1,0 +1,20 @@
+{
+  "title": "計算虛擬變數",
+  "navigation": "虛擬編碼",
+  "label1": "輸入要進行虛擬編碼的變數。新變數的名稱格式為「變數名稱_層級名稱」。默認情況下，最常見的層級被視為參考",
+  "target": "選擇要進行虛擬編碼的變數",
+  "label2": "作為參考的層級",
+  "MostFrequent": "最常見的值",
+  "first": "第一個值",
+  "None": "保留所有層級（不建議用於統計模型）即所謂的獨熱編碼",
+  "prefix": "前綴",
+  "txt1": "輸入前綴/後綴",
+  "label3": "其他選項",
+  "chk3": "移除原始變數",
+  "chk4": "為缺失值創建虛擬變數",
+  "help": {
+    "title": "計算虛擬變數",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>描述</b></br>\n計算虛擬變數\n<br/>\n<b>用法</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n.data:\t要從中創建虛擬列的數據集對象。\n</li>\n<li>\nselect_columns:\t要創建虛擬變數的列名向量。如果為NULL（默認），則使用所有字符和因子列。\n</li>\n<li>\nremove_first_dummy: 移除每個變數的第一個虛擬變數，這樣只剩下n-1個虛擬變數。這可以避免模型中的多重共線性問題。\n</li>\n<li>\nremove_most_frequent_dummy: 移除最常見的類別，這樣只剩下n-1個虛擬變數。如果有多個最常見的類別，將移除按字母順序排列的第一個類別。\n</li>\n<li>\nignore_na: 如果為TRUE，則忽略列中的任何NA值。如果為FALSE（默認），則會為值_NA創建虛擬列，並在任何具有NA值的行中給出1。\n</li>\n<li>\nsplit: 當單元格中有多個類別時，用於拆分列的字符串。例如，如果變數是寵物，行為「貓」、「狗」和「烏龜」，則每個寵物將成為自己的虛擬列。如果一行是「貓，狗」，則拆分值為「,」，這一行將在貓和狗的虛擬列中都有值1。\n</li>\n<li>\nremove_selected_columns: 如果為TRUE（不是默認），則移除用於生成虛擬列的列。\n</li>\n<li>\n值: 一個數據框（或tibble或data.table，取決於輸入數據類型），其行數與輸入數據相同，並且原始列加上新創建的虛擬列。\n</li>\n<li>\n另請參見\ndummy_rows 用於創建虛擬行\n</li>\n<li>\n其他虛擬函數: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>示例</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# 包括年份列\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# 移除每對虛擬列的第一個虛擬變數</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>包</b></br>\nfastDummies</br>\n<b>幫助</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

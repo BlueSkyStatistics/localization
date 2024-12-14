@@ -1,0 +1,33 @@
+{
+  "title": "自動ARIMA",
+  "navigation": "自動ARIMA",
+  "destination": "予測する変数",
+  "firstObservation": "最初の観測の時間 例: 1: 1961,1を入力して1961年1月、例: 2: 1961,3を入力して1961年第3四半期、例: 3: 連続系列の場合は1を入力",
+  "frequency": "単位時間あたりの観測数 例: 1: 年間の各月に1回の観測のために12を入力、例: 2: 四半期ごとに1回の観測のために4を入力、例: 3: 連続系列の場合は1を入力。",
+  "criteria": "モデル基準",
+  "label1": "プロット",
+  "plotSeries": "系列をプロット",
+  "yaxisLabel": "Y軸ラベル",
+  "mainTitle": "メインタイトル",
+  "label2": "フィッティング値のオプション",
+  "saveFitted": "フィッティング値を保存",
+  "fittedValsDatasetName": "フィッティング値を保存するデータセット名を指定",
+  "oriVsFitted": "元の値とフィッティング値をプロット",
+  "plotResiduals": "残差をプロット",
+  "label3": "モデルを使用して予測",
+  "predict": "モデルを使用して予測を行う",
+  "periodToPredict": "予測する間隔の数を指定",
+  "confInterval": "信頼区間をパーセントで指定 例: 95は95%のため",
+  "savePredictedVals": "予測値を保存",
+  "predictedValsDatasetName": "予測値を保存するデータセット名を指定",
+  "plotPredicted": "予測値をプロット",
+  "correlogram": "相関図を生成",
+  "maxlag": "最大ラグを入力",
+  "Boxtest": "Ljung-Boxテスト",
+  "advanced_lbl" : "高度 (こうど)",
+  "help": {
+    "title": "自動ARIMA",
+    "r_help": "help(auto.arima, package=forecast)",
+    "body": "\n            <b>説明</b></br>\nAIC、AICc、またはBIC値に基づいて最適なARIMAモデルを返します。この関数は、提供された順序制約内で可能なモデルを検索します。内部的にforecastパッケージのauto.arimaを呼び出します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvars: 自動ARIMAモデルを構築するために選択された変数。\n</li>\n<li>\nstart: 最初の観測の時間は年、月または年、四半期の形式で入力する必要があります。例: (データが月単位の場合は1992,1は1992年1月、データが四半期単位の場合は1992,1は1992年第1四半期を指します。\n</li>\n<li>\nfrequency: 単位時間あたりの観測数。例: 月次の場合は年間に12回の観測があります。四半期の場合は年間に4回の観測があります。\n</li>\n<li>\nic: モデル選択に使用される情報基準。\"aic\"、\"aicc\"、または\"bic\"のいずれかでなければなりません。\n</li>\n<li>\nplotSeries: TRUEの場合、時系列プロットも生成されます。\n</li>\n<li>\nplotResiduals: TRUEの場合、残差もプロットされます。\n</li>\n<li>\npredict: TRUEの場合、予測値も生成されます。\n</li>\n<li>\nsavePredictedVals: 予測値が保存されます。\n</li>\n<li>\nPlotPredictedValues: 予測値もプロットされます。\n</li>\n<li>\ncorrelogram: TRUEの場合、相関図が生成されます。\n</li>\n<li>\nmain: プロットのメインタイトル\n</li>\n<li>\nylab: Y軸のタイトル\n</li>\n<li>\ndataset: varsが選択されたデータセットの名前。\n</li>\n</ul>\n<b>詳細</b></br>\nデフォルトの引数は、多くの時系列のモデルを迅速に推定するために設計されています。1つの時系列を分析している場合、もう少し時間をかけることができるのであれば、stepwise=FALSEおよびapproximation=FALSEに設定することをお勧めします。</br>\n非ステップワイズ選択は遅くなる可能性があり、特に季節データの場合はそうです。Hyndman & Khandakar (2008)で概説されたステップワイズアルゴリズムが使用されますが、季節差分を選択するためのデフォルトの方法は、Canova-Hansenテストではなく、季節強度の推定に基づいています（Wang、Smith & Hyndman、2006）。また、HyndmanとKhandakar（2008）で説明されたアルゴリズムには、いくつかの他の小さな変動もあります。</br>\n<b>値</b><br/>\n\"Arima\"クラスのリストで、コンポーネント:<br/>\ncoef: coefメソッドによって抽出できるAR、MA、および回帰係数のベクトル。<br/>\nsigma2: イノベーションの分散のMLE。<br/>\nvar.coef: coefの係数の推定分散行列で、vcovメソッドによって抽出できます。<br/>\nloglik: 最大化された対数尤度（差分データの）、またはそれに使用される近似。<br/>\narma: 仕様のコンパクトな形式で、AR、MA、季節AR、および季節MA係数の数、期間、および非季節および季節の差分の数を示すベクトル。<br/>\naic: 対数尤度に対応するAIC値。method = \"ML\"フィットにのみ有効。<br/>\nresiduals: フィッティングされたイノベーション。<br/>\nseries: 系列xの名前。<br/>\ncode: optimによって返される収束値。<br/>\nn.cond\t: フィッティングに使用されなかった初期観測の数。<br/>\nnobs: フィッティングに「使用された」観測の数で、nobs()を介して抽出でき、BICによって使用されます。<br/>\nmodel: フィッティングに使用されるカルマンフィルタを表すリスト。KalmanLikeを参照してください。<br/>\n<b>パッケージ</b></br>\nforecast</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(auto.arima, package=forecast)\n\t\t\t"
+  }
+}

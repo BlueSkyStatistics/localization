@@ -1,0 +1,45 @@
+{  
+	"CSV_Options": "CSVオプション",
+	"CSVopt_first_row_header_chk" : "CSV/TXT ファイルの最初の行にはヘッダーが含まれています",
+	"CSVopt_field_sep_label": "フィールド区切り文字を指定:",
+	"CSVopt_commas_radio": "カンマ (,)",
+	"CSVopt_semicolons_radio": "セミコロン (;)",
+	"CSVopt_tabs_radio": "タブ",
+	"CSVopt_whitespace_radio": "空白",
+	"CSVopt_other_radio": "その他,",
+	"CSVopt_specify_tbox": "指定",
+
+	"CSVopt_deci_sep_label": "小数点文字を指定:",
+	"CSVopt_decimal_radio": "小数点 (.) [例: 1.234]",
+	"CSVopt_comma_radio": "カンマ (,) [例: 1,234]",
+	"CSVopt_grp_char_label": "オプションでグループ化文字を指定してください [例: 1,000,000]。デフォルトのカンマは入力不要です:",
+
+	"CSVopt_ok_btn": "OK",
+	"CSVopt_cancel_btn": "キャンセル",
+
+	"OpenWrkSheet": "ワークシートを開く",
+	"OpnWrkSht_label": "列名にはアルファベット、数字、アンダースコアが使用できます。それ以外のサポートされていない文字はアンダースコアに置き換えられます。変数グリッドで列名を変更できます。",
+	"OpnWrkSht_first_row_header_chk": "最初の行に列ヘッダーが含まれる",
+	"OpnWrkSht_dropdown": "開くワークシートを選択",
+	"OpnWrkSht_open_btn": "開く",
+
+	"Save_project_title": "プロジェクトを保存",
+	"Save_prj_label": "現在のプロジェクトを保存",
+	"Save_prj_name": "プロジェクト名を入力:",
+	"Save_prj_options": "保存オプション:",
+	"Save_prj_defaultDir_radio": "プロジェクトをデフォルトのプロジェクトディレクトリに保存:",
+	"Save_prj_customDir_radio": "プロジェクトを指定された場所に保存",
+	"Save_prj_customDir_label": "プロジェクトを保存する場所を選択してください:",
+	"Save_prj_chooseDir_btn": "フォルダーを選択",
+	"Save_prj_save_btn": "保存",
+	"Save_prj_dontsave_btn": "保存しない",
+	"Save_prj_cancelsave_btn": "キャンセル",
+	
+	"rerun_missingDSTitle": "データセットが利用できません",
+	"rerun_missingDSLbl": " 以下のデータセットはデータグリッドで開かれていません。それらを開いて再試行するか、「ファイル > 出力を再実行」を使用して別のデータセット名で実行してください。",
+	"rerun_missingDScancelBtn": "キャンセル",	
+	"reproducibilityErrMsg" : "古いバージョンで作成された出力ファイルでは再現性がサポートされていません。出力ファイルはバージョン10.3.7以降で作成する必要があります。",
+	"reproducibilityErrTitle": "サポートされていません",	
+	
+	"closeDSsaveWarn" : "このバージョンのBlueSky Statisticsは、変更を保存したかどうかを追跡しません。変更を保存していない場合は、保存してください。そうしないと、変更が失われます。"
+}

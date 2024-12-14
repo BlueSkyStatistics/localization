@@ -1,0 +1,29 @@
+{
+  "title": "属性合意分析",
+  "navigation": "属性合意",
+  "variablePartSelcted": "サンプル/部品の変数を選択してください",
+  "variableOpSelcted": "評価者/オペレーターの変数を選択してください",
+  "variableRespSelcted": "属性/応答の変数を選択してください",
+  "variableRefSelcted": "(オプション) 参照/標準応答の変数を選択してください",
+  "variableTrialSelcted": "(オプション) 試行/複製番号の変数を選択してください",
+  "alpha": "信頼区間 (アルファ) は 0 から 1 の間",
+  "misclassificationStatChk": "精度と誤分類率を表示",
+  "summaryDisagreementChk": "評価者の不一致と標準の要約を表示",
+  "CohenKappaChk": "評価者/オペレーター間のコーエンのカッパ統計を計算",
+  "CohenKappaWeight": "コーエンのカッパに適用される重み",
+  "label1": "属性合意研究報告のヘッダー詳細",
+  "gageName": "ゲージ名",
+  "dateStudy": "研究の日付",
+  "partDescription": "部品の説明",
+  "machineName": "機械名",
+  "reportedBy": "報告者",
+  "operatorNames": "オペレーターの名前",
+  "testLocation": "テスト場所",
+  "miscellaneous": "その他",
+  "rowsTobeUsed": "すべての行を使用する場合は空白のままにしてください。そうでない場合は、分析に使用する行を指定してください (例: 1:25 または 1,4,5,7:12 と指定)",
+  "help": {
+    "title": "属性合意分析",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t属性合意分析を実行するための関数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(kappam.fleiss, package = irr)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、サンプルデータセットファイル attributemsaAB.xlsx を使用できます。\n\t\t\t\tオペレーター A と B のそれぞれが 20 の観察を P と F の評価で 2 回繰り返します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tサンプルデータセットファイル attributemsaABCordered.RData を使用して、3 人のオペレーター A、B、C がそれぞれ 10 の観察を \"ordered\" (順序) 評価で 2 回繰り返すこともできます。\n\t\t\t\t不一致、やや不一致、中立、やや同意、同意として。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tファイルオープンメニューでデータグリッドにファイルを開いてください\n\t\t\t"
+  }
+}

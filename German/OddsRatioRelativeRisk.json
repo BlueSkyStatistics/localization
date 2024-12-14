@@ -1,0 +1,28 @@
+{
+  "title": "Odds Ratios / Relative Risks, M by 2 Tabelle",
+  "navigation": "Odds Ratios / Relative Risks, M by 2 Tabelle",
+  "outcomevarlabel": "Ergebnisvariable (Binärer Faktor)",
+  "expvarlabel": "Expositions-/Prädiktorvariable (Faktor)",
+  "statlabel": "Statistik",
+  "orlabel": "Odds Ratios",
+  "rrlabel": "Relative Risiken",
+  "oresttypelabel": "Schätztyp für Odds Ratio",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "Mid-p",
+  "orestsmalllabel": "Kleinprobenanpassung",
+  "rresttypelabel": "Schätztyp für Relative Risiken",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "Kleinprobenanpassung",
+  "reversallabel": "Kategoriewendung",
+  "revnonelabel": "Keine Wendung",
+  "revexplabel": "Exposition",
+  "revoutlabel": "Ergebnis",
+  "revbothlabel": "Beides",
+  "cilevellabel": "Konfidenzniveau (0-1)",
+  "help": {
+    "title": "Odds Ratios / Relative Risks, M by 2 Tabelle",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\nDies wird verwendet, um die Wahrscheinlichkeiten, eine \"Krankheit\" für eine Gruppe im Vergleich zu einer anderen zu haben, in einem Verhältnis von Odds (Odds Ratio) oder Wahrscheinlichkeitsverhältnis (Relative Risk) zu vergleichen.  \nDie Odds für \"Krankheit\" wird definiert als die Wahrscheinlichkeit von \"Krankheit\" geteilt durch die Wahrscheinlichkeit von \"keine Krankheit\". Eine Kontingenztabelle der Ergebnisfrequenzen in jeder Gruppe wird bereitgestellt.  \nDarüber hinaus wird eine Tabelle der Odds Ratios oder relativen Risiken für jede Gruppe im Vergleich zur Referenzgruppe mit Konfidenzintervallen und einem Wald Chi-Quadrat p-Wert bereitgestellt.  Schließlich wird \neine Tabelle der p-Werte mit Mid-p genau, Fishers genau und Wald Chi-Quadrat-Versionen angezeigt, die jede Gruppe mit der Referenzgruppe vergleichen. \n<br/><br/>\n<b>Ergebnisvariable:</b> Binäre \"Krankheit\" (ja/nein) Variable von Interesse.  Standardmäßig wird die höchste Kategorie in der Sortierreihenfolge als \"Krankheit ja\" definiert.\n<br/><br/>\n<b>Expositions-/Prädiktorvariable:</b> Gruppen zum Vergleichen.  Kann mehr als 2 Gruppen haben.\n<br/><br/>\n<b>Statistik:</b> Welche Statistik berechnet werden soll\n<br/><br/>\n<b>Odds Ratio / Relative Risk Schätztyp:</b> Wald (unbedingte maximale Wahrscheinlichkeit), Fisher (bedingte maximale Wahrscheinlichkeit), Mid-p (medianunverzerrte Methode) oder Kleinprobenanpassung\n<br/><br/>\n<b>Kategoriewendung:</b>  Dies steuert, ob die Reihenfolge der Kategorien der Expositionsvariablen oder der Ergebnisvariablen umgekehrt werden soll oder nicht.  Die Umkehrung der Expositionsvariable ändert die Referenzgruppe für die Odds Ratios.  Die Umkehrung der Ergebnisvariable ändert die Kategorie, die \"Krankheit\" entspricht.\n<br/><br/>\n<b>Konfidenzniveau:</b> Niveau für die Konfidenzintervalle; Standard ist 0,95\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> epitools\n\t\t\t"
+  }
+}

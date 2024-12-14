@@ -1,0 +1,13 @@
+{
+  "title": "Variabilă Statistică Cumulativă",
+  "navigation": "Variabilă Statistică Cumulativă",
+  "varname": "Numele Noii Variabile (fără spații)",
+  "statvar": "Variabilă pentru Statistică Cumulativă",
+  "groupbyvars": "Variabile pentru Grupare",
+  "func": "Statistică Cumulativă",
+  "help": {
+    "title": "Variabilă Statistică Cumulativă",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>Statistici Cumulative</b>\n<br/><br/>\nAceastă fereastră de dialog creează o nouă variabilă care stochează valoarea cumulativă a unei statistici alese pe măsură ce parcurgi rândurile în ordinea curentă a setului de date. Poți calcula opțional această valoare cumulativă în cadrul unuia sau mai multor grupuri.\n<br/><br/>\n\n<b>Numele Noii Variabile:</b> Numele variabilei care va stoca valorile cumulative\n<br/><br/>\n\n<b>Variabilă pentru Statistică Cumulativă:</b> Variabilă pentru care vor fi calculate valorile cumulative. Trebuie să fie numerică.\n<br/><br/>\n\n<b>Variabile pentru Grupare:</b> Variabile opționale pentru a calcula statistica cumulativă în cadrul acestora.\n<br/><br/>\n\n<b>Statistică Cumulativă:</b> Ce statistică va fi utilizată pentru statistica cumulativă.\n<br/><br/>\n<ul>\n<li>cumsum: sumă cumulativă</li>\n<li>cummin: minim cumulativ</li>\n<li>cummax: maxim cumulativ</li>\n<li>cummean: medie cumulativă</li>\n<li>cummedian: mediană cumulativă</li>\n<li>cumgmean: medie geometrică cumulativă</li>\n<li>cumhmean: medie armonică cumulativă</li>\n<li>cumvar: variație cumulativă</li>\n</ul>\n<br/><br/>\n<b>Pachete R Necesare:</b> cumstats, dplyr\n\t\t\t"
+  }
+}

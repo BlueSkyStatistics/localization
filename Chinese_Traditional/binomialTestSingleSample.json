@@ -1,0 +1,16 @@
+{
+  "title": "單樣本精確二項檢定",
+  "navigation": "二項檢定",
+  "tvarbox1": "只有 2 個層級的因子（一）",
+  "label1": "替代假設",
+  "test1": "母體平均數 != mu",
+  "test2": "母體平均數 > mu",
+  "test3": "母體平均數 < mu",
+  "txtbox1": "信心水準",
+  "txtbox2": "虛無假設（mu 在 0-1 範圍內）",
+  "help": {
+    "title": "精確二項檢定",
+    "r_help": "help(binom.test, package=stats)",
+    "body": "\n                <b>描述</b></br>\n執行對伯努利實驗中成功機率的簡單虛無假設的精確檢定。\n<br/>\n<b>用法</b>\n<br/>\n<code>\nbinom.test(x, n, p = 0.5,<br/>\n           alternative = c(\"two.sided\", \"less\", \"greater\"),<br/>\n           conf.level = 0.95)<br/>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 成功的次數，或長度為 2 的向量，分別給出成功和失敗的次數。\n</li>\n<li>\nn: 試驗的次數；如果 x 的長度為 2，則忽略。\n</li>\n<li>\np: 假設的成功機率。\n</li>\n<li>\nalternative: 表示替代假設，必須是 \"two.sided\"、\"greater\" 或 \"less\" 之一。您可以僅指定首字母。\n</li>\n<li>\nconf.level: 返回的信賴區間的信心水準。\n</li>\n</ul>\n<b>詳細信息</b></br>\n信賴區間是通過 Clopper 和 Pearson (1934) 首次給出的程序獲得的。這保證了信心水準至少為 conf.level，但通常不會給出最短長度的信賴區間。<br/>\n<b>值</b><br/>\n一個類別為 \"htest\" 的列表，包含以下組件：<br/>\nstatistic: 成功的次數。<br/>\nparameter: 試驗的次數。<br/>\np.value: 檢定的 p 值。<br/>\nconf.int: 成功機率的信賴區間。<br/>\nestimate: 成功的估計機率。<br/>\nnull.value: 在虛無假設下的成功機率 p。<br/>\nalternative: 描述替代假設的字符字符串。<br/>\nmethod: 字符串 \"精確二項檢定\"。<br/>\ndata.name: 給出數據名稱的字符字符串。<br/>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\nhelp(binom.test, package=stats)\n    "
+  }
+}

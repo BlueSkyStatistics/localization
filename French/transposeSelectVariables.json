@@ -1,0 +1,11 @@
+{
+  "title": "Transposer le jeu de données, sélectionner des variables",
+  "navigation": "Sélectionner des variables",
+  "transposedDataset": "Entrez un nom pour le jeu de données transposé",
+  "destination": "Sélectionnez les variables à transposer",
+  "help": {
+    "title": "Transposer les variables sélectionnées",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Description</b></br>\nInvoque la fonction transpose dans le package de base qui transpose les variables sélectionnées et stocke les résultats dans le nouveau jeu de données. Vous devez spécifier le nom du jeu de données qui stocke le jeu de données transposé. Le nouveau jeu de données transposé est affiché dans la grille.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : est une matrice ou un dataframe\n</li>\n</ul>\n<b>Valeur</b><br/>\nUne matrice, avec dim et dimnames construites de manière appropriée à partir de celles de x, et d'autres attributs sauf les noms copiés. <br/>\n<b>Package</b></br>\nbase<br/>\n<b>Aide</b></br>\nhelp(t, package='base')\n"
+  }
+}

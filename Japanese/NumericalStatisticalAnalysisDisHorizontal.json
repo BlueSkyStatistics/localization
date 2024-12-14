@@ -1,0 +1,14 @@
+{
+  "title": "数値統計、summarizeを使用",
+  "navigation": "数値要約、summarizeを使用（レガシー）",
+  "tvarbox1": "選択した変数",
+  "tvarbox2": "グループ化",
+  "label1": "表示オプション",
+  "horizontal": "横表示",
+  "vertical": "縦表示",
+  "help": {
+    "title": "数値統計、summarizeを使用",
+    "r_help": "",
+    "body": "\n<b>説明</b></br>\nターゲット変数の各グループに対して、以下の数値統計を出力します。ターゲット変数は、1つ以上の因子または数値変数でオプションとしてグループ化できます。ターゲット変数またはターゲット変数がグループ化されている各グループについて、以下の情報を印刷します：最小値、1st四分位数（25%）、最大値、平均、中央値、3rd四分位数（75%）、合計、分散、標準偏差、標準誤差、歪度、尖度\n<br/>\n<b>使用法</b>\n<br/>\n<code> \n##以下の関数は各ターゲット変数に対して実行され、結果のデータフレームは転置されて結合されます<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndataset1: これはデータセットです\n</li>\n<li>\ngroup_by: ターゲット変数を1つ以上の因子または数値変数でオプションとしてグループ化します\n</li>\n<li>\nsummarize: ターゲット変数またはターゲット変数のグループ（group_byで指定された場合）を、指定された要約関数（平均、中央値、最小値など）で要約します\n</li>\n</ul>\n<b>値</b></br>\n各変数に対する各関数の結果を示す「data.frame」クラスのオブジェクトです。</br>\n<b>パッケージ</b></br>\ncaret</br>\n<b>ヘルプ</b></br>\nRヘルプは、複数のR関数を使用してカスタムコードを記述しているため、利用できません。コードを確認する必要がある場合は、「<>」ボタンをクリックしてください。</br>\n    "
+  }
+}

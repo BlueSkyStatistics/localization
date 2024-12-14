@@ -1,0 +1,28 @@
+{
+  "title": "P-P 图",
+  "navigation": "P-P",
+  "alpha": "不透明度 (0-1)",
+  "x": "X 轴，指定一个数值变量",
+  "y": "形状，指定一个因子变量",
+  "color": "颜色，指定一个因子变量",
+  "referenceline": "参考线",
+  "band": "显示带",
+  "detrend": "去趋势",
+  "flip": "翻转轴",
+  "distribution": "选择一个分布",
+  "x_title": "X 轴标签",
+  "y_title": "Y 轴标签",
+  "label1": "分布参数，例如对于正态分布，分布参数可以是 mean=2, sd=2，因此输入 mean=2, sd=2。对于指数分布，参数可以是 rate=2，因此输入 rate=2。",
+  "dparams": "可选输入分布参数",
+  "specify_a_title": "输入标题",
+  "Facetrow": "分面行",
+  "Facetcolumn": "分面列",
+  "Facetwrap": "分面包裹",
+  "Facetscale": "分面比例",
+  "facets_lbl" : "面",
+  "help": {
+    "title": "P-P 图",
+    "r_help": "help(stat_pp_point,package='qqplotr')",
+    "body": "\n            <b>描述</b></br>\n            P-P 图（概率-概率图或百分比-百分比图或 P 值图）是一个概率图，用于评估两个数据集的相似程度，它将两个累积分布函数相互绘制。默认情况下，我们将所选变量的累积分布与正态分布进行比较，但您可以与其他多个分布进行比较，包括 beta、cauchy、chisq、exp、f、gamma... 您还可以指定与所比较的分布相关的分布参数。单击主对话框上的选项按钮以选择分布并指定分布参数。您可以选择一个因子变量来对所选变量进行分组。在这种情况下，将为每个组绘制单独的 P-P 图。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data = datasetname,mapping= aes(sample = var1 ,shape = var2 ))  +stat_pp_band() + stat_pp_line() + stat_pp_point()  +labs(x = \"概率点\",y = \"累积概率\",title =paste(\"变量的 PP 图 \",var1,sep=''))+facet_grid(var3 ~.)\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            data: 默认数据集​\n            </li>\n            <li>\n            aes(): 生成美学映射，描述数据中的变量如何映射到几何体的视觉属性（美学）。​\n            </li>\n            <li>\n            sample: 要绘制 P-P 图的数值变量\n            </li>\n            <li>\n            stat_pp_point: 绘制累积概率与概率点的关系。累积概率函数是用样本数据构建的，然后在每个概率点进行评估。\n            </li>\n            <li>\n            stat_pp_line: 绘制参考身份线 (x=y)。\n            </li>\n            <li>\n            stat_pp_band: 绘制置信带。目前，仅提供引导版本（\"boot\"）。\n            </li>\n            <li>\n            shape: 一个可选的因子变量，用于对分配给样本的值进行分组。根据因子变量的水平，为每个组创建一个单独的 P-P 图​。每个组由不同的形状表示\n            </li>\n            <li>\n            Labs(): 更改轴标签和图例标题（这是可选的）​\n            </li>\n            <li>\n            facet_grid(): 在网格中布局面板（这是可选的）​。有关更多详细信息，请参见 help(facet_grid)。\n            </li>\n            <li>  ​\n            coord_flip(): 翻转轴（这是可选的）​\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>帮助</b></br>\n            help(stat_pp_point, package='qqplotr')</br>\n            其他：单击 R 帮助按钮以获取详细的 R 帮助。您还可以输入 help(labs)、help(stat_pp_point)、help(aes)、help(facet_grid)、help(coord_flip)</br>​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n        "
+  }
+}

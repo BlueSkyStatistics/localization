@@ -1,0 +1,10 @@
+{
+  "title": "レベルの表示",
+  "navigation": "表示",
+  "target": "表示するレベルの因子変数",
+  "help": {
+    "title": "レベルの表示",
+    "r_help": "help(map,package=purrr)",
+    "body": "\n<b>説明</b></br>\n選択したデータセットの変数に対して、基本のlevels関数を適用します。ユーザーはdplyrのselect関数を使用して、変数をmap関数にパイプし、各変数にlevels関数を適用します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nデータセット %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvar1,var2: レベルを表示するためのデータセット内の変数\n</li>\n<li>\nデータセット: 変数var1、var2を含むデータセット\n</li>\n</ul>\n<b>値</b><br/>\n選択した変数のレベルが表示されます<br/>\n<b>パッケージ</b></br>\npurrr, dplyr</br>\n<b>ヘルプ</b></br>\nhelp(map,package=purrr)\n"
+  }
+}

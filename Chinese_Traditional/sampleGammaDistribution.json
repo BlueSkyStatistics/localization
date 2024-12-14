@@ -1,0 +1,19 @@
+{
+  "title": "伽瑪分佈的樣本",
+  "navigation": "伽瑪分佈的樣本",
+  "entrdsname": "輸入數據集名稱",
+  "shape": "形狀",
+  "scale": "比例（逆速率）",
+  "lblnoofsamples": "樣本數（行）",
+  "lblnoofobsv": "觀察數（列）",
+  "lblseed": "隨機種子",
+  "lblAddtoDS": "添加到數據集",
+  "chklbl1": "樣本均值",
+  "chklbl2": "樣本總和",
+  "chklbl3": "樣本標準差",
+  "help": {
+    "title": "伽瑪分佈的樣本",
+    "r_help": "help(rgamma, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            伽瑪分佈的密度、分佈函數、分位數函數和隨機生成，參數為形狀和比例。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dgamma(x, shape, rate = 1, scale = 1/rate, log = FALSE)\n                <br/>\n                pgamma(q, shape, rate = 1, scale = 1/rate, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qgamma(p, shape, rate = 1, scale = 1/rate, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rgamma(n, shape, rate = 1, scale = 1/rate)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li></li>\n                <li>x, q : 分位數的向量。</li>\n                \n                \n                <li>p : 機率的向量。</li>\n                \n                \n                <li>n : 觀察數。如果長度(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>rate : 指定比例的另一種方式。</li>\n                \n                \n                <li>shape, scale : 形狀和比例參數。必須為正，比例必須嚴格為正。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則返回機率/密度p的對數。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（默認），則機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            詳情\n            <br/>\n            如果省略比例，則假設默認值為1。\n            <br/>\n            參數為shape = a和scale = s的伽瑪分佈的密度為\n            <br/>\n            <code>f(x)= 1/(s^a Gamma(a)) x^(a-1) e^-(x/s)</code>\n            <br/>\n            對於x ≥ 0，a > 0和s > 0。（這裡Gamma(a)是R的gamma()實現的函數，並在其幫助中定義。注意，a = 0對應於所有質量都在0點的平凡分佈。）\n            <br/>\n            均值和方差為<code>E(X) = a*s和Var(X) = a*s^2。</code>\n            <br/>\n            累積危險<code>H(t) = - log(1 - F(t))</code>為\n            <br/>\n            -pgamma(t, ..., lower = FALSE, log = TRUE)\n            <br/>\n            注意，對於較小的形狀值（和適度的比例），伽瑪分佈的大部分質量在接近零的x值上，這些值在計算機算術中將表示為零。因此，rgamma可能會返回表示為零的值。（對於非常大的比例值也會發生這種情況，因為實際生成是針對scale = 1進行的。）\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dgamma給出密度，pgamma給出分佈函數，qgamma給出分位數函數，rgamma生成隨機偏差。\n            <br/>\n            無效的參數將導致返回值NaN，並發出警告。\n            <br/>\n            結果的長度由rgamma的n決定，並且是其他函數的數值參數的最大長度。\n            <br/>\n            除n以外的數值參數將回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            S（Becker等，1988）參數化是通過形狀和速率：S沒有比例參數。提供比例和速率是錯誤的。\n            <br/>\n            pgamma與不完全伽瑪函數密切相關。根據Abramowitz和Stegun 6.5.1（以及《數值食譜》）的定義，這是\n            <br/>\n            <code>P(a,x) = 1/Gamma(a) integral_0^x t^(a-1) exp(-t) dt</code>\n            <br/>\n            P(a, x)是pgamma(x, a)。其他作者（例如Karl Pearson在他的1922年表中）省略了歸一化因子，定義不完全伽瑪函數γ(a,x)為gamma(a,x) = integral_0^x t^(a-1) exp(-t) dt，即pgamma(x, a) * gamma(a)。還有其他人使用“上”不完全伽瑪函數，\n            <br/>\n            <code>Gamma(a,x) = integral_x^Inf t^(a-1) exp(-t) dt,</code>\n            <br/>\n            可以通過pgamma(x, a, lower = FALSE) * gamma(a)計算。\n            <br/>\n            但是請注意，pgamma(x, a, ..)目前要求a > 0，而不完全伽瑪函數對於負a也定義。在這種情況下，您可以使用來自gsl包的gamma_inc(a,x)（對於Γ(a,x)）。\n            <br/>\n            另請參見https://en.wikipedia.org/wiki/Incomplete_gamma_function，或http://dlmf.nist.gov/8.2#i.            \n        "
+  }
+}

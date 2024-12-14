@@ -1,0 +1,26 @@
+{
+  "title": "柯西分布图",
+  "navigation": "柯西分布图",
+  "location": "位置",
+  "scale": "尺度",
+  "pdenfun": "绘制密度函数",
+  "pdstfun": "绘制分布函数",
+  "lblregions": "可选地通过指定密度函数下的区域",
+  "xvals": "x值",
+  "quantiles": "分位数",
+  "lblRegFill": "要填充的区域（指定一个或两个，或留空）",
+  "lblreg1": "区域 1 :",
+  "lblreg2": "区域 2 :",
+  "lblregfrm": "从",
+  "lblregto": "到",
+  "lblregcol": "颜色",
+  "lblLegPos": "图例位置",
+  "toprt": "右上角",
+  "toplt": "左上角",
+  "topmid": "顶部中心",
+  "help": {
+    "title": "柯西分布图",
+    "r_help": "help(qcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            柯西分布的密度、分布函数、分位数函数和随机生成，具有位置参数 location 和尺度参数 scale。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数向量。</li>\n                \n                \n                <li>p : 概率向量。</li>\n                \n                \n                <li>n : 观察数量。如果 length(n) > 1，则长度被视为所需的数量。</li>\n                \n                \n                <li>location, scale : 位置和尺度参数。</li>\n                \n                \n                <li>log, log.p : 逻辑；如果为 TRUE，则概率 p 以 log(p) 给出。</li>\n                \n                \n                <li>lower.tail : 逻辑；如果为 TRUE（默认），概率为 P[X ≤ x]，否则为 P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>详细信息</b>\n            <br/>\n            如果未指定位置或尺度，则假定默认值为 0 和 1。\n            <br/>\n            具有位置 l 和尺度 s 的柯西分布的密度为\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            对于所有 x。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dcauchy、pcauchy 和 qcauchy 分别是柯西分布的密度、分布函数和分位数函数。rcauchy 生成来自柯西的随机偏差。\n            <br/>\n            结果的长度由 n 决定，rcauchy 的长度为其他函数的数值参数的最大长度。\n            <br/>\n            除 n 之外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n            <br/>\n            <b>来源</b>\n            <br/>\n            dcauchy、pcauchy 和 qcauchy 都是从数值稳定版本的定义计算得出的。\n            <br/>\n            rcauchy 使用反演。            \n      "
+  }
+}

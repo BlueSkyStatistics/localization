@@ -1,0 +1,46 @@
+{  
+	"CSV_Options": "CSV-Optionen",
+	"CSVopt_first_row_header_chk" : "Die erste Zeile der CSV/TXT-Datei enthält Kopfzeilen",
+	"CSVopt_field_sep_label": "Feldtrennzeichen angeben:",
+	"CSVopt_commas_radio": "Kommas (,)",
+	"CSVopt_semicolons_radio": "Semikolons (;)",
+	"CSVopt_tabs_radio": "Tabulatoren",
+	"CSVopt_whitespace_radio": "Leerzeichen",
+	"CSVopt_other_radio": "Andere,",
+	"CSVopt_specify_tbox": "Angeben",
+
+	"CSVopt_deci_sep_label": "Dezimalzeichen angeben:",
+	"CSVopt_decimal_radio": "Dezimalpunkt (.) [z. B. 1.234]",
+	"CSVopt_comma_radio": "Komma (,) [z. B. 1,234]",
+	"CSVopt_grp_char_label": "Optional ein Gruppierungszeichen angeben [z. B. 1.000.000]. Standard-Komma muss nicht eingegeben werden:",
+
+	"CSVopt_ok_btn": "OK",
+	"CSVopt_cancel_btn": "Abbrechen",
+
+	"OpenWrkSheet": "Arbeitsblatt öffnen",
+	"OpnWrkSht_label": "Für Spaltennamen unterstützen wir Buchstaben, Zahlen und Unterstriche. Alle anderen nicht unterstützten Zeichen werden durch einen Unterstrich ersetzt. Sie können die Spalte im Variablenraster umbenennen.",
+	"OpnWrkSht_first_row_header_chk": "Erste Zeile enthält Spaltenüberschriften",
+	"OpnWrkSht_dropdown": "Arbeitsblatt zum Öffnen auswählen",
+	"OpnWrkSht_open_btn": "Öffnen",
+
+	"Save_project_title": "Projekt speichern",
+	"Save_prj_label": "Aktuelles Projekt speichern",
+	"Save_prj_name": "Projektnamen eingeben:",
+	"Save_prj_options": "Speicheroptionen:",
+	"Save_prj_defaultDir_radio": "Projekt im Standardprojektverzeichnis speichern:",
+	"Save_prj_customDir_radio": "Projekt an einem bestimmten Ort speichern",
+	"Save_prj_customDir_label": "Wählen Sie einen Speicherort für das Projekt aus:",
+	"Save_prj_chooseDir_btn": "Ordner auswählen",
+	"Save_prj_save_btn": "Speichern",
+	"Save_prj_dontsave_btn": "Nicht speichern",
+	"Save_prj_cancelsave_btn": "Abbrechen",
+	
+	"rerun_missingDSTitle": "Datensatz/Daten nicht verfügbar",
+	"rerun_missingDSLbl": "Die folgenden Datensätze sind im Datengitter nicht geöffnet. Öffnen Sie sie und versuchen Sie es erneut, oder verwenden Sie 'Datei > Ausgabe erneut ausführen', um mit anderen Datensatznamen zu arbeiten.",
+	"rerun_missingDScancelBtn": "Abbrechen",	
+	"reproducibilityErrMsg" : "Reproduzierbarkeit wird bei Ausgabedateien, die mit alten Versionen erstellt wurden, nicht unterstützt. Ausgabedateien müssen mit Version 10.3.7 oder höher erstellt werden.",
+	"reproducibilityErrTitle": "Nicht unterstützt",	
+	
+	"closeDSsaveWarn" : "Diese Version von BlueSky Statistics verfolgt nicht, ob Sie Ihre Änderungen gespeichert haben. Wenn Sie Ihre Änderungen nicht gespeichert haben, tun Sie dies bitte, sonst gehen sie verloren."
+	
+}

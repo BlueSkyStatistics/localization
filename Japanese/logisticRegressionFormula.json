@@ -1,0 +1,14 @@
+{
+  "title": "ロジスティック回帰",
+  "navigation": "ロジスティック、上級",
+  "modelname": "モデル名を入力してください",
+  "dependent": "従属変数",
+  "independent": "独立変数",
+  "generateplotchk": "残差とフィッティング、正規Q-Q、スケール-ロケーション、残差とレバレッジのプロット",
+  "destination2": "重み付きの変数を指定してください",
+  "help": {
+    "title": "ロジスティック回帰",
+    "r_help": "help(glm, package ='stats')",
+    "body": "\n<b>説明</b></br>\n数式ビルダーを使用してバイナリロジスティック回帰モデルを構築します。 glm関数を使用し、パラメータfamily =binomial(link='logit')を渡します。モデルの要約、分散分析表、McFadden R2を表示します。<br/>\nモデルをスコアリングするには、メインアプリケーション画面の右上隅に作成されたモデルを選択し、スコアボタンを選択します。混同行列とROC曲線を表示することもできます。<br/>\nデフォルトのモデル名はLogistic1で、変更できます。<br/><br/>\n注意: 重みを含む変数を指定する場合、モデルを構築するためにna.excludeオプションを使用しているため、すべてのNA値は自動的に従属変数と独立変数から削除されます。<br/>\nこの場合、NA値は重み変数から自動的に削除されないため、不一致が発生する可能性があります。<br/>\nこの状況では、変数の長さが異なるというエラーが表示されます（（weights）に対して見つかりました）。<br/>\nこのエラーに対処するには、Variables>Missing Values>Remove NAsに移動し、従属変数、独立変数、および重み変数を選択して欠損値を削除し、モデルを再構築します。<br/>\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nmodelname <- glm(dependentVariable ~ var1+var2+var3...,family =binomial(link='logit'),data=datasetName)\n#モデルの要約<br/>\nsummary(modelname)<br/>\n#Anovaテーブルの表示<br/>\nanova(modelname)<br/>\n#残差とフィッティング、正規Q-Q、スケール-ロケーション、残差とレバレッジのプロット<br/>\nplot(modelname)<br/>\n#McFadden R2<br/>\npR2(Logistic1)<br/>\n#オッズ比と95%信頼区間<br/>\nexp(cbind(OR=coef(Logistic1), confint(Logistic1,level=0.95)))<br/>\n#モデルをプロット<br/>\nplot(Logistic1)<br/>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndepVar: 従属変数の名前。データセットcarsがあり、予測したい変数classがある場合（従属変数はclass）classを入力します。\n</li>\n<li>\nindepVars: 独立変数の名前を+で区切って指定します。データセットcarsがあり、独立変数horsepower、enginesizeがある場合、horsepower+enginesizeを指定します。カテゴリ変数は自動的にダミーコーディングされます。​\n</li>\n<li>\ndata: データフレームの名前。データフレームやデータセット（例：csv、Excelファイル、SASファイル）をBlueSky Statisticsで開くと、Dataset1、Dataset2、Dataset3と名付けられます。したがって、data=Dataset1​と入力します。\n</li>\n</ul>\n<b>パッケージ</b></br>\nglm</br>\n<b>ヘルプ</b></br>\nhelp(glm, package ='stats')</br>\n<b>参考文献</b></br>\nhttps://datascienceplus.com/perform-logistic-regression-in-r/</br>\nhttps://www.machinelearningplus.com/machine-learning/logistic-regression-tutorial-examples-r/</br>\n<b>その他</b></br>\n詳細なRヘルプを取得するには、Rヘルプアイコンをクリックしてください​</br>\n\t\t\t"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "多維尺度分析",
+  "navigation": "多維尺度分析",
+  "betRows": "行之間",
+  "betVariables": "變數之間",
+  "textSize": "文字大小",
+  "textPos": "文字位置",
+  "destination": "選擇變數",
+  "maxDimensions": "最大維度",
+  "label1": "距離矩陣",
+  "computationMethod": "計算方法",
+  "power": "明科斯基距離的冪次",
+  "dispDist": "顯示距離矩陣",
+  "saveDims": "將維度保存到新數據集",
+  "datasetName": "可選擇輸入數據集名稱以保存維度",
+  "label2": "進階選項",
+  "scalingMethod": "縮放方法",
+  "maxIter": "最大迭代次數 (*不適用於經典度量)",
+  "plotResults": "繪製結果",
+  "help": {
+    "title": "多維尺度分析",
+    "r_help": "help(cmdscale, package=stats)",
+    "body": "\n<b>描述</b></br>\n有不同類型的MDS算法，包括</br>\n<b>經典多維尺度分析</b></br>\n儘可能保留點之間的原始距離度量。即MDS圖上的擬合距離和原始距離在同一度量中。經典MDS屬於所謂的度量多維尺度分析類別。</br>\n它也被稱為主坐標分析。適用於定量數據。</br></br>\n<b>非度量多維尺度分析</b></br>\n它也被稱為序數MDS。在這裡，距離值的度量並不重要或有意義，而是它與其他對象對之間距離的關係。</br>\n序數MDS構建的擬合距離與原始距離的排名順序相同。例如，如果對象1和5之間的距離在原始距離數據中排名第五，那麼它們在MDS配置中也應排名第五。</br>\n適用於定性數據。</br>\n我們使用以下R函數</br>\ncmdscale() [stats package]: 計算經典（度量）多維尺度分析。</br>\nisoMDS() [MASS package]: 計算克魯斯卡爾的非度量多維尺度分析（非度量MDS的一種形式）。</br>\nsammon() [MASS package]: 計算薩門的非線性映射（非度量MDS的一種形式）。</br>\n所有這些函數都將距離對象作為主要參數，k是所需的縮放輸出維度數。默認情況下，它們返回兩個維度的解決方案，但我們可以通過默認為2的參數k來更改。</br>\n<br/>\n可以選擇顯示距離矩陣、將維度保存到新數據集和繪製維度的選項。</br>\n當選擇經典度量縮放方法時，我們顯示特徵值、擬合優度統計量和碎石圖。對於其他縮放方法，我們顯示壓力值。\n<b>幫助</b></br>\n有關詳細幫助，請在BlueSky Statistics R編輯器中運行以下命令help(dist, package=\"stats\")或help(cmdscale, package ='stats')或help(isoMDS, package = \"MASS\")或help(sammon, package =\"MASS\")。           \n<br/>\n<br/>"
+  }
+}

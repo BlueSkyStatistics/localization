@@ -1,0 +1,13 @@
+{
+  "title": "Pseudo R Squared",
+  "navigation": "Pseudo R Squared",
+  "modelselector1": "Selectați un model",
+  "label1": "Selectați un model din una dintre următoarele clase (clasa în paranteză)",
+  "label2": "Modele liniare generalizate (glm), modele log-lineare multinomiale (multinom), regresie logistică ordonată sau probit (polr)",
+  "label3": "NOTĂ: MODELELE CONSTRUITE UTILIZÂND TUNINGUL MODELULUI (ANTRENARE) NU SUNT SUPORTATE",
+  "help": {
+    "title": "Pseudo R Squared",
+    "r_help": "help(pR2, package='pscl')",
+    "body": "\n                <b>Descriere</b></br>\ncalculează diverse măsuri pseudo-R2 pentru diverse GLM-uri\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \npR2(object, ...)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject: un obiect de model ajustat, deocamdată de clasa glm, polr sau multinom\n</li>\n<li>\n... argumente suplimentare care vor fi transmise funcțiilor\n</li>\n</ul>\n<b>Detalii</b></br>\nNumeroase măsuri pseudo r-pătrat au fost propuse pentru modelele liniare generalizate, implicând o comparație a log-verosimilității pentru modelul ajustat față de log-verosimilitatea unui model nul/restricționat fără predictori, normalizat pentru a varia de la zero la unu pe măsură ce modelul ajustat oferă o potrivire mai bună pentru date (oferind un analog grosier pentru calculul r-pătrat într-o regresie liniară).</br>\n<b>Valoare</b><br/>\nUn vector de lungime 6 conținând<br/>\nllh: Log-verosimilitatea din modelul ajustat<br/>\nllhNull: Log-verosimilitatea din modelul restricționat doar cu intercept<br/>\nG2: Minus două ori diferența în log-verosimilitate<br/>\nMcFadden: Pseudo r-pătrat McFadden<br/>\nr2ML: Pseudo r-pătrat de maximă verosimilitate<br/>\nr2CU: Pseudo r-pătrat Cragg și Uhler<br/>\n<b>Exemple</b><br/>\n<code> \ndata(admit)<br/>\n## model probit ordonat<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            data=admit,\n            method=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>Pachet</b></br>\npscl</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă în editorul de sintaxă R help(pR2, package=\"pscl\")\n                "
+  }
+}

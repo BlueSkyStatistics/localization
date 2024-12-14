@@ -1,0 +1,10 @@
+{
+  "title": "Estadísticas Resumidas, niveles de control",
+  "navigation": "Estadísticas Resumidas, todas las variables, niveles de control (Legado)",
+  "levels": "Especifique el número de niveles para mostrar conteos de variables de factor. NOTA: Los niveles menos frecuentes de las variables de factor se resumen en la categoría (Otros).",
+  "help": {
+    "title": "Estadísticas Resumidas, niveles de control",
+    "r_help": "",
+    "body": "\n    <b>Descripción</b></br>\n    Genera los resúmenes para todas las variables del conjunto de datos mientras te permite controlar el número de niveles para los cuales se muestran los conteos.</br>\n    NOTA: LOS CONTEOS DE VARIABLES MENOS FRECUENTES SE RESUMEN EN LA CATEGORÍA (OTROS)</br>\n    Muestra Mínimo, 1er Cuartil, Mediana, Media, 3er Cuartil, Máximo y conteo de NAs para variables numéricas y de fecha.</br>\n    Para la variable de factor, muestra los conteos de cada nivel.</br>\n    Para la variable lógica, muestra los conteos de VERDADERO, FALSO y NAs</br>\n    La ayuda de R no está disponible porque hemos escrito código personalizado utilizando múltiples funciones de R. Si necesitas inspeccionar el código, haz clic en el botón \"<>\".</br>\n    "
+  }
+}

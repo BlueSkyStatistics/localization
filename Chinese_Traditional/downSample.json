@@ -1,0 +1,13 @@
+{
+  "title": "下採樣",
+  "navigation": "範例, 下採樣",
+  "description": "下採樣不平衡數據。下採樣將隨機抽取數據集，使所有類別的頻率與少數類別相同",
+  "downsample": "輸入數據集的名稱",
+  "seed": "設置隨機種子",
+  "dependent": "按此變量進行下採樣",
+  "help": {
+    "title": "下採樣",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>描述</b></br>\n下採樣不平衡數據。下採樣將隨機抽取數據集，使所有類別的頻率與少數類別相同\n<br/>\n<b>用法</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 預測變量的矩陣或數據框\n</li>\n<li>\ny: 具有類別成員資格的因子變量\n</li>\n<li>\nlist: 函數應返回list(x, y)還是將x和y綁定在一起？如果為TRUE，輸出將被強制轉換為數據框。\n</li>\n<li>\nyname: 如果list = FALSE，類別列的標籤\n</li>\n</ul>\n<b>詳細信息</b></br>\n使用簡單隨機抽樣對多數類別進行下採樣。請注意，少數類別數據保持不變，樣本將在下採樣版本中重新排序。</br>\n對於上採樣，所有原始數據保持不變，並且向少數類別添加額外樣本（有放回抽樣）。</br>\n<b>值</b><br/>\n返回一個數據框或包含x和y元素的列表。</br>\n<b>示例</b></br>\n## 一個荒謬的例子...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>包</b></br>\ncaret</br>\n<b>幫助</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

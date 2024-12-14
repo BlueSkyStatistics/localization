@@ -1,0 +1,21 @@
+{
+  "title": "Date Exemplu",
+  "navigation": "Exemplu",
+  "label1": "Opțiuni set de date",
+  "radio2": "Salvează rezultatele într-un nou set de date",
+  "dsname": "Introdu un nume pentru un set de date",
+  "radio1": "Suprascrie setul de date",
+  "label2": "Opțiuni de eșantionare",
+  "rd1": "Specificați procentajul setului de date de eșantionat",
+  "percentage": "Introdu procentajul",
+  "rd2": "Specificați numărul de rânduri de selectat",
+  "size": "Introdu numărul de rânduri",
+  "textn": "Introduceți opțional un nume de variabilă sau o formulă pentru greutăți",
+  "seed": "Setați opțional o sămânță pentru reproducibilitatea datelor",
+  "chk2": "Eșantionare cu înlocuire",
+  "help": {
+    "title": "Set de date de eșantionare",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>Descriere</b></br>\nIa un eșantion aleatoriu din rândurile setului de date existent. Eșantionează un % din rânduri sau un număr specificat de rânduri cu sau fără înlocuire. Salvează rezultatul într-un nou set de date sau suprascrie setul de date existent.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n#Eșantionează un număr specificat de rânduri</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#Eșantionează o fracție din rânduri</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ntbl: tabel de date. Vezi ‘Detalii.’\n</li>\n<li>\nsize: Pentru sample_n(), numărul de rânduri de selectat. Pentru sample_frac(), fracția de rânduri de selectat. \n</li>\n<li>\nreplace: Eșantionarea ar trebui să fie cu înlocuire?\n</li>\n<li>\nweights: Greutăți de eșantionare. Aceasta trebuie să evalueze la un vector de numere non-negative de aceeași lungime ca inputul. Greutățile sunt standardizate automat pentru a suma la 1.\n</li>\n</ul>\n<b>Pachet</b></br>\ndplyr\n<b>Ajutor</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

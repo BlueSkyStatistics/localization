@@ -1,0 +1,13 @@
+{
+  "title": "2D 等高線圖",
+  "navigation": "2D 等高線圖",
+  "tvarbox1": "X",
+  "tvarbox2": "Y",
+  "tvarbox3": "Z",
+  "chk1": "在等高線圖上基於 x 和 y 添加原始數據點（黑點）",
+  "help": {
+    "title": "二維等高線圖",
+    "r_help": "help(geom_contour_filled, package='ggplot2')",
+    "body": "\n\t\t\t <b>描述</b></br>\n\t\t\t填充的等高區域\n\t\t\t</br>\n\t\t\t等高線將z變量落入不同範圍的區域分開。\n\t\t\t</br>\n\t\t\t等高線之間的區域用顏色填充，表示不同的z值範圍。\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t顏色刻度\n\t\t\t</br>\n\t\t\tSpectral調色板（來自ColorBrewer）被用來填充等高區域。\n\t\t\t</br>\n\t\t\tSpectral調色板是一種分歧色彩方案，從冷色到暖色過渡，非常適合顯示數據中的梯度。\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t可選地在圖上添加原始數據點\n\t\t\t</br>\n\t\t\t此圖層根據數據集中x和y值繪製單個點（點為黑色小圓點）。\n\t\t\t</br>\n\t\t\t它提供了一種將原始數據點疊加到等高線圖上的方法，為等高線可視化提供更多上下文。\n    "
+  }
+}

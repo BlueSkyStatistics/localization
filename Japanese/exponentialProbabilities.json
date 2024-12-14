@@ -1,0 +1,14 @@
+{
+  "title": "指数確率",
+  "navigation": "指数確率",
+  "varvals": "変数の値をカンマで区切って入力してください。例：3,0.5",
+  "rate": "レート",
+  "labelSig": "有意水準",
+  "lowtail": "下側尾",
+  "uptail": "上側尾",
+  "help": {
+    "title": "指数確率",
+    "r_help": "help(pexp, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            指数分布の密度、分布関数、分位数関数、およびランダム生成のためのレートrate（すなわち、平均1/rate）を持つ。\n            <br/>\n            使用法\n            <br/>\n            <code>\n                dexp(x, rate = 1, log = FALSE)\n                <br/>\n                pexp(q, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qexp(p, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rexp(n, rate = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測の数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>rate : レートのベクトル。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            rateが指定されていない場合、デフォルト値1が仮定されます。\n            <br/>\n            レートλを持つ指数分布の密度は\n            <br/>\n            <code>f(x) = λ {e}^{- λ x}</code>\n            <br/>\n            x ≥ 0のとき。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dexpは密度を与え、pexpは分布関数を与え、qexpは分位数関数を与え、rexpはランダム偏差を生成します。\n            <br/>\n            結果の長さはrexpのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累積ハザードH(t) = - log(1 - F(t))は-pexp(t, r, lower = FALSE, log = TRUE)です。            \n      "
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "直交配列 (oacat) デザインカタログを閲覧する",
+  "navigation": "直交デザインカタログを閲覧する",
+  "designNamefromCatalog": "カタログ内の直交配列デザインの名前 (例: L18.3.6.6.1)",
+  "numRuns": "実行回数または2要素ベクトル (例: 4,16) の最小値と最大値",
+  "numFactors": "要因の数 (カンマで区切る、例: 4,2,1)",
+  "numLevels": "レベルの数 (カンマで区切る、例: 3,2,5)",
+  "showQualityMetricsChk": "結果の配列と共にすべての配列品質指標を表示する;",
+  "maxDigits": "GRおよびA指標の表示に使用する有効桁数",
+  "maxNumberofDesignPrint": "表示するデザインの最大数",
+  "help": {
+    "title": "直交配列 (oacat) デザインカタログを閲覧する",
+    "r_help": "help(show.oas, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t利用可能な直交配列のリストからデザイン要素を閲覧/検査するか、選択基準を指定して情報を抽出します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(show.oas, package = DoE.base)を使用してください。\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

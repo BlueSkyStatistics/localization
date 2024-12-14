@@ -1,0 +1,16 @@
+{
+  "title": "Intervalle de confiance",
+  "navigation": "Intervalle de confiance",
+  "label1": "Sélectionnez un modèle d'une des classes suivantes. (La classe R est indiquée entre parenthèses ci-dessous)",
+  "label2": "Modèle linéaire (lm), Modèle linéaire généralisé (glm), Moindres carrés non linéaires (nls), Régression logistique/probit ordonnée (polr), Modèles log-linéaires multinomiaux (multinom), Modèles de régression de Cox (coxph)",
+  "label3": "Basé sur",
+  "modelselector1": "Sélectionnez un modèle",
+  "conlevel": "Intervalle de confiance",
+  "lr": "Statistique du rapport de vraisemblance",
+  "wald": "Statistique de Wald",
+  "help": {
+    "title": "Intervalle de confiance",
+    "r_help": "help(confint,package='stats')",
+    "body": "\n                <b>Description</b></br>\nCalcule les intervalles de confiance pour un ou plusieurs paramètres dans un modèle ajusté. Il existe une méthode par défaut et une méthode pour les objets héritant de la classe \"lm\". Les modèles lm et coxph n'utilisent que la méthode de Wald.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nconfint(object, parm, level = 0.95, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: un objet de modèle ajusté.\n</li>\n<li>\nparm: une spécification des paramètres pour lesquels des intervalles de confiance doivent être donnés, soit un vecteur de nombres soit un vecteur de noms. Si manquant, tous les paramètres sont considérés.\n</li>\n<li>\nlevel: le niveau de confiance requis.\n</li>\n<li>\n...: arguments à passer aux méthodes.\n</li>\n</ul>\n<b>Détails</b></br>\nconfint est une fonction générique. La méthode par défaut suppose la normalité et nécessite des méthodes coef et vcov appropriées. La méthode par défaut peut être appelée directement pour comparaison avec d'autres méthodes.</br>\nPour les objets de classe \"lm\", les formules directes basées sur les valeurs t sont utilisées.</br>\nIl existe des méthodes stub dans le package stats pour les classes \"glm\" et \"nls\" qui appellent celles du package MASS (si installé) : si l'espace de noms MASS a été chargé, ses méthodes seront utilisées directement. (Ces méthodes sont basées sur la vraisemblance de profil.)</br>\n<b>Valeur</b></br>\nUne matrice (ou un vecteur) avec des colonnes donnant les limites inférieures et supérieures de confiance pour chaque paramètre. Celles-ci seront étiquetées comme (1-niveau)/2 et 1 - (1-niveau)/2 en % (par défaut 2,5% et 97,5%).</br>\n<b>Exemples</b><br/>\n<code> \nfit <- lm(100/mpg ~ disp + hp + wt + am, data = mtcars)<br/>\nconfint(fit)<br/>\nconfint(fit, \"wt\")<br/>\n## de l'exemple(glm)\ncounts <- c(18,17,15,20,10,20,25,13,12)\noutcome <- gl(3, 1, 9); treatment <- gl(3, 3)\nglm.D93 <- glm(counts ~ outcome + treatment, family = poisson())\nconfint(glm.D93) # nécessite que MASS soit installé\nconfint.default(glm.D93)  # basé sur la normalité asymptotique\n</code> <br/>\n<b>Package</b></br>\nstats;MASS;knitr</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(confint , package='stats')\n                "
+  }
+}

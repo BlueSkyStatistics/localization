@@ -1,0 +1,21 @@
+{
+  "title": "依出現次數重新排序因子層級",
+  "navigation": "依出現次數重新排序",
+  "target": "因子變數以重新排序層級",
+  "label1": "選擇要依變數中的數據出現次數重新排序的因子變數。您可以覆蓋現有變數或通過指定前綴/後綴來創建新變數。新變數將以附加到現有名稱的前綴/後綴創建。",
+  "label2": "將新層級保存到新變數或覆蓋現有變數",
+  "rd3": "指定一個後綴（將創建一個帶有後綴的新變數）",
+  "txt3": "輸入後綴",
+  "rd2": "指定一個前綴（將創建一個帶有前綴的新變數）",
+  "txt4": "輸入前綴",
+  "rd1": "覆蓋現有變數",
+  "label3": "指定順序",
+  "Descending": "依出現次數的順序",
+  "Ascending": "依出現次數的反向順序",
+  "ordered": "製作有序因子（序數）",
+  "help": {
+    "title": "移除 NAs",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>描述</b></br>\n依首次出現（出現次數）重新排序因子層級。請參見依計數重新排序以按計數/頻率排序。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nf: 一個因子\n</li>\n<li>\nordered: 一個邏輯值，決定輸出因子的「有序」狀態。NA 保留因子的現有狀態。\n</li>\n</ul>\n<b>範例</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

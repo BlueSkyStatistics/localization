@@ -1,0 +1,32 @@
+{
+  "title": "Gage R&R - Analiza sistemului de măsurare",
+  "navigation": "Gage R&R",
+  "mainTitle": "Titlu principal pentru ieșirea grafică",
+  "subTitle": "Subtitlu pentru ieșirea grafică (de exemplu, numele proiectului)",
+  "measuredVar": "Variabila măsurată",
+  "part": "Variabila piesei",
+  "appr": "Evaluatori (operatori, mașini, ...) variabilă",
+  "lsl": "LSL - valoare numerică a limitei inferioare de specificație utilizată cu USL pentru a calcula variația studiului ca %Toleranță",
+  "usl": "USL - valoare numerică a limitei superioare de specificație utilizată cu LSL pentru a calcula variația studiului ca %Toleranță",
+  "historicalStdv": "Devierea standard istorică a procesului (dacă nu este specificată, scrieți NA)",
+  "useHistStdDevProcVarChk": "Utilizați deviația standard istorică pentru a estima valorile evaluării Gage (%TabelulStudyVar)",
+  "sigma": "Sigma - valoare numerică pentru numărul de deviații standard de utilizat în calcularea variației studiului",
+  "tolerance": "Toleranță - valoare numerică pentru toleranță - implicit (usl - lsl)",
+  "alphaLim": "Alpha - Limită pentru a lua în considerare interacțiunea",
+  "errorTerm": "Ce termen al modelului ar trebui utilizat ca termen de eroare (pentru modelul cu interacțiune)",
+  "method": "Tipul de analiză de efectuat, încrucișată (implicit) sau nested",
+  "label1": "Detalii despre antetul raportului studiului Gage R&R",
+  "gageName": "Numele Gage-ului",
+  "dateStudy": "Data studiului",
+  "partDescription": "Descrierea piesei",
+  "machineName": "Numele mașinii",
+  "reportedBy": "Raportat de",
+  "operatorNames": "Numele operatorilor",
+  "testLocation": "Locația testului",
+  "miscellaneous": "Diverse",
+  "help": {
+    "title": "Gage R&R - Analiza sistemului de măsurare",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția ss.rr pentru a efectua analiza Gage R&R pentru evaluarea sistemului de măsurare al unui proces\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - utilizați R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți utiliza fișierul de set de date de probă numit gageR_R_piston_diameter_with_measurements.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t\tDin setul de date de probă, selectați variabila diametru pentru Variabila măsurată, Pistonring pentru Variabila piesei și Operator pentru Evaluator \n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

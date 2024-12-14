@@ -1,0 +1,33 @@
+{
+  "title": "t検定、1標本",
+  "navigation": "t検定、1標本 (レガシー)",
+  "tvarbox1": "変数を選択",
+  "textbox1": "信頼区間",
+  "textbox2": "帰無仮説 (μ)",
+  "label1": "対立仮説",
+  "test1": "母集団の平均 != μ",
+  "test2": "母集団の平均 > μ",
+  "test3": "母集団の平均 < μ",
+  "testval": "テスト値 (μ)",
+  "label2": "欠損値",
+  "Analysis": "分析による分析",
+  "Listwise": "リストワイズ",
+  "conflevel": "信頼区間:",
+  "MissingVals": "欠損値のオプション",
+  "cohensdNoCorrection": "コーエンのd",
+  "hedgesgNoCorrection": "ヘッジズのg",
+  "glassd": "グラスのデルタ",
+  "hedgesgCorrect": "バイアス補正されたヘッジズのg",
+  "glassdCorrect": "グラスのデルタのバイアスを補正",
+  "hedgesg": "ヘッジズのg",
+  "effectsizes": "効果サイズ",
+  "cohensdCorrect": "バイアス補正されたコーエンのd",
+  "label3": "コーエンのdのオプション",
+  "label4": "ヘッジズのgのオプション",
+  "showEffectSizes": "効果サイズを表示",
+  "help": {
+    "title": "t検定、1標本",
+    "r_help": "help(t.test, package=stats)",
+    "body": "\n<b>説明</b></br>\n選択した変数に対して1標本t検定を実行します。オプションで標準化された差の効果サイズ指標を計算します：コーエンのdとヘッジズのg（この関数は母集団の推定値を返します。）\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyOneSmTTest(varNamesOrVarGlobalIndices  =c('var1','var2'), mu=.9, conf.level=0.95, alternative= \"two.sided\",datasetNameOrDatasetGlobalIndex='Dataset', missing=1) \ncohens_d(var1~1, mu=valuetocompare, correction =FALSE, ci = 0.95)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: 選択したスケール変数（例えば var1, var2）\n</li>\n<li>\nmu: 真の平均値を示す数値。（例えば 10）\n</li>\n<li>\nconf.level: 数値（例えば 0.95）.\n</li>\n<li>\nmissing: 欠損値は変数ごとに処理されます（missing =0）またはすべての変数に対してリストワイズ（missing=1）。\n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: var1, var2, var3が選択されるデータセットの名前（例えば Dataset）.\n</li>\n<li>\nalternative: 対立仮説を指定する文字列で、\"two.sided\"（デフォルト）、\"greater\"または\"less\"のいずれかでなければなりません。初めの文字だけを指定できます。\n</li>\n</ul>\n<b>詳細</b></br>\nテストの結果のリスト\n<br/>\n<b>例</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# データセットはUIグリッドにもロードされる必要があります</br>\nBSkyLoadRefreshDataframe(Dataset)</br> \nBSky_One_Simple_T_Test = BSkyOneSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),mu=.9,conf.level=0.95,alternative =\"two.sided\", datasetNameOrDatasetGlobalIndex ='Dataset',missing=1</br>\n</code> <br/>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\n詳細なヘルプは、このダイアログオーバーレイの右上にあるRアイコンをクリックするか、次のコマンド help(t.test, package ='stats') を実行して、出力ウィンドウで + をクリックしてRコードチャンクを作成します。\n"
+  }
+}

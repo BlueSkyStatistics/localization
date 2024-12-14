@@ -1,0 +1,14 @@
+{
+  "title": "為變數添加/替換/移除 Lambda (λ) 及先前的 Box-Cox 轉換",
+  "navigation": "添加/移除 Lambda",
+  "label2": "選擇一個變數以添加/替換/移除先前應用 Box-Cox 轉換的 Lambda (λ)",
+  "variableSelcted": "選擇一個變數",
+  "selectAddLambdaRad": "選項 1：如果先前應用 Box-Cox 轉換，則添加/替換 Lambda (λ) 值",
+  "selectRemoveLambdaRad": "選項 2：如果錯誤地將 Lambda (λ) 值添加到變數中，則移除該值",
+  "lambda": "為所選變數指定一個 Lambda (λ) 值，範圍為 (-2 到 2)",
+  "help": {
+    "title": "為先前的 Box-Cox 轉換添加/替換/移除 Lambda (λ)",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t此對話框提供便利，若與變數相關的 Lambda (λ) 需要正確記錄或調整。\n\t\t\t\t正確的 Lambda (λ) 值很重要，因為如果需要逆 Box-Cox，將會使用它。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關 Box-Cox 或 Lambda (λ) 的詳細幫助 - 使用 R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">有關 MASS Box-Cox 的良好概述，請參見 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t與熟悉的 Box-Cox 轉換相關的 Lambda (λ) 值\n\t\t\t\t<br/>\n\t\t\t\tλ = 2：平方轉換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1：無轉換；返回原始數據 ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50：平方根轉換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33：立方根轉換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25：四次根轉換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0：自然對數轉換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50：倒數平方根轉換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1：倒數 (逆) 轉換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2：倒數平方轉換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

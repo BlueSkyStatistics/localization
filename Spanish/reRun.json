@@ -1,0 +1,23 @@
+{
+  "title": "Repetir análisis en diferentes conjuntos de datos",
+  "navigation": "Repetir análisis",
+  "helpText": "Repite o reproduce el análisis en una pestaña de salida intercambiando el(los) conjunto(s) de datos original(es) con el(los) nuevo(s) conjunto(s) de datos.\nSigue los pasos a continuación.\n1. La pestaña de salida seleccionada debe contener el análisis a reproducir o repetir.\n2. El(los) nuevo(s) conjunto(s) de datos que deseas intercambiar deben estar abiertos en la cuadrícula de datos.\n3. Especifica qué nuevo conjunto de datos se intercambiará con el original (del análisis en la pestaña de salida activa)\n4. Para hacerlo, selecciona el conjunto de datos original en la 1ª lista y el nuevo conjunto de datos en la 2ª lista y haz clic en el botón de mover.\n5. Repite el paso 4 para intercambiar múltiples conjuntos de datos.\n6. Presiona el botón de ejecutar.\n",
+  "allDatasets": "Conjuntos de datos para intercambiar",
+  "datasetsFromOutput_BSky": "Conjuntos de datos originales",
+  "mapping": "Conjuntos de datos mapeados",
+  "out": "Ingresa el nombre del conjunto de datos apilado",
+  "in1": "Selecciona 2 o más conjuntos de datos",
+  "in2": "Selecciona el 2º conjunto de datos",
+  "label1": "Opciones de apilamiento",
+  "label2": "Todas las opciones a continuación requieren 2 conjuntos de datos con exactamente los mismos nombres de variables",
+  "bindrows": "Vincular Filas (apilar conjuntos de datos tal como están, puede resultar en filas duplicadas)",
+  "union": "Unión (apilar conjuntos de datos y eliminar duplicados exactos)",
+  "intersect": "Intersección (mantener filas comunes a ambos conjuntos de datos)",
+  "setdiff": "Diferencia (mantener solo filas en el 1er conjunto de datos pero no en el 2º)",
+  "id": "Si deseas rastrear de qué conjunto de datos provino cada observación, especifica un nombre para esa variable aquí. NOTA: La nueva variable se agrega al principio del conjunto de datos resultante.",
+  "help": {
+    "title": "Apilar Conjuntos de Datos",
+    "r_help": "help(bind_rows, package=dplyr)",
+    "body": "\n            <b>Descripción</b></br>\nEste diálogo te ayudará a apilar 2 o más conjuntos de datos uno encima del otro. Puedes seleccionar una de las siguientes opciones.<br/>\n1. Vincular Filas: Apila los 2 o más conjuntos de datos exactamente como están. Si un nombre de variable es común a ambos conjuntos de datos, los valores se llenarán como esperas. Si un conjunto de datos A contiene una variable llamada var1 que no está presente en el otro conjunto de datos B, aparecerán NA en la variable var1 para todas las filas que correspondan al conjunto de datos B.<br/>\nTodas las opciones a continuación operan SOLO en 2 conjuntos de datos y requieren que ambos conjuntos de datos compartan las mismas variables.<br/>\n2. Unión: apila los conjuntos de datos y elimina duplicados<br/>\n3. Intersección: mantiene filas comunes a ambos<br/>\n4. Diferencia: Mantiene filas en el 1er conjunto de datos, no en el 2º<br/>\nDependiendo de la opción seleccionada, se llaman a las funciones bind_rows, union, intersect y setdiff en el paquete dplyr.\nNOTA: puedes opcionalmente rastrear de qué conjunto de datos provino la observación original. La ID del conjunto de datos (1º/2º) se agrega al principio del conjunto de datos que contiene los resultados.<br/>\n<b>Paquete</b></br>\ndplyr</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haz clic en el ícono de R en la esquina superior derecha de este diálogo o ejecuta el siguiente comando help(bind_rows, package=\"dplyr\") en la ventana de sintaxis de R\n            "
+  }
+}

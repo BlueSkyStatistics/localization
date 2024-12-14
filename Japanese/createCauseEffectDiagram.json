@@ -1,0 +1,13 @@
+{
+  "title": "因果関係図",
+  "navigation": "因果関係",
+  "effectName": "分析する効果を表す短い文字列",
+  "mainTitle": "シックスシグマ因果関係図のタイトル",
+  "subTitle": "因果関係図のフッタータイトル（通常はシックスシグマプロジェクト名）",
+  "independent": "原因カテゴリ",
+  "help": {
+    "title": "因果関係図",
+    "r_help": "help(ss.ceDiag, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tceDiag関数は原因グループによる因果関係図を作成します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(ss.ceDiag, package = SixSigma)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、cause_and_effect_table.xlsxというサンプルデータセットファイルを使用できます。ファイルをデータグリッドで開くには、ファイルオープンメニューを使用してください\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

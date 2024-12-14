@@ -1,0 +1,21 @@
+{
+    "title": "Contour Plot",
+    "navigation": "Contour Plot",
+    "x": "X variable, specify a numeric variable",
+    "y": "Y variable(s), specify a numeric variable(s)",
+    "flip": "Flip Axis",
+    "specify_a_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "facets_lbl": "Facets",
+    "colorHintLabel1": "Select a color (After color selection, click outside the control to apply)",
+    "help": {
+        "title": "Contour Plot",
+        "r_help": "help(geom_density2d, package=ggplot2)",
+        "body": "\n            <b>Description</b></br>\n            Perform a 2D kernel density estimation using MASS::kde2d() and display the results with contours. This can be useful for dealing with overplotting. This is a 2d version of geom_density().</br>\n            Facets can be optionally created by specifying a factor variable. You can also optionally specify themes, and specify a title and labels for the x and y axis​\n            <br/>\n            <b>Usage</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"Contour chart for...\")\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            data: The default dataset​\n            </li>\n            <li>\n            aes(): Generate aesthetic mappings that describe how variables in the data are mapped to visual properties (aesthetics) of geoms.​\n            </li>\n            <li>\n            x: A numeric variable\n            </li>\n            <li>\n            y: A numeric variable\n            </li>\n            <li>\n            geomdensity2d: Creates the plot\n            </li>\n            <li>\n            Labs(): Change axis labels and legend titles(This is optional)​\n            </li>\n            <li>\n            facet_grid(): Lay out panels in a grid(This is optional)​\n            </li>\n            <li>\n            theme_calc(): Specifies the calculator theme(This is optional)​\n            </li>\n            <li>\n            coord_flip(): Flip axis(This is optional)​\n            </li>\n            </ul>\n            <b>Package</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Help</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_density2d), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n    "
+    }
+}

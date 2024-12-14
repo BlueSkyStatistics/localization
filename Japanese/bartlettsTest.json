@@ -1,0 +1,11 @@
+{
+  "title": "バートレット検定",
+  "navigation": "バートレット検定",
+  "tvarbox1": "応答変数",
+  "tvarbox2": "数値または因子変数",
+  "help": {
+    "title": "バートレット検定",
+    "r_help": "help(bartlett.test, package=stats)",
+    "body": "\n<b>説明</b></br>\n各グループ（サンプル）の分散が同じであるという帰無仮説のバートレット検定を実行します。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nbartlett.test(x, ...)</br>\n## デフォルトのS3メソッド:</br>\nbartlett.test(x, g, ...)</br>\n## 'formula'クラスのためのS3メソッド</br>\nbartlett.test(formula, data, subset, na.action, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\n引数\nx: データ値の数値ベクトル、またはそれぞれのサンプルを表す数値データベクトルのリスト、または（\"lm\"クラスから継承された）適合線形モデルオブジェクト。\n</li>\n<li>\ng: xの対応する要素のグループを与えるベクトルまたは因子オブジェクト。xがリストの場合は無視されます。\n</li>\n<li>\nformula: lhs ~ rhsの形の式で、lhsがデータ値を、rhsが対応するグループを与えます。\n</li>\n<li>\ndata: 式に含まれる変数を含むオプションの行列またはデータフレーム（または類似のもの: model.frameを参照）です。デフォルトでは、変数はenvironment(formula)から取得されます。\n</li>\n<li>\nsubset: 使用する観測値のサブセットを指定するオプションのベクトル。\n</li>\n<li>\nna.action: データにNAが含まれている場合に何が起こるべきかを示す関数。デフォルトはgetOption(\"na.action\")です。\n</li>\n<li>\n...: メソッドに渡されるさらなる引数。\n</li>\n</ul>\n<b>詳細</b></br>\nxがリストの場合、その要素は分散の均一性を比較するためのサンプルまたは適合線形モデルとして取られます。この場合、要素はすべて数値データベクトルまたは適合線形モデルオブジェクトでなければならず、gは無視され、単にbartlett.test(x)を使用してテストを実行できます。サンプルがまだリストに含まれていない場合は、bartlett.test(list(x, ...))を使用します。</br>\nそうでない場合、xは数値データベクトルでなければならず、gはxの対応する要素のグループを与えるxと同じ長さのベクトルまたは因子オブジェクトでなければなりません。</br>\n<b>値</b><br/>\n\"htest\"クラスのリストで、以下のコンポーネントを含みます:<br/>\nstatistic: バートレットのK二乗検定統計量。<br/>\nparameter: 検定統計量の近似カイ二乗分布の自由度。<br/>\np.value: 検定のp値。<br/>\nmethod: \"分散の均一性のためのバートレット検定\"という文字列。<br/>\ndata.name: データの名前を与える文字列。<br/>\n<b>例</b><br/>\n<code> \nDataset <- data.frame(Age=c(20,23,19,25,26), Weight=c(48,50,55,51,49), Gender=c('m','f','f','m','m' ))\nResult_Bartlett_Test = bartlett.test(sales ~ interaction(Dataset$Gender),data=Dataset)\n</code> <br/>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(bartlett.test, package=stats)\n"
+  }
+}

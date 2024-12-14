@@ -1,0 +1,13 @@
+{
+  "title": "シンプルラッシュモデル（多面的）",
+  "navigation": "シンプルラッシュモデル（多面的）",
+  "modelname": "モデル名を入力",
+  "destinationvars": "項目",
+  "firstlevel": "第一レベル変数",
+  "secondlevel": "第二レベル変数",
+  "help": {
+    "title": "シンプルラッシュモデル（多面的）",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>説明</b>\n            <br/>\n            多面的なシンプルラッシュモデルのパラメータ推定を生成します\n            <br/><br/>\n            <b>使用法</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp, facets=, formulaA = ~ formulaA = ~ item+rater, pid = , verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n            <li>\n            resp: 多項選択項目応答のデータフレーム k=0,...,K。欠損応答はNAとして宣言する必要があります。\n            </li>\n            <li>\n            formulaA: デザインフォーミュラ（tam.mml.mfrにのみ適用）。詳細なヘルプを参照してください。ファセットのすべての効果をゼロに設定することも可能です。例: item*step + 0*rater（詳細なヘルプを参照）。\n            </li>\n            <li>\n            facets: ファセットエントリを含むデータフレーム（tam.mml.mfrにのみ適用）\n            </li>\n            <li>\n            pid: オプションの人物識別子のベクター\n            </li>\n            <li>\n            verbose: 反復中に出力を印刷するかどうかを示す論理値。\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>パッケージ</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>ヘルプ</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

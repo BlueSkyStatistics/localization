@@ -1,0 +1,13 @@
+{
+  "title": "擬似R二乗",
+  "navigation": "擬似R二乗",
+  "modelselector1": "モデルを選択",
+  "label1": "次のクラスのいずれかのモデルを選択してください（括弧内はクラス名）",
+  "label2": "一般化線形モデル（glm）、多項ロジスティック回帰モデル（multinom）、順序ロジスティックまたはプロビット回帰（polr）",
+  "label3": "注意：モデルチューニング（トレーニング）を使用して構築されたモデルはサポートされていません",
+  "help": {
+    "title": "擬似R二乗",
+    "r_help": "help(pR2, package='pscl')",
+    "body": "\n                <b>説明</b></br>\nさまざまなGLMのための擬似R2測定値を計算します\n<br/>\n<b>使用法</b>\n<br/>\n<code> \npR2(object, ...)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject: 現在のところ、glm、polr、またはmultinomクラスの適合モデルオブジェクト\n</li>\n<li>\n... 関数に渡される追加の引数\n</li>\n</ul>\n<b>詳細</b></br>\n一般化線形モデルのために提案された多数の擬似R二乗測定値があり、適合モデルの対数尤度と、予測子のないnull/制限モデルの対数尤度を比較し、適合モデルがデータに対してより良いフィットを提供するにつれて、ゼロから一までの範囲に正規化されます（線形回帰におけるR二乗の計算の粗い類似物を提供します）。</br>\n<b>値</b><br/>\n長さ6のベクトルを含む<br/>\nllh: 適合モデルからの対数尤度<br/>\nllhNull: 切片のみの制限モデルからの対数尤度<br/>\nG2: 対数尤度の差のマイナス2倍<br/>\nMcFadden: マクファデンの擬似R二乗<br/>\nr2ML: 最大尤度擬似R二乗<br/>\nr2CU: クラッグとウーラーの擬似R二乗<br/>\n<b>例</b><br/>\n<code> \ndata(admit)<br/>\n## 順序プロビットモデル<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            data=admit,\n            method=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>パッケージ</b></br>\npscl</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(pR2, package=\"pscl\")\n                "
+  }
+}

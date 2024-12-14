@@ -1,0 +1,20 @@
+{
+  "title": "繪製時間序列",
+  "navigation": "繪製時間序列，分開或合併",
+  "destination": "要繪製的變數",
+  "firstObservation": "第一次觀察的時間，例如1：輸入1961,1表示1961年1月，例如2：輸入1961,3表示1961年第三季度，例如3：輸入1表示連續系列",
+  "frequency": "每單位時間的觀察次數，例如1：輸入12表示每年每個月有一次觀察，例如2：輸入4表示每季度有一次觀察，例如3：輸入1表示連續系列。",
+  "label0": "繪圖選項",
+  "separately": "單獨繪製每個系列",
+  "combine": "合併系列",
+  "label1": "變數轉換",
+  "chkboxForTransform": "自然對數",
+  "label2": "擬合值選項",
+  "yaxisLabel": "Y軸標籤",
+  "mainTitle": "主標題",
+  "help": {
+    "title": "繪製時間序列",
+    "r_help": "help(plot.ts, package ='stats')",
+    "body": "\n<b>描述</b></br>\n創建合併或單獨的時間序列圖。當合併時，多個變數一起繪製，當單獨時，每個變數獨立繪製。BSkyPlotSeriesWithCorrelations是一個包裝函數，創建一個時間序列對象並內部調用plot.ts。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='title', ylab='y軸標籤', dataset=\"Dataset1\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 要繪製的選定變數\n</li>\n<li>\nstart: 第一次觀察的時間應以年,月或年,季度的格式輸入，例如（如果您的數據按月組織，則1992,1表示1992年1月；如果您的數據按季度組織，則1992,1表示1992年的第一季度。\n</li>\n<li>\nfrequency: 單位時間內的觀察次數。例如：每月有12次觀察，每年有4次觀察。\n</li>\n<li>\nplot.type: \"multiple\"表示單獨，\"single\"表示合併圖。\n</li>\n<li>\nnaturalLogYaxis: 如果為TRUE，則Y軸顯示為自然對數值。\n</li>\n<li>\nmain: 圖的主標題\n</li>\n<li>\nylab: Y軸的標題\n</li>\n<li>\ndataset: 從中選擇變數的數據集名稱。\n</li>\n</ul>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或通過創建R代碼塊，單擊輸出窗口中的+，運行以下命令help(plot.ts, package ='stats')"
+  }
+}

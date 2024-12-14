@@ -1,0 +1,16 @@
+{
+  "title": "K-平均クラスタ",
+  "navigation": "K-平均",
+  "destination": "目的地",
+  "clusters": "クラスタ数",
+  "seeds": "開始シード数",
+  "iterations": "最大反復回数",
+  "storeClusterInDataset": "データセットにクラスタを割り当てる",
+  "variablename": "クラスタ番号を保存する変数",
+  "biplot": "クラスタのバイプロットを表示",
+  "help": {
+    "title": "K-平均クラスタ",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>説明</b></br>\nK-平均クラスタリングを実行します\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset = FALSE, varNameForCluster=\"\", dataset=\"データセット名\") \n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nvars: 解析する変数のベクトル c('var1','var2'...) の形式\n</li>\n<li>\ncenters: クラスタの数 k または初期の（異なる）クラスタ中心のセット。数値の場合、x の中からランダムに選ばれた（異なる）行が初期中心として選ばれます。\n</li>\n<li>\niter.max: 許可される最大反復回数。\n</li>\n<li>\nnum.seeds: 使用する異なる開始ランダムシードの数。各ランダムシードは異なる k-平均ソリューションを生成します。\n</li>\n<li>\nstoreClusterInDataset : クラスタの割り当てをデータセットに保存します\n</li>\n<li>\nvarNameForCluster: 割り当てられたクラスタの変数名\n</li>\n<li>\ndataset: 解析するデータセット\n</li>\n</ul>\n<b>パッケージ</b></br>\nBlueSky</br>\n<b>ヘルプ</b></br>\nhelp(kmeans, package=\"stats\")\n    "
+  }
+}

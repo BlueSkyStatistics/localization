@@ -1,0 +1,27 @@
+{
+  "title": "Subconjunto por Posición",
+  "navigation": "Subconjunto Por Posición",
+  "newdatasetlabel": "Especificar Nombre del Nuevo Conjunto de Datos",
+  "sortbyvarslabel": "Variables para Ordenar Primero (Orden Ascendente)",
+  "groupbyvarslabel": "Grupos para Subconjuntar Dentro",
+  "subsettypelabel": "Tipo de Subconjunto",
+  "firstnlabel": "Primeras N Filas",
+  "lastnlabel": "Últimas N Filas",
+  "lowestnlabel": "Filas con los N Valores Más Bajos para una Variable",
+  "highestnlabel": "Filas con los N Valores Más Altos para una Variable",
+  "firstproplabel": "Primera Proporción de Filas",
+  "lastproplabel": "Última Proporción de Filas",
+  "lowestproplabel": "Filas dentro del Percentil Más Bajo para una Variable",
+  "highestproplabel": "Filas dentro del Percentil Más Alto para una Variable",
+  "nlabel": "N (positivo mantiene, negativo elimina)",
+  "proplabel": "Proporción (positivo mantiene, negativo elimina)",
+  "varlabel": "Variable",
+  "tieslabel": "Incluir Valores Empatados",
+  "rownumlabel": "Especificar Números de Filas",
+  "rownumboxlabel": "Números o rangos separados por comas (por ejemplo, 1,3,5 o 20:30 o seq(2,10,by=2), positivo mantiene, negativo elimina)",
+  "help": {
+    "title": "Subconjunto por Posición",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nEsto subconjunta un conjunto de datos de acuerdo a la posición de las filas.\n<br/><br/>\n<b>Especificar Nombre del Nuevo Conjunto de Datos:</b> Nombre del conjunto de datos donde se almacenarán los datos subconjuntados\n<br/><br/>\n<b>Variables para Ordenar Primero:</b> Variables utilizadas para ordenar las filas antes de que se realice cualquier subconjunto. Esto solo afectará las opciones que seleccionan el número de filas, por ejemplo, \nPrimeras/Últimas N Filas, Primera/Última Proporción de Filas, y Especificar Números de Filas. Siempre estará en orden ascendente.\n<br/><br/>\n<b>Grupos para Subconjuntar Dentro:</b> No especificar variables subconjuntará de acuerdo a la posición de las filas del conjunto de datos completo. Especificar variables subconjuntará de acuerdo a la posición de las filas\n dentro de grupos definidos por todas las combinaciones de valores para las variables especificadas.\n<br/><br/>\n<b>Tipo de Subconjunto</b>\n<br/><br/>\n<b>Primeras N Filas:</b> Mantiene las primeras N filas del conjunto de datos en general o dentro de grupos\n<br/><br/>\n<b>Últimas N Filas:</b> Mantiene las últimas N filas del conjunto de datos en general o dentro de grupos\n<br/><br/>\n<b>Filas con los N Valores Más Bajos para una Variable:</b> Mantiene las filas que tienen los valores ordenados más bajos para una variable especificada en general o dentro de grupos. Por ejemplo, especificar 10 \n mantendría las filas con los 10 valores más bajos para una variable.\n<br/><br/>\n<b>Filas con los N Valores Más Altos para una Variable:</b> Mantiene las filas que tienen los valores ordenados más altos para una variable especificada en general o dentro de grupos. Por ejemplo, especificar 10 \n mantendría las filas con los 10 valores más altos para una variable.\n<br/><br/>\n<b>Primera Proporción de Filas:</b> Mantiene las filas en la proporción superior del conjunto de datos en general o dentro de grupos. Por ejemplo, especificar .10 mantendría el 10% superior del conjunto de datos \n de acuerdo al número total de filas.\n<br/><br/> \n<b>Última Proporción de Filas:</b> Mantiene las filas en la proporción inferior del conjunto de datos en general o dentro de grupos. Por ejemplo, especificar .10 mantendría el 10% inferior del conjunto de datos \n de acuerdo al número total de filas.\n<br/><br/>\n<b>Filas dentro del Percentil Más Bajo para una Variable:</b> Mantiene las filas en el percentil más bajo para una variable especificada, en general o dentro de grupos. Por ejemplo, especificar .10 \n mantendría el percentil más bajo para una variable (mínimo al 10% percentil).\n<br/><br/>\n<b>Filas dentro del Percentil Más Alto para una Variable:</b> Mantiene las filas en el percentil más alto para una variable especificada, en general o dentro de grupos. Por ejemplo, especificar .10 \n mantendría el percentil más alto para una variable (percentil 90 al máximo).\n<br/><br/>\n<b>Especificar Números de Filas:</b> Mantiene las filas numeradas exactas especificadas. Por ejemplo, especificar 1,3,5 mantendría la primera, tercera y quinta filas. Especificar 20:30 mantendría las filas 20 \n a 30. Especificar seq(2,10,by=2) mantendría las filas numeradas pares hasta la décima fila.\n<br/><br/>\n<b>Incluir Valores Empatados:</b> Especifica si los valores empatados deben ser incluidos o no. Por ejemplo, si deseas las filas para los 10 valores más bajos de una variable y el décimo valor más bajo \n aparece más de una vez, incluir los valores empatados mantendrá todas las filas que igualen el valor duplicado. \n<br/><br/>\nTen en cuenta que especificar valores negativos para N o la proporción elimina las filas correspondientes del conjunto de datos. Por ejemplo, especificar -10 para las Primeras N Filas eliminaría \n las primeras 10 filas. Especificar -.10 para la Primera Proporción de Filas, eliminaría el primer 10% de las filas.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> dplyr\n\t\t\t"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "向2级设计（定量）添加中心点（没有先前的中心点） - 选定的设计是数据集UI网格上的活动设计",
+  "navigation": "添加中心点2级设计（定量）",
+  "datasetname": "带有中心点的修改设计名称",
+  "numOfCenterPts": "中心点数量（如果使用，必须至少为2）",
+  "centerPointDistribution": "中心点分布的位置数量（必须大于1）",
+  "help": {
+    "title": "向2级设计添加中心点（没有先前的中心点）",
+    "r_help": "help(add.center, package = FrF2)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tadd.center函数用于向2级分数因子设计添加中心点。所有因素必须是定量的\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R help(add.center, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

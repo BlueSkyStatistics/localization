@@ -1,0 +1,16 @@
+{
+  "title": "単一サンプル正確二項検定",
+  "navigation": "二項検定",
+  "tvarbox1": "2つのレベルのみを持つ要因（1つ）",
+  "label1": "対立仮説",
+  "test1": "母集団の平均 != μ",
+  "test2": "母集団の平均 > μ",
+  "test3": "母集団の平均 < μ",
+  "txtbox1": "信頼レベル",
+  "txtbox2": "帰無仮説（μは0-1の範囲内）",
+  "help": {
+    "title": "正確二項検定",
+    "r_help": "help(binom.test, package=stats)",
+    "body": "\n                <b>説明</b></br>\nベルヌーイ実験における成功の確率に関する単純な帰無仮説の正確な検定を実行します。\n<br/>\n<b>使用法</b>\n<br/>\n<code>\nbinom.test(x, n, p = 0.5,<br/>\n           alternative = c(\"two.sided\", \"less\", \"greater\"),<br/>\n           conf.level = 0.95)<br/>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 成功の数、または成功と失敗の数をそれぞれ与える長さ2のベクトル。\n</li>\n<li>\nn: 試行の数; xの長さが2の場合は無視されます。\n</li>\n<li>\np: 仮定された成功の確率。\n</li>\n<li>\nalternative: 対立仮説を示し、「two.sided」、「greater」または「less」のいずれかでなければなりません。最初の文字だけを指定できます。\n</li>\n<li>\nconf.level: 返される信頼区間の信頼レベル。\n</li>\n</ul>\n<b>詳細</b></br>\n信頼区間は、ClopperとPearson（1934）で最初に示された手順によって得られます。これにより、信頼レベルは少なくともconf.levelになりますが、一般的には最短の信頼区間を提供しません。<br/>\n<b>値</b><br/>\n次のコンポーネントを含む「htest」クラスのリスト:<br/>\nstatistic: 成功の数。<br/>\nparameter: 試行の数。<br/>\np.value: 検定のp値。<br/>\nconf.int: 成功の確率の信頼区間。<br/>\nestimate: 成功の確率の推定値。<br/>\nnull.value: 帰無仮説の下での成功の確率、p。<br/>\nalternative: 対立仮説を説明する文字列。<br/>\nmethod: 文字列「正確な二項検定」。<br/>\ndata.name: データの名前を示す文字列。<br/>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(binom.test, package=stats)\n    "
+  }
+}

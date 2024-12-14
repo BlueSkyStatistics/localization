@@ -4,11 +4,10 @@
     "tvarbox1": "X",
     "tvarbox2": "Y",
     "tvarbox3": "Z",
-    "chk1": "Option1",
-    "chk2": "Option2",
+    "chk1": "Add raw data points (black dots) based on x and y onto the contour plot",
     "help": {
         "title": "2D Contour Plot",
         "r_help": "help(geom_contour_filled, package='ggplot2')",
-        "body": "\n\n    "
+        "body": "\n\t\t\t <b>Description</b></br>\n\t\t\tFilled contour regions\n\t\t\t</br>\n\t\t\tContour lines separate regions where the z variable falls into different ranges.\n\t\t\t</br>\n\t\t\tThe areas between contour lines are filled with colors, representing different z value ranges.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tColor scale\n\t\t\t</br>\n\t\t\tThe Spectral palette from ColorBrewer is applied to fill the contour regions.\n\t\t\t</br>\n\t\t\tThe Spectral palette is a diverging color scheme, transitioning from cool to warm colors, ideal for showing gradients in data.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tOptionally add raw data points to the plot\n\t\t\t</br>\n\t\t\tThis layer plots individual points based on the x and y values in the dataset (points are black dots).\n\t\t\t</br>\n\t\t\tIt provides a way to overlay the raw data points onto the contour plot, giving more context to the contour visualization.\n    "
     }
 }

@@ -1,0 +1,13 @@
+{
+  "title": "Analyse de biais de gage, de base",
+  "navigation": "Analyse de biais de gage, de base",
+  "variableRespSelcted": "(Optionnel si la variable de biais est sélectionnée) Sélectionnez la variable pour la mesure/réponse",
+  "variableRefSelcted": "Sélectionnez la variable pour la valeur de référence/standard",
+  "variableBiasSelcted": "(Optionnel) Sélectionnez la variable pour le biais si disponible ; sinon, elle sera calculée automatiquement",
+  "alpha": "Intervalle de confiance pour la linéarité (entre 0 et 1)",
+  "help": {
+    "title": "Analyse de biais de gage",
+    "r_help": "help(lm, package = stats)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer une analyse de biais de linéarité\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser les fichiers de jeu de données d'exemple linearityBias.xlsx. Ouvrez les fichiers dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tChoisissez les variables dans la boîte de sélection, Référence et Mesure\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

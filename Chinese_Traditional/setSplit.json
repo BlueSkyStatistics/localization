@@ -1,0 +1,11 @@
+{
+  "title": "設置分割",
+  "navigation": "分割",
+  "label0": "分割允許您將數據集分成由一個或多個分割變量定義的組。分析是針對每個組單獨進行的。",
+  "SelectedVars": "選擇要分割的變量",
+  "help": {
+    "title": "設置分割",
+    "r_help": "",
+    "body": "<b>描述</b></br>\n        根據所選因素將數據分成組，一旦數據集被分割，您選擇的分析將獨立於每個分割進行。例如，如果您運行交叉表分析或假設檢驗，這些分析將獨立於每個分割進行（分析的輸出也會為每個分割單獨生成）。\n         <br/>\n                <b>用法</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(col.names, datasetnameorindex, removeall.splits = FALSE)\n          </code> <br/>\n            <b>參數</b><br/>\n                 <ul>\n                   <li>\n        col.names: 這些是您希望按其分割數據集的列名/變量名，例如 col.names =c(\"var1\", \"var2\").\n         </li>\n                <li>\n        datasetnameorindex: 這是索引的名稱。​\n          </li>\n                <li>\n        removeall.splits: TRUE 將移除分割，FALSE 將添加分割。\n         </li>\n                </ul>\n            <b>包</b></br>\n               不適用，這個函數是 BlueSky 包中的內部函數。這個函數基本上是在數據集上設置屬性。根據這些屬性，我們在每個分割上獨立運行分析。</br>\n                <b>幫助</b></br>\n        NA\n        "
+  }
+}

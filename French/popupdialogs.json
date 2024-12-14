@@ -1,0 +1,45 @@
+{  
+	"CSV_Options": "Options CSV",
+	"CSVopt_first_row_header_chk" : "La première ligne du fichier CSV/TXT contient des en-têtes",
+	"CSVopt_field_sep_label": "Spécifiez le séparateur de champs :",
+	"CSVopt_commas_radio": "Virgules (,)",
+	"CSVopt_semicolons_radio": "Points-virgules (;)",
+	"CSVopt_tabs_radio": "Tabulations",
+	"CSVopt_whitespace_radio": "Espaces",
+	"CSVopt_other_radio": "Autre,",
+	"CSVopt_specify_tbox": "Spécifier",
+
+	"CSVopt_deci_sep_label": "Spécifiez le caractère décimal :",
+	"CSVopt_decimal_radio": "Point décimal (.) [par exemple : 1.234]",
+	"CSVopt_comma_radio": "Virgule (,) [par exemple : 1,234]",
+	"CSVopt_grp_char_label": "Optionnellement, spécifiez un caractère de regroupement [par exemple : 1.000.000]. Pas besoin d'écrire la virgule par défaut :",
+
+	"CSVopt_ok_btn": "OK",
+	"CSVopt_cancel_btn": "Annuler",
+
+	"OpenWrkSheet": "Ouvrir une feuille de travail",
+	"OpnWrkSht_label": "Pour un nom de colonne, nous acceptons les lettres, les chiffres et les traits de soulignement. Tous les autres caractères non pris en charge seront remplacés par un trait de soulignement. Vous pouvez renommer la colonne depuis la grille des variables.",
+	"OpnWrkSht_first_row_header_chk": "La première ligne contient les en-têtes de colonnes",
+	"OpnWrkSht_dropdown": "Sélectionnez la feuille de travail à ouvrir",
+	"OpnWrkSht_open_btn": "Ouvrir",
+
+	"Save_project_title": "Enregistrer le projet",
+	"Save_prj_label": "Enregistrez le projet actuel",
+	"Save_prj_name": "Entrez le nom du projet :",
+	"Save_prj_options": "Options d'enregistrement :",
+	"Save_prj_defaultDir_radio": "Enregistrez le projet dans le répertoire par défaut :",
+	"Save_prj_customDir_radio": "Enregistrez le projet dans un emplacement spécifié",
+	"Save_prj_customDir_label": "Sélectionnez un emplacement où vous souhaitez enregistrer le projet :",
+	"Save_prj_chooseDir_btn": "Choisir un dossier",
+	"Save_prj_save_btn": "Enregistrer",
+	"Save_prj_dontsave_btn": "Ne pas enregistrer",
+	"Save_prj_cancelsave_btn": "Annuler",
+	
+	"rerun_missingDSTitle": "Jeu(x) de données non disponible(s)",
+	"rerun_missingDSLbl": "Les jeux de données suivants ne sont pas ouverts dans la grille de données. Ouvrez-les et réessayez, ou utilisez 'Fichier > Relancer la sortie' pour exécuter un autre nom de jeu de données.",
+	"rerun_missingDScancelBtn": "Annuler",
+	"reproducibilityErrMsg" : "La reproductibilité n'est pas prise en charge pour les fichiers de sortie créés avec d'anciennes versions. Les fichiers de sortie doivent être créés avec la version 10.3.7 ou supérieure.",
+	"reproducibilityErrTitle": "Non pris en charge",
+	
+	"closeDSsaveWarn" : "Cette version de BlueSky Statistics ne suit pas si vous avez enregistré vos modifications. Si vous n'avez pas enregistré vos modifications, veuillez le faire, sinon elles seront perdues."
+}

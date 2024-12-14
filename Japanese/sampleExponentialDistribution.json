@@ -1,0 +1,18 @@
+{
+  "title": "指数分布からのサンプル",
+  "navigation": "指数分布からのサンプル",
+  "entrdsname": "データセットの名前を入力してください",
+  "rate": "レート",
+  "lblnoofsamples": "サンプル数（行）",
+  "lblnoofobsv": "観測数（列）",
+  "lblseed": "シード",
+  "lblAddtoDS": "データセットに追加",
+  "chklbl1": "サンプル平均",
+  "chklbl2": "サンプル合計",
+  "chklbl3": "サンプル標準偏差",
+  "help": {
+    "title": "指数分布からのサンプル",
+    "r_help": "help(rexp, package=stats)",
+    "body": "\n            ​​\n            <b>説明</b>\n            <br/>\n            指数分布の密度、分布関数、分位数関数、およびレートrate（すなわち、平均1/rate）に基づく乱数生成。\n            <br/>\n            使用法\n            <br/>\n            <code>\n                dexp(x, rate = 1, log = FALSE)\n                <br/>\n                pexp(q, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qexp(p, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rexp(n, rate = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>引数</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位数のベクトル。</li>\n                \n                \n                <li>p : 確率のベクトル。</li>\n                \n                \n                <li>n : 観測数。もしlength(n) > 1の場合、必要な長さが取られます。</li>\n                \n                \n                <li>rate : レートのベクトル。</li>\n                \n                \n                <li>log, log.p : 論理値; TRUEの場合、確率pはlog(p)として与えられます。</li>\n                \n                \n                <li>lower.tail : 論理値; TRUE（デフォルト）の場合、確率はP[X ≤ x]、それ以外の場合はP[X > x]です。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細</b>\n            <br/>\n            rateが指定されていない場合、デフォルト値1が使用されます。\n            <br/>\n            レートλの指数分布は密度\n            <br/>\n            <code>f(x) = λ {e}^{- λ x}</code>\n            <br/>\n            x ≥ 0のとき。\n            <br/>\n            <br/><b>値</b>\n            <br/>\n            dexpは密度を、pexpは分布関数を、qexpは分位数関数を、rexpは乱数を生成します。\n            <br/>\n            結果の長さはrexpのnによって決定され、他の関数の数値引数の長さの最大値です。\n            <br/>\n            n以外の数値引数は結果の長さにリサイクルされます。論理引数の最初の要素のみが使用されます。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累積ハザードH(t) = - log(1 - F(t))は-pexp(t, r, lower = FALSE, log = TRUE)です。            \n      "
+  }
+}
