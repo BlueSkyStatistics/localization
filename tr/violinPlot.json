@@ -1,0 +1,22 @@
+{
+  "title": "Keman Grafiği",
+  "navigation": "Keman",
+  "x": "X ekseni, bir faktör değişkeni belirtin",
+  "y": "Y ekseni, bir veya daha fazla sayısal değişken belirtin",
+  "fill": "Doldurma, bir faktör değişkeni belirtin",
+  "alpha": "Opaklık (0-1)",
+  "flip": "Eksenleri çevir",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Keman Grafiği",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>Açıklama</b></br>\n            Keman grafiği, sürekli bir dağılımın kompakt bir gösterimidir. Bu, geom_boxplot() ve geom_density()'nin bir karışımıdır: bir keman grafiği, bir kutu grafiği ile aynı şekilde gösterilen yansıtılmış bir yoğunluk grafiğidir.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"... için Keman grafiği\")\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti​\n            </li>\n            <li>\n            x: Y değişkenini gruplara ayıran bir faktör değişkeni​.\n            </li>\n            <li>\n            y: Keman grafiğinin oluşturulduğu sayısal değişken\n            </li>\n            <li>\n            fill: Mevcut grupları daha fazla gruplamak için isteğe bağlı bir faktör/kategorik değişken. Her alt grup farklı bir renkte gösterilecektir.​\n            </li>\n            <li>\n            aes(): Verilerdeki değişkenlerin geoms'in görsel özelliklerine (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            geom_violin(): Keman grafiğini oluşturur. \n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirir (Bu isteğe bağlıdır)​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.\n    "
+  }
+}

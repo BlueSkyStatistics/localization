@@ -1,0 +1,18 @@
+{
+  "title": "Criar Design de Hipercubo Latino (para Fatores Quantitativos)",
+  "navigation": "Criar Design de Hipercubo Latino (Quantitativo)",
+  "selectedvars": "Selecionar variáveis",
+  "datasetname": "Nome do design",
+  "lblheading": "Tamanho e randomização",
+  "numOfRuns": "Número de execuções",
+  "numOfDeciPlaces": "Número de casas decimais",
+  "lbl1": "Você pode não precisar alterar as configurações de randomização",
+  "randomseeds": "Semente para randomização",
+  "randomizationChk": "Randomizar a geração do design",
+  "lhsDesignType": "designs de amostragem de hipercubo latino (ver pacotes lhs ou DiceDesign para outros tipos)",
+  "help": {
+    "title": "Criar Design de Hipercubo Latino (para Fatores Quantitativos)",
+    "r_help": "ajuda(lhs.design, pacote = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tA função lhs.design para acessar designs de amostragem de hipercubo latino do pacote lhs ou designs de preenchimento de espaço do pacote DiceDesign, que são úteis para fatores quantitativos com muitos níveis possíveis. Em particular, eles podem ser usados em experimentos computacionais. A maioria dos designs são amostras aleatórias.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R ajuda(lhs.design, pacote = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de amostra chamado factor_grid__latin_hypercube_Design.xlsx. Abra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

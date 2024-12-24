@@ -1,0 +1,13 @@
+{
+  "title": "نموذج مقياس التقييم (متعدد الأبعاد)",
+  "navigation": "نموذج مقياس التقييم (متعدد الأبعاد)",
+  "modelname": "أدخل اسم النموذج",
+  "destinationvars": "العناصر",
+  "firstlevel": "متغير المستوى الأول",
+  "secondlevel": "متغير المستوى الثاني",
+  "help": {
+    "title": "نموذج مقياس التقييم (متعدد الأبعاد)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>الوصف</b>\n            <br/>\n            يولد تقديرات المعلمات لنموذج مقياس تقييم متعدد الأبعاد\n            <br/><br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>المعلمات</b>\n            <br/>\n            <ul>\n            <li>\n            resp: إطار بيانات مع استجابات عناصر متعددة القيم k=0,...,K. يجب إعلان الاستجابات المفقودة كـ NA.\n            </li>\n            <li>\n            formulaA: صيغة التصميم (تنطبق فقط على tam.mml.mfr). انظر المثال 8 في المساعدة التفصيلية. من الممكن أيضًا تعيين جميع تأثيرات البعد إلى صفر، مثل item*step + 0*rater (انظر المثال 10a في المساعدة التفصيلية).\n            </li>\n            <li>\n            facets: إطار بيانات مع إدخالات البعد (تنطبق فقط على tam.mml.mfr)\n            </li>\n            <li>\n            pid: متجه اختياري لمعرفات الأشخاص\n            </li>\n            <li>\n            verbose: منطقي يشير إلى ما إذا كان يجب طباعة المخرجات أثناء التكرارات.\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>الحزم</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>المساعدة</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

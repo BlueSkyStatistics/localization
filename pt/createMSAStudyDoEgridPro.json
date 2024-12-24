@@ -1,0 +1,30 @@
+{
+  "title": "Criar uma Tabela de Experimentos para um Estudo de Gage MSA",
+  "navigation": "Projetar Estudo MSA",
+  "datasetname": "Nome da tabela do estudo de Gage MSA",
+  "label1": "Detalhes das Peças",
+  "label2": "Detalhes dos Operadores",
+  "factor1": "Nome da variável Peça (por exemplo, Peça como padrão)",
+  "numOfFactorLevels1": "Número de Peças",
+  "factorLevels1": "Deixe em branco para gerar valores automaticamente ou especifique valores - exemplo: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "Se gerar automaticamente, especifique qualquer Prefixo. Se em branco, criará valores como 1,2,3,..",
+  "factor2": "Nome da variável Operador (por exemplo, Operador como padrão)",
+  "numOfFactorLevels2": "Número de Operadores",
+  "factorLevels2": "Deixe em branco para gerar valores automaticamente ou especifique valores - exemplo: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "Se gerar automaticamente, especifique qualquer Prefixo. Se em branco, criará valores como 1,2,3,..",
+  "numOfBlocks": "Número de blocos",
+  "replicationVarName": "se não deixado em branco, nome para a variável de iteração de replicação se replicação > 1",
+  "replications": "Replicações",
+  "repeatOnlyChk": "Repetir apenas (em vez de replicação verdadeira - não recomendado)",
+  "randomizationChk": "Aleatorizar as execuções",
+  "selectRandomSeedRad": "Gerar automaticamente a semente aleatória (única a cada vez)",
+  "selectFixedRandomSeedRad": "Escolha como mostrado ou altere manualmente a seguinte semente aleatória",
+  "lbl1": "Você pode não precisar alterar o valor da semente de aleatorização",
+  "randomseeds": "Semente para aleatorização",
+  "sortByOperatorChk": "Classificar por Operador dentro de cada replicação",
+  "help": {
+    "title": "Gerar automaticamente uma tabela de experimentos para um Estudo de Gage MSA",
+    "r_help": "ajuda(fac.design, pacote=DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tGera automaticamente uma tabela de estudo MSA para configurar as execuções do experimento com detalhes de Peça e Operador com base nos parâmetros especificados. \n\t\t\t\tSe valores não numéricos forem usados para Peça e Operador, especifique entre aspas simples, por exemplo, 1,-1,'nome1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUma vez que os detalhes da execução do experimento sejam gerados automaticamente, a tabela de execução aparecerá na interface de dados. \n\t\t\t\tA tabela de execução pode ser salva (ou 'salvar como' no menu de arquivo) para criar um arquivo excel a ser usado para configurar os experimentos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

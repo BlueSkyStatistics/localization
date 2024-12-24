@@ -1,0 +1,15 @@
+{
+  "title": "Dimensione del campione, Precisione di una media",
+  "navigation": "Una media",
+  "howtouse": "Specifica sia la dimensione del campione che la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n": "Dimensione del campione",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "mean": "Media",
+  "sd": "Deviazione standard",
+  "conflevel": "Livello di confidenza (0-1)",
+  "help": {
+    "title": "Dimensione del campione, Precisione di una media",
+    "r_help": "help(prec_mean, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per una media basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Media:</b> Specifica il valore medio atteso\n<br/><br/>\n<b>Deviazione standard:</b> Specifica la deviazione standard dell'esito\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

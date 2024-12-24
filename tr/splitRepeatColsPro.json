@@ -1,0 +1,24 @@
+{
+  "title": "Tekrarlayan değişken grupları ile bir veri kümesini bölme/çökmüş hale getirme",
+  "navigation": "Tekrarlayan Değişken Setleri",
+  "removeColsWithConstantChk": "Bölmeden veya çökmeden önce sabit değerler içeren tüm sütunları kaldırın (büyük/küçük harf duyarsız)",
+  "removeRowsWithNAsChk": "Yalnızca eksiksiz durumları koruyun, yani çıktı veri kümesindeki herhangi bir boş veya NA değeri olan tüm satırı kaldırın",
+  "resultDatasetNameSuffix": "(Opsiyonel) çıktı veri kümesi adı(ları) için bir veya daha fazla dize (virgülle ayrılmış) kullanmak üzere kullanılacak ek",
+  "splitDatasetRad": "Veri kümesini tekrarlayan değişken setine göre birden fazla veri kümesine bölün",
+  "autoDetectColGroupLengthRad": "Bölmek veya çökertmek için tekrarlayan değişken setini otomatik olarak algılayın",
+  "manualColGroupLengthRad": "Bölmek veya çökertmek için kullanılacak tekrarlayan değişken setinin uzunluğunu belirtin",
+  "manualRepeatingColumnGroupLength": "Tekrarlayan değişken setinin uzunluğu",
+  "outputColumnNames": "(Opsiyonel) çıktı veri kümesi(leri) için kullanılacak değişken adlarının listesi (virgülle ayrılmış)",
+  "collapseDatasetRad": "Birden fazla veri kümesine bölmek yerine tek bir uzun veri kümesi oluşturmak için çökertin",
+  "collapseGpIDPrefix": "Set ID değerleri için ön ek",
+  "collapseGpIDColName": "Set ID değişken adı (çıktı veri kümesinde yeni bir değişken oluşturulacak)",
+  "collapseGpIDColFirstChk": "Set ID değişkenini ilk sütun yapın (son sütun için işareti kaldırın)",
+  "makeCollapseGpIDColFactorChk": "Set ID değişkenini faktör yapın",
+  "label1": "Tekrarlayan değişken setinin algılanması",
+  "label2": "Veri kümesini bölmek veya çökertmek mi?",
+  "help": {
+    "title": "Tekrarlayan değişken grupları ile bir veri kümesini bölme/çökmüş hale getirme",
+    "r_help": "",
+    "body": "\n            <b>Açıklama</b></br>\n            Bu diyalog, tekrarlayan değişken setine sahip bir veri kümesini (birden fazla veri kümesine) bölmek veya (tek bir uzun veri kümesine) çökertmek için kullanılır\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tÖrnek 1: Bunu denemek için Repeating Variable Sets.xlsx adlı örnek veri kümesi dosyasını kullanabilirsiniz\n\t\t\t<br/>\n\t\t\tDosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t<br/>\n\t\t\tDiyalogda - yazın\n\t\t\t<br/>\n\t\t\tÜç tekrarlayan değişken seti olduğu için üç veri kümesi oluşturulacak. çıktı veri kümesi adı ekleri için none, one veya daha fazla dize yazabilirsiniz\n\t\t\tabcX, abcY, abcZ gibi\n\t\t\t<br/>\n\t\t\tDiyalogdaki diğer her öğeyi varsayılan olarak bırakın  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tÖrnek 2: Bunu denemek için Repeating Variable Sets2.xlsx adlı örnek veri kümesi dosyasını kullanabilirsiniz\n\t\t\t<br/>\n\t\t\tDosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t<br/>\n\t\t\tDiyalogda - yazın\n\t\t\t<br/>\n\t\t\tDört tekrarlayan değişken seti olduğu için dört veri kümesi oluşturulacak\n\t\t\t<br/>\n\t\t\tDiyalogdaki her öğeyi varsayılan olarak bırakın \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tDiyalogun \"Veri kümesini böl veya çökert\" bölümünde çökertme seçeneğini denemek için aynı iki örnek veri kümesi dosyasını kullanabilirsiniz ve tek bir çıktı veri kümesi oluşturabilirsiniz\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

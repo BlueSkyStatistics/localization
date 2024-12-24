@@ -1,20 +1,20 @@
 {
-  "title": "Créer un Design de Matrice Orthogonale",
-  "navigation": "Créer un Design de Matrice Orthogonale",
+  "title": "Créer un design de tableau orthogonal",
+  "navigation": "Créer un design de tableau orthogonal",
   "selectedvars": "Sélectionner les variables",
   "datasetname": "Nom du design",
-  "numOfRuns": "Nombre minimum de répétitions (peut être laissé vide)",
+  "numOfRuns": "Nombre minimum de courses (peut être laissé vide)",
   "minNumOfResidual": "Nombre minimum de degrés de liberté résiduels",
   "replications": "Répétitions",
   "repeatOnlyChk": "Répéter seulement",
   "lbl1": "Vous n'avez peut-être pas besoin de changer les paramètres de randomisation",
   "randomseeds": "Graine pour la randomisation",
   "randomizationChk": "Randomiser la génération de design",
-  "designnamefromcatlg": "(Optionnel) Matrice de design orthogonale (exemple : de oacat$name comme L12.2.2.6.1)",
+  "designnamefromcatlg": "(Optionnel) Tableau de design orthogonal (exemple : de oacat$name comme L12.2.2.6.1)",
   "columnOptimization": "Optimisation des colonnes (par défaut est l'ordre, autres choix min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr)",
   "help": {
-    "title": "Créer un Design de Matrice Orthogonale",
+    "title": "Créer un design de tableau orthogonal",
     "r_help": "help(oa.design, package = DoE.base)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\toa.design fonction pour accéder aux matrices orthogonales, permettant une allocation optimale limitée des colonnes\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUtilisez le menu DOE->Inspecter le Design->Inspecter le Catalogue de Design Orthogonal (oacat) pour parcourir les Designs Orthogonaux disponibles à référencer depuis le catalogue de design chargé dans le package DoE.base\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de données d'exemple appelé factor_grid_orthogonal_array_Design.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\tOptionnellement, vous pouvez spécifier L72.2.53.3.2.4.1 comme le design de oacat$name\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\toa.design fonction pour accéder aux tableaux orthogonaux, permettant une allocation optimale limitée des colonnes\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUtilisez le menu DOE->Inspecter le design->Inspecter le catalogue de design orthogonal (oacat) pour parcourir les designs orthogonaux disponibles à référencer à partir du catalogue de design chargé dans le package DoE.base\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé factor_grid_orthogonal_array_Design.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\tOptionnellement, vous pouvez spécifier L72.2.53.3.2.4.1 comme le design de oacat$name \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "title": "Naive Bayes",
+  "navigation": "Naive Bayes",
+  "modelname": "Model adını girin",
+  "dependentvar": "Bağımlı değişken",
+  "independentvars": "Bağımsız değişken(ler)",
+  "help": {
+    "title": "Naive Bayes",
+    "r_help": "help(NaiveBayes,package='klaR')",
+    "body": "\n                <b>Açıklama</b></br>\nKoşullu a-posteriori olasılıkları, bağımsız tahmin değişkenleri verildiğinde kategorik bir sınıf değişkeni için Bayes kuralını kullanarak hesaplar. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nformül : class ~ x1 + x2 + .... Etkileşimlere izin verilmez.\n</li>\n<li>\ndata: tahmincilerin (kategorik ve/veya sayısal) bir veri çerçevesi.\n</li>\n<li>\nna.action : NAs bulunduğunda alınacak eylemi belirtmek için bir fonksiyon. Varsayılan eylem, olasılık faktörlerinin hesaplanması için bunları saymamaktır. Alternatif olarak, eksik değerleri olan durumların reddedilmesine yol açan na.omit vardır. (NOT: Eğer verilirse, bu argüman adlandırılmalıdır.)\n</li>\n<li>\n... : yoğunluğa geçirilen argümanlar.\n</li>\n</ul>\n<b>Paket</b></br>\ncaret;klaR</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın</br>\nhelp(NaiveBayes,package='klaR')\n"
+  }
+}

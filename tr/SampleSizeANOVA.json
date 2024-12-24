@@ -1,0 +1,16 @@
+{
+  "title": "Örneklem Büyüklüğü, ANOVA",
+  "navigation": "ANOVA",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için: grup ortalamalarını ve gücü belirtin\nGücü hesaplamak için: örneklem büyüklüğünü ve grup ortalamalarını belirtin\nGrup ortalamalarının tespit edilebilir varyansını hesaplamak için: örneklem büyüklüğünü ve gücü belirtin",
+  "numgrps": "Grup Sayısı",
+  "n": "Grup Başına Örneklem Büyüklüğü",
+  "grpmeans": "Grup Ortalamaları, değerleri virgülle ayırarak belirtin, örn. 20, 25, 40",
+  "power": "Güç (0-1)",
+  "sd": "Standart Sapma",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "help": {
+    "title": "Örneklem Büyüklüğü, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nBu, dengeli bir tek yönlü ANOVA için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğer ikisini belirttiğinde, örneklem büyüklüğünü, gücü veya ortalamalar arasındaki farkı (ortalama varyansı olarak hesaplanır) hesaplar.\n<br/><br/>\n<b>Grup Sayısı:</b> Çalışmadaki grup sayısını belirtin\n<br/><br/>\n<b>Grup Başına Örneklem Büyüklüğü:</b> Her gruptaki denek sayısını belirtin\n<br/><br/>\n<b>Grup Ortalamaları:</b> Tespit etmek istediğiniz her gruptaki ortalamaları belirtin. En az bir ortalama diğerlerinden farklı olmalıdır.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa, testin sıfır hipotezini reddetme olasılığı.\n<br/><br/>\n<b>Standart Sapma:</b> Sonucun standart sapmasını belirtin. Bu, gruplar arasında aynı olduğu varsayılmaktadır.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini (yani tip I hatası) belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Düzensiz (Kesirli) Faktöriyel 2 seviyeli Tarama Tasarımı Oluştur",
+  "navigation": "2 seviyeli Tarama Tasarımı Oluştur",
+  "selectedvars": "Değişkenleri seçin",
+  "datasetname": "Tasarım adı",
+  "numOfRuns": "Koşu sayısı (4'ün katı, >=8)",
+  "taguchiOrderChk": "(Sadece ilgili olan) Taguchi sırasındaki 12 koşulu tasarım",
+  "numOfCenterPts": "Merkez noktası sayısı (kullanılıyorsa, en az 2 olmalıdır)",
+  "centerPointDistribution": "Merkez nokta dağılımı için pozisyon sayısı (1'den fazla olmalıdır)",
+  "replications": "Tekrarlar",
+  "repeatOnlyChk": "Sadece tekrar et",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmeniz gerekmeyebilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım oluşturmayı rastgeleleştir",
+  "help": {
+    "title": "2 seviyeli Tarama Tasarımı Oluştur",
+    "r_help": "help(pb, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDüzensiz kesirli faktöriyel 2 seviyeli tarama tasarımları oluşturmak için Plackett-Burman(pb) fonksiyonu\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R yardımını kullanın (pb, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, factor_grid_twolevel_screen_Design.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

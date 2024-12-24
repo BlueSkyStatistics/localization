@@ -1,0 +1,11 @@
+{
+  "title": "누락된 값 대체 (문자열/팩터 변수)",
+  "navigation": "문자/팩터",
+  "destination": "대상 변수",
+  "repString": "NAs로 대체할 문자열을 입력하세요. 주의: 문자열을 따옴표로 묶지 마세요. 팩터 변수의 경우, 지정된 값은 팩터의 레벨이어야 합니다. 변수 > 팩터 레벨 > 추가를 참조하세요.",
+  "help": {
+    "title": "누락된 값 대체 (문자열/팩터 변수)",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>설명</b></br>\n지정된 값으로 선택된 변수의 누락된 값을 대체합니다. 대화 상자를 사용할 때는 문자열을 큰따옴표로 묶을 필요가 없습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('대체할 문자열')\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nNAs를 대체해야 하는 데이터셋 변수 (var1, var2)\n</li>\n</ul>\n<b>값</b><br/>\n지정된 문자열로 데이터셋의 누락된 값을 대체합니다.<br/>\n<b>패키지</b></br>\nbase</br>\n<b>도움말</b></br>\nhelp(is.na,package=base)"
+  }
+}

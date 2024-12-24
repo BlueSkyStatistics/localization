@@ -1,0 +1,27 @@
+{
+  "title": "Subconjunto por Posição",
+  "navigation": "Subconjunto Por Posição",
+  "newdatasetlabel": "Especificar Nome do Novo Conjunto de Dados",
+  "sortbyvarslabel": "Variáveis para Ordenar Primeiro (Ordem Crescente)",
+  "groupbyvarslabel": "Grupos para Subconjuntar Dentro",
+  "subsettypelabel": "Tipo de Subconjunto",
+  "firstnlabel": "Primeiras N Linhas",
+  "lastnlabel": "Últimas N Linhas",
+  "lowestnlabel": "Linhas com os N Valores Mais Baixos para uma Variável",
+  "highestnlabel": "Linhas com os N Valores Mais Altos para uma Variável",
+  "firstproplabel": "Primeira Proporção de Linhas",
+  "lastproplabel": "Última Proporção de Linhas",
+  "lowestproplabel": "Linhas dentro do Percentil Mais Baixo para uma Variável",
+  "highestproplabel": "Linhas dentro do Percentil Mais Alto para uma Variável",
+  "nlabel": "N (positivo mantém, negativo remove)",
+  "proplabel": "Proporção (positivo mantém, negativo remove)",
+  "varlabel": "Variável",
+  "tieslabel": "Incluir Valores Empatados",
+  "rownumlabel": "Especificar Números de Linhas",
+  "rownumboxlabel": "Números ou intervalos separados por vírgulas (ex: 1,3,5 ou 20:30 ou seq(2,10,by=2), positivo mantém, negativo remove)",
+  "help": {
+    "title": "Subconjunto por Posição",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nIsso subconjunta um conjunto de dados de acordo com a posição da linha.\n<br/><br/>\n<b>Especificar Nome do Novo Conjunto de Dados:</b> Nome do conjunto de dados onde os dados subconjuntados serão armazenados\n<br/><br/>\n<b>Variáveis para Ordenar Primeiro:</b> Variáveis usadas para ordenar as linhas antes que qualquer subconjunto seja realizado. Isso afetará apenas opções que selecionam o número de linhas, por exemplo, \nPrimeiras/Últimas N Linhas, Primeira/Última Proporção de Linhas e Especificar Números de Linhas. Sempre estará em ordem crescente.\n<br/><br/>\n<b>Grupos para Subconjuntar Dentro:</b> Especificar nenhuma variável irá subconjuntar de acordo com a posição da linha do conjunto de dados inteiro. Especificar variáveis irá subconjuntar de acordo com a posição da linha\ndentro de grupos definidos por todas as combinações de valores para as variáveis especificadas.\n<br/><br/>\n<b>Tipo de Subconjunto</b>\n<br/><br/>\n<b>Primeiras N Linhas:</b> Mantém as primeiras N linhas do conjunto de dados no geral ou dentro de grupos\n<br/><br/>\n<b>Últimas N Linhas:</b> Mantém as últimas N linhas do conjunto de dados no geral ou dentro de grupos\n<br/><br/>\n<b>Linhas com os N Valores Mais Baixos para uma Variável:</b> Mantém as linhas que têm os valores ordenados mais baixos para uma variável especificada no geral ou dentro de grupos. Por exemplo, especificar 10 iria \nmantém as linhas com os 10 valores mais baixos para uma variável.\n<br/><br/>\n<b>Linhas com os N Valores Mais Altos para uma Variável:</b> Mantém as linhas que têm os valores ordenados mais altos para uma variável especificada no geral ou dentro de grupos. Por exemplo, especificar 10 iria \nmantém as linhas com os 10 valores mais altos para uma variável.\n<br/><br/>\n<b>Primeira Proporção de Linhas:</b> Mantém as linhas na proporção superior do conjunto de dados no geral ou dentro de grupos. Por exemplo, especificar .10 iria manter os 10% superiores do conjunto de dados \nde acordo com o número total de linhas.\n<br/><br/> \n<b>Última Proporção de Linhas:</b> Mantém as linhas na proporção inferior do conjunto de dados no geral ou dentro de grupos. Por exemplo, especificar .10 iria manter os 10% inferiores do conjunto de dados \nde acordo com o número total de linhas.\n<br/><br/>\n<b>Linhas dentro do Percentil Mais Baixo para uma Variável:</b> Mantém as linhas no percentil mais baixo para uma variável especificada, no geral ou dentro de grupos. Por exemplo, especificar .10 iria \nmantém o percentil mais baixo de 10 para uma variável (mínimo até o 10º percentil).\n<br/><br/>\n<b>Linhas dentro do Percentil Mais Alto para uma Variável:</b> Mantém as linhas no percentil mais alto para uma variável especificada, no geral ou dentro de grupos. Por exemplo, especificar .10 iria \nmantém o percentil mais alto de 10 para uma variável (percentil 90 até o máximo).\n<br/><br/>\n<b>Especificar Números de Linhas:</b> Mantém as linhas numeradas exatas especificadas. Por exemplo, especificar 1,3,5 iria manter a primeira, terceira e quinta linhas. Especificar 20:30 iria manter as linhas 20 \na 30. Especificar seq(2,10,by=2) iria manter as linhas de número par até a 10ª linha.\n<br/><br/>\n<b>Incluir Valores Empatados:</b> Especifica se os valores empatados devem ser incluídos ou não. Por exemplo, se você quiser as linhas para os 10 valores mais baixos de uma variável e o 10º mais baixo \nvalor aparece mais de uma vez, incluir os valores empatados irá manter todas as linhas que igualam o valor duplicado. \n<br/><br/>\nNote que especificar valores negativos para N ou a proporção remove as linhas correspondentes do conjunto de dados. Por exemplo, especificar -10 para as Primeiras N Linhas iria remover \nas primeiras 10 linhas. Especificar -.10 para a Primeira Proporção de Linhas, iria remover os primeiros 10% das linhas.\n<br/><br/>\n<b>Pacotes R Necessários:</b> dplyr\n\t\t\t"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Tasarımı İçe Aktar - daha önce dışa aktarılan tasarıma eklenmiş yanıt sütunları ile bir csv dosyası olmalıdır",
+  "navigation": "Tasarım Yanıtını İçe Aktar",
+  "datasetname": "Yanıt(lar) ile tasarımı oluşturmak için isim",
+  "importResp": "Yanıt sütun(ları) içeren tasarım dosyası için dosya yolu (bir csv dosyası olmalıdır)",
+  "help": {
+    "title": "Mevcut Bir Tasarıma Yanıtları İçe Aktar",
+    "r_help": "help(add.response, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tYanıt sütunları eklenmiş Tasarım csv dosyasını içe aktarın, yani daha önce dışa aktarılan orijinal tasarımdan gerçekleştirilen deneylerden elde edilen sonuçlar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVeri seti UI ızgarasında zaten açık olan bir tasarıma karşı csv dosyasını içe aktarmanın amacı, csv dosyasından yanıt sütunlarını otomatik olarak tasarıma eklemek ve belirtilen isimle yeni bir tasarım oluşturmaktır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt sütunları ile yeni tasarım oluşturulduktan sonra - bu, DOE -> Tasarımı Analiz Et menüsü altında çeşitli analiz yöntemleri ile analiz edilebilir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAyrıca, bir veya daha fazla yanıt sütununu belirleme/belirlememe işlemi DOE -> Tasarımı Değiştir -> Yanıt Ekle/Kaldır menüsü ile gerçekleştirilebilir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGerekli tasarım zaten veri seti UI ızgarasında açık değilse, Dosya Aç menüsünü kullanarak daha önce \"Tasarımı Dışa Aktar\" menüsü ile dışa aktarılan tasarım R nesnesini (.rda dosyası) dosya sistemindeki bir dizine yükleyin.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEk bilgi için - R help(add.response, package = DoE.base) kullanın.\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

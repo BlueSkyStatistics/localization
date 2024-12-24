@@ -1,0 +1,15 @@
+{
+  "title": "Dati Aggregati",
+  "navigation": "Aggregare",
+  "description": "Aggrega una o più variabili numeriche (scala) per una o più variabili fattore e crea un nuovo dataset aggregato. Per le variabili numeriche calcoliamo quanto segue:\n        media, mediana, somma, sd, n_distinct, max, min e var. \n        Calcola anche i conteggi nel dataset aggregato.",
+  "label1": "Opzioni di aggregazione",
+  "upperdesc": "Seleziona la funzione che desideri applicare alle variabili da aggregare",
+  "datasetname": "Inserisci il nome del dataset aggregato",
+  "showResultsinOutput": "Visualizza i risultati nella finestra di output",
+  "groupBy": "Raggruppa per (Variabili di tipo fattore o data)",
+  "help": {
+    "title": "Aggregare a Dataset",
+    "r_help": "help(group_by, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\nAggrega una o più variabili numeriche (scala) per una o più variabili fattore e crea un nuovo dataset aggregato. Per le variabili numeriche calcoliamo quanto segue:\nmedia, mediana, somma, sd, n_distinct, max, min e var. \nCalcola anche i conteggi nel dataset aggregato.\n<br/>\n<b>Utilizzo</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Aggiorna il dataset</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Argomenti</b>\n <ul>\n   <li>\nvar1: fattore da raggruppare\n</li>\n<li>\nvar2, var3: variabile da aggregare\n</li>\n<li>\nnewvarmean: media di var2 raggruppata per var1 nel dataset aggregato\n</li>\n<li>\n​newvarmedian: mediana di var3 raggruppata per var1 nel dataset aggregato\n</li>\n</ul>\n            "
+  }
+}

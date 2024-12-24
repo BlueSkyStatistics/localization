@@ -1,0 +1,24 @@
+{
+  "title": "Bir dosyadan modelleri yükle",
+  "navigation": "Modelleri Yükle",
+  "filterModels": "Sınıfa göre modelleri filtrele",
+  "modelSelection": "Kaydetmek için bir model seçin",
+  "importResp": "Modelleri yüklemek için bir dosya seçin",
+  "label1": "Belirtilen dosyadaki tüm modeller belleğe yüklenecektir. Not: Eğer aynı isimde mevcut modeller varsa, üzerine yazılacaktır.",
+  "levelOfInterest": "Tahmin edilecek değişkenin 2 seviyesi olduğunda, ilgi düzeyini belirtin. Karışıklık matrisi ve ilgili istatistikler, belirtilen ilgi düzeyi referans olarak görüntülenir.",
+  "label12": "Test sonuçları: Bir model seçildiği anda, modelde belirtilen bağımlı değişkenlerin skorlama veri setinde mevcut olup olmadığını görmek için testler yapacağız. Sonuçlar burada görüntülenecektir.",
+  "label2": "Tahmin edilen değerleri ve destekleyici istatistikleri kaydedin.",
+  "label3": "Tahminler ve tahmin edilen olasılıklar, skorlama veri setinde yeni değişkenler olarak aşağıdaki önek ile saklanır.",
+  "label4": "**2 seviyeli bağımlı değişkenler için, 2. seviye pozitif seviye olarak kabul edilir. Faktör seviyelerinin sırasını değiştirmek ve modeli yeniden oluşturmak için Veri > Faktör Seviyeleri > Seviyeleri Manuel Olarak Yeniden Sırala'ya bakın.",
+  "conflevel": "Bireysel tahmin edilen değerler için güven aralıklarını kaydedin **(Sadece lineer modeller için geçerlidir (sınıf lm))",
+  "roctable": "ROC tablosunu göster (**Sadece ikili bağımlı değişkenler için)",
+  "colname": "Sütun adı öneki belirtin",
+  "label5": "**Yukarıdaki onay kutusunu işaretlemek, büyük veri setleri için bir performans cezası doğuracaktır.",
+  "level": "Güven düzeyini belirtin",
+  "confusioncheck": "Karışıklık Matrisi Oluştur",
+  "help": {
+    "title": "Modelleri Yükle",
+    "r_help": "help(load, package='base')",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen dosyaya kaydedilen R Model nesneleri yüklenecektir.</br>\nSeçilen dosyaya kaydedilen TÜM R nesnelerini yükleyeceğiz. Eğer R küresel ortamında aynı isimde nesneler varsa, üzerine yazılacaktır.</br>\nYüklenen BlueSky uygulaması ile oluşturulan modelleri onaylayan bir mesaj görüntüleyeceğiz.</br>\nSeçilen dosyaya kaydedilen R nesnelerini yüklemek için çalıştır düğmesine (yatay üçgen düğmesi) tıklamanız gerekmektedir. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nload(file =\"dosyanın yolu\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nfile:dizini ile dosya adı, seçilen model nesneleri bu RData dosyasına kaydedilecektir\n</li>\n</ul>\n<b>Paket</b></br>\nbas</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R editör penceresinde help(load, package = 'base') komutunu çalıştırın.\n</br>\n                "
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Campione dalla distribuzione Weibull",
+  "navigation": "Campione dalla distribuzione Weibull",
+  "entrdsname": "Inserisci il nome del dataset",
+  "shape": "Forma",
+  "scale": "Scala",
+  "lblnoofsamples": "Numero di campioni (righe)",
+  "lblnoofobsv": "Numero di osservazioni (colonne)",
+  "lblseed": "Seme",
+  "lblAddtoDS": "Aggiungi al dataset",
+  "chklbl1": "Medie campionarie",
+  "chklbl2": "Somme campionarie",
+  "chklbl3": "Deviazioni standard campionarie",
+  "help": {
+    "title": "Campione dalla distribuzione Weibull",
+    "r_help": "help(rweibull, package=stats)",
+    "body": "\n            ​​\n            <b>Descrizione</b>\n            <br/>\n            Densità, funzione di distribuzione, funzione quantile e generazione casuale per la distribuzione Weibull con parametri forma e scala.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argomenti</b>\n            <br/>\n            <ul>\n                <li>x, q : vettore di quantili.</li>\n                \n                \n                <li>p : vettore di probabilità.</li>\n                \n                \n                <li>n : numero di osservazioni. Se length(n) > 1, la lunghezza è presa come il numero richiesto.</li>\n                \n                \n                <li>shape, scale : parametri di forma e scala, quest'ultimo predefinito a 1.</li>\n                \n                \n                <li>log, log.p : logico; se TRUE, le probabilità p sono date come log(p).</li>\n                \n                \n                <li>lower.tail : logico; se TRUE (predefinito), le probabilità sono P[X ≤ x], altrimenti, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Dettagli</b>\n            <br/>\n            La distribuzione Weibull con parametro di forma a e parametro di scala b ha densità data da\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            per x > 0. La funzione di distribuzione cumulativa è F(x) = 1 - exp(- (x/b)^a) su x > 0, la media è E(X) = b Γ(1 + 1/a), e la Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2).\n            <br/>\n            <br/><b>Valore</b>\n            <br/>\n            dweibull fornisce la densità, pweibull fornisce la funzione di distribuzione, qweibull fornisce la funzione quantile, e rweibull genera deviate casuali.\n            <br/>\n            Argomenti non validi restituiranno un valore di ritorno NaN, con un avviso.\n            <br/>\n            La lunghezza del risultato è determinata da n per rweibull, ed è il massimo delle lunghezze degli argomenti numerici per le altre funzioni.\n            <br/>\n            Gli argomenti numerici diversi da n vengono riciclati alla lunghezza del risultato. Solo i primi elementi degli argomenti logici vengono utilizzati.\n            <br/>\n            <br/><b>Nota</b>\n            <br/>\n            Il rischio cumulativo <code>H(t) = - log(1 - F(t))</code> è\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            che è semplicemente <code>H(t) = (t/b)^a</code>.            \n      "
+  }
+}

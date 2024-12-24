@@ -1,0 +1,10 @@
+{
+  "title": "Karşıtları Göster",
+  "navigation": "Karşıtları Göster",
+  "target": "Hedef",
+  "help": {
+    "title": "Karşıtları Göster",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>Açıklama</b></br>\n            Bir faktör değişkeni ile ilişkili karşıtları gösterir.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            x: bir R nesnesi.​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            stats</br>\n            <b>Yardım</b></br>\n            help(contrasts, package ='stats')        \n            "
+  }
+}

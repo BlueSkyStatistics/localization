@@ -1,21 +1,21 @@
 {
-  "title": "Binning",
+  "title": "Agrupación",
   "navigation": "Bin",
-  "vartobin": "Seleccione una variable para bin",
-  "varname": "Ingrese un nombre de variable para guardar el valor binned",
-  "noofbins": "Especifique el número de bins",
+  "vartobin": "Selecciona una variable para agrupar",
+  "varname": "Ingresa un nombre de variable para guardar el valor agrupado",
+  "noofbins": "Especifica el número de grupos",
   "label1": "Nombres de niveles",
-  "Names": "Especifique nombres",
-  "levelnames": "Ingrese nombres de niveles separados por comas (,), por ejemplo: bueno,mejor,mejor",
+  "Names": "Especificar nombres",
+  "levelnames": "Ingresa nombres de niveles separados por comas (,), p. ej. bueno, mejor, mejor",
   "Numbers": "Números",
   "Ranges": "Rangos",
-  "label2": "Método de binning",
-  "equalwidth": "Bins de igual ancho",
-  "equalcount": "Bins de igual conteo",
-  "natural": "Cortes naturales (clustering K-means)",
+  "label2": "Método de agrupación",
+  "equalwidth": "Grupos de igual ancho",
+  "equalcount": "Grupos de igual cantidad",
+  "natural": "Rupturas naturales (agrupamiento K-means)",
   "help": {
-    "title": "Binning",
+    "title": "Agrupación",
     "r_help": "help(binVariable,package='RcmdrMisc')",
-    "body": "\n<b>Descripción</b></br>\nCree un factor que diseca el rango de una variable numérica en bins de igual ancho, (aproximadamente) igual frecuencia, o en puntos de corte \"naturales\" (determinados por el clustering K-means).\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nX: variable numérica a bin.\n</li>\n<li>\nBins: número de bins.\n</li>\n<li>\nmétodo: uno de \"intervals\" para bins de igual ancho; \"proportions\" para bins de igual conteo; \"natural\" para que los puntos de corte entre bins sean determinados por el clustering K-means.\n</li>\n<li>\nLabels: si FALSE, se utilizarán etiquetas numéricas para los niveles de factor; si NULL, se utilizan los puntos de corte para definir etiquetas; de lo contrario, un vector de caracteres de nombres de niveles.\n</li>\n</ul>\n<b>Paquete</b></br>\nRcmdrMisc</br>\n<b>Ayuda</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+    "body": "\n<b>Descripción</b></br>\nCrea un factor que diseca el rango de una variable numérica en grupos de igual ancho, (aproximadamente) igual frecuencia, o en puntos de corte \"naturales\" (determinados por agrupamiento K-means)\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nX: variable numérica a agrupar.\n</li>\n<li>\nBins: número de grupos.\n</li>\n<li>\nmethod: uno de \"intervals\" para grupos de igual ancho; \"proportions\" para grupos de igual cantidad; \"natural\" para que los puntos de corte entre grupos sean determinados por agrupamiento K-means.\n</li>\n<li>\nLabels: si es FALSE, se usarán etiquetas numéricas para los niveles del factor; si es NULL, los puntos de corte se usan para definir etiquetas; de lo contrario, un vector de caracteres de nombres de niveles.\n</li>\n</ul>\n<b>Paquete</b></br>\nRcmdrMisc</br>\n<b>Ayuda</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
   }
 }

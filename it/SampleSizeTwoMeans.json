@@ -1,0 +1,20 @@
+{
+  "title": "Dimensione del campione, Test di due medie",
+  "navigation": "Due medie",
+  "howtouse": "Per calcolare la dimensione del campione: specificare entrambe le medie di gruppo e la potenza\nPer calcolare la potenza: specificare entrambe le medie di gruppo e la dimensione del campione\nPer calcolare la differenza media rilevabile: specificare la dimensione del campione e la potenza",
+  "n": "Dimensione del campione",
+  "power": "Potenza (0-1)",
+  "meangrp1": "Media del gruppo di trattamento",
+  "meangrp2": "Media del gruppo di controllo",
+  "ratio": "Rapporto dimensione campione Trattamento vs Controllo",
+  "sd": "Deviazione standard",
+  "siglevel": "Livello di significatività (0-1)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Due lati",
+  "onesided": "Un lato",
+  "help": {
+    "title": "Dimensione del campione, Test di due medie",
+    "r_help": "help(epi.sscompc, package ='epiR')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test t a due campioni delle medie. Calcola la dimensione del campione, la potenza o la differenza media (delta) quando l'utente \nspecifica le altre due.\n<br/><br/>\n<b>Dimensione del campione:</b> Specificare il numero di soggetti nello studio\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera.\n<br/><br/>\n<b>Media del gruppo di trattamento:</b> Specificare la media per il gruppo di trattamento\n<br/><br/>\n<b>Media del gruppo di controllo:</b> Specificare la media per il gruppo di controllo\n<br/><br/>\n<b>Rapporto dimensione campione Trattamento vs Controllo:</b> Specificare il rapporto desiderato delle dimensioni dei campioni (N trattamento diviso N controllo). Un rapporto di 1 significa dimensioni campione uguali.\n<br/><br/>\n<b>Deviazione standard:</b> Stima della deviazione standard aggregata dei gruppi\n<br/><br/>\n<b>Livello di significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Ipotesi alternativa:</b> Specificare se il test è a due lati o a un lato\n<br/><br/>\n<b>Pacchetti R richiesti:</b> epiR\n\t\t\t"
+  }
+}

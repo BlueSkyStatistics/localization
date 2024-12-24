@@ -1,0 +1,19 @@
+{
+  "title": "Amostra da Distribuição de Cauchy",
+  "navigation": "Amostra da Distribuição de Cauchy",
+  "entrdsname": "Digite o nome do conjunto de dados",
+  "location": "Localização",
+  "scale": "Escala",
+  "lblnoofsamples": "Número de amostras (linhas)",
+  "lblnoofobsv": "Número de observações (colunas)",
+  "lblseed": "Semente",
+  "lblAddtoDS": "Adicionar ao conjunto de dados",
+  "chklbl1": "Médias das amostras",
+  "chklbl2": "Somas das amostras",
+  "chklbl3": "Desvios padrão das amostras",
+  "help": {
+    "title": "Amostra da Distribuição de Cauchy",
+    "r_help": "help(rcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Densidade, função de distribuição, função quantil e geração aleatória para a distribuição de Cauchy com parâmetro de localização e parâmetro de escala.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis.</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>location, scale : parâmetros de localização e escala.</li>\n                \n                \n                <li>log, log.p : lógico; se TRUE, as probabilidades p são dadas como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; se TRUE (padrão), as probabilidades são P[X ≤ x], caso contrário, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalhes</b>\n            <br/>\n            Se location ou scale não forem especificados, assumem os valores padrão de 0 e 1, respectivamente.\n            <br/>\n            A distribuição de Cauchy com localização l e escala s tem densidade\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            para todo x.\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dcauchy, pcauchy e qcauchy são respectivamente a densidade, função de distribuição e função quantil da distribuição de Cauchy. rcauchy gera desvios aleatórios da Cauchy.\n            <br/>\n            O comprimento do resultado é determinado por n para rcauchy, e é o máximo dos comprimentos dos argumentos numéricos para as outras funções.\n            <br/>\n            Os argumentos numéricos, exceto n, são reciclados para o comprimento do resultado. Apenas os primeiros elementos dos argumentos lógicos são usados.\n            <br/>\n            <b>Fonte</b>\n            <br/>\n            dcauchy, pcauchy e qcauchy são todos calculados a partir de versões numericamente estáveis das definições.\n            <br/>\n            rcauchy usa inversão."
+  }
+}

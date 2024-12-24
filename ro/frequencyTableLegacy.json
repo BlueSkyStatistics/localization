@@ -1,10 +1,10 @@
 {
-  "title": "Tabelă de Frecvență (Legacy)",
+  "title": "Tabel de Frecvență (Legacy)",
   "navigation": "Frecvențe (Legacy)",
-  "subsetvars": "Selectați variabile",
+  "subsetvars": "Selectați variabilele",
   "help": {
-    "title": "Tabelă de Frecvență",
-    "r_help": "ajutor(ftable, pachet=stats)",
-    "body": "\n<b>Descriere</b></br>\nGenerează frecvențele pentru fiecare valoare unică din una sau mai multe variabile sau nume de coloane selectate.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"numele_datasetului\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Detalii</b></br>\nAceastă fereastră de dialog folosește următoarele funcții:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+    "title": "Tabel de Frecvență",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>Descriere</b></br>\nGenerează frecvențele pentru fiecare valoare unică din una sau mai multe variabile sau nume de coloane selectate.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"numele_datasetului\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Detalii</b></br>\nAceastă dialog folosește următoarele funcții:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
   }
 }

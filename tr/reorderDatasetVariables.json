@@ -1,0 +1,12 @@
+{
+  "title": "Değişkenleri Alfabetik Olarak Yeniden Sırala",
+  "navigation": "Değişkenleri Yeniden Sırala",
+  "label1": "Değişkenleri alfabetik olarak yeniden sırala",
+  "rd1": "A-Z",
+  "rd2": "Z-A",
+  "help": {
+    "title": "Değişkenleri Alfabetik Olarak Yeniden Sırala",
+    "r_help": "help(sort)",
+    "body": "\n<b>Açıklama</b></br>\nVeri kümesindeki değişkenleri alfabetik sıraya göre yeniden sıralayın. Veri kümesindeki sütunların/değişkenlerin adlarını sıralamak için sıralama işlevini ve doğru alfabetik sırada sütun adlarını seçmek için dplyr paketindeki select işlevini kullanıyoruz.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n##Alfabetik olarak yeniden sıralama (A-Z)\nDataset_name <- Dataset_name %>%   dplyr::select(sort(names(.)))\n##Alfabetik olarak yeniden sıralama (Z-A)\nDataset_name <- Dataset_name %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>Argümanlar</b><br/>\nYok<br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Yardım</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n    "
+  }
+}

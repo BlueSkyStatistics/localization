@@ -1,0 +1,21 @@
+{
+  "title": "Kontur Grafiği",
+  "navigation": "Kontur Grafiği",
+  "x": "X değişkeni, sayısal bir değişken belirtin",
+  "y": "Y değişken(ler)i, sayısal bir değişken(ler) belirtin",
+  "flip": "Eksenleri Çevir",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "colorHintLabel1": "Bir renk seçin (Renk seçimini yaptıktan sonra, uygulamak için kontrolün dışına tıklayın)",
+  "help": {
+    "title": "Kontur Grafiği",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>Açıklama</b></br>\n            MASS::kde2d() kullanarak 2D kernel yoğunluk tahmini gerçekleştirin ve sonuçları konturlar ile gösterin. Bu, aşırı çizimle başa çıkmak için yararlı olabilir. Bu, geom_density()'nin 2D versiyonudur.</br>\n            Facetler, bir faktör değişkeni belirterek isteğe bağlı olarak oluşturulabilir. Ayrıca temaları isteğe bağlı olarak belirtebilir ve x ve y eksenleri için bir başlık ve etiketler belirtebilirsiniz.​\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"Kontur grafiği için...\")\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti​\n            </li>\n            <li>\n            aes(): Verilerdeki değişkenlerin geoms'in görsel özelliklerine (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            x: Sayısal bir değişken\n            </li>\n            <li>\n            y: Sayısal bir değişken\n            </li>\n            <li>\n            geomdensity2d: Grafiği oluşturur\n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirir (Bu isteğe bağlıdır)​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_density2d), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.​\n    "
+  }
+}

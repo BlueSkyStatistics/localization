@@ -1,0 +1,12 @@
+{
+  "title": "Kısmi Korelasyonlar",
+  "navigation": "Kısmi",
+  "tvarbox1": "Değişkenleri seçin",
+  "statistic": "Bir yöntem seçin",
+  "tvarbox2": "Kontrol değişkenlerini seçin",
+  "help": {
+    "title": "Kısmi Korelasyonlar",
+    "r_help": "help(pcor.test, package=ppcor)",
+    "body": "\n<b>Açıklama</b></br>\nÜçüncü bir değişken verildiğinde iki değişken için kısmi korelasyon. Seçilen değişkenler kontrolü içinde belirtilen her bir değişken çifti arasındaki kısmi korelasyonu hesaplayacağız, kontrol değişkenleri kontrolü içinde belirtilen değişkenleri kontrol ederek.<br/>\npcor.test fonksiyonu etrafında bir sarmalayıcı yazdık, bu fonksiyon belirtilen değişken çiftleri için pcor.test'i çağırır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \npcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nArgümanlar\nx: sayısal bir vektör.\n</li>\n<li>\ny: sayısal bir vektör.\n</li>\n<li>\ny: sayısal bir vektör.\n</li>\n<li>\nyöntem: hangi kısmi korelasyon katsayısının hesaplanacağını belirten bir karakter dizesi. \"pearson\" (varsayılan), \"kendall\" veya \"spearman\"'dan biri kısaltılabilir.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nKısmi korelasyon, üçüncü bir değişkeni kontrol ederken iki değişkenin korelasyonudur. Varyans-kovaryans matrisinin determinantı sayısal olarak sıfır olduğunda, Moore-Penrose genelleştirilmiş matris tersine başvurulur. Bu durumda, değişken sayısı örnek boyutuna eşit veya daha büyük olduğunda p-değeri ve istatistik sağlanmayacaktır.</br>\n<b>Değer</b><br/>\nestimate: iki değişken arasındaki kısmi korelasyon katsayısı.<br/>\np.value: testin p-değeri.<br/>\nn: Örnek sayısı.<br/>\n<b>Örnekler</b><br/>\n<code> \npcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n</code> <br/>\n<b>Paket</b></br>\nppcor</br>\n<b>Yardım</b></br>\nhelp(pcor.test, package=ppcor)\n"
+  }
+}

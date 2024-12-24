@@ -1,0 +1,13 @@
+{
+  "title": "Carregar um Conjunto de Dados de um Pacote R",
+  "navigation": "Carregar Conjunto de Dados",
+  "label1": "Se o Pacote R não estiver disponível, vá para Ferramentas> Pacote> Instalar Pacote R do CRAN para instalá-lo.",
+  "label2": "Se você não ver um conjunto de dados no dropdown, o pacote selecionado não contém o conjunto de dados.",
+  "selectAPackage": "Selecione um pacote R do qual carregar um conjunto de dados",
+  "selectADataset": "Selecione um conjunto de dados para carregar na grade",
+  "help": {
+    "title": "Carregar um Conjunto de Dados de um Pacote R",
+    "r_help": "help(data,package='utils')",
+    "body": "\n<b>Descrição</b></br>\nCarrega o conjunto de dados selecionado na grade de dados do BlueSky Statistics. Usa a função data que carrega conjuntos de dados especificados ou lista os conjuntos de dados disponíveis.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n#Carrega o conjunto de dados na memória<br/>\ndata(..., package = NULL, overwrite = TRUE)<br/>\n#Carrega o conjunto de dados na grade de dados do BlueSky Statistics<br/>\nBSkyLoadRefresh(\"nome do conjunto de dados\")<br/>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n...: strings literais ou nomes dos conjuntos de dados a serem carregados\n</li>\n<li>\npackage: um vetor de caracteres que indica o(s) pacote(s) a serem pesquisados para conjuntos de dados, ou NULL.\n</li>\n<li>\noverwrite: lógico: os objetos existentes com o mesmo nome em envir devem ser substituídos?\n</li>\n</ul>\n<b>Detalhes</b></br>\nCarrega o conjunto de dados especificado na grade de dados</br>\n<b>Valor</b><br/>\nUm data frame.<br/>\n<b>Exemplos</b><br/>\n<code> \n## Um exemplo ridículo...\ndata(oil)\nBSkyLoadRefresh(\"oil\")\n</code> <br/>\n<b>Pacote</b></br>\nutils</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste overlay de diálogo ou execute o seguinte comando help(data, package ='utils') criando um bloco de código R clicando + na janela de saída           \n"
+  }
+}

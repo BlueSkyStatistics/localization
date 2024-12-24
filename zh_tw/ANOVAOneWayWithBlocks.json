@@ -1,14 +1,14 @@
 {
-  "title": "單因素方差分析（帶區塊）",
-  "navigation": "單因素方差分析，帶區塊",
-  "tvarbox1": "響應變量（一個）",
+  "title": "單因子變異數分析，帶區塊",
+  "navigation": "單因子變異數分析，帶區塊",
+  "tvarbox1": "反應變數（單一）",
   "tvarbox2": "固定效應",
-  "blockVar": "區塊變量",
-  "chk1": "殘差直方圖",
+  "blockVar": "區塊變數",
+  "chk1": "殘差的直方圖",
   "chk2": "事後分析",
   "help": {
-    "title": "單因素方差分析（帶區塊）",
+    "title": "單因子變異數分析，帶區塊",
     "r_help": "help(Anova, package='car')",
-    "body": "\n<b>描述</b></br>\n各種統計模型的方差分析表​\n計算由lm、glm、multinom（在nnet包中）、polr（在MASS包中）、coxph（在生存包中）、coxme（在coxme包中）、svyglm（在調查包中）、rlm（在MASS包中）、lmer（在lme4包中）、lme（在nlme包中）生成的模型對象的II型或III型方差分析表，以及（通過默認方法）大多數具有線性預測器和漸近正態係數的模型（見下面的詳細信息）。對於線性模型，計算F檢驗；對於廣義線性模型，計算似然比卡方、Wald卡方或F檢驗；對於多項式邏輯回歸和比例優勢邏輯回歸模型，計算似然比檢驗。為由lm或manova生成的多元線性模型提供各種檢驗統計量。為Cox模型提供部分似然比檢驗或Wald檢驗。為線性和廣義線性混合效應模型中的固定效應提供Wald卡方檢驗。默認情況下提供Wald卡方或F檢驗。​\n<br/>\n<b>用法</b>\n<br/>\n<code> \nAnova(mod, type='II,...)​\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod: lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm或其他合適的模型對象。​\n</li>\n<li>\ntype: 檢驗類型，\"II\"、\"III\"、2或3。​\n</li>\n</ul>\n<b>詳細信息</b></br>\n\"II型\"和\"III型\"的名稱借用自SAS，但這裡使用的定義與SAS使用的定義並不完全對應。II型檢驗根據邊際性原則計算，在忽略該項的高階相關項的情況下，測試每個項在所有其他項之後；所謂的III型檢驗違反了邊際性，在模型中測試每個項在所有其他項之後。II型檢驗的定義對應於SAS為方差分析模型生成的檢驗，其中所有的預測變量都是因子，但不更一般（即，當存在定量預測變量時）。在制定III型檢驗的模型時要非常小心，否則所測試的假設將沒有意義。​</br>\n在這裡實現的II型Wald檢驗是一種用於生成這些檢驗的線性假設的推廣。​</br>\n對於線性模型、多元線性模型和廣義線性模型的Wald檢驗、Cox模型、混合效應模型、適合於調查數據的廣義線性模型，以及在默認情況下，Anova在不重新擬合模型的情況下找到檢驗統計量。svyglm方法僅調用默認方法，因此可以接受相同的參數。​</br>\n<b>值</b><br/>\n一個\"anova\"或\"Anova.mlm\"類的對象，通常會被打印。對於\"Anova.mlm\"類的對象，還有一個摘要方法，提供比打印方法更多的關於MANOVA的細節，包括帶有Greenhouse-Geisser和Huynh-Feldt校正的傳統混合模型單變量F檢驗。​​</br>\n<b>包</b></br>\nAnova</br>\n<b>幫助</b></br>\nhelp(Anova, package='car')​</br></br>\n<b>描述</b></br>\n事後均值分離檢驗。要為每個主要效應因子變量執行事後均值分離檢驗，我們將使用emmeans包。考慮的線性模型稱為模型，由上面的lm函數創建。  \n<br/>\n<b>用法</b>\n<br/>\n<code> \nlsmeans(model,\n            var1 ~ var2, \n            adjust=\"tukey\") \n</code> <br/>\n<b>包</b></br>\nFSA;car;emmeans;ggplot2;multcomp</br>\n<b>幫助</b></br>\nhelp(lsmeans, package=\"emmeans\")​\n    "
+    "body": "\n<b>描述</b></br>\n各種統計模型的變異數分析表​\n計算由lm、glm、multinom（在nnet包中）、polr（在MASS包中）、coxph（在生存包中）、coxme（在coxme包中）、svyglm（在調查包中）、rlm（在MASS包中）、lmer（在lme4包中）、lme（在nlme包中）生成的模型對象的II型或III型變異數分析表，並且（根據默認方法）對於大多數具有線性預測器和漸近正態係數的模型（見下文詳情）。對於線性模型，計算F檢驗；對於廣義線性模型，計算似然比卡方、Wald卡方或F檢驗；對於多項式邏輯回歸和比例賠率邏輯回歸模型，計算似然比檢驗。對於由lm或manova生成的多變量線性模型，提供各種檢驗統計量。對於Cox模型，提供部分似然比檢驗或Wald檢驗。對於線性和廣義線性混合效應模型中的固定效應，提供Wald卡方檢驗。在默認情況下，提供Wald卡方或F檢驗。​\n<br/>\n<b>用法</b>\n<br/>\n<code> \nAnova(mod, type='II,...)​\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod: lm、aov、glm、multinom、polr mlm、coxph、coxme、lme、mer、merMod、svyglm、rlm或其他合適的模型對象。​\n</li>\n<li>\ntype: 測試類型，\"II\"、\"III\"、2或3。​\n</li>\n</ul>\n<b>詳情</b></br>\n\"II型\"和\"III型\"的名稱源自SAS，但這裡使用的定義與SAS所使用的定義不完全相符。II型檢驗根據邊際性原則計算，在所有其他項目之後測試每個項目，但忽略該項目的高階關係；所謂的III型檢驗違反邊際性，在模型中的所有其他項目之後測試每個項目。這種II型檢驗的定義對於SAS生成的變異數分析模型的檢驗是正確的，其中所有預測變數都是因子，但不更一般（即，當有定量預測變數時）。在制定III型檢驗的模型時要非常小心，否則所測試的假設將沒有意義。​</br>\n在這裡實現的II型Wald檢驗是用於生成這些檢驗的線性假設的一種概括。​</br>\n對於線性模型、多變量線性模型和廣義線性模型的Wald檢驗、Cox模型、混合效應模型、適合於調查數據的廣義線性模型，以及在默認情況下，Anova在不重新擬合模型的情況下找到檢驗統計量。svyglm方法僅僅調用默認方法，因此可以接受相同的參數。​</br>\n<b>值</b><br/>\n一個\"anova\"或\"Anova.mlm\"類的對象，通常會被打印出來。對於\"Anova.mlm\"類的對象，還有一個摘要方法，提供比打印方法更多的關於MANOVA的詳細信息，包括傳統的混合模型單變量F檢驗，並帶有Greenhouse-Geisser和Huynh-Feldt修正。​​</br>\n<b>包</b></br>\nAnova</br>\n<b>幫助</b></br>\nhelp(Anova, package='car')​</br></br>\n<b>描述</b></br>\n事後均值分離檢驗。要對每個主要效應因子變數執行事後均值分離檢驗，我們將使用emmeans包。考慮的線性模型稱為模型，是通過上面的lm函數創建的。  \n<br/>\n<b>用法</b>\n<br/>\n<code> \nlsmeans(model,\n            var1 ~ var2, \n            adjust=\"tukey\") \n</code> <br/>\n<b>包</b></br>\nFSA;car;emmeans;ggplot2;multcomp</br>\n<b>幫助</b></br>\nhelp(lsmeans, package=\"emmeans\")​\n    "
   }
 }

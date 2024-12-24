@@ -1,0 +1,10 @@
+{
+  "title": "R Paketi Yardımı",
+  "navigation": "R Paketi Yardımı",
+  "packageName": "Yüklü bir R paketini seçin",
+  "help": {
+    "title": "R Paketi Yardımı",
+    "r_help": "help()",
+    "body": "\n<b>Açıklama</b></br>\nhelp, yardım sistemlerine birincil arayüzdür.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nhelp(konu, paket = NULL, lib.loc = NULL,\n    verbose = getOption(\"verbose\"),\n    try.all.packages = getOption(\"help.try.all.packages\"),\n    help_type = getOption(\"help_type\"))\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nkonu: genellikle, yardım istenen konuyu belirten bir isim veya karakter dizisi. Açıkça tekil veya çift tırnak içinde yer alan bir karakter dizisi her zaman bir konuyu adlandırmak olarak alınır. Eğer konu değeri bir uzunluk-bir karakter vektörü ise, konu yalnızca tek bir elemanın değerini alır. Aksi takdirde konu, bir isim veya ayrılmış bir kelime (eğer sözdizimsel olarak geçerliyse) veya karakter dizisi olmalıdır. \n</li>\n<li>\npaket: belgeleri aramak için bakılacak paketleri veren bir isim veya karakter vektörü, veya NULL. Varsayılan olarak, ad alanları yüklü olan tüm paketler kullanılır. Bir ismin çözülmesini önlemek için örneğin (pkg_ref) kullanın.\n</li>\n<li>\nlib.loc: R kütüphanelerinin dizin adlarının karakter vektörü, veya NULL. NULL varsayılan değeri, şu anda bilinen tüm kütüphanelere karşılık gelir. Varsayılan kullanılıyorsa, yüklü paketler ve ad alanları kütüphanelerden önce aranır.\n</li>\n<li>\nverbose: mantıksal; eğer DOĞRU ise, dosya adı rapor edilir.\n</li>\n<li>\ntry.all.packages: mantıksal; Not'a bakın.\n</li>\n<li>\nhelp_type: karakter dizisi: gerekli yardım türü. Olası değerler \"metin\", \"html\" ve \"pdf\"dir. Büyük/küçük harf dikkate alınmaz ve kısmi eşleşmeye izin verilir.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nPaket üzerindeki yardım</br>\n<b>Örnekler</b><br/>\n<code> \nhelp(paket = \"splines\")\n</code> <br/>\n<b>Paket</b></br>\nutils</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help()\n                "
+  }
+}

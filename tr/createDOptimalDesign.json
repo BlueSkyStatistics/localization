@@ -1,0 +1,20 @@
+{
+  "title": "D-Optimal Tasarım Oluştur",
+  "navigation": "D-Optimal Tasarım Oluştur",
+  "datasetname": "D-optimal Tasarım adı",
+  "candidateDesignChk": "Mevcut bir aday tasarımdan (tam faktöriyel, FrF2, Ortogonal veya Latin) D-optimal tasarım oluştur - bu iletişim kutusunun mevcut tasarımda açıldığından emin olun, böylece aday tasarımı dolaylı olarak seçebilirsiniz",
+  "selectedvars": "D-optimal tasarım oluşturmak için değişkenleri seçin (yukarıda aday tasarım kontrolü varsa göz ardı edilir) mevcut bir aday tasarımdan değil",
+  "numOfRuns": "Koşu sayısı",
+  "formula": "Formül - modeli içermek için tüm faktörleri varsayılan olarak bırakın veya örneğin ~quad(.) gibi bir doğrusal model formülü yazın",
+  "numOfOptiRepeats": "Optimizasyon Tekrarları Sayısı",
+  "numOfBlocks": "Blok Sayısı",
+  "blockName": "Blok adı",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmeniz gerekmeyebilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım üretimini rastgeleleştir",
+  "help": {
+    "title": "D-Optimal Tasarım Oluştur",
+    "r_help": "help(Dopt.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDopt.design fonksiyonu, bloklama ile veya bloklama olmadan D-optimal tasarımlar oluşturmak için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(Dopt.design, package = DoE.wrapper) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\tÖncelikle tam faktöriyel tasarımı oluşturun, bu diyalogdan/tasarım arayüzünden tam faktöriyel tasarımı seçin ve bir tam faktöriyel tasarımından D-optimal tasarım oluşturmak için runs = 16 belirtin\n\t\t\t"
+  }
+}

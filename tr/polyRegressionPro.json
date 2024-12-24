@@ -1,0 +1,15 @@
+{
+  "title": "Polinom Regresyon Modeli",
+  "navigation": "Polinom",
+  "modelname": "Polinom Regresyon modeli adı",
+  "dependentVar": "Bağımlı (örneğin, yanıt) Değişken",
+  "independentVar": "Bağımsız (örneğin, doz, konsantrasyon..) Değişken",
+  "polyDegree": "Polinom denkleminin derecesi. Benzersiz veri noktalarının sayısından az olmalıdır",
+  "comparePolyModelsChk": "Karşılaştırmak için ek Polinom modelleri hesapla",
+  "addlPolyDegrees": "Birden fazla Polinom modeli oluşturmak için bir veya daha fazla derece belirtin (örneğin, 3, 4, 5)",
+  "help": {
+    "title": "Polinom Regresyon Modeli",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>Açıklama</b></br>\n            Bu diyalog, belirtilen derece ile ortogonal bir polinom modelini hesaplamak ve uyarlamak için kullanılır\n\t\t\t<br/>\n\t\t\tlm(response ~ poly(bir tahmin edici, derece), data = dataset) kullanarak\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\thelp(poly, package ='stats')'ye ek olarak, aşağıdaki R yardım sayfalarına göz atın\n            <br/>\n\t\t\thelp(anova, package ='stats') - farklı derecelere sahip polinom modellerini karşılaştırmak için kullanılır \n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - polinom modellerini karşılaştırmak için AIC hesaplamak için kullanılır\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - polinom modellerini karşılaştırmak için BIC hesaplamak için kullanılır\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - lm() ve poly()'nin birlikte kullanıldığı iyi bir referans\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tBu diyaloğu, Veri Setleri Yükle menüsünden cars veri setini yükleyerek deneyebilirsiniz\t\t\t\n\t\t\tBağımlı değişken olarak dist ve bağımsız değişken olarak speed'i seçin\n\t\t\t<br/>\n"
+  }
+}

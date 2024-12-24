@@ -1,0 +1,21 @@
+{
+  "title": "Agrupamento",
+  "navigation": "Bin",
+  "vartobin": "Selecione uma variável para agrupar",
+  "varname": "Digite um nome de variável para salvar o valor agrupado",
+  "noofbins": "Especifique o número de grupos",
+  "label1": "Nomes dos níveis",
+  "Names": "Especifique nomes",
+  "levelnames": "Digite os nomes dos níveis separados por vírgula (,), ex: bom,muito bom,excelente",
+  "Numbers": "Números",
+  "Ranges": "Intervalos",
+  "label2": "Método de agrupamento",
+  "equalwidth": "Grupos de largura igual",
+  "equalcount": "Grupos de contagem igual",
+  "natural": "Quebras Naturais (Agrupamento K-means)",
+  "help": {
+    "title": "Agrupamento",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Descrição</b></br>\nCrie um fator que dissecou o intervalo de uma variável numérica em grupos de largura igual, (aproximadamente) frequência igual, ou em pontos de corte \"naturais\" (determinados por agrupamento K-means)\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nX: variável numérica a ser agrupada.\n</li>\n<li>\nBins: número de grupos.\n</li>\n<li>\nmethod: um dos \"intervals\" para grupos de largura igual; \"proportions\" para grupos de contagem igual; \"natural\" para que os pontos de corte entre os grupos sejam determinados pelo agrupamento k-means.\n</li>\n<li>\nLabels: se FALSE, rótulos numéricos serão usados para os níveis do fator; se NULL, os pontos de corte são usados para definir rótulos; caso contrário, um vetor de caracteres de nomes de níveis.\n</li>\n</ul>\n<b>Pacote</b></br>\nRcmdrMisc</br>\n<b>Ajuda</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

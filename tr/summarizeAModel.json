@@ -1,0 +1,10 @@
+{
+  "title": "Bir Modeli Özetle",
+  "navigation": "Bir modeli özetle",
+  "modelselector1": "Bir model seçin",
+  "help": {
+    "title": "Bir Modeli Özetle",
+    "r_help": "help(summary)",
+    "body": "\n                <b>Açıklama</b></br>\nsummary, çeşitli model uyum fonksiyonlarının sonuç özetlerini üretmek için kullanılan genel bir işlevdir. Fonksiyon, ilk argümanın sınıfına bağlı olarak belirli yöntemleri çağırır; örneğin summary.lm (doğrusal model), summary.glm (genelleştirilmiş doğrusal model)\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nobject: bir özetin istendiği bir nesne.\n</li>\n</ul>\n<b>Değer</b><br/>\nsummary tarafından döndürülen değerin biçimi, argümanının sınıfına bağlıdır. O yöntemin ürettiği detaylar için belirli yöntemlerin belgelerine bakın; yani help(summary.lm), help(summary.glm).\n</br>\n<b>Paket</b></br>\nbase</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(summary)\n                "
+  }
+}

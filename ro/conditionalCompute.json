@@ -1,19 +1,19 @@
 {
-  "title": "Calcul Condițional",
-  "navigation": "Calcul Condițional",
+  "title": "Calcul condiționat",
+  "navigation": "Calcul condiționat",
   "label1": "=",
-  "newvar": "Nume variabilă nouă/existentă (fără spații/caractere speciale):",
+  "newvar": "Nume variabil nou/existent (fără spații/caractere speciale):",
   "formulaBuilderCondition": "Specificați o condiție, de exemplu, var1 > 10",
   "formulaBuilderConditionTrue": "Valoare când condiția este ADEVĂRATĂ",
   "formulaBuilderConditionFalse": "Valoare când condiția este FALSĂ",
-  "placeHolder1": "De exemplu: gpa == 4",
-  "placeHolder2": "De exemplu: \"Student de onoare\"",
-  "placeHolder3": "De exemplu: \"Student obișnuit\"",
+  "placeHolder1": "De exemplu, gpa == 4",
+  "placeHolder2": "De exemplu, \"Student cu onoruri\"",
+  "placeHolder3": "De exemplu, \"Student obișnuit\"",
   "label2": "Construiți comanda de calcul corespunzătoare folosind constructorul de expresii de mai jos, de exemplu, var1+var2, as.numeric(var2), substr(var4,2,4)...",
   "formula": "Construiți o comandă de calcul",
   "help": {
-    "title": "Calcularea Variabilelor",
-    "r_help": "ajutor(log, pachet ='base')",
-    "body": "\n<b>Descriere</b></br>\nCalculează o expresie și stochează rezultatul într-o variabilă/coloană a unui dataframe/dataset</br>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expresie)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDatasetX:  numele dataframe-ului/dataset-ului.​\n</li>\n<li>\nvar1: Coloana nouă/existentă din dataset/dataframe care trebuie calculată\n</li>\n<li>\nExpresie: O expresie sub forma variable1 =variable2+variable3\n</li>\n</ul>\n<b>Detalii</b></br>\nEvaluează expresia și stochează rezultatul într-o variabilă/coloană a unui dataframe/dataset</br>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă help(mutate, package ='dplyr') în fereastra editorului R\n            "
+    "title": "Variabilă(variabile) de calcul",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Descriere</b></br>\nCalculează o expresie și stochează rezultatul într-o variabilă/coloană a unui dataframe/dataset</br>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expresie)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDatasetX:  numele dataframe-ului/dataset-ului.​\n</li>\n<li>\nvar1: Coloana nouă/existentă în dataset/dataframe care trebuie calculată\n</li>\n<li>\nExpresie: O expresie sub formă de variable1 =variable2+variable3\n</li>\n</ul>\n<b>Detalii</b></br>\nEvaluează expresia și stochează rezultatul în variabila/colona unui dataframe/dataset</br>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(mutate, package ='dplyr') în fereastra editorului R\n            "
   }
 }

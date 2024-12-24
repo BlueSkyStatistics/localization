@@ -1,0 +1,18 @@
+{
+  "title": "Verificação da Ordem das Datas",
+  "navigation": "Verificação da Ordem das Datas",
+  "datevarslabel": "Variáveis de Data (especifique da mais antiga para a mais recente; mesma classe; pelo menos 2)",
+  "compgrplabel": "Comparação",
+  "compgrpnote": "Nota: Esta é a comparação entre todas as datas especificadas acima que serão verificadas quanto a erros de ordem, por exemplo, os valores devem ser date1<date2<date3.",
+  "ltlabel": "<",
+  "ltelabel": "<=",
+  "idvarslabel": "Variáveis de Identificação de Linha (opcional)",
+  "dateerrorboxlabel": "Criar conjunto de dados com variável de erro de data",
+  "dateerrordatanamelabel": "Nome do conjunto de dados",
+  "dateerrorvarlabel": "Nome da variável de erro de data",
+  "help": {
+    "title": "Verificação da Ordem das Datas",
+    "r_help": "help('<', package = 'base')",
+    "body": "\nIsso cria uma lista de linhas no conjunto de dados ativo onde os valores das variáveis de data não estão em uma ordem especificada. Isso ajuda a identificar potenciais erros nas variáveis de data quando datas ou \ntempos são necessários para uma análise. Por exemplo, se três colunas de data devem estar na ordem de date1 < date2 < date3, este diálogo imprimirá todas as observações onde \nos valores dessas variáveis não seguem essa ordem. Valores de data ausentes são permitidos nas variáveis especificadas e não serão usados para quaisquer comparações.\n<br/><br/>\n<b>Variáveis de Data (especifique da mais antiga para a mais recente; mesma classe; pelo menos 2):</b> Especifique pelo menos 2 variáveis de data na ordem da mais antiga para a mais recente. Estas podem ser qualquer classe de data \n(POSIXct, Date), mas todas as variáveis especificadas devem ser da mesma classe de data. Caso contrário, um erro resultará.\n<br/><br/>\n<b>Comparação:</b> Especifique o operador de comparação usado para comparar os valores das datas. \"<\" significa menor que e \"<=\" significa menor ou igual a. Se \"<\" for escolhido, então datas que\nsão iguais serão sinalizadas como erros. Se \"<=\" for escolhido, então datas que são iguais não serão sinalizadas como erros.\n<br/><br/>\n<b>Variáveis de Identificação de Linha (opcional):</b> Especifique uma ou mais variáveis que podem ser úteis para identificar as linhas. Por exemplo, número de identificação do sujeito. Estas serão \nincluídas na lista de erros. Se nenhuma variável for especificada, o número da linha do conjunto de dados será o único identificador.\n<br/><br/>\n<b>Criar conjunto de dados com variável de erro de data:</b> Isso criará um conjunto de dados separado com os dados originais e uma variável indicando se cada observação tem um erro de ordem de data \n(codificado como 1=erro de ordem de data e 0=sem erro de ordem de data). O <b>Nome do conjunto de dados</b> é o nome desejado deste conjunto de dados e <b>Nome da variável de erro de data</b> é o nome desejado \nda variável de erro de ordem de data neste conjunto de dados.\n\t\t"
+  }
+}

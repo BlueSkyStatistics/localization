@@ -1,0 +1,14 @@
+{
+  "title": "Preencher Valores para Baixo ou para Cima",
+  "navigation": "Preencher Valores para Baixo ou para Cima",
+  "fillinvars": "Variáveis para Preencher Valores",
+  "groupbyvars": "Variáveis para Agrupar",
+  "directionlabel": "Direção",
+  "downward": "Para Baixo",
+  "upward": "Para Cima",
+  "help": {
+    "title": "Preencher Valores para Baixo ou para Cima",
+    "r_help": "help(fill, package ='tidyr')",
+    "body": "\nEste diálogo preenche valores ausentes nas colunas do conjunto de dados usando a entrada anterior em cada coluna. Isso pode ser útil em casos onde os valores não são repetidos, mas registrados cada vez que mudam. Normalmente, isso significa que o conjunto de dados está ordenado de uma maneira significativa. As variáveis onde os valores são preenchidos serão sobrescritas.\n<br/><br/>\n<b>Variáveis para Preencher Valores:</b> Especifique as variáveis para as quais os valores ausentes serão preenchidos\n<br/><br/>\n<b>Variáveis para Agrupar:</b> Especifique as variáveis que agrupam as linhas. Os valores ausentes serão preenchidos dentro dos grupos definidos por essas variáveis. Por exemplo, agrupar por um identificador de sujeito preencheria valores dentro dos sujeitos.\n<br/><br/>\n<b>Direção:</b> Especifique a direção para a qual os valores serão preenchidos.\n<br/><br/>\n<b>Pacotes R Necessários:</b> tidyverse\n\t\t\t"
+  }
+}

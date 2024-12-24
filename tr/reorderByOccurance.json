@@ -1,0 +1,21 @@
+{
+  "title": "Olaylara Göre Faktör Seviyelerini Yeniden Sıralama",
+  "navigation": "Olaylara Göre Yeniden Sırala",
+  "target": "Seviyeleri yeniden sıralamak için faktör değişkenleri",
+  "label1": "Veri değişkeninin olaylarına göre yeniden sıralamak için faktör değişkenlerini seçin. Mevcut değişkenleri geçersiz kılabilir veya bir ön ek/son ek belirterek yeni değişkenler oluşturabilirsiniz. Yeni değişkenler mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır.",
+  "label2": "Yeni seviyeleri yeni değişken(ler)e kaydedin veya mevcut değişken(ler)i geçersiz kılın",
+  "rd3": "Bir son ek belirtin (Bir yeni değişken son ek ile oluşturulacaktır)",
+  "txt3": "Bir son ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri geçersiz kıl",
+  "label3": "Bir sıra belirtin",
+  "Descending": "Olay sırasına göre",
+  "Ascending": "Olayların ters sırasına göre",
+  "ordered": "Sıralı bir faktör oluşturun (ordinal)",
+  "help": {
+    "title": "NA'ları Kaldır",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>Açıklama</b></br>\nFaktör seviyelerini ilk görünümüne (olay) göre yeniden sıralayın. Sayı/frekansa göre sıralama için sayıya göre yeniden sıralamayı görün.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nf: Bir faktör\n</li>\n<li>\nordered: Çıktı faktörünün \"sıralı\" durumunu belirleyen bir mantıksal. NA, faktörün mevcut durumunu korur.\n</li>\n</ul>\n<b>Örnekler</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

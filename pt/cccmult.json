@@ -1,0 +1,17 @@
+{
+  "title": "Coeficiente de Correlação de Concordância, múltiplos avaliadores",
+  "navigation": "Coeficiente de Correlação de Concordância, múltiplos avaliadores",
+  "ratervars": "Variáveis do Avaliador, pelo menos 2",
+  "cilevel": "Nível de Confiança:",
+  "bootsamp": "Número de amostras bootstrap",
+  "plotoptionslabel": "Opções de Gráfico",
+  "plotchkbox": "Gráficos de Dispersão para todos os pares de avaliadores",
+  "plottitle": "Título",
+  "varlabels": "Rótulos das Variáveis (se usados, devem especificar rótulos para todas as variáveis, na ordem, como 'rótulo 1', 'rótulo 2', etc.)",
+  "plottheme": "Tema do Gráfico",
+  "help": {
+    "title": "Coeficiente de Correlação de Concordância, múltiplos avaliadores",
+    "r_help": "help(epi.occc,package=epiR)",
+    "body": "\nO coeficiente de correlação de concordância (CCC) mede o acordo entre observadores que medem os mesmos sujeitos na mesma escala para dados contínuos. O CCC pode variar entre \n-1 e 1, sendo 1 o acordo perfeito e 0 sem acordo. Valores negativos indicam acordo negativo, mas é raro na prática. O CCC geral e os CCCs pareados \n(todos os pares de avaliadores) são calculados com intervalos de confiança percentuais bootstrap e intervalos de confiança percentuais bootstrap ajustados. Qualquer observação com um valor ausente para as variáveis do avaliador \nserá removida da análise.\n<br/><br/>\n<b>Variáveis do Avaliador:</b> Variáveis contendo os valores fornecidos pelos observadores; devem ser numéricas\n<br/>\n<b>Nível de Intervalo de Confiança:</b> Nível de intervalo de confiança desejado para o CCC\n<br/>\n<b>Número de amostras bootstrap:</b> O número desejado de amostras bootstrap a serem extraídas dos dados originais para calcular os intervalos de confiança. Pelo menos 1000 é recomendado, \nse viável na prática.\n<br/>\n<b>Gráficos de Dispersão para todos os pares de avaliadores:</b> Opção para criar gráficos de dispersão para todos os pares de avaliadores em formato de matriz.   \n<br/><br/>\n<b>Pacotes R necessários:</b> epiR, boot, GGally, ggthemes\n                "
+  }
+}

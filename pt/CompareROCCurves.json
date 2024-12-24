@@ -1,0 +1,33 @@
+{
+  "title": "Comparar Curvas ROC",
+  "navigation": "Comparar Curvas ROC",
+  "outcomevar": "Variável de Resultado Binário (numérico/fator)",
+  "predprobvars": "Variáveis de Probabilidade Prevista de Cada Modelo, especifique pelo menos 2",
+  "outcomeorderlabel": "Valor 'Positivo' do Resultado",
+  "outcomeorderhigh": "Valor ordenado mais alto",
+  "outcomeorderlow": "Valor ordenado mais baixo",
+  "specopt": "Plotar especificidade em vez de 1-especificidade",
+  "cilevel": "Nível de Confiança",
+  "multcompopt": "Ajuste de Comparação Múltipla",
+  "multcompmethod": "Método de Comparação Múltipla",
+  "plotoptions": "Opções de Plotagem",
+  "plottitle": "Título do Gráfico",
+  "plottitlesize": "Tamanho do Título do Gráfico (5-50)",
+  "themedropdown": "Tema do Gráfico",
+  "lineoptionslabel": "Opções de Linha",
+  "linesize": "Tamanho da Linha (0-5)",
+  "colorpalette": "Paleta de Cores",
+  "axisoptionslabel": "Opções de Eixo",
+  "axislabelsize": "Tamanho do Rótulo do Eixo (5-50)",
+  "ticklabelsize": "Tamanho do Rótulo da Marca do Eixo (5-50)",
+  "legendoptionslabel": "Opções de Legenda",
+  "legendtitle": "Título",
+  "legendpos": "Posição",
+  "curvelabels": "Rótulos das Curvas, especifique como 'Rótulo 1', 'Rótulo 2', 'Rótulo 3'; use \\n dentro de um rótulo para uma quebra de linha",
+  "legendfontsize": "Tamanho dos Rótulos da Legenda (5-50)",
+  "help": {
+    "title": "Comparar Curvas ROC",
+    "r_help": "help(roc.test, package = 'pROC')",
+    "body": "\nEste diálogo compara curvas de característica de operação do receptor (ROC) dadas um conjunto de probabilidades previstas de um modelo (por exemplo, regressão logística). Cada modelo deve ter sido ajustado usando a mesma ordenação da variável de resultado. Ele fornece uma tabela de áreas individuais sob as curvas ROC com intervalos de confiança, uma tabela de comparações par a par usando o teste de DeLong, e um conjunto sobreposto de curvas ROC. Os sujeitos com valores ausentes para o resultado ou as probabilidades previstas são removidos para que cada modelo seja avaliado no mesmo conjunto de sujeitos. Veja Avaliação de Modelo > Previsão > Pontuação de Modelo para obter probabilidades previstas de modelos candidatos. \n<br/><br/><br/>\n<b>Variável de Resultado Binário:</b> O resultado binário usado para previsões. Deve ser numérico ou fator.\n<br/><br/>\n<b>Variáveis de Probabilidade Prevista de Cada Modelo:</b> Especifique as colunas de probabilidade prevista de cada modelo ajustado que você deseja comparar.\n<br/><br/>\n<b>Valor 'Positivo' do Resultado:</b> Especifique se o valor ordenado mais alto ou mais baixo da variável de resultado binário especificada deve ser considerado o valor 'positivo'. Este é o nível ao qual as probabilidades previstas se referem. Por exemplo, se o resultado binário foi codificado como 0/1, o valor ordenado mais alto significaria que 1 é a resposta 'positiva' e o valor ordenado mais baixo significaria que 0 é a resposta 'positiva'. \n<br/><br/>\n<b>Plotar especificidade em vez de 1-especificidade:</b> Isso muda o eixo x do gráfico da curva ROC para usar especificidade em vez disso. O eixo diminuirá de 1 a 0, à medida que você vai da esquerda para a direita.\n<br/><br/> \n<b>Nível de Confiança:</b> Nível de confiança para intervalos de área da curva ROC\n<br/><br/>\n<b>Ajuste de Comparação Múltipla:</b> Aplique um ajuste de comparação múltipla às comparações par a par das áreas da curva ROC.\n<br/><br/><br/>\n<b>Opções de Plotagem:</b>\n<br/><br/>\n<b>Título do Gráfico:</b> Especifique o título para o gráfico. Pode ser removido.\n<br/><br/>\n<b>Tema do Gráfico:</b> Especifique o tema geral para o gráfico\n<br/><br/>\n<b>Opções de Linha:</b>\n<br/><br/>\n<b>Tamanho da Linha:</b> Especifique o tamanho das linhas no gráfico da curva ROC\n<br/><br/>\n<b>Paleta de Cores:</b> Especifique a paleta de cores usada para as linhas da curva ROC\n<br/><br/>\n<b>Opções de Eixo:</b>\n<br/><br/>\n<b>Tamanho do Rótulo do Eixo:</b> Especifique o tamanho dos rótulos do eixo usados no gráfico.\n<br/><br/>\n<b>Tamanho do Rótulo da Marca do Eixo:</b> Especifique o tamanho dos rótulos das marcas do eixo.\n<br/><br/>\n<b>Opções de Legenda:</b>\n<br/><br/>\n<b>Posição:</b> Especifique a posição da legenda no gráfico. Pode ser direita, superior, inferior ou esquerda.\n<br/><br/>\n<b>Título:</b> Especifique o título para a legenda. Pode ser removido.\n<br/><br/>\n<b>Rótulos das Curvas:</b> Especifique os rótulos das curvas usados na legenda correspondendo à ordem das curvas (curva 1, curva 2, curva 3, etc.). Especificar nada resultará em rótulos de curva de 1, 2, 3, etc. Se você especificar quaisquer rótulos, deve especificar rótulos para todas as curvas. A ordem das curvas é a mesma que a ordem especificada das probabilidades previstas.\n<br/><br/>\n<b>Tamanho dos Rótulos da Legenda:</b> Tamanho de todo o texto na legenda.\n<br/><br/>\n<b>Pacotes R Requeridos:</b> pROC, ggthemes, RColorBrewer, ggsci, ggplot2\n"
+  }
+}

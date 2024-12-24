@@ -1,0 +1,13 @@
+{
+  "title": "Esplora variabile(i)",
+  "navigation": "Esplora variabili",
+  "variableListSelcted": "Seleziona una o più variabili da esplorare",
+  "histCurveDispChk": "Visualizza una curva normale sull'istogramma (i valori mancanti vengono rimossi per visualizzare la curva)",
+  "statTableOrientionChk": "Statistiche riassuntive in colonne",
+  "histBins": "Specifica il numero di bin per l'istogramma",
+  "help": {
+    "title": "Esplora le caratteristiche di una o più variabile(i)",
+    "r_help": "help(summary)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tRestituisce le seguenti statistiche descrittive e grafici:\n\t\t\t\tmin, max, media, mediana, modalità, somma, sd, cv (coefficiente di variazione), var, errore standard, asimmetria, curtosi, mad, iqr e quartili. Inoltre, l'intervallo di confidenza al 95% per la media e sd viene calcolato. Vengono visualizzati istogrammi e grafici QQ. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(summary, package = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer calcolare asimmetria e curtosi, il parametro type = 3 è utilizzato come predefinito. Con il parametro type = 2, i valori per asimmetria e curtosi corrisponderanno probabilmente ai valori della formula SKEW() e KURT() di MS Excel\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVedi ulteriori dettagli \n\t\t\t\t<br/>\n\t\t\t\thelp(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

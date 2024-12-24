@@ -1,0 +1,19 @@
+{
+  "title": "Tamanho da Amostra, Teste de Duas Proporções",
+  "navigation": "Duas Proporções",
+  "howtouse": "Para calcular o tamanho da amostra: especifique ambas as proporções do grupo e o poder\nPara calcular o poder: especifique ambas as proporções do grupo e o tamanho da amostra\nPara calcular a diferença de proporção detectável: especifique o tamanho da amostra, o poder e a proporção do grupo 2",
+  "n": "Tamanho da Amostra",
+  "power": "Poder (0-1)",
+  "propgrp1": "Proporção do Grupo 1",
+  "propgrp2": "Proporção do Grupo 2",
+  "ratio": "Relação do Tamanho da Amostra do Grupo 1 vs Grupo 2",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Duas Proporções",
+    "r_help": "help(epi.sscohortc, package ='epiR')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste de proporções de duas amostras. Ele calcula o tamanho da amostra, poder ou tamanho do efeito (diferença nas proporções, razão de taxas, razão de chances) quando o usuário \nespecifica os outros dois.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Proporção do Grupo 1:</b> Especifique a proporção no grupo 1\n<br/><br/>\n<b>Proporção do Grupo 2:</b> Especifique a proporção no grupo 2\n<br/><br/>\n<b>Relação do Tamanho da Amostra do Grupo 1 vs Grupo 2:</b> Especifique a relação desejada dos tamanhos das amostras (N do grupo 1 dividido por N do grupo 2). Uma relação de 1 significa tamanhos de amostra iguais.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Pacotes R Necessários:</b> epiR\n\t\t\t"
+  }
+}

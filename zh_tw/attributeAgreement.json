@@ -1,15 +1,15 @@
 {
-  "title": "屬性一致性分析，基礎",
-  "navigation": "屬性一致性，基礎",
+  "title": "屬性一致性分析，基本",
+  "navigation": "屬性一致性，基本",
   "variablePartSelcted": "選擇樣本/部件的變數",
   "variableOpSelcted": "選擇評估者/操作員的變數",
-  "variableRespSelcted": "選擇屬性/回應的變數",
-  "variableRefSelcted": "(可選) 選擇參考/標準回應的變數",
-  "alpha": "信賴區間（alpha）在0到1之間",
-  "rowsTobeUsed": "如果要使用所有行，請留空。否則，請指定要用於分析的行（例如，指定為1:25或1,4,5,7:12）",
+  "variableRespSelcted": "選擇屬性/反應的變數",
+  "variableRefSelcted": "(可選) 選擇參考/標準反應的變數",
+  "alpha": "置信區間 (alpha) 在 0 到 1 之間",
+  "rowsTobeUsed": "如果所有行都要使用，請留空。否則指定要用於分析的行 (例如，指定為 1:25 或 1,4,5,7:12)",
   "help": {
     "title": "屬性一致性分析",
     "r_help": "help(kappam.fleiss, package = irr)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t執行屬性一致性分析的函數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用示例數據集文件attributemsaAB.xlsx，\n\t\t\t\t兩個操作員A和B，每個操作員有20個觀察值，重複兩次，帶有P和F評級。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t您還可以嘗試示例數據集文件attributemsaABCordered.RData，\n\t\t\t\t有三個操作員A、B、C，每個操作員有10個觀察值，重複兩次，帶有“有序”（序數）\n\t\t\t\t評級為不同意、稍微不同意、中立、稍微同意和同意。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t通過文件打開菜單在數據網格中打開文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t執行屬性一致性分析的函數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用樣本數據集文件 attributemsaAB.xlsx，\n\t\t\t\t兩個操作員 A 和 B，每個操作員有 20 次觀察，重複兩次，並有 P 和 F 評級。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t您也可以嘗試樣本數據集文件 attributemsaABCordered.RData，\n\t\t\t\t有三個操作員 A、B、C，每個操作員有 10 次觀察，重複兩次，並有 \"有序\" (序數) \n\t\t\t\t評級為不同意、稍微不同意、中立、稍微同意和同意。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t在數據網格中使用文件打開菜單打開文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

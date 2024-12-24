@@ -1,0 +1,17 @@
+{
+  "title": "Dimensione del campione, precisione di una differenza di rischio",
+  "navigation": "Differenza di rischio",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n1": "Dimensione del campione del Gruppo 1",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "ratio": "Rapporto tra la dimensione del campione del Gruppo 1 e del Gruppo 2",
+  "prop1": "Proporzione dell'esito del Gruppo 1",
+  "prop2": "Proporzione dell'esito del Gruppo 2",
+  "conflevel": "Livello di confidenza (0-1)",
+  "method": "Metodo dell'intervallo di confidenza",
+  "help": {
+    "title": "Dimensione del campione, precisione di una differenza di rischio",
+    "r_help": "help(prec_riskdiff, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per una differenza nelle proporzioni basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del campione del Gruppo 1:</b> Specifica il numero di soggetti nel gruppo 1\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Rapporto tra la dimensione del campione del Gruppo 1 e del Gruppo 2:</b> Specifica il rapporto tra la dimensione del campione del gruppo 2 e la dimensione del campione del gruppo 1. Un valore di 1 significa dimensioni del campione uguali.\n<br/><br/>\n<b>Proporzione dell'esito del Gruppo 1:</b> Specifica la proporzione di soggetti nel gruppo 1 con l'esito 'positivo'\n<br/><br/>\n<b>Proporzione dell'esito del Gruppo 2:</b> Specifica la proporzione di soggetti nel gruppo 2 con l'esito 'positivo'\n<br/><br/>\nNota che la differenza di rischio sarà calcolata come la proporzione nel gruppo 1 meno la proporzione nel gruppo 2.\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Metodo dell'intervallo di confidenza:</b> Specifica il tipo di intervallo di confidenza da utilizzare. Newcombe (newcombe) ha proposto un intervallo di confidenza basato sul metodo del punteggio di Wilson per la\nsingola proporzione. L'intervallo di confidenza senza correzione di continuità è implementato dall'equazione 10 in Newcombe (1998). Miettinen-Nurminen (mn) fornisce una forma chiusa \nequazione per la stima della massima verosimiglianza ristretta. L'implementazione si basa su codice fornito da Yongyi Min su https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html.\nL'intervallo di confidenza di Agresti-Caffo (ac) si basa sull'intervallo di confidenza di Wald, aggiungendo 1 successo a ciascuna cella della tabella 2 x 2 (vedi Agresti e Caffo 2000).\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Seçilen değişken(ler)in tüm satırlarına bir fonksiyon uygulamak.",
+  "navigation": "Satırlara bir fonksiyon uygula",
+  "label1": "Seçilen değişken(ler)in tüm satır değerlerine bir fonksiyon uygulayarak yeni bir değişken oluşturun veya mevcut bir değişkeni üzerine yazın.",
+  "newvar": "Yeni bir değişken girin/Mevcut bir değişkeni üzerine yazın",
+  "target": "Değişken(ler)i seçin",
+  "selectctrl": "Uygulamak için bir işlem seçin",
+  "help": {
+    "title": "Fonksiyon Uygulama",
+    "r_help": "help(apply,package='base')",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenlerin (sütunların) tüm satırları üzerinde bir fonksiyon uygular. Fonksiyonları uygulayacağımız değişkenlerin satırlarını seçmek için dplyr paketinden select fonksiyonunu ve pipe ( %>% ) operatörünü kullanıyoruz. (Bu değişkenler apply fonksiyonuna aktarılır)\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nX: Bir matris içeren bir dizi. Seçilen değişkenler dplyr aracılığıyla aktarılır\n</li>\n<li>\nMARGIN: Fonksiyonun uygulanacağı alt dizinleri veren bir vektör. Örneğin, bir matris için 1 satırları, 2 sütunları, c(1, 2) hem satırları hem de sütunları belirtir. X'in adlandırılmış boyut adları varsa, boyut adlarını seçen bir karakter vektörü olabilir. Değişken var olan bir veri kümesi\n</li>\n<li>\nFUN: Uygulanacak fonksiyon\n</li>\n</ul>\n<b>Değer</b><br/>\nHesaplanan değerler doğrudan Veri Kümesine kaydedilir\n<b>Paket</b></br>\ndplyr</br>\n<b>Yardım</b></br>\nhelp(apply)\n"
+  }
+}

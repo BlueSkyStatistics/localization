@@ -1,0 +1,17 @@
+{
+  "title": "Coefficiente di correlazione di concordanza, più valutatori",
+  "navigation": "Coefficiente di correlazione di concordanza, più valutatori",
+  "ratervars": "Variabili dei valutatori, almeno 2",
+  "cilevel": "Livello di confidenza:",
+  "bootsamp": "Numero di campioni bootstrap",
+  "plotoptionslabel": "Opzioni di grafico",
+  "plotchkbox": "Diagrammi a dispersione per tutte le coppie di valutatori",
+  "plottitle": "Titolo",
+  "varlabels": "Etichette delle variabili (se utilizzate, devono specificare etichette per tutte le variabili, in ordine, come 'etichetta 1', 'etichetta 2', ecc.)",
+  "plottheme": "Tema del grafico",
+  "help": {
+    "title": "Coefficiente di correlazione di concordanza, più valutatori",
+    "r_help": "help(epi.occc,package=epiR)",
+    "body": "\nIl coefficiente di correlazione di concordanza (CCC) misura l'accordo tra osservatori che misurano gli stessi soggetti sulla stessa scala per dati continui. Il CCC può variare tra \n-1 e 1, con 1 che indica un accordo perfetto e 0 che indica nessun accordo. Valori negativi indicano un accordo negativo, ma è raro nella pratica. Il CCC complessivo e i CCC a coppie \n(tutte le coppie di valutatori) sono calcolati con intervalli di confidenza percentili bootstrap e percentili bootstrap aggiustati. Qualsiasi osservazione con un valore mancante per le variabili del valutatore specificato \nè rimossa dall'analisi.\n<br/><br/>\n<b>Variabili dei valutatori:</b> Variabili contenenti i valori forniti dagli osservatori; devono essere numeriche\n<br/>\n<b>Livello dell'intervallo di confidenza:</b> Livello desiderato dell'intervallo di confidenza per il CCC\n<br/>\n<b>Numero di campioni bootstrap:</b> Il numero desiderato di campioni bootstrap da estrarre dai dati originali per calcolare gli intervalli di confidenza. Almeno 1000 è raccomandato, \nse praticabile.\n<br/>\n<b>Diagrammi a dispersione per tutte le coppie di valutatori:</b> Opzione per creare diagrammi a dispersione per tutte le coppie di valutatori in formato matrice.   \n<br/><br/>\n<b>Pacchetti R richiesti:</b> epiR, boot, GGally, ggthemes\n                "
+  }
+}

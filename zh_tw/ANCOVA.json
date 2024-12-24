@@ -1,5 +1,5 @@
 {
-  "title": "協方差分析（ANCOVA）",
+  "title": "協方差分析 (ANCOVA)",
   "navigation": "協方差分析",
   "response": "因變量",
   "Fixed": "固定因子",
@@ -9,8 +9,8 @@
   "Residual": "殘差與擬合圖",
   "Histogram": "殘差的直方圖",
   "help": {
-    "title": "協方差分析",
+    "title": "協方差分析 (ANCOVA)",
     "r_help": "help(Anova, package='car')",
-    "body": "\n<b>描述</b></br>\n協方差分析（ANCOVA）結合了ANOVA和回歸的特徵。它通過一個或多個額外的定量變量（稱為協變量）來增強ANOVA模型，這些變量與響應變量相關。協變量的引入旨在減少誤差項的方差，並提供更精確的處理效果測量。</br> ANCOVA用於測試因子的主效應和交互效應，同時控制協變量的影響。</br>\n我們首先生成一個包含交互項的Anova表。目標是檢查交互項是否不顯著，即因變量與協變量的斜率在固定因子的每個水平上是否沒有差異。我們使用car包中的Anova包生成此Anova表。</br>\n然後，我們重新生成Anova表，控制交互項，以確定因變量與協變量的截距在固定因子的每個水平上是否不同。</br> \n我們提供生成因變量與協變量的散點圖的選項，適用於固定因子的每個水平。</br>\n我們提供繪製殘差與擬合圖的選項，適用於我們已控制交互項的模型。殘差應是無偏的和同方差的。</br>\n我們提供生成殘差的直方圖的選項，適用於我們已控制交互項的模型。（分布應近似正態）。</br>\n我們給您提供總結模型的選項</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nformula: 一個“公式”類的對象（或可以強制轉換為該類的對象）：要擬合的模型的符號描述。模型規範的詳細信息在“詳細信息”中給出。\n</li>\n<li>\ndata: 一個可選的數據框、列表或環境（或可以通過as.data.frame強制轉換為數據框的對象），包含模型中的變量。如果在數據中未找到變量，則從環境(formula)中獲取變量，通常是調用lm的環境。\n</li>\n</ul>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm或其他合適的模型對象。​\n</li>\n<li>\ntype: 測試類型，\"II\"，\"III\"，2或3。\n</li>\n</ul>\n<b>包</b></br>\nAnova</br>\n<b>幫助</b></br>\nhelp(Anova, package ='car')\n    "
+    "body": "\n<b>描述</b></br>\n協方差分析 (ANCOVA) 結合了 ANOVA 和回歸的特徵。它通過一個或多個額外的定量變量（稱為協變量）來增強 ANOVA 模型，這些變量與因變量相關。協變量的引入旨在減少誤差項的變異，並提供更精確的處理效果測量。</br> ANCOVA 用於測試因子的主要和交互作用效應，同時控制協變量的效應。</br>\n我們首先生成一個包含交互項的 Anova 表。目標是檢查交互項是否不顯著，即因變量對於每個固定因子的水平與協變量的斜率是否不同。我們使用 car 包中的 Anova 包來生成這個 Anova 表。</br>\n然後，我們重新生成 Anova 表，控制交互項，以確定因變量對於每個固定因子的水平與協變量的截距是否不同。</br> \n我們提供生成因變量對協變量的散點圖的選項，針對每個固定因子的水平。</br>\n我們提供繪製殘差與擬合圖的選項，針對我們已控制交互項的模型。殘差應該是無偏的且同方差的。</br>\n我們提供生成殘差的直方圖的選項，針對我們已控制交互項的模型。（分佈應該近似正態）。</br>\n我們給您總結模型的選項</br>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nformula: 一個類別為 \"formula\" 的對象（或可以轉換為該類別的對象）：擬合模型的符號描述。模型規範的詳細信息在“詳細信息”中給出。\n</li>\n<li>\ndata: 一個可選的數據框、列表或環境（或可以通過 as.data.frame 轉換為數據框的對象），包含模型中的變量。如果在數據中未找到，則變量將從 environment(formula) 中獲取，通常是調用 lm 的環境。\n</li>\n</ul>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm 或其他合適的模型對象。​\n</li>\n<li>\ntype: 測試類型，\"II\", \"III\", 2 或 3。\n</li>\n</ul>\n<b>包</b></br>\nAnova</br>\n<b>幫助</b></br>\nhelp(Anova, package ='car')\n    "
   }
 }

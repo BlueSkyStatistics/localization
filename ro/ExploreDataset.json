@@ -1,14 +1,14 @@
 {
-  "title": "Explorați setul de date",
-  "navigation": "Explorați setul de date",
-  "destdatalabel": "Set de date de explorat",
-  "htmloutlabel": "Afișați ieșirea într-o pagină web",
-  "standardgraphlabel": "Includeți grafice în fereastra de ieșire",
-  "maxdistvalueslabel": "Valori distincte maxime",
-  "rounddigitslabel": "Cifre semnificative",
+  "title": "Explorați Setul de Date",
+  "navigation": "Explorați Setul de Date",
+  "destdatalabel": "Set de Date de Explorat",
+  "htmloutlabel": "Afișați Ieșirea într-o Pagina Web",
+  "standardgraphlabel": "Include Grafice în Fereastra de Ieșire",
+  "maxdistvalueslabel": "Valori Distincte Maxime",
+  "rounddigitslabel": "Cifre Semnificative",
   "help": {
-    "title": "Explorați setul de date",
+    "title": "Explorați Setul de Date",
     "r_help": "help(dfSummary, package ='summarytools')",
-    "body": "\nAceasta creează un tabel care descrie un set de date. Descrierile includ numele setului de date, numărul de observații, numărul de variabile, numărul de înregistrări duplicate, \nnumele variabilelor, clasele variabilelor, statistici sumare ale variabilelor și grafice. Acest instrument este destinat mai mult explorării și curățării datelor decât analizei datelor.   \nO versiune text a tabelului este afișată în mod implicit, dar o versiune HTML frumoasă poate fi afișată opțional în browserul web implicit.\n<br/><br/>  \n<b>Set de date de explorat:</b> Setul de date pe care doriți să-l descrieți\n<br/><br/>  \n<b>Afișați ieșirea într-o pagină web:</b> Bifați dacă doriți să afișați o versiune frumoasă a tabelului în browserul web implicit. Această versiune va include grafice.\n<br/><br/>\n<b>Includeți grafice în fereastra de ieșire:</b> Bifați dacă doriți să includeți versiuni text ale graficelor în fereastra de ieșire BlueSky\n<br/><br/>\n<b>Valori distincte maxime:</b> Numărul maxim de valori pentru care să se afișeze frecvențele. Dacă o variabilă are mai multe valori distincte decât acest număr, frecvențele rămase vor fi raportate ca o categorie întreagă, împreună cu numărul de valori distincte suplimentare. Pentru variabilele de caractere, se afișează cele mai frecvente valori, astfel încât acest lucru controlează și câte să se afișeze în acest caz. Valoarea implicită este 10.\n<br/><br/>\n<b>Cifre semnificative:</b> Numărul de cifre semnificative de afișat. Valoarea implicită este 2.\n<br/><br/>\n<b>Pachete R necesare:</b> summarytools\n\t\t\t"
+    "body": "\nAceasta creează un tabel care descrie un set de date. Descrierile includ numele setului de date, numărul de observații, numărul de variabile, numărul de înregistrări duplicate, \nnumele variabilelor, clasele variabilelor, statisticile sumare ale variabilelor și graficele. Acest instrument este destinat mai mult pentru explorarea și curățarea datelor, decât pentru analizele de date. \nO versiune text a tabelului este afișată în mod implicit, dar o versiune html frumoasă poate fi afișată opțional în browserul web implicit.\n<br/><br/>  \n<b>Set de Date de Explorat:</b> Setul de date pe care doriți să-l descrieți\n<br/><br/>  \n<b>Afișați Ieșirea într-o Pagina Web:</b> Bifați dacă doriți să afișați o versiune frumoasă a tabelului în browserul web implicit. Această versiune va include grafice.\n<br/><br/>\n<b>Include Grafice în Fereastra de Ieșire:</b> Bifați dacă doriți să includeți versiuni text ale graficelor în fereastra de ieșire BlueSky\n<br/><br/>\n<b>Valori Distincte Maxime:</b> Numărul maxim de valori pentru care să se afișeze frecvențele. Dacă o variabilă are mai multe valori distincte decât acest număr, frecvențele rămase vor fi raportate \nca o categorie întreagă, împreună cu numărul de valori distincte suplimentare. Pentru variabilele de tip caracter, cele mai frecvente valori sunt afișate, astfel că acest lucru controlează și câte să fie afișate în \nacea situație. Valoarea implicită este 10.\n<br/><br/>\n<b>Cifre Semnificative:</b> Numărul de cifre semnificative de afișat. Valoarea implicită este 2.\n<br/><br/>\n<b>Pachete R Necesare:</b> summarytools\n\t\t\t"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "title": "Converti le variabili di data in carattere",
+  "navigation": "Data in carattere",
+  "label1": "Seleziona un suffisso o un prefisso per le variabili convertite",
+  "suffix": "Suffisso",
+  "prefix": "Prefisso",
+  "prefixOrSuffix": "Inserisci un prefisso o un suffisso",
+  "Destination": "Seleziona le variabili di data da convertire in carattere",
+  "DateFormat": "Seleziona il formato della data da convertire",
+  "TimeZone": "Seleziona un fuso orario (predefinito - nessun selezionato è il fuso orario locale del PC)",
+  "advanced_lbl": "Avanzato",
+  "help": {
+    "title": "Converti la data in carattere",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>Descrizione</b></br>\nConverte la data (posixct e classe data) in carattere - per controllare il formato in cui la data è visualizzata. Devi specificare come input il formato in cui la stringa deve essere generata, ad esempio anno/mese/giorno o mese-giorno=anno ecc.\nLa funzione sopra chiama internamente strftime nel pacchetto base. Abbiamo esteso strftime per supportare più variabili.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffisso\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\n​data: Il nome del dataset\n</li>\n<li>\nvarNames: Le variabili di classe posixct e classe data che devono essere convertite​ in carattere\n</li>\n<li>\ndateFormat: Una stringa carattere. Il predefinito per i metodi di formato è \"%Y-%m-%d %H:%M:%S\" se qualsiasi elemento ha un componente temporale che non è mezzanotte, e \"%Y-%m-%d\" altrimenti. Se options(\"digits.secs\") è impostato, fino al numero specificato di cifre verrà stampato per i secondi\n</li>\n<li>\ntimezone: Una stringa carattere che specifica il fuso orario da utilizzare per la conversione. Specifico per il sistema (vedi as.POSIXlt), ma \"\" è il fuso orario corrente, e \"GMT\" è UTC. I valori non validi sono più comunemente trattati come UTC, su alcune piattaforme con un avviso.\n</li>\n<li>\nprefixOrSuffix: Specifica un prefisso o un suffisso per le nuove variabili stringa. Prende c(\"prefisso\") o c(\"suffisso\"). Nuove variabili che vengono create con questo prefisso/suffisso al nome della variabile originale. \n</li>\n</ul>\n<b>Pacchetto</b></br>\nbase</br>\n<b>Aiuto</b></br>\nhelp(strftime)    \n"
+  }
+}

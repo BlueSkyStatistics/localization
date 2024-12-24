@@ -1,0 +1,12 @@
+{
+  "title": "Coefficienti di Correlazione Intra-classe",
+  "navigation": "Coefficienti di Correlazione Intra-classe",
+  "ratervars": "Variabili dei Valutatori:",
+  "cilevel": "Livello di Confidenza:",
+  "modeldetails": "Dettagli del Modello",
+  "help": {
+    "title": "Coefficienti di Correlazione Intra-classe",
+    "r_help": "help(ICC, package=psych)",
+    "body": "\n<b>Descrizione</b></br>\nQuesto calcola i 6 coefficienti di correlazione intra-classe (ICC) di Shrout e Fleiss (1979, Psychological Bulletin). La stima viene effettuata utilizzando modelli lineari misti con massima verosimiglianza ristretta, quindi può gestire dati mancanti.</br>\nShrout e Fleiss considerano sei casi di affidabilità delle valutazioni effettuate da k valutatori su n obiettivi.</br>\nICC1: Ogni obiettivo è valutato da un diverso insieme di k giudici e i giudici sono selezionati a caso. Questo è un indicatore di accordo assoluto nelle valutazioni.</br>\nICC2: Un campione casuale di k giudici valuta ogni obiettivo.</br>\nICC3: Un insieme fisso di k giudici valuta ogni obiettivo. Non c'è generalizzazione a una popolazione più ampia di giudici.</br>\nQuindi, per ciascuno di questi casi, l'affidabilità deve essere stimata per una singola valutazione o per la media di k valutazioni? ICC1 è sensibile alle differenze nei mezzi tra i valutatori ed è un indicatore di accordo assoluto. ICC2 e ICC3 rimuovono le differenze medie tra i valutatori, ma sono sensibili alle interazioni tra valutatori e soggetti. La differenza tra ICC2 e ICC3 è se i valutatori sono visti come effetti fissi o casuali. ICC1k, ICC2k e ICC3K riflettono le medie di k valutatori.</br>\nVariabili dei Valutatori: Variabili corrispondenti a ciascun valutatore. Queste devono essere variabili numeriche.</br>\nLivello dell'Intervallo di Confidenza: Livello desiderato dell'intervallo di confidenza per gli ICC</br>\nDettagli del Modello: Mostra i dettagli dai modelli lineari misti sottostanti</br>\n<b>Pacchetto</b></br>\npsych</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando help(ICC, package=psych) creando un blocco di codice R cliccando + nella finestra di output\n\t\t\t"
+  }
+}

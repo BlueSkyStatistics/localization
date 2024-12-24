@@ -16,6 +16,6 @@
   "help": {
     "title": "样本数据集",
     "r_help": "help(sample_n, package='dplyr')",
-    "body": "\n<b>描述</b></br>\n从现有数据集中随机抽取行样本。抽取 % 的行或指定数量的行，带或不带替换。将结果保存到新数据集中或覆盖现有数据集。\n<br/>\n<b>用法</b>\n<br/>\n<code> \n#抽取指定数量的行</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#抽取行的一个分数</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ntbl: 数据表。见 ‘详细信息。’\n</li>\n<li>\nsize: 对于 sample_n()，要选择的行数。对于 sample_frac()，要选择的行的分数。 \n</li>\n<li>\nreplace: 抽样是否应有放回？\n</li>\n<li>\nweights: 抽样权重。必须评估为与输入相同长度的非负数向量。权重会自动标准化为总和为 1。\n</li>\n</ul>\n<b>包</b></br>\ndplyr\n<b>帮助</b></br>\nhelp(sample_n, package='dplyr')\n"
+    "body": "\n<b>描述</b></br>\n从现有数据集中随机抽取行样本。抽取一定百分比的行或指定数量的行，可以选择是否放回抽样。将结果保存到新数据集中或覆盖现有数据集。\n<br/>\n<b>用法</b>\n<br/>\n<code> \n#抽取指定数量的行</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#抽取一定比例的行</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ntbl: 数据表。见‘详细信息’。\n</li>\n<li>\nsize: 对于sample_n()，选择的行数。对于sample_frac()，选择的行的比例。\n</li>\n<li>\nreplace: 抽样是否有放回？\n</li>\n<li>\nweights: 抽样权重。这必须评估为与输入相同长度的非负数向量。权重会自动标准化为总和为1。\n</li>\n</ul>\n<b>包</b></br>\ndplyr\n<b>帮助</b></br>\nhelp(sample_n, package='dplyr')\n"
   }
 }

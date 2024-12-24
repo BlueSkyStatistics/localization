@@ -1,0 +1,15 @@
+{
+  "title": "Örneklem Büyüklüğü, Bir Oranının Hassasiyeti",
+  "navigation": "Bir Oran",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "prop": "Sonuç Oranı",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "method": "Güven Aralığı Yöntemi",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Bir Oranının Hassasiyeti",
+    "r_help": "help(prec_prop, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı bir oran için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığı genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>Sonuç Oranı:</b> 'pozitif' sonuca sahip deneklerin oranını belirtin\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Güven Aralığı Yöntemi:</b> Kullanılacak güven aralığı yöntemi türünü belirtin. Wilson yöntemi küçük n (< 40) için önerilir ve Agresti-Coull yöntemi daha büyük n için önerilir. Wald yöntemi önerilmez, ancak yaygın kullanımı nedeniyle sağlanmıştır.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

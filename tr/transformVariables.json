@@ -1,0 +1,18 @@
+{
+  "title": "Değişken(ler)i Dönüştür",
+  "navigation": "Dönüştür",
+  "label1": "Seçilen değişkenleri dönüştürmek için (log, log10, as.numeric...) işlemi seçmek için açılır menüyü kullanın. Mevcut değişkenleri üzerine yazabilir veya bir ön ek/son ek belirterek yeni değişkenler oluşturabilirsiniz.",
+  "target": "Dönüştürülecek değişken(ler)i seçin",
+  "selectctrl": "Uygulamak için bir işlem seçin",
+  "label2": "Yeni oluştur veya mevcut değişkenleri üzerine yaz",
+  "suffix": "Bir son ek belirtin",
+  "prefix": "Bir ön ek belirtin",
+  "overwrite": "Üzerine yaz",
+  "enterPrefix": "Bir ön ek girin",
+  "enterSuffix": "Bir son ek girin",
+  "help": {
+    "title": "Değişkenleri Dönüştür",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenleri dönüştürmek için (log, log10, as.numeric...) işlemi seçmek için açılır menüyü kullanın. Mevcut değişkenleri üzerine yazabilir veya bir ön ek/son ek belirterek yeni değişkenler oluşturabilirsiniz.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvar: Dönüştürülecek değişken\n</li>\n<li>\nDataset: var değişkenini içeren veri seti\n</li>\n</ul>\n<b>Değer</b></br>\nDönüştürülmüş değerler doğrudan veri setinde saklanır</br>\n<b>Paket</b></br>\nbas</br>\n<b>Yardım</b></br>\nhelp(log, package ='base')\n"
+  }
+}

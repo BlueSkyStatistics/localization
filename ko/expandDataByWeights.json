@@ -1,0 +1,11 @@
+{
+  "title": "가중치 확장",
+  "navigation": "확장",
+  "datasetname": "가중치가 확장된 데이터셋의 이름",
+  "destination": "가중치가 포함된 열을 입력하세요",
+  "help": {
+    "title": "가중치 확장",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>설명</b></br>\n        가중치에 따라 행이 확장된 새로운 데이터셋을 생성합니다. 데이터 프레임의 행을 소스 데이터 프레임 또는 데이터 테이블의 열 중 하나에 포함된 값에 따라 확장(복제)합니다. BSkySetWeights()는 splitstackshape 패키지의 expandRows()를 호출합니다.\n        <br/>\n        <b>사용법</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>인수</b><br/>\n         <ul>\n           <li>\n        weights: 가중치를 포함하는 데이터셋 변수입니다. \n        </li>\n        <li>\n        data: 입력 데이터 프레임 또는 데이터 테이블입니다.\n        </li>\n        <li>\n        newdata: 지정된 가중치에 대해 행이 복제되는 새로운 데이터셋입니다.\n        </li>\n        </ul>\n        <b>패키지</b></br>\n        splitstackshape</br>\n        <b>도움말</b></br>\n        help (expandRows)\n        "
+  }
+}

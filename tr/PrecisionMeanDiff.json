@@ -1,0 +1,18 @@
+{
+  "title": "Örneklem Büyüklüğü, Ortalama Farkının Hassasiyeti",
+  "navigation": "Ortalama Farkı",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n1": "Grup 1 Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "ratio": "Grup 2'nin Grup 1 Örneklem Büyüklüğüne Oranı",
+  "meandiff": "Ortalama Farkı",
+  "sd1": "Grup 1 Standart Sapması",
+  "sd2": "Grup 2 Standart Sapması",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "variance": "Varyans Varsayımı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Ortalama Farkının Hassasiyeti",
+    "r_help": "help(prec_meandiff, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak ortalamalar arasındaki fark için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Grup 1 Örneklem Büyüklüğü:</b> Grup 1'deki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığının genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>Grup 2'nin Grup 1 Örneklem Büyüklüğüne Oranı:</b> Grup 2 örneklem büyüklüğünün Grup 1 örneklem büyüklüğüne oranını belirtin. 1 değeri eşit örneklem büyüklüklerini ifade eder.\n<br/><br/>\n<b>Ortalama Farkı:</b> Grup ortalamaları arasındaki beklenen farkı belirtin\n<br/><br/>\n<b>Grup 1 Standart Sapması:</b> Grup 1'deki sonucun standart sapmasını belirtin\n<br/><br/>\n<b>Grup 2 Standart Sapması:</b> Grup 2'deki sonucun standart sapmasını belirtin\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Varyans Varsayımı:</b> Grup varyanslarının eşit veya eşitsiz olarak varsayıldığını belirtin. Eşit varyansları belirtmek, varyansın ortak bir havuzlu tahminini kullanır.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Dados de Exemplo",
+  "navigation": "Exemplo",
+  "label1": "Opções de conjunto de dados",
+  "radio2": "Salvar resultados em um novo conjunto de dados",
+  "dsname": "Digite um nome para o conjunto de dados",
+  "radio1": "Substituir conjunto de dados",
+  "label2": "Opções de amostragem",
+  "rd1": "Especifique a porcentagem do conjunto de dados a ser amostrada",
+  "percentage": "Digite a porcentagem",
+  "rd2": "Especifique o número de linhas a selecionar",
+  "size": "Digite o número de linhas",
+  "textn": "Opcionalmente, insira um nome de variável ou fórmula para pesos",
+  "seed": "Opcionalmente, defina uma semente para reprodutibilidade dos dados",
+  "chk2": "Amostra com reposição",
+  "help": {
+    "title": "Amostra de Conjunto de Dados",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>Descrição</b></br>\nToma uma amostra aleatória das linhas do conjunto de dados existente. Amostra uma % de linhas ou um número especificado de linhas com ou sem reposição. Salva o resultado em um novo conjunto de dados ou substitui o conjunto de dados existente.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n#Amostra um número especificado de linhas</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#Amostra uma fração das linhas</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ntbl: tabela de dados. Veja ‘Detalhes.’\n</li>\n<li>\nsize: Para sample_n(), o número de linhas a selecionar. Para sample_frac(), a fração de linhas a selecionar. \n</li>\n<li>\nreplace: A amostragem deve ser com reposição?\n</li>\n<li>\nweights: Pesos de amostragem. Isso deve avaliar para um vetor de números não negativos com o mesmo comprimento que a entrada. Os pesos são automaticamente padronizados para somar 1.\n</li>\n</ul>\n<b>Pacote</b></br>\ndplyr\n<b>Ajuda</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

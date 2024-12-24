@@ -1,0 +1,13 @@
+{
+  "title": "قارن نماذج N SEM",
+  "navigation": "قارن نماذج N SEM",
+  "label1": "يقارن نماذج N SEM.",
+  "label2": "اختر نماذج من الفئات التالية (فئة R بين قوسين أدناه)",
+  "label3": "نماذج المعادلات الهيكلية (lavaan)",
+  "modelselector1": "اختر نموذجًا أو أكثر للمقارنة:",
+  "help": {
+    "title": "قارن نماذج N SEM",
+    "r_help": "help(lavTestLRT, package='lavaan')",
+    "body": "\n                <b>\nاختبار LRT لمقارنة نماذج lavaan (المتداخلة).</b></br>\n<b>الاستخدام</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nobject:  كائن من فئة lavaan.\n</li>\n</ul>\n<b>القيمة</b><br/>\nكائن من فئة anova. عند إعطائه حجة واحدة، فإنه ببساطة يعيد إحصائية الاختبار لهذا النموذج. عند إعطائه تسلسل من الكائنات، يقوم هذا الدالة باختبار النماذج ضد بعضها البعض، بعد إعادة ترتيب النماذج وفقًا لدرجات حريةها<br/>\n<b>الحزمة</b></br>\nlavaan</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي في محرر صيغة R help(lavTestLRT,package='lavaan')</br></br>\n<b>أمثلة</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+  }
+}

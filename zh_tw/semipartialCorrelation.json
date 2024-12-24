@@ -1,12 +1,12 @@
 {
-  "title": "偏相關",
+  "title": "部分相關",
   "navigation": "部分",
   "tvarbox1": "選擇變數",
-  "statistic": "選擇一種方法",
+  "statistic": "選擇方法",
   "tvarbox2": "選擇控制變數",
   "help": {
-    "title": "偏相關",
+    "title": "部分相關",
     "r_help": "help(pcor.test, package=ppcor)",
-    "body": "\n<b>描述</b></br>\n給定第三個變數的兩個變數的偏相關。我們將計算在選擇的變數控制中指定的每個變數之間的成對偏相關，同時控制在控制變數控制中指定的變數。<br/>\n我們在函數pcor.test周圍寫了一個包裝器，該包裝器為每對指定的變數調用pcor.test。\n<br/>\n<b>用法</b>\n<br/>\n<code> \npcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n參數\nx: 一個數值向量。\n</li>\n<li>\ny: 一個數值向量。\n</li>\n<li>\ny: 一個數值向量。\n</li>\n<li>\nmethod: 一個字符字符串，指示要計算哪個偏相關係數。可以縮寫為“pearson”（默認）、“kendall”或“spearman”。\n</li>\n</ul>\n<b>詳細信息</b></br>\n偏相關是控制第三個變數時兩個變數之間的相關性。當方差-協方差矩陣的行列式數值為零時，使用Moore-Penrose廣義矩陣逆。在這種情況下，如果變數的數量大於或等於樣本大小，則不會提供p值和統計量。</br>\n<b>值</b><br/>\n估計：兩個變數之間的偏相關係數。<br/>\np.value：測試的p值。<br/>\nn：樣本數量。<br/>\n<b>示例</b><br/>\n<code> \npcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n</code> <br/>\n<b>包</b></br>\nppcor</br>\n<b>幫助</b></br>\nhelp(pcor.test, package=ppcor)\n"
+    "body": "\n<b>描述</b></br>\n給定第三個變數的兩個變數的部分相關。我們將計算在選擇的變數控制中指定的每對變數之間的成對部分相關，控制在控制變數控制中指定的變數。<br/>\n我們已經為函數pcor.test編寫了一個包裝器，該包裝器對指定的每對變數調用pcor.test。\n<br/>\n<b>用法</b>\n<br/>\n<code> \npcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n參數\nx: 一個數值向量。\n</li>\n<li>\ny: 一個數值向量。\n</li>\n<li>\ny: 一個數值向量。\n</li>\n<li>\nmethod: 一個字符字符串，指示要計算的部分相關係數。可以縮寫為\"pearson\"（默認）、\"kendall\"或\"spearman\"之一。\n</li>\n</ul>\n<b>詳細信息</b></br>\n部分相關是控制第三個變數時兩個變數之間的相關性。當方差-協方差矩陣的行列式數值為零時，使用Moore-Penrose廣義矩陣逆。在這種情況下，如果變數的數量大於或等於樣本大小，則不會提供p值和統計量。</br>\n<b>值</b><br/>\nestimate: 兩個變數之間的部分相關係數。<br/>\np.value: 測試的p值。<br/>\nn: 樣本數。<br/>\n<b>示例</b><br/>\n<code> \npcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n</code> <br/>\n<b>包</b></br>\nppcor</br>\n<b>幫助</b></br>\nhelp(pcor.test, package=ppcor)\n"
   }
 }

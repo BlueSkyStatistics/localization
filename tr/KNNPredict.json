@@ -1,0 +1,26 @@
+{
+  "title": "KNN ile Tahmin Yapın",
+  "navigation": "KNN ile Tahmin Yap",
+  "dataset_var": "Açık veri setleri",
+  "header": "KNN, tembel bir sınıflandırıcıdır, daha sonra tahmin yapmak için kullanılabilecek bir model oluşturmaz. Aynı anda uyum sağlar ve tahmin yapar. Tahmin yapmak/puanlamak için aşağıdaki adımları takip etmelisiniz.",
+  "NOTE1": "AKTİF VERİ SETİ, BİR MODEL OLUŞTURMAK İSTEDİĞİNİZ VERİ SETİ OLMALI VE PUANLAMAK İSTEDİĞİNİZ VERİ SETİ DEĞİL",
+  "step1": "Adım 1: Her zamanki gibi, bu iletişim kutusunu açmadan önce Datagrid'de eğitim veri setini seçmelisiniz.",
+  "step2": "Adım 2: Modeli uyum sağlamak için kullanılan eğitim veri setinde bağımlı değişkeni seçin.",
+  "step3": "Adım 3: Eğitim veri setinde bağımsız değişkenleri belirtin.",
+  "step4": "Adım 4: Modeli oluşturmak için kullanılacak komşu sayısını belirtin.",
+  "step5": "Adım 5: Tahminleri içeren yeni değişken için bir değişken öneki girin.",
+  "step6": "Adım 6: Tahminleri eklemek için veri setini belirtin. Bu, modeli eğitmek için kullanılan aynı bağımsız değişkenleri içermelidir.",
+  "dependentvar": "Bağımlı değişken (eğitim veri setinden)",
+  "independentvars": "Bağımsız değişken(ler) (eğitim veri setinden)",
+  "Seed": "Tohum Ayarla",
+  "datasetToScore": "Puanlamak/tahmin etmek için veri seti",
+  "Group2": "KNN için Ayar parametreleri",
+  "noneighbhors": "Komşu sayısı (Bir değer belirtilmediğinde, varsayılan olarak veri setindeki gözlem sayısının karekökü ayarlanır)",
+  "testDatasetName": "Tahmin yapmak için veri setinin adını girin",
+  "predictedValues": "Tahmin edilen değerler için değişken öneki girin. Yeni bir değişken, bağımlı değişken adının sonuna öneki ekleyerek oluşturulur.",
+  "help": {
+    "title": "K En Yakın Komşular",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Açıklama</b></br>\nk-En Yakın Komşu Sınıflandırması\n<br/>\n<b>Not: </b></br>\nDiyalog üzerindeki yardım metnine bakın\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ntrain: Bu, uyum sağlamak için kullanılan kaynak (aktif) veri setidir.\n</li>\n<li>\ntest: Belirttiğiniz önek ile tahmin edilen değerlerin kaydedileceği veri setidir. Kaynak veri setinden belirtilen bağımlı değişkenin sonuna öneki ekleyerek yeni bir değişken oluşturulur.\n</li>\n<li>\ncl: Modeli uyum sağlamak için kullanılan veri setinden gerçek sınıflandırmaların faktörü\n</li>\n<li>\nk: Dikkate alınan komşu sayısı.\n</li>\n<li>\nl: kesin karar için minimum oy, aksi takdirde şüphe. (Daha kesin olarak, k-l itiraz eden oy sayısı izin verilir, k bağlarla artırılsa bile.)\n</li>\n<li>\nprob: Bu doğruysa, kazanan sınıf için oyların oranı prob niteliği olarak döndürülür.\n</li>\n<li>\nuse.all: bağların işlenmesini kontrol eder. Eğer doğruysa, k'nın en büyük olanına eşit olan tüm mesafeler dahil edilir. Eğer yanlışsa, tam olarak k komşu kullanmak için k'ya eşit mesafelerin rastgele bir seçimi seçilir.\n</li>\n</ul>\n<b>Değer</b></br>\nTest setinin sınıflandırmalarının faktörü. şüphe NA olarak döndürülecektir.</br>\n<b>Paket</b></br>\ncaret;class</br>\n<b>Yardım</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

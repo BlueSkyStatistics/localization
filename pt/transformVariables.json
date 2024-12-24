@@ -1,0 +1,18 @@
+{
+  "title": "Transformar Variável(is)",
+  "navigation": "Transformar",
+  "label1": "Use o menu suspenso para selecionar a operação (log, log10, as.numeric...) para transformar as variáveis selecionadas. Você pode sobrescrever variáveis existentes ou criar novas variáveis especificando um prefixo/sufixo.",
+  "target": "Selecione a(s) variável(is) a serem transformadas",
+  "selectctrl": "Selecione uma operação a aplicar",
+  "label2": "Criar novas ou sobrescrever variáveis existentes",
+  "suffix": "Especifique um sufixo",
+  "prefix": "Especifique um prefixo",
+  "overwrite": "Sobrescrever",
+  "enterPrefix": "Digite um prefixo",
+  "enterSuffix": "Digite um sufixo",
+  "help": {
+    "title": "Transformar Variáveis",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Descrição</b></br>\nUse o menu suspenso para selecionar a operação (log, log10, as.numeric...) para transformar as variáveis selecionadas. Você pode sobrescrever variáveis existentes ou criar novas variáveis especificando um prefixo/sufixo.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvar: A variável a ser transformada\n</li>\n<li>\nDataset: O conjunto de dados que contém a variável var\n</li>\n</ul>\n<b>Valor</b></br>\nOs valores transformados são armazenados diretamente no conjunto de dados</br>\n<b>Pacote</b></br>\nbase</br>\n<b>Ajuda</b></br>\nhelp(log, package ='base')\n"
+  }
+}

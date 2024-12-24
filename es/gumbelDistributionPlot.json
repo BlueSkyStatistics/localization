@@ -5,22 +5,22 @@
   "scale": "Escala",
   "pdenfun": "Graficar función de densidad",
   "pdstfun": "Graficar función de distribución",
-  "lblregions": "Especifique opcionalmente regiones bajo la función de densidad mediante",
-  "xvals": "valores x",
+  "lblregions": "Especificar opcionalmente regiones bajo la función de densidad por",
+  "xvals": "valores de x",
   "quantiles": "cuantiles",
-  "lblRegFill": "Regiones a llenar (especifique una o dos, o deje en blanco)",
+  "lblRegFill": "Regiones a llenar (especificar una o dos, o dejar en blanco)",
   "lblreg1": "Región 1 :",
   "lblreg2": "Región 2 :",
   "lblregfrm": "Desde",
   "lblregto": "Hasta",
   "lblregcol": "Color",
   "lblLegPos": "Posición de la leyenda",
-  "toprt": "Arriba a la derecha",
-  "toplt": "Arriba a la izquierda",
-  "topmid": "Centro superior",
+  "toprt": "Arriba derecha",
+  "toplt": "Arriba izquierda",
+  "topmid": "Arriba centro",
   "help": {
     "title": "Gráfico de Distribución de Gumbel",
-    "r_help": "ayuda(qgumbel, paquete=RcmdrMisc)",
-    "body": "\n            ​​\n            <b>Descripción</b>\n            <br/>\n            Densidad, función de distribución, función cuantil y generación aleatoria para la distribución de Gumbel con parámetros de ubicación y escala especificados.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantiles (valores de la variable).</li>\n                \n                \n                <li>p : vector de probabilidades.</li>\n                \n                \n                <li>n : número de observaciones. Si length(n) > 1, la longitud se considera como el número requerido.</li>\n                \n                \n                <li>location : parámetro de ubicación (por defecto 0); potencialmente un vector.</li>\n                \n                \n                <li>scale : parámetro de escala (por defecto 1); potencialmente un vector.</li>\n                \n                <li>lower.tail : lógico; si TRUE (por defecto) las probabilidades y los cuantiles corresponden a P(X ≤ x), si FALSE a P(X > x).</li>\n            </ul>            \n"
+    "r_help": "help(qgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Descripción</b>\n            <br/>\n            Densidad, función de distribución, función cuantil y generación aleatoria para la distribución de Gumbel con parámetros de ubicación y escala especificados.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantiles (valores de la variable).</li>\n                \n                \n                <li>p : vector de probabilidades.</li>\n                \n                \n                <li>n : número de observaciones. Si length(n) > 1, se toma la longitud como la cantidad requerida.</li>\n                \n                \n                <li>location : parámetro de ubicación (por defecto 0); potencialmente un vector.</li>\n                \n                \n                <li>scale : parámetro de escala (por defecto 1); potencialmente un vector.</li>\n                \n                <li>lower.tail : lógico; si TRUE (el valor por defecto) las probabilidades y cuantiles corresponden a P(X ≤ x), si FALSE a P(X > x).</li>\n            </ul>            \n"
   }
 }

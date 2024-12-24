@@ -1,0 +1,30 @@
+{
+  "title": "MSA 게이지 연구를 위한 실험 테이블 생성",
+  "navigation": "MSA 연구 설계",
+  "datasetname": "MSA 게이지 연구 테이블 이름",
+  "label1": "부품 세부정보",
+  "label2": "운영자 세부정보",
+  "factor1": "부품 변수의 이름 (예: 기본값으로 부품)",
+  "numOfFactorLevels1": "부품 수",
+  "factorLevels1": "값을 자동 생성하려면 비워두거나 값을 지정하십시오 - 예: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "자동 생성하는 경우 접두사를 지정하십시오. 비워두면 1,2,3,..으로 값을 생성합니다.",
+  "factor2": "운영자 변수의 이름 (예: 기본값으로 운영자)",
+  "numOfFactorLevels2": "운영자 수",
+  "factorLevels2": "값을 자동 생성하려면 비워두거나 값을 지정하십시오 - 예: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "자동 생성하는 경우 접두사를 지정하십시오. 비워두면 1,2,3,..으로 값을 생성합니다.",
+  "numOfBlocks": "블록 수",
+  "replicationVarName": "비워두지 않으면 복제 반복 변수의 이름 (복제 > 1일 경우)",
+  "replications": "복제",
+  "repeatOnlyChk": "단순 반복만 (진정한 복제가 아닌 - 권장하지 않음)",
+  "randomizationChk": "실행을 무작위화",
+  "selectRandomSeedRad": "무작위 시드를 자동 생성 (매번 고유)",
+  "selectFixedRandomSeedRad": "다음 무작위 시드를 선택하거나 수동으로 변경",
+  "lbl1": "무작위화 시드 값을 변경할 필요가 없을 수 있습니다",
+  "randomseeds": "무작위화 시드",
+  "sortByOperatorChk": "각 복제 내에서 운영자로 정렬",
+  "help": {
+    "title": "MSA 게이지 연구를 위한 실험 테이블 자동 생성",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t지정된 매개변수를 기반으로 부품 및 운영자 세부정보와 함께 실험 실행을 설정하기 위해 MSA 연구 테이블을 자동으로 생성합니다. \n\t\t\t\t부품 및 운영자에 대해 비숫자 값을 사용하는 경우 예를 들어 1,-1,'name1',0,'string2'와 같이 단일 인용부호로 지정하십시오.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t실험 실행 세부정보가 자동으로 생성되면 실행 테이블이 데이터 그리드 UI에 표시됩니다. \n\t\t\t\t실행 테이블은 저장할 수 있습니다 (또는 파일 메뉴에서 '다른 이름으로 저장' 선택) 실험 설정에 사용할 엑셀 파일을 생성합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

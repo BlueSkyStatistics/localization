@@ -1,0 +1,18 @@
+{
+  "title": "Criar Design Composto Central (Quantitativo) a partir de um Design FrF2 existente",
+  "navigation": "Criar Design Composto Central (Quantitativo)",
+  "datasetname": "Nome do design",
+  "datasetFrF2": "Selecione um design FrF2 (Quantitativo) existente",
+  "alpha": "Número de pontos estrela (alpha)",
+  "alphalbl": "\"ortogonal\", \"rotacionável\" ou um número que indica a posição dos pontos estrela",
+  "numOfCenterPts": "Número de pontos centrais, ou dois números separados por vírgula (para o cubo e a porção estrela)",
+  "blockName": "Nome do bloco",
+  "lbl1": "Você pode não precisar alterar as configurações de randomização",
+  "randomseeds": "Semente para randomização",
+  "randomizationChk": "Randomizar a geração do design",
+  "help": {
+    "title": "Criar Design Composto Central (Quantitativo) a partir de um Design FrF2 existente",
+    "r_help": "help(ccd.augment, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tA função ccd.augment para aumentar um fatorial fracionário existente com uma porção estrela (usando o pacote rsm) em caso de uma decisão tardia para um procedimento sequencial\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(ccd.augment, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de amostra chamado fatores para FrF2 design para CCD.xlsx. Abra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\tCrie primeiro o design FrF2 (com os 4 fatores) - escolha a opção número de execuções como 0 e resolução como 5.\n\t\t\t\tEntão crie o design composto central a partir do design FrF2 acima mantendo todas as opções padrão neste diálogo/UI de design composto central\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

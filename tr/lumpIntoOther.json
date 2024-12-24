@@ -1,0 +1,27 @@
+{
+  "title": "En az veya en yaygın faktör seviyelerini birleştir",
+  "navigation": "Diğerine Birleştir (Otomatik)",
+  "target": "Seyrek seviyeleri birleştirmek için değişkenleri seçin",
+  "label1": "Birleştirilen seviyeleri içeren yeni kategorinin varsayılan adı \"diğer\"dir. Ağırlık belirtmek isteğe bağlıdır. Mevcut değişken(ler)i birleştirilmiş seviyelerle üzerine yazabilir veya sonuçları yeni değişken(ler)e kaydedebilirsiniz.",
+  "other": "Birleştirilen seviye için ad",
+  "label3": "Kullanılacak yöntem",
+  "defaultOption": "\"Diğer\" en küçük seviye olacak şekilde en az sık görülen seviyeleri \"diğer\" içine birleştir.",
+  "categories": "En yaygın (+n)/en az yaygın (-n) kategorileri koru",
+  "category": "Kategorilerin sayısını girin",
+  "proportion1": "En az (+ prop)/en çok (- prop) oranında görünen kategorileri koru",
+  "proportion": "Oranı girin",
+  "dropOption": "\"Diğer\" ile değiştirmek için seviyeleri girin, örn. seviye1,seviye2,seviye3",
+  "varweights": "Değişken ağırlıkları",
+  "label2": "Sonuçları yeni değişken(ler)e kaydet veya mevcut değişken(ler)i üzerine yaz",
+  "rd3": "Bir ek belirtin (Bir yeni değişken ek ile oluşturulacak)",
+  "txt3": "Bir ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacak)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri üzerine yaz",
+  "ties": "Bağlantıları yönetme seçenekleri",
+  "help": {
+    "title": "Diğerine Birleştir",
+    "r_help": "help(fct_lump, package =forcats)",
+    "body": "\n<b>Açıklama</b></br>\nEn az veya en yaygın faktör seviyelerini \"diğer\" seviyesine birleştirir. Birleştirilen seviyeleri içeren yeni kategorinin varsayılan adı \"diğer\"dir. Ağırlık belirtmek isteğe bağlıdır. Mevcut değişken(ler)i birleştirilmiş seviyelerle üzerine yazabilir veya sonuçları yeni değişken(ler)e kaydedebilirsiniz.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Diğer\", ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"diğer\",ties.method =\"min\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nf: Bir faktör. Hem n hem de prop eksikse, fct_lump en az sık görülen seviyeleri \"diğer\" içine birleştirir ve \"diğer\" hala en küçük seviye olur. Bu, fct_inorder() ile birlikte kullanıldığında özellikle yararlıdır.\n</li>\n<li>\nn: Pozitif n en yaygın n değerlerini korur. Negatif n en az yaygın -n değerlerini korur. Eğer bağlar varsa, en az abs(n) değer alırsınız.\n</li>\n<li>\nprop: Pozitif prop en az prop kadar görünen değerleri korur. Negatif prop en çok -prop kadar görünen değerleri korur.\n</li>\n<li>\nw: f'deki her değer (seviye değil) için frekans ağırlıkları veren isteğe bağlı bir sayısal vektör.\n</li>\n<li>\nother_level: \"Diğer\" değerleri için kullanılan seviye değeri. Her zaman seviyelerin sonunda yer alır.\n</li>\n<li>\nties.method: Bağların nasıl ele alınacağını belirten bir karakter dizesi. Ayrıntılar için rank()'a bakın.\n</li>\n<li>\nmin: En az min sayıda görünen değerleri korur.\n</li>\n</ul>\n<b>Paket</b></br>\nforcats</br>\n<b>Yardım</b></br>\nAşağıdaki satırı BlueSky İstatistikleri R sözdizimi editörüne yazın</br>\nhelp(fct_lump, package =forcats)\n"
+  }
+}

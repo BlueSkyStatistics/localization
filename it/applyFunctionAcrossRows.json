@@ -1,0 +1,13 @@
+{
+  "title": "Applicare una funzione a tutte le righe delle variabili selezionate.",
+  "navigation": "Applica una funzione alle righe",
+  "label1": "Crea una nuova variabile o sovrascrivi una variabile esistente applicando una funzione a tutti i valori delle righe delle variabili selezionate.",
+  "newvar": "Inserisci una nuova variabile/Sovrascrivi una variabile esistente",
+  "target": "Seleziona variabile(e)",
+  "selectctrl": "Seleziona un'operazione da applicare",
+  "help": {
+    "title": "Applicare una funzione",
+    "r_help": "help(apply,package='base')",
+    "body": "\n<b>Descrizione</b></br>\nApplica una funzione a tutte le righe delle variabili selezionate (colonne) in un dataset. Utilizziamo la funzione select e l'operatore pipe ( %>% ) dal pacchetto dplyr per selezionare le variabili a cui applicheremo una funzione. (Queste variabili vengono passate alla funzione apply)\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nX: Un array che include una matrice. Le variabili selezionate vengono passate tramite dplyr\n</li>\n<li>\nMARGIN: Un vettore che fornisce i sottoscritti su cui verrà applicata la funzione. Ad esempio, per una matrice 1 indica righe, 2 indica colonne, c(1, 2) indica righe e colonne. Dove\nX ha nomi di dimensioni, può essere un vettore di caratteri che seleziona i nomi delle dimensioni. dataset che contiene la variabile var\n</li>\n<li>\nFUN: La funzione da applicare\n</li>\n</ul>\n<b>Valore</b><br/>\nI valori calcolati sono memorizzati direttamente nel Dataset\n<b>Pacchetto</b></br>\ndplyr</br>\n<b>Aiuto</b></br>\nhelp(apply)\n"
+  }
+}

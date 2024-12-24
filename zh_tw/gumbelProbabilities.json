@@ -1,15 +1,15 @@
 {
-  "title": "甘博爾概率",
-  "navigation": "甘博爾概率",
-  "varvals": "輸入變數值，以逗號分隔。例如：3,0.5",
+  "title": "甘博爾機率",
+  "navigation": "甘博爾機率",
+  "varvals": "輸入變數值，以逗號分隔。範例：3,0.5",
   "location": "位置",
   "scale": "尺度",
   "labelSig": "顯著性水平",
   "lowtail": "下尾",
   "uptail": "上尾",
   "help": {
-    "title": "甘博爾概率",
-    "r_help": "幫助(pgumbel, 套件=RcmdrMisc)",
-    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            針對具有指定位置和尺度參數的甘博爾分佈的密度、分佈函數、分位數函數和隨機生成。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數的向量（變數的值）。</li>\n                \n                \n                <li>p : 機率的向量。</li>\n                \n                \n                <li>n : 觀察值的數量。如果length(n) > 1，則長度被視為所需的長度。</li>\n                \n                \n                <li>location : 位置參數（預設為0）；可能是一個向量。</li>\n                \n                \n                <li>scale : 尺度參數（預設為1）；可能是一個向量。</li>\n                \n                <li>lower.tail : 邏輯；如果為TRUE（預設），則機率和分位數對應於P(X ≤ x)，如果為FALSE，則對應於P(X > x)。</li>\n            </ul>            \n"
+    "title": "甘博爾機率",
+    "r_help": "help(pgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            密度、分佈函數、分位數函數和隨機生成的甘博爾分佈，具有指定的位置和尺度參數。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數的向量（變數的值）。</li>\n                \n                \n                <li>p : 機率的向量。</li>\n                \n                \n                <li>n : 觀察數量。如果長度(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>location : 位置參數（默認為0）；可能是一個向量。</li>\n                \n                \n                <li>scale : 尺度參數（默認為1）；可能是一個向量。</li>\n                \n                <li>lower.tail : 邏輯；如果為TRUE（默認），則機率和分位數對應於P(X ≤ x)，如果為FALSE則對應於P(X > x)。</li>\n            </ul>            \n"
   }
 }

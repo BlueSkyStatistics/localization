@@ -1,0 +1,28 @@
+{
+  "title": "Odds Oranları / Göreli Riskler, M'ye 2 Tablosu",
+  "navigation": "Odds Oranları / Göreli Riskler, M'ye 2 Tablosu",
+  "outcomevarlabel": "Sonuç Değişkeni (İkili Faktör)",
+  "expvarlabel": "Maruz Kalma / Tahmin Değişkeni (Faktör)",
+  "statlabel": "İstatistik",
+  "orlabel": "Odds Oranları",
+  "rrlabel": "Göreli Riskler",
+  "oresttypelabel": "Odds Oranı Tahmin Türü",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "Mid-p",
+  "orestsmalllabel": "Küçük Örnek Ayarlı",
+  "rresttypelabel": "Göreli Risk Tahmin Türü",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "Küçük Örnek Ayarlı",
+  "reversallabel": "Kategori Tersine Çevirme",
+  "revnonelabel": "Tersine Çevirme Yok",
+  "revexplabel": "Maruz Kalma",
+  "revoutlabel": "Sonuç",
+  "revbothlabel": "Her İkisi",
+  "cilevellabel": "Güven Düzeyi (0-1)",
+  "help": {
+    "title": "Odds Oranları / Göreli Riskler, M'ye 2 Tablosu",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\nBu, bir grubun \"hastalık\" olma olasılığını diğerine göre karşılaştırmak için kullanılır, oranlar (odds oranı) veya olasılık oranı (göreli risk) biçiminde.  \n\"Hastalık\" olasılığı, \"hastalık\" olasılığının \"hastalık yok\" olasılığına bölünmesi olarak tanımlanır. Her gruptaki sonuç sıklıklarının bir kontenjan tablosu sağlanır.  \nAyrıca, referans gruba göre her grup için odds oranları veya göreli riskler tablosu, güven aralıkları ve Wald Ki-Kare p-değeri ile birlikte verilir.  Son olarak, \nher grubu referans gruba karşılaştıran mid-p kesin, Fisher kesin ve Wald Ki-Kare versiyonları ile p-değerleri tablosu gösterilir. \n<br/><br/>\n<b>Sonuç Değişkeni:</b> İlgili ikili \"hastalık\" (evet/hayır) değişkeni.  Varsayılan olarak, sıralama düzenindeki en yüksek kategori \"hastalık evet\" olarak tanımlanır.\n<br/><br/>\n<b>Maruz Kalma / Tahmin Değişkeni:</b> Karşılaştırılacak gruplar.  2'den fazla grup olabilir.\n<br/><br/>\n<b>İstatistik:</b> Hesaplanacak istatistik\n<br/><br/>\n<b>Odds Oranı / Göreli Risk Tahmin Türü:</b> Wald (şartsız maksimum olasılık), Fisher (şartlı maksimum olasılık), Mid-p (medyan yanlılık yöntemi) veya Küçük Örnek Ayarlı\n<br/><br/>\n<b>Kategori Tersine Çevirme:</b> Bu, maruz kalma değişkeni kategorilerinin veya sonuç değişkeni kategorilerinin sıralamasını tersine çevirip çevirmeyeceğini kontrol eder.  Maruz kalma \ndeğişkeninin tersine çevrilmesi, odds oranları için referans grubunu değiştirecektir.  Sonuç değişkeninin tersine çevrilmesi, \"hastalık\" ile ilişkili kategoriyi değiştirecektir.\n<br/><br/>\n<b>Güven Düzeyi:</b> güven aralıkları için seviye; varsayılan 0.95\n<br/><br/>\n<b>Gerekli R Paketleri:</b> epitools\n\t\t\t"
+  }
+}

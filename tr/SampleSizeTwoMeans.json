@@ -1,0 +1,20 @@
+{
+  "title": "Örneklem Büyüklüğü, İki Ortalama Testi",
+  "navigation": "İki Ortalama",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için: her iki grup ortalamasını ve gücü belirtin\nGücü hesaplamak için: her iki grup ortalamasını ve örneklem büyüklüğünü belirtin\nAlgılanabilir ortalama farkını hesaplamak için: örneklem büyüklüğünü ve gücü belirtin",
+  "n": "Örneklem Büyüklüğü",
+  "power": "Güç (0-1)",
+  "meangrp1": "Tedavi Grubu Ortalaması",
+  "meangrp2": "Kontrol Grubu Ortalaması",
+  "ratio": "Tedavi ve Kontrol Örneklem Büyüklüğü Oranı",
+  "sd": "Standart Sapma",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, İki Ortalama Testi",
+    "r_help": "help(epi.sscompc, package ='epiR')",
+    "body": "\nBu, iki örneklem t-testi için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğer ikisini belirttiğinde örneklem büyüklüğünü, gücü veya ortalama farkını (delta) hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa sıfır hipotezini reddetme olasılığı.\n<br/><br/>\n<b>Tedavi Grubu Ortalaması:</b> Tedavi grubunun ortalamasını belirtin\n<br/><br/>\n<b>Kontrol Grubu Ortalaması:</b> Kontrol grubunun ortalamasını belirtin\n<br/><br/>\n<b>Tedavi ve Kontrol Örneklem Büyüklüğü Oranı:</b> Örneklem büyüklüklerinin istenen oranını belirtin (tedavi N, kontrol N'ye bölünmüştür). 1 oranı eşit örneklem büyüklüklerini ifade eder.\n<br/><br/>\n<b>Standart Sapma:</b> Grupların birleşik standart sapma tahmini\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hatası)\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> epiR\n\t\t\t"
+  }
+}

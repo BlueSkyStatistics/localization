@@ -1,11 +1,11 @@
 {
   "title": "數值統計，使用 describe",
-  "navigation": "數值摘要，使用 describe (Legacy)",
+  "navigation": "數值摘要，使用 describe (舊版)",
   "tvarbox1": "選擇變數",
   "tvarbox2": "選擇分組變數",
   "help": {
     "title": "數值統計，使用 describe",
     "r_help": "help(describe, package=psych)",
-    "body": "\n<b>描述</b></br>\n輸出以下數值統計：</br>\n計數，均值，標準差，中位數，修剪，mad，最小值，最大值，範圍，偏度，峰度，標準誤差\n<br/>\n<b>用法</b>\n<br/>\n<code> \n#BSkyFormat 顯示格式良好的輸出<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx：一個數據框或矩陣\n</li>\n</ul>\n<b>包</b></br>\npsych</br>\n<b>幫助</b></br>\nhelp(describe, package=psych)\n"
+    "body": "\n<b>描述</b></br>\n輸出以下數值統計：</br>\n計數、平均值、標準差、中位數、修剪、mad、最小值、最大值、範圍、偏度、峰度、標準誤差\n<br/>\n<b>用法</b>\n<br/>\n<code> \n#BSkyFormat 顯示格式良好的輸出<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個數據框或矩陣\n</li>\n</ul>\n<b>包</b></br>\npsych</br>\n<b>幫助</b></br>\nhelp(describe, package=psych)\n"
   }
 }

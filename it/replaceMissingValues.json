@@ -1,0 +1,11 @@
+{
+  "title": "Sostituisci i valori mancanti (variabili Stringa/Fattore)",
+  "navigation": "Carattere/Fattore",
+  "destination": "Variabili di destinazione",
+  "repString": "Inserisci la stringa per sostituire i NAs. Nota: non racchiudere la stringa tra virgolette. Per le variabili fattore, il valore specificato deve essere un livello del fattore, vedere Variabili>Livelli Fattore>Aggiungi",
+  "help": {
+    "title": "Sostituisci i valori mancanti (variabili Stringa/Fattore)",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>Descrizione</b></br>\nSostituisci i valori mancanti nelle variabili selezionate con il valore specificato. Quando si utilizza la finestra di dialogo, non è necessario racchiudere la stringa tra virgolette doppie\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('Stringa da sostituire')\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nLe variabili del dataset (var1, var2) dove i NAs devono essere sostituiti\n</li>\n</ul>\n<b>Valore</b><br/>\nSostituisce i valori mancanti nel dataset con la stringa specificata<br/>\n<b>Pacchetto</b></br>\nbase</br>\n<b>Aiuto</b></br>\nhelp(is.na,package=base)"
+  }
+}

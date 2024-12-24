@@ -1,0 +1,18 @@
+{
+  "title": "Örneklem Büyüklüğü, İki Eşleşik Oranların Testi",
+  "navigation": "İki Eşleşik Oranlar",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için (eşleşik sayı): gücü belirtin\nGücü hesaplamak için: örneklem büyüklüğünü (eşleşik sayı) belirtin",
+  "n": "Örneklem Büyüklüğü (eşleşik sayı)",
+  "power": "Güç (0-1)",
+  "pdisc": "Uyumsuz Eşleşik Oranlar Oranı (PD) (0-1)",
+  "pdiff": "Oranlar arasındaki fark, -PD ile PD arasında olmalıdır",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, İki Eşleşik Oranların Testi",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nBu, McNemar Testi kullanarak eşleşik oranlar için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü (eşleşik sayı) veya gücü hesaplar. Hesaplamalar, uyumsuz eşleşik oranların oranına bağlı olarak normal bir yaklaşım kullanır. Connor R. J. 1987. Eşleşik örneklem tasarımı için oranlardaki farklılıkları test etmek için örneklem büyüklüğü. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Örneklem Büyüklüğü (eşleşik sayı):</b> Çalışmadaki örneklem büyüklüğünü belirtin. Bu, her iki zaman noktasında ikili sonuç değerleri sağlayacak olan deneklerin sayısıdır\nönce-sonra tasarımında veya eşleşik bir denek (örneğin, eşleşik vaka-kontrol) tasarımındaki eşleşik sayı.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa, testin sıfır hipotezini reddetme olasılığı.\n<br/><br/>\n<b>Uyumsuz Eşleşik Oranlar Oranı:</b> Toplam eşleşik sayısından, 'evet'/'hayır' veya 'hayır'/'evet' yanıtları gibi, anlaşmazlık gösterecek eşleşiklerin beklenen oranını belirtin.\n<br/><br/>\n<b>Oranlar Arasındaki Fark:</b> Tespit edilmek istenen sonuç oranları arasındaki farkı belirtin (yani 'evet' olanların oranı). Örneğin, eşleşik vaka-kontrol\nçalışmasında bu, 'evet' olan vakaların oranı ile 'evet' olan kontrollerin oranı arasındaki farktır.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hata)\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats\n\t\t\t"
+  }
+}

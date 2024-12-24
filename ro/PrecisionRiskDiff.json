@@ -1,17 +1,17 @@
 {
-  "title": "Dimensiunea eșantionului, Precizia unei diferențe de risc",
-  "navigation": "Diferența de risc",
-  "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar cealaltă va fi calculată",
-  "n1": "Dimensiunea eșantionului Grup 1",
-  "width": "Lățimea intervalului de încredere",
-  "ratio": "Raportul dimensiunii eșantionului Grup 1 la Grup 2",
-  "prop1": "Proporția rezultatelor Grup 1",
-  "prop2": "Proporția rezultatelor Grup 2",
-  "conflevel": "Nivel de încredere (0-1)",
-  "method": "Metoda intervalului de încredere",
-  "help": {
-    "title": "Dimensiunea eșantionului, Precizia unei diferențe de risc",
-    "r_help": "help(prec_riskdiff, package ='presize')",
-    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru o diferență în proporții bazată pe lățimea intervalului de încredere. Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul specifică cealaltă.\n<br/><br/>\n<b>Dimensiunea eșantionului Grup 1:</b> Specificați numărul de subiecți din grupul 1\n<br/><br/>\n<b>Lățimea intervalului de încredere:</b> Specificați lățimea dorită a intervalului de încredere. Lățimea unui interval de încredere este o măsură a preciziei unei estimări și este limita superioară minus limita inferioară.\n<br/><br/>\n<b>Raportul dimensiunii eșantionului Grup 1 la Grup 2:</b> Specificați raportul dimensiunii eșantionului grupului 2 la dimensiunea eșantionului grupului 1. O valoare de 1 înseamnă dimensiuni egale ale eșantionului.\n<br/><br/>\n<b>Proporția rezultatelor Grup 1:</b> Specificați proporția subiecților din grupul 1 cu rezultatul 'pozitiv'\n<br/><br/>\n<b>Proporția rezultatelor Grup 2:</b> Specificați proporția subiecților din grupul 2 cu rezultatul 'pozitiv'\n<br/><br/>\nRețineți că diferența de risc va fi calculată ca proporția din grupul 1 minus proporția din grupul 2.\n<br/><br/>\n<b>Nivel de încredere:</b> Specificați nivelul dorit al intervalului de încredere\n<br/><br/>\n<b>Metoda intervalului de încredere:</b> Specificați tipul de interval de încredere de utilizat. Newcombe (newcombe) a propus un interval de încredere bazat pe metoda scorului Wilson pentru\nproporția unică. Intervalul de încredere fără corecție de continuitate este implementat din ecuația 10 din Newcombe (1998). Miettinen-Nurminen (mn) oferă o formă închisă\necuație pentru estimarea maximului de verosimilitate restricționată. Implementarea se bazează pe codul furnizat de Yongyi Min pe https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html.\nIntervalul de încredere Agresti-Caffo (ac) se bazează pe intervalul de încredere Wald, adăugând 1 succes la fiecare celulă a tabelului 2 x 2 (vezi Agresti și Caffo 2000).\n<br/><br/>\n<b>Pachete R necesare:</b> presize\n\t\t\t"
-  }
+    "title": "Mărimea Eșantionului, Precizia unei Diferențe de Risc",
+    "navigation": "Diferență de Risc",
+    "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar cealaltă va fi calculată",
+    "n1": "Dimensiunea Eșantionului pentru Grupul 1",
+    "width": "Lățimea Intervalului de Încredere",
+    "ratio": "Raportul Dimensiunii Eșantionului Grupului 1 față de Grupul 2",
+    "prop1": "Proporția Rezultatelor pentru Grupul 1",
+    "prop2": "Proporția Rezultatelor pentru Grupul 2",
+    "conflevel": "Nivelul de Încredere (0-1)",
+    "method": "Metoda Intervalului de Încredere",
+    "help": {
+        "title": "Mărimea Eșantionului, Precizia unei Diferențe de Risc",
+        "r_help": "help(prec_riskdiff, package ='presize')",
+        "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru o diferență între proporții, bazată pe lățimea intervalului de încredere. Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul specifică una dintre ele.\n<br/><br/>\n<b>Dimensiunea Eșantionului pentru Grupul 1:</b> Specificați numărul de subiecți din grupul 1\n<br/><br/>\n<b>Lățimea Intervalului de Încredere:</b> Specificați lățimea dorită a intervalului de încredere. Lățimea unui interval de încredere este o măsură a preciziei unei estimări și reprezintă limita superioară minus limita inferioară.\n<br/><br/>\n<b>Raportul Dimensiunii Eșantionului Grupului 1 față de Grupul 2:</b> Specificați raportul dimensiunii eșantionului din grupul 2 față de cel din grupul 1. O valoare de 1 înseamnă dimensiuni egale ale eșantioanelor.\n<br/><br/>\n<b>Proporția Rezultatelor pentru Grupul 1:</b> Specificați proporția subiecților din grupul 1 cu un rezultat „pozitiv”\n<br/><br/>\n<b>Proporția Rezultatelor pentru Grupul 2:</b> Specificați proporția subiecților din grupul 2 cu un rezultat „pozitiv”\n<br/><br/>\nRețineți că diferența de risc va fi calculată ca proporția din grupul 1 minus proporția din grupul 2.\n<br/><br/>\n<b>Nivelul de Încredere:</b> Specificați nivelul dorit pentru intervalul de încredere\n<br/><br/>\n<b>Metoda Intervalului de Încredere:</b> Specificați tipul de interval de încredere de utilizat. Newcombe (newcombe) a propus un interval de încredere bazat pe metoda wilson score pentru proporția unică. Intervalul de încredere fără corecție de continuitate este implementat conform ecuației 10 din Newcombe (1998). Miettinen-Nurminen (mn) oferă o ecuație de formă închisă pentru estimarea prin verosimilitate maximă restricționată. Implementarea este bazată pe codul furnizat de Yongyi Min pe https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html. Intervalul de încredere Agresti-Caffo (ac) este bazat pe intervalul de încredere Wald, adăugând 1 succes în fiecare celulă a tabelului 2 x 2 (vezi Agresti și Caffo 2000).\n<br/><br/>\n<b>Pachete R Necesare:</b> presize\n\t\t\t"
+    }
 }

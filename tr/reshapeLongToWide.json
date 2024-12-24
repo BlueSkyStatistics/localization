@@ -1,0 +1,23 @@
+{
+  "toplabel": "Varsayılan olarak, seçilen tekrarlanan faktör ve değer değişkenleri hariç tüm veri kümesi sütunları her gözlemi tanımlamak için kullanılacaktır. Aşmak için, aşağıya bakın",
+  "id_cols": "İsteğe bağlı: Varsayılan olarak, seçilen tekrarlanan faktör ve değer değişkenleri hariç tüm veri kümesi sütunları her gözlemi tanımlamak için kullanılacaktır. Aşmak için, değişkenleri seçin ve taşıyın",
+  "title": "Yeniden Şekillendirme, uzunluktan genişliğe",
+  "navigation": "Daha Geniş",
+  "labelTop": "Tek bir tekrarlanan faktör ve değer değişkeni belirtildiğinde, yeni değişken adları tekrarlanan faktörün adıyla ön eklenir. Diğer tüm durumlarda, değer değişkeninin adıyla ön eklenir",
+  "label0": "Sonuçları yeni bir veri kümesine kaydetmeyi veya mevcut veri kümesini üzerine yazmayı seçebilirsiniz",
+  "label1": "Seçenekler",
+  "New": "Sonuçları yeni bir veri kümesine kaydet",
+  "newdatasetname": "Bir veri kümesi adı girin",
+  "Existing": "Mevcut veri kümesini üzerine yaz",
+  "subsetvars": "Tekrarlanan faktör(ler)in değişken adını girin, örneğin Zaman",
+  "dontReshape": "Tekrarlanan değer(ler) için değişken adını girin, örneğin Sayımlar",
+  "names_sort": "Sütun adlarını alfabetik olarak sırala",
+  "appearence_sort": "Sütun adlarını görünüşe göre sırala",
+  "names_sep": "Yeni değişken adlarını oluşturmak için belirtilen değişken adlarını birleştirirken kullanılacak isteğe bağlı ayırıcı",
+  "label2": "Sıralama Seçenekleri",
+  "help": {
+    "title": "Yeniden Şekillendirme (uzunluktan genişliğe)",
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>Açıklama</b></br>\n<a href=\"https://youtu.be/ypLXqmFp3jY\">Uzunluktan genişliğe yeniden şekillendirme</a> videosuna bakın</br>\nGeniş bir veri kümesini alır ve sütunları dönüştürerek uzun bir veri kümesine dönüştürür. Pivot_wider \"uzunluk\" verileri artırır, satır sayısını artırır ve sütun sayısını azaltır. Değerlerin satırlarda olması gereken değişkenler/sütunlarınız olduğunda pivot_wider kullanırsınız. \n<br/>\nNOT: Tek bir tekrarlanan faktör belirtildiğinde, yeni değişken adları tekrarlanan faktörün adıyla ön eklenir. Birden fazla tekrarlanan faktör belirtildiğinde, değer değişkeninin adıyla ön eklenir</br>\n<b>Kullanım</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ndataset: Bir dataframe/tibble\n</li>\n<li>\nnames_from: çıktı sütununun adı \n</li>\n<li>\nvalues_from: hücre değerlerini almak için sütun \n</li>\n<li>\nnames_sort: Sütun adları sıralanmalı mı? Eğer FALSE ise, varsayılan olarak, sütun adları ilk görünüşe göre sıralanır.\n</li>\n<li>\nnames_sep: Yeni değişken adlarını oluşturmak için belirtilen değişken adlarını birleştirirken kullanılacak isteğe bağlı ayırıcı\n</li>\n<li>\n<b>Değer</b><br/>\nYeniden şekillendirilmiş veri kümesini döndürür\n<br/>\n<b>Paket</b></br>\ntidyr\n<b>Yardım</b></br>\nhelp(pivot_wider)\n"
+  }
+}

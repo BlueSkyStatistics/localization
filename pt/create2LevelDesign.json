@@ -1,0 +1,20 @@
+{
+  "title": "Criar Design de Triagem Fracionário de Fatorial 2 Níveis Não Regular",
+  "navigation": "Criar Design de Triagem de 2 Níveis",
+  "selectedvars": "Selecionar variáveis",
+  "datasetname": "Nome do design",
+  "numOfRuns": "Número de execuções (múltiplo de 4, >=8)",
+  "taguchiOrderChk": "(Somente relevante para) design de 12 execuções na ordem de Taguchi",
+  "numOfCenterPts": "Número de pontos centrais (se usados, ter no mínimo 2)",
+  "centerPointDistribution": "Número de posições para distribuição de ponto central (ter >1)",
+  "replications": "Replicações",
+  "repeatOnlyChk": "Repetir apenas",
+  "lbl1": "Você pode não precisar alterar as configurações de randomização",
+  "randomseeds": "Semente para randomização",
+  "randomizationChk": "Randomizar a geração do design",
+  "help": {
+    "title": "Criar Design de Triagem de 2 Níveis",
+    "r_help": "ajuda(pb, pacote = FrF2)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção Plackett-Burman(pb) para gerar designs de triagem fracionários de fatorial 2 níveis não regulares\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R ajuda(pb, pacote = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de exemplo chamado factor_grid_twolevel_screen_Design.xlsx. Abra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "title": "Herunterproben",
-  "navigation": "Probe, Herunterproben",
+  "navigation": "Beispiel, Herunterproben",
   "description": "Herunterproben von unausgeglichenen Daten. DownSample wird zufällig eine Datenmenge auswählen, sodass alle Klassen die gleiche Häufigkeit wie die Minderheitsklasse haben.",
   "downsample": "Geben Sie den Namen des Datensatzes ein",
-  "seed": "Setze Seed",
+  "seed": "Setzen Sie den Seed",
   "dependent": "Variable, nach der herunterprobiert werden soll",
   "help": {
     "title": "Herunterproben",
-    "r_help": "hilfe(createDataPartition, paket=\"caret\")",
-    "body": "\n<b>Beschreibung</b></br>\nHerunterproben von unausgeglichenen Daten. DownSample wird zufällig eine Datenmenge auswählen, sodass alle Klassen die gleiche Häufigkeit wie die Minderheitsklasse haben.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Klasse\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: eine Matrix oder ein Datenrahmen von Prädiktorvariablen\n</li>\n<li>\ny: eine Faktorvariable mit den Klassenmitgliedschaften\n</li>\n<li>\nlist: Soll die Funktion list(x, y) zurückgeben oder x und y zusammenbinden? Wenn TRUE, wird die Ausgabe in einen Datenrahmen umgewandelt.\n</li>\n<li>\nyname: wenn list = FALSE, ein Label für die Klassen-Spalte\n</li>\n</ul>\n<b>Details</b></br>\nEinfaches zufälliges Sampling wird verwendet, um für die Mehrheitklasse(n) herunterzusampeln. Beachten Sie, dass die Daten der Minderheitsklasse intakt bleiben und dass die Proben in der heruntergesampelten Version neu angeordnet werden.\nFür das Hochsampeln bleiben alle Originaldaten intakt und zusätzliche Proben werden den Minderheitsklassen mit Ersatz hinzugefügt.\n<b>Wert</b><br/>\nEntweder ein Datenrahmen oder eine Liste mit den Elementen x und y.\n<b>Beispiele</b></br>\n## Ein lächerliches Beispiel...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Paket</b></br>\ncaret</br>\n<b>Hilfe</b></br>\nhelp(downSample, package ='caret')\n"
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Beschreibung</b></br>\nHerunterproben von unausgeglichenen Daten. DownSample wird zufällig eine Datenmenge auswählen, sodass alle Klassen die gleiche Häufigkeit wie die Minderheitsklasse haben.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Klasse\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: eine Matrix oder ein Datenrahmen von Prädiktorvariablen\n</li>\n<li>\ny: eine Faktorvariable mit den Klassenmitgliedschaften\n</li>\n<li>\nlist: Soll die Funktion list(x, y) zurückgeben oder x und y zusammenbinden? Wenn TRUE, wird die Ausgabe in einen Datenrahmen umgewandelt.\n</li>\n<li>\nyname: wenn list = FALSE, ein Label für die Klassen-Spalte\n</li>\n</ul>\n<b>Details</b></br>\nEinfaches zufälliges Sampling wird verwendet, um für die Mehrheit der Klasse(n) herunterzuprobieren. Beachten Sie, dass die Daten der Minderheitsklasse intakt bleiben und dass die Proben in der herunterprobierten Version neu angeordnet werden.\nFür das Hochprobieren bleiben alle Originaldaten intakt und zusätzliche Proben werden zu den Minderheitsklassen mit Ersatz hinzugefügt.\n<b>Wert</b><br/>\nEntweder ein Datenrahmen oder eine Liste mit den Elementen x und y.</br>\n<b>Beispiele</b></br>\n## Ein lächerliches Beispiel...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Paket</b></br>\ncaret</br>\n<b>Hilfe</b></br>\nhelp(downSample, package ='caret')\n"
   }
 }

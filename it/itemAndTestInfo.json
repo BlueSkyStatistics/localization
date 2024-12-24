@@ -1,0 +1,12 @@
+{
+  "title": "Informazioni su Elementi e Test",
+  "navigation": "Informazioni su Elementi e Test",
+  "label1": "Seleziona un modello (modelli della classe Rm, eRm supportati)",
+  "label1b": "Se non sono disponibili modelli, devi prima crearne uno selezionando Fitting del Modello -> IRT -> Modello Rasch Semplice e scegliere la stima CML",
+  "modelselector1": "Seleziona un modello",
+  "help": {
+    "title": "Informazioni sul Grafico per oggetti 'eRm'",
+    "r_help": "help(plotINFO, package='eRm')",
+    "body": "\n                <b>Descrizione</b></br>\n                Calcola e traccia le informazioni sugli elementi individuali o sommati secondo Samejima (1969)\n                <br/><br/>\n                <b>Utilizzo</b>\n                <br/>\n                <code>\n                plotINFO(ermobject, type = \"both\", theta = seq(-6, 6, length.out = 1001L), ...)\n                </code>\n                <br/><br/>\n                <b>Argomenti</b>\n                <br/>  \n                object: oggetto di classe eRm\n                <br/>\n                type:  Una stringa che denota il tipo di informazione da tracciare. Attualmente supporta \"item\", \"test\" e \"both\" (predefinito).\n                <br/>\n                theta:  Punti di supporto o campionamento sul tratto latente         \n                <br/><br/>\n                <b>Pacchetti</b>\n                <br/>\n                eRm\n                <br/><br/>\n                <b>Aiuto</b>\n                <br/>\n                help(plotINFO, package='eRm')\n                "
+  }
+}

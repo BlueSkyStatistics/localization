@@ -1,0 +1,27 @@
+{
+    "correlationType": "상관 관계 유형",
+    "Polychoric": "다중 등급 상관",
+    "Polyserial": "다중 직렬 상관",
+    "title": "다중 등급/다중 직렬 상관",
+    "bins": "다중 직렬 상관용 - x를 양변 정규성 테스트를 위해 나누는 구간 수",
+    "navigation": "다중 등급, 다중 직렬",
+    "Target": "하나 이상의 x 변수를 선택하세요",
+    "textbox1": "신뢰 구간",
+    "textbox2": "귀무 가설(mu)",
+    "Target2": "단일 순서형 요인 변수 y를 선택하세요",
+    "label1": "추정 방법",
+    "test1": "2단계 근사",
+    "test2": "최대 우도 추정",
+    "label2": "표준 오차",
+    "Missvals": "표준 오차 표시",
+    "conflevel": "최대 절대 상관 (수치 안정성을 보장하기 위해).",
+    "Seed": "선택적 시작 값",
+    "header": "각 x 변수와 y 변수 간 상관 관계를 추정합니다",
+    "showEffectSizes": "추정 임계값 반환",
+    "advanced_lbl": "고급",
+    "help": {
+        "title": "다중 등급/다중 직렬 상관",
+        "r_help": "help(polychor, package ='polycor')",
+        "body": "\n<b>설명</b></br>\n다중 등급 또는 다중 직렬 상관을 계산합니다. 각 x 변수와 y 변수 간 상관 관계를 추정합니다\n<br/>\n<br/>\n<b>설명-다중 등급</b></br>\n두 순서형 변수 간 다중 등급 상관(및 표준 오차)을 계산하며, 순서형 변수가 양변 정규성을 가진 연속 잠재 변수로 나뉜다고 가정합니다. 최대 우도 추정 또는 더 빠른 '2단계' 근사를 선택할 수 있습니다. ML 추정기의 경우, 임계값 및 추정값의 공분산 행렬도 사용할 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \npolychor(x, y, ML = FALSE, control = list(), \n  std.err = FALSE, maxcor=.9999, start, thresholds=FALSE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 순서형 범주형 변수; 변수는 숫자형, 논리형, 요인, 순서형 요인, 문자형 변수일 수 있지만, 요인인 경우 레벨이 올바른 순서여야 하고, 문자형 변수는 알파벳순으로 정렬됩니다.\n</li>\n<li>\ny: 순서형 요인 변수\n</li>\n<li>\nML: TRUE일 경우 최대 우도 추정을 계산하고, FALSE(기본값)일 경우 더 빠른 '2단계' 근사를 계산합니다.\n</li>\n<li>\nstd.err: TRUE일 경우 상관(2단계 추정기의 경우)의 추정 분산 또는 상관 및 임계값(ML 추정기의 경우)의 추정 공분산 행렬을 반환합니다. 기본값은 FALSE입니다.\n</li>\n<li>\nmaxcor: 최대 절대 상관 (수치 안정성을 보장하기 위해).\n</li>\n<li>\nstart: 선택적 시작 값: 단일 숫자인 경우 상관의 시작 값입니다.\n</li>\n<li>\nthresholds: TRUE일 경우 (기본값은 FALSE) 표준 오차를 계산하지 않아도 추정된 상관과 함께 임계값을 반환합니다.\n</li>\n</ul>\n<b>값</b></br>\n값: std.err 또는 thresholds가 TRUE인 경우 다음 구성 요소를 포함한 'polycor' 클래스 객체를 반환합니다:</br>\ntype: 'polychoric'으로 설정됩니다.</br>\nrho: 다중 등급 상관.</br>\nrow.cuts: 행 변수(x)의 추정 임계값 (ML 추정기의 경우).</br>\ncol.cuts: 열 변수(y)의 추정 임계값 (ML 추정기의 경우).</br>\nvar: 상관의 추정 분산 또는 ML 추정기의 경우 상관 및 임계값의 추정 공분산 행렬.</br>\nn: 상관 계산의 관측값 개수.</br>\nchisq: 양변 정규성에 대한 카이제곱 테스트.</br>\ndf: 양변 정규성 테스트의 자유도.</br>\nML: TRUE는 ML 추정을, FALSE는 2단계 추정을 의미합니다.\n<b>세부 정보</b></br>\nML 추정기는 두 변수(x 및 y)의 임계값(τ^x[i], i = 1,…, r - 1; τ^y[j], j = 1,…, c - 1)과 모집단 상관(ρ)에 대해 양변 정규 가능성을 최대화하여 계산됩니다. 여기서 r과 c는 각각 x와 y의 레벨 수입니다. 가능성은 optim 함수를 사용하여 수치적으로 최대화되며, 추정된 매개변수의 공분산 행렬은 optim에 의해 계산된 수치 헤시안에 기반합니다.\n'2단계' 추정기는 각 변수의 주변 분포에서 임계값(τ^x[i], i = 1,…, r - 1 및 τ^y[j], i = j,…, c - 1)을 개별적으로 추정한 후, ρ의 1차원 가능성을 수치적으로 최대화하여 계산됩니다. 표준 오차를 요청할 경우 optim, 요청하지 않을 경우 optimise를 사용합니다. 계산된 표준 오차는 임계값을 고정된 것으로 간주합니다.\n<br/>\n<b>예제</b></br>\n<code> \nif(require(mvtnorm)){\n    set.seed(12345)\n    data <- rmvnorm(1000, c(0, 0), matrix(c(1, .5, .5, 1), 2, 2))\n    x <- data[,1]\n    y <- data[,2]\n    cor(x, y)  # 샘플 상관\n    }\n\nif(require(mvtnorm)){\n    x <- cut(x, c(-Inf, .75, Inf))\n    y <- cut(y, c(-Inf, -1, .5, 1.5, Inf))\n    polychor(x, y)  # 2단계 추정\n    }\n\nif(require(mvtnorm)){\n    polychor(x, y, ML=TRUE, std.err=TRUE)  # ML 추정\n    }\n</code> <br/>\n<b>패키지</b></br>\npolycor</br>\n<b>도움말</b></br>\n이 대화 상자의 오른쪽 상단 R 아이콘을 클릭하거나 다음 명령을 실행하여 자세한 도움말을 확인하세요: help(polycor, package ='polychor')\n<br/>\n"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "اختبار ليفين",
+  "navigation": "اختبار ليفين",
+  "tvarbox1": "متغير الاستجابة (واحد)",
+  "tvarbox3": "متغير العامل",
+  "label1": "المركز",
+  "median": "الوسيط",
+  "mean": "المتوسط",
+  "help": {
+    "title": "اختبار ليفين",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>الوصف</b></br>\nيحسب اختبار ليفين لتجانس التباين عبر المجموعات.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## طريقة S3 لفئة 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## طريقة S3 لفئة 'lm'<br/>\nleveneTest(y, ...)<br/>\n## الطريقة الافتراضية S3:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>المعطيات</b><br/>\n<ul>\n<li>\ny: متغير الاستجابة للطريقة الافتراضية، أو كائن lm أو صيغة. إذا كان y كائن نموذج خطي أو صيغة، يجب أن تكون المتغيرات على الجانب الأيمن من النموذج جميعها عوامل ويجب أن تكون متقاطعة تمامًا.\n</li>\n<li>\ngroup: عامل يحدد المجموعات.\n</li>\n<li>\ncenter: اسم دالة لحساب المركز لكل مجموعة؛ المتوسط يعطي اختبار ليفين الأصلي؛ الافتراضي، الوسيط، يوفر اختبارًا أكثر قوة.\n</li>\n<li>\ndata: إطار بيانات لتقييم الصيغة.\n</li>\n<li>\n...: المعطيات التي سيتم تمريرها، مثل البيانات للصيغة وطرق lm؛ يمكن أيضًا استخدامها لتمرير المعطيات إلى الدالة المعطاة بواسطة center (مثل، center=mean و trim=0.1 تحدد المتوسط المقطوع بنسبة 10%).\n</li>\n</ul>\n<b>القيمة</b><br/>\nترجع كائنًا يُقصد به أن يُطبع ويظهر نتائج الاختبار.<br/>\n<b>أمثلة</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>الحزمة</b></br>\ncar;moments;dplyr</br>\n<b>المساعدة</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

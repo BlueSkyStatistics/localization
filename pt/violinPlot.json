@@ -1,0 +1,22 @@
+{
+  "title": "Gráfico de Violino",
+  "navigation": "Violino",
+  "x": "Eixo X, especifique uma variável fator",
+  "y": "Eixo Y, especifique uma ou mais variáveis numéricas",
+  "fill": "Preenchimento, especifique uma variável fator",
+  "alpha": "Opacidade (0-1)",
+  "flip": "Inverter eixo",
+  "specify_a_title": "Digite um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Violino",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>Descrição</b></br>\n            Um gráfico de violino é uma exibição compacta de uma distribuição contínua. É uma mistura de geom_boxplot() e geom_density(): um gráfico de violino é um gráfico de densidade espelhado exibido da mesma forma que um boxplot.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"Gráfico de violino para ...\")\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão​\n            </li>\n            <li>\n            x: Uma variável fator​ que divide a variável y abaixo em grupos.\n            </li>\n            <li>\n            y: Uma variável numérica para a qual o gráfico de violino é gerado\n            </li>\n            <li>\n            fill: Uma variável fator/categórica opcional para agrupar ainda mais os grupos existentes. Cada subgrupo será mostrado em uma cor distinta.​\n            </li>\n            <li>\n            aes(): Gera mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n            </li>\n            <li>\n            geom_violin(): Cria o gráfico de violino. \n            </li>\n            <li>\n            Labs(): Altera rótulos de eixos e títulos de legendas (Isso é opcional)​\n            </li>\n            <li>\n            facet_grid(): Organiza painéis em uma grade (Isso é opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica o tema do calculador (Isso é opcional)​\n            </li>\n            <li>\n            coord_flip(): Inverter eixo (Isso é opcional)​\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajuda</b></br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "주성분 분석",
+  "navigation": "주성분",
+  "lab40": "참고: 상관 또는 공분산 행렬은 선택된 변수에서 자동으로 생성됩니다.",
+  "destination": "변수 선택",
+  "label1": "상관 또는 공분산 행렬 선택",
+  "rd1": "상관 행렬",
+  "rd2": "공분산 행렬",
+  "addToDataset": "주성분을 데이터셋에 추가합니다. 변수 이름에 대한 접두사와 추가할 구성 요소의 수를 지정해야 합니다.",
+  "variablePrefix": "데이터셋에 추가된 구성 요소에 대한 접두사를 입력하세요.",
+  "noOfComponents": "데이터셋에 추가할 구성 요소의 수를 입력하세요.",
+  "screeplot": "스크리 플롯",
+  "help": {
+    "title": "주성분 분석",
+    "r_help": "help(princomp, package ='stats')",
+    "body": "\n<b>설명</b></br>\n주어진 숫자 데이터 행렬에 대해 주성분 분석을 수행하고 결과를 princomp 클래스의 객체로 반환합니다. 내부적으로 stats 패키지의 princomp를 호출합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyPCARes <-BSkyPrinCompAnalysis(vars=c(),cor =TRUE, componentsToRetain =0, generateScreeplot=FALSE,prefixForComponents =\"\",dataset=\"\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvars: 구성 요소를 추출할 문자 벡터의 변수\n</li>\n<li>\ncor: 계산이 상관 또는 공분산 행렬을 사용할지 여부를 지정하는 부울 값\n</li>\n<li>\ncomponentsToRetain: 데이터셋에서 유지할 구성 요소의 수를 지정하는 숫자\n</li>\n<li>\n​generateScreeplot: 스크리 플롯 생성\n</li>\n<li>\nprefixForComponents: 구성 요소를 데이터셋에 저장할 때 사용할 접두사\n</li>\n<li>\ndataset: 문자열로 된 데이터셋의 이름\n</li>\n</ul>\n<b>값</b></br>\nprincomp는 다음 구성 요소를 포함하는 \"princomp\" 클래스의 목록을 반환합니다.</br>\nsdev: 주성분의 표준 편차.</br>\nloadings: 변수 로딩의 행렬(즉, 고유 벡터를 포함하는 열이 있는 행렬). 이는 \"loadings\" 클래스입니다: 인쇄 방법에 대한 loadings를 참조하세요.</br>\ncenter: 빼낸 평균.</br>\nscale: 각 변수에 적용된 스케일링.</br>\nn.obs: 관측치의 수.</br>\nscores: scores = TRUE인 경우, 주성분에 대한 제공된 데이터의 점수. 이는 x가 제공된 경우에만 null이 아니며, covmat가 공분산 목록으로 제공된 경우에도 마찬가지입니다. 공식 방법의 경우, na.action에 의해 생략된 값의 처리를 위해 napredict()가 적용됩니다.</br>\ncall: 일치하는 호출.</br>\nna.action: 관련이 있는 경우.</br>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(princomp, package ='stats')\n"
+  }
+}

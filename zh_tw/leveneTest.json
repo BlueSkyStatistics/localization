@@ -1,14 +1,14 @@
 {
-  "title": "萊文檢驗",
-  "navigation": "萊文檢驗",
+  "title": "Levene's 測試",
+  "navigation": "Levene's 測試",
   "tvarbox1": "響應變數（一）",
   "tvarbox3": "因子變數",
   "label1": "中心",
   "median": "中位數",
   "mean": "平均數",
   "help": {
-    "title": "萊文檢驗",
+    "title": "Levene's 測試",
     "r_help": "help(Anova, package='car')",
-    "body": "\n<b>描述</b></br>\n計算萊文檢驗以檢驗組間方差的齊性。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## S3 方法，類 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## S3 方法，類 'lm'<br/>\nleveneTest(y, ...)<br/>\n## 預設 S3 方法:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ny: 預設方法的響應變數，或 lm 或 formula 物件。如果 y 是線性模型物件或公式，則模型右側的變數必須都是因子，並且必須完全交叉。\n</li>\n<li>\ngroup: 定義組的因子。\n</li>\n<li>\ncenter: 計算每組中心的函數名稱；mean 給出原始的萊文檢驗；預設值 median 提供更穩健的檢驗。\n</li>\n<li>\ndata: 用於評估公式的資料框。\n</li>\n<li>\n...: 要傳遞的參數，例如，公式和 lm 方法的資料；也可以用於傳遞給 center 指定的函數的參數（例如，center=mean 和 trim=0.1 指定 10% 的截尾均值）。\n</li>\n</ul>\n<b>值</b><br/>\n返回一個對象，旨在打印顯示測試結果。<br/>\n<b>示例</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>包</b></br>\ncar;moments;dplyr</br>\n<b>幫助</b></br>\nhelp(leveneTest, package=car)\n"
+    "body": "\n<b>描述</b></br>\n計算 Levene 的方差齊性檢驗。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## S3 方法用於類別 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## S3 方法用於類別 'lm'<br/>\nleveneTest(y, ...)<br/>\n## 預設 S3 方法:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ny: 預設方法的響應變數，或 lm 或公式對象。如果 y 是線性模型對象或公式，模型右側的變數必須都是因子並且必須完全交叉。\n</li>\n<li>\ngroup: 定義組的因子。\n</li>\n<li>\ncenter: 計算每組中心的函數名稱；mean 給出原始的 Levene 測試；預設的 median 提供更穩健的測試。\n</li>\n<li>\ndata: 用於評估公式的數據框。\n</li>\n<li>\n...: 要傳遞的參數，例如，公式和 lm 方法的數據；也可以用於傳遞給 center 函數的參數（例如，center=mean 和 trim=0.1 指定 10% 修剪的平均數）。\n</li>\n</ul>\n<b>值</b><br/>\n返回一個旨在顯示測試結果的對象。<br/>\n<b>示例</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>包</b></br>\ncar;moments;dplyr</br>\n<b>幫助</b></br>\nhelp(leveneTest, package=car)\n"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "title": "Mappa di Calore",
+  "navigation": "Mappa di Calore",
+  "rowVariables": "Variabile target",
+  "columnVariables": "Variabili colonna",
+  "options": "Opzioni",
+  "title1": "Titolo della Mappa di Calore",
+  "dendrogram": "Dendrogramma:",
+  "label1": "Opzioni dendrogramma righe:",
+  "plotRowYes": "Riordina dendrogramma in base alle medie delle righe",
+  "plotRowNo": "Nessun riordino (il dendrogramma non sarà calcolato)",
+  "label2": "Opzioni dendrogramma colonne",
+  "plotColumnYes": "Riordina dendrogramma in base alle medie delle colonne",
+  "plotColumnNo": "No",
+  "symmetric": "Nel caso di matrice simmetrica, tratta le colonne come righe",
+  "trace": "Opzioni per disegnare una linea di tracciamento solida attraverso righe, colonne, sia righe che colonne o nessuna",
+  "density": "Opzioni di densità:",
+  "scale": "I valori devono essere centrati nella direzione delle righe, nella direzione delle colonne o nessuno",
+  "label3": "Valori mancanti",
+  "Remove": "Rimuovi tutte le righe che contengono un valore mancante",
+  "Keep": "Mantieni le righe che contengono valori mancanti",
+  "label4": "Posiziona i valori nella cella",
+  "valuesNo": "Sì",
+  "valuesYes": "No",
+  "noteColors": "Scegli un colore per i valori delle celle (Dopo la selezione del colore, fai clic all'esterno del controllo per applicare):",
+  "advanced_lbl": "Avanzato",
+  "help": {
+    "title": "Mappa di Calore",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>Descrizione</b></br>\n            Una mappa di calore è una rappresentazione grafica dei dati in cui i singoli valori contenuti in una matrice sono rappresentati come colori. I faccetti possono essere creati opzionalmente specificando una variabile fattoriale. Puoi anche specificare opzionalmente temi e specificare un titolo e etichette per gli assi x e y</br>\n            Il dataset deve essere nel formato colonna1, colonna2…colonnaN dove</br>\n            colonna1: Identifica i soggetti, ad esempio i nomi delle persone i cui valori di colesterolo sono tracciati</br>\n            colonna2: Identifica i valori di colesterolo al tempo 1</br>\n            colonna3: Identifica i valori di colesterolo al tempo 2</br>\n            colonna4: Identifica i valori di colesterolo al tempo 3</br>\n            colonna5: Identifica i valori di colesterolo al tempo 4…</br>\n            La colonna1 è un'etichetta per ogni riga nella mappa di calore.</br>\n            Per la colonna 2 in poi, i valori in ogni riga della colonna sono rappresentati come colori nella mappa di calore.</br>\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Soggetto'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            La funzione sopra è nel pacchetto BlueSky e invoca la funzione heatmap.2 nel pacchetto gplots.\n            </code> <br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            data: Il dataset predefinito\n            </li>\n            <li>\n            rowVariable: La variabile colonna che contiene informazioni sui soggetti per cui il grafico è costruito, vedi sopra\n            </li>\n            <li>\n            colVariables: un elenco di variabili colonna che contengono valori che saranno rappresentati come colori nella mappa di calore\n            </li>\n            <li>\n            Colv: determina se e come il dendrogramma delle colonne dovrebbe essere riordinato. Ha le opzioni come l'argomento Rowv sopra e inoltre quando x è una matrice quadrata, Colv=\"Rowv\" significa che le colonne devono essere trattate in modo identico alle righe.\n            </li>\n            <li>\n            Rowv: determina se e come il dendrogramma delle righe dovrebbe essere riordinato. Per impostazione predefinita, è TRUE, il che implica che il dendrogramma è calcolato e riordinato in base alle medie delle righe. Se NULL o FALSE, allora nessun dendrogramma è calcolato e nessun riordino è fatto. Se è un dendrogramma, allora viene utilizzato \"così com'è\", cioè senza alcun riordino. Se è un vettore di interi, allora il dendrogramma è calcolato e riordinato in base all'ordine del vettore.\n            </li>\n            <li>\n            na.rm: logico che determina se gli NA devono essere rimossi\n            </li>\n            <li>\n            dendrogram: stringa carattere che indica se disegnare 'nessuno', 'righe', 'colonne' o 'entrambi' i dendrogrammi. Per impostazione predefinita è 'entrambi'. Tuttavia, se Rowv (o Colv) è FALSE o NULL e il dendrogramma è 'entrambi', allora viene emesso un avviso e gli argomenti Rowv (o Colv) sono rispettati.\n            </li>\n            <li>\n            scale: carattere che indica se i valori devono essere centrati e scalati nella direzione delle righe o nella direzione delle colonne, o nessuno. Il predefinito è \"nessuno\".\n            </li>\n            <li>\n            trace: carattere che indica se i valori devono essere centrati e scalati nella direzione delle righe o nella direzione delle colonne, o nessuno. Il predefinito è \"nessuno\".\n            </li>\n            <li>\n            density.info: stringa carattere che indica se sovrapporre un 'istogramma', un grafico di 'densità', o nessun grafico ('nessuno') sulla chiave dei colori.\n            </li>\n            <li>\n            noteForCells: logico che indica se i valori devono essere posizionati nelle celle della mappa di calore.\n            </li>\n            <li>\n            notecol: colore delle note. Se specificato, i valori sono annotati nelle celle della mappa di calore nel colore specificato..\n            </li>\n            </ul>\n            <b>Pacchetto</b></br>\n            BlueSky;gplots;</br>\n            <b>Aiuto</b></br>\n            help(heatmap.2,package='gplots')</br>\n            Altro: Fai clic sul pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)</br>\n            Dataset di esempio: Vedi Heatmaps.Rdata nella cartella Dataset di esempio R\n            </br>\n     "
+  }
+}

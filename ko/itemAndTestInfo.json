@@ -1,0 +1,12 @@
+{
+  "title": "항목 및 테스트 정보",
+  "navigation": "항목 및 테스트 정보",
+  "label1": "모델 선택 (Rm 및 eRm 클래스 모델 지원)",
+  "label1b": "사용 가능한 모델이 없으면 먼저 모델 적합 -> IRT -> 단순 라쉬 모델을 선택하고 CML 추정을 선택하여 모델을 생성해야 합니다.",
+  "modelselector1": "모델 선택",
+  "help": {
+    "title": "'eRm' 객체에 대한 플롯 정보",
+    "r_help": "help(plotINFO, package='eRm')",
+    "body": "\n                <b>설명</b></br>\n                Samejima (1969)에 의해 개별 또는 합산 항목 정보를 계산하고 플롯합니다.\n                <br/><br/>\n                <b>사용법</b>\n                <br/>\n                <code>\n                plotINFO(ermobject, type = \"both\", theta = seq(-6, 6, length.out = 1001L), ...)\n                </code>\n                <br/><br/>\n                <b>인수</b>\n                <br/>  \n                object: eRm 클래스의 객체\n                <br/>\n                type: 플롯할 정보의 유형을 나타내는 문자열. 현재 \"item\", \"test\" 및 \"both\" (기본값)를 지원합니다.\n                <br/>\n                theta: 잠재 특성에 대한 지원 또는 샘플링 포인트\n                <br/><br/>\n                <b>패키지</b>\n                <br/>\n                eRm\n                <br/><br/>\n                <b>도움말</b>\n                <br/>\n                help(plotINFO, package='eRm')\n                "
+  }
+}

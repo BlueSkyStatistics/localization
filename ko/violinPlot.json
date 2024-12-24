@@ -1,0 +1,22 @@
+{
+  "title": "바이올린 플롯",
+  "navigation": "바이올린",
+  "x": "X 축, 요인 변수를 지정하세요",
+  "y": "Y 축, 숫자 변수(들)를 지정하세요",
+  "fill": "채우기, 요인 변수를 지정하세요",
+  "alpha": "불투명도 (0-1)",
+  "flip": "축 뒤집기",
+  "specify_a_title": "제목 입력",
+  "x_title": "X 축 레이블",
+  "y_title": "Y 축 레이블",
+  "Facetrow": "패싯 행",
+  "Facetcolumn": "패싯 열",
+  "Facetwrap": "패싯 랩",
+  "Facetscale": "패싯 스케일",
+  "facets_lbl": "패싯",
+  "help": {
+    "title": "바이올린 플롯",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>설명</b></br>\n            바이올린 플롯은 연속 분포의 간결한 표시입니다. 이는 geom_boxplot()과 geom_density()의 혼합입니다: 바이올린 플롯은 박스 플롯과 같은 방식으로 표시된 대칭 밀도 플롯입니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"...에 대한 바이올린 차트\")\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 기본 데이터셋​\n            </li>\n            <li>\n            x: y 변수를 아래로 나누는 요인 변수​.\n            </li>\n            <li>\n            y: 바이올린 플롯이 생성되는 숫자 변수\n            </li>\n            <li>\n            fill: 기존 그룹을 추가로 그룹화하는 선택적 요인/범주형 변수. 각 하위 그룹은 고유한 색상으로 표시됩니다.​\n            </li>\n            <li>\n            aes(): 데이터의 변수가 지오메트리의 시각적 속성(미적)에 어떻게 매핑되는지를 설명하는 미적 매핑을 생성합니다.​\n            </li>\n            <li>\n            geom_violin(): 바이올린 플롯을 생성합니다.\n            </li>\n            <li>\n            Labs(): 축 레이블과 범례 제목을 변경합니다 (선택 사항)​\n            </li>\n            <li>\n            facet_grid(): 패널을 그리드에 배치합니다 (선택 사항)​\n            </li>\n            <li>\n            theme_calc(): 계산기 테마를 지정합니다 (선택 사항)​\n            </li>\n            <li>\n            coord_flip(): 축을 뒤집습니다 (선택 사항)​\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            ggplot2;ggthemes;</br>\n            <b>도움말</b></br>\n            기타: R 도움 버튼을 클릭하여 자세한 R 도움을 받으세요. 또한 help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)을 입력할 수 있습니다.\n    "
+  }
+}

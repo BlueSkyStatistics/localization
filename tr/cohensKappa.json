@@ -1,0 +1,16 @@
+{
+  "title": "Cohen'in Kappa",
+  "navigation": "Cohen'in Kappa",
+  "obs1var": "Gözlemci 1:",
+  "obs2var": "Gözlemci 2:",
+  "cilevel": "Güven Düzeyi:",
+  "label1": "Kategori Ağırlıkları",
+  "equal": "Cicchetti-Allison (eşit aralık)",
+  "quadratic": "Fleiss-Cohen (kare)",
+  "agreeplot": "Anlaşma grafiği ve Bangdiwala istatistikleri",
+  "help": {
+    "title": "Cohen'in Kappa",
+    "r_help": "help(Kappa,package=vcd)",
+    "body": "\n                <b>Açıklama</b></br>\nCohen'in kappa, aynı konuları ölçen iki gözlemci arasındaki anlaşmayı ölçer. Ağırlıksız kappa, sıralanmamış kategoriler için, ağırlıklı kappa ise sıralı kategoriler için kullanılır. Ağırlıklı kappa için, kategoriler ne kadar yakınsa o kadar fazla ağırlık verilir. Kappa -1 ile 1 arasında değişebilir; 1 mükemmel anlaşmayı, 0 ise şansa dayalı bir durumu ifade eder. Negatif değerler, yalnızca şansa göre daha kötü bir anlaşmayı gösterir, ancak pratikte nadirdir. Gözlemcilerin, her gözlemcinin kullandığı tüm kategorilerle aynı ölçek üzerinde konuları ölçmesi gerekir. Bu, kare bir kontenjan tablosu oluşturur. Bir kontenjan tablosu ve kappa istatistikleri sağlanır.</br>\nGözlemci 1: Bir gözlemci tarafından sağlanan değerleri içeren değişken; sayısal veya faktör olabilir</br>\nGözlemci 2: İkinci bir gözlemci tarafından sağlanan değerleri içeren değişken; sayısal veya faktör olabilir</br>\nGüven Düzeyi: Kappa istatistikleri için istenen güven aralığı düzeyi</br>\nKategori Ağırlıkları: Kategori anlaşmazlığı seviyeleri için istenen ağırlık</br>\nAnlaşma grafiği ve Bangdiwala istatistikleri: Bangdiwala istatistikleri ile bir anlaşma grafiği üretme seçeneği</br>\n<b>Paket</b></br>\ngmodels;vcd</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya bir R kodu parçası oluşturarak help(Kappa,package=vcd) komutunu çalıştırın, çıktı penceresinde + butonuna tıklayarak\n                "
+  }
+}

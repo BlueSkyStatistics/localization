@@ -1,0 +1,13 @@
+{
+  "title": "Değerlendirme Ölçeği Modeli (Çok Yönlü)",
+  "navigation": "Değerlendirme Ölçeği Modeli (Çok Yönlü)",
+  "modelname": "Model adını girin",
+  "destinationvars": "Öğeler",
+  "firstlevel": "Birinci seviye değişken",
+  "secondlevel": "İkinci seviye değişken",
+  "help": {
+    "title": "Değerlendirme Ölçeği Modeli (Çok Yönlü)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Açıklama</b>\n            <br/>\n            Çok yönlü bir değerlendirme ölçeği modeli için parametre tahminleri üretir\n            <br/><br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Polytomous madde yanıtları içeren veri çerçevesi k=0,...,K. Eksik yanıtlar NA olarak belirtilmelidir.\n            </li>\n            <li>\n            formulaA: Tasarım formülü (sadece tam.mml.mfr için geçerlidir). Ayrıntılı yardımda örnek 8'e bakın. Bir faktörün tüm etkilerini sıfıra ayarlamak da mümkündür, örneğin item*step + 0*rater (ayrıntılı yardımda Örnek 10a'ya bakın).\n            </li>\n            <li>\n            facets: Faktör girişleri içeren bir veri çerçevesi (sadece tam.mml.mfr için geçerlidir)\n            </li>\n            <li>\n            pid: Kişi tanımlayıcılarının isteğe bağlı bir vektörü\n            </li>\n            <li>\n            verbose: Çıktının yinelemeler sırasında yazdırılıp yazdırılmayacağını belirten mantıksal değer. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Paketler</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Yardım</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

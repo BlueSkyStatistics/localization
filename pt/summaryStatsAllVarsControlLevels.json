@@ -1,0 +1,10 @@
+{
+  "title": "Estatísticas Resumidas, níveis de controle",
+  "navigation": "Estatísticas Resumidas, todas as variáveis, níveis de controle (Legado)",
+  "levels": "Especifique o número de níveis para exibir contagens de variáveis fatoriais. NOTA: Níveis menos frequentes de variáveis fatoriais são resumidos na categoria (Outros).",
+  "help": {
+    "title": "Estatísticas Resumidas, níveis de controle",
+    "r_help": "",
+    "body": "\n    <b>Descrição</b></br>\n    Gera os resumos para todas as variáveis do conjunto de dados, permitindo que você controle o número de níveis para os quais as contagens são exibidas.</br>\n    NOTA: CONTAGENS DE VARIÁVEIS MENOS FREQUENTES SÃO RESUMIDAS NA CATEGORIA (OUTROS)</br>\n    Mostra Mínimo, 1º Quartil, Mediana, Média, 3º Quartil, Máximo e contagem de NAs para variáveis numéricas e de data.</br>\n    Para variáveis fatoriais, exibe as contagens de cada nível.</br>\n    Para variáveis lógicas, exibe as contagens de VERDADEIRO, FALSO e NAs</br>\n    A ajuda do R não está disponível porque escrevemos código personalizado usando várias funções do R. Se você precisar inspecionar o código, clique no botão \"<>\".</br>\n    "
+  }
+}

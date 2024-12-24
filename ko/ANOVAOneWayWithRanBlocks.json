@@ -1,0 +1,14 @@
+{
+  "title": "일원 분산 분석, 무작위 블록",
+  "navigation": "일원 분산 분석, 1 way (무작위 블록)",
+  "tvarbox1": "반응 변수",
+  "tvarbox2": "고정 효과",
+  "blockVar": "차단 변수",
+  "Post_hoc": "사후 분석",
+  "chk1": "잔차의 히스토그램",
+  "help": {
+    "title": "일원 분산 분석, 무작위 블록",
+    "r_help": "help(lmer, package ='lme4')",
+    "body": "\n<b>설명</b></br>\n데이터에 선형 혼합 효과 모델(LMM)을 적합합니다. REML 또는 최대 우도를 통해.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nlmer(formula, data = NULL, REML = TRUE, control = lmerControl(),\n        start = NULL, verbose = 0L, subset, weights, na.action,\n        offset, contrasts = NULL, devFunOnly = FALSE, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nformula: 반응이 ~ 연산자의 왼쪽에 있고, 항들이 + 연산자로 구분된 두 면의 선형 공식 객체입니다. 무작위 효과 항은 디자인 행렬과 그룹화 요인을 구분하는 수직 막대(|)로 구분됩니다. 두 개의 수직 막대(||)는 동일한 그룹화 변수에 대해 여러 개의 비상관 무작위 효과를 지정하는 데 사용할 수 있습니다. (구현 방식 때문에 || 구문은 숫자(연속) 예측 변수를 포함하는 디자인 행렬에만 작동합니다. 독립적인 범주형 효과가 있는 모델을 적합하려면 afex 패키지의 dummy 또는 lmer_alt 함수를 참조하십시오.)\n</li>\n<li>\ndata: 공식에서 명명된 변수를 포함하는 선택적 데이터 프레임입니다. 기본적으로 변수는 lmer가 호출되는 환경에서 가져옵니다. 데이터는 선택 사항이지만, 패키지 저자는 특히 업데이트 및 drop1과 같은 방법을 적합된 모델에 적용할 때 사용을 강력히 권장합니다(데이터가 생략되면 이러한 방법이 제대로 작동하지 않을 수 있습니다). 데이터가 생략되면 변수는 공식의 환경(공식으로 지정된 경우) 또는 상위 프레임(문자 벡터로 지정된 경우)에서 가져옵니다.\n</li>\n<li>\nREML: 논리 스칼라 - 추정치를 REML 기준을 최적화하도록 선택해야 합니까(로그 우도와 반대되는)?\nna.action: 데이터에 NA가 포함될 때 발생해야 하는 일을 나타내는 함수입니다. 기본 동작(na.omit, '공장 초기' 값에서 상속받은 getOption(\"na.action\"))은 모든 변수에서 누락된 값이 있는 모든 관측값을 제거합니다.\n</li>\n</ul>\n<b>값</b></br>\nmerMod 클래스의 객체(더 구체적으로, lmerMod 하위 클래스의 객체)로, 많은 메서드가 사용 가능합니다(예: methods(class=\"merMod\"))</br>\n<b>패키지</b></br>\nlme4</br>\n<b>도움말</b></br>\nhelp(lmer, package ='lme4')</br></br>\n<b>설명</b></br>\n패키지 lmerTest의 함수 anova에 대한 설명 방법\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n## S4 메서드 서명 'merModLmerTest' anova(object, ... , ddf=\"Satterthwaite\", type=3)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nobject: \"merModLmerTest\" 클래스의 객체 ... \"merModLmerTest\" 클래스의 객체. 그런 다음 모델 비교 통계가 계산됩니다.\n</li>\n<li>\nddf: 기본적으로 Satterthwaite의 자유도 근사가 계산됩니다. ddf=\"Kenward-Roger\"인 경우, pbkrtest 패키지의 KRmodcomp 함수를 사용하여 Kenward-Roger의 근사가 계산됩니다. ddf=\"lme4\"인 경우 lme4 패키지에서 제공하는 anova 테이블이 반환됩니다.\n</li>\n<li>\n유형: 테스트할 가설의 유형. type=3 또는 type=2 또는 type=1일 수 있습니다(정의는 SAS 이론에서 유래됨). 세부 사항 (Goodnight, J.H. 1976)에 따르면, 유형 3 가설의 동작은 누락된 셀(어떤 요인 수준 조합에서 관측값이 누락된 경우)에 대한 상황에 대해 완전히 연구되지 않았습니다. 이러한 경우 경고가 반환됩니다.\n</li>\n</ul>\n<b>세부 사항</b></br>\n(Goodnight, J.H. 1976)에 따르면, 유형 3 가설의 동작은 누락된 셀(어떤 요인 수준 조합에서 관측값이 누락된 경우)에 대한 상황에 대해 완전히 연구되지 않았습니다. 이러한 경우 경고가 반환됩니다.</br>\n<b>패키지</b></br>\nlme4;lmerTest;rcompanion;ggplot2;multcomp</br>\n<b>도움말</b></br>\nhttps://cran.r-project.org/web/packages/lmerTest/lmerTest.pdf</br>\nhelp(nagelkerke, package ='rcompanion')</br>\nhelp(emmeans,package=\"cld\")</br>\nhelp(cld,package='emmeans')</br>\n<b>참고 자료</b></br>\nhttp://rcompanion.org/handbook/I_07.html\n"
+  }
+}

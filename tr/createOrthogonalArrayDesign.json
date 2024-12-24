@@ -1,0 +1,20 @@
+{
+  "title": "Ortogonal Dizi Tasarımı Oluştur",
+  "navigation": "Ortogonal Dizi Tasarımı Oluştur",
+  "selectedvars": "Değişkenleri seçin",
+  "datasetname": "Tasarım adı",
+  "numOfRuns": "Minimum çalışma sayısı (boş bırakılabilir)",
+  "minNumOfResidual": "Minimum kalıntı serbestlik derecesi",
+  "replications": "Tekrarlar",
+  "repeatOnlyChk": "Sadece tekrar et",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmeniz gerekmeyebilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım üretimini rastgeleleştir",
+  "designnamefromcatlg": "(İsteğe bağlı) Ortogonal tasarım dizisi (örnek: oacat$name'den L12.2.2.6.1)",
+  "columnOptimization": "Sütun optimizasyonu (varsayılan sıralama, diğer seçenekler min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr)",
+  "help": {
+    "title": "Ortogonal Dizi Tasarımı Oluştur",
+    "r_help": "help(oa.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\toa.design fonksiyonu, sütunların sınırlı optimal tahsisini sağlayarak ortogonal dizilere erişim sağlar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(oa.design, package = DoE.base) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYüklenen tasarım kataloğundan referans almak için mevcut Ortogonal Tasarımları taramak için menüyü DOE->Tasarımı İncele->Ortogonal Tasarım Kataloğunu İncele (oacat) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, factor_grid_orthogonal_array_Design.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\tİsteğe bağlı olarak, oacat$name'den tasarım olarak L72.2.53.3.2.4.1 belirtebilirsiniz\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

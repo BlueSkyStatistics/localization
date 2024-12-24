@@ -1,0 +1,28 @@
+{
+  "title": "P-P 플롯",
+  "navigation": "P-P",
+  "alpha": "불투명도 (0-1)",
+  "x": "X 축, 숫자 변수 지정",
+  "y": "형태, 요인 변수 지정",
+  "color": "색상, 요인 변수 지정",
+  "referenceline": "참조선",
+  "band": "밴드 표시",
+  "detrend": "추세 제거",
+  "flip": "축 뒤집기",
+  "distribution": "분포 선택",
+  "x_title": "X 축 레이블",
+  "y_title": "Y 축 레이블",
+  "label1": "분포 매개변수, 예를 들어 정규 분포의 경우, 분포 매개변수는 mean=2, sd=2일 수 있으므로 mean=2, sd=2를 입력하십시오. 지수 분포의 경우 매개변수는 rate=2일 수 있으므로 rate=2를 입력하십시오.",
+  "dparams": "선택적으로 분포 매개변수 입력",
+  "specify_a_title": "제목 입력",
+  "Facetrow": "행 패싯",
+  "Facetcolumn": "열 패싯",
+  "Facetwrap": "패싯 랩",
+  "Facetscale": "패싯 스케일",
+  "facets_lbl": "패싯",
+  "help": {
+    "title": "P-P 플롯",
+    "r_help": "help(stat_pp_point,package='qqplotr')",
+    "body": "\n            <b>설명</b></br>\n            P–P 플롯(확률–확률 플롯 또는 백분율–백분율 플롯 또는 P 값 플롯)은 두 데이터 세트가 얼마나 밀접하게 일치하는지를 평가하기 위한 확률 플롯으로, 두 누적 분포 함수를 서로 대조하여 플롯합니다. 기본적으로 선택한 변수의 누적 분포를 정규 분포와 비교하지만, beta, cauchy, chisq, exp, f, gamma 등 여러 다른 분포와 비교할 수 있습니다. 비교할 분포와 관련된 분포 매개변수를 지정할 수도 있습니다. 주요 대화 상자에서 옵션 버튼을 클릭하여 분포를 선택하고 분포 매개변수를 지정하십시오. 선택한 변수를 그룹화할 요인 변수를 선택할 수 있습니다. 이 경우 각 그룹에 대해 별도의 P-P 플롯이 그려집니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            ggplot(data = datasetname,mapping= aes(sample = var1 ,shape = var2 ))  +stat_pp_band() + stat_pp_line() + stat_pp_point()  +labs(x = \"확률 점\",y = \"누적 확률\",title =paste(\"변수 \",var1,\"에 대한 PP 플롯\",sep=''))+facet_grid(var3 ~.)\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 기본 데이터 세트​\n            </li>\n            <li>\n            aes(): 데이터의 변수가 시각적 속성(미적)에 어떻게 매핑되는지를 설명하는 미적 매핑을 생성합니다.​\n            </li>\n            <li>\n            sample: P-P 플롯을 그릴 숫자 변수\n            </li>\n            <li>\n            stat_pp_point: 누적 확률을 확률 점에 대해 플롯합니다. 누적 확률 함수는 샘플 데이터를 사용하여 구성되며, 각 확률 점에서 평가됩니다.\n            </li>\n            <li>\n            stat_pp_line: 참조 동일선(x=y)을 그립니다.\n            </li>\n            <li>\n            stat_pp_band: 신뢰 구간을 그립니다. 현재는 부트스트랩 버전(\"boot\")만 사용할 수 있습니다.\n            </li>\n            <li>\n            shape: 샘플에 할당된 값을 그룹화하는 선택적 요인 변수입니다. 요인 변수의 수준에 따라 각 그룹에 대해 별도의 P-P 플롯이 생성됩니다.​ 각 그룹은 다른 모양으로 표시됩니다.\n            </li>\n            <li>\n            Labs(): 축 레이블 및 범례 제목을 변경합니다(선택 사항)​\n            </li>\n            <li>\n            facet_grid(): 패널을 그리드에 배치합니다(선택 사항)​. 자세한 내용은 help(facet_grid)를 참조하십시오.\n            </li>\n            <li>  ​\n            coord_flip(): 축을 뒤집습니다(선택 사항)​\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>도움말</b></br>\n            help(stat_pp_point, package='qqplotr')</br>\n            기타: R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻으십시오. help(labs), help(stat_pp_point), help(aes), help(facet_grid), help(coord_flip)를 입력할 수도 있습니다.</br>​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n        "
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "title": "导出设计 - 将创建三个文件（csv、html、rda），文件名与设计相同",
-  "navigation": "导出设计",
-  "exportPath": "导出设计的文件路径",
-  "help": {
-    "title": "导出设计",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t导出设计将创建三个文件（csv、html、rda），文件名与设计相同，存储在所选目录路径中。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t导出设计的目的是根据设计在现实世界中设置和进行实验，并收集结果。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t向csv文件添加符合R变量命名约定的列，以记录结果。这些附加列在实验设计的词汇中被称为响应。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一旦将响应列添加到csv文件中，可以使用DOE -> 导入设计菜单将csv文件加载到数据集UI网格中对应的设计（已打开）。\n\t\t\t\t<br/>\n\t\t\t\t"
-  }
-}

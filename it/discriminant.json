@@ -1,0 +1,22 @@
+{
+  "title": "Analisi Discriminante",
+  "navigation": "Discriminante",
+  "modelname": "Nome del modello",
+  "tvarbox1": "Variabili dipendenti",
+  "tvarbox2": "Fattore fisso",
+  "blockVar": "Covariata(e)",
+  "testStatistic": "Statistica del test",
+  "label2": "Opzioni per post-hoc",
+  "combon": "Confronta le medie utilizzando:",
+  "emm": "Medie marginali stimate",
+  "displayBoxMDetails": "Visualizza i dettagli associati al test di Box's M (Nota: I risultati del test di Box's M sono sempre mostrati)",
+  "adjust": "Metodo per l'aggiustamento dei valori p",
+  "levenesTest": "Test di Levene",
+  "posthocs": "Post-hoc",
+  "plotMeansCI": "Grafico delle medie e degli intervalli di confidenza",
+  "help": {
+    "title": "Analisi Discriminante",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>Descrizione</b></br>\nAnalisi Discriminante: Vengono forniti test multivariati omnibus e i corrispondenti valori F e p. Sono forniti anche test univariati di follow-up.</br> NOTA: Attualmente supportiamo un singolo fattore indipendente</br>\nNOTA: Non visualizziamo l'intervallo di confidenza nel grafico delle medie poiché vengono visualizzati avvisi non necessari. Stiamo lavorando con l'autore del pacchetto gplots per rettificare questo.</br>\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\n...: Argomenti passati a aov\n</li>\n</ul>\n<b>Dettagli</b></br>\nLa classe \"manova\" differisce dalla classe \"aov\" nella selezione di un metodo di riepilogo diverso. La funzione manova chiama aov e poi aggiunge la classe \"manova\" all'oggetto risultato per ogni strato.​</br>\n<b>Valore</b><br/>\nVedi l'aiuto di aov, dettagli di seguito<br/>\n<b>Pacchetto</b></br>\nstats</br>\n<b>Aiuto</b></br>\nClicca sul pulsante Aiuto R per ottenere aiuto dettagliato su R.</br> Puoi anche inserire help(manova, package ='stats') e premere CTRL Invio nell'editor di sintassi R per ottenere aiuto</br>\n"
+  }
+}

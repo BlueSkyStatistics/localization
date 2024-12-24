@@ -1,0 +1,16 @@
+{
+  "title": "Eksik Değerleri Değiştir (Sayısal Değişkenler)",
+  "navigation": "Sayısal",
+  "label1": "Seçilen değişkenlerdeki eksik değerler (NA'lar), bir fonksiyon uygulanarak değiştirilir; yani medyan, ortalama, min, max veya belirtilen değer.",
+  "target": "Eksik Değerleri Değiştirmek için Değişkenleri Seçin",
+  "label2": "NA'ları değiştirmek için bir fonksiyon seçin veya bir değer belirtin",
+  "rd1": "Eksik değerleri hesaplamak için bir fonksiyon kullanın",
+  "selectctrl": "Fonksiyonu Seçin",
+  "rd2": "Eksik değerleri değiştirmek için bir sayısal değer belirtin",
+  "valueEntered": "Bir sayısal değer girin",
+  "help": {
+    "title": "Eksik Değerleri Değiştir (Sayısal)",
+    "r_help": "help(mean)",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenlerdeki eksik değerler, seçilen işlem ile değiştirilir; yani medyan, ortalama, min, max\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvar: Eksik değerleri (na) temsil eden sayısal değişkenin karakter dizesi, örneğin var = c('sales')\n</li>\n<li>\nDataset: var değişkenini içeren veri seti\n</li>\n</ul>\n<b>Değer</b><br/>\nHesaplanan değerler doğrudan Dataset'te saklanır<br/>\n<b>Paket</b></br>\nbas</br>\n<b>Yardım</b></br>\nhelp(mean)"
+  }
+}

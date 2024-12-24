@@ -1,16 +1,16 @@
 {
-  "title": "Erstellen Sie ein Taguchi-Stil Innen-Außen-Parameterdesign",
+  "title": "Erstellen Sie das Taguchi-Stil Innen-Außen-Parameterdesign",
   "navigation": "Taguchi-Parameterdesign erstellen",
   "datasetname": "Designname",
-  "inner": "Innendesign (muss bereits randomisiert worden sein)",
-  "outer": "Außendesign",
+  "inner": "Inneres Design (muss bereits randomisiert worden sein)",
+  "outer": "Äußeres Design",
   "lbl1": "Richtung - Design im langen oder breiten Format generieren",
   "directionLongrad": "Langes Format",
   "directionWiderad": "Breites Format",
   "responses": "Lassen Sie es leer oder geben Sie einen oder mehrere Antwortnamen an (durch Kommas getrennt, ohne Anführungszeichen oder Leerzeichen zwischen den Namen)",
   "help": {
-    "title": "Erstellen Sie ein Taguchi-Stil Innen-Außen-Parameterdesign",
-    "r_help": "hilfe(param.design, paket = DoE.base)",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDie param.design-Funktion generiert Taguchi-Stil-Parameterdesigns. Sie erstellt Parameterdesigns für Signal-Rausch-Untersuchungen mit inneren und äußeren Arrays und erleichtert deren Formatierung und Datenaggregation. Das Experiment kreuzt die Steuerfaktoren im „inneren Array“ mit den Störfaktoren im „äußeren Array“.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R hilfe(param.design, paket = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens factor_grid_twolevel_screen_Design.xlsx verwenden. Öffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Erstellen Sie ein vollständiges faktorielles Design mit dem Designnamen FFinnerRandom mit den ausgewählten Faktoren - AirVolume, Valve, Barrel und Angle und aktivieren Sie das Kontrollkästchen „Randomize the design generation“\n\t\t\t\t<br/>\n\t\t\t\t2. Erstellen Sie ein orthogonales Array-Design mit dem Designnamen FFouter mit den ausgewählten Faktoren - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. Erstellen Sie ein Taguchi-Design (dieser Dialog/UI) und wählen Sie die bereits in Schritt 1 und Schritt 2 erstellten Designs FFinnerRandom und FFouter aus\n\t\t\t\t<br/>\n\t\t\t\t"
+    "title": "Erstellen Sie das Taguchi-Stil Innen-Außen-Parameterdesign",
+    "r_help": "help(param.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDie param.design-Funktion generiert Taguchi-Stil-Parameterdesigns. Sie erstellt Parameterdesigns für Signal-Rausch-Untersuchungen mit inneren und äußeren Arrays und erleichtert deren Formatierung und Datenaggregation. Das Experiment kreuzt die Kontrollfaktoren im „inneren Array“ mit den Störfaktoren im „äußeren Array“.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(param.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens factor_grid_twolevel_screen_Design.xlsx verwenden. Öffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Erstellen Sie ein vollständiges faktorielles Design mit dem Designnamen FFinnerRandom mit den ausgewählten Faktoren - AirVolume, Valve, Barrel und Angle und aktivieren Sie das Kontrollkästchen „Randomize the design generation“\n\t\t\t\t<br/>\n\t\t\t\t2. Erstellen Sie ein orthogonales Array-Design mit dem Designnamen FFouter mit den ausgewählten Faktoren - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. Erstellen Sie ein Taguchi-Design (dieser Dialog/UI) und wählen Sie die bereits in Schritt 1 und Schritt 2 erstellten Designs FFinnerRandom und FFouter aus\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

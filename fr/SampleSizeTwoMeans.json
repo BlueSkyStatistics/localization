@@ -1,20 +1,20 @@
 {
-  "title": "Taille d'échantillon, Test de deux moyennes",
-  "navigation": "Deux moyennes",
-  "howtouse": "Pour calculer la taille de l'échantillon : spécifiez les deux moyennes de groupe et la puissance\nPour calculer la puissance : spécifiez les deux moyennes de groupe et la taille de l'échantillon\nPour calculer la différence de moyenne détectable : spécifiez la taille de l'échantillon et la puissance",
-  "n": "Taille d'échantillon",
+  "title": "Taille d'Échantillon, Test de Deux Moyennes",
+  "navigation": "Deux Moyennes",
+  "howtouse": "Pour calculer la taille d'échantillon : spécifiez les moyennes des deux groupes et la puissance\nPour calculer la puissance : spécifiez les moyennes des deux groupes et la taille d'échantillon\nPour calculer la différence de moyenne détectable : spécifiez la taille d'échantillon et la puissance",
+  "n": "Taille d'Échantillon",
   "power": "Puissance (0-1)",
-  "meangrp1": "Moyenne du groupe de traitement",
-  "meangrp2": "Moyenne du groupe de contrôle",
-  "ratio": "Ratio de taille d'échantillon traitement vs contrôle",
-  "sd": "Écart type",
-  "siglevel": "Niveau de signification (0-1)",
-  "alternativeopt": "Hypothèse alternative",
-  "twosided": "Deux côtés",
-  "onesided": "Un côté",
+  "meangrp1": "Moyenne du Groupe de Traitement",
+  "meangrp2": "Moyenne du Groupe de Contrôle",
+  "ratio": "Ratio de Taille d'Échantillon Traitement vs Contrôle",
+  "sd": "Écart-Type",
+  "siglevel": "Niveau de Signification (0-1)",
+  "alternativeopt": "Hypothèse Alternative",
+  "twosided": "Deux-Sided",
+  "onesided": "One-Sided",
   "help": {
-    "title": "Taille d'échantillon, Test de deux moyennes",
+    "title": "Taille d'Échantillon, Test de Deux Moyennes",
     "r_help": "help(epi.sscompc, package ='epiR')",
-    "body": "\nCeci est une évaluation de la taille de l'échantillon pour un test t à deux échantillons de moyennes. Il calcule la taille de l'échantillon, la puissance ou la différence de moyenne (delta) lorsque l'utilisateur spécifie les deux autres.\n<br/><br/>\n<b>Taille d'échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance souhaitée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Moyenne du groupe de traitement :</b> Spécifiez la moyenne pour le groupe de traitement\n<br/><br/>\n<b>Moyenne du groupe de contrôle :</b> Spécifiez la moyenne pour le groupe de contrôle\n<br/><br/>\n<b>Ratio de taille d'échantillon traitement vs contrôle :</b> Spécifiez le ratio souhaité des tailles d'échantillons (N traitement divisé par N contrôle). Un ratio de 1 signifie des tailles d'échantillons égales.\n<br/><br/>\n<b>Écart type :</b> Estimation de l'écart type combiné des groupes\n<br/><br/>\n<b>Niveau de signification :</b> Spécifiez le niveau de signification souhaité (c'est-à-dire l'erreur de type I) du test\n<br/><br/>\n<b>Hypothèse alternative :</b> Spécifiez si le test est à deux côtés ou à un côté\n<br/><br/>\n<b>Packages R requis :</b> epiR\n\t\t\t"
+    "body": "\nCeci est une évaluation de la taille d'échantillon pour un test t de deux échantillons de moyennes. Il calcule la taille d'échantillon, la puissance ou la différence de moyenne (delta) lorsque l'utilisateur \nspecifie les deux autres.\n<br/><br/>\n<b>Taille d'Échantillon :</b> Spécifiez le nombre de sujets dans l'étude\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance désirée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie.\n<br/><br/>\n<b>Moyenne du Groupe de Traitement :</b> Spécifiez la moyenne pour le groupe de traitement\n<br/><br/>\n<b>Moyenne du Groupe de Contrôle :</b> Spécifiez la moyenne pour le groupe de contrôle\n<br/><br/>\n<b>Ratio de Taille d'Échantillon Traitement vs Contrôle :</b> Spécifiez le ratio désiré des tailles d'échantillons (N de traitement divisé par N de contrôle). Un ratio de 1 signifie des tailles d'échantillons égales.\n<br/><br/>\n<b>Écart-Type :</b> Estimation de l'écart-type combiné des groupes\n<br/><br/>\n<b>Niveau de Signification :</b> Spécifiez le niveau de signification désiré (c'est-à-dire l'erreur de type I) du test\n<br/><br/>\n<b>Hypothèse Alternative :</b> Spécifiez si le test est à deux côtés ou à un côté\n<br/><br/>\n<b>Packages R Requis :</b> epiR\n\t\t\t"
   }
 }

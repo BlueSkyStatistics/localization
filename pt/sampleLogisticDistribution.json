@@ -1,0 +1,19 @@
+{
+  "title": "Amostra da Distribuição Logística",
+  "navigation": "Amostra da Distribuição Logística",
+  "entrdsname": "Digite o nome do conjunto de dados",
+  "location": "Localização",
+  "scale": "Escala",
+  "lblnoofsamples": "Número de amostras (linhas)",
+  "lblnoofobsv": "Número de observações (colunas)",
+  "lblseed": "Semente",
+  "lblAddtoDS": "Adicionar ao conjunto de dados",
+  "chklbl1": "Médias das amostras",
+  "chklbl2": "Somas das amostras",
+  "chklbl3": "Desvios padrão das amostras",
+  "help": {
+    "title": "Amostra da Distribuição Logística",
+    "r_help": "help(rlogis, package=stats)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Densidade, função de distribuição, função quantil e geração aleatória para a distribuição logística com parâmetros de localização e escala.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dlogis(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                plogis(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis.</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>location, scale : parâmetros de localização e escala.</li>\n                \n                \n                <li>log, log.p : lógico; se TRUE, as probabilidades p são dadas como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; se TRUE (padrão), as probabilidades são P[X ≤ x], caso contrário, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalhes</b>\n            <br/>\n            Se location ou scale forem omitidos, eles assumem os valores padrão de 0 e 1, respectivamente.\n            A distribuição logística com location = m e scale = s tem função de distribuição\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            e densidade\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            É uma distribuição de cauda longa com média m e variância π^2 /3 s^2.\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dlogis fornece a densidade, plogis fornece a função de distribuição, qlogis fornece a função quantil, e rlogis gera desvios aleatórios.\n            <br/>\n            O comprimento do resultado é determinado por n para rlogis, e é o máximo dos comprimentos dos argumentos numéricos para as outras funções.\n            <br/>\n            Os argumentos numéricos além de n são reciclados para o comprimento do resultado. Apenas os primeiros elementos dos argumentos lógicos são usados.\n            <br/>\n            <br/><b>Nota</b>\n            <br/>\n            qlogis(p) é o mesmo que a conhecida função ‘logit’, logit(p) = log(p/(1-p)), e plogis(x) foi, consequentemente, chamada de ‘logit inverso’.\n            <br/>\n            A função de distribuição é uma tangente hiperbólica reescalada, plogis(x) == (1+ tanh(x/2))/2, e é chamada de função sigmoide em contextos como redes neurais.\n            \n      "
+  }
+}

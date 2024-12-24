@@ -1,0 +1,26 @@
+{
+  "title": "Grafico della distribuzione logistica",
+  "navigation": "Grafico della distribuzione logistica",
+  "location": "Posizione",
+  "scale": "Scala",
+  "pdenfun": "Grafico della funzione di densità",
+  "pdstfun": "Grafico della funzione di distribuzione",
+  "lblregions": "Specifica facoltativamente le regioni sotto la funzione di densità tramite",
+  "xvals": "valori x",
+  "quantiles": "quantili",
+  "lblRegFill": "Regioni da riempire (specifica una o due, o lascia vuoto)",
+  "lblreg1": "Regione 1 :",
+  "lblreg2": "Regione 2 :",
+  "lblregfrm": "Da",
+  "lblregto": "A",
+  "lblregcol": "Colore",
+  "lblLegPos": "Posizione della legenda",
+  "toprt": "In alto a destra",
+  "toplt": "In alto a sinistra",
+  "topmid": "In alto al centro",
+  "help": {
+    "title": "Grafico della distribuzione logistica",
+    "r_help": "help(qlogis, package=stats)",
+    "body": "\n            ​​\n            <b>Descrizione</b>\n            <br/>\n            Funzione di densità, funzione di distribuzione, funzione quantile e generazione casuale per la distribuzione logistica con parametri posizione e scala.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n                dlogis(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                plogis(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argomenti</b>\n            <br/>\n            <ul>\n                <li>x, q : vettore di quantili.</li>\n                \n                \n                <li>p : vettore di probabilità.</li>\n                \n                \n                <li>n : numero di osservazioni. Se length(n) > 1, la lunghezza è presa come quella richiesta.</li>\n                \n                \n                <li>location, scale : parametri di posizione e scala.</li>\n                \n                \n                <li>log, log.p : logico; se TRUE, le probabilità p sono date come log(p).</li>\n                \n                \n                <li>lower.tail : logico; se TRUE (predefinito), le probabilità sono P[X ≤ x], altrimenti, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Dettagli</b>\n            <br/>\n            Se posizione o scala sono omesse, assumono i valori predefiniti di 0 e 1 rispettivamente.\n            La distribuzione logistica con posizione = m e scala = s ha funzione di distribuzione\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            e densità\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            È una distribuzione a coda lunga con media m e varianza π^2 /3 s^2.\n            <br/>\n            <br/><b>Valore</b>\n            <br/>\n            dlogis fornisce la densità, plogis fornisce la funzione di distribuzione, qlogis fornisce la funzione quantile e rlogis genera deviate casuali.\n            <br/>\n            La lunghezza del risultato è determinata da n per rlogis, ed è il massimo delle lunghezze degli argomenti numerici per le altre funzioni.\n            <br/>\n            Gli argomenti numerici diversi da n vengono riciclati alla lunghezza del risultato. Solo i primi elementi degli argomenti logici vengono utilizzati.\n            <br/>\n            <br/><b>Nota</b>\n            <br/>\n            qlogis(p) è lo stesso della nota funzione 'logit', logit(p) = log(p/(1-p)), e plogis(x) è stato di conseguenza chiamato 'logit inverso'.\n            <br/>\n            La funzione di distribuzione è una tangente iperbolica ridimensionata, plogis(x) == (1+ tanh(x/2))/2, ed è chiamata funzione sigmoide in contesti come le reti neurali.\n            \n      "
+  }
+}

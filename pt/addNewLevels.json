@@ -1,0 +1,18 @@
+{
+  "title": "Adicionar Novos Níveis",
+  "navigation": "Adicionar",
+  "target": "Variáveis fatoriais para adicionar novos níveis a",
+  "label1": "Adicione novos níveis a uma ou mais variável(is) fatoriais. Salve os resultados em variáveis existentes ou crie novas variáveis especificando um prefixo/sufixo. Novas variáveis serão criadas com o prefixo/sufixo anexado aos nomes existentes.",
+  "newLevels": "Insira novos níveis entre aspas e separados por vírgula, por exemplo, \"nivel1\",\"nivel2\",\"nivel3\"",
+  "label2": "Salvar novos níveis em nova variável(is) ou sobrescrever variável(is) existente(s)",
+  "rd3": "Especifique um sufixo (Uma nova variável será criada com o sufixo)",
+  "txt3": "Insira um sufixo",
+  "rd2": "Especifique um prefixo (Uma nova variável será criada com o prefixo)",
+  "txt4": "Insira um prefixo",
+  "rd1": "Sobrescrever variáveis existentes",
+  "help": {
+    "title": "Adicionar Novos Níveis",
+    "r_help": "help(fct_expand, package=\"forcats\")",
+    "body": "\n<b>NOTA: NÃO ENCAIXOTE NÍVEIS EM ASPAS DUPLAS OU ASPAS SIMPLES, NÃO PODE HAVER ESPAÇOS NOS NOMES DOS NÍVEIS. INSIRA NÍVEIS SEPARADOS POR VÍRGULAS NO FORMATO NIVEL1,NIVEL2,NIVEL3</b></br>\n<b>Descrição</b></br>\nAdicione níveis adicionais a um fator. Adicione novos níveis a uma ou mais variável(is) fatoriais. Os resultados podem ser em variáveis existentes (sobrescrevendo) ou criando novas variáveis especificando um prefixo/sufixo. Novas variáveis serão criadas com o prefixo/sufixo anexado aos nomes existentes. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf: Um fator (ou vetor de caracteres).\n</li>\n<li>\n...: Níveis adicionais a serem adicionados ao fator. Níveis que já existem serão ignorados silenciosamente.\n</li>\n</ul>\n<b>Exemplos</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Pacote</b></br>\nforcats</br>\n<b>Ajuda</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+  }
+}

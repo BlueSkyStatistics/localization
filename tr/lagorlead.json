@@ -1,0 +1,16 @@
+{
+  "title": "Gecikmeli veya Öndeki Değişken",
+  "navigation": "Gecikmeli veya Öndeki Değişken",
+  "varnamelabel": "Yeni Değişken Adı (boşluk olmadan)",
+  "lagleadvarlabel": "Gecikmeli / Öndeki Değişken",
+  "groupbyvarslabel": "Gruplamak için Değişkenler",
+  "typelabel": "Gecikmeli veya Öndeki",
+  "laglabel": "Gecikme",
+  "leadlabel": "Önde",
+  "positionlabel": "Pozisyon Sayısı",
+  "help": {
+    "title": "Gecikmeli veya Öndeki Değişken",
+    "r_help": "help(lag, package ='dplyr')",
+    "body": "\nBu, mevcut bir değişkende satır konumuna dayalı olarak önceki (gecikme) veya sonraki (önde) değeri bulan yeni bir değişken oluşturur.\n<br/><br/>\n<b>Yeni Değişken Adı:</b> Gecikmeli veya önde değerleri saklamak için değişken adı\n<br/><br/>\n<b>Gecikmeli / Öndeki Değişken:</b> Gecikmeli veya önde değerleri çıkarmak için mevcut değişkeni belirtin\n<br/><br/>\n<b>Gruplamak için Değişkenler (isteğe bağlı):</b> Gruplamak için değişkenleri belirtin. Eğer burada değişkenler belirtilirse, gecikmeli ve önde değerler yalnızca bu değişkenler tarafından tanımlanan gruplar içinde elde edilecektir. Eğer burada hiçbir değişken belirtilmezse, gecikmeli ve önde değerler Gecikmeli / Öndeki Değişken'de belirtilen tüm sütuna dayalı olarak elde edilecektir. Genellikle, değerlerin gruplama değişkenlerine göre sıralanması gerekir.\n<br/><br/>\n<b>Gecikmeli veya Öndeki:</b> Önceki (gecikme) veya sonraki değeri (önde) bulmak isteyip istemediğinizi seçin\n<br/><br/>\n<b>Pozisyon Sayısı:</b> Gecikmeli veya önde olmak üzere kaç pozisyon belirtileceğini belirtin. Örneğin, 1 gecikmeli bir değer, önceki değeri çıkarır ve 2 gecikmeli bir değer, 2 pozisyon önceki değeri çıkarır.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> dplyr\n\t\t\t"
+  }
+}

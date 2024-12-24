@@ -1,0 +1,32 @@
+{
+  "title": "용량 반응 곡선 모델",
+  "navigation": "용량 반응 곡선",
+  "modelname": "DRC 모델 이름",
+  "DependentVarformula": "반응 변수",
+  "IndependentVarsformula": "용량, 농도, 효소 등",
+  "drEquation": "드롭다운에서 용량 반응 방정식을 선택하세요. 기본값은 LL.4 (4매개변수 로그-로지스틱 모델)입니다.",
+  "drDataType": "필요한 경우 분석 중인 데이터 유형에 따라 드롭다운에서 선택하세요.",
+  "ED": "유효 용량 반응의 추정. 기본값은 50%입니다. 여러 수준을 지정할 수 있습니다 (예: 10, 50, 90).",
+  "curveid": "데이터 그룹화를 포함하는 변수",
+  "weights": "파워 값과 함께 가중치(Y)로 사용되는 변수",
+  "PowerKweight": "파워: Y만 선택할 경우 (-1), 1/Y 선택할 경우 1, 1/(Y^2) 선택할 경우 2, .. 1/(Y^5) 선택할 경우 5,..",
+  "covMatrixChk": "매개변수에 대한 추정 공분산 행렬",
+  "resPlotChk": "잔차 플롯",
+  "resNormalityTestChk": "모델 잔차의 정규성 테스트",
+  "modelConstraintLabel": "(선택 사항) 매개변수 추정을 위한 다양한 모델 제약 조건",
+  "pmodels": "모델 최적화/수렴을 안내하기 위해 매개변수의 시작 값을 설정합니다. 예: LL.4 data.frame(제초제,1,1,제초제) 또는 LL.3 list(~group, ~1, ~group)",
+  "paramConstraints": "LL.3의 경우 상한 고정값을 0.5로 설정하기 위해 NA, 0.5, NA와 같이 하나 이상의 매개변수를 상수 값으로 고정합니다.",
+  "paramConstraintsLower": "하한 제약 조건 설정 예: Brain-Cousens 모델 BC.5에서 제약 b>3을 (3, -Inf, -Inf, -Inf, -Inf)로 설정",
+  "paramConstraintsUpper": "상한 제약 조건 설정 예: Log Logistic LL.4에서 제약을 (3, Inf, Inf, 2)로 설정",
+  "dosePotencyChk": "상대 용량 효능 비교",
+  "logScaleAxis": "X축은 기본적으로 로그 스케일로 플롯됩니다. 원래 스케일로 플롯하려면 드롭다운에서 빈 옵션을 선택하세요.",
+  "EDpointValueChk": "플롯에서 ED 포인트 옆에 값을 플롯합니다.",
+  "doseInLogScaleChk": "데이터셋에서 용량/농도가 이미 로그 값인지 확인합니다.",
+  "ModelSelectTestChk": "하나 이상의 모델과 비교하기 위해 모델 적합 테스트를 수행합니다.",
+  "modelSelectTest": "적합성을 비교하기 위해 하나 이상의 모델을 선택(클릭/클릭 해제)합니다.",
+  "help": {
+    "title": "용량 반응 곡선 모델 (DRC)",
+    "r_help": "help(drm, package ='drc')",
+    "body": "\n            <b>설명</b></br> \n\t\t\t용량-반응 데이터를 분석하기 위한 유연하고 다재다능한 모델 적합 및 적합 후 분석 기능을 통해 매개변수를 추정하는 다양한 용량 반응 방정식 함수\n            <br/>\n\t\t\t<br/>\n\t\t\t선택한 용량 반응 방정식 함수에 따라 DRC 모델에 존재하는 매개변수 이름\n\t\t\t<br/>\t\t\t\n\t\t\t기울기 (b)\n\t\t\t<br/>\n\t\t\t하한 비대칭 (c)\n\t\t\t<br/>\n\t\t\t상한 비대칭 (d)\n\t\t\t<br/>\n\t\t\tED50 (e)\n\t\t\t<br/>\n\t\t\t추가 기울기 (f) \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tmm.2 또는 mm.3 모델(2개 또는 3개 매개변수를 가진 Michaelis-Menten 모델)의 경우\n\t\t\t<br/>\t\t\t\n\t\t\tVmax (d) 최대 반응 속도\n\t\t\t<br/>\n\t\t\tKm (e) Michaelis 상수\n\t\t\t<br/>\n\t\t\th (c) Hill 계수\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t자세한 내용은 다음 R 페이지를 확인하세요 \n\t\t\t<br/>\n\t\t\thelp(package ='drc') \n\t\t\t<br/>\n\t\t\thelp(drm, package ='drc')\n\t\t\t<br/>\n\t\t\thelp(getMeanFunctions, package ='drc') \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tR 패키지 drc의 저자들이 작성한 용량 반응 곡선에 대한 초안 매뉴얼\n\t\t\t<br/>\t\n\t\t\t<a href=\"https://doi.org/10.1371/journal.pone.0146021.s001\">https://doi.org/10.1371/journal.pone.0146021.s001</a>\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tDRC 패키지에 대한 완전한 온라인 매뉴얼\n\t\t\t<a href=\"https://rdrr.io/cran/drc/man/\">\n\t\t\thttps://rdrr.io/cran/drc/man/\n\t\t\t</a>\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t이 대화를 시도해 볼 수 있습니다\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\t예제 1\n\t\t\t</br>\n\t\t\tLoad Datasets 메뉴에서 S.alba 데이터셋을 로드합니다 (패키지로 drc 선택)\t\t\t\n\t\t\t<br/>\n\t\t\t반응 변수로 DryMatter를 선택(드래그)합니다.\n\t\t\t<br/>\n\t\t\t용량 변수로 Dose를 선택(드래그)하고 (선택적으로) Herbicide를 데이터 필드로 그룹화합니다.\n\t\t\t<br/>\n\t\t\t또한 선택적으로 \"하나 이상의 모델과 비교하기 위해 모델 적합 테스트 수행\"을 체크/클릭하여 적합성을 비교할 수 있습니다.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\t예제 2\n\t\t\t</br>\n\t\t\tLoad Datasets 메뉴에서 earthworms 데이터셋을 로드합니다 (패키지로 drc 선택)\n\t\t\t<br/>\n\t\t\t숫자를 선택(드래그)한 다음 총계를 반응 필드로 드래그합니다. 숫자/총계로 표현식을 만들기 위해 수동으로 입력합니다.\n\t\t\t<br/>\n\t\t\t용량 변수로 dose를 선택합니다.\n\t\t\t<br/>\n\t\t\t드롭다운에서 \"용량 반응 방정식 선택..\"에서 기본값 LL.4 대신 LL.3을 선택합니다.\n\t\t\t<br/>\n\t\t\t드롭다운에서 기본값 빈 값 대신 이항을 선택합니다.\n\t\t\t<br/>\n\t\t\t유효 용량 반응 추정 필드에 50,10, 90을 입력하여 모델 플롯에서 10%, 50%, 90%의 용량 반응을 확인합니다.\n\t\t\t<br/>\n\t\t\t대화 상자에서 나머지 모든 것을 기본값으로 두고 대화 상자를 실행합니다.\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t드롭다운 목록에서 사용할 수 있는 용량 반응 방정식 함수에 대한 설명\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (ED50을 매개변수로 하여) 하한이 0이고 상한이 1인 경우\n\t\t\t(2개 매개변수)\n\t\t\tLL.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (ED50을 매개변수로 하여) 하한이 0인 경우\n\t\t\t(3개 매개변수)\n\t\t\tLL.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (ED50을 매개변수로 하여) 상한이 1인 경우\n\t\t\t(3개 매개변수)\n\t\t\tLL.3u\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (ED50을 매개변수로 하여)\n\t\t\t(4개 매개변수)\n\t\t\tLL.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t일반화된 로그-로지스틱 (ED50을 매개변수로 하여)\n\t\t\t(5개 매개변수)\n\t\t\tLL.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t웨이불 (유형 1) 하한이 0이고 상한이 1인 경우\n\t\t\t(2개 매개변수)\n\t\t\tW1.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t웨이불 (유형 1) 하한이 0인 경우\n\t\t\t(3개 매개변수)\n\t\t\tW1.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t웨이불 (유형 1)\n\t\t\t(4개 매개변수)\n\t\t\tW1.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t웨이불 (유형 2) 하한이 0이고 상한이 1인 경우\n\t\t\t(2개 매개변수)\n\t\t\tW2.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t웨이불 (유형 2) 하한이 0인 경우\n\t\t\t(3개 매개변수)\n\t\t\tW2.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t웨이불 (유형 2)\n\t\t\t(4개 매개변수)\n\t\t\tW2.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t브레인-쿠센스 (호르메시스) 하한이 0으로 고정된 경우\n\t\t\t(4개 매개변수)\n\t\t\tBC.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t브레인-쿠센스 (호르메시스)\n\t\t\t(5개 매개변수)\n\t\t\tBC.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (log(ED50)을 매개변수로 하여) 하한이 0이고 상한이 1인 경우\n\t\t\t(2개 매개변수)\n\t\t\tLL2.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (log(ED50)을 매개변수로 하여) 하한이 0인 경우\n\t\t\t(3개 매개변수)\n\t\t\tLL2.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (log(ED50)을 매개변수로 하여) 상한이 1인 경우\n\t\t\t(3개 매개변수)\n\t\t\tLL2.3u\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t로그-로지스틱 (log(ED50)을 매개변수로 하여)\n\t\t\t(4개 매개변수)\n\t\t\tLL2.4\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t일반화된 로그-로지스틱 (log(ED50)을 매개변수로 하여)\n\t\t\t(5개 매개변수)\n\t\t\tLL2.5\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t비대칭 회귀 하한이 0인 경우\n\t\t\t(2개 매개변수)\n\t\t\tAR.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t이동된 비대칭 회귀\n\t\t\t(3개 매개변수)\n\t\t\tAR.3\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t마이클리스-멘텐\n\t\t\t(2개 매개변수)\n\t\t\tMM.2\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t이동된 마이클리스-멘텐\n\t\t\t(3개 매개변수)\n\t\t\tMM.3\t\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t지수 \n\t\t\t(2개 매개변수)\n\t\t\tEXD.2  (AR.2도 사용할 수 있음)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t지수 \n\t\t\t(3개 매개변수)\n\t\t\tEXD.3  (AR.3도 사용할 수 있음)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t지수 \n\t\t\t(3개 매개변수)\n\t\t\tEXD.3  (AR.3도 사용할 수 있음)\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

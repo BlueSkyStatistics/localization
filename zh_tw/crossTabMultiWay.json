@@ -1,7 +1,37 @@
 {
+  "title": "交叉表",
+  "navigation": "交叉表",
+  "label6": "當指定多個行和列變數時，我們為每對行和列變數生成一個單獨的交叉表。",
+  "rowlabel": "行變數",
+  "collabel": "列變數",
+  "layerlabel": "層變數",
+  "weightlabel": "權重（單一）",
+  "label1": "統計",
+  "chisqlabel": "卡方",
+  "chisqNoContCorrection": "卡方檢驗無連續性修正",
+  "chisqContCorrection": "對卡方檢驗應用連續性修正（適用於2x2表）",
+  "chisqSimulatePValues": "使用蒙特卡羅模擬計算p值",
+  "chisqNoOfReplicates": "蒙特卡羅檢驗中使用的重複次數",
+  "mcnemar": "麥克尼馬爾",
+  "mcnemarContCorrection": "對麥克尼馬爾檢驗應用連續性修正（適用於2x2表）",
+  "fisher": "費雪",
+  "fisherSimulatePValues": "使用蒙特卡羅模擬計算p值",
+  "fisherNoOfReplicates": "蒙特卡羅檢驗中使用的重複次數",
+  "fishersAlternative": "費雪精確檢驗的替代假設",
+  "label2": "殘差",
+  "unstandardized": "未標準化",
+  "standardized": "標準化",
+  "adjusted": "調整後",
+  "label3": "百分比",
+  "rowpercent": "行",
+  "colpercent": "列",
+  "label4": "計數",
+  "expected": "預期",
+  "label5": "輸出格式",
+  "longTbl": "列表樣式表（當有多個層級時限制表格寬度）",
   "help": {
     "title": "交叉表",
     "r_help": "help(CrossTable, package=gmodels)",
-    "body": "\n            <b>描述</b></br>\n創建具有行、列和層變量的交叉表。當指定多個行和列變量時，我們為每對行和列變量生成一個單獨的交叉表。此外，還顯示以下內容<br/>\n預期計數<br/>\n行和列百分比<br/>\n未標準化、標準化和調整後的殘差<br/>\n帶有賠率比的卡方、McNemar和Fisher統計量<br/>\n注意：我們會自動刪除所有計數為0的行。這可能會影響卡方、McNemar和Fisher測試的運行方式。例如，您可能期望3行和2列，因為行變量有3個級別，列變量有2個級別。然而，由於某一行的所有計數均為0，您得到的是一個2*2表。雖然使用Fisher測試的Monte Carlo模擬在3*2表上運行，但不適用於2*2表，並且運行正常的Fisher測試。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE,long_table = FALSE )\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 行變量\n</li>\n<li>\ny: 列變量\n</li>\n<li>\nlayers: 一個或多個層變量\n</li>\n<li>\nweights: 包含頻率權重的數值變量\n</li>\n<li>\ndatasetname: 從中選擇x、y和layers（變量）的數據集名稱\n</li>\n<li>\nchisq:  如果為TRUE，則生成卡方表\n</li>\n<li>\nprop.r: 如果為TRUE，則生成行百分比\n</li>\n<li>\nprop.c: 如果為TRUE，則生成列百分比\n</li>\n<li>\nresid: 如果為TRUE，則生成未標準化的殘差\n</li>\n<li>\nsresid: 如果為TRUE，則生成標準化的殘差\n</li>\n<li>\nexpected: 如果為TRUE，則生成預期計數\n</li>\n<li>\nasresid:  如果為TRUE，則生成調整後的殘差\n</li>\n<li>\nlong_table: 引入長表選項以適應對大量變量進行的分析。選擇長格式控制輸出表的寬度，使其易於查看結果，而無需在輸出窗口中向右滾動。 \n</li>\n</ul>\n<b>值</b></br>\n包含結果的列表\n<br/>\n<b>示例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>包</b></br>\ngmodels</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的R圖標，或通過創建R代碼塊運行以下命令help(CrossTable, package=gmodels)，方法是單擊輸出窗口中的+  \n    "
+    "body": "\n            <b>描述</b></br>\n創建具有行、列和層變數的交叉表。當指定多個行和列變數時，我們為每對行和列變數生成一個單獨的交叉表。此外，顯示以下內容<br/>\n預期計數<br/>\n行和列百分比<br/>\n未標準化、標準化和調整後的殘差<br/>\n卡方與比值比、麥克尼馬爾和費雪統計量<br/>\n注意：我們自動刪除所有計數為0的行。這可能會影響卡方、麥克尼馬爾和費雪檢驗的運行。例如，您可能期望有3行和2列，因為行變數有3個層級，列變數有2個層級。然而，由於某行的計數全為0，您得到的是2x2表。雖然費雪檢驗的蒙特卡羅模擬在3x2表上運行，但不適用於2x2表，並且運行正常的費雪檢驗。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE,long_table = FALSE )\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 行變數\n</li>\n<li>\ny: 列變數\n</li>\n<li>\nlayers: 一個或多個層變數\n</li>\n<li>\nweights: 包含頻率權重的數值變數\n</li>\n<li>\ndatasetname: 從中選擇x、y和層（變數）的數據集名稱\n</li>\n<li>\nchisq: 如果為TRUE，則生成卡方表\n</li>\n<li>\nprop.r: 如果為TRUE，則生成行百分比\n</li>\n<li>\nprop.c: 如果為TRUE，則生成列百分比\n</li>\n<li>\nresid: 如果為TRUE，則生成未標準化的殘差\n</li>\n<li>\nsresid: 如果為TRUE，則生成標準化的殘差\n</li>\n<li>\nexpected: 如果為TRUE，則生成預期計數\n</li>\n<li>\nasresid: 如果為TRUE，則生成調整後的殘差\n</li>\n<li>\nlong_table: 引入長表選項以適應對大量變數進行的分析。選擇長格式控制輸出表的寬度，使其易於查看結果，而無需在輸出窗口中向右滾動。 \n</li>\n</ul>\n<b>值</b></br>\n包含結果的列表\n<br/>\n<b>示例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>包</b></br>\ngmodels</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的R圖標，或通過創建R代碼塊運行以下命令help(CrossTable, package=gmodels)，方法是單擊輸出窗口中的+  \n    "
   }
 }

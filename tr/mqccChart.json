@@ -1,0 +1,18 @@
+{
+  "title": "Çok Değişkenli Kalite Kontrol Grafiği (MQCC)",
+  "navigation": "MQCC Grafiği",
+  "summaryPrintChk": "Grafik(ler) ile birlikte özet yazdır",
+  "variableListSelcted": "Grafiğe veri (bir veya daha fazla değişken seçin)",
+  "groupingVariable": "(Opsiyonel) Alt gruplar mevcutsa gruplama değişkenini seçin",
+  "excludeGroups": "(Opsiyonel) Hesaplama/grafikten grupları hariç tutun (alt gruplar sayısal ise) (örneğin 1:10 veya virgülle ayrılmış olarak 1,4,5,7:12 belirtin)",
+  "groupsTobeUsedAsNewData": "(Opsiyonel) Yeni Veri - grafik için kullanılacak gruplar (alt gruplar sayısal ise) (örneğin 1:25 veya 1,4,5,7:12 olarak belirtin) - limit hesaplamalarına dahil edilmeyen yeni veriler",
+  "limitsChk": "Kontrol limitleri (Aşama I) hesaplanmalı ve çizilmelidir",
+  "pred_limitsChk": "Tahmin limitleri (Aşama II) hesaplanmalı ve çizilmelidir",
+  "confidence_level": "(Opsiyonel) Güven düzeyi: varsayılan formülü olduğu gibi bırakın (p, seçilen değişken sayısı olarak otomatik olarak hesaplanacaktır). Aksi takdirde, olasılık limitlerini hesaplamak için kullanılacak 0 ile 1 arasında bir sayısal değer belirtin",
+  "genVarianceChk": "Seçilen değişkenler için Genel Varyans |S| kontrol grafiğini çizin (ve bir gruplama değişkeni seçilmelidir)",
+  "help": {
+    "title": "Çok Değişkenli Kalite Kontrol Grafiği (mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tmqcc fonksiyonu çok değişkenli istatistiksel kalite kontrolü ve genel varyans |S| gerçekleştirmek için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(mqcc, package = qcc) ve help(GVcontrol, package = IAcsSPCR) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, qcc paketinden boiler adlı veri kümesini yüklemek için Yükle Veri Kümesi menüsünü kullanarak qcc paketini seçin ve ardından boiler veri kümesini yüklemek için seçin\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBoiler veri kümesinden değişkenleri seçin, her şeyi varsayılan olarak bırakın ve diyaloğu çalıştırın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAyrıca widgets_mqcc.xlsx adlı örnek veri kümesi dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGenel varyans |S| çizmek için, veri kümesinin alt grup numaralarını içeren bir sütuna sahip olması gerekir - aksi takdirde çizilmeyecektir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqcc öğreticisini takip edin: https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

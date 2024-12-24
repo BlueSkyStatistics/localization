@@ -1,0 +1,17 @@
+{
+  "title": "Transformação Inversa de Box-Cox (converter de volta para o valor não transformado)",
+  "navigation": "Box-Cox Inversa",
+  "label2": "Selecione uma variável ou digite um valor numérico para ser convertido de volta de uma transformação Box-Cox anterior com o valor Lambda (λ)",
+  "variableSelcted": "Selecione uma variável",
+  "selectVariableRad": "Opção 1: Selecione uma variável para ser convertida de volta de uma transformação Box-Cox anterior",
+  "invBoxCoxColName": "(Opcional) Especifique um novo nome de variável para armazenar os valores convertidos. Caso contrário, <variable_Invbcox> será criado",
+  "selectNumberRad": "Opção 2: Digite um valor numérico para ser convertido de volta da transformação Box-Cox",
+  "invNumber": "Digite o valor numérico",
+  "lambda": "(Opcional) Especifique um valor Lambda (λ) em (-2 a 2) a ser usado para converter de volta da transformação Box-Cox. Caso contrário, se deixado em branco, o valor Lambda (λ) usado para a transformação Box-Cox original da variável selecionada acima será utilizado",
+  "digits": "Dígitos - arredonda para o número especificado de casas decimais",
+  "help": {
+    "title": "Transformar de volta (inversa) de um valor previamente transformado por Box-Cox",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tTransformar de volta (inversa) de um valor previamente transformado por Box-Cox usando o lambda especificado ou o lambda associado à variável selecionada \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada sobre Box-Cox ou Lambda (λ) - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Para uma boa visão geral do Box-Cox do MASS, veja https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValores Lambda (λ) associados a transformações Box-Cox familiares \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformação quadrática ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: sem transformação; retorna os dados originais ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformação de raiz quadrada ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformação de raiz cúbica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformação de raiz quarta\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformação logarítmica natural ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformação de raiz quadrada recíproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformação recíproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformação quadrática recíproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "جدول متقاطع",
+  "navigation": "جدول متقاطع (قديم)",
+  "row": "متغير الصف",
+  "column": "متغير العمود",
+  "layer": "متغير(ات) الطبقة",
+  "weight": "الوزن (واحد)",
+  "label1": "الإحصائيات",
+  "chisq": "اختبار كاي",
+  "mcnemar": "ماكنمار",
+  "fisher": "فيشر",
+  "label2": "المتبقيات",
+  "unstandardized": "غير موحد",
+  "standardized": "موحد",
+  "adjusted": "معدل",
+  "label3": "النسب المئوية",
+  "rowpercent": "الصف",
+  "colpercent": "العمود",
+  "label4": "العدادات",
+  "expected": "المتوقع",
+  "label5": "تنسيق إخراج الجدول الطويل",
+  "longTbl": "جدول طويل",
+  "help": {
+    "title": "جدول متقاطع",
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>الوصف</b></br>\nينشئ جدول متقاطع مع متغيرات الصف والعمود والطبقة ويعرض اختياريًا ما يلي<br/>\nالعدادات المتوقعة<br/>\nنسب الصف والعمود<br/>\nالمتبقيات غير الموحدة، الموحدة والمعدلة<br/>\nاختبار كاي مع نسبة الأرجحية، إحصائيات ماكنمار وفيشر<br/>\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>المتغيرات</b><br/>\n<ul>\n<li>\nx: متغير الصف\n</li>\n<li>\ny: متغير العمود\n</li>\n<li>\nlayers: واحد أو أكثر من المتغيرات للطبقات\n</li>\n<li>\nweights: متغير عددي يحتوي على أوزان التكرار\n</li>\n<li>\ndatasetname: اسم مجموعة البيانات التي يتم اختيار منها x,y و layers (المتغيرات)\n</li>\n<li>\nchisq:  إذا كانت TRUE يتم إنشاء جدول كاي-تربيع\n</li>\n<li>\nprop.r: يتم إنتاج نسب الصف إذا كانت هذه TRUE\n</li>\n<li>\nprop.c: يتم إنشاء نسب العمود إذا كانت هذه TRUE\n</li>\n<li>\nresid: إذا كانت TRUE، يتم إنشاء المتبقيات غير الموحدة\n</li>\n<li>\nsresid: إذا كانت TRUE، يتم إنشاء المتبقيات الموحدة\n</li>\n<li>\nexpected: يتم إنشاء العدادات المتوقعة إذا كانت هذه TRUE\n</li>\n<li>\nasresid:  إذا كانت TRUE، يتم إنشاء المتبقيات المعدلة\n</li>\n</ul>\n<b>القيمة</b></br>\nقائمة بالنتائج\n<br/>\n<b>مثال</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>الحزمة</b></br>\ngmodels</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي help(CrossTable, package=gmodels) عن طريق إنشاء كتلة كود R بالنقر على + في نافذة الإخراج  \n    "
+  }
+}

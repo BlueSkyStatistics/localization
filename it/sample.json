@@ -1,0 +1,21 @@
+{
+  "title": "Dati di esempio",
+  "navigation": "Esempio",
+  "label1": "Opzioni del dataset",
+  "radio2": "Salva i risultati in un nuovo dataset",
+  "dsname": "Inserisci un nome per il dataset",
+  "radio1": "Sovrascrivi il dataset",
+  "label2": "Opzioni di campionamento",
+  "rd1": "Specifica la percentuale del dataset da campionare",
+  "percentage": "Inserisci la percentuale",
+  "rd2": "Specifica il numero di righe da selezionare",
+  "size": "Inserisci il numero di righe",
+  "textn": "Facoltativamente inserisci un nome di variabile o formula per i pesi",
+  "seed": "Facoltativamente imposta un seme per la riproducibilità dei dati",
+  "chk2": "Campiona con ripetizione",
+  "help": {
+    "title": "Campiona Dataset",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>Descrizione</b></br>\nPrende un campione casuale delle righe dal dataset esistente. Campiona una % di righe o un numero specificato di righe con o senza ripetizione. Salva il risultato in un nuovo dataset o sovrascrive il dataset esistente.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \n#Campiona un numero specificato di righe</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#Campiona una frazione delle righe</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ntbl: tabella di dati. Vedi ‘Dettagli.’\n</li>\n<li>\nsize: Per sample_n(), il numero di righe da selezionare. Per sample_frac(), la frazione di righe da selezionare. \n</li>\n<li>\nreplace: Il campionamento deve essere con ripetizione?\n</li>\n<li>\nweights: Pesi di campionamento. Questo deve valutarsi a un vettore di numeri non negativi della stessa lunghezza dell'input. I pesi sono automaticamente standardizzati per sommare a 1.\n</li>\n</ul>\n<b>Pacchetto</b></br>\ndplyr\n<b>Aiuto</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

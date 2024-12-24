@@ -6,7 +6,7 @@
   "variableSelcted": "Variable (datos observados) para graficar",
   "groupingVariable": "Variable de Agrupación",
   "variableControlLimits": "Filas que se descartarán si hay alguna antes de agrupar para límites de control de variable (es decir, tamaños de muestra de variable) e.g. especificar como 1:25 o 1,4,5,7:12",
-  "displayGroupsChk": "Mostrar las agrupaciones en la cuadrícula de la interfaz de usuario del conjunto de datos",
+  "displayGroupsChk": "Mostrar las agrupaciones en la interfaz de usuario del conjunto de datos",
   "selectDatasetRad": "Opción 2: Seleccionar las variables del conjunto de datos si ya están agrupadas",
   "variablelistSelcted": "Seleccionar una o más variables agrupadas (datos observados) para graficar",
   "showMRChartChk": "Mostrar el gráfico MR de las medias de subgrupos",
@@ -27,14 +27,14 @@
   "rowsTobeUsedPhase8": "Filas agrupadas de la Fase 8 que se utilizarán para graficar (e.g. especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase9": "Filas agrupadas de la Fase 9 que se utilizarán para graficar (e.g. especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase10": "Filas agrupadas de la Fase 10 que se utilizarán para graficar (e.g. especificar como 1:25 o 1,4,5,7:12)",
-  "phaseNames": "Especificar nombres de fases (separados por comas) para un gráfico de múltiples fases - los nombres de fases predeterminados son Fase 1, Fase 2, ...",
+  "phaseNames": "Especificar nombres de fase (separados por comas) para un gráfico de múltiples fases - los nombres de fase predeterminados son Fase 1, Fase 2, ...",
   "nsigmas": "Sigma - número de sigmas a utilizar para calcular límites de control. Se ignora cuando se proporciona el argumento confidence.level",
   "confidence_level": "Nivel de Confianza - valor entre 0 y 1 que especifica el nivel de confianza de los límites de probabilidad calculados",
   "sdWarnLimits": "Agregar líneas de límite adicionales (separadas por comas) en el gráfico en las desviaciones estándar específicas (e.g. 1.5, 2)",
   "digits": "Dígitos - número de dígitos a mostrar",
   "SStddev": "Método de desviación estándar a utilizar para el gráfico 'Dentro' S subyacente",
-  "lower": "LSL - valor numérico del límite de especificación inferior para trazar una línea LSL",
-  "upper": "USL - valor numérico del límite de especificación superior para trazar una línea USL",
+  "lower": "LSL - valor numérico del límite de especificación inferior para graficar una línea LSL",
+  "upper": "USL - valor numérico del límite de especificación superior para graficar una línea USL",
   "performTestLabel": "Realizar pruebas seleccionadas para causas especiales",
   "test1Chk": "Realizar prueba 1",
   "test2Chk": "Realizar prueba 2",
@@ -54,7 +54,7 @@
   "test8": "K puntos en fila más de 1σ de la línea central de cualquier lado (predeterminado 8)",
   "help": {
     "title": "Gráficos de Shewhart (Gráficos I-MR Entre/Dentro)",
-    "r_help": "ayuda(qcc, paquete = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para realizar control de calidad estadístico y graficar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - usa R ayuda(qcc, paquete = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puedes cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElige la opción 1, diámetro a variable (observado..), muestra a Variable de Agrupación, haz clic en ejecutar\n\t\t\t\t<br/>\n\t\t\t\tAdemás, escribe 1:20 en Filas agrupadas a utilizar, haz clic en ejecutar \n\t\t\t\t<br/>\n\t\t\t\tPara graficar un gráfico con múltiples fases\n\t\t\t\t<br/>\n\t\t\t\tEscribe 25:30 en Filas agrupadas de la Fase 2\n\t\t\t\t<br/>\n\t\t\t\tEscribe 31:38 en Filas agrupadas de la Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSigue el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "r_help": "help(qcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para realizar control de calidad estadístico y graficar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - usa R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puedes cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElige la opción 1, diámetro a variable (observada..), muestra a Variable de Agrupación, haz clic en ejecutar\n\t\t\t\t<br/>\n\t\t\t\tAdemás, escribe 1:20 en Filas agrupadas a utilizar, haz clic en ejecutar \n\t\t\t\t<br/>\n\t\t\t\tPara graficar un gráfico con múltiples fases\n\t\t\t\t<br/>\n\t\t\t\tEscribe 25:30 en Filas agrupadas de la Fase 2\n\t\t\t\t<br/>\n\t\t\t\tEscribe 31:38 en Filas agrupadas de la Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSigue el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

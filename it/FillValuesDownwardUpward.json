@@ -1,0 +1,14 @@
+{
+  "title": "Compila i valori verso il basso o verso l'alto",
+  "navigation": "Compila i valori verso il basso o verso l'alto",
+  "fillinvars": "Variabili da compilare",
+  "groupbyvars": "Variabili da raggruppare",
+  "directionlabel": "Direzione",
+  "downward": "Verso il basso",
+  "upward": "Verso l'alto",
+  "help": {
+    "title": "Compila i valori verso il basso o verso l'alto",
+    "r_help": "help(fill, package ='tidyr')",
+    "body": "\nQuesta finestra di dialogo compila i valori mancanti nelle colonne del dataset utilizzando l'entrata precedente in ciascuna colonna. Questo può essere utile nei casi in cui i valori non sono ripetuti, ma registrati ogni volta che cambiano. Tipicamente, ciò significa che il dataset è ordinato in un modo significativo. Le variabili in cui i valori vengono compilati verranno sovrascritte.\n<br/><br/>\n<b>Variabili da compilare:</b> Specifica le variabili per le quali i valori mancanti verranno compilati\n<br/><br/>\n<b>Variabili da raggruppare:</b> Specifica le variabili che raggruppano le righe insieme. I valori mancanti verranno compilati all'interno dei gruppi definiti da queste variabili. Ad esempio, raggruppare per un identificatore di soggetto compilerebbe i valori all'interno dei soggetti.\n<br/><br/>\n<b>Direzione:</b> Specifica la direzione per la quale i valori verranno compilati.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> tidyverse\n\t\t\t"
+  }
+}

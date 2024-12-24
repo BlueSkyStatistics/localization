@@ -1,0 +1,23 @@
+{
+  "title": "Specifica i livelli da mantenere o sostituire con altri",
+  "navigation": "Raggruppa in Altro (Manualmente)",
+  "target": "Variabili fattoriali da riordinare",
+  "label1": "Inserisci i livelli fattoriali da mantenere o sostituire con altri. Quando si seleziona di mantenere i livelli, i livelli rimanenti saranno sostituiti da \"Altro\". Quando si seleziona di sostituire, i livelli specificati saranno sostituiti da \"Altro\"",
+  "other": "Nome del livello utilizzato per i valori \"Altro\"",
+  "label3": "Metodo da utilizzare",
+  "keep": "Mantieni i livelli",
+  "drop": "Elimina i livelli",
+  "keepOption": "Inserisci i livelli da mantenere separati da , i livelli rimanenti saranno sostituiti da \"Altro\" ad esempio livello1,livel2,livel3",
+  "dropOption": "Inserisci i livelli da sostituire con \"Altro\" ad esempio livello1,livel2,livel3",
+  "label2": "Salva i risultati in nuova variabile(e) o sovrascrivi la variabile(e) esistente(i)",
+  "rd3": "Specifica un suffisso (verrà creata una nuova variabile con il suffisso)",
+  "txt3": "Inserisci un suffisso",
+  "rd2": "Specifica un prefisso (verrà creata una nuova variabile con il prefisso)",
+  "txt4": "Inserisci un prefisso",
+  "rd1": "Sovrascrivi le variabili esistenti",
+  "help": {
+    "title": "Livelli da mantenere o sostituire",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>NOTA: NON RACCHIUDERE I LIVELLI TRA VIRGOLETTE DOPPIE O SINGOLE, NON POSSONO ESSERCI SPAZI NEI NOMI DEI LIVELLI. INSERISCI I LIVELLI SEPARATI DA VIRGOLETTE NEL FORMATO LIVELLO1,LIVELLO2, LIVELLO3</b><br/>\n<b>Descrizione</b></br>\nInserisci i livelli fattoriali da mantenere o eliminare. Quando si seleziona di mantenere, i livelli rimanenti saranno sostituiti da \"Altro\". Quando si seleziona di eliminare, i livelli eliminati saranno sostituiti da \"Altro\"\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Altro\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nf : Un fattore (o vettore di caratteri).\n</li>\n<li>\nkeep, drop: keep conserverà i livelli elencati, sostituendo tutti gli altri con other_level. drop sostituirà i livelli elencati con other_level, mantenendo tutti gli altri come sono.\n</li>\n<li>\nother_level: Valore del livello utilizzato per i valori \"altro\". Sempre posizionato alla fine dei livelli.\n</li>\n</ul>\n<b>Esempi</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>Pacchetto</b></br>\nforcats</br>\n<b>Aiuto</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

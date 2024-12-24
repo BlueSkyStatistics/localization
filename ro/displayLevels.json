@@ -1,10 +1,10 @@
 {
-  "title": "Niveluri de afișare",
+  "title": "Niveluri de Afișare",
   "navigation": "Afișare",
-  "target": "Variabile factor pentru a afișa nivelurile pentru",
+  "target": "Variabilele factor pentru a afișa niveluri pentru",
   "help": {
-    "title": "Niveluri de afișare",
-    "r_help": "ajutor(hartă,pachet=purrr)",
-    "body": "\n<b>Descriere</b></br>\nAplică funcția levels din baza pe variabilele selectate din setul de date. Utilizatorii folosesc funcția select din dplyr pentru a trece variabilele la funcția map care aplică funcția levels fiecărei variabile\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nSet_de_date %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvar1,var2: Variabile în setul de date pentru a afișa nivelurile\n</li>\n<li>\nSet_de_date: Setul de date care conține variabilele var1, var2\n</li>\n</ul>\n<b>Valoare</b><br/>\nNivelurile variabilelor selectate sunt afișate<br/>\n<b>Pachet</b></br>\npurrr, dplyr</br>\n<b>Ajutor</b></br>\najutor(hartă,pachet=purrr)\n"
+    "title": "Niveluri de Afișare",
+    "r_help": "help(map,package=purrr)",
+    "body": "\n<b>Descriere</b></br>\nAplică funcția levels în baza variabilelor selectate din setul de date. Utilizatorii folosesc funcția select din dplyr pentru a trimite variabilele către funcția map care aplică funcția levels fiecărei variabile\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nSet_de_date %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvar1,var2: Variabile din setul de date pentru a afișa niveluri pentru\n</li>\n<li>\nSet_de_date: Setul de date care conține variabilele var1, var2\n</li>\n</ul>\n<b>Valoare</b><br/>\nNivelurile variabilelor selectate sunt afișate<br/>\n<b>Pachet</b></br>\npurrr, dplyr</br>\n<b>Ajutor</b></br>\nhelp(map,package=purrr)\n"
   }
 }

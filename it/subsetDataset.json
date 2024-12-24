@@ -1,0 +1,20 @@
+{
+  "title": "Sottoinsieme Dataset",
+  "navigation": "Sottoinsieme",
+  "label0": "Puoi scegliere di salvare i risultati in un nuovo dataset o sovrascrivere il dataset esistente",
+  "label1": "Opzioni",
+  "New": "Salva risultati in un nuovo dataset",
+  "newdatasetname": "Inserisci un nome per il dataset",
+  "Existing": "Sovrascrivi il dataset esistente",
+  "Output": "Visualizza i risultati nella finestra di output",
+  "distinct": "Seleziona casi distinti",
+  "chkbox2": "Rimuovi livelli di fattore non utilizzati",
+  "subsetvars": "Seleziona variabili da includere nel dataset sottoinsieme",
+  "label12": "\n\nI criteri di sottoinsieme vengono applicati a ciascuna riga, vedere esempi di seguito. \n1: Seleziona righe in cui var 1 non è vuota e var2 è vuota specifica:\n!is.na(var1) & is.na(var2) \n2: Seleziona righe in cui var1 > 30 e var 2 è Maschio specifica:\nvar1>30 & var2=='Maschio' \n3: Criteri complessi e/o specifica:\n(var1 !=10 & var2>20) | var3==40 \n4: Corrispondenza di pattern (xxx) o una corrispondenza esatta (abc) specifica:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Corrispondenza di una sottostringa per posizione specifica: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Inserisci i criteri di sottoinsieme.",
+  "help": {
+    "title": "Sottoinsieme Dataset",
+    "r_help": "help(select, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\nSottoinsieme dataset/dataframe. Restituisce un sottoinsieme del dataframe/dataset. Puoi specificare le colonne/variabili che desideri nel dataset più piccolo. Puoi anche specificare i criteri di selezione da applicare a ciascuna riga del dataframe.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nsottoinsieme(x, sottoinsieme, seleziona)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: oggetto da sottogruppare.\n</li>\n<li>\nsottoinsieme: espressione logica che indica gli elementi o le righe da mantenere: i valori mancanti sono considerati come falsi.\n</li>\n<li>\nseleziona: espressione, che indica le colonne da selezionare da un dataframe.\n</li>\n</ul>\n<b>Valore</b><br/>\nRestituisce un dataset sottogruppato<br/>\n<b>Pacchetto</b></br>\ndplyr<br/>  \n<b>Aiuto</b></br>\nhelp(select, package=dplyr)\n"
+  }
+}

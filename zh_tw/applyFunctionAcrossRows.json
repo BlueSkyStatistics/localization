@@ -1,13 +1,13 @@
 {
-  "title": "對所選變數的所有行應用函數。",
-  "navigation": "對行應用函數",
-  "label1": "通過對所選變數的所有行值應用函數來創建新變數或覆蓋現有變數。",
+  "title": "將函數應用於所選變數的所有行。",
+  "navigation": "將函數應用於行",
+  "label1": "通過將函數應用於所選變數的所有行值來創建新變數或覆蓋現有變數。",
   "newvar": "輸入新變數/覆蓋現有變數",
   "target": "選擇變數",
   "selectctrl": "選擇要應用的操作",
   "help": {
     "title": "應用函數",
     "r_help": "help(apply,package='base')",
-    "body": "\n<b>描述</b></br>\n對數據集中所選變數（列）的所有行應用函數。我們使用dplyr包中的select函數和管道（%>%）運算符來選擇我們將應用函數的變數的行。（這些變數被傳遞到apply函數中）\n<br/>\n<b>用法</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nX: 包含矩陣的數組。所選變數通過dplyr傳遞\n</li>\n<li>\nMARGIN: 一個向量，給出將應用函數的下標。例如，對於矩陣，1表示行，2表示列，c(1, 2)表示行和列。當\nX具有命名維度時，它可以是選擇維度名稱的字符向量。包含變數var的數據集\n</li>\n<li>\nFUN: 要應用的函數\n</li>\n</ul>\n<b>值</b><br/>\n計算值直接存儲在數據集中\n<b>包</b></br>\ndplyr</br>\n<b>幫助</b></br>\nhelp(apply)\n"
+    "body": "\n<b>描述</b></br>\n將函數應用於數據集中所選變數（列）的所有行。我們使用dplyr包中的select函數和管道（ %>% ）運算符來選擇我們將應用函數的行的變數。（這些變數被管道傳入apply函數）\n<br/>\n<b>用法</b>\n<br/>\n<code> \ndataset_name$new_variable <-dataset_name  %>% select(var1,var2) %>% apply(1, function_name, na.rm = TRUE)\napply(X, MARGIN, FUN, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nX: 包含矩陣的數組。所選變數通過dplyr進行管道傳入\n</li>\n<li>\nMARGIN: 一個向量，給出將應用函數的下標。例如，對於矩陣，1表示行，2表示列，c(1, 2)表示行和列。當X具有命名的維度名稱時，它可以是選擇維度名稱的字符向量。包含變數var的數據集\n</li>\n<li>\nFUN: 要應用的函數\n</li>\n</ul>\n<b>值</b><br/>\n計算值直接存儲在數據集中\n<b>包</b></br>\ndplyr</br>\n<b>幫助</b></br>\nhelp(apply)\n"
   }
 }

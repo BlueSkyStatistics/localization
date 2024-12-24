@@ -1,0 +1,30 @@
+{
+  "title": "Çizgi Grafiği",
+  "navigation": "Noktalar",
+  "label1": "İstediğiniz çizgi grafiği türüne karşılık gelen aşağıdaki sekmeye tıklayın. Varsayılan, sıraya göre bağlıdır.",
+  "x": "X ekseni",
+  "y": "Y ekseni, bir veya daha fazla sayısal değişken belirtin",
+  "color": "Grup/Renk, bir faktör değişkeni belirtin",
+  "line": "Sıraya Göre",
+  "linetype": "Faktör değişkeninin her seviyesi için ayrı bir çizgi tipi kullanılacaktır",
+  "stair": "Merdiven Adımları",
+  "path": "Olay sırasına göre",
+  "lineChartType": "Aşağıdaki Çizgi Grafiği türüne tıklayın",
+  "alpha": "Opaklık (0-1)",
+  "flipBox": "Eksenleri Çevir",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "sizePoint": "Noktaların boyutu",
+  "sizeLine": "Çizginin genişliği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Çizgi Grafiği",
+    "r_help": "help(geom_line, package=ggplot2)",
+    "body": "\n            <b>Açıklama</b></br>\n            Renk desteklemeyen yayınlar için belirtilen faktör değişkeninin her seviyesi için farklı bir çizgi tipi kullanma seçeneği sağlanmıştır. \n            Bir çizgi grafiği (sıraya göre bağlı) veya merdiven adım grafiği oluşturur veya çizgi grafiğini veri kümesindeki noktaların oluşumuna göre sıralar. İstediğiniz çizgi grafiği türüne karşılık gelen sekmeye tıklayın.</br>\n            Sıraya göre bağlı çizgi grafiği: Bir çizgi grafiği, x ve y koordinatları tarafından tanımlanan noktalar üzerinden bir çizgi çizer ve bunları x eksenindeki değişkenlerin sırasına göre bağlar. Bir grup/renk bir faktör değişkenine ayarlandığında, noktalar renge göre gruplandırılır ve her grup için ayrı bir çizgi oluşturulur. İsteğe bağlı olarak bir faktör değişkeni belirterek facetler oluşturabilirsiniz. Ayrıca temaları isteğe bağlı olarak belirtebilir ve x ve y eksenleri için başlık ve etiketler belirtebilirsiniz.</br>\n            Merdiven adım grafiği: Bir çizgi grafiği, x ve y koordinatları tarafından tanımlanan noktalar üzerinden bir çizgi çizer ve bir merdiven adım grafiği oluşturur, değişikliklerin tam olarak ne zaman gerçekleştiğini vurgular. Bir renk bir faktör değişkenine ayarlandığında, noktalar renge göre gruplandırılır ve her renk grubu için ayrı bir çizgi oluşturulur. İsteğe bağlı olarak bir faktör değişkeni belirterek facetler oluşturabilirsiniz. Ayrıca temaları isteğe bağlı olarak belirtebilir ve x ve y eksenleri için başlık ve etiketler belirtebilirsiniz.</br>\n            Oluşuma göre sıralı: Bir çizgi grafiği, x ve y koordinatları tarafından tanımlanan noktalar üzerinden bir çizgi çizer ve bunları veri kümesindeki değişkenlerin oluşum sırasına göre bağlar. Bir renk bir faktör değişkenine ayarlandığında, noktalar renge göre gruplandırılır ve her renk grubu için ayrı bir çizgi oluşturulur. İsteğe bağlı olarak bir faktör değişkeni belirterek facetler oluşturabilirsiniz. Ayrıca temaları isteğe bağlı olarak belirtebilir ve x ve y eksenleri için başlık ve etiketler belirtebilirsiniz.</br>\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            #Çizgi grafiği<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_line( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\", title= \"... için Çizgi grafiği\")<br/>\n            #Merdiven adım grafiği<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_step( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\",title= \"... için Çizgi grafiği\")<br/>\n            #Oluşuma göre sıralı<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_path( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\",title= \"... için Çizgi grafiği\")\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri kümesi​\n            </li>\n            <li>\n            aes(): Değişkenlerin verilerde görsel özelliklere (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            x: Sayısal veya faktör değişkeni\n            </li>\n            <li>\n            y: y ekseninde noktaların çizildiği sayısal/ölçek değişkeni​\n            </li>\n            <li>\n            color: Noktaları gruplamak için isteğe bağlı bir faktör değişkeni (renge göre)​\n            </li>\n            <li>\n            labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            geom_line(): x değerine göre sıralı gözlemleri bağlar, x'e bakın:​\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirir (Bu isteğe bağlıdır)​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            #Çizgi grafiği\n            help(geom_line, package='ggplot2')\n            #Çizgi grafiği merdiven adımı\n            help(geom_step, package=ggplot2)\n            #Değişken sırası\n            help(geom_path, package='ggplot2')\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.​            \n    "
+  }
+}

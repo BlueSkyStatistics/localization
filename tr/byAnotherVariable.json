@@ -1,0 +1,22 @@
+{
+  "title": "Başka Bir Değere Göre Faktör Seviyelerini Yeniden Sıralama",
+  "navigation": "Başka Bir Değere Göre Yeniden Sırala",
+  "target": "Yeniden sıralamak için faktör değişkenini seçin",
+  "variableToOrderBy": "Sıralanacak değişken",
+  "label1": "Faktör seviyelerini başka bir değişkenin aritmetik fonksiyonuna göre yeniden sıralayın, yani ortalama, medyan, toplam. Yeniden sıralamak için faktör değişkenini seçin, ortalama, medyan veya toplamı hesaplamak için bir sayısal değişken seçin. Bu, faktör değişkeninin her seviyesi için hesaplanır. Seviyeler, bu hesaplamaya göre sıralanır. Mevcut değişkenleri geçersiz kılabilir veya bir ön ek/son ek belirterek yeni değişkenler oluşturabilirsiniz. Yeni değişkenler, mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır.",
+  "function": "Sıralamak için bir fonksiyon seçin",
+  "label2": "Sonuçları yeni bir değişkene kaydedin veya mevcut değişkeni geçersiz kılın",
+  "rd3": "Bir son ek belirtin (Bir son ek ile yeni bir değişken oluşturulacaktır)",
+  "txt3": "Bir son ek girin",
+  "rd2": "Bir ön ek belirtin (Bir ön ek ile yeni bir değişken oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkeni geçersiz kıl",
+  "label3": "Bir sıralama belirtin",
+  "Descending": "Azalan",
+  "Ascending": "Artan",
+  "help": {
+    "title": "Başka Birine Göre Yeniden Sırala",
+    "r_help": "help(fct_reorder, package =forcats)",
+    "body": "\n<b>Açıklama</b></br>\nFaktör seviyelerini başka bir değişken boyunca sıralayarak yeniden sıralayın. Faktör seviyeleri, başka bir değişkenin aritmetik fonksiyonuna göre yeniden sıralanır, yani ortalama, medyan, toplam. Yeniden sıralamak için faktör değişkenini seçin, ortalama, medyan veya toplamı hesaplamak için bir sayısal değişken seçin. Bu, faktör değişkeninin her seviyesi için hesaplanır. Seviyeler, bu hesaplamaya göre sıralanır. Sonuçlar mevcut değişken(ler) içine kaydedilebilir veya bir ön ek/son ek belirterek yeni değişkenler oluşturabilirsiniz. Yeni değişkenler, mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_reorder(.f, .x, .fun = median, ..., .desc = FALSE)\nDataset1$col1 <-forcats::fct_reorder( .f=Dataset1$col1,.x=Dataset1$col2,.fun=median,.desc=TRUE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\n.f: Bir faktör (veya karakter vektörü).\n</li>\n<li>\n.x, .y: f'nin seviyeleri, .fun(.x) (fct_reorder() için) ve fun(.x, .y) (fct_reorder2() için) değerleri artan sırada olacak şekilde yeniden sıralanır.\n</li>\n<li>\n.fun: n özet fonksiyonu. fct_reorder için bir vektör almalı ve fct_reorder2 için iki vektör almalı ve tek bir değer döndürmelidir.\n</li>\n<li>\n...: .fun'a geçirilen diğer argümanlar. Yaygın bir argüman na.rm = TRUE'dir.\n</li>\n<li>\n.desc: Azalan sırada mı? Not: varsayılan, fct_reorder ve fct_reorder2 arasında farklıdır, faktörlerin efsanede varsayılan sıralamasını eşleştirmek için.\n</li>\n</ul>\n<b>Örnekler</b></br>\n<code> \nboxplot(Sepal.Width ~ Species, data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width), data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width, .desc = TRUE), data = iris)<br/>\nchks <- subset(ChickWeight, as.integer(Chick) < 10)<br/>\nchks <- transform(chks, Chick = fct_shuffle(Chick))<br/>\nif (require(\"ggplot2\")) {<br/>\nggplot(chks, aes(Time, weight, colour = Chick)) +<br/>\n    geom_point() +<br/>\n    geom_line()<br/>\n# Not: çizgiler efsanedeki sırayı eşleştirir<br/>\nggplot(chks, aes(Time, weight, colour = fct_reorder2(Chick, Time, weight))) +<br/>\n    geom_point() +<br/>\n    geom_line() +<br/>\n    labs(colour = \"Chick\")<br/>\n}<br/>\n</code>\n<b>Paket</b></br>\nforcats</br>\n<b>Yardım</b></br>\nAşağıdaki satırı BlueSky Statistics R sözdizimi editörüne yazın</br>\nhelp(fct_reorder, package =forcats)\n"
+  }
+}

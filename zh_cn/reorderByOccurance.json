@@ -1,9 +1,9 @@
 {
   "title": "按出现顺序重新排序因子水平",
   "navigation": "按出现顺序重新排序",
-  "target": "要重新排序水平的因子变量",
-  "label1": "选择要按变量中数据出现顺序重新排序的因子变量。您可以通过指定前缀/后缀来覆盖现有变量或创建新变量。新变量将以现有名称附加前缀/后缀。",
-  "label2": "将新水平保存到新变量中或覆盖现有变量",
+  "target": "因子变量以重新排序水平",
+  "label1": "选择要按变量中数据出现顺序重新排序的因子变量。您可以覆盖现有变量或通过指定前缀/后缀创建新变量。新变量将以附加到现有名称的前缀/后缀创建。",
+  "label2": "将新水平保存到新变量或覆盖现有变量",
   "rd3": "指定后缀（将创建一个带有后缀的新变量）",
   "txt3": "输入后缀",
   "rd2": "指定前缀（将创建一个带有前缀的新变量）",
@@ -12,10 +12,10 @@
   "label3": "指定顺序",
   "Descending": "按出现顺序",
   "Ascending": "按出现的反向顺序",
-  "ordered": "创建有序因子（序数）",
+  "ordered": "创建有序因子（有序）",
   "help": {
-    "title": "删除NAs",
+    "title": "移除NAs",
     "r_help": "help(fct_inorder, package=forcats)",
-    "body": "\n<b>描述</b></br>\n按首次出现（出现）重新排序因子水平。查看按计数重新排序以按计数/频率排序。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nf: 一个因子\n</li>\n<li>\nordered: 一个逻辑值，决定输出因子的“有序”状态。NA保留因子的现有状态。\n</li>\n</ul>\n<b>示例</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+    "body": "\n<b>描述</b></br>\n按首次出现（出现）重新排序因子水平。请参见按计数重新排序以按计数/频率排序。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nf: 一个因子\n</li>\n<li>\nordered: 一个逻辑值，决定输出因子的“有序”状态。NA保留因子的现有状态。\n</li>\n</ul>\n<b>示例</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
   }
 }

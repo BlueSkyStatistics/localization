@@ -2,14 +2,14 @@
   "title": "多项式回归模型",
   "navigation": "多项式",
   "modelname": "多项式回归模型名称",
-  "dependentVar": "因变量（例如，响应）",
-  "independentVar": "自变量（例如，剂量，浓度等）",
+  "dependentVar": "因变量（例如响应）",
+  "independentVar": "自变量（例如剂量、浓度等）",
   "polyDegree": "多项式方程的度数。必须小于唯一数据点的数量",
   "comparePolyModelsChk": "计算额外的多项式模型以进行比较",
-  "addlPolyDegrees": "指定一个或多个度数以创建多个多项式模型（例如，3，4，5）",
+  "addlPolyDegrees": "指定一个或多个度数以创建多个多项式模型（例如 3, 4, 5）",
   "help": {
     "title": "多项式回归模型",
-    "r_help": "帮助(poly, 包='stats')",
-    "body": "\n            <b>描述</b></br>\n            此对话框用于计算和拟合具有指定度数的正交多项式模型\n\t\t\t<br/>\n\t\t\t使用lm(response ~ poly(一个预测变量, degree), data = dataset)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t除了help(poly, package ='stats')，请查看以下R帮助页面\n            <br/>\n\t\t\thelp(anova, package ='stats') - 用于比较不同度数的多项式模型 \n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - 用于计算AIC以比较多项式模型\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - 用于计算BIC以比较多项式模型\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - 一个很好的参考，其中lm()和poly()一起使用\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\t您可以通过从加载数据集菜单加载数据集cars来尝试此对话框\t\t\t\n\t\t\t<br/>\n\t\t\t选择dist作为因变量，speed作为自变量\n\t\t\t<br/>\n"
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>描述</b></br>\n            此对话框用于计算和拟合具有指定度数的正交多项式模型\n\t\t\t<br/>\n\t\t\t使用 lm(response ~ poly(a predictor, degree), data = dataset)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t除了 help(poly, package ='stats')，请查看以下 R 帮助页面\n            <br/>\n\t\t\thelp(anova, package ='stats') - 用于比较不同度数的多项式模型\n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - 用于计算 AIC 以比较多项式模型\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - 用于计算 BIC 以比较多项式模型\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - lm() 和 poly() 一起使用的良好参考\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\t您可以通过从加载数据集菜单加载数据集 cars 来尝试此对话框\t\t\t\n\t\t\t选择 dist 作为因变量，speed 作为自变量\n\t\t\t<br/>\n"
   }
 }

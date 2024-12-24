@@ -1,0 +1,29 @@
+{
+  "title": "قدرة العملية (غير طبيعية)",
+  "navigation": "قدرة العملية (غير طبيعية)",
+  "printObjectSummaryChk": "طباعة ملخص كائن QCC لقدرة العملية",
+  "label1": "اختر دالة توزيع تناسب البيانات بشكل أفضل",
+  "variableSelcted": "اختر متغيرًا (بيانات مشاهدة) للتحليل",
+  "rowsTobeUsed": "إذا تم الاختيار، الصفوف التي سيتم استخدامها للتحليل لقدرة العملية (على سبيل المثال، حدد كـ 1:25 أو 1،4،5،7:12)",
+  "lower": "LSL - القيمة الرقمية للحد الأدنى لمواصفات (اكتب NA لتحديد حدود مواصفات أحادية الجانب)",
+  "upper": "USL - القيمة الرقمية للحد الأقصى لمواصفات (اكتب NA لتحديد حدود مواصفات أحادية الجانب)",
+  "target": "حدود المواصفات المستهدفة (اختياري)",
+  "selectDistFuncWeibullRad": "ويبل",
+  "selectDistFuncExpRad": "أسي",
+  "selectDistFuncGammaRad": "جاما",
+  "selectDistFuncLnormalRad": "لوغاريتمي طبيعي",
+  "selectDistFuncPoissonRad": "بواسون",
+  "selectDistFuncNBinomRad": "ثنائي سالب",
+  "selectDistFuncGeomRad": "هندسي",
+  "selectDistFuncBetaRad": "بيتا",
+  "selectDistFuncUnifRad": "موحد",
+  "selectDistFuncLogisRad": "لوجستي",
+  "selectDistFuncCauchyRad": "كوشي",
+  "selectDistFuncNormRad": "طبيعي",
+  "digits": "الأرقام - عدد الأرقام التي سيتم عرضها",
+  "help": {
+    "title": "قدرة العملية للتوزيع غير الطبيعي",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة qcc لحساب مؤشرات القدرة \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(process.capability, package = qcc)، help(qcc, package = qcc)، help(sd.xbar, package = qcc)، و help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك تحميل مجموعة البيانات المسماة pistonrings من حزمة qcc باستخدام قائمة تحميل مجموعة البيانات عن طريق اختيار حزمة qcc ثم اختيار مجموعة بيانات pistonrings\n\t\t\t\t<br/>\n\t\t\t\tاختر الخيار 1، القطر إلى متغير (المشاهد..)، العينة إلى متغير التجميع، \n\t\t\t\t<br/>\n\t\t\t\tاكتب 1:25 في الصفوف المجمعة التي سيتم استخدامها\n\t\t\t\t<br/>\n\t\t\t\tلتحليل قدرة العملية - اكتب 73.95 في LSL، 74.05 في USL، و 74.0 في حد الهدف\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tاتبع البرنامج التعليمي لـ qcc على https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t"
+  }
+}

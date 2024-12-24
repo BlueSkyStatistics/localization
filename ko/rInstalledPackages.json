@@ -1,0 +1,12 @@
+{
+  "title": "설치된 R 패키지 목록",
+  "navigation": "설치된 패키지",
+  "label1": "참고: ...\\BlueSky Statistics\\10\\R-3.6.3 라이브러리 경로에서 설치된 패키지는 항상 다른 라이브러리 경로의 패키지를 덮어씁니다.",
+  "allPackages": "모든 라이브러리 경로에서 설치된 패키지 표시",
+  "path": "라이브러리 경로를 선택하십시오. 선택한 라이브러리 경로에 설치된 패키지가 표시됩니다.",
+  "help": {
+    "title": "설치된 R 패키지 목록",
+    "r_help": "help(installed.packages, package='utils')",
+    "body": "\n<b>설명</b></br>\n지정된 라이브러리에 설치된 모든 패키지의 세부정보를 표시합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \ninstalled.packages(lib.loc = NULL, priority = NULL,\n    noCache = FALSE, fields = NULL,\n    subarch = .Platform$r_arch, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nlib.loc: 검색할 R 라이브러리 트리의 위치를 설명하는 문자 벡터 또는 모든 알려진 트리를 위한 NULL입니다 (see .libPaths).\n</li>\n<li>\npriority: 문자 벡터 또는 NULL (기본값). 비NULL인 경우 패키지를 선택하는 데 사용됩니다; \"high\"는 c(\"base\", \"recommended\")와 동일합니다. 할당된 우선 순위가 없는 모든 패키지를 선택하려면 priority = \"NA\"를 사용하십시오.\n</li>\n<li>\nnoCache: 캐시된 정보를 사용하지 않거나 캐시하지 않습니다.\n</li>\n<li>\nfields: 기본 필드 외에 각 패키지의 DESCRIPTION 파일에서 추출할 필드를 제공하는 문자 벡터 또는 NULL (기본값). 사용 불가능한 필드는 NA 값을 생성합니다.\n</li>\n<li>\nsubarch: 문자 문자열 또는 NULL. 비NULL 및 비어 있지 않은 경우 해당 하위 아키텍처에 대해 설치된 패키지를 선택하는 데 사용됩니다.\n</li>\n<li>\n...: 메서드 함수에 전달되는 인수입니다.\n</li>\n</ul>\n<b>세부정보</b></br>\ninstalled.packages는 lib.loc을 따라 발견된 각 패키지의 'DESCRIPTION' 파일을 스캔하고 패키지 이름, 라이브러리 경로 및 버전 번호의 행렬을 반환합니다.<br/>\n<b>값</b><br/>\n패키지당 하나의 행이 있는 행렬, 행 이름은 패키지 이름이고 열 이름은 (현재) \"Package\", \"LibPath\", \"Version\", \"Priority\", \"Depends\", \"Imports\", \"LinkingTo\", \"Suggests\", \"Enhances\", \"OS_type\", \"License\" 및 \"Built\" (패키지가 빌드된 R 버전)입니다. 추가 열은 fields 인수를 사용하여 지정할 수 있습니다..<br/>\n<b>예제</b><br/>\n<code> \nBSkyInstalledPackages <- installed.packages(lib.loc ='C:/Program Files/BlueSky Statistics/R-3.6.3/library')\nBSkyFormat(BSkyInstalledPackages, singleTableOutputHeader = \"C:/Program Files/BlueSky Statistics/R-3.6.3/library에 설치된 패키지 목록\")\n</code> <br/>\n<b>패키지</b></br>\nutils</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오: help(installed.packages, package='utils')\n                "
+  }
+}

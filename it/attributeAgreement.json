@@ -1,0 +1,15 @@
+{
+  "title": "Analisi dell'accordo degli attributi, Base",
+  "navigation": "Accordo degli attributi, Base",
+  "variablePartSelcted": "Seleziona la variabile per campione/parte",
+  "variableOpSelcted": "Seleziona la variabile per valutatore/operator",
+  "variableRespSelcted": "Seleziona la variabile per attributo/riposta",
+  "variableRefSelcted": "(Facoltativo) Seleziona la variabile per riferimento/riposta standard",
+  "alpha": "Intervallo di confidenza (alpha) tra 0 e 1",
+  "rowsTobeUsed": "Lascia vuoto se tutte le righe devono essere utilizzate. Altrimenti specifica le righe da utilizzare per analizzare (ad es. specifica come 1:25 o 1,4,5,7:12)",
+  "help": {
+    "title": "Analisi dell'accordo degli attributi",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione per eseguire l'analisi dell'accordo degli attributi\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare i file di dataset di esempio attributemsaAB.xlsx per \n\t\t\t\tdue operatori, A e B, ciascuno con 20 osservazioni ripetute due volte con valutazioni P e F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPuoi anche provare il file di dataset di esempio attributemsaABCordered.RData con tre operatori, A, B, C, ciascuno con 10 osservazioni ripetute due volte con valutazioni \"ordinate\" (ordinali) \n\t\t\t\tcome Disaccordo, Disaccordo parziale, Neutro, Disaccordo parziale, e Accordo. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tApri i file nella griglia dei dati con il menu di apertura file\n\t\t\t"
+  }
+}

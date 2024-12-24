@@ -1,0 +1,13 @@
+{
+  "title": "Bir R Paketinden Veri Seti Yükle",
+  "navigation": "Veri Seti Yükle",
+  "label1": "Eğer R Paketi mevcut değilse, yüklemek için Araçlar> Paket> CRAN'dan R Paketini Yükle'ye gidin.",
+  "label2": "Açılır listede bir veri seti görmüyorsanız, seçilen paket veri setini içermiyor demektir.",
+  "selectAPackage": "Bir veri seti yüklemek için bir R paketi seçin",
+  "selectADataset": "Grid'e yüklemek için bir veri seti seçin",
+  "help": {
+    "title": "Bir R Paketinden Veri Seti Yükle",
+    "r_help": "help(data, package='utils')",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen veri setini BlueSky İstatistik veri ızgarasına yükler. Belirtilen veri setlerini yükleyen veya mevcut veri setlerini listeleyen data fonksiyonunu kullanır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n#Veri setini belleğe yükler<br/>\ndata(..., package = NULL, overwrite = TRUE)<br/>\n#Veri setini BlueSky İstatistik veri ızgarasına yükler<br/>\nBSkyLoadRefresh(\"veri seti adı\")<br/>\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\n...: Yüklenmesi gereken veri setlerinin literal karakter dizeleri veya adları\n</li>\n<li>\npackage: Veri setlerini aramak için bakılacak paket(ler)i veren bir karakter vektörü veya NULL.\n</li>\n<li>\noverwrite: mantıksal: aynı isimdeki mevcut nesneler envir'de değiştirilmelidir mi?\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nBelirtilen veri setini veri ızgarasına yükler</br>\n<b>Değer</b><br/>\nBir veri çerçevesi.<br/>\n<b>Örnekler</b><br/>\n<code> \n## Saçma bir örnek...\ndata(oil)\nBSkyLoadRefresh(\"oil\")\n</code> <br/>\n<b>Paket</b></br>\nutils</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog overlay'inin sağ üst köşesindeki R simgesine tıklayın veya bir R kodu parçası oluşturarak help(data, package ='utils') komutunu çalıştırın, çıktı penceresinde + butonuna tıklayarak           \n"
+  }
+}

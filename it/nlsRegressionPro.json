@@ -1,0 +1,26 @@
+{
+  "title": "Modello di Minimi Quadrati Non Lineari (NLS)",
+  "navigation": "Minimi Quadrati Non Lineari",
+  "modelname": "Nome del modello NLS",
+  "DependentVar": "Variabile di risposta (dipendente)",
+  "IndependentVarsformula": "Costruisci o incolla qualsiasi equazione (formula) con variabile(i) indipendente(i) e parametri del modello, ad es. a * exp(b * x) dove a e b sono parametri da stimare e x è la variabile predittore. creerà un'equazione del modello come y ~ a * exp(b * x) dove y è la variabile di risposta",
+  "IndependentVar": "Una variabile indipendente (predittore) necessaria per il grafico a dispersione e il grafico adattato",
+  "weights": "Una variabile utilizzata come peso (Y) con un valore di potenza",
+  "PowerKweight": "Potenza: per solo Y, scegli (-1), per 1/Y, scegli 1, 1/(Y^2), scegli 2, .. 1/(Y^5), scegli 5,..",
+  "covMatrixChk": "Matrice di covarianza stimata per i parametri",
+  "resPlotChk": "Grafico adattato e residui",
+  "resNormalityTestChk": "Test di normalità dei residui del modello",
+  "modelConstraintLabel": "(Opzionale) Vari variabili di vincolo per le stime dei parametri",
+  "pmodels": "Valori iniziali per i parametri per guidare l'ottimizzazione/convergenza del modello, ad es. param1 = 1, param2 = 10, param3 = 0 per un modello a tre parametri",
+  "paramConstraintsLower": "Imposta il vincolo per il limite inferiore (devi scegliere port come algoritmo), ad es. 3, -Inf, -Inf per un modello a tre parametri",
+  "paramConstraintsUpper": "Imposta il vincolo per il limite superiore (devi scegliere port come algoritmo), ad es. 3, Inf, Inf, 2 per un modello a quattro parametri",
+  "algorithm": "Algoritmo da utilizzare. Il predefinito è un algoritmo di Gauss-Newton",
+  "maxIter": "Numero massimo di iterazioni consentite per la convergenza del modello. Il predefinito è 50",
+  "logScaleAxis": "L'asse X è tracciato in scala logaritmica per impostazione predefinita. Scegli ' ' per la scala originale",
+  "doseInLogScaleChk": "Controlla se la dose/concentrazione è già in valori logaritmici nel dataset",
+  "help": {
+    "title": "Modello di Minimi Quadrati Non Lineari (NLS)",
+    "r_help": "help(nls, package ='stats')",
+    "body": "\n            <b>Descrizione</b></br> \n\t\t\tEsegui regressione non lineare. Costruisci o digita qualsiasi equazione (formula) per costruire il modello di regressione non lineare.\n\t\t\tDetermina le stime dei parametri del modello non lineare (pesate) dei minimi quadrati.\n\t\t\tAnalizza l'adattamento del modello con grafici.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tControlla help(nls, package ='stats') per dettagli \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tPuoi provare questo dialogo\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\tEsempio 1\n\t\t\t</br>\n\t\t\tCarica il dataset DNase dal menu Carica Dataset (lascia tutti i pacchetti installati nel primo menu a discesa e scegli DNase dal secondo menu a discesa)\t\t\t\n\t\t\t<br/>\n\t\t\tScegli (o trascina) densità come variabile di risposta\n\t\t\t<br/>\n\t\t\tDigita Asym/(1 + exp((xmid - log(conc))/scal)) nel campo Indipendente (formula) dove Asym, xmid e scal\n\t\t\tsono tre parametri del modello (cioè coefficienti) da stimare \n\t\t\t<br/>\n\t\t\tControlla la matrice di covarianza stimata\n\t\t\t</br>\n\t\t\tControlla il grafico adattato e i residui \n\t\t\t</br>\n\t\t\tScegli (o trascina) conc nel campo Una variabile indipendente (predittore) necessaria per il grafico a dispersione e il grafico adattato\n\t\t\t</br>\n\t\t\tDigita Asym = 3, xmid = 0, scal = 1 nel campo Valori iniziali per i parametri per guidare il modello\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tEsempio 2\n\t\t\t</br>\n\t\t\tCarica il dataset DNase dal menu Carica Dataset (lascia tutti i pacchetti installati nel primo menu a discesa e scegli DNase dal secondo menu a discesa)\t\t\t\n\t\t\t<br/>\n\t\t\tScegli (o trascina) densità come variabile di risposta\n\t\t\t<br/>\n\t\t\tDigita Asym/(1 + exp((xmid - log(conc))/scal)) nel campo Indipendente (formula)\n\t\t\t<br/>\n\t\t\tControlla la matrice di covarianza stimata\n\t\t\t</br>\n\t\t\tControlla il grafico adattato e i residui \n\t\t\t</br>\n\t\t\tScegli (o trascina) conc nel campo Una variabile indipendente (predittore) necessaria per il grafico a dispersione e il grafico adattato\n\t\t\t</br>\n\t\t\tDigita Asym = 3, xmid = 0, scal = 1 nel campo Valori iniziali per i parametri per guidare il modello\n\t\t\t</br>\n\t\t\tDigita Asym = 0, xmid = -Inf, scal = -Inf nel campo vincolo per il limite inferiore (imposta il limite inferiore per Asym a 0 e lascia il limite inferiore di xmid e scal senza vincolo)\n\t\t\t</br>\n\t\t\tDigita Asym = Inf, xmid = 4, scal = Inf nel campo vincolo per il limite superiore (imposta il limite inferiore per xmid a 0 e lascia il limite superiore di Asym e scal senza vincolo)\n\t\t\t</br>\n\t\t\tscegli port dal menu a discesa dell'algoritmo da utilizzare invece del predefinito\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tEsegui il dialogo\n\t\t\t</br>\n\t\t\t</br>\n"
+  }
+}

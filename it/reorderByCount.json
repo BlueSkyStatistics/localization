@@ -1,0 +1,21 @@
+{
+  "title": "Riordina i livelli dei fattori per conteggio",
+  "navigation": "Riordina per conteggio",
+  "target": "Seleziona le variabili fattoriali da riordinare",
+  "label1": "Seleziona le variabili fattoriali da riordinare per conteggio. Puoi sovrascrivere le variabili esistenti o crearne di nuove specificando un prefisso/suffisso. Le nuove variabili verranno create con il prefisso/suffisso aggiunto ai nomi esistenti.",
+  "label2": "Salva i nuovi livelli in nuova/e variabile/i o sovrascrivi la/e variabile/i esistente/i",
+  "rd3": "Specifica un suffisso (verrà creata una nuova variabile con il suffisso)",
+  "txt3": "Inserisci un suffisso",
+  "rd2": "Specifica un prefisso (verrà creata una nuova variabile con il prefisso)",
+  "txt4": "Inserisci un prefisso",
+  "rd1": "Sovrascrivi le variabili esistenti",
+  "label3": "Specifica un ordine",
+  "Descending": "In ordine decrescente per conteggio",
+  "Ascending": "In ordine crescente per conteggio",
+  "ordered": "Crea un fattore ordinato (ordinal)",
+  "help": {
+    "title": "Riordina le variabili in ordine alfabetico",
+    "r_help": "help(sort)",
+    "body": "\n<b>Descrizione</b></br>\nRiordina le variabili nel dataset in ordine alfabetico. Utilizziamo la funzione sort per ordinare i nomi delle colonne/variabili nel dataset e la funzione select nel pacchetto dplyr per selezionare i nomi delle colonne nell'ordine alfabetico corretto \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \n##Riordinamento alfabetico (A-Z)\nNome_dataset <- Nome_dataset %>%   select(sort(names(.)))\n##Riordinamento alfabetico (Z-A)\nNome_dataset <- Nome_dataset %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>Argomenti</b><br/>\nNessuno<br/>\n<b>Pacchetto</b></br>\ndplyr</br>\n<b>Aiuto</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n"
+  }
+}

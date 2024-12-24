@@ -1,0 +1,25 @@
+{
+  "title": "Şerit Grafiği",
+  "navigation": "Şerit Grafiği",
+  "x": "X değişkeni, sayısal bir değişken belirtin",
+  "y": "Y değişkeni, bir veya daha fazla sayısal değişken belirtin",
+  "Fill": "Renk, bir faktör değişkeni belirtin",
+  "size": "Noktanın boyutunu orantılı hale getirin",
+  "shape": "Şekil",
+  "alpha": "Opaklık (0-1)",
+  "flipaxis": "Eksenleri çevir",
+  "jitter": "Jitter etkisini uygula",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Şerit Grafiği",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>Açıklama</b></br>\n            Şerit grafiği, mevcut en temel grafik türüdür. Verileri bir çizgi boyunca sıralar ve her veri noktasını bir kutu olarak temsil eder. Noktanın şekli, faktör değişkeninin (x) seviyelerine bağlıdır. Noktalar isteğe bağlı olarak bir faktör değişkenine (y) göre gruplandırılabilir. İsteğe bağlı olarak bir faktör değişkeni belirterek facetler oluşturulabilir.</br>\n            Ayrıca isteğe bağlı olarak temalar belirtebilir ve x ve y eksenleri için başlık ve etiketler belirtebilirsiniz.</br>\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti​\n            </li>\n            <li>\n            aes(): Verilerdeki değişkenlerin görsel özelliklere (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            x: gruplama değişkeni. Noktanın şekli, faktör değişkeninin seviyelerine bağlıdır​\n            </li>\n            <li>\n            y: noktaların çizildiği değişken​\n            </li>\n            <li>\n            color: noktaları gruplamak için isteğe bağlı bir faktör değişkeni (renge göre)​\n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirin (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenleyin (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            geom_jitter(): Jitter geom, position = 'jitter' ile geom_point için uygun bir varsayılandır. Jitter miktarını ayarlamak için position_jitter'a bakın.\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirin (bu isteğe bağlıdır)​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.\n    "
+  }
+}

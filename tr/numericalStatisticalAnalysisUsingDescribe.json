@@ -1,0 +1,11 @@
+{
+  "title": "Sayısal İstatistikler, describe kullanarak",
+  "navigation": "Sayısal Özetler, describe (Eski)",
+  "tvarbox1": "Değişkenleri seçin",
+  "tvarbox2": "Gruplama değişkenlerini seçin",
+  "help": {
+    "title": "Sayısal İstatistikler, describe kullanarak",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>Açıklama</b></br>\nAşağıdaki sayısal istatistikleri çıktılar:</br>\ncount, mean, standart sapma, medyan, trimmed, mad, min, max, aralık, skew, kurtosis, standart hata\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n#BSkyFormat güzel bir şekilde biçimlendirilmiş çıktı gösterir<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: Bir veri çerçevesi veya matris\n</li>\n</ul>\n<b>Paket</b></br>\npsych</br>\n<b>Yardım</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

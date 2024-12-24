@@ -1,17 +1,17 @@
 {
-  "title": "Lista de Tabele Încroșate",
-  "navigation": "Lista de Tabele Încroșate",
+  "title": "Lista Crosstab",
+  "navigation": "Lista Crosstab",
   "destvarslabel": "Variabile pentru Tabel",
   "missinglabel": "Valori Lipsă",
-  "removelabel": "Eliminare",
-  "showexcludelabel": "Afișați și Excludeți din Procente",
-  "includelabel": "Afișați și Includeți în Procente",
-  "sparseoptlabel": "Includeți Combinări cu 0 Conte",
-  "toplistoptlabel": "Afișați Cele N Cele Mai Frecvente Valori",
+  "removelabel": "Elimină",
+  "showexcludelabel": "Arată și Exclude din Procente",
+  "includelabel": "Arată și Include în Procente",
+  "sparseoptlabel": "Include Combinatii cu 0 Conturi",
+  "toplistoptlabel": "Arată Cele Mai Frecvente N Valori",
   "topnumlabel": "N",
   "help": {
-    "title": "Lista de Tabele Încroșate",
+    "title": "Lista Crosstab",
     "r_help": "help(freqlist, package ='arsenal')",
-    "body": "\nAceasta creează tabele de frecvență într-un format de listă pentru combinații de una sau mai multe variabile. Fiecare combinație de valori din toate variabilele specificate va fi tabelată, \ncu frecvențele lor observate. Variabilele specificate pot fi orice clasă, inclusiv variabile numerice și continue. Deși aceasta poate fi utilizată pentru frecvențe rezumate și \nprocente, o utilizare principală este verificarea datelor pentru incoerențe. Trebuie să se acorde atenție câte variabile să fie clasificate încrucișat și câte posibilități pot rezulta, deoarece \nele pot dura mai mult pentru a fi produse. \n<br/><br/>\n<b>Variabile pentru Tabel:</b>  <br/>Variabilele care trebuie incluse în tabel, care pot fi orice clasă. Tabelul va fi sortat conform ordinii variabilelor din această listă.  \nAceasta înseamnă că, dacă variabilele A și B sunt ordinea specificată, atunci tabelul va fi sortat după nivelurile lui A, apoi nivelurile lui B în cadrul lui A.\n<br/><br/>\n<b>Valori Lipsă</b>\n<br/>\n<ul>\n\t<li><b>Eliminare:</b>  Combinațiile de valori ale variabilelor care au NA vor fi excluse din tabel.</li>\n\t<li><b>Afișați și Excludeți din Procente:</b>  Combinațiile de valori ale variabilelor care au NA vor fi incluse în tabel, dar nu vor fi incluse în calculele procentuale.</li>\n\t<li><b>Afișați și Includeți în Procente:</b>  Combinațiile de valori ale variabilelor care au NA vor fi incluse în tabel și în calculele procentuale.</li> \n</ul>\n<br/><br/>\n<b>Includeți Combinări cu 0 Conte:</b>  <br/>Dacă să includeți combinațiile de valori ale variabilelor care nu există în setul de date. De exemplu, dacă variabilele A și B au valori observate de 1, 2 și 3, dar combinația (A, B) (1, 3) nu este observată în date, această opțiune ar include un rând pentru combinația (1, 3) cu o frecvență de 0.\n<br/><br/>\n<b>Afișați Cele N Cele Mai Frecvente Valori:</b>  <br/>Dacă este bifat, aceasta ar crea un tabel separat cu cele N combinații de variabile cele mai frecvente.\n<ul>\n\t<li><b>N:</b> Câte combinații de variabile să fie afișate pentru tabelul N.</li>\n</ul>\n<b>Pachete R Necesare:</b> arsenal\n\t\t\t"
+    "body": "\nAceasta creează tabele de frecvență într-un format de listă pentru combinații de una sau mai multe variabile. Fiecare combinație de valori pentru toate variabilele specificate va fi tabelată, \ncu frecvențele lor observate. Variabilele specificate pot fi orice clasă, inclusiv variabile numerice, continue. Deși aceasta poate fi folosită pentru frecvențe rezumative și \nprocente, o utilizare principală este verificarea datelor pentru inconsistențe. Trebuie să se acorde atenție numărului de variabile de clasificat și câte posibilități pot rezulta, deoarece \nunele tabele pot dura mai mult pentru a fi produse. \n<br/><br/>\n<b>Variabile pentru Tabel:</b>  <br/>Variabilele care trebuie incluse în tabel, care pot fi orice clasă. Tabelul va fi sortat conform ordinii variabilelor din această listă.  \nAceasta înseamnă că, dacă variabilele A și B sunt ordinea specificată, atunci tabelul va fi sortat după nivelurile lui A, apoi nivelurile lui B în cadrul lui A.\n<br/><br/>\n<b>Valori Lipsă</b>\n<br/>\n<ul>\n\t<li><b>Elimină:</b>  Combinațiile de valori ale variabilelor care au NA-uri vor fi excluse din tabel.</li>\n\t<li><b>Arată și Exclude din Procente:</b>  Combinațiile de valori ale variabilelor care au NA-uri vor fi incluse în tabel, dar nu vor fi incluse în calculele procentuale.</li>\n\t<li><b>Arată și Include în Procente:</b>  Combinațiile de valori ale variabilelor care au NA-uri vor fi incluse în tabel și vor fi incluse în calculele procentuale.</li> \n</ul>\n<br/><br/>\n<b>Include Combinatii cu 0 Conturi:</b>  <br/>Dacă să includă combinațiile de valori ale variabilelor care nu există în setul de date. De exemplu, dacă variabilele A și B au valori observate de 1, 2 și 3, dar combinația (A, B) (1, 3) nu este observată în date, această opțiune ar include un rând pentru combinația (1, 3) cu o frecvență de 0.\n<br/><br/>\n<b>Arată Cele Mai Frecvente N Valori:</b>  <br/>Dacă este bifată, aceasta ar crea un tabel separat cu cele mai frecvente N combinații de variabile.\n<ul>\n\t<li><b>N:</b> Câte combinații de variabile să fie arătate pentru tabelul de top N.</li>\n</ul>\n<b>Pachete R Necesare:</b> arsenal\n\t\t\t"
   }
 }

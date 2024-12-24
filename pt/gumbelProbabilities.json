@@ -1,0 +1,15 @@
+{
+  "title": "Probabilidades de Gumbel",
+  "navigation": "Probabilidades de Gumbel",
+  "varvals": "Insira o(s) valor(es) da variável separados por vírgula. Exemplo: 3,0.5",
+  "location": "Localização",
+  "scale": "Escala",
+  "labelSig": "Nível de significância",
+  "lowtail": "Cauda inferior",
+  "uptail": "Cauda superior",
+  "help": {
+    "title": "Probabilidades de Gumbel",
+    "r_help": "ajuda(pgumbel, pacote=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Densidade, função de distribuição, função quantil e geração aleatória para a distribuição de Gumbel com parâmetros de localização e escala especificados.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dgumbel(x, localização = 0, escala = 1)\n                <br/>\n                pgumbel(q, localização=0, escala=1, cauda.inferior=VERDADEIRO)\n                <br/>\n                qgumbel(p, localização=0, escala=1, cauda.inferior=VERDADEIRO)\n                <br/>\n                rgumbel(n, localização=0, escala=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis (valores da variável).</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>localização : parâmetro de localização (padrão 0); potencialmente um vetor.</li>\n                \n                \n                <li>escala : parâmetro de escala (padrão 1); potencialmente um vetor.</li>\n                \n                <li>cauda.inferior : lógico; se VERDADEIRO (o padrão) probabilidades e quantis correspondem a P(X ≤ x), se FALSO a P(X > x).</li>\n            </ul>            \n"
+  }
+}

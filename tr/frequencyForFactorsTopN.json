@@ -1,0 +1,13 @@
+{
+  "navigation": "Sadece Faktörler (Eski)",
+  "title": "Özetler, sadece faktörler",
+  "subsetvars": "Yanıt değişkenleri, 2 veya daha fazla",
+  "ChkboxShowOnlyTopFewFactors": "Sadece en üst N faktör seviyeleri için sayıları göster",
+  "txtNumTopFactorsToShow": "N için bir değer girin",
+  "label1": "Not: Onay kutusu işaretlenmediğinde, tüm seviyeler için sayılar gösterilecektir. Eğer birçok faktör seviyeniz varsa, bu önemli ölçüde zaman alabilir.",
+  "help": {
+    "title": "Sadece Faktörler",
+    "r_help": "",
+    "body": "\n<b>Açıklama</b></br>\nHer faktör değişkeninin her seviyesinin sayısını gösterir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: Seviye sayımlarını göstermek için faktör değişkenleri\n</li>\n<li>\ndata: Veri setinin adı\n</li>\n<li>\nshow.only.top.factors: Sadece üst seviyelerin veya tüm seviyelerin sayılarının gösterilip gösterilmeyeceğini belirleyen bir boolean.\n</li>\n<li>\nmax.number.top.factors: show.only.top.factors = TRUE ise, sayımların gösterileceği seviye sayısını belirtir\n</li>\n</ul>\n"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Statistiche di sintesi",
+  "navigation": "Statistiche di sintesi (Legacy)",
+  "tvarbox1": "Variabili selezionate",
+  "tvarbox2": "Raggruppa per",
+  "ChkboxShowOnlyTopFewFactors": "Mostra conteggi solo per i primi N livelli di fattore",
+  "txtNumTopFactorsToShow": "Inserisci un valore per N",
+  "label1": "Nota: Quando la casella di controllo è deselezionata, verranno visualizzati i conteggi per TUTTI i livelli. Questo potrebbe richiedere un tempo considerevole se hai molti livelli di fattore",
+  "help": {
+    "title": "Statistiche di sintesi",
+    "r_help": "",
+    "body": "\n<b>Descrizione</b></br>\nGenera i riassunti per ogni gruppo. Una o più variabili sorgente sono raggruppate per le variabili di destinazione. Mostra il Minimo, il 1° Quartile, la Mediana, la Media, il 3° Quartile, il Massimo e il conteggio delle NA per variabili numeriche e di data.</br>\nL'aiuto R non è disponibile perché abbiamo scritto codice personalizzato utilizzando più funzioni R. Se hai bisogno di ispezionare il codice, fai clic sul pulsante \"<>\".</br>\n    "
+  }
+}

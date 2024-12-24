@@ -1,0 +1,24 @@
+{
+  "title": "Gösterim Kuralları",
+  "navigation": "Gösterim Kuralları",
+  "rulename": "Mevcut bir kural nesnesi girin",
+  "dosortingchk": "Kuralları sırala",
+  "sortopt": "Sıralama Seçenekleri",
+  "sortby": "Şuna göre sırala",
+  "confchk": "güven",
+  "liftchk": "kaldır",
+  "suppchk": "destek",
+  "sortord": "Sıralama düzeni",
+  "increasing": "Artan",
+  "decreasing": "Azalan",
+  "noofrules": "Gösterilecek kural sayısı",
+  "rulecount": "",
+  "fromto": "Kuralları göster",
+  "from": "Başlangıç",
+  "to": "Bitiş",
+  "help": {
+    "title": "Gösterim Kuralları",
+    "r_help": "help(inspect, package='arules')",
+    "body": "\n            <b>\n\t\t\tPaket : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspect\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\tAçıklama\n\t\t\t</b>\n\t\t\t<br/><br/>\n            İlişkileri ve işlemleri görüntülemek için genel işlevi ve S4 yöntemlerini sağlayan ve çevrimiçi inceleme için biçimlendirilmiş ek bilgiler sunan bir işlevdir.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tKullanım\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspect(x, ...)\n            </code>\n            <br/><br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            x: bir dizi ilişki veya işlem veya bir itemMatrix.\n            </li>\n            <li>\n            ...: çıktıyı özelleştirmek için kullanılabilecek ek argümanlar: setStart, setEnd, itemSep ve ruleSep. Çıktı satırları çok uzun hale gelirse, öğeler yalnızca bir satırda yazdırılır. Bu, linebreak kullanılarak doğrudan kontrol edilebilir.\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sort\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\tAçıklama\n\t\t\t</b>\n\t\t\t<br/><br/>\n            İlişkilerin kalite slotunda saklanan ölçülerin değerine göre sınıf ilişkilerindeki (örneğin, öğe kümeleri veya kurallar) öğeleri sıralamak için sort yöntemini sağlar.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tKullanım\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## S4 yöntemi 'associations' için\n            arules::sort(x, decreasing = TRUE, na.last = NA, \n            by = \"support\", order = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 yöntemi 'associations' için\n            head(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## S4 yöntemi 'associations' için\n            tail(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            x: sıralanacak bir nesne.\n            </li>\n            <li>\n            decreasing: mantıksal. Sıralama artan mı yoksa azalan mı olmalı? (varsayılan azalan)\n            </li>\n            <li>\n            na.last: ilişkiler için na.last desteklenmez. NAs her zaman en sona yerleştirilir.\n            </li>\n            <li>\n            by: x'i sıralamak için kullanılacak x'te saklanan kalite ölçüsünü belirten bir karakter dizesi.\n            </li>\n            <li>\n            order: sıralanmış ilişkiler yerine bir sıralama vektörü döndürülmeli mi?\n            </li>\n            <li>\n            n: döndürülen ilişki sayısını belirten tek bir tam sayı.\n            </li>\n            <li>\n            ... : Daha fazla argüman göz ardı edilir.\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            Ayrıntılar\n            </b> \n            <br/>\n            Sıralama, büyük ilişki setleri için nispeten yavaştır çünkü büyük bir veri yapısını kopyalayıp yeniden düzenlemesi gerekir. Sıralamanın, ilişki setinin ikinci bir kopyasını oluşturduğunu ve büyük setler için yavaş ve bellek tüketici olabileceğini unutmayın. order = TRUE olduğunda, sıralanmış ilişkiler yerine sıralama ile bir tamsayı vektörü döndürülür.\n            Sadece en üstteki n ilişkiler gerekiyorsa, head kullanarak by, tüm verileri kopyalamadan ve yeniden düzenlemeden daha hızlı bir şekilde bunu gerçekleştirir. tail aynı şekilde çalışır.\n            <br/><br/>  \n            <b> \n            Değer\n            </b> \n            <br/>\n            x ile aynı sınıfta bir nesne.                  \n    "
+  }
+}

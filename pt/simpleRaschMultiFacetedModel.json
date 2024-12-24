@@ -1,0 +1,13 @@
+{
+  "title": "Modelo Rasch Simples (Multifacetado)",
+  "navigation": "Modelo Rasch Simples (Multifacetado)",
+  "modelname": "Digite o nome do modelo",
+  "destinationvars": "Itens",
+  "firstlevel": "Variável de primeiro nível",
+  "secondlevel": "Variável de segundo nível",
+  "help": {
+    "title": "Modelo Rasch Simples (Multifacetado)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Descrição</b>\n            <br/>\n            Gera estimativas de parâmetros para um modelo rasch simples multifacetado\n            <br/><br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Data frame com respostas de itens policotômicos k=0,...,K. Respostas ausentes devem ser declaradas como NA.\n            </li>\n            <li>\n            formulaA: Fórmula de design (aplica-se apenas ao tam.mml.mfr). Veja a ajuda detalhada. Também é possível definir todos os efeitos de um facet como zero, por exemplo, item*step + 0*rater (veja a ajuda detalhada).\n            </li>\n            <li>\n            facets: Um data frame com entradas de facet (aplica-se apenas ao tam.mml.mfr)\n            </li>\n            <li>\n            pid: Um vetor opcional de identificadores de pessoas\n            </li>\n            <li>\n            verbose: Lógico indicando se a saída deve ser impressa durante as iterações. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Pacotes</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Ajuda</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

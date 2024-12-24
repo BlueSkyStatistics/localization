@@ -1,0 +1,30 @@
+{
+  "title": "Limpeza de dados do Excel ou CSV - ajustar, excluir linhas e colunas",
+  "navigation": "Limpeza do Excel",
+  "resultDatasetName": "Nome do novo conjunto de dados a ser criado",
+  "listofRowNumbersRemove": "(Opcional) Lista de números de linha (separados por vírgula, por exemplo, 1,4,5,20:30) a serem removidos",
+  "listofColumnNumbersRemove": "(Opcional) Lista de números de coluna (separados por vírgula, por exemplo, 1,2,6:10) a serem removidos",
+  "chooseColumnNamesRad": "Especificar nomes de colunas do conjunto de dados",
+  "rowNumbersContaingColNames": "Digite os números das linhas (separados por vírgula, por exemplo, 3,4) a serem usados como nomes de colunas para o conjunto de dados de saída",
+  "deleteRowNumbersContaingColNamesChk": "Excluir as linhas contendo nomes de colunas para o conjunto de dados de saída",
+  "combineWithExsitingColNamesChk": "Nomes de colunas criados, combiná-los com os nomes de cabeçalho de coluna existentes",
+  "specifyColumnNamesRad": "Especificar nomes de colunas manualmente para o conjunto de dados de saída",
+  "outputColumnNames": "Digite os nomes das colunas (separados por vírgula) a serem usados para o conjunto de dados de saída",
+  "removeColsWithConstantChk": "Remover todas as colunas com valores constantes (não diferencia maiúsculas de minúsculas)",
+  "removeColsWithNoDataChk": "Remover todas as colunas vazias",
+  "removeRowsWithNoDataChk": "Remover todas as linhas vazias",
+  "removeRowsWithNAsChk": "Manter apenas casos completos, ou seja, remover toda a linha se houver algum valor vazio ou NA",
+  "label1": "Convertendo tipos de coluna no conjunto de dados de saída",
+  "convertColumnDataTypeAuto": "Determinar automaticamente o tipo de dado da coluna e converter",
+  "convertColumnDataTypeNone": "Não fazer nada",
+  "convertColumnDataTypeFactorToCharInt": "Converter todas as colunas fatoriais para tipo caractere e inteiro",
+  "convertColumnDataTypeCharToFactor": "Converter todas as colunas de caractere para fatores",
+  "convertColumnDataTypeAllToFactor": "Converter todas as colunas para fatores",
+  "convertColumnDataTypeManual": "Digite o tipo de dado para cada coluna a ser convertida",
+  "outputColumnTypes": "Lista de tipos de coluna (separados por vírgula, por exemplo, numérico, fator, caractere, ..)",
+  "help": {
+    "title": "Limpeza de dados do Excel ou CSV - ajustar, excluir linhas e colunas",
+    "r_help": "",
+    "body": "\n            <b>Descrição</b></br>\n            Esta caixa de diálogo é usada para limpar uma planilha complexa do Excel para adicionar e remover linhas e colunas para criar um novo conjunto de dados\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de exemplo chamado Excel cleanup.xlsx\n\t\t\t<br/>\n\t\t\tAbra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t<br/>\n\t\t\tNa caixa de diálogo - digite\n\t\t\t<br/>\n\t\t\tSampleGp para o nome do novo conjunto de dados\n\t\t\t<br/>\n\t\t\t1:3 para a lista de números de linha a serem removidos\n\t\t\t<br/>\n\t\t\t1,2,5:8 para a lista de números de coluna a serem removidos\n\t\t\t<br/>\n\t\t\tSelecione a opção - Especificar nomes de colunas dos conjuntos de dados\n\t\t\t<br/>\n\t\t\t2,3 para Digitar números de linha  \n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

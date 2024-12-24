@@ -3,16 +3,16 @@
   "navigation": "设计分析 - 响应面模型",
   "modelname": "输入响应面模型名称",
   "dependent": "响应（因变量）",
-  "formulaboxhint": "您还可以在上述公式构建框中输入SO(var1, var2,...)以获取二阶效应和交互作用，或FO(...),...来自rsm包。",
+  "formulaboxhint": "您还可以在上述公式构建框中输入 SO(var1, var2,...) 以获取二阶效应和交互作用，或 FO(...),... 来自 rsm 包。",
   "independent": "数值预测变量 - 在下面插入数值公式变量",
-  "generateContourPlotChk": "显示轮廓（图）",
-  "generateRSMPlotChk": "显示响应面（图）",
-  "generatePathSteepestAscentChk": "显示从山脊分析的最陡上升路径",
-  "checkShapiroNormalityTestChk": "Shapiro正态性检验",
+  "generateContourPlotChk": "显示轮廓图",
+  "generateRSMPlotChk": "显示响应面图",
+  "generatePathSteepestAscentChk": "显示从岭分析的最陡上升路径",
+  "checkShapiroNormalityTestChk": "Shapiro 正态性检验",
   "normalityPlotsChk": "检查正态性的图",
   "help": {
     "title": "带有模型公式构建器的响应面模型",
     "r_help": "help(rsm, package = rsm)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t响应面回归 - 拟合具有响应面组件的线性模型，并生成适当的分析和摘要\n\t\t\t\t<br/> 在公式构建器中，您可以输入SO(var1, var2, var3, ...)或FO(var1, ..)或来自rsm包的其他函数 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关更多详细信息，请参见R帮助以下内容\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t响应面回归 - 拟合具有响应面组件的线性模型，并生成适当的分析和摘要\n\t\t\t\t<br/> 在公式构建器中，您可以输入 SO(var1, var2, var3, ...) 或 FO(var1, ..) 或来自 rsm 包的其他函数 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关更多详细信息，请参见 R 帮助\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
   }
 }

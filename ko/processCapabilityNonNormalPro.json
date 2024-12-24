@@ -1,0 +1,29 @@
+{
+  "title": "비정상 프로세스 능력",
+  "navigation": "비정상 프로세스 능력",
+  "printObjectSummaryChk": "프로세스 능력에 대한 QCC 객체 요약 인쇄",
+  "label1": "데이터에 가장 적합한 분포 함수를 선택하십시오",
+  "variableSelcted": "분석할 변수를 선택하십시오 (관측 데이터)",
+  "rowsTobeUsed": "선택한 경우, 프로세스 능력을 분석하는 데 사용할 행 (예: 1:25 또는 1,4,5,7:12로 지정)",
+  "lower": "LSL - 하한 사양 한계의 숫자 값 (단측 사양 한계를 지정하려면 NA 입력)",
+  "upper": "USL - 상한 사양 한계의 숫자 값 (단측 사양 한계를 지정하려면 NA 입력)",
+  "target": "목표 사양 한계 (선택 사항)",
+  "selectDistFuncWeibullRad": "와이블",
+  "selectDistFuncExpRad": "지수",
+  "selectDistFuncGammaRad": "감마",
+  "selectDistFuncLnormalRad": "로그 정규",
+  "selectDistFuncPoissonRad": "포아송",
+  "selectDistFuncNBinomRad": "음의 이항",
+  "selectDistFuncGeomRad": "기하학적",
+  "selectDistFuncBetaRad": "베타",
+  "selectDistFuncUnifRad": "균일",
+  "selectDistFuncLogisRad": "로지스틱",
+  "selectDistFuncCauchyRad": "코시",
+  "selectDistFuncNormRad": "정규",
+  "digits": "자릿수 - 표시할 자릿수",
+  "help": {
+    "title": "비정상 분포에 대한 프로세스 능력",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tqcc 함수는 능력 지수를 계산합니다\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), 및 help(sd.xbar.one, package = qcc)를 사용하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 qcc 패키지에서 pistonrings라는 데이터셋을 로드 데이터셋 메뉴를 통해 로드하십시오. qcc 패키지를 선택한 다음 pistonrings 데이터셋을 선택하십시오\n\t\t\t\t<br/>\n\t\t\t\t옵션 1, 직경을 변수(관측..)로, 샘플을 그룹화 변수로 선택하십시오,\n\t\t\t\t<br/>\n\t\t\t\t사용할 그룹화된 행에 1:25를 입력하십시오\n\t\t\t\t<br/>\n\t\t\t\t프로세스 능력 분석을 위해 LSL에 73.95, USL에 74.05, 목표 한계에 74.0을 입력하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html에서 qcc 튜토리얼을 따르십시오\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "رسم الكنتور",
+  "navigation": "رسم الكنتور",
+  "x": "متغير X، حدد متغيرًا عدديًا",
+  "y": "متغير(ات) Y، حدد متغيرًا عدديًا(ات)",
+  "flip": "عكس المحور",
+  "specify_a_title": "أدخل عنوانًا",
+  "x_title": "تسمية المحور X",
+  "y_title": "تسمية المحور Y",
+  "Facetrow": "صف الفاكت",
+  "Facetcolumn": "عمود الفاكت",
+  "Facetwrap": "لف الفاكت",
+  "Facetscale": "مقياس الفاكت",
+  "facets_lbl": "الفاكتات",
+  "colorHintLabel1": "اختر لونًا (بعد اختيار اللون، انقر خارج التحكم لتطبيقه)",
+  "help": {
+    "title": "رسم الكنتور",
+    "r_help": "help(geom_density2d, package=ggplot2)",
+    "body": "\n            <b>الوصف</b></br>\n            قم بإجراء تقدير كثافة نواة ثنائي الأبعاد باستخدام MASS::kde2d() وعرض النتائج مع الكنتور. يمكن أن يكون هذا مفيدًا للتعامل مع التداخل. هذه نسخة ثنائية الأبعاد من geom_density().</br>\n            يمكن إنشاء الفاكتات بشكل اختياري عن طريق تحديد متغير عامل. يمكنك أيضًا تحديد السمات بشكل اختياري، وتحديد عنوان وتسميات للمحورين X و Y​\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code>\n            ggplot(data=Dataset,aes(x = var1,y =var2)) +\n            geom_density2d( stat = \"density2d\",position = \"identity\") +\n            labs(x =\"var1\",y =\"var2\",title= \"رسم الكنتور لـ...\")\n            </code> <br/>\n            <b>المعلمات</b><br/>\n            <ul>\n            <li>\n            data: مجموعة البيانات الافتراضية​\n            </li>\n            <li>\n            aes(): توليد تخطيطات جمالية تصف كيفية ربط المتغيرات في البيانات بالخصائص المرئية (الجمالية) للرسوم.​\n            </li>\n            <li>\n            x: متغير عددي\n            </li>\n            <li>\n            y: متغير عددي\n            </li>\n            <li>\n            geomdensity2d: ينشئ الرسم\n            </li>\n            <li>\n            Labs(): تغيير تسميات المحاور وعناوين الأسطورة (هذا اختياري)​\n            </li>\n            <li>\n            facet_grid(): ترتيب الألواح في شبكة (هذا اختياري)​\n            </li>\n            <li>\n            theme_calc(): يحدد سمة الآلة الحاسبة (هذا اختياري)​\n            </li>\n            <li>\n            coord_flip(): عكس المحور (هذا اختياري)​\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes;</br>\n            <b>المساعدة</b></br>\n            help(geom_density2d, package=ggplot2)</br>\n            أخرى: انقر على زر مساعدة R للحصول على مساعدة مفصلة في R. يمكنك أيضًا إدخال help(labs), help(geom_density2d), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n    "
+  }
+}

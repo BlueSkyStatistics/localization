@@ -1,0 +1,10 @@
+{
+  "title": "Frekans Tablosu (Eski)",
+  "navigation": "Frekanslar (Eski)",
+  "subsetvars": "Değişkenleri seçin",
+  "help": {
+    "title": "Frekans Tablosu",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>Açıklama</b></br>\nBir veya daha fazla değişken veya sütun adı için her benzersiz değerin frekanslarını üretir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Ayrıntılar</b></br>\nBu diyalog aşağıdaki fonksiyonları kullanır:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

@@ -7,11 +7,11 @@
   "replications": "重複次數",
   "repeatOnlyChk": "僅重複",
   "lbl1": "您可能不需要更改隨機化設置",
-  "randomseeds": "隨機化種子",
+  "randomseeds": "隨機化的種子",
   "randomizationChk": "隨機生成設計",
   "help": {
     "title": "創建完整的因子設計",
     "r_help": "help(fac.design, package = DoE.base)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tfac.design函數用於生成完整的因子設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為factor_grid_full_factorial_Design.xlsx的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tfac.design 函數用於生成完整的因子設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 factor_grid_full_factorial_Design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

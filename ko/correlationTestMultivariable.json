@@ -1,0 +1,22 @@
+{
+  "title": "상관 관계 테스트",
+  "navigation": "피어슨, 스피어만",
+  "tvarbox": "선택된 변수 (최소 두 개)",
+  "lable1": "상관 관계 유형",
+  "radio_pearson": "피어슨",
+  "radio_spearman": "스피어만",
+  "lable2": "결측값 처리 옵션",
+  "radio_cc": "완전한 사례만",
+  "radio_pairwise": "쌍별 완전 사례",
+  "lable3": "P 값 표시",
+  "ajp": "조정된 P 값",
+  "unajp": "조정되지 않은 P 값",
+  "bothp": "두 P 값 모두",
+  "vis_cor": "상관 관계 행렬 시각화",
+  "vis_plot": "웹 플롯 시각화",
+  "help": {
+    "title": "상관 분석",
+    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+    "body": "\n<b>설명</b>\n이 함수는 Hmisc 패키지의 rcorr 함수를 사용하여 피어슨 또는 스피어만 상관 관계의 행렬과 상관 관계 간의 쌍별 p-값을 계산합니다. p-값은 다중 추론에 대해 Holm의 방법을 사용하여 수정됩니다 (p.adjust 참조). 관측치는 결측 데이터에 대해 필터링되며, 완전한 관측치만 사용됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## 'rcorr.adjust' 클래스의 S3 메서드\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>인수</b>\n   <ul>\n   <li>\nx: 인쇄할 숫자 행렬 또는 데이터 프레임, 또는 'rcorr.adjust' 클래스의 객체입니다.\n</li>\n<li>\ntype: 원하는 상관 관계 유형에 따라 \"pearson\" 또는 \"spearman\"; 기본값은 \"pearson\"입니다.\n</li>\n<li>\nuse: 결측 데이터를 처리하는 방법: \"complete.obs\", 기본값, 완전한 사례만 사용; \"pairwise.complete.obs\", 각 쌍에 대해 유효한 데이터가 있는 모든 사례를 사용합니다.\n</li>\n<li>\n...: 사용되지 않음.\n</li>\n</ul>\n<b>값</b>\n\"rcorr.adjust\" 클래스의 객체를 반환하며, 일반적으로 인쇄됩니다.\n"
+  }
+}

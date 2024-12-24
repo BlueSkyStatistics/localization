@@ -1,16 +1,16 @@
 {
-  "title": "Crear un diseño de parámetros interior-exterior al estilo Taguchi",
+  "title": "Crear diseño de parámetros interno-externo al estilo Taguchi",
   "navigation": "Crear diseño de parámetros Taguchi",
   "datasetname": "Nombre del diseño",
-  "inner": "Diseño interior (debe haber sido aleatorizado previamente)",
-  "outer": "Diseño exterior",
+  "inner": "Diseño interno (debe haber sido aleatorizado previamente)",
+  "outer": "Diseño externo",
   "lbl1": "Dirección - Generar diseño en formato largo o ancho",
   "directionLongrad": "Formato largo",
   "directionWiderad": "Formato ancho",
-  "responses": "Déjelo en blanco o especifique uno o más nombres de respuesta (separados por comas sin comillas ni espacios entre los nombres)",
+  "responses": "Déjalo en blanco o especifica uno o más nombres de respuesta (separados por comas sin comillas ni espacios entre nombres)",
   "help": {
-    "title": "Crear un diseño de parámetros interior-exterior al estilo Taguchi",
-    "r_help": "ayuda(param.design, paquete = DoE.base)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función param.design genera diseños de parámetros al estilo Taguchi. Crea diseños de parámetros para investigaciones de señal-ruido con arreglos internos y externos y facilita su formateo y agregación de datos. El experimento cruza los factores de control en el «arreglo interno» con los factores de ruido en el «arreglo externo».\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R ayuda(param.design, paquete = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado factor_grid_twolevel_screen_Design.xlsx. Abra el archivo en la cuadrícula de datos con el menú de apertura de archivos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Cree un diseño factorial completo con el nombre de diseño FFinnerRandom con los factores seleccionados - AirVolume, Valve, Barrel y Angle y marque la casilla \"Randomize the design generation\"\n\t\t\t\t<br/>\n\t\t\t\t2. Cree un diseño de arreglo ortogonal con el nombre de diseño FFouter con los factores seleccionados - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. Cree un diseño Taguchi (este diálogo/UI) y seleccione los diseños FFinnerRandom y FFouter ya creados en los pasos 1 y 2\n\t\t\t\t<br/>\n\t\t\t\t"
+    "title": "Crear diseño de parámetros interno-externo al estilo Taguchi",
+    "r_help": "help(param.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función param.design genera diseños de parámetros al estilo Taguchi. Crea diseños de parámetros para investigaciones de señal a ruido con arreglos internos y externos y facilita su formateo y agregación de datos. El experimento cruza los factores de control en el \"arreglo interno\" con los factores de ruido en el \"arreglo externo\".\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - usa R help(param.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puedes usar el archivo de conjunto de datos de muestra llamado factor_grid_twolevel_screen_Design.xlsx. Abre el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Crea un diseño factorial completo con el nombre de diseño FFinnerRandom con los factores seleccionados - AirVolume, Valve, Barrel y Angle y marca la casilla \"Aleatorizar la generación del diseño\"\n\t\t\t\t<br/>\n\t\t\t\t2. Crea un diseño de arreglo ortogonal con el nombre de diseño FFouter con los factores seleccionados - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. Crea un diseño Taguchi (este diálogo/UI) y selecciona los diseños FFinnerRandom y FFouter ya creados en el paso 1 y el paso 2\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

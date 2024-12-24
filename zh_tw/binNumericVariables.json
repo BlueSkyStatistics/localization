@@ -2,20 +2,20 @@
   "title": "分箱",
   "navigation": "箱",
   "vartobin": "選擇一個變數進行分箱",
-  "varname": "輸入一個變數名稱以保存分箱值",
+  "varname": "輸入變數名稱以保存分箱值",
   "noofbins": "指定箱的數量",
   "label1": "級別名稱",
   "Names": "指定名稱",
-  "levelnames": "輸入用逗號 (,) 分隔的級別名稱，例如：好，更好，最好",
+  "levelnames": "輸入級別名稱，用逗號 (,) 分隔，例如：好，更好，最好",
   "Numbers": "數字",
   "Ranges": "範圍",
   "label2": "分箱方法",
   "equalwidth": "等寬箱",
-  "equalcount": "等計數箱",
+  "equalcount": "等數量箱",
   "natural": "自然斷點（K均值聚類）",
   "help": {
     "title": "分箱",
     "r_help": "help(binVariable,package='RcmdrMisc')",
-    "body": "\n<b>描述</b></br>\n創建一個因子，將數值變數的範圍分解為等寬、（大致）等頻率或在“自然”切點（由K均值聚類確定）中的箱。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nX: 要分箱的數值變數。\n</li>\n<li>\nBins: 箱的數量。\n</li>\n<li>\nmethod: \"intervals\"表示等寬箱；\"proportions\"表示等計數箱；\"natural\"表示箱之間的切點由K均值聚類確定。\n</li>\n<li>\nLabels: 如果為FALSE，則將使用數字標籤作為因子水平；如果為NULL，則使用切點定義標籤；否則為字符向量的級別名稱。\n</li>\n</ul>\n<b>包</b></br>\nRcmdrMisc</br>\n<b>幫助</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+    "body": "\n<b>描述</b></br>\n創建一個因子，將數值變數的範圍分解為等寬、（大致）等頻率或在“自然”切點（由K均值聚類確定）中的箱\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nX: 要進行分箱的數值變數。\n</li>\n<li>\nBins: 箱的數量。\n</li>\n<li>\nmethod: \"intervals\" 用於等寬箱；\"proportions\" 用於等數量箱；\"natural\" 用於由K均值聚類確定的箱之間的切點。\n</li>\n<li>\nLabels: 如果為FALSE，將使用數字標籤作為因子級別；如果為NULL，則使用切點來定義標籤；否則為級別名稱的字符向量。\n</li>\n</ul>\n<b>包</b></br>\nRcmdrMisc</br>\n<b>幫助</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
   }
 }

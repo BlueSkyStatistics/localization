@@ -1,6 +1,6 @@
 {
-  "title": "Creează Design de Matrice Ortogonală",
-  "navigation": "Creează Design de Matrice Ortogonală",
+  "title": "Creează un design de matrice ortogonală",
+  "navigation": "Creează un design de matrice ortogonală",
   "selectedvars": "Selectați variabilele",
   "datasetname": "Numele designului",
   "numOfRuns": "Numărul minim de rulări (poate fi lăsat gol)",
@@ -8,13 +8,13 @@
   "replications": "Replicări",
   "repeatOnlyChk": "Repetă doar",
   "lbl1": "Este posibil să nu fie nevoie să schimbați setările de randomizare",
-  "randomseeds": "Sămânță pentru randomizare",
+  "randomseeds": "Sămânța pentru randomizare",
   "randomizationChk": "Randomizează generarea designului",
-  "designnamefromcatlg": "(Opțional) Matrice de design ortogonal (exemplu: din oacat$name ca L12.2.2.6.1)",
-  "columnOptimization": "Optimizarea coloanelor (valoarea implicită este ordinea, alte opțiuni min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr)",
+  "designnamefromcatlg": "(Opțional) matrice ortogonală de design (exemplu: din oacat$name ca L12.2.2.6.1)",
+  "columnOptimization": "Optimizarea coloanelor (implicit este ordinea, alte opțiuni min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr",
   "help": {
-    "title": "Creează Design de Matrice Ortogonală",
+    "title": "Creează un design de matrice ortogonală",
     "r_help": "help(oa.design, package = DoE.base)",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\toa.design funcție pentru accesarea matricelor ortogonale, permițând o alocare optimă limitată a coloanelor\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUtilizați meniul DOE->Inspectați Design->Inspectați Catalogul de Design Ortogonal (oacat) pentru a naviga prin Designurile Ortogonale disponibile pentru referință din catalogul de design încărcat în pachetul DoE.base\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca asta, puteți folosi fișierul de set de date de exemplu numit factor_grid_orthogonal_array_Design.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierelor\n\t\t\t\tOpțional, puteți specifica L72.2.53.3.2.4.1 ca design din oacat$name\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\toa.design funcția pentru accesarea matricelor ortogonale, permițând alocarea optimă limitată a coloanelor\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUtilizați meniul DOE->Inspectați Design->Inspectați Catalogul de Design Ortogonal (oacat) pentru a răsfoi designurile ortogonale disponibile pentru referință din catalogul de design încărcat în pachetul DoE.base\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date numit factor_grid_orthogonal_array_Design.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\tOpțional, puteți specifica L72.2.53.3.2.4.1 ca design din oacat$name \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

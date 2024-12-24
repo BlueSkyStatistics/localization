@@ -1,0 +1,13 @@
+{
+  "title": "결측값 대체 (공식을 사용하여)",
+  "navigation": "공식 사용",
+  "depVar": "결측값을 대체할 변수를 선택하세요 (모델의 종속 변수입니다)",
+  "label1": "독립 변수를 공식 빌더 컨트롤로 이동하여 공식을 구성하세요. 공식 빌더의 기호 위에 마우스를 올리면 도움말이 표시됩니다.",
+  "formula": "여러 변수를 이동 버튼으로 이동하면 기본 구분 기호로 +가 사용되며, 이는 상호 작용 항이 없는 독립 변수를 나타냅니다. 기호를 클릭하여 상호 작용 항이 있는 모델을 구축하세요.",
+  "independent": "독립 변수 (하나 이상)",
+  "help": {
+    "title": "결측값 대체 (공식을 사용하여)",
+    "r_help": "help(if_else, package='dplyr')",
+    "body": "\n            <b>설명</b></br>\n            결측값을 대체하기 위한 공식을 구성합니다. 예를 들어, 결측값에 대한 추정치를 개발하기 위해 회귀 모델을 구축할 수 있으며, 방정식이 생성되면 대화 상자에 방정식을 입력하고 선택한 변수의 결측값만 계산됩니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # expression을 var2*4+1.32로 대체<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            var: 결측값을 대체할 데이터셋의 변수 이름, 예: var=c(\"sales\"). 변수는 숫자형 클래스여야 합니다.\n            </li>\n            <li>\n            Dataset: 변수 var가 포함된 데이터셋/데이터프레임\n            </li>\n            <li>\n            expression: 결측값을 대체하는 데 사용되는 표현식, 위의 예에서는 var2*4+1.32입니다.\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            dplyr</br>\n            <b>도움말</b></br>\n            자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 다음 명령어를 실행하여 help(if_else, package ='dplyr')를 입력하여 R 코드 청크를 생성하세요."
+  }
+}

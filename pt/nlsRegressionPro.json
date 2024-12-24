@@ -1,0 +1,26 @@
+{
+  "title": "Modelo de Mínimos Quadrados Não Lineares (NLS)",
+  "navigation": "Mínimos Quadrados Não Lineares",
+  "modelname": "Nome do modelo NLS",
+  "DependentVar": "Variável de Resposta (Dependente)",
+  "IndependentVarsformula": "Construa ou cole qualquer equação (fórmula) com variável(is) independente(s) (previsora) e parâmetros do modelo, por exemplo, a * exp(b * x), onde a e b são parâmetros a serem estimados e x é a variável preditora. Isso criará uma equação de modelo como y ~ a * exp(b * x), onde y é a variável de resposta",
+  "IndependentVar": "Uma variável independente (previsora) necessária para o gráfico de dispersão e ajustado",
+  "weights": "Uma variável usada como peso (Y) com um valor de potência",
+  "PowerKweight": "Potência: para apenas Y, escolha (-1), para 1/Y, escolha 1, 1/(Y^2), escolha 2, .. 1/(Y^5), escolha 5,..",
+  "covMatrixChk": "Matriz de covariância estimada para parâmetros",
+  "resPlotChk": "Plotar ajustados e resíduos",
+  "resNormalityTestChk": "Teste de normalidade dos resíduos do modelo",
+  "modelConstraintLabel": "(Opcional) Vários restrições do modelo para estimativas de parâmetros",
+  "pmodels": "Valores iniciais para parâmetros para guiar a otimização/convergência do modelo, por exemplo, param1 = 1, param2 = 10, param3 = 0 para um modelo de três parâmetros",
+  "paramConstraintsLower": "Defina a restrição para o limite inferior (deve escolher port como algoritmo), por exemplo, 3, -Inf, -Inf para um modelo de três parâmetros",
+  "paramConstraintsUpper": "Defina a restrição para o limite superior (deve escolher port como algoritmo), por exemplo, 3, Inf, Inf, 2 para um modelo de quatro parâmetros",
+  "algorithm": "Algoritmo a ser usado. O padrão é um algoritmo de Gauss-Newton",
+  "maxIter": "Número máximo de iterações permitidas para o modelo convergir. O padrão é 50",
+  "logScaleAxis": "O eixo X é plotado em escala logarítmica por padrão. Escolha ' ' para escala original",
+  "doseInLogScaleChk": "Verifique se a dose/concentração já está em valores logarítmicos no conjunto de dados",
+  "help": {
+    "title": "Modelo de Mínimos Quadrados Não Lineares (NLS)",
+    "r_help": "help(nls, package ='stats')",
+    "body": "\n            <b>Descrição</b></br> \n\t\t\tRealizar regressão não linear. Construa ou digite qualquer equação (fórmula) para construir o modelo de regressão não linear.\n\t\t\tDetermine as estimativas de mínimos quadrados não lineares (ponderadas) dos parâmetros do modelo não linear. \n\t\t\tAnalise o ajuste do modelo com gráficos. \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tVerifique help(nls, package ='stats') para detalhes \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tVocê pode tentar este diálogo\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\tExemplo 1\n\t\t\t</br>\n\t\t\tCarregue o conjunto de dados DNase do menu Carregar Conjuntos de Dados (deixe todos os pacotes instalados no primeiro dropdown e escolha DNase no segundo dropdown)\t\t\t\n\t\t\t<br/>\n\t\t\tEscolha (ou arraste) densidade como variável de resposta\n\t\t\t<br/>\n\t\t\tDigite Asym/(1 + exp((xmid - log(conc))/scal)) no campo Independente (fórmula) onde Asym, xmid e scal\n\t\t\t são três parâmetros do modelo (ou seja, coeficientes) a serem estimados \n\t\t\t<br/>\n\t\t\tVerifique a Matriz de Covariância Estimada\n\t\t\t</br>\n\t\t\tVerifique Plotar ajustados e resíduos \n\t\t\t</br>\n\t\t\tEscolha (ou arraste) conc no campo Uma variável independente (previsora) necessária para o gráfico de dispersão e ajustado\n\t\t\t</br>\n\t\t\tDigite Asym = 3, xmid = 0, scal = 1 no campo Valores iniciais para parâmetros para guiar o modelo\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tExemplo 2\n\t\t\t</br>\n\t\t\tCarregue o conjunto de dados DNase do menu Carregar Conjuntos de Dados (deixe todos os pacotes instalados no primeiro dropdown e escolha DNase no segundo dropdown)\t\t\t\n\t\t\t<br/>\n\t\t\tEscolha (ou arraste) densidade como variável de resposta\n\t\t\t<br/>\n\t\t\tDigite Asym/(1 + exp((xmid - log(conc))/scal)) no campo Independente (fórmula)\n\t\t\t<br/>\n\t\t\tVerifique a Matriz de Covariância Estimada\n\t\t\t</br>\n\t\t\tVerifique Plotar ajustados e resíduos \n\t\t\t</br>\n\t\t\tEscolha (ou arraste) conc no campo Uma variável independente (previsora) necessária para o gráfico de dispersão e ajustado\n\t\t\t</br>\n\t\t\tDigite Asym = 3, xmid = 0, scal = 1 no campo Valores iniciais para parâmetros para guiar o modelo\n\t\t\t</br>\n\t\t\tDigite Asym = 0, xmid = -Inf, scal = -Inf no campo restrição para limite inferior (defina o limite inferior para Asym como 0 e deixe o limite inferior de xmid e scal sem restrição)\n\t\t\t</br>\n\t\t\tDigite Asym = Inf, xmid = 4, scal = Inf no campo restrição para limite superior (defina o limite inferior para xmid como 0 e deixe o limite superior de Asym e scal sem restrição)\n\t\t\t</br>\n\t\t\tescolha port no dropdown de algoritmo a ser usado em vez do padrão\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tExecute o diálogo\n\t\t\t</br>\n\t\t\t</br>\n"
+  }
+}

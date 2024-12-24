@@ -1,7 +1,7 @@
 {
   "toplabel": "Standardmäßig werden alle Datensatzspalten außer dem ausgewählten wiederholten Faktor und den Wertvariablen verwendet, um jede Beobachtung zu identifizieren. Um dies zu überschreiben, siehe unten",
   "id_cols": "Optional: Standardmäßig werden alle Datensatzspalten außer dem ausgewählten wiederholten Faktor und den Wertvariablen verwendet, um jede Beobachtung zu identifizieren. Um dies zu überschreiben, wählen Sie Variablen aus und verschieben Sie sie",
-  "title": "Umformen, von lang zu breit",
+  "title": "Umformen, lang zu breit",
   "navigation": "Breiter",
   "labelTop": "Wenn ein einzelner wiederholter Faktor und eine Wertvariable angegeben sind, werden neue Variablennamen mit dem Namen des wiederholten Faktors vorangestellt. In allen anderen Fällen werden sie mit dem Namen der Wertvariable vorangestellt",
   "label0": "Sie können wählen, ob Sie die Ergebnisse in einem neuen Datensatz speichern oder den vorhandenen Datensatz überschreiben möchten",
@@ -9,15 +9,15 @@
   "New": "Ergebnisse in einem neuen Datensatz speichern",
   "newdatasetname": "Geben Sie einen Datensatznamen ein",
   "Existing": "Vorhandenen Datensatz überschreiben",
-  "subsetvars": "Geben Sie den Namen der wiederholten Faktor(en) ein, z.B. Zeit",
-  "dontReshape": "Geben Sie den Namen der wiederholten Wert(e) ein, z.B. Zählungen",
+  "subsetvars": "Geben Sie den Variablennamen des wiederholten Faktors an, z.B. Zeit",
+  "dontReshape": "Geben Sie den Variablennamen für die wiederholten Werte an, z.B. Zählungen",
   "names_sort": "Spaltennamen alphabetisch sortieren",
-  "appearence_sort": "Spaltennamen nach Erscheinung sortieren",
-  "names_sep": "Optionaler Trenner, der beim Zusammenfügen der angegebenen Variablennamen verwendet wird, um neue Variablennamen zu bilden",
+  "appearence_sort": "Spaltennamen nach Erscheinungsbild sortieren",
+  "names_sep": "Optionaler Separator, der beim Verbinden der angegebenen Variablennamen verwendet werden soll, um neue Variablennamen zu bilden",
   "label2": "Sortieroptionen",
   "help": {
     "title": "Umformen (lang zu breit)",
-    "r_help": "hilfe(pivot_wider, paket=tidyr)",
-    "body": "\n           <b>Beschreibung</b></br>\nSiehe Video unter <a href=\"https://youtu.be/ypLXqmFp3jY\">Umformen von lang zu breit</a></br>\nNimmt einen breiten Datensatz und wandelt ihn in einen langen Datensatz um, indem er Spalten konvertiert (erweitert). Pivot_wider \"verlängert\" Daten, erhöht die Anzahl der Zeilen und verringert die Anzahl der Spalten. Sie verwenden pivot_wider, wenn Sie Variablen/Spalten haben, deren Werte in Zeilen stehen müssen. \n<br/>\nHINWEIS: Wenn ein wiederholter Faktor angegeben ist, werden neue Variablennamen mit dem Namen des wiederholten Faktors vorangestellt. Wenn mehrere wiederholte Faktoren angegeben sind, werden sie mit dem Namen der Wertvariable vorangestellt</br>\n<b>Verwendung</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndataset: Ein Dataframe/Tibble\n</li>\n<li>\nnames_from: der Name der Ausgabespalte \n</li>\n<li>\nvalues_from: die Spalte, aus der die Zellwerte stammen \n</li>\n<li>\nnames_sort: Soll die Spaltennamen sortiert werden? Wenn FALSE, der Standard, werden die Spaltennamen nach dem ersten Auftreten geordnet.\n</li>\n<li>\nnames_sep: Optionaler Trenner, der beim Zusammenfügen der angegebenen Variablennamen verwendet wird, um neue Variablennamen zu bilden\n</li>\n<li>\n<b>Wert</b><br/>\nGibt den umgeformten Datensatz zurück\n<br/>\n<b>Paket</b></br>\ntidyr\n<b>Hilfe</b></br>\nhilfe(pivot_wider)\n"
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>Beschreibung</b></br>\nSiehe Video unter <a href=\"https://youtu.be/ypLXqmFp3jY\">Umformen lang zu breit</a></br>\nNimmt einen breiten Datensatz und konvertiert ihn in einen langen Datensatz, indem Spalten umgewandelt (erweitert) werden. Pivot_wider \"verlängert\" Daten, erhöht die Anzahl der Zeilen und verringert die Anzahl der Spalten. Sie verwenden pivot_wider, wenn Sie Variablen/Spalten haben, deren Werte in Zeilen stehen müssen. \n<br/>\nHINWEIS: Wenn ein wiederholter Faktor angegeben ist, werden neue Variablennamen mit dem Namen des wiederholten Faktors vorangestellt. Wenn mehrere wiederholte Faktoren angegeben sind, werden sie mit dem Namen der Wertvariable vorangestellt</br>\n<b>Verwendung</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndataset: Ein Dataframe/Tibble\n</li>\n<li>\nnames_from: der Name der Ausgabespalte \n</li>\n<li>\nvalues_from: die Spalte, aus der die Zellwerte stammen \n</li>\n<li>\nnames_sort: Sollen die Spaltennamen sortiert werden? Wenn FALSE, der Standard, werden die Spaltennamen nach dem ersten Auftreten geordnet.\n</li>\n<li>\nnames_sep: Optionaler Separator, der beim Verbinden der angegebenen Variablennamen verwendet werden soll, um neue Variablennamen zu bilden\n</li>\n<li>\n<b>Wert</b><br/>\nGibt den umgeformten Datensatz zurück\n<br/>\n<b>Paket</b></br>\ntidyr\n<b>Hilfe</b></br>\nhelp(pivot_wider)\n"
   }
 }

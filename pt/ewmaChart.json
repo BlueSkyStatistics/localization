@@ -1,0 +1,21 @@
+{
+  "title": "Gráfico EWMA",
+  "navigation": "Gráfico EWMA",
+  "summaryPrintChk": "Imprimir resumo além dos gráficos",
+  "label2": "Duas opções - ou selecione uma variável para o gráfico (e uma variável de agrupamento, se necessário) ou selecione as variáveis no conjunto de dados para o gráfico, se já estiverem agrupadas",
+  "selectVariableRad": "Opção 1: Selecione uma variável do conjunto de dados que precisa ser agrupada",
+  "variableSelcted": "Variável (dados observados) para o gráfico",
+  "groupingVariable": "Variável de Agrupamento",
+  "displayGroupsChk": "Exibir os agrupamentos na grade da interface do conjunto de dados",
+  "selectDatasetRad": "Opção 2: Selecione as variáveis do Conjunto de Dados se já estiverem agrupadas",
+  "variablelistSelcted": "Selecione uma ou mais variáveis agrupadas (dados observados) para o gráfico",
+  "nsigmas": "Sigma - número de sigmas a serem usados para calcular os limites de controle",
+  "lambda": "O parâmetro de suavização (entre 0 e 1)",
+  "rowsTobeUsed": "Linhas Agrupadas a serem usadas para o Gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
+  "rowsTobeUsedAsNewData": "Novos Dados - Linhas agrupadas a serem usadas como Novos Dados para o Gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12) - novos dados a serem plotados, mas não incluídos nos cálculos",
+  "help": {
+    "title": "Gráfico EWMA",
+    "r_help": "help(ewma, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção qcc para realizar controle estatístico de qualidade e plotar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(ewma, package = qcc) e help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode carregar o conjunto de dados chamado pistonrings do pacote qcc com o menu Carregar Conjunto de Dados selecionando o pacote qcc e, em seguida, selecionando o conjunto de dados pistonrings\n\t\t\t\t<br/>\n\t\t\t\tEscolha a opção 1, diâmetro para variável (observada..), amostra para variável de Agrupamento, \n\t\t\t\t<br/>\n\t\t\t\tDigite 1:25 em Linhas agrupadas a serem usadas, 30:40 em Novos Dados\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial do qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

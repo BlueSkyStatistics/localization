@@ -7,6 +7,6 @@
   "help": {
     "title": "朴素贝叶斯",
     "r_help": "help(NaiveBayes,package='klaR')",
-    "body": "\n                <b>描述</b></br>\n计算给定独立预测变量的分类类变量的条件后验概率，使用贝叶斯规则。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n公式 : 形式为 class ~ x1 + x2 + .... 不允许交互作用。\n</li>\n<li>\n数据: 一个预测变量的数据框（分类和/或数值）。\n</li>\n<li>\nna.action : 一个函数，用于指定在发现 NAs 时采取的行动。默认操作是不将其计入概率因子的计算。另一种选择是 na.omit，这将导致拒绝任何缺少所需变量值的案例。 （注意：如果给出，则此参数必须命名。）\n</li>\n<li>\n... : 传递给密度的参数。\n</li>\n</ul>\n<b>包</b></br>\ncaret;klaR</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 语法编辑器中运行以下命令</br>\nhelp(NaiveBayes,package='klaR')\n"
+    "body": "\n                <b>描述</b></br>\n计算给定独立预测变量的分类类变量的条件后验概率，使用贝叶斯规则。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nformula : 形式为 class ~ x1 + x2 + .... 不允许交互作用。\n</li>\n<li>\ndata: 一个包含预测变量（分类和/或数值）的数据框。\n</li>\n<li>\nna.action : 一个函数，用于指定在发现缺失值时采取的行动。默认操作是不计算它们对概率因子的影响。另一种选择是 na.omit，这会导致拒绝任何缺失值的案例。（注意：如果给出，此参数必须命名。）\n</li>\n<li>\n... : 传递给密度的参数。\n</li>\n</ul>\n<b>包</b></br>\ncaret;klaR</br>\n<b>帮助</b></br>\n要获取详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 语法编辑器中运行以下命令</br>\nhelp(NaiveBayes,package='klaR')\n"
   }
 }

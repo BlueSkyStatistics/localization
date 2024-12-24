@@ -1,17 +1,17 @@
 {
-  "navigation": "Bonett-Seier峰度检验",
-  "title": "Bonett-Seier检验Geary的峰度",
+  "navigation": "Bonett-Seier 峰度检验",
+  "title": "Bonett-Seier Geary 峰度检验",
   "hypothesisType": "检验假设 (H1)",
   "twosided": "双侧",
-  "greater": "更大",
-  "less": "更少",
+  "greater": "大于",
+  "less": "小于",
   "label2": "其他选项",
-  "showLengthNAs": "显示长度和NAs",
+  "showLengthNAs": "显示长度和 NAs",
   "verbose": "详细的替代假设",
   "Target": "选择一个或多个变量",
   "help": {
-    "title": "Bonett-Seier检验Geary的峰度",
+    "title": "Bonett-Seier Geary 峰度检验",
     "r_help": "help(bonett.test, package ='moments')",
-    "body": "\n<b>描述</b></br>\n执行Bonett-Seier检验Geary的峰度的检验，适用于正态分布的数据。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbonett.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 数据值的数值向量。\n</li>\n<li>\ny: 一个字符字符串，指定替代假设，必须是'\"two.sided\"'（默认），'\"greater\"'或'\"less\"'之一。您可以只指定首字母。\n</li>\n</ul>\n<b>详细信息</b></br>\n在正态性假设下，数据的Geary峰度应等于sqrt(2/pi)（0.7979）。该检验具有这样的零假设，并且对于检测正态分布数据中Geary峰度的显著差异是有用的。\n<br/>\n<b>值</b></br>\n一个包含类htest的列表，包含以下组件：\n<ul>\n<li>\nstatistic: 包含Geary峰度估计量及其变换的列表。</br>\n</li>\n<li>\np.value: 检验的p值。 </br>\n</li>\n<li>\nalternative: 描述替代假设的字符字符串</br>\n</li>\n<li>\nmethod: 指示执行了哪种类型检验的字符字符串。\n</li>\n<li>\ndata.name: 数据参数的名称。</br>\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\ngeary(x)</br>\nbonett.test(x)</br>\n</code> <br/>\n<b>包</b></br>\nmoments</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框右上角的R图标，或在BlueSky Statistics R编辑器中运行以下命令help(bonett.test, package ='moments')。           \n<br/>\n<br/>"
+    "body": "\n<b>描述</b></br>\n对正态分布数据进行 Bonett-Seier Geary 峰度检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nbonett.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个数值向量的数据值。\n</li>\n<li>\ny: 一个字符字符串，指定替代假设，必须是 '\"two.sided\"'（默认），'\"greater\"' 或 '\"less\"' 之一。您可以只指定首字母。\n</li>\n</ul>\n<b>详细信息</b></br>\n在正态性假设下，数据的 Geary 峰度应等于 sqrt(2/pi) (0.7979)。该检验具有这样的零假设，并且对于检测正态分布数据中 Geary 峰度的显著差异非常有用。\n<br/>\n<b>值</b></br>\n一个包含以下组件的 htest 类列表：\n<ul>\n<li>\nstatistic: 包含 Geary 峰度估计量及其变换的列表。</br>\n</li>\n<li>\np.value: 检验的 p 值。 </br>\n</li>\n<li>\nalternative: 描述替代假设的字符字符串</br>\n</li>\n<li>\nmethod: 指示执行了何种类型检验的字符字符串。\n</li>\n<li>\ndata.name: 数据参数的名称。</br>\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\ngeary(x)</br>\nbonett.test(x)</br>\n</code> <br/>\n<b>包</b></br>\nmoments</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 BlueSky Statistics R 编辑器中运行以下命令 help(bonett.test, package ='moments')。           \n<br/>\n<br/>\n"
   }
 }

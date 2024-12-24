@@ -1,0 +1,17 @@
+{
+  "title": "Converter Variáveis de Caracteres para Data e Hora",
+  "navigation": "Caracteres para Data e Hora",
+  "label1": "Selecione um sufixo ou prefixo para variáveis convertidas",
+  "suffix": "Sufixo",
+  "prefix": "Prefixo",
+  "prefixOrSuffix": "Insira um prefixo ou sufixo",
+  "Destination": "Selecione variáveis de caracteres para converter em data",
+  "DateFormat": "Selecione o formato da string de caracteres",
+  "TimeZone": "Selecione um fuso horário (padrão - nada selecionado é o fuso horário local do PC)",
+  "advanced_lbl": "Avançado",
+  "help": {
+    "title": "Converter Caracter para Data",
+    "r_help": "help(strptime, package=\"base\")",
+    "body": "\n<b>Descrição</b></br>\nConverte um caractere em uma data (classe POSIXct). Você precisa especificar o formato da data armazenada em uma string de caracteres.\nA função acima chama internamente strptime no pacote base. Estendemos strftime para suportar múltiplas variáveis.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkystrptime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"sufixo\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndata: O nome do conjunto de dados como uma string de caracteres.\n</li>\n<li>\nvarNames: Os nomes das variáveis da classe caractere que precisam ser convertidas para data (classe POSIXct)\n</li>\n<li>\ndateFormat: Uma string de caracteres. O padrão para os métodos de formato é \"%Y-%m-%d %H:%M:%S\" se qualquer elemento tiver um componente de tempo que não seja meia-noite, e \"%Y-%m-%d\" caso contrário. Se options(\"digits.secs\") estiver definido, até o número especificado de dígitos será impresso para os segundos\n</li>\n<li>\ntimezone: Uma string de caracteres especificando o fuso horário a ser usado para a conversão. Específico do sistema (veja as.POSIXlt), mas \"\" é o fuso horário atual, e \"GMT\" é UTC. Valores inválidos são mais comumente tratados como UTC, em algumas plataformas com um aviso.\n</li>\n<li>\nprefixOrSuffix: Especifica um prefixo ou sufixo para as variáveis convertidas da classe POSIXct. Aceita c(\"prefixo\") ou c(\"sufixo\"). Novas variáveis que são criadas com este prefixo/sufixo ao nome da variável original.\n</li>\n<li>\nprefixOrSuffixValue = Um vetor de caracteres que especifica o nome do prefixo ou sufixo a ser usado.\n</li>\n</ul>\n<b>Pacote</b></br>\nbase</br>\n<b>Ajuda</b></br>\najuda(strptime)\n"
+  }
+}

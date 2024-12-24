@@ -1,9 +1,9 @@
 {
   "title": "自動化 ARIMA",
   "navigation": "自動化 ARIMA",
-  "destination": "要預測的變量",
-  "firstObservation": "第一次觀察的時間，例如：1：輸入 1961,1 表示 1961 年 1 月；例如：2：輸入 1961,3 表示 1961 年第 3 季度；例如：3：輸入 1 表示連續系列",
-  "frequency": "每單位時間的觀察次數，例如：1：輸入 12 表示每年每月一次觀察；例如：2：輸入 4 表示每季度一次觀察；例如：3：輸入 1 表示連續系列。",
+  "destination": "要預測的變數",
+  "firstObservation": "第一次觀察的時間，例如：1：輸入 1961,1 代表 1961 年 1 月，2：輸入 1961,3 代表 1961 年第 3 季度，3：輸入 1 代表連續系列",
+  "frequency": "每單位時間的觀察數，例如：1：輸入 12 代表每年每月有一個觀察，2：輸入 4 代表每季度有一個觀察，3：輸入 1 代表連續系列。",
   "criteria": "模型標準",
   "label1": "圖表",
   "plotSeries": "繪製系列",
@@ -16,17 +16,18 @@
   "plotResiduals": "繪製殘差",
   "label3": "使用模型進行預測",
   "predict": "使用模型進行預測",
-  "periodToPredict": "指定要預測的時間間隔數量",
-  "confInterval": "指定置信區間的百分比，例如 95 表示 95%",
+  "periodToPredict": "指定要預測的區間數",
+  "confInterval": "指定置信區間的百分比，例如 95 代表 95%",
   "savePredictedVals": "保存預測值",
   "predictedValsDatasetName": "指定存儲預測值的數據集名稱",
   "plotPredicted": "繪製預測值",
   "correlogram": "生成自相關圖",
   "maxlag": "輸入最大滯後",
-  "Boxtest": "Ljung-Box 檢驗",
+  "Boxtest": "Ljung-Box 測試",
+  "advanced_lbl" : "進階",
   "help": {
     "title": "自動化 ARIMA",
     "r_help": "help(auto.arima, package=forecast)",
-    "body": "\n            <b>描述</b></br>\n根據 AIC、AICc 或 BIC 值返回最佳 ARIMA 模型。該函數在提供的順序約束內對可能的模型進行搜索。內部調用 forecast 包中的 auto.arima\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 用於構建自動 ARIMA 模型的選定變量。\n</li>\n<li>\nstart: 第一次觀察的時間應以年、月或年、季度的格式輸入，例如（如果您的數據按月組織，則 1992,1 表示 1992 年 1 月；如果您的數據按季度組織，則 1992,1 表示 1992 年的第一季度。\n</li>\n<li>\nfrequency: 單位時間內的觀察次數。例如：每月有 12 次觀察，每年有 4 次觀察。\n</li>\n<li>\nic: 用於模型選擇的信息標準。它必須是 \"aic\"、\"aicc\" 或 \"bic\" 之一。\n</li>\n<li>\nplotSeries: 如果為 TRUE，將生成時間序列圖。\n</li>\n<li>\nplotResiduals: 如果為 TRUE，將繪製殘差。\n</li>\n<li>\npredict: 如果為 TRUE，將生成預測值。\n</li>\n<li>\nsavePredictedVals: 將保存預測值。\n</li>\n<li>\nPlotPredictedValues: 預測值也將被繪製。\n</li>\n<li>\ncorrelogram: 如果為 TRUE，將生成自相關圖。\n</li>\n<li>\nmain: 圖表的主標題\n</li>\n<li>\nylab: Y 軸的標題\n</li>\n<li>\ndataset: 從中選擇變量的數據集名稱。\n</li>\n</ul>\n<b>詳細信息</b></br>\n默認參數旨在快速估計多個時間序列的模型。如果您只分析一個時間序列，並且可以花費更多時間，建議將 stepwise=FALSE 和 approximation=FALSE。</br>\n非逐步選擇可能會很慢，尤其是對於季節性數據。使用 Hyndman 和 Khandakar（2008）中概述的逐步算法，除了選擇季節性差異的默認方法現在基於季節性強度的估計（Wang、Smith 和 Hyndman，2006），而不是 Canova-Hansen 檢驗。該算法還存在一些其他小的變化。</br>\n<b>值</b><br/>\n一個類為 \"Arima\" 的列表，包含以下組件：<br/>\ncoef: AR、MA 和回歸係數的向量，可以通過 coef 方法提取。<br/>\nsigma2: 創新方差的最大似然估計。<br/>\nvar.coef: 係數 coef 的估計方差矩陣，可以通過 vcov 方法提取。<br/>\nloglik: 最大化的對數似然（差分數據），或用於此的近似值。<br/>\narma: 規範的緊湊形式，作為一個向量給出 AR、MA、季節性 AR 和季節性 MA 係數的數量，以及周期和非季節性和季節性差異的數量。<br/>\naic: 對應於對數似然的 AIC 值。僅對 method = \"ML\" 擬合有效。<br/>\nresiduals: 擬合的創新。<br/>\nseries: 系列 x 的名稱。<br/>\ncode: optim 返回的收斂值。<br/>\nn.cond\t:未用於擬合的初始觀察數量。<br/>\nnobs: 用於擬合的“使用”觀察數量，也可以通過 nobs() 提取，並由 BIC 使用。<br/>\nmodel: 表示用於擬合的卡爾曼濾波器的列表。請參見 KalmanLike。<br/>\n<b>包</b></br>\nforecast</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(auto.arima, package=forecast)\n\t\t\t"
+    "body": "\n            <b>描述</b></br>\n根據 AIC、AICc 或 BIC 值返回最佳 ARIMA 模型。該函數在提供的順序約束內進行可能模型的搜索。內部調用 forecast 包中的 auto.arima\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 用於構建自動 ARIMA 模型的選定變數。\n</li>\n<li>\nstart: 第一次觀察的時間應以年份、月份或年份、季度的格式輸入，例如（如果您的數據按月組織，則 1992,1 代表 1992 年 1 月，或者如果您的數據按季度組織，則 1992,1 代表 1992 年的第一季度。\n</li>\n<li>\nfrequency: 單位時間內的觀察數。示例：每月有 12 次觀察，每年有 4 次觀察。\n</li>\n<li>\nic: 用於模型選擇的信息標準。必須是 \"aic\"、\"aicc\" 或 \"bic\" 之一。\n</li>\n<li>\nplotSeries: 如果為 TRUE，則還將生成時間序列圖。\n</li>\n<li>\nplotResiduals: 如果為 TRUE，則還將繪製殘差。\n</li>\n<li>\npredict: 如果為 TRUE，則還將生成預測值。\n</li>\n<li>\nsavePredictedVals: 將保存預測值。\n</li>\n<li>\nPlotPredictedValues: 預測值也將被繪製。\n</li>\n<li>\ncorrelogram: 如果為 TRUE，則將生成自相關圖。\n</li>\n<li>\nmain: 圖表的主標題\n</li>\n<li>\nylab: Y 軸的標題\n</li>\n<li>\ndataset: 從中選擇變數的數據集名稱。\n</li>\n</ul>\n<b>詳細信息</b></br>\n默認參數旨在快速估計多個時間序列的模型。如果您只分析一個時間序列，並且可以花更多時間，建議您將 stepwise=FALSE 和 approximation=FALSE。\n非逐步選擇可能會很慢，特別是對於季節性數據。使用 Hyndman 和 Khandakar（2008）中概述的逐步算法，除了選擇季節性差異的默認方法現在基於季節性強度的估計（Wang、Smith 和 Hyndman，2006），而不是 Canova-Hansen 測試。該算法還有一些其他小變化。\n<b>值</b><br/>\n一個類別為 \"Arima\" 的列表，包含以下組件：<br/>\ncoef: AR、MA 和回歸係數的向量，可以通過 coef 方法提取。<br/>\nsigma2: 創新方差的 MLE。<br/>\nvar.coef: 係數 coef 的估計方差矩陣，可以通過 vcov 方法提取。<br/>\nloglik: 最大化的對數似然（差分數據的），或用於它的近似值。<br/>\narma: 規範的緊湊形式，作為向量給出 AR、MA、季節性 AR 和季節性 MA 係數的數量，加上周期和非季節性及季節性差異的數量。<br/>\naic: 對應於對數似然的 AIC 值。僅對 method = \"ML\" 擬合有效。<br/>\nresiduals: 擬合的創新。<br/>\nseries: 系列 x 的名稱。<br/>\ncode: optim 返回的收斂值。<br/>\nn.cond\t:未用於擬合的初始觀察數。<br/>\nnobs: 用於擬合的“使用”觀察數，也可以通過 nobs() 提取，並由 BIC 使用。<br/>\nmodel: 表示擬合中使用的卡爾曼濾波器的列表。請參見 KalmanLike。<br/>\n<b>包</b></br>\nforecast</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(auto.arima, package=forecast)\n\t\t\t"
   }
 }

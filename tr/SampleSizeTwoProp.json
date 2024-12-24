@@ -1,0 +1,19 @@
+{
+  "title": "Örneklem Büyüklüğü, İki Oranı Test Etme",
+  "navigation": "İki Oran",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için: her iki grup oranını ve gücü belirtin\nGücü hesaplamak için: her iki grup oranını ve örneklem büyüklüğünü belirtin\nHesaplanabilir oran farkını hesaplamak için: örneklem büyüklüğünü, gücü ve grup 2 oranını belirtin",
+  "n": "Örneklem Büyüklüğü",
+  "power": "Güç (0-1)",
+  "propgrp1": "Grup 1 Oranı",
+  "propgrp2": "Grup 2 Oranı",
+  "ratio": "Grup 1 ve Grup 2 Örneklem Büyüklüğü Oranı",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, İki Oranı Test Etme",
+    "r_help": "help(epi.sscohortc, package ='epiR')",
+    "body": "\nBu, iki örneklem oranları testi için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğer ikisini belirttiğinde örneklem büyüklüğünü, gücü veya etki büyüklüğünü (oranlardaki fark, oran oranı, olasılık oranı) hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa sıfır hipotezini reddetme olasılığı.\n<br/><br/>\n<b>Grup 1 Oranı:</b> Grup 1'deki oranı belirtin\n<br/><br/>\n<b>Grup 2 Oranı:</b> Grup 2'deki oranı belirtin\n<br/><br/>\n<b>Grup 1 ve Grup 2 Örneklem Büyüklüğü Oranı:</b> Örneklem büyüklüklerinin istenen oranını belirtin (grup 1 N, grup 2 N'ye bölünmüştür). 1 oranı eşit örneklem büyüklüklerini ifade eder.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hatası)\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> epiR\n\t\t\t"
+  }
+}

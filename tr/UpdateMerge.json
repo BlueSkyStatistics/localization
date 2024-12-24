@@ -1,0 +1,20 @@
+{
+  "title": "Güncelleme Birleştirme",
+  "navigation": "Güncelleme Birleştirme",
+  "join": "Eşleştirme birleştirme",
+  "description": "Güncelleme birleştirme, bir veri kümesini başka bir veri kümesinden değerlerle günceller.",
+  "out": "Birleştirilmiş veri kümesinin adını girin",
+  "in1": "1. veri kümesini seçin",
+  "in2": "2. veri kümesini seçin",
+  "label1": "Birleştirme Seçenekleri",
+  "upsert": "İlk (sol) veri kümesindeki değişkenleri, ikinci (sağ) veri kümesindeki eşleşmelerle güncelleyin, eşleşmeyenleri ekleyin",
+  "update": "İlk (sol) veri kümesindeki değişkenleri, ikinci (sağ) veri kümesindeki eşleşmelerle güncelleyin, eşleşmeyenleri yok sayın",
+  "insert": "Sadece ilk (sol) veri kümesindeki eşleşmeyenleri ekleyin",
+  "patch": "İlk (sol) veri kümesindeki NA olan değişkenleri, ikinci (sağ) veri kümesindeki eşleşmelerle güncelleyin",
+  "delete": "İlk (sol) veri kümesinden, ikinci (sağ) veri kümesiyle eşleşen satırları silin",
+  "help": {
+    "title": "Güncelleme Birleştirme",
+    "r_help": "help(rows_upsert, package=dplyr)",
+    "body": "\n            <b>Açıklama</b></br>\n            Güncelleme birleştirme, bir veri kümesini, gözlemlerle eşleşen birleştirme değişkeni değerleri için tam değişken adı eşleşmesine dayalı olarak ikinci bir veri kümesinden değerlerle günceller. \n\t\t\t<br/>Birleştirmenin gerçekleştirileceği aktif veri kümesinde ve seçilen hedef veri kümesinde bir veya daha fazla değişken belirtmeniz gerekir.\n\t\t\t<br/>Sonuçlar yeni bir veri kümesinde kaydedilecektir.\n\t\t\t<br/><br/>\n\t\t\t<b>Birleştirme Seçenekleri</b>\n\t\t\t<br/><br/>\n\t\t\t<b>İlk (sol) veri kümesindeki değişkenleri, ikinci (sağ) veri kümesindeki eşleşmelerle güncelleyin, eşleşmeyenleri ekleyin:</b> Bu, sol veri kümesindeki eşleşmeler için değişkenleri güncellemeyi ve eşleşmeyen satırlar için yeni satırlar oluşturmayı birleştirir.\n\t\t\t<br/><br/>\n\t\t\t<b>İlk (sol) veri kümesindeki değişkenleri, ikinci (sağ) veri kümesindeki eşleşmelerle güncelleyin, eşleşmeyenleri yok sayın:</b> Bu, yalnızca sol veri kümesindeki mevcut değişkenleri eşleşmeler için günceller. Eşleşmeyen satırlar yok sayılır.\n\t\t\t<br/><br/>\n\t\t\t<b>Sadece ilk (sol) veri kümesindeki eşleşmeyenleri ekleyin:</b> Bu, sol veri kümesindeki tüm eşleşen satırları sağlam bırakır. Sadece sağ veri kümesindeki eşleşmeyen satırlar sol veri kümesine eklenir.\n\t\t\t<br/><br/>\n\t\t\t<b>İlk (sol) veri kümesindeki NA olan değişkenleri, ikinci (sağ) veri kümesindeki eşleşmelerle güncelleyin, eşleşmeyenleri yok sayın:</b> Bu, eşleşen satırları günceller, ancak yalnızca sol veri kümesindeki değerler NA (yani eksik değerler) olduğunda.\n\t\t\t<br/><br/>\n\t\t\t<b>İlk (sol) veri kümesinden, ikinci (sağ) veri kümesiyle eşleşen satırları silin:</b> Bu, yalnızca sağ veri kümesiyle eşleşen satırları sol veri kümesinden siler.\n\t\t\t<br/><br/>\n            <b>Gerekli R Paketleri:</b> dplyr\n"
+  }
+}

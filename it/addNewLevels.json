@@ -1,0 +1,18 @@
+{
+  "title": "Aggiungi Nuovi Livelli",
+  "navigation": "Aggiungi",
+  "target": "Variabili fattoriali per aggiungere nuovi livelli a",
+  "label1": "Aggiungi nuovi livelli a una o più variabili fattoriali. Salva i risultati in variabili esistenti o crea nuove variabili specificando un prefisso/suffisso. Le nuove variabili saranno create con il prefisso/suffisso aggiunto ai nomi esistenti.",
+  "newLevels": "Inserisci nuovi livelli racchiusi tra virgolette e separati da una virgola, ad esempio \"livello1\",\"livello2\",\"livello3\"",
+  "label2": "Salva nuovi livelli in nuove variabili o sovrascrivi variabili esistenti",
+  "rd3": "Specifica un suffisso (una nuova variabile sarà creata con il suffisso)",
+  "txt3": "Inserisci un suffisso",
+  "rd2": "Specifica un prefisso (una nuova variabile sarà creata con il prefisso)",
+  "txt4": "Inserisci un prefisso",
+  "rd1": "Sovrascrivi variabili esistenti",
+  "help": {
+    "title": "Aggiungi Nuovi Livelli",
+    "r_help": "help(fct_expand, package=\"forcats\")",
+    "body": "\n<b>NOTA: NON RACCHIUDERE I LIVELLI TRA VIRGOLETTE DOPPIE O SINGOLE, NON POSSONO ESSERCI SPAZI NEI NOMI DEI LIVELLI. INSERISCI I LIVELLI SEPARATI DA VIRGOLA NEL FORMATO LIVELLO1,LIVELLO2,LIVELLO3</b></br>\n<b>Descrizione</b></br>\nAggiungi livelli aggiuntivi a un fattore. Aggiungi nuovi livelli a una o più variabili fattoriali. I risultati possono essere inseriti in variabili esistenti (sovrascrivendo) o creando nuove variabili specificando un prefisso/suffisso. Le nuove variabili saranno create con il prefisso/suffisso aggiunto ai nomi esistenti. \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nf: Un fattore (o vettore di caratteri).\n</li>\n<li>\n...: Livelli aggiuntivi da aggiungere al fattore. I livelli che esistono già saranno silenziosamente ignorati.\n</li>\n</ul>\n<b>Esempi</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Pacchetto</b></br>\nforcats</br>\n<b>Aiuto</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+  }
+}

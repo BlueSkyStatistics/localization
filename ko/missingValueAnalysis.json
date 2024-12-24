@@ -1,0 +1,12 @@
+{
+  "title": "결측값 분석, 행 레이아웃",
+  "navigation": "행 레이아웃",
+  "subsetvars": "결측값 분석을 위한 변수 선택",
+  "chk1": "결측값 수에 따라 결과 정렬",
+  "chk2": "데이터에 결측값의 누적 합계 추가",
+  "help": {
+    "title": "결측값 분석, 행 레이아웃",
+    "r_help": "help(miss_var_summary, package ='naniar')",
+    "body": "\n<b>설명</b></br>\n결측값을 분석하고 결과를 행으로 표시하며, 변수 수준에서 결측값의 요약 정보를 표시하고 분석 중인 변수의 각 행에 대한 결측값 수를 나열합니다. </br>\n각 변수에 대한 결측값 수, 백분율 및 변수 순서에 따른 결측값의 누적 합계를 요약합니다. 기본적으로 각 변수에서 가장 많은 결측값 순으로 정렬됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nmiss_var_summary(data, order = FALSE, add_cumsum = FALSE, ...)\n</code> <br/>\n인수\n<ul>\n<li>\ndata: 데이터프레임\n</li>\n<li>\norder: 결과를 n_miss로 정렬할지 여부를 나타내는 논리값. 기본값은 TRUE입니다. FALSE인 경우 변수의 순서는 입력된 순서입니다.\n</li>\n<li>\nadd_cumsum: 데이터에 결측값의 누적 합계를 추가할지 여부를 나타내는 논리값. 이는 비응답 패턴을 탐색할 때 유용할 수 있습니다. 이는 함수에 처음 제시된 변수의 결측값의 누적 합계로 계산됩니다.</br>\n</li>\n</ul>\n<b>세부정보</b></br>\n각 변수의 결측 데이터 비율에 대한 티블<br/>\n<b>패키지</b></br>\nnaniar</br>\n<b>도움말</b></br>\nhelp(miss_var_summary, package ='naniar')<br/><br/>\n<b>설명</b></br>\n데이터의 각 사례에 대한 결측값 수, 백분율 및 변수 순서에 따른 결측값의 누적 합계를 요약합니다. 기본적으로 각 변수에서 가장 많은 결측값 순으로 정렬됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nmiss_case_summary(data, order = TRUE, add_cumsum = FALSE, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndata: 데이터프레임\n</li>\n<li>\norder: 결과를 n_miss로 정렬할지 여부를 나타내는 논리값. 기본값은 TRUE입니다. FALSE인 경우 변수의 순서는 입력된 순서입니다.\n</li>\n<li>\nadd_cumsum: 데이터에 결측값의 누적 합계를 추가할지 여부를 나타내는 논리값. 이는 비응답 패턴을 탐색할 때 유용할 수 있습니다. 이는 함수에 처음 제시된 변수의 결측값의 누적 합계로 계산됩니다.\n</li>\n</ul>\n<b>값</b><br/>\n각 사례의 결측 데이터 비율에 대한 티블.<br/>\n<b>패키지</b></br>\nnaniar</br>\n<b>도움말</b></br>\nhelp(miss_case_summary, package ='naniar')\n"
+  }
+}

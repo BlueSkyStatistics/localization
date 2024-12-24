@@ -1,0 +1,10 @@
+{
+  "title": "Resumir Um Modelo",
+  "navigation": "Resumir um modelo",
+  "modelselector1": "Selecionar um modelo",
+  "help": {
+    "title": "Resumir Um Modelo",
+    "r_help": "ajuda(resumo)",
+    "body": "\n                <b>Descrição</b></br>\nosummary é uma função genérica usada para produzir resumos dos resultados de várias funções de ajuste de modelo. A função invoca métodos particulares que dependem da classe do primeiro argumento, por exemplo, summary.lm (modelo linear), summary.glm (modelo linear generalizado)\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nsumário(objeto)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobjeto: um objeto para o qual um resumo é desejado.\n</li>\n</ul>\n<b>Valor</b><br/>\nA forma do valor retornado pelo resumo depende da classe de seu argumento. Consulte a documentação dos métodos particulares, ou seja, ajuda(summary.lm), ajuda(summary.glm) para detalhes do que é produzido por esse método.</br>\n<b>Pacote</b></br>\nbásico</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R ajuda(resumo)\n                "
+  }
+}

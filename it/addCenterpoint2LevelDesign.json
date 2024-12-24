@@ -1,0 +1,12 @@
+{
+  "title": "Aggiungi punto centrale a un Design a 2 livelli (quantitativo) senza punto centrale precedente) - il design selezionato è il design attivo nella griglia dell'interfaccia utente del dataset",
+  "navigation": "Aggiungi punto centrale Design a 2 livelli (Quantitativo)",
+  "datasetname": "Nome del Design modificato con punti centrali",
+  "numOfCenterPts": "Numero di punti centrali (se utilizzati, devono essere almeno 2)",
+  "centerPointDistribution": "Numero di posizioni per la distribuzione dei punti centrali (deve essere >1)",
+  "help": {
+    "title": "Aggiungi punto centrale a un Design a 2 livelli (senza punto centrale precedente)",
+    "r_help": "help(add.center, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tfunzione add.center per aggiungere punti centrali a un design fattoriale frazionale a 2 livelli. Tutti i fattori devono essere quantitativi \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer la guida dettagliata - usa R help(add.center, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

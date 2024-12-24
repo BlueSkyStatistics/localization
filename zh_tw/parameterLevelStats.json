@@ -1,12 +1,12 @@
 {
-  "title": "參數水平估計",
+  "title": "參數級別估計",
   "navigation": "參數估計",
-  "label1": "支持以下類別的模型，類別在下面括號中列出",
-  "label2": "線性模型 (lm)，廣義線性模型 (glm)，多項式對數線性模型 (multinom)，分位數回歸 (rq)，穩健線性回歸 (rlm)，生存曲線對象 (survfit)，線性混合效應模型 (lme)，比例風險回歸對象 (coxph)，參數生存回歸模型 (survreg)，有序邏輯/Probit 回歸 (polr)，因子分析 (factanal)，Lasso 和彈性網正則化的廣義線性模型 (glmnet)",
-  "modelselector1": "選擇一個模型",
+  "label1": "支持以下類別的模型，類別在下面的括號中列出",
+  "label2": "線性模型 (lm)、廣義線性模型 (glm)、多項式對數線性 (multinom)、分位數回歸 (rq)、穩健線性回歸 (rlm)、生存曲線對象 (survfit)、線性混合效應模型 (lme)、比例風險回歸對象 (coxph)、參數生存回歸模型 (survreg)、有序邏輯/Probit 回歸 (polr)、因子分析 (factanal)、Lasso 和彈性網正則化廣義線性模型 (glmnet)",
+  "modelselector1": "選擇模型",
   "help": {
-    "title": "參數水平估計",
+    "title": "參數級別估計",
     "r_help": "help(tidy, package ='broom')",
-    "body": "\n                <b>描述</b></br>\n顯示所選模型的參數估計\n<br/>\n<b>用法</b>\n<br/>\n<code> \ntidy(x, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 要轉換為單行數據框的模型或其他 R 對象\n</li>\n</ul>\n<b>詳細信息</b></br>\n顯示以下模型的參數估計</br>\n線性模型 (模型類別 lm)</br>\n廣義線性模型 (模型類別 glm)</br>\n多項式對數線性模型 (模型類別 multinom)</br>\n有序邏輯或 Probit 回歸 (模型類別 polr)</br>\nLasso 和彈性網正則化的廣義線性模型 (模型類別 glmnet)</br>\n穩健線性回歸 (模型類別 rlm)</br>\n分位數回歸 (模型類別 rq)</br>\n線性混合效應模型 (lme)</br>\n比例風險回歸對象 (coxph)</br>\n參數生存回歸模型 (survreg)</br>\n因子分析 (factanal)</br>\n<b>值</b></br>\n一個 tibble::tibble()，包含有關模型組件的信息。</br>\nterm: 回歸項的名稱。</br>\nestimate: 回歸項的估計值。</br>\nstd.error: 回歸項的標準誤差。</br>\nstatistic: 統計量的值，幾乎總是 T 統計量，用於假設回歸項不為零。</br>\np.value: 與觀察到的統計量相關的雙側 p 值。</br>\nconf.low: 回歸項的置信區間的低端。僅在 conf.int = TRUE 時包含。</br>\nconf.high: 回歸項的置信區間的高端。僅在 conf.int = TRUE 時包含。</br>\n如果線性模型是 mlm 對象（多重線性模型），則還有一列：</br>\nresponse: 系數對應的響應列（通常為 Y1、Y2 等）</br>\n<b>包</b></br>\nbroom</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋的右上角的 R 圖標或在 R 語法編輯器中運行以下命令 help(tidy, package ='broom')\n"
+    "body": "\n                <b>描述</b></br>\n顯示所選模型的參數估計\n<br/>\n<b>用法</b>\n<br/>\n<code> \ntidy(x, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 要轉換為單行數據框的模型或其他 R 對象\n</li>\n</ul>\n<b>詳細信息</b></br>\n顯示以下模型的參數估計</br>\n線性模型 (模型類別 lm)</br>\n廣義線性模型 (模型類別 glm)</br>\n多項式對數線性模型 (模型類別 multinom)</br>\n有序邏輯或 Probit 回歸 (模型類別 polr)</br>\nLasso 和彈性網正則化廣義線性模型 (模型類別 glmnet)</br>\n穩健線性回歸 (模型類別 rlm)</br>\n分位數回歸 (模型類別 rq)</br>\n線性混合效應模型 (lme)</br>\n比例風險回歸對象 (coxph)</br>\n參數生存回歸模型 (survreg)</br>\n因子分析 (factanal)</br>\n<b>值</b></br>\n一個 tibble::tibble()，包含有關模型組件的信息。</br>\nterm: 回歸項的名稱。</br>\nestimate: 回歸項的估計值。</br>\nstd.error: 回歸項的標準誤差。</br>\nstatistic: 統計量的值，幾乎總是 T 統計量，用於假設回歸項不為零。</br>\np.value: 與觀察到的統計量相關的雙側 p 值。</br>\nconf.low: 回歸項的置信區間的低端。僅在 conf.int = TRUE 時包含。</br>\nconf.high: 回歸項的置信區間的高端。僅在 conf.int = TRUE 時包含。</br>\n如果線性模型是 mlm 對象（多重線性模型），則有一個額外的列：</br>\nresponse: 係數對應的響應列（通常是 Y1、Y2 等）</br>\n<b>包</b></br>\nbroom</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標或在 R 語法編輯器中運行以下命令 help(tidy, package ='broom')\n"
   }
 }

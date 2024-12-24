@@ -2,17 +2,17 @@
   "title": "从现有的FrF2设计创建中央复合（定量）设计",
   "navigation": "创建中央复合（定量）设计",
   "datasetname": "设计名称",
-  "datasetFrF2": "选择一个现有的FrF2（定量）设计",
+  "datasetFrF2": "选择现有的FrF2（定量）设计",
   "alpha": "星点数量（alpha）",
   "alphalbl": "“正交”、“可旋转”或指示星点位置的数字",
-  "numOfCenterPts": "中心点数量，或两个用逗号分隔的数字（用于立方体和星形部分）",
-  "blockName": "区块名称",
+  "numOfCenterPts": "中心点数量，或用逗号分隔的两个数字（用于立方体和星形部分）",
+  "blockName": "块的名称",
   "lbl1": "您可能不需要更改随机化设置",
-  "randomseeds": "随机化种子",
-  "randomizationChk": "随机化设计生成",
+  "randomseeds": "随机化的种子",
+  "randomizationChk": "随机生成设计",
   "help": {
     "title": "从现有的FrF2设计创建中央复合（定量）设计",
-    "r_help": "帮助(ccd.augment, package = DoE.wrapper)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tccd.augment函数用于在决定延迟的情况下，通过星形部分扩展现有的分数因子（使用rsm包）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R帮助(ccd.augment, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为因素的示例数据集文件，适用于FrF2设计的CCD.xlsx。通过文件打开菜单在数据网格中打开文件\n\t\t\t\t<br/>\n\t\t\t\t首先创建FrF2设计（使用4个因素） - 选择运行次数选项为0，分辨率为5。\n\t\t\t\t然后从上述FrF2设计创建中央复合设计，保持此中央复合设计对话框/UI中的所有默认选项\n\t\t\t\t<br/>\n\t\t\t"
+    "r_help": "help(ccd.augment, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tccd.augment函数用于在决定进行顺序程序时，增强现有的分数因子设计与星形部分（使用rsm包）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R help(ccd.augment, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为factors for FrF2 design for CCD.xlsx的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t\t首先创建FrF2设计（使用4个因子） - 选择运行次数为0，分辨率为5的选项。\n\t\t\t\t然后从上述FrF2设计创建中央复合设计，保持此中央复合设计对话框/UI上的所有默认选项\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

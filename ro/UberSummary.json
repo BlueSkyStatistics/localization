@@ -1,11 +1,11 @@
 {
   "title": "Descriptive",
-  "ChkboxShowOnlyTopFewFactors": "Afișați numerele doar pentru cele mai importante N niveluri de factori",
+  "ChkboxShowOnlyTopFewFactors": "Arată numerele doar pentru cele mai importante N niveluri de factori",
   "txtNumTopFactorsToShow": "Introduceți o valoare pentru N",
   "skew": "Asimetrie",
   "mad": "Devierea absolută mediană",
   "kurtos": "Kurtosis",
-  "label2": "Notă: Când caseta de selectare nu este bifată, numerele pentru TOATE nivelurile vor fi afișate. Acest lucru poate dura un timp considerabil dacă aveți multe niveluri de factori.",
+  "label2": "Notă: Când caseta de selectare este debifată, numerele pentru TOATE nivelurile vor fi afișate. Acest lucru poate dura un timp considerabil dacă aveți multe niveluri de factori",
   "navigation": "Descriptive",
   "tvarbox1": "Variabile selectate",
   "tvarbox2": "Grupare după",
@@ -14,17 +14,18 @@
   "mean": "Medie",
   "median": "Mediană",
   "sum": "Sumă",
-  "sd": "Deviație standard",
-  "stderror": "Eroare standard a mediei",
-  "iqr": "Interval intercuartilic",
+  "sd": "Deviația standard",
+  "stderror": "Eroarea standard a mediei",
+  "iqr": "Intervalul intercuartilic",
   "quantiles": "Cuantile",
-  "probs": "Specificați cuantile (dacă este selectat cuartilul)",
-  "addIsstatnames": "Nume de funcții statistice suplimentare separate prin virgulă, de exemplu var)",
+  "probs": "Specificați cuantilele (dacă este selectat cuartilul)",
+  "addIsstatnames": "Nume suplimentare de funcții statistice separate prin virgulă, de exemplu, var)",
   "label1": "Opțiuni pentru variabile numerice",
-  "label3": "Opțiuni pentru variabile de factor",
+  "label3": "Opțiuni pentru variabilele de factor",
+  "label4": "Statistici sumare în coloane",
   "help": {
     "title": "Descriptive",
     "r_help": "",
-    "body": "\n<b>Descriere</b></br>\nAfișează următoarele statistici descriptive:</br>\nmin, max, medie, mediană, sumă, sd, eroare standard, iqr, cuantile. Dacă sunt selectate cuantile, puteți specifica cuantilele necesare separate prin virgulă.</br>\nÎn plus față de acestea, utilizatorul poate trece o listă de nume de funcții statistice separate prin virgulă, de exemplu var.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), long_table=FALSE, datasetName=\"numele dataset-ului\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variabilele de scară selectate (de exemplu Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: una sau mai multe variabile de factor pentru grupare (de exemplu Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Lista de funcții. Cele care sunt setate pe TRUE vor fi executate. (de exemplu min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilitățile cuantilelor\n</li>\n<li>\nadditionalStats: Funcția statistică suplimentară pe care utilizatorul o poate trece (de exemplu var)\n</li>\n<li>\ndatasetName: Numele dataset-ului din care sunt alese datasetColumnObjects și groupByColumnObjects\n</li>\n<li>\nlong_table: Opțiunea tabel lung a fost introdusă pentru a acomoda analiza efectuată pe un număr mare de variabile. Alegerea formatului lung controlează lățimea tabelului de ieșire, facilitând vizualizarea rezultatelor fără a fi nevoie să derulați spre dreapta în fereastra de ieșire.\n</li>\n</ul>\n<b>Valoare</b></br>\nUn obiect de clasă \"data.frame\", care oferă rezultatele pentru fiecare funcție pe fiecare variabilă.</br>\n<b>Exemple</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Vânzări', 'IT','Vânzări','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Pachet</b></br>\nBlueSky</br>\n<b>Ajutor</b></br>\nAjutorul R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă aveți nevoie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
+    "body": "\n<b>Descriere</b></br>\nAfișează următoarele statistici descriptive:</br>\nmin, max, medie, mediană, sumă, sd, eroare standard, iqr, Cuantile. Dacă Cuantile este selectat, puteți specifica cuantilele necesare separate prin virgulă.</br>\nÎn plus față de acestea, utilizatorul poate transmite o listă de nume de funcții statistice separate prin virgulă, de exemplu, var.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), long_table=FALSE, datasetName=\"numele setului de date\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variabilele de scară selectate (de exemplu, Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: una sau mai multe variabile de factor pentru grupare (de exemplu, Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Lista funcțiilor. Cele setate pe TRUE vor fi executate. (de exemplu, min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilitățile cuantilelor\n</li>\n<li>\nadditionalStats: Funcția statistică suplimentară pe care utilizatorul o poate transmite (de exemplu, var)\n</li>\n<li>\ndatasetName: Numele setului de date din care sunt alese datasetColumnObjects și groupByColumnObjects\n</li>\n<li>\nlong_table: Opțiunea tabelului lung este introdusă pentru a acomoda analiza efectuată pe un număr mare de variabile. Alegerea formatului lung controlează lățimea tabelului de ieșire, făcându-l ușor de vizualizat fără a fi nevoie să derulați spre dreapta în fereastra de ieșire. \n</li>\n</ul>\n<b>Valoare</b></br>\nUn obiect de clasă \"data.frame\", oferind rezultatele pentru fiecare funcție pe fiecare variabilă.</br>\n<b>Exemple</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Pachet</b></br>\nBlueSky</br>\n<b>Ajutor</b></br>\nAjutor R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă trebuie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
   }
 }

@@ -1,0 +1,18 @@
+{
+  "title": "Tamanho da Amostra, Teste de Uma Média ou Médias Emparelhadas",
+  "navigation": "Uma Média ou Médias Emparelhadas",
+  "howtouse": "Especifique dois dos tamanhos da amostra, a diferença entre as médias e o poder, e o terceiro será calculado",
+  "n": "Tamanho da Amostra",
+  "delta": "Diferença Entre as Médias",
+  "power": "Poder (0-1)",
+  "sd": "Desvio Padrão",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Uma Média",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste t de uma amostra de uma média ou um teste de médias emparelhadas. Ele calcula o tamanho da amostra, a diferença entre as médias ou o poder, quando o usuário \nespecifica dois deles.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Diferença Entre as Médias:</b> Se for um teste t de uma amostra, especifique a diferença entre a média sob a hipótese alternativa e a média sob a hipótese nula. Se for um\nteste t emparelhado, especifique a diferença entre as médias emparelhadas sob a hipótese alternativa.\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Desvio Padrão:</b> Especifique uma estimativa do desvio padrão da medida de resultado. Para testes emparelhados, este é o desvio padrão das diferenças emparelhadas.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats, broom\n\t\t\t"
+  }
+}

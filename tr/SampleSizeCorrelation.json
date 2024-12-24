@@ -1,0 +1,18 @@
+{
+  "title": "Örneklem Büyüklüğü, Test Korelasyonu",
+  "navigation": "Korelasyon",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için: korelasyonu ve gücü belirtin\nGücü hesaplamak için: örneklem büyüklüğünü ve korelasyonu belirtin\nTespit edilebilir korelasyonu hesaplamak için: örneklem büyüklüğünü ve gücü belirtin",
+  "n": "Örneklem Büyüklüğü",
+  "corr": "Korelasyon (-1 ile 1 arasında)",
+  "power": "Güç (0-1)",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "greater": "Büyüktür",
+  "less": "Küçüktür",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Test Korelasyonu",
+    "r_help": "help(pwr.r.test, package ='pwr')",
+    "body": "\nBu, Pearson korelasyon katsayısı için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğer ikisini belirttiğinde örneklem büyüklüğünü, gücü veya korelasyonu hesaplar. Null hipotez korelasyonu 0'dır.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Korelasyon:</b> Tespit edilecek korelasyonu belirtin\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa null hipotezi reddetme olasılığı.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hatası)\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı, bir taraftan büyük (tek taraflı) veya bir taraftan küçük (tek taraflı) olup olmadığını belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> pwr\n\t\t\t"
+  }
+}

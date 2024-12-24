@@ -1,0 +1,32 @@
+{
+  "title": "지수 평활",
+  "navigation": "지수 평활",
+  "destination": "예측할 변수",
+  "firstObservation": "첫 번째 관측의 시간 예: 1: 1961,1을 입력하여 1961년 1월, 예: 2: 1961,3을 입력하여 1961년 3분기, 예: 3: 연속 시리즈의 경우 1을 입력",
+  "frequency": "시간 단위당 관측 수 예: 1: 연간 12회의 관측을 위해 12를 입력, 예: 2: 분기당 1회의 관측을 위해 4를 입력, 예: 3: 연속 시리즈의 경우 1을 입력.",
+  "label1": "플롯",
+  "plotSeries": "시리즈 플롯",
+  "yaxisLabel": "Y 축 레이블",
+  "mainTitle": "주요 제목",
+  "label2": "적합된 값에 대한 옵션",
+  "saveFitted": "적합된 값 저장",
+  "fittedValsDatasetName": "적합된 값을 저장할 데이터셋 이름 지정",
+  "oriVsFitted": "원본 대 적합 플롯",
+  "plotResiduals": "잔차 플롯",
+  "label3": "모델을 사용하여 예측",
+  "predict": "모델을 사용하여 예측하기",
+  "periodToPredict": "예측할 간격 수 지정",
+  "confInterval": "신뢰 구간을 백분율로 지정 예: 95는 95%",
+  "savePredictedVals": "예측된 값 저장",
+  "predictedValsDatasetName": "예측된 값을 저장할 데이터셋 이름 지정",
+  "plotPredicted": "예측된 값 플롯",
+  "correlogram": "상관도 생성",
+  "maxlag": "최대 지연 입력",
+  "Boxtest": "Ljung-Box 테스트",
+  "advanced_lbl": "고급",
+  "help": {
+    "title": "지수 평활",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>설명</b></br>\nBSkyHoltWintersSeasonal은 주어진 시계열의 Holt-Winters 필터링을 계산하는 stats 패키지의 HoltWinters에 대한 래퍼 함수입니다. 알려지지 않은 매개변수는 제곱 예측 오차를 최소화하여 결정됩니다. 내부적으로 계절 구성 요소에 대해 gamma 매개변수가 FALSE로 설정된 HoltWinters를 호출하며, Holt-Winters 필터의 beta 매개변수는 지수 평활을 수행하기 위해 FALSE로 설정되고 계절 = \"None\"입니다.<br/> \n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,dataset=\"Dataset2\")\n</code> <br/>\n인수\n<ul>\n<li>\nvars: 모델을 구축할 변수를 선택합니다.\n</li>\n<li>\nstart: 첫 번째 관측의 시간은 연도, 월 또는 연도, 분기 형식으로 입력해야 합니다. 예: (데이터가 월별로 구성된 경우 1992,1은 1992년 1월 또는 데이터가 분기별로 구성된 경우 1992,1은 1992년 첫 분기를 나타냅니다.\n</li>\n<li>\nfrequency: 단위 시간 내 관측 수. 예: 월별의 경우 연간 12회의 관측이 있습니다. 분기별의 경우 연간 4회의 관측이 있습니다.\n</li>\n<li>\nexponential: 지수 평활이 수행될지 여부를 결정합니다. 값이 TRUE로 설정됩니다.\n</li>\n<li>\nseasonal: 지수 평활을 위한 문자 문자열 \"None\"입니다.\n</li>\n<li>\nplotSeries: TRUE인 경우 시계열 플롯도 생성됩니다.\n</li>\n<li>\nsaveFitted: TRUE인 경우 적합된 값이 저장됩니다.\n</li>\n<li>\nplotOriginalandForecast: 원본 및 예측된 시리즈 플롯\n</li>\n<li>\npredict: TRUE인 경우 예측된 값도 생성됩니다.\n</li>\n<li>\nsavePredictedVals: 예측된 값이 저장됩니다.\n</li>\n<li>\nplotPredictedValues: 예측된 값도 플롯됩니다.\n</li>\n<li>\ncorrelogram: TRUE인 경우 상관도가 생성됩니다.\n</li>\n<li>\nmain: 플롯의 주요 제목\n</li>\n<li>\nylab: Y 축의 제목\n</li>\n<li>\ndataset: 변수가 선택된 데이터셋의 이름\n</li>\n</ul>\n<b>값</b><br/>\n\"HoltWinters\" 클래스의 객체, 필터링된 시리즈와 레벨, 추세 및 계절 구성 요소에 대한 열이 포함된 다중 시계열 목록입니다. 동시적으로 추정됩니다(즉, 시간 t에서 시리즈의 끝이 아닙니다).<br/>\nx: 원본 시리즈<br/>\nalpha: 필터링에 사용된 alpha<br/>\nbeta: 필터링에 사용된 beta<br/>\ngamma: 필터링에 사용된 gamma<br/>\ncoefficients: 레벨, 추세 및 계절 구성 요소에 대한 추정 값을 포함하는 이름이 지정된 구성 요소 a, b, s1, ..., sp가 포함된 벡터<br/>\nseasonal: 지정된 계절 매개변수<br/>\nSSE: 최적화에서 달성된 최종 제곱 오차의 합<br/>\ncall: 사용된 호출<br/>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 오버레이의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오. help(HoltWinters , package=stats)\n\t\t\t"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Geometrik Dağılımdan Örnek",
+  "navigation": "Geometrik Dağılımdan Örnek",
+  "entrdsname": "Veri seti için isim girin",
+  "prob": "Olasılık",
+  "lblnoofsamples": "Örnek sayısı (satırlar)",
+  "lblnoofobsv": "Gözlem sayısı (sütunlar)",
+  "lblseed": "Tohum",
+  "lblAddtoDS": "Veri setine ekle",
+  "chklbl1": "Örnek ortalamaları",
+  "chklbl2": "Örnek toplamları",
+  "chklbl3": "Örnek standart sapmaları",
+  "help": {
+    "title": "Geometrik Dağılımdan Örnek",
+    "r_help": "help(rgeom, package=stats)",
+    "body": "\n\n            <b>Açıklama</b>\n            <br/>\n            Geometrik dağılım için yoğunluk, dağılım fonksiyonu, kuantil fonksiyonu ve rastgele üretim.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                dgeom(x, prob, log = FALSE)\n                <br/>\n                pgeom(q, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qgeom(p, prob, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rgeom(n, prob)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : Başarı gerçekleşmeden önce Bernoulli denemelerinde başarısızlık sayısını temsil eden kuantillerin vektörü.</li>\n                \n                \n                <li>p : Olasılık vektörü.</li>\n                \n                \n                <li>n : Gözlem sayısı. Eğer length(n) > 1 ise, gerekli olan uzunluk alınır.</li>\n                \n                \n                <li>prob : Her denemedeki başarı olasılığı. 0 < prob <= 1.</li>\n                \n                \n                <li>log, log.p : mantıksal; Eğer TRUE ise, olasılıklar p log(p) olarak verilir.</li>\n                \n                \n                <li>lower.tail : mantıksal; Eğer TRUE (varsayılan), olasılıklar P[X ≤ x] olarak, aksi takdirde P[X > x] olarak verilir.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Ayrıntılar</b>\n            <br/>\n            prob = p olan geometrik dağılımın yoğunluğu\n            <br/>\n            <code>\n                p(x) = p (1-p)^x\n                x = 0, 1, 2, …, 0 < p ≤ 1.\n            </code>\n            <br/>\n            Eğer x'in bir elemanı tam sayı değilse, dgeom'un sonucu sıfırdır ve bir uyarı verir.\n            <br/>\n            Kuantil, F(x) ≥ p olan en küçük x değeridir, burada F dağılım fonksiyonudur.\n            <br/>\n            <br/><b>Değer</b>\n            <br/>\n            dgeom yoğunluğu verir, pgeom dağılım fonksiyonunu verir, qgeom kuantil fonksiyonunu verir ve rgeom rastgele sapmalar üretir.\n            <br/>\n            Geçersiz prob, NaN döndürür ve bir uyarı verir.\n            <br/>\n            Sonucun uzunluğu rgeom için n tarafından belirlenir ve diğer fonksiyonlar için sayısal argümanların uzunluklarının maksimumudur.\n            <br/>\n            n dışındaki sayısal argümanlar, sonucun uzunluğuna göre yeniden kullanılır. Mantıksal argümanların yalnızca ilk elemanları kullanılır.            \n"
+  }
+}

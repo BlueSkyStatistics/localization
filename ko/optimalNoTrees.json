@@ -1,0 +1,16 @@
+{
+  "title": "최적의 나무 수",
+  "navigation": "최적화",
+  "dependentvar": "종속 변수",
+  "independentvars": "독립 변수(들)",
+  "label1": "나무 시뮬레이션 설정",
+  "startval": "시작 값",
+  "endval": "종료 값",
+  "stepval": "단계 값",
+  "mtry": "mtry",
+  "help": {
+    "title": "최적의 나무 수",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>설명</b></br>\n기본 mtry 값을 시작으로, randomForest를 위한 ntree(성장할 나무 수)의 최적 값을 (Out-of-Bag 오류 추정에 대해) 검색합니다. 함수 BSkyMultiRandomForest는 아래에 정의된 인수로 randomForest 함수를 호출합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx : 예측 변수의 데이터 프레임 또는 행렬, 또는 적합할 모델을 설명하는 공식(인쇄 방법의 경우, randomForest 객체).\n</li>\n<li>\ny : 응답 벡터. 만약 팩터라면 분류가 가정되며, 그렇지 않으면 회귀가 가정됩니다. 생략하면 randomForest는 비지도 모드로 실행됩니다.\n</li>\n<li>\nstartval : randomForest()의 ntree 인수에 대한 시작 값.\n</li>\n<li>\nendval : randomForest()의 ntree 인수에 대한 종료 값.\n</li>\n<li>\nstepval : startval이 endval 값에 도달할 때까지 매 반복마다 증가해야 하는 수.\n</li>\n<li>\nmtry : 각 분할에서 후보로 무작위로 샘플링된 변수의 수. 분류(변수의 수 p에 대한 sqrt(p))와 회귀(p/3)에 대해 기본값이 다르다는 점에 유의하십시오.\n</li>\n</ul>\n<b>값</b><br/>\n최적의 나무 수를 인쇄합니다. 또한 ntree와 해당 Out-of-Bag 오류가 포함된 표를 표시합니다.<br/>\n<b>패키지</b></br>\nrandomForest​;BlueSky</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오: help(randomForest,package='randomForest')\n                "
+  }
+}

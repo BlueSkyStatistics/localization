@@ -1,0 +1,17 @@
+{
+  "title": "Risk Farkının Örneklem Büyüklüğü, Hassasiyeti",
+  "navigation": "Risk Farkı",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n1": "Grup 1 Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "ratio": "Grup 1 ile Grup 2 Örneklem Büyüklüğü Oranı",
+  "prop1": "Grup 1 Sonuç Oranı",
+  "prop2": "Grup 2 Sonuç Oranı",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "method": "Güven Aralığı Yöntemi",
+  "help": {
+    "title": "Risk Farkının Örneklem Büyüklüğü, Hassasiyeti",
+    "r_help": "help(prec_riskdiff, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak oranlardaki fark için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Grup 1 Örneklem Büyüklüğü:</b> Grup 1'deki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığının genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>Grup 1 ile Grup 2 Örneklem Büyüklüğü Oranı:</b> Grup 2 örneklem büyüklüğünün grup 1 örneklem büyüklüğüne oranını belirtin. 1 değeri eşit örneklem büyüklüklerini ifade eder.\n<br/><br/>\n<b>Grup 1 Sonuç Oranı:</b> Grup 1'de 'pozitif' sonuca sahip deneklerin oranını belirtin\n<br/><br/>\n<b>Grup 2 Sonuç Oranı:</b> Grup 2'de 'pozitif' sonuca sahip deneklerin oranını belirtin\n<br/><br/>\nRisk farkının, grup 1'deki oran ile grup 2'deki oran arasındaki fark olarak hesaplanacağını unutmayın.\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Güven Aralığı Yöntemi:</b> Kullanılacak güven aralığı türünü belirtin. Newcombe (newcombe), tek bir oran için wilson skoru yöntemine dayanan bir güven aralığı önermiştir. Süreklilik düzeltmesi olmadan güven aralığı, Newcombe (1998) 'deki 10. denklemden uygulanmıştır. Miettinen-Nurminen (mn), kısıtlı maksimum olasılık tahmini için kapalı bir form denklemi sağlar. Uygulama, Yongyi Min tarafından sağlanan koddan yapılmıştır. Agresti-Caffo (ac) güven aralığı, 2 x 2 tablosunun her hücresine 1 başarı ekleyerek Wald güven aralığına dayanmaktadır (bkz. Agresti ve Caffo 2000).\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Kappa di Cohen",
+  "navigation": "Kappa di Cohen",
+  "obs1var": "Osservatore 1:",
+  "obs2var": "Osservatore 2:",
+  "cilevel": "Livello di Confidenza:",
+  "label1": "Pesi delle Categorie",
+  "equal": "Cicchetti-Allison (spaziatura uguale)",
+  "quadratic": "Fleiss-Cohen (quadratico)",
+  "agreeplot": "Grafico di accordo e statistiche di Bangdiwala",
+  "help": {
+    "title": "Kappa di Cohen",
+    "r_help": "help(Kappa,package=vcd)",
+    "body": "\n                <b>Descrizione</b></br>\nIl kappa di Cohen misura l'accordo tra due osservatori che misurano gli stessi soggetti. Il kappa non pesato è per categorie non ordinate, mentre il kappa pesato è per categorie ordinate. Per il kappa pesato, maggiore peso viene dato più le categorie sono vicine. Il kappa può variare tra -1 e 1, con 1 che indica un accordo perfetto e 0 non migliore del caso. Valori negativi indicano un accordo peggiore del caso da solo, ma è raro nella pratica. Gli osservatori devono misurare i soggetti sulla stessa scala con tutte le categorie utilizzate da ciascun osservatore. Questo produce una tabella di contingenza quadrata. Una tabella di contingenza e le statistiche kappa sono fornite.</br>\nOsservatore 1: Variabile contenente i valori forniti da un osservatore; può essere sia numerico che un fattore</br>\nOsservatore 2: Variabile contenente i valori forniti da un secondo osservatore; può essere sia numerico che un fattore</br>\nLivello di Confidenza: Livello desiderato dell'intervallo di confidenza per le statistiche kappa</br>\nPesi delle Categorie: Peso desiderato per i livelli di disaccordo delle categorie</br>\nGrafico di accordo e statistiche di Bangdiwala: opzione per produrre un grafico di accordo con statistiche di Bangdiwala</br>\n<b>Pacchetto</b></br>\ngmodels;vcd</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(Kappa,package=vcd) creando un blocco di codice R cliccando + nella finestra di output\n                "
+  }
+}

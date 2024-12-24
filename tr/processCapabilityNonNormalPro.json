@@ -1,0 +1,29 @@
+{
+  "title": "Süreç Yeterliliği (Normal Olmayan)",
+  "navigation": "Süreç Yeterliliği (Normal Olmayan)",
+  "printObjectSummaryChk": "Süreç yeterliliği için QCC nesne özetini yazdır",
+  "label1": "Verilere en uygun dağılım fonksiyonunu seçin",
+  "variableSelcted": "Analiz etmek için bir değişken (gözlemlenen veriler) seçin",
+  "rowsTobeUsed": "Seçildiğinde, süreç yeterliliğini analiz etmek için kullanılacak satırlar (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "lower": "LSL - alt spesifikasyon limitinin sayısal değeri (tek taraflı spesifikasyon limitlerini belirtmek için NA yazın)",
+  "upper": "USL - üst spesifikasyon limitinin sayısal değeri (tek taraflı spesifikasyon limitlerini belirtmek için NA yazın)",
+  "target": "Hedef spesifikasyon limitleri (isteğe bağlı)",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Üstel",
+  "selectDistFuncGammaRad": "Gamma",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncPoissonRad": "Poisson",
+  "selectDistFuncNBinomRad": "Negatif Binom",
+  "selectDistFuncGeomRad": "Geometrik",
+  "selectDistFuncBetaRad": "Beta",
+  "selectDistFuncUnifRad": "Uniform",
+  "selectDistFuncLogisRad": "Logistik",
+  "selectDistFuncCauchyRad": "Cauchy",
+  "selectDistFuncNormRad": "Normal",
+  "digits": "Basamaklar - görüntülenecek basamak sayısı",
+  "help": {
+    "title": "Normal Olmayan Dağılım için Süreç Yeterliliği",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tqcc fonksiyonu yeterlilik indekslerini hesaplar \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R yardımını kullanın (process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) ve help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, qcc paketinden pistonrings adlı veri kümesini Yükle Veri kümesi menüsünden yükleyebilirsiniz, qcc paketini seçip ardından pistonrings veri kümesini seçin\n\t\t\t\t<br/>\n\t\t\t\tSeçenek 1'i, gözlemlenen değişken olarak çapı, gruplama değişkeni olarak örnek seçin, \n\t\t\t\t<br/>\n\t\t\t\tKullanılacak Gruplandırılmış satırlara 1:25 yazın\n\t\t\t\t<br/>\n\t\t\t\tSüreç yeterliliği analizi için - LSL'ye 73.95, USL'ye 74.05 ve Hedef Limit'e 74.0 yazın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqcc kılavuzunu takip edin: https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

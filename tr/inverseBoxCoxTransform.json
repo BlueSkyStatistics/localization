@@ -1,0 +1,17 @@
+{
+  "title": "Ters Box-Cox dönüşümü (dönüştürülmemiş değere geri dönüştürme)",
+  "navigation": "Ters Box-Cox",
+  "label2": "Daha önceki Box-Cox dönüşümünden geri dönüştürülmek üzere bir değişken seçin veya dönüştürülecek sayısal değeri yazın, Lambda (λ) değeri ile",
+  "variableSelcted": "Bir değişken seçin",
+  "selectVariableRad": "Seçenek 1: Daha önceki Box-Cox dönüşümünden geri dönüştürülmek üzere bir değişken seçin",
+  "invBoxCoxColName": "(Opsiyonel) Dönüştürülmüş değerleri saklamak için yeni bir değişken adı belirtin. Aksi takdirde <variable_Invbcox> oluşturulacaktır",
+  "selectNumberRad": "Seçenek 2: Box-Cox dönüşümünden geri dönüştürülmek üzere bir sayısal değer yazın",
+  "invNumber": "Sayısal değeri yazın",
+  "lambda": "(Opsiyonel) Box-Cox dönüşümünden geri dönüştürmek için kullanılacak (-2 ile 2 arasında) bir Lambda (λ) değeri belirtin. Aksi takdirde, boş bırakılırsa, yukarıda seçilen değişken için kullanılan orijinal Box-Cox dönüşümü için kullanılan Lambda (λ) değeri kullanılacaktır",
+  "digits": "Basamaklar - belirtilen ondalık basamak sayısına yuvarlar",
+  "help": {
+    "title": "Daha önceki Box-Cox dönüştürülmüş değerden geri dönüştürme (ters)",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBelirtilen lambda veya seçilen değişkenle ilişkili lambda kullanarak daha önceki Box-Cox dönüştürülmüş değerden geri dönüştürme\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-Cox veya Lambda (λ) hakkında detaylı yardım için R help(boxcox, package = MASS) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMASS Box-Cox hakkında iyi bir genel bakış için <a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a> adresine bakın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTanıdık Box-Cox dönüşümleri ile ilişkili Lambda (λ) değerleri\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: kare dönüşümü ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: dönüşüm yok; orijinal veriyi döndürür ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: karekök dönüşümü ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: küp kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: dördüncü kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: doğal log dönüşümü ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: ters karekök dönüşümü ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: ters (inverse) dönüşüm ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: ters kare dönüşümü ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

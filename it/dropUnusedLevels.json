@@ -1,0 +1,21 @@
+{
+  "title": "Elimina livelli non utilizzati",
+  "navigation": "Elimina non utilizzati",
+  "target": "Variabili fattoriali per eliminare i livelli",
+  "label1": "Inserisci le variabili fattoriali per eliminare i livelli. Puoi specificare i livelli non utilizzati da eliminare inserendoli o selezionare di eliminare tutti i livelli non utilizzati per la/e variabile/i selezionata/e. Se la variabile del dataset ha un valore NA nei dati, allora quel livello NON viene eliminato.",
+  "label2": "Salva i nuovi livelli in nuova/e variabile/i o sovrascrivi la/e variabile/i esistente/i",
+  "rd3": "Specifica un suffisso (verrà creata una nuova variabile con il suffisso)",
+  "txt3": "Inserisci un suffisso",
+  "rd2": "Specifica un prefisso (verrà creata una nuova variabile con il prefisso)",
+  "txt4": "Inserisci un prefisso",
+  "rd1": "Sovrascrivi le variabili esistenti",
+  "label3": "Metodo da utilizzare",
+  "dropUnused": "Elimina tutti i livelli non utilizzati",
+  "levelsToDrop": "Specifica i livelli da eliminare",
+  "drop": "Inserisci i livelli da eliminare separati da virgola, ad esempio livello1,livel2,livel3 NOTA: Non utilizzare spazi come separatori tra i livelli",
+  "help": {
+    "title": "Elimina livelli non utilizzati",
+    "r_help": "help(fct_drop, package =forcats)",
+    "body": "\n<b>NOTA: NON RACCHIUDERE I LIVELLI TRA VIRGOLETTE DOPPIE O SINGOLE, NON POSSONO ESSERCI SPAZI NEI NOMI DEI LIVELLI. INSERISCI I LIVELLI SEPARATI DA VIRGOLA NEL FORMATO LIVELLO1,LIVELLO2, LIVELLO3</b></br>\n<b>Descrizione</b></br>\nInserisci la/e variabile/i fattoriale/i per eliminare i livelli non utilizzati. Puoi specificare i livelli non utilizzati da eliminare inserendoli o selezionare di eliminare tutti i livelli non utilizzati per la/e variabile/i selezionata/e. Se la variabile del dataset ha un valore NA nei dati, allora quel livello NON viene eliminato.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nf: Un fattore (o vettore di caratteri).\n</li>\n<li>\nonly: Un vettore di caratteri che restringe l'insieme dei livelli da eliminare. Se fornito, verranno rimossi solo i livelli che non hanno voci e appaiono in questo vettore.\n</li>\n</ul>\n<b>Esempi</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Imposta only per restringere quali livelli eliminare<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Pacchetto</b></br>\nforcats</br>\n<b>Aiuto</b></br>\nhelp(fct_drop, package =forcats)\n"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "매개변수 수준 추정치",
+  "navigation": "매개변수 추정치",
+  "label1": "다음 클래스의 모델이 지원됩니다. 클래스는 아래 괄호에 나열되어 있습니다.",
+  "label2": "선형 모델 (lm), 일반화 선형 모델 (glm), 다항 로지스틱 회귀 (multinom), 분위수 회귀 (rq), 강건 선형 회귀 (rlm), 생존 곡선 객체 (survfit), 선형 혼합 효과 모델 (lme), 비례 위험 회귀 객체 (coxph), 모수 생존 회귀 모델 (survreg), 순서형 로지스틱/프로빗 회귀 (polr), 요인 분석 (factanal), 라쏘 및 엘라스틱 넷 정규화된 일반화 선형 모델 (glmnet)",
+  "modelselector1": "모델 선택",
+  "help": {
+    "title": "매개변수 수준 추정치",
+    "r_help": "help(tidy, package ='broom')",
+    "body": "\n                <b>설명</b></br>\n선택한 모델의 매개변수 추정치를 표시합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \ntidy(x, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 단일 행 데이터 프레임으로 변환할 모델 또는 기타 R 객체\n</li>\n</ul>\n<b>세부정보</b></br>\n다음 모델의 매개변수 추정치를 표시합니다.</br>\n선형 모델 (모델 클래스 lm)</br>\n일반화 선형 모델 (모델 클래스 glm)</br>\n다항 로지스틱 회귀 모델 (모델 클래스 multinom)</br>\n순서형 로지스틱 또는 프로빗 회귀 (모델 클래스 polr)</br>\n라쏘 및 엘라스틱 넷 정규화된 일반화 선형 모델 (모델 클래스 glmnet)</br>\n강건 선형 회귀 (모델 클래스 rlm)</br>\n분위수 회귀 (모델 클래스 rq)</br>\n선형 혼합 효과 모델 (lme)</br>\n비례 위험 회귀 객체 (coxph)</br>\n모수 생존 회귀 모델 (survreg)</br>\n요인 분석 (factanal)</br>\n<b>값</b></br>\n모델 구성 요소에 대한 정보가 포함된 tibble::tibble()입니다.</br>\nterm: 회귀 항의 이름입니다.</br>\nestimate: 회귀 항의 추정 값입니다.</br>\nstd.error: 회귀 항의 표준 오차입니다.</br>\nstatistic: 회귀 항이 0이 아님을 가정하는 데 사용할 통계량의 값입니다. 거의 항상 T-통계량입니다.</br>\np.value: 관찰된 통계량과 관련된 양측 p-값입니다.</br>\nconf.low: 회귀 항에 대한 신뢰 구간의 하한입니다. conf.int = TRUE인 경우에만 포함됩니다.</br>\nconf.high: 회귀 항에 대한 신뢰 구간의 상한입니다. conf.int = TRUE인 경우에만 포함됩니다.</br>\n선형 모델이 mlm 객체(다중 선형 모델)인 경우 추가 열이 있습니다:</br>\nresponse: 계수가 해당하는 응답 열 (일반적으로 Y1, Y2 등)</br>\n<b>패키지</b></br>\nbroom</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오: help(tidy, package ='broom')\n"
+  }
+}

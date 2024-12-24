@@ -1,0 +1,17 @@
+{
+  "title": "Navegue por um catálogo de design FrF2 (por exemplo, catlg)",
+  "navigation": "Navegue pelo Catálogo de Design FrF2",
+  "designCatalog": "Nome do catálogo de design (deve ser um objeto da classe catlg)",
+  "designNamefromCatalog": "Nome do design no catálogo",
+  "numRuns": "Número de execuções (se mais de uma, separe por vírgula, por exemplo, 8,16,64)",
+  "numFactors": "Número de fatores (se mais de um, separe por vírgula, por exemplo, 4,5,11)",
+  "minResolution": "Resolução Mínima do Design (por exemplo, digite 3 para III, 4 para IV, 5 para V, ...)",
+  "MaxC2Chk": "Se desmarcado - os designs são ordenados por aberração mínima ou se marcado - pelo número máximo de 2fis claros",
+  "showAliasChk": "Mostrar estrutura de alias (até 2fis)",
+  "maxNumberofDesignPrint": "Mostrar número máximo de designs",
+  "help": {
+    "title": "Navegue por um catálogo de design FrF2 (por exemplo, catlg)",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tNavegue/Inspecione elementos de design ou extraia informações do catálogo de design da classe catlg no pacote FrF2\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

@@ -1,9 +1,9 @@
 {
-  "title": "Exportar diseño - se crearán tres archivos (csv, html, rda) con el mismo nombre que el diseño",
-  "navigation": "Exportar diseño",
+  "title": "Exportar Diseño - se crearán tres archivos (csv, html, rda) con el mismo nombre que el diseño",
+  "navigation": "Exportar Diseño",
   "exportPath": "Ruta del archivo para exportar el diseño",
   "help": {
-    "title": "Exportar diseño",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa exportación del diseño creará tres archivos (csv, html, rda) con el mismo nombre que el diseño en la ruta del directorio elegida\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl propósito de exportar el diseño es configurar y realizar los experimentos según el diseño en el mundo real y recopilar los resultados. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAgregue columna(s) que cumplan con la convención de nombres de variables de R al archivo csv para registrar los resultados. Estas columnas adicionales se conocen como respuesta(s) según el vocabulario del Diseño de Experimentos. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna vez que se agreguen la(s) columna(s) de respuesta al archivo csv, se puede usar el menú DOE -> Importar diseño para cargar el archivo csv contra el diseño correcto (ya abierto) en la cuadrícula de la interfaz de usuario del conjunto de datos.  \n\t\t\t\t<br/>\n\t\t\t\t"
+    "title": "Exportar Diseño",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tExportar el Diseño creará tres archivos (csv, html, rda) con el mismo nombre que el diseño en la ruta del directorio elegida\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl propósito de exportar el diseño es configurar y llevar a cabo los experimentos según el diseño en el mundo real y recopilar los resultados. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAgregue columna(s) que cumplan con la convención de nomenclatura de variables R al archivo csv para registrar los resultados. Estas columnas adicionales se conocen como la(s) respuesta(s) según el vocabulario del Diseño de Experimentos. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna vez que se agreguen la(s) columna(s) de respuesta al archivo csv, se puede utilizar el menú DOE -> Importar Diseño para cargar el archivo csv contra el diseño correcto (ya abierto) en la cuadrícula de la interfaz de usuario del conjunto de datos.  \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

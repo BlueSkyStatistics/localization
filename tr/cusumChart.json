@@ -1,0 +1,23 @@
+{
+  "title": "Cusum grafiği",
+  "navigation": "Cusum grafiği",
+  "summaryPrintChk": "Grafiklerin yanı sıra özet yazdır",
+  "label2": "İki seçenek - ya grafik için bir değişken seçin (ve gerektiğinde bir gruplama değişkeni) ya da zaten gruplandırılmışsa veri kümesindeki değişkenleri seçin",
+  "selectVariableRad": "Seçenek 1: Gruplandırılması gereken veri kümesinden bir değişken seçin",
+  "variableSelcted": "Grafik için değişken (gözlemlenen veri)",
+  "groupingNeededChk": "Xbar, R ve S grafiklerinde gereklidir - verileri gruplamak için kullanılacak değişken",
+  "groupingVariable": "Gruplama Değişkeni",
+  "variableControlLimits": "Değişken kontrol limitleri için gruplamadan önce atılacak satırlar, örneğin 1:25 veya 1,4,5,7:12 olarak belirtin",
+  "displayGroupsChk": "Veri kümesi UI ızgarasında gruplamaları göster",
+  "selectDatasetRad": "Seçenek 2: Zaten gruplandırılmışsa Veri Kümesinden değişkenleri seçin",
+  "variablelistSelcted": "Grafik için bir veya daha fazla gruplandırılmış değişken (gözlemlenen veri) seçin",
+  "decisionInterval": "karar Aralığı - kümülatif toplamın kontrol dışı olduğu özet istatistiklerin standart hata sayısı",
+  "seShift": "Kayma - süreçte tespit edilmesi gereken kayma miktarı, özet istatistiklerin standart hatalarında ölçülür",
+  "rowsTobeUsed": "Grafik için kullanılacak Gruplandırılmış Satırlar (örneğin 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "rowsTobeUsedAsNewData": "Yeni Veri - Grafik için Yeni Veri olarak kullanılacak Gruplandırılmış Satırlar (örneğin 1:25 veya 1,4,5,7:12 olarak belirtin) - hesaplamalara dahil edilmeyen ancak çizilecek yeni veri",
+  "help": {
+    "title": "Cusum grafiği",
+    "r_help": "help(qcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tqcc fonksiyonu istatistiksel kalite kontrolü gerçekleştirmek ve Shewhart grafiklerini çizmek için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(qcc, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, qcc paketinden pistonrings adlı veri kümesini Yükle Veri Kümesi menüsü ile yükleyebilirsiniz, qcc paketini seçip ardından pistonrings veri kümesini seçin\n\t\t\t\t<br/>\n\t\t\t\tSeçenek 1'i seçin, gözlemlenen değişken için çap, Gruplama değişkeni için örnek,\n\t\t\t\t<br/>\n\t\t\t\tGruplandırılmış satırlar için 1:25, Yeni Veri için 30:40 yazın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqcc kılavuzunu https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html adresinden takip edin\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

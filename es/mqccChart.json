@@ -1,18 +1,18 @@
 {
   "title": "Gráfico de Control de Calidad Multivariado (MQCC)",
   "navigation": "Gráfico MQCC",
-  "summaryPrintChk": "Imprimir resumen además del/los gráfico(s)",
+  "summaryPrintChk": "Imprimir resumen además de gráfico(s)",
   "variableListSelcted": "Datos (seleccione una o más variables) para graficar",
   "groupingVariable": "(Opcional) Seleccione la variable de agrupamiento si hay subgrupos presentes",
-  "excludeGroups": "(Opcional) excluir grupos (si los subgrupos son numéricos) del cálculo/graficado (por ejemplo, especifique como 1:10 o separado por comas como 1,4,5,7:12)",
-  "groupsTobeUsedAsNewData": "(Opcional) Nuevos Datos - grupos (si los subgrupos son numéricos) que se utilizarán como Nuevos Datos para graficar (por ejemplo, especifique como 1:25 o 1,4,5,7:12) - nuevos datos para trazar pero no incluidos en los cálculos de límites",
-  "limitsChk": "Si se deben calcular y graficar los límites de control (Fase I)",
-  "pred_limitsChk": "Si se deben calcular y graficar los límites de predicción (Fase II)",
-  "confidence_level": "(Opcional) Nivel de confianza: deje la fórmula predeterminada como se muestra (donde p se calculará automáticamente como el número de variables seleccionadas). De lo contrario, especifique un valor numérico entre 0 y 1 que se utilizará como nivel de confianza para calcular los límites de probabilidad",
-  "genVarianceChk": "Graficar el gráfico de control para la Varianza Generalizada |S| para las variables seleccionadas (y se debe seleccionar una variable de agrupamiento)",
+  "excludeGroups": "(Opcional) excluir grupos (si los subgrupos son numéricos) de la computación/graficación (por ejemplo, especifique como 1:10 o separado por comas como 1,4,5,7:12)",
+  "groupsTobeUsedAsNewData": "(Opcional) Nuevos Datos - grupos (si los subgrupos son numéricos) que se utilizarán como Nuevos Datos para graficar (por ejemplo, especifique como 1:25 o 1,4,5,7:12) - nuevos datos para graficar pero no incluidos en los cálculos de límites",
+  "limitsChk": "Si los límites de control (Fase I) deben ser calculados y graficados",
+  "pred_limitsChk": "Si los límites de predicción (Fase II) deben ser calculados y graficados",
+  "confidence_level": "(Opcional) Nivel de confianza: deje la fórmula predeterminada como se muestra (donde p se calculará automáticamente como el número de variables seleccionadas). De lo contrario, especifique un valor numérico entre 0 y 1 que se utilizará como el nivel de confianza para calcular los límites de probabilidad",
+  "genVarianceChk": "Graficar gráfico de control para la Varianza Generalizada |S| para las variables seleccionadas (y debe seleccionarse una variable de agrupamiento)",
   "help": {
     "title": "Gráfico de Control de Calidad Multivariado (mqcc)",
-    "r_help": "ayuda(mqcc, paquete = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción mqcc para realizar el control de calidad estadístico multivariado y la varianza generalizada |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R ayuda(mqcc, paquete = qcc) y ayuda(GVcontrol, paquete = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado boiler del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos boiler para cargar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSeleccione las variables del conjunto de datos boiler, deje todo como predeterminado y ejecute el diálogo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTambién puede usar el archivo de conjunto de datos de muestra llamado widgets_mqcc.xlsx. Abra el archivo en la cuadrícula de datos con el menú Abrir archivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara trazar la varianza generalizada |S|, el conjunto de datos debe tener una columna con los números de subgrupo - de lo contrario, no se trazará\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función mqcc para realizar control de calidad estadístico multivariado y la varianza generalizada |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(mqcc, package = qcc) y help(GVcontrol, package = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado boiler del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos boiler para cargar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSeleccione las variables del conjunto de datos boiler, deje todo como predeterminado y ejecute el diálogo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTambién puede usar el archivo de conjunto de datos de muestra llamado widgets_mqcc.xlsx. Abra el archivo en la cuadrícula de datos con el menú abrir archivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara graficar la varianza generalizada |S|, el conjunto de datos debe tener una columna con los números de subgrupo - de lo contrario, no se graficará\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

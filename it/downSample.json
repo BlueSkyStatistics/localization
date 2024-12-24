@@ -1,0 +1,13 @@
+{
+  "title": "Campionamento Ridotto",
+  "navigation": "Campione, Campionamento Ridotto",
+  "description": "Campionamento Ridotto di Dati Imbilanciati. DownSample campionerà casualmente un set di dati in modo che tutte le classi abbiano la stessa frequenza della classe minoritaria",
+  "downsample": "Inserisci il nome del dataset",
+  "seed": "Imposta il seme",
+  "dependent": "Variabile da campionare",
+  "help": {
+    "title": "Campionamento Ridotto",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descrizione</b></br>\nCampionamento Ridotto di Dati Imbilanciati. DownSample campionerà casualmente un set di dati in modo che tutte le classi abbiano la stessa frequenza della classe minoritaria\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Classe\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: una matrice o un data frame di variabili predittive\n</li>\n<li>\ny: una variabile fattoriale con le appartenenze alle classi\n</li>\n<li>\nlist: la funzione deve restituire list(x, y) o unire x e y insieme? Se TRUE, l'output sarà convertito in un data frame.\n</li>\n<li>\nyname: se list = FALSE, un'etichetta per la colonna della classe\n</li>\n</ul>\n<b>Dettagli</b></br>\nIl campionamento casuale semplice viene utilizzato per campionare per la classe(i) maggioritaria(e). Nota che i dati della classe minoritaria rimangono intatti e che i campioni saranno riordinati nella versione campionata.</br>\nPer il campionamento in eccesso, tutti i dati originali rimangono intatti e campioni aggiuntivi vengono aggiunti alle classi minoritarie con sostituzione.</br>\n<b>Valore</b><br/>\nO un data frame o una lista con elementi x e y.</br>\n<b>Esempi</b></br>\n## Un esempio ridicolo...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Pacchetto</b></br>\ncaret</br>\n<b>Aiuto</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

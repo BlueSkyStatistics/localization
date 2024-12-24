@@ -1,0 +1,10 @@
+{
+  "title": "Değişkenleri Sil",
+  "navigation": "Sil",
+  "trg": "Silinecek değişkenler",
+  "help": {
+    "title": "NA'leri Kaldır",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>Açıklama</b></br>\nVeri kümesinden/ veri çerçevesinden eksik değerleri/NA'leri kaldırır\nSeçilen sütunlar/değişken adları için bir veya daha fazla eksik değere sahip satırları kaldırarak yeni/var olan veri kümesini oluşturur/üzerine yazar\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\n​object: bir R nesnesi.​\n</li>\n</ul>\n<b>Paket</b></br>\ndata.table</br>\n<b>Yardım</b></br>\nhelp(na.omit)\n"
+  }
+}

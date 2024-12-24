@@ -1,0 +1,25 @@
+{
+  "title": "Gráfico de Faixa",
+  "navigation": "Gráfico de Faixa",
+  "x": "Variável X, especifique uma variável numérica",
+  "y": "Variável Y, especifique uma(s) variável(is) numérica(s)",
+  "Fill": "Cor, especifique uma variável de fator",
+  "size": "Faça o tamanho do ponto proporcional a",
+  "shape": "Forma",
+  "alpha": "Opacidade (0-1)",
+  "flipaxis": "Inverter eixo",
+  "jitter": "Aplicar efeito de jitter",
+  "specify_a_title": "Digite um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Enrolar Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Faixa",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>Descrição</b></br>\n            Um gráfico de faixa é o tipo mais básico de gráfico disponível. Ele plota os dados em ordem ao longo de uma linha, com cada ponto de dados representado como uma caixa. A forma do ponto depende dos níveis da variável de fator (x). Os pontos podem ser opcionalmente agrupados por uma variável de fator (y). Facetas podem ser opcionalmente criadas especificando uma variável de fator.</br>\n            Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y</br>\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão​\n            </li>\n            <li>\n            aes(): Gere mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n            </li>\n            <li>\n            x: a variável de agrupamento. A forma do ponto depende dos níveis da variável de fator​\n            </li>\n            <li>\n            y: a variável para a qual os pontos são plotados​\n            </li>\n            <li>\n            color: uma variável de fator opcional para agrupar pontos (por cor)​\n            </li>\n            <li>\n            Labs(): Mudar rótulos dos eixos e títulos da legenda (isto é opcional)​\n            </li>\n            <li>\n            facet_grid(): Dispor painéis em uma grade (isto é opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica o tema do calculador (isto é opcional)​\n            </li>\n            <li>\n            geom_jitter(): O geom jitter é um padrão conveniente para geom_point com posição = 'jitter'. Veja position_jitter para ver como ajustar a quantidade de jittering.\n            </li>\n            <li>\n            coord_flip(): Inverter eixo (isto é opcional)​\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajuda</b></br>\n            help(geom_point, package='ggplot2')</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

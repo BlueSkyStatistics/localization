@@ -1,12 +1,12 @@
 {
-  "title": "Reordonează variabilele în ordine alfabetică",
-  "navigation": "Reordonează variabilele",
-  "label1": "Reordonează variabilele în ordine alfabetică",
+  "title": "Reordonare Variabile Alfabetic",
+  "navigation": "Reordonare Variabile",
+  "label1": "Reordonare variabilele alfabetic",
   "rd1": "A-Z",
   "rd2": "Z-A",
   "help": {
-    "title": "Reordonează variabilele în ordine alfabetică",
-    "r_help": "ajutor(sortare)",
-    "body": "\n<b>Descriere</b></br>\nReordonarea variabilelor în setul de date în ordine alfabetică. Folosim funcția de sortare pentru a sorta numele coloanelor/variabilelor din setul de date și funcția de selecție din pachetul dplyr pentru a selecta numele coloanelor în ordinea alfabetică corectă.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n##Reordonare alfabetică (A-Z)\nDataset_name <- Dataset_name %>%   dplyr::select(sort(names(.)))\n##Reordonare alfabetică (Z-A)\nDataset_name <- Dataset_name %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumente</b><br/>\nNiciunul<br/>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\najutor(select, pachet='dplyr')<br/>\najutor(sort)"
+    "title": "Reordonare Variabile Alfabetic",
+    "r_help": "ajutor(sort)",
+    "body": "\n<b>Descriere</b></br>\nReordonarea variabilelor în setul de date în ordine alfabetică. Folosim funcția sort pentru a sorta numele coloanelor/variabilelor din setul de date și funcția select din pachetul dplyr pentru a selecta numele coloanelor în ordinea alfabetică corectă \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n##Reordonare alfabetic (A-Z)\nNumele_setului_de_date <- Numele_setului_de_date %>%   dplyr::select(sort(names(.)))\n##Reordonare alfabetic (Z-A)\nNumele_setului_de_date <- Numele_setului_de_date %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumente</b><br/>\nNiciunul<br/>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\najutor(select, pachet='dplyr')<br/>\najutor(sort)\n    "
   }
 }

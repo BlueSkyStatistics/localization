@@ -1,0 +1,18 @@
+{
+  "title": "응답 표면 모델(정량적)을 이용한 실험 설계 분석",
+  "navigation": "설계 분석 - 응답 표면 모델",
+  "modelname": "응답 표면 모델 이름 입력",
+  "dependent": "응답(종속) 변수",
+  "formulaboxhint": "위의 공식 빌더 상자에서 SO(var1, var2,...)를 입력하여 2차 효과 및 상호작용을 추가하거나 rsm 패키지에서 FO(...),...를 입력할 수 있습니다.",
+  "independent": "숫자 예측 변수 - 아래에 숫자 공식 변수를 삽입",
+  "generateContourPlotChk": "등고선(플롯) 표시",
+  "generateRSMPlotChk": "응답 표면(플롯) 표시",
+  "generatePathSteepestAscentChk": "능선 분석에서 가장 가파른 상승 경로 표시",
+  "checkShapiroNormalityTestChk": "샤피로 정규성 테스트",
+  "normalityPlotsChk": "정규성 확인을 위한 플롯",
+  "help": {
+    "title": "모델 공식 빌더가 있는 응답 표면 모델",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t응답 표면 회귀 - 응답 표면 구성 요소가 있는 선형 모델을 적합하고 적절한 분석 및 요약을 생성합니다.\n\t\t\t\t<br/> 공식 빌더에서 SO(var1, var2, var3, ...) 또는 FO(var1, ..) 또는 rsm 패키지의 다른 함수를 입력할 수 있습니다 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 내용은 다음의 R 도움말을 참조하십시오.\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

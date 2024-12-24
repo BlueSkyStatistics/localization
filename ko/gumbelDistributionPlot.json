@@ -1,0 +1,26 @@
+{
+  "title": "Gumbel 분포 플롯",
+  "navigation": "Gumbel 분포 플롯",
+  "location": "위치",
+  "scale": "스케일",
+  "pdenfun": "밀도 함수 플롯",
+  "pdstfun": "분포 함수 플롯",
+  "lblregions": "밀도 함수 아래의 영역을 선택적으로 지정하기",
+  "xvals": "x 값",
+  "quantiles": "분위수",
+  "lblRegFill": "채울 영역 (하나 또는 두 개를 지정하거나 비워 두기)",
+  "lblreg1": "영역 1 :",
+  "lblreg2": "영역 2 :",
+  "lblregfrm": "부터",
+  "lblregto": "까지",
+  "lblregcol": "색상",
+  "lblLegPos": "범례의 위치",
+  "toprt": "오른쪽 상단",
+  "toplt": "왼쪽 상단",
+  "topmid": "상단 중앙",
+  "help": {
+    "title": "Gumbel 분포 플롯",
+    "r_help": "help(qgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>설명</b>\n            <br/>\n            지정된 위치 및 스케일 매개변수를 가진 Gumbel 분포의 밀도, 분포 함수, 분위수 함수 및 난수 생성.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n                <li>x, q : 분위수의 벡터 (변수의 값).</li>\n                \n                \n                <li>p : 확률의 벡터.</li>\n                \n                \n                <li>n : 관측치의 수. 만약 length(n) > 1이면, 길이는 필요한 수로 간주됩니다.</li>\n                \n                \n                <li>location : 위치 매개변수 (기본값 0); 잠재적으로 벡터일 수 있습니다.</li>\n                \n                \n                <li>scale : 스케일 매개변수 (기본값 1); 잠재적으로 벡터일 수 있습니다.</li>\n                \n                <li>lower.tail : 논리적; TRUE (기본값)일 경우 확률과 분위수는 P(X ≤ x)에 해당하고, FALSE일 경우 P(X > x)에 해당합니다.</li>\n            </ul>            \n"
+  }
+}

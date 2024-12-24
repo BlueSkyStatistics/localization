@@ -1,0 +1,13 @@
+{
+  "title": "Basit Rasch Modeli (Çok Yüzlü)",
+  "navigation": "Basit Rasch Modeli (Çok Yüzlü)",
+  "modelname": "Model adını girin",
+  "destinationvars": "Öğeler",
+  "firstlevel": "Birinci seviye değişken",
+  "secondlevel": "İkinci seviye değişken",
+  "help": {
+    "title": "Basit Rasch Modeli (Çok Yüzlü)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Açıklama</b>\n            <br/>\n            Çok yüzlü basit rasch modeli için parametre tahminleri üretir\n            <br/><br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Polikotonik madde yanıtları ile veri çerçevesi k=0,...,K. Eksik yanıtlar NA olarak belirtilmelidir.\n            </li>\n            <li>\n            formulaA: Tasarım formülü (sadece tam.mml.mfr için geçerlidir). Ayrıntılı yardım için bakın. Bir yüzeyin tüm etkilerini sıfıra ayarlamak da mümkündür, örneğin item*step + 0*rater (ayrıntılı yardım için bakın).\n            </li>\n            <li>\n            facets: Yüzey girişleri ile veri çerçevesi (sadece tam.mml.mfr için geçerlidir)\n            </li>\n            <li>\n            pid: Kişi tanımlayıcılarının isteğe bağlı bir vektörü\n            </li>\n            <li>\n            verbose: Çıktının yinelemeler sırasında yazdırılıp yazdırılmayacağını belirten mantıksal değer. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Paketler</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Yardım</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

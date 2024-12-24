@@ -1,16 +1,17 @@
 {
-  "title": "Convertir Variables de Fecha a Caracteres",
-  "navigation": "Fecha a Caracter",
+  "title": "Convertir Variables de Fecha a Carácter",
+  "navigation": "Fecha a Carácter",
   "label1": "Seleccione un sufijo o prefijo para las variables convertidas",
   "suffix": "Sufijo",
   "prefix": "Prefijo",
   "prefixOrSuffix": "Ingrese un prefijo o sufijo",
-  "Destination": "Seleccione las variables de fecha a convertir a caracteres",
-  "DateFormat": "Seleccione el formato de fecha a convertir",
-  "TimeZone": "Seleccione una zona horaria (por defecto - nada seleccionado es la zona horaria local de la PC)",
+  "Destination": "Seleccione las variables de fecha para convertir a carácter",
+  "DateFormat": "Seleccione el formato de fecha para convertir",
+  "TimeZone": "Seleccione una zona horaria (por defecto - si no se selecciona nada, es la zona horaria local del PC)",
+  "advanced_lbl" : "Avanzado",
   "help": {
-    "title": "Convertir Fecha a Caracter",
+    "title": "Convertir Fecha a Carácter",
     "r_help": "help(strftime, package=\"base\")",
-    "body": "\n<b>Descripción</b></br>\nConvierte la fecha (posixct y clase de fecha) a carácter - para controlar el formato en el que se muestra la fecha. Usted especifica como entrada el formato en el que se debe generar la cadena, es decir, año/mes/día o mes-día=año, etc.\nLa función anterior llama internamente a strftime en el paquete base. Hemos extendido strftime para soportar múltiples variables.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n​data: El nombre del conjunto de datos\n</li>\n<li>\nvarNames: Las variables de clase posixct y clase de fecha que necesitan ser convertidas​ a carácter\n</li>\n<li>\ndateFormat: Una cadena de caracteres. El valor por defecto para los métodos de formato es \"%Y-%m-%d %H:%M:%S\" si algún elemento tiene un componente de tiempo que no es medianoche, y \"%Y-%m-%d\" en caso contrario. Si options(\"digits.secs\") está configurado, se imprimirán hasta el número especificado de dígitos para los segundos\n</li>\n<li>\ntimezone: Una cadena de caracteres que especifica la zona horaria que se utilizará para la conversión. Específico del sistema (ver as.POSIXlt), pero \"\" es la zona horaria actual, y \"GMT\" es UTC. Los valores no válidos se tratan comúnmente como UTC, en algunas plataformas con una advertencia.\n</li>\n<li>\nprefixOrSuffix: Especifica un prefijo o sufijo para las nuevas variables de cadena. Toma ya sea c(\"prefijo\") o c(\"sufijo\"). Nuevas variables que se crean con este prefijo/sufijo al nombre de la variable original.\n</li>\n</ul>\n<b>Paquete</b></br>\nbásico</br>\n<b>Ayuda</b></br>\naid(strftime)    \n"
+    "body": "\n<b>Descripción</b></br>\nConvierte fecha (clase posixct y date) a carácter - para controlar el formato en el que se muestra la fecha. Debe especificar como entrada el formato en el que se debe generar la cadena, es decir, año/mes/día o mes-día=año, etc.\nLa función anterior llama internamente a strftime en el paquete base. Hemos extendido strftime para soportar múltiples variables.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"sufijo\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n​data: El nombre del conjunto de datos\n</li>\n<li>\nvarNames: Las variables de clase posixct y date que necesitan ser convertidas​ a carácter\n</li>\n<li>\ndateFormat: Una cadena de caracteres. El valor predeterminado para los métodos de formato es \"%Y-%m-%d %H:%M:%S\" si algún elemento tiene un componente de tiempo que no es medianoche, y \"%Y-%m-%d\" de lo contrario. Si options(\"digits.secs\") está configurado, se imprimirán hasta el número especificado de dígitos para los segundos\n</li>\n<li>\ntimezone: Una cadena de caracteres que especifica la zona horaria que se utilizará para la conversión. Específica del sistema (ver as.POSIXlt), pero \"\" es la zona horaria actual, y \"GMT\" es UTC. Los valores inválidos se tratan comúnmente como UTC, en algunas plataformas con una advertencia.\n</li>\n<li>\nprefixOrSuffix: Especifica un prefijo o sufijo para las nuevas variables de cadena. Toma c(\"prefijo\") o c(\"sufijo\"). Nuevas variables que se crean con este prefijo/sufijo al nombre de la variable original. \n</li>\n</ul>\n<b>Paquete</b></br>\nbase</br>\n<b>Ayuda</b></br>\nhelp(strftime)    \n"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "title": "Calcola variabile(i) fittizie",
+  "navigation": "Codice fittizio",
+  "label1": "Inserisci le variabili da codificare come fittizie. Nuove variabili vengono create con il nome nel formato \"nome variabile_livello nome\". Per impostazione predefinita, il livello più frequente è trattato come riferimento",
+  "target": "Seleziona la variabile(e) da codificare come fittizie",
+  "label2": "Livello da trattare come riferimento",
+  "MostFrequent": "Valore più frequente",
+  "first": "Primo valore",
+  "None": "Mantieni tutti i livelli (non raccomandato per modelli statistici) A.k.a codifica one hot",
+  "prefix": "Prefisso",
+  "txt1": "Inserisci un prefisso/suffisso",
+  "label3": "Altre opzioni",
+  "chk3": "Rimuovi variabili originali",
+  "chk4": "Crea variabili fittizie per valori mancanti",
+  "help": {
+    "title": "Calcola variabile(i) fittizie",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Descrizione</b></br>\nCalcola variabili fittizie\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\n.data:\tUn oggetto con il set di dati da cui vuoi creare colonne fittizie.\n</li>\n<li>\nselect_columns:\tVettore di nomi di colonne da cui vuoi creare variabili fittizie. Se NULL (predefinito), utilizza tutte le colonne carattere e fattore.\n</li>\n<li>\nremove_first_dummy: Rimuove il primo fittizio di ogni variabile in modo che rimangano solo n-1 fittizi. Questo evita problemi di multicollinearità nei modelli.\n</li>\n<li>\nremove_most_frequent_dummy: Rimuove la categoria osservata più frequentemente in modo che rimangano solo n-1 fittizi. Se c'è un pareggio per il più frequente, rimuoverà la prima categoria (in ordine alfabetico) che è in pareggio per il più frequente.\n</li>\n<li>\nignore_na: Se TRUE, ignora eventuali valori NA nella colonna. Se FALSE (predefinito), allora creerà una colonna fittizia per valore_NA e darà un 1 in qualsiasi riga che ha un valore NA.\n</li>\n<li>\nsplit: Una stringa per dividere una colonna quando ci sono più categorie nella cella. Ad esempio, se una variabile è Animali domestici e le righe sono \"gatto\", \"cane\" e \"tartaruga\", ognuno di questi animali diventerebbe la propria colonna fittizia. Se una riga è \"gatto, cane\", allora un valore di divisione di \",\" questa riga avrebbe un valore di 1 per entrambe le colonne fittizie di gatto e cane.\n</li>\n<li>\nremove_selected_columns: Se TRUE (non predefinito), rimuove le colonne utilizzate per generare le colonne fittizie.\n</li>\n<li>\nValore: Un data.frame (o tibble o data.table, a seconda del tipo di dati in input) con lo stesso numero di righe dei dati inseriti e colonne originali più le nuove colonne fittizie create.\n</li>\n<li>\nVedi anche\ndummy_rows Per creare righe fittizie\n</li>\n<li>\nAltre funzioni fittizie: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Esempi</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Includi la colonna dell'anno\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Rimuovi il primo fittizio per ogni coppia di colonne fittizie create</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Pacchetto</b></br>\nfastDummies</br>\n<b>Aiuto</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

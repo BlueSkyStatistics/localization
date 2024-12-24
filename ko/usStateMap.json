@@ -1,0 +1,15 @@
+{
+  "title": "미국 주 지도",
+  "navigation": "미국 주 지도",
+  "region": "미국 주 이름이 포함된 변수:",
+  "value": "매핑할 값이 포함된 변수:",
+  "colors": "색상 수 입력",
+  "zoomByStates": "확대할 주를 입력하세요. 예: california,oregon,washington",
+  "specify_a_title": "제목 입력",
+  "legend": "범례:",
+  "help": {
+    "title": "미국 주 지도",
+    "r_help": "help(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>설명</b></br>\n            주 지도를 그리고 1개 이상의 주로 확대할 수 있습니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: \"region\"이라는 열과 \"value\"라는 열이 있는 데이터 프레임. \"region\" 열의 요소는 state.map의 \"region\" 열에 있는 지역 이름과 정확히 일치해야 합니다. 아래의 다른 섹션에서 명령을 실행하여 state.map 데이터 세트에 접근하세요.\n            </li>\n            <li>\n            제목: 지도에 대한 선택적 제목.\n            </li>\n            <li>\n            범례: 범례에 대한 선택적 이름.\n            </li>\n            <li>\n            num_colors: 지도에 있는 색상의 수. 값이 1이면 연속 스케일을 사용합니다. [2, 9]의 값은 그만큼의 색상을 사용합니다.\n            </li>\n            <li>\n            zoom: 확대할 주의 선택적 벡터. 이 벡터의 요소는 ?state.regions의 \"region\" 열에 나타나는 주 이름과 정확히 일치해야 합니다.\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>도움말</b></br>\n            help(state_choropleth, package='choroplethr')</br>\n            <b>기타</b></br>\n            <code> \n            # 아래 코드를 실행하여 state.map 데이터 세트에 접근하세요.<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+  }
+}

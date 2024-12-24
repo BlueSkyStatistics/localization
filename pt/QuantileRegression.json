@@ -1,0 +1,25 @@
+{
+  "label1": "Para comparar as inclinações do modelo de regressão quantílica, veja \"Avaliação do Modelo > Comparar > Modelos de Reg. Quant\"",
+  "title": "Regressão Quantílica",
+  "navigation": "Quantil",
+  "modelname": "Digite o nome do modelo",
+  "depvarlabel": "Variável Dependente",
+  "quantilelabel": "Quantil (0-1)",
+  "estgrplabel": "Método de Estimativa",
+  "brlabel": "Barrodale e Roberts",
+  "fnlabel": "Frisch-Newton",
+  "pfnlabel": "Frisch-Newton, pré-processamento",
+  "sfnlabel": "Frisch-Newton, esparso",
+  "stderrgrplabel": "Método de Erro Padrão",
+  "ranklabel": "Classificação",
+  "iidlabel": "IID",
+  "nidlabel": "NID",
+  "kernallabel": "Kernal",
+  "bootstraplabel": "Bootstrap",
+  "bootsamplabel": "Amostras Bootstrap",
+  "help": {
+    "title": "Regressão Quantílica",
+    "r_help": "help(rq, package = 'quantreg')",
+    "body": "\nIsso ajusta um modelo de regressão quantílica, que modela um quantil desejado (ou seja, percentil) da variável de resultado. Um quantil típico a ser modelado é 0,5, ou seja, a mediana. \nUm resumo do modelo e estimativas de parâmetros com intervalos de confiança de 95% são fornecidos.\n<br/><br/>\n<b>Digite o Nome do Modelo:</b> o nome desejado do modelo\n<br/><br/>\n<b>Variável Dependente:</b> Especifique a variável dependente para o modelo. O quantil desejado desta variável será modelado. Isso deve ser numérico.\n<br/><br/>\n<b>Construtor de Fórmulas:</b> Especifique os termos do modelo usando notação de fórmula. Variáveis numéricas, fatoriais, fatoriais ordenadas e de caracteres são permitidas. Variáveis de caracteres serão convertidas em fatores.\n<br/><br/>\n<b>Quantil (0-1):</b> Especifique o quantil desejado a ser modelado para a variável dependente. 0,5 (a mediana) é o padrão e é uma quantidade típica.\n<br/><br/>\n<b>Método de Estimativa:</b> Especifique o método de estimativa para os parâmetros do modelo. O método Barrodale e Roberts é o padrão e é eficiente para modelos com \nvárias mil observações. O Frisch-Newton e a abordagem Frisch-Newton, pré-processamento podem ser vantajosos para problemas grandes e muito grandes, respectivamente, \nespecialmente em casos com um pequeno número de parâmetros estimados. Para tamanhos de amostra grandes com um grande número de parâmetros, o método Frisch-Newton, esparso pode ser necessário. \nVeja as referências na Ajuda do R para detalhes.\n<br/><br/>\n<b>Método de Erro Padrão:</b> Especifique o método usado para estimar erros padrão e intervalos de confiança. O método de Classificação fornece intervalos de confiança apenas, pode ser lento \npara rodar para tamanhos de amostra maiores (n > 1000) e é baseado na inversão de um teste de classificação. O método IID assume que os erros são independentes e identicamente distribuídos (iid). O método NID \npresume linearidade local no quantil e calcula uma estimativa de sanduíche usando uma estimativa local de esparsidade. O método Kernal usa uma estimativa de sanduíche. \nO método Bootstrap usa uma abordagem de reamostragem bootstrap para estimar os erros padrão. Veja as referências na Ajuda do R para detalhes.\n<br/><br/>\n<b>Amostras Bootstrap:</b> Número desejado de amostras bootstrap para a abordagem de erro padrão bootstrap. O padrão é 2000 amostras.\n<br/><br/>\n<b>Pacotes R Necessários:</b> quantreg, broom\n\t\t"
+  }
+}

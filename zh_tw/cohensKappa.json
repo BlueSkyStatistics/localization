@@ -1,16 +1,16 @@
 {
-  "title": "科恩的Kappa",
-  "navigation": "科恩的Kappa",
-  "obs1var": "觀察者1：",
-  "obs2var": "觀察者2：",
-  "cilevel": "信心水平：",
+  "title": "科恩的卡帕",
+  "navigation": "科恩的卡帕",
+  "obs1var": "觀察者 1:",
+  "obs2var": "觀察者 2:",
+  "cilevel": "信心水準:",
   "label1": "類別權重",
-  "equal": "Cicchetti-Allison（等距）",
-  "quadratic": "Fleiss-Cohen（平方）",
+  "equal": "Cicchetti-Allison (等距)",
+  "quadratic": "Fleiss-Cohen (二次)",
   "agreeplot": "一致性圖和Bangdiwala統計",
   "help": {
-    "title": "科恩的Kappa",
-    "r_help": "幫助(Kappa,package=vcd)",
-    "body": "\n                <b>描述</b></br>\n科恩的Kappa測量兩個觀察者對同一對象的測量一致性。未加權的Kappa用於無序類別，而加權的Kappa用於有序類別。對於加權Kappa，類別越接近，權重越大。Kappa的範圍在-1到1之間，1表示完全一致，0表示不比隨機好。負值表示一致性比隨機更差，但在實踐中很少見。觀察者必須在相同的尺度上測量對象，且每個觀察者使用的所有類別都必須相同。這將產生一個方形的列聯表。提供列聯表和Kappa統計。</br>\n觀察者1：包含觀察者提供的值的變量；可以是數字或因子</br>\n觀察者2：包含第二個觀察者提供的值的變量；可以是數字或因子</br>\n信心水平：Kappa統計的期望信賴區間水平</br>\n類別權重：類別不一致的期望權重</br>\n一致性圖和Bangdiwala統計：生成帶有Bangdiwala統計的一致性圖的選項</br>\n<b>包</b></br>\ngmodels;vcd</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的R圖標，或通過創建R代碼塊並單擊輸出窗口中的+來運行以下命令幫助(Kappa,package=vcd)\n                "
+    "title": "科恩的卡帕",
+    "r_help": "help(Kappa,package=vcd)",
+    "body": "\n                <b>描述</b></br>\n科恩的卡帕衡量兩個觀察者對相同主題的協議。未加權的卡帕適用於無序類別，而加權的卡帕適用於有序類別。對於加權卡帕，類別越接近，權重越大。卡帕的範圍在 -1 到 1 之間，1 表示完全一致，0 則不比隨機好。負值表示協議比隨機更差，但在實踐中很少見。觀察者必須在相同的尺度上測量主題，並使用每個觀察者的所有類別。這會產生一個平方的列聯表。提供列聯表和卡帕統計數據。</br>\n觀察者 1: 包含觀察者提供的值的變數；可以是數字或因子</br>\n觀察者 2: 包含第二個觀察者提供的值的變數；可以是數字或因子</br>\n信心水準: 卡帕統計的期望信賴區間水平</br>\n類別權重: 類別不一致的期望權重</br>\n一致性圖和Bangdiwala統計: 生成帶有Bangdiwala統計的一致性圖的選項</br>\n<b>包</b></br>\ngmodels;vcd</br>\n<b>幫助</b></br>\n如需詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或通過在輸出窗口中單擊 + 創建 R 代碼塊，運行以下命令 help(Kappa,package=vcd)\n                "
   }
 }

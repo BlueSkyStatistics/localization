@@ -1,10 +1,10 @@
 {
-  "title": "方差膨脹因子",
+  "title": "變異膨脹因子",
   "navigation": "VIF",
-  "modelselector1": "選擇以下類別之一的模型（括號中的類別）線性模型（lm），廣義線性模型（glm），有序邏輯或Probit回歸（polr），多項式對數線性模型（multinom），生存（coxph）",
+  "modelselector1": "選擇以下類別之一的模型（括號中的類別）線性模型（lm），廣義線性模型（glm），有序邏輯或概率回歸（polr），多項式對數線性模型（multinom），生存（coxph）",
   "help": {
-    "title": "方差膨脹因子",
+    "title": "變異膨脹因子",
     "r_help": "help(vif, package='car')",
-    "body": "\n                <b>描述</b></br>\n計算線性、廣義線性和其他模型的方差膨脹和廣義方差膨脹因子。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nvif(mod, ...)\n## 預設S3方法:\nvif(mod, ...)\n## 'merMod'類的S3方法\nvif(mod, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod: 對於預設方法，一個響應coef、vcov和model.matrix的物件，例如lm或glm物件。\n</li>\n<li>\n... 不使用。\n</li>\n</ul>\n<b>詳細資訊</b></br>\n如果未加權線性模型中的所有項都有1個自由度，則計算通常的方差膨脹因子。</br>\n如果未加權線性模型中的任何項有超過1個自由度，則計算廣義方差膨脹因子（Fox和Monette，1992）。這些可以解釋為與正交數據相比，項的係數的置信橢圓或橢球的大小膨脹。</br>\n廣義VIF在模型中項的編碼方面是不變的（只要與每個項相關的模型矩陣的列的子空間是不變的）。為了調整置信橢球的維度，該函數還打印GVIF^[1/(2*df)]，其中df是與該項相關的自由度。</br>\n通過進一步的推廣，這裡的實現也適用於其他類型的模型，特別是加權線性模型、廣義線性模型和混合效應模型。</br>\n<b>值</b><br/>\n一個VIF向量，或一個矩陣，包含模型中每個項的一行，以及GVIF、df和GVIF^[1/(2*df)]的列。<br/>\n<b>示例</b><br/>\n<code> \n## 一個荒謬的例子...\nvif(lm(prestige ~ income + education, data=Duncan))\nvif(lm(prestige ~ income + education + type, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的R圖標，或在R語法編輯器中運行以下命令：help(vif, package=\"car\")\n                "
+    "body": "\n                <b>描述</b></br>\n計算線性、廣義線性及其他模型的變異膨脹和廣義變異膨脹因子。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nvif(mod, ...)\n## 默認 S3 方法:\nvif(mod, ...)\n## 'merMod' 類的 S3 方法\nvif(mod, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmod: 對於默認方法，響應 coef、vcov 和 model.matrix 的對象，例如 lm 或 glm 對象。\n</li>\n<li>\n... 不使用。\n</li>\n</ul>\n<b>詳細信息</b></br>\n如果未加權的線性模型中的所有項目都有 1 個自由度，則計算通常的變異膨脹因子。</br>\n如果未加權的線性模型中的任何項目有多於 1 個自由度，則計算廣義變異膨脹因子（Fox 和 Monette，1992）。這些可以解釋為與正交數據相比，該項的係數的置信橢圓或橢球體大小的膨脹。</br>\n廣義 vifs 對模型中項目的編碼不變（只要模型矩陣中與每個項目相關的列的子空間不變）。為了調整置信橢球體的維度，該函數還打印 GVIF^[1/(2*df)]，其中 df 是與該項相關的自由度。</br>\n通過進一步的概括，這裡的實現也適用於其他類型的模型，特別是加權線性模型、廣義線性模型和混合效應模型。</br>\n<b>值</b><br/>\n一個 vifs 向量，或一個矩陣，包含模型中每個項目的一行，以及 GVIF、df 和 GVIF^[1/(2*df)] 的列。<br/>\n<b>示例</b><br/>\n<code> \n## 一個荒謬的例子...\nvif(lm(prestige ~ income + education, data=Duncan))\nvif(lm(prestige ~ income + education + type, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(vif, package=\"car\")\n                "
   }
 }

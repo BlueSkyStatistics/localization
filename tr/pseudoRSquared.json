@@ -1,0 +1,13 @@
+{
+  "title": "Sahte R Kare",
+  "navigation": "Sahte R Kare",
+  "modelselector1": "Bir model seçin",
+  "label1": "Aşağıdaki sınıflardan birinin modelini seçin (parantez içindeki sınıf)",
+  "label2": "Genelleştirilmiş doğrusal modeller (glm), Çoklu Log-Doğrusal Modeller (multinom), Sıralı Lojistik veya Probit Regresyon (polr)",
+  "label3": "NOT: MODEL AYARLAMASI (EĞİTİM) KULLANILARAK OLUŞTURULAN MODELLER DESTEKLENMİYOR",
+  "help": {
+    "title": "Sahte R Kare",
+    "r_help": "help(pR2, package='pscl')",
+    "body": "\n                <b>Açıklama</b></br>\nÇeşitli GLM'ler için çeşitli sahte-R2 ölçümlerini hesaplayın\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \npR2(object, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nobject: şu anda glm, polr veya multinom sınıfında bir uygun model nesnesi\n</li>\n<li>\n... fonksiyonlara geçilecek veya fonksiyonlardan alınacak ek argümanlar\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nGenelleştirilmiş doğrusal modeller için birçok sahte r-kare ölçümü önerilmiştir; bu, uygun modelin log-olasılığının, tahminci içermeyen bir null/kısıtlı modelin log-olasılığı ile karşılaştırılmasını içerir ve uygun model veriye daha iyi bir uyum sağladıkça sıfırdan bire kadar normalleştirilir (doğrusal regresyondaki r-kare hesaplamasına kaba bir benzerlik sağlar).</br>\n<b>Değer</b><br/>\nUzunluğu 6 olan bir vektör içerir<br/>\nllh: Uygun modelden elde edilen log-olasılık<br/>\nllhNull: Sadece kesirli kısıtlı modelden elde edilen log-olasılık<br/>\nG2: Log-olasılıkların farkının eksi iki katı<br/>\nMcFadden: McFadden'in sahte r-kare değeri<br/>\nr2ML: Maksimum olasılık sahte r-kare değeri<br/>\nr2CU: Cragg ve Uhler'in sahte r-kare değeri<br/>\n<b>Örnekler</b><br/>\n<code> \ndata(admit)<br/>\n## sıralı probit modeli<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            data=admit,\n            method=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>Paket</b></br>\npscl</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üstündeki sağ üst köşedeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(pR2, package=\"pscl\")\n                "
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "코시 분위수",
+  "navigation": "코시 분위수",
+  "varvals": "변수 값을 쉼표로 구분하여 입력하세요. 예: 0.3,0.2,0.5",
+  "location": "위치",
+  "scale": "스케일",
+  "labelSig": "유의 수준",
+  "lowtail": "하위 꼬리",
+  "uptail": "상위 꼬리",
+  "help": {
+    "title": "코시 분위수",
+    "r_help": "help(qcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>설명</b>\n            <br/>\n            위치 매개변수와 스케일 매개변수를 가진 코시 분포의 밀도, 분포 함수, 분위수 함수 및 난수 생성.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n                <li>x, q : 분위수 벡터.</li>\n                \n                \n                <li>p : 확률 벡터.</li>\n                \n                \n                <li>n : 관측치 수. length(n) > 1인 경우, 길이는 필요한 수로 간주됩니다.</li>\n                \n                \n                <li>location, scale : 위치 및 스케일 매개변수.</li>\n                \n                \n                <li>log, log.p : 논리적; TRUE인 경우, 확률 p는 log(p)로 제공됩니다.</li>\n                \n                \n                <li>lower.tail : 논리적; TRUE(기본값)인 경우, 확률은 P[X ≤ x], 그렇지 않으면 P[X > x]입니다.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>세부정보</b>\n            <br/>\n            위치 또는 스케일이 지정되지 않은 경우, 각각 0과 1의 기본값을 가집니다.\n            <br/>\n            위치 l과 스케일 s를 가진 코시 분포의 밀도는\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            모든 x에 대해.\n            <br/>\n            <br/><b>값</b>\n            <br/>\n            dcauchy, pcauchy 및 qcauchy는 각각 코시 분포의 밀도, 분포 함수 및 분위수 함수입니다. rcauchy는 코시에서 난수를 생성합니다.\n            <br/>\n            결과의 길이는 rcauchy의 n에 의해 결정되며, 다른 함수의 경우 숫자 인수의 길이 중 최대값입니다.\n            <br/>\n            n을 제외한 숫자 인수는 결과의 길이에 맞게 재활용됩니다. 논리적 인수의 첫 번째 요소만 사용됩니다.\n            <br/>\n            <b>출처</b>\n            <br/>\n            dcauchy, pcauchy 및 qcauchy는 모두 정의의 수치적으로 안정적인 버전에서 계산됩니다.\n            <br/>\n            rcauchy는 역수를 사용합니다."
+  }
+}

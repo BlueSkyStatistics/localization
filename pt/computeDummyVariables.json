@@ -1,0 +1,20 @@
+{
+  "title": "Calcular Variável(is) Dummy",
+  "navigation": "Código Dummy",
+  "label1": "Insira as variáveis a serem codificadas como dummy. Novas variáveis são criadas com o nome no formato \"nome da variável_nível nome\". Por padrão, o nível mais frequente é tratado como referência",
+  "target": "Selecione a(s) variável(is) a serem codificadas",
+  "label2": "Nível a ser tratado como referência",
+  "MostFrequent": "Valor mais frequente",
+  "first": "Primeiro valor",
+  "None": "Manter todos os níveis (não recomendado para modelos estatísticos) A.k.a codificação one hot",
+  "prefix": "Prefixo",
+  "txt1": "Insira um prefixo/sufixo",
+  "label3": "Outras opções",
+  "chk3": "Remover variáveis originais",
+  "chk4": "Criar variáveis dummy para valores ausentes",
+  "help": {
+    "title": "Calcular Variável(is) Dummy",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Descrição</b></br>\nCalcular Variáveis Dummy\n<br/>\n<b>Uso</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n.data:\tUm objeto com o conjunto de dados do qual você deseja criar colunas dummy.\n</li>\n<li>\nselect_columns:\tVetor de nomes de colunas das quais você deseja criar variáveis dummy. Se NULL (padrão), usa todas as colunas de caracteres e fatores.\n</li>\n<li>\nremove_first_dummy: Remove o primeiro dummy de cada variável, de modo que apenas n-1 dummies permaneçam. Isso evita problemas de multicolinearidade em modelos.\n</li>\n<li>\nremove_most_frequent_dummy: Remove a categoria observada com mais frequência, de modo que apenas n-1 dummies permaneçam. Se houver um empate para o mais frequente, removerá a primeira categoria (por ordem alfabética) que está empatada como mais frequente.\n</li>\n<li>\nignore_na: Se TRUE, ignora quaisquer valores NA na coluna. Se FALSE (padrão), então fará uma coluna dummy para o valor_NA e dará um 1 em qualquer linha que tenha um valor NA.\n</li>\n<li>\nsplit: Uma string para dividir uma coluna quando várias categorias estão na célula. Por exemplo, se uma variável é Animais de Estimação e as linhas são \"gato\", \"cachorro\" e \"tartaruga\", cada um desses animais se tornaria sua própria coluna dummy. Se uma linha for \"gato, cachorro\", então um valor de divisão de \",\" esta linha teria um valor de 1 para ambas as colunas dummy de gato e cachorro.\n</li>\n<li>\nremove_selected_columns: Se TRUE (não padrão), remove as colunas usadas para gerar as colunas dummy.\n</li>\n<li>\nValor: Um data.frame (ou tibble ou data.table, dependendo do tipo de dados de entrada) com o mesmo número de linhas que os dados de entrada e colunas originais, além das novas colunas dummy criadas.\n</li>\n<li>\nVeja Também\ndummy_rows Para criar linhas dummy\n</li>\n<li>\nOutras funções dummy: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Exemplos</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Incluir coluna de ano\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Remover o primeiro dummy para cada par de colunas dummy criadas</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Pacote</b></br>\nfastDummies</br>\n<b>Ajuda</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

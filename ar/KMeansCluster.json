@@ -1,0 +1,16 @@
+{
+  "title": "تجمع K-Means",
+  "navigation": "K-Means",
+  "destination": "الوجهة",
+  "clusters": "عدد المجموعات",
+  "seeds": "عدد البذور الابتدائية",
+  "iterations": "الحد الأقصى من التكرارات",
+  "storeClusterInDataset": "تعيين المجموعات إلى مجموعة البيانات",
+  "variablename": "متغير لتخزين أرقام المجموعات",
+  "biplot": "عرض مخطط ثنائي للمجموعات",
+  "help": {
+    "title": "تجمع K-Means",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>الوصف</b></br>\nينفذ تجميع K-means\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10,storeClusterInDataset =FALSE, varNameForCluster=\"\", dataset=\"اسم مجموعة البيانات\") \n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nvars: المتغيرات التي سيتم تحليلها في متجه من الشكل c('var1','var2'...)\n</li>\n<li>\ncenters: إما عدد المجموعات، مثل k، أو مجموعة من مراكز المجموعات الأولية (المتميزة). إذا كان عددًا، يتم اختيار مجموعة عشوائية من (المتميزة) \nالصفوف في x كمراكز أولية.\n</li>\n<li>\niter.max: الحد الأقصى لعدد التكرارات المسموح بها.\n</li>\n<li>\nnum.seeds: عدد البذور العشوائية المختلفة التي يجب استخدامها. كل بذور عشوائية تؤدي إلى حل مختلف لـ k-means.\n</li>\n<li>\nstoreClusterInDataset : حفظ تعيينات المجموعات إلى مجموعة البيانات\n</li>\n<li>\nvarNameForCluster: أسماء المتغيرات للمجموعات المعينة\n</li>\n<li>\ndataset: مجموعة البيانات للتحليل\n</li>\n</ul>\n<b>الحزمة</b></br>\nBlueSky</br>\n<b>المساعدة</b></br>\nhelp(kmeans, package=\"stats\")\n    "
+  }
+}

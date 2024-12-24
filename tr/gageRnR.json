@@ -1,0 +1,20 @@
+{
+  "title": "Gage R&R - Ölçüm Sistemi Analizi, Temel",
+  "navigation": "Gage R&R, Temel",
+  "mainTitle": "Grafik çıktısı için ana başlık",
+  "subTitle": "Grafik çıktısı için alt başlık (örneğin, SixSigma projesinin adı)",
+  "measuredVar": "Ölçülen değişken",
+  "part": "Parça değişkeni",
+  "appr": "Değerlendirici (operatörler, makineler, ...) değişkeni",
+  "lsl": "LSL - Çalışma Varyasyonu hesaplamak için USL ile birlikte kullanılan alt spesifikasyon limitinin sayısal değeri",
+  "usl": "USL - Çalışma Varyasyonu hesaplamak için LSL ile birlikte kullanılan üst spesifikasyon limitinin sayısal değeri",
+  "sigma": "Sigma - Çalışma Varyasyonu hesaplamak için kullanılacak standart sapma sayısının sayısal değeri",
+  "tolerance": "Tolerans - tolerans için sayısal değer - varsayılan (usl - lsl)",
+  "alphaLim": "Alpha - etkileşimi dikkate almak için limit",
+  "errorTerm": "Modelin hangi terimin hata terimi olarak kullanılacağı (etkileşimli model için)",
+  "help": {
+    "title": "Gage R&R - Ölçüm Sistemi Analizi",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tss.rr fonksiyonu, bir sürecin ölçüm sisteminin değerlendirilmesi için Gage R&R analizi gerçekleştirmek için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(ss.rr, package = SixSigma) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, gageR_R_piston_diameter_with_measurements.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\tÖrnek veri setinden, Ölçülen değişken için çap değişkenini, Parça değişkeni için Piston halkasını ve Değerlendirici için Operatörü seçin\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Análise de Design de Experimentos com Modelo de Superfície de Resposta (Quantitativo)",
+  "navigation": "Análise de Design - Modelo de Superfície de Resposta",
+  "modelname": "Insira o nome do modelo de Superfície de Resposta",
+  "dependent": "Variável de Resposta (dependente)",
+  "formulaboxhint": "Você também pode inserir SO(var1, var2,...) para efeitos de segunda ordem e interações, ou FO(...),... do pacote rsm na caixa de construtor de fórmulas acima.",
+  "independent": "Preditores Numéricos - insira abaixo as variáveis numéricas da fórmula",
+  "generateContourPlotChk": "Exibir Contorno (gráficos)",
+  "generateRSMPlotChk": "Exibir Superfície de Resposta (gráficos)",
+  "generatePathSteepestAscentChk": "Mostrar caminho da ascensão mais íngreme a partir da análise de crista",
+  "checkShapiroNormalityTestChk": "Teste de normalidade de Shapiro",
+  "normalityPlotsChk": "Gráfico para verificar normalidade",
+  "help": {
+    "title": "Modelo de Superfície de Resposta com um construtor de fórmulas de modelo",
+    "r_help": "ajuda(rsm, pacote = rsm)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tRegressão de superfície de resposta - ajuste um modelo linear com um componente de superfície de resposta e produza análises e resumos apropriados\n\t\t\t\t<br/> No construtor de fórmulas, você pode digitar SO(var1, var2, var3, ...) ou FO(var1, ..) ou outra função do pacote rsm - ajuda(SO, pacote =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara mais detalhes, veja a ajuda do R para os seguintes\n\t\t\t\t<br/>\n\t\t\t\tejuda(rsm, pacote = rsm)\n\t\t\t\t<br/>\n\t\t\t\tejuda(SO, pacote = rsm)\n\t\t\t\t<br/>\n\t\t\t\tejuda(FO, pacote = rsm)\n\t\t\t\t<br/>\n\t\t\t\tejuda(contour, pacote = graphics) \n\t\t\t\t<br/>\n\t\t\t\tejuda(persp, pacote = graphics) \n\t\t\t\t<br/>\n\t\t\t\tejuda(steepest, pacote = rsm)  \n\t\t\t\t<br/>\n\t\t\t\tejuda(shapiro.test, pacote = stats)  \n\t\t\t\t<br/>\n\t\t\t\tejuda(qqnorm, pacote = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

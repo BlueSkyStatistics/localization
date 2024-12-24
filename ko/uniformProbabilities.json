@@ -1,0 +1,15 @@
+{
+  "title": "균일 확률",
+  "navigation": "균일 확률",
+  "varvals": "변수 값(들)을 쉼표로 구분하여 입력하세요. 예: 3,0.5",
+  "min": "최소",
+  "max": "최대",
+  "labelSig": "유의 수준",
+  "lowtail": "하위 꼬리",
+  "uptail": "상위 꼬리",
+  "help": {
+    "title": "균일 확률",
+    "r_help": "help(punif, package=stats)",
+    "body": "\n            ​​\n            <b>설명</b>\n            <br/>\n            이 함수들은 최소값과 최대값 사이의 균일 분포에 대한 정보를 제공합니다. dunif는 밀도를, punif는 분포 함수를, qunif는 분위수 함수를, runif는 난수를 생성합니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n                dunif(x, min = 0, max = 1, log = FALSE)\n                <br/>\n                punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                runif(n, min = 0, max = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n                <li>x, q : 분위수 벡터.</li>\n                \n                \n                <li>p : 확률 벡터.</li>\n                \n                \n                <li>n : 관측치 수. length(n) > 1인 경우, 길이는 필요한 수로 간주됩니다.</li>\n                \n                \n                <li>min, max : 분포의 하한 및 상한. 유한해야 합니다.</li>\n                \n                \n                <li>log, log.p : 논리적; TRUE인 경우, 확률 p는 log(p)로 제공됩니다.</li>\n                \n                \n                <li>lower.tail : 논리적; TRUE(기본값)인 경우, 확률은 P[X ≤ x]이며, 그렇지 않으면 P[X > x]입니다.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>세부사항</b>\n            <br/>\n            min 또는 max가 지정되지 않은 경우 기본값 0과 1을 가정합니다.\n            <br/>\n            균일 분포의 밀도는\n            <br/>\n            <code>f(x) = 1/(max-min)</code>\n            <br/>\n            min ≤ x ≤ max에 대해 성립합니다.\n            <br/>\n            u := min == max의 경우, X == u의 한계 경우가 가정되지만, 이 경우 밀도가 없으며 dunif는 NaN(오류 조건)을 반환합니다.\n            <br/>\n            runif는 max = min이거나 max-min이 min에 비해 작지 않는 한 극단적인 값을 생성하지 않습니다. 특히 기본 인수에 대해서는 그렇지 않습니다.\n            <br/>\n            <br/><b>값</b>\n            <br/>\n            dunif는 밀도를, punif는 분포 함수를, qunif는 분위수 함수를, runif는 난수를 생성합니다.\n            <br/>\n            결과의 길이는 runif의 n에 의해 결정되며, 다른 함수의 수치 인수의 길이 중 최대값입니다.\n            <br/>\n            n을 제외한 수치 인수는 결과의 길이에 맞게 재활용됩니다. 논리적 인수의 첫 번째 요소만 사용됩니다.\n            <br/>\n            <br/><b>참고</b>\n            <br/>\n            의사 난수 생성기에서 출력의 특성(정밀도 및 주기성 등)은 매우 다양합니다. R의 난수 생성 알고리즘에 대한 자세한 내용은 .Random.seed를 참조하십시오.\n            \n      "
+  }
+}

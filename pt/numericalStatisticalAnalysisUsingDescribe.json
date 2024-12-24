@@ -1,0 +1,11 @@
+{
+  "title": "Estatísticas Numéricas, usando descrever",
+  "navigation": "Sumários Numéricos, usando descrever (Legado)",
+  "tvarbox1": "Selecionar variáveis",
+  "tvarbox2": "Selecionar variáveis de agrupamento",
+  "help": {
+    "title": "Estatísticas Numéricas, usando descrever",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>Descrição</b></br>\nProduz as seguintes estatísticas numéricas:</br>\ncontagem, média, desvio padrão, mediana, truncada, mad, mínimo, máximo, intervalo, assimetria, curtose, erro padrão\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n#BSkyFormat exibe uma saída formatada de forma agradável<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: Um dataframe ou matriz\n</li>\n</ul>\n<b>Pacote</b></br>\npsych</br>\n<b>Ajuda</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

@@ -1,14 +1,14 @@
 {
-  "title": "Statistici numerice, folosind rezuma",
-  "navigation": "Sumare numerice, folosind rezuma (Moștenire)",
-  "tvarbox1": "Variabile selectate",
+  "title": "Statistici Numerice, folosind summarize",
+  "navigation": "Sumarizări Numerice, folosind summarize (Legacy)",
+  "tvarbox1": "Variabile Selectate",
   "tvarbox2": "Grupare după",
-  "label1": "Opțiuni de afișare",
-  "horizontal": "Afișare orizontală",
-  "vertical": "Afișare verticală",
+  "label1": "Opțiuni de Afișare",
+  "horizontal": "Afișare Orizontală",
+  "vertical": "Afișare Verticală",
   "help": {
-    "title": "Statistici numerice, folosind rezuma",
+    "title": "Statistici Numerice, folosind summarize",
     "r_help": "",
-    "body": "\n<b>Descriere</b></br>\nProduse statistici numerice următoare pentru fiecare grup de variabile țintă. Variabilele țintă pot fi grupate opțional după una sau mai multe variabile factor sau numerice. Tipărește următoarele informații pentru variabilele țintă sau fiecare grup după care variabilele țintă sunt grupate, și anume min, 1st quantile (25%), max, medie, mediană, 3rd quantile (75%), sumă, varianță, deviație standard, eroare standard, asimetrie, kurtosis\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n##Funcția de mai jos este executată pentru fiecare variabilă țintă și dataframe-urile rezultate sunt transmise și combinate<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndataset1: Acesta este setul de date\n</li>\n<li>\ngroup_by: Grupare opțională a variabilelor țintă după una sau mai multe variabile factor sau numerice\n</li>\n<li>\nsummarize: Rezumarea variabilelor țintă sau grupurilor de variabile țintă (dacă variabilele specificate în group_by) prin funcțiile de rezumare specificate, și anume medie, mediană, min...\n</li>\n</ul>\n<b>Valoare</b></br>\nUn obiect de clasă \"data.frame\", care oferă rezultatele pentru fiecare funcție pe fiecare variabilă.</br>\n<b>Pachet</b></br>\ncaret</br>\n<b>Ajutor</b></br>\nAjutorul R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă aveți nevoie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
+    "body": "\n<b>Descriere</b></br>\nOferă următoarele statistici numerice pentru fiecare grup de variabile țintă. Variabilele țintă pot fi grupate opțional după una sau mai multe variabile factor sau numerice. Afișează următoarele informații pentru variabilele țintă sau fiecare grup după care sunt grupate variabilele țintă, și anume min, 1st quantile (25%), max, medie, mediană, 3rd Quantile (75%), sumă, varianță, deviație standard, eroare standard, asimetrie, kurtosis\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n##Funcția de mai jos este rulată pentru fiecare variabilă țintă și dataframe-urile rezultate sunt transpuși și combinate<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndataset1: Acesta este datasetul\n</li>\n<li>\ngroup_by: Opțional, gruparea variabilelor țintă după una sau mai multe variabile factor sau numerice\n</li>\n<li>\nsummarize: Sumarizarea variabilelor țintă sau grupurilor de variabile țintă (dacă variabilele specificate în group_by) prin funcțiile de sumarizare specificate, și anume medie, mediană, min...\n</li>\n</ul>\n<b>Valoare</b></br>\nUn obiect de clasă \"data.frame\", oferind rezultatele pentru fiecare funcție pe fiecare variabilă.</br>\n<b>Pachet</b></br>\ncaret</br>\n<b>Ajutor</b></br>\nAjutorul R nu este disponibil deoarece am scris cod personalizat folosind multiple funcții R. Dacă aveți nevoie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
   }
 }

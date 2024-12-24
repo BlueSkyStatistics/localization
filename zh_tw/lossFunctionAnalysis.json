@@ -3,14 +3,14 @@
   "navigation": "損失函數分析",
   "lfaSubTitle": "圖形輸出的副標題",
   "independent": "包含損失函數分析數據的列",
-  "lfaDelta": "過程的容差",
+  "lfaDelta": "過程的容忍度",
   "lfaY0": "過程的目標",
-  "lfaL0": "在容差限制下的劣質成本",
-  "lfaSize": "用於計算組內總損失的生產、批次等的大小（範圍、批次、周期等）",
+  "lfaL0": "在容忍限度下的劣質成本",
+  "lfaSize": "計算一組總損失的生產、批次等的大小（跨度、批次、期間等）",
   "lfaOutput": "輸出類型（可能的值 - 文本、圖形或兩者）",
   "help": {
     "title": "損失函數分析",
     "r_help": "help(ss.lfa, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.lfa函數執行基於Taguchi損失函數的質量損失函數分析，適用於“名義最佳”特性。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為loss_function_table.xlsx的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.lfa 函數用於基於田口損失函數的「名義最佳」特徵進行質量損失函數分析。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 loss_function_table.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

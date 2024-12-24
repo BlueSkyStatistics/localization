@@ -1,0 +1,19 @@
+{
+  "title": "Calcolo Condizionale",
+  "navigation": "Calcolo Condizionale",
+  "label1": "=",
+  "newvar": "Nome della variabile nuova/esistente (senza spazi/caratteri speciali):",
+  "formulaBuilderCondition": "Specifica una condizione ad es. var1 > 10",
+  "formulaBuilderConditionTrue": "Valore quando la condizione è VERA",
+  "formulaBuilderConditionFalse": "Valore quando la condizione è FALSA",
+  "placeHolder1": "Ad es. gpa == 4",
+  "placeHolder2": "Ad es. \"Studente con lode\"",
+  "placeHolder3": "Ad es. \"Studente normale\"",
+  "label2": "Costruisci il comando di calcolo appropriato utilizzando il costruttore di espressioni qui sotto, ad es. var1+var2, as.numeric(var2), substr(var4,2,4)...",
+  "formula": "Costruisci un comando di calcolo",
+  "help": {
+    "title": "Variabile(i) di Calcolo",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Descrizione</b></br>\nCalcola un'espressione e memorizza il risultato in una variabile/colonna di un dataframe/dataset</br>\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Espressione)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nDatasetX: nome del dataframe/dataset.​\n</li>\n<li>\nvar1: La colonna nuova/esistente nel dataset/dataframe che deve essere calcolata\n</li>\n<li>\nEspressione: Un'espressione nella forma variabile1 =variabile2+variabile3\n</li>\n</ul>\n<b>Dettagli</b></br>\nValuta l'espressione e memorizza il risultato nella variabile/colonna di un dataframe/dataset</br>\n<b>Pacchetto</b></br>\ndplyr</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(mutate, package ='dplyr') nella finestra dell'editor R\n            "
+  }
+}

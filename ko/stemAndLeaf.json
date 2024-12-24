@@ -1,0 +1,25 @@
+{
+  "title": "줄기와 잎 도표",
+  "navigation": "줄기와 잎",
+  "Destination": "플롯할 변수를 선택하세요",
+  "label1": "잎의 숫자",
+  "label2": "줄기당 부분",
+  "label3": "나뉜 줄기의 스타일",
+  "label4": "옵션",
+  "Value": "값 입력",
+  "Automatic": "자동",
+  "EnterValue": "값 지정",
+  "StemAutomatic": "자동",
+  "SpecifyStemValue": "값 지정",
+  "StemValue": "값 입력",
+  "Tukey": "투키",
+  "Repeated": "반복된 줄기 숫자",
+  "Trim": "이상치 제거",
+  "Depths": "깊이 표시",
+  "NegativeLeaves": "음수 잎 반전",
+  "help": {
+    "title": "줄기와 잎 도표",
+    "r_help": "help(stem.leaf, package='aplpack')",
+    "body": "\n            <b>설명</b></br>\n            줄기와 잎 표시 및 양쪽 줄기와 잎 표시\n            고전적인 (\"투키 스타일\") 줄기와 잎 표시 / 양쪽 줄기와 잎 표시를 생성합니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            stem.leaf(data, unit, m, Min, Max, rule.line = c(\"Dixon\", \"Velleman\", \"Sturges\"),\n                style = c(\"Tukey\", \"bare\"), trim.outliers = TRUE, depths = TRUE,\n                reverse.negative.leaves = TRUE, na.rm = FALSE, printresult = TRUE)<br/><br/>\n            stem.leaf.backback(x,y, unit, m, Min, Max, rule.line = c(\"Dixon\", \"Velleman\", \n                \"Sturges\"), style = c(\"Tukey\", \"bare\"), trim.outliers = TRUE, \n                depths = TRUE, reverse.negative.leaves = TRUE, na.rm = FALSE,\n                printresult=TRUE, show.no.depths = FALSE, add.more.blanks = 0,\n                back.to.back = TRUE)\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 데이터의 숫자 벡터\n            </li>\n            <li>\n            x: stem.leaf.backback의 첫 번째 데이터셋\n            </li>\n            <li>\n            y: stem.leaf.backback의 두 번째 데이터셋\n            </li>\n            <li>\n            unit: 잎 단위, 10의 거듭제곱 (예: 100, .01); 단위가 누락되면 stem.leaf에 의해 단위가 선택됩니다.\n            </li>\n            <li>\n            m: 각 줄기가 나뉘어질 부분의 수 (1, 2 또는 5); m이 누락되면 stem.leaf에 의해 부분 수(m)가 선택됩니다.\n            </li>\n            <li>\n            Min: 가장 작은 비이상치 값; 자동 선택을 위해 생략합니다.\n            </li>\n            <li>\n            Max: 가장 큰 비이상치 값; 자동 선택을 위해 생략합니다.\n            </li>\n            <li>\n            rule.line: 표시에서 원하는 줄 수를 선택하는 데 사용할 규칙; \"Dixon\" = 10*log10(n); \"Velleman\" = 2*sqrt(n); \"Sturges\" = 1 + log2(n); 기본값은 \"Dixon\"입니다.\n            </li>\n            <li>\n            style: \"Tukey\" (기본값) \"투키 스타일\" 나뉜 줄기를 위해; \"bare\"는 단순히 줄기 숫자를 반복하는 나뉜 줄기를 위해.\n            </li>\n            <li>\n            trim.outliers: TRUE인 경우 (기본값), 이상치는 LO 및 HI 줄기에 배치됩니다.\n            </li>\n            <li>\n            depths: TRUE인 경우 (기본값), 줄기 왼쪽에 \"깊이\" 열을 인쇄합니다; 중앙값을 포함하는 줄기의 깊이는 괄호로 묶인 줄기 수입니다.\n            </li>\n            <li>\n            reverse.negative.leaves: TRUE인 경우 (기본값), 음수 줄기의 잎 방향을 반전합니다 (예: 잎 9가 잎 8보다 먼저 옵니다).\n            </li>\n            <li>\n            na.rm: TRUE인 경우 \"NA\" 값이 제거되며, 그렇지 않으면 NA의 수가 계산됩니다.\n            </li>\n            <li>\n            printresult: TRUE인 경우 줄기와 잎 표시의 출력을 cat으로 출력합니다.\n            </li>\n            <li>\n            show.no.depths: TRUE인 경우 깊이가 인쇄되지 않습니다.\n            </li>\n            <li>\n            add.more.blanks: 잎 외에 추가되는 공백의 수입니다.\n            </li>\n            <li>\n            back.to.back: FALSE인 경우 두 개의 평행한 줄기와 잎 표시가 구성됩니다.\n            </li>\n            </ul>\n            <b>세부사항</b></br>\n            기본 패키지의 stem 함수와 달리, stem.leaf는 Tukey의 탐색적 데이터 분석에 설명된 고전적인 줄기와 잎 표시를 생성합니다. 함수 stem.leaf.backback은 양쪽 줄기와 잎 표시를 생성합니다.\n            <br/>\n            <b>값</b></br>\n            계산된 줄기와 잎 표시가 출력됩니다. 보이지 않게 stem.leaf는 정보(범례), 표시(문자 벡터로서의 줄기와 잎 표시), 하한(매우 작은 값), 상한(매우 큰 값), 깊이(깊이 벡터), 줄기(벡터로서의 줄기 정보), 잎(잎의 벡터)를 포함하는 리스트로 줄기와 잎 표시를 반환합니다.</br>\n            <b>예제</b></br>\n            stem.leaf(co2)\n            stem.leaf.backback(co2[1:120],co2[121:240])</br>\n            stem.leaf.backback(co2[1:120],co2[121:240], back.to.back = FALSE)</br>\n            stem.leaf.backback(co2[1:120],co2[121:240], back.to.back = FALSE,\n                               add.more.blanks = 3, show.no.depths = TRUE)</br>\n            stem.leaf.backback(rivers[-(1:30)],rivers[1:30], back.to.back = FALSE, unit=10, m=5, \n                               Min=200, Max=900, add.more.blanks = 20, show.no.depths = TRUE)</br>\n            <b>패키지</b></br>\n            aplpack</br>\n            <b>도움말</b></br>\n            help(stem.leaf, package=aplpack)</br>\n    "
+  }
+}

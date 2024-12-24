@@ -1,0 +1,13 @@
+{
+  "title": "Imputare i valori mancanti (Utilizzando una formula)",
+  "navigation": "Usa una formula",
+  "depVar": "Seleziona una variabile per imputare i valori mancanti (Questa è la variabile dipendente nel modello)",
+  "label1": "Sposta le variabili indipendenti nel controllo del costruttore di formule per costruire una formula. Passa il mouse sui simboli nel costruttore di formule per assistenza",
+  "formula": "Spostare più variabili con il pulsante di spostamento utilizza un separatore predefinito di +, che indica variabili indipendenti senza termini di interazione. Fai clic sul simbolo per costruire un modello con termini di interazione.",
+  "independent": "Variabili Indipendenti (una o più)",
+  "help": {
+    "title": "Imputare i valori mancanti (Utilizzando una formula)",
+    "r_help": "help(if_else,package='dplyr')",
+    "body": "\n            <b>Descrizione</b></br>\n            Costruisci una formula per sostituire i valori mancanti. Ad esempio, costruisci un modello di regressione per sviluppare stime per i valori mancanti; una volta generata l'equazione, puoi inserire l'equazione nella finestra di dialogo e solo i valori mancanti nella variabile selezionata verranno calcolati.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code> \n            Dataset$var<-con (Dataset,dplyr::if_else(is.na(var),espressione,var))<br/>\n            # sostituendo espressione con var2*4+1.32<br/>\n            Dataset$var<-con (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            var: Il nome della variabile nel dataset dove i valori mancanti devono essere sostituiti, ad esempio var=c(\"vendite\"). La variabile deve essere di classe numerica\n            </li>\n            <li>\n            Dataset: Il dataset/dataframe che contiene la variabile var\n            </li>\n            <li>\n            espressione: L'espressione utilizzata per sostituire il valore mancante, nell'esempio sopra è var2*4+ 1.32\n            </li>\n            </ul>\n            <b>Pacchetto</b></br>\n            dplyr</br>\n            <b>Aiuto</b></br>\n            Per assistenza dettagliata fai clic sull'icona R nell'angolo in alto a destra di questa finestra di dialogo o esegui il seguente comando help(if_else, package ='dplyr') creando un blocco di codice R facendo clic su + nella finestra di output\n            "
+  }
+}

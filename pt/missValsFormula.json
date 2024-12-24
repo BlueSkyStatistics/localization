@@ -1,0 +1,13 @@
+{
+  "title": "Imputar Valores Ausentes (Usando uma fórmula)",
+  "navigation": "Usar uma fórmula",
+  "depVar": "Selecione uma variável para imputar valores ausentes (Esta é a variável dependente no modelo)",
+  "label1": "Mova as variáveis independentes para o controle do construtor de fórmulas para construir uma fórmula. Passe o mouse sobre os símbolos no construtor de fórmulas para ajuda",
+  "formula": "Mover várias variáveis com o botão de mover usa um separador padrão de +, indicando variáveis independentes sem termos de interação. Clique no símbolo para construir um modelo com termos de interação.",
+  "independent": "Variáveis Independentes (uma ou mais)",
+  "help": {
+    "title": "Imputar Valores Ausentes (Usando uma fórmula)",
+    "r_help": "help(if_else,package='dplyr')",
+    "body": "\n            <b>Descrição</b></br>\n            Construa uma fórmula para substituir valores ausentes. Por exemplo, você constrói um modelo de regressão para desenvolver estimativas para os valores ausentes, uma vez que a equação é gerada, você pode inserir a equação no diálogo e apenas os valores ausentes na variável selecionada serão computados.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            Dataset$var<-com (Dataset,dplyr::if_else(is.na(var),expressão,var))<br/>\n            # substituindo expressão por var2*4+1.32<br/>\n            Dataset$var<-com (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            var: O nome da variável no conjunto de dados onde os valores ausentes devem ser substituídos, por exemplo, var=c(\"vendas\"). A variável deve ser da classe numérica\n            </li>\n            <li>\n            Dataset: O conjunto de dados/dataframe que contém a variável var\n            </li>\n            <li>\n            expressão: A expressão usada para substituir o valor ausente, no exemplo acima é var2*4+ 1.32\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            dplyr</br>\n            <b>Ajuda</b></br>\n            Para ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando help(if_else, package ='dplyr') criando um bloco de código R clicando + na janela de saída\n            "
+  }
+}

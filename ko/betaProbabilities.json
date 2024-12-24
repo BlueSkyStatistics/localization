@@ -1,0 +1,15 @@
+{
+  "title": "베타 확률",
+  "navigation": "베타 확률",
+  "varvals": "변수 값(들)을 쉼표로 구분하여 입력하세요. 예: 3,0.5",
+  "shape1": "형상 1",
+  "shape2": "형상 2",
+  "labelSig": "유의 수준",
+  "lowtail": "하위 꼬리",
+  "uptail": "상위 꼬리",
+  "help": {
+    "title": "베타 확률",
+    "r_help": "help(pbeta, package=stats)",
+    "body": "\n            <b>설명</b>\n<br/>\n형상1 및 형상2(선택적 비중 매개변수 ncp)를 가진 베타 분포의 밀도, 분포 함수, 분위수 함수 및 난수 생성.\n<br/>\n<b>사용법</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>인수</b>\n<br/>\n<ul>\n    <li>x, q : 분위수 벡터.</li>\n    \n    \n    <li>p : 확률 벡터.</li>\n    \n    \n    <li>n : 관측 수. 길이(n) > 1인 경우, 필요한 길이로 간주됩니다.</li>\n    \n    \n    <li>shape1, shape2 : 베타 분포의 비음수 매개변수.</li>\n    \n    \n    <li>ncp : 비중 매개변수.</li>\n    \n    \n    <li>log, log.p : 논리적; TRUE인 경우, 확률 p는 log(p)로 제공됩니다.</li>\n    \n    \n    <li>lower.tail : 논리적; TRUE(기본값)인 경우, 확률은 P[X ≤ x], 그렇지 않으면 P[X > x].</li>\n    \n</ul>\n\n\n\n<br/>\n<b>세부사항</b>\n<br/>\n형상1 = a 및 형상2 = b인 베타 분포는 밀도가\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\n인 경우 a > 0, b > 0 및 0 ≤ x ≤ 1에서 정의됩니다. x=0 또는 x=1에서의 경계 값은 연속성에 의해 정의됩니다(한계로서). \n<br/>\n 평균은 a/(a+b)이고 분산은 ab/((a+b)^2 (a+b+1))입니다. 이러한 모멘트와 모든 분포 속성은 a 또는 b가 0 또는 무한대일 때 한계로 정의될 수 있으며, 해당 [dpqr]beta() 함수는 그에 따라 정의됩니다.\n <br/>\npbeta는 불완전 베타 함수와 밀접한 관련이 있습니다. Abramowitz와 Stegun 6.6.1에 의해 정의된 바와 같이\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\n및 6.6.2 I_x(a,b) = B_x(a,b) / B(a,b) 여기서 B(a,b) = B_1(a,b)는 베타 함수(beta)입니다.\n<br/>\n<code>I_x(a,b)는 pbeta(x, a, b)입니다.</code>\n<br/>\n비중 베타 분포(ncp = λ)는 X/(X+Y)의 분포로 정의됩니다. 여기서 X ~ chi^2_2a(λ) 및 Y ~ chi^2_2b입니다.\n<br/>\n<br/><b>값</b>\n<br/>\ndbeta는 밀도를 제공하고, pbeta는 분포 함수를 제공하며, qbeta는 분위수 함수를 제공하고, rbeta는 난수를 생성합니다.\n<br/>\n유효하지 않은 인수는 NaN 반환 값을 초래하며, 경고가 발생합니다.\n<br/>\n결과의 길이는 rbeta의 n에 의해 결정되며, 다른 함수의 경우 수치 인수의 최대 길이에 의해 결정됩니다.\n<br/>\nn 외의 수치 인수는 결과의 길이에 맞게 재활용됩니다. 논리적 인수의 첫 번째 요소만 사용됩니다.\n<br/>\n<br/><b>참고</b>\n<br/>\nncp = 0을 제공하면 비중 분포에 대한 알고리즘이 사용되며, 이는 ncp가 생략된 경우 사용되는 알고리즘과 다릅니다. 이는 ncp 값이 0에 매우 가까운 극단적인 경우에 일관된 동작을 제공하기 위함입니다.\n"
+  }
+}

@@ -3,14 +3,14 @@
   "navigation": "容忍區間",
   "label1": "選擇最適合數據的分佈函數",
   "variableSelcted": "選擇要分析的變數（觀察數據）",
-  "x": "樣本中缺陷（或可接受）單位的數量",
-  "m": "未來組中生產的數量",
+  "x": "樣本中的缺陷（或可接受）單位數",
+  "m": "未來組別中生產的數量",
   "alpha": "置信區間（例如 0.95）",
-  "P": "區間內人口的最小百分比（指定一個介於 0 和 1 之間的值）",
-  "side": "需要 1 邊或 2 邊的容忍區間（類型 1 或 2）",
+  "P": "區間內的最小（指定介於 0 和 1 之間的值）百分比",
+  "side": "需要 1 側或 2 側的容忍區間（類型 1 或 2）",
   "method": "計算 k 因子的方式（僅適用於正態、對數正態、伽馬分佈）",
   "selectDistFuncNormalRad": "正態",
-  "selectDistFuncWeibullRad": "威布爾",
+  "selectDistFuncWeibullRad": "韋伯",
   "selectDistFuncExpRad": "指數",
   "selectDistFuncGammaRad": "伽馬",
   "selectDistFuncLnormalRad": "對數正態",
@@ -18,6 +18,6 @@
   "help": {
     "title": "容忍區間",
     "r_help": "help(normtol.int, package = tolerance)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t計算容忍區間的函數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R 幫助（package = 'tolerance'），help(normtol.int, package = tolerance)，help(exttol.int, package = tolerance）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t計算 k 因子的方法\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t計算 k 因子的方法僅適用於正態、對數正態和伽馬分佈。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                1 邊容忍區間的 k 因子是精確計算的，因此與所選方法相同。“HE”是 Howe 方法，通常被視為極其準確，\n\t\t\t\t<br/>\n\t\t\t\t即使對於小樣本量也是如此。“HE2”是 Howe 的第二種方法，其性能與 Weissberg-Beatty 方法相似，\n\t\t\t\t<br/>\n\t\t\t\t但計算上更簡單。“WBE”是 Weissberg-Beatty 方法（也稱為 Wald-Wolfowitz 方法），\n\t\t\t\t<br/>\n\t\t\t\t對於較大的樣本量，其性能與第一種 Howe 方法相似。“ELL”是對 Weissberg-Beatty 方法的 Ellison 修正，\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\t當 f 明顯大於 n^2 時。如果 f 不大於 n^2，則會顯示警告信息。\n\t\t\t\t<br/>\n\t\t\t\t“KM”是 Krishnamoorthy-Mathew 對精確解的近似，適用於較大的樣本量。\n\t\t\t\t<br/>\n\t\t\t\t“EXACT”通過使用 integrate 函數找到問題的積分解來精確計算 k 因子。\n\t\t\t\t<br/>\n\t\t\t\t請注意，此方法的計算時間主要由 m 決定。“OCT”是 Owen 方法，用於計算 k 因子，\n\t\t\t\t<br/>\n\t\t\t\t當控制尾部，以確保每個尾部的數據不超過 (1-P)/2。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為 tolerance.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t選擇 ND 到變數（觀察..），\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t計算容忍區間的函數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R 幫助（package = 'tolerance'），help(normtol.int, package = tolerance)，help(exttol.int, package = tolerance）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t計算 k 因子的方法\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t計算 k 因子的方法僅適用於正態、對數正態和伽馬分佈。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                1 側容忍區間的 k 因子是精確計算的，因此與所選方法相同。\"HE\" 是 Howe 方法，通常被認為非常準確，\n\t\t\t\t<br/>\n\t\t\t\teven for small sample sizes. \"HE2\" 是 Howe 的第二種方法，與 Weissberg-Beatty 方法類似，\n\t\t\t\t<br/>\n\t\t\t\t但計算上更簡單。\"WBE\" 是 Weissberg-Beatty 方法（也稱為 Wald-Wolfowitz 方法），\n\t\t\t\t<br/>\n\t\t\t\t對於較大的樣本大小，其表現類似於第一個 Howe 方法。\"ELL\" 是 Ellison 對\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\tWeissberg-Beatty 方法的修正，當 f 明顯大於 n^2 時顯示警告信息。\n\t\t\t\t<br/>\n\t\t\t\t\"KM\" 是 Krishnamoorthy-Mathew 對精確解的近似，對於較大的樣本大小效果良好。\n\t\t\t\t<br/>\n\t\t\t\t\"EXACT\" 通過找到問題的積分解來精確計算 k 因子。\n\t\t\t\t<br/>\n\t\t\t\t注意此方法的計算時間主要取決於 m。\"OCT\" 是 Owen 方法，用於計算 k 因子\n\t\t\t\t<br/>\n\t\t\t\t當控制尾部，以便每個尾部的數據不超過 (1-P)/2。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為 tolerance.xlsx 的樣本數據集文件。使用文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t選擇 ND 到變數（觀察..），\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

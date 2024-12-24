@@ -1,0 +1,14 @@
+{
+  "title": "Sayısal İstatistikler, özet kullanarak",
+  "navigation": "Sayısal Özetler, özet kullanarak (Eski)",
+  "tvarbox1": "Seçilen Değişkenler",
+  "tvarbox2": "Grupla",
+  "label1": "Görüntüleme Seçenekleri",
+  "horizontal": "Yatay görüntüleme",
+  "vertical": "Dikey görüntüleme",
+  "help": {
+    "title": "Sayısal İstatistikler, özet kullanarak",
+    "r_help": "",
+    "body": "\n<b>Açıklama</b></br>\nHedef değişkenlerin her grubu için aşağıdaki sayısal istatistikleri çıktılar. Hedef değişkenler, bir veya daha fazla faktör veya sayısal değişkenle isteğe bağlı olarak gruplandırılabilir. Hedef değişkenler veya hedef değişkenlerin gruplandırıldığı her grup için aşağıdaki bilgileri yazdırır: min, 1. çeyrek (25%), max, ortalama, medyan, 3. çeyrek (75%), toplam, varyans, standart sapma, standart hata, çarpıklık, basıklık\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n##Aşağıdaki fonksiyon her hedef değişken için çalıştırılır ve sonuçta elde edilen veri çerçeveleri transpoze edilip birleştirilir<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ndataset1: Bu veri setidir\n</li>\n<li>\ngroup_by: Hedef değişkenleri bir veya daha fazla faktör veya sayısal değişkenle isteğe bağlı olarak gruplandırın\n</li>\n<li>\nsummarize: Hedef değişkenleri veya hedef değişken gruplarını (eğer group_by'da belirtilen değişkenler varsa) özet fonksiyonlarıyla özetleyin, yani ortalama, medyan, min...\n</li>\n</ul>\n<b>Değer</b></br>\nHer fonksiyon için her değişken üzerinde sonuçları veren \"data.frame\" sınıfından bir nesne.</br>\n<b>Paket</b></br>\ncaret</br>\n<b>Yardım</b></br>\nR Yardımı mevcut değil çünkü birden fazla R fonksiyonu kullanarak özel kod yazdık. Kodu incelemek isterseniz \"<>\" butonuna tıklayın.</br>\n    "
+  }
+}

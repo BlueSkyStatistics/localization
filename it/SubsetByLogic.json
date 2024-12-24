@@ -1,0 +1,20 @@
+{
+  "title": "Sottoinsieme del dataset per logica",
+  "navigation": "Sottoinsieme del dataset per logica",
+  "label0": "Puoi scegliere di salvare i risultati in un nuovo dataset o sovrascrivere il dataset esistente",
+  "label1": "Opzioni",
+  "New": "Salva risultati in un nuovo dataset",
+  "newdatasetname": "Inserisci un nome per il dataset",
+  "Existing": "Sovrascrivi il dataset esistente",
+  "Output": "Visualizza i risultati nella finestra di output",
+  "distinct": "Seleziona casi distinti",
+  "chkbox2": "Rimuovi livelli di fattore non utilizzati",
+  "subsetvars": "Seleziona le variabili da includere nel dataset sottoposto a sottoinsieme",
+  "label12": "I criteri di sottoinsieme vengono applicati a ciascuna riga, vedere gli esempi qui sotto. \n1: Seleziona righe in cui var 1 non è vuota e var2 è vuota specifica:\n!is.na(var1) & is.na(var2) \n2: Seleziona righe in cui var1 > 30 e var 2 è Maschio specifica:\nvar1>30 & var2=='Maschio' \n3: Criteri complessi e/o specifica:\n(var1 !=10 & var2>20) | var3==40 \n4: Corrispondenza di pattern (xxx) o una corrispondenza esatta (abc) specifica:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Corrispondenza di una sottostringa per posizione specifica: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Inserisci i criteri di sottoinsieme.",
+  "help": {
+    "title": "Sottoinsieme del dataset",
+    "r_help": "help(filter, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\nRestituisce un sottoinsieme del dataset. Puoi specificare le colonne/variabili che desideri nel dataset più piccolo. Puoi anche specificare i criteri di selezione da applicare a ciascuna riga del dataframe.\n<br/><br/>\n<b>Salva risultati in un nuovo dataset:</b> Specifica un nuovo dataset per memorizzare i dati sottoposti a sottoinsieme\n<br/><br/>\n<b>Sovrascrivi il dataset esistente:</b> Questo salva il dataset sottoposto a sottoinsieme con il nome del dataset esistente\n<br/><br/>\n<b>Visualizza risultati nella finestra di output:</b> Questo stampa il dataset sottoposto a sottoinsieme solo nella finestra di output.  Il dataset sottoposto a sottoinsieme non viene salvato in un dataset.\n<br/><br/>\n<b>Casi distinti selezionati:</b> Questo rimuove i duplicati dal dataset sottoposto a sottoinsieme. Tutte le variabili devono essere le stesse per essere considerate un duplicato.\n<br/><br/>\n<b>Rimuovi livelli di fattore non utilizzati:</b> Questo elimina i livelli di fattore che sono stati esclusi dal sottoinsieme (cioè non appaiono più nei dati).\n<br/><br/>\n<b>Seleziona variabili da includere nel dataset sottoposto a sottoinsieme:</b> Questo consente all'utente di selezionare colonne specifiche che desidera includere nel dataset.  Se ne vengono specificate alcune, solo le variabili specificate appariranno nel dataset sottoposto a sottoinsieme.  Se non vengono specificate variabili, tutte le variabili verranno mantenute.\n<br/><br/>\n<b>Inserisci criteri di sottoinsieme:</b> Specifica la logica delle variabili che verrà utilizzata per filtrare le righe del dataset.\n<br/><br/>\n<b>Pacchetto R</b></br>\ndplyr<br/>  \n<b>Aiuto</b></br>\nhelp(filter, package=dplyr)\n"
+  }
+}

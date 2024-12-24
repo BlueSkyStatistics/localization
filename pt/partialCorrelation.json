@@ -1,0 +1,13 @@
+{
+  "title": "Correlações Semi-parciais",
+  "navigation": "Semi-parcial",
+  "statistic": "Selecione um método",
+  "tvarbox1": "Selecione variáveis",
+  "correlationType": "Tipo de correlação",
+  "tvarbox2": "Selecione variáveis de controle",
+  "help": {
+    "title": "Correlações Semi-parciais",
+    "r_help": "help(spcor.test, package=ppcor)",
+    "body": "\n            <b>Descrição</b></br>\n            Correlação semi-parcial para duas variáveis dadas uma terceira variável. Calcularemos a correlação semi-parcial par a par entre cada uma das variáveis especificadas na seleção de variáveis, controlando pelas variáveis especificadas no controle de variáveis.<br/>\n            Escrevemos um wrapper em torno da função spcor.test que chama spcor.test para cada par das variáveis especificadas.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            Argumentos\n            x: um vetor numérico.\n            </li>\n            <li>\n            y: um vetor numérico.\n            </li>\n            <li>\n            y: um vetor numérico.\n            </li>\n            <li>\n            method: uma string de caracteres indicando qual coeficiente de correlação parcial deve ser computado. Um dos \"pearson\" (padrão), \"kendall\" ou \"spearman\" pode ser abreviado..\n            </li>\n            </ul>\n            <b>Detalhes</b></br>\n            A correlação semi-parcial é a correlação de duas variáveis com a variação de uma terceira variável removida apenas da segunda variável. Quando o determinante da matriz de variância-covariância é numericamente zero, a inversa generalizada de Moore-Penrose é usada. Nesse caso, nenhum valor p e estatística será fornecido se o número de variáveis for maior ou igual ao tamanho da amostra.</br>\n            <b>Valor</b><br/>\n            estimate: o coeficiente de correlação semi-parcial (parte) entre duas variáveis.<br/>\n            p.value: o valor p do teste.<br/>\n            n: O número de amostras.<br/>\n            <b>Exemplos</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>Pacote</b></br>\n            ppcor</br>\n            <b>Ajuda</b></br>\n            help(pcor.test, package=ppcor)\n"
+  }
+}

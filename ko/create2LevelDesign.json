@@ -1,0 +1,20 @@
+{
+  "title": "비정규(분수) 계층 2단계 스크리닝 설계 생성",
+  "navigation": "2단계 스크리닝 설계 생성",
+  "selectedvars": "변수 선택",
+  "datasetname": "설계 이름",
+  "numOfRuns": "실행 수(4의 배수, >=8)",
+  "taguchiOrderChk": "(관련 있는 경우) 타구치 순서의 12회 실행 설계",
+  "numOfCenterPts": "중심점 수(사용하는 경우 최소 2개)",
+  "centerPointDistribution": "중심점 분포를 위한 위치 수(1개 초과)",
+  "replications": "복제",
+  "repeatOnlyChk": "단순 반복",
+  "lbl1": "무작위화 설정을 변경할 필요가 없을 수 있습니다",
+  "randomseeds": "무작위화 시드",
+  "randomizationChk": "설계 생성을 무작위화",
+  "help": {
+    "title": "2단계 스크리닝 설계 생성",
+    "r_help": "help(pb, package = FrF2)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tPlackett-Burman(pb) 함수를 사용하여 비정규 분수 계층 2단계 스크리닝 설계를 생성합니다\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(pb, package = FrF2)를 사용하세요\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 factor_grid_twolevel_screen_Design.xlsx라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다\n\t\t\t"
+  }
+}

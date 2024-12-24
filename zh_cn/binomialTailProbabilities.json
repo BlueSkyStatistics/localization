@@ -3,13 +3,13 @@
   "navigation": "二项尾概率",
   "varvals": "输入变量值，用逗号分隔。例如：3,0.5",
   "size": "二项试验",
-  "prob": "成功概率",
+  "prob": "成功的概率",
   "labelSig": "显著性水平",
   "lowtail": "下尾",
   "uptail": "上尾",
   "help": {
     "title": "二项尾概率",
     "r_help": "help(pbinom, package=stats)",
-    "body": "\n            <b>描述</b>\n            <br/>\n密度、分布函数、分位数函数和随机生成用于具有参数大小和概率的二项分布。\n<br/>\n这通常被解释为在大小试验中获得的“成功”数量。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>参数</b>\n<br/>\n<ul>\n    <li>x, q : 分位数向量。</li>\n    \n    \n    <li>p : 概率向量。</li>\n    \n    \n    <li>n : 观察数量。如果长度(n) > 1，则长度被视为所需数量。</li>\n    \n    \n    <li>size : 试验次数（零或更多）。</li>\n    \n    \n    <li>prob : 每次试验成功的概率。</li>\n    \n    \n    <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n    \n    \n    <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n</ul>\n\n\n\n<br/>\n<b>详细信息</b>\n<br/>\n具有size = n和prob = p的二项分布的密度为\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\n对于x = 0, …, n。请注意，二项系数可以通过R中的choose计算。\n<br/>\n如果x的一个元素不是整数，则dbinom的结果为零，并发出警告。\n<br/>\np(x)是使用Loader算法计算的，见下面的参考文献。\n<br/>\n分位数定义为使F(x) ≥ p的最小值x，其中F是分布函数。\n<br/>\n<br/><b>值</b>\n<br/>\ndbinom给出密度，pbinom给出分布函数，qbinom给出分位数函数，rbinom生成随机偏差。\n<br/>\n如果size不是整数，则返回NaN。\n<br/>\n结果的长度由rbinom的n决定，并且是其他函数的数值参数长度的最大值。\n<br/>\n除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n   "
+    "body": "\n            <b>描述</b>\n            <br/>\n密度、分布函数、分位数函数和随机生成用于具有参数大小和概率的二项分布。\n<br/>\n这通常被解释为在大小试验中获得的“成功”次数。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>参数</b>\n<br/>\n<ul>\n    <li>x, q : 分位数的向量。</li>\n    \n    \n    <li>p : 概率的向量。</li>\n    \n    \n    <li>n : 观察次数。如果长度(n) > 1，则长度被视为所需的数量。</li>\n    \n    \n    <li>size : 试验次数（零或更多）。</li>\n    \n    \n    <li>prob : 每次试验成功的概率。</li>\n    \n    \n    <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n    \n    \n    <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n</ul>\n\n\n\n<br/>\n<b>细节</b>\n<br/>\n具有size = n和prob = p的二项分布的密度\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\n对于x = 0, …, n。请注意，二项系数可以通过R中的choose计算。\n<br/>\n如果x的某个元素不是整数，dbinom的结果为零，并发出警告。\n<br/>\np(x)是使用Loader算法计算的，见下面的参考文献。\n<br/>\n分位数定义为使得F(x) ≥ p的最小值x，其中F是分布函数。\n<br/>\n<br/><b>值</b>\n<br/>\ndbinom给出密度，pbinom给出分布函数，qbinom给出分位数函数，rbinom生成随机偏差。\n<br/>\n如果size不是整数，则返回NaN。\n<br/>\n结果的长度由rbinom的n决定，并且是其他函数的数值参数长度的最大值。\n<br/>\n除了n以外的数值参数被回收至结果的长度。只有逻辑参数的第一个元素被使用。\n   "
   }
 }

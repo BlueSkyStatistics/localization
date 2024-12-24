@@ -1,11 +1,11 @@
 {
-  "title": "Transpuneți setul de date, selectați variabile",
-  "navigation": "Selectați variabile",
+  "title": "Transpune Setul de Date, selectați variabilele",
+  "navigation": "Selectați Variabilele",
   "transposedDataset": "Introduceți un nume pentru setul de date transpus",
   "destination": "Selectați variabilele de transpus",
   "help": {
-    "title": "Transpuneți variabilele selectate",
+    "title": "Transpuneți Variabilele Selectate",
     "r_help": "help(t, package='base')",
-    "body": "\n<b>Descriere</b></br>\nInvocă funcția de transpunere din pachetul de bază care transpune variabilele selectate și stochează rezultatele în noul set de date. Trebuie să specificați numele setului de date care stochează setul de date transpus. Noul set de date transpus este afișat în grilă.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: este o matrice sau un dataframe\n</li>\n</ul>\n<b>Valoare</b><br/>\nO matrice, cu dim și dimnames construite corespunzător din cele ale lui x, și alte atribute, cu excepția numelui copiate.<br/>\n<b>Pachet</b></br>\nbase<br/>\n<b>Ajutor</b></br>\nhelp(t, package='base')\n"
+    "body": "\n<b>Descriere</b></br>\nInvocă funcția de transpunere din pachetul de bază care transpune variabilele selectate și stochează rezultatele în noul set de date. Trebuie să specificați numele setului de date care stochează setul de date transpus. Noul set de date transpus este afișat în grilă.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: este o matrice sau un dataframe\n</li>\n</ul>\n<b>Valoare</b><br/>\nO matrice, cu dimensiuni și nume de dimensiuni construite corespunzător din cele ale x, și alte atribute, cu excepția numelui, copiate.\n<br/>\n<b>Pachet</b></br>\nbase<br/>\n<b>Ajutor</b></br>\nhelp(t, package='base')\n"
   }
 }

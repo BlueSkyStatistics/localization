@@ -1,0 +1,31 @@
+{
+  "title": "프로세스 능력",
+  "navigation": "프로세스 능력",
+  "summaryPlotChk": "프로세스 능력을 계산하는 데 사용되는 기본 xbar 및 I 차트를 플로팅합니다.",
+  "displaySLlineonPlotChk": "기본 플롯에 LSL 및 USL 선을 표시합니다.",
+  "printObjectSummaryChk": "프로세스 능력에 대한 QCC 객체 요약을 인쇄합니다.",
+  "label1": "두 가지 옵션 - 변수를 선택하거나(필요에 따라 그룹화 변수를 선택) 이미 그룹화된 데이터 세트에서 변수를 선택합니다.",
+  "label2": "고급 옵션",
+  "selectVariableRad": "옵션 1: 데이터 세트에서 변수를 선택합니다(선택적으로 그룹화가 필요할 수 있음).",
+  "variableSelcted": "분석할 변수를 선택합니다(관측 데이터).",
+  "groupingVariable": "그룹화 변수(선택 사항 - 데이터가 그룹화되어야 하는 경우).",
+  "variableControlLimits": "변수 제어 한계를 위해 그룹화하기 전에 버려야 할 데이터 행(예: 1:25 또는 1,4,5,7:12로 지정).",
+  "displayGroupsChk": "참조용으로 데이터 세트 UI 그리드에 그룹을 표시합니다.",
+  "selectDatasetRad": "옵션 2: 이미 그룹화된 경우 데이터 세트에서 변수를 선택합니다.",
+  "variablelistSelcted": "분석할 하나 이상의 그룹화된 변수를 선택합니다(관측 데이터).",
+  "rowsTobeUsed": "프로세스 능력을 분석하는 데 사용할 선택된(그룹화된) 행(예: 1:25 또는 1,4,5,7:12로 지정).",
+  "nsigmas": "시그마 - 제어 한계를 계산하는 데 사용할 시그마 수.",
+  "confidence_level": "신뢰 구간을 계산하는 데 사용할 0과 1 사이의 숫자 값.",
+  "stddev": "xbar를 계산하기 위한 표준 편차 방법(그룹 크기 > 1).",
+  "stddevXbarOne": "I-MR을 계산하기 위한 표준 편차 방법.",
+  "DoNotUseUnbiasingConstantChk": "전체 프로세스 능력 지수를 추정하기 위해 비편향 상수를 사용하지 마십시오.",
+  "lower": "LSL - 하한 사양 한계의 숫자 값(단일 사양 한계를 지정하려면 NA 입력).",
+  "upper": "USL - 상한 사양 한계의 숫자 값(단일 사양 한계를 지정하려면 NA 입력).",
+  "target": "목표 - 프로세스의 목표를 지정하는 선택적 값.",
+  "digits": "숫자 - 표시할 숫자의 수.",
+  "help": {
+    "title": "프로세스 능력 (qcc 패키지)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tqcc 함수는 능력 지수를 계산합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), help(sd.xbar.one, package = qcc)를 사용하십시오.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 qcc 패키지에서 pistonrings라는 데이터 세트를 Load Dataset 메뉴를 통해 로드할 수 있습니다. qcc 패키지를 선택한 다음 pistonrings 데이터 세트를 선택합니다.\n\t\t\t\t<br/>\n\t\t\t\t옵션 1, 관찰된 변수에 대한 직경을 선택하고, 샘플을 그룹화 변수로 선택합니다.\n\t\t\t\t<br/>\n\t\t\t\t사용할 그룹화된 행에 1:25를 입력합니다.\n\t\t\t\t<br/>\n\t\t\t\t프로세스 능력 분석을 위해 LSL에 73.95, USL에 74.05, 목표 한계에 74.0을 입력합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html에서 qcc 튜토리얼을 따르십시오.\n\t\t\t"
+  }
+}

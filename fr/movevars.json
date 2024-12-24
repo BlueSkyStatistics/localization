@@ -9,7 +9,7 @@
   "aftervarlabel": "",
   "help": {
     "title": "Déplacer des Variables",
-    "r_help": "aide(déplacer, paquet ='dplyr')",
-    "body": "\nCela déplacera des variables à un emplacement spécifié dans le jeu de données.\n<br/><br/>\n<b>Variables à Déplacer:</b> Variables à déplacer à un autre emplacement. Elles seront placées dans l'ordre spécifié dans cette boîte.\n<br/><br/>\n<b>Emplacement:</b> Emplacement dans le jeu de données pour déplacer les variables. <b>Premier</b> place les variables au début du jeu de données.  \n<b>Dernier</b> place les variables à la fin du jeu de données.  <b>Après la Variable Sélectionnée</b> place les variables après cette variable dans le jeu de données.\n<br/><br/>\n<b>Packages R Requis:</b> dplyr\n\t\t\t"
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\nCela déplacera des variables vers un emplacement spécifié dans l'ensemble de données.\n<br/><br/>\n<b>Variables à Déplacer :</b> Variables à déplacer vers un autre emplacement. Elles seront placées dans l'ordre spécifié dans cette boîte.\n<br/><br/>\n<b>Emplacement :</b> Emplacement dans l'ensemble de données pour déplacer les variables. <b>Premier</b> place les variables au début de l'ensemble de données.  \n<b>Dernier</b> place les variables à la fin de l'ensemble de données.  <b>Après la Variable Sélectionnée</b> place les variables après cette variable dans l'ensemble de données.\n<br/><br/>\n<b>Packages R Requis :</b> dplyr\n\t\t\t"
   }
 }

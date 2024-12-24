@@ -1,0 +1,27 @@
+{
+  "title": "Test di Equivalenza",
+  "navigation": "Test di Equivalenza",
+  "variableSelcted1": "Seleziona la prima variabile",
+  "label1": "Per confrontare due variabili, scegli una variabile di raggruppamento (solo due livelli) o una seconda variabile (indipendente o abbinata)",
+  "variableSelcted2": "Seleziona una seconda variabile",
+  "label2": "Come trattare la seconda variabile se selezionata",
+  "groupingNeededRad": "La seconda variabile selezionata è una variabile di raggruppamento",
+  "referenceGpValue": "Inserisci il valore del gruppo da utilizzare come riferimento",
+  "pairedTestRad": "Esegui il Test Abbinato - la seconda variabile selezionata è abbinata",
+  "noneRad": "Nessuna delle precedenti",
+  "targetMean": "Obiettivo (media) - non applicabile per Due Campioni",
+  "lower": "Limite inferiore - valore numerico del limite di equivalenza inferiore",
+  "upper": "Limite superiore - valore numerico del limite di equivalenza superiore",
+  "smdChk": "Limiti di equivalenza specificati in SMD (Differenza Media Standardizzata)",
+  "label3": "Tipo di test",
+  "EQUtestRad": "Esegui test di equivalenza",
+  "METtestRad": "Esegui test di effetti minimi (MET)",
+  "alpha": "livello alpha (predefinito = 0.05)",
+  "HedgesCorrectionChk": "Calcola automaticamente la correzione di Hedges (altrimenti mostra d di Cohen)",
+  "plotChk": "Grafico di consonanza (questo potrebbe richiedere del tempo per visualizzare il grafico)",
+  "help": {
+    "title": "Test di Equivalenza",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione per eseguire il test di equivalenza o il test di effetti minimi (MET)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(t_TOST, package = TOSTER)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato iris con il menu Carica Dataset selezionando il dataset iris dal secondo menu a discesa (digita rapidamente iris)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSeleziona Sepal.Length come prima variabile e (opzionalmente) scegli Sepal.Width come seconda variabile, e seleziona il test Abbinato\n\t\t\t\t<br/>\n\t\t\t\tdigita 5.5 come limite inferiore e 8.5 come limite superiore per il margine di equivalenza, clicca su esegui \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial su https://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

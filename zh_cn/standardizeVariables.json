@@ -7,12 +7,12 @@
   "suffix": "后缀",
   "prefix": "前缀",
   "txt1": "输入前缀/后缀",
-  "label3": "中心和/或缩放",
-  "Center": "中心",
+  "label3": "中心化和/或缩放",
+  "Center": "中心化",
   "Scale": "缩放",
   "help": {
     "title": "标准化变量",
     "r_help": "",
-    "body": "\n<b>描述</b></br>\n标准化变量（z 分数）。标准化值存储在带有原始变量前缀或后缀的新变量中。提供了中心和/或缩放的选项。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvars: 一个或多个要标准化的变量。仅支持数值变量（不支持因子）。\n</li>\n<li>\ncenter: 如果 center 为 TRUE，则通过从 x 的相应列中减去列均值（忽略 NAs）来进行中心化，如果 center 为 FALSE，则不进行中心化。\n</li>\n<li>\nscale: 如果 scale 为 TRUE，则通过将 x 的（中心化）列除以它们的标准差来进行缩放，如果 center 为 TRUE，则通过均方根进行缩放。 如果 scale 为 FALSE，则不进行缩放。\n</li>\n<li>\nstingToPrefixOrSuffix: 一个字符字符串，指定用于新标准化变量的前缀或后缀（即数据集中的新列）。\n</li>\n<li>\nprefixOrSuffix: 指定您想要前缀还是后缀\n</li>\n<li>\ndatasetname: 数据集/数据框的名称\n</li>\n</ul>\n注意：我们不会从数值转换为因子。当数值被重新编码时，它将保持数值，当因子变量被重新编码时，它将保持因子。</br>\n<b>包</b></br>\nBlueSky</br>\n"
+    "body": "\n<b>描述</b></br>\n标准化变量（z 分数）。标准化值存储在带有原始变量前缀或后缀的新变量中。提供中心化和/或缩放的选项。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvars: 一个或多个要标准化的变量。仅支持数值变量（不支持因子）。\n</li>\n<li>\ncenter: 如果 center 为 TRUE，则通过从 x 的相应列中减去列均值（忽略 NAs）来进行中心化；如果 center 为 FALSE，则不进行中心化。\n</li>\n<li>\nscale: 如果 scale 为 TRUE，则通过将 x 的（中心化）列除以其标准差（如果 center 为 TRUE）或均方根（否则）来进行缩放。如果 scale 为 FALSE，则不进行缩放。\n</li>\n<li>\nstingToPrefixOrSuffix: 一个字符字符串，指定用于新标准化变量的前缀或后缀（即数据集中的新列）。\n</li>\n<li>\nprefixOrSuffix: 指定您想要前缀还是后缀\n</li>\n<li>\ndatasetname: 数据集/数据框名称\n</li>\n</ul>\n注意：我们不会将数值转换为因子。当数值被重新编码时，它将保持为数值，当因子变量被重新编码时，它将保持为因子。</br>\n<b>包</b></br>\nBlueSky</br>\n"
   }
 }

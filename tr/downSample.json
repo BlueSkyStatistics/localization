@@ -1,0 +1,13 @@
+{
+  "title": "Aşağı Örnekleme",
+  "navigation": "Örnek, Aşağı Örnekleme",
+  "description": "Dengesiz Verileri Aşağı Örnekleme. AşağıÖrnekleme, tüm sınıfların azınlık sınıf ile aynı sıklıkta olmasını sağlamak için bir veri kümesini rastgele örnekleyecektir.",
+  "downsample": "Veri kümesinin adını girin",
+  "seed": "Tohum ayarla",
+  "dependent": "Aşağı örnekleme yapılacak değişken",
+  "help": {
+    "title": "Aşağı Örnekleme",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Açıklama</b></br>\nDengesiz Verileri Aşağı Örnekleme. AşağıÖrnekleme, tüm sınıfların azınlık sınıf ile aynı sıklıkta olmasını sağlamak için bir veri kümesini rastgele örnekleyecektir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Sınıf\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: bir tahmin değişkenleri matris veya veri çerçevesi\n</li>\n<li>\ny: sınıf üyelikleri ile bir faktör değişken\n</li>\n<li>\nlist: fonksiyon list(x, y) mi döndürsün yoksa x ve y'yi birleştirsin mi? Eğer TRUE ise, çıktı bir veri çerçevesine dönüştürülecektir.\n</li>\n<li>\nyname: eğer list = FALSE ise, sınıf sütunu için bir etiket\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nBasit rastgele örnekleme, çoğunluk sınıf(lar) için aşağı örnekleme yapmak için kullanılır. Azınlık sınıf verilerinin sağlam kaldığını ve örneklerin aşağı örneklenmiş versiyonda yeniden sıralanacağını unutmayın.</br>\nYukarı örnekleme için, tüm orijinal veriler sağlam kalır ve azınlık sınıflara ek örnekler eklenir.\n<b>Değer</b><br/>\nYa bir veri çerçevesi ya da x ve y öğeleri ile bir liste.</br>\n<b>Örnekler</b></br>\n## Saçma bir örnek...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Paket</b></br>\ncaret</br>\n<b>Yardım</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

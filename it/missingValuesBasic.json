@@ -1,0 +1,16 @@
+{
+  "title": "Sostituisci i valori mancanti (Variabili numeriche)",
+  "navigation": "Numerico",
+  "label1": "I valori mancanti (NA) nelle variabili selezionate vengono sostituiti applicando una funzione, ad esempio mediana, media, minimo, massimo o il valore specificato.",
+  "target": "Seleziona le variabili per sostituire i valori mancanti",
+  "label2": "Seleziona una funzione o specifica un valore per sostituire gli NA",
+  "rd1": "Usa una funzione per calcolare i valori mancanti",
+  "selectctrl": "Seleziona la funzione",
+  "rd2": "Specifica un valore numerico per sostituire i valori mancanti",
+  "valueEntered": "Inserisci un valore numerico",
+  "help": {
+    "title": "Sostituisci i valori mancanti (Numerico)",
+    "r_help": "help(mean)",
+    "body": "\n<b>Descrizione</b></br>\nSostituisci i valori mancanti nelle variabili selezionate con l'operazione selezionata, ad esempio mediana, media, minimo, massimo\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvar: Stringa carattere che rappresenta la variabile numerica con valori mancanti (na), ad esempio var = c('vendite')\n</li>\n<li>\nDataset: Il dataset che contiene la variabile var\n</li>\n</ul>\n<b>Valore</b><br/>\nI valori calcolati sono memorizzati direttamente nel Dataset<br/>\n<b>Pacchetto</b></br>\nbase</br>\n<b>Aiuto</b></br>\nhelp(mean)"
+  }
+}

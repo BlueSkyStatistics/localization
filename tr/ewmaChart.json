@@ -1,0 +1,21 @@
+{
+  "title": "EWMA grafiği",
+  "navigation": "EWMA grafiği",
+  "summaryPrintChk": "Grafiklerin yanı sıra özeti yazdır",
+  "label2": "İki seçenek - ya grafik için bir değişken seçin (ve gerektiğinde bir gruplama değişkeni) ya da zaten gruplandırılmışsa veri kümesindeki değişkenleri seçin",
+  "selectVariableRad": "Seçenek 1: Gruplandırılması gereken veri kümesinden bir değişken seçin",
+  "variableSelcted": "Grafiğe alınacak değişken (gözlemlenen veri)",
+  "groupingVariable": "Gruplama Değişkeni",
+  "displayGroupsChk": "Veri kümesi UI ızgarasında gruplamaları göster",
+  "selectDatasetRad": "Seçenek 2: Zaten gruplandırılmışsa Veri Kümesinden değişkenleri seçin",
+  "variablelistSelcted": "Grafiğe alınacak bir veya daha fazla gruplandırılmış değişkeni (gözlemlenen veri) seçin",
+  "nsigmas": "Sigma - kontrol limitlerini hesaplamak için kullanılacak sigma sayısı",
+  "lambda": "Düzleştirme parametresi (0 ile 1 arasında)",
+  "rowsTobeUsed": "Grafiğe alınacak Gruplandırılmış Satırlar (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "rowsTobeUsedAsNewData": "Yeni Veri - Grafiğe alınacak Yeni Veri olarak kullanılacak Gruplandırılmış Satırlar (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin) - hesaplamalara dahil edilmeyen yeni veri",
+  "help": {
+    "title": "EWMA grafiği",
+    "r_help": "help(ewma, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tİstatistiksel kalite kontrolü yapmak ve Shewhart grafiklerini çizmek için qcc fonksiyonu\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(ewma, package = qcc) ve help(qcc, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, qcc paketinden pistonrings adlı veri kümesini Yükle Veri Kümesi menüsü ile yükleyebilirsiniz, qcc paketini seçin ve ardından pistonrings veri kümesini seçin\n\t\t\t\t<br/>\n\t\t\t\tSeçenek 1'i seçin, çapı değişken(gözlemlenen..) olarak, örnek gruplama değişkeni olarak,\n\t\t\t\t<br/>\n\t\t\t\tGruplandırılmış satırlara 1:25, Yeni Veri için 30:40 yazın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqcc eğitimini https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html adresinden takip edin\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

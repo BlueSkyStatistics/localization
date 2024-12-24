@@ -1,0 +1,26 @@
+{
+  "title": "밀도 플롯",
+  "navigation": "밀도",
+  "x": "플롯할 변수 선택",
+  "y": "색상, 요인 변수 지정",
+  "fill": "채우기, 요인 변수 지정",
+  "label1": "겹침을 제어할 위치 선택",
+  "rd1": "밀도 쌓기",
+  "rd2": "밀도를 쌓고 각 스택을 단위 높이로 표준화",
+  "rd3": "나란히 (도지)",
+  "alpha": "불투명도 (0-1)",
+  "flip": "축 뒤집기",
+  "specify_a_title": "제목 입력",
+  "x_title": "X 축 레이블",
+  "y_title": "Y 축 레이블",
+  "Facetrow": "패싯 행",
+  "Facetcolumn": "패싯 열",
+  "Facetwrap": "패싯 랩",
+  "Facetscale": "패싯 스케일",
+  "facets_lbl": "패싯",
+  "help": {
+    "title": "밀도 플롯",
+    "r_help": "help(geom_density, package='ggplot2')",
+    "body": "\n            <b>설명</b></br>\n            밀도 카운트(1d 커널 밀도 추정)를 플롯합니다. 요인 변수에 따라 밀도를 분리할 수 있습니다. 또한 선택적으로 패싯, 테마를 생성하고 제목 및 x, y 축 레이블을 지정할 수 있습니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"변수 var1에 대한 밀도 플롯\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"변수 var1에 대한 밀도 플롯, var2의 수준에 따라 색상\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 기본 데이터셋\n            </li>\n            <li>\n            aes(): 데이터의 변수가 지오메트리의 시각적 속성(미적)에 어떻게 매핑되는지를 설명하는 미적 매핑을 생성합니다.\n            </li>\n            <li>\n            x: 밀도를 플롯할 숫자 변수\n            </li>\n            <li>\n            y: ..count는 숫자 변수의 카운트를 지정합니다\n            </li>\n            <li>\n            fill: 플롯을 그룹화할 요인 변수\n            </li>\n            <li>\n            position: 문자열로서의 위치 조정, 또는 위치 조정 함수 호출의 결과입니다. 유효한 값은 \"stack\",\"dodge\",\"fill\"입니다.\n            </li>\n            <li>\n            geom_density (): 1d 커널 밀도 추정, 위치 매개변수는 이 레이어에서 겹치는 점에 대해 사용할 위치 조정을 지정할 수 있습니다.\n            </li>\n            <li>\n            Labs(): 축 레이블 및 범례 제목을 변경합니다(선택 사항).\n            </li>\n            <li>\n            facet_grid(): 패널을 그리드에 배치합니다(선택 사항)\n            </li>\n            <li>\n            theme_excel(): 엑셀 테마(선택 사항)\n            </li>\n            <li>\n            alpha: 투명도를 설정합니다\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            ggplot2;ggthemes</br>\n            <b>도움말</b></br>\n            help(geom_density)</br>\n            기타: R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻으십시오. 또한 help(geom_density), help(labs), help(aes), help(facet_grid), help(theme_excel)을 입력할 수 있습니다.\n    "
+  }
+}

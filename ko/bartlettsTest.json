@@ -1,0 +1,11 @@
+{
+  "title": "바틀렛 테스트",
+  "navigation": "바틀렛 테스트",
+  "tvarbox1": "응답 변수",
+  "tvarbox2": "숫자 또는 요인 변수",
+  "help": {
+    "title": "바틀렛 테스트",
+    "r_help": "help(bartlett.test, package=stats)",
+    "body": "\n<b>설명</b></br>\n각 그룹(샘플)의 분산이 동일하다는 귀무가설에 대한 바틀렛 테스트를 수행합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nbartlett.test(x, ...)</br>\n## 기본 S3 메서드:</br>\nbartlett.test(x, g, ...)</br>\n## 'formula' 클래스에 대한 S3 메서드</br>\nbartlett.test(formula, data, subset, na.action, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\n인수\nx: 데이터 값의 숫자 벡터 또는 해당 샘플을 나타내는 숫자 데이터 벡터의 목록 또는 \"lm\" 클래스에서 상속된 적합된 선형 모델 객체입니다.\n</li>\n<li>\ng: x의 해당 요소에 대한 그룹을 제공하는 벡터 또는 요인 객체입니다. x가 목록인 경우 무시됩니다.\n</li>\n<li>\nformula: lhs ~ rhs 형태의 공식으로, lhs는 데이터 값을 제공하고 rhs는 해당 그룹을 제공합니다.\n</li>\n<li>\ndata: 공식에 포함된 변수를 포함하는 선택적 행렬 또는 데이터 프레임(또는 유사한 것: model.frame 참조)입니다. 기본적으로 변수는 environment(formula)에서 가져옵니다.\n</li>\n<li>\nsubset: 사용될 관측치의 하위 집합을 지정하는 선택적 벡터입니다.\n</li>\n<li>\nna.action: 데이터에 NA가 포함될 때 발생해야 하는 일을 나타내는 함수입니다. 기본값은 getOption(\"na.action\")입니다.\n</li>\n<li>\n...: 메서드에 전달되거나 메서드에서 전달될 추가 인수입니다.\n</li>\n</ul>\n<b>세부정보</b></br>\nx가 목록인 경우, 그 요소는 분산의 동질성을 비교하기 위한 샘플 또는 적합된 선형 모델로 사용됩니다. 이 경우, 요소는 모두 숫자 데이터 벡터이거나 적합된 선형 모델 객체여야 하며, g는 무시되고 bartlett.test(x)를 사용하여 테스트를 수행할 수 있습니다. 샘플이 아직 목록에 포함되지 않은 경우, bartlett.test(list(x, ...))를 사용하십시오.</br>\n그렇지 않으면, x는 숫자 데이터 벡터여야 하며, g는 x의 해당 요소에 대한 그룹을 제공하는 x와 동일한 길이의 벡터 또는 요인 객체여야 합니다.</br>\n<b>값</b><br/>\n\"htest\" 클래스의 목록으로 다음 구성 요소를 포함합니다:<br/>\nstatistic: 바틀렛의 K-제곱 테스트 통계량.<br/>\nparameter: 테스트 통계량의 근사 카이제곱 분포의 자유도.<br/>\np.value: 테스트의 p-값.<br/>\nmethod: \"분산의 동질성에 대한 바틀렛 테스트\"라는 문자열입니다.<br/>\ndata.name: 데이터의 이름을 제공하는 문자열입니다.<br/>\n<b>예제</b><br/>\n<code> \nDataset <- data.frame(Age=c(20,23,19,25,26), Weight=c(48,50,55,51,49), Gender=c('m','f','f','m','m' ))\nResult_Bartlett_Test = bartlett.test(sales ~ interaction(Dataset$Gender),data=Dataset)\n</code> <br/>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(bartlett.test, package=stats)\n"
+  }
+}

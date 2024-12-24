@@ -1,0 +1,27 @@
+{
+  "title": "Sottoinsieme per Posizione",
+  "navigation": "Sottoinsieme Per Posizione",
+  "newdatasetlabel": "Specifica Nome Nuovo Dataset",
+  "sortbyvarslabel": "Variabili da Ordinare Per Prime (Ordine Crescente)",
+  "groupbyvarslabel": "Gruppi da Sottoinsieme All'interno",
+  "subsettypelabel": "Tipo di Sottoinsieme",
+  "firstnlabel": "Prime N Righe",
+  "lastnlabel": "Ultime N Righe",
+  "lowestnlabel": "Righe con i Valori N Più Bassi per una Variabile",
+  "highestnlabel": "Righe con i Valori N Più Alti per una Variabile",
+  "firstproplabel": "Prima Proporzione di Righe",
+  "lastproplabel": "Ultima Proporzione di Righe",
+  "lowestproplabel": "Righe all'interno del Percentile Più Basso per una Variabile",
+  "highestproplabel": "Righe all'interno del Percentile Più Alto per una Variabile",
+  "nlabel": "N (positivo mantiene, negativo rimuove)",
+  "proplabel": "Proporzione (positivo mantiene, negativo rimuove)",
+  "varlabel": "Variabile",
+  "tieslabel": "Includi Valori Legati",
+  "rownumlabel": "Specifica Numeri di Riga",
+  "rownumboxlabel": "Numeri o intervalli separati da virgole (es. 1,3,5 o 20:30 o seq(2,10,by=2), positivo mantiene, negativo rimuove)",
+  "help": {
+    "title": "Sottoinsieme per Posizione",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nQuesto sottogruppo un dataset secondo la posizione delle righe.\n<br/><br/>\n<b>Specifica Nome Nuovo Dataset:</b> Nome del dataset dove i dati sottogruppati saranno memorizzati\n<br/><br/>\n<b>Variabili da Ordinare Per Prime:</b> Variabili utilizzate per ordinare le righe prima che venga effettuato qualsiasi sottoinsieme. Questo influenzerà solo le opzioni che selezionano il numero di righe, ad esempio \nPrime/Ultime N Righe, Prima/Ultima Proporzione di Righe, e Specifica Numeri di Riga. Sarà sempre in ordine crescente.\n<br/><br/>\n<b>Gruppi da Sottoinsieme All'interno:</b> Specificare nessuna variabile sottogrupperebbe secondo la posizione delle righe dell'intero dataset. Specificare variabili sottogrupperebbe secondo la posizione delle righe\nall'interno dei gruppi definiti da tutte le combinazioni di valori per le variabili specificate.\n<br/><br/>\n<b>Tipo di Sottoinsieme</b>\n<br/><br/>\n<b>Prime N Righe:</b> Mantiene le prime N righe del dataset complessivamente o all'interno dei gruppi\n<br/><br/>\n<b>Ultime N Righe:</b> Mantiene le ultime N righe del dataset complessivamente o all'interno dei gruppi\n<br/><br/>\n<b>Righe con i Valori N Più Bassi per una Variabile:</b> Mantiene le righe che hanno i valori ordinati più bassi per una variabile specificata complessivamente o all'interno dei gruppi. Ad esempio, specificare 10\nmantiene le righe con i 10 valori più bassi per una variabile.\n<br/><br/>\n<b>Righe con i Valori N Più Alti per una Variabile:</b> Mantiene le righe che hanno i valori ordinati più alti per una variabile specificata complessivamente o all'interno dei gruppi. Ad esempio, specificare 10\nmantiene le righe con i 10 valori più alti per una variabile.\n<br/><br/>\n<b>Prima Proporzione di Righe:</b> Mantiene le righe nella parte superiore della proporzione del dataset complessivamente o all'interno dei gruppi. Ad esempio, specificare .10 manterrebbe il 10% superiore del dataset\nsecondo il numero totale di righe.\n<br/><br/> \n<b>Ultima Proporzione di Righe:</b> Mantiene le righe nella parte inferiore della proporzione del dataset complessivamente o all'interno dei gruppi. Ad esempio, specificare .10 manterrebbe il 10% inferiore del dataset\nsecondo il numero totale di righe.\n<br/><br/>\n<b>Righe all'interno del Percentile Più Basso per una Variabile:</b> Mantiene le righe nel percentile più basso per una variabile specificata, complessivamente o all'interno dei gruppi. Ad esempio, specificare .10\nmantiene il decimo percentile più basso per una variabile (minimo al decimo percentile).\n<br/><br/>\n<b>Righe all'interno del Percentile Più Alto per una Variabile:</b> Mantiene le righe nel percentile più alto per una variabile specificata, complessivamente o all'interno dei gruppi. Ad esempio, specificare .10\nmantiene il decimo percentile più alto per una variabile (percentile 90 al massimo).\n<br/><br/>\n<b>Specifica Numeri di Riga:</b> Mantiene le righe numerate esatte specificate. Ad esempio, specificare 1,3,5 manterrebbe la prima, la terza e la quinta riga. Specificare 20:30 manterrebbe le righe da 20\na 30. Specificare seq(2,10,by=2) manterrebbe le righe numerate pari fino alla decima riga.\n<br/><br/>\n<b>Includi Valori Legati:</b> Specifica se i valori legati devono essere inclusi o meno. Ad esempio, se desideri le righe per i 10 valori più bassi di una variabile e il decimo valore più basso\ncompare più di una volta, includere i valori legati manterrebbe tutte le righe che sono uguali al valore duplicato.\n<br/><br/>\nNota che specificare valori negativi per N o la proporzione rimuove le righe corrispondenti dal dataset. Ad esempio, specificare -10 per le Prime N Righe rimuoverebbe\nle prime 10 righe. Specificare -.10 per la Prima Proporzione di Righe, rimuoverebbe il 10% delle righe.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> dplyr\n\t\t\t"
+  }
+}

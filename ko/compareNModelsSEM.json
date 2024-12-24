@@ -1,0 +1,13 @@
+{
+  "title": "N SEM 모델 비교",
+  "navigation": "N SEM 모델 비교",
+  "label1": "N SEM 모델을 비교합니다.",
+  "label2": "다음 클래스의 모델을 선택하십시오 (R 클래스는 아래 괄호 안에 있습니다)",
+  "label3": "구조 방정식 모델 (lavaan)",
+  "modelselector1": "비교할 모델을 하나 이상 선택하십시오:",
+  "help": {
+    "title": "N SEM 모델 비교",
+    "r_help": "help(lavTestLRT, package='lavaan')",
+    "body": "\n                <b>\nLRT 테스트 (중첩된) lavaan 모델 비교.</b></br>\n<b>사용법</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nobject:  lavaan 클래스의 객체입니다.\n</li>\n</ul>\n<b>값</b><br/>\n단일 인수가 주어지면 이 모델의 테스트 통계량을 단순히 반환합니다. 객체의 시퀀스가 주어지면 이 함수는 자유도에 따라 모델을 재정렬한 후 서로 모델을 테스트합니다.<br/>\n<b>패키지</b></br>\nlavaan</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오: help(lavTestLRT,package='lavaan')</br></br>\n<b>예제</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+  }
+}

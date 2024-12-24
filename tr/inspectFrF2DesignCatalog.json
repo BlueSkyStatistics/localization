@@ -1,0 +1,17 @@
+{
+  "title": "FrF2 tasarım kataloğunu gözden geçirin (örneğin catlg)",
+  "navigation": "FrF2 Tasarım Kataloğunu Gözden Geçirin",
+  "designCatalog": "Tasarım kataloğunun adı (catlg sınıfının bir nesnesi olmalıdır)",
+  "designNamefromCatalog": "Katalogdaki tasarımın adı",
+  "numRuns": "Koşu sayısı (birden fazla ise, , ile ayırın, örneğin 8,16,64)",
+  "numFactors": "Faktör sayısı (birden fazla ise, , ile ayırın, örneğin 4,5,11)",
+  "minResolution": "Minimum Tasarım Çözünürlüğü (örneğin 3 yazın III için, 4 IV için, 5 V için, ..)",
+  "MaxC2Chk": "Seçili değilse - tasarımlar minimum bozulmaya göre sıralanır veya seçiliyse - maksimum net 2fis sayısına göre",
+  "showAliasChk": "Alias yapısını göster (en fazla 2fis)",
+  "maxNumberofDesignPrint": "Gösterilecek maksimum tasarım sayısı",
+  "help": {
+    "title": "FrF2 tasarım kataloğunu gözden geçirin (örneğin catlg)",
+    "r_help": "help(catlg, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tFrF2 paketindeki catlg sınıfının tasarım öğelerini gözden geçirin/inceleyin veya tasarım kataloğundan bilgi çıkarın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(catlg, package = FrF2) kullanın\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

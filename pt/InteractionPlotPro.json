@@ -1,0 +1,17 @@
+{
+  "title": "Gráfico de Efeito Principal e Interação",
+  "navigation": "Efeito Principal e Interação",
+  "response": "Variável de resposta (especifique uma variável numérica para calcular a média)",
+  "Fixed": "Especifique uma ou mais variáveis de agrupamento (Categoria)",
+  "mainEffectChk": "Plotar efeito principal",
+  "interactionEffectChk": "Plotar efeito de interação",
+  "chartTitle": "Insira um título",
+  "onePlotChk": "Todas as interações em um gráfico (desmarque para plotar cada interação separadamente)",
+  "noPlotsPerRow": "Número de gráficos de interação por linha (quando deixado em branco, padrão: número de grupos -1)",
+  "angleX_axis_text": "Ângulo para inclinar os rótulos do eixo x para o gráfico de interação (quando deixado em branco, padrão: 25 graus)",
+  "colorHintLabel1": "Selecione uma cor (Após a seleção da cor, clique fora do controle para aplicar)",
+  "help": {
+    "title": "Gráfico de Interação",
+    "body": "\n\t\t\tGráfico de efeito principal para analisar o efeito de cada variável categórica escolhida na média da variável de resposta\n\t\t\tGráfico de Interação para analisar o efeito da interação de (em pares) duas variáveis categóricas na média da variável de resposta\n    "
+  }
+}

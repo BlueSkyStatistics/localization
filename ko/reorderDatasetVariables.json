@@ -1,0 +1,12 @@
+{
+  "title": "변수 알파벳 순으로 재정렬",
+  "navigation": "변수 재정렬",
+  "label1": "변수를 알파벳 순으로 재정렬",
+  "rd1": "A-Z",
+  "rd2": "Z-A",
+  "help": {
+    "title": "변수 알파벳 순으로 재정렬",
+    "r_help": "도움말(정렬)",
+    "body": "\n<b>설명</b></br>\n데이터셋의 변수를 알파벳 순으로 재정렬합니다. 우리는 sort 함수를 사용하여 데이터셋의 열/변수 이름을 정렬하고, dplyr 패키지의 select 함수를 사용하여 올바른 알파벳 순서로 열 이름을 선택합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n##알파벳 순으로 재정렬 (A-Z)\nDataset_name <- Dataset_name %>%   dplyr::select(sort(names(.)))\n##알파벳 순으로 재정렬 (Z-A)\nDataset_name <- Dataset_name %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>인수</b><br/>\n없음<br/>\n<b>패키지</b></br>\ndplyr</br>\n<b>도움말</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n    "
+  }
+}

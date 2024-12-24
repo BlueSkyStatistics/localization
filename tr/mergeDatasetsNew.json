@@ -1,0 +1,28 @@
+{
+  "title": "Veri Setlerini Birleştir",
+  "join": "Eşleştirme",
+  "navigation": "Birleştir",
+  "description": "Veri setlerini birleştirmek, 2 veri setini bir araya getirmenize yardımcı olacaktır. Varsayılan olarak, bu iletişim kutusu 2 veri seti içinde ortak değişken adlarını arayacak ve ortak değişkenlerin tam kümesi üzerinde birleştirme yapacaktır.",
+  "out": "Birleştirilmiş veri setinin adını girin",
+  "in1": "1. veri setini seçin",
+  "in2": "2. veri setini seçin",
+  "label1": "Birleştirme Seçenekleri",
+  "leftjoin": "Sol Birleştirme (Sadece ilk (sol) veri setindeki satırları koru)",
+  "rightjoin": "Sağ Birleştirme (Sadece ikinci (sağ) veri setindeki satırları koru)",
+  "innerjoin": "İç Birleştirme (Her iki veri setinde de ortak olan satırları koru)",
+  "fulljoin": "Tam Birleştirme (Her iki veri setindeki tüm satırları koru)",
+  "semijoin": "Yarı Birleştirme (İlk (sol) veri setindeki tüm satırları, ikinci (sağ) veri setinde eşleşenlerle koru)",
+  "antijoin": "Anti Birleştirme (İlk (sol) veri setindeki tüm satırları, ikinci (sağ) veri setinde eşleşmeyenlerle koru)",
+  "label2": "Tüm ortak sütun adları üzerinde gerçekleştirilen birleştirmeyi geçersiz kıl",
+  "by": "Tüm ortak sütun adları üzerinde gerçekleştirilen birleştirmeyi geçersiz kılmak için, aşağıda virgülle ayrılmış ortak sütun adlarının bir alt kümesini girin. Örneğin, ülke,bölge. Birleştirme yalnızca girilen ortak sütun adları üzerinde gerçekleştirilecektir. Bu listeyi virgülle ayrılmış değerler olarak biçimlendirin, örneğin A,B,C",
+  "label3": "Birleştirmenin yapıldığı sütun adları her veri setinde farklıysa",
+  "byDiffNames": "Eşleşen sütun adlarını virgülle ayırarak girin, örneğin, 'C'='D', 'B'='A'. Lütfen burada tek tırnak kullanın ( ' ).",
+  "label4": "Her iki veri setinde de ortak sütun adları varsa",
+  "suffix": "Varsayılan olarak, ortak değişkenler için .x ve .y son ekleri kullanılacaktır. Bunları değiştirmek istiyorsanız, burada virgülle ayrılmış olarak girin, örneğin 1,2. Not: Herhangi bir . çıkış veri setinde _ ile değiştirilecektir.",
+  "advOptions": "Gelişmiş Seçenekler",
+  "help": {
+    "title": "Veri Setlerini Birleştir",
+    "r_help": "help(join, package=dplyr)",
+    "body": "\n            <b>Açıklama</b></br>\n            Veri setlerini birleştirmek, 2 veri setini bir araya getirmenize yardımcı olacaktır.<br/>Aktif veri setinde ve seçilen hedef veri setinde birleştirmenin yapılacağı bir veya daha fazla değişken belirtmeniz gerekir.<br/>\n            Sonuçlar yeni bir veri setinde kaydedilecektir.<br/>\n            inner_join: x'teki tüm satırları, y'de eşleşen değerler varsa döndürür ve x ve y'den tüm sütunları döndürür. x ve y arasında birden fazla eşleşme varsa, eşleşmelerin tüm kombinasyonları döndürülür.</br>\n            left_join: x'teki tüm satırları ve x ve y'den tüm sütunları döndürür. y'de eşleşmesi olmayan x'teki satırlar yeni sütunlarda NA değerlerine sahip olacaktır. x ve y arasında birden fazla eşleşme varsa, eşleşmelerin tüm kombinasyonları döndürülür.</br>\n            right_join: y'deki tüm satırları ve x ve y'den tüm sütunları döndürür. x'te eşleşmesi olmayan y'deki satırlar yeni sütunlarda NA değerlerine sahip olacaktır. x ve y arasında birden fazla eşleşme varsa, eşleşmelerin tüm kombinasyonları döndürülür.</br>\n            full_join: x ve y'den tüm satırları ve tüm sütunları döndürür. Eşleşmeyen değerler varsa, eksik olan için NA döndürür.</br>\n            semi_join: İlk veri setindeki tüm satırları, ikinci veri setinde eşleşenlerle korur</br>\n            anti_join: İlk veri setindeki tüm satırları, ikinci veri setinde eşleşmeyenlerle korur)</br>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            left_join(x, y, by = c(NULL), suffix = c(\".x\", \".y\"), ...)\n            right_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            inner_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            full_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            semi_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            anti_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            x: birleştirilecek veri seti\n            </li>\n            <li>\n            y: birleştirilecek veri seti\n            </li>\n            <li>\n            by: birleştirme için değişkenlerin karakter vektörü. NULL ise, varsayılan olarak, *_join() tüm tablolar arasında ortak isimlere sahip tüm değişkenleri kullanarak doğal bir birleştirme yapacaktır. Değişkenlerin doğru olup olmadığını kontrol etmek için bir mesaj listelenir (mesajı bastırmak için, birleştirmek istediğiniz değişkenleri açıkça listeleyin). x ve y üzerinde farklı değişkenlerle birleştirmek için adlandırılmış bir vektör kullanın. Örneğin, by = c(\"a\" = \"b\") x.a'yı y.b ile eşleştirecektir.\n            </li>\n            <li>\n            suffix: x ve y'de birleştirilmemiş yinelenen değişkenler varsa, bu son ekler çıktıya eklenerek onları ayırt edecektir. Uzunluğu 2 olan bir karakter vektörü olmalıdır.\n            </li>\n            </ul>\n            <b>Değer</b><br/>\n            Bir tibble.<br/>\n            <b>Paket</b></br>\n            dplyr</br>\n            <b>Yardım</b></br>\n            Ayrıntılı yardım için, bu iletişim kutusunun sağ üst köşesindeki R simgesine tıklayın veya aşağıdaki komutu çalıştırarak help(left_join, package=\"dplyr\") oluşturun ve çıktı penceresinde + tıklayarak bir R kodu bloğu oluşturun.\n"
+  }
+}

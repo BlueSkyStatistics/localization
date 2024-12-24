@@ -1,0 +1,12 @@
+{
+  "title": "Concatenare Variabili",
+  "navigation": "Concatenare",
+  "newvar": "Inserisci una nuova variabile/esistente per i risultati concatenati",
+  "concatenate": "Seleziona le variabili da concatenare",
+  "repString": "Inserisci un separatore facoltativo per le variabili concatenate",
+  "help": {
+    "title": "Concatenare Variabili",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Descrizione</b></br>\nCrea un fattore che disegna l'intervallo di una variabile numerica in intervalli di larghezza uguale, (approssimativamente) frequenza uguale, o a \"punti di taglio naturali\" (determinati dal clustering K-means)\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nX: variabile numerica da suddividere in intervalli.\n</li>\n<li>\nBins: numero di intervalli.\n</li>\n<li>\nmethod: uno di \"intervals\" per intervalli di larghezza uguale; \"proportions\" per intervalli di conteggio uguale; \"natural\" per i punti di taglio tra gli intervalli da determinare tramite clustering k-means.\n</li>\n<li>\nLabels: se FALSE, verranno utilizzate etichette numeriche per i livelli del fattore; se NULL, i punti di taglio vengono utilizzati per definire le etichette; altrimenti un vettore di caratteri di nomi di livello.\n</li>\n</ul>\n<b>Pacchetto</b></br>\nRcmdrMisc</br>\n<b>Aiuto</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

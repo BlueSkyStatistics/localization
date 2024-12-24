@@ -1,0 +1,10 @@
+{
+  "title": "عرض التباينات",
+  "navigation": "عرض التباينات",
+  "target": "وجهة",
+  "help": {
+    "title": "عرض التباينات",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>الوصف</b></br>\n            عرض التباينات المرتبطة بمتغير عامل.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>المعطيات</b><br/>\n            <ul>\n            <li>\n            x: كائن R.​\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            stats</br>\n            <b>المساعدة</b></br>\n            help(contrasts, package ='stats')        \n            "
+  }
+}

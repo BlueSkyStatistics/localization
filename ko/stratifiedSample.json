@@ -1,0 +1,14 @@
+{
+  "title": "층화 분할",
+  "navigation": "층화 분할",
+  "traindataset": "훈련 데이터셋의 이름을 입력하세요",
+  "testdataset": "테스트 데이터셋의 이름을 입력하세요",
+  "split": "분할 비율을 입력하세요",
+  "seed": "시드 설정",
+  "dependent": "층화 샘플을 구성할 변수",
+  "help": {
+    "title": "층화 분할",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>설명</b></br>\ncreateDataPartition을 사용하여 일련의 테스트/훈련 분할이 생성되며, createResample은 하나 이상의 부트스트랩 샘플을 생성합니다. createFolds는 데이터를 k 그룹으로 나누고 createTimeSlices는 시계열 데이터에 대한 교차 검증 분할을 생성합니다. groupKFold는 그룹화 요소를 기반으로 데이터를 분할합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \ncreateDataPartition(y, times = 1, p = 0.5, list = TRUE, groups = min(5,length(y)))<br/>\ncreateFolds(y, k = 10, list = TRUE, returnTrain = FALSE)<br/>\ncreateTimeSlices(y, initialWindow, horizon = 1, fixedWindow = TRUE, skip = 0)<br/>\ngroupKFold(group, k = length(unique(group)))<br/>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ny: 결과의 벡터. createTimeSlices의 경우, 이들은 시간 순서대로 있어야 합니다.\n</li>\n<li>\ntimes: 생성할 분할의 수\n</li>\n<li>\np: 훈련에 할당되는 데이터의 비율\n</li>\n<li>\nlist: 논리 - 결과가 리스트(TRUE)로 되어야 하는지 또는 행 수가 floor(p * length(y))와 같고 열 수가 times인 행렬이어야 하는지.\n</li>\n<li>\ngroups: 숫자형 y의 경우, 분위수에서의 구간 수(아래 참조)\n</li>\n<li>\nk: 폴드 수에 대한 정수.\n</li>\n<li>\nreturnTrain: 논리. true일 경우, 반환된 값은 훈련 중 사용된 데이터에 해당하는 샘플 위치입니다. 이 인수는 list = TRUE와 함께 작동합니다.\n</li>\n<li>\ninitialWindow: 각 훈련 세트 샘플에서의 연속 값의 초기 수\n</li>\n<li>\nhorizon: 테스트 세트 샘플에서의 연속 값의 수\n</li>\n<li>\nfixedWindow: 논리, FALSE일 경우 모든 훈련 샘플은 1에서 시작합니다.\n</li>\n<li>\nskip: 정수, 총량을 줄이기 위해 건너뛸(있는 경우) 재샘플 수\n</li>\n<li>\ngroup: 전체 데이터 세트의 행 수와 일치하는 그룹의 벡터.\n</li>\n</ul>\n<b>세부사항</b></br>\n부트스트랩 샘플의 경우, 단순 무작위 샘플링이 사용됩니다.\n다른 데이터 분할의 경우, y가 요인일 때 y의 수준 내에서 무작위 샘플링이 수행되어 분할 내에서 클래스 분포의 균형을 맞추려고 합니다.</br>\n숫자형 y의 경우, 샘플은 분위수에 따라 그룹 섹션으로 나뉘며 이 하위 그룹 내에서 샘플링이 수행됩니다. createDataPartition의 경우, 분위수의 수는 groups 인수를 통해 설정됩니다. createFolds 및 createMultiFolds의 경우, 그룹 수는 샘플 크기와 k에 따라 동적으로 설정됩니다. 샘플 크기가 작을 경우, 이 두 함수는 층화 분할을 수행하지 않을 수 있으며, 최대한으로 데이터를 사분위수로 나눕니다.</br>\n또한, createDataPartition의 경우, 매우 작은 클래스 크기(<= 3)에서는 클래스가 훈련 및 테스트 데이터 모두에 나타나지 않을 수 있습니다.</br>\n여러 k-폴드 교차 검증의 경우, 완전히 독립적인 폴드가 생성됩니다. 리스트 객체의 이름은 \"Foldi.Repj\" 패턴을 사용하여 폴드 멤버십을 나타냅니다. 여기서 i는 k의 i번째 섹션, j는 times의 j번째 교차 검증 세트를 의미합니다. 이 함수는 list = TRUE 및 returnTrain = TRUE로 createFolds를 호출합니다.</br>\nHyndman과 Athanasopoulos(2013)는 훈련 및 테스트 세트를 시간에 따라 이동하는 롤링 예측 기법에 대해 논의합니다. createTimeSlices는 이러한 유형의 분할을 위한 인덱스를 생성할 수 있습니다.</br>\nGroup k-폴드 교차 검증의 경우, 데이터는 모델링 세트와 홀드아웃 세트 모두에 그룹이 포함되지 않도록 분할됩니다. k의 값에 따라 하나 이상의 그룹이 제외될 수 있습니다.</br>\n<b>값</b><br/>\n훈련 데이터에 해당하는 행 위치 정수의 리스트 또는 행렬. createTimeSlices의 경우, 하위 샘플의 각 훈련 하위 샘플의 끝 인덱스에 의해 이름이 지정됩니다.</br>\n<b>패키지</b></br>\ncaret</br>\nklaR</br>\n<b>도움말</b></br>\nhelp(createDataPartition, package=\"caret\")\n        "
+  }
+}

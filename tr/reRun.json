@@ -1,0 +1,23 @@
+{
+  "title": "Farklı veri setlerinde analizi yeniden çalıştır",
+  "navigation": "Analizi yeniden çalıştır",
+  "helpText": "Analizi yeniden çalıştırmak veya bir çıktı sekmesinde yeniden üretmek için orijinal veri set(ler)ini yeni veri set(ler)i ile değiştirebilirsiniz.\nAşağıdaki adımları izleyin.\n1. Seçilen çıktı sekmesi, yeniden üretilecek veya yeniden çalıştırılacak analizi içermelidir.\n2. Değiştirmek istediğiniz yeni veri set(ler)i datagrid'de açık olmalıdır.\n3. Hangi yeni veri setinin orijinal ile değiştirileceğini belirtin (aktif çıktı sekmesindeki analizden).\n4. Bunu yapmak için, 1. listede orijinal veri setini ve 2. listede yeni veri setini seçin ve taşıma butonuna tıklayın.\n5. Birden fazla veri setini değiştirmek için 4. adımı tekrarlayın.\n6. Uygula butonuna basın.\n",
+  "allDatasets": "Değiştirilecek veri setleri",
+  "datasetsFromOutput_BSky": "Orijinal veri setleri",
+  "mapping": "Eşleştirilmiş veri setleri",
+  "out": "Yığınlanmış veri setinin adını girin",
+  "in1": "2 veya daha fazla veri seti seçin",
+  "in2": "2. veri setini seçin",
+  "label1": "Yığın Seçenekleri",
+  "label2": "Aşağıdaki tüm seçenekler, tam olarak aynı değişken adlarına sahip 2 veri seti gerektirir",
+  "bindrows": "Satırları Bağla (veri setlerini olduğu gibi yığınla, tekrarlayan satırlar oluşabilir)",
+  "union": "Birleşim (veri setlerini yığınla ve tam tekrarlayanları kaldır)",
+  "intersect": "Kesişim (her iki veri setinde ortak olan satırları koru)",
+  "setdiff": "Fark (sadece 1. veri setinde olan satırları koru, 2. veri setinde olmayan)",
+  "id": "Her gözlemin hangi veri setinden geldiğini takip etmek istiyorsanız, bu değişken için bir isim belirtin. NOT: Yeni değişken, sonuçlanan veri setinin başına eklenir.",
+  "help": {
+    "title": "Veri Setlerini Yığınla",
+    "r_help": "help(bind_rows, package=dplyr)",
+    "body": "\n            <b>Açıklama</b></br>\nBu diyalog, 2 veya daha fazla veri setini üst üste yığmanıza yardımcı olacaktır. Aşağıdaki seçeneklerden birini seçebilirsiniz.<br/>\n1. Satırları Bağla:  2 veya daha fazla veri setini tam olarak oldukları gibi yığınlar. Eğer bir değişken adı her iki veri setinde de ortaksa, değerler beklediğiniz gibi doldurulacaktır. Eğer A veri seti, diğer B veri setinde bulunmayan bir değişken olan var1'i içeriyorsa, B veri setine karşılık gelen tüm satırlar için var1 değişkeninde NA'lar görünecektir.<br/>\nAşağıdaki tüm seçenekler yalnızca 2 veri seti üzerinde çalışır ve her iki veri setinin de aynı değişkenleri paylaşmasını gerektirir.<br/>\n2. Birleşim: veri setlerini yığınlar ve tekrarlayanları kaldırır<br/>\n3. Kesişim: her iki veri setinde ortak olan satırları korur<br/>\n4. Fark: 1. veri setinde olan, 2. veri setinde olmayan satırları korur<br/>\nSeçilen seçeneğe bağlı olarak, dplyr paketindeki bind_rows, union, intersect ve setdiff fonksiyonları çağrılır.\nNOT: Orijinal gözlemin hangi veri setinden geldiğini isteğe bağlı olarak takip edebilirsiniz. Veri seti kimliği (1. / 2.) sonuçları içeren veri setinin başına eklenir.<br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog overlay'inin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi penceresinde help(bind_rows, package=\"dplyr\") komutunu çalıştırın.\n            "
+  }
+}

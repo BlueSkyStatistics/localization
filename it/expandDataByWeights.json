@@ -1,0 +1,11 @@
+{
+  "title": "Espandi Pesi",
+  "navigation": "Espandi",
+  "datasetname": "Nome del dataset con pesi espansi",
+  "destination": "Inserisci la colonna che contiene i pesi",
+  "help": {
+    "title": "Espandi Pesi",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>Descrizione</b></br>\n        Crea un nuovo dataset con righe espanse in base ai pesi. Espande (replica) le righe di un data.frame in base a un valore contenuto in una delle colonne nel data.frame o data.table sorgente. BSkySetWeights() chiama expandRows() dal pacchetto splitstackshape.\n        <br/>\n        <b>Utilizzo</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>Argomenti</b><br/>\n         <ul>\n           <li>\n        weights: La variabile del dataset che contiene i pesi. \n        </li>\n        <li>\n        data: Il data.frame o data.table di input.\n        </li>\n        <li>\n        newdata: Il nuovo dataset in cui le righe sono replicate per i pesi specificati.\n        </li>\n        </ul>\n        <b>Pacchetto</b></br>\n        splitstackshape</br>\n        <b>Aiuto</b></br>\n        help (expandRows)\n        "
+  }
+}

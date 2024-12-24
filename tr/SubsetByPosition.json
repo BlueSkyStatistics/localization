@@ -1,0 +1,27 @@
+{
+  "title": "Pozisyona Göre Alt Küme",
+  "navigation": "Pozisyona Göre Alt Küme",
+  "newdatasetlabel": "Yeni Veri Seti Adını Belirleyin",
+  "sortbyvarslabel": "Öncelikle Sıralanacak Değişkenler (Artan Sıra)",
+  "groupbyvarslabel": "Alt Küme İçin Gruplar",
+  "subsettypelabel": "Alt Küme Türü",
+  "firstnlabel": "İlk N Satır",
+  "lastnlabel": "Son N Satır",
+  "lowestnlabel": "Bir Değişken İçin En Düşük N Değere Sahip Satırlar",
+  "highestnlabel": "Bir Değişken İçin En Yüksek N Değere Sahip Satırlar",
+  "firstproplabel": "Satırların İlk Oranı",
+  "lastproplabel": "Satırların Son Oranı",
+  "lowestproplabel": "Bir Değişken İçin En Düşük Yüzdelikteki Satırlar",
+  "highestproplabel": "Bir Değişken İçin En Yüksek Yüzdelikteki Satırlar",
+  "nlabel": "N (pozitif tutar, negatif çıkarır)",
+  "proplabel": "Oran (pozitif tutar, negatif çıkarır)",
+  "varlabel": "Değişken",
+  "tieslabel": "Bağlı Değerleri Dahil Et",
+  "rownumlabel": "Satır Numaralarını Belirleyin",
+  "rownumboxlabel": "Virgülle ayrılmış sayılar veya aralıklar (örneğin 1,3,5 veya 20:30 veya seq(2,10,by=2), pozitif tutar, negatif çıkarır)",
+  "help": {
+    "title": "Pozisyona Göre Alt Küme",
+    "r_help": "help(slice, package ='dplyr')",
+    "body": "\nBu, bir veri setini satır pozisyonuna göre alt küme haline getirir.\n<br/><br/>\n<b>Yeni Veri Seti Adını Belirleyin:</b> Alt küme verilerin saklanacağı veri seti adı\n<br/><br/>\n<b>Öncelikle Sıralanacak Değişkenler:</b> Alt kümeleme yapılmadan önce satırları sıralamak için kullanılan değişkenler. Bu, yalnızca satır sayısını seçen seçenekleri etkileyecektir, örneğin \nİlk/Son N Satır, İlk/Son Satır Oranı ve Satır Numaralarını Belirleyin. Her zaman artan sırada olacaktır.\n<br/><br/>\n<b>Alt Küme İçin Gruplar:</b> Hiçbir değişken belirtmemek, tüm veri setinin satır pozisyonuna göre alt küme oluşturur. Değişkenler belirtmek, belirtilen değişkenler için tüm değer kombinasyonları tarafından tanımlanan gruplar içinde satır pozisyonuna göre alt küme oluşturur.\n<br/><br/>\n<b>Alt Küme Türü</b>\n<br/><br/>\n<b>İlk N Satır:</b> Veri setinin genelinde veya gruplar içinde ilk N satırı korur\n<br/><br/>\n<b>Son N Satır:</b> Veri setinin genelinde veya gruplar içinde son N satırı korur\n<br/><br/>\n<b>Bir Değişken İçin En Düşük N Değere Sahip Satırlar:</b> Belirtilen bir değişken için en düşük sıralı değerlere sahip satırları korur, genelinde veya gruplar içinde. Örneğin, 10 belirtmek, \nbir değişken için en düşük 10 değere sahip satırları korur.\n<br/><br/>\n<b>Bir Değişken İçin En Yüksek N Değere Sahip Satırlar:</b> Belirtilen bir değişken için en yüksek sıralı değerlere sahip satırları korur, genelinde veya gruplar içinde. Örneğin, 10 belirtmek, \nbir değişken için en yüksek 10 değere sahip satırları korur.\n<br/><br/>\n<b>Satırların İlk Oranı:</b> Veri setinin en üst oranındaki satırları korur, genelinde veya gruplar içinde. Örneğin, .10 belirtmek, veri setinin toplam satır sayısına göre en üst %10'unu korur.\n<br/><br/> \n<b>Satırların Son Oranı:</b> Veri setinin en alt oranındaki satırları korur, genelinde veya gruplar içinde. Örneğin, .10 belirtmek, veri setinin toplam satır sayısına göre en alt %10'unu korur.\n<br/><br/>\n<b>Bir Değişken İçin En Düşük Yüzdelikteki Satırlar:</b> Belirtilen bir değişken için en düşük yüzdelikteki satırları korur, genelinde veya gruplar içinde. Örneğin, .10 belirtmek, \nbir değişken için en düşük %10'luk yüzdelik dilimi korur (minimumdan %10'a kadar).\n<br/><br/>\n<b>Bir Değişken İçin En Yüksek Yüzdelikteki Satırlar:</b> Belirtilen bir değişken için en yüksek yüzdelikteki satırları korur, genelinde veya gruplar içinde. Örneğin, .10 belirtmek, \nbir değişken için en yüksek %10'luk yüzdelik dilimi korur (%90'dan maksimuma kadar).\n<br/><br/>\n<b>Satır Numaralarını Belirleyin:</b> Belirtilen tam numaralı satırları korur. Örneğin, 1,3,5 belirtmek, birinci, üçüncü ve beşinci satırları korur. 20:30 belirtmek, 20'den 30'a kadar olan satırları korur. 2,10,by=2 belirtmek, 10. satıra kadar olan çift numaralı satırları korur.\n<br/><br/>\n<b>Bağlı Değerleri Dahil Et:</b> Bağlı değerlerin dahil edilip edilmeyeceğini belirtir. Örneğin, bir değişkenin en düşük 10 değerine sahip satırları istiyorsanız ve 10. en düşük \ndeğer birden fazla kez görünüyorsa, bağlı değerleri dahil etmek, çoğaltılan değere eşit olan tüm satırları koruyacaktır. \n<br/><br/>\nN veya oran için negatif değerler belirtmenin, veri setinden ilgili satırları çıkardığını unutmayın. Örneğin, İlk N Satır için -10 belirtmek, \nilk 10 satırı çıkarır. İlk Satır Oranı için -.10 belirtmek, ilk %10'luk satırı çıkarır.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> dplyr\n\t\t\t"
+  }
+}

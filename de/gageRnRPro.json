@@ -5,18 +5,18 @@
   "subTitle": "Untertitel für die grafische Ausgabe (z.B. der Name des Projekts)",
   "measuredVar": "Gemessene Variable",
   "part": "Teilvariable",
-  "appr": "Bewertung (Betriebsarten, Maschinen, ...) Variable",
+  "appr": "Bewertung (Betriebs, Maschinen, ...) Variable",
   "lsl": "LSL - numerischer Wert der unteren Spezifikationsgrenze, der mit USL verwendet wird, um die Studienvariation als %Toleranz zu berechnen",
   "usl": "USL - numerischer Wert der oberen Spezifikationsgrenze, der mit LSL verwendet wird, um die Studienvariation als %Toleranz zu berechnen",
-  "historicalStdv": "Historische Prozessstandardabweichung (wenn nicht angegeben, Typ NA)",
+  "historicalStdv": "Historische Prozessstandardabweichung (wenn nicht angegeben, geben Sie NA ein)",
   "useHistStdDevProcVarChk": "Verwenden Sie die historische Standardabweichung zur Schätzung der Gage-Bewertungswerte (%Studienvarianz-Tabelle)",
   "sigma": "Sigma - numerischer Wert für die Anzahl der Standardabweichungen, die zur Berechnung der Studienvariation verwendet werden sollen",
   "tolerance": "Toleranz - numerischer Wert für die Toleranz - Standard (usl - lsl)",
   "alphaLim": "Alpha - Grenze zur Berücksichtigung der Interaktion",
   "errorTerm": "Welcher Term des Modells sollte als Fehlerterm verwendet werden (für das Modell mit Interaktion)",
   "method": "Art der durchzuführenden Analyse, gekreuzt (Standard) oder genestet",
-  "label1": "Details zur Kopfzeile des Gage R&R Studienberichts",
-  "gageName": "Gage-Name",
+  "label1": "Details zur Gage R&R Studienberichtüberschrift",
+  "gageName": "Gagename",
   "dateStudy": "Studiendatum",
   "partDescription": "Teilebeschreibung",
   "machineName": "Maschinenname",
@@ -27,6 +27,6 @@
   "help": {
     "title": "Gage R&R - Analyse des Messsystems",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tss.rr Funktion zur Durchführung der Gage R&R Analyse zur Bewertung des Messsystems eines Prozesses\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens gageR_R_piston_diameter_with_measurements.xlsx verwenden. Öffnen Sie die Datei im Datenraster mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie aus dem Beispieldatensatz die Durchmesser-Variable als gemessene Variable, Pistonring als Teilvariable und Operator als Bewertungsvariable\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tss.rr Funktion zur Durchführung der Gage R&R Analyse zur Bewertung des Messsystems eines Prozesses\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens gageR_R_piston_diameter_with_measurements.xlsx verwenden. Öffnen Sie die Datei im Datenraster mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie aus dem Beispieldatensatz die Durchmesser-Variable als gemessene Variable, Pistonring als Teilvariable und Operator als Bewerter \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

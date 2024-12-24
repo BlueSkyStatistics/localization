@@ -1,0 +1,18 @@
+{
+  "title": "Dimensione del campione, precisione di una differenza media",
+  "navigation": "Differenza di medie",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n1": "Dimensione del campione del Gruppo 1",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "ratio": "Rapporto della dimensione del campione del Gruppo 2 rispetto al Gruppo 1",
+  "meandiff": "Differenza media",
+  "sd1": "Deviazione standard del Gruppo 1",
+  "sd2": "Deviazione standard del Gruppo 2",
+  "conflevel": "Livello di confidenza (0-1)",
+  "variance": "Assunzione di varianza",
+  "help": {
+    "title": "Dimensione del campione, precisione di una differenza media",
+    "r_help": "help(prec_meandiff, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per una differenza di medie basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del campione del Gruppo 1:</b> Specifica il numero di soggetti nel gruppo 1\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Rapporto della dimensione del campione del Gruppo 2 rispetto al Gruppo 1:</b> Specifica il rapporto della dimensione del campione del gruppo 2 rispetto alla dimensione del campione del gruppo 1. Un valore di 1 significa dimensioni del campione uguali.\n<br/><br/>\n<b>Differenza media:</b> Specifica la differenza attesa nelle medie dei gruppi \n<br/><br/>\n<b>Deviazione standard del Gruppo 1:</b> Specifica la deviazione standard dell'esito nel gruppo 1\n<br/><br/>\n<b>Deviazione standard del Gruppo 2:</b> Specifica la deviazione standard dell'esito nel gruppo 2\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Assunzione di varianza:</b> Specifica se le varianze dei gruppi sono assunte uguali o diverse. Specificare varianze uguali utilizza una stima comune aggregata della varianza.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "ABD Eyalet Haritası",
+  "navigation": "ABD Eyalet Haritası",
+  "region": "ABD Eyalet isimleri ile değişken:",
+  "value": "Haritalamak için değerlerle değişken:",
+  "colors": "Renk sayısını girin",
+  "zoomByStates": "Zoom yapmak için eyaletleri girin, örneğin: california,oregon,washington",
+  "specify_a_title": "Bir başlık girin",
+  "legend": "Açıklama:",
+  "help": {
+    "title": "ABD Eyalet Haritası",
+    "r_help": "help(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>Açıklama</b></br>\n            Bir eyalet haritası çizer ve isteğe bağlı olarak 1 veya daha fazla eyalete yakınlaştırmanıza izin verir\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: \"region\" adında bir sütun ve \"value\" adında bir sütun içeren bir data.frame. \"region\" sütunundaki öğeler, state.map'daki \"region\" sütununda nasıl adlandırıldıklarıyla tam olarak eşleşmelidir. Aşağıdaki diğer bölümdeki komutları çalıştırarak state.map veri kümesine erişebilirsiniz\n            </li>\n            <li>\n            Başlık: Harita için isteğe bağlı bir başlık.\n            </li>\n            <li>\n            Açıklama: Açıklama için isteğe bağlı bir isim.\n            </li>\n            <li>\n            num_colors: Haritadaki renk sayısı. 1 değeri sürekli bir ölçek kullanır. [2, 9] aralığında bir değer, o kadar rengi kullanır.\n            </li>\n            <li>\n            zoom: Yakınlaştırmak için isteğe bağlı bir eyalet vektörü. Bu vektörün öğeleri, ?state.regions'daki \"region\" sütununda göründüğü gibi eyalet isimleriyle tam olarak eşleşmelidir.\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Yardım</b></br>\n            help(state_choropleth, package='choroplethr')</br>\n            <b>Diğer</b></br>\n            <code> \n            # state.map veri kümesine erişmek için aşağıdaki kodu çalıştırın<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "title": "Modelo de escala de calificación (multifacético)",
-  "navigation": "Modelo de escala de calificación (multifacético)",
+  "title": "Modelo de Escala de Calificación (Multifacético)",
+  "navigation": "Modelo de Escala de Calificación (Multifacético)",
   "modelname": "Ingrese el nombre del modelo",
   "destinationvars": "Elementos",
   "firstlevel": "Variable de primer nivel",
   "secondlevel": "Variable de segundo nivel",
   "help": {
-    "title": "Modelo de escala de calificación (multifacético)",
-    "r_help": "ayuda(tam.mml.mfr, paquete=TAM)",
-    "body": "\n            <b>Descripción</b>\n            <br/>\n            Genera estimaciones de parámetros para un modelo de escala de calificación multifacético\n            <br/><br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Marco de datos con respuestas de ítems politómicos k=0,...,K. Las respuestas faltantes deben declararse como NA.\n            </li>\n            <li>\n            formulaA: Fórmula de diseño (solo se aplica a tam.mml.mfr). Ver ejemplo 8 en la ayuda detallada. También es posible establecer todos los efectos de un facet en cero, por ejemplo item*step + 0*rater (ver Ejemplo 10a en la ayuda detallada).\n            </li>\n            <li>\n            facets: Un marco de datos con entradas de facet (solo se aplica a tam.mml.mfr)\n            </li>\n            <li>\n            pid: Un vector opcional de identificadores de personas\n            </li>\n            <li>\n            verbose: Lógico que indica si la salida debe imprimirse durante las iteraciones.\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Paquetes</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Ayuda</b>\n            <br/>\n            ayuda(tam.mml.mfr, paquete='TAM')\n"
+    "title": "Modelo de Escala de Calificación (Multifacético)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Descripción</b>\n            <br/>\n            Genera estimaciones de parámetros para un modelo de escala de calificación multifacético\n            <br/><br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Marco de datos con respuestas de ítems politómicos k=0,...,K. Las respuestas faltantes deben declararse como NA.\n            </li>\n            <li>\n            formulaA: Fórmula de diseño (solo se aplica a tam.mml.mfr). Ver ejemplo 8 en la ayuda detallada. También es posible establecer todos los efectos de un facet a cero, por ejemplo, item*step + 0*rater (ver Ejemplo 10a en la ayuda detallada).\n            </li>\n            <li>\n            facets: Un marco de datos con entradas de facet (solo se aplica a tam.mml.mfr)\n            </li>\n            <li>\n            pid: Un vector opcional de identificadores de personas\n            </li>\n            <li>\n            verbose: Lógico que indica si la salida debe imprimirse durante las iteraciones. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Paquetes</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Ayuda</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
   }
 }

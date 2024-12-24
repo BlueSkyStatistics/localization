@@ -1,0 +1,15 @@
+{
+  "title": "Modelo de Regressão Polinomial",
+  "navigation": "Polinomial",
+  "modelname": "Nome do modelo de Regressão Polinomial",
+  "dependentVar": "Variável Dependente (por exemplo, resposta)",
+  "independentVar": "Variável Independente (por exemplo, dose, concentração, ..)",
+  "polyDegree": "O grau da equação polinomial. Deve ser menor que o número de pontos de dados únicos",
+  "comparePolyModelsChk": "Calcular modelos polinomiais adicionais para comparar",
+  "addlPolyDegrees": "Especifique um ou mais graus para criar múltiplos modelos polinomiais (por exemplo, 3, 4, 5)",
+  "help": {
+    "title": "Modelo de Regressão Polinomial",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>Descrição</b></br>\n            Este diálogo é usado para calcular e ajustar um modelo polinomial ortogonal com grau especificado\n\t\t\t<br/>\n\t\t\tusando lm(resposta ~ poly(um preditor, grau), dados = conjunto de dados)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tAlém de help(poly, package ='stats'), verifique as seguintes páginas de ajuda do R\n            <br/>\n\t\t\thelp(anova, package ='stats') - usado para comparar modelos polinomiais com diferentes graus \n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - usado para calcular AIC para comparar modelos polinomiais\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - usado para calcular BIC para comparar modelos polinomiais\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - Uma boa referência onde lm() e poly() são usados juntos\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\tVocê pode experimentar este diálogo carregando o conjunto de dados cars no menu Carregar Conjuntos de Dados\t\t\t\n\t\t\tEscolha dist como variável dependente e speed como variável independente\n\t\t\t<br/>\n"
+  }
+}

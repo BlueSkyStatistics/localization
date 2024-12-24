@@ -1,0 +1,29 @@
+{
+  "title": "Hiyerarşik Küme",
+  "navigation": "Hiyerarşik",
+  "destination": "Hedef",
+  "clusters": "Küme sayısı",
+  "storeClusterInDataset": "Küme atamalarını veri setine ekle",
+  "variablename": "Küme atamalarını saklamak için değişken adı",
+  "biplot": "Küme biplotunu göster",
+  "dendogram": "Küme dendrogramını çiz",
+  "labelForClusteringMethod": "Kümeleme yöntemi",
+  "Methodlabel": "Yöntem",
+  "MethodRadlabel1": "Wards Yöntemi",
+  "MethodRadlabel2": "Tek Bağlantı",
+  "MethodRadlabel3": "Tam Bağlantı",
+  "MethodRadlabel4": "Ortalama Bağlantı",
+  "MethodRadlabel5": "McQuitty'nin Yöntemi",
+  "MethodRadlabel6": "Medyan Bağlantı",
+  "MethodRadlabel7": "Merkez Bağlantı",
+  "Metriclabel": "Metre",
+  "MetricRadlabel1": "Öklidyen",
+  "MetricRadlabel2": "Kare-Öklidyen",
+  "MetricRadlabel3": "Manhattan (Şehir Bloğu)",
+  "MetricRadlabel4": "Dönüşüm Yok",
+  "help": {
+    "title": "Hiyerarşik Küme",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>Açıklama</b></br>\nBir dizi farklılık üzerinde hiyerarşik küme analizi ve bunu analiz etme yöntemleri.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvarsToCluster: Analiz edilecek değişkenler \n</li>\n<li>\nyöntem: kullanılacak aglomerasyon yöntemi. Bu, \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) veya \"centroid\" (= UPGMC) olan (belirsiz bir kısaltma) biri olmalıdır.\n</li>\n<li>\nnoOfClusters: İstenilen küme sayısı\n</li>\n<li>\nplotDendogram: Bir dendrogram çiz True veya false\n</li>\n<li>\nassignClusterToDataset: Küme atamalarını veri setine kaydet\n</li>\n<li>\nlabel: küme atamalarını saklayan yeni değişken için ad\n</li>\n<li>\nplotBiplot: Biplot çiz TRUE veya FALSE\n</li>\n</ul>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Yardım</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>Açıklama</b></br>\nplotDendrogram: Küme dendrogramını çizmek için plot fonksiyonunu çağırır\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nyöntem: yukarıda belirtilen\n</li>\n<li>\ndistance: yukarıda belirtilen\nplotBiplot: Biplot çiz TRUE veya FALSE\n</li>\n</ul>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Yardım</b></br>\nhelp(plot)\n    "
+  }
+}

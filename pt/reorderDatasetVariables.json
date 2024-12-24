@@ -1,0 +1,12 @@
+{
+  "title": "Reordenar Variáveis Alphabeticamente",
+  "navigation": "Reordenar Variáveis",
+  "label1": "Reordenar variáveis alfabeticamente",
+  "rd1": "A-Z",
+  "rd2": "Z-A",
+  "help": {
+    "title": "Reordenar Variáveis Alphabeticamente",
+    "r_help": "ajuda(classificar)",
+    "body": "\n<b>Descrição</b></br>\nReordene as variáveis no conjunto de dados em ordem alfabética. Usamos a função sort para classificar os nomes das colunas/variáveis no conjunto de dados e a função select no pacote dplyr para selecionar os nomes das colunas na ordem alfabética correta \n<br/>\n<b>Uso</b>\n<br/>\n<code> \n##Reordenando alfabeticamente (A-Z)\nNome_do_conjunto <- Nome_do_conjunto %>%   dplyr::select(sort(names(.)))\n##Reordenando alfabeticamente (Z-A)\nNome_do_conjunto <- Nome_do_conjunto %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumentos</b><br/>\nNenhum<br/>\n<b>Pacote</b></br>\ndplyr</br>\n<b>Ajuda</b></br>\najuda(select, pacote='dplyr')<br/>\najuda(sort)\n    "
+  }
+}

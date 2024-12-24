@@ -1,0 +1,15 @@
+{
+  "title": "خريطة مقاطعات الولايات المتحدة",
+  "navigation": "خريطة مقاطعات الولايات المتحدة",
+  "region": "متغير بأسماء المقاطعات:",
+  "value": "متغير بالقيم لرسم الخريطة:",
+  "colors": "أدخل عدد الألوان",
+  "zoomByStates": "أدخل الولايات التي تريد تكبيرها، على سبيل المثال: كاليفورنيا، أوريغون، واشنطن",
+  "specify_a_title": "أدخل عنوانًا",
+  "legend": "الأسطورة:",
+  "help": {
+    "title": "خريطة مقاطعات الولايات المتحدة",
+    "r_help": "help(county_choropleth, package='choroplethr')",
+    "body": "\n            <b>الوصف</b></br>\n            يرسم خريطة مقاطعات ويسمح لك بتكبير ولاية واحدة أو أكثر اختيارياً\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            county_choropleth(BSkyDfForMap, title=\"{{title}}\", legend=\"{{legend}}\",num_colors ={{colors}}, state_zoom={{zoomByStates}})\n            </code> <br/>\n            <b>المعلمات</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: إطار بيانات يحتوي على عمود باسم \"region\" وعمود باسم \"value\". يجب أن تتطابق العناصر في عمود \"region\" تمامًا مع كيفية تسمية المناطق في عمود \"region\" في county.map. لرؤية المتغيرات في county.map، قم بتشغيل أوامر R في القسم الآخر أدناه.\n                </li>\n                <li>\n            العنوان: عنوان اختياري للخريطة.\n            </li>\n            <li>\n            الأسطورة: اسم اختياري للأسطورة.\n            </li>\n            <li>\n            num_colors: عدد الألوان على الخريطة. ستستخدم القيمة 1 مقياسًا مستمرًا. ستستخدم القيمة في [2، 9] هذا العدد من الألوان.\n            </li>\n            <li>\n            ​state_zoom: متجه اختياري من الولايات للتكبير عليها. يجب أن تتطابق عناصر هذا المتجه تمامًا مع أسماء الولايات كما تظهر في عمود \"region\" من ?state.regions.\n            الوصول إلى state.regions مشابه للوصول إلى county.map\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>المساعدة</b></br>\n            help(county_choropleth, package='choroplethr')</br>\n            <b>أخرى</b></br>\n            <code> \n            # قم بتشغيل الكود أدناه للوصول إلى مجموعة بيانات county.map</br>\n            library(choroplethr)</br>\n            library(choroplethrMaps)</br>\n            data(county.map)</br>\n            county.map </br>\n            </code> <br/>\n    "
+  }
+}

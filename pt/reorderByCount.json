@@ -1,0 +1,21 @@
+{
+  "title": "Reordenar Níveis de Fatores por Contagem",
+  "navigation": "Reordenar por Contagem",
+  "target": "Selecione variáveis fatoriais para reordenar",
+  "label1": "Selecione as variáveis fatoriais para reordenar por contagem. Você pode sobrescrever variáveis existentes ou criar novas variáveis especificando um prefixo/sufixo. Novas variáveis serão criadas com o prefixo/sufixo anexado aos nomes existentes.",
+  "label2": "Salvar novos níveis em nova(s) variável(eis) ou sobrescrever variável(eis) existente(s)",
+  "rd3": "Especifique um sufixo (Uma nova variável será criada com o sufixo)",
+  "txt3": "Digite um sufixo",
+  "rd2": "Especifique um prefixo (Uma nova variável será criada com o prefixo)",
+  "txt4": "Digite um prefixo",
+  "rd1": "Sobrescrever variáveis existentes",
+  "label3": "Especifique uma ordem",
+  "Descending": "Na ordem decrescente por contagem",
+  "Ascending": "Na ordem crescente por contagem",
+  "ordered": "Tornar um fator ordenado (ordinal)",
+  "help": {
+    "title": "Reordenar Variáveis Alfabeticamente",
+    "r_help": "ajuda(sort)",
+    "body": "\n<b>Descrição</b></br>\nReordenar variáveis no conjunto de dados em ordem alfabética. Usamos a função sort para classificar os nomes das colunas/variáveis no conjunto de dados e a função select no pacote dplyr para selecionar os nomes das colunas na ordem alfabética correta \n<br/>\n<b>Uso</b>\n<br/>\n<code> \n##Reordenando alfabeticamente (A-Z)\nNome_do_conjunto_de_dados <- Nome_do_conjunto_de_dados %>%   select(sort(names(.)))\n##Reordenando alfabeticamente (Z-A)\nNome_do_conjunto_de_dados <- Nome_do_conjunto_de_dados %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumentos</b><br/>\nNenhum<br/>\n<b>Pacote</b></br>\ndplyr</br>\n<b>Ajuda</b></br>\najuda(select, pacote='dplyr')<br/>\najuda(sort)\n"
+  }
+}

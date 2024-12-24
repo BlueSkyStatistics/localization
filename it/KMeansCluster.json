@@ -1,0 +1,16 @@
+{
+  "title": "Cluster K-Means",
+  "navigation": "K-Means",
+  "destination": "Destinazione",
+  "clusters": "Numero di cluster",
+  "seeds": "Numero di semi iniziali",
+  "iterations": "Iterazioni massime",
+  "storeClusterInDataset": "Assegna cluster al dataset",
+  "variablename": "Variabile per memorizzare i numeri dei cluster",
+  "biplot": "Mostra biplot dei cluster",
+  "help": {
+    "title": "Cluster K-Means",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>Descrizione</b></br>\nEsegue clustering K-means\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10,storeClusterInDataset =FALSE, varNameForCluster=\"\", dataset=\"nome del dataset\") \n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvars: Le variabili da analizzare in un vettore della forma c('var1','var2'...)\n</li>\n<li>\ncenters: o il numero di cluster, diciamo k, o un insieme di centri di cluster iniziali (distinti). Se è un numero, un insieme casuale di righe (distinte) in x è scelto come i centri iniziali.\n</li>\n<li>\niter.max: il numero massimo di iterazioni consentite.\n</li>\n<li>\nnum.seeds: Il numero di diversi semi casuali iniziali da utilizzare. Ogni seme casuale produce una soluzione k-means diversa.\n</li>\n<li>\nstoreClusterInDataset : Salva le assegnazioni dei cluster nel dataset\n</li>\n<li>\nvarNameForCluster: I nomi delle variabili per i cluster assegnati\n</li>\n<li>\ndataset: Il dataset da analizzare\n</li>\n</ul>\n<b>Pacchetto</b></br>\nBlueSky</br>\n<b>Aiuto</b></br>\nhelp(kmeans, package=\"stats\")\n    "
+  }
+}

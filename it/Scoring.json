@@ -1,0 +1,27 @@
+{
+  "title": "Valuta un dataset utilizzando un modello",
+  "navigation": "Valutazione del modello",
+  "filterModels": "Filtra i modelli per classe",
+  "modelSelection": "Seleziona un modello per valutare un dataset",
+  "label1": "Test diagnostici",
+  "levelOfInterest": "Quando la variabile da prevedere ha 2 livelli, specifica il livello di interesse. La matrice di confusione e le statistiche correlate vengono visualizzate con il livello di interesse specificato come riferimento",
+  "label12": "Risultati del test: non appena un modello viene selezionato, eseguiremo test per vedere se le variabili dipendenti specificate nel modello sono disponibili nel dataset da valutare. I risultati verranno visualizzati qui",
+  "label2": "Salva i valori previsti e le statistiche di supporto.",
+  "label3": "Le previsioni e le probabilità previste, dove applicabile, vengono memorizzate nel dataset in fase di valutazione come nuove variabili con il prefisso sottostante",
+  "label4": "**Per le variabili dipendenti con 2 livelli, il 2° livello è trattato come il livello positivo. Vedi Dati > Livelli fattoriali > Riordina livelli manualmente per cambiare l'ordine dei livelli fattoriali e ricostruire il modello.",
+  "conflevel": "Salva intervalli di confidenza e previsione per i valori previsti individuali **(Valido solo per modelli lineari (classe lm))",
+  "rocCurves": "Mostra curve ROC (**Solo per variabili dipendenti binarie)",
+  "roctable": "Mostra tabella ROC (**Solo per variabili dipendenti binarie)",
+  "saveRoctableToDataset": "Salva la tabella ROC in un dataset(**Solo per variabili dipendenti binarie)",
+  "label6": "**Selezionare la casella di controllo sopra comporterà una penalità delle prestazioni per dataset di grandi dimensioni.",
+  "colname": "Specifica il prefisso del nome della colonna",
+  "datasetNameForROC": "Inserisci un nome di dataset per memorizzare i valori nella tabella ROC.",
+  "label5": "**Selezionare la casella di controllo sopra comporterà una penalità delle prestazioni per dataset di grandi dimensioni.",
+  "level": "Specifica il livello di confidenza",
+  "confusioncheck": "Genera matrice di confusione",
+  "help": {
+    "title": "Valuta un dataset utilizzando un modello",
+    "r_help": "help(predict, package='stats')",
+    "body": "\n    <b>Descrizione</b></br>\n    La valutazione del modello fa quanto segue</br>\n    1. Valuta il dataset corrente utilizzando il modello predefinito selezionato. Memorizza le previsioni con l'intervallo di confidenza specificato nel dataset corrente utilizzando il prefisso specificato.</br>\n    2. Facoltativamente crea una matrice di confusione e una curva ROC</br>\n    3. Nel caso in cui si stia valutando un dataset di addestramento che contiene la variabile dipendente/variabile da prevedere e la variabile dipendente ha 2 livelli, hai la possibilità di selezionare il livello di riferimento/livello di interesse.<br/>\n    4. La matrice di confusione e le statistiche correlate vengono create utilizzando il livello di interesse specificato.<br/>\n    Vedi i dettagli sulla funzione predict e sulla matrice di confusione qui sotto\n    <br/>\n    <br/>\n    <b>Descrizione</b></br>\n    predict è una funzione generica per fare previsioni utilizzando il modello selezionato. \n    <br/>\n    <b>Utilizzo</b>\n    <br/>\n    <code> \n    BSkyPredict(modelname, prefix, datasetname)\n    </code> <br/>\n    <b>Argomenti</b><br/>\n    <ul>\n    <li>\n    modelname: un oggetto modello per il quale si desidera la previsione.\n    </li>\n    <li>\n    prefix: stringa di prefisso che verrà utilizzata per creare nuove variabili contenenti le previsioni.\n    </li>\n    <li>\n    datasetname: è il dataset corrente da valutare e salvare le previsioni.\n    </li>\n    </ul>\n    <b>Dettagli</b></br>\n    Memorizza le previsioni con l'intervallo di confidenza specificato nel dataset corrente utilizzando il prefisso specificato.</br>\n    <b>Pacchetto</b></br>\n    stats</br>\n    <b>Aiuto</b></br>\n    Per aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(predict, package ='stats') nella finestra dell'editor R\n    </br>\n    </br>\n    <b>Descrizione</b></br>\n    Crea una matrice di confusione incrociando le classi osservate e previste con le statistiche associate. \n    <br/>\n    <b>Utilizzo</b>\n    <br/>\n    <code> \n    BSkyConfusionMartix(modelname,showCofusionMatrix,predictions,datasetname)\n    </code> <br/>\n    <b>Argomenti</b><br/>\n    <ul>\n    <li>\n    modelname : un oggetto modello per il quale si desidera la matrice di confusione.\n    </li>\n    <li>\n    showCofusionMatrix:  logico, se TRUE la matrice di confusione viene generata (se applicabile), se FALSE, la matrice di confusione non viene generata.\n    </li>\n    <li>\n    predictions : un oggetto restituito come risultato della chiamata a predict().\n    </li>\n    <li>\n    datasetname: è il nome del dataset corrente utilizzando il quale vogliamo fare previsioni.\n    </li>\n    </ul>\n    <b>Dettagli</b></br>\n    Visualizza la matrice di confusione utilizzando la funzione confusionMatrix nel pacchetto caret</br>\n    <b>Pacchetto</b></br>\n    caret</br>\n    <b>Aiuto</b></br>\n    Per aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(confusionMatrix, package ='caret') nella finestra dell'editor R\n                "
+  }
+}

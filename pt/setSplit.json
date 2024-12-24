@@ -1,0 +1,11 @@
+{
+  "title": "Dividir Conjunto",
+  "navigation": "Dividir",
+  "label0": "Divisões permitem que você separe o conjunto de dados em grupos definidos por uma ou mais variáveis de divisão. A análise é realizada separadamente para cada grupo.",
+  "SelectedVars": "Selecione as variáveis para dividir",
+  "help": {
+    "title": "Dividir Conjunto",
+    "r_help": "",
+    "body": "<b>Descrição</b></br>\n        Divide os dados em grupos com base nos fatores selecionados, uma vez que o conjunto de dados é dividido, a análise que você seleciona é realizada independentemente para cada divisão. Por exemplo, se você executar uma análise de tabela cruzada ou um teste de hipótese, essa análise é realizada independentemente para cada divisão (a saída da análise também é gerada separadamente para cada divisão). \n         <br/>\n                <b>Uso</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(col.names, datasetnameorindex, removeall.splits = FALSE)\n          </code> <br/>\n            <b>Argumentos</b><br/>\n                 <ul>\n                   <li>\n        col.names: Estes são os nomes das colunas/nome das variáveis que você deseja dividir o conjunto de dados, por exemplo, col.names =c(\"var1\", \"var2\").\n         </li>\n                <li>\n        datasetnameorindex: este é o nome do índice.​\n          </li>\n                <li>\n        removeall.splits: TRUE remove as divisões, FALSE adiciona as divisões.\n         </li>\n                </ul>\n            <b>Pacote</b></br>\n               Não aplicável, esta função é uma função interna no pacote BlueSky. Esta função basicamente define atributos no conjunto de dados. Com base nesses atributos, executamos a análise em cada divisão independentemente.</br>\n                <b>Ajuda</b></br>\n        NA\n        "
+  }
+}

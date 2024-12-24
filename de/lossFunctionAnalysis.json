@@ -10,7 +10,7 @@
   "lfaOutput": "Art der Ausgabe (mögliche Werte - Text, Diagramm oder beides)",
   "help": {
     "title": "Analyse der Verlustfunktion",
-    "r_help": "help(ss.lfa, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDie ss.lfa-Funktion führt eine Analyse der Qualitätsverlustfunktion basierend auf der Taguchi-Verlustfunktion für \"Nominal-the-Best\"-Merkmale durch.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens loss_function_table.xlsx verwenden. Öffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t"
+    "r_help": "hilfe(ss.lfa, paket = SixSigma)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDie ss.lfa-Funktion führt eine Analyse der Qualitätsverlustfunktion basierend auf der Taguchi-Verlustfunktion für \"Nominal-the-Best\"-Merkmale durch.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R hilfe(ss.lfa, paket = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatendatei namens loss_function_table.xlsx verwenden. Öffnen Sie die Datei im Datenraster über das Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

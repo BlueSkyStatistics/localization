@@ -1,0 +1,15 @@
+{
+  "title": "집계 데이터",
+  "navigation": "집계",
+  "description": "하나 이상의 숫자(스케일) 변수를 하나 이상의 요인 변수로 집계하고 새로운 집계 데이터 세트를 생성합니다. 숫자 변수에 대해 다음을 계산합니다:\n        평균, 중앙값, 합계, 표준편차, 고유 개수, 최대값, 최소값 및 분산.\n        집계 데이터 세트에서 카운트도 계산합니다.",
+  "label1": "집계 옵션",
+  "upperdesc": "집계되는 변수에 적용할 함수를 선택하십시오.",
+  "datasetname": "집계 데이터 세트의 이름을 입력하십시오.",
+  "showResultsinOutput": "결과를 출력 창에 표시합니다.",
+  "groupBy": "그룹화 (요인 또는 날짜 유형의 변수)",
+  "help": {
+    "title": "데이터 세트로 집계",
+    "r_help": "help(group_by, package=dplyr)",
+    "body": "\n            <b>설명</b></br>\n하나 이상의 숫자(스케일) 변수를 하나 이상의 요인 변수로 집계하고 새로운 집계 데이터 세트를 생성합니다. 숫자 변수에 대해 다음을 계산합니다:\n평균, 중앙값, 합계, 표준편차, 고유 개수, 최대값, 최소값 및 분산.\n집계 데이터 세트에서 카운트도 계산합니다.\n<br/>\n<b>사용법</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## 데이터 세트 새로 고침</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>인수</b>\n <ul>\n   <li>\nvar1: 그룹화할 요인\n</li>\n<li>\nvar2, var3: 집계할 변수\n</li>\n<li>\nnewvarmean: 집계 데이터 세트에서 var1로 그룹화된 var2의 평균\n</li>\n<li>\n​newvarmedian: 집계 데이터 세트에서 var1로 그룹화된 var3의 중앙값\n</li>\n</ul>\n            "
+  }
+}

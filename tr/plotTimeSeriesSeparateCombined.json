@@ -1,0 +1,20 @@
+{
+  "title": "Zaman Serisi Grafiği",
+  "navigation": "Zaman Serisi Grafiği, ayrı veya birleştirilmiş",
+  "destination": "Grafiğe alınacak değişkenler",
+  "firstObservation": "İlk gözlem zamanı örn.1: Ocak 1961 için 1961,1 girin örn.2: 1961,3 için 1961,3 girin, örn.3: sürekli bir seri için 1 girin",
+  "frequency": "Zaman birimi başına gözlem sayısı örn.1: bir yılın her ayı için bir gözlem için 12 girin, örn.2: bir çeyrek için bir gözlem için 4 girin, örn.3: sürekli bir seri için 1 girin.",
+  "label0": "Grafik Seçenekleri",
+  "separately": "Her seriyi ayrı ayrı çiz",
+  "combine": "Serileri birleştir",
+  "label1": "Değişkenleri Dönüştür",
+  "chkboxForTransform": "Doğal logaritma",
+  "label2": "Uygulanan değerler için seçenekler",
+  "yaxisLabel": "Y ekseni etiketi",
+  "mainTitle": "Ana başlık",
+  "help": {
+    "title": "Zaman Serisi Grafiği",
+    "r_help": "help(plot.ts, package ='stats')",
+    "body": "\n<b>Açıklama</b></br>\nBirleştirilmiş veya ayrı olarak zaman serisi grafiği oluşturur. Birleştirildiğinde birden fazla değişken birlikte çizilir, ayrı olduğunda her değişken bağımsız olarak çizilir. BSkyPlotSeriesWithCorrelations, bir zaman serisi nesnesi oluşturan ve dahili olarak plot.ts'yi çağıran bir sarmalayıcı işlevdir. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='başlık', ylab='y ekseni etiketi', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: grafiğe alınacak seçilen değişkenler\n</li>\n<li>\nstart: İlk gözlem zamanı yıl,ay veya yıl,çeyrek formatında girilmelidir örn.(verileriniz aylara göre düzenlenmişse 1992,1 için Ocak 1992 veya verileriniz çeyreklere göre düzenlenmişse 1992,1 1992'nin ilk çeyreğini ifade eder.\n</li>\n<li>\nfrequency: Birim zamanda gözlem sayısı. Örneğin: aylık için yılda 12 gözlem vardır. Çeyrek için yılda 4 gözlem vardır.\n</li>\n<li>\nplot.type: \"multiple\" ayrı ve \"single\" birleştirilmiş grafik için.\n</li>\n<li>\nnaturalLogYaxis: eğer TRUE ise Y ekseni doğal logaritma değeri olarak gösterilir.\n</li>\n<li>\nmain: grafiğin ana başlığı\n</li>\n<li>\nylab: y ekseni için başlık\n</li>\n<li>\ndataset: vars'ın alındığı veri kümesinin adı.\n</li>\n</ul>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya bir R kodu parçası oluşturarak aşağıdaki komutu çalıştırın help(plot.ts, package ='stats') çıkış penceresinde + butonuna tıklayarak"
+  }
+}

@@ -1,21 +1,21 @@
 {
-  "title": "EWMA图表",
-  "navigation": "EWMA图表",
+  "title": "EWMA图",
+  "navigation": "EWMA图",
   "summaryPrintChk": "除了图表外打印摘要",
-  "label2": "两个选项 - 要么选择要绘制的变量（如有需要，还可以选择分组变量），要么选择数据集中已分组的变量",
+  "label2": "两个选项 - 要么选择一个变量进行图表（并根据需要选择一个分组变量），要么选择数据集中要图表的变量（如果已经分组）",
   "selectVariableRad": "选项1：从需要分组的数据集中选择一个变量",
-  "variableSelcted": "要绘制的变量（观察数据）",
+  "variableSelcted": "要图表的变量（观察数据）",
   "groupingVariable": "分组变量",
   "displayGroupsChk": "在数据集UI网格上显示分组",
-  "selectDatasetRad": "选项2：如果已分组，则从数据集中选择变量",
-  "variablelistSelcted": "选择一个或多个分组变量（观察数据）进行绘制",
-  "nsigmas": "Sigma - 用于计算控制限的sigma数量",
+  "selectDatasetRad": "选项2：如果已经分组，从数据集中选择变量",
+  "variablelistSelcted": "选择一个或多个分组变量（观察数据）进行图表",
+  "nsigmas": "西格玛 - 用于计算控制限的西格玛数量",
   "lambda": "平滑参数（介于0和1之间）",
   "rowsTobeUsed": "用于图表的分组行（例如，指定为1:25或1,4,5,7:12）",
-  "rowsTobeUsedAsNewData": "新数据 - 用作新数据的分组行（例如，指定为1:25或1,4,5,7:12） - 用于绘图的新数据，但不包括在计算中",
+  "rowsTobeUsedAsNewData": "新数据 - 用于图表的新数据（例如，指定为1:25或1,4,5,7:12） - 新数据用于绘图但不包括在计算中",
   "help": {
-    "title": "EWMA图表",
-    "r_help": "帮助(ewma, 包 = qcc)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tqcc函数用于执行统计质量控制并绘制Shewhart图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R帮助(ewma, 包 = qcc)和帮助(qcc, 包 = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以通过选择qcc包并选择pistonrings数据集来使用加载数据集菜单加载名为pistonrings的数据集\n\t\t\t\t<br/>\n\t\t\t\t选择选项1，直径到变量（观察..），样本到分组变量，\n\t\t\t\t<br/>\n\t\t\t\t在要使用的分组行中输入1:25，在新数据中输入30:40\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t请访问https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html查看qcc教程\n\t\t\t\t<br/>\n\t\t\t"
+    "title": "EWMA图",
+    "r_help": "help(ewma, package = qcc)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tqcc函数用于执行统计质量控制和绘制Shewhart图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R help(ewma, package = qcc)和help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以通过选择qcc包并选择pistonrings数据集来加载qcc包中的pistonrings数据集\n\t\t\t\t<br/>\n\t\t\t\t选择选项1，直径为变量（观察..），样本为分组变量，\n\t\t\t\t<br/>\n\t\t\t\t在要使用的分组行中输入1:25，在新数据中输入30:40\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t请访问https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html以查看qcc教程\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

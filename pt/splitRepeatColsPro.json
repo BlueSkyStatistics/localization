@@ -1,0 +1,24 @@
+{
+  "title": "Dividir/Colapsar um conjunto de dados com grupo repetido de variáveis",
+  "navigation": "Conjuntos de Variáveis Repetidas",
+  "removeColsWithConstantChk": "Remover todas as colunas com valores constantes (não sensível a maiúsculas) antes de dividir ou colapsar",
+  "removeRowsWithNAsChk": "Manter apenas casos completos, ou seja, remover toda a linha com quaisquer valores vazios ou NA no(s) conjunto(s) de dados de saída",
+  "resultDatasetNameSuffix": "(Opcional) uma ou mais strings (separadas por vírgula) a serem usadas como sufixo para o(s) nome(s) do conjunto de dados de saída",
+  "splitDatasetRad": "Dividir o conjunto de dados em múltiplos conjuntos de dados com base no conjunto de variáveis repetidas",
+  "autoDetectColGroupLengthRad": "Detectar automaticamente o conjunto de variáveis repetidas para dividir ou colapsar",
+  "manualColGroupLengthRad": "Especificar o comprimento do conjunto de variáveis repetidas a ser usado para dividir ou colapsar",
+  "manualRepeatingColumnGroupLength": "Comprimento do conjunto de variáveis repetidas",
+  "outputColumnNames": "(Opcional) Lista de nomes de variáveis (separadas por vírgula) a serem usadas para o(s) conjunto(s) de dados de saída",
+  "collapseDatasetRad": "Colapsar para criar um único conjunto de dados longo em vez de dividir em múltiplos conjuntos de dados",
+  "collapseGpIDPrefix": "Prefixo para valores de ID do conjunto",
+  "collapseGpIDColName": "Nome da variável ID do conjunto (uma nova variável será criada no conjunto de dados de saída)",
+  "collapseGpIDColFirstChk": "Tornar a variável ID do conjunto a primeira coluna (desmarcar para a última coluna)",
+  "makeCollapseGpIDColFactorChk": "Tornar a variável ID do conjunto um fator",
+  "label1": "Detecção de conjunto de variáveis repetidas",
+  "label2": "Dividir ou Colapsar o conjunto de dados?",
+  "help": {
+    "title": "Dividir/Colapsar um conjunto de dados com grupo repetido de variáveis",
+    "r_help": "",
+    "body": "\n            <b>Descrição</b></br>\n            Esta caixa de diálogo é usada para dividir (em múltiplos conjuntos de dados) ou colapsar (em um único conjunto de dados longo) um conjunto de dados com um conjunto repetido de variáveis\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemplo 1: Para tentar isso, você pode usar o arquivo de conjunto de dados de exemplo chamado Repeating Variable Sets.xlsx\n\t\t\t<br/>\n\t\t\tAbra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t<br/>\n\t\t\tNa caixa de diálogo - digite\n\t\t\t<br/>\n\t\t\tSerão criados três conjuntos de dados, pois existem três conjuntos de variáveis repetidas. você pode digitar nenhum, um ou mais\n\t\t\tstrings para sufixos de nome do conjunto de dados de saída como abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tMantenha todos os outros itens na caixa de diálogo como padrão  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemplo 2: Para tentar isso, você pode usar o arquivo de conjunto de dados de exemplo chamado Repeating Variable Sets2.xlsx\n\t\t\t<br/>\n\t\t\tAbra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t<br/>\n\t\t\tNa caixa de diálogo - digite\n\t\t\t<br/>\n\t\t\tSerão criados quatro conjuntos de dados, pois existem quatro conjuntos de variáveis repetidas\n\t\t\t<br/>\n\t\t\tMantenha todos os itens na caixa de diálogo como padrão \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tVocê pode usar os mesmos dois arquivos de conjunto de dados de exemplo para tentar a opção de Colapsar na seção \"Dividir ou Colapsar o conjunto de dados?\" da caixa de diálogo para criar um único conjunto de dados de saída\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

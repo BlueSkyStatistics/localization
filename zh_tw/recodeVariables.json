@@ -4,23 +4,23 @@
   "oldvars": "要重新編碼的變數",
   "label1": "選項",
   "newvarradio": "新變數",
-  "newvar": "輸入新的變數名稱，用逗號分隔，例如 newVar1, newVar2",
+  "newvar": "輸入新變數名稱，用逗號分隔，例如 newVar1, newVar2",
   "oldvarradio": "覆蓋現有變數",
   "suffix": "為重新編碼的變數指定後綴",
   "prefix": "為重新編碼的變數指定前綴",
   "enterSuffix": "輸入後綴",
   "enterPrefix": "輸入前綴",
-  "label3": "在指定多個重新編碼標準時，使用 ; 作為分隔符。",
-  "label4": "注意：字符串值必須用雙引號(\")括起來，而不是單引號(')。",
-  "label5": "輸入舊值和新值，用 ; 分隔，例如 \"男\"=\"男\";\"女\"=2;\"休斯頓，德克薩斯州\"=\"德克薩斯州\";\"不可用\"=NA ",
+  "label3": "當指定多個重新編碼標準時，使用 ; 作為分隔符。",
+  "label4": "注意：字串值必須用雙引號(\")括起來，而不是單引號(')。",
+  "label5": "輸入舊值和新值，用 ; 分隔，例如 \"Male\"=\"Man\";\"Fem\"=2;\"Houston, Texas\"=\"Texas\";\"Not Available\"=NA ",
   "label5a": "對於數值類型的重新編碼，輸入 70=100;71=101;99=NA",
-  "label5b": "支持值的範圍，例如 5:10=\"中\" 特殊值 lo 和 hi 可以出現在範圍內，例如 lo:10=\"低\";11:89=\"中\";90:hi=\"高\"",
-  "label6": "關鍵字 else 可用於所有不符合規範的內容，例如 else =NA",
-  "dontMakeFactor": "默認情況下，如果源變數是因子，則重新編碼的變數將是因子。要覆蓋，請勾選復選框",
+  "label5b": "支持值範圍，例如 5:10=\"medium\" 特殊值 lo 和 hi 可以出現在範圍內，例如 lo:10=\"low\";11:89=\"medium\";90:hi=\"High\"",
+  "label6": "關鍵字 else 可用於所有不符合規範的情況，例如 else =NA",
+  "dontMakeFactor": "默認情況下，如果源變數是因子，則重新編碼的變數將是因子。要覆蓋，請勾選該選框",
   "oldnewvals": "輸入重新編碼標準",
   "help": {
     "title": "重新編碼變數",
     "r_help": "help(recode, package=car)",
-    "body": "\n<b>描述</b></br>\n根據重新編碼規範重新編碼一個或多個數值向量、字符向量或因子。您可以通過覆蓋現有變數、指定新的變數名稱來存儲結果，或者選擇將重新編碼的值存儲在具有適當前綴或後綴的新變數中。前綴或後綴將應用於現有變數名稱。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ncolNames: 包含要重新編碼的數據集中一個或多個變數的字符向量\n</li>\n<li>\nnewColNames:  包含新列名稱的字符向量。\n</li>\n<li>\nOldNewVals: 以 oldval1,newval1, oldval2,newval2 形式的重新編碼規範的字符字符串\n</li>\n<li>\nNewCol: 一個布爾值，指示是否將重新編碼的值存儲在新變數中（TRUE）或覆蓋現有變數（FALSE）。\n</li>\n<li>\nprefixOrSuffix: 指定是否希望將重新編碼的值存儲在以您指定的名稱為前綴或後綴的新變數中。 輸入前綴或後綴。\n</li>\n<li>\nprefixOrSuffixString: 輸入一個字符串，用作現有變數名稱的前綴或後綴。重新編碼的值將存儲在這些變數中。\n</li>\n<li>\ndataSetNameOrIndex: 數據集/數據框的名稱\n</li>\n</ul>\n注意：我們不會從數值轉換為因子。當數值被重新編碼時，它將保持為數值，當因子變數被重新編碼時，它將保持為因子。<br/>\n<b>包</b></br>\ncar</br>\n<b>幫助</b></br>\n在 BlueSky Statistics R 語法編輯器中輸入以下行</br>\nhelp(recode, package=car)\n"
+    "body": "\n<b>描述</b></br>\n根據重新編碼規範重新編碼一個或多個數值向量、字符向量或因子。您可以通過覆蓋現有變數、指定新變數名稱來存儲結果，或者選擇將重新編碼的值存儲在具有適當前綴或後綴的新變數中。前綴或後綴將應用於現有變數名稱。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ncolNames: 包含數據集中一個或多個變數的字符向量\n</li>\n<li>\nnewColNames: 包含新列名稱的字符向量。\n</li>\n<li>\nOldNewVals: 以 oldval1,newval1, oldval2,newval2 形式的重新編碼規範的字符字符串\n</li>\n<li>\nNewCol: 布爾值，指示是否將重新編碼的值存儲在新變數中 (TRUE) 或覆蓋現有變數 (FALSE)。\n</li>\n<li>\nprefixOrSuffix: 指定是否要將重新編碼的值存儲在以您指定的名稱為前綴或後綴的新變數中。 輸入前綴或後綴。\n</li>\n<li>\nprefixOrSuffixString: 輸入一個字符串作為現有變數名稱的前綴或後綴。重新編碼的值將存儲在這些變數中。\n</li>\n<li>\ndataSetNameOrIndex: 數據集/數據框名稱\n</li>\n</ul>\n注意：我們不會將數值轉換為因子。當數值被重新編碼時，它將保持數值，當因子變數被重新編碼時，它將保持因子。<br/>\n<b>包</b></br>\ncar</br>\n<b>幫助</b></br>\n在 BlueSky Statistics R 語法編輯器中輸入以下行</br>\nhelp(recode, package=car)\n"
   }
 }

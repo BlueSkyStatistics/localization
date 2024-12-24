@@ -1,0 +1,12 @@
+{
+  "title": "Ajuste do Item",
+  "navigation": "Ajuste do Item",
+  "label1": "Selecione um modelo (modelos das classes Rm, dRm, tam.mml, tam.mml.2pl, tam.mml.mfr suportados)",
+  "label1b": "Se nenhum modelo estiver disponível, você precisa criar um modelo primeiro selecionando Ajuste de Modelo -> IRT",
+  "modelselector1": "Selecione um modelo",
+  "help": {
+    "title": "Ajuste do Item",
+    "r_help": "help(itemfit, package='eRm')",
+    "body": "\n                <b>Descrição</b></br>\n                Para modelos das classes Rm ou dRm (Criados usando IRT->Modelo Rasch Simples com estimativa CML) usa a função itemfit para exibir estatísticas de Ajuste do Item.\n                <br/>\n                Para modelos das classes tam.mml,tam.mml.2pl, tam.mml.2pl, tam.mml.mfr (Criados usando IRT->Modelo Rasch Simples, Modelo de Crédito Parcial, Modelo de Escala de Avaliação e modelos multifacetados (Crédito Parcial e Escala de Avaliação) com estimativa MML usa a função msq.itemfit para Estatísticas de Ajuste do Item Baseadas em Resíduos Quadráticos Médios (Infit, Outfit)\n\n                <br/><br/>\n                <b>Uso</b>\n                <br/>\n                <code>\n                eRm::itemfit(object)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(object)\n                </code>\n                <br/><br/>\n                <b>Detalhes</b>\n                <br/>  \n                Execute o seguinte no editor de Sintaxe do BlueSky Statistics  help(itemfit, package ='eRm')\n                <br/>\n                Execute o seguinte no editor de Sintaxe do BlueSky Statistics help(msq.itemfit, package ='TAM')\n                <br/>\n                A ajuda detalhada será aberta no seu navegador padrão         \n                <br/><br/>\n                <b>Pacotes</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>Ajuda</b>\n                <br/>\n                help(itemfit, package='eRm')\n                "
+  }
+}

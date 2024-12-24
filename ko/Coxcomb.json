@@ -1,0 +1,25 @@
+{
+  "title": "코크콤브 플롯",
+  "navigation": "코크콤브",
+  "x": "X 축 변수(들), 요인 변수(들)를 지정하세요",
+  "y": "Y 변수, 숫자 변수를 지정하세요",
+  "fill": "채우기, 요인 변수를 지정하세요",
+  "alpha": "불투명도 (0-1)",
+  "width": "너비",
+  "rdgrp1": "채우기 비율",
+  "flip": "축 뒤집기",
+  "barcolor": "막대 색상 (색상 선택 후, 제어 외부를 클릭하여 적용하세요)",
+  "specify_a_title": "제목 입력",
+  "x_title": "X 축 레이블",
+  "y_title": "Y 축 레이블",
+  "Facetrow": "패싯 행",
+  "Facetcolumn": "패싯 열",
+  "Facetwrap": "패싯 랩",
+  "Facetscale": "패싯 스케일",
+  "facets_lbl": "패싯",
+  "help": {
+    "title": "코크콤브 플롯",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>설명</b></br>\n코크콤브/불스아이 차트(또는 원형 차트)는 원형 통계 그래픽으로, 숫자 비율을 설명하기 위해 조각/동심원으로 나뉘어 있습니다. 코크콤브/불스아이 차트에서 각 동심원의 너비 길이(따라서 면적)는 그것이 나타내는 양에 비례합니다. 양은 카운트 또는 백분율로 표현될 수 있습니다.</br>​\n패싯은 요인 변수를 지정하여 선택적으로 생성할 수 있습니다. 또한 선택적으로 테마를 지정하고, 제목 및 x, y 축 레이블을 지정할 수 있습니다.</br>\n여러 x 변수를 지정하면 각 x 변수에 대해 별도의 코크콤브/불스아이를 생성합니다.</br>\n<b>사용법</b>\n<br/>\n<code>\n#단일 요인 변수에 대해 불스아이 차트를 생성할 수 있으며, 각 요인 변수의 수준에 대해 동심원이 생성됩니다. 동심원의 너비는 각 요인 수준의 카운트에 비례합니다. 여기서 요인 변수는 아래와 같이 채우기에 해당합니다.<br/>\n#penguins는 equatiomatic R 패키지의 데이터셋입니다.\nggplot(data=penguins,aes(x ='',fill=species)) +​\n                 geom_bar(alpha=1,width =0.9) +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"Count\",fill =\"var1\",title= \"채우기: 종이 있는 불스아이 차트\")​</br></br>\n#y 변수를 스케일/숫자 변수로 지정하고 채우기로 작용하는 요인 변수를 지정하여 불스아이 차트를 생성할 수 있습니다. 여기서 채우기 요인 변수의 각 수준에 대해 동심원이 생성됩니다. 동심원의 너비는 각 요인 수준에서 y 값의 합에 비례합니다. 여기서 요인 변수는 아래와 같이 채우기에 해당합니다.<br/>\nggplot(data=penguins,aes(x ='', y = bill_length_mm, fill = species)) +​\n                 geom_bar(alpha=1,width =0.9,stat=\"identity\") +​\n                 coord_polar(\"x\") +​\n                 labs(y =\"var1\",fill =\"var2\",title= \"X 미적: var1, Y 미적: var1, 채우기: var2가 있는 불스아이 차트\") </br></br>\n\n#x 변수를 지정하여 코크콤브 플롯을 생성할 수 있습니다. 조각은 x 변수의 각 수준에 대해 생성되며, 각 조각의 반경은 카운트에 비례합니다.<br/>\n    ggplot(data=penguins, aes(x=island, )) +\n        geom_bar( alpha=1,width=1,) +\n        coord_polar(\"x\") +\n        labs(x=\"island\",  title= \"X 미적: 섬이 있는 코크콤브 플롯\") +\n        xlab(\"island\") + ylab(\"Count\")</br></br>\n\n#x 변수와 채우기를 지정하여 코크콤브 플롯을 생성할 수 있습니다. 조각은 x 변수의 각 수준에 대해 생성됩니다. 각 조각은 지정된 채우기 변수의 각 수준에서 케이스의 카운트로 채워집니다.\nggplot(data=penguins, aes(x=island,fill=species )) +\n\tgeom_bar( alpha=1, width=1) +\n\tcoord_polar(\"x\") +\n\tlabs(x=\"island\",  title= \"X 미적: 섬, 채우기: 종이 있는 코크콤브 플롯\") +\n\txlab(\"island\") + ylab(\"Count\")</br></br>\n\n\n#x 변수, y 변수 및 채우기를 지정하여 코크콤브 플롯을 생성할 수 있습니다. 조각은 x 변수의 각 수준에 대해 생성되며, 채우기에서 지정된 변수의 각 수준에 대해 y 변수의 값의 합으로 채워집니다. 조각은 채우기 변수의 수준에 따라 나뉩니다. 조각 내에서 채우기 변수의 각 수준이 차지하는 면적은 슬라이스와 채우기 변수에 일치하는 y 변수의 카운트의 합에 비례합니다.<br/>\nggplot(data=penguins, aes(x=island,y=bill_depth_mm,fill=species )) +\n\tgeom_bar( alpha=1,width=1,stat = \"identity\") +\n\tcoord_polar(\"x\") +\n\tlabs(x=\"island\", y=\"bill_depth_mm\", title= \"X 미적: 섬, Y 미적: bill_depth_mm, 채우기: 종이 있는 코크콤브 플롯\") +\n\txlab(\"island\") + ylab(\"bill_depth_mm\")</br></br>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndata: 기본 데이터셋​\n</li>\n<li>\naes(): 데이터의 변수가 시각적 속성(미적)에 어떻게 매핑되는지를 설명하는 미적 매핑을 생성합니다.​\n</li>\n<li>\nx: (선택 사항) 요인/범주형 변수. 막대의 길이는 각 요인 변수의 수준의 카운트에 해당합니다.​\n</li>\n<li>\nY: (선택 사항) 숫자 변수\n</li>\n<li>\nfill: (선택 사항) x의 수준의 카운트를 그룹화하는 선택적 요인/범주형 변수입니다: (위 참조)​\n</li>\n<li>\ngeom_bar(): 막대 그래프를 생성하며, position =\"fill\"은 각 그룹 수준의 비율로 막대를 채웁니다.​\n</li>\n<li>\nCoor_polar(): 극좌표계는 일반적으로 파이 차트에 사용되며, 이는 극좌표계의 누적 막대 차트입니다.\n</li>\n<li>\nLabs(): 축 레이블 및 범례 제목을 변경합니다(선택 사항)​\n</li>\n<li>\nfacet_grid(): 패널을 그리드에 배치합니다(선택 사항)​\n</li>\n<li>\ntheme_calc(): 계산기 테마를 지정합니다(선택 사항)​\n</li>\n<li>\ncoord_flip(): 축을 뒤집습니다(선택 사항)​\n</li>\n<li>\nalpha: 불투명도를 제어하며, 0-1 사이의 값을 가집니다. 1은 불투명하지 않음을 의미합니다.\n</li>\n</ul>\n<b>패키지</b></br>\nggplot2;ggthemes;</br>\n<b>도움말</b></br>\nhelp(coord_polar, package=ggplot2)</br>\n기타: R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻을 수 있습니다. 또한 help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 입력할 수 있습니다.​\n    "
+  }
+}

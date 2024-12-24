@@ -1,0 +1,14 @@
+{
+  "title": "Estatísticas Resumidas",
+  "navigation": "Estatísticas Resumidas (Legado)",
+  "tvarbox1": "Variáveis selecionadas",
+  "tvarbox2": "Agrupar por",
+  "ChkboxShowOnlyTopFewFactors": "Mostrar contagens apenas para os N principais níveis de fatores",
+  "txtNumTopFactorsToShow": "Insira um valor para N",
+  "label1": "Nota: Quando a caixa de seleção não está marcada, as contagens para TODOS os níveis serão exibidas. Isso pode levar um tempo considerável se você tiver muitos níveis de fatores",
+  "help": {
+    "title": "Estatísticas Resumidas",
+    "r_help": "",
+    "body": "\n<b>Descrição</b></br>\nGera os resumos para cada grupo. Uma ou mais variáveis de origem são agrupadas pelas variáveis de destino. Mostra Mínimo, 1º Quartil, Mediana, Média, 3º Quartil, Máximo e contagem de NAs para variáveis numéricas e de data.</br>\nA ajuda do R não está disponível porque escrevemos código personalizado usando várias funções do R. Se você precisar inspecionar o código, clique no botão \"<>\".</br>\n    "
+  }
+}

@@ -1,16 +1,16 @@
 {
-  "title": "Logistică, Condiționată",
-  "navigation": "Logistică, Condiționată",
+  "title": "Logistică, condițională",
+  "navigation": "Logistică, condițională",
   "modelname": "Introduceți numele modelului",
-  "outcomevarlabel": "Variabilă Dependentă (numerică; 1 = eveniment, 0 = fără eveniment)",
+  "outcomevarlabel": "Variabila dependentă (numeric; 1 = eveniment, 0 = fără eveniment)",
   "stratavarlabel": "Strate",
-  "methodgrplabel": "Metodă de Estimare",
+  "methodgrplabel": "Metoda de estimare",
   "exactlabel": "Exact",
   "efronlabel": "Efron",
   "breslowlabel": "Breslow",
   "help": {
-    "title": "Logistică, Condiționată",
+    "title": "Logistică, condițională",
     "r_help": "help(clogit, package = 'survival')",
-    "body": "\nAcesta se potrivește unui model de regresie logistică condiționată, care este similar cu regresia logistică standard, dar încorporează o variabilă de stratificare. Aplicațiile comune ale acestui \nmodel sunt în studii de caz-control, cohortă potrivită și studii de caz-control înnăscute. Ieșirea include numărul de straturi utilizate în analiză, modele de frecvență a rezultatelor \ndentro straturi, diverse statistici de rezumat ale modelului, estimări ale parametrilor și rapoarte de șanse.\n<br/><br/>\n<b>Variabilă Dependentă:</b> Aceasta este variabila care indică evenimentul pentru fiecare subiect, cu 1 semnificând un eveniment și 0 semnificând un non-eveniment. Această variabilă trebuie să fie numerică.\n<br/><br/>\n<b>Constructor de Formule:</b> Specificați termenii modelului dorit.\n<br/><br/>\n<b>Strate:</b> Specificați variabila de stratificare. Poate fi numerică, caracter sau un factor nominal/ordinal.\n<br/><br/>\n<b>Metodă de Estimare:</b> Specificați metoda de estimare a modelului. Metoda \"Exact\" este metoda implicită. Atâta timp cât nu există prea multe modalități de a selecta evenimente în cadrul stratelor, aceasta ar trebui să fie opțiunea aleasă. Estimarea poate dura ceva timp sau poate duce la erori dacă multe combinații pot rezulta în unele straturi, să zicem 100 de evenimente din 500 de subiecți. Aproximările Efron și Breslow sunt adecvate în aceste cazuri, Efron fiind preferat. Consultați referințele din ajutorul R pentru detalii.\n<br/><br/>\n<b>Pachete R Necesare:</b> survival, broom, arsenal, dplyr\n\t\t"
+    "body": "\nAceasta se potrivește unui model de regresie logistică condițională, care este similar cu regresia logistică standard, dar încorporează o variabilă de stratificare. Aplicațiile comune ale acestui \nmodel sunt în studii de caz-control potrivite, cohorte potrivite și studii de caz-control înnăscute. Ieșirea include numărul de straturi utilizate în analiză, tipare de frecvență a rezultatelor \nîn cadrul stratelor, diverse statistici rezumative ale modelului, estimări ale parametrilor și rapoarte de șanse.\n<br/><br/>\n<b>Variabila dependentă:</b> Aceasta este variabila care indică evenimentul pentru fiecare subiect, cu 1 semnificând un eveniment și 0 semnificând un non-eveniment. Această variabilă trebuie să fie numerică.\n<br/><br/>\n<b>Constructor de formule:</b> Specificați termenii modelului dorit.\n<br/><br/>\n<b>Strate:</b> Specificați variabila de stratificare. Poate fi numerică, caracter sau un factor nominal/ordinal.\n<br/><br/>\n<b>Metoda de estimare:</b> Specificați metoda de estimare a modelului. Metoda \"Exact\" este implicită. Atâta timp cât nu există prea multe moduri de a selecta evenimente în cadrul stratelor, aceasta \nar trebui să fie opțiunea aleasă. Estimarea poate dura ceva timp sau poate duce la erori dacă multe combinații pot rezulta în unele straturi, de exemplu, 100 de evenimente din 500 de subiecți. Aproximațiile Efron \nși Breslow sunt adecvate în aceste cazuri, cu Efron fiind preferat. Consultați referințele din ajutorul R pentru detalii.\n<br/><br/>\n<b>Pachete R necesare:</b> survival, broom, arsenal, dplyr\n\t\t"
   }
 }

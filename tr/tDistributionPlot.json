@@ -1,0 +1,25 @@
+{
+  "title": "t Dağılım Grafiği",
+  "navigation": "t Dağılım Grafiği",
+  "degoffree": "Serbestlik dereceleri",
+  "pdenfun": "Yoğunluk fonksiyonunu çiz",
+  "pdstfun": "Dağılım fonksiyonunu çiz",
+  "lblregions": "Yoğunluk fonksiyonu altında bölgeleri isteğe bağlı olarak belirtin",
+  "xvals": "x-değerleri",
+  "quantiles": "kuantiller",
+  "lblRegFill": "Doldurulacak bölgeler (bir veya iki belirtin veya boş bırakın)",
+  "lblreg1": "Bölge 1:",
+  "lblreg2": "Bölge 2:",
+  "lblregfrm": "Başlangıç",
+  "lblregto": "Bitiş",
+  "lblregcol": "Renk",
+  "lblLegPos": "Lejantın konumu",
+  "toprt": "Üst sağ",
+  "toplt": "Üst sol",
+  "topmid": "Üst merkez",
+  "help": {
+    "title": "t Dağılım Grafiği",
+    "r_help": "help(qt, package=stats)",
+    "body": "\n            ​​\n            <b>Açıklama</b>\n            <br/>\n            df serbestlik dereceleri (ve isteğe bağlı merkezi olmayan parametre ncp) ile t dağılımı için yoğunluk, dağılım fonksiyonu, kuantile fonksiyonu ve rastgele üretim.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                dt(x, df, ncp, log = FALSE)\n                <br/>\n                pt(q, df, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qt(p, df, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rt(n, df, ncp)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : kuantillerin vektörü.</li>\n                \n                \n                <li>p : olasılıkların vektörü.</li>\n                \n                \n                <li>n : gözlem sayısı. Eğer length(n) > 1 ise, gerekli olan uzunluk alınır.</li>\n                \n                \n                <li>df : serbestlik dereceleri (> 0, belki tam sayı değil). df = Inf kabul edilir.</li>\n                \n                \n                <li>ncp : merkezi olmayan parametre delta; şu anda rt() dışında, yalnızca abs(ncp) <= 37.62 için. Atlandığında, merkezi t dağılımı kullanılır.</li>\n                \n                \n                <li>log, log.p : mantıksal; eğer TRUE ise, olasılıklar p log(p) olarak verilir.</li>\n                \n                \n                <li>lower.tail : mantıksal; eğer TRUE (varsayılan), olasılıklar P[X ≤ x], aksi takdirde P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Ayrıntılar</b>\n            <br/>\n            df = n serbestlik derecesine sahip t dağılımının yoğunluğu\n            <br/>\n            <code>f(x) = Γ((n+1)/2) / (√(n π) Γ(n/2)) (1 + x^2/n)^-((n+1)/2)</code>\n            <br/>\n            tüm reel x için. n > 1 için ortalaması 0 ve n > 2 için varyansı n/(n-2) vardır.\n            <br/>\n            Genel merkezi olmayan t, (df, Del) = (df, ncp) parametreleri ile tanımlanır ve T(df, Del) := (U + Del) / √(V/df) dağılımıdır; burada U ve V bağımsız rastgele değişkenlerdir, U ~ N(0,1) ve V ~ χ^2(df) (Chisquare'a bakınız).\n            <br/>\n            En çok kullanılan uygulamalar t-testleri için güç hesaplamalarıdır:\n             T= (mX - m0) / (S/sqrt(n)) burada mX ortalama ve S, X_1, X_2, …, X_n'nin örnek standart sapmasıdır (sd) ve bunlar i.i.d. N(μ, σ^2) dağılımına sahiptir. O zaman T, n - 1 serbestlik derecesine sahip merkezi olmayan t olarak dağıtılır ve merkezi olmayan parametre ncp = (μ - m0) * sqrt(n)/σ.\n             <br/>\n            <br/><b>Değer</b>\n            <br/>\n            dt yoğunluğu verir, pt dağılım fonksiyonunu verir, qt kuantile fonksiyonunu verir ve rt rastgele sapmaları üretir.\n            <br/>\n            Geçersiz argümanlar NaN döndürür ve bir uyarı verir.\n            <br/>\n            Sonucun uzunluğu rt için n tarafından belirlenir ve diğer fonksiyonlar için sayısal argümanların uzunluklarının maksimumudur.\n            <br/>\n            n dışındaki sayısal argümanlar sonucun uzunluğuna göre yeniden döngüye alınır. Mantıksal argümanların yalnızca ilk elemanları kullanılır.\n            <br/>\n            <br/><b>Not</b>\n            <br/>\n            ncp = 0 sağlamak, merkezi olmayan dağılım için algoritmayı kullanır, bu da ncp atlandığında kullanılan algoritma ile aynı değildir. Bu, ncp'nin çok yakın sıfır değerlerinde aşırı durumlarda tutarlı bir davranış sağlamak içindir.\n            <br/>\n            Sıfır olmayan ncp için kod esasen orta değerler için kullanılmak üzere tasarlanmıştır: büyük değerler için özellikle kuyruklarda çok doğru olmayacaktır."
+  }
+}

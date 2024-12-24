@@ -1,0 +1,32 @@
+{
+  "title": "히트맵",
+  "navigation": "히트맵",
+  "rowVariables": "대상 변수",
+  "columnVariables": "열 변수",
+  "options": "옵션",
+  "title1": "히트맵 제목",
+  "dendrogram": "덴드로그램:",
+  "label1": "행 덴드로그램 옵션:",
+  "plotRowYes": "행 평균을 기준으로 덴드로그램 재정렬",
+  "plotRowNo": "재정렬 없음 (덴드로그램이 계산되지 않음)",
+  "label2": "열 덴드로그램 옵션",
+  "plotColumnYes": "열 평균을 기준으로 덴드로그램 재정렬",
+  "plotColumnNo": "아니오",
+  "symmetric": "대칭 행렬의 경우 열을 행처럼 처리",
+  "trace": "행, 열, 행과 열 모두 또는 없음에 걸쳐 실선 그리기 옵션",
+  "density": "밀도 옵션:",
+  "scale": "값은 행 방향, 열 방향 또는 없음으로 중심을 맞춰야 함",
+  "label3": "결측값",
+  "Remove": "결측값이 포함된 모든 행 제거",
+  "Keep": "결측값이 포함된 행 유지",
+  "label4": "셀에 값 배치",
+  "valuesNo": "예",
+  "valuesYes": "아니오",
+  "noteColors": "셀 값에 대한 색상 선택 (색상 선택 후, 적용하려면 컨트롤 외부를 클릭):",
+  "advanced_lbl": "고급",
+  "help": {
+    "title": "히트맵",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>설명</b></br>\n            히트맵은 행렬에 포함된 개별 값을 색상으로 표현한 데이터의 그래픽 표현입니다. 선택적으로 요인 변수를 지정하여 패싯을 생성할 수 있습니다. 또한 선택적으로 테마를 지정하고 x 및 y 축의 제목과 레이블을 지정할 수 있습니다.</br>\n            데이터셋은 column1, column2…columnN 형식이어야 하며</br>\n            column1: 플롯된 콜레스테롤 값의 주체를 식별합니다 (예: 사람 이름)</br>\n            column2: 시간 1의 콜레스테롤 값을 식별합니다.</br>\n            column3: 시간 2의 콜레스테롤 값을 식별합니다.</br>\n            column4: 시간 3의 콜레스테롤 값을 식별합니다.</br>\n            column5: 시간 4의 콜레스테롤 값을 식별합니다…</br>\n            Column1은 히트맵의 각 행에 대한 레이블입니다.</br>\n            Column 2부터는 각 행의 값이 히트맵에서 색상으로 표현됩니다.</br>\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Subject'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            위의 함수는 BlueSky 패키지에 있으며 gplots 패키지의 heatmap.2 함수를 호출합니다.\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 기본 데이터셋\n            </li>\n            <li>\n            rowVariable: 그래프가 구성된 주체에 대한 정보를 포함하는 열 변수, 위 참조\n            </li>\n            <li>\n            colVariables: 히트맵에서 색상으로 표현될 값을 포함하는 열 변수 목록\n            </li>\n            <li>\n            Colv: 열 덴드로그램이 재정렬될지 여부 및 방법을 결정합니다. 위의 Rowv 인수와 동일한 옵션을 가지며, x가 정사각형 행렬일 때 Colv=\"Rowv\"는 열이 행과 동일하게 처리되어야 함을 의미합니다.\n            </li>\n            <li>\n            Rowv: 행 덴드로그램이 재정렬될지 여부 및 방법을 결정합니다. 기본적으로 TRUE이며, 이는 덴드로그램이 계산되고 행 평균을 기준으로 재정렬됨을 의미합니다. NULL 또는 FALSE인 경우 덴드로그램이 계산되지 않으며 재정렬이 수행되지 않습니다. 덴드로그램이 있는 경우 \"있는 그대로\" 사용됩니다. 정수 벡터인 경우 덴드로그램이 계산되고 벡터의 순서에 따라 재정렬됩니다.\n            </li>\n            <li>\n            na.rm: NA를 제거할지 여부를 결정하는 논리값\n            </li>\n            <li>\n            dendrogram: 'none', 'row', 'column' 또는 'both' 덴드로그램을 그릴지 여부를 나타내는 문자열입니다. 기본값은 'both'입니다. 그러나 Rowv(또는 Colv)가 FALSE 또는 NULL이고 dendrogram이 'both'인 경우 경고가 발생하며 Rowv(또는 Colv) 인수가 존중됩니다.\n            </li>\n            <li>\n            scale: 값이 행 방향 또는 열 방향으로 중심을 맞추고 스케일링되어야 하는지 여부를 나타내는 문자열입니다. 기본값은 \"none\"입니다.\n            </li>\n            <li>\n            trace: 값이 행 방향 또는 열 방향으로 중심을 맞추고 스케일링되어야 하는지 여부를 나타내는 문자열입니다. 기본값은 \"none\"입니다.\n            </li>\n            <li>\n            density.info: 색상 키에 '히스토그램', '밀도' 플롯 또는 플롯 없음('none')을 겹쳐 그릴지 여부를 나타내는 문자열입니다.\n            </li>\n            <li>\n            noteForCells: 값이 히트맵의 셀에 배치되어야 하는지 여부를 나타내는 논리값입니다.\n            </li>\n            <li>\n            notecol: 노트의 색상. 지정된 경우 색상으로 히트맵 셀에 값이 표시됩니다..\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            BlueSky;gplots;</br>\n            <b>도움말</b></br>\n            help(heatmap.2,package='gplots')</br>\n            기타: R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻을 수 있습니다. help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 입력할 수도 있습니다.</br>\n            샘플 데이터셋: 샘플 데이터셋 폴더의 Heatmaps.Rdata 참조</br>\n     "
+  }
+}

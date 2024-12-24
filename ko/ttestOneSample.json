@@ -1,0 +1,33 @@
+{
+  "title": "t-검정, 단일 샘플",
+  "navigation": "t-검정, 단일 샘플",
+  "tvarbox1": "변수 선택",
+  "textbox1": "신뢰 구간",
+  "textbox2": "영가설 (mu)",
+  "label1": "대립 가설",
+  "test1": "모집단 평균 != mu",
+  "test2": "모집단 평균 > mu",
+  "test3": "모집단 평균 < mu",
+  "testval": "검정 값 (mu)",
+  "label2": "결측값",
+  "Analysis": "분석별 분석",
+  "Listwise": "리스트별",
+  "conflevel": "신뢰 구간:",
+  "MissingVals": "결측값 옵션",
+  "cohensdNoCorrection": "코헨의 d",
+  "hedgesgNoCorrection": "헤지스의 g",
+  "glassd": "글래스의 델타",
+  "hedgesgCorrect": "편향 보정된 헤지스의 g",
+  "glassdCorrect": "글래스의 델타에 대한 편향 보정",
+  "hedgesg": "헤지스의 g",
+  "effectsizes": "효과 크기",
+  "cohensdCorrect": "편향 보정된 코헨의 d",
+  "label3": "코헨의 d 옵션",
+  "label4": "헤지스의 g 옵션",
+  "showEffectSizes": "효과 크기 표시",
+  "help": {
+    "title": "t-검정, 단일 샘플",
+    "r_help": "help(t.test, package=stats)",
+    "body": "\n<b>설명</b></br>\n선택된 변수에 대해 단일 샘플 t-검정을 수행합니다. 선택적으로 표준화된 차이에 대한 효과 크기 지수를 계산합니다: 코헨의 d 및 헤지스의 g (이 함수는 모집단 추정치를 반환합니다.)\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyOneSmTTest(varNamesOrVarGlobalIndices  =c('var1','var2'), mu=.9, conf.level=0.95, alternative= \"two.sided\",datasetNameOrDatasetGlobalIndex='Dataset', missing=1) \ncohens_d(var1~1, mu=valuetocompare, correction =FALSE, ci = 0.95)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: 선택된 척도 변수 (예: var1, var2)\n</li>\n<li>\nmu: 평균의 실제 값을 나타내는 숫자. (예: 10)\n</li>\n<li>\nconf.level: 숫자 값 (예: 0.95) .\n</li>\n<li>\nmissing: 결측값은 변수별로 처리됩니다 (missing =0) 또는 모든 변수에 대해 리스트별로 처리됩니다 (missing=1). \n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: var1, var2 및 var3가 선택된 데이터셋의 이름 (예: Dataset)\n</li>\n<li>\nalternative: 대립 가설을 지정하는 문자열로, \"two.sided\" (기본값), \"greater\" 또는 \"less\" 중 하나여야 합니다. 초기 문자만 지정할 수 있습니다.\n</li>\n</ul>\n<b>세부사항</b></br>\n검정 결과의 목록\n<br/>\n<b>예시</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# 데이터셋은 UI 그리드에 로드되어야 합니다</br>\nBSkyLoadRefreshDataframe(Dataset)</br> \nBSky_One_Simple_T_Test = BSkyOneSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),mu=.9,conf.level=0.95,alternative =\"two.sided\", datasetNameOrDatasetGlobalIndex ='Dataset',missing=1</br>\n</code> <br/>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 다음 명령어를 실행하여 help(t.test, package ='stats')를 실행하여 R 코드 청크를 생성하여 +를 클릭하여 출력 창에서 확인하세요.\n"
+  }
+}

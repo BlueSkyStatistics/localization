@@ -1,10 +1,10 @@
 {
-  "title": "添加/移除響應變數 - 首先檢查DOE -> 檢查設計菜單中的現有響應變數列表",
-  "navigation": "添加/移除響應",
-  "subsetvars": "選擇響應變數",
+  "title": "新增/移除反應變數 - 首先檢查 DOE -> 檢查設計菜單中的現有反應變數列表",
+  "navigation": "新增/移除反應",
+  "subsetvars": "選擇反應變數",
   "help": {
-    "title": "添加/移除響應變數",
-    "r_help": "幫助(response.names, 套件 = DoE.base)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t指定一個或多個變數作為設計的響應變數 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用R幫助(response.names, 套件 = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    "title": "新增/移除反應變數",
+    "r_help": "help(response.names, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t指定一個或多個變數作為設計的反應變數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(response.names, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

@@ -4,7 +4,7 @@
   "trg": "Zu löschende Variablen",
   "help": {
     "title": "NAs entfernen",
-    "r_help": "hilfe(na.omit, paket=data.table)",
-    "body": "\n<b>Beschreibung</b></br>\nEntfernen Sie fehlende Werte/NA aus dem Datensatz/Dataframe\nErstellt einen neuen/Überschreibt den vorhandenen Datensatz, indem Zeilen mit einem oder mehreren fehlenden Werten für die ausgewählten Spalten/Variablennamen entfernt werden\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n​object: ein R-Objekt.​\n</li>\n</ul>\n<b>Paket</b></br>\ndata.table</br>\n<b>Hilfe</b></br>\nhilfe(na.omit)\n"
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>Beschreibung</b></br>\nEntfernen von fehlenden Werten/NA aus Datensatz/Dataframe\nErstellt einen neuen/Überschreibt den vorhandenen Datensatz, indem Zeilen mit einem oder mehreren fehlenden Werten für die ausgewählten Spalten/Variablennamen entfernt werden\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n​object: ein R-Objekt.​\n</li>\n</ul>\n<b>Paket</b></br>\ndata.table</br>\n<b>Hilfe</b></br>\nhelp(na.omit)\n"
   }
 }

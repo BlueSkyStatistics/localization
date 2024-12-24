@@ -5,12 +5,12 @@
   "numgrps": "Numărul de grupuri",
   "n": "Dimensiunea eșantionului pe grup",
   "grpmeans": "Mediile grupurilor, specificați ca valori separate prin virgule, de exemplu 20, 25, 40",
-  "power": "Putere (0-1)",
+  "power": "Puterea (0-1)",
   "sd": "Deviația standard",
-  "siglevel": "Nivel de semnificație (0-1)",
+  "siglevel": "Nivelul de semnificație (0-1)",
   "help": {
     "title": "Dimensiunea eșantionului, ANOVA",
     "r_help": "help(power.anova.test, package ='stats')",
-    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un ANOVA unidirecțional echilibrat. Calculează dimensiunea eșantionului, puterea sau diferența dintre medii (calculată ca varianta dintre medii) atunci când utilizatorul specifică celelalte două.\n<br/><br/>\n<b>Numărul de grupuri:</b> Specificați numărul de grupuri din studiu\n<br/><br/>\n<b>Dimensiunea eșantionului pe grup:</b> Specificați numărul de subiecți din fiecare grup\n<br/><br/>\n<b>Mediile grupurilor:</b> Specificați mediile din fiecare grup pe care doriți să le detectați. Cel puțin o medie trebuie să fie diferită de celelalte.\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă este adevărată.\n<br/><br/>\n<b>Deviația standard:</b> Specificați deviația standard a rezultatului. Se presupune că este aceeași în toate grupurile.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) al testului\n<br/><br/>\n<b>Pachete R necesare:</b> stats\n\t\t\t"
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un ANOVA unidirecțional echilibrat.  Calculează dimensiunea eșantionului, puterea sau diferența în medii (calculată ca varianta între medii) atunci când utilizatorul \nspecifice celelalte două.\n<br/><br/>\n<b>Numărul de grupuri:</b> Specificați numărul de grupuri din studiu\n<br/><br/>\n<b>Dimensiunea eșantionului pe grup:</b> Specificați numărul de subiecți în fiecare grup\n<br/><br/>\n<b>Mediile grupurilor:</b> Specificați mediile din fiecare grup pe care doriți să le detectați.  Cel puțin o medie trebuie să fie diferită de celelalte.\n<br/><br/>\n<b>Puterea:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată.\n<br/><br/>\n<b>Deviația standard:</b> Specificați deviația standard a rezultatului.  Aceasta se presupune că este aceeași în toate grupurile.\n<br/><br/>\n<b>Nivelul de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului\n<br/><br/>\n<b>Pachete R necesare:</b> stats\n\t\t\t"
   }
 }

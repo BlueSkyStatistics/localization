@@ -1,0 +1,15 @@
+{
+  "title": "Sposta Variabili",
+  "navigation": "Sposta Variabili",
+  "varstomovelabel": "Variabili da Spostare",
+  "locationlabel": "Posizione",
+  "firstlabel": "Primo",
+  "lastlabel": "Ultimo",
+  "afterselectedlabel": "Dopo la Variabile Selezionata",
+  "aftervarlabel": "",
+  "help": {
+    "title": "Sposta Variabili",
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\nQuesto sposterà le variabili in una posizione specificata nel set di dati.\n<br/><br/>\n<b>Variabili da Spostare:</b> Variabili da spostare in una posizione diversa. Saranno collocate nell'ordine specificato in questa casella.\n<br/><br/>\n<b>Posizione:</b> Posizione nel set di dati per spostare le variabili. <b>Primo</b> colloca le variabili all'inizio del set di dati.  \n<b>Ultimo</b> colloca le variabili alla fine del set di dati.  <b>Dopo la Variabile Selezionata</b> colloca le variabili dopo questa variabile nel set di dati.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> dplyr\n\t\t\t"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "إعادة ترتيب مستويات العامل بواسطة متغير آخر",
+  "navigation": "إعادة الترتيب بواسطة متغير آخر",
+  "target": "اختر متغير العامل لإعادة الترتيب",
+  "variableToOrderBy": "المتغير الذي سيتم الترتيب بناءً عليه",
+  "label1": "إعادة ترتيب مستويات العامل بناءً على دالة حسابية مثل المتوسط أو الوسيط أو مجموع القيم في متغير آخر. اختر متغير العامل لإعادة الترتيب، واختر متغيرًا عدديًا لحساب المتوسط أو الوسيط أو المجموع. يتم حساب ذلك لكل مستوى من مستويات متغير العامل. ثم يتم ترتيب المستويات بناءً على هذا الحساب. يمكنك الكتابة فوق المتغيرات الموجودة أو إنشاء متغيرات جديدة عن طريق تحديد بادئة/لاحقة. سيتم إنشاء متغيرات جديدة مع إضافة البادئة/اللاحقة إلى الأسماء الموجودة.",
+  "function": "اختر دالة للترتيب بناءً عليها",
+  "label2": "احفظ النتائج في متغير جديد أو اكتب فوق المتغير الموجود",
+  "rd3": "حدد لاحقة (سيتم إنشاء متغير جديد مع اللاحقة)",
+  "txt3": "أدخل لاحقة",
+  "rd2": "حدد بادئة (سيتم إنشاء متغير جديد مع البادئة)",
+  "txt4": "أدخل بادئة",
+  "rd1": "اكتب فوق المتغير الموجود",
+  "label3": "حدد ترتيب",
+  "Descending": "تنازلي",
+  "Ascending": "تصاعدي",
+  "help": {
+    "title": "إعادة الترتيب بواسطة آخر",
+    "r_help": "help(fct_reorder, package =forcats)",
+    "body": "\n<b>الوصف</b></br>\nإعادة ترتيب مستويات العامل عن طريق الفرز بناءً على متغير آخر. يتم إعادة ترتيب مستويات العامل بناءً على دالة حسابية مثل المتوسط أو الوسيط أو مجموع القيم في متغير آخر. اختر متغير العامل لإعادة الترتيب، واختر متغيرًا عدديًا لحساب المتوسط أو الوسيط أو المجموع. يتم حساب ذلك لكل مستوى من مستويات متغير العامل. ثم يتم ترتيب المستويات بناءً على هذا الحساب. يمكن حفظ النتائج في المتغيرات الموجودة أو يمكنك إنشاء متغيرات جديدة عن طريق تحديد بادئة/لاحقة. سيتم إنشاء متغيرات جديدة مع إضافة البادئة/اللاحقة إلى الأسماء الموجودة. \n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nfct_reorder(.f, .x, .fun = median, ..., .desc = FALSE)\nDataset1$col1 <-forcats::fct_reorder( .f=Dataset1$col1,.x=Dataset1$col2,.fun=median,.desc=TRUE)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\n.f: عامل (أو متجه حرفي).\n</li>\n<li>\n.x, .y: يتم إعادة ترتيب مستويات f بحيث تكون قيم .fun(.x) (لـ fct_reorder()) و fun(.x, .y) (لـ fct_reorder2()) في ترتيب تصاعدي.\n</li>\n<li>\n.fun: دالة ملخص. يجب أن تأخذ متجهًا واحدًا لـ fct_reorder، ومتجهين لـ fct_reorder2، وتعيد قيمة واحدة.\n</li>\n<li>\n...: معلمات أخرى تمرر إلى .fun. إحدى المعلمات الشائعة هي na.rm = TRUE.\n</li>\n<li>\n.desc: ترتيب في ترتيب تنازلي؟ لاحظ أن الافتراضي مختلف بين fct_reorder و fct_reorder2، من أجل مطابقة ترتيب العوامل الافتراضي في الأسطورة.\n</li>\n</ul>\n<b>أمثلة</b></br>\n<code> \nboxplot(Sepal.Width ~ Species, data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width), data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width, .desc = TRUE), data = iris)<br/>\nchks <- subset(ChickWeight, as.integer(Chick) < 10)<br/>\nchks <- transform(chks, Chick = fct_shuffle(Chick))<br/>\nif (require(\"ggplot2\")) {<br/>\nggplot(chks, aes(Time, weight, colour = Chick)) +<br/>\n    geom_point() +<br/>\n    geom_line()<br/>\n# لاحظ أن الخطوط تتطابق مع الترتيب في الأسطورة<br/>\nggplot(chks, aes(Time, weight, colour = fct_reorder2(Chick, Time, weight))) +<br/>\n    geom_point() +<br/>\n    geom_line() +<br/>\n    labs(colour = \"Chick\")<br/>\n}<br/>\n</code>\n<b>الحزمة</b></br>\nforcats</br>\n<b>المساعدة</b></br>\nاكتب السطر أدناه في محرر صيغة BlueSky Statistics R\n</br>\nhelp(fct_reorder, package =forcats)\n"
+  }
+}

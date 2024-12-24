@@ -1,0 +1,26 @@
+{
+  "title": "균일 분포 플롯",
+  "navigation": "균일 분포 플롯",
+  "min": "최소",
+  "max": "최대",
+  "pdenfun": "밀도 함수 플롯",
+  "pdstfun": "분포 함수 플롯",
+  "lblregions": "밀도 함수 아래의 영역을 선택적으로 지정하기 위해",
+  "xvals": "x-값",
+  "quantiles": "분위수",
+  "lblRegFill": "채울 영역 (하나 또는 두 개를 지정하거나 비워 두기)",
+  "lblreg1": "영역 1 :",
+  "lblreg2": "영역 2 :",
+  "lblregfrm": "부터",
+  "lblregto": "까지",
+  "lblregcol": "색상",
+  "lblLegPos": "범례의 위치",
+  "toprt": "오른쪽 상단",
+  "toplt": "왼쪽 상단",
+  "topmid": "상단 중앙",
+  "help": {
+    "title": "균일 분포 플롯",
+    "r_help": "help(qunif, package=stats)",
+    "body": "\n            ​​\n            <b>설명</b>\n            <br/>\n            이 함수들은 최소값에서 최대값까지의 구간에 대한 균일 분포에 대한 정보를 제공합니다. dunif는 밀도를 제공하고, punif는 분포 함수를 제공하며, qunif는 분위수 함수를 제공하고, runif는 무작위 편차를 생성합니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n                dunif(x, min = 0, max = 1, log = FALSE)\n                <br/>\n                punif(q, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qunif(p, min = 0, max = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                runif(n, min = 0, max = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n                <li>x, q : 분위수 벡터.</li>\n                \n                \n                <li>p : 확률 벡터.</li>\n                \n                \n                <li>n : 관측치 수. length(n) > 1인 경우, 길이는 필요한 수로 간주됩니다.</li>\n                \n                \n                <li>min, max : 분포의 하한 및 상한. 유한해야 합니다.</li>\n                \n                \n                <li>log, log.p : 논리적; TRUE인 경우, 확률 p는 log(p)로 제공됩니다.</li>\n                \n                \n                <li>lower.tail : 논리적; TRUE(기본값)인 경우, 확률은 P[X ≤ x]이고, 그렇지 않으면 P[X > x]입니다.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>세부사항</b>\n            <br/>\n            min 또는 max가 지정되지 않으면 기본값인 0과 1을 가정합니다.\n            <br/>\n            균일 분포의 밀도는\n            <br/>\n            <code>f(x) = 1/(max-min)</code>\n            <br/>\n            min ≤ x ≤ max에 대해 성립합니다.\n            <br/>\n            u := min == max의 경우, X == u의 극한 경우가 가정되지만, 이 경우 밀도가 없으며 dunif는 NaN(오류 조건)을 반환합니다.\n            <br/>\n            runif는 max = min이거나 max-min이 min에 비해 작지 않는 한 극단적인 값을 생성하지 않습니다. 특히 기본 인수에 대해서는 생성하지 않습니다.\n            <br/>\n            <br/><b>값</b>\n            <br/>\n            dunif는 밀도를 제공하고, punif는 분포 함수를 제공하며, qunif는 분위수 함수를 제공하고, runif는 무작위 편차를 생성합니다.\n            <br/>\n            결과의 길이는 runif의 n에 의해 결정되며, 다른 함수의 경우 수치 인수의 길이 중 최대값입니다.\n            <br/>\n            n을 제외한 수치 인수는 결과의 길이에 맞게 재활용됩니다. 논리적 인수의 첫 번째 요소만 사용됩니다.\n            <br/>\n            <br/><b>참고</b>\n            <br/>\n            의사 난수 생성기(정밀도 및 주기성 등)의 출력 특성은 다양합니다. R의 난수 생성 알고리즘에 대한 자세한 내용은 .Random.seed를 참조하십시오.            \n"
+  }
+}

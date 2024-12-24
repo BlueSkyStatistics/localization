@@ -1,0 +1,15 @@
+{
+  "title": "تعيين التباينات لمتغيرات العامل",
+  "navigation": "تعيين التباينات",
+  "target": "الوجهة",
+  "label1": "التباينات",
+  "Dummy": "تباينات العلاج (دمي)",
+  "Deviation": "تباينات المجموع (الانحراف)",
+  "Helmert": "تباينات هيلمرت",
+  "Poly": "تباينات متعددة الحدود",
+  "help": {
+    "title": "تعيين التباينات",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>الوصف</b></br>\n            ​قم بتعيين وعرض التباينات المرتبطة بعامل.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>المعلمات</b><br/>\n            <ul>\n            <li>\n            x: كائن R.​\n            </li>\n            <li>\n            value: إما مصفوفة عددية (أو مصفوفة متفرقة أو كثيفة من فئة تمتد dMatrix من حزمة Matrix) التي تعطي أعمدة المعاملات للتباينات في مستويات x، أو اسم دالة (مقتبس) تحسب مثل هذه المصفوفات مثل “contr.treatment”، “contr.sum”، “contr.helmert”، “contr.poly”\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            stats</br>\n            <b>المساعدة</b></br>\n            help(contrasts, package ='stats')       \n            "
+  }
+}

@@ -1,13 +1,13 @@
 {
   "title": "Box-Cox 轉換非正態數據為正態",
   "navigation": "Box-Cox 轉換",
-  "label2": "兩個選項 - 選擇一個非正態變量進行轉換為正態，或選擇整個數據集進行轉換",
-  "selectVariableRad": "選項 1：從數據集中選擇一個非正態變量進行轉換為正態",
-  "variableSelcted": "一個非正態變量進行轉換",
-  "boxcoxColName": "(可選) 指定一個新變量名以存儲轉換後的值。否則將創建 <variable_bcox>",
+  "label2": "兩個選項 - 要麼選擇一個非正態變數進行轉換為正態，要麼選擇整個數據集進行轉換",
+  "selectVariableRad": "選項 1：從數據集中選擇一個非正態變數進行轉換為正態",
+  "variableSelcted": "要轉換的非正態變數",
+  "boxcoxColName": "(可選) 指定一個新變數名稱以存儲轉換後的值。否則將創建 <variable_bcox>",
   "selectDatasetRad": "選項 2：將整個數據集轉換為正態",
   "boxcoxDatasetName": "(可選) 指定一個新數據集名稱以存儲轉換後的值。否則將創建 <dataset_bcox>",
-  "johnsonDatasetName": "(可選) 指定一個新的數據集名稱用於 Johnson（如果選擇了選項 2，則需要）",
+  "johnsonDatasetName": "(可選) 指定一個新的數據集名稱用於 Johnson（如果選擇了上面的選項 2，則必需）",
   "boxcoxChk": "Box-Cox 轉換",
   "johnsonChk": "Johnson 轉換",
   "lambda": "(可選) 用於 Box-Cox 轉換的 Lambda (λ) 值在 (-2 到 2) 之間。如果未指定，將自動識別最佳 Lambda 值",
@@ -15,6 +15,6 @@
   "help": {
     "title": "將非正態數據轉換為正態",
     "r_help": "help(boxcox, package = MASS)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t函數將非正態變量轉換為正態，使用 MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tBox-Cox 轉換不能在負值上執行\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">有關 MASS Box-Cox 的良好概述，請參見 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t與熟悉的 Box-Cox 轉換相關的 Lambda (λ) 值 \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方轉換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 無轉換；返回原始數據 ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根轉換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根轉換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根轉換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然對數轉換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 倒數平方根轉換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 倒數（逆）轉換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 倒數平方轉換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t函數將非正態變數轉換為正態，使用 MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tBox-Cox 轉換不能在負值上執行\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">有關 MASS Box-Cox 的良好概述，請參見 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t與熟悉的 Box-Cox 轉換相關的 Lambda (λ) 值 \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方轉換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 無轉換；返回原始數據 ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根轉換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根轉換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根轉換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然對數轉換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 倒數平方根轉換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 倒數 (逆) 轉換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 倒數平方轉換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

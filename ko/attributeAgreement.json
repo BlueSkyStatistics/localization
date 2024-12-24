@@ -1,0 +1,15 @@
+{
+  "title": "속성 일치 분석, 기본",
+  "navigation": "속성 일치, 기본",
+  "variablePartSelcted": "샘플/부품에 대한 변수를 선택하십시오",
+  "variableOpSelcted": "평가자/운영자에 대한 변수를 선택하십시오",
+  "variableRespSelcted": "속성/응답에 대한 변수를 선택하십시오",
+  "variableRefSelcted": "(선택 사항) 기준/표준 응답에 대한 변수를 선택하십시오",
+  "alpha": "신뢰 구간(알파) 0에서 1 사이",
+  "rowsTobeUsed": "모든 행을 사용하려면 비워 두십시오. 그렇지 않으면 분석에 사용할 행을 지정하십시오(예: 1:25 또는 1,4,5,7:12로 지정)",
+  "help": {
+    "title": "속성 일치 분석",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t속성 일치 분석을 수행하는 함수\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(kappam.fleiss, package = irr)를 사용하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 두 명의 운영자 A와 B가 각각 20개의 관측치를 P 및 F 등급으로 두 번 반복한 샘플 데이터셋 파일 attributemsaAB.xlsx를 사용할 수 있습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t세 명의 운영자 A, B, C가 각각 10개의 관측치를 \"정렬된\" (서열) 등급으로 두 번 반복한 샘플 데이터셋 파일 attributemsaABCordered.RData를 시도할 수도 있습니다. 등급은 동의하지 않음, 다소 동의하지 않음, 중립, 다소 동의, 동의입니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다.\n\t\t\t"
+  }
+}
