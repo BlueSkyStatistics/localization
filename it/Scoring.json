@@ -9,7 +9,7 @@
   "label2": "Salva i valori previsti e le statistiche di supporto.",
   "label3": "Le previsioni e le probabilità previste, dove applicabile, vengono memorizzate nel dataset in fase di valutazione come nuove variabili con il prefisso sottostante",
   "label4": "**Per le variabili dipendenti con 2 livelli, il 2° livello è trattato come il livello positivo. Vedi Dati > Livelli fattoriali > Riordina livelli manualmente per cambiare l'ordine dei livelli fattoriali e ricostruire il modello.",
-  "conflevel": "Salva intervalli di confidenza e previsione per i valori previsti individuali **(Valido solo per modelli lineari (classe lm))",
+  "conflevel": "Salva intervalli di confidenza e previsione per i singoli valori previsti **(Valido solo per modelli lineari (classe lm))",
   "rocCurves": "Mostra curve ROC (**Solo per variabili dipendenti binarie)",
   "roctable": "Mostra tabella ROC (**Solo per variabili dipendenti binarie)",
   "saveRoctableToDataset": "Salva la tabella ROC in un dataset(**Solo per variabili dipendenti binarie)",
