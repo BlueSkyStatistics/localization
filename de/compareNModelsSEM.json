@@ -1,13 +1,13 @@
 {
-  "title": "Vergleiche N SEM-Modelle",
-  "navigation": "Vergleiche N SEM-Modelle",
+  "title": "Vergleichen Sie N SEM-Modelle",
+  "navigation": "Vergleichen Sie N SEM-Modelle",
   "label1": "Vergleicht N SEM-Modelle.",
-  "label2": "Wählen Sie Modelle der folgenden Klassen aus (R-Klasse ist in Klammern unten)",
+  "label2": "Wählen Sie Modelle der folgenden Klassen aus (R-Klasse in Klammern unten)",
   "label3": "Strukturgleichungsmodelle (lavaan)",
   "modelselector1": "Wählen Sie ein oder mehrere Modelle zum Vergleichen aus:",
   "help": {
-    "title": "Vergleiche N SEM-Modelle",
+    "title": "Vergleichen Sie N SEM-Modelle",
     "r_help": "help(lavTestLRT, package='lavaan')",
-    "body": "\n                <b>\nLRT-Test zum Vergleichen (verschachtelter) lavaan-Modelle.</b></br>\n<b>Verwendung</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject:  ein Objekt der Klasse lavaan.\n</li>\n</ul>\n<b>Wert</b><br/>\nEin Objekt der Klasse anova. Bei einem einzelnen Argument gibt es einfach die Teststatistik dieses Modells zurück. Bei einer Sequenz von Objekten testet diese Funktion die Modelle gegeneinander, nachdem die Modelle nach ihren Freiheitsgraden umsortiert wurden.<br/>\n<b>Paket</b></br>\nlavaan</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: help(lavTestLRT,package='lavaan')</br></br>\n<b>Beispiele</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+    "body": "\n                <b>\nLRT-Test zum Vergleichen (verschachtelter) lavaan-Modelle.</b></br>\n<b>Verwendung</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject:  ein Objekt der Klasse lavaan.\n</li>\n</ul>\n<b>Wert</b><br/>\nEin Objekt der Klasse anova. Bei einem einzelnen Argument gibt es einfach die Teststatistik dieses Modells zurück. Bei einer Sequenz von Objekten testet diese Funktion die Modelle gegeneinander, nachdem die Modelle gemäß ihren Freiheitsgraden neu angeordnet wurden.<br/>\n<b>Paket</b></br>\nlavaan</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogüberlagerung oder führen Sie den folgenden Befehl im R-Syntax-Editor aus: help(lavTestLRT,package='lavaan')</br></br>\n<b>Beispiele</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
   }
 }

@@ -1,16 +1,16 @@
 {
   "title": "調整隨機森林模型",
   "navigation": "調整",
-  "dependentvar": "因變量",
-  "independentvars": "自變量",
+  "dependentvar": "依賴變數",
+  "independentvars": "自變數",
   "ntreetry": "嘗試的樹木數量",
-  "stepfactor": "步長因子",
-  "improve": "改進",
+  "stepfactor": "步進因子",
+  "improve": "改善",
   "trace": "追蹤",
   "plot": "繪圖",
   "help": {
     "title": "調整隨機森林模型",
     "r_help": "help(tuneRF,package='randomForest')",
-    "body": "\n                <b>描述</b></br>\n從 mtry 的預設值開始，搜尋 randomForest 的 mtry 的最佳值（相對於袋外誤差估計）。 \n<br/>\n<b>用法</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx : 預測變數的矩陣或資料框\n</li>\n<li>\ny : 回應向量（分類的因子，回歸的數值）\n</li>\n<li>\nntreeTry : 調整步驟中使用的樹木數量。\n</li>\n<li>\nstepFactor : 在每次迭代中，mtry 由此值增加（或減少）。\n</li>\n<li>\nimprove : OOB 錯誤的（相對）改進必須達到此值，搜索才能繼續\n</li>\n<li>\ntrace : 是否打印搜索進度。\n</li>\n<li>\nplot : 是否將 OOB 錯誤繪製為 mtry 的函數。\n</li>\n<li>\n... : 傳遞給 randomForest 的選項\n</li>\n</ul>\n<b>值</b></br>\n返回一個矩陣，其第一列包含搜索的 mtry 值，第二列包含相應的 OOB 錯誤。</br>\n<b>包</b></br>\nrandomForest​;BlueSky</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(tuneRF,package='randomForest')\n"
+    "body": "\n                <b>描述</b></br>\n從 mtry 的預設值開始，尋找隨機森林的 mtry 的最佳值（相對於袋外錯誤估計）。\n<br/>\n<b>用法</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx : 預測變數的矩陣或數據框\n</li>\n<li>\ny : 響應向量（分類的因子，回歸的數值）\n</li>\n<li>\nntreeTry : 在調整步驟中使用的樹木數量。\n</li>\n<li>\nstepFactor : 在每次迭代中，mtry 會按此值增加（或減少）。\n</li>\n<li>\nimprove : OOB 錯誤的（相對）改善必須達到這個程度才能繼續搜索\n</li>\n<li>\ntrace : 是否打印搜索的進度。\n</li>\n<li>\nplot : 是否將 OOB 錯誤作為 mtry 的函數繪製。\n</li>\n<li>\n... : 要提供給 randomForest 的選項\n</li>\n</ul>\n<b>返回值</b></br>\n返回一個矩陣，其第一列包含搜索的 mtry 值，第二列包含相應的 OOB 錯誤。</br>\n<b>包</b></br>\nrandomForest​;BlueSky</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋的右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(tuneRF,package='randomForest')\n"
   }
 }

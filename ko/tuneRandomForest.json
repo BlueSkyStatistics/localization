@@ -1,0 +1,16 @@
+{
+  "title": "랜덤 포레스트 모델 조정",
+  "navigation": "조정",
+  "dependentvar": "종속 변수",
+  "independentvars": "독립 변수(들)",
+  "ntreetry": "시도할 나무 수",
+  "stepfactor": "단계 계수",
+  "improve": "개선",
+  "trace": "추적",
+  "plot": "플롯",
+  "help": {
+    "title": "랜덤 포레스트 모델 조정",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>설명</b></br>\n기본 mtry 값을 시작으로, randomForest의 OOB 오류 추정치에 대한 최적의 mtry 값을 검색합니다. \n<br/>\n<b>사용법</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx : 예측 변수의 행렬 또는 데이터 프레임\n</li>\n<li>\ny : 응답 벡터 (분류의 경우 팩터, 회귀의 경우 숫자)\n</li>\n<li>\nntreeTry : 조정 단계에서 사용되는 나무의 수.\n</li>\n<li>\nstepFactor : 각 반복에서 mtry가 이 값만큼 증가(또는 감소)합니다.\n</li>\n<li>\nimprove : OOB 오류의 (상대적) 개선이 검색을 계속하기 위해 이만큼 이루어져야 합니다.\n</li>\n<li>\ntrace : 검색 진행 상황을 인쇄할지 여부.\n</li>\n<li>\nplot : mtry의 함수로 OOB 오류를 플롯할지 여부.\n</li>\n<li>\n... : randomForest에 제공될 옵션\n</li>\n</ul>\n<b>값</b></br>\n검색된 mtry 값이 포함된 첫 번째 열과 해당 OOB 오류가 포함된 두 번째 열을 가진 행렬을 반환합니다.</br>\n<b>패키지</b></br>\nrandomForest​;BlueSky</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오: help(tuneRF,package='randomForest')\n"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Unisci Dataset",
+  "join": "Mappatura di unione",
+  "navigation": "Unisci",
+  "description": "Unire i dataset ti aiuterà a unire 2 dataset insieme. Per impostazione predefinita, questa finestra di dialogo cercherà nomi di variabili comuni all'interno dei 2 dataset e unirà l'intero insieme di variabili comuni.",
+  "out": "Inserisci il nome del dataset unito",
+  "in1": "Seleziona il 1° dataset",
+  "in2": "Seleziona il 2° dataset",
+  "label1": "Opzioni di Unione",
+  "leftjoin": "Unione Sinistra (Mantieni solo le righe nel primo (sinistro) dataset)",
+  "rightjoin": "Unione Destra (Mantieni solo le righe nel secondo (destro) dataset)",
+  "innerjoin": "Unione Interna (Mantieni le righe comuni a entrambi i dataset)",
+  "fulljoin": "Unione Completa (Mantieni tutte le righe in entrambi i dataset)",
+  "semijoin": "Unione Semantica (Mantieni tutte le righe nel primo (sinistro) dataset con una corrispondenza nel secondo (destro) dataset)",
+  "antijoin": "Unione Antisettica (Mantieni tutte le righe nel primo (sinistro) dataset senza una corrispondenza nel secondo (destro) dataset)",
+  "label2": "Sovrascrivi l'unione eseguita su tutti i nomi di colonne comuni",
+  "by": "Per sovrascrivere l'impostazione predefinita dell'unione eseguita su tutti i nomi di colonne comuni, inserisci un sottoinsieme dei nomi di colonne comuni qui sotto separati da una virgola, ad esempio paese,regione. L'unione sarà eseguita solo sui nomi di colonne comuni inseriti. Formatta questo elenco come valori separati da una virgola, ad esempio A,B,C",
+  "label3": "Se i nomi delle colonne su cui viene eseguita l'unione sono diversi in ciascun dataset",
+  "byDiffNames": "Inserisci i nomi delle colonne corrispondenti separati da una virgola, ad esempio, 'C'='D', 'B'='A'. Si prega di utilizzare le virgolette singole ( ' ) qui.",
+  "label4": "Se ci sono nomi di colonne comuni in entrambi i dataset",
+  "suffix": "Per impostazione predefinita, .x e .y saranno utilizzati come suffissi per le variabili comuni. Se desideri cambiarli, inseriscili qui separati da una virgola, ad esempio 1,2. Nota che qualsiasi . sarà sostituito da un _ nel dataset di output",
+  "advOptions": "Opzioni Avanzate",
+  "help": {
+    "title": "Unisci Dataset",
+    "r_help": "help(join, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\n            Unire i dataset ti aiuterà a unire 2 dataset insieme.<br/>Devi specificare una o più variabili nel dataset attivo e nel dataset di destinazione selezionato su cui desideri eseguire l'unione.<br/>\n            I risultati saranno salvati in un nuovo dataset.<br/>\n            inner_join: restituisce tutte le righe da x dove ci sono valori corrispondenti in y, e tutte le colonne da x e y. Se ci sono più corrispondenze tra x e y, tutte le combinazioni delle corrispondenze vengono restituite.</br>\n            left_join: restituisce tutte le righe da x, e tutte le colonne da x e y. Le righe in x senza corrispondenza in y avranno valori NA nelle nuove colonne. Se ci sono più corrispondenze tra x e y, tutte le combinazioni delle corrispondenze vengono restituite.</br>\n            right_join: restituisce tutte le righe da y, e tutte le colonne da x e y. Le righe in y senza corrispondenza in x avranno valori NA nelle nuove colonne. Se ci sono più corrispondenze tra x e y, tutte le combinazioni delle corrispondenze vengono restituite.</br>\n            full_join: restituisce tutte le righe e tutte le colonne da entrambi x e y. Dove non ci sono valori corrispondenti, restituisce NA per quello mancante.</br>\n            semi_join: Mantieni tutte le righe nel primo dataset con una corrispondenza nel secondo dataset</br>\n            anti_join: Mantieni tutte le righe nel primo dataset senza una corrispondenza nel secondo dataset)</br>\n            <b>Utilizzo</b>\n            <br/>\n            <code> \n            left_join(x, y, by = c(NULL), suffix = c(\".x\", \".y\"), ...)\n            right_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            inner_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            full_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            semi_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            anti_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            </code> <br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            x: dataset da unire\n            </li>\n            <li>\n            y: dataset da unire\n            </li>\n            <li>\n            by: un vettore di caratteri di variabili su cui unire. Se NULL, il predefinito, *_join() eseguirà un'unione naturale, utilizzando tutte le variabili con nomi comuni tra le due tabelle. Un messaggio elenca le variabili in modo che tu possa controllare che siano corrette (per sopprimere il messaggio, elenca esplicitamente le variabili che desideri unire). Per unire variabili diverse su x e y usa un vettore nominato. Ad esempio, by = c(\"a\" = \"b\") abbinerà x.a a y.b.\n            </li>\n            <li>\n            suffix: Se ci sono variabili duplicate non unite in x e y, questi suffissi saranno aggiunti all'output per disambiguarli. Dovrebbe essere un vettore di caratteri di lunghezza 2.\n            </li>\n            </ul>\n            <b>Valore</b><br/>\n            Un tibble.<br/>\n            <b>Pacchetto</b></br>\n            dplyr</br>\n            <b>Aiuto</b></br>\n            Per aiuto dettagliato clicca sull'icona R in alto a destra di questa finestra di dialogo o esegui il seguente comando help(left_join, package=\"dplyr\") creando un blocco di codice R cliccando + nella finestra di output\n"
+  }
+}

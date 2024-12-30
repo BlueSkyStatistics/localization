@@ -1,0 +1,16 @@
+{
+  "title": "Lojistik, Koşullu",
+  "navigation": "Lojistik, Koşullu",
+  "modelname": "Model adını girin",
+  "outcomevarlabel": "Bağımlı Değişken (sayısal; 1 = olay, 0 = olay yok)",
+  "stratavarlabel": "Strata",
+  "methodgrplabel": "Tahmin Yöntemi",
+  "exactlabel": "Tam",
+  "efronlabel": "Efron",
+  "breslowlabel": "Breslow",
+  "help": {
+    "title": "Lojistik, Koşullu",
+    "r_help": "help(clogit, package = 'survival')",
+    "body": "\nBu, standart lojistik regresyona benzer bir koşullu lojistik regresyon modeli uygular, ancak bir stratifikasyon değişkenini içerir. Bu \nmodelin yaygın uygulamaları eşleştirilmiş vaka-kontrol, eşleştirilmiş kohort ve iç içe geçmiş vaka-kontrol çalışmalarıdır. Çıktı, analizde kullanılan strata sayısını, strata içindeki sonuç sıklığı desenlerini, çeşitli model özet istatistiklerini, parametre tahminlerini ve oran oranlarını içerir.\n<br/><br/>\n<b>Bağımlı Değişken:</b> Bu, her bir konu için olayı gösteren değişkendir; 1 bir olayı, 0 ise bir olayın olmadığını belirtir. Bu değişken sayısal olmalıdır.\n<br/><br/>\n<b>Formül Oluşturucu:</b> İstenilen model terimlerini belirtin.\n<br/><br/>\n<b>Strata:</b> Stratifikasyon değişkenini belirtin. Sayısal, karakter veya nominal/ordinal faktör olabilir.\n<br/><br/>\n<b>Tahmin Yöntemi:</b> Model tahmin yöntemini belirtin. \"Tam\" yöntemi varsayılandır. Strata içinde çok fazla olay seçme yolu yoksa, bu seçenek tercih edilmelidir. Tahmin bazı zaman alabilir veya bazı strata içinde birçok kombinasyon oluşursa hatalara yol açabilir; örneğin 500 denekten 100 olay. Efron ve Breslow yaklaşıkları bu durumlarda yeterlidir, Efron tercih edilir. Ayrıntılar için R yardımındaki referanslara bakın.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> survival, broom, arsenal, dplyr\n\t\t"
+  }
+}

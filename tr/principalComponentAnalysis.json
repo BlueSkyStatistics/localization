@@ -1,0 +1,18 @@
+{
+  "title": "Temel Bileşen Analizi",
+  "navigation": "Temel Bileşenler",
+  "lab40": "NOT: Korelasyon veya kovaryans matrisi, seçilen değişkenlerden otomatik olarak oluşturulur",
+  "destination": "Değişkenleri seçin",
+  "label1": "Bir korelasyon veya kovaryans matrisini seçin",
+  "rd1": "Korelasyon matrisi",
+  "rd2": "Kovaryans matrisi",
+  "addToDataset": "Temel bileşenleri veri setine ekleyin. Değişken adları için bir ön ek ve eklemek için bileşen sayısını belirtmelisiniz",
+  "variablePrefix": "Veri setine eklenen bileşenler için bir ön ek girin",
+  "noOfComponents": "Veri setine eklemek için bileşen sayısını girin",
+  "screeplot": "Screeplot",
+  "help": {
+    "title": "Temel Bileşen Analizi",
+    "r_help": "help(princomp, package ='stats')",
+    "body": "\n<b>Açıklama</b></br>\nVerilen sayısal veri matrisinde temel bileşen analizi gerçekleştirir ve sonuçları princomp sınıfında bir nesne olarak döndürür. İçsel olarak stats paketindeki princomp'ı çağırır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyPCARes <-BSkyPrinCompAnalysis(vars=c(),cor =TRUE, componentsToRetain =0, generateScreeplot=FALSE,prefixForComponents =\"\",dataset=\"\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: Bileşenleri çıkarmak için bir karakter vektöründeki değişkenler\n</li>\n<li>\ncor: Hesaplamanın bir korelasyon veya kovaryans matrisini kullanıp kullanmayacağını belirten bir boolean\n</li>\n<li>\ncomponentsToRetain: Veri setinde tutmak için bileşen sayısını belirten bir sayı. Her bileşen çağrıldığında veri setinde yeni bir değişken oluşturulur\n</li>\n<li>\n​generateScreeplot: Bir screeplot oluşturur\n</li>\n<li>\nprefixForComponents: Bileşenleri bir veri setine kaydederken kullanılacak ön ek\n</li>\n<li>\ndataset: Bir dize olarak veri setinin adı\n</li>\n</ul>\n<b>Değer</b></br>\nprincomp, aşağıdaki bileşenleri içeren \"princomp\" sınıfında bir liste döndürür</br>\nsdev: temel bileşenlerin standart sapmaları.</br>\nloadings: değişken yüklemeleri matrisidir (yani, sütunları özvektörleri içeren bir matris). Bu \"loadings\" sınıfındadır: yazdırma yöntemi için loadings'e bakın.</br>\ncenter: çıkarılan ortalamalar.</br>\nscale: Her değişkene uygulanan ölçeklendirmeler.</br>\nn.obs: gözlem sayısı.</br>\nscores: scores = TRUE ise, sağlanan verilerin temel bileşenler üzerindeki puanları. Bunlar yalnızca x sağlandığında ve eğer covmat da sağlandıysa, bir kovaryans listesi ise null değildir. Formül yöntemi için, na.action tarafından atlanan değerlerin işlenmesi için napredict() uygulanır.</br>\ncall: eşleşen çağrı.</br>\nna.action: İlgili ise.</br>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nhelp(princomp, package ='stats')\n"
+  }
+}

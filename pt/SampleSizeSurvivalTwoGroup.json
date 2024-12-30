@@ -1,0 +1,20 @@
+{
+  "title": "Tamanho da Amostra, Teste de Sobrevivência em Dois Grupos",
+  "navigation": "Sobrevivência em Dois Grupos",
+  "howtouse": "Para calcular o tamanho da amostra: especifique o poder\nPara calcular o poder: especifique o tamanho da amostra",
+  "n": "Tamanho da Amostra",
+  "power": "Poder (0-1)",
+  "propgrp1": "Proporção da Amostra no Grupo 1 (0-1)",
+  "propevent": "Proporção com o Evento (0-1)",
+  "hr": "Razão de Risco, Grupo 1 vs Grupo 2",
+  "rsquared": "R-quadrado entre o grupo e outras covariáveis (0-1); insira 0 para teste não ajustado",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Sobrevivência em Dois Grupos",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste de sobrevivência de duas amostras. Ele calcula o tamanho da amostra ou poder, quando o usuário especifica o outro, dado uma razão de risco a ser detectada.\nOs cálculos assumem um modelo de riscos proporcionais de Cox.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número total de sujeitos\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Proporção da Amostra no Grupo 1:</b> Especifique a proporção da amostra total que está no grupo 1. A proporção da amostra no grupo 2 será um menos essa quantidade.\n<br/><br/>\n<b>Razão de Risco, Grupo 1 vs Grupo 2:</b> Especifique a razão de risco desejada a ser detectada para o grupo 1 em relação ao grupo 2\n<br/><br/>\n<b>Proporção com o Evento:</b> Especifique a proporção esperada da amostra com o evento (ou um menos a proporção de censura). Se você especificar uma probabilidade de 1, assume que não há censura.\n<br/><br/>\n<b>R-quadrado entre o grupo e outras covariáveis; insira 0 para teste não ajustado:</b> Especifique o valor de r-quadrado (correlação múltipla ao quadrado), entre a variável de agrupamento e \ntodas as outras covariáveis no modelo de Cox. Um valor de 0 corresponde a um teste não ajustado sem outras covariáveis.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\nIsso usa as funções ssizeEpiCont.default e powerEpiCont.default no pacote powerSurvEpi. Veja o menu de três pontos>Ajuda>Ajuda da Função R para mais informações.\n<br/><br/>\n<b>Pacotes R Necessários:</b> powerSurvEpi\n\t\t\t"
+  }
+}

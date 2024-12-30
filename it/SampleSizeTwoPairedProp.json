@@ -1,0 +1,18 @@
+{
+  "title": "Dimensione del campione, Test di due proporzioni abbinate",
+  "navigation": "Due proporzioni abbinate",
+  "howtouse": "Per calcolare la dimensione del campione (numero di coppie): specificare la potenza\nPer calcolare la potenza: specificare la dimensione del campione (numero di coppie)",
+  "n": "Dimensione del campione (numero di coppie)",
+  "power": "Potenza (0-1)",
+  "pdisc": "Proporzione di coppie discordanti (PD) (0-1)",
+  "pdiff": "Differenza nelle proporzioni, deve essere compresa tra -PD e PD",
+  "siglevel": "Livello di significatività (0-1)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Due lati",
+  "onesided": "Un lato",
+  "help": {
+    "title": "Dimensione del campione, Test di due proporzioni abbinate",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test abbinato di proporzioni utilizzando il Test di McNemar. Calcola la dimensione del campione (numero di coppie) o la potenza quando l'utente \nspecifica l'altro. I calcoli utilizzano un'approssimazione normale condizionata sulla proporzione di coppie discordanti. Vedi Connor R. J. 1987. Dimensione del campione per testare \ndifferenze nelle proporzioni per il design a campione abbinato. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Dimensione del campione (numero di coppie):</b> Specificare la dimensione del campione nello studio. Questo è il numero di soggetti che forniranno valori di esito binari in entrambi i punti temporali\nin un design pre vs post o il numero di coppie in un design a soggetti abbinati (ad es. caso-controllo abbinato).\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera.\n<br/><br/>\n<b>Proporzione di coppie discordanti:</b> Specificare la proporzione attesa di coppie che non saranno d'accordo, ad es. risposte 'sì'/'no' o 'no'/'sì', su un totale di coppie\n<br/><br/>\n<b>Differenza nelle proporzioni:</b> Specificare la differenza nelle proporzioni di esito (cioè proporzione che sono 'sì') che si desidera rilevare. Ad esempio, in uno studio caso-controllo abbinato\nquesto è la differenza tra la proporzione di casi che sono 'sì' e la proporzione di controlli che sono 'sì'.\n<br/><br/>\n<b>Livello di significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Ipotesi alternativa:</b> Specificare se il test è a due lati o a un lato\n<br/><br/>\n<b>Pacchetti R richiesti:</b> stats\n\t\t\t"
+  }
+}

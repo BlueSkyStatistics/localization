@@ -1,0 +1,12 @@
+{
+  "title": "Öğe ve Test Bilgisi",
+  "navigation": "Öğe ve Test Bilgisi",
+  "label1": "Bir model seçin (Rm sınıfı, eRm destekli modeller)",
+  "label1b": "Eğer mevcut model yoksa, önce Model Uygulama -> IRT -> Basit Rasch Modeli'ni seçerek bir model oluşturmalısınız ve CML tahminini seçmelisiniz",
+  "modelselector1": "Bir model seçin",
+  "help": {
+    "title": "'eRm' nesneleri için Grafik Bilgisi",
+    "r_help": "help(plotINFO, package='eRm')",
+    "body": "\n                <b>Açıklama</b></br>\n                Samejima (1969) tarafından bireysel veya toplam öğe bilgisini hesaplar ve çizer\n                <br/><br/>\n                <b>Kullanım</b>\n                <br/>\n                <code>\n                plotINFO(ermobject, type = \"both\", theta = seq(-6, 6, length.out = 1001L), ...)\n                </code>\n                <br/><br/>\n                <b>Argümanlar</b>\n                <br/>  \n                object: eRm sınıfı nesnesi\n                <br/>\n                type:  Çizilecek bilgi türünü belirten bir dize. Şu anda \"öğe\", \"test\" ve \"her ikisi\" (varsayılan) desteklenmektedir.\n                <br/>\n                theta:  Gizli özellik üzerindeki destekleyici veya örnekleme noktaları         \n                <br/><br/>\n                <b>Paketler</b>\n                <br/>\n                eRm\n                <br/><br/>\n                <b>Yardım</b>\n                <br/>\n                help(plotINFO, package='eRm')\n                "
+  }
+}

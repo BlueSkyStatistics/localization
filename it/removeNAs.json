@@ -1,0 +1,16 @@
+{
+  "title": "Rimuovi NAs",
+  "navigation": "Rimuovi NAs",
+  "label0": "Crea un nuovo dataset/Sovrascrive il dataset esistente rimuovendo le righe con uno o più valori mancanti. Seleziona le variabili da analizzare per i valori mancanti. Tutte le righe contenenti valori mancanti nelle variabili selezionate verranno rimosse. Per analizzare l'intero dataset, seleziona tutte le variabili.",
+  "label1": "Opzioni",
+  "New": "Salva i risultati in un nuovo dataset",
+  "newdatasetname": "Inserisci un nome per il dataset",
+  "Existing": "Sovrascrivi il dataset esistente",
+  "subsetvars": "Seleziona le variabili (una o più) da includere nel dataset",
+  "subsetexpression": "Inserisci i criteri di sottogruppo. I criteri di sottogruppo vengono applicati a ciascuna riga del dataset. Esempio 1: !is.na(var1) & is.na(var2). Esempio 2: var1>30 & var2=='maschio'. Esempio 3: (var1 !=10 & var2>20) | var3==40. Esempio 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". Esempio 5: substr(var1,2,4) ==\"abc\"",
+  "help": {
+    "title": "Rimuovi NAs",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>Descrizione</b></br>\nRimuovi valori mancanti/NA dal dataset/dataframe\nCrea un nuovo/Sovrascrive il dataset esistente rimuovendo le righe con uno o più valori mancanti per i nomi delle colonne/variabili selezionate\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\n​object: un oggetto R.​\n</li>\n</ul>\n<b>Pacchetto</b></br>\ndata.table</br>\n<b>Aiuto</b></br>\nhelp(na.omit)\n    "
+  }
+}

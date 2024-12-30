@@ -1,0 +1,15 @@
+{
+  "title": "خريطة العالم",
+  "navigation": "خريطة العالم",
+  "region": "متغير بأسماء الدول:",
+  "value": "متغير بالقيم لرسم الخريطة:",
+  "colors": "أدخل عدد الألوان",
+  "zoomByStates": "أدخل الدول التي تريد التكبير فيها، على سبيل المثال الولايات المتحدة الأمريكية، كندا، المكسيك",
+  "specify_a_title": "أدخل عنوانًا",
+  "legend": "أسطورة:",
+  "help": {
+    "title": "خريطة العالم",
+    "r_help": "help(country_choropleth, package='choroplethr')",
+    "body": "\n            <b>الوصف</b></br>\n            يرسم خريطة عالمية ويسمح لك بالتكبير في 1 أو أكثر من الدول\n             <br/>\n             <b>الاستخدام</b>\n             <br/>\n             <code> \n            country_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n             </code> <br/>\n             <b>المتغيرات</b><br/>\n             <ul>\n             <li>\n             BSkyDfForMap: إطار بيانات يحتوي على عمود يسمى \"region\" وعمود يسمى \"value\". يجب أن تتطابق العناصر في عمود \"region\" تمامًا مع كيفية تسمية المناطق في عمود \"region\" في ?country.map. قم بتشغيل الكود أدناه في القسم الآخر لرؤية المتغيرات في country.map\n             </li>\n             <li>\n             العنوان: عنوان اختياري للخريطة.\n             </li>\n             <li>\n             الأسطورة: اسم اختياري للأسطورة.\n             </li>\n             <li>\n             num_colors: عدد الألوان على الخريطة. ستستخدم القيمة 1 مقياسًا مستمرًا. ستستخدم القيمة في [2، 9] هذا العدد من الألوان.\n             </li>\n             <li>\n             zoom: متجه اختياري للدول للتكبير عليها. يجب أن تتطابق عناصر هذا المتجه تمامًا مع أسماء الدول كما تظهر في عمود \"region\" من ?country.regions\n             </li>\n             </ul>\n             <b>الحزمة</b></br>\n             choroplethr;choroplethrMaps;</br>\n             <b>المساعدة</b></br>\n             help(country_choropleth, package='choroplethr')</br>\n             <b>أخرى</b></br>\n             <code> \n             # قم بتشغيل الكود أدناه للوصول إلى مجموعة بيانات state.map<br/>\n             library(choroplethr)<br/>\n             library(choroplethrMaps)<br/>\n             data(country.map)<br/>\n             country.map<br/>\n             </code> <br/>\n    "
+  }
+}

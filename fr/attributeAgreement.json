@@ -1,7 +1,7 @@
 {
-  "title": "Analyse de l'accord d'attribut, de base",
-  "navigation": "Accord d'attribut, de base",
-  "variablePartSelcted": "Sélectionnez la variable pour l'échantillon/pièce",
+  "title": "Analyse de l'accord d'attribut, Basique",
+  "navigation": "Accord d'attribut, Basique",
+  "variablePartSelcted": "Sélectionnez la variable pour l'échantillon/partie",
   "variableOpSelcted": "Sélectionnez la variable pour l'évaluateur/opérateur",
   "variableRespSelcted": "Sélectionnez la variable pour l'attribut/réponse",
   "variableRefSelcted": "(Optionnel) Sélectionnez la variable pour la réponse de référence/standard",
@@ -10,6 +10,6 @@
   "help": {
     "title": "Analyse de l'accord d'attribut",
     "r_help": "help(kappam.fleiss, package = irr)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer une analyse de l'accord d'attribut\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser les fichiers de jeu de données d'exemple attributemsaAB.xlsx pour \n\t\t\t\tdeux opérateurs, A et B, chacun avec 20 observations répétées deux fois avec des évaluations P et F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVous pouvez également essayer le fichier de jeu de données d'exemple attributemsaABCordered.RData avec trois opérateurs, A, B, C, chacun avec 10 observations répétées deux fois avec des évaluations \"ordonnées\" (ordinales) \n\t\t\t\tcomme Pas d'accord, Un peu pas d'accord, Neutre, Un peu d'accord et D'accord. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOuvrez les fichiers dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer une analyse de l'accord d'attribut\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser les fichiers de jeu de données d'exemple attributemsaAB.xlsx pour \n\t\t\t\tdeux opérateurs, A et B, chacun avec 20 observations répétées deux fois avec des évaluations P et F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVous pouvez également essayer le fichier de jeu de données d'exemple attributemsaABCordered.RData avec trois opérateurs, A, B, C, chacun avec 10 observations répétées deux fois avec des évaluations \"ordonnées\" (ordinales) \n\t\t\t\tdisant Désaccord, Désaccord partiel, Neutre, Accord partiel, et Accord. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOuvrez les fichiers dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t"
   }
 }

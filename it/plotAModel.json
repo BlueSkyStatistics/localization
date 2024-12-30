@@ -1,0 +1,10 @@
+{
+  "title": "Traccia un Modello",
+  "navigation": "Traccia un Modello",
+  "modelselector1": "Seleziona un modello di una delle seguenti classi (classe tra parentesi) Modello lineare (lm), Modelli lineari generalizzati (glm)",
+  "help": {
+    "title": "Traccia un Modello",
+    "r_help": "help(plot, package ='graphics')",
+    "body": "\n                <b>Descrizione</b></br>\nFunzione generica per il tracciamento di oggetti R. Per ulteriori dettagli sugli argomenti dei parametri grafici, vedere par.\nPer semplici grafici a dispersione, verrà utilizzato plot.default. Tuttavia, ci sono metodi di tracciamento per molti diversi oggetti R, comprese funzioni, data.frames, oggetti di densità, ecc. Usa methods(plot) e la documentazione per questi.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nplot(object)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nobject: qualsiasi oggetto R con un metodo di tracciamento può essere fornito.\n</li>\n</ul>\n<b>Pacchetto</b></br>\ngraphics</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(plot, package ='graphics')\n"
+  }
+}

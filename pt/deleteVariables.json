@@ -1,0 +1,10 @@
+{
+  "title": "Excluir Variáveis",
+  "navigation": "Excluir",
+  "trg": "Variáveis a serem excluídas",
+  "help": {
+    "title": "Remover NAs",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>Descrição</b></br>\nRemover valores ausentes/NA do conjunto de dados/dataframe\nCria um novo/substitui o conjunto de dados existente removendo linhas com um ou mais valores ausentes para os nomes das colunas/variáveis selecionadas\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n​object: um objeto R.​\n</li>\n</ul>\n<b>Pacote</b></br>\ndata.table</br>\n<b>Ajuda</b></br>\nhelp(na.omit)\n"
+  }
+}

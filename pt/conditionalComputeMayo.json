@@ -1,0 +1,12 @@
+{
+  "title": "Cálculo Condicional, múltiplo",
+  "navigation": "Cálculo Condicional, múltiplo",
+  "newvar": "Nome da Variável Nova/Existente (sem espaços/caracteres especiais):",
+  "label2": "Construtor de Expressões: Construa a expressão desejada, por exemplo, var1+var2, as.numeric(var2), substr(var4,2,4)...",
+  "formula": "Construa um comando de cálculo",
+  "help": {
+    "title": "Cálculo Condicional, múltiplo",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Descrição</b></br>\nComputa uma expressão e armazena o resultado em uma variável/coluna de um dataframe/conjunto de dados</br>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expressão)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nDatasetX: nome do dataframe/conjunto de dados.​\n</li>\n<li>\nvar1: A nova/coluna existente no conjunto de dados/dataframe que precisa ser calculada\n</li>\n<li>\nExpressão: Uma expressão na forma variável1 = variável2 + variável3\n</li>\n</ul>\n<b>Detalhes</b></br>\nAvalia a expressão e armazena o resultado na variável/coluna de um dataframe/conjunto de dados</br>\n<b>Pacote</b></br>\ndplyr</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando help(mutate, package ='dplyr') na janela do editor R\n            "
+  }
+}

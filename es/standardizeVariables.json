@@ -1,18 +1,18 @@
 {
-  "title": "Estandarizar variable(s)",
+  "title": "Estandarizar Variable(s)",
   "navigation": "Estandarizar",
   "label1": "Los valores estandarizados se guardarán en nuevas variables con el prefijo/sufijo especificado.",
-  "dest": "Seleccione la(s) variable(s) a estandarizar",
-  "label2": "Seleccione un prefijo o sufijo",
+  "dest": "Selecciona la(s) variable(s) a estandarizar",
+  "label2": "Selecciona un prefijo o sufijo",
   "suffix": "Sufijo",
   "prefix": "Prefijo",
-  "txt1": "Ingrese un prefijo/sufijo",
+  "txt1": "Ingresa un prefijo/sufijo",
   "label3": "Centrar y/o escalar",
   "Center": "Centrar",
   "Scale": "Escalar",
   "help": {
-    "title": "Estandarizar variable(s)",
+    "title": "Estandarizar Variable(s)",
     "r_help": "",
-    "body": "\n<b>Descripción</b></br>\nEstandariza variables (puntuaciones z). Los valores estandarizados se almacenan en nuevas variables con el prefijo o sufijo de las variables originales. Se proporciona la opción de centrar y/o escalar.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: Una o más variables a estandarizar. Solo se admiten variables numéricas (no factores).\n</li>\n<li>\ncenter: Si center es TRUE, el centrado se realiza restando las medias de las columnas (omitindo NAs) de x de sus columnas correspondientes, y si center es FALSE, no se realiza centrado.\n</li>\n<li>\nscale: Si scale es TRUE, la escala se realiza dividiendo las columnas (centradas) de x por sus desviaciones estándar si center es TRUE, y por la raíz cuadrada media de lo contrario. Si scale es FALSE, no se realiza escalado.\n</li>\n<li>\nstingToPrefixOrSuffix: Una cadena de caracteres que especifica el prefijo o sufijo a utilizar para las nuevas variables estandarizadas (es decir, nuevas columnas en el conjunto de datos).\n</li>\n<li>\nprefixOrSuffix: especifique si desea un prefijo o un sufijo\n</li>\n<li>\ndatasetname: El nombre del conjunto de datos/dataframe\n</li>\n</ul>\nNota: No convertiremos de numérico a factor. Cuando un numérico es recodificado, permanecerá numérico, cuando una variable de factor es recodificada, permanecerá un factor.</br>\n<b>Paquete</b></br>\nBlueSky</br>\n"
+    "body": "\n<b>Descripción</b></br>\nEstandariza variables (puntajes z). Los valores estandarizados se almacenan en nuevas variables con el prefijo o sufijo de las variables originales. Se proporciona la opción de centrar y/o escalar.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: Una o más variables a estandarizar. Solo se admiten variables numéricas (no factores).\n</li>\n<li>\ncenter: Si center es TRUE, entonces el centrado se realiza restando las medias de columna (omitindo NAs) de x de sus columnas correspondientes, y si center es FALSE, no se realiza centrado.\n</li>\n<li>\nscale: Si scale es TRUE, entonces la escala se realiza dividiendo las columnas (centradas) de x por sus desviaciones estándar si center es TRUE, y la raíz cuadrada media de lo contrario. Si scale es FALSE, no se realiza escalado.\n</li>\n<li>\nstingToPrefixOrSuffix: Una cadena de caracteres que especifica el prefijo o sufijo a usar para las nuevas variables estandarizadas (es decir, nuevas columnas en el conjunto de datos).\n</li>\n<li>\nprefixOrSuffix: especifica si deseas un prefijo o un sufijo\n</li>\n<li>\ndatasetname: El nombre del conjunto de datos/dataframe\n</li>\n</ul>\nNota: No convertiremos de numérico a factor. Cuando un numérico es recodificado, seguirá siendo numérico; cuando una variable de factor es recodificada, seguirá siendo un factor.</br>\n<b>Paquete</b></br>\nBlueSky</br>\n"
   }
 }

@@ -1,15 +1,15 @@
 {
   "title": "Données Agrégées",
   "navigation": "Agrégat",
-  "description": "Agrège une ou plusieurs variables numériques (échelle) par une ou plusieurs variables factorielles et crée un nouvel ensemble de données agrégées. Pour les variables numériques, nous calculons ce qui suit :\n        moyenne, médiane, somme, sd, n_distinct, max, min et var. \n        Il calcule également les comptes dans l'ensemble de données agrégé.",
-  "label1": "Options d'Agrégation",
+  "description": "Agrège une ou plusieurs variables numériques (échelle) par une ou plusieurs variables factorielles et crée un nouvel ensemble de données agrégées. Pour les variables numériques, nous calculons les éléments suivants :\n        moyenne, médiane, somme, écart-type, n_distinct, max, min et var. \n        Il calcule également les comptes dans l'ensemble de données agrégées.",
+  "label1": "Options d'agrégation",
   "upperdesc": "Sélectionnez la fonction que vous souhaitez appliquer aux variables à agréger",
-  "datasetname": "Entrez le nom de l'ensemble de données agrégé",
+  "datasetname": "Entrez le nom de l'ensemble de données agrégées",
   "showResultsinOutput": "Afficher les résultats dans la fenêtre de sortie",
   "groupBy": "Grouper par (Variables de type facteur ou date)",
   "help": {
-    "title": "Agrégation vers Dataset",
-    "r_help": "aide(grouper, package=dplyr)",
-    "body": "\n            <b>Description</b></br>\nAgrège une ou plusieurs variables numériques (échelle) par une ou plusieurs variables factorielles et crée un nouvel ensemble de données agrégées. Pour les variables numériques, nous calculons ce qui suit :\nmoyenne, médiane, somme, sd, n_distinct, max, min et var. \nIl calcule également les comptes dans l'ensemble de données agrégé.\n<br/>\n<b>Utilisation</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Rafraîchir l'ensemble de données</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Arguments</b>\n <ul>\n   <li>\nvar1: facteur à grouper\n</li>\n<li>\nvar2, var3: variable à agréger\n</li>\n<li>\nnewvarmean: moyenne de var2 groupée par var1 dans l'ensemble de données agrégé\n</li>\n<li>\n​newvarmedian: médiane de var3 groupée par var1 dans l'ensemble de données agrégé\n</li>\n</ul>\n            "
+    "title": "Agrégation vers l'ensemble de données",
+    "r_help": "help(group_by, package=dplyr)",
+    "body": "\n            <b>Description</b></br>\nAgrège une ou plusieurs variables numériques (échelle) par une ou plusieurs variables factorielles et crée un nouvel ensemble de données agrégées. Pour les variables numériques, nous calculons les éléments suivants :\nmoyenne, médiane, somme, écart-type, n_distinct, max, min et var. \nIl calcule également les comptes dans l'ensemble de données agrégées.\n<br/>\n<b>Utilisation</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Rafraîchir l'ensemble de données</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Arguments</b>\n <ul>\n   <li>\nvar1 : facteur à grouper\n</li>\n<li>\nvar2, var3 : variable à agréger\n</li>\n<li>\nnewvarmean : moyenne de var2 groupée par var1 dans l'ensemble de données agrégées\n</li>\n<li>\n​newvarmedian : médiane de var3 groupée par var1 dans l'ensemble de données agrégées\n</li>\n</ul>\n            "
   }
 }

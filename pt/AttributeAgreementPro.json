@@ -1,0 +1,29 @@
+{
+  "title": "Análise de Acordo de Atributos",
+  "navigation": "Acordo de Atributos",
+  "variablePartSelcted": "Selecione a variável para amostra/parte",
+  "variableOpSelcted": "Selecione a variável para avaliador/operador",
+  "variableRespSelcted": "Selecione a variável para atributo/resposta",
+  "variableRefSelcted": "(Opcional) Selecione a variável para resposta de referência/padrão",
+  "variableTrialSelcted": "(Opcional) Selecione a variável para número de tentativa/repetição",
+  "alpha": "Intervalo de confiança (alpha) entre 0 e 1",
+  "misclassificationStatChk": "Mostrar taxas de precisão e de classificação incorreta",
+  "summaryDisagreementChk": "Mostrar resumo de desacordo do avaliador vs padrão",
+  "CohenKappaChk": "Calcular estatísticas Kappa de Cohen entre avaliador/operador",
+  "CohenKappaWeight": "Peso a ser aplicado para Kappa de Cohen",
+  "label1": "Detalhes do cabeçalho do relatório de estudo de acordo de atributos",
+  "gageName": "Nome do gage",
+  "dateStudy": "Data do estudo",
+  "partDescription": "Descrição da parte",
+  "machineName": "Nome da máquina",
+  "reportedBy": "Reportado por",
+  "operatorNames": "Nomes dos operadores",
+  "testLocation": "Local de teste",
+  "miscellaneous": "Diversos",
+  "rowsTobeUsed": "Deixe em branco se todas as linhas forem usadas. Caso contrário, especifique as linhas a serem usadas para análise (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
+  "help": {
+    "title": "Análise de acordo de atributos",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar análise de acordo de atributos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar os arquivos de conjunto de dados de amostra attributemsaAB.xlsx para \n\t\t\t\tdois operadores, A e B, cada um com 20 observações repetidas duas vezes com classificações P e F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVocê também pode experimentar o arquivo de conjunto de dados de amostra attributemsaABCordered.RData com três operadores, A, B, C, cada um com 10 observações repetidas duas vezes com classificações \"ordenadas\" (ordinais) \n\t\t\t\tcomo Desacordo, Um pouco em Desacordo, Neutro, Um pouco de Acordo e Acordo. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAbra os arquivos na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

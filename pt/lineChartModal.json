@@ -1,0 +1,30 @@
+{
+  "title": "Gráfico de Linhas",
+  "navigation": "Pontos",
+  "label1": "Clique na aba abaixo correspondente ao tipo de gráfico de linhas que você deseja. O padrão é conectado por ordem.",
+  "x": "Eixo X",
+  "y": "Eixo Y, especifique uma variável numérica(s)",
+  "color": "Grupo/Cores, especifique uma variável de fator",
+  "line": "Por Ordem",
+  "linetype": "Um tipo de linha separado será usado para cada nível da variável de fator",
+  "stair": "Degraus",
+  "path": "Por ocorrência",
+  "lineChartType": "Clique no tipo de Gráfico de Linhas abaixo",
+  "alpha": "Opacidade (0-1)",
+  "flipBox": "Inverter Eixo",
+  "specify_a_title": "Insira um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "sizePoint": "Tamanho dos pontos",
+  "sizeLine": "Largura da linha",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Linhas",
+    "r_help": "help(geom_line, package=ggplot2)",
+    "body": "\n            <b>Descrição</b></br>\n            A opção de usar um tipo de linha diferente para cada nível da variável de fator especificada é fornecida para apoiar publicações que não suportam cores. \n            Cria um gráfico de linhas (conectado por ordem) ou gráfico de degraus ou ordena o gráfico de linhas pela ocorrência dos pontos no conjunto de dados. Clique na aba correspondente ao tipo de gráfico de linhas que você deseja.</br>\n            Gráfico de linhas (conectado por ordem): Um gráfico de linhas plota uma linha através de pontos definidos pelas coordenadas x e y e os conecta na ordem das variáveis no eixo x. Quando um grupo/cor é definido como uma variável de fator, os pontos são agrupados por cor e uma linha separada é gerada para cada grupo. Facetas podem ser criadas opcionalmente especificando uma variável de fator. Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y​</br>\n            Gráfico de degraus: Um gráfico de linhas plota uma linha através de pontos definidos pelas coordenadas x e y e cria um gráfico de degraus, destacando exatamente quando ocorrem mudanças. Quando uma cor é definida como uma variável de fator, os pontos são agrupados por cor e uma linha separada é gerada para cada grupo de cor. Facetas podem ser criadas opcionalmente especificando uma variável de fator. Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y​</br>\n            Ordenado por ocorrência: Um gráfico de linhas plota uma linha através de pontos definidos pelas coordenadas x e y e os conecta na ordem em que as variáveis ocorrem no conjunto de dados. Quando uma cor é definida como uma variável de fator, os pontos são agrupados por cor e uma linha separada é gerada para cada grupo de cor. Facetas podem ser criadas opcionalmente especificando uma variável de fator. Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y​.</br>\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            #Gráfico de linhas<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_line( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\", title= \"Gráfico de linhas para ...\")<br/>\n            #Gráfico de degraus<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_step( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\",title= \"Gráfico de linhas para ...\")<br/>\n            #Ordenado por ocorrência<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_path( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\",title= \"Gráfico de linhas para ...\")\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão​\n            </li>\n            <li>\n            aes(): Gere mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n            </li>\n            <li>\n            x: Uma variável numérica ou de fator\n            </li>\n            <li>\n            y: a variável numérica/escala para a qual os pontos são plotados no eixo y​\n            </li>\n            <li>\n            color: uma variável de fator opcional para agrupar pontos (por cor)​\n            </li>\n            <li>\n            labs(): Mudar rótulos de eixos e títulos de legenda (isto é opcional)​\n            </li>\n            <li>\n            facet_grid(): Dispor painéis em uma grade (isto é opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica o tema do calculador (isto é opcional)​\n            </li>\n            <li>\n            geom_line(): Conectar observações ordenadas por valor x, veja x:​\n            </li>\n            <li>\n            coord_flip(): Inverter eixo (isto é opcional)​\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajuda</b></br>\n            #Gráfico de linhas\n            help(geom_line, package='ggplot2')\n            #Gráfico de linhas degraus\n            help(geom_step, package=ggplot2)\n            #Ordem das variáveis\n            help(geom_path, package=ggplot2)\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(labs), help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​            \n    "
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "toplabel": "Por padrão, todas as colunas do conjunto de dados, exceto o fator repetido selecionado e as variáveis de valor, serão usadas para identificar cada observação. Para substituir, veja abaixo",
+  "id_cols": "Opcional: Por padrão, todas as colunas do conjunto de dados, exceto o fator repetido selecionado e as variáveis de valor, serão usadas para identificar cada observação. Para substituir, selecione e mova as variáveis",
+  "title": "Reformar, de longo para largo",
+  "navigation": "Mais largo",
+  "labelTop": "Quando um único fator repetido e uma variável de valor são especificados, novos nomes de variáveis são prefixados com o nome do fator repetido. Em todos os outros casos, eles são prefixados pelo nome da variável de valor",
+  "label0": "Você pode escolher salvar os resultados em um novo conjunto de dados ou sobrescrever o conjunto de dados existente",
+  "label1": "Opções",
+  "New": "Salvar resultados em um novo conjunto de dados",
+  "newdatasetname": "Digite um nome para o conjunto de dados",
+  "Existing": "Sobrescrever conjunto de dados existente",
+  "subsetvars": "Digite o(s) nome(s) da(s) variável(is) dos fatores repetidos, por exemplo, Tempo",
+  "dontReshape": "Digite o(s) nome(s) da(s) variável(is) de valor repetido, por exemplo, Contagens",
+  "names_sort": "Ordenar nomes de colunas alfabeticamente",
+  "appearence_sort": "Ordenar nomes de colunas por aparência",
+  "names_sep": "Separador opcional a ser usado ao juntar os nomes de variáveis especificados para formar novos nomes de variáveis",
+  "label2": "Opções de Ordenação",
+  "help": {
+    "title": "Reformar (de longo para largo)",
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>Descrição</b></br>\nVeja o vídeo em <a href=\"https://youtu.be/ypLXqmFp3jY\">Reformar de longo para largo</a></br>\nToma um conjunto de dados largo e o converte em um conjunto de dados longo, convertendo (alargando) colunas. O pivot_wider \"alongou\" os dados, aumentando o número de linhas e diminuindo o número de colunas. Você usa pivot_wider quando tem variáveis/colunas cujos valores precisam estar em linhas. \n<br/>\nNOTA: Quando um fator repetido é especificado, novos nomes de variáveis são prefixados com o nome do fator repetido. Quando múltiplos fatores repetidos são especificados, eles são prefixados pelo nome da variável de valor</br>\n<b>Uso</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndataset: Um dataframe/tibble\n</li>\n<li>\nnames_from: o nome da coluna de saída \n</li>\n<li>\nvalues_from: a coluna para obter os valores das células \n</li>\n<li>\nnames_sort: Os nomes das colunas devem ser ordenados? Se FALSE, o padrão, os nomes das colunas são ordenados pela primeira aparição.\n</li>\n<li>\nnames_sep: Separador opcional a ser usado ao juntar os nomes de variáveis especificados para formar novos nomes de variáveis\n</li>\n<li>\n<b>Valor</b><br/>\nRetorna o conjunto de dados reformado\n<br/>\n<b>Pacote</b></br>\ntidyr\n<b>Ajuda</b></br>\nhelp(pivot_wider)\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "빈도 플롯",
+  "navigation": "빈도 플롯",
+  "subsetvars": "변수 선택",
+  "paretoChartChk": "파레토 차트 그리기",
+  "createDatasetChk": "빈도 테이블에서 데이터셋 생성",
+  "label1": "빈도 테이블의 정렬 옵션",
+  "selectFreqSortRad": "빈도에 따라 빈도 테이블 정렬",
+  "selectVarSortRad": "변수의 값에 따라 빈도 테이블 정렬",
+  "selectNoSortRad": "없음",
+  "selectSortOrderChk": "내림차순 정렬 (오름차순 정렬을 원하면 체크 해제)",
+  "help": {
+    "title": "빈도 테이블",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>설명</b></br>\n하나 이상의 변수 또는 선택된 열 이름의 고유 값에 대한 빈도를 생성합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>세부사항</b></br>\n이 대화 상자는 다음 함수를 사용합니다:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

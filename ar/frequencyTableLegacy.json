@@ -1,0 +1,10 @@
+{
+  "title": "جدول الترددات (النسخة القديمة)",
+  "navigation": "الترددات (النسخة القديمة)",
+  "subsetvars": "اختر المتغيرات",
+  "help": {
+    "title": "جدول الترددات",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>الوصف</b></br>\nينشئ الترددات لكل قيمة فريدة في واحد أو أكثر من المتغيرات أو أسماء الأعمدة المختارة.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>التفاصيل</b></br>\nتستخدم هذه النافذة الوظائف التالية:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

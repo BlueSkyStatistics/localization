@@ -1,0 +1,20 @@
+{
+  "title": "시계열 플롯",
+  "navigation": "시계열 플롯, 개별 또는 결합",
+  "destination": "플롯할 변수",
+  "firstObservation": "첫 번째 관측의 시간 예: 1: 1961,1을 입력하여 1961년 1월, 예: 2: 1961,3을 입력하여 1961년 3분기, 예: 3: 연속 시리즈의 경우 1을 입력",
+  "frequency": "시간 단위당 관측 수 예: 1: 연간 각 월에 대해 하나의 관측을 위해 12를 입력, 예: 2: 분기당 하나의 관측을 위해 4를 입력, 예: 3: 연속 시리즈의 경우 1을 입력.",
+  "label0": "플롯 옵션",
+  "separately": "각 시리즈를 개별적으로 플롯",
+  "combine": "시리즈 결합",
+  "label1": "변수 변환",
+  "chkboxForTransform": "자연 로그",
+  "label2": "적합된 값에 대한 옵션",
+  "yaxisLabel": "Y 축 레이블",
+  "mainTitle": "주 제목",
+  "help": {
+    "title": "시계열 플롯",
+    "r_help": "help(plot.ts, package ='stats')",
+    "body": "\n<b>설명</b></br>\n결합 또는 개별적으로 시계열 플롯을 생성합니다. 결합된 경우 여러 변수가 함께 플롯되고, 개별적으로는 각 변수가 독립적으로 플롯됩니다. BSkyPlotSeriesWithCorrelations는 시계열 객체를 생성하고 내부적으로 plot.ts를 호출하는 래퍼 함수입니다. \n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='title', ylab='y axis label', dataset=\"Dataset1\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvars: 플롯할 선택된 변수\n</li>\n<li>\nstart: 첫 번째 관측의 시간은 연도, 월 또는 연도, 분기 형식으로 입력해야 합니다. 예를 들어(데이터가 월별로 구성된 경우 1992,1은 1992년 1월을 의미하고, 데이터가 분기별로 구성된 경우 1992,1은 1992년 첫 분기를 의미합니다.\n</li>\n<li>\nfrequency: 단위 시간 내의 관측 수. 예: 월별의 경우 연간 12개의 관측이 있습니다. 분기별의 경우 연간 4개의 관측이 있습니다.\n</li>\n<li>\nplot.type: \"multiple\"는 개별 플롯을, \"single\"은 결합 플롯을 의미합니다.\n</li>\n<li>\nnaturalLogYaxis: TRUE인 경우 Y 축이 자연 로그 값으로 표시됩니다.\n</li>\n<li>\nmain: 플롯의 주 제목\n</li>\n<li>\nylab: Y 축의 제목\n</li>\n<li>\ndataset: vars가 선택된 데이터셋의 이름.\n</li>\n</ul>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 다음 명령어 help(plot.ts, package ='stats')를 실행하여 R 코드 청크를 생성하여 +를 클릭하여 출력 창에서 확인하세요.\n"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Anderson-Darling Normallik Testi",
+  "navigation": "Anderson-Darling Normallik Testi",
+  "trg": "Hedef değişkenler",
+  "help": {
+    "title": "Anderson-Darling Normallik Testi",
+    "r_help": "help(ad.test, package=nortest)",
+    "body": "\n<b>Açıklama</b></br>\nAnderson-Darling normallik testi. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: veri değerlerinin sayısal bir vektörü, sayısı 7'den büyük olmalıdır. Eksik değerler kabul edilir.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nAnderson-Darling testi, normallik hipotezinin bileşik hipotezi için bir EDF genel testi.<br/>\n<b>Değer</b><br/>\nAşağıdaki bileşenleri içeren “test” sınıfına sahip bir liste:<br/>\n<ul>\n<li>\nistatistik: Anderson-Darling istatistiğinin değeri.\n</li>\n<li>\np.değeri: testin P değeri.\n</li>\n</ul>\n<b>Paket</b></br>\nnortest</br>\n<b>Yardım</b></br>\nhelp(ad.test, package =nortest)\n"
+  }
+}

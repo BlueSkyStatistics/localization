@@ -1,0 +1,11 @@
+{
+  "title": "Ayrı Değişken",
+  "navigation": "Ayrı",
+  "sepvarlabel": "Ayrılacak değişken",
+  "delimiterlabel": "Ayrım için kullanılan karakterler",
+  "help": {
+    "title": "Ayrı Değişken",
+    "r_help": "help(separate_wider_delim, package = 'tidyr')",
+    "body": "\n            Bu, bir değişkenin değerlerini, ayrı parçaları tanımlayan karakterlere dayalı olarak (her parça için bir değişken) ayırır.\n\t\t\t<br/><br/>\n\t\t\tÖrneğin, ayrım için kullanılan karakter bir virgül (,) ise, değerleri virgüllerin etrafında parçalara ayırır.  \n\t\t\t<br/><br/>\n\t\t\tVeri kümesine eklenen değişken sayısı, herhangi bir gözlemin ayrıldığı maksimum parça sayısı olacaktır.  Yeni değişkenlerin adları, ayrılan değişken adı ile her parçaya karşılık gelen numaralı bir ek olacaktır.  Değişkenler, bir gözlem maksimum değişken sayısına ayrılamıyorsa eksik değerler içerecektir.  Ayrım için kullanılan karakterler değerde bulunamazsa, o zaman orijinal değer döndürülecektir (yani, yalnızca bir parça vardır).\n\t\t\t<br/><br/>\n\t\t\t<b>Ayrılacak değişken:</b>\n\t\t\t<br/>Parçalara ayırmak istediğiniz değişkeni belirtin.  Bu bir karakter, sayısal, faktör, sıralı faktör veya bir tarih değişkeni olabilir.  Karakter olmayan bir değişken, ayırma amacıyla bir karakter değişkenine dönüştürülecektir, ancak orijinal değişken olduğu gibi kalacaktır.\n\t\t\t<br/><br/>\n\t\t\t<b>Ayrım için kullanılan karakterler:</b>\n\t\t\t<br/>Parçaların ayrımını sağlayan karakter desenini belirtin.  Bu bir veya daha fazla karakter olabilir.\n\t\t\t<br/><br/>\n            <b>Gerekli R paketleri:</b> tidyr, dplyr\n"
+  }
+}

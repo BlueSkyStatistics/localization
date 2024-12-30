@@ -1,0 +1,18 @@
+{
+  "title": "Reordenar Níveis de Fator Manualmente",
+  "navigation": "Reordenar Manualmente",
+  "reordervarlabel": "Fator a Reordenar",
+  "levelslabel": "Especifique os Níveis de Fator a Mover (com aspas): ex. 'nível 1', 'nível 2', etc.",
+  "placelabel": "Onde Colocar os Níveis",
+  "firstlabel": "Primeiro",
+  "lastlabel": "Último",
+  "newoverwritelabel": "Criar Novo ou Sobrescrever Variável Existente",
+  "newvarlabel": "Nova Variável",
+  "overwritevarlabel": "Sobrescrever Variável",
+  "newvarnamelabel": "Nome da Nova Variável (sem espaços / caracteres especiais)",
+  "help": {
+    "title": "Reordenar Níveis de Fator Manualmente",
+    "r_help": "help(fct_relevel, package ='forcats')",
+    "body": "\nIsso é usado para especificar um ou mais níveis de fator que você deseja colocar primeiro ou último na ordem de classificação. Isso pode ser útil para modelos, \npois o primeiro nível de fator se torna o grupo de referência para estimativas de parâmetros ao usar codificação de célula de referência. Eles também podem ser úteis em \nplotagem, pois a ordem de classificação é usada para exibir as categorias.\n<br/><br/>\n<b>Fator a Reordenar:</b> fator que você deseja reordenar\n<br/><br/>\n<b>Especifique os Níveis de Fator a Mover (com aspas): </b> Estes são os níveis de fator que você deseja reordenar. \nApenas níveis existentes serão reordenados. Se você especificar um nível inexistente, um aviso será emitido, mas quaisquer níveis existentes serão ordenados na \nforma que você especificou. Veja os níveis na aba Variáveis da grade de dados para ver os níveis atuais e a ordem de classificação ou vá para Variáveis > Níveis de Fator > Exibir. \nObserve que especificar todos os níveis de fator existentes reordenará todos os níveis, independentemente de você selecionar \"Primeiro\" ou \"Último\" para a colocação do nível.\n<br/><br/>\n<b>Onde colocar níveis:</b> Selecionar \"Primeiro\" colocará os níveis especificados primeiro na ordem de classificação. Selecionar \"Último\" colocará os níveis especificados \npor último na ordem de classificação.\n<br/><br/>\n<b>Criar novo ou sobrescrever variável existente:</b> Controla se você deseja criar uma nova variável com um novo nome ou sobrescrever a variável existente. O \nnome da nova variável não pode conter caracteres especiais como #, $, %, &, (, ), =, etc. Underscores, \"_\", são permitidos.\n<br/><br/>\n<b>Exemplos:</b> Suponha que você tenha um fator de quatro níveis com rótulos \"a\", \"b\", \"c\", \"d\" com uma ordem de classificação de \"a\",\"b\",\"c\",\"d\" (do primeiro ao último). Especificar \"d\" como \nprimeiro na ordem de classificação criaria um fator com uma ordem de classificação de \"d\", \"a\", \"b\", \"c\". Especificar \"b\", \"a\" como último na ordem de classificação criaria um fator \ncom uma ordem de classificação de \"c\",\"d\",\"b\",\"a\". Especificar \"b\",\"c\",\"d\",\"a\" (ou seja, todos os níveis) criaria um fator com uma ordem de classificação de \"b\",\"c\",\"d\",\"a\".\n<br/><br/>  \n<b>Pacotes R Necessários:</b> dplyr, forcats\n\t\t\t"
+  }
+}

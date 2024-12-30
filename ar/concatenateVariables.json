@@ -1,0 +1,12 @@
+{
+  "title": "دمج المتغيرات",
+  "navigation": "دمج",
+  "newvar": "أدخل متغير جديد/موجود لنتائج الدمج",
+  "concatenate": "اختر المتغيرات التي تريد دمجها",
+  "repString": "أدخل فاصل اختياري للمتغيرات المدمجة",
+  "help": {
+    "title": "دمج المتغيرات",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>الوصف</b></br>\nإنشاء عامل يقسم نطاق متغير عددي إلى صناديق ذات عرض متساوٍ، (تقريبًا) تردد متساوٍ، أو عند \"نقاط قطع\" \"طبيعية\" (تحدد بواسطة تجميع K-means)\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nX: متغير عددي ليتم تقسيمه إلى صناديق.\n</li>\n<li>\nBins: عدد الصناديق.\n</li>\n<li>\nmethod: واحدة من \"intervals\" لصناديق ذات عرض متساوٍ؛ \"proportions\" لصناديق ذات عدد متساوٍ؛ \"natural\" لنقاط القطع بين الصناديق التي تحدد بواسطة تجميع K-means.\n</li>\n<li>\nLabels: إذا كانت FALSE، سيتم استخدام تسميات عددية لمستويات العامل؛ إذا كانت NULL، سيتم استخدام نقاط القطع لتعريف التسميات؛ خلاف ذلك، مصفوفة حرفية من أسماء المستويات.\n</li>\n</ul>\n<b>الحزمة</b></br>\nRcmdrMisc</br>\n<b>المساعدة</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

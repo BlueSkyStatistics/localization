@@ -1,21 +1,22 @@
 {
   "title": "小提琴图",
   "navigation": "小提琴",
-  "x": "X轴，指定一个因子变量",
-  "y": "Y轴，指定一个或多个数值变量",
+  "x": "X 轴，指定一个因子变量",
+  "y": "Y 轴，指定一个或多个数值变量",
   "fill": "填充，指定一个因子变量",
   "alpha": "不透明度 (0-1)",
   "flip": "翻转轴",
   "specify_a_title": "输入标题",
-  "x_title": "X轴标签",
-  "y_title": "Y轴标签",
+  "x_title": "X 轴标签",
+  "y_title": "Y 轴标签",
   "Facetrow": "分面行",
   "Facetcolumn": "分面列",
-  "Facetwrap": "分面包裹",
+  "Facetwrap": "分面包装",
   "Facetscale": "分面比例",
+  "facets_lbl" : "面",
   "help": {
     "title": "小提琴图",
     "r_help": "help(geom_violin, package='ggplot2')",
-    "body": "\n            <b>描述</b></br>\n            小提琴图是连续分布的紧凑显示。它是 geom_boxplot() 和 geom_density() 的结合：小提琴图是以与箱线图相同的方式显示的镜像密度图。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"小提琴图 ...\")\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            data: 默认数据集​\n            </li>\n            <li>\n            x: 一个因子变量​，将下面的y变量分成组。\n            </li>\n            <li>\n            y: 生成小提琴图的数值变量\n            </li>\n            <li>\n            fill: 一个可选的因子/分类变量，用于进一步分组现有组。每个子组将以不同的颜色显示。​\n            </li>\n            <li>\n            aes(): 生成描述数据中变量如何映射到几何体的视觉属性（美学）的美学映射。​\n            </li>\n            <li>\n            geom_violin(): 创建小提琴图。 \n            </li>\n            <li>\n            Labs(): 更改轴标签和图例标题（这是可选的）​\n            </li>\n            <li>\n            facet_grid(): 在网格中布局面板（这是可选的）​\n            </li>\n            <li>\n            theme_calc(): 指定计算器主题（这是可选的）​\n            </li>\n            <li>\n            coord_flip(): 翻转轴（这是可选的）​\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>帮助</b></br>\n            其他：点击 R 帮助按钮以获取详细的 R 帮助。您还可以输入 help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)。\n    "
+    "body": "\n            <b>描述</b></br>\n            小提琴图是连续分布的紧凑显示。它是 geom_boxplot() 和 geom_density() 的结合：小提琴图是以与箱线图相同的方式显示的镜像密度图。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"小提琴图表 ...\")\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>\n            data: 默认数据集​\n            </li>\n            <li>\n            x: 一个因子变量​，分隔下面的 y 变量为组。\n            </li>\n            <li>\n            y: 生成小提琴图的数值变量\n            </li>\n            <li>\n            fill: 一个可选的因子/分类变量，用于进一步分组现有组。每个子组将以不同的颜色显示。​\n            </li>\n            <li>\n            aes(): 生成美学映射，描述数据中的变量如何映射到几何图形的视觉属性（美学）。​\n            </li>\n            <li>\n            geom_violin(): 创建小提琴图。\n            </li>\n            <li>\n            Labs(): 更改轴标签和图例标题（这是可选的）​\n            </li>\n            <li>\n            facet_grid(): 在网格中布局面板（这是可选的）​\n            </li>\n            <li>\n            theme_calc(): 指定计算器主题（这是可选的）​\n            </li>\n            <li>\n            coord_flip(): 翻转轴（这是可选的）​\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;</br>\n            <b>帮助</b></br>\n            其他：点击 R 帮助按钮以获取详细的 R 帮助。您还可以输入 help(geom_violin), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
   }
 }

@@ -1,0 +1,10 @@
+{
+  "title": "Aggiungi/Rimuovi Variabile(i) di Risposta - controlla prima l'elenco delle variabili di risposta esistenti con il menu DOE -> Ispeziona Design",
+  "navigation": "Aggiungi/Rimuovi Risposta",
+  "subsetvars": "Seleziona variabili di risposta",
+  "help": {
+    "title": "Aggiungi/Rimuovi Variabile(i) di Risposta",
+    "r_help": "help(response.names, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tPer designare una o più variabili come variabile(i) di risposta per il design \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(response.names, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

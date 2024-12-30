@@ -1,0 +1,12 @@
+{
+  "title": "나이브 베이즈",
+  "navigation": "나이브 베이즈",
+  "modelname": "모델 이름 입력",
+  "dependentvar": "종속 변수",
+  "independentvars": "독립 변수(들)",
+  "help": {
+    "title": "나이브 베이즈",
+    "r_help": "help(NaiveBayes,package='klaR')",
+    "body": "\n                <b>설명</b></br>\n독립 예측 변수를 사용하여 범주형 클래스 변수의 조건부 사후 확률을 계산합니다. 베이즈 규칙을 사용합니다. \n<br/>\n<b>사용법</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nformula : class ~ x1 + x2 + ... 형태의 공식입니다. 상호작용은 허용되지 않습니다.\n</li>\n<li>\ndata: 예측 변수의 데이터 프레임(범주형 및/또는 숫자형).\n</li>\n<li>\nna.action : NAs가 발견되었을 때 취할 행동을 지정하는 함수입니다. 기본 동작은 확률 요소의 계산에 대해 이를 계산하지 않는 것입니다. 대안으로는 na.omit이 있으며, 이는 필수 변수에 결측값이 있는 경우 사례를 거부하게 됩니다. (참고: 주어진 경우 이 인수는 이름이 지정되어야 합니다.)\n</li>\n<li>\n... : 밀도에 전달되는 인수입니다.\n</li>\n</ul>\n<b>패키지</b></br>\ncaret;klaR</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오.</br>\nhelp(NaiveBayes,package='klaR')\n"
+  }
+}

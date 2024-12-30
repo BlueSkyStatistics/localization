@@ -1,0 +1,10 @@
+{
+  "title": "Analisi dei valori mancanti, layout delle colonne",
+  "navigation": "Layout delle colonne",
+  "label1": "Visualizza i risultati dei valori mancanti in formato colonnare",
+  "help": {
+    "title": "Analisi dei valori mancanti",
+    "r_help": "help(sapply)",
+    "body": "\n            <b>Descrizione</b></br>\n            Visualizza le seguenti informazioni sui valori mancanti<br/>\n            1. Il numero di variabili e osservazioni nel dataset<br/>\n            2. Il conteggio dei valori mancanti per variabile<br/>\n            3. Il conteggio dei valori non mancanti per variabile<br/>\n            4. I numeri di riga delle variabili che contengono valori mancanti<br/>\n            Utilizziamo diverse funzioni nel pacchetto base, inclusa sapply, che, ifelse<br/>\n            <b>Pacchetto</b></br>\n            base</br>\n            <b>Aiuto</b></br>\n            Per un aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando help(sapply) creando un blocco di codice R cliccando + nella finestra di output\n"
+  }
+}

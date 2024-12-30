@@ -1,0 +1,18 @@
+{
+  "title": "Örneklem Büyüklüğü, Tek Oran Testi",
+  "navigation": "Tek Oran",
+  "howtouse": "Ya örneklem büyüklüğünü ya da gücü belirtin, diğeri hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "power": "Güç (0-1)",
+  "prop": "Alternatif Oran (0-1)",
+  "prop0": "Null Oranı (0-1)",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Tek Oran Testi",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nBu, bir örneklem oran testi için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı birini belirtirse, örneklem büyüklüğünü veya gücü hesaplar. Hesaplama, Chow S, Shao J, Wang H. Klinik Araştırmalarda Örneklem Büyüklüğü Hesaplamaları (2008) kitabında bulunan formülü kullanır. Alternatif orana dayalı standart sapma ile normal bir yaklaşım kullanır.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa null hipotezi reddetme olasılığı.\n<br/><br/>\n<b>Alternatif Oran (0-1):</b> Alternatif hipotez altındaki oranı belirtin\n<br/><br/>\n<b>Null Oranı (0-1):</b> Null hipotez altındaki oranı belirtin\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hatası)\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats\n\t\t\t"
+  }
+}

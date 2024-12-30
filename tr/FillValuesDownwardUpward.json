@@ -1,0 +1,14 @@
+{
+  "title": "Değerleri Aşağıya veya Yukarıya Doldur",
+  "navigation": "Değerleri Aşağıya veya Yukarıya Doldur",
+  "fillinvars": "Doldurulacak Değerler için Değişkenler",
+  "groupbyvars": "Gruplamak için Değişkenler",
+  "directionlabel": "Yön",
+  "downward": "Aşağı",
+  "upward": "Yukarı",
+  "help": {
+    "title": "Değerleri Aşağıya veya Yukarıya Doldur",
+    "r_help": "help(fill, package ='tidyr')",
+    "body": "\nBu diyalog, her sütundaki önceki girişi kullanarak veri kümesi sütunlarındaki eksik değerleri doldurur. Bu, değerlerin tekrar edilmediği, ancak her değiştiğinde kaydedildiği durumlarda yararlı olabilir. Genellikle, bu, veri kümesinin anlamlı bir şekilde sıralandığı anlamına gelir. Doldurulacak değerlerin bulunduğu değişkenler üzerine yazılacaktır.\n<br/><br/>\n<b>Doldurulacak Değerler için Değişkenler:</b> Eksik değerlerin doldurulacağı değişkenleri belirtin\n<br/><br/>\n<b>Gruplamak için Değişkenler:</b> Satırları bir araya getiren değişkenleri belirtin. Eksik değerler, bu değişkenler tarafından tanımlanan gruplar içinde doldurulacaktır. Örneğin, bir konu tanımlayıcısına göre gruplamak, konular içinde değerleri dolduracaktır.\n<br/><br/>\n<b>Yön:</b> Değerlerin hangi yönde doldurulacağını belirtin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> tidyverse\n\t\t\t"
+  }
+}

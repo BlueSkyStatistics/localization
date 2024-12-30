@@ -1,0 +1,13 @@
+{
+  "title": "2D Kontur Grafiği",
+  "navigation": "2D Kontur Grafiği",
+  "tvarbox1": "X",
+  "tvarbox2": "Y",
+  "tvarbox3": "Z",
+  "chk1": "Kontur grafiğine x ve y'ye dayalı ham veri noktalarını (siyah noktalar) ekle",
+  "help": {
+    "title": "2D Kontur Grafiği",
+    "r_help": "help(geom_contour_filled, package='ggplot2')",
+    "body": "\n\t\t\t <b>Açıklama</b></br>\n\t\t\tDoldurulmuş kontur bölgeleri\n\t\t\t</br>\n\t\t\tKontur çizgileri, z değişkeninin farklı aralıklara düştüğü bölgeleri ayırır.\n\t\t\t</br>\n\t\t\tKontur çizgileri arasındaki alanlar, farklı z değeri aralıklarını temsil eden renklerle doldurulur.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tRenk ölçeği\n\t\t\t</br>\n\t\t\tKontur bölgelerini doldurmak için ColorBrewer'dan Spectral paleti uygulanır.\n\t\t\t</br>\n\t\t\tSpectral paleti, verilerdeki gradyanları göstermek için ideal olan, soğuk renklerden sıcak renklere geçiş yapan bir ayrışan renk şemasına sahiptir.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tİsteğe bağlı olarak grafiğe ham veri noktaları ekleyin\n\t\t\t</br>\n\t\t\tBu katman, veri kümesindeki x ve y değerlerine dayalı bireysel noktaları (noktalar siyah noktalar) çizer.\n\t\t\t</br>\n\t\t\tBu, ham veri noktalarını kontur grafiği üzerine yerleştirmenin bir yolunu sağlar ve kontur görselleştirmesine daha fazla bağlam verir.\n    "
+  }
+}

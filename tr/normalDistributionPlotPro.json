@@ -1,0 +1,28 @@
+{
+  "title": "Etiketli Normal Dağılım Grafiği",
+  "navigation": "Etiketli Normal Dağılım Grafiği",
+  "mean": "Ortalama",
+  "sd": "Standart sapma",
+  "pdenfun": "Yoğunluk fonksiyonunu çiz",
+  "pdstfun": "Dağılım fonksiyonunu çiz",
+  "lblregions": "Yoğunluk fonksiyonu altında bölgeleri isteğe bağlı olarak belirtin",
+  "xvals": "x-değerleri",
+  "quantiles": "kuantiller",
+  "lblRegFill": "Doldurulacak bölgeler (bir veya iki belirtin veya x-değerleri veya kuantil seçeneği için boş bırakın). 'From' alanını boş bırakın, sol (alt) kuyruğu çizmek için ve 'To' alanını boş bırakın, sağ (üst) kuyruğu çizmek için.",
+  "lblreg1": "Bölge 1:",
+  "lblreg2": "Bölge 2:",
+  "lblregfrm": "Başlangıç",
+  "lblregto": "Bitiş",
+  "lblregcol": "Renk",
+  "lowProbBound": "Örnek dağılımı oluşturmak için kullanılan olasılığın alt sınırı",
+  "upperProbBound": "Örnek dağılımı oluşturmak için kullanılan olasılığın üst sınırı",
+  "lblLegPos": "Lejantın konumu",
+  "toprt": "Üst sağ",
+  "toplt": "Üst sol",
+  "topmid": "Üst merkez",
+  "help": {
+    "title": "Etiketli Normal Dağılım Grafiği",
+    "r_help": "help(qnorm, package=stats)",
+    "body": "\n            ​​\n            <b>Açıklama</b>\n            <br/>\n            Ortalama eşit olan ve standart sapma eşit olan normal dağılım için yoğunluk, dağılım fonksiyonu, kuantil fonksiyonu ve rastgele üretim.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : kuantillerin vektörü.</li>\n                \n                \n                <li>p : olasılıkların vektörü.</li>\n                \n                \n                <li>n : gözlem sayısı. Eğer length(n) > 1 ise, uzunluk gereken sayı olarak alınır.</li>\n                \n                \n                <li>mean : ortalamaların vektörü.</li>\n                \n                \n                <li>sd : standart sapmaların vektörü.</li>\n                \n                \n                <li>log, log.p : mantıksal; eğer TRUE ise, olasılıklar p log(p) olarak verilir.</li>\n                \n                \n                <li>lower.tail : mantıksal; eğer TRUE (varsayılan), olasılıklar P[X ≤ x] aksi takdirde, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Ayrıntılar</b>\n            <br/>\n            Eğer ortalama veya sd belirtilmemişse, varsayılan değerler 0 ve 1 olarak alınır.\n            <br/>\n            Normal dağılımın yoğunluğu\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            burada μ dağılımın ortalaması ve σ standart sapmadır.\n            <br/>\n            <br/><b>Değer</b>\n            <br/>\n            dnorm yoğunluğu verir, pnorm dağılım fonksiyonunu verir, qnorm kuantil fonksiyonunu verir ve rnorm rastgele sapmalar üretir.\n            <br/>\n            Sonucun uzunluğu rnorm için n tarafından belirlenir ve diğer fonksiyonlar için sayısal argümanların uzunluklarının maksimumudur.\n            <br/>\n            n dışındaki sayısal argümanlar sonucun uzunluğuna göre yeniden döngüye alınır. Mantıksal argümanların yalnızca ilk elemanları kullanılır.\n            <br/>\n            sd = 0 için bu, sd'nin 0'a düşmesi durumunda bir nokta kütlesi verir. sd < 0 bir hata olup NaN döner.            \n"
+  }
+}

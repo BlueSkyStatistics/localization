@@ -1,0 +1,23 @@
+{
+  "title": "요약, 숫자만",
+  "navigation": "숫자 변수만 (레거시)",
+  "tvarbox1": "선택된 변수",
+  "tvarbox2": "그룹화 기준",
+  "min": "최소",
+  "max": "최대",
+  "mean": "평균",
+  "median": "중앙값",
+  "sum": "합계",
+  "sd": "표준 편차",
+  "stderror": "평균의 표준 오차",
+  "iqr": "사분위 범위",
+  "quantiles": "사분위수",
+  "probs": "사분위수가 선택된 경우 사분위수를 지정하십시오",
+  "addIsstatnames": "추가 통계 함수 이름을 쉼표로 구분하여 추가하십시오. 예: var)",
+  "label1": "옵션",
+  "help": {
+    "title": "요약, 숫자만",
+    "r_help": "",
+    "body": "\n<b>설명</b></br>\n다음 숫자 통계를 출력합니다:</br>\n최소, 최대, 평균, 중앙값, 합계, 표준 편차, 표준 오차, 사분위수. 사분위수가 선택된 경우 필요한 사분위수를 쉼표로 구분하여 지정할 수 있습니다.</br>\n이 외에도 사용자는 예를 들어 var와 같은 쉼표로 구분된 통계 함수 이름 목록을 전달할 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"데이터셋 이름\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: 선택된 스케일 변수 (예: Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: 그룹화할 하나 이상의 팩터 변수 (예: Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: 함수 목록. TRUE로 설정된 함수가 실행됩니다. (예: min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: 사분위수의 확률\n</li>\n<li>\nadditionalStats: 사용자가 전달할 수 있는 추가 통계 함수 (예: var)\n</li>\n<li>\ndatasetName: datasetColumnObjects 및 groupByColumnObjects가 선택된 데이터셋의 이름\n</li>\n</ul>\n<b>값</b></br>\n각 변수에 대한 각 함수의 결과를 제공하는 \"data.frame\" 클래스의 객체입니다.</br>\n<b>예제</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>패키지</b></br>\nBlueSky</br>\n<b>도움말</b></br>\nR 도움말은 여러 R 함수를 사용하여 사용자 정의 코드를 작성했기 때문에 사용할 수 없습니다. 코드를 검사해야 하는 경우 \"<>\" 버튼을 클릭하십시오.</br>\n    "
+  }
+}

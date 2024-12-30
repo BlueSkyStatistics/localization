@@ -1,0 +1,26 @@
+{
+  "title": "Cauchy Dağılımı Grafiği",
+  "navigation": "Cauchy Dağılımı Grafiği",
+  "location": "Konum",
+  "scale": "Ölçek",
+  "pdenfun": "Yoğunluk fonksiyonunu çiz",
+  "pdstfun": "Dağılım fonksiyonunu çiz",
+  "lblregions": "Yoğunluk fonksiyonu altında bölgeleri isteğe bağlı olarak belirtin",
+  "xvals": "x-değerleri",
+  "quantiles": "kuantil",
+  "lblRegFill": "Doldurulacak bölgeler (bir veya iki belirtin ya da boş bırakın)",
+  "lblreg1": "Bölge 1:",
+  "lblreg2": "Bölge 2:",
+  "lblregfrm": "Başlangıç",
+  "lblregto": "Bitiş",
+  "lblregcol": "Renk",
+  "lblLegPos": "Lejantın konumu",
+  "toprt": "Üst sağ",
+  "toplt": "Üst sol",
+  "topmid": "Üst merkez",
+  "help": {
+    "title": "Cauchy Dağılımı Grafiği",
+    "r_help": "help(qcauchy, package=stats)",
+    "body": "\n            ​​\n            <b>Açıklama</b>\n            <br/>\n            Cauchy dağılımı için yoğunluk, dağılım fonksiyonu, kuantil fonksiyonu ve rastgele üretim, konum parametresi konum ve ölçek parametresi ölçek ile birlikte.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                dcauchy(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                pcauchy(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qcauchy(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rcauchy(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : kuantillerin vektörü.</li>\n                \n                \n                <li>p : olasılıkların vektörü.</li>\n                \n                \n                <li>n : gözlem sayısı. Eğer length(n) > 1 ise, gerekli olan uzunluk alınır.</li>\n                \n                \n                <li>location, scale : konum ve ölçek parametreleri.</li>\n                \n                \n                <li>log, log.p : mantıksal; eğer TRUE ise, olasılıklar p log(p) olarak verilir.</li>\n                \n                \n                <li>lower.tail : mantıksal; eğer TRUE (varsayılan), olasılıklar P[X ≤ x] şeklindedir, aksi takdirde P[X > x] şeklindedir.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Ayrıntılar</b>\n            <br/>\n            Eğer konum veya ölçek belirtilmemişse, varsayılan değerler 0 ve 1 olarak alınır.\n            <br/>\n            Konum l ve ölçek s olan Cauchy dağılımının yoğunluğu\n            <br/>\n            <code>f(x) = 1 / (π s (1 + ((x-l)/s)^2))</code>\n            tüm x için geçerlidir.\n            <br/>\n            <br/><b>Değer</b>\n            <br/>\n            dcauchy, pcauchy ve qcauchy sırasıyla Cauchy dağılımının yoğunluğu, dağılım fonksiyonu ve kuantil fonksiyonudur. rcauchy, Cauchy'den rastgele sapmalar üretir.\n            <br/>\n            Sonucun uzunluğu rcauchy için n ile belirlenir ve diğer fonksiyonlar için sayısal argümanların uzunluklarının maksimumudur.\n            <br/>\n            n dışındaki sayısal argümanlar sonucun uzunluğuna göre yeniden döngüye alınır. Mantıksal argümanların yalnızca ilk elemanları kullanılır.\n            <br/>\n            <b>Kaynak</b>\n            <br/>\n            dcauchy, pcauchy ve qcauchy, tanımların sayısal olarak kararlı versiyonlarından hesaplanmaktadır.\n            <br/>\n            rcauchy, tersleme kullanır.            \n      "
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "title": "来自Beta分布的示例",
-  "navigation": "来自Beta分布的示例",
+  "title": "来自Beta分布的样本",
+  "navigation": "来自Beta分布的样本",
   "entrdsname": "输入数据集名称",
   "shape1": "形状1",
   "shape2": "形状2",
@@ -12,8 +12,8 @@
   "chklbl2": "样本总和",
   "chklbl3": "样本标准差",
   "help": {
-    "title": "来自Beta分布的示例",
+    "title": "来自Beta分布的样本",
     "r_help": "help(rbeta, package=stats)",
-    "body": "\n            <b>描述</b>\n<br/>\n密度、分布函数、分位数函数和随机生成用于具有参数shape1和shape2的Beta分布（可选的非中心参数ncp）。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>参数</b>\n<br/>\n<ul>\n    <li>x, q : 分位数向量。</li>\n    \n    \n    <li>p : 概率向量。</li>\n    \n    \n    <li>n : 观察数量。如果长度(n) > 1，则长度被视为所需数量。</li>\n    \n    \n    <li>shape1, shape2 : Beta分布的非负参数。</li>\n    \n    \n    <li>ncp : 非中心参数。</li>\n    \n    \n    <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)的形式给出。</li>\n    \n    \n    <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n    \n</ul>\n\n\n\n<br/>\n<b>详细信息</b>\n<br/>\n具有参数shape1 = a和shape2 = b的Beta分布具有密度\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\n对于a > 0，b > 0和0 ≤ x ≤ 1，其中x=0或x=1的边界值通过连续性（作为极限）定义。 \n<br/>\n 平均值为a/(a+b)，方差为ab/((a+b)^2 (a+b+1))。这些时刻和所有分布属性可以定义为极限（导致在0、1/2或1处的点质量），当a或b为零或无穷大时，相应的[dpqr]beta()函数也相应定义。\n <br/>\npbeta与不完全Beta函数密切相关。根据Abramowitz和Stegun 6.6.1的定义\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\n和6.6.2 I_x(a,b) = B_x(a,b) / B(a,b)，其中B(a,b) = B_1(a,b)是Beta函数（beta）。\n<br/>\n<code>I_x(a,b)是pbeta(x, a, b)。</code>\n<br/>\n非中心Beta分布（ncp = λ）被定义为（Johnson等，1995年，第502页）为X/(X+Y)的分布，其中X ~ chi^2_2a(λ)和Y ~ chi^2_2b。\n<br/>\n<br/><b>值</b>\n<br/>\ndbeta给出密度，pbeta给出分布函数，qbeta给出分位数函数，rbeta生成随机偏差。\n<br/>\n无效参数将导致返回值NaN，并发出警告。\n<br/>\n结果的长度由n决定，对于rbeta，结果的长度是其他函数的数值参数长度的最大值。\n<br/>\n除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n<br/>\n<br/><b>注意</b>\n<br/>\n提供ncp = 0使用非中心分布的算法，这与省略ncp时使用的算法不同。这是为了在极端情况下，ncp值非常接近零时，提供一致的行为。\n"
+    "body": "\n            <b>描述</b>\n<br/>\nBeta分布的密度、分布函数、分位数函数和随机生成，参数为shape1和shape2（可选的非中心参数ncp）。\n<br/>\n<b>用法</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>参数</b>\n<br/>\n<ul>\n    <li>x, q : 分位数向量。</li>\n    \n    \n    <li>p : 概率向量。</li>\n    \n    \n    <li>n : 观察数量。如果length(n) > 1，则长度被视为所需的数量。</li>\n    \n    \n    <li>shape1, shape2 : Beta分布的非负参数。</li>\n    \n    \n    <li>ncp : 非中心参数。</li>\n    \n    \n    <li>log, log.p : 逻辑；如果为TRUE，则概率p以log(p)给出。</li>\n    \n    \n    <li>lower.tail : 逻辑；如果为TRUE（默认），概率为P[X ≤ x]，否则为P[X > x]。</li>\n    \n</ul>\n\n\n\n<br/>\n<b>细节</b>\n<br/>\n具有参数shape1 = a和shape2 = b的Beta分布的密度为\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\n对于a > 0，b > 0且0 ≤ x ≤ 1，其中在x=0或x=1处的边界值按连续性定义（作为极限）。\n<br/>\n均值为a/(a+b)，方差为ab/((a+b)^2 (a+b+1))。这些矩和所有分布特性可以定义为极限（导致在0、1/2或1处的点质量），当a或b为零或无限时，相应的[dpqr]beta()函数也相应定义。\n<br/>\npbeta与不完全beta函数密切相关。根据Abramowitz和Stegun 6.6.1定义\n<br/>\n<code>B_x(a,b) = integral_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\n和6.6.2 I_x(a,b) = B_x(a,b) / B(a,b)，其中B(a,b) = B_1(a,b)是Beta函数（beta）。\n<br/>\n<code>I_x(a,b)是pbeta(x, a, b)。</code>\n<br/>\n非中心Beta分布（ncp = λ）被定义为X/(X+Y)的分布，其中X ~ chi^2_2a(λ)和Y ~ chi^2_2b。\n<br/>\n<br/><b>值</b>\n<br/>\ndbeta给出密度，pbeta给出分布函数，qbeta给出分位数函数，rbeta生成随机偏差。\n<br/>\n无效参数将导致返回值NaN，并发出警告。\n<br/>\n结果的长度由n决定，对于rbeta，结果的长度为n，其他函数的结果长度为数值参数的最大长度。\n<br/>\n除n以外的数值参数被回收至结果的长度。仅使用逻辑参数的第一个元素。\n<br/>\n<br/><b>注意</b>\n<br/>\n提供ncp = 0使用非中心分布的算法，这与省略ncp时使用的算法不同。这是为了在极端情况下与ncp非常接近零的值保持一致的行为。"
   }
 }

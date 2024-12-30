@@ -1,0 +1,32 @@
+{
+  "title": "Gage R&R - Ölçüm Sistemi Analizi",
+  "navigation": "Gage R&R",
+  "mainTitle": "Grafik çıktısı için ana başlık",
+  "subTitle": "Grafik çıktısı için alt başlık (örneğin projenin adı)",
+  "measuredVar": "Ölçülen değişken",
+  "part": "Parça değişkeni",
+  "appr": "Değerlendirici (operatörler, makineler, ...) değişkeni",
+  "lsl": "LSL - Çalışma Varyasyonu hesaplamak için USL ile birlikte kullanılan alt spesifikasyon limitinin sayısal değeri",
+  "usl": "USL - Çalışma Varyasyonu hesaplamak için LSL ile birlikte kullanılan üst spesifikasyon limitinin sayısal değeri",
+  "historicalStdv": "Tarihsel süreç standart sapması (belirtilmemişse, NA yazın)",
+  "useHistStdDevProcVarChk": "Gage Değerlendirme değerlerini tahmin etmek için tarihsel standart sapmayı kullanın (%StudyVar tablosu)",
+  "sigma": "Sigma - Çalışma Varyasyonu hesaplamak için kullanılacak standart sapma sayısının sayısal değeri",
+  "tolerance": "Tolerans - tolerans için sayısal değer - varsayılan (usl - lsl)",
+  "alphaLim": "Alpha - etkileşimi dikkate almak için limit",
+  "errorTerm": "Modelin hangi terimin hata terimi olarak kullanılacağı (etkileşimli model için)",
+  "method": "Gerçekleştirilecek analiz türü, çapraz (varsayılan) veya iç içe geçmiş",
+  "label1": "Gage R&R çalışması rapor başlık detayları",
+  "gageName": "Gage adı",
+  "dateStudy": "Çalışma tarihi",
+  "partDescription": "Parça açıklaması",
+  "machineName": "Makine adı",
+  "reportedBy": "Raporlayan",
+  "operatorNames": "Operatörlerin isimleri",
+  "testLocation": "Test yeri",
+  "miscellaneous": "Çeşitli",
+  "help": {
+    "title": "Gage R&R - Ölçüm Sistemi Analizi",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tss.rr fonksiyonu, bir sürecin ölçüm sisteminin değerlendirilmesi için Gage R&R analizi gerçekleştirmek için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(ss.rr, package = SixSigma) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, gageR_R_piston_diameter_with_measurements.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\törnek veri setinden, Ölçülen değişken için çap değişkenini, Parça değişkeni için Piston halkasını ve Değerlendirici için Operatörü seçin\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

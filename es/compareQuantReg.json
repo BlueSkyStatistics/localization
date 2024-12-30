@@ -2,11 +2,11 @@
   "title": "Comparar las pendientes del modelo de regresión cuantílica",
   "navigation": "Modelos de Regresión Cuantílica",
   "label1": "Compara N modelos de regresión cuantílica.",
-  "label4": "**NOTA: Los modelos creados a partir de la optimización del modelo (clase train) no son compatibles",
-  "modelselector1": "Seleccione 2 o más modelos de regresión cuantílica para comparar las pendientes:",
+  "label4": "**NOTA: Los modelos creados a partir de la sintonización del modelo (clase train) no son compatibles",
+  "modelselector1": "Selecciona 2 o más modelos de regresión cuantílica para comparar las pendientes:",
   "help": {
     "title": "Comparar las pendientes del modelo de regresión cuantílica",
     "r_help": "help(anova.rq,package='quantreg')",
-    "body": "\n<b>Descripción</b></br>\nCalcule estadísticas de prueba para dos o más ajustes de regresión cuantílica. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobject: objetos de la clase rq, que provienen de una llamada a rq.\n</li>\n</ul>\n<b>Detalles</b><br/>\nLa hipótesis de interés es que los coeficientes de pendiente de los modelos son idénticos. La estadística de prueba es una variante de la prueba de Wald descrita en Koenker y Bassett (1982).<br/>\n<b>Valor</b><br/>\nUn objeto de la clase \"anova\" que hereda de la clase \"data.frame\".<br/>\n<b>Paquete</b></br>\nquantreg</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de esta superposición de diálogo o ejecute el siguiente comando en el editor de sintaxis R help(anova.rq,package='quantreg')</br></br>\n"
+    "body": "\n<b>Descripción</b></br>\nCalcular estadísticas de prueba para dos o más ajustes de regresión cuantílica. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobject: objetos de la clase rq, originados a partir de una llamada a rq.\n</li>\n</ul>\n<b>Detalles</b><br/>\nLa hipótesis de interés es que los coeficientes de pendiente de los modelos son idénticos. La estadística de prueba es una variante de la prueba de Wald descrita en Koenker y Bassett (1982).<br/>\n<b>Valor</b><br/>\nUn objeto de la clase \"anova\" que hereda de la clase \"data.frame\".<br/>\n<b>Paquete</b></br>\nquantreg</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haz clic en el icono de R en la esquina superior derecha de este diálogo o ejecuta el siguiente comando en el editor de sintaxis de R help(anova.rq,package='quantreg')</br></br>\n"
   }
 }

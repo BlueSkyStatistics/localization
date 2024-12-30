@@ -1,0 +1,23 @@
+{
+  "title": "Repetir análise em diferentes conjuntos de dados",
+  "navigation": "Repetir análise",
+  "helpText": "Repetir ou reproduzir a análise em uma aba de saída trocando o(s) conjunto(s) de dados original(is) por novo(s) conjunto(s) de dados.\nSiga os passos abaixo.\n1. A aba de saída selecionada deve conter a análise a ser reproduzida ou repetida.\n2. O(s) novo(s) conjunto(s) de dados que você deseja trocar devem estar abertos na grade de dados.\n3. Especifique qual novo conjunto de dados será trocado pelo original (da análise na aba de saída ativa)\n4. Para fazer isso, selecione o conjunto de dados original na 1ª lista e o novo conjunto de dados na\n 2ª lista e clique no botão mover.\n5. Repita o passo 4 para trocar múltiplos conjuntos de dados.\n6. Clique no botão executar.\n",
+  "allDatasets": "Conjuntos de dados para trocar",
+  "datasetsFromOutput_BSky": "Conjuntos de dados originais",
+  "mapping": "Conjuntos de dados mapeados",
+  "out": "Digite o nome do conjunto de dados empilhado",
+  "in1": "Selecione 2 ou mais conjuntos de dados",
+  "in2": "Selecione o 2º conjunto de dados",
+  "label1": "Opções de Empilhamento",
+  "label2": "Todas as opções abaixo requerem 2 conjuntos de dados com exatamente os mesmos nomes de variáveis",
+  "bindrows": "Vincular Linhas (empilhar conjuntos de dados como estão, pode resultar em linhas duplicadas)",
+  "union": "União (Empilhar conjuntos de dados e remover duplicatas exatas)",
+  "intersect": "Interseção (Manter linhas comuns a ambos os conjuntos de dados)",
+  "setdiff": "Diferença (Manter apenas linhas no 1º conjunto de dados, mas não no 2º)",
+  "id": "Se você gostaria de rastrear de qual conjunto de dados cada observação veio, especifique um nome para essa variável aqui. NOTA: A nova variável é adicionada ao início do conjunto de dados resultante.",
+  "help": {
+    "title": "Empilhar Conjuntos de Dados",
+    "r_help": "help(bind_rows, package=dplyr)",
+    "body": "\n            <b>Descrição</b></br>\nEsta caixa de diálogo ajudará você a empilhar 2 ou mais conjuntos de dados um em cima do outro. Você pode selecionar uma das seguintes opções.<br/>\n1. Vincular Linhas: Empilha os 2 ou mais conjuntos de dados exatamente como estão. Se um nome de variável for comum a ambos os conjuntos de dados, os valores preencherão como você espera. Se um conjunto de dados A contém uma variável chamada var1 que não está presente no outro conjunto de dados B, NAs aparecerão na variável var1 para todas as linhas que correspondem ao conjunto de dados B.<br/>\nTodas as opções abaixo operam SOMENTE em 2 conjuntos de dados e requerem que ambos os conjuntos de dados compartilhem as mesmas variáveis.<br/>\n2. União: empilha os conjuntos de dados e remove duplicatas<br/>\n3. Interseção: mantém linhas comuns a ambos<br/>\n4. Diferença: Mantém linhas no 1º conjunto de dados, não no 2º<br/>\nDependendo da opção selecionada, as funções bind_rows, union, intersect e setdiff no pacote dplyr são chamadas.\nNOTA: você pode opcionalmente rastrear de qual conjunto de dados a observação original veio. O ID do conjunto de dados (1º/2º) é adicionado ao início do conjunto de dados que contém os resultados.<br/>\n<b>Pacote</b></br>\ndplyr</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito desta sobreposição de diálogo ou execute o seguinte comando help(bind_rows, package=\"dplyr\") na janela de sintaxe R\n            "
+  }
+}

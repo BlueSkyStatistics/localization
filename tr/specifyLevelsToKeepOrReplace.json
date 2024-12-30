@@ -1,0 +1,23 @@
+{
+  "title": "Tutulacak veya diğerleriyle değiştirilmesi gereken seviyeleri belirtin",
+  "navigation": "Diğerine Yığ (Manuel)",
+  "target": "Sıralamak için faktör değişkenleri",
+  "label1": "Tutulacak veya diğerleriyle değiştirilecek faktör seviyelerini girin. Tutulacak seviyeler seçildiğinde, kalan seviyeler \"Diğer\" ile değiştirilecektir. Değiştirme seçildiğinde, belirtilen seviyeler \"Diğer\" ile değiştirilecektir.",
+  "other": "\"Diğer\" değerleri için kullanılan seviye adı",
+  "label3": "Kullanılacak yöntem",
+  "keep": "Seviyeleri tut",
+  "drop": "Seviyeleri bırak",
+  "keepOption": "Tutulacak seviyeleri virgülle ayırarak girin, kalan seviyeler \"Diğer\" ile değiştirilecektir, örneğin: seviye1,seviye2,seviye3",
+  "dropOption": "\"Diğer\" ile değiştirilecek seviyeleri girin, örneğin: seviye1,seviye2,seviye3",
+  "label2": "Sonuçları yeni değişken(ler)e kaydet veya mevcut değişken(ler)i üzerine yaz",
+  "rd3": "Bir ek belirtin (Bir yeni değişken ek ile oluşturulacaktır)",
+  "txt3": "Bir ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri üzerine yaz",
+  "help": {
+    "title": "Tutulacak veya değiştirilecek seviyeler",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>NOT: SEVİYELERİ İKİLİ TIRNAKLARA VEYA TEK TIRNAKLARA ALMAYIN, SEVİYE İSİMLERİNDE BOŞLUK OLMAMALIDIR. SEVİYELERİ VIRGÜL İLE AYIRARAK GİRİN FORMAT: SEVİYE1,SEVİYE2, SEVİYE3</b><br/>\n<b>Açıklama</b></br>\nTutulacak veya bırakılacak faktör seviyelerini girin. Tutulacak seçildiğinde, kalan seviyeler \"Diğer\" ile değiştirilecektir. Bırakma seçildiğinde, bırakılan seviyeler \"Diğer\" ile değiştirilecektir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Diğer\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nf : Bir faktör (veya karakter vektörü).\n</li>\n<li>\ntut, bırak: tut, listelenen seviyeleri koruyacak, diğerlerini other_level ile değiştirecektir. bırak, listelenen seviyeleri other_level ile değiştirecek, diğerlerini olduğu gibi bırakacaktır.\n</li>\n<li>\nother_level: \"diğer\" değerleri için kullanılan seviye değeri. Her zaman seviyelerin sonunda yer alır.\n</li>\n</ul>\n<b>Örnekler</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>Paket</b></br>\nforcats</br>\n<b>Yardım</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

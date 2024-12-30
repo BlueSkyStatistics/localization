@@ -1,0 +1,18 @@
+{
+  "title": "Değişken(leri) Standartlaştır",
+  "navigation": "Standartlaştır",
+  "label1": "Standartlaştırılmış değerler, belirtilen ön ek/son ek ile yeni değişkenlere kaydedilecektir.",
+  "dest": "Standartlaştırılacak değişken(leri) seçin",
+  "label2": "Bir ön ek veya son ek seçin",
+  "suffix": "Son ek",
+  "prefix": "Ön ek",
+  "txt1": "Bir ön ek/son ek girin",
+  "label3": "Merkez ve/veya ölçek",
+  "Center": "Merkez",
+  "Scale": "Ölçek",
+  "help": {
+    "title": "Değişken(leri) Standartlaştır",
+    "r_help": "",
+    "body": "\n<b>Açıklama</b></br>\nDeğişkenleri standartlaştırır (z puanları). Standartlaştırılmış değerler, orijinal değişkenlerin ön eki veya son eki ile yeni değişkenlerde saklanır. Merkezleme ve/veya ölçekleme seçeneği sunulmaktadır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: Standartlaştırılacak bir veya daha fazla değişken. Sadece sayısal değişkenler (faktörler değil) desteklenmektedir.\n</li>\n<li>\ncenter: Eğer center TRUE ise, merkezleme, x'in ilgili sütunlarından sütun ortalamalarını (NA'ları atlayarak) çıkartarak yapılır ve eğer center FALSE ise, merkezleme yapılmaz.\n</li>\n<li>\nscale: Eğer scale TRUE ise, ölçekleme, x'in (merkezlenmiş) sütunlarını, eğer center TRUE ise standart sapmaları ile ve aksi takdirde kök ortalama kare ile bölerek yapılır. Eğer scale FALSE ise, ölçekleme yapılmaz.\n</li>\n<li>\nstingToPrefixOrSuffix: Yeni standartlaştırılmış değişkenler için kullanılacak ön ek veya son eki belirten bir karakter dizisi (yani, veri kümesindeki yeni sütunlar).\n</li>\n<li>\nprefixOrSuffix: Bir ön ek veya son ek istiyorsanız belirtin\n</li>\n<li>\ndatasetname: Veri kümesi/veri çerçevesi adı\n</li>\n</ul>\nNot: Sayısaldan faktöre dönüşüm yapmayacağız. Bir sayısal yeniden kodlandığında, sayısal olarak kalacaktır, bir faktör değişkeni yeniden kodlandığında, faktör olarak kalacaktır.</br>\n<b>Paket</b></br>\nBlueSky</br>\n"
+  }
+}

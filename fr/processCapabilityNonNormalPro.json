@@ -1,15 +1,15 @@
 {
   "title": "Capacité de Processus (Non-normal)",
   "navigation": "Capacité de Processus (Non-normal)",
-  "printObjectSummaryChk": "Imprimer le résumé de l'objet QCC pour la capacité de processus",
+  "printObjectSummaryChk": "Imprimer le résumé de l'objet QCC pour la capacité du processus",
   "label1": "Sélectionnez une fonction de distribution qui correspond le mieux aux données",
   "variableSelcted": "Sélectionnez une variable (données observées) à analyser",
-  "rowsTobeUsed": "Si sélectionné, les lignes à utiliser pour analyser la capacité de processus (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12)",
+  "rowsTobeUsed": "Si sélectionné, les lignes à utiliser pour analyser la capacité du processus (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12)",
   "lower": "LSL - valeur numérique de la limite de spécification inférieure (tapez NA pour spécifier des limites de spécification unilatérales)",
   "upper": "USL - valeur numérique de la limite de spécification supérieure (tapez NA pour spécifier des limites de spécification unilatérales)",
   "target": "Limites de spécification cibles (facultatif)",
   "selectDistFuncWeibullRad": "Weibull",
-  "selectDistFuncExpRad": "Exponentielle",
+  "selectDistFuncExpRad": "Exponential",
   "selectDistFuncGammaRad": "Gamma",
   "selectDistFuncLnormalRad": "Log Normal",
   "selectDistFuncPoissonRad": "Poisson",
@@ -24,6 +24,6 @@
   "help": {
     "title": "Capacité de Processus pour Distribution Non-normale",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction qcc pour calculer les indices de capacité \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) et help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé pistonrings du package qcc avec le menu Charger le jeu de données en sélectionnant le package qcc puis en sélectionnant le jeu de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre à variable (observé..), échantillon à variable de regroupement, \n\t\t\t\t<br/>\n\t\t\t\tTapez 1:25 dans les lignes groupées à utiliser\n\t\t\t\t<br/>\n\t\t\t\tPour l'analyse de capacité de processus - tapez 73,95 dans LSL, 74,05 dans USL et 74,0 dans la limite cible\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction qcc calcule les indices de capacité \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), et help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé pistonrings depuis le package qcc avec le menu Charger le jeu de données en sélectionnant le package qcc puis en sélectionnant le jeu de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre à variable(observé..), échantillon à variable de regroupement, \n\t\t\t\t<br/>\n\t\t\t\tTapez 1:25 dans les lignes groupées à utiliser\n\t\t\t\t<br/>\n\t\t\t\tPour l'analyse de capacité de processus - tapez 73.95 dans LSL, 74.05 dans USL, et 74.0 dans la Limite Cible\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "title": "Dividi/Collassa un dataset con gruppi di variabili ripetute",
+  "navigation": "Set di Variabili Ripetute",
+  "removeColsWithConstantChk": "Rimuovi tutte le colonne con valori costanti (non sensibile al maiuscolo/minuscolo) prima di dividere o collassare",
+  "removeRowsWithNAsChk": "Mantieni solo i casi completi, ovvero rimuovi l'intera riga con valori vuoti o NA nel dataset di output",
+  "resultDatasetNameSuffix": "(Facoltativo) una o più stringhe (separate da virgola) da utilizzare come suffisso per il nome del dataset di output",
+  "splitDatasetRad": "Dividi il dataset in più dataset basati sul set di variabili ripetute",
+  "autoDetectColGroupLengthRad": "Rileva automaticamente il set di variabili ripetute da dividere o collassare",
+  "manualColGroupLengthRad": "Specifica la lunghezza del set di variabili ripetute da utilizzare per dividere o collassare",
+  "manualRepeatingColumnGroupLength": "Lunghezza del set di variabili ripetute",
+  "outputColumnNames": "(Facoltativo) Elenco dei nomi delle variabili (separati da virgola) da utilizzare per il dataset di output",
+  "collapseDatasetRad": "Collassa per creare un lungo dataset invece di dividere in più dataset",
+  "collapseGpIDPrefix": "Prefisso per i valori dell'ID del set",
+  "collapseGpIDColName": "Nome della variabile ID del set (verrà creata una nuova variabile nel dataset di output)",
+  "collapseGpIDColFirstChk": "Rendi la variabile ID del set la prima colonna (deseleziona per l'ultima colonna)",
+  "makeCollapseGpIDColFactorChk": "Rendi la variabile ID del set un fattore",
+  "label1": "Rilevamento del set di variabili ripetute",
+  "label2": "Dividi o Collassa il dataset?",
+  "help": {
+    "title": "Dividi/Collassa un dataset con gruppi di variabili ripetute",
+    "r_help": "",
+    "body": "\n            <b>Descrizione</b></br>\n            Questa finestra di dialogo viene utilizzata per dividere (in più dataset) o collassare (in un lungo dataset) un dataset con un set ripetuto di variabili\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tEsempio 1: Per provare questo, puoi utilizzare il file di dataset di esempio chiamato Repeating Variable Sets.xlsx\n\t\t\t<br/>\n\t\t\tApri il file nella griglia dei dati con il menu di apertura file\n\t\t\t<br/>\n\t\t\tNella finestra di dialogo - digita\n\t\t\t<br/>\n\t\t\tVerranno creati tre dataset poiché ci sono tre set di variabili ripetute. puoi digitare nessuna, una o più\n\t\t\tstringhe per i suffissi del nome del dataset di output come abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tMantieni ogni altro elemento nella finestra di dialogo come predefinito  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tEsempio 2: Per provare questo, puoi utilizzare il file di dataset di esempio chiamato Repeating Variable Sets2.xlsx\n\t\t\t<br/>\n\t\t\tApri il file nella griglia dei dati con il menu di apertura file\n\t\t\t<br/>\n\t\t\tNella finestra di dialogo - digita\n\t\t\t<br/>\n\t\t\tVerranno creati quattro dataset poiché ci sono quattro set di variabili ripetute\n\t\t\t<br/>\n\t\t\tMantieni ogni elemento nella finestra di dialogo come predefinito \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPuoi utilizzare gli stessi due file di dataset di esempio per provare l'opzione di Collassa nella sezione \"Dividi o Collassa il dataset?\" della finestra di dialogo per creare un singolo dataset di output\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

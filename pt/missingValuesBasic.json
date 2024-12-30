@@ -1,0 +1,16 @@
+{
+  "title": "Substituir valores ausentes (Variáveis numéricas)",
+  "navigation": "Numérico",
+  "label1": "Valores ausentes (NAs) nas variáveis selecionadas são substituídos aplicando uma função, ou seja, mediana, média, mínimo, máximo ou o valor especificado.",
+  "target": "Selecionar variáveis para substituir valores ausentes",
+  "label2": "Selecione uma função ou especifique um valor para substituir NAs",
+  "rd1": "Usar uma função para calcular valores ausentes",
+  "selectctrl": "Selecionar a função",
+  "rd2": "Especificar um valor numérico para substituir valores ausentes",
+  "valueEntered": "Digite um valor numérico",
+  "help": {
+    "title": "Substituir valores ausentes (Numérico)",
+    "r_help": "ajuda(média)",
+    "body": "\n<b>Descrição</b></br>\nSubstituir valores ausentes nas variáveis selecionadas pela operação selecionada, ou seja, mediana, média, mínimo, máximo\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvar: String de caracteres representando a variável numérica com valores ausentes (na), por exemplo, var = c('vendas')\n</li>\n<li>\nDataset: O conjunto de dados que contém a variável var\n</li>\n</ul>\n<b>Valor</b><br/>\nValores computados são armazenados diretamente no Dataset<br/>\n<b>Pacote</b></br>\nbasico</br>\n<b>Ajuda</b></br>\najuda(média)"
+  }
+}

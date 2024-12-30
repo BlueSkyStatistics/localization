@@ -1,0 +1,29 @@
+{
+  "title": "t-testi, Eşleşmiş Örnekler",
+  "navigation": "t-testi, Eşleşmiş Örnekler",
+  "tvarbox1": "Birinci sayısal değişken",
+  "tvarbox3": "İkinci sayısal değişken",
+  "label1": "Alternatif hipotez",
+  "test1": "Fark != mu",
+  "test2": "Fark > mu",
+  "test3": "Fark < mu",
+  "chkbox1": "Eşit varyans varsay",
+  "txtbox2": "Null hipotez (mu)",
+  "txtbox1": "Güven düzeyi",
+  "cohensdNoCorrection": "Cohen'in d'si",
+  "hedgesgNoCorrection": "Hedges' g",
+  "glassdNoCorrection": "Glass'ın delta'sı",
+  "hedgesgCorrect": "Hedges' g, yanlılık düzeltilmiş",
+  "glassdCorrect": "Glass'ın delta'sı, yanlılık düzeltilmiş",
+  "effectsizes": "Etkiler büyüklükleri",
+  "showEffectSizes": "Etkiler büyüklüklerini göster",
+  "cohensdCorrect": "Cohen'in d'si, yanlılık düzeltilmiş",
+  "label3": "Cohen'in d'si için seçenekler",
+  "label4": "Hedges' g için seçenekler",
+  "label5": "Glass'ın delta'sı için seçenekler",
+  "help": {
+    "title": "t-testi, bağımsız örnekler",
+    "r_help": "help(t.test, package ='stats')",
+    "body": "\n<b>Açıklama</b></br>\nVeri vektörleri üzerinde bir ve iki örnek t-testleri gerçekleştirir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## Varsayılan S3 yöntemi:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## 'formül' sınıfı için S3 yöntemi<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: bir (boş olmayan) sayısal veri vektörü.\n</li>\n<li>\ny: isteğe bağlı (boş olmayan) sayısal veri vektörü.\n</li>\n<li>\nalternative: alternatif hipotezi belirten bir karakter dizesi, \"two.sided\" (varsayılan), \"greater\" veya \"less\" olmalıdır. Sadece ilk harfi belirtebilirsiniz.\n</li>\n<li>\nmu: ortalamanın (veya iki örnek testinde ortalamalar arasındaki farkın) gerçek değerini belirten bir sayı.\n</li>\n<li>\npaired: eşleşmiş t-testi isteyip istemediğinizi belirten bir mantıksal değer.\n</li>\n<li>\nvar.equal: iki varyansı eşit olarak ele alıp almayacağınızı belirten bir mantıksal değişken. Eğer TRUE ise, havuzlanmış varyans kullanılır, aksi takdirde Welch (veya Satterthwaite) serbestlik dereceleri tahmini kullanılır.\n</li>\n<li>\nconf.level: aralığın güven düzeyi.\n</li>\n<li>\nformula: lhs ~ rhs biçiminde bir formül, burada lhs veri değerlerini veren bir sayısal değişken ve rhs karşılık gelen grupları veren iki seviyeli bir faktördür.\n</li>\n<li>\ndata: formüldeki değişkenleri içeren isteğe bağlı bir matris veya veri çerçevesi (veya benzeri: model.frame'e bakın). Varsayılan olarak, değişkenler environment(formula)'dan alınır.\n</li>\n<li>\nsubset: kullanılacak gözlemlerin isteğe bağlı bir alt kümesini belirten bir vektör.\n</li>\n<li>\nna.action: veriler NAs içerdiğinde ne olacağını belirten bir işlev. Varsayılan olarak getOption(\"na.action\")'dır.\n</li>\n<li>\n...: yöntemlere iletilecek veya yöntemlerden alınacak daha fazla argüman.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nFormül arayüzü yalnızca 2 örnek testleri için geçerlidir.</br>\nalternative = \"greater\" x'in y'den daha büyük bir ortalamaya sahip olduğu alternatifidir.</br>\nEğer paired TRUE ise, hem x hem de y belirtilmeli ve aynı uzunlukta olmalıdır. Eksik değerler sessizce kaldırılır (eşleşmiş ise eşleşmelerde). Eğer var.equal TRUE ise, havuzlanmış varyans tahmini kullanılır. Varsayılan olarak, eğer var.equal FALSE ise, varyans her iki grup için ayrı ayrı tahmin edilir ve Welch modifikasyonu serbestlik dereceleri için kullanılır.</br>\nGirdi verileri etkili bir şekilde sabitse (iki ortalamanın en büyüğüne kıyasla) bir hata üretilir.</br>\n<b>Değer</b><br/>\n\"htest\" sınıfına sahip bir liste, aşağıdaki bileşenleri içerir:<br/>\nstatistic: t-istatistiğinin değeri.<br/>\nparameter: t-istatistiği için serbestlik dereceleri.<br/>\np.value: test için p-değeri.<br/>\nconf.int: belirtilen alternatif hipoteze uygun ortalama için bir güven aralığı.<br/>\nestimate: bir örnek testi veya iki örnek testi olup olmadığına bağlı olarak tahmin edilen ortalama veya ortalamalar arasındaki fark.<br/>\nnull.value: bir örnek testi veya iki örnek testi olup olmadığına bağlı olarak ortalama veya ortalama farkı için belirtilen varsayılan değer.<br/>\nalternative: alternatif hipotezi tanımlayan bir karakter dizesi.<br/>\nmethod: hangi tür t-testinin yapıldığını belirten bir karakter dizesi.<br/>\ndata.name: verilerin adını veren bir karakter dizesi.<br/>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nhelp(t.test, package ='stats')\n"
+  }
+}

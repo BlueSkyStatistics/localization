@@ -1,0 +1,16 @@
+{
+  "title": "공분산 분석(ANCOVA)",
+  "navigation": "ANCOVA",
+  "response": "종속 변수",
+  "Fixed": "고정 요인",
+  "Block": "공변량",
+  "Summary": "모델 요약",
+  "Scatter_plot": "요인 변수의 각 수준에 대한 산점도",
+  "Residual": "잔차 대 적합도 플롯",
+  "Histogram": "잔차의 히스토그램 플롯",
+  "help": {
+    "title": "공분산 분석(ANCOVA)",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>설명</b></br>\n공분산 분석(ANCOVA)은 ANOVA와 회귀의 특징을 결합합니다. 이는 응답 변수와 관련된 하나 이상의 추가 정량적 변수를 공변량이라고 하며 ANOVA 모델을 보강합니다. 공변량은 오차 항의 분산을 줄이고 처리 효과의 보다 정확한 측정을 제공하기 위해 포함됩니다.</br> ANCOVA는 공변량의 효과를 제어하면서 요인의 주 효과 및 상호 작용 효과를 테스트하는 데 사용됩니다.</br>\n먼저 상호 작용 항이 포함된 Anova 테이블을 생성합니다. 목표는 상호 작용 항이 유의하지 않은지 즉, 고정 요인의 각 수준에 대한 공변량에 대한 종속 변수의 기울기가 다르지 않은지를 검사하는 것입니다. 우리는 car 패키지의 Anova 패키지를 사용하여 이 Anova 테이블을 생성합니다.</br>\n그런 다음 상호 작용 항을 제어하여 종속 변수와 공변량의 절편이 고정 요인의 각 수준에 대해 다른지를 결정하기 위해 Anova 테이블을 다시 생성합니다.</br> \n우리는 고정 요인의 각 수준에 대해 종속 변수와 공변량 변수의 산점도를 생성하는 옵션을 제공합니다.</br>\n우리는 상호 작용 항을 제어한 모델에 대해 잔차 대 적합도 플롯을 그리는 옵션을 제공합니다. 잔차는 편향이 없고 동질적이어야 합니다.</br>\n우리는 상호 작용 항을 제어한 모델에 대한 잔차의 히스토그램을 생성하는 옵션을 제공합니다. (분포는 대략 정규 분포여야 합니다).</br>\n모델을 요약하는 옵션을 제공합니다.</br>\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nformula: 적합할 모델에 대한 기호적 설명인 \"formula\" 클래스의 객체(또는 해당 클래스로 변환할 수 있는 객체).\n</li>\n<li>\ndata: 모델의 변수를 포함하는 선택적 데이터 프레임, 리스트 또는 환경(또는 as.data.frame에 의해 데이터 프레임으로 변환 가능한 객체).\n</li>\n</ul>\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nmod : lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm 또는 기타 적합한 모델 객체.​\n</li>\n<li>\ntype: 테스트 유형, \"II\", \"III\", 2 또는 3.\n</li>\n</ul>\n<b>패키지</b></br>\nAnova</br>\n<b>도움말</b></br>\nhelp(Anova, package ='car')\n    "
+  }
+}

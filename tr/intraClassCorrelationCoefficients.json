@@ -1,0 +1,12 @@
+{
+  "title": "Intraclass Korelasyon Katsayıları",
+  "navigation": "Intraclass Korelasyon Katsayıları",
+  "ratervars": "Değerlendirici Değişkenler:",
+  "cilevel": "Güven Düzeyi:",
+  "modeldetails": "Model Detayları",
+  "help": {
+    "title": "Intraclass Korelasyon Katsayıları",
+    "r_help": "help(ICC, package=psych)",
+    "body": "\n<b>Açıklama</b></br>\nBu, Shrout ve Fleiss (1979, Psychological Bulletin) tarafından tanımlanan 6 intraclass korelasyon katsayısını (ICC) hesaplar. Tahmin, eksik verileri işleyebilen kısıtlı maksimum olasılık ile doğrusal karışık etkiler modelleri kullanılarak yapılır.</br>\nShrout ve Fleiss, n hedef üzerinde k değerlendirici tarafından yapılan değerlendirmelerin güvenilirliğinin altı durumunu dikkate alır.</br>\nICC1: Her hedef, farklı bir k hakem seti tarafından değerlendirilir ve hakemler rastgele seçilir. Bu, değerlendirmelerde mutlak anlaşma ölçüsüdür.</br>\nICC2: Rastgele bir k hakem örneği her hedefi değerlendirir.</br>\nICC3: Her hedefi değerlendiren sabit bir k hakem seti vardır. Hakemlerin daha büyük bir popülasyona genellemesi yoktur.</br>\nBu durumların her biri için, tek bir değerlendirme veya k değerlendirmesinin ortalaması için güvenilirlik tahmin edilecek mi? ICC1, değerlendiriciler arasındaki ortalama farklılıklara duyarlıdır ve mutlak anlaşma ölçüsüdür. ICC2 ve ICC3, değerlendiriciler arasındaki ortalama farklılıkları ortadan kaldırır, ancak değerlendiricilerin konularla etkileşimlerine duyarlıdır. ICC2 ve ICC3 arasındaki fark, değerlendiricilerin sabit veya rastgele etkiler olarak görülüp görülmediğidir. ICC1k, ICC2k ve ICC3K, k değerlendiricinin ortalamalarını yansıtır.</br>\nDeğerlendirici Değişkenleri: Her değerlendiriciye karşılık gelen değişkenler. Bunlar sayısal değişkenler olmalıdır.</br>\nGüven Aralığı Düzeyi: ICC'ler için istenen güven aralığı düzeyi</br>\nModel Detayları: Temel karışık etkiler doğrusal modellerden detayları gösterir</br>\n<b>Paket</b></br>\npsych</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya aşağıdaki komutu çalıştırarak help(ICC, package=psych) R kodu parçası oluşturarak + butonuna tıklayın."
+  }
+}

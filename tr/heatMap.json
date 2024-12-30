@@ -1,0 +1,32 @@
+{
+  "title": "Isı Haritası",
+  "navigation": "Isı Haritası",
+  "rowVariables": "Hedef değişken",
+  "columnVariables": "Sütun değişkenleri",
+  "options": "Seçenekler",
+  "title1": "Isı Haritası Başlığı",
+  "dendrogram": "Dendrogram:",
+  "label1": "Satır dendrogramı seçenekleri:",
+  "plotRowYes": "Satır ortalamalarına göre dendrogramı yeniden sırala",
+  "plotRowNo": "Yeniden sıralama yok (dendrogram hesaplanmayacak)",
+  "label2": "Sütun dendrogramı seçenekleri",
+  "plotColumnYes": "Sütun ortalamalarına göre dendrogramı yeniden sırala",
+  "plotColumnNo": "Hayır",
+  "symmetric": "Simetrik matris durumunda sütunları satırlar gibi ele al",
+  "trace": "Satırlar, sütunlar, hem satırlar hem de sütunlar veya hiçbiri üzerinden katı iz çizme seçenekleri",
+  "density": "Yoğunluk seçenekleri:",
+  "scale": "Değerler satır yönünde, sütun yönünde veya hiçbiri olarak merkezlenmelidir",
+  "label3": "Eksik değerler",
+  "Remove": "Eksik değer içeren tüm satırları kaldır",
+  "Keep": "Eksik değer içeren satırları koru",
+  "label4": "Hücrede değerleri yerleştir",
+  "valuesNo": "Evet",
+  "valuesYes": "Hayır",
+  "noteColors": "Hücre değerleri için bir renk seçin (Renk seçiminizden sonra, uygulamak için kontrolün dışına tıklayın):",
+  "advanced_lbl": "Gelişmiş",
+  "help": {
+    "title": "Isı Haritası",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>Açıklama</b></br>\n            Isı haritası, bir matris içindeki bireysel değerlerin renkler olarak temsil edildiği grafiksel bir veri temsilidir. İsteğe bağlı olarak bir faktör değişkeni belirterek yüzeyler oluşturulabilir. Ayrıca temalar belirtebilir ve x ve y eksenleri için bir başlık ve etiketler belirtebilirsiniz.</br>\n            Veri seti, column1, column2…columnN formatında olmalıdır, burada</br>\n            column1: Kolesterol değerlerinin çizildiği kişilerin isimleri gibi konuları tanımlar</br>\n            column2: Zaman 1'deki kolesterol değerlerini tanımlar</br>\n            column3: Zaman 2'deki kolesterol değerlerini tanımlar</br>\n            column4: Zaman 3'teki kolesterol değerlerini tanımlar</br>\n            column5: Zaman 4'teki kolesterol değerlerini tanımlar…</br>\n            Column1, ısı haritasındaki her satır için bir etikettir.</br>\n            Column 2'den itibaren, sütundaki her satırdaki değerler ısı haritasında renkler olarak temsil edilir.</br>\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Konu'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            Yukarıdaki fonksiyon BlueSky paketindedir ve gplots paketindeki heatmap.2 fonksiyonunu çağırır.\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti\n            </li>\n            <li>\n            rowVariable: Grafiğin oluşturulduğu konular hakkında bilgi içeren sütun değişkeni, yukarıya bakınız\n            </li>\n            <li>\n            colVariables:  Isı haritasında renkler olarak temsil edilecek değerleri içeren sütun değişkenleri listesi\n            </li>\n            <li>\n            Colv: Sütun dendrogramının nasıl yeniden sıralanacağını belirler. Yukarıdaki Rowv argümanıyla aynı seçeneklere sahiptir ve ayrıca x bir kare matris olduğunda, Colv=\"Rowv\" sütunların satırlarla aynı şekilde ele alınması gerektiği anlamına gelir.\n            </li>\n            <li>\n            Rowv:   Satır dendrogramının nasıl yeniden sıralanacağını belirler. Varsayılan olarak, TRUE'dur, bu da dendrogramın hesaplandığı ve satır ortalamalarına göre yeniden sıralandığı anlamına gelir. NULL veya FALSE ise, o zaman dendrogram hesaplanmaz ve yeniden sıralama yapılmaz. Eğer bir dendrogram varsa, o zaman \"olduğu gibi\" kullanılır, yani herhangi bir yeniden sıralama olmadan. Eğer bir tamsayı vektörü varsa, o zaman dendrogram hesaplanır ve vektörün sırasına göre yeniden sıralanır.\n            </li>\n            <li>\n            na.rm: NA'ların kaldırılıp kaldırılmayacağını belirleyen mantıksal\n            </li>\n            <li>\n            dendrogram: 'none', 'row', 'column' veya 'both' dendrogramlarının çizilip çizilmeyeceğini belirten karakter dizesi. Varsayılan olarak 'both'tur. Ancak, Rowv (veya Colv) FALSE veya NULL ise ve dendrogram 'both' ise, o zaman bir uyarı verilir ve Rowv (veya Colv) argümanları dikkate alınır.\n            </li>\n            <li>\n            scale: Değerlerin ya satır yönünde ya da sütun yönünde merkezlenip ölçeklenip ölçeklenmeyeceğini belirten karakter. Varsayılan \"none\"'dır.\n            </li>\n            <li>\n            trace: Değerlerin ya satır yönünde ya da sütun yönünde merkezlenip ölçeklenip ölçeklenmeyeceğini belirten karakter. Varsayılan \"none\"'dır.\n            </li>\n            <li>\n            density.info: Renk anahtarına 'histogram', 'density' grafiği veya hiçbiri ('none') süperpoze edilip edilmeyeceğini belirten karakter dizesi.\n            </li>\n            <li>\n            noteForCells: Değerlerin ısı haritasının hücrelerinde yer alıp almayacağını belirten mantıksal.\n            </li>\n            <li>\n            notecol: Notların rengi. Belirtilirse, değerler belirtilen renkte ısı haritası hücrelerinde not edilir.\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            BlueSky;gplots;</br>\n            <b>Yardım</b></br>\n            help(heatmap.2,package='gplots')</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.</br>\n            Örnek Veri Setleri: Örnek Veri Setleri klasöründe Heatmaps.Rdata'ya bakın.</br>\n     "
+  }
+}

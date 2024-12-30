@@ -1,0 +1,16 @@
+{
+  "title": "Variável de ID",
+  "navigation": "Variável de ID",
+  "varnamelabel": "Nome da variável de ID a ser criada",
+  "sortbyvarslabel": "Variáveis para ordenar primeiro",
+  "groupbyvarslabel": "Variáveis para agrupar por",
+  "outputdatalabel": "Conjunto de Dados de Saída",
+  "newdatalabel": "Criar Novo Conjunto de Dados",
+  "overwritelabel": "Substituir Conjunto de Dados Existente",
+  "newdatasetlabel": "Digite um Nome para o Novo Conjunto de Dados",
+  "help": {
+    "title": "Variável de ID",
+    "r_help": "help(row_number, package ='dplyr')",
+    "body": "\nCria uma variável de identificação (ID) numérica nas atuais ou em uma cópia separada do conjunto de dados atual.  \nA variável ID criada consistirá nos valores numéricos 1, 2, 3, etc., nessa ordem, de cima para baixo no conjunto de dados.  \nPode-se opcionalmente especificar variáveis para ordenar ou agrupar antes que a variável de identificação seja criada.  As variáveis para ordenar e agrupar \npodem ser as mesmas ou diferentes.  Se nenhuma variável de agrupamento for especificada, o número da linha geral do conjunto de dados será atribuído \na variável ID.\n<br/><br/>\n<b>Nome da variável de ID a ser criada:</b> Especifique o nome desejado da variável ID no conjunto de dados de saída.\n<br/><br/>\n<b>Variáveis para ordenar primeiro (opcional): </b> Especifique variáveis para ordenar antes que os grupos sejam definidos ou a variável ID seja criada\n<br/><br/>\n<b>Variáveis para Agrupar Por (opcional):</b> Especifique variáveis cujos níveis definirão a atribuição separada de valores ID.  Por exemplo, agrupar por \ngênero criará valores de 1, 2, 3, etc. separadamente para homens e mulheres, na ordem de aparecimento no conjunto de dados.\n<br/><br/>\n<b>Conjunto de Dados de Saída:</b> Especifique se deseja criar um novo conjunto de dados ou substituir o conjunto de dados atual\n<br/><br/>\n<b>Pacotes R Necessários:</b> tidyverse\n\t\t\t"
+  }
+}

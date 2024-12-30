@@ -1,0 +1,23 @@
+{
+  "title": "Especifique os níveis a manter ou substituir por outros",
+  "navigation": "Agrupar em Outros (Manual)",
+  "target": "Variáveis fatoriais para reordenar",
+  "label1": "Insira os níveis fatoriais a manter ou substituir por outros. Quando os níveis a manter são selecionados, os níveis restantes serão substituídos por \"Outros\". Quando substituir é selecionado, os níveis especificados serão substituídos por \"Outros\"",
+  "other": "Nome do nível usado para valores \"Outros\"",
+  "label3": "Método a usar",
+  "keep": "Manter níveis",
+  "drop": "Remover níveis",
+  "keepOption": "Insira os níveis a manter separados por vírgula, os níveis restantes serão substituídos por \"Outros\", por exemplo, nível1,nível2,nível3",
+  "dropOption": "Insira os níveis a substituir por \"Outros\", por exemplo, nível1,nível2,nível3",
+  "label2": "Salvar resultados em nova variável(is) ou sobrescrever variável(is) existente(s)",
+  "rd3": "Especifique um sufixo (Uma nova variável será criada com o sufixo)",
+  "txt3": "Insira um sufixo",
+  "rd2": "Especifique um prefixo (Uma nova variável será criada com o prefixo)",
+  "txt4": "Insira um prefixo",
+  "rd1": "Sobrescrever variáveis existentes",
+  "help": {
+    "title": "Níveis a manter ou substituir",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>NOTA: NÃO ENCAIXE OS NÍVEIS EM ASPAS DUPLAS OU ASPAS SIMPLES, NÃO PODE HAVER ESPAÇOS NOS NOMES DOS NÍVEIS. INSIRA OS NÍVEIS SEPARADOS POR VÍRGULAS NO FORMATO NÍVEL1,NÍVEL2,NÍVEL3</b><br/>\n<b>Descrição</b></br>\nInsira os níveis fatoriais a manter ou remover. Quando manter é selecionado, os níveis restantes serão substituídos por \"Outros\". Quando remover é selecionado, os níveis removidos serão substituídos por \"Outros\"\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"Outros\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf : Um fator (ou vetor de caracteres).\n</li>\n<li>\nkeep, drop: manter preservará os níveis listados, substituindo todos os outros pelo other_level. remover substituirá os níveis listados pelo other_level, mantendo todos os outros como estão.\n</li>\n<li>\nother_level: Valor do nível usado para valores \"outros\". Sempre colocado no final dos níveis.\n</li>\n</ul>\n<b>Exemplos</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>Pacote</b></br>\nforcats</br>\n<b>Ajuda</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

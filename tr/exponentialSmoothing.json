@@ -1,0 +1,32 @@
+{
+  "title": "Üssel Düzgünleştirme",
+  "navigation": "Üssel Düzgünleştirme",
+  "destination": "Tahmin edilecek değişkenler",
+  "firstObservation": "İlk gözlem zamanı örn.1: Ocak 1961 için 1961,1 girin, örn.2: 1961,3 için 1961'ın 3. Çeyreği girin, örn.3: sürekli bir seri için 1 girin",
+  "frequency": "Zaman birimi başına gözlem sayısı örn.1: bir yıl için her ay bir gözlem için 12 girin, örn.2: çeyrek başına bir gözlem için 4 girin, örn.3: sürekli bir seri için 1 girin.",
+  "label1": "Grafikler",
+  "plotSeries": "Seriyi çiz",
+  "yaxisLabel": "Y ekseni etiketi",
+  "mainTitle": "Ana başlık",
+  "label2": "Uygun değerler için seçenekler",
+  "saveFitted": "Uygun değerleri kaydet",
+  "fittedValsDatasetName": "Uygun değerleri saklamak için veri seti adını belirtin",
+  "oriVsFitted": "Orijinal ile Uygun olanı çiz",
+  "plotResiduals": "Artıkları çiz",
+  "label3": "Modeli kullanarak tahmin et",
+  "predict": "Modeli kullanarak tahmin yap",
+  "periodToPredict": "Tahmin edilecek aralık sayısını belirtin",
+  "confInterval": "Yüzde cinsinden güven aralığını belirtin örn. 95 için %95",
+  "savePredictedVals": "Tahmin edilen değerleri kaydet",
+  "predictedValsDatasetName": "Tahmin edilen değerleri saklamak için veri seti adını belirtin",
+  "plotPredicted": "Tahmin edilen değerleri çiz",
+  "correlogram": "Korelasyon grafiği oluştur",
+  "maxlag": "Maksimum gecikmeyi girin",
+  "Boxtest": "Ljung-Box testi",
+  "advanced_lbl": "Gelişmiş",
+  "help": {
+    "title": "Üssel Düzgünleştirme",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>Açıklama</b></br>\nBSkyHoltWintersSeasonal, verilen bir zaman serisinin Holt-Winters Filtrelemesini hesaplayan stats paketinden HoltWinters için bir sarmalayıcı işlevdir. Bilinmeyen parametreler, kare tahmin hatasını minimize ederek belirlenir. İçsel olarak, Holt-Winters'ı çağırır ve mevsimsel bileşen için gamma parametresi FALSE olarak ayarlanır, Holt-Winters Filtre'sinin beta parametresi, üssel düzgünleştirme yapmak için FALSE olarak ayarlanır ve mevsimsel = \"None\".<br/> \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArgümanlar\n<ul>\n<li>\nvars: bir model oluşturmak için bir değişken seçin\n</li>\n<li>\nstart: İlk gözlem zamanı yıl, ay veya yıl, çeyrek formatında girilmelidir örn. (verileriniz aylara göre düzenlenmişse 1992,1 için Ocak 1992 veya verileriniz çeyrekler halinde düzenlenmişse 1992,1 1992'nin ilk çeyreğini ifade eder.\n</li>\n<li>\nfrequency: Birim zamanda gözlem sayısı. Örnek: aylık için yılda 12 gözlem vardır. Çeyrek için yılda 4 gözlem vardır.\n</li>\n<li>\nexponential: Üssel düzgünleştirmenin yapılıp yapılmayacağını belirler, değeri TRUE olarak ayarlanır\n</li>\n<li>\nseasonal: üssel düzgünleştirme için \"None\" karakter dizisi.\n</li>\n<li>\nplotSeries: TRUE ise bir zaman serisi grafiği de oluşturulacaktır.\n</li>\n<li>\nsaveFitted: TRUE ise uygun değerler kaydedilir.\n</li>\n<li>\nplotOriginalandForecast: Orijinal ve tahmin edilen serileri çiz\n</li>\n<li>\npredict: TRUE ise tahmin edilen değerler de oluşturulacaktır.\n</li>\n<li>\nsavePredictedVals: tahmin edilen değerler kaydedilecektir.\n</li>\n<li>\nplotPredictedValues: tahmin edilen değerler de çizilecektir.\n</li>\n<li>\ncorrelogram: TRUE ise bir korelasyon grafiği oluşturulacaktır.\n</li>\n<li>\nmain: grafiğin ana başlığı\n</li>\n<li>\nylab: y ekseni için başlık\n</li>\n<li>\ndataset: değişkenlerin seçildiği veri setinin adı\n</li>\n</ul>\n<b>Değer</b><br/>\n\"HoltWinters\" sınıfından bir nesne, bileşenleri içeren bir liste:<br/>\nfitted: filtrelenmiş seri için bir sütun ile birlikte birden fazla zaman serisi.<br/>\nx: Orijinal seri<br/>\nalpha: filtreleme için kullanılan alpha<br/>\nbeta: filtreleme için kullanılan beta<br/>\ngamma: filtreleme için kullanılan gamma<br/>\ncoefficients: seviye, trend ve mevsimsel bileşenler için tahmin edilen değerleri içeren a, b, s1, ..., sp adlandırılmış bileşenlerden oluşan bir vektör<br/>\nseasonal: belirtilen mevsimsel parametre<br/>\nSSE: optimize etmede elde edilen son kare hata toplamı<br/>\ncall: kullanılan çağrı<br/>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üstündeki sağ üst köşedeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(HoltWinters , package=stats)\n\t\t\t"
+  }
+}

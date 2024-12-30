@@ -1,0 +1,25 @@
+{
+  "title": "스트립 차트",
+  "navigation": "스트립 차트",
+  "x": "X 변수, 숫자 변수를 지정하세요",
+  "y": "Y 변수, 숫자 변수를 지정하세요",
+  "Fill": "색상, 요인 변수를 지정하세요",
+  "size": "점의 크기를 비례적으로 만드세요",
+  "shape": "모양",
+  "alpha": "불투명도 (0-1)",
+  "flipaxis": "축 뒤집기",
+  "jitter": "지터 효과 적용",
+  "specify_a_title": "제목 입력",
+  "x_title": "X 축 레이블",
+  "y_title": "Y 축 레이블",
+  "Facetrow": "패싯 행",
+  "Facetcolumn": "패싯 열",
+  "Facetwrap": "패싯 랩",
+  "Facetscale": "패싯 스케일",
+  "facets_lbl": "패싯",
+  "help": {
+    "title": "스트립 차트",
+    "r_help": "help(geom_point, package=ggplot2)",
+    "body": "\n            <b>설명</b></br>\n            스트립 차트는 가장 기본적인 유형의 플롯입니다. 데이터 포인트가 각 데이터 포인트가 상자로 표현되는 선을 따라 순서대로 플롯됩니다. 점의 모양은 요인 변수(x)의 수준에 따라 달라집니다. 점은 선택적으로 요인 변수(y)에 의해 그룹화될 수 있습니다. 요인 변수를 지정하여 선택적으로 패싯을 생성할 수 있습니다.</br>\n            또한 선택적으로 테마를 지정하고 x 및 y 축의 제목과 레이블을 지정할 수 있습니다.</br>\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            ggplot(Dataset5,aes(x = origin,y = engine,color = cylinder,shape =origin)) + geom_jitter()  + xlab(\"\") +theme_calc() +facet_grid(year~.)​\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 기본 데이터셋​\n            </li>\n            <li>\n            aes(): 데이터의 변수가 지오메트리의 시각적 속성(미적)에 어떻게 매핑되는지를 설명하는 미적 매핑을 생성합니다.​\n            </li>\n            <li>\n            x: 그룹화 변수. 점의 모양은 요인 변수의 수준에 따라 달라집니다.​\n            </li>\n            <li>\n            y: 점이 플롯되는 변수​\n            </li>\n            <li>\n            color: 점을 그룹화하기 위한 선택적 요인 변수(색상별)​\n            </li>\n            <li>\n            Labs(): 축 레이블과 범례 제목을 변경합니다(선택 사항)​\n            </li>\n            <li>\n            facet_grid(): 패널을 그리드에 배치합니다(선택 사항)​\n            </li>\n            <li>\n            theme_calc(): 계산기 테마를 지정합니다(선택 사항)​\n            </li>\n            <li>\n            geom_jitter(): 지터 지오메트리는 position = 'jitter'가 있는 geom_point의 편리한 기본값입니다. 지터링 양을 조정하는 방법은 position_jitter를 참조하세요.\n            </li>\n            <li>\n            coord_flip(): 축을 뒤집습니다(선택 사항)​\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            ggplot2;ggthemes;</br>\n            <b>도움말</b></br>\n            help(geom_point, package='ggplot2')</br>\n            기타: R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻으세요. help(labs), help(geom_jitter), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 입력할 수도 있습니다.\n    "
+  }
+}

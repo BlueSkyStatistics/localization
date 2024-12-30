@@ -1,0 +1,10 @@
+{
+  "title": "Plotar um Modelo",
+  "navigation": "Plotar um Modelo",
+  "modelselector1": "Selecione um modelo de uma das seguintes classes (classe entre parênteses) Modelo linear (lm), Modelos lineares generalizados (glm)",
+  "help": {
+    "title": "Plotar um Modelo",
+    "r_help": "ajuda(plot, pacote ='gráficos')",
+    "body": "\n                <b>Descrição</b></br>\nFunção genérica para plotar objetos R. Para mais detalhes sobre os argumentos de parâmetros gráficos, veja par.\nPara gráficos de dispersão simples, plot.default será utilizado. No entanto, existem métodos de plotagem para muitos objetos R diferentes, incluindo funções, data.frames, objetos de densidade, etc. Use methods(plot) e a documentação para estes.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nplot(objeto)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobjeto: qualquer objeto R com um método de plotagem pode ser fornecido.\n</li>\n</ul>\n<b>Pacote</b></br>\ngráticos</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R ajuda(plot, pacote ='gráficos')\n"
+  }
+}

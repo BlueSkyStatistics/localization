@@ -1,0 +1,14 @@
+{
+  "title": "Bir değişken için önceden Box-Cox dönüşümü ile Lambda (λ) Ekle/Değiştir/Kaldır",
+  "navigation": "Lambda Ekle/Kaldır",
+  "label2": "Önceden Box-Cox dönüşümü uygulanmış bir değişkeni eklemek/değiştirmek/kaldırmak için bir değişken seçin (λ)",
+  "variableSelcted": "Bir değişken seçin",
+  "selectAddLambdaRad": "Seçenek 1: Önceden Box-Cox dönüşümü uygulanmışsa Lambda (λ) değerini ekleyin/değiştirin",
+  "selectRemoveLambdaRad": "Seçenek 2: Değişkene yanlışlıkla eklenmişse Lambda (λ) değerini kaldırın",
+  "lambda": "Seçilen değişken için kaydedilecek (-2 ile 2 arasında) bir Lambda (λ) değeri belirtin",
+  "help": {
+    "title": "Önceden Box-Cox dönüşümü için kullanılan Lambda (λ) Ekle/Değiştir/Kaldır",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBu diyalog, değişkenle ilişkili Lambda (λ) değerinin doğru bir şekilde kaydedilmesi veya ayarlanması gerektiğinde kolaylık sağlamak için sunulmuştur. Doğru Lambda (λ) değeri, ters Box-Cox gerektiğinde kullanılacağı için önemlidir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-Cox veya Lambda (λ) hakkında detaylı yardım için R help(boxcox, package = MASS) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Cox hakkında iyi bir genel bakış için https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html adresine bakın</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTanıdık Box-Cox dönüşümleri ile ilişkili Lambda (λ) değerleri \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: kare dönüşümü ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: dönüşüm yok; orijinal veriyi döndürür ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: karekök dönüşümü ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: küp kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: dördüncü kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: doğal log dönüşümü ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: ters karekök dönüşümü ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: ters (inverse) dönüşüm ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: ters kare dönüşümü ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

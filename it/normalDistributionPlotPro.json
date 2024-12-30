@@ -1,0 +1,28 @@
+{
+  "title": "Grafico della distribuzione normale con etichette",
+  "navigation": "Grafico della distribuzione normale con etichette",
+  "mean": "Media",
+  "sd": "Deviazione standard",
+  "pdenfun": "Grafico della funzione di densità",
+  "pdstfun": "Grafico della funzione di distribuzione",
+  "lblregions": "Specifica facoltativamente le regioni sotto la funzione di densità tramite",
+  "xvals": "valori x",
+  "quantiles": "quantili",
+  "lblRegFill": "Regioni da riempire (specifica una o due, o lascia vuoto per l'opzione valori x o quantile). Lascia vuoto il campo 'Da' per tracciare la coda sinistra (inferiore) e lascia vuoto il campo 'A' per tracciare la coda destra (superiore)",
+  "lblreg1": "Regione 1 :",
+  "lblreg2": "Regione 2 :",
+  "lblregfrm": "Da",
+  "lblregto": "A",
+  "lblregcol": "Colore",
+  "lowProbBound": "Limite inferiore di probabilità utilizzato per generare la distribuzione del campione",
+  "upperProbBound": "Limite superiore di probabilità utilizzato per generare la distribuzione del campione",
+  "lblLegPos": "Posizione della legenda",
+  "toprt": "In alto a destra",
+  "toplt": "In alto a sinistra",
+  "topmid": "In alto al centro",
+  "help": {
+    "title": "Grafico della distribuzione normale con etichette",
+    "r_help": "help(qnorm, package=stats)",
+    "body": "\n            ​​\n            <b>Descrizione</b>\n            <br/>\n            Funzione di densità, funzione di distribuzione, funzione quantile e generazione casuale per la distribuzione normale con media uguale a media e deviazione standard uguale a sd.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argomenti</b>\n            <br/>\n            <ul>\n                <li>x, q : vettore di quantili.</li>\n                \n                \n                <li>p : vettore di probabilità.</li>\n                \n                \n                <li>n : numero di osservazioni. Se length(n) > 1, la lunghezza è presa come il numero richiesto.</li>\n                \n                \n                <li>mean : vettore di medie.</li>\n                \n                \n                <li>sd : vettore di deviazioni standard.</li>\n                \n                \n                <li>log, log.p : logico; se TRUE, le probabilità p sono date come log(p).</li>\n                \n                \n                <li>lower.tail : logico; se TRUE (predefinito), le probabilità sono P[X ≤ x] altrimenti, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Dettagli</b>\n            <br/>\n            Se mean o sd non sono specificati, assumono i valori predefiniti di 0 e 1, rispettivamente.\n            <br/>\n            La distribuzione normale ha densità\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            dove μ è la media della distribuzione e σ la deviazione standard.\n            <br/>\n            <br/><b>Valore</b>\n            <br/>\n            dnorm fornisce la densità, pnorm fornisce la funzione di distribuzione, qnorm fornisce la funzione quantile e rnorm genera variabili casuali.\n            <br/>\n            La lunghezza del risultato è determinata da n per rnorm, ed è il massimo delle lunghezze degli argomenti numerici per le altre funzioni.\n            <br/>\n            Gli argomenti numerici diversi da n vengono riciclati alla lunghezza del risultato. Solo i primi elementi degli argomenti logici vengono utilizzati.\n            <br/>\n            Per sd = 0 questo dà il limite mentre sd diminuisce a 0, una massa puntuale a mu. sd < 0 è un errore e restituisce NaN.            \n"
+  }
+}

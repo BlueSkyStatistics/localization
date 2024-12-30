@@ -1,0 +1,26 @@
+{
+  "title": "Gráfico de Densidade",
+  "navigation": "Densidade",
+  "x": "Selecione uma variável(ais) para plotar",
+  "y": "Cor, especifique uma variável de fator",
+  "fill": "Preenchimento, especifique uma variável de fator",
+  "label1": "Selecione uma posição para controlar a sobreposição",
+  "rd1": "Empilhar densidades",
+  "rd2": "Empilhar densidades e padronizar cada pilha para ter altura unitária",
+  "rd3": "Lado a lado (Dodge)",
+  "alpha": "Opacidade (0-1)",
+  "flip": "Inverter Eixo",
+  "specify_a_title": "Digite um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Densidade",
+    "r_help": "help(geom_density, package='ggplot2')",
+    "body": "\n            <b>Descrição</b></br>\n            Plota as contagens de densidade (estimativa de densidade de kernel 1d). Permite separar densidades por uma variável de fator. Você também pode opcionalmente criar facetas, temas e especificar um título e rótulos para os eixos x e y.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Gráfico de densidade para a variável var1\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Gráfico de densidade para a variável var1, cor por níveis de var2\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão\n            </li>\n            <li>\n            aes(): Gera mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.\n            </li>\n            <li>\n            x: a variável numérica para plotar densidades\n            </li>\n            <li>\n            y: ..count especifica contagens da variável numérica\n            </li>\n            <li>\n            fill: a variável de fator para agrupar o gráfico\n            </li>\n            <li>\n            position: Ajuste de posição, seja como uma string ou o resultado de uma chamada a uma função de ajuste de posição. Valores válidos são \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density (): estimativa de densidade de kernel 1d, o parâmetro de posição permite especificar o ajuste de posição a ser usado para pontos sobrepostos nesta camada.\n            </li>\n            <li>\n            Labs(): Muda rótulos de eixos e títulos de legenda (isto é opcional).\n            </li>\n            <li>\n            facet_grid(): Organiza painéis em uma grade (isto é opcional)\n            </li>\n            <li>\n            theme_excel(): O tema do excel (isto é opcional)\n            </li>\n            <li>\n            alpha: define a transparência\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes</br>\n            <b>Ajuda</b></br>\n            help(geom_density)</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(geom_density), help(labs), help(aes), help(facet_grid), help(theme_excel)\n    "
+  }
+}

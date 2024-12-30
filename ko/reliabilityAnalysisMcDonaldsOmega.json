@@ -1,0 +1,10 @@
+{
+  "title": "신뢰성 분석 (맥도날드의 오메가)",
+  "navigation": "맥도날드의 오메가",
+  "tvarbox1": "모든 항목",
+  "help": {
+    "title": "맥도날드의 오메가",
+    "r_help": "help(omega, package=psych)",
+    "body": "\n            <b>설명</b></br>\n맥도날드의 오메가 일반 및 총 요인 포화 추정치를 계산합니다\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nomega(m,nfactors=3,fm=\"minres\",n.iter=1,p=.05,poly=FALSE,key=NULL,\n    flip=TRUE,digits=2, title=\"Omega\",sl=TRUE,labels=NULL,\nplot=TRUE,n.obs=NA,rotate=\"oblimin\",Phi=NULL,option=\"equal\",covar=FALSE, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nm​: 상관 행렬 또는 데이터의 데이터 프레임/행렬, 또는 (Phi가 지정된 경우) 비스듬한 요인 패턴 행렬\n</li>\n<li>\nnfactors: 그룹화된 요인의 수\n</li>\n<li>\nfm​: 요인 방법 (기본값은 minres) fm=\"pa\"는 주축, fm=\"minres\"는 최소 잔차 (OLS) 솔루션, fm=\"pc\"는 주성분 (참고 참조), 또는 fm=\"ml\"은 최대 우도입니다.\n</li>\n<li>\nn.iter: 부트스트랩 추정치를 위한 오메가에서 수행할 복제 수​\n</li>\n<li>\np: 양측 신뢰 구간의 확률\n</li>\n<li>\ndigits​: 지정된 경우, 출력을 소수점 이하로 반올림​\n</li>\n<li>\npoly: 상관 행렬이 다항/테트라코릭 또는 일반 피어슨 상관을 사용하여 발견되어야 합니까\n</li>\n<li>\nkey​: 항목의 점수 방향을 지정하기 위한 +/- 1의 벡터. 기본값은 모든 항목이 긍정적으로 키가 지정된 것으로 가정하지만, 일부 항목이 반전된 점수인 경우 key를 지정해야 합니다.​\n</li>\n</ul>\n<b>값</b><br/>\nomega hierarchical: ω_h 계수<br/>\nomega.lim: 테스트가 무한히 커질 때 ω_h의 한계<br/>\nomega total: omega_t 계수<br/>\nalpha: 크론바흐의 α<br/>\nschmid: 슈미드 레이먼 변환 요인 행렬 및 관련 행렬<br/>\nschmid$sl: g 요인 적재량 및 잔여 요인<br/>\nschmid$orthog: 원래 요인의 바리맥스 회전 솔루션<br/>\nschmid$oblique: 오블리민 또는 프로막스 변환 요인<br/>\nschmid$phi: 비스듬한 요인의 상관 행렬<br/>\nschmid$gloading: 오블리민 요인의 고차원 g 요인에 대한 적재량<br/>\nkey: 항목이 점수화된 방향을 보여주는 -1 또는 1의 벡터.<br/>\nmodel: 구조 방정식 모델에 sem 함수에 적합한 두 요소의 목록, 다른 하나는 lavaan 패키지에 제공할 것입니다.<br/>\nsem: sem 분석의 출력<br/>\nomega.group: omega total, omega hierarchical (일반) 및 각 그룹 내 omega에 대한 요약 통계.<br/>\nscores: Schmid-Leiman 솔루션에 대한 요인 점수 추정치가 발견됩니다. 계층 모델에 대한 점수를 얻으려면 자세한 R 도움말의 주석을 참조하십시오.<br/>\nvarious fit statisticsvarious fit statistics, see output<br/>\n<b>패키지</b></br>\npsych​</br>\n<b>도움</b></br>\n자세한 도움을 보려면 이 대화 오버레이의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 다음 명령을 실행하십시오 help(omega, package=psych) 출력 창에서 +를 클릭하여 R 코드 청크를 생성합니다.\n\t\t\t"
+  }
+}

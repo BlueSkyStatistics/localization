@@ -1,0 +1,17 @@
+{
+  "title": "Tamanho da Amostra, Precisão de uma Razão de Risco",
+  "navigation": "Razão de Risco",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n1": "Tamanho da Amostra do Grupo 1",
+  "width": "Largura do Intervalo de Confiança",
+  "ratio": "Razão do Tamanho da Amostra do Grupo 2 para o Grupo 1",
+  "prop1": "Proporção de Resultado do Grupo 1",
+  "prop2": "Proporção de Resultado do Grupo 2",
+  "conflevel": "Nível de Confiança (0-1)",
+  "method": "Método do Intervalo de Confiança",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão de uma Razão de Risco",
+    "r_help": "help(prec_riskratio, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma razão de proporções (razão de risco / risco relativo) com base na largura do intervalo de confiança. Ela calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra do Grupo 1:</b> Especifique o número de sujeitos no grupo 1\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada. A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>Razão do Tamanho da Amostra do Grupo 2 para o Grupo 1:</b> Especifique a razão do tamanho da amostra do grupo 2 para o tamanho da amostra do grupo 1. Um valor de 1 significa tamanhos de amostra iguais.\n<br/><br/>\n<b>Proporção de Resultado do Grupo 1:</b> Especifique a proporção de sujeitos no grupo 1 com o resultado 'positivo'\n<br/><br/>\n<b>Proporção de Resultado do Grupo 2:</b> Especifique a proporção de sujeitos no grupo 2 com o resultado 'positivo'\n<br/><br/>\nObserve que a razão de risco será calculada como a proporção no grupo 1 dividida pela proporção no grupo 2.\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Método do Intervalo de Confiança:</b> Especifique o tipo de intervalo de confiança a ser utilizado. Koopman (koopman) fornece um intervalo de confiança de escore assintótico que é sempre consistente \ncom o teste qui-quadrado de Pearson. É o intervalo recomendado (Fagerland et al.). Katz (katz) usa uma transformação logarítmica para calcular o intervalo de confiança. O CI não pode \nser calculado se uma das proporções for zero. Se ambas as proporções forem 1, a estimativa do erro padrão se torna zero, resultando em um CI de [1, 1].\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

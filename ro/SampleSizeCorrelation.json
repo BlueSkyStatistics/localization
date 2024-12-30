@@ -1,5 +1,5 @@
 {
-  "title": "Dimensiunea eșantionului, Corelația testului",
+  "title": "Dimensiunea eșantionului, Test de corelație",
   "navigation": "Corelație",
   "howtouse": "Pentru a calcula dimensiunea eșantionului: specificați corelația și puterea\nPentru a calcula puterea: specificați dimensiunea eșantionului și corelația\nPentru a calcula corelația detectabilă: specificați dimensiunea eșantionului și puterea",
   "n": "Dimensiunea eșantionului",
@@ -11,8 +11,8 @@
   "greater": "Mai mare decât",
   "less": "Mai mic decât",
   "help": {
-    "title": "Dimensiunea eșantionului, Corelația testului",
+    "title": "Dimensiunea eșantionului, Test de corelație",
     "r_help": "help(pwr.r.test, package ='pwr')",
-    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un coeficient de corelație Pearson. Calculează dimensiunea eșantionului, puterea sau corelația atunci când utilizatorul specifică celelalte două. Corelația ipotezei nule este 0.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Corelație:</b> Specificați corelația de detectat\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă este adevărată.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) al testului\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional, mai mare decât (unidirecțional) sau mai mic decât (unidirecțional)\n<br/><br/>\n<b>Pachete R necesare:</b> pwr\n\t\t\t"
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un coeficient de corelație Pearson.  Calculează dimensiunea eșantionului, puterea sau corelația atunci când utilizatorul \nspecificează celelalte două.  Ipoteza nulă a corelației este 0.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Corelație:</b> Specificați corelația de detectat\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional, mai mare decât (unidirecțional) sau mai mic decât (unidirecțional)\n<br/><br/>\n<b>Pachete R necesare:</b> pwr\n\t\t\t"
   }
 }

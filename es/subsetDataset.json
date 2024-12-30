@@ -1,20 +1,20 @@
 {
-  "title": "Conjunto de datos de subconjunto",
+  "title": "Conjunto de Datos Subconjunto",
   "navigation": "Subconjunto",
-  "label0": "Puede elegir guardar los resultados en un nuevo conjunto de datos o sobrescribir el conjunto de datos existente",
+  "label0": "Puedes elegir guardar los resultados en un nuevo conjunto de datos o sobrescribir el conjunto de datos existente",
   "label1": "Opciones",
   "New": "Guardar resultados en un nuevo conjunto de datos",
-  "newdatasetname": "Ingrese un nombre de conjunto de datos",
-  "Existing": "Sobrescribir el conjunto de datos existente",
+  "newdatasetname": "Ingresa un nombre para el conjunto de datos",
+  "Existing": "Sobrescribir conjunto de datos existente",
   "Output": "Mostrar resultados en la ventana de salida",
   "distinct": "Seleccionar casos distintos",
-  "chkbox2": "Eliminar niveles de factor no utilizados",
-  "subsetvars": "Seleccione las variables para incluir en el conjunto de datos de subconjunto",
-  "label12": "\n\nLos criterios de subconjunto se aplican a cada fila, vea los ejemplos a continuación. \n1: Seleccione filas donde var 1 no esté vacío y var2 esté vacío, especifique:\n!is.na(var1) & is.na(var2) \n2: Seleccione filas donde var1 > 30 y var 2 es Masculino, especifique:\nvar1>30 & var2=='Masculino' \n3: Criterios complejos y/o especifique:\n(var1 !=10 & var2>20) | var3==40 \n4: Coincidencia de patrón (xxx) o coincidencia exacta (abc) especifique:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Coincidencia de una subcadena por posición especifique: substr(var1,2,4) ==\"abc\"",
-  "subsetexpression": "Ingrese criterios de subconjunto.",
+  "chkbox2": "Eliminar niveles de factores no utilizados",
+  "subsetvars": "Seleccionar variables para incluir en el conjunto de datos subconjunto",
+  "label12": "\n\nLos criterios de subconjunto se aplican a cada fila, ver ejemplos a continuación. \n1: Seleccionar filas donde var 1 no está vacío y var2 está vacío especificar:\n!is.na(var1) & is.na(var2) \n2: Seleccionar filas donde var1 > 30 y var 2 es Hombre especificar:\nvar1>30 & var2=='Hombre' \n3: Criterios complejos y/o especificar:\n(var1 !=10 & var2>20) | var3==40 \n4: Coincidencia de patrón (xxx) o una coincidencia exacta (abc) especificar:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Coincidir una subcadena por posición especificar: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Ingresa criterios de subconjunto.",
   "help": {
-    "title": "Conjunto de datos de subconjunto",
-    "r_help": "ayuda(select, paquete=dplyr)",
-    "body": "\n            <b>Descripción</b></br>\nSubconjuntos de conjuntos de datos/dataframe. Devuelve un subconjunto del dataframe/conjunto de datos. Puede especificar las columnas/variables que desea en el conjunto de datos más pequeño. También puede especificar criterios de selección que se aplicarán a cada fila del dataframe.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: objeto a ser subconjunto.\n</li>\n<li>\nsubset: expresión lógica que indica los elementos o filas a conservar: los valores faltantes se consideran falsos.\n</li>\n<li>\nselect: expresión, que indica las columnas a seleccionar de un dataframe.\n</li>\n</ul>\n<b>Valor</b><br/>\nDevuelve un conjunto de datos subconjunto<br/>\n<b>Paquete</b></br>\ndplyr<br/>  \n<b>Ayuda</b></br>\nayuda(select, paquete=dplyr)\n"
+    "title": "Conjunto de Datos Subconjunto",
+    "r_help": "help(select, package=dplyr)",
+    "body": "\n            <b>Descripción</b></br>\nConjuntos de datos/subconjuntos. Devuelve un subconjunto del dataframe/conjunto de datos. Puedes especificar las columnas/variables que deseas en el conjunto de datos más pequeño. También puedes especificar criterios de selección que se aplicarán a cada fila del dataframe.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: objeto a ser subconjunto.\n</li>\n<li>\nsubset: expresión lógica que indica elementos o filas a mantener: los valores faltantes se consideran falsos.\n</li>\n<li>\nselect: expresión, que indica columnas a seleccionar de un marco de datos.\n</li>\n</ul>\n<b>Valor</b><br/>\nDevuelve un conjunto de datos subconjunto<br/>\n<b>Paquete</b></br>\ndplyr<br/>  \n<b>Ayuda</b></br>\nhelp(select, package=dplyr)\n"
   }
 }

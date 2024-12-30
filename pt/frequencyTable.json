@@ -1,0 +1,15 @@
+{
+  "title": "Tabela de Frequência",
+  "navigation": "Frequências",
+  "subsetvars": "Selecionar variáveis",
+  "label1": "Opções de ordenação para a tabela de frequência",
+  "selectFreqSortRad": "Ordenar a tabela de frequência por frequência",
+  "selectVarSortRad": "Ordenar a tabela de frequência pelos valores da variável",
+  "selectNoSortRad": "Nenhum",
+  "selectSortOrderChk": "Ordem de classificação decrescente (desmarque para ordem crescente)",
+  "help": {
+    "title": "Tabela de Frequência",
+    "r_help": "ajuda(ftable, pacote=stats)",
+    "body": "\n<b>Descrição</b></br>\nGera as frequências para cada valor único em uma ou mais variáveis ou nomes de coluna selecionados.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"nome_do_conjunto_de_dados\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Detalhes</b></br>\nEste diálogo usa as seguintes funções:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

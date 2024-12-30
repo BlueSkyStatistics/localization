@@ -1,0 +1,13 @@
+{
+  "title": "게이지 편향 분석, 기본",
+  "navigation": "게이지 편향 분석, 기본",
+  "variableRespSelcted": "(편향 변수가 선택된 경우 선택 사항) 측정/응답 변수를 선택하십시오",
+  "variableRefSelcted": "참조/표준 값을 위한 변수를 선택하십시오",
+  "variableBiasSelcted": "(선택 사항) 사용 가능한 경우 편향 변수를 선택하십시오; 그렇지 않으면 자동으로 계산됩니다",
+  "alpha": "선형성에 대한 신뢰 구간 (0에서 1 사이)",
+  "help": {
+    "title": "게이지 편향 분석",
+    "r_help": "help(lm, package = stats)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t선형성 편향 분석을 수행하는 함수\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(lm, package = stats)를 사용하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 샘플 데이터셋 파일 linearityBias.xlsx를 사용할 수 있습니다. 파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다\n\t\t\t\t<br/>\n\t\t\t\t선택 상자에서 변수, 참조 및 측정을 선택하십시오\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Trasformazione Box-Cox di dati non normali in normali",
+  "navigation": "Trasformazione Box-Cox",
+  "label2": "Due opzioni: seleziona una variabile non normale da trasformare in normale oppure seleziona l'intero dataset da trasformare",
+  "selectVariableRad": "Opzione 1: Seleziona una variabile non normale dal dataset da trasformare in normale",
+  "variableSelcted": "Una variabile non normale da trasformare",
+  "boxcoxColName": "(Facoltativo) Specifica un nuovo nome di variabile per memorizzare i valori trasformati. Altrimenti verrà creato <variable_bcox>",
+  "selectDatasetRad": "Opzione 2: Trasforma l'intero dataset in normale",
+  "boxcoxDatasetName": "(Facoltativo) Specifica un nuovo nome di dataset per memorizzare i valori trasformati. Altrimenti verrà creato <dataset_bcox>",
+  "johnsonDatasetName": "(Facoltativo) Specifica un nuovo nome di dataset per Johnson (richiesto se viene scelta l'opzione 2 sopra)",
+  "boxcoxChk": "Trasformazione Box-Cox",
+  "johnsonChk": "Trasformazione Johnson",
+  "lambda": "(Facoltativo) Valore Lambda (λ) in (-2 a 2) da utilizzare per la trasformazione Box-Cox. Se non specificato, identificherà automaticamente il miglior valore Lambda",
+  "digits": "Cifre - arrotonda al numero specificato di decimali",
+  "help": {
+    "title": "Trasforma dati non normali in normali",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione per trasformare variabili non normali in normali con MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tLa trasformazione Box-Cox non può essere eseguita su valori negativi\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer un aiuto dettagliato - usa R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Per una buona panoramica di MASS Box-Cox, vedere https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValori Lambda (λ) associati a trasformazioni Box-Cox familiari \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: trasformazione quadrata ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: nessuna trasformazione; restituisce i dati originali ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: trasformazione della radice quadrata ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: trasformazione della radice cubica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: trasformazione della quarta radice\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: trasformazione logaritmica naturale ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: trasformazione della radice quadrata reciproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: trasformazione reciproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: trasformazione quadrata reciproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

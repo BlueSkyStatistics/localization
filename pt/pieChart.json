@@ -1,0 +1,31 @@
+{
+  "title": "Gráfico de Pizza",
+  "suppressLabels": "Suprimir todos os rótulos para contagens e porcentagens",
+  "optionsLabels": "Opções para rótulos",
+  "suppressThreshold": "Suprimir rótulos para contagens e porcentagens abaixo do percentual de limiar especificado",
+  "radius": "Especifique um raio para exibir rótulos (aumentar o raio move os rótulos para fora)",
+  "radiusNote": "Nota: A opção acima não se aplica quando a opção de exibir círculos concêntricos é selecionada.",
+  "navigation": "Gráfico de Pizza",
+  "concentricCircles": "Exibir círculos concêntricos (aplica-se apenas quando a variável do eixo X é especificada)",
+  "x": "Eixo X, especifique variável(is) fator",
+  "y": "Variável Y, especifique uma variável numérica",
+  "fill": "Preenchimento, especifique uma variável fator",
+  "alpha": "Opacidade (0-1)",
+  "width": "Largura",
+  "rdgrp1": "Proporções de preenchimento",
+  "flip": "Inverter eixo",
+  "barcolor": "Cor da barra (após a seleção da cor, clique fora do controle para aplicar)",
+  "specify_a_title": "Digite um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Pizza",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>Descrição</b></br>\n            Um gráfico de pizza (ou gráfico circular) é um gráfico estatístico circular, que é dividido em fatias para ilustrar a proporção numérica. Em um gráfico de pizza, o comprimento do arco de cada fatia (e, consequentemente, seu ângulo central e área) é proporcional à quantidade que representa. A quantidade pode ser representada como uma contagem ou porcentagem.\n            Facetas podem ser criadas opcionalmente especificando uma variável fator. Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y.</br>\n            Quando você especifica várias variáveis x, criamos um gráfico de pizza separado para cada variável x. </br>\n            O raio permite que você controle a colocação dos rótulos. Um raio de 1 coloca os rótulos no centro da pizza, um raio de 1,6 coloca os rótulos fora da pizza.</br>\n            O círculo externo cinza claro representa a contagem ou total. Veja o texto na parte inferior do gráfico de pizza para detalhes.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n            #Você pode criar um gráfico de pizza para uma única variável fator, as pizzas representarão as contagens de cada nível do fator. Aqui a variável fator corresponderá ao preenchimento<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"Gráfico de pizza com preenchimento: espécies\") +\n\tylab(\"\") + \n\txlab(\"Contagem\")</br></br>\n            #Você pode criar um gráfico de pizza especificando uma variável escala/numerica como a variável y, e preenchendo as fatias da pizza por uma variável fator. As pizzas são preenchidas somando os valores da variável y para cada nível da variável fator, veja o exemplo abaixo<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #Você pode especificar uma variável x, variável y e preenchimento. As fatias são criadas para cada nível da variável x e preenchidas pela soma dos valores da variável y para cada nível da variável especificada no preenchimento.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão​\n            </li>\n            <li>\n            aes():    Gera mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n            </li>\n            <li>\n            x: (Opcional) Uma variável fator/categórica. O comprimento da barra corresponde às contagens de cada nível da variável fator.​\n            </li>\n            <li>\n            Y: (Opcional) uma variável numérica\n            </li>\n            <li>\n            fill: (Opcional) Uma variável fator/categórica opcional para agrupar as contagens dos níveis em x: (veja acima)​\n            </li>\n            <li>\n            geom_bar(): Cria o gráfico de barras, position =\"fill\" preenche a barra com uma porcentagem de cada nível de agrupamento.​\n            </li>\n            <li>\n            Coor_polar(): O sistema de coordenadas polares é mais comumente usado para gráficos de pizza, que são um gráfico de barras empilhadas em coordenadas polares.\n            </li>\n            <li>\n            Labs(): Altera rótulos de eixos e títulos de legenda (isto é opcional)​\n            </li>\n            <li>\n            facet_grid(): Organiza painéis em uma grade (isto é opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica o tema do calculador (isto é opcional)​\n            </li>\n            <li>\n            coord_flip(): Inverter eixo (isto é opcional)​\n            </li>\n            <li>\n            alpha: Controla a opacidade, aceita valores entre 0-1. 1 significa sem opacidade.\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajuda</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​            \n    "
+  }
+}

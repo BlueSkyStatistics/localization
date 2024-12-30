@@ -1,0 +1,21 @@
+{
+  "title": "Reordenar Níveis de Fatores por Ocorrência",
+  "navigation": "Reordenar por Ocorrência",
+  "target": "Variáveis fatoriais para reordenar níveis",
+  "label1": "Selecione as variáveis fatoriais para reordenar pela ocorrência de dados na variável. Você pode sobrescrever variáveis existentes ou criar novas variáveis especificando um prefixo/sufixo. Novas variáveis serão criadas com o prefixo/sufixo anexado aos nomes existentes.",
+  "label2": "Salvar novos níveis em nova(s) variável(is) ou sobrescrever variável(is) existente(s)",
+  "rd3": "Especifique um sufixo (Uma nova variável será criada com o sufixo)",
+  "txt3": "Digite um sufixo",
+  "rd2": "Especifique um prefixo (Uma nova variável será criada com o prefixo)",
+  "txt4": "Digite um prefixo",
+  "rd1": "Sobrescrever variáveis existentes",
+  "label3": "Especifique uma ordem",
+  "Descending": "Na ordem de ocorrência",
+  "Ascending": "Na ordem inversa de ocorrência",
+  "ordered": "Tornar um fator ordenado (ordinal)",
+  "help": {
+    "title": "Remover NAs",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>Descrição</b></br>\nReordenar níveis de fatores pela primeira aparição (ocorrência). Veja reordenar por contagem para ordenar por contagem/frequência.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf: Um fator\n</li>\n<li>\nordered: Um lógico que determina o status \"ordenado\" do fator de saída. NA preserva o status existente do fator.\n</li>\n</ul>\n<b>Exemplos</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

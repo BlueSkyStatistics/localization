@@ -1,0 +1,13 @@
+{
+  "title": "Pseudo R Quadrato",
+  "navigation": "Pseudo R Quadrato",
+  "modelselector1": "Seleziona un modello",
+  "label1": "Seleziona un modello di una delle seguenti classi (classe tra parentesi)",
+  "label2": "Modelli lineari generalizzati (glm), Modelli log-lineari multinomiali (multinom), Regressione logistica ordinata o Probit (polr)",
+  "label3": "NOTA: I MODELLI COSTRUITI UTILIZZANDO L'OTTIMIZZAZIONE DEL MODELLO (TRAIN) NON SONO SUPPORTATI",
+  "help": {
+    "title": "Pseudo R Quadrato",
+    "r_help": "help(pR2, package='pscl')",
+    "body": "\n                <b>Descrizione</b></br>\ncalcola varie misure pseudo-R2 per vari GLM\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \npR2(object, ...)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nobject: un oggetto modello adattato, per ora di classe glm, polr o multinom\n</li>\n<li>\n... argomenti aggiuntivi da passare a o da funzioni\n</li>\n</ul>\n<b>Dettagli</b></br>\nNumerose misure pseudo r-quadrato sono state proposte per modelli lineari generalizzati, coinvolgendo un confronto della log-verosimiglianza per il modello adattato rispetto alla log-verosimiglianza di un modello nullo/restrittivo senza predittori, normalizzato per andare da zero a uno man mano che il modello adattato fornisce un miglior adattamento ai dati (fornendo un'analogia approssimativa con il calcolo del r-quadrato in una regressione lineare).</br>\n<b>Valore</b><br/>\nUn vettore di lunghezza 6 contenente<br/>\nllh: La log-verosimiglianza dal modello adattato<br/>\nllhNull: La log-verosimiglianza dal modello restrittivo solo con intercetta<br/>\nG2: Meno due volte la differenza nelle log-verosimiglianze<br/>\nMcFadden: Il pseudo r-quadrato di McFadden<br/>\nr2ML: Pseudo r-quadrato di massima verosimiglianza<br/>\nr2CU: Pseudo r-quadrato di Cragg e Uhler<br/>\n<b>Esempi</b><br/>\n<code> \ndata(admit)<br/>\n## modello probit ordinato<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            data=admit,\n            method=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>Pacchetto</b></br>\npscl</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(pR2, package=\"pscl\")\n                "
+  }
+}

@@ -438,7 +438,6 @@
   "sixSigmaOvrViewLink5" : "Part-3",
   "sixSigmaOvrViewLink6" : "Part-4",
   "sixSigmaOvrViewLink7" : "Part-5",
-  
   "OKBtnTxt" : "Ok",
   "CancelBtnTxt" : "Cancel",
   "FBRulVoiMsg" : "The control with label: Formula Builder needs to be populated to proceed",
@@ -555,7 +554,6 @@
   "errormessageIPCmsg11" : "cannot be moved, the destination does not allow variables of that type",
   "errormessageIPCmsg12" :  "You must select an entry to delete before clicking the delete button",
   "errormessageIPCTitle1" : "Not expected Type",
-  
   "projLaunchLoadMsg1": "Do you want to load your previous project ",
   "projLaunchLoadMsg2": "This may take a little while.",
   "projSwitchMsg1" : "If you switch to the same project that you are currently working on, your current unsaved changes will be lost and the last saved project will be loaded.",
@@ -585,52 +583,84 @@
   "projAsknameMsg4" : "you are saving will be saved in",
   "projAsknameMsg5" : "Do you want to replace the existing project with the new one?",
   "projAsknameMsg6" : "is an invalid or corrupt project.",
-  
   "jsoncomment0010" : "=======Top level menus and sub-menu dropdown below this line=======",
+
   "agreement_top_level_title":"Agreement",
+  "professional_Agreement_Menu" : "Agreement",
+
   "agreement_Method" : "Method",
+  "professional_Method" : "Method",
+
   "agreement_Scale" : "Scale",
+
   "analysis_top_level_title":"Analysis",
+  "contribution_Analysis_Menu" : "Analysis",
+  "professional_Analysis_Menu" : "Analysis",
+  "sixsigmapro_Analysis_Menu" : "Analysis",
+
   "analysis_Association_Rules" : "Association Rules",
   "analysis_Cluster" : "Cluster",
   "analysis_Correlations" : "Correlations",
+
   "analysis_Crosstab" : "Crosstab",
+  "professional_Crosstab" : "Crosstab",
+
   "analysis_Distribution_Analysis" : "Distribution Analysis",
+  "sixsigmapro_Distribution_Analysis" : "Distribution Analysis",
+
   "analysis_Factor_Analysis" : "Factor Analysis",
+
   "analysis_Means" : "Means",
-  "analysis_Missing_Values" : "Missing Values",
+  "sixsigmapro_Means" : "Means",
+
   "analysis_Moments" : "Moments",
   "analysis_Non_Parametric" : "Non-Parametric",
   "analysis_Proportions" : "Proportions",
+
   "analysis_Summary" : "Summary",
+  "professional_Summary" : "Summary",
+  "sixsigmapro_Summary" : "Summary",
+
   "analysis_Survival" : "Survival",
+  "contribution_Survival" : "Survival",
+  "professional_Survival" : "Survival",
+
   "analysis_Tables" : "Tables",
+  "contribution_Tables" : "Tables",
+
   "analysis_Variance" : "Variance",
   "contribution_Sample_Size_Menu" : "Sample Size",
   "contribution_Precision" : "Precision",
   "contribution_Tests" : "Tests",
+
   "contribution_Datasets_Menu" : "Datasets",
-  "contribution_Subset" : "Subset",
-  "contribution_Analysis_Menu" : "Analysis",
-  "contribution_Survival" : "Survival",
-  "contribution_Tables" : "Tables",
-  "contribution_Variables_Menu" : "Variables",
-  "contribution_Compute" : "Compute",
-  "contribution_Factor_Levels" : "Factor Levels",
-  "contribution_Model_Fitting_Menu" : "Model Fitting",
-  "contribution_Regression" : "Regression",
-  "contribution_Model_Evaluation_Menu" : "Model Evaluation",
   "datasets_top_level_title": "Datasets",
+  "datasetspro_Datasets_Menu": "Datasets",
+  "professional_Datasets_Menu" : "Datasets",
+
+  "contribution_Subset" : "Subset",
+  "datasets_Subset":"Subset",
+  "professional_Subset" : "Subset",
+
   "datasets_group_by": "Group By",
+
   "datasets_Matching":"Matching",
+  "professional_Matching" : "Matching",
+
   "datasets_Merge":"Merge",
+  "professional_Merge" : "Merge",
+
   "datasets_ReShape":"ReShape",
   "datasets_Sampling":"Sampling",
+
   "datasets_Sort":"Sort",
-  "datasets_Subset":"Subset",
+  "professional_Sort" : "Sort",
+
   "datasets_Transpose":"Transpose",
-  "datasetspro_Datasets_Menu": "Datasets",
+
   "distribution_top_level_title":"Distribution",
+  "sixsigmapro_Distribution_Menu" : "Distribution",
+
   "distribution_Beta" : "Beta",
   "distribution_Binomial" : "Binomial",
   "distribution_Cauchy" : "Cauchy",
@@ -644,7 +674,10 @@
   "distribution_Logistic" : "Logistic",
   "distribution_Lognormal" : "Lognormal",
   "distribution_Negative_Binomial" : "Negative Binomial",
+
   "distribution_Normal" : "Normal",
+  "sixsigmapro_Normal" : "Normal",
+
   "distribution_Poisson" : "Poisson",
   "distribution_t" : "t",
   "distribution_Uniform" : "Uniform",
@@ -655,78 +688,93 @@
   "doe_Inspect_Design" : "Inspect Design",
   "doe_Modify_Design" : "Modify Design",
   "doe_Analyze_Design" : "Analyze Design",
+
   "file_top_level_title":"File",
+  "modelfitting_File" : "File",
+  "outputpro_File_Menu" : "File",
+  "projectspace_File_Menu" : "File",
+  "utility_File_Menu" : "File",
+  "utilitypro_File_Menu":"File",
+
   "forecasting_top_level_title":"Forecastng",
+
   "graphics_top_level_title":"Graphics",
+  "graphicspro_Graphics_Menu" : "Graphics",
+
   "graphics_Distribution" : "Distribution",
+  "graphicspro_Distribution" : "Distribution",
+
   "graphics_Line_Charts" : "Line Charts",
   "graphics_Maps" : "Maps",
   "graphics_Pie_Charts" : "Pie Charts",
+
   "graphics_Scatter_Plot" : "Scatter Plot",
-  "graphicspro_Graphics_Menu" : "Graphics",
-  "graphicspro_Distribution" : "Distribution",
   "graphicspro_Scatter_Plot" : "Scatter Plot",
+
   "modelevaluation_top_level_title":"Model Evaluation",
+  "contribution_Model_Evaluation_Menu" : "Model Evaluation",
+  "professional_Model_Evaluation_Menu" :"Model Evaluation",
+
   "modelevaluation_Compare" : "Compare",
   "modelevaluation_Fit" : "Fit",
   "modelevaluation_IRT" : "IRT",
   "modelevaluation_Predict" : "Predict",
   "modelevaluation_Summarize" : "Summarize",
+
   "modelfitting_top_level_title":"Model Fitting",
+  "contribution_Model_Fitting_Menu" : "Model Fitting",
+  "modelfittingpro_Model_Fitting_Menu":"Model Fitting",
+  "professional_Model_Fitting_Menu" : "Model Fitting",
+
   "modelfitting_Contrasts" : "Contrasts",
   "modelfitting_IRT" : "IRT",
   "modelfitting_KNN" : "KNN",
+
   "modelfitting_Regression" : "Regression",
+  "contribution_Regression" : "Regression",
+  "professional_Regression" : "Regression",
+
   "modelfitting_Neural_Nets" : "Neural Nets",
   "modelfitting_Trees" : "Trees",
-  "modelfitting_File" : "File",
   "modelfitting_File_Model" : "Model",
   "modelfitting_Nonlinear_Regression" : "Nonlinear Regression",
-  "modelfittingpro_Model_Fitting_Menu":"Model Fitting",
   "modeltuning_top_level_title":"Model Tuning",
-  "outputpro_File_Menu" : "File",
-  "professional_Datasets_Menu" : "Datasets",
-  "professional_Matching" : "Matching",
-  "professional_Merge" : "Merge",
-  "professional_Sort" : "Sort",
-  "professional_Subset" : "Subset",
-  "professional_Survival" : "Survival",
-  "professional_Analysis_Menu" : "Analysis",
-  "professional_Crosstab" : "Crosstab",
-  "professional_Summary" : "Summary",
-  "professional_Variables_Menu" : "Variables",
-  "professional_Missing_Values" : "Missing Values",
-  "professional_Model_Fitting_Menu" : "Model Fitting",
-  "professional_Regression" : "Regression",
-  "professional_Model_Evaluation_Menu" :"Model Evaluation",
-  "professional_Agreement_Menu" : "Agreement",
-  "professional_Method" : "Method",
-  "projectspace_File_Menu" : "File",
   "projectspace_Open_Project" : "Open Project",
   "projectspace_Save_Project" : "Save Project",
   "projectspace_SaveAs_Project" : "SaveAs Project",
+
   "sixsigma_top_level_title":"Six Sigma",
-  "sixsigma_Pareto_Chart" : "Pareto Chart",
-  "sixsigma_MSA" : "MSA", 
-  "sixsigma_Process_Capability" : "Process Capability",
-  "sixsigma_Shewhart_Charts" : "Shewhart Charts",
-  "sixsigmapro_Analysis_Menu" : "Analysis",
-  "sixsigmapro_Distribution_Analysis" : "Distribution Analysis",
-  "sixsigmapro_Means" : "Means",
-  "sixsigmapro_Summary" : "Summary",
-  "sixsigmapro_Distribution_Menu" : "Distribution",
-  "sixsigmapro_Normal" : "Normal",
   "sixsigmapro_Six_Sigma_Menu" : "Six Sigma",
+
+  "sixsigma_Pareto_Chart" : "Pareto Chart",
   "sixsigmapro_Pareto_Chart" : "Pareto Chart",
+
+  "sixsigma_MSA" : "MSA", 
   "sixsigmapro_MSA" : "MSA",
+
+  "sixsigma_Process_Capability" : "Process Capability",
   "sixsigmapro_Process_Capability" : "Process Capability",
+
+  "sixsigma_Shewhart_Charts" : "Shewhart Charts",
   "sixsigmapro_Shewhart_Charts" : "Shewhart Charts",
-  "utility_File_Menu" : "File",
-  "utilitypro_File_Menu":"File",
+
   "variables_top_level_title":"Variables",
+  "contribution_Variables_Menu" : "Variables",
+  "professional_Variables_Menu" : "Variables",
+
   "variables_Box_Cox" : "Box-Cox",
+
   "variables_Compute" : "Compute",
+  "contribution_Compute" : "Compute",
+
   "variables_Convert" : "Convert",
+
   "variables_Factor_Levels" : "Factor Levels",
+  "contribution_Factor_Levels" : "Factor Levels",
+
+  "analysis_Missing_Values" : "Missing Values",
+  "professional_Missing_Values" : "Missing Values",
+
+  "Note00" : "=============The one menu below is different from the 2 above===========",
   "variables_Missing_Values" : "Missing Values"
 }

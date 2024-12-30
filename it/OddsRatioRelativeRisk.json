@@ -1,0 +1,28 @@
+{
+  "title": "Rapporti di Odds / Rischi Relativi, Tabella M per 2",
+  "navigation": "Rapporti di Odds / Rischi Relativi, Tabella M per 2",
+  "outcomevarlabel": "Variabile di Risultato (Fattore Binario)",
+  "expvarlabel": "Variabile di Esposizione/Predittore (Fattore)",
+  "statlabel": "Statistica",
+  "orlabel": "Rapporti di Odds",
+  "rrlabel": "Rischi Relativi",
+  "oresttypelabel": "Tipo di Stima del Rapporto di Odds",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "Mid-p",
+  "orestsmalllabel": "Campione Piccolo Adeguato",
+  "rresttypelabel": "Tipo di Stima del Rischio Relativo",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "Campione Piccolo Adeguato",
+  "reversallabel": "Inversione di Categoria",
+  "revnonelabel": "Nessuna Inversione",
+  "revexplabel": "Esposizione",
+  "revoutlabel": "Risultato",
+  "revbothlabel": "Entrambi",
+  "cilevellabel": "Livello di Confidenza (0-1)",
+  "help": {
+    "title": "Rapporti di Odds / Rischi Relativi, Tabella M per 2",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\nQuesto è utilizzato per confrontare le probabilità di avere una \"malattia\" per un gruppo rispetto a un altro, in un rapporto di odds (rapporto di odds) o in forma di rapporto di probabilità (rischio relativo).  \nLe odds di \"malattia\" sono definite come la probabilità di \"malattia\" divisa per la probabilità di \"nessuna malattia\". Viene fornita una tabella di frequenze di risultato in ciascun gruppo.  \nInoltre, è inclusa una tabella di rapporti di odds o rischi relativi per ciascun gruppo rispetto al gruppo di riferimento con intervalli di confidenza e un valore p del Chi-quadro di Wald.  Infine, \nuna tabella di valori p è mostrata con versioni esatte mid-p, esatte di Fisher e Chi-quadro di Wald, confrontando ciascun gruppo con il gruppo di riferimento. \n<br/><br/>\n<b>Variabile di Risultato:</b> Variabile binaria \"malattia\" (sì/no) di interesse.  Per impostazione predefinita, la categoria più alta nell'ordine di ordinamento è definita come \"malattia sì\".\n<br/><br/>\n<b>Variabile di Esposizione/Predittore:</b> Gruppi da confrontare.  Può avere più di 2 gruppi.\n<br/><br/>\n<b>Statistica:</b> Quale statistica calcolare\n<br/><br/>\n<b>Tipo di Stima del Rapporto di Odds / Rischio Relativo:</b> Wald (massima verosimiglianza incondizionata), Fisher (massima verosimiglianza condizionata), Mid-p (metodo mediano non distorto), o Campione Piccolo Adeguato\n<br/><br/>\n<b>Inversione di Categoria:</b>  Questo controlla se invertire o meno l'ordinamento delle categorie della variabile di esposizione o delle categorie della variabile di risultato.  Invertire la variabile di esposizione \nmodificherà il gruppo di riferimento per i rapporti di odds.  Invertire la variabile di risultato cambierà la categoria che corrisponde a \"malattia\".\n<br/><br/>\n<b>Livello di Confidenza:</b> livello per gli intervalli di confidenza; il predefinito è 0.95\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> epitools\n\t\t\t"
+  }
+}

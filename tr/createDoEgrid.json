@@ -1,0 +1,15 @@
+{
+  "title": "Bir DoE çalışması için faktör (eşit boyut) detaylarını otomatik oluştur",
+  "navigation": "Faktör Detayları (eşit boyut)",
+  "datasetname": "Faktör detay tablo adı",
+  "numOfVars": "Faktör sayısı",
+  "numOfFactorLevels": "Faktörler arasındaki maksimum seviye sayısı",
+  "factorLevels": "Virgülle ayrılmış seviye değerleri - örnek: -1, 1, 'string1', 2, 0",
+  "autoFillChkbx": "Seviyeleri otomatik doldur",
+  "label1": "Aşağıdaki seçeneği göz ardı et - veri seti temizleme seçeneği için daha sonra kullan",
+  "convertFactorToCharInt": "Seçilen aktif veri seti için - faktör türündeki tüm sütunları karakter veya tam sayıya dönüştür (ve bu seçenek seçildiğinde, yukarıdaki tüm seçenekler bu kullanıcı arayüzünde göz ardı edilecektir)",
+  "help": {
+    "title": "Faktör detaylarını otomatik oluştur",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBelirtilen parametreye dayalı olarak faktör detayları ile bir tablo otomatik olarak oluşturur - faktör sayısı ve faktörler için maksimum seviyeler ile birlikte kullanılacak varsayılan değerler. Faktör için sayısal olmayan değerler kullanılıyorsa, örneğin 1,-1,'name1',0,'string2' gibi tek tırnak içinde belirtin.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFaktör detayları otomatik olarak oluşturulduktan ve faktör tablosu veri ızgarası kullanıcı arayüzünde göründükten sonra, değerleri değiştirebilir ve/veya ızgaradan bazı değerleri kaldırarak tabloyu istediğiniz gibi manipüle edebilirsiniz, farklı sayıda değere sahip faktörler dahil.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFaktör sayısı <= 26 ise, faktörler A, B, C, .. gibi büyük harflerle adlandırılır, aksi takdirde F1, F2, ..., F27, F28, .. olarak adlandırılır."
+  }
+}

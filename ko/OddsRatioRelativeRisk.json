@@ -1,0 +1,28 @@
+{
+  "title": "오즈 비율 / 상대 위험, M by 2 테이블",
+  "navigation": "오즈 비율 / 상대 위험, M by 2 테이블",
+  "outcomevarlabel": "결과 변수 (이진 요인)",
+  "expvarlabel": "노출/예측 변수 (요인)",
+  "statlabel": "통계",
+  "orlabel": "오즈 비율",
+  "rrlabel": "상대 위험",
+  "oresttypelabel": "오즈 비율 추정 유형",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "중간 p",
+  "orestsmalllabel": "소표본 조정",
+  "rresttypelabel": "상대 위험 추정 유형",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "소표본 조정",
+  "reversallabel": "범주 반전",
+  "revnonelabel": "반전 없음",
+  "revexplabel": "노출",
+  "revoutlabel": "결과",
+  "revbothlabel": "둘 다",
+  "cilevellabel": "신뢰 수준 (0-1)",
+  "help": {
+    "title": "오즈 비율 / 상대 위험, M by 2 테이블",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\n이것은 한 그룹의 \"질병\" 확률을 다른 그룹과 비교하는 데 사용됩니다. 오즈 비율(odds ratio) 형태 또는 확률 비율(relative risk) 형태로 비율을 제공합니다.  \n\"질병\"의 오즈는 \"질병\"의 확률을 \"비질병\"의 확률로 나눈 값으로 정의됩니다. 각 그룹의 결과 빈도에 대한 우연표가 제공됩니다.  \n또한, 신뢰 구간과 Wald 카이제곱 p-값이 포함된 각 그룹에 대한 오즈 비율 또는 상대 위험의 표가 포함됩니다. 마지막으로, \n각 그룹을 참조 그룹과 비교하는 중간 p 정확, Fisher의 정확 및 Wald 카이제곱 버전의 p-값 표가 표시됩니다. \n<br/><br/>\n<b>결과 변수:</b> 관심 있는 이진 \"질병\" (예/아니오) 변수. 기본적으로 정렬 순서에서 가장 높은 범주가 \"질병 예\"로 정의됩니다.\n<br/><br/>\n<b>노출/예측 변수:</b> 비교할 그룹. 2개 이상의 그룹을 가질 수 있습니다.\n<br/><br/>\n<b>통계:</b> 계산할 통계\n<br/><br/>\n<b>오즈 비율 / 상대 위험 추정 유형:</b> Wald (무조건 최대 우도), Fisher (조건부 최대 우도), 중간 p (중앙 비편향 방법) 또는 소표본 조정\n<br/><br/>\n<b>범주 반전:</b> 노출 변수 범주 또는 결과 변수 범주의 순서를 반전할지 여부를 제어합니다. 노출 변수를 반전하면 오즈 비율의 참조 그룹이 변경됩니다. 결과 변수를 반전하면 \"질병\"에 해당하는 범주가 변경됩니다.\n<br/><br/>\n<b>신뢰 수준:</b> 신뢰 구간의 수준; 기본값은 0.95\n<br/><br/>\n<b>필요한 R 패키지:</b> epitools\n\t\t\t"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Değişkenleri Yeniden Kodla",
+  "navigation": "Yeniden Kodla",
+  "oldvars": "Yeniden Kodlanacak Değişkenler",
+  "label1": "Seçenekler",
+  "newvarradio": "Yeni Değişken(ler)",
+  "newvar": "Yeni değişken adlarını , ile ayırarak girin, örneğin newVar1, newVar2",
+  "oldvarradio": "Mevcut değişken(ler)i üzerine yaz",
+  "suffix": "Yeniden kodlanmış değişkenler için bir ek belirtin",
+  "prefix": "Yeniden kodlanmış değişkenler için bir ön ek belirtin",
+  "enterSuffix": "Bir ek girin",
+  "enterPrefix": "Bir ön ek girin",
+  "label3": "Birden fazla yeniden kodlama kriteri belirtirken, ; ayırıcı olarak kullanın.",
+  "label4": "NOT: DİZİ DEĞERLERİ İKİLİ TIRNAKLARDA (\") VE TEK TIRNAKLARDA (') KAPATILMALIDIR.",
+  "label5": "Eski değerleri ve yeni değerleri ; ile ayırarak girin, örneğin \"Erkek\"=\"Adam\";\"Kadın\"=2;\"Houston, Texas\"=\"Texas\";\"Mevcut Değil\"=NA ",
+  "label5a": "Sayısal türü yeniden kodlarken 70=100;71=101;99=NA girin",
+  "label5b": "Değer aralığı desteklenir, örneğin 5:10=\"orta\" Özel değerler lo ve hi bir aralıkta görünebilir, örneğin lo:10=\"düşük\";11:89=\"orta\";90:hi=\"Yüksek\"",
+  "label6": "else anahtar kelimesi, bir spesifikasyona uymayan her şey için kullanılabilir, örneğin else =NA",
+  "dontMakeFactor": "Varsayılan olarak, yeniden kodlanmış değişken bir faktör olacaktır eğer kaynak değişken bir faktörse. Üstünü çizmek için onay kutusunu işaretleyin",
+  "oldnewvals": "Yeniden kodlama kriterlerini girin",
+  "help": {
+    "title": "Değişkenleri Yeniden Kodla",
+    "r_help": "help(recode, package=car)",
+    "body": "\n<b>Açıklama</b></br>\nBir veya daha fazla sayısal vektörü, karakter vektörünü veya faktörleri yeniden kodlama spesifikasyonlarına göre yeniden kodlar. Sonuçları mevcut değişkenleri üzerine yazarak, yeniden kodlanmış değerleri saklamak için yeni değişken adları belirleyerek veya yeniden kodlanmış değerleri uygun bir ön ek veya ek ile yeni değişkenlerde saklamayı seçerek saklayabilirsiniz. Ön ek veya ek mevcut değişken adına uygulanacaktır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ncolNames: Yeniden kodlanacak veri kümesindeki bir veya daha fazla değişkeni içeren bir karakter vektörü\n</li>\n<li>\nnewColNames: Yeni sütunların adlarını içeren bir karakter vektörü.\n</li>\n<li>\nOldNewVals: eski değer1,yeni değer1, eski değer2,yeni değer2 biçiminde yeniden kodlama spesifikasyonlarının bir karakter dizesi\n</li>\n<li>\nNewCol: Yeniden kodlanmış değerlerin yeni değişkenlerde saklanıp saklanmayacağını belirten bir Boolean (TRUE) veya mevcut değişkenlerin üzerine yazılıp yazılmayacağını (FALSE).\n</li>\n<li>\nprefixOrSuffix: Yeniden kodlanmış değerleri belirttiğiniz isimle ön ek veya ekli yeni değişkenlerde saklamak istiyorsanız belirtin. Ön ek veya ek girin.\n</li>\n<li>\nprefixOrSuffixString: Mevcut değişken adına ön ek veya ek olarak kullanılacak bir dize girin. Yeniden kodlanmış değerler bu değişkenlerde saklanacaktır.\n</li>\n<li>\ndataSetNameOrIndex: Veri seti/veri çerçevesi adı\n</li>\n</ul>\nNot: Sayısaldan faktöre dönüşüm yapmayacağız. Bir sayısal yeniden kodlandığında, sayısal olarak kalacaktır, bir faktör değişkeni yeniden kodlandığında faktör olarak kalacaktır.<br/>\n<b>Paket</b></br>\ncar</br>\n<b>Yardım</b></br>\nBlueSky İstatistik R sözdizimi editöründe aşağıdaki satırı yazın</br>\nhelp(recode, package=car)\n"
+  }
+}

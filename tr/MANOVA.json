@@ -1,0 +1,22 @@
+{
+  "title": "Çok Değişkenli ANOVA",
+  "navigation": "MANOVA",
+  "modelname": "Model adı",
+  "tvarbox1": "Bağımlı değişkenler",
+  "tvarbox2": "Sabit faktör",
+  "blockVar": "Kovaryat(lar)",
+  "testStatistic": "Test istatistiği",
+  "label2": "Post-hoc seçenekleri",
+  "combon": "Ortalama karşılaştırması için:",
+  "emm": "Tahmin edilen marjinal ortalamalar",
+  "displayBoxMDetails": "Box'ın M testine ilişkin detayları göster (Not: Box'ın M testinin sonuçları her zaman gösterilir)",
+  "adjust": "p-değerlerini ayarlama yöntemi",
+  "levenesTest": "Levene testi",
+  "posthocs": "Post-hoc",
+  "plotMeansCI": "Ortalama ve güven aralıklarının grafiği",
+  "help": {
+    "title": "Çok Değişkenli ANOVA",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>Açıklama</b></br>\nÇok Değişkenli ANOVA: Genel çok değişkenli testler ve karşılık gelen F ve p değerleri sağlanmaktadır. Takip eden tek değişkenli testler de sağlanmaktadır.</br> NOT: Şu anda tek bir bağımsız faktörü destekliyoruz</br>\nNOT: Ortalama grafiğinde güven aralığını göstermiyoruz çünkü gereksiz uyarılar görüntüleniyor. Bu durumu düzeltmek için gplots paketinin yazarıyla çalışıyoruz.</br>\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ factor1  )\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\n...: aov'a geçirilen argümanlar\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\n\"manova\" sınıfı, \"aov\" sınıfından farklı bir özet yöntemi seçerek farklılık gösterir. manova fonksiyonu aov'u çağırır ve ardından her katman için sonuç nesnesine \"manova\" sınıfını ekler.​</br>\n<b>Değer</b><br/>\nAov yardımına bakın, ayrıntılar aşağıda<br/>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nDetaylı R yardımı almak için R Yardım butonuna tıklayın.</br> Ayrıca help(manova, package ='stats') yazarak R sözdizimi editöründe CTRL Enter tuşuna basarak yardım alabilirsiniz.</br>\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Ağırlıkları Genişlet",
+  "navigation": "Genişlet",
+  "datasetname": "Genişletilmiş ağırlıklarla veri kümesinin adı",
+  "destination": "Ağırlıkları içeren sütunu girin",
+  "help": {
+    "title": "Ağırlıkları Genişlet",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>Açıklama</b></br>\n        Ağırlıklara göre satırları genişletilmiş yeni bir veri kümesi oluşturur. Bir veri çerçevesinin satırlarını, kaynak veri çerçevesindeki veya veri tablosundaki sütunlardan birinde bulunan bir değere göre genişletir (kopyalar). BSkySetWeights(), splitstackshape paketinden expandRows() fonksiyonunu çağırır.\n        <br/>\n        <b>Kullanım</b>\n        <br/>\n             <code> \n        BSkySetWeight(ağırlıklar, veri, yeniVeri)\n        </code> <br/>\n          <b>Argümanlar</b><br/>\n         <ul>\n           <li>\n        ağırlıklar: Ağırlıkları içeren veri kümesi değişkeni. \n        </li>\n        <li>\n        veri: Girdi veri çerçevesi veya veri tablosu.\n        </li>\n        <li>\n        yeniVeri: Belirtilen ağırlıklar için satırların kopyalandığı yeni veri kümesi.\n        </li>\n        </ul>\n        <b>Paket</b></br>\n        splitstackshape</br>\n        <b>Yardım</b></br>\n        help (expandRows)\n        "
+  }
+}

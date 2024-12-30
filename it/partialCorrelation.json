@@ -1,0 +1,13 @@
+{
+  "title": "Correlazioni semi-parziali",
+  "navigation": "Semi-parziale",
+  "statistic": "Seleziona un metodo",
+  "tvarbox1": "Seleziona variabili",
+  "correlationType": "Tipo di correlazione",
+  "tvarbox2": "Seleziona variabili di controllo",
+  "help": {
+    "title": "Correlazioni semi-parziali",
+    "r_help": "help(spcor.test, package=ppcor)",
+    "body": "\n            <b>Descrizione</b></br>\n            La correlazione semi-parziale per due variabili date una terza variabile. Calcoleremo la correlazione semi-parziale a coppie tra ciascuna delle variabili specificate nel controllo delle variabili selezionate, controllando per le variabili specificate nel controllo delle variabili di controllo.<br/>\n            Abbiamo scritto un wrapper attorno alla funzione spcor.test che chiama spcor.test per ciascuna coppia delle variabili specificate.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            Argomenti\n            x: un vettore numerico.\n            </li>\n            <li>\n            y: un vettore numerico.\n            </li>\n            <li>\n            y: un vettore numerico.\n            </li>\n            <li>\n            method: una stringa carattere che indica quale coefficiente di correlazione parziale deve essere calcolato. Uno tra \"pearson\" (predefinito), \"kendall\" o \"spearman\" può essere abbreviato..\n            </li>\n            </ul>\n            <b>Dettagli</b></br>\n            La correlazione semi-parziale è la correlazione di due variabili con la variazione di una terza variabile rimossa solo dalla seconda variabile. Quando il determinante della matrice varianza-covarianza è numericamente zero, viene utilizzato l'inverso generalizzato di Moore-Penrose. In questo caso, non verrà fornito alcun p-value e statistica se il numero di variabili è maggiore o uguale alla dimensione del campione.</br>\n            <b>Valore</b><br/>\n            stima: il coefficiente di correlazione semi-parziale (parziale) tra due variabili.<br/>\n            p.value: il p-value del test.<br/>\n            n: Il numero di campioni.<br/>\n            <b>Esempi</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>Pacchetto</b></br>\n            ppcor</br>\n            <b>Aiuto</b></br>\n            help(pcor.test, package=ppcor)\n"
+  }
+}

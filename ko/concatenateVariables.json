@@ -1,0 +1,12 @@
+{
+  "title": "변수 연결",
+  "navigation": "연결",
+  "newvar": "연결된 결과를 위한 새/기존 변수를 입력하세요",
+  "concatenate": "연결할 변수를 선택하세요",
+  "repString": "연결된 변수의 선택적 구분 기호를 입력하세요",
+  "help": {
+    "title": "변수 연결",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>설명</b></br>\n숫자 변수를 동일한 너비의 구간, (대략) 동일한 빈도 또는 \"자연스러운\" 절단점( K-평균 클러스터링에 의해 결정됨)으로 나누는 팩터를 생성합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nX: 구간으로 나눌 숫자 변수입니다.\n</li>\n<li>\nBins: 구간의 수입니다.\n</li>\n<li>\nmethod: \"intervals\"는 동일한 너비의 구간; \"proportions\"는 동일한 수의 구간; \"natural\"은 K-평균 클러스터링에 의해 결정된 구간 사이의 절단점입니다.\n</li>\n<li>\nLabels: FALSE인 경우 숫자 레이블이 팩터 수준에 사용됩니다; NULL인 경우 절단점이 레이블을 정의하는 데 사용됩니다; 그렇지 않으면 레벨 이름의 문자 벡터입니다.\n</li>\n</ul>\n<b>패키지</b></br>\nRcmdrMisc</br>\n<b>도움말</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

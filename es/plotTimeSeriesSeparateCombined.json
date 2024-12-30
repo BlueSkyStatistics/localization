@@ -1,11 +1,11 @@
 {
-  "title": "Trazar series temporales",
-  "navigation": "Trazar series temporales, separadas o combinadas",
-  "destination": "Variables a trazar",
-  "firstObservation": "Hora de la primera observación ej.1: ingrese 1961,1 para enero de 1961 ej.2: ingrese 1961,3 para el 3er trimestre de 1961, ej.3: ingrese 1 para una serie continua",
+  "title": "Graficar Series de Tiempo",
+  "navigation": "Graficar Series de Tiempo, separadas o combinadas",
+  "destination": "Variables a graficar",
+  "firstObservation": "Tiempo de la primera observación ej.1: ingrese 1961,1 para enero de 1961 ej.2: ingrese 1961,3 para el 3er Trimestre de 1961, ej.3: ingrese 1 para una serie continua",
   "frequency": "Número de observaciones por unidad de tiempo ej.1: ingrese 12 para una observación por cada mes de un año, ej. 2: ingrese 4 para una observación por trimestre, ej. 3: ingrese 1 para una serie continua.",
-  "label0": "Opciones de trazado",
-  "separately": "Trazar cada serie por separado",
+  "label0": "Opciones de Graficado",
+  "separately": "Graficar cada serie por separado",
   "combine": "Combinar series",
   "label1": "Transformar variables",
   "chkboxForTransform": "Logaritmo natural",
@@ -13,8 +13,8 @@
   "yaxisLabel": "Etiqueta del eje Y",
   "mainTitle": "Título principal",
   "help": {
-    "title": "Trazar series temporales",
+    "title": "Graficar Series de Tiempo",
     "r_help": "help(plot.ts, package ='stats')",
-    "body": "\n<b>Descripción</b></br>\nCrea un gráfico de series temporales combinadas o separadas. Cuando se combinan, se trazan múltiples variables juntas, cuando se separan, cada variable se traza de forma independiente. BSkyPlotSeriesWithCorrelations es una función envoltura que crea un objeto de serie temporal y llama internamente a plot.ts. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='title', ylab='y axis label', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: variables seleccionadas para trazar\n</li>\n<li>\nstart: El momento de la primera observación debe ingresarse en el formato año,mes o año,trimestre ej. (si sus datos están organizados por meses, entonces 1992,1 para enero de 1992 o si sus datos están organizados por trimestres, entonces 1992,1 se refiere al primer trimestre de 1992.\n</li>\n<li>\nfrequency: Número de observaciones en unidad de tiempo. Ejemplo: para mensual hay 12 observaciones en un año. Para trimestral hay 4 observaciones en un año.\n</li>\n<li>\nplot.type: \"multiple\" para separado y \"single\" para combinado.\n</li>\n<li>\nnaturalLogYaxis: si TRUE, un eje Y se muestra como valor de logaritmo natural.\n</li>\n<li>\nmain: título principal del gráfico\n</li>\n<li>\nylab: título para el eje Y\n</li>\n<li>\ndataset: el nombre del conjunto de datos del cual se han seleccionado las vars.\n</li>\n</ul>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de este cuadro de diálogo o ejecute el siguiente comando help(plot.ts, package ='stats') creando un bloque de código R haciendo clic en + en la ventana de salida\n"
+    "body": "\n<b>Descripción</b></br>\nCrea un gráfico de series de tiempo en combinado o por separado. Cuando se combinan, múltiples variables se grafican juntas; cuando están separadas, cada variable se grafica independientemente. BSkyPlotSeriesWithCorrelations es una función envoltura que crea un objeto de serie de tiempo y llama internamente a plot.ts. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='título', ylab='etiqueta del eje y', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: variables seleccionadas para graficar\n</li>\n<li>\nstart: El tiempo de la primera observación debe ingresarse en el formato año,mes o año,trimestre ej.( si sus datos están organizados en meses, 1992,1 para enero de 1992 o si sus datos están organizados en trimestres, entonces 1992,1 se refiere al primer trimestre de 1992.\n</li>\n<li>\nfrequency: Número de observaciones en unidad de tiempo. Ejemplo: para mensual hay 12 observaciones en un año. Para trimestral hay 4 observaciones en un año.\n</li>\n<li>\nplot.type: \"multiple\" para separado y \"single\" para gráfico combinado.\n</li>\n<li>\nnaturalLogYaxis: si es VERDADERO, se muestra un eje Y como valor de logaritmo natural.\n</li>\n<li>\nmain: título principal del gráfico\n</li>\n<li>\nylab: título para el eje y\n</li>\n<li>\ndataset: el nombre del conjunto de datos del cual se han seleccionado las vars.\n</li>\n</ul>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nPara ayuda detallada, haga clic en el ícono de R en la esquina superior derecha de este diálogo o ejecute el siguiente comando help(plot.ts, package ='stats') creando un bloque de código R haciendo clic en + en la ventana de salida\n"
   }
 }

@@ -1,13 +1,13 @@
 {
   "title": "偽 R 平方",
   "navigation": "偽 R 平方",
-  "modelselector1": "選擇一個模型",
-  "label1": "選擇以下類別之一的模型（括號中的類別）",
+  "modelselector1": "選擇模型",
+  "label1": "從以下類別中選擇一個模型（括號中的類別）",
   "label2": "廣義線性模型 (glm)、多項式對數線性模型 (multinom)、有序邏輯或 Probit 回歸 (polr)",
-  "label3": "注意：使用模型調優 (TRAIN) 構建的模型不受支持",
+  "label3": "注意：使用模型調整（訓練）構建的模型不受支持",
   "help": {
     "title": "偽 R 平方",
-    "r_help": "幫助(pR2, 包='pscl')",
-    "body": "\n                <b>描述</b></br>\n計算各種 GLM 的偽 R2 測量\n<br/>\n<b>用法</b>\n<br/>\n<code> \npR2(物件, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n物件：一個擬合的模型物件，目前為 glm、polr 或 multinom 類\n</li>\n<li>\n... 額外的參數將傳遞給或從函數中傳遞\n</li>\n</ul>\n<b>詳細信息</b></br>\n已經提出了許多偽 R 平方測量方法，用於廣義線性模型，涉及將擬合模型的對數似然與沒有預測變量的空/限制模型的對數似然進行比較，歸一化為從零到一，因為擬合模型提供了對數據的更好擬合（提供了與線性回歸中 R 平方計算的粗略類比）。</br>\n<b>值</b><br/>\n一個長度為 6 的向量，包含<br/>\nllh：擬合模型的對數似然<br/>\nllhNull：僅截距限制模型的對數似然<br/>\nG2：對數似然差的負兩倍<br/>\nMcFadden：McFadden 的偽 R 平方<br/>\nr2ML：最大似然偽 R 平方<br/>\nr2CU：Cragg 和 Uhler 的偽 R 平方<br/>\n<b>示例</b><br/>\n<code> \n數據(admit)<br/>\n## 有序 Probit 模型<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            數據=admit,\n            方法=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>包</b></br>\npscl</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框右上角的 R 圖標或在 R 語法編輯器中運行以下命令幫助(pR2, 包=\"pscl\")\n                "
+    "r_help": "help(pR2, package='pscl')",
+    "body": "\n                <b>描述</b></br>\n計算各種 GLM 的偽 R2 測量\n<br/>\n<b>用法</b>\n<br/>\n<code> \npR2(object, ...)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nobject: 一個擬合的模型對象，目前為 glm、polr 或 multinom 類別\n</li>\n<li>\n... 其他參數將傳遞給或從函數中傳遞\n</li>\n</ul>\n<b>詳細信息</b></br>\n已經提出了許多偽 R 平方測量，用於廣義線性模型，涉及擬合模型的對數似然與沒有預測變量的空/null 限制模型的對數似然的比較，正規化為從零到一，因為擬合模型對數據提供了更好的擬合（提供了與線性回歸中 R 平方計算的粗略類比）。</br>\n<b>值</b><br/>\n一個長度為 6 的向量包含<br/>\nllh: 擬合模型的對數似然<br/>\nllhNull: 僅截距限制模型的對數似然<br/>\nG2: 對數似然差的負二倍<br/>\nMcFadden: McFadden 的偽 R 平方<br/>\nr2ML: 最大似然偽 R 平方<br/>\nr2CU: Cragg 和 Uhler 的偽 R 平方<br/>\n<b>示例</b><br/>\n<code> \ndata(admit)<br/>\n## 有序 Probit 模型<br/>\nop1 <- MASS::polr(score ~ gre.quant + gre.verbal + ap + pt + female,\n            Hess=TRUE,\n            data=admit,\n            method=\"probit\")<br/>\npR2(op1)<br/>\n</code> <br/>\n<b>包</b></br>\npscl</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(pR2, package=\"pscl\")\n                "
   }
 }

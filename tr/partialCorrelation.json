@@ -1,0 +1,13 @@
+{
+  "title": "Yarı-kısmi Korelasyonlar",
+  "navigation": "Yarı-kısmi",
+  "statistic": "Bir yöntem seçin",
+  "tvarbox1": "Değişkenleri seçin",
+  "correlationType": "Korelasyon türü",
+  "tvarbox2": "Kontrol değişkenlerini seçin",
+  "help": {
+    "title": "Yarı-kısmi Korelasyonlar",
+    "r_help": "help(spcor.test, package=ppcor)",
+    "body": "\n            <b>Açıklama</b></br>\n            Üçüncü bir değişken verildiğinde iki değişken için yarı-kısmi korelasyon. Seçilen değişkenler kontrolünde belirtilen her bir değişken çifti arasında yarı-kısmi korelasyonu hesaplayacağız, kontrol değişkenleri kontrolünde belirtilen değişkenleri kontrol ederek.<br/>\n            spcor.test fonksiyonu etrafında bir sarmalayıcı yazdık, bu da belirtilen değişken çiftleri için spcor.test'i çağırır.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            Argümanlar\n            x: sayısal bir vektör.\n            </li>\n            <li>\n            y: sayısal bir vektör.\n            </li>\n            <li>\n            y: sayısal bir vektör.\n            </li>\n            <li>\n            method: hangi kısmi korelasyon katsayısının hesaplanacağını belirten bir karakter dizesi. \"pearson\" (varsayılan), \"kendall\" veya \"spearman\"'dan biri kısaltılabilir.\n            </li>\n            </ul>\n            <b>Ayrıntılar</b></br>\n            Yarı-kısmi korelasyon, üçüncü bir değişkenden yalnızca ikinci değişkenin çıkarıldığı iki değişkenin korelasyonudur. Varyans-kovaryans matrisinin belirleyeni sayısal olarak sıfır olduğunda, Moore-Penrose genelleştirilmiş matris tersine başvurulur. Bu durumda, değişken sayısı örnek boyutuna eşit veya daha büyükse, p-değeri ve istatistik sağlanmayacaktır.</br>\n            <b>Değer</b><br/>\n            estimate: iki değişken arasındaki yarı-kısmi (kısmi) korelasyon katsayısı.<br/>\n            p.value: testin p-değeri.<br/>\n            n: Örnek sayısı.<br/>\n            <b>Örnekler</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>Paket</b></br>\n            ppcor</br>\n            <b>Yardım</b></br>\n            help(pcor.test, package=ppcor)\n"
+  }
+}

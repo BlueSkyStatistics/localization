@@ -1,0 +1,11 @@
+{
+  "title": "Statistiche Numeriche, usando describe",
+  "navigation": "Riepiloghi Numerici, usando describe (Legacy)",
+  "tvarbox1": "Seleziona variabili",
+  "tvarbox2": "Seleziona variabili di raggruppamento",
+  "help": {
+    "title": "Statistiche Numeriche, usando describe",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>Descrizione</b></br>\nRestituisce le seguenti statistiche numeriche:</br>\nconteggio, media, deviazione standard, mediana, trim, mad, min, max, intervallo, asimmetria, kurtosi, errore standard\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \n#BSkyFormat visualizza un output ben formattato<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: Un dataframe o matrice\n</li>\n</ul>\n<b>Pacchetto</b></br>\npsych</br>\n<b>Aiuto</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

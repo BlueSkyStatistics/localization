@@ -1,12 +1,12 @@
 {
   "title": "Ajouter un point central à un design à 2 niveaux (quantitatif) sans point central préalable - le design sélectionné est le design actif sur la grille de l'interface utilisateur du jeu de données",
-  "navigation": "Ajouter un point central à un design à 2 niveaux (quantitatif)",
+  "navigation": "Ajouter un point central au design à 2 niveaux (Quantitatif)",
   "datasetname": "Nom de design modifié avec points centraux",
-  "numOfCenterPts": "Nombre de points centraux (s'il est utilisé, doit être au minimum 2)",
+  "numOfCenterPts": "Nombre de points centraux (s'ils sont utilisés, doit être au minimum 2)",
   "centerPointDistribution": "Nombre de positions pour la distribution des points centraux (doit être >1)",
   "help": {
     "title": "Ajouter un point central à un design à 2 niveaux (sans point central préalable)",
     "r_help": "help(add.center, package = FrF2)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction add.center ajoute des points centraux à un design factoriel fractionné à 2 niveaux. Tous les facteurs doivent être quantitatifs\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(add.center, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction add.center pour ajouter des points centraux à un design factoriel fractionnaire à 2 niveaux. Tous les facteurs doivent être quantitatifs \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(add.center, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

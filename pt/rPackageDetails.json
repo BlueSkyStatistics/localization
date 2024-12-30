@@ -1,0 +1,10 @@
+{
+  "title": "Detalhes do Pacote R",
+  "navigation": "Detalhes do pacote",
+  "packageName": "Selecione um pacote R instalado",
+  "help": {
+    "title": "Detalhes do Pacote R",
+    "r_help": "ajuda(packageDescription, pacote='utils')",
+    "body": "\n<b>Descrição</b></br>\nExibe a descrição do pacote selecionado\n<br/>\n<b>Uso</b>\n<br/>\n<code> \npacoteDescrição(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\npkg: uma string de caracteres com o nome do pacote.\n</li>\n<li>\nlib.loc: um vetor de caracteres com nomes de diretórios de bibliotecas R, ou NULL. O valor padrão NULL corresponde a todas as bibliotecas atualmente conhecidas. Se o padrão for usado, os pacotes e namespaces carregados são pesquisados antes das bibliotecas.\n</li>\n<li>\nfields: um vetor de caracteres que fornece as tags dos campos a serem retornados (se outros campos ocorrerem no arquivo, eles são ignorados).\n</li>\n<li>\ndrop: Se TRUE e o comprimento de fields for 1, então uma única string de caracteres com o valor do respectivo campo é retornada em vez de um objeto da classe \"packageDescription\".\n</li>\n</ul>\n<b>Detalhes</b></br>\nA descrição do pacote</br>\n<b>Exemplos</b><br/>\n<code> \npacoteDescrição(\"stats\")\n</code> <br/>\n<b>Pacote</b></br>\nutils</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste overlay de diálogo ou execute o seguinte comando no editor de sintaxe R ajuda(packageDescription, pacote='utils')\n                "
+  }
+}

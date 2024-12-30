@@ -1,0 +1,12 @@
+{
+  "title": "부분 상관관계",
+  "navigation": "부분",
+  "tvarbox1": "변수 선택",
+  "statistic": "방법 선택",
+  "tvarbox2": "제어 변수 선택",
+  "help": {
+    "title": "부분 상관관계",
+    "r_help": "help(pcor.test, package=ppcor)",
+    "body": "\n<b>설명</b></br>\n세 번째 변수를 고려한 두 변수의 부분 상관관계. 선택된 변수 제어에서 지정된 각 변수 간의 쌍별 부분 상관관계를 계산합니다. 제어 변수 제어에서 지정된 변수를 제어합니다.<br/>\npcor.test 함수를 감싸는 래퍼를 작성하여 지정된 각 변수 쌍에 대해 pcor.test를 호출합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \npcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\n인수\nx: 숫자 벡터입니다.\n</li>\n<li>\ny: 숫자 벡터입니다.\n</li>\n<li>\ny: 숫자 벡터입니다.\n</li>\n<li>\nmethod: 계산할 부분 상관 계수를 나타내는 문자열입니다. \"pearson\"(기본값), \"kendall\" 또는 \"spearman\" 중 하나를 축약할 수 있습니다.\n</li>\n</ul>\n<b>세부정보</b></br>\n부분 상관관계는 세 번째 변수를 제어하면서 두 변수 간의 상관관계입니다. 분산-공분산 행렬의 행렬식이 수치적으로 0인 경우, 무어-펜로즈 일반화된 행렬 역수가 사용됩니다. 이 경우, 변수의 수가 샘플 크기보다 크거나 같으면 p-값과 통계량이 제공되지 않습니다.</br>\n<b>값</b><br/>\nestimate: 두 변수 간의 부분 상관 계수입니다.<br/>\np.value: 테스트의 p-값입니다.<br/>\nn: 샘플 수입니다.<br/>\n<b>예제</b><br/>\n<code> \npcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n</code> <br/>\n<b>패키지</b></br>\nppcor</br>\n<b>도움말</b></br>\nhelp(pcor.test, package=ppcor)\n"
+  }
+}

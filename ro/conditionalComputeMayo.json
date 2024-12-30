@@ -1,12 +1,12 @@
 {
   "title": "Calcul condiționat, multiple",
   "navigation": "Calcul condiționat, multiple",
-  "newvar": "Nume variabilă nouă/existentă (fără spații/caractere speciale):",
+  "newvar": "Nume variabil nou/existent (fără spații/caractere speciale):",
   "label2": "Constructor de expresii: Construiți expresia dorită, de exemplu var1+var2, as.numeric(var2), substr(var4,2,4)...",
   "formula": "Construiți o comandă de calcul",
   "help": {
     "title": "Calcul condiționat, multiple",
     "r_help": "help(log, package ='base')",
-    "body": "\n<b>Descriere</b></br>\nCalculează o expresie și stochează rezultatul într-o variabilă/coloană a unui dataframe/dataset</br>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expresie)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDatasetX:  numele dataframe-ului/dataset-ului.​\n</li>\n<li>\nvar1: Coloana nouă/existentă din dataset/dataframe care trebuie calculată\n</li>\n<li>\nExpresie: O expresie sub forma variable1 =variable2+variable3\n</li>\n</ul>\n<b>Detalii</b></br>\nEvaluează expresia și stochează rezultatul în variabila/coloana unui dataframe/dataset</br>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapunerii de dialog sau rulați următoarea comandă help(mutate, package ='dplyr') în fereastra editorului R\n            "
+    "body": "\n<b>Descriere</b></br>\nCalculează o expresie și stochează rezultatul într-o variabilă/coloană a unui dataframe/dataset</br>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expresie)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDatasetX:  numele dataframe-ului/dataset-ului.​\n</li>\n<li>\nvar1: Coloana nouă/existentă din dataset/dataframe care trebuie calculată\n</li>\n<li>\nExpresie: O expresie sub forma variabila1 = variabila2 + variabila3\n</li>\n</ul>\n<b>Detalii</b></br>\nEvaluează expresia și stochează rezultatul în variabila/colona unui dataframe/dataset</br>\n<b>Pachet</b></br>\ndplyr</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(mutate, package ='dplyr') în fereastra editorului R\n            "
   }
 }

@@ -1,0 +1,32 @@
+{
+  "title": "Suavização Exponencial",
+  "navigation": "Suavização Exponencial",
+  "destination": "Variáveis a prever",
+  "firstObservation": "Hora da primeira observação e.g.1: insira 1961,1 para janeiro de 1961 e.g.2: insira 1961,3 para o 3º Trimestre de 1961, e.g.3: insira 1 para uma série contínua",
+  "frequency": "Número de observações por unidade de tempo e.g.1: insira 12 para uma observação para cada mês de um ano, e.g. 2: insira 4 para uma observação por trimestre, e.g. 3: insira 1 para uma série contínua.",
+  "label1": "Gráficos",
+  "plotSeries": "Plotar séries",
+  "yaxisLabel": "Rótulo do eixo Y",
+  "mainTitle": "Título principal",
+  "label2": "Opções para valores ajustados",
+  "saveFitted": "Salvar valores ajustados",
+  "fittedValsDatasetName": "Especifique o nome do conjunto de dados para armazenar valores ajustados",
+  "oriVsFitted": "Plotar original vs. Ajustado",
+  "plotResiduals": "Plotar resíduos",
+  "label3": "Prever usando o modelo",
+  "predict": "Fazer previsões usando o modelo",
+  "periodToPredict": "Especifique o número de intervalos a prever",
+  "confInterval": "Especifique o intervalo de confiança em porcentagens e.g. 95 para 95%",
+  "savePredictedVals": "Salvar valores previstos",
+  "predictedValsDatasetName": "Especifique o nome do conjunto de dados para armazenar valores previstos",
+  "plotPredicted": "Plotar valores previstos",
+  "correlogram": "Gerar correlograma",
+  "maxlag": "Insira o máximo de defasagem",
+  "Boxtest": "Teste de Ljung-Box",
+  "advanced_lbl": "Avançado",
+  "help": {
+    "title": "Suavização Exponencial",
+    "r_help": "help(HoltWinters , package=stats)",
+    "body": "\n            <b>Descrição</b></br>\nBSkyHoltWintersSeasonal é uma função wrapper para HoltWinters do pacote stats que computa a Filtragem Holt-Winters de uma série temporal dada. Parâmetros desconhecidos são determinados minimizando o erro de previsão ao quadrado. Chama internamente HoltWinters com o parâmetro gamma usado para o componente sazonal definido como FALSO, o parâmetro beta do Filtro Holt-Winters é definido como FALSO para fazer suavização exponencial e sazonal = \"Nenhum\".<br/> \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyHoltWintersSeasonal(vars,start,frequency,exponential,seasonal =\"None\",main ,ylab,plotSeries=TRUE,saveFitted=FALSE,plotOriginalandForecast=FALSE,predict=FALSE,savePredictedVals=FALSE,plotPredictedValues=FALSE,correlogram=FALSE,dataset=\"Dataset2\")\n</code> <br/>\nArgumentos\n<ul>\n<li>\nvars: selecione uma variável para construir um modelo\n</li>\n<li>\nstart: Hora da primeira observação deve ser inserida no formato ano,mês ou ano,trimestre e.g.( se seus dados estão organizados em meses, 1992,1 para Jan 1992 ou se seus dados estão organizados em trimestres, então 1992,1 refere-se ao primeiro trimestre de 1992.\n</li>\n<li>\nfrequency: Número de observações em unidade de tempo. Exemplo: para mensal há 12 observações em um ano. Para trimestral há 4 observações em um ano.\n</li>\n<li>\nexponential: Determina se a suavização exponencial será feita, valor definido como VERDADEIRO\n</li>\n<li>\nseasonal: uma string de caracteres \"Nenhum\" para suavização exponencial. \n</li>\n<li>\nplotSeries: se VERDADEIRO, um gráfico de série temporal também será gerado.\n</li>\n<li>\nsaveFitted: se VERDADEIRO, os valores ajustados são salvos.\n</li>\n<li>\nplotOriginalandForecast: Plotar séries originais e previstas\n</li>\n<li>\npredict: se VERDADEIRO, os valores previstos também serão gerados.\n</li>\n<li>\nsavePredictedVals: os valores previstos serão salvos.\n</li>\n<li>\nplotPredictedValues: os valores previstos também serão plotados.\n</li>\n<li>\ncorrelogram: se VERDADEIRO, um correlograma será gerado.\n</li>\n<li>\nmain: título principal do gráfico\n</li>\n<li>\nylab: título para o eixo y\n</li>\n<li>\ndataset: o nome do conjunto de dados do qual as variáveis foram selecionadas\n</li>\n</ul>\n<b>Valor</b><br/>\nUm objeto da classe \"HoltWinters\", uma lista com componentes:<br/>\nfitted: Uma série temporal múltipla com uma coluna para a série filtrada, bem como para os componentes de nível, tendência e sazonal, estimados contemporaneamente (ou seja, no tempo t e não no final da série).<br/>\nx: A série original<br/>\nalpha: alpha usado para filtragem<br/>\nbeta: beta usado para filtragem<br/>\ngamma: gamma usado para filtragem<br/>\ncoefficients: Um vetor com componentes nomeados a, b, s1, ..., sp contendo os valores estimados para os componentes de nível, tendência e sazonal<br/>\nseasonal: O parâmetro sazonal especificado<br/>\nSSE: A soma final dos erros ao quadrado alcançada na otimização<br/>\ncall: A chamada usada<br/>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R help(HoltWinters , package=stats)\n\t\t\t"
+  }
+}

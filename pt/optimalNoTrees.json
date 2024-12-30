@@ -1,0 +1,16 @@
+{
+  "title": "Número Ótimo de Árvores",
+  "navigation": "Otimizar",
+  "dependentvar": "Variável dependente",
+  "independentvars": "Variável(is) independente(s)",
+  "label1": "Configurações de simulação de árvore",
+  "startval": "Valor inicial",
+  "endval": "Valor final",
+  "stepval": "Valor do passo",
+  "mtry": "mtry",
+  "help": {
+    "title": "Número Ótimo de Árvores",
+    "r_help": "ajuda(randomForest, pacote='randomForest')",
+    "body": "\n                <b>Descrição</b></br>\nComeçando com o valor padrão de mtry, procure o valor ótimo (com relação à estimativa de erro Out-of-Bag) de ntree (número de árvores a serem cultivadas) para randomForest. A função BSkyMultiRandomForest chama a função randomForest com os argumentos definidos abaixo\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx : um data frame ou uma matriz de preditores, ou uma fórmula descrevendo o modelo a ser ajustado (para o método de impressão, um objeto randomForest).\n</li>\n<li>\ny :  Um vetor de resposta. Se for um fator, a classificação é assumida, caso contrário, a regressão é assumida. Se omitido, randomForest será executado em modo não supervisionado.\n</li>\n<li>\nstartval : valor inicial para o argumento ntree em randomForest().\n</li>\n<li>\nendval : valor final para o argumento ntree em randomForest().\n</li>\n<li>\nstepval : contagem pela qual startval deve ser incrementado em cada iteração até atingir o valor endval.\n</li>\n<li>\nmtry : Número de variáveis amostradas aleatoriamente como candidatas em cada divisão. Observe que os valores padrão são diferentes para classificação (sqrt(p) onde p é o número de variáveis em x) e regressão (p/3)\n</li>\n</ul>\n<b>Valor</b><br/>\nImprime o número ótimo de árvores. Também exibe uma tabela com ntree e o correspondente erro Out-of-Bag<br/>\n<b>Pacote</b></br>\nrandomForest​;BlueSky</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R ajuda(randomForest, pacote='randomForest')\n                "
+  }
+}

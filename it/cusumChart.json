@@ -1,0 +1,23 @@
+{
+  "title": "Grafico Cusum",
+  "navigation": "Grafico Cusum",
+  "summaryPrintChk": "Stampa il riepilogo oltre ai grafici",
+  "label2": "Due opzioni: seleziona una variabile da graficare (e una variabile di raggruppamento se necessario) oppure seleziona le variabili nel dataset da graficare se già raggruppate",
+  "selectVariableRad": "Opzione 1: Seleziona una variabile dal dataset che deve essere raggruppata",
+  "variableSelcted": "Variabile (dati osservati) da graficare",
+  "groupingNeededChk": "Necessario per i grafici xbar, R e S - Variabile da utilizzare per raggruppare i dati",
+  "groupingVariable": "Variabile di Raggruppamento",
+  "variableControlLimits": "Righe da scartare se presenti prima del raggruppamento per i limiti di controllo della variabile, ad esempio specificare come 1:25 o 1,4,5,7:12",
+  "displayGroupsChk": "Visualizza i raggruppamenti nella griglia dell'interfaccia del dataset",
+  "selectDatasetRad": "Opzione 2: Seleziona le variabili dal Dataset se già raggruppate",
+  "variablelistSelcted": "Seleziona una o più variabili raggruppate (dati osservati) da graficare",
+  "decisionInterval": "Intervallo di decisione - il numero di errori standard delle statistiche riassuntive al quale la somma cumulativa è fuori controllo",
+  "seShift": "Shift - la quantità di spostamento da rilevare nel processo, misurata in errori standard delle statistiche riassuntive",
+  "rowsTobeUsed": "Righe Raggruppate da utilizzare per il Grafico (ad esempio specificare come 1:25 o 1,4,5,7:12)",
+  "rowsTobeUsedAsNewData": "Nuovi Dati - righe raggruppate da utilizzare come Nuovi Dati per il Grafico (ad esempio specificare come 1:25 o 1,4,5,7:12) - nuovi dati da tracciare ma non inclusi nei calcoli",
+  "help": {
+    "title": "Grafico Cusum",
+    "r_help": "help(qcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione qcc per eseguire il controllo statistico della qualità e per tracciare i grafici di Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer un aiuto dettagliato - usa R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato pistonrings dal pacchetto qcc con il menu Carica Dataset selezionando il pacchetto qcc e poi selezionando il dataset pistonrings\n\t\t\t\t<br/>\n\t\t\t\tScegli l'opzione 1, diametro per variabile (osservata..), campione per variabile di Raggruppamento, \n\t\t\t\t<br/>\n\t\t\t\tDigita 1:25 in Righe raggruppate da utilizzare, 30:40 in Nuovi Dati\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial qcc su https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

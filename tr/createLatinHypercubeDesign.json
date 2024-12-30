@@ -1,0 +1,18 @@
+{
+  "title": "Küçük Latin Hiper Küp Tasarımı Oluştur (Nicel Faktörler için)",
+  "navigation": "Küçük Latin Hiper Küp (Nicel) Tasarımı Oluştur",
+  "selectedvars": "Değişkenleri seçin",
+  "datasetname": "Tasarım adı",
+  "lblheading": "Boyut ve rastgeleleştirme",
+  "numOfRuns": "Koşu sayısı",
+  "numOfDeciPlaces": "Ondalık basamak sayısı",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmenize gerek olmayabilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım oluşturmayı rastgeleleştir",
+  "lhsDesignType": "küçük latin hiper küp örnekleme tasarımları (diğer türler için lhs veya DiceDesign paketlerine bakın)",
+  "help": {
+    "title": "Küçük Latin Hiper Küp Tasarımı Oluştur (Nicel Faktörler için)",
+    "r_help": "help(lhs.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tlhs.design fonksiyonu, nicel faktörler için birçok olası seviyeye sahip olan küçük latin hiper küp örnekleme tasarımlarına veya DiceDesign paketinden alan doldurma tasarımlarına erişmek için kullanılır. Özellikle, bilgisayar deneylerinde kullanılabilirler. Çoğu tasarım rastgele örneklerdir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(lhs.design, package = DoE.wrapper) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, factor_grid__latin_hypercube_Design.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

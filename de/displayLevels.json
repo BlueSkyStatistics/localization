@@ -1,10 +1,10 @@
 {
-  "title": "Anzeigebenen",
+  "title": "Anzeigestufen",
   "navigation": "Anzeige",
-  "target": "Faktorvariablen zur Anzeige von Ebenen für",
+  "target": "Faktorvariablen zur Anzeige von Stufen für",
   "help": {
-    "title": "Anzeigebenen",
+    "title": "Anzeigestufen",
     "r_help": "hilfe(karte,paket=purrr)",
-    "body": "\n<b>Beschreibung</b></br>\nWendet die Funktion levels in der Basis auf die ausgewählten Variablen im Datensatz an. Benutzer verwenden die Funktion select in dplyr, um die Variablen an die Funktion map zu übergeben, die die Funktion levels auf jede Variable anwendet\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nDatensatz %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvar1,var2: Variablen im Datensatz, für die Ebenen angezeigt werden sollen\n</li>\n<li>\nDatensatz: Der Datensatz, der die Variablen var1, var2 enthält\n</li>\n</ul>\n<b>Wert</b><br/>\nDie Ebenen der ausgewählten Variablen werden angezeigt<br/>\n<b>Paket</b></br>\npurrr, dplyr</br>\n<b>Hilfe</b></br>\nhilfe(karte,paket=purrr)\n"
+    "body": "\n<b>Beschreibung</b></br>\nWendet die Funktion levels in der Basis auf die ausgewählten Variablen im Datensatz an. Benutzer verwenden die Funktion select in dplyr, um die Variablen an die Funktion map zu übergeben, die die Funktion levels auf jede Variable anwendet\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nDatensatz %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvar1,var2: Variablen im Datensatz, für die Stufen angezeigt werden sollen\n</li>\n<li>\nDatensatz: Der Datensatz, der die Variablen var1, var2 enthält\n</li>\n</ul>\n<b>Wert</b><br/>\nDie Stufen der ausgewählten Variablen werden angezeigt<br/>\n<b>Paket</b></br>\npurrr, dplyr</br>\n<b>Hilfe</b></br>\nhilfe(karte,paket=purrr)\n"
   }
 }

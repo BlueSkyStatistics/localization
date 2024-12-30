@@ -1,0 +1,25 @@
+{
+  "title": "Grafico di Frequenza",
+  "navigation": "Frequenze",
+  "x": "Asse X",
+  "y": "Colore, specifica una variabile fattore",
+  "bins": "Numero di bin (applica solo quando la variabile sull'asse X è una variabile fattore)",
+  "barcolor": "Colore della linea (Dopo la selezione del colore, fai clic al di fuori del controllo per applicare)",
+  "tab1": "Numerico",
+  "tab2": "Fattore",
+  "alpha": "Opacità (0-1)",
+  "flip": "Inverti asse",
+  "specify_a_title": "Inserisci un titolo",
+  "x_title": "Etichetta asse X",
+  "y_title": "Etichetta asse Y",
+  "Facetrow": "Riga di Facet",
+  "Facetcolumn": "Colonna di Facet",
+  "Facetwrap": "Avvolgi Facet",
+  "Facetscale": "Scala di Facet",
+  "facets_lbl": "Facets",
+  "help": {
+    "title": "Grafico di Frequenza",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>Descrizione</b></br>\n            Visualizza la distribuzione di una singola variabile continua dividendo l'asse x in bin e contando il numero di osservazioni in ciascun bin. Gli istogrammi (geom_histogram()) visualizzano i conteggi con barre; i poligoni di frequenza (geom_freqpoly()) visualizzano i conteggi con linee. I poligoni di frequenza sono più adatti quando si desidera confrontare la distribuzione tra i livelli di una variabile categorica. </br>\n            NOTA: Ignoriamo il colore selezionato se è specificata una variabile di raggruppamento/colore poiché viene selezionato un colore diverso per ciascun livello della variabile di raggruppamento.</br>\n            Quando specifichi più variabili x, creiamo un grafico di frequenza separato per ciascuna variabile x.</br>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n            #Puoi creare un grafico di frequenza per una o più variabili numeriche. Il numero predefinito di bin è impostato su 30.</br>\n            #L'esempio seguente utilizza il dataset mtcars nel pacchetto datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #Puoi creare un grafico di frequenza per una o più variabili numeriche e raggruppare il grafico per una variabile fattore. Il numero predefinito di bin è impostato su 30.</br>\n            #L'esempio seguente utilizza il dataset mtcars nel pacchetto datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #Puoi creare un grafico di frequenza/grafico a linee raggruppando una variabile fattore per un'altra</br>\n            #Devi fare clic con il tasto destro su cyl e am nella vista variabile per renderlo un fattore</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            data: Il dataset predefinito​\n            </li>\n            <li>\n            aes(): Genera mappature estetiche che descrivono come le variabili nei dati sono mappate alle proprietà visive (estetiche) dei geoms.​\n            </li>\n            <li>\n            group:  Una variabile fattore/categorica opzionale. \n            </li>\n            <li>\n            geom_freqpoly(): Crea il grafico di frequenza\n            </li>\n            <li>\n            bins: Numero di bin.\n            </li>\n            <li>\n            Labs(): Cambia le etichette degli assi e i titoli della legenda (questo è facoltativo)​\n            </li>\n            <li>\n            facet_grid(): Dispone i pannelli in una griglia (questo è facoltativo)​\n            </li>\n            <li>\n            theme_calc(): Specifica il tema della calcolatrice (questo è facoltativo)​\n            </li>\n            <li>\n            coord_flip(): Inverti asse (questo è facoltativo)​\n            </li>\n            <li>\n            alpha: Controlla l'opacità, assume valori tra 0-1. 1 significa nessuna opacità.\n            </li>\n            </ul>\n            <b>Pacchetto</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aiuto</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Altro: Fai clic sul pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​           \n      "
+  }
+}

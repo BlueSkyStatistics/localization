@@ -1,0 +1,18 @@
+{
+  "title": "다변량 품질 관리 차트 (MQCC)",
+  "navigation": "MQCC 차트",
+  "summaryPrintChk": "차트와 함께 요약 인쇄",
+  "variableListSelcted": "차트에 사용할 데이터 (하나 이상의 변수를 선택)",
+  "groupingVariable": "(선택 사항) 하위 그룹이 있는 경우 그룹화 변수 선택",
+  "excludeGroups": "(선택 사항) 계산/차트에서 그룹 제외 (하위 그룹이 숫자인 경우) (예: 1:10 또는 1,4,5,7:12와 같이 쉼표로 구분하여 지정)",
+  "groupsTobeUsedAsNewData": "(선택 사항) 새 데이터 - 차트에 사용할 그룹 (하위 그룹이 숫자인 경우) (예: 1:25 또는 1,4,5,7:12로 지정) - 한계 계산에 포함되지 않는 새 데이터",
+  "limitsChk": "제어 한계 (1단계)를 계산하고 플로팅해야 하는 경우",
+  "pred_limitsChk": "예측 한계 (2단계)를 계산하고 플로팅해야 하는 경우",
+  "confidence_level": "(선택 사항) 신뢰 수준: 기본 공식을 그대로 두십시오 (여기서 p는 선택된 변수의 수로 자동 계산됨). 그렇지 않으면 0과 1 사이의 숫자 값을 지정하여 확률 한계를 계산하는 데 사용할 신뢰 수준을 지정하십시오.",
+  "genVarianceChk": "선택된 변수에 대한 일반화된 분산 |S|의 제어 차트 플로팅 (그룹화 변수를 선택해야 함)",
+  "help": {
+    "title": "다변량 품질 관리 차트(mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tmqcc 함수는 다변량 통계 품질 관리를 수행하고 일반화된 분산 |S|를 계산합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(mqcc, package = qcc) 및 help(GVcontrol, package = IAcsSPCR)를 사용하십시오.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 qcc 패키지에서 Load Dataset 메뉴를 사용하여 boiler라는 데이터 세트를 로드하십시오. qcc 패키지를 선택한 다음 boiler 데이터 세트를 선택하여 로드하십시오.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tboiler 데이터 세트에서 변수를 선택하고 모든 것을 기본값으로 두고 대화 상자를 실행하십시오.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\twidgets_mqcc.xlsx라는 샘플 데이터 세트 파일도 사용할 수 있습니다. 파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t일반화된 분산 |S|를 플로팅하려면 데이터 세트에 하위 그룹 번호가 있는 열이 있어야 합니다 - 그렇지 않으면 플로팅되지 않습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html에서 qcc 튜토리얼을 따르십시오.\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

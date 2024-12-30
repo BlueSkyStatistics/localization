@@ -1,0 +1,18 @@
+{
+  "title": "기존 FrF2 디자인에서 중앙 복합(정량적) 디자인 만들기",
+  "navigation": "중앙 복합(정량적) 디자인 만들기",
+  "datasetname": "디자인 이름",
+  "datasetFrF2": "기존 FrF2(정량적) 디자인 선택",
+  "alpha": "별점 수(alpha)",
+  "alphalbl": "“직교”, “회전 가능” 또는 별점의 위치를 나타내는 숫자",
+  "numOfCenterPts": "중심점 수 또는 쉼표로 구분된 두 숫자(큐브 및 별 부분용)",
+  "blockName": "블록 이름",
+  "lbl1": "무작위화 설정을 변경할 필요가 없을 수 있습니다",
+  "randomseeds": "무작위화 시드",
+  "randomizationChk": "디자인 생성을 무작위화",
+  "help": {
+    "title": "기존 FrF2 디자인에서 중앙 복합(정량적) 디자인 만들기",
+    "r_help": "help(ccd.augment, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tccd.augment 함수는 후속 절차에 대한 늦은 결정의 경우 별 부분이 있는 기존 분수 계수를 증강하는 데 사용됩니다(rsm 패키지 사용)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(ccd.augment, package = DoE.wrapper)를 사용하세요\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 CCD.xlsx용 FrF2 디자인의 요인이라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다\n\t\t\t\t<br/>\n\t\t\t\t먼저 FrF2 디자인을 생성합니다(4개의 요인 사용) - 실행 수 옵션을 0으로 선택하고 해상도를 5로 선택합니다.\n\t\t\t\t그런 다음 위의 FrF2 디자인에서 중앙 복합 디자인을 생성하고 이 중앙 복합 디자인 대화 상자/UI에서 모든 기본 옵션을 유지합니다\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

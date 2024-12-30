@@ -1,0 +1,17 @@
+{
+  "title": "تحويل Box-Cox العكسي (التحويل مرة أخرى إلى القيمة غير المحولة)",
+  "navigation": "Box-Cox العكسي",
+  "label2": "اختر متغيرًا أو اكتب قيمة عددية ليتم تحويلها مرة أخرى من تحويل Box-Cox السابق مع قيمة لامدا (λ)",
+  "variableSelcted": "اختر متغيرًا",
+  "selectVariableRad": "الخيار 1: اختر متغيرًا ليتم تحويله مرة أخرى من تحويل Box-Cox السابق",
+  "invBoxCoxColName": "(اختياري) حدد اسم متغير جديد لتخزين القيم المحولة. خلاف ذلك، سيتم إنشاء <variable_Invbcox>",
+  "selectNumberRad": "الخيار 2: اكتب قيمة عددية ليتم تحويلها مرة أخرى من تحويل Box-Cox",
+  "invNumber": "اكتب القيمة العددية",
+  "lambda": "(اختياري) حدد قيمة لامدا (λ) في (-2 إلى 2) ليتم استخدامها للتحويل مرة أخرى من تحويل Box-Cox. خلاف ذلك، إذا تركت فارغة، سيتم استخدام قيمة لامدا (λ) التي تم استخدامها للتحويل الأصلي Box-Cox للمتغير المحدد أعلاه",
+  "digits": "الأرقام - تقرب إلى عدد الأماكن العشرية المحددة",
+  "help": {
+    "title": "تحويل مرة أخرى (عكسي) من قيمة تم تحويلها سابقًا باستخدام Box-Cox",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tتحويل مرة أخرى (عكسي) من قيمة تم تحويلها سابقًا باستخدام Box-Cox باستخدام لامدا المحددة أو لامدا المرتبطة بالمتغير المحدد\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية حول Box-Cox أو لامدا (λ) - استخدم R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">للحصول على نظرة عامة جيدة حول Box-Cox من MASS، انظر https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tقيم لامدا (λ) المرتبطة بتحويلات Box-Cox المعروفة\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: تحويل مربع ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: لا تحويل؛ يعيد البيانات الأصلية ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: تحويل الجذر التربيعي ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: تحويل الجذر التكعيبي\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: تحويل الجذر الرابع\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: تحويل اللوغاريتم الطبيعي ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: تحويل الجذر التربيعي العكسي ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: تحويل عكسي ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: تحويل مربع عكسي ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

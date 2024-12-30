@@ -1,0 +1,33 @@
+{
+  "title": "ROC Eğrilerini Karşılaştır",
+  "navigation": "ROC Eğrilerini Karşılaştır",
+  "outcomevar": "İkili Sonuç Değişkeni (sayısal/faktör)",
+  "predprobvars": "Her Modelden Beklenen Olasılık Değişkenleri, en az 2 belirtin",
+  "outcomeorderlabel": "Sonuç 'Pozitif' Değeri",
+  "outcomeorderhigh": "Daha yüksek sıralı değer",
+  "outcomeorderlow": "Daha düşük sıralı değer",
+  "specopt": "1-spesifiklik yerine spesifikliği çiz",
+  "cilevel": "Güven Düzeyi",
+  "multcompopt": "Çoklu Karşılaştırma Ayarı",
+  "multcompmethod": "Çoklu Karşılaştırma Yöntemi",
+  "plotoptions": "Grafik Seçenekleri",
+  "plottitle": "Grafik Başlığı",
+  "plottitlesize": "Grafik Başlığı Boyutu (5-50)",
+  "themedropdown": "Grafik Teması",
+  "lineoptionslabel": "Çizgi Seçenekleri",
+  "linesize": "Çizgi Boyutu (0-5)",
+  "colorpalette": "Renk Paleti",
+  "axisoptionslabel": "Eksen Seçenekleri",
+  "axislabelsize": "Eksen Etiketi Boyutu (5-50)",
+  "ticklabelsize": "Eksen İşaretleme Etiketi Boyutu (5-50)",
+  "legendoptionslabel": "Açıklama Seçenekleri",
+  "legendtitle": "Başlık",
+  "legendpos": "Pozisyon",
+  "curvelabels": "Eğri Etiketleri, 'Etiket 1', 'Etiket 2', 'Etiket 3' olarak belirtin; bir satır aralığı için \\n kullanın",
+  "legendfontsize": "Açıklama Etiketleri Boyutu (5-50)",
+  "help": {
+    "title": "ROC Eğrilerini Karşılaştır",
+    "r_help": "help(roc.test, package = 'pROC')",
+    "body": "\nBu diyalog, bir modelden (örneğin, lojistik regresyon) elde edilen tahmin edilen olasılıkların bir setine göre alıcı işletim karakteristik (ROC) eğrilerini karşılaştırır. Her model, sonuç değişkeninin aynı sıralaması kullanılarak fit edilmelidir. ROC eğrilerinin bireysel alanlarının güven aralıkları ile bir tablosunu, DeLong'un testi kullanarak çiftler arası karşılaştırmaların bir tablosunu ve üst üste bindirilmiş ROC eğrilerini sağlar. Sonuç veya tahmin edilen olasılıklar için eksik değerlere sahip olan denekler çıkarılır, böylece her model aynı denek seti üzerinde değerlendirilir. Tahmin edilen olasılıkları elde etmek için Model Değerlendirme > Tahmin > Model Skorlama'ya bakın. \n<br/><br/><br/>\n<b>İkili Sonuç Değişkeni:</b> Tahminler için kullanılan ikili sonuç. Sayısal veya faktör olmalıdır.\n<br/><br/>\n<b>Her Modelden Beklenen Olasılık Değişkenleri:</b> Karşılaştırmak istediğiniz her fit edilmiş modelden beklenen olasılık sütunlarını belirtin.\n<br/><br/>\n<b>Sonuç 'Pozitif' Değeri:</b> Belirtilen ikili sonuç değişkeninin daha yüksek veya daha düşük sıralı değerinin 'pozitif' değer olarak kabul edilip edilmeyeceğini belirtin. Bu, tahmin edilen olasılıkların ait olduğu seviyedir. Örneğin, ikili sonuç 0/1 olarak kodlanmışsa, daha yüksek sıralı değer 1'in 'pozitif' yanıt olduğunu ve daha düşük sıralı değer 0'ın 'pozitif' yanıt olduğunu ifade eder. \n<br/><br/>\n<b>1-spesifiklik yerine spesifikliği çiz:</b> Bu, ROC eğrisi grafiğinin x eksenini spesifikliği kullanacak şekilde değiştirir. Eksen, soldan sağa doğru 1'den 0'a doğru azalacaktır.\n<br/><br/> \n<b>Güven Düzeyi:</b> ROC eğrisi alan aralıkları için güven düzeyi\n<br/><br/>\n<b>Çoklu Karşılaştırma Ayarı:</b> ROC eğrisi alanlarının çiftler arası karşılaştırmalarına çoklu karşılaştırma ayarı uygulayın.\n<br/><br/><br/>\n<b>Grafik Seçenekleri:</b>\n<br/><br/>\n<b>Grafik Başlığı:</b> Grafiğin başlığını belirtin. Kaldırılabilir.\n<br/><br/>\n<b>Grafik Teması:</b> Grafiğin genel temasını belirtin\n<br/><br/>\n<b>Çizgi Seçenekleri:</b>\n<br/><br/>\n<b>Çizgi Boyutu:</b> ROC eğrisi grafiğindeki çizgilerin boyutunu belirtin\n<br/><br/>\n<b>Renk Paleti:</b> ROC eğrisi çizgileri için kullanılan renk paletini belirtin\n<br/><br/>\n<b>Eksen Seçenekleri:</b>\n<br/><br/>\n<b>Eksen Etiketi Boyutu:</b> Grafikte kullanılan eksen etiketlerinin boyutunu belirtin.\n<br/><br/>\n<b>Eksen İşaretleme Etiketi Boyutu:</b> Eksen işaretleme etiketlerinin boyutunu belirtin.\n<br/><br/>\n<b>Açıklama Seçenekleri:</b>\n<br/><br/>\n<b>Pozisyon:</b> Grafikte açıklamanın pozisyonunu belirtin. Sağ, üst, alt veya sol olabilir.\n<br/><br/>\n<b>Başlık:</b> Açıklama için başlığı belirtin. Kaldırılabilir.\n<br/><br/>\n<b>Eğri Etiketleri:</b> Eğri etiketlerini belirtin, bunlar eğrilerin sırasına karşılık gelir (eğri 1, eğri 2, eğri 3, vb.). Hiçbir etiket belirtmezseniz, eğri etiketleri 1, 2, 3, vb. olacaktır. Herhangi bir etiket belirtirseniz, tüm eğriler için etiket belirtmelisiniz. Eğrilerin sırası, tahmin edilen olasılıkların belirtilen sırasıyla aynıdır.\n<br/><br/>\n<b>Açıklama Etiketleri Boyutu:</b> Açıklamadaki tüm metinlerin boyutu.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> pROC, ggthemes, RColorBrewer, ggsci, ggplot2\n"
+  }
+}

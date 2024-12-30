@@ -1,0 +1,18 @@
+{
+  "title": "t 분포에서 샘플",
+  "navigation": "t 분포에서 샘플",
+  "entrdsname": "데이터셋 이름 입력",
+  "degoffree": "자유도",
+  "lblnoofsamples": "샘플 수 (행)",
+  "lblnoofobsv": "관측 수 (열)",
+  "lblseed": "시드",
+  "lblAddtoDS": "데이터셋에 추가",
+  "chklbl1": "샘플 평균",
+  "chklbl2": "샘플 합계",
+  "chklbl3": "샘플 표준 편차",
+  "help": {
+    "title": "t 분포에서 샘플",
+    "r_help": "help(rt, package=stats)",
+    "body": "\n            ​​\n            <b>설명</b>\n            <br/>\n            df 자유도를 가진 t 분포의 밀도, 분포 함수, 분위수 함수 및 난수 생성.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n                dt(x, df, ncp, log = FALSE)\n                <br/>\n                pt(q, df, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qt(p, df, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rt(n, df, ncp)\n                <br/>\n            </code>\n            <br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n                <li>x, q : 분위수 벡터.</li>\n                \n                \n                <li>p : 확률 벡터.</li>\n                \n                \n                <li>n : 관측 수. length(n) > 1인 경우, 필요한 길이로 간주됩니다.</li>\n                \n                \n                <li>df : 자유도 (> 0, 비정수일 수 있음). df = Inf는 허용됩니다.</li>\n                \n                \n                <li>ncp : 비중심 매개변수 델타; 현재 rt()를 제외하고는 abs(ncp) <= 37.62에 대해서만 사용 가능합니다. 생략하면 중심 t 분포를 사용합니다.</li>\n                \n                \n                <li>log, log.p : 논리적; TRUE인 경우, 확률 p는 log(p)로 제공됩니다.</li>\n                \n                \n                <li>lower.tail : 논리적; TRUE(기본값)인 경우, 확률은 P[X ≤ x], 그렇지 않으면 P[X > x]입니다.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>세부사항</b>\n            <br/>\n            df = n 자유도를 가진 t 분포의 밀도는\n            <br/>\n            <code>f(x) = Γ((n+1)/2) / (√(n π) Γ(n/2)) (1 + x^2/n)^-((n+1)/2)</code>\n            <br/>\n            모든 실수 x에 대해 정의됩니다. 평균은 0 (n > 1)이고 분산은 n/(n-2) (n > 2)입니다.\n            <br/>\n            일반 비중심 t는 매개변수 (df, Del) = (df, ncp)로 정의되며, T(df, Del) := (U + Del) / √(V/df)로 표현됩니다. 여기서 U와 V는 독립적인 난수이며, U ~ N(0,1) 및 V ~ χ^2(df)입니다 (카이제곱 참조).\n            <br/>\n            가장 많이 사용되는 응용 프로그램은 t-검정의 전력 계산입니다:\n             T= (mX - m0) / (S/sqrt(n)) 여기서 mX는 평균이고 S는 X_1, X_2, …, X_n의 샘플 표준 편차 (sd)입니다. 이들은 i.i.d. N(μ, σ^2)입니다. 그러면 T는 df= n - 1 자유도를 가진 비중심 t로 분포하며 비중심 매개변수 ncp = (μ - m0) * sqrt(n)/σ입니다.\n             <br/>\n            <br/><b>값</b>\n            <br/>\n            dt는 밀도를 제공하고, pt는 분포 함수를 제공하며, qt는 분위수 함수를 제공하고, rt는 난수를 생성합니다.\n            <br/>\n            잘못된 인수는 NaN을 반환하며 경고가 발생합니다.\n            <br/>\n            결과의 길이는 rt의 경우 n에 의해 결정되며, 다른 함수의 경우 수치 인수의 최대 길이에 의해 결정됩니다.\n            <br/>\n            n을 제외한 수치 인수는 결과의 길이에 맞게 재활용됩니다. 논리 인수의 첫 번째 요소만 사용됩니다.\n            <br/>\n            <br/><b>참고</b>\n            <br/>\n            ncp = 0을 제공하면 비중심 분포에 대한 알고리즘이 사용되며, 이는 ncp가 생략된 경우와 동일한 알고리즘이 아닙니다. 이는 ncp 값이 0에 매우 가까운 극단적인 경우에 일관된 동작을 제공하기 위함입니다.\n            <br/>\n            비영점 ncp에 대한 코드는 주로 중간 값의 ncp에 대해 사용되며, 특히 꼬리 부분에서 큰 값에 대해서는 높은 정확성을 보장하지 않습니다."
+  }
+}

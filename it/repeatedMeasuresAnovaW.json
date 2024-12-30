@@ -1,0 +1,29 @@
+{
+  "helpText": "L'ANOVA a misure ripetute richiede che i dati siano in formato lungo. Se i tuoi dati non sono in formato lungo, vedere Datasets > ReShape > Longer",
+  "repMeasuresConfig": "Configurazione",
+  "modelname": "Inserisci il nome del modello",
+  "title": "ANOVA a Misure Ripetute - Larga",
+  "subjectID": "Specifica facoltativamente una variabile da utilizzare come identificatore del soggetto",
+  "dependentVariable": "Variabile dipendente",
+  "navigation": "ANOVA, Misure Ripetute, Larga",
+  "response": "Variabile(i) intra-soggetto e.g. Tempo",
+  "Fixed": "Fattore tra soggetti",
+  "covariates": "Covariate",
+  "Summary": "Medie marginali stimate",
+  "Scatter_plot": "Posthocs",
+  "Residual": "Grafico residui vs. adattati",
+  "Histogram": "Grafico istogramma dei residui",
+  "brownForsythe": "Test di Brown-Forsythe",
+  "levenesTest": "Test di Levene",
+  "plotMeansCI": "Grafico delle medie e degli intervalli di confidenza",
+  "simpleEffectsTest": "Test degli effetti semplici",
+  "label2": "Opzioni per posthocs e test degli effetti semplici",
+  "combon": "Confronta le medie utilizzando:",
+  "adjust": "Metodo per l'aggiustamento dei valori p",
+  "displayBoxMDetails": "Visualizza i dettagli associati al test di Box's M (Nota: I risultati del test di Box's M sono sempre mostrati)",
+  "help": {
+    "title": "ANOVA a Misure Ripetute",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>Descrizione</b></br>\nNOTA:<br/>\n1. Dobbiamo ristrutturare i dati quando eseguiamo un'ANOVA a misure ripetute su un dataset largo<br/>\n2. Supportiamo più misure ripetute per una singola variabile e.g. Glicemia misurata al pretest, posttest e in una visita di follow-up<br/>\n3. Devi specificare un nome di fattore ripetuto e.g. Glicemia e il numero di livelli. Creeremo una variabile fattore e.g. chiamata Glicemia con livelli creati dai nomi delle variabili contenenti le misure ripetute e.g. i livelli del fattore saranno pretest, posttest e followup<br/>\n4. Devi specificare un nome di misura e.g. Valore. Creeremo una variabile e.g. Valore con tutti i valori di Glicemia corrispondenti al pretest, posttest e followup per ciascun soggetto.<br/>\n5. Supportiamo una singola variabile fattore tra soggetti e intra-soggetti.<br/>\n6. Le versioni future supporteranno più misure così come più variabili fattore tra soggetti e intra-soggetti.<br/>\n7. Per impostazione predefinita, ogni riga del dataset corrisponde a un soggetto unico, puoi anche specificare una variabile per l'ID del soggetto.</br>\n<br/>\nCon l'ANOVA a misure ripetute, le statistiche F vengono calcolate per ciascun fattore intra-soggetto, fattore tra soggetti e il termine di interazione per l'ANOVA mista</br>\nCerca le tabelle dei valori ANOVA aggiuntive nell'output che mostrano MSE (media della somma dei quadrati per errore) e pes (eta parziale quadrato)</br>\nAttualmente supportiamo un singolo fattore intra-soggetto e tra soggetti, il fattore tra soggetti è facoltativo.</br>\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"variabileDipendente\", \n\tid = \"Identificatore\", within = c(\"Tempo\"), \tbetween = c(\"Trattamento\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ndata: Un data.frame contenente i dati. Obbligatorio\n</li>\n<li>\ndv: vettore carattere (di lunghezza 1) che indica la colonna contenente la variabile dipendente nei dati.\n</li>\n<li>\nbetween: vettore carattere che indica i fattori/colonne tra soggetti nei dati. Il valore predefinito è NULL che indica nessun fattore tra soggetti.\n</li>\n<li>\nwithin: vettore carattere che indica i fattori/colonne intra-soggetti (o misure ripetute) nei dati. Il valore predefinito è NULL che indica nessun fattore intra-soggetti.\n</li>\n<li>\ncovariate: vettore carattere che indica le covariate tra soggetti (cioè, colonne) nei dati. Il valore predefinito è NULL che indica nessuna covariata. Si prega di notare che factorize deve essere impostato su FALSE nel caso in cui la covariata sia numerica e debba essere trattata come tale.\n</li>\n<li>\nanovatable: lista di ulteriori argomenti passati alla funzione che produce la tabella ANOVA. \n</li>\n</ul>\n<br/>\n<b>Dettagli</b></br>\nVedi aiuto dettagliato di R</br>\n<b>Valore</b><br/>\naov_car, aov_4 e aov_ez sono wrapper per Anova e aov, il valore restituito dipende dall'argomento di ritorno. Per impostazione predefinita, viene restituito un oggetto S3 di classe \"afex_aov\" contenente i seguenti slot:<br/>\n\"anova_table\": Una tabella ANOVA di classe c(\"anova\", \"data.frame\").<br/>\n\"aov\": oggetto aov restituito da aov (non dovrebbe essere utilizzato per valutare la significatività degli effetti, ma può essere passato a emmeans per test post-hoc).<br/>\n\"Anova\": oggetto restituito da Anova, un oggetto di classe \"Anova.mlm\" (se sono presenti fattori intra-soggetti) o di classe c(\"anova\", \"data.frame\").<br/>\n\"lm\": l'oggetto adattato con lm e passato a Anova (cioè, un oggetto di classe \"lm\" o \"mlm\"). Restituito anche se return = \"lm\".<br/>\n\"data\": una lista contenente: (1) long (i dati possibilmente aggregati in formato lungo utilizzati per aov), wide (i dati utilizzati per adattare l'oggetto lm), e idata (se sono presenti fattori intra-soggetti, l'argomento idata passato a car::Anova). Restituito anche se return = \"data\".<br/>\n<b>Pacchetto</b></br>\nafex</br>\n<b>Aiuto</b></br>\nhelp(aov_ez, package ='afex')\nClicca sul pulsante Aiuto R per ottenere aiuto dettagliato di R. Puoi anche inserire help(aov_ez, package ='afex') e premere CTRL Enter nell'editor di sintassi R per ottenere aiuto\n    "
+  }
+}

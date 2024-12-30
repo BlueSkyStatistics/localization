@@ -1,0 +1,27 @@
+{
+  "title": "동등성 테스트",
+  "navigation": "동등성 테스트",
+  "variableSelcted1": "첫 번째 변수를 선택하세요",
+  "label1": "두 변수를 비교하려면 그룹화 변수를 선택하거나 두 번째(독립 또는 쌍) 변수를 선택하세요",
+  "variableSelcted2": "두 번째 변수를 선택하세요",
+  "label2": "선택한 경우 두 번째 변수를 어떻게 처리할지",
+  "groupingNeededRad": "선택한 두 번째 변수는 그룹화 변수입니다",
+  "referenceGpValue": "참조로 사용할 그룹 값을 입력하세요",
+  "pairedTestRad": "쌍 테스트 수행 - 선택한 두 번째 변수는 쌍입니다",
+  "noneRad": "위의 내용 중 해당 없음",
+  "targetMean": "목표(평균) - 두 샘플에는 해당되지 않음",
+  "lower": "하한 - 하등가 경계의 숫자 값",
+  "upper": "상한 - 상등가 경계의 숫자 값",
+  "smdChk": "SMD(표준화 평균 차이)로 지정된 동등성 경계",
+  "label3": "테스트 유형",
+  "EQUtestRad": "동등성 테스트 수행",
+  "METtestRad": "최소 효과 테스트(MET) 수행",
+  "alpha": "알파 수준(기본값 = 0.05)",
+  "HedgesCorrectionChk": "Hedges 보정을 자동으로 계산(그렇지 않으면 Cohen의 d 표시)",
+  "plotChk": "일치도 플롯(플롯을 표시하는 데 시간이 걸릴 수 있음)",
+  "help": {
+    "title": "동등성 테스트",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t동등성 테스트 또는 최소 효과 테스트(MET)를 수행하는 함수\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(t_TOST, package = TOSTER)를 사용하세요\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 Load Dataset 메뉴에서 iris 데이터셋을 선택하여 iris 데이터셋을 로드하세요(빠르게 iris 입력)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSepal.Length를 첫 번째 변수로 선택하고 (선택적으로) Sepal.Width를 두 번째 변수로 선택한 후 쌍 테스트를 선택하세요\n\t\t\t\t<br/>\n\t\t\t\t하한으로 5.5, 상한으로 8.5를 입력하여 동등성 한계를 설정하고 실행을 클릭하세요\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html에서 튜토리얼을 따르세요\n\t\t\t"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Análise de Acordo de Atributos, Básico",
+  "navigation": "Acordo de Atributos, Básico",
+  "variablePartSelcted": "Selecione a variável para amostra/parte",
+  "variableOpSelcted": "Selecione a variável para avaliador/operador",
+  "variableRespSelcted": "Selecione a variável para atributo/resposta",
+  "variableRefSelcted": "(Opcional) Selecione a variável para referência/resposta padrão",
+  "alpha": "Intervalo de confiança (alpha) entre 0 e 1",
+  "rowsTobeUsed": "Deixe em branco se todas as linhas forem usadas. Caso contrário, especifique as linhas a serem usadas para análise (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
+  "help": {
+    "title": "Análise de acordo de atributos",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar análise de acordo de atributos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar os arquivos de conjunto de dados de amostra attributemsaAB.xlsx para \n\t\t\t\tdois operadores, A e B, cada um com 20 observações repetidas duas vezes com classificações P e F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVocê também pode tentar o arquivo de conjunto de dados de amostra attributemsaABCordered.RData com três operadores, A, B, C, cada um com 10 observações repetidas duas vezes com classificações \"ordenadas\" (ordinais) \n\t\t\t\tcomo Discordo, Discordo um pouco, Neutro, Concordo um pouco e Concordo. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAbra os arquivos na grade de dados com o menu de abrir arquivo\n\t\t\t"
+  }
+}

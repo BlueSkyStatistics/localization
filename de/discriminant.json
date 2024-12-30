@@ -6,17 +6,17 @@
   "tvarbox2": "Fester Faktor",
   "blockVar": "Kovariate(n)",
   "testStatistic": "Teststatistik",
-  "label2": "Optionen für Posthocs",
+  "label2": "Optionen für Post-hoc-Tests",
   "combon": "Mittelwerte vergleichen mit:",
   "emm": "Geschätzte marginale Mittelwerte",
-  "displayBoxMDetails": "Details zum Box's M-Test anzeigen (Hinweis: Die Ergebnisse des Box's M-Tests werden immer angezeigt)",
+  "displayBoxMDetails": "Details zu Box's M-Test anzeigen (Hinweis: Die Ergebnisse des Box's M-Tests werden immer angezeigt)",
   "adjust": "Methode zur Anpassung der p-Werte",
   "levenesTest": "Levene-Test",
-  "posthocs": "Posthocs",
+  "posthocs": "Post-hoc-Tests",
   "plotMeansCI": "Diagramm der Mittelwerte und Konfidenzintervalle",
   "help": {
     "title": "Diskriminanzanalyse",
-    "r_help": "hilfe(manova, paket='stats')",
-    "body": "\n<b>Beschreibung</b></br>\nDiskriminanzanalyse: Omnibus multivariate Tests und entsprechende F- und p-Werte werden bereitgestellt. Folgetests sind ebenfalls verfügbar.</br> HINWEIS: Wir unterstützen derzeit einen einzelnen unabhängigen Faktor</br>\nHINWEIS: Wir zeigen das Konfidenzintervall im Diagramm der Mittelwerte nicht an, da unnötige Warnungen angezeigt werden. Wir arbeiten mit dem Autor des gplots-Pakets zusammen, um dies zu beheben.</br>\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ faktor1  )\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n...: Argumente, die an aov übergeben werden\n</li>\n</ul>\n<b>Details</b></br>\nDie Klasse \"manova\" unterscheidet sich von der Klasse \"aov\" in der Auswahl einer anderen Zusammenfassungsmethode. Die Funktion manova ruft aov auf und fügt dann der Ergebnisobjekt für jede Schicht die Klasse \"manova\" hinzu.​</br>\n<b>Wert</b><br/>\nSiehe aov-Hilfe, Details unten<br/>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nKlicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten.</br> Sie können auch help(manova, paket ='stats') eingeben und STRG Enter im R-Syntax-Editor drücken, um Hilfe zu erhalten</br>\n"
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>Beschreibung</b></br>\nDiskriminanzanalyse: Omnibus multivariate Tests und entsprechende F- und p-Werte werden bereitgestellt. Folgetests univariater Tests werden ebenfalls bereitgestellt.</br> HINWEIS: Wir unterstützen derzeit einen einzelnen unabhängigen Faktor</br>\nHINWEIS: Wir zeigen das Konfidenzintervall im Diagramm der Mittelwerte nicht an, da unnötige Warnungen angezeigt werden. Wir arbeiten mit dem Autor des gplots-Pakets zusammen, um dies zu beheben.</br>\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ faktor1  )\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\n...: Argumente, die an aov übergeben werden\n</li>\n</ul>\n<b>Details</b></br>\nDie Klasse \"manova\" unterscheidet sich von der Klasse \"aov\" in der Auswahl einer anderen Zusammenfassungsmethode. Die Funktion manova ruft aov auf und fügt dann der Ergebnisobjekt für jede Schicht die Klasse \"manova\" hinzu.​</br>\n<b>Wert</b><br/>\nSiehe aov-Hilfe, Details unten<br/>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nKlicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten.</br> Sie können auch help(manova, package ='stats') eingeben und STRG + Enter im R-Syntax-Editor drücken, um Hilfe zu erhalten</br>\n"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "title": "Zaman Serilerini, korelasyonlarla çiz",
+  "navigation": "Zaman Serilerini, korelasyonlarla çiz",
+  "destination": "Çizilecek değişkenler",
+  "firstObservation": "İlk gözlem zamanı örn.1: Ocak 1961 için 1961,1 girin örn.2: 1961'in 3. Çeyreği için 1961,3 girin, örn.3: sürekli bir seri için 1 girin",
+  "frequency": "Zaman birimi başına gözlem sayısı örn.1: bir yılın her ayı için bir gözlem için 12 girin, örn.2: bir çeyrek için bir gözlem için 4 girin, örn.3: sürekli bir seri için 1 girin.",
+  "label0": "Ekstra grafikler",
+  "autocorrelations": "Otokorelasyonları çiz",
+  "autocovariance": "Otokovaryansı çiz",
+  "partialcorrelations": "Kısmi korelasyonları çiz",
+  "label2": "Uygulanan değerler için seçenekler",
+  "mainTitle": "Ana başlık",
+  "yaxisLabel": "Y ekseni etiketi",
+  "help": {
+    "title": "Zaman Serilerini Çiz (korelasyonlarla)",
+    "r_help": "help(acf, package='forecast')",
+    "body": "\n<b>Açıklama</b></br>\nOtokorelasyonlar, otokovaryans ve kısmi korelasyonlarla zaman serisi grafiği oluşturur. BSkyPlotSeriesWithCorrelations, forecast paketinde acf ve/veya pacf'yi çağıran bir sarmalayıcı işlevdir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyPlotSeriesWithCorrelations(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='başlık', ylab='y ekseni etiketi', dataset=\"Dataset2\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: çizilecek seçilen değişkenler\n</li>\n<li>\nstart: İlk gözlem zamanı yıl,ay veya yıl,çeyrek formatında girilmelidir örn.(verileriniz aylara göre düzenlenmişse 1992,1 Ocak 1992 için veya verileriniz çeyrekler halinde düzenlenmişse 1992,1 1992'nin ilk çeyreğini ifade eder.\n</li>\n<li>\nfrequency: Birim zamanda gözlem sayısı. Örnek: aylık için yılda 12 gözlem vardır. Çeyrek için yılda 4 gözlem vardır.\n</li>\n<li>\nautocorrelation: eğer TRUE ise bir otokorelasyon grafiği de oluşturulacaktır.\n</li>\n<li>\nautocovariance: eğer TRUE ise bir otokovaryans grafiği de oluşturulacaktır.\n</li>\n<li>\npartialautocorrelations: eğer TRUE ise bir kısmi otokorelasyon grafiği de oluşturulacaktır.\n</li>\n<li>\nplot.type: \"multiple\" ayrı için ve \"single\" birleşik grafik için.\n</li>\n<li>\nmain: grafiğin ana başlığı\n</li>\n<li>\nylab: y ekseni için başlık\n</li>\n<li>\ndataset: vars'ın alındığı veri kümesinin adı.\n</li>\n</ul>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üstündeki sağ üst köşedeki R simgesine tıklayın veya aşağıdaki komutu çalıştırarak help(acf, package ='forecast') bir R kodu parçası oluşturarak + tıklayarak çıktı penceresinde çalıştırın\n"
+  }
+}

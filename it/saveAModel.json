@@ -1,0 +1,24 @@
+{
+  "title": "Salva modelli in un file",
+  "navigation": "Salva modelli",
+  "filterModels": "Filtra modelli per classe",
+  "modelSelection": "Seleziona un modello(i) da salvare",
+  "importResp": "Seleziona un file in cui salvare un modello",
+  "label1": "NOTA: Il modello sarà salvato in un file nel percorso selezionato qui sotto SOLO quando esegui il dialogo.",
+  "levelOfInterest": "Quando la variabile da prevedere ha 2 livelli, specifica il livello di interesse. La matrice di confusione e le statistiche correlate vengono visualizzate con il livello di interesse specificato come riferimento",
+  "label12": "Risultati del test: Non appena un modello è selezionato, eseguiremo test per vedere se le variabili dipendenti specificate nel modello sono disponibili nel dataset da valutare. I risultati verranno visualizzati qui",
+  "label2": "Salva valori previsti e statistiche di supporto.",
+  "label3": "Le previsioni e le probabilità previste, dove applicabile, sono memorizzate nel dataset in fase di valutazione come nuove variabili con il prefisso qui sotto",
+  "label4": "**Per le variabili dipendenti con 2 livelli, il 2° livello è trattato come il livello positivo. Vedi Dati > Livelli fattoriali > Riordina livelli manualmente per cambiare l'ordine dei livelli fattoriali e ricostruire il modello.",
+  "conflevel": "Salva intervalli di confidenza per valori previsti individuali **(Valido solo per modelli lineari (classe lm))",
+  "roctable": "Mostra tabella ROC (**Solo per variabili dipendenti binarie)",
+  "colname": "Specifica il prefisso del nome della colonna",
+  "label5": "**Selezionare la casella di controllo sopra comporterà una penalità di prestazioni per dataset di grandi dimensioni.",
+  "level": "Specifica il livello di confidenza",
+  "confusioncheck": "Genera matrice di confusione",
+  "help": {
+    "title": "Salva modelli",
+    "r_help": "help(save, package='base')",
+    "body": "\n    <b>Descrizione</b></br>\n    I modelli selezionati saranno salvati in un file nel formato dati R (.estensione RData)</br>\n    Puoi specificare un nuovo file inserendo un nome o selezionando un file esistente</br>\n    Se selezioni un file esistente, verrà sovrascritto.</br>\n    Devi fare clic sul pulsante di esecuzione (il pulsante a triangolo orizzontale) per eseguire il dialogo e salvare gli oggetti in un file. \n    <br/>\n    <b>Utilizzo</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"percorso del file\")\n    </code> <br/>\n    <b>Argomenti</b><br/>\n    <ul>\n    <li>\n    model1, model2...: oggetti modello adattati\n    </li>\n    <li>\n    file: nome del file con percorso, gli oggetti modello selezionati saranno salvati in questo file RData\n    </li>\n    </ul>\n    <b>Pacchetto</b></br>\n    base</br>\n    <b>Aiuto</b></br>\n    Per un aiuto dettagliato fai clic sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando help(save, package = 'base') nella finestra dell'editor R\n    </br>\n    "
+  }
+}

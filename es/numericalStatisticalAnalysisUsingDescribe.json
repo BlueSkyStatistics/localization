@@ -1,11 +1,11 @@
 {
   "title": "Estadísticas Numéricas, usando describe",
-  "navigation": "Resúmenes Numéricos, usando describe (Legacy)",
+  "navigation": "Resúmenes Numéricos, usando describe (Legado)",
   "tvarbox1": "Seleccionar variables",
   "tvarbox2": "Seleccionar variables de agrupamiento",
   "help": {
     "title": "Estadísticas Numéricas, usando describe",
     "r_help": "help(describe, package=psych)",
-    "body": "\n<b>Descripción</b></br>\nSalida de las siguientes estadísticas numéricas:</br>\nconteo, media, desviación estándar, mediana, recortada, mad, min, max, rango, sesgo, curtosis, error estándar\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n#BSkyFormat muestra una salida bien formateada<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: Un dataframe o matriz\n</li>\n</ul>\n<b>Paquete</b></br>\npsych</br>\n<b>Ayuda</b></br>\nhelp(describe, package=psych)\n"
+    "body": "\n<b>Descripción</b></br>\nSalida de las siguientes estadísticas numéricas:</br>\nconteo, media, desviación estándar, mediana, recortada, mad, mínimo, máximo, rango, sesgo, curtosis, error estándar\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n#BSkyFormat muestra una salida bien formateada<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: Un dataframe o matriz\n</li>\n</ul>\n<b>Paquete</b></br>\npsych</br>\n<b>Ayuda</b></br>\nhelp(describe, package=psych)\n"
   }
 }

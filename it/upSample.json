@@ -1,0 +1,12 @@
+{
+  "title": "Campionamento in Su",
+  "navigation": "Campione, Campionamento in Su",
+  "downsample": "Inserisci il nome del dataset",
+  "seed": "Imposta il seme",
+  "dependent": "Variabile da campionare in su",
+  "help": {
+    "title": "Campionamento in Su",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descrizione</b></br>\nCampionamento in Su di Dati Imbilanciati. upSample campiona con sostituzione per rendere le distribuzioni delle classi uguali\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Classe\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: una matrice o un data frame di variabili predittive\n</li>\n<li>\ny: una variabile fattoriale con le appartenenze alle classi\n</li>\n<li>\nlist: la funzione deve restituire list(x, y) o unire x e y insieme? Se TRUE, l'output sarà convertito in un data frame.\n</li>\n<li>\nyname: se list = FALSE, un'etichetta per la colonna della classe\n</li>\n</ul>\n<b>Dettagli</b></br>\nIl campionamento casuale semplice è utilizzato per ridurre il campione per la classe/e maggioritaria/e. Nota che i dati della classe minoritaria rimangono intatti e che i campioni saranno riordinati nella versione ridotta.</br>\nPer il campionamento in su, tutti i dati originali rimangono intatti e campioni aggiuntivi vengono aggiunti alle classi minoritarie con sostituzione.</br>\n<b>Valore</b><br/>\nO un data frame o una lista con elementi x e y.<br/>\n<b>Esempi</b><br/>\n<code> \n## Un esempio ridicolo...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Pacchetto</b></br>\ncaret</br>\n<b>Aiuto</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

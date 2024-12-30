@@ -1,0 +1,20 @@
+{
+  "title": "Plotar Séries Temporais",
+  "navigation": "Plotar Séries Temporais, separadas ou combinadas",
+  "destination": "Variáveis a serem plotadas",
+  "firstObservation": "Tempo da primeira observação, ex: 1: insira 1961,1 para janeiro de 1961, ex: 2: insira 1961,3 para o 3º Trimestre de 1961, ex: 3: insira 1 para uma série contínua",
+  "frequency": "Número de observações por unidade de tempo, ex: 1: insira 12 para uma observação para cada mês de um ano, ex: 2: insira 4 para uma observação por trimestre, ex: 3: insira 1 para uma série contínua.",
+  "label0": "Opções de Plotagem",
+  "separately": "Plotar cada série separadamente",
+  "combine": "Combinar séries",
+  "label1": "Transformar variáveis",
+  "chkboxForTransform": "Logaritmo natural",
+  "label2": "Opções para valores ajustados",
+  "yaxisLabel": "Rótulo do eixo Y",
+  "mainTitle": "Título principal",
+  "help": {
+    "title": "Plotar Séries Temporais",
+    "r_help": "help(plot.ts, package ='stats')",
+    "body": "\n<b>Descrição</b></br>\nCria um gráfico de séries temporais combinadas ou separadas. Quando combinadas, múltiplas variáveis são plotadas juntas; quando separadas, cada variável é plotada independentemente. BSkyPlotSeriesWithCorrelations é uma função wrapper que cria um objeto de série temporal e chama internamente plot.ts. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='título', ylab='rótulo do eixo y', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: variáveis selecionadas para plotar\n</li>\n<li>\nstart: O tempo da primeira observação deve ser inserido no formato ano,mês ou ano,trimestre, ex: (se seus dados estão organizados em meses, 1992,1 para jan 1992 ou se seus dados estão organizados em trimestres, então 1992,1 refere-se ao primeiro trimestre de 1992.\n</li>\n<li>\nfrequency: Número de observações em unidade de tempo. Exemplo: para mensal, há 12 observações em um ano. Para trimestral, há 4 observações em um ano.\n</li>\n<li>\nplot.type: \"multiple\" para separado e \"single\" para gráfico combinado.\n</li>\n<li>\nnaturalLogYaxis: se TRUE, um eixo Y é mostrado como valor de logaritmo natural.\n</li>\n<li>\nmain: título principal do gráfico\n</li>\n<li>\nylab: título para o eixo y\n</li>\n<li>\ndataset: o nome do conjunto de dados do qual as variáveis foram selecionadas.\n</li>\n</ul>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando help(plot.ts, package ='stats') criando um bloco de código R clicando + na janela de saída\n"
+  }
+}

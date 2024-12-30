@@ -1,0 +1,13 @@
+{
+  "title": "인물-항목 맵 그리기",
+  "navigation": "인물-항목 맵 그리기",
+  "label1": "모델 선택 (Rm 및 dRm 클래스의 모델 지원)",
+  "label1b": "사용 가능한 모델이 없으면 모델 적합 -> IRT를 선택하여 먼저 모델을 생성해야 합니다.",
+  "modelselector1": "모델 선택",
+  "range1": "X축 범위",
+  "help": {
+    "title": "인물-항목 맵 그리기",
+    "r_help": "help(plotPImap, package='eRm')",
+    "body": "\n                <b>설명</b></br>\n                인물-항목 맵은 항목(및 임계값) 매개변수의 위치와 잠재 차원에 따른 인물 매개변수의 분포를 표시합니다. 인물-항목 맵은 항목 측정 분포(하단 패널)의 범위와 위치를 인물 측정 분포(상단 패널)의 범위와 위치와 비교하는 데 유용합니다. 항목은 모든 인물의 '능력'을 의미 있게 측정하기 위해 전체 척도에 걸쳐 위치해야 합니다.\n\n                <br/><br/>\n                <b>사용법</b>\n                <br/>\n                <code>\n                plotPImap(object, item.subset = \"all\", sorted = FALSE,\n                main = \"인물-항목 맵\", latdim = \"잠재 차원\",\n                pplabel = \"인물\n매개변수\n분포\", cex.gen = 0.7,\n                xrange = NULL, warn.ord = TRUE, warn.ord.colour = \"black\",\n                irug = TRUE, pp = NULL)\n                </code>\n                <br/><br/>\n                <b>인수</b>\n                <br/>  \n                object: Rm 또는 dRm 클래스의 객체\n                <br/>\n                item.subset: 플로팅할 항목의 하위 집합. X의 열을 나타내는 숫자 벡터 또는 열 이름을 나타내는 문자 벡터입니다. \"all\"인 경우 모든 항목이 플로팅됩니다. 플로팅할 항목의 수는 1보다 커야 합니다.\n                <br/>\n                sorted: TRUE인 경우 항목이 잠재 차원에서의 위치에 따라 오름차순으로 정렬됩니다.   \n                <br/>\n                main: 플롯의 주요 제목.\n                <br/>\n                latdim: x축 레이블, 즉 잠재 차원.\n                <br/>\n                pplabel: 인물 매개변수 분포를 표시하는 상단 패널의 제목\n                <br/>\n                cex.gen: cex는 그래픽 매개변수로, 플로팅 텍스트와 기호가 기본값에 비해 얼마나 확대되어야 하는지를 지정하는 숫자 값입니다. 여기서 cex.gen은 모든 텍스트 레이블에 적용됩니다. 기본값은 0.7입니다.\n                <br/>\n                xrange: x축 범위\n                <br/>\n                warn.ord: TRUE(기본값)인 경우 다항 항목에 대한 비순서 임계값 위치를 나타내기 위해 하단 패널의 오른쪽 여백에 별표가 표시됩니다.\n                <br/>\n                warn.ord.colour: 다항 항목에 대한 비순서 임계값 위치는 이 색상으로 색칠되어 더 잘 보이게 됩니다. 항목이 많아 플롯이 꽤 밀집된 경우 특히 유용합니다. 기본값은 \"black\"으로, 구분이 없습니다.\n                <br/>   \n                irug: TRUE(기본값)인 경우 모든 임계값이 인물 분포 아래에 플로팅되어 포함된 항목이 가장 유용한 위치를 나타냅니다.                \n                <br/>\n                pp: NULL이 아닌 경우, 이는 데이터 객체의 person.parameter 데이터를 포함하여 재계산할 필요가 없습니다.\n                <br/><br/>\n\n                <b>패키지</b>\n                <br/>\n                eRm\n                <br/><br/>\n                <b>도움말</b>\n                <br/>\n                help(plotPImap, package='eRm')\n                "
+  }
+}

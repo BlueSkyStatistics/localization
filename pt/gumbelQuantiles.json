@@ -1,0 +1,15 @@
+{
+  "title": "Quantis de Gumbel",
+  "navigation": "Quantis de Gumbel",
+  "prob": "Insira probabilidades separadas por vírgula. Exemplo: 0.3,0.2,0.5",
+  "location": "Localização",
+  "scale": "Escala",
+  "labelSig": "Nível de significância",
+  "lowtail": "Cauda inferior",
+  "uptail": "Cauda superior",
+  "help": {
+    "title": "Quantil de Gumbel",
+    "r_help": "help(qgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Densidade, função de distribuição, função quantil e geração aleatória para a distribuição de Gumbel com parâmetros de localização e escala especificados.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis (valores da variável).</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>location : parâmetro de localização (padrão 0); potencialmente um vetor.</li>\n                \n                \n                <li>scale : parâmetro de escala (padrão 1); potencialmente um vetor.</li>\n                \n                <li>lower.tail : lógico; se TRUE (o padrão) probabilidades e quantis correspondem a P(X ≤ x), se FALSE a P(X > x).</li>\n            </ul>            \n"
+  }
+}

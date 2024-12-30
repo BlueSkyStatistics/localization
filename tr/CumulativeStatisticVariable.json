@@ -1,0 +1,13 @@
+{
+  "title": "Kümülatif İstatistik Değişkeni",
+  "navigation": "Kümülatif İstatistik Değişkeni",
+  "varname": "Yeni Değişken Adı (boşluk olmadan)",
+  "statvar": "Kümülatif İstatistik için Değişken",
+  "groupbyvars": "Gruplamak için Değişkenler",
+  "func": "Kümülatif İstatistik",
+  "help": {
+    "title": "Kümülatif İstatistik Değişkeni",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>Kümülatif İstatistikler</b>\n<br/><br/>\nBu diyalog, mevcut veri setinin sıralamasında aşağı doğru ilerledikçe seçilen bir istatistiğin kümülatif değerini depolayan yeni bir değişken oluşturur. İsterseniz bu kümülatif değeri bir veya daha fazla grup içinde hesaplayabilirsiniz.\n<br/><br/>\n\n<b>Yeni Değişken Adı:</b> Kümülatif değerleri depolayacak değişkenin adı\n<br/><br/>\n\n<b>Kümülatif İstatistik için Değişken:</b> Kümülatif değerlerin hesaplanacağı değişken. Sayısal olmalıdır.\n<br/><br/>\n\n<b>Gruplamak için Değişkenler:</b> Kümülatif istatistiği hesaplamak için isteğe bağlı değişkenler.\n<br/><br/>\n\n<b>Kümülatif İstatistik:</b> Kümülatif istatistik için hangi istatistiğin kullanılacağı.\n<br/><br/>\n<ul>\n<li>cumsum: kümülatif toplam</li>\n<li>cummin: kümülatif minimum</li>\n<li>cummax: kümülatif maksimum</li>\n<li>cummean: kümülatif ortalama</li>\n<li>cummedian: kümülatif medyan</li>\n<li>cumgmean: kümülatif geometrik ortalama</li>\n<li>cumhmean: kümülatif harmonik ortalama</li>\n<li>cumvar: kümülatif varyans</li>\n</ul>\n<br/><br/>\n<b>Gerekli R Paketleri:</b> cumstats, dplyr\n\t\t\t"
+  }
+}

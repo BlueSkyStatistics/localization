@@ -1,0 +1,11 @@
+{
+  "title": "Önceki Box-Cox dönüşümü ile değişkenler için Lambda (λ) değeri",
+  "navigation": "Lambda'yı İncele",
+  "label2": "Box-Cox dönüşümünün uygulanıp uygulanmadığını kontrol etmek için bir veya daha fazla değişken seçin ve varsa ilişkili Lambda (λ) değerini kontrol edin",
+  "variablelistSelcted": "İncelenecek değişkenler",
+  "help": {
+    "title": "Seçilen değişkenle ilişkili Lambda (λ) değerini kontrol et",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tSeçilen değişkenler için önceki Box-Cox dönüşümü ile ilişkili Lambda (λ) değerini kontrol edin, varsa \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-Cox veya Lambda (λ) hakkında detaylı yardım için R help(boxcox, package = MASS) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Cox hakkında iyi bir genel bakış için https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html adresine bakın</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTanıdık Box-Cox dönüşümleri ile ilişkili Lambda (λ) değerleri \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: kare dönüşümü ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: dönüşüm yok; orijinal veriyi döndürür ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: karekök dönüşümü ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: küp kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: dördüncü kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: doğal log dönüşümü ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: ters karekök dönüşümü ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: ters (inverse) dönüşüm ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: ters kare dönüşümü ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

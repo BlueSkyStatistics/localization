@@ -1,0 +1,30 @@
+{
+  "title": "Descrittivi",
+  "ChkboxShowOnlyTopFewFactors": "Mostra conteggi solo per i primi N livelli di fattore",
+  "txtNumTopFactorsToShow": "Inserisci un valore per N",
+  "skew": "Asimmetria",
+  "mad": "Deviazione assoluta mediana",
+  "kurtos": "Curtosi",
+  "label2": "Nota: Quando la casella di controllo non è selezionata, verranno visualizzati i conteggi per TUTTI i livelli. Questo potrebbe richiedere un tempo considerevole se hai molti livelli di fattore",
+  "navigation": "Descrittivi (Legacy)",
+  "tvarbox1": "Variabili selezionate",
+  "tvarbox2": "Raggruppa per",
+  "min": "Min",
+  "max": "Max",
+  "mean": "Media",
+  "median": "Mediana",
+  "sum": "Somma",
+  "sd": "Deviazione standard",
+  "stderror": "Errore standard della media",
+  "iqr": "Intervallo interquartile",
+  "quantiles": "Quartili",
+  "probs": "Specifica i quartili (se il quartile è selezionato)",
+  "addIsstatnames": "Nomi delle funzioni statistiche aggiuntive separati da virgola, ad es. var)",
+  "label1": "Opzioni per variabili numeriche",
+  "label3": "Opzioni per variabili fattoriali",
+  "help": {
+    "title": "Descrittivi",
+    "r_help": "",
+    "body": "\n<b>Descrizione</b></br>\nRestituisce le seguenti statistiche descrittive:</br>\nmin, max, media, mediana, somma, sd, errore standard, iqr, quartili. Se i quartili sono selezionati, puoi specificare i quartili necessari separati da virgola.</br>\nIn aggiunta a questi, l'utente può passare un elenco di nomi di funzioni statistiche separati da virgola, ad esempio var.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"nome del dataset\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variabili scale selezionate (ad esempio Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: una o più variabili fattoriali da raggruppare (ad esempio Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Elenco delle funzioni. Quelle impostate su TRUE verranno eseguite. (ad esempio min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilità dei quartili\n</li>\n<li>\nadditionalStats: Funzione statistica aggiuntiva che l'utente può passare (ad esempio var)\n</li>\n<li>\ndatasetName: Nome del dataset da cui sono scelti datasetColumnObjects e groupByColumnObjects\n</li>\n</ul>\n<b>Valore</b></br>\nUn oggetto di classe \"data.frame\", che fornisce i risultati per ciascuna funzione su ciascuna variabile.</br>\n<b>Esempi</b><br/>\n<code> \nDataset <- data.frame(Spese=c(20,23,19,25,26), Vendite=c(48,50,55,51,49), Genere=c('m','f','f','m','m'), Dipartimento=c('IT', 'Vendite', 'IT','Vendite','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Vendite = Dataset$Vendite, Spese = Dataset$Spese), groupByColumnObjects = list(Dipartimento= Dataset$Dipartimento), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Pacchetto</b></br>\nBlueSky</br>\n<b>Aiuto</b></br>\nL'aiuto R non è disponibile perché abbiamo scritto codice personalizzato utilizzando più funzioni R. Se hai bisogno di ispezionare il codice, fai clic sul pulsante \"<>\".</br>\n    "
+  }
+}

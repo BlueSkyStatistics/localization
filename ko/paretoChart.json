@@ -1,0 +1,21 @@
+{
+  "title": "파레토 차트, 기본",
+  "navigation": "파레토 차트, 기본",
+  "label1": "두 가지 옵션 - 긴 형식(기본) 즉, 카테고리와 수치를 수직 열로 표시하고 넓은 형식 즉, 카테고리를 열 이름으로, 수치를 행으로 표시",
+  "selectLongRad": "옵션 1: 긴 형식 - 카테고리와 수치를 선택",
+  "selectWideRad": "옵션 2: 넓은 형식 - 열 이름이 카테고리로 사용되며 1행(기본)이 수치로 사용됩니다.",
+  "rownumForCounts": "수치로 사용할 행 번호(기본 1행)",
+  "mainTitle": "차트 제목",
+  "category": "플롯할 변수(예: 카테고리)",
+  "counts": "플롯할 수치로 사용할 변수",
+  "xlab": "x축 레이블을 지정하는 문자열",
+  "ylab": "y축 레이블을 지정하는 문자열",
+  "ylab2": "오른쪽에 있는 두 번째 y축의 레이블을 지정하는 문자열",
+  "percentStep": "오른쪽에 있는 두 번째 y축의 눈금으로 사용할 백분율 단계",
+  "digits": "통계 테이블의 소수점 자리 수",
+  "help": {
+    "title": "파레토 차트",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tpareto.chart 함수는 통계 테이블을 생성하고 파레토 차트를 플롯합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(pareto.chart, package = qcc)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 defects_frequency_pareto_chart.xlsx라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

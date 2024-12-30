@@ -1,0 +1,13 @@
+{
+  "title": "Diagramma di Causa ed Effetto",
+  "navigation": "Causa ed Effetto",
+  "effectName": "Una breve stringa di caratteri che rappresenta l'effetto da analizzare",
+  "mainTitle": "Titolo del Diagramma di Causa ed Effetto Six Sigma",
+  "subTitle": "Titolo del Footer del Diagramma di Causa ed Effetto (normalmente il nome del progetto Six Sigma)",
+  "independent": "Categorie di Causa",
+  "help": {
+    "title": "Diagramma di Causa ed Effetto",
+    "r_help": "help(ss.ceDiag, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione ceDiag per creare un diagramma di Causa ed Effetto per gruppo di causa\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(ss.ceDiag, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare il file di dataset di esempio chiamato cause_and_effect_table.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

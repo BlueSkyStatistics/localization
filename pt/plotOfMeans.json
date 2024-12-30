@@ -1,0 +1,26 @@
+{
+  "title": "Gráfico de Médias",
+  "navigation": "Gráfico de Médias",
+  "x": "Eixo X, especifique uma variável de fator",
+  "y": "Eixo Y, a média é calculada para esta(s) variável(is)",
+  "fill": "Agrupar por, especifique uma variável de fator",
+  "label1": "Barras de erro",
+  "radiobuttonNo": "Sem barras de erro",
+  "radioButtonSe": "Erros padrão",
+  "radiobuttonSd": "Desvios padrão",
+  "radiobuttonCi": "Intervalos de confiança",
+  "confidenceInterval": "Especifique o intervalo, ex. 0.95",
+  "alpha": "Opacidade (0-1)",
+  "flip": "Inverter eixo",
+  "specify_a_title": "Digite um título",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Enrolar Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Médias",
+    "r_help": "",
+    "body": "\n            <b>Descrição</b></br>\n            O Gráfico de Médias é usado para ver se a média varia entre diferentes grupos dos dados. A variável de agrupamento é definida pelo analista. Há um nível opcional de agrupamento que permite dividir cada grupo em subgrupos para os quais a média é calculada. Juntamente com as médias, você pode opcionalmente exibir os erros padrão, desvios padrão e intervalos de confiança. Facetas podem ser criadas opcionalmente especificando uma variável de fator.</br>\n            Você também pode opcionalmente especificar temas e definir um título e rótulos para os eixos x e y</br>\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            #Primeiro, criamos um conjunto de dados para os resumos. O gráfico de médias é executado no conjunto de dados de resumos</br>\n            #Após a execução do gráfico, o conjunto de dados de resumos pode ser excluído.</br>\n            #test contém o conjunto de dados de resumos</br>\n            test <- summarySE(Dataset2,measurevar=\"mpg\",groupvars=c(\"origin\",\"cylinder\"),na.rm=TRUE)</br>\n            #Se as barras de erro se sobrepuserem, position_dodge para movê-las horizontalmente, .03 para a esquerda e para a direita</br>\n            pd <- position_dodge(0.3)\n            ggplot(test,aes(x=origin,y=mpg,colour=cylinder,group=cylinder)) + geom_errorbar(aes(ymin=mpg-sd,ymax=mpg+sd),width=.1,position=pd) +geom_line(position=pd) +geom_point(position=pd) + labs(x = \"origin\",y = \"mpg\")</br>\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão\n            </li>\n            <li>\n            aes(): Gera mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.\n            </li>\n            <li>\n            x: Uma variável de fator/categórica usada para agrupar dados na variável y. A média é plotada para cada grupo.\n            </li>\n            <li>\n            y: Uma variável numérica\n            </li>\n            <li>\n            colour: Uma variável de fator opcional usada para dividir os grupos criados pela variável x (veja acima) em subgrupos. Se especificado, a média é plotada para cada subgrupo. Cada subgrupo é mostrado em uma cor distinta.\n            </li>\n            <li>\n            group: Variável de fator opcional que plota uma linha através das médias de todos os subgrupos.\n            </li>\n            <li>\n            geom_line(): desenha uma linha\n            </li>\n            <li>\n            geom_errorbar(): plota barras de erro\n            </li>\n            <li>\n            labs(): Altera rótulos de eixos e títulos de legendas (opcional)\n            </li>\n            <li>\n            facet_grid(): Organiza painéis em uma grade (opcional)\n            </li>\n            <li>\n            theme_calc(): Especifica o tema do calculador (opcional)\n            </li>\n            <li>\n            coord_flip(): Inverter eixo (opcional)\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajuda</b></br>\n            help(geom_line, package='ggplot2')</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(labs), help(geom_errorbar),help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)\n    "
+  }
+}

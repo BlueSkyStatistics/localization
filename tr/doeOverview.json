@@ -1,0 +1,15 @@
+{
+  "title": "Deney Tasarımı (DoE) işlevselliğinin hızlı bir genel görünümü",
+  "navigation": "DoE Genel Bakış",
+  "lbl1": "1. DoE altında herhangi bir Tasarım oluşturmak için -> tasarım oluşturma menüsü, önce tasarımı oluşturmak için faktör detaylarıyla bir veri kümesine ihtiyacınız var.",
+  "lbl2": "2. Başlamak için, BlueSky Statistics kurulum dizininizdeki örnek veri kümesi dizininde sağlanan örnek veri kümelerinden birini (excel dosyası) seçin veya DoE -> DoE Faktör Detayları oluştur menüsü ile anında bir faktör detay tablosu/veri kümesi oluşturabilirsiniz.",
+  "lbl3": "3. Yukarıdaki 2. adımda bir veri kümesi açıldığında veya anında oluşturulduğunda, uygun bir tasarım oluşturmak için DoE -> tasarım oluşturma menüsüne gidin.",
+  "lbl4": "4. Bir tasarım başarıyla oluşturulduktan sonra, veri kümesi UI ızgarasında görünecektir. Yeni oluşturulan tasarımı incelemek için DoE -> Tasarımı İncele menüsünü kullanabilirsiniz.",
+  "lbl5": "5. Tasarımı bir dosya sistemi dizinine dışa aktarmak için DoE -> Tasarımı Dışa Aktar menüsünü kullanalım. Bu, dosya dizini yolunda UI ızgarasındaki tasarım veri kümesi ile aynı isimlere sahip üç dosya (.csv, .rda, .html) otomatik olarak oluşturacaktır.",
+  "lbl6": "6. 5. adımda dışa aktarılan csv dosyası, tasarımda belirtilen deneyleri gerçek dünyada kurmak için kullanılmak üzere tasarlanmıştır ve daha sonra analiz için sonuçları toplamak/kaydetmek amacıyla kullanılacaktır.",
+  "lbl7": "7. Sonuçlar, csv dosyasına DoE terminolojisinde yanıtlar olarak adlandırılan ayrı sütun(lar) olarak kaydedilir ve eklenir. Csv dosyası uzantısını başka bir dosya formatına değiştirmeyin. Kendi csv dosyanızda yanıt sütunları oluşturmak için 5. adımda dışa aktarılan tasarımın bir parçası olarak dışa aktarılan csv dosyasından kopyalamak için yanıt/soru sütunları için değerleri almak üzere resp ile etiketlenmiş csv dosyalarının örnek veri kümesi dizinine bakın.",
+  "lbl8": "8. Yanıt sütun(lar)ı eklenmiş csv tasarım dosyasını BlueSky Statistics uygulamasına DoE -> Tasarım Yanıtını İçe Aktar menüsü ile alalım.",
+  "lbl9": "9. 8. adımda tasarım csv dosyasını içe aktarmak için, orijinal tasarım (dışa aktarılan) veri kümesi UI ızgarasında mevcut olmalıdır. Eğer mevcut değilse, 5. adımda dışa aktarılan tasarım .rda dosyasını yüklemek için dosya açma menüsünü kullanın.",
+  "lbl10": "10. Csv dosyası, doğru/aktif tasarım veri kümesine başarıyla içe aktarıldıktan ve yanıt sütun(ları) ile yeni bir tasarım oluşturulduktan sonra, yanıt sütun(ları) ile tasarımı incelemek için DoE -> Tasarımı İncele menüsünü kullanabilirsiniz.",
+  "lbl11": "11. Artık yanıt sütun(ları) ile tasarım, çeşitli analiz yöntemleri ile analiz için hazırdır, örneğin DoE -> Tasarımı Analiz Et menüsü ile Doğrusal model, Yanıt Yüzeyi modeli vb."
+}

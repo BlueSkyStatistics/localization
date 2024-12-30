@@ -1,0 +1,21 @@
+{
+  "title": "Örnek Veri",
+  "navigation": "Örnek",
+  "label1": "Veri kümesi seçenekleri",
+  "radio2": "Sonuçları yeni bir veri kümesine kaydet",
+  "dsname": "Bir veri kümesi adı girin",
+  "radio1": "Veri kümesini üzerine yaz",
+  "label2": "Örnekleme seçenekleri",
+  "rd1": "Örneklemek için veri kümesinin yüzdesini belirtin",
+  "percentage": "Yüzdeyi girin",
+  "rd2": "Seçilecek satır sayısını belirtin",
+  "size": "Seçilecek satır sayısını girin",
+  "textn": "Ağırlıklar için isteğe bağlı olarak bir değişken adı veya formül girin",
+  "seed": "Veri tekrarlanabilirliği için isteğe bağlı olarak bir tohum ayarlayın",
+  "chk2": "Yerine koyma ile örnekle",
+  "help": {
+    "title": "Örnek Veri Kümesi",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>Açıklama</b></br>\nMevcut veri kümesinden rastgele bir örnek alır. Satırların %'sini veya belirtilen sayıda satırı yerine koyma ile veya yerinde olmadan örnekler. Sonucu yeni bir veri kümesine kaydeder veya mevcut veri kümesini üzerine yazar.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n#Belirtilen sayıda satırı örnekler</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#Satırların bir kısmını örnekler</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ntbl: veri tablosu. 'Ayrıntılar'a bakın.\n</li>\n<li>\nsize: sample_n() için, seçilecek satır sayısı. sample_frac() için, seçilecek satırların oranı. \n</li>\n<li>\nreplace: Örnekleme yerine koyma ile mi olmalı?\n</li>\n<li>\nweights: Örnekleme ağırlıkları. Bu, girdi ile aynı uzunlukta, negatif olmayan sayılardan oluşan bir vektör olarak değerlendirilmelidir. Ağırlıklar otomatik olarak 1'e toplamaya standartlaştırılır.\n</li>\n</ul>\n<b>Paket</b></br>\ndplyr\n<b>Yardım</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

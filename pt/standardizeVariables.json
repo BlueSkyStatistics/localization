@@ -1,0 +1,18 @@
+{
+  "title": "Padronizar Variável(is)",
+  "navigation": "Padronizar",
+  "label1": "Os valores padronizados serão salvos em novas variáveis com o prefixo/sufixo especificado.",
+  "dest": "Selecione a variável(is) para padronizar",
+  "label2": "Selecione um prefixo ou sufixo",
+  "suffix": "Sufixo",
+  "prefix": "Prefixo",
+  "txt1": "Digite um prefixo/sufixo",
+  "label3": "Centralizar e/ou escalar",
+  "Center": "Centralizar",
+  "Scale": "Escalar",
+  "help": {
+    "title": "Padronizar Variável(is)",
+    "r_help": "",
+    "body": "\n<b>Descrição</b></br>\nPadroniza variáveis (escores z). Os valores padronizados são armazenados em novas variáveis com o prefixo ou sufixo das variáveis originais. A opção é fornecer para centralizar e/ou escalar.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: Uma ou mais variáveis a serem padronizadas. Apenas variáveis numéricas (não fatores) são suportadas.\n</li>\n<li>\ncenter: Se center for TRUE, a centralização é feita subtraindo as médias das colunas (omitindo NAs) de x de suas respectivas colunas, e se center for FALSE, nenhuma centralização é feita.\n</li>\n<li>\nscale: Se scale for TRUE, a escala é feita dividindo as colunas (centralizadas) de x por seus desvios padrão se center for TRUE, e pela raiz quadrada média caso contrário. Se scale for FALSE, nenhuma escala é feita.\n</li>\n<li>\nstingToPrefixOrSuffix: Uma string de caracteres que especifica o prefixo ou sufixo a ser usado para as novas variáveis padronizadas (ou seja, novas colunas no conjunto de dados).\n</li>\n<li>\nprefixOrSuffix: especifique se você deseja um prefixo ou um sufixo\n</li>\n<li>\ndatasetname: O nome do conjunto de dados/dataframe\n</li>\n</ul>\nNota: Não converteremos de numérico para fator. Quando um numérico é recodificado, ele permanecerá numérico, quando uma variável fator for recodificada, ela permanecerá fator.</br>\n<b>Pacote</b></br>\nBlueSky</br>\n"
+  }
+}

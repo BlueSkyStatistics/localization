@@ -1,0 +1,18 @@
+{
+  "title": "Tamanho da Amostra, Teste de Uma Proporção",
+  "navigation": "Uma Proporção",
+  "howtouse": "Especifique o tamanho da amostra ou o poder, e o outro será calculado",
+  "n": "Tamanho da Amostra",
+  "power": "Poder (0-1)",
+  "prop": "Proporção Alternativa (0-1)",
+  "prop0": "Proporção Nula (0-1)",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Uma Proporção",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste de proporção de uma amostra. Ele calcula o tamanho da amostra ou o poder, quando o usuário \nespecifica um deles. O cálculo utiliza a fórmula encontrada em Chow S, Shao J, Wang H. Cálculos de Tamanho de Amostra em Pesquisa Clínica (2008). Ele utiliza uma aproximação normal com\na desvio padrão baseado na proporção alternativa.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Proporção Alternativa (0-1):</b> Especifique a proporção sob a hipótese alternativa\n<br/><br/>\n<b>Proporção Nula (0-1):</b> Especifique a proporção sob a hipótese nula\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats\n\t\t\t"
+  }
+}

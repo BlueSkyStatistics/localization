@@ -1,0 +1,26 @@
+{
+  "title": "رسم توزيع غامبل",
+  "navigation": "رسم توزيع غامبل",
+  "location": "الموقع",
+  "scale": "المقياس",
+  "pdenfun": "رسم دالة الكثافة",
+  "pdstfun": "رسم دالة التوزيع",
+  "lblregions": "حدد المناطق تحت دالة الكثافة بشكل اختياري بواسطة",
+  "xvals": "قيم x",
+  "quantiles": "النسب المئوية",
+  "lblRegFill": "المناطق للتعبئة (حدد واحدة أو اثنتين، أو اتركها فارغة)",
+  "lblreg1": "المنطقة 1 :",
+  "lblreg2": "المنطقة 2 :",
+  "lblregfrm": "من",
+  "lblregto": "إلى",
+  "lblregcol": "اللون",
+  "lblLegPos": "موضع الأسطورة",
+  "toprt": "أعلى اليمين",
+  "toplt": "أعلى اليسار",
+  "topmid": "أعلى الوسط",
+  "help": {
+    "title": "رسم توزيع غامبل",
+    "r_help": "help(qgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>الوصف</b>\n            <br/>\n            الكثافة، دالة التوزيع، دالة النسب المئوية وتوليد عشوائي لتوزيع غامبل مع معلمات الموقع والمقياس المحددة.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>المعلمات</b>\n            <br/>\n            <ul>\n                <li>x, q : متجه من النسب المئوية (قيم المتغير).</li>\n                \n                \n                <li>p : متجه من الاحتمالات.</li>\n                \n                \n                <li>n : عدد الملاحظات. إذا كانت length(n) > 1، يتم أخذ الطول ليكون العدد المطلوب.</li>\n                \n                \n                <li>location : معلمة الموقع (افتراضي 0)؛ قد تكون متجهة.</li>\n                \n                \n                <li>scale : معلمة المقياس (افتراضي 1)؛ قد تكون متجهة.</li>\n                \n                <li>lower.tail : منطقي؛ إذا كان TRUE (الافتراضي) فإن الاحتمالات والنسب المئوية تتوافق مع P(X ≤ x)، إذا كان FALSE تتوافق مع P(X > x).</li>\n            </ul>            \n"
+  }
+}

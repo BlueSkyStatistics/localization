@@ -1,7 +1,28 @@
 {
+  "title": "交叉表",
+  "navigation": "交叉表（遗留）",
+  "row": "行变量",
+  "column": "列变量",
+  "layer": "层变量",
+  "weight": "权重（一个）",
+  "label1": "统计",
+  "chisq": "卡方",
+  "mcnemar": "麦克尼马尔",
+  "fisher": "费舍尔",
+  "label2": "残差",
+  "unstandardized": "未标准化",
+  "standardized": "标准化",
+  "adjusted": "调整后",
+  "label3": "百分比",
+  "rowpercent": "行",
+  "colpercent": "列",
+  "label4": "计数",
+  "expected": "期望",
+  "label5": "长表输出格式",
+  "longTbl": "长表",
   "help": {
     "title": "交叉表",
-    "r_help": "帮助(CrossTable, 包=gmodels)",
-    "body": "\n            <b>描述</b></br>\n创建一个交叉表，包含行、列和层变量，并可选择性地显示以下内容:<br/>\n预期计数<br/>\n行和列百分比<br/>\n未标准化、标准化和调整后的残差<br/>\n带有赔率比的卡方、McNemar和Fisher统计量<br/>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, 权重, 数据集名称, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 行变量\n</li>\n<li>\ny: 列变量\n</li>\n<li>\nlayers: 一个或多个层变量\n</li>\n<li>\nweights: 包含频率权重的数值变量\n</li>\n<li>\ndatasetname: 从中选择x、y和layers（变量）的数据集名称\n</li>\n<li>\nchisq:  如果为TRUE，则生成卡方表\n</li>\n<li>\nprop.r: 如果为TRUE，则生成行百分比\n</li>\n<li>\nprop.c: 如果为TRUE，则生成列百分比\n</li>\n<li>\nresid: 如果为TRUE，则生成未标准化的残差\n</li>\n<li>\nsresid: 如果为TRUE，则生成标准化的残差\n</li>\n<li>\nexpected: 如果为TRUE，则生成预期计数\n</li>\n<li>\nasresid:  如果为TRUE，则生成调整后的残差\n</li>\n</ul>\n<b>值</b></br>\n一个包含结果的列表\n<br/>\n<b>示例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>包</b></br>\ngmodels</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框右上角的R图标，或通过创建R代码块运行以下命令帮助(CrossTable, 包=gmodels)，方法是单击输出窗口中的+  \n    "
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>描述</b></br>\n创建具有行、列和层变量的交叉表，并可选择性地显示以下内容<br/>\n期望计数<br/>\n行和列百分比<br/>\n未标准化、标准化和调整后的残差<br/>\n卡方与比值比、麦克尼马尔和费舍尔统计量<br/>\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 行变量\n</li>\n<li>\ny: 列变量\n</li>\n<li>\nlayers: 一个或多个层变量\n</li>\n<li>\nweights: 包含频率权重的数值变量\n</li>\n<li>\ndatasetname: 从中选择x、y和层（变量）的数据集名称\n</li>\n<li>\nchisq: 如果为TRUE，则生成卡方表\n</li>\n<li>\nprop.r: 如果为TRUE，则生成行百分比\n</li>\n<li>\nprop.c: 如果为TRUE，则生成列百分比\n</li>\n<li>\nresid: 如果为TRUE，则生成未标准化的残差\n</li>\n<li>\nsresid: 如果为TRUE，则生成标准化的残差\n</li>\n<li>\nexpected: 如果为TRUE，则生成期望计数\n</li>\n<li>\nasresid: 如果为TRUE，则生成调整后的残差\n</li>\n</ul>\n<b>值</b></br>\n一个包含结果的列表\n<br/>\n<b>示例</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>包</b></br>\ngmodels</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的R图标，或通过创建R代码块运行以下命令help(CrossTable, package=gmodels)，方法是单击输出窗口中的+  \n    "
   }
 }

@@ -10,20 +10,20 @@
   "chkbox1": "假设方差相等",
   "txtbox2": "零假设 (mu)",
   "txtbox1": "置信水平",
-  "cohensdNoCorrection": "Cohen's d",
-  "hedgesgNoCorrection": "Hedges' g",
-  "glassdNoCorrection": "Glass's delta",
-  "hedgesgCorrect": "Hedges' g 经过偏差修正",
-  "glassdCorrect": "Glass's delta 经过偏差修正",
+  "cohensdNoCorrection": "科恩的d",
+  "hedgesgNoCorrection": "赫奇斯的g",
+  "glassdNoCorrection": "格拉斯的delta",
+  "hedgesgCorrect": "赫奇斯的g（偏差校正）",
+  "glassdCorrect": "格拉斯的delta（偏差校正）",
   "effectsizes": "效应大小",
   "showEffectSizes": "显示效应大小",
-  "cohensdCorrect": "Cohen's d 经过偏差修正",
-  "label3": "Cohen's d 选项",
-  "label4": "Hedges' g 选项",
-  "label5": "Glass's delta 选项",
+  "cohensdCorrect": "科恩的d（偏差校正）",
+  "label3": "科恩的d选项",
+  "label4": "赫奇斯的g选项",
+  "label5": "格拉斯的delta选项",
   "help": {
     "title": "t检验，独立样本",
     "r_help": "help(t.test, package ='stats')",
-    "body": "\n<b>描述</b></br>\n对数据向量执行单样本和双样本t检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## 默认 S3 方法:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## S3 方法用于类 'formula'<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个（非空）数值数据向量。\n</li>\n<li>\ny: 一个可选的（非空）数值数据向量。\n</li>\n<li>\nalternative: 一个字符字符串，指定备择假设，必须是 \"two.sided\"（默认），\"greater\" 或 \"less\" 之一。您可以只指定首字母。\n</li>\n<li>\nmu: 一个数字，表示均值的真实值（或如果您正在执行双样本检验，则表示均值差异）。\n</li>\n<li>\npaired: 一个逻辑值，指示您是否希望进行配对t检验。\n</li>\n<li>\nvar.equal: 一个逻辑变量，指示是否将两个方差视为相等。如果为TRUE，则使用合并方差来估计方差，否则使用Welch（或Satterthwaite）对自由度的近似。\n</li>\n<li>\nconf.level: 区间的置信水平。\n</li>\n<li>\nformula: 形式为 lhs ~ rhs 的公式，其中 lhs 是给定数据值的数值变量，rhs 是具有两个级别的因子，给出相应的组。\n</li>\n<li>\ndata: 一个可选的矩阵或数据框（或类似的：见 model.frame），包含公式中的变量。默认情况下，变量来自环境(formula)。\n</li>\n<li>\nsubset: 一个可选的向量，指定要使用的观察子集。\n</li>\n<li>\nna.action: 一个函数，指示当数据包含NAs时应该发生什么。默认为 getOption(\"na.action\").\n</li>\n<li>\n...: 进一步的参数，传递给或从方法。\n</li>\n</ul>\n<b>详细信息</b></br>\n公式接口仅适用于2样本检验。</br>\nalternative = \"greater\" 是 x 的均值大于 y 的备择假设。</br>\n如果 paired 为 TRUE，则必须同时指定 x 和 y，并且它们的长度必须相同。缺失值会被静默删除（如果 paired 为 TRUE，则成对删除）。如果 var.equal 为 TRUE，则使用合并方差的估计。默认情况下，如果 var.equal 为 FALSE，则分别为两个组估计方差，并使用Welch对自由度的修正。</br>\n如果输入数据在有效上是常数（与两个均值中的较大者相比），则会生成错误。</br>\n<b>值</b><br/>\n一个具有 \"htest\" 类的列表，包含以下组件：<br/>\nstatistic: t统计量的值。<br/>\nparameter: t统计量的自由度。<br/>\np.value: 检验的p值。<br/>\nconf.int: 针对指定备择假设的均值置信区间。<br/>\nestimate: 估计的均值或均值差异，具体取决于它是单样本检验还是双样本检验。<br/>\nnull.value: 指定的假设均值或均值差异，具体取决于它是单样本检验还是双样本检验。<br/>\nalternative: 描述备择假设的字符字符串。<br/>\nmethod: 指示执行了哪种类型的t检验的字符字符串。<br/>\ndata.name: 给出数据名称的字符字符串。<br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(t.test, package ='stats')\n"
+    "body": "\n<b>描述</b></br>\n对数据向量执行单样本和双样本t检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## 默认S3方法:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## 类'formula'的S3方法<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个（非空）数值数据向量。\n</li>\n<li>\ny: 一个可选的（非空）数值数据向量。\n</li>\n<li>\nalternative: 一个字符字符串，指定备择假设，必须是\"two.sided\"（默认）、\"greater\"或\"less\"之一。您可以只指定首字母。\n</li>\n<li>\nmu: 一个数字，表示均值的真实值（或如果您正在执行双样本检验，则表示均值差异）。\n</li>\n<li>\npaired: 一个逻辑值，指示您是否想要配对t检验。\n</li>\n<li>\nvar.equal: 一个逻辑变量，指示是否将两个方差视为相等。如果为TRUE，则使用合并方差来估计方差，否则使用Welch（或Satterthwaite）对自由度的近似。\n</li>\n<li>\nconf.level: 区间的置信水平。\n</li>\n<li>\nformula: 形式为lhs ~ rhs的公式，其中lhs是给定数据值的数值变量，rhs是具有两个级别的因子，给出相应的组。\n</li>\n<li>\ndata: 一个可选的矩阵或数据框（或类似：见model.frame），包含公式中的变量。默认情况下，变量来自环境(formula)。\n</li>\n<li>\nsubset: 一个可选的向量，指定要使用的观察子集。\n</li>\n<li>\nna.action: 一个函数，指示当数据包含NAs时应该发生什么。默认为getOption(\"na.action\").\n</li>\n<li>\n...: 进一步的参数，将传递给或从方法中传递。\n</li>\n</ul>\n<b>详细信息</b></br>\n公式接口仅适用于2样本检验。</br>\nalternative = \"greater\"是x的均值大于y的备择假设。</br>\n如果paired为TRUE，则必须同时指定x和y，并且它们的长度必须相同。缺失值会被静默删除（如果paired为TRUE则成对删除）。如果var.equal为TRUE，则使用合并方差的估计。默认情况下，如果var.equal为FALSE，则分别为两个组估计方差，并使用Welch对自由度的修改。</br>\n如果输入数据在有效上是常数（与两个均值中较大的一个相比），则会生成错误。</br>\n<b>值</b><br/>\n一个类为\"htest\"的列表，包含以下组件：<br/>\nstatistic: t统计量的值。<br/>\nparameter: t统计量的自由度。<br/>\np.value: 检验的p值。<br/>\nconf.int: 针对指定备择假设的均值的置信区间。<br/>\nestimate: 估计的均值或均值差异，具体取决于是单样本检验还是双样本检验。<br/>\nnull.value: 指定的假设均值或均值差异，具体取决于是单样本检验还是双样本检验。<br/>\nalternative: 描述备择假设的字符字符串。<br/>\nmethod: 指示执行了哪种类型t检验的字符字符串。<br/>\ndata.name: 给出数据名称的字符字符串。<br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(t.test, package ='stats')\n"
   }
 }

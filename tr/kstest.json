@@ -1,0 +1,10 @@
+{
+  "title": "Kolmogorov-Smirnov Normallik Testi",
+  "navigation": "Kolmogorov-Smirnov Normallik Testi",
+  "trg": "Hedef değişkenler",
+  "help": {
+    "title": "Kolmogorov-Smirnov Normallik Testi",
+    "r_help": "help(ks.test, package=stats)",
+    "body": "\n<b>Açıklama</b></br>\nKolmogorov-Smirnov Testi, normal dağılıma uyum testi \n<br/>\n<b>Kullanım</b>\n<br/>\n<code>\nks.test(x, y =\"pnorm\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: Sayısal veri değerlerinden oluşan bir vektör.\n</li>\n<li>\ny: Kümülatif dağılım fonksiyonunu adlandıran bir karakter dizesi veya pnorm gibi gerçek bir kümülatif dağılım fonksiyonu. Sadece sürekli CDF'ler geçerlidir..\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nBu durumda, x'i üreten dağılım fonksiyonunun dağılım y (yani normal dağılım) olduğu varsayımına karşı bir örnek testi yapılır.<br/>\nBağlantılı değerlerin varlığı her zaman bir uyarı oluşturur, çünkü sürekli dağılımlar bunları oluşturmaz. Eğer bağlantılı değerler yuvarlamadan kaynaklanıyorsa, testler yaklaşık olarak geçerli olabilir, ancak hatta mütevazı miktardaki yuvarlama, hesaplanan istatistik üzerinde önemli bir etkiye sahip olabilir.<br/>\nEksik değerler x'ten sessizce çıkarılır. </br>\n<b>Değer</b><br/>\nAşağıdaki bileşenleri içeren “test” sınıfına sahip bir liste:<br/>\n<ul>\n<li>\nistatistik: test istatistiğinin değeri.\n</li>\n<li>\np.değeri: testin p değeri.\n</li>\n</ul>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nhelp(ks.test, package =stats)\n"
+  }
+}

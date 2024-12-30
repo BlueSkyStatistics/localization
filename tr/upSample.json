@@ -1,0 +1,12 @@
+{
+  "title": "Yukarı Örnek",
+  "navigation": "Örnek, Yukarı Örnek",
+  "downsample": "Veri kümesinin adını girin",
+  "seed": "Tohum ayarla",
+  "dependent": "Yukarı örnekleme yapılacak değişken",
+  "help": {
+    "title": "Yukarı Örnek",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Açıklama</b></br>\nDengesiz Verileri Yukarı Örnekleme. upSample, sınıf dağılımlarını eşitlemek için yerleştirme ile örnekler alır\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Sınıf\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: bir tahmin değişkenleri matris veya veri çerçevesi\n</li>\n<li>\ny: sınıf üyelikleri ile bir faktör değişken\n</li>\n<li>\nlist: fonksiyonun list(x, y) mi yoksa x ve y'yi birleştirip mi döndürmesi gerekiyor? Eğer TRUE ise, çıktı bir veri çerçevesine dönüştürülecektir.\n</li>\n<li>\nyname: list = FALSE ise, sınıf sütunu için bir etiket\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nBasit rastgele örnekleme, çoğunluk sınıf(lar)ı için aşağı örnekleme yapmak için kullanılır. Azınlık sınıf verilerinin sağlam kaldığını ve örneklerin aşağı örneklenmiş versiyonda yeniden sıralanacağını unutmayın.</br>\nYukarı örnekleme için, tüm orijinal veriler sağlam kalır ve azınlık sınıflara yerleştirme ile ek örnekler eklenir.</br>\n<b>Değer</b><br/>\nYa bir veri çerçevesi ya da x ve y öğeleri ile bir liste.<br/>\n<b>Örnekler</b><br/>\n<code> \n## Saçma bir örnek...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Paket</b></br>\ncaret</br>\n<b>Yardım</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

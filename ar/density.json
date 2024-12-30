@@ -1,0 +1,26 @@
+{
+  "title": "رسم كثافة",
+  "navigation": "كثافة",
+  "x": "اختر متغيرًا (متغيرات) للرسم",
+  "y": "اللون، حدد متغير عامل",
+  "fill": "التعبئة، حدد متغير عامل",
+  "label1": "اختر موضعًا للتحكم في التداخل",
+  "rd1": "تكديس الكثافات",
+  "rd2": "تكديس الكثافات وتوحيد كل تكديس ليكون له ارتفاع وحدة",
+  "rd3": "جنبًا إلى جنب (دودج)",
+  "alpha": "الشفافية (0-1)",
+  "flip": "عكس المحور",
+  "specify_a_title": "أدخل عنوانًا",
+  "x_title": "تسمية المحور السيني",
+  "y_title": "تسمية المحور الصادي",
+  "Facetrow": "صف الوجه",
+  "Facetcolumn": "عمود الوجه",
+  "Facetwrap": "لف الوجه",
+  "Facetscale": "مقياس الوجه",
+  "facets_lbl": "الوجوه",
+  "help": {
+    "title": "رسم كثافة",
+    "r_help": "help(geom_density, package='ggplot2')",
+    "body": "\n            <b>الوصف</b></br>\n            يرسم عدد الكثافة (تقدير كثافة النواة 1d). يسمح لك بفصل الكثافات بواسطة متغير عامل. يمكنك أيضًا إنشاء وجوه، ومواضيع، وتحديد عنوان وتسميات للمحور السيني والصادي بشكل اختياري.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"رسم كثافة للمتغير var1\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"رسم كثافة للمتغير var1، اللون حسب مستويات var2\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>المعلمات</b><br/>\n            <ul>\n            <li>\n            data: مجموعة البيانات الافتراضية\n            </li>\n            <li>\n            aes(): توليد تخطيطات جمالية تصف كيفية ربط المتغيرات في البيانات بالخصائص المرئية (الجمالية) للرسوم.\n            </li>\n            <li>\n            x: المتغير العددي لرسم الكثافات له\n            </li>\n            <li>\n            y: ..count يحدد عدد المتغير العددي\n            </li>\n            <li>\n            fill: المتغير العامل لتجميع الرسم حسبه\n            </li>\n            <li>\n            position: تعديل الموضع، إما كسلسلة نصية، أو نتيجة استدعاء دالة تعديل الموضع. القيم الصالحة هي \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density (): تقدير كثافة النواة 1d، يسمح لك معلمة الموضع بتحديد تعديل الموضع لاستخدامه لنقاط متداخلة في هذه الطبقة.\n            </li>\n            <li>\n            Labs(): تغيير تسميات المحاور وعناوين الأسطورة (هذا اختياري).\n            </li>\n            <li>\n            facet_grid(): ترتيب الألواح في شبكة (هذا اختياري)\n            </li>\n            <li>\n            theme_excel(): موضوع إكسل (هذا اختياري)\n            </li>\n            <li>\n            alpha: يحدد الشفافية\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes</br>\n            <b>المساعدة</b></br>\n            help(geom_density)</br>\n            أخرى: انقر على زر مساعدة R للحصول على مساعدة R مفصلة. يمكنك أيضًا إدخال help(geom_density)، help(labs)، help(aes)، help(facet_grid)، help(theme_excel)\n    "
+  }
+}

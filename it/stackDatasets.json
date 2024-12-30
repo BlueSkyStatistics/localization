@@ -1,0 +1,19 @@
+{
+  "title": "Stack Datasets",
+  "navigation": "Stack",
+  "out": "Inserisci il nome del dataset impilato",
+  "in1": "Seleziona 2 o più dataset",
+  "in2": "Seleziona il 2° dataset",
+  "label1": "Opzioni di Impilamento",
+  "label2": "Tutte le opzioni qui sotto richiedono 2 dataset con esattamente gli stessi nomi di variabili",
+  "bindrows": "Impedisci righe (impila i dataset così come sono, potrebbe risultare in righe duplicate)",
+  "union": "Unione (impila i dataset e rimuove i duplicati esatti)",
+  "intersect": "Intersezione (mantieni le righe comuni a entrambi i dataset)",
+  "setdiff": "Differenza (mantieni solo le righe nel 1° dataset ma non nel 2°)",
+  "id": "Se desideri tenere traccia di quale dataset proviene ciascuna osservazione, specifica un nome per quella variabile qui. NOTA: La nuova variabile viene aggiunta all'inizio del dataset risultante.",
+  "help": {
+    "title": "Stack Datasets",
+    "r_help": "help(bind_rows, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\nQuesta finestra di dialogo ti aiuterà a impilare 2 o più dataset uno sopra l'altro. Puoi selezionare una delle seguenti opzioni.<br/>\n1. Impedire righe: impila i 2 o più dataset esattamente come sono. Se un nome di variabile è comune a entrambi i dataset, i valori si riempiranno come ti aspetti. Se un dataset A contiene una variabile chiamata var1 che non è presente nell'altro dataset B, appariranno NA per la variabile var1 per tutte le righe che corrispondono al dataset B.<br/>\nTutte le opzioni qui sotto operano SOLO su 2 dataset e richiedono che entrambi i dataset condividano le stesse variabili.<br/>\n2. Unione: impila i dataset e rimuove i duplicati<br/>\n3. Intersezione: mantiene le righe comuni a entrambi<br/>\n4. Differenza: mantiene le righe nel 1° dataset, non nel 2°<br/>\nA seconda dell'opzione selezionata, vengono chiamate le funzioni bind_rows, union, intersect e setdiff nel pacchetto dplyr.\nNOTA: puoi opzionalmente tenere traccia di quale dataset proviene l'osservazione originale. L'ID del dataset (1°/2°) viene aggiunto all'inizio del dataset che contiene i risultati.<br/>\n<b>Pacchetto</b></br>\ndplyr</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questa finestra di dialogo o esegui il seguente comando help(bind_rows, package=\"dplyr\") nella finestra di sintassi R\n            "
+  }
+}

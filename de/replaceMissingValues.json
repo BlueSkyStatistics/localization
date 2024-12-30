@@ -2,10 +2,10 @@
   "title": "Fehlende Werte ersetzen (String/Faktor-Variablen)",
   "navigation": "Zeichen/Faktor",
   "destination": "Zielvariablen",
-  "repString": "Geben Sie den String ein, um NAs zu ersetzen. Hinweis: Schließen Sie den String nicht in Anführungszeichen ein. Für Faktorvariablen muss der angegebene Wert ein Level des Faktors sein, siehe Variablen>Faktorlevel>Hinzufügen",
+  "repString": "Geben Sie den String ein, um NAs zu ersetzen. Hinweis: Schließen Sie den String nicht in Anführungszeichen ein. Für Faktorvariablen muss der angegebene Wert ein Level des Faktors sein, siehe Variablen>Faktorlevels>Hinzufügen",
   "help": {
     "title": "Fehlende Werte ersetzen (String/Faktor-Variablen)",
     "r_help": "help(is.na,package=base)",
-    "body": "\n<b>Beschreibung</b></br>\nErsetzen Sie fehlende Werte in den ausgewählten Variablen durch den angegebenen Wert. Bei Verwendung des Dialogs müssen Sie den String nicht in Anführungszeichen setzen\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('String zum Ersetzen')\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDie Datensatzvariablen (var1, var2), in denen NAs ersetzt werden müssen\n</li>\n</ul>\n<b>Wert</b><br/>\nErsetzt die fehlenden Werte im Datensatz durch den angegebenen String<br/>\n<b>Paket</b></br>\nbas</br>\n<b>Hilfe</b></br>\nhelp(is.na,package=base)"
+    "body": "\n<b>Beschreibung</b></br>\nErsetzen Sie fehlende Werte in den ausgewählten Variablen durch den angegebenen Wert. Bei der Verwendung des Dialogs müssen Sie den String nicht in doppelte Anführungszeichen setzen\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('String zum Ersetzen')\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nDie Datensatzvariablen (var1, var2), in denen NAs ersetzt werden müssen\n</li>\n</ul>\n<b>Wert</b><br/>\nErsetzt die fehlenden Werte im Datensatz durch den angegebenen String<br/>\n<b>Paket</b></br>\nbase</br>\n<b>Hilfe</b></br>\nhelp(is.na,package=base)"
   }
 }

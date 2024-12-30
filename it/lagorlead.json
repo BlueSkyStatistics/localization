@@ -1,0 +1,16 @@
+{
+  "title": "Variabile di Lag o Lead",
+  "navigation": "Variabile di Lag o Lead",
+  "varnamelabel": "Nuovo Nome Variabile (senza spazi)",
+  "lagleadvarlabel": "Variabile da Lag / Lead",
+  "groupbyvarslabel": "Variabili da Raggruppare",
+  "typelabel": "Lag o Lead",
+  "laglabel": "Lag",
+  "leadlabel": "Lead",
+  "positionlabel": "Numero di Posizioni",
+  "help": {
+    "title": "Variabile di Lag o Lead",
+    "r_help": "help(lag, package ='dplyr')",
+    "body": "\nQuesto crea una nuova variabile che trova il valore precedente (lag) o successivo (lead) in una variabile esistente in base alla posizione della riga.\n<br/><br/>\n<b>Nuovo Nome Variabile:</b> Nome della variabile per memorizzare i valori laggati o leading\n<br/><br/>\n<b>Variabile da Lag / Lead:</b> Specificare la variabile esistente da cui estrarre i valori laggati o leading\n<br/><br/>\n<b>Variabili da Raggruppare (opzionale):</b> Specificare le variabili da raggruppare. Se qui vengono specificate delle variabili, i valori laggati e lead \nverranno ottenuti solo all'interno dei gruppi definiti da queste variabili. Se non vengono specificate variabili qui, i valori laggati e leading \nverranno ottenuti in base all'intera colonna specificata nella Variabile da Lag / Lead. Tipicamente, i valori dovrebbero essere ordinati in base alle variabili di raggruppamento \nprima di eseguire un lag o lead.\n<br/><br/>\n<b>Lag o Lead:</b> Scegli se vuoi trovare il valore precedente (lag) o il valore successivo (lead)\n<br/><br/>\n<b>Numero di Posizioni:</b> Specificare il numero di posizioni da laggare o leadare. Ad esempio, un valore laggato di 1 estrarrebbe il valore precedente e un valore laggato di 2 estrarrebbe il valore 2 posizioni precedenti.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> dplyr\n\t\t\t"
+  }
+}

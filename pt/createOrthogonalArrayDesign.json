@@ -1,0 +1,20 @@
+{
+  "title": "Criar Design de Array Ortogonal",
+  "navigation": "Criar Design de Array Ortogonal",
+  "selectedvars": "Selecionar variáveis",
+  "datasetname": "Nome do design",
+  "numOfRuns": "Número mínimo de execuções (pode ser deixado em branco)",
+  "minNumOfResidual": "Número mínimo de graus de liberdade residuais",
+  "replications": "Repetições",
+  "repeatOnlyChk": "Repetir apenas",
+  "lbl1": "Você pode não precisar alterar as configurações de randomização",
+  "randomseeds": "Semente para randomização",
+  "randomizationChk": "Randomizar a geração do design",
+  "designnamefromcatlg": "(Opcional) Array de design ortogonal (exemplo: de oacat$name como L12.2.2.6.1)",
+  "columnOptimization": "Otimização de coluna (o padrão é ordem, outras opções min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr",
+  "help": {
+    "title": "Criar Design de Array Ortogonal",
+    "r_help": "help(oa.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\toa.design função para acessar arrays ortogonais, permitindo alocação ótima limitada de colunas\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara a ajuda detalhada - use R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUse o menu DOE->Inspecionar Design->Inspecionar Catálogo de Design Ortogonal (oacat) para navegar pelos Designs Ortogonais disponíveis para referência do catálogo de design carregado no pacote DoE.base\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de amostra chamado factor_grid_orthogonal_array_Design.xlsx. Abra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t\tOpcionalmente, você pode especificar L72.2.53.3.2.4.1 como o design de oacat$name \n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

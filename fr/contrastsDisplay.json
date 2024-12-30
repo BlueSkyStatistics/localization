@@ -1,10 +1,10 @@
 {
-  "title": "Afficher les contrastes",
-  "navigation": "Afficher les contrastes",
+  "title": "Afficher les Contrastes",
+  "navigation": "Afficher les Contrastes",
   "target": "Destination",
   "help": {
-    "title": "Afficher les contrastes",
-    "r_help": "aide(contrasts, paquet ='stats')",
-    "body": "\n            <b>Description</b></br>\n            Afficher les contrastes associés à une variable facteur.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x: un objet R.​\n            </li>\n            </ul>\n            <b>Paquet</b></br>\n            stats</br>\n            <b>Aide</b></br>\n            aide(contrasts, paquet ='stats')        \n            "
+    "title": "Afficher les Contrastes",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>Description</b></br>\n            Afficher les contrastes associés à une variable de facteur.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>Arguments</b><br/>\n            <ul>\n            <li>\n            x: un objet R.​\n            </li>\n            </ul>\n            <b>Paquet</b></br>\n            stats</br>\n            <b>Aide</b></br>\n            help(contrasts, package ='stats')        \n            "
   }
 }

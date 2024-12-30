@@ -1,0 +1,20 @@
+{
+  "title": "Conjunto de Dados Subconjunto",
+  "navigation": "Subconjunto",
+  "label0": "Você pode escolher salvar os resultados em um novo conjunto de dados ou sobrescrever o conjunto de dados existente",
+  "label1": "Opções",
+  "New": "Salvar resultados em um novo conjunto de dados",
+  "newdatasetname": "Digite um nome para o conjunto de dados",
+  "Existing": "Sobrescrever conjunto de dados existente",
+  "Output": "Exibir resultados na janela de saída",
+  "distinct": "Selecionar casos distintos",
+  "chkbox2": "Remover níveis de fator não utilizados",
+  "subsetvars": "Selecionar variáveis para incluir no conjunto de dados subconjunto",
+  "label12": "\n\nOs critérios de subdefinição são aplicados a cada linha, veja exemplos abaixo. \n1: Selecione linhas onde var 1 não está vazia e var2 está vazia especifique:\n!is.na(var1) & is.na(var2) \n2: Selecione linhas onde var1 > 30 e var 2 é Masculino especifique:\nvar1>30 & var2=='Masculino' \n3: Critérios complexos e/ou especifique:\n(var1 !=10 & var2>20) | var3==40 \n4: Correspondência de padrão (xxx) ou uma correspondência exata (abc) especifique:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Correspondência de uma substring por posição especifique: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Digite critérios de subdefinição.",
+  "help": {
+    "title": "Conjunto de Dados Subconjunto",
+    "r_help": "help(select, package=dplyr)",
+    "body": "\n            <b>Descrição</b></br>\nConjuntos de dados/subconjuntos. Retorna um subconjunto do dataframe/conjunto de dados. Você pode especificar as colunas/variáveis que deseja no conjunto de dados menor. Você também pode especificar critérios de seleção a serem aplicados a cada linha do dataframe.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: objeto a ser subconjunto.\n</li>\n<li>\nsubset: expressão lógica indicando elementos ou linhas a manter: valores ausentes são considerados falsos.\n</li>\n<li>\nselect: expressão, indicando colunas a selecionar de um dataframe.\n</li>\n</ul>\n<b>Valor</b><br/>\nRetorna um conjunto de dados subconjunto<br/>\n<b>Pacote</b></br>\ndplyr<br/>  \n<b>Ajuda</b></br>\nhelp(select, package=dplyr)\n"
+  }
+}

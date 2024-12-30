@@ -1,0 +1,16 @@
+{
+  "title": "K-평균 클러스터",
+  "navigation": "K-평균",
+  "destination": "목적지",
+  "clusters": "클러스터 수",
+  "seeds": "시작 시드 수",
+  "iterations": "최대 반복 횟수",
+  "storeClusterInDataset": "클러스터를 데이터셋에 할당",
+  "variablename": "클러스터 번호를 저장할 변수",
+  "biplot": "클러스터 바이플롯 표시",
+  "help": {
+    "title": "K-평균 클러스터",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>설명</b></br>\nK-평균 클러스터링 수행\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset = FALSE, varNameForCluster=\"\", dataset=\"데이터셋 이름\") \n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvars: 분석할 변수의 벡터 형식 c('var1','var2'...)\n</li>\n<li>\ncenters: 클러스터 수 k 또는 초기(구별된) 클러스터 중심의 집합. 숫자인 경우, x에서 무작위로 선택된 (구별된) 행이 초기 중심으로 선택됩니다.\n</li>\n<li>\niter.max: 허용되는 최대 반복 횟수.\n</li>\n<li>\nnum.seeds: 사용할 서로 다른 시작 무작위 시드의 수. 각 무작위 시드는 다른 k-평균 솔루션을 생성합니다.\n</li>\n<li>\nstoreClusterInDataset: 클러스터 할당을 데이터셋에 저장\n</li>\n<li>\nvarNameForCluster: 할당된 클러스터의 변수 이름\n</li>\n<li>\ndataset: 분석할 데이터셋\n</li>\n</ul>\n<b>패키지</b></br>\nBlueSky</br>\n<b>도움말</b></br>\nhelp(kmeans, package=\"stats\")\n    "
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Aggiornamento Unione",
+  "navigation": "Aggiornamento Unione",
+  "join": "Unisci mappatura",
+  "description": "L'aggiornamento dell'unione aggiorna un dataset con valori da un altro dataset.",
+  "out": "Inserisci il nome del dataset unito",
+  "in1": "Seleziona il 1° dataset",
+  "in2": "Seleziona il 2° dataset",
+  "label1": "Opzioni di Unione",
+  "upsert": "Aggiorna le variabili nel primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro), inserisci le non corrispondenze",
+  "update": "Aggiorna le variabili nel primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro), ignora le non corrispondenze",
+  "insert": "Inserisci solo le non corrispondenze nel primo dataset (sinistro)",
+  "patch": "Aggiorna solo le variabili con NAs nel primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro)",
+  "delete": "Elimina le righe dal primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro)",
+  "help": {
+    "title": "Aggiornamento Unione",
+    "r_help": "help(rows_upsert, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\n            L'aggiornamento dell'unione aggiorna un dataset con valori da un secondo dataset basato su una corrispondenza esatta del nome della variabile per le osservazioni con valori di variabile di mappatura di unione corrispondenti. \n\t\t\t<br/>È necessario specificare una o più variabili nel dataset attivo e nel dataset di destinazione selezionato su cui si desidera eseguire l'unione.\n\t\t\t<br/>I risultati saranno salvati in un nuovo dataset.\n\t\t\t<br/><br/>\n\t\t\t<b>Opzioni di Unione</b>\n\t\t\t<br/><br/>\n\t\t\t<b>Aggiorna le variabili nel primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro), inserisci le non corrispondenze:</b> Questa è una combinazione di aggiornamento delle variabili nel dataset sinistro per le corrispondenze e creazione di nuove righe per le righe non corrispondenti.\n\t\t\t<br/><br/>\n\t\t\t<b>Aggiorna le variabili nel primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro), ignora le non corrispondenze:</b> Questo aggiorna solo le variabili esistenti nei dataset sinistri per le corrispondenze.  Le righe non corrispondenti vengono ignorate.\n\t\t\t<br/><br/>\n\t\t\t<b>Inserisci solo le non corrispondenze nel primo dataset (sinistro):</b> Questo mantiene intatte tutte le righe corrispondenti nel dataset sinistro.  Solo le righe non corrispondenti dal dataset destro vengono aggiunte al dataset sinistro.\n\t\t\t<br/><br/>\n\t\t\t<b>Aggiorna solo le variabili con NAs nel primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro), ignora le non corrispondenze:</b>  Questo aggiorna le righe che corrispondono, ma solo quando i valori nel dataset sinistro sono NA (cioè sono valori mancanti).\n\t\t\t<br/><br/>\n\t\t\t<b>Elimina le righe dal primo dataset (sinistro) con le corrispondenze dal secondo dataset (destro):</b>  Questo elimina solo le righe dal dataset sinistro che corrispondono alle righe nel dataset destro.\n\t\t\t<br/><br/>\n            <b>Pacchetti R richiesti:</b> dplyr\n"
+  }
+}

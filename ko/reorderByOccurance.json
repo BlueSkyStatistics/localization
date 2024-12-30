@@ -1,0 +1,21 @@
+{
+  "title": "발생에 따라 요인 수준 재정렬",
+  "navigation": "발생에 따라 재정렬",
+  "target": "수준을 재정렬할 요인 변수",
+  "label1": "변수의 데이터 발생에 따라 재정렬할 요인 변수를 선택하십시오. 기존 변수를 덮어쓰거나 접두사/접미사를 지정하여 새 변수를 만들 수 있습니다. 새 변수는 기존 이름에 접두사/접미사가 추가되어 생성됩니다.",
+  "label2": "새 수준을 새 변수에 저장하거나 기존 변수에 덮어쓰기",
+  "rd3": "접미사를 지정하십시오 (접미사가 있는 새 변수가 생성됩니다)",
+  "txt3": "접미사를 입력하십시오",
+  "rd2": "접두사를 지정하십시오 (접두사가 있는 새 변수가 생성됩니다)",
+  "txt4": "접두사를 입력하십시오",
+  "rd1": "기존 변수를 덮어쓰기",
+  "label3": "순서를 지정하십시오",
+  "Descending": "발생 순서로",
+  "Ascending": "발생의 역순으로",
+  "ordered": "정렬된 요인 만들기 (서수)",
+  "help": {
+    "title": "NA 제거",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>설명</b></br>\n발생에 따라 요인 수준을 재정렬합니다. 카운트에 따라 재정렬하려면 카운트로 재정렬을 참조하십시오.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nf: 요인\n</li>\n<li>\nordered: 출력 요인의 \"정렬된\" 상태를 결정하는 논리값. NA는 요인의 기존 상태를 유지합니다.\n</li>\n</ul>\n<b>예제</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

@@ -5,6 +5,6 @@
   "help": {
     "title": "安德森-達林正態性檢驗",
     "r_help": "help(ad.test, package=nortest)",
-    "body": "\n<b>描述</b></br>\n安德森-達林正態性檢驗。 \n<br/>\n<b>用法</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個數值向量，數據值的數量必須大於7。允許缺失值。\n</li>\n</ul>\n<b>詳情</b></br>\n安德森-達林檢驗是一個EDF綜合檢驗，用於正態性複合假設。<br/>\n<b>值</b><br/>\n一個類為 “htest” 的列表，包含以下組件:<br/>\n<ul>\n<li>\nstatistic: 安德森-達林統計量的值。\n</li>\n<li>\np.value: 檢驗的P值。\n</li>\n</ul>\n<b>包</b></br>\nnortest</br>\n<b>幫助</b></br>\nhelp(ad.test, package =nortest)\n"
+    "body": "\n<b>描述</b></br>\n安德森-達林正態性檢驗。 \n<br/>\n<b>用法</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個數值向量，數據值的數量必須大於 7。允許缺失值。\n</li>\n</ul>\n<b>詳細信息</b></br>\n安德森-達林檢驗是一種 EDF 全面檢驗，用於正態性綜合假設。<br/>\n<b>值</b><br/>\n一個類別為 “test” 的列表，包含以下組件：<br/>\n<ul>\n<li>\nstatistic: 安德森-達林統計量的值。\n</li>\n<li>\np.value: 檢驗的 P 值。\n</li>\n</ul>\n<b>包</b></br>\nnortest</br>\n<b>幫助</b></br>\nhelp(ad.test, package =nortest)\n"
   }
 }

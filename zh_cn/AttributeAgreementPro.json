@@ -11,7 +11,7 @@
   "summaryDisagreementChk": "显示评估者与标准之间的不一致摘要",
   "CohenKappaChk": "计算评估者/操作员之间的Cohen's Kappa统计量",
   "CohenKappaWeight": "应用于Cohen's Kappa的权重",
-  "label1": "属性一致性研究报告头部详细信息",
+  "label1": "属性一致性研究报告头部详情",
   "gageName": "量具名称",
   "dateStudy": "研究日期",
   "partDescription": "部件描述",
@@ -19,11 +19,11 @@
   "reportedBy": "报告人",
   "operatorNames": "操作员姓名",
   "testLocation": "测试地点",
-  "miscellaneous": "杂项",
-  "rowsTobeUsed": "如果要使用所有行，请留空。否则，请指定要用于分析的行（例如，指定为1:25或1,4,5,7:12）",
+  "miscellaneous": "其他",
+  "rowsTobeUsed": "如果所有行都要使用，请留空。否则，请指定要用于分析的行（例如，指定为1:25或1,4,5,7:12）",
   "help": {
     "title": "属性一致性分析",
     "r_help": "help(kappam.fleiss, package = irr)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t执行属性一致性分析的函数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用示例数据集文件attributemsaAB.xlsx，\n\t\t\t\t两个操作员A和B，每个操作员有20个观察值，重复两次，带有P和F评级。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t您还可以尝试示例数据集文件attributemsaABCordered.RData，\n\t\t\t\t其中有三个操作员A、B、C，每个操作员有10个观察值，重复两次，带有“有序”（序数）\n\t\t\t\t评级，如不同意、稍微不同意、中立、稍微同意和同意。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t通过文件打开菜单在数据网格中打开文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t执行属性一致性分析的函数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用样本数据集文件attributemsaAB.xlsx，\n\t\t\t\t两个操作员A和B，每个操作员有20个观察值，重复两次，带有P和F评级。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t您还可以尝试样本数据集文件attributemsaABCordered.RData，\n\t\t\t\t其中有三个操作员A、B、C，每个操作员有10个观察值，重复两次，\n\t\t\t\t带有“有序”（序数）评级，如不同意、稍微不同意、中立、稍微同意和同意。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t使用文件打开菜单在数据网格中打开文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

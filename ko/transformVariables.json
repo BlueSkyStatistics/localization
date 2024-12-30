@@ -1,0 +1,18 @@
+{
+  "title": "변수 변환",
+  "navigation": "변환",
+  "label1": "드롭다운을 사용하여 선택한 변수를 변환할 작업(log, log10, as.numeric...)을 선택하십시오. 기존 변수를 덮어쓰거나 접두사/접미사를 지정하여 새 변수를 만들 수 있습니다.",
+  "target": "변환할 변수 선택",
+  "selectctrl": "적용할 작업 선택",
+  "label2": "새 변수를 만들거나 기존 변수를 덮어쓰기",
+  "suffix": "접미사 지정",
+  "prefix": "접두사 지정",
+  "overwrite": "덮어쓰기",
+  "enterPrefix": "접두사 입력",
+  "enterSuffix": "접미사 입력",
+  "help": {
+    "title": "변수 변환",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>설명</b></br>\n드롭다운을 사용하여 선택한 변수를 변환할 작업(log, log10, as.numeric...)을 선택하십시오. 기존 변수를 덮어쓰거나 접두사/접미사를 지정하여 새 변수를 만들 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvar: 변환할 변수\n</li>\n<li>\nDataset: 변수 var가 포함된 데이터셋\n</li>\n</ul>\n<b>값</b></br>\n변환된 값은 데이터셋에 직접 저장됩니다</br>\n<b>패키지</b></br>\nbasе</br>\n<b>도움말</b></br>\nhelp(log, package ='base')\n"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "نموذج الانحدار المتعدد",
+  "navigation": "متعدد الحدود",
+  "modelname": "اسم نموذج الانحدار المتعدد",
+  "dependentVar": "المتغير التابع (مثل الاستجابة)",
+  "independentVar": "المتغير المستقل (مثل الجرعة، التركيز..)",
+  "polyDegree": "درجة معادلة متعدد الحدود. يجب أن تكون أقل من عدد النقاط البيانية الفريدة",
+  "comparePolyModelsChk": "احسب نماذج متعددة الحدود إضافية للمقارنة",
+  "addlPolyDegrees": "حدد درجة واحدة أو أكثر لإنشاء نماذج متعددة الحدود متعددة (مثل 3، 4، 5)",
+  "help": {
+    "title": "نموذج الانحدار المتعدد",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>الوصف</b></br>\n            يتم استخدام هذه النافذة لحساب وتناسب نموذج متعدد الحدود متعامد مع درجة محددة\n\t\t\t<br/>\n\t\t\tباستخدام lm(response ~ poly(a predictor, degree), data = dataset)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tبالإضافة إلى help(poly, package ='stats')، تحقق من صفحات المساعدة R التالية\n            <br/>\n\t\t\thelp(anova, package ='stats') - تستخدم لمقارنة نماذج متعدد الحدود مع درجات مختلفة \n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - تستخدم لحساب AIC لمقارنة نماذج متعدد الحدود\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - تستخدم لحساب BIC لمقارنة نماذج متعدد الحدود\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - مرجع جيد حيث يتم استخدام lm() و poly() معًا\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\tيمكنك تجربة هذه النافذة عن طريق تحميل مجموعة البيانات cars من قائمة تحميل مجموعات البيانات\t\t\t\n\t\t\t<br/>\n\t\t\tاختر dist كمتغير تابع و speed كمتغير مستقل\n\t\t\t<br/>\n      "
+  }
+}

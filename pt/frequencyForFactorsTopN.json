@@ -1,0 +1,13 @@
+{
+  "navigation": "Fatores Apenas (Legado)",
+  "title": "Sumários, apenas fatores",
+  "subsetvars": "Variáveis de resposta, 2 ou mais",
+  "ChkboxShowOnlyTopFewFactors": "Mostrar contagens apenas para os N principais níveis de fator",
+  "txtNumTopFactorsToShow": "Insira um valor para N",
+  "label1": "Nota: Quando a caixa de seleção não está marcada, as contagens para TODOS os níveis serão exibidas. Isso pode levar um tempo considerável se você tiver muitos níveis de fator",
+  "help": {
+    "title": "Apenas fatores",
+    "r_help": "",
+    "body": "\n<b>Descrição</b></br>\nExibe as contagens de cada nível de cada variável de fator.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: As variáveis de fator para exibir contagens de nível\n</li>\n<li>\ndata: O nome do conjunto de dados\n</li>\n<li>\nshow.only.top.factors: Um booleano que determina se as contagens de apenas os níveis principais ou todos os níveis devem ser exibidas.\n</li>\n<li>\nmax.number.top.factors: se show.only.top.factors = TRUE, especifica o número de níveis para exibir contagens\n</li>\n</ul>\n"
+  }
+}

@@ -1,17 +1,17 @@
 {
-  "title": "Transformación Inversa de Box-Cox (convertir de nuevo a valor no transformado)",
-  "navigation": "Inversa Box-Cox",
-  "label2": "Seleccione una variable o escriba un valor numérico para ser convertido de nuevo de una transformación Box-Cox anterior con el valor Lambda (λ)",
+  "title": "Transformación inversa de Box-Cox (convertir de nuevo a valor no transformado)",
+  "navigation": "Box-Cox inverso",
+  "label2": "Seleccione una variable o escriba un valor numérico para ser convertido de nuevo de una transformación previa de Box-Cox con el valor Lambda (λ)",
   "variableSelcted": "Seleccione una variable",
-  "selectVariableRad": "Opción 1: Seleccione una variable para ser convertida de nuevo de una transformación Box-Cox anterior",
+  "selectVariableRad": "Opción 1: Seleccione una variable para ser convertida de nuevo de una transformación previa de Box-Cox",
   "invBoxCoxColName": "(Opcional) Especifique un nuevo nombre de variable para almacenar los valores convertidos. De lo contrario, se creará <variable_Invbcox>",
-  "selectNumberRad": "Opción 2: Escriba un valor numérico para ser convertido de nuevo de la transformación Box-Cox",
+  "selectNumberRad": "Opción 2: Escriba un valor numérico para ser convertido de nuevo de la transformación de Box-Cox",
   "invNumber": "Escriba el valor numérico",
-  "lambda": "(Opcional) Especifique un valor Lambda (λ) en (-2 a 2) que se utilizará para convertir de nuevo de la transformación Box-Cox. De lo contrario, si se deja en blanco, se utilizará el valor Lambda (λ) que se utilizó para la transformación Box-Cox original de la variable seleccionada arriba",
+  "lambda": "(Opcional) Especifique un valor Lambda (λ) en (-2 a 2) que se utilizará para convertir de nuevo de la transformación de Box-Cox. De lo contrario, si se deja en blanco, se utilizará el valor Lambda (λ) que se utilizó para la transformación original de Box-Cox para la variable seleccionada arriba",
   "digits": "Dígitos - redondea al número especificado de decimales",
   "help": {
-    "title": "Transformar de nuevo (inversa) de un valor transformado Box-Cox anterior",
+    "title": "Transformar de nuevo (inversa) de un valor previamente transformado por Box-Cox",
     "r_help": "help(boxcox, package = MASS)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tTransformar de nuevo (inversa) de un valor transformado Box-Cox anterior utilizando el lambda especificado o el lambda asociado con la variable seleccionada\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada sobre Box-Cox o Lambda (λ) - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Para una buena visión general de MASS Box-Cox, vea https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValores Lambda (λ) asociados con transformaciones Box-Cox familiares\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformación cuadrada ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: sin transformación; devuelve los datos originales ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformación de raíz cuadrada ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformación de raíz cúbica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformación de raíz cuarta\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformación de logaritmo natural ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformación de raíz cuadrada recíproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformación recíproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformación cuadrada recíproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tTransformar de nuevo (inversa) de un valor previamente transformado por Box-Cox utilizando el lambda especificado o el lambda asociado con la variable seleccionada \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada sobre Box-Cox o Lambda (λ) - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Para una buena visión general de MASS Box-Cox, vea https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValores Lambda (λ) asociados con transformaciones familiares de Box-Cox \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformación cuadrada ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: sin transformación; devuelve los datos originales ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformación de raíz cuadrada ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformación de raíz cúbica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformación de raíz cuarta\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformación logarítmica natural ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformación de raíz cuadrada recíproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformación recíproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformación cuadrada recíproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

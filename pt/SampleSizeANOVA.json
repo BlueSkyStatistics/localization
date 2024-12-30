@@ -1,0 +1,16 @@
+{
+  "title": "Tamanho da Amostra, ANOVA",
+  "navigation": "ANOVA",
+  "howtouse": "Para calcular o tamanho da amostra: especifique as médias dos grupos e o poder\nPara calcular o poder: especifique o tamanho da amostra e as médias dos grupos\nPara calcular a variância detectável das médias dos grupos: especifique o tamanho da amostra e o poder",
+  "numgrps": "Número de Grupos",
+  "n": "Tamanho da Amostra por Grupo",
+  "grpmeans": "Médias dos Grupos, especifique como valores separados por vírgulas, por exemplo, 20, 25, 40",
+  "power": "Poder (0-1)",
+  "sd": "Desvio Padrão",
+  "siglevel": "Nível de Significância (0-1)",
+  "help": {
+    "title": "Tamanho da Amostra, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma ANOVA unidirecional balanceada. Ela calcula o tamanho da amostra, poder ou diferença nas médias (calculada como a variância entre as médias) quando o usuário \nespecifica os outros dois.\n<br/><br/>\n<b>Número de Grupos:</b> Especifique o número de grupos no estudo\n<br/><br/>\n<b>Tamanho da Amostra por Grupo:</b> Especifique o número de sujeitos em cada grupo\n<br/><br/>\n<b>Médias dos Grupos:</b> Especifique as médias em cada grupo que você deseja detectar. Pelo menos uma média deve ser diferente das outras.\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Desvio Padrão:</b> Especifique o desvio padrão do resultado. Isso é assumido como sendo o mesmo entre os grupos.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats\n\t\t\t"
+  }
+}

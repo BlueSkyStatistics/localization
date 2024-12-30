@@ -1,21 +1,21 @@
 {
   "title": "Supprimer les niveaux inutilisés",
-  "navigation": "Supprimer inutilisés",
+  "navigation": "Supprimer inutilisé",
   "target": "Variables factorielles pour supprimer les niveaux de",
-  "label1": "Entrez les variables factorielles pour lesquelles supprimer les niveaux. Vous pouvez spécifier les niveaux inutilisés à supprimer en les entrant ou choisir de supprimer tous les niveaux inutilisés pour les variables sélectionnées. Si la variable du jeu de données a une ou plusieurs valeurs NA, alors ce niveau n'est PAS supprimé.",
+  "label1": "Entrez les variables factorielles pour supprimer les niveaux. Vous pouvez spécifier les niveaux inutilisés à supprimer en les entrant ou choisir de supprimer tous les niveaux inutilisés pour la ou les variables sélectionnées. Si la variable du jeu de données a une ou plusieurs valeurs NA, alors ce niveau n'est PAS supprimé.",
   "label2": "Enregistrer les nouveaux niveaux dans de nouvelles variables ou écraser les variables existantes",
-  "rd3": "Spécifiez un suffixe (Une nouvelle variable sera créée avec le suffixe)",
+  "rd3": "Spécifiez un suffixe (une nouvelle variable sera créée avec le suffixe)",
   "txt3": "Entrez un suffixe",
-  "rd2": "Spécifiez un préfixe (Une nouvelle variable sera créée avec le préfixe)",
+  "rd2": "Spécifiez un préfixe (une nouvelle variable sera créée avec le préfixe)",
   "txt4": "Entrez un préfixe",
   "rd1": "Écraser les variables existantes",
   "label3": "Méthode à utiliser",
   "dropUnused": "Supprimer tous les niveaux inutilisés",
   "levelsToDrop": "Spécifiez les niveaux à supprimer",
-  "drop": "Entrez les niveaux à supprimer séparés par des virgules, par exemple niveau1,niveau2,niveau3 REMARQUE : N'utilisez pas d'espaces comme séparateurs entre les niveaux",
+  "drop": "Entrez les niveaux à supprimer séparés par des virgules, par exemple niveau1,niveau2,niveau3 REMARQUE : Ne pas utiliser d'espaces comme séparateurs entre les niveaux",
   "help": {
     "title": "Supprimer les niveaux inutilisés",
     "r_help": "help(fct_drop, package =forcats)",
-    "body": "\n<b>REMARQUE : NE PAS ENFERMER LES NIVEAUX DANS DES GUILLEMETS SIMPLES OU DOUBLE, IL NE PEUT PAS Y AVOIR D'ESPACES DANS LES NOMS DE NIVEAUX. ENTREZ LES NIVEAUX SÉPARÉS PAR DES VIRGULES AU FORMAT NIVEAU1,NIVEAU2, NIVEAU3</b></br>\n<b>Description</b></br>\nEntrez les variables factorielles pour lesquelles supprimer les niveaux inutilisés. Vous pouvez spécifier les niveaux inutilisés à supprimer en les entrant ou choisir de supprimer tous les niveaux inutilisés pour les variables sélectionnées. Si la variable du jeu de données a une ou plusieurs valeurs NA, alors ce niveau n'est PAS supprimé.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: Un facteur (ou vecteur de caractères).\n</li>\n<li>\nonly: Un vecteur de caractères restreignant l'ensemble des niveaux à supprimer. Si fourni, seuls les niveaux qui n'ont pas d'entrées et apparaissent dans ce vecteur seront supprimés.\n</li>\n</ul>\n<b>Exemples</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Définir seulement pour restreindre quels niveaux supprimer<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Paquet</b></br>\nforcats</br>\n<b>Aide</b></br>\nhelp(fct_drop, package =forcats)\n"
+    "body": "\n<b>REMARQUE : NE PAS ENFERMER LES NIVEAUX DANS DES GUILLEMETS SIMPLES OU DOUBLE, IL NE PEUT PAS Y AVOIR D'ESPACES DANS LES NOMS DE NIVEAUX. ENTREZ LES NIVEAUX SÉPARÉS PAR DES VIRGULES AU FORMAT NIVEAU1,NIVEAU2,NIVEAU3</b></br>\n<b>Description</b></br>\nEntrez la ou les variables factorielles pour supprimer les niveaux inutilisés. Vous pouvez spécifier les niveaux inutilisés à supprimer en les entrant ou choisir de supprimer tous les niveaux inutilisés pour la ou les variables sélectionnées. Si la variable du jeu de données a une ou plusieurs valeurs NA, alors ce niveau n'est PAS supprimé.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nf: Un facteur (ou vecteur de caractères).\n</li>\n<li>\nonly: Un vecteur de caractères restreignant l'ensemble des niveaux à supprimer. Si fourni, seuls les niveaux qui n'ont aucune entrée et apparaissent dans ce vecteur seront supprimés.\n</li>\n</ul>\n<b>Exemples</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Définir only pour restreindre quels niveaux supprimer<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Package</b></br>\nforcats</br>\n<b>Aide</b></br>\nhelp(fct_drop, package =forcats)\n"
   }
 }

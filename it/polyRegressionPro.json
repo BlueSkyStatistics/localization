@@ -1,0 +1,15 @@
+{
+  "title": "Modello di Regressione Polinomiale",
+  "navigation": "Polinomiale",
+  "modelname": "Nome del modello di regressione polinomiale",
+  "dependentVar": "Variabile Dipendente (ad es. risposta)",
+  "independentVar": "Variabile Indipendente (ad es. dose, concentrazione, ..)",
+  "polyDegree": "Il grado dell'equazione polinomiale. Deve essere inferiore al numero di punti dati unici",
+  "comparePolyModelsChk": "Calcola modelli polinomiali aggiuntivi da confrontare",
+  "addlPolyDegrees": "Specifica uno o più gradi per creare più modelli polinomiali (ad es. 3, 4, 5)",
+  "help": {
+    "title": "Modello di Regressione Polinomiale",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>Descrizione</b></br>\n            Questa finestra di dialogo è utilizzata per calcolare e adattare un modello polinomiale ortogonale con grado specificato\n\t\t\t<br/>\n\t\t\tutilizzando lm(risposta ~ poly(un predittore, grado), dati = dataset)\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tIn aggiunta a help(poly, package ='stats'), controlla le seguenti pagine di aiuto R\n            <br/>\n\t\t\thelp(anova, package ='stats') - utilizzato per confrontare modelli polinomiali con gradi diversi \n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - utilizzato per calcolare AIC per confrontare modelli polinomiali\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - utilizzato per calcolare BIC per confrontare modelli polinomiali\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - Un buon riferimento dove lm() e poly() sono utilizzati insieme\n\t\t\t<br/>\n\t\t\t<br/> \n\t\t\tPuoi provare questa finestra di dialogo caricando il dataset cars dal menu Carica Dataset\t\t\t\n\t\t\t<br/>\n\t\t\tScegli dist come variabile dipendente e speed come variabile indipendente\n\t\t\t<br/>\n"
+  }
+}

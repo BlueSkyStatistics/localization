@@ -1,0 +1,18 @@
+{
+  "title": "Deney Tasarımı analizi ile Yanıt Yüzeyi Modeli (Nicel)",
+  "navigation": "Tasarım Analizi - Yanıt Yüzeyi Modeli",
+  "modelname": "Yanıt Yüzeyi model adını girin",
+  "dependent": "Yanıt (bağımlı) değişken",
+  "formulaboxhint": "Ayrıca yukarıdaki formül oluşturucu kutusunda ikinci dereceden etkiler ve etkileşimler için SO(var1, var2,...) veya rsm paketinden FO(...),... girebilirsiniz.",
+  "independent": "Sayısal Tahmin Ediciler - sayısal formül değişkenlerini aşağıya ekleyin",
+  "generateContourPlotChk": "Kontur (grafikleri) Göster",
+  "generateRSMPlotChk": "Yanıt Yüzeyi (grafikleri) Göster",
+  "generatePathSteepestAscentChk": "Tepe analizi ile en dik yükseliş yolunu göster",
+  "checkShapiroNormalityTestChk": "Shapiro normallik testi",
+  "normalityPlotsChk": "Normallik kontrolü için grafik",
+  "help": {
+    "title": "Yanıt Yüzeyi Modeli ile bir model formül oluşturucu",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tYanıt-yüzeyi regresyonu - bir yanıt-yüzeyi bileşeni ile bir doğrusal model oluşturun ve uygun analizler ve özetler üretin\n\t\t\t\t<br/> Formül oluşturucusunda, SO(var1, var2, var3, ...) veya FO(var1, ..) veya rsm paketinden diğer fonksiyonları yazabilirsiniz - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDaha fazla ayrıntı için, aşağıdaki R yardımına bakın\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

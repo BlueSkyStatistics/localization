@@ -1,11 +1,11 @@
 {
   "title": "Statistici Numerice, folosind describe",
   "navigation": "Sumarizări Numerice, folosind describe (Legacy)",
-  "tvarbox1": "Selectați variabile",
-  "tvarbox2": "Selectați variabile de grupare",
+  "tvarbox1": "Selectați variabilele",
+  "tvarbox2": "Selectați variabilele de grupare",
   "help": {
     "title": "Statistici Numerice, folosind describe",
     "r_help": "help(describe, package=psych)",
-    "body": "\n<b>Descriere</b></br>\nAfișează următoarele statistici numerice:</br>\nnumăr, medie, deviație standard, mediană, tăiat, mad, min, max, interval, asimetrie, kurtosis, eroare standard\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n#BSkyFormat afișează o ieșire bine formatată<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: Un dataframe sau matrice\n</li>\n</ul>\n<b>Pachet</b></br>\npsych</br>\n<b>Ajutor</b></br>\nhelp(describe, package=psych)\n"
+    "body": "\n<b>Descriere</b></br>\nOferă următoarele statistici numerice:</br>\nnumăr, medie, deviație standard, mediană, tăiat, mad, minim, maxim, interval, asimetrie, kurtosis, eroare standard\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \n#BSkyFormat afișează ieșiri formatate frumos<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: Un dataframe sau matrice\n</li>\n</ul>\n<b>Pachet</b></br>\npsych</br>\n<b>Ajutor</b></br>\nhelp(describe, package=psych)\n"
   }
 }

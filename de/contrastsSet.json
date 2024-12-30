@@ -1,15 +1,15 @@
 {
-  "title": "Setze Kontraste für Faktorvariablen",
-  "navigation": "Kontraste setzen",
+  "title": "Kontraste für Faktorvariablen festlegen",
+  "navigation": "Kontraste festlegen",
   "target": "Ziel",
   "label1": "Kontraste",
-  "Dummy": "Behandlungs (Dummy) Kontraste",
+  "Dummy": "Behandlungs- (Dummy-) Kontraste",
   "Deviation": "Summe (Abweichung) Kontraste",
   "Helmert": "Helmert-Kontraste",
   "Poly": "Polynomiale Kontraste",
   "help": {
-    "title": "Kontraste setzen",
+    "title": "Kontraste festlegen",
     "r_help": "help(contrasts, package ='stats')",
-    "body": "\n            <b>Beschreibung</b></br>\n            ​Setzen und Anzeigen der Kontraste, die mit einem Faktor verbunden sind.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: ein R-Objekt.​\n            </li>\n            <li>\n            value: entweder eine numerische Matrix (oder eine spärliche oder dichte Matrix einer Klasse, die dMatrix aus dem Paket Matrix erweitert) deren Spalten Koeffizienten für Kontraste in den Ebenen von x geben, oder der (zitierten) Name einer Funktion, die solche Matrizen berechnet, z.B. “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            stats</br>\n            <b>Hilfe</b></br>\n            help(contrasts, package ='stats')       \n            "
+    "body": "\n            <b>Beschreibung</b></br>\n            ​Legen Sie die Kontraste fest und zeigen Sie sie an, die mit einem Faktor verbunden sind.\n            <br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: ein R-Objekt.​\n            </li>\n            <li>\n            value: entweder eine numerische Matrix (oder eine spärliche oder dichte Matrix einer Klasse, die dMatrix aus dem Paket Matrix erweitert) deren Spalten Koeffizienten für Kontraste in den Ebenen von x geben, oder der (in Anführungszeichen gesetzte) Name einer Funktion, die solche Matrizen berechnet, z.B. “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            stats</br>\n            <b>Hilfe</b></br>\n            help(contrasts, package ='stats')       \n            "
   }
 }

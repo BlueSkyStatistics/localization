@@ -1,0 +1,18 @@
+{
+  "title": "Trova Duplicati",
+  "navigation": "Trova Duplicati",
+  "keysnote": "NOTA: Specificare nessuna variabile chiave comporterà una ricerca di duplicati per casi completi. Specificare variabili chiave cercherà duplicati solo in base ai valori delle variabili chiave.",
+  "keyvarslabel": "Variabili Chiave (opzionale)",
+  "allduprowschecklabel": "Crea dataset con tutte le righe associate ai duplicati",
+  "allduprowsnamelabel": "Nome del dataset",
+  "alldatachecklabel": "Crea dataset con dati originali e colonna che indica i duplicati",
+  "alldatanamelabel": "Nome del dataset",
+  "dupvarnamelabel": "Nome della variabile duplicata",
+  "nodupdatachecklabel": "Crea dataset con tutti i duplicati rimossi",
+  "nodupdatanamelabel": "Nome del dataset",
+  "help": {
+    "title": "Trova Duplicati",
+    "r_help": "help(duplicated, package = 'base')",
+    "body": "\nQuesta finestra di dialogo troverà duplicati sia per casi completi che per variabili chiave. I duplicati per casi completi sono uguali per ogni valore di ogni variabile. I duplicati utilizzando variabili chiave sono duplicati definiti solo da valori uguali per variabili specifiche, chiamate \"chiavi\". I duplicati vengono cercati dall'alto verso il basso del dataset. Quindi, una riga duplicata significa che i valori sono uguali a una riga precedente. Vengono forniti riassunti dei duplicati.\n<br/><br/>\n<b>Variabili Chiave:</b> Specificare variabili chiave opzionali che definiscono i duplicati. Se non vengono selezionate variabili chiave, verranno cercati duplicati per casi completi.\n<br/><br/>\n<b>Crea dataset con tutte le righe associate ai duplicati:</b> Questo creerà un dataset di tutte le righe duplicate e la prima istanza di ciascuna riga corrispondente a ciascun duplicato. Il dataset di output sarà ordinato da tutte le variabili nel caso di duplicato completo e dalle variabili chiave nel caso di variabili chiave. Le variabili chiave verranno anche spostate all'inizio del dataset di output. Il campo <b>Nome del dataset</b> può essere utilizzato per nominare questo dataset di output.\n<br/><br/>\n<b>Crea dataset con dati originali e colonna che indica i duplicati:</b> Questo creerà un dataset che include tutti i dati originali più una colonna aggiuntiva che indica le righe duplicate (0=non duplicato, 1=duplicato). Il campo <b>Nome del dataset</b> può essere utilizzato per nominare questo dataset di output. Il campo <b>Nome della variabile duplicata</b> può essere utilizzato per nominare questa colonna aggiuntiva.\n<br/><br/>\n<b>Crea dataset con tutti i duplicati rimossi:</b> Questo creerà un dataset che rimuove tutte le righe duplicate (sia per casi completi che per variabili chiave) dove i duplicati vengono cercati dall'alto verso il basso nel dataset. Questo significa che tutte le 2a, 3a, ecc. istanze delle righe verranno rimosse. Il campo </b>Nome del dataset</b> può essere utilizzato per nominare questo dataset di output.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> dplyr, arsenal\n"
+  }
+}

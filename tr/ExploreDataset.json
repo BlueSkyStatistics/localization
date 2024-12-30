@@ -1,0 +1,14 @@
+{
+  "title": "Veri Kümesini Keşfet",
+  "navigation": "Veri Kümesini Keşfet",
+  "destdatalabel": "Keşfedilecek Veri Kümesi",
+  "htmloutlabel": "Çıktıyı Bir Web Sayfasında Göster",
+  "standardgraphlabel": "Çıktı Penceresinde Grafikler Dahil Et",
+  "maxdistvalueslabel": "Maksimum Ayrık Değerler",
+  "rounddigitslabel": "Önemli Rakamlar",
+  "help": {
+    "title": "Veri Kümesini Keşfet",
+    "r_help": "help(dfSummary, package ='summarytools')",
+    "body": "\nBu, bir veri kümesini tanımlayan bir tablo oluşturur. Tanımlar, veri kümesi adı, gözlem sayısı, değişken sayısı, kopya kayıt sayısı, \ndeğişken adları, değişken sınıfları, değişken özet istatistikleri ve grafikler içerir. Bu araç, veri analizi amaçlarından ziyade veri keşfi ve temizleme amaçları için daha çok tasarlanmıştır. \nVarsayılan olarak, tablonun metin versiyonu görüntülenir, ancak isteğe bağlı olarak, güzel bir html versiyonu varsayılan web tarayıcısında görüntülenebilir.\n<br/><br/>  \n<b>Keşfedilecek Veri Kümesi:</b> Tanımlamak istediğiniz veri kümesi\n<br/><br/>  \n<b>Çıktıyı Bir Web Sayfasında Göster:</b> Tablonun güzel bir versiyonunu varsayılan web tarayıcısında görüntülemek istiyorsanız işaretleyin. Bu versiyon grafikler içerecektir.\n<br/><br/>\n<b>Çıktı Penceresinde Grafikler Dahil Et:</b> Mavi Gökyüzü çıktı penceresinde grafiklerin metin versiyonlarını dahil etmek istiyorsanız işaretleyin\n<br/><br/>\n<b>Maksimum Ayrık Değerler:</b> Frekansları görüntülemek için maksimum değer sayısı. Bir değişken bu sayıdan daha fazla ayrık değere sahipse, kalan frekanslar \nbir bütün kategori olarak raporlanacak ve ek ayrık değer sayısı ile birlikte gösterilecektir. Karakter değişkenleri için, en sık görülen değerler görüntülenir, bu nedenle bu aynı zamanda ne kadar gösterileceğini de kontrol eder. Varsayılan 10'dur.\n<br/><br/>\n<b>Önemli Rakamlar:</b> Görüntülenecek önemli rakam sayısı. Varsayılan 2'dir.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> summarytools\n\t\t\t"
+  }
+}

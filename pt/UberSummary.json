@@ -1,0 +1,31 @@
+{
+  "title": "Descritivos",
+  "ChkboxShowOnlyTopFewFactors": "Mostrar contagens apenas para os N principais níveis de fator",
+  "txtNumTopFactorsToShow": "Insira um valor para N",
+  "skew": "Assimetria",
+  "mad": "Desvio absoluto mediano",
+  "kurtos": "Curtose",
+  "label2": "Nota: Quando a caixa de seleção não está marcada, as contagens para TODOS os níveis serão exibidas. Isso pode levar um tempo considerável se você tiver muitos níveis de fator",
+  "navigation": "Descritivos",
+  "tvarbox1": "Variáveis selecionadas",
+  "tvarbox2": "Agrupar por",
+  "min": "Mínimo",
+  "max": "Máximo",
+  "mean": "Média",
+  "median": "Mediana",
+  "sum": "Soma",
+  "sd": "Desvio padrão",
+  "stderror": "Erro padrão da média",
+  "iqr": "Intervalo interquartil",
+  "quantiles": "Quantis",
+  "probs": "Especifique quantis (se o quartil for selecionado)",
+  "addIsstatnames": "Nomes de funções estatísticas adicionais separados por vírgula, por exemplo, var)",
+  "label1": "Opções para variáveis numéricas",
+  "label3": "Opções para variáveis fatoriais",
+  "label4": "Estatísticas resumidas em colunas",
+  "help": {
+    "title": "Descritivos",
+    "r_help": "",
+    "body": "\n<b>Descrição</b></br>\nProduz as seguintes estatísticas descritivas:</br>\nmín, máx, média, mediana, soma, dp, erro padrão, iq, Quantis. Se Quantis for selecionado, você pode especificar os quantis separados por vírgula necessários.</br>\nAlém disso, o usuário pode passar uma lista de nomes de funções estatísticas separadas por vírgula, por exemplo, var.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), long_table=FALSE, datasetName=\"nome do conjunto de dados\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variáveis de escala selecionadas (por exemplo, Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: uma ou mais variáveis fatoriais para agrupar (por exemplo, Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Lista de funções. As que estão definidas como TRUE serão executadas. (por exemplo, min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilidades dos quantis\n</li>\n<li>\nadditionalStats: Função estatística adicional que o usuário pode passar (por exemplo, var)\n</li>\n<li>\ndatasetName: Nome do conjunto de dados do qual datasetColumnObjects e groupByColumnObjects são escolhidos\n</li>\n<li>\nlong_table: A opção de tabela longa foi introduzida para acomodar análises feitas em um grande número de variáveis. Escolher o formato longo controla a largura da tabela de saída, facilitando a visualização dos resultados sem precisar rolar para a direita na janela de saída. \n</li>\n</ul>\n<b>Valor</b></br>\nUm objeto da classe \"data.frame\", fornecendo os resultados para cada função em cada variável.</br>\n<b>Exemplos</b><br/>\n<code> \nDataset <- data.frame(Despesas=c(20,23,19,25,26), Vendas=c(48,50,55,51,49), Gênero=c('m','f','f','m','m'), Deptt=c('TI', 'Vendas', 'TI','Vendas','TI'), stringsAsFactors = TRUE)</br>\nResultado_Análise_Estatísticas_Numerais = BSkySummaryStats(datasetColumnObjects = list(Vendas = Dataset$Vendas, Despesas = Dataset$Despesas), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Pacote</b></br>\nBlueSky</br>\n<b>Ajuda</b></br>\nA ajuda do R não está disponível porque escrevemos código personalizado usando várias funções R. Se você precisar inspecionar o código, clique no botão \"<>\".</br>\n    "
+  }
+}

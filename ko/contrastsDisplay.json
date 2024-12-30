@@ -1,0 +1,10 @@
+{
+  "title": "대조 표시",
+  "navigation": "대조 표시",
+  "target": "목적지",
+  "help": {
+    "title": "대조 표시",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>설명</b></br>\n            요인 변수와 관련된 대조를 표시합니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            x: R 객체입니다.​\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            stats</br>\n            <b>도움말</b></br>\n            help(contrasts, package ='stats')        \n            "
+  }
+}

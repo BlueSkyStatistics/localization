@@ -1,0 +1,11 @@
+{
+  "title": "Substituir Valores Ausentes (Variáveis de String/Fator)",
+  "navigation": "Caractere/Fator",
+  "destination": "Variáveis de Destino",
+  "repString": "Digite a string para substituir os NAs. Nota: Não coloque a string entre aspas. Para variáveis de fator, o valor especificado deve ser um nível do fator, veja Variáveis>Níveis de Fator>Adicionar",
+  "help": {
+    "title": "Substituir Valores Ausentes (Variáveis de String/Fator)",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>Descrição</b></br>\nSubstituir valores ausentes nas variáveis selecionadas pelo valor especificado. Ao usar o diálogo, você não precisa colocar a string entre aspas duplas\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('String para substituir')\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nAs variáveis do conjunto de dados (var1, var2) onde os NAs precisam ser substituídos\n</li>\n</ul>\n<b>Valor</b><br/>\nSubstitui os valores ausentes no conjunto de dados pela string especificada<br/>\n<b>Pacote</b></br>\nbase</br>\n<b>Ajuda</b></br>\nhelp(is.na,package=base)"
+  }
+}

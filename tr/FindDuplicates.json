@@ -1,0 +1,18 @@
+{
+  "title": "Çiftleri Bul",
+  "navigation": "Çiftleri Bul",
+  "keysnote": "NOT: Hiçbir anahtar değişken belirtmemek, tam durum çiftleri aramasına neden olacaktır. Anahtar değişkenleri belirtmek, yalnızca anahtar değişken değerlerine göre çiftleri arayacaktır.",
+  "keyvarslabel": "Anahtar Değişkenler (isteğe bağlı)",
+  "allduprowschecklabel": "Çiftlerle ilişkili tüm satırları içeren veri kümesi oluştur",
+  "allduprowsnamelabel": "Veri kümesi adı",
+  "alldatachecklabel": "Orijinal verilerle birlikte çiftleri gösteren bir sütun içeren veri kümesi oluştur",
+  "alldatanamelabel": "Veri kümesi adı",
+  "dupvarnamelabel": "Çift değişken adı",
+  "nodupdatachecklabel": "Tüm çiftlerin kaldırıldığı veri kümesi oluştur",
+  "nodupdatanamelabel": "Veri kümesi adı",
+  "help": {
+    "title": "Çiftleri Bul",
+    "r_help": "help(duplicated, package = 'base')",
+    "body": "\nBu diyalog, ya tam durumlar ya da anahtar değişkenler aracılığıyla çiftleri bulacaktır. Tam durum çiftleri, her değişken için her değer için eşittir. Anahtar değişkenler kullanarak çiftler, yalnızca belirli değişkenler için eşit değerlerle tanımlanan çiftlerdir, bunlara \"anahtarlar\" denir. Çiftler, veri kümesinin üstünden altına doğru aranır. Yani, bir çift satır, değerlerin önceki bir satıra eşit olduğu anlamına gelir. Çiftlerin özetleri sağlanır.\n<br/><br/>\n<b>Anahtar Değişkenler:</b> Çiftleri tanımlayan isteğe bağlı anahtar değişkenleri belirtin. Hiçbir anahtar değişken seçilmezse, tam durum çiftleri aranacaktır.\n<br/><br/>\n<b>Çiftlerle ilişkili tüm satırları içeren veri kümesi oluştur:</b> Bu, her bir çiftle ilişkili tüm çift satırlarının ve her çiftle ilgili ilk örneğin bulunduğu bir veri kümesi oluşturacaktır. Çıktı veri kümesi, tam çift durumundaki tüm değişkenler ve anahtar değişkenler durumundaki anahtar değişkenler tarafından sıralanacaktır. Anahtar değişkenler, çıktı veri kümesinin başına taşınacaktır. <b>Veri kümesi adı</b> alanı, bu çıktı veri kümesine isim vermek için kullanılabilir.\n<br/><br/>\n<b>Orijinal verilerle birlikte çiftleri gösteren bir sütun içeren veri kümesi oluştur:</b> Bu, tüm orijinal verileri ve çift satırlarını gösteren ek bir sütun içeren bir veri kümesi oluşturacaktır (0=çift değil, 1=çift). <b>Veri kümesi adı</b> alanı, bu çıktı veri kümesine isim vermek için kullanılabilir. <b>Çift değişken adı</b> alanı, bu ek sütuna isim vermek için kullanılabilir.\n<br/><br/>\n<b>Tüm çiftlerin kaldırıldığı veri kümesi oluştur:</b> Bu, veri kümesinde çiftlerin üstten alta doğru arandığı tüm çift satırlarını kaldıran bir veri kümesi oluşturacaktır. Bu, satırların 2., 3., vb. örneklerinin kaldırılacağı anlamına gelir. <b>Veri kümesi adı</b> alanı, bu çıktı veri kümesine isim vermek için kullanılabilir.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> dplyr, arsenal\n"
+  }
+}

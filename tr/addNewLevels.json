@@ -1,0 +1,18 @@
+{
+  "title": "Yeni Seviyeler Ekle",
+  "navigation": "Ekle",
+  "target": "Yeni seviyeler eklemek için faktör değişkenlerini",
+  "label1": "Bir veya daha fazla faktör değişkenine yeni seviyeler ekleyin. Sonuçları mevcut değişkenlere kaydedin veya bir ön ek/son ek belirterek yeni değişkenler oluşturun. Yeni değişkenler, mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır.",
+  "newLevels": "Yeni seviyeleri tırnak içinde ve virgülle ayrılmış olarak girin, örneğin \"seviye1\",\"seviye2\",\"seviye3\"",
+  "label2": "Yeni seviyeleri yeni değişken(ler)e kaydedin veya mevcut değişken(ler)i üzerine yazın",
+  "rd3": "Bir son ek belirtin (Bir yeni değişken son ek ile oluşturulacaktır)",
+  "txt3": "Bir son ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri üzerine yaz",
+  "help": {
+    "title": "Yeni Seviyeler Ekle",
+    "r_help": "help(fct_expand, package=\"forcats\")",
+    "body": "\n<b>NOT: SEVİYELERİ İKİLİ TIRNAKLARA VEYA TEKLİ TIRNAKLARA ALMAYIN, SEVİYE İSİMLERİNDE BOŞLUK OLMAMALIDIR. SEVİYELERİ VIRGÜLLERLE AYIRARAK GİRİN FORMAT: SEVİYE1,SEVİYE2, SEVİYE3</b></br>\n<b>Açıklama</b></br>\nBir faktöre ek seviyeler ekleyin. Bir veya daha fazla faktör değişkenine yeni seviyeler ekleyin. Sonuçlar mevcut değişkenlere (üzerine yazarak) veya bir ön ek/son ek belirterek yeni değişkenler oluşturarak kaydedilebilir. Yeni değişkenler, mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nf: Bir faktör (veya karakter vektörü).\n</li>\n<li>\n...: Faktöre eklemek için ek seviyeler. Zaten mevcut olan seviyeler sessizce göz ardı edilecektir.\n</li>\n</ul>\n<b>Örnekler</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Paket</b></br>\nforcats</br>\n<b>Yardım</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Örneklem Büyüklüğü, AUC'nin Hassasiyeti",
+  "navigation": "AUC",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "auc": "AUC (ROC eğrisi altındaki alan, 0.5-1)",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "prev": "Sonuç Yaygınlığı (0-1)",
+  "help": {
+    "title": "Örneklem Büyüklüğü, AUC'nin Hassasiyeti",
+    "r_help": "help(prec_auc, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak bir alıcı işletim karakteristik eğrisi altındaki alan için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirtirken örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığı genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>AUC:</b> Beklenen AUC değerini belirtin\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Sonuç Yaygınlığı:</b> 'pozitif' sonucu olan deneklerin oranını belirtin. Bu, aday istatistiksel model ile modellenen seviyeye karşılık gelir.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

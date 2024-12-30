@@ -1,0 +1,10 @@
+{
+  "title": "Seviye Gösterimi",
+  "navigation": "Gösterim",
+  "target": "Gösterilecek seviyeler için faktör değişkenleri",
+  "help": {
+    "title": "Seviye Gösterimi",
+    "r_help": "help(map,package=purrr)",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenler için temel seviyeler fonksiyonunu uygular. Kullanıcılar, dplyr'deki select fonksiyonunu kullanarak değişkenleri, her bir değişkene seviyeler fonksiyonunu uygulayan map fonksiyonuna yönlendirir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nDataset %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvar1,var2: Gösterilecek seviyeler için veri setindeki değişkenler\n</li>\n<li>\nDataset: var1, var2 değişkenini içeren veri seti\n</li>\n</ul>\n<b>Değer</b><br/>\nSeçilen değişkenlerin seviyeleri gösterilir<br/>\n<b>Paket</b></br>\npurrr, dplyr</br>\n<b>Yardım</b></br>\nhelp(map,package=purrr)\n"
+  }
+}

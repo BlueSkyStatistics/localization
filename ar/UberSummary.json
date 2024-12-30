@@ -1,0 +1,31 @@
+{
+  "title": "الوصفية",
+  "ChkboxShowOnlyTopFewFactors": "عرض العد فقط لأعلى N مستويات العوامل",
+  "txtNumTopFactorsToShow": "أدخل قيمة لـ N",
+  "skew": "الانحراف",
+  "mad": "الانحراف المطلق الوسيط",
+  "kurtos": "الكورتوز",
+  "label2": "ملاحظة: عند إلغاء تحديد مربع الاختيار، سيتم عرض العد لجميع المستويات. قد يستغرق هذا وقتًا طويلاً إذا كان لديك العديد من مستويات العوامل",
+  "navigation": "الوصفية",
+  "tvarbox1": "المتغيرات المحددة",
+  "tvarbox2": "تجميع بواسطة",
+  "min": "الحد الأدنى",
+  "max": "الحد الأقصى",
+  "mean": "المتوسط",
+  "median": "الوسيط",
+  "sum": "المجموع",
+  "sd": "الانحراف المعياري",
+  "stderror": "خطأ المعيار للمتوسط",
+  "iqr": "نطاق الربع الداخلي",
+  "quantiles": "الرباعيات",
+  "probs": "حدد الرباعيات (إذا تم اختيار الرباعيات)",
+  "addIsstatnames": "أسماء الوظائف الإحصائية الإضافية مفصولة بفواصل، على سبيل المثال var)",
+  "label1": "خيارات للمتغيرات العددية",
+  "label3": "خيارات لمتغيرات العوامل",
+  "label4": "إحصائيات ملخصة في الأعمدة",
+  "help": {
+    "title": "الوصفية",
+    "r_help": "",
+    "body": "\n<b>الوصف</b></br>\nيخرج الإحصائيات الوصفية التالية:</br>\nالحد الأدنى، الحد الأقصى، المتوسط، الوسيط، المجموع، الانحراف المعياري، خطأ المعيار، نطاق الربع الداخلي، الرباعيات. إذا تم اختيار الرباعيات، يمكنك تحديد الرباعيات المطلوبة مفصولة بفواصل.</br>\nبالإضافة إلى ذلك، يمكن للمستخدم تمرير قائمة بأسماء الوظائف الإحصائية مفصولة بفواصل مثل var.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), long_table=FALSE, datasetName=\"اسم مجموعة البيانات\")\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: المتغيرات المحددة (مثل Dataset$var1، Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: واحد أو أكثر من متغيرات العوامل للتجميع (مثل Dataset$var3، Dataset$var4)\n</li>\n<li>\nstatFunctionList: قائمة الوظائف. سيتم تنفيذ الوظائف التي تم تعيينها إلى TRUE. (مثل min=TRUE، sd=TRUE)\n</li>\n<li>\nquantilesProbs: احتمالات الرباعيات\n</li>\n<li>\nadditionalStats: وظيفة إحصائية إضافية يمكن للمستخدم تمريرها (مثل var)\n</li>\n<li>\ndatasetName: اسم مجموعة البيانات التي تم اختيار datasetColumnObjects و groupByColumnObjects منها\n</li>\n<li>\nlong_table: تم تقديم خيار الجدول الطويل لاستيعاب التحليل الذي تم إجراؤه على عدد كبير من المتغيرات. اختيار التنسيق الطويل يتحكم في عرض جدول الإخراج مما يسهل عرض النتائج دون الحاجة إلى التمرير إلى اليمين في نافذة الإخراج.\n</li>\n</ul>\n<b>القيمة</b></br>\nكائن من فئة \"data.frame\"، يعطي النتائج لكل وظيفة على كل متغير.</br>\n<b>أمثلة</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>الحزمة</b></br>\nBlueSky</br>\n<b>المساعدة</b></br>\nمساعدة R غير متاحة لأننا كتبنا كودًا مخصصًا باستخدام وظائف R متعددة. إذا كنت بحاجة إلى فحص الكود، انقر على زر \"<>\".</br>\n    "
+  }
+}

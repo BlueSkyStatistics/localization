@@ -1,0 +1,10 @@
+{
+  "title": "샤피로-윌크 정규성 검정",
+  "navigation": "샤피로-윌크 정규성 검정 (레거시)",
+  "tvarbox1": "숫자 변수를 선택하세요",
+  "help": {
+    "title": "샤피로-윌크 정규성 검정",
+    "r_help": "help(shapiro.test, package=stats)",
+    "body": "\n<b>설명</b></br>\n샤피로-윌크 정규성 검정을 수행합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 데이터 값의 숫자 벡터. 결측치는 허용되지만, 결측치가 아닌 값의 수는 3에서 5000 사이여야 합니다.\n</li>\n</ul>\n<b>값</b><br/>\n다음 구성 요소를 포함하는 \"htest\" 클래스의 목록:<br/>\nstatistic: 샤피로-윌크 통계의 값.<br/>\np.value: 검정에 대한 근사 p-값. Royston (1995)에 따르면 p.value < 0.1에 대해 적절하다고 합니다.<br/>\nmethod: 문자 문자열 \"샤피로-윌크 정규성 검정\".<br/>\ndata.name: 데이터의 이름을 제공하는 문자 문자열.<br/>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(shapiro.test, package=stats)\n"
+  }
+}

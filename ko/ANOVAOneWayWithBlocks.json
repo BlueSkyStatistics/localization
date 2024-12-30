@@ -1,0 +1,14 @@
+{
+  "title": "블록이 있는 일원 ANOVA",
+  "navigation": "블록이 있는 일원 ANOVA",
+  "tvarbox1": "응답 변수(하나)",
+  "tvarbox2": "고정 효과",
+  "blockVar": "차단 변수(들)",
+  "chk1": "잔차의 히스토그램",
+  "chk2": "사후 분석",
+  "help": {
+    "title": "블록이 있는 일원 ANOVA",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>설명</b></br>\n다양한 통계 모델에 대한 ANOVA 테이블​\nlm, glm, multinom (nnet 패키지), polr (MASS 패키지), coxph (survival 패키지), coxme (coxme 패키지), svyglm (survey 패키지), rlm (MASS 패키지), lmer (lme4 패키지), lme (nlme 패키지)에서 생성된 모델 객체에 대한 type-II 또는 type-III 분산 분석 테이블을 계산합니다. 선형 모델의 경우 F-검정이 계산되며, 일반화된 선형 모델의 경우 우도비 카이제곱, Wald 카이제곱 또는 F-검정이 계산됩니다. 다변량 선형 모델에 대해 lm 또는 manova로 생성된 다양한 검정 통계량이 제공됩니다. Cox 모델에 대해 부분 우도비 검정 또는 Wald 검정이 제공됩니다. 선형 및 일반화된 선형 혼합 효과 모델의 고정 효과에 대해 Wald 카이제곱 검정이 제공됩니다. 기본 경우에는 Wald 카이제곱 또는 F 검정이 제공됩니다.​\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nAnova(mod, type='II,...)​\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nmod: lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm 또는 기타 적합한 모델 객체.​\n</li>\n<li>\ntype: 검정의 유형, \"II\", \"III\", 2 또는 3.​\n</li>\n</ul>\n<b>세부사항</b></br>\n\"type-II\" 및 \"type-III\"라는 명칭은 SAS에서 차용되었지만, 여기서 사용되는 정의는 SAS에서 사용되는 정의와 정확히 일치하지 않습니다. Type-II 검정은 주변성의 원칙에 따라 계산되며, 모든 다른 항목 후에 각 항목을 테스트하되, 해당 항목의 고차 관계는 무시합니다. 소위 type-III 검정은 주변성을 위반하며, 모델의 모든 다른 항목 후에 각 항목을 테스트합니다. Type-II 검정의 이 정의는 모든 예측 변수가 요인인 분산 분석 모델에 대해 SAS에서 생성된 검정과 일치하지만, 더 일반적으로는 그렇지 않습니다(즉, 정량적 예측 변수가 있을 때). type-III 검정을 위한 모델을 수립할 때 매우 주의해야 하며, 그렇지 않으면 테스트되는 가설이 의미가 없게 됩니다.​</br>\n여기서 구현된 type-II Wald 검정은 선형 모델에서 이러한 검정을 생성하는 데 사용되는 선형 가설의 일반화입니다.​</br>\n선형 모델, 다변량 선형 모델 및 일반화된 선형 모델에 대한 Wald 검정, Cox 모델, 혼합 효과 모델, 조사 데이터에 맞춘 일반화된 선형 모델 및 기본 경우에 대해 Anova는 모델을 다시 맞추지 않고 검정 통계량을 찾습니다. svyglm 방법은 기본 방법을 단순히 호출하므로 동일한 인수를 사용할 수 있습니다.​</br>\n<b>값</b><br/>\n\"anova\" 또는 \"Anova.mlm\" 클래스의 객체로, 일반적으로 인쇄됩니다. \"Anova.mlm\" 클래스의 객체에 대해서는 인쇄 방법보다 MANOVA에 대한 훨씬 더 많은 세부 정보를 제공하는 요약 방법도 있습니다.​​</br>\n<b>패키지</b></br>\nAnova</br>\n<b>도움말</b></br>\nhelp(Anova, package='car')​</br></br>\n<b>설명</b></br>\n사후 평균 분리 검정. 각 주요 효과 요인 변수에 대한 사후 평균 분리 검정을 수행하기 위해 emmeans 패키지를 사용할 것입니다. 고려 중인 선형 모델은 위의 lm 함수로 생성된 모델입니다.  \n<br/>\n<b>사용법</b>\n<br/>\n<code> \nlsmeans(model,\n            var1 ~ var2, \n            adjust=\"tukey\") \n</code> <br/>\n<b>패키지</b></br>\nFSA;car;emmeans;ggplot2;multcomp</br>\n<b>도움말</b></br>\nhelp(lsmeans, package=\"emmeans\")​\n    "
+  }
+}

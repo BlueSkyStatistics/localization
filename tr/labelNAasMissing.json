@@ -1,0 +1,18 @@
+{
+  "title": "NA'lar için bir etiket belirtin",
+  "navigation": "NA'ları Etiketle",
+  "target": "NA değerlerini etiketlemek için faktör değişkenleri",
+  "label1": "Faktör değişken(ler)i için \"NA\" seviyesine bir etiket girin. Yeni etiket mevcut değişken(ler)e veya bir ön ek/son ek belirterek yeni değişkenlere kaydedilebilir. Yeni değişkenler mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır.",
+  "newLevels": "\"NA\" seviyesine bir etiket girin",
+  "label2": "Yeni oluştur veya mevcut değişkenleri üzerine yaz",
+  "rd3": "Bir son ek belirtin (Bir yeni değişken son ek ile oluşturulacaktır)",
+  "txt3": "Bir son ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri üzerine yaz",
+  "help": {
+    "title": "NA'ları kaldır",
+    "r_help": "help(fct_explicit_na, package =forcats)",
+    "body": "\n<b>Açıklama</b></br>\nFaktör değişken(ler)i için \"NA\" seviyesine bir etiket girin. Yeni etiket mevcut değişken(ler)e kaydedilebilir (mevcut değişkenleri üzerine yazıyoruz) veya yeni değişkenler için NA'ya yeni bir etiket kaydedilebilir, bir ön ek/son ek belirterek. Yeni değişkenler mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır. \nBu, eksik değere açık bir faktör seviyesi verir, böylece özetlerde ve grafiklerde görünürler.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(Eksik)\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nf : Bir faktör (veya karakter vektörü).\n</li>\n<li>\nna_level : Eksik değerler için kullanılacak seviye.\n</li>\n</ul>\n<b>Örnekler</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>Paket</b></br>\nforcats</br>\n<b>Yardım</b></br>\nAşağıdaki satırı BlueSky Statistics R sözdizimi editörüne yazın</br>\nhelp(fct_explicit_na, package =forcats)\n"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "إنشاء تصميم D-Optimal",
+  "navigation": "إنشاء تصميم D-Optimal",
+  "datasetname": "اسم تصميم D-optimal",
+  "candidateDesignChk": "إنشاء تصميم D-optimal من تصميم مرشح موجود (كامل العوامل، FrF2، متعامد، أو لاتيني) - تأكد من فتح هذه النافذة على التصميم الموجود في شبكة البيانات لاختيار التصميم المرشح بشكل ضمني",
+  "selectedvars": "اختر المتغيرات (يتم تجاهلها إذا تم تحديد تصميم المرشح أعلاه) لإنشاء تصميم D-optimal ليس من تصميم مرشح موجود",
+  "numOfRuns": "عدد التجارب",
+  "formula": "الصيغة - اتركها افتراضية لتضمين جميع العوامل في النموذج أو اكتب صيغة نموذج خطي مثل ~quad(.)",
+  "numOfOptiRepeats": "عدد تكرارات التحسين",
+  "numOfBlocks": "عدد الكتل",
+  "blockName": "اسم الكتلة",
+  "lbl1": "قد لا تحتاج إلى تغيير إعدادات العشوائية",
+  "randomseeds": "بذور للعشوائية",
+  "randomizationChk": "عشوائية توليد التصميم",
+  "help": {
+    "title": "إنشاء تصميم D-Optimal",
+    "r_help": "help(Dopt.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة Dopt.design لإنشاء تصميمات D-optimal مع أو بدون حجب\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك استخدام ملف مجموعة البيانات النموذجية المسمى factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx. افتح الملف في شبكة البيانات من قائمة فتح الملف\n\t\t\t\t<br/>\n\t\t\t\tقم بإنشاء التصميم الكامل أولاً، اختر التصميم الكامل من هذه النافذة/واجهة المستخدم وحدد runs = 16 لإنشاء تصميم D-optimal من تصميم كامل العوامل\n\t\t\t"
+  }
+}

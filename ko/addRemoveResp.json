@@ -1,0 +1,10 @@
+{
+  "title": "응답 변수 추가/제거 - 먼저 DOE -> 디자인 검사 메뉴에서 기존 응답 변수 목록을 확인하세요",
+  "navigation": "응답 추가/제거",
+  "subsetvars": "응답 변수 선택",
+  "help": {
+    "title": "응답 변수 추가/제거",
+    "r_help": "help(response.names, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t디자인의 응답 변수로 지정할 하나 이상의 변수를 선택합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(response.names, package = DoE.base)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

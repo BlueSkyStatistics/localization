@@ -1,11 +1,11 @@
 {
-  "title": "Dimensiunea eșantionului, Test de supraviețuire în două grupuri",
-  "navigation": "Supraviețuire în două grupuri",
+  "title": "Dimensiunea eșantionului, Testul supraviețuirii în două grupuri",
+  "navigation": "Supraviețuirea în două grupuri",
   "howtouse": "Pentru a calcula dimensiunea eșantionului: specificați puterea\nPentru a calcula puterea: specificați dimensiunea eșantionului",
   "n": "Dimensiunea eșantionului",
   "power": "Putere (0-1)",
   "propgrp1": "Proporția eșantionului în Grupul 1 (0-1)",
-  "propevent": "Proporția cu Evenimentul (0-1)",
+  "propevent": "Proporția cu evenimentul (0-1)",
   "hr": "Raportul de risc, Grupul 1 vs Grupul 2",
   "rsquared": "R-pătrat între grup și alte covariate (0-1); introduceți 0 pentru test neajustat",
   "siglevel": "Nivel de semnificație (0-1)",
@@ -13,8 +13,8 @@
   "twosided": "Bidirecțional",
   "onesided": "Unidirecțional",
   "help": {
-    "title": "Dimensiunea eșantionului, Test de supraviețuire în două grupuri",
-    "r_help": "ajutor(ssizeEpiCont.default, pachet ='powerSurvEpi')",
-    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test de supraviețuire cu două eșantioane. Calculează dimensiunea eșantionului sau puterea, atunci când utilizatorul specifică cealaltă, având în vedere un raport de risc de detectat.\nCalculul presupune un model de riscuri proporționale Cox.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul total de subiecți\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată.\n<br/><br/>\n<b>Proporția eșantionului în Grupul 1:</b> Specificați proporția din eșantionul total care se află în grupul 1. Proporția eșantionului în grupul 2 va fi unu minus această cantitate.\n<br/><br/>\n<b>Raportul de risc, Grupul 1 vs Grupul 2:</b> Specificați raportul de risc dorit de detectat pentru grupul 1 în raport cu grupul 2\n<br/><br/>\n<b>Proporția cu Evenimentul:</b> Specificați proporția așteptată a eșantionului cu evenimentul (sau unu minus proporția de cenzură). Dacă specificați o probabilitate de 1, se presupune că nu există cenzură.\n<br/><br/>\n<b>R-pătrat între grup și alte covariate; introduceți 0 pentru test neajustat:</b> Specificați valoarea r-pătrat (corelație multiplă pătrată), între variabila de grupare și \ntoate celelalte covariate din modelul Cox. O valoare de 0 corespunde unui test neajustat fără alte covariate.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) al testului\n<br/><br/>\nAceasta folosește funcțiile ssizeEpiCont.default și powerEpiCont.default din pachetul powerSurvEpi. Consultați meniul cu trei puncte>Ajutor>Ajutor Funcție R pentru mai multe informații.\n<br/><br/>\n<b>Pachete R necesare:</b> powerSurvEpi\n\t\t\t"
+    "title": "Dimensiunea eșantionului, Testul supraviețuirii în două grupuri",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test de supraviețuire cu două eșantioane.  Calculează dimensiunea eșantionului sau puterea, atunci când utilizatorul specifică cealaltă, având în vedere un raport de risc de detectat.\nCalculul presupune un model Cox de riscuri proporționale.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul total de subiecți\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată.\n<br/><br/>\n<b>Proporția eșantionului în Grupul 1:</b> Specificați proporția din eșantionul total care se află în grupul 1.  Proporția eșantionului în grupul 2 va fi unu minus această cantitate.\n<br/><br/>\n<b>Raportul de risc, Grupul 1 vs Grupul 2:</b> Specificați raportul de risc dorit de detectat pentru grupul 1 în raport cu grupul 2\n<br/><br/>\n<b>Proporția cu evenimentul:</b> Specificați proporția așteptată a eșantionului cu evenimentul (sau unu minus proporția de cenzurare).  Dacă specificați o probabilitate de 1, se presupune că nu există cenzurare.\n<br/><br/>\n<b>R-pătrat între grup și alte covariate; introduceți 0 pentru test neajustat:</b> Specificați valoarea r-pătrat (corelație multiplă pătrată), între variabila de grupare și \ntoate celelalte covariate din modelul Cox.  O valoare de 0 corespunde unui test neajustat fără alte covariate.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului\n<br/><br/>\nAceasta folosește funcțiile ssizeEpiCont.default și powerEpiCont.default din pachetul powerSurvEpi.  Consultați meniul cu trei puncte>Ajutor>Ajutor pentru funcția R pentru mai multe informații.\n<br/><br/>\n<b>Pachete R necesare:</b> powerSurvEpi\n\t\t\t"
   }
 }

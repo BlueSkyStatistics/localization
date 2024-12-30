@@ -1,13 +1,13 @@
 {
-  "title": "简单的拉什模型（多面向）",
-  "navigation": "简单的拉什模型（多面向）",
+  "title": "简单的 Rasch 模型（多方面）",
+  "navigation": "简单的 Rasch 模型（多方面）",
   "modelname": "输入模型名称",
   "destinationvars": "项目",
   "firstlevel": "第一层变量",
   "secondlevel": "第二层变量",
   "help": {
-    "title": "简单的拉什模型（多面向）",
+    "title": "简单的 Rasch 模型（多方面）",
     "r_help": "help(tam.mml.mfr, package=TAM)",
-    "body": "\n            <b>描述</b>\n            <br/>\n            生成多面向简单拉什模型的参数估计\n            <br/><br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n            <li>\n            resp: 包含多项选择项目响应的数据显示框 k=0,...,K。缺失响应必须声明为 NA。\n            </li>\n            <li>\n            formulaA: 设计公式（仅适用于 tam.mml.mfr）。请参阅详细帮助。也可以将一个 facet 的所有效应设置为零，例如 item*step + 0*rater（请参阅详细帮助）。\n            </li>\n            <li>\n            facets: 一个包含 facet 条目的数据框（仅适用于 tam.mml.mfr）\n            </li>\n            <li>\n            pid: 可选的人员标识符向量\n            </li>\n            <li>\n            verbose: 逻辑值，指示在迭代过程中是否应打印输出。\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>包</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>帮助</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+    "body": "\n            <b>描述</b>\n            <br/>\n            生成多方面简单 Rasch 模型的参数估计\n            <br/><br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ formulaA = ~ item+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>参数</b>\n            <br/>\n            <ul>\n            <li>\n            resp: 包含多项选择项目响应的 数据框 k=0,...,K。缺失响应必须声明为 NA。\n            </li>\n            <li>\n            formulaA: 设计公式（仅适用于 tam.mml.mfr）。请参阅详细帮助。也可以将一个方面的所有效应设置为零，例如 item*step + 0*rater（请参阅详细帮助）。\n            </li>\n            <li>\n            facets: 包含方面条目的 数据框（仅适用于 tam.mml.mfr）\n            </li>\n            <li>\n            pid: 可选的人员标识符向量\n            </li>\n            <li>\n            verbose: 逻辑值，指示在迭代过程中是否应打印输出。\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>包</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>帮助</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
   }
 }

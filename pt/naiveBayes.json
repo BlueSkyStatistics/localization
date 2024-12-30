@@ -1,0 +1,12 @@
+{
+  "title": "Naive Bayes",
+  "navigation": "Naive Bayes",
+  "modelname": "Digite o nome do modelo",
+  "dependentvar": "Variável dependente",
+  "independentvars": "Variável(is) independente(s)",
+  "help": {
+    "title": "Naive Bayes",
+    "r_help": "help(NaiveBayes,package='klaR')",
+    "body": "\n                <b>Descrição</b></br>\nComputa as probabilidades a-posteriori condicionais de uma variável de classe categórica dada variáveis preditoras independentes usando a regra de Bayes. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nNaiveBayes(formula, data, ...,  na.action = na.pass)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nformula : uma fórmula da forma class ~ x1 + x2 + .... Interações não são permitidas.\n</li>\n<li>\ndata: um data frame de preditores (categóricos e/ou numéricos).\n</li>\n<li>\nna.action : uma função para especificar a ação a ser tomada se NAs forem encontrados. A ação padrão é não contá-los para o cálculo dos fatores de probabilidade. Uma alternativa é na.omit, que leva à rejeição de casos com valores ausentes em qualquer variável necessária. (NOTA: Se fornecido, este argumento deve ser nomeado.)\n</li>\n<li>\n... : argumentos passados para density.\n</li>\n</ul>\n<b>Pacote</b></br>\ncaret;klaR</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R</br>\nhelp(NaiveBayes,package='klaR')\n"
+  }
+}

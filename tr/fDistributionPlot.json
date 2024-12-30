@@ -1,0 +1,26 @@
+{
+  "title": "F Dağılım Grafiği",
+  "navigation": "F Dağılım Grafiği",
+  "dfnumerator": "Payda serbestlik dereceleri",
+  "dfdenominator": "Pay serbestlik dereceleri",
+  "pdenfun": "Yoğunluk fonksiyonunu çiz",
+  "pdstfun": "Dağılım fonksiyonunu çiz",
+  "lblregions": "Yoğunluk fonksiyonu altında bölgeleri isteğe bağlı olarak belirtin",
+  "xvals": "x-değerleri",
+  "quantiles": "kuantiller",
+  "lblRegFill": "Doldurulacak bölgeler (bir veya iki belirtin ya da boş bırakın)",
+  "lblreg1": "Bölge 1:",
+  "lblreg2": "Bölge 2:",
+  "lblregfrm": "Başlangıç",
+  "lblregto": "Bitiş",
+  "lblregcol": "Renk",
+  "lblLegPos": "Lejantın konumu",
+  "toprt": "Üst sağ",
+  "toplt": "Üst sol",
+  "topmid": "Üst merkez",
+  "help": {
+    "title": "F Dağılım Grafiği",
+    "r_help": "help(qf, package=stats)",
+    "body": "\n            ​​\n            <b>Açıklama</b>\n            <br/>\n            df1 ve df2 serbestlik dereceleri ile F dağılımı için yoğunluk, dağılım fonksiyonu, kuantile fonksiyonu ve rastgele üretim (ve isteğe bağlı merkezi olmayan parametre ncp).\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                df(x, df1, df2, ncp, log = FALSE)\n                <br/>\n                pf(q, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qf(p, df1, df2, ncp, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rf(n, df1, df2, ncp)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : kuantillerin vektörü.</li>\n                \n                \n                <li>p : olasılıkların vektörü.</li>\n                \n                \n                <li>n : gözlem sayısı. Eğer length(n) > 1 ise, uzunluk gereken sayı olarak alınır.</li>\n                \n                \n                <li>df1, df2 : serbestlik dereceleri. Inf kabul edilir.</li>\n                \n                \n                <li>ncp : merkezi olmayan parametre. Atlandığında merkezi F varsayılır.</li>\n                \n                \n                <li>log, log.p : mantıksal; eğer TRUE ise, olasılıklar p log(p) olarak verilir.</li>\n                \n                \n                <li>lower.tail : mantıksal; eğer TRUE (varsayılan), olasılıklar P[X ≤ x], aksi takdirde P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Ayrıntılar</b>\n            <br/>\n            df1 = n1 ve df2 = n2 serbestlik dereceleri ile F dağılımının yoğunluğu\n            <br/>\n            <code>f(x) = Γ((n1 + n2)/2) / (Γ(n1/2) Γ(n2/2)) (n1/n2)^(n1/2) x^(n1/2 - 1) (1 + (n1/n2) x)^-(n1 + n2)/2</code>\n            <br/>\n            x > 0 için.\n            <br/>\n            Bu, n1 ve n2 bağımsız standart normal dağılımlarının ortalama karelerinin oranının dağılımıdır ve dolayısıyla iki bağımsız ki-kare değişkeninin her birinin serbestlik derecelerine bölünmesinin oranıdır. Bir normal dağılım ile m bağımsız normal dağılımın karekök ortalamasının oranı bir Student's t_m dağılımına sahiptir, dolayısıyla bir t_m değişkeninin karesi 1 ve m serbestlik derecesinde bir F dağılımına sahiptir.\n            <br/>\n            Merkezi olmayan F dağılımı, birim varyansa sahip bağımsız normal dağılımların ortalama karelerinin oranıdır, ancak paydadaki normal dağılımlar sıfır olmayan ortalamalara sahip olabilir ve ncp ortalamaların karelerinin toplamıdır. Merkezi olmayan dağılımlar hakkında daha fazla ayrıntı için Chisquare'a bakın.\n            <br/>\n            <br/><b>Değer</b>\n            <br/>\n            df yoğunluğu verir, pf dağılım fonksiyonunu verir, qf kuantile fonksiyonunu verir ve rf rastgele sapmalar üretir.\n            <br/>\n            Geçersiz argümanlar NaN döndürür ve bir uyarı verir.\n            <br/>\n            Sonucun uzunluğu rf için n tarafından belirlenir ve diğer fonksiyonlar için sayısal argümanların uzunluklarının maksimumudur.\n            <br/>\n            n dışındaki sayısal argümanlar sonucun uzunluğuna göre geri dönüştürülür. Mantıksal argümanların yalnızca ilk elemanları kullanılır.\n            <br/>\n            <br/><b>Not</b>\n            <br/>\n            ncp = 0 sağlamak, merkezi olmayan dağılım için kullanılan algoritmayı kullanır, bu da ncp'nin atlandığı durumda kullanılan algoritma ile aynı değildir. Bu, ncp'nin çok yakın sıfır değerlerinde aşırı durumlarda tutarlı bir davranış sağlamak içindir.\n            <br/>\n            Sıfır olmayan ncp için kod esasen orta değerler için kullanılmak üzere tasarlanmıştır: büyük değerler için özellikle kuyruklarda çok doğru olmayacaktır."
+  }
+}

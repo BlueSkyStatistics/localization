@@ -1,0 +1,23 @@
+{
+  "title": "Tolerans Aralıkları",
+  "navigation": "Tolerans Aralıkları",
+  "label1": "Verilere en uygun dağılım fonksiyonunu seçin",
+  "variableSelcted": "Analiz etmek için bir değişken (gözlemlenen veri) seçin",
+  "x": "Örnek içindeki hatalı (veya kabul edilebilir) birim sayısı",
+  "m": "Gelecek gruplarda üretilecek miktar",
+  "alpha": "Güven aralığı (örneğin 0.95)",
+  "P": "Aralıkta bulunan nüfusun minimum (0 ile 1 arasında bir değer belirtin) yüzdesi",
+  "side": "1 taraflı veya 2 taraflı tolerans aralığı gereklidir (tip 1 veya 2)",
+  "method": "k-faktörlerini hesaplamak için yöntem (sadece Normal, Log Normal, Gamma için geçerlidir)",
+  "selectDistFuncNormalRad": "Normal",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Üstel",
+  "selectDistFuncGammaRad": "Gamma",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncCauchyRad": "Cauchy",
+  "help": {
+    "title": "Tolerans Aralıkları",
+    "r_help": "help(normtol.int, package = tolerance)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tTolerans aralıklarını hesaplamak için fonksiyon \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R yardımını kullanın (package = 'tolerance'), help(normtol.int, package = tolerance), help(exttol.int, package = tolerance)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tk-faktörlerini hesaplamak için yöntem\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tk-faktörlerini hesaplamak için yöntem yalnızca Normal, Log Normal ve Gamma dağılımı için geçerlidir. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                1 taraflı tolerans aralıkları için k-faktörü tam olarak hesaplanır ve\n\t\t\t\tbu nedenle seçilen yöntemle aynıdır. \"HE\" Howe yöntemi olup genellikle son derece doğru olarak görülmektedir, \n\t\t\t\t<br/>\n\t\t\t\tküçük örneklem boyutları için bile. \"HE2\" Howe'a ait ikinci bir yöntemdir, Weissberg-Beatty\n\t\t\t\t<br/>\n\t\t\t\työntemiyle benzer şekilde çalışır, ancak hesaplama açısından daha basittir. \"WBE\" Weissberg-Beatty yöntemi (aynı zamanda Wald-Wolfowitz yöntemi olarak da adlandırılır),\n\t\t\t\t<br/>\n\t\t\t\tbu nedenle daha büyük örneklem boyutları için ilk Howe yöntemine benzer şekilde çalışır. \"ELL\" Ellison düzeltmesi\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\tWeissberg-Beatty yöntemine f'nin n^2'den önemli ölçüde daha büyük olduğu durumlarda uygulanır. Eğer f n^2'den büyük değilse bir uyarı mesajı görüntülenir.\n\t\t\t\t<br/>\n\t\t\t\t\"KM\" Krishnamoorthy-Mathew yaklaşımıdır, bu da büyük örneklem boyutları için iyi çalışır.\n\t\t\t\t<br/>\n\t\t\t\t\"EXACT\" k-faktörünü tam olarak hesaplar ve problemi integral çözümünü bulmak için integrate fonksiyonunu kullanır.\n\t\t\t\t<br/>\n\t\t\t\tBu yöntemin hesaplama süresi büyük ölçüde m ile belirlenir. \"OCT\" k-faktörü hesaplamak için Owen yaklaşımıdır\n\t\t\t\t<br/>\n\t\t\t\tverilerin dağılımın her iki ucunda (1-P)/2'den fazla olmaması için kontrol edilir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, tolerance.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın \n\t\t\t\t<br/>\n\t\t\t\tND'yi değişken (gözlemlenen..) olarak seçin, \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

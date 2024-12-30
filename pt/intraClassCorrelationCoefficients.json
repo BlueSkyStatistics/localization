@@ -1,0 +1,12 @@
+{
+  "title": "Coeficientes de Correlação Intraclasse",
+  "navigation": "Coeficientes de Correlação Intraclasse",
+  "ratervars": "Variáveis do Avaliador:",
+  "cilevel": "Nível de Confiança:",
+  "modeldetails": "Detalhes do Modelo",
+  "help": {
+    "title": "Coeficientes de Correlação Intraclasse",
+    "r_help": "help(ICC, package=psych)",
+    "body": "\n<b>Descrição</b></br>\nIsso calcula os 6 coeficientes de correlação intraclasse (ICC) de Shrout e Fleiss (1979, Psychological Bulletin). A estimativa é feita usando modelos de efeitos mistos lineares com máxima verossimilhança restrita, portanto, isso pode lidar com dados ausentes.</br>\nShrout e Fleiss consideram seis casos de confiabilidade das avaliações feitas por k avaliadores em n alvos.</br>\nICC1: Cada alvo é avaliado por um conjunto diferente de k juízes e os juízes são selecionados aleatoriamente. Esta é uma medida de concordância absoluta nas avaliações.</br>\nICC2: Uma amostra aleatória de k juízes avalia cada alvo.</br>\nICC3: Um conjunto fixo de k juízes avalia cada alvo. Não há generalização para uma população maior de juízes.</br>\nEntão, para cada um desses casos, a confiabilidade deve ser estimada para uma única avaliação ou para a média de k avaliações? ICC1 é sensível a diferenças nas médias entre avaliadores e é uma medida de concordância absoluta. ICC2 e ICC3 removem diferenças de média entre avaliadores, mas são sensíveis a interações de avaliadores por sujeitos. A diferença entre ICC2 e ICC3 é se os avaliadores são vistos como efeitos fixos ou aleatórios. ICC1k, ICC2k e ICC3K refletem as médias de k avaliadores.</br>\nVariáveis do Avaliador: Variáveis correspondentes a cada avaliador. Estas devem ser variáveis numéricas.</br>\nNível do Intervalo de Confiança: Nível desejado do intervalo de confiança para os ICC's</br>\nDetalhes do Modelo: Mostrar detalhes dos modelos lineares de efeitos mistos subjacentes</br>\n<b>Pacote</b></br>\npsych</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando help(ICC, package=psych) criando um bloco de código R clicando + na janela de saída\n\t\t\t"
+  }
+}

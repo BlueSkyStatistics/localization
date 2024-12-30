@@ -1,0 +1,26 @@
+{
+  "title": "Pareto Grafiği",
+  "navigation": "Pareto Grafiği",
+  "label1": "Üç seçenek - Uzun format (varsayılan) yani hatalar ve sayılar dikey sütunlarda, Geniş format yani hatalar sütun adları olarak ve sayılar satır olarak, ve Ham verilerden sayıları hesapla",
+  "selectLongRad": "Seçenek 1: Uzun format - hata kategorisini ve hata sayılarını seçin",
+  "selectWideRad": "Seçenek 2: Geniş format - Sütun adları hata kategorisi olarak kullanılacak ve 1. satır (varsayılan) sayılar olarak kullanılacaktır",
+  "selectRawRad": "Seçenek 3: Ham veri - pareto grafiği çizmek için sayıları hesapla",
+  "rownumForCounts": "Sayılara kullanılacak satır numarası (varsayılan 1. satır)",
+  "mainTitle": "Grafik Başlığı",
+  "defects": "Grafikte çizilecek değişken (örneğin kategoriler)",
+  "counts": "(Opsiyonel) Grafikte sayılar olarak kullanılacak değişken",
+  "grouping": "(Opsiyonel) Birden fazla Pareto grafiğini yan yana çizmek için gruplama değişkeni",
+  "uniformBarOrderChk": "Çubukları aynı alfabetik sırada çiz. Her grup içinde azalan sıklığa göre çubukları sıralamak için işareti kaldırın",
+  "grouping2": "(Opsiyonel) Birden fazla Pareto'yu yan yana çizmek için bir gruplama değişkeni",
+  "rawVariable": "Ham veriye sahip değişken (örneğin kategoriler)",
+  "xlab": "x-ekseni için etiket belirten bir dize",
+  "ylab": "y-ekseni için etiket belirten bir dize",
+  "ylab2": "Sağ taraftaki ikinci y-ekseni için etiket belirten bir dize",
+  "percentStep": "Sağ taraftaki ikinci y-ekseni için işaretler olarak kullanılacak yüzde adımı",
+  "digits": "İstatistik tablosu için ondalık basamak sayısı",
+  "help": {
+    "title": "Pareto Grafiği",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tpareto.chart fonksiyonu istatistikler tablosu oluşturmak ve Pareto grafiği çizmek için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(pareto.chart, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için defects_frequency_pareto_chart.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

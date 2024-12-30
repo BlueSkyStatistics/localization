@@ -1,0 +1,16 @@
+{
+  "title": "NA 제거",
+  "navigation": "NA 제거",
+  "label0": "하나 이상의 결측값이 있는 행을 제거하여 새 데이터 세트를 생성하거나 기존 데이터 세트를 덮어씁니다. 결측값을 분석할 변수를 선택하십시오. 선택한 변수에 결측값이 있는 모든 행이 제거됩니다. 전체 데이터 세트를 분석하려면 모든 변수를 선택하십시오.",
+  "label1": "옵션",
+  "New": "결과를 새 데이터 세트에 저장",
+  "newdatasetname": "데이터 세트 이름 입력",
+  "Existing": "기존 데이터 세트 덮어쓰기",
+  "subsetvars": "데이터 세트에 포함할 변수를 선택(하나 이상)",
+  "subsetexpression": "서브셋 기준을 입력하십시오. 서브셋 기준은 각 데이터 세트 행에 적용됩니다. 예 1: !is.na(var1) & is.na(var2). 예 2: var1>30 & var2=='남성'. 예 3: (var1 !=10 & var2>20) | var3==40. 예 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". 예 5: substr(var1,2,4) ==\"abc\"",
+  "help": {
+    "title": "NA 제거",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>설명</b></br>\n데이터 세트/데이터 프레임에서 결측값/NA를 제거합니다.\n선택한 열/변수 이름에 대해 하나 이상의 결측값이 있는 행을 제거하여 새 데이터 세트 또는 기존 데이터 세트를 생성합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\n​object: R 객체입니다.​\n</li>\n</ul>\n<b>패키지</b></br>\ndata.table</br>\n<b>도움말</b></br>\nhelp(na.omit)\n    "
+  }
+}

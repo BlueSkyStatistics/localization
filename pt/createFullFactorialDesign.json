@@ -1,0 +1,17 @@
+{
+  "title": "Criar Design Fatorial Completo",
+  "navigation": "Criar Design Fatorial Completo",
+  "datasetname": "Nome do design",
+  "selectedvars": "Selecionar variáveis",
+  "numOfBlocks": "Número de blocos",
+  "replications": "Repetições",
+  "repeatOnlyChk": "Repetir apenas",
+  "lbl1": "Você pode não precisar alterar as configurações de randomização",
+  "randomseeds": "Semente para randomização",
+  "randomizationChk": "Randomizar a geração do design",
+  "help": {
+    "title": "Criar Design Fatorial Completo",
+    "r_help": "help(fac.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tA função fac.design gera designs fatoriais completos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de exemplo chamado factor_grid_full_factorial_Design.xlsx. Abra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

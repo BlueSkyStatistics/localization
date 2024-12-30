@@ -1,0 +1,21 @@
+{
+  "title": "Pareto Grafiği, Temel",
+  "navigation": "Pareto Grafiği, Temel",
+  "label1": "İki seçenek - Uzun format (varsayılan) yani kategoriler ve sayılar dikey sütunlarda ve Geniş format yani kategoriler sütun adları olarak ve sayılar satır olarak",
+  "selectLongRad": "Seçenek 1: Uzun format - kategorileri ve sayıları seçin",
+  "selectWideRad": "Seçenek 2: Geniş format - Sütun adları kategoriler olarak kullanılacak ve 1. satır (varsayılan) sayılar olarak kullanılacak",
+  "rownumForCounts": "Sayılar için kullanılacak satır numarası (varsayılan 1. satır)",
+  "mainTitle": "Grafik Başlığı",
+  "category": "Grafikte gösterilecek değişken (örneğin kategoriler)",
+  "counts": "Grafikte kullanılacak sayılar için değişken",
+  "xlab": "x-ekseni için etiket belirten bir dize",
+  "ylab": "y-ekseni için etiket belirten bir dize",
+  "ylab2": "Sağ taraftaki ikinci y-ekseni için etiket belirten bir dize",
+  "percentStep": "Sağ taraftaki ikinci y-ekseni için işaretler olarak kullanılacak yüzde adımı",
+  "digits": "İstatistikler tablosu için ondalık basamak sayısı",
+  "help": {
+    "title": "Pareto Grafiği",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tpareto.chart fonksiyonu, istatistikler tablosu oluşturmak ve Pareto grafiği çizmek için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(pareto.chart, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için defects_frequency_pareto_chart.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "مخططات Q-Q",
+  "navigation": "Q-Q",
+  "x": "محور X، حدد متغيرًا رقميًا (أو أكثر)",
+  "alpha": "الشفافية (0-1)",
+  "y": "الشكل، حدد متغير عامل",
+  "color": "اللون، حدد متغير عامل",
+  "referenceline": "خط مرجعي",
+  "band": "عرض الأشرطة",
+  "detrend": "إزالة الاتجاه",
+  "flip": "عكس المحور",
+  "distribution": "اختر توزيعًا",
+  "x_title": "عنوان محور X",
+  "y_title": "عنوان محور Y",
+  "label1": "معلمات التوزيع، على سبيل المثال، بالنسبة لتوزيع طبيعي، يمكن أن تكون معلمات التوزيع هي المتوسط=2، الانحراف المعياري=2 لذا أدخل المتوسط=2، الانحراف المعياري=2. بالنسبة لتوزيع أسي، يمكن أن تكون المعلمات هي المعدل=2، لذا أدخل المعدل=2.",
+  "specify_a_title": "أدخل عنوانًا",
+  "dparams": "أدخل معلمات التوزيع اختيارياً",
+  "Facetrow": "صف الفاكت",
+  "Facetcolumn": "عمود الفاكت",
+  "Facetwrap": "لف الفاكت",
+  "Facetscale": "مقياس الفاكت",
+  "facets_lbl": "الفاكتات",
+  "help": {
+    "title": "مخططات Q-Q",
+    "r_help": "help(stat_qq_point,package='qqplotr')",
+    "body": "\n            <b>الوصف</b></br>\n            مخطط Q-Q (كوانتيل-كوانتيل) هو مخطط احتمالي، وهو طريقة رسومية لمقارنة توزيعين احتماليين عن طريق رسم كوانتيلاتهما ضد بعضها البعض. بشكل افتراضي نقارن توزيع الاحتمال للمتغير المحدد ضد التوزيع الطبيعي، ومع ذلك يمكنك المقارنة ضد عدة توزيعات أخرى بما في ذلك بيتا، كوشي، كاي تربيع، أسي، ف، غاما... يمكنك أيضًا تحديد معلمات التوزيع المرتبطة بالتوزيع الذي تتم مقارنته. انقر على زر الخيارات في الحوار الرئيسي لاختيار توزيع وتحديد معلمات التوزيع. يمكنك اختيار متغير عامل لتجميع المتغير المحدد. في هذه الحالة يتم رسم مخطط Q-Q منفصل لكل مجموعة.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_line(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_point(distribution=\"norm\",detrend = TRUE) +\n             coord_flip() +\n             labs(x = \"نقاط الاحتمال\",y =\"كوانتيلات العينة\",title = \"مخطط QQ للمتغير var1\")</br></br>\n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_line(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_point(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE)+\n             labs(x = \"نقاط الاحتمال\",y =\"كوانتيلات العينة\",title = \"مخطط QQ للمتغير var1\")\n            </code> <br/>\n            <b>المعلمات</b><br/>\n            <ul>\n            <li>\n            data: مجموعة البيانات الافتراضية​\n            </li>\n            <li>\n            aes(): توليد تخطيطات جمالية تصف كيفية ربط المتغيرات في البيانات بالخصائص المرئية (الجمالية) للرسوم.​\n            </li>\n            <li>\n            sample: المتغير الرقمي لرسم مخطط P-P\n            </li>\n            <li>\n            stat_qq_point: هذه نسخة معدلة من ggplot2::stat_qq مع بعض تعديلات المعلمات وخيار جديد لإزالة الاتجاه من النقاط.\n            </li>\n            <li>\n            stat_qq_line: يرسم خط مرجعي بناءً على كوانتيلات البيانات، كما في stats::qqline.\n            </li>\n            <li>\n            stat_qq_band: يرسم أشرطة الثقة بناءً على ثلاث طرق: \"عادي\"، \"بوت\" و\"تس\":\n            \"عادي\" ينشئ أشرطة ثقة متزامنة بناءً على فترات الثقة العادية;\n            \"بوت\" ينشئ أشرطة ثقة نقطية بناءً على تعزيز بارامتري;\n            \"تس\" ينشئ أشرطة ثقة حساسة للذيل، كما اقترح ألدو-نويمن وآخرون (2013).\n            </li>\n            <li>\n            shape: متغير عامل اختياري يجمع القيم المعينة للعينة. يتم إنشاء مخطط P-P منفصل لكل مجموعة كما تحددها مستويات المتغير العامل​. يتم الإشارة إلى كل مجموعة بشكل مختلف\n            </li>\n            <li>\n            Labs(): تغيير تسميات المحاور وعناوين الأسطورة (هذا اختياري)​\n            </li>\n            <li>\n            facet_grid(): ترتيب الألواح في شبكة (هذا اختياري)​. انظر help(facet_grid) لمزيد من التفاصيل.\n            </li>\n            <li>  ​\n            coord_flip(): عكس المحور (هذا اختياري)​\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>المساعدة</b></br>\n            help(stat_qq_point,package='qqplotr')</br>\n            أخرى: انقر على زر مساعدة R للحصول على مساعدة مفصلة في R. يمكنك أيضًا إدخال help(labs)، help(stat_qq_point)، help(aes)، help(facet_grid)، help(coord_flip)​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n"
+  }
+}

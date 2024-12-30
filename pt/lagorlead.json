@@ -1,0 +1,16 @@
+{
+  "title": "Variável de Atraso ou Liderança",
+  "navigation": "Variável de Atraso ou Liderança",
+  "varnamelabel": "Novo Nome da Variável (sem espaços)",
+  "lagleadvarlabel": "Variável para Atrasar / Liderar",
+  "groupbyvarslabel": "Variáveis para Agrupar Por",
+  "typelabel": "Atraso ou Liderança",
+  "laglabel": "Atraso",
+  "leadlabel": "Liderança",
+  "positionlabel": "Número de Posições",
+  "help": {
+    "title": "Variável de Atraso ou Liderança",
+    "r_help": "help(lag, package ='dplyr')",
+    "body": "\nIsso cria uma nova variável que encontra o valor anterior (atraso) ou o próximo (liderança) em uma variável existente com base na posição da linha.\n<br/><br/>\n<b>Novo Nome da Variável:</b> Nome da variável para armazenar os valores atrasados ou de liderança\n<br/><br/>\n<b>Variável para Atrasar / Liderar:</b> Especifique a variável existente para extrair os valores atrasados ou de liderança\n<br/><br/>\n<b>Variáveis para Agrupar Por (opcional):</b> Especifique as variáveis para agrupar. Se as variáveis forem especificadas aqui, os valores atrasados e de liderança \nserão obtidos apenas dentro dos grupos definidos por essas variáveis. Se nenhuma variável for especificada aqui, os valores atrasados e de liderança \nserão obtidos com base em toda a coluna especificada na Variável para Atrasar / Liderar. Normalmente, os valores devem ser ordenados pelas variáveis de agrupamento \nantes de fazer um atraso ou liderança.\n<br/><br/>\n<b>Atraso ou Liderança:</b> Escolha se deseja encontrar o valor anterior (atraso) ou o próximo valor (liderança)\n<br/><br/>\n<b>Número de Posições:</b> Especifique o número de posições para atrasar ou liderar. Por exemplo, um valor atrasado de 1 extrairia o valor anterior e um valor atrasado de 2 extrairia o valor 2 posições anteriores.\n<br/><br/>\n<b>Pacotes R Necessários:</b> dplyr\n\t\t\t"
+  }
+}

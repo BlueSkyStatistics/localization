@@ -1,24 +1,24 @@
 {
-  "title": "Împărțirea/Reducerea unui set de date cu un grup repetat de variabile",
+  "title": "Împărțiți/Colapsați un set de date cu grupuri repetate de variabile",
   "navigation": "Seturi de variabile repetate",
-  "removeColsWithConstantChk": "Eliminați toate coloanele cu valori constante (insensibile la majuscule) înainte de a împărți sau reduce",
+  "removeColsWithConstantChk": "Eliminați toate coloanele cu valori constante (insensibile la majuscule) înainte de a împărți sau colapsa",
   "removeRowsWithNAsChk": "Păstrați doar cazurile complete, adică eliminați întreaga linie cu orice valori goale sau NA în setul de date de ieșire",
-  "resultDatasetNameSuffix": "(Opțional) una sau mai multe șiruri (separate prin virgulă) care vor fi utilizate ca sufix pentru numele setului de date de ieșire",
+  "resultDatasetNameSuffix": "(Opțional) unul sau mai multe șiruri (separate prin virgulă) care vor fi folosite ca sufix pentru numele setului de date de ieșire",
   "splitDatasetRad": "Împărțiți setul de date în mai multe seturi de date pe baza setului de variabile repetate",
-  "autoDetectColGroupLengthRad": "Detectați automat setul de variabile repetate pentru a împărți sau reduce",
-  "manualColGroupLengthRad": "Specificați lungimea setului de variabile repetate care va fi utilizată pentru a împărți sau reduce",
+  "autoDetectColGroupLengthRad": "Detectați automat setul de variabile repetate pentru a împărți sau colapsa",
+  "manualColGroupLengthRad": "Specificați lungimea setului de variabile repetate care va fi folosit pentru a împărți sau colapsa",
   "manualRepeatingColumnGroupLength": "Lungimea setului de variabile repetate",
-  "outputColumnNames": "(Opțional) Lista numelui variabilelor (separate prin virgulă) care vor fi utilizate pentru setul de date de ieșire",
-  "collapseDatasetRad": "Reduceți pentru a crea un singur set de date lung în loc să împărțiți în mai multe seturi de date",
+  "outputColumnNames": "(Opțional) Lista numelui variabilelor (separate prin virgulă) care vor fi folosite pentru seturile de date de ieșire",
+  "collapseDatasetRad": "Colapsați pentru a crea un singur set de date lung în loc de a împărți în mai multe seturi de date",
   "collapseGpIDPrefix": "Prefix pentru valorile ID-ului setului",
-  "collapseGpIDColName": "Numele variabilei ID a setului (se va crea o nouă variabilă în setul de date de ieșire)",
-  "collapseGpIDColFirstChk": "Faceți variabila ID a setului prima coloană (debifați pentru ultima coloană)",
-  "makeCollapseGpIDColFactorChk": "Faceți variabila ID a setului un factor",
+  "collapseGpIDColName": "Numele variabilei ID-ului setului (o nouă variabilă va fi creată în setul de date de ieșire)",
+  "collapseGpIDColFirstChk": "Faceți variabila ID-ului setului prima coloană (debifați pentru ultima coloană)",
+  "makeCollapseGpIDColFactorChk": "Faceți variabila ID-ului setului un factor",
   "label1": "Detectarea setului de variabile repetate",
-  "label2": "Împărțiți sau reduceți setul de date?",
+  "label2": "Împărțiți sau colapsați setul de date?",
   "help": {
-    "title": "Împărțirea/Reducerea unui set de date cu un grup repetat de variabile",
+    "title": "Împărțiți/Colapsați un set de date cu grupuri repetate de variabile",
     "r_help": "",
-    "body": "\n            <b>Descriere</b></br>\n            Aceast dialog este utilizat pentru a împărți (în mai multe seturi de date) sau a reduce (într-un singur set de date lung) un set de date cu un set repetat de variabile\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemplu 1: Pentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit Repeating Variable Sets.xlsx\n\t\t\t<br/>\n\t\t\tDeschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t<br/>\n\t\t\tÎn dialog - tastați\n\t\t\t<br/>\n\t\t\tVor fi create trei seturi de date deoarece există trei seturi de variabile repetate. Puteți tasta niciunul, unul sau mai multe\n\t\t\tșiruri pentru sufixele numelui setului de date de ieșire, cum ar fi abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tPăstrați fiecare alt element din dialog ca implicit  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemplu 2: Pentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit Repeating Variable Sets2.xlsx\n\t\t\t<br/>\n\t\t\tDeschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t<br/>\n\t\t\tÎn dialog - tastați\n\t\t\t<br/>\n\t\t\tVor fi create patru seturi de date deoarece există patru seturi de variabile repetate\n\t\t\t<br/>\n\t\t\tPăstrați fiecare element din dialog ca implicit \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPuteți folosi aceleași două fișiere de set de date de exemplu pentru a încerca opțiunea de Reducere în secțiunea \"Împărțiți sau reduceți setul de date?\" a dialogului pentru a crea un singur set de date de ieșire\n\t\t\t<br/>\n\t\t\t<br/>\n"
+    "body": "\n            <b>Descriere</b></br>\n            Acest dialog este folosit pentru a împărți (în mai multe seturi de date) sau a colapsa (într-un singur set de date lung) un set de date cu un set repetat de variabile\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemplu 1: Pentru a încerca acest lucru, puteți folosi fișierul de set de date de probă numit Repeating Variable Sets.xlsx\n\t\t\t<br/>\n\t\t\tDeschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t<br/>\n\t\t\tÎn dialog - tastați\n\t\t\t<br/>\n\t\t\tVor fi create trei seturi de date deoarece există trei seturi de variabile repetate. Puteți tasta niciunul, unul sau mai multe\n\t\t\tșiruri pentru sufixele numelui setului de date de ieșire ca abcX, abcY, abcZ\n\t\t\t<br/>\n\t\t\tPăstrați fiecare alt element din dialog ca implicit  \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tExemplu 2: Pentru a încerca acest lucru, puteți folosi fișierul de set de date de probă numit Repeating Variable Sets2.xlsx\n\t\t\t<br/>\n\t\t\tDeschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t<br/>\n\t\t\tÎn dialog - tastați\n\t\t\t<br/>\n\t\t\tVor fi create patru seturi de date deoarece există patru seturi de variabile repetate\n\t\t\t<br/>\n\t\t\tPăstrați fiecare element din dialog ca implicit \n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPuteți folosi aceleași două fișiere de set de date de probă pentru a încerca opțiunea de Colaps în secțiunea \"Împărțiți sau colapsați setul de date?\" a dialogului pentru a crea un singur set de date de ieșire\n\t\t\t<br/>\n\t\t\t<br/>\n"
   }
 }

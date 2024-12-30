@@ -1,10 +1,10 @@
 {
   "title": "方差膨胀因子",
   "navigation": "VIF",
-  "modelselector1": "选择以下类别之一的模型（括号中的类别）线性模型（lm），广义线性模型（glm），有序逻辑或Probit回归（polr），多项式对数线性模型（multinom），生存（coxph）",
+  "modelselector1": "选择以下类别之一的模型（括号中的类别）线性模型（lm），广义线性模型（glm），有序逻辑或概率回归（polr），多项式对数线性模型（multinom），生存分析（coxph）",
   "help": {
     "title": "方差膨胀因子",
     "r_help": "help(vif, package='car')",
-    "body": "\n                <b>描述</b></br>\n计算线性、广义线性和其他模型的方差膨胀和广义方差膨胀因子。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nvif(mod, ...)\n## 默认S3方法:\nvif(mod, ...)\n## 'merMod'类的S3方法\nvif(mod, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nmod: 对于默认方法，一个响应coef、vcov和model.matrix的对象，例如lm或glm对象。\n</li>\n<li>\n... 不使用。\n</li>\n</ul>\n<b>详细信息</b></br>\n如果未加权线性模型中的所有项都有1个自由度，则计算通常的方差膨胀因子。</br>\n如果未加权线性模型中的任何项有超过1个自由度，则计算广义方差膨胀因子（Fox和Monette，1992）。这些可以解释为与正交数据相比，项的系数的置信椭圆或椭球的大小膨胀。</br>\n广义VIF在模型中项的编码方面是不变的（只要与每个项相关的模型矩阵的列的子空间是不变的）。为了调整置信椭球的维度，该函数还打印GVIF^[1/(2*df)]，其中df是与该项相关的自由度。</br>\n通过进一步的推广，这里的实现也适用于其他类型的模型，特别是加权线性模型、广义线性模型和混合效应模型。</br>\n<b>值</b><br/>\n一个VIF向量，或一个矩阵，包含模型中每个项的一行，以及GVIF、df和GVIF^[1/(2*df)]的列。<br/>\n<b>示例</b><br/>\n<code> \n## 一个荒谬的例子...\nvif(lm(prestige ~ income + education, data=Duncan))\nvif(lm(prestige ~ income + education + type, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框右上角的R图标，或在R语法编辑器中运行以下命令：help(vif, package=\"car\")\n                "
+    "body": "\n                <b>描述</b></br>\n计算线性、广义线性和其他模型的方差膨胀因子和广义方差膨胀因子。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nvif(mod, ...)\n## 默认 S3 方法:\nvif(mod, ...)\n## 'merMod' 类的 S3 方法\nvif(mod, ...)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nmod: 对于默认方法，响应 coef、vcov 和 model.matrix 的对象，例如 lm 或 glm 对象。\n</li>\n<li>\n... 不使用。\n</li>\n</ul>\n<b>详细信息</b></br>\n如果未加权线性模型中的所有项都有 1 个自由度，则计算通常的方差膨胀因子。</br>\n如果未加权线性模型中的任何项有超过 1 个自由度，则计算广义方差膨胀因子（Fox 和 Monette，1992）。这些可以解释为与正交数据相比，系数的置信椭圆或椭球的大小膨胀。</br>\n广义 VIF 对模型中项的编码是不变的（只要模型矩阵中与每个项相关的列的子空间是不变的）。为了调整置信椭球的维度，该函数还打印 GVIF^[1/(2*df)]，其中 df 是与该项相关的自由度。</br>\n通过进一步的推广，这里的实现也适用于其他类型的模型，特别是加权线性模型、广义线性模型和混合效应模型。</br>\n<b>值</b><br/>\n一个 VIF 向量，或一个矩阵，包含模型中每个项的一行，以及 GVIF、df 和 GVIF^[1/(2*df)] 的列。<br/>\n<b>示例</b><br/>\n<code> \n## 一个荒谬的例子...\nvif(lm(prestige ~ income + education, data=Duncan))\nvif(lm(prestige ~ income + education + type, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或在 R 语法编辑器中运行以下命令 help(vif, package=\"car\")\n                "
   }
 }

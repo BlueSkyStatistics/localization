@@ -1,0 +1,17 @@
+{
+  "navigation": "D'Agostino 왜도 검정",
+  "title": "D'Agostino 왜도 검정",
+  "hypothesisType": "가설 검정 (H1)",
+  "twosided": "양측",
+  "greater": "더 큼",
+  "less": "더 작음",
+  "label2": "기타 옵션",
+  "showLengthNAs": "길이 및 NAs 표시",
+  "verbose": "상세 대안 가설",
+  "Target": "하나 이상의 변수를 선택하세요",
+  "help": {
+    "title": "D'Agostino 왜도 검정",
+    "r_help": "help(agostino.test, package ='moments')",
+    "body": "\n<b>설명</b></br>\n정규 분포 데이터에서 D'Agostino 왜도 검정을 수행합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nagostino.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 데이터 값의 숫자 벡터입니다.\n</li>\n<li>\ny: 대안 가설을 지정하는 문자열로, '\"two.sided\"' (기본값), '\"greater\"' 또는 '\"less\"' 중 하나여야 합니다. 첫 글자만 지정할 수 있습니다.\n</li>\n</ul>\n<b>세부사항</b></br>\n정규성 가설 하에 데이터는 대칭적이어야 합니다 (즉, 왜도가 0이어야 함). 이 검정은 그러한 귀무 가설을 가지고 있으며, 정규 분포 데이터에서 유의미한 왜도를 감지하는 데 유용합니다.\n<br/>\n<b>값</b></br>\n다음 구성 요소를 포함하는 htest 클래스의 목록:\n<ul>\n<li>\nstatistic: 왜도 추정기 및 그 변환을 포함하는 목록입니다.</br>\n</li>\n<li>\np.value: 검정의 p값입니다. </br>\n</li>\n<li>\nalternative: 대안 가설을 설명하는 문자열입니다.</br>\n</li>\n<li>\nmethod: 수행된 검정의 유형을 나타내는 문자열입니다.\n</li>\n<li>\ndata.name: 데이터 인수의 이름입니다.</br>\n</li>\n</ul>\n<b>예제</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nskewness(x)</br>\nagostino.test(x)</br>\n</code> <br/>\n<b>패키지</b></br>\nmoments</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 BlueSky Statistics R 편집기에서 help(agostino.test, package ='moments') 명령을 실행하세요.           \n<br/>\n<br/>\t\n"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "변수 이동",
+  "navigation": "변수 이동",
+  "varstomovelabel": "이동할 변수",
+  "locationlabel": "위치",
+  "firstlabel": "첫 번째",
+  "lastlabel": "마지막",
+  "afterselectedlabel": "선택한 변수 뒤에",
+  "aftervarlabel": "",
+  "help": {
+    "title": "변수 이동",
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\n이것은 데이터 세트에서 지정된 위치로 변수를 이동합니다.\n<br/><br/>\n<b>이동할 변수:</b> 다른 위치로 이동할 변수입니다. 이 상자에 지정된 순서대로 배치됩니다.\n<br/><br/>\n<b>위치:</b> 변수를 이동할 데이터 세트의 위치입니다. <b>첫 번째</b>는 변수를 데이터 세트의 시작 부분에 배치합니다.  \n<b>마지막</b>은 변수를 데이터 세트의 끝에 배치합니다.  <b>선택한 변수 뒤에</b>는 데이터 세트에서 이 변수 뒤에 변수를 배치합니다.\n<br/><br/>\n<b>필수 R 패키지:</b> dplyr\n\t\t\t"
+  }
+}

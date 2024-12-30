@@ -1,0 +1,18 @@
+{
+  "title": "Riordina i livelli dei fattori manualmente",
+  "navigation": "Riordina manualmente",
+  "reordervarlabel": "Fattore da riordinare",
+  "levelslabel": "Specifica i livelli del fattore da spostare (con virgolette): es. 'livello 1', 'livello 2', ecc.",
+  "placelabel": "Dove posizionare i livelli",
+  "firstlabel": "Primo",
+  "lastlabel": "Ultimo",
+  "newoverwritelabel": "Crea nuovo o sovrascrivi variabile esistente",
+  "newvarlabel": "Nuova variabile",
+  "overwritevarlabel": "Sovrascrivi variabile",
+  "newvarnamelabel": "Nome della nuova variabile (senza spazi / caratteri speciali)",
+  "help": {
+    "title": "Riordina i livelli dei fattori manualmente",
+    "r_help": "help(fct_relevel, package ='forcats')",
+    "body": "\nQuesto è usato per specificare uno o più livelli di fattore che si desidera posizionare per primi o ultimi nell'ordine di ordinamento. Questo può essere utile per i modelli, \npoiché il primo livello di fattore diventa il gruppo di riferimento per le stime dei parametri quando si utilizza la codifica della cella di riferimento. Possono anche essere utili in \nplottaggio poiché l'ordine di ordinamento viene utilizzato per visualizzare le categorie.\n<br/><br/>\n<b>Fattore da riordinare:</b> fattore che si desidera riordinare\n<br/><br/>\n<b>Specifica i livelli del fattore da spostare (con virgolette): </b> Questi sono i livelli di fattore che si desidera riordinare. \nSolo i livelli esistenti verranno riordinati. Se si specifica un livello non esistente, verrà emesso un avviso, ma eventuali livelli esistenti verranno ordinati nel \nmodo specificato. Visualizza i livelli nella scheda Variabili della griglia dati per vedere i livelli attuali e l'ordine di ordinamento o vai su Variabili > Livelli di fattore > Visualizza. \nNota che specificare tutti i livelli di fattore esistenti riordinerà tutti i livelli, indipendentemente dal fatto che si selezioni \"Primo\" o \"Ultimo\" per il posizionamento del livello.\n<br/><br/>\n<b>Dove posizionare i livelli:</b> Selezionare \"Primo\" posizionerà i livelli specificati per primi nell'ordine di ordinamento. Selezionare \"Ultimo\" posizionerà i livelli specificati \nultimi nell'ordine di ordinamento.\n<br/><br/>\n<b>Crea nuovo o sovrascrivi variabile esistente:</b> Controlla se si desidera creare una nuova variabile con un nuovo nome o sovrascrivere la variabile esistente. Il \nnome della nuova variabile non può contenere caratteri speciali come #, $, %, &, (, ), =, ecc. Gli underscore, \"_\", sono consentiti.\n<br/><br/>\n<b>Esempi:</b>  Supponiamo di avere un fattore a quattro livelli con etichette \"a\", \"b\", \"c\", \"d\" con un ordine di ordinamento di \"a\",\"b\",\"c\",\"d\" (dal primo all'ultimo). Specificare \"d\" come \nprimo nell'ordine di ordinamento creerebbe un fattore con un ordine di ordinamento di \"d\", \"a\", \"b\", \"c\". Specificare \"b\", \"a\" come ultimi nell'ordine di ordinamento creerebbe un fattore \ncon un ordine di ordinamento di \"c\",\"d\",\"b\",\"a\". Specificare \"b\",\"c\",\"d\",\"a\" (cioè tutti i livelli) creerebbe un fattore con un ordine di ordinamento di \"b\",\"c\",\"d\",\"a\".\n<br/><br/>  \n<b>Pacchetti R richiesti:</b> dplyr, forcats\n\t\t\t"
+  }
+}

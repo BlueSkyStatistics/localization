@@ -1,0 +1,17 @@
+{
+  "title": "Cox, Stratifike",
+  "navigation": "Cox, Stratifike",
+  "modelname": "Model adını girin",
+  "timevar": "Olay için süre veya sansür",
+  "eventvar": "Olaylar (1 = olay 1, 0 = sansür)",
+  "modelterms": "Bağımsız değişkenler için model ifadesi oluşturucu",
+  "stratavarslabel": "Stratifikasyon Değişkenleri",
+  "weightvar": "Ağırlıklar (isteğe bağlı)",
+  "tiemethod": "Bağlı Zaman Yöntemi",
+  "diagnosticsbox": "Model Tanılama",
+  "help": {
+    "title": "Cox, Stratifike",
+    "r_help": "help(coxph, package = 'survival')",
+    "body": "\n            Sansürlü gözlemlerle zaman-açısından olay verileri için stratifike Cox orantılı tehlike modelini uydurur. Bu, her stratum seviyesi için ayrı bir temel tehlike fonksiyonu sağlayan bir Cox modelidir. Model uyum istatistikleri, parametre tahminleri ve tehlike oranları sağlanır. Mevcut seçenekler arasında bağlı zaman yöntemi ve model tanılama bulunmaktadır. Model, survival paketindeki coxph fonksiyonu kullanılarak uyum sağlanır. \n            <br/>\n            <br/>\n            <b>Olay için süre veya sansür:</b> Olayı yaşayanlar için olay süresi veya olayı yaşamayanlar için son takip süresi\n            <br/><br/>\n            <b>Olaylar (1=olay, 0=sansür):</b> Sayısal olay göstergesi; 1=olay, 0=sansür\n            <br/><br/>\n            <b>Formül Oluşturucu:</b> Modelde yer alacak terimleri oluşturun. Faktörler, dizgiler ve mantıksal değişkenler dummy kodlanacaktır. Sağlanan butonlar, ana etkileri, tam faktöryel etkileri (ana etkiler ve ilgili değişkenlerle tüm etkileşimler), polinomları, belirli etkileşimleri belirtmenize ve listedeki terimleri silmenize olanak tanır. Stratifikasyon değişkenleri ile etkileşimlere izin verilir.\n            <br/><br/>\n\t\t\t<b>Stratifikasyon Değişkenleri:</b> Bir veya daha fazla stratifikasyon değişkeni belirtin. Bunlar sayısal, faktör, sıralı faktör veya karakter değişkenleri olabilir. Strata, denekleri ayrı gruplara ayırır; her grup, belirgin bir temel tehlike fonksiyonuna sahiptir. Birden fazla stratifikasyon değişkeni verildiğinde, her stratifikasyon değişkeni seviyelerinin kombinasyonu için ayrı bir temel tehlike fonksiyonu kullanılır.\n\t\t\t<br/><br/>\n            <b>Ağırlıklar:</b> Gözlem ağırlıkları için sayısal değişken. Her kaydın bir gözlem olarak sayılmaması gereken durumlarda faydalıdır. \n            <br/>\n            <br/>\n            <b>Gerekli paketler:</b> survival, broom, survminer\n            <br/>\n            <br/>\n            coxph fonksiyonu hakkında ayrıntılı R yardımı almak için R Yardım butonuna tıklayın.\n            <br/>\n            <br/>\n            <br/>\n            <br/>\n            <b>Seçenekler</b>\n            <br/>\n            <br/>\n            <b>Bağlı Zaman Yöntemi:</b>\n            <br/>\n            Bağlı gözlemlenen zamanları kırma yöntemi. Efron, çok fazla bağlı zaman yoksa genellikle daha iyi bir seçimdir. Kesin yöntem, çok sayıda bağlı zaman varsa, ayrık zaman durumlarında faydalı olabilir, ancak modelin uyum sağlaması biraz daha uzun sürebilir. \n            <br/>\n            <br/>\n            <b>Model Tanılama:</b>\n            <br/>\n            Seçildiğinde, orantılı tehlike testleri ve grafikler sağlanacak, ayrıca bir Martingale kalıntı grafiği sunulacaktır.\n      "
+  }
+}

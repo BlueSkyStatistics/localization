@@ -1,0 +1,11 @@
+{
+  "title": "الإحصائيات العددية، باستخدام الوصف",
+  "navigation": "الملخصات العددية، باستخدام الوصف (الإصدار القديم)",
+  "tvarbox1": "اختر المتغيرات",
+  "tvarbox2": "اختر متغيرات التجميع",
+  "help": {
+    "title": "الإحصائيات العددية، باستخدام الوصف",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>الوصف</b></br>\nيعرض الإحصائيات العددية التالية:</br>\nعدد، متوسط، انحراف معياري، وسطي، مقصوص، mad، الحد الأدنى، الحد الأقصى، النطاق، الانحراف، kurtosis، خطأ معياري\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \n#BSkyFormat يعرض المخرجات بشكل منسق بشكل جيد<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nx: إطار بيانات أو مصفوفة\n</li>\n</ul>\n<b>الحزمة</b></br>\npsych</br>\n<b>المساعدة</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

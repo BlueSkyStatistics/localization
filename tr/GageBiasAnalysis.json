@@ -1,0 +1,13 @@
+{
+  "title": "Gage Bias Analizi, Temel",
+  "navigation": "Gage Bias Analizi, Temel",
+  "variableRespSelcted": "(Bias değişkeni seçilmişse isteğe bağlı) Ölçüm/yanıt için değişkeni seçin",
+  "variableRefSelcted": "Referans/standart değeri için değişkeni seçin",
+  "variableBiasSelcted": "(İsteğe bağlı) Mevcutsa bias için değişkeni seçin; Aksi takdirde otomatik olarak hesaplanacaktır",
+  "alpha": "Doğrusalık için güven aralığı (0 ile 1 arasında)",
+  "help": {
+    "title": "Gage bias analizi",
+    "r_help": "help(lm, package = stats)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDoğrusalık bias analizi yapmak için fonksiyon\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(lm, package = stats) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, linearityBias.xlsx örnek veri seti dosyalarını kullanabilirsiniz. Dosyaları dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\tSeçim kutusundan Referans ve Ölçüm değişkenlerini seçin\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

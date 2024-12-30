@@ -1,0 +1,17 @@
+{
+  "title": "Uyum Korelasyon Katsayısı, birden fazla değerlendirici",
+  "navigation": "Uyum Korelasyon Katsayısı, birden fazla değerlendirici",
+  "ratervars": "Değerlendirici Değişkenleri, en az 2",
+  "cilevel": "Güven Düzeyi:",
+  "bootsamp": "Bootstrap örnek sayısı",
+  "plotoptionslabel": "Grafik Seçenekleri",
+  "plotchkbox": "Tüm değerlendirici çiftleri için dağılma grafikleri",
+  "plottitle": "Başlık",
+  "varlabels": "Değişken Etiketleri (kullanılıyorsa, tüm değişkenler için etiketleri belirtmelisiniz, sırayla, 'etiket 1', 'etiket 2', vb.)",
+  "plottheme": "Grafik Teması",
+  "help": {
+    "title": "Uyum Korelasyon Katsayısı, birden fazla değerlendirici",
+    "r_help": "help(epi.occc,package=epiR)",
+    "body": "\nUyum korelasyon katsayısı (CCC), aynı ölçek üzerinde aynı konuları ölçen gözlemciler arasındaki anlaşmayı ölçer. CCC, \n-1 ile 1 arasında değişebilir; 1 mükemmel anlaşmayı, 0 ise hiç anlaşmayı ifade eder. Negatif değerler negatif anlaşmayı gösterir, ancak pratikte nadirdir. Genel CCC ve çiftler arası CCC'ler \n(tüm değerlendirici çiftleri) bootstrap yüzdelik ve ayarlanmış bootstrap yüzdelik güven aralıkları ile hesaplanır. Belirtilen değerlendirici \ndeğişkenleri için eksik değere sahip herhangi bir gözlem analizden çıkarılır.\n<br/><br/>\n<b>Değerlendirici Değişkenleri:</b> Gözlemciler tarafından sağlanan değerleri içeren değişkenler; sayısal olmalıdır\n<br/>\n<b>Güven Aralığı Düzeyi:</b> CCC için istenen güven aralığı düzeyi\n<br/>\n<b>Bootstrap örnek sayısı:</b> Güven aralıklarını hesaplamak için orijinal verilerden çekilecek istenen bootstrap örnek sayısı. Pratik olarak mümkünse, en az 1000 önerilir.\n<br/>\n<b>Tüm değerlendirici çiftleri için dağılma grafikleri:</b> Matris formatında tüm değerlendirici çiftleri için dağılma grafikleri oluşturma seçeneği.   \n<br/><br/>\n<b>Gerekli R paketleri:</b> epiR, boot, GGally, ggthemes\n                "
+  }
+}

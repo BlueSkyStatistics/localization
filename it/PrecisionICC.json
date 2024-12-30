@@ -1,0 +1,15 @@
+{
+  "title": "Dimensione del campione, precisione dell'ICC",
+  "navigation": "ICC",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n": "Dimensione del campione",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "icc": "ICC (coefficiente di correlazione intraclasse, 0-1)",
+  "conflevel": "Livello di confidenza (0-1)",
+  "raters": "Numero di valutatori",
+  "help": {
+    "title": "Dimensione del campione, precisione dell'AUC",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un coefficiente di correlazione intraclasse (ICC) basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro. Se l'ICC è calcolato per un'ANOVA a una via o a due vie non importa nell'approssimazione utilizzata. Vedi Bonett DG (2002), Requisiti di dimensione del campione per stimare le correlazioni intraclasse con la precisione desiderata, Statistics in Medicine, 21:1331-1335.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>ICC:</b> Specifica il valore ICC atteso\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Numero di valutatori:</b> Specifica il numero di valutatori che forniranno valori per ciascun soggetto.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

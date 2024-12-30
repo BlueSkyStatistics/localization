@@ -1,0 +1,20 @@
+{
+  "title": "Dimensione del Campione, Modello di Cox",
+  "navigation": "Modello di Cox",
+  "howtouse": "Per calcolare la dimensione del campione: specificare la potenza\nPer calcolare la potenza: specificare la dimensione del campione",
+  "n": "Dimensione del Campione",
+  "power": "Potenza (0-1)",
+  "sd": "Deviazione Standard della Covariata",
+  "propevent": "Proporzione con l'Evento (0-1)",
+  "hr": "Rapporto di Rischio della Covariata",
+  "rsquared": "R-quadrato tra la covariata e altre covariate (0-1); inserire 0 per il test non aggiustato",
+  "siglevel": "Livello di Significatività (0-1)",
+  "alternativeopt": "Ipotesi Alternativa",
+  "twosided": "Due Lati",
+  "onesided": "Un Lato",
+  "help": {
+    "title": "Dimensione del Campione, Modello di Cox",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per una singola covariata in un modello di rischi proporzionali di Cox. Calcola la dimensione del campione o la potenza, quando l'utente specifica l'altra, dato un rapporto di rischio da rilevare.\n<br/><br/>\n<b>Dimensione del Campione:</b> Specificare il numero totale di soggetti\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera.\n<br/><br/>\n<b>Deviazione Standard della Covariata:</b> Specificare la deviazione standard della covariata relativa al rapporto di rischio\n<br/><br/>\n<b>Rapporto di Rischio, Gruppo 1 vs Gruppo 2:</b> Specificare il rapporto di rischio desiderato da rilevare per la covariata\n<br/><br/>\n<b>Proporzione con l'Evento:</b> Specificare la proporzione attesa del campione con l'evento (o uno meno la proporzione di censura). Se si specifica una probabilità di 1, si assume nessuna censura.\n<br/><br/>\n<b>R-quadrato tra la covariata e altre covariate; inserire 0 per il test non aggiustato:</b> Specificare il valore di r-quadrato (correlazione multipla al quadrato), tra la covariata e \ntutte le altre covariate nel modello di Cox. Un valore di 0 corrisponde a un test non aggiustato senza altre covariate.\n<br/><br/>\n<b>Livello di Significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\nQuesto utilizza le funzioni ssizeEpiCont.default e powerEpiCont.default nel pacchetto powerSurvEpi. Vedi menu a tre punti>Aiuto>Aiuto Funzione R per ulteriori informazioni.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> powerSurvEpi\n\t\t\t"
+  }
+}

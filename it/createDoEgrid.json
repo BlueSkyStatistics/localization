@@ -1,0 +1,15 @@
+{
+  "title": "Genera automaticamente i dettagli del fattore (dimensioni uguali) per uno studio DoE",
+  "navigation": "Dettagli del fattore (dimensioni uguali)",
+  "datasetname": "Nome della tabella dei dettagli del fattore",
+  "numOfVars": "Numero di fattori",
+  "numOfFactorLevels": "Numero massimo di livelli tra i fattori",
+  "factorLevels": "Valori dei livelli separati da una virgola - esempio: -1, 1, 'string1', 2, 0",
+  "autoFillChkbx": "Compila automaticamente i livelli",
+  "label1": "Ignora l'opzione seguente - opzione di pulizia del dataset per uso successivo",
+  "convertFactorToCharInt": "Per il dataset attivo selezionato - converti tutte le colonne di tipo fattore in carattere o intero (e quando questa opzione è selezionata, tutte le opzioni sopra su questa interfaccia utente verranno ignorate)",
+  "help": {
+    "title": "Genera automaticamente i dettagli del fattore",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tGenera automaticamente una tabella con i dettagli del fattore basata sui parametri specificati - numero di fattori e il numero massimo di livelli per i fattori insieme ai valori predefiniti per il fattore da utilizzare. Se vengono utilizzati valori non numerici per il fattore, specificare tra virgolette singole ad esempio 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna volta che i dettagli del fattore sono stati generati automaticamente e la tabella dei fattori appare nell'interfaccia utente della griglia dati, puoi modificare i valori e/o rimuovere alcuni valori dalla griglia per manipolare la tabella come desideri, inclusi fattori con un numero diverso di valori \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe il numero di fattori è <= 26, i fattori sono denominati con lettere maiuscole come A, B, C, .., altrimenti, denominati come F1, F2, ..., F27, F28, ..\n\t\t\t"
+  }
+}

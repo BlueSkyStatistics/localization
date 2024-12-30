@@ -1,0 +1,10 @@
+{
+  "title": "Eksik Değer Analizi, sütun düzeni",
+  "navigation": "Sütun Düzeni",
+  "label1": "Eksik değerlerin sütun formatında sonuçlarını gösterir",
+  "help": {
+    "title": "Eksik Değer Analizi",
+    "r_help": "help(sapply)",
+    "body": "\n            <b>Açıklama</b></br>\n            Eksik değerler hakkında aşağıdaki bilgileri gösterir<br/>\n            1. Veri setindeki değişken ve gözlem sayısı<br/>\n            2. Her bir değişken için eksik değer sayısı<br/>\n            3. Her bir değişken için eksik olmayan değer sayısı<br/>\n            4. Eksik değer içeren değişkenlerin satır numaraları<br/>\n            sapply, ifelse gibi temel paketlerde birkaç fonksiyon kullanıyoruz<br/>\n            <b>Paket</b></br>\n            base</br>\n            <b>Yardım</b></br>\n            Ayrıntılı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya aşağıdaki komutu çalıştırın help(sapply) bir R kodu bloğu oluşturarak çıktı penceresinde + tıklayarak\n"
+  }
+}

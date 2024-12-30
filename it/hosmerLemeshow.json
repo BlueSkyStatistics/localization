@@ -1,0 +1,13 @@
+{
+  "title": "Test di Hosmer-Lemeshow",
+  "navigation": "Test di Hosmer-Lemeshow",
+  "label1": "NOTA: IL DATASET ATTIVO DEVE ESSERE LO STESSO DATASET UTILIZZATO PER COSTRUIRE IL MODELLO",
+  "modelselector1": "Seleziona un modello lineare generalizzato (modello di classe glm):",
+  "destination": "Variabile target:",
+  "bins": "Numero di bin",
+  "help": {
+    "title": "Test di Hosmer-Lemeshow",
+    "r_help": "help(HLgof.test, package='MKmisc')",
+    "body": "\n                <b>Descrizione</b></br>\nLa funzione calcola i test di bontà di adattamento di Hosmer-Lemeshow per le statistiche C e H, così come il test della somma dei quadrati non pesati di Cessie-van Houwelingen-Copas-Hosmer per la bontà di adattamento globale.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nfit: vettore numerico con probabilità stimate.\n</li>\n<li>\nobs: vettore numerico con valori osservati.\n</li>\n<li>\nngr: numero di gruppi per le statistiche C e H.\n</li>\n<li>\nX: covariate(i) per il test di bontà di adattamento globale di Cessie-van Houwelingen-Copas-Hosmer.\n</li>\n<li>\nverbose: logico, stampa risultati intermedi.\n</li>\n</ul>\n<b>Dettagli</b></br>\nI test di bontà di adattamento di Hosmer-Lemeshow vengono calcolati; vedere Lemeshow e Hosmer (1982). Se X è specificato, viene inoltre determinato il test della somma dei quadrati non pesati di Cessie-van Houwelingen-Copas-Hosmer per la bontà di adattamento globale; vedere Hosmer et al. (1997). Una versione più generale di questo test è implementata nella funzione residuals.lrm nel pacchetto rms.</br>\n<b>Valore</b><br/>\nUn elenco dei risultati del test.\n<b>Esempi</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>Pacchetto</b></br>\nMKmisc</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(HLgof.test, package=\"MKmisc\")\n                "
+  }
+}

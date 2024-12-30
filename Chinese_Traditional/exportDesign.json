@@ -1,9 +1,0 @@
-{
-  "title": "匯出設計 - 將創建三個文件（csv、html、rda），名稱與設計相同",
-  "navigation": "匯出設計",
-  "exportPath": "匯出設計的文件路徑",
-  "help": {
-    "title": "匯出設計",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t匯出設計將在所選目錄路徑中創建三個文件（csv、html、rda），名稱與設計相同。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t匯出設計的目的是根據設計在現實世界中設置和進行實驗並收集結果。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t向csv文件添加符合R變量命名規範的列，以記錄結果。這些附加列在實驗設計的詞彙中被稱為響應。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t一旦將響應列添加到csv文件中，可以使用DOE -> 匯入設計菜單將csv文件加載到數據集UI網格中對應的設計（已打開）。\n\t\t\t\t<br/>\n\t\t\t\t"
-  }
-}

@@ -1,15 +1,15 @@
 {
-  "title": "Setați Contraste pentru Variabilele Factori",
-  "navigation": "Setați Contrastele",
+  "title": "Setați contraste pentru variabilele factor",
+  "navigation": "Setați contrastele",
   "target": "Destinație",
   "label1": "Contraste",
-  "Dummy": "Contraste de Tratament (dummy)",
-  "Deviation": "Contraste de Sumă (deviere)",
+  "Dummy": "Contraste de tratament (dummy)",
+  "Deviation": "Contraste de sumă (deviere)",
   "Helmert": "Contraste Helmert",
-  "Poly": "Contraste Polinomiale",
+  "Poly": "Contraste polinomiale",
   "help": {
-    "title": "Setați Contrastele",
+    "title": "Setați contrastele",
     "r_help": "help(contrasts, package ='stats')",
-    "body": "\n            <b>Descriere</b></br>\n            ​Setați și vizualizați contrastele asociate cu un factor.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: un obiect R.​\n            </li>\n            <li>\n            value: fie o matrice numerică (sau o matrice rară sau densă dintr-o clasă care extinde dMatrix din pachetul Matrix) ale cărei coloane oferă coeficienți pentru contraste în nivelurile lui x, fie numele (între ghilimele) al unei funcții care calculează astfel de matrice, de exemplu “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            stats</br>\n            <b>Ajutor</b></br>\n            help(contrasts, package ='stats')       \n            "
+    "body": "\n            <b>Descriere</b></br>\n            ​Setați și vizualizați contrastele asociate cu un factor.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: un obiect R.​\n            </li>\n            <li>\n            value: fie o matrice numerică (sau o matrice rară sau densă dintr-o clasă care extinde dMatrix din pachetul Matrix) ale cărei coloane oferă coeficienți pentru contraste în nivelurile lui x, fie numele (între ghilimele) al unei funcții care calculează astfel de matrice, de exemplu „contr.treatment”, „contr.sum”, „contr.helmert”, „contr.poly”\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            stats</br>\n            <b>Ajutor</b></br>\n            help(contrasts, package ='stats')       \n            "
   }
 }

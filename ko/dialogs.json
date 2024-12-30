@@ -1,0 +1,80 @@
+{
+  "banks": [],
+  "menu": [
+    {
+      "name": "파일",
+      "tab": "file",
+      "buttons": [
+        {
+          "name": "열기",
+          "icon": "fas fa-folder-open",
+          "onclick": "openFileDialog(undefined)",
+          "visible": true
+        },
+        {
+          "name": "샘플 데이터셋",
+          "icon": "fas fa-folder-open",
+          "onclick": "openSampleDataset()",
+          "visible": true
+        },
+        {
+          "name": "데이터셋 저장",
+          "icon": "fas fa-save",
+          "onclick": "saveDataset()",
+          "visible": true
+        },
+        {
+          "name": "다른 이름으로 저장",
+          "icon": "fas fa-file-export",
+          "onclick": "saveasDataset()",
+          "visible": true
+        },
+        {
+          "name": "데이터셋 닫기",
+          "icon": "fas fa-times",
+          "onclick": "closeDataset()",
+          "visible": true
+        },
+        {
+          "name": "출력 내보내기",
+          "icon": "fas fa-file-export",
+          "onclick": "exportOutput()",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "icon": "fas fa-ellipsis-v",
+      "tab": "tools",
+      "buttons": [
+        "./assets/js/modals/appSettings",
+        {
+          "name": "테마",
+          "icon": "icon-theme",
+          "onclick": "showhideThemeDialog()"
+        },
+        {
+          "name": "도움말",
+          "icon": "icon-help-circled",
+          "children": [
+            "./assets/js/modals/Help/helpAbout",
+            "./assets/js/modals/Help/Help",
+            "./assets/js/modals/Help/rFunctionHelp",
+            "./assets/js/modals/Help/rPackageHelp",
+            "./assets/js/modals/Help/rVersionDetails"
+          ]
+        },
+        {
+          "name": "진단",
+          "icon": "icon-magnifying_glass",
+          "children": [
+            "./assets/js/modals/Help/rPackageDetails",
+            "./assets/js/modals/Help/rInstalledPackages"
+          ]
+        },
+        "./assets/js/modals/Help/installRPackage",
+        "./assets/js/modals/Help/updateBlueSkyPackage"
+      ]
+    }
+  ]
+}

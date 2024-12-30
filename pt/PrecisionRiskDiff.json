@@ -1,0 +1,17 @@
+{
+  "title": "Tamanho da Amostra, Precisão de uma Diferença de Risco",
+  "navigation": "Diferença de Risco",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n1": "Tamanho da Amostra do Grupo 1",
+  "width": "Largura do Intervalo de Confiança",
+  "ratio": "Relação do Tamanho da Amostra do Grupo 1 para o Grupo 2",
+  "prop1": "Proporção de Resultado do Grupo 1",
+  "prop2": "Proporção de Resultado do Grupo 2",
+  "conflevel": "Nível de Confiança (0-1)",
+  "method": "Método do Intervalo de Confiança",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão de uma Diferença de Risco",
+    "r_help": "help(prec_riskdiff, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma diferença em proporções com base na largura do intervalo de confiança. Ele calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra do Grupo 1:</b> Especifique o número de sujeitos no grupo 1\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada. A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>Relação do Tamanho da Amostra do Grupo 1 para o Grupo 2:</b> Especifique a relação do tamanho da amostra do grupo 2 para o tamanho da amostra do grupo 1. Um valor de 1 significa tamanhos de amostra iguais.\n<br/><br/>\n<b>Proporção de Resultado do Grupo 1:</b> Especifique a proporção de sujeitos no grupo 1 com o resultado 'positivo'\n<br/><br/>\n<b>Proporção de Resultado do Grupo 2:</b> Especifique a proporção de sujeitos no grupo 2 com o resultado 'positivo'\n<br/><br/>\nObserve que a diferença de risco será calculada como a proporção no grupo 1 menos a proporção no grupo 2.\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Método do Intervalo de Confiança:</b> Especifique o tipo de intervalo de confiança a ser utilizado. Newcombe (newcombe) propôs um intervalo de confiança baseado no método de Wilson para a\nproporção única. O intervalo de confiança sem correção de continuidade é implementado a partir da equação 10 em Newcombe (1998). Miettinen-Nurminen (mn) fornece uma forma fechada \nequação para a estimativa de máxima verossimilhança restrita. A implementação é baseada no código fornecido por Yongyi Min em https://users.stat.ufl.edu/~aa/cda/R/two-sample/R2/index.html.\nO intervalo de confiança de Agresti-Caffo (ac) é baseado no intervalo de confiança de Wald, adicionando 1 sucesso a cada célula da tabela 2 x 2 (veja Agresti e Caffo 2000).\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

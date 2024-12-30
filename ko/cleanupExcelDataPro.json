@@ -1,0 +1,30 @@
+{
+  "title": "엑셀 또는 CSV 데이터 정리 - 행 및 열 조정, 삭제",
+  "navigation": "엑셀 정리",
+  "resultDatasetName": "생성할 새 데이터 세트의 이름",
+  "listofRowNumbersRemove": "(선택 사항) 삭제할 행 번호 목록(쉼표로 구분, 예: 1,4,5,20:30)",
+  "listofColumnNumbersRemove": "(선택 사항) 삭제할 열 번호 목록(쉼표로 구분, 예: 1,2,6:10)",
+  "chooseColumnNamesRad": "데이터 세트에서 열 이름 지정",
+  "rowNumbersContaingColNames": "출력 데이터 세트의 열 이름으로 사용할 행 번호 입력(쉼표로 구분, 예: 3,4)",
+  "deleteRowNumbersContaingColNamesChk": "출력 데이터 세트의 열 이름이 포함된 행 삭제",
+  "combineWithExsitingColNamesChk": "생성된 열 이름을 기존 열 헤더 이름과 결합",
+  "specifyColumnNamesRad": "출력 데이터 세트를 위한 열 이름 수동 지정",
+  "outputColumnNames": "출력 데이터 세트에 사용할 열 이름 입력(쉼표로 구분)",
+  "removeColsWithConstantChk": "상수 값이 있는 모든 열 제거(대소문자 구분 없음)",
+  "removeColsWithNoDataChk": "모든 빈 열 제거",
+  "removeRowsWithNoDataChk": "모든 빈 행 제거",
+  "removeRowsWithNAsChk": "완전한 경우만 유지, 즉 빈 값이나 NA 값이 있는 경우 전체 행 제거",
+  "label1": "출력 데이터 세트에서 열 유형 변환",
+  "convertColumnDataTypeAuto": "열 데이터 유형을 자동으로 결정하고 변환",
+  "convertColumnDataTypeNone": "아무것도 하지 않음",
+  "convertColumnDataTypeFactorToCharInt": "모든 팩터 열을 문자 및 정수 유형으로 변환",
+  "convertColumnDataTypeCharToFactor": "모든 문자 열을 팩터로 변환",
+  "convertColumnDataTypeAllToFactor": "모든 열을 팩터로 변환",
+  "convertColumnDataTypeManual": "변환할 각 열의 데이터 유형 입력",
+  "outputColumnTypes": "열 유형 목록(쉼표로 구분, 예: 숫자, 팩터, 문자, ..)",
+  "help": {
+    "title": "엑셀 또는 CSV 데이터 정리 - 행 및 열 조정, 삭제",
+    "r_help": "",
+    "body": "\n            <b>설명</b></br>\n            이 대화 상자는 복잡한 엑셀 시트를 정리하여 새 데이터 세트를 만들기 위해 행과 열을 추가 및 제거하는 데 사용됩니다.\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t이것을 시도하려면 Excel cleanup.xlsx라는 샘플 데이터 세트 파일을 사용할 수 있습니다.\n\t\t\t<br/>\n\t\t\t파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다.\n\t\t\t<br/>\n\t\t\t대화 상자에 -\n\t\t\t<br/>\n\t\t\t새 데이터 세트 이름으로 SampleGp 입력\n\t\t\t<br/>\n\t\t\t삭제할 행 번호 목록으로 1:3 입력\n\t\t\t<br/>\n\t\t\t삭제할 열 번호 목록으로 1,2,5:8 입력\n\t\t\t<br/>\n\t\t\t옵션 선택 - 데이터 세트에서 열 이름 지정\n\t\t\t<br/>\n\t\t\t행 번호 입력으로 2,3 입력\n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

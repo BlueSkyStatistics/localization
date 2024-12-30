@@ -1,0 +1,14 @@
+{
+  "title": "수치 통계, 요약 사용",
+  "navigation": "수치 요약, 요약 사용 (레거시)",
+  "tvarbox1": "선택된 변수",
+  "tvarbox2": "그룹화",
+  "label1": "디스플레이 옵션",
+  "horizontal": "수평 디스플레이",
+  "vertical": "수직 디스플레이",
+  "help": {
+    "title": "수치 통계, 요약 사용",
+    "r_help": "",
+    "body": "\n<b>설명</b></br>\n대상 변수의 각 그룹에 대해 다음 수치 통계를 출력합니다. 대상 변수는 하나 이상의 팩터 또는 숫자 변수로 선택적으로 그룹화할 수 있습니다. 대상 변수 또는 대상 변수가 그룹화된 각 그룹에 대해 다음 정보를 인쇄합니다: 최소값, 1사분위수(25%), 최대값, 평균, 중앙값, 3사분위수(75%), 합계, 분산, 표준 편차, 표준 오차, 왜도, 첨도\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n##아래 함수는 각 대상 변수에 대해 실행되며 결과 데이터프레임은 전치되고 결합됩니다.<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndataset1: 데이터셋입니다.\n</li>\n<li>\ngroup_by: 하나 이상의 팩터 또는 숫자 변수로 대상 변수를 선택적으로 그룹화합니다.\n</li>\n<li>\nsummarize: 요약 함수(즉, 평균, 중앙값, 최소값 등)를 사용하여 대상 변수 또는 대상 변수의 그룹(그룹화된 변수가 지정된 경우)을 요약합니다.\n</li>\n</ul>\n<b>값</b></br>\n각 변수에 대한 각 함수의 결과를 제공하는 \"data.frame\" 클래스의 객체입니다.</br>\n<b>패키지</b></br>\ncaret</br>\n<b>도움말</b></br>\nR 도움말은 여러 R 함수를 사용하여 사용자 정의 코드를 작성했기 때문에 사용할 수 없습니다. 코드를 검사해야 하는 경우 \"<>\" 버튼을 클릭하십시오.</br>\n    "
+  }
+}

@@ -1,10 +1,10 @@
 {
   "title": "Statistici Sumare, niveluri de control",
   "navigation": "Statistici Sumare, toate variabilele, niveluri de control (Legacy)",
-  "levels": "Specificați numărul de niveluri pentru care să afișați numărul de variabile de factor. NOTĂ: Nivelurile mai puțin frecvente ale variabilelor de factor sunt rezumate în categoria (Altele).",
+  "levels": "Specificați numărul de niveluri pentru care să afișați numărul de apariții pentru variabilele factor. NOTĂ: Nivelurile mai puțin frecvente ale variabilelor factor sunt rezumate în categoria (Altele).",
   "help": {
     "title": "Statistici Sumare, niveluri de control",
     "r_help": "",
-    "body": "\n    <b>Descriere</b></br>\n    Generează rezumate pentru toate variabilele din setul de date, permițându-vă să controlați numărul de niveluri pentru care sunt afișate numerele.</br>\n    NOTĂ: NUMERELE VARIABILELOR MAI PUȚIN FRECVENȚE SUNT REZUMATE ÎN CATEGORIA (ALTE)</br>\n    Afișează Minim, 1st Quartil, Mediană, Medie, 3rd Quartil, Maxim și numărul de NAs pentru variabile numerice și de dată.</br>\n    Pentru variabilele de factor, afișează numerele fiecărui nivel.</br>\n    Pentru variabilele logice, afișează numerele de ADEVĂ, FALS și NAs.</br>\n    Ajutorul R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă trebuie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
+    "body": "\n    <b>Descriere</b></br>\n    Generează rezumate pentru toate variabilele setului de date, permițându-vă să controlați numărul de niveluri pentru care sunt afișate numerele de apariții.</br>\n    NOTĂ: NUMERELE DE APARIȚII ALE VARIABILELOR MAI PUȚIN FRECVENTE SUNT REZUMATE ÎN CATEGORIA (ALTELE)</br>\n    Afișează Minim, 1st Quartile, Mediană, Medie, 3rd Quartile, Maxim și numărul de NAs pentru variabile numerice și de dată.</br>\n    Pentru variabilele factor, afișează numerele de apariții pentru fiecare nivel.</br>\n    Pentru variabilele logice, afișează numerele de apariții pentru ADEVĂRAT, FALS și NAs</br>\n    Ajutor R nu este disponibil deoarece am scris cod personalizat folosind mai multe funcții R. Dacă trebuie să inspectați codul, faceți clic pe butonul \"<>\".</br>\n    "
   }
 }

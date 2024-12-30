@@ -1,0 +1,16 @@
+{
+  "title": "Ortogonal Dizi (oacat) tasarım kataloğunu gözden geçirin",
+  "navigation": "Ortogonal Tasarım Kataloğunu Gözden Geçirin",
+  "designNamefromCatalog": "Katalogdaki Ortogonal Dizi tasarımının adı (örneğin L18.3.6.6.1)",
+  "numRuns": "Koşu sayısı veya 2 elemanlı bir vektör örneğin 4,16 ile koşu sayısı için minimum ve maksimum",
+  "numFactors": "Faktör sayısı (virgülle ayırın, örneğin 4,2,1)",
+  "numLevels": "Seviye sayısı (virgülle ayırın, örneğin 3,2,5)",
+  "showQualityMetricsChk": "Sonuç dizileri ile birlikte tüm dizi kalite metriklerini göster;",
+  "maxDigits": "GR ve A metrikleri için gösterilecek anlamlı rakamlar",
+  "maxNumberofDesignPrint": "Gösterilecek maksimum tasarım sayısı",
+  "help": {
+    "title": "Ortogonal Dizi (oacat) tasarım kataloğunu gözden geçirin",
+    "r_help": "help(show.oas, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tMevcut ortogonal dizilerin listesinden tasarım öğelerini gözden geçirin/inceleyin veya bilgi çıkarın, isteğe bağlı olarak seçim kriterlerini belirterek\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R yardımını kullanın (show.oas, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

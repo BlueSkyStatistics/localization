@@ -2,20 +2,20 @@
   "title": "Graphique EWMA",
   "navigation": "Graphique EWMA",
   "summaryPrintChk": "Imprimer le résumé en plus des graphiques",
-  "label2": "Deux options - soit sélectionner une variable à tracer (et une variable de regroupement si nécessaire), soit sélectionner les variables dans le jeu de données si déjà regroupées",
-  "selectVariableRad": "Option 1 : Sélectionnez une variable du jeu de données à regrouper",
+  "label2": "Deux options - soit sélectionner une variable à tracer (et une variable de regroupement si nécessaire), soit sélectionner les variables dans l'ensemble de données à tracer si déjà regroupées",
+  "selectVariableRad": "Option 1 : Sélectionner une variable de l'ensemble de données qui doit être regroupée",
   "variableSelcted": "Variable (données observées) à tracer",
   "groupingVariable": "Variable de regroupement",
-  "displayGroupsChk": "Afficher les regroupements sur l'interface utilisateur du jeu de données",
-  "selectDatasetRad": "Option 2 : Sélectionnez les variables du jeu de données si déjà regroupées",
-  "variablelistSelcted": "Sélectionnez une ou plusieurs variables regroupées (données observées) à tracer",
+  "displayGroupsChk": "Afficher les regroupements sur l'interface utilisateur de l'ensemble de données",
+  "selectDatasetRad": "Option 2 : Sélectionner les variables de l'ensemble de données si déjà regroupées",
+  "variablelistSelcted": "Sélectionner une ou plusieurs variables regroupées (données observées) à tracer",
   "nsigmas": "Sigma - nombre de sigmas à utiliser pour le calcul des limites de contrôle",
   "lambda": "Le paramètre de lissage (entre 0 et 1)",
-  "rowsTobeUsed": "Lignes regroupées à utiliser pour le graphique (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12)",
-  "rowsTobeUsedAsNewData": "Nouvelles données - lignes regroupées à utiliser comme nouvelles données à tracer (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12) - nouvelles données à tracer mais non incluses dans les calculs",
+  "rowsTobeUsed": "Lignes regroupées à utiliser pour le graphique (par exemple, spécifier comme 1:25 ou 1,4,5,7:12)",
+  "rowsTobeUsedAsNewData": "Nouvelles données - lignes regroupées à utiliser comme nouvelles données à tracer (par exemple, spécifier comme 1:25 ou 1,4,5,7:12) - nouvelles données à tracer mais non incluses dans les calculs",
   "help": {
     "title": "Graphique EWMA",
-    "r_help": "aide(ewma, paquet = qcc)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction qcc pour effectuer un contrôle de qualité statistique et tracer des graphiques de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R aide(ewma, paquet = qcc) et aide(qcc, paquet = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé pistonrings du paquet qcc avec le menu Charger le jeu de données en sélectionnant le paquet qcc puis en sélectionnant le jeu de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre à variable (observé..), échantillon à variable de regroupement,\n\t\t\t\t<br/>\n\t\t\t\tTapez 1:25 dans les lignes regroupées à utiliser, 30:40 dans les nouvelles données\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "r_help": "help(ewma, package = qcc)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction qcc pour effectuer un contrôle de qualité statistique et tracer des graphiques de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ewma, package = qcc) et help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger l'ensemble de données appelé pistonrings du package qcc avec le menu Charger l'ensemble de données en sélectionnant le package qcc puis en sélectionnant l'ensemble de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre pour variable (observée..), échantillon pour variable de regroupement, \n\t\t\t\t<br/>\n\t\t\t\tTapez 1:25 dans les lignes regroupées à utiliser, 30:40 dans les nouvelles données\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t"
   }
 }

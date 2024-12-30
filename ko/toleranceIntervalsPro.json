@@ -1,0 +1,23 @@
+{
+  "title": "허용 구간",
+  "navigation": "허용 구간",
+  "label1": "데이터에 가장 적합한 분포 함수를 선택하십시오",
+  "variableSelcted": "분석할 변수를 선택하십시오 (관측 데이터)",
+  "x": "샘플에서 결함이 있는 (또는 허용 가능한) 단위의 수",
+  "m": "미래 그룹에서 생산될 수량",
+  "alpha": "신뢰 구간 (예: 0.95)",
+  "P": "구간 내 인구의 최소 (0과 1 사이의 값을 지정) 비율",
+  "side": "1측 또는 2측 허용 구간이 필요합니다 (유형 1 또는 2)",
+  "method": "k-계수를 계산하는 방법 (정규, 로그 정규, 감마에만 적용 가능)",
+  "selectDistFuncNormalRad": "정규",
+  "selectDistFuncWeibullRad": "와이블",
+  "selectDistFuncExpRad": "지수",
+  "selectDistFuncGammaRad": "감마",
+  "selectDistFuncLnormalRad": "로그 정규",
+  "selectDistFuncCauchyRad": "코시",
+  "help": {
+    "title": "허용 구간",
+    "r_help": "help(normtol.int, package = tolerance)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t허용 구간을 계산하는 함수 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R 도움말을 사용하십시오 (패키지 = 'tolerance'), help(normtol.int, package = tolerance), help(exttol.int, package = tolerance)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tk-계수를 계산하는 방법\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tk-계수를 계산하는 방법은 정규, 로그 정규 및 감마 분포에만 적용됩니다. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\t\t\t\t\n                1측 허용 구간의 k-계수는 정확하게 수행되며\n\t\t\t\t따라서 선택한 방법과 동일합니다. \"HE\"는 하우 방법이며, 종종 매우 정확한 것으로 간주됩니다, \n\t\t\t\t<br/>\n\t\t\t\t작은 샘플 크기에서도. \"HE2\"는 하우에 의한 두 번째 방법으로, 와이즈버그-비티 방법과 유사하게 수행되지만\n\t\t\t\t<br/>\n\t\t\t\t계산적으로 더 간단합니다. \"WBE\"는 와이즈버그-비티 방법 (왈드-울프위츠 방법이라고도 함),\n\t\t\t\t<br/>\n\t\t\t\t더 큰 샘플 크기에 대해 첫 번째 하우 방법과 유사하게 수행됩니다. \"ELL\"은\n\t\t\t\t<br/>\t\t\t\t\n\t\t\t\t와이즈버그-비티 방법에 대한 엘리슨 수정으로, f가 n^2보다 상당히 클 때 적용됩니다. f가 n^2보다 크지 않으면 경고 메시지가 표시됩니다.\n\t\t\t\t<br/>\n\t\t\t\t\"KM\"은 정확한 솔루션에 대한 크리슈나무르티-마튜 근사로, 더 큰 샘플 크기에서 잘 작동합니다.\n\t\t\t\t<br/>\n\t\t\t\t\"EXACT\"는 문제에 대한 적분 솔루션을 찾음으로써 k-계수를 정확하게 계산합니다.\n\t\t\t\t<br/>\n\t\t\t\t이 방법의 계산 시간은 주로 m에 의해 결정됩니다. \"OCT\"는 꼬리를 제어하여 k-계수를 계산하는 오웬 접근 방식입니다.\n\t\t\t\t<br/>\n\t\t\t\t각 꼬리의 데이터가 (1-P)/2를 초과하지 않도록 합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 tolerance.xlsx라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t\tND를 변수(관측..)로 선택하십시오,\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

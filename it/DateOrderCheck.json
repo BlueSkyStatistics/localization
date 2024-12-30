@@ -1,0 +1,18 @@
+{
+  "title": "Controllo dell'Ordine delle Date",
+  "navigation": "Controllo dell'Ordine delle Date",
+  "datevarslabel": "Variabili di Data (specificare dalla più antica alla più recente; stessa classe; almeno 2)",
+  "compgrplabel": "Confronto",
+  "compgrpnote": "Nota: Questo è il confronto tra tutte le date specificate sopra che verranno controllate per errori di ordine, ad esempio i valori dovrebbero essere date1<date2<date3.",
+  "ltlabel": "<",
+  "ltelabel": "<=",
+  "idvarslabel": "Variabili di Identificazione della Riga (opzionale)",
+  "dateerrorboxlabel": "Crea dataset con variabile di errore di data",
+  "dateerrordatanamelabel": "Nome del dataset",
+  "dateerrorvarlabel": "Nome della variabile di errore di data",
+  "help": {
+    "title": "Controllo dell'Ordine delle Date",
+    "r_help": "help('<', package = 'base')",
+    "body": "\nQuesto crea un elenco di righe nel dataset attivo dove i valori delle variabili di data non sono in un ordine specificato. Questo aiuta a identificare potenziali errori delle variabili di data quando le date o \n i tempi sono necessari per un'analisi. Ad esempio, se tre colonne di data devono essere nell'ordine di date1 < date2 < date3, questa finestra di dialogo stamperà tutte le osservazioni in cui \n i valori di quelle variabili non seguono quell'ordine. I valori di data mancanti sono consentiti nelle variabili specificate e non verranno utilizzati per alcun confronto.\n<br/><br/>\n<b>Variabili di Data (specificare dalla più antica alla più recente; stessa classe; almeno 2):</b> Specificare almeno 2 variabili di data nell'ordine dalla più antica alla più recente. Queste possono essere di qualsiasi classe di data \n (POSIXct, Date), ma tutte le variabili specificate devono essere della stessa classe di data. In caso contrario, si verificherà un errore.\n<br/><br/>\n<b>Confronto:</b> Specificare l'operatore di confronto utilizzato per confrontare i valori delle date. \"<\" significa minore di e \"<=\" significa minore o uguale a. Se viene scelto \"<\", allora le date che\n sono uguali verranno contrassegnate come errori. Se viene scelto \"<=\", allora le date che sono uguali non verranno contrassegnate come errori.\n<br/><br/>\n<b>Variabili di Identificazione della Riga (opzionale):</b> Specificare una o più variabili che possono essere utili per identificare le righe. Ad esempio, numero di identificazione del soggetto. Queste saranno \n incluse nell'elenco degli errori. Se non vengono specificate variabili, il numero di riga del dataset sarà l'unico identificatore.\n<br/><br/>\n<b>Crea dataset con variabile di errore di data:</b> Questo creerà un dataset separato con i dati originali e una variabile che indica se ogni osservazione ha un errore di ordine delle date \n (codificato come 1=errore di ordine delle date e 0=nessun errore di ordine delle date). Il <b>Nome del dataset</b> è il nome desiderato di questo dataset e <b>Nome della variabile di errore di data</b> è il nome desiderato \ndella variabile di errore di ordine delle date in questo dataset.\n\t\t"
+  }
+}

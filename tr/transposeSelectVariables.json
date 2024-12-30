@@ -1,0 +1,11 @@
+{
+  "title": "Veri Setini Transpoze Et, değişkenleri seçin",
+  "navigation": "Değişkenleri Seçin",
+  "transposedDataset": "Transpoze edilmiş veri seti için bir isim girin",
+  "destination": "Transpoze edilecek değişkenleri seçin",
+  "help": {
+    "title": "Seçilen Değişkenleri Transpoze Et",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenleri transpoze eden ve sonuçları yeni veri setinde saklayan temel paket içindeki transpoze fonksiyonunu çağırır. Transpoze edilmiş veri setini saklayacak veri setinin adını belirtmelisiniz. Yeni transpoze edilmiş veri seti ızgarada görüntülenir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: bir matris veya veri çerçevesidir\n</li>\n</ul>\n<b>Değer</b><br/>\nx'in boyutları ve boyut adları uygun şekilde oluşturulmuş bir matris ve diğer nitelikler, isimler hariç, kopyalanır.<br/>\n<b>Paket</b></br>\nbase<br/>\n<b>Yardım</b></br>\nyardım(t, paket='base')\n"
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "title": "Concaténer des Variables",
+  "title": "Concaténer des variables",
   "navigation": "Concaténer",
   "newvar": "Entrez une nouvelle variable/existante pour les résultats concaténés",
   "concatenate": "Sélectionnez les variables à concaténer",
   "repString": "Entrez un séparateur optionnel pour les variables concaténées",
   "help": {
-    "title": "Concaténer des Variables",
+    "title": "Concaténer des variables",
     "r_help": "help(binVariable,package='RcmdrMisc')",
-    "body": "\n<b>Description</b></br>\nCréer un facteur disséquant la plage d'une variable numérique en bacs de largeur égale, (approximativement) égale fréquence, ou à des points de coupure \"naturels\" (déterminés par le clustering K-means)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nX: variable numérique à être binned.\n</li>\n<li>\nBacs: nombre de bacs.\n</li>\n<li>\nméthode: l'un des \"intervals\" pour des bacs de largeur égale; \"proportions\" pour des bacs de nombre égal; \"naturel\" pour des points de coupure entre les bacs à déterminer par le clustering K-means.\n</li>\n<li>\nÉtiquettes: si FALSE, des étiquettes numériques seront utilisées pour les niveaux de facteur; si NULL, les points de coupure sont utilisés pour définir des étiquettes; sinon un vecteur de caractères de noms de niveaux.\n</li>\n</ul>\n<b>Paquet</b></br>\nRcmdrMisc</br>\n<b>Aide</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+    "body": "\n<b>Description</b></br>\nCréer un facteur découpant la plage d'une variable numérique en bacs de largeur égale, (approximativement) fréquence égale, ou à des points de coupure \"naturels\" (déterminés par le clustering K-means)\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nX : variable numérique à découper.\n</li>\n<li>\nBacs : nombre de bacs.\n</li>\n<li>\nméthode : l'un des \"intervals\" pour des bacs de largeur égale ; \"proportions\" pour des bacs de nombre égal ; \"naturel\" pour que les points de coupure entre les bacs soient déterminés par le clustering K-means.\n</li>\n<li>\nÉtiquettes : si FALSE, des étiquettes numériques seront utilisées pour les niveaux de facteur ; si NULL, les points de coupure sont utilisés pour définir les étiquettes ; sinon un vecteur de caractères de noms de niveaux.\n</li>\n</ul>\n<b>Paquet</b></br>\nRcmdrMisc</br>\n<b>Aide</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
   }
 }

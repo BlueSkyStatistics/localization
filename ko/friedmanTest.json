@@ -1,0 +1,10 @@
+{
+  "title": "프리드먼 테스트",
+  "navigation": "프리드먼 테스트",
+  "tvarbox1": "응답 변수, 2개 이상",
+  "help": {
+    "title": "프리드먼 테스트",
+    "r_help": "help(friedman.test, package=stats)",
+    "body": "\n<b>설명</b></br>\n복제되지 않은 블록 데이터로 프리드먼 순위 합 검정을 수행합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nfriedman.test(y, ...)\n## 기본 S3 메서드:\nfriedman.test(y, groups, blocks, ...)\n## 'formula' 클래스에 대한 S3 메서드\nfriedman.test(formula, data, subset, na.action, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ny: 데이터 값의 숫자 벡터 또는 데이터 행렬.\n</li>\n<li>\ngroups: y의 해당 요소에 대한 그룹을 제공하는 벡터; y가 행렬인 경우 무시됩니다. 만약 팩터 객체가 아니라면, 팩터 객체로 강제 변환됩니다.\n</li>\n<li>\nblocks: y의 해당 요소에 대한 블록을 제공하는 벡터; y가 행렬인 경우 무시됩니다. 만약 팩터 객체가 아니라면, 팩터 객체로 강제 변환됩니다.\n</li>\n<li>\nformula: a ~ b | c 형태의 공식으로, 여기서 a, b 및 c는 데이터 값과 해당 그룹 및 블록을 제공합니다.\n</li>\n<li>\ndata: 공식에 포함된 변수를 포함하는 선택적 행렬 또는 데이터 프레임(또는 유사한 것: model.frame 참조). 기본적으로 변수는 environment(formula)에서 가져옵니다.\n</li>\n<li>\nsubset: 사용될 관측치의 하위 집합을 지정하는 선택적 벡터.\n</li>\n<li>\nna.action: 데이터에 NA가 포함될 때 발생해야 하는 일을 나타내는 함수. 기본값은 getOption(\"na.action\")입니다.\n</li>\n<li>\n...: 메서드에 전달되거나 메서드에서 전달될 추가 인수.\n</li>\n</ul>\n<b>세부정보</b></br>\nfriedman.test는 정상성 가정이 위배될 수 있는 복제되지 않은 완전 블록 설계를 분석하는 데 사용할 수 있습니다(즉, 그룹 및 블록의 수준 조합마다 y에 정확히 하나의 관측치가 있습니다).</br>\n귀무 가설은 블록의 효과를 제외하고 y의 위치 매개변수가 각 그룹에서 동일하다는 것입니다.\n만약 y가 행렬이라면, 그룹과 블록은 각각 열 및 행 인덱스에서 얻어집니다. 그룹이나 블록에 NA가 허용되지 않습니다; y에 NA가 포함된 경우 해당 블록이 제거됩니다.</br>\n<b>값</b><br/>\n\"htest\" 클래스의 리스트로 다음 구성 요소를 포함합니다:<br/>\nstatistic: 프리드먼의 카이 제곱 통계량 값.<br/>\nparameter: 검정 통계량의 근사 카이 제곱 분포의 자유도.<br/>\np.value: 검정의 p-값.<br/>\nmethod: \"프리드먼 순위 합 검정\"이라는 문자열.<br/>\ndata.name: 데이터의 이름을 제공하는 문자열.​<br/>\n<b>예제</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))<br/>\nmy_samples <- na.omit( with(Dataframe,cbind(Sales,Expenses)))<br/>\nResult_Friedman_Test = friedman.test(my_samples)<br/>\n</code> <br/>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(friedman.test, package=stats)\n"
+  }
+}

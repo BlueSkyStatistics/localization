@@ -1,16 +1,16 @@
 {
-  "title": "Fleiss' Kappa",
-  "navigation": "Fleiss' Kappa",
+  "title": "弗莱斯的卡帕",
+  "navigation": "弗莱斯的卡帕",
   "ratervars": "评估者变量：",
   "cilevel": "置信水平：",
   "options": "高级",
   "categLabels": "可选地指定所有可能的评分，用逗号分隔，例如 1,2,3,4,5 或 \"低\",\"中\",\"高\" ",
   "freqlistchkbox": "交叉列出评估者变量的权重",
   "weights": "选择预定义的权重",
-  "N": "表示人口规模的可选参数（如果有）",
+  "N": "表示总体大小的可选参数（如果有的话）",
   "help": {
-    "title": "Fleiss' Kappa",
+    "title": "弗莱斯的卡帕",
     "r_help": "help(fleiss.kappa.raw, package=irrCAC)",
-    "body": "\n<b>描述</b></br>\nFleiss' 在多个评估者（2, 3, +）之间的广义 Kappa，当输入数据表示每个主题和每个评估者报告的原始评分时。</br>\n如果任何评估者对某个观察值缺少值，则该观察值将从分析中删除。</br>\n我们还提供交叉列出评估者变量权重的选项。</br>\n<b>用法</b>\n<br/>\n<code> \nfleiss.kappa.raw(ratings = dataset1[ , c('var1','var2','var3')], weights = \"unweighted\", categ.labels = NULL,</br>\n  conflev = 0.95, N = Inf)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nratings:  对应于每个评估者的变量，其中每列代表一个评估者，每行代表一个主题。它们可以是数值、因子或有序变量。</br>\n</li>\n<li>\nweights: 一个强制性参数，可以是字符串变量或矩阵。字符串描述了一个预定义的权重，必须取值之一（\"unweighted\",\"quadratic\", \"ordinal\", \"linear\", \"radical\", \"ratio\", \"circular\", \"bipolar\"）。 </br>\n如果该参数是矩阵，则必须是一个方阵 qxq，其中 q 是一个主题可以被分类的可能类别的数量。如果某些 q 个可能类别未被使用，则强烈建议在参数 categ.labels 中指定可能类别的完整列表作为向量。否则，程序可能无法正常工作。</br>\n注意：在语法中不支持指定矩阵。您需要粘贴代码并编辑以指定矩阵。</br>\n</li>\n<li>\nconflev:  与置信区间相关的置信水平。默认值为 0.95。</br>\n</li>\n<li>\nN: 一个可选参数，表示人口规模（如果有）。它可以用于对方差进行最终的人口校正。默认值为无穷大。\n</li>\n</ul>\n<b>值</b></br>\n一个数据列表，包含 3 个对象：（1）一个包含各种统计信息的一行数据框，包括请求的协议系数，（2）在计算中使用的权重矩阵（如果有），以及（3）在分析中使用的类别。这些可能是评估者报告的类别，或者是评估者可用的类别，无论他们是否使用它们。 </br>输出数据框包含以下变量：\"coeff.name\"（系数名称 - 这里将是 \"Fleiss' Kappa\"），\"pa\"（百分比协议），\"pe\"（百分比随机协议），coeff.val（协议系数估计 - Fleiss' Kappa），\"coeff.se\"（标准误差），\"conf.int\"（Fleiss Kappa 的置信区间），\"p.value\"（Fleiss Kappa 的 p 值），\"w.name\"（权重的标识）。\n<b>包</b></br>\nirrCAC</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框右上角的 R 图标，或通过创建 R 代码块运行以下命令 help(fleiss.kappa.raw, package=irrCAC)，方法是单击输出窗口中的 +\n"
+    "body": "\n<b>描述</b></br>\n弗莱斯的广义卡帕在多个评估者（2, 3, +）之间，当输入数据表示每个主题和每个评估者报告的原始评分时。</br>\n如果任何评估者对某个观察值缺少值，则该观察值将从分析中删除。</br>\n我们还提供交叉列出评估者变量权重的选项。</br>\n<b>用法</b>\n<br/>\n<code> \nfleiss.kappa.raw(ratings = dataset1[ , c('var1','var2','var3')], weights = \"unweighted\", categ.labels = NULL,</br>\n  conflev = 0.95, N = Inf)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nratings:  与每个评估者对应的变量，每列代表一个评估者，每行代表一个主题。它们可以是数值型、因子型或有序变量。</br>\n</li>\n<li>\nweights: 一个强制参数，可以是字符串变量或矩阵。字符串描述了预定义的权重之一，必须取值之一（\"unweighted\",\"quadratic\", \"ordinal\", \"linear\", \"radical\", \"ratio\", \"circular\", \"bipolar\"）。 </br>\n如果该参数是矩阵，则必须是一个方阵 qxq，其中 q 是可能的分类数量。如果某些 q 个可能的分类未使用，则强烈建议在参数 categ.labels 中指定完整的可能分类列表作为向量。否则，程序可能无法正常工作。</br>\n注意：在语法中不支持指定矩阵。您需要粘贴代码并编辑以指定矩阵。</br>\n</li>\n<li>\nconflev:  与置信区间相关的置信水平。其默认值为 0.95。</br>\n</li>\n<li>\nN: 表示总体大小的可选参数（如果有的话）。它可以用于对方差进行最终的总体修正。其默认值为无穷大。\n</li>\n</ul>\n<b>值</b></br>\n一个数据列表，包含 3 个对象：（1）一个包含各种统计信息的一行数据框，包括请求的协议系数，（2）在计算中使用的权重矩阵（如果有的话），以及（3）在分析中使用的分类。这些可以是评估者报告的分类，或者是评估者可用的分类，无论他们是否使用它们。 </br>输出数据框包含以下变量：\"coeff.name\"（系数名称-这里将是 \"弗莱斯的卡帕\"），\"pa\"（百分比协议），\"pe\"（百分比机会协议），coeff.val（协议系数估计-弗莱斯的卡帕），\"coeff.se\"（标准误差），\"conf.int\"（弗莱斯卡帕的置信区间），\"p.value\"（弗莱斯卡帕的 p 值），\"w.name\"（权重的标识）。\n<b>包</b></br>\nirrCAC</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的 R 图标，或通过创建 R 代码块点击输出窗口中的 +，运行以下命令 help(fleiss.kappa.raw, package=irrCAC)"
   }
 }

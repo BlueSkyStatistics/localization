@@ -1,0 +1,20 @@
+{
+  "title": "K En Yakın Komşular",
+  "navigation": "KNN",
+  "dependentvar": "Bağımlı değişken",
+  "independentvars": "Bağımsız değişken(ler)",
+  "header": "KNN, tahmin yapmak için bir model oluşturmadığı için tembel bir sınıflandırıcıdır. Aynı anda uyum sağlar ve değerlendirir. Veri setini eğitim ve test veri setlerine ayırıyoruz, ardından eğitim veri setinde modeli oluşturuyoruz, test veri setinde tahminler yapıyoruz ve bu tahminleri model değerlendirme istatistiklerini görüntülemek için kullanıyoruz.",
+  "Seed": "Tohum Ayarla",
+  "Group2": "KNN için Ayar parametreleri",
+  "noneighbhors": "Komşu sayısı (Bir değer belirtilmediğinde, varsayılan olarak veri setindeki gözlem sayısının karekökü alınır)",
+  "Group1": "Eğitim ve test veri setleri",
+  "splitPercentage": "Bölme yüzdesini girin",
+  "trainDatasetName": "Eğitim veri setinin adını girin",
+  "testDatasetName": "Test veri setinin adını girin",
+  "predictedValues": "Tahmin edilen değerler için değişken ön ekini girin. (Bir ön ek belirtmelisiniz) Ön ekli değişkenler test veri setinde oluşturulur.",
+  "help": {
+    "title": "K En Yakın Komşular",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Açıklama</b></br>\nk-En Yakın Komşu Sınıflandırması\n<br/>\n<b>Not: </b></br>\n1. Eğitim ve test veri setleri, belirtilen bölme yüzdesine göre KNN ile otomatik olarak oluşturulur<br/>\n2. Tahmin edilen değerler test veri setinde saklanır ve model istatistiklerini hesaplamak için kullanılır, yani doğruluk, kappa, duyarlılık.... Karışıklık matrisi de görüntülenir\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ntrain: eğitim seti durumlarının matris veya veri çerçevesi.\n</li>\n<li>\ntest: test seti durumlarının matris veya veri çerçevesi. Bir vektör, tek bir durum için bir satır vektörü olarak yorumlanacaktır.\n</li>\n<li>\ncl: eğitim setinin gerçek sınıflandırmalarının faktörü\n</li>\n<li>\nk: dikkate alınan komşu sayısı.\n</li>\n<li>\nl: kesin karar için minimum oy, aksi takdirde şüphe. (Daha kesin olarak, k-l karşıt oy sayısı izin verilir, k bağlarla artırılsa bile.)\n</li>\n<li>\nprob: Eğer bu doğruysa, kazanan sınıf için oyların oranı prob niteliği olarak döndürülür.\n</li>\n<li>\nuse.all: bağların işlenmesini kontrol eder. Eğer doğruysa, k'nın en büyük olanına eşit olan tüm mesafeler dahil edilir. Eğer yanlışsa, tam olarak k komşu kullanmak için k'ya eşit mesafelerin rastgele bir seçimi seçilir.\n</li>\n</ul>\n<b>Değer</b></br>\nTest setinin sınıflandırmalarının faktörü. şüphe NA olarak döndürülecektir.</br>\n<b>Paket</b></br>\ncaret;class</br>\n<b>Yardım</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Dimensione del campione, precisione di un rapporto di probabilità",
+  "navigation": "Rapporto di probabilità",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n1": "Dimensione del campione del Gruppo 1",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "ratio": "Rapporto della dimensione del campione del Gruppo 2 rispetto a quella del Gruppo 1",
+  "prop1": "Proporzione di esito del Gruppo 1",
+  "prop2": "Proporzione di esito del Gruppo 2",
+  "conflevel": "Livello di confidenza (0-1)",
+  "method": "Metodo dell'intervallo di confidenza",
+  "help": {
+    "title": "Dimensione del campione, precisione di un rapporto di probabilità",
+    "r_help": "help(prec_or, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un rapporto di probabilità basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del campione del Gruppo 1:</b> Specifica il numero di soggetti nel gruppo 1\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Rapporto della dimensione del campione del Gruppo 2 rispetto a quella del Gruppo 1:</b> Specifica il rapporto della dimensione del campione del gruppo 2 rispetto a quella del gruppo 1. Un valore di 1 significa dimensioni del campione uguali.\n<br/><br/>\n<b>Proporzione di esito del Gruppo 1:</b> Specifica la proporzione di soggetti nel gruppo 1 con l'esito 'positivo'\n<br/><br/>\n<b>Proporzione di esito del Gruppo 2:</b> Specifica la proporzione di soggetti nel gruppo 2 con l'esito 'positivo'\n<br/><br/>\nNota che il rapporto di probabilità corrisponderà alle probabilità dell'esito 'positivo' nel gruppo 1 rispetto alle probabilità dell'esito 'positivo' nel gruppo 2.\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Metodo dell'intervallo di confidenza:</b> Specifica il tipo di intervallo di confidenza aggiustato da utilizzare. Woolf (woolf), Gart (gart) e logit smussato per indipendenza (indip_smooth) appartengono a \na una famiglia generale di intervalli di confidenza aggiustati, aggiungendo 0 (woolf) a ciascuna cella, 0.5 (gart) a ciascuna cella, o un aggiustamento per ciascuna cella basato sui dati osservati \n(independence-smoothed). In gart e indip_smooth, la stima dell'IC non è possibile se p1 = 0, nel qual caso il OR diventa 0, ma il limite inferiore dell'IC è > 0. Inoltre, \nse p1 = 1 e p2 < 1, o se p1 > 0 e p2 = 0, il OR diventa ∞, ma il limite superiore dell'IC è finito. Per gli intervalli approssimativi, gart e indip_smooth sono gli intervalli raccomandati \n(Fagerland et al. 2011).\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Dimensione del campione, Test di sopravvivenza a due gruppi",
+  "navigation": "Sopravvivenza a due gruppi",
+  "howtouse": "Per calcolare la dimensione del campione: specificare la potenza\nPer calcolare la potenza: specificare la dimensione del campione",
+  "n": "Dimensione del campione",
+  "power": "Potenza (0-1)",
+  "propgrp1": "Proporzione del campione nel Gruppo 1 (0-1)",
+  "propevent": "Proporzione con l'evento (0-1)",
+  "hr": "Rapporto di rischio, Gruppo 1 vs Gruppo 2",
+  "rsquared": "R-quadrato tra il gruppo e altre covariate (0-1); inserire 0 per il test non aggiustato",
+  "siglevel": "Livello di significatività (0-1)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Due lati",
+  "onesided": "Un lato",
+  "help": {
+    "title": "Dimensione del campione, Test di sopravvivenza a due gruppi",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test di sopravvivenza a due campioni. Calcola la dimensione del campione o la potenza, quando l'utente specifica l'altro, dato un rapporto di rischio da rilevare.\nI calcoli assumono un modello di rischi proporzionali di Cox.\n<br/><br/>\n<b>Dimensione del campione:</b> Specificare il numero totale di soggetti\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera.\n<br/><br/>\n<b>Proporzione del campione nel Gruppo 1:</b> Specificare la proporzione del campione totale che è nel gruppo 1. La proporzione del campione nel gruppo 2 sarà uno meno questa quantità.\n<br/><br/>\n<b>Rapporto di rischio, Gruppo 1 vs Gruppo 2:</b> Specificare il rapporto di rischio desiderato da rilevare per il gruppo 1 rispetto al gruppo 2\n<br/><br/>\n<b>Proporzione con l'evento:</b> Specificare la proporzione attesa del campione con l'evento (o uno meno la proporzione di censura). Se si specifica una probabilità di 1, si assume nessuna censura.\n<br/><br/>\n<b>R-quadrato tra il gruppo e altre covariate; inserire 0 per il test non aggiustato:</b> Specificare il valore di r-quadrato (correlazione multipla al quadrato), tra la variabile di raggruppamento e \ntutte le altre covariate nel modello di Cox. Un valore di 0 corrisponde a un test non aggiustato senza altre covariate.\n<br/><br/>\n<b>Livello di significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\nQuesto utilizza le funzioni ssizeEpiCont.default e powerEpiCont.default nel pacchetto powerSurvEpi. Vedi il menu a tre punti>Aiuto>Aiuto sulla funzione R per ulteriori informazioni.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> powerSurvEpi\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "K Vicini più prossimi",
+  "navigation": "KNN",
+  "dependentvar": "Variabile dipendente",
+  "independentvars": "Variabile(i) indipendente(i)",
+  "header": "KNN è un classificatore pigro, non crea un modello per prevedere in seguito. Si adatta e valuta contemporaneamente. Suddividiamo il dataset in dataset di addestramento e di test, quindi costruiamo il modello sul dataset di addestramento, facendo previsioni sul dataset di test e utilizziamo quelle previsioni per visualizzare le statistiche di valutazione del modello.",
+  "Seed": "Imposta Seed",
+  "Group2": "Parametri di regolazione per KNN",
+  "noneighbhors": "N. di vicini (Quando un valore non è specificato, il valore predefinito è impostato sulla radice quadrata del numero di osservazioni nel dataset)",
+  "Group1": "Dataset di addestramento e di test",
+  "splitPercentage": "Inserisci la percentuale di suddivisione",
+  "trainDatasetName": "Inserisci il nome del dataset di addestramento",
+  "testDatasetName": "Inserisci il nome del dataset di test",
+  "predictedValues": "Inserisci il prefisso della variabile per i valori previsti. (Devi specificare un prefisso) Le variabili con prefisso vengono create nel dataset di test.",
+  "help": {
+    "title": "K Vicini più prossimi",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Descrizione</b></br>\nClassificazione k-Nearest Neighbor\n<br/>\n<b>Nota: </b></br>\n1. I dataset di addestramento e di test vengono creati automaticamente con KNN in base alla percentuale di suddivisione specificata<br/>\n2. I valori previsti vengono memorizzati nel dataset di test e vengono utilizzati per calcolare le statistiche del modello, ovvero accuratezza, kappa, sensibilità.... La matrice di confusione viene anche visualizzata\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ntrain: matrice o data frame dei casi del set di addestramento.\n</li>\n<li>\ntest: matrice o data frame dei casi del set di test. Un vettore sarà interpretato come un vettore riga per un singolo caso.\n</li>\n<li>\ncl: fattore delle classificazioni vere del set di addestramento\n</li>\n<li>\nk: numero di vicini considerati.\n</li>\n<li>\nl: voto minimo per una decisione definitiva, altrimenti dubbio. (Più precisamente, meno di k-l voti dissenzienti sono consentiti, anche se k è aumentato da pareggi.)\n</li>\n<li>\nprob: Se questo è vero, la proporzione dei voti per la classe vincente viene restituita come attributo prob.\n</li>\n<li>\nuse.all: controlla la gestione dei pareggi. Se vero, tutte le distanze uguali alla k-esima più grande sono incluse. Se falso, viene scelta una selezione casuale di distanze uguali alla k-esima per utilizzare esattamente k vicini.\n</li>\n</ul>\n<b>Valore</b></br>\nFattore delle classificazioni del set di test. il dubbio verrà restituito come NA.</br>\n<b>Pacchetto</b></br>\ncaret;class</br>\n<b>Aiuto</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

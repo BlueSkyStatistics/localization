@@ -1,0 +1,16 @@
+{
+  "title": "عدد الأشجار الأمثل",
+  "navigation": "تحسين",
+  "dependentvar": "المتغير التابع",
+  "independentvars": "المتغير (المتغيرات) المستقلة",
+  "label1": "إعدادات محاكاة الشجرة",
+  "startval": "قيمة البداية",
+  "endval": "قيمة النهاية",
+  "stepval": "قيمة الخطوة",
+  "mtry": "mtry",
+  "help": {
+    "title": "عدد الأشجار الأمثل",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>الوصف</b></br>\nبدءًا من القيمة الافتراضية لـ mtry، ابحث عن القيمة المثلى (بالنسبة لتقدير خطأ Out-of-Bag) لـ ntree (عدد الأشجار التي يجب زراعتها) لـ randomForest. تستدعي الدالة BSkyMultiRandomForest الدالة randomForest مع المعاملات المحددة أدناه\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nx : إطار بيانات أو مصفوفة من المتنبئات، أو صيغة تصف النموذج الذي سيتم ملاءمته (لأسلوب الطباعة، كائن randomForest).\n</li>\n<li>\ny :  متجه الاستجابة. إذا كان عاملاً، يُفترض التصنيف، وإلا يُفترض الانحدار. إذا تم إغفاله، ستعمل randomForest في وضع غير خاضع للإشراف.\n</li>\n<li>\nstartval : القيمة الابتدائية لمعامل ntree في randomForest().\n</li>\n<li>\nendval : القيمة النهائية لمعامل ntree في randomForest().\n</li>\n<li>\nstepval : العدد الذي يجب أن تزداد به startval في كل تكرار حتى تصل إلى قيمة endval.\n</li>\n<li>\nmtry : عدد المتغيرات التي تم أخذ عينات عشوائية منها كمرشحين في كل انقسام. لاحظ أن القيم الافتراضية تختلف للتصنيف (sqrt(p) حيث p هو عدد المتغيرات في x) والانحدار (p/3)\n</li>\n</ul>\n<b>القيمة</b><br/>\nيطبع العدد الأمثل للأشجار. كما يعرض جدولًا مع ntree والخطأ المقابل Out-of-Bag<br/>\n<b>الحزمة</b></br>\nrandomForest​;BlueSky</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي في محرر صيغة R help(randomForest,package='randomForest')\n                "
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "تحليل تصميم التجارب باستخدام نموذج سطح الاستجابة (كمية)",
+  "navigation": "تحليل التصميم - نموذج سطح الاستجابة",
+  "modelname": "أدخل اسم نموذج سطح الاستجابة",
+  "dependent": "المتغير التابع (الاستجابة)",
+  "formulaboxhint": "يمكنك أيضًا إدخال SO(var1, var2,...) للتأثيرات من الدرجة الثانية والتفاعلات، أو FO(...),... من حزمة rsm في مربع بناء الصيغة أعلاه.",
+  "independent": "المتنبئات العددية - أدخل أدناه متغيرات الصيغة العددية",
+  "generateContourPlotChk": "عرض المخططات المتساوية",
+  "generateRSMPlotChk": "عرض سطح الاستجابة (المخططات)",
+  "generatePathSteepestAscentChk": "عرض مسار أعلى ارتفاع من تحليل الحافة",
+  "checkShapiroNormalityTestChk": "اختبار شابيرو للانتظام",
+  "normalityPlotsChk": "مخطط للتحقق من الانتظام",
+  "help": {
+    "title": "نموذج سطح الاستجابة مع منشئ صيغة النموذج",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tالانحدار على سطح الاستجابة - ملاءمة نموذج خطي مع مكون سطح الاستجابة، وإنتاج التحليلات والملخصات المناسبة\n\t\t\t\t<br/> في منشئ الصيغة، يمكنك كتابة SO(var1, var2, var3, ...) أو FO(var1, ..) أو وظيفة أخرى من حزمة rsm - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلمزيد من التفاصيل، راجع مساعدة R لما يلي\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

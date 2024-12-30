@@ -1,20 +1,20 @@
 {
-  "title": "Trasează serii temporale",
-  "navigation": "Trasează serii temporale, separat sau combinat",
+  "title": "Trasează Serii Temporale",
+  "navigation": "Trasează Serii Temporale, separat sau combinat",
   "destination": "Variabile de trasat",
-  "firstObservation": "Timpul primei observații de ex.1: introduceți 1961,1 pentru ianuarie 1961 de ex.2: introduceți 1961,3 pentru trimestrul 3 din 1961, de ex.3: introduceți 1 pentru o serie continuă",
-  "frequency": "Numărul de observații pe unitate de timp de ex.1: introduceți 12 pentru o observație pentru fiecare lună a unui an, de ex. 2: introduceți 4 pentru o observație pe trimestru, de ex. 3: introduceți 1 pentru o serie continuă.",
-  "label0": "Opțiuni de trasare",
+  "firstObservation": "Timpul primei observații de exemplu: 1: introduceți 1961,1 pentru ianuarie 1961, de exemplu: 2: introduceți 1961,3 pentru trimestrul 3 din 1961, de exemplu: 3: introduceți 1 pentru o serie continuă",
+  "frequency": "Numărul de observații pe unitate de timp de exemplu: 1: introduceți 12 pentru o observație pentru fiecare lună dintr-un an, de exemplu: 2: introduceți 4 pentru o observație pe trimestru, de exemplu: 3: introduceți 1 pentru o serie continuă.",
+  "label0": "Opțiuni de Traseu",
   "separately": "Trasează fiecare serie separat",
   "combine": "Combină seriile",
   "label1": "Transformă variabilele",
   "chkboxForTransform": "Logaritm natural",
   "label2": "Opțiuni pentru valorile ajustate",
   "yaxisLabel": "Eticheta axei Y",
-  "mainTitle": "Titlu principal",
+  "mainTitle": "Titlul principal",
   "help": {
-    "title": "Trasează serii temporale",
+    "title": "Trasează Serii Temporale",
     "r_help": "help(plot.ts, package ='stats')",
-    "body": "\n<b>Descriere</b></br>\nCreează un grafic de serii temporale combinate sau separate. Când sunt combinate, mai multe variabile sunt trase împreună, când sunt separate, fiecare variabilă este trasă independent. BSkyPlotSeriesWithCorrelations este o funcție wrapper care creează un obiect de serie temporală și apelează intern plot.ts. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='title', ylab='y axis label', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: variabilele selectate pentru a fi trase\n</li>\n<li>\nstart: Timpul primei observații trebuie introdus în formatul an,lună sau an,trimestru de ex. (dacă datele dvs. sunt organizate pe luni, atunci 1992,1 pentru ian 1992 sau dacă datele dvs. sunt organizate pe trimestre, atunci 1992,1 se referă la primul trimestru din 1992.\n</li>\n<li>\nfrequency: Numărul de observații în unitatea de timp. Exemplu: pentru lunar sunt 12 observații într-un an. Pentru trimestrial sunt 4 observații într-un an.\n</li>\n<li>\nplot.type: \"multiple\" pentru separat și \"single\" pentru combinat.\n</li>\n<li>\nnaturalLogYaxis: dacă TRUE, un ax Y este afișat ca valoare a logaritmului natural.\n</li>\n<li>\nmain: titlul principal al graficului\n</li>\n<li>\nylab: titlul pentru axa Y\n</li>\n<li>\ndataset: numele setului de date din care au fost selectate variabilele.\n</li>\n</ul>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă help(plot.ts, package ='stats') creând un bloc de cod R făcând clic pe + în fereastra de ieșire\n"
+    "body": "\n<b>Descriere</b></br>\nCreează un grafic de serii temporale combinate sau separate. Când sunt combinate, mai multe variabile sunt trase împreună, când sunt separate, fiecare variabilă este trasată independent. BSkyPlotSeriesWithCorrelations este o funcție wrapper care creează un obiect de serie temporală și apelează intern plot.ts. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='titlu', ylab='eticheta axei y', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: variabilele selectate pentru a fi trase\n</li>\n<li>\nstart: Timpul primei observații ar trebui să fie introdus în formatul an,lună sau an,trimestru de exemplu (dacă datele dvs. sunt organizate pe luni, 1992,1 pentru ian 1992 sau dacă datele dvs. sunt organizate pe trimestre, atunci 1992,1 se referă la primul trimestru din 1992.\n</li>\n<li>\nfrequency: Numărul de observații în unitatea de timp. Exemplu: pentru lunar sunt 12 observații într-un an. Pentru trimestrial sunt 4 observații într-un an.\n</li>\n<li>\nplot.type: \"multiple\" pentru separat și \"single\" pentru grafic combinat.\n</li>\n<li>\nnaturalLogYaxis: dacă este TRUE, axa Y este afișată ca valoare logaritmică naturală.\n</li>\n<li>\nmain: titlul principal al graficului\n</li>\n<li>\nylab: titlul pentru axa y\n</li>\n<li>\ndataset: numele setului de date din care au fost selectate variabilele.\n</li>\n</ul>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(plot.ts, package ='stats') creând un chunk de cod R făcând clic pe + în fereastra de ieșire\n"
   }
 }

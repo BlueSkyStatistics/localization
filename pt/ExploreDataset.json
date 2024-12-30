@@ -1,0 +1,14 @@
+{
+  "title": "Explorar Conjunto de Dados",
+  "navigation": "Explorar Conjunto de Dados",
+  "destdatalabel": "Conjunto de Dados para Explorar",
+  "htmloutlabel": "Exibir Saída em uma Página da Web",
+  "standardgraphlabel": "Incluir Gráficos na Janela de Saída",
+  "maxdistvalueslabel": "Máximo de Valores Distintos",
+  "rounddigitslabel": "Dígitos Significativos",
+  "help": {
+    "title": "Explorar Conjunto de Dados",
+    "r_help": "help(dfSummary, package ='summarytools')",
+    "body": "\nIsso cria uma tabela descrevendo um conjunto de dados. As descrições incluem o nome do conjunto de dados, número de observações, número de variáveis, número de registros duplicados, \nnome das variáveis, classes das variáveis, estatísticas resumidas das variáveis e gráficos. Esta ferramenta é mais voltada para exploração e limpeza de dados, em vez de fins de análise de dados. \nUma versão em texto da tabela é exibida por padrão, mas uma versão em html mais bonita pode ser exibida opcionalmente no navegador da web padrão.\n<br/><br/>\n<b>Conjunto de Dados para Explorar:</b> Conjunto de dados que você deseja descrever\n<br/><br/>\n<b>Exibir Saída em uma Página da Web:</b> Marque se você deseja exibir uma versão bonita da tabela no navegador da web padrão. Esta versão incluirá gráficos.\n<br/><br/>\n<b>Incluir Gráficos na Janela de Saída:</b> Marque se você deseja incluir versões em texto dos gráficos na janela de saída do BlueSky\n<br/><br/>\n<b>Máximo de Valores Distintos:</b> O número máximo de valores para exibir frequências. Se uma variável tiver mais valores distintos do que este número, as frequências restantes serão relatadas \ncomo uma categoria inteira, juntamente com o número de valores distintos adicionais. Para variáveis de caractere, os valores mais frequentes são exibidos, então isso também controla quantos mostrar nesse caso. O padrão é 10.\n<br/><br/>\n<b>Dígitos Significativos:</b> Número de dígitos significativos a serem exibidos. O padrão é 2.\n<br/><br/>\n<b>Pacotes R Necessários:</b> summarytools\n\t\t\t"
+  }
+}

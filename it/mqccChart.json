@@ -1,0 +1,18 @@
+{
+  "title": "Grafico di Controllo Qualità Multivariato (MQCC)",
+  "navigation": "Grafico MQCC",
+  "summaryPrintChk": "Stampa il riepilogo oltre ai grafici",
+  "variableListSelcted": "Dati (seleziona una o più variabili) da graficare",
+  "groupingVariable": "(Facoltativo) Seleziona la variabile di raggruppamento se sono presenti sottogruppi",
+  "excludeGroups": "(Facoltativo) escludi gruppi (se i sottogruppi sono numerici) dal calcolo/grafico (ad esempio specifica come 1:10 o separati da virgola come 1,4,5,7:12)",
+  "groupsTobeUsedAsNewData": "(Facoltativo) Nuovi Dati - gruppi (se i sottogruppi sono numerici) da utilizzare come Nuovi Dati da graficare (ad esempio specifica come 1:25 o 1,4,5,7:12) - nuovi dati da tracciare ma non inclusi nei calcoli dei limiti",
+  "limitsChk": "Se i limiti di controllo (Fase I) devono essere calcolati e tracciati",
+  "pred_limitsChk": "Se i limiti di previsione (Fase II) devono essere calcolati e tracciati",
+  "confidence_level": "(Facoltativo) Livello di confidenza: lascia la formula predefinita come mostrato (dove p sarà calcolato automaticamente come il numero di variabili selezionate). Altrimenti specifica un valore numerico compreso tra 0 e 1 da utilizzare come livello di confidenza per calcolare i limiti di probabilità",
+  "genVarianceChk": "Traccia il grafico di controllo per la Varianza Generalizzata |S| per le variabili selezionate (e deve essere selezionata una variabile di raggruppamento)",
+  "help": {
+    "title": "Grafico di Controllo Qualità Multivariato (mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tLa funzione mqcc per eseguire il controllo statistico della qualità multivariata e la varianza generalizzata |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(mqcc, package = qcc) e help(GVcontrol, package = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato boiler dal pacchetto qcc con il menu Carica Dataset selezionando il pacchetto qcc e poi selezionando il dataset boiler da caricare\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSeleziona le variabili dal dataset boiler, lascia tutto come predefinito e esegui la finestra di dialogo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPuoi anche utilizzare il file di dataset di esempio chiamato widgets_mqcc.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer tracciare la varianza generalizzata |S|, il dataset deve avere una colonna con i numeri dei sottogruppi - altrimenti non verrà tracciato\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial qcc su https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

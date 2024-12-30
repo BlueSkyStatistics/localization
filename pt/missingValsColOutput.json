@@ -1,0 +1,10 @@
+{
+  "title": "Análise de Valores Ausentes, layout de coluna",
+  "navigation": "Layout de Coluna",
+  "label1": "Exibe os resultados de valores ausentes em formato de coluna",
+  "help": {
+    "title": "Análise de Valores Ausentes",
+    "r_help": "ajuda(sapply)",
+    "body": "\n            <b>Descrição</b></br>\n            Exibe as seguintes informações sobre valores ausentes<br/>\n            1. O número de variáveis e observações no conjunto de dados<br/>\n            2. A contagem de valores ausentes por variável<br/>\n            3. A contagem de valores não ausentes por variável<br/>\n            4. Os números das linhas das variáveis que contêm valores ausentes<br/>\n            Usamos várias funções no pacote base, incluindo sapply, que, ifelse<br/>\n            <b>Pacote</b></br>\n            base</br>\n            <b>Ajuda</b></br>\n            Para ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando ajuda(sapply) criando um bloco de código R clicando + na janela de saída\n"
+  }
+}

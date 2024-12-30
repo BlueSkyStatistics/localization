@@ -1,0 +1,14 @@
+{
+  "title": "Estatísticas Numéricas, usando summarize",
+  "navigation": "Resumos Numéricos, usando summarize (Legado)",
+  "tvarbox1": "Variáveis Selecionadas",
+  "tvarbox2": "Agrupar por",
+  "label1": "Opções de Exibição",
+  "horizontal": "Exibição Horizontal",
+  "vertical": "Exibição Vertical",
+  "help": {
+    "title": "Estatísticas Numéricas, usando summarize",
+    "r_help": "",
+    "body": "\n<b>Descrição</b></br>\nProduz as seguintes estatísticas numéricas para cada grupo das variáveis-alvo. As variáveis-alvo podem ser opcionalmente agrupadas por uma ou mais variáveis fatoriais ou numéricas. Imprime as seguintes informações para as variáveis-alvo ou cada grupo que as variáveis-alvo estão agrupadas, a saber, min, 1º quantil (25%), max, média, mediana, 3º quantil (75%), soma, variância, desvio padrão, erro padrão, assimetria, curtose\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n##A função abaixo é executada para cada variável-alvo e os dataframes resultantes são transpostos e combinados<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndataset1: Este é o conjunto de dados\n</li>\n<li>\ngroup_by: Agrupar opcionalmente as variáveis-alvo por uma ou mais variáveis fatoriais ou numéricas\n</li>\n<li>\nsummarize: Resumir as variáveis-alvo ou grupos das variáveis-alvo (se as variáveis especificadas no group_by) pelas funções de resumo especificadas, a saber, média, mediana, min...\n</li>\n</ul>\n<b>Valor</b></br>\nUm objeto da classe \"data.frame\", fornecendo os resultados para cada função em cada variável.</br>\n<b>Pacote</b></br>\ncaret</br>\n<b>Ajuda</b></br>\nA ajuda do R não está disponível porque escrevemos código personalizado usando várias funções R. Se você precisar inspecionar o código, clique no botão \"<>\".</br>\n    "
+  }
+}

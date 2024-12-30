@@ -1,0 +1,17 @@
+{
+  "title": "Tarih Değişkenlerini Karaktere Dönüştür",
+  "navigation": "Tarihi Karaktere Dönüştür",
+  "label1": "Dönüştürülen değişkenler için bir ek veya ön ek seçin",
+  "suffix": "Ek",
+  "prefix": "Ön Ek",
+  "prefixOrSuffix": "Bir ön ek veya ek girin",
+  "Destination": "Karaktere dönüştürülecek tarih değişkenlerini seçin",
+  "DateFormat": "Dönüştürülecek tarih formatını seçin",
+  "TimeZone": "Bir zaman dilimi seçin (varsayılan - hiçbir şey seçilmediğinde PC'nin yerel zaman dilimidir)",
+  "advanced_lbl": "Gelişmiş",
+  "help": {
+    "title": "Tarihi Karaktere Dönüştür",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>Açıklama</b></br>\nTarih (posixct ve tarih sınıfı) karaktere dönüştürülür - tarihin görüntüleneceği formatı kontrol etmek için. Dize olarak üretilmesi gereken formatı belirtirsiniz, yani yıl/ay/gün veya ay-gün=yıl vb.\nYukarıdaki fonksiyon, temel paket içindeki strftime'ı dahili olarak çağırır. Birden fazla değişkeni desteklemek için strftime'ı genişlettik.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\n​data: Veri setinin adı\n</li>\n<li>\nvarNames: Karaktere dönüştürülmesi gereken posixct ve tarih sınıfı değişkenleri​\n</li>\n<li>\ndateFormat: Bir karakter dizesi. Format yöntemleri için varsayılan \"%Y-%m-%d %H:%M:%S\"'dir, eğer herhangi bir öğe gece yarısı olmayan bir zaman bileşenine sahipse, aksi takdirde \"%Y-%m-%d\"'dir. Eğer options(\"digits.secs\") ayarlanmışsa, saniyeler için belirtilen sayıda basamağa kadar yazdırılacaktır\n</li>\n<li>\ntimezone: Dönüştürme için kullanılacak zaman dilimini belirten bir karakter dizesi. Sistem spesifik (bkz. as.POSIXlt), ancak \"\" mevcut zaman dilimidir ve \"GMT\" UTC'dir. Geçersiz değerler genellikle UTC olarak işlenir, bazı platformlarda bir uyarı ile.\n</li>\n<li>\nprefixOrSuffix: Yeni dize değişkenleri için bir ön ek veya ek belirtin. Ya c(\"prefix\") ya da c(\"suffix\") alır. Bu ön ek/ek ile oluşturulan yeni değişkenler, orijinal değişken adının önüne/sonuna eklenir.\n</li>\n</ul>\n<b>Paket</b></br>\nbas</br>\n<b>Yardım</b></br>\nyardım(strftime)    \n"
+  }
+}

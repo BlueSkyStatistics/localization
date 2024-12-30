@@ -1,0 +1,15 @@
+{
+  "title": "Una panoramica rapida della funzionalità Design of Experiments (DoE)",
+  "navigation": "Panoramica DoE",
+  "lbl1": "1. Per creare un Design sotto DOE -> menu crea design, prima hai bisogno di un dataset con i dettagli dei fattori da cui creare il design",
+  "lbl2": "2. Per iniziare, scegli uno dei dataset di esempio (file excel) forniti nella directory dei dataset di esempio nella tua directory di installazione di BlueSky Statistics oppure puoi creare una tabella/dataset di dettagli dei fattori al volo con DOE -> Crea dettagli fattori DoE",
+  "lbl3": "3. Una volta aperto un dataset con il menu di apertura file o creato al volo nel passo 2 sopra, vai sotto DOE -> menu crea design per creare un design appropriato",
+  "lbl4": "4. Dopo che un design è stato creato con successo, apparirà nella griglia UI del dataset. Puoi usare il menu DOE -> Ispeziona Design per ispezionare il design appena creato",
+  "lbl5": "5. Esportiamo il design in una directory del file system con il menu DOE -> Esporta Design. Creerà automaticamente tre file (.csv, .rda, .html) con gli stessi nomi del dataset di design nella griglia UI nel percorso della directory del file specificato",
+  "lbl6": "6. Il file csv esportato nel passo 5 è destinato ad essere utilizzato per impostare gli esperimenti nel mondo reale come specificato nel design per raccogliere/registrare risultati per analisi successive",
+  "lbl7": "7. I risultati vengono registrati e aggiunti come colonne separate chiamate risposte nel vocabolario DoE nel file csv. Non cambiare l'estensione del file csv in nessun altro formato di file. Vedi la directory del dataset di esempio per DoE, esempi di file csv contrassegnati come conresp per ottenere i valori per le colonne di risultato/riposta da copiare per creare colonne di risposta nel tuo file csv che è stato esportato come parte dell'esportazione del design nel passo 5 sopra",
+  "lbl8": "8. Importiamo il file di design csv con colonne di risposta aggiunte di nuovo nell'app BlueSky Statistic con il menu DOE -> Importa Risposta Design",
+  "lbl9": "9. Per importare il file csv di design nel passo 8, il design originale (che è stato esportato) deve essere disponibile nella griglia UI del dataset. Se non è disponibile, usa il menu di apertura file per caricare il file .rda del design che è stato creato come parte dell'esportazione del design nel passo 5",
+  "lbl10": "10. Dopo che il file csv è stato importato con successo contro il giusto dataset di design attivo e ha creato un nuovo design con le colonne di risposta, puoi usare il menu DOE -> Ispeziona Design per ispezionare il design con le colonne di risposta",
+  "lbl11": "11. Ora il design con le colonne di risposta è pronto per l'analisi con il menu DOE -> Analizza Design con vari metodi di analisi ad es. Modello lineare, Modello di superficie di risposta, ecc."
+}

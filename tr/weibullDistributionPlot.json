@@ -1,0 +1,26 @@
+{
+  "title": "Weibull Dağılım Grafiği",
+  "navigation": "Weibull Dağılım Grafiği",
+  "shape": "Şekil",
+  "scale": "Ölçek",
+  "pdenfun": "Yoğunluk fonksiyonunu çiz",
+  "pdstfun": "Dağılım fonksiyonunu çiz",
+  "lblregions": "Yoğunluk fonksiyonu altında bölgeleri isteğe bağlı olarak belirtin",
+  "xvals": "x-değerleri",
+  "quantiles": "kuantiller",
+  "lblRegFill": "Doldurulacak bölgeler (bir veya iki belirtin veya boş bırakın)",
+  "lblreg1": "Bölge 1:",
+  "lblreg2": "Bölge 2:",
+  "lblregfrm": "Başlangıç",
+  "lblregto": "Bitiş",
+  "lblregcol": "Renk",
+  "lblLegPos": "Lejantın konumu",
+  "toprt": "Üst sağ",
+  "toplt": "Üst sol",
+  "topmid": "Üst merkez",
+  "help": {
+    "title": "Weibull Dağılım Grafiği",
+    "r_help": "help(qweibull, package=stats)",
+    "body": "\n            ​​\n            <b>Açıklama</b>\n            <br/>\n            Weibull dağılımı için yoğunluk, dağılım fonksiyonu, kuantile fonksiyonu ve rastgele üretim, şekil ve ölçek parametreleri ile.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : kuantillerin vektörü.</li>\n                \n                \n                <li>p : olasılıkların vektörü.</li>\n                \n                \n                <li>n : gözlem sayısı. Eğer length(n) > 1 ise, uzunluk gereken sayı olarak alınır.</li>\n                \n                \n                <li>shape, scale : şekil ve ölçek parametreleri, ikincisi varsayılan olarak 1'dir.</li>\n                \n                \n                <li>log, log.p : mantıksal; eğer TRUE ise, olasılıklar p log(p) olarak verilir.</li>\n                \n                \n                <li>lower.tail : mantıksal; eğer TRUE (varsayılan), olasılıklar P[X ≤ x] olarak, aksi takdirde P[X > x] olarak verilir.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Ayrıntılar</b>\n            <br/>\n            Şekil parametresi a ve ölçek parametresi b olan Weibull dağılımının yoğunluğu\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            x > 0 için verilir. Kümülatif dağılım fonksiyonu F(x) = 1 - exp(- (x/b)^a) x > 0'da, ortalama E(X) = b Γ(1 + 1/a) ve Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2) olarak verilir.\n            <br/>\n            <br/><b>Değer</b>\n            <br/>\n            dweibull yoğunluğu verir, pweibull dağılım fonksiyonunu verir, qweibull kuantile fonksiyonunu verir ve rweibull rastgele sapmalar üretir.\n            <br/>\n            Geçersiz argümanlar NaN döndürür ve bir uyarı verir.\n            <br/>\n            Sonucun uzunluğu rweibull için n tarafından belirlenir ve diğer fonksiyonlar için sayısal argümanların uzunluklarının maksimumudur.\n            <br/>\n            n dışındaki sayısal argümanlar sonucun uzunluğuna göre geri dönüştürülür. Mantıksal argümanların yalnızca ilk elemanları kullanılır.\n            <br/>\n            <br/><b>Not</b>\n            <br/>\n            Kümülatif tehlike <code>H(t) = - log(1 - F(t))</code> şudur:\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            bu sadece <code>H(t) = (t/b)^a</code> dır.            \n      "
+  }
+}

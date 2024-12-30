@@ -1,0 +1,17 @@
+{
+  "title": "Örneklem Büyüklüğü, Cohen'in Kappa'sının Hassasiyeti",
+  "navigation": "Cohen'in Kappa'sı",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "kappa": "Kappa (0-1)",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "raters": "Değerlendirici Sayısı (2-6)",
+  "categories": "Kategori Sayısı (2-5)",
+  "props": "Her Kategorideki Oranlar; virgülle ayırın, örn. .3, .7; kategori sayısıyla eşleşmeli ve toplamı 1 olmalıdır",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Cohen'in Kappa'sının Hassasiyeti",
+    "r_help": "help(prec_kappa, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak Cohen'in kappa'sı için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığının genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>Kappa:</b> Beklenen kappa değerini belirtin\n<br/><br/>\n<b>Güven Düzeyi:</b> Güven aralığının istenen düzeyini belirtin\n<br/><br/>\n<b>Değerlendirici Sayısı:</b> Her bir denek için değer sağlayacak değerlendirici sayısını belirtin.\n<br/><br/>\n<b>Kategori Sayısı:</b> Sonuç değişkenindeki kategori sayısını belirtin\n<br/><br/>\n<b>Her Kategorideki Oranlar:</b> Her kategorideki beklenen denek oranını belirtin, virgülle ayırın. Belirtilen değerlerin sayısının belirtilen kategori sayısıyla eşleşmesi ve toplamının 1 olması gerektiğini unutmayın.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Importa Design - deve essere un file csv con colonne di risposta aggiunte al design precedentemente esportato",
+  "navigation": "Importa Risposta Design",
+  "datasetname": "Nome per creare il design con risposta(e)",
+  "importResp": "Percorso del file per il file di design (deve essere un file csv) che contiene colonne di risposta",
+  "help": {
+    "title": "Importa Risposte in un Design esistente",
+    "r_help": "help(add.response, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tImporta il file csv del Design con colonne di risposta aggiunte, cioè risultati ricodificati dagli esperimenti condotti dal design originale precedentemente esportato\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLo scopo di importare il file csv contro un design già aperto nella griglia dell'interfaccia utente del dataset è quello di aggiungere automaticamente le colonne di risposta dal file csv al design nella griglia dell'interfaccia utente e creare un nuovo design con il nome specificato \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna volta creato il nuovo design con le colonne di risposta - questo può essere analizzato con vari metodi di analisi nel menu DOE -> Analizza Design\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInoltre, la designazione/non designazione di una o più colonne di risposta può essere eseguita tramite il menu DOE -> Modifica Design -> Aggiungi/Rimuovi Risposta \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe il design richiesto non è già aperto nella griglia dell'interfaccia utente del dataset, utilizzando il menu File Apri, carica l'oggetto R di design (.rda file) che è stato precedentemente esportato con il menu \"Esporta Design\" in una directory del file system.  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer ulteriori informazioni - usa R help(add.response, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

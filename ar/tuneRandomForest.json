@@ -1,0 +1,16 @@
+{
+  "title": "ضبط نموذج الغابة العشوائية",
+  "navigation": "ضبط",
+  "dependentvar": "المتغير التابع",
+  "independentvars": "المتغير (المتغيرات) المستقلة",
+  "ntreetry": "عدد الأشجار للتجربة",
+  "stepfactor": "عامل الخطوة",
+  "improve": "تحسين",
+  "trace": "تتبع",
+  "plot": "رسم",
+  "help": {
+    "title": "ضبط نموذج الغابة العشوائية",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>الوصف</b></br>\nبدءًا من القيمة الافتراضية لـ mtry، ابحث عن القيمة المثلى (بالنسبة لتقدير خطأ Out-of-Bag) لـ mtry لنموذج randomForest. \n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nx : مصفوفة أو إطار بيانات لمتغيرات التنبؤ\n</li>\n<li>\ny : متجه الاستجابة (عامل للتصنيف، رقمي للتراجع)\n</li>\n<li>\nntreeTry : عدد الأشجار المستخدمة في خطوة الضبط.\n</li>\n<li>\nstepFactor : في كل تكرار، يتم تضخيم (أو تقليل) mtry بواسطة هذه القيمة.\n</li>\n<li>\nimprove : يجب أن يكون التحسن (النسبى) في خطأ OOB بهذا القدر حتى تستمر عملية البحث\n</li>\n<li>\ntrace : ما إذا كان يجب طباعة تقدم البحث.\n</li>\n<li>\nplot : ما إذا كان يجب رسم خطأ OOB كدالة لـ mtry.\n</li>\n<li>\n... : خيارات يجب إعطاؤها لـ randomForest\n</li>\n</ul>\n<b>القيمة</b></br>\nترجع مصفوفة تحتوي على العمود الأول القيم mtry التي تم البحث عنها، والعمود الثاني خطأ OOB المقابل.</br>\n<b>الحزمة</b></br>\nrandomForest​;BlueSky</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي في محرر بناء جملة R help(tuneRF,package='randomForest')\n"
+  }
+}

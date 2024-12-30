@@ -1,0 +1,17 @@
+{
+  "title": "Örneklem Büyüklüğü, Risk Oranının Hassasiyeti",
+  "navigation": "Risk Oranı",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n1": "Grup 1 Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "ratio": "Grup 2'nin Grup 1 Örneklem Büyüklüğüne Oranı",
+  "prop1": "Grup 1 Sonuç Oranı",
+  "prop2": "Grup 2 Sonuç Oranı",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "method": "Güven Aralığı Yöntemi",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Risk Oranının Hassasiyeti",
+    "r_help": "help(prec_riskratio, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak oranların (risk oranı / göreli risk) örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Grup 1 Örneklem Büyüklüğü:</b> Grup 1'deki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığı genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>Grup 2'nin Grup 1 Örneklem Büyüklüğüne Oranı:</b> Grup 2 örneklem büyüklüğünün grup 1 örneklem büyüklüğüne oranını belirtin. 1 değeri eşit örneklem büyüklüklerini ifade eder.\n<br/><br/>\n<b>Grup 1 Sonuç Oranı:</b> Grup 1'de 'pozitif' sonuca sahip deneklerin oranını belirtin\n<br/><br/>\n<b>Grup 2 Sonuç Oranı:</b> Grup 2'de 'pozitif' sonuca sahip deneklerin oranını belirtin\n<br/><br/>\nRisk oranının, grup 1'deki oran ile grup 2'deki oran arasındaki bölme işlemi ile hesaplanacağını unutmayın.\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Güven Aralığı Yöntemi:</b> Kullanılacak güven aralığı türünü belirtin. Koopman (koopman), her zaman Pearson'ın ki-kare testine tutarlı olan asimptotik bir puan güven aralığı sağlar. Bu, önerilen aralıktır (Fagerland ve diğerleri). Katz (katz), güven aralığını hesaplamak için logaritmik bir dönüşüm kullanır. Oranlardan biri sıfırsa CI hesaplanamaz. Her iki oran da 1 ise, standart hata tahmininin sıfır olması sonucu [1, 1] CI'si elde edilir.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

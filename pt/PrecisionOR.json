@@ -1,0 +1,17 @@
+{
+  "title": "Tamanho da Amostra, Precisão de uma Razão de Chances",
+  "navigation": "Razão de Chances",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n1": "Tamanho da Amostra do Grupo 1",
+  "width": "Largura do Intervalo de Confiança",
+  "ratio": "Razão do Tamanho da Amostra do Grupo 2 para o Grupo 1",
+  "prop1": "Proporção de Resultado do Grupo 1",
+  "prop2": "Proporção de Resultado do Grupo 2",
+  "conflevel": "Nível de Confiança (0-1)",
+  "method": "Método do Intervalo de Confiança",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão de uma Razão de Chances",
+    "r_help": "help(prec_or, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma razão de chances com base na largura do intervalo de confiança. Ela calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra do Grupo 1:</b> Especifique o número de sujeitos no grupo 1\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada. A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>Razão do Tamanho da Amostra do Grupo 2 para o Grupo 1:</b> Especifique a razão do tamanho da amostra do grupo 2 para o tamanho da amostra do grupo 1. Um valor de 1 significa tamanhos de amostra iguais.\n<br/><br/>\n<b>Proporção de Resultado do Grupo 1:</b> Especifique a proporção de sujeitos no grupo 1 com o resultado 'positivo'\n<br/><br/>\n<b>Proporção de Resultado do Grupo 2:</b> Especifique a proporção de sujeitos no grupo 2 com o resultado 'positivo'\n<br/><br/>\nObserve que a razão de chances corresponderá às chances do resultado 'positivo' no grupo 1 em relação às chances do resultado 'positivo' no grupo 2.\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Método do Intervalo de Confiança:</b> Especifique o tipo de intervalo de confiança ajustado a ser utilizado. Woolf (woolf), Gart (gart) e logit suavizado por independência (indip_smooth) pertencem a \numa família geral de intervalos de confiança ajustados, adicionando 0 (woolf) a cada célula, 0,5 (gart) a cada célula, ou um ajuste para cada célula com base nos dados observados \n(suavizado por independência). Em gart e indip_smooth, a estimativa do IC não é possível se p1 = 0, caso em que a OR se torna 0, mas o limite inferior do IC é > 0. Além disso, \nse p1 = 1 e p2 < 1, ou se p1 > 0 e p2 = 0, a OR se torna ∞, mas o limite superior do IC é finito. Para os intervalos aproximados, gart e indip_smooth são os intervalos recomendados \n(Fagerland et al. 2011).\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

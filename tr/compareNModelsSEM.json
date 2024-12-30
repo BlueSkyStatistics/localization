@@ -1,0 +1,13 @@
+{
+  "title": "N SEM Modellerini Karşılaştır",
+  "navigation": "N SEM Modellerini Karşılaştır",
+  "label1": "N SEM modellerini karşılaştırır.",
+  "label2": "Aşağıdaki sınıflardan modelleri seçin (R sınıfı parantez içinde aşağıda)",
+  "label3": "Yapısal eşitlik modelleri (lavaan)",
+  "modelselector1": "Karşılaştırmak için bir veya daha fazla model seçin:",
+  "help": {
+    "title": "N SEM Modellerini Karşılaştır",
+    "r_help": "help(lavTestLRT, package='lavaan')",
+    "body": "\n                <b>\nLRT testi (iç içe) lavaan modellerini karşılaştırmak için.</b></br>\n<b>Kullanım</b>\n<br/>\n<code> \nlavTestLRT(object, method = \"default\",\n            type = \"Chisq\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nobject:  lavaan sınıfından bir nesne.\n</li>\n</ul>\n<b>Değer</b><br/>\nBir anova sınıfı nesnesi. Tek bir argüman verildiğinde, bu modelin test istatistiğini döndürür. Bir dizi nesne verildiğinde, bu fonksiyon modelleri birbirine karşı test eder, modelleri serbestlik derecelerine göre yeniden sıraladıktan sonra<br/>\n<b>Paket</b></br>\nlavaan</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog overlay'inin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(lavTestLRT,package='lavaan')</br></br>\n<b>Örnekler</b><br/>\n<code> \nlavaan::lavTestLRT(Sem1,Sem2, Sem3)<br/>\n</code> <br/>\n                "
+  }
+}

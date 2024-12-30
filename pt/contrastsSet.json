@@ -1,0 +1,15 @@
+{
+  "title": "Definir Contrastes Para Variáveis de Fator",
+  "navigation": "Definir Contrastes",
+  "target": "Destino",
+  "label1": "Contrastes",
+  "Dummy": "Contrastes de Tratamento (dummy)",
+  "Deviation": "Contrastes de Soma (devição)",
+  "Helmert": "Contrastes de Helmert",
+  "Poly": "Contrastes Polinomiais",
+  "help": {
+    "title": "Definir Contrastes",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>Descrição</b></br>\n            ​Defina e visualize os contrastes associados a um fator.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            x: um objeto R.​\n            </li>\n            <li>\n            value: uma matriz numérica (ou uma matriz esparsa ou densa de uma classe que estende dMatrix do pacote Matrix) cujas colunas fornecem coeficientes para contrastes nos níveis de x, ou o nome (entre aspas) de uma função que computa tais matrizes, por exemplo, “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            stats</br>\n            <b>Ajuda</b></br>\n            help(contrasts, package ='stats')       \n            "
+  }
+}

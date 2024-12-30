@@ -1,0 +1,10 @@
+{
+  "title": "Trasponi, intero dataset",
+  "navigation": "Intero Dataset",
+  "transposedDataset": "Inserisci un nome per il dataset trasposto",
+  "help": {
+    "title": "Trasponi Intero Dataset",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Descrizione</b></br>\nInvoca la funzione di trasposizione nel pacchetto base che traspone il dataset. Devi specificare il nome del dataset che memorizza il dataset trasposto. Il nuovo dataset trasposto viene visualizzato nella griglia.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nFunzione chiamata: base::t(x)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: è una matrice o un dataframe\n</li>\n</ul>\n<b>Valore</b><br/>\nUna matrice, con dim e dimnames costruiti appropriatamente da quelli di x, e altri attributi tranne i nomi copiati.\n<br/>\n<b>Pacchetto</b></br>\nbase<br/>\n<b>Aiuto</b></br>\nhelp(t, package='base')\n"
+  }
+}

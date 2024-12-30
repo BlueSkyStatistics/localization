@@ -1,0 +1,13 @@
+{
+  "navigation": "Fattori solo (Legacy)",
+  "title": "Riepiloghi, solo fattori",
+  "subsetvars": "Variabili di risposta, 2 o più",
+  "ChkboxShowOnlyTopFewFactors": "Mostra conteggi solo per i primi N livelli di fattore",
+  "txtNumTopFactorsToShow": "Inserisci un valore per N",
+  "label1": "Nota: Quando la casella di controllo è deselezionata, verranno visualizzati i conteggi per TUTTI i livelli. Questo potrebbe richiedere un tempo considerevole se hai molti livelli di fattore",
+  "help": {
+    "title": "Solo fattori",
+    "r_help": "",
+    "body": "\n<b>Descrizione</b></br>\nVisualizza i conteggi di ogni livello di ciascuna variabile fattore.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvars: Le variabili fattore per visualizzare i conteggi dei livelli\n</li>\n<li>\ndata: Il nome del dataset\n</li>\n<li>\nshow.only.top.factors: Un booleano che determina se visualizzare i conteggi solo per i livelli superiori o per tutti i livelli.\n</li>\n<li>\nmax.number.top.factors: se show.only.top.factors = TRUE, specifica il numero di livelli per cui visualizzare i conteggi\n</li>\n</ul>\n"
+  }
+}

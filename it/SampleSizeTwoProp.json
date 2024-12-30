@@ -1,0 +1,19 @@
+{
+  "title": "Dimensione del Campione, Test di Due Proporzioni",
+  "navigation": "Due Proporzioni",
+  "howtouse": "Per calcolare la dimensione del campione: specificare entrambe le proporzioni di gruppo e la potenza\nPer calcolare la potenza: specificare entrambe le proporzioni di gruppo e la dimensione del campione\nPer calcolare la differenza di proporzione rilevabile: specificare la dimensione del campione, la potenza e la proporzione del gruppo 2",
+  "n": "Dimensione del Campione",
+  "power": "Potenza (0-1)",
+  "propgrp1": "Proporzione Gruppo 1",
+  "propgrp2": "Proporzione Gruppo 2",
+  "ratio": "Rapporto Dimensione del Campione Gruppo 1 vs Gruppo 2",
+  "siglevel": "Livello di Significatività (0-1)",
+  "alternativeopt": "Ipotesi Alternativa",
+  "twosided": "Due Lati",
+  "onesided": "Un Lato",
+  "help": {
+    "title": "Dimensione del Campione, Test di Due Proporzioni",
+    "r_help": "help(epi.sscohortc, package ='epiR')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test di proporzioni a due campioni. Calcola la dimensione del campione, la potenza o la dimensione dell'effetto (differenza nelle proporzioni, rapporto di tasso, rapporto di probabilità) quando l'utente \nspecifica le altre due.\n<br/><br/>\n<b>Dimensione del Campione:</b> Specificare il numero di soggetti nello studio\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera.\n<br/><br/>\n<b>Proporzione Gruppo 1:</b> Specificare la proporzione nel gruppo 1\n<br/><br/>\n<b>Proporzione Gruppo 2:</b> Specificare la proporzione nel gruppo 2\n<br/><br/>\n<b>Rapporto Dimensione del Campione Gruppo 1 vs Gruppo 2:</b> Specificare il rapporto desiderato delle dimensioni del campione (N gruppo 1 diviso N gruppo 2). Un rapporto di 1 significa dimensioni del campione uguali.\n<br/><br/>\n<b>Livello di Significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Ipotesi Alternativa:</b> Specificare se il test è a due lati o a un lato\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> epiR\n\t\t\t"
+  }
+}

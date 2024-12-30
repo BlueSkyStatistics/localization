@@ -1,0 +1,10 @@
+{
+  "title": "Riassumere un Modello",
+  "navigation": "Riassumere un modello",
+  "modelselector1": "Seleziona un modello",
+  "help": {
+    "title": "Riassumere un Modello",
+    "r_help": "help(summary)",
+    "body": "\n                <b>Descrizione</b></br>\nsummary è una funzione generica utilizzata per produrre riassunti dei risultati di varie funzioni di adattamento del modello. La funzione invoca metodi particolari che dipendono dalla classe del primo argomento, ad esempio summary.lm (modello lineare), summary.glm (modello lineare generalizzato)\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nobject: un oggetto per il quale si desidera un riassunto.\n</li>\n</ul>\n<b>Valore</b><br/>\nLa forma del valore restituito da summary dipende dalla classe del suo argomento. Vedi la documentazione dei metodi particolari, cioè help(summary.lm), help(summary.glm) per dettagli su cosa viene prodotto da quel metodo.</br>\n<b>Pacchetto</b></br>\nbase</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(summary)\n                "
+  }
+}

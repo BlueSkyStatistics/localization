@@ -1,0 +1,13 @@
+{
+  "title": "부분 점수 모델 (다면적)",
+  "navigation": "부분 점수 모델 (다면적)",
+  "modelname": "모델 이름 입력",
+  "destinationvars": "항목",
+  "firstlevel": "첫 번째 수준 변수",
+  "secondlevel": "두 번째 수준 변수",
+  "help": {
+    "title": "부분 점수 모델 (다면적)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>설명</b>\n            <br/>\n            다면적 부분 점수 모델에 대한 매개변수 추정치를 생성합니다.\n            <br/><br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp, facets=, formulaA = ~ formulaA = ~ item*step+rater, pid = , verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n            <li>\n            resp: 다항 항목 응답이 포함된 데이터 프레임 k=0,...,K. 누락된 응답은 NA로 선언해야 합니다.\n            </li>\n            <li>\n            formulaA: 설계 공식 (tam.mml.mfr에만 적용). 자세한 도움말을 참조하십시오. 또한, facet의 모든 효과를 0으로 설정할 수 있습니다. 예: item*step + 0*rater (자세한 도움말 참조).\n            </li>\n            <li>\n            facets: facet 항목이 포함된 데이터 프레임 (tam.mml.mfr에만 적용)\n            </li>\n            <li>\n            pid: 선택적 개인 식별자 벡터\n            </li>\n            <li>\n            verbose: 반복 중에 출력이 인쇄되어야 하는지 여부를 나타내는 논리값.\n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>패키지</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>도움말</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

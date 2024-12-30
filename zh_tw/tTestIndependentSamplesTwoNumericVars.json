@@ -1,15 +1,15 @@
 {
-  "title": "t檢驗，配對樣本",
-  "navigation": "t檢驗，配對樣本",
-  "tvarbox1": "第一個數值變量",
-  "tvarbox3": "第二個數值變量",
-  "label1": "備擇假設",
+  "title": "t-檢定，配對樣本",
+  "navigation": "t-檢定，配對樣本",
+  "tvarbox1": "第一個數值變數",
+  "tvarbox3": "第二個數值變數",
+  "label1": "替代假設",
   "test1": "差異 != mu",
   "test2": "差異 > mu",
   "test3": "差異 < mu",
   "chkbox1": "假設方差相等",
-  "txtbox2": "零假設 (mu)",
-  "txtbox1": "信賴水平",
+  "txtbox2": "虛無假設 (mu)",
+  "txtbox1": "信心水準",
   "cohensdNoCorrection": "Cohen's d",
   "hedgesgNoCorrection": "Hedges' g",
   "glassdNoCorrection": "Glass's delta",
@@ -18,12 +18,12 @@
   "effectsizes": "效應大小",
   "showEffectSizes": "顯示效應大小",
   "cohensdCorrect": "Cohen's d 進行偏差修正",
-  "label3": "Cohen's d 選項",
-  "label4": "Hedges' g 選項",
-  "label5": "Glass's delta 選項",
+  "label3": "Cohen's d 的選項",
+  "label4": "Hedges' g 的選項",
+  "label5": "Glass's delta 的選項",
   "help": {
-    "title": "t檢驗，獨立樣本",
+    "title": "t-檢定，獨立樣本",
     "r_help": "help(t.test, package ='stats')",
-    "body": "\n<b>描述</b></br>\n對數據向量執行單樣本和雙樣本t檢驗。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## 預設 S3 方法:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## S3 方法用於類 'formula'<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個（非空）數值數據向量。\n</li>\n<li>\ny: 一個可選的（非空）數值數據向量。\n</li>\n<li>\nalternative: 一個字符字符串，指定備擇假設，必須是 \"two.sided\"（預設），\"greater\" 或 \"less\" 之一。您可以只指定首字母。\n</li>\n<li>\nmu: 一個數字，表示均值的真實值（或如果您正在執行雙樣本檢驗，則表示均值差異）。\n</li>\n<li>\npaired: 一個邏輯值，指示您是否希望進行配對t檢驗。\n</li>\n<li>\nvar.equal: 一個邏輯變量，指示是否將兩個方差視為相等。如果為TRUE，則使用合併方差來估計方差，否則使用Welch（或Satterthwaite）對自由度的近似。\n</li>\n<li>\nconf.level: 區間的信賴水平。\n</li>\n<li>\nformula: 形式為 lhs ~ rhs 的公式，其中 lhs 是給定數據值的數值變量，rhs 是具有兩個級別的因子，給出相應的組。\n</li>\n<li>\ndata: 一個可選的矩陣或數據框（或類似的：見 model.frame），包含公式中的變量。默認情況下，變量來自環境(formula)。\n</li>\n<li>\nsubset: 一個可選的向量，指定要使用的觀察子集。\n</li>\n<li>\nna.action: 一個函數，指示當數據包含NAs時應該發生什麼。默認為 getOption(\"na.action\").\n</li>\n<li>\n...: 進一步的參數，傳遞給或從方法。\n</li>\n</ul>\n<b>詳細信息</b></br>\n公式介面僅適用於2樣本檢驗。</br>\nalternative = \"greater\" 是 x 的均值大於 y 的備擇假設。</br>\n如果 paired 為 TRUE，則必須同時指定 x 和 y，並且它們的長度必須相同。缺失值會被靜默刪除（如果 paired 為 TRUE，則成對刪除）。如果 var.equal 為 TRUE，則使用合併方差的估計。默認情況下，如果 var.equal 為 FALSE，則分別為兩個組估計方差，並使用Welch對自由度的修正。</br>\n如果輸入數據在有效上是常數（與兩個均值中的較大者相比），則會生成錯誤。</br>\n<b>值</b><br/>\n一個具有 \"htest\" 類的列表，包含以下組件：<br/>\nstatistic: t統計量的值。<br/>\nparameter: t統計量的自由度。<br/>\np.value: 檢驗的p值。<br/>\nconf.int: 針對指定備擇假設的均值信賴區間。<br/>\nestimate: 估計的均值或均值差異，具體取決於它是單樣本檢驗還是雙樣本檢驗。<br/>\nnull.value: 指定的假設均值或均值差異，具體取決於它是單樣本檢驗還是雙樣本檢驗。<br/>\nalternative: 描述備擇假設的字符字符串。<br/>\nmethod: 指示執行了哪種類型的t檢驗的字符字符串。<br/>\ndata.name: 給出數據名稱的字符字符串。<br/>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\nhelp(t.test, package ='stats')\n"
+    "body": "\n<b>描述</b></br>\n對數據向量執行單樣本和雙樣本 t-檢定。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## 預設 S3 方法:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## 類別 'formula' 的 S3 方法<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nx: 一個（非空）數值數據向量。\n</li>\n<li>\ny: 一個可選的（非空）數值數據向量。\n</li>\n<li>\nalternative: 一個字符字符串，指定替代假設，必須是 \"two.sided\"（預設）、\"greater\" 或 \"less\" 之一。您可以僅指定首字母。\n</li>\n<li>\nmu: 一個數字，表示均值的真實值（或如果您執行雙樣本檢定則表示均值之間的差異）。\n</li>\n<li>\npaired: 一個邏輯值，指示您是否想要進行配對 t-檢定。\n</li>\n<li>\nvar.equal: 一個邏輯變數，指示是否將兩個方差視為相等。如果為 TRUE，則使用合併方差來估計方差，否則使用 Welch（或 Satterthwaite）對自由度的近似。\n</li>\n<li>\nconf.level: 區間的信心水準。\n</li>\n<li>\nformula: 形式為 lhs ~ rhs 的公式，其中 lhs 是給定數據值的數值變數，rhs 是具有兩個級別的因子，給出相應的組。\n</li>\n<li>\ndata: 一個可選的矩陣或數據框（或類似物：見 model.frame），包含公式中的變數。默認情況下，變數取自 environment(formula)。\n</li>\n<li>\nsubset: 一個可選的向量，指定要使用的觀察子集。\n</li>\n<li>\nna.action: 一個函數，指示當數據包含 NAs 時應該發生什麼。默認為 getOption(\"na.action\").\n</li>\n<li>\n...: 進一步的參數，傳遞給或從方法。\n</li>\n</ul>\n<b>詳細信息</b></br>\n公式介面僅適用於 2-樣本檢定。</br>\nalternative = \"greater\" 是 x 的均值大於 y 的替代假設。</br>\n如果 paired 為 TRUE，則必須指定 x 和 y，且它們必須具有相同的長度。缺失值會被靜默移除（如果 paired 為 TRUE，則成對移除）。如果 var.equal 為 TRUE，則使用合併方差的估計。默認情況下，如果 var.equal 為 FALSE，則分別為兩組估計方差，並使用 Welch 對自由度的修正。</br>\n如果輸入數據在有效上是常數（與兩個均值中較大的相比），則會生成錯誤。</br>\n<b>值</b><br/>\n一個類別為 \"htest\" 的列表，包含以下組件:<br/>\nstatistic: t-統計量的值。<br/>\nparameter: t-統計量的自由度。<br/>\np.value: 檢定的 p 值。<br/>\nconf.int: 對於指定的替代假設的均值的信賴區間。<br/>\nestimate: 根據是單樣本檢定還是雙樣本檢定，估計的均值或均值之間的差異。<br/>\nnull.value: 根據是單樣本檢定還是雙樣本檢定，指定的假設均值或均值差異。<br/>\nalternative: 描述替代假設的字符字符串。<br/>\nmethod: 指示執行了什麼類型的 t-檢定的字符字符串。<br/>\ndata.name: 給出數據名稱的字符字符串。<br/>\n<b>包</b></br>\nstats</br>\n<b>幫助</b></br>\nhelp(t.test, package ='stats')\n"
   }
 }

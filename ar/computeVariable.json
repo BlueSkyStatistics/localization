@@ -1,0 +1,14 @@
+{
+  "title": "احسب المتغير",
+  "navigation": "احسب",
+  "label1": "=",
+  "newvar": "اسم المتغير الجديد/القائم (بدون مسافات/رموز خاصة):",
+  "label2": "منشئ التعبيرات:",
+  "formula": "قم بإنشاء أمر حساب",
+  "placeHolder": "على سبيل المثال var1+var2+ceiling(var3)",
+  "help": {
+    "title": "احسب المتغير",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>الوصف</b></br>\nيحسب تعبيرًا ويخزن النتيجة في متغير/عمود من إطار البيانات/مجموعة البيانات</br>\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expression)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nDatasetX: اسم إطار البيانات/مجموعة البيانات.​\n</li>\n<li>\nvar1: العمود الجديد/القائم في مجموعة البيانات/إطار البيانات الذي يحتاج إلى حساب\n</li>\n<li>\nExpression: تعبير في شكل variable1 =variable2+variable3\n</li>\n</ul>\n<b>التفاصيل</b></br>\nيقيم التعبير ويخزن النتيجة في متغير/عمود من إطار البيانات/مجموعة البيانات</br>\n<b>الحزمة</b></br>\ndplyr</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي help(mutate, package ='dplyr') في نافذة محرر R\n            "
+  }
+}

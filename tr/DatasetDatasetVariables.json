@@ -1,0 +1,13 @@
+{
+  "title": "Değişken(ler)i Keşfet",
+  "navigation": "Değişkenleri Keşfet",
+  "variableListSelcted": "Keşfetmek için bir veya daha fazla değişken seçin",
+  "histCurveDispChk": "Histogramda normal bir eğri göster (eğrinin gösterilmesi için eksik değerler kaldırılır)",
+  "statTableOrientionChk": "Özet istatistikleri sütunlarda",
+  "histBins": "Histogram için kutu sayısını belirtin",
+  "help": {
+    "title": "Bir veya daha fazla değişkenin özelliklerini keşfedin",
+    "r_help": "help(summary)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tAşağıdaki tanımlayıcı istatistikleri ve grafikleri çıktılar:\n\t\t\t\tmin, max, ortalama, medyan, modlar, toplam, sd, cv (varyans katsayısı), var, standart hata, çarpıklık, basıklık, mad, iqr ve çeyrekler. Ayrıca, ortalama ve sd için %95 güven aralığı hesaplanır. Histogram ve QQ grafikler gösterilir. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(summary, package = base) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÇarpıklık ve basıklığı hesaplamak için, varsayılan olarak type = 3 parametresi kullanılır. type = 2 parametresi ile çarpıklık ve basıklık değerleri, MS Excel formülü SKEW() ve KURT() ile muhtemelen eşleşecektir.\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tDaha fazla detay için \n\t\t\t\t<br/>\n\t\t\t\thelp(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

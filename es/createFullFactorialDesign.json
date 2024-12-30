@@ -1,6 +1,6 @@
 {
-  "title": "Crear diseño factorial completo",
-  "navigation": "Crear diseño factorial completo",
+  "title": "Crear Diseño Factorial Completo",
+  "navigation": "Crear Diseño Factorial Completo",
   "datasetname": "Nombre del diseño",
   "selectedvars": "Seleccionar variables",
   "numOfBlocks": "Número de bloques",
@@ -10,8 +10,8 @@
   "randomseeds": "Semilla para la aleatorización",
   "randomizationChk": "Aleatorizar la generación del diseño",
   "help": {
-    "title": "Crear diseño factorial completo",
+    "title": "Crear Diseño Factorial Completo",
     "r_help": "help(fac.design, package = DoE.base)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción fac.design para generar diseños factoriales completos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ayuda detallada - use R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado factor_grid_full_factorial_Design.xlsx. Abra el archivo en la cuadrícula de datos a través del menú de apertura de archivos\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función fac.design genera diseños factoriales completos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - usa R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puedes usar el archivo de conjunto de datos de muestra llamado factor_grid_full_factorial_Design.xlsx. Abre el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

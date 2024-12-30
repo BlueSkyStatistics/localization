@@ -1,0 +1,10 @@
+{
+  "title": "تفاصيل حزمة R",
+  "navigation": "تفاصيل الحزمة",
+  "packageName": "اختر حزمة R مثبتة",
+  "help": {
+    "title": "تفاصيل حزمة R",
+    "r_help": "help(packageDescription, package='utils')",
+    "body": "\n<b>الوصف</b></br>\nيعرض وصف الحزمة المحددة\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \npackageDescription(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\npkg: سلسلة حرفية باسم الحزمة.\n</li>\n<li>\nlib.loc: متجه حرفي بأسماء دلائل مكتبات R، أو NULL. القيمة الافتراضية NULL تتوافق مع جميع المكتبات المعروفة حاليًا. إذا تم استخدام الافتراضي، يتم البحث في الحزم والأسماء المحملة قبل المكتبات.\n</li>\n<li>\nfields: متجه حرفي يعطي علامات الحقول التي يجب إرجاعها (إذا كانت هناك حقول أخرى في الملف يتم تجاهلها).\n</li>\n<li>\ndrop: إذا كانت TRUE وطول fields هو 1، يتم إرجاع سلسلة حرفية واحدة بقيمة الحقل المعني بدلاً من كائن من فئة \"packageDescription\".\n</li>\n</ul>\n<b>التفاصيل</b></br>\nوصف الحزمة</br>\n<b>أمثلة</b><br/>\n<code> \npackageDescription(\"stats\")\n</code> <br/>\n<b>الحزمة</b></br>\nutils</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي في محرر صيغة R help(packageDescription, package='utils')\n                "
+  }
+}

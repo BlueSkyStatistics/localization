@@ -1,0 +1,26 @@
+{
+  "title": "Ortalama Grafiği",
+  "navigation": "Ortalama Grafiği",
+  "x": "X ekseni, bir faktör değişkeni belirtin",
+  "y": "Y ekseni, bu değişken(ler) için ortalama hesaplanır",
+  "fill": "Gruplandır, bir faktör değişkeni belirtin",
+  "label1": "Hata çubukları",
+  "radiobuttonNo": "Hata çubuğu yok",
+  "radioButtonSe": "Standart hatalar",
+  "radiobuttonSd": "Standart sapmalar",
+  "radiobuttonCi": "Güven aralıkları",
+  "confidenceInterval": "Aralığı belirtin, örn. 0.95",
+  "alpha": "Opaklık (0-1)",
+  "flip": "Eksenleri çevir",
+  "specify_a_title": "Bir başlık girin",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Ortalama Grafiği",
+    "r_help": "",
+    "body": "\n            <b>Açıklama</b></br>\n            Ortalama Grafiği, ortalamanın verilerin farklı grupları arasında değişip değişmediğini görmek için kullanılır. Gruplandırma değişkeni analist tarafından tanımlanır. Her grubu, ortalamanın hesaplandığı alt gruplara ayırmanıza olanak tanıyan isteğe bağlı bir gruplandırma seviyesi vardır. Ortalamalarla birlikte isteğe bağlı olarak standart hataları, standart sapmaları ve güven aralıklarını da gösterebilirsiniz. Facetler, bir faktör değişkeni belirterek isteğe bağlı olarak oluşturulabilir.</br>\n            Ayrıca temaları isteğe bağlı olarak belirtebilir ve x ve y eksenleri için bir başlık ve etiketler belirtebilirsiniz.</br>\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            #Öncelikle özetler için bir veri seti oluşturuyoruz. Ortalama grafiği, özetler veri seti üzerinde çalıştırılır.</br>\n            #Grafik çalıştırıldıktan sonra özetler veri seti silinebilir.</br>\n            #test, özetler veri setini içerir</br>\n            test <- summarySE(Dataset2,measurevar=\"mpg\",groupvars=c(\"origin\",\"cylinder\"),na.rm=TRUE)</br>\n            #Eğer hata çubukları üst üste biniyorsa, position_dodge ile yatay olarak hareket ettirin, .03 sola ve sağa</br>\n            pd <- position_dodge(0.3)\n            ggplot(test,aes(x=origin,y=mpg,colour=cylinder,group=cylinder)) + geom_errorbar(aes(ymin=mpg-sd,ymax=mpg+sd),width=.1,position=pd) +geom_line(position=pd) +geom_point(position=pd) + labs(x = \"origin\",y = \"mpg\")</br>\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti\n            </li>\n            <li>\n            aes(): Verilerdeki değişkenlerin görsel özelliklere (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.\n            </li>\n            <li>\n            x: y değişkenindeki verileri gruplamak için kullanılan bir faktör/kategorik değişken. Her grup için ortalama çizilir.\n            </li>\n            <li>\n            y: Sayısal bir değişken\n            </li>\n            <li>\n            colour: x: değişkeni tarafından oluşturulan grupları alt gruplara ayırmak için kullanılan isteğe bağlı bir faktör değişkeni. Belirtilirse, her alt grup için ortalama çizilir. Her alt grup farklı bir renkte gösterilir.\n            </li>\n            <li>\n            group: Tüm alt grupların ortalamaları arasında bir çizgi çizen isteğe bağlı bir faktör değişkeni.\n            </li>\n            <li>\n            geom_line(): bir çizgi çizer\n            </li>\n            <li>\n            geom_errorbar(): hata çubuklarını çizer\n            </li>\n            <li>\n            labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (isteğe bağlıdır)\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (isteğe bağlıdır)\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (isteğe bağlıdır)\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirir (isteğe bağlıdır)\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            help(geom_line, package='ggplot2')</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_errorbar),help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.\n    "
+  }
+}

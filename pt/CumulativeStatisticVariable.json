@@ -1,0 +1,13 @@
+{
+  "title": "Variável de Estatística Cumulativa",
+  "navigation": "Variável de Estatística Cumulativa",
+  "varname": "Novo Nome da Variável (sem espaços)",
+  "statvar": "Variável para Estatística Cumulativa",
+  "groupbyvars": "Variáveis para Agrupar",
+  "func": "Estatística Cumulativa",
+  "help": {
+    "title": "Variável de Estatística Cumulativa",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>Estatísticas Cumulativas</b>\n<br/><br/>\nEste diálogo cria uma nova variável que armazena o valor cumulativo de uma estatística escolhida à medida que você avança pelas linhas na ordem atual do conjunto de dados. Você pode opcionalmente calcular esse valor cumulativo dentro de um ou mais grupos.\n<br/><br/>\n\n<b>Nome da Nova Variável:</b> Nome da variável que armazenará os valores cumulativos\n<br/><br/>\n\n<b>Variável para Estatística Cumulativa:</b> Variável para a qual os valores cumulativos serão calculados. Deve ser numérica.\n<br/><br/>\n\n<b>Variáveis para Agrupar:</b> Variáveis opcionais para calcular a estatística cumulativa dentro.\n<br/><br/>\n\n<b>Estatística Cumulativa:</b> Qual estatística será usada para a estatística cumulativa.\n<br/><br/>\n<ul>\n<li>cumsum: soma cumulativa</li>\n<li>cummin: mínimo cumulativo</li>\n<li>cummax: máximo cumulativo</li>\n<li>cummean: média cumulativa</li>\n<li>cummedian: mediana cumulativa</li>\n<li>cumgmean: média geométrica cumulativa</li>\n<li>cumhmean: média harmônica cumulativa</li>\n<li>cumvar: variância cumulativa</li>\n</ul>\n<br/><br/>\n<b>Pacotes R Requeridos:</b> cumstats, dplyr\n\t\t\t"
+  }
+}

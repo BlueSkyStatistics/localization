@@ -1,0 +1,15 @@
+{
+  "title": "Gerar automaticamente detalhes do fator (tamanho igual) para um estudo de DoE",
+  "navigation": "Detalhes do Fator (tamanho igual)",
+  "datasetname": "Nome da tabela de detalhes do fator",
+  "numOfVars": "Número de fatores",
+  "numOfFactorLevels": "Número máximo de níveis entre os fatores",
+  "factorLevels": "Valores de nível separados por vírgula - exemplo: -1, 1, 'string1', 2, 0",
+  "autoFillChkbx": "Preencher níveis automaticamente",
+  "label1": "Ignorar a seguinte opção - opção de limpeza de conjunto de dados para uso posterior",
+  "convertFactorToCharInt": "Para o conjunto de dados ativo selecionado - converter todas as colunas do tipo fator para caractere ou inteiro (e quando esta opção é selecionada, todas as opções acima nesta interface serão ignoradas)",
+  "help": {
+    "title": "Gerar automaticamente detalhes do fator",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tGera automaticamente uma tabela com detalhes do fator com base nos parâmetros especificados - número de fatores e os níveis máximos para os fatores junto com os valores padrão para o fator a ser utilizado. Se valores não numéricos forem usados para o fator, especifique entre aspas simples, por exemplo 1,-1,'nome1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUma vez que os detalhes do fator sejam gerados automaticamente e a tabela de fatores apareça na interface de grade de dados, você pode alterar os valores e/ou remover alguns valores da grade para manipular a tabela como desejar, incluindo fatores com diferentes números de valores \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe o número de fatores for <= 26, os fatores são nomeados com letras maiúsculas como A, B, C, .., caso contrário, nomeados como F1, F2, ..., F27, F28, ..\n\t\t\t"
+  }
+}

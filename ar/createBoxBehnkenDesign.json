@@ -1,0 +1,16 @@
+{
+  "title": "إنشاء تصميم Box-Behnken (كمي)",
+  "navigation": "إنشاء تصميم Box-Behnken (كمي)",
+  "selectedvars": "اختر المتغيرات",
+  "datasetname": "اسم التصميم",
+  "numCenter": "عدد صحيح من نقاط المركز لكل كتلة",
+  "blockName": "اسم الكتلة",
+  "lbl1": "قد لا تحتاج إلى تغيير إعدادات العشوائية",
+  "randomseeds": "بذور للعشوائية",
+  "randomizationChk": "عشوائي تصميم التوليد",
+  "help": {
+    "title": "إنشاء تصميم Box-Behnken (كمي)",
+    "r_help": "help(bbd.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة bbd.design لإنشاء تصميمات Box-Behnken، باستخدام حزمة rsm\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(bbd.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك استخدام ملف مجموعة البيانات النموذجية المسمى factors for bbd design.xlsx. افتح الملف في شبكة البيانات باستخدام قائمة فتح الملف\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

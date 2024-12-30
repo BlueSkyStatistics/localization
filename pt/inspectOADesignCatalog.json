@@ -1,0 +1,16 @@
+{
+  "title": "Navegue pelo catálogo de design de Array Ortogonal (oacat)",
+  "navigation": "Navegue pelo Catálogo de Design Ortogonal",
+  "designNamefromCatalog": "Nome do design de Array Ortogonal no catálogo (por exemplo, L18.3.6.6.1)",
+  "numRuns": "Número de execuções ou um vetor de 2 elementos, por exemplo, 4,16 com um mínimo e máximo para o número de execuções",
+  "numFactors": "Número de fatores (separe-os por vírgula, por exemplo, 4,2,1)",
+  "numLevels": "Número de níveis (separe-os por vírgula, por exemplo, 3,2,5)",
+  "showQualityMetricsChk": "Mostrar todas as métricas de qualidade da matriz com as matrizes resultantes;",
+  "maxDigits": "Dígitos significativos a serem mostrados para as métricas GR e A",
+  "maxNumberofDesignPrint": "Mostrar o número máximo de designs",
+  "help": {
+    "title": "Navegue pelo catálogo de design de Array Ortogonal (oacat)",
+    "r_help": "ajuda(show.oas, pacote = DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tNavegue/Inspecione elementos de design ou extraia informações da lista de arrays ortogonais disponíveis, especificando opcionalmente critérios de seleção\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara a ajuda detalhada - use R ajuda(show.oas, pacote = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

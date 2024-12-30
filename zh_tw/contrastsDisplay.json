@@ -4,7 +4,7 @@
   "target": "目的地",
   "help": {
     "title": "顯示對比",
-    "r_help": "幫助(contrasts, 套件 ='stats')",
-    "body": "\n            <b>描述</b></br>\n            顯示與因子變數相關的對比。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            x: 一個 R 物件。​\n            </li>\n            </ul>\n            <b>套件</b></br>\n            stats</br>\n            <b>幫助</b></br>\n            幫助(contrasts, 套件 ='stats')        \n            "
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>描述</b></br>\n            顯示與因子變量相關的對比。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            x: 一個 R 對象。​\n            </li>\n            </ul>\n            <b>包</b></br>\n            stats</br>\n            <b>幫助</b></br>\n            help(contrasts, package ='stats')        \n            "
   }
 }

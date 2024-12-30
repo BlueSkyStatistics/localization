@@ -1,11 +1,11 @@
 {
-  "title": "Transponer conjunto de datos, seleccionar variables",
-  "navigation": "Seleccionar variables",
+  "title": "Transponer Conjunto de Datos, seleccionar variables",
+  "navigation": "Seleccionar Variables",
   "transposedDataset": "Ingrese un nombre para el conjunto de datos transpuesto",
-  "destination": "Seleccione variables para transponer",
+  "destination": "Seleccionar variables para transponer",
   "help": {
-    "title": "Transponer variables seleccionadas",
+    "title": "Transponer Variables Seleccionadas",
     "r_help": "help(t, package='base')",
-    "body": "\n<b>Descripción</b></br>\nInvoca la función de transposición en el paquete base que transpone las variables seleccionadas y almacena los resultados en el nuevo conjunto de datos. Debe especificar el nombre del conjunto de datos que almacena el conjunto de datos transpuesto. El nuevo conjunto de datos transpuesto se muestra en la cuadrícula.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: es una matriz o dataframe\n</li>\n</ul>\n<b>Valor</b><br/>\nUna matriz, con dim y dimnames construidos apropiadamente a partir de los de x, y otros atributos excepto nombres copiados.<br/>\n<b>Paquete</b></br>\nbase<br/>\n<b>Ayuda</b></br>\nhelp(t, package='base')\n"
+    "body": "\n<b>Descripción</b></br>\nInvoca la función de transposición en el paquete base que transpone las variables seleccionadas y almacena los resultados en el nuevo conjunto de datos. Debe especificar el nombre del conjunto de datos que almacena el conjunto de datos transpuesto. El nuevo conjunto de datos transpuesto se muestra en la cuadrícula.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: es una matriz o dataframe\n</li>\n</ul>\n<b>Valor</b><br/>\nUna matriz, con dim y dimnames construidos apropiadamente a partir de los de x, y otros atributos excepto nombres copiados. <br/>\n<b>Paquete</b></br>\nbase<br/>\n<b>Ayuda</b></br>\nhelp(t, package='base')\n"
   }
 }

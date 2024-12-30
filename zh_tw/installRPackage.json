@@ -2,15 +2,15 @@
   "title": "安裝 R 套件",
   "navigation": "安裝 R 套件",
   "package_name": "請輸入一個或多個套件的名稱，以逗號分隔",
-  "instruction_text": "\n注意：R 套件名稱區分大小寫。您可以使用 , 作為分隔符安裝多個套件名稱\n範例 1：foreign\n範例 2：foreign, car, MASS",
-  "instruction_text1": "\n注意：您必須對下面選擇的路徑具有寫入權限，否則請通過選擇以 \n管理員身份運行選項重新啟動應用程式",
-  "repository": "輸入 CRAN 倉庫的 URL，預設 https://cloud.r-project.org/ 從離您最近的 CRAN 鏡像安裝。",
+  "instruction_text": "\n注意：R 套件名稱區分大小寫。您可以使用逗號作為分隔符安裝多個套件名稱\n範例 1：foreign\n範例 2：foreign, car, MASS",
+  "instruction_text1": "\n注意：您必須對下面選定的路徑具有寫入權限，否則請通過選擇以管理員身份運行選項重新啟動應用程序",
+  "repository": "輸入 CRAN 存儲庫的 URL，默認為 https://cloud.r-project.org/，從離您最近的 CRAN 鏡像安裝。",
   "label1": "範例 1：foreign",
-  "label2": "注意：菜單欄上顯示的 R 標誌是 R 基金會的版權財產",
-  "installPath": "選擇 R 庫路徑，R 套件將在此安裝",
+  "label2": "注意：顯示在菜單欄上的 R 標誌是 R 基金會的版權財產",
+  "installPath": "選擇 R 套件將安裝的 R 庫路徑",
   "help": {
     "title": "安裝 R 套件",
     "r_help": "help(install.packages)",
-    "body": "\n            <b>描述</b></br>\n            安裝或更新一個或多個 R 套件到選定的庫路徑。</br>\n            注意：</br>\n            1. 我們將安裝所有指定套件所依賴、導入或連結的套件。</br>\n            2. 如果您正在更新現有套件，您必須重新啟動 BlueSky Statistics 應用程式。</br>\n            3. 我們將在安裝後加載新安裝/更新的套件。</br>\n            4. 預設情況下，我們將始終安裝到本地計算機上用戶的個人 R 庫。</br>\n            5. 如果同一個 R 套件同時安裝在個人和系統庫位置（系統庫位置是預設安裝位置，包含我們隨 BlueSky Statistics 打包的套件），我們將從個人位置加載套件。</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            install.packages(pkgs = c(\"package1\", \"package2\", lib = \"用戶或系統庫的路徑\", repos = \"包含套件的倉庫路徑\", BSkypackageinstall = TRUE)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            pkgs：字符向量，指定要從指定倉庫下載的套件的當前版本的名稱。\n            </li>\n            <li>\n            lib：字符向量，給出在本地計算機上安裝套件的庫路徑。我們始終默認使用用戶的個人庫位置。\n            </li>\n            <li>\n            repos：字符向量，使用的倉庫的基本 URL，例如 CRAN 鏡像的 URL，如 \"https://cloud.r-project.org\"。\n            </li>\n            <li>\n            BSkypackageinstall：這是一個標誌，BlueSky Statistics 應用程式內部使用，用於指示 \n            套件是通過菜單安裝的，並將其傳遞。\n            </li>\n            </ul>\n            <b>值</b><br/>\n            隱藏的 NULL.<br/>\n            <b>範例</b><br/>\n            <code> \n            install.packages(pkgs = c('package1','package2'), lib = \"C:/Users/user1/Documents\", repos = \"https://cloud.r-project.org/\", BSkypackageinstall = TRUE)\n            </code> <br/>\n            <b>包</b></br>\n            broom</br>\n            <b>幫助</b></br>\n            要獲得詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標\n\n"
+    "body": "\n            <b>描述</b></br>\n            安裝或更新一個或多個 R 套件到選定的庫路徑。</br>\n            注意：</br>\n            1. 我們將安裝指定套件所依賴、導入或鏈接的所有套件</br>\n            2. 如果您正在更新現有套件，則必須重新啟動 BlueSky Statistics 應用程序。</br>\n            3. 我們將在安裝後加載新安裝/更新的套件。</br>\n            4. 默認情況下，我們將始終安裝到本地計算機上的用戶個人 R 庫。</br>\n            5. 如果同一 R 套件安裝到個人和系統庫位置（系統庫位置是包含我們隨 BlueSky Statistics 打包的套件的默認安裝位置），我們將從個人位置加載該套件。</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            install.packages(pkgs = c(\"package1\", \"package2\", lib = \"用戶或系統庫的路徑\", repos = \"包含套件的存儲庫的路徑\", BSkypackageinstall = TRUE)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            pkgs：字符向量，包含應從指定存儲庫下載的套件的當前版本名稱。\n            </li>\n            <li>\n            lib：字符向量，給出本地計算機上安裝套件的庫路徑。我們始終默認為用戶個人庫位置。\n            </li>\n            <li>\n            repos：字符向量，使用的存儲庫的基本 URL，例如 CRAN 鏡像的 URL，如 \"https://cloud.r-project.org\"。\n            </li>\n            <li>\n            BSkypackageinstall：這是一個標誌，BlueSky Statistics 應用程序在內部使用，以表示該套件是通過菜單安裝的，並將其傳遞。\n            </li>\n            </ul>\n            <b>返回值</b><br/>\n            隱形 NULL。<br/>\n            <b>範例</b><br/>\n            <code> \n            install.packages(pkgs = c('package1','package2'), lib = \"C:/Users/user1/Documents\", repos = \"https://cloud.r-project.org/\", BSkypackageinstall = TRUE)\n            </code> <br/>\n            <b>套件</b></br>\n            broom</br>\n            <b>幫助</b></br>\n            有關詳細幫助，請單擊此對話框覆蓋右上角的 R 圖標\n\n"
   }
 }

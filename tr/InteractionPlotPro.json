@@ -1,0 +1,17 @@
+{
+  "title": "Ana Etki ve Etkileşim Grafiği",
+  "navigation": "Ana Etki ve Etkileşim",
+  "response": "Yanıt değişkeni (ortalama hesaplamak için bir sayısal değişken belirtin)",
+  "Fixed": "Bir veya daha fazla gruplama (Kategori) değişkeni belirtin",
+  "mainEffectChk": "Ana etkiyi grafiğe dök",
+  "interactionEffectChk": "Etkileşim etkisini grafiğe dök",
+  "chartTitle": "Bir başlık girin",
+  "onePlotChk": "Tüm etkileşimleri tek bir grafikte göster (Her etkileşimi ayrı ayrı çizmek için işareti kaldırın)",
+  "noPlotsPerRow": "Satır başına etkileşim grafiği sayısı (boş bırakıldığında varsayılan: grup sayısı -1)",
+  "angleX_axis_text": "Etkileşim grafiği için x ekseni metin etiketlerini eğme açısı (boş bırakıldığında varsayılan: 25 derece)",
+  "colorHintLabel1": "Bir renk seçin (Renk seçimi yaptıktan sonra, uygulamak için kontrolün dışına tıklayın)",
+  "help": {
+    "title": "Etkileşim Grafiği",
+    "body": "\n\t\t\tSeçilen her kategorik değişkenin yanıt değişkeninin ortalaması üzerindeki etkisini analiz etmek için ana etki grafiği\n\t\t\tYanıt değişkeninin ortalaması üzerindeki iki kategorik değişkenin (ikili) etkileşiminin etkisini analiz etmek için etkileşim grafiği\n    "
+  }
+}

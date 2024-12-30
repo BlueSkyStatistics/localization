@@ -1,0 +1,12 @@
+{
+  "title": "Öğe Uygunluğu",
+  "navigation": "Öğe Uygunluğu",
+  "label1": "Bir model seçin (Rm, dRm, tam.mml, tam.mml.2pl, tam.mml.mfr sınıfı modeller desteklenmektedir)",
+  "label1b": "Hiç model yoksa, önce Model Uygunluğu -> IRT seçerek bir model oluşturmanız gerekir",
+  "modelselector1": "Bir model seçin",
+  "help": {
+    "title": "Öğe Uygunluğu",
+    "r_help": "help(itemfit, package='eRm')",
+    "body": "\n                <b>Açıklama</b></br>\n                Rm veya dRm sınıfı modeller için (IRT->Basit Rasch Model ile CML tahmini kullanılarak oluşturulmuştur) itemfit fonksiyonu kullanılarak Öğe uygunluk istatistiklerini görüntüler.\n                <br/>\n                tam.mml, tam.mml.2pl, tam.mml.2pl, tam.mml.mfr sınıfı modeller için (IRT->Basit Rasch Model, Kısmi Kredi Modeli, Derecelendirme Ölçeği Modeli ve çok yönlü modeller (Kısmi Kredi ve Derecelendirme Ölçeği) ile MML tahmini kullanılarak oluşturulmuştur) msq.itemfit fonksiyonu kullanılarak Ortalama Kare Artık Temelli Öğe Uygunluk İstatistikleri (Infit, Outfit) hesaplanır.\n\n                <br/><br/>\n                <b>Kullanım</b>\n                <br/>\n                <code>\n                eRm::itemfit(object)\n                </code>\n                <br/>\n                <code>\n                TAM::msq.itemfit(object)\n                </code>\n                <br/><br/>\n                <b>Ayrıntılar</b>\n                <br/>  \n                Aşağıdakileri BlueSky İstatistikleri Söz Dizimi editöründen çalıştırın  help(itemfit, package ='eRm')\n                <br/>\n                Aşağıdakileri BlueSky İstatistikleri Söz Dizimi editöründen çalıştırın help(msq.itemfit, package ='TAM')\n                <br/>\n                Ayrıntılı yardım varsayılan tarayıcınızda açılacaktır         \n                <br/><br/>\n                <b>Paketler</b>\n                <br/>\n                eRm, TAM\n                <br/><br/>\n                <b>Yardım</b>\n                <br/>\n                help(itemfit, package='eRm')\n                "
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Trasforma Variabile(i)",
+  "navigation": "Trasforma",
+  "label1": "Usa il menu a discesa per selezionare l'operazione (log, log10, as.numeric...) per trasformare le variabili selezionate. Puoi sovrascrivere le variabili esistenti o creare nuove variabili specificando un prefisso/suffisso.",
+  "target": "Seleziona la variabile(e) da trasformare",
+  "selectctrl": "Seleziona un'operazione da applicare",
+  "label2": "Crea nuove variabili o sovrascrivi quelle esistenti",
+  "suffix": "Specifica un suffisso",
+  "prefix": "Specifica un prefisso",
+  "overwrite": "Sovrascrivi",
+  "enterPrefix": "Inserisci un prefisso",
+  "enterSuffix": "Inserisci un suffisso",
+  "help": {
+    "title": "Trasforma Variabili",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Descrizione</b></br>\nUsa il menu a discesa per selezionare l'operazione (log, log10, as.numeric...) per trasformare le variabili selezionate. Puoi sovrascrivere le variabili esistenti o creare nuove variabili specificando un prefisso/suffisso.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvar: La variabile da trasformare\n</li>\n<li>\nDataset: Il dataset che contiene la variabile var\n</li>\n</ul>\n<b>Valore</b></br>\nI valori trasformati sono memorizzati direttamente nel dataset</br>\n<b>Pacchetto</b></br>\nbase</br>\n<b>Aiuto</b></br>\nhelp(log, package ='base')\n"
+  }
+}

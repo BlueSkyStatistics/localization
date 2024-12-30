@@ -1,0 +1,12 @@
+{
+  "title": "Concatenar Variáveis",
+  "navigation": "Concatenar",
+  "newvar": "Insira uma nova variável/existente para os resultados concatenados",
+  "concatenate": "Selecione as variáveis a serem concatenadas",
+  "repString": "Insira um separador opcional para as variáveis concatenadas",
+  "help": {
+    "title": "Concatenar Variáveis",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Descrição</b></br>\nCrie um fator que dissecou a faixa de uma variável numérica em intervalos de largura igual, (aproximadamente) frequência igual, ou em pontos de corte \"naturais\" (determinados por agrupamento K-means)\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbin.var(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nX: variável numérica a ser agrupada.\n</li>\n<li>\nBins: número de intervalos.\n</li>\n<li>\nmethod: um dos \"intervals\" para intervalos de largura igual; \"proportions\" para intervalos de contagem igual; \"natural\" para que os pontos de corte entre os intervalos sejam determinados por agrupamento K-means.\n</li>\n<li>\nLabels: se FALSE, rótulos numéricos serão usados para os níveis do fator; se NULL, os pontos de corte são usados para definir rótulos; caso contrário, um vetor de caracteres de nomes de níveis.\n</li>\n</ul>\n<b>Pacote</b></br>\nRcmdrMisc</br>\n<b>Ajuda</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

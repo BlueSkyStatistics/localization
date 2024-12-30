@@ -1,0 +1,18 @@
+{
+  "title": "Dimensione del campione, Test di una media o medie abbinate",
+  "navigation": "Una media o medie abbinate",
+  "howtouse": "Specifica due tra dimensione del campione, differenza tra le medie e potenza, e la terza sarà calcolata",
+  "n": "Dimensione del campione",
+  "delta": "Differenza tra le medie",
+  "power": "Potenza (0-1)",
+  "sd": "Deviazione standard",
+  "siglevel": "Livello di significatività (0-1)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Doppio lato",
+  "onesided": "Unico lato",
+  "help": {
+    "title": "Dimensione del campione, Test di una media",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test t a campione singolo di una media o un test di medie abbinate. Calcola la dimensione del campione, la differenza tra le medie o la potenza, quando l'utente \nspecifica due di essi.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Differenza tra le medie:</b> Se un test t a campione singolo, specifica la differenza tra la media sotto l'ipotesi alternativa e la media sotto l'ipotesi nulla. Se un\n test t abbinato, specifica la differenza tra le medie abbinate sotto l'ipotesi alternativa.\n<br/><br/>\n<b>Potenza:</b> Specifica la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa era vera.\n<br/><br/>\n<b>Deviazione standard:</b> Specifica una stima della deviazione standard della misura dell'esito. Per i test abbinati, questa è la deviazione standard delle differenze abbinate.\n<br/><br/>\n<b>Livello di significatività:</b> Specifica il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Ipotesi alternativa:</b> Specifica se il test è a doppio lato o a unico lato\n<br/><br/>\n<b>Pacchetti R richiesti:</b> stats, broom\n\t\t\t"
+  }
+}

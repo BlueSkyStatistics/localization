@@ -1,13 +1,13 @@
 {
-  "title": "Cullen和Frey图及非截尾数据的经验分布描述",
+  "title": "Cullen和Frey图及非审查数据的经验分布描述",
   "navigation": "分布分析（Cullen和Frey图）",
   "variableSelcted": "选择一个包含分布的变量",
-  "boot": "(可选) 偏度和峰度的自助值。如果指定，必须是大于10的整数",
-  "discreteChk": "离散 - 未选中（默认）用于均匀、正态、逻辑、对数正态、贝塔和伽马。选中用于泊松和负二项式",
-  "method": "无偏（默认）用于统计量的无偏估计值或样本的样本值",
+  "boot": "(可选) 偏度和峰度的引导值。如果指定，必须是大于10的整数",
+  "discreteChk": "离散 - 未选中（默认）用于均匀、正态、逻辑、对数正态、贝塔和伽马。选中用于泊松和负二项",
+  "method": "无偏（默认）用于无偏估计的统计值或样本值的样本",
   "help": {
-    "title": "非截尾数据的经验分布描述",
+    "title": "非审查数据的经验分布描述",
     "r_help": "help(descdist, package = fitdistrplus)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t计算非截尾数据的经验分布的描述性参数，并提供偏度-峰度图\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R help(descdist, package = fitdistrplus)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t最小值、最大值、中位数、均值、样本标准差，以及样本（如果方法==\"sample\"）或默认的无偏估计的 \n\t\t\t\t偏度和Pearson的峰度值被打印（Sokal和Rohlf，1995）。提供了Cullen和Frey（1999）提出的偏度-峰度图，用于经验分布。在该图中，常见分布的值也显示为帮助选择适合数据的分布的工具。对于某些 \n\t\t\t\t分布（例如正态、均匀、逻辑、指数），偏度和峰度只有一个可能值（例如，对于正态分布，偏度=0，峰度=3），因此分布在图中表示为一个点。对于其他分布，可能值的区域被表示为线（例如伽马和对数正态分布），或更大的区域（例如贝塔分布）。 \n\t\t\t\t韦布尔分布未在图中表示，但在图例中指出，接近对数正态和伽马分布的形状可能通过该分布获得。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t为了考虑从数据中估计的峰度和偏度值的不确定性，可以通过将参数boot固定为大于10的整数来进行自助抽样。然后计算并在偏度-峰度图上以蓝色显示对应于自助样本的偏度和峰度的自助值。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果离散为TRUE，则表示的分布为泊松、负二项分布和可能收敛的正态分布。如果离散为FALSE，则为均匀、正态、逻辑、对数正态、贝塔和伽马分布。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">有关分布拟合的良好概述，请参见 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t计算非审查数据的经验分布的描述参数，并提供偏度-峰度图\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R帮助(descdist, package = fitdistrplus)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t打印最小值、最大值、中位数、均值、样本标准差，以及样本（如果方法==\"sample\"）或默认的无偏估计的\n\t\t\t\t偏度和皮尔逊峰度值（Sokal和Rohlf，1995）。给出Cullen和Frey（1999）提出的经验分布的偏度-峰度图。在该图上，常见分布的值也显示为帮助选择拟合数据的分布的工具。对于某些分布（例如正态、均匀、逻辑、指数），偏度和峰度只有一个可能值（例如，对于正态分布，偏度=0，峰度=3），因此该分布在图上表示为一个点。对于其他分布，可能值的区域被表示为线（例如伽马和对数正态分布）或更大的区域（例如贝塔分布）。韦布尔分布未在图上表示，但在图例中指出，接近对数正态和伽马分布的形状可能通过该分布获得。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t为了考虑从数据中估计的峰度和偏度值的不确定性，数据集可以通过将参数boot固定为大于10的整数进行自助抽样。然后计算并在偏度-峰度图上以蓝色报告与自助抽样对应的偏度和峰度的引导值。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果离散为TRUE，表示的分布是泊松、负二项分布和可能收敛的正态分布。如果离散为FALSE，则为均匀、正态、逻辑、对数正态、贝塔和伽马分布。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">有关分布拟合的良好概述，请参见 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
   }
 }

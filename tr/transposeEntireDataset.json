@@ -1,0 +1,10 @@
+{
+  "title": "Transpoze, tüm veri seti",
+  "navigation": "Tüm Veri Seti",
+  "transposedDataset": "Transpoze edilmiş veri seti için bir isim girin",
+  "help": {
+    "title": "Tüm Veri Setini Transpoze Et",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Açıklama</b></br>\nVeri setini transpoze eden temel paketteki transpoze fonksiyonunu çağırır. Transpoze edilmiş veri setini saklayan veri setinin adını belirtmelisiniz. Yeni transpoze edilmiş veri seti ızgarada görüntülenir.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nÇağrılan fonksiyon: base::t(x)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: bir matris veya veri çerçevesidir\n</li>\n</ul>\n<b>Değer</b><br/>\nx'in boyutları ve dimnames'ları uygun şekilde oluşturulmuş bir matris ve diğer özellikler, isimler hariç, kopyalanır.<br/>\n<b>Paket</b></br>\nbas<br/>\n<b>Yardım</b></br>\nyardım(t, paket='base')\n"
+  }
+}

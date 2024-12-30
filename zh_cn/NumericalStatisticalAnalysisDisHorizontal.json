@@ -1,14 +1,14 @@
 {
   "title": "数值统计，使用总结",
   "navigation": "数值摘要，使用总结（遗留）",
-  "tvarbox1": "选择的变量",
-  "tvarbox2": "按分组",
+  "tvarbox1": "选择变量",
+  "tvarbox2": "分组依据",
   "label1": "显示选项",
-  "horizontal": "横向显示",
-  "vertical": "纵向显示",
+  "horizontal": "水平显示",
+  "vertical": "垂直显示",
   "help": {
     "title": "数值统计，使用总结",
     "r_help": "",
-    "body": "\n<b>描述</b></br>\n输出目标变量每组的以下数值统计。目标变量可以选择性地按一个或多个因子或数值变量分组。打印目标变量或目标变量分组的每组的以下信息，即最小值，第一个四分位数（25%），最大值，均值，中位数，第三个四分位数（75%），总和，方差，标准差，标准误差，偏度，峰度\n<br/>\n<b>用法</b>\n<br/>\n<code> \n##下面的函数对每个目标变量运行，结果数据框被转置并组合<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndataset1: 这是数据集\n</li>\n<li>\ngroup_by: 可选地按一个或多个因子或数值变量对目标变量进行分组\n</li>\n<li>\nsummarize: 按指定的汇总函数对目标变量或目标变量的组（如果在group_by中指定了变量）进行汇总，即均值，中位数，最小值...\n</li>\n</ul>\n<b>值</b></br>\n一个\"data.frame\"类的对象，给出每个变量上每个函数的结果。</br>\n<b>包</b></br>\ncaret</br>\n<b>帮助</b></br>\nR帮助不可用，因为我们使用多个R函数编写了自定义代码。如果您需要检查代码，请单击\"<>\"按钮。</br>\n    "
+    "body": "\n<b>描述</b></br>\n输出目标变量每组的以下数值统计。目标变量可以选择性地按一个或多个因子或数值变量分组。打印目标变量或目标变量分组的每组的以下信息，即最小值，第1四分位数（25%），最大值，均值，中位数，第3四分位数（75%），总和，方差，标准差，标准误差，偏度，峰度\n<br/>\n<b>用法</b>\n<br/>\n<code> \n##下面的函数对每个目标变量运行，结果数据框被转置并组合<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndataset1: 这是数据集\n</li>\n<li>\ngroup_by: 可选择性地按一个或多个因子或数值变量分组目标变量\n</li>\n<li>\nsummarize: 按指定的摘要函数（即均值，中位数，最小值...）对目标变量或目标变量组（如果在group_by中指定变量）进行汇总\n</li>\n</ul>\n<b>值</b></br>\n一个类为\"data.frame\"的对象，给出每个函数在每个变量上的结果。</br>\n<b>包</b></br>\ncaret</br>\n<b>帮助</b></br>\nR帮助不可用，因为我们使用多个R函数编写了自定义代码。如果您需要检查代码，请点击\"<>\"按钮。</br>\n    "
   }
 }

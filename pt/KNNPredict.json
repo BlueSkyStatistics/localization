@@ -1,0 +1,26 @@
+{
+  "title": "Faça Previsões com KNN",
+  "navigation": "Prever com KNN",
+  "dataset_var": "Abrir conjuntos de dados",
+  "header": "KNN é um classificador preguiçoso, ele não cria um modelo ajustado que pode ser usado para prever mais tarde. Ele ajusta e faz previsões ao mesmo tempo. Você precisa seguir os passos abaixo para fazer previsões/classificações.",
+  "NOTE1": "O CONJUNTO DE DADOS ATIVO DEVE SER O CONJUNTO DE DADOS NO QUAL VOCÊ DESEJA CONSTRUIR UM MODELO E NÃO O CONJUNTO DE DADOS QUE VOCÊ DESEJA CLASSIFICAR",
+  "step1": "Passo 1: Como de costume, você deve selecionar o conjunto de dados de treinamento no Datagrid antes de abrir este diálogo.",
+  "step2": "Passo 2: Selecione a variável dependente no conjunto de dados de treinamento usado para ajustar o modelo.",
+  "step3": "Passo 3: Especifique as variáveis independentes no conjunto de dados de treinamento.",
+  "step4": "Passo 4: Especifique o número de vizinhos a serem usados para construir o modelo.",
+  "step5": "Passo 5: Insira um prefixo de variável para a nova variável contendo as previsões.",
+  "step6": "Passo 6: Especifique o conjunto de dados para adicionar previsões. Ele deve conter as mesmas variáveis independentes usadas para treinar o modelo.",
+  "dependentvar": "Variável dependente (do conjunto de dados de treinamento)",
+  "independentvars": "Variável(is) independente(s) (do conjunto de dados de treinamento)",
+  "Seed": "Definir Semente",
+  "datasetToScore": "Conjunto de dados para classificar/prever",
+  "Group2": "Parâmetros de ajuste para KNN",
+  "noneighbhors": "Número de vizinhos (Quando um valor não é especificado, o padrão é definido como a raiz quadrada do número de observações no conjunto de dados)",
+  "testDatasetName": "Insira o nome do conjunto de dados para fazer previsões",
+  "predictedValues": "Insira o prefixo da variável para os valores previstos. Uma nova variável é criada anexando o prefixo ao nome da variável dependente.",
+  "help": {
+    "title": "K Vizinhos Mais Próximos",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Descrição</b></br>\nClassificação k-Vizinhos Mais Próximos\n<br/>\n<b>Nota: </b></br>\nVeja o texto de ajuda no diálogo\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ntrain: Este é o conjunto de dados fonte (ativo) usado para criar um modelo ajustado.\n</li>\n<li>\ntest: Este é o conjunto de dados onde os valores previstos serão salvos quando o prefixo que você especificou. Uma nova variável é criada anexando o prefixo à variável dependente especificada do conjunto de dados fonte.\n</li>\n<li>\ncl: fator de classificações verdadeiras do conjunto de dados usado para ajustar o modelo\n</li>\n<li>\nk: número de vizinhos considerados.\n</li>\n<li>\nl: voto mínimo para decisão definitiva, caso contrário, dúvida. (Mais precisamente, menos de k-l votos discordantes são permitidos, mesmo que k seja aumentado por empates.)\n</li>\n<li>\nprob: Se isso for verdadeiro, a proporção dos votos para a classe vencedora é retornada como atributo prob.\n</li>\n<li>\nuse.all: controla o tratamento de empates. Se verdadeiro, todas as distâncias iguais à k-ésima maior são incluídas. Se falso, uma seleção aleatória de distâncias iguais à k-ésima é escolhida para usar exatamente k vizinhos.\n</li>\n</ul>\n<b>Valor</b></br>\nFator de classificações do conjunto de teste. dúvida será retornada como NA.</br>\n<b>Pacote</b></br>\ncaret;class</br>\n<b>Ajuda</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

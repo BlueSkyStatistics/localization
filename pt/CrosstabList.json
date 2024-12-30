@@ -1,0 +1,17 @@
+{
+  "title": "Lista de Crosstab",
+  "navigation": "Lista de Crosstab",
+  "destvarslabel": "Variáveis para a Tabela",
+  "missinglabel": "Valores Ausentes",
+  "removelabel": "Remover",
+  "showexcludelabel": "Mostrar e Excluir de Percentagens",
+  "includelabel": "Mostrar e Incluir em Percentagens",
+  "sparseoptlabel": "Incluir Combinações com 0 Contagens",
+  "toplistoptlabel": "Mostrar os N Valores Mais Frequentes",
+  "topnumlabel": "N",
+  "help": {
+    "title": "Lista de Crosstab",
+    "r_help": "help(freqlist, package ='arsenal')",
+    "body": "\nIsto cria tabelas de frequência em um formato de lista para combinações de uma ou mais variáveis. Cada combinação de valores entre todas as variáveis especificadas será tabulada, \ncom suas frequências observadas. As variáveis especificadas podem ser de qualquer classe, incluindo variáveis numéricas e contínuas. Embora isso possa ser usado para frequências e \npercentagens resumidas, um uso principal é verificar os dados para inconsistências. Deve-se ter cuidado sobre quantas variáveis cruzar e quantas possibilidades podem resultar, pois \nalgumas tabelas podem demorar mais para serem produzidas. \n<br/><br/>\n<b>Variáveis para a Tabela:</b>  <br/>Variáveis a serem incluídas na tabela, que podem ser de qualquer classe. A tabela será ordenada de acordo com a ordem das variáveis nesta lista.  \nIsso significa que se as variáveis A e B forem a ordem especificada, então a tabela será ordenada pelos níveis de A, e depois pelos níveis de B dentro de A.\n<br/><br/>\n<b>Valores Ausentes</b>\n<br/>\n<ul>\n\t<li><b>Remover:</b>  Combinações de valores de variáveis que têm NA's serão excluídas da tabela.</li>\n\t<li><b>Mostrar e Excluir de Percentagens:</b>  Combinações de valores de variáveis que têm NA's serão incluídas na tabela, mas não serão incluídas nos cálculos de percentagem.</li>\n\t<li><b>Mostrar e Incluir em Percentagens:</b>  Combinações de valores de variáveis que têm NA's serão incluídas na tabela e serão incluídas nos cálculos de percentagem.</li> \n</ul>\n<br/><br/>\n<b>Incluir Combinações com 0 Contagens:</b>  <br/>Se incluir combinações de valores de variáveis que não existem no conjunto de dados. Por exemplo, se as variáveis A e B têm valores observados de 1, 2 e 3, mas a combinação (A, B) (1, 3) não é observada nos dados, esta opção incluiria uma linha para a combinação (1, 3) com uma frequência de 0.\n<br/><br/>\n<b>Mostrar os N Valores Mais Frequentes:</b>  <br/>Se marcado, isso criaria uma tabela separada com as N combinações de variáveis mais frequentes.\n<ul>\n\t<li><b>N:</b> Quantas combinações de variáveis mostrar para a tabela dos N.</li>\n</ul>\n<b>Pacotes R Necessários:</b> arsenal\n\t\t\t"
+  }
+}

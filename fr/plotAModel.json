@@ -1,10 +1,10 @@
 {
-  "title": "Tracer un modèle",
-  "navigation": "Tracer un modèle",
-  "modelselector1": "Sélectionnez un modèle d'une des classes suivantes (classe entre parenthèses) Modèle linéaire (lm), Modèles linéaires généralisés (glm)",
+  "title": "Tracer un Modèle",
+  "navigation": "Tracer un Modèle",
+  "modelselector1": "Sélectionnez un modèle de l'une des classes suivantes (classe entre parenthèses) Modèle linéaire (lm), Modèles linéaires généralisés (glm)",
   "help": {
-    "title": "Tracer un modèle",
-    "r_help": "aide(plot, package ='graphics')",
-    "body": "\n                <b>Description</b></br>\nFonction générique pour le traçage d'objets R. Pour plus de détails sur les arguments des paramètres graphiques, voir par.\nPour des graphiques de dispersion simples, plot.default sera utilisé. Cependant, il existe des méthodes de tracé pour de nombreux objets R différents, y compris des fonctions, des data.frames, des objets de densité, etc. Utilisez methods(plot) et la documentation pour ceux-ci.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nplot(objet)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobjet: tout objet R avec une méthode de tracé peut être fourni.\n</li>\n</ul>\n<b>Paquet</b></br>\ngraphics</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R : aide(plot, package ='graphics')\n"
+    "title": "Tracer un Modèle",
+    "r_help": "help(plot, package ='graphics')",
+    "body": "\n                <b>Description</b></br>\nFonction générique pour le traçage d'objets R. Pour plus de détails sur les arguments des paramètres graphiques, voir par.\nPour des graphiques de dispersion simples, plot.default sera utilisé. Cependant, il existe des méthodes de tracé pour de nombreux objets R différents, y compris des fonctions, des data.frames, des objets de densité, etc. Utilisez methods(plot) et la documentation pour ceux-ci.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nplot(object)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: tout objet R avec une méthode de tracé peut être fourni.\n</li>\n</ul>\n<b>Package</b></br>\ngraphics</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(plot, package ='graphics')\n"
   }
 }

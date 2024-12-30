@@ -1,0 +1,21 @@
+{
+  "title": "Binning",
+  "navigation": "Kutu",
+  "vartobin": "Bir değişken seçin",
+  "varname": "Binned değeri kaydetmek için bir değişken adı girin",
+  "noofbins": "Kutu sayısını belirtin",
+  "label1": "Seviye adları",
+  "Names": "İsimleri belirtin",
+  "levelnames": "Seviye adlarını virgülle (,) ayırarak girin, örneğin iyi,daha iyi,en iyi",
+  "Numbers": "Sayılar",
+  "Ranges": "Aralıklar",
+  "label2": "Binning yöntemi",
+  "equalwidth": "Eşit genişlikte kutular",
+  "equalcount": "Eşit sayıda kutular",
+  "natural": "Doğal Kesimler (K Ortalama kümeleme)",
+  "help": {
+    "title": "Binning",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Açıklama</b></br>\nBir sayısal değişkenin aralığını eşit genişlikte, (yaklaşık olarak) eşit frekansta veya \"doğal\" kesim noktalarına (K-ortalama kümeleme ile belirlenen) ayıran bir faktör oluşturur.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nX: kutuya ayrılacak sayısal değişken.\n</li>\n<li>\nKutular: kutu sayısı.\n</li>\n<li>\nmethod: eşit genişlikte kutular için \"intervals\"; eşit sayıda kutular için \"proportions\"; kutular arasındaki kesim noktalarının k-ortalama kümeleme ile belirlenmesi için \"natural\".\n</li>\n<li>\nLabels: FALSE ise, faktör seviyeleri için sayısal etiketler kullanılacaktır; NULL ise, kesim noktaları etiketleri tanımlamak için kullanılır; aksi takdirde bir karakter vektörü seviye adlarıdır.\n</li>\n</ul>\n<b>Paket</b></br>\nRcmdrMisc</br>\n<b>Yardım</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Eşdeğerlik Testi",
+  "navigation": "Eşdeğerlik Testi",
+  "variableSelcted1": "İlk değişkeni seçin",
+  "label1": "İki değişkeni karşılaştırmak için ya bir gruplama değişkeni (sadece iki seviye) ya da ikinci (bağımsız veya eşleştirilmiş) değişkeni seçin",
+  "variableSelcted2": "İkinci bir değişken seçin",
+  "label2": "Seçilen ikinci değişkenle nasıl işlem yapılacağı",
+  "groupingNeededRad": "Seçilen ikinci değişken bir gruplama değişkenidir",
+  "referenceGpValue": "Referans olarak kullanılacak grup değerini yazın",
+  "pairedTestRad": "Eşleştirilmiş Testi Uygula - seçilen ikinci değişken eşleştirilmiştir",
+  "noneRad": "Yukarıdakilerin hiçbiri",
+  "targetMean": "Hedef (ortalama) - İki Örnek için geçerli değil",
+  "lower": "Alt limit - alt eşdeğerlik sınırının sayısal değeri",
+  "upper": "Üst limit - üst eşdeğerlik sınırının sayısal değeri",
+  "smdChk": "Eşdeğerlik sınırları SMD (Standartlaştırılmış Ortalama Farkı) olarak belirtilmiştir",
+  "label3": "Test türü",
+  "EQUtestRad": "Eşdeğerlik testi yap",
+  "METtestRad": "Minimal etkiler testi (MET) yap",
+  "alpha": "alfa seviyesi (varsayılan = 0.05)",
+  "HedgesCorrectionChk": "Hedges düzeltmesini otomatik olarak hesapla (aksi takdirde Cohen'in d'sini gösterir)",
+  "plotChk": "Uyum grafiği (grafiğin görüntülenmesi biraz zaman alabilir)",
+  "help": {
+    "title": "Eşdeğerlik Testi",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tEşdeğerlik testi veya minimal etkiler testi (MET) yapmak için fonksiyon\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(t_TOST, package = TOSTER) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, iris veri kümesini Yükle Veri Kümesi menüsünden iris veri kümesini seçerek yükleyebilirsiniz (hızlıca iris yazın)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tİlk değişken olarak Sepal.Length'ı seçin ve (isteğe bağlı olarak) ikinci değişken olarak Sepal.Width'ı seçin ve Eşleştirilmiş testi seçin\n\t\t\t\t<br/>\n\t\t\t\tAlt sınır için 5.5 ve Eşdeğerlik marjı için üst sınır olarak 8.5 yazın, çalıştır'a tıklayın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html adresindeki eğitimi takip edin\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

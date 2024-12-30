@@ -1,0 +1,20 @@
+{
+  "title": "Box-Cox dönüşümü normal olmayan veriler için normal hale getirme",
+  "navigation": "Box-Cox dönüşümü",
+  "label2": "İki seçenek - ya normal hale dönüştürülecek bir normal olmayan değişken seçin ya da dönüştürülecek tüm veri kümesini seçin",
+  "selectVariableRad": "Seçenek 1: Dönüştürülecek normal olmayan bir değişkeni veri kümesinden seçin",
+  "variableSelcted": "Dönüştürülecek bir normal olmayan değişken",
+  "boxcoxColName": "(Opsiyonel) Dönüştürülmüş değerleri saklamak için yeni bir değişken adı belirtin. Aksi takdirde <variable_bcox> oluşturulacaktır",
+  "selectDatasetRad": "Seçenek 2: Tüm veri kümesini normal hale dönüştürün",
+  "boxcoxDatasetName": "(Opsiyonel) Dönüştürülmüş değerleri saklamak için yeni bir veri kümesi adı belirtin. Aksi takdirde <dataset_bcox> oluşturulacaktır",
+  "johnsonDatasetName": "(Opsiyonel) Johnson için yeni bir veri kümesi adı belirtin (yukarıdaki seçenek 2 seçilmişse gereklidir)",
+  "boxcoxChk": "Box-Cox dönüşümü",
+  "johnsonChk": "Johnson dönüşümü",
+  "lambda": "(Opsiyonel) Box-Cox dönüşümü için kullanılacak (-2 ile 2 arasında) Lambda (λ) değeri. Belirtilmezse, en iyi Lambda değeri otomatik olarak tanımlanacaktır",
+  "digits": "Basamaklar - belirtilen ondalık basamak sayısına yuvarlar",
+  "help": {
+    "title": "Normal olmayan verileri normal hale dönüştürme",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tMASS::boxcox ile normal olmayan değişkeni normal hale dönüştürmek için fonksiyon \n\t\t\t\t<br/>\n\t\t\t\tBox-Cox dönüşümü negatif değerler üzerinde gerçekleştirilemez\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(boxcox, package = MASS) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Cox hakkında iyi bir genel bakış için https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html adresine bakın</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTanıdık Box-Cox dönüşümleri ile ilişkili Lambda (λ) değerleri \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: kare dönüşümü ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: dönüşüm yok; orijinal veriyi döndürür ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: karekök dönüşümü ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: küp kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: dördüncü kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: doğal log dönüşümü ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: ters karekök dönüşümü ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: ters (inverse) dönüşüm ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: ters kare dönüşümü ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

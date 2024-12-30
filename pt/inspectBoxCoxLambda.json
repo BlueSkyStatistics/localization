@@ -1,0 +1,11 @@
+{
+  "title": "Valor de Lambda (λ) para variáveis com transformação Box-Cox anterior",
+  "navigation": "Inspecionar Lambda",
+  "label2": "Selecione uma ou mais variáveis para verificar se a transformação Box-Cox foi aplicada e, em caso afirmativo, o valor de Lambda (λ) associado",
+  "variablelistSelcted": "Variáveis a serem inspecionadas",
+  "help": {
+    "title": "Verifique o valor de Lambda (λ) associado à variável selecionada",
+    "r_help": "ajuda(boxcox, pacote = MASS)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tVerifique o valor de Lambda (λ) associado, se houver, para as variáveis selecionadas com transformação Box-Cox anterior\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada sobre Box-Cox ou Lambda (λ) - use R ajuda(boxcox, pacote = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Para uma boa visão geral do MASS Box-Cox, veja https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValores de Lambda (λ) associados a transformações Box-Cox familiares\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformação quadrada ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: sem transformação; retorna os dados originais ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformação da raiz quadrada ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformação da raiz cúbica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformação da quarta raiz\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformação do logaritmo natural ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: transformação da raiz quadrada recíproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: transformação recíproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: transformação quadrada recíproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Comparar Inclinações do Modelo de Regressão Quantílica",
+  "navigation": "Modelos de Reg. Quant.",
+  "label1": "Compara N modelos de regressão quantílica.",
+  "label4": "**NOTA: Modelos criados a partir da Ajuste de Modelo (classe train) não são suportados",
+  "modelselector1": "Selecione 2 ou mais modelos de regressão quantílica para comparar as inclinações:",
+  "help": {
+    "title": "Comparar Inclinações do Modelo de Regressão Quantílica",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>Descrição</b></br>\nCalcule estatísticas de teste para dois ou mais ajustes de regressão quantílica. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nobject: objetos da classe rq, originando de uma chamada para rq.\n</li>\n</ul>\n<b>Detalhes</b><br/>\nA hipótese de interesse é que os coeficientes de inclinação dos modelos são idênticos. A estatística de teste é uma variante do teste de Wald descrito em Koenker e Bassett (1982).<br/>\n<b>Valor</b><br/>\nUm objeto da classe \"anova\" herdando da classe \"data.frame\".<br/>\n<b>Pacote</b></br>\nquantreg</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

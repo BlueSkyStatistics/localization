@@ -1,0 +1,15 @@
+{
+  "title": "Örneklem Büyüklüğü, ICC'nin Hassasiyeti",
+  "navigation": "ICC",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "icc": "ICC (sınıflar arası korelasyon katsayısı, 0-1)",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "raters": "Değerlendirici Sayısı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, AUC'nin Hassasiyeti",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak bir sınıflar arası korelasyon katsayısı (ICC) için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar. ICC'nin tek yönlü veya iki yönlü ANOVA için hesaplanıp hesaplanmadığı, kullanılan yaklaşık hesaplamada önemli değildir. Bonett DG (2002), istenen hassasiyetle sınıflar arası korelasyonları tahmin etmek için gereken örneklem büyüklükleri, İstatistikte Tıp, 21:1331-1335'e bakın.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Bir güven aralığının genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>ICC:</b> Beklenen ICC değerini belirtin\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Değerlendirici Sayısı:</b> Her bir denek için değer sağlayacak değerlendirici sayısını belirtin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

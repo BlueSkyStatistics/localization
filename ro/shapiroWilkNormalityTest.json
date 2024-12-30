@@ -1,10 +1,10 @@
 {
   "title": "Testul de normalitate Shapiro-Wilk",
   "navigation": "Testul de normalitate Shapiro-Wilk",
-  "tvarbox1": "Selectați variabile numerice",
+  "tvarbox1": "Selectați variabilele numerice",
   "help": {
     "title": "Testul de normalitate Shapiro-Wilk",
     "r_help": "help(shapiro.test, package=stats)",
-    "body": "\n<b>Descriere</b></br>\nEfectuează testul de normalitate Shapiro-Wilk.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: un vector numeric de valori de date. Valorile lipsă sunt permise, dar numărul valorilor non-lipsă trebuie să fie între 3 și 5000.\n</li>\n</ul>\n<b>Valoare</b><br/>\nO listă cu clasa \"htest\" care conține următoarele componente:<br/>\nstatistic: valoarea statisticii Shapiro-Wilk.<br/>\np.value: o valoare p aproximativă pentru test. Acest lucru este spus în Royston (1995) că este adecvat pentru p.value < 0.1.<br/>\nmethod: șirul de caractere \"testul de normalitate Shapiro-Wilk\".<br/>\ndata.name: un șir de caractere care oferă numele datelor.<br/>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nhelp(shapiro.test, package=stats)\n"
+    "body": "\n<b>Descriere</b></br>\nEfectuează testul de normalitate Shapiro-Wilk.\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: un vector numeric de valori de date. Valorile lipsă sunt permise, dar numărul valorilor non-lipsă trebuie să fie între 3 și 5000.\n</li>\n</ul>\n<b>Valoare</b><br/>\nO listă cu clasa \"htest\" conținând următoarele componente:<br/>\nstatistic: valoarea statisticii Shapiro-Wilk.<br/>\np.value: o p-value aproximativă pentru test. Aceasta este considerată adecvată în Royston (1995) pentru p.value < 0.1.<br/>\nmethod: șirul de caractere \"testul de normalitate Shapiro-Wilk\".<br/>\ndata.name: un șir de caractere care oferă numele datelor.<br/>\n<b>Pachet</b></br>\nstats</br>\n<b>Ajutor</b></br>\nhelp(shapiro.test, package=stats)\n"
   }
 }

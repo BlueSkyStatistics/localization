@@ -1,0 +1,13 @@
+{
+  "title": "이항 분포 플롯",
+  "navigation": "이항 분포 플롯",
+  "size": "이항 시험",
+  "prob": "성공 확률",
+  "plotProb": "확률 질량 함수 플롯",
+  "plotDistrib": "분포 함수 플롯",
+  "help": {
+    "title": "이항 분포 플롯",
+    "r_help": "help(qbinom, package=stats)",
+    "body": "\n            <b>설명</b>\n            <br/>\n밀도, 분포 함수, 분위수 함수 및 이항 분포의 무작위 생성은 크기와 확률 매개변수를 갖습니다.\n<br/>\n이는 일반적으로 크기 시험에서의 '성공' 수로 해석됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>인수</b>\n<br/>\n<ul>\n    <li>x, q : 분위수 벡터.</li>\n    \n    \n    <li>p : 확률 벡터.</li>\n    \n    \n    <li>n : 관측 수. 만약 length(n) > 1이면, 길이는 필요한 수로 간주됩니다.</li>\n    \n    \n    <li>size : 시험 수 (0개 이상).</li>\n    \n    \n    <li>prob : 각 시험에서의 성공 확률.</li>\n    \n    \n    <li>log, log.p : 논리적; TRUE이면, 확률 p는 log(p)로 제공됩니다.</li>\n    \n    \n    <li>lower.tail : 논리적; TRUE (기본값)이면, 확률은 P[X ≤ x]이고, 그렇지 않으면 P[X > x]입니다.</li>\n</ul>\n\n\n\n<br/>\n<b>세부사항</b>\n<br/>\n크기 = n 및 prob = p인 이항 분포는 밀도를 가집니다.\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\nx = 0, …, n에 대해. x의 요소가 정수가 아닐 경우, dbinom의 결과는 경고와 함께 0입니다.\n<br/>\np(x)는 로더의 알고리즘을 사용하여 계산됩니다. 아래 참조를 참조하십시오.\n<br/>\n분위수는 F(x) ≥ p인 가장 작은 값 x로 정의됩니다. 여기서 F는 분포 함수입니다.\n<br/>\n<br/><b>값</b>\n<br/>\ndbinom은 밀도를 제공하고, pbinom은 분포 함수를 제공하며, qbinom은 분위수 함수를 제공하고, rbinom은 무작위 편차를 생성합니다.\n<br/>\nsize가 정수가 아닐 경우, NaN이 반환됩니다.\n<br/>\n결과의 길이는 rbinom의 n에 의해 결정되며, 다른 함수의 숫자 인수의 길이 중 최대값입니다.\n<br/>\nn을 제외한 숫자 인수는 결과의 길이에 맞게 재활용됩니다. 논리적 인수의 첫 번째 요소만 사용됩니다.\n   "
+  }
+}

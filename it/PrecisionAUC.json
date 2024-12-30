@@ -1,0 +1,15 @@
+{
+  "title": "Dimensione del campione, Precisione dell'AUC",
+  "navigation": "AUC",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n": "Dimensione del campione",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "auc": "AUC (area sotto la curva ROC, 0.5-1)",
+  "conflevel": "Livello di confidenza (0-1)",
+  "prev": "Prevalenza dell'esito (0-1)",
+  "help": {
+    "title": "Dimensione del campione, Precisione dell'AUC",
+    "r_help": "help(prec_auc, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per l'area sotto una curva caratteristica operativa del ricevitore basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>AUC:</b> Specifica il valore AUC atteso\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Prevalenza dell'esito:</b> Specifica la proporzione di soggetti con l'esito 'positivo'. Questo corrisponde al livello modellato con il modello statistico candidato.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

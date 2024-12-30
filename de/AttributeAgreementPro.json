@@ -7,11 +7,11 @@
   "variableRefSelcted": "(Optional) Wählen Sie die Variable für Referenz/Standardantwort",
   "variableTrialSelcted": "(Optional) Wählen Sie die Variable für Versuch/Wiederholungsnummer",
   "alpha": "Konfidenzintervall (Alpha) zwischen 0 und 1",
-  "misclassificationStatChk": "Genauigkeits- und Fehlklassifikationsraten anzeigen",
+  "misclassificationStatChk": "Genauigkeit und Fehlklassifikationsraten anzeigen",
   "summaryDisagreementChk": "Zusammenfassung der Meinungsverschiedenheiten der Bewerter im Vergleich zum Standard anzeigen",
   "CohenKappaChk": "Berechnen Sie die Cohen's Kappa-Statistik zwischen Bewerter/Betriebsführer",
-  "CohenKappaWeight": "Gewicht, das für Cohen's Kappa angewendet werden soll",
-  "label1": "Details zur Kopfzeile des Attributvereinbarungsstudienberichts",
+  "CohenKappaWeight": "Gewichtung, die für Cohen's Kappa angewendet werden soll",
+  "label1": "Kopfzeileninformationen des Attributvereinbarungsberichts",
   "gageName": "Messgerätname",
   "dateStudy": "Studiendatum",
   "partDescription": "Teilebeschreibung",
@@ -24,6 +24,6 @@
   "help": {
     "title": "Attributvereinbarungsanalyse",
     "r_help": "help(kappam.fleiss, package = irr)",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFunktion zur Durchführung der Attributvereinbarungsanalyse\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatensatzdateien attributemsaAB.xlsx für \n\t\t\t\tzwei Betriebsführer, A und B, jeweils mit 20 Beobachtungen, die zweimal mit P- und F-Bewertungen wiederholt wurden, verwenden.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSie können auch die Beispieldatensatzdatei attributemsaABCordered.RData mit drei Betriebsführern, A, B, C, jeweils mit 10 Beobachtungen, die zweimal mit \"geordneten\" (ordinalen) \n\t\t\t\tBewertungen wie Nicht einverstanden, Etwas nicht einverstanden, Neutral, Etwas einverstanden und Einverstanden wiederholt wurden, ausprobieren.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÖffnen Sie die Dateien im Datenraster mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFunktion zur Durchführung der Attributvereinbarungsanalyse\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatensatzdateien attributemsaAB.xlsx verwenden für \n\t\t\t\tzwei Betriebsführer, A und B, jeweils mit 20 Beobachtungen, die zweimal mit P- und F-Bewertungen wiederholt wurden.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSie können auch die Beispieldatensatzdatei attributemsaABCordered.RData mit drei Betriebsführern, A, B, C, jeweils mit 10 Beobachtungen, die zweimal mit \"geordneten\" (ordinalen) \n\t\t\t\tBewertungen wie Nicht einverstanden, Etwas nicht einverstanden, Neutral, Etwas einverstanden und Einverstanden wiederholt wurden, ausprobieren. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÖffnen Sie die Dateien im Datenraster mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -4,7 +4,7 @@
   "transposedDataset": "Geben Sie einen Namen für den transponierten Datensatz ein",
   "help": {
     "title": "Transponieren des gesamten Datensatzes",
-    "r_help": "hilfe(t, paket='base')",
-    "body": "\n<b>Beschreibung</b></br>\nRuft die Transponierfunktion im Basis-Paket auf, die den Datensatz transponiert. Sie müssen den Namen des Datensatzes angeben, der den transponierten Datensatz speichert. Der neue transponierte Datensatz wird im Raster angezeigt.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nAufgerufene Funktion: base::t(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: ist eine Matrix oder ein Datenrahmen\n</li>\n</ul>\n<b>Wert</b><br/>\nEine Matrix, mit dim und dimnames, die entsprechend von denen von x konstruiert sind, und andere Attribute außer Namen werden übernommen.<br/>\n<b>Paket</b></br>\nBasis<br/>\n<b>Hilfe</b></br>\nhilfe(t, paket='base')\n"
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Beschreibung</b></br>\nRuft die Transponierfunktion im Basis-Paket auf, die den Datensatz transponiert. Sie müssen den Namen des Datensatzes angeben, der den transponierten Datensatz speichert. Der neue transponierte Datensatz wird im Raster angezeigt.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nFunktion aufgerufen: base::t(x)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: ist eine Matrix oder ein Datenrahmen\n</li>\n</ul>\n<b>Wert</b><br/>\nEine Matrix, mit dim und dimnames, die entsprechend von denen von x konstruiert sind, und andere Attribute außer Namen werden übernommen.<br/>\n<b>Paket</b></br>\nbasis<br/>\n<b>Hilfe</b></br>\nhelp(t, package='base')\n"
   }
 }

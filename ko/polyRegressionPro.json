@@ -1,0 +1,15 @@
+{
+  "title": "다항 회귀 모델",
+  "navigation": "다항식",
+  "modelname": "다항 회귀 모델 이름",
+  "dependentVar": "종속 (예: 반응) 변수",
+  "independentVar": "독립 (예: 용량, 농도 등) 변수",
+  "polyDegree": "다항식 방정식의 차수. 고유 데이터 포인트 수보다 작아야 합니다.",
+  "comparePolyModelsChk": "비교할 추가 다항식 모델 계산",
+  "addlPolyDegrees": "여러 다항식 모델을 생성하기 위해 하나 이상의 차수를 지정하십시오 (예: 3, 4, 5)",
+  "help": {
+    "title": "다항 회귀 모델",
+    "r_help": "help(poly, package ='stats')",
+    "body": "\n            <b>설명</b></br>\n            이 대화 상자는 지정된 차수로 직교 다항식 모델을 계산하고 적합하는 데 사용됩니다.\n\t\t\t<br/>\n\t\t\tlm(반응 ~ poly(예측 변수, 차수), 데이터 = 데이터셋)을 사용하여\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\thelp(poly, package ='stats') 외에도 다음 R 도움말 페이지를 확인하십시오.\n            <br/>\n\t\t\thelp(anova, package ='stats') - 서로 다른 차수를 가진 다항식 모델 비교에 사용됨\n\t\t\t<br/>\n\t\t\thelp(AIC, package ='stats') - 다항식 모델 비교를 위한 AIC 계산에 사용됨\n\t\t\t<br/>\n\t\t\thelp(BIC, package ='stats') - 다항식 모델 비교를 위한 BIC 계산에 사용됨\n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\thelp(cars, package ='datasets') - lm()과 poly()가 함께 사용되는 좋은 참조\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t데이터셋 cars를 로드 데이터셋 메뉴에서 로드하여 이 대화 상자를 시도할 수 있습니다.\t\t\t\n\t\t\t종속 변수로 dist를 선택하고 독립 변수로 speed를 선택하십시오.\n\t\t\t<br/>\n"
+  }
+}

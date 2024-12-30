@@ -1,20 +1,20 @@
 {
-  "title": "Gage R&R - Analiza Sistemului de Măsurare, de Bază",
-  "navigation": "Gage R&R, de Bază",
-  "mainTitle": "Titlu principal pentru ieșirea grafică",
-  "subTitle": "Subtitlu pentru ieșirea grafică (de exemplu, numele proiectului SixSigma)",
-  "measuredVar": "Variabilă măsurată",
-  "part": "Variabilă de parte",
-  "appr": "Evaluator (operatori, mașini, ...) variabilă",
-  "lsl": "LSL - valoare numerică a limitei inferioare de specificație utilizată cu USL pentru a calcula variația studiului ca %Toleranță",
-  "usl": "USL - valoare numerică a limitei superioare de specificație utilizată cu LSL pentru a calcula variația studiului ca %Toleranță",
-  "sigma": "Sigma - valoare numerică pentru numărul de deviații standard de utilizat în calcularea variației studiului",
-  "tolerance": "Toleranță - valoare numerică pentru toleranță - implicit (usl - lsl)",
-  "alphaLim": "Alpha - Limită de luat în considerare pentru interacțiune",
-  "errorTerm": "Ce termen al modelului ar trebui folosit ca termen de eroare (pentru modelul cu interacțiune)",
+  "title": "Gage R&R - Analiza Sistemului de Măsurare, Basic",
+  "navigation": "Gage R&R, Basic",
+  "mainTitle": "Titlul principal pentru ieșirea grafică",
+  "subTitle": "Subtitlul pentru ieșirea grafică (de exemplu, numele proiectului SixSigma)",
+  "measuredVar": "Variabila măsurată",
+  "part": "Variabila piesei",
+  "appr": "Evaluatori (operatori, mașini, ...) variabilă",
+  "lsl": "LSL - valoarea numerică a limitei inferioare de specificație utilizată cu USL pentru a calcula variația studiului ca %Toleranță",
+  "usl": "USL - valoarea numerică a limitei superioare de specificație utilizată cu LSL pentru a calcula variația studiului ca %Toleranță",
+  "sigma": "Sigma - valoarea numerică pentru numărul de deviații standard de utilizat în calcularea variației studiului",
+  "tolerance": "Toleranță - valoarea numerică pentru toleranță - implicit (usl - lsl)",
+  "alphaLim": "Alpha - Limită pentru a lua în considerare interacțiunea",
+  "errorTerm": "Care termen al modelului ar trebui utilizat ca termen de eroare (pentru modelul cu interacțiune)",
   "help": {
     "title": "Gage R&R - Analiza Sistemului de Măsurare",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția ss.rr pentru a efectua analiza Gage R&R pentru evaluarea sistemului de măsurare al unui proces\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit gageR_R_piston_diameter_with_measurements.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierelor\n\t\t\t\t<br/>\n\t\t\t\tDin setul de date de exemplu, selectați variabila diametru ca Variabilă Măsurată, Pistonring ca Variabilă de Parte și Operator ca Evaluator\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția ss.rr pentru a efectua analiza Gage R&R pentru evaluarea sistemului de măsurare al unui proces\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - utilizați R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți utiliza fișierul de set de date de probă numit gageR_R_piston_diameter_with_measurements.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t\tdin setul de date de probă, selectați variabila diametru ca Variabilă Măsurată, Pistonring ca Variabilă Piesă și Operator ca Evaluator \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

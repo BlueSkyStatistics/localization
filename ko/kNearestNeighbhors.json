@@ -1,0 +1,20 @@
+{
+  "title": "K 최근접 이웃",
+  "navigation": "KNN",
+  "dependentvar": "종속 변수",
+  "independentvars": "독립 변수(들)",
+  "header": "KNN은 게으른 분류기로, 나중에 예측하기 위해 적합하지 않습니다. 동시에 적합하고 평가합니다. 우리는 데이터 세트를 훈련 및 테스트 데이터 세트로 나눈 다음, 훈련 데이터 세트에서 모델을 구축하고 테스트 데이터 세트에서 예측을 수행하며, 이러한 예측을 사용하여 모델 평가 통계를 표시합니다.",
+  "Seed": "시드 설정",
+  "Group2": "KNN의 튜닝 매개변수",
+  "noneighbhors": "이웃 수 (값이 지정되지 않으면 기본값은 데이터 세트의 관측 수의 제곱근으로 설정됨)",
+  "Group1": "훈련 및 테스트 데이터 세트",
+  "splitPercentage": "분할 비율 입력",
+  "trainDatasetName": "훈련 데이터 세트의 이름 입력",
+  "testDatasetName": "테스트 데이터 세트의 이름 입력",
+  "predictedValues": "예측 값의 접두사 입력. (접두사를 반드시 지정해야 함) 접두사가 있는 변수는 테스트 데이터 세트에서 생성됩니다.",
+  "help": {
+    "title": "K 최근접 이웃",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>설명</b></br>\nk-최근접 이웃 분류\n<br/>\n<b>참고: </b></br>\n1. 훈련 및 테스트 데이터 세트는 지정된 분할 비율에 따라 KNN으로 자동 생성됩니다.<br/>\n2. 예측 값은 테스트 데이터 세트에 저장되며, 모델 통계(정확도, 카파, 민감도 등)를 계산하는 데 사용됩니다. 혼동 행렬도 표시됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ntrain: 훈련 세트 사례의 행렬 또는 데이터 프레임.\n</li>\n<li>\ntest: 테스트 세트 사례의 행렬 또는 데이터 프레임. 벡터는 단일 사례에 대한 행 벡터로 해석됩니다.\n</li>\n<li>\ncl: 훈련 세트의 실제 분류의 팩터\n</li>\n<li>\nk: 고려되는 이웃의 수.\n</li>\n<li>\nl: 확정적인 결정을 위한 최소 투표 수, 그렇지 않으면 의심. (보다 정확하게, k-l의 반대 투표가 허용됩니다. k가 동점으로 증가하더라도.)\n</li>\n<li>\nprob: 이것이 true이면, 승리하는 클래스에 대한 투표의 비율이 속성 prob으로 반환됩니다.\n</li>\n<li>\nuse.all: 동점 처리 방식을 제어합니다. true이면, kth로 가장 큰 모든 거리가 포함됩니다. false이면, kth와 같은 거리의 무작위 선택이 선택되어 정확히 k 이웃을 사용합니다.\n</li>\n</ul>\n<b>값</b></br>\n테스트 세트의 분류 팩터. 의심은 NA로 반환됩니다.</br>\n<b>패키지</b></br>\ncaret;class</br>\n<b>도움말</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

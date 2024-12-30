@@ -1,0 +1,16 @@
+{
+  "title": "퍼슨핏 통계 및 마르틴-뢰프의 우도 비율 테스트",
+  "navigation": "퍼슨핏",
+  "label1": "모델 선택 (Rm, dRm 및 eRm 클래스의 모델이 지원됩니다)",
+  "label1b": "사용 가능한 모델이 없으면 모델 적합 -> IRT -> 간단한 라쉬 모델을 선택하고 CML 추정을 선택하여 먼저 모델을 생성해야 합니다.",
+  "modelselector1": "모델 선택",
+  "chkbox": "마르틴-뢰프의 우도 비율 테스트 통계 표시",
+  "lbl2": "우도 비율 테스트를 위한 분할 기준",
+  "rd1": "중앙값",
+  "rd2": "평균",
+  "help": {
+    "title": "퍼슨핏 통계 및 마르틴-뢰프의 우도 비율 테스트",
+    "r_help": "help(personfit, package='eRm')",
+    "body": "\n                <b>설명: 퍼슨핏 통계</b></br>\n                Rm, eRm 또는 dRm 클래스의 모델(IRT -> 간단한 라쉬 모델을 사용하여 CML 추정으로 생성됨)은 personfit 함수를 사용하여 퍼슨핏 통계를 표시합니다.\n\n                <br/><br/>\n                <b>사용법</b>\n                <br/>\n                <code>\n                eRm::personfit(object)\n                </code>\n                <br/><br/>\n                <b>세부사항</b>\n                <br/>  \n                object: person.parameter에서 파생된 ppar 클래스의 객체로, 도움말을 보려면 구문 편집기에서 help(person.parameter)를 실행하십시오.\n                <br/><br/>\n                <b>값</b>\n                <br/>\n                p.df: 퍼슨핏 통계의 자유도\n                <br/>\n                st.res: 표준화된 잔차(함수 personfit에서).\n                <br/>\n                p.outfitMSQ: Outfit 평균 제곱 통계(함수 personfit에서).\n                <br/>\n                p.infitMSQ: Infit 평균 제곱 통계(함수 personfit에서).\n                <br/><br/>\n                <b>도움말</b>\n                <br/>\n                BlueSky Statistics 구문 편집기에서 다음을 실행하십시오: help(personfit, package ='eRm')\n                <br/><br/>\n                <b>패키지</b>\n                <br/>\n                eRm\n                <br/>\n\n                <b>설명: 마르틴-뢰프의 우도 비율 테스트</b></br>\n                이 우도 비율 테스트는 항목 하위 그룹 분할을 기반으로 합니다.\n                <br/><br/>\n                <b>사용법</b>\n                <br/>\n                <code>\n                MLoef(robj, splitcr = \"median\")\n                </code>\n                <br/><br/>\n                <b>세부사항</b>\n                <br/>  \n                robj: 'Rm' 클래스의 객체입니다.\n                <br/>\n                splitcr: 항목 그룹을 정의하는 분할 기준. \"중앙값\" 및 \"평균\"은 항목의 원시 점수를 기반으로 두 그룹으로 항목을 분할합니다. splitcr는 또한 k의 길이를 가진 벡터일 수 있으며(k는 항목의 수를 나타냄) 마르틴-뢰프 테스트에 사용되는 그룹을 정의하기 위해 두 개 이상의 고유한 값을 가질 수 있습니다.\n                <br/><br/>\n                <b>값</b>\n                <br/>\n                MLoef는 다음을 포함하는 MLoef 클래스의 객체를 반환합니다:\n                <br/><br/>\n                LR: LR 값\n                <br/>\n                df: 자유도\n                <br/>\n                p.value: 테스트의 p 값\n                <br/>\n                fullModel: 전체 라쉬 모델\n                <br/>\n                subModels: 하위 모델을 포함하는 목록\n                <br/>\n                Lf: 전체 모델의 로그 우도\n                <br/>\n                Ls: 하위 모델의 로그 우도의 목록\n                <br/>\n                i.groups: 항목 그룹의 목록\n                <br/>\n                splitcr: 제출된 분할 기준\n                <br/>\n                split.vector: 그룹에 대한 항목의 이진 할당\n                <br/>\n                warning: 해당 분할 기준에 대해 중앙값 또는 평균과 같은 항목\n                <br/><br/>\n                <b>패키지</b>\n                <br/>\n                eRm                \n                <br/><br/>\n                <b>도움말</b>\n                <br/>\n                BlueSky Statistics 구문 편집기에서 다음을 실행하십시오: help(MLoef, package ='eRm')\n\n                "
+  }
+}

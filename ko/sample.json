@@ -1,0 +1,21 @@
+{
+  "title": "샘플 데이터",
+  "navigation": "샘플",
+  "label1": "데이터셋 옵션",
+  "radio2": "결과를 새 데이터셋에 저장",
+  "dsname": "데이터셋 이름 입력",
+  "radio1": "데이터셋 덮어쓰기",
+  "label2": "샘플링 옵션",
+  "rd1": "샘플링할 데이터셋의 비율 지정",
+  "percentage": "비율 입력",
+  "rd2": "선택할 행 수 지정",
+  "size": "선택할 행 수 입력",
+  "textn": "가중치에 대한 변수 이름 또는 수식을 선택적으로 입력",
+  "seed": "데이터 재현성을 위해 선택적으로 시드 설정",
+  "chk2": "대체 샘플링",
+  "help": {
+    "title": "샘플 데이터셋",
+    "r_help": "help(sample_n, package='dplyr')",
+    "body": "\n<b>설명</b></br>\n기존 데이터셋에서 행의 무작위 샘플을 가져옵니다. %의 행 또는 지정된 수의 행을 대체 여부에 따라 샘플링합니다. 결과를 새 데이터셋에 저장하거나 기존 데이터셋을 덮어씁니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n#지정된 수의 행을 샘플링합니다.</br>\nsample_n(tbl, size, replace = FALSE, weight = NULL)</br>\n#행의 비율을 샘플링합니다.</br>\nsample_frac(tbl, size = 1, replace = FALSE, weight = NULL)</br>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ntbl: 데이터 테이블. '세부정보'를 참조하십시오.\n</li>\n<li>\nsize: sample_n()의 경우 선택할 행 수. sample_frac()의 경우 선택할 행의 비율.\n</li>\n<li>\nreplace: 샘플링이 대체로 이루어져야 합니까?\n</li>\n<li>\nweights: 샘플링 가중치. 이는 입력과 동일한 길이의 비음수 벡터로 평가되어야 합니다. 가중치는 자동으로 합계가 1이 되도록 표준화됩니다.\n</li>\n</ul>\n<b>패키지</b></br>\ndplyr\n<b>도움말</b></br>\nhelp(sample_n, package='dplyr')\n"
+  }
+}

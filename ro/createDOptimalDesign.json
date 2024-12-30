@@ -1,20 +1,20 @@
 {
   "title": "Creează Design D-Optimal",
   "navigation": "Creează Design D-Optimal",
-  "datasetname": "Numele Designului D-optimal",
-  "candidateDesignChk": "Creează design D-optimal dintr-un design candidat existent (factorial complet, FrF2, ortogonal sau latin) - asigură-te că acest dialog este deschis pe designul existent din grila de date pentru a alege implicit designul candidat",
-  "selectedvars": "Selectați variabile (Ignorat dacă designul candidat este bifat mai sus) pentru a crea un design D-optimal care nu provine dintr-un design candidat existent",
-  "numOfRuns": "Numărul de execuții",
-  "formula": "Formulă - lăsați-o implicit pentru a include toți factorii în model sau introduceți o formulă de model liniar, de exemplu ~quad(.)",
-  "numOfOptiRepeats": "Numărul de repetări de optimizare",
+  "datasetname": "Numele designului D-optimal",
+  "candidateDesignChk": "Creează design D-optimal dintr-un design candidat existent (factorial complet, FrF2, Ortogonal sau Latin) - asigură-te că acest dialog este deschis pe designul existent din grila de date pentru a alege implicit designul candidat",
+  "selectedvars": "Selectează variabile (Ignorat dacă designul candidat este bifat mai sus) pentru a crea un design D-optimal nu dintr-un design candidat existent",
+  "numOfRuns": "Numărul de rulări",
+  "formula": "Formula - lasă-o implicită pentru a include toți factorii în model sau scrie o formulă de model liniar, de exemplu ~quad(.)",
+  "numOfOptiRepeats": "Numărul de repetări ale optimizării",
   "numOfBlocks": "Numărul de blocuri",
   "blockName": "Numele blocului",
-  "lbl1": "Este posibil să nu fie nevoie să schimbați setările de randomizare",
-  "randomseeds": "Sămânță pentru randomizare",
+  "lbl1": "Este posibil să nu fie nevoie să schimbi setările de randomizare",
+  "randomseeds": "Seed pentru randomizare",
   "randomizationChk": "Randomizează generarea designului",
   "help": {
     "title": "Creează Design D-Optimal",
     "r_help": "help(Dopt.design, package = DoE.wrapper)",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția Dopt.design pentru crearea de designuri D-optime cu sau fără blocare\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca asta, puteți folosi fișierul de set de date de exemplu numit factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t\tCreează mai întâi designul factorial complet, alege designul factorial complet din acest dialog/UI și specificați runs = 16 pentru a crea un design D-optimal dintr-un design factorial complet\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția Dopt.design pentru crearea designurilor D-optimal cu sau fără blocare\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosește R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, poți folosi fișierul de set de date de exemplu numit factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx. Deschide fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t\tCreează mai întâi designul factorial complet, alege designul factorial complet din acest dialog/UI și specifică rulări = 16 pentru a crea un design D-optimal dintr-un design factorial complet  \n\t\t\t"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "title": "عينة من توزيع غامبل",
+  "navigation": "عينة من توزيع غامبل",
+  "entrdsname": "أدخل اسم مجموعة البيانات",
+  "location": "الموقع",
+  "scale": "المقياس",
+  "lblnoofsamples": "عدد العينات (الصفوف)",
+  "lblnoofobsv": "عدد الملاحظات (الأعمدة)",
+  "lblseed": "البذور",
+  "lblAddtoDS": "إضافة إلى مجموعة البيانات",
+  "chklbl1": "متوسطات العينات",
+  "chklbl2": "مجموع العينات",
+  "chklbl3": "الانحرافات المعيارية للعينات",
+  "help": {
+    "title": "عينة من توزيع غامبل",
+    "r_help": "help(rgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>الوصف</b>\n            <br/>\n            الكثافة، دالة التوزيع، دالة الكمية والتوليد العشوائي لتوزيع غامبل مع معلمات الموقع والمقياس المحددة.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>المعلمات</b>\n            <br/>\n            <ul>\n                <li>x, q : متجه من الكميات (قيم المتغير).</li>\n                \n                \n                <li>p : متجه من الاحتمالات.</li>\n                \n                \n                <li>n : عدد الملاحظات. إذا كانت length(n) > 1، يتم أخذ الطول ليكون العدد المطلوب.</li>\n                \n                \n                <li>location : معلمة الموقع (افتراضي 0)؛ قد تكون متجهًا.</li>\n                \n                \n                <li>scale : معلمة المقياس (افتراضي 1)؛ قد تكون متجهًا.</li>\n                \n                <li>lower.tail : منطقي؛ إذا كانت TRUE (الافتراضي) فإن الاحتمالات والكميات تتوافق مع P(X ≤ x)، إذا كانت FALSE تتوافق مع P(X > x).</li>\n            </ul>            \n"
+  }
+}

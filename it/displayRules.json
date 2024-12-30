@@ -1,0 +1,24 @@
+{
+  "title": "Regole di Visualizzazione",
+  "navigation": "Regole di Visualizzazione",
+  "rulename": "Inserisci un oggetto regole esistente",
+  "dosortingchk": "Ordina le regole",
+  "sortopt": "Opzioni di Ordinamento",
+  "sortby": "Ordina per",
+  "confchk": "confidenza",
+  "liftchk": "sollevamento",
+  "suppchk": "supporto",
+  "sortord": "Ordine di Ordinamento",
+  "increasing": "Crescente",
+  "decreasing": "Decrescente",
+  "noofrules": "Numero di regole da visualizzare",
+  "rulecount": "",
+  "fromto": "Visualizza regole",
+  "from": "Da",
+  "to": "A",
+  "help": {
+    "title": "Regole di Visualizzazione",
+    "r_help": "help(inspect, package='arules')",
+    "body": "\n            <b>\n\t\t\tPacchetto : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspect\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\tDescrizione\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Fornisce la funzione generica inspect e metodi S4 per visualizzare associazioni e transazioni più informazioni aggiuntive formattate per ispezione online.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUtilizzo\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspect(x, ...)\n            </code>\n            <br/><br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            x: un insieme di associazioni o transazioni o un itemMatrix.\n            </li>\n            <li>\n            ...: argomenti aggiuntivi possono essere utilizzati per personalizzare l'output: setStart, setEnd, itemSep e ruleSep. Gli elementi vengono stampati solo uno per riga nel caso in cui le righe di output diventino molto lunghe. Questo può anche essere controllato direttamente utilizzando linebreak.\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. sort\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\tDescrizione\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Fornisce il metodo sort per ordinare gli elementi nella classe associazioni (ad es., itemsets o regole) in base al valore delle misure memorizzate nello slot qualità dell'associazione (ad es., supporto).\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUtilizzo\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## Metodo S4 per firma 'associations'\n            arules::sort(x, decreasing = TRUE, na.last = NA, \n            by = \"supporto\", order = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Metodo S4 per firma 'associations'\n            head(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Metodo S4 per firma 'associations'\n            tail(x, n = 6L, by = NULL, decreasing = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            x: un oggetto da ordinare.\n            </li>\n            <li>\n            decreasing: un logico. L'ordinamento deve essere crescente o decrescente? (il valore predefinito è decrescente)\n            </li>\n            <li>\n            na.last: na.last non è supportato per le associazioni. Gli NAs vengono sempre messi per ultimi.\n            </li>\n            <li>\n            by: una stringa di caratteri che specifica la misura di qualità memorizzata in x da utilizzare per ordinare x. Se viene specificato un vettore di stringhe di caratteri, le stringhe aggiuntive vengono utilizzate per ordinare x in caso di pareggio.\n            </li>\n            <li>\n            order: deve essere restituito un vettore di ordine invece delle associazioni ordinate?\n            </li>\n            <li>\n            n: un singolo intero che indica il numero di associazioni restituite.\n            </li>\n            <li>\n            ... : Ulteriori argomenti vengono ignorati.\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            Dettagli\n            </b> \n            <br/>\n            l'ordinamento è relativamente lento per grandi insiemi di associazioni poiché deve copiare e riordinare una grande struttura dati. Si noti che l'ordinamento crea una seconda copia dell'insieme di associazioni che può essere lento e consumare memoria per grandi insiemi. Con order = TRUE viene restituito un vettore intero con l'ordine invece delle associazioni riordinate.\n            Se sono necessarie solo le prime n associazioni, allora head utilizzando by esegue questa operazione più velocemente rispetto a chiamare sort e poi head poiché lo fa senza copiare e riordinare tutti i dati. tail funziona allo stesso modo.\n            <br/><br/>  \n            <b> \n            Valore\n            </b> \n            <br/>\n            Un oggetto della stessa classe di x.                  \n    "
+  }
+}

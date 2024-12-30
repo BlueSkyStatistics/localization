@@ -1,0 +1,11 @@
+{
+  "title": "수치 통계, describe 사용",
+  "navigation": "수치 요약, describe 사용 (레거시)",
+  "tvarbox1": "변수 선택",
+  "tvarbox2": "그룹 변수 선택",
+  "help": {
+    "title": "수치 통계, describe 사용",
+    "r_help": "help(describe, package=psych)",
+    "body": "\n<b>설명</b></br>\n다음 수치 통계를 출력합니다:</br>\n개수, 평균, 표준 편차, 중앙값, 트리밍, mad, 최소, 최대, 범위, 왜도, 첨도, 표준 오차\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n#BSkyFormat은 잘 포맷된 출력을 표시합니다<br/>\nBSkyFormat (as.data.frame(psych::describe(x=Dataset[,c('var1','var2'])))\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 데이터프레임 또는 행렬\n</li>\n</ul>\n<b>패키지</b></br>\npsych</br>\n<b>도움말</b></br>\nhelp(describe, package=psych)\n"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Mapa dos Estados dos EUA",
+  "navigation": "Mapa dos Estados dos EUA",
+  "region": "Variável com os nomes dos estados dos EUA:",
+  "value": "Variável com valores para mapear:",
+  "colors": "Insira o número de cores",
+  "zoomByStates": "Insira os estados para ampliar, por exemplo, califórnia, oregon, washington",
+  "specify_a_title": "Insira um título",
+  "legend": "Legenda:",
+  "help": {
+    "title": "Mapa dos Estados dos EUA",
+    "r_help": "help(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>Descrição</b></br>\n            Desenha um mapa do estado e permite que você amplie opcionalmente 1 ou mais estados\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: Um data.frame com uma coluna chamada \"region\" e uma coluna chamada \"value\". Os elementos na coluna \"region\" devem corresponder exatamente aos nomes das regiões na coluna \"region\" em state.map. Execute os comandos na seção abaixo para acessar o conjunto de dados state.map\n            </li>\n            <li>\n            Título: Um título opcional para o mapa.\n            </li>\n            <li>\n            Legenda: Um nome opcional para a legenda.\n            </li>\n            <li>\n            num_colors: O número de cores no mapa. Um valor de 1 usará uma escala contínua. Um valor em [2, 9] usará esse número de cores.\n            </li>\n            <li>\n            zoom: Um vetor opcional de estados para ampliar. Os elementos deste vetor devem corresponder exatamente aos nomes dos estados conforme aparecem na coluna \"region\" de ?state.regions.\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Ajuda</b></br>\n            help(state_choropleth, package='choroplethr')</br>\n            <b>Outro</b></br>\n            <code> \n            # Execute o código abaixo para acessar o conjunto de dados state.map<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+  }
+}

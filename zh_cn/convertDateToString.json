@@ -1,16 +1,17 @@
 {
   "title": "将日期变量转换为字符",
   "navigation": "日期到字符",
-  "label1": "选择一个后缀或前缀用于转换的变量",
+  "label1": "选择转换变量的后缀或前缀",
   "suffix": "后缀",
   "prefix": "前缀",
   "prefixOrSuffix": "输入前缀或后缀",
   "Destination": "选择要转换为字符的日期变量",
   "DateFormat": "选择要转换的日期格式",
-  "TimeZone": "选择一个时区（默认 - 未选择任何内容为计算机的本地时区）",
+  "TimeZone": "选择时区（默认 - 未选择任何内容为 PC 的本地时区）",
+  "advanced_lbl" : "高级",
   "help": {
     "title": "将日期转换为字符",
     "r_help": "help(strftime, package=\"base\")",
-    "body": "\n<b>描述</b></br>\n将日期（posixct 和日期类）转换为字符 - 控制日期显示的格式。您指定输入字符串应生成的格式，即年/月/日或月-日=年等。\n上述函数在基础包中内部调用 strftime。我们扩展了 strftime 以支持多个变量。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n​data: 数据集名称\n</li>\n<li>\nvarNames: 需要转换为字符的 posixct 和日期类变量​\n</li>\n<li>\ndateFormat: 字符串。格式方法的默认值是 \"%Y-%m-%d %H:%M:%S\"，如果任何元素有非午夜的时间组件，其他情况下为 \"%Y-%m-%d\"。如果设置了 options(\"digits.secs\")，将打印指定数量的秒数\n</li>\n<li>\ntimezone: 指定用于转换的时区的字符串。系统特定（见 as.POSIXlt），但 \"\" 是当前时区，\"GMT\" 是 UTC。无效值通常被视为 UTC，在某些平台上会发出警告。\n</li>\n<li>\nprefixOrSuffix: 为新字符串变量指定前缀或后缀。取 c(\"前缀\") 或 c(\"后缀\")。使用此前缀/后缀创建的新变量与原始变量名称。\n</li>\n</ul>\n<b>包</b></br>\n基础</br>\n<b>帮助</b></br>\nhelp(strftime)    \n"
+    "body": "\n<b>描述</b></br>\n将日期（posixct 和日期类）转换为字符 - 控制日期显示的格式。您指定输入字符串应生成的格式，即年/月/日或月-日=年等。\n上述函数内部调用了基础包中的 strftime。我们扩展了 strftime 以支持多个变量。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n​data: 数据集名称\n</li>\n<li>\nvarNames: 需要转换为字符的 posixct 和日期类变量​\n</li>\n<li>\ndateFormat: 字符串。格式方法的默认值是 \"%Y-%m-%d %H:%M:%S\"，如果任何元素具有非午夜的时间组件，反之则为 \"%Y-%m-%d\"。如果 options(\"digits.secs\") 被设置，将打印指定数量的秒数\n</li>\n<li>\ntimezone: 指定用于转换的时区的字符串。系统特定（见 as.POSIXlt），但 \"\" 是当前时区，\"GMT\" 是 UTC。无效值通常被视为 UTC，在某些平台上会发出警告。\n</li>\n<li>\nprefixOrSuffix: 为新字符串变量指定前缀或后缀。可以是 c(\"prefix\") 或 c(\"suffix\")。使用此前缀/后缀创建的新变量将附加到原始变量名称。\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>帮助</b></br>\nhelp(strftime)    \n"
   }
 }

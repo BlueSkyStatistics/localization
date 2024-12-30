@@ -1,17 +1,17 @@
 {
-  "title": "瀏覽 FrF2 設計目錄（例如 catlg）",
+  "title": "瀏覽 FrF2 設計目錄 (例如 catlg)",
   "navigation": "瀏覽 FrF2 設計目錄",
-  "designCatalog": "設計目錄的名稱（必須是 catlg 類的物件）",
+  "designCatalog": "設計目錄的名稱 (必須是 catlg 類別的對象)",
   "designNamefromCatalog": "目錄中設計的名稱",
-  "numRuns": "運行次數（如果超過一個，用 , 分隔，例如 8,16,64）",
-  "numFactors": "因素數量（如果超過一個，用 , 分隔，例如 4,5,11）",
-  "minResolution": "最小設計解析度（例如，輸入 3 表示 III，4 表示 IV，5 表示 V，..）",
-  "MaxC2Chk": "如果未選中 - 設計按最小像差排序，如果選中 - 按最大清晰 2fis 數量排序",
-  "showAliasChk": "顯示別名結構（最多 2fis）",
+  "numRuns": "運行次數 (如果多於一個，請用 , 分隔，例如 8,16,64)",
+  "numFactors": "因素數量 (如果多於一個，請用 , 分隔，例如 4,5,11)",
+  "minResolution": "最小設計解析度 (例如，輸入 3 代表 III，4 代表 IV，5 代表 V，..)",
+  "MaxC2Chk": "如果未選中 - 設計按最小畸變排序，或如果選中 - 按最大清晰 2fis 數量排序",
+  "showAliasChk": "顯示別名結構 (最多 2fis)",
   "maxNumberofDesignPrint": "顯示最大設計數量",
   "help": {
-    "title": "瀏覽 FrF2 設計目錄（例如 catlg）",
+    "title": "瀏覽 FrF2 設計目錄 (例如 catlg)",
     "r_help": "help(catlg, package = FrF2)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t瀏覽/檢查設計元素或從 FrF2 包中的 catlg 類設計目錄中提取信息\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用 R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t瀏覽/檢查設計元素或從 FrF2 包中的 catlg 類別設計目錄中提取信息\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用 R help(catlg, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

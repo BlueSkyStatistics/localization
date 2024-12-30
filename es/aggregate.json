@@ -1,15 +1,15 @@
 {
   "title": "Datos Agregados",
-  "navigation": "Agregado",
-  "description": "Agrega una o más variables numéricas (escala) por una o más variables de factor y crea un nuevo conjunto de datos agregado. Para las variables numéricas, calculamos lo siguiente:\n        media, mediana, suma, sd, n_distinct, max, min y var. \n        También calcula los recuentos en el conjunto de datos agregado.",
-  "label1": "Opciones de Agregación",
+  "navigation": "Agregar",
+  "description": "Agrega una o más variables numéricas (escala) por una o más variables de factor y crea un nuevo conjunto de datos agregados. Para las variables numéricas calculamos lo siguiente:\n        media, mediana, suma, sd, n_distinct, max, min y var. \n        También calcula conteos en el conjunto de datos agregado.",
+  "label1": "Opciones de agregación",
   "upperdesc": "Seleccione la función que desea aplicar a las variables que se están agregando",
   "datasetname": "Ingrese el nombre del conjunto de datos agregado",
   "showResultsinOutput": "Mostrar resultados en la ventana de salida",
   "groupBy": "Agrupar por (Variables de tipo factor o fecha)",
   "help": {
-    "title": "Agregación a Conjunto de Datos",
-    "r_help": "ayuda(grupo_por, paquete=dplyr)",
-    "body": "\n            <b>Descripción</b></br>\nAgrega una o más variables numéricas (escala) por una o más variables de factor y crea un nuevo conjunto de datos agregado. Para las variables numéricas, calculamos lo siguiente:\nmédia, mediana, suma, sd, n_distinct, max, min y var. \nTambién calcula los recuentos en el conjunto de datos agregado.\n<br/>\n<b>Uso</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Actualizar el conjunto de datos</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Argumentos</b>\n <ul>\n   <li>\nvar1: factor por el que agrupar\n</li>\n<li>\nvar2, var3: variable a agregar\n</li>\n<li>\nnewvarmean: media de var2 agrupada por var1 en el conjunto de datos agregado\n</li>\n<li>\n​newvarmedian: mediana de var3 agrupada por var1 en el conjunto de datos agregado\n</li>\n</ul>\n            "
+    "title": "Agregar a Conjunto de Datos",
+    "r_help": "help(group_by, package=dplyr)",
+    "body": "\n            <b>Descripción</b></br>\nAgrega una o más variables numéricas (escala) por una o más variables de factor y crea un nuevo conjunto de datos agregados. Para las variables numéricas calculamos lo siguiente:\nmedia, mediana, suma, sd, n_distinct, max, min y var. \nTambién calcula conteos en el conjunto de datos agregado.\n<br/>\n<b>Uso</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Refrescar el conjunto de datos</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Argumentos</b>\n <ul>\n   <li>\nvar1: factor por el que agrupar\n</li>\n<li>\nvar2, var3: variable a agregar\n</li>\n<li>\nnewvarmean: media de var2 agrupada por var1 en el conjunto de datos agregado\n</li>\n<li>\n​newvarmedian: mediana de var3 agrupada por var1 en el conjunto de datos agregado\n</li>\n</ul>\n            "
   }
 }

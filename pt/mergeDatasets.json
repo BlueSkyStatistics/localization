@@ -1,0 +1,25 @@
+{
+  "title": "Mesclar Conjuntos de Dados",
+  "navigation": "Mesclar(legado)",
+  "description": "Mesclar conjuntos de dados ajudará você a unir 2 conjuntos de dados. Por padrão, esta caixa de diálogo procurará nomes de variáveis comuns dentro dos 2 conjuntos de dados e mesclará no conjunto completo de variáveis comuns.",
+  "out": "Digite o nome do conjunto de dados mesclado",
+  "in1": "Selecione o 1º conjunto de dados",
+  "in2": "Selecione o 2º conjunto de dados",
+  "label1": "Opções de Mesclagem",
+  "leftjoin": "Mesclagem à Esquerda (Mantenha apenas as linhas no primeiro conjunto de dados)",
+  "rightjoin": "Mesclagem à Direita (Mantenha apenas as linhas no segundo conjunto de dados)",
+  "innerjoin": "Mesclagem Interna (Mantenha as linhas comuns a ambos os conjuntos de dados)",
+  "fulljoin": "Mesclagem Completa (Mantenha todas as linhas em qualquer conjunto de dados)",
+  "label2": "Substitua a mesclagem realizada em todos os nomes de colunas comuns",
+  "by": "Para substituir a configuração padrão da mesclagem realizada em todos os nomes de colunas comuns, insira um subconjunto dos nomes de colunas comuns abaixo, separados por vírgula. Por exemplo, país, região. A mesclagem será realizada apenas nos nomes de colunas comuns inseridos. Formate esta lista como valores separados por vírgula, por exemplo, A,B,C",
+  "label3": "Se os nomes das colunas nos quais a mesclagem é feita forem diferentes em cada conjunto de dados",
+  "byDiffNames": "Digite os nomes das colunas correspondentes separados por vírgula, por exemplo, 'C'='D', 'B'='A'. Por favor, use aspas simples ( ' ) aqui.",
+  "label4": "Se houver nomes de colunas comuns em ambos os conjuntos de dados",
+  "suffix": "Por padrão, .x e .y serão usados como sufixos para variáveis comuns. Se você quiser alterá-los, insira-os aqui separados por vírgula, por exemplo, 1,2. Observe que qualquer . será substituído por um _ no conjunto de dados de saída",
+  "advOptions": "Opções Avançadas",
+  "help": {
+    "title": "Mesclar Conjuntos de Dados",
+    "r_help": "ajuda(mesclar, pacote=dplyr)",
+    "body": "\n            <b>Descrição</b></br>\n            Mesclar conjuntos de dados ajudará você a unir 2 conjuntos de dados. Por padrão, esta caixa de diálogo procurará nomes de variáveis comuns dentro dos 2 conjuntos de dados e mesclará no conjunto completo de variáveis comuns.<br/> Se você gostaria de mesclar em um conjunto específico de variáveis, pode especificá-las no menu Avançado.<br/>\n            inner_join: retorna todas as linhas de x onde há valores correspondentes em y, e todas as colunas de x e y. Se houver múltiplas correspondências entre x e y, todas as combinações das correspondências são retornadas.</br>\n            left_join: retorna todas as linhas de x, e todas as colunas de x e y. Linhas em x sem correspondência em y terão valores NA nas novas colunas. Se houver múltiplas correspondências entre x e y, todas as combinações das correspondências são retornadas.</br>\n            right_join: retorna todas as linhas de y, e todas as colunas de x e y. Linhas em y sem correspondência em x terão valores NA nas novas colunas. Se houver múltiplas correspondências entre x e y, todas as combinações das correspondências são retornadas.</br>\n            full_join: retorna todas as linhas e todas as colunas de ambos x e y. Onde não há valores correspondentes, retorna NA para o que está faltando.</br>\n            <b>Uso</b>\n            <br/>\n            <code> \n            left_join(x, y, by = c(NULL), suffix = c(\".x\", \".y\"), ...)\n            right_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            inner_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            full_join ( x , y , by = c( NULL ), suffix=c('.x','.y') )\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            x: conjunto de dados a ser unido\n            </li>\n            <li>\n            y: conjunto de dados a ser unido\n            </li>\n            <li>\n            by: um vetor de caracteres de variáveis para unir. Se NULL, o padrão, *_join() fará uma junção natural, usando todas as variáveis com nomes comuns nas duas tabelas. Uma mensagem lista as variáveis para que você possa verificar se estão corretas (para suprimir a mensagem, basta listar explicitamente as variáveis que você deseja unir). Para unir por variáveis diferentes em x e y, use um vetor nomeado. Por exemplo, by = c(\"a\" = \"b\") fará a correspondência de x.a com y.b.\n            </li>\n            <li>\n            suffix: Se houver variáveis duplicadas não unidas em x e y, esses sufixos serão adicionados à saída para desambiguá-las. Deve ser um vetor de caracteres de comprimento 2.\n            </li>\n            </ul>\n            <b>Valor</b><br/>\n            Um tibble.<br/>\n            <b>Pacote</b></br>\n            dplyr</br>\n            <b>Ajuda</b></br>\n            Para ajuda detalhada, clique no ícone R no canto superior direito desta sobreposição de diálogo ou execute o seguinte comando ajuda(left_join, pacote=\"dplyr\") criando um bloco de código R clicando + na janela de saída\n"
+  }
+}

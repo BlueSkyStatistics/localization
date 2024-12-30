@@ -1,0 +1,15 @@
+{
+  "title": "Dimensione del campione, Precisione di una proporzione",
+  "navigation": "Una proporzione",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n": "Dimensione del campione",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "prop": "Proporzione dell'esito",
+  "conflevel": "Livello di confidenza (0-1)",
+  "method": "Metodo dell'intervallo di confidenza",
+  "help": {
+    "title": "Dimensione del campione, Precisione di una proporzione",
+    "r_help": "help(prec_prop, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per una proporzione basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Proporzione dell'esito:</b> Specifica la proporzione di soggetti con l'esito 'positivo'\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Metodo dell'intervallo di confidenza:</b> Specifica il tipo di metodo dell'intervallo di confidenza da utilizzare. Il metodo di Wilson è suggerito per piccoli n (< 40), e il metodo di Agresti-Coull è \nsuggerito per n più grandi. Il metodo di Wald non è suggerito, ma fornito a causa del suo uso ampiamente distribuito.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}
