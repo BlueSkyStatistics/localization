@@ -1,5 +1,5 @@
 {
-  "title": "帶有重疊正態曲線的直方圖",
+  "title": "帶有疊加正態曲線的直方圖",
   "navigation": "直方圖",
   "x": "X 軸，指定數值變量",
   "bins": "指定箱數",
@@ -11,17 +11,19 @@
   "specify_a_title": "輸入標題",
   "x_title": "X 軸標籤",
   "y_title": "Y 軸標籤",
-  "facets_lbl": "面板",
-  "Facetrow": "面板行",
-  "Facetcolumn": "面板列",
-  "Facetwrap": "面板包裝（如果選擇，任何面板行和列的選擇將被忽略）",
-  "Facetscale": "面板比例",
+  "Facetrow": "Facet 行",
+  "Facetcolumn": "Facet 列",
+  "Facetwrap": "Facet 包裝（如果選擇，任何 Facet 行和列的選擇將被忽略）",
+  "Facetscale": "Facet 比例",
   "normalCurveColor": "可選擇正態曲線顏色（選擇顏色後，點擊控制外部以應用）",
   "rugPlot": "顯示小數據集的地毯圖",
   "normalCurve": "顯示正態曲線（缺失值將被移除以顯示曲線）",
+  "showCountsChk": "在箱上顯示計數（如果選擇了分組或 Facet，則不會顯示計數）",
+  "histogramBarPosition": "如果選擇了分組，則為條形位置（堆疊或並排）",
+  "histogramBinDetailsChk": "在表中顯示直方圖箱詳細信息",
   "help": {
     "title": "直方圖",
     "r_help": "help(geom_histogram, package=ggplot2)",
-    "body": "\n            <b>描述</b></br>\n            直方圖是數值數據分佈的圖形表示。它是連續變量（定量變量）概率分佈的估計。您可以指定箱寬或使用默認值，見下文。可以通過指定因子變量來選擇性地創建面板。您還可以選擇性地指定主題，並為 x 和 y 軸指定標題和標籤。</br>\n            當您為 X 軸變量選擇多個變量時，我們為每個 x 軸變量創建一個單獨的直方圖。我們選擇性地重疊一條正態曲線和一個地毯圖</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(x=engine) )+  geom_histogram(binwidth=10) +labs(x=\"engine\",y=\"計數\") +  xlab(\"\")​\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集​\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變量如何映射到幾何圖形的視覺屬性（美學）。​\n            </li>\n            <li>\n            x: 要繪製直方圖的數值/比例變量。​\n            </li>\n            <li>\n            geom_histogram: 創建直方圖，默認情況下，stat_bin 使用 30 個箱 - 這不是一個好的默認值，但目的是讓您嘗試不同的箱寬..\n            </li>\n            <li>\n            geom_rug: 創建地毯圖    \n            </li>\n            <li>\n            stat_function: 創建正態曲線（注意：需要移除缺失值以顯示曲線）    \n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）\n            </li>\n            <li>\n            alpha: 取值範圍在 0-1 之間，1 表示無不透明度。不透明度適用於直方圖的填充顏色\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>幫助</b></br>\n            help(geom_histogram, package=ggplot2)</br>\n            點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs)、help(geom_bar)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)​\n           "
+    "body": "\n            <b>描述</b></br>\n            直方圖是數值數據分佈的圖形表示。它是連續變量（定量變量）概率分佈的估計。您可以指定箱寬或使用默認值，見下文。可以通過指定因子變量來選擇性地創建 Facets。您還可以選擇性地指定主題，並為 x 和 y 軸指定標題和標籤。</br>\n            當您為 X 軸變量選擇多個變量時，我們為每個 x 軸變量創建一個單獨的直方圖。我們選擇性地疊加正態曲線和地毯圖</br>\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(x=engine) )+  geom_histogram(binwidth=10) +labs(x=\"engine\",y=\"計數\") +  xlab(\"\")​\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            data: 默認數據集​\n            </li>\n            <li>\n            aes(): 生成美學映射，描述數據中的變量如何映射到幾何的視覺屬性（美學）。​\n            </li>\n            <li>\n            x: 要繪製直方圖的數值/比例變量。​\n            </li>\n            <li>\n            geom_histogram: 創建直方圖，默認情況下，stat_bin 使用 30 個箱 - 這不是一個好的默認值，但目的是讓您嘗試不同的箱寬..\n            </li>\n            <li>\n            geom_rug: 創建地毯圖    \n            </li>\n            <li>\n            stat_function: 創建正態曲線（注意：需要移除缺失值以顯示曲線）    \n            </li>\n            <li>\n            Labs(): 更改軸標籤和圖例標題（這是可選的）​\n            </li>\n            <li>\n            facet_grid(): 在網格中佈局面板（這是可選的）​\n            </li>\n            <li>\n            theme_calc(): 指定計算器主題（這是可選的）​\n            </li>\n            <li>\n            coord_flip(): 翻轉軸（這是可選的）\n            </li>\n            <li>\n            alpha: 取值範圍在 0-1 之間，1 表示無不透明度。不透明度適用於直方圖的填充顏色\n            </li>\n            </ul>\n            <b>包</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>幫助</b></br>\n            help(geom_histogram, package=ggplot2)</br>\n            點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs)，help(geom_bar)，help(aes)，help(facet_grid)，help(theme_calc)，help(coord_flip)​\n           "
   }
 }

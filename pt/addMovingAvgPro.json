@@ -1,0 +1,12 @@
+{
+  "title": "Calcular e Adicionar uma Variável de Média Móvel",
+  "navigation": "Média Móvel",
+  "variableSelcted": "Selecione uma variável para calcular a média móvel",
+  "sampleSize": "Especifique o tamanho do grupo para calcular a média móvel (por exemplo, 5)",
+  "movingAvgVarName": "Especifique o nome da variável de média móvel a adicionar/atualizar (por exemplo, movingAvg)",
+  "help": {
+    "title": "Calcular a média móvel para a variável selecionada",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\t<br/>\n\t\t\t\tCalcule a média móvel para a variável selecionada para o tamanho do grupo especificado. Adicione ou modifique (se o nome da variável especificado já existir) uma variável ao conjunto de dados para armazenar o resultado<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

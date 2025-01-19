@@ -3,11 +3,12 @@
   "navigation": "変数を探索する",
   "variableListSelcted": "探索する変数を1つ以上選択してください",
   "histCurveDispChk": "ヒストグラムに正規曲線を表示する（曲線を表示するために欠損値は除外されます）",
-  "statTableOrientionChk": "列に要約統計量",
+  "showCountsChk": "ヒストグラムのビンにカウントを表示する",
+  "statTableOrientionChk": "要約統計量を列に表示する",
   "histBins": "ヒストグラムのビンの数を指定してください",
   "help": {
     "title": "1つ以上の変数の特性を探索する",
     "r_help": "help(summary)",
-    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t次の記述統計量とプロットを出力します：\n\t\t\t\t最小値、最大値、平均、中央値、モード、合計、標準偏差、変動係数、分散、標準誤差、歪度、尖度、MAD、IQR、および四分位数。さらに、平均と標準偏差の95％信頼区間が計算されます。ヒストグラムとQQプロットが表示されます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(summary, package = base)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t歪度と尖度を計算するには、デフォルトでパラメータtype = 3が使用されます。パラメータtype = 2を使用すると、歪度と尖度の値はMS ExcelのSKEW()およびKURT()の値と一致する可能性があります。\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\t詳細については、\n\t\t\t\t<br/>\n\t\t\t\thelp(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t次の記述統計量とプロットを出力します：\n\t\t\t\t最小値、最大値、平均、中央値、モード、合計、標準偏差、変動係数、分散、標準誤差、歪度、尖度、中央値絶対偏差、四分位範囲、および四分位数。さらに、平均と標準偏差の95％信頼区間が計算されます。ヒストグラムとQQプロットが表示されます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(summary, package = base)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t歪度と尖度を計算するには、デフォルトでパラメータtype = 3が使用されます。パラメータtype = 2を使用すると、歪度と尖度の値はMS ExcelのSKEW()およびKURT()の値と一致する可能性があります。\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\t詳細については、\n\t\t\t\t<br/>\n\t\t\t\thelp(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

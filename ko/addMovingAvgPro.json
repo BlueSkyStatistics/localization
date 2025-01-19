@@ -1,0 +1,12 @@
+{
+  "title": "이동 평균 변수를 계산하고 추가하기",
+  "navigation": "이동 평균",
+  "variableSelcted": "이동 평균을 계산할 변수를 선택하세요",
+  "sampleSize": "이동 평균을 계산할 그룹의 크기를 지정하세요 (예: 5)",
+  "movingAvgVarName": "추가/업데이트할 이동 평균 변수의 이름을 지정하세요 (예: movingAvg)",
+  "help": {
+    "title": "선택한 변수에 대한 이동 평균 계산",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t<br/>\n\t\t\t\t지정된 그룹 크기에 대해 선택한 변수의 이동 평균을 계산합니다. 결과를 저장하기 위해 데이터 세트에 변수를 추가하거나 수정합니다 (지정한 변수 이름이 이미 존재하는 경우)<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

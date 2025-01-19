@@ -1,0 +1,10 @@
+{
+  "title": "Ajouter une variable de numéro d'échantillon",
+  "navigation": "Ajouter un numéro d'échantillon",
+  "sampleSize": "Spécifiez la taille des échantillons (par exemple, 5)",
+  "sampleVarName": "Spécifiez le nom de la variable d'échantillon à ajouter (par exemple, échantillon). Si le nom de la variable est déjà présent dans l'ensemble de données, il sera mis à jour",
+  "help": {
+    "title": "Ajouter une variable pour spécifier le numéro d'échantillon",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAjouter une variable de numéro d'échantillon (c'est-à-dire une colonne) à l'ensemble de données pour une taille d'échantillon spécifiée afin d'utiliser le numéro d'échantillon pour regrouper les données pour une analyse de données future\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa variable de numéro d'échantillon dans l'ensemble de données est nécessaire pour effectuer de nombreuses analyses, par exemple, la capacité de processus, les graphiques de Shewhart comme xbar, R, S, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

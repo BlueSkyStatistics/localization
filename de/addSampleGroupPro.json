@@ -1,0 +1,10 @@
+{
+  "title": "Eine Stichprobennummer-Variable hinzufügen",
+  "navigation": "Stichprobennummer hinzufügen",
+  "sampleSize": "Geben Sie die Größe der Stichproben an (z. B. 5)",
+  "sampleVarName": "Geben Sie den Namen der Stichprobenvariable an, die hinzugefügt werden soll (z. B. sample). Wenn der Variablenname bereits im Datensatz vorhanden ist, wird er aktualisiert.",
+  "help": {
+    "title": "Eine Variable hinzufügen, um die Stichprobennummer anzugeben",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFügen Sie eine Stichprobennummer-Variable (d. h. Spalte) zum Datensatz für eine angegebene Stichprobengröße hinzu, um die Stichprobennummer zu verwenden, um die Daten für zukünftige Datenanalysen zu gruppieren.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDie Stichprobennummer-Variable im Datensatz ist erforderlich, um viele Analysen durchzuführen, z. B. Prozessfähigkeit, Shewhart-Diagramme wie xbar, R, S usw.\n\t\t\t\t<br/>\n\t\t\t\t<br/>"
+  }
+}

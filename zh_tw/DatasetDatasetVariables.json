@@ -2,9 +2,10 @@
   "title": "探索變數",
   "navigation": "探索變數",
   "variableListSelcted": "選擇一個或多個變數進行探索",
-  "histCurveDispChk": "在直方圖上顯示正態曲線（缺失值將被移除以顯示曲線）",
-  "statTableOrientionChk": "摘要統計以列顯示",
-  "histBins": "指定直方圖的箱數",
+  "histCurveDispChk": "在直方圖上顯示正態曲線（缺失值已被移除以顯示曲線）",
+  "showCountsChk": "在直方圖的區間上顯示計數",
+  "statTableOrientionChk": "摘要統計以列的形式顯示",
+  "histBins": "指定直方圖的區間數",
   "help": {
     "title": "探索一個或多個變數的特徵",
     "r_help": "help(summary)",

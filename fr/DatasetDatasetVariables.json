@@ -2,12 +2,13 @@
   "title": "Explorer les variable(s)",
   "navigation": "Explorer les variables",
   "variableListSelcted": "Sélectionnez une ou plusieurs variables à explorer",
-  "histCurveDispChk": "Afficher une courbe normale sur l'histogramme (les valeurs manquantes sont supprimées pour afficher la courbe)",
-  "statTableOrientionChk": "Statistiques résumées en colonnes",
-  "histBins": "Spécifiez le nombre de classes pour l'histogramme",
+  "histCurveDispChk": "Afficher une courbe normale sur l'histogramme (les valeurs manquantes sont supprimées pour que la courbe s'affiche)",
+  "showCountsChk": "Afficher les comptes sur les bacs de l'histogramme",
+  "statTableOrientionChk": "Statistiques récapitulatives en colonnes",
+  "histBins": "Spécifiez le nombre de bacs pour l'histogramme",
   "help": {
     "title": "Explorer les caractéristiques d'une ou plusieurs variable(s)",
     "r_help": "aide(summary)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAffiche les statistiques descriptives et les graphiques suivants :\n\t\t\t\tmin, max, moyenne, médiane, modes, somme, écart-type, cv (coefficient de variation), var, erreur standard, asymétrie, kurtose, mad, iqr, et quartiles. De plus, l'intervalle de confiance à 95 % pour la moyenne et l'écart-type est calculé. L'histogramme et les graphiques QQ sont affichés. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(summary, package = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour calculer l'asymétrie et la kurtose, le type = 3 est utilisé par défaut. Avec le type = 2, les valeurs pour l'asymétrie et la kurtose correspondront probablement aux valeurs de la formule SKEW() et KURT() de MS Excel\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVoir plus de détails \n\t\t\t\t<br/>\n\t\t\t\thelp(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAffiche les statistiques descriptives et les graphiques suivants :\n\t\t\t\tmin, max, moyenne, médiane, modes, somme, écart-type, cv (coefficient de variation), var, erreur standard, asymétrie, kurtose, mad, iqr et quartiles. De plus, l'intervalle de confiance à 95 % pour la moyenne et l'écart-type est calculé. L'histogramme et les graphiques QQ sont affichés. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(summary, package = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour calculer l'asymétrie et la kurtose, le type = 3 est utilisé par défaut. Avec le type = 2, les valeurs pour l'asymétrie et la kurtose correspondront probablement aux valeurs de la formule SKEW() et KURT() de MS Excel\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVoir plus de détails \n\t\t\t\t<br/>\n\t\t\t\taide(skew, package = psych)\n\t\t\t\t<br/>\n\t\t\t\taide(kurtosi, package = psych)\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

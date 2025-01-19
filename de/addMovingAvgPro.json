@@ -1,0 +1,12 @@
+{
+  "title": "Berechnen und Hinzufügen einer gleitenden Durchschnittsvariablen",
+  "navigation": "Gleitender Durchschnitt",
+  "variableSelcted": "Wählen Sie eine Variable aus, um den gleitenden Durchschnitt zu berechnen",
+  "sampleSize": "Geben Sie die Größe der Gruppe an, um den gleitenden Durchschnitt zu berechnen (z. B. 5)",
+  "movingAvgVarName": "Geben Sie den Namen der gleitenden Durchschnittsvariablen an, die hinzugefügt/aktualisiert werden soll (z. B. movingAvg)",
+  "help": {
+    "title": "Berechnen Sie den gleitenden Durchschnitt für die ausgewählte Variable",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\t<br/>\n\t\t\t\tBerechnen Sie den gleitenden Durchschnitt für die ausgewählte Variable für die angegebene Gruppengröße. Fügen Sie eine Variable zum Datensatz hinzu oder ändern Sie sie (wenn der angegebene Variablenname bereits existiert), um das Ergebnis zu speichern<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

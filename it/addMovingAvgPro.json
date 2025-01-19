@@ -1,0 +1,12 @@
+{
+  "title": "Calcola e Aggiungi una Variabile Media Mobile",
+  "navigation": "Media Mobile",
+  "variableSelcted": "Seleziona una variabile per calcolare la media mobile",
+  "sampleSize": "Specifica la dimensione del gruppo per calcolare la media mobile (es. 5)",
+  "movingAvgVarName": "Specifica il nome della variabile media mobile da aggiungere/aggiornare (es. mediaMobile)",
+  "help": {
+    "title": "Calcola la media mobile per la variabile selezionata",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\t<br/>\n\t\t\t\tCalcola la media mobile per la variabile selezionata per la dimensione del gruppo specificata. Aggiungi o modifica (se il nome della variabile specificato esiste già) una variabile al dataset per memorizzare il risultato<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

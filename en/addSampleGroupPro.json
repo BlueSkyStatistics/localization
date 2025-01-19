@@ -1,0 +1,10 @@
+{
+    "title": "Add a Sample Number Variable",
+    "navigation": "Add Sample Number",
+    "sampleSize": "Specify the size of the samples (e.g., 5)",
+    "sampleVarName": "Specify the name of the sample variable to add (e.g., sample). If the variable name is already present in the dataset, it will be updated",
+    "help": {
+        "title": "Add a variable to specify Sample number",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAdd a Sample number variable (i.e. column) to the dataset for a specified sample size to use the sample number to group the data for future data analysis\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe sample number variable in the dataset is needed to perform many analysis e.g. Process Capability, Shewhart charts like xbar,R,S, etc \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

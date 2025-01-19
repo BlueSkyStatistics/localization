@@ -1,0 +1,12 @@
+{
+  "title": "計算並添加移動平均變數",
+  "navigation": "移動平均",
+  "variableSelcted": "選擇一個變數以計算移動平均",
+  "sampleSize": "指定計算移動平均的組大小（例如：5）",
+  "movingAvgVarName": "指定要添加/更新的移動平均變數名稱（例如：movingAvg）",
+  "help": {
+    "title": "計算所選變數的移動平均",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t<br/>\n\t\t\t\t計算所選變數的移動平均，根據指定的組大小。將變數添加或修改（如果指定的變數名稱已存在）到數據集中以存儲結果<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

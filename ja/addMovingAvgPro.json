@@ -1,0 +1,12 @@
+{
+  "title": "移動平均変数を計算して追加する",
+  "navigation": "移動平均",
+  "variableSelcted": "移動平均を計算する変数を選択してください",
+  "sampleSize": "移動平均を計算するグループのサイズを指定してください（例：5）",
+  "movingAvgVarName": "追加/更新する移動平均変数の名前を指定してください（例：movingAvg）",
+  "help": {
+    "title": "選択した変数の移動平均を計算する",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t<br/>\n\t\t\t\t指定されたグループサイズの選択した変数の移動平均を計算します。結果を保存するためにデータセットに変数を追加または変更します（指定された変数名が既に存在する場合）<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
