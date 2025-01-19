@@ -1,16 +1,29 @@
 {
-  "title": "Hierarchische Cluster",
+  "title": "Hierarchischer Cluster",
   "navigation": "Hierarchisch",
   "destination": "Ziel",
   "clusters": "Anzahl der Cluster",
   "storeClusterInDataset": "Cluster dem Datensatz zuweisen",
   "variablename": "Variablenname für Cluster speichern",
   "biplot": "Cluster-Biplot anzeigen",
-  "dendogram": "Cluster-Dendrogramm zeichnen",
+  "dendogram": "Cluster-Dendrogramm plotten",
   "labelForClusteringMethod": "Cluster-Methode",
+    "Methodlabel": "Methode",
+    "MethodRadlabel1": "Ward-Methode",
+    "MethodRadlabel2": "Einzelne Verknüpfung",
+    "MethodRadlabel3": "Komplette Verknüpfung",
+    "MethodRadlabel4": "Durchschnittliche Verknüpfung",
+    "MethodRadlabel5": "McQuitty-Methode",
+    "MethodRadlabel6": "Median-Verknüpfung",
+    "MethodRadlabel7": "Zentroid-Verknüpfung",
+    "Metriclabel": "Metrik",
+    "MetricRadlabel1": "Euklidisch",
+    "MetricRadlabel2": "Quadratische Euklidische",
+    "MetricRadlabel3": "Manhattan (City-Block)",
+    "MetricRadlabel4": "Keine Transformation",
   "help": {
-    "title": "Hierarchische Cluster",
-    "r_help": "hilfe(hclust, paket ='stats')",
-    "body": "\n<b>Beschreibung</b></br>\nHierarchische Clusteranalyse auf einer Menge von Dissimilaritäten und Methoden zu deren Analyse.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvarsToCluster: Die zu analysierenden Variablen \n</li>\n<li>\nmethod: die zu verwendende Agglomerationsmethode. Dies sollte (eine eindeutige Abkürzung von) einer der \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) oder \"centroid\" (= UPGMC) sein.\n</li>\n<li>\nnoOfClusters: Die gewünschte Anzahl an Clustern\n</li>\n<li>\nplotDendogram: Ein Dendrogramm zeichnen Wahr oder falsch\n</li>\n<li>\nassignClusterToDataset: Die Clusterzuweisungen im Datensatz speichern\n</li>\n<li>\nlabel: Name für die neue Variable, die die Clusterzuweisungen speichert\n</li>\n<li>\nplotBiplot: Biplot zeichnen WAHR oder FALSCH\n</li>\n</ul>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Hilfe</b></br>\nhilfe(hclust, paket ='stats')</br></br>\n<b>Beschreibung</b></br>\nplotDendrogram: Ruft die Plot-Funktion auf, um das Cluster-Dendrogramm zu zeichnen\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nmethod: siehe oben\n</li>\n<li>\ndistance: siehe oben\nplotBiplot: Biplot zeichnen WAHR oder FALSCH\n</li>\n</ul>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Hilfe</b></br>\nhilfe(plot)\n    "
+    "title": "Hierarchischer Cluster",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>Beschreibung</b></br>\nHierarchische Clusteranalyse auf einer Menge von Dissimilaritäten und Methoden zu deren Analyse.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvarsToCluster: Die zu analysierenden Variablen \n</li>\n<li>\nmethod: die zu verwendende Agglomerationsmethode. Dies sollte (eine eindeutige Abkürzung von) einer der \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) oder \"centroid\" (= UPGMC) sein.\n</li>\n<li>\nnoOfClusters: Die gewünschte Anzahl an Clustern\n</li>\n<li>\nplotDendogram: Dendrogram plotten Wahr oder Falsch\n</li>\n<li>\nassignClusterToDataset: Die Clusterzuweisungen im Datensatz speichern\n</li>\n<li>\nlabel: Name für die neue Variable, die die Clusterzuweisungen speichert\n</li>\n<li>\nplotBiplot: Biplot plotten WAHR oder FALSCH\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Hilfe</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>Beschreibung</b></br>\nplotDendrogram: Ruft die Plot-Funktion auf, um das Cluster-Dendrogramm zu plotten\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nmethod: siehe oben\n</li>\n<li>\ndistance: siehe oben\nplotBiplot: Biplot plotten WAHR oder FALSCH\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Hilfe</b></br>\nhelp(plot)\n    "
   }
 }

@@ -1,0 +1,20 @@
+{
+  "title": "Mantıksal Olarak Alt Küme Veri Seti",
+  "navigation": "Mantıksal Olarak Alt Küme Veri Seti",
+  "label0": "Sonuçları yeni bir veri setinde kaydetmeyi veya mevcut veri setini üzerine yazmayı seçebilirsiniz",
+  "label1": "Seçenekler",
+  "New": "Sonuçları yeni bir veri setine kaydet",
+  "newdatasetname": "Bir veri seti adı girin",
+  "Existing": "Mevcut veri setini üzerine yaz",
+  "Output": "Sonuçları çıktı penceresinde göster",
+  "distinct": "Ayrık durumları seç",
+  "chkbox2": "Kullanılmayan faktör seviyelerini kaldır",
+  "subsetvars": "Alt küme veri setine dahil edilecek değişkenleri seçin",
+  "label12": "Alt kümeleme kriterleri her bir satıra uygulanır, aşağıdaki örneklere bakın. \n1: var 1'in boş olmadığı ve var 2'nin boş olduğu satırları seçin belirtin:\n!is.na(var1) & is.na(var2) \n2: var1 > 30 ve var 2'nin Erkek olduğu satırları seçin belirtin:\nvar1>30 & var2=='Erkek' \n3: Karmaşık ve/veya kriterleri belirtin:\n(var1 !=10 & var2>20) | var3==40 \n4: Desen eşleşmesi (xxx) veya tam eşleşme (abc) belirtin:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Bir alt dizeyi konuma göre eşleştirin belirtin: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Alt kümeleme kriterlerini girin.",
+  "help": {
+    "title": "Alt Küme Veri Seti",
+    "r_help": "help(filter, package=dplyr)",
+    "body": "\n            <b>Açıklama</b></br>\nVeri setinin bir alt kümesini döndürür. Daha küçük veri setinde istediğiniz sütunları/değişkenleri belirtebilirsiniz. Ayrıca, veri çerçevesinin her bir satırına uygulanacak seçim kriterlerini de belirtebilirsiniz.\n<br/><br/>\n<b>Sonuçları yeni bir veri setine kaydet:</b> Alt küme verilerini saklamak için yeni bir veri seti belirtin\n<br/><br/>\n<b>Mevcut veri setini üzerine yaz:</b> Bu, alt küme veri setini mevcut veri seti adına kaydeder\n<br/><br/>\n<b>Sonuçları çıktı penceresinde göster:</b> Bu, alt küme veri setini yalnızca çıktı penceresinde yazdırır. Alt küme veri seti bir veri setinde kaydedilmez.\n<br/><br/>\n<b>Ayrık durumları seç:</b> Bu, alt küme veri setinden yinelenenleri kaldırır. Yinelenen olarak kabul edilmek için tüm değişkenlerin aynı olması gerekir.\n<br/><br/>\n<b>Kullanılmayan faktör seviyelerini kaldır:</b> Bu, alt küme tarafından hariç tutulan faktör seviyelerini siler (yani, verilerde artık görünmeyen).\n<br/><br/>\n<b>Alt küme veri setine dahil edilecek değişkenleri seç:</b> Bu, kullanıcının veri setine dahil etmek istediği belirli sütunları seçmesine olanak tanır. Herhangi biri belirtilirse, yalnızca belirtilen değişkenler alt küme veri setinde görünecektir. Hiçbir değişken belirtilmezse, tüm değişkenler korunacaktır.\n<br/><br/>\n<b>Alt kümeleme kriterlerini girin:</b> Veri setinin satırlarını filtrelemek için kullanılacak değişken mantığını belirtin.\n<br/><br/>\n<b>R Paketi</b></br>\ndplyr<br/>  \n<b>Yardım</b></br>\nhelp(filter, package=dplyr)\n"
+  }
+}

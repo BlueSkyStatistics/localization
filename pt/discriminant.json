@@ -1,0 +1,22 @@
+{
+  "title": "Análise Discriminante",
+  "navigation": "Discriminante",
+  "modelname": "Nome do modelo",
+  "tvarbox1": "Variáveis dependentes",
+  "tvarbox2": "Fator fixo",
+  "blockVar": "Covariável(is)",
+  "testStatistic": "Estatística do teste",
+  "label2": "Opções para post-hocs",
+  "combon": "Comparar médias usando:",
+  "emm": "Médias marginais estimadas",
+  "displayBoxMDetails": "Exibir detalhes associados ao teste de Box's M (Nota: Os resultados do teste de Box's M são sempre mostrados)",
+  "adjust": "Método para ajustar valores p",
+  "levenesTest": "Teste de Levene",
+  "posthocs": "Post-hocs",
+  "plotMeansCI": "Gráfico de médias e intervalos de confiança",
+  "help": {
+    "title": "Análise Discriminante",
+    "r_help": "help(manova, package='stats')",
+    "body": "\n<b>Descrição</b></br>\nAnálise Discriminante: Testes multivariados omnibus e os correspondentes valores F e p são fornecidos. Testes univariados de acompanhamento também são fornecidos.</br> NOTA: Atualmente, suportamos um único fator independente</br>\nNOTA: Não exibimos o intervalo de confiança no gráfico de médias, pois há avisos desnecessários exibidos. Estamos trabalhando com o autor do pacote gplots para retificar isso.</br>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nmanova(...)</br>\nmanova(data = dataset1, cbind(var1,var2...) ~ fator1  )\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n...: Argumentos passados para aov\n</li>\n</ul>\n<b>Detalhes</b></br>\nA classe \"manova\" difere da classe \"aov\" na seleção de um método de resumo diferente. A função manova chama aov e então adiciona a classe \"manova\" ao objeto de resultado para cada estrato.​</br>\n<b>Valor</b><br/>\nVeja a ajuda de aov, detalhes abaixo<br/>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nClique no botão de Ajuda R para obter ajuda detalhada em R.</br> Você também pode digitar help(manova, package ='stats') e pressionar CTRL Enter no editor de sintaxe R para obter ajuda</br>\n"
+  }
+}

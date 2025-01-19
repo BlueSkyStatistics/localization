@@ -1,0 +1,18 @@
+{
+  "title": "Tamanho da Amostra, Teste de Correlação",
+  "navigation": "Correlação",
+  "howtouse": "Para calcular o tamanho da amostra: especifique a correlação e o poder\nPara calcular o poder: especifique o tamanho da amostra e a correlação\nPara calcular a correlação detectável: especifique o tamanho da amostra e o poder",
+  "n": "Tamanho da Amostra",
+  "corr": "Correlação (-1 a 1)",
+  "power": "Poder (0-1)",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "greater": "Maior Que",
+  "less": "Menor Que",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Correlação",
+    "r_help": "help(pwr.r.test, package ='pwr')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um coeficiente de correlação de Pearson. Ele calcula o tamanho da amostra, poder ou correlação quando o usuário \nespecifica os outros dois. A correlação da hipótese nula é 0.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Correlação:</b> Especifique a correlação a ser detectada\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral, maior que (unilateral) ou menor que (unilateral)\n<br/><br/>\n<b>Pacotes R Necessários:</b> pwr\n\t\t\t"
+  }
+}

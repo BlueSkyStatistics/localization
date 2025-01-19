@@ -1,0 +1,10 @@
+{
+  "title": "R Paket Detayları",
+  "navigation": "Paket detayları",
+  "packageName": "Yüklü bir R paketini seçin",
+  "help": {
+    "title": "R Paket Detayları",
+    "r_help": "help(packageDescription, package='utils')",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen paketin açıklamasını gösterir\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \npackageDescription(pkg, lib.loc = NULL, fields = NULL,\n    drop = TRUE, encoding = \"\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\npkg: paket adını içeren bir karakter dizesi.\n</li>\n<li>\nlib.loc: R kütüphanelerinin dizin adlarının karakter vektörü veya NULL. NULL varsayılan değeri, şu anda bilinen tüm kütüphaneleri ifade eder. Varsayılan kullanıldığında, yüklü paketler ve ad alanları kütüphanelerden önce aranır.\n</li>\n<li>\nfields: döndürülmesi gereken alan etiketlerinin karakter vektörü (dosyada başka alanlar varsa göz ardı edilir).\n</li>\n<li>\ndrop: Eğer TRUE ise ve fields'ın uzunluğu 1 ise, o zaman ilgili alanın değerine sahip tek bir karakter dizesi döndürülür, \"packageDescription\" sınıfından bir nesne yerine.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nPaketin açıklaması</br>\n<b>Örnekler</b><br/>\n<code> \npackageDescription(\"stats\")\n</code> <br/>\n<b>Paket</b></br>\nutils</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(packageDescription, package='utils')\n                "
+  }
+}

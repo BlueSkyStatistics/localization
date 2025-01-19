@@ -1,0 +1,16 @@
+{
+  "title": "누락된 값 대체 (수치 변수)",
+  "navigation": "수치",
+  "label1": "선택된 변수의 누락된 값(NAs)은 함수(예: 중앙값, 평균, 최소값, 최대값 또는 지정된 값)를 적용하여 대체됩니다.",
+  "target": "누락된 값을 대체할 변수를 선택하세요",
+  "label2": "NAs를 대체할 함수 또는 값을 지정하세요",
+  "rd1": "누락된 값을 계산하기 위해 함수를 사용하세요",
+  "selectctrl": "함수를 선택하세요",
+  "rd2": "누락된 값을 대체할 수치 값을 지정하세요",
+  "valueEntered": "수치 값을 입력하세요",
+  "help": {
+    "title": "누락된 값 대체 (수치)",
+    "r_help": "help(mean)",
+    "body": "\n<b>설명</b></br>\n선택된 변수의 누락된 값을 선택된 연산(예: 중앙값, 평균, 최소값, 최대값)으로 대체합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvar: 누락된 값(na)이 있는 수치 변수를 나타내는 문자 문자열, 예: var = c('sales')\n</li>\n<li>\nDataset: 변수 var를 포함하는 데이터셋\n</li>\n</ul>\n<b>값</b><br/>\n계산된 값은 Dataset에 직접 저장됩니다.<br/>\n<b>패키지</b></br>\nbase</br>\n<b>도움말</b></br>\nhelp(mean)"
+  }
+}

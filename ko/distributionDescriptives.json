@@ -1,0 +1,13 @@
+{
+  "title": "비검열 데이터에 대한 경험적 분포의 기술적 설명이 포함된 Cullen과 Frey 그래프",
+  "navigation": "분포 분석 (Cullen과 Frey 그래프)",
+  "variableSelcted": "분포를 포함하는 변수를 선택하세요",
+  "boot": "(선택 사항) 왜도와 첨도의 부트 값. 지정된 경우 10 이상의 정수여야 합니다.",
+  "discreteChk": "이산 - 균일, 정규, 로지스틱, 로그 정규, 베타 및 감마에 대해 선택 해제(기본값). 포아송 및 음의 이항에 대해 선택됨",
+  "method": "통계의 편향되지 않은 추정값 또는 샘플 값에 대한 편향되지 않은(기본값) 샘플 값",
+  "help": {
+    "title": "비검열 데이터에 대한 경험적 분포의 설명",
+    "r_help": "help(descdist, package = fitdistrplus)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t비검열 데이터에 대한 경험적 분포의 기술적 매개변수를 계산하고 왜도-첨도 플롯을 제공합니다.\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(descdist, package = fitdistrplus)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t최소값, 최대값, 중앙값, 평균, 샘플 표준편차 및 샘플(방법이 \"샘플\"인 경우) 또는 기본적으로 편향되지 않은 추정값이 \n\t\t\t\t왜도 및 피어슨의 첨도 값으로 인쇄됩니다(Sokal 및 Rohlf, 1995). Cullen과 Frey(1999)가 제안한 것과 같은 왜도-첨도 플롯이 \n\t\t\t\t경험적 분포에 대해 제공됩니다. 이 플롯에서는 데이터에 맞출 분포 선택을 돕기 위한 도구로서 일반적인 \n\t\t\t\t분포의 값도 표시됩니다. 일부 분포(정규, 균일, 로지스틱, 지수 등)의 경우 왜도와 \n\t\t\t\t첨도에 대한 가능한 값은 하나뿐이며(예를 들어 정규 분포의 경우 왜도 = 0 및 첨도 = 3), 따라서 분포는 \n\t\t\t\t플롯의 한 점으로 나타납니다. 다른 분포의 경우 가능한 값의 영역이 나타나며, 선(감마 및 로그 정규 분포 등) 또는 더 큰 영역(베타 분포 등)으로 구성됩니다. \n\t\t\t\t웨이불 분포는 그래프에 나타나지 않지만, 이 분포로 인해 로그 정규 및 감마 분포에 가까운 형태가 얻어질 수 있음을 범례에 표시합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t왜도와 첨도의 추정값의 불확실성을 고려하기 위해 데이터 세트를 부트스트랩할 수 있으며, 인수 boot를 10 이상의 정수로 고정합니다. 부트스트랩 샘플에 해당하는 왜도 및 첨도의 부트 값이 계산되어 왜도-첨도 플롯에서 파란색으로 보고됩니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이산이 TRUE인 경우 나타나는 분포는 포아송, 음의 이항 분포 및 이전 이산 분포가 수렴할 수 있는 정규 분포입니다. 이산이 FALSE인 경우 균일, 정규, 로지스틱, 로그 정규, 베타 및 감마 분포입니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">분포 적합에 대한 좋은 개요는 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best를 참조하세요.</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
+  }
+}

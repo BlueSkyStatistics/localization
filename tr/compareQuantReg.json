@@ -1,0 +1,12 @@
+{
+  "title": "Kuantil Regresyon Model Eğimlerini Karşılaştır",
+  "navigation": "Kuantil Reg Modelleri",
+  "label1": "N Kuantil Regresyon modelini karşılaştırır.",
+  "label4": "**NOT: Model Tuning (class train) ile oluşturulan modeller desteklenmemektedir",
+  "modelselector1": "Eğimlerini karşılaştırmak için 2 veya daha fazla Kuantil Regresyon modeli seçin:",
+  "help": {
+    "title": "Kuantil Regresyon Model Eğimlerini Karşılaştır",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>Açıklama</b></br>\nİki veya daha fazla kuantil regresyon uyumunun test istatistiklerini hesaplayın. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nobject: rq sınıfının nesneleri, rq çağrısından türetilmiştir.\n</li>\n</ul>\n<b>Ayrıntılar</b><br/>\nİlgili hipotez, modellerin eğim katsayılarının aynı olduğudur. Test istatistiği, Koenker ve Bassett (1982) tarafından tanımlanan Wald testinin bir varyantıdır.<br/>\n<b>Değer</b><br/>\n\"anova\" sınıfından, \"data.frame\" sınıfından miras alan bir nesne.<br/>\n<b>Paket</b></br>\nquantreg</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

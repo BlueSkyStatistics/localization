@@ -1,16 +1,16 @@
 {
-  "title": "Variabilă de întârziere sau de conducere",
-  "navigation": "Variabilă de întârziere sau de conducere",
-  "varnamelabel": "Nume nou de variabilă (fără spații)",
-  "lagleadvarlabel": "Variabilă de întârziere / conducere",
-  "groupbyvarslabel": "Variabile pentru grupare",
-  "typelabel": "Întârziere sau conducere",
+  "title": "Variabilă de întârziere sau avansare",
+  "navigation": "Variabilă de întârziere sau avansare",
+  "varnamelabel": "Numele noii variabile (fără spații)",
+  "lagleadvarlabel": "Variabila de întârziere / avansare",
+  "groupbyvarslabel": "Variabilele de grupare",
+  "typelabel": "Întârziere sau avansare",
   "laglabel": "Întârziere",
-  "leadlabel": "Conducere",
+  "leadlabel": "Avansare",
   "positionlabel": "Numărul de poziții",
   "help": {
-    "title": "Variabilă de întârziere sau de conducere",
+    "title": "Variabilă de întârziere sau avansare",
     "r_help": "help(lag, package ='dplyr')",
-    "body": "\nAceasta creează o nouă variabilă care găsește valoarea anterioară (întârziere) sau următoarea (conducere) într-o variabilă existentă pe baza poziției rândului.\n<br/><br/>\n<b>Nume nou de variabilă:</b> Numele variabilei pentru a stoca valorile întârziate sau de conducere\n<br/><br/>\n<b>Variabilă de întârziere / conducere:</b> Specificați variabila existentă din care să extrageți valorile întârziate sau de conducere\n<br/><br/>\n<b>Variabile pentru grupare (opțional):</b> Specificați variabilele pentru grupare. Dacă sunt specificate variabile aici, valorile întârziate și de conducere \nvor fi obținute doar în cadrul grupurilor definite de aceste variabile. Dacă nu sunt specificate variabile aici, valorile întârziate și de conducere \nvor fi obținute pe baza întregii coloane specificate în Variabila de întârziere / conducere. De obicei, valorile ar trebui să fie sortate după variabilele de grupare \nînainte de a face o întârziere sau o conducere.\n<br/><br/>\n<b>Întârziere sau conducere:</b> Alegeți dacă doriți să găsiți valoarea anterioară (întârziere) sau următoarea valoare (conducere)\n<br/><br/>\n<b>Numărul de poziții:</b> Specificați numărul de poziții pentru întârziere sau conducere. De exemplu, o valoare întârziată de 1 ar extrage valoarea anterioară și o valoare întârziată de 2 ar extrage valoarea cu 2 poziții anterioare.\n<br/><br/>\n<b>Pachete R necesare:</b> dplyr\n\t\t\t"
+    "body": "\nAceasta creează o nouă variabilă care găsește valoarea anterioară (întârziere) sau următoarea (avansare) într-o variabilă existentă pe baza poziției rândului.\n<br/><br/>\n<b>Numele noii variabile:</b> Numele variabilei pentru a stoca valorile întârziate sau avansate\n<br/><br/>\n<b>Variabila de întârziere / avansare:</b> Specificați variabila existentă din care să extrageți valorile întârziate sau avansate\n<br/><br/>\n<b>Variabilele de grupare (opțional):</b> Specificați variabilele de grupare. Dacă variabilele sunt specificate aici, valorile întârziate și avansate \nvor fi obținute doar în cadrul grupurilor definite de aceste variabile. Dacă nu sunt specificate variabile aici, valorile întârziate și avansate \nvor fi obținute pe baza întregii coloane specificate în Variabila de întârziere / avansare. De obicei, valorile ar trebui să fie sortate după variabilele de grupare \nînainte de a face o întârziere sau avansare.\n<br/><br/>\n<b>Întârziere sau avansare:</b> Alegeți dacă doriți să găsiți valoarea anterioară (întârziere) sau următoarea valoare (avansare)\n<br/><br/>\n<b>Numărul de poziții:</b> Specificați numărul de poziții pentru a întârziere sau avansa. De exemplu, o valoare întârziată de 1 ar extrage valoarea anterioară, iar o valoare întârziată de 2 ar extrage valoarea cu 2 poziții anterioare.\n<br/><br/>\n<b>Pachete R necesare:</b> dplyr\n\t\t\t"
   }
 }

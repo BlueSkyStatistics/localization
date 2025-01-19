@@ -1,0 +1,32 @@
+{
+  "title": "정규(분수) 팩토리얼 2수준 설계 생성",
+  "navigation": "정규(분수) 팩토리얼 2수준 설계 생성",
+  "selectedvars": "변수 선택",
+  "datasetname": "설계 이름",
+  "lblheading": "크기 및 무작위화",
+  "numOfRuns": "실행 횟수(지정된 경우, 2의 거듭제곱이어야 하며 그렇지 않으면 0으로 설정)",
+  "numOfBlocks": "블록 수",
+  "alias2FIsChk": "블록은 2fis와 동등할 수 있습니다",
+  "numOfCenterPts": "중심점 수(사용하는 경우 최소 2개)",
+  "centerPointDistribution": "중심점 분포를 위한 위치 수(1개 초과)",
+  "replications": "복제",
+  "repeatOnlyChk": "단지 반복",
+  "lbl1": "무작위화 설정을 변경할 필요가 없을 수 있습니다",
+  "randomseeds": "무작위화 시드",
+  "randomizationChk": "설계 생성을 무작위화",
+  "lbl2": "참고: MaxC2 선택 또는 지정되지 않은 실행 횟수에만 설계 생성에 영향을 미침",
+  "lbldesignheading": "설계 속성",
+  "roman": "최소 해상도(III, IV, V...)",
+  "marad": "MA(최대 해상도 및 최소 왜곡)",
+  "maxC2rad": "MaxC2(최대 명확한 2fis 수)",
+  "lbl3": "설계 카탈로그를 지정하십시오(선택 사항)",
+  "designChk": "카탈로그에서 설계 사용",
+  "designcatlgname": "설계 카탈로그 이름 예: catlg",
+  "designnamefromcatlg": "설계 카탈로그에서의 설계 이름",
+  "nrunsChk": "위에서 지정된 설계에서 실행 횟수를 자동으로 계산",
+  "help": {
+    "title": "정규(분수) 팩토리얼 2수준 설계 생성",
+    "r_help": "help(FrF2, package = FrF2)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tFrF2 함수는 정규 분수 팩토리얼 2수준 설계를 생성합니다\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(FrF2, package = FrF2)를 사용하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t메뉴 DOE->설계 검사->FrF2 카탈로그 검사를 사용하여 FrF2 패키지에서 로드된 설계 카탈로그에서 참조할 수 있는 사용 가능한 FrF2 설계를 탐색하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이를 시도하려면 factor_grid_Injection Molding FrF2.xlsx라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Coeficiente de Correlação de Concordância",
+  "navigation": "Coeficiente de Correlação de Concordância",
+  "obs1var": "Observador 1:",
+  "obs2var": "Observador 2:",
+  "cilevel": "Nível de Confiança:",
+  "label1": "Método do Intervalo de Confiança",
+  "ztrans": "Z-transformação",
+  "asymp": "Assintótico",
+  "plotoptionslabel": "Opções de Gráfico",
+  "plottitle": "Título",
+  "xlabel": "Rótulo do Eixo X",
+  "ylabel": "Rótulo do Eixo Y",
+  "plottheme": "Tema do Gráfico",
+  "help": {
+    "title": "Coeficiente de Correlação de Concordância",
+    "r_help": "help(epi.ccc,package=epiR)",
+    "body": "\nO coeficiente de correlação de concordância (CCC) mede o acordo entre dois observadores que medem os mesmos sujeitos na mesma escala para dados contínuos. O CCC pode variar \nbetween -1 e 1, com 1 sendo o acordo perfeito e 0 sendo nenhum acordo. Valores negativos indicam acordo negativo, mas é raro na prática. Um gráfico da variável do observador 1 \n(eixo x) vs a variável do observador 2 (eixo y) também é fornecido com uma linha de acordo perfeito (y=x).\n<br/><br/>\n<b>Observador 1:</b> Variável contendo os valores fornecidos por um observador; deve ser numérico\n<br/>\n<b>Observador 2:</b> Variável contendo os valores fornecidos por um segundo observador; deve ser numérico\n<br/>\n<b>Nível de Confiança:</b> Nível desejado do intervalo de confiança para o CCC\n<br/>\n<b>Método do Intervalo de Confiança:</b> Método desejado do intervalo de confiança. O método de z-transformação (ou transformação hiperbólica inversa) é geralmente uma melhor escolha porque \naproxima melhor uma distribuição normal.   \n<br/><br/>\n<b>Pacotes R necessários:</b> epiR, ggplot2, ggthemes\n                "
+  }
+}

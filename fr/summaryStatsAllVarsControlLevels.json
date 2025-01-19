@@ -1,10 +1,10 @@
 {
   "title": "Statistiques Résumées, niveaux de contrôle",
   "navigation": "Statistiques Résumées, toutes les variables, niveaux de contrôle (Héritage)",
-  "levels": "Spécifiez le nombre de niveaux pour lesquels afficher les comptes des variables factorielles. REMARQUE : Les niveaux moins fréquents des variables factorielles sont résumés dans la catégorie (Autre).",
+  "levels": "Spécifiez le nombre de niveaux pour afficher les comptes des variables factorielles. REMARQUE : Les niveaux moins fréquents des variables factorielles sont résumés dans la catégorie (Autre).",
   "help": {
     "title": "Statistiques Résumées, niveaux de contrôle",
     "r_help": "",
-    "body": "\n    <b>Description</b></br>\n    Génère les résumés pour toutes les variables du jeu de données tout en vous permettant de contrôler le nombre de niveaux pour lesquels les comptes sont affichés.</br>\n    REMARQUE : LES COMPTES DES VARIABLES MOINS FRÉQUENTES SONT RÉSUMÉS DANS LA CATÉGORIE (AUTRE)</br>\n    Affiche le Minimum, le 1er Quartile, la Médiane, la Moyenne, le 3ème Quartile, le Maximum et le compte des NAs pour les variables numériques et de date.</br>\n    Pour les variables factorielles, elle affiche les comptes de chaque niveau.</br>\n    Pour les variables logiques, elle affiche les comptes de VRAI, FAUX et NAs.</br>\n    L'aide R n'est pas disponible car nous avons écrit un code personnalisé utilisant plusieurs fonctions R. Si vous avez besoin d'inspecter le code, cliquez sur le bouton \"<>\".</br>\n    "
+    "body": "\n    <b>Description</b></br>\n    Génère les résumés pour toutes les variables du jeu de données tout en vous permettant de contrôler le nombre de niveaux pour lesquels les comptes sont affichés.</br>\n    REMARQUE : LES COMPTES DES VARIABLES MOINS FRÉQUENTES SONT RÉSUMÉS DANS LA CATÉGORIE (AUTRE)</br>\n    Affiche le Minimum, le 1er Quartile, la Médiane, la Moyenne, le 3ème Quartile, le Maximum et le compte des NAs pour les variables numériques et de date.</br>\n    Pour les variables factorielles, elle affiche les comptes de chaque niveau.</br>\n    Pour les variables logiques, elle affiche les comptes de VRAI, FAUX et NAs</br>\n    L'aide R n'est pas disponible car nous avons écrit un code personnalisé utilisant plusieurs fonctions R. Si vous avez besoin d'inspecter le code, cliquez sur le bouton \"<>\".</br>\n    "
   }
 }

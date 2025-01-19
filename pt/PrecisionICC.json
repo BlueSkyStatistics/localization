@@ -1,0 +1,15 @@
+{
+  "title": "Tamanho da Amostra, Precisão do ICC",
+  "navigation": "ICC",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n": "Tamanho da Amostra",
+  "width": "Largura do Intervalo de Confiança",
+  "icc": "ICC (coeficiente de correlação intraclasse, 0-1)",
+  "conflevel": "Nível de Confiança (0-1)",
+  "raters": "Número de Avaliadores",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão da AUC",
+    "r_help": "help(prec_icc, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um coeficiente de correlação intraclasse (ICC) com base na largura do intervalo de confiança.  Ele calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.  Se o ICC é calculado para uma ANOVA de um ou dois sentidos não importa na aproximação utilizada.  Veja Bonett DG (2002), Requisitos de tamanho de amostra para estimar correlações intraclasse com precisão desejada, Estatísticas em Medicina, 21:1331-1335.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada.  A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é o limite superior menos o limite inferior.\n<br/><br/>\n<b>ICC:</b> Especifique o valor esperado do ICC\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Número de Avaliadores:</b> Especifique o número de avaliadores que fornecerão valores para cada sujeito.\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

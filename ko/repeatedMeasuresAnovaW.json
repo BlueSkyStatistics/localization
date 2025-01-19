@@ -1,0 +1,29 @@
+{
+  "helpText": "반복 측정 ANOVA는 데이터가 긴 형식이어야 합니다. 데이터가 긴 형식이 아닌 경우 데이터 세트 > 재구성 > 더 길게를 참조하십시오.",
+  "repMeasuresConfig": "구성",
+  "modelname": "모델 이름 입력",
+  "title": "반복 측정 ANOVA - 넓은 형식",
+  "subjectID": "주제 식별자로 사용할 변수를 선택적으로 지정하십시오.",
+  "dependentVariable": "종속 변수",
+  "navigation": "ANOVA, 반복 측정, 넓은 형식",
+  "response": "내부 피험자 변수(들) 예: 시간",
+  "Fixed": "피험자 간 요인",
+  "covariates": "공변량",
+  "Summary": "추정된 한계 평균",
+  "Scatter_plot": "사후 분석",
+  "Residual": "잔차 대 적합도 플롯",
+  "Histogram": "잔차의 히스토그램 플롯",
+  "brownForsythe": "브라운-포사이 테스트",
+  "levenesTest": "레빈의 테스트",
+  "plotMeansCI": "평균 및 신뢰 구간의 플롯",
+  "simpleEffectsTest": "단순 효과 테스트",
+  "label2": "사후 분석 및 단순 효과 테스트 옵션",
+  "combon": "다음 방법으로 평균 비교:",
+  "adjust": "p-값 조정 방법",
+  "displayBoxMDetails": "Box의 M 테스트와 관련된 세부정보 표시(참고: Box의 M 테스트 결과는 항상 표시됨)",
+  "help": {
+    "title": "반복 측정 ANOVA",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>설명</b></br>\n참고:<br/>\n1. 넓은 데이터 세트에서 반복 측정 ANOVA를 실행할 때 데이터를 재구성해야 합니다.<br/>\n2. 단일 변수에 대해 여러 번 반복 측정을 지원합니다. 예: 사전 검사, 사후 검사 및 후속 방문에서 측정된 혈당.<br/>\n3. 반복 요인 이름을 지정해야 합니다. 예: 혈당 및 수준 수. 반복 측정이 포함된 변수의 이름에서 생성된 수준으로 혈당이라는 이름의 요인 변수를 생성합니다. 요인의 수준은 사전 검사, 사후 검사 및 후속 검사입니다.<br/>\n4. 측정 이름을 지정해야 합니다. 예: 값. 각 피험자에 대해 사전 검사, 사후 검사 및 후속 검사에 해당하는 모든 혈당 값을 포함하는 변수 예: 값이 생성됩니다.<br/>\n5. 단일 피험자 간 및 피험자 내 요인 변수를 지원합니다.<br/>\n6. 향후 버전에서는 여러 측정 및 여러 피험자 간 및 피험자 내 요인 변수를 지원합니다.<br/>\n7. 기본적으로 데이터 세트의 각 행은 고유한 피험자에 해당하며, 피험자 ID에 대한 변수를 지정할 수도 있습니다.</br>\n<br/>\n반복 측정 ANOVA에서는 각 피험자 내 요인, 피험자 간 요인 및 혼합 ANOVA의 상호 작용 항에 대해 F 통계량이 계산됩니다.</br>\n출력에서 MSE(오차의 평균 제곱합) 및 pes(부분 에타 제곱)를 표시하는 추가 ANOVA 값 테이블을 찾으십시오.</br>\n현재 단일 피험자 내 및 피험자 간 요인을 지원하며, 피험자 간 요인은 선택 사항입니다.</br>\n<br/>\n<b>사용법</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Identifier\", within = c(\"Time\"), \tbetween = c(\"Treatment\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndata: 데이터를 포함하는 data.frame. 필수\n</li>\n<li>\ndv: 데이터에서 종속 변수를 포함하는 열을 나타내는 길이 1의 문자 벡터입니다.\n</li>\n<li>\nbetween: 데이터에서 피험자 간 요인/열을 나타내는 문자 벡터입니다. 기본값은 NULL로 피험자 간 요인이 없습니다.\n</li>\n<li>\nwithin: 데이터에서 피험자 내(또는 반복 측정) 요인/열을 나타내는 문자 벡터입니다. 기본값은 NULL로 피험자 내 요인이 없습니다.\n</li>\n<li>\ncovariate: 데이터에서 피험자 간 공변량(즉, 열)을 나타내는 문자 벡터입니다. 기본값은 NULL로 공변량이 없습니다. 공변량이 숫자이고 그렇게 처리되어야 하는 경우 factorize를 FALSE로 설정해야 합니다.\n</li>\n<li>\nanovatable: ANOVA 테이블을 생성하는 함수에 전달되는 추가 인수 목록입니다.\n</li>\n</ul>\n<br/>\n<b>세부정보</b></br>\n자세한 R 도움말을 참조하십시오.</br>\n<b>값</b><br/>\naov_car, aov_4 및 aov_ez는 Anova 및 aov의 래퍼이며, 반환 값은 반환 인수에 따라 다릅니다. 기본적으로 \"afex_aov\" 클래스의 S3 객체가 반환되며 다음 슬롯을 포함합니다:<br/>\n\"anova_table\": c(\"anova\", \"data.frame\") 클래스의 ANOVA 테이블입니다.<br/>\n\"aov\": aov에서 반환된 aov 객체(효과의 유의성을 평가하는 데 사용해서는 안 되지만 사후 테스트를 위해 emmeans에 전달할 수 있음).<br/>\n\"Anova\": Anova에서 반환된 객체로, 피험자 내 요인이 있는 경우 \"Anova.mlm\" 클래스의 객체 또는 c(\"anova\", \"data.frame\") 클래스의 객체입니다.<br/>\n\"lm\": lm으로 적합된 객체로 Anova에 전달됩니다(즉, \"lm\" 또는 \"mlm\" 클래스의 객체). return = \"lm\"인 경우에도 반환됩니다.<br/>\n\"data\": 다음을 포함하는 목록: (1) aov에 사용되는 긴 형식의 집계된 데이터, lm 객체에 적합하는 데 사용되는 데이터 및 피험자 내 요인이 있는 경우 car::Anova에 전달된 idata 인수. return = \"data\"인 경우에도 반환됩니다.<br/>\n<b>패키지</b></br>\nafex</br>\n<b>도움말</b></br>\nhelp(aov_ez, package ='afex')\n자세한 R 도움말을 보려면 R 도움말 버튼을 클릭하십시오. 또한 help(aov_ez, package ='afex')를 입력하고 R 구문 편집기에서 CTRL Enter를 눌러 도움말을 받을 수 있습니다."
+  }
+}

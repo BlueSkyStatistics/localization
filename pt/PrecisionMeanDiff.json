@@ -1,0 +1,18 @@
+{
+  "title": "Tamanho da Amostra, Precisão de uma Diferença de Médias",
+  "navigation": "Diferença de Médias",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n1": "Tamanho da Amostra do Grupo 1",
+  "width": "Largura do Intervalo de Confiança",
+  "ratio": "Razão do Tamanho da Amostra do Grupo 2 para o Grupo 1",
+  "meandiff": "Diferença de Médias",
+  "sd1": "Desvio Padrão do Grupo 1",
+  "sd2": "Desvio Padrão do Grupo 2",
+  "conflevel": "Nível de Confiança (0-1)",
+  "variance": "Suposição de Variância",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão de uma Diferença de Médias",
+    "r_help": "help(prec_meandiff, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma diferença de médias com base na largura do intervalo de confiança. Ela calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra do Grupo 1:</b> Especifique o número de sujeitos no grupo 1\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada. A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>Razão do Tamanho da Amostra do Grupo 2 para o Grupo 1:</b> Especifique a razão do tamanho da amostra do grupo 2 para o tamanho da amostra do grupo 1. Um valor de 1 significa tamanhos de amostra iguais.\n<br/><br/>\n<b>Diferença de Médias:</b> Especifique a diferença esperada nas médias dos grupos \n<br/><br/>\n<b>Desvio Padrão do Grupo 1:</b> Especifique o desvio padrão do resultado no grupo 1\n<br/><br/>\n<b>Desvio Padrão do Grupo 2:</b> Especifique o desvio padrão do resultado no grupo 2\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Suposição de Variância:</b> Especifique se as variâncias dos grupos são assumidas como iguais ou desiguais. Especificar variâncias iguais utiliza uma estimativa comum agrupada da variância.\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

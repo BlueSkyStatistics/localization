@@ -5,7 +5,7 @@
   "obs2var": "Observador 2:",
   "cilevel": "Nivel de Confianza:",
   "label1": "Método de Intervalo de Confianza",
-  "ztrans": "Z-transformación",
+  "ztrans": "Z-transformar",
   "asymp": "Asintótico",
   "plotoptionslabel": "Opciones de Gráfico",
   "plottitle": "Título",
@@ -15,6 +15,6 @@
   "help": {
     "title": "Coeficiente de Correlación de Concordancia",
     "r_help": "help(epi.ccc,package=epiR)",
-    "body": "\nEl coeficiente de correlación de concordancia (CCC) mide el acuerdo entre dos observadores que miden los mismos sujetos en la misma escala para datos continuos. El CCC puede variar entre -1 y 1, siendo 1 un acuerdo perfecto y 0 sin acuerdo. Los valores negativos indican un acuerdo negativo, pero esto es raro en la práctica. También se proporciona un gráfico de la variable del observador 1 (eje x) frente a la variable del observador 2 (eje y) con una línea de acuerdo perfecto (y=x).\n<br/><br/>\n<b>Observador 1:</b> Variable que contiene los valores proporcionados por un observador; debe ser numérica\n<br/>\n<b>Observador 2:</b> Variable que contiene los valores proporcionados por un segundo observador; debe ser numérica\n<br/>\n<b>Nivel de Confianza:</b> Nivel de intervalo de confianza deseado para el CCC\n<br/>\n<b>Método de Intervalo de Confianza:</b> Método de intervalo de confianza deseado. El método de z-transformación (o transformación hiperbólica inversa) suele ser una mejor opción porque aproxima mejor una distribución normal.\n<br/><br/>\n<b>Paquetes R requeridos:</b> epiR, ggplot2, ggthemes\n                "
+    "body": "\nEl coeficiente de correlación de concordancia (CCC) mide el acuerdo entre dos observadores que miden los mismos sujetos en la misma escala para datos continuos. El CCC puede variar \nbetween -1 y 1, siendo 1 un acuerdo perfecto y 0 sin acuerdo. Los valores negativos indican un acuerdo negativo, pero es raro en la práctica. También se proporciona un gráfico de la variable del observador 1 \n(eje x) frente a la variable del observador 2 (eje y) con una línea de acuerdo perfecto (y=x).\n<br/><br/>\n<b>Observador 1:</b> Variable que contiene los valores proporcionados por un observador; debe ser numérica\n<br/>\n<b>Observador 2:</b> Variable que contiene los valores proporcionados por un segundo observador; debe ser numérica\n<br/>\n<b>Nivel de Confianza:</b> Nivel de intervalo de confianza deseado para el CCC\n<br/>\n<b>Método de Intervalo de Confianza:</b> Método de intervalo de confianza deseado. El método de z-transformación (o transformación hiperbólica inversa) suele ser una mejor opción porque \naproxima mejor una distribución normal.   \n<br/><br/>\n<b>Paquetes R requeridos:</b> epiR, ggplot2, ggthemes\n                "
   }
 }

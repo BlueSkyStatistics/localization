@@ -1,0 +1,23 @@
+{
+  "title": "Özetler, yalnızca sayısal",
+  "navigation": "Yalnızca Sayısal Değişkenler (Eski)",
+  "tvarbox1": "Seçilen değişkenler",
+  "tvarbox2": "Grupla",
+  "min": "Min",
+  "max": "Max",
+  "mean": "Ortalama",
+  "median": "Medyan",
+  "sum": "Toplam",
+  "sd": "Standart sapma",
+  "stderror": "Ortalama standart hatası",
+  "iqr": "İnter çeyrek aralığı",
+  "quantiles": "Çeyrekler",
+  "probs": "Çeyrekler belirtilmeli (çeyrek seçilmişse)",
+  "addIsstatnames": "Ekstra istatistiksel fonksiyon isimleri virgülle ayrılmış, örn. var)",
+  "label1": "Seçenekler",
+  "help": {
+    "title": "Özetler, yalnızca sayısal",
+    "r_help": "",
+    "body": "\n<b>Açıklama</b></br>\nAşağıdaki sayısal istatistikleri çıktılar:</br>\nmin, max, ortalama, medyan, toplam, sd, standart hata, iqr, çeyrekler. Eğer çeyrekler seçilmişse, gerekli olan virgülle ayrılmış çeyrekleri belirtebilirsiniz.</br>\nBunlara ek olarak, kullanıcı virgülle ayrılmış istatistiksel fonksiyon isimleri listesi geçebilir, örneğin var.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"veri kümesi adı\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: seçilen ölçek değişkenleri (örneğin Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: gruplamak için bir veya daha fazla faktör değişkeni (örneğin Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Fonksiyonlar listesi. TRUE olarak ayarlananlar çalıştırılacaktır. (örneğin min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Çeyreklerin olasılıkları\n</li>\n<li>\nadditionalStats: Kullanıcının geçebileceği ek istatistiksel fonksiyon (örneğin var)\n</li>\n<li>\ndatasetName: datasetColumnObjects ve groupByColumnObjects'un seçildiği veri kümesinin adı\n</li>\n</ul>\n<b>Değer</b></br>\nHer fonksiyon için her değişkenin sonuçlarını veren \"data.frame\" sınıfından bir nesne.</br>\n<b>Örnekler</b><br/>\n<code> \nDataset <- data.frame(Giderler=c(20,23,19,25,26), Satışlar=c(48,50,55,51,49), Cinsiyet=c('e','k','k','e','e'), Departman=c('BT', 'Satış', 'BT','Satış','BT'), stringsAsFactors = TRUE)</br>\nSonuç_Sayısal_Istatistik_Analizi = BSkySummaryStats(datasetColumnObjects = list(Satışlar = Dataset$Satışlar, Giderler = Dataset$Giderler), groupByColumnObjects = list(Departman= Dataset$Departman), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Yardım</b></br>\nR Yardımı mevcut değil çünkü birden fazla R fonksiyonu kullanarak özel kod yazdık. Kodu incelemek isterseniz \"<>\" butonuna tıklayın.</br>\n    "
+  }
+}

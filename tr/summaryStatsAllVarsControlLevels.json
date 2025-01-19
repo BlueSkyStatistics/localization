@@ -1,0 +1,10 @@
+{
+  "title": "Özet İstatistikler, kontrol seviyeleri",
+  "navigation": "Özet İstatistikler, tüm değişkenler, kontrol seviyeleri (Eski)",
+  "levels": "Faktör değişkenler için sayımların görüntüleneceği seviye sayısını belirtin. NOT: Faktör değişkenlerin daha az sık görülen seviyeleri (Diğer) kategorisinde özetlenir.",
+  "help": {
+    "title": "Özet İstatistikler, kontrol seviyeleri",
+    "r_help": "",
+    "body": "\n    <b>Açıklama</b></br>\n    Sayımın görüntüleneceği seviye sayısını kontrol etmenizi sağlayarak tüm veri seti değişkenleri için özetleri oluşturur.</br>\n    NOT: DAHA AZ SIK GÖRÜLEN DEĞİŞKENLERİN SAYILARI (DİĞER) KATEGORİSİNDE ÖZETLENİR</br>\n    Sayısal ve tarih değişkenleri için Minimum, 1. Çeyrek, Medyan, Ortalama, 3. Çeyrek, Maksimum ve NA sayısını gösterir.</br>\n    Faktör değişkeni için her seviyenin sayımlarını görüntüler.</br>\n    Mantıksal değişken için DOĞRU, YANLIŞ ve NA sayımlarını görüntüler.</br>\n    R Yardımı mevcut değildir çünkü özel kod yazdık ve birden fazla R fonksiyonu kullandık. Kodu incelemek isterseniz \"<>\" butonuna tıklayın.</br>\n    "
+  }
+}

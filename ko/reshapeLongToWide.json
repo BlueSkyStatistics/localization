@@ -1,0 +1,23 @@
+{
+  "toplabel": "기본적으로 선택된 반복 요인 및 값 변수를 제외한 모든 데이터 세트 열이 각 관측치를 식별하는 데 사용됩니다. 재정의하려면 아래를 참조하십시오.",
+  "id_cols": "선택된 반복 요인 및 값 변수를 제외한 모든 데이터 세트 열이 각 관측치를 식별하는 데 사용됩니다. 재정의하려면 변수를 선택하고 이동하십시오.",
+  "title": "형태 변경, 긴 형식에서 넓은 형식으로",
+  "navigation": "넓게",
+  "labelTop": "단일 반복 요인 및 값 변수가 지정되면 새로운 변수 이름은 반복 요인의 이름으로 접두사가 붙습니다. 다른 모든 경우에는 값 변수의 이름으로 접두사가 붙습니다.",
+  "label0": "결과를 새 데이터 세트에 저장하거나 기존 데이터 세트를 덮어쓸 수 있습니다.",
+  "label1": "옵션",
+  "New": "결과를 새 데이터 세트에 저장",
+  "newdatasetname": "데이터 세트 이름을 입력하십시오.",
+  "Existing": "기존 데이터 세트를 덮어쓰기",
+  "subsetvars": "반복 요인의 변수 이름을 입력하십시오. 예: 시간",
+  "dontReshape": "반복 값의 변수 이름을 입력하십시오. 예: 카운트",
+  "names_sort": "열 이름을 알파벳순으로 정렬",
+  "appearence_sort": "열 이름을 나타나는 순서로 정렬",
+  "names_sep": "지정된 변수 이름을 결합하여 새로운 변수 이름을 형성할 때 사용할 선택적 구분 기호",
+  "label2": "정렬 옵션",
+  "help": {
+    "title": "형태 변경 (긴 형식에서 넓은 형식으로)",
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>설명</b></br>\n<video를 보려면 <a href=\"https://youtu.be/ypLXqmFp3jY\">긴 형식에서 넓은 형식으로 변환</a></br>\n넓은 데이터 세트를 가져와서 열을 변환하여 긴 데이터 세트로 변환합니다. pivot_wider는 데이터를 \"길게\" 만들어 행 수를 늘리고 열 수를 줄입니다. pivot_wider를 사용할 때는 값이 행에 있어야 하는 변수/열이 있을 때입니다. \n<br/>\n참고: 하나의 반복 요인이 지정되면 새로운 변수 이름은 반복 요인의 이름으로 접두사가 붙습니다. 여러 개의 반복 요인이 지정되면 값 변수의 이름으로 접두사가 붙습니다.</br>\n<b>사용법</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndataset: 데이터프레임/티블\n</li>\n<li>\nnames_from: 출력 열의 이름 \n</li>\n<li>\nvalues_from: 셀 값을 가져올 열 \n</li>\n<li>\nnames_sort: 열 이름을 정렬해야 합니까? FALSE인 경우 기본값으로 열 이름은 첫 번째 나타남에 따라 정렬됩니다.\n</li>\n<li>\nnames_sep: 지정된 변수 이름을 결합하여 새로운 변수 이름을 형성할 때 사용할 선택적 구분 기호\n</li>\n<li>\n<b>값</b><br/>\n재구성된 데이터 세트를 반환합니다.\n<br/>\n<b>패키지</b></br>\ntidyr\n<b>도움말</b></br>\nhelp(pivot_wider)\n"
+  }
+}

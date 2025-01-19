@@ -1,0 +1,21 @@
+{
+  "title": "Sıralama Faktör Seviyelerini Sayıya Göre",
+  "navigation": "Sayıya Göre Sırala",
+  "target": "Yeniden sıralamak için faktör değişkenlerini seçin",
+  "label1": "Sayıya göre yeniden sıralamak için faktör değişkenlerini seçin. Mevcut değişkenleri geçersiz kılabilir veya bir ön ek/son ek belirterek yeni değişkenler oluşturabilirsiniz. Yeni değişkenler, mevcut isimlere eklenmiş ön ek/son ek ile oluşturulacaktır.",
+  "label2": "Yeni seviyeleri yeni değişken(ler)e kaydedin veya mevcut değişken(ler)i geçersiz kılın",
+  "rd3": "Bir son ek belirtin (Bir yeni değişken son ek ile oluşturulacaktır)",
+  "txt3": "Bir son ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri geçersiz kıl",
+  "label3": "Bir sıra belirtin",
+  "Descending": "Sayıya göre azalan sırada",
+  "Ascending": "Sayıya göre artan sırada",
+  "ordered": "Sıralı bir faktör oluşturun (ordinal)",
+  "help": {
+    "title": "Değişkenleri Alfabetik Olarak Yeniden Sırala",
+    "r_help": "help(sort)",
+    "body": "\n<b>Açıklama</b></br>\nVeri kümesindeki değişkenleri alfabetik sıraya göre yeniden sıralayın. Veri kümesindeki sütunların/değişkenlerin isimlerini sıralamak için sıralama işlevini ve doğru alfabetik sırada sütun isimlerini seçmek için dplyr paketindeki seçme işlevini kullanıyoruz.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \n##Alfabetik olarak yeniden sıralama (A-Z)\nDataset_name <- Dataset_name %>%   select(sort(names(.)))\n##Alfabetik olarak yeniden sıralama (Z-A)\nDataset_name <- Dataset_name %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>Argümanlar</b><br/>\nYok<br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Yardım</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n"
+  }
+}

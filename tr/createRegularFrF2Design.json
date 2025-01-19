@@ -1,0 +1,32 @@
+{
+  "title": "Düzenli (Kesirli) Faktöriyel 2-seviyeli Tasarım Oluştur",
+  "navigation": "Düzenli (Kesirli) Faktöriyel 2-seviyeli Tasarım Oluştur",
+  "selectedvars": "Değişkenleri seçin",
+  "datasetname": "Tasarım adı",
+  "lblheading": "Boyut ve rastgeleleştirme",
+  "numOfRuns": "Koşu sayısı (belirtilirse, 2'nin bir kuvveti olmalıdır, aksi takdirde 0 yapın)",
+  "numOfBlocks": "Blok sayısı",
+  "alias2FIsChk": "bloklar 2fis ile taklit edilebilir",
+  "numOfCenterPts": "Merkez noktası sayısı (kullanılıyorsa, en az 2 olmalıdır)",
+  "centerPointDistribution": "Merkez noktasının dağılımı için pozisyon sayısı (1'den fazla olmalıdır)",
+  "replications": "Tekrarlar",
+  "repeatOnlyChk": "Sadece tekrar et",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmenize gerek olmayabilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım oluşturmayı rastgeleleştir",
+  "lbl2": "NOT: MaxC2 seçimi veya belirtilmemiş koşu sayısı için tasarım oluşturmayı etkiler",
+  "lbldesignheading": "Tasarım özellikleri",
+  "roman": "Minimum çözünürlük (III, IV, V...)",
+  "marad": "MA (Maksimum çözünürlük ve minimum sapma)",
+  "maxC2rad": "MaxC2 (Açık 2fis sayısının maksimumu)",
+  "lbl3": "Bir tasarım kataloğu belirtin (isteğe bağlı)",
+  "designChk": "Katalogdan bir tasarım kullan",
+  "designcatlgname": "Tasarım katalog adı örn. catlg",
+  "designnamefromcatlg": "Tasarım katalogundan tasarım adı",
+  "nrunsChk": "Yukarıda belirtilen tasarımdan koşu sayısını otomatik hesapla",
+  "help": {
+    "title": "Düzenli (Kesirli) Faktöriyel 2-seviyeli Tasarım Oluştur",
+    "r_help": "help(FrF2, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tFrF2 fonksiyonu, düzenli Kesirli Faktöriyel 2-seviyeli tasarımlar oluşturmak için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(FrF2, package = FrF2) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMenüyü kullanarak DOE->Tasarımı İncele->FrF2 Kataloğunu İncele seçeneği ile yüklü tasarım kataloğundan referans alabileceğiniz mevcut FrF2 Tasarımlarını gözden geçirin\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, factor_grid_Injection Molding FrF2.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Crea un Design Composito Centrale (Quantitativo) da un Design FrF2 esistente",
+  "navigation": "Crea un Design Composito Centrale (Quantitativo)",
+  "datasetname": "Nome del design",
+  "datasetFrF2": "Seleziona un design FrF2 (Quantitativo) esistente",
+  "alpha": "Numero di punti stellari (alpha)",
+  "alphalbl": "\"ortogonale\", \"ruotabile\" o un numero che indica la posizione dei punti stellari",
+  "numOfCenterPts": "Numero di punti centrali, o due numeri separati da una virgola (per il cubo e la parte stellare)",
+  "blockName": "Nome del blocco",
+  "lbl1": "Potresti non dover modificare le impostazioni di randomizzazione",
+  "randomseeds": "Semenza per la randomizzazione",
+  "randomizationChk": "Randomizza la generazione del design",
+  "help": {
+    "title": "Crea un Design Composito Centrale (Quantitativo) da un Design FrF2 esistente",
+    "r_help": "help(ccd.augment, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tLa funzione ccd.augment per aumentare un fattoriale frazionale esistente con una parte stellare (utilizzando il pacchetto rsm) nel caso di una decisione tardiva per una procedura sequenziale\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(ccd.augment, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi usare il file di dataset di esempio chiamato fattori per FrF2 design per CCD.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\tCrea prima il design FrF2 (con i 4 fattori) - scegli l'opzione numero di corse come 0 e risoluzione come 5.\n\t\t\t\tPoi crea il design composito centrale dal design FrF2 sopra mantenendo tutte le opzioni predefinite su questo dialogo/UI del design composito centrale\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

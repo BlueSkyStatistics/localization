@@ -1,0 +1,10 @@
+{
+  "title": "레벨 표시",
+  "navigation": "표시",
+  "target": "표시할 레벨의 요인 변수를",
+  "help": {
+    "title": "레벨 표시",
+    "r_help": "help(map,package=purrr)",
+    "body": "\n<b>설명</b></br>\n선택한 데이터셋의 변수에 대해 기본의 levels 함수를 적용합니다. 사용자는 dplyr의 select 함수를 사용하여 변수를 map 함수에 파이프하여 각 변수에 levels 함수를 적용합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nDataset %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvar1,var2: 레벨을 표시할 데이터셋의 변수\n</li>\n<li>\nDataset: 변수 var1, var2를 포함하는 데이터셋\n</li>\n</ul>\n<b>값</b><br/>\n선택한 변수의 레벨이 표시됩니다.<br/>\n<b>패키지</b></br>\npurrr, dplyr</br>\n<b>도움말</b></br>\nhelp(map,package=purrr)\n"
+  }
+}

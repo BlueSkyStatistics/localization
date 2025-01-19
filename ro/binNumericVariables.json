@@ -1,21 +1,21 @@
 {
   "title": "Binning",
   "navigation": "Bin",
-  "vartobin": "Selectați o variabilă pentru bin",
-  "varname": "Introduceți un nume de variabilă pentru a salva valoarea binned",
-  "noofbins": "Specificați numărul de bins",
+  "vartobin": "Selectați o variabilă pentru binare",
+  "varname": "Introduceți un nume de variabilă pentru a salva valoarea binată",
+  "noofbins": "Specificați numărul de bin-uri",
   "label1": "Numele nivelurilor",
   "Names": "Specificați nume",
-  "levelnames": "Introduceți numele nivelurilor separate prin virgulă (,), de exemplu: bun,mai bun,cel mai bun",
+  "levelnames": "Introduceți numele nivelurilor separate prin virgulă (,), de exemplu: bun, mai bun, cel mai bun",
   "Numbers": "Numere",
   "Ranges": "Intervale",
-  "label2": "Metoda de binning",
-  "equalwidth": "Bins de lățime egală",
-  "equalcount": "Bins de număr egal",
-  "natural": "Tăieturi naturale (clustering K-means)",
+  "label2": "Metoda de binare",
+  "equalwidth": "Bin-uri de lățime egală",
+  "equalcount": "Bin-uri de număr egal",
+  "natural": "Împărțiri naturale (clustering K Means)",
   "help": {
     "title": "Binning",
     "r_help": "help(binVariable,package='RcmdrMisc')",
-    "body": "\n<b>Descriere</b></br>\nCreează un factor care disecă intervalul unei variabile numerice în bins de lățime egală, (aproximativ) frecvență egală sau la puncte de tăiere \"naturale\" (determinate de clustering K-means).\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nX: variabilă numerică care trebuie binată.\n</li>\n<li>\nBins: numărul de bins.\n</li>\n<li>\nmethode: una dintre \"intervals\" pentru bins de lățime egală; \"proportions\" pentru bins de număr egal; \"natural\" pentru ca punctele de tăiere între bins să fie determinate de clustering K-means.\n</li>\n<li>\nLabels: dacă FALSE, se vor folosi etichete numerice pentru nivelurile factorului; dacă NULL, punctele de tăiere sunt folosite pentru a defini etichete; în caz contrar, un vector de caractere de nume de niveluri.\n</li>\n</ul>\n<b>Pachet</b></br>\nRcmdrMisc</br>\n<b>Ajutor</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+    "body": "\n<b>Descriere</b></br>\nCreează un factor care descompune intervalul unei variabile numerice în bin-uri de lățime egală, (aproximativ) frecvență egală sau la puncte de tăiere \"naturale\" (determinate de clustering K-means)\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nX: variabilă numerică care va fi binată.\n</li>\n<li>\nBins: numărul de bin-uri.\n</li>\n<li>\nmetodă: una dintre \"intervals\" pentru bin-uri de lățime egală; \"proportions\" pentru bin-uri de număr egal; \"natural\" pentru punctele de tăiere între bin-uri care vor fi determinate de clustering k-means.\n</li>\n<li>\nEtichete: dacă este FALSE, etichetele numerice vor fi folosite pentru nivelurile factorului; dacă este NULL, punctele de tăiere sunt folosite pentru a defini etichetele; în altă ordine, un vector de caractere de nume de niveluri.\n</li>\n</ul>\n<b>Pachet</b></br>\nRcmdrMisc</br>\n<b>Ajutor</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
   }
 }

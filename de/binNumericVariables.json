@@ -11,11 +11,11 @@
   "Ranges": "Bereiche",
   "label2": "Binning-Methode",
   "equalwidth": "Gleich breite Bins",
-  "equalcount": "Gleichzählige Bins",
+  "equalcount": "Gleich zählende Bins",
   "natural": "Natürliche Brüche (K-Means-Clustering)",
   "help": {
     "title": "Binning",
-    "r_help": "help(binVariable,package='RcmdrMisc')",
-    "body": "\n<b>Beschreibung</b></br>\nErstellen Sie einen Faktor, der den Bereich einer numerischen Variable in Bins mit gleicher Breite, (ungefähr) gleicher Häufigkeit oder an \"natürlichen\" Schnittpunkten (bestimmt durch K-Means-Clustering) zerlegt.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nX: numerische Variable, die gebinnt werden soll.\n</li>\n<li>\nBins: Anzahl der Bins.\n</li>\n<li>\nMethode: eine von \"intervals\" für gleich breite Bins; \"proportions\" für gleichzählige Bins; \"natural\" für Schnittpunkte zwischen Bins, die durch K-Means-Clustering bestimmt werden.\n</li>\n<li>\nLabels: wenn FALSE, werden numerische Labels für die Faktorstufen verwendet; wenn NULL, werden die Schnittpunkte verwendet, um Labels zu definieren; andernfalls ein Zeichenvektor von Levelnamen.\n</li>\n</ul>\n<b>Paket</b></br>\nRcmdrMisc</br>\n<b>Hilfe</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+    "r_help": "hilfe(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Beschreibung</b></br>\nErstellen Sie einen Faktor, der den Bereich einer numerischen Variable in Bins mit gleicher Breite, (ungefähr) gleicher Häufigkeit oder an \"natürlichen\" Schnittpunkten (bestimmt durch K-Means-Clustering) zerlegt\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nX: numerische Variable, die gebinnt werden soll.\n</li>\n<li>\nBins: Anzahl der Bins.\n</li>\n<li>\nMethode: eine von \"intervals\" für gleich breite Bins; \"proportions\" für gleich zählende Bins; \"natural\" für Schnittpunkte zwischen Bins, die durch K-Means-Clustering bestimmt werden.\n</li>\n<li>\nLabels: wenn FALSE, werden numerische Labels für die Faktorstufen verwendet; wenn NULL, werden die Schnittpunkte verwendet, um Labels zu definieren; andernfalls ein Zeichenvektor von Levelnamen.\n</li>\n</ul>\n<b>Paket</b></br>\nRcmdrMisc</br>\n<b>Hilfe</b></br>\nhilfe(binVariable,package='RcmdrMisc')\n"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "title": "Excel veya CSV verilerini temizleme - satır ve sütunları ayarlama, silme",
+  "navigation": "Excel Temizleme",
+  "resultDatasetName": "Oluşturulacak yeni veri kümesinin adı",
+  "listofRowNumbersRemove": "(Opsiyonel) Silinecek satır numaralarının listesi (virgülle ayrılmış, örn. 1,4,5,20:30)",
+  "listofColumnNumbersRemove": "(Opsiyonel) Silinecek sütun numaralarının listesi (virgülle ayrılmış, örn. 1,2,6:10)",
+  "chooseColumnNamesRad": "Veri kümesinden sütun adlarını belirtin",
+  "rowNumbersContaingColNames": "Çıktı veri kümesi için sütun adları olarak kullanılacak satır numaralarını girin (virgülle ayrılmış, örn. 3,4)",
+  "deleteRowNumbersContaingColNamesChk": "Çıktı veri kümesi için sütun adlarını içeren satırları sil",
+  "combineWithExsitingColNamesChk": "Oluşturulan sütun adlarını mevcut sütun başlık adlarıyla birleştir",
+  "specifyColumnNamesRad": "Çıktı veri kümesi için sütun adlarını manuel olarak belirtin",
+  "outputColumnNames": "Çıktı veri kümesi için kullanılacak sütun adlarını girin (virgülle ayrılmış)",
+  "removeColsWithConstantChk": "Sabit değerler içeren tüm sütunları kaldır (büyük/küçük harf duyarsız)",
+  "removeColsWithNoDataChk": "Tüm boş sütunları kaldır",
+  "removeRowsWithNoDataChk": "Tüm boş satırları kaldır",
+  "removeRowsWithNAsChk": "Sadece tam durumları tut, yani herhangi bir boş veya NA değeri varsa tüm satırı kaldır",
+  "label1": "Çıktı veri kümesindeki sütun türlerini dönüştürme",
+  "convertColumnDataTypeAuto": "Sütun veri türünü otomatik olarak belirle ve dönüştür",
+  "convertColumnDataTypeNone": "Hiçbir şey yapma",
+  "convertColumnDataTypeFactorToCharInt": "Tüm faktör sütunlarını karakter ve tam sayı türüne dönüştür",
+  "convertColumnDataTypeCharToFactor": "Tüm karakter sütunlarını faktörlere dönüştür",
+  "convertColumnDataTypeAllToFactor": "Tüm sütunları faktörlere dönüştür",
+  "convertColumnDataTypeManual": "Dönüştürmek için her sütun için veri türünü yazın",
+  "outputColumnTypes": "Sütun türlerinin listesi (virgülle ayrılmış, örn. sayısal, faktör, karakter, ..)",
+  "help": {
+    "title": "Excel veya CSV verilerini temizleme - satır ve sütunları ayarlama, silme",
+    "r_help": "",
+    "body": "\n            <b>Açıklama</b></br>\n            Bu diyalog, yeni bir veri kümesi oluşturmak için karmaşık bir Excel sayfasını temizlemek için satır ve sütun ekleyip kaldırmak için kullanılır\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tBunu denemek için Excel temizleme.xlsx adlı örnek veri kümesi dosyasını kullanabilirsiniz\n\t\t\t<br/>\n\t\t\tDosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t<br/>\n\t\t\tDiyalogda - yazın\n\t\t\t<br/>\n\t\t\tYeni veri kümesi adı için SampleGp\n\t\t\t<br/>\n\t\t\tSilinecek satır numaraları listesi için 1:3\n\t\t\t<br/>\n\t\t\tSilinecek sütun numaraları listesi için 1,2,5:8\n\t\t\t<br/>\n\t\t\tSeçenek olarak - Veri kümelerinden sütun adlarını belirtin\n\t\t\t<br/>\n\t\t\tSatır numaralarını girmek için 2,3\n\t\t\t<br/>\n\t\t\t<br/>"
+  }
+}

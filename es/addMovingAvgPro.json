@@ -1,0 +1,12 @@
+{
+  "title": "Calcular y Agregar una Variable de Promedio Móvil",
+  "navigation": "Promedio Móvil",
+  "variableSelcted": "Selecciona una variable para calcular el promedio móvil",
+  "sampleSize": "Especifica el tamaño del grupo para calcular el promedio móvil (por ejemplo, 5)",
+  "movingAvgVarName": "Especifica el nombre de la variable de promedio móvil para agregar/actualizar (por ejemplo, promedioMovil)",
+  "help": {
+    "title": "Calcular el promedio móvil para la variable seleccionada",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\t<br/>\n\t\t\t\tCalcula el promedio móvil para la variable seleccionada para el tamaño de grupo especificado. Agrega o modifica (si el nombre de la variable especificada ya existe) una variable al conjunto de datos para almacenar el resultado<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Dimensione del campione, Precisione del Kappa di Cohen",
+  "navigation": "Kappa di Cohen",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n": "Dimensione del Campione",
+  "width": "Larghezza dell'Intervallo di Confidenza",
+  "kappa": "Kappa (0-1)",
+  "conflevel": "Livello di Confidenza (0-1)",
+  "raters": "Numero di Valutatori (2-6)",
+  "categories": "Numero di Categorie (2-5)",
+  "props": "Proporzioni in Ciascuna Categoria; separa con virgole, ad es. .3, .7; deve corrispondere al numero di categorie e sommare a 1",
+  "help": {
+    "title": "Dimensione del campione, Precisione del Kappa di Cohen",
+    "r_help": "help(prec_kappa, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per il kappa di Cohen basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente \nspecifica l'altro.\n<br/><br/>\n<b>Dimensione del Campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Larghezza dell'Intervallo di Confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Kappa:</b> Specifica il valore kappa atteso\n<br/><br/>\n<b>Livello di Confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Numero di Valutatori:</b> Specifica il numero di valutatori che forniranno valori per ciascun soggetto.\n<br/><br/>\n<b>Numero di Categorie:</b> Specifica il numero di categorie nella variabile di esito\n<br/><br/>\n<b>Proporzioni in Ciascuna Categoria:</b> Specifica la proporzione attesa di soggetti in ciascuna categoria, separata da virgole. Nota che il numero di valori specificati deve corrispondere al\nnumero di categorie specificate e sommare a 1.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> presize\n\t\t\t"
+  }
+}

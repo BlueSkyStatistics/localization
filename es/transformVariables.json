@@ -1,18 +1,18 @@
 {
-  "title": "Transformar variable(s)",
+  "title": "Transformar Variable(s)",
   "navigation": "Transformar",
-  "label1": "Utilice el menú desplegable para seleccionar la operación (log, log10, as.numeric...) para transformar las variables seleccionadas. Puede sobrescribir las variables existentes o crear nuevas variables especificando un prefijo/sufijo.",
-  "target": "Seleccione la(s) variable(s) a transformar",
-  "selectctrl": "Seleccione una operación para aplicar",
+  "label1": "Utiliza el menú desplegable para seleccionar la operación (log, log10, as.numeric...) para transformar las variables seleccionadas. Puedes sobrescribir variables existentes o crear nuevas variables especificando un prefijo/sufijo.",
+  "target": "Selecciona la(s) variable(s) a transformar",
+  "selectctrl": "Selecciona una operación para aplicar",
   "label2": "Crear nuevas variables o sobrescribir las existentes",
-  "suffix": "Especifique un sufijo",
-  "prefix": "Especifique un prefijo",
+  "suffix": "Especifica un sufijo",
+  "prefix": "Especifica un prefijo",
   "overwrite": "Sobrescribir",
-  "enterPrefix": "Ingrese un prefijo",
-  "enterSuffix": "Ingrese un sufijo",
+  "enterPrefix": "Ingresa un prefijo",
+  "enterSuffix": "Ingresa un sufijo",
   "help": {
-    "title": "Transformar variables",
-    "r_help": "ayuda(log, paquete ='base')",
-    "body": "\n<b>Descripción</b></br>\nUtilice el menú desplegable para seleccionar la operación (log, log10, as.numeric...) para transformar las variables seleccionadas. Puede sobrescribir las variables existentes o crear nuevas variables especificando un prefijo/sufijo.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvar: La variable a transformar\n</li>\n<li>\nDataset: El conjunto de datos que contiene la variable var\n</li>\n</ul>\n<b>Valor</b></br>\nLos valores transformados se almacenan directamente en el conjunto de datos</br>\n<b>Paquete</b></br>\nbásico</br>\n<b>Ayuda</b></br>\nayuda(log, paquete ='base')\n"
+    "title": "Transformar Variables",
+    "r_help": "help(log, package ='base')",
+    "body": "\n<b>Descripción</b></br>\nUtiliza el menú desplegable para seleccionar la operación (log, log10, as.numeric...) para transformar las variables seleccionadas. Puedes sobrescribir variables existentes o crear nuevas variables especificando un prefijo/sufijo.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \n.GlobalEnv$dataset[,var] <-log(dataset[,var]) \n.GlobalEnv$dataset[,var] <-abs(dataset[,var])\n.GlobalEnv$dataset[,var] <-ceiling(dataset[,var])\n...\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvar: La variable a ser transformada\n</li>\n<li>\nDataset: El conjunto de datos que contiene la variable var\n</li>\n</ul>\n<b>Valor</b></br>\nLos valores transformados se almacenan directamente en el conjunto de datos</br>\n<b>Paquete</b></br>\nbase</br>\n<b>Ayuda</b></br>\nhelp(log, package ='base')\n"
   }
 }

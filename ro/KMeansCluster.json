@@ -1,16 +1,16 @@
 {
-  "title": "K-Means Cluster",
+  "title": "Cluster K-Means",
   "navigation": "K-Means",
   "destination": "Destinație",
   "clusters": "Numărul de clustere",
-  "seeds": "Numărul de semințe de început",
+  "seeds": "Numărul de semințe inițiale",
   "iterations": "Iterații maxime",
-  "storeClusterInDataset": "Atribuie clustere setului de date",
-  "variablename": "Variabilă pentru stocarea numerelor de cluster",
-  "biplot": "Afișează biplot-ul clusterelor",
+  "storeClusterInDataset": "Atribuie clustere dataset-ului",
+  "variablename": "Variabila pentru a stoca numerele cluster-ului",
+  "biplot": "Arată biplot-ul cluster-ului",
   "help": {
-    "title": "K-Means Cluster",
-    "r_help": "ajutor(kmeans, pachet ='stats')",
-    "body": "\n<b>Descriere</b></br>\nEfectuează clustering K-means\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset =FALSE, varNameForCluster=\"\", dataset=\"numele setului de date\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: Variabilele de analizat într-un vector de formă c('var1','var2'...)\n</li>\n<li>\ncenters: fie numărul de clustere, să zicem k, fie un set de centre de clustere inițiale (distincte). Dacă este un număr, se alege un set aleatoriu de (distincte) \nlinie în x ca centre inițiale.\n</li>\n<li>\niter.max: numărul maxim de iterații permise.\n</li>\n<li>\nnum.seeds: Numărul de semințe aleatorii de început diferite de utilizat. Fiecare sămânță aleatorie rezultă într-o soluție K-means diferită.\n</li>\n<li>\nstoreClusterInDataset : Salvați atribuțiile clusterelor în setul de date\n</li>\n<li>\nvarNameForCluster: Numele variabilelor pentru clusterele atribuite\n</li>\n<li>\ndataset: Setul de date de analizat\n</li>\n</ul>\n<b>Pachet</b></br>\nBlueSky</br>\n<b>Ajutor</b></br>\najutor(kmeans, pachet=\"stats\")\n    "
+    "title": "Cluster K-Means",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>Descriere</b></br>\nEfectuează clustering K-means\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset = FALSE, varNameForCluster=\"\", dataset=\"numele dataset-ului\") \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvars: Variabilele de analizat într-un vector de forma c('var1','var2'...)\n</li>\n<li>\ncenters: fie numărul de clustere, să zicem k, fie un set de centre de clustere inițiale (distincte). Dacă este un număr, un set aleator de (distincte) \nlinie în x este ales ca centre inițiale.\n</li>\n<li>\niter.max: numărul maxim de iterații permise.\n</li>\n<li>\nnum.seeds: Numărul de semințe aleatoare de început diferite de utilizat. Fiecare sămânță aleatoare rezultă într-o soluție k-means diferită.\n</li>\n<li>\nstoreClusterInDataset: Salvează atribuțiile cluster-ului în dataset\n</li>\n<li>\nvarNameForCluster: Numele variabilelor pentru clusterele atribuite\n</li>\n<li>\ndataset: Dataset-ul de analizat\n</li>\n</ul>\n<b>Pachet</b></br>\nBlueSky</br>\n<b>Ajutor</b></br>\nhelp(kmeans, package=\"stats\")\n    "
   }
 }

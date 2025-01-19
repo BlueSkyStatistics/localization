@@ -1,0 +1,21 @@
+{
+  "title": "윌콕슨 부호 순위 검정, 단일 샘플",
+  "navigation": "윌콕슨 검정, 단일 샘플",
+  "tvarbox1": "결과",
+  "label1": "대립 가설",
+  "twosided": "중앙값 != mu",
+  "greater": "중앙값 > mu",
+  "less": "중앙값 < mu",
+  "label2": "검정 방법",
+  "default": "기본값",
+  "exact": "정확한",
+  "normal": "정규 근사",
+  "contingency": "정규 근사 (연속성 보정)",
+  "textbox1": "신뢰 구간",
+  "textbox2": "영가설 (mu)",
+  "help": {
+    "title": "윌콕슨 검정, 단일 샘플",
+    "r_help": "help(wilcox.test, package=stats)",
+    "body": "\n<b>설명</b></br>\n데이터 벡터에 대해 단일 및 이중 샘플 윌콕슨 검정을 수행합니다. 후자는 '맨-휘트니' 검정으로도 알려져 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code>\nwilcox.test(x, ...)<br/>\n## 기본 S3 메서드:<br/>\nwilcox.test(x, y = NULL,<br/>\n            alternative = c(\"two.sided\", \"less\", \"greater\"),<br/>\n            mu = 0, paired = FALSE, exact = NULL, correct = TRUE,<br/>\n            conf.int = FALSE, conf.level = 0.95, ...)<br/>\n## 'formula' 클래스에 대한 S3 메서드<br/>\nwilcox.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 데이터 값의 숫자 벡터. 비유한 값(예: 무한대 또는 결측치)은 생략됩니다.\n</li>\n<li>\ny: 선택적 숫자 데이터 값의 벡터: x와 마찬가지로 비유한 값은 생략됩니다.\n</li>\n<li>\nalternative: 대립 가설을 지정하는 문자열로, \"two.sided\"(기본값), \"greater\" 또는 \"less\" 중 하나여야 합니다. 첫 글자만 지정할 수 있습니다.\n</li>\n<li>\nmu: 영가설을 형성하는 데 사용되는 선택적 매개변수를 지정하는 숫자입니다. '세부정보'를 참조하십시오.\n</li>\n<li>\npaired: 쌍 검정을 원하는지 여부를 나타내는 논리값입니다.\n</li>\n<li>\nexact: 정확한 p-값을 계산해야 하는지 여부를 나타내는 논리값입니다.\n</li>\n<li>\ncorrect: p-값의 정규 근사에서 연속성 보정을 적용할지 여부를 나타내는 논리값입니다.\n</li>\n<li>\nconf.int: 신뢰 구간을 계산해야 하는지 여부를 나타내는 논리값입니다.\n</li>\n<li>\nconf.level: 구간의 신뢰 수준입니다.\n</li>\n<li>\nformula: lhs ~ rhs 형태의 수식으로, lhs는 데이터 값을 제공하는 숫자 변수이고 rhs는 해당 그룹을 제공하는 두 수준의 팩터입니다.\n</li>\n<li>\ndata: 수식에 있는 변수를 포함하는 선택적 행렬 또는 데이터 프레임(또는 유사한 것: model.frame 참조)입니다. 기본적으로 변수는 environment(formula)에서 가져옵니다.\n</li>\n<li>\nsubset: 사용될 관측치의 선택적 벡터입니다.\n</li>\n<li>\nna.action: 데이터에 NAs가 포함될 때 발생해야 하는 일을 나타내는 함수입니다. 기본값은 getOption(\"na.action\")입니다.\n</li>\n<li>\n...: 메서드에 전달되거나 메서드에서 전달될 추가 인수입니다.\n</li>\n</ul>\n<b>세부정보</b></br>\n수식 인터페이스는 2-샘플 검정에만 적용됩니다.</br>\nx만 주어지거나 x와 y가 모두 주어지고 paired가 TRUE인 경우, mu에 대해 x(단일 샘플 경우) 또는 x - y(쌍 두 샘플 경우)의 분포가 대칭이라는 영가설에 대한 윌콕슨 부호 순위 검정이 수행됩니다.</br>\n그렇지 않으면 x와 y가 모두 주어지고 paired가 FALSE인 경우, 윌콕슨 순위 합 검정(맨-휘트니 검정과 동등함: 참고 참조)이 수행됩니다. 이 경우 영가설은 x와 y의 분포가 mu의 위치 이동으로 다르다는 것이며, 대립은 다른 위치 이동으로 다르다는 것입니다(단측 대립 \"greater\"는 x가 y의 오른쪽으로 이동한다는 것입니다).</br>\n기본적으로(정확한 값이 지정되지 않은 경우), 샘플에 50개 미만의 유한 값이 포함되고 동점이 없으면 정확한 p-값이 계산됩니다. 그렇지 않으면 정규 근사가 사용됩니다.</br>\n선택적으로(인수 conf.int가 true인 경우), 비모수 신뢰 구간과 pseudomedian(단일 샘플 경우) 또는 위치 매개변수 x-y의 차이에 대한 추정량이 계산됩니다. (분포 F의 pseudomedian은 (u+v)/2의 분포의 중앙값으로, u와 v는 각각 분포 F를 가진 독립적입니다. F가 대칭이면 pseudomedian과 중앙값이 일치합니다. Hollander & Wolfe (1973), 34페이지 참조.) 두 샘플 경우 위치 매개변수의 차이에 대한 추정량은 중앙값의 차이를 추정하지 않으며(일반적인 오해), 오히려 x에서 샘플과 y에서 샘플 간의 차이의 중앙값입니다.</br>\n정확한 p-값이 사용 가능한 경우, Bauer (1972)에서 설명한 알고리즘에 의해 정확한 신뢰 구간이 얻어지며, Hodges-Lehmann 추정기가 사용됩니다. 그렇지 않으면 반환된 신뢰 구간과 점 추정치는 정규 근사를 기반으로 합니다. 이들은 구간에 대해 연속성 보정이 적용되지만 추정치에는 적용되지 않습니다(보정은 대립에 따라 다릅니다).</br>\n작은 샘플에서는 매우 높은 신뢰 구간 커버리지를 달성하는 것이 불가능할 수 있습니다. 이 경우 경고가 제공되며 더 낮은 커버리지의 구간으로 대체됩니다.</br>\n<b>값</b><br/>\n\"htest\" 클래스의 목록으로 다음 구성 요소를 포함합니다:\nstatistic: 테스트 통계의 값과 이를 설명하는 이름입니다.</br>\nparameter: 테스트 통계의 정확한 분포에 대한 매개변수입니다.</br>\np.value: 테스트의 p-값입니다.</br>\nnull.value: 위치 매개변수 mu입니다.</br>\nalternative: 대립 가설을 설명하는 문자열입니다.</br>\nmethod: 적용된 테스트의 유형입니다.</br>\ndata.name: 데이터의 이름을 제공하는 문자열입니다.</br>\nconf.int: 위치 매개변수에 대한 신뢰 구간입니다. (인수 conf.int = TRUE인 경우에만 존재합니다.)</br>\nestimate: 위치 매개변수의 추정치입니다. (인수 conf.int = TRUE인 경우에만 존재합니다.)</br>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(wilcox.test, package=stats)\n    "
+  }
+}

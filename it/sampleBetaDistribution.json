@@ -1,0 +1,19 @@
+{
+  "title": "Campione dalla distribuzione Beta",
+  "navigation": "Campione dalla distribuzione Beta",
+  "entrdsname": "Inserisci nome per il dataset",
+  "shape1": "Forma 1",
+  "shape2": "Forma 2",
+  "lblnoofsamples": "Numero di campioni (righe)",
+  "lblnoofobsv": "Numero di osservazioni (colonne)",
+  "lblseed": "Semenza",
+  "lblAddtoDS": "Aggiungi al dataset",
+  "chklbl1": "Medie campionarie",
+  "chklbl2": "Somme campionarie",
+  "chklbl3": "Deviazioni standard campionarie",
+  "help": {
+    "title": "Campione dalla distribuzione Beta",
+    "r_help": "help(rbeta, package=stats)",
+    "body": "\n            <b>Descrizione</b>\n<br/>\nDensità, funzione di distribuzione, funzione quantile e generazione casuale per la distribuzione Beta con parametri shape1 e shape2 (e parametro di non centralità ncp opzionale).\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code>\n    dbeta(x, shape1, shape2, ncp = 0, log = FALSE)\n    <br/>\n    pbeta(q, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbeta(n, shape1, shape2, ncp = 0)\n    <br/>\n</code>\n\n<br/><b>Argomenti</b>\n<br/>\n<ul>\n    <li>x, q : vettore di quantili.</li>\n    \n    \n    <li>p : vettore di probabilità.</li>\n    \n    \n    <li>n : numero di osservazioni. Se la lunghezza(n) > 1, la lunghezza è presa come quella richiesta.</li>\n    \n    \n    <li>shape1, shape2 : parametri non negativi della distribuzione Beta.</li>\n    \n    \n    <li>ncp : parametro di non centralità.</li>\n    \n    \n    <li>log, log.p : logico; se TRUE, le probabilità p sono date come log(p).</li>\n    \n    \n    <li>lower.tail : logico; se TRUE (predefinito), le probabilità sono P[X ≤ x], altrimenti, P[X > x].</li>\n    \n</ul>\n\n\n\n<br/>\n<b>Dettagli</b>\n<br/>\nLa distribuzione Beta con parametri shape1 = a e shape2 = b ha densità\n<br/>\n<code>Γ(a+b)/(Γ(a)Γ(b))x^(a-1)(1-x)^(b-1)</code>\n<br/>\nper a > 0, b > 0 e 0 ≤ x ≤ 1 dove i valori limite a x=0 o x=1 sono definiti per continuità (come limiti). \n<br/>\n La media è a/(a+b) e la varianza è ab/((a+b)^2 (a+b+1)). Questi momenti e tutte le proprietà distribuzionali possono essere definiti come limiti (portando a masse puntuali a 0, 1/2, o 1) quando a o b sono zero o infiniti, e le corrispondenti funzioni [dpqr]beta() sono definite di conseguenza.\n <br/>\npbeta è strettamente correlato alla funzione beta incompleta. Come definito da Abramowitz e Stegun 6.6.1\n<br/>\n<code>B_x(a,b) = integrale_0^x t^(a-1) (1-t)^(b-1) dt,</code>\n<br/>\ne 6.6.2 I_x(a,b) = B_x(a,b) / B(a,b) dove B(a,b) = B_1(a,b) è la funzione Beta (beta).\n<br/>\n<code>I_x(a,b) è pbeta(x, a, b).</code>\n<br/>\nLa distribuzione Beta non centrale (con ncp = λ) è definita (Johnson et al, 1995, pp. 502) come la distribuzione di X/(X+Y) dove X ~ chi^2_2a(λ) e Y ~ chi^2_2b.\n<br/>\n<br/><b>Valore</b>\n<br/>\ndbeta fornisce la densità, pbeta la funzione di distribuzione, qbeta la funzione quantile, e rbeta genera deviate casuali.\n<br/>\nArgomenti non validi restituiranno un valore NaN, con un avviso.\n<br/>\nLa lunghezza del risultato è determinata da n per rbeta, ed è il massimo delle lunghezze degli argomenti numerici per le altre funzioni.\n<br/>\nGli argomenti numerici diversi da n vengono riciclati alla lunghezza del risultato. Solo i primi elementi degli argomenti logici vengono utilizzati.\n<br/>\n<br/><b>Nota</b>\n<br/>\nFornire ncp = 0 utilizza l'algoritmo per la distribuzione non centrale, che non è lo stesso algoritmo utilizzato se ncp è omesso. Questo è per dare un comportamento coerente nei casi estremi con valori di ncp molto vicini a zero.\n"
+  }
+}

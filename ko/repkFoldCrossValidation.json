@@ -1,0 +1,18 @@
+{
+  "title": "반복 KFold 교차 검증으로 조정된 모델 구축",
+  "navigation": "반복 KFold 교차 검증",
+  "modelname": "조정된 모델의 이름 입력",
+  "folds": "폴드 수 입력",
+  "levelOfInterest": "예측할 변수가 2개 수준일 때, 관심 수준을 지정하십시오. 혼동 행렬 및 관련 통계는 지정된 관심 수준을 기준으로 표시됩니다.",
+  "repeats": "반복 수 입력",
+  "dependent": "예측할 변수",
+  "independent": "독립 변수",
+  "label1": "일부 모델은 결측값이나 종속 변수가 요인인 경우에 대해 반응하지 않습니다. 결측값 처리에 대한 내용은 [변수 > 결측값]을 참조하고, 더미 코딩 요인 변수에 대한 내용은 [변수 > 계산 > 더미 코드]를 참조하십시오. 자세한 내용은 대화 상자의 오른쪽 상단에 있는 ? 아이콘을 클릭하십시오.",
+  "ModelSelection": "모델 범주를 선택한 다음 모델 유형을 선택하십시오.",
+  "label2": "매개변수",
+  "help": {
+    "title": "반복 KFold 교차 검증으로 조정된 모델 구축",
+    "r_help": "help(train, package=caret)",
+    "body": "\n<b>설명</b></br>\n반복 KFold 교차 검증은 caret 패키지 내의 trainControl 및 train 함수를 사용하여 조정된/최적화된 모델을 생성합니다.<br/>\n조정된 모델은 조정 매개변수에 대한 결과를 재샘플링하여 구축됩니다. 조정 결과는 출력 하단의 테이블 아래에 표시됩니다.<br/>\n조정된 모델이 구축되면, 우리는 조정된 모델을 사용하여 훈련 데이터셋(모델을 구축하는 데 사용됨)에 대해 예측을 수행하고 혼동 행렬 및 관련 통계를 표시합니다.<br/>\n참고: 종속 변수가 더미 코딩되어야 하는 모델에 대한 세부정보는 https://www.blueskystatistics.com/Articles.asp?ID=330에서 확인하십시오. 또한 일부 모델은 결측값을 지원하지 않으며, 모델 구축 시 오류가 표시되면 결측값을 제거하십시오.<br/>\n조정된 모델은 텍스트 박스 컨트롤에서 지정한 이름으로 train 클래스의 객체에 저장됩니다.<br/>\n최종 조정된 모델에 대해 선택된 매개변수 값은 출력 하단에 표시됩니다.<br/>\n예측 변수가 2개 수준인 경우, 관심 수준/참조 수준을 선택할 수 있는 옵션이 있습니다.<br/>\n혼동 행렬 및 관련 통계는 지정된 관심 수준을 사용하여 생성됩니다.<br/>\n<code> \ntrain_control <- caret::trainControl(method=\"repeatedcv\", number=폴드 수 입력, repeats=반복 수 입력)<br/>\n#일반 구문<br/>\ntunedModel <- caret::train(x = 모델을 훈련시키기 위한 샘플 데이터, y = 종속 변수, trControl = train_control, method = \"사용할 모델\", prob.model = TRUE )<br/>\n#샘플 채워진 구문<br/>\ntunedModel <- caret::train(as.data.frame(TrainData), dependentVariable, trControl = train_control, method = \"adaboost\", preProcess = NULL, prob.model = TRUE )<br/>\n</code>\n우리는 조정된 모델에 대한 혼동 행렬 및 모델 정확도 통계를 생성합니다. 이는 다음과 같이 수행됩니다.\n<ul>\n<li>\n우리는 최적화된 train 클래스 모델에 대해 predict 함수를 호출하여 훈련 데이터셋에서 예측 값을 생성합니다 (내부적으로 predict.train은 caret 패키지에서 R이 호출하는 함수입니다).<br/>\n<code> \npredictedValues = predict(tunedModel 반환된 train 함수)<br/>\n</code> <br/>\n</li>\n<li>\n우리는 아래와 같이 생성된 혼동 행렬에서 정확도 통계를 계산합니다.<br/>\n<code> \ncaret::confusionMatrix (predictions = predictedValues, reference = 모델 종속 변수)<br/>\n</code> \n</li>\n</ul>\n최종 조정된/최적화된 모델을 사용하여 데이터셋을 점수화할 수 있습니다. 그렇게 하려면 아래 단계를 따르십시오.<br/>\n1. 점수화할 데이터셋으로 이동하십시오. 참고: 점수화할 데이터셋의 변수 이름(즉, 독립 변수)은 조정된 모델을 원래 생성하는 데 사용한 변수 이름과 일치해야 합니다. 그렇지 않으면 오류가 표시됩니다. 이 오류 메시지는 모델 점수화 대화 상자의 진단 테스트 섹션 아래에 표시됩니다. 아래 2번을 참조하십시오.<br/>\n2. 모델 평가>예측>모델 점수화 아래의 모델 점수화 대화 상자를 엽니다.<br/>\n3. 데이터셋을 점수화하는 데 사용할 모델을 선택하십시오. 구축한 모델을 클래스별로 필터링할 수 있습니다.<br/>\n4. 모델을 선택한 후, 예측 값을 저장하는 데 사용할 접두사를 지정하십시오. 예측 및 혼동 행렬을 생성하기 위해 신뢰 구간을 선택적으로 저장할 수 있습니다. 예측/점수 값을 포함하는 변수에 대한 접두사를 반드시 지정해야 합니다. 예측 및 예측 확률은 해당되는 경우 데이터셋의 끝에 새 변수로 저장됩니다. 예를 들어, 지정된 접두사가 AA인 경우, 예측 값은 변수 AA_original 종속 변수 이름_Predictions에 저장되고, 예측 확률은 변수 AA_Level1_PredictedProbs에 저장됩니다.<br/>\n5. 데이터셋을 점수화하려면 실행 버튼을 클릭하십시오.<br/>\n<b>패키지</b></br>\ncaret</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 편집기 창에서 help(train, package ='caret') 명령을 실행하십시오.\n"
+  }
+}

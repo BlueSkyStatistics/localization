@@ -1,0 +1,31 @@
+{
+  "title": "Grafico a Torta",
+  "suppressLabels": "Sopprimi tutte le etichette per conteggi e percentuali",
+  "optionsLabels": "Opzioni per le etichette",
+  "suppressThreshold": "Sopprimi le etichette per conteggi e percentuali al di sotto della soglia percentuale specificata",
+  "radius": "Specifica un raggio per visualizzare le etichette (aumentando il raggio si spostano le etichette verso l'esterno)",
+  "radiusNote": "Nota: L'opzione sopra non si applica quando è selezionata l'opzione per visualizzare cerchi concentrici.",
+  "navigation": "Grafico a Torta",
+  "concentricCircles": "Visualizza cerchi concentrici (si applica solo quando è specificata la variabile dell'asse X)",
+  "x": "Asse X, specifica variabile(i) fattoriale(i)",
+  "y": "Variabile Y, specifica una variabile numerica",
+  "fill": "Riempimento, specifica una variabile fattoriale",
+  "alpha": "Opacità (0-1)",
+  "width": "Larghezza",
+  "rdgrp1": "Proporzioni di riempimento",
+  "flip": "Capovolgi asse",
+  "barcolor": "Colore della barra (dopo la selezione del colore, fai clic al di fuori del controllo per applicare)",
+  "specify_a_title": "Inserisci un titolo",
+  "x_title": "Etichetta asse X",
+  "y_title": "Etichetta asse Y",
+  "Facetrow": "Riga di Facet",
+  "Facetcolumn": "Colonna di Facet",
+  "Facetwrap": "Avvolgi Facet",
+  "Facetscale": "Scala di Facet",
+  "facets_lbl": "Facets",
+  "help": {
+    "title": "Grafico a Torta",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>Descrizione</b></br>\n            Un grafico a torta (o un grafico circolare) è un grafico statistico circolare, che è diviso in fette per illustrare la proporzione numerica. In un grafico a torta, la lunghezza dell'arco di ogni fetta (e di conseguenza il suo angolo centrale e area), è proporzionale alla quantità che rappresenta. La quantità può essere rappresentata come un conteggio o una percentuale.\n            I Facets possono essere creati opzionalmente specificando una variabile fattoriale. Puoi anche specificare opzionalmente temi e specificare un titolo e etichette per gli assi x e y.</br>\n            Quando specifichi più variabili x, creiamo un grafico a torta separato per ogni variabile x. </br>\n            Il raggio ti consente di controllare il posizionamento delle etichette. Un raggio di 1 posiziona le etichette al centro della torta, un raggio di 1.6 posiziona le etichette all'esterno della torta.</br>\n            Il cerchio esterno grigio chiaro rappresenta il conteggio o il totale. Vedi il testo in fondo al grafico a torta per i dettagli.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n            #Puoi creare un grafico a torta per una singola variabile fattoriale, le torte rappresenteranno i conteggi di ciascun livello del livello fattoriale. Qui la variabile fattoriale corrisponderà al riempimento<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"Grafico a torta con riempimento: specie\") +\n\tylab(\"\") + \n\txlab(\"Conteggio\")</br></br>\n            #Puoi creare un grafico a torta specificando una variabile scala/numerica come variabile y, e riempiendo le fette della torta con una variabile fattoriale. Le torte sono riempite sommando i valori della variabile y per ciascun livello della variabile fattoriale, vedi esempio qui sotto<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #Puoi specificare una variabile x, una variabile y e un riempimento. Le fette sono create per ogni livello della variabile x e riempite dalla somma dei valori della variabile y per ciascun livello della variabile specificata nel riempimento.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            data: Il dataset predefinito​\n            </li>\n            <li>\n            aes():    Genera mappature estetiche che descrivono come le variabili nei dati sono mappate alle proprietà visive (estetiche) dei geoms.​\n            </li>\n            <li>\n            x: (Opzionale) Una variabile fattoriale/categorica. La lunghezza della barra corrisponde ai conteggi di ciascun livello della variabile fattoriale.​\n            </li>\n            <li>\n            Y: (Opzionale) una variabile numerica\n            </li>\n            <li>\n            fill: (Opzionale) Una variabile fattoriale/categorica opzionale per raggruppare i conteggi dei livelli in x: (vedi sopra)​\n            </li>\n            <li>\n            geom_bar(): Crea il grafico a barre, position =\"fill\" riempie la barra con una percentuale di ciascun livello di raggruppamento.​\n            </li>\n            <li>\n            Coor_polar(): Il sistema di coordinate polari è comunemente usato per i grafici a torta, che sono un grafico a barre impilato in coordinate polari.\n            </li>\n            <li>\n            Labs(): Cambia le etichette degli assi e i titoli delle legende (questo è opzionale)​\n            </li>\n            <li>\n            facet_grid(): Dispone i pannelli in una griglia (questo è opzionale)​\n            </li>\n            <li>\n            theme_calc(): Specifica il tema del calcolatore (questo è opzionale)​\n            </li>\n            <li>\n            coord_flip(): Capovolgi asse (questo è opzionale)​\n            </li>\n            <li>\n            alpha: Controlla l'opacità, assume valori tra 0-1. 1 significa nessuna opacità.\n            </li>\n            </ul>\n            <b>Pacchetto</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aiuto</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            Altro: Fai clic sul pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​            \n    "
+  }
+}

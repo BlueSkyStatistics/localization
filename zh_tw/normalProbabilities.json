@@ -1,15 +1,15 @@
 {
-  "title": "正態機率",
-  "navigation": "正態機率",
-  "varvals": "輸入變數值，以逗號分隔。例如：3,0.5",
-  "mean": "平均值",
+  "title": "常態機率",
+  "navigation": "常態機率",
+  "varvals": "輸入變數值，以逗號分隔。範例：3,0.5",
+  "mean": "平均數",
   "sd": "標準差",
   "labelSig": "顯著性水平",
   "lowtail": "下尾",
   "uptail": "上尾",
   "help": {
-    "title": "正態機率",
+    "title": "常態機率",
     "r_help": "help(pnorm, package=stats)",
-    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            正態分佈的密度、分佈函數、分位數函數和隨機生成，均值等於均值，標準差等於sd。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果長度(n) > 1，則長度被視為所需數量。</li>\n                \n                \n                <li>mean : 平均值向量。</li>\n                \n                \n                <li>sd : 標準差向量。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則機率p以log(p)給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（預設），機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            如果未指定mean或sd，則假定默認值為0和1。\n            <br/>\n            正態分佈的密度為\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            其中μ是分佈的均值，σ是標準差。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dnorm給出密度，pnorm給出分佈函數，qnorm給出分位數函數，rnorm生成隨機變數。\n            <br/>\n            結果的長度由n決定，對於rnorm，結果的長度是其他函數的數值參數長度的最大值。\n            <br/>\n            除n以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            對於sd = 0，當sd減少到0時，這給出了極限，在mu處有一個點質量。sd < 0是錯誤並返回NaN。\n"
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            常態分佈的密度、分佈函數、分位數函數和隨機生成，平均數為mean，標準差為sd。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果length(n) > 1，則取所需的長度。</li>\n                \n                \n                <li>mean : 平均數向量。</li>\n                \n                \n                <li>sd : 標準差向量。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則機率p以log(p)給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（默認），則機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            如果mean或sd未指定，則默認值為0和1。\n            <br/>\n            常態分佈的密度\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            其中μ是分佈的平均數，σ是標準差。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dnorm給出密度，pnorm給出分佈函數，qnorm給出分位數函數，rnorm生成隨機變數。\n            <br/>\n            結果的長度由rnorm的n決定，對於其他函數則是數值參數的最大長度。\n            <br/>\n            除n以外的數值參數會回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            對於sd = 0，這給出sd減少到0時的極限，即在mu處的點質量。sd < 0是錯誤，返回NaN。            \n"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "navigation": "Test di kurtosi di Anscombe-Glynn",
+  "title": "Test di kurtosi di Anscombe-Glynn",
+  "hypothesisType": "Testa l'ipotesi (H1)",
+  "twosided": "Due lati",
+  "greater": "Maggiore",
+  "less": "Minore",
+  "label2": "Altre opzioni",
+  "showLengthNAs": "Mostra lunghezza e NAs",
+  "verbose": "Ipotesi alternativa dettagliata",
+  "Target": "Seleziona una o più variabili",
+  "help": {
+    "title": "Test di kurtosi di Anscombe-Glynn",
+    "r_help": "help(anscombe.test, package ='moments')",
+    "body": "\n<b>Descrizione</b></br>\nEsegue il test di kurtosi di Anscombe-Glynn per campioni normali\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nanscombe.test(x, alternative = c(\"two.sided\", \"less\", \"greater\"))\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: un vettore numerico di valori dei dati.\n</li>\n<li>\ny: una stringa carattere che specifica l'ipotesi alternativa, deve essere uno di '\"two.sided\"' (predefinito), '\"greater\"' o '\"less\"'. Puoi specificare solo la lettera iniziale.\n</li>\n</ul>\n<b>Dettagli</b></br>\nSotto l'ipotesi di normalità, i dati dovrebbero avere una kurtosi pari a 3. Questo test ha tale ipotesi nulla ed è utile per rilevare una differenza significativa di kurtosi nei dati distribuiti normalmente.\n<br/>\n<b>Valori</b></br>\nUna lista con classe htest contenente i seguenti componenti:\n<ul>\n<li>\nstatistic: la lista contenente l'estimatore di kurtosi e la sua trasformazione.</br>\n</li>\n<li>\np.value: valore p del test. </br>\n</li>\n<li>\nalternative: una stringa carattere che descrive l'ipotesi alternativa</br>\n</li>\n<li>\nmethod: una stringa carattere che indica che tipo di test è stato eseguito.\n</li>\n<li>\ndata.name: Nome dell'argomento dati.</br>\n</li>\n</ul>\n<b>Esempio</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nkurtosis(x)</br>\nanscombe.test(x)</br>\n</code> <br/>\n<b>Pacchetto</b></br>\nmoments</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(anscombe.test, package ='moments') nell'editor R di BlueSky Statistics.           \n<br/>\n<br/>\t\n"
+  }
+}

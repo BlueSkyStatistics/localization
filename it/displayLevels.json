@@ -1,0 +1,10 @@
+{
+  "title": "Livelli di Visualizzazione",
+  "navigation": "Visualizzazione",
+  "target": "Variabili fattore per visualizzare i livelli di",
+  "help": {
+    "title": "Livelli di Visualizzazione",
+    "r_help": "help(map,package=purrr)",
+    "body": "\n<b>Descrizione</b></br>\nApplica la funzione levels in base alle variabili selezionate nel dataset. Gli utenti utilizzano la funzione select in dplyr per passare le variabili alla funzione map che applica la funzione levels a ciascuna variabile\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nDataset %>%\n    dplyr::select(var1,var2) %>%\n    purrr::map(levels)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvar1,var2: Variabili nel dataset per visualizzare i livelli di\n</li>\n<li>\nDataset: Il dataset che contiene le variabili var1, var2\n</li>\n</ul>\n<b>Valore</b><br/>\nI livelli delle variabili selezionate vengono visualizzati<br/>\n<b>Pacchetto</b></br>\npurrr, dplyr</br>\n<b>Aiuto</b></br>\nhelp(map,package=purrr)\n"
+  }
+}

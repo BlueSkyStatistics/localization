@@ -1,0 +1,33 @@
+{
+  "title": "ARIMA Automatizzato",
+  "navigation": "ARIMA Automatizzato",
+  "destination": "Variabile da prevedere",
+  "firstObservation": "Tempo della prima osservazione es.1: inserire 1961,1 per gennaio 1961 es.2: inserire 1961,3 per il 3° trimestre del 1961, es.3: inserire 1 per una serie continua",
+  "frequency": "Numero di osservazioni per unità di tempo es.1: inserire 12 per un'osservazione per ogni mese dell'anno, es. 2: inserire 4 per un'osservazione per trimestre, es. 3: inserire 1 per una serie continua.",
+  "criteria": "Criteri del modello",
+  "label1": "Grafici",
+  "plotSeries": "Grafico delle serie",
+  "yaxisLabel": "Etichetta dell'asse Y",
+  "mainTitle": "Titolo principale",
+  "label2": "Opzioni per i valori adattati",
+  "saveFitted": "Salva valori adattati",
+  "fittedValsDatasetName": "Specifica il nome del dataset per memorizzare i valori adattati",
+  "oriVsFitted": "Grafico originale vs. Adattato",
+  "plotResiduals": "Grafico dei residui",
+  "label3": "Prevedi utilizzando il modello",
+  "predict": "Fai previsioni utilizzando il modello",
+  "periodToPredict": "Specifica il numero di intervalli da prevedere",
+  "confInterval": "Specifica l'intervallo di confidenza in percentuale es. 95 per 95%",
+  "savePredictedVals": "Salva valori previsti",
+  "predictedValsDatasetName": "Specifica il nome del dataset per memorizzare i valori previsti",
+  "plotPredicted": "Grafico dei valori previsti",
+  "correlogram": "Genera correlogramma",
+  "maxlag": "Inserisci il massimo ritardo",
+  "Boxtest": "Test di Ljung-Box",
+  "advanced_lbl": "Avanzato",
+  "help": {
+    "title": "ARIMA Automatizzato",
+    "r_help": "help(auto.arima, package=forecast)",
+    "body": "\n            <b>Descrizione</b></br>\nRestituisce il miglior modello ARIMA secondo il valore AIC, AICc o BIC. La funzione conduce una ricerca sui possibili modelli all'interno dei vincoli di ordine forniti. Chiama internamente auto.arima nel pacchetto forecast\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvars: variabili selezionate per costruire un modello arima automatico.\n</li>\n<li>\nstart: Il tempo della prima osservazione deve essere inserito nel formato anno,mese o anno,trim. es.( se i tuoi dati sono organizzati in mesi il 1992,1 per Gen 1992 o se i tuoi dati sono organizzati in trimestri allora 1992,1 si riferisce al primo trimestre del 1992.\n</li>\n<li>\nfrequency: Numero di osservazioni in unità di tempo. Esempio: per mensile ci sono 12 osservazioni in un anno. Per trimestrale ci sono 4 osservazioni in un anno.\n</li>\n<li>\nic: Criterio informativo da utilizzare nella selezione del modello. Deve essere uno di \"aic\", \"aicc\" o \"bic\"\n</li>\n<li>\nplotSeries: se TRUE verrà generato anche un grafico delle serie temporali.\n</li>\n<li>\nplotResiduals: se TRUE verranno anche tracciati i residui.\n</li>\n<li>\npredict: se TRUE verranno anche generati valori previsti.\n</li>\n<li>\nsavePredictedVals: i valori previsti verranno salvati.\n</li>\n<li>\nPlotPredictedValues: i valori previsti verranno anche tracciati.\n</li>\n<li>\ncorrelogram: se TRUE verrà generato un correlogramma.\n</li>\n<li>\nmain: titolo principale del grafico\n</li>\n<li>\nylab: titolo per l'asse y\n</li>\n<li>\ndataset: il nome del dataset da cui sono state selezionate le variabili.\n</li>\n</ul>\n<b>Dettagli</b></br>\nGli argomenti predefiniti sono progettati per una stima rapida dei modelli per molte serie temporali. Se stai analizzando solo una serie temporale e puoi permetterti di prendere un po' più di tempo, è consigliabile impostare stepwise=FALSE e approximation=FALSE.</br>\nLa selezione non stepwise può essere lenta, specialmente per i dati stagionali. L'algoritmo stepwise delineato in Hyndman & Khandakar (2008) è utilizzato tranne che il metodo predefinito per selezionare le differenze stagionali è ora basato su una stima della forza stagionale (Wang, Smith & Hyndman, 2006) piuttosto che sul test di Canova-Hansen. Ci sono anche alcune altre variazioni minori all'algoritmo descritto in Hyndman e Khandakar (2008).</br>\n<b>Valore</b><br/>\nUna lista di classe \"Arima\" con componenti:<br/>\ncoef: un vettore di coefficienti AR, MA e di regressione, che possono essere estratti dal metodo coef.<br/>\nsigma2: il MLE della varianza delle innovazioni.<br/>\nvar.coef: la matrice di varianza stimata dei coefficienti coef, che può essere estratta dal metodo vcov.<br/>\nloglik: la log-verosimiglianza massimizzata (dei dati differenziati), o l'approssimazione ad essa utilizzata.<br/>\narma: Una forma compatta della specifica, come un vettore che fornisce il numero di coefficienti AR, MA, AR stagionali e MA stagionali, più il periodo e il numero di differenze non stagionali e stagionali.<br/>\naic: il valore AIC corrispondente alla log-verosimiglianza. Valido solo per i metodi = \"ML\".<br/>\nresiduals: le innovazioni adattate.<br/>\nseries: il nome della serie x.<br/>\ncode: il valore di convergenza restituito da optim.<br/>\nn.cond\t: il numero di osservazioni iniziali non utilizzate nell'adattamento.<br/>\nnobs: il numero di osservazioni \"utilizzate\" per l'adattamento, può anche essere estratto tramite nobs() ed è utilizzato da BIC.<br/>\nmodel: Una lista che rappresenta il filtro di Kalman utilizzato nell'adattamento. Vedi KalmanLike.<br/>\n<b>Pacchetto</b></br>\nforecast</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(auto.arima, package=forecast)\n\t\t\t"
+  }
+}

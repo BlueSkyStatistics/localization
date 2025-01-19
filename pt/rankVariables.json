@@ -1,0 +1,18 @@
+{
+  "title": "Classificar Variável(is)",
+  "navigation": "Classificar",
+  "label1": "Insira um sufixo ou prefixo para as novas variáveis classificadas",
+  "suffix": "Sufixo",
+  "prefix": "Prefixo",
+  "txt1": "Insira um sufixo/prefixo",
+  "dest": "Selecione a(s) variável(is) a classificar",
+  "rankby": "Opcionalmente selecione a(s) variável(is) para classificar valores dentro",
+  "label2": "Especifique uma função de classificação",
+  "rankfn": "Selecione uma função de classificação, clique em ajuda para informações adicionais",
+  "nooftiles": "Para a função de classificação ntile, especifique o número de grupos para dividir:",
+  "help": {
+    "title": "Classificar Variável(is)",
+    "r_help": "ajuda(média)",
+    "body": "\n<b>Descrição</b></br>\nAS CLASSIFICAÇÕES SERÃO ARMAZENADAS EM NOVAS VARIÁVEIS COM O PREFIXO OU SUFIXO ESPECIFICADO</br>\nSeis variações em funções de classificação, imitando as funções de classificação descritas no SQL2003. Elas estão atualmente implementadas usando a função de classificação embutida e são fornecidas principalmente como uma conveniência ao converter entre R e SQL. Todas as funções de classificação mapeiam as menores entradas para as menores saídas. Use desc() para inverter a direção.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nrow_number(x)\nntile(x, n)\nmin_rank(x)\ndense_rank(x)\npercent_rank(x)\ncume_dist(x)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: Um vetor de valores a classificar. Valores ausentes são deixados como estão. Se você quiser tratá-los como os menores ou maiores valores, substitua por Inf ou -Inf antes da classificação.\n</li>\n<li>\nn: número de grupos para dividir.\n</li>\n</ul>\n<b>Detalhes</b><br/>\nrow_number(): equivalente a rank(ties.method = \"first\")<br/>\nmin_rank(): equivalente a rank(ties.method = \"min\")<br/>\ndense_rank(): como min_rank(), mas sem lacunas entre as classificações<br/>\npercent_rank(): um número entre 0 e 1 calculado redimensionando min_rank para [0, 1]<br/>\ncume_dist(): uma função de distribuição cumulativa. Proporção de todos os valores menores ou iguais à classificação atual.<br/>\nntile(): uma classificação aproximada, que divide o vetor de entrada em n baldes.<br/>\n<b>Exemplos</b><br/>\n<code> \nx <- c(5, 1, 3, 2, 2, NA)<br/>\nrow_number(x)<br/>\nmin_rank(x)<br/>\ndense_rank(x)<br/>\n</code><br/>\n<b>Pacote</b></br>\ndplyr</br>\n<b>Ajuda</b></br>\najuda(classificação, pacote='dplyr')"
+  }
+}

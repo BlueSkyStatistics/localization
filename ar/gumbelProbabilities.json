@@ -1,0 +1,15 @@
+{
+  "title": "احتمالات غامبل",
+  "navigation": "احتمالات غامبل",
+  "varvals": "أدخل قيمة(قيمة) المتغير مفصولة بفاصلة. مثال: 3,0.5",
+  "location": "الموقع",
+  "scale": "المقياس",
+  "labelSig": "مستوى الدلالة",
+  "lowtail": "ذيل سفلي",
+  "uptail": "ذيل علوي",
+  "help": {
+    "title": "احتمالات غامبل",
+    "r_help": "help(pgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>الوصف</b>\n            <br/>\n            الكثافة، دالة التوزيع، دالة الكمية والتوليد العشوائي لتوزيع غامبل مع معلمات الموقع والمقياس المحددة.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>المعلمات</b>\n            <br/>\n            <ul>\n                <li>x, q : متجه من الكميات (قيم المتغير).</li>\n                \n                \n                <li>p : متجه من الاحتمالات.</li>\n                \n                \n                <li>n : عدد الملاحظات. إذا كانت length(n) > 1، يتم أخذ الطول ليكون العدد المطلوب.</li>\n                \n                \n                <li>location : معلمة الموقع (افتراضي 0)؛ قد تكون متجهة.</li>\n                \n                \n                <li>scale : معلمة المقياس (افتراضي 1)؛ قد تكون متجهة.</li>\n                \n                <li>lower.tail : منطقي؛ إذا كان TRUE (الافتراضي) فإن الاحتمالات والكميات تتوافق مع P(X ≤ x)، إذا كان FALSE تتوافق مع P(X > x).</li>\n            </ul>            \n      "
+  }
+}

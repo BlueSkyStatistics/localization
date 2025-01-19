@@ -1,0 +1,10 @@
+{
+  "title": "Rimuovi Divisione",
+  "navigation": "Rimuovi Divisione",
+  "label1": "Rimuove la divisione (se una divisione è impostata sul dataset). Clicca il pulsante in alto a destra per eseguire la finestra di dialogo",
+  "help": {
+    "title": "Rimuovi Divisione",
+    "r_help": "",
+    "body": "<b>Descrizione</b></br>\n        Rimuove la divisione sul dataset. Le divisioni, vedi Dati>Raggruppa Per>Imposta Divisione, dividono i dati in gruppi in base ai fattori selezionati; una volta che il dataset è diviso, l'analisi che selezioni viene eseguita indipendentemente per ogni divisione. Ad esempio, se esegui un'analisi di contingenza o un test di ipotesi, questa analisi viene eseguita indipendentemente per ogni divisione (l'output dell'analisi viene generato separatamente per ogni divisione). \n         <br/>\n                <b>Utilizzo</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(colnames =c(),datasetnameorindex='nome del dataset')\n          </code> <br/>\n            <b>Argomenti</b><br/>\n                 <ul>\n                   <li>\n        col.names: Questi sono i nomi delle colonne/nomi delle variabili che desideri utilizzare per dividere il dataset, ad esempio col.names =c(\"var1\", \"var2\"). Per ripristinare la divisione, impostare su c()\n         </li>\n                <li>\n        datasetnameorindex: questo è il nome del dataset.​\n          </li>\n               \n                </ul>\n            <b>Pacchetto</b></br>\n               Non applicabile, questa funzione è una funzione interna nel pacchetto BlueSky. Questa funzione rimuove fondamentalmente l'attributo di divisione sul dataset. </br>\n                <b>Aiuto</b></br>\n        NA\n        "
+  }
+}

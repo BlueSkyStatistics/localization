@@ -1,0 +1,16 @@
+{
+  "title": "Variabile ID",
+  "navigation": "Variabile ID",
+  "varnamelabel": "Nome della variabile ID da creare",
+  "sortbyvarslabel": "Variabili da ordinare per prime",
+  "groupbyvarslabel": "Variabili da raggruppare",
+  "outputdatalabel": "Dataset di output",
+  "newdatalabel": "Crea nuovo dataset",
+  "overwritelabel": "Sovrascrivi dataset esistente",
+  "newdatasetlabel": "Inserisci un nome per il nuovo dataset",
+  "help": {
+    "title": "Variabile ID",
+    "r_help": "help(row_number, package ='dplyr')",
+    "body": "\nCrea una variabile di identificazione (ID) numerica nel dataset corrente o in una copia separata del dataset corrente.  \nLa variabile ID creata consisterà nei valori numerici 1, 2, 3, ecc., in quest'ordine, dall'alto verso il basso nel dataset.  \nÈ possibile specificare opzionalmente le variabili da ordinare o raggruppare prima che venga creata la variabile di identificazione.  Le variabili da ordinare e raggruppare \npossono essere le stesse o variabili diverse.  Se non vengono specificate variabili di raggruppamento, il numero di riga complessivo del dataset verrà assegnato \nalla variabile ID.\n<br/><br/>\n<b>Nome della variabile ID da creare:</b> Specifica il nome desiderato della variabile ID nel dataset di output.\n<br/><br/>\n<b>Variabili da ordinare per prime (opzionale): </b> Specifica le variabili da ordinare prima che vengano definiti i gruppi o venga creata la variabile ID\n<br/><br/>\n<b>Variabili da raggruppare (opzionale):</b> Specifica le variabili i cui livelli definiranno l'assegnazione separata dei valori ID.  Ad esempio, raggruppando per \ngenere si creeranno valori di 1, 2, 3, ecc. separatamente per maschi e femmine, in ordine di apparizione nel dataset.\n<br/><br/>\n<b>Dataset di output:</b> Specifica se creare un nuovo dataset o sovrascrivere il dataset corrente\n<br/><br/>\n<b>Pacchetti R richiesti:</b> tidyverse\n\t\t\t"
+  }
+}

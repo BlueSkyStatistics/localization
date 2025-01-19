@@ -1,0 +1,20 @@
+{
+  "title": "D-Optimal 디자인 생성",
+  "navigation": "D-Optimal 디자인 생성",
+  "datasetname": "D-최적 디자인 이름",
+  "candidateDesignChk": "기존 후보 디자인(전체 팩토리얼, FrF2, 직교 또는 라틴)에서 D-최적 디자인 생성 - 데이터 그리드에서 기존 디자인에서 이 대화 상자가 열려 있는지 확인하여 후보 디자인을 암시적으로 선택합니다.",
+  "selectedvars": "D-최적 디자인을 생성하기 위해 변수를 선택합니다(위에서 후보 디자인이 체크된 경우 무시됨). 기존 후보 디자인에서 생성되지 않음.",
+  "numOfRuns": "실행 횟수",
+  "formula": "공식 - 모델에 모든 요인을 포함하려면 기본값으로 두거나 선형 모델 공식을 입력하세요. 예: ~quad(.)",
+  "numOfOptiRepeats": "최적화 반복 횟수",
+  "numOfBlocks": "블록 수",
+  "blockName": "블록 이름",
+  "lbl1": "무작위화 설정을 변경할 필요가 없을 수 있습니다.",
+  "randomseeds": "무작위화 시드",
+  "randomizationChk": "디자인 생성을 무작위화합니다.",
+  "help": {
+    "title": "D-Optimal 디자인 생성",
+    "r_help": "help(Dopt.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tDopt.design 함수는 블록이 있거나 없는 D-최적 디자인을 생성합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(Dopt.design, package = DoE.wrapper)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t\t먼저 전체 팩토리얼 디자인을 생성하고, 이 대화 상자/UI에서 전체 팩토리얼 디자인을 선택하고, D-최적 디자인을 생성하기 위해 실행 수를 16으로 지정합니다.\n\t\t\t"
+  }
+}

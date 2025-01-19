@@ -1,0 +1,16 @@
+{
+  "title": "Logistica, Condizionale",
+  "navigation": "Logistica, Condizionale",
+  "modelname": "Inserisci il nome del modello",
+  "outcomevarlabel": "Variabile Dipendente (numerica; 1 = evento, 0 = nessun evento)",
+  "stratavarlabel": "Strati",
+  "methodgrplabel": "Metodo di Stima",
+  "exactlabel": "Esatto",
+  "efronlabel": "Efron",
+  "breslowlabel": "Breslow",
+  "help": {
+    "title": "Logistica, Condizionale",
+    "r_help": "help(clogit, package = 'survival')",
+    "body": "\nQuesto adatta un modello di regressione logistica condizionale, che è simile alla regressione logistica standard, ma incorpora una variabile di stratificazione. Le applicazioni comuni di questo \nmodello sono negli studi caso-controllo abbinati, coorti abbinate e studi caso-controllo nidificati. L'output include il numero di strati utilizzati nell'analisi, i modelli di frequenza degli esiti \nall'interno degli strati, varie statistiche riassuntive del modello, stime dei parametri e rapporti di probabilità.\n<br/><br/>\n<b>Variabile Dipendente:</b> Questa è la variabile che indica l'evento per ciascun soggetto, con 1 che indica un evento e 0 che indica un non-evento. Questa variabile deve essere numerica.\n<br/><br/>\n<b>Costruttore di Formula:</b> Specifica i termini del modello desiderati.\n<br/><br/>\n<b>Strati:</b> Specifica la variabile di stratificazione. Può essere numerica, carattere o un fattore nominale/ordinali.\n<br/><br/>\n<b>Metodo di Stima:</b> Specifica il metodo di stima del modello. Il metodo \"Esatto\" è il predefinito. Finché non ci sono troppi modi per selezionare eventi all'interno degli strati, questa \ndovrebbe essere l'opzione scelta. La stima può richiedere del tempo o portare a errori se molte combinazioni possono risultare all'interno di alcuni strati, ad esempio 100 eventi su 500 soggetti. Le approssimazioni di Efron \ne Breslow sono adeguate in questi casi, con Efron preferito. Vedi i riferimenti nell'aiuto di R per dettagli.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> survival, broom, arsenal, dplyr\n\t\t"
+  }
+}

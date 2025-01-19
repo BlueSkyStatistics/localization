@@ -1,0 +1,16 @@
+{
+  "title": "ID Değişkeni",
+  "navigation": "ID Değişkeni",
+  "varnamelabel": "Oluşturulacak ID değişkeninin adı",
+  "sortbyvarslabel": "Öncelikle Sıralanacak Değişkenler",
+  "groupbyvarslabel": "Gruplandırılacak Değişkenler",
+  "outputdatalabel": "Çıktı Veri Kümesi",
+  "newdatalabel": "Yeni Veri Kümesi Oluştur",
+  "overwritelabel": "Mevcut Veri Kümesini Üzerine Yaz",
+  "newdatasetlabel": "Yeni Veri Kümesi için Bir İsim Girin",
+  "help": {
+    "title": "ID Değişkeni",
+    "r_help": "help(row_number, package ='dplyr')",
+    "body": "\nMevcut veri kümesinde veya mevcut veri kümesinin ayrı bir kopyasında sayısal bir satır tanımlama (ID) değişkeni oluşturur.  \nOluşturulan ID değişkeni, veri kümesinde yukarıdan aşağıya doğru 1, 2, 3, vb. sayısal değerlerden oluşacaktır.  \nTanımlama değişkeni oluşturulmadan önce sıralanacak veya gruplandırılacak değişkenleri isteğe bağlı olarak belirtebilirsiniz.  Sıralanacak ve gruplandırılacak değişkenler \naynı veya farklı değişkenler olabilir.  Eğer gruplandırma değişkenleri belirtilmezse, veri kümesinin genel satır numarası ID değişkenine atanacaktır.\n<br/><br/>\n<b>Oluşturulacak ID değişkeninin adı:</b> Çıktı veri kümesinde ID değişkeninin istenen adını belirtin.\n<br/><br/>\n<b>Öncelikle sıralanacak değişkenler (isteğe bağlı): </b> Gruplar tanımlanmadan veya ID değişkeni oluşturulmadan önce sıralanacak değişkenleri belirtin.\n<br/><br/>\n<b>Gruplandırılacak Değişkenler (isteğe bağlı):</b> ID değerlerinin ayrı atamasını tanımlayacak seviyeleri olan değişkenleri belirtin.  Örneğin, cinsiyete göre gruplandırma, veri kümesindeki görünüm sırasına göre erkekler ve kadınlar için ayrı olarak 1, 2, 3, vb. değerler oluşturacaktır.\n<br/><br/>\n<b>Çıktı Veri Kümesi:</b> Yeni bir veri kümesi oluşturulup oluşturulmayacağını veya mevcut veri kümesinin üzerine yazılıp yazılmayacağını belirtin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> tidyverse\n\t\t\t"
+  }
+}

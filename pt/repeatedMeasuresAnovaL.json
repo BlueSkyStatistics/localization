@@ -1,0 +1,28 @@
+{
+  "helpText": "A ANOVA de medidas repetidas requer que os dados estejam no formato longo. Se seus dados não estiverem no formato longo, veja Conjuntos de Dados > Reformatar > Mais Longo",
+  "modelname": "Insira o nome do modelo",
+  "title": "ANOVA de Medidas Repetidas",
+  "subjectID": "Variável a ser usada como identificador do sujeito",
+  "dependentVariable": "Variável dependente",
+  "navigation": "ANOVA, Medidas Repetidas, Longo",
+  "response": "Variável(is) dentro do sujeito, por exemplo, Tempo",
+  "Fixed": "Fator(es) entre sujeitos",
+  "covariates": "Covariáveis",
+  "Summary": "Médias marginais estimadas",
+  "Scatter_plot": "Post-hoc",
+  "Residual": "Gráfico Residual vs. Ajustado",
+  "Histogram": "Gráfico de histograma dos resíduos",
+  "brownForsythe": "Teste de Brown-Forsythe",
+  "levenesTest": "Teste de Levene",
+  "plotMeansCI": "Gráfico de médias e intervalos de confiança",
+  "simpleEffectsTest": "Teste de efeitos simples",
+  "label2": "Opções para post-hoc e teste de efeitos simples",
+  "combon": "Comparar Médias usando:",
+  "adjust": "Método para ajustar valores de p",
+  "displayBoxMDetails": "Exibir detalhes associados ao teste de Box's M (Nota: Os resultados do teste de Box's M são sempre mostrados)",
+  "help": {
+    "title": "ANOVA de Medidas Repetidas",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>Descrição</b></br>\nCom a ANOVA de medidas repetidas, as estatísticas F são calculadas para cada fator dentro dos sujeitos, fator entre sujeitos e o termo de interação para ANOVA mista</br>\nProcure as tabelas de valores ANOVA adicionais na saída que exibem MSE (média da soma dos quadrados para erro) e pes (eta quadrado parcial)</br>\nAtualmente, suportamos um único fator dentro do sujeito e fator entre sujeitos, o fator entre sujeitos é opcional.</br>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"variávelDependente\", \n\tid = \"Identificador\", within = c(\"Tempo\"), \tbetween = c(\"Tratamento\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndata: Um data.frame contendo os dados. Obrigatório\n</li>\n<li>\ndv: vetor de caracteres (de comprimento 1) indicando a coluna que contém a variável dependente nos dados.\n</li>\n<li>\nbetween: vetor de caracteres indicando os fator(es)/coluna(s) entre sujeitos nos dados. O padrão é NULL, indicando que não há fatores entre sujeitos.\n</li>\n<li>\nwithin: vetor de caracteres indicando os fator(es)/coluna(s) dentro dos sujeitos (ou medidas repetidas) nos dados. O padrão é NULL, indicando que não há fatores dentro dos sujeitos.\n</li>\n<li>\ncovariate: vetor de caracteres indicando as covariáveis entre sujeitos (ou seja, coluna(s)) nos dados. O padrão é NULL, indicando que não há covariáveis. Observe que a fatoração precisa ser definida como FALSE caso a covariável seja numérica e deva ser tratada como tal.\n</li>\n<li>\nanovatable: lista de argumentos adicionais passados para a função que produz a tabela ANOVA. \n</li>\n</ul>\n<br/>\n<b>Detalhes</b></br>\nVeja a ajuda detalhada do R</br>\n<b>Valor</b><br/>\naov_car, aov_4 e aov_ez são wrappers para Anova e aov, o valor de retorno depende do argumento de retorno. Por padrão, um objeto S3 da classe \"afex_aov\" é retornado contendo os seguintes slots:<br/>\n\"anova_table\": Uma tabela ANOVA da classe c(\"anova\", \"data.frame\").<br/>\n\"aov\": objeto aov retornado de aov (não deve ser usado para avaliar a significância dos efeitos, mas pode ser passado para emmeans para testes post-hoc).<br/>\n\"Anova\": objeto retornado de Anova, um objeto da classe \"Anova.mlm\" (se fatores dentro dos sujeitos estiverem presentes) ou da classe c(\"anova\", \"data.frame\").<br/>\n\"lm\": o objeto ajustado com lm e passado para Anova (ou seja, um objeto da classe \"lm\" ou \"mlm\"). Também retornado se return = \"lm\".<br/>\n\"data\": uma lista contendo: (1) long (os dados possivelmente agregados em formato longo usados para aov), wide (os dados usados para ajustar o objeto lm), e idata (se fatores dentro dos sujeitos estiverem presentes, o argumento idata passado para car::Anova). Também retornado se return = \"data\".<br/>\n<b>Pacote</b></br>\nafex</br>\n<b>Ajuda</b></br>\nhelp(aov_ez, package ='afex')\nClique no botão de Ajuda do R para obter ajuda detalhada do R. Você também pode digitar help(aov_ez, package ='afex') e pressionar CTRL Enter no editor de sintaxe R para obter ajuda\n    "
+  }
+}

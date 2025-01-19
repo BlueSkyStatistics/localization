@@ -1,5 +1,5 @@
 {
-    "title": "Histogram with Overlay Normal Curves per Facet and Group",
+    "title": "Histogram with Overlay Normal Curves",
     "navigation": "Histogram",
     "x": "X axis, specify a numeric variable(s)",
     "bins": "Specify the number of bins",
@@ -11,7 +11,7 @@
     "specify_a_title": "Enter a title",
     "x_title": "X axis label",
     "y_title": "Y axis label",
-	"facets_lbl" : "Facets",
+	"facets_lbl": "Facets",
     "Facetrow": "Facet row",
     "Facetcolumn": "Facet column",
     "Facetwrap": "Facet wrap (if chosen, any selection of Facet row and column will be ignored)",
@@ -19,6 +19,9 @@
     "normalCurveColor": "Optionally select a normal curve color (After color selection, click outside the control to apply)",
     "rugPlot": "Display a rug plot (suitable for small datasets)",
     "normalCurve": "Display a normal curve (Missing values are removed for curve to display)",
+    "showCountsChk": "Display counts on the bins (counts wiill not be displayed if group or facet is selected)",
+    "histogramBarPosition": "Bar position, if a group is chosen (stacked or side-by-side)",
+    "histogramBinDetailsChk": "Show Histogram Bin details in a table",
     "help": {
         "title": "Histogram",
         "r_help": "help(geom_histogram, package=ggplot2)",

@@ -1,0 +1,21 @@
+{
+  "title": "빈닝",
+  "navigation": "빈",
+  "vartobin": "빈할 변수를 선택하세요",
+  "varname": "빈 값을 저장할 변수 이름을 입력하세요",
+  "noofbins": "빈의 수를 지정하세요",
+  "label1": "레벨 이름",
+  "Names": "이름 지정",
+  "levelnames": "쉼표(,)로 구분된 레벨 이름을 입력하세요. 예: 좋음, 더 좋음, 최고",
+  "Numbers": "숫자",
+  "Ranges": "범위",
+  "label2": "빈닝 방법",
+  "equalwidth": "동일 너비 빈",
+  "equalcount": "동일 수 빈",
+  "natural": "자연적 구간 (K 평균 클러스터링)",
+  "help": {
+    "title": "빈닝",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>설명</b></br>\n숫자 변수를 동일 너비, (대략) 동일 빈도 또는 \"자연적\" 절단점( K-평균 클러스터링에 의해 결정됨)으로 나누는 팩터를 생성합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nX: 빈으로 나눌 숫자 변수입니다.\n</li>\n<li>\nBins: 빈의 수입니다.\n</li>\n<li>\nmethod: \"intervals\"는 동일 너비 빈; \"proportions\"는 동일 수 빈; \"natural\"은 빈 사이의 절단점을 K-평균 클러스터링에 의해 결정합니다.\n</li>\n<li>\nLabels: FALSE인 경우 숫자 레이블이 팩터 레벨에 사용됩니다; NULL인 경우 절단점이 레이블을 정의하는 데 사용됩니다; 그렇지 않으면 레벨 이름의 문자 벡터입니다.\n</li>\n</ul>\n<b>패키지</b></br>\nRcmdrMisc</br>\n<b>도움말</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

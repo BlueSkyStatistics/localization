@@ -1,0 +1,18 @@
+{
+  "title": "순위 변수",
+  "navigation": "순위",
+  "label1": "새로 정렬된 변수에 대한 접미사 또는 접두사를 입력하세요",
+  "suffix": "접미사",
+  "prefix": "접두사",
+  "txt1": "접미사/접두사 입력",
+  "dest": "정렬할 변수 선택",
+  "rankby": "값을 정렬할 변수 선택(선택 사항)",
+  "label2": "정렬 함수 지정",
+  "rankfn": "정렬 함수를 선택하고 추가 정보를 보려면 도움말을 클릭하세요",
+  "nooftiles": "정렬 함수 ntile의 경우 나눌 그룹 수를 지정하세요:",
+  "help": {
+    "title": "순위 변수",
+    "r_help": "help(mean)",
+    "body": "\n<b>설명</b></br>\n순위는 지정된 접두사 또는 접미사가 있는 새 변수에 저장됩니다.</br>\nSQL2003에서 설명된 정렬 함수의 여섯 가지 변형입니다. 현재 내장된 정렬 함수를 사용하여 구현되며, R과 SQL 간의 변환 시 편의성을 위해 제공됩니다. 모든 정렬 함수는 가장 작은 입력을 가장 작은 출력으로 매핑합니다. desc()를 사용하여 방향을 반전시킬 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nrow_number(x)\nntile(x, n)\nmin_rank(x)\ndense_rank(x)\npercent_rank(x)\ncume_dist(x)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 순위를 매길 값의 벡터. 결측값은 그대로 둡니다. 가장 작은 값이나 가장 큰 값으로 처리하려면 순위를 매기기 전에 Inf 또는 -Inf로 교체하세요.\n</li>\n<li>\nn: 나눌 그룹 수.\n</li>\n</ul>\n<b>세부정보</b><br/>\nrow_number(): rank(ties.method = \"first\")와 동등합니다.<br/>\nmin_rank(): rank(ties.method = \"min\")와 동등합니다.<br/>\ndense_rank(): min_rank()와 같지만 순위 사이에 간격이 없습니다.<br/>\npercent_rank(): min_rank를 [0, 1]로 재조정하여 계산된 0과 1 사이의 숫자입니다.<br/>\ncume_dist(): 누적 분포 함수. 현재 순위보다 작거나 같은 모든 값의 비율입니다.<br/>\nntile(): 입력 벡터를 n개의 버킷으로 나누는 대략적인 순위입니다.<br/>\n<b>예제</b><br/>\n<code> \nx <- c(5, 1, 3, 2, 2, NA)<br/>\nrow_number(x)<br/>\nmin_rank(x)<br/>\ndense_rank(x)<br/>\n</code><br/>\n<b>패키지</b></br>\ndplyr</br>\n<b>도움말</b></br>\nhelp(ranking, package='dplyr')"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Box Plot",
+  "dropna": "Rimuovi valori mancanti",
+  "navigation": "Box Plot",
+  "x": "Variabile X, specifica una variabile fattoriale",
+  "y": "Variabile(i) Y, specifica una variabile numerica(e)",
+  "fill": "Riempimento, specifica una variabile fattoriale",
+  "dataPoints": "Seleziona un'opzione per tracciare i punti dati",
+  "alpha": "Opacità (0-1)",
+  "flip": "Capovolgi asse",
+  "notch": "Intaglio",
+  "outliers": "Mostra Outliers (In Rosso)",
+  "specify_a_title": "Inserisci un titolo",
+  "x_title": "Etichetta asse X",
+  "y_title": "Etichetta asse Y",
+  "barcolor": "Seleziona un colore per le linee attorno alle scatole (Dopo la selezione del colore, fai clic all'esterno del controllo per applicare)",
+  "Facetrow": "Riga Facet",
+  "Facetcolumn": "Colonna Facet",
+  "Facetwrap": "Avvolgi Facet",
+  "Facetscale": "Scala Facet",
+  "facets_lbl": "Facets",
+  "help": {
+    "title": "Box Plot",
+    "r_help": "help(geom_boxplot, package=ggplot2)",
+    "body": "\n        <b>Descrizione</b></br>\n        Nella statistica descrittiva, un box plot o boxplot è un modo conveniente per rappresentare graficamente gruppi di dati numerici attraverso i loro quartili. I box plot possono anche avere linee che si estendono verticalmente dalle scatole (baffi) che indicano la variabilità al di fuori dei quartili superiore e inferiore, da cui i termini box-and-whisker plot e box-and-whisker diagram. Gli outlier possono essere tracciati come punti individuali. I box e whisker plot sono uniformi nel loro uso della scatola: il fondo e la parte superiore della scatola sono sempre il primo e il terzo quartile, e la banda all'interno della scatola è sempre il secondo quartile (la mediana). Il baffo superiore si estende dal cardine al valore più alto che è entro 1.5 * IQR del cardine, dove IQR è l'intervallo interquartile, o distanza tra il primo e il terzo quartile. Il baffo inferiore si estende dal cardine al valore più basso entro 1.5 * IQR del cardine. I dati oltre la fine dei baffi sono outlier e tracciati come punti (come specificato da Tukey).​</br>\n        I facets possono essere creati opzionalmente specificando una variabile fattoriale. Puoi anche specificare opzionalmente temi e specificare un titolo e etichette per gli assi x e y​</br>\n        Quando selezioni l'opzione per tracciare i punti dati, lo facciamo utilizzando geom_dotplot</br>\n        Per impostazione predefinita, gli outlier sono mostrati con punti neri, quando selezioni l'opzione per mostrare outlier (In Rosso) tramite la casella di controllo, gli outlier diventano più evidenti.\n        <br/>\n        <b>Utilizzo</b>\n        <br/>\n        <code> \n        ggplot(data =Dataset,aes(x = var1,y = var2,fill = var3)) + geom_boxplot()  + \n        geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.1)+ coord_flip()+ labs(x = \"var1\",y = \"var2\",fill = \"var3\")   +facet_grid(var4~.)​\n        </code> <br/>\n        <b>Argomenti</b><br/>\n        <ul>\n        <li>\n        data: Il dataset predefinito​\n        </li>\n        <li>\n        x: Una variabile fattoriale/categorica che definisce il raggruppamento della variabile y​\n        </li>\n        <li>\n        y: Una variabile numerica per la quale viene calcolato il boxplot​\n        </li>\n        <li>\n        fill: Una variabile fattoriale/categorica opzionale per raggruppare ulteriormente i gruppi esistenti. Ogni sottogruppo sarà mostrato in un colore distinto.​\n        </li>\n        <li>\n        aes():    Genera mappature estetiche che descrivono come le variabili nei dati sono mappate alle proprietà visive (estetiche) dei geoms.​\n        </li>\n        <li>\n        geom_boxplot():Crea il boxplot. I \"cardini\" superiori e inferiori corrispondono al primo e al terzo quartile (il 25° e il 75° percentile).​\n        </li>\n        <li>\n        geom_dotplot: Traccia i punti dati\n        </li>\n        <li>\n        Labs(): Cambia le etichette degli assi e i titoli della legenda (Questo è facoltativo)​\n        </li>\n        <li>\n        facet_grid(): Dispone i pannelli in una griglia (Questo è facoltativo)​\n        </li>\n        <li>\n        theme_calc(): Specifica il tema della calcolatrice (Questo è facoltativo)​\n        </li>\n        <li>\n        coord_flip(): Capovolgi l'asse (Questo è facoltativo)​\n        </li>\n        <li>\n        notch: I box plot con intaglio applicano un \"intaglio\" o restringimento della scatola attorno alla mediana. Gli intagli sono utili per offrire una guida approssimativa alla significatività della differenza delle mediane; se gli intagli di due scatole non si sovrappongono, questo offre evidenza di una differenza statisticamente significativa tra le mediane. In un box plot con intaglio, gli intagli si estendono per 1.58 * IQR / sqrt(n)\n        </li>\n        </ul>\n        <b>Pacchetto</b></br>\n        ggplot2;ggthemes;stringr</br>\n        <b>Aiuto</b></br>\n        help(geom_boxplot, package=ggplot2)</br>\n        Fai clic sul pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(geom_boxplot), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip), help (geom_dotplot)\n        "
+  }
+}

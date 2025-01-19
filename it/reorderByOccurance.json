@@ -1,0 +1,21 @@
+{
+  "title": "Riordina i livelli dei fattori per occorrenza",
+  "navigation": "Riordina per occorrenza",
+  "target": "Variabili fattoriali per riordinare i livelli",
+  "label1": "Seleziona le variabili fattoriali da riordinare in base all'occorrenza dei dati nella variabile. Puoi sovrascrivere le variabili esistenti o crearne di nuove specificando un prefisso/suffisso. Le nuove variabili verranno create con il prefisso/suffisso aggiunto ai nomi esistenti.",
+  "label2": "Salva i nuovi livelli in nuova/e variabile/e o sovrascrivi la/e variabile/i esistente/i",
+  "rd3": "Specifica un suffisso (verrà creata una nuova variabile con il suffisso)",
+  "txt3": "Inserisci un suffisso",
+  "rd2": "Specifica un prefisso (verrà creata una nuova variabile con il prefisso)",
+  "txt4": "Inserisci un prefisso",
+  "rd1": "Sovrascrivi le variabili esistenti",
+  "label3": "Specifica un ordine",
+  "Descending": "In ordine di occorrenza",
+  "Ascending": "In ordine inverso di occorrenza",
+  "ordered": "Crea un fattore ordinato (ordinal)",
+  "help": {
+    "title": "Rimuovi NAs",
+    "r_help": "help(fct_inorder, package=forcats)",
+    "body": "\n<b>Descrizione</b></br>\nRiordina i livelli dei fattori in base alla prima apparizione (occorrenza). Vedi riordina per conteggio per ordinare per conteggio/frequenza.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nfct_inorder(f, ordered = NA)</br>\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nf: Un fattore\n</li>\n<li>\nordered: Un logico che determina lo stato \"ordinato\" del fattore di output. NA preserva lo stato esistente del fattore.\n</li>\n</ul>\n<b>Esempi</b>\n<code></br>\nf <- factor(c(\"b\", \"b\", \"a\", \"c\", \"c\", \"c\"))</br>\nf</br>\nfct_inorder(f)</br>\nfct_infreq(f)</br>\nfct_inorder(f, ordered = TRUE)</br>\nf <- factor(sample(1:10))</br>\nfct_inseq(f)</br>\n</code>\n"
+  }
+}

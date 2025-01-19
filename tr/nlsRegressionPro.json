@@ -1,0 +1,26 @@
+{
+  "title": "Doğrusal Olmayan En Küçük Kareler (NLS) Modeli",
+  "navigation": "Doğrusal Olmayan En Küçük Kareler",
+  "modelname": "NLS Model adı",
+  "DependentVar": "Yanıt (Bağımlı) Değişken",
+  "IndependentVarsformula": "Bağımsız (tahmin) değişken(ler) ve model parametreleri ile herhangi bir denklemi (formülü) oluşturun veya yapıştırın, örneğin a * exp(b * x) burada a ve b tahmin edilecek parametrelerdir ve x tahmin değişkenidir. y ~ a * exp(b * x) şeklinde bir model denklemi oluşturacaktır, burada y yanıt değişkenidir",
+  "IndependentVar": "Dağılım ve uyumlu grafik için gereken bağımsız (tahmin) değişken",
+  "weights": "Ağırlık (Y) olarak kullanılan bir değişken, bir güç değeri ile",
+  "PowerKweight": "Güç: sadece Y için (-1) seçin, 1/Y için 1, 1/(Y^2) için 2, .. 1/(Y^5) için 5,..",
+  "covMatrixChk": "Parametreler için tahmin edilen kovaryans matrisi",
+  "resPlotChk": "Uyumlu ve kalıntıları çiz",
+  "resNormalityTestChk": "Model kalıntılarının normallik testi",
+  "modelConstraintLabel": "(İsteğe Bağlı) Parametre tahminleri için çeşitli model kısıtlamaları",
+  "pmodels": "Model optimizasyonu/konverjansını yönlendirmek için parametreler için başlangıç değerleri, örneğin param1 = 1, param2 = 10, param3 = 0 üç parametreli bir model için",
+  "paramConstraintsLower": "Alt limit için kısıtlamayı ayarlayın (algoritma olarak port seçmelisiniz) örneğin 3, -Inf, -Inf üç parametreli bir model için",
+  "paramConstraintsUpper": "Üst limit için kısıtlamayı ayarlayın (algoritma olarak port seçmelisiniz) örneğin 3, Inf, Inf, 2 dört parametreli bir model için",
+  "algorithm": "Kullanılacak algoritma. Varsayılan Gauss-Newton algoritmasıdır",
+  "maxIter": "Modelin konverjansı için izin verilen maksimum iterasyon sayısı. Varsayılan 50'dir",
+  "logScaleAxis": "X ekseni varsayılan olarak logaritmik ölçekle çizilir. Orijinal ölçek için ' ' seçin",
+  "doseInLogScaleChk": "Veri setinde doz/konsantrasyonun zaten logaritmik değerlerde olup olmadığını kontrol edin",
+  "help": {
+    "title": "Doğrusal Olmayan En Küçük Kareler (NLS) Modeli",
+    "r_help": "help(nls, package ='stats')",
+    "body": "\n            <b>Açıklama</b></br> \n\t\t\tDoğrusal olmayan regresyon gerçekleştirin. Doğrusal olmayan regresyon modelini oluşturmak için herhangi bir denklemi (formülü) oluşturun veya yazın.\n\t\t\tDoğrusal olmayan modelin parametrelerinin doğrusal (ağırlıklı) en küçük kareler tahminlerini belirleyin. \n\t\t\tGrafiklerle model uyumunu analiz edin. \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tDetaylar için help(nls, package ='stats')'yi kontrol edin \n\t\t\t</br>\n\t\t\t</br>\n\t\t\tBu iletişim kutusunu deneyebilirsiniz\n\t\t\t</br>\n\t\t\t</br>\t\n\t\t\tÖrnek 1\n\t\t\t</br>\n\t\t\tYükleme Veri Setleri menüsünden DNase veri setini yükleyin (ilk açılır menüde tüm yüklü paketleri bırakın ve ikinci açılır menüden DNase'yi seçin)\t\t\t\n\t\t\t<br/>\n\t\t\tYanıt değişkeni olarak yoğunluğu seçin (veya sürükleyin)\n\t\t\t<br/>\n\t\t\tBağımsız (formül) alanına Asym/(1 + exp((xmid - log(conc))/scal)) yazın, burada Asym, xmid ve scal\n\t\t\tüç model parametresidir (yani tahmin edilecek katsayılar) \n\t\t\t<br/>\n\t\t\tTahmin Edilen Kovaryans Matrisini Kontrol Edin\n\t\t\t</br>\n\t\t\tUyumlu ve kalıntıları Çizim Seçin \n\t\t\t</br>\n\t\t\tDağılım ve uyumlu grafik için gereken bağımsız (tahmin) değişken alanına conc'yi seçin (veya sürükleyin)\n\t\t\t</br>\n\t\t\tModeli yönlendirmek için parametreler için başlangıç değerleri alanına Asym = 3, xmid = 0, scal = 1 yazın\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tÖrnek 2\n\t\t\t</br>\n\t\t\tYükleme Veri Setleri menüsünden DNase veri setini yükleyin (ilk açılır menüde tüm yüklü paketleri bırakın ve ikinci açılır menüden DNase'yi seçin)\t\t\t\n\t\t\t<br/>\n\t\t\tYanıt değişkeni olarak yoğunluğu seçin (veya sürükleyin)\n\t\t\t<br/>\n\t\t\tBağımsız (formül) alanına Asym/(1 + exp((xmid - log(conc))/scal)) yazın\n\t\t\t<br/>\n\t\t\tTahmin Edilen Kovaryans Matrisini Kontrol Edin\n\t\t\t</br>\n\t\t\tUyumlu ve kalıntıları Çizim Seçin \n\t\t\t</br>\n\t\t\tDağılım ve uyumlu grafik için gereken bağımsız (tahmin) değişken alanına conc'yi seçin (veya sürükleyin)\n\t\t\t</br>\n\t\t\tModeli yönlendirmek için parametreler için başlangıç değerleri alanına Asym = 3, xmid = 0, scal = 1 yazın\n\t\t\t</br>\n\t\t\tAsym = 0, xmid = -Inf, scal = -Inf alanına Asym için alt limit kısıtlamasını 0 olarak ayarlayın ve xmid ve scal için alt limitleri kısıtlamadan bırakın\n\t\t\t</br>\n\t\t\tAsym = Inf, xmid = 4, scal = Inf alanına xmid için üst limit kısıtlamasını 0 olarak ayarlayın ve Asym ve scal için üst limitleri kısıtlamadan bırakın\n\t\t\t</br>\n\t\t\tVarsayılan yerine kullanılacak algoritma açılır menüsünden portu seçin\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tDiyaloğu çalıştırın\n\t\t\t</br>\n\t\t\t</br>\n"
+  }
+}

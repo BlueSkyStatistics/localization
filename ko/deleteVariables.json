@@ -1,0 +1,10 @@
+{
+  "title": "변수 삭제",
+  "navigation": "삭제",
+  "trg": "삭제할 변수",
+  "help": {
+    "title": "NA 제거",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>설명</b></br>\n데이터셋/데이터프레임에서 결측값/NA를 제거합니다.\n선택한 열/변수 이름에 대해 하나 이상의 결측값이 있는 행을 제거하여 새 데이터셋을 생성하거나 기존 데이터셋을 덮어씁니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\n​object: R 객체입니다.​\n</li>\n</ul>\n<b>패키지</b></br>\ndata.table</br>\n<b>도움말</b></br>\nhelp(na.omit)\n"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "레빈의 검정",
+  "navigation": "레빈의 검정",
+  "tvarbox1": "응답 변수 (하나)",
+  "tvarbox3": "요인 변수",
+  "label1": "중심",
+  "median": "중앙값",
+  "mean": "평균",
+  "help": {
+    "title": "레빈의 검정",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>설명</b></br>\n그룹 간 분산의 동질성을 위한 레빈의 검정을 계산합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## 'formula' 클래스에 대한 S3 메서드<br/>\nleveneTest(y, data, ...)<br/>\n## 'lm' 클래스에 대한 S3 메서드<br/>\nleveneTest(y, ...)<br/>\n## 기본 S3 메서드:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ny: 기본 메서드의 응답 변수 또는 lm 또는 formula 객체. y가 선형 모델 객체 또는 수식인 경우 모델의 오른쪽 변수는 모두 요인이어야 하며 완전히 교차해야 합니다.\n</li>\n<li>\ngroup: 그룹을 정의하는 요인.\n</li>\n<li>\ncenter: 각 그룹의 중심을 계산하는 함수의 이름; mean은 원래 레빈의 검정을 제공하고, 기본값인 median은 더 강력한 검정을 제공합니다.\n</li>\n<li>\ndata: 수식을 평가하기 위한 데이터 프레임.\n</li>\n<li>\n...: 수식 및 lm 메서드에 대한 데이터와 같은 인수를 전달하는 데 사용됩니다; center에 의해 제공된 함수에 인수를 전달하는 데에도 사용할 수 있습니다 (예: center=mean 및 trim=0.1은 10% 잘린 평균을 지정합니다).\n</li>\n</ul>\n<b>값</b><br/>\n테스트 결과를 보여주는 인쇄할 객체를 반환합니다.<br/>\n<b>예제</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Accounts', 'HR', 'Sales','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>패키지</b></br>\ncar;moments;dplyr</br>\n<b>도움말</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

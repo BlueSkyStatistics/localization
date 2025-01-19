@@ -1,0 +1,23 @@
+{
+  "title": "유지하거나 다른 것으로 교체할 수준 지정",
+  "navigation": "기타로 묶기 (수동)",
+  "target": "재정렬할 요인 변수",
+  "label1": "유지할 수준을 입력하거나 다른 것으로 교체합니다. 유지할 수준이 선택되면 나머지 수준은 \"기타\"로 교체됩니다. 교체가 선택되면 지정된 수준이 \"기타\"로 교체됩니다.",
+  "other": "\"기타\" 값에 사용되는 수준 이름",
+  "label3": "사용할 방법",
+  "keep": "수준 유지",
+  "drop": "수준 삭제",
+  "keepOption": "유지할 수준을 ,로 구분하여 입력합니다. 나머지 수준은 예: level1,level2,level3에 대해 \"기타\"로 교체됩니다.",
+  "dropOption": "\"기타\"로 교체할 수준을 입력합니다. 예: level1,level2,level3",
+  "label2": "결과를 새 변수에 저장하거나 기존 변수에 덮어쓰기",
+  "rd3": "접미사를 지정합니다 (접미사가 있는 새 변수가 생성됩니다)",
+  "txt3": "접미사를 입력합니다",
+  "rd2": "접두사를 지정합니다 (접두사가 있는 새 변수가 생성됩니다)",
+  "txt4": "접두사를 입력합니다",
+  "rd1": "기존 변수를 덮어쓰기",
+  "help": {
+    "title": "유지하거나 교체할 수준",
+    "r_help": "help(fct_other, package =forcats)",
+    "body": "\n<b>참고: 수준을 큰따옴표나 작은따옴표로 묶지 마십시오. 수준 이름에 공백이 있을 수 없습니다. 수준을 쉼표로 구분하여 입력하십시오: LEVEL1,LEVEL2,LEVEL3</b><br/>\n<b>설명</b></br>\n유지하거나 삭제할 요인 수준을 입력합니다. 유지가 선택되면 나머지 수준은 \"기타\"로 교체됩니다. 삭제가 선택되면 삭제된 수준은 \"기타\"로 교체됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nfct_other(f, keep, drop, other_level = \"기타\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nf : 요인 (또는 문자 벡터).\n</li>\n<li>\nkeep, drop: keep은 나열된 수준을 보존하고 나머지는 other_level로 교체합니다. drop은 나열된 수준을 other_level로 교체하고 나머지는 그대로 유지합니다.\n</li>\n<li>\nother_level: \"기타\" 값에 사용되는 수준의 값. 항상 수준의 끝에 배치됩니다.\n</li>\n</ul>\n<b>예제</b></br>\n<code>\nx <- factor(rep(LETTERS[1:9], times = c(40, 10, 5, 27, 1, 1, 1, 1, 1)))<br/>\nfct_other(x, keep = c(\"A\", \"B\"))<br/>\nfct_other(x, drop = c(\"A\", \"B\"))<br/>\n</code> <br/>\n<b>패키지</b></br>\nforcats</br>\n<b>도움말</b></br>\nhelp(fct_other, package =forcats)\n    "
+  }
+}

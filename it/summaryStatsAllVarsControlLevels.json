@@ -1,0 +1,10 @@
+{
+  "title": "Statistiche riassuntive, livelli di controllo",
+  "navigation": "Statistiche riassuntive, tutte le variabili, livelli di controllo (Legacy)",
+  "levels": "Specifica il numero di livelli per cui visualizzare i conteggi delle variabili fattoriali. NOTA: I livelli meno frequenti delle variabili fattoriali sono riassunti nella categoria (Altro).",
+  "help": {
+    "title": "Statistiche riassuntive, livelli di controllo",
+    "r_help": "",
+    "body": "\n    <b>Descrizione</b></br>\n    Genera i riassunti per tutte le variabili del dataset consentendo di controllare il numero di livelli per cui vengono visualizzati i conteggi.</br>\n    NOTA: I CONTEGGI DELLE VARIABILI MENO FREQUENTI SONO RIASSUNTI NELLA CATEGORIA (ALTRO)</br>\n    Mostra il Minimo, il 1° Quartile, la Mediana, la Media, il 3° Quartile, il Massimo e il conteggio degli NAs per le variabili numeriche e di data.</br>\n    Per le variabili fattoriali visualizza i conteggi di ciascun livello.</br>\n    Per le variabili logiche visualizza i conteggi di VERO, FALSO e NAs</br>\n    L'aiuto R non è disponibile perché abbiamo scritto codice personalizzato utilizzando più funzioni R. Se hai bisogno di ispezionare il codice clicca sul pulsante \"<>\".</br>\n    "
+  }
+}

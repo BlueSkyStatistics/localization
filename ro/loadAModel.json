@@ -2,23 +2,23 @@
   "title": "Încărcați modele dintr-un fișier",
   "navigation": "Încărcați modele",
   "filterModels": "Filtrați modelele după clasă",
-  "modelSelection": "Selectați un model pentru a-l salva",
-  "importResp": "Selectați un fișier din care să încărcați modele",
+  "modelSelection": "Selectați un model de salvat",
+  "importResp": "Selectați un fișier din care să încărcați modelele",
   "label1": "Toate modelele din fișierul specificat vor fi încărcate în memorie. Notă: Dacă aveți modele existente cu același nume, acestea vor fi suprascrise.",
   "levelOfInterest": "Când variabila de prezis are 2 niveluri, specificați nivelul de interes. Matricea de confuzie și statisticile aferente sunt afișate cu nivelul de interes specificat ca referință.",
-  "label12": "Rezultatele testului: De îndată ce un model este selectat, vom efectua teste pentru a vedea dacă variabilele dependente specificate în model sunt \navailable în setul de date care urmează a fi evaluat. Rezultatele vor fi afișate aici.",
+  "label12": "Rezultatele testului: De îndată ce un model este selectat, vom rula teste pentru a vedea dacă variabilele dependente specificate în model sunt disponibile în setul de date care urmează să fie evaluat. Rezultatele vor fi afișate aici.",
   "label2": "Salvați valorile prezise și statisticile de suport.",
-  "label3": "Predicțiile și probabilitățile prezise, acolo unde este cazul, sunt stocate în setul de date evaluat ca noi variabile cu prefixul de mai jos.",
-  "label4": "**Pentru variabilele dependente cu 2 niveluri, al 2-lea nivel este tratat ca nivelul pozitiv. Consultați Date > Niveluri de factor > Reordonare manuală a nivelurilor pentru a schimba ordinea nivelurilor de factor și a reconstrui modelul.",
+  "label3": "Predicțiile și probabilitățile prezise, acolo unde este cazul, sunt stocate în setul de date care este evaluat ca noi variabile cu prefixul de mai jos.",
+  "label4": "**Pentru variabilele dependente cu 2 niveluri, al 2-lea nivel este tratat ca nivelul pozitiv. Consultați Date > Niveluri Factor > Reordonați Nivelurile Manual pentru a schimba ordinea nivelurilor factor și a reconstrui modelul.",
   "conflevel": "Salvați intervalele de încredere pentru valorile prezise individuale **(Valabil doar pentru modele liniare (clasa lm))",
-  "roctable": "Afișați tabelul ROC (**Numai pentru variabile dependente binare)",
+  "roctable": "Afișați tabelul ROC (**Doar pentru variabile dependente binare)",
   "colname": "Specificați prefixul numelui coloanei",
-  "label5": "**Bifarea casetei de mai sus va genera o penalizare de performanță pentru seturi mari de date.",
+  "label5": "**Bifarea casetei de selectare de mai sus va genera o penalizare de performanță pentru seturi de date mari.",
   "level": "Specificați nivelul de încredere",
   "confusioncheck": "Generați matricea de confuzie",
   "help": {
     "title": "Încărcați modele",
     "r_help": "help(load, package='base')",
-    "body": "\n<b>Descriere</b></br>\nObiectele model R salvate în fișierul selectat vor fi încărcate.</br>\nVom încărca TOATE obiectele R salvate în fișierul selectat. Dacă există obiecte cu același nume în mediul global R, acestea vor fi suprascrise.</br>\nVom afișa un mesaj care confirmă modelele construite cu aplicația BlueSky care au fost încărcate.</br>\nTrebuie să faceți clic pe butonul de execuție (butonul triunghiular orizontal) pentru a încărca obiectele R salvate în fișierul selectat. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nload(file =\"calea fișierului\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nfile: numele fișierului cu calea, obiectele de model selectate vor fi salvate în acest fișier RData\n</li>\n</ul>\n<b>Pachet</b></br>\nbază</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă help(load, package = 'base') în fereastra editorului R\n</br>\n                "
+    "body": "\n<b>Descriere</b></br>\nObiectele model R salvate în fișierul selectat vor fi încărcate.</br>\nVom încărca TOATE obiectele R salvate în fișierul selectat. Dacă obiecte cu același nume există în mediul global R, acestea vor fi suprascrise.</br>\nVom afișa un mesaj de confirmare pentru modelele construite cu aplicația BlueSky care au fost încărcate.</br>\nTrebuie să faceți clic pe butonul de execuție (butonul cu triunghi orizontal) pentru a încărca obiectele R salvate în fișierul selectat. \n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nload(file =\"calea fișierului\")\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nfile:numele fișierului cu calea, obiectele model selectate vor fi salvate în acest fișier RData\n</li>\n</ul>\n<b>Pachet</b></br>\nbase</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(load, package = 'base') în fereastra editorului R\n</br>\n                "
   }
 }

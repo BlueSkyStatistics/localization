@@ -8,9 +8,22 @@
   "biplot": "Afficher le biplot des clusters",
   "dendogram": "Tracer le dendrogramme des clusters",
   "labelForClusteringMethod": "Méthode de clustering",
+    "Methodlabel": "Méthode",
+    "MethodRadlabel1": "Méthode de Ward",
+    "MethodRadlabel2": "Lien Simple",
+    "MethodRadlabel3": "Lien Complet",
+    "MethodRadlabel4": "Lien Moyen",
+    "MethodRadlabel5": "Méthode de McQuitty",
+    "MethodRadlabel6": "Lien Médian",
+    "MethodRadlabel7": "Lien Centroïde",
+    "Metriclabel": "Métrique",
+    "MetricRadlabel1": "Euclidienne",
+    "MetricRadlabel2": "Euclidienne Carrée",
+    "MetricRadlabel3": "Manhattan (Bloc de Ville)",
+    "MetricRadlabel4": "Aucune Transformation",
   "help": {
     "title": "Cluster Hiérarchique",
-    "r_help": "aide(hclust, package ='stats')",
-    "body": "\n<b>Description</b></br>\nAnalyse de cluster hiérarchique sur un ensemble de dissimilarités et méthodes pour l'analyser.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvarsToCluster: Les variables à analyser \n</li>\n<li>\nmethod: la méthode d'agglomération à utiliser. Cela devrait être (une abréviation sans ambiguïté de) l'une de \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) ou \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: Le nombre de clusters désirés\n</li>\n<li>\nplotDendogram: Tracer un dendrogramme Vrai ou faux\n</li>\n<li>\nassignClusterToDataset: Enregistrer les affectations de clusters dans le jeu de données\n</li>\n<li>\nlabel: nom de la nouvelle variable qui stocke les affectations de clusters\n</li>\n<li>\nplotBiplot: tracer le biplot VRAI ou FAUX\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Aide</b></br>\naide(hclust, package ='stats')</br></br>\n<b>Description</b></br>\nplotDendrogram: Appelle la fonction de tracé pour tracer le dendrogramme des clusters\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmethod: voir ci-dessus\n</li>\n<li>\ndistance: voir ci-dessus\nplotBiplot: tracer le biplot VRAI ou FAUX\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Aide</b></br>\naide(plot)\n    "
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>Description</b></br>\nAnalyse de cluster hiérarchique sur un ensemble de dissimilarités et méthodes pour l'analyser.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nvarsToCluster: Les variables à analyser \n</li>\n<li>\nmethod: la méthode d'agglomération à utiliser. Cela devrait être (une abréviation sans ambiguïté de) l'un de \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) ou \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: Le nombre de clusters souhaités\n</li>\n<li>\nplotDendogram: Tracer un dendrogramme Vrai ou faux\n</li>\n<li>\nassignClusterToDataset: Enregistrer les attributions de clusters dans le jeu de données\n</li>\n<li>\nlabel: nom de la nouvelle variable qui stocke les attributions de clusters\n</li>\n<li>\nplotBiplot: tracer le Biplot VRAI ou FAUX\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Aide</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>Description</b></br>\nplotDendrogram: Appelle la fonction de tracé pour tracer le dendrogramme des clusters\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nmethod: voir ci-dessus\n</li>\n<li>\ndistance: voir ci-dessus\nplotBiplot: tracer le Biplot VRAI ou FAUX\n</li>\n</ul>\n<b>Package</b></br>\nBlueSky</br>\n<b>Aide</b></br>\nhelp(plot)\n    "
   }
 }

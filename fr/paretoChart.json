@@ -1,8 +1,8 @@
 {
   "title": "Diagramme de Pareto, Basique",
   "navigation": "Diagramme de Pareto, Basique",
-  "label1": "Deux options - Format long (par défaut) c'est-à-dire catégories et comptes dans des colonnes verticales et Format large c'est-à-dire catégories comme noms de colonnes et comptes comme ligne",
-  "selectLongRad": "Option 1 : Format long - choisissez catégories et comptes",
+  "label1": "Deux options - Format long (par défaut) c'est-à-dire catégories et comptes dans des colonnes verticales et Format large c'est-à-dire catégories comme noms de colonnes et comptes comme lignes",
+  "selectLongRad": "Option 1 : Format long - choisir catégories et comptes",
   "selectWideRad": "Option 2 : Format large - Les noms de colonnes seront utilisés comme catégories et la 1ère ligne (par défaut) sera utilisée comme comptes",
   "rownumForCounts": "Numéro de ligne (par défaut 1ère ligne) à utiliser pour les comptes",
   "mainTitle": "Titre du graphique",
@@ -16,6 +16,6 @@
   "help": {
     "title": "Diagramme de Pareto",
     "r_help": "help(pareto.chart, package = qcc)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction pareto.chart crée un tableau de statistiques et trace un diagramme de Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de données d'exemple appelé defects_frequency_pareto_chart.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction pareto.chart pour créer un tableau de statistiques et tracer un diagramme de Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé defects_frequency_pareto_chart.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

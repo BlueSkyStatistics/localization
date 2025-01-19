@@ -1,16 +1,16 @@
 {
-  "title": "Analiza funcției de pierdere",
-  "navigation": "Analiza funcției de pierdere",
+  "title": "Analiza Funcției de Pierdere",
+  "navigation": "Analiza Funcției de Pierdere",
   "lfaSubTitle": "Subtitlu pentru ieșirea grafică",
   "independent": "Coloană care conține datele pentru analiza funcției de pierdere",
   "lfaDelta": "Toleranța procesului",
   "lfaY0": "Obiectivul procesului",
   "lfaL0": "Costul calității slabe la limita de toleranță",
-  "lfaSize": "Dimensiunea producției, lotului etc. pentru a calcula pierderea totală într-un grup (interval, lot, perioadă, ...)",
+  "lfaSize": "Dimensiunea producției, lotului etc. pentru a calcula pierderea totală într-un grup (span, lot, perioadă, ...)",
   "lfaOutput": "Tipul de ieșire (valori posibile - text, grafic sau ambele)",
   "help": {
-    "title": "Analiza funcției de pierdere",
+    "title": "Analiza Funcției de Pierdere",
     "r_help": "help(ss.lfa, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția ss.lfa efectuează o analiză a funcției de pierdere a calității bazată pe funcția de pierdere Taguchi pentru caracteristici \"Nominal-the-Best\".\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit loss_function_table.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierelor\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția ss.lfa pentru a efectua o Analiză a Funcției de Pierdere a Calității bazată pe Funcția de Pierdere Taguchi pentru caracteristici \"Nominal-the-Best\".\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de probă numit loss_function_table.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

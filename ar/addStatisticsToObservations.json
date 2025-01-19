@@ -1,0 +1,23 @@
+{
+  "title": "إضافة إحصائيات النموذج إلى مجموعة البيانات",
+  "navigation": "إضافة إحصائيات إلى مجموعة البيانات",
+  "label1": "النماذج من الفئات التالية مدعومة (فئة R بين قوسين) - النماذج الخطية (lm)، نموذج الانحدار النسبي لكوكس (coxph)، النماذج الخطية المعممة (glm)، الانحدار متعدد الحدود المحلي (loess)، الانحدار الخطي القوي (rlm)، نموذج الانحدار البقاء المعلمي (survreg)، الانحدار الكمي (rq)",
+  "label2": "تمت إضافة الإحصائيات إلى مجموعة البيانات الحالية. سيتم استخدام اللاحقة الرقمية لضمان أسماء متغيرات فريدة. يجب أن تتطابق مجموعة البيانات الحالية مع مجموعة البيانات المستخدمة لبناء النموذج.",
+  "modelselector1": "اختر نموذجًا:",
+  "suff": "أدخل لاحقة لاسم متغير الإحصائيات",
+  "label3": "اختر الإحصائيات التي تريد إضافتها إلى الملاحظات في مجموعة البيانات",
+  "label4": "ملاحظة: تختلف الإحصائيات المدعومة حسب فئة النموذج. جميع الإحصائيات أدناه باستثناء .tau مدعومة من النماذج الخطية والنماذج الخطية المعممة، يدعم الانحدار الكمي .resid، .fitted، .tau. تدعم بقية فئات النماذج .fitted، .se.fit، .resid.",
+  "chk1": ".hat (قطر مصفوفة القبعة)",
+  "chk2": ".sigma (تقدير الانحراف المعياري المتبقي عند إسقاط الملاحظة المقابلة من النموذج)",
+  "chk3": ".cooksd (مسافة كوك)",
+  "chk4": ".fitted (القيم المتوقعة للنموذج)",
+  "chk5": ".se.fit (الأخطاء المعيارية للقيم المتوقعة)",
+  "chk6": ".resid (المتبقيات)",
+  "chk7": ".std.resid (المتبقيات المعيارية)",
+  "chk8": ".tau (التقدير الكمي) *مدعوم فقط للانحدار الكمي",
+  "help": {
+    "title": "إضافة إحصائيات النموذج إلى مجموعة البيانات",
+    "r_help": "help(augment, package='broom')",
+    "body": "\n                <b>الوصف</b></br>\nقم بتعزيز البيانات بمعلومات من كائن\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nx: كائن النموذج أو كائن R آخر يحتوي على معلومات لإضافتها إلى الملاحظات.\n</li>\n<li>\n...: معلمات إضافية لطريقة التعزيز.\n</li>\n</ul>\n<b>القيمة</b><br/>\nتيربل::تيربل() مع معلومات حول نقاط البيانات.</br>\n<b>الطرق</b><br/>\nانظر المواضيع التالية للمساعدة لمزيد من التفاصيل حول الطرق الفردية:<br/>\naugment.betareg: betareg<br/>\naugment.coxph: coxph<br/>\naugment.decomposed.ts: decomposed.ts<br/>\naugment.factanal: factanal<br/>\naugment.felm: felm<br/>\naugment.glm: glm<br/>\naugment.glmRob: glmRob<br/>\naugment.htest: htest<br/>\naugment.ivreg: ivreg<br/>\naugment.kmeans: kmeans<br/>\naugment.lm: lm<br/>\naugment.lmRob: lmRob<br/>\naugment.loess: loess<br/>\naugment.Mclust: Mclust<br/>\naugment.mjoint: mjoint<br/>\naugment.nlrq: nlrq<br/>\naugment.nls: nls<br/>\naugment.plm: plm<br/>\naugment.poLCA: poLCA<br/>\naugment.prcomp: prcomp<br/>\naugment.rlm: rlm<br/>\naugment.rq: rq<br/>\naugment.rqs: rqs<br/>\naugment.smooth.spline: smooth.spline<br/>\naugment.speedlm: speedlm<br/>\naugment.stl: stl<br/>\naugment.survreg: survreg<br/>\nlme4_tidiers: merMod<br/>\nnlme_tidiers: lme<br/>\nnull_tidiers: NULL<br/>\nordinal_tidiers: clm, polr<br/>\nrowwise_df_tidiers: rowwise_df, tbl_df<br/>\n<b>الحزمة</b></br>\nbroom</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي في محرر صيغة R help(augment, package=\"broom\")\n"
+  }
+}

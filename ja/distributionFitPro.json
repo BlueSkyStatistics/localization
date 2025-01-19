@@ -1,0 +1,29 @@
+{
+  "title": "非検閲データへの単変量分布の適合（P値付き）",
+  "navigation": "分布適合P値",
+  "variableSelcted": "分布を含む変数を選択してください",
+  "label1": "分布の適合テストは通常、完了するまでに長い時間がかかることに注意してください",
+  "label2": "さまざまな分布の適合テスト",
+  "normDistChk": "正規",
+  "weibullDistChk": "ワイブル",
+  "lnormDistChk": "対数正規",
+  "poissonDistChk": "ポアソン",
+  "expDistChk": "指数",
+  "gammaDistChk": "ガンマ",
+  "nbinomDistChk": "負の二項",
+  "geomDistChk": "幾何",
+  "betaDistChk": "ベータ",
+  "unifDistChk": "一様",
+  "logisDistChk": "ロジスティック",
+  "cauchyDistChk": "コーシー",
+  "method": "適合方法",
+  "gof": "'mge'適合方法が上で選択されている場合にのみ必要な適合度（gof）",
+  "shoChiqTestChk": "連続分布のカイ二乗テストの結果を表示",
+  "showCompareTablesOnlyChk": "分布比較テーブルとグラフのみを表示します。1つの分布のみを選択する場合は、これをオフにする必要があります",
+  "bootstrapIter": "ブートストラップ法はp値の精度を向上させるために使用されます。デフォルトの反復回数は600です。より多くの反復は精度を向上させる可能性がありますが、計算により多くの時間がかかります",
+  "help": {
+    "title": "非検閲データへの単変量分布の適合",
+    "r_help": "help(fitdist, package = fitdistrplus)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t最大尤度（mle）、モーメント一致（mme）、分位数一致（qme）または適合度推定の最大化（mge）による非検閲データへの単変量分布の適合。\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(fitdist, package = fitdistrplus)およびhelp(gofstat, package = fitdistrplus)を使用してください。\n\t\t\t\t<br/>\n\t\t\t\t以下に4つの可能な適合方法を説明します：\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tmethod=\"mle\"（デフォルト）の場合\n\t\t\t\t最大尤度推定は対数尤度を最大化することから成ります。最適な値を見つけるためにmledist内で数値最適化が行われます（詳細はmledistを参照）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tmethod=\"mme\"の場合\n\t\t\t\tモーメント一致推定は理論的および経験的モーメントを等しくすることから成ります。分布パラメータの推定値は、次の分布に対して閉形式の式によって計算されます：\"norm\", \"lnorm\", \"pois\", \"exp\", \"gamma\", \"nbinom\", \"geom\", \"beta\", \"unif\"および\"logis\"。それ以外の場合、理論的および経験的モーメントは、観測されたモーメントと理論的モーメントの間の二乗差の合計を最小化することによって数値的に一致します。この最後のケースでは、fitdistへの呼び出しにおいて追加の引数orderおよびmempが必要です（詳細はmmedistを参照）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tmethod = \"qme\"の場合\n\t\t\t\t分位数一致推定は理論的および経験的分位数を等しくすることから成ります。観測された分位数と理論的分位数の間の二乗差の合計を最小化するために、qmedist内で数値最適化が行われます。この方法を使用するには、分位数を一致させるための確率の数値ベクトルとして定義された追加の引数probsが必要です（詳細はqmedistを参照）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tmethod = \"mge\"の場合\n\t\t\t\t最大適合度推定は適合度統計量を最大化することから成ります。適合度距離を最小化するためにmgedist内で数値最適化が行われます。この方法を使用するには、選択された適合度距離のための追加の引数gofコーディングが必要です。古典的なCramer-von Mises距離（\"CvM\"）、古典的なKolmogorov-Smirnov距離（\"KS\"）、古典的なAnderson-Darling距離（\"AD\"）を使用することができ、これは分布の尾により多くの重みを与えます。また、Luceno（2006）によって提案されたこの最後の距離の変種の1つを使用することもできます（詳細はmgedistを参照）。この方法は離散分布には適していません。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tmethod = \"mse\"の場合\n\t\t\t\t最大適合度推定は平均対数間隔を最大化することから成ります。最適化はmsedist内でoptimを介して行われます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t収束は\n\t\t\t\toptim/constrOptimの収束の整数コードであり、以下のように定義されるか、ユーザーが提供する最適化関数で定義されます。0は成功した収束を示します。1はoptimの反復制限に達したことを示します。10はNealder-Mead単体の退化を示します。100はoptimが内部エラーに遭遇したことを示します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t適合度統計はgofstat()によって計算されます。カイ二乗統計は、引数chisqbreaksによって定義されたセルまたはデータから自動的に定義されたセルを使用して計算され、各セルあたりのおおよその観測数に達するように、引数meancountにほぼ等しく、またはいくつかの結びつきがある場合はわずかに多くなります。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t連続分布の場合、Kolmogorov-Smirnov、Cramer-von MisesおよびAnderson-Darling統計も計算されます（Stephens（1986）によって定義されます）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t重要な統計は、連続分布のCramer-von Mises、Anderson-DarlingおよびKolmogorov統計、および離散分布（\"binom\", \"nbinom\", \"geom\", \"hyper\"および\"pois\"）のカイ二乗統計です。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">分布適合の良い概要については、https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-bestを参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">分布適合の良い概要については、https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-bestを参照してください</a>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

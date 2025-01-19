@@ -1,0 +1,25 @@
+{
+  "label1": "Per confrontare le pendenze del modello di regressione quantile, vedere \"Valutazione del modello > Confronta > Modelli di regressione quantile\"",
+  "title": "Regressione Quantile",
+  "navigation": "Quantile",
+  "modelname": "Inserisci il nome del modello",
+  "depvarlabel": "Variabile Dipendente",
+  "quantilelabel": "Quantile (0-1)",
+  "estgrplabel": "Metodo di Stima",
+  "brlabel": "Barrodale e Roberts",
+  "fnlabel": "Frisch-Newton",
+  "pfnlabel": "Frisch-Newton, preprocessing",
+  "sfnlabel": "Frisch-Newton, sparso",
+  "stderrgrplabel": "Metodo dell'Errore Standard",
+  "ranklabel": "Classifica",
+  "iidlabel": "IID",
+  "nidlabel": "NID",
+  "kernallabel": "Kernale",
+  "bootstraplabel": "Bootstrap",
+  "bootsamplabel": "Campioni Bootstrap",
+  "help": {
+    "title": "Regressione Quantile",
+    "r_help": "help(rq, package = 'quantreg')",
+    "body": "\nQuesto adatta un modello di regressione quantile, che modella un quantile desiderato (cioè percentile) della variabile di risultato. Un quantile tipico da modellare è 0.5, cioè la mediana.  \nUn riepilogo del modello e le stime dei parametri con intervalli di confidenza al 95% sono forniti.\n<br/><br/>\n<b>Inserisci Nome Modello:</b>  il nome desiderato del modello\n<br/><br/>\n<b>Variabile Dipendente:</b>  Specificare la variabile dipendente per il modello. Il quantile desiderato di questa variabile sarà modellato. Questo deve essere numerico.\n<br/><br/>\n<b>Costruttore di Formula:</b>  Specificare i termini del modello utilizzando la notazione della formula. Sono consentite variabili numeriche, fattoriali, fattoriali ordinati e caratteri. Le variabili carattere saranno convertite in fattori.\n<br/><br/>\n<b>Quantile (0-1):</b>  Specificare il quantile desiderato da modellare per la variabile dipendente. 0.5 (la mediana) è il valore predefinito ed è una quantità tipica.\n<br/><br/>\n<b>Metodo di Stima:</b>  Specificare il metodo di stima per i parametri del modello. Il metodo Barrodale e Roberts è il valore predefinito ed è efficiente per modelli con \nmigliaia di osservazioni. Il metodo Frisch-Newton e l'approccio Frisch-Newton, preprocessing potrebbero essere vantaggiosi per problemi grandi e molto grandi, rispettivamente, \nsoprattutto nei casi con un numero ridotto di parametri stimati. Per dimensioni del campione grandi con un numero elevato di parametri, potrebbe essere necessario il metodo Frisch-Newton, sparso.  \nVedi i riferimenti nell'aiuto di R per dettagli.\n<br/><br/>\n<b>Metodo dell'Errore Standard:</b>  Specificare il metodo utilizzato per stimare gli errori standard e gli intervalli di confidenza. Il metodo Rank fornisce solo intervalli di confidenza, può essere lento \nad eseguire per dimensioni del campione più grandi (n > 1000) ed è basato sull'inversione di un test di rango. Il metodo IID assume che gli errori siano indipendenti e identicamente distribuiti (iid). Il metodo NID \npresume linearità locale nel quantile e calcola una stima sandwich utilizzando una stima locale di scarsità. Il metodo Kernal utilizza una stima kernale del sandwich.  \nIl metodo Bootstrap utilizza un approccio di bootstrap di ri-campionamento per stimare gli errori standard. Vedi i riferimenti nell'aiuto di R per dettagli.\n<br/><br/>\n<b>Campioni Bootstrap:</b>  Numero desiderato di campioni bootstrap per l'approccio dell'errore standard bootstrap. Il valore predefinito è 2000 campioni.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> quantreg, broom\n\t\t"
+  }
+}

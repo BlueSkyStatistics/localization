@@ -1,0 +1,27 @@
+{
+  "title": "Box Plot",
+  "dropna": "Remover valores ausentes",
+  "navigation": "Box Plot",
+  "x": "Variável X, especifique uma variável de fator",
+  "y": "Variável(is) Y, especifique uma variável numérica(s)",
+  "fill": "Preenchimento, especifique uma variável de fator",
+  "dataPoints": "Selecione uma opção para plotar pontos de dados",
+  "alpha": "Opacidade (0-1)",
+  "flip": "Inverter eixo",
+  "notch": "Entalhe",
+  "outliers": "Mostrar Outliers (Em Vermelho)",
+  "specify_a_title": "Digite um título",
+  "x_title": "Rótulo do Eixo X",
+  "y_title": "Rótulo do Eixo Y",
+  "barcolor": "Selecione uma cor para as linhas ao redor das caixas (Após a seleção da cor, clique fora do controle para aplicar)",
+  "Facetrow": "Linha Facet",
+  "Facetcolumn": "Coluna Facet",
+  "Facetwrap": "Envolver Facet",
+  "Facetscale": "Escala Facet",
+  "facets_lbl": "Facets",
+  "help": {
+    "title": "Box Plot",
+    "r_help": "help(geom_boxplot, package=ggplot2)",
+    "body": "\n        <b>Descrição</b></br>\n        Em estatísticas descritivas, um box plot ou boxplot é uma maneira conveniente de representar graficamente grupos de dados numéricos através de seus quartis. Os box plots também podem ter linhas que se estendem verticalmente das caixas (bigodes) indicando a variabilidade fora dos quartis superior e inferior, daí os termos box-and-whisker plot e box-and-whisker diagram. Outliers podem ser plotados como pontos individuais. Box e whisker plots são uniformes em seu uso da caixa: a parte inferior e a parte superior da caixa são sempre o primeiro e o terceiro quartis, e a faixa dentro da caixa é sempre o segundo quartil (a mediana). O bigode superior se estende do eixo ao valor mais alto que está dentro de 1.5 * IQR do eixo, onde IQR é a faixa interquartil, ou distância entre o primeiro e o terceiro quartis. O bigode inferior se estende do eixo ao valor mais baixo dentro de 1.5 * IQR do eixo. Dados além do final dos bigodes são outliers e plotados como pontos (como especificado por Tukey).​</br>\n        Facets podem ser criados opcionalmente especificando uma variável de fator. Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y​</br>\n        Quando você seleciona a opção para plotar os pontos de dados, fazemos isso usando geom_dotplot</br>\n        Por padrão, outliers são mostrados com pontos pretos, quando você seleciona a opção para mostrar outliers (Em Vermelho) através da caixa de seleção, os outliers se tornam mais proeminentes.\n        <br/>\n        <b>Uso</b>\n        <br/>\n        <code> \n        ggplot(data =Dataset,aes(x = var1,y = var2,fill = var3)) + geom_boxplot()  + \n        geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.1)+ coord_flip()+ labs(x = \"var1\",y = \"var2\",fill = \"var3\")   +facet_grid(var4~.)​\n        </code> <br/>\n        <b>Argumentos</b><br/>\n        <ul>\n        <li>\n        data: O conjunto de dados padrão​\n        </li>\n        <li>\n        x: Uma variável fator/categórica que define o agrupamento da variável y​\n        </li>\n        <li>\n        y: Uma variável numérica para a qual o boxplot é calculado​\n        </li>\n        <li>\n        fill: Uma variável fator/categórica opcional para agrupar ainda mais os grupos existentes. Cada subgrupo será mostrado em uma cor distinta.​\n        </li>\n        <li>\n        aes():    Gera mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n        </li>\n        <li>\n        geom_boxplot():Cria o boxplot. Os \"eixos\" superior e inferior correspondem ao primeiro e ao terceiro quartis (o 25º e o 75º percentis).​\n        </li>\n        <li>\n        geom_dotplot: Plota os pontos de dados\n        </li>\n        <li>\n        Labs(): Muda os rótulos dos eixos e os títulos da legenda (Isso é opcional)​\n        </li>\n        <li>\n        facet_grid(): Organiza os painéis em uma grade (Isso é opcional)​\n        </li>\n        <li>\n        theme_calc(): Especifica o tema da calculadora (Isso é opcional)​\n        </li>\n        <li>\n        coord_flip(): Inverte o eixo (Isso é opcional)​\n        </li>\n        <li>\n        notch: Box plots com entalhe aplicam um \"entalhe\" ou estreitamento da caixa ao redor da mediana. Os entalhes são úteis para oferecer um guia aproximado à significância da diferença das medianas; se os entalhes de duas caixas não se sobrepõem, isso oferece evidência de uma diferença estatisticamente significativa entre as medianas. Em um box plot com entalhe, os entalhes se estendem por 1.58 * IQR / sqrt(n)\n        </li>\n        </ul>\n        <b>Pacote</b></br>\n        ggplot2;ggthemes;stringr</br>\n        <b>Ajuda</b></br>\n        help(geom_boxplot, package=ggplot2)</br>\n        Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode inserir help(geom_boxplot), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip), help (geom_dotplot)\n        "
+  }
+}

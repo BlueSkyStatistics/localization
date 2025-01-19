@@ -1,5 +1,5 @@
 {
-  "title": "Gage R&R - Analyse du Système de Mesure, Basique",
+  "title": "Gage R&R - Analyse du système de mesure, Basique",
   "navigation": "Gage R&R, Basique",
   "mainTitle": "Titre principal pour la sortie graphique",
   "subTitle": "Sous-titre pour la sortie graphique (par exemple, le nom du projet SixSigma)",
@@ -13,8 +13,8 @@
   "alphaLim": "Alpha - Limite à prendre en compte pour l'interaction",
   "errorTerm": "Quel terme du modèle doit être utilisé comme terme d'erreur (pour le modèle avec interaction)",
   "help": {
-    "title": "Gage R&R - Analyse du Système de Mesure",
+    "title": "Gage R&R - Analyse du système de mesure",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tÀ partir du jeu de données d'exemple, sélectionnez la variable de diamètre comme Variable Mesurée, Pistonring comme Variable de Pièce et Opérateur comme Évaluateur\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tà partir du jeu de données d'exemple, sélectionnez la variable de diamètre comme variable mesurée, Pistonring comme variable de pièce et Opérateur comme évaluateur\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

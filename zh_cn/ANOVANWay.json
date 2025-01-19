@@ -15,21 +15,21 @@
   "adjust": "调整 p 值的方法",
   "compactly": "紧凑地比较均值",
   "alpha": "输入 alpha 值：",
-  "label2": "图",
-  "label4": "图",
+  "label2": "图表",
+  "label4": "图表",
   "diag": "诊断图",
   "plot1": "绘制所有比较",
-  "horizontalAxis": "分开的线",
+  "horizontalAxis": "单独的线条",
   "separateLines": "水平轴",
-  "separatePlots": "分开的图",
+  "separatePlots": "单独的图表",
   "labelSaveResiduals": "将模型统计信息保存到数据集中",
-  "residuals": "残差以变量名 residuals 保存，带有可选前缀",
-  "stuResiduals": "学生化残差以变量名 resStudentized 保存，带有可选前缀",
-  "fittedVals": "拟合值以变量名 fitted 保存，带有可选前缀",
-  "prefixForSavedStatistics": "可选输入保存值的前缀，前缀附加到上述变量名",
+  "residuals": "残差以变量名 residuals 保存，并可选择性添加前缀",
+  "stuResiduals": "学生化残差以变量名 resStudentized 保存，并可选择性添加前缀",
+  "fittedVals": "拟合值以变量名 fitted 保存，并可选择性添加前缀",
+  "prefixForSavedStatistics": "可选择性输入上述保存值的前缀，前缀将附加到上述变量名",
   "help": {
     "title": "方差分析，N 方式",
     "r_help": "help(aov, package='stats')",
-    "body": "\n注意：</br>\n1. 要获取所有边际均值和事后检验，您需要构建一个包含主要效应和模型中所有交互项的公式。</br> \n因此，如果您试图分析三维交互，您需要指定</br>\nA + B + C + A:B + B:C + A:C + A:B:C</br>\n如果您指定 A*B*C，您将获得完整的方差分析表，您将不会获得所有交互的估计边际均值和事后检验。</br>\n2. 估计的边际均值和事后检验是为所有主要效应和指定的交互计算的</br>\n<b>描述</b></br>\n拟合方差分析模型，显示 I、II、III 型平方和，显示边际均值和对比（使用边际均值）。</br> \n可选地执行莱文检验以检查组间方差的齐性并绘制图形。</br>\n莱文检验针对所有主要效应进行</br></br>\n使用 aov 函数构建和总结 anova 模型，使用指定的公式</br>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(aov, package='stats')</br></br>\n显示带有 I/II/III 型平方和的 Anova 表</br>\n使用 car 包中的 Anova 函数计算 II、III 型平方和，使用 stats 包中的 anova 函数计算 I 型。当计算 III 型平方和时，为因子变量设置适当的对比（contr.sum）。</br>\n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\nhelp(Anova, package='car')</br></br>\n显示估计的边际均值</br>\n<b>包</b></br>\nemmeans</br>\n<b>帮助</b></br>\nhelp(emmeans, package='car')</br></br>\n计算莱文检验以检查组间方差的齐性。 \n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\nhelp(leveneTest, package='car')\n"
+    "body": "\n注意：</br>\n1. 要获取所有边际均值和事后检验，您需要构建一个包含主要效应和模型中所有交互项的公式。</br> \n因此，如果您尝试分析 3 维交互，您需要指定</br>\nA + B + C + A:B + B:C + A:C + A:B:C</br>\n如果您指定 A*B*C，您将获得完整的方差分析表，但不会获得所有交互的估计边际均值和事后检验。</br>\n2. 估计的边际均值和事后检验是针对所有主要效应和指定的交互项计算的。</br>\n<b>描述</b></br>\n拟合方差分析模型，显示 I、II、III 型平方和，显示边际均值和对比（使用边际均值）。</br> \n可选择性地执行莱文检验以检查组间方差的齐性并绘制图形。</br>\n莱文检验针对所有主要效应进行。</br></br>\n使用 aov 函数构建并总结 anova 模型，使用指定的公式。</br>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(aov, package='stats')</br></br>\n显示带有 I/II/III 型平方和的 Anova 表。</br>\n使用 car 包中的 Anova 函数计算 II、III 型平方和，使用 stats 包中的 anova 函数计算 I 型平方和。在计算 III 型平方和时，为因子变量设置适当的对比（contr.sum）。</br>\n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\nhelp(Anova, package='car')</br></br>\n显示估计的边际均值。</br>\n<b>包</b></br>\nemmeans</br>\n<b>帮助</b></br>\nhelp(emmeans, package='car')</br></br>\n计算莱文检验以检查组间方差的齐性。 \n<b>包</b></br>\ncar</br>\n<b>帮助</b></br>\nhelp(leveneTest, package='car')\n"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "title": "Gráfico de Frequência",
+  "navigation": "Frequências",
+  "x": "Eixo X",
+  "y": "Cor, especifique uma variável de fator",
+  "bins": "Número de bins (aplica-se apenas quando a variável no eixo X é uma variável de fator)",
+  "barcolor": "Cor da Linha (Após a seleção da cor, clique fora do controle para aplicar)",
+  "tab1": "Numérico",
+  "tab2": "Fator",
+  "alpha": "Opacidade (0-1)",
+  "flip": "Inverter Eixo",
+  "specify_a_title": "Digite um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Enrolar Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráfico de Frequência",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>Descrição</b></br>\n            Visualize a distribuição de uma única variável contínua dividindo o eixo x em bins e contando o número de observações em cada bin. Histogramas (geom_histogram()) exibem as contagens com barras; polígonos de frequência (geom_freqpoly()) exibem as contagens com linhas. Polígonos de frequência são mais adequados quando você deseja comparar a distribuição entre os níveis de uma variável categórica. </br>\n            NOTA: Ignoramos a cor selecionada se houver uma variável de agrupamento/cor especificada, pois uma cor diferente é selecionada para cada nível da variável de agrupamento.</br>\n            Quando você especifica várias variáveis x, criamos um gráfico de Frequência separado para cada variável x.</br>\n            <b>Uso</b>\n            <br/>\n            <code>\n            #Você pode criar um gráfico de Frequência para uma ou mais variáveis numéricas. O número padrão de bins é definido como 30.</br>\n            #O exemplo abaixo usa o conjunto de dados mtcars no pacote datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #Você pode criar um gráfico de Frequência para uma ou mais variáveis numéricas e agrupar o gráfico por uma variável de fator. O número padrão de bins é definido como 30.</br>\n            #O exemplo abaixo usa o conjunto de dados mtcars no pacote datasets<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #Você pode criar um gráfico de frequência/gráfico de linha agrupando uma variável de fator por outra</br>\n            #Você precisa clicar com o botão direito em cyl e am na visualização da variável para torná-la um fator</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão​\n            </li>\n            <li>\n            aes(): Gere mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n            </li>\n            <li>\n            group:  Uma variável de fator/categórica opcional. \n            </li>\n            <li>\n            geom_freqpoly(): Cria o gráfico de frequência\n            </li>\n            <li>\n            bins: Número de bins.\n            </li>\n            <li>\n            Labs(): Altera rótulos de eixos e títulos de legenda (isto é opcional)​\n            </li>\n            <li>\n            facet_grid(): Organiza painéis em uma grade (isto é opcional)​\n            </li>\n            <li>\n            theme_calc(): Especifica o tema da calculadora (isto é opcional)​\n            </li>\n            <li>\n            coord_flip(): Inverte o eixo (isto é opcional)​\n            </li>\n            <li>\n            alpha: Controla a opacidade, aceita valores entre 0-1. 1 significa sem opacidade.\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Ajuda</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​           \n      "
+  }
+}

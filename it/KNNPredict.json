@@ -1,0 +1,26 @@
+{
+  "title": "Fai previsioni con KNN",
+  "navigation": "Prevedi con KNN",
+  "dataset_var": "Dataset aperti",
+  "header": "KNN è un classificatore pigro, non crea un modello adattato che può essere utilizzato per prevedere in seguito. Si adatta e fa previsioni contemporaneamente. Devi seguire i passaggi qui sotto per fare previsioni/valutare.",
+  "NOTE1": "IL DATASET ATTIVO DEVE ESSERE IL DATASET SU CUI VUOI COSTRUIRE UN MODELLO E NON IL DATASET CHE VUOI VALUTARE",
+  "step1": "Passo 1: Come al solito, devi selezionare il dataset di addestramento nel Datagrid prima di aprire questa finestra di dialogo.",
+  "step2": "Passo 2: Seleziona la variabile dipendente nel dataset di addestramento utilizzato per adattare il modello.",
+  "step3": "Passo 3: Specifica le variabili indipendenti nel dataset di addestramento.",
+  "step4": "Passo 4: Specifica il numero di vicini da utilizzare per costruire il modello.",
+  "step5": "Passo 5: Inserisci un prefisso per la nuova variabile contenente le previsioni.",
+  "step6": "Passo 6: Specifica il dataset a cui aggiungere le previsioni. Deve contenere le stesse variabili indipendenti utilizzate per addestrare il modello.",
+  "dependentvar": "Variabile dipendente (dal dataset di addestramento)",
+  "independentvars": "Variabile(i) indipendente(i) (dal dataset di addestramento)",
+  "Seed": "Imposta Seed",
+  "datasetToScore": "Dataset da valutare/prevedere",
+  "Group2": "Parametri di regolazione per KNN",
+  "noneighbhors": "N. di vicini (Quando non viene specificato un valore, il valore predefinito è impostato sulla radice quadrata del numero di osservazioni nel dataset)",
+  "testDatasetName": "Inserisci il nome del dataset per fare previsioni",
+  "predictedValues": "Inserisci il prefisso della variabile per i valori previsti. Una nuova variabile viene creata aggiungendo il prefisso al nome della variabile dipendente.",
+  "help": {
+    "title": "K Nearest Neighbors",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Descrizione</b></br>\nClassificazione k-Nearest Neighbor\n<br/>\n<b>Nota: </b></br>\nVedi il testo di aiuto nella finestra di dialogo\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ntrain: Questo è il dataset sorgente (attivo) utilizzato per creare un modello adattato.\n</li>\n<li>\ntest: Questo è il dataset in cui verranno salvati i valori previsti quando il prefisso specificato. Una nuova variabile viene creata aggiungendo il prefisso al nome della variabile dipendente specificata dal dataset sorgente.\n</li>\n<li>\ncl: fattore delle classificazioni vere dal dataset utilizzato per adattare il modello\n</li>\n<li>\nk: numero di vicini considerati.\n</li>\n<li>\nl: voto minimo per una decisione definitiva, altrimenti dubbio. (Più precisamente, sono consentiti meno di k-l voti dissenzienti, anche se k è aumentato da pareggi.)\n</li>\n<li>\nprob: Se questo è vero, la proporzione dei voti per la classe vincente viene restituita come attributo prob.\n</li>\n<li>\nuse.all: controlla la gestione dei pareggi. Se vero, tutte le distanze uguali alla k-esima più grande sono incluse. Se falso, viene scelta una selezione casuale di distanze uguali alla k-esima per utilizzare esattamente k vicini.\n</li>\n</ul>\n<b>Valore</b></br>\nFattore di classificazioni del set di test. il dubbio verrà restituito come NA.</br>\n<b>Pacchetto</b></br>\ncaret;class</br>\n<b>Aiuto</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

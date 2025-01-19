@@ -1,0 +1,33 @@
+{
+  "title": "Otomatik ARIMA",
+  "navigation": "Otomatik ARIMA",
+  "destination": "Tahmin edilecek değişken",
+  "firstObservation": "İlk gözlem zamanı örn.1: 1961,1 için Ocak 1961 girin, örn.2: 1961,3 için 1961'in 3. Çeyreği girin, örn.3: sürekli bir seri için 1 girin",
+  "frequency": "Zaman birimi başına gözlem sayısı örn.1: bir yılın her ayı için bir gözlem için 12 girin, örn. 2: bir çeyrek için bir gözlem için 4 girin, örn. 3: sürekli bir seri için 1 girin.",
+  "criteria": "Model kriterleri",
+  "label1": "Grafikler",
+  "plotSeries": "Seri grafiği",
+  "yaxisLabel": "Y ekseni etiketi",
+  "mainTitle": "Ana başlık",
+  "label2": "Uygun değerler için seçenekler",
+  "saveFitted": "Uygun değerleri kaydet",
+  "fittedValsDatasetName": "Uygun değerleri saklamak için veri seti adını belirtin",
+  "oriVsFitted": "Orijinal ile Uygun olanı karşılaştır",
+  "plotResiduals": "Artıkları çiz",
+  "label3": "Modeli kullanarak tahmin et",
+  "predict": "Modeli kullanarak tahmin yap",
+  "periodToPredict": "Tahmin edilecek aralık sayısını belirtin",
+  "confInterval": "Yüzde cinsinden güven aralığını belirtin örn. 95 için %95",
+  "savePredictedVals": "Tahmin edilen değerleri kaydet",
+  "predictedValsDatasetName": "Tahmin edilen değerleri saklamak için veri seti adını belirtin",
+  "plotPredicted": "Tahmin edilen değerleri çiz",
+  "correlogram": "Korelasyon grafiği oluştur",
+  "maxlag": "Maksimum gecikmeyi girin",
+  "Boxtest": "Ljung-Box testi",
+  "advanced_lbl": "Gelişmiş",
+  "help": {
+    "title": "Otomatik ARIMA",
+    "r_help": "help(auto.arima, package=forecast)",
+    "body": "\n            <b>Açıklama</b></br>\nEn iyi ARIMA modelini AIC, AICc veya BIC değerine göre döndürür. Fonksiyon, sağlanan sıra kısıtlamaları içinde olası model araması yapar. İçsel olarak forecast paketinde auto.arima çağrılır\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyRes <-BSkyAutoArima (vars, start, frequency, main , ylab, ic, plotSeries=TRUE, plotResiduals=FALSE, predict=FALSE, savePredictedVals=FALSE, plotPredictedValues=FALSE, correlogram=FALSE, dataset)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: otomatik arima modeli oluşturmak için seçilen değişkenler.\n</li>\n<li>\nstart: İlk gözlem zamanı yıl, ay veya yıl, çeyrek formatında girilmelidir örn. (verileriniz aylara göre düzenlenmişse 1992,1 için Ocak 1992 veya verileriniz çeyrekler halinde düzenlenmişse 1992,1 1992'nin ilk çeyreğini ifade eder.\n</li>\n<li>\nfrequency: Birim zamanda gözlem sayısı. Örnek: aylık için yılda 12 gözlem vardır. Çeyrek için yılda 4 gözlem vardır.\n</li>\n<li>\nic: Model seçiminde kullanılacak bilgi kriteri. \"aic\", \"aicc\" veya \"bic\"'den biri olmalıdır.\n</li>\n<li>\nplotSeries: eğer DOĞRU ise bir zaman serisi grafiği de oluşturulacaktır.\n</li>\n<li>\nplotResiduals: eğer DOĞRU ise artıkları da çizilecektir.\n</li>\n<li>\npredict: eğer DOĞRU ise tahmin edilen değerler de oluşturulacaktır.\n</li>\n<li>\nsavePredictedVals: tahmin edilen değerler kaydedilecektir.\n</li>\n<li>\nPlotPredictedValues: tahmin edilen değerler de çizilecektir.\n</li>\n<li>\ncorrelogram: eğer DOĞRU ise bir korelasyon grafiği oluşturulacaktır.\n</li>\n<li>\nmain: grafiğin ana başlığı\n</li>\n<li>\nylab: y ekseni için başlık\n</li>\n<li>\ndataset: vars'ın alındığı veri setinin adı.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nVarsayılan argümanlar, birçok zaman serisi için modellerin hızlı tahmini için tasarlanmıştır. Eğer sadece bir zaman serisini analiz ediyorsanız ve biraz daha zaman ayırabiliyorsanız, stepwise=FALSE ve approximation=FALSE ayarlamanız önerilir.</br>\nAdım adım seçim, özellikle mevsimsel veriler için yavaş olabilir. Hyndman & Khandakar (2008) tarafından özetlenen adım adım algoritması kullanılmaktadır, ancak mevsimsel farklılıkları seçmek için varsayılan yöntem artık mevsimsel gücün bir tahminine dayanmaktadır (Wang, Smith & Hyndman, 2006) ve Canova-Hansen testine dayanmamaktadır. Ayrıca, Hyndman ve Khandakar (2008) tarafından tanımlanan algoritmada bazı diğer küçük değişiklikler de bulunmaktadır.</br>\n<b>Değer</b><br/>\n\"Arima\" sınıfında bir liste ile bileşenler:<br/>\ncoef: coef yöntemi ile çıkarılabilen AR, MA ve regresyon katsayılarının bir vektörü.<br/>\nsigma2: yeniliklerin varyansının MLE'si.<br/>\nvar.coef: coef'in tahmin edilen varyans matrisidir, vcov yöntemi ile çıkarılabilir.<br/>\nloglik: maksimum log-olasılık (farklılaştırılmış veriler için), veya kullanılan yaklaşım.<br/>\narma: spesifikasyonun kompakt bir biçimi, AR, MA, mevsimsel AR ve mevsimsel MA katsayılarının sayısını, artı periyodu ve mevsimsel ve mevsimsel olmayan farklılıkların sayısını veren bir vektördür.<br/>\naic: log-olasılığa karşılık gelen AIC değeri. Sadece method = \"ML\" uyumları için geçerlidir.<br/>\nresiduals: uygun yenilikler.<br/>\nseries: x serisinin adı.<br/>\ncode: optim tarafından döndürülen yakınsama değeri.<br/>\nn.cond\t: uyumda kullanılmayan başlangıç gözlemlerinin sayısı.<br/>\nnobs: uyum için \"kullanılan\" gözlem sayısı, nobs() ile de çıkarılabilir ve BIC tarafından kullanılır.<br/>\nmodel: uyumda kullanılan Kalman Filtresi'ni temsil eden bir liste. KalmanLike'e bakın.<br/>\n<b>Paket</b></br>\nforecast</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(auto.arima, package=forecast)\n\t\t\t"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Alt Küme Veri Seti",
+  "navigation": "Alt Küme",
+  "label0": "Sonuçları yeni bir veri setinde kaydetmeyi veya mevcut veri setini üzerine yazmayı seçebilirsiniz",
+  "label1": "Seçenekler",
+  "New": "Sonuçları yeni bir veri setine kaydet",
+  "newdatasetname": "Bir veri seti adı girin",
+  "Existing": "Mevcut veri setini üzerine yaz",
+  "Output": "Sonuçları çıktı penceresinde göster",
+  "distinct": "Ayrı durumları seç",
+  "chkbox2": "Kullanılmayan faktör seviyelerini kaldır",
+  "subsetvars": "Alt küme veri setine dahil edilecek değişkenleri seçin",
+  "label12": "\n\nAlt kümeleme kriteri her bir satıra uygulanır, aşağıdaki örneklere bakın. \n1: var 1'in boş olmadığı ve var 2'nin boş olduğu satırları seçin belirtin:\n!is.na(var1) & is.na(var2) \n2: var1 > 30 ve var 2'nin Erkek olduğu satırları seçin belirtin:\nvar1>30 & var2=='Erkek' \n3: Karmaşık ve/veya kriterleri belirtin:\n(var1 !=10 & var2>20) | var3==40 \n4: Desen eşleşmesi (xxx) veya tam eşleşme (abc) belirtin:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Bir alt dizeyi konuma göre eşleştirin belirtin: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Alt kümeleme kriterini girin.",
+  "help": {
+    "title": "Alt Küme Veri Seti",
+    "r_help": "help(select, package=dplyr)",
+    "body": "\n            <b>Açıklama</b></br>\nAlt küme veri setleri/veri çerçeveleri. Veri çerçevesinin/veri setinin bir alt kümesini döndürür. Küçük veri setinde istediğiniz sütunları/değişkenleri belirtebilirsiniz. Ayrıca, veri çerçevesinin her bir satırına uygulanacak seçim kriterlerini de belirtebilirsiniz.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nsubset(x, subset, select)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: alt kümeleme yapılacak nesne.\n</li>\n<li>\nsubset: tutulacak öğeleri veya satırları belirten mantıksal ifade: eksik değerler yanlış olarak alınır.\n</li>\n<li>\nselect: bir veri çerçevesinden seçilecek sütunları belirten ifade.\n</li>\n</ul>\n<b>Değer</b><br/>\nAlt kümeleme yapılmış bir veri seti döndürür<br/>\n<b>Paket</b></br>\ndplyr<br/>  \n<b>Yardım</b></br>\nhelp(select, package=dplyr)\n"
+  }
+}

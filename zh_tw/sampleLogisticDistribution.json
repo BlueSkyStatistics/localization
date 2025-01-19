@@ -1,19 +1,19 @@
 {
-  "title": "邏輯分布示例",
-  "navigation": "邏輯分布示例",
+  "title": "從邏輯斯分佈取樣",
+  "navigation": "從邏輯斯分佈取樣",
   "entrdsname": "輸入數據集名稱",
   "location": "位置",
-  "scale": "規模",
+  "scale": "比例",
   "lblnoofsamples": "樣本數量（行）",
   "lblnoofobsv": "觀察數量（列）",
-  "lblseed": "種子",
+  "lblseed": "隨機種子",
   "lblAddtoDS": "添加到數據集",
   "chklbl1": "樣本均值",
   "chklbl2": "樣本總和",
   "chklbl3": "樣本標準差",
   "help": {
-    "title": "邏輯分布示例",
-    "r_help": "幫助(rlogis, 套件=stats)",
-    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            具有位置和規模參數的邏輯分布的密度、分布函數、分位數函數和隨機生成。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dlogis(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                plogis(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果length(n) > 1，則長度被視為所需數量。</li>\n                \n                \n                <li>location, scale : 位置和規模參數。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則機率p以log(p)給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（預設），則機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            如果省略位置或規模，則它們分別假定為預設值0和1。\n            位置=m和規模=s的邏輯分布具有分布函數\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            和密度\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            這是一種長尾分布，均值為m，方差為π^2 /3 s^2。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dlogis給出密度，plogis給出分布函數，qlogis給出分位數函數，rlogis生成隨機偏差。\n            <br/>\n            結果的長度由n決定，對於rlogis，結果的長度是其他函數的數值參數長度的最大值。\n            <br/>\n            除n以外的數值參數被回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            qlogis(p)與著名的'logit'函數相同，logit(p) = log(p/(1-p))，因此plogis(x)被稱為'inverse logit'。\n            <br/>\n            分布函數是一個縮放的雙曲正切，plogis(x) == (1+ tanh(x/2))/2，在神經網絡等上下文中稱為sigmoid函數。\n            \n"
+    "title": "從邏輯斯分佈取樣",
+    "r_help": "help(rlogis, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            邏輯斯分佈的密度、分佈函數、分位數函數和隨機生成，參數為位置和比例。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dlogis(x, location = 0, scale = 1, log = FALSE)\n                <br/>\n                plogis(q, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qlogis(p, location = 0, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rlogis(n, location = 0, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數向量。</li>\n                \n                \n                <li>p : 機率向量。</li>\n                \n                \n                <li>n : 觀察數量。如果長度(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>location, scale : 位置和比例參數。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為TRUE，則機率p以log(p)表示。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為TRUE（默認），則機率為P[X ≤ x]，否則為P[X > x]。</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            如果省略位置或比例，則默認值為0和1。\n            位置為m，比例為s的邏輯斯分佈的分佈函數為\n            <br/>\n            <code>F(x) = 1 / (1 + exp(-(x-m)/s))</code>\n            <br/>\n            和密度\n            <br/>\n            <code>f(x) = 1/s exp((x-m)/s) (1 + exp((x-m)/s))^-2.</code>\n            <br/>\n            這是一個長尾分佈，均值為m，方差為π^2 /3 s^2。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dlogis給出密度，plogis給出分佈函數，qlogis給出分位數函數，rlogis生成隨機偏差。\n            <br/>\n            結果的長度由n決定，對於rlogis，並且是其他函數的數值參數的最大長度。\n            <br/>\n            除n以外的數值參數會回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            qlogis(p)與著名的‘logit’函數相同，logit(p) = log(p/(1-p))，因此plogis(x)被稱為‘反logit’。\n            <br/>\n            分佈函數是一個重新縮放的雙曲正切，plogis(x) == (1+ tanh(x/2))/2，在神經網絡等上下文中稱為sigmoid函數。\n            \n      "
   }
 }

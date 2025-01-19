@@ -1,0 +1,12 @@
+{
+  "title": "중심점을 추가하여 2단계 디자인(정량적) 만들기(이전 중심점 없음) - 선택한 디자인은 데이터 세트 UI 그리드에서 활성 디자인입니다.",
+  "navigation": "중심점 추가 2단계 디자인(정량적)",
+  "datasetname": "중심점이 포함된 수정된 디자인 이름",
+  "numOfCenterPts": "중심점 수(사용하는 경우 최소 2개 이상이어야 함)",
+  "centerPointDistribution": "중심점 분포를 위한 위치 수(1보다 커야 함)",
+  "help": {
+    "title": "중심점을 추가하여 2단계 디자인 만들기(이전 중심점 없음)",
+    "r_help": "help(add.center, package = FrF2)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tadd.center 함수는 2단계 분수 요인 설계에 중심점을 추가합니다. 모든 요인은 정량적이어야 합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(add.center, package = FrF2)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

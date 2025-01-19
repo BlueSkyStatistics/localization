@@ -1,0 +1,11 @@
+{
+  "title": "Eksik Değerleri Değiştir (String/Faktör Değişkenler)",
+  "navigation": "Karakter/Faktör",
+  "destination": "Hedef Değişkenler",
+  "repString": "NA'leri değiştirmek için bir dize girin. Not: Dizeyi tırnak içine almayın. Faktör değişkenler için belirtilen değer, faktörün bir seviyesi olmalıdır, bkz. Değişkenler>Faktör Seviyeleri>Ekle",
+  "help": {
+    "title": "Eksik Değerleri Değiştir (String/Faktör Değişkenler)",
+    "r_help": "help(is.na,package=base)",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenlerdeki eksik değerleri belirtilen değerle değiştirir. Diyaloğu kullanırken, dizeyi çift tırnak içine almanıza gerek yoktur\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('Değiştirilecek Dize')\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nNA'lerin değiştirilmesi gereken veri kümesi değişkenleri (var1, var2)\n</li>\n</ul>\n<b>Değer</b><br/>\nVeri kümesindeki eksik değerleri belirtilen dize ile değiştirir<br/>\n<b>Paket</b></br>\nbas</br>\n<b>Yardım</b></br>\nhelp(is.na,package=base)"
+  }
+}

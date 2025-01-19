@@ -1,0 +1,18 @@
+{
+  "title": "Analisi del Design degli Esperimenti con il Modello di Superficie di Risposta (Quantitativo)",
+  "navigation": "Analisi del Design - Modello di Superficie di Risposta",
+  "modelname": "Inserisci il nome del modello di superficie di risposta",
+  "dependent": "Variabile di risposta (dipendente)",
+  "formulaboxhint": "Puoi anche inserire SO(var1, var2,...) per effetti di secondo ordine e interazioni, o FO(...),... dal pacchetto rsm nella casella del costruttore di formule sopra.",
+  "independent": "Predittori numerici - inserisci qui sotto le variabili della formula numerica",
+  "generateContourPlotChk": "Visualizza Contorni (grafici)",
+  "generateRSMPlotChk": "Visualizza Superficie di Risposta (grafici)",
+  "generatePathSteepestAscentChk": "Mostra il percorso della salita più ripida dall'analisi del crinale",
+  "checkShapiroNormalityTestChk": "Test di normalità di Shapiro",
+  "normalityPlotsChk": "Grafico per controllare la normalità",
+  "help": {
+    "title": "Modello di Superficie di Risposta con un costruttore di formule",
+    "r_help": "help(rsm, package = rsm)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tRegressione della superficie di risposta - adatta un modello lineare con un componente di superficie di risposta e produce analisi e riepiloghi appropriati\n\t\t\t\t<br/> Nel costruttore di formule, puoi digitare SO(var1, var2, var3, ...) o FO(var1, ..) o altre funzioni dal pacchetto rsm - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer ulteriori dettagli, vedere l'aiuto di R per i seguenti\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

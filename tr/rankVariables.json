@@ -1,0 +1,18 @@
+{
+  "title": "Sıralama Değişken(ler)i",
+  "navigation": "Sıralama",
+  "label1": "Yeni sıralı değişkenler için bir ek veya ön ek girin",
+  "suffix": "Ek",
+  "prefix": "Ön Ek",
+  "txt1": "Bir ek/ön ek girin",
+  "dest": "Sıralanacak değişken(ler)i seçin",
+  "rankby": "Değerleri sıralamak için isteğe bağlı olarak değişken(ler)i seçin",
+  "label2": "Bir sıralama fonksiyonu belirtin",
+  "rankfn": "Bir sıralama fonksiyonu seçin, ek bilgi için yardıma tıklayın",
+  "nooftiles": "ntile sıralama fonksiyonu için bölünecek grup sayısını belirtin:",
+  "help": {
+    "title": "Sıralama Değişken(ler)i",
+    "r_help": "help(mean)",
+    "body": "\n<b>Açıklama</b></br>\nSIRALAMALAR BELİRTİLEN ÖN EK VEYA EK İLE YENİ DEĞİŞKENLERDE KAYDEDİLECEKTİR</br>\nSQL2003'te tanımlanan sıralama fonksiyonlarını taklit eden altı varyasyon. Şu anda yerleşik sıralama fonksiyonu kullanılarak uygulanmıştır ve R ile SQL arasında dönüşüm yaparken kolaylık sağlamak amacıyla sunulmuştur. Tüm sıralama fonksiyonları en küçük girdileri en küçük çıktılara eşler. Yönü tersine çevirmek için desc() kullanın.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nrow_number(x)\nntile(x, n)\nmin_rank(x)\ndense_rank(x)\npercent_rank(x)\ncume_dist(x)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: Sıralanacak değerlerin bir vektörü. Eksik değerler olduğu gibi bırakılır. Onları en küçük veya en büyük değerler olarak değerlendirmek istiyorsanız, sıralamadan önce Inf veya -Inf ile değiştirin.\n</li>\n<li>\nn: Bölünecek grup sayısı.\n</li>\n</ul>\n<b>Ayrıntılar</b><br/>\nrow_number(): rank(ties.method = \"first\") ile eşdeğerdir<br/>\nmin_rank(): rank(ties.method = \"min\") ile eşdeğerdir<br/>\ndense_rank(): min_rank() gibi, ancak sıralamalar arasında boşluk yoktur<br/>\npercent_rank(): min_rank'ı [0, 1] aralığına yeniden ölçeklendirerek hesaplanan 0 ile 1 arasında bir sayı<br/>\ncume_dist(): kümülatif dağılım fonksiyonu. Mevcut sıralamadan daha küçük veya ona eşit olan tüm değerlerin oranı.<br/>\nntile(): girdi vektörünü n kovaya bölen kaba bir sıralama.<br/>\n<b>Örnekler</b><br/>\n<code> \nx <- c(5, 1, 3, 2, 2, NA)<br/>\nrow_number(x)<br/>\nmin_rank(x)<br/>\ndense_rank(x)<br/>\n</code><br/>\n<b>Paket</b></br>\ndplyr</br>\n<b>Yardım</b></br>\nyardım(sıralama, paket='dplyr')"
+  }
+}

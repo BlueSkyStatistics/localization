@@ -1,0 +1,17 @@
+{
+  "title": "Tamanho da Amostra, Precisão do Kappa de Cohen",
+  "navigation": "Kappa de Cohen",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n": "Tamanho da Amostra",
+  "width": "Largura do Intervalo de Confiança",
+  "kappa": "Kappa (0-1)",
+  "conflevel": "Nível de Confiança (0-1)",
+  "raters": "Número de Avaliadores (2-6)",
+  "categories": "Número de Categorias (2-5)",
+  "props": "Proporções em Cada Categoria; separe com vírgulas, por exemplo, .3, .7; deve corresponder ao número de categorias e somar 1",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão do Kappa de Cohen",
+    "r_help": "help(prec_kappa, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para o kappa de Cohen com base na largura do intervalo de confiança. Ele calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada. A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>Kappa:</b> Especifique o valor de kappa esperado\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Número de Avaliadores:</b> Especifique o número de avaliadores que fornecerão valores para cada sujeito.\n<br/><br/>\n<b>Número de Categorias:</b> Especifique o número de categorias na variável de resultado\n<br/><br/>\n<b>Proporções em Cada Categoria:</b> Especifique a proporção esperada de sujeitos em cada categoria, separadas por vírgulas. Observe que o número de valores especificados deve corresponder ao\nnúmero de categorias especificadas e somar 1.\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

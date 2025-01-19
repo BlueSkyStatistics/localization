@@ -1,0 +1,24 @@
+{
+  "title": "Modelleri bir dosyaya kaydet",
+  "navigation": "Modelleri Kaydet",
+  "filterModels": "Sınıfa göre modelleri filtrele",
+  "modelSelection": "Kaydedilecek bir model(ler) seçin",
+  "importResp": "Bir modeli kaydetmek için bir dosya seçin",
+  "label1": "NOT: Model, aşağıda seçilen yolda yalnızca iletişim kutusunu çalıştırdığınızda bir dosyaya kaydedilecektir.",
+  "levelOfInterest": "Tahmin edilecek değişkenin 2 seviyesi olduğunda, ilgi düzeyini belirtin. Karışıklık matrisi ve ilgili istatistikler, belirtilen ilgi düzeyi referans olarak görüntülenir.",
+  "label12": "Test sonuçları: Bir model seçildiği anda, modelde belirtilen bağımlı değişkenlerin, puanlanacak veri kümesinde mevcut olup olmadığını görmek için testler yapacağız. Sonuçlar burada görüntülenecektir.",
+  "label2": "Tahmin edilen değerleri ve destekleyici istatistikleri kaydedin.",
+  "label3": "Tahminler ve tahmin edilen olasılıklar, geçerli olduğu yerlerde, aşağıdaki önek ile yeni değişkenler olarak puanlanan veri kümesinde saklanır.",
+  "label4": "**2 seviyeli bağımlı değişkenler için, 2. seviye pozitif seviye olarak kabul edilir. Faktör seviyelerini yeniden sıralamak ve modeli yeniden oluşturmak için Veri > Faktör Seviyeleri > Seviyeleri Manuel Olarak Yeniden Sırala'ya bakın.",
+  "conflevel": "Bireysel tahmin edilen değerler için güven aralıklarını kaydedin **(Sadece doğrusal modeller (lm sınıfı) için geçerlidir)",
+  "roctable": "ROC tablosunu göster (**Sadece ikili bağımlı değişkenler için)",
+  "colname": "Sütun adı öneki belirtin",
+  "label5": "**Yukarıdaki onay kutusunu işaretlemek, büyük veri setleri için bir performans cezası doğuracaktır.",
+  "level": "Güven düzeyini belirtin",
+  "confusioncheck": "Karışıklık Matrisi Oluştur",
+  "help": {
+    "title": "Modelleri Kaydet",
+    "r_help": "help(save, package='base')",
+    "body": "\n    <b>Açıklama</b></br>\n    Seçilen modeller, R veri formatında bir dosyaya kaydedilecektir (.RData uzantısı)</br>\n    Yeni bir dosya belirtmek için bir isim girebilir veya mevcut bir dosyayı seçebilirsiniz</br>\n    Mevcut bir dosya seçerseniz, üzerine yazılacaktır.</br>\n    Nesneleri bir dosyaya kaydetmek için iletişim kutusunu çalıştırmak üzere yürütme düğmesine (yatay üçgen düğmesi) tıklamanız gerekir. \n    <br/>\n    <b>Kullanım</b>\n    <br/>\n    <code> \n    save(model1, model2.., file =\"dosyanın yolu\")\n    </code> <br/>\n    <b>Argümanlar</b><br/>\n    <ul>\n    <li>\n    model1, model2...: uyumlu model nesneleri\n    </li>\n    <li>\n    file: dosya adı ile yol, seçilen model nesneleri bu RData dosyasına kaydedilecektir\n    </li>\n    </ul>\n    <b>Paket</b></br>\n    temel</br>\n    <b>Yardım</b></br>\n    Ayrıntılı yardım için bu iletişim kutusunun sağ üst köşesindeki R simgesine tıklayın veya R editör penceresinde help(save, package = 'base') komutunu çalıştırın.\n    </br>\n    "
+  }
+}

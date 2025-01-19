@@ -1,0 +1,18 @@
+{
+  "title": "Örneklem Büyüklüğü, Test Bir Ortalama veya Eşleştirilmiş Ortalamalar",
+  "navigation": "Bir Ortalama veya Eşleştirilmiş Ortalamalar",
+  "howtouse": "İki tanesini örneklem büyüklüğü, ortalamalar arasındaki fark ve güç olarak belirtin, üçüncüsü hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "delta": "Ortalamalar Arasındaki Fark",
+  "power": "Güç (0-1)",
+  "sd": "Standart Sapma",
+  "siglevel": "Anlamlılık Düzeyi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Test Bir Ortalama",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nBu, bir ortalama için bir örneklem t-testi veya eşleştirilmiş ortalamalar testi için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı iki tanesini belirtirse, örneklem büyüklüğünü, ortalamalar arasındaki farkı veya gücü hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Ortalamalar Arasındaki Fark:</b> Eğer bir örneklem t-testi ise, alternatif hipotez altındaki ortalama ile sıfır hipotez altındaki ortalama arasındaki farkı belirtin. Eğer bir eşleştirilmiş t-testi ise, alternatif hipotez altındaki eşleştirilmiş ortalamalar arasındaki farkı belirtin.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa sıfır hipotezi reddetme olasılığı.\n<br/><br/>\n<b>Standart Sapma:</b> Sonuç ölçümünün standart sapma tahminini belirtin. Eşleştirilmiş testler için, bu eşleştirilmiş farkların standart sapmasıdır.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hatası)\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats, broom\n\t\t\t"
+  }
+}

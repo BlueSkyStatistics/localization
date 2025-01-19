@@ -1,0 +1,15 @@
+{
+  "title": "Faktör değişkenleri için Kontrastları Ayarla",
+  "navigation": "Kontrastları Ayarla",
+  "target": "Hedef",
+  "label1": "Kontrastlar",
+  "Dummy": "Tedavi (dummy) kontrastları",
+  "Deviation": "Toplam (sapma) kontrastları",
+  "Helmert": "Helmert kontrastları",
+  "Poly": "Polinom kontrastları",
+  "help": {
+    "title": "Kontrastları Ayarla",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>Açıklama</b></br>\n            ​Bir faktörle ilişkili kontrastları ayarlayın ve görüntüleyin.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            x: bir R nesnesi.​\n            </li>\n            <li>\n            value: x'in seviyelerindeki kontrastlar için katsayılar veren bir sayısal matris (veya Matrix paketinden dMatrix sınıfını genişleten seyrek veya yoğun bir matris) ya da böyle matrisleri hesaplayan bir fonksiyonun (alıntılanmış) adı, örneğin “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            stats</br>\n            <b>Yardım</b></br>\n            help(contrasts, package ='stats')       \n            "
+  }
+}

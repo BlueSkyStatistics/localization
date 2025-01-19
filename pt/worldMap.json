@@ -1,0 +1,15 @@
+{
+  "title": "Mapa Mundi",
+  "navigation": "Mapa Mundi",
+  "region": "Variável com nomes de países:",
+  "value": "Variável com valores para o mapa:",
+  "colors": "Digite o número de cores",
+  "zoomByStates": "Digite os países para ampliar, por exemplo, estados unidos da américa, canadá, méxico",
+  "specify_a_title": "Digite um título",
+  "legend": "Legenda:",
+  "help": {
+    "title": "Mapa Mundi",
+    "r_help": "help(country_choropleth, package='choroplethr')",
+    "body": "\n            <b>Descrição</b></br>\n            Desenha um mapa-múndi e permite que você amplie opcionalmente 1 ou mais países\n             <br/>\n             <b>Uso</b>\n             <br/>\n             <code> \n            country_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n             </code> <br/>\n             <b>Argumentos</b><br/>\n             <ul>\n             <li>\n             BSkyDfForMap: Um data.frame com uma coluna chamada \"region\" e uma coluna chamada \"value\". Os elementos na coluna \"region\" devem corresponder exatamente a como as regiões são nomeadas na coluna \"region\" em ?country.map. Execute o código abaixo na outra seção para ver as variáveis em country.map\n             </li>\n             <li>\n             Título: Um título opcional para o mapa.\n             </li>\n             <li>\n             Legenda: Um nome opcional para a legenda.\n             </li>\n             <li>\n             num_colors: O número de cores no mapa. Um valor de 1 usará uma escala contínua. Um valor em [2, 9] usará essa quantidade de cores.\n             </li>\n             <li>\n             zoom: Um vetor opcional de países para ampliar. Os elementos deste vetor devem corresponder exatamente aos nomes dos países como aparecem na coluna \"region\" de ?country.regions\n             </li>\n             </ul>\n             <b>Pacote</b></br>\n             choroplethr;choroplethrMaps;</br>\n             <b>Ajuda</b></br>\n             help(country_choropleth, package='choroplethr')</br>\n             <b>Outro</b></br>\n             <code> \n             # Execute o código abaixo para acessar o conjunto de dados state.map<br/>\n             library(choroplethr)<br/>\n             library(choroplethrMaps)<br/>\n             data(country.map)<br/>\n             country.map<br/>\n             </code> <br/>\n    "
+  }
+}

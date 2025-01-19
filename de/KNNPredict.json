@@ -2,25 +2,25 @@
   "title": "Vorhersagen mit KNN treffen",
   "navigation": "Vorhersagen mit KNN",
   "dataset_var": "Offene Datensätze",
-  "header": "KNN ist ein fauler Klassifizierer, er erstellt kein angepasstes Modell, das später verwendet werden kann. Er passt an und trifft Vorhersagen gleichzeitig. Sie müssen die folgenden Schritte befolgen, um Vorhersagen/ Bewertungen zu treffen.",
-  "NOTE1": "DER AKTIVE DATENSATZ MUSS DER DATENSATZ SEIN, AUF DEM SIE EIN MODELL AUFBAUEN MÖCHTEN UND NICHT DER DATENSATZ, DEN SIE BEWERTEN MÖCHTEN",
+  "header": "KNN ist ein fauler Klassifizierer, der kein angepasstes Modell erstellt, das später zur Vorhersage verwendet werden kann. Es passt an und trifft Vorhersagen gleichzeitig. Sie müssen die folgenden Schritte befolgen, um Vorhersagen/Scoring durchzuführen.",
+  "NOTE1": "DER AKTIVE DATENSATZ MUSS DER DATENSATZ SEIN, AUF DEM SIE EIN MODELL AUFBAUEN MÖCHTEN, UND NICHT DER DATENSATZ, DEN SIE BEWERTEN MÖCHTEN",
   "step1": "Schritt 1: Wie gewohnt müssen Sie den Trainingsdatensatz im Datagrid auswählen, bevor Sie diesen Dialog öffnen.",
-  "step2": "Schritt 2: Wählen Sie die abhängige Variable im Trainingsdatensatz, die zum Anpassen des Modells verwendet wird.",
+  "step2": "Schritt 2: Wählen Sie die abhängige Variable im Trainingsdatensatz aus, die zum Anpassen des Modells verwendet wird.",
   "step3": "Schritt 3: Geben Sie die unabhängigen Variablen im Trainingsdatensatz an.",
   "step4": "Schritt 4: Geben Sie die Anzahl der Nachbarn an, die zum Erstellen des Modells verwendet werden sollen.",
   "step5": "Schritt 5: Geben Sie ein Variablenpräfix für die neue Variable ein, die die Vorhersagen enthält.",
   "step6": "Schritt 6: Geben Sie den Datensatz an, dem Vorhersagen hinzugefügt werden sollen. Er muss die gleichen unabhängigen Variablen enthalten, die zum Trainieren des Modells verwendet wurden.",
   "dependentvar": "Abhängige Variable (aus dem Trainingsdatensatz)",
   "independentvars": "Unabhängige Variable(n) (aus dem Trainingsdatensatz)",
-  "Seed": "Setze Seed",
-  "datasetToScore": "Datensatz zur Bewertung/Vorhersage",
+  "Seed": "Seed festlegen",
+  "datasetToScore": "Datensatz zum Bewerten/Vorhersagen",
   "Group2": "Tuning-Parameter für KNN",
   "noneighbhors": "Anzahl der Nachbarn (Wenn kein Wert angegeben ist, wird standardmäßig die Quadratwurzel der Anzahl der Beobachtungen im Datensatz verwendet)",
   "testDatasetName": "Geben Sie den Namen des Datensatzes ein, um Vorhersagen zu treffen",
-  "predictedValues": "Geben Sie das Variablenpräfix für die vorhergesagten Werte ein. Eine neue Variable wird erstellt, indem das Präfix an den Namen der abhängigen Variablen angehängt wird.",
+  "predictedValues": "Geben Sie das Variablenpräfix für die vorhergesagten Werte ein. Eine neue Variable wird erstellt, indem das Präfix an den Namen der abhängigen Variable angehängt wird.",
   "help": {
     "title": "K Nächste Nachbarn",
-    "r_help": "hilfe(knn, paket ='class')",
-    "body": "\n                <b>Beschreibung</b></br>\nk-nächste Nachbarn Klassifikation\n<br/>\n<b>Hinweis: </b></br>\nSiehe den Hilfetext im Dialog\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ntrain: Dies ist der Quell(aktive) Datensatz, der verwendet wird, um ein angepasstes Modell zu erstellen.\n</li>\n<li>\ntest: Dies ist der Datensatz, in dem die vorhergesagten Werte gespeichert werden, wenn das von Ihnen angegebene Präfix. Eine neue Variable wird erstellt, indem das Präfix an die abhängige Variable aus dem Quell-Datensatz angehängt wird.\n</li>\n<li>\ncl: Faktor der wahren Klassifikationen aus dem Datensatz, der zum Anpassen des Modells verwendet wurde\n</li>\n<li>\nk: Anzahl der berücksichtigten Nachbarn.\n</li>\n<li>\nl: Mindeststimme für eine endgültige Entscheidung, sonst Zweifel. (Genauer gesagt, weniger als k-l abweichende Stimmen sind erlaubt, selbst wenn k durch Unentschieden erhöht wird.)\n</li>\n<li>\nprob: Wenn dies wahr ist, wird der Anteil der Stimmen für die gewinnende Klasse als Attribut prob zurückgegeben.\n</li>\n<li>\nuse.all: steuert die Handhabung von Unentschieden. Wenn wahr, werden alle Abstände, die gleich dem k-größten sind, einbezogen. Wenn falsch, wird eine zufällige Auswahl von Abständen, die gleich dem k-größten sind, ausgewählt, um genau k Nachbarn zu verwenden.\n</li>\n</ul>\n<b>Wert</b></br>\nFaktor der Klassifikationen des Testsets. Zweifel werden als NA zurückgegeben.</br>\n<b>Paket</b></br>\ncaret;class</br>\n<b>Hilfe</b></br>\nhilfe(knn, paket ='class')\n                "
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Beschreibung</b></br>\nk-nächste Nachbarn Klassifikation\n<br/>\n<b>Hinweis: </b></br>\nSiehe den Hilfetext im Dialog\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ntrain: Dies ist der Quell-(aktiver) Datensatz, der verwendet wird, um ein angepasstes Modell zu erstellen.\n</li>\n<li>\ntest: Dies ist der Datensatz, in dem die vorhergesagten Werte gespeichert werden, wenn das von Ihnen angegebene Präfix verwendet wird. Eine neue Variable wird erstellt, indem das Präfix an die abhängige Variable angehängt wird, die aus dem Quell-Datensatz angegeben wurde.\n</li>\n<li>\ncl: Faktor der wahren Klassifikationen aus dem Datensatz, der zum Anpassen des Modells verwendet wurde.\n</li>\n<li>\nk: Anzahl der berücksichtigten Nachbarn.\n</li>\n<li>\nl: Mindeststimme für eine eindeutige Entscheidung, andernfalls Zweifel. (Genauer gesagt, weniger als k-l abweichende Stimmen sind erlaubt, selbst wenn k durch Unentschieden erhöht wird.)\n</li>\n<li>\nprob: Wenn dies wahr ist, wird der Anteil der Stimmen für die gewinnende Klasse als Attribut prob zurückgegeben.\n</li>\n<li>\nuse.all: steuert die Handhabung von Unentschieden. Wenn wahr, werden alle Abstände, die dem k-größten entsprechen, einbezogen. Wenn falsch, wird eine zufällige Auswahl von Abständen, die dem k-größten entsprechen, ausgewählt, um genau k Nachbarn zu verwenden.\n</li>\n</ul>\n<b>Wert</b></br>\nFaktor der Klassifikationen des Testdatensatzes. Zweifel werden als NA zurückgegeben.</br>\n<b>Paket</b></br>\ncaret;class</br>\n<b>Hilfe</b></br>\nhelp(knn, package ='class')\n                "
   }
 }

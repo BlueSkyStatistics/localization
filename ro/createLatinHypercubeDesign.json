@@ -1,18 +1,18 @@
 {
-  "title": "Creează un design de hipercub latin (pentru factori cantitativi)",
-  "navigation": "Creează un design de hipercub latin (cantitativ)",
-  "selectedvars": "Selectați variabilele",
+  "title": "Creează Design Latin Hypercube (pentru Factori Cantitativi)",
+  "navigation": "Creează Design Latin Hypercube (Cantitativ)",
+  "selectedvars": "Selectează variabile",
   "datasetname": "Numele designului",
   "lblheading": "Dimensiune și randomizare",
-  "numOfRuns": "Numărul de rulări",
+  "numOfRuns": "Numărul de runde",
   "numOfDeciPlaces": "Numărul de zecimale",
-  "lbl1": "Este posibil să nu fie nevoie să schimbați setările de randomizare",
-  "randomseeds": "Sămânță pentru randomizare",
-  "randomizationChk": "Randomizați generarea designului",
-  "lhsDesignType": "Designuri de eșantionare a hipercubului latin (verificați pachetele lhs sau DiceDesign pentru alte tipuri)",
+  "lbl1": "Este posibil să nu fie nevoie să schimbi setările de randomizare",
+  "randomseeds": "Seed pentru randomizare",
+  "randomizationChk": "Randomizează generarea designului",
+  "lhsDesignType": "designuri de eșantionare latin hypercube (verifică pachetele lhs sau DiceDesign pentru alte tipuri)",
   "help": {
-    "title": "Creează un design de hipercub latin (pentru factori cantitativi)",
-    "r_help": "ajutor(lhs.design, pachet = DoE.wrapper)",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția lhs.design pentru accesarea designurilor de eșantionare a hipercubului latin din pachetul lhs sau designuri de umplere a spațiului din pachetul DiceDesign, care sunt utile pentru factorii cantitativi cu multe niveluri posibile. În special, acestea pot fi utilizate în experimente pe computer. Cele mai multe dintre designuri sunt eșantioane aleatorii.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R ajutor(lhs.design, pachet = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți folosi fișierul de set de date de exemplu numit factor_grid__latin_hypercube_Design.xlsx. Deschideți fișierul în grila de date cu meniul de deschidere a fișierelor\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    "title": "Creează Design Latin Hypercube (pentru Factori Cantitativi)",
+    "r_help": "help(lhs.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția lhs.design pentru accesarea designurilor de eșantionare latin hypercube din pachetul lhs sau designuri de umplere a spațiului din pachetul DiceDesign, care sunt utile pentru factori cantitativi cu multe niveluri posibile. În special, acestea pot fi utilizate în experimentele pe calculator. Cele mai multe dintre designuri sunt eșantioane aleatorii.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosește R help(lhs.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, poți folosi fișierul de set de date de probă numit factor_grid__latin_hypercube_Design.xlsx. Deschide fișierul în grila de date cu meniul de deschidere a fișierului\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Teste de Levene",
+  "navigation": "Teste de Levene",
+  "tvarbox1": "Variável de Resposta (uma)",
+  "tvarbox3": "Variável de Fator",
+  "label1": "Centro",
+  "median": "Mediana",
+  "mean": "Média",
+  "help": {
+    "title": "Teste de Levene",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Descrição</b></br>\nComputa o teste de Levene para homogeneidade de variância entre grupos.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## Método S3 para a classe 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## Método S3 para a classe 'lm'<br/>\nleveneTest(y, ...)<br/>\n## Método S3 padrão:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ny: variável de resposta para o método padrão, ou um objeto lm ou formula. Se y for um objeto de modelo linear ou uma fórmula, as variáveis do lado direito do modelo devem ser todas fatores e devem ser completamente cruzadas.\n</li>\n<li>\ngroup: fator que define grupos.\n</li>\n<li>\ncenter: O nome de uma função para calcular o centro de cada grupo; mean fornece o teste de Levene original; o padrão, median, fornece um teste mais robusto.\n</li>\n<li>\ndata: um data frame para avaliar a fórmula.\n</li>\n<li>\n...: argumentos a serem passados, por exemplo, dados para os métodos de fórmula e lm; também pode ser usado para passar argumentos para a função dada por center (por exemplo, center=mean e trim=0.1 especificam a média truncada de 10%).\n</li>\n</ul>\n<b>Valor</b><br/>\nretorna um objeto destinado a ser impresso mostrando os resultados do teste.<br/>\n<b>Exemplos</b><br/>\n<code> \nDataframe <- data.frame(Despesas=c(20,23,19,25,26), Vendas=c(48,50,55,51,49), Gênero=c('m','f','f','m','m'), Deptt=c('Contabilidade', 'RH', 'Vendas','Marketing','TI'))\nResultado_Teste_Levene = leveneTest( Vendas ~ interaction(Gênero, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>Pacote</b></br>\ncar;moments;dplyr</br>\n<b>Ajuda</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

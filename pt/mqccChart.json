@@ -1,0 +1,18 @@
+{
+  "title": "Gráfico de Controle de Qualidade Multivariado (MQCC)",
+  "navigation": "Gráfico MQCC",
+  "summaryPrintChk": "Imprimir resumo além do(s) gráfico(s)",
+  "variableListSelcted": "Dados (selecione uma ou mais variáveis) para o gráfico",
+  "groupingVariable": "(Opcional) Selecione a variável de agrupamento se subgrupos estiverem presentes",
+  "excludeGroups": "(Opcional) excluir grupos (se subgrupos forem numéricos) do cálculo/gráficos (por exemplo, especifique como 1:10 ou separado por vírgula como 1,4,5,7:12)",
+  "groupsTobeUsedAsNewData": "(Opcional) Novos Dados - grupos (se subgrupos forem numéricos) a serem usados como Novos Dados para o gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12) - novos dados a serem plotados, mas não incluídos nos cálculos de limites",
+  "limitsChk": "Se os limites de controle (Fase I) devem ser calculados e plotados",
+  "pred_limitsChk": "Se os limites de previsão (Fase II) devem ser calculados e plotados",
+  "confidence_level": "(Opcional) Nível de confiança: deixe a fórmula padrão como mostrado (onde p será calculado automaticamente como o número de variáveis selecionadas). Caso contrário, especifique um valor numérico entre 0 e 1 a ser usado como nível de confiança para calcular os limites de probabilidade",
+  "genVarianceChk": "Plotar gráfico de controle para a Variância Generalizada |S| para as variáveis selecionadas (e uma variável de agrupamento deve ser selecionada)",
+  "help": {
+    "title": "Gráfico de Controle de Qualidade Multivariado (mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção mqcc para realizar controle de qualidade estatístico multivariado e a variância generalizada |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(mqcc, package = qcc) e help(GVcontrol, package = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode carregar o conjunto de dados chamado boiler do pacote qcc com o menu Carregar Conjunto de Dados selecionando o pacote qcc e, em seguida, selecionar o conjunto de dados boiler para carregar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSelecione as variáveis do conjunto de dados boiler, deixe tudo como padrão e execute o diálogo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVocê também pode usar o arquivo de conjunto de dados de exemplo chamado widgets_mqcc.xlsx. Abra o arquivo na grade de dados com o menu abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara plotar a variância generalizada |S|, o conjunto de dados deve ter uma coluna com os números de subgrupo - caso contrário, não será plotado\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial do qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

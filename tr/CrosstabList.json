@@ -1,0 +1,17 @@
+{
+  "title": "Çapraz Tablo Listesi",
+  "navigation": "Çapraz Tablo Listesi",
+  "destvarslabel": "Tablo için Değişkenler",
+  "missinglabel": "Eksik Değerler",
+  "removelabel": "Kaldır",
+  "showexcludelabel": "Göster ve Yüzdelerden Hariç Tut",
+  "includelabel": "Göster ve Yüzdelere Dahil Et",
+  "sparseoptlabel": "0 Sayımları ile Kombinasyonları Dahil Et",
+  "toplistoptlabel": "En Sık Görülen N Değeri Göster",
+  "topnumlabel": "N",
+  "help": {
+    "title": "Çapraz Tablo Listesi",
+    "r_help": "help(freqlist, package ='arsenal')",
+    "body": "\nBu, bir veya daha fazla değişkenin kombinasyonları için liste formatında frekans tabloları oluşturur.  Belirtilen tüm değişkenler arasındaki değerlerin her kombinasyonu tabloya alınacak, \n gözlemlenen frekansları ile birlikte.  Belirtilen değişkenler herhangi bir sınıf olabilir, sayısal, sürekli değişkenler dahil.  Bu, özet frekanslar ve \n yüzdeler için kullanılabilirken, ana kullanım veri tutarsızlıklarını kontrol etmektir.  Kaç değişkenin çapraz sınıflandırılacağı ve kaç olasılığın ortaya çıkabileceği konusunda dikkatli olunmalıdır, çünkü \nbazı tabloların üretilmesi daha uzun sürebilir. \n<br/><br/>\n<b>Tablo için Değişkenler:</b>  <br/>Tabloda yer alacak değişkenler, herhangi bir sınıf olabilir.  Tablo, bu listedeki değişkenlerin sırasına göre sıralanacaktır.  \nBu, A ve B değişkenleri belirtilen sıradaysa, tablonun önce A'nın seviyelerine, ardından A içinde B'nin seviyelerine göre sıralanacağı anlamına gelir.\n<br/><br/>\n<b>Eksik Değerler</b>\n<br/>\n<ul>\n\t<li><b>Kaldır:</b>  NA'leri olan değişken değer kombinasyonları tablodan hariç tutulacaktır.</li>\n\t<li><b>Göster ve Yüzdelerden Hariç Tut:</b>  NA'leri olan değişken değer kombinasyonları tabloya dahil edilecektir, ancak yüzde hesaplamalarına dahil edilmeyecektir.</li>\n\t<li><b>Göster ve Yüzdelere Dahil Et:</b>  NA'leri olan değişken değer kombinasyonları tabloya dahil edilecek ve yüzde hesaplamalarına dahil edilecektir.</li> \n</ul>\n<br/><br/>\n<b>0 Sayımları ile Kombinasyonları Dahil Et:</b>  <br/>Veri setinde mevcut olmayan değişken değer kombinasyonlarını dahil etme durumu.  Örneğin, A ve B değişkenlerinin her ikisi de 1, 2 ve 3 gözlemlenen değerlerine sahipse, ancak (A, B) kombinasyonu (1, 3) verilerde gözlemlenmiyorsa, bu seçenek (1, 3) kombinasyonu için 0 frekansı ile bir satır dahil edecektir.\n<br/><br/>\n<b>En Sık Görülen N Değeri Göster:</b>  <br/>Eğer işaretlenirse, bu en sık görülen N değişken kombinasyonları için ayrı bir tablo oluşturacaktır.\n<ul>\n\t<li><b>N:</b> En üst N tablosu için gösterilecek değişken kombinasyonlarının sayısı.</li>\n</ul>\n<b>Gerekli R Paketleri:</b> arsenal\n\t\t\t"
+  }
+}

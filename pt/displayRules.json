@@ -1,0 +1,24 @@
+{
+  "title": "Regras de Exibição",
+  "navigation": "Regras de Exibição",
+  "rulename": "Insira um objeto de regras existente",
+  "dosortingchk": "Classificar as regras",
+  "sortopt": "Opções de Classificação",
+  "sortby": "Classificar por",
+  "confchk": "confiança",
+  "liftchk": "elevar",
+  "suppchk": "suporte",
+  "sortord": "Ordem de Classificação",
+  "increasing": "Crescente",
+  "decreasing": "Decrescente",
+  "noofrules": "Número de regras a exibir",
+  "rulecount": "",
+  "fromto": "Exibir regras",
+  "from": "De",
+  "to": "Para",
+  "help": {
+    "title": "Regras de Exibição",
+    "r_help": "ajuda(inspecionar, pacote='arules')",
+    "body": "\n            <b>\n\t\t\tPacote : arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n            <b>\n            1.  inspecionar\n            </b>\n            <br/><br/>\n\t\t\t<b>\n\t\t\tDescrição\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Fornece a função genérica inspecionar e métodos S4 para exibir associações e transações, além de informações adicionais formatadas para inspeção online.\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUso\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            inspecionar(x, ...)\n            </code>\n            <br/><br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            x: um conjunto de associações ou transações ou uma matriz de itens.\n            </li>\n            <li>\n            ...: argumentos adicionais podem ser usados para personalizar a saída: setStart, setEnd, itemSep e ruleSep. Os itens são impressos apenas um por linha caso as linhas de saída fiquem muito longas. Isso também pode ser controlado diretamente usando quebra de linha.\n            </li>\n            </ul>\n            <br/><br/>\n\n            <b>\n            2. classificar\n            </b>\n            <br/><br/>\n\n\t\t\t<b>\n\t\t\tDescrição\n\t\t\t</b>\n\t\t\t<br/><br/>\n            Fornece o método classificar para classificar elementos na classe associações (por exemplo, conjuntos de itens ou regras) de acordo com o valor das medidas armazenadas no slot de qualidade da associação (por exemplo, suporte).\n            <br/><br/>\n\t\t\t<b>\n\t\t\tUso\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n            ## Método S4 para assinatura 'associações'\n            arules::classificar(x, decrescente = TRUE, na.last = NA, \n            por = \"suporte\", ordem = FALSE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Método S4 para assinatura 'associações'\n            cabeça(x, n = 6L, por = NULL, decrescente = TRUE, ...)\n            </code>\n            <br/><br/>\n\t\t\t<code>\n            ## Método S4 para assinatura 'associações'\n            cauda(x, n = 6L, por = NULL, decrescente = TRUE, ...)\n            </code>\n            <br/><br/>                        \n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            x: um objeto a ser classificado.\n            </li>\n            <li>\n            decrescente: um lógico. A classificação deve ser crescente ou decrescente? (o padrão é decrescente)\n            </li>\n            <li>\n            na.last: na.last não é suportado para associações. NAs são sempre colocados por último.\n            </li>\n            <li>\n            por: uma string de caracteres especificando a medida de qualidade armazenada em x a ser usada para classificar x. Se um vetor de strings de caracteres for especificado, as strings adicionais são usadas para classificar x em caso de empates.\n            </li>\n            <li>\n            ordem: deve um vetor de ordem ser retornado em vez das associações classificadas?\n            </li>\n            <li>\n            n: um único inteiro indicando o número de associações retornadas.\n            </li>\n            <li>\n            ... : Argumentos adicionais são ignorados.\n            </li>                                    \n            </ul>\n            <br/><br/>     \n            <b> \n            Detalhes\n            </b> \n            <br/>\n            classificar é relativamente lento para grandes conjuntos de associações, pois precisa copiar e reorganizar uma grande estrutura de dados. Observe que a classificação cria uma segunda cópia do conjunto de associações, o que pode ser lento e consumir muita memória para grandes conjuntos. Com ordem = TRUE, um vetor inteiro com a ordem é retornado em vez das associações reordenadas.\n            Se apenas as n principais associações forem necessárias, então cabeça usando por realiza isso mais rápido do que chamar classificar e depois cabeça, pois faz isso sem copiar e reorganizar todos os dados. cauda funciona da mesma maneira.\n            <br/><br/>  \n            <b> \n            Valor\n            </b> \n            <br/>\n            Um objeto da mesma classe que x.                  \n    "
+  }
+}

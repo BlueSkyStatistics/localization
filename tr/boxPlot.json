@@ -1,0 +1,27 @@
+{
+  "title": "Kutu Grafiği",
+  "dropna": "Eksik değerleri kaldır",
+  "navigation": "Kutu Grafiği",
+  "x": "X değişkeni, bir faktör değişkeni belirtin",
+  "y": "Y değişken(leri), bir sayısal değişken(leri) belirtin",
+  "fill": "Doldurma, bir faktör değişkeni belirtin",
+  "dataPoints": "Veri noktalarını çizmek için bir seçenek seçin",
+  "alpha": "Opaklık (0-1)",
+  "flip": "Eksenleri çevir",
+  "notch": "Girinti",
+  "outliers": "Aykırı Değerleri Göster (Kırmızı Olarak)",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X Eksen Etiketi",
+  "y_title": "Y Eksen Etiketi",
+  "barcolor": "Kutu çevresindeki çizgiler için bir renk seçin (Renk seçiminin ardından, uygulamak için kontrolün dışına tıklayın)",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmala",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Kutu Grafiği",
+    "r_help": "help(geom_boxplot, package=ggplot2)",
+    "body": "\n        <b>Açıklama</b></br>\n        Tanımlayıcı istatistiklerde, bir kutu grafiği veya boxplot, sayısal veri gruplarını çeyrekleri aracılığıyla grafiksel olarak göstermenin uygun bir yoludur. Kutu grafikleri ayrıca kutulardan (bıyıklar) yukarı ve aşağı çeyreklerin dışındaki değişkenliği gösteren dikey olarak uzanan çizgilere sahip olabilir, bu nedenle kutu ve bıyık grafiği ve kutu ve bıyık diyagramı terimleri kullanılmaktadır. Aykırı değerler bireysel noktalar olarak çizilebilir. Kutu ve bıyık grafikleri kutunun kullanımında tutarlıdır: kutunun alt ve üst kısmı her zaman birinci ve üçüncü çeyreklerdir ve kutunun içindeki bant her zaman ikinci çeyrektir (medyan). Üst bıyık, menteşeden başlayarak menteşenin 1.5 * IQR içinde olan en yüksek değere kadar uzanır, burada IQR, birinci ve üçüncü çeyrekler arasındaki mesafedir. Alt bıyık, menteşeden başlayarak menteşenin 1.5 * IQR içinde olan en düşük değere kadar uzanır. Bıyıkların sonunu aşan veriler aykırı değerlerdir ve noktalar olarak çizilir (Tukey tarafından belirtilmiştir).​</br>\n        Yüzeyler, bir faktör değişkeni belirterek isteğe bağlı olarak oluşturulabilir. Ayrıca isteğe bağlı olarak temalar belirtebilir ve x ve y eksenleri için bir başlık ve etiketler belirtebilirsiniz.​</br>\n        Veri noktalarını çizmek için seçeneği seçtiğinizde, bunu geom_dotplot kullanarak yapıyoruz.</br>\n        Varsayılan olarak, aykırı değerler siyah noktalarla gösterilir, aykırı değerleri gösterme seçeneğini (Kırmızı Olarak) onay kutusu aracılığıyla seçtiğinizde, aykırı değerler daha belirgin hale gelir.\n        <br/>\n        <b>Kullanım</b>\n        <br/>\n        <code> \n        ggplot(data =Dataset,aes(x = var1,y = var2,fill = var3)) + geom_boxplot()  + \n        geom_dotplot(binaxis = 'y',stackdir = 'center',dotsize = 0.1)+ coord_flip()+ labs(x = \"var1\",y = \"var2\",fill = \"var3\")   +facet_grid(var4~.)​\n        </code> <br/>\n        <b>Argümanlar</b><br/>\n        <ul>\n        <li>\n        data: Varsayılan veri seti​\n        </li>\n        <li>\n        x: y değişkeninin gruplamasını tanımlayan bir faktör/kategorik değişken​\n        </li>\n        <li>\n        y: Kutu grafiği hesaplanan bir sayısal değişken​\n        </li>\n        <li>\n        fill: Mevcut grupları daha fazla gruplamak için isteğe bağlı bir faktör/kategorik değişken. Her alt grup farklı bir renkte gösterilecektir.​\n        </li>\n        <li>\n        aes():    Verilerdeki değişkenlerin görsel özelliklere (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeler oluşturur.​\n        </li>\n        <li>\n        geom_boxplot():Kutu grafiğini oluşturur. Üst ve alt \"menteşeler\" birinci ve üçüncü çeyreklerle (25. ve 75. yüzdelik dilimlerle) eşleşir.​\n        </li>\n        <li>\n        geom_dotplot: Veri noktalarını çizer\n        </li>\n        <li>\n        Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (Bu isteğe bağlıdır)​\n        </li>\n        <li>\n        facet_grid(): Panelleri bir ızgarada düzenler (Bu isteğe bağlıdır)​\n        </li>\n        <li>\n        theme_calc(): Hesap makinesi temasını belirtir (Bu isteğe bağlıdır)​\n        </li>\n        <li>\n        coord_flip(): Eksenleri çevirir (Bu isteğe bağlıdır)​\n        </li>\n        <li>\n        notch: Girintili kutu grafikleri, medyan etrafında bir \"girinti\" veya kutunun daralmasını uygular. Girintiler, medyanların farkının önemine dair kaba bir kılavuz sunmada faydalıdır; iki kutunun girintileri örtüşmüyorsa, bu medyanlar arasında istatistiksel olarak anlamlı bir fark olduğuna dair kanıt sunar. Girintili bir kutu grafiğinde, girintiler 1.58 * IQR / sqrt(n) kadar uzanır.\n        </li>\n        </ul>\n        <b>Paket</b></br>\n        ggplot2;ggthemes;stringr</br>\n        <b>Yardım</b></br>\n        help(geom_boxplot, package=ggplot2)</br>\n        Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(geom_boxplot), help(labs), help(aes), help(facet_grid), help(theme_calc), help(coord_flip), help (geom_dotplot) yazabilirsiniz.\n        "
+  }
+}

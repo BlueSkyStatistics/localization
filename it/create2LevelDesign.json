@@ -1,0 +1,20 @@
+{
+  "title": "Crea un design di screening frazionale non regolare a 2 livelli",
+  "navigation": "Crea design di screening a 2 livelli",
+  "selectedvars": "Seleziona variabili",
+  "datasetname": "Nome del design",
+  "numOfRuns": "Numero di esecuzioni (multiplo di 4, >=8)",
+  "taguchiOrderChk": "(Solo rilevante per) design a 12 esecuzioni in ordine Taguchi",
+  "numOfCenterPts": "Numero di punti centrali (se utilizzati, avere minimo 2)",
+  "centerPointDistribution": "Numero di posizioni per la distribuzione del punto centrale (avere >1)",
+  "replications": "Repliche",
+  "repeatOnlyChk": "Ripeti solo",
+  "lbl1": "Potresti non dover modificare le impostazioni di randomizzazione",
+  "randomseeds": "Semenza per la randomizzazione",
+  "randomizationChk": "Randomizza la generazione del design",
+  "help": {
+    "title": "Crea design di screening a 2 livelli",
+    "r_help": "help(pb, package = FrF2)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione Plackett-Burman(pb) per generare design di screening frazionali non regolari a 2 livelli\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(pb, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi usare il file di dataset di esempio chiamato factor_grid_twolevel_screen_Design.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

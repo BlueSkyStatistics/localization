@@ -1,0 +1,18 @@
+{
+  "title": "Mevcut bir FrF2 Tasarımından Merkezi Kompozit (Nicel) Tasarım Oluştur",
+  "navigation": "Merkezi Kompozit (Nicel) Tasarım Oluştur",
+  "datasetname": "Tasarım adı",
+  "datasetFrF2": "Mevcut bir FrF2 (Nicel) tasarımını seçin",
+  "alpha": "Yıldız noktalarının sayısı (alpha)",
+  "alphalbl": "\"ortogonal\", \"dönüştürülebilir\" veya yıldız noktalarının konumunu belirten bir sayı",
+  "numOfCenterPts": "Merkez noktalarının sayısı veya virgülle ayrılmış iki sayı (küp ve yıldız kısmı için)",
+  "blockName": "Blok adı",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmenize gerek olmayabilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım oluşturmayı rastgeleleştir",
+  "help": {
+    "title": "Mevcut bir FrF2 Tasarımından Merkezi Kompozit (Nicel) Tasarım Oluştur",
+    "r_help": "help(ccd.augment, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tccd.augment fonksiyonu, geç bir karar durumunda bir yıldız kısmı ile mevcut bir kesirli faktöryel tasarımı artırmak için (rsm paketi kullanarak)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(ccd.augment, package = DoE.wrapper) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, CCD.xlsx için FrF2 tasarımı için faktörler adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\tÖncelikle FrF2 tasarımını oluşturun (4 faktör ile) - koşu sayısı seçeneğini 0 ve çözünürlüğü 5 olarak seçin.\n\t\t\t\tSonra yukarıdaki FrF2 tasarımından merkezi kompozit tasarımını oluşturun, bu merkezi kompozit tasarım diyalog/arayüzünde tüm varsayılan seçenekleri koruyarak\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

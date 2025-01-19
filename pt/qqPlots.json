@@ -1,0 +1,28 @@
+{
+  "title": "Gráficos Q-Q",
+  "navigation": "Q-Q",
+  "x": "Eixo X, especifique uma variável numérica",
+  "alpha": "Opacidade (0-1)",
+  "y": "Forma, especifique uma variável fator",
+  "color": "Cor, especifique uma variável fator",
+  "referenceline": "Linha de referência",
+  "band": "Mostrar bandas",
+  "detrend": "Remover tendência",
+  "flip": "Inverter Eixo",
+  "distribution": "Selecionar uma distribuição",
+  "x_title": "Rótulo do Eixo X",
+  "y_title": "Rótulo do Eixo Y",
+  "label1": "Parâmetros da distribuição, por exemplo, para uma distribuição normal, os parâmetros da distribuição podem ser média=2, desvio padrão=2, então insira média=2, desvio padrão=2. Para uma distribuição exponencial, os parâmetros podem ser taxa=2, então insira taxa=2.",
+  "specify_a_title": "Insira um título",
+  "dparams": "Opcionalmente insira parâmetros da distribuição",
+  "Facetrow": "Linha de Facetas",
+  "Facetcolumn": "Coluna de Facetas",
+  "Facetwrap": "Envolver Facetas",
+  "Facetscale": "Escala de Facetas",
+  "facets_lbl": "Facetas",
+  "help": {
+    "title": "Gráficos Q-Q",
+    "r_help": "help(stat_qq_point,package='qqplotr')",
+    "body": "\n            <b>Descrição</b></br>\n            Um gráfico Q–Q (quantil-quantil) é um gráfico de probabilidade, que é um método gráfico para comparar duas distribuições de probabilidade, plotando seus quantis um contra o outro. Por padrão, comparamos a distribuição de probabilidade da variável selecionada com a distribuição normal, no entanto, você pode comparar com várias outras distribuições, incluindo beta, cauchy, chisq, exp, f, gamma... Você também pode especificar os parâmetros da distribuição associados à distribuição que está sendo comparada. Clique no botão de opções na caixa de diálogo principal para selecionar uma distribuição e especificar os parâmetros da distribuição. Você pode selecionar uma variável fator para agrupar a variável selecionada. Nesse caso, um gráfico Q-Q separado é desenhado para cada grupo.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_line(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_point(distribution=\"norm\",detrend = TRUE) +\n             coord_flip() +\n             labs(x = \"Pontos de Probabilidade\",y =\"Quantis da Amostra\",title = \"Gráfico QQ para a variável var1\")</br></br>\n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_line(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_point(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE)+\n             labs(x = \"Pontos de Probabilidade\",y =\"Quantis da Amostra\",title = \"Gráfico QQ para a variável var1\")\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão​\n            </li>\n            <li>\n            aes(): Gere mapeamentos estéticos que descrevem como as variáveis nos dados são mapeadas para propriedades visuais (estéticas) dos geoms.​\n            </li>\n            <li>\n            sample: a variável numérica para plotar o gráfico P-P\n            </li>\n            <li>\n            stat_qq_point: Esta é uma versão modificada de ggplot2::stat_qq com alguns ajustes de parâmetros e uma nova opção para remover a tendência dos pontos.\n            </li>\n            <li>\n            stat_qq_line: Desenha uma linha de referência com base nos quantis dos dados, como em stats::qqline.\n            </li>\n            <li>\n            stat_qq_band: Desenha bandas de confiança com base em três métodos: \"normal\",\"boot\" e\"ts\":\n            \"normal\" constrói bandas de confiança simultâneas com base em intervalos de confiança normais;\n            \"boot\" cria bandas de confiança pontuais com base em um bootstrap paramétrico;\n            \"ts\" constrói bandas de confiança sensíveis a cauda, conforme proposto por Aldor-Noiman et al. (2013).\n            </li>\n            <li>\n            shape: Uma variável fator opcional que agrupa os valores atribuídos à amostra. Um gráfico P-P separado é criado para cada grupo conforme determinado pelos níveis da variável fator​. Cada grupo é indicado por uma forma diferente\n            </li>\n            <li>\n            Labs(): Altere os rótulos dos eixos e os títulos da legenda (isto é opcional)​\n            </li>\n            <li>\n            facet_grid(): Organize os painéis em uma grade (isto é opcional)​. Veja help(facet_grid) para mais detalhes.\n            </li>\n            <li>  ​\n            coord_flip(): Inverter eixo (isto é opcional)​\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>Ajuda</b></br>\n            help(stat_qq_point,package='qqplotr')</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode digitar help(labs), help(stat_qq_point), help(aes), help(facet_grid), help(coord_flip)​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n"
+  }
+}

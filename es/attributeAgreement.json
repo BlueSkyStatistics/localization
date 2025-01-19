@@ -4,12 +4,12 @@
   "variablePartSelcted": "Seleccione la variable para muestra/parte",
   "variableOpSelcted": "Seleccione la variable para evaluador/operador",
   "variableRespSelcted": "Seleccione la variable para atributo/respuesta",
-  "variableRefSelcted": "(Opcional) Seleccione la variable para respuesta/estándar de referencia",
+  "variableRefSelcted": "(Opcional) Seleccione la variable para respuesta de referencia/estándar",
   "alpha": "Intervalo de confianza (alpha) entre 0 y 1",
   "rowsTobeUsed": "Deje en blanco si se deben usar todas las filas. De lo contrario, especifique las filas a utilizar para analizar (por ejemplo, especifique como 1:25 o 1,4,5,7:12)",
   "help": {
     "title": "Análisis de acuerdo de atributos",
     "r_help": "help(kappam.fleiss, package = irr)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar análisis de acuerdo de atributos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar los archivos de conjunto de datos de muestra attributemsaAB.xlsx para \n\t\t\t\tdos operadores, A y B, cada uno con 20 observaciones repetidas dos veces con calificaciones P y F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTambién puede probar el archivo de conjunto de datos de muestra attributemsaABCordered.RData con tres operadores, A, B, C, cada uno con 10 observaciones repetidas dos veces con calificaciones \"ordenadas\" (ordinales) \n\t\t\t\tcomo No de acuerdo, Algo en desacuerdo, Neutral, Algo de acuerdo y De acuerdo. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAbra los archivos en la cuadrícula de datos con el menú de apertura de archivos\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar análisis de acuerdo de atributos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(kappam.fleiss, package = irr)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar los archivos de conjunto de datos de muestra attributemsaAB.xlsx para \n\t\t\t\tdos operadores, A y B, cada uno con 20 observaciones repetidas dos veces con calificaciones P y F.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTambién puede probar el archivo de conjunto de datos de muestra attributemsaABCordered.RData con tres operadores, A, B, C, cada uno con 10 observaciones repetidas dos veces con calificaciones \"ordenadas\" (ordinales) \n\t\t\t\tcomo Desacuerdo, Algo en Desacuerdo, Neutral, Algo de Acuerdo y Acuerdo. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAbra los archivos en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t"
   }
 }

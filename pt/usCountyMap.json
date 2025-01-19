@@ -1,0 +1,15 @@
+{
+  "title": "Mapa de Condados dos EUA",
+  "navigation": "Mapa de Condados dos EUA",
+  "region": "Variável com nomes de condados:",
+  "value": "Variável com valores para mapear:",
+  "colors": "Insira o número de cores",
+  "zoomByStates": "Insira os estados para ampliar, por exemplo, califórnia, oregon, washington",
+  "specify_a_title": "Insira um título",
+  "legend": "Legenda:",
+  "help": {
+    "title": "Mapa de Condados dos EUA",
+    "r_help": "help(county_choropleth, package='choroplethr')",
+    "body": "\n            <b>Descrição</b></br>\n            Desenha um mapa de condados e permite que você amplie opcionalmente 1 ou mais estados\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            county_choropleth(BSkyDfForMap, title=\"{{title}}\", legend=\"{{legend}}\",num_colors ={{colors}}, state_zoom={{zoomByStates}})\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: Um data.frame com uma coluna chamada \"region\" e uma coluna chamada \"value\". Os elementos na coluna \"region\" devem corresponder exatamente aos nomes das regiões na coluna \"region\" em county.map. Para ver as variáveis em county.map, execute os comandos R na outra seção abaixo.\n                </li>\n                <li>\n            Título: Um título opcional para o mapa.\n            </li>\n            <li>\n            Legenda: Um nome opcional para a legenda.\n            </li>\n            <li>\n            num_colors: O número de cores no mapa. Um valor de 1 usará uma escala contínua. Um valor em [2, 9] usará essa quantidade de cores.\n            </li>\n            <li>\n            ​state_zoom: Um vetor opcional de estados para ampliar. Os elementos deste vetor devem corresponder exatamente aos nomes dos estados como aparecem na coluna \"region\" de ?state.regions.\n            Acessar state.regions é semelhante a acessar county.map\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Ajuda</b></br>\n            help(county_choropleth, package='choroplethr')</br>\n            <b>Outro</b></br>\n            <code> \n            # Execute o código abaixo para acessar o conjunto de dados county.map</br>\n            library(choroplethr)</br>\n            library(choroplethrMaps)</br>\n            data(county.map)</br>\n            county.map </br>\n            </code> <br/>\n    "
+  }
+}

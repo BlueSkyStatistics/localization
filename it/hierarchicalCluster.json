@@ -1,0 +1,29 @@
+{
+  "title": "Cluster Gerarchico",
+  "navigation": "Gerarchico",
+  "destination": "Destinazione",
+  "clusters": "Numero di cluster",
+  "storeClusterInDataset": "Assegna cluster al dataset",
+  "variablename": "Nome della variabile per memorizzare i cluster",
+  "biplot": "Mostra biplot dei cluster",
+  "dendogram": "Traccia dendrogramma dei cluster",
+  "labelForClusteringMethod": "Metodo di clustering",
+  "Methodlabel": "Metodo",
+  "MethodRadlabel1": "Metodo di Wards",
+  "MethodRadlabel2": "Collegamento Singolo",
+  "MethodRadlabel3": "Collegamento Completo",
+  "MethodRadlabel4": "Collegamento Medio",
+  "MethodRadlabel5": "Metodo di McQuitty",
+  "MethodRadlabel6": "Collegamento Mediano",
+  "MethodRadlabel7": "Collegamento Centroidale",
+  "Metriclabel": "Metrica",
+  "MetricRadlabel1": "Euclidea",
+  "MetricRadlabel2": "Euclidea Quadrata",
+  "MetricRadlabel3": "Manhattan (City Block)",
+  "MetricRadlabel4": "Nessuna Trasformazione",
+  "help": {
+    "title": "Cluster Gerarchico",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>Descrizione</b></br>\nAnalisi dei cluster gerarchici su un insieme di dissimilarità e metodi per analizzarlo.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvarsToCluster: Le variabili da analizzare \n</li>\n<li>\nmethod: il metodo di agglomerazione da utilizzare. Questo dovrebbe essere (un'abbreviazione inequivocabile di) uno di \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) o \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: Il numero di cluster desiderati\n</li>\n<li>\nplotDendogram: Tracciare un dendrogramma Vero o falso\n</li>\n<li>\nassignClusterToDataset: Salva le assegnazioni dei cluster nel dataset\n</li>\n<li>\nlabel: nome per la nuova variabile che memorizza le assegnazioni dei cluster\n</li>\n<li>\nplotBiplot: traccia Biplot VERO o FALSO\n</li>\n</ul>\n<b>Pacchetto</b></br>\nBlueSky</br>\n<b>Aiuto</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>Descrizione</b></br>\nplotDendrogram: Chiama la funzione di tracciamento per tracciare il dendrogramma dei cluster\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nmethod: vedi sopra\n</li>\n<li>\ndistance: vedi sopra\nplotBiplot: traccia Biplot VERO o FALSO\n</li>\n</ul>\n<b>Pacchetto</b></br>\nBlueSky</br>\n<b>Aiuto</b></br>\nhelp(plot)\n    "
+  }
+}

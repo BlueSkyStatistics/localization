@@ -1,0 +1,25 @@
+{
+  "label1": "Kantile regresyon modeli eğimlerini karşılaştırmak için \"Model Değerlendirme > Karşılaştır > Kant Reg Modelleri\"ne bakın",
+  "title": "Kantile Regresyon",
+  "navigation": "Kantile",
+  "modelname": "Model adını girin",
+  "depvarlabel": "Bağımlı Değişken",
+  "quantilelabel": "Kantile (0-1)",
+  "estgrplabel": "Tahmin Yöntemi",
+  "brlabel": "Barrodale ve Roberts",
+  "fnlabel": "Frisch-Newton",
+  "pfnlabel": "Frisch-Newton, ön işleme",
+  "sfnlabel": "Frisch-Newton, seyrek",
+  "stderrgrplabel": "Standart Hata Yöntemi",
+  "ranklabel": "Sıralama",
+  "iidlabel": "IID",
+  "nidlabel": "NID",
+  "kernallabel": "Kernal",
+  "bootstraplabel": "Bootstrap",
+  "bootsamplabel": "Bootstrap Örnekleri",
+  "help": {
+    "title": "Kantile Regresyon",
+    "r_help": "help(rq, package = 'quantreg')",
+    "body": "\nBu, sonuç değişkeninin istenen bir kantilini (yani yüzdelik dilimini) modelleyen bir kantile regresyon modeli uygular.  Modellemek için tipik bir kantil 0.5, yani medyandır.  \nBir model özeti ve %95 güven aralıkları ile parametre tahminleri sağlanır.\n<br/><br/>\n<b>Model Adını Girin:</b>  modelin istenen adı\n<br/><br/>\n<b>Bağımlı Değişken:</b>  Model için bağımlı değişkeni belirtin.  Bu değişkenin istenen kantili modelleyecektir.  Bu sayısal olmalıdır.\n<br/><br/>\n<b>Formül Oluşturucu:</b>  Formül notasyonu kullanarak model terimlerini belirtin.  Sayısal, faktör, sıralı faktör ve karakter değişkenleri kabul edilir.  Karakter değişkenleri faktörlere dönüştürülecektir.\n<br/><br/>\n<b>Kantile (0-1):</b>  Bağımlı değişken için modellemek istediğiniz kantili belirtin.  0.5 (medyan) varsayılandır ve tipik bir miktardır.\n<br/><br/>\n<b>Tahmin Yöntemi:</b>  Model parametreleri için tahmin yöntemini belirtin.  Barrodale ve Roberts yöntemi varsayılandır ve birkaç bin gözlemli modeller için etkilidir.  Frisch-Newton ve Frisch-Newton, ön işleme yaklaşımı büyük ve çok büyük problemler için avantajlı olabilir, özellikle de az sayıda tahmin edilen parametre olduğunda.  Büyük örnek boyutları ile çok sayıda parametre olduğunda, Frisch-Newton, seyrek yöntemi gerekebilir.  \nDetaylar için R Yardımındaki referanslara bakın.\n<br/><br/>\n<b>Standart Hata Yöntemi:</b>  Standart hataları ve güven aralıklarını tahmin etmek için kullanılan yöntemi belirtin.  Sıralama yöntemi yalnızca güven aralıkları sağlar, daha büyük örnek boyutları (n > 1000) için yavaş çalışabilir ve bir sıralama testini tersine çevirmeye dayanır.  IID yöntemi hataların bağımsız ve aynı dağılımlı (iid) olduğunu varsayar.  NID yöntemi kantilde yerel doğrusalite varsayar ve yerel bir seyreklik tahmini kullanarak bir sandviç tahmini hesaplar.  Kernal yöntemi, sandviçin bir kernal tahminini kullanır.  Bootstrap yöntemi, standart hataları tahmin etmek için yeniden örnekleme bootstrap yaklaşımını kullanır.  Detaylar için R Yardımındaki referanslara bakın.\n<br/><br/>\n<b>Bootstrap Örnekleri:</b>  Bootstrap standart hata yaklaşımı için istenen bootstrap örnek sayısı.  Varsayılan 2000 örnektir.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> quantreg, broom\n\t\t"
+  }
+}

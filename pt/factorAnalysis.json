@@ -1,0 +1,31 @@
+{
+  "title": "Análise Fatorial",
+  "navigation": "Fator",
+  "destination": "Selecionar variáveis",
+  "label1": "Extração de fatores",
+  "factorextraction1": "Extrair fatores automaticamente",
+  "factorextraction2": "Especificar o número de fatores a serem extraídos",
+  "noOfFactors": "Digite o número de fatores a serem extraídos",
+  "screeplot": "Gráfico de Scree",
+  "label2": "Escores dos Fatores",
+  "saveScores": "Salvar escores dos fatores no conjunto de dados",
+  "scores1": "Método de Bartlett, digite um prefixo de nome de variável",
+  "scores2": "Método de Regressão, digite um prefixo de nome de variável",
+  "varForScores": "Digite o prefixo do nome da variável para os escores:",
+  "label3": "Opções de Rotação",
+  "grpBox21": "Nenhum",
+  "grpBox22": "Varimax",
+  "grpBox23": "Promax",
+  "grpBox24": "BentlerQ",
+  "grpBox25": "Quartimax",
+  "grpBox26": "Oblimin",
+  "grpBox27": "GeominQ",
+  "grpBox28": "GeominT",
+  "grpBox29": "Simplimax",
+  "parallel": "Análise paralela",
+  "help": {
+    "title": "Análise Fatorial",
+    "r_help": "help(factanal, package ='stats')",
+    "body": "\n<b>Descrição</b></br>\n​Realiza análise fatorial de máxima verossimilhança em uma matriz de covariância ou matriz de dados e gera um gráfico de scree. Chama a função factanal no pacote stats.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyFARes <-BSkyFactorAnalysis(vars=c('var1','var2','var3','var4','var5','var6'), autoextraction =TRUE, screeplot =FALSE,rotation=\"none\",saveScores =FALSE,dataset=\"Dataset\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: Uma ou mais variáveis numéricas para extrair fatores.\n</li>\n<li>\nautoextraction: Determinar automaticamente o número de fatores ou extrair números específicos de fatores.\n</li>\n<li>\nscreeplot: Se TRUE, gera um gráfico de scree.\n</li>\n<li>\nrotation: determina o tipo de rotação e aceita um dos valores (nenhum, quartimax, geominT, varimax, oblimin, simplimax, promax, geominQ e bentlerQ)\n</li>\n<li>\nsaveScores: salva os escores dos fatores no conjunto de dados\n</li>\n<li>\ndataset: O conjunto de dados do qual as 'vars' foram selecionadas.\n</li>\n</ul>\n<b>Detalhes</b></br>\nUm objeto da classe \"factanal\" com componentes</br>\nloadings: Uma matriz de cargas, uma coluna para cada fator. Os fatores são ordenados em ordem decrescente de somas de quadrados de cargas, e dados o sinal que tornará a soma das cargas positiva. Isso é da classe \"loadings\": veja loadings para seu método de impressão.</br>\nuniquenesses: As unicidades computadas.</br>\ncorrelation: A matriz de correlação utilizada.</br>\ncriteria: Os resultados da otimização: o valor do critério (uma função linear da log-verossimilhança negativa) e informações sobre as iterações utilizadas.</br>\nfactors: O argumento fatores.</br>\ndof: O número de graus de liberdade do modelo de análise fatorial.</br>\nmethod: O método: sempre \"mle\".</br>\nrotmat:\tA matriz de rotação, se relevante.</br>\nscores: Se solicitado, uma matriz de escores. napredict é aplicado para lidar com o tratamento de valores omitidos pela na.action.</br>\nn.obs: O número de observações, se disponível, ou NA.</br>\ncall: A chamada correspondente.</br>\nna.action: Se relevante.</br>\nSTATISTIC, PVAL: O estatístico do teste de significância e o valor P, se puder ser computado.</br>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nhelp(factanal, package ='stats')\n"
+  }
+}

@@ -1,26 +1,26 @@
 {
-  "title": "Hacer predicciones con KNN",
+  "title": "Hacer Predicciones con KNN",
   "navigation": "Predecir con KNN",
   "dataset_var": "Abrir conjuntos de datos",
   "header": "KNN es un clasificador perezoso, no crea un modelo ajustado que se pueda usar para predecir más tarde. Se ajusta y hace predicciones al mismo tiempo. Debe seguir los pasos a continuación para hacer predicciones/calificaciones.",
   "NOTE1": "EL CONJUNTO DE DATOS ACTIVO DEBE SER EL CONJUNTO DE DATOS EN EL QUE DESEA CONSTRUIR UN MODELO Y NO EL CONJUNTO DE DATOS QUE DESEA CALIFICAR",
-  "step1": "Paso 1: Como de costumbre, debe seleccionar el conjunto de datos de entrenamiento en el Datagrid antes de abrir este cuadro de diálogo.",
+  "step1": "Paso 1: Como de costumbre, debe seleccionar el conjunto de datos de entrenamiento en el Datagrid antes de abrir este diálogo.",
   "step2": "Paso 2: Seleccione la variable dependiente en el conjunto de datos de entrenamiento utilizado para ajustar el modelo.",
   "step3": "Paso 3: Especifique las variables independientes en el conjunto de datos de entrenamiento.",
-  "step4": "Paso 4: Especifique el número de vecinos que se utilizarán para construir el modelo.",
+  "step4": "Paso 4: Especifique el número de vecinos a utilizar para construir el modelo.",
   "step5": "Paso 5: Ingrese un prefijo de variable para la nueva variable que contiene las predicciones.",
-  "step6": "Paso 6: Especifique el conjunto de datos al que se agregarán las predicciones. Debe contener las mismas variables independientes utilizadas para entrenar el modelo.",
+  "step6": "Paso 6: Especifique el conjunto de datos al que agregar predicciones. Debe contener las mismas variables independientes utilizadas para entrenar el modelo.",
   "dependentvar": "Variable dependiente (del conjunto de datos de entrenamiento)",
   "independentvars": "Variable(s) independiente(s) (del conjunto de datos de entrenamiento)",
-  "Seed": "Establecer semilla",
-  "datasetToScore": "Conjunto de datos para puntuar/predicción",
+  "Seed": "Establecer Semilla",
+  "datasetToScore": "Conjunto de datos para calificar/predecir",
   "Group2": "Parámetros de ajuste para KNN",
-  "noneighbhors": "Número de vecinos (Cuando no se especifica un valor, el valor predeterminado se establece en la raíz cuadrada del número de observaciones en el conjunto de datos)",
+  "noneighbhors": "No. de vecinos (Cuando no se especifica un valor, el valor predeterminado se establece en la raíz cuadrada del número de observaciones en el conjunto de datos)",
   "testDatasetName": "Ingrese el nombre del conjunto de datos para hacer predicciones",
   "predictedValues": "Ingrese el prefijo de variable para los valores predichos. Se crea una nueva variable al agregar el prefijo al nombre de la variable dependiente.",
   "help": {
     "title": "K Vecinos Más Cercanos",
-    "r_help": "ayuda(knn, paquete ='class')",
-    "body": "\n                <b>Descripción</b></br>\nClasificación por k-vecinos más cercanos\n<br/>\n<b>Nota: </b></br>\nVea el texto de ayuda en el cuadro de diálogo\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ntrain: Este es el conjunto de datos fuente (activo) utilizado para crear un modelo ajustado.\n</li>\n<li>\ntest: Este es el conjunto de datos en el que se guardarán los valores predichos cuando el prefijo que especificó. Se crea una nueva variable al agregar el prefijo al nombre de la variable dependiente del conjunto de datos fuente.\n</li>\n<li>\ncl: factor de verdaderas clasificaciones del conjunto de datos utilizado para ajustar el modelo\n</li>\n<li>\nk: número de vecinos considerados.\n</li>\n<li>\nl: voto mínimo para una decisión definitiva, de lo contrario, duda. (Más precisamente, se permiten menos de k-l votos disidentes, incluso si k se incrementa por empates.)\n</li>\n<li>\nprob: Si esto es verdadero, la proporción de los votos para la clase ganadora se devuelve como atributo prob.\n</li>\n<li>\nuse.all: controla el manejo de empates. Si es verdadero, se incluyen todas las distancias iguales al k-ésimo más grande. Si es falso, se elige una selección aleatoria de distancias iguales al k-ésimo para usar exactamente k vecinos.\n</li>\n</ul>\n<b>Valor</b></br>\nFactor de clasificaciones del conjunto de prueba. la duda se devolverá como NA.</br>\n<b>Paquete</b></br>\ncaret;class</br>\n<b>Ayuda</b></br>\nayuda(knn, paquete ='class')\n                "
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Descripción</b></br>\nClasificación k-Vecino Más Cercano\n<br/>\n<b>Nota: </b></br>\nVea el texto de ayuda en el diálogo\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nknn(train= dataset1, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ntrain: Este es el conjunto de datos fuente (activo) utilizado para crear un modelo ajustado.\n</li>\n<li>\ntest: Este es el conjunto de datos al que se guardarán los valores predichos cuando el prefijo que especificó. Se crea una nueva variable al agregar el prefijo a la variable dependiente especificada del conjunto de datos fuente.\n</li>\n<li>\ncl: factor de clasificaciones verdaderas del conjunto de datos utilizado para ajustar el modelo\n</li>\n<li>\nk: número de vecinos considerados.\n</li>\n<li>\nl: voto mínimo para una decisión definitiva, de lo contrario, duda. (Más precisamente, se permiten menos de k-l votos disidentes, incluso si k se incrementa por empates.)\n</li>\n<li>\nprob: Si esto es verdadero, la proporción de los votos para la clase ganadora se devuelve como atributo prob.\n</li>\n<li>\nuse.all: controla el manejo de empates. Si es verdadero, todas las distancias iguales a la k-ésima más grande se incluyen. Si es falso, se elige una selección aleatoria de distancias iguales a la k-ésima para usar exactamente k vecinos.\n</li>\n</ul>\n<b>Valor</b></br>\nFactor de clasificaciones del conjunto de prueba. la duda se devolverá como NA.</br>\n<b>Paquete</b></br>\ncaret;class</br>\n<b>Ayuda</b></br>\nhelp(knn, package ='class')\n                "
   }
 }

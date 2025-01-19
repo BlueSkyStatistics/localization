@@ -1,0 +1,17 @@
+{
+  "title": "역 박스-콕스 변환 (비변환 값으로 다시 변환)",
+  "navigation": "역 박스-콕스",
+  "label2": "이전 박스-콕스 변환에서 변환된 값을 다시 변환할 변수 또는 숫자 값을 선택하거나 입력하세요. Lambda (λ) 값",
+  "variableSelcted": "변수 선택",
+  "selectVariableRad": "옵션 1: 이전 박스-콕스 변환에서 다시 변환할 변수를 선택하세요",
+  "invBoxCoxColName": "(선택 사항) 변환된 값을 저장할 새 변수 이름을 지정하세요. 그렇지 않으면 <variable_Invbcox>가 생성됩니다.",
+  "selectNumberRad": "옵션 2: 박스-콕스 변환에서 다시 변환할 숫자 값을 입력하세요",
+  "invNumber": "숫자 값을 입력하세요",
+  "lambda": "(선택 사항) 박스-콕스 변환에서 다시 변환하는 데 사용할 (-2에서 2 사이의) Lambda (λ) 값을 지정하세요. 그렇지 않으면 위에서 선택한 변수에 대해 원래 박스-콕스 변환에 사용된 Lambda (λ) 값이 사용됩니다.",
+  "digits": "자릿수 - 지정된 소수 자릿수로 반올림합니다.",
+  "help": {
+    "title": "이전 박스-콕스 변환 값에서 다시 변환하기 (역변환)",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t지정된 람다 또는 선택한 변수와 관련된 람다를 사용하여 이전 박스-콕스 변환 값에서 다시 변환합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t박스-콕스 또는 Lambda (λ)에 대한 자세한 도움말은 R help(boxcox, package = MASS)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS 박스-콕스에 대한 좋은 개요는 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html을 참조하세요.</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t친숙한 박스-콕스 변환과 관련된 Lambda (λ) 값\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 제곱 변환 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 변환 없음; 원래 데이터 ( x )를 반환합니다.\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 제곱근 변환 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 세제곱근 변환\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 네 번째 근 변환\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 자연 로그 변환 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 역 제곱근 변환 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 역변환 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 역 제곱 변환 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

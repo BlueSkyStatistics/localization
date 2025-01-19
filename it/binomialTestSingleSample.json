@@ -1,0 +1,16 @@
+{
+  "title": "Test Binomiale Esatto per un Campione Singolo",
+  "navigation": "Test Binomiale",
+  "tvarbox1": "Fattore (uno) con solo 2 livelli",
+  "label1": "Ipotesi alternativa",
+  "test1": "Media della popolazione != mu",
+  "test2": "Media della popolazione > mu",
+  "test3": "Media della popolazione < mu",
+  "txtbox1": "Livello di confidenza",
+  "txtbox2": "Ipotesi nulla (mu nell'intervallo 0-1)",
+  "help": {
+    "title": "Test Binomiale Esatto",
+    "r_help": "help(binom.test, package=stats)",
+    "body": "\n                <b>Descrizione</b></br>\nEsegue un test esatto di una semplice ipotesi nulla sulla probabilità di successo in un esperimento di Bernoulli.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code>\nbinom.test(x, n, p = 0.5,<br/>\n           alternative = c(\"two.sided\", \"less\", \"greater\"),<br/>\n           conf.level = 0.95)<br/>\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: numero di successi, o un vettore di lunghezza 2 che fornisce i numeri di successi e fallimenti, rispettivamente.\n</li>\n<li>\nn: numero di prove; ignorato se x ha lunghezza 2.\n</li>\n<li>\np: probabilità ipotizzata di successo.\n</li>\n<li>\nalternative: indica l'ipotesi alternativa e deve essere uno tra \"two.sided\", \"greater\" o \"less\". Puoi specificare solo la lettera iniziale.\n</li>\n<li>\nconf.level: livello di confidenza per l'intervallo di confidenza restituito.\n</li>\n</ul>\n<b>Dettagli</b></br>\nGli intervalli di confidenza sono ottenuti tramite una procedura data per la prima volta in Clopper e Pearson (1934). Questo garantisce che il livello di confidenza sia almeno conf.level, ma in generale non fornisce gli intervalli di confidenza di lunghezza più breve.<br/>\n<b>Valore</b><br/>\nUna lista con classe \"htest\" contenente i seguenti componenti:<br/>\nstatistic: il numero di successi.<br/>\nparameter: il numero di prove.<br/>\np.value: il valore p del test.<br/>\nconf.int: un intervallo di confidenza per la probabilità di successo.<br/>\nestimate: la probabilità stimata di successo.<br/>\nnull.value: la probabilità di successo sotto l'ipotesi nulla, p.<br/>\nalternative: una stringa carattere che descrive l'ipotesi alternativa.<br/>\nmethod: la stringa carattere \"Test binomiale esatto\".<br/>\ndata.name: una stringa carattere che fornisce i nomi dei dati.<br/>\n<b>Pacchetto</b></br>\nstats</br>\n<b>Aiuto</b></br>\nhelp(binom.test, package=stats)\n    "
+  }
+}

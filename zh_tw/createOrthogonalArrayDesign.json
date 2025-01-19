@@ -1,20 +1,20 @@
 {
-  "title": "創建正交數組設計",
-  "navigation": "創建正交數組設計",
+  "title": "創建正交排列設計",
+  "navigation": "創建正交排列設計",
   "selectedvars": "選擇變數",
   "datasetname": "設計名稱",
-  "numOfRuns": "最小運行次數（可以留空）",
+  "numOfRuns": "最少運行次數（可以留空）",
   "minNumOfResidual": "最小殘差自由度",
-  "replications": "重複",
+  "replications": "重複次數",
   "repeatOnlyChk": "僅重複",
   "lbl1": "您可能不需要更改隨機化設置",
-  "randomseeds": "隨機化種子",
-  "randomizationChk": "隨機化設計生成",
-  "designnamefromcatlg": "(可選) 正交設計數組（示例：來自 oacat$name 的 L12.2.2.6.1）",
-  "columnOptimization": "列優化（默認為順序，其他選擇 min3, min34, min3.rela, min34.rela, minRPFT, minRelProjAberr）",
+  "randomseeds": "隨機化的種子",
+  "randomizationChk": "隨機生成設計",
+  "designnamefromcatlg": "(可選) 正交設計陣列（例如：來自 oacat$name 的 L12.2.2.6.1）",
+  "columnOptimization": "列優化（默認為順序，其他選擇 min3、min34、min3.rela、min34.rela、minRPFT、minRelProjAberr）",
   "help": {
-    "title": "創建正交數組設計",
+    "title": "創建正交排列設計",
     "r_help": "help(oa.design, package = DoE.base)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\toa.design 函數用於訪問正交數組，允許有限的列的最佳分配\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用 R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t使用菜單 DOE->檢查設計->檢查正交設計目錄 (oacat) 瀏覽可用的正交設計，以便從 DoE.base 包中加載的設計目錄中引用\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為 factor_grid_orthogonal_array_Design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開文件\n\t\t\t\t可選地，您可以指定 L72.2.53.3.2.4.1 作為來自 oacat$name 的設計\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\toa.design 函數用於訪問正交陣列，允許有限的最佳列分配\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t使用菜單 DOE->檢查設計->檢查正交設計目錄 (oacat) 瀏覽可用的正交設計，以便從 DoE.base 包中加載的設計目錄中引用\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 factor_grid_orthogonal_array_Design.xlsx 的示例數據集文件。使用文件打開菜單在數據網格中打開該文件\n\t\t\t\t可選地，您可以指定 L72.2.53.3.2.4.1 作為來自 oacat$name 的設計\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "title": "교차표",
+  "navigation": "교차표 (구버전)",
+  "row": "행 변수",
+  "column": "열 변수",
+  "layer": "층 변수(들)",
+  "weight": "가중치 (하나)",
+  "label1": "통계",
+  "chisq": "카이제곱",
+  "mcnemar": "맥니마르",
+  "fisher": "피셔",
+  "label2": "잔차",
+  "unstandardized": "비표준화",
+  "standardized": "표준화",
+  "adjusted": "조정됨",
+  "label3": "백분율",
+  "rowpercent": "행",
+  "colpercent": "열",
+  "label4": "수",
+  "expected": "예상",
+  "label5": "긴 테이블 출력 형식",
+  "longTbl": "긴 테이블",
+  "help": {
+    "title": "교차표",
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>설명</b></br>\n행, 열 및 층 변수를 사용하여 교차표를 생성하고 선택적으로 다음을 표시합니다.<br/>\n예상 수<br/>\n행 및 열 백분율<br/>\n비표준화, 표준화 및 조정된 잔차<br/>\n카이제곱과 오즈 비율, 맥니마르 및 피셔 통계<br/>\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 행 변수\n</li>\n<li>\ny: 열 변수\n</li>\n<li>\nlayers: 하나 이상의 층 변수\n</li>\n<li>\nweights: 빈도 가중치를 포함하는 숫자 변수\n</li>\n<li>\ndatasetname: x, y 및 layers(변수)가 선택된 데이터셋의 이름\n</li>\n<li>\nchisq: TRUE인 경우 카이제곱 테이블 생성\n</li>\n<li>\nprop.r: TRUE인 경우 행 백분율 생성\n</li>\n<li>\nprop.c: TRUE인 경우 열 백분율 생성\n</li>\n<li>\nresid: TRUE인 경우 비표준화 잔차 생성\n</li>\n<li>\nsresid: TRUE인 경우 표준화 잔차 생성\n</li>\n<li>\nexpected: TRUE인 경우 예상 수 생성\n</li>\n<li>\nasresid: TRUE인 경우 조정된 잔차 생성\n</li>\n</ul>\n<b>값</b></br>\n결과가 포함된 목록\n<br/>\n<b>예제</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>패키지</b></br>\ngmodels</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 다음 명령을 실행하여 help(CrossTable, package=gmodels)로 R 코드 청크를 생성하여 +를 클릭하여 출력 창에서 실행하십시오.\n    "
+  }
+}

@@ -1,15 +1,15 @@
 {
   "title": "美國州地圖",
   "navigation": "美國州地圖",
-  "region": "變數包含美國州名稱：",
-  "value": "用於映射的值的變數：",
+  "region": "變數與美國州名稱：",
+  "value": "變數與映射的值：",
   "colors": "輸入顏色數量",
-  "zoomByStates": "輸入要放大的州，例如加利福尼亞州、俄勒岡州、華盛頓州",
+  "zoomByStates": "輸入要放大的州，例如：加州、俄勒岡、華盛頓",
   "specify_a_title": "輸入標題",
   "legend": "圖例：",
   "help": {
     "title": "美國州地圖",
-    "r_help": "幫助(state_choropleth, 套件='choroplethr')",
-    "body": "\n            <b>描述</b></br>\n            繪製州地圖，並允許您選擇性地放大1個或多個州\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: 一個包含名為\"region\"和\"value\"的列的數據框。\"region\"列中的元素必須與state.map中\"region\"列的名稱完全匹配。運行下面其他部分的命令以訪問state.map數據集\n            </li>\n            <li>\n            標題: 地圖的可選標題。\n            </li>\n            <li>\n            圖例: 圖例的可選名稱。\n            </li>\n            <li>\n            num_colors: 地圖上的顏色數量。值為1將使用連續比例。值在[2, 9]之間將使用那麼多顏色。\n            </li>\n            <li>\n            zoom: 一個可選的州向量，用於放大。該向量的元素必須與?state.regions中\"region\"列的州名稱完全匹配。\n            </li>\n            </ul>\n            <b>包</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>幫助</b></br>\n            幫助(state_choropleth, 包='choroplethr')</br>\n            <b>其他</b></br>\n            <code> \n            # 運行下面的代碼以訪問state.map數據集<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
+    "r_help": "help(state_choropleth, package='choroplethr')",
+    "body": "\n            <b>描述</b></br>\n            繪製州地圖，並允許您選擇性地放大一個或多個州\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            state_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n            </code> <br/>\n            <b>參數</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: 一個包含名為 \"region\" 的列和名為 \"value\" 的列的數據框。 \"region\" 列中的元素必須與 state.map 中的 \"region\" 列中的名稱完全匹配。運行下面其他部分的命令以訪問 state.map 數據集\n            </li>\n            <li>\n            標題：地圖的可選標題。\n            </li>\n            <li>\n            圖例：圖例的可選名稱。\n            </li>\n            <li>\n            num_colors: 地圖上的顏色數量。值為 1 將使用連續比例。值在 [2, 9] 中將使用那麼多顏色。\n            </li>\n            <li>\n            zoom: 一個可選的州向量，用於放大。此向量的元素必須與 ?state.regions 中的州名稱完全匹配。\n            </li>\n            </ul>\n            <b>包</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>幫助</b></br>\n            help(state_choropleth, package='choroplethr')</br>\n            <b>其他</b></br>\n            <code> \n            # 運行下面的代碼以訪問 state.map 數據集<br/>\n            library(choroplethr)<br/>\n            library(choroplethrMaps)<br/>\n            data(state.map)<br/>\n            state.map <br/>\n            </code> <br/>\n    "
   }
 }

@@ -1,0 +1,29 @@
+{
+  "title": "Proses Yeterliliği (eksik değerleri işlemez)",
+  "navigation": "Proses Yeterliliği, Temel",
+  "summaryPlotChk": "Proses yeterliliğini hesaplamak için kullanılan temel xbar ve xbar.one grafiklerini çiz",
+  "displaySLlineonPlotChk": "Temel grafiklerde LSL ve USL çizgilerini göster",
+  "printObjectSummaryChk": "Proses yeterliliği için QCC nesne özetini yazdır",
+  "label1": "İki seçenek - ya bir değişken (ve gerektiğinde bir gruplama değişkeni) seçin ya da zaten gruplandırılmışsa veri kümesindeki değişkenleri seçin",
+  "label2": "Gelişmiş seçenekler",
+  "selectVariableRad": "Seçenek 1: Veri kümesinden bir değişken seçin (gerekirse gruplandırılması gereken)",
+  "variableSelcted": "Analiz etmek için bir değişken (gözlemlenen veri) seçin",
+  "groupingVariable": "Gruplama değişkeni (isteğe bağlı - verilerin gruplandırılması gerekiyorsa)",
+  "variableControlLimits": "Gruplama öncesinde atılacak veri satırları (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "displayGroupsChk": "Referans amaçlı veri kümesi UI ızgarasında gruplamaları göster",
+  "selectDatasetRad": "Seçenek 2: Zaten gruplandırılmışsa Veri Kümesinden değişkenleri seçin",
+  "variablelistSelcted": "Analiz etmek için bir veya daha fazla gruplandırılmış değişken (gözlemlenen veri) seçin",
+  "rowsTobeUsed": "Proses yeterliliğini analiz etmek için kullanılacak (gruplandırılmış) satırları seçin (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "nsigmas": "Sigma - kontrol limitlerini hesaplamak için kullanılacak sigma sayısı",
+  "confidence_level": "Güven aralıklarını hesaplamak için kullanılacak 0 ile 1 arasında bir sayısal değer",
+  "stddev": "xbar'ı hesaplamak için standart sapma yöntemi (grup boyutu > 1 için)",
+  "lower": "LSL - alt spesifikasyon limitinin sayısal değeri (tek taraflı spesifikasyon limitlerini belirtmek için NA yazın)",
+  "upper": "USL - üst spesifikasyon limitinin sayısal değeri (tek taraflı spesifikasyon limitlerini belirtmek için NA yazın)",
+  "target": "Hedef spesifikasyon limitleri (isteğe bağlı)",
+  "digits": "Basamaklar - gösterilecek basamak sayısı",
+  "help": {
+    "title": "Proses Yeterliliği",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tqcc fonksiyonu, yeterlilik indekslerini hesaplamak için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) ve help(sd.xbar.one, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, qcc paketinden pistonrings adlı veri kümesini Yükle Veri Kümesi menüsü ile yükleyebilirsiniz, qcc paketini seçip ardından pistonrings veri kümesini seçin\n\t\t\t\t<br/>\n\t\t\t\tSeçenek 1'i seçin, gözlemlenen değişken için çap, gruplama değişkeni için örnek seçin,\n\t\t\t\t<br/>\n\t\t\t\tGruplandırılmış satırlar için 1:25 yazın\n\t\t\t\t<br/>\n\t\t\t\tProses yeterliliği analizi için - LSL'ye 73.95, USL'ye 74.05 ve Hedef Limit'e 74.0 yazın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tqcc eğitimini takip edin: https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

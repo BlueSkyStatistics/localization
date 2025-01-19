@@ -1,0 +1,28 @@
+{
+  "title": "Çapraz Tablo",
+  "navigation": "Çapraz Tablo (Eski)",
+  "row": "Satır Değişkeni",
+  "column": "Sütun Değişkeni",
+  "layer": "Katman Değişken(ler)i",
+  "weight": "Ağırlık (bir)",
+  "label1": "İstatistikler",
+  "chisq": "Ki-kare",
+  "mcnemar": "McNemar",
+  "fisher": "Fisher",
+  "label2": "Artıklar",
+  "unstandardized": "Standartlaştırılmamış",
+  "standardized": "Standartlaştırılmış",
+  "adjusted": "Düzeltilmiş",
+  "label3": "Yüzdeler",
+  "rowpercent": "Satır",
+  "colpercent": "Sütun",
+  "label4": "Sayım",
+  "expected": "Beklenen",
+  "label5": "Uzun tablo çıktı formatı",
+  "longTbl": "Uzun tablo",
+  "help": {
+    "title": "Çapraz Tablo",
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>Açıklama</b></br>\nSatır, sütun ve katman değişkenleri ile çapraz tablo oluşturur ve isteğe bağlı olarak aşağıdakileri gösterir<br/>\nBeklenen sayımlar<br/>\nSatır ve sütun yüzdeleri<br/>\nStandartlaştırılmamış, standartlaştırılmış ve düzeltilmiş artıklar<br/>\nKi-kare ile oran oranı, McNemar ve Fisher istatistikleri<br/>\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: satır değişkeni\n</li>\n<li>\ny: sütun değişkeni\n</li>\n<li>\nlayers: katmanlar için bir veya daha fazla değişken\n</li>\n<li>\nweights: frekans ağırlıklarını içeren sayısal bir değişken\n</li>\n<li>\ndatasetname: x, y ve katmanların (değişkenlerin) seçildiği veri kümesinin adı\n</li>\n<li>\nchisq:  eğer TRUE ise ki-kare tablosu oluşturur\n</li>\n<li>\nprop.r: Eğer bu TRUE ise satır yüzdeleri üretilir\n</li>\n<li>\nprop.c: Eğer bu TRUE ise sütun yüzdeleri üretilir\n</li>\n<li>\nresid: eğer TRUE ise, standartlaştırılmamış artıklar üretilir\n</li>\n<li>\nsresid: eğer TRUE ise, standartlaştırılmış artıklar üretilir\n</li>\n<li>\nexpected: Eğer bu TRUE ise beklenen sayımlar üretilir\n</li>\n<li>\nasresid:  eğer TRUE ise, düzeltilmiş artıklar üretilir\n</li>\n</ul>\n<b>değer</b></br>\nSonuçlarla birlikte bir liste\n<br/>\n<b>Örnek</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>Paket</b></br>\ngmodels</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üstündeki sağ üst köşedeki R simgesine tıklayın veya aşağıdaki komutu çalıştırarak help(CrossTable, package=gmodels) yazın ve çıktı penceresinde + tıklayarak bir R kodu bloğu oluşturun  \n    "
+  }
+}

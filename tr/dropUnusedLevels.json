@@ -1,0 +1,21 @@
+{
+  "title": "Kullanılmayan Seviyeleri Düşür",
+  "navigation": "Kullanılmayan Düşür",
+  "target": "Düşürülecek faktör değişkenleri",
+  "label1": "Düşürülecek faktör değişkenlerini girin. Kullanılmayan seviyeleri düşürmek için bunları girerek belirtebilir veya seçilen değişken(ler) için tüm kullanılmayan seviyeleri düşürmeyi seçebilirsiniz. Veri kümesi değişkeninde NA değeri varsa, o seviye DÜŞÜRÜLMEDİ.",
+  "label2": "Yeni seviyeleri yeni değişken(ler)e kaydedin veya mevcut değişken(ler)i üzerine yazın",
+  "rd3": "Bir ek belirtin (Bir yeni değişken ek ile oluşturulacaktır)",
+  "txt3": "Bir ek girin",
+  "rd2": "Bir ön ek belirtin (Bir yeni değişken ön ek ile oluşturulacaktır)",
+  "txt4": "Bir ön ek girin",
+  "rd1": "Mevcut değişkenleri üzerine yaz",
+  "label3": "Kullanılacak yöntem",
+  "dropUnused": "Tüm kullanılmayan seviyeleri düşür",
+  "levelsToDrop": "Düşürülecek seviyeleri belirtin",
+  "drop": "Düşürülecek seviyeleri virgülle ayırarak girin, örn. seviye1,seviye2,seviye3 NOT: Seviyeler arasında boşluk kullanmayın",
+  "help": {
+    "title": "Kullanılmayan Seviyeleri Düşür",
+    "r_help": "help(fct_drop, package =forcats)",
+    "body": "\n<b>NOT: SEVİYELERİ İKİLİ TIRNAKLARA VEYA TEK TIRNAKLARA ALMAYIN, SEVİYE İSİMLERİNDE BOŞLUK OLAMAZ. SEVİYELERİ VIRGÜL İLE AYIRARAK GİRİN FORMAT: SEVİYE1,SEVİYE2, SEVİYE3</b></br>\n<b>Açıklama</b></br>\nKullanılmayan seviyeleri düşürmek için faktör değişken(ler)ini girin. Kullanılmayan seviyeleri düşürmek için bunları girerek belirtebilir veya seçilen değişken(ler) için tüm kullanılmayan seviyeleri düşürmeyi seçebilirsiniz. Veri kümesi değişkeninde NA değeri varsa, o seviye DÜŞÜRÜLMEDİ.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nfct_drop(f, only)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nf: Bir faktör (veya karakter vektörü).\n</li>\n<li>\nonly: Düşürülecek seviyeler kümesini kısıtlayan bir karakter vektörü. Sağlandığında, yalnızca bu vektörde yer alan ve hiçbir girişi olmayan seviyeler kaldırılacaktır.\n</li>\n</ul>\n<b>Örnekler</b><br/>\n</code>\nf <- factor(c(\"a\", \"b\"), levels = c(\"a\", \"b\", \"c\"))<br/>\nf<br/>\nfct_drop(f)<br/>\n# Sadece düşürülecek seviyeleri kısıtlamak için yalnızca ayarlayın<br/>\nfct_drop(f, only = \"a\")<br/>\nfct_drop(f, only = \"c\")<br/>\n<b>Paket</b></br>\nforcats</br>\n<b>Yardım</b></br>\nhelp(fct_drop, package =forcats)\n"
+  }
+}

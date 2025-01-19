@@ -1,0 +1,15 @@
+{
+  "title": "요인 변수에 대한 대비 설정",
+  "navigation": "대비 설정",
+  "target": "목적지",
+  "label1": "대비",
+  "Dummy": "처치(더미) 대비",
+  "Deviation": "합계(편차) 대비",
+  "Helmert": "헬머트 대비",
+  "Poly": "다항식 대비",
+  "help": {
+    "title": "대비 설정",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>설명</b></br>\n            ​요인과 관련된 대비를 설정하고 보기.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            contrasts(x) <-value\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            x: R 객체.​\n            </li>\n            <li>\n            value: x의 수준에서 대비를 위한 계수를 제공하는 숫자 행렬(또는 Matrix 패키지의 dMatrix를 확장하는 클래스의 희소 또는 밀집 행렬) 또는 그러한 행렬을 계산하는 함수의 (인용된) 이름 예: “contr.treatment”, “contr.sum”, “contr.helmert”, “contr.poly”\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            stats</br>\n            <b>도움말</b></br>\n            help(contrasts, package ='stats')       \n            "
+  }
+}

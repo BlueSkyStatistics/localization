@@ -1,7 +1,7 @@
 {
   "title": "Probabilități Gumbel",
   "navigation": "Probabilități Gumbel",
-  "varvals": "Introduceți valorile variabilei separate prin virgulă. Exemplu: 3,0.5",
+  "varvals": "Introduceți valoarea(e) variabilei separate prin virgulă. Exemplu: 3,0.5",
   "location": "Locație",
   "scale": "Scală",
   "labelSig": "Nivel de semnificație",
@@ -9,7 +9,7 @@
   "uptail": "Coada superioară",
   "help": {
     "title": "Probabilități Gumbel",
-    "r_help": "ajutor(pgumbel, pachet=RcmdrMisc)",
-    "body": "\n            ​​\n            <b>Descriere</b>\n            <br/>\n            Densitate, funcție de distribuție, funcție quantil și generare aleatoare pentru distribuția Gumbel cu parametrii de locație și scală specificați.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de cuantile (valori ale variabilei).</li>\n                \n                \n                <li>p : vector de probabilități.</li>\n                \n                \n                <li>n : numărul de observații. Dacă length(n) > 1, lungimea este considerată a fi lungimea necesară.</li>\n                \n                \n                <li>location : parametru de locație (implicit 0); potențial un vector.</li>\n                \n                \n                <li>scale : parametru de scală (implicit 1); potențial un vector.</li>\n                \n                <li>lower.tail : logic; dacă TRUE (implicit), probabilitățile și cuantilele corespund P(X ≤ x), dacă FALSE la P(X > x).</li>\n            </ul>            \n"
+    "r_help": "help(pgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Descriere</b>\n            <br/>\n            Densitate, funcție de distribuție, funcție quantilă și generare aleatorie pentru distribuția Gumbel cu parametrii de locație și scală specificați.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de quantile (valori ale variabilei).</li>\n                \n                \n                <li>p : vector de probabilități.</li>\n                \n                \n                <li>n : numărul de observații. Dacă length(n) > 1, lungimea este considerată a fi numărul necesar.</li>\n                \n                \n                <li>location : parametru de locație (implicit 0); potențial un vector.</li>\n                \n                \n                <li>scale : parametru de scală (implicit 1); potențial un vector.</li>\n                \n                <li>lower.tail : logic; dacă TRUE (implicit), probabilitățile și quantilele corespund P(X ≤ x), dacă FALSE corespund P(X > x).</li>\n            </ul>            \n      "
   }
 }

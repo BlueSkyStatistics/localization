@@ -1,0 +1,18 @@
+{
+  "title": "Dimensione del campione, Test di una proporzione",
+  "navigation": "Una proporzione",
+  "howtouse": "Specifica la dimensione del campione o la potenza, e l'altro sarà calcolato",
+  "n": "Dimensione del campione",
+  "power": "Potenza (0-1)",
+  "prop": "Proporzione alternativa (0-1)",
+  "prop0": "Proporzione nulla (0-1)",
+  "siglevel": "Livello di significatività (0-1)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Due lati",
+  "onesided": "Un lato",
+  "help": {
+    "title": "Dimensione del campione, Test di una proporzione",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test di proporzione a campione singolo. Calcola la dimensione del campione o la potenza, quando l'utente \nspecifica uno di essi. Il calcolo utilizza la formula trovata in Chow S, Shao J, Wang H. Calcoli della dimensione del campione nella ricerca clinica (2008). Utilizza un'approssimazione normale con\ndeviazione standard basata sulla proporzione alternativa.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Potenza:</b> Specifica la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera.\n<br/><br/>\n<b>Proporzione alternativa (0-1):</b> Specifica la proporzione sotto l'ipotesi alternativa\n<br/><br/>\n<b>Proporzione nulla (0-1):</b> Specifica la proporzione sotto l'ipotesi nulla\n<br/><br/>\n<b>Livello di significatività:</b> Specifica il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Ipotesi alternativa:</b> Specifica se il test è a due lati o a un lato\n<br/><br/>\n<b>Pacchetti R richiesti:</b> stats\n\t\t\t"
+  }
+}

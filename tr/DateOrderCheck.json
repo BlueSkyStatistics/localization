@@ -1,0 +1,18 @@
+{
+  "title": "Tarih Sırası Kontrolü",
+  "navigation": "Tarih Sırası Kontrolü",
+  "datevarslabel": "Tarih Değişkenleri (en erken olandan en geç olana; aynı sınıf; en az 2)",
+  "compgrplabel": "Karşılaştırma",
+  "compgrpnote": "Not: Bu, yukarıda belirtilen tüm tarihler arasındaki sıralama hatalarını kontrol etmek için yapılacak karşılaştırmadır; örneğin, değerler tarih1<date2<date3 olmalıdır.",
+  "ltlabel": "<",
+  "ltelabel": "<=",
+  "idvarslabel": "Satır Tanımlama Değişkenleri (isteğe bağlı)",
+  "dateerrorboxlabel": "Tarih hata değişkeni ile veri seti oluştur",
+  "dateerrordatanamelabel": "Veri seti adı",
+  "dateerrorvarlabel": "Tarih hata değişkeni adı",
+  "help": {
+    "title": "Tarih Sırası Kontrolü",
+    "r_help": "help('<', package = 'base')",
+    "body": "\nBu, aktif veri setindeki tarih değişkeni değerlerinin belirtilen bir sırada olmadığı satırların bir listesini oluşturur. Bu, analiz için tarihlerin veya zamanların gerekli olduğu durumlarda potansiyel tarih değişkeni hatalarını tanımlamaya yardımcı olur. Örneğin, üç tarih sütununun tarih1 < tarih2 < tarih3 sırasına sahip olması gerekiyorsa, bu diyalog, bu değişkenlerin değerlerinin o sırayı takip etmediği tüm gözlemleri yazdıracaktır. Belirtilen değişkenlerde eksik tarih değerlerine izin verilir ve karşılaştırmalar için kullanılmayacaktır.\n<br/><br/>\n<b>Tarih Değişkenleri (en erken olandan en geç olana; aynı sınıf; en az 2):</b> En az 2 tarih değişkenini en erken olandan en geç olana doğru belirtin. Bunlar herhangi bir tarih sınıfı (POSIXct, Date) olabilir, ancak belirtilen tüm değişkenler aynı tarih sınıfında olmalıdır. Aksi takdirde, bir hata oluşacaktır.\n<br/><br/>\n<b>Karşılaştırma:</b> Tarih değerlerini karşılaştırmak için kullanılan karşılaştırma operatörünü belirtin. \"<\" daha küçüktür ve \"<=\" daha küçük veya eşittir anlamına gelir. \"<\" seçilirse, eşit olan tarihler hata olarak işaretlenecektir. \"<=\" seçilirse, eşit olan tarihler hata olarak işaretlenmeyecektir.\n<br/><br/>\n<b>Satır Tanımlama Değişkenleri (isteğe bağlı):</b> Satırları tanımlamak için yararlı olabilecek bir veya daha fazla değişken belirtin. Örneğin, konu tanımlama numarası. Bunlar hata listesinin içinde yer alacaktır. Hiçbir değişken belirtilmezse, veri setinin satır numarası tek tanımlayıcı olacaktır.\n<br/><br/>\n<b>Tarih hata değişkeni ile veri seti oluştur:</b> Bu, orijinal verilerle birlikte her gözlemin bir tarih sırası hatası olup olmadığını gösteren bir değişken içeren ayrı bir veri seti oluşturacaktır (1=tarih sırası hatası ve 0=tarih sırası hatası yok olarak kodlanmıştır). <b>Veri seti adı</b>, bu veri setinin istenen adıdır ve <b>Tarih hata değişkeni adı</b>, bu veri setindeki tarih sırası hata değişkeninin istenen adıdır.\n\t\t"
+  }
+}

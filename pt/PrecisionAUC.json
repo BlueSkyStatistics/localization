@@ -1,0 +1,15 @@
+{
+  "title": "Tamanho da Amostra, Precisão da AUC",
+  "navigation": "AUC",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n": "Tamanho da Amostra",
+  "width": "Largura do Intervalo de Confiança",
+  "auc": "AUC (área sob a curva ROC, 0.5-1)",
+  "conflevel": "Nível de Confiança (0-1)",
+  "prev": "Prevalência do Resultado (0-1)",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão da AUC",
+    "r_help": "help(prec_auc, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para a área sob uma curva característica de operação do receptor com base na largura do intervalo de confiança.  Ele calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada.  A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>AUC:</b> Especifique o valor esperado da AUC\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Prevalência do Resultado:</b> Especifique a proporção de sujeitos com o resultado 'positivo'.  Isso corresponde ao nível sendo modelado com o modelo estatístico candidato.\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

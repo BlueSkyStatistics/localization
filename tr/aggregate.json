@@ -1,0 +1,15 @@
+{
+  "title": "Veri Toplama",
+  "navigation": "Toplama",
+  "description": "Bir veya daha fazla sayısal (ölçek) değişkeni bir veya daha fazla faktör değişkeni ile toplar ve yeni bir toplanmış veri seti oluşturur. Sayısal değişkenler için aşağıdakileri hesaplarız:\n        ortalama, medyan, toplam, sd, n_distinct, max, min ve var. \n        Ayrıca toplanmış veri setinde sayımları da hesaplar.",
+  "label1": "Toplama seçenekleri",
+  "upperdesc": "Toplama işlemi uygulanacak değişkenler için istediğiniz fonksiyonu seçin",
+  "datasetname": "Toplanmış veri setinin adını girin",
+  "showResultsinOutput": "Sonuçları çıktı penceresinde göster",
+  "groupBy": "Grupla (Faktör veya tarih türündeki değişkenler)",
+  "help": {
+    "title": "Veri Setine Toplama",
+    "r_help": "help(group_by, package=dplyr)",
+    "body": "\n            <b>Açıklama</b></br>\nBir veya daha fazla sayısal (ölçek) değişkeni bir veya daha fazla faktör değişkeni ile toplar ve yeni bir toplanmış veri seti oluşturur. Sayısal değişkenler için aşağıdakileri hesaplarız:\nortalama, medyan, toplam, sd, n_distinct, max, min ve var. \nAyrıca toplanmış veri setinde sayımları da hesaplar.\n<br/>\n<b>Kullanım</b>\n<br/>\n     <code> \nnewDatasetName <- Dataset %>% dplyr::group_by(var1) %>% dplyr::summarize(Count=n(), newvarmean=mean(var2 ,na.rm =TRUE),newvarmedian=median(var3, na.rm =TRUE))</br>\n## Veri setini yenile</br>\nBSkyLoadRefresh(\"newDatasetName\" )\n   </code> <br/>\n    <b>Argümanlar</b>\n <ul>\n   <li>\nvar1: gruplanacak faktör\n</li>\n<li>\nvar2, var3: toplanacak değişken\n</li>\n<li>\nnewvarmean: toplanmış veri setinde var1'e göre gruplanmış var2'nin ortalaması\n</li>\n<li>\n​newvarmedian: toplanmış veri setinde var1'e göre gruplanmış var3'ün medyanı\n</li>\n</ul>\n            "
+  }
+}

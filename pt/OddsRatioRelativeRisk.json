@@ -1,0 +1,28 @@
+{
+  "title": "Razões de Chances / Riscos Relativos, M por Tabela de 2",
+  "navigation": "Razões de Chances / Riscos Relativos, M por Tabela de 2",
+  "outcomevarlabel": "Variável de Resultado (Fator Binário)",
+  "expvarlabel": "Variável de Exposição/Preditora (Fator)",
+  "statlabel": "Estatística",
+  "orlabel": "Razões de Chances",
+  "rrlabel": "Riscos Relativos",
+  "oresttypelabel": "Tipo de Estimativa da Razão de Chances",
+  "orestwaldlabel": "Wald",
+  "orestfisherlabel": "Fisher",
+  "orestmidplabel": "Mid-p",
+  "orestsmalllabel": "Ajustado para Pequenas Amostras",
+  "rresttypelabel": "Tipo de Estimativa do Risco Relativo",
+  "rrestwaldlabel": "Wald",
+  "rrestsmalllabel": "Ajustado para Pequenas Amostras",
+  "reversallabel": "Reversão de Categoria",
+  "revnonelabel": "Sem Reversão",
+  "revexplabel": "Exposição",
+  "revoutlabel": "Resultado",
+  "revbothlabel": "Ambos",
+  "cilevellabel": "Nível de Confiança (0-1)",
+  "help": {
+    "title": "Razões de Chances / Riscos Relativos, M por Tabela de 2",
+    "r_help": "help(epitab, package ='epitools')",
+    "body": "\nIsso é usado para comparar as probabilidades de ter uma \"doença\" para um grupo em relação a outro, em uma razão de chances (razão de chances) ou forma de razão de probabilidade (risco relativo).  \nAs chances de \"doença\" são definidas como a probabilidade de \"doença\" dividida pela probabilidade de \"sem doença\". Uma tabela de contingência de frequências de resultado em cada grupo é fornecida.  \nAlém disso, uma tabela de razões de chances ou riscos relativos para cada grupo em relação ao grupo de referência com intervalos de confiança e um valor p de Chi-Quadrado de Wald é incluída.  Por último, \na tabela de valores p é mostrada com versões exatas de mid-p, exato de Fisher e Chi-Quadrado de Wald, comparando cada grupo ao grupo de referência. \n<br/><br/>\n<b>Variável de Resultado:</b> Variável binária \"doença\" (sim/não) de interesse.  Por padrão, a categoria mais alta na ordem de classificação é definida como \"doença sim\".\n<br/><br/>\n<b>Variável de Exposição/Preditora:</b> Grupos a serem comparados.  Pode ter mais de 2 grupos.\n<br/><br/>\n<b>Estatística:</b> Qual estatística calcular\n<br/><br/>\n<b>Tipo de Estimativa da Razão de Chances / Risco Relativo:</b> Wald (máxima verossimilhança incondicional), Fisher (máxima verossimilhança condicional), Mid-p (método mediano não tendencioso) ou Ajustado para Pequenas Amostras\n<br/><br/>\n<b>Reversão de Categoria:</b>  Isso controla se deve ou não reverter a ordenação das categorias da variável de exposição ou das categorias da variável de resultado.  Reverter a variável de exposição \nirá mudar o grupo de referência para as razões de chances.  Reverter a variável de resultado mudará a categoria que corresponde à \"doença\".\n<br/><br/>\n<b>Nível de Confiança:</b> nível para os intervalos de confiança; o padrão é 0.95\n<br/><br/>\n<b>Pacotes R Necessários:</b> epitools\n\t\t\t"
+  }
+}

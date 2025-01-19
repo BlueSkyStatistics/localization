@@ -1,0 +1,27 @@
+{
+  "title": "가장 적거나 가장 일반적인 요인 수준을 묶기",
+  "navigation": "기타로 묶기 (자동으로)",
+  "target": "희소 수준을 묶기 위해 변수를 선택하세요",
+  "label1": "묶인 수준을 포함하는 새 카테고리의 기본 이름은 \"기타\"입니다. 가중치를 지정하는 것은 선택 사항입니다. 묶인 수준으로 기존 변수(들)를 덮어쓰거나 결과를 새 변수(들)에 저장할 수 있습니다.",
+  "other": "묶인 수준의 이름",
+  "label3": "사용할 방법",
+  "defaultOption": "\"기타\"가 가장 작은 수준이 되도록 가장 적게 발생하는 수준을 \"기타\"로 묶기",
+  "categories": "가장 일반적인 (+n)/가장 적은 (-n) 카테고리 유지",
+  "category": "카테고리 수 입력",
+  "proportion1": "최소 (+ prop)/최대 (- prop) 비율로 나타나는 카테고리 유지",
+  "proportion": "비율 입력",
+  "dropOption": "\"기타\"로 대체할 수준 입력 예: level1,level2,level3",
+  "varweights": "변수 가중치",
+  "label2": "결과를 새 변수(들)에 저장하거나 기존 변수(들)를 덮어쓰기",
+  "rd3": "접미사를 지정하세요 (접미사가 있는 새 변수가 생성됩니다)",
+  "txt3": "접미사 입력",
+  "rd2": "접두사를 지정하세요 (접두사가 있는 새 변수가 생성됩니다)",
+  "txt4": "접두사 입력",
+  "rd1": "기존 변수 덮어쓰기",
+  "ties": "동점 처리 옵션",
+  "help": {
+    "title": "기타로 묶기",
+    "r_help": "help(fct_lump, package =forcats)",
+    "body": "\n<b>설명</b></br>\n가장 적거나 가장 일반적인 요인 수준을 \"기타\" 수준으로 묶습니다. 묶인 수준을 포함하는 새 카테고리의 기본 이름은 \"기타\"입니다. 가중치를 지정하는 것은 선택 사항입니다. 묶인 수준으로 기존 변수(들)를 덮어쓰거나 결과를 새 변수(들)에 저장할 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Other\",ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"기타\",ties.method =\"min\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nf: 요인. n과 prop이 모두 누락된 경우, fct_lump는 가장 적게 발생하는 수준을 \"기타\"로 묶으며, \"기타\"가 여전히 가장 작은 수준이 되도록 합니다. fct_inorder()와 함께 사용할 때 특히 유용합니다.\n</li>\n<li>\nn: 양수 n은 가장 일반적인 n 값을 보존합니다. 음수 n은 가장 적게 발생하는 -n 값을 보존합니다. 동점이 있는 경우, 최소한 abs(n) 값을 얻습니다.\n</li>\n<li>\nprop: 양수 prop은 최소 prop 비율로 나타나는 값을 보존합니다. 음수 prop은 최대 -prop 비율로 나타나는 값을 보존합니다.\n</li>\n<li>\nw: f에서 각 값(수준이 아님)의 빈도에 대한 가중치를 제공하는 선택적 숫자 벡터입니다.\n</li>\n<li>\nother_level: \"기타\" 값에 사용되는 수준의 값. 항상 수준의 끝에 배치됩니다.\n</li>\n<li>\nties.method: 동점이 처리되는 방식을 지정하는 문자열입니다. 자세한 내용은 rank()를 참조하세요.\n</li>\n<li>\nmin: 최소 횟수만큼 나타나는 값을 보존합니다.\n</li>\n</ul>\n<b>패키지</b></br>\nforcats</br>\n<b>도움말</b></br>\nBlueSky Statistics R 구문 편집기에 아래 줄을 입력하세요</br>\nhelp(fct_lump, package =forcats)\n"
+  }
+}

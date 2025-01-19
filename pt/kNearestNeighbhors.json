@@ -1,0 +1,20 @@
+{
+  "title": "K Vizinhos Mais Próximos",
+  "navigation": "KNN",
+  "dependentvar": "Variável dependente",
+  "independentvars": "Variável(is) independente(s)",
+  "header": "KNN é um classificador preguiçoso, não cria um ajuste para prever mais tarde. Ele ajusta e avalia ao mesmo tempo. Dividimos o conjunto de dados em conjuntos de dados de treino e teste, depois construímos o modelo no conjunto de dados de treino, fazendo previsões no conjunto de dados de teste e usamos essas previsões para exibir estatísticas de avaliação do modelo.",
+  "Seed": "Definir Semente",
+  "Group2": "Parâmetros de ajuste para KNN",
+  "noneighbhors": "Número de vizinhos (Quando um valor não é especificado, o padrão é definido como a raiz quadrada do número de observações no conjunto de dados)",
+  "Group1": "Conjuntos de dados de treino e teste",
+  "splitPercentage": "Digite a porcentagem de divisão",
+  "trainDatasetName": "Digite o nome do conjunto de dados de treino",
+  "testDatasetName": "Digite o nome do conjunto de dados de teste",
+  "predictedValues": "Digite o prefixo da variável para valores previstos. (Você deve especificar um prefixo) Variáveis prefixadas são criadas no conjunto de dados de teste.",
+  "help": {
+    "title": "K Vizinhos Mais Próximos",
+    "r_help": "help(knn, package ='class')",
+    "body": "\n                <b>Descrição</b></br>\nClassificação k-Vizinho Mais Próximo\n<br/>\n<b>Nota: </b></br>\n1. Os conjuntos de dados de treino e teste são criados automaticamente com KNN com base na porcentagem de divisão especificada<br/>\n2. Os valores previstos são armazenados no conjunto de dados de teste e são usados para calcular estatísticas do modelo, nomeadamente precisão, kappa, sensibilidade.... A matriz de confusão também é exibida\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nknn(train, test, cl, k = 1, l = 0, prob = FALSE, use.all = TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ntrain: matriz ou quadro de dados dos casos do conjunto de treino.\n</li>\n<li>\ntest: matriz ou quadro de dados dos casos do conjunto de teste. Um vetor será interpretado como um vetor de linha para um único caso.\n</li>\n<li>\ncl: fator das classificações verdadeiras do conjunto de treino\n</li>\n<li>\nk: número de vizinhos considerados.\n</li>\n<li>\nl: voto mínimo para decisão definitiva, caso contrário, dúvida. (Mais precisamente, menos de k-l votos dissidentes são permitidos, mesmo que k seja aumentado por empates.)\n</li>\n<li>\nprob: Se isso for verdadeiro, a proporção dos votos para a classe vencedora é retornada como atributo prob.\n</li>\n<li>\nuse.all: controla o tratamento de empates. Se verdadeiro, todas as distâncias iguais à k-ésima maior são incluídas. Se falso, uma seleção aleatória de distâncias iguais à k-ésima é escolhida para usar exatamente k vizinhos.\n</li>\n</ul>\n<b>Valor</b></br>\nFator de classificações do conjunto de teste. dúvida será retornada como NA.</br>\n<b>Pacote</b></br>\ncaret;class</br>\n<b>Ajuda</b></br>\nhelp(knn, package ='class')\n                "
+  }
+}

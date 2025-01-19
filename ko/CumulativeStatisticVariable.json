@@ -1,0 +1,13 @@
+{
+  "title": "누적 통계 변수",
+  "navigation": "누적 통계 변수",
+  "varname": "새 변수 이름 (공백 없음)",
+  "statvar": "누적 통계를 위한 변수",
+  "groupbyvars": "그룹화할 변수",
+  "func": "누적 통계",
+  "help": {
+    "title": "누적 통계 변수",
+    "r_help": "help(cumsum, package ='base')",
+    "body": "\n<b>누적 통계</b>\n<br/><br/>\n이 대화 상자는 데이터 세트의 현재 순서로 행을 내려가면서 선택한 통계의 누적 값을 저장하는 새 변수를 생성합니다. 하나 이상의 그룹 내에서 이 누적 값을 선택적으로 계산할 수 있습니다.\n<br/><br/>\n\n<b>새 변수 이름:</b> 누적 값을 저장할 변수의 이름\n<br/><br/>\n\n<b>누적 통계를 위한 변수:</b> 누적 값이 계산될 변수. 숫자여야 합니다.\n<br/><br/>\n\n<b>그룹화할 변수:</b> 누적 통계를 계산할 선택적 변수.\n<br/><br/>\n\n<b>누적 통계:</b> 누적 통계에 사용할 통계.\n<br/><br/>\n<ul>\n<li>cumsum: 누적 합</li>\n<li>cummin: 누적 최소값</li>\n<li>cummax: 누적 최대값</li>\n<li>cummean: 누적 평균</li>\n<li>cummedian: 누적 중앙값</li>\n<li>cumgmean: 누적 기하 평균</li>\n<li>cumhmean: 누적 조화 평균</li>\n<li>cumvar: 누적 분산</li>\n</ul>\n<br/><br/>\n<b>필수 R 패키지:</b> cumstats, dplyr\n\t\t\t"
+  }
+}

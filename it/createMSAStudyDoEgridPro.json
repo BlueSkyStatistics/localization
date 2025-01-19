@@ -1,0 +1,30 @@
+{
+  "title": "Crea una tabella di esperimenti per uno studio MSA Gage",
+  "navigation": "Progetta uno studio MSA",
+  "datasetname": "Nome della tabella dello studio MSA Gage",
+  "label1": "Dettagli per i pezzi",
+  "label2": "Dettagli per gli operatori",
+  "factor1": "Nome della variabile Parte (ad es. Parte come predefinito)",
+  "numOfFactorLevels1": "Numero di pezzi",
+  "factorLevels1": "Lascia vuoto per generare automaticamente i valori o specifica i valori - esempio: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "Se generato automaticamente, specifica un prefisso. Se vuoto, creerà valori come 1,2,3,..",
+  "factor2": "Nome della variabile Operatore (ad es. Operatore come predefinito)",
+  "numOfFactorLevels2": "Numero di operatori",
+  "factorLevels2": "Lascia vuoto per generare automaticamente i valori o specifica i valori - esempio: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "Se generato automaticamente, specifica un prefisso. Se vuoto, creerà valori come 1,2,3,..",
+  "numOfBlocks": "Numero di blocchi",
+  "replicationVarName": "se non lasciato vuoto, nome per la variabile di iterazione di replicazione se replicazione > 1",
+  "replications": "Replicazioni",
+  "repeatOnlyChk": "Ripeti solo (invece di vera replicazione - non raccomandato)",
+  "randomizationChk": "Randomizza le esecuzioni",
+  "selectRandomSeedRad": "Genera automaticamente il seme casuale (unico ogni volta)",
+  "selectFixedRandomSeedRad": "Scegli come mostrato o modifica manualmente il seguente seme casuale",
+  "lbl1": "Potresti non dover cambiare il valore del seme di randomizzazione",
+  "randomseeds": "Seme per la randomizzazione",
+  "sortByOperatorChk": "Ordina per operatore all'interno di ogni replicazione",
+  "help": {
+    "title": "Genera automaticamente una tabella di esperimenti per uno studio MSA Gage",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tGenera automaticamente una tabella di studio MSA per impostare le esecuzioni dell'esperimento con dettagli su Parte e Operatore in base ai parametri specificati. \n\t\t\t\tSe vengono utilizzati valori non numerici per Parte e Operatore, specifica tra virgolette singole ad esempio 1,-1,'name1',0,'string2'\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna volta che i dettagli dell'esecuzione dell'esperimento sono generati automaticamente, la tabella delle esecuzioni apparirà nell'interfaccia utente della griglia dati. \n\t\t\t\tLa tabella delle esecuzioni può essere salvata (o 'salva con nome' dal menu file) per creare un file excel da utilizzare per impostare gli esperimenti\n\t\t\t\t<br/>\n\t\t\t\t<br/>"
+  }
+}

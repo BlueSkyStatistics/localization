@@ -1,0 +1,16 @@
+{
+  "title": "Logística, Condicional",
+  "navigation": "Logística, Condicional",
+  "modelname": "Insira o nome do modelo",
+  "outcomevarlabel": "Variável Dependente (numérica; 1 = evento, 0 = não evento)",
+  "stratavarlabel": "Estratos",
+  "methodgrplabel": "Método de Estimativa",
+  "exactlabel": "Exato",
+  "efronlabel": "Efron",
+  "breslowlabel": "Breslow",
+  "help": {
+    "title": "Logística, Condicional",
+    "r_help": "help(clogit, pacote = 'survival')",
+    "body": "\nIsso ajusta um modelo de regressão logística condicional, que é semelhante à regressão logística padrão, mas incorpora uma variável de estratificação. Aplicações comuns deste \nmodelo estão em estudos de caso-controle pareados, coorte pareada e estudos de caso-controle aninhados. A saída inclui o número de estratos utilizados na análise, padrões de frequência de resultados \ndentro dos estratos, várias estatísticas resumidas do modelo, estimativas de parâmetros e razões de chances.\n<br/><br/>\n<b>Variável Dependente:</b> Esta é a variável que indica o evento para cada sujeito, com 1 significando um evento e 0 significando um não evento. Esta variável deve ser numérica.\n<br/><br/>\n<b>Construtor de Fórmulas:</b> Especifique os termos do modelo desejado.\n<br/><br/>\n<b>Estratos:</b> Especifique a variável de estratificação. Pode ser numérica, caractere ou um fator nominal/ordinal.\n<br/><br/>\n<b>Método de Estimativa:</b> Especifique o método de estimativa do modelo. O método \"Exato\" é o padrão. Desde que não haja muitas maneiras de selecionar eventos dentro dos estratos, esta \ndeveria ser a opção escolhida. A estimativa pode levar algum tempo ou levar a erros se muitas combinações puderem resultar dentro de alguns estratos, digamos 100 eventos de 500 sujeitos. As aproximações de Efron \ne Breslow são adequadas nesses casos, sendo Efron preferido. Veja as referências na ajuda do R para detalhes.\n<br/><br/>\n<b>Pacotes R Necessários:</b> survival, broom, arsenal, dplyr\n\t\t"
+  }
+}

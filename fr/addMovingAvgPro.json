@@ -1,0 +1,12 @@
+{
+  "title": "Calculer et ajouter une variable de moyenne mobile",
+  "navigation": "Moyenne mobile",
+  "variableSelcted": "Sélectionnez une variable pour calculer la moyenne mobile",
+  "sampleSize": "Spécifiez la taille du groupe pour calculer la moyenne mobile (par exemple, 5)",
+  "movingAvgVarName": "Spécifiez le nom de la variable de moyenne mobile à ajouter/mettre à jour (par exemple, movingAvg)",
+  "help": {
+    "title": "Calculer la moyenne mobile pour la variable sélectionnée",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\t<br/>\n\t\t\t\tCalculez la moyenne mobile pour la variable sélectionnée pour la taille de groupe spécifiée. Ajoutez ou modifiez (si le nom de la variable spécifié existe déjà) une variable dans le jeu de données pour stocker le résultat<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

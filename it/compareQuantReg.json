@@ -1,0 +1,12 @@
+{
+  "title": "Confronta le pendenze del modello di regressione quantile",
+  "navigation": "Modelli di regressione quantile",
+  "label1": "Confronta N modelli di regressione quantile.",
+  "label4": "**NOTA: I modelli creati da Model Tuning (classe train) non sono supportati",
+  "modelselector1": "Seleziona 2 o più modelli di regressione quantile per confrontare le pendenze:",
+  "help": {
+    "title": "Confronta le pendenze del modello di regressione quantile",
+    "r_help": "help(anova.rq,package='quantreg')",
+    "body": "\n<b>Descrizione</b></br>\nCalcola le statistiche di test per due o più adattamenti di regressione quantile. \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nobject: oggetti di classe rq, originati da una chiamata a rq.\n</li>\n</ul>\n<b>Dettagli</b><br/>\nL'ipotesi di interesse è che i coefficienti di pendenza dei modelli siano identici. La statistica di test è una variante del test di Wald descritto in Koenker e Bassett (1982).<br/>\n<b>Valore</b><br/>\nUn oggetto di classe \"anova\" che eredita dalla classe \"data.frame\".<br/>\n<b>Pacchetto</b></br>\nquantreg</br>\n<b>Aiuto</b></br>\nPer aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(anova.rq,package='quantreg')</br></br>\n"
+  }
+}

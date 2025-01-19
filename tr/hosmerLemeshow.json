@@ -1,0 +1,13 @@
+{
+  "title": "Hosmer-Lemeshow Test",
+  "navigation": "Hosmer-Lemeshow Test",
+  "label1": "NOT: AKTİF VERİ KÜMESİ, MODELİ OLUŞTURMAK İÇİN KULLANILAN İLE AYNI OLMALIDIR",
+  "modelselector1": "Genelleştirilmiş doğrusal bir model seçin (glm sınıfı modeli):",
+  "destination": "Hedef değişken:",
+  "bins": "Kutu sayısı",
+  "help": {
+    "title": "Hosmer-Lemeshow Test",
+    "r_help": "help(HLgof.test, package='MKmisc')",
+    "body": "\n                <b>Açıklama</b></br>\nFonksiyon, C ve H istatistikleri için Hosmer-Lemeshow uyum iyiliği testlerini ve global uyum iyiliği için le Cessie-van Houwelingen-Copas-Hosmer ağırlıksız kareler toplamı testini hesaplar.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nfit: tahmin edilmiş olasılıklarla sayısal vektör.\n</li>\n<li>\nobs: gözlemlenen değerlerle sayısal vektör.\n</li>\n<li>\nngr: C ve H istatistikleri için grup sayısı.\n</li>\n<li>\nX: le Cessie-van Houwelingen-Copas-Hosmer global uyum iyiliği testi için kovaryat(lar).\n</li>\n<li>\nverbose: mantıksal, ara sonuçları yazdır.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nHosmer-Lemeshow uyum iyiliği testleri hesaplanır; Lemeshow ve Hosmer (1982) için bakınız. X belirtilirse, le Cessie-van Houwelingen-Copas-Hosmer ağırlıksız kareler toplamı testi için global uyum iyiliği ayrıca belirlenir; Hosmer ve ark. (1997) için bakınız. Bu testin daha genel bir versiyonu, rms paketindeki residuals.lrm fonksiyonunda uygulanmıştır.</br>\n<b>Değer</b><br/>\nTest sonuçlarının bir listesi.\n<b>Örnekler</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>Paket</b></br>\nMKmisc</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog overlay'inin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(HLgof.test, package=\"MKmisc\")\n                "
+  }
+}

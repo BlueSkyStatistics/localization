@@ -1,0 +1,22 @@
+{
+  "title": "Reordenar Níveis de Fator por Outra Variável",
+  "navigation": "Reordenar por Outra Variável",
+  "target": "Selecione a variável de fator para reordenar",
+  "variableToOrderBy": "Variável para ordenar por",
+  "label1": "Reordene os níveis de fator com base em uma função aritmética, ou seja, média, mediana, soma dos valores em outra variável. Selecione a variável de fator para reordenar, selecione uma variável numérica para calcular a média, mediana ou soma. Isso é calculado para cada nível da variável de fator. Os níveis são então ordenados com base nesse cálculo. Você pode sobrescrever variáveis existentes ou criar novas variáveis especificando um prefixo/sufixo. Novas variáveis serão criadas com o prefixo/sufixo anexado aos nomes existentes.",
+  "function": "Selecione uma função para ordenar por",
+  "label2": "Salvar resultados em uma nova variável ou sobrescrever variável existente",
+  "rd3": "Especifique um sufixo (Uma nova variável será criada com o sufixo)",
+  "txt3": "Digite um sufixo",
+  "rd2": "Especifique um prefixo (Uma nova variável será criada com o prefixo)",
+  "txt4": "Digite um prefixo",
+  "rd1": "Sobrescrever variável existente",
+  "label3": "Especifique uma ordem",
+  "Descending": "Decrescente",
+  "Ascending": "Crescente",
+  "help": {
+    "title": "Reordenar por Outro",
+    "r_help": "help(fct_reorder, package =forcats)",
+    "body": "\n<b>Descrição</b></br>\nReordene os níveis de fator classificando ao longo de outra variável. Os níveis de fator são reordenados com base em uma função aritmética, ou seja, média, mediana, soma dos valores em outra variável. Selecione a variável de fator para reordenar, selecione uma variável numérica para calcular a média, mediana ou soma. Isso é calculado para cada nível da variável de fator. Os níveis são então ordenados com base nesse cálculo. Os resultados podem ser salvos nas variáveis existentes ou você pode criar novas variáveis especificando um prefixo/sufixo. Novas variáveis serão criadas com o prefixo/sufixo anexado aos nomes existentes. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_reorder(.f, .x, .fun = median, ..., .desc = FALSE)\nDataset1$col1 <-forcats::fct_reorder( .f=Dataset1$col1,.x=Dataset1$col2,.fun=median,.desc=TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n.f: Um fator (ou vetor de caracteres).\n</li>\n<li>\n.x, .y: Os níveis de f são reordenados de modo que os valores de .fun(.x) (para fct_reorder()) e fun(.x, .y) (para fct_reorder2()) estejam em ordem crescente.\n</li>\n<li>\n.fun: n função de resumo. Deve aceitar um vetor para fct_reorder, e dois vetores para fct_reorder2, e retornar um único valor.\n</li>\n<li>\n...: Outros argumentos passados para .fun. Um argumento comum é na.rm = TRUE.\n</li>\n<li>\n.desc: Ordem em ordem decrescente? Note que o padrão é diferente entre fct_reorder e fct_reorder2, a fim de corresponder à ordenação padrão de fatores na legenda.\n</li>\n</ul>\n<b>Exemplos</b></br>\n<code> \nboxplot(Sepal.Width ~ Species, data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width), data = iris)<br/>\nboxplot(Sepal.Width ~ fct_reorder(Species, Sepal.Width, .desc = TRUE), data = iris)<br/>\nchks <- subset(ChickWeight, as.integer(Chick) < 10)<br/>\nchks <- transform(chks, Chick = fct_shuffle(Chick))<br/>\nif (require(\"ggplot2\")) {<br/>\nggplot(chks, aes(Time, weight, colour = Chick)) +<br/>\n    geom_point() +<br/>\n    geom_line()<br/>\n# Note que as linhas correspondem à ordem na legenda<br/>\nggplot(chks, aes(Time, weight, colour = fct_reorder2(Chick, Time, weight))) +<br/>\n    geom_point() +<br/>\n    geom_line() +<br/>\n    labs(colour = \"Chick\")<br/>\n}<br/>\n</code>\n<b>Pacote</b></br>\nforcats</br>\n<b>Ajuda</b></br>\nDigite a linha abaixo no editor de sintaxe R do BlueSky Statistics</br>\nhelp(fct_reorder, package =forcats)\n"
+  }
+}

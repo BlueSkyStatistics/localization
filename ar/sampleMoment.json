@@ -1,0 +1,17 @@
+{
+  "navigation": "عينة لحظة",
+  "title": "عينة لحظة",
+  "label2": "إعدادات اختبار محددة",
+  "label3": "إعدادات إضافية",
+  "showLengthNAs": "عرض الطول و NAs",
+  "order": "ترتيب",
+  "centralMoments": "احسب اللحظات المركزية",
+  "absoluteMoments": "احسب اللحظات المطلقة",
+  "missingValues": "إزالة القيم المفقودة",
+  "Target": "اختر متغيرًا أو أكثر",
+  "help": {
+    "title": "عينة لحظة",
+    "r_help": "help(moment, package ='moments')",
+    "body": "\n<b>الوصف</b></br>\nتقوم هذه الوظيفة بحساب لحظة العينة من الطلب المحدد.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nmoment(x, order = 1, central = FALSE, absolute = FALSE, na.rm = FALSE)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nx: متجه عددي من قيم البيانات.\n</li>\n<li>\norder: ترتيب اللحظة التي سيتم حسابها\n</li>\n<li>\ncentral: قيمة منطقية - إذا كانت اللحظات المركزية يجب حسابها.</br>\n</li>\n<li>\n</li>\n<li>\nabsolute: قيمة منطقية - إذا كانت اللحظات المطلقة يجب حسابها.</br>\n</li>\n<li>\nna.rm: قيمة منطقية - هل يجب إزالة قيم NA؟.</br>\n</li>\n</ul>\n<b>مثال</b></br>\n<code> \nset.seed(1234)</br>\nx = rnorm(1000)</br>\nmoment(x))</br>\nmoment(x,order=3,absolute=TRUE)</br>\n</code> <br/>\n<b>الحزمة</b></br>\nmoments</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي help(moment, package ='moments') في محرر R الخاص بـ BlueSky Statistics.           \n<br/>\n<br/>\t\n\t\t\t"
+  }
+}

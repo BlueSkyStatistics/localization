@@ -1,0 +1,15 @@
+{
+  "title": "Tamanho da Amostra, Precisão de Uma Proporção",
+  "navigation": "Uma Proporção",
+  "howtouse": "Especifique o tamanho da amostra ou a largura do intervalo de confiança e o outro será calculado",
+  "n": "Tamanho da Amostra",
+  "width": "Largura do Intervalo de Confiança",
+  "prop": "Proporção do Resultado",
+  "conflevel": "Nível de Confiança (0-1)",
+  "method": "Método do Intervalo de Confiança",
+  "help": {
+    "title": "Tamanho da Amostra, Precisão de Uma Proporção",
+    "r_help": "help(prec_prop, package ='presize')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma proporção com base na largura do intervalo de confiança. Ele calcula o tamanho da amostra ou a largura do intervalo de confiança quando o usuário \nespecifica o outro.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Largura do Intervalo de Confiança:</b> Especifique a largura do intervalo de confiança desejada. A largura de um intervalo de confiança é uma medida de precisão de uma estimativa e é a diferença entre o limite superior e o limite inferior.\n<br/><br/>\n<b>Proporção do Resultado:</b> Especifique a proporção de sujeitos com o resultado 'positivo'\n<br/><br/>\n<b>Nível de Confiança:</b> Especifique o nível desejado do intervalo de confiança\n<br/><br/>\n<b>Método do Intervalo de Confiança:</b> Especifique o tipo de método de intervalo de confiança a ser utilizado. O método de Wilson é sugerido para n pequeno (< 40), e o método de Agresti-Coull é \nsugerido para n maior. O método de Wald não é sugerido, mas é fornecido devido ao seu uso amplamente distribuído.\n<br/><br/>\n<b>Pacotes R Necessários:</b> presize\n\t\t\t"
+  }
+}

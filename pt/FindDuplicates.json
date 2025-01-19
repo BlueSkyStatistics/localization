@@ -1,0 +1,18 @@
+{
+  "title": "Encontrar Duplicatas",
+  "navigation": "Encontrar Duplicatas",
+  "keysnote": "NOTA: Especificar nenhuma variável chave resultará em uma busca completa de duplicatas. Especificar variáveis chave buscará duplicatas apenas pelos valores das variáveis chave.",
+  "keyvarslabel": "Variáveis Chave (opcional)",
+  "allduprowschecklabel": "Criar conjunto de dados com todas as linhas associadas às duplicatas",
+  "allduprowsnamelabel": "Nome do conjunto de dados",
+  "alldatachecklabel": "Criar conjunto de dados com dados originais e coluna indicando duplicatas",
+  "alldatanamelabel": "Nome do conjunto de dados",
+  "dupvarnamelabel": "Nome da variável duplicada",
+  "nodupdatachecklabel": "Criar conjunto de dados com todas as duplicatas removidas",
+  "nodupdatanamelabel": "Nome do conjunto de dados",
+  "help": {
+    "title": "Encontrar Duplicatas",
+    "r_help": "help(duplicated, package = 'base')",
+    "body": "\nEste diálogo encontrará duplicatas, seja por casos completos ou por variáveis chave. Duplicatas de casos completos são iguais para cada valor de cada variável. Duplicatas usando variáveis chave são duplicatas definidas apenas por valores iguais para variáveis específicas, chamadas de \"chaves\". As duplicatas são pesquisadas de cima para baixo no conjunto de dados. Portanto, uma linha duplicada significa que os valores são iguais a uma linha anterior. Resumos das duplicatas são fornecidos.\n<br/><br/>\n<b>Variáveis Chave:</b> Especifique variáveis chave opcionais que definem as duplicatas. Se nenhuma variável chave for selecionada, duplicatas de casos completos serão pesquisadas.\n<br/><br/>\n<b>Criar conjunto de dados com todas as linhas associadas às duplicatas:</b> Isso criará um conjunto de dados de todas as linhas duplicadas e a primeira instância de cada linha correspondente a cada duplicata. O conjunto de dados de saída será classificado por todas as variáveis no caso de duplicata completa e pelas variáveis chave no caso de variável chave. As variáveis chave também serão movidas para o início do conjunto de dados de saída. O campo <b>Nome do conjunto de dados</b> pode ser usado para nomear este conjunto de dados de saída.\n<br/><br/>\n<b>Criar conjunto de dados com dados originais e coluna indicando duplicatas:</b> Isso criará um conjunto de dados incluindo todos os dados originais mais uma coluna adicional indicando as linhas duplicadas (0=não duplicada, 1=duplicada). O campo <b>Nome do conjunto de dados</b> pode ser usado para nomear este conjunto de dados de saída. O campo <b>Nome da variável duplicada</b> pode ser usado para nomear esta coluna adicional.\n<br/><br/>\n<b>Criar conjunto de dados com todas as duplicatas removidas:</b> Isso criará um conjunto de dados que remove todas as linhas duplicadas (seja de caso completo ou por variáveis chave) onde as duplicatas são pesquisadas de cima para baixo no conjunto de dados. Isso significa que todas as 2ª, 3ª, etc. instâncias das linhas serão removidas. O campo </b>Nome do conjunto de dados</b> pode ser usado para nomear este conjunto de dados de saída.\n<br/><br/>\n<b>Pacotes R Necessários:</b> dplyr, arsenal\n"
+  }
+}

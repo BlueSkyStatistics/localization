@@ -1,0 +1,16 @@
+{
+  "title": "K-Ortalamalar Kümesi",
+  "navigation": "K-Ortalamalar",
+  "destination": "Hedef",
+  "clusters": "Küme sayısı",
+  "seeds": "Başlangıç tohumları sayısı",
+  "iterations": "Maksimum yineleme",
+  "storeClusterInDataset": "Küme atamalarını veri setine kaydet",
+  "variablename": "Küme numaralarını saklamak için değişken",
+  "biplot": "Küme biplotunu göster",
+  "help": {
+    "title": "K-Ortalamalar Kümesi",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>Açıklama</b></br>\nK-ortalama kümeleme işlemi gerçekleştirir\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10,storeClusterInDataset =FALSE, varNameForCluster=\"\", dataset=\"veri seti adı\") \n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvars: c('var1','var2'...) biçiminde bir vektörde analiz edilecek değişkenler\n</li>\n<li>\ncenters: k sayısı ya da başlangıç (farklı) küme merkezleri seti. Bir sayı ise, x'teki (farklı) rastgele bir set\nsatır başlangıç merkezleri olarak seçilir.\n</li>\n<li>\niter.max: izin verilen maksimum yineleme sayısı.\n</li>\n<li>\nnum.seeds: Kullanılacak farklı başlangıç rastgele tohum sayısı. Her rastgele tohum, farklı bir k-ortalama çözümü üretir.\n</li>\n<li>\nstoreClusterInDataset : Küme atamalarını veri setine kaydet\n</li>\n<li>\nvarNameForCluster: Atanan kümeler için değişken adları\n</li>\n<li>\ndataset: Analiz edilecek veri seti\n</li>\n</ul>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Yardım</b></br>\nhelp(kmeans, package=\"stats\")\n    "
+  }
+}

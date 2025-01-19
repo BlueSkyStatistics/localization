@@ -1,0 +1,32 @@
+{
+  "title": "Gage R&R - Analisi del Sistema di Misurazione",
+  "navigation": "Gage R&R",
+  "mainTitle": "Titolo principale per l'output grafico",
+  "subTitle": "Sottotitolo per l'output grafico (ad es. il nome del progetto)",
+  "measuredVar": "Variabile misurata",
+  "part": "Variabile parte",
+  "appr": "Valutatore (operatori, macchine, ...) variabile",
+  "lsl": "LSL - valore numerico del limite di specifica inferiore utilizzato con USL per calcolare la Variazione dello Studio come %Tolleranza",
+  "usl": "USL - valore numerico del limite di specifica superiore utilizzato con LSL per calcolare la Variazione dello Studio come %Tolleranza",
+  "historicalStdv": "Deviazione standard storica del processo (se non specificato, digitare NA)",
+  "useHistStdDevProcVarChk": "Utilizzare la deviazione standard storica per stimare i valori di Valutazione Gage (%Tabella Variazione Studio)",
+  "sigma": "Sigma - valore numerico per il numero di deviazioni standard da utilizzare nel calcolo della Variazione dello Studio",
+  "tolerance": "Tolleranza - valore numerico per la tolleranza - predefinito (usl - lsl)",
+  "alphaLim": "Alpha - Limite da tenere in considerazione per l'interazione",
+  "errorTerm": "Quale termine del modello dovrebbe essere utilizzato come termine di errore (per il modello con interazione)",
+  "method": "Tipo di analisi da eseguire, incrociata (predefinita) o annidata",
+  "label1": "Dettagli dell'intestazione del rapporto di studio Gage R&R",
+  "gageName": "Nome del Gage",
+  "dateStudy": "Data dello studio",
+  "partDescription": "Descrizione della parte",
+  "machineName": "Nome della macchina",
+  "reportedBy": "Segnalato da",
+  "operatorNames": "Nomi degli operatori",
+  "testLocation": "Luogo di prova",
+  "miscellaneous": "Varie",
+  "help": {
+    "title": "Gage R&R - Analisi del Sistema di Misurazione",
+    "r_help": "help(ss.rr, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione ss.rr per eseguire l'analisi Gage R&R per la valutazione del sistema di misurazione di un processo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare il file di dataset di esempio chiamato gageR_R_piston_diameter_with_measurements.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\tDal dataset di esempio, seleziona la variabile diametro come Variabile Misurata, Pistonring come Variabile Parte e Operatore come Valutatore \n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

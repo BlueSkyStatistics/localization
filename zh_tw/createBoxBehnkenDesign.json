@@ -1,16 +1,16 @@
 {
-  "title": "創建 Box-Behnken（定量）設計",
-  "navigation": "創建 Box-Behnken（定量）設計",
+  "title": "創建 Box-Behnken (定量) 設計",
+  "navigation": "創建 Box-Behnken (定量) 設計",
   "selectedvars": "選擇變數",
   "datasetname": "設計名稱",
   "numCenter": "每個區塊的中心點整數數量",
   "blockName": "區塊名稱",
   "lbl1": "您可能不需要更改隨機化設置",
-  "randomseeds": "隨機化種子",
-  "randomizationChk": "隨機生成設計",
+  "randomseeds": "隨機化的種子",
+  "randomizationChk": "隨機化設計生成",
   "help": {
-    "title": "創建 Box-Behnken（定量）設計",
+    "title": "創建 Box-Behnken (定量) 設計",
     "r_help": "help(bbd.design, package = DoE.wrapper)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tbbd.design 函數用於生成 Box-Behnken 設計，使用 rsm 套件\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(bbd.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 factors for bbd design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開文件\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tbbd.design 函數用於生成 Box-Behnken 設計，利用 rsm 套件\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(bbd.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 factors for bbd design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
   }
 }

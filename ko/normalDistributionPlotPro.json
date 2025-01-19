@@ -1,0 +1,28 @@
+{
+  "title": "라벨이 있는 정규 분포 플롯",
+  "navigation": "라벨이 있는 정규 분포 플롯",
+  "mean": "평균",
+  "sd": "표준 편차",
+  "pdenfun": "밀도 함수 플롯",
+  "pdstfun": "분포 함수 플롯",
+  "lblregions": "밀도 함수 아래의 영역을 선택적으로 지정",
+  "xvals": "x-값",
+  "quantiles": "분위수",
+  "lblRegFill": "채울 영역(하나 또는 두 개를 지정하거나 x-값 또는 분위수 옵션을 위해 비워 두십시오). 'From' 필드를 비워 두면 왼쪽(하단) 꼬리를 플롯하고 'To' 필드를 비워 두면 오른쪽(상단) 꼬리를 플롯합니다.",
+  "lblreg1": "영역 1 :",
+  "lblreg2": "영역 2 :",
+  "lblregfrm": "시작",
+  "lblregto": "끝",
+  "lblregcol": "색상",
+  "lowProbBound": "샘플 분포 생성을 위해 사용되는 확률의 하한",
+  "upperProbBound": "샘플 분포 생성을 위해 사용되는 확률의 상한",
+  "lblLegPos": "범례의 위치",
+  "toprt": "오른쪽 상단",
+  "toplt": "왼쪽 상단",
+  "topmid": "상단 중앙",
+  "help": {
+    "title": "라벨이 있는 정규 분포 플롯",
+    "r_help": "help(qnorm, package=stats)",
+    "body": "\n            ​​\n            <b>설명</b>\n            <br/>\n            평균이 평균과 같고 표준 편차가 sd인 정규 분포의 밀도, 분포 함수, 분위수 함수 및 무작위 생성.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>인수</b>\n            <br/>\n            <ul>\n                <li>x, q : 분위수 벡터.</li>\n                \n                \n                <li>p : 확률 벡터.</li>\n                \n                \n                <li>n : 관측치 수. length(n) > 1인 경우, 길이는 필요한 수로 간주됩니다.</li>\n                \n                \n                <li>mean : 평균 벡터.</li>\n                \n                \n                <li>sd : 표준 편차 벡터.</li>\n                \n                \n                <li>log, log.p : 논리적; TRUE인 경우, 확률 p는 log(p)로 제공됩니다.</li>\n                \n                \n                <li>lower.tail : 논리적; TRUE(기본값)인 경우, 확률은 P[X ≤ x] 그렇지 않으면 P[X > x]입니다.</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>세부정보</b>\n            <br/>\n            mean 또는 sd가 지정되지 않은 경우 기본값 0 및 1을 가정합니다.\n            <br/>\n            정규 분포의 밀도는\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            여기서 μ는 분포의 평균이고 σ는 표준 편차입니다.\n            <br/>\n            <br/><b>값</b>\n            <br/>\n            dnorm은 밀도를 제공하고, pnorm은 분포 함수를 제공하며, qnorm은 분위수 함수를 제공하고, rnorm은 무작위 편차를 생성합니다.\n            <br/>\n            결과의 길이는 rnorm의 n에 의해 결정되며, 다른 함수의 경우 숫자 인수의 길이 중 최대값입니다.\n            <br/>\n            n 이외의 숫자 인수는 결과의 길이에 맞게 재활용됩니다. 논리적 인수의 첫 번째 요소만 사용됩니다.\n            <br/>\n            sd = 0인 경우, sd가 0으로 감소할 때의 한계로, mu에서의 점 질량을 제공합니다. sd < 0은 오류이며 NaN을 반환합니다.\n            \n"
+  }
+}

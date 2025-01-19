@@ -1,0 +1,20 @@
+{
+  "title": "Tracciare serie temporali",
+  "navigation": "Tracciare serie temporali, separate o combinate",
+  "destination": "Variabili da tracciare",
+  "firstObservation": "Tempo della prima osservazione e.g.1: inserire 1961,1 per gennaio 1961 e.g.2: inserire 1961,3 per il 3° trimestre del 1961, e.g.3: inserire 1 per una serie continua",
+  "frequency": "Numero di osservazioni per unità di tempo e.g.1: inserire 12 per un'osservazione per ogni mese dell'anno, e.g. 2: inserire 4 per un'osservazione per trimestre, e.g. 3: inserire 1 per una serie continua.",
+  "label0": "Opzioni di tracciamento",
+  "separately": "Traccia ogni serie separatamente",
+  "combine": "Combina le serie",
+  "label1": "Trasforma variabili",
+  "chkboxForTransform": "Logaritmo naturale",
+  "label2": "Opzioni per i valori adattati",
+  "yaxisLabel": "Etichetta dell'asse Y",
+  "mainTitle": "Titolo principale",
+  "help": {
+    "title": "Tracciare serie temporali",
+    "r_help": "help(plot.ts, package ='stats')",
+    "body": "\n<b>Descrizione</b></br>\nCrea un grafico di serie temporali in modo combinato o separato. Quando combinato, più variabili vengono tracciate insieme, quando separate, ogni variabile viene tracciata indipendentemente. BSkyPlotSeriesWithCorrelations è una funzione wrapper che crea un oggetto di serie temporali e chiama internamente plot.ts. \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyPlotTimeSeries(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='titolo', ylab='etichetta asse y', dataset=\"Dataset1\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvars: variabili selezionate da tracciare\n</li>\n<li>\nstart: Il tempo della prima osservazione deve essere inserito nel formato anno,mese o anno, trimestre e.g.( se i tuoi dati sono organizzati per mesi, 1992,1 per gennaio 1992 o se i tuoi dati sono organizzati per trimestri, allora 1992,1 si riferisce al primo trimestre del 1992.\n</li>\n<li>\nfrequency: Numero di osservazioni in unità di tempo. Esempio: per mensile ci sono 12 osservazioni in un anno. Per trimestrale ci sono 4 osservazioni in un anno.\n</li>\n<li>\nplot.type: \"multiple\" per separato e \"single\" per grafico combinato.\n</li>\n<li>\nnaturalLogYaxis: se TRUE, un asse Y è mostrato come valore logaritmico naturale.\n</li>\n<li>\nmain: titolo principale del grafico\n</li>\n<li>\nylab: titolo per l'asse y\n</li>\n<li>\ndataset: il nome del dataset da cui sono state selezionate le variabili.\n</li>\n</ul>\n<b>Pacchetto</b></br>\nstats</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(plot.ts, package ='stats') creando un blocco di codice R cliccando + nella finestra di output\n"
+  }
+}

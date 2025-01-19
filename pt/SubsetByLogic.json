@@ -1,0 +1,20 @@
+{
+  "title": "Conjunto de Dados por Lógica",
+  "navigation": "Conjunto de Dados por Lógica",
+  "label0": "Você pode escolher salvar os resultados em um novo conjunto de dados ou sobrescrever o conjunto de dados existente",
+  "label1": "Opções",
+  "New": "Salvar resultados em um novo conjunto de dados",
+  "newdatasetname": "Digite um nome para o conjunto de dados",
+  "Existing": "Sobrescrever conjunto de dados existente",
+  "Output": "Exibir resultados na janela de saída",
+  "distinct": "Selecionar casos distintos",
+  "chkbox2": "Remover níveis de fator não utilizados",
+  "subsetvars": "Selecionar variáveis para incluir no conjunto de dados filtrado",
+  "label12": "Os critérios de filtragem são aplicados a cada linha, veja exemplos abaixo. \n1: Selecione linhas onde var 1 não está vazia e var2 está vazia especifique:\n!is.na(var1) & is.na(var2) \n2: Selecione linhas onde var1 > 30 e var 2 é Masculino especifique:\nvar1>30 & var2=='Masculino' \n3: Critérios complexos e/ou especifique:\n(var1 !=10 & var2>20) | var3==40 \n4: Correspondência de padrão (xxx) ou uma correspondência exata (abc) especifique:\n(grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\" \n5: Correspondência de uma substring por posição especifique: substr(var1,2,4) ==\"abc\"",
+  "subsetexpression": "Digite critérios de filtragem.",
+  "help": {
+    "title": "Conjunto de Dados",
+    "r_help": "help(filter, package=dplyr)",
+    "body": "\n            <b>Descrição</b></br>\nRetorna um subconjunto do conjunto de dados. Você pode especificar as colunas/variáveis que deseja no conjunto de dados menor. Você também pode especificar critérios de seleção a serem aplicados a cada linha do dataframe.\n<br/><br/>\n<b>Salvar resultados em um novo conjunto de dados:</b> Especifique um novo conjunto de dados para armazenar os dados filtrados\n<br/><br/>\n<b>Sobrescrever conjunto de dados existente:</b> Isso salva o conjunto de dados filtrado no nome do conjunto de dados existente\n<br/><br/>\n<b>Exibir resultados na janela de saída:</b> Isso imprime o conjunto de dados filtrado na janela de saída apenas. O conjunto de dados filtrado não é salvo em um conjunto de dados.\n<br/><br/>\n<b>Selecionar casos distintos:</b> Isso remove duplicatas do conjunto de dados filtrado. Todas as variáveis devem ser as mesmas para serem consideradas duplicatas.\n<br/><br/>\n<b>Remover níveis de fator não utilizados:</b> Isso exclui níveis de fator que foram excluídos pelo subconjunto (ou seja, não aparecem mais nos dados).\n<br/><br/>\n<b>Selecionar variáveis para incluir no conjunto de dados filtrado:</b> Isso permite que o usuário selecione colunas específicas que deseja incluir no conjunto de dados. Se alguma for especificada, apenas as variáveis especificadas aparecerão no conjunto de dados filtrado. Se nenhuma variável for especificada, todas as variáveis serão mantidas.\n<br/><br/>\n<b>Digite critérios de filtragem:</b> Especifique a lógica da variável que será usada para filtrar as linhas do conjunto de dados.\n<br/><br/>\n<b>Pacote R</b></br>\ndplyr<br/>  \n<b>Ajuda</b></br>\nhelp(filter, package=dplyr)\n"
+  }
+}

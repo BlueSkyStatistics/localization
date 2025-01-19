@@ -1,0 +1,21 @@
+{
+  "title": "Grafico di Pareto, Base",
+  "navigation": "Grafico di Pareto, Base",
+  "label1": "Due opzioni - Formato lungo (predefinito) ovvero categorie e conteggi in colonne verticali e Formato largo ovvero categorie come nomi di colonna e conteggi come riga",
+  "selectLongRad": "Opzione 1: Formato lungo - scegli categorie e conteggi",
+  "selectWideRad": "Opzione 2: Formato largo - I nomi delle colonne saranno utilizzati come categorie e la 1a riga (predefinita) sarà utilizzata come conteggi",
+  "rownumForCounts": "Numero di riga (predefinito 1a riga) da utilizzare per i conteggi",
+  "mainTitle": "Titolo del Grafico",
+  "category": "Variabile (ad es. categorie) da tracciare",
+  "counts": "Variabile da utilizzare come conteggi da tracciare",
+  "xlab": "Una stringa che specifica l'etichetta per l'asse x",
+  "ylab": "Una stringa che specifica l'etichetta per l'asse y",
+  "ylab2": "Una stringa che specifica l'etichetta per il secondo asse y sul lato destro",
+  "percentStep": "Passo percentuale da utilizzare come tacche per il secondo asse y sul lato destro",
+  "digits": "Numero di punti decimali per la tabella Statistiche",
+  "help": {
+    "title": "Grafico di Pareto",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tfunzione pareto.chart per creare una tabella di statistiche e tracciare un grafico di Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare il file di dataset di esempio chiamato defects_frequency_pareto_chart.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

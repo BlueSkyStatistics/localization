@@ -1,0 +1,9 @@
+{
+  "title": "Tasarımı Dışa Aktar - tasarım ile aynı isimde üç dosya (csv, html, rda) oluşturulacaktır",
+  "navigation": "Tasarımı Dışa Aktar",
+  "exportPath": "Tasarımı dışa aktarmak için dosya yolu",
+  "help": {
+    "title": "Tasarımı Dışa Aktar",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tTasarımı dışa aktarmak, seçilen dizin yolunda tasarım ile aynı isimde üç dosya (csv, html, rda) oluşturacaktır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTasarımı dışa aktarmanın amacı, tasarıma göre deneyleri gerçek dünyada kurmak ve yürütmek ve sonuçları toplamaktır. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSonuçları kaydetmek için csv dosyasına R değişken adlandırma kuralına uygun sütun(lar) ekleyin. Bu ek sütunlar, Deney Tasarımı terminolojisinde yanıt(lar) olarak bilinir. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt sütun(lar) csv dosyasına eklendikten sonra, DOE -> Tasarımı İçe Aktar menüsü, csv dosyasını veri seti UI ızgarasında doğru tasarıma (zaten açık) yüklemek için kullanılabilir.  \n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

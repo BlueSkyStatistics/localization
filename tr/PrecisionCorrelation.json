@@ -1,0 +1,15 @@
+{
+  "title": "Örneklem Büyüklüğü, Korelasyonun Hassasiyeti",
+  "navigation": "Korelasyon",
+  "howtouse": "Ya örneklem büyüklüğünü ya da güven aralığı genişliğini belirtin, diğeri hesaplanacaktır",
+  "n": "Örneklem Büyüklüğü",
+  "width": "Güven Aralığı Genişliği",
+  "corr": "Korelasyon (-1 ile 1 arasında)",
+  "conflevel": "Güven Düzeyi (0-1)",
+  "corrtype": "Korelasyon Türü",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Korelasyonun Hassasiyeti",
+    "r_help": "help(prec_cor, package ='presize')",
+    "body": "\nBu, güven aralığı genişliğine dayalı olarak Pearson, Spearman veya Kendall korelasyonu için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirtirse, örneklem büyüklüğünü veya güven aralığı genişliğini hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin\n<br/><br/>\n<b>Güven Aralığı Genişliği:</b> İstenilen güven aralığı genişliğini belirtin. Güven aralığı genişliği, bir tahminin hassasiyetinin bir ölçüsüdür ve üst sınır ile alt sınır arasındaki farktır.\n<br/><br/>\n<b>Korelasyon:</b> Beklenen korelasyon değerini belirtin\n<br/><br/>\n<b>Güven Düzeyi:</b> İstenilen güven aralığı düzeyini belirtin\n<br/><br/>\n<b>Korelasyon Türü:</b> Hesaplanan korelasyon türünü belirtin\n<br/><br/>\n<b>Gerekli R Paketleri:</b> presize\n\t\t\t"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Elenco Crosstab",
+  "navigation": "Elenco Crosstab",
+  "destvarslabel": "Variabili per Tabella",
+  "missinglabel": "Valori Mancanti",
+  "removelabel": "Rimuovi",
+  "showexcludelabel": "Mostra ed Escludi dai Percentuali",
+  "includelabel": "Mostra ed Includi nei Percentuali",
+  "sparseoptlabel": "Includi Combinazioni con 0 Conteggi",
+  "toplistoptlabel": "Mostra i N Valori più Frequenti",
+  "topnumlabel": "N",
+  "help": {
+    "title": "Elenco Crosstab",
+    "r_help": "help(freqlist, package ='arsenal')",
+    "body": "\nQuesto crea tabelle di frequenza in un formato di elenco per combinazioni di una o più variabili. Ogni combinazione di valori tra tutte le variabili specificate sarà tabulata, \ncon le loro frequenze osservate. Le variabili specificate possono essere di qualsiasi classe, comprese le variabili numeriche e continue. Sebbene questo possa essere utilizzato per frequenze riassuntive e \npercentuali, un uso principale è controllare i dati per incoerenze. Si deve prestare attenzione a quante variabili incrociare e a quante possibilità possono risultare, poiché \nalcune tabelle potrebbero richiedere più tempo per essere prodotte. \n<br/><br/>\n<b>Variabili per Tabella:</b>  <br/>Variabili da includere nella tabella, che possono essere di qualsiasi classe. La tabella sarà ordinata secondo l'ordine delle variabili in questo elenco.  \nQuesto significa che se le variabili A e B sono nell'ordine specificato, allora la tabella sarà ordinata per livelli di A, poi livelli di B all'interno di A.\n<br/><br/>\n<b>Valori Mancanti</b>\n<br/>\n<ul>\n\t<li><b>Rimuovi:</b>  Combinazioni di valori delle variabili che hanno NA saranno escluse dalla tabella.</li>\n\t<li><b>Mostra ed Escludi dai Percentuali:</b>  Combinazioni di valori delle variabili che hanno NA saranno incluse nella tabella, ma non saranno incluse nei calcoli percentuali.</li>\n\t<li><b>Mostra ed Includi nei Percentuali:</b>  Combinazioni di valori delle variabili che hanno NA saranno incluse nella tabella e saranno incluse nei calcoli percentuali.</li> \n</ul>\n<br/><br/>\n<b>Includi Combinazioni con 0 Conteggi:</b>  <br/>Se includere o meno combinazioni di valori delle variabili che non esistono nel dataset. Ad esempio, se le variabili A e B hanno valori osservati di 1, 2 e 3, ma la combinazione (A, B) (1, 3) non è osservata nei dati, questa opzione includerebbe una riga per la combinazione (1, 3) con una frequenza di 0.\n<br/><br/>\n<b>Mostra i N Valori più Frequenti:</b>  <br/>Se selezionato, questo creerebbe una tabella separata con le N combinazioni di variabili più frequenti.\n<ul>\n\t<li><b>N:</b> Quante combinazioni di variabili mostrare per la tabella dei N.</li>\n</ul>\n<b>Pacchetti R Richiesti:</b> arsenal\n\t\t\t"
+  }
+}

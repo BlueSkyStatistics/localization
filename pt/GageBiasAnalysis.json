@@ -1,0 +1,13 @@
+{
+  "title": "Análise de Viés de Gage, Básico",
+  "navigation": "Análise de Viés de Gage, Básico",
+  "variableRespSelcted": "(Opcional se a variável de viés for selecionada) Selecione a variável para medição/resposta",
+  "variableRefSelcted": "Selecione a variável para valor de referência/padrão",
+  "variableBiasSelcted": "(Opcional) Selecione a variável para viés, se disponível; Caso contrário, será calculado automaticamente",
+  "alpha": "Intervalo de confiança para linearidade (entre 0 e 1)",
+  "help": {
+    "title": "Análise de viés de gage",
+    "r_help": "help(lm, package = stats)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar análise de viés de linearidade\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar os arquivos de conjunto de dados de amostra linearityBias.xlsx. Abra os arquivos na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\tEscolha as variáveis na caixa de seleção, Referência e Medição\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

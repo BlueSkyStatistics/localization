@@ -1,0 +1,16 @@
+{
+  "title": "Box-Behnken (Nicel) Tasarımı Oluştur",
+  "navigation": "Box-Behnken (Nicel) Tasarımı Oluştur",
+  "selectedvars": "Değişkenleri seçin",
+  "datasetname": "Tasarım adı",
+  "numCenter": "Her blok için merkez noktalarının tam sayısı",
+  "blockName": "Blok adı",
+  "lbl1": "Rastgeleleştirme ayarlarını değiştirmenize gerek olmayabilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "randomizationChk": "Tasarım oluşturmayı rastgeleleştir",
+  "help": {
+    "title": "Box-Behnken (Nicel) Tasarımı Oluştur",
+    "r_help": "help(bbd.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tbbd.design fonksiyonu, rsm paketini kullanarak Box-Behnken tasarımları oluşturmak için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(bbd.design, package = DoE.wrapper) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, bbd tasarımı için faktörler adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "카운트별 순서 재정렬",
+  "navigation": "카운트별 재정렬",
+  "target": "재정렬할 요인 변수를 선택하세요",
+  "label1": "카운트별로 재정렬할 요인 변수를 선택하세요. 기존 변수를 덮어쓰거나 접두사/접미사를 지정하여 새 변수를 만들 수 있습니다. 새 변수는 기존 이름에 접두사/접미사가 추가된 형태로 생성됩니다.",
+  "label2": "새 레벨을 새 변수에 저장하거나 기존 변수를 덮어씁니다",
+  "rd3": "접미사를 지정하세요 (새 변수가 접미사와 함께 생성됩니다)",
+  "txt3": "접미사를 입력하세요",
+  "rd2": "접두사를 지정하세요 (새 변수가 접두사와 함께 생성됩니다)",
+  "txt4": "접두사를 입력하세요",
+  "rd1": "기존 변수를 덮어쓰기",
+  "label3": "순서를 지정하세요",
+  "Descending": "카운트별 내림차순",
+  "Ascending": "카운트별 오름차순",
+  "ordered": "순서가 있는 요인 만들기 (서수)",
+  "help": {
+    "title": "변수를 알파벳 순서로 재정렬",
+    "r_help": "help(sort)",
+    "body": "\n<b>설명</b></br>\n데이터셋의 변수를 알파벳 순서로 재정렬합니다. 우리는 데이터셋의 열/변수 이름을 정렬하기 위해 sort 함수를 사용하고, dplyr 패키지의 select 함수를 사용하여 올바른 알파벳 순서로 열 이름을 선택합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \n##알파벳 순서로 재정렬 (A-Z)\nDataset_name <- Dataset_name %>%   select(sort(names(.)))\n##알파벳 순서로 재정렬 (Z-A)\nDataset_name <- Dataset_name %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>인수</b><br/>\n없음<br/>\n<b>패키지</b></br>\ndplyr</br>\n<b>도움말</b></br>\nhelp(select, package='dplyr')<br/>\nhelp(sort)\n"
+  }
+}

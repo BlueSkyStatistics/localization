@@ -1,0 +1,16 @@
+{
+  "title": "Taguchi Tarzı İç-Dış Parametre Tasarımı Oluştur",
+  "navigation": "Taguchi Parametre Tasarımı Oluştur",
+  "datasetname": "Tasarım adı",
+  "inner": "İç Tasarım (önceden rastgeleleştirilmiş olmalıdır)",
+  "outer": "Dış Tasarım",
+  "lbl1": "Yön - Tasarımı Uzun veya Geniş formatta oluştur",
+  "directionLongrad": "Uzun format",
+  "directionWiderad": "Geniş format",
+  "responses": "Boş bırakın veya bir veya daha fazla yanıt adını belirtin (adlar arasında virgül ile ayrılmış, alıntı veya boşluk olmadan)",
+  "help": {
+    "title": "Taguchi Tarzı İç-Dış Parametre Tasarımı Oluştur",
+    "r_help": "help(param.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tparam.design fonksiyonu, Taguchi tarzı parametre tasarımlarını oluşturmak için kullanılır. İç ve dış diziler ile sinyal-gürültü araştırmaları için parametre tasarımları oluşturur ve bunların formatlanmasını ve veri toplamasını kolaylaştırır. Deney, kontrol faktörlerini \"iç dizi\" ile gürültü faktörlerini \"dış dizi\" ile çarpıştırır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(param.design, package = DoE.base) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, factor_grid_twolevel_screen_Design.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. Seçilen faktörlerle FFinnerRandom tasarım adıyla tam faktöriyel bir tasarım oluşturun - HavaHacmi, Vana, Fıçı ve Açı ve \"Tasarım oluşturmayı rastgeleleştir\" kutusunu işaretleyin\n\t\t\t\t<br/>\n\t\t\t\t2. Seçilen faktörlerle FFouter tasarım adıyla ortogonal bir dizi tasarımı oluşturun - WadType, Voltage, BallType\n\t\t\t\t<br/>\n\t\t\t\t3. Taguchi tasarımını (bu diyalog/UI) oluşturun ve 1. ve 2. adımda zaten oluşturulan FFinnerRandom ve FFouter tasarımlarını seçin\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Grafico a Contorni 2D",
+  "navigation": "Grafico a Contorni 2D",
+  "tvarbox1": "X",
+  "tvarbox2": "Y",
+  "tvarbox3": "Z",
+  "chk1": "Aggiungi punti dati grezzi (punti neri) basati su x e y sul grafico a contorni",
+  "help": {
+    "title": "Grafico a Contorni 2D",
+    "r_help": "help(geom_contour_filled, package='ggplot2')",
+    "body": "\n\t\t\t <b>Descrizione</b></br>\n\t\t\tAree di contorno riempite\n\t\t\t</br>\n\t\t\tLe linee di contorno separano le aree in cui la variabile z rientra in diverse gamme.\n\t\t\t</br>\n\t\t\tLe aree tra le linee di contorno sono riempite con colori, rappresentando diverse gamme di valori z.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tScala dei colori\n\t\t\t</br>\n\t\t\tLa palette Spettrale di ColorBrewer è applicata per riempire le aree di contorno.\n\t\t\t</br>\n\t\t\tLa palette Spettrale è uno schema di colori divergente, che passa da colori freddi a colori caldi, ideale per mostrare gradienti nei dati.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tFacoltativamente aggiungi punti dati grezzi al grafico\n\t\t\t</br>\n\t\t\tQuesto livello traccia punti individuali basati sui valori x e y nel dataset (i punti sono punti neri).\n\t\t\t</br>\n\t\t\tFornisce un modo per sovrapporre i punti dati grezzi sul grafico a contorni, dando più contesto alla visualizzazione del contorno.\n    "
+  }
+}

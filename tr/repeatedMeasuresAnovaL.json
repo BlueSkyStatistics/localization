@@ -1,0 +1,28 @@
+{
+  "helpText": "Tekrar ölçümler ANOVA'sı, verilerin uzun formatta olmasını gerektirir. Verileriniz uzun formatta değilse, Datasets > ReShape > Daha Uzun'a bakın.",
+  "modelname": "Model adını girin",
+  "title": "Tekrar Ölçümler ANOVA'sı",
+  "subjectID": "Bir konu tanımlayıcı olarak kullanılacak değişken",
+  "dependentVariable": "Bağımlı değişken",
+  "navigation": "ANOVA, Tekrar Ölçümler, Uzun",
+  "response": "İçinde konu değişken(ler)i, örneğin Zaman",
+  "Fixed": "Konu dışı faktör(ler)",
+  "covariates": "Kovaryatlar",
+  "Summary": "Tahmin edilen marjinal ortalamalar",
+  "Scatter_plot": "Posthocs",
+  "Residual": "Artık vs. Uyumlu grafik",
+  "Histogram": "Artıkların histogram grafiği",
+  "brownForsythe": "Brown-Forsythe testi",
+  "levenesTest": "Levene testi",
+  "plotMeansCI": "Ortalama ve güven aralıklarının grafiği",
+  "simpleEffectsTest": "Basit etkiler testi",
+  "label2": "Posthocs ve basit etkiler testi için seçenekler",
+  "combon": "Ortalama Karşılaştırması kullanarak:",
+  "adjust": "p-değerlerini ayarlama yöntemi",
+  "displayBoxMDetails": "Box'ın M testine ilişkin detayları göster (Not: Box'ın M testinin sonuçları her zaman gösterilir)",
+  "help": {
+    "title": "Tekrar Ölçümler ANOVA'sı",
+    "r_help": "help(aov_ez , package='afex')",
+    "body": "\n<b>Açıklama</b></br>\nTekrar ölçümler ANOVA'sında F istatistikleri, her bir içinde konu faktörü, konu dışı faktör ve karışık ANOVA için etkileşim terimi için hesaplanır.</br>\nÇıktıda MSE (hata için ortalama kare toplamı) ve pes (kısmi eta kare) değerlerini gösteren ek ANOVA değerleri tablolarını arayın.</br>\nŞu anda bir tane içinde konu ve bir tane konu dışı faktörü destekliyoruz, konu dışı faktör isteğe bağlıdır.</br>\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \naov_ez(data = dataset1, dv = \"dependentVariable\", \n\tid = \"Tanımlayıcı\", within = c(\"Zaman\"), \tbetween = c(\"Tedavi\"),  \n\tanova_table = list(es = \"pes\"))\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ndata: Verileri içeren bir data.frame. Zorunlu\n</li>\n<li>\ndv: verilerde bağımlı değişkeni içeren sütunu belirten karakter vektörü (uzunluk 1).\n</li>\n<li>\nbetween: verilerdeki konu dışı faktör(ler)/sütun(lar)ı belirten karakter vektörü. Varsayılan NULL, konu dışı faktör olmadığını belirtir.\n</li>\n<li>\nwithin: verilerdeki içinde konu(lar)(veya tekrar ölçümler) faktör(ler)/sütun(lar)ı belirten karakter vektörü. Varsayılan NULL, içinde konu faktörü olmadığını belirtir.\n</li>\n<li>\ncovariate: verilerdeki konu dışı kovaryat(lar)ı (yani, sütun(lar)) belirten karakter vektörü. Varsayılan NULL, kovaryat olmadığını belirtir. Lütfen sayısal olan kovaryatın sayısal olarak işlenmesi gerektiğinde factorize'nin FALSE olarak ayarlanması gerektiğini unutmayın.\n</li>\n<li>\nanovatable: ANOVA tablosunu üreten işleve iletilen daha fazla argümanların listesi. \n</li>\n</ul>\n<br/>\n<b>Ayrıntılar</b></br>\nDetaylı R yardımına bakın</br>\n<b>Değer</b><br/>\naov_car, aov_4 ve aov_ez, Anova ve aov için sarmalayıcılardır, dönen değer return argümanına bağlıdır. Varsayılan olarak, \"afex_aov\" sınıfına ait bir S3 nesnesi döner ve aşağıdaki alanları içerir:<br/>\n\"anova_table\": c(\"anova\", \"data.frame\") sınıfına ait bir ANOVA tablosu.<br/>\n\"aov\": aov'den dönen aov nesnesi (etkilerin önemini değerlendirmek için kullanılmamalıdır, ancak post-hoc testler için emmeans'e iletilebilir).<br/>\n\"Anova\": Anova'dan dönen nesne, içinde konu faktörleri varsa \"Anova.mlm\" sınıfına ait bir nesne veya c(\"anova\", \"data.frame\") sınıfına ait bir nesnedir.<br/>\n\"lm\": lm ile uyumlu hale getirilen nesne ve Anova'ya iletilen nesne (yani, \"lm\" veya \"mlm\" sınıfına ait bir nesne). return = \"lm\" olduğunda da döner.<br/>\n\"data\": aşağıdakileri içeren bir liste: (1) uzun (aov için kullanılan uzun formatta muhtemelen toplanmış veri), geniş (lm nesnesini uyumlu hale getirmek için kullanılan veri) ve idata (içinde konu faktörleri varsa, car::Anova'ya iletilen idata argümanı). return = \"data\" olduğunda da döner.<br/>\n<b>Paket</b></br>\nafex</br>\n<b>Yardım</b></br>\nhelp(aov_ez, package ='afex')\nDetaylı R yardımını almak için R Yardım butonuna tıklayın. Ayrıca help(aov_ez, package ='afex') yazarak R sözdizimi editöründe CTRL Enter tuşuna basarak yardım alabilirsiniz."
+  }
+}

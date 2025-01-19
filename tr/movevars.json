@@ -1,0 +1,15 @@
+{
+  "title": "Değişkenleri Taşı",
+  "navigation": "Değişkenleri Taşı",
+  "varstomovelabel": "Taşınacak Değişkenler",
+  "locationlabel": "Konum",
+  "firstlabel": "İlk",
+  "lastlabel": "Son",
+  "afterselectedlabel": "Seçilen Değişkenden Sonra",
+  "aftervarlabel": "",
+  "help": {
+    "title": "Değişkenleri Taşı",
+    "r_help": "help(relocate, package ='dplyr')",
+    "body": "\nBu, değişkenleri veri setinde belirtilen bir konuma taşıyacaktır.\n<br/><br/>\n<b>Taşınacak Değişkenler:</b> Farklı bir konuma taşınacak değişkenler. Bu kutuda belirtilen sıraya göre yerleştirilecektir.\n<br/><br/>\n<b>Konum:</b> Değişkenleri taşımak için veri setindeki konum. <b>İlk</b> değişkenleri veri setinin başına yerleştirir.  \n<b>Son</b> değişkenleri veri setinin sonuna yerleştirir.  <b>Seçilen Değişkenden Sonra</b> değişkenleri bu değişkenden sonra veri setinde yerleştirir.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> dplyr\n\t\t\t"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Frekans Grafiği",
+  "navigation": "Frekanslar",
+  "x": "X ekseni",
+  "y": "Renk, bir faktör değişkeni belirtin",
+  "bins": "Kutu sayısı (sadece X eksenindeki değişken bir faktör değişkeniyse uygulanır)",
+  "barcolor": "Çizgi Rengi (renk seçiminizden sonra, uygulamak için kontrolün dışına tıklayın)",
+  "tab1": "Sayısal",
+  "tab2": "Faktör",
+  "alpha": "Opaklık (0-1)",
+  "flip": "Eksenleri Çevir",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Frekans Grafiği",
+    "r_help": "help(geom_freqpoly, package='ggplot2')",
+    "body": "\n            <b>Açıklama</b></br>\n            Tek bir sürekli değişkenin dağılımını görselleştirmek için x eksenini kutulara ayırarak her kutudaki gözlem sayısını sayın. Histogramlar (geom_histogram()) sayıları çubuklarla gösterirken; frekans poligonları (geom_freqpoly()) sayıları çizgilerle gösterir. Frekans poligonları, bir kategorik değişkenin seviyeleri arasında dağılımı karşılaştırmak istediğinizde daha uygundur. </br>\n            NOT: Gruplama/renk değişkeni belirtildiğinde, seçilen renk farklı bir renk seçildiği için seçilen rengi göz ardı ederiz.</br>\n            Birden fazla x değişkeni belirtildiğinde, her x değişkeni için ayrı bir Frekans grafiği oluştururuz.</br>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n            #Bir veya daha fazla sayısal değişken için bir Frekans grafiği oluşturabilirsiniz. Varsayılan kutu sayısı 30 olarak ayarlanmıştır.</br>\n            #Aşağıdaki örnek, datasets paketindeki mtcars veri kümesini kullanır<br/>\n            ggplot(data=mtcars, aes(x=mpg  )) +\n                geom_freqpoly(  bins =30, alpha=1, color =\"#727272\" )​</br></br>\n            \n            #Bir veya daha fazla sayısal değişken için bir Frekans grafiği oluşturabilir ve grafiği bir faktör değişkenine göre gruplandırabilirsiniz. Varsayılan kutu sayısı 30 olarak ayarlanmıştır.</br>\n            #Aşağıdaki örnek, datasets paketindeki mtcars veri kümesini kullanır<br/>\n            ggplot(data=mtcars, aes(x=mpg,colour=cyl ,group=cyl )) +\n                geom_freqpoly(  bins =30, alpha=1,)</br></br>\n            \n            #Bir faktör değişkenini başka bir faktör değişkenine göre gruplandırarak bir frekans grafiği/çizgi grafiği oluşturabilirsiniz</br>\n            #cyl ve am'ye sağ tıklamanız gerekir ve değişken görünümünde bunu bir faktör haline getirin</br>\n            ggplot(data=mtcars, aes(x=cyl,colour=am ,group=am )) +\n                geom_freqpoly(stat = \"Count\",alpha=1,)</br></br>\n                </code> <br/>  \n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri kümesi​\n            </li>\n            <li>\n            aes(): Verilerdeki değişkenlerin görsel özelliklere (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            group:  İsteğe bağlı bir faktör/kategorik değişken. \n            </li>\n            <li>\n            geom_freqpoly(): Frekans grafiğini oluşturur\n            </li>\n            <li>\n            bins: Kutu sayısı.\n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            alpha: Opaklığı kontrol eder, 0-1 arasında değer alır. 1, hiç opaklık yoktur.\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            help(geom_freqpoly,package=ggplot2)</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_freqpoly), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.​           \n      "
+  }
+}

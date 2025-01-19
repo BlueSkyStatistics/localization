@@ -1,0 +1,12 @@
+{
+  "title": "Correlações Parciais",
+  "navigation": "Parcial",
+  "tvarbox1": "Selecionar variáveis",
+  "statistic": "Selecionar um método",
+  "tvarbox2": "Selecionar variáveis de controle",
+  "help": {
+    "title": "Correlações Parciais",
+    "r_help": "help(pcor.test, package=ppcor)",
+    "body": "\n<b>Descrição</b></br>\nCorrelação parcial para duas variáveis dadas uma terceira variável. Calcularemos a correlação parcial par a par entre cada uma das variáveis especificadas na seleção de variáveis, controlando pelas variáveis especificadas no controle de variáveis.<br/>\nEscrevemos um wrapper em torno da função pcor.test que chama pcor.test para cada par das variáveis especificadas.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \npcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nArgumentos\nx: um vetor numérico.\n</li>\n<li>\ny: um vetor numérico.\n</li>\n<li>\ny: um vetor numérico.\n</li>\n<li>\nmethod: uma string de caracteres indicando qual coeficiente de correlação parcial deve ser calculado. Um dos \"pearson\" (padrão), \"kendall\" ou \"spearman\" pode ser abreviado..\n</li>\n</ul>\n<b>Detalhes</b></br>\nA correlação parcial é a correlação de duas variáveis enquanto controla uma terceira variável. Quando o determinante da matriz de variância-covariância é numericamente zero, a inversa generalizada de Moore-Penrose é usada. Nesse caso, nenhum valor p e estatística será fornecido se o número de variáveis for maior ou igual ao tamanho da amostra.</br>\n<b>Valor</b><br/>\nestimate: o coeficiente de correlação parcial entre duas variáveis.<br/>\np.value: o valor p do teste.<br/>\nn: O número de amostras.<br/>\n<b>Exemplos</b><br/>\n<code> \npcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n</code> <br/>\n<b>Pacote</b></br>\nppcor</br>\n<b>Ajuda</b></br>\nhelp(pcor.test, package=ppcor)\n"
+  }
+}

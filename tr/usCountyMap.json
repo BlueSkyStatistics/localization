@@ -1,0 +1,15 @@
+{
+  "title": "ABD İl Haritası",
+  "navigation": "ABD İl Haritası",
+  "region": "İl adları ile değişken:",
+  "value": "Haritalamak için değişken değerler:",
+  "colors": "Renk sayısını girin",
+  "zoomByStates": "Büyütmek için eyaletleri girin, örneğin: california,oregon,washington",
+  "specify_a_title": "Bir başlık girin",
+  "legend": "Açıklama:",
+  "help": {
+    "title": "ABD İl Haritası",
+    "r_help": "help(county_choropleth, package='choroplethr')",
+    "body": "\n            <b>Açıklama</b></br>\n            Bir il haritası çizer ve isteğe bağlı olarak 1 veya daha fazla eyalete yakınlaştırmanıza izin verir\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            county_choropleth(BSkyDfForMap, title=\"{{title}}\", legend=\"{{legend}}\",num_colors ={{colors}}, state_zoom={{zoomByStates}})\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            BSkyDfForMap: \"region\" adında bir sütun ve \"value\" adında bir sütun içeren bir data.frame. \"region\" sütunundaki öğeler, county.map'daki \"region\" sütununda nasıl adlandırıldıklarıyla tam olarak eşleşmelidir. county.map'daki değişkenleri görmek için aşağıdaki diğer bölümdeki R komutlarını çalıştırın.\n                </li>\n                <li>\n            Başlık: Harita için isteğe bağlı bir başlık.\n            </li>\n            <li>\n            Açıklama: Açıklama için isteğe bağlı bir ad.\n            </li>\n            <li>\n            num_colors: Haritadaki renk sayısı. 1 değeri sürekli bir ölçek kullanır. [2, 9] aralığında bir değer, o kadar rengi kullanır.\n            </li>\n            <li>\n            ​state_zoom: Yakınlaştırılacak eyaletlerin isteğe bağlı bir vektörü. Bu vektörün öğeleri, ?state.regions'daki \"region\" sütununda göründüğü gibi eyalet adlarıyla tam olarak eşleşmelidir.\n            state.regions'a erişmek, county.map'a erişmeye benzer\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            choroplethr;choroplethrMaps;</br>\n            <b>Yardım</b></br>\n            help(county_choropleth, package='choroplethr')</br>\n            <b>Diğer</b></br>\n            <code> \n            # county.map veri kümesine erişmek için aşağıdaki kodu çalıştırın</br>\n            library(choroplethr)</br>\n            library(choroplethrMaps)</br>\n            data(county.map)</br>\n            county.map </br>\n            </code> <br/>\n    "
+  }
+}

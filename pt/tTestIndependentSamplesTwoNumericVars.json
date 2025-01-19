@@ -1,0 +1,29 @@
+{
+  "title": "t-teste, Amostras Emparelhadas",
+  "navigation": "t-teste, Amostras Emparelhadas",
+  "tvarbox1": "Primeira variável numérica",
+  "tvarbox3": "Segunda variável numérica",
+  "label1": "Hipótese alternativa",
+  "test1": "Diferença != mu",
+  "test2": "Diferença > mu",
+  "test3": "Diferença < mu",
+  "chkbox1": "Assumir variância igual",
+  "txtbox2": "Hipótese nula (mu)",
+  "txtbox1": "Nível de confiança",
+  "cohensdNoCorrection": "d de Cohen",
+  "hedgesgNoCorrection": "g de Hedges",
+  "glassdNoCorrection": "delta de Glass",
+  "hedgesgCorrect": "g de Hedges com correção de viés",
+  "glassdCorrect": "delta de Glass com correção de viés",
+  "effectsizes": "Tamanhos de efeito",
+  "showEffectSizes": "Exibir tamanhos de efeito",
+  "cohensdCorrect": "d de Cohen com correção de viés",
+  "label3": "Opções para d de Cohen",
+  "label4": "Opções para g de Hedges",
+  "label5": "Opções para delta de Glass",
+  "help": {
+    "title": "t-teste, amostras independentes",
+    "r_help": "help(t.test, package ='stats')",
+    "body": "\n<b>Descrição</b></br>\nRealiza testes t de uma e duas amostras em vetores de dados.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nt.test(x, ...)<br/>\n## Método S3 padrão:<br/>\nt.test(x, y = NULL,\n        alternative = c(\"two.sided\", \"less\", \"greater\"),\n        mu = 0, paired = FALSE, var.equal = FALSE,\n        conf.level = 0.95, ...)<br/>\n## Método S3 para classe 'formula'<br/>\nt.test(formula, data, subset, na.action, ...)<br/>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: um vetor numérico (não vazio) de valores de dados.\n</li>\n<li>\ny: um vetor numérico opcional (não vazio) de valores de dados.\n</li>\n<li>\nalternative: uma string de caracteres especificando a hipótese alternativa, deve ser uma das \"two.sided\" (padrão), \"greater\" ou \"less\". Você pode especificar apenas a letra inicial.\n</li>\n<li>\nmu: um número indicando o verdadeiro valor da média (ou diferença nas médias se você estiver realizando um teste de duas amostras).\n</li>\n<li>\npaired: um lógico indicando se você deseja um teste t pareado.\n</li>\n<li>\nvar.equal: Uma variável lógica indicando se deve tratar as duas variâncias como iguais. Se TRUE, a variância combinada é usada para estimar a variância, caso contrário, a aproximação de Welch (ou Satterthwaite) para os graus de liberdade é usada.\n</li>\n<li>\nconf.level: nível de confiança do intervalo.\n</li>\n<li>\nformula: uma fórmula da forma lhs ~ rhs onde lhs é uma variável numérica que fornece os valores de dados e rhs um fator com dois níveis que fornece os grupos correspondentes.\n</li>\n<li>\ndata: uma matriz ou data frame opcional (ou similar: veja model.frame) contendo as variáveis na fórmula. Por padrão, as variáveis são retiradas do ambiente (formula).\n</li>\n<li>\nsubset: um vetor opcional especificando um subconjunto de observações a serem usadas.\n</li>\n<li>\nna.action: uma função que indica o que deve acontecer quando os dados contêm NAs. O padrão é getOption(\"na.action\").\n</li>\n<li>\n...: argumentos adicionais a serem passados para ou a partir de métodos.\n</li>\n</ul>\n<b>Detalhes</b></br>\nA interface de fórmula é aplicável apenas para os testes de 2 amostras.</br>\nalternative = \"greater\" é a alternativa que x tem uma média maior que y.</br>\nSe paired for TRUE, então tanto x quanto y devem ser especificados e devem ter o mesmo comprimento. Valores ausentes são removidos silenciosamente (em pares se paired for TRUE). Se var.equal for TRUE, então a estimativa combinada da variância é usada. Por padrão, se var.equal for FALSE, a variância é estimada separadamente para ambos os grupos e a modificação de Welch para os graus de liberdade é usada.</br>\nSe os dados de entrada forem efetivamente constantes (comparados à maior das duas médias), um erro é gerado.</br>\n<b>Valor</b><br/>\nUma lista com a classe \"htest\" contendo os seguintes componentes:<br/>\nstatistic: o valor da estatística t.<br/>\nparameter: os graus de liberdade para a estatística t.<br/>\np.value: o valor p para o teste.<br/>\nconf.int: um intervalo de confiança para a média apropriado à hipótese alternativa especificada.<br/>\nestimate: a média estimada ou diferença nas médias dependendo se foi um teste de uma amostra ou um teste de duas amostras.<br/>\nnull.value: o valor hipotetizado especificado da média ou diferença de média dependendo se foi um teste de uma amostra ou um teste de duas amostras.<br/>\nalternative: uma string de caracteres descrevendo a hipótese alternativa.<br/>\nmethod: uma string de caracteres indicando que tipo de teste t foi realizado.<br/>\ndata.name: uma string de caracteres dando o(s) nome(s) dos dados.<br/>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nhelp(t.test, package ='stats')\n"
+  }
+}

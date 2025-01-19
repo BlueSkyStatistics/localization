@@ -1,0 +1,29 @@
+{
+  "title": "التجمع الهرمي",
+  "navigation": "هرمي",
+  "destination": "وجهة",
+  "clusters": "عدد المجموعات",
+  "storeClusterInDataset": "تعيين المجموعات إلى مجموعة البيانات",
+  "variablename": "اسم المتغير لتخزين المجموعات",
+  "biplot": "عرض مخطط ثنائي",
+  "dendogram": "رسم مخطط الشجرة",
+  "labelForClusteringMethod": "طريقة التجميع",
+  "Methodlabel": "الطريقة",
+  "MethodRadlabel1": "طريقة وورد",
+  "MethodRadlabel2": "رابط فردي",
+  "MethodRadlabel3": "رابط كامل",
+  "MethodRadlabel4": "رابط متوسط",
+  "MethodRadlabel5": "طريقة مكويت",
+  "MethodRadlabel6": "رابط وسطي",
+  "MethodRadlabel7": "رابط مركز",
+  "Metriclabel": "المقياس",
+  "MetricRadlabel1": "إقليدي",
+  "MetricRadlabel2": "إقليدي تربيعي",
+  "MetricRadlabel3": "مانهاتن (كتلة المدينة)",
+  "MetricRadlabel4": "بدون تحويل",
+  "help": {
+    "title": "التجمع الهرمي",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>الوصف</b></br>\nتحليل التجمع الهرمي على مجموعة من الاختلافات وطرق تحليلها.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nvarsToCluster: المتغيرات التي سيتم تحليلها \n</li>\n<li>\nmethod: طريقة التجميع التي سيتم استخدامها. يجب أن تكون (اختصار غير غامض) واحدة من \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) أو \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: عدد المجموعات المطلوبة\n</li>\n<li>\nplotDendogram: رسم مخطط الشجرة صحيح أو خطأ\n</li>\n<li>\nassignClusterToDataset: حفظ تعيينات المجموعات إلى مجموعة البيانات\n</li>\n<li>\nlabel: اسم المتغير الجديد الذي يخزن تعيينات المجموعات\n</li>\n<li>\nplotBiplot: رسم المخطط الثنائي صحيح أو خطأ\n</li>\n</ul>\n<b>الحزمة</b></br>\nBlueSky</br>\n<b>المساعدة</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>الوصف</b></br>\nplotDendrogram: يستدعي وظيفة الرسم لرسم مخطط الشجرة للمجموعات\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nmethod: انظر أعلاه\n</li>\n<li>\ndistance: انظر أعلاه\nplotBiplot: رسم المخطط الثنائي صحيح أو خطأ\n</li>\n</ul>\n<b>الحزمة</b></br>\nBlueSky</br>\n<b>المساعدة</b></br>\nhelp(plot)\n    "
+  }
+}

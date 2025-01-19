@@ -1,0 +1,16 @@
+{
+  "title": "Dimensione del campione, ANOVA",
+  "navigation": "ANOVA",
+  "howtouse": "Per calcolare la dimensione del campione: specificare le medie dei gruppi e la potenza\nPer calcolare la potenza: specificare la dimensione del campione e le medie dei gruppi\nPer calcolare la varianza rilevabile delle medie dei gruppi: specificare la dimensione del campione e la potenza",
+  "numgrps": "Numero di Gruppi",
+  "n": "Dimensione del Campione per Gruppo",
+  "grpmeans": "Medie dei Gruppi, specificare come valori separati da virgole, ad es. 20, 25, 40",
+  "power": "Potenza (0-1)",
+  "sd": "Deviazione Standard",
+  "siglevel": "Livello di Significatività (0-1)",
+  "help": {
+    "title": "Dimensione del campione, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un'ANOVA unidirezionale bilanciata. Calcola la dimensione del campione, la potenza o la differenza nelle medie (calcolata come la varianza tra le medie) quando l'utente \nspecifica le altre due.\n<br/><br/>\n<b>Numero di Gruppi:</b> Specificare il numero di gruppi nello studio\n<br/><br/>\n<b>Dimensione del Campione per Gruppo:</b> Specificare il numero di soggetti in ciascun gruppo\n<br/><br/>\n<b>Medie dei Gruppi:</b> Specificare le medie in ciascun gruppo che si desidera essere in grado di rilevare. Almeno una media deve essere diversa dalle altre.\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa era vera.\n<br/><br/>\n<b>Deviazione Standard:</b> Specificare la deviazione standard dell'esito. Si presume che sia la stessa tra i gruppi.\n<br/><br/>\n<b>Livello di Significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> stats\n\t\t\t"
+  }
+}

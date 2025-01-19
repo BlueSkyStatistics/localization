@@ -1,0 +1,18 @@
+{
+  "title": "Standardizza Variabile(i)",
+  "navigation": "Standardizza",
+  "label1": "I valori standardizzati saranno salvati in nuove variabili con il prefisso/suffisso specificato.",
+  "dest": "Seleziona la variabile(i) da standardizzare",
+  "label2": "Seleziona un prefisso o suffisso",
+  "suffix": "Suffisso",
+  "prefix": "Prefisso",
+  "txt1": "Inserisci un prefisso/suffisso",
+  "label3": "Centralizza e/o scala",
+  "Center": "Centralizza",
+  "Scale": "Scala",
+  "help": {
+    "title": "Standardizza Variabile(i)",
+    "r_help": "",
+    "body": "\n<b>Descrizione</b></br>\nStandardizza le variabili (punteggi z). I valori standardizzati sono memorizzati in nuove variabili con il prefisso o suffisso delle variabili originali. È fornita l'opzione di centralizzare e/o scalare.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyStandardizeVars (vars, center, scale, prefix, datasetname)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nvars: Una o più variabili da standardizzare. Solo variabili numeriche (non fattori) supportate.\n</li>\n<li>\ncenter: Se center è TRUE, allora la centralizzazione viene effettuata sottraendo le medie delle colonne (escludendo i NAs) di x dalle loro colonne corrispondenti, e se center è FALSE, non viene effettuata alcuna centralizzazione.\n</li>\n<li>\nscale: Se scale è TRUE, allora la scalatura viene effettuata dividendo le colonne (centralizzate) di x per le loro deviazioni standard se center è TRUE, e la radice quadrata della media al quadrato altrimenti. Se scale è FALSE, non viene effettuata alcuna scalatura.\n</li>\n<li>\nstingToPrefixOrSuffix: Una stringa di caratteri che specifica il prefisso o suffisso da utilizzare per le nuove variabili standardizzate (cioè nuove colonne nel dataset).\n</li>\n<li>\nprefixOrSuffix: specifica se desideri un prefisso o un suffisso\n</li>\n<li>\ndatasetname: Il nome del dataset/dataframe\n</li>\n</ul>\nNota: Non convertirà da numerico a fattore. Quando un numerico viene ricodificato, rimarrà un numerico, quando una variabile fattore viene ricodificata rimarrà un fattore.</br>\n<b>Pacchetto</b></br>\nBlueSky</br>\n"
+  }
+}

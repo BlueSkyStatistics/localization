@@ -1,0 +1,33 @@
+{
+  "title": "Confronta le curve ROC",
+  "navigation": "Confronta le curve ROC",
+  "outcomevar": "Variabile di esito binario (numerica/fattore)",
+  "predprobvars": "Variabili di probabilità previste da ciascun modello, specificare almeno 2",
+  "outcomeorderlabel": "Valore 'Positivo' dell'esito",
+  "outcomeorderhigh": "Valore ordinato più alto",
+  "outcomeorderlow": "Valore ordinato più basso",
+  "specopt": "Traccia la specificità invece di 1-specificità",
+  "cilevel": "Livello di confidenza",
+  "multcompopt": "Regolazione per confronti multipli",
+  "multcompmethod": "Metodo di confronto multiplo",
+  "plotoptions": "Opzioni di tracciamento",
+  "plottitle": "Titolo del grafico",
+  "plottitlesize": "Dimensione del titolo del grafico (5-50)",
+  "themedropdown": "Tema del grafico",
+  "lineoptionslabel": "Opzioni della linea",
+  "linesize": "Dimensione della linea (0-5)",
+  "colorpalette": "Palette di colori",
+  "axisoptionslabel": "Opzioni degli assi",
+  "axislabelsize": "Dimensione dell'etichetta dell'asse (5-50)",
+  "ticklabelsize": "Dimensione dell'etichetta del segno di tick dell'asse (5-50)",
+  "legendoptionslabel": "Opzioni della legenda",
+  "legendtitle": "Titolo",
+  "legendpos": "Posizione",
+  "curvelabels": "Etichette delle curve, specificare come 'Etichetta 1', 'Etichetta 2', 'Etichetta 3'; usa \\n all'interno di un'etichetta per un'interruzione di riga",
+  "legendfontsize": "Dimensione delle etichette della legenda (5-50)",
+  "help": {
+    "title": "Confronta le curve ROC",
+    "r_help": "help(roc.test, package = 'pROC')",
+    "body": "\nQuesta finestra di dialogo confronta le curve caratteristiche operative del ricevitore (ROC) date un insieme di probabilità previste da un modello (ad es. regressione logistica).  Ogni modello deve essere stato adattato utilizzando lo stesso ordinamento della variabile di esito.  Fornisce una tabella delle aree individuali sotto le curve ROC con intervalli di confidenza, una tabella di confronti a coppie utilizzando il test di DeLong e un insieme sovrapposto di curve ROC.  I soggetti con valori mancanti per l'esito o le probabilità previste vengono rimossi in modo che ogni modello venga valutato sullo stesso insieme di soggetti.  Vedi Valutazione del modello > Previsione > Valutazione del modello per ottenere probabilità previste dai modelli candidati. \n<br/><br/><br/>\n<b>Variabile di esito binario:</b> L'esito binario utilizzato per le previsioni.  Deve essere numerico o fattore.\n<br/><br/>\n<b>Variabili di probabilità previste da ciascun modello:</b> Specificare le colonne di probabilità previste da ciascun modello adattato che si desidera confrontare.\n<br/><br/>\n<b>Valore 'Positivo' dell'esito:</b> Specificare se il valore ordinato più alto o più basso della variabile di esito binario specificata dovrebbe essere considerato il valore 'positivo'.  Questo è il livello a cui si riferiscono le probabilità previste.  Ad esempio, se l'esito binario era codificato come 0/1, il valore ordinato più alto significherebbe che 1 è la risposta 'positiva' e il valore ordinato più basso significherebbe che 0 è la risposta 'positiva'. \n<br/><br/>\n<b>Traccia la specificità invece di 1-specificità:</b> Questo cambia l'asse x del grafico della curva ROC per utilizzare invece la specificità.  L'asse diminuirà da 1 a 0, andando da sinistra a destra.\n<br/><br/> \n<b>Livello di confidenza:</b> Livello di confidenza per gli intervalli dell'area della curva ROC\n<br/><br/>\n<b>Regolazione per confronti multipli:</b> Applica una regolazione per confronti multipli ai confronti a coppie delle aree della curva ROC.\n<br/><br/><br/>\n<b>Opzioni di tracciamento:</b>\n<br/><br/>\n<b>Titolo del grafico:</b> Specificare il titolo per il grafico.  Può essere rimosso.\n<br/><br/>\n<b>Tema del grafico:</b> Specificare il tema generale per il grafico\n<br/><br/>\n<b>Opzioni della linea:</b>\n<br/><br/>\n<b>Dimensione della linea:</b> Specificare la dimensione delle linee sul grafico della curva ROC\n<br/><br/>\n<b>Palette di colori:</b> Specificare la palette di colori utilizzata per le linee della curva ROC\n<br/><br/>\n<b>Opzioni degli assi:</b>\n<br/><br/>\n<b>Dimensione dell'etichetta dell'asse:</b> Specificare la dimensione delle etichette degli assi utilizzate nel grafico.\n<br/><br/>\n<b>Dimensione dell'etichetta del segno di tick dell'asse:</b> Specificare la dimensione delle etichette dei segni di tick dell'asse.\n<br/><br/>\n<b>Opzioni della legenda:</b>\n<br/><br/>\n<b>Posizione:</b> Specificare la posizione della legenda nel grafico.  Può essere a destra, in alto, in basso o a sinistra.\n<br/><br/>\n<b>Titolo:</b> Specificare il titolo per la legenda.  Può essere rimosso.\n<br/><br/>\n<b>Etichette delle curve:</b> Specificare le etichette delle curve utilizzate nella legenda corrispondenti all'ordine delle curve (curva 1, curva 2, curva 3, ecc.).  Specificare nulla darà etichette delle curve di 1, 2, 3, ecc.  Se si specificano etichette, è necessario specificare etichette per tutte le curve.  L'ordine delle curve è lo stesso dell'ordine specificato delle probabilità previste.\n<br/><br/>\n<b>Dimensione delle etichette della legenda:</b> Dimensione di tutto il testo nella legenda.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> pROC, ggthemes, RColorBrewer, ggsci, ggplot2\n"
+  }
+}

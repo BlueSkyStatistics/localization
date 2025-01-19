@@ -2,19 +2,19 @@
   "title": "創建 D-最優設計",
   "navigation": "創建 D-最優設計",
   "datasetname": "D-最優設計名稱",
-  "candidateDesignChk": "從現有候選設計（全因子、FrF2、正交或拉丁）創建 D-最優設計 - 確保此對話框在數據網格中打開的現有設計上，以隱式選擇候選設計",
+  "candidateDesignChk": "從現有候選設計（全因子、FrF2、正交或拉丁）創建 D-最優設計 - 確保此對話框在數據網格上打開以隱式選擇候選設計",
   "selectedvars": "選擇變量（如果上面選中候選設計則忽略）以創建不來自現有候選設計的 D-最優設計",
   "numOfRuns": "運行次數",
-  "formula": "公式 - 保持默認以包含模型中的所有因子，或輸入線性模型公式，例如 ~quad(.)",
+  "formula": "公式 - 保持默認以包含模型中的所有因子或輸入線性模型公式，例如 ~quad(.)",
   "numOfOptiRepeats": "優化重複次數",
-  "numOfBlocks": "區塊數量",
+  "numOfBlocks": "區塊數",
   "blockName": "區塊名稱",
   "lbl1": "您可能不需要更改隨機化設置",
-  "randomseeds": "隨機化種子",
-  "randomizationChk": "隨機生成設計",
+  "randomseeds": "隨機化的種子",
+  "randomizationChk": "隨機化設計生成",
   "help": {
     "title": "創建 D-最優設計",
     "r_help": "help(Dopt.design, package = DoE.wrapper)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tDopt.design 函數用於創建有或沒有阻塞的 D-最優設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用 R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以使用名為 factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t首先創建完整的因子設計，從此對話框/UI 中選擇完整的因子設計，並指定 runs = 16 以從完整的因子設計創建 D-最優設計\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tDopt.design 函數用於創建有或沒有區塊的 D-最優設計\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t首先創建全因子設計，從此對話框/UI 中選擇全因子設計並指定運行次數 = 16 以從全因子設計創建 D-最優設計\n\t\t\t"
   }
 }

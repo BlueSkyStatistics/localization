@@ -1,0 +1,22 @@
+{
+  "title": "مخطط الكمان",
+  "navigation": "الكمان",
+  "x": "محور X، حدد متغير عامل",
+  "y": "محور Y، حدد متغير رقمي (أو أكثر)",
+  "fill": "التعبئة، حدد متغير عامل",
+  "alpha": "الشفافية (0-1)",
+  "flip": "عكس المحور",
+  "specify_a_title": "أدخل عنوانًا",
+  "x_title": "تسمية محور X",
+  "y_title": "تسمية محور Y",
+  "Facetrow": "صف الفاكت",
+  "Facetcolumn": "عمود الفاكت",
+  "Facetwrap": "لف الفاكت",
+  "Facetscale": "مقياس الفاكت",
+  "facets_lbl": "الفاكتات",
+  "help": {
+    "title": "مخطط الكمان",
+    "r_help": "help(geom_violin, package='ggplot2')",
+    "body": "\n            <b>الوصف</b></br>\n            مخطط الكمان هو عرض مضغوط لتوزيع مستمر. إنه مزيج من geom_boxplot() و geom_density(): مخطط الكمان هو مخطط كثافة معكوس يتم عرضه بنفس طريقة مخطط الصندوق.\n            <br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset,aes(x =as.factor(var1),y =var2)) +\n            geom_violin( stat = \"ydensity\",position = \"dodge\",trim=TRUE,scale=\"area\",aes (fill = var3),alpha=0.5) +\n            labs(x =\"var1\",y =\"var2\",title= \"مخطط الكمان لـ ...\")\n            </code> <br/>\n            <b>المتغيرات</b><br/>\n            <ul>\n            <li>\n            data: مجموعة البيانات الافتراضية​\n            </li>\n            <li>\n            x: متغير عامل​ يقسم المتغير y أدناه إلى مجموعات.\n            </li>\n            <li>\n            y: متغير رقمي يتم إنشاء مخطط الكمان له\n            </li>\n            <li>\n            fill: متغير عامل/فئوي اختياري لمزيد من تجميع المجموعات الموجودة. سيتم عرض كل مجموعة فرعية بلون مميز.​\n            </li>\n            <li>\n            aes(): توليد تخطيطات جمالية تصف كيفية ربط المتغيرات في البيانات بالخصائص المرئية (الجمالية) للرسوم.​\n            </li>\n            <li>\n            geom_violin(): ينشئ مخطط الكمان. \n            </li>\n            <li>\n            Labs(): تغيير تسميات المحاور وعناوين الأسطورة (هذا اختياري)​\n            </li>\n            <li>\n            facet_grid(): ترتيب الألواح في شبكة (هذا اختياري)​\n            </li>\n            <li>\n            theme_calc(): يحدد موضوع الآلة الحاسبة (هذا اختياري)​\n            </li>\n            <li>\n            coord_flip(): عكس المحور (هذا اختياري)​\n            </li>\n            </ul>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes;</br>\n            <b>المساعدة</b></br>\n            أخرى: انقر على زر مساعدة R للحصول على مساعدة مفصلة في R. يمكنك أيضًا إدخال help(geom_violin)، help(labs)، help(aes)، help(facet_grid)، help(theme_calc)، help(coord_flip)\n    "
+  }
+}

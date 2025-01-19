@@ -1,0 +1,26 @@
+{
+  "title": "Yoğunluk Grafiği",
+  "navigation": "Yoğunluk",
+  "x": "Grafiğe yerleştirmek için bir değişken(ler) seçin",
+  "y": "Renk, bir faktör değişkeni belirtin",
+  "fill": "Doldur, bir faktör değişkeni belirtin",
+  "label1": "Üst üste binmeyi kontrol etmek için bir konum seçin",
+  "rd1": "Yoğunlukları üst üste yığ",
+  "rd2": "Yoğunlukları üst üste yığ ve her yığının birim yüksekliğe sahip olmasını standartlaştır",
+  "rd3": "Yan yana (Dodge)",
+  "alpha": "Opaklık (0-1)",
+  "flip": "Eksenleri Çevir",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmala",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Yoğunluk Grafiği",
+    "r_help": "help(geom_density, package='ggplot2')",
+    "body": "\n            <b>Açıklama</b></br>\n            Yoğunluk sayımlarını (1d kernel yoğunluk tahmini) çizer. Yoğunlukları bir faktör değişkeni ile ayırmanıza olanak tanır. Ayrıca isteğe bağlı olarak facetler, temalar oluşturabilir ve x ve y eksenleri için bir başlık ve etiketler belirtebilirsiniz.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            ggplot(data=datasetname, aes(x=var1 )) +\n                geom_density(position = \"dodge\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Değişken var1 için yoğunluk grafiği\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            ggplot(data=datasetname, aes(x=var1, colour=var2)) +\n                geom_density(position = \"stack\t\",alpha=0.5 ) +\n                labs(x=\"var1\",title= \"Değişken var1 için yoğunluk grafiği, var2 seviyelerine göre renkli\") +\n                xlab(\"var1\")  +     \n                theme_grey() + theme(text=element_text(family=\"sans\",face=\"plain\",color=\"#000000\",size=12,hjust=0.5,vjust=0.5))\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti\n            </li>\n            <li>\n            aes(): Değişkenlerin verilerde nasıl görsel özelliklere (estetik) eşlendiğini tanımlayan estetik eşlemeleri oluşturur.\n            </li>\n            <li>\n            x: yoğunlukları çizmek için sayısal değişken\n            </li>\n            <li>\n            y: ..count sayısal değişkenin sayımlarını belirtir\n            </li>\n            <li>\n            fill: grafiği gruplamak için faktör değişkeni\n            </li>\n            <li>\n            position: Pozisyon ayarlaması, ya bir dize olarak ya da bir pozisyon ayarlama fonksiyonuna yapılan bir çağrının sonucu olarak. Geçerli değerler \"stack\",\"dodge\",\"fill\"\n            </li>\n            <li>\n            geom_density (): 1d kernel yoğunluk tahmini, pozisyon parametresi bu katmandaki üst üste binen noktalar için kullanılacak pozisyon ayarlamasını belirtmenizi sağlar.\n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (Bu isteğe bağlıdır).\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (Bu isteğe bağlıdır)\n            </li>\n            <li>\n            theme_excel(): Excel teması (Bu isteğe bağlıdır)\n            </li>\n            <li>\n            alpha: saydamlığı ayarlar\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes</br>\n            <b>Yardım</b></br>\n            help(geom_density)</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(geom_density), help(labs), help(aes), help(facet_grid), help(theme_excel) yazabilirsiniz.\n    "
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Agrupamento Hierárquico",
+  "navigation": "Hierárquico",
+  "destination": "Destino",
+  "clusters": "Número de clusters",
+  "storeClusterInDataset": "Atribuir clusters ao conjunto de dados",
+  "variablename": "Nome da variável para armazenar clusters",
+  "biplot": "Mostrar biplot de clusters",
+  "dendogram": "Plotar dendograma de clusters",
+  "labelForClusteringMethod": "Método de agrupamento",
+  "Methodlabel": "Método",
+  "MethodRadlabel1": "Método de Wards",
+  "MethodRadlabel2": "Ligação Única",
+  "MethodRadlabel3": "Ligação Completa",
+  "MethodRadlabel4": "Ligação Média",
+  "MethodRadlabel5": "Método de McQuitty",
+  "MethodRadlabel6": "Ligação Mediana",
+  "MethodRadlabel7": "Ligação Centróide",
+  "Metriclabel": "Métrica",
+  "MetricRadlabel1": "Euclidiana",
+  "MetricRadlabel2": "Euclidiana ao Quadrado",
+  "MetricRadlabel3": "Manhattan (Bloco da Cidade)",
+  "MetricRadlabel4": "Sem Transformação",
+  "help": {
+    "title": "Agrupamento Hierárquico",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>Descrição</b></br>\nAnálise de agrupamento hierárquico em um conjunto de dissimilaridades e métodos para analisá-lo.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvarsToCluster: As variáveis a serem analisadas \n</li>\n<li>\nmethod: o método de aglomeração a ser utilizado. Isso deve ser (uma abreviação inequívoca de) um dos \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) ou \"centroid\" (= UPGMC).\n</li>\n<li>\nnoOfClusters: O número de clusters desejados\n</li>\n<li>\nplotDendogram: Plotar um dendograma Verdadeiro ou falso\n</li>\n<li>\nassignClusterToDataset: Salvar as atribuições de cluster no conjunto de dados\n</li>\n<li>\nlabel: nome para a nova variável que armazena as atribuições de cluster\n</li>\n<li>\nplotBiplot: plotar Biplot VERDADEIRO ou FALSO\n</li>\n</ul>\n<b>Pacote</b></br>\nBlueSky</br>\n<b>Ajuda</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>Descrição</b></br>\nplotDendrogram: Chama a função de plotagem para plotar o dendrograma de clusters\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nmethod: veja acima\n</li>\n<li>\ndistance: veja acima\nplotBiplot: plotar Biplot VERDADEIRO ou FALSO\n</li>\n</ul>\n<b>Pacote</b></br>\nBlueSky</br>\n<b>Ajuda</b></br>\nhelp(plot)\n    "
+  }
+}

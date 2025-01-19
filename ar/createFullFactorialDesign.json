@@ -1,0 +1,17 @@
+{
+  "title": "إنشاء تصميم كامل للعوامل",
+  "navigation": "إنشاء تصميم كامل للعوامل",
+  "datasetname": "اسم التصميم",
+  "selectedvars": "اختر المتغيرات",
+  "numOfBlocks": "عدد الكتل",
+  "replications": "التكرارات",
+  "repeatOnlyChk": "كرر فقط",
+  "lbl1": "قد لا تحتاج إلى تغيير إعدادات العشوائية",
+  "randomseeds": "بذور العشوائية",
+  "randomizationChk": "عشوائي تصميم التوليد",
+  "help": {
+    "title": "إنشاء تصميم كامل للعوامل",
+    "r_help": "help(fac.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة fac.design لإنشاء تصميمات كاملة للعوامل\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(fac.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك استخدام ملف مجموعة البيانات النموذجية المسمى factor_grid_full_factorial_Design.xlsx. افتح الملف في شبكة البيانات من خلال قائمة فتح الملف\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

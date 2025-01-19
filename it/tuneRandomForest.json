@@ -1,0 +1,16 @@
+{
+  "title": "Regola il modello Random Forest",
+  "navigation": "Regola",
+  "dependentvar": "Variabile dipendente",
+  "independentvars": "Variabile(i) indipendente(i)",
+  "ntreetry": "Numero di alberi da provare",
+  "stepfactor": "Fattore di passo",
+  "improve": "Migliora",
+  "trace": "Traccia",
+  "plot": "Grafico",
+  "help": {
+    "title": "Regola il modello Random Forest",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>Descrizione</b></br>\nPartendo dal valore predefinito di mtry, cerca il valore ottimale (rispetto alla stima dell'errore Out-of-Bag) di mtry per randomForest. \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx : matrice o data frame delle variabili predittive\n</li>\n<li>\ny : vettore di risposta (fattore per classificazione, numerico per regressione)\n</li>\n<li>\nntreeTry : numero di alberi utilizzati nella fase di regolazione.\n</li>\n<li>\nstepFactor : ad ogni iterazione, mtry viene aumentato (o diminuito) di questo valore.\n</li>\n<li>\nimprove : il miglioramento (relativo) nell'errore OOB deve essere di questo valore affinché la ricerca continui\n</li>\n<li>\ntrace : se stampare il progresso della ricerca.\n</li>\n<li>\nplot : se tracciare l'errore OOB in funzione di mtry.\n</li>\n<li>\n... : opzioni da fornire a randomForest\n</li>\n</ul>\n<b>Valore</b></br>\nRestituisce una matrice la cui prima colonna contiene i valori di mtry cercati, e la seconda colonna l'errore OOB corrispondente.</br>\n<b>Pacchetto</b></br>\nrandomForest​;BlueSky</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(tuneRF,package='randomForest')\n"
+  }
+}

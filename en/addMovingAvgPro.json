@@ -1,0 +1,12 @@
+{
+    "title": "Compute and Add a Moving Average Variable",
+    "navigation": "Moving Average",
+    "variableSelcted": "Select a variable to compute moving average",
+    "sampleSize": "Specify the size of the group to calculate moving average (e.g. 5)",
+    "movingAvgVarName": "Specify the name of the moving average variable to add/update (e.g. movingAvg)",
+    "help": {
+        "title": "Compute moving average for the variable selected",
+        "r_help": "help(mean, package = base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\t<br/>\n\t\t\t\tCompute the moving average for the variable selected for the group size specified. Add or modify (if the variable name specified already exists) a variable to the dataset to store the result<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

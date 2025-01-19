@@ -1,0 +1,20 @@
+{
+  "title": "Atualizar Mesclagem",
+  "navigation": "Atualizar Mesclagem",
+  "join": "Juntar mapeamento",
+  "description": "A mesclagem de atualização atualiza um conjunto de dados com valores de outro conjunto de dados.",
+  "out": "Digite o nome do conjunto de dados mesclado",
+  "in1": "Selecione o 1º conjunto de dados",
+  "in2": "Selecione o 2º conjunto de dados",
+  "label1": "Opções de Mesclagem",
+  "upsert": "Atualizar variáveis no primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados, inserir não correspondências",
+  "update": "Atualizar variáveis no primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados, ignorar não correspondências",
+  "insert": "Somente inserir não correspondências no primeiro (esquerdo) conjunto de dados",
+  "patch": "Atualizar apenas variáveis com NAs no primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados",
+  "delete": "Excluir linhas do primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados",
+  "help": {
+    "title": "Atualizar Mesclagem",
+    "r_help": "help(rows_upsert, package=dplyr)",
+    "body": "\n            <b>Descrição</b></br>\n            A mesclagem de atualização atualiza um conjunto de dados com valores de um segundo conjunto de dados com base na correspondência exata do nome da variável para observações com valores de variável de mapeamento de junção correspondentes.\n\t\t\t<br/>Você precisa especificar uma ou mais variáveis no conjunto de dados ativo e no conjunto de dados de destino selecionado que deseja que a junção seja realizada.\n\t\t\t<br/>Os resultados serão salvos em um novo conjunto de dados.\n\t\t\t<br/><br/>\n\t\t\t<b>Opções de Mesclagem</b>\n\t\t\t<br/><br/>\n\t\t\t<b>Atualizar variáveis no primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados, inserir não correspondências:</b> Esta é uma combinação de atualizar variáveis no conjunto de dados esquerdo para correspondências e criar novas linhas para linhas não correspondentes.\n\t\t\t<br/><br/>\n\t\t\t<b>Atualizar variáveis no primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados, ignorar não correspondências:</b> Isso atualiza apenas variáveis existentes nos conjuntos de dados esquerdos para correspondências. Linhas não correspondentes são ignoradas.\n\t\t\t<br/><br/>\n\t\t\t<b>Somente inserir não correspondências no primeiro (esquerdo) conjunto de dados:</b> Isso mantém intactas todas as linhas correspondentes no conjunto de dados esquerdo. Somente linhas não correspondentes do conjunto de dados direito são adicionadas ao conjunto de dados esquerdo.\n\t\t\t<br/><br/>\n\t\t\t<b>Atualizar apenas variáveis com NAs no primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados, ignorar não correspondências:</b> Isso atualiza linhas que correspondem, mas apenas quando os valores no conjunto de dados esquerdo são NA (ou seja, estão ausentes).\n\t\t\t<br/><br/>\n\t\t\t<b>Excluir linhas do primeiro (esquerdo) conjunto de dados com correspondências do segundo (direito) conjunto de dados:</b> Isso exclui apenas linhas do conjunto de dados esquerdo que correspondem a linhas no conjunto de dados direito.\n\t\t\t<br/><br/>\n            <b>Pacotes R Necessários:</b> dplyr\n"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Plotar Séries Temporais, com correlações",
+  "navigation": "Plotar Séries Temporais, com correlações",
+  "destination": "Variáveis a plotar",
+  "firstObservation": "Tempo da primeira observação e.g.1: insira 1961,1 para janeiro de 1961 e.g.2: insira 1961,3 para o 3º Trimestre de 1961, e.g.3: insira 1 para uma série contínua",
+  "frequency": "Número de observações por unidade de tempo e.g.1: insira 12 para uma observação para cada mês de um ano, e.g. 2: insira 4 para uma observação por trimestre, e.g. 3: insira 1 para uma série contínua.",
+  "label0": "Gráficos adicionais",
+  "autocorrelations": "Plotar autocorrelações",
+  "autocovariance": "Plotar autocovariância",
+  "partialcorrelations": "Plotar correlações parciais",
+  "label2": "Opções para valores ajustados",
+  "mainTitle": "Título principal",
+  "yaxisLabel": "Rótulo do eixo Y",
+  "help": {
+    "title": "Plotar Séries Temporais (com correlações)",
+    "r_help": "help(acf, package='forecast')",
+    "body": "\n<b>Descrição</b></br>\nCria um gráfico de séries temporais com autocorrelações, autocovariância e correlações parciais. BSkyPlotSeriesWithCorrelations é uma função wrapper que internamente chama acf e/ou pacf no pacote forecast.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyPlotSeriesWithCorrelations(vars, start, frequency, plot.type=\"multiple\", naturalLogYaxis =TRUE, main ='título', ylab='rótulo do eixo y', dataset=\"Dataset2\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nvars: variáveis selecionadas para plotar\n</li>\n<li>\nstart: O tempo da primeira observação deve ser inserido no formato ano,mês ou ano,trimestre e.g.( se seus dados estão organizados em meses, 1992,1 para Jan 1992 ou se seus dados estão organizados em trimestres, então 1992,1 refere-se ao primeiro trimestre de 1992.\n</li>\n<li>\nfrequency: Número de observações em unidade de tempo. Exemplo: para mensal há 12 observações em um ano. Para trimestral há 4 observações em um ano.\n</li>\n<li>\nautocorrelation: se TRUE, um gráfico de autocorrelação também será gerado.\n</li>\n<li>\nautocovariance: se TRUE, um gráfico de autocovariância também será gerado.\n</li>\n<li>\npartialautocorrelations: se TRUE, um gráfico de correlações parciais também será gerado.\n</li>\n<li>\nplot.type: \"multiple\" para separado e \"single\" para gráfico combinado.\n</li>\n<li>\nmain: título principal do gráfico\n</li>\n<li>\nylab: título para o eixo y\n</li>\n<li>\ndataset: o nome do conjunto de dados do qual as vars foram selecionadas.\n</li>\n</ul>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando help(acf, package ='forecast') criando um bloco de código R clicando + na janela de saída\n"
+  }
+}

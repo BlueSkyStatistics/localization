@@ -1,0 +1,13 @@
+{
+  "title": "반부분 상관관계",
+  "navigation": "반부분",
+  "statistic": "방법 선택",
+  "tvarbox1": "변수 선택",
+  "correlationType": "상관관계 유형",
+  "tvarbox2": "제어 변수 선택",
+  "help": {
+    "title": "반부분 상관관계",
+    "r_help": "help(spcor.test, package=ppcor)",
+    "body": "\n            <b>설명</b></br>\n            세 번째 변수를 고려한 두 변수의 반부분 상관관계. 선택된 변수 제어에서 지정된 각 변수 간의 쌍별 반부분 상관관계를 계산합니다. 제어 변수 제어에서 지정된 변수를 제어합니다.<br/>\n            spcor.test 함수를 감싸는 래퍼를 작성하여 지정된 각 변수 쌍에 대해 spcor.test를 호출합니다.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            spcor.test(x, y, z, method = c(\"pearson\", \"kendall\", \"spearman\"))</br>\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            인수\n            x: 숫자 벡터.\n            </li>\n            <li>\n            y: 숫자 벡터.\n            </li>\n            <li>\n            y: 숫자 벡터.\n            </li>\n            <li>\n            method: 계산할 부분 상관계수의 종류를 나타내는 문자열. \"pearson\"(기본값), \"kendall\" 또는 \"spearman\" 중 하나를 약어로 사용할 수 있습니다.\n            </li>\n            </ul>\n            <b>세부정보</b></br>\n            반부분 상관관계는 두 변수의 상관관계로, 세 번째 변수에서 두 번째 변수만 제거된 변동입니다. 분산-공분산 행렬의 결정자가 수치적으로 0일 때, 무어-펜로즈 일반화 행렬 역수가 사용됩니다. 이 경우, 변수의 수가 샘플 크기보다 크거나 같으면 p-값과 통계량이 제공되지 않습니다.</br>\n            <b>값</b><br/>\n            estimate: 두 변수 간의 반부분(부분) 상관계수.<br/>\n            p.value: 테스트의 p-값.<br/>\n            n: 샘플 수.<br/>\n            <b>예제</b><br/>\n            <code> \n            spcor.test(y.data$hl,y.data$disp,y.data[,c(\"deg\",\"BC\")])\n            </code> <br/>\n            <b>패키지</b></br>\n            ppcor</br>\n            <b>도움말</b></br>\n            help(pcor.test, package=ppcor)\n"
+  }
+}

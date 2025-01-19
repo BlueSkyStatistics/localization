@@ -1,0 +1,12 @@
+{
+  "title": "Calculați și adăugați o variabilă de medie mobilă",
+  "navigation": "Medie mobilă",
+  "variableSelcted": "Selectați o variabilă pentru a calcula media mobilă",
+  "sampleSize": "Specificați dimensiunea grupului pentru a calcula media mobilă (de exemplu, 5)",
+  "movingAvgVarName": "Specificați numele variabilei de medie mobilă de adăugat/actualizat (de exemplu, movingAvg)",
+  "help": {
+    "title": "Calculați media mobilă pentru variabila selectată",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\t<br/>\n\t\t\t\tCalculați media mobilă pentru variabila selectată pentru dimensiunea grupului specificată. Adăugați sau modificați (dacă numele variabilei specificate există deja) o variabilă în setul de date pentru a stoca rezultatul<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "계층적 클러스터",
+  "navigation": "계층적",
+  "destination": "목적지",
+  "clusters": "클러스터 수",
+  "storeClusterInDataset": "클러스터를 데이터셋에 할당",
+  "variablename": "클러스터를 저장할 변수 이름",
+  "biplot": "클러스터 바이플롯 표시",
+  "dendogram": "클러스터 덴드로그램 그리기",
+  "labelForClusteringMethod": "클러스터링 방법",
+  "Methodlabel": "방법",
+  "MethodRadlabel1": "워드 방법",
+  "MethodRadlabel2": "단일 연결",
+  "MethodRadlabel3": "완전 연결",
+  "MethodRadlabel4": "평균 연결",
+  "MethodRadlabel5": "맥퀴티 방법",
+  "MethodRadlabel6": "중앙 연결",
+  "MethodRadlabel7": "중심 연결",
+  "Metriclabel": "메트릭",
+  "MetricRadlabel1": "유클리드",
+  "MetricRadlabel2": "제곱 유클리드",
+  "MetricRadlabel3": "맨해튼 (시 블록)",
+  "MetricRadlabel4": "변환 없음",
+  "help": {
+    "title": "계층적 클러스터",
+    "r_help": "help(hclust, package ='stats')",
+    "body": "\n<b>설명</b></br>\n일련의 비유사성에 대한 계층적 클러스터 분석 및 이를 분석하는 방법입니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyHierClust <-BSkyHierClus(varsToCluster, method=\"ward.D\",noOfClusters, distance=\"euclidian\",plotDendogram=FALSE, assignClusterToDataset=FALSE, label, plotBiplot =FALSE,dataset=\"datasetname\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nvarsToCluster: 분석할 변수\n</li>\n<li>\nmethod: 사용될 응집 방법. 이는 \"ward.D\", \"ward.D2\", \n\"single\", \"complete\", \"average\" (= UPGMA), \"mcquitty\" (= WPGMA),\"median\" (= WPGMC) 또는 \"centroid\" (= UPGMC)의 (모호하지 않은 약어) 중 하나여야 합니다.\n</li>\n<li>\nnoOfClusters: 원하는 클러스터 수\n</li>\n<li>\nplotDendogram: 덴드로그램을 그리기 참 또는 거짓\n</li>\n<li>\nassignClusterToDataset: 클러스터 할당을 데이터셋에 저장\n</li>\n<li>\nlabel: 클러스터 할당을 저장할 새로운 변수의 이름\n</li>\n<li>\nplotBiplot: 바이플롯 그리기 참 또는 거짓\n</li>\n</ul>\n<b>패키지</b></br>\nBlueSky</br>\n<b>도움말</b></br>\nhelp(hclust, package ='stats')</br></br>\n<b>설명</b></br>\nplotDendrogram: 클러스터 덴드로그램을 그리기 위해 plot 함수를 호출합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nplotDendogram(method,distance,dataset)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nmethod: 위 참조\n</li>\n<li>\ndistance: 위 참조\nplotBiplot: 바이플롯 그리기 참 또는 거짓\n</li>\n</ul>\n<b>패키지</b></br>\nBlueSky</br>\n<b>도움말</b></br>\nhelp(plot)\n    "
+  }
+}

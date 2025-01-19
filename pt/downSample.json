@@ -1,0 +1,13 @@
+{
+  "title": "Amostragem Decrescente",
+  "navigation": "Amostra, Amostragem Decrescente",
+  "description": "Amostragem Decrescente de Dados Desequilibrados. DownSample irá amostrar aleatoriamente um conjunto de dados para que todas as classes tenham a mesma frequência que a classe minoritária",
+  "downsample": "Insira o nome do conjunto de dados",
+  "seed": "Definir semente",
+  "dependent": "Variável para amostragem decrescente",
+  "help": {
+    "title": "Amostragem Decrescente",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descrição</b></br>\nAmostragem Decrescente de Dados Desequilibrados. DownSample irá amostrar aleatoriamente um conjunto de dados para que todas as classes tenham a mesma frequência que a classe minoritária\n<br/>\n<b>Uso</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Classe\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: uma matriz ou data frame de variáveis preditoras\n</li>\n<li>\ny: uma variável fator com as classes\n</li>\n<li>\nlist: a função deve retornar list(x, y) ou unir x e y? Se TRUE, a saída será convertida em um data frame.\n</li>\n<li>\nyname: se list = FALSE, um rótulo para a coluna de classe\n</li>\n</ul>\n<b>Detalhes</b></br>\nAmostragem aleatória simples é usada para amostrar a classe(s) majoritária(s). Note que os dados da classe minoritária permanecem intactos e que as amostras serão reordenadas na versão amostrada.\nPara amostragem crescente, todos os dados originais permanecem intactos e amostras adicionais são adicionadas às classes minoritárias com reposição.\n<b>Valor</b><br/>\nOu um data frame ou uma lista com os elementos x e y.</br>\n<b>Exemplos</b></br>\n## Um exemplo ridículo...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>Pacote</b></br>\ncaret</br>\n<b>Ajuda</b></br>\nhelp(downSample, package ='caret')\n"
+  }
+}

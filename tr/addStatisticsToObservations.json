@@ -1,0 +1,23 @@
+{
+  "title": "Veri Kümesine Model İstatistikleri Ekle",
+  "navigation": "Veri Kümesine İstatistik Ekle",
+  "label1": "Aşağıdaki sınıfların modelleri desteklenmektedir (üstte parantez içindeki R sınıfı) - Doğrusal modeller (lm), Cox orantılı tehlike regresyon modeli (coxph), Genelleştirilmiş doğrusal modeller (glm), Yerel Polinom Regresyonu (loess), Dayanıklı doğrusal regresyon (rlm), Parametrik hayatta kalma regresyon modeli (survreg), Kuantil Regresyonu (rq)",
+  "label2": "İSTATİSTİKLER MEVCUT VERİ KÜMESİNE EKLENMİŞTİR. EŞSİZ DEĞİŞKEN İSİMLERİ SAĞLAMAK İÇİN SAYISAL EK BİRİM KULLANILACAKTIR. MEVCUT VERİ KÜMESİ MODELİ OLUŞTURMAK İÇİN KULLANILAN VERİ KÜMESİYLE UYUM GÖSTERMELİDİR.",
+  "modelselector1": "Bir model seçin:",
+  "suff": "İstatistik değişken adı için bir ek girin",
+  "label3": "Veri kümesindeki gözlemlere eklemek için istatistikleri seçin",
+  "label4": "NOT: Desteklenen istatistikler model sınıfına göre değişir. Aşağıdaki tüm istatistikler .tau hariç doğrusal ve genelleştirilmiş doğrusal modeller tarafından desteklenmektedir, Kuantil regresyonu .resid, .fitted, .tau'yu destekler. Diğer model sınıfları .fitted, .se.fit, .resid'i destekler.",
+  "chk1": ".hat (Şapka matrisinin diyagonalı)",
+  "chk2": ".sigma (Modelden ilgili gözlem çıkarıldığında kalıntı standart sapmasının tahmini)",
+  "chk3": ".cooksd (Cooks mesafesi)",
+  "chk4": ".fitted (modelin tahmin edilen değerleri)",
+  "chk5": ".se.fit (tahmin edilen değerlerin standart hataları)",
+  "chk6": ".resid (Kalıntılar)",
+  "chk7": ".std.resid (Standartlaştırılmış kalıntılar)",
+  "chk8": ".tau (Tahmin edilen kuantil) *Sadece Kuantil Regresyonu için desteklenmektedir",
+  "help": {
+    "title": "Veri Kümesine Model İstatistikleri Ekle",
+    "r_help": "help(augment, package='broom')",
+    "body": "\n                <b>Açıklama</b></br>\nBir nesneden bilgi ile verileri artırın\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \naugment(x, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: Gözlemlere eklenmesi gereken bilgiye sahip model nesnesi veya başka bir R nesnesi.\n</li>\n<li>\n...: artırma yöntemine ek argümanlar.\n</li>\n</ul>\n<b>Değer</b><br/>\nVeri noktaları hakkında bilgi içeren bir tibble::tibble() döndürür.</br>\n<b>Yöntemler</b><br/>\nBireysel yöntemler hakkında daha fazla bilgi için aşağıdaki yardım konularına bakın:<br/>\naugment.betareg: betareg<br/>\naugment.coxph: coxph<br/>\naugment.decomposed.ts: decomposed.ts<br/>\naugment.factanal: factanal<br/>\naugment.felm: felm<br/>\naugment.glm: glm<br/>\naugment.glmRob: glmRob<br/>\naugment.htest: htest<br/>\naugment.ivreg: ivreg<br/>\naugment.kmeans: kmeans<br/>\naugment.lm: lm<br/>\naugment.lmRob: lmRob<br/>\naugment.loess: loess<br/>\naugment.Mclust: Mclust<br/>\naugment.mjoint: mjoint<br/>\naugment.nlrq: nlrq<br/>\naugment.nls: nls<br/>\naugment.plm: plm<br/>\naugment.poLCA: poLCA<br/>\naugment.prcomp: prcomp<br/>\naugment.rlm: rlm<br/>\naugment.rq: rq<br/>\naugment.rqs: rqs<br/>\naugment.smooth.spline: smooth.spline<br/>\naugment.speedlm: speedlm<br/>\naugment.stl: stl<br/>\naugment.survreg: survreg<br/>\nlme4_tidiers: merMod<br/>\nnlme_tidiers: lme<br/>\nnull_tidiers: NULL<br/>\nordinal_tidiers: clm, polr<br/>\nrowwise_df_tidiers: rowwise_df, tbl_df<br/>\n<b>Paket</b></br>\nbroom</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(augment, package=\"broom\")\n"
+  }
+}

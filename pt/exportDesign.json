@@ -1,0 +1,9 @@
+{
+  "title": "Exportar Design - três arquivos (csv, html, rda) serão criados com o mesmo nome do design",
+  "navigation": "Exportar Design",
+  "exportPath": "Caminho do arquivo para exportar o design",
+  "help": {
+    "title": "Exportar Design",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tExportar o Design criará três arquivos (csv, html, rda) com o mesmo nome do design no caminho do diretório escolhido\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tO objetivo de exportar o design é configurar e conduzir os experimentos de acordo com o design no mundo real e coletar os resultados. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAdicione coluna(s) que estejam em conformidade com a convenção de nomenclatura de variáveis R ao arquivo csv para registrar os resultados. Essas colunas adicionais são conhecidas como a(s) resposta(s) segundo o vocabulário do Design de Experimentos. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUma vez que a(s) coluna(s) de resposta foram adicionadas ao arquivo csv, o menu DOE -> Importar Design pode ser usado para carregar o arquivo csv contra o design correto (já aberto) na grade da interface do conjunto de dados.  \n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

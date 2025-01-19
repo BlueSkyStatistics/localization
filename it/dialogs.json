@@ -1,0 +1,80 @@
+{
+  "banks": [],
+  "menu": [
+    {
+      "name": "File",
+      "tab": "file",
+      "buttons": [
+        {
+          "name": "Apri",
+          "icon": "fas fa-folder-open",
+          "onclick": "openFileDialog(undefined)",
+          "visible": true
+        },
+        {
+          "name": "Set di dati di esempio",
+          "icon": "fas fa-folder-open",
+          "onclick": "openSampleDataset()",
+          "visible": true
+        },
+        {
+          "name": "Salva set di dati",
+          "icon": "fas fa-save",
+          "onclick": "saveDataset()",
+          "visible": true
+        },
+        {
+          "name": "Salva con nome",
+          "icon": "fas fa-file-export",
+          "onclick": "saveasDataset()",
+          "visible": true
+        },
+        {
+          "name": "Chiudi set di dati",
+          "icon": "fas fa-times",
+          "onclick": "closeDataset()",
+          "visible": true
+        },
+        {
+          "name": "Esporta output",
+          "icon": "fas fa-file-export",
+          "onclick": "exportOutput()",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "icon": "fas fa-ellipsis-v",
+      "tab": "tools",
+      "buttons": [
+        "./assets/js/modals/appSettings",
+        {
+          "name": "Tema",
+          "icon": "icon-theme",
+          "onclick": "showhideThemeDialog()"
+        },
+        {
+          "name": "Aiuto",
+          "icon": "icon-help-circled",
+          "children": [
+            "./assets/js/modals/Help/helpAbout",
+            "./assets/js/modals/Help/Help",
+            "./assets/js/modals/Help/rFunctionHelp",
+            "./assets/js/modals/Help/rPackageHelp",
+            "./assets/js/modals/Help/rVersionDetails"
+          ]
+        },
+        {
+          "name": "Diagnostica",
+          "icon": "icon-magnifying_glass",
+          "children": [
+            "./assets/js/modals/Help/rPackageDetails",
+            "./assets/js/modals/Help/rInstalledPackages"
+          ]
+        },
+        "./assets/js/modals/Help/installRPackage",
+        "./assets/js/modals/Help/updateBlueSkyPackage"
+      ]
+    }
+  ]
+}

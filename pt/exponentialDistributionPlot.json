@@ -1,0 +1,25 @@
+{
+  "title": "Gráfico da Distribuição Exponencial",
+  "navigation": "Gráfico da Distribuição Exponencial",
+  "rate": "Taxa",
+  "pdenfun": "Plotar função de densidade",
+  "pdstfun": "Plotar função de distribuição",
+  "lblregions": "Opcionalmente especifique regiões sob a função de densidade por",
+  "xvals": "valores de x",
+  "quantiles": "quantis",
+  "lblRegFill": "Regiões a preencher (especifique uma ou duas, ou deixe em branco)",
+  "lblreg1": "Região 1 :",
+  "lblreg2": "Região 2 :",
+  "lblregfrm": "De",
+  "lblregto": "Para",
+  "lblregcol": "Cor",
+  "lblLegPos": "Posição da legenda",
+  "toprt": "Canto superior direito",
+  "toplt": "Canto superior esquerdo",
+  "topmid": "Centro superior",
+  "help": {
+    "title": "Gráfico da Distribuição Exponencial",
+    "r_help": "help(qexp, package=stats)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Densidade, função de distribuição, função quantil e geração aleatória para a distribuição exponencial com taxa rate (ou seja, média 1/rate).\n            <br/>\n            Uso\n            <br/>\n            <code>\n                dexp(x, rate = 1, log = FALSE)\n                <br/>\n                pexp(q, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qexp(p, rate = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rexp(n, rate = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis.</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>rate : vetor de taxas.</li>\n                \n                \n                <li>log, log.p : lógico; se TRUE, as probabilidades p são dadas como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; se TRUE (padrão), as probabilidades são P[X ≤ x], caso contrário, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalhes</b>\n            <br/>\n            Se a taxa não for especificada, assume o valor padrão de 1.\n            <br/>\n            A distribuição exponencial com taxa λ tem densidade\n            <br/>\n            <code>f(x) = λ {e}^{- λ x}</code>\n            <br/>\n            para x ≥ 0.\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dexp fornece a densidade, pexp fornece a função de distribuição, qexp fornece a função quantil, e rexp gera desvios aleatórios.\n            <br/>\n            O comprimento do resultado é determinado por n para rexp, e é o máximo dos comprimentos dos argumentos numéricos para as outras funções.\n            <br/>\n            Os argumentos numéricos além de n são reciclados para o comprimento do resultado. Apenas os primeiros elementos dos argumentos lógicos são usados.\n            <br/>\n            <br/><b>Nota</b>\n            <br/>\n            O risco cumulativo H(t) = - log(1 - F(t)) é -pexp(t, r, lower = FALSE, log = TRUE).            \n"
+  }
+}

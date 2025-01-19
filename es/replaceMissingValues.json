@@ -1,11 +1,11 @@
 {
-  "title": "Reemplazar valores faltantes (variables de cadena/factor)",
+  "title": "Reemplazar Valores Faltantes (Variables de Cadena/Factor)",
   "navigation": "Carácter/Factor",
-  "destination": "Variables de destino",
-  "repString": "Ingrese la cadena para reemplazar los NAs. Nota: No encierre la cadena entre comillas. Para las variables de factor, el valor especificado debe ser un nivel del factor, consulte Variables>Niveles de factor>Añadir",
+  "destination": "Variables de Destino",
+  "repString": "Ingrese la cadena para reemplazar los NAs. Nota: No encierre la cadena entre comillas. Para variables de factor, el valor especificado debe ser un nivel del factor, vea Variables>Niveles de Factor>Añadir",
   "help": {
-    "title": "Reemplazar valores faltantes (variables de cadena/factor)",
+    "title": "Reemplazar Valores Faltantes (Variables de Cadena/Factor)",
     "r_help": "help(is.na,package=base)",
-    "body": "\n<b>Descripción</b></br>\nReemplace los valores faltantes en las variables seleccionadas por el valor especificado. Al usar el cuadro de diálogo, no es necesario encerrar la cadena entre comillas dobles\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('Cadena a reemplazar')\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nLas variables del conjunto de datos (var1, var2) donde se deben reemplazar los NAs\n</li>\n</ul>\n<b>Valor</b><br/>\nReemplaza los valores faltantes en el conjunto de datos con la cadena especificada<br/>\n<b>Paquete</b></br>\nbas</br>\n<b>Ayuda</b></br>\nhelp(is.na,package=base)"
+    "body": "\n<b>Descripción</b></br>\nReemplace los valores faltantes en las variables seleccionadas por el valor especificado. Al usar el diálogo, no tiene que encerrar la cadena entre comillas dobles\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nDataset[,c('var1','var2')] [is.na(Dataset[,c('var1','var2')])] <- c('Cadena para reemplazar')\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nLas variables del conjunto de datos (var1, var2) donde se deben reemplazar los NAs\n</li>\n</ul>\n<b>Valor</b><br/>\nReemplaza los valores faltantes en el conjunto de datos con la cadena especificada<br/>\n<b>Paquete</b></br>\nbase</br>\n<b>Ayuda</b></br>\nhelp(is.na,package=base)"
   }
 }

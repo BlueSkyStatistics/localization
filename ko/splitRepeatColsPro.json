@@ -1,0 +1,24 @@
+{
+  "title": "반복 변수 그룹으로 데이터 세트 나누기/축소하기",
+  "navigation": "반복 변수 세트",
+  "removeColsWithConstantChk": "나누기 또는 축소하기 전에 상수 값이 있는 모든 열 제거(대소문자 구분 없음)",
+  "removeRowsWithNAsChk": "완전한 케이스만 유지 즉, 출력 데이터 세트에서 비어 있거나 NA 값이 있는 전체 행 제거",
+  "resultDatasetNameSuffix": "(선택 사항) 출력 데이터 세트 이름에 접미사로 사용될 하나 이상의 문자열(쉼표로 구분)",
+  "splitDatasetRad": "반복 변수 세트를 기준으로 데이터 세트를 여러 데이터 세트로 나누기",
+  "autoDetectColGroupLengthRad": "나누기 또는 축소하기 위해 반복 변수 세트를 자동으로 감지",
+  "manualColGroupLengthRad": "나누기 또는 축소하기 위해 사용할 반복 변수 세트의 길이 지정",
+  "manualRepeatingColumnGroupLength": "반복 변수 세트의 길이",
+  "outputColumnNames": "(선택 사항) 출력 데이터 세트에 사용할 변수 이름 목록(쉼표로 구분)",
+  "collapseDatasetRad": "여러 데이터 세트로 나누는 대신 하나의 긴 데이터 세트로 축소",
+  "collapseGpIDPrefix": "세트 ID 값의 접두사",
+  "collapseGpIDColName": "세트 ID 변수 이름(출력 데이터 세트에 새 변수가 생성됨)",
+  "collapseGpIDColFirstChk": "세트 ID 변수를 첫 번째 열로 만들기(마지막 열로 하려면 선택 해제)",
+  "makeCollapseGpIDColFactorChk": "세트 ID 변수를 팩터로 만들기",
+  "label1": "반복 변수 세트 감지",
+  "label2": "데이터 세트를 나누거나 축소하시겠습니까?",
+  "help": {
+    "title": "반복 변수 그룹으로 데이터 세트 나누기/축소하기",
+    "r_help": "",
+    "body": "\n            <b>설명</b></br>\n            이 대화 상자는 반복 변수 세트가 있는 데이터 세트를 나누거나(여러 데이터 세트로) 축소하기 위해 사용됩니다.\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t예 1: 이를 시도하려면 Repeating Variable Sets.xlsx라는 샘플 데이터 세트 파일을 사용할 수 있습니다.\n\t\t\t<br/>\n\t\t\t파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다.\n\t\t\t<br/>\n\t\t\t대화 상자에 입력합니다.\n\t\t\t<br/>\n\t\t\t세 개의 반복 변수 세트가 있으므로 세 개의 데이터 세트가 생성됩니다. 출력 데이터 세트 이름 접미사로 abcX, abcY, abcZ와 같은 문자열을 입력할 수 있습니다.\n\t\t\t<br/>\n\t\t\t대화 상자의 나머지 항목은 기본값으로 유지합니다.\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t예 2: 이를 시도하려면 Repeating Variable Sets2.xlsx라는 샘플 데이터 세트 파일을 사용할 수 있습니다.\n\t\t\t<br/>\n\t\t\t파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다.\n\t\t\t<br/>\n\t\t\t대화 상자에 입력합니다.\n\t\t\t<br/>\n\t\t\t네 개의 반복 변수 세트가 있으므로 네 개의 데이터 세트가 생성됩니다.\n\t\t\t<br/>\n\t\t\t대화 상자의 모든 항목을 기본값으로 유지합니다.\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\t대화 상자의 \"데이터 세트를 나누거나 축소하시겠습니까?\" 섹션에서 축소 옵션을 시도하여 단일 출력 데이터 세트를 생성하기 위해 동일한 두 개의 샘플 데이터 세트 파일을 사용할 수 있습니다.\n\t\t\t<br/>\n\t\t\t<br/>\n"
+  }
+}

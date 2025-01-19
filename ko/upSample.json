@@ -1,0 +1,12 @@
+{
+  "title": "업 샘플",
+  "navigation": "샘플, 업 샘플",
+  "downsample": "데이터셋의 이름을 입력하세요",
+  "seed": "시드 설정",
+  "dependent": "업 샘플링할 변수",
+  "help": {
+    "title": "업 샘플",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>설명</b></br>\n불균형 데이터의 업 샘플링. upSample은 클래스 분포를 동일하게 만들기 위해 교체를 통해 샘플링합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 예측 변수의 행렬 또는 데이터 프레임\n</li>\n<li>\ny: 클래스 멤버십을 가진 팩터 변수\n</li>\n<li>\nlist: 함수가 list(x, y)를 반환해야 합니까, 아니면 x와 y를 함께 결합해야 합니까? TRUE인 경우 출력은 데이터 프레임으로 강제 변환됩니다.\n</li>\n<li>\nyname: list = FALSE인 경우 클래스 열의 레이블\n</li>\n</ul>\n<b>세부사항</b></br>\n단순 무작위 샘플링을 사용하여 다수 클래스의 다운 샘플링을 수행합니다. 소수 클래스 데이터는 그대로 남아 있으며 샘플은 다운 샘플링된 버전에서 재정렬됩니다.</br>\n업 샘플링의 경우 원본 데이터는 그대로 남아 있으며 소수 클래스에 추가 샘플이 교체를 통해 추가됩니다.</br>\n<b>값</b><br/>\n데이터 프레임 또는 x와 y 요소가 포함된 리스트 중 하나입니다.<br/>\n<b>예제</b><br/>\n<code> \n## 터무니없는 예...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>패키지</b></br>\ncaret</br>\n<b>도움말</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

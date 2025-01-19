@@ -1,0 +1,16 @@
+{
+  "title": "Güven Aralığı",
+  "navigation": "Güven Aralığı",
+  "label1": "Aşağıdaki sınıflardan birinin modelini seçin. (R sınıfı parantez içinde aşağıda listelenmiştir)",
+  "label2": "Doğrusal model (lm), Genelleştirilmiş doğrusal model (glm), Doğrusal Olmayan En Küçük Kareler (nls), Sıralı Lojistik/Probit regresyon (polr), Çoklu Lojistik-Doğrusal modeller (multinom), Cox regresyon modelleri (coxph)",
+  "label3": "Dayalı",
+  "modelselector1": "Bir model seçin",
+  "conlevel": "Güven aralığı",
+  "lr": "Olasılık oranı istatistiği",
+  "wald": "Wald istatistiği",
+  "help": {
+    "title": "Güven Aralığı",
+    "r_help": "help(confint,package='stats')",
+    "body": "\n                <b>Açıklama</b></br>\nBir uyumlu modelde bir veya daha fazla parametre için güven aralıklarını hesaplar. Varsayılan bir yöntem ve \"lm\" sınıfından miras alan nesneler için bir yöntem vardır. lm ve coxph modelleri yalnızca Wald yöntemini kullanır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nconfint(object, parm, level = 0.95, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nobject: bir uyumlu model nesnesi.\n</li>\n<li>\nparm: güven aralıklarının verileceği parametrelerin bir tanımı, ya bir sayı vektörü ya da bir isimler vektörü. Eksikse, tüm parametreler dikkate alınır.\n</li>\n<li>\nlevel: gereken güven düzeyi.\n</li>\n<li>\n...: yöntemlere iletilecek argümanlar.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nconfint, genel bir işlevdir. Varsayılan yöntem normalite varsayar ve uygun coef ve vcov yöntemlerinin mevcut olmasını gerektirir. Varsayılan yöntem, diğer yöntemlerle karşılaştırma için doğrudan çağrılabilir.</br>\n\"lm\" sınıfındaki nesneler için t değerlerine dayanan doğrudan formüller kullanılır.</br>\n\"glm\" ve \"nls\" sınıfları için paket istatistiklerinde stub yöntemleri vardır; bu yöntemler, yüklenmişse, paket MASS'taki yöntemleri doğrudan çağırır. (Bu yöntemler profil olasılığına dayanmaktadır.)</br>\n<b>Değer</b></br>\nHer parametre için alt ve üst güven limitlerini veren sütunlarla bir matris (veya vektör). Bunlar % (varsayılan olarak %2.5 ve %97.5) (1-seviye)/2 ve 1 - (1-seviye)/2 olarak etiketlenecektir.</br>\n<b>Örnekler</b><br/>\n<code> \nfit <- lm(100/mpg ~ disp + hp + wt + am, data = mtcars)<br/>\nconfint(fit)<br/>\nconfint(fit, \"wt\")<br/>\n## example(glm)'den\ncounts <- c(18,17,15,20,10,20,25,13,12)\noutcome <- gl(3, 1, 9); treatment <- gl(3, 3)\nglm.D93 <- glm(counts ~ outcome + treatment, family = poisson())\nconfint(glm.D93) # MASS'in yüklenmesi gerekir\nconfint.default(glm.D93)  # asimptotik normaliteye dayalı\n</code> <br/>\n<b>Paket</b></br>\nistatistikler;MASS;knitr</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog overlay'inin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(confint , package='stats')\n                "
+  }
+}

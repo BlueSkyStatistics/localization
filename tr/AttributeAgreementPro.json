@@ -1,0 +1,29 @@
+{
+  "title": "Öznitelik Anlaşması Analizi",
+  "navigation": "Öznitelik Anlaşması",
+  "variablePartSelcted": "Örnek/parça için değişkeni seçin",
+  "variableOpSelcted": "Değerlendirici/operatör için değişkeni seçin",
+  "variableRespSelcted": "Öznitelik/yanıt için değişkeni seçin",
+  "variableRefSelcted": "(Opsiyonel) Referans/standart yanıt için değişkeni seçin",
+  "variableTrialSelcted": "(Opsiyonel) Deneme/tekrarlama numarası için değişkeni seçin",
+  "alpha": "Güven aralığı (alpha) 0 ile 1 arasında",
+  "misclassificationStatChk": "Doğruluk ve yanlış sınıflandırma oranlarını göster",
+  "summaryDisagreementChk": "Değerlendirici anlaşmazlığı ile standart arasındaki özet bilgiyi göster",
+  "CohenKappaChk": "Değerlendirici/operatör arasında Cohen’in Kappa istatistiklerini hesapla",
+  "CohenKappaWeight": "Cohen’in Kappa için uygulanacak ağırlık",
+  "label1": "Öznitelik anlaşması çalışması rapor başlık detayları",
+  "gageName": "Alet adı",
+  "dateStudy": "Çalışma tarihi",
+  "partDescription": "Parça açıklaması",
+  "machineName": "Makine adı",
+  "reportedBy": "Raporlayan",
+  "operatorNames": "Operatörlerin isimleri",
+  "testLocation": "Test yeri",
+  "miscellaneous": "Çeşitli",
+  "rowsTobeUsed": "Tüm satırların kullanılacaksa boş bırakın. Aksi takdirde analiz için kullanılacak satırları belirtin (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "help": {
+    "title": "Öznitelik anlaşması analizi",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tÖznitelik anlaşması analizi yapmak için fonksiyon\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(kappam.fleiss, package = irr) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, her biri 20 gözlem ile iki kez tekrar edilen A ve B adlı iki Operatör için attributemsaAB.xlsx örnek veri seti dosyalarını kullanabilirsiniz.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAyrıca, her biri 10 gözlem ile iki kez tekrar edilen A, B, C adlı üç operatör için \"sıralı\" (ordinal) Disagree, Somewhat Disagree, Neutral, Somewhat Agree ve Agree olarak derecelendirilmiş attributemsaABCordered.RData örnek veri seti dosyasını da deneyebilirsiniz.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDosyaları veri ızgarasında dosya aç menüsü ile açın\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

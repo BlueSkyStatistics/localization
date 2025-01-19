@@ -1,0 +1,11 @@
+{
+  "title": "توسيع الأوزان",
+  "navigation": "توسيع",
+  "datasetname": "اسم مجموعة البيانات مع الأوزان الموسعة",
+  "destination": "أدخل العمود الذي يحتوي على الأوزان",
+  "help": {
+    "title": "توسيع الأوزان",
+    "r_help": "help(expandRows, package=splitstackshape)",
+    "body": "<b>الوصف</b></br>\n        ينشئ مجموعة بيانات جديدة مع صفوف موسعة حسب الأوزان. يقوم بتوسيع (تكرار) صفوف data.frame بواسطة قيمة موجودة في أحد الأعمدة في data.frame أو data.table المصدر. تستدعي BSkySetWeights() الدالة expandRows() من حزمة splitstackshape.\n        <br/>\n        <b>الاستخدام</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>المعلمات</b><br/>\n         <ul>\n           <li>\n        weights: المتغير في مجموعة البيانات الذي يحتوي على الأوزان. \n        </li>\n        <li>\n        data: data.frame أو data.table المدخل.\n        </li>\n        <li>\n        newdata: مجموعة البيانات الجديدة حيث يتم تكرار الصفوف للأوزان المحددة.\n        </li>\n        </ul>\n        <b>الحزمة</b></br>\n        splitstackshape</br>\n        <b>المساعدة</b></br>\n        help (expandRows)\n        "
+  }
+}

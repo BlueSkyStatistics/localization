@@ -1,10 +1,10 @@
 {
-  "title": "Test d'Anderson-Darling de Normalité",
-  "navigation": "Test de Normalité d'Anderson-Darling",
+  "title": "Test d'Anderson-Darling de normalité",
+  "navigation": "Test de normalité d'Anderson-Darling",
   "trg": "Variables cibles",
   "help": {
-    "title": "Test d'Anderson-Darling de Normalité",
+    "title": "Test d'Anderson-Darling de normalité",
     "r_help": "help(ad.test, package=nortest)",
-    "body": "\n<b>Description</b></br>\nTest d'Anderson-Darling pour la normalité. \n<br/>\n<b>Utilisation</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx: un vecteur numérique de valeurs de données, dont le nombre doit être supérieur à 7. Les valeurs manquantes sont autorisées.\n</li>\n</ul>\n<b>Détails</b></br>\nLe test d'Anderson-Darling est un test omnibus EDF pour l'hypothèse composite de normalité.<br/>\n<b>Valeur</b><br/>\nUne liste avec la classe “htest” contenant les composants suivants:<br/>\n<ul>\n<li>\nstatistic: la valeur de la statistique d'Anderson-Darling.\n</li>\n<li>\np.value: Valeur P du test.\n</li>\n</ul>\n<b>Paquet</b></br>\nnortest</br>\n<b>Aide</b></br>\nhelp(ad.test, package =nortest)\n"
+    "body": "\n<b>Description</b></br>\nTest d'Anderson-Darling pour la normalité. \n<br/>\n<b>Utilisation</b>\n<br/>\n<code>\nad.test(x)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nx : un vecteur numérique de valeurs de données, dont le nombre doit être supérieur à 7. Les valeurs manquantes sont autorisées.\n</li>\n</ul>\n<b>Détails</b></br>\nLe test d'Anderson-Darling est un test omnibus EDF pour l'hypothèse composite de normalité.<br/>\n<b>Valeur</b><br/>\nUne liste avec la classe “htest” contenant les composants suivants :<br/>\n<ul>\n<li>\nstatistic : la valeur de la statistique d'Anderson-Darling.\n</li>\n<li>\np.value : valeur P du test.\n</li>\n</ul>\n<b>Package</b></br>\nnortest</br>\n<b>Aide</b></br>\nhelp(ad.test, package =nortest)\n"
   }
 }

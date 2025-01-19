@@ -1,0 +1,30 @@
+{
+  "title": "Grafico a Linee",
+  "navigation": "Punti",
+  "label1": "Clicca sulla scheda qui sotto corrispondente al tipo di grafico a linee che desideri. Il predefinito è connesso per ordine.",
+  "x": "Asse X",
+  "y": "Asse Y, specifica una variabile numerica(i)",
+  "color": "Gruppo/Colore, specifica una variabile fattoriale",
+  "line": "Per Ordine",
+  "linetype": "Verrà utilizzato un tipo di linea separato per ciascun livello della variabile fattoriale",
+  "stair": "Passi a Scala",
+  "path": "Per occorrenza",
+  "lineChartType": "Clicca sul tipo di Grafico a Linee qui sotto",
+  "alpha": "Opacità (0-1)",
+  "flipBox": "Inverti Asse",
+  "specify_a_title": "Inserisci un titolo",
+  "x_title": "Etichetta asse X",
+  "y_title": "Etichetta asse Y",
+  "Facetrow": "Riga Facet",
+  "Facetcolumn": "Colonna Facet",
+  "Facetwrap": "Avvolgi Facet",
+  "Facetscale": "Scala Facet",
+  "sizePoint": "Dimensione dei punti",
+  "sizeLine": "Larghezza della linea",
+  "facets_lbl": "Facets",
+  "help": {
+    "title": "Grafico a Linee",
+    "r_help": "help(geom_line, package=ggplot2)",
+    "body": "\n            <b>Descrizione</b></br>\n            L'opzione per utilizzare un tipo di linea diverso per ciascun livello della variabile fattoriale specificata è fornita per supportare pubblicazioni che non supportano il colore. \n            Crea un grafico a linee (connesso per ordine) o un grafico a passi a scala o ordina il grafico a linee per occorrenza dei punti nel dataset. Clicca sulla scheda corrispondente al tipo di grafico a linee che desideri.</br>\n            Grafico a linee (connesso per ordine): Un grafico a linee traccia una linea attraverso punti definiti dalle coordinate x e y e li connette nell'ordine delle variabili sull'asse x. Quando un gruppo/colore è impostato su una variabile fattoriale, i punti sono raggruppati per colore e viene generata una linea separata per ciascun gruppo. I Facets possono essere creati opzionalmente specificando una variabile fattoriale. Puoi anche specificare opzionalmente temi e specificare un titolo e etichette per gli assi x e y​</br>\n            Grafico a passi a scala: Un grafico a linee traccia una linea attraverso punti definiti dalle coordinate x e y e crea un grafico a passi a scala, evidenziando esattamente quando si verificano cambiamenti. Quando un colore è impostato su una variabile fattoriale, i punti sono raggruppati per colore e viene generata una linea separata per ciascun gruppo di colore. I Facets possono essere creati opzionalmente specificando una variabile fattoriale. Puoi anche specificare opzionalmente temi e specificare un titolo e etichette per gli assi x e y​</br>\n            Ordinato per occorrenza: Un grafico a linee traccia una linea attraverso punti definiti dalle coordinate x e y e li connette nell'ordine in cui le variabili si verificano nel dataset. Quando un colore è impostato su una variabile fattoriale, i punti sono raggruppati per colore e viene generata una linea separata per ciascun gruppo di colore. I Facets possono essere creati opzionalmente specificando una variabile fattoriale. Puoi anche specificare opzionalmente temi e specificare un titolo e etichette per gli assi x e y​.</br>\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code> \n            #Grafico a linee<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_line( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\", title= \"Grafico a linee per ...\")<br/>\n            #Grafico a passi a scala<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_step( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\",title= \"Grafico a linee per ...\")<br/>\n            #Ordinato per occorrenza<br/>\n            ggplot(data=Dataset2,aes(x =var1,y =var2)) +\n             geom_path( stat = \"identity\",position = \"identity\",aes (color = var3),alpha=0.5) +\n             labs(x =\"var1\",y =\"var2\",title= \"Grafico a linee per ...\")\n            </code> <br/>\n            <b>Argomenti</b><br/>\n            <ul>\n            <li>\n            data: Il dataset predefinito​\n            </li>\n            <li>\n            aes(): Genera mappature estetiche che descrivono come le variabili nei dati sono mappate alle proprietà visive (estetiche) dei geoms.​\n            </li>\n            <li>\n            x: Una variabile numerica o fattoriale\n            </li>\n            <li>\n            y: la variabile numerica/scala per la quale i punti sono tracciati sull'asse y​\n            </li>\n            <li>\n            color: una variabile fattoriale opzionale per raggruppare i punti (per colore)​\n            </li>\n            <li>\n            labs(): Cambia le etichette degli assi e i titoli della legenda (questo è opzionale)​\n            </li>\n            <li>\n            facet_grid(): Dispone i pannelli in una griglia (questo è opzionale)​\n            </li>\n            <li>\n            theme_calc(): Specifica il tema del calcolatore (questo è opzionale)​\n            </li>\n            <li>\n            geom_line(): Collega le osservazioni ordinate per valore x, vedi x:​\n            </li>\n            <li>\n            coord_flip(): Inverti asse (questo è opzionale)​\n            </li>\n            </ul>\n            <b>Pacchetto</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Aiuto</b></br>\n            #Grafico a linee\n            help(geom_line, package='ggplot2')\n            #Grafico a linee a passi\n            help(geom_step, package=ggplot2)\n            #Ordine delle variabili\n            help(geom_path, package='ggplot2')\n            Altro: Clicca sul pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(labs), help(geom_line), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​            \n    "
+  }
+}

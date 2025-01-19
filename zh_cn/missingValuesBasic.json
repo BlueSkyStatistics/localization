@@ -1,7 +1,7 @@
 {
   "title": "替换缺失值（数值变量）",
   "navigation": "数值",
-  "label1": "所选变量中的缺失值（NAs）通过应用函数进行替换，即中位数、均值、最小值、最大值或指定的值。",
+  "label1": "所选变量中的缺失值（NAs）通过应用函数（即中位数、均值、最小值、最大值或指定值）进行替换。",
   "target": "选择要替换缺失值的变量",
   "label2": "选择一个函数或指定一个值来替换NAs",
   "rd1": "使用函数计算缺失值",
@@ -10,7 +10,7 @@
   "valueEntered": "输入一个数值",
   "help": {
     "title": "替换缺失值（数值）",
-    "r_help": "帮助(均值)",
-    "body": "\n<b>描述</b></br>\n通过所选操作替换所选变量中的缺失值，即中位数、均值、最小值、最大值\n<br/>\n<b>用法</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvar: 表示具有缺失值（na）的数值变量的字符字符串，例如 var = c('sales')\n</li>\n<li>\nDataset: 包含变量 var 的数据集\n</li>\n</ul>\n<b>值</b><br/>\n计算的值直接存储在数据集中<br/>\n<b>包</b></br>\n基础</br>\n<b>帮助</b></br>\n帮助(均值)"
+    "r_help": "help(mean)",
+    "body": "\n<b>描述</b></br>\n通过所选操作（即中位数、均值、最小值、最大值）替换所选变量中的缺失值\n<br/>\n<b>用法</b>\n<br/>\n<code> \nDataset[is.na(Dataset2[,var]),var]<-median(Dataset[,var],na.rm=TRUE)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nvar: 表示具有缺失值（na）的数值变量的字符字符串，例如 var = c('sales')\n</li>\n<li>\nDataset: 包含变量 var 的数据集\n</li>\n</ul>\n<b>值</b><br/>\n计算的值直接存储在 Dataset 中<br/>\n<b>包</b></br>\nbase</br>\n<b>帮助</b></br>\nhelp(mean)"
   }
 }

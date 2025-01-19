@@ -1,0 +1,14 @@
+{
+  "title": "Explorar variável(is)",
+  "navigation": "Explorar variáveis",
+  "variableListSelcted": "Selecione uma ou mais variáveis para explorar",
+  "histCurveDispChk": "Exibir uma curva normal no histograma (valores ausentes são removidos para a curva ser exibida)",
+  "showCountsChk": "Exibir contagens nos bins do histograma",
+  "statTableOrientionChk": "Estatísticas resumidas em colunas",
+  "histBins": "Especifique o número de bins para o histograma",
+  "help": {
+    "title": "Explorar características de uma ou mais variável(is)",
+    "r_help": "ajuda(resumo)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tProduz as seguintes estatísticas descritivas e gráficos:\n\t\t\t\tmín, máx, média, mediana, modos, soma, desvio padrão, cv (coeficiente de variação), var, erro padrão, assimetria, curtose, mad, iqr e quartis. Além disso, o intervalo de confiança de 95% para a média e o desvio padrão são calculados. O histograma e os gráficos QQ são exibidos. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara a ajuda detalhada - use R ajuda(resumo, pacote = base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara calcular a assimetria e a curtose, o tipo = 3 é usado como padrão. Com o parâmetro tipo = 2, os valores para assimetria e curtose provavelmente corresponderão aos valores da fórmula SKEW() e KURT() do MS Excel\n\t\t\t\t<br/>\n\t\t\t\tpsych::skew(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tpsych::kurtosi(x, na.rm = TRUE, type=3)\n\t\t\t\t<br/>\n\t\t\t\tVeja mais detalhes \n\t\t\t\t<br/>\n\t\t\t\thelp(skew, pacote = psych)\n\t\t\t\t<br/>\n\t\t\t\thelp(kurtosi, pacote = psych)\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

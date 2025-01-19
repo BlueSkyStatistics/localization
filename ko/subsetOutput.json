@@ -1,0 +1,13 @@
+{
+  "title": "서브셋 데이터셋",
+  "navigation": "서브셋, 출력 결과",
+  "label0": "결과는 출력 창에 표시됩니다",
+  "label1": "옵션",
+  "New": "결과를 새 데이터셋으로 저장",
+  "newdatasetname": "데이터셋 이름을 입력하세요",
+  "Existing": "기존 데이터셋 덮어쓰기",
+  "distinct": "고유 사례 선택",
+  "chkbox2": "사용하지 않는 요인 수준 제거",
+  "subsetvars": "서브셋 데이터셋에 포함할 변수를 선택하세요",
+  "subsetexpression": "서브셋 기준을 입력하세요. 서브셋 기준은 각 데이터셋 행에 적용됩니다. 예 1: !is.na(var1) & is.na(var2). 예 2: var1>30 & var2=='male'. 예 3: (var1 !=10 & var2>20) | var3==40. 예 4: (grepl(\"xxx\",var1) ==TRUE) | var1==\"abc\". 예 5: substr(var1,2,4) ==\"abc\""
+}

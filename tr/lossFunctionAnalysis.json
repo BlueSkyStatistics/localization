@@ -1,0 +1,16 @@
+{
+  "title": "Kayıp Fonksiyonu Analizi",
+  "navigation": "Kayıp Fonksiyonu Analizi",
+  "lfaSubTitle": "Grafik çıktısı için alt başlık",
+  "independent": "Kayıp fonksiyonu analizine yönelik verileri içeren sütun",
+  "lfaDelta": "Sürecin toleransı",
+  "lfaY0": "Sürecin hedefi",
+  "lfaL0": "Tolerans sınırındaki kötü kalite maliyeti",
+  "lfaSize": "Toplam kaybı hesaplamak için üretim, parti vb. boyutu (aralık, parti, dönem, ...)",
+  "lfaOutput": "Çıktı türü (mümkün değerler - metin, grafik veya her ikisi)",
+  "help": {
+    "title": "Kayıp Fonksiyonu Analizi",
+    "r_help": "help(ss.lfa, package = SixSigma)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tss.lfa fonksiyonu, \"Nominal-en-iyi\" özellikler için Taguchi Kayıp Fonksiyonu temelinde bir Kalite Kayıp Fonksiyonu Analizi gerçekleştirmek için kullanılır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R yardımını kullanın (ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, loss_function_table.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya açma menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\t"
+  }
+}

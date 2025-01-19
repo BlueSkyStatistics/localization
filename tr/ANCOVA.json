@@ -1,0 +1,16 @@
+{
+  "title": "ANCOVA, kovaryans analizi",
+  "navigation": "ANCOVA",
+  "response": "Bağımlı Değişken",
+  "Fixed": "Sabit Faktör",
+  "Block": "Kovaryat",
+  "Summary": "Model Özeti",
+  "Scatter_plot": "Faktör değişkeninin her seviyesindeki bağımlı değişken için dağılım grafiği",
+  "Residual": "Artıklar ile Uyumlu grafik",
+  "Histogram": "Artıkların histogram grafiği",
+  "help": {
+    "title": "ANCOVA",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Açıklama</b></br>\nKovaryans analizi (ANCOVA), ANOVA ve regresyonun özelliklerini birleştirir. ANOVA modelini, yanıt değişkeni ile ilişkili bir veya daha fazla ek nicel değişken olan kovaryatlar ile artırır. Kovaryatlar, hata terimlerindeki varyansı azaltmak ve tedavi etkilerinin daha hassas ölçümünü sağlamak için dahil edilir.</br> ANCOVA, faktörlerin ana ve etkileşim etkilerini test etmek için kullanılırken, kovaryatın etkilerini kontrol eder.</br>\nÖncelikle etkileşim terimi ile bir Anova tablosu oluşturuyoruz. Amaç, etkileşim teriminin anlamlı olmadığını incelemektir; yani, sabit faktörün her seviyesindeki bağımlı değişkenin kovaryat ile eğimleri farklı değildir. Bu Anova tablosunu oluşturmak için car paketindeki Anova paketini kullanıyoruz.</br>\nDaha sonra, sabit faktörün her seviyesindeki bağımlı değişkenin kovaryat ile kesişimlerinin farklı olup olmadığını belirlemek için etkileşim terimini kontrol ederek Anova tablosunu yeniden oluşturuyoruz.</br> \nSabit faktörün her seviyesindeki bağımlı değişken ile kovaryat değişkeni için bir dağılım grafiği oluşturma seçeneği sunuyoruz.</br>\nEtkileşim terimini kontrol ettiğimiz model için artıklar ile uyumlu grafiği çizme seçeneği sunuyoruz. Artıkların tarafsız ve homoscedastik olması gerekir.</br>\nEtkileşim terimini kontrol ettiğimiz model için artıklar için bir histogram oluşturma seçeneği sunuyoruz. (Dağılım yaklaşık normal olmalıdır).</br>\nModeli özetleme seçeneği sunuyoruz.</br>\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nformül: \"formül\" sınıfının bir nesnesi (veya bu sınıfa dönüştürülebilen bir nesne): uyum sağlanacak modelin sembolik tanımı. Model spesifikasyonu ile ilgili ayrıntılar 'Ayrıntılar' altında verilmiştir.\n</li>\n<li>\ndata: modeldeki değişkenleri içeren isteğe bağlı bir veri çerçevesi, liste veya ortam (veya as.data.frame ile veri çerçevesine dönüştürülebilen bir nesne). Veri içinde bulunamazsa, değişkenler genellikle lm'nin çağrıldığı ortamdan alınır.\n</li>\n</ul>\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm veya diğer uygun model nesneleri.​\n</li>\n<li>\ntip: test türü, \"II\", \"III\", 2 veya 3.\n</li>\n</ul>\n<b>Paket</b></br>\nAnova</br>\n<b>Yardım</b></br>\nhelp(Anova, package ='car')\n    "
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Gumbel Dağılımı Grafiği",
+  "navigation": "Gumbel Dağılımı Grafiği",
+  "location": "Konum",
+  "scale": "Ölçek",
+  "pdenfun": "Yoğunluk fonksiyonunu çiz",
+  "pdstfun": "Dağılım fonksiyonunu çiz",
+  "lblregions": "Yoğunluk fonksiyonu altında bölgeleri isteğe bağlı olarak belirtin",
+  "xvals": "x-değerleri",
+  "quantiles": "kuantiller",
+  "lblRegFill": "Doldurulacak bölgeler (bir veya iki belirtin ya da boş bırakın)",
+  "lblreg1": "Bölge 1 :",
+  "lblreg2": "Bölge 2 :",
+  "lblregfrm": "Başlangıç",
+  "lblregto": "Bitiş",
+  "lblregcol": "Renk",
+  "lblLegPos": "Lejantın konumu",
+  "toprt": "Üst sağ",
+  "toplt": "Üst sol",
+  "topmid": "Üst merkez",
+  "help": {
+    "title": "Gumbel Dağılımı Grafiği",
+    "r_help": "help(qgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Açıklama</b>\n            <br/>\n            Belirtilen konum ve ölçek parametreleri ile Gumbel dağılımı için yoğunluk, dağılım fonksiyonu, kuantile fonksiyonu ve rastgele üretim.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argümanlar</b>\n            <br/>\n            <ul>\n                <li>x, q : kuantillerin (değişkenin değerleri) vektörü.</li>\n                \n                \n                <li>p : olasılıkların vektörü.</li>\n                \n                \n                <li>n : gözlem sayısı. Eğer length(n) > 1 ise, gerekli olan uzunluk alınır.</li>\n                \n                \n                <li>location : konum parametresi (varsayılan 0); potansiyel olarak bir vektör.</li>\n                \n                \n                <li>scale : ölçek parametresi (varsayılan 1); potansiyel olarak bir vektör.</li>\n                \n                <li>lower.tail : mantıksal; eğer TRUE (varsayılan) ise olasılıklar ve kuantiller P(X ≤ x) ile, eğer FALSE ise P(X > x) ile ilişkilidir.</li>\n            </ul>            \n"
+  }
+}

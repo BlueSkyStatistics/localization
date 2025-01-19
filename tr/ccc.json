@@ -1,0 +1,20 @@
+{
+  "title": "Uyum Korelasyon Katsayısı",
+  "navigation": "Uyum Korelasyon Katsayısı",
+  "obs1var": "Gözlemci 1:",
+  "obs2var": "Gözlemci 2:",
+  "cilevel": "Güven Düzeyi:",
+  "label1": "Güven Aralığı Yöntemi",
+  "ztrans": "Z-dönüşümü",
+  "asymp": "Asimptotik",
+  "plotoptionslabel": "Grafik Seçenekleri",
+  "plottitle": "Başlık",
+  "xlabel": "X-eksen Etiketi",
+  "ylabel": "Y-eksen Etiketi",
+  "plottheme": "Grafik Teması",
+  "help": {
+    "title": "Uyum Korelasyon Katsayısı",
+    "r_help": "help(epi.ccc,package=epiR)",
+    "body": "\nUyum korelasyon katsayısı (CCC), aynı ölçek üzerinde sürekli veriler için aynı konuları ölçen iki gözlemci arasındaki anlaşmayı ölçer. CCC, -1 ile 1 arasında değişebilir; 1 mükemmel anlaşmayı, 0 ise hiç anlaşmayı ifade eder. Negatif değerler negatif anlaşmayı gösterir, ancak pratikte nadirdir. Gözlemci 1 değişkeninin (x-ekseni) gözlemci 2 değişkeni ile (y-ekseni) karşılaştırıldığı bir grafik de sağlanmıştır ve mükemmel anlaşma çizgisi (y=x) gösterilmektedir.\n<br/><br/>\n<b>Gözlemci 1:</b> Bir gözlemci tarafından sağlanan değerleri içeren değişken; sayısal olmalıdır\n<br/>\n<b>Gözlemci 2:</b> İkinci bir gözlemci tarafından sağlanan değerleri içeren değişken; sayısal olmalıdır\n<br/>\n<b>Güven Düzeyi:</b> CCC için istenen güven aralığı düzeyi\n<br/>\n<b>Güven Aralığı Yöntemi:</b> İstenilen güven aralığı yöntemi. Z-dönüşüm yöntemi (veya ters hiperbolik tanjant dönüşümü) genellikle daha iyi bir seçimdir çünkü normal dağılıma daha iyi yaklaşır.\n<br/><br/>\n<b>Gerekli R paketleri:</b> epiR, ggplot2, ggthemes\n                "
+  }
+}

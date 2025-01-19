@@ -1,0 +1,20 @@
+{
+  "title": "Tamanho da Amostra, Teste de Duas Médias",
+  "navigation": "Duas Médias",
+  "howtouse": "Para calcular o tamanho da amostra: especifique ambas as médias do grupo e o poder\nPara calcular o poder: especifique ambas as médias do grupo e o tamanho da amostra\nPara calcular a diferença média detectável: especifique o tamanho da amostra e o poder",
+  "n": "Tamanho da Amostra",
+  "power": "Poder (0-1)",
+  "meangrp1": "Média do Grupo de Tratamento",
+  "meangrp2": "Média do Grupo de Controle",
+  "ratio": "Relação do Tamanho da Amostra do Tratamento vs Controle",
+  "sd": "Desvio Padrão",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Duas Médias",
+    "r_help": "help(epi.sscompc, package ='epiR')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste t de duas amostras de médias. Ele calcula o tamanho da amostra, poder ou diferença média (delta) quando o usuário \nespecifica os outros dois.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Média do Grupo de Tratamento:</b> Especifique a média para o grupo de tratamento\n<br/><br/>\n<b>Média do Grupo de Controle:</b> Especifique a média para o grupo de controle\n<br/><br/>\n<b>Relação do Tamanho da Amostra do Tratamento vs Controle:</b> Especifique a relação desejada dos tamanhos das amostras (N do tratamento dividido por N do controle). Uma relação de 1 significa tamanhos de amostra iguais.\n<br/><br/>\n<b>Desvio Padrão:</b> Estimativa do desvio padrão agrupado dos grupos\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Pacotes R Necessários:</b> epiR\n\t\t\t"
+  }
+}

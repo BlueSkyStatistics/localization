@@ -1,0 +1,21 @@
+{
+  "title": "Binning",
+  "navigation": "Bin",
+  "vartobin": "Seleziona una variabile da raggruppare",
+  "varname": "Inserisci un nome di variabile per salvare il valore raggruppato",
+  "noofbins": "Specifica il numero di bin",
+  "label1": "Nomi dei livelli",
+  "Names": "Specifica i nomi",
+  "levelnames": "Inserisci i nomi dei livelli separati da virgola (,), ad esempio buono,migliore,migliore",
+  "Numbers": "Numeri",
+  "Ranges": "Intervalli",
+  "label2": "Metodo di raggruppamento",
+  "equalwidth": "Bin di larghezza uguale",
+  "equalcount": "Bin di conteggio uguale",
+  "natural": "Interruzioni naturali (clustering K Means)",
+  "help": {
+    "title": "Binning",
+    "r_help": "help(binVariable,package='RcmdrMisc')",
+    "body": "\n<b>Descrizione</b></br>\nCrea un fattore che disegna l'intervallo di una variabile numerica in bin di larghezza uguale, (approssimativamente) frequenza uguale, o a punti di taglio \"naturali\" (determinati dal clustering K-means)\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nbinVariable(x, bins = 4, method = c(\"intervals\", \"proportions\", \"natural\"),labels = FALSE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nX: variabile numerica da raggruppare.\n</li>\n<li>\nBins: numero di bin.\n</li>\n<li>\nmethod: uno di \"intervals\" per bin di larghezza uguale; \"proportions\" per bin di conteggio uguale; \"natural\" per i punti di taglio tra i bin da determinare tramite clustering k-means.\n</li>\n<li>\nLabels: se FALSE, verranno utilizzate etichette numeriche per i livelli del fattore; se NULL, i punti di taglio vengono utilizzati per definire le etichette; altrimenti un vettore di caratteri di nomi di livello.\n</li>\n</ul>\n<b>Pacchetto</b></br>\nRcmdrMisc</br>\n<b>Aiuto</b></br>\nhelp(binVariable,package='RcmdrMisc')\n"
+  }
+}

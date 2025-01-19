@@ -1,0 +1,32 @@
+{
+  "title": "Mapa de Calor",
+  "navigation": "Mapa de Calor",
+  "rowVariables": "Variável alvo",
+  "columnVariables": "Variáveis de coluna",
+  "options": "Opções",
+  "title1": "Título do Mapa de Calor",
+  "dendrogram": "Dendrograma:",
+  "label1": "Opções de dendrograma de linha:",
+  "plotRowYes": "Reordenar dendrograma com base nas médias das linhas",
+  "plotRowNo": "Sem reordenação (dendrograma não será computado)",
+  "label2": "Opções de dendrograma de coluna",
+  "plotColumnYes": "Reordenar dendrograma com base nas médias das colunas",
+  "plotColumnNo": "Não",
+  "symmetric": "No caso de matriz simétrica, tratar colunas como linhas",
+  "trace": "Opções para desenhar linha de traço sólida através de linhas, colunas, ambas ou nenhuma",
+  "density": "Opções de densidade:",
+  "scale": "Os valores devem ser centralizados na direção da linha, direção da coluna ou nenhum",
+  "label3": "Valores ausentes",
+  "Remove": "Remover todas as linhas que contêm um valor ausente",
+  "Keep": "Manter linhas que contêm valores ausentes",
+  "label4": "Colocar valores na célula",
+  "valuesNo": "Sim",
+  "valuesYes": "Não",
+  "noteColors": "Escolha uma cor para os valores das células (Após a seleção da cor, clique fora do controle para aplicar):",
+  "advanced_lbl": "Avançado",
+  "help": {
+    "title": "Mapa de Calor",
+    "r_help": "help(heatmap.2,package='gplots')",
+    "body": "\n            <b>Descrição</b></br>\n            Um mapa de calor é uma representação gráfica de dados onde os valores individuais contidos em uma matriz são representados como cores. Facetas podem ser criadas opcionalmente especificando uma variável de fator. Você também pode opcionalmente especificar temas e especificar um título e rótulos para os eixos x e y</br>\n            O conjunto de dados deve estar no formato coluna1, coluna2…colunaN onde</br>\n            coluna1: Identifica os sujeitos, por exemplo, nomes de pessoas cujos valores de colesterol são plotados</br>\n            coluna2: Identifica os valores de colesterol no tempo 1</br>\n            coluna3: Identifica os valores de colesterol no tempo 2</br>\n            coluna4: Identifica os valores de colesterol no tempo 3</br>\n            coluna5: Identifica os valores de colesterol no tempo 4…</br>\n            A coluna1 é um rótulo para cada linha no mapa de calor.</br>\n            Para a coluna 2 em diante, os valores em cada linha da coluna são representados como cores no mapa de calor.</br>\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            BSkyHeatMap(rowVariable=c('Sujeito'),colVariables=c('chol1','chol2','chol3','chol4'),Colv=FALSE,Rowv=TRUE,dendrogram=c(\"row\"),scale=c(\"none\"),trace=c(\"none\"),density.info=c(\"none\"),na.rm=TRUE,noteForCells =FALSE,notecol =c(\"black\"),dataset=\"Dataset4\")<br/>\n            A função acima está no pacote BlueSky e invoca a função heatmap.2 no pacote gplots.\n            </code> <br/>\n            <b>Argumentos</b><br/>\n            <ul>\n            <li>\n            data: O conjunto de dados padrão\n            </li>\n            <li>\n            rowVariable: A variável de coluna que contém informações sobre os sujeitos para os quais o gráfico é construído, veja acima\n            </li>\n            <li>\n            colVariables: uma lista de variáveis de coluna que contêm valores que serão representados como cores no mapa de calor\n            </li>\n            <li>\n            Colv: determina se e como o dendrograma de coluna deve ser reordenado. Tem as opções como o argumento Rowv acima e, adicionalmente, quando x é uma matriz quadrada, Colv=\"Rowv\" significa que as colunas devem ser tratadas de forma idêntica às linhas.\n            </li>\n            <li>\n            Rowv: determina se e como o dendrograma de linha deve ser reordenado. Por padrão, é TRUE, o que implica que o dendrograma é computado e reordenado com base nas médias das linhas. Se NULL ou FALSE, então nenhum dendrograma é computado e nenhuma reordenação é feita. Se um dendrograma, então é usado \"como está\", ou seja, sem qualquer reordenação. Se um vetor de inteiros, então o dendrograma é computado e reordenado com base na ordem do vetor.\n            </li>\n            <li>\n            na.rm: lógico determinando se os NA devem ser removidos\n            </li>\n            <li>\n            dendrogram: string de caracteres indicando se deve desenhar 'nenhum', 'linha', 'coluna' ou 'ambos' os dendrogramas. O padrão é 'ambos'. No entanto, se Rowv (ou Colv) for FALSE ou NULL e o dendrograma for 'ambos', então um aviso é emitido e os argumentos Rowv (ou Colv) são respeitados.\n            </li>\n            <li>\n            scale: string de caracteres indicando se os valores devem ser centralizados e escalonados na direção da linha ou na direção da coluna, ou nenhum. O padrão é \"nenhum\".\n            </li>\n            <li>\n            trace: string de caracteres indicando se os valores devem ser centralizados e escalonados na direção da linha ou na direção da coluna, ou nenhum. O padrão é \"nenhum\".\n            </li>\n            <li>\n            density.info: string de caracteres indicando se deve sobrepor um 'histograma', um gráfico de 'densidade' ou nenhum gráfico ('nenhum') na chave de cores.\n            </li>\n            <li>\n            noteForCells: lógico indicando se os valores devem ser colocados nas células do mapa de calor.\n            </li>\n            <li>\n            notecol: cor das notas. Se especificado, os valores são anotados nas células do mapa de calor na cor especificada..\n            </li>\n            </ul>\n            <b>Pacote</b></br>\n            BlueSky;gplots;</br>\n            <b>Ajuda</b></br>\n            help(heatmap.2,package='gplots')</br>\n            Outro: Clique no botão de Ajuda R para obter ajuda detalhada em R. Você também pode inserir help(labs), help(geom_histogram), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)</br>\n            Conjuntos de Dados de Exemplo: Veja Heatmaps.Rdata na pasta de Conjuntos de Dados de Exemplo</br>\n     "
+  }
+}

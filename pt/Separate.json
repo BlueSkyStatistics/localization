@@ -1,0 +1,11 @@
+{
+  "title": "Variável Separada",
+  "navigation": "Separar",
+  "sepvarlabel": "Variável a separar",
+  "delimiterlabel": "Caracteres usados para separar",
+  "help": {
+    "title": "Variável Separada",
+    "r_help": "help(separate_wider_delim, package = 'tidyr')",
+    "body": "\n            Isso separa os valores de uma variável em partes (uma variável para cada parte) com base em caracteres que definem as partes separadas.\n\t\t\t<br/><br/>\n\t\t\tPor exemplo, se o caractere usado para separar for uma vírgula (,), ele separará os valores em partes ao redor das vírgulas.  \n\t\t\t<br/><br/>\n\t\t\tO número de variáveis adicionadas ao conjunto de dados será o número máximo de partes em que qualquer observação foi separada.  Os nomes das novas variáveis serão o nome da variável sendo separada, mais um sufixo numérico que corresponde a cada parte.  As variáveis conterão valores ausentes se uma observação não puder ser separada no número máximo de variáveis.  Se os caracteres usados para separar não puderem ser encontrados no valor, então o valor original será retornado (ou seja, há apenas uma parte).\n\t\t\t<br/><br/>\n\t\t\t<b>Variável a separar:</b>\n\t\t\t<br/>Especifique a variável que você deseja separar em partes.  Isso pode ser uma variável de caractere, numérica, fator, fator ordinal ou uma variável de data.  Uma variável não caractere será convertida em uma variável de caractere para os fins de separação, mas a variável original permanecerá inalterada.\n\t\t\t<br/><br/>\n\t\t\t<b>Caracteres usados para separar:</b>\n\t\t\t<br/>Especifique o padrão de caracteres que é o separador das partes.  Isso pode ser um ou mais caracteres.\n\t\t\t<br/><br/>\n            <b>Pacotes R necessários:</b> tidyr, dplyr\n"
+  }
+}

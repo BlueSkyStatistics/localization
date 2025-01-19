@@ -1,0 +1,17 @@
+{
+  "title": "Cox, Estratificado",
+  "navigation": "Cox, Estratificado",
+  "modelname": "Insira o nome do modelo",
+  "timevar": "Tempo até o evento ou censura",
+  "eventvar": "Eventos (1 = evento 1, 0 = censura)",
+  "modelterms": "Construtor de expressão do modelo para variáveis independentes",
+  "stratavarslabel": "Variáveis de Estratificação",
+  "weightvar": "Pesos (opcional)",
+  "tiemethod": "Método de Tempo Empatado",
+  "diagnosticsbox": "Diagnósticos do Modelo",
+  "help": {
+    "title": "Cox, Estratificado",
+    "r_help": "help(coxph, package = 'survival')",
+    "body": "\n            Ajusta um modelo de riscos proporcionais de Cox estratificado para dados de tempo até o evento com observações censuradas. Este é um modelo de Cox que permite uma função de risco de base separada para cada nível de estrato. Estatísticas de ajuste do modelo, estimativas de parâmetros e razões de risco são fornecidas. As opções disponíveis incluem o método de tempo empatado e diagnósticos do modelo. O modelo é ajustado usando a função coxph no pacote survival. \n            <br/>\n            <br/>\n            <b>Tempo até o evento ou censura:</b> Tempo até o evento para aqueles que experimentam o evento ou tempo até o último acompanhamento para aqueles que não experimentam o evento\n            <br/><br/>\n            <b>Eventos (1=evento, 0=censura):</b> Indicador numérico de evento; 1=evento, 0=censura\n            <br/><br/>\n            <b>Construtor de Fórmulas:</b> Construa termos para incluir no modelo. Fatores, strings e variáveis lógicas serão codificados como variáveis fictícias. Os botões fornecidos permitem que você especifique efeitos principais, efeitos fatoriais completos (efeitos principais e todas as interações com as variáveis envolvidas), polinômios, interações específicas e exclua termos da lista. Interações com variáveis de estratificação são permitidas.\n            <br/><br/>\n\t\t\t<b>Variáveis de Estratificação:</b> Especifique uma ou mais variáveis de estratificação. Estas podem ser variáveis numéricas, fator, fator ordenado ou variáveis de caractere. Os estratos dividem os sujeitos em grupos separados, onde cada grupo tem uma função de risco de base distinta. Se várias variáveis de estratificação forem fornecidas, uma função de risco de base separada é usada para cada combinação de níveis de variáveis de estratificação.\n\t\t\t<br/><br/>\n            <b>Pesos:</b> Variável numérica para pesos de observação. Útil em situações onde cada registro não deve ser contado como uma observação. \n            <br/>\n            <br/>\n            <b>Pacotes necessários:</b> survival, broom, survminer\n            <br/>\n            <br/>\n            Clique no botão Ajuda R para obter ajuda detalhada sobre a função coxph.\n            <br/>\n            <br/>\n            <br/>\n            <br/>\n            <b>Opções</b>\n            <br/>\n            <br/>\n            <b>Método de Tempo Empatado:</b>\n            <br/>\n            Método para quebrar os tempos observados empatados. Efron é geralmente a melhor escolha quando não há muitos tempos empatados. O método exato pode ser benéfico se houver muitos tempos empatados, como em situações de tempo discreto, mas pode levar um pouco mais de tempo para o modelo ser ajustado. \n            <br/>\n            <br/>\n            <b>Diagnósticos do Modelo:</b>\n            <br/>\n            Se selecionado, testes e gráficos de riscos proporcionais serão fornecidos, além de um gráfico de resíduos de Martingale.\n"
+  }
+}

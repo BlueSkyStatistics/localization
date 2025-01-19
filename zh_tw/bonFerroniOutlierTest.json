@@ -1,11 +1,11 @@
 {
-  "title": "Bonferroni異常值檢驗",
-  "navigation": "異常值檢驗",
-  "label1": "選擇以下類別之一的模型（括號中的類別）- 線性模型（lm），廣義線性模型（glm）",
-  "modelselector1": "選擇一個模型",
+  "title": "Bonferroni 異常值檢定",
+  "navigation": "異常值檢定",
+  "label1": "選擇以下類別之一的模型（括號中的類別）- 線性模型 (lm)、廣義線性模型 (glm)",
+  "modelselector1": "選擇模型",
   "help": {
-    "title": "Bonferroni異常值檢驗",
+    "title": "Bonferroni 異常值檢定",
     "r_help": "help(outlierTest, package='car')",
-    "body": "\n                <b>描述</b></br>\n報告Bonferroni p值，以逐個測試每個觀察值是否為均值偏移異常值，基於線性（t檢驗）、廣義線性模型（正態檢驗）和線性混合模型中的學生化殘差。\n<br/>\n<b>用法</b>\n<br/>\n<code> \noutlierTest(model, ...)<br/>\n## S3方法，類為'lm'<br/>\noutlierTest(model, cutoff=0.05, n.max=10, order=TRUE, \nlabels=names(rstudent), ...)<br/>\n## S3方法，類為'lmerMod'<br/>\noutlierTest(model, ...)<br/>\n## S3方法，類為'outlierTest'<br/>\nprint(x, digits=5, ...)<br/>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmodel: 一個lm、glm或lmerMod模型對象；\"lmerMod\"方法調用\"lm\"方法並可以接受相同的參數。\n</li>\n<li>\ncutoff: 超過cutoff的Bonferroni p值的觀察值不被報告，除非沒有觀察值被提名，在這種情況下報告具有最大學生化殘差的觀察值。\n</li>\n<li>\nn.max: 最大報告觀察值的數量（默認，10）。\n</li>\n<li>\norder: 是否按大小降序報告學生化殘差？（默認，TRUE）。\n</li>\n<li>\nlabels: 可選的觀察名稱向量。\n</li>\n<li>\n...: 傳遞給方法函數的參數。\n</li>\n<li>\nx: outlierTest對象。\n</li>\n<li>\ndigits: 報告的p值的小數位數。\n</li>\n</ul>\n<b>詳細信息</b></br>\n對於線性模型，報告的p值使用t分佈，自由度比模型的殘差df少一個。對於廣義線性模型，p值基於標準正態分佈。Bonferroni調整將通常的雙側p值乘以觀察值的數量。lm方法適用於glm對象。要顯示所有觀察值，請將cutoff=Inf和n.max=Inf。<br/>\n<b>值</b><br/>\n一個類為outlierTest的對象，通常只是打印出來。<br/>\n<b>示例</b><br/>\n<code> \noutlierTest(lm(prestige ~ income + education, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>幫助</b></br>\n有關詳細幫助，請單擊此對話框覆蓋層右上角的R圖標，或在R語法編輯器中運行以下命令 help(outlierTest, package=\"car\")\n                "
+    "body": "\n                <b>描述</b></br>\n報告 Bonferroni p 值以測試每個觀察值是否為均值偏移異常值，基於線性（t 檢定）、廣義線性模型（常態檢定）和線性混合模型的 Studentized 殘差。\n<br/>\n<b>用法</b>\n<br/>\n<code> \noutlierTest(model, ...)<br/>\n## S3 方法用於類別 'lm'<br/>\noutlierTest(model, cutoff=0.05, n.max=10, order=TRUE, \nlabels=names(rstudent), ...)<br/>\n## S3 方法用於類別 'lmerMod'<br/>\noutlierTest(model, ...)<br/>\n## S3 方法用於類別 'outlierTest'<br/>\nprint(x, digits=5, ...)<br/>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nmodel: 一個 lm、glm 或 lmerMod 模型對象；\"lmerMod\" 方法調用 \"lm\" 方法並可以接受相同的參數。\n</li>\n<li>\ncutoff: 超過 cutoff 的 Bonferroni p 值的觀察值不會被報告，除非沒有觀察值被提名，否則將報告具有最大 Studentized 殘差的觀察值。\n</li>\n<li>\nn.max: 報告的最大觀察值數量（默認為 10）。\n</li>\n<li>\norder: 是否按大小降序報告 Studentized 殘差？（默認為 TRUE）。\n</li>\n<li>\nlabels: 可選的觀察名稱向量。\n</li>\n<li>\n...: 傳遞給方法函數的參數。\n</li>\n<li>\nx: outlierTest 對象。\n</li>\n<li>\ndigits: 報告的 p 值的位數。\n</li>\n</ul>\n<b>詳細信息</b></br>\n對於線性模型，報告的 p 值使用的 t 分佈的自由度比模型的殘差 df 少一。對於廣義線性模型，p 值基於標準正態分佈。Bonferroni 調整將通常的雙側 p 值乘以觀察值的數量。lm 方法適用於 glm 對象。要顯示所有觀察值，請設置 cutoff=Inf 和 n.max=Inf。<br/>\n<b>值</b><br/>\n一個類別為 outlierTest 的對象，通常只是被打印出來。<br/>\n<b>示例</b><br/>\n<code> \noutlierTest(lm(prestige ~ income + education, data=Duncan))\n</code> <br/>\n<b>包</b></br>\ncar</br>\n<b>幫助</b></br>\n要獲取詳細幫助，請單擊此對話框覆蓋的右上角的 R 圖標，或在 R 語法編輯器中運行以下命令 help(outlierTest, package=\"car\")\n                "
   }
 }

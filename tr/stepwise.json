@@ -1,0 +1,22 @@
+{
+  "title": "Adım Adım",
+  "navigation": "Adım Adım",
+  "label1": "Aşağıdaki sınıflardan birinin modelini seçin. (R sınıfı parantez içinde aşağıda listelenmiştir)",
+  "label2": "Doğrusal model (lm), Genelleştirilmiş doğrusal model (glm), Sıralı Lojistik/Probit regresyon (polr), Besleme İleri Sinir Ağları ve Çoklu Log-Doğrusal Modeller (nnet)",
+  "label3": "**NOT: Adım Adım, Model > Ayar (eğitim) ile oluşturulan modeller için çalışmaz",
+  "label4": "**NOT: Adım Adım, R paket yazarlarıyla gündeme getirdiğimiz bir uyumsuzluk nedeniyle Çoklu Log-Doğrusal Modeller (multinom) için çalışmaz",
+  "modelselector1": "Bir model seçin",
+  "label5": "Yön",
+  "backforward": "geriye/ileri",
+  "forwardback": "ileri/geriye",
+  "backward": "geriye",
+  "forward": "ileri",
+  "aic": "AIC (ceza için kullanılan serbestlik derecesi k = 2)",
+  "bic": "BIC (model matrisindeki satır sayısının log'u için ceza olarak kullanılan serbestlik dereceleri) NOT: Çıktı, BIC seçildiğinde bile AIC'yi gösterir)",
+  "label6": "Kriter",
+  "help": {
+    "title": "Adım Adım",
+    "r_help": "help(stepwise, package='RcmdrMisc')",
+    "body": "\n            <b>Açıklama</b></br>\nBu fonksiyon, RcmdrMisc paketindeki 'stepwise' fonksiyonuna bir ön yüzdür. Bu da, MASS paketindeki stepAIC fonksiyonuna bir ön yüzdür.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"geriye/ileri\", \"ileri/geriye\", \"geriye\", \"ileri\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nmod : stepAIC tarafından işlenebilen bir sınıfın model nesnesi.\n</li>\n<li>\ndirection : \"geriye/ileri\" (varsayılan) ise, seçim tam modelle başlar ve her adımda bir tahmin ediciyi birer birer kaldırır, her adımda daha önce kaldırılan bir değişkenin geri eklenmesiyle kriterin iyileşip iyileşmeyeceğini değerlendirir; \"ileri/geriye\" ise, yalnızca bir sabit içeren bir modelle başlar ve her adımda bir tahmin ediciyi birer birer ekler, her adımda daha önce eklenmiş bir değişkenin kaldırılmasıyla kriterin iyileşip iyileşmeyeceğini değerlendirir; \"geriye\" ve \"ileri\" ise her adımda yeniden değerlendirme olmadan benzer şekilde çalışır.\n</li>\n<li>\ncriterion : seçim için. Ya \"BIC\" (varsayılan) ya da \"AIC\". stepAIC, hangi kriterin kullanıldığına bakılmaksızın çıktıda kriteri \"AIC\" olarak etiketler.\n</li>\n<li>\n... : stepAIC'ye iletilecek argümanlar.\n</li>\n</ul>\n<b>Değer</b><br/>\nstepAIC tarafından seçilen model.<br/>\n<b>Paket</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(stepwise, package=\"RcmdrMisc\")\n"
+  }
+}

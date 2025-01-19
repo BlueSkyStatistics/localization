@@ -1,0 +1,14 @@
+{
+  "title": "Esplora il Dataset",
+  "navigation": "Esplora il Dataset",
+  "destdatalabel": "Dataset da Esplorare",
+  "htmloutlabel": "Visualizza Output in una Pagina Web",
+  "standardgraphlabel": "Includi Grafici nella Finestra di Output",
+  "maxdistvalueslabel": "Valori Distinti Massimi",
+  "rounddigitslabel": "Cifre Significative",
+  "help": {
+    "title": "Esplora il Dataset",
+    "r_help": "help(dfSummary, package ='summarytools')",
+    "body": "\nQuesto crea una tabella che descrive un dataset. Le descrizioni includono il nome del dataset, il numero di osservazioni, il numero di variabili, il numero di record duplicati, \nnomi delle variabili, classi delle variabili, statistiche riassuntive delle variabili e grafici. Questo strumento è più orientato all'esplorazione e alla pulizia dei dati, piuttosto che all'analisi dei dati. \nUna versione testuale della tabella viene visualizzata per impostazione predefinita, ma una versione html più bella può essere visualizzata opzionalmente nel browser web predefinito.\n<br/><br/>  \n<b>Dataset da Esplorare:</b> Dataset che desideri descrivere\n<br/><br/>  \n<b>Visualizza Output in una Pagina Web:</b> Seleziona se desideri visualizzare una versione bella della tabella nel browser web predefinito. Questa versione includerà grafici.\n<br/><br/>\n<b>Includi Grafici nella Finestra di Output:</b> Seleziona se desideri includere versioni testuali dei grafici nella finestra di output di BlueSky\n<br/><br/>\n<b>Valori Distinti Massimi:</b> Il numero massimo di valori per cui visualizzare le frequenze. Se una variabile ha più valori distinti di questo numero, le frequenze rimanenti verranno riportate \ncome un'intera categoria, insieme al numero di valori distinti aggiuntivi. Per le variabili carattere, vengono visualizzati i valori più frequenti, quindi questo controlla anche quanti mostrarne in \nquel caso. Il valore predefinito è 10.\n<br/><br/>\n<b>Cifre Significative:</b> Numero di cifre significative da visualizzare. Il valore predefinito è 2.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> summarytools\n\t\t\t"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Teste de Equivalência",
+  "navigation": "Teste de Equivalência",
+  "variableSelcted1": "Selecione a primeira variável",
+  "label1": "Para comparar duas variáveis, escolha uma variável de agrupamento (apenas dois níveis) ou uma segunda variável (independente ou pareada)",
+  "variableSelcted2": "Selecione uma segunda variável",
+  "label2": "Como tratar a segunda variável se selecionada",
+  "groupingNeededRad": "A segunda variável selecionada é uma variável de agrupamento",
+  "referenceGpValue": "Digite o valor do grupo a ser usado como referência",
+  "pairedTestRad": "Realizar Teste Pareado - a segunda variável selecionada é pareada",
+  "noneRad": "Nenhuma das opções acima",
+  "targetMean": "Meta (média) - não aplicável para Dois-Sample",
+  "lower": "Limite inferior - valor numérico do limite inferior de equivalência",
+  "upper": "Limite superior - valor numérico do limite superior de equivalência",
+  "smdChk": "Limites de equivalência especificados em SMD (Diferença Média Padronizada)",
+  "label3": "Tipo de teste",
+  "EQUtestRad": "Realizar teste de equivalência",
+  "METtestRad": "Realizar teste de efeitos mínimos (MET)",
+  "alpha": "nível alpha (padrão = 0,05)",
+  "HedgesCorrectionChk": "Calcular correção de Hedges automaticamente (caso contrário, mostra d de Cohen)",
+  "plotChk": "Gráfico de consonância (isso pode demorar um pouco para exibir o gráfico)",
+  "help": {
+    "title": "Teste de Equivalência",
+    "r_help": "help(t_TOST, package = TOSTER)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar teste de equivalência ou teste de efeitos mínimos (MET)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(t_TOST, package = TOSTER)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara tentar isso, você pode carregar o conjunto de dados chamado iris com o menu Carregar Conjunto de Dados selecionando o conjunto de dados iris no segundo dropdown (digite rapidamente iris)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSelecione Sepal.Length como a primeira variável e (opcionalmente) escolha Sepal.Width como a segunda variável, e selecione o teste Pareado\n\t\t\t\t<br/>\n\t\t\t\tdigite 5.5 como o limite inferior e 8.5 como o limite superior para a margem de equivalência, clique em executar \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial em https://cran.r-project.org/web/packages/TOSTER/vignettes/IntroTOSTt.html\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,18 +1,18 @@
 {
-  "title": "多變量品質控制圖 (MQCC)",
+  "title": "多變量質量控制圖 (MQCC)",
   "navigation": "MQCC 圖表",
-  "summaryPrintChk": "除了圖表外打印摘要",
-  "variableListSelcted": "數據（選擇一個或多個變量）以繪製圖表",
+  "summaryPrintChk": "除了圖表外還打印摘要",
+  "variableListSelcted": "數據（選擇一個或多個變量）以製作圖表",
   "groupingVariable": "(可選) 如果存在子組，請選擇分組變量",
-  "excludeGroups": "(可選) 從計算/繪圖中排除組（如果子組為數字）（例如，指定為 1:10 或用逗號分隔為 1,4,5,7:12）",
-  "groupsTobeUsedAsNewData": "(可選) 新數據 - 組（如果子組為數字）將用作繪製圖表的新數據（例如，指定為 1:25 或 1,4,5,7:12） - 新數據用於繪圖，但不包括在限制計算中",
-  "limitsChk": "如果必須計算和繪製控制限（第一階段）",
-  "pred_limitsChk": "如果必須計算和繪製預測限（第二階段）",
-  "confidence_level": "(可選) 置信水平：保持默認公式不變（其中 p 將自動計算為所選變量的數量）。否則，請指定一個介於 0 和 1 之間的數值，作為計算概率限制的置信水平",
-  "genVarianceChk": "為所選變量繪製廣義方差 |S| 的控制圖（必須選擇分組變量）",
+  "excludeGroups": "(可選) 從計算/圖表中排除組（如果子組為數字），例如指定為 1:10 或用逗號分隔為 1,4,5,7:12",
+  "groupsTobeUsedAsNewData": "(可選) 新數據 - 組（如果子組為數字）用作新數據以製作圖表（例如指定為 1:25 或 1,4,5,7:12） - 新數據用於繪製但不包括在限制計算中",
+  "limitsChk": "如果必須計算和繪製控制限制（第一階段）",
+  "pred_limitsChk": "如果必須計算和繪製預測限制（第二階段）",
+  "confidence_level": "(可選) 信心水平：保持顯示的默認公式（其中 p 將自動計算為所選變量的數量）。否則，指定一個介於 0 和 1 之間的數值作為計算概率限制的信心水平",
+  "genVarianceChk": "為所選變量繪製一般化方差 |S| 的控制圖（必須選擇分組變量）",
   "help": {
-    "title": "多變量品質控制圖 (mqcc)",
-    "r_help": "幫助(mqcc, 包 = qcc)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tmqcc 函數用於執行多變量統計質量控制和廣義方差 |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關詳細幫助 - 使用 R 幫助(mqcc, 包 = qcc) 和幫助(GVcontrol, 包 = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試此操作，您可以通過選擇 qcc 包並選擇 boiler 數據集來使用加載數據集菜單加載名為 boiler 的數據集\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t從 boiler 數據集中選擇變量，保持所有默認設置，然後運行對話框\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t您還可以使用名為 widgets_mqcc.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開文件\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要繪製廣義方差 |S|，數據集必須有一列包含子組編號 - 否則將無法繪製\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t請訪問 https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html 查看 qcc 教程\n\t\t\t\t<br/>\n\t\t\t"
+    "title": "多變量質量控制圖(mqcc)",
+    "r_help": "help(mqcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tmqcc 函數用於執行多變量統計質量控制和一般化方差 |S|\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(mqcc, package = qcc) 和 help(GVcontrol, package = IAcsSPCR)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以通過選擇 qcc 包然後選擇鍋爐數據集來加載 qcc 包中的鍋爐數據集\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t從鍋爐數據集中選擇變量，保持所有設置為默認，然後運行對話框\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t您還可以使用名為 widgets_mqcc.xlsx 的示例數據集文件。通過文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要繪製一般化方差 |S|，數據集必須有一列子組號 - 否則將無法繪製\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t請參閱 qcc 教程 https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

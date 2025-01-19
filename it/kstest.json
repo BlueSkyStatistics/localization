@@ -1,0 +1,10 @@
+{
+  "title": "Test di Kolmogorov-Smirnov di Normalità",
+  "navigation": "Test di Normalità di Kolmogorov-Smirnov",
+  "trg": "Variabili target",
+  "help": {
+    "title": "Test di Kolmogorov-Smirnov di Normalità",
+    "r_help": "help(ks.test, package=stats)",
+    "body": "\n<b>Descrizione</b></br>\nTest di Kolmogorov-Smirnov per la conformità a una distribuzione normale \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code>\nks.test(x, y =\"pnorm\")\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: Un vettore numerico di valori dei dati.\n</li>\n<li>\ny:\tuna stringa carattere che nomina una funzione di distribuzione cumulativa o una funzione di distribuzione cumulativa effettiva come pnorm. Solo le CDF continue sono valide..\n</li>\n</ul>\n<b>Dettagli</b></br>\nIn questo caso, viene eseguito un test a campione singolo dell'ipotesi nulla che la funzione di distribuzione che ha generato x sia la distribuzione y (cioè la distribuzione normale).<br/>\nLa presenza di legami genera sempre un avviso, poiché le distribuzioni continue non li generano. Se i legami sono derivati da arrotondamenti, i test possono essere approssimativamente validi, ma anche modesti arrotondamenti possono avere un effetto significativo sulla statistica calcolata.<br/>\nI valori mancanti vengono silenziosamente omessi da x. </br>\n<b>Valore</b><br/>\nUna lista con classe “test” contenente i seguenti componenti:<br/>\n<ul>\n<li>\nstatistic: il valore della statistica del test.\n</li>\n<li>\np.value: valore p del test.\n</li>\n</ul>\n<b>Pacchetto</b></br>\nstats</br>\n<b>Aiuto</b></br>\nhelp(ks.test, package =stats)\n"
+  }
+}

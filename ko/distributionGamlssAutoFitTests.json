@@ -1,0 +1,15 @@
+{
+  "title": "다양한 모수적 gamlss.family 분포 적합 (R 패키지 gamlss에서)",
+  "navigation": "gamlss로 분포 적합",
+  "variableSelcted": "분포를 포함하는 변수를 선택하세요",
+  "distType": "시도할 gamlss.family 분포의 유형",
+  "tryGamlssChk": "체크하면 (대량 데이터 포인트의 경우 느릴 수 있음), 모델 적합에 실패할 경우 gamlss()를 대신 시도합니다.",
+  "traceFitProcessingChk": "처리 중 더 많은 정보를 표시합니다",
+  "additionalDetailChk": "모든 성공적인 적합 테스트의 AIC 점수와 모든 실패한 적합 테스트의 목록을 표시합니다",
+  "wormPlotChk": "웜 플롯 그래프를 그립니다",
+  "help": {
+    "title": "다양한 모수적 gamlss.family 분포 적합",
+    "r_help": "help(fitDist , package = gamlss)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tfitDist() 함수는 gamlssML() 함수를 사용하여 인수 type에 의해 지정된 모든 관련 모수적 gamlss.family 분포를 단일 데이터 벡터(설명 변수가 없음)에 적합합니다. 최종 주변 분포는 패널티 k가 있는 일반화된 Akaike 정보 기준에 의해 선택됩니다. 기본값은 k=2 즉 AIC로, 이는 \"최고의\" 분포가 고전적인 AIC에 따라 선택됨을 의미합니다. k는 log(n)과 같은 다른 값으로 설정할 수 있습니다(BIC는 현재 대화 상자에서 제공되지 않음).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(fitDist , package = gamlss)를 사용하고 웜 플롯에 대해서는 help(wp , package = gamlss)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t다음은 다양한 유형 인수입니다:\n\t\t\t\t<br/>\n\t\t\t\trealAll: 모든 gamlss.family (현재 대화 상자에서 제공되지 않음) 실선에서 정의된 연속 분포, 즉 realline 및 실양수선 즉 realplus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\trealline: gamlss.family 연속 분포: \"NO\", \"GU\", \"RG\", \"LO\", \"NET\", \"TF\", \"TF2\", \"PE\", \"PE2\", \"SN1\", \"SN2\", \"exGAUS\", \"SHASH\", \"SHASHo\", \"SHASHo2\", \"EGB2\", \"JSU\", \"JSUo\", \"SEP1\", \"SEP2\", \"SEP3\", \"SEP4\", \"ST1\", \"ST2\", \"ST3\", \"ST4\", \"ST5\", \"SST\", \"GT\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\trealplus: 양의 실선에서의 gamlss.family 연속 분포: \"EXP\", \"GA\", \"IG\", \"LOGNO\", \"LOGNO2\", \"WEI\", \"WEI2\", \"WEI3\", \"IGAMMA\", \"PARETO2\", \"PARETO2o\", \"GP\", \"BCCG\", \"BCCGo\", \"exGAUS\", \"GG\", \"GIG\", \"LNO\", \"BCTo\", \"BCT\", \"BCPEo\", \"BCPE\", \"GB2\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\treal0to1: 0에서 1까지의 gamlss.family 연속 분포: \"BE\", \"BEo\", \"BEINF0\", \"BEINF1\", \"BEOI\", \"BEZI\", \"BEINF\", \"GB1\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tcounts: 카운트에 대한 gamlss.family 분포: \"PO\", \"GEOM\", \"GEOMo\", \"LG\", \"YULE\", \"ZIPF\", \"WARING\", \"GPO\", \"DPO\", \"BNB\", \"NBF\", \"NBI\", \"NBII\", \"PIG\", \"ZIP\", \"ZIP2\", \"ZAP\", \"ZALG\", \"DEL\", \"ZAZIPF\", \"SI\", \"SICHEL\", \"ZANBI\", \"ZAPIG\", \"ZINBI\", \"ZIPIG\", \"ZINBF\", \"ZABNB\", \"ZASICHEL\", \"ZINBF\", \"ZIBNB\", \"ZISICHEL\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tbinom: 이항형 데이터에 대한 gamlss.family 분포: \"BI\", \"BB\", \"DB\", \"ZIBI\", \"ZIBB\", \"ZABI\", \"ZABB\"\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tfitDist() 함수는 다양한 모델을 적합하기 위해 gamlssML() 함수를 사용합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">분포 적합에 대한 좋은 개요는 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best를 참조하세요.</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t-x-\n\t\t\t"
+  }
+}

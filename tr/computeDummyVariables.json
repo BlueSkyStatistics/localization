@@ -1,0 +1,20 @@
+{
+  "title": "Sahte Değişken(ler) Hesapla",
+  "navigation": "Sahte Kod",
+  "label1": "Sahte kodlanacak değişkenleri girin. Yeni değişkenler, \"değişken adı_seviye adı\" formatında adlandırılır. Varsayılan olarak en sık görülen seviye referans olarak kabul edilir.",
+  "target": "Sahte kodlanacak değişken(ler)i seçin",
+  "label2": "Referans olarak kabul edilecek seviye",
+  "MostFrequent": "En sık görülen değer",
+  "first": "İlk değer",
+  "None": "Tüm seviyeleri koru (istatistiksel modeller için önerilmez) A.k.a tek sıcak kodlama",
+  "prefix": "Önek",
+  "txt1": "Bir önek/son ek girin",
+  "label3": "Diğer seçenekler",
+  "chk3": "Orijinal değişkenleri kaldır",
+  "chk4": "Eksik değerler için sahte değişkenler oluştur",
+  "help": {
+    "title": "Sahte Değişken(ler) Hesapla",
+    "r_help": "help(dummy_cols, package =fastDummies)",
+    "body": "\n<b>Açıklama</b></br>\nSahte Değişkenleri Hesapla\n<br/>\n<b>Kullanım</b>\n<br/>\n<code>\ndummy_cols(.data, select_columns = NULL, remove_first_dummy = FALSE,\n    remove_most_frequent_dummy = FALSE, ignore_na = FALSE,\n    split = NULL, remove_selected_columns = FALSE)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\n.data:\tSahte sütunlar oluşturmak istediğiniz veri seti ile bir nesne.\n</li>\n<li>\nselect_columns:\tSahte değişkenler oluşturmak istediğiniz sütun adlarının vektörü. NULL (varsayılan) ise, tüm karakter ve faktör sütunlarını kullanır.\n</li>\n<li>\nremove_first_dummy: Her değişkenin ilk sahte değişkenini kaldırır, böylece yalnızca n-1 sahte değişken kalır. Bu, modellerde çoklu bağlantı sorunlarını önler.\n</li>\n<li>\nremove_most_frequent_dummy: En sık gözlemlenen kategoriyi kaldırır, böylece yalnızca n-1 sahte değişken kalır. En sık olanlar arasında bir eşitlik varsa, alfabetik sıraya göre ilk olanı kaldırır.\n</li>\n<li>\nignore_na: Eğer TRUE ise, sütundaki herhangi bir NA değerini göz ardı eder. Eğer FALSE (varsayılan) ise, NA değeri olan herhangi bir satırda 1 değerini verecek şekilde bir sahte sütun oluşturur.\n</li>\n<li>\nsplit: Bir hücrede birden fazla kategori varsa bir sütunu ayırmak için bir dize. Örneğin, bir değişken Evcil Hayvanlar ise ve satırlar \"kedi\", \"köpek\" ve \"kaplumbağa\" ise, her bir evcil hayvan kendi sahte sütununu oluşturur. Eğer bir satır \"kedi, köpek\" ise, o zaman bir ayırma değeri \",\" bu satır hem kedi hem de köpek sahte sütunları için 1 değerine sahip olacaktır.\n</li>\n<li>\nremove_selected_columns: Eğer TRUE (varsayılan değil) ise, sahte sütunları oluşturmak için kullanılan sütunları kaldırır.\n</li>\n<li>\nDeğer: Girdi verisi türüne bağlı olarak aynı sayıda satıra sahip bir data.frame (veya tibble veya data.table) ve yeni oluşturulan sahte sütunlar ile birlikte orijinal sütunlar.\n</li>\n<li>\nAyrıca Bakınız\ndummy_rows Sahte satırlar oluşturmak için\n</li>\n<li>\nDiğer sahte fonksiyonlar: dummy_columns, dummy_rows\n</li>\n</ul>\n<b>Örnekler</b><br/>\n<code> \ncrime <- data.frame(city = c(\"SF\", \"SF\", \"NYC\"),\n    year = c(1990, 2000, 1990),\n    crime = 1:3)</br>\ndummy_cols(crime)</br>\n# Yıl sütununu dahil et\ndummy_cols(crime, select_columns = c(\"city\", \"year\"))</br>\n# Oluşturulan her sahte sütun çifti için ilk sahte değişkeni kaldır</br>\ndummy_cols(crime, select_columns = c(\"city\", \"year\"),\n    remove_first_dummy = TRUE)</br>\n</code> <br/>\n<b>Paket</b></br>\nfastDummies</br>\n<b>Yardım</b></br>\nhelp(dummy_cols, package =fastDummies)\n"
+  }
+}

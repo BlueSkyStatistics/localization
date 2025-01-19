@@ -1,16 +1,17 @@
 {
   "title": "將日期變數轉換為字符",
-  "navigation": "日期到字符",
-  "label1": "選擇一個後綴或前綴用於轉換的變數",
+  "navigation": "日期轉字符",
+  "label1": "選擇轉換變數的後綴或前綴",
   "suffix": "後綴",
   "prefix": "前綴",
   "prefixOrSuffix": "輸入前綴或後綴",
   "Destination": "選擇要轉換為字符的日期變數",
   "DateFormat": "選擇要轉換的日期格式",
-  "TimeZone": "選擇一個時區（默認 - 未選擇任何內容為計算機的本地時區）",
+  "TimeZone": "選擇時區（默認 - 未選擇的情況下為PC的本地時區）",
+  "advanced_lbl" : "進階",
   "help": {
     "title": "將日期轉換為字符",
     "r_help": "help(strftime, package=\"base\")",
-    "body": "\n<b>描述</b></br>\n將日期（posixct 和日期類）轉換為字符 - 控制日期顯示的格式。您指定輸入字符串應生成的格式，即年/月/日或月-日=年等。\n上述函數在基礎包中內部調用 strftime。我們擴展了 strftime 以支持多個變數。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n​data: 資料集名稱\n</li>\n<li>\nvarNames: 需要轉換為字符的 posixct 和日期類變數​\n</li>\n<li>\ndateFormat: 字符串。格式方法的默認值是 \"%Y-%m-%d %H:%M:%S\"，如果任何元素有非午夜的時間組件，其他情況下為 \"%Y-%m-%d\"。如果設置了 options(\"digits.secs\")，將打印指定數量的秒數\n</li>\n<li>\ntimezone: 指定用於轉換的時區的字符串。系統特定（見 as.POSIXlt），但 \"\" 是當前時區，\"GMT\" 是 UTC。無效值通常被視為 UTC，在某些平台上會發出警告。\n</li>\n<li>\nprefixOrSuffix: 為新字符串變數指定前綴或後綴。取 c(\"前綴\") 或 c(\"後綴\")。使用此前綴/後綴創建的新變數與原始變數名稱。\n</li>\n</ul>\n<b>包</b></br>\n基礎</br>\n<b>幫助</b></br>\nhelp(strftime)    \n"
+    "body": "\n<b>描述</b></br>\n將日期（posixct和date類）轉換為字符 - 控制日期顯示的格式。您指定作為輸入的字符串生成格式，即年/月/日或月-日=年等。\n上述函數在內部調用base包中的strftime。我們已擴展strftime以支持多個變數。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"suffix\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\n​data: 數據集名稱\n</li>\n<li>\nvarNames: 需要轉換為字符的posixct和date類變數​\n</li>\n<li>\ndateFormat: 字符串。格式方法的默認值是 \"%Y-%m-%d %H:%M:%S\" 如果任何元素有非午夜的時間組件，否則為 \"%Y-%m-%d\"。如果設置了options(\"digits.secs\")，則將為秒打印指定數量的數字\n</li>\n<li>\ntimezone: 指定用於轉換的時區的字符串。系統特定（見as.POSIXlt），但\"\"為當前時區，\"GMT\"為UTC。無效值通常被視為UTC，在某些平台上會發出警告。\n</li>\n<li>\nprefixOrSuffix: 為新字符串變數指定前綴或後綴。接受c(\"prefix\")或c(\"suffix\")。新變數將以此前綴/後綴命名原始變數名稱。\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>幫助</b></br>\nhelp(strftime)    \n"
   }
 }

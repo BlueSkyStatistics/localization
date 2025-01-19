@@ -1,0 +1,18 @@
+{
+  "title": "Crea un Design di Latin Hypercube (per Fattori Quantitativi)",
+  "navigation": "Crea un Design di Latin Hypercube (Quantitativo)",
+  "selectedvars": "Seleziona variabili",
+  "datasetname": "Nome del design",
+  "lblheading": "Dimensione e randomizzazione",
+  "numOfRuns": "Numero di esecuzioni",
+  "numOfDeciPlaces": "Numero di decimali",
+  "lbl1": "Potresti non dover modificare le impostazioni di randomizzazione",
+  "randomseeds": "Seed per la randomizzazione",
+  "randomizationChk": "Randomizza la generazione del design",
+  "lhsDesignType": "design di campionamento latin hypercube (controlla i pacchetti lhs o DiceDesign per altri tipi)",
+  "help": {
+    "title": "Crea un Design di Latin Hypercube (per Fattori Quantitativi)",
+    "r_help": "help(lhs.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tLa funzione lhs.design per accedere ai design di campionamento latin hypercube dal pacchetto lhs o ai design di riempimento dello spazio dal pacchetto DiceDesign, che sono utili per fattori quantitativi con molti livelli possibili. In particolare, possono essere utilizzati in esperimenti al computer. La maggior parte dei design sono campioni casuali.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(lhs.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare il file di dataset di esempio chiamato factor_grid__latin_hypercube_Design.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+  }
+}

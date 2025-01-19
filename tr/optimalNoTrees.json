@@ -1,0 +1,16 @@
+{
+  "title": "Optimal Ağaç Sayısı",
+  "navigation": "Optimize",
+  "dependentvar": "Bağımlı değişken",
+  "independentvars": "Bağımsız değişken(ler)",
+  "label1": "Ağaç simülasyon ayarları",
+  "startval": "Başlangıç değeri",
+  "endval": "Bitiş değeri",
+  "stepval": "Adım değeri",
+  "mtry": "mtry",
+  "help": {
+    "title": "Optimal Ağaç Sayısı",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>Açıklama</b></br>\nVarsayılan mtry değeri ile başlayarak, randomForest için ntree'nin (büyütülecek ağaç sayısı) optimal değerini (Out-of-Bag hata tahmini açısından) arayın. BSkyMultiRandomForest fonksiyonu, aşağıda tanımlanan argümanlarla randomForest fonksiyonunu çağırır.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx : bir veri çerçevesi veya tahmin edicilerin bir matrisidir, ya da uyum sağlanacak modeli tanımlayan bir formüldür (print yöntemi için, bir randomForest nesnesi).\n</li>\n<li>\ny :  Bir yanıt vektörü. Eğer bir faktörse, sınıflandırma varsayılır, aksi takdirde regresyon varsayılır. Atlandığında, randomForest denetimsiz modda çalışacaktır.\n</li>\n<li>\nstartval : randomForest() içindeki ntree argümanı için başlangıç değeri.\n</li>\n<li>\nendval : randomForest() içindeki ntree argümanı için bitiş değeri.\n</li>\n<li>\nstepval : startval'in her yinelemede endval değerine ulaşana kadar artırılacağı sayıdır.\n</li>\n<li>\nmtry : Her bölünmede aday olarak rastgele örneklenen değişken sayısı. Sınıflandırma (x'teki değişken sayısı p olduğunda sqrt(p)) ve regresyon (p/3) için varsayılan değerlerin farklı olduğunu unutmayın.\n</li>\n</ul>\n<b>Değer</b><br/>\nOptimal ağaç sayısını yazdırır. Ayrıca ntree ve karşılık gelen Out-of-Bag hata ile bir tablo gösterir.<br/>\n<b>Paket</b></br>\nrandomForest​;BlueSky</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog penceresinin sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(randomForest,package='randomForest')\n                "
+  }
+}

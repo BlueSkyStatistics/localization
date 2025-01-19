@@ -1,16 +1,16 @@
 {
-  "title": "合併最少或最多常見的因子水平",
+  "title": "合併最少或最多的常見因素級別",
   "navigation": "自動合併為其他",
-  "target": "選擇變數以合併稀疏水平",
-  "label1": "包含合併水平的新類別的預設名稱為\"其他\"。指定權重是可選的。您可以用合併的水平覆蓋現有變數，或將結果保存到新變數中。",
-  "other": "合併水平的名稱",
+  "target": "選擇變數以合併稀疏級別",
+  "label1": "合併級別的新類別的默認名稱為「其他」。指定權重是可選的。您可以用合併的級別覆蓋現有變數，或將結果保存到新變數中",
+  "other": "合併級別的名稱",
   "label3": "使用的方法",
-  "defaultOption": "將最少頻率的水平合併為\"其他\"，同時確保\"其他\"是最小的水平",
-  "categories": "保留最常見的(+n)/最少見的(-n)類別",
-  "category": "輸入類別的數量",
-  "proportion1": "保留至少出現(+ prop)/最多出現(- prop)比例的類別",
+  "defaultOption": "將最少出現的級別合併為「其他」，同時確保「其他」是最小的級別",
+  "categories": "保留最常見的 (+n)/最不常見的 (-n) 類別",
+  "category": "輸入類別數量",
+  "proportion1": "保留至少出現 (+ prop)/最多出現 (- prop) 比例的類別",
   "proportion": "輸入比例",
-  "dropOption": "輸入要替換為\"其他\"的水平，例如 level1,level2,level3",
+  "dropOption": "輸入要替換為「其他」的級別，例如 level1,level2,level3",
   "varweights": "變數權重",
   "label2": "將結果保存到新變數或覆蓋現有變數",
   "rd3": "指定後綴（將創建一個帶有後綴的新變數）",
@@ -22,6 +22,6 @@
   "help": {
     "title": "合併為其他",
     "r_help": "help(fct_lump, package =forcats)",
-    "body": "\n<b>描述</b></br>\n將最少或最多常見的因子水平合併為\"其他\"水平。包含合併水平的新類別的預設名稱為\"其他\"。指定權重是可選的。您可以用合併的水平覆蓋現有變數，或將結果保存到新變數中。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"其他\", ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"其他\",ties.method =\"min\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nf: 一個因子。如果 n 和 prop 都缺失，fct_lump 將最少頻率的水平合併為\"其他\"，同時確保\"其他\"仍然是最小的水平。這在與 fct_inorder() 結合使用時特別有用。\n</li>\n<li>\nn: 正的 n 保留最常見的 n 值。負的 n 保留最少見的 -n 值。如果有平局，您將至少獲得 abs(n) 值。\n</li>\n<li>\nprop: 正的 prop 保留至少 prop 次出現的值。負的 prop 保留最多 -prop 次出現的值。\n</li>\n<li>\nw: 一個可選的數值向量，給出每個值（而不是水平）在 f 中的頻率權重。\n</li>\n<li>\nother_level: 用於\"其他\"值的水平值。始終放在水平的末尾。\n</li>\n<li>\nties.method: 一個字符字符串，指定如何處理平局。有關詳細信息，請參見 rank()。\n</li>\n<li>\nmin: 保留至少出現 min 次的值。\n</li>\n</ul>\n<b>包</b></br>\nforcats</br>\n<b>幫助</b></br>\n在 BlueSky Statistics R 語法編輯器中輸入以下行</br>\nhelp(fct_lump, package =forcats)\n"
+    "body": "\n<b>描述</b></br>\n將最少或最多的常見因素級別合併為「其他」級別。合併級別的新類別的默認名稱為「其他」。指定權重是可選的。您可以用合併的級別覆蓋現有變數，或將結果保存到新變數中\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_lump(f, n, prop, w = NULL, other_level = \"Other\",ties.method = c(\"min\", \"average\", \"first\", \"last\", \"random\", \"max\"))<br/>\ndataset$col1<-fct_lump(f =dataset$col1,w =dataset$col2,other_level =\"other\",ties.method =\"min\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nf: 一個因素。如果 n 和 prop 都缺失，fct_lump 將最少出現的級別合併為「其他」，同時確保「其他」仍然是最小的級別。這在與 fct_inorder() 結合使用時特別有用。\n</li>\n<li>\nn: 正數 n 保留最常見的 n 個值。負數 n 保留最不常見的 -n 個值。如果有平局，您將獲得至少 abs(n) 個值。\n</li>\n<li>\nprop: 正數 prop 保留至少出現 prop 次的值。負數 prop 保留最多出現 -prop 次的值。\n</li>\n<li>\nw: 一個可選的數值向量，給出每個值（而不是級別）在 f 中的頻率權重。\n</li>\n<li>\nother_level: 用於「其他」值的級別值。始終放在級別的末尾。\n</li>\n<li>\nties.method: 一個字符字符串，指定如何處理平局。詳情請參見 rank()。\n</li>\n<li>\nmin: 保留至少出現 min 次的值。\n</li>\n</ul>\n<b>包</b></br>\nforcats</br>\n<b>幫助</b></br>\n在 BlueSky Statistics R 語法編輯器中輸入以下行</br>\nhelp(fct_lump, package =forcats)\n"
   }
 }

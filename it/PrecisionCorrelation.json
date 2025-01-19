@@ -1,0 +1,15 @@
+{
+  "title": "Dimensione del campione, Precisione di una correlazione",
+  "navigation": "Correlazione",
+  "howtouse": "Specifica la dimensione del campione o la larghezza dell'intervallo di confidenza e l'altro sarà calcolato",
+  "n": "Dimensione del campione",
+  "width": "Larghezza dell'intervallo di confidenza",
+  "corr": "Correlazione (-1 a 1)",
+  "conflevel": "Livello di confidenza (0-1)",
+  "corrtype": "Tipo di correlazione",
+  "help": {
+    "title": "Dimensione del campione, Precisione di una correlazione",
+    "r_help": "help(prec_cor, package ='presize')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per una correlazione di Pearson, Spearman o Kendall basata sulla larghezza dell'intervallo di confidenza. Calcola la dimensione del campione o la larghezza dell'intervallo di confidenza quando l'utente specifica l'altro.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio\n<br/><br/>\n<b>Larghezza dell'intervallo di confidenza:</b> Specifica la larghezza dell'intervallo di confidenza desiderata. La larghezza di un intervallo di confidenza è una misura di precisione di una stima ed è il limite superiore meno il limite inferiore.\n<br/><br/>\n<b>Correlazione:</b> Specifica il valore di correlazione atteso\n<br/><br/>\n<b>Livello di confidenza:</b> Specifica il livello desiderato dell'intervallo di confidenza\n<br/><br/>\n<b>Tipo di correlazione:</b> Specifica il tipo di correlazione che si sta calcolando\n<br/><br/>\n<b>Pacchetti R richiesti:</b> presize\n\t\t\t"
+  }
+}

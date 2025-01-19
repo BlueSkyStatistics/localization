@@ -1,21 +1,21 @@
 {
-  "title": "Reordenar niveles de factores por conteo",
-  "navigation": "Reordenar por conteo",
-  "target": "Seleccione las variables de factor para reordenar",
-  "label1": "Seleccione las variables de factor para reordenar por conteo. Puede sobrescribir variables existentes o crear nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo agregado a los nombres existentes.",
-  "label2": "Guarde nuevos niveles en nuevas variables o sobrescriba variables existentes",
-  "rd3": "Especifique un sufijo (se creará una nueva variable con el sufijo)",
+  "title": "Reordenar Niveles de Factores por Conteo",
+  "navigation": "Reordenar por Conteo",
+  "target": "Seleccionar variables de factores para reordenar",
+  "label1": "Seleccione las variables de factores para reordenar por conteo. Puede sobrescribir variables existentes o crear nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo añadido a los nombres existentes.",
+  "label2": "Guardar nuevos niveles en nueva(s) variable(s) o sobrescribir variable(s) existente(s)",
+  "rd3": "Especificar un sufijo (Se creará una nueva variable con el sufijo)",
   "txt3": "Ingrese un sufijo",
-  "rd2": "Especifique un prefijo (se creará una nueva variable con el prefijo)",
+  "rd2": "Especificar un prefijo (Se creará una nueva variable con el prefijo)",
   "txt4": "Ingrese un prefijo",
   "rd1": "Sobrescribir variables existentes",
-  "label3": "Especifique un orden",
+  "label3": "Especificar un orden",
   "Descending": "En orden descendente por conteo",
   "Ascending": "En orden ascendente por conteo",
   "ordered": "Hacer un factor ordenado (ordinal)",
   "help": {
-    "title": "Reordenar variables alfabéticamente",
-    "r_help": "ayuda(ordenar)",
-    "body": "\n<b>Descripción</b></br>\nReordenar variables en el conjunto de datos en orden alfabético. Usamos la función de ordenación para ordenar los nombres de las columnas/variables en el conjunto de datos y la función de selección en el paquete dplyr para seleccionar los nombres de las columnas en el orden alfabético correcto.\n<br/>\n<b>Uso</b>\n<br/>\n<code>\n##Reordenando alfabéticamente (A-Z)\nDataset_name <- Dataset_name %>% select(sort(names(.)))\n##Reordenando alfabéticamente (Z-A)\nDataset_name <- Dataset_name %>% select(rev(sort(names(.))))\n</code><br/>\n<b>Argumentos</b><br/>\nNinguno<br/>\n<b>Paquete</b></br>\ndplyr</br>\n<b>Ayuda</b></br>\nayuda(select, package='dplyr')<br/>\nayuda(sort)"
+    "title": "Reordenar Variables Alfabéticamente",
+    "r_help": "ayuda(sort)",
+    "body": "\n<b>Descripción</b></br>\nReordenar variables en el conjunto de datos en orden alfabético. Usamos la función de ordenamiento para ordenar los nombres de las columnas/variables en el conjunto de datos y la función select en el paquete dplyr para seleccionar los nombres de las columnas en el orden alfabético correcto \n<br/>\n<b>Uso</b>\n<br/>\n<code> \n##Reordenando alfabéticamente (A-Z)\nNombre_del_conjunto_de_datos <- Nombre_del_conjunto_de_datos %>%   select(sort(names(.)))\n##Reordenando alfabéticamente (Z-A)\nNombre_del_conjunto_de_datos <- Nombre_del_conjunto_de_datos %>%  select(rev(sort(names(.))))\n</code> <br/>\n<b>Argumentos</b><br/>\nNinguno<br/>\n<b>Paquete</b></br>\ndplyr</br>\n<b>Ayuda</b></br>\nayuda(select, paquete='dplyr')<br/>\nayuda(sort)\n"
   }
 }

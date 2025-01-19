@@ -1,23 +1,23 @@
 {
-  "title": "累积和图",
-  "navigation": "累积和图",
+  "title": "Cusum 图",
+  "navigation": "Cusum 图",
   "summaryPrintChk": "除了图表外打印摘要",
-  "label2": "两个选项 - 要么选择要绘制的变量（如有需要，还可以选择分组变量），要么选择数据集中已分组的变量",
+  "label2": "两个选项 - 要么选择一个变量进行图表（如有需要，还可以选择一个分组变量），要么选择数据集中已分组的变量进行图表",
   "selectVariableRad": "选项 1：从需要分组的数据集中选择一个变量",
-  "variableSelcted": "要绘制的变量（观察数据）",
-  "groupingNeededChk": "xbar、R 和 S 图所需 - 用于分组数据的变量",
+  "variableSelcted": "要图表的变量（观察数据）",
+  "groupingNeededChk": "xbar、R 和 S 图表所需 - 用于分组数据的变量",
   "groupingVariable": "分组变量",
-  "variableControlLimits": "如果在分组前有任何行需要丢弃，例如指定为 1:25 或 1,4,5,7:12",
+  "variableControlLimits": "在对变量控制限进行分组之前，如果有任何行需要丢弃，例如指定为 1:25 或 1,4,5,7:12",
   "displayGroupsChk": "在数据集 UI 网格上显示分组",
-  "selectDatasetRad": "选项 2：如果已分组，则从数据集中选择变量",
-  "variablelistSelcted": "选择一个或多个分组变量（观察数据）进行绘图",
-  "decisionInterval": "决策区间 - 累积和失控时的摘要统计量的标准误差数量",
+  "selectDatasetRad": "选项 2：如果已经分组，则从数据集中选择变量",
+  "variablelistSelcted": "选择一个或多个分组变量（观察数据）进行图表",
+  "decisionInterval": "决策区间 - 累积和失控时摘要统计量的标准误差数量",
   "seShift": "偏移 - 在过程中检测到的偏移量，以摘要统计量的标准误差为单位",
-  "rowsTobeUsed": "用于绘图的分组行（例如，指定为 1:25 或 1,4,5,7:12）",
-  "rowsTobeUsedAsNewData": "新数据 - 用作绘图的新数据的分组行（例如，指定为 1:25 或 1,4,5,7:12） - 新数据用于绘图，但不包括在计算中",
+  "rowsTobeUsed": "用于图表的分组行（例如，指定为 1:25 或 1,4,5,7:12）",
+  "rowsTobeUsedAsNewData": "新数据 - 用作新数据进行图表的分组行（例如，指定为 1:25 或 1,4,5,7:12） - 新数据用于绘图，但不包括在计算中",
   "help": {
-    "title": "累积和图",
-    "r_help": "帮助(qcc, 包 = qcc)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tqcc 函数用于执行统计质量控制并绘制 Shewhart 图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R 帮助(qcc, 包 = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以通过选择 qcc 包并选择 pistonrings 数据集，通过加载数据集菜单加载名为 pistonrings 的数据集\n\t\t\t\t<br/>\n\t\t\t\t选择选项 1，直径到变量（观察..），样本到分组变量，\n\t\t\t\t<br/>\n\t\t\t\t在要使用的分组行中输入 1:25，在新数据中输入 30:40\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t请访问 https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html 查看 qcc 教程\n\t\t\t\t<br/>\n\t\t\t"
+    "title": "Cusum 图",
+    "r_help": "help(qcc, package = qcc)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tqcc 函数用于执行统计质量控制并绘制 Shewhart 图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以通过选择 qcc 包并选择 pistonrings 数据集的加载数据集菜单加载名为 pistonrings 的数据集\n\t\t\t\t<br/>\n\t\t\t\t选择选项 1，直径为变量（观察..），样本为分组变量，\n\t\t\t\t<br/>\n\t\t\t\t在要使用的分组行中输入 1:25，在新数据中输入 30:40\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t请访问 https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html 以查看 qcc 教程\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

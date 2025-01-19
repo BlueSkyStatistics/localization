@@ -1,0 +1,16 @@
+{
+  "title": "평가 척도 모델",
+  "navigation": "평가 척도 모델",
+  "modelname": "모델 이름 입력",
+  "destinationvars": "목적 변수(들)",
+  "estimationlbl": "추정",
+  "rad1": "CML 추정 사용",
+  "chk1": "표준화된 오차 계산",
+  "chk2": "매개변수를 합계(0)로 정규화",
+  "rad2": "MML 추정 사용",
+  "help": {
+    "title": "평가 척도 모델",
+    "r_help": "help(RSM, package='eRm')",
+    "body": "\n            <b>설명</b>\n            <br/>\n            평가 척도 모델에 대한 매개변수 추정치를 생성합니다.\n            <br/><br/>\n            CML 추정의 경우, polychotomous 항목 응답에 대한 평가 척도 모델의 매개변수 추정치를 계산하기 위해 eRm::RSM을 호출합니다.\n            <br/><br/>\n            MML 추정의 경우, 아래에 적절한 매개변수를 사용하여 tam.mml을 호출합니다.\n            <br/><br/>\n            <b>CML 추정 사용법</b>\n            <br/>\n            <code>\n            eRm::RSM(X,se=FALSE,sum0=FALSE) \n            </code>  \n            <br/><br/>\n            <b>인수</b>\n            <br/>                      \n            <ul>\n            <li>\n            X:  0/1 데이터 행렬 또는 데이터 프레임; 행은 개인을 나타내고, 열은 항목을 나타냅니다. 누락된 값은 NA로 삽입됩니다.\n            </li>\n            <li>\n            W:  Rasch 모델의 설계 행렬. 생략하면 함수가 W를 자동으로 계산합니다.\n            </li>\n            <li>\n            se: TRUE인 경우, 표준 오차가 계산됩니다.\n            </li>\n            <li>\n            sum0: TRUE인 경우, 적절한 W를 지정하여 매개변수를 합계-0으로 정규화합니다. FALSE인 경우, 첫 번째 매개변수는 0으로 제한됩니다.\n            </li>\n            <li>\n            etaStart: eta 매개변수의 시작 값 벡터를 지정할 수 있습니다. 생략하면 0 벡터가 사용됩니다.\n            </li>\n            </ul>\n            <br/><br/><br/>\n            <b>MML 추정 사용법</b>\n            <br/>\n            <code>\n            tam.mml(resp,irtmodel=\"RSM\",verbose=FALSE )\n            </code>\n            <br/><br/>\n            <b>인수</b>\n            <br/>             \n            <ul>\n            <li>\n            resp: k=0,...,K의 polytomous 항목 응답이 있는 데이터 프레임. 누락된 응답은 NA로 선언해야 합니다.\n            </li>\n            <li>\n            irtmodel: 고정 항목 기울기(tam.mml) 옵션에는 PCM(부분 신용 모델), PCM2(ConQuest 매개변수화 'item+item*step' 및 RSM(평가 척도 모델; ConQuest 매개변수화 'item+step')이 포함됩니다.\n            <br/>\n            추정된 항목 기울기(단지 tam.mml.2pl에서만 사용 가능) 옵션은 2PL(모든 항목 범주의 기울기가 추정됨; 명목 항목 반응 모델), GPCM(각 항목이 차원당 하나의 기울기 매개변수를 갖는 일반화된 부분 신용 모델) 및 2PL.groups(항목의 하위 집합이 동일한 항목 기울기 추정치를 가짐) 및 일반화된 부분 신용 모델(GPCM.design, 예제 참조)에서 항목 기울기에 대한 설계 행렬 E가 포함됩니다. faceted 디자인을 사용하여 tam.mml.mfr 함수를 사용하여 항목 기울기를 추정할 수 없습니다. 그러나 미리 지정된 설계 행렬을 사용하고 tam.mml.2pl에 일부 제한을 적용하는 것은 쉽습니다.\n            </li>\n            <li>\n            verbose: 반복 중에 출력을 인쇄할지 여부를 나타내는 논리값입니다.\n            </li>\n            </ul>\n            <br/><br/>\n            <b>패키지</b>\n            <br/>\n            TAM, eRm\n            <br/><br/>\n            <b>도움말</b>\n            <br/>\n            help(RSM, package='eRm')\n            <br/>\n            help(tam.mml, package='TAM')\n            <br/>"
+  }
+}

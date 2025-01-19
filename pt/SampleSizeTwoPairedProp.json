@@ -1,0 +1,18 @@
+{
+  "title": "Tamanho da Amostra, Teste de Duas Proporções Emparelhadas",
+  "navigation": "Duas Proporções Emparelhadas",
+  "howtouse": "Para calcular o tamanho da amostra (número de pares): especifique o poder\nPara calcular o poder: especifique o tamanho da amostra (número de pares)",
+  "n": "Tamanho da Amostra (número de pares)",
+  "power": "Poder (0-1)",
+  "pdisc": "Proporção de Pares Discordantes (PD) (0-1)",
+  "pdiff": "Diferença nas Proporções, deve estar entre -PD e PD",
+  "siglevel": "Nível de Significância (0-1)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Duas Proporções Emparelhadas",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste emparelhado de proporções usando o Teste de McNemar. Ele calcula o tamanho da amostra (número de pares) ou poder quando o usuário \nespecifica o outro. Os cálculos usam uma aproximação normal condicional à proporção de pares discordantes. Veja Connor R. J. 1987. Tamanho da amostra para testar \ndiferenças em proporções para o design de amostra emparelhada. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Tamanho da Amostra (número de pares):</b> Especifique o tamanho da amostra no estudo. Este é o número de sujeitos que fornecerão valores de resultado binário em ambos os pontos de tempo\nem um design pré vs pós ou o número de pares em um design de sujeito emparelhado (por exemplo, caso-controle emparelhado).\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira.\n<br/><br/>\n<b>Proporção de Pares Discordantes:</b> Especifique a proporção esperada de pares que discordarão, por exemplo, respostas 'sim'/'não' ou 'não'/'sim', do total de pares\n<br/><br/>\n<b>Diferença nas Proporções:</b> Especifique a diferença nas proporções de resultado (ou seja, proporção que é 'sim') que se deseja detectar. Por exemplo, em um estudo de caso-controle emparelhado,\nesta é a diferença entre a proporção de casos que são 'sim' e a proporção de controles que são 'sim'.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats\n\t\t\t"
+  }
+}

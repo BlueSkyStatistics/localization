@@ -1,0 +1,10 @@
+{
+  "title": "Bölmeyi Kaldır",
+  "navigation": "Bölmeyi Kaldır",
+  "label1": "Bölmeyi kaldırır (veri kümesine bir bölme ayarlandıysa). Diyaloğu yürütmek için sağ üstteki düğmeye tıklayın",
+  "help": {
+    "title": "Bölmeyi Kaldır",
+    "r_help": "",
+    "body": "<b>Açıklama</b></br>\n        Veri kümesindeki bölmeyi kaldırır. Bölmeler, Veri>Grupla>Bölmeyi Ayarla, verileri seçilen faktörlere göre gruplara ayırır, veri kümesi bölündüğünde, seçtiğiniz analiz her bir bölme için bağımsız olarak gerçekleştirilir. Örneğin, bir çapraz tablo analizi veya bir hipotez testi çalıştırırsanız, bu analiz her bir bölme için bağımsız olarak gerçekleştirilir (analizin çıktısı da her bir bölme için ayrı olarak üretilir). \n         <br/>\n                <b>Kullanım</b>\n                <br/>\n                     <code> \n        BSkySetDataFrameSplit(colnames =c(),datasetnameorindex='veri kümesi adı')\n          </code> <br/>\n            <b>Argümanlar</b><br/>\n                 <ul>\n                   <li>\n        col.names: Veri kümesini bölmek istediğiniz sütun adları/değişken adlarıdır, örneğin col.names =c(\"var1\", \"var2\"). Bölmeyi sıfırlamak için c() olarak ayarlayın\n         </li>\n                <li>\n        datasetnameorindex: bu, veri kümesinin adıdır.​\n          </li>\n               \n                </ul>\n            <b>Paket</b></br>\n               Geçerli değil, bu işlev BlueSky paketinde dahili bir işlevdir. Bu işlev esasen veri kümesindeki bölme niteliğini kaldırır. </br>\n                <b>Yardım</b></br>\n        NA\n        "
+  }
+}

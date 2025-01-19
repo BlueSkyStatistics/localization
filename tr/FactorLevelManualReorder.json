@@ -1,0 +1,18 @@
+{
+  "title": "Faktör Düzeylerini Manuel Olarak Yeniden Sıralama",
+  "navigation": "Manuel Olarak Yeniden Sırala",
+  "reordervarlabel": "Yeniden Sıralanacak Faktör",
+  "levelslabel": "Taşımak İçin Faktör Düzeylerini Belirleyin (tırnak içinde): örn. 'düzey 1', 'düzey 2', vb.",
+  "placelabel": "Düzeyleri Nereye Yerleştireceksiniz",
+  "firstlabel": "İlk",
+  "lastlabel": "Son",
+  "newoverwritelabel": "Yeni Oluştur veya Mevcut Değişkeni Üzerine Yaz",
+  "newvarlabel": "Yeni Değişken",
+  "overwritevarlabel": "Değişkeni Üzerine Yaz",
+  "newvarnamelabel": "Yeni Değişken Adı (boşluk / özel karakter yok)",
+  "help": {
+    "title": "Faktör Düzeylerini Manuel Olarak Yeniden Sıralama",
+    "r_help": "help(fct_relevel, package ='forcats')",
+    "body": "\nBu, sıralama düzeninde ilk veya son sıraya yerleştirmek istediğiniz bir veya daha fazla faktör düzeyini belirtmek için kullanılır. Bu, modeller için yararlı olabilir, \nçünkü ilk faktör düzeyi, referans hücre kodlaması kullanıldığında parametre tahminleri için referans grubu haline gelir. Ayrıca, \nkategori görüntülemek için sıralama düzeni kullanıldığından, grafiklerde de yararlı olabilir.\n<br/><br/>\n<b>Yeniden Sıralanacak Faktör:</b> yeniden sıralamak istediğiniz faktör\n<br/><br/>\n<b>Taşımak İçin Faktör Düzeylerini Belirleyin (tırnak içinde): </b> Bunlar yeniden sıralamak istediğiniz faktör düzeyleridir. \nYalnızca mevcut düzeyler yeniden sıralanacaktır. Eğer mevcut olmayan bir düzey belirtirseniz, bir uyarı verilecektir, ancak mevcut düzeyler belirtilen \nşekilde sıralanacaktır. Mevcut düzeyleri ve sıralama düzenini görmek için veri ızgarasının Değişkenler sekmesinde düzeyleri görüntüleyin veya Değişkenler > Faktör Düzeyleri > Göster'e gidin. \nTüm mevcut faktör düzeylerini belirtmenin, düzey yerleştirme için \"İlk\" veya \"Son\" seçseniz de tüm düzeyleri yeniden sıralayacağını unutmayın.\n<br/><br/>\n<b>Düzeyleri Nereye Yerleştireceksiniz:</b> \"İlk\" seçmek, belirtilen düzeyleri sıralama düzeninde ilk sıraya yerleştirecektir. \"Son\" seçmek, belirtilen \ndüzeyleri sıralama düzeninde son sıraya yerleştirecektir.\n<br/><br/>\n<b>Yeni Oluştur veya Mevcut Değişkeni Üzerine Yaz:</b> Yeni bir isimle yeni bir değişken oluşturmak mı yoksa mevcut değişkeni mi üzerine yazmak istediğinizi kontrol eder. \nYeni değişken adı #, $, %, &, (, ), =, vb. gibi özel karakterler içeremez. Alt çizgiler, \"_\", kabul edilir.\n<br/><br/>\n<b>Örnekler:</b>  \"a\", \"b\", \"c\", \"d\" etiketlerine sahip dört düzeyli bir faktörünüz olduğunu varsayın ve sıralama düzeni \"a\",\"b\",\"c\",\"d\" (ilkten sona). \"d\"'yi \nsıralama düzeninde ilk olarak belirtmek, \"d\", \"a\", \"b\", \"c\" sıralama düzenine sahip bir faktör oluşturacaktır. \"b\", \"a\"'yı sıralama düzeninde son olarak belirtmek, \n\"c\",\"d\",\"b\",\"a\" sıralama düzenine sahip bir faktör oluşturacaktır. \"b\",\"c\",\"d\",\"a\" (yani tüm düzeyler) belirtmek, \"b\",\"c\",\"d\",\"a\" sıralama düzenine sahip bir faktör oluşturacaktır.\n<br/><br/>  \n<b>Gerekli R Paketleri:</b> dplyr, forcats\n\t\t\t"
+  }
+}

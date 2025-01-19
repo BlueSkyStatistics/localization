@@ -1,0 +1,19 @@
+{
+  "title": "랜덤 포레스트",
+  "label1": "랜덤 포레스트는 감독 또는 비감독 노드에서 실행될 수 있습니다. 비감독 모드에서 실행하려면 종속 변수를 지정하지 마십시오.",
+  "navigation": "랜덤 포레스트",
+  "modelname": "모델 이름 입력",
+  "dependentvar": "종속 변수",
+  "independentvars": "독립 변수(들)",
+  "ntree": "트리 수",
+  "mtry": "mtry",
+  "proximity": "근접성:",
+  "newds": "근접성을 저장할 데이터셋 이름 지정:",
+  "predictor": "예측된 값 저장:",
+  "newcolname": "예측된 값에 대한 새 열 이름 지정:",
+  "help": {
+    "title": "랜덤 포레스트",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>설명</b></br>\n랜덤 포레스트는 분류 및 회귀를 위한 Breiman의 랜덤 포레스트 알고리즘(원래 Breiman과 Cutler의 Fortran 코드 기반)을 구현합니다. 데이터 포인트 간의 근접성을 평가하기 위해 비감독 모드에서도 사용할 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nrandomForest(x, y=NULL,  ntree=500, importance=FALSE, proximity, ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx : 예측 변수의 데이터 프레임 또는 행렬, 또는 적합할 모델을 설명하는 공식(인쇄 방법의 경우, randomForest 객체).\n</li>\n<li>\ny: 응답 벡터. 만약 팩터라면, 분류가 가정되며, 그렇지 않으면 회귀가 가정됩니다. 생략하면 randomForest는 비감독 모드에서 실행됩니다.\n</li>\n<li>\nntree : 성장할 트리의 수. 모든 입력 행이 최소한 몇 번은 예측되도록 너무 작은 숫자로 설정하지 않아야 합니다.\n</li>\n<li>\nimportance : 예측 변수의 중요성을 평가해야 합니까? \n</li>\n<li>\nproximity : 행 간의 근접성 측정을 계산해야 합니까?\n</li>\n<li>\n... : low level 함수 randomForest.default에 전달될 선택적 매개변수.\n</li>\n</ul>\n<b>값</b><br/>\nrandomForest 클래스의 객체로, 다음 구성 요소가 포함된 목록입니다:<br/>\ncall: randomForest에 대한 원래 호출<br/>\ntype: 회귀, 분류 또는 비감독 중 하나.<br/>\npredicted: OOB 샘플을 기반으로 입력 데이터의 예측 값.<br/>\nimportance:\tnclass + 2(분류의 경우) 또는 2(회귀의 경우) 열이 있는 행렬. 분류의 경우, 첫 번째 nclass 열은 정확도의 평균 감소로 계산된 클래스별 측정값입니다. nclass + 1번째 열은 모든 클래스에 대한 정확도의 평균 감소입니다. 마지막 열은 지니 지수의 평균 감소입니다. 회귀의 경우, 첫 번째 열은 정확도의 평균 감소이고 두 번째 열은 MSE의 평균 감소입니다. importance=FALSE인 경우, 마지막 측정값은 여전히 벡터로 반환됩니다.<br/>\nimportanceSD: 순열 기반 중요성 측정의 “표준 오차”. 분류의 경우, 중요성 행렬의 첫 번째 nclass + 1 열에 해당하는 p x nclass + 1 행렬. 회귀의 경우, 길이 p 벡터.<br/>\nlocalImp: 사례별 중요성 측정이 포함된 p x n 행렬, [i,j] 요소는 j번째 사례에 대한 i번째 변수의 중요성입니다. localImp=FALSE인 경우 NULL.<br/>\nntree: 성장한 트리의 수.<br/>\nmtry: 각 노드에서 분할을 위해 샘플링된 예측 변수의 수.<br/>\nforest: (전체 숲을 포함하는 목록; randomForest가 비감독 모드에서 실행되거나 keep.forest=FALSE인 경우 NULL.<br/>\nerr.rate: (분류 전용) 입력 데이터에 대한 예측의 벡터 오류율, i번째 요소는 i번째까지의 모든 트리에 대한 (OOB) 오류율입니다.<br/>\nconfusion: (분류 전용) 예측의 혼동 행렬(OOB 데이터 기반).<br/>\nvotes: (분류 전용) 각 입력 데이터 포인트에 대해 하나의 행과 각 클래스에 대해 하나의 열이 있는 행렬로, 랜덤 포레스트의 (OOB) ‘투표’의 비율 또는 수를 제공합니다.<br/>\noob.times: 사례가 ‘out-of-bag’(따라서 OOB 오류 추정 계산에 사용됨)된 횟수<br/>\nproximity: randomForest가 호출될 때 proximity=TRUE인 경우, 입력 간의 근접성 측정 행렬(데이터 포인트 쌍이 동일한 단말 노드에 있는 빈도를 기반으로).<br/>\nmse\t: (회귀 전용) 평균 제곱 오차의 벡터: 제곱 잔차의 합을 n으로 나눈 값.<br/>\nrsq\t: (회귀 전용) “유사 R-제곱”: 1 - mse / Var(y).<br/>\ntest: 테스트 세트가 주어지면(xtest 또는 추가적으로 ytest 인수를 통해), 이 구성 요소는 테스트 세트에 대한 해당 예측, err.rate, confusion, votes(분류의 경우) 또는 예측, mse 및 rsq(회귀의 경우)를 포함하는 목록입니다. proximity=TRUE인 경우, 테스트 세트 간의 근접성과 테스트 및 훈련 데이터 간의 근접성을 포함하는 구성 요소도 있습니다.<br/>\n<b>패키지</b></br>\nrandomForest​;BlueSky</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 오버레이의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오.</br>\nhelp(randomForest,package='randomForest')\n                "
+  }
+}

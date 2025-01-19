@@ -1,0 +1,11 @@
+{
+  "title": "데이터셋 전치, 변수 선택",
+  "navigation": "변수 선택",
+  "transposedDataset": "전치된 데이터셋의 이름을 입력하세요",
+  "destination": "전치할 변수를 선택하세요",
+  "help": {
+    "title": "선택한 변수 전치",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>설명</b></br>\n선택한 변수를 전치하고 결과를 새 데이터셋에 저장하는 기본 패키지의 전치 함수를 호출합니다. 전치된 데이터셋을 저장할 데이터셋의 이름을 지정해야 합니다. 새로 전치된 데이터셋은 그리드에 표시됩니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nx: 행렬 또는 데이터프레임입니다.\n</li>\n</ul>\n<b>값</b><br/>\nx의 차원 및 차원 이름에서 적절하게 구성된 행렬과 이름을 제외한 다른 속성이 복사된 행렬입니다.<br/>\n<b>패키지</b></br>\nbase<br/>\n<b>도움말</b></br>\nhelp(t, package='base')\n"
+  }
+}

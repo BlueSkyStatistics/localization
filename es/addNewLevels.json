@@ -2,9 +2,9 @@
   "title": "Agregar Nuevos Niveles",
   "navigation": "Agregar",
   "target": "Variables de factor para agregar nuevos niveles a",
-  "label1": "Agregue nuevos niveles a una o más variables de factor. Guarde los resultados en variables existentes o cree nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo añadido a los nombres existentes.",
-  "newLevels": "Ingrese nuevos niveles entre comillas y separados por comas, por ejemplo, \"nivel1\",\"nivel2\",\"nivel3\"",
-  "label2": "Guardar nuevos niveles en nuevas variables o sobrescribir variables existentes",
+  "label1": "Agregue nuevos niveles a una o más variable(s) de factor. Guarde los resultados en variables existentes o cree nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo añadido a los nombres existentes.",
+  "newLevels": "Ingrese nuevos niveles entre comillas y separados por comas, por ejemplo: \"nivel1\",\"nivel2\",\"nivel3\"",
+  "label2": "Guardar nuevos niveles en nueva(s) variable(s) o sobrescribir variable(s) existentes",
   "rd3": "Especifique un sufijo (se creará una nueva variable con el sufijo)",
   "txt3": "Ingrese un sufijo",
   "rd2": "Especifique un prefijo (se creará una nueva variable con el prefijo)",
@@ -13,6 +13,6 @@
   "help": {
     "title": "Agregar Nuevos Niveles",
     "r_help": "help(fct_expand, package=\"forcats\")",
-    "body": "\n<b>NOTA: NO ENCIERRA LOS NIVELES EN COMILLAS DOBLES O SIMPLES, NO PUEDE HABER ESPACIOS EN LOS NOMBRES DE LOS NIVELES. INGRESE NIVELES SEPARADOS POR COMAS EN EL FORMATO NIVEL1,NIVEL2,NIVEL3</b></br>\n<b>Descripción</b></br>\nAgregue niveles adicionales a un factor. Agregue nuevos niveles a una o más variables de factor. Los resultados pueden ser en variables existentes (sobrescribiendo) o creando nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo añadido a los nombres existentes. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf: Un factor (o vector de caracteres).\n</li>\n<li>\n...: Niveles adicionales para agregar al factor. Los niveles que ya existen serán ignorados silenciosamente.\n</li>\n</ul>\n<b>Ejemplos</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Paquete</b></br>\nforcats</br>\n<b>Ayuda</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
+    "body": "\n<b>NOTA: NO ENCIERRA LOS NIVELES EN COMILLAS DOBLES O COMILLAS SIMPLES, NO PUEDE HABER ESPACIOS EN LOS NOMBRES DE LOS NIVELES. INGRESE NIVELES SEPARADOS POR COMAS EN EL FORMATO NIVEL1,NIVEL2,NIVEL3</b></br>\n<b>Descripción</b></br>\nAgregue niveles adicionales a un factor. Agregue nuevos niveles a una o más variable(s) de factor. Los resultados pueden ser en variables existentes (sobrescribiendo) o creando nuevas variables especificando un prefijo/sufijo. Se crearán nuevas variables con el prefijo/sufijo añadido a los nombres existentes. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nfct_expand(f, ...)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nf: Un factor (o vector de caracteres).\n</li>\n<li>\n...: Niveles adicionales para agregar al factor. Los niveles que ya existen serán ignorados silenciosamente.\n</li>\n</ul>\n<b>Ejemplos</b><br/>\n<code> \nf <- factor(sample(letters[1:3], 20, replace = TRUE))<br/>\nf<br/>\nfct_expand(f, \"d\", \"e\", \"f\")<br/>\nfct_expand(f, letters[1:6])<br/>\n</code><br/>\n<b>Paquete</b></br>\nforcats</br>\n<b>Ayuda</b></br>\nhelp(fct_expand, package=\"forcats\")\n        "
   }
 }

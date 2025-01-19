@@ -1,0 +1,10 @@
+{
+  "title": "빈도표 (레거시)",
+  "navigation": "빈도 (레거시)",
+  "subsetvars": "변수 선택",
+  "help": {
+    "title": "빈도표",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>설명</b></br>\n하나 이상의 변수 또는 선택된 열 이름의 모든 고유 값에 대한 빈도를 생성합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>세부정보</b></br>\n이 대화 상자는 다음 기능을 사용합니다:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

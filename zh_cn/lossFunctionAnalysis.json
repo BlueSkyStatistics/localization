@@ -3,14 +3,14 @@
   "navigation": "损失函数分析",
   "lfaSubTitle": "图形输出的副标题",
   "independent": "包含损失函数分析数据的列",
-  "lfaDelta": "过程的容差",
+  "lfaDelta": "过程的容忍度",
   "lfaY0": "过程的目标",
-  "lfaL0": "在容差限制下的劣质成本",
-  "lfaSize": "用于计算组内总损失的生产、批次等的大小（范围、批次、周期等）",
+  "lfaL0": "在容忍限度下的劣质成本",
+  "lfaSize": "用于计算一组总损失的生产、批次等的大小（跨度、批次、周期等）",
   "lfaOutput": "输出类型（可能的值 - 文本、图形或两者）",
   "help": {
     "title": "损失函数分析",
     "r_help": "help(ss.lfa, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.lfa函数执行基于Taguchi损失函数的质量损失函数分析，适用于“名义最佳”特性。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为loss_function_table.xlsx的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tss.lfa函数用于基于“名义最佳”特征的田口损失函数进行质量损失函数分析。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t详细帮助 - 使用R help(ss.lfa, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为loss_function_table.xlsx的示例数据集文件。通过文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

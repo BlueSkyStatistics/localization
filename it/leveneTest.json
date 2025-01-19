@@ -1,0 +1,14 @@
+{
+  "title": "Test di Levene",
+  "navigation": "Test di Levene",
+  "tvarbox1": "Variabile di Risposta (uno)",
+  "tvarbox3": "Variabile Fattore",
+  "label1": "Centro",
+  "median": "Mediana",
+  "mean": "Media",
+  "help": {
+    "title": "Test di Levene",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Descrizione</b></br>\nCalcola il test di Levene per l'omogeneità della varianza tra i gruppi.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## Metodo S3 per la classe 'formula'<br/>\nleveneTest(y, data, ...)<br/>\n## Metodo S3 per la classe 'lm'<br/>\nleveneTest(y, ...)<br/>\n## Metodo S3 predefinito:<br/>\nleveneTest(y, group, center=median, ...)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ny: variabile di risposta per il metodo predefinito, o un oggetto lm o formula. Se y è un oggetto modello lineare o una formula, le variabili sul lato destro del modello devono essere tutte fattori e devono essere completamente incrociate.\n</li>\n<li>\ngroup: fattore che definisce i gruppi.\n</li>\n<li>\ncenter: Il nome di una funzione per calcolare il centro di ciascun gruppo; la media fornisce il test di Levene originale; il predefinito, la mediana, fornisce un test più robusto.\n</li>\n<li>\ndata: un data frame per valutare la formula.\n</li>\n<li>\n...: argomenti da passare, ad esempio, dati per i metodi formula e lm; può anche essere utilizzato per passare argomenti alla funzione data da center (ad esempio, center=mean e trim=0.1 specificano la media trimmata del 10%).\n</li>\n</ul>\n<b>Valore</b><br/>\nrestituisce un oggetto destinato a essere stampato che mostra i risultati del test.<br/>\n<b>Esempi</b><br/>\n<code> \nDataframe <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('Contabilità', 'HR', 'Vendite','Marketing','IT'))\nResult_Levene_Test = leveneTest( Sales ~ interaction(Gender, Deptt),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>Pacchetto</b></br>\ncar;moments;dplyr</br>\n<b>Aiuto</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

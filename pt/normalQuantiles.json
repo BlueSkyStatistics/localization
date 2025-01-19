@@ -1,0 +1,15 @@
+{
+  "title": "Quantis Normais",
+  "navigation": "Quantis Normais",
+  "prob": "Insira probabilidades separadas por vírgula. Exemplo: 0.3,0.2,0.5",
+  "mean": "Média",
+  "sd": "Desvio padrão",
+  "labelSig": "Nível de significância",
+  "lowtail": "Cauda inferior",
+  "uptail": "Cauda superior",
+  "help": {
+    "title": "Quantis Normais",
+    "r_help": "ajuda(qnorm, pacote=stats)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Densidade, função de distribuição, função quantil e geração aleatória para a distribuição normal com média igual a média e desvio padrão igual a sd.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dnorm(x, mean = 0, sd = 1, log = FALSE)\n                <br/>\n                pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rnorm(n, mean = 0, sd = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis.</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>mean : vetor de médias.</li>\n                \n                \n                <li>sd : vetor de desvios padrão.</li>\n                \n                \n                <li>log, log.p : lógico; se TRUE, as probabilidades p são dadas como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; se TRUE (padrão), as probabilidades são P[X ≤ x], caso contrário, P[X > x].</li>\n            </ul>\n            \n            \n            \n            <br/>\n            <b>Detalhes</b>\n            <br/>\n            Se mean ou sd não forem especificados, eles assumem os valores padrão de 0 e 1, respectivamente.\n            <br/>\n            A distribuição normal tem densidade\n            <br/>\n            <code>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</code>\n            <br/>\n            onde μ é a média da distribuição e σ o desvio padrão.\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dnorm dá a densidade, pnorm dá a função de distribuição, qnorm dá a função quantil, e rnorm gera desvios aleatórios.\n            <br/>\n            O comprimento do resultado é determinado por n para rnorm, e é o máximo dos comprimentos dos argumentos numéricos para as outras funções.\n            <br/>\n            Os argumentos numéricos além de n são reciclados para o comprimento do resultado. Apenas os primeiros elementos dos argumentos lógicos são usados.\n            <br/>\n            Para sd = 0, isso dá o limite à medida que sd diminui para 0, uma massa pontual em mu. sd < 0 é um erro e retorna NaN.            \n        "
+  }
+}

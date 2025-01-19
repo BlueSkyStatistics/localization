@@ -1,0 +1,22 @@
+{
+  "title": "단계별",
+  "navigation": "단계별",
+  "label1": "다음 클래스 중 하나의 모델을 선택하십시오. (R 클래스는 아래 괄호에 나열되어 있습니다)",
+  "label2": "선형 모델 (lm), 일반화 선형 모델 (glm), 순서형 로지스틱/프로빗 회귀 (polr), 피드포워드 신경망 및 다항 로지스틱 회귀 모델 (nnet)",
+  "label3": "**참고: 단계별은 모델 > 조정 (train)으로 구축된 모델에는 작동하지 않습니다",
+  "label4": "**참고: 단계별은 R 패키지 저자와의 호환성 문제로 인해 다항 로지스틱 회귀 모델 (multinom)에는 작동하지 않습니다",
+  "modelselector1": "모델 선택",
+  "label5": "방향",
+  "backforward": "뒤로/앞으로",
+  "forwardback": "앞으로/뒤로",
+  "backward": "뒤로",
+  "forward": "앞으로",
+  "aic": "AIC (패널티 k = 2에 사용되는 자유도)",
+  "bic": "BIC (모델 행렬의 행 수에 대한 패널티 k = log(no of rows in model matrix)에 사용되는 자유도) 참고: 출력은 BIC가 선택되었을 때도 AIC를 표시합니다)",
+  "label6": "기준",
+  "help": {
+    "title": "단계별",
+    "r_help": "help(stepwise, package='RcmdrMisc')",
+    "body": "\n            <b>설명</b></br>\n이 함수는 RcmdrMisc 패키지의 'stepwise' 함수에 대한 프론트 엔드입니다. 이는 다시 MASS 패키지의 stepAIC 함수에 대한 프론트 엔드입니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSkyStepAIC(mod, direction = c(\"backward/forward\", \"forward/backward\", \"backward\", \"forward\"), criterion = c(\"BIC\", \"AIC\"), ...)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nmod : stepAIC로 처리할 수 있는 클래스의 모델 객체입니다.\n</li>\n<li>\ndirection : \"backward/forward\" (기본값)인 경우, 선택은 전체 모델로 시작하여 예측 변수를 하나씩 제거하며, 각 단계에서 이전 단계에서 제거된 변수를 다시 추가함으로써 기준이 개선될지를 고려합니다; \"forward/backwards\"인 경우, 선택은 상수만 포함된 모델로 시작하여 예측 변수를 하나씩 추가하며, 각 단계에서 이전에 추가된 변수를 제거함으로써 기준이 개선될지를 고려합니다; \"backwards\"와 \"forward\"는 각 단계에서 재고려 없이 유사합니다.\n</li>\n<li>\ncriterion : 선택 기준. \"BIC\" (기본값) 또는 \"AIC\" 중 하나입니다. stepAIC는 출력에서 기준을 \"AIC\"로 레이블합니다.\n</li>\n<li>\n... : stepAIC에 전달될 인수입니다.\n</li>\n</ul>\n<b>값</b><br/>\nstepAIC에 의해 선택된 모델입니다.<br/>\n<b>패키지</b></br>\nBlueSky;MASS;RcmdrMisc</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오 help(stepwise, package=\"RcmdrMisc\")\n"
+  }
+}

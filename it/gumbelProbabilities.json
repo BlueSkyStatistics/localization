@@ -1,0 +1,15 @@
+{
+  "title": "Probabilità di Gumbel",
+  "navigation": "Probabilità di Gumbel",
+  "varvals": "Inserisci il valore della variabile separato da una virgola. Esempio: 3,0.5",
+  "location": "Posizione",
+  "scale": "Scala",
+  "labelSig": "Livello di significatività",
+  "lowtail": "Coda inferiore",
+  "uptail": "Coda superiore",
+  "help": {
+    "title": "Probabilità di Gumbel",
+    "r_help": "help(pgumbel, package=RcmdrMisc)",
+    "body": "\n            ​​\n            <b>Descrizione</b>\n            <br/>\n            Densità, funzione di distribuzione, funzione quantile e generazione casuale per la distribuzione di Gumbel con parametri di posizione e scala specificati.\n            <br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argomenti</b>\n            <br/>\n            <ul>\n                <li>x, q : vettore di quantili (valori della variabile).</li>\n                \n                \n                <li>p : vettore di probabilità.</li>\n                \n                \n                <li>n : numero di osservazioni. Se length(n) > 1, la lunghezza è presa come quella richiesta.</li>\n                \n                \n                <li>location : parametro di posizione (default 0); potenzialmente un vettore.</li>\n                \n                \n                <li>scale : parametro di scala (default 1); potenzialmente un vettore.</li>\n                \n                <li>lower.tail : logico; se TRUE (il default) le probabilità e i quantili corrispondono a P(X ≤ x), se FALSE a P(X > x).</li>\n            </ul>            \n"
+  }
+}

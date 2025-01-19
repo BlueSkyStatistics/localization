@@ -2,16 +2,16 @@
   "title": "Gráfico de Frecuencia",
   "navigation": "Gráfico de Frecuencia",
   "subsetvars": "Seleccionar variables",
-  "paretoChartChk": "Trazar gráfico de Pareto",
-  "createDatasetChk": "Crear conjunto de datos a partir de la tabla de frecuencia",
-  "label1": "Opciones de ordenación para la tabla de frecuencia",
-  "selectFreqSortRad": "Ordenar la tabla de frecuencia por frecuencia",
-  "selectVarSortRad": "Ordenar la tabla de frecuencia por los valores de la variable",
+  "paretoChartChk": "Graficar gráfico de Pareto",
+  "createDatasetChk": "Crear conjunto de datos a partir de la tabla de frecuencias",
+  "label1": "Opciones de ordenación para la tabla de frecuencias",
+  "selectFreqSortRad": "Ordenar la tabla de frecuencias por frecuencia",
+  "selectVarSortRad": "Ordenar la tabla de frecuencias por los valores de la variable",
   "selectNoSortRad": "Ninguno",
-  "selectSortOrderChk": "Orden de clasificación decreciente (desmarcar para orden ascendente)",
+  "selectSortOrderChk": "Orden descendente (desmarcar para orden ascendente)",
   "help": {
     "title": "Tabla de Frecuencia",
-    "r_help": "ayuda(ftable, paquete=stats)",
-    "body": "\n<b>Descripción</b></br>\nGenera las frecuencias para cada valor único en una o más variables o nombres de columna seleccionados.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Detalles</b></br>\nEste diálogo utiliza las siguientes funciones:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>Descripción</b></br>\nGenera las frecuencias para cada valor único en una o más variables o nombres de columnas seleccionados.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"nombre_del_conjunto_de_datos\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Detalles</b></br>\nEste diálogo utiliza las siguientes funciones:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
   }
 }

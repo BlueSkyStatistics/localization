@@ -1,0 +1,23 @@
+{
+  "toplabel": "Per impostazione predefinita, tutte le colonne del dataset, tranne il fattore ripetuto selezionato e le variabili di valore, verranno utilizzate per identificare ciascuna osservazione. Per sovrascrivere, vedere sotto",
+  "id_cols": "Facoltativo: per impostazione predefinita, tutte le colonne del dataset, tranne il fattore ripetuto selezionato e le variabili di valore, verranno utilizzate per identificare ciascuna osservazione. Per sovrascrivere, selezionare e spostare le variabili",
+  "title": "Ristruttura, da lungo a largo",
+  "navigation": "Più ampio",
+  "labelTop": "Quando viene specificato un singolo fattore ripetuto e una variabile di valore, i nuovi nomi delle variabili sono prefissati con il nome del fattore ripetuto. In tutti gli altri casi, sono prefissati dal nome della variabile di valore",
+  "label0": "Puoi scegliere di salvare i risultati in un nuovo dataset o sovrascrivere il dataset esistente",
+  "label1": "Opzioni",
+  "New": "Salva i risultati in un nuovo dataset",
+  "newdatasetname": "Inserisci un nome per il dataset",
+  "Existing": "Sovrascrivi il dataset esistente",
+  "subsetvars": "Inserisci il nome della/e variabile/e del/i fattore/i ripetuto/i, ad esempio Tempo",
+  "dontReshape": "Inserisci il nome della/e variabile/e per i valori ripetuti, ad esempio Conteggi",
+  "names_sort": "Ordina i nomi delle colonne in ordine alfabetico",
+  "appearence_sort": "Ordina i nomi delle colonne in base all'apparenza",
+  "names_sep": "Separatore facoltativo da utilizzare quando si uniscono i nomi delle variabili specificate per formare nuovi nomi di variabili",
+  "label2": "Opzioni di ordinamento",
+  "help": {
+    "title": "Ristruttura (da lungo a largo)",
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>Descrizione</b></br>\nGuarda il video su <a href=\"https://youtu.be/ypLXqmFp3jY\">Ristruttura da lungo a largo</a></br>\nPrende un dataset largo e lo converte in un dataset lungo convertendo (allargando) le colonne. Pivot_wider \"allunga\" i dati, aumentando il numero di righe e diminuendo il numero di colonne. Si utilizza pivot_wider quando si hanno variabili/colonne i cui valori devono essere nelle righe. \n<br/>\nNOTA: Quando viene specificato un fattore ripetuto, i nuovi nomi delle variabili sono prefissati con il nome del fattore ripetuto. Quando vengono specificati più fattori ripetuti, sono prefissati dal nome della variabile di valore</br>\n<b>Utilizzo</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\ndataset: Un dataframe/tibble\n</li>\n<li>\nnames_from: il nome della colonna di output \n</li>\n<li>\nvalues_from: la colonna da cui ottenere i valori delle celle \n</li>\n<li>\nnames_sort: I nomi delle colonne devono essere ordinati? Se FALSE, il predefinito, i nomi delle colonne sono ordinati in base alla prima apparizione.\n</li>\n<li>\nnames_sep: Separatore facoltativo da utilizzare quando si uniscono i nomi delle variabili specificate per formare nuovi nomi di variabili\n</li>\n<li>\n<b>Valore</b><br/>\nRestituisce il dataset ristrutturato\n<br/>\n<b>Pacchetto</b></br>\ntidyr\n<b>Aiuto</b></br>\nhelp(pivot_wider)\n"
+  }
+}

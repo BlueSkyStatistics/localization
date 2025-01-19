@@ -1,0 +1,28 @@
+{
+  "title": "Q-Q Grafikleri",
+  "navigation": "Q-Q",
+  "x": "X ekseni, bir veya daha fazla sayısal değişken belirtin",
+  "alpha": "Opaklık (0-1)",
+  "y": "Şekil, bir faktör değişken belirtin",
+  "color": "Renk, bir faktör değişken belirtin",
+  "referenceline": "Referans çizgisi",
+  "band": "Bantları göster",
+  "detrend": "Düzleştir",
+  "flip": "Eksenleri Çevir",
+  "distribution": "Bir dağılım seçin",
+  "x_title": "X Eksen Etiketi",
+  "y_title": "Y Eksen Etiketi",
+  "label1": "Dağılım parametreleri, örneğin normal dağılım için dağılım parametreleri ortalama=2, sd=2 olabilir, bu yüzden ortalama=2, sd=2 girin. Üstel dağılım için parametreler oran=2 olabilir, bu yüzden oran=2 girin.",
+  "specify_a_title": "Bir başlık girin",
+  "dparams": "İsteğe bağlı olarak dağılım parametrelerini girin",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Q-Q Grafikleri",
+    "r_help": "help(stat_qq_point,package='qqplotr')",
+    "body": "\n            <b>Açıklama</b></br>\n            Q–Q (kuantil-kuantil) grafiği, iki olasılık dağılımını karşılaştırmak için kuantillerini birbirine karşı çizerek grafiksel bir yöntemdir. Varsayılan olarak, seçilen değişkenin olasılık dağılımını normal dağılım ile karşılaştırıyoruz, ancak beta, cauchy, chisq, exp, f, gamma gibi birkaç diğer dağılım ile de karşılaştırabilirsiniz. Ayrıca karşılaştırılan dağılımla ilişkili dağılım parametrelerini de belirtebilirsiniz. Bir dağılım seçmek ve dağılım parametrelerini belirtmek için ana diyalogdaki seçenekler düğmesine tıklayın. Seçilen değişkeni gruplamak için bir faktör değişkeni seçebilirsiniz. Bu durumda, her grup için ayrı bir Q-Q grafiği çizilir.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_line(distribution=\"norm\",detrend = TRUE) +\n             stat_qq_point(distribution=\"norm\",detrend = TRUE) +\n             coord_flip() +\n             labs(x = \"Olasılık Noktaları\",y =\"Örnek Kuantilleri\",title = \"var1 değişkeni için QQ Grafiği\")</br></br>\n            ggplot(data=Dataset2,aes(sample = var1,shape = var2)) +\n             stat_qq_band(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_line(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE) +\n             stat_qq_point(distribution=\"exp\",dparams= list(rate=2),detrend = TRUE)+\n             labs(x = \"Olasılık Noktaları\",y =\"Örnek Kuantilleri\",title = \"var1 değişkeni için QQ Grafiği\")\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti​\n            </li>\n            <li>\n            aes(): Değişkenlerin verilerde nasıl görsel özelliklere (estetik) eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            sample: P-P grafiği için çizilecek sayısal değişken\n            </li>\n            <li>\n            stat_qq_point: Bu, bazı parametre ayarlamaları ve noktaları düzleştirmek için yeni bir seçenek ile ggplot2::stat_qq'nin değiştirilmiş bir versiyonudur.\n            </li>\n            <li>\n            stat_qq_line: Verilerin kuantillerine dayalı bir referans çizgisi çizer, stats::qqline'deki gibi.\n            </li>\n            <li>\n            stat_qq_band: Üç yöntem temelinde güven aralıkları çizer: \"normal\",\"boot\" ve\"ts\":\n            \"normal\" Normal güven aralıklarına dayalı eşzamanlı güven aralıkları oluşturur;\n            \"boot\" parametrik bir bootstrap'a dayalı noktasal güven aralıkları oluşturur;\n            \"ts\" Aldor-Noiman ve diğerleri (2013) tarafından önerilen kuyruk duyarlı güven aralıkları oluşturur.\n            </li>\n            <li>\n            shape: Örnek değerlerine atanan değerleri gruplandıran isteğe bağlı bir faktör değişkenidir. Her grup, faktör değişkeninin seviyeleri tarafından belirlenen ayrı bir P-P grafiği oluşturur. Her grup farklı bir şekil ile gösterilir.\n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirin (Bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenleyin (Bu isteğe bağlıdır)​. Daha fazla ayrıntı için help(facet_grid) bölümüne bakın.\n            </li>\n            <li>  ​\n            coord_flip(): Eksenleri çevirin (Bu isteğe bağlıdır)​\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;qqplotr;</br>\n            <b>Yardım</b></br>\n            help(stat_qq_point,package='qqplotr')</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(stat_qq_point), help(aes), help(facet_grid), help(coord_flip) yazabilirsiniz.​\n            https://cran.r-project.org/web/packages/qqplotr/vignettes/introduction.html\n"
+  }
+}

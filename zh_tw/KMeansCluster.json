@@ -1,16 +1,16 @@
 {
-  "title": "K-Means 聚類",
-  "navigation": "K-Means",
+  "title": "K-均值聚類",
+  "navigation": "K-均值",
   "destination": "目的地",
   "clusters": "聚類數量",
   "seeds": "起始種子數量",
   "iterations": "最大迭代次數",
-  "storeClusterInDataset": "將聚類分配給數據集",
-  "variablename": "存儲聚類編號的變量",
+  "storeClusterInDataset": "將聚類分配到數據集",
+  "variablename": "用於存儲聚類編號的變量",
   "biplot": "顯示聚類雙變量圖",
   "help": {
-    "title": "K-Means 聚類",
-    "r_help": "幫助(kmeans, 包 ='stats')",
-    "body": "\n<b>描述</b></br>\n執行 K-means 聚類\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset =FALSE, varNameForCluster=\"\", dataset=\"數據集名稱\") \n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 要分析的變量，形式為 c('var1','var2'...)\n</li>\n<li>\ncenters: 聚類的數量，例如 k，或一組初始（不同的）聚類中心。如果是一個數字，則在 x 中隨機選擇一組（不同的）\n行作為初始中心。\n</li>\n<li>\niter.max: 允許的最大迭代次數。\n</li>\n<li>\nnum.seeds: 要使用的不同起始隨機種子的數量。每個隨機種子都會導致不同的 K-means 解決方案。\n</li>\n<li>\nstoreClusterInDataset : 將聚類分配保存到數據集中\n</li>\n<li>\nvarNameForCluster: 分配給聚類的變量名稱\n</li>\n<li>\ndataset: 要分析的數據集\n</li>\n</ul>\n<b>包</b></br>\nBlueSky</br>\n<b>幫助</b></br>\n幫助(kmeans, 包=\"stats\")\n    "
+    "title": "K-均值聚類",
+    "r_help": "help(kmeans, package ='stats')",
+    "body": "\n<b>描述</b></br>\n執行K-均值聚類\n<br/>\n<b>用法</b>\n<br/>\n<code> \nBSkyKMeans (vars, centers, iter.max = 10, num.seeds = 10, storeClusterInDataset = FALSE, varNameForCluster=\"\", dataset=\"數據集名稱\") \n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nvars: 要分析的變量，形式為 c('var1','var2'...)\n</li>\n<li>\ncenters: 聚類的數量，例如 k，或一組初始（不同的）聚類中心。如果是一個數字，則隨機選擇 x 中的（不同的）行作為初始中心。\n</li>\n<li>\niter.max: 允許的最大迭代次數。\n</li>\n<li>\nnum.seeds: 要使用的不同起始隨機種子的數量。每個隨機種子會產生不同的 K-均值解。\n</li>\n<li>\nstoreClusterInDataset: 將聚類分配保存到數據集中\n</li>\n<li>\nvarNameForCluster: 分配的聚類的變量名稱\n</li>\n<li>\ndataset: 要分析的數據集\n</li>\n</ul>\n<b>包</b></br>\nBlueSky</br>\n<b>幫助</b></br>\nhelp(kmeans, package=\"stats\")\n    "
   }
 }

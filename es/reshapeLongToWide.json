@@ -1,23 +1,23 @@
 {
-  "toplabel": "Por defecto, todas las columnas del conjunto de datos, excepto el factor repetido seleccionado y las variables de valor, se utilizarán para identificar cada observación. Para sobrescribir, vea a continuación",
-  "id_cols": "Opcional: Por defecto, todas las columnas del conjunto de datos, excepto el factor repetido seleccionado y las variables de valor, se utilizarán para identificar cada observación. Para sobrescribir, seleccione y mueva las variables",
-  "title": "Reestructurar, de largo a ancho",
+  "toplabel": "Por defecto, todas las columnas del conjunto de datos, excepto el factor repetido seleccionado y las variables de valor, se utilizarán para identificar cada observación. Para anular, vea a continuación",
+  "id_cols": "Opcional: Por defecto, todas las columnas del conjunto de datos, excepto el factor repetido seleccionado y las variables de valor, se utilizarán para identificar cada observación. Para anular, seleccione y mueva variables",
+  "title": "Reformatear, de largo a ancho",
   "navigation": "Más ancho",
   "labelTop": "Cuando se especifica un solo factor repetido y una variable de valor, los nuevos nombres de variable se prefijan con el nombre del factor repetido. En todos los demás casos, se prefijan con el nombre de la variable de valor",
   "label0": "Puede elegir guardar los resultados en un nuevo conjunto de datos o sobrescribir el conjunto de datos existente",
   "label1": "Opciones",
   "New": "Guardar resultados en un nuevo conjunto de datos",
-  "newdatasetname": "Ingrese un nombre de conjunto de datos",
-  "Existing": "Sobrescribir conjunto de datos existente",
-  "subsetvars": "Ingrese el nombre de la(s) variable(s) repetida(s), por ejemplo, Tiempo",
-  "dontReshape": "Ingrese el nombre de la(s) valor(es) repetida(s), por ejemplo, Cuentas",
-  "names_sort": "Ordenar los nombres de las columnas alfabéticamente",
-  "appearence_sort": "Ordenar los nombres de las columnas por aparición",
-  "names_sep": "Separador opcional a utilizar al unir los nombres de variables especificados para formar nuevos nombres de variables",
+  "newdatasetname": "Ingrese un nombre para el conjunto de datos",
+  "Existing": "Sobrescribir el conjunto de datos existente",
+  "subsetvars": "Ingrese el nombre de variable(s) del(los) factor(es) repetido(s), por ejemplo, Tiempo",
+  "dontReshape": "Ingrese el nombre de variable(s) para el(los) valor(es) repetido(s), por ejemplo, Conteos",
+  "names_sort": "Ordenar nombres de columnas alfabéticamente",
+  "appearence_sort": "Ordenar nombres de columnas por aparición",
+  "names_sep": "Separador opcional para usar al unir nombres de variables especificados para formar nuevos nombres de variables",
   "label2": "Opciones de ordenación",
   "help": {
-    "title": "Reestructurar (de largo a ancho)",
-    "r_help": "ayuda(pivot_wider, paquete=tidyr)",
-    "body": "\n           <b>Descripción</b></br>\nVea el video en <a href=\"https://youtu.be/ypLXqmFp3jY\">Reestructurar de largo a ancho</a></br>\nToma un conjunto de datos ancho y lo convierte en un conjunto de datos largo al convertir (ampliar) columnas. Pivot_wider \"alarga\" los datos, aumentando el número de filas y disminuyendo el número de columnas. Se utiliza pivot_wider cuando tiene variables/columnas cuyos valores deben estar en filas. \n<br/>\nNOTA: Cuando se especifica un factor repetido, los nuevos nombres de variable se prefijan con el nombre del factor repetido. Cuando se especifican múltiples factores repetidos, se prefijan con el nombre de la variable de valor</br>\n<b>Uso</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndataset: Un dataframe/tibble\n</li>\n<li>\nnames_from: el nombre de la columna de salida \n</li>\n<li>\nvalues_from: la columna de la que obtener los valores de las celdas \n</li>\n<li>\nnames_sort: ¿Deben ordenarse los nombres de las columnas? Si es FALSE, por defecto, los nombres de las columnas se ordenan por primera aparición.\n</li>\n<li>\nnames_sep: Separador opcional a utilizar al unir los nombres de variables especificados para formar nuevos nombres de variables\n</li>\n<li>\n<b>Valor</b><br/>\nDevuelve el conjunto de datos reestructurado\n<br/>\n<b>Paquete</b></br>\ntidyr\n<b>Ayuda</b></br>\nayuda(pivot_wider)\n"
+    "title": "Reformatear (de largo a ancho)",
+    "r_help": "help(pivot_wider, package=tidyr)",
+    "body": "\n           <b>Descripción</b></br>\nVea el video en <a href=\"https://youtu.be/ypLXqmFp3jY\">Reformatear de largo a ancho</a></br>\nToma un conjunto de datos ancho y lo convierte en un conjunto de datos largo al convertir (ensanchar) columnas. Pivot_wider \"alarga\" los datos, aumentando el número de filas y disminuyendo el número de columnas. Se utiliza pivot_wider cuando tiene variables/columnas cuyos valores necesitan estar en filas. \n<br/>\nNOTA: Cuando se especifica un factor repetido, los nuevos nombres de variable se prefijan con el nombre del factor repetido. Cuando se especifican múltiples factores repetidos, se prefijan con el nombre de la variable de valor</br>\n<b>Uso</b>\n<br/>\n<code> \ndataset %>% \n\tpivot_wider(names_from =name, values_from=value, names_sort= TRUE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndataset: Un dataframe/tibble\n</li>\n<li>\nnames_from: el nombre de la columna de salida \n</li>\n<li>\nvalues_from: la columna de la que obtener los valores de celda \n</li>\n<li>\nnames_sort: ¿Deben ordenarse los nombres de las columnas? Si es FALSE, el valor predeterminado, los nombres de las columnas se ordenan por primera aparición.\n</li>\n<li>\nnames_sep: Separador opcional para usar al unir nombres de variables especificados para formar nuevos nombres de variables\n</li>\n<li>\n<b>Valor</b><br/>\nDevuelve el conjunto de datos reformateado\n<br/>\n<b>Paquete</b></br>\ntidyr\n<b>Ayuda</b></br>\nhelp(pivot_wider)\n"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "title": "Transpor Conjunto de Dados, selecionar variáveis",
+  "navigation": "Selecionar Variáveis",
+  "transposedDataset": "Insira um nome para o conjunto de dados transposto",
+  "destination": "Selecione variáveis para transpor",
+  "help": {
+    "title": "Transpor Variáveis Selecionadas",
+    "r_help": "help(t, package='base')",
+    "body": "\n<b>Descrição</b></br>\nInvoca a função de transposição no pacote base que transpõe as variáveis selecionadas e armazena os resultados no novo conjunto de dados. Você deve especificar o nome do conjunto de dados que armazena o conjunto de dados transposto. O novo conjunto de dados transposto é exibido na grade.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nbase::t(x)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: é uma matriz ou dataframe\n</li>\n</ul>\n<b>Valor</b><br/>\nUma matriz, com dim e dimnames construídos adequadamente a partir dos de x, e outros atributos, exceto nomes, copiados.\n<br/>\n<b>Pacote</b></br>\nbase<br/>\n<b>Ajuda</b></br>\nhelp(t, package='base')\n"
+  }
+}

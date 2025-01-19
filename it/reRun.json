@@ -1,0 +1,23 @@
+{
+  "title": "Analisi ripetuta su diversi set di dati",
+  "navigation": "Ripeti analisi",
+  "helpText": "Ripeti o riproduci l'analisi in una scheda di output scambiando il/i set di dati originali con il/i nuovi set di dati.\nSegui i passaggi qui sotto.\n1. La scheda di output selezionata deve contenere l'analisi da riprodurre o ripetere.\n2. Il/i nuovo/i set di dati che desideri scambiare devono essere aperti nel datagrid.\n3. Specifica quale nuovo set di dati sarà scambiato con l'originale (dall'analisi nella scheda di output attiva)\n4. Per farlo, seleziona il set di dati originale nella 1ª lista e il nuovo set di dati nella 2ª lista e fai clic sul pulsante di spostamento.\n5. Ripeti il passaggio 4 per scambiare più set di dati.\n6. Fai clic sul pulsante di esecuzione.\n",
+  "allDatasets": "Set di dati da scambiare",
+  "datasetsFromOutput_BSky": "Set di dati originali",
+  "mapping": "Set di dati mappati",
+  "out": "Inserisci il nome del set di dati impilato",
+  "in1": "Seleziona 2 o più set di dati",
+  "in2": "Seleziona il 2° set di dati",
+  "label1": "Opzioni di impilamento",
+  "label2": "Tutte le opzioni qui sotto richiedono 2 set di dati con esattamente gli stessi nomi di variabili",
+  "bindrows": "Unisci righe (impila i set di dati così come sono, potrebbe risultare in righe duplicate)",
+  "union": "Unione (impila i set di dati e rimuove i duplicati esatti)",
+  "intersect": "Intersezione (mantieni le righe comuni a entrambi i set di dati)",
+  "setdiff": "Differenza (mantieni solo le righe nel 1° set di dati ma non nel 2°)",
+  "id": "Se desideri tenere traccia di quale set di dati proviene ciascuna osservazione, specifica un nome per quella variabile qui. NOTA: La nuova variabile viene aggiunta all'inizio del set di dati risultante.",
+  "help": {
+    "title": "Impila set di dati",
+    "r_help": "help(bind_rows, package=dplyr)",
+    "body": "\n            <b>Descrizione</b></br>\nQuesta finestra di dialogo ti aiuterà a impilare 2 o più set di dati uno sopra l'altro. Puoi selezionare una delle seguenti opzioni.<br/>\n1. Unisci righe: impila i 2 o più set di dati esattamente come sono. Se un nome di variabile è comune a entrambi i set di dati, i valori si riempiranno come ti aspetti. Se un set di dati A contiene una variabile, ad esempio var1, che non è presente nell'altro set di dati B, appariranno NA per la variabile var1 per tutte le righe corrispondenti al set di dati B.<br/>\nTutte le opzioni qui sotto operano SOLO su 2 set di dati e richiedono che entrambi i set di dati condividano le stesse variabili.<br/>\n2. Unione: impila i set di dati e rimuove i duplicati<br/>\n3. Intersezione: mantiene le righe comuni a entrambi<br/>\n4. Differenza: mantiene le righe nel 1° set di dati, non nel 2°<br/>\nA seconda dell'opzione selezionata, vengono chiamate le funzioni bind_rows, union, intersect e setdiff nel pacchetto dplyr.\nNOTA: puoi opzionalmente tenere traccia di quale set di dati proviene l'osservazione originale. L'ID del set di dati (1°/2°) viene aggiunto all'inizio del set di dati che contiene i risultati.<br/>\n<b>Pacchetto</b></br>\ndplyr</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato fai clic sull'icona R nell'angolo in alto a destra di questa finestra di dialogo o esegui il seguente comando help(bind_rows, package=\"dplyr\") nella finestra di sintassi R\n            "
+  }
+}

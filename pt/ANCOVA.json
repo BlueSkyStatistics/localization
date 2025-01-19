@@ -1,0 +1,16 @@
+{
+  "title": "ANCOVA, análise de covariância",
+  "navigation": "ANCOVA",
+  "response": "Variável Dependente",
+  "Fixed": "Fator Fixo",
+  "Block": "Covariável",
+  "Summary": "Resumo do Modelo",
+  "Scatter_plot": "Gráfico de dispersão para cada nível da variável fator",
+  "Residual": "Gráfico Residual vs. Ajustado",
+  "Histogram": "Gráfico de histograma dos resíduos",
+  "help": {
+    "title": "ANCOVA",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Descrição</b></br>\nA análise de covariância (ANCOVA) combina características tanto da ANOVA quanto da regressão. Ela aumenta o modelo ANOVA com uma ou mais variáveis quantitativas adicionais, chamadas de covariáveis, que estão relacionadas à variável de resposta. As covariáveis são incluídas para reduzir a variância nos termos de erro e fornecer uma medição mais precisa dos efeitos do tratamento.</br> A ANCOVA é usada para testar os efeitos principais e de interação dos fatores, enquanto controla os efeitos da covariável.</br>\nPrimeiro, geramos uma tabela Anova com o termo de interação. O objetivo é examinar se o termo de interação não é significativo, ou seja, as inclinações da variável dependente em relação à covariável para cada nível do fator fixo não são diferentes. Usamos o pacote Anova no pacote car para gerar esta tabela Anova.</br>\nEm seguida, regeneramos a tabela Anova controlando o termo de interação para determinar se os interceptos da variável dependente em relação à covariável para cada nível do fator fixo são diferentes.</br> \nOferecemos a opção de gerar um gráfico de dispersão da variável dependente em relação à variável covariável para cada nível do fator fixo.</br>\nOferecemos a opção de plotar os resíduos vs. gráfico ajustado para o modelo onde controlamos o termo de interação. Os resíduos devem ser não tendenciosos e homocedásticos.</br>\nOferecemos a opção de gerar um histograma para os resíduos do modelo onde controlamos o termo de interação. (A distribuição deve ser aproximadamente normal).</br>\nDamos a você a opção de resumir o modelo</br>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nlm(formula, data)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nformula: um objeto da classe \"formula\" (ou um que pode ser convertido para essa classe): uma descrição simbólica do modelo a ser ajustado. Os detalhes da especificação do modelo são dados em 'Detalhes'.\n</li>\n<li>\ndata: um quadro de dados opcional, lista ou ambiente (ou objeto convertível por as.data.frame para um quadro de dados) contendo as variáveis no modelo. Se não encontrado nos dados, as variáveis são retiradas do ambiente(formula), tipicamente o ambiente de onde lm é chamado.\n</li>\n</ul>\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nAnova(mod, , type=c(\"II\"))\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nmod :lm, aov, glm, multinom, polr mlm, coxph, coxme, lme, mer, merMod, svyglm, rlm, ou outro objeto de modelo adequado.​\n</li>\n<li>\ntype: tipo de teste, \"II\", \"III\", 2, ou 3.\n</li>\n</ul>\n<b>Pacote</b></br>\nAnova</br>\n<b>Ajuda</b></br>\nhelp(Anova, package ='car')\n    "
+  }
+}

@@ -1,15 +1,15 @@
 {
   "title": "Dimensiunea eșantionului, Precizia AUC",
   "navigation": "AUC",
-  "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar celălalt va fi calculat",
+  "howtouse": "Specificați fie dimensiunea eșantionului, fie lățimea intervalului de încredere, iar cealaltă va fi calculată",
   "n": "Dimensiunea eșantionului",
   "width": "Lățimea intervalului de încredere",
   "auc": "AUC (suprafața sub curba ROC, 0.5-1)",
-  "conflevel": "Nivel de încredere (0-1)",
+  "conflevel": "Nivelul de încredere (0-1)",
   "prev": "Prevalența rezultatului (0-1)",
   "help": {
     "title": "Dimensiunea eșantionului, Precizia AUC",
     "r_help": "help(prec_auc, package ='presize')",
-    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru suprafața sub o curbă caracteristică de funcționare a receptorului bazată pe lățimea intervalului de încredere. Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul specifică cealaltă.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Lățimea intervalului de încredere:</b> Specificați lățimea dorită a intervalului de încredere. Lățimea unui interval de încredere este o măsură a preciziei unei estimări și este limita superioară minus limita inferioară.\n<br/><br/>\n<b>AUC:</b> Specificați valoarea AUC așteptată\n<br/><br/>\n<b>Nivel de încredere:</b> Specificați nivelul dorit al intervalului de încredere\n<br/><br/>\n<b>Prevalența rezultatului:</b> Specificați proporția de subiecți cu rezultatul 'pozitiv'. Aceasta corespunde nivelului modelat cu modelul statistic candidat.\n<br/><br/>\n<b>Pachete R necesare:</b> presize\n\t\t\t"
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru suprafața sub o curbă de caracteristică operativă a receptorului, bazată pe lățimea intervalului de încredere.  Calculează dimensiunea eșantionului sau lățimea intervalului de încredere atunci când utilizatorul \nspecificează cealaltă.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu\n<br/><br/>\n<b>Lățimea intervalului de încredere:</b> Specificați lățimea dorită a intervalului de încredere.  Lățimea unui interval de încredere este o măsură a preciziei unei estimări și este limita superioară minus limita inferioară.\n<br/><br/>\n<b>AUC:</b> Specificați valoarea AUC așteptată\n<br/><br/>\n<b>Nivelul de încredere:</b> Specificați nivelul dorit al intervalului de încredere\n<br/><br/>\n<b>Prevalența rezultatului:</b> Specificați proporția de subiecți cu rezultatul 'pozitiv'.  Aceasta corespunde nivelului modelat cu modelul statistic candidat.\n<br/><br/>\n<b>Pachete R necesare:</b> presize\n\t\t\t"
   }
 }

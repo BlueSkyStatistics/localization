@@ -1,0 +1,33 @@
+{
+  "title": "t-testi, Tek Örnek",
+  "navigation": "t-testi, Tek Örnek",
+  "tvarbox1": "Değişkenleri seçin",
+  "textbox1": "Güven aralığı",
+  "textbox2": "Null hipotezi (mu)",
+  "label1": "Alternatif hipotez",
+  "test1": "Popülasyon ortalaması != mu",
+  "test2": "Popülasyon ortalaması > mu",
+  "test3": "Popülasyon ortalaması < mu",
+  "testval": "Test değeri (mu)",
+  "label2": "Eksik değerler",
+  "Analysis": "Analiz analize göre",
+  "Listwise": "Listeye göre",
+  "conflevel": "Güven aralığı:",
+  "MissingVals": "Eksik değerler için seçenekler",
+  "cohensdNoCorrection": "Cohen'in d'si",
+  "hedgesgNoCorrection": "Hedges' g",
+  "glassd": "Glass'ın delta'sı",
+  "hedgesgCorrect": "Hedges' g, yanlılık düzeltilmiş",
+  "glassdCorrect": "Glass'ın Delta'sı için yanlılığı düzelt",
+  "hedgesg": "Hedges' g",
+  "effectsizes": "Etkileşim boyutları",
+  "cohensdCorrect": "Cohen'in d'si, yanlılık düzeltilmiş",
+  "label3": "Cohen'in d'si için seçenekler",
+  "label4": "Hedges' g için seçenekler",
+  "showEffectSizes": "Etkileşim boyutlarını göster",
+  "help": {
+    "title": "t-testi, Tek Örnek",
+    "r_help": "help(t.test, package=stats)",
+    "body": "\n<b>Açıklama</b></br>\nSeçilen değişkenler üzerinde tek örnek t-testleri gerçekleştirir. İsteğe bağlı olarak standartlaştırılmış farklar için etki boyutu indekslerini hesaplar: Cohen'in d'si ve Hedges' g (Bu fonksiyon popülasyon tahminini döndürür.)\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyOneSmTTest(varNamesOrVarGlobalIndices  =c('var1','var2'), mu=.9, conf.level=0.95, alternative= \"two.sided\",datasetNameOrDatasetGlobalIndex='Dataset', missing=1) \ncohens_d(var1~1, mu=valuetocompare, correction =FALSE, ci = 0.95)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: seçilen ölçek değişkenleri (örneğin var1, var2)\n</li>\n<li>\nmu: ortalamanın gerçek değerini belirten bir sayı. (örneğin 10)\n</li>\n<li>\nconf.level: bir sayısal değer (örneğin 0.95).\n</li>\n<li>\nmissing: eksik değerler her bir değişken bazında (missing =0) veya tüm değişkenler arasında liste bazında (missing=1) işlenir.\n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: var1, var2 ve var3'ün seçildiği veri kümesinin adı (örneğin Dataset).\n</li>\n<li>\nalternative: alternatif hipotezi belirten bir karakter dizisi, \"two.sided\" (varsayılan), \"greater\" veya \"less\" olmalıdır. Sadece ilk harfi belirtebilirsiniz.\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nTestin sonuçlarını içeren bir liste\n<br/>\n<b>Örnek</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# Veri kümesi UI ızgarasında da yüklenmelidir</br>\nBSkyLoadRefreshDataframe(Dataset)</br> \nBSky_One_Simple_T_Test = BSkyOneSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),mu=.9,conf.level=0.95,alternative =\"two.sided\", datasetNameOrDatasetGlobalIndex ='Dataset',missing=1</br>\n</code> <br/>\n<b>Paket</b></br>\nstats</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üstündeki sağ üst köşedeki R simgesine tıklayın veya aşağıdaki komutu çalıştırarak help(t.test, package ='stats') oluşturun."
+  }
+}

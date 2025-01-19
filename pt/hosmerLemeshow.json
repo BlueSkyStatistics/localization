@@ -1,0 +1,13 @@
+{
+  "title": "Teste de Hosmer-Lemeshow",
+  "navigation": "Teste de Hosmer-Lemeshow",
+  "label1": "NOTA: O CONJUNTO DE DADOS ATIVO DEVE SER O MESMO CONJUNTO DE DADOS UTILIZADO PARA CONSTRUIR O MODELO",
+  "modelselector1": "Selecione um modelo linear generalizado (modelo da classe glm):",
+  "destination": "Variável alvo:",
+  "bins": "Número de bins",
+  "help": {
+    "title": "Teste de Hosmer-Lemeshow",
+    "r_help": "help(HLgof.test, package='MKmisc')",
+    "body": "\n                <b>Descrição</b></br>\nA função calcula testes de bondade de ajuste de Hosmer-Lemeshow para estatísticas C e H, bem como o teste de soma de quadrados não ponderada de Cessie-van Houwelingen-Copas-Hosmer para bondade de ajuste global.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nfit: vetor numérico com probabilidades ajustadas.\n</li>\n<li>\nobs: vetor numérico com valores observados.\n</li>\n<li>\nngr: número de grupos para estatísticas C e H.\n</li>\n<li>\nX: covariável(is) para o teste de bondade de ajuste global de Cessie-van Houwelingen-Copas-Hosmer.\n</li>\n<li>\nverbose: lógico, imprime resultados intermediários.\n</li>\n</ul>\n<b>Detalhes</b></br>\nOs testes de bondade de ajuste de Hosmer-Lemeshow são calculados; veja Lemeshow e Hosmer (1982). Se X for especificado, o teste de soma de quadrados não ponderada de Cessie-van Houwelingen-Copas-Hosmer para bondade de ajuste global é adicionalmente determinado; veja Hosmer et al. (1997). Uma versão mais geral deste teste é implementada na função residuals.lrm no pacote rms.</br>\n<b>Valor</b><br/>\nUma lista de resultados do teste.\n<b>Exemplos</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>Pacote</b></br>\nMKmisc</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste diálogo ou execute o seguinte comando no editor de sintaxe R help(HLgof.test, package=\"MKmisc\")\n                "
+  }
+}

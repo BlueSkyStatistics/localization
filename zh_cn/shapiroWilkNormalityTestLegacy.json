@@ -1,10 +1,10 @@
 {
   "title": "Shapiro-Wilk 正态性检验",
-  "navigation": "Shapiro-Wilk 正态性检验 (Legacy)",
+  "navigation": "Shapiro-Wilk 正态性检验 (旧版)",
   "tvarbox1": "选择数值变量",
   "help": {
     "title": "Shapiro-Wilk 正态性检验",
-    "r_help": "帮助(shapiro.test, 包=stats)",
-    "body": "\n<b>描述</b></br>\n执行 Shapiro-Wilk 正态性检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个数值数据值的向量。允许缺失值，但非缺失值的数量必须在 3 到 5000 之间。\n</li>\n</ul>\n<b>值</b><br/>\n一个类为 \"htest\" 的列表，包含以下组件：<br/>\nstatistic: Shapiro-Wilk 统计量的值。<br/>\np.value: 测试的近似 p 值。Royston (1995) 认为 p.value < 0.1 时是足够的。<br/>\nmethod: 字符串 \"Shapiro-Wilk 正态性检验\"。<br/>\ndata.name: 给出数据名称的字符串。<br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\n帮助(shapiro.test, 包=stats)\n"
+    "r_help": "help(shapiro.test, package=stats)",
+    "body": "\n<b>描述</b></br>\n执行 Shapiro-Wilk 正态性检验。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nshapiro.test(x)\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nx: 一个数值向量的数据值。允许缺失值，但非缺失值的数量必须在 3 到 5000 之间。\n</li>\n</ul>\n<b>值</b><br/>\n一个具有 \"htest\" 类的列表，包含以下组件:<br/>\nstatistic: Shapiro-Wilk 统计量的值。<br/>\np.value: 检验的近似 p 值。Royston (1995) 认为对于 p.value < 0.1 是足够的。<br/>\nmethod: 字符串 \"Shapiro-Wilk 正态性检验\"。<br/>\ndata.name: 一个字符字符串，给出数据的名称。<br/>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(shapiro.test, package=stats)\n"
   }
 }

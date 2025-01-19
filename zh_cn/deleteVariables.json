@@ -1,10 +1,10 @@
 {
   "title": "删除变量",
   "navigation": "删除",
-  "trg": "待删除的变量",
+  "trg": "要删除的变量",
   "help": {
-    "title": "移除NAs",
-    "r_help": "帮助(na.omit, 包=data.table)",
-    "body": "\n<b>描述</b></br>\n从数据集/数据框中移除缺失值/NA\n通过移除所选列/变量名中一个或多个缺失值的行来创建新数据集/覆盖现有数据集\n<br/>\n<b>用法</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n​object: 一个R对象。​\n</li>\n</ul>\n<b>包</b></br>\ndata.table</br>\n<b>帮助</b></br>\n帮助(na.omit)\n"
+    "title": "移除缺失值",
+    "r_help": "help(na.omit, package=data.table)",
+    "body": "\n<b>描述</b></br>\n从数据集/数据框中移除缺失值/NA\n通过移除具有一个或多个缺失值的行来创建新的/覆盖现有的数据集，针对所选的列/变量名称\n<br/>\n<b>用法</b>\n<br/>\n<code> \nna.omit(object =dataset[c(var1,var2...]))​\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\n​object: 一个R对象。​\n</li>\n</ul>\n<b>包</b></br>\ndata.table</br>\n<b>帮助</b></br>\nhelp(na.omit)\n"
   }
 }

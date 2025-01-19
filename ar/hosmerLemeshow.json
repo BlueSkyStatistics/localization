@@ -1,0 +1,13 @@
+{
+  "title": "اختبار هوسمر-ليمشاو",
+  "navigation": "اختبار هوسمر-ليمشاو",
+  "label1": "ملاحظة: يجب أن تكون مجموعة البيانات النشطة هي نفس مجموعة البيانات المستخدمة لبناء النموذج",
+  "modelselector1": "اختر نموذج خطي عام (نموذج من فئة glm):",
+  "destination": "المتغير المستهدف:",
+  "bins": "عدد الصناديق",
+  "help": {
+    "title": "اختبار هوسمر-ليمشاو",
+    "r_help": "help(HLgof.test, package='MKmisc')",
+    "body": "\n                <b>الوصف</b></br>\nتقوم الدالة بحساب اختبارات جودة الملاءمة هوسمر-ليمشاو لإحصائيات C و H بالإضافة إلى اختبار مجموع المربعات غير الموزونة لـ Cessie-van Houwelingen-Copas-Hosmer لجودة الملاءمة العالمية.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nHLgof.test(fit, obs, ngr = 10, X, verbose = FALSE)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nfit: متجه عددي مع الاحتمالات الملائمة.\n</li>\n<li>\nobs: متجه عددي مع القيم الملاحظة.\n</li>\n<li>\nngr: عدد المجموعات لإحصائيات C و H.\n</li>\n<li>\nX: المتغيرات المساعدة لاختبار جودة الملاءمة العالمية لـ Cessie-van Houwelingen-Copas-Hosmer.\n</li>\n<li>\nverbose: منطقي، طباعة النتائج الوسيطة.\n</li>\n</ul>\n<b>التفاصيل</b></br>\nيتم حساب اختبارات جودة الملاءمة هوسمر-ليمشاو؛ انظر ليمشاو وهوسمر (1982). إذا تم تحديد X، يتم تحديد اختبار مجموع المربعات غير الموزونة لـ Cessie-van Houwelingen-Copas-Hosmer لجودة الملاءمة العالمية؛ انظر هوسمر وآخرون (1997). يتم تنفيذ نسخة أكثر عمومية من هذا الاختبار في دالة residuals.lrm في حزمة rms.</br>\n<b>القيمة</b><br/>\nقائمة بنتائج الاختبار.\n<b>أمثلة</b><br/>\n<code> \nset.seed(111)\nx1 <- factor(sample(1:3, 50, replace = TRUE))</br>\nx2 <- rnorm(50)</br>\nobs <- sample(c(0,1), 50, replace = TRUE)</br>\nfit <- glm(obs ~ x1+x2, family = binomial)</br>\nHLgof.test(fit = fitted(fit), obs = obs)</br>\nHLgof.test(fit = fitted(fit), obs = obs, X = model.matrix(obs ~ x1+x2))</br>\n</code> <br/>\n<b>الحزمة</b></br>\nMKmisc</br>\n<b>المساعدة</b></br>\nللحصول على مساعدة مفصلة، انقر على أيقونة R في الزاوية العلوية اليمنى من هذه النافذة المنبثقة أو قم بتشغيل الأمر التالي في محرر صيغة R help(HLgof.test, package=\"MKmisc\")\n                "
+  }
+}

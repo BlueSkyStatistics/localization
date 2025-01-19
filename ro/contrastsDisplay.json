@@ -1,10 +1,10 @@
 {
-  "title": "Afișați contrastele",
-  "navigation": "Afișați contrastele",
+  "title": "Afișare Contraste",
+  "navigation": "Afișare Contraste",
   "target": "Destinație",
   "help": {
-    "title": "Afișați contrastele",
-    "r_help": "ajutor(contrasts, pachet ='stats')",
-    "body": "\n            <b>Descriere</b></br>\n            Afișați contrastele asociate cu o variabilă factor.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: un obiect R.​\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            stats</br>\n            <b>Ajutor</b></br>\n            ajutor(contrasts, pachet ='stats')        \n            "
+    "title": "Afișare Contraste",
+    "r_help": "help(contrasts, package ='stats')",
+    "body": "\n            <b>Descriere</b></br>\n            Afișează contrastele asociate cu o variabilă factor.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            contrasts(x)\n            </code> <br/>\n            <b>Argumente</b><br/>\n            <ul>\n            <li>\n            x: un obiect R.​\n            </li>\n            </ul>\n            <b>Pachet</b></br>\n            stats</br>\n            <b>Ajutor</b></br>\n            help(contrasts, package ='stats')        \n            "
   }
 }

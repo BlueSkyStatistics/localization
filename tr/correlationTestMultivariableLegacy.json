@@ -1,0 +1,22 @@
+{
+  "title": "Korelasyon Testi",
+  "navigation": "Pearson (Eski)",
+  "tvarbox": "Seçilen değişkenler (en az iki)",
+  "lable1": "Korelasyon türü",
+  "radio_pearson": "Pearson",
+  "radio_spearman": "Spearman",
+  "lable2": "Eksik verileri işleme seçenekleri",
+  "radio_cc": "Sadece tam durumlar",
+  "radio_pairwise": "Eşleşen tam durumlar",
+  "lable3": "P değerini göster",
+  "ajp": "Düzeltilmiş P değeri",
+  "unajp": "Düzeltilmemiş P değeri",
+  "bothp": "Her iki P değeri",
+  "vis_cor": "Korelasyon matrisini görselleştir",
+  "vis_plot": "webPlot'u görselleştir",
+  "help": {
+    "title": "Korelasyon Analizi",
+    "r_help": "help(rcorr.adjust, package=RcmdrMisc)",
+    "body": "\n<b>Açıklama</b>\nBu fonksiyon, Pearson veya Spearman korelasyon matrislerini ve korelasyonlar arasındaki çift yönlü p-değerlerini hesaplamak için Hmisc paketindeki rcorr fonksiyonunu kullanır. P-değerleri, çoklu çıkarım için Holm'un yöntemi kullanılarak düzeltilir (bkz. p.adjust). Gözlemler eksik veriler için filtrelenir ve yalnızca tam gözlemler kullanılır.\n<br/>\n<b>Kullanım</b>\n<br/>\n        <code> \nrcorr.adjust(x, type = c(\"pearson\", \"spearman\"), use=c(\"complete.obs\", \"pairwise.complete.obs\"))\n        </code> <br/>\n## 'rcorr.adjust' sınıfı için S3 yöntemi\n<br/>\n <code> \nprint(x, ...)\n </code> \n  <br />\n <b>Argümanlar</b>\n   <ul>\n   <li>\nx: yazdırılacak bir sayısal matris veya veri çerçevesi veya \"rcorr.adjust\" sınıfından bir nesne.\n</li>\n<li>\ntype: istenen korelasyon türüne bağlı olarak \"pearson\" veya \"spearman\"; varsayılan \"pearson\"dur.\n</li>\n<li>\nuse: eksik verileri nasıl işleyeceğiniz: \"complete.obs\", varsayılan, yalnızca tam durumları kullanır; \"pairwise.complete.obs\", her çift için geçerli verilerle tüm durumları kullanır.\n</li>\n<li>\n...: kullanılmaz.\n</li>\n</ul>\n<b>Değer</b>\n\"rcorr.adjust\" sınıfından bir nesne döndürür, bu genellikle yalnızca yazdırılır.\n"
+  }
+}

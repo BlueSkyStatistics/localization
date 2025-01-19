@@ -1,0 +1,28 @@
+{
+  "title": "Crosstab",
+  "navigation": "Crosstab (Legacy)",
+  "row": "Variabile di Riga",
+  "column": "Variabile di Colonna",
+  "layer": "Variabile(i) di Strato",
+  "weight": "Peso (uno)",
+  "label1": "Statistiche",
+  "chisq": "Chisq",
+  "mcnemar": "McNemar",
+  "fisher": "Fisher",
+  "label2": "Residui",
+  "unstandardized": "Non standardizzati",
+  "standardized": "Standardizzati",
+  "adjusted": "Regolati",
+  "label3": "Percentuali",
+  "rowpercent": "Riga",
+  "colpercent": "Colonna",
+  "label4": "Conteggi",
+  "expected": "Atteso",
+  "label5": "Formato di output della tabella lunga",
+  "longTbl": "Tabella lunga",
+  "help": {
+    "title": "Crosstab",
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>Descrizione</b></br>\nCrea una tabella incrociata con variabili di riga, colonna e strato e visualizza facoltativamente quanto segue<br/>\nConteggi attesi<br/>\nPercentuali di riga e colonna<br/>\nResidui non standardizzati, standardizzati e regolati<br/>\nChisq con rapporto di probabilità, statistiche di McNemar e Fisher<br/>\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx: variabile di riga\n</li>\n<li>\ny: variabile di colonna\n</li>\n<li>\nlayers: una o più variabili per gli strati\n</li>\n<li>\nweights: una variabile numerica contenente i pesi di frequenza\n</li>\n<li>\ndatasetname: Nome del dataset da cui sono scelte x,y e layers (variabili)\n</li>\n<li>\nchisq:  se TRUE genera una tabella chi-quadro\n</li>\n<li>\nprop.r: Le percentuali di riga vengono prodotte se questo è TRUE\n</li>\n<li>\nprop.c: Le percentuali di colonna vengono generate se questo è TRUE\n</li>\n<li>\nresid: se TRUE, vengono generati residui non standardizzati\n</li>\n<li>\nsresid: se TRUE, vengono generati residui standardizzati\n</li>\n<li>\nexpected: I conteggi attesi vengono generati se questo è TRUE\n</li>\n<li>\nasresid:  se TRUE, vengono generati residui regolati\n</li>\n</ul>\n<b>valore</b></br>\nUn elenco con i risultati\n<br/>\n<b>Esempio</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>Pacchetto</b></br>\ngmodels</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato clicca sull'icona R in alto a destra di questo overlay di dialogo o esegui il seguente comando help(CrossTable, package=gmodels) creando un blocco di codice R cliccando + nella finestra di output  \n    "
+  }
+}

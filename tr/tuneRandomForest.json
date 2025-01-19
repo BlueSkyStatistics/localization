@@ -1,0 +1,16 @@
+{
+  "title": "Rastgele Orman Modelini Ayarla",
+  "navigation": "Ayarla",
+  "dependentvar": "Bağımlı değişken",
+  "independentvars": "Bağımsız değişken(ler)",
+  "ntreetry": "Denenecek ağaç sayısı",
+  "stepfactor": "Adım faktörü",
+  "improve": "Geliştir",
+  "trace": "İzle",
+  "plot": "Grafik",
+  "help": {
+    "title": "Rastgele Orman Modelini Ayarla",
+    "r_help": "help(tuneRF,package='randomForest')",
+    "body": "\n                <b>Açıklama</b></br>\nVarsayılan mtry değeri ile başlayarak, randomForest için mtry'nin optimal değerini (Out-of-Bag hata tahminine göre) arayın. \n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \ntuneRF(x, y, ntreeTry=50, stepFactor=2, improve=0.05, trace=TRUE, plot=TRUE,  ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx : tahmin değişkenlerinin matris veya veri çerçevesi\n</li>\n<li>\ny : yanıt vektörü (sınıflandırma için faktör, regresyon için sayısal)\n</li>\n<li>\nntreeTry : ayar adımında kullanılan ağaç sayısı.\n</li>\n<li>\nstepFactor : her iterasyonda, mtry bu değer ile artırılır (veya azaltılır).\n</li>\n<li>\nimprove : OOB hatasındaki (göreli) iyileşme bu kadar olmalıdır ki arama devam etsin\n</li>\n<li>\ntrace : aramanın ilerlemesini yazdırıp yazdırmayacağı.\n</li>\n<li>\nplot : OOB hatasını mtry'nin bir fonksiyonu olarak çizip çizmeyeceği.\n</li>\n<li>\n... : randomForest'e verilecek seçenekler\n</li>\n</ul>\n<b>Değer</b></br>\nAranan mtry değerlerini içeren ilk sütunu ve karşılık gelen OOB hatasını içeren ikinci sütunu olan bir matris döndürür.</br>\n<b>Paket</b></br>\nrandomForest​;BlueSky</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üstündeki sağ üst köşedeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(tuneRF,package='randomForest')\n"
+  }
+}

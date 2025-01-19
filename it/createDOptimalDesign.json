@@ -1,0 +1,20 @@
+{
+  "title": "Crea Design D-ottimale",
+  "navigation": "Crea Design D-ottimale",
+  "datasetname": "Nome del design D-ottimale",
+  "candidateDesignChk": "Crea design D-ottimale da un design candidato esistente (fattoriale completo, FrF2, Ortogonale o Latino) - assicurati che questa finestra di dialogo sia aperta sul design esistente nella griglia dei dati per scegliere implicitamente il design candidato",
+  "selectedvars": "Seleziona variabili (Ignorato se il design candidato è selezionato sopra) per creare un design D-ottimale non da un design candidato esistente",
+  "numOfRuns": "Numero di esecuzioni",
+  "formula": "Formula - lasciala predefinita per includere tutti i fattori nel modello o digita una formula di modello lineare ad es. ~quad(.)",
+  "numOfOptiRepeats": "Numero di ripetizioni di ottimizzazione",
+  "numOfBlocks": "Numero di blocchi",
+  "blockName": "Nome del blocco",
+  "lbl1": "Potresti non aver bisogno di cambiare le impostazioni di randomizzazione",
+  "randomseeds": "Seed per la randomizzazione",
+  "randomizationChk": "Randomizza la generazione del design",
+  "help": {
+    "title": "Crea Design D-ottimale",
+    "r_help": "help(Dopt.design, package = DoE.wrapper)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione Dopt.design per creare design D-ottimali con o senza blocchi\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(Dopt.design, package = DoE.wrapper)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi usare il file di dataset di esempio chiamato factor_grid_full_factorial_to_use_for_Doptimal_Design.xlsx. Apri il file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\tCrea prima il design fattoriale completo, scegli il design fattoriale completo da questa finestra di dialogo/UI e specifica runs = 16 per creare un design D-ottimale da un design fattoriale completo  \n\t\t\t"
+  }
+}

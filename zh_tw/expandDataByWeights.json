@@ -6,6 +6,6 @@
   "help": {
     "title": "擴展權重",
     "r_help": "help(expandRows, package=splitstackshape)",
-    "body": "<b>描述</b></br>\n        創建一個新數據集，按權重擴展行。根據源數據集或數據表中某一列包含的值擴展（複製）data.frame的行。BSkySetWeights()調用來自splitstackshape包的expandRows()。\n        <br/>\n        <b>用法</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>參數</b><br/>\n         <ul>\n           <li>\n        weights: 包含權重的數據集變量。 \n        </li>\n        <li>\n        data: 輸入的data.frame或data.table。\n        </li>\n        <li>\n        newdata: 新數據集，其中的行根據指定的權重進行複製。\n        </li>\n        </ul>\n        <b>包</b></br>\n        splitstackshape</br>\n        <b>幫助</b></br>\n        help (expandRows)\n        "
+    "body": "<b>描述</b></br>\n        創建一個新的數據集，根據權重擴展行。根據源數據框或數據表中某一列的值擴展（複製）數據框的行。BSkySetWeights() 調用來自 splitstackshape 包的 expandRows()。\n        <br/>\n        <b>用法</b>\n        <br/>\n             <code> \n        BSkySetWeight(weights, data, newdata)\n        </code> <br/>\n          <b>參數</b><br/>\n         <ul>\n           <li>\n        weights: 包含權重的數據集變量。 \n        </li>\n        <li>\n        data: 輸入的數據框或數據表。\n        </li>\n        <li>\n        newdata: 根據指定的權重複製行的新數據集。\n        </li>\n        </ul>\n        <b>包</b></br>\n        splitstackshape</br>\n        <b>幫助</b></br>\n        help (expandRows)\n        "
   }
 }

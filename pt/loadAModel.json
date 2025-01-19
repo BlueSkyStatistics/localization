@@ -1,0 +1,24 @@
+{
+  "title": "Carregar Modelos de um arquivo",
+  "navigation": "Carregar Modelos",
+  "filterModels": "Filtrar modelos por classe",
+  "modelSelection": "Selecionar um modelo para salvar",
+  "importResp": "Selecione um arquivo para carregar modelos",
+  "label1": "Todos os modelos no arquivo especificado serão carregados na memória. Nota: Se você tiver modelos existentes com o mesmo nome, eles serão sobrescritos.",
+  "levelOfInterest": "Quando a variável a ser prevista tem 2 níveis, especifique o nível de interesse. A matriz de confusão e as estatísticas relacionadas são exibidas com o nível de interesse especificado como referência.",
+  "label12": "Resultados do teste: Assim que um modelo for selecionado, realizaremos testes para ver se as variáveis dependentes especificadas no modelo estão disponíveis no conjunto de dados a ser pontuado. Os resultados serão exibidos aqui.",
+  "label2": "Salvar valores previstos e estatísticas de suporte.",
+  "label3": "Previsões e probabilidades previstas, quando aplicável, são armazenadas no conjunto de dados sendo pontuado como novas variáveis com o prefixo abaixo.",
+  "label4": "**Para variáveis dependentes com 2 níveis, o 2º nível é tratado como o nível positivo. Veja Dados > Níveis de Fator > Reordenar Níveis Manualmente para alterar a ordem dos níveis de fator e reconstruir o modelo.",
+  "conflevel": "Salvar intervalos de confiança para valores previstos individuais **(Válido apenas para modelos lineares (classe lm))",
+  "roctable": "Mostrar tabela ROC (**Apenas para variáveis dependentes binárias)",
+  "colname": "Especifique o prefixo do nome da coluna",
+  "label5": "**Marcar a caixa acima acarretará uma penalidade de desempenho para grandes conjuntos de dados.",
+  "level": "Especifique o nível de confiança",
+  "confusioncheck": "Gerar Matriz de Confusão",
+  "help": {
+    "title": "Carregar Modelos",
+    "r_help": "help(load, package='base')",
+    "body": "\n<b>Descrição</b></br>\nObjetos de modelo R salvos no arquivo selecionado serão carregados.</br>\nCarregaremos TODOS os objetos R salvos no arquivo selecionado. Se objetos com o mesmo nome existirem no ambiente global R, eles serão sobrescritos.</br>\nExibiremos uma mensagem confirmando os modelos construídos com o aplicativo BlueSky que foram carregados.</br>\nVocê deve clicar no botão de executar (o botão de triângulo horizontal) para carregar objetos R salvos no arquivo selecionado. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nload(file =\"caminho do arquivo\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nfile:nome do arquivo com caminho, os objetos de modelo selecionados serão salvos neste arquivo RData\n</li>\n</ul>\n<b>Pacote</b></br>\nbase</br>\n<b>Ajuda</b></br>\nPara ajuda detalhada, clique no ícone R no canto superior direito deste overlay de diálogo ou execute o seguinte comando help(load, package = 'base') na janela do editor R\n</br>\n                "
+  }
+}

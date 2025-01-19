@@ -1,6 +1,6 @@
 {
-  "title": "Exemple de distribution de Gumbel",
-  "navigation": "Exemple de distribution de Gumbel",
+  "title": "Échantillon de la distribution de Gumbel",
+  "navigation": "Échantillon de la distribution de Gumbel",
   "entrdsname": "Entrez le nom du jeu de données",
   "location": "Emplacement",
   "scale": "Échelle",
@@ -8,12 +8,12 @@
   "lblnoofobsv": "Nombre d'observations (colonnes)",
   "lblseed": "Graine",
   "lblAddtoDS": "Ajouter au jeu de données",
-  "chklbl1": "Moyennes d'échantillons",
-  "chklbl2": "Sommes d'échantillons",
-  "chklbl3": "Écarts-types d'échantillons",
+  "chklbl1": "Moyennes d'échantillon",
+  "chklbl2": "Sommes d'échantillon",
+  "chklbl3": "Écarts-types d'échantillon",
   "help": {
-    "title": "Exemple de distribution de Gumbel",
+    "title": "Échantillon de la distribution de Gumbel",
     "r_help": "help(rgumbel, package=RcmdrMisc)",
-    "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Densité, fonction de distribution, fonction quantile et génération aléatoire pour la distribution de Gumbel avec des paramètres de localisation et d'échelle spécifiés.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vecteur de quantiles (valeurs de la variable).</li>\n                \n                \n                <li>p : vecteur de probabilités.</li>\n                \n                \n                <li>n : nombre d'observations. Si la longueur(n) > 1, la longueur est considérée comme le nombre requis.</li>\n                \n                \n                <li>location : paramètre de localisation (par défaut 0); potentiellement un vecteur.</li>\n                \n                \n                <li>scale : paramètre d'échelle (par défaut 1); potentiellement un vecteur.</li>\n                \n                <li>lower.tail : logique; si TRUE (par défaut), les probabilités et les quantiles correspondent à P(X ≤ x), si FALSE à P(X > x).</li>\n            </ul>            \n"
+    "body": "\n            ​​\n            <b>Description</b>\n            <br/>\n            Densité, fonction de distribution, fonction quantile et génération aléatoire pour la distribution de Gumbel avec des paramètres de localisation et d'échelle spécifiés.\n            <br/>\n            <b>Utilisation</b>\n            <br/>\n            <code>\n                dgumbel(x, location = 0, scale = 1)\n                <br/>\n                pgumbel(q, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                qgumbel(p, location=0, scale=1, lower.tail=TRUE)\n                <br/>\n                rgumbel(n, location=0, scale=1)\n                <br/>\n            </code>\n            <br/>\n            <b>Arguments</b>\n            <br/>\n            <ul>\n                <li>x, q : vecteur de quantiles (valeurs de la variable).</li>\n                \n                \n                <li>p : vecteur de probabilités.</li>\n                \n                \n                <li>n : nombre d'observations. Si length(n) > 1, la longueur est considérée comme le nombre requis.</li>\n                \n                \n                <li>location : paramètre de localisation (par défaut 0); potentiellement un vecteur.</li>\n                \n                \n                <li>scale : paramètre d'échelle (par défaut 1); potentiellement un vecteur.</li>\n                \n                <li>lower.tail : logique; si TRUE (par défaut) les probabilités et quantiles correspondent à P(X ≤ x), si FALSE à P(X > x).</li>\n            </ul>            \n"
   }
 }

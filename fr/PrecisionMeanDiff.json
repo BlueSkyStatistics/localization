@@ -1,11 +1,11 @@
 {
   "title": "Taille d'échantillon, Précision d'une différence de moyenne",
-  "navigation": "Différence des moyennes",
-  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la largeur de l'intervalle de confiance, et l'autre sera calculé",
+  "navigation": "Différence de Moyennes",
+  "howtouse": "Spécifiez soit la taille de l'échantillon, soit la largeur de l'intervalle de confiance et l'autre sera calculé",
   "n1": "Taille de l'échantillon du groupe 1",
   "width": "Largeur de l'intervalle de confiance",
-  "ratio": "Ratio de la taille de l'échantillon du groupe 2 par rapport au groupe 1",
-  "meandiff": "Différence de moyenne",
+  "ratio": "Ratio de la taille de l'échantillon du groupe 2 par rapport à celle du groupe 1",
+  "meandiff": "Différence de Moyenne",
   "sd1": "Écart-type du groupe 1",
   "sd2": "Écart-type du groupe 2",
   "conflevel": "Niveau de confiance (0-1)",
@@ -13,6 +13,6 @@
   "help": {
     "title": "Taille d'échantillon, Précision d'une différence de moyenne",
     "r_help": "help(prec_meandiff, package ='presize')",
-    "body": "\nCeci est une évaluation de la taille de l'échantillon pour une différence de moyennes basée sur la largeur de l'intervalle de confiance. Elle calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur spécifie l'autre.\n<br/><br/>\n<b>Taille de l'échantillon du groupe 1 :</b> Spécifiez le nombre de sujets dans le groupe 1\n<br/><br/>\n<b>Largeur de l'intervalle de confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de la précision d'une estimation et est la limite supérieure moins la limite inférieure.\n<br/><br/>\n<b>Ratio de la taille de l'échantillon du groupe 2 par rapport au groupe 1 :</b> Spécifiez le ratio de la taille de l'échantillon du groupe 2 par rapport à celle du groupe 1. Une valeur de 1 signifie des tailles d'échantillon égales.\n<br/><br/>\n<b>Différence de moyenne :</b> Spécifiez la différence attendue entre les moyennes des groupes\n<br/><br/>\n<b>Écart-type du groupe 1 :</b> Spécifiez l'écart-type du résultat dans le groupe 1\n<br/><br/>\n<b>Écart-type du groupe 2 :</b> Spécifiez l'écart-type du résultat dans le groupe 2\n<br/><br/>\n<b>Niveau de confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<b>Hypothèse de variance :</b> Spécifiez si les variances des groupes sont supposées égales ou inégales. La spécification de variances égales utilise une estimation commune de la variance.\n<br/><br/>\n<b>Packages R requis :</b> presize\n\t\t\t"
+    "body": "\nCeci est une évaluation de la taille d'échantillon pour une différence de moyennes basée sur la largeur de l'intervalle de confiance. Il calcule la taille de l'échantillon ou la largeur de l'intervalle de confiance lorsque l'utilisateur \nspécifie l'autre.\n<br/><br/>\n<b>Taille de l'échantillon du groupe 1 :</b> Spécifiez le nombre de sujets dans le groupe 1\n<br/><br/>\n<b>Largeur de l'intervalle de confiance :</b> Spécifiez la largeur de l'intervalle de confiance souhaitée. La largeur d'un intervalle de confiance est une mesure de la précision d'une estimation et est la borne supérieure moins la borne inférieure.\n<br/><br/>\n<b>Ratio de la taille de l'échantillon du groupe 2 par rapport à celle du groupe 1 :</b> Spécifiez le ratio de la taille de l'échantillon du groupe 2 par rapport à celle du groupe 1. Une valeur de 1 signifie des tailles d'échantillon égales.\n<br/><br/>\n<b>Différence de Moyenne :</b> Spécifiez la différence attendue entre les moyennes des groupes\n<br/><br/>\n<b>Écart-type du groupe 1 :</b> Spécifiez l'écart-type du résultat dans le groupe 1\n<br/><br/>\n<b>Écart-type du groupe 2 :</b> Spécifiez l'écart-type du résultat dans le groupe 2\n<br/><br/>\n<b>Niveau de confiance :</b> Spécifiez le niveau souhaité de l'intervalle de confiance\n<br/><br/>\n<b>Hypothèse de variance :</b> Spécifiez si les variances des groupes sont supposées égales ou inégales. Spécifier des variances égales utilise une estimation commune regroupée de la variance.\n<br/><br/>\n<b>Packages R requis :</b> presize\n\t\t\t"
   }
 }

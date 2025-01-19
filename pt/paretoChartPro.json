@@ -1,0 +1,26 @@
+{
+  "title": "Gráfico de Pareto",
+  "navigation": "Gráfico de Pareto",
+  "label1": "Três opções - Formato longo (padrão) ou seja, defeitos e contagens em colunas verticais, Formato amplo ou seja, defeitos como nomes de colunas e contagens como linha, e Calcular contagens a partir de dados brutos",
+  "selectLongRad": "Opção 1: Formato longo - escolha a categoria de defeitos e as contagens de defeitos",
+  "selectWideRad": "Opção 2: Formato amplo - Nomes das colunas serão usados como categoria de defeitos e a 1ª linha (padrão) será usada como contagens",
+  "selectRawRad": "Opção 3: Dados brutos - calcular contagens para plotar o gráfico de Pareto",
+  "rownumForCounts": "Número da linha (padrão 1ª linha) a ser usada para contagens",
+  "mainTitle": "Título do Gráfico",
+  "defects": "Variável (por exemplo, categorias) a ser plotada",
+  "counts": "(Opcional) Variável a ser usada como contagens para plotar",
+  "grouping": "(Opcional) Variável de agrupamento para plotar múltiplos gráficos de Pareto lado a lado",
+  "uniformBarOrderChk": "Plotar barras na mesma ordem alfabética (entre grupos). Desmarque para ordenar barras com base na frequência decrescente (dentro de cada grupo)",
+  "grouping2": "(Opcional) Uma variável de agrupamento para plotar múltiplos Pareto lado a lado",
+  "rawVariable": "Variável (por exemplo, categorias) com dados brutos",
+  "xlab": "Uma string especificando o rótulo para o eixo x",
+  "ylab": "Uma string especificando o rótulo para o eixo y",
+  "ylab2": "Uma string especificando o rótulo para o segundo eixo y do lado direito",
+  "percentStep": "Passo percentual a ser usado como marcas de tick para o segundo eixo y do lado direito",
+  "digits": "Número de casas decimais para a tabela de estatísticas",
+  "help": {
+    "title": "Gráfico de Pareto",
+    "r_help": "help(pareto.chart, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tfunção pareto.chart para criar uma tabela de estatísticas e plotar um gráfico de Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar o arquivo de conjunto de dados de amostra chamado defects_frequency_pareto_chart.xlsx. Abra o arquivo na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

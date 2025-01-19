@@ -1,12 +1,12 @@
 {
-  "title": "Comparer les pentes du modèle de régression quantile",
+  "title": "Comparer les pentes des modèles de régression quantile",
   "navigation": "Modèles de régression quantile",
   "label1": "Compare N modèles de régression quantile.",
-  "label4": "**REMARQUE : Les modèles créés à partir de l'optimisation du modèle (classe train) ne sont pas pris en charge",
-  "modelselector1": "Sélectionnez 2 ou plusieurs modèles de régression quantile pour comparer les pentes :",
+  "label4": "**REMARQUE : Les modèles créés à partir de l'ajustement du modèle (classe train) ne sont pas pris en charge",
+  "modelselector1": "Sélectionnez 2 modèles de régression quantile ou plus pour comparer les pentes :",
   "help": {
-    "title": "Comparer les pentes du modèle de régression quantile",
+    "title": "Comparer les pentes des modèles de régression quantile",
     "r_help": "help(anova.rq,package='quantreg')",
-    "body": "\n<b>Description</b></br>\nCalculez les statistiques de test pour deux ou plusieurs ajustements de régression quantile. \n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject : objets de la classe rq, provenant d'un appel à rq.\n</li>\n</ul>\n<b>Détails</b><br/>\nL'hypothèse d'intérêt est que les coefficients de pente des modèles sont identiques. La statistique de test est une variante du test de Wald décrit dans Koenker et Bassett (1982).<br/>\n<b>Valeur</b><br/>\nUn objet de la classe \"anova\" héritant de la classe \"data.frame\".<br/>\n<b>Paquet</b></br>\nquantreg</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(anova.rq,package='quantreg')</br></br>\n"
+    "body": "\n<b>Description</b></br>\nCalculer les statistiques de test pour deux ou plusieurs ajustements de régression quantile. \n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nanova(object, ...)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject : objets de la classe rq, provenant d'un appel à rq.\n</li>\n</ul>\n<b>Détails</b><br/>\nL'hypothèse d'intérêt est que les coefficients de pente des modèles sont identiques. La statistique de test est une variante du test de Wald décrit dans Koenker et Bassett (1982).<br/>\n<b>Valeur</b><br/>\nUn objet de classe \"anova\" héritant de la classe \"data.frame\".<br/>\n<b>Paquet</b></br>\nquantreg</br>\n<b>Aide</b></br>\nPour une aide détaillée, cliquez sur l'icône R en haut à droite de cette superposition de dialogue ou exécutez la commande suivante dans l'éditeur de syntaxe R help(anova.rq,package='quantreg')</br></br>\n"
   }
 }

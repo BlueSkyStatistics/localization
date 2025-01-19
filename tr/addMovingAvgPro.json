@@ -1,0 +1,12 @@
+{
+  "title": "Hareketli Ortalama Değişkenini Hesapla ve Ekle",
+  "navigation": "Hareketli Ortalama",
+  "variableSelcted": "Hareketli ortalamayı hesaplamak için bir değişken seçin",
+  "sampleSize": "Hareketli ortalamayı hesaplamak için grup boyutunu belirtin (örneğin 5)",
+  "movingAvgVarName": "Ekle/ güncellemek için hareketli ortalama değişkeninin adını belirtin (örneğin hareketliOrt)",
+  "help": {
+    "title": "Seçilen değişken için hareketli ortalamayı hesapla",
+    "r_help": "help(mean, package = base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\t<br/>\n\t\t\t\tSeçilen değişken için belirtilen grup boyutu için hareketli ortalamayı hesaplayın. Sonucu saklamak için veri kümesine bir değişken ekleyin veya değiştirin (belirtilen değişken adı zaten varsa)<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

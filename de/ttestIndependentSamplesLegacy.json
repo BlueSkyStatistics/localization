@@ -11,23 +11,23 @@
   "Target2": "Faktorvariable mit 2 Ebenen",
   "label2": "Fehlende Werte",
   "Analysis": "Analyse nach Analyse",
-  "Listwise": "Listweise",
+  "Listwise": "Listenweise",
   "conflevel": "Konfidenzintervall:",
   "MissingVals": "Optionen für fehlende Werte",
   "cohensdNoCorrection": "Cohen's d",
   "hedgesgNoCorrection": "Hedges' g",
-  "glassdNoCorrection": "Glass' Delta",
+  "glassdNoCorrection": "Glass's Delta",
   "hedgesgCorrect": "Hedges' g mit bias-korrigiert",
-  "glassdCorrect": "Glass' Delta mit bias-korrigiert",
+  "glassdCorrect": "Glass's Delta mit bias-korrigiert",
   "effectsizes": "Effektgrößen",
   "cohensdCorrect": "Cohen's d mit bias-korrigiert",
   "label3": "Optionen für Cohen's d",
   "label4": "Optionen für Hedges' g",
-  "label5": "Optionen für Glass' Delta",
+  "label5": "Optionen für Glass's Delta",
   "showEffectSizes": "Effektgrößen anzeigen",
   "help": {
     "title": "t-Test, Unabhängige Stichproben",
     "r_help": "help(t.test, package ='stats')",
-    "body": "\n<b>Beschreibung</b></br>\nFührt einen einseitigen t-Test gegen die beiden Gruppen durch, die durch eine Faktorvariable (mit zwei Ebenen) gebildet werden. Zeigt Ergebnisse für gleiche Varianzen TRUE und FALSE an. Bei gleichen Varianzen wird die gepoolte Varianz verwendet, andernfalls wird die Welch- (oder Satterthwaite-) Näherung für die Freiheitsgrade verwendet. Intern wird t.test im stats-Paket für jede ausgewählte Variable aufgerufen.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyIndSmTTest(varNamesOrVarGlobalIndices=c('var1','var2'), group=c('var3'), conf.level = 0.95, alternative=\"two.sided\", missing =0, datasetNameOrDatasetGlobalIndex = 'Dataset') \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: ausgewählte Skalenvariablen (z.B. var1, var2)\n</li>\n<li>\ngroup: eine Faktorvariable mit zwei Ebenen (z.B. var3)\n</li>\n<li>\nconf.level: ein numerischer Wert (z.B. 0.95).\n</li>\n<li>\nmissing: fehlende Werte werden auf Variablenbasis behandelt (missing =0) oder listenweise über alle Variablen (missing=1).\n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: Name des Datensatzes (z.B. Dataset), aus dem var1, var2 und var3 ausgewählt werden.\n</li>\n<li>\nalternative: ein Zeichenfolgenwert, der die Alternativhypothese angibt, muss einer von \"two.sided\" (Standard), \"greater\" oder \"less\" sein. Sie können nur den Anfangsbuchstaben angeben.\n</li>\n</ul>\n<b>Details</b></br>\nEine Liste mit den Ergebnistabellen wird zurückgegeben.\n<br/>\n<b>Beispiel</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# Dataset muss im UI-Grid geladen werden</br>\nBSkyLoadRefresh(\"Dataset\")</br>\nBSky_One_Simple_T_Test = BSkyIndSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),group=c('Deptt'),conf.level=0.95, alternative=\"less\", datasetNameOrDatasetGlobalIndex ='Dataset')</br>\n</code> <br/>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl aus: help(t.test, package ='stats'), indem Sie einen R-Code-Block erstellen, indem Sie + im Ausgabefenster klicken."
+    "body": "\n<b>Beschreibung</b></br>\nFührt einen einseitigen t-Test gegen die zwei Gruppen durch, die durch eine Faktorvariable (mit zwei Ebenen) gebildet werden. Zeigt Ergebnisse für gleiche Varianzen TRUE und FALSE an. Bei gleichen Varianzen wird die gepoolte Varianz verwendet, andernfalls wird die Welch- (oder Satterthwaite-) Näherung für die Freiheitsgrade verwendet. Intern wird t.test im stats-Paket für jede ausgewählte Variable aufgerufen.\n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nBSkyIndSmTTest(varNamesOrVarGlobalIndices=c('var1','var2'), group=c('var3'), conf.level = 0.95, alternative=\"two.sided\", missing =0, datasetNameOrDatasetGlobalIndex = 'Dataset') \n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nvarNamesOrVarGlobalIndices: ausgewählte Skalenvariablen (z.B. var1, var2)\n</li>\n<li>\ngroup: eine Faktorvariable mit zwei Ebenen (z.B. var3)\n</li>\n<li>\nconf.level: ein numerischer Wert (z.B. 0.95).\n</li>\n<li>\nmissing: fehlende Werte werden auf Variablenbasis behandelt (missing =0) oder listenweise über alle Variablen (missing=1).\n</li>\n<li>\ndatasetNameOrDatasetGlobalIndex: Name des Datensatzes (z.B. Dataset), aus dem var1, var2 und var3 ausgewählt werden.\n</li>\n<li>\nalternative: ein Zeichenfolgenwert, der die Alternativhypothese angibt, muss einer von \"two.sided\" (Standard), \"greater\" oder \"less\" sein. Sie können nur den Anfangsbuchstaben angeben.\n</li>\n</ul>\n<b>Details</b></br>\nEine Liste mit den Ergebnistabellen wird zurückgegeben.\n<br/>\n<b>Beispiel</b></br>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'))</br>\n# Dataset muss im UI-Grid geladen werden</br>\nBSkyLoadRefresh(\"Dataset\")</br>\nBSky_One_Simple_T_Test = BSkyIndSmTTest(varNamesOrVarGlobalIndices =c('Sales','Expenses'),group=c('Deptt'),conf.level=0.95, alternative=\"less\", datasetNameOrDatasetGlobalIndex ='Dataset')</br>\n</code> <br/>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nFür detaillierte Hilfe klicken Sie auf das R-Symbol in der oberen rechten Ecke dieses Dialogfelds oder führen Sie den folgenden Befehl aus: help(t.test, package ='stats'), indem Sie einen R-Code-Chunk erstellen, indem Sie + im Ausgabefenster klicken."
   }
 }

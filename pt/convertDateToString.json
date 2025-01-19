@@ -1,0 +1,17 @@
+{
+  "title": "Converter Variáveis de Data para Caractere",
+  "navigation": "Data para Caractere",
+  "label1": "Selecione um sufixo ou prefixo para variáveis convertidas",
+  "suffix": "Sufixo",
+  "prefix": "Prefixo",
+  "prefixOrSuffix": "Insira um prefixo ou sufixo",
+  "Destination": "Selecione variáveis de data para converter em caractere",
+  "DateFormat": "Selecione o formato de data para converter",
+  "TimeZone": "Selecione um fuso horário (padrão - nada selecionado é o fuso horário local do PC)",
+  "advanced_lbl": "Avançado",
+  "help": {
+    "title": "Converter Data para Caractere",
+    "r_help": "help(strftime, package=\"base\")",
+    "body": "\n<b>Descrição</b></br>\nConverte data (posixct e classe de data) para caractere - para controlar o formato em que a data é exibida. Você especifica como entrada o formato em que a string deve ser gerada, ou seja, ano/mês/dia ou mês-dia=ano etc.\nA função acima chama internamente strftime no pacote base. Estendemos strftime para suportar múltiplas variáveis.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkystrftime <-function (varNames = \"\", dateFormat = \"\", timezone = \"\", prefixOrSuffix = \"sufixo\", \n    prefixOrSuffixValue = \"\", data = \"\") \n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\n​data: O nome do conjunto de dados\n</li>\n<li>\nvarNames: As variáveis da classe posixct e classe de data que precisam ser convertidas​ para caractere\n</li>\n<li>\ndateFormat: Uma string de caractere. O padrão para os métodos de formato é \"%Y-%m-%d %H:%M:%S\" se qualquer elemento tiver um componente de tempo que não seja meia-noite, e \"%Y-%m-%d\" caso contrário. Se options(\"digits.secs\") estiver definido, até o número especificado de dígitos será impresso para os segundos\n</li>\n<li>\ntimezone: Uma string de caractere especificando o fuso horário a ser usado para a conversão. Específico do sistema (veja as.POSIXlt), mas \"\" é o fuso horário atual, e \"GMT\" é UTC. Valores inválidos são mais comumente tratados como UTC, em algumas plataformas com um aviso.\n</li>\n<li>\nprefixOrSuffix: Especifica um prefixo ou sufixo para as novas variáveis de string. Aceita c(\"prefixo\") ou c(\"sufixo\"). Novas variáveis que são criadas com este prefixo/sufixo ao nome da variável original. \n</li>\n</ul>\n<b>Pacote</b></br>\nbase</br>\n<b>Ajuda</b></br>\najuda(strftime)    \n"
+  }
+}

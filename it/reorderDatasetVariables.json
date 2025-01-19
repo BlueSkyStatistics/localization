@@ -1,0 +1,12 @@
+{
+  "title": "Riordina le variabili in ordine alfabetico",
+  "navigation": "Riordina variabili",
+  "label1": "Riordina le variabili alfabeticamente",
+  "rd1": "A-Z",
+  "rd2": "Z-A",
+  "help": {
+    "title": "Riordina le variabili in ordine alfabetico",
+    "r_help": "aiuto(riordina)",
+    "body": "\n<b>Descrizione</b></br>\nRiordina le variabili nel dataset in ordine alfabetico. Utilizziamo la funzione di ordinamento per ordinare i nomi delle colonne/variabili nel dataset e la funzione select nel pacchetto dplyr per selezionare i nomi delle colonne nell'ordine alfabetico corretto \n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \n##Riordinamento alfabetico (A-Z)\nNome_dataset <- Nome_dataset %>%   dplyr::select(sort(names(.)))\n##Riordinamento alfabetico (Z-A)\nNome_dataset <- Nome_dataset %>%  dplyr::select(rev(sort(names(.))))\n</code> <br/>\n<b>Argomenti</b><br/>\nNessuno<br/>\n<b>Pacchetto</b></br>\ndplyr</br>\n<b>Aiuto</b></br>\naiuto(select, pacchetto='dplyr')<br/>\naiuto(riordina)\n    "
+  }
+}

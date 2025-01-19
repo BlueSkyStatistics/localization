@@ -1,0 +1,17 @@
+{
+  "title": "Grafico di Frequenza",
+  "navigation": "Grafico di Frequenza",
+  "subsetvars": "Seleziona variabili",
+  "paretoChartChk": "Traccia grafico di Pareto",
+  "createDatasetChk": "Crea dataset dalla tabella di frequenza",
+  "label1": "Opzioni di ordinamento per la tabella di frequenza",
+  "selectFreqSortRad": "Ordina la tabella di frequenza per frequenza",
+  "selectVarSortRad": "Ordina la tabella di frequenza per i valori della variabile",
+  "selectNoSortRad": "Nessuno",
+  "selectSortOrderChk": "Ordine di ordinamento decrescente (deseleziona per ordine crescente)",
+  "help": {
+    "title": "Tabella di Frequenza",
+    "r_help": "help(ftable, package=stats)",
+    "body": "\n<b>Descrizione</b></br>\nGenera le frequenze per ogni valore unico in una o più variabili o nomi di colonne selezionati.\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nbfreq=BSkyFrequency( vars = c('var1','var2','var3'),data = \"datasetname\")\n<br/>\nBSkyFormat(bfreq)\n</code> <br/>\n<b>Dettagli</b></br>\nQuesta finestra utilizza le seguenti funzioni:</br>\n- ftable()</br>\n- summary()</br>\n- lapply()</br>\n- rbind()</br>\n- cbind()</br>\n"
+  }
+}

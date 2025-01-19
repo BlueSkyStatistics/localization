@@ -1,10 +1,10 @@
 {
-  "title": "Rezuma un model",
-  "navigation": "Rezuma un model",
+  "title": "Rezumați un model",
+  "navigation": "Rezumați un model",
   "modelselector1": "Selectați un model",
   "help": {
-    "title": "Rezuma un model",
-    "r_help": "ajutor(rezumat)",
-    "body": "\n                <b>Descriere</b></br>\nrezumat este o funcție generică utilizată pentru a produce rezumate ale rezultatelor diferitelor funcții de ajustare a modelului. Funcția invocă metode particulare care depind de clasa primului argument, de exemplu, rezumat.lm (model liniar), rezumat.glm (model liniar generalizat)\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nrezumat(obiect)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobiect: un obiect pentru care se dorește un rezumat.\n</li>\n</ul>\n<b>Valoare</b><br/>\nForma valorii returnate de rezumat depinde de clasa argumentului său. Consultați documentația metodelor particulare, adică ajutor(rezumat.lm), ajutor(rezumat.glm) pentru detalii despre ceea ce produce acea metodă.</br>\n<b>Pachet</b></br>\nbază</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestei suprapuneri de dialog sau rulați următoarea comandă în editorul de sintaxă R ajutor(rezumat)\n                "
+    "title": "Rezumați un model",
+    "r_help": "help(summary)",
+    "body": "\n                <b>Descriere</b></br>\nsummary este o funcție generică utilizată pentru a produce rezumate ale rezultatelor diferitelor funcții de ajustare a modelului. Funcția invocă metode particulare care depind de clasa primului argument, de exemplu, summary.lm (model liniar), summary.glm (model liniar generalizat)\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nsummary(object)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nobject: un obiect pentru care se dorește un rezumat.\n</li>\n</ul>\n<b>Valoare</b><br/>\nForma valorii returnate de summary depinde de clasa argumentului său. Consultați documentația metodelor particulare, adică help(summary.lm), help(summary.glm) pentru detalii despre ce este produs de acea metodă.</br>\n<b>Pachet</b></br>\nbaza</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă în editorul de sintaxă R help(summary)\n                "
   }
 }

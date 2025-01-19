@@ -1,0 +1,15 @@
+{
+  "title": "Mappa del Mondo",
+  "navigation": "Mappa del Mondo",
+  "region": "Variabile con i nomi dei paesi:",
+  "value": "Variabile con i valori da mappare:",
+  "colors": "Inserisci il numero di colori",
+  "zoomByStates": "Inserisci i paesi in cui ingrandire, ad esempio stati uniti d'america, canada, messico",
+  "specify_a_title": "Inserisci un titolo",
+  "legend": "Legenda:",
+  "help": {
+    "title": "Mappa del Mondo",
+    "r_help": "help(country_choropleth, package='choroplethr')",
+    "body": "\n            <b>Descrizione</b></br>\n            Disegna una mappa del mondo e ti consente di ingrandire facoltativamente 1 o più paesi\n             <br/>\n             <b>Utilizzo</b>\n             <br/>\n             <code> \n            country_choropleth(BSkyDfForMap, title=\"\", legend=\"\", num_colors =1,zoom=NULL)\n             </code> <br/>\n             <b>Argomenti</b><br/>\n             <ul>\n             <li>\n             BSkyDfForMap: Un data.frame con una colonna chiamata \"region\" e una colonna chiamata \"value\". Gli elementi nella colonna \"region\" devono corrispondere esattamente a come sono nominati i paesi nella colonna \"region\" in ?country.map. Esegui il codice qui sotto nella sezione altro per vedere le variabili in country.map\n             </li>\n             <li>\n             Titolo: Un titolo facoltativo per la mappa.\n             </li>\n             <li>\n             Legenda: Un nome facoltativo per la legenda.\n             </li>\n             <li>\n             num_colors: Il numero di colori sulla mappa. Un valore di 1 utilizzerà una scala continua. Un valore in [2, 9] utilizzerà quel numero di colori.\n             </li>\n             <li>\n             zoom: Un vettore facoltativo di paesi su cui ingrandire. Gli elementi di questo vettore devono corrispondere esattamente ai nomi dei paesi come appaiono nella colonna \"region\" di ?country.regions\n             </li>\n             </ul>\n             <b>Pacchetto</b></br>\n             choroplethr;choroplethrMaps;</br>\n             <b>Aiuto</b></br>\n             help(country_choropleth, package='choroplethr')</br>\n             <b>Altro</b></br>\n             <code> \n             # Esegui il codice qui sotto per accedere al dataset state.map<br/>\n             library(choroplethr)<br/>\n             library(choroplethrMaps)<br/>\n             data(country.map)<br/>\n             country.map<br/>\n             </code> <br/>\n    "
+  }
+}

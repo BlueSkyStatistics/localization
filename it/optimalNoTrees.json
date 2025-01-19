@@ -1,0 +1,16 @@
+{
+  "title": "Numero Ottimale di Alberi",
+  "navigation": "Ottimizza",
+  "dependentvar": "Variabile dipendente",
+  "independentvars": "Variabile(i) indipendente(i)",
+  "label1": "Impostazioni di simulazione degli alberi",
+  "startval": "Valore iniziale",
+  "endval": "Valore finale",
+  "stepval": "Valore di passo",
+  "mtry": "mtry",
+  "help": {
+    "title": "Numero Ottimale di Alberi",
+    "r_help": "help(randomForest,package='randomForest')",
+    "body": "\n                <b>Descrizione</b></br>\nPartendo dal valore predefinito di mtry, cerca il valore ottimale (rispetto alla stima dell'errore Out-of-Bag) di ntree (numero di alberi da crescere) per randomForest. La funzione BSkyMultiRandomForest chiama la funzione randomForest con gli argomenti definiti di seguito\n<br/>\n<b>Utilizzo</b>\n<br/>\n<code> \nBSkyMultiRandomForest(x , y=NULL, startval, endval, stepval, mtry)\n</code> <br/>\n<b>Argomenti</b><br/>\n<ul>\n<li>\nx : un data frame o una matrice di predittori, o una formula che descrive il modello da adattare (per il metodo di stampa, un oggetto randomForest).\n</li>\n<li>\ny :  Un vettore di risposta. Se è un fattore, si assume la classificazione, altrimenti si assume la regressione. Se omesso, randomForest verrà eseguito in modalità non supervisionata.\n</li>\n<li>\nstartval : valore iniziale per l'argomento ntree in randomForest().\n</li>\n<li>\nendval : valore finale per l'argomento ntree in randomForest().\n</li>\n<li>\nstepval : conteggio con cui startval dovrebbe essere incrementato in ogni iterazione fino a raggiungere il valore di endval.\n</li>\n<li>\nmtry : Numero di variabili campionate casualmente come candidati ad ogni divisione. Nota che i valori predefiniti sono diversi per la classificazione (sqrt(p) dove p è il numero di variabili in x) e per la regressione (p/3)\n</li>\n</ul>\n<b>Valore</b><br/>\nStampa il numero ottimale di alberi. Mostra anche una tabella con ntree e l'errore Out-of-Bag corrispondente<br/>\n<b>Pacchetto</b></br>\nrandomForest​;BlueSky</br>\n<b>Aiuto</b></br>\nPer un aiuto dettagliato clicca sull'icona R nell'angolo in alto a destra di questo overlay di dialogo o esegui il seguente comando nell'editor di sintassi R help(randomForest,package='randomForest')\n                "
+  }
+}

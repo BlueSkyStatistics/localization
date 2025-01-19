@@ -1,0 +1,9 @@
+{
+  "title": "Esporta Design - verranno creati tre file (csv, html, rda) con lo stesso nome del design",
+  "navigation": "Esporta Design",
+  "exportPath": "Percorso del file per esportare il design",
+  "help": {
+    "title": "Esporta Design",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tL'esportazione del Design creerà tre file (csv, html, rda) con lo stesso nome del design nel percorso della directory scelto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLo scopo dell'esportazione del design è di impostare e condurre gli esperimenti secondo il design nel mondo reale e raccogliere i risultati. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAggiungi colonna(e) che siano conformi alla convenzione di denominazione delle variabili R al file csv per registrare i risultati. Queste colonne aggiuntive sono conosciute come la/e risposta/e secondo il vocabolario del Design degli Esperimenti. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUna volta aggiunta la/e colonna/e di risposta al file csv, il menu DOE -> Importa Design può essere utilizzato per caricare il file csv contro il design corretto (già aperto) sulla griglia dell'interfaccia utente del dataset.  \n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

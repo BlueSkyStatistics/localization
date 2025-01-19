@@ -1,0 +1,15 @@
+{
+  "title": "선형 회귀",
+  "navigation": "선형, 기본(레거시)",
+  "modelname": "모델 이름 입력",
+  "dependent": "종속 변수",
+  "independent": "독립 변수(들)",
+  "nointercept": "절편 무시",
+  "generateplotchk": "잔차 대 적합, 정규 Q-Q, 스케일-위치 및 잔차 대 레버리지 플롯",
+  "weights": "가중치가 있는 변수를 지정하십시오",
+  "help": {
+    "title": "선형 회귀",
+    "r_help": "help(lm, package ='stats')",
+    "body": "\n            <b>설명</b></br>\n선형 회귀 모델을 구축합니다. 내부적으로 stats 패키지의 lm 함수를 호출합니다. BSkyLinearRegression이라는 lm 클래스의 객체를 반환합니다. 모델 요약, 계수 테이블, Anova 테이블 및 제곱합 테이블을 표시하고 다음을 플롯합니다: 잔차 대 적합, 정규 Q-Q, 이론적 분위수, 잔차 대 레버리지. 선택적으로 가중치가 있는 변수를 지정하고 절편을 무시할 수 있습니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#모델 요약<br/>\nsummary(LinearRegModel1)<br/>\n#Anova 테이블 표시<br/>\nanova(LinearRegModel1)<br/>\n#잔차 대 적합, 정규 Q-Q, 스케일-위치, 잔차 대 레버리지 플롯<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndepVar: 종속 변수의 이름. 예를 들어, mpg라는 변수를 예측하고 싶다면, 종속 변수는 mpg이므로 mpg를 입력하십시오.​\n</li>\n<li>\nindepVars: 독립 변수의 이름. 예를 들어, horsepower와 enginesize라는 종속 변수가 있는 데이터셋이 있다면, horsepower+enginesize를 입력하십시오. 범주형 변수는 자동으로 더미 코딩됩니다.​\n</li>\n<li>\ndataset: 데이터프레임의 이름. BlueSky Statistics에서 데이터 프레임이나 데이터셋(e.g. csv, Excel 파일, SAS 파일)을 열면 Dataset1, Dataset2, Dataset3으로 이름이 지정되므로 Dataset1을 입력하십시오.\n</li>\n</ul>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+  }
+}

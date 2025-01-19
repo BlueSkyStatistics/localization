@@ -3,24 +3,24 @@
   "navigation": "Recodificar",
   "oldvars": "Variables a Recodificar",
   "label1": "Opciones",
-  "newvarradio": "Nueva Variable(s)",
+  "newvarradio": "Nueva(s) Variable(s)",
   "newvar": "Ingrese nombres de nuevas variables separados por , por ej. newVar1, newVar2",
   "oldvarradio": "Sobrescribir variable(s) existente(s)",
-  "suffix": "Especifique un sufijo para las variables recodificadas",
-  "prefix": "Especifique un prefijo para las variables recodificadas",
+  "suffix": "Especificar un sufijo para las variables recodificadas",
+  "prefix": "Especificar un prefijo para las variables recodificadas",
   "enterSuffix": "Ingrese un sufijo",
   "enterPrefix": "Ingrese un prefijo",
   "label3": "Al especificar múltiples criterios de recodificación, use ; como separador.",
-  "label4": "NOTA: LOS VALORES DE CADENA DEBEN ESTAR ENTRE COMILLAS DOBLES(\") Y NO EN COMILLAS SIMPLES(').",
-  "label5": "Ingrese valores antiguos y nuevos separados por ; por ej. \"Masculino\"=\"Hombre\";\"Femenino\"=2;\"Houston, Texas\"=\"Texas\";\"No disponible\"=NA ",
+  "label4": "NOTA: LOS VALORES DE CADENA DEBEN ESTAR ENTRE COMILLAS DOBLES(\") Y NO COMILLAS SIMPLES(').",
+  "label5": "Ingrese valores antiguos y nuevos separados por ; por ej. \"Masculino\"=\"Hombre\";\"Fem\"=2;\"Houston, Texas\"=\"Texas\";\"No Disponible\"=NA ",
   "label5a": "Para recodificar tipo numérico ingrese 70=100;71=101;99=NA",
   "label5b": "Se admite rango de valores, por ej. 5:10=\"medio\" Valores especiales lo y hi pueden aparecer en un rango, por ej. lo:10=\"bajo\";11:89=\"medio\";90:hi=\"Alto\"",
-  "label6": "La palabra clave else se puede usar para todo lo que no se ajuste a una especificación, por ej. else =NA",
-  "dontMakeFactor": "Por defecto, la variable recodificada será un factor si la variable fuente es un factor. Para anular esto, marque la casilla",
+  "label6": "La palabra clave else puede usarse para todo lo que no se ajuste a una especificación, por ej. else =NA",
+  "dontMakeFactor": "Por defecto, la variable recodificada será un factor si la variable fuente es un factor. Para anular, marque la casilla",
   "oldnewvals": "Ingrese criterios de recodificación",
   "help": {
     "title": "Recodificar Variables",
     "r_help": "help(recode, package=car)",
-    "body": "\n<b>Descripción</b></br>\nRecodifica uno o más vectores numéricos, vectores de caracteres o factores de acuerdo con las especificaciones de recodificación. Puede almacenar los resultados sobrescribiendo variables existentes, especificando nuevos nombres de variables para almacenar valores recodificados o eligiendo almacenar los valores recodificados en nuevas variables con un prefijo o sufijo adecuado. El prefijo o sufijo se aplicará al nombre de la variable existente.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ncolNames: Un vector de caracteres que contiene una o más variables en el conjunto de datos a recodificar\n</li>\n<li>\nnewColNames:  Un vector de caracteres que contiene los nombres de las nuevas columnas.\n</li>\n<li>\nOldNewVals: Una cadena de caracteres de especificaciones de recodificación en la forma oldval1,newval1, oldval2,newval2\n</li>\n<li>\nNewCol: Un booleano que indica si los valores recodificados se almacenan en nuevas variables (TRUE) o si las variables existentes se sobrescriben (FALSE).\n</li>\n<li>\nprefixOrSuffix: Especifique si desea almacenar los valores recodificados en nuevas variables con el nombre que especifique como prefijo o sufijo. Ingrese prefijo o sufijo.\n</li>\n<li>\nprefixOrSuffixString: Ingrese una cadena para usar como prefijo o sufijo al nombre de la variable existente. Los valores recodificados se almacenarán en estas variables.\n</li>\n<li>\ndataSetNameOrIndex: El nombre del conjunto de datos/dataframe\n</li>\n</ul>\nNota: No convertiremos de numérico a factor. Cuando un numérico es recodificado, permanecerá numérico, cuando una variable de factor es recodificada, permanecerá un factor.<br/>\n<b>Paquete</b></br>\ncar</br>\n<b>Ayuda</b></br>\nEscriba la línea a continuación en el editor de sintaxis R de BlueSky Statistics</br>\nhelp(recode, package=car)\n"
+    "body": "\n<b>Descripción</b></br>\nRecodifica uno o más vectores numéricos, vectores de caracteres o factores de acuerdo con las especificaciones de recodificación. Puede almacenar los resultados sobrescribiendo variables existentes, especificando nuevos nombres de variables para almacenar valores recodificados o eligiendo almacenar los valores recodificados en nuevas variables con un prefijo o sufijo adecuado. El prefijo o sufijo se aplicará al nombre de la variable existente.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyRecode(colNames,newColNames,OldNewVals,NewCol=TRUE,dataSetNameOrIndex='Dataset2')\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ncolNames: Un vector de caracteres que contiene una o más variables en el conjunto de datos para recodificar\n</li>\n<li>\nnewColNames:  Un vector de caracteres que contiene los nombres de las nuevas columnas.\n</li>\n<li>\nOldNewVals: Una cadena de caracteres de especificaciones de recodificación en la forma oldval1,newval1, oldval2,newval2\n</li>\n<li>\nNewCol: Un booleano que indica si los valores recodificados se almacenan en nuevas variables (TRUE) o si las variables existentes se sobrescriben (FALSE).\n</li>\n<li>\nprefixOrSuffix: Especifique si desea almacenar los valores recodificados en nuevas variables con prefijo o sufijo con el nombre que especifique. Ingrese prefijo o sufijo.\n</li>\n<li>\nprefixOrSuffixString: Ingrese una cadena para usar como prefijo o sufijo al nombre de la variable existente. Los valores recodificados se almacenarán en estas variables.\n</li>\n<li>\ndataSetNameOrIndex: El nombre del conjunto de datos/dataframe\n</li>\n</ul>\nNota: No convertiremos de numérico a factor. Cuando un numérico es recodificado, seguirá siendo numérico, cuando una variable de factor es recodificada seguirá siendo un factor.<br/>\n<b>Paquete</b></br>\ncar</br>\n<b>Ayuda</b></br>\nEscriba la línea a continuación en el editor de sintaxis R de BlueSky Statistics</br>\nhelp(recode, package=car)\n"
   }
 }

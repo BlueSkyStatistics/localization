@@ -1,0 +1,13 @@
+{
+  "title": "Gráfico de Contorno 2D",
+  "navigation": "Gráfico de Contorno 2D",
+  "tvarbox1": "X",
+  "tvarbox2": "Y",
+  "tvarbox3": "Z",
+  "chk1": "Adicionar pontos de dados brutos (pontos pretos) com base em x e y ao gráfico de contorno",
+  "help": {
+    "title": "Gráfico de Contorno 2D",
+    "r_help": "help(geom_contour_filled, package='ggplot2')",
+    "body": "\n\t\t\t <b>Descrição</b></br>\n\t\t\tRegiões de contorno preenchidas\n\t\t\t</br>\n\t\t\tLinhas de contorno separam regiões onde a variável z cai em diferentes intervalos.\n\t\t\t</br>\n\t\t\tAs áreas entre as linhas de contorno são preenchidas com cores, representando diferentes intervalos de valores de z.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tEscala de cores\n\t\t\t</br>\n\t\t\tA paleta Espectral do ColorBrewer é aplicada para preencher as regiões de contorno.\n\t\t\t</br>\n\t\t\tA paleta Espectral é um esquema de cores divergente, transitando de cores frias para quentes, ideal para mostrar gradientes nos dados.\n\t\t\t</br>\n\t\t\t</br>\n\t\t\tOpcionalmente, adicione pontos de dados brutos ao gráfico\n\t\t\t</br>\n\t\t\tEsta camada plota pontos individuais com base nos valores de x e y no conjunto de dados (os pontos são pontos pretos).\n\t\t\t</br>\n\t\t\tIsso fornece uma maneira de sobrepor os pontos de dados brutos ao gráfico de contorno, dando mais contexto à visualização do contorno.\n    "
+  }
+}

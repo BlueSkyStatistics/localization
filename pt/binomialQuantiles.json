@@ -1,0 +1,15 @@
+{
+  "title": "Quantis Binomiais",
+  "navigation": "Quantis Binomiais",
+  "varvals": "Insira probabilidades separadas por vírgula. Exemplo: 0.3,0.2,0.5",
+  "size": "Ensaios binomiais",
+  "prob": "Probabilidades de sucesso",
+  "labelSig": "Nível de significância",
+  "lowtail": "Cauda inferior",
+  "uptail": "Cauda superior",
+  "help": {
+    "title": "Quantis Binomiais",
+    "r_help": "help(qbinom, package=stats)",
+    "body": "\n            <b>Descrição</b>\n            <br/>\nDensidade, função de distribuição, função quantil e geração aleatória para a distribuição binomial com parâmetros tamanho e prob.\n<br/>\nIsso é convencionalmente interpretado como o número de 'sucessos' em ensaios de tamanho.\n<br/>\n<b>Uso</b>\n<br/>\n<code>\n    dbinom(x, size, prob, log = FALSE)\n    <br/>\n    pbinom(q, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    qbinom(p, size, prob, lower.tail = TRUE, log.p = FALSE)\n    <br/>\n    rbinom(n, size, prob)\n    <br/>\n</code>\n<br/>\n<b>Argumentos</b>\n<br/>\n<ul>\n    <li>x, q : vetor de quantis.</li>\n    \n    \n    <li>p : vetor de probabilidades.</li>\n    \n    \n    <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n    \n    \n    <li>size : número de ensaios (zero ou mais).</li>\n    \n    \n    <li>prob : probabilidade de sucesso em cada ensaio.</li>\n    \n    \n    <li>log, log.p : lógico; se TRUE, as probabilidades p são dadas como log(p).</li>\n    \n    \n    <li>lower.tail : lógico; se TRUE (padrão), as probabilidades são P[X ≤ x], caso contrário, P[X > x].</li>\n</ul>\n\n\n\n<br/>\n<b>Detalhes</b>\n<br/>\nA distribuição binomial com size = n e prob = p tem densidade\n<br/>\n<code> p(x) = choose(n, x) p^x (1-p)^(n-x) </code>\n<br/>\npara x = 0, …, n. Note que os coeficientes binomiais podem ser computados por choose em R.\n<br/>\nSe um elemento de x não for inteiro, o resultado de dbinom é zero, com um aviso.\n<br/>\np(x) é computado usando o algoritmo de Loader, veja a referência abaixo.\n<br/>\nO quantil é definido como o menor valor x tal que F(x) ≥ p, onde F é a função de distribuição.\n<br/>\n<br/><b>Valor</b>\n<br/>\ndbinom dá a densidade, pbinom dá a função de distribuição, qbinom dá a função quantil e rbinom gera desvios aleatórios.\n<br/>\nSe size não for um inteiro, NaN é retornado.\n<br/>\nO comprimento do resultado é determinado por n para rbinom, e é o máximo dos comprimentos dos argumentos numéricos para as outras funções.\n<br/>\nOs argumentos numéricos além de n são reciclados para o comprimento do resultado. Apenas os primeiros elementos dos argumentos lógicos são usados.\n   "
+  }
+}

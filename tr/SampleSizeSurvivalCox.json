@@ -1,0 +1,20 @@
+{
+  "title": "Örneklem Büyüklüğü, Cox Modeli Testi",
+  "navigation": "Cox Modeli",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için: gücü belirtin\nGücü hesaplamak için: örneklem büyüklüğünü belirtin",
+  "n": "Örneklem Büyüklüğü",
+  "power": "Güç (0-1)",
+  "sd": "Kovaryantın Standart Sapması",
+  "propevent": "Olayın Oranı (0-1)",
+  "hr": "Kovaryantın Tehlike Oranı",
+  "rsquared": "Kovaryant ile diğer kovaryantlar arasındaki R-kare (0-1); ayarlanmamış test için 0 girin",
+  "siglevel": "Anlamlılık Seviyesi (0-1)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "help": {
+    "title": "Örneklem Büyüklüğü, Cox Modeli Testi",
+    "r_help": "help(ssizeEpiCont.default, package ='powerSurvEpi')",
+    "body": "\nBu, bir Cox orantılı tehlike modelinde tek bir kovaryant için örneklem büyüklüğünün değerlendirilmesidir. Kullanıcı diğerini belirttiğinde, tespit edilecek bir tehlike oranı verildiğinde örneklem büyüklüğünü veya gücü hesaplar.\n<br/><br/>\n<b>Örneklem Büyüklüğü:</b> Toplam denek sayısını belirtin\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa sıfır hipotezini reddetme olasılığı.\n<br/><br/>\n<b>Kovaryantın Standart Sapması:</b> Tehlike oranına ilişkin kovaryantın standart sapmasını belirtin\n<br/><br/>\n<b>Tehlike Oranı, Grup 1 vs Grup 2:</b> Kovaryant için tespit edilmek istenen tehlike oranını belirtin\n<br/><br/>\n<b>Olayla Oran:</b> Örneklemde olayın beklenen oranını belirtin (veya sansür oranının bir eksiği). Eğer 1 olasılığı belirtirseniz, sansür olmadığını varsayar.\n<br/><br/>\n<b>Kovaryant ile diğer kovaryantlar arasındaki R-kare; ayarlanmamış test için 0 girin:</b> Kovaryant ile Cox modelindeki diğer tüm kovaryantlar arasındaki r-kare değerini belirtin. 0 değeri, başka kovaryant olmadan ayarlanmamış bir testi ifade eder.\n<br/><br/>\n<b>Anlamlılık Seviyesi:</b> Testin istenen anlamlılık seviyesini belirtin (yani tip I hatası)\n<br/><br/>\nBu, powerSurvEpi paketindeki ssizeEpiCont.default ve powerEpiCont.default fonksiyonlarını kullanır. Daha fazla bilgi için üç nokta menüsü>Yardım>R Fonksiyonu Yardımı'na bakın.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> powerSurvEpi\n\t\t\t"
+  }
+}

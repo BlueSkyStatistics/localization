@@ -1,0 +1,31 @@
+{
+  "title": "파이 차트",
+  "suppressLabels": "카운트 및 백분율에 대한 모든 레이블 숨기기",
+  "optionsLabels": "레이블 옵션",
+  "suppressThreshold": "지정된 임계값 백분율 이하의 카운트 및 백분율에 대한 레이블 숨기기",
+  "radius": "레이블을 표시할 반지름 지정(반지름을 늘리면 레이블이 바깥쪽으로 이동함)",
+  "radiusNote": "참고: 위 옵션은 동심원 표시 옵션이 선택된 경우 적용되지 않습니다.",
+  "navigation": "파이 차트",
+  "concentricCircles": "동심원 표시(지정된 X 축 변수가 있을 때만 적용)",
+  "x": "X 축, 요인 변수 지정",
+  "y": "Y 변수, 숫자 변수 지정",
+  "fill": "채우기, 요인 변수 지정",
+  "alpha": "불투명도 (0-1)",
+  "width": "너비",
+  "rdgrp1": "채우기 비율",
+  "flip": "축 뒤집기",
+  "barcolor": "막대 색상(색상 선택 후, 적용하려면 컨트롤 외부를 클릭)",
+  "specify_a_title": "제목 입력",
+  "x_title": "X 축 레이블",
+  "y_title": "Y 축 레이블",
+  "Facetrow": "패싯 행",
+  "Facetcolumn": "패싯 열",
+  "Facetwrap": "패싯 랩",
+  "Facetscale": "패싯 스케일",
+  "facets_lbl": "패싯",
+  "help": {
+    "title": "파이 차트",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>설명</b></br>\n            파이 차트(또는 원형 차트)는 원형 통계 그래픽으로, 슬라이스로 나누어져 수치 비율을 나타냅니다. 파이 차트에서 각 슬라이스의 호 길이(따라서 중심 각도와 면적)는 그것이 나타내는 양에 비례합니다. 양은 카운트 또는 백분율로 나타낼 수 있습니다.\n            패싯은 요인 변수를 지정하여 선택적으로 생성할 수 있습니다. 또한 선택적으로 테마를 지정하고, 제목 및 x 및 y 축의 레이블을 지정할 수 있습니다.</br>\n            여러 x 변수를 지정하면 각 x 변수에 대해 별도의 파이 차트를 생성합니다.</br>\n            반지름은 레이블의 배치를 제어할 수 있게 해줍니다. 반지름이 1이면 레이블이 파이의 중앙에 배치되고, 반지름이 1.6이면 레이블이 파이 바깥쪽에 배치됩니다.</br>\n            바깥쪽의 연한 회색 원은 카운트 또는 총계를 나타냅니다. 자세한 내용은 파이 차트 하단의 텍스트를 참조하십시오.\n            <br/>\n            <b>사용법</b>\n            <br/>\n            <code>\n            #단일 요인 변수에 대한 파이 차트를 생성할 수 있으며, 파이는 각 요인 수준의 카운트를 나타냅니다. 여기서 요인 변수는 채우기에 해당합니다.<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"채우기: 종이 있는 파이 차트\") +\n\tylab(\"\") + \n\txlab(\"카운트\")</br></br>\n            #y 변수를 숫자/스케일 변수로 지정하고, 파이의 슬라이스를 요인 변수로 채울 수 있습니다. 파이는 각 요인 변수 수준에 대해 y 변수의 값을 합산하여 채워집니다. 아래 예를 참조하십시오.<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #x 변수, y 변수 및 채우기를 지정할 수 있습니다. 슬라이스는 x 변수의 각 수준에 대해 생성되며, 채우기에서 지정된 변수의 각 수준에 대해 y 변수의 값의 합으로 채워집니다.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>인수</b><br/>\n            <ul>\n            <li>\n            data: 기본 데이터셋​\n            </li>\n            <li>\n            aes():    데이터의 변수가 시각적 속성(미적)에 어떻게 매핑되는지를 설명하는 미적 매핑을 생성합니다.​\n            </li>\n            <li>\n            x: (선택 사항) 요인/범주형 변수. 막대의 길이는 각 요인 변수 수준의 카운트에 해당합니다.​\n            </li>\n            <li>\n            Y: (선택 사항) 숫자 변수\n            </li>\n            <li>\n            fill: (선택 사항) x의 수준의 카운트를 그룹화하기 위한 선택적 요인/범주형 변수입니다. (위 참조)​\n            </li>\n            <li>\n            geom_bar(): 막대 그래프를 생성하며, position =\"fill\"은 각 그룹 수준의 비율로 막대를 채웁니다.​\n            </li>\n            <li>\n            Coor_polar(): 극좌표계는 파이 차트에 가장 일반적으로 사용되며, 이는 극좌표계의 누적 막대 차트입니다.\n            </li>\n            <li>\n            Labs(): 축 레이블 및 범례 제목을 변경합니다(선택 사항)​\n            </li>\n            <li>\n            facet_grid(): 패널을 그리드에 배치합니다(선택 사항)​\n            </li>\n            <li>\n            theme_calc(): 계산기 테마를 지정합니다(선택 사항)​\n            </li>\n            <li>\n            coord_flip(): 축을 뒤집습니다(선택 사항)​\n            </li>\n            <li>\n            alpha: 불투명도를 제어하며, 0-1 사이의 값을 가집니다. 1은 불투명도가 없음을 의미합니다.\n            </li>\n            </ul>\n            <b>패키지</b></br>\n            ggplot2;ggthemes;</br>\n            <b>도움말</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            기타: R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻을 수 있습니다. 또한 help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 입력할 수 있습니다.​            \n    "
+  }
+}

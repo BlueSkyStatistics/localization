@@ -1,0 +1,13 @@
+{
+  "title": "Eksik Değerleri Tamamlama (Bir formül kullanarak)",
+  "navigation": "Bir formül kullanın",
+  "depVar": "Eksik değerleri tamamlamak için bir değişken seçin (Bu modelde bağımlı değişkendir)",
+  "label1": "Bağımsız değişkenleri formül oluşturucu kontrolüne taşıyarak bir formül oluşturun. Yardım için formül oluşturucudaki sembollerin üzerine gelin",
+  "formula": "Taşıma düğmesi ile birden fazla değişken taşımak, etkileşim terimleri olmadan bağımsız değişkenleri belirtmek için + varsayılan ayırıcıyı kullanır. Etkileşim terimleri ile bir model oluşturmak için sembole tıklayın.",
+  "independent": "Bağımsız Değişkenler (bir veya daha fazla)",
+  "help": {
+    "title": "Eksik Değerleri Tamamlama (Bir formül kullanarak)",
+    "r_help": "help(if_else,package='dplyr')",
+    "body": "\n            <b>Açıklama</b></br>\n            Eksik değerleri değiştirmek için bir formül oluşturun. Örneğin, eksik değerler için tahminler geliştirmek amacıyla bir regresyon modeli oluşturursunuz, denklem oluşturulduktan sonra, denklemi diyalog kutusuna yerleştirebilir ve yalnızca seçilen değişkendeki eksik değerler hesaplanacaktır.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),expression,var))<br/>\n            # expression'ı var2*4+1.32 ile değiştirme<br/>\n            Dataset$var<-with (Dataset,dplyr::if_else(is.na(var),var2*4+1.32,var))<br/>\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            var: Eksik değerlerin değiştirileceği veri kümesindeki değişkenin adı, örneğin var=c(\"satışlar\"). Değişken sayısal sınıfta olmalıdır\n            </li>\n            <li>\n            Dataset: var değişkenini içeren veri kümesi/veri çerçevesi\n            </li>\n            <li>\n            expression: Eksik değeri değiştirmek için kullanılan ifade, yukarıdaki örnekte var2*4+1.32\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            dplyr</br>\n            <b>Yardım</b></br>\n            Ayrıntılı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya bir R kodu parçası oluşturarak aşağıdaki komutu çalıştırın help(if_else, package ='dplyr') çıkış penceresinde + butonuna tıklayarak\n            "
+  }
+}

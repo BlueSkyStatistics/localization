@@ -2,7 +2,7 @@
   "title": "Variable ID",
   "navigation": "Variable ID",
   "varnamelabel": "Nom de la variable ID à créer",
-  "sortbyvarslabel": "Variables à trier en premier",
+  "sortbyvarslabel": "Variables à trier d'abord",
   "groupbyvarslabel": "Variables à regrouper par",
   "outputdatalabel": "Jeu de données de sortie",
   "newdatalabel": "Créer un nouveau jeu de données",
@@ -11,6 +11,6 @@
   "help": {
     "title": "Variable ID",
     "r_help": "help(row_number, package ='dplyr')",
-    "body": "\nCrée une variable d'identification (ID) numérique de ligne dans le jeu de données actuel ou dans une copie séparée du jeu de données actuel.  \nLa variable ID créée consistera en des valeurs numériques 1, 2, 3, etc., dans cet ordre, de haut en bas dans le jeu de données.  \nIl est possible de spécifier des variables à trier ou à regrouper avant que la variable d'identification ne soit créée.  Les variables à trier et à regrouper \npeuvent être les mêmes ou différentes.  Si aucune variable de regroupement n'est spécifiée, le numéro de ligne global du jeu de données sera attribué \na la variable ID.\n<br/><br/>\n<b>Nom de la variable ID à créer :</b> Spécifiez le nom souhaité de la variable ID dans le jeu de données de sortie.\n<br/><br/>\n<b>Variables à trier en premier (optionnel) :</b> Spécifiez les variables à trier avant que les groupes ne soient définis ou que la variable ID soit créée.\n<br/><br/>\n<b>Variables à regrouper par (optionnel) :</b> Spécifiez les variables dont les niveaux définiront l'attribution séparée des valeurs ID.  Par exemple, le regroupement par \ngendre créera des valeurs de 1, 2, 3, etc. séparément pour les hommes et les femmes, dans l'ordre d'apparition dans le jeu de données.\n<br/><br/>\n<b>Jeu de données de sortie :</b> Spécifiez si vous souhaitez créer un nouveau jeu de données ou écraser le jeu de données actuel.\n<br/><br/>\n<b>Packages R requis :</b> tidyverse\n\t\t\t"
+    "body": "\nCrée une variable d'identification (ID) numérique dans le jeu de données actuel ou dans une copie séparée du jeu de données actuel.  \nLa variable ID créée consistera en des valeurs numériques 1, 2, 3, etc., dans cet ordre, de haut en bas dans le jeu de données.  \nPeut éventuellement spécifier des variables à trier ou à regrouper avant que la variable d'identification ne soit créée.  Les variables à trier et à regrouper \npeuvent être les mêmes ou différentes.  Si aucune variable de regroupement n'est spécifiée, le numéro de ligne global du jeu de données sera attribué \na la variable ID.\n<br/><br/>\n<b>Nom de la variable ID à créer :</b> Spécifiez le nom souhaité de la variable ID dans le jeu de données de sortie.\n<br/><br/>\n<b>Variables à trier d'abord (optionnel) : </b> Spécifiez les variables à trier avant que les groupes ne soient définis ou que la variable ID ne soit créée\n<br/><br/>\n<b>Variables à regrouper par (optionnel) :</b> Spécifiez les variables dont les niveaux définiront l'attribution séparée des valeurs ID.  Par exemple, le regroupement par \ngendre créera des valeurs de 1, 2, 3, etc. séparément pour les hommes et les femmes, dans l'ordre d'apparition dans le jeu de données.\n<br/><br/>\n<b>Jeu de données de sortie :</b> Spécifiez si vous souhaitez créer un nouveau jeu de données ou écraser le jeu de données actuel\n<br/><br/>\n<b>Packages R requis :</b> tidyverse\n\t\t\t"
   }
 }

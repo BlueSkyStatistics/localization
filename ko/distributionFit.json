@@ -1,0 +1,25 @@
+{
+  "title": "비검열 데이터에 대한 단변량 분포의 적합",
+  "navigation": "분포 적합",
+  "variableSelcted": "분포를 포함하는 변수를 선택하십시오",
+  "label2": "다양한 분포에 대한 적합 테스트",
+  "normDistChk": "정규",
+  "weibullDistChk": "와이블",
+  "lnormDistChk": "로그 정규",
+  "poissonDistChk": "포아송",
+  "expDistChk": "지수",
+  "gammaDistChk": "감마",
+  "nbinomDistChk": "음의 이항",
+  "geomDistChk": "기하",
+  "betaDistChk": "베타",
+  "unifDistChk": "균일",
+  "logisDistChk": "로지스틱",
+  "cauchyDistChk": "코시",
+  "method": "적합 방법",
+  "gof": "'mge' 적합 방법이 위에서 선택된 경우에만 필요한 적합도 통계(gof)",
+  "help": {
+    "title": "비검열 데이터에 대한 단변량 분포의 적합",
+    "r_help": "help(fitdist, package = fitdistrplus)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t최대 우도(mle), 모멘트 일치(mme), 분위수 일치(qme) 또는 적합도 통계 최대화(mge)로 비검열 데이터에 대한 단변량 분포의 적합.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(fitdist, package = fitdistrplus) 및 help(gofstat, package = fitdistrplus)를 사용하십시오.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t아래에 네 가지 가능한 적합 방법이 설명되어 있습니다:\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t방법이=\"mle\"(기본값)일 때\n\t\t\t\t최대 우도 추정은 로그 우도를 최대화하는 것입니다. 최적의 값을 찾기 위해 mledist에서 optim을 통해 수치 최적화가 수행됩니다(자세한 내용은 mledist 참조).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t방법이=\"mme\"일 때\n\t\t\t\t모멘트 일치 추정은 이론적 모멘트와 경험적 모멘트를 동일하게 만드는 것입니다. 분포 매개변수의 추정 값은 다음 분포에 대해 닫힌 형태의 공식으로 계산됩니다: \"norm\", \"lnorm\", \"pois\", \"exp\", \"gamma\", \"nbinom\", \"geom\", \"beta\", \"unif\" 및 \"logis\". 그렇지 않으면 이론적 및 경험적 모멘트는 관찰된 모멘트와 이론적 모멘트 간의 제곱 차이의 합을 최소화하여 수치적으로 일치합니다. 이 경우, fitdist 호출 시 order 및 memp와 같은 추가 인수가 필요합니다(자세한 내용은 mmedist 참조).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t방법이 = \"qme\"일 때\n\t\t\t\t분위수 일치 추정은 이론적 분위수와 경험적 분위수를 동일하게 만드는 것입니다. 관찰된 분위수와 이론적 분위수 간의 제곱 차이의 합을 최소화하기 위해 qmedist에서 optim을 통해 수치 최적화가 수행됩니다. 이 방법을 사용하려면 분위수를 일치시킬 확률의 숫자 벡터로 정의된 추가 인수 probs가 필요합니다(자세한 내용은 qmedist 참조).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t방법이 = \"mge\"일 때\n\t\t\t\t최대 적합도 추정은 적합도 통계량을 최대화하는 것입니다. 적합도 거리를 최소화하기 위해 mgedist에서 optim을 통해 수치 최적화가 수행됩니다. 이 방법을 사용하려면 선택된 적합도 거리의 gof 코딩이라는 추가 인수가 필요합니다. 고전적인 Cramer-von Mises 거리(\"CvM\"), 고전적인 Kolmogorov-Smirnov 거리(\"KS\"), 고전적인 Anderson-Darling 거리(\"AD\")를 사용할 수 있으며, 이는 분포의 꼬리에 더 많은 가중치를 부여합니다. 또는 Luceno(2006)가 제안한 이 마지막 거리의 변형 중 하나를 사용할 수 있습니다(자세한 내용은 mgedist 참조). 이 방법은 이산 분포에 적합하지 않습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t방법이 = \"mse\"일 때\n\t\t\t\t최대 적합도 추정은 평균 로그 간격을 최대화하는 것입니다. msedist에서 optim을 통해 수치 최적화가 수행됩니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t수렴은 \n\t\t\t\toptim/constrOptim의 수렴을 위한 정수 코드로 아래에 정의되거나 사용자 제공 최적화 함수에서 사용자에 의해 정의됩니다. 0은 성공적인 수렴을 나타냅니다. 1은 optim의 반복 한계에 도달했음을 나타냅니다. 10은 Nealder-Mead 심플렉스의 퇴화를 나타냅니다. 100은 optim이 내부 오류를 만났음을 나타냅니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t적합도 통계는 gofstat()에 의해 계산됩니다. 카이제곱 통계는 chisqbreaks 인수로 정의된 셀 또는 데이터에서 자동으로 정의된 셀을 사용하여 계산되어 대략 동일한 수의 관찰을 각 셀에 도달하도록 하며, 대략 meancount 인수와 같거나 약간 더 많습니다(일부가 동점인 경우).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t연속 분포의 경우, Kolmogorov-Smirnov, Cramer-von Mises 및 Anderson-Darling 통계도 계산됩니다(자세한 내용은 Stephens(1986) 참조).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t중요한 통계는 연속 분포에 대한 Cramer-von Mises, Anderson-Darling 및 Kolmogorov 통계와 이산 분포에 대한 카이제곱 통계(\"binom\", \"nbinom\", \"geom\", \"hyper\" 및 \"pois\")입니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">분포 적합에 대한 좋은 개요는 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best를 참조하십시오.</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best\">분포 적합에 대한 좋은 개요는 https://stats.stackexchange.com/questions/132652/how-to-determine-which-distribution-fits-my-data-best를 참조하십시오.</a>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

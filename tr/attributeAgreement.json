@@ -1,0 +1,15 @@
+{
+  "title": "Öznitelik Anlaşması Analizi, Temel",
+  "navigation": "Öznitelik Anlaşması, Temel",
+  "variablePartSelcted": "Örnek/parça için değişkeni seçin",
+  "variableOpSelcted": "Değerlendirici/operatör için değişkeni seçin",
+  "variableRespSelcted": "Öznitelik/yanıt için değişkeni seçin",
+  "variableRefSelcted": "(Opsiyonel) Referans/standart yanıt için değişkeni seçin",
+  "alpha": "Güven aralığı (alpha) 0 ile 1 arasında",
+  "rowsTobeUsed": "Tüm satırların kullanılmasını istiyorsanız boş bırakın. Aksi takdirde analiz için kullanılacak satırları belirtin (örneğin, 1:25 veya 1,4,5,7:12 olarak belirtin)",
+  "help": {
+    "title": "Öznitelik anlaşması analizi",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tÖznitelik anlaşması analizi yapmak için fonksiyon\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(kappam.fleiss, package = irr) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, her biri P ve F değerlendirmeleri ile iki kez tekrarlanan 20 gözlem ile A ve B adlı iki Operatör için attributemsaAB.xlsx örnek veri seti dosyalarını kullanabilirsiniz.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tA, B, C adlı üç operatör için her biri iki kez tekrarlanan 10 gözlem ile \"sıralı\" (ordinal) Disagree, Somewhat Disagree, Neutral, Somewhat Agree ve Agree olarak değerlendirmeleri içeren attributemsaABCordered.RData örnek veri seti dosyasını da deneyebilirsiniz.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDosyaları veri ızgarasında dosya açma menüsü ile açın\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Pasta Grafiği",
+  "suppressLabels": "Sayım ve yüzdeler için tüm etiketleri gizle",
+  "optionsLabels": "Etiketler için seçenekler",
+  "suppressThreshold": "Belirtilen eşik yüzdesinin altındaki sayım ve yüzdeler için etiketleri gizle",
+  "radius": "Etiketleri görüntülemek için bir yarıçap belirtin (yarıçapı artırmak etiketleri dışarı taşır)",
+  "radiusNote": "Not: Yukarıdaki seçenek, konsantrik daireleri görüntüleme seçeneği seçildiğinde geçerli değildir.",
+  "navigation": "Pasta Grafiği",
+  "concentricCircles": "Konsantrik daireleri görüntüle (Yalnızca X ekseni değişkeni belirtildiğinde geçerlidir)",
+  "x": "X ekseni, faktör değişken(ler)ini belirtin",
+  "y": "Y değişkeni, sayısal bir değişken belirtin",
+  "fill": "Doldurma, bir faktör değişkeni belirtin",
+  "alpha": "Opaklık (0-1)",
+  "width": "Genişlik",
+  "rdgrp1": "Doldurma oranları",
+  "flip": "Eksenleri çevir",
+  "barcolor": "Çubuk rengi (Renk seçimi yaptıktan sonra, uygulamak için kontrolün dışına tıklayın)",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Pasta Grafiği",
+    "r_help": "help(coord_polar, package='ggplot2')",
+    "body": "\n            <b>Açıklama</b></br>\n            Pasta grafiği (veya daire grafiği), sayısal oranları göstermek için dilimlere bölünmüş dairesel bir istatistiksel grafiktir. Bir pasta grafiğinde, her dilimin yay uzunluğu (ve dolayısıyla merkezi açısı ve alanı), temsil ettiği miktara orantılıdır. Miktar, bir sayı veya yüzde olarak temsil edilebilir.\n            Facetler, bir faktör değişkeni belirterek isteğe bağlı olarak oluşturulabilir. Ayrıca temaları isteğe bağlı olarak belirtebilir ve x ve y eksenleri için bir başlık ve etiketler belirtebilirsiniz.</br>\n            Birden fazla x değişkeni belirttiğinizde, her x değişkeni için ayrı bir pasta grafiği oluştururuz. </br>\n            Yarıçap, etiketlerin yerleşimini kontrol etmenizi sağlar. 1 yarıçap, etiketleri pastanın merkezine yerleştirirken, 1.6 yarıçap etiketleri pastanın dışına yerleştirir.</br>\n            Dıştaki açık gri daire, sayım veya toplamı temsil eder. Detaylar için pasta grafiğinin altındaki metne bakın.\n            <br/>\n            <b>Kullanım</b>\n            <br/>\n            <code>\n            #Tek bir faktör değişkeni için bir pasta grafiği oluşturabilirsiniz, pastalar her faktör seviyesinin sayımlarını temsil eder. Burada faktör değişkeni doldurma ile ilişkilidir<br/>\n            ggplot(data=penguins, aes(x='', fill=species )) +\n\tgeom_bar( alpha=1,width=1,) +\n\tcoord_polar(\"y\") +\n\tlabs(  title= \"Doldurma ile pasta grafiği: tür\") +\n\tylab(\"\") + \n\txlab(\"Sayım\")</br></br>\n            #Bir ölçek/sayısal değişkeni y değişkeni olarak belirterek bir pasta grafiği oluşturabilirsiniz ve pasta dilimlerini bir faktör değişkeni ile doldurabilirsiniz. Pastalar, her faktör değişkeninin seviyeleri için y değişkeninin değerlerini toplamak suretiyle doldurulur, aşağıdaki örneğe bakın<br/>\n            ggplot(data = penguins, aes(x = \"\", y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n                width = 0.9, stat = \"identity\") + coord_polar(\"y\") </br></br>\n    #Bir x değişkeni, y değişkeni ve doldurma belirtebilirsiniz. Dilimler, x değişkeninin her seviyesi için oluşturulur ve doldurma ile belirtilen değişkenin her seviyesinin y değişkeninin değerlerinin toplamı ile doldurulur.<br/>\n    ggplot(data = penguins, aes(x = island, y = bill_length_mm, fill = species)) + geom_bar(alpha = 1,\n        width = 0.9, stat = \"identity\")<br/><br/>\n            </code> <br/>\n            <b>Argümanlar</b><br/>\n            <ul>\n            <li>\n            data: Varsayılan veri seti​\n            </li>\n            <li>\n            aes():    Verilerdeki değişkenlerin görsel özelliklere (estetik) nasıl eşlendiğini tanımlayan estetik eşlemeleri oluşturur.​\n            </li>\n            <li>\n            x: (İsteğe bağlı) Bir faktör/kategorik değişken. Çubuğun uzunluğu, her faktör değişkeninin seviyesinin sayımlarına karşılık gelir.​\n            </li>\n            <li>\n            Y: (İsteğe bağlı) bir sayısal değişken\n            </li>\n            <li>\n            fill: (İsteğe bağlı) x'deki seviyelerin sayımlarını gruplamak için isteğe bağlı bir faktör/kategorik değişken​\n            </li>\n            <li>\n            geom_bar(): Çubuk grafiği oluşturur, position =\"fill\" çubuğu her gruplama seviyesinin yüzdesi ile doldurur.​\n            </li>\n            <li>\n            Coor_polar(): Kutupsal koordinat sistemi, pasta grafikleri için en yaygın olarak kullanılır, bu da kutupsal koordinatlarda yığılmış çubuk grafiğidir.\n            </li>\n            <li>\n            Labs(): Eksen etiketlerini ve efsane başlıklarını değiştirir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            facet_grid(): Panelleri bir ızgarada düzenler (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            theme_calc(): Hesap makinesi temasını belirtir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            coord_flip(): Eksenleri çevirir (bu isteğe bağlıdır)​\n            </li>\n            <li>\n            alpha: Opaklığı kontrol eder, 0-1 arasında değer alır. 1, hiç opaklık yoktur.\n            </li>\n            </ul>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;</br>\n            <b>Yardım</b></br>\n            help(coord_polar, package=ggplot2)</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(labs), help(geom_bar),help(cord_polar), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) yazabilirsiniz.​            \n    "
+  }
+}

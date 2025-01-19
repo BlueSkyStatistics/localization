@@ -1,12 +1,12 @@
 {
-  "title": "Descriptifs",
+  "title": "Descriptives",
   "ChkboxShowOnlyTopFewFactors": "Afficher les comptes pour seulement les N niveaux de facteurs supérieurs",
   "txtNumTopFactorsToShow": "Entrez une valeur pour N",
   "skew": "Asymétrie",
   "mad": "Écart absolu médian",
-  "kurtos": "Kurtosis",
-  "label2": "Remarque : Lorsque la case à cocher n'est pas cochée, les comptes pour TOUS les niveaux seront affichés. Cela peut prendre un temps considérable si vous avez de nombreux niveaux de facteurs.",
-  "navigation": "Descriptifs (Legacy)",
+  "kurtos": "Kurtose",
+  "label2": "Remarque : Lorsque la case à cocher n'est pas cochée, les comptes pour TOUS les niveaux seront affichés. Cela peut prendre un temps considérable si vous avez de nombreux niveaux de facteurs",
+  "navigation": "Descriptives (Héritage)",
   "tvarbox1": "Variables sélectionnées",
   "tvarbox2": "Grouper par",
   "min": "Min",
@@ -14,17 +14,17 @@
   "mean": "Moyenne",
   "median": "Médiane",
   "sum": "Somme",
-  "sd": "Écart-type",
+  "sd": "Écart type",
   "stderror": "Erreur standard de la moyenne",
-  "iqr": "Plage interquartile",
+  "iqr": "Intervalle interquartile",
   "quantiles": "Quartiles",
   "probs": "Spécifiez les quartiles (si le quartile est sélectionné)",
   "addIsstatnames": "Noms de fonctions statistiques supplémentaires séparés par des virgules, par exemple var)",
   "label1": "Options pour les variables numériques",
   "label3": "Options pour les variables de facteur",
   "help": {
-    "title": "Descriptifs",
+    "title": "Descriptives",
     "r_help": "",
-    "body": "\n<b>Description</b></br>\nAffiche les statistiques descriptives suivantes :</br>\nmin, max, moyenne, médiane, somme, sd, erreur standard, iqr, quartiles. Si les quartiles sont sélectionnés, vous pouvez spécifier les quartiles nécessaires séparés par des virgules.</br>\nEn plus de cela, l'utilisateur peut passer une liste de noms de fonctions statistiques séparés par des virgules, par exemple var.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"nom du dataset\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variables d'échelle sélectionnées (par exemple Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: une ou plusieurs variables de facteur à grouper (par exemple Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Liste de fonctions. Celles définies sur TRUE seront exécutées. (par exemple min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilités des quartiles\n</li>\n<li>\nadditionalStats: Fonction statistique supplémentaire que l'utilisateur peut passer (par exemple var)\n</li>\n<li>\ndatasetName: Nom du dataset à partir duquel datasetColumnObjects et groupByColumnObjects sont choisis\n</li>\n</ul>\n<b>Valeur</b></br>\nUn objet de classe \"data.frame\", donnant les résultats pour chaque fonction sur chaque variable.</br>\n<b>Exemples</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Paquet</b></br>\nBlueSky</br>\n<b>Aide</b></br>\nL'aide R n'est pas disponible car nous avons écrit un code personnalisé utilisant plusieurs fonctions R. Si vous avez besoin d'inspecter le code, cliquez sur le bouton \"<>\".</br>\n    "
+    "body": "\n<b>Description</b></br>\nAffiche les statistiques descriptives suivantes :</br>\nmin, max, moyenne, médiane, somme, écart type, erreur standard, intervalle interquartile, quartiles. Si les quartiles sont sélectionnés, vous pouvez spécifier les quartiles nécessaires séparés par des virgules.</br>\nEn plus de cela, l'utilisateur peut passer une liste de noms de fonctions statistiques séparés par des virgules, par exemple var.\n<br/>\n<b>Utilisation</b>\n<br/>\n<code> \nBSkySummaryStats(datasetColumnObjects=list(var1=Dataset$var1, var2=Dataset$var2), groupByColumnObjects=list(var2=Dataset$var2, var3=Dataset$var3), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE) quantilesProbs = c(0,0.25,0.5,0.75,1), additionalStats = c(c('var',' IQR')), datasetName=\"nom du dataset\")\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\ndatasetColumnObjects: variables d'échelle sélectionnées (par exemple Dataset$var1, Dataset$var2)\n</li>\n<li>\ngroupByColumnObjects: une ou plusieurs variables de facteur à grouper (par exemple Dataset$var3, Dataset$var4)\n</li>\n<li>\nstatFunctionList: Liste de fonctions. Celles définies sur TRUE seront exécutées. (par exemple min=TRUE, sd=TRUE)\n</li>\n<li>\nquantilesProbs: Probabilités des quartiles\n</li>\n<li>\nadditionalStats: Fonction statistique supplémentaire que l'utilisateur peut passer (par exemple var)\n</li>\n<li>\ndatasetName: Nom du dataset à partir duquel datasetColumnObjects et groupByColumnObjects sont choisis\n</li>\n</ul>\n<b>Valeur</b></br>\nUn objet de classe \"data.frame\", donnant les résultats pour chaque fonction sur chaque variable.</br>\n<b>Exemples</b><br/>\n<code> \nDataset <- data.frame(Expenses=c(20,23,19,25,26), Sales=c(48,50,55,51,49), Gender=c('m','f','f','m','m'), Deptt=c('IT', 'Sales', 'IT','Sales','IT'), stringsAsFactors = TRUE)</br>\nResult_Numerical_Statistics_Analysis = BSkySummaryStats(datasetColumnObjects = list(Sales = Dataset$Sales, Expenses = Dataset$Expenses), groupByColumnObjects = list(Deptt= Dataset$Deptt), stats = c(min=FALSE,max=FALSE,mean=TRUE,median=TRUE,sum=FALSE,sd=FALSE,stderror=FALSE,iqr=FALSE,quantiles=FALSE),datasetName=\"Dataset\" )\n</code> <br/>\n<b>Package</b></br>\nBlueSky</br>\n<b>Aide</b></br>\nL'aide R n'est pas disponible car nous avons écrit un code personnalisé utilisant plusieurs fonctions R. Si vous avez besoin d'inspecter le code, cliquez sur le bouton \"<>\".</br>\n    "
   }
 }

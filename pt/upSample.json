@@ -1,0 +1,12 @@
+{
+  "title": "Amostra para Cima",
+  "navigation": "Amostra, Amostra para Cima",
+  "downsample": "Digite o nome do conjunto de dados",
+  "seed": "Definir semente",
+  "dependent": "Variável para amostragem para cima",
+  "help": {
+    "title": "Amostra para Cima",
+    "r_help": "help(createDataPartition, package=\"caret\")",
+    "body": "\n<b>Descrição</b></br>\nAmostragem para Cima de Dados Desequilibrados. upSample amostra com reposição para tornar as distribuições de classe iguais\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Classe\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: uma matriz ou data frame de variáveis preditoras\n</li>\n<li>\ny: uma variável fator com as associações de classe\n</li>\n<li>\nlist: a função deve retornar list(x, y) ou unir x e y? Se TRUE, a saída será convertida em um data frame.\n</li>\n<li>\nyname: se list = FALSE, um rótulo para a coluna de classe\n</li>\n</ul>\n<b>Detalhes</b></br>\nAmostragem aleatória simples é usada para amostrar para baixo as classes majoritárias. Note que os dados da classe minoritária permanecem intactos e que as amostras serão reordenadas na versão amostrada para baixo.</br>\nPara amostragem para cima, todos os dados originais permanecem intactos e amostras adicionais são adicionadas às classes minoritárias com reposição.</br>\n<b>Valor</b><br/>\nOu um data frame ou uma lista com elementos x e y.<br/>\n<b>Exemplos</b><br/>\n<code> \n## Um exemplo ridículo...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Pacote</b></br>\ncaret</br>\n<b>Ajuda</b></br>\nhelp(upSample, package ='caret')\n"
+  }
+}

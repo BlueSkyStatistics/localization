@@ -1,0 +1,13 @@
+{
+  "navigation": "عوامل فقط (إرث)",
+  "title": "ملخصات، عوامل فقط",
+  "subsetvars": "متغيرات الاستجابة، 2 أو أكثر",
+  "ChkboxShowOnlyTopFewFactors": "عرض العد فقط لأعلى N مستويات عوامل",
+  "txtNumTopFactorsToShow": "أدخل قيمة لـ N",
+  "label1": "ملاحظة: عند إلغاء تحديد مربع الاختيار، سيتم عرض العد لجميع المستويات. قد يستغرق هذا وقتًا طويلاً إذا كان لديك العديد من مستويات العوامل",
+  "help": {
+    "title": "عوامل فقط",
+    "r_help": "",
+    "body": "\n<b>الوصف</b></br>\nيعرض العد لكل مستوى من كل متغير عامل.\n<br/>\n<b>الاستخدام</b>\n<br/>\n<code> \nbfacvar = BSkyFactorVariableAnalysis (vars=c(\"var1,\"var2\",\"var3\"), data=\"datasetname\", show.only.top.factors=TRUE, max.number.top.factors=30)\n<br/>\nBSkyFormat(bfacvar)\n</code> <br/>\n<b>المعلمات</b><br/>\n<ul>\n<li>\nvars: المتغيرات العاملية لعرض عد المستويات\n</li>\n<li>\ndata: اسم مجموعة البيانات\n</li>\n<li>\nshow.only.top.factors: قيمة منطقية تحدد ما إذا كان يجب عرض العد لأعلى المستويات فقط أو لجميع المستويات.\n</li>\n<li>\nmax.number.top.factors: إذا كانت show.only.top.factors = TRUE، تحدد عدد المستويات التي سيتم عرض العد لها\n</li>\n</ul>\n"
+  }
+}

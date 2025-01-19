@@ -1,7 +1,28 @@
 {
+  "title": "Tabel de contingență",
+  "navigation": "Tabel de contingență (Moștenire)",
+  "row": "Variabilă pe rând",
+  "column": "Variabilă pe coloană",
+  "layer": "Variabilă(variabile) pe strat",
+  "weight": "Greutate (una)",
+  "label1": "Statistici",
+  "chisq": "Chisq",
+  "mcnemar": "McNemar",
+  "fisher": "Fisher",
+  "label2": "Reziduuri",
+  "unstandardized": "Nerăspuns",
+  "standardized": "Standardizat",
+  "adjusted": "Ajustat",
+  "label3": "Procente",
+  "rowpercent": "Rând",
+  "colpercent": "Coloană",
+  "label4": "Număr",
+  "expected": "Așteptat",
+  "label5": "Format de ieșire tabel lung",
+  "longTbl": "Tabel lung",
   "help": {
     "title": "Tabel de contingență",
-    "r_help": "ajutor(CrossTable, pachet=gmodels)",
-    "body": "\n            <b>Descriere</b></br>\nCreează un tabel de contingență cu variabile de rând, coloană și strat și opțional afișează următoarele:<br/>\nNumerele așteptate<br/>\nProcentele pe rânduri și coloane<br/>\nReziduuri nestandartizate, standardizate și ajustate<br/>\nChi-pătrat cu raport de șanse, statistici McNemar și Fisher<br/>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, greutate, nume_dataset, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: variabilă de rând\n</li>\n<li>\ny: variabilă de coloană\n</li>\n<li>\nlayers: una sau mai multe variabile pentru straturi\n</li>\n<li>\ngreutate: o variabilă numerică care conține greutățile de frecvență\n</li>\n<li>\nnume_dataset: Numele dataset-ului din care sunt alese x, y și layers (variabile)\n</li>\n<li>\nchisq:  dacă este TRUE, generează tabelul chi-pătrat\n</li>\n<li>\nprop.r: Procentele pe rânduri sunt produse dacă aceasta este TRUE\n</li>\n<li>\nprop.c: Procentele pe coloane sunt generate dacă aceasta este TRUE\n</li>\n<li>\nresid: dacă este TRUE, se generează reziduuri nestandartizate\n</li>\n<li>\nsresid: dacă este TRUE, se generează reziduuri standardizate\n</li>\n<li>\nexpected: Numerele așteptate sunt generate dacă aceasta este TRUE\n</li>\n<li>\nasresid:  dacă este TRUE, se generează reziduuri ajustate\n</li>\n</ul>\n<b>valoare</b></br>\nO listă cu rezultatele\n<br/>\n<b>Exemplu</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),nume_dataset='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>Pachet</b></br>\ngmodels</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat, faceți clic pe pictograma R din colțul din dreapta sus al acestui dialog sau rulați următoarea comandă ajutor(CrossTable, pachet=gmodels) creând un bloc de cod R făcând clic pe + în fereastra de ieșire  \n    "
+    "r_help": "help(CrossTable, package=gmodels)",
+    "body": "\n            <b>Descriere</b></br>\nCreează crosstab cu variabile pe rând, coloană și strat și opțional afișează următoarele<br/>\nNumere așteptate<br/>\nProcente pe rând și coloană<br/>\nReziduuri nerăspuns, standardizate și ajustate<br/>\nChisq cu raporturi de șanse, statistici McNemar și Fisher<br/>\n<br/>\n<b>Utilizare</b>\n<br/>\n<code> \nBSkyCrossTable(x,y,layers, weight, datasetname, chisq= FALSE, prop.r=FALSE, prop.c=FALSE, resid=FALSE, sresid=FALSE, expected=FALSE, asresid=FALSE)\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\nx: variabilă pe rând\n</li>\n<li>\ny: variabilă pe coloană\n</li>\n<li>\nlayers: una sau mai multe variabile pentru straturi\n</li>\n<li>\nweights: o variabilă numerică care conține greutățile de frecvență\n</li>\n<li>\ndatasetname: Numele setului de date din care sunt alese x,y și straturile (variabile)\n</li>\n<li>\nchisq:  dacă este TRUE generează tabel chi-pătrat\n</li>\n<li>\nprop.r: Procentele pe rând sunt produse dacă aceasta este TRUE\n</li>\n<li>\nprop.c: Procentele pe coloană sunt generate dacă aceasta este TRUE\n</li>\n<li>\nresid: dacă este TRUE, reziduuri nerăspuns sunt generate\n</li>\n<li>\nsresid: dacă este TRUE, reziduuri standardizate sunt generate\n</li>\n<li>\nexpected: Numerele așteptate sunt generate dacă aceasta este TRUE\n</li>\n<li>\nasresid:  dacă este TRUE, reziduuri ajustate sunt generate\n</li>\n</ul>\n<b>valoare</b></br>\nO listă cu rezultatele\n<br/>\n<b>Exemplu</b></br>\n<code> \nBSky_Multiway_Cross_Tab = BSkyCrossTable(x=c('manufact'),y=c('model'),<br/>\nlayers=c('type'),datasetname='Dataset2',<br/>\nchisq = FALSE,prop.r=FALSE,prop.c=FALSE,<br/>\nresid=FALSE,sresid=FALSE,expected=FALSE,<br/>\nasresid=FALSE)</br>\nBSkyFormat(BSky_Multiway_Cross_Tab)</br>\n</code> <br/>\n<b>Pachet</b></br>\ngmodels</br>\n<b>Ajutor</b></br>\nPentru ajutor detaliat faceți clic pe pictograma R din colțul din dreapta sus al acestui overlay de dialog sau rulați următoarea comandă help(CrossTable, package=gmodels) creând un chunk de cod R făcând clic pe + în fereastra de ieșire  \n    "
   }
 }

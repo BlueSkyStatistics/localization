@@ -1,0 +1,29 @@
+{
+  "title": "속성 일치 분석",
+  "navigation": "속성 일치",
+  "variablePartSelcted": "샘플/부품에 대한 변수를 선택하십시오",
+  "variableOpSelcted": "평가자/운영자에 대한 변수를 선택하십시오",
+  "variableRespSelcted": "속성/응답에 대한 변수를 선택하십시오",
+  "variableRefSelcted": "(선택 사항) 기준/표준 응답에 대한 변수를 선택하십시오",
+  "variableTrialSelcted": "(선택 사항) 시험/복제 번호에 대한 변수를 선택하십시오",
+  "alpha": "신뢰 구간(알파) 0에서 1 사이",
+  "misclassificationStatChk": "정확도 및 오분류 비율 표시",
+  "summaryDisagreementChk": "평가자 불일치 요약 vs 표준 표시",
+  "CohenKappaChk": "평가자/운영자 간의 Cohen의 Kappa 통계 계산",
+  "CohenKappaWeight": "Cohen의 Kappa에 적용할 가중치",
+  "label1": "속성 일치 연구 보고서 헤더 세부정보",
+  "gageName": "게이지 이름",
+  "dateStudy": "연구 날짜",
+  "partDescription": "부품 설명",
+  "machineName": "기계 이름",
+  "reportedBy": "보고자",
+  "operatorNames": "운영자 이름",
+  "testLocation": "테스트 위치",
+  "miscellaneous": "기타",
+  "rowsTobeUsed": "모든 행을 사용할 경우 비워 두십시오. 그렇지 않으면 분석에 사용할 행을 지정하십시오 (예: 1:25 또는 1,4,5,7:12로 지정)",
+  "help": {
+    "title": "속성 일치 분석",
+    "r_help": "help(kappam.fleiss, package = irr)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t속성 일치 분석을 수행하는 함수\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(kappam.fleiss, package = irr)를 사용하십시오\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 두 명의 운영자 A와 B가 각각 20개의 관측치를 두 번 반복하여 P 및 F 등급을 가진 attributemsaAB.xlsx 샘플 데이터 세트 파일을 사용할 수 있습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t세 명의 운영자 A, B, C가 각각 10개의 관측치를 두 번 반복하여 \"정렬된\" (서수) 등급인 불일치, 다소 불일치, 중립, 다소 동의 및 동의를 가진 attributemsaABCordered.RData 샘플 데이터 세트 파일을 시도할 수도 있습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t파일 열기 메뉴로 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

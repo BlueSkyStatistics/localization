@@ -8,6 +8,6 @@
   "help": {
     "title": "累積統計變數",
     "r_help": "help(cumsum, package ='base')",
-    "body": "\n<b>累積統計</b>\n<br/><br/>\n此對話框創建一個新變數，該變數存儲所選統計量的累積值，隨著您在當前數據集的行中向下移動。您可以選擇在一個或多個組內計算此累積值。\n<br/><br/>\n\n<b>新變數名稱：</b>將存儲累積值的變數名稱\n<br/><br/>\n\n<b>累積統計的變數：</b>將計算累積值的變數。必須是數字。\n<br/><br/>\n\n<b>分組變數：</b>可選變數，用於計算累積統計。\n<br/><br/>\n\n<b>累積統計：</b>將用於累積統計的統計量。\n<br/><br/>\n<ul>\n<li>cumsum: 累積和</li>\n<li>cummin: 累積最小值</li>\n<li>cummax: 累積最大值</li>\n<li>cummean: 累積均值</li>\n<li>cummedian: 累積中位數</li>\n<li>cumgmean: 累積幾何均值</li>\n<li>cumhmean: 累積調和均值</li>\n<li>cumvar: 累積方差</li>\n</ul>\n<br/><br/>\n<b>所需的R包：</b>cumstats, dplyr\n\t\t\t"
+    "body": "\n<b>累積統計</b>\n<br/><br/>\n此對話框創建一個新變數，用於存儲在當前數據集的行中向下計算的所選統計的累積值。您可以選擇在一個或多個組內計算此累積值。\n<br/><br/>\n\n<b>新變數名稱：</b> 將存儲累積值的變數名稱\n<br/><br/>\n\n<b>累積統計的變數：</b> 將計算累積值的變數。必須是數字。\n<br/><br/>\n\n<b>分組變數：</b> 可選變數，用於計算累積統計。\n<br/><br/>\n\n<b>累積統計：</b> 將用於累積統計的統計。\n<br/><br/>\n<ul>\n<li>cumsum: 累積和</li>\n<li>cummin: 累積最小值</li>\n<li>cummax: 累積最大值</li>\n<li>cummean: 累積平均值</li>\n<li>cummedian: 累積中位數</li>\n<li>cumgmean: 累積幾何平均數</li>\n<li>cumhmean: 累積調和平均數</li>\n<li>cumvar: 累積方差</li>\n</ul>\n<br/><br/>\n<b>所需的 R 套件：</b> cumstats, dplyr\n\t\t\t"
   }
 }

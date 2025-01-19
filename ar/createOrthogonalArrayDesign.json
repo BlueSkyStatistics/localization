@@ -1,0 +1,20 @@
+{
+  "title": "إنشاء تصميم مصفوفة متعامدة",
+  "navigation": "إنشاء تصميم مصفوفة متعامدة",
+  "selectedvars": "اختر المتغيرات",
+  "datasetname": "اسم التصميم",
+  "numOfRuns": "الحد الأدنى لعدد التجارب (يمكن تركه فارغًا)",
+  "minNumOfResidual": "الحد الأدنى لدرجات الحرية المتبقية",
+  "replications": "التكرارات",
+  "repeatOnlyChk": "كرر فقط",
+  "lbl1": "قد لا تحتاج إلى تغيير إعدادات العشوائية",
+  "randomseeds": "بذور العشوائية",
+  "randomizationChk": "عشوائية توليد التصميم",
+  "designnamefromcatlg": "(اختياري) مصفوفة التصميم المتعامد (مثال: من oacat$name كـ L12.2.2.6.1)",
+  "columnOptimization": "تحسين الأعمدة (الافتراضي هو الترتيب، الخيارات الأخرى min3، min34، min3.rela، min34.rela، minRPFT، minRelProjAberr",
+  "help": {
+    "title": "إنشاء تصميم مصفوفة متعامدة",
+    "r_help": "help(oa.design, package = DoE.base)",
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\toa.design وظيفة للوصول إلى المصفوفات المتعامدة، مما يسمح بتخصيص محدود مثالي للأعمدة\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(oa.design, package = DoE.base)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tاستخدم القائمة DOE->Inspect Design->Inspect Orthogonal Design Catalog (oacat) لتصفح التصاميم المتعامدة المتاحة للإشارة من كتالوج التصميم المحمل في حزمة DoE.base\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك استخدام ملف مجموعة البيانات النموذجية المسمى factor_grid_orthogonal_array_Design.xlsx. افتح الملف في شبكة البيانات باستخدام قائمة فتح الملف\n\t\t\t\tاختياريًا، يمكنك تحديد L72.2.53.3.2.4.1 كتصميم من oacat$name \n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

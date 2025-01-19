@@ -1,14 +1,14 @@
 {
-  "title": "數值統計，使用總結",
-  "navigation": "數值摘要，使用總結（舊版）",
-  "tvarbox1": "選擇的變量",
-  "tvarbox2": "按分組",
+  "title": "數值統計，使用 summarize",
+  "navigation": "數值摘要，使用 summarize (舊版)",
+  "tvarbox1": "選定變數",
+  "tvarbox2": "分組依據",
   "label1": "顯示選項",
   "horizontal": "橫向顯示",
   "vertical": "縱向顯示",
   "help": {
-    "title": "數值統計，使用總結",
+    "title": "數值統計，使用 summarize",
     "r_help": "",
-    "body": "\n<b>描述</b></br>\n輸出目標變量每組的以下數值統計。目標變量可以選擇性地按一個或多個因子或數值變量分組。打印目標變量或目標變量分組的每組的以下信息，即最小值，第一四分位數（25%），最大值，均值，中位數，第三四分位數（75%），總和，方差，標準差，標準誤差，偏度，峰度\n<br/>\n<b>用法</b>\n<br/>\n<code> \n##下面的函數對每個目標變量運行，結果數據框被轉置並組合<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndataset1: 這是數據集\n</li>\n<li>\ngroup_by: 可選地按一個或多個因子或數值變量對目標變量進行分組\n</li>\n<li>\nsummarize: 按指定的匯總函數對目標變量或目標變量的組（如果在group_by中指定了變量）進行匯總，即均值，中位數，最小值...\n</li>\n</ul>\n<b>值</b></br>\n一個\"data.frame\"類的對象，給出每個變量上每個函數的結果。</br>\n<b>包</b></br>\ncaret</br>\n<b>幫助</b></br>\nR幫助不可用，因為我們使用多個R函數編寫了自定義代碼。如果您需要檢查代碼，請單擊\"<>\"按鈕。</br>\n    "
+    "body": "\n<b>描述</b></br>\n輸出目標變數每組的數值統計。目標變數可以選擇性地按一個或多個因子或數值變數分組。打印目標變數或每組的以下信息，即最小值、第一四分位數 (25%)、最大值、平均值、中位數、第三四分位數 (75%)、總和、方差、標準差、標準誤、偏度、峰度\n<br/>\n<b>用法</b>\n<br/>\n<code> \n##以下函數對每個目標變數運行，結果數據框被轉置並合併<br/>\ndataset1 %>% dplyr::group_by(var1,var2...)  %>% dplyr::summarize( count =dplyr::n(),min = base::min(var3, na.rm = TRUE),Quantile_1st_25 =stats::quantile(var3, probs = seq(0.25),na.rm=TRUE),mean=base::mean(var3,na.rm =TRUE),median=stats::median(var3,na.rm =TRUE),Quantile_3rd_75 =stats::quantile(var3, probs = seq(0.75), na.rm = TRUE),  variance=stats::var(var3,na.rm =TRUE),std_err=BlueSky::bskystderr(var3),skewness=moments::skewness(var3,na.rm =TRUE), kurtosis=moments::kurtosis(var3,na.rm =TRUE))\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndataset1: 這是數據集\n</li>\n<li>\ngroup_by: 可選擇按一個或多個因子或數值變數分組目標變數\n</li>\n<li>\nsummarize: 通過指定的摘要函數對目標變數或目標變數的組（如果在 group_by 中指定變數）進行摘要，即平均值、中位數、最小值...\n</li>\n</ul>\n<b>值</b></br>\n一個類別為 \"data.frame\" 的對象，給出每個函數對每個變數的結果。</br>\n<b>包</b></br>\ncaret</br>\n<b>幫助</b></br>\nR 幫助不可用，因為我們使用多個 R 函數編寫了自定義代碼。如果您需要檢查代碼，請點擊 \"<>\" 按鈕。</br>\n    "
   }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Levene Testi",
+  "navigation": "Levene Testi",
+  "tvarbox1": "Yanıt Değişkeni (bir)",
+  "tvarbox3": "Faktör Değişkeni",
+  "label1": "Merkez",
+  "median": "Medyan",
+  "mean": "Ortalama",
+  "help": {
+    "title": "Levene Testi",
+    "r_help": "help(Anova, package='car')",
+    "body": "\n<b>Açıklama</b></br>\nGruplar arasında varyans homojenliği için Levene testini hesaplar.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nleveneTest(y, ...)<br/>\n## 'formül' sınıfı için S3 yöntemi<br/>\nleveneTest(y, data, ...)<br/>\n## 'lm' sınıfı için S3 yöntemi<br/>\nleveneTest(y, ...)<br/>\n## Varsayılan S3 yöntemi:<br/>\nleveneTest(y, group, center=medyan, ...)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ny: varsayılan yöntem için yanıt değişkeni veya bir lm veya formül nesnesi. Eğer y bir lineer model nesnesi veya bir formül ise, modelin sağ tarafındaki değişkenlerin hepsi faktör olmalı ve tamamen kesişmiş olmalıdır.\n</li>\n<li>\ngroup: grupları tanımlayan faktör.\n</li>\n<li>\ncenter: her grubun merkezini hesaplamak için bir fonksiyonun adı; ortalama, orijinal Levene testini verir; varsayılan olan medyan, daha sağlam bir test sağlar.\n</li>\n<li>\ndata: formülü değerlendirmek için bir veri çerçevesi.\n</li>\n<li>\n...: formül ve lm yöntemleri için geçilecek argümanlar; ayrıca center tarafından verilen fonksiyona argümanlar geçmek için de kullanılabilir (örneğin, center=mean ve trim=0.1, %10 kesilmiş ortalamayı belirtir).\n</li>\n</ul>\n<b>Değer</b><br/>\ntestin sonuçlarını gösteren yazdırılmak üzere tasarlanmış bir nesne döner.<br/>\n<b>Örnekler</b><br/>\n<code> \nDataframe <- data.frame(Giderler=c(20,23,19,25,26), Satışlar=c(48,50,55,51,49), Cinsiyet=c('e','k','k','e','e'), Departman=c('Muhasebe', 'İK', 'Satış','Pazarlama','BT'))\nSonuç_Levene_Test = leveneTest( Satışlar ~ interaction(Cinsiyet, Departman),data=Dataframe,center=base::mean )\n</code> <br/>\n<b>Paket</b></br>\ncar;moments;dplyr</br>\n<b>Yardım</b></br>\nhelp(leveneTest, package=car)\n"
+  }
+}

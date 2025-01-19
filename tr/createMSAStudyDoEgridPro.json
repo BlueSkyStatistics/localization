@@ -1,0 +1,30 @@
+{
+  "title": "Bir MSA Gage Çalışması için Deney Tablosu Oluştur",
+  "navigation": "MSA Çalışmasını Tasarla",
+  "datasetname": "MSA Gage Çalışması tablo adı",
+  "label1": "Parçalar için Detaylar",
+  "label2": "Operatörler için Detaylar",
+  "factor1": "Parça değişkeninin adı (örneğin, varsayılan olarak Parça)",
+  "numOfFactorLevels1": "Parça Sayısı",
+  "factorLevels1": "Değerleri otomatik oluşturmak için boş bırakın veya değerleri belirtin - örnek: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels1": "Otomatik oluşturulursa, herhangi bir Ön ek belirtin. Boşsa, değerler 1,2,3,.. olarak oluşturulacaktır",
+  "factor2": "Operatör değişkeninin adı (örneğin, varsayılan olarak Operatör)",
+  "numOfFactorLevels2": "Operatör Sayısı",
+  "factorLevels2": "Değerleri otomatik oluşturmak için boş bırakın veya değerleri belirtin - örnek: -1, 1, 'string1', 2, 0",
+  "prefixForfactorLevels2": "Otomatik oluşturulursa, herhangi bir Ön ek belirtin. Boşsa, değerler 1,2,3,.. olarak oluşturulacaktır",
+  "numOfBlocks": "Blok Sayısı",
+  "replicationVarName": "Boş bırakılmazsa, çoğaltma > 1 ise çoğaltma yineleme değişkeni için ad",
+  "replications": "Çoğaltmalar",
+  "repeatOnlyChk": "Sadece tekrarla (gerçek çoğaltma yerine - önerilmez)",
+  "randomizationChk": "Koşulları rastgele sırala",
+  "selectRandomSeedRad": "Rastgele tohum oluştur (her seferinde benzersiz)",
+  "selectFixedRandomSeedRad": "Aşağıdaki Rastgele tohumu gösterildiği gibi seçin veya manuel olarak değiştirin",
+  "lbl1": "Rastgeleleştirme tohum değeri değiştirmenize gerek olmayabilir",
+  "randomseeds": "Rastgeleleştirme için tohum",
+  "sortByOperatorChk": "Her çoğaltma içinde Operatöre göre sırala",
+  "help": {
+    "title": "Bir MSA Gage Çalışması için deney tablosunu otomatik oluştur",
+    "r_help": "help(fac.design, package=DoE.base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBelirtilen parametreye dayalı olarak Parça ve Operatör detayları ile deney koşullarını ayarlamak için otomatik olarak bir MSA çalışma tablosu oluşturur. \n\t\t\t\tParça ve Operatör için sayısal olmayan değerler kullanılıyorsa, örneğin 1,-1,'name1',0,'string2' gibi tek tırnak içinde belirtin.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDeney koşulları otomatik olarak oluşturulduktan sonra, koşul tablosu veri ızgarası UI'sinde görünecektir. \n\t\t\t\tKoşul tablosu, deneyleri ayarlamak için kullanılacak bir excel dosyası oluşturmak üzere kaydedilebilir (veya dosya menüsünden 'farklı kaydet' seçeneği ile)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

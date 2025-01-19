@@ -1,0 +1,13 @@
+{
+  "title": "Modello di Scala di Valutazione (Multi-faccettato)",
+  "navigation": "Modello di Scala di Valutazione (Multi-faccettato)",
+  "modelname": "Inserisci il nome del modello",
+  "destinationvars": "Elementi",
+  "firstlevel": "Variabile di primo livello",
+  "secondlevel": "Variabile di secondo livello",
+  "help": {
+    "title": "Modello di Scala di Valutazione (Multi-faccettato)",
+    "r_help": "help(tam.mml.mfr, package=TAM)",
+    "body": "\n            <b>Descrizione</b>\n            <br/>\n            Genera stime dei parametri per un modello di scala di valutazione multi-faccettato\n            <br/><br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code>\n            tam.mml.mfr( resp,facets=,formulaA = ~ item+step+rater,pid = ,verbose=FALSE)\n            </code>\n            <br/><br/>\n            <b>Argomenti</b>\n            <br/>\n            <ul>\n            <li>\n            resp: Data frame con risposte a elementi politomici k=0,...,K. Le risposte mancanti devono essere dichiarate come NA.\n            </li>\n            <li>\n            formulaA: Formula di design (applica solo a tam.mml.mfr). Vedi esempio 8 nell'aiuto dettagliato. È anche possibile impostare tutti gli effetti di un fattore a zero, ad esempio item*step + 0*rater (vedi Esempio 10a nell'aiuto dettagliato).\n            </li>\n            <li>\n            facets: Un data frame con voci di fattore (applica solo a tam.mml.mfr)\n            </li>\n            <li>\n            pid: Un vettore opzionale di identificatori delle persone\n            </li>\n            <li>\n            verbose: Logico che indica se l'output deve essere stampato durante le iterazioni. \n            </li>\n            </ul>\n\n            <br/><br/><br/>\n            <b>Pacchetti</b>\n            <br/>\n            TAM\n            <br/><br/>\n            <b>Aiuto</b>\n            <br/>\n            help(tam.mml.mfr, package='TAM')\n"
+  }
+}

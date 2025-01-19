@@ -1,0 +1,10 @@
+{
+  "title": "Teste de Kolmogorov-Smirnov de Normalidade",
+  "navigation": "Teste de Normalidade de Kolmogorov-Smirnov",
+  "trg": "Variáveis alvo",
+  "help": {
+    "title": "Teste de Kolmogorov-Smirnov de Normalidade",
+    "r_help": "help(ks.test, package=stats)",
+    "body": "\n<b>Descrição</b></br>\nTeste de Kolmogorov-Smirnov para conformidade com uma distribuição normal \n<br/>\n<b>Uso</b>\n<br/>\n<code>\nks.test(x, y =\"pnorm\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: Um vetor numérico de valores de dados.\n</li>\n<li>\ny:\tuma string de caracteres nomeando uma função de distribuição acumulada ou uma função de distribuição acumulada real, como pnorm. Apenas CDFs contínuas são válidas..\n</li>\n</ul>\n<b>Detalhes</b></br>\nNeste caso, um teste de uma amostra é realizado da hipótese nula de que a função de distribuição que gerou x é a distribuição y (ou seja, a distribuição normal).<br/>\nA presença de empates sempre gera um aviso, uma vez que distribuições contínuas não os geram. Se os empates surgiram de arredondamento, os testes podem ser aproximadamente válidos, mas mesmo quantidades modestas de arredondamento podem ter um efeito significativo na estatística calculada.<br/>\nValores ausentes são silenciosamente omitidos de x. </br>\n<b>Valor</b><br/>\nUma lista com a classe “htest” contendo os seguintes componentes:<br/>\n<ul>\n<li>\nstatistic: o valor da estatística do teste.\n</li>\n<li>\np.value: valor p do teste.\n</li>\n</ul>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nhelp(ks.test, package =stats)\n"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Aggiungi/Sostituisci/Rimuovi Lambda (λ) per una variabile con trasformazione Box-Cox precedente",
+  "navigation": "Aggiungi/Rimuovi Lambda",
+  "label2": "Seleziona una variabile da aggiungere/sostituire/rimuovere Lambda (λ) dove è stata applicata precedentemente la trasformazione Box-Cox",
+  "variableSelcted": "Seleziona una variabile",
+  "selectAddLambdaRad": "Opzione 1: Aggiungi/Sostituisci il valore Lambda (λ) se la trasformazione Box-Cox è stata applicata precedentemente",
+  "selectRemoveLambdaRad": "Opzione 2: Rimuovi il valore Lambda (λ) se è stato aggiunto erroneamente alla variabile",
+  "lambda": "Specifica un valore Lambda (λ) in (-2 a 2) da registrare per la variabile selezionata",
+  "help": {
+    "title": "Aggiungi/Sostituisci/Rimuovi Lambda (λ) utilizzato per la trasformazione Box-Cox precedente",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tQuesta finestra di dialogo è fornita per comodità se il Lambda (λ) associato alla variabile deve essere registrato \n\t\t\t\tcorrettamente o regolato. Il valore corretto di Lambda (λ) è importante poiché sarà utilizzato se è necessaria l'inversa Box-Cox\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer ulteriori dettagli sull'aiuto di Box-Cox o Lambda (λ) - usa R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Per una buona panoramica di MASS Box-Cox, vedere https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValori Lambda (λ) associati a trasformazioni Box-Cox familiari \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: trasformazione quadrata ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: nessuna trasformazione; restituisce i dati originali ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: trasformazione della radice quadrata ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: trasformazione della radice cubica\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: trasformazione della quarta radice\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: trasformazione logaritmica naturale ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: trasformazione della radice quadrata reciproca ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: trasformazione reciproca (inversa) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: trasformazione quadrata reciproca ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
