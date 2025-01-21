@@ -1,62 +1,79 @@
 {
-
     "r_editor_script": "R Editor script",
     "grid_edit": "Grid edit",
     "open_dataset": "Open dataset",
-    "outputWindow":{
-        "main":{
+    "outputWindow": {
+        "main": {
             "new": "Add new item to output",
             "save": "Save",
             "export": "Export output",
             "clear": "Clear output",
-            "close":"Close output tab",
-            "restart":"Restart R",
-            "rerun":"Re run",
-            "freeze":"Freeze table headers",
-            "toc":"Show table of contents"
-            },
-        "code":{
+            "close": "Close output tab",
+            "restart": "Restart R",
+            "rerun": "Re run",
+            "freeze": "Freeze table headers",
+            "toc": "Show table of contents"
+        },
+        "code": {
             "hide": "Hide code",
             "undo": "Undo",
             "redo": "Redo",
             "find": "Find",
-            "findNext":"Find next",
-            "findReplace":"Find and replace",
-            "comment":"Comment",
-            "uncomment":"Uncomment",
-            "launchDialog":"Open dialog",
+            "findNext": "Find next",
+            "findReplace": "Find and replace",
+            "comment": "Comment",
+            "uncomment": "Uncomment",
+            "launchDialog": "Open dialog",
             "showCode": "Show code",
             "hideCode": "Hide code",
             "revert": "Revert changes",
             "execute": "Execute R code"
         },
-
-        "side": {"remove": "Remove"}
-
+        "side": {
+            "remove": "Remove"
+        }
     },
-
-    "rEditorWindow":{
+    "rEditorWindow": {
         "execute": "Execute R code",
         "undo": "Undo",
         "redo": "Redo",
         "find": "Find",
-        "next":"Find next",
-        "replace":"Find and replace",
-        "comment":"Comment",
-        "uncomment":"Uncomment",
+        "next": "Find next",
+        "replace": "Find and replace",
+        "comment": "Comment",
+        "uncomment": "Uncomment",
         "save": "",
         "saveAs": "Save as",
         "clear": "Clear or close file",
-        "toggle":"Toggle R editor"
-        
-        },
-
-    "dataGrid" : {
-        "add" : "Create a new dataset",
-        "refresh": "Refresh dataset", 
+        "toggle": "Toggle R editor"
+    },
+    "dataGrid": {
+        "add": "Create a new dataset",
+        "refresh": "Refresh dataset",
         "undo": "Undo changes",
         "redo": "Redo changes"
-
-    }
-
-    }
+    },
+    "CntxInsDrowAbv": "Insert Data Row Above",
+    "CntxinsDrowBelow": "Insert Data Row Below",
+    "CntxDeleteRow": "Delete Row",
+    "CntxAddFacLvl": "Add Factor Level",
+    "CntxMkFac": "Make Factor",
+    "CntxMkOrdFac": "Make Ordered Factor",
+    "CntxMkChar": "Make Character",
+    "CntxMkNum": "Make Numeric",
+    "CntxInsDtVar": "Insert New Date Variable",
+    "CntxInsDtVarEnd": "Insert New Date Variable at End",
+    "CntxInsDtTmVar": "Insert New DateTime Variable",
+    "CntxInsDtTmVarEnd": "Insert New DateTime Variable at End",
+    "CntxInsNumVar": "Insert New Numeric Variable",
+    "CntxInsNumVarEnd": "Insert New Numeric Variable at End",
+    "CntxInsCharVar": "Insert New Character Variable",
+    "CntxInsCharVarEnd": "Insert New Character Variable at End",
+    "CntxInsFacVar": "Insert New Factor Variable",
+    "CntxInsFacVarEnd": "Insert New Factor Variable at End",
+    "CntxDelCol": "Delete Column",
+    "CntxDelVar": "Delete Variable",
+    "CntxMkTopRowHdr": "Make top row a header",
+    "CntxCopy": "Copy",
+    "CntxPaste": "Paste"
+}
