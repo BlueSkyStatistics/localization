@@ -1,0 +1,56 @@
+{
+  "r_editor_script": "R编辑器脚本",
+  "grid_edit": "网格编辑",
+  "open_dataset": "打开数据集",
+  "outputWindow": {
+    "main": {
+      "new": "向输出添加新项目",
+      "save": "保存",
+      "export": "导出输出",
+      "clear": "清除输出",
+      "close": "关闭输出标签",
+      "restart": "重启R",
+      "rerun": "重新运行",
+      "freeze": "冻结表头",
+      "toc": "显示目录"
+    },
+    "code": {
+      "hide": "隐藏代码",
+      "undo": "撤销",
+      "redo": "重做",
+      "find": "查找",
+      "findNext": "查找下一个",
+      "findReplace": "查找和替换",
+      "comment": "注释",
+      "uncomment": "取消注释",
+      "launchDialog": "打开对话框",
+      "showCode": "显示代码",
+      "hideCode": "隐藏代码",
+      "revert": "恢复更改",
+      "execute": "执行R代码"
+    },
+    "side": {
+      "remove": "移除"
+    }
+  },
+  "rEditorWindow": {
+    "execute": "执行R代码",
+    "undo": "撤销",
+    "redo": "重做",
+    "find": "查找",
+    "next": "查找下一个",
+    "replace": "查找和替换",
+    "comment": "注释",
+    "uncomment": "取消注释",
+    "save": "",
+    "saveAs": "另存为",
+    "clear": "清除或关闭文件",
+    "toggle": "切换R编辑器"
+  },
+  "dataGrid": {
+    "add": "创建新数据集",
+    "refresh": "刷新数据集",
+    "undo": "撤销更改",
+    "redo": "重做更改"
+  }
+}

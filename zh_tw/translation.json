@@ -1,0 +1,56 @@
+{
+  "r_editor_script": "R編輯器腳本",
+  "grid_edit": "網格編輯",
+  "open_dataset": "打開數據集",
+  "outputWindow": {
+    "main": {
+      "new": "向輸出添加新項目",
+      "save": "保存",
+      "export": "導出輸出",
+      "clear": "清除輸出",
+      "close": "關閉輸出標籤",
+      "restart": "重啟R",
+      "rerun": "重新運行",
+      "freeze": "凍結表頭",
+      "toc": "顯示目錄"
+    },
+    "code": {
+      "hide": "隱藏代碼",
+      "undo": "撤銷",
+      "redo": "重做",
+      "find": "查找",
+      "findNext": "查找下一個",
+      "findReplace": "查找和替換",
+      "comment": "註釋",
+      "uncomment": "取消註釋",
+      "launchDialog": "打開對話框",
+      "showCode": "顯示代碼",
+      "hideCode": "隱藏代碼",
+      "revert": "恢復更改",
+      "execute": "執行R代碼"
+    },
+    "side": {
+      "remove": "移除"
+    }
+  },
+  "rEditorWindow": {
+    "execute": "執行R代碼",
+    "undo": "撤銷",
+    "redo": "重做",
+    "find": "查找",
+    "next": "查找下一個",
+    "replace": "查找和替換",
+    "comment": "註釋",
+    "uncomment": "取消註釋",
+    "save": "",
+    "saveAs": "另存為",
+    "clear": "清除或關閉文件",
+    "toggle": "切換R編輯器"
+  },
+  "dataGrid": {
+    "add": "創建新數據集",
+    "refresh": "刷新數據集",
+    "undo": "撤銷更改",
+    "redo": "重做更改"
+  }
+}

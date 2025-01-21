@@ -1,0 +1,56 @@
+{
+  "r_editor_script": "Rエディタースクリプト",
+  "grid_edit": "グリッド編集",
+  "open_dataset": "データセットを開く",
+  "outputWindow": {
+    "main": {
+      "new": "出力に新しいアイテムを追加",
+      "save": "保存",
+      "export": "出力をエクスポート",
+      "clear": "出力をクリア",
+      "close": "出力タブを閉じる",
+      "restart": "Rを再起動",
+      "rerun": "再実行",
+      "freeze": "テーブルヘッダーを固定",
+      "toc": "目次を表示"
+    },
+    "code": {
+      "hide": "コードを隠す",
+      "undo": "元に戻す",
+      "redo": "やり直す",
+      "find": "検索",
+      "findNext": "次を検索",
+      "findReplace": "検索と置換",
+      "comment": "コメント",
+      "uncomment": "コメント解除",
+      "launchDialog": "ダイアログを開く",
+      "showCode": "コードを表示",
+      "hideCode": "コードを隠す",
+      "revert": "変更を元に戻す",
+      "execute": "Rコードを実行"
+    },
+    "side": {
+      "remove": "削除"
+    }
+  },
+  "rEditorWindow": {
+    "execute": "Rコードを実行",
+    "undo": "元に戻す",
+    "redo": "やり直す",
+    "find": "検索",
+    "next": "次を検索",
+    "replace": "検索と置換",
+    "comment": "コメント",
+    "uncomment": "コメント解除",
+    "save": "",
+    "saveAs": "名前を付けて保存",
+    "clear": "ファイルをクリアまたは閉じる",
+    "toggle": "Rエディタを切り替え"
+  },
+  "dataGrid": {
+    "add": "新しいデータセットを作成",
+    "refresh": "データセットを更新",
+    "undo": "変更を元に戻す",
+    "redo": "変更をやり直す"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "r_editor_script": "R 편집기 스크립트",
+  "grid_edit": "그리드 편집",
+  "open_dataset": "데이터 세트 열기",
+  "outputWindow": {
+    "main": {
+      "new": "출력에 새 항목 추가",
+      "save": "저장",
+      "export": "출력 내보내기",
+      "clear": "출력 지우기",
+      "close": "출력 탭 닫기",
+      "restart": "R 재시작",
+      "rerun": "다시 실행",
+      "freeze": "테이블 헤더 고정",
+      "toc": "목차 표시"
+    },
+    "code": {
+      "hide": "코드 숨기기",
+      "undo": "실행 취소",
+      "redo": "다시 실행",
+      "find": "찾기",
+      "findNext": "다음 찾기",
+      "findReplace": "찾기 및 바꾸기",
+      "comment": "주석",
+      "uncomment": "주석 해제",
+      "launchDialog": "대화 상자 열기",
+      "showCode": "코드 표시",
+      "hideCode": "코드 숨기기",
+      "revert": "변경 사항 되돌리기",
+      "execute": "R 코드 실행"
+    },
+    "side": {
+      "remove": "제거"
+    }
+  },
+  "rEditorWindow": {
+    "execute": "R 코드 실행",
+    "undo": "실행 취소",
+    "redo": "다시 실행",
+    "find": "찾기",
+    "next": "다음 찾기",
+    "replace": "찾기 및 바꾸기",
+    "comment": "주석",
+    "uncomment": "주석 해제",
+    "save": "",
+    "saveAs": "다른 이름으로 저장",
+    "clear": "파일 지우기 또는 닫기",
+    "toggle": "R 편집기 전환"
+  },
+  "dataGrid": {
+    "add": "새 데이터 세트 만들기",
+    "refresh": "데이터 세트 새로 고침",
+    "undo": "변경 사항 실행 취소",
+    "redo": "변경 사항 다시 실행"
+  }
+}
