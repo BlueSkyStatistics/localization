@@ -41,20 +41,18 @@
                     "onclick": "exportOutput()",
                     "visible": true
                 }
-                
-              
             ]
         },
         {
             "icon": "fas fa-ellipsis-v",
             "tab": "tools",
             "buttons": [
-                "./assets/js/modals/appSettings", 
+                "./assets/js/modals/appSettings",
                 {
                     "name": "主題",
                     "icon": "icon-theme",
                     "onclick": "showhideThemeDialog()"
-                },   
+                },
                 {
                     "name": "幫助",
                     "icon": "icon-help-circled",
@@ -75,7 +73,12 @@
                     ]
                 },
                 "./assets/js/modals/Help/installRPackage",
-                "./assets/js/modals/Help/updateBlueSkyPackage"
+                "./assets/js/modals/Help/updateBlueSkyPackage",
+                {
+                    "name": "刷新對話框",
+                    "icon": "fas fa-sync",
+                    "onclick": "onApplyLanguage($('#localeSelector').val())"
+                }
             ]
         }
     ]

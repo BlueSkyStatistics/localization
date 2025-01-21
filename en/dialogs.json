@@ -41,20 +41,18 @@
                     "onclick": "exportOutput()",
                     "visible": true
                 }
-                
-              
             ]
         },
         {
             "icon": "fas fa-ellipsis-v",
             "tab": "tools",
             "buttons": [
-                "./assets/js/modals/appSettings", 
+                "./assets/js/modals/appSettings",
                 {
                     "name": "Theme",
                     "icon": "icon-theme",
                     "onclick": "showhideThemeDialog()"
-                },   
+                },
                 {
                     "name": "Help",
                     "icon": "icon-help-circled",
@@ -75,7 +73,12 @@
                     ]
                 },
                 "./assets/js/modals/Help/installRPackage",
-                "./assets/js/modals/Help/updateBlueSkyPackage"
+                "./assets/js/modals/Help/updateBlueSkyPackage",
+                {
+                    "name": "Refresh Dialogs",
+                    "icon": "fas fa-sync",
+                    "onclick": "onApplyLanguage($('#localeSelector').val())"
+                }
             ]
         }
     ]
