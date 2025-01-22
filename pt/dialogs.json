@@ -12,31 +12,31 @@
           "visible": true
         },
         {
-          "name": "Conjuntos de Dados de Amostra",
+          "name": "Conjuntos de dados de exemplo",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",
           "visible": true
         },
         {
-          "name": "Salvar Conjunto de Dados",
+          "name": "Salvar conjunto de dados",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",
           "visible": true
         },
         {
-          "name": "Salvar Como",
+          "name": "Salvar como",
           "icon": "fas fa-file-export",
           "onclick": "saveasDataset()",
           "visible": true
         },
         {
-          "name": "Fechar Conjunto de Dados",
+          "name": "Fechar conjunto de dados",
           "icon": "fas fa-times",
           "onclick": "closeDataset()",
           "visible": true
         },
         {
-          "name": "Exportar Saída",
+          "name": "Exportar saída",
           "icon": "fas fa-file-export",
           "onclick": "exportOutput()",
           "visible": true
@@ -75,7 +75,7 @@
         "./assets/js/modals/Help/installRPackage",
         "./assets/js/modals/Help/updateBlueSkyPackage",
         {
-          "name": "Atualizar diálogos",
+          "name": "Atualizar cache do diálogo",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
         }
