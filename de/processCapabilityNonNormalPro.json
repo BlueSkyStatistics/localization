@@ -5,9 +5,11 @@
   "label1": "Wählen Sie eine Verteilungsfunktion, die am besten zu den Daten passt",
   "variableSelcted": "Wählen Sie eine Variable (beobachtete Daten) zur Analyse aus",
   "rowsTobeUsed": "Wenn ausgewählt, die Zeilen, die zur Analyse der Prozessfähigkeit verwendet werden sollen (z. B. 1:25 oder 1,4,5,7:12 angeben)",
-  "lower": "LSL - numerischer Wert der unteren Spezifikationsgrenze (geben Sie NA ein, um einseitige Spezifikationsgrenzen anzugeben)",
-  "upper": "USL - numerischer Wert der oberen Spezifikationsgrenze (geben Sie NA ein, um einseitige Spezifikationsgrenzen anzugeben)",
+  "lower": "LSL - numerischer Wert der unteren Spezifikationsgrenze (geben Sie NA an, um einseitige Spezifikationsgrenzen anzugeben)",
+  "upper": "USL - numerischer Wert der oberen Spezifikationsgrenze (geben Sie NA an, um einseitige Spezifikationsgrenzen anzugeben)",
   "target": "Ziel-Spezifikationsgrenzen (optional)",
+  "addlSpecLines": "Zusätzliche Spezifikationslinien im Diagramm hinzufügen (durch Kommas getrennt, z. B. 73.98, 74.01, 74.03)",
+  "addlSpecLinesLabel": "Bezeichnung für die zusätzlichen Spezifikationslinien (durch Kommas getrennt, z. B. Spez 1, Spez 2, Spez 3)",
   "selectDistFuncWeibullRad": "Weibull",
   "selectDistFuncExpRad": "Exponential",
   "selectDistFuncGammaRad": "Gamma",
@@ -24,6 +26,6 @@
   "help": {
     "title": "Prozessfähigkeit für nicht-normale Verteilung",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDie qcc-Funktion berechnet die Fähigkeitsindizes \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür detaillierte Hilfe - verwenden Sie R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) und help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie den Datensatz namens pistonrings aus dem qcc-Paket mit dem Menü Datensatz laden, indem Sie das qcc-Paket auswählen und dann den Datensatz pistonrings auswählen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie Option 1, Durchmesser zur Variable (beobachtet..), Probe zur Gruppierungsvariable, \n\t\t\t\t<br/>\n\t\t\t\tGeben Sie 1:25 in die gruppierten Zeilen ein, die verwendet werden sollen\n\t\t\t\t<br/>\n\t\t\t\tFür die Analyse der Prozessfähigkeit - geben Sie 73,95 in LSL, 74,05 in USL und 74,0 in Zielgrenze ein\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFolgen Sie dem qcc-Tutorial unter https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDie qcc-Funktion berechnet die Fähigkeitsindizes \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür detaillierte Hilfe verwenden Sie R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) und help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie den Datensatz namens pistonrings aus dem qcc-Paket mit dem Menü Datensatz laden, indem Sie das qcc-Paket auswählen und dann den Datensatz pistonrings auswählen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie Option 1, Durchmesser zur Variable (beobachtet..), Probe zur Gruppierungsvariable, \n\t\t\t\t<br/>\n\t\t\t\tGeben Sie 1:25 in die gruppierten Zeilen ein, die verwendet werden sollen\n\t\t\t\t<br/>\n\t\t\t\tFür die Analyse der Prozessfähigkeit - geben Sie 73.95 in LSL, 74.05 in USL und 74.0 in Zielgrenze ein\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFolgen Sie dem qcc-Tutorial unter https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

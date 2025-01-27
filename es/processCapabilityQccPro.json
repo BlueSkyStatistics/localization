@@ -19,13 +19,15 @@
   "stddev": "Método de desviación estándar para calcular xbar (para tamaño de grupo > 1)",
   "stddevXbarOne": "Método de desviación estándar para calcular I-MR",
   "DoNotUseUnbiasingConstantChk": "No utilizar constante de no sesgo para estimar la desviación estándar para índices de capacidad del proceso en general",
-  "lower": "LSL - valor numérico del límite de especificación inferior (escriba NA para especificar límites de especificación unidimensionales)",
-  "upper": "USL - valor numérico del límite de especificación superior (escriba NA para especificar límites de especificación unidimensionales)",
+  "lower": "LSL - valor numérico del límite de especificación inferior (escriba NA para especificar límites de especificación unilaterales)",
+  "upper": "USL - valor numérico del límite de especificación superior (escriba NA para especificar límites de especificación unilaterales)",
   "target": "Objetivo - un valor opcional que especifica el objetivo del proceso",
+  "addlSpecLines": "Agregar líneas de especificación adicionales en el gráfico (separadas por comas, por ejemplo, 73.98, 74.01, 74.03)",
+  "addlSpecLinesLabel": "Etiqueta para las líneas de especificación adicionales (separadas por comas, por ejemplo, Especificación 1, Especificación 2, Especificación 3)",
   "digits": "Dígitos - número de dígitos a mostrar",
   "help": {
     "title": "Capacidad del Proceso (paquete qcc)",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función qcc calcula índices de capacidad \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), y help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionar el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija la opción 1, diámetro a variable (observada..), muestra a variable de agrupamiento, \n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en filas agrupadas a utilizar\n\t\t\t\t<br/>\n\t\t\t\tPara el análisis de capacidad del proceso - escriba 73.95 en LSL, 74.05 en USL, y 74.0 en Límite Objetivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función qcc calcula índices de capacidad \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), y help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija la opción 1, diámetro a variable (observada..), muestra a Variable de Agrupamiento, \n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en Filas agrupadas a utilizar\n\t\t\t\t<br/>\n\t\t\t\tPara el análisis de capacidad del proceso - escriba 73.95 en LSL, 74.05 en USL, y 74.0 en Límite Objetivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

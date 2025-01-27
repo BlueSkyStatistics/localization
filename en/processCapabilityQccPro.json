@@ -22,6 +22,8 @@
     "lower": "LSL - numeric value of lower specification limit (type NA to specify one-sided specification limits)",
     "upper": "USL - numeric value of upper specification limit (type NA to specify one-sided specification limits)",
     "target": "Target - an optional value specifying the target of the process",
+    "addlSpecLines": "Add additional Spec lines on the plot (comma separated e.g. 73.98, 74.01, 74.03)",
+    "addlSpecLinesLabel": "Label for the additional Spec lines (comma separated e.g. Spec 1, Spec 2, Spec 3)",
     "digits": "Digits - number of digits to display",
     "help": {
         "title": "Process Capability (qcc pkg)",

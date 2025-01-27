@@ -1,13 +1,15 @@
 {
-  "title": "Capacidade de Processo (Não-normal)",
-  "navigation": "Capacidade de Processo (Não-normal)",
-  "printObjectSummaryChk": "Imprimir resumo do objeto QCC para a capacidade do processo",
+  "title": "Capacidade de Processo (Não Normal)",
+  "navigation": "Capacidade de Processo (Não Normal)",
+  "printObjectSummaryChk": "Imprimir resumo do objeto QCC para a capacidade de processo",
   "label1": "Selecione uma função de distribuição que melhor se ajuste aos dados",
   "variableSelcted": "Selecione uma variável (dados observados) para analisar",
-  "rowsTobeUsed": "Se selecionado, as linhas a serem usadas para analisar a capacidade do processo (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
-  "lower": "LSL - valor numérico do limite de especificação inferior (digite NA para especificar limites de especificação unidimensionais)",
-  "upper": "USL - valor numérico do limite de especificação superior (digite NA para especificar limites de especificação unidimensionais)",
+  "rowsTobeUsed": "Se selecionado, as linhas a serem usadas para analisar a capacidade de processo (ex. especifique como 1:25 ou 1,4,5,7:12)",
+  "lower": "LSL - valor numérico do limite de especificação inferior (digite NA para especificar limites de especificação unilaterais)",
+  "upper": "USL - valor numérico do limite de especificação superior (digite NA para especificar limites de especificação unilaterais)",
   "target": "Limites de especificação alvo (opcional)",
+  "addlSpecLines": "Adicionar linhas de especificação adicionais no gráfico (separadas por vírgulas ex. 73.98, 74.01, 74.03)",
+  "addlSpecLinesLabel": "Rótulo para as linhas de especificação adicionais (separadas por vírgulas ex. Spec 1, Spec 2, Spec 3)",
   "selectDistFuncWeibullRad": "Weibull",
   "selectDistFuncExpRad": "Exponencial",
   "selectDistFuncGammaRad": "Gamma",
@@ -22,8 +24,8 @@
   "selectDistFuncNormRad": "Normal",
   "digits": "Dígitos - número de dígitos a exibir",
   "help": {
-    "title": "Capacidade de Processo para Distribuição Não-normal",
+    "title": "Capacidade de Processo para Distribuição Não Normal",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção qcc para calcular índices de capacidade \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), e help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode carregar o conjunto de dados chamado pistonrings do pacote qcc com o menu Carregar Conjunto de Dados selecionando o pacote qcc e, em seguida, selecionando o conjunto de dados pistonrings\n\t\t\t\t<br/>\n\t\t\t\tEscolha a opção 1, diâmetro para variável (observada..), amostra para variável de Agrupamento, \n\t\t\t\t<br/>\n\t\t\t\tDigite 1:25 nas linhas agrupadas a serem usadas\n\t\t\t\t<br/>\n\t\t\t\tPara análise de capacidade do processo - digite 73.95 em LSL, 74.05 em USL, e 74.0 em Limite Alvo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial do qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tA função qcc calcula índices de capacidade\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), e help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara tentar isso, você pode carregar o conjunto de dados chamado pistonrings do pacote qcc usando o menu Carregar Conjunto de Dados selecionando o pacote qcc e depois selecionando o conjunto de dados pistonrings\n\t\t\t\t<br/>\n\t\t\t\tEscolha a opção 1, diâmetro para variável (observada..), amostra para variável de agrupamento,\n\t\t\t\t<br/>\n\t\t\t\tDigite 1:25 nas linhas agrupadas a serem usadas\n\t\t\t\t<br/>\n\t\t\t\tPara análise de capacidade de processo - digite 73.95 em LSL, 74.05 em USL, e 74.0 no Limite Alvo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

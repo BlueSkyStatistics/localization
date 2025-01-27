@@ -11,10 +11,10 @@
   "printTestSummaryChk": "Imprimir resumo dos testes para causas especiais",
   "printTestDetailChk": "Imprimir detalhes dos testes para causas especiais",
   "markTestNumberChk": "Marcar o número do teste no gráfico (apenas o primeiro número do teste será marcado se mais de um teste for encontrado como violado por um ponto de dados)",
-  "ocCurvesChk": "Plotar curvas de características operacionais onde aplicável (deve ter tamanhos de amostra iguais)",
+  "ocCurvesChk": "Plotar curvas de características operacionais onde aplicável (devem ter tamanhos de amostra iguais)",
   "rowsTobeUsed": "Linhas agrupadas a serem usadas para o gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
   "rowsTobeUsedAsNewData": "Novos Dados - linhas agrupadas a serem usadas como Novos Dados para o gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12) - novos dados a serem plotados, mas não incluídos nos cálculos",
-  "additionalPhasesLabel": "Especificar dados para plotar fases adicionais (limitado a um máximo de 10 fases para ser prático para plotar em um único gráfico)",
+  "additionalPhasesLabel": "Especificar dados para gráficos de fases adicionais (limitado a um máximo de 10 fases para ser prático para plotar em um único gráfico)",
   "rowsTobeUsedPhase2": "Fase 2 Linhas agrupadas a serem usadas para o gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
   "rowsTobeUsedPhase3": "Fase 3 Linhas agrupadas a serem usadas para o gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
   "rowsTobeUsedPhase4": "Fase 4 Linhas agrupadas a serem usadas para o gráfico (por exemplo, especifique como 1:25 ou 1,4,5,7:12)",
@@ -31,10 +31,10 @@
   "digits": "Dígitos - número de dígitos a serem exibidos",
   "lower": "LSL - valor numérico do limite de especificação inferior para plotar uma linha LSL",
   "upper": "USL - valor numérico do limite de especificação superior para plotar uma linha USL",
-  "addlSpecLines": "Adicionar linhas de especificação adicionais (separadas por vírgula) no gráfico I (por exemplo, 73.98, 74.01, 74.03)",
-  "addlSpecLinesLabel": "Rótulo para as linhas de especificação adicionais (o padrão é Spec)",
-  "addlSpecLinesMR": "Adicionar linhas de especificação adicionais (separadas por vírgula) no gráfico MR (por exemplo, 0.02, 0.04, 0.06)",
-  "addlSpecLinesLabelMR": "Rótulo para as linhas de especificação adicionais (o padrão é Spec)",
+  "addlSpecLines": "Adicionar linhas de especificação adicionais no gráfico I (separadas por vírgula, por exemplo, 73.98, 74.01, 74.03)",
+  "addlSpecLinesLabel": "Rótulo para as linhas de especificação adicionais (separadas por vírgula, por exemplo, Spec 1, Spec 2, Spec 3)",
+  "addlSpecLinesMR": "Adicionar linhas de especificação adicionais no gráfico MR (separadas por vírgula, por exemplo, 0.02, 0.04, 0.06)",
+  "addlSpecLinesLabelMR": "Rótulo para as linhas de especificação adicionais (separadas por vírgula, por exemplo, Spec 1, Spec 2, Spec 3)",
   "I_XbarOne_Stddev": "Gráfico I - método de desvio padrão a ser usado",
   "MR_R_Stddev": "Gráfico MR - método de desvio padrão a ser usado",
   "performTestLabel": "Realizar testes selecionados para causas especiais",
@@ -54,10 +54,10 @@
   "test6": "K de K+1 pontos mais do que 1σ da linha central do mesmo lado (padrão 4 de 4+1)",
   "test7": "K pontos em sequência dentro de 1σ da linha central de ambos os lados (padrão 15)",
   "test8": "K pontos em sequência mais do que 1σ da linha central de ambos os lados (padrão 8)",
-  "sigmaSymbol": "Se o símbolo sigma 'σ' não for impresso corretamente na saída, especifique um caractere ou string, por exemplo, s ou sigma, em vez do símbolo σ",
+  "sigmaSymbol": "Se o símbolo sigma 'σ' não for impresso corretamente na saída, especifique um caractere ou string, por exemplo, s ou sigma no lugar do símbolo σ",
   "help": {
     "title": "Gráficos de Shewhart (I-MR)",
     "r_help": "ajuda(qcc, pacote = qcc)",
-    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção qcc para realizar controle estatístico de qualidade e plotar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R ajuda(qcc, pacote = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda adicional com os métodos de desvio padrão - use R ajuda(sd.xbar.one, pacote = qcc) e ajuda(sd.R, pacote = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara tentar isso, você pode carregar o conjunto de dados chamado pistonrings do pacote qcc com o menu Carregar Conjunto de Dados selecionando o pacote qcc e, em seguida, selecionando o conjunto de dados pistonrings\n\t\t\t\t<br/>\n\t\t\t\tEscolha o diâmetro para variável (observada..), clique em executar\n\t\t\t\t<br/>\n\t\t\t\tAlém disso, digite 1:20 nas Linhas agrupadas a serem usadas, clique em executar \n\t\t\t\t<br/>\n\t\t\t\tPara plotar um gráfico com múltiplas fases\n\t\t\t\t<br/>\n\t\t\t\tDigite 25:30 nas Linhas agrupadas da Fase 2\n\t\t\t\t<br/>\n\t\t\t\tDigite 31:38 nas Linhas agrupadas da Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial do qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção qcc para realizar controle estatístico de qualidade e plotar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R ajuda(qcc, pacote = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda adicional com os métodos de desvio padrão - use R ajuda(sd.xbar.one, pacote = qcc) e ajuda(sd.R, pacote = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara tentar isso, você pode carregar o conjunto de dados chamado pistonrings do pacote qcc com o menu Carregar Conjunto de Dados selecionando o pacote qcc e, em seguida, selecionando o conjunto de dados pistonrings\n\t\t\t\t<br/>\n\t\t\t\tEscolha o diâmetro para variável (observada..), clique em executar\n\t\t\t\t<br/>\n\t\t\t\tAlém disso, digite 1:20 nas Linhas agrupadas a serem usadas, clique em executar\n\t\t\t\t<br/>\n\t\t\t\tPara plotar um gráfico com múltiplas fases\n\t\t\t\t<br/>\n\t\t\t\tDigite 25:30 nas Linhas agrupadas da Fase 2\n\t\t\t\t<br/>\n\t\t\t\tDigite 31:38 nas Linhas agrupadas da Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial do qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

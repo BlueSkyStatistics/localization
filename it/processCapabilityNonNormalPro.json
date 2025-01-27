@@ -1,13 +1,15 @@
 {
-  "title": "Capacità di Processo (Non-normale)",
-  "navigation": "Capacità di Processo (Non-normale)",
+  "title": "Capacità di Processo (Non Normale)",
+  "navigation": "Capacità di Processo (Non Normale)",
   "printObjectSummaryChk": "Stampa il riepilogo dell'oggetto QCC per la capacità di processo",
   "label1": "Seleziona una funzione di distribuzione che si adatta meglio ai dati",
   "variableSelcted": "Seleziona una variabile (dati osservati) da analizzare",
-  "rowsTobeUsed": "Se selezionato, le righe da utilizzare per analizzare la capacità di processo (ad es. specificare come 1:25 o 1,4,5,7:12)",
+  "rowsTobeUsed": "Se selezionato, le righe da utilizzare per analizzare la capacità di processo (es. specificare come 1:25 o 1,4,5,7:12)",
   "lower": "LSL - valore numerico del limite di specifica inferiore (digita NA per specificare limiti di specifica unilaterali)",
   "upper": "USL - valore numerico del limite di specifica superiore (digita NA per specificare limiti di specifica unilaterali)",
   "target": "Limiti di specifica target (opzionale)",
+  "addlSpecLines": "Aggiungi linee di specifica aggiuntive nel grafico (separate da virgole es. 73.98, 74.01, 74.03)",
+  "addlSpecLinesLabel": "Etichetta per le linee di specifica aggiuntive (separate da virgole es. Spec 1, Spec 2, Spec 3)",
   "selectDistFuncWeibullRad": "Weibull",
   "selectDistFuncExpRad": "Esponenziale",
   "selectDistFuncGammaRad": "Gamma",
@@ -22,8 +24,8 @@
   "selectDistFuncNormRad": "Normale",
   "digits": "Cifre - numero di cifre da visualizzare",
   "help": {
-    "title": "Capacità di Processo per Distribuzione Non-normale",
+    "title": "Capacità di Processo per Distribuzione Non Normale",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tLa funzione qcc calcola gli indici di capacità \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer un aiuto dettagliato - usa R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), e help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato pistonrings dal pacchetto qcc con il menu Carica Dataset selezionando il pacchetto qcc e poi selezionando il dataset pistonrings\n\t\t\t\t<br/>\n\t\t\t\tScegli l'opzione 1, diametro per variabile (osservata..), campione per variabile di raggruppamento, \n\t\t\t\t<br/>\n\t\t\t\tDigita 1:25 nelle righe raggruppate da utilizzare\n\t\t\t\t<br/>\n\t\t\t\tPer l'analisi della capacità di processo - digita 73.95 in LSL, 74.05 in USL, e 74.0 in Limite Target\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial qcc su https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tLa funzione qcc calcola gli indici di capacità\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer la guida dettagliata - usa R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), e help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato pistonrings dal pacchetto qcc utilizzando il menu Carica Dataset selezionando il pacchetto qcc e poi selezionando il dataset pistonrings\n\t\t\t\t<br/>\n\t\t\t\tScegli l'opzione 1, diametro per variabile (osservata..), campione per variabile di raggruppamento,\n\t\t\t\t<br/>\n\t\t\t\tDigita 1:25 nelle righe raggruppate da utilizzare\n\t\t\t\t<br/>\n\t\t\t\tPer l'analisi della capacità di processo - digita 73.95 in LSL, 74.05 in USL, e 74.0 nel Limite Target\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial qcc su https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }
