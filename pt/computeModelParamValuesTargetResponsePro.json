@@ -1,0 +1,21 @@
+{
+  "title": "Calcular valores de variáveis do modelo para alcançar a resposta alvo",
+  "label100": "Esta caixa de diálogo calcula variáveis do modelo para alcançar o valor de resposta alvo do modelo\nNota: Se houver alguma variável não numérica no modelo selecionado, o cálculo da resposta alvo falhará",
+  "navigation": "Calcular resposta alvo",
+  "modelSelection": "Selecione um modelo para calcular os valores ótimos das variáveis",
+  "targetResponse": "Especifique o valor de resposta alvo (numérico) desejado para o modelo selecionado",
+  "targetResponseLower": "(Opcional) Especifique o valor inferior de resposta alvo (numérico) desejado para o modelo selecionado",
+  "targetResponseUpper": "(Opcional) Especifique o valor superior de resposta alvo (numérico) desejado para o modelo selecionado",
+  "label200": "Restrições do otimizador de resposta alvo",
+  "label12": "Variáveis (fatores) no modelo selecionado listadas abaixo na mesma ordem em que aparecem no modelo",
+  "factorConstraintUseDatasetLowerChk": "Restrições de Limite Inferior: Se marcado, o valor mínimo de cada variável usada no modelo será usado para o limite inferior",
+  "factorConstraintLower": "Restrições de Limite Inferior: (Ignorado se marcado acima) Deixe vazio para não ter restrições no limite inferior para os valores das variáveis do modelo (ou seja, fatores). Caso contrário, você deve digitar valores separados por vírgula para cada variável do modelo. Se uma variável do modelo não tiver limite inferior, digite -Inf, por exemplo, 0, 0.1, -Inf, 20",
+  "factorConstraintUseDatasetUpperChk": "Restrições de Limite Superior: Se marcado, o valor máximo de cada variável usada no modelo será usado para o limite superior",
+  "factorConstraintUpper": "Restrições de Limite Superior: (Ignorado se marcado acima) Deixe vazio para não ter restrições no limite superior para os valores das variáveis do modelo (ou seja, fatores). Caso contrário, você deve digitar valores separados por vírgula para cada variável do modelo. Se uma variável do modelo não tiver limite superior, digite Inf, por exemplo, 0, 0.2, 0.9, Inf",
+  "factorInitalValues": "Valores Iniciais: Deixe vazio para que o sistema escolha os valores iniciais para as variáveis do modelo (ou seja, fatores) (padrão: todos zeros). Caso contrário, você deve digitar valores separados por vírgula para cada variável do modelo, por exemplo, 0, 0, 0, 0",
+  "help": {
+    "title": "Calcule os valores das variáveis do modelo (fatores) para a resposta alvo para o modelo selecionado",
+    "r_help": "help(optim, package = 'stats')",
+    "body": "\n        "
+  }
+}

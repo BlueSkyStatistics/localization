@@ -1,0 +1,21 @@
+{
+    "title": "Compute model variable values to achieve target response",
+    "label100": "This dialog computes model variables to achieve target response value of the model\nNote: If any non-numeric variable is present in the selected model, the target reponse computation will fail",
+    "navigation": "Compute target response",
+    "modelSelection": "Select a model to compute the optimal variable values",
+    "targetResponse": "Specify the target response value (numeric) desired for the selected model",
+    "targetResponseLower": "(Optional) Specify the lower target response value (numeric) desired for the selected model",
+    "targetResponseUpper": "(Optional) Specify the upper target response value (numeric) desired for the selected model",
+    "label200": "Target Response Optimizer Constraints",
+    "label12": "Variables (factors) in selected model listed below in the same order it appears in the model",
+    "factorConstraintUseDatasetLowerChk": "Lower Bound Constraints: If checked, minimum value of each variable used in the model will be used for lower bound",
+    "factorConstraintLower": "Lower Bound Constraints: (Ignored if checked above) Leave empty for no constraints on the lower bound for the model variable (i.e. factors) values. Otherwise, you must type comma-separated values for every model variable. If a particular model variable has no lower bound, type -Inf e.g., 0, 0.1, -Inf, 20",
+    "factorConstraintUseDatasetUpperChk": "Upper Bound Constraints: If checked, maximum value of each variable used in the model will be used for upper bound",
+    "factorConstraintUpper": "Upper Bound Constraints: (Ignored if checked above) Leave empty for no constraints on the upper bound for the model variable (i.e. factors) values. Otherwise, you must type comma-separated values for every model variable. If a particular model variable has no upper bound, type Inf e.g. 0, 0.2, 0.9, Inf",
+    "factorInitalValues": "Starting Values: Leave empty for system to choose the initial starting values for model variable (i.e. factors) values (default: all zeros). Otherwise, you must type comma-separated values for every model variable e.g., 0, 0, 0, 0",
+    "help": {
+        "title": "Compute model variable (factors) values for target response for the model selected",
+        "r_help": "help(optim, package = 'stats')",
+        "body": "\n        "
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Berechnen Sie die Modellvariablenwerte, um die Zielantwort zu erreichen",
+  "label100": "Dieser Dialog berechnet die Modellvariablen, um den Zielantwortwert des Modells zu erreichen.\nHinweis: Wenn eine nicht-numerische Variable im ausgewählten Modell vorhanden ist, schlägt die Berechnung der Zielantwort fehl.",
+  "navigation": "Zielantwort berechnen",
+  "modelSelection": "Wählen Sie ein Modell aus, um die optimalen Variablenwerte zu berechnen",
+  "targetResponse": "Geben Sie den gewünschten Zielantwortwert (numerisch) für das ausgewählte Modell an",
+  "targetResponseLower": "(Optional) Geben Sie den unteren Zielantwortwert (numerisch) für das ausgewählte Modell an",
+  "targetResponseUpper": "(Optional) Geben Sie den oberen Zielantwortwert (numerisch) für das ausgewählte Modell an",
+  "label200": "Einschränkungen des Zielantwortoptimierers",
+  "label12": "Variablen (Faktoren) im ausgewählten Modell, die unten in der gleichen Reihenfolge aufgeführt sind, wie sie im Modell erscheinen",
+  "factorConstraintUseDatasetLowerChk": "Untergrenzenbeschränkungen: Wenn aktiviert, wird der Mindestwert jeder im Modell verwendeten Variablen für die Untergrenze verwendet",
+  "factorConstraintLower": "Untergrenzenbeschränkungen: (Ignoriert, wenn oben aktiviert) Lassen Sie es leer, wenn keine Einschränkungen für die Untergrenze der Modellvariablen (d.h. Faktoren) gelten. Andernfalls müssen Sie kommagetrennte Werte für jede Modellvariable eingeben. Wenn eine bestimmte Modellvariable keine Untergrenze hat, geben Sie -Inf ein, z.B. 0, 0.1, -Inf, 20",
+  "factorConstraintUseDatasetUpperChk": "Obergrenzenbeschränkungen: Wenn aktiviert, wird der Höchstwert jeder im Modell verwendeten Variablen für die Obergrenze verwendet",
+  "factorConstraintUpper": "Obergrenzenbeschränkungen: (Ignoriert, wenn oben aktiviert) Lassen Sie es leer, wenn keine Einschränkungen für die Obergrenze der Modellvariablen (d.h. Faktoren) gelten. Andernfalls müssen Sie kommagetrennte Werte für jede Modellvariable eingeben. Wenn eine bestimmte Modellvariable keine Obergrenze hat, geben Sie Inf ein, z.B. 0, 0.2, 0.9, Inf",
+  "factorInitalValues": "Startwerte: Lassen Sie es leer, damit das System die anfänglichen Startwerte für die Modellvariablen (d.h. Faktoren) wählen kann (Standard: alle Nullen). Andernfalls müssen Sie kommagetrennte Werte für jede Modellvariable eingeben, z.B. 0, 0, 0, 0",
+  "help": {
+    "title": "Berechnen Sie die Modellvariablen (Faktoren) Werte für die Zielantwort für das ausgewählte Modell",
+    "r_help": "help(optim, package = 'stats')",
+    "body": "\n        "
+  }
+}
