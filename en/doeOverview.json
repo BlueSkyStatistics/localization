@@ -2,7 +2,7 @@
     "title": "A quick overview of the Design of Experiments (DoE) functionality",
     "navigation": "DoE Overview",
     "lbl1": " 1. To create any Design under DOE -> create design menu, first you need a dataset with factor details to create the design from",
-    "lbl2": " 2. To get started, choose one of the sample datasets (excel file) provided in the sample dataset directory in your BlueSky Statistics install directory or you can create a factor detail table/dataset on the fly with DOE -> Create DoE Factor Details menu",
+    "lbl2": " 2. To get started, choose one of the sample datasets (excel file) provided in the sample dataset directory in your BioStat Prime install directory or you can create a factor detail table/dataset on the fly with DOE -> Create DoE Factor Details menu",
     "lbl3": " 3. Once a dataset is opened with file open menu or created on the fly in step 2 above, go under DOE -> create design menu to create an appropriate design",
     "lbl4": " 4. After a design is successfully created, it will show up on the dataset UI grid. You can use DOE -> Inspect Design menu to inspect the design just created",
     "lbl5": " 5. Let's export the design to a file system directory with DOE -> Export Design menu. It will automatically create three files (.csv, .rda, .html) with the same names as the design dataset on the UI grid in the file directory path specified",

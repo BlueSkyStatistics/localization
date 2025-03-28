@@ -13,6 +13,6 @@
   "help": {
     "title": "NA 제거",
     "r_help": "help(fct_explicit_na, package =forcats)",
-    "body": "\n<b>설명</b></br>\n팩터 변수에 대한 \"NA\" 수준에 대한 레이블을 입력하십시오. 새 레이블은 기존 변수에 저장되거나 접두사/접미사를 지정하여 새 변수에 저장될 수 있습니다. 새 변수는 기존 이름에 접두사/접미사가 추가되어 생성됩니다.\n이것은 결측값에 명시적인 팩터 수준을 부여하여 요약 및 플롯에 나타나도록 보장합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(Missing)\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nf : 팩터(또는 문자 벡터).\n</li>\n<li>\nna_level : 결측값에 사용할 수준.\n</li>\n</ul>\n<b>예시</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>패키지</b></br>\nforcats</br>\n<b>도움말</b></br>\nBlueSky Statistics R 구문 편집기에 아래 줄을 입력하십시오.</br>\nhelp(fct_explicit_na, package =forcats)\n"
+    "body": "\n<b>설명</b></br>\n팩터 변수에 대한 \"NA\" 수준에 대한 레이블을 입력하십시오. 새 레이블은 기존 변수에 저장되거나 접두사/접미사를 지정하여 새 변수에 저장될 수 있습니다. 새 변수는 기존 이름에 접두사/접미사가 추가되어 생성됩니다.\n이것은 결측값에 명시적인 팩터 수준을 부여하여 요약 및 플롯에 나타나도록 보장합니다.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(Missing)\")\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nf : 팩터(또는 문자 벡터).\n</li>\n<li>\nna_level : 결측값에 사용할 수준.\n</li>\n</ul>\n<b>예시</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>패키지</b></br>\nforcats</br>\n<b>도움말</b></br>\nBioStat Prime R 구문 편집기에 아래 줄을 입력하십시오.</br>\nhelp(fct_explicit_na, package =forcats)\n"
   }
 }

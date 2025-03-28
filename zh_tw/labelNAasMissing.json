@@ -13,6 +13,6 @@
   "help": {
     "title": "移除 NAs",
     "r_help": "help(fct_explicit_na, package =forcats)",
-    "body": "\n<b>描述</b></br>\n為因子變數的 \"NA\" 級別輸入標籤。新標籤可以保存到現有變數（我們覆蓋現有變數）或通過指定前綴/後綴保存到新變數。新變數將以附加到現有名稱的前綴/後綴創建。\n這為缺失值提供了一個明確的因子級別，確保它們出現在摘要和圖表中。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(缺失)\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nf : 一個因子（或字符向量）。\n</li>\n<li>\nna_level : 用於缺失值的級別。\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>包</b></br>\nforcats</br>\n<b>幫助</b></br>\n在 BlueSky Statistics R 語法編輯器中輸入以下行</br>\nhelp(fct_explicit_na, package =forcats)\n"
+    "body": "\n<b>描述</b></br>\n為因子變數的 \"NA\" 級別輸入標籤。新標籤可以保存到現有變數（我們覆蓋現有變數）或通過指定前綴/後綴保存到新變數。新變數將以附加到現有名稱的前綴/後綴創建。\n這為缺失值提供了一個明確的因子級別，確保它們出現在摘要和圖表中。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nfct_explicit_na(f, na_level = \"(缺失)\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nf : 一個因子（或字符向量）。\n</li>\n<li>\nna_level : 用於缺失值的級別。\n</li>\n</ul>\n<b>示例</b></br>\n<code> \nf1 <- factor(c(\"a\", \"a\", NA, NA, \"a\", \"b\", NA, \"c\", \"a\", \"c\", \"b\"))<br/>\ntable(f1)<br/>\nf2 <- fct_explicit_na(f1)<br/>\ntable(f2)<br/>\n</code> <br/>\n<b>包</b></br>\nforcats</br>\n<b>幫助</b></br>\n在 BioStat Prime R 語法編輯器中輸入以下行</br>\nhelp(fct_explicit_na, package =forcats)\n"
   }
 }
