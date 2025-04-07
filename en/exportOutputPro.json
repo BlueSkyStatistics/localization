@@ -1,0 +1,31 @@
+{
+    "exportpro_title": "Export current active output to HTML, DOCX or PDF",
+	"exportpro_subtitle" :"Please wait after you click Export button. The process may take a while depending on how large is your output that you are exporting.",
+	"exportPro_iconTooltip" : "Export to HTML, DOCX, PDF",
+	"exportpro_pandocHint" : "You need to have Pandoc installed separately. Only for the first time you need to provide the Pandoc executable path from your Pandoc installation path.",
+    "exportpro_pandocPathLbl": "Pandoc path:",
+    "exportpro_browsePandocPathBtn": "Choose Pandoc file path",
+	"exportpro_outputFolderLbl" : "Export document folder:",
+	"exportpro_browseOutputPathBtn" : "Choose export folder",
+	"exportpro_outputFilenameLbl" : "Enter exported filename (without file extension):",
+	"exportpro_selExportFormatLbl" : "Select file format to export to:",
+	"exportpro_HTMLradioLbl" : "HTML",
+	"exportpro_DOCXradioLbl" : "DOCX",
+	"exportpro_PDFradioLbl" : "PDF",
+	"exportpro_ExportBtn" : "Export",
+	"exportpro_CancelBtn" : "Cancel",
+	"exportWaitMsg" : "Generating output may take a while. Please check output folder after sometime.",
+	"exportMissingFieldsMsg1":"Please fill all the required fields (marked with red asterisk)",
+	"exportMissingFieldsMsg2":"Please check if Pandoc path or Output path exists",
+	"noPandocFoundMsg" : "Pandoc is not installed or the path is incorrect. Please enter correct Pandoc path where Pandoc executable is present and try again.",
+	"exportOverwriteTitle" : "Overwrite existing file?",
+	"exportOverwriteMsg" : "Following file(s) already exists. Do you want to overwrite?",
+	"exportOverwriteYes" : "Yes",
+	"exportOverwriteNo" : "Cancel",
+	"exportFileLockedTitle" : "File is open in an another application",
+	"exportFileLockedMsg1" : "Following file is locked",
+	"exportFileLockedMsg2" : " (possibly open in an another application)",
+	"exportFileLockedMsg3" : " Please close the file and try again. OR provide a different name for exported file."
+
+
+}
