@@ -19,6 +19,6 @@
   "help": {
     "title": "加载模型",
     "r_help": "help(load, package='base')",
-    "body": "\n<b>描述</b></br>\n将保存到所选文件的R模型对象加载。</br>\n我们将加载保存到所选文件的所有R对象。如果R全局环境中存在同名对象，它们将被覆盖。</br>\n我们将显示一条消息，确认使用BlueSky应用程序构建的已加载模型。</br>\n您必须单击执行按钮（水平三角形按钮）以加载保存到所选文件的R对象。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nload(file =\"文件路径\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nfile: 带路径的文件名，所选的模型对象将保存到此RData文件中\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的R图标，或在R编辑器窗口中运行以下命令help(load, package = 'base')\n</br>\n                "
+    "body": "\n<b>描述</b></br>\n将保存到所选文件的R模型对象加载。</br>\n我们将加载保存到所选文件的所有R对象。如果R全局环境中存在同名对象，它们将被覆盖。</br>\n我们将显示一条消息，确认使用 应用程序构建的已加载模型。</br>\n您必须单击执行按钮（水平三角形按钮）以加载保存到所选文件的R对象。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nload(file =\"文件路径\")\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\nfile: 带路径的文件名，所选的模型对象将保存到此RData文件中\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>帮助</b></br>\n有关详细帮助，请单击此对话框覆盖右上角的R图标，或在R编辑器窗口中运行以下命令help(load, package = 'base')\n</br>\n                "
   }
 }
