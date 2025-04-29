@@ -12,12 +12,6 @@
           "visible": true
         },
         {
-          "name": "샘플 데이터 세트",
-          "icon": "fas fa-folder-open",
-          "onclick": "openSampleDataset()",
-          "visible": true
-        },
-        {
           "name": "데이터 세트 저장",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",
