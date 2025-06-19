@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "データベーステーブルをインポート",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "サンプルデータセット",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",

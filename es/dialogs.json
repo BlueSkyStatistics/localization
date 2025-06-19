@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "Importar tabla de base de datos",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "Conjuntos de datos de muestra",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",
