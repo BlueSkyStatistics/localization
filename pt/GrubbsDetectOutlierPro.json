@@ -1,0 +1,12 @@
+{
+    "title": "Teste de Grubbs para Detecção de Outliers",
+    "navigation": "Teste de Grubbs de Outliers",
+    "variableListSelcted": "Selecione uma ou mais variáveis",
+    "alpha": "Alfa: % de chance (padrão 5%), o ponto mais distante da média é identificado como outlier",
+    "plotShowOutliersChk": "Exibir gráfico com todos os pontos, incluindo os outliers (se houver)",
+    "help": {
+        "title": "Teste de Grubbs para Detecção de Outliers",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Descrição</b></br> Determina se o ponto extremo na variável (valores Y, não é necessário variável X) é um outlier.</br></br> O Teste de Grubbs, também conhecido como método ESD (Extreme Studentized Deviate), é uma abordagem estatística amplamente utilizada para detectar um único outlier em um conjunto de dados univariado que segue uma distribuição normal.</br></br> O objetivo é determinar se o valor mais extremo é significativamente diferente dos demais, ou seja, se é um outlier.</br></br> Etapas da análise interna:</br> Calcular a média (μ) e o desvio padrão (σ) do conjunto completo de dados (incluindo o valor suspeito, ao contrário da abordagem robusta ROUT)</br> Calcular a estatística de teste de Grubbs (G também conhecido como Z):</br></br> Calcular o valor crítico segundo a fórmula de Grubbs:</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Comparar o G calculado com o valor crítico da tabela de Grubbs (baseado no tamanho da amostra e nível de significância). Se G exceder o valor crítico, o ponto é considerado um outlier estatisticamente significativo.</br></br> Uso iterativo:</br> Embora o teste clássico detecte apenas um outlier por vez, ele pode ser repetido para detectar múltiplos outliers — removendo um outlier e retestando os dados restantes.</br></br>"
+    }
+}

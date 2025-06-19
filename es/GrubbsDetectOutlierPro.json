@@ -1,0 +1,12 @@
+{
+    "title": "Prueba de Grubbs para detección de valores atípicos",
+    "navigation": "Prueba de valores atípicos de Grubbs",
+    "variableListSelcted": "Selecciona una o más variables",
+    "alpha": "Alfa: % de probabilidad (por defecto 5%), el punto más alejado de la media se identifica como valor atípico",
+    "plotShowOutliersChk": "Mostrar gráfico con todos los puntos incluyendo los valores atípicos, si los hay",
+    "help": {
+        "title": "Prueba de Grubbs para detección de valores atípicos",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Descripción</b></br> Determina si el punto extremo en la variable (valores Y, no se necesita variable X) es un valor atípico.</br></br> La prueba de Grubbs, también conocida como método ESD (Extreme Studentized Deviate), es un método estadístico ampliamente utilizado para detectar un único valor atípico en un conjunto de datos univariado que sigue una distribución normal.</br></br> El objetivo es determinar si el valor más extremo es significativamente diferente de los demás, es decir, si es un valor atípico.</br></br> Pasos de análisis internos:</br> Calcular la media (μ) y desviación estándar (σ) del conjunto de datos completo (incluyendo el valor sospechoso, a diferencia del método robusto ROUT)</br> Calcular la estadística de la prueba de Grubbs (G o Z):</br></br> Calcular el valor crítico usando la fórmula de Grubbs:</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Comparar el valor calculado de G con el valor crítico de la tabla de Grubbs (según el tamaño de la muestra y el nivel de significación). Si G supera el valor crítico, el dato se considera un valor atípico estadísticamente significativo.</br></br> Uso iterativo:</br> Aunque la prueba clásica detecta solo un valor atípico a la vez, puede aplicarse de forma repetida para detectar múltiples valores atípicos — eliminando uno en cada iteración y volviendo a realizar la prueba.</br></br>"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "Nokta Grafiği",
+    "navigation": "Nokta Grafiği",
+    "x": "X ekseni, sayısal değişken(ler) belirtin",
+    "fill": "Gruplama (Kategori) değişkeni belirtin",
+    "stackratioSpreadPoints": "Üst üste yığılmış noktaları dikey olarak yaymak için sayıyı artırın veya azaltın (varsayılan 4)",
+    "flip": "Ekseni Çevir",
+    "specify_a_title": "Bir başlık girin",
+    "x_title": "X Ekseni Etiketi",
+    "y_title": "Y Ekseni Etiketi",
+    "facets_lbl": "Fasetler",
+    "Facetrow": "Faset satırı",
+    "Facetcolumn": "Faset sütunu",
+    "Facetwrap": "Faset sarmalama (seçilirse, satır ve sütun seçimleri yok sayılır)",
+    "Facetscale": "Faset ölçeği",
+    "help": {
+        "title": "Nokta Grafiği",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "<b>Açıklama</b></br> Nokta grafiği, bir veri kümesinin dağılımını noktalarla göstermek için kullanılan bir grafik türüdür. Basit ama etkilidir; özellikle küçük veri kümeleri veya bireysel veri noktalarının net şekilde gösterilmesi gereken durumlar için uygundur. Her veri noktası için eksen boyunca (genellikle X ekseni) bir nokta yerleştirilir ve üst üste binmemeleri için dikey olarak yığılır. Bireysel değerlerin doğruluğu ve görünürlüğü önemli olduğunda histogram veya çubuk grafik yerine iyi bir alternatiftir. Her nokta bir gözlemi temsil eder; noktalar, frekansı göstermek için yığılır.<br/><br/><b>Kullanım</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>Paket</b></br>ggplot2; ggthemes; stringr</br><b>Yardım</b></br>help(geom_dotplot, package=ggplot2)</br> Detaylı yardım için R Yardım düğmesine tıklayın."
+    }
+}

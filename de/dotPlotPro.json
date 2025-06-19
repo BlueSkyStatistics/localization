@@ -1,0 +1,21 @@
+{
+    "title": "Punktdiagramm",
+    "navigation": "Punktdiagramm",
+    "x": "X-Achse, numerische Variable angeben",
+    "fill": "Gruppierungsvariable (Kategorie) angeben",
+    "stackratioSpreadPoints": "Erhöhe oder verringere den Wert (Standard 4), um die gestapelten Punkte vertikal zu verteilen",
+    "flip": "Achse drehen",
+    "specify_a_title": "Titel eingeben",
+    "x_title": "Beschriftung der X-Achse",
+    "y_title": "Beschriftung der Y-Achse",
+    "facets_lbl": "Facetten",
+    "Facetrow": "Facettenreihe",
+    "Facetcolumn": "Facettenspalte",
+    "Facetwrap": "Facettenumbruch (bei Auswahl werden Reihe und Spalte ignoriert)",
+    "Facetscale": "Facettenskalierung",
+    "help": {
+        "title": "Punktdiagramm",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "<b>Beschreibung</b></br> Ein Punktdiagramm ist ein Diagrammtyp, der die Verteilung eines Datensatzes anhand von Punkten darstellt. Es ist einfach, aber effektiv, insbesondere bei kleinen Datensätzen oder um einzelne Datenpunkte deutlich zu zeigen. Für jeden Datenpunkt wird ein Punkt entlang einer Achse (meistens der X-Achse) gesetzt und vertikal gestapelt, um Überlappungen zu vermeiden. Es ist eine gute Alternative zu Histogrammen oder Balkendiagrammen, wenn Präzision und Sichtbarkeit einzelner Werte wichtig sind. Jeder Punkt steht für eine Beobachtung, gestapelt zur Darstellung der Häufigkeit.<br/><br/><b>Verwendung</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>Paket</b></br>ggplot2; ggthemes; stringr</br><b>Hilfe</b></br>help(geom_dotplot, package=ggplot2)</br> Klicken Sie auf die R-Hilfe-Schaltfläche für detaillierte Informationen."
+    }
+}

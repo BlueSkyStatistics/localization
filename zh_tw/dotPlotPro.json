@@ -1,0 +1,21 @@
+{
+    "title": "點圖",
+    "navigation": "點圖",
+    "x": "X軸，指定一個或多個數值變數",
+    "fill": "指定分組（類別）變數",
+    "stackratioSpreadPoints": "增加或減少數值（預設4）以垂直分散堆疊的點",
+    "flip": "翻轉座標軸",
+    "specify_a_title": "輸入標題",
+    "x_title": "X軸標籤",
+    "y_title": "Y軸標籤",
+    "facets_lbl": "分面",
+    "Facetrow": "分面列",
+    "Facetcolumn": "分面欄",
+    "Facetwrap": "分面環繞（若選擇，分面列與欄將被忽略）",
+    "Facetscale": "分面刻度",
+    "help": {
+        "title": "點圖",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "<b>描述</b></br> 點圖是一種使用點來顯示資料集分布的圖表類型。它簡單但有效，特別適合於小型資料集或需要清晰顯示每個數據點的情況。每個數據點沿著某條軸（通常是X軸）放置，並透過垂直堆疊避免重疊。當需要展示個別值的準確性與可視性時，點圖是長條圖或直方圖的良好替代方案。每個點代表一個觀察值，堆疊的高度表示其頻率。<br/><br/><b>用法</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>套件</b></br>ggplot2; ggthemes; stringr</br><b>說明</b></br>help(geom_dotplot, package=ggplot2)</br> 點擊R說明按鈕以獲取更多詳細幫助。"
+    }
+}

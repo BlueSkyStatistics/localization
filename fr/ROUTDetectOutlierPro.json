@@ -1,0 +1,15 @@
+{
+  "title": "Détection d'Outliers ROUT",
+  "navigation": "Test d'Outliers ROUT",
+  "variableListSelcted": "Sélectionnez une ou plusieurs variables",
+  "adjPvalue": "Ajuster les valeurs p issues de la comparaison des moyennes",
+  "FDR_Q": "Spécifiez le taux maximum souhaité de Faux Découvertes (FDR) (par défaut 1%)",
+  "plotShowOutliersChk": "Tracer pour afficher tous les points y compris les outliers, le cas échéant",
+  "showOnlyOuliersInSummaryTableChk": "Afficher le tableau résumé de l'analyse avec seulement les outliers, le cas échéant",
+  "showAllPointsInSummaryTableChk": "Afficher le tableau résumé de l'analyse avec tous les points",
+  "help": {
+    "title": "Méthode ROUT (régression robuste) pour la détection d'outliers",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Description</b><br>ROUT (Régression robuste et élimination d'outliers) est une méthode puissante et moderne pour détecter un ou plusieurs outliers. Initialement développée pour la régression non linéaire, la méthode ROUT peut être adaptée à un usage général, incluant l'identification d'outliers dans une variable (une colonne de données d'un jeu de données).<br><br>ROUT combine deux concepts puissants :<br>Modélisation robuste — qui limite l'influence (c'est-à-dire l'impact faible) des outliers potentiels lors de l'estimation des tendances centrales.<br>Taux de fausses découvertes (FDR) — une méthode statistique de contrôle qui détermine combien des outliers détectés pourraient être des faux positifs.<br><br>Méthodes d'ajustement des valeurs p :<br>Inclut la correction de Bonferroni (« bonferroni ») où les valeurs p sont multipliées par le nombre de comparaisons, ainsi que des corrections moins conservatrices comme Holm (« holm »), Hochberg (« hochberg »), Hommel (« hommel »), Benjamini & Hochberg (« BH » ou alias « fdr »), et Benjamini & Yekutieli (« BY »). Une option sans ajustement (« none ») est également incluse.<br><br>Les quatre premières méthodes sont conçues pour un contrôle strict du taux d'erreur familial. Les méthodes de Hochberg et Hommel sont valides lorsque les tests d'hypothèses sont indépendants ou faiblement corrélés.<br><br>Les méthodes « BH » et « BY » contrôlent le taux de fausses découvertes, une condition moins stricte que le taux d'erreur familial, ce qui les rend plus puissantes.<br><br>Détecter les outliers dans une variable, c'est-à-dire les valeurs Y (pas de variable X nécessaire).<br><br>Étapes internes de l'analyse :<br>Assigner des valeurs X factices : 1, 2, ..., n<br>Modéliser : Y = M (moyenne constante) avec régression robuste (rlm du package MASS)<br>Calculer les résidus du modèle robuste<br>Utiliser les résidus étudiés<br>Appliquer la correction FDR avec un Q défini par l'utilisateur (par défaut 1%)<br>Marquer les outliers lorsque la valeur p ajustée FDR < Q/100<br><br>Pour plus de détails :<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}
