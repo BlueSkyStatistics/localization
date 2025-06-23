@@ -1,0 +1,21 @@
+{
+    "title": "Grafic cu puncte",
+    "navigation": "Grafic cu puncte",
+    "x": "Axa X, specificați una sau mai multe variabile numerice",
+    "fill": "Specificați o variabilă de grupare (Categorie)",
+    "stackratioSpreadPoints": "Măriți sau micșorați numărul (implicit 4) pentru a dispersa punctele suprapuse pe verticală",
+    "flip": "Inversează axa",
+    "specify_a_title": "Introduceți un titlu",
+    "x_title": "Eticheta axei X",
+    "y_title": "Eticheta axei Y",
+    "facets_lbl": "Fațete",
+    "Facetrow": "Rând fațetă",
+    "Facetcolumn": "Coloană fațetă",
+    "Facetwrap": "Înfășurare fațete (dacă este selectat, rândul și coloana sunt ignorate)",
+    "Facetscale": "Scară fațetă",
+    "help": {
+        "title": "Grafic cu puncte",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "<b>Descriere</b></br> Un grafic cu puncte este un tip de grafic utilizat pentru a afișa distribuția unui set de date folosind puncte. Este simplu dar eficient, mai ales pentru seturi de date mici sau pentru a evidenția clar fiecare punct de date individual. Fiecare punct reprezintă o observație și este plasat de-a lungul unei axe (de obicei axa X), fiind suprapus vertical pentru a evita suprapunerile. Este o alternativă bună la histogramă sau graficul cu bare atunci când precizia și vizibilitatea valorilor individuale sunt importante.<br/><br/><b>Utilizare</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>Pachet</b></br>ggplot2; ggthemes; stringr</br><b>Ajutor</b></br>help(geom_dotplot, package=ggplot2)</br> Faceți clic pe butonul Ajutor R pentru detalii."
+    }
+}

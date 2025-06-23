@@ -1,0 +1,21 @@
+{
+    "title": "Diagramme de points",
+    "navigation": "Diagramme de points",
+    "x": "Axe X, spécifier une ou plusieurs variables numériques",
+    "fill": "Spécifier une variable de regroupement (Catégorie)",
+    "stackratioSpreadPoints": "Augmenter ou diminuer le nombre (valeur par défaut 4) pour étaler les points empilés verticalement",
+    "flip": "Inverser l’axe",
+    "specify_a_title": "Entrer un titre",
+    "x_title": "Étiquette de l’axe X",
+    "y_title": "Étiquette de l’axe Y",
+    "facets_lbl": "Facettes",
+    "Facetrow": "Ligne de facette",
+    "Facetcolumn": "Colonne de facette",
+    "Facetwrap": "Enrouler les facettes (si sélectionné, les lignes et colonnes de facettes seront ignorées)",
+    "Facetscale": "Échelle des facettes",
+    "help": {
+        "title": "Diagramme de points",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "<b>Description</b></br> Un diagramme de points est un type de graphique utilisé pour afficher la distribution d’un ensemble de données à l’aide de points. C’est simple mais efficace, particulièrement pour les petits ensembles de données ou pour afficher clairement chaque point individuel. Un point est placé pour chaque observation le long d’un axe (généralement l’axe X), les empilant verticalement pour éviter les chevauchements. C’est une bonne alternative aux histogrammes ou aux diagrammes en barres lorsque la précision et la visibilité des valeurs individuelles sont importantes. Chaque point représente une observation. Les points sont empilés pour montrer la fréquence.<br/><br/><b>Utilisation</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>Package</b></br>ggplot2; ggthemes; stringr</br><b>Aide</b></br>help(geom_dotplot, package=ggplot2)</br> Cliquez sur le bouton Aide R pour plus de détails."
+    }
+}

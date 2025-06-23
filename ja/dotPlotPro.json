@@ -1,0 +1,21 @@
+{
+    "title": "ドットプロット",
+    "navigation": "ドットプロット",
+    "x": "X軸、数値変数を指定してください",
+    "fill": "グループ化（カテゴリ）変数を指定してください",
+    "stackratioSpreadPoints": "積み重ねたポイントを縦方向に広げるための数値を増減します（デフォルトは4）",
+    "flip": "軸を反転",
+    "specify_a_title": "タイトルを入力",
+    "x_title": "X軸ラベル",
+    "y_title": "Y軸ラベル",
+    "facets_lbl": "ファセット",
+    "Facetrow": "ファセット行",
+    "Facetcolumn": "ファセット列",
+    "Facetwrap": "ファセットラップ（選択すると行と列の選択は無効になります）",
+    "Facetscale": "ファセットスケール",
+    "help": {
+        "title": "ドットプロット",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "<b>説明</b></br> ドットプロットは、データセットの分布をドット（点）で表現するチャートの一種です。シンプルでありながら効果的で、小さなデータセットや各データポイントを明確に表示したい場合に特に適しています。各データポイントに対して軸（通常はX軸）にドットを配置し、重ならないように縦に積み上げます。精度や個々の値の可視性が重要な場合に、ヒストグラムや棒グラフの代替として適しています。各ドットは1つの観測値を表し、頻度を示すために積み重ねられます。<br/><br/><b>使用例</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>パッケージ</b></br>ggplot2; ggthemes; stringr</br><b>ヘルプ</b></br>help(geom_dotplot, package=ggplot2)</br> 詳細なRヘルプを見るにはRヘルプボタンをクリックしてください。"
+    }
+}
