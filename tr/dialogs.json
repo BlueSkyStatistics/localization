@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "Veritabanı tablosunu içe aktar",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "Örnek Veri Setleri",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",

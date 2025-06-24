@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "Importă tabelul bazei de date",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "Seturi de date exemplu",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",

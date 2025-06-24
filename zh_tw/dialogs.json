@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "匯入資料庫表",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        }, 		
+        {
           "name": "範例資料集",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",

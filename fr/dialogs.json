@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "Importer la table de base de données",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "Jeux de données d'exemple",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",

@@ -12,6 +12,12 @@
                     "visible": true
                 },
                 {
+                    "name": "Import DB Table",
+                    "icon": "fas fa-folder-open",
+                    "onclick": "openImportDBaseDialog(undefined)",
+                    "visible": true
+                },                
+                {
                     "name": "Sample Datasets",
                     "icon": "fas fa-folder-open",
                     "onclick": "openSampleDataset()",

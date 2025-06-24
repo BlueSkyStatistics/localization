@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "Importa tabella del database",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "Set di dati di esempio",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",

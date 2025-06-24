@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "استيراد جدول قاعدة البيانات",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "مجموعات بيانات عينة",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",
