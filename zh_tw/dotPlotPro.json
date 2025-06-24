@@ -15,8 +15,8 @@
     "Facetwrap": "分面環繞（若選擇，分面列與欄將被忽略）",
     "Facetscale": "分面刻度",
     "help": {
-        "title": "點圖",
+        "title": "點圖 (Dot Plot)",
         "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "<b>描述</b></br> 點圖是一種使用點來顯示資料集分布的圖表類型。它簡單但有效，特別適合於小型資料集或需要清晰顯示每個數據點的情況。每個數據點沿著某條軸（通常是X軸）放置，並透過垂直堆疊避免重疊。當需要展示個別值的準確性與可視性時，點圖是長條圖或直方圖的良好替代方案。每個點代表一個觀察值，堆疊的高度表示其頻率。<br/><br/><b>用法</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>套件</b></br>ggplot2; ggthemes; stringr</br><b>說明</b></br>help(geom_dotplot, package=ggplot2)</br> 點擊R說明按鈕以獲取更多詳細幫助。"
+        "body": "\n            <b>描述</b></br>\n            點圖是一種使用點來顯示資料集分佈的圖表類型。它簡單但有效，\n\t\t\t特別適用於較小的資料集或需清楚展示單個資料點的情況。點圖在一條座標軸（通常為 x 軸）上為每個資料點放置一個點，\n\t\t\t並以垂直堆疊方式避免重疊。當精確度與單一值的可見性很重要時，它是直方圖或長條圖的良好替代方案。\n\t\t\t每個點代表一個觀測值。點通過堆疊來顯示頻率。\n            <br/>\n\t\t\t<br/>\n\t\t\t若選擇了分組，建議使用相同分組變數的 facet wrap，以便更好地視覺化每組的點分佈。\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>使用方法</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #可選。若未選擇分組變數則省略\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #堆疊方向\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #堆疊比例\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>套件</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>說明</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            點擊 R 說明按鈕以取得詳細的 R 說明。您也可以輸入 help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 進行查詢。​\n           "
     }
 }

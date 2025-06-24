@@ -15,8 +15,8 @@
     "Facetwrap": "分面环绕（若选择，行与列设置将被忽略）",
     "Facetscale": "分面尺度",
     "help": {
-        "title": "点图",
+        "title": "点图 (Dot Plot)",
         "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "<b>描述</b></br> 点图是一种使用点显示数据集分布的图表类型。它简单而有效，尤其适用于小型数据集或需要清晰显示每个数据点的场景。每个数据点在某条轴（通常是X轴）上绘制，并通过垂直堆叠避免重叠。当需要展示每个单独值的精确性与可见性时，点图是直方图或柱状图的良好替代方案。每个点代表一个观测值，堆叠的高度显示其频率。<br/><br/><b>用法</b><br/><code>ggplot(data= dataset, aes(x=x_var))+geom_dotplot(aes(fill = group_var), method = \"histodot\", binwidth = 0.1, stackdir = \"up\", dotsize = 0.8, binaxis = \"x\", stackratio = 4, color = NA)</code><br/><br/><b>软件包</b></br>ggplot2; ggthemes; stringr</br><b>帮助</b></br>help(geom_dotplot, package=ggplot2)</br> 点击R帮助按钮查看更多详细帮助。"
+        "body": "\n            <b>描述</b></br>\n            点图是一种使用点来显示数据集分布的图表类型。它简单但有效，\n\t\t\t尤其适用于较小的数据集或需要清晰展示单个数据点的场景。点图在一条轴（通常是 x 轴）上为每个数据点放置一个点，\n\t\t\t并通过垂直堆叠来避免重叠。当精度和单个值的可见性很重要时，它是直方图或柱状图的良好替代方案。\n\t\t\t每个点代表一个观测值。点通过堆叠显示频率。\n            <br/>\n\t\t\t<br/>\n\t\t\t如果选择了分组，建议使用相同分组变量的 facet wrap 以便更好地可视化每组的点。\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #可选。如果未选择分组变量则省略\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #堆叠方向\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #堆叠比例\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>软件包</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>帮助</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            点击 R 帮助按钮获取详细帮助。您也可以输入 help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 进行查询。​\n           "
     }
 }
