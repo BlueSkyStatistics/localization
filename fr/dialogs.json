@@ -18,12 +18,6 @@
           "visible": true
         },		
         {
-          "name": "Jeux de données d'exemple",
-          "icon": "fas fa-folder-open",
-          "onclick": "openSampleDataset()",
-          "visible": true
-        },
-        {
           "name": "Enregistrer le jeu de données",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",

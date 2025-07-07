@@ -18,12 +18,6 @@
           "visible": true
         },		
         {
-          "name": "Conjuntos de dados de exemplo",
-          "icon": "fas fa-folder-open",
-          "onclick": "openSampleDataset()",
-          "visible": true
-        },
-        {
           "name": "Salvar conjunto de dados",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",

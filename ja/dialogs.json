@@ -18,12 +18,6 @@
           "visible": true
         },		
         {
-          "name": "サンプルデータセット",
-          "icon": "fas fa-folder-open",
-          "onclick": "openSampleDataset()",
-          "visible": true
-        },
-        {
           "name": "データセットを保存",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",

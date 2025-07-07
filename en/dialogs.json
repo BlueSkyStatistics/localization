@@ -18,12 +18,6 @@
                     "visible": true
                 },                
                 {
-                    "name": "Sample Datasets",
-                    "icon": "fas fa-folder-open",
-                    "onclick": "openSampleDataset()",
-                    "visible": true
-                },
-                {
                     "name": "Save Dataset",
                     "icon": "fas fa-save",
                     "onclick": "saveDataset()",

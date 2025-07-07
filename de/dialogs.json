@@ -18,12 +18,6 @@
           "visible": true
         },		
         {
-          "name": "Beispiel-Datensätze",
-          "icon": "fas fa-folder-open",
-          "onclick": "openSampleDataset()",
-          "visible": true
-        },
-        {
           "name": "Datensatz speichern",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",
