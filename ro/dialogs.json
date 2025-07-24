@@ -82,7 +82,12 @@
           "name": "Reîmprospătează cache-ul dialogului",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "Actualizează ajutorul offline",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]

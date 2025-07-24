@@ -82,7 +82,12 @@
           "name": "Dialog-Cache aktualisieren",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },                
+		{
+			"name": "Offline‑Hilfe aktualisieren",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]

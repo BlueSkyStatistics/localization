@@ -82,7 +82,12 @@
           "name": "ダイアログキャッシュを更新",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "オフラインヘルプを更新",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]

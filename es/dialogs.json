@@ -82,7 +82,13 @@
           "name": "Actualizar caché del diálogo",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "Actualizar la ayuda sin conexión",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
+
       ]
     }
   ]

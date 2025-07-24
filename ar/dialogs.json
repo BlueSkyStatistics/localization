@@ -82,7 +82,12 @@
           "name": "تحديث ذاكرة التخزين المؤقت للحوار",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },                
+		{
+			"name": "تحديث المساعدة دون اتصال",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]

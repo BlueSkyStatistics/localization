@@ -82,7 +82,12 @@
           "name": "Rafraîchir le cache du dialogue",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "Mettre à jour l’aide hors ligne",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]

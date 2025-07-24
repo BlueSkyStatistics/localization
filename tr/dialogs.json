@@ -82,7 +82,12 @@
           "name": "Diyalog Önbelleğini Yenile",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "Çevrimdışı yardımı güncelle",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]
