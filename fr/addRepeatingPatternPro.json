@@ -1,0 +1,13 @@
+{
+  "title": "Ajouter une Variable avec un Motif Répétitif",
+  "navigation": "Ajouter un Motif Répétitif",
+  "repeatPatternVarName": "Nom de la variable pour le motif répétitif des valeurs (mettre à jour si la variable existe déjà)",
+  "repeatingValues": "Valeurs numériques et/ou textuelles séparées par des virgules à répéter (ex. : 1,Blue,5,Bad,Good,3,7,0)",
+  "repeatFrequencyEach": "(Optionnel) Nombre de répétitions pour chaque élément ci-dessus, séparé par des virgules (ex. : 1,5,2,2,2,3,3,3)",
+  "times": "Nombre de fois que l'ensemble du groupe d'éléments doit être répété (si laissé vide, les motifs seront répétés pour remplir la longueur du jeu de données)",
+  "help": {
+    "title": "Ajouter une Variable avec un Motif Répétitif",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAjoute une variable (c’est-à-dire une colonne) au jeu de données avec un motif répétitif spécifié\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGénère une chaîne de caractères ou des motifs numériques ou une combinaison des deux dans une nouvelle colonne du jeu de données (ex. : 5x rouge / 5x bleu / 5x jaune → avec répétition de la séquence de 10 OU une séquence de 3x1 / 3x2 / 3x3 …)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

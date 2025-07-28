@@ -1,0 +1,13 @@
+{
+  "title": "Aggiungi una Variabile con un Modello Ripetuto",
+  "navigation": "Aggiungi Modello Ripetuto",
+  "repeatPatternVarName": "Nome della variabile per il modello ripetuto di valori (aggiorna se la variabile esiste già)",
+  "repeatingValues": "Valori numerici e/o stringhe separati da virgole da ripetere (es. 1,Blue,5,Bad,Good,3,7,0)",
+  "repeatFrequencyEach": "(Opzionale) Numero di volte che ogni elemento sopra deve essere ripetuto, separati da virgole (es. 1,5,2,2,2,3,3,3)",
+  "times": "Numero di volte in cui l'intero gruppo di elementi deve essere ripetuto (se lasciato vuoto, i modelli si ripeteranno per riempire la lunghezza del dataset)",
+  "help": {
+    "title": "Aggiungi una Variabile con un Modello Ripetuto",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tAggiunge una variabile (cioè colonna) al dataset con un modello ripetitivo specificato\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGenera una stringa di caratteri o schemi numerici o una combinazione di entrambi in una nuova colonna del dataset (es. 5x rosso / 5x blu / 5x giallo → con ripetizione della sequenza di 10 O una sequenza di 3x1 / 3x2 / 3x3 …)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}
