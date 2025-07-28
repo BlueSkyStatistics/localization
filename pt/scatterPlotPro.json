@@ -9,6 +9,7 @@
   "shape": "Forma",
   "alpha": "Opacidade (0-1)",
   "jitter": "Espalhar (efeito jitter) os pontos sobrepostos/aglomerados",
+  "positionJitterWidth": "Dispersão dos pontos de jitter (escolha um valor entre 0 e 1. O padrão é 0,2)",
   "sm": "Selecionar um modelo de ajuste (suavização) da lista",
   "storeSmoothingModelChk": "Armazenar o modelo selecionado (apenas lm, glm, quadrático, cúbico) para avaliação/predição futura",
   "lineColor": "Cor da linha de suavização (Após selecionar a cor, clique fora do controle para aplicar)",
