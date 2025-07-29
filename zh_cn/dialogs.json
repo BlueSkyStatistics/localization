@@ -76,7 +76,12 @@
           "name": "刷新对话框缓存",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "更新离线帮助",
+			"icon": "fas fa-download",
+			"onclick": "updateOfflineHelpPdf()"
+		}
       ]
     }
   ]

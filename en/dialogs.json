@@ -76,6 +76,11 @@
                     "name": "Refresh Dialog Cache",
                     "icon": "fas fa-sync",
                     "onclick": "onApplyLanguage($('#localeSelector').val())"
+                },                
+                {
+                    "name": "Update Offline Help",
+                    "icon": "fas fa-download",
+                    "onclick": "updateOfflineHelpPdf()"
                 }
             ]
         }
