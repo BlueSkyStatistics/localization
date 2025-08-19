@@ -1,22 +1,29 @@
 {
-    "title": "مخطط النقاط",
-    "navigation": "مخطط النقاط",
-    "x": "محور X، حدد متغيرًا رقميًا",
-    "fill": "حدد متغير التجميع (فئة)",
-    "dotPointSize" : "حجم نقاط النقطة (الافتراضي 1)",
-    "stackratioSpreadPoints": "زيادة أو تقليل الرقم (القيمة الافتراضية 4) لتوزيع النقاط المكدسة عموديًا",
+  "language": {
+    "language": "Arabic",
+    "key": "ar"
+  },
+  "original_json": {
+    "title": "رسم النقاط",
+    "navigation": "رسم النقاط",
+    "x": "محور X، حدد متغير رقمي (أو أكثر)",
+    "fill": "حدد متغير مجموعة (فئة)",
+    "dotPointSize": "حجم نقاط الرسم (الافتراضي 1)",
+    "stackratioSpreadPoints": "زيادة أو تقليل العدد (الافتراضي 4) لنشر النقاط المكدسة عموديًا",
     "flip": "عكس المحور",
     "specify_a_title": "أدخل عنوانًا",
     "x_title": "تسمية محور X",
     "y_title": "تسمية محور Y",
-    "facets_lbl": "التقسيمات",
-    "Facetrow": "صف التقسيم",
-    "Facetcolumn": "عمود التقسيم",
-    "Facetwrap": "لف التقسيم (عند اختياره يتم تجاهل صف وعمود التقسيم)",
-    "Facetscale": "مقياس التقسيم",
+    "legends": "عرض الأساطير وإذا كان الأمر كذلك، موقع الأساطير (الافتراضي هو اليمين)",
+    "facets_lbl": "الوجوه",
+    "Facetrow": "صف الوجوه",
+    "Facetcolumn": "عمود الوجوه",
+    "Facetwrap": "تغليف الوجوه (إذا تم اختياره، سيتم تجاهل أي اختيار لصف وعمود الوجوه)",
+    "Facetscale": "مقياس الوجوه",
     "help": {
-        "title": "مخطط النقاط",
-        "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "\n            <b>الوصف</b></br>\n            مخطط النقاط هو نوع من المخططات يُستخدم لعرض توزيع مجموعة بيانات باستخدام النقاط. إنه بسيط لكنه فعال، \n\t\t\tخاصة لمجموعات البيانات الصغيرة أو لإظهار النقاط الفردية بوضوح. يضع مخطط النقاط نقطة لكل قيمة بيانات \n\t\t\tعلى محور (عادة المحور السيني)، ويكدسها عمودياً لتجنب التداخل. إنه بديل جيد \n\t\t\tللمخططات البيانية أو المدرجات التكرارية عندما تكون الدقة ورؤية القيم الفردية مهمة.\n\t\t\tكل نقطة تمثل ملاحظة واحدة. يتم تكديس النقاط لإظهار التكرار.\n            <br/>\n\t\t\t<br/>\n\t\t\tاستخدم التفريع (facet wrap) مع نفس متغير التجميع لتحسين تصور النقاط لكل مجموعة في حال تم اختيار التجميع\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #اختياري. يتم حذفه إذا لم يتم تحديد متغير التجميع\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #اتجاه تكديس النقاط\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #نسبة التكديس وانتشار النقاط\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>المساعدة</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            اضغط على زر مساعدة R للحصول على المساعدة التفصيلية. يمكنك أيضاً كتابة help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
+      "title": "رسم النقاط",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>الوصف</b></br>\n            رسم النقاط هو نوع من المخططات المستخدمة لعرض توزيع مجموعة بيانات باستخدام النقاط. إنه بسيط ولكنه فعال، \n\t\t\tخصوصًا لمجموعات البيانات الصغيرة أو لعرض نقاط البيانات الفردية بوضوح. يقوم رسم النقاط بوضع نقطة لكل نقطة بيانات \n\t\t\tعلى محور (عادةً محور X)، ويكدسها عموديًا لتجنب التداخل. إنه بديل جيد \n\t\t\tللهستوجرامات أو المخططات العمودية عندما تكون الدقة ورؤية القيم الفردية مهمة.\n\t\t\tتمثل كل نقطة ملاحظة واحدة. يتم تكديس النقاط لإظهار التكرار.\n            <br/>\n\t\t\t<br/>\n\t\t\tاستخدم تغليف الوجوه مع نفس متغير المجموعة لتحسين تصور النقاط لكل مجموعة إذا تم اختيار التجميع\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #اختياري. يتم حذفه إذا لم يتم اختيار متغير مجموعة\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #اتجاه النقاط المكدسة\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #نسبة تكديس النقاط\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>المساعدة</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            انقر على زر مساعدة R للحصول على مساعدة مفصلة في R. يمكنك أيضًا إدخال help(labs)، help(geom_dotplot)، help(aes)، help(facet_grid)، help(theme_calc)، help(coord_flip)​\n           "
     }
+  }
 }

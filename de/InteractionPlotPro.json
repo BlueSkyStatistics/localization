@@ -1,17 +1,18 @@
 {
-  "title": "Hauptwirkung und Interaktionsdiagramm",
-  "navigation": "Hauptwirkung und Interaktion",
+  "title": "Haupteffekt- und Interaktionsdiagramm",
+  "navigation": "Haupteffekt und Interaktion",
   "response": "Antwortvariable (geben Sie eine numerische Variable an, um den Mittelwert zu berechnen)",
-  "Fixed": "Geben Sie eine oder mehrere Gruppierungsvariablen (Kategorie) an",
-  "mainEffectChk": "Hauptwirkung darstellen",
+  "Fixed": "Geben Sie eine oder mehrere Gruppierungs- (Kategorie-) Variablen an",
+  "mainEffectChk": "Haupteffekt darstellen",
   "interactionEffectChk": "Interaktionseffekt darstellen",
-  "chartTitle": "Titel eingeben",
+  "chartTitle": "Geben Sie einen Titel ein",
   "onePlotChk": "Alle Interaktionen in einem Diagramm (Abwählen, um jede Interaktion separat darzustellen)",
-  "noPlotsPerRow": "Anzahl der Interaktionsdiagramme pro Reihe (wenn leer gelassen, Standard: Anzahl der Gruppen -1)",
-  "angleX_axis_text": "Winkel zum Neigen der x-Achsen-Beschriftungen für das Interaktionsdiagramm (wenn leer gelassen, Standard: 25 Grad)",
-  "colorHintLabel1": "Wählen Sie eine Farbe aus (Nach der Farbauswahl außerhalb der Steuerung klicken, um anzuwenden)",
+  "noPlotsPerRow": "Anzahl der Interaktionsdiagramme pro Zeile (wenn leer gelassen, Standard: Anzahl der Gruppen -1)",
+  "angleX_axis_text": "Winkel zum Neigen der x-Achsen-Textbeschriftungen für das Interaktionsdiagramm (wenn leer gelassen, Standard: 25 Grad)",
+  "legends": "Legenden anzeigen und falls ja, Position der Legenden (Standard ist rechts)",
+  "colorHintLabel1": "Wählen Sie eine Farbe (Nach der Farbauswahl außerhalb der Steuerung klicken, um anzuwenden)",
   "help": {
     "title": "Interaktionsdiagramm",
-    "body": "\n\t\t\tHauptwirkungdiagramm zur Analyse der Wirkung jeder gewählten kategorialen Variablen auf den Mittelwert der Antwortvariable\n\t\t\tInteraktionsdiagramm zur Analyse der Wirkung der Interaktion von (paarweise) zwei kategorialen Variablen auf den Mittelwert der Antwortvariable\n    "
+    "body": "\n\t\t\tHaupteffektdiagramm zur Analyse des Effekts jeder gewählten kategorialen Variable auf den Mittelwert der Antwortvariable\n\t\t\tInteraktionsdiagramm zur Analyse des Effekts der Interaktion von (paarweise) zwei kategorialen Variablen auf den Mittelwert der Antwortvariable\n    "
   }
 }

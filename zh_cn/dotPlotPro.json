@@ -1,22 +1,29 @@
 {
+  "language": {
+    "language": "simplified chinese",
+    "key": "zh_cn"
+  },
+  "original_json": {
     "title": "点图",
     "navigation": "点图",
-    "x": "X轴，指定一个或多个数值变量",
-    "fill": "指定分组（类别）变量",
-    "dotPointSize" : "点的大小（默认 1）",
-    "stackratioSpreadPoints": "增加或减少数值（默认4）以垂直分散堆叠的点",
-    "flip": "翻转坐标轴",
+    "x": "X 轴，指定一个数值变量",
+    "fill": "指定一个分组（类别）变量",
+    "dotPointSize": "点的大小（默认 1）",
+    "stackratioSpreadPoints": "增加或减少数量（默认 4）以垂直展开堆叠的点",
+    "flip": "翻转轴",
     "specify_a_title": "输入标题",
-    "x_title": "X轴标签",
-    "y_title": "Y轴标签",
-    "facets_lbl": "分面",
-    "Facetrow": "分面行",
-    "Facetcolumn": "分面列",
-    "Facetwrap": "分面环绕（若选择，行与列设置将被忽略）",
-    "Facetscale": "分面尺度",
+    "x_title": "X 轴标签",
+    "y_title": "Y 轴标签",
+    "legends": "显示图例，如果显示，图例的位置（默认在右侧）",
+    "facets_lbl": "面板",
+    "Facetrow": "面板行",
+    "Facetcolumn": "面板列",
+    "Facetwrap": "面板包裹（如果选择，任何面板行和列的选择将被忽略）",
+    "Facetscale": "面板比例",
     "help": {
-        "title": "点图 (Dot Plot)",
-        "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "\n            <b>描述</b></br>\n            点图是一种使用点来显示数据集分布的图表类型。它简单但有效，\n\t\t\t尤其适用于较小的数据集或需要清晰展示单个数据点的场景。点图在一条轴（通常是 x 轴）上为每个数据点放置一个点，\n\t\t\t并通过垂直堆叠来避免重叠。当精度和单个值的可见性很重要时，它是直方图或柱状图的良好替代方案。\n\t\t\t每个点代表一个观测值。点通过堆叠显示频率。\n            <br/>\n\t\t\t<br/>\n\t\t\t如果选择了分组，建议使用相同分组变量的 facet wrap 以便更好地可视化每组的点。\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #可选。如果未选择分组变量则省略\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #堆叠方向\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #堆叠比例\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>软件包</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>帮助</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            点击 R 帮助按钮获取详细帮助。您也可以输入 help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 进行查询。​\n           "
+      "title": "点图",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>描述</b></br>\n            点图是一种用于显示数据集分布的图表类型，使用点来表示。它简单但有效，\n\t\t\t尤其适用于较小的数据集或清晰显示单个数据点。点图在轴上（通常是 x 轴）为每个数据点放置一个点，\n\t\t\t垂直堆叠以避免重叠。这是直方图或条形图的一个不错替代方案，尤其在精确性和单个值的可见性很重要时。\n\t\t\t每个点代表一个观察值。点的堆叠显示频率。\n            <br/>\n\t\t\t<br/>\n\t\t\t如果选择分组，使用相同的分组变量进行面板包裹以更好地可视化每组的点\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #可选。如果没有选择分组变量则省略\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #堆叠点的方向\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #堆叠比例\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>包</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>帮助</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            点击 R 帮助按钮以获取详细的 R 帮助。您还可以输入 help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
     }
+  }
 }

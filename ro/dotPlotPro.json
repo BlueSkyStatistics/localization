@@ -1,22 +1,29 @@
 {
-    "title": "Grafic cu puncte",
-    "navigation": "Grafic cu puncte",
-    "x": "Axa X, specificați una sau mai multe variabile numerice",
+  "language": {
+    "language": "romanian",
+    "key": "ro"
+  },
+  "original_json": {
+    "title": "Diagramă cu puncte",
+    "navigation": "Diagramă cu puncte",
+    "x": "Axa X, specificați o variabilă numerică (s)",
     "fill": "Specificați o variabilă de grupare (Categorie)",
-    "dotPointSize" : "Dimensiunea punctelor (implicit 1)",
-    "stackratioSpreadPoints": "Măriți sau micșorați numărul (implicit 4) pentru a dispersa punctele suprapuse pe verticală",
-    "flip": "Inversează axa",
+    "dotPointSize": "Dimensiunea punctelor (implicit 1)",
+    "stackratioSpreadPoints": "Creșteți sau diminuați numărul (implicit 4) pentru a dispersa punctele stivuite vertical",
+    "flip": "Răsturnați axa",
     "specify_a_title": "Introduceți un titlu",
     "x_title": "Eticheta axei X",
     "y_title": "Eticheta axei Y",
+    "legends": "Arată legendele și, dacă da, poziția legendelor (implicit este dreapta)",
     "facets_lbl": "Fațete",
-    "Facetrow": "Rând fațetă",
-    "Facetcolumn": "Coloană fațetă",
-    "Facetwrap": "Înfășurare fațete (dacă este selectat, rândul și coloana sunt ignorate)",
-    "Facetscale": "Scară fațetă",
+    "Facetrow": "Rând de fațete",
+    "Facetcolumn": "Coloană de fațete",
+    "Facetwrap": "Împachetare a fațetelor (dacă este ales, orice selecție de rând și coloană de fațete va fi ignorată)",
+    "Facetscale": "Scală de fațete",
     "help": {
-        "title": "Grafic de puncte (Dot Plot)",
-        "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "\n            <b>Descriere</b></br>\n            Un grafic de puncte este un tip de grafic utilizat pentru a afișa distribuția unui set de date folosind puncte. Este simplu dar eficient, \n\t\t\tmai ales pentru seturi de date mici sau pentru afișarea clară a fiecărui punct individual. Un grafic de puncte plasează un punct pentru fiecare valoare \n\t\t\tpe un ax (de obicei axa x), stivuindu-le vertical pentru a evita suprapunerile. Este o alternativă bună \n\t\t\tla histograme sau grafice cu bare atunci când precizia și vizibilitatea valorilor individuale sunt importante.\n\t\t\tFiecare punct reprezintă o observație. Punctele sunt stivuite pentru a arăta frecvența.\n            <br/>\n\t\t\t<br/>\n\t\t\tDacă se selectează o variabilă de grupare, utilizați facet wrap cu aceeași variabilă pentru o vizualizare mai bună a punctelor pe grupuri.\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #opțional. Omis dacă nu se selectează nicio variabilă de grupare\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direcția de stivuire\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #raport de stivuire\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Ajutor</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Apăsați butonul R Help pentru a obține ajutor detaliat. De asemenea, puteți utiliza help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
+      "title": "Diagramă cu puncte",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>Descriere</b></br>\n            O diagramă cu puncte este un tip de grafic utilizat pentru a afișa distribuția unui set de date folosind puncte. Este simplă, dar eficientă, \n\t\t\tespecial pentru seturi de date mai mici sau pentru a arăta clar punctele individuale de date. O diagramă cu puncte plasează un punct pentru fiecare punct de date \n\t\t\tpe o axă (de obicei axa x), stivuindu-le vertical pentru a evita suprapunerea. Este o alternativă bună \n\t\t\tla histograme sau grafice cu bare atunci când precizia și vizibilitatea valorilor individuale sunt importante.\n\t\t\tFiecare punct reprezintă o observație. Punctele sunt stivuite pentru a arăta frecvența.\n            <br/>\n\t\t\t<br/>\n\t\t\tUtilizați împachetarea fațetelor cu aceeași variabilă de grupare pentru o vizualizare mai bună a punctelor pe grup dacă gruparea este selectată\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #opțional. Omitere dacă nu este selectată nicio variabilă de grupare\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direcția punctelor stivuite\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #raportul stivuirii punctelor\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Ajutor</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
     }
+  }
 }

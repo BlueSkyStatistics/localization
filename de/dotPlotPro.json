@@ -1,22 +1,29 @@
 {
+  "language": {
+    "language": "german",
+    "key": "de"
+  },
+  "original_json": {
     "title": "Punktdiagramm",
     "navigation": "Punktdiagramm",
-    "x": "X-Achse, numerische Variable angeben",
-    "fill": "Gruppierungsvariable (Kategorie) angeben",
-    "dotPointSize" : "Größe der Punktmarkierungen (Standard 1)",
-    "stackratioSpreadPoints": "Erhöhe oder verringere den Wert (Standard 4), um die gestapelten Punkte vertikal zu verteilen",
-    "flip": "Achse drehen",
-    "specify_a_title": "Titel eingeben",
-    "x_title": "Beschriftung der X-Achse",
-    "y_title": "Beschriftung der Y-Achse",
+    "x": "X-Achse, geben Sie eine(n) numerische(n) Variable(n) an",
+    "fill": "Geben Sie eine Gruppierungsvariable (Kategorie) an",
+    "dotPointSize": "Größe der Punktmarkierungen (Standard 1)",
+    "stackratioSpreadPoints": "Erhöhen oder verringern Sie die Anzahl (Standard 4), um die gestapelten Punkte vertikal zu verteilen",
+    "flip": "Achse umdrehen",
+    "specify_a_title": "Geben Sie einen Titel ein",
+    "x_title": "X-Achsenbeschriftung",
+    "y_title": "Y-Achsenbeschriftung",
+    "legends": "Legenden anzeigen und wenn ja, Position der Legenden (Standard ist rechts)",
     "facets_lbl": "Facetten",
     "Facetrow": "Facettenreihe",
-    "Facetcolumn": "Facettenspalte",
-    "Facetwrap": "Facettenumbruch (bei Auswahl werden Reihe und Spalte ignoriert)",
-    "Facetscale": "Facettenskalierung",
+    "Facetcolumn": "Facettenkolonne",
+    "Facetwrap": "Facettenumwicklung (wenn gewählt, wird jede Auswahl von Facettenreihe und -kolonne ignoriert)",
+    "Facetscale": "Facettenskala",
     "help": {
-        "title": "Punktdiagramm",
-        "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "\n            <b>Beschreibung</b></br>\n            Ein Punktdiagramm ist eine Art Diagramm, das die Verteilung eines Datensatzes mit Punkten darstellt. Es ist einfach, aber effektiv, \n\t\t\tbesonders für kleinere Datensätze oder zur klaren Anzeige einzelner Datenpunkte. Ein Punkt wird für jeden Datenpunkt \n\t\t\tauf einer Achse (normalerweise der X-Achse) platziert und vertikal gestapelt, um Überlappungen zu vermeiden. Es ist eine gute \n\t\t\tAlternative zu Histogrammen oder Balkendiagrammen, wenn Präzision und Sichtbarkeit einzelner Werte wichtig sind.\n\t\t\tJeder Punkt stellt eine Beobachtung dar. Punkte werden gestapelt, um die Häufigkeit anzuzeigen.\n            <br/>\n\t\t\t<br/>\n\t\t\tVerwenden Sie Facet Wrap mit der gleichen Gruppierungsvariablen für eine bessere Visualisierung der Punkte pro Gruppe, falls Gruppierung ausgewählt ist\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #optional. Wird weggelassen, wenn keine Gruppierung ausgewählt ist\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #Richtung des Stapelns der Punkte\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #Stapelverhältnis zur Verteilung der Punkte\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Hilfe</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Klicken Sie auf die R-Hilfe-Schaltfläche für ausführliche Hilfe. Sie können auch help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) eingeben​\n           "
+      "title": "Punktdiagramm",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>Beschreibung</b></br>\n            Ein Punktdiagramm ist eine Art Diagramm, das verwendet wird, um die Verteilung eines Datensatzes mithilfe von Punkten darzustellen. Es ist einfach, aber effektiv, \n\t\t\teinschließlich für kleinere Datensätze oder um einzelne Datenpunkte klar zu zeigen. Ein Punktdiagramm platziert einen Punkt für jeden Datenpunkt \n\t\t\tentlang einer Achse (gewöhnlich der x-Achse), stapelt sie vertikal, um Überlappungen zu vermeiden. Es ist eine gute \n\t\t\tAlternative zu Histogrammen oder Balkendiagrammen, wenn Präzision und Sichtbarkeit einzelner Werte wichtig sind.\n\t\t\tJeder Punkt repräsentiert eine Beobachtung. Punkte werden gestapelt, um die Häufigkeit zu zeigen.\n            <br/>\n\t\t\t<br/>\n\t\t\tVerwenden Sie die Facettenumwicklung mit derselben Gruppierungsvariable für eine bessere Visualisierung der Punkte pro Gruppe, wenn eine Gruppierung ausgewählt ist\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #optional. Ausgelassen, wenn keine Gruppierungsvariable ausgewählt ist\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #stapelrichtung\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #stapelverhältnis\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Hilfe</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​ eingeben\n           "
     }
+  }
 }

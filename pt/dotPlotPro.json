@@ -1,22 +1,29 @@
 {
+  "language": {
+    "language": "Portuguese",
+    "key": "pt"
+  },
+  "original_json": {
     "title": "Gráfico de Pontos",
     "navigation": "Gráfico de Pontos",
-    "x": "Eixo X, especifique uma ou mais variáveis numéricas",
+    "x": "Eixo X, especifique uma variável numérica(s)",
     "fill": "Especifique uma variável de agrupamento (Categoria)",
-    "dotPointSize" : "Tamanho dos pontos (padrão 1)",
+    "dotPointSize": "Tamanho dos pontos (padrão 1)",
     "stackratioSpreadPoints": "Aumente ou diminua o número (padrão 4) para espalhar os pontos empilhados verticalmente",
     "flip": "Inverter Eixo",
-    "specify_a_title": "Insira um título",
-    "x_title": "Rótulo do Eixo X",
-    "y_title": "Rótulo do Eixo Y",
+    "specify_a_title": "Digite um título",
+    "x_title": "Rótulo do eixo X",
+    "y_title": "Rótulo do eixo Y",
+    "legends": "Mostrar Legendas e, se sim, posição das Legendas (o padrão é à direita)",
     "facets_lbl": "Facetas",
     "Facetrow": "Linha de Faceta",
     "Facetcolumn": "Coluna de Faceta",
-    "Facetwrap": "Envolver Facetas (se escolhido, linha e coluna serão ignoradas)",
+    "Facetwrap": "Enrolar Faceta (se escolhido, qualquer seleção de Linha e Coluna de Faceta será ignorada)",
     "Facetscale": "Escala de Faceta",
     "help": {
-        "title": "Gráfico de Pontos (Dot Plot)",
-        "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "\n            <b>Descrição</b></br>\n            Um gráfico de pontos é um tipo de gráfico utilizado para exibir a distribuição de um conjunto de dados usando pontos. É simples mas eficaz, \n\t\t\tespecialmente para conjuntos de dados pequenos ou quando se deseja visualizar claramente cada ponto individual. Um gráfico de pontos coloca um ponto para cada \n\t\t\tdado ao longo de um eixo (geralmente o eixo x), empilhando-os verticalmente para evitar sobreposição. É uma boa \n\t\t\talternativa aos histogramas ou gráficos de barras quando a precisão e a visibilidade de cada valor são importantes.\n\t\t\tCada ponto representa uma observação. Os pontos são empilhados para mostrar a frequência.\n            <br/>\n\t\t\t<br/>\n\t\t\tSe a opção de agrupamento for selecionada, utilize facet wrap com a mesma variável de agrupamento para uma melhor visualização dos pontos por grupo.\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #opcional. Omitido se não houver variável de agrupamento selecionada\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direção de empilhamento\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #proporção de empilhamento\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Ajuda</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Clique no botão de Ajuda R para obter ajuda detalhada. Também pode utilizar help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
+      "title": "Gráfico de Pontos",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>Descrição</b></br>\n            Um gráfico de pontos é um tipo de gráfico usado para exibir a distribuição de um conjunto de dados usando pontos. É simples, mas eficaz, \n\t\t\tespecialmente para conjuntos de dados menores ou para mostrar pontos de dados individuais claramente. Um gráfico de pontos coloca um ponto para cada ponto de dados \n\t\t\tao longo de um eixo (geralmente o eixo x), empilhando-os verticalmente para evitar sobreposição. É uma boa \n\t\t\talternativa a histogramas ou gráficos de barras quando a precisão e a visibilidade dos valores individuais são importantes.\n\t\t\tCada ponto representa uma observação. Os pontos são empilhados para mostrar a frequência.\n            <br/>\n\t\t\t<br/>\n\t\t\tUse o enrolar de facetas com a mesma variável de agrupamento para melhor visualização dos pontos por grupo, se o agrupamento for selecionado\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Uso</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #opcional. Omitido se não houver variável de agrupamento selecionada\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direção_dos_pontos_empilhados\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #proporção_empilhamento_pontos\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Pacote</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Ajuda</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Clique no botão de Ajuda do R para obter ajuda detalhada do R. Você também pode digitar help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
     }
+  }
 }

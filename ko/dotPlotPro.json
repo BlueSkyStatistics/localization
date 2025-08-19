@@ -1,22 +1,29 @@
 {
-    "title": "도트 플롯",
-    "navigation": "도트 플롯",
-    "x": "X축, 숫자형 변수를 지정하세요",
-    "fill": "그룹화 (범주형) 변수를 지정하세요",
-    "dotPointSize" : "점 포인트의 크기 (기본값 1)",
-    "stackratioSpreadPoints": "수직으로 쌓인 점들을 퍼뜨릴 숫자를 증가 또는 감소 (기본값 4)",
-    "flip": "축 반전",
-    "specify_a_title": "제목 입력",
-    "x_title": "X축 레이블",
-    "y_title": "Y축 레이블",
+  "language": {
+    "language": "korean",
+    "key": "ko"
+  },
+  "original_json": {
+    "title": "점 플롯",
+    "navigation": "점 플롯",
+    "x": "X 축, 숫자 변수(들)를 지정하세요",
+    "fill": "그룹화(카테고리) 변수를 지정하세요",
+    "dotPointSize": "점의 크기 (기본값 1)",
+    "stackratioSpreadPoints": "쌓인 점을 수직으로 퍼뜨리기 위해 숫자를 늘리거나 줄이세요 (기본값 4)",
+    "flip": "축 뒤집기",
+    "specify_a_title": "제목을 입력하세요",
+    "x_title": "X 축 레이블",
+    "y_title": "Y 축 레이블",
+    "legends": "범례 표시 및 범례의 위치 (기본값은 오른쪽)",
     "facets_lbl": "패싯",
     "Facetrow": "패싯 행",
     "Facetcolumn": "패싯 열",
-    "Facetwrap": "패싯 랩 (선택하면 행과 열 선택이 무시됨)",
+    "Facetwrap": "패싯 랩 (선택한 경우, 패싯 행 및 열의 선택은 무시됩니다)",
     "Facetscale": "패싯 스케일",
     "help": {
-        "title": "도트 플롯",
-        "r_help": "help(geom_dotplot, package=ggplot2)",
-        "body": "\n            <b>설명</b></br>\n            도트 플롯은 데이터를 점으로 나타내어 분포를 시각화하는 차트의 한 종류입니다. 간단하면서도 효과적이며, \n\t\t\t특히 소규모 데이터셋이나 개별 데이터 포인트를 명확히 보여주고자 할 때 유용합니다. 도트 플롯은 각 데이터 포인트에 대해 \n\t\t\t점 하나를 x축(일반적으로)에 배치하고, 겹치지 않도록 수직으로 쌓습니다. 개별 값의 정밀도와 가시성이 중요한 경우 \n\t\t\t히스토그램이나 막대 그래프의 좋은 대안이 됩니다.\n\t\t\t각 점은 하나의 관측값을 나타내며, 빈도에 따라 점이 쌓입니다.\n            <br/>\n\t\t\t<br/>\n\t\t\t그룹화를 선택한 경우 동일한 그룹 변수로 패싯 랩(facet wrap)을 사용하면 그룹별 도트 시각화가 더 나아집니다.\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #옵션. 그룹 변수가 선택되지 않으면 생략\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #점 쌓는 방향\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #점 확산 비율\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>패키지</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>도움말</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            R 도움말 버튼을 클릭하여 자세한 R 도움말을 확인할 수 있습니다. 또한 help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip) 명령어도 사용할 수 있습니다.\n           "
+      "title": "점 플롯",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>설명</b></br>\n            점 플롯은 점을 사용하여 데이터 세트의 분포를 표시하는 차트 유형입니다. 간단하지만 효과적이며, \n\t\t\t특히 작은 데이터 세트나 개별 데이터 포인트를 명확하게 보여줄 때 유용합니다. 점 플롯은 각 데이터 포인트에 대해 점을 \n\t\t\t축(보통 x축)을 따라 배치하고, 겹침을 피하기 위해 수직으로 쌓습니다. 개별 값의 정밀성과 가시성이 중요한 경우 \n\t\t\t히스토그램이나 막대 차트에 대한 좋은 대안입니다.\n\t\t\t각 점은 하나의 관측치를 나타냅니다. 점은 빈도를 보여주기 위해 쌓입니다.\n            <br/>\n\t\t\t<br/>\n\t\t\t그룹화가 선택된 경우, 그룹당 점을 더 잘 시각화하기 위해 동일한 그룹화 변수를 사용하여 패싯 랩을 사용하세요.\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>사용법</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #선택 사항. 그룹화 변수가 선택되지 않은 경우 생략됨\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #stackup_points_direction\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #stackratio_spread_points\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>패키지</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>도움말</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            R 도움말 버튼을 클릭하여 자세한 R 도움말을 얻으세요. 또한 help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​를 입력할 수 있습니다.\n           "
     }
+  }
 }
