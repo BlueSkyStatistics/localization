@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "Arabic",
-    "key": "ar"
-  },
-  "original_json": {
     "title": "رسم النقاط",
     "navigation": "رسم النقاط",
     "x": "محور X، حدد متغير رقمي (أو أكثر)",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>الوصف</b></br>\n            رسم النقاط هو نوع من المخططات المستخدمة لعرض توزيع مجموعة بيانات باستخدام النقاط. إنه بسيط ولكنه فعال، \n\t\t\tخصوصًا لمجموعات البيانات الصغيرة أو لعرض نقاط البيانات الفردية بوضوح. يقوم رسم النقاط بوضع نقطة لكل نقطة بيانات \n\t\t\tعلى محور (عادةً محور X)، ويكدسها عموديًا لتجنب التداخل. إنه بديل جيد \n\t\t\tللهستوجرامات أو المخططات العمودية عندما تكون الدقة ورؤية القيم الفردية مهمة.\n\t\t\tتمثل كل نقطة ملاحظة واحدة. يتم تكديس النقاط لإظهار التكرار.\n            <br/>\n\t\t\t<br/>\n\t\t\tاستخدم تغليف الوجوه مع نفس متغير المجموعة لتحسين تصور النقاط لكل مجموعة إذا تم اختيار التجميع\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>الاستخدام</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #اختياري. يتم حذفه إذا لم يتم اختيار متغير مجموعة\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #اتجاه النقاط المكدسة\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #نسبة تكديس النقاط\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>الحزمة</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>المساعدة</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            انقر على زر مساعدة R للحصول على مساعدة مفصلة في R. يمكنك أيضًا إدخال help(labs)، help(geom_dotplot)، help(aes)، help(facet_grid)، help(theme_calc)، help(coord_flip)​\n           "
     }
-  }
 }

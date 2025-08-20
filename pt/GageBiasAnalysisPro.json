@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "Portuguese",
-    "key": "pt"
-  },
-  "original_json": {
     "title": "Análise de Viés de Gage",
     "navigation": "Análise de Viés de Gage",
     "variablePartSelcted": "Selecione a variável para amostra/parte",
@@ -38,5 +33,4 @@
       "r_help": "help(lm, package = stats)",
       "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar análise de viés de linearidade\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar os arquivos de conjunto de dados de amostra linearityBias.xlsx. Abra os arquivos na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\tEscolha as variáveis na caixa de seleção, Referência e Medição\n\t\t\t\t<br/>\n\t\t\t"
     }
-  }
 }

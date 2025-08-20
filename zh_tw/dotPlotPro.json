@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "traditional chinese",
-    "key": "zh_tw"
-  },
-  "original_json": {
     "title": "點圖",
     "navigation": "點圖",
     "x": "X 軸，指定數值變數",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>描述</b></br>\n            點圖是一種用於顯示數據集分佈的圖表類型，使用點來表示。它簡單但有效，\n\t\t\t特別適合較小的數據集或清晰顯示個別數據點。點圖在一個軸上（通常是 x 軸）為每個數據點放置一個點，\n\t\t\t垂直堆疊以避免重疊。當精確性和個別值的可見性很重要時，它是直方圖或條形圖的良好替代品。\n\t\t\t每個點代表一個觀察值。點的堆疊顯示頻率。\n            <br/>\n\t\t\t<br/>\n\t\t\t如果選擇分組，使用相同的分組變數進行面板包裝以更好地可視化每組的點\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>用法</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #可選。如果沒有選擇分組變數則省略\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #堆疊點的方向\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #堆疊比例\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>套件</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>幫助</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            點擊 R 幫助按鈕以獲取詳細的 R 幫助。您還可以輸入 help(labs)、help(geom_dotplot)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)​\n           "
     }
-  }
 }

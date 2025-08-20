@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "Turkish",
-    "key": "tr"
-  },
-  "original_json": {
     "title": "Aralık Grafiği",
     "navigation": "Aralık Grafiği",
     "response": "Y değişkeni, bir sayısal değişken belirtin",
@@ -49,5 +44,4 @@
       "r_help": "help(ggplot, package='ggplot2')",
       "body": "\n\t\t\t<b>Açıklama</b></br>\n\t\t\tBir dağılım grafiği oluşturur, noktaları bir veya daha fazla kategori (faktör) değişkenine göre gruplamanıza olanak tanır.\n\t\t\tGrafikte aralıkları (ortalama ve grup başına ortalama sınırları) isteğe bağlı olarak ekleyebilir veya kaldırabilirsiniz.\n\t\t\tGrup başına ortalama ve aralık sınırlarını gösteren bir tabloyu isteğe bağlı olarak ekleyebilir veya kaldırabilirsiniz.\n\t\t\tHer referans çizgisi için ilgili etiketlerle birden fazla yatay referans çizgisi ekleyebilirsiniz.\n\t\t\t<br/>\n    "
     }
-  }
 }

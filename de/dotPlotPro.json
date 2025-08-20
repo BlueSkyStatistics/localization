@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "german",
-    "key": "de"
-  },
-  "original_json": {
     "title": "Punktdiagramm",
     "navigation": "Punktdiagramm",
     "x": "X-Achse, geben Sie eine(n) numerische(n) Variable(n) an",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>Beschreibung</b></br>\n            Ein Punktdiagramm ist eine Art Diagramm, das verwendet wird, um die Verteilung eines Datensatzes mithilfe von Punkten darzustellen. Es ist einfach, aber effektiv, \n\t\t\teinschließlich für kleinere Datensätze oder um einzelne Datenpunkte klar zu zeigen. Ein Punktdiagramm platziert einen Punkt für jeden Datenpunkt \n\t\t\tentlang einer Achse (gewöhnlich der x-Achse), stapelt sie vertikal, um Überlappungen zu vermeiden. Es ist eine gute \n\t\t\tAlternative zu Histogrammen oder Balkendiagrammen, wenn Präzision und Sichtbarkeit einzelner Werte wichtig sind.\n\t\t\tJeder Punkt repräsentiert eine Beobachtung. Punkte werden gestapelt, um die Häufigkeit zu zeigen.\n            <br/>\n\t\t\t<br/>\n\t\t\tVerwenden Sie die Facettenumwicklung mit derselben Gruppierungsvariable für eine bessere Visualisierung der Punkte pro Gruppe, wenn eine Gruppierung ausgewählt ist\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Verwendung</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #optional. Ausgelassen, wenn keine Gruppierungsvariable ausgewählt ist\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #stapelrichtung\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #stapelverhältnis\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Hilfe</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Klicken Sie auf die R-Hilfe-Schaltfläche, um detaillierte R-Hilfe zu erhalten. Sie können auch help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​ eingeben\n           "
     }
-  }
 }

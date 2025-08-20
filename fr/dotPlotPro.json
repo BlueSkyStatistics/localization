@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "french",
-    "key": "fr"
-  },
-  "original_json": {
     "title": "Diagramme de points",
     "navigation": "Diagramme de points",
     "x": "Axe X, spécifiez une variable numérique(s)",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>Description</b></br>\n            Un diagramme de points est un type de graphique utilisé pour afficher la distribution d'un ensemble de données à l'aide de points. C'est simple mais efficace, \n\t\t\tsurtout pour les petits ensembles de données ou pour montrer clairement des points de données individuels. Un diagramme de points place un point pour chaque point de données \n\t\t\tle long d'un axe (généralement l'axe des x), les empilant verticalement pour éviter le chevauchement. C'est un bon \n\t\t\talternative aux histogrammes ou aux graphiques à barres lorsque la précision et la visibilité des valeurs individuelles sont importantes.\n\t\t\tChaque point représente une observation. Les points sont empilés pour montrer la fréquence.\n            <br/>\n\t\t\t<br/>\n\t\t\tUtilisez l'enveloppe de facette avec la même variable de regroupement pour une meilleure visualisation des points par groupe si le regroupement est sélectionné\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Utilisation</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #optionnel. Omis s'il n'y a pas de variable de regroupement sélectionnée\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direction_des_points_empilés\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #ratio_empilement_points\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Paquet</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Aide</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Cliquez sur le bouton Aide R pour obtenir une aide R détaillée. Vous pouvez également entrer help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
     }
-  }
 }

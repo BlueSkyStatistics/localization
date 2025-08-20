@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "spanish",
-    "key": "es"
-  },
-  "original_json": {
     "title": "Análisis de sesgo de gage",
     "navigation": "Análisis de sesgo de gage",
     "variablePartSelcted": "Seleccione la variable para muestra/parte",
@@ -38,5 +33,4 @@
       "r_help": "help(lm, package = stats)",
       "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar análisis de sesgo de linealidad\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar los archivos de conjunto de datos de muestra linearityBias.xlsx. Abra los archivos en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\tElija las variables del cuadro de selección, Referencia y Medición\n\t\t\t\t<br/>\n\t\t\t"
     }
-  }
 }

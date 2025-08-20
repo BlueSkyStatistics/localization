@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "Italian",
-    "key": "it"
-  },
-  "original_json": {
     "title": "Diagramma a punti",
     "navigation": "Diagramma a punti",
     "x": "Asse X, specifica una variabile numerica(o)",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>Descrizione</b></br>\n            Un diagramma a punti è un tipo di grafico utilizzato per visualizzare la distribuzione di un dataset utilizzando punti. È semplice ma efficace, \n\t\t\tsoprattutto per dataset più piccoli o per mostrare chiaramente i singoli punti dati. Un diagramma a punti posiziona un punto per ogni punto dati \n\t\t\tlungo un asse (di solito l'asse x), impilandoli verticalmente per evitare sovrapposizioni. È una buona \n\t\t\talternativa agli istogrammi o ai grafici a barre quando la precisione e la visibilità dei valori individuali sono importanti.\n\t\t\tOgni punto rappresenta un'osservazione. I punti sono impilati per mostrare la frequenza.\n            <br/>\n\t\t\t<br/>\n\t\t\tUtilizza l'avvolgimento delle faccette con la stessa variabile di raggruppamento per una migliore visualizzazione dei punti per gruppo se il raggruppamento è selezionato\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Utilizzo</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #opzionale. Omissibile se non è stata selezionata alcuna variabile di raggruppamento\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direzione_punti_impilati\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #rapporto_impilamento_punti\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Pacchetto</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Aiuto</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Clicca il pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
     }
-  }
 }

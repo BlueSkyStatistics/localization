@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "japanese",
-    "key": "ja"
-  },
-  "original_json": {
     "title": "オーバーレイ正規曲線付きヒストグラム",
     "navigation": "ヒストグラム",
     "x": "X軸、数値変数を指定してください",
@@ -52,5 +47,4 @@
       "r_help": "help(geom_histogram, package=ggplot2)",
       "body": "\n            <b>説明</b></br>\n            ヒストグラムは、数値データの分布をグラフィカルに表現したものです。これは、連続変数（定量変数）の確率分布の推定です。ビン幅を指定するか、デフォルトを使用できます。ファセットは、因子変数を指定することでオプションで作成できます。また、テーマをオプションで指定し、X軸とY軸のタイトルとラベルを指定できます。</br>\n            X軸変数に複数の変数が選択されている場合、各X軸変数に対して別々のヒストグラムを作成します。オプションで正規曲線とラグプロットをオーバーレイします</br>\n            <br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data=Dataset2,aes(x=engine) )+  geom_histogram(binwidth=10) +labs(x=\"engine\",y=\"Counts\") +  xlab(\"\")​\n            </code> <br/>\n            <b>引数</b><br/>\n            <ul>\n            <li>\n            data: デフォルトデータセット​\n            </li>\n            <li>\n            aes(): データ内の変数がジオムの視覚的特性（美学）にどのようにマッピングされるかを説明する美的マッピングを生成します。\n            </li>\n            <li>\n            x: ヒストグラムをプロットするための数値/スケール変数。\n            </li>\n            <li>\n            geom_histogram: ヒストグラムを作成します。デフォルトでは、stat_binは30ビンを使用します - これは良いデフォルトではありませんが、異なるビン幅で実験することを促すためのアイデアです。\n            </li>\n            <li>\n            geom_rug: ラグプロットを作成します\n            </li>\n            <li>\n            stat_function: 正規曲線を作成します（注：曲線を表示するには欠損値を削除する必要があります）\n            </li>\n            <li>\n            Labs(): 軸ラベルと凡例タイトルを変更します（これはオプションです）​\n            </li>\n            <li>\n            facet_grid(): パネルをグリッドに配置します（これはオプションです）​\n            </li>\n            <li>\n            theme_calc(): 計算機テーマを指定します（これはオプションです）​\n            </li>\n            <li>\n            coord_flip(): 軸を反転します（これはオプションです）\n            </li>\n            <li>\n            alpha: 0-1の間の値を取ります。1は不透明度なしを意味します。不透明度はヒストグラムの塗りつぶし色に適用されます\n            </li>\n            </ul>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>ヘルプ</b></br>\n            help(geom_histogram, package=ggplot2)</br>\n            Rヘルプボタンをクリックして詳細なRヘルプを取得します。また、help(labs)、help(geom_bar)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます​\n           "
     }
-  }
 }

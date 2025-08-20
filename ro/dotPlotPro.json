@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "romanian",
-    "key": "ro"
-  },
-  "original_json": {
     "title": "Diagramă cu puncte",
     "navigation": "Diagramă cu puncte",
     "x": "Axa X, specificați o variabilă numerică (s)",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>Descriere</b></br>\n            O diagramă cu puncte este un tip de grafic utilizat pentru a afișa distribuția unui set de date folosind puncte. Este simplă, dar eficientă, \n\t\t\tespecial pentru seturi de date mai mici sau pentru a arăta clar punctele individuale de date. O diagramă cu puncte plasează un punct pentru fiecare punct de date \n\t\t\tpe o axă (de obicei axa x), stivuindu-le vertical pentru a evita suprapunerea. Este o alternativă bună \n\t\t\tla histograme sau grafice cu bare atunci când precizia și vizibilitatea valorilor individuale sunt importante.\n\t\t\tFiecare punct reprezintă o observație. Punctele sunt stivuite pentru a arăta frecvența.\n            <br/>\n\t\t\t<br/>\n\t\t\tUtilizați împachetarea fațetelor cu aceeași variabilă de grupare pentru o vizualizare mai bună a punctelor pe grup dacă gruparea este selectată\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Utilizare</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #opțional. Omitere dacă nu este selectată nicio variabilă de grupare\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #direcția punctelor stivuite\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #raportul stivuirii punctelor\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Ajutor</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
     }
-  }
 }

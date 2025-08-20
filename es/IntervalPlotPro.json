@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "spanish",
-    "key": "es"
-  },
-  "original_json": {
     "title": "Gráfico de Intervalos",
     "navigation": "Gráfico de Intervalos",
     "response": "Variable Y, especificar una variable numérica",
@@ -49,5 +44,4 @@
       "r_help": "help(ggplot, package='ggplot2')",
       "body": "\n\t\t\t<b>Descripción</b></br>\n\t\t\tCrea un gráfico de dispersión, permite agrupar puntos por una o más variables de categoría (factor) \n\t\t\tOpcionalmente puede agregar o eliminar intervalos en el gráfico (media y límites de intervalo de la media por grupo)\n\t\t\tOpcionalmente puede agregar o eliminar una tabla que muestre la media y los límites de intervalo de la media por grupo\n\t\t\tPuede agregar múltiples líneas de referencia horizontales con etiquetas respectivas por línea de referencia\n\t\t\t<br/>\n    "
     }
-  }
 }

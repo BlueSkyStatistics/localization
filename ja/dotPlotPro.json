@@ -1,9 +1,4 @@
 {
-  "language": {
-    "language": "japanese",
-    "key": "ja"
-  },
-  "original_json": {
     "title": "ドットプロット",
     "navigation": "ドットプロット",
     "x": "X軸、数値変数を指定してください",
@@ -25,5 +20,4 @@
       "r_help": "help(geom_dotplot, package=ggplot2)",
       "body": "\n            <b>説明</b></br>\n            ドットプロットは、データセットの分布をドットを使用して表示するためのチャートの一種です。シンプルですが効果的で、特に小さなデータセットや個々のデータポイントを明確に表示するのに適しています。ドットプロットは、各データポイントのために軸（通常はx軸）にドットを配置し、重なりを避けるために垂直にスタックします。精度と個々の値の可視性が重要な場合、ヒストグラムや棒グラフの良い代替手段です。\n\t\t\t各ドットは1つの観察を表します。ドットは頻度を示すためにスタックされます。\n            <br/>\n\t\t\t<br/>\n\t\t\tグループ化が選択されている場合、より良い可視化のために同じグループ化変数でファセットラップを使用してください。\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>使用法</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #オプション。グループ化変数が選択されていない場合は省略\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #スタックアップポイントの方向\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #スタック比率\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>パッケージ</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>ヘルプ</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Rヘルプボタンをクリックして詳細なRヘルプを取得します。help(labs)、help(geom_dotplot)、help(aes)、help(facet_grid)、help(theme_calc)、help(coord_flip)を入力することもできます。​\n           "
     }
-  }
 }
