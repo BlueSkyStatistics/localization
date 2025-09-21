@@ -84,7 +84,12 @@
           "name": "Dialog-Cache aktualisieren",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "R-Temp aktualisieren",
+			"icon": "fas fa-sync",
+			"onclick": "resetRTemp()"
+		}
       ]
     }
   ]

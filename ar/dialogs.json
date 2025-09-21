@@ -84,7 +84,12 @@
           "name": "تحديث ذاكرة التخزين المؤقت للحوار",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "تحديث R-Temp",
+			"icon": "fas fa-sync",
+			"onclick": "resetRTemp()"
+		}
       ]
     }
   ]

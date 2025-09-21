@@ -84,7 +84,12 @@
           "name": "ダイアログキャッシュを更新",
           "icon": "fas fa-sync",
           "onclick": "onApplyLanguage($('#localeSelector').val())"
-        }
+        },
+		{
+			"name": "R-Temp を更新",
+			"icon": "fas fa-sync",
+			"onclick": "resetRTemp()"
+		}
       ]
     }
   ]

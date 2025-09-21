@@ -84,7 +84,12 @@
                     "name": "Refresh Dialog Cache",
                     "icon": "fas fa-sync",
                     "onclick": "onApplyLanguage($('#localeSelector').val())"
-                }
+                },
+                {
+                    "name": "Refresh R-Temp",
+                    "icon": "fas fa-sync",
+                    "onclick": "resetRTemp()"
+                }                
             ]
         }
     ]
