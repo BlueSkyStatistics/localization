@@ -79,17 +79,16 @@
           ]
         },
         "./assets/js/modals/Help/installRPackage",
-        
-        {
-          "name": "Diyalog Önbelleğini Yenile",
-          "icon": "fas fa-sync",
-          "onclick": "onApplyLanguage($('#localeSelector').val())"
-        },
 		{
 			"name": "R-Temp’i yenile",
 			"icon": "fas fa-sync",
 			"onclick": "resetRTemp()"
-		}
+		},       
+        {
+          "name": "Diyalog Önbelleğini Yenile",
+          "icon": "fas fa-sync",
+          "onclick": "onApplyLanguage($('#localeSelector').val())"
+        }
       ]
     }
   ]

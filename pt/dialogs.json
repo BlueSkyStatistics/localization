@@ -79,17 +79,16 @@
           ]
         },
         "./assets/js/modals/Help/installRPackage",
-        
-        {
-          "name": "Atualizar cache do diálogo",
-          "icon": "fas fa-sync",
-          "onclick": "onApplyLanguage($('#localeSelector').val())"
-        },
 		{
 			"name": "Atualizar R-Temp",
 			"icon": "fas fa-sync",
 			"onclick": "resetRTemp()"
-		}
+		},        
+        {
+          "name": "Atualizar cache do diálogo",
+          "icon": "fas fa-sync",
+          "onclick": "onApplyLanguage($('#localeSelector').val())"
+        }
       ]
     }
   ]
