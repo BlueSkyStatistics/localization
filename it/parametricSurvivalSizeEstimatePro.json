@@ -1,0 +1,33 @@
+{
+  "title": "Stima dei Piani di Test di Sopravvivenza Parametrici",
+  "navigation": "Piano di Test di Sopravvivenza Parametrico",
+  "labelDistribution": "Seleziona una funzione di distribuzione che si adatta meglio ai dati",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Esponenziale",
+  "selectDistFuncLnormalRad": "Log Normale",
+  "selectDistFuncLogLogisRad": "Log Logistico",
+  "selectDistFuncGammaRad": "Gamma",
+  "labelDistributionParam": "Specificare il parametro per la Distribuzione scelta (ad es. forma e dimensione per Weibull o specificare tempo e percentili di evento per stimare i parametri della distribuzione)",
+  "labelDistParamOption1": "Opzione 1 - Specifica il parametro per la distribuzione selezionata",
+  "shape": "specifica il parametro di forma per Weibull, loglogistico o gamma, o meanlog per lognormale",
+  "scale": "specifica il parametro di scala per Weibull, esponenziale, forma per loglogistico o gamma, o sdlog per lognormale",
+  "labelDistParamOption2": "Opzione 2 - Specifica il tempo e % eventi (cioè, fallimenti) per calcolare i parametri per la distribuzione selezionata",
+  "PercentileTime": "Specifica due valori temporali numerici separati da virgola (ad es., 100, 500) da utilizzare per stimare i parametri della distribuzione",
+  "PercentileEvent": "Specifica due valori percentili numerici separati da virgola per l'evento ad es. % fallimento (10, 30) da utilizzare per stimare i parametri della distribuzione",
+  "parameter": "Seleziona Percentile per specificare l'evento percentuale desiderato, ad es., % fallimento. Se lasci Percentile vuoto e selezioni scala, Percentile sarà automaticamente assunto essere 63.2121% per Weibull ed esponenziale, e 50% per tutte le altre distribuzioni, se la posizione è selezionata",
+  "p": "Percentile (ad es., 10) per l'evento ad es. fallimento",
+  "precision": "Precisioni (uno o più valori separati da virgola) come distanze dal limite di CI da stimare",
+  "boundType": "Tipo di limite (default inferiore)",
+  "censorTime": "Tempo di censura, se presente, ad es., specifica 1000",
+  "confidenceInterval": "Livello di confidenza (default 0.95)",
+  "labelAdvancedOptions": "Opzioni Avanzate (lasciale come predefinite)",
+  "pilotDataLength": "Numero di righe di dati da utilizzare per le simulazioni (default 2000)",
+  "bootIter": "Iterazione bootstrap",
+  "seed": "Tipo di seme di randomizzazione, qualsiasi combinazione di quattro cifre",
+  "repeatSampleSizeCalculation": "Ripeti i calcoli della dimensione del campione per prendere la media (il campo seme deve essere vuoto)",
+  "help": {
+    "title": "Stima dei Piani di Test di Sopravvivenza Parametrici",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "參數生存測試計劃估算",
+  "navigation": "參數生存測試計劃",
+  "labelDistribution": "選擇最適合數據的分佈函數",
+  "selectDistFuncWeibullRad": "威布爾",
+  "selectDistFuncExpRad": "指數",
+  "selectDistFuncLnormalRad": "對數常態",
+  "selectDistFuncLogLogisRad": "對數邏輯斯",
+  "selectDistFuncGammaRad": "伽瑪",
+  "labelDistributionParam": "為所選的分佈指定參數（例如，威布爾的形狀和大小，或指定時間和事件百分位數以估算分佈參數）",
+  "labelDistParamOption1": "選項 1 - 為所選分佈指定參數",
+  "shape": "為威布爾、對數邏輯斯或伽瑪指定形狀參數，或為對數常態指定均值對數",
+  "scale": "為威布爾、指數、對數邏輯斯或伽瑪指定比例參數，或為對數常態指定標準差對數",
+  "labelDistParamOption2": "選項 2 - 指定時間和 % 事件（即，失敗）以計算所選分佈的參數",
+  "PercentileTime": "指定兩個以逗號分隔的數值時間（例如，100, 500）以用於估算分佈參數",
+  "PercentileEvent": "指定兩個以逗號分隔的數值百分位數以事件，例如 % 失敗 (10, 30) 以用於估算分佈參數",
+  "parameter": "選擇百分位數以指定所需的百分位事件，例如，% 失敗。如果您將百分位數留空並選擇比例，則百分位數將自動假定為威布爾和指數的 63.2121%，以及所有其他分佈的 50%，如果選擇了位置",
+  "p": "事件的百分位數（例如，10），例如失敗",
+  "precision": "精度（以逗號分隔的一個或多個值）作為從 CI 邊界的距離以進行估算",
+  "boundType": "邊界類型（默認為下限）",
+  "censorTime": "時間篩選，如果有，請指定 1000",
+  "confidenceInterval": "置信水平（默認 0.95）",
+  "labelAdvancedOptions": "高級選項（保持默認）",
+  "pilotDataLength": "用於模擬的數據行數（默認 2000）",
+  "bootIter": "自助迭代",
+  "seed": "隨機化種子，類型為任意四位數字的組合",
+  "repeatSampleSizeCalculation": "重複樣本大小計算以取平均（種子字段必須為空）",
+  "help": {
+    "title": "參數生存測試計劃估算",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

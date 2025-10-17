@@ -1,0 +1,26 @@
+{
+  "title": "箱型圖與多變量分組",
+  "navigation": "箱型圖, 多變量",
+  "response": "用於箱型圖的變數（數值變數）",
+  "YaxisGroup": "Y軸的變數（類別）變數",
+  "XaxisGroup": "X軸的變數（類別）變數",
+  "withinXaxisGroup": "一個或多個分組（類別）變數，用於在X軸組內分組箱型圖",
+  "connectMeanPointsChk": "連接平均點",
+  "showMinMaxNumberChk": "在圖上顯示每個Y軸類別值的最小值和最大值",
+  "showMeanNumberChk": "在圖上顯示平均值",
+  "showMedianNumberChk": "在圖上顯示中位數",
+  "showQuantileNumberChk": "在圖上顯示分位數（Q1和Q3）",
+  "showStatTableChk": "以表格形式列印所有統計數據",
+  "chartTitle": "輸入標題",
+  "x_title": "X軸標籤",
+  "y_title": "Y軸標籤",
+  "meanPointColor": "選擇平均點的顏色（選擇顏色後，點擊控制外部以應用）",
+  "meanPointSize": "平均點大小（默認 = 1.15）",
+  "boxPlotWidth": "箱型圖的垂直寬度（默認 = 0.4）",
+  "factorLevelOccuranceOrderChk": "按出現順序重新排序所有類別變數的級別以進行繪圖",
+  "legends": "顯示圖例，如果顯示，則圖例的位置（默認在右側）",
+  "help": {
+    "title": "具有特殊分組的箱型圖（多變量）",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t為過程能力和其他子組分析組織子組（即樣本組）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t過程能力分析等分析假設數據是按照收集的順序輸入的（時間順序）。這意味著來自同一子組的所有觀察必須出現在數據集的連續行中。通常使用子組ID列來定義哪些行屬於同一子組。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果不滿足此條件（例如，如果來自同一子組的行在數據集中分散而不相鄰），則需要重新校準子組ID。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t重新校準的意思是：\n\t\t\t\t<br/>\n\t\t\t\t每當子組ID從一行變更到下一行時，將分配一個新的子組編號。\n\t\t\t\t<br/>\n\t\t\t\t如果相同的子組ID稍後再次出現，但不與其先前的出現相鄰，則將被視為新的子組。\n\t\t\t\t<br/>\n\t\t\t\t換句話說，只有相同的值相鄰出現時，才被視為同一子組的一部分。由其他子組分隔的相同值在重新校準期間將被拆分為不同的子組。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t數據集中重新校準的樣本數變數是執行許多分析所需的，例如過程能力、Shewhart圖如xbar、R、S等。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

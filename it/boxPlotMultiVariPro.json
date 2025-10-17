@@ -1,0 +1,26 @@
+{
+  "title": "Boxplot con raggruppamento multi-vari",
+  "navigation": "Boxplot, Multi-Vari",
+  "response": "Variabile da utilizzare per il boxplot (una variabile numerica)",
+  "YaxisGroup": "Variabile Y (una categoria) per l'asse Y",
+  "XaxisGroup": "Variabile X (una categoria) per l'asse X",
+  "withinXaxisGroup": "Una o più variabili di raggruppamento (categoria) per raggruppare i boxplot all'interno del gruppo dell'asse x",
+  "connectMeanPointsChk": "Collegare i punti medi",
+  "showMinMaxNumberChk": "Mostra il valore minimo e massimo per ogni valore di categoria dell'asse Y nel grafico",
+  "showMeanNumberChk": "Mostra il valore medio nel grafico",
+  "showMedianNumberChk": "Mostra il valore mediano nel grafico",
+  "showQuantileNumberChk": "Mostra il valore quantile (Q1 e Q3) nel grafico",
+  "showStatTableChk": "Stampa tutte le statistiche in una tabella",
+  "chartTitle": "Inserisci un titolo",
+  "x_title": "Etichetta asse X",
+  "y_title": "Etichetta asse Y",
+  "meanPointColor": "Seleziona un colore per i punti medi (Dopo la selezione del colore, fai clic al di fuori del controllo per applicare)",
+  "meanPointSize": "Dimensione del punto medio (predefinito = 1.15)",
+  "boxPlotWidth": "Larghezza verticale del boxplot (predefinito = 0.4)",
+  "factorLevelOccuranceOrderChk": "Riordina tutti i livelli delle variabili di categoria nell'ordine della loro occorrenza per il tracciamento",
+  "legends": "Mostra le legende e, in tal caso, posizione delle legende (il predefinito è a destra)",
+  "help": {
+    "title": "Boxplot con raggruppamento speciale (Multi-Vari)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tOrganizzazione dei sottogruppi (cioè gruppo campione) per la Capacità di Processo e altre analisi di sottogruppo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAnalisi come l'analisi della Capacità di Processo presume che i dati siano inseriti nell'ordine in cui sono stati raccolti (ordine cronologico). Ciò significa che tutte le osservazioni dello stesso sottogruppo devono apparire in righe consecutive del dataset. Una colonna ID sottogruppo è tipicamente utilizzata per definire quali righe appartengono allo stesso sottogruppo.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe questa condizione non è soddisfatta (ad esempio, se le righe dello stesso sottogruppo sono sparse nel dataset e non posizionate l'una accanto all'altra), allora gli ID dei sottogruppi devono essere ricalibrati.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa ricalibrazione significa:\n\t\t\t\t<br/>\n\t\t\t\tUn nuovo numero di sottogruppo viene assegnato ogni volta che l'ID del sottogruppo cambia da una riga all'altra.\n\t\t\t\t<br/>\n\t\t\t\tSe lo stesso ID del sottogruppo riappare successivamente ma non è adiacente alla sua occorrenza precedente, verrà trattato come un nuovo sottogruppo.\n\t\t\t\t<br/>\n\t\t\t\tIn altre parole, solo i valori identici che appaiono l'uno accanto all'altro sono considerati parte dello stesso sottogruppo. I valori identici separati da altri sottogruppi verranno suddivisi in sottogruppi separati durante la ricalibrazione.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa variabile del numero di campioni ricalibrata nel dataset è necessaria per eseguire molte analisi, ad es. Capacità di Processo, grafici di Shewhart come xbar, R, S, ecc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

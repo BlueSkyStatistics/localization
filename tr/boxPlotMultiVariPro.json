@@ -1,0 +1,26 @@
+{
+  "title": "Çok değişkenli gruplama ile Boxplot",
+  "navigation": "Boxplot, Çok Değişkenli",
+  "response": "Boxplot için kullanılacak değişken (sayısal bir değişken)",
+  "YaxisGroup": "Y ekseni için Y değişkeni (bir kategori) değişkeni",
+  "XaxisGroup": "X ekseni için X değişkeni (bir kategori) değişkeni",
+  "withinXaxisGroup": "X ekseni grubunda boxplotları gruplamak için bir veya daha fazla gruplama (kategori) değişkeni",
+  "connectMeanPointsChk": "Ortalama noktalarını birleştir",
+  "showMinMaxNumberChk": "Grafikte Y ekseni kategori değeri başına min ve max değeri göster",
+  "showMeanNumberChk": "Grafikte ortalama değeri göster",
+  "showMedianNumberChk": "Grafikte medyan değeri göster",
+  "showQuantileNumberChk": "Grafikte kantil (Q1 ve Q3) değerini göster",
+  "showStatTableChk": "Tüm istatistikleri bir tabloda yazdır",
+  "chartTitle": "Bir başlık girin",
+  "x_title": "X ekseni etiketi",
+  "y_title": "Y ekseni etiketi",
+  "meanPointColor": "Ortalama noktaları için bir renk seçin (Renk seçimi yaptıktan sonra, uygulamak için kontrolün dışına tıklayın)",
+  "meanPointSize": "Ortalama nokta boyutu (varsayılan = 1.15)",
+  "boxPlotWidth": "Boxplot dikey genişliği (varsayılan = 0.4)",
+  "factorLevelOccuranceOrderChk": "Tüm kategori değişken seviyelerini çizim için gerçekleşme sırasına göre yeniden sıralayın",
+  "legends": "Efsaneleri göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağdadır)",
+  "help": {
+    "title": "Özel gruplama ile Boxplot (Çok Değişkenli)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tSüreç Yeterlilik ve diğer alt grup analizi için alt grupları (örneğin, örnek grubu) organize etme\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSüreç Yeterlilik analizi gibi analizler, verilerin toplandıkları sırayla (kronolojik sıra) girildiğini varsayar. Bu, aynı alt gruptan tüm gözlemlerin veri kümesinin ardışık satırlarında görünmesi gerektiği anlamına gelir. Hangi satırların aynı alt gruba ait olduğunu tanımlamak için genellikle bir alt grup ID sütunu kullanılır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBu koşul karşılanmazsa (örneğin, aynı alt gruptan satırlar veri kümesinde dağılmışsa ve yan yana yer almıyorsa), o zaman alt grup ID'leri yeniden kalibre edilmelidir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYeniden kalibrasyon şu anlama gelir:\n\t\t\t\t<br/>\n\t\t\t\tAlt grup ID'si bir satırdan diğerine değiştiğinde yeni bir alt grup numarası atanır.\n\t\t\t\t<br/>\n\t\t\t\tAynı alt grup ID'si daha sonra tekrar görünürse ancak önceki görünümüne bitişik değilse, yeni bir alt grup olarak kabul edilir.\n\t\t\t\t<br/>\n\t\t\t\tDiğer bir deyişle, sadece yan yana görünen aynı değerler aynı alt grubun parçası olarak kabul edilir. Diğer alt gruplar tarafından ayrılmış aynı değerler, yeniden kalibrasyon sırasında ayrı alt gruplara bölünecektir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYeniden kalibre edilmiş örnek numarası değişkeni, birçok analizi gerçekleştirmek için gereklidir, örneğin Süreç Yeterliliği, Shewhart grafikleri gibi xbar, R, S, vb.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

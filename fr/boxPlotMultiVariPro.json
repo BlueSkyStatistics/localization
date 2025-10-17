@@ -1,0 +1,26 @@
+{
+  "title": "Boxplot avec regroupement multi-varié",
+  "navigation": "Boxplot, Multi-Vari",
+  "response": "Variable à utiliser pour le boxplot (une variable numérique)",
+  "YaxisGroup": "Variable Y (une catégorie) pour l'axe Y",
+  "XaxisGroup": "Variable X (une catégorie) pour l'axe X",
+  "withinXaxisGroup": "Une ou plusieurs variables de regroupement (catégorie) pour regrouper les boxplots dans le groupe de l'axe x",
+  "connectMeanPointsChk": "Connecter les points moyens",
+  "showMinMaxNumberChk": "Afficher la valeur min et max par valeur de catégorie de l'axe Y sur le graphique",
+  "showMeanNumberChk": "Afficher la valeur moyenne sur le graphique",
+  "showMedianNumberChk": "Afficher la valeur médiane sur le graphique",
+  "showQuantileNumberChk": "Afficher la valeur quantile (Q1 et Q3) sur le graphique",
+  "showStatTableChk": "Imprimer toutes les statistiques dans un tableau",
+  "chartTitle": "Entrez un titre",
+  "x_title": "Étiquette de l'axe X",
+  "y_title": "Étiquette de l'axe Y",
+  "meanPointColor": "Sélectionnez une couleur pour les points moyens (Après la sélection de la couleur, cliquez en dehors du contrôle pour appliquer)",
+  "meanPointSize": "Taille du point moyen (par défaut = 1.15)",
+  "boxPlotWidth": "Largeur verticale du boxplot (par défaut = 0.4)",
+  "factorLevelOccuranceOrderChk": "Réorganiser tous les niveaux de variable catégorique dans l'ordre de leur occurrence pour le traçage",
+  "legends": "Afficher les légendes et si oui, position des légendes (par défaut à droite)",
+  "help": {
+    "title": "Boxplot avec regroupement spécial (Multi-Vari)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tOrganisation des sous-groupes (c'est-à-dire groupe d'échantillons) pour l'analyse de capacité de processus et d'autres analyses de sous-groupes\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tL'analyse telle que l'analyse de capacité de processus suppose que les données sont saisies dans l'ordre dans lequel elles ont été collectées (ordre chronologique). Cela signifie que toutes les observations du même sous-groupe doivent apparaître dans des lignes consécutives du jeu de données. Une colonne d'ID de sous-groupe est généralement utilisée pour définir quelles lignes appartiennent au même sous-groupe.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSi cette condition n'est pas remplie (par exemple, si les lignes du même sous-groupe sont dispersées dans le jeu de données et non placées les unes à côté des autres), alors les ID de sous-groupe doivent être recalibrés.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa recalibration signifie :\n\t\t\t\t<br/>\n\t\t\t\tUn nouveau numéro de sous-groupe est attribué chaque fois que l'ID de sous-groupe change d'une ligne à l'autre.\n\t\t\t\t<br/>\n\t\t\t\tSi le même ID de sous-groupe réapparaît plus tard mais n'est pas adjacent à sa précédente occurrence, il sera traité comme un nouveau sous-groupe.\n\t\t\t\t<br/>\n\t\t\t\tEn d'autres termes, seules les valeurs identiques qui apparaissent les unes à côté des autres sont considérées comme faisant partie du même sous-groupe. Les valeurs identiques séparées par d'autres sous-groupes seront divisées en sous-groupes distincts lors de la recalibration.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa variable de numéro d'échantillon recalibrée dans le jeu de données est nécessaire pour effectuer de nombreuses analyses, par exemple, capacité de processus, graphiques de Shewhart comme xbar, R, S, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

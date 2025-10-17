@@ -1,0 +1,26 @@
+{
+  "title": "带有多变量分组的箱线图",
+  "navigation": "箱线图, 多变量",
+  "response": "用于箱线图的变量（一个数值变量）",
+  "YaxisGroup": "Y轴的Y变量（一个类别）",
+  "XaxisGroup": "X轴的X变量（一个类别）",
+  "withinXaxisGroup": "在x轴组内分组箱线图的一个或多个分组（类别）变量",
+  "connectMeanPointsChk": "连接均值点",
+  "showMinMaxNumberChk": "在图中显示每个Y轴类别值的最小值和最大值",
+  "showMeanNumberChk": "在图中显示均值",
+  "showMedianNumberChk": "在图中显示中位数",
+  "showQuantileNumberChk": "在图中显示分位数（Q1和Q3）",
+  "showStatTableChk": "以表格形式打印所有统计数据",
+  "chartTitle": "输入标题",
+  "x_title": "X轴标签",
+  "y_title": "Y轴标签",
+  "meanPointColor": "选择均值点的颜色（选择颜色后，点击控件外部以应用）",
+  "meanPointSize": "均值点大小（默认 = 1.15）",
+  "boxPlotWidth": "箱线图的垂直宽度（默认 = 0.4）",
+  "factorLevelOccuranceOrderChk": "按出现顺序重新排序所有类别变量级别以进行绘图",
+  "legends": "显示图例，如果显示，图例的位置（默认在右侧）",
+  "help": {
+    "title": "带有特殊分组的箱线图（多变量）",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t为过程能力和其他子组分析组织子组（即样本组）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t过程能力分析等分析假设数据按收集顺序（时间顺序）输入。这意味着来自同一子组的所有观察值必须出现在数据集的连续行中。通常使用子组ID列来定义哪些行属于同一子组。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果不满足此条件（例如，如果来自同一子组的行分散在数据集中而不相邻），则需要重新校准子组ID。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t重新校准意味着：\n\t\t\t\t<br/>\n\t\t\t\t每当子组ID从一行更改为下一行时，分配一个新的子组编号。\n\t\t\t\t<br/>\n\t\t\t\t如果相同的子组ID稍后再次出现但不与其先前的出现相邻，则将其视为一个新子组。\n\t\t\t\t<br/>\n\t\t\t\t换句话说，只有相邻的相同值才被视为同一子组的一部分。被其他子组分隔的相同值将在重新校准期间分为不同的子组。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t数据集中重新校准的样本编号变量在执行许多分析时是必需的，例如过程能力、Shewhart图表如xbar、R、S等。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "응답 스크리닝",
+  "navigation": "응답 스크리닝",
+  "responses": "하나 이상의 응답(종속) 변수를 선택하십시오",
+  "predictors": "하나 이상의 예측(독립) 변수를 선택하십시오",
+  "sortOrder": "응답 스크리닝 요약 테이블의 정렬 순서",
+  "maxNumberOfPredictor": "사용할 예측자 조합의 최대 수(주 효과 분석)",
+  "adjPvalue": "조정된 p-값 방법(기본값은 FDR)",
+  "label1": "응답 스크리닝 테이블에 선택적 열 표시",
+  "showOptionalColumn_CountChk": "개수",
+  "showOptionalColumn_p_valueChk": "p.값",
+  "showOptionalColumn_Log_pvalChk": "로그_pval",
+  "showOptionalColumn_FDR_pvalChk": "조정_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "로그_조정_pval",
+  "showOptionalColumn_EffectSizeChk": "효과 크기",
+  "showOptionalColumn_RSquareChk": "R제곱",
+  "help": {
+    "title": "응답 스크리닝",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t하나 이상의 응답 변수를 위한 통계적으로 유의미한 예측자를 식별하기 위해 자동화된 응답 스크리닝을 수행합니다.\n\t\t\t\t<br/>\n\t\t\t\t모든 가능한 예측자 조합(사용자가 지정한 한도까지 - 기본값은 1)을 사용하여 모델을 체계적으로 적합시키고 주요 통계량을 분석합니다.\n\t\t\t\tp-값, -log10(p-값), FDR로 조정된 p-값, -log10(FDR), 효과 크기 및 R² 값과 같은 주요 통계량을 보고합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFDR에 대한 주의:\n\t\t\t\t<br/>\n\t\t\t\t많은 가설 검정을 수행할 때(여러 예측자에 걸친 응답 스크리닝과 같이) 일부 유의미한 p-값이 우연히 발생할 수 있습니다.\n\t\t\t\t<br/>\n\t\t\t\t허위 발견율(FDR) 조정은 모든 유의미한 결과 중에서 허위 긍정의 예상 비율을 추정하여 이를 제어하는 데 도움이 됩니다.\n\t\t\t\t<br/>\n\t\t\t\t이 함수는 Benjamini–Hochberg 절차(p.adjust(..., method = \"fdr\"))를 사용하여 FDR로 조정된 p-값을 계산하며, 이는 FDR_pval로 표시됩니다.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval은 다중 비교를 고려한 보다 보수적인 유의미성 추정치를 제공합니다.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval)는 조정된 p-값을 LogWorth와 동일한 척도로 변환합니다. 즉, -log10(p-값)으로, 수정 후에도 예측자를 쉽게 순위 매길 수 있습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자동 모델 생성:\n\t\t\t\t<br/>\n\t\t\t\t선택한 최대 수(max_predictors)까지 모든 가능한 예측자 변수 조합을 테스트합니다.\n\t\t\t\t<br/>\n\t\t\t\t예를 들어, max_predictors = 1로 설정하여 단일 예측자만 테스트하고, 2로 설정하여 쌍을 테스트하는 등의 방식입니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t유연한 응답 처리:\n\t\t\t\t<br/>\n\t\t\t\t연속 응답 → 선형 회귀(lm())\n\t\t\t\t<br/>\n\t\t\t\t이진 범주형 응답 → 로지스틱 회귀(glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t효과 크기 계산 공식:\n\t\t\t\t<br/>\n\t\t\t\t연속 Y: 가설 검정에서의 평균 제곱합의 제곱근을 응답 SD의 강건한 추정치로 나눈 값(범위/20보다 크면 IQR/1.3489795 사용, 그렇지 않으면 샘플 SD 사용).\n\t\t\t\t<br/>\n\t\t\t\t범주형 Y, 연속 X: 평균 모델 카이제곱 값의 제곱근.\n\t\t\t\t<br/>\n\t\t\t\t범주형 Y, 범주형 X: 평균 피어슨 카이제곱 값의 제곱근.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t다중 검정 수정:\n\t\t\t\t<br/>\n\t\t\t\t허위 발견율(FDR) 방법을 사용하여 모든 p-값을 조정하고 FDR_PValue 및 FDR_Logworth 열을 추가합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorth 메트릭:\n\t\t\t\t유의미성을 순위 매기기 위해 -log10(p-값) 및 -log10(FDR로 조정된 p-값)을 보고합니다(더 클수록 더 유의미함).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자동 사례 필터링:\n\t\t\t\tmin_cases(기본값은 2) 유효 관측치가 없는 응답은 건너뜁니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
