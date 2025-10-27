@@ -5,7 +5,10 @@
     "YaxisGroup": "Y variable (a category) variable for Y-axis",
     "XaxisGroup": "X variable (a category) variable for X-axis",
     "withinXaxisGroup": "One or more grouping (category) variable(s) to group boxplots within x-axis group",
+    "flipaxisChk": "Flip axis",
     "connectMeanPointsChk": "Connect the mean points",
+    "connectMedianPointsChk": "Connect the median points",
+    "showMeanPointsChk": "Show mean points (when not connected)",
     "showMinMaxNumberChk": "Show min and max value per Y-axis category value on the plot",
     "showMeanNumberChk": "Show mean value on the plot",
     "showMedianNumberChk": "Show median value on the plot",
@@ -17,6 +20,7 @@
     "meanPointColor": "Select a color for mean points (After color selection, click outside the control to apply)",
     "meanPointSize": "Mean point size (default = 1.15)",
     "boxPlotWidth": "Boxplot vertical width (default = 0.4)",
+    "keepOriginalScaleChk": "Keep the original scale of the numeric variable selected to plot",
     "factorLevelOccuranceOrderChk": "Reorder all category variable levels in the order of their occurrence for plotting",
     "legends": "Show Legends and if so, position of Legends (default is right)",
     "help": {
