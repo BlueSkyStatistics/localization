@@ -1,0 +1,32 @@
+{
+  "title": "Gleichheit der Varianzen",
+  "navigation": "Gleichheit der Varianzen",
+  "label1": "Wählen Sie Tests",
+  "bartlett": "Bartlett-Test",
+  "levene": "Levene-Test",
+  "fligner": "Fligner–Killeen-Test",
+  "normal_distribution": "Test basierend auf normaler Verteilung",
+  "pairwiseLeveneTest": "Pairwise Levene-Test",
+  "label2": "Datenformat",
+  "wide": "Breites Format",
+  "long": "Langformat",
+  "label3": "Konfidenzniveau",
+  "label4": "Alternative Hypothese",
+  "alt1": "Zweiseitig",
+  "alt2": "Größer",
+  "alt3": "Kleiner",
+  "label5": "P-Wert-Anpassungsmethode (für Pairwise Levene-Test)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Keine",
+  "help": {
+    "title": "Tests zur Gleichheit der Varianzen",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Beschreibung</b><br/>\nFührt Tests zur Gleichheit der Varianzen über mehrere Gruppen durch.<br/>\n<ul>\n<li><b>Bartlett-Test</b>: Empfindlich gegenüber Abweichungen von der Normalverteilung.</li>\n<li><b>Levene-Test</b>: Robuster gegenüber Nicht-Normalität.</li>\n<li><b>Fligner–Killeen-Test</b>: Nicht-parametrisch und sehr robust.</li>\n</ul>\n<b>Argumente</b><br/>\n- alternative: two.sided, greater oder less.<br/>\n- conf.level: Konfidenzniveau für Intervallschätzungen.<br/>\n- format: Breites oder langes Datenlayout.<br/>\n- p.adjust.method: Methode zur Anpassung für Mehrfachvergleiche.\n"
+  }
+}
