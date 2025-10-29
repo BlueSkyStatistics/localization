@@ -9,6 +9,6 @@
   "help": {
     "title": "変数を計算する",
     "r_help": "help(log, package ='base')",
-    "body": "\n<b>説明</b></br>\n式を計算し、その結果をデータフレーム/データセットの変数/列に保存します</br>\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% mutate ( var1 = Expression)​<br/>\nDatasetX <- DatasetX %>% mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nDatasetX: データフレーム/データセット名。​\n</li>\n<li>\nvar1: 計算する必要があるデータセット/データフレームの新しい/既存の列\n</li>\n<li>\nExpression: 変数1 = 変数2 + 変数3の形式の式\n</li>\n</ul>\n<b>詳細</b></br>\n式を評価し、その結果をデータフレーム/データセットの変数/列に保存します</br>\n<b>パッケージ</b></br>\ndplyr</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、Rエディタウィンドウで次のコマンドhelp(mutate, package ='dplyr')を実行してください\n            "
+    "body": "\n<b>説明</b></br>\n式を計算し、その結果をデータフレーム/データセットの変数/列に保存します</br>\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nDatasetX <- DatasetX %>% dplyr::mutate ( var1 = Expression)​<br/>\nDatasetX <- DatasetX %>% dplyr::mutate ( var1 = var2 + var3)​\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nDatasetX: データフレーム/データセット名。​\n</li>\n<li>\nvar1: 計算する必要があるデータセット/データフレームの新しい/既存の列\n</li>\n<li>\nExpression: 変数1 = 変数2 + 変数3の形式の式\n</li>\n</ul>\n<b>詳細</b></br>\n式を評価し、その結果をデータフレーム/データセットの変数/列に保存します</br>\n<b>パッケージ</b></br>\ndplyr</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、Rエディタウィンドウで次のコマンドhelp(mutate, package ='dplyr')を実行してください\n            "
   }
 }

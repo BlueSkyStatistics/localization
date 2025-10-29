@@ -1,0 +1,13 @@
+{
+  "title": "Tekrarlayan Desen İçin Değişken Ekle",
+  "navigation": "Tekrarlayan Desen Ekle",
+  "repeatPatternVarName": "Tekrarlayan değer deseni için değişken adı (değişken zaten varsa güncelle)",
+  "repeatingValues": "Virgülle ayrılmış tekrar edilecek sayı ve/veya metin değerleri (örneğin: 1,Blue,5,Bad,Good,3,7,0)",
+  "repeatFrequencyEach": "(İsteğe bağlı) Her bir öğenin kaç kez tekrarlanacağını virgülle ayırarak belirtin (örneğin: 1,5,2,2,2,3,3,3)",
+  "times": "Tüm öğe grubunun kaç kez tekrarlanacağı (boş bırakılırsa, desenler veri setinin uzunluğunu dolduracak şekilde tekrarlanır)",
+  "help": {
+    "title": "Tekrarlayan Desen İçin Değişken Ekle",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBelirtilen bir tekrarlama desenine göre veri kümesine bir değişken (sütun) ekleyin\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVeri kümesinde yeni bir sütuna karakter dizisi veya sayısal desenler ya da her ikisinin birleşimi oluşturun (örneğin: 5x kırmızı / 5x mavi / 5x sarı → 10'luk bir dizinin tekrarı veya 3x1 / 3x2 / 3x3 … gibi bir dizi)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

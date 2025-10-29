@@ -1,0 +1,12 @@
+{
+    "title": "Test di Grubbs per il rilevamento dei valori anomali",
+    "navigation": "Test di Grubbs per valori anomali",
+    "variableListSelcted": "Seleziona una o più variabili",
+    "alpha": "Alfa: % di probabilità (predefinito 5%), il punto più distante dalla media viene identificato come valore anomalo",
+    "plotShowOutliersChk": "Visualizza il grafico con tutti i punti inclusi i valori anomali, se presenti",
+    "help": {
+        "title": "Test di Grubbs per il rilevamento dei valori anomali",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Descrizione</b></br> Determina se il valore più estremo nella variabile (valori Y, nessuna variabile X necessaria) è un valore anomalo.</br></br> Il test di Grubbs, noto anche come metodo ESD (Extreme Studentized Deviate), è un metodo statistico ampiamente utilizzato per individuare un singolo valore anomalo in un set di dati univariato che segue una distribuzione normale.</br></br> Lo scopo è determinare se il valore più estremo è significativamente diverso dagli altri, cioè se è un valore anomalo.</br></br> Fasi dell'analisi interna:</br> Calcolare la media (μ) e la deviazione standard (σ) dell'intero set di dati (incluso il valore sospetto, a differenza dell’approccio robusto ROUT)</br> Calcolare la statistica di test di Grubbs (G anche noto come Z):</br></br> Calcolare il valore critico secondo la formula di Grubbs:</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Confrontare il valore calcolato di G con il valore critico tabulato (in base alla dimensione del campione e al livello di significatività). Se G supera il valore critico, il dato è considerato un valore anomalo statisticamente significativo.</br></br> Uso iterativo:</br> Anche se il test classico rileva solo un valore anomalo alla volta, può essere ripetuto più volte per individuare più valori anomali — eliminando un valore anomalo e rieseguendo il test sui dati rimanenti.</br></br>"
+    }
+}

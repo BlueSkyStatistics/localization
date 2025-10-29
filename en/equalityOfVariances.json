@@ -1,0 +1,32 @@
+{
+    "title": "Equality of Variances",
+    "navigation": "Equality of Variances",
+    "label1": "Choose tests",
+    "bartlett": "Bartlett’s Test",
+    "levene": "Levene’s Test",
+    "fligner": "Fligner–Killeen Test",
+    "normal_distribution": "Test based on normal distribution",
+    "pairwiseLeveneTest": "Pairwise Levene's test",
+    "label2": "Data format",
+    "wide": "Wide format",
+    "long": "Long format",
+    "label3": "Confidence level",
+    "label4": "Alternative hypothesis",
+    "alt1": "Two-sided",
+    "alt2": "Greater",
+    "alt3": "Less",
+    "label5": "P-value adjustment method (for pairwise Levene's test)",
+    "padj1": "Holm",
+    "padj2": "Hochberg",
+    "padj3": "Hommel",
+    "padj4": "Bonferroni",
+    "padj5": "BH",
+    "padj6": "BY",
+    "padj7": "FDR",
+    "padj8": "None",
+    "help": {
+        "title": "Tests for Equality of Variances",
+        "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+        "body": "\n<b>Description</b><br/>\nPerforms tests for the equality of variances across multiple groups.<br/>\n<ul>\n<li><b>Bartlett’s test</b>: Sensitive to departures from normality.</li>\n<li><b>Levene’s test</b>: More robust to non-normality.</li>\n<li><b>Fligner–Killeen test</b>: Non-parametric and very robust.</li>\n</ul>\n<b>Arguments</b><br/>\n- alternative: two.sided, greater, or less.<br/>\n- conf.level: confidence level for interval estimates.<br/>\n- format: Wide or long data layout.<br/>\n- p.adjust.method: Method for multiple comparison adjustment.\n"
+    }
+}

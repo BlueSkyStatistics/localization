@@ -1,0 +1,32 @@
+{
+  "title": "變異數的平等性",
+  "navigation": "變異數的平等性",
+  "label1": "選擇測試",
+  "bartlett": "巴特利特檢驗",
+  "levene": "萊文檢驗",
+  "fligner": "弗萊格納–基林檢驗",
+  "normal_distribution": "基於正態分佈的檢驗",
+  "pairwiseLeveneTest": "成對萊文檢驗",
+  "label2": "數據格式",
+  "wide": "寬格式",
+  "long": "長格式",
+  "label3": "信心水準",
+  "label4": "替代假設",
+  "alt1": "雙側",
+  "alt2": "大於",
+  "alt3": "小於",
+  "label5": "P值調整方法（針對成對萊文檢驗）",
+  "padj1": "霍爾姆",
+  "padj2": "霍赫伯格",
+  "padj3": "霍梅爾",
+  "padj4": "邦費羅尼",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "無",
+  "help": {
+    "title": "變異數平等性檢驗",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>描述</b><br/>\n執行多組之間變異數平等性的檢驗。<br/>\n<ul>\n<li><b>巴特利特檢驗</b>: 對偏離正態性敏感。</li>\n<li><b>萊文檢驗</b>: 對非正態性更具穩健性。</li>\n<li><b>弗萊格納–基林檢驗</b>: 非參數且非常穩健。</li>\n</ul>\n<b>參數</b><br/>\n- alternative: two.sided, greater, 或 less.<br/>\n- conf.level: 置信區間估計的信心水準。<br/>\n- format: 寬或長數據佈局。<br/>\n- p.adjust.method: 多重比較調整的方法。\n"
+  }
+}

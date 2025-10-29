@@ -1,0 +1,33 @@
+{
+  "title": "Parametrische Überlebens-Testplan-Schätzung",
+  "navigation": "Parametrischer Überlebens-Testplan",
+  "labelDistribution": "Wählen Sie eine Verteilungsfunktion, die am besten zu den Daten passt",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponential",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncLogLogisRad": "Log Logistic",
+  "selectDistFuncGammaRad": "Gamma",
+  "labelDistributionParam": "Geben Sie entweder den Parameter für die gewählte Verteilung an (z.B. Form und Größe für Weibull oder geben Sie Zeit- und Ereignis-Perzentile an, um die Verteilungsparameter zu schätzen)",
+  "labelDistParamOption1": "Option 1 - Geben Sie den Parameter für die ausgewählte Verteilung an",
+  "shape": "geben Sie den Formparameter für Weibull, loglogistisch oder gamma an, oder meanlog für lognormal",
+  "scale": "geben Sie den Skalierungsparameter für Weibull, exponential, Form für loglogistisch oder gamma, oder sdlog für lognormal an",
+  "labelDistParamOption2": "Option 2 - Geben Sie die Zeit und % Ereignisse (d.h. Ausfälle) an, um die Parameter für die ausgewählte Verteilung zu berechnen",
+  "PercentileTime": "Geben Sie zwei durch Kommas getrennte numerische Zeitwerte an (z.B. 100, 500), um die Verteilungsparameter zu schätzen",
+  "PercentileEvent": "Geben Sie zwei durch Kommas getrennte numerische Perzentilwerte für Ereignisse an, z.B. % Ausfälle (10, 30), um die Verteilungsparameter zu schätzen",
+  "parameter": "Wählen Sie das Perzentil, um das gewünschte Perzentilereignis anzugeben, z.B. % Ausfälle. Wenn Sie das Perzentil leer lassen und die Skala auswählen, wird das Perzentil automatisch als 63.2121% für Weibull und exponential und 50% für alle anderen Verteilungen angenommen, wenn der Standort ausgewählt ist",
+  "p": "Perzentil (z.B. 10) für das Ereignis, z.B. Ausfall",
+  "precision": "Präzision (ein oder mehrere durch Kommas getrennte Werte) als Abstände von der Grenze des CI zur Schätzung",
+  "boundType": "Grenztyp (Standard untere)",
+  "censorTime": "Zeit, zu der zensiert wird, falls vorhanden, z.B. geben Sie 1000 an",
+  "confidenceInterval": "Konfidenzniveau (Standard 0.95)",
+  "labelAdvancedOptions": "Erweiterte Optionen (lassen Sie sie als Standardwerte)",
+  "pilotDataLength": "Anzahl der Datenzeilen, die für Simulationen verwendet werden sollen (Standard 2000)",
+  "bootIter": "Bootstrap-Iteration",
+  "seed": "Zufallsinitialisierungswert, Typ jede Kombination aus vier Ziffern",
+  "repeatSampleSizeCalculation": "Wiederholen Sie die Berechnungen der Stichprobengröße, um den Durchschnitt zu nehmen (das Seed-Feld muss leer sein)",
+  "help": {
+    "title": "Parametrische Überlebens-Testplan-Schätzung",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

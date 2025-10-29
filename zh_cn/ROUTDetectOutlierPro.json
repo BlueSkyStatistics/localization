@@ -1,0 +1,15 @@
+{
+  "title": "ROUT异常值检测",
+  "navigation": "ROUT异常值测试",
+  "variableListSelcted": "选择一个或多个变量",
+  "adjPvalue": "调整均值比较的p值",
+  "FDR_Q": "指定最大期望的假发现率(FDR)（默认1%）",
+  "plotShowOutliersChk": "绘图显示所有点，包括异常值（如有）",
+  "showOnlyOuliersInSummaryTableChk": "仅显示包含异常值的分析摘要表（如有）",
+  "showAllPointsInSummaryTableChk": "显示包含所有点的分析摘要表",
+  "help": {
+    "title": "用于异常值检测的ROUT（稳健回归）方法",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>描述</b><br>ROUT（稳健回归与异常值剔除）是一种强大且现代的方法，用于检测一个或多个异常值。<br>最初为非线性回归开发，ROUT方法可适用于通用场景，<br>包括识别变量（数据集中的列）中的异常值。<br><br>ROUT结合了两个强大思想：<br>稳健模型拟合——在估计中心趋势时限制潜在异常值的影响（即影响较小）。<br>假发现率（FDR）——一种统计控制方法，用于确定检测出的异常值中可能为假阳性的数量。<br><br>调整P值方法：<br>调整P值方法包括Bonferroni校正（\"bonferroni\"），其中p值乘以比较次数。<br>还有Holm（1979）（\"holm\"）、Hochberg（1988）（\"hochberg\"）、Hommel（1988）（\"hommel\"）、Benjamini & Hochberg（1995）（\"BH\"或别名\"fdr\"）和Benjamini & Yekutieli（2001）（\"BY\"）等较不保守的校正方法。<br>还包括一个通用选项（\"none\"）。<br><br>前四种方法旨在强有力地控制家族错误率。<br>无修改的Bonferroni校正几乎无用，因为Holm方法优于它，且在任意假设下有效。<br><br>Hochberg和Hommel方法在假设检验相互独立或非负相关时有效。<br>Hommel方法比Hochberg更强大，但差异通常较小，且Hochberg的p值计算更快。<br><br>Benjamini、Hochberg和Yekutieli的\"BH\"（即\"fdr\"）和\"BY\"方法控制假发现率，即在拒绝的假设中预计的假阳性比例。<br>假发现率条件较家族错误率宽松，因此这些方法更有力。<br><br>检测变量中的异常值，即Y值（不需要X变量）。<br><br>内部分析步骤：<br>分配虚拟X值：1、2、...、n<br>拟合模型：Y = M（即常数均值），使用稳健回归（MASS包中的rlm）<br>计算稳健拟合的残差<br>使用学生化残差<br>使用用户定义的Q（默认1%）应用FDR校正<br>标记FDR调整后的p值 < Q/100的异常值<br><br>更多详情请参见<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

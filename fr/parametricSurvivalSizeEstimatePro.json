@@ -1,0 +1,33 @@
+{
+  "title": "Estimation des plans de test de survie paramétriques",
+  "navigation": "Plan de test de survie paramétrique",
+  "labelDistribution": "Sélectionnez une fonction de distribution qui correspond le mieux aux données",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponentielle",
+  "selectDistFuncLnormalRad": "Log Normale",
+  "selectDistFuncLogLogisRad": "Logistique Log",
+  "selectDistFuncGammaRad": "Gamma",
+  "labelDistributionParam": "Soit spécifiez le paramètre pour la distribution choisie (par exemple, forme et taille pour Weibull ou spécifiez le temps et les percentiles d'événements pour estimer les paramètres de distribution)",
+  "labelDistParamOption1": "Option 1 - Spécifiez le paramètre pour la distribution sélectionnée",
+  "shape": "spécifiez le paramètre de forme pour Weibull, loglogistique ou gamma, ou meanlog pour lognormale",
+  "scale": "spécifiez le paramètre d'échelle pour Weibull, exponentielle, forme pour loglogistique ou gamma, ou sdlog pour lognormale",
+  "labelDistParamOption2": "Option 2 - Spécifiez le temps et % d'événements (c'est-à-dire, échecs) pour calculer les paramètres pour la distribution sélectionnée",
+  "PercentileTime": "Spécifiez deux valeurs temporelles numériques séparées par des virgules (par exemple, 100, 500) à utiliser pour estimer les paramètres de distribution",
+  "PercentileEvent": "Spécifiez deux valeurs de percentile numériques séparées par des virgules pour l'événement par exemple % d'échec (10, 30) à utiliser pour estimer les paramètres de distribution",
+  "parameter": "Sélectionnez le percentile pour spécifier l'événement de percentile souhaité, par exemple, % d'échec. Si vous laissez le percentile vide et sélectionnez l'échelle, le percentile sera automatiquement supposé être 63.2121% pour Weibull et exponentielle, et 50% pour toutes les autres distributions, si la localisation est sélectionnée",
+  "p": "Percentile (par exemple, 10) pour l'événement par exemple échec",
+  "precision": "Précisions (une ou plusieurs valeurs séparées par des virgules) comme distances de la limite de l'IC à estimer",
+  "boundType": "Type de limite (par défaut inférieur)",
+  "censorTime": "Temps de censure à, le cas échéant, par exemple, spécifiez 1000",
+  "confidenceInterval": "Niveau de confiance (par défaut 0.95)",
+  "labelAdvancedOptions": "Options avancées (laissez-les par défaut)",
+  "pilotDataLength": "Nombre de lignes de données à utiliser pour les simulations (par défaut 2000)",
+  "bootIter": "Itération de bootstrap",
+  "seed": "Type de graine de randomisation, toute combinaison de quatre chiffres",
+  "repeatSampleSizeCalculation": "Répétez les calculs de taille d'échantillon pour prendre la moyenne (le champ de graine doit être vide)",
+  "help": {
+    "title": "Estimation des plans de test de survie paramétriques",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

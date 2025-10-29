@@ -1,0 +1,32 @@
+{
+  "title": "方差齐性",
+  "navigation": "方差齐性",
+  "label1": "选择测试",
+  "bartlett": "巴特利特检验",
+  "levene": "莱文检验",
+  "fligner": "弗利格纳–基林检验",
+  "normal_distribution": "基于正态分布的检验",
+  "pairwiseLeveneTest": "成对莱文检验",
+  "label2": "数据格式",
+  "wide": "宽格式",
+  "long": "长格式",
+  "label3": "置信水平",
+  "label4": "备择假设",
+  "alt1": "双侧",
+  "alt2": "大于",
+  "alt3": "小于",
+  "label5": "P值调整方法（用于成对莱文检验）",
+  "padj1": "霍尔姆",
+  "padj2": "霍赫伯格",
+  "padj3": "霍梅尔",
+  "padj4": "邦费罗尼",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "无",
+  "help": {
+    "title": "方差齐性检验",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>描述</b><br/>\n执行多个组之间方差齐性的检验。<br/>\n<ul>\n<li><b>巴特利特检验</b>: 对偏离正态性的敏感。</li>\n<li><b>莱文检验</b>: 对非正态性更稳健。</li>\n<li><b>弗利格纳–基林检验</b>: 非参数且非常稳健。</li>\n</ul>\n<b>参数</b><br/>\n- alternative: two.sided, greater, 或 less.<br/>\n- conf.level: 区间估计的置信水平。<br/>\n- format: 宽或长数据布局。<br/>\n- p.adjust.method: 多重比较调整的方法。\n"
+  }
+}

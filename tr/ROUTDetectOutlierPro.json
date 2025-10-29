@@ -1,0 +1,15 @@
+{
+  "title": "ROUT Aykırı Değer Tespiti",
+  "navigation": "ROUT Aykırı Değer Testi",
+  "variableListSelcted": "Bir veya daha fazla değişken seçin",
+  "adjPvalue": "Ortalama karşılaştırmalarından p-değerlerini ayarla",
+  "FDR_Q": "Maksimum (varsayılan %1) istenen Yanlış Keşif Oranını (FDR) belirtin",
+  "plotShowOutliersChk": "Varsa aykırı değerler dahil tüm noktaları göstermek için grafik",
+  "showOnlyOuliersInSummaryTableChk": "Analiz özet tablosunda sadece aykırı değerleri göster, varsa",
+  "showAllPointsInSummaryTableChk": "Analiz özet tablosunda tüm noktaları göster",
+  "help": {
+    "title": "Aykırı Değer Tespiti için ROUT (Sağlam Regresyon) Yöntemi",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Açıklama</b><br>ROUT (Sağlam regresyon ve aykırı değer çıkarımı), bir veya daha fazla aykırı değeri tespit etmek için güçlü ve modern bir yöntemdir. Başlangıçta doğrusal olmayan regresyon için geliştirilmiş olan ROUT yaklaşımı, genel kullanım için uyarlanabilir ve bir değişkendeki (bir veri kümesinin sütunundaki) aykırı değerlerin belirlenmesini içerir.<br><br>ROUT iki güçlü fikri birleştirir:<br>Sağlam model uyumu — merkezi eğilimlerin tahmininde potansiyel aykırı değerlerin etkisini sınırlar.<br>Yanlış Keşif Oranı (FDR) — tespit edilen aykırı değerlerden kaç tanesinin aslında yanlış pozitif olabileceğini belirleyen istatistiksel kontrol yöntemi.<br><br>P-değeri düzeltme yöntemleri:<br>Bonferroni düzeltmesi (“bonferroni”) dahil olmak üzere, p-değerlerinin karşılaştırma sayısıyla çarpıldığı yöntemler; Holm (“holm”), Hochberg (“hochberg”), Hommel (“hommel”), Benjamini & Hochberg (“BH” veya “fdr” olarak da bilinir), Benjamini & Yekutieli (“BY”) gibi daha az katı düzeltmeler de vardır. Ayrıca düzeltme yapılmayan (“none”) bir seçenek de bulunur.<br><br>İlk dört yöntem aile-wise hata oranını güçlü şekilde kontrol etmek için tasarlanmıştır. Bonferroni’nin değiştirilmemiş hali kullanılmaz, çünkü Holm yöntemi daha geçerlidir.<br><br>Hochberg ve Hommel yöntemleri hipotez testleri bağımsız veya pozitif ilişkilidir durumda geçerlidir. Hommel yöntemi Hochberg’den daha güçlüdür, ancak fark genellikle küçüktür ve Hochberg p-değerlerinin hesaplanması daha hızlıdır.<br><br>Benjamini, Hochberg ve Yekutieli’nin “BH” (“fdr” olarak da bilinir) ve “BY” yöntemleri, reddedilen hipotezler arasındaki yanlış keşif oranını kontrol eder ve aile-wise hata oranından daha az katıdır, dolayısıyla daha güçlüdür.<br><br>Bir değişkende aykırı değerleri tespit edin, yani Y değerleri (X değişkeni gerekmez).<br><br>İç analiz adımları:<br>Dummy X değerleri ata: 1, 2, ..., n<br>Modeli uydur: Y = M (sabit ortalama), sağlam regresyon kullanarak (MASS paketi rlm)<br>Robust uyumdan kalıntıları hesapla<br>Studentize kalıntıları kullan<br>Kullanıcı tanımlı Q ile FDR düzeltmesi uygula (varsayılan %1)<br>FDR düzeltilmiş p-değeri < Q/100 olanları aykırı olarak işaretle<br><br>Daha fazla detay için:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

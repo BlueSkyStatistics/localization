@@ -1,0 +1,23 @@
+{
+    "title": "Dot Plot",
+    "navigation": "Dot Plot",
+    "x": "X axis, specify a numeric variable(s)",
+    "fill": "Specify a grouping (Category) variable",
+    "dotPointSize": "Size of the dot points (default 1)",
+    "stackratioSpreadPoints": "Increase or decrease the number (default 4) to spread the stacked-up points vertically",
+    "flip": "Flip Axis",
+    "specify_a_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "legends": "Show Legends and if so, position of Legends (default is right)",
+    "facets_lbl": "Facets",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap (if chosen, any selection of Facet row and column will be ignored)",
+    "Facetscale": "Facet scale",
+    "help": {
+        "title": "Dot Plot",
+        "r_help": "help(geom_dotplot, package=ggplot2)",
+        "body": "\n            <b>Description</b></br>\n            A dot plot is a type of chart used to display the distribution of a dataset using dots. It’s simple but effective, \n\t\t\tespecially for smaller datasets or for showing individual data points clearly. A dot plot places a dot for each data point \n\t\t\talong an axis (usually the x-axis), stacking them vertically to avoid overlap. It's a good \n\t\t\talternative to histograms or bar charts when precision and visibility of individual values are important.\n\t\t\tEach dot represents one observation. Dots are stacked to show frequency.\n            <br/>\n\t\t\t<br/>\n\t\t\tUse facet wrap with the same grouping variable for better visualization of the dots per group if grouping is selected\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Usage</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #optional. Omitted if there is no grouping variable selected\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #stackup_points_direction\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #stackratio_spread_points\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Package</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Help</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Click the R Help button to get detailed R help. You can also enter help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​\n           "
+    }
+}

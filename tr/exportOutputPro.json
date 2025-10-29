@@ -7,7 +7,7 @@
   "exportpro_browsePandocPathBtn": "Pandoc dosya yolunu seçin",
   "exportpro_outputFolderLbl": "Dışa aktarılan belge klasörü:",
   "exportpro_browseOutputPathBtn": "Dışa aktarım klasörünü seçin",
-  "exportpro_outputFilenameLbl": "Dışa aktarılan dosya adını girin (uzantı olmadan):",
+  "exportpro_outputFilenameLbl": "Dışa aktarılacak dosya adını girin (dosya uzantısı olmadan). Boşluk veya başka özel karakter girmeyin:",
   "exportpro_selExportFormatLbl": "Dışa aktarılacak dosya formatını seçin:",
   "exportpro_HTMLradioLbl": "HTML",
   "exportpro_DOCXradioLbl": "DOCX",
@@ -25,5 +25,6 @@
   "exportFileLockedTitle": "Dosya başka bir uygulamada açık",
   "exportFileLockedMsg1": "Aşağıdaki dosya kilitli",
   "exportFileLockedMsg2": " (başka bir uygulamada açık olabilir)",
-  "exportFileLockedMsg3": " Lütfen dosyayı kapatın ve tekrar deneyin. VEYA dışa aktarılan dosya için farklı bir ad verin."
+  "exportFileLockedMsg3": " Lütfen dosyayı kapatın ve tekrar deneyin. VEYA dışa aktarılan dosya için farklı bir ad verin.",
+  "invalidOutputFilenameMsg":"Çıktı dosya adı boşluk veya diğer özel karakterleri içeremez. Lütfen yalnızca alfanümerik karakterler içeren geçerli bir çıktı dosya adı girin."
 }

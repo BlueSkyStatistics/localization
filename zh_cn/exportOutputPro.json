@@ -7,7 +7,7 @@
   "exportpro_browsePandocPathBtn": "选择Pandoc文件路径",
   "exportpro_outputFolderLbl": "导出文档文件夹：",
   "exportpro_browseOutputPathBtn": "选择导出文件夹",
-  "exportpro_outputFilenameLbl": "输入导出文件名（不带文件扩展名）：",
+  "exportpro_outputFilenameLbl": "输入导出的文件名（不包含文件扩展名）。不要输入空格或其他特殊字符：",
   "exportpro_selExportFormatLbl": "选择导出文件格式：",
   "exportpro_HTMLradioLbl": "HTML",
   "exportpro_DOCXradioLbl": "DOCX",
@@ -25,5 +25,6 @@
   "exportFileLockedTitle": "文件在另一个应用程序中打开",
   "exportFileLockedMsg1": "以下文件被锁定",
   "exportFileLockedMsg2": "（可能在另一个应用程序中打开）",
-  "exportFileLockedMsg3": " 请关闭文件并重试。或者为导出的文件提供一个不同的名称。"
+  "exportFileLockedMsg3": " 请关闭文件并重试。或者为导出的文件提供一个不同的名称。",
+  "invalidOutputFilenameMsg":"输出文件名不能包含空格或其他特殊字符。请输入仅包含字母和数字的有效输出文件名。"
 }

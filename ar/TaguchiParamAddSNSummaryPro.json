@@ -1,0 +1,14 @@
+{
+    "title": "S/N (signal to noise) ratio and Taguchi (inner outer design) Summary",
+    "navigation": "Taguchi Summary",
+    "responseVar": "Select a response variable",
+    "labelResponseOptimization": "Response optimization (Rank order controlled i.e., inner factors to minimize the effect of noise i.e., outer factors)",
+    "selectSmallerIsBetterRad": "Objective - Smaller Is Better",
+    "selectLargerIsBetterRad": "Objective - Larger Is Better",
+    "addlTablePrintChk": "Show additional tables",
+    "help": {
+        "title": "S/N (signal to noise) ratio and Taguchi (inner outer design) summary",
+        "r_help": "help(param.design, package = DoE.base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tTaguchi parameter designs for robustness experiments and signal-to-noise investigations with inner and outer arrays of factors.\n\t\t\t\t<br/>\n\t\t\t\tCompute S/N (signal to noise) ratio and Taguchi (inner outer design) Summary\n\t\t\t\t<br/>\n\t\t\t\tInner factors are the controlled factors, and outer factors are the noise factors\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAdditional tables\n\t\t\t\t<br/>\n\t\t\t\tInner_factor_summary - Which full recipe works best?\n\t\t\t\t<br/>\n\t\t\t\tInner_factor_main_effects - Which individual factor is most influential, and which level should we pick?\n\t\t\t\t<br/>\n\t\t\t\tOuter_factor_summary - Which noise factors cause the most trouble?\n\t\t\t\t<br/>\n\t\t\t\tTaguchi_experiment_wide_table - Shows the experiment layout with raw responses + summaries\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\n\t\t\t"
+    }
+}
