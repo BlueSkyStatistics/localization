@@ -1,3 +1,34 @@
 {
-  "title": "Plot-Regeln"
+  "title": "Regeln plotten",
+  "navigation": "Regeln plotten",
+  "rulesobj": "Geben Sie ein bestehendes Regeln-Objekt ein",
+  "label1": "Hier können Sie den Namen des 'Regeln'-Objekts angeben, um alle Regeln zu plotten, oder Anfangs- und Endindex angeben, um bestimmte Regeln anzuzeigen, z. B. Regeln1[1:10]",
+  "label2": "Visualisierungsmethode",
+  "scatterplot": "Streudiagramm",
+  "twokeyplot": "Zwei-Schlüssel-Diagramm",
+  "matrix": "Matrix",
+  "matrix3D": "Matrix3D",
+  "graph": "Graph",
+  "paracoord": "Parallelkoordinaten",
+  "grouped": "Gruppierte Matrix",
+  "mosaic": "Mosaik",
+  "doubledecker": "Doppeldecker",
+  "label3": "Engine",
+  "engggplot2": "ggplot2",
+  "engdefault": "Standard",
+  "enghtmlwidget": "HTML-Widget",
+  "engbase": "Basis",
+  "eng3d": "3D",
+  "engplotly": "plotly",
+  "label4": "Schattierung",
+  "lift": "Lift",
+  "support": "Support",
+  "confidence": "Konfidenz",
+  "NA": "Schattierung unterdrücken",
+  "warn": "HINWEIS: Abhängig von der Größe des 'Regeln'-Objekts können einige dieser Visualisierungsoptionen lange dauern oder aufgrund mangelnder Ressourcen abbrechen. Stattdessen können Sie eine kleinere Menge von Regeln angeben, z. B. Regeln1[1:10].",
+  "help": {
+    "title": "Regeln plotten",
+    "r_help": "help(plot, package='arulesViz')",
+    "body": "\n\t\t\t<b>\n\t\t\tPaket: arulesViz\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<b>\n\t\t\tBeschreibung\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\tDies ist die S3-Methode zur Visualisierung von Assoziationsregeln und Itemsets. Implementiert sind mehrere beliebte Visualisierungsmethoden, darunter Streudiagramme mit Schattierung (Zwei-Schlüssel-Diagramme), graphbasierte Visualisierungen, Doppeldecker-Diagramme usw.\n\t\t\t<br/>\n\t\t\tInteraktive Visualisierung mit plotly ist mit plotly_arules verfügbar.\n\t\t\t<br/><br/>\n\t\t\t<b>\n\t\t\tVerwendung\n\t\t\t</b>\n\t\t\t<br/><br/>\n\t\t\t<code>\n\t\t\t## S3-Methode für Klasse 'rules'\n\t\t\tplot(x, method = NULL, measure = \"support\", shading = \"lift\", \n    \t\tinteractive = FALSE, data = NULL, control = NULL, ...)\n\t\t\t</code>\n\t\t\t<br/><br/>\n\t\t\t<code>\n\t\t\t## S3-Methode für Klasse 'itemsets'\n\t\t\tplot(x, method = NULL, measure = \"support\", shading = NA,\n\t\t\tinteractive=FALSE, data = NULL, control = NULL, ...)\n\t\t\t</code>\t\t\t\n\t\t\t<br/><br/>\n\t\t\t<b>\n\t\t\tArgumente\n\t\t\t</b>\n\t\t\t<br/>\n\t\t\t<ul>\n\t\t\t<li>\n\t\t\tx: Ein Objekt der Klasse \"rules\" oder \"itemsets\".\n\t\t\t</li>\n\t\t\t<li>\n\t\t\tmethod: Eine Zeichenkette mit dem Wert \"scatterplot\", \"two-key plot\", \"matrix\", \"matrix3D\", \"mosaic\", \"doubledecker\", \"graph\", \"paracoord\" oder \"grouped\", \"iplots\", die die Visualisierungsmethode auswählt (siehe Details).\n\t\t\t</li>\n\t\t\t<li>\n\t\t\tmeasure: Maß(e) für Interessantheit (z. B. \"support\", \"confidence\", \"lift\", \"order\"), die in der Visualisierung verwendet werden. Einige Methoden benötigen ein Maß, andere akzeptieren ein Vektor mit zwei Maßen (z. B. Streudiagramm). In einigen Diagrammen (z. B. Graphen) kann NA verwendet werden, um die Verwendung eines Maßes zu unterdrücken.\n\t\t\t</li>\n\t\t\t<li>\n\t\t\tshading: Maß der Interessantheit, das für die Farbe der Punkte/Pfeile/Knoten verwendet wird (z. B. \"support\", \"confidence\", \"lift\"). Standard ist \"lift\". NA kann verwendet werden, um Schattierung zu unterdrücken.\n\t\t\t</li>\n\t\t\t<li>\n\t\t\tinteractive: Aktiviert interaktive Erkundung (nicht für alle Methoden implementiert).\n\t\t\t</li>\n\t\t\t<li>\n\t\t\tcontrol: Eine Liste von Steuerparametern für das Diagramm. Die verfügbaren Steuerparameter hängen von der Visualisierungstechnik ab (siehe Details).\n\t\t\t</li>\n\t\t\t<li>\n\t\t\tdata: Das Dataset (Klasse \"transactions\"), das zur Generierung der Regeln/Itemsets verwendet wurde. Nur \"mosaic\" und \"doubledecker\" erfordern die Originaldaten.\n\t\t\t</li>\n\t\t\t<li>\n\t\t\t...: Weitere Argumente werden in der Regel an die untergeordnete Plot-Funktion weitergegeben. Für Streudiagramme werden sie zur Steuerliste hinzugefügt (siehe oben).\n\t\t\t</li>\n\t\t\t</ul>\n\t\t\t<br/><br/>\n\t\t\t<b>\n\t\t\tDetails\n\t\t\t</b>\n\t\t\t<br/>\n\t\t\tDie meisten Visualisierungstechniken werden von Bruzzese und Davino (2008) beschrieben. Wir haben jedoch mehr Farbschattierungen, Neuordnungs- und interaktive Funktionen hinzugefügt. Viele Visualisierungsmethoden nehmen zusätzliche Parameter als Liste im Steuerparameter an. Einige Parameter werden unten beschrieben. Verwenden Sie den ausführlichen Modus mit plot(rules, method = \"graph\", control = list(verbose = TRUE)), um eine vollständige Liste der Parameter und ihrer Standardwerte zu erhalten.\n\t\t\t<br/>\n\t\t\tDie folgenden Visualisierungsmethoden sind verfügbar:\n\t\t\t<br/><br/>\n\n\t\t\t<b>\"scatterplot\", \"two-key plot\"</b>\n\t\t\t<br/>\n\t\t\tDiese Visualisierungsmethode zeichnet ein zweidimensionales Streudiagramm mit verschiedenen Maßstäben für Interessantheit (Parameter \"measure\") auf den Achsen und einem dritten Maß (Parameter \"shading\") durch die Farbe der Punkte repräsentiert.\n\t\t\t... usw.\n"
+  }
 }
