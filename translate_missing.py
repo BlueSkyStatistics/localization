@@ -16,7 +16,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 
 # Configuration
-MAX_CONCURRENT_REQUESTS = 1
+MAX_CONCURRENT_REQUESTS = int(os.environ.get("MAX_CONCURRENT_REQUESTS", 5))
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 BASE_LANGUAGE = "en"
 
@@ -173,7 +173,7 @@ Provide all translations:"""
                 ],
                 "temperature": 0.3,
             }
-            print('REQUEST PAYLOAD prompt', prompt)
+            # print('REQUEST PAYLOAD prompt', prompt)
 
             try:
                 async with session.post(
