@@ -18,6 +18,8 @@ from dataclasses import dataclass
 # Configuration
 MAX_CONCURRENT_REQUESTS = int(os.environ.get("MAX_CONCURRENT_REQUESTS", 5))
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+OPENAI_URL = os.environ.get("OPENAI_URL", "https://api.openai.com/v1/chat/completions")
+LLM_MODEL = os.environ.get("LLM_MODEL", "gpt-4o-mini")
 BASE_LANGUAGE = "en"
 
 # Language code to full name mapping
@@ -163,7 +165,7 @@ Entries to translate:{entries_text}
 Provide all translations:"""
 
             payload = {
-                "model": "gpt-4o-mini",
+                "model": LLM_MODEL,
                 "messages": [
                     {
                         "role": "system",
@@ -177,7 +179,7 @@ Provide all translations:"""
 
             try:
                 async with session.post(
-                    "https://api.openai.com/v1/chat/completions",
+                    OPENAI_URL,
                     headers=headers,
                     json=payload,
                     timeout=aiohttp.ClientTimeout(total=60),
