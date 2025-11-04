@@ -25,5 +25,10 @@
   "target": "Ziel - ein optionaler Wert, der das Ziel des Prozesses angibt",
   "addlSpecLines": "Zusätzliche Spezifikationslinien im Diagramm hinzufügen (durch Kommas getrennt, z. B. 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Bezeichnung für die zusätzlichen Spezifikationslinien (durch Kommas getrennt, z. B. Spec 1, Spec 2, Spec 3)",
-  "digits": "Ziffern - Anzahl der anzuzeigenden Ziffern"
+  "digits": "Ziffern - Anzahl der anzuzeigenden Ziffern",
+  "help": {
+    "title": "Prozessfähigkeit (qcc pkg)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tqcc-Funktion zur Berechnung von Fähigkeitsindizes \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) und help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie den Datensatz namens pistonrings aus dem qcc-Paket über das Menü Datensatz laden, indem Sie das qcc-Paket auswählen und dann den Datensatz pistonrings auswählen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie Option 1, Durchmesser zu Variable (beobachtet..), Stichprobe zu Gruppierungsvariable, \n\t\t\t\t<br/>\n\t\t\t\tGeben Sie 1:25 in die gruppierten Zeilen ein, die verwendet werden sollen\n\t\t\t\t<br/>\n\t\t\t\tFür die Prozessfähigkeitsanalyse - geben Sie 73.95 in LSL, 74.05 in USL und 74.0 in Zielgrenze ein\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBefolgen Sie das qcc-Tutorial unter https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n"
+  }
 }
