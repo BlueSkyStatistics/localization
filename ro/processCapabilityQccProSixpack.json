@@ -25,5 +25,10 @@
   "target": "Țintă - o valoare opțională care specifică ținta procesului",
   "addlSpecLines": "Adăugați linii suplimentare de specificație pe grafic (separate prin virgulă, de exemplu, 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Etichetă pentru liniile suplimentare de specificație (separate prin virgulă, de exemplu, Spec 1, Spec 2, Spec 3)",
-  "digits": "Cifre - numărul de cifre de afișat"
+  "digits": "Cifre - numărul de cifre de afișat",
+  "help": {
+    "title": "Capacitatea Procesului (pachet qcc)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tfuncția qcc pentru a calcula indicii de capacitate \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - folosiți R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), și help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți încărca setul de date numit pistonrings din pachetul qcc folosind meniul Încărcare Set de Date, selectând pachetul qcc și apoi selectând setul de date pistonrings\n\t\t\t\t<br/>\n\t\t\t\tAlegeți opțiunea 1, diametru pentru variabila(observată..), eșantion pentru variabila de Grupare, \n\t\t\t\t<br/>\n\t\t\t\tTastați 1:25 în rândurile Grupate care vor fi utilizate\n\t\t\t\t<br/>\n\t\t\t\tPentru analiza capacității procesului - tastați 73.95 în LSL, 74.05 în USL, și 74.0 în Limita Țintă\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUrmăriți tutorialul qcc la https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n"
+  }
 }

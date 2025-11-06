@@ -25,5 +25,10 @@
   "target": "Meta - um valor opcional especificando a meta do processo",
   "addlSpecLines": "Adicionar linhas de especificação adicionais no gráfico (separadas por vírgula, por exemplo, 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Rótulo para as linhas de especificação adicionais (separadas por vírgula, por exemplo, Especificação 1, Especificação 2, Especificação 3)",
-  "digits": "Dígitos - número de dígitos a serem exibidos"
+  "digits": "Dígitos - número de dígitos a serem exibidos",
+  "help": {
+    "title": "Capacidade do Processo (pacote qcc)",
+    "r_help": "ajuda(process.capability, pacote = qcc)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção qcc para calcular índices de capacidade \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R ajuda(process.capability, pacote = qcc), ajuda(qcc, pacote = qcc), ajuda(sd.xbar, pacote = qcc), e ajuda(sd.xbar.one, pacote = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode carregar o conjunto de dados chamado pistonrings do pacote qcc com o menu Carregar Conjunto de Dados selecionando o pacote qcc e, em seguida, selecionando o conjunto de dados pistonrings\n\t\t\t\t<br/>\n\t\t\t\tEscolha a opção 1, diâmetro para variável(observado..), amostra para variável de Agrupamento, \n\t\t\t\t<br/>\n\t\t\t\tDigite 1:25 nas linhas Agrupadas a serem usadas\n\t\t\t\t<br/>\n\t\t\t\tPara análise de capacidade do processo - digite 73.95 em LSL, 74.05 em USL, e 74.0 em Limite Alvo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga o tutorial do qcc em https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n"
+  }
 }
