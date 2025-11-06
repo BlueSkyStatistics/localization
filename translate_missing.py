@@ -10,9 +10,10 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Tuple
+from urllib.parse import quote, unquote
+
 import aiohttp
-from collections import defaultdict
 from dataclasses import dataclass
 
 # Configuration
@@ -21,6 +22,7 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_URL = os.environ.get("OPENAI_URL", "https://api.openai.com/v1/chat/completions")
 LLM_MODEL = os.environ.get("LLM_MODEL", "gpt-4o-mini")
 BASE_LANGUAGE = "en"
+TRANSLATE_MISSING = os.environ.get("TRANSLATE_MISSING", 'false').lower() == 'true'  # Whether to translate existing empty keys
 
 # Language code to full name mapping
 LANGUAGE_NAMES = {
@@ -40,12 +42,23 @@ LANGUAGE_NAMES = {
 
 
 @dataclass
-class TranslationTask:
-    """Represents a translation task."""
-    language: str
-    file_path: str
-    key_path: List[str]
+class TranslationEntry:
+    """Represents a single translation entry."""
+    key_path: Tuple[str]
     english_text: str
+    translated_text: str = ""
+
+    @property
+    def idx(self) -> str:
+        return self.get_idx(self.key_path)
+
+    @staticmethod
+    def get_idx(key_path: Tuple[str]) -> str:
+        return '.'.join(quote(i) for i in key_path)
+
+    @staticmethod
+    def decode_idx(idx: str) -> tuple:
+        return tuple(unquote(i) for i in idx.split('.'))
 
 
 @dataclass
@@ -53,8 +66,8 @@ class FileTranslationBatch:
     """Represents all translations for a single file."""
     language: str
     file_name: str
-    base_file_path: str
-    translations: List[Tuple[List[str], str]]  # List of (key_path, english_text)
+    translations: List[TranslationEntry]
+    successful_translations: int = 0
 
 
 class TranslationManager:
@@ -71,7 +84,7 @@ class TranslationManager:
         """Get all language directories except the base language."""
         return [
             d for d in os.listdir(self.base_dir)
-            if os.path.isdir(self.base_dir / d) and d != BASE_LANGUAGE and not d.startswith('.')
+            if os.path.isdir(self.base_dir / d) and d != BASE_LANGUAGE and d in LANGUAGE_NAMES.keys()
         ]
 
     def get_all_json_files(self, lang_dir: str) -> List[str]:
@@ -81,19 +94,15 @@ class TranslationManager:
 
     def load_json(self, file_path: Path) -> Dict:
         """Load JSON file with error handling."""
-        try:
-            with open(file_path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except (json.JSONDecodeError, FileNotFoundError) as e:
-            print(f"Error loading {file_path}: {e}")
-            return {}
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
 
     def save_json(self, file_path: Path, data: Dict):
         """Save JSON file with proper formatting."""
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-    def get_nested_value(self, data: Dict, key_path: List[str]):
+    def get_nested_value(self, data: Dict, key_path: Tuple[str]):
         """Get value from nested dictionary using key path."""
         current = data
         for key in key_path:
@@ -103,7 +112,7 @@ class TranslationManager:
                 return None
         return current
 
-    def set_nested_value(self, data: Dict, key_path: List[str], value: str):
+    def set_nested_value(self, data: Dict, key_path: Tuple[str], value: str):
         """Set value in nested dictionary using key path."""
         current = data
         for key in key_path[:-1]:
@@ -113,33 +122,57 @@ class TranslationManager:
         current[key_path[-1]] = value
 
     def find_missing_keys(
-        self, base_data: Dict, target_data: Dict, key_path: List[str] = None
-    ) -> List[List[str]]:
+            self, base_data: Dict, target_data: Dict, key_path: Tuple[str] = None
+    ) -> List[Tuple[str]]:
         """Recursively find missing keys in target compared to base."""
         if key_path is None:
-            key_path = []
+            key_path = tuple()
 
         missing_keys = []
 
         for key, value in base_data.items():
-            current_path = key_path + [key]
+            current_path: tuple = (*key_path, key)
 
             if key not in target_data:
-                missing_keys.append(current_path)
-            elif isinstance(value, dict) and isinstance(target_data.get(key), dict):
-                # Recursively check nested dictionaries
-                missing_keys.extend(
-                    self.find_missing_keys(value, target_data[key], current_path)
-                )
-            elif isinstance(value, dict) and not isinstance(target_data.get(key), dict):
-                # Target has a value but it should be a dict
-                missing_keys.append(current_path)
+                if isinstance(value, dict):
+                    missing_keys.extend(self.find_missing_keys(value, {}, current_path))
+                else:
+                    missing_keys.append(current_path)
+            elif isinstance(value, list):
+                if isinstance(target_data.get(key), list):
+                    if len(value) > len(target_data[key]):
+                        missing_keys.append(current_path)
+                else:
+                    print('Type mismatch for key:', current_path)
+                    missing_keys.append(current_path)
+            elif isinstance(value, dict):
+                if isinstance(target_data.get(key), dict):
+                    # Recursively check nested dictionaries
+                    missing_keys.extend(
+                        self.find_missing_keys(value, target_data[key], current_path)
+                    )
+                else:
+                    # Target has a value but it should be a dict
+                    missing_keys.extend(self.find_missing_keys(value, {}, current_path))
+            else:
+                if TRANSLATE_MISSING:
+                    # If translation of existing keys is enabled, check if value is empty
+                    if not bool(target_data.get(key)):
+                        missing_keys.append(current_path)
 
         return missing_keys
 
+    async def translate_file_batch_mock(
+            self, session: aiohttp.ClientSession, batch: FileTranslationBatch
+    ) -> None:
+        async with self.semaphore:
+            for entry in batch.translations:
+                entry.translated_text = f'Translation for {entry.key_path} in {batch.language}, [{entry.english_text=}]'
+                batch.successful_translations += 1
+
     async def translate_file_batch(
-        self, session: aiohttp.ClientSession, batch: FileTranslationBatch
-    ) -> Dict[str, str]:
+            self, session: aiohttp.ClientSession, batch: FileTranslationBatch
+    ) -> None:
         """Translate all missing keys for a file in a single API request."""
         async with self.semaphore:
             headers = {
@@ -149,16 +182,15 @@ class TranslationManager:
 
             # Build the translation request with all keys
             entries_text = ""
-            for i, (key_path, english_text) in enumerate(batch.translations, 1):
-                key_string = ".".join(key_path)
-                entries_text += f"\n{i}. Key: {key_string}\n   Text: {english_text}\n"
+            for i, entry in enumerate(batch.translations, 1):
+                entries_text += f"\n{i}. Key: {entry.idx}\n   Text: {entry.english_text}\n"
 
             prompt = f"""Translate the following JSON locale entries to {LANGUAGE_NAMES.get(batch.language, batch.language)}.
 Preserve all HTML tags, code blocks, and special formatting exactly as they appear.
 Only translate the actual text content, not the HTML tags, code, or technical terms.
 
 For each entry, provide the translation in the following format:
-<translation key="1">translated text here</translation>
+<translation key="title.name">translated text here</translation>
 
 Entries to translate:{entries_text}
 
@@ -175,69 +207,67 @@ Provide all translations:"""
                 ],
                 "temperature": 0.3,
             }
-            # print('REQUEST PAYLOAD prompt', prompt)
 
             try:
                 async with session.post(
-                    OPENAI_URL,
-                    headers=headers,
-                    json=payload,
-                    timeout=aiohttp.ClientTimeout(total=60),
+                        OPENAI_URL,
+                        headers=headers,
+                        json=payload,
+                        timeout=aiohttp.ClientTimeout(total=60),
                 ) as response:
                     if response.status == 200:
                         result = await response.json()
                         response_text = result["choices"][0]["message"]["content"].strip()
-                        
+
                         # Parse the translations from the response
-                        translations = {}
-                        pattern = r'<translation key="(\d+)">([\s\S]*?)</translation>'
-                        matches = re.findall(pattern, response_text)
-                        
-                        for key_idx, translation in matches:
-                            translations[key_idx] = translation.strip()
-                        
-                        return translations
+                        pattern = r'<translation key="(.+)">([\s\S]*?)</translation>'
+                        matches = dict(re.findall(pattern, response_text))
+
+                        for entry in batch.translations:
+                            entry.translated_text = matches.get(entry.idx, '')
+                            if entry.translated_text:
+                                batch.successful_translations += 1
+
                     else:
                         error_text = await response.text()
                         print(f"API Error {response.status}: {error_text}")
                         self.error_count += 1
-                        return {}
             except Exception as e:
                 print(f"Translation error: {e}")
                 self.error_count += 1
-                return {}
 
     async def process_file_batch(
-        self, session: aiohttp.ClientSession, batch: FileTranslationBatch
+            self, session: aiohttp.ClientSession, batch: FileTranslationBatch
     ) -> int:
         """Process all translations for a single file."""
         print(
             f"Translating {batch.language}/{batch.file_name} ({len(batch.translations)} entries)"
         )
 
-        translations = await self.translate_file_batch(session, batch)
+        # await self.translate_file_batch_mock(session, batch)
+        await self.translate_file_batch(session, batch)
 
-        if translations:
+        if batch.successful_translations > 0:
             # Ensure target directory exists
             target_dir = self.base_dir / batch.language
             target_dir.mkdir(parents=True, exist_ok=True)
-            
+
             # Load current target file or create empty dict
             target_file = target_dir / batch.file_name
-            if target_file.exists():
+            try:
                 target_data = self.load_json(target_file)
-            else:
-                target_data = {}
+            except json.JSONDecodeError:
+                print(f"\tError: Invalid JSON in {target_file}, skipping.")
+                return 0
 
             # Set all translated values
             success_count = 0
-            for i, (key_path, _) in enumerate(batch.translations, 1):
-                key_idx = str(i)
-                if key_idx in translations:
-                    self.set_nested_value(target_data, key_path, translations[key_idx])
+            for entry in batch.translations:
+                if entry.translated_text:
+                    self.set_nested_value(target_data, entry.key_path, entry.translated_text)
                     success_count += 1
                 else:
-                    print(f"  Warning: Missing translation for {'.'.join(key_path)}")
+                    print(f"\tWarning: Missing translation for {entry.idx}")
 
             # Save updated file
             self.save_json(target_file, target_data)
@@ -255,7 +285,8 @@ Provide all translations:"""
         print("Scanning for missing translations...")
 
         # Collect all translation batches grouped by file
-        batches_by_file: Dict[Tuple[str, str], List[Tuple[List[str], str]]] = defaultdict(list)
+        # batches_by_file: Dict[Tuple[str, str], List[Tuple[Tuple[str], str]]] = defaultdict(list)
+        batches: List[FileTranslationBatch] = []
         languages = self.get_all_language_dirs()
         total_missing = 0
 
@@ -273,32 +304,36 @@ Provide all translations:"""
                     continue
 
                 # Load target language file or create empty dict
-                target_data = self.load_json(target_file)
+                try:
+                    target_data = self.load_json(target_file)
+                except FileNotFoundError:
+                    target_data = {}
+                except json.JSONDecodeError:
+                    print(f"\tError: Invalid JSON in {target_file}, skipping.")
+                    continue
 
                 # Find missing keys
-                missing_keys = self.find_missing_keys(base_data, target_data)
+                missing_keys: list[tuple[str]] = self.find_missing_keys(base_data, target_data)
 
+                batch = FileTranslationBatch(
+                    language=lang,
+                    file_name=json_file,
+                    translations=[],
+                )
                 # Group translations by file
                 for key_path in missing_keys:
                     english_text = self.get_nested_value(base_data, key_path)
                     if english_text and isinstance(english_text, str):
-                        batches_by_file[(lang, json_file)].append((key_path, english_text))
-                        total_missing += 1
+                        batch.translations.append(TranslationEntry(key_path=key_path, english_text=english_text))
 
-        if not batches_by_file:
+                if batch.translations:
+                    batches.append(batch)
+                    total_missing += len(batch.translations)
+
+        if not batches:
             print("✓ No missing translations found!")
             return
 
-        # Create batches
-        batches = [
-            FileTranslationBatch(
-                language=lang,
-                file_name=file_name,
-                base_file_path=str(self.base_dir / BASE_LANGUAGE / file_name),
-                translations=translations,
-            )
-            for (lang, file_name), translations in batches_by_file.items()
-        ]
 
         print(f"\nFound {total_missing} missing translations in {len(batches)} files across {len(languages)} languages")
         print(f"Processing with max {MAX_CONCURRENT_REQUESTS} concurrent file requests...\n")
