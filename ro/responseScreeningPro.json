@@ -1,0 +1,22 @@
+{
+  "title": "Screeningul răspunsului",
+  "navigation": "Screeningul răspunsului",
+  "responses": "Alegeți una sau mai multe variabile de răspuns (dependente)",
+  "predictors": "Alegeți una sau mai multe variabile predictori (independente)",
+  "sortOrder": "Ordinea de sortare pentru tabelul de rezumat al Screeningului răspunsului",
+  "maxNumberOfPredictor": "Numărul maxim de combinații de predictori de utilizat (analiza efectului principal)",
+  "adjPvalue": "Metoda de ajustare a valorilor p (implicit este FDR)",
+  "label1": "Afișați coloanele opționale în tabelul Screeningului răspunsului",
+  "showOptionalColumn_CountChk": "Număr",
+  "showOptionalColumn_p_valueChk": "p.valoare",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "Mărimea efectului",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Screeningul răspunsului",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tEfectuează un screening automatizat al răspunsului pentru a identifica predictori semnificativi din punct de vedere statistic pentru una sau mai multe variabile de răspuns.\n\t\t\t\t<br/>\n\t\t\t\tSe ajustează sistematic modele folosind toate combinațiile posibile de predictori (până la o limită specificată de utilizator - implicit este 1) pentru a analiza efectul principal și raportează statistici cheie \n\t\t\t\tscum ar fi valorile p, -log10(valoarea p), valoarea p ajustată cu FDR, -log10(FDR), mărimile efectului și valorile R².\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNotă despre FDR:\n\t\t\t\t<br/>\n\t\t\t\tAtunci când se efectuează multe teste de ipoteză (așa cum se întâmplă în screeningul răspunsului pe baza mai multor predictori), unele valori p semnificative pot apărea din întâmplare.\n\t\t\t\t<br/>\n\t\t\t\tAjustarea Ratei de Descoperire Falsă (FDR) ajută la controlarea acestui lucru prin estimarea proporției așteptate de fals pozitive dintre toate rezultatele semnificative.\n\t\t\t\t<br/>\n\t\t\t\tFuncția folosește procedura Benjamini–Hochberg (p.adjust(..., method = \"fdr\")) pentru a calcula valorile p ajustate FDR, prezentate ca FDR_pval.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval oferă o estimare de semnificație mai conservatoare care ține cont de comparațiile multiple.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) transformă valoarea p ajustată pe aceeași scară ca LogWorth adică -log10(valoarea p), făcându-l ușor de clasat predictori chiar și după corectare.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGenerarea automată a modelului:\n\t\t\t\t<br/>\n\t\t\t\tTestează fiecare combinație posibilă de variabile predictori până la un număr maxim ales (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tDe exemplu, setați max_predictors = 1 pentru a testa doar predictori unici, 2 pentru perechi etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGestionarea flexibilă a răspunsului:\n\t\t\t\t<br/>\n\t\t\t\tRăspunsuri continue → Regresie liniară (lm())\n\t\t\t\t<br/>\n\t\t\t\tRăspunsuri binare categorice → Regresie logistică (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFormulele de calcul pentru mărimea efectului:\n\t\t\t\t<br/>\n\t\t\t\tY continuu: Rădăcina pătrată a sumei medii a pătratelor din testul de ipoteză împărțită la o estimare robustă a SD-ului răspunsului (folosind IQR/1.3489795 dacă IQR > interval/20, altfel SD-ul eșantionului).\n\t\t\t\t<br/>\n\t\t\t\tY categoric, X continuu: Rădăcina pătrată a valorii medii ChiSquare a modelului.\n\t\t\t\t<br/>\n\t\t\t\tY categoric, X categoric: Rădăcina pătrată a valorii medii Pearson ChiSquare.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCorectarea testării multiple:\n\t\t\t\t<br/>\n\t\t\t\tAjustează toate valorile p folosind metoda Ratei de Descoperire Falsă (FDR), adăugând coloanele FDR_PValue și FDR_Logworth.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMetoda LogWorth:\n\t\t\t\tRaportează -log10(valoarea p) și -log10(valoarea p ajustată FDR) pentru a clasifica semnificația (mai mare = mai semnificativ).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFiltrarea automată a cazurilor:\n\t\t\t\tSari peste orice răspuns cu mai puțin de min_cases (implicit este 2) observații valide.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

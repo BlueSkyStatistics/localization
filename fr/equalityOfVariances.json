@@ -1,0 +1,32 @@
+{
+  "title": "Égalité des variances",
+  "navigation": "Égalité des variances",
+  "label1": "Choisissez des tests",
+  "bartlett": "Test de Bartlett",
+  "levene": "Test de Levene",
+  "fligner": "Test de Fligner–Killeen",
+  "normal_distribution": "Test basé sur la distribution normale",
+  "pairwiseLeveneTest": "Test de Levene pairé",
+  "label2": "Format des données",
+  "wide": "Format large",
+  "long": "Format long",
+  "label3": "Niveau de confiance",
+  "label4": "Hypothèse alternative",
+  "alt1": "Deux côtés",
+  "alt2": "Supérieur",
+  "alt3": "Inférieur",
+  "label5": "Méthode d'ajustement de la valeur p (pour le test de Levene pairé)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Aucun",
+  "help": {
+    "title": "Tests pour l'égalité des variances",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Description</b><br/>\nEffectue des tests pour l'égalité des variances à travers plusieurs groupes.<br/>\n<ul>\n<li><b>Test de Bartlett</b>: Sensible aux écarts par rapport à la normalité.</li>\n<li><b>Test de Levene</b>: Plus robuste à la non-normalité.</li>\n<li><b>Test de Fligner–Killeen</b>: Non paramétrique et très robuste.</li>\n</ul>\n<b>Arguments</b><br/>\n- alternative: deux.sided, greater, ou less.<br/>\n- conf.level: niveau de confiance pour les estimations d'intervalle.<br/>\n- format: Disposition des données large ou longue.<br/>\n- p.adjust.method: Méthode pour l'ajustement des comparaisons multiples.\n"
+  }
+}

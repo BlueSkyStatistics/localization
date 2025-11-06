@@ -1,0 +1,13 @@
+{
+  "title": "Variable mit wiederholendem Muster hinzufügen",
+  "navigation": "Wiederholendes Muster hinzufügen",
+  "repeatPatternVarName": "Variablenname für das wiederholende Wertermuster (aktualisieren, falls die Variable bereits existiert)",
+  "repeatingValues": "Durch Kommas getrennte Zahlen- und/oder Zeichenfolgenwerte zum Wiederholen (z. B. 1,Blue,5,Bad,Good,3,7,0)",
+  "repeatFrequencyEach": "(Optional) Durch Kommas getrennte Anzahl der Wiederholungen jedes oben genannten Elements (z. B. 1,5,2,2,2,3,3,3)",
+  "times": "Anzahl der Wiederholungen der gesamten Gruppe von Elementen (wenn leer, werden Muster wiederholt, um die Länge des Datensatzes zu füllen)",
+  "help": {
+    "title": "Variable mit wiederholendem Muster hinzufügen",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFügen Sie dem Datensatz eine Variable (d. h. Spalte) mit einem angegebenen wiederholenden Muster hinzu\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tErstellen Sie eine Zeichenfolge oder ein Zahlenmuster oder eine Kombination aus beidem in einer neuen Spalte des Datensatzes (z. B. 5× rot / 5× blau / 5× gelb → mit einer Wiederholung der Sequenz von 10 ODER eine Sequenz von 3×1 / 3×2 / 3×3 …)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

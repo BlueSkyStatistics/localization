@@ -1,0 +1,23 @@
+{
+    "title": "Nokta Grafiği",
+    "navigation": "Nokta Grafiği",
+    "x": "X ekseni, bir veya daha fazla sayısal değişken belirtin",
+    "fill": "Bir gruplama (Kategori) değişkeni belirtin",
+    "dotPointSize": "Nokta boyutları (varsayılan 1)",
+    "stackratioSpreadPoints": "Yığılmış noktaları dikey olarak yaymak için sayıyı artırın veya azaltın (varsayılan 4)",
+    "flip": "Eksenleri Çevir",
+    "specify_a_title": "Bir başlık girin",
+    "x_title": "X ekseni etiketi",
+    "y_title": "Y ekseni etiketi",
+    "legends": "Efsaneleri Göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağda)",
+    "facets_lbl": "Yüzeyler",
+    "Facetrow": "Yüzey satırı",
+    "Facetcolumn": "Yüzey sütunu",
+    "Facetwrap": "Yüzey sarmalama (seçilirse, Yüzey satırı ve sütun seçimleri yok sayılacaktır)",
+    "Facetscale": "Yüzey ölçeği",
+    "help": {
+      "title": "Nokta Grafiği",
+      "r_help": "help(geom_dotplot, package=ggplot2)",
+      "body": "\n            <b>Açıklama</b></br>\n            Nokta grafiği, bir veri setinin dağılımını noktalar kullanarak göstermek için kullanılan bir grafik türüdür. Basit ama etkilidir, \n\t\t\tözellikle daha küçük veri setleri için veya bireysel veri noktalarını net bir şekilde göstermek için. Nokta grafiği, her veri noktası için bir nokta yerleştirir \n\t\t\tbir eksen boyunca (genellikle x-ekseni), üst üste yığarak örtüşmeyi önler. Bireysel değerlerin hassasiyeti ve görünürlüğü önemli olduğunda, \n\t\t\thistogramlar veya çubuk grafikler için iyi bir alternatiftir. Her nokta bir gözlemi temsil eder. Noktalar, sıklığı göstermek için üst üste yığılır.\n            <br/>\n\t\t\t<br/>\n\t\t\tGruplama seçilmişse, her grup için noktaların daha iyi görselleştirilmesi için aynı gruplama değişkeni ile yüzey sarmalama kullanın.\n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Kullanım</b>\n            <br/>\n            <code> \n            ggplot(data= dataset, aes(x=x_var))+\n\t\t\tgeom_dotplot(\n\t\t\taes(fill = group_var), #isteğe bağlı. Gruplama değişkeni seçilmediğinde atlanır\n\t\t\tmethod = \"histodot\",\n\t\t\tbinwidth = 0.1,\n\t\t\tstackdir = \"up\", #yığılmış_noktalar_yönü\n\t\t\tdotsize = 0.8,\n\t\t\tbinaxis = \"x\",\n\t\t\tstackratio = 4, #yığılmış_noktaları_yayma_oranı\n\t\t\tcolor = NA\n\t\t\t)​\n\t\t\t</code> \n\t\t\t<br/>\n\t\t\t<br/>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;stringr</br>\n            <b>Yardım</b></br>\n            help(geom_dotplot, package=ggplot2)</br>\n            Detaylı R yardımı almak için R Yardım butonuna tıklayın. Ayrıca help(labs), help(geom_dotplot), help(aes), help(facet_grid), help(theme_calc), help(coord_flip)​ yazabilirsiniz.\n           "
+    }
+}

@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "匯入資料庫表",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        }, 		
+        {
           "name": "範例資料集",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",
@@ -58,6 +64,7 @@
           "icon": "icon-help-circled",
           "children": [
             "./assets/js/modals/Help/helpAbout",
+            "./assets/js/modals/Help/rSessionDetails",
             "./assets/js/modals/Help/Help",
             "./assets/js/modals/Help/rFunctionHelp",
             "./assets/js/modals/Help/rPackageHelp",
@@ -73,7 +80,11 @@
           ]
         },
         "./assets/js/modals/Help/installRPackage",
-        "./assets/js/modals/Help/updateBlueSkyPackage",
+		{
+			"name": "更新 R-Temp",
+			"icon": "fas fa-sync",
+			"onclick": "resetRTemp()"
+		},        
         {
           "name": "刷新對話框快取",
           "icon": "fas fa-sync",

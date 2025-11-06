@@ -7,7 +7,7 @@
   "exportpro_browsePandocPathBtn": "Pandoc 파일 경로 선택",
   "exportpro_outputFolderLbl": "내보낸 문서 폴더:",
   "exportpro_browseOutputPathBtn": "내보낼 폴더 선택",
-  "exportpro_outputFilenameLbl": "내보낸 파일 이름 입력(확장자 없음):",
+  "exportpro_outputFilenameLbl": "내보낼 파일 이름을 입력하세요 (파일 확장자 제외). 공백이나 기타 특수 문자를 입력하지 마세요:",
   "exportpro_selExportFormatLbl": "내보낼 파일 형식 선택:",
   "exportpro_HTMLradioLbl": "HTML",
   "exportpro_DOCXradioLbl": "DOCX",
@@ -25,5 +25,6 @@
   "exportFileLockedTitle": "파일이 다른 응용 프로그램에서 열려 있습니다",
   "exportFileLockedMsg1": "다음 파일이 잠겨 있습니다",
   "exportFileLockedMsg2": " (다른 응용 프로그램에서 열려 있을 수 있음)",
-  "exportFileLockedMsg3": "파일을 닫고 다시 시도하십시오. 또는 내보낼 파일에 대해 다른 이름을 제공하십시오."
+  "exportFileLockedMsg3": "파일을 닫고 다시 시도하십시오. 또는 내보낼 파일에 대해 다른 이름을 제공하십시오.",
+  "invalidOutputFilenameMsg":"출력 파일 이름에는 공백이나 기타 특수 문자를 포함할 수 없습니다. 영숫자만 포함된 유효한 출력 파일 이름을 입력해 주세요."
 }

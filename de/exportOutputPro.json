@@ -7,7 +7,7 @@
   "exportpro_browsePandocPathBtn": "Wählen Sie den Pandoc-Dateipfad",
   "exportpro_outputFolderLbl": "Exportdokumentenordner:",
   "exportpro_browseOutputPathBtn": "Wählen Sie den Exportordner",
-  "exportpro_outputFilenameLbl": "Geben Sie den exportierten Dateinamen ein (ohne Dateierweiterung):",
+  "exportpro_outputFilenameLbl": "Geben Sie den exportierten Dateinamen ein (ohne Dateierweiterung). Geben Sie keine Leerzeichen oder andere Sonderzeichen ein:",
   "exportpro_selExportFormatLbl": "Wählen Sie das Dateiformat zum Exportieren:",
   "exportpro_HTMLradioLbl": "HTML",
   "exportpro_DOCXradioLbl": "DOCX",
@@ -25,5 +25,6 @@
   "exportFileLockedTitle": "Datei ist in einer anderen Anwendung geöffnet",
   "exportFileLockedMsg1": "Folgende Datei ist gesperrt",
   "exportFileLockedMsg2": " (möglicherweise in einer anderen Anwendung geöffnet)",
-  "exportFileLockedMsg3": " Bitte schließen Sie die Datei und versuchen Sie es erneut. ODER geben Sie einen anderen Namen für die exportierte Datei an."
+  "exportFileLockedMsg3": " Bitte schließen Sie die Datei und versuchen Sie es erneut. ODER geben Sie einen anderen Namen für die exportierte Datei an.",
+  "invalidOutputFilenameMsg":"Der Ausgabedateiname darf keine Leerzeichen oder andere Sonderzeichen enthalten. Bitte geben Sie einen gültigen Ausgabedateinamen mit nur alphanumerischen Zeichen ein."
 }

@@ -1,0 +1,30 @@
+{
+  "title": "Boxplot com agrupamento multi-variável",
+  "navigation": "Boxplot, Multi-Vari",
+  "response": "Variável a ser usada para boxplot (uma variável numérica)",
+  "YaxisGroup": "Variável Y (uma categoria) para o eixo Y",
+  "XaxisGroup": "Variável X (uma categoria) para o eixo X",
+  "withinXaxisGroup": "Uma ou mais variáveis de agrupamento (categoria) para agrupar boxplots dentro do grupo do eixo x",
+  "flipaxisChk": "Inverter eixo",
+  "connectMeanPointsChk": "Conectar os pontos médios",
+  "connectMedianPointsChk": "Conectar os pontos medianos",
+  "showMeanPointsChk": "Mostrar pontos médios (quando não conectados)",
+  "showMinMaxNumberChk": "Mostrar valor mínimo e máximo por valor de categoria do eixo Y no gráfico",
+  "showMeanNumberChk": "Mostrar valor médio no gráfico",
+  "showMedianNumberChk": "Mostrar valor mediano no gráfico",
+  "showQuantileNumberChk": "Mostrar valor do quantil (Q1 e Q3) no gráfico",
+  "showStatTableChk": "Imprimir todas as estatísticas em uma tabela",
+  "chartTitle": "Digite um título",
+  "x_title": "Rótulo do eixo X",
+  "y_title": "Rótulo do eixo Y",
+  "meanPointColor": "Selecione uma cor para os pontos médios (Após selecionar a cor, clique fora do controle para aplicar)",
+  "meanPointSize": "Tamanho do ponto médio (padrão = 1.15)",
+  "boxPlotWidth": "Largura vertical do boxplot (padrão = 0.4)",
+  "keepOriginalScaleChk": "Manter a escala original da variável numérica selecionada para plotar",
+  "factorLevelOccuranceOrderChk": "Reordenar todos os níveis de variáveis categóricas na ordem de sua ocorrência para plotagem",
+  "legends": "Mostrar Legendas e, se sim, posição das Legendas (o padrão é à direita)",
+  "help": {
+    "title": "Boxplot com agrupamento especial (Multi-Vari)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tOrganizando subgrupos (ou seja, grupo de amostra) para Capacidade de Processo e outras análises de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAnálises como a análise de Capacidade de Processo assumem que os dados são inseridos na ordem em que foram coletados (ordem cronológica). Isso significa que todas as observações do mesmo subgrupo devem aparecer em linhas consecutivas do conjunto de dados. Uma coluna de ID de subgrupo é tipicamente usada para definir quais linhas pertencem ao mesmo subgrupo.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe essa condição não for atendida (por exemplo, se as linhas do mesmo subgrupo estiverem espalhadas pelo conjunto de dados e não colocadas uma ao lado da outra), então os IDs de subgrupo precisam ser recalibrados.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tRecalibração significa:\n\t\t\t\t<br/>\n\t\t\t\tUm novo número de subgrupo é atribuído sempre que o ID do subgrupo muda de uma linha para a próxima.\n\t\t\t\t<br/>\n\t\t\t\tSe o mesmo ID de subgrupo reaparecer mais tarde, mas não estiver adjacente à sua ocorrência anterior, será tratado como um novo subgrupo.\n\t\t\t\t<br/>\n\t\t\t\tEm outras palavras, apenas valores idênticos que aparecem um ao lado do outro são considerados parte do mesmo subgrupo. Valores idênticos separados por outros subgrupos serão divididos em subgrupos separados durante a recalibração.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tA variável de número de amostra recalibrada no conjunto de dados é necessária para realizar muitas análises, por exemplo, Capacidade de Processo, gráficos de Shewhart como xbar, R, S, etc \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

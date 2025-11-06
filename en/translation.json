@@ -6,7 +6,7 @@
         "main": {
             "new": "Add new item to output",
             "save": "Save",
-            "export": "Export output",
+            "export": "Save As",
             "clear": "Clear output",
             "close": "Close output tab",
             "restart": "Restart R",
@@ -74,6 +74,7 @@
     "CntxMkOrdFac": "Make Ordered Factor",
     "CntxMkChar": "Make Character",
     "CntxMkNum": "Make Numeric",
+    "CntxMkNumEU": "Make Numeric (European)",
     "CntxInsDtVar": "Insert New Date Variable",
     "CntxInsDtVarEnd": "Insert New Date Variable at End",
     "CntxInsDtTmVar": "Insert New DateTime Variable",
@@ -96,5 +97,6 @@
     "RenOutputRenameBtn": "Rename",
 	"exportFileLockedOk" : "Ok",
 	"viewModeSplashTitle" : "Warning! View Mode Only",
-	"viewModeSplashMsg" : "This application is in view mode only. You cannot execute any analysis. You can only view old analysis within a project or a .bmd file. If you need the full capability, obtain a software license for this application."	
+	"viewModeSplashMsg" : "This application is in view mode only. You cannot execute any analysis. You can only view old analysis within a project or a .bmd file. If you need the full capability, obtain a software license for this application.",
+    "chatAttachmentInitialMessage": "Interpret my analysis results"
 }

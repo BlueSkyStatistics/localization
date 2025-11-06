@@ -1,0 +1,15 @@
+{
+  "title": "Reformatear Datos de Supervivencia Paramétrica",
+  "navigation": "Reformatear Datos de Supervivencia Paramétrica",
+  "newdatasetname": "Nombre del nuevo conjunto de datos (sin espacios ni caracteres especiales) para crear un conjunto de datos con formato censurado",
+  "label1": "Seleccione unidades totales y seleccione ya sea la variable de falla o la variable de censura, o simplemente seleccione ambas, falla y censura, y deje las unidades totales vacías",
+  "variableEventSelcted": "Seleccione la variable para el evento (por ejemplo, fallido)",
+  "variableCensorSelcted": "Seleccione la variable para la censura (por ejemplo, no fallido)",
+  "variableTotalUnitsSelcted": "Seleccione unidades totales solo si una (no ambas) de fallido o censurado está seleccionada arriba",
+  "variableSortingSelcted": "(opcional) Seleccione una variable para ordenar el nuevo conjunto de datos",
+  "sortOrder": "Orden de clasificación ascendente (predeterminado) o descendente",
+  "help": {
+    "title": "Reformatear Datos de Supervivencia Paramétrica",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\t<br/>"
+  }
+}

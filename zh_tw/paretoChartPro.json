@@ -6,21 +6,23 @@
   "selectWideRad": "選項 2：寬格式 - 列名將用作缺陷類別，第一行（默認）將用作計數",
   "selectRawRad": "選項 3：原始數據 - 計算計數以繪製帕累托圖",
   "rownumForCounts": "用於計數的行號（默認為第一行）",
-  "mainTitle": "圖表標題",
-  "defects": "變量（例如類別）以繪製",
-  "counts": "（可選）用作計數的變量以繪製",
+  "defects": "要繪製的變量（例如類別）",
+  "counts": "（可選）用作計數的變量以進行繪製",
   "grouping": "（可選）分組變量以並排繪製多個帕累托圖",
-  "uniformBarOrderChk": "以相同的字母順序繪製條形圖（跨組）。 取消選中以根據頻率降序排列條形圖（在每組內）",
+  "uniformBarOrderChk": "以相同的字母順序繪製條形圖（跨組）。 取消選中以根據降序頻率對條形圖進行排序（在每個組內）",
   "grouping2": "（可選）分組變量以並排繪製多個帕累托圖",
-  "rawVariable": "變量（例如類別）與原始數據",
-  "xlab": "指定 x 軸標籤的字符串",
-  "ylab": "指定 y 軸標籤的字符串",
-  "ylab2": "指定右側第二個 y 軸標籤的字符串",
-  "percentStep": "用作右側第二個 y 軸刻度標記的百分比步長",
+  "rawVariable": "具有原始數據的變量（例如類別）",
+  "mainTitle": "輸入圖表標題",
+  "xlab": "X 軸標籤",
+  "ylab": "Y 軸標籤",
+  "ylab2": "右側 Y 軸的 Y 軸標籤",
+  "RefCumFreqLine": "為指定的累積 % 繪製一條水平參考線（例如，輸入 80 代表 80%） - 留空則不顯示線",
+  "legends": "顯示圖例，如果顯示，則圖例的位置（默認為右側）",
+  "percentStep": "用作右側第二個 Y 軸刻度標記的百分比步長",
   "digits": "統計表的小數點位數",
   "help": {
     "title": "帕累托圖",
     "r_help": "help(pareto.chart, package = qcc)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tpareto.chart 函數用於創建統計表並繪製帕累托圖\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 defects_frequency_pareto_chart.xlsx 的示例數據集文件。 使用文件打開菜單在數據網格中打開該文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tpareto.chart 函數用於創建統計表並繪製帕累托圖\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以使用名為 defects_frequency_pareto_chart.xlsx 的示例數據集文件。 在數據網格中使用文件打開菜單打開該文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

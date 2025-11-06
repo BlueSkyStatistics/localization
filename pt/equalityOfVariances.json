@@ -1,0 +1,32 @@
+{
+  "title": "Igualdade de Variâncias",
+  "navigation": "Igualdade de Variâncias",
+  "label1": "Escolha os testes",
+  "bartlett": "Teste de Bartlett",
+  "levene": "Teste de Levene",
+  "fligner": "Teste de Fligner–Killeen",
+  "normal_distribution": "Teste baseado na distribuição normal",
+  "pairwiseLeveneTest": "Teste de Levene pareado",
+  "label2": "Formato dos dados",
+  "wide": "Formato largo",
+  "long": "Formato longo",
+  "label3": "Nível de confiança",
+  "label4": "Hipótese alternativa",
+  "alt1": "Bilateral",
+  "alt2": "Maior",
+  "alt3": "Menor",
+  "label5": "Método de ajuste do valor-p (para o teste de Levene pareado)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Nenhum",
+  "help": {
+    "title": "Testes para Igualdade de Variâncias",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Descrição</b><br/>\nRealiza testes para a igualdade de variâncias entre múltiplos grupos.<br/>\n<ul>\n<li><b>Teste de Bartlett</b>: Sensível a desvios da normalidade.</li>\n<li><b>Teste de Levene</b>: Mais robusto à não-normalidade.</li>\n<li><b>Teste de Fligner–Killeen</b>: Não paramétrico e muito robusto.</li>\n</ul>\n<b>Argumentos</b><br/>\n- alternative: two.sided, greater, ou less.<br/>\n- conf.level: nível de confiança para estimativas de intervalo.<br/>\n- format: Layout de dados largo ou longo.<br/>\n- p.adjust.method: Método para ajuste de comparação múltipla.\n"
+  }
+}

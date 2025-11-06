@@ -7,7 +7,7 @@
   "exportpro_browsePandocPathBtn": "Alegeți calea fișierului Pandoc",
   "exportpro_outputFolderLbl": "Folderul documentului exportat:",
   "exportpro_browseOutputPathBtn": "Alegeți folderul de export",
-  "exportpro_outputFilenameLbl": "Introduceți numele fișierului exportat (fără extensie):",
+  "exportpro_outputFilenameLbl": "Introduceți numele fișierului exportat (fără extensia fișierului). Nu introduceți spații sau alte caractere speciale:",
   "exportpro_selExportFormatLbl": "Selectați formatul de fișier pentru export:",
   "exportpro_HTMLradioLbl": "HTML",
   "exportpro_DOCXradioLbl": "DOCX",
@@ -25,5 +25,6 @@
   "exportFileLockedTitle": "Fișierul este deschis într-o altă aplicație",
   "exportFileLockedMsg1": "Următorul fișier este blocat",
   "exportFileLockedMsg2": " (posibil deschis într-o altă aplicație)",
-  "exportFileLockedMsg3": " Vă rugăm să închideți fișierul și să încercați din nou. SAU furnizați un nume diferit pentru fișierul exportat."
+  "exportFileLockedMsg3": " Vă rugăm să închideți fișierul și să încercați din nou. SAU furnizați un nume diferit pentru fișierul exportat.",
+  "invalidOutputFilenameMsg":"Numele fișierului de ieșire nu poate conține spații sau alte caractere speciale. Vă rugăm să introduceți un nume de fișier de ieșire valid, format doar din caractere alfanumerice."
 }

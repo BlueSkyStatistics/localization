@@ -1,0 +1,30 @@
+{
+  "title": "Boxplot con agrupación multi-vari",
+  "navigation": "Boxplot, Multi-Vari",
+  "response": "Variable a utilizar para el boxplot (una variable numérica)",
+  "YaxisGroup": "Variable Y (una categoría) para el eje Y",
+  "XaxisGroup": "Variable X (una categoría) para el eje X",
+  "withinXaxisGroup": "Una o más variables de agrupación (categoría) para agrupar los boxplots dentro del grupo del eje x",
+  "flipaxisChk": "Invertir eje",
+  "connectMeanPointsChk": "Conectar los puntos medios",
+  "connectMedianPointsChk": "Conectar los puntos medianos",
+  "showMeanPointsChk": "Mostrar puntos medios (cuando no están conectados)",
+  "showMinMaxNumberChk": "Mostrar el valor mínimo y máximo por valor de categoría del eje Y en el gráfico",
+  "showMeanNumberChk": "Mostrar el valor medio en el gráfico",
+  "showMedianNumberChk": "Mostrar el valor mediano en el gráfico",
+  "showQuantileNumberChk": "Mostrar el valor del cuartil (Q1 y Q3) en el gráfico",
+  "showStatTableChk": "Imprimir todas las estadísticas en una tabla",
+  "chartTitle": "Ingrese un título",
+  "x_title": "Etiqueta del eje X",
+  "y_title": "Etiqueta del eje Y",
+  "meanPointColor": "Seleccione un color para los puntos medios (Después de seleccionar el color, haga clic fuera del control para aplicar)",
+  "meanPointSize": "Tamaño del punto medio (predeterminado = 1.15)",
+  "boxPlotWidth": "Ancho vertical del boxplot (predeterminado = 0.4)",
+  "keepOriginalScaleChk": "Mantener la escala original de la variable numérica seleccionada para graficar",
+  "factorLevelOccuranceOrderChk": "Reordenar todos los niveles de la variable categórica en el orden de su ocurrencia para graficar",
+  "legends": "Mostrar leyendas y, de ser así, posición de las leyendas (el predeterminado es a la derecha)",
+  "help": {
+    "title": "Boxplot con agrupación especial (Multi-Vari)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tOrganizando subgrupos (es decir, grupo de muestra) para Capacidad de Proceso y otros análisis de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl análisis como el análisis de Capacidad de Proceso asume que los datos se ingresan en el orden en que fueron recolectados (orden cronológico). Esto significa que todas las observaciones del mismo subgrupo deben aparecer en filas consecutivas del conjunto de datos. Una columna de ID de subgrupo se utiliza típicamente para definir qué filas pertenecen al mismo subgrupo.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSi esta condición no se cumple (por ejemplo, si las filas del mismo subgrupo están dispersas a lo largo del conjunto de datos y no están colocadas una al lado de la otra), entonces los ID de subgrupo necesitan ser recalibrados.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa recalibración significa:\n\t\t\t\t<br/>\n\t\t\t\tSe asigna un nuevo número de subgrupo cada vez que el ID de subgrupo cambia de una fila a la siguiente.\n\t\t\t\t<br/>\n\t\t\t\tSi el mismo ID de subgrupo reaparece más tarde pero no es adyacente a su ocurrencia anterior, se tratará como un nuevo subgrupo.\n\t\t\t\t<br/>\n\t\t\t\tEn otras palabras, solo se consideran parte del mismo subgrupo los valores idénticos que aparecen uno al lado del otro. Los valores idénticos separados por otros subgrupos se dividirán en subgrupos separados durante la recalibración.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLa variable de número de muestra recalibrada en el conjunto de datos es necesaria para realizar muchos análisis, por ejemplo, Capacidad de Proceso, gráficos de Shewhart como xbar, R, S, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
