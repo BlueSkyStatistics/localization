@@ -1,0 +1,30 @@
+{
+  "title": "邏輯回歸，目標預測",
+  "navigation": "邏輯，目標預測",
+  "input": "選擇一個變數（數值）以指定輸入值",
+  "passFail": "選擇一個變數（類別），例如，通過/不通過或具有0/1值的變數",
+  "passValue": "輸入用作通過/好的類別值",
+  "label1": "選擇是從輸入值計算概率還是從概率計算輸入值",
+  "computeProbability": "計算概率（即，可靠性）",
+  "computeInputValue": "計算輸入值（即，優化）",
+  "specifyInputValue": "指定目標輸入值",
+  "specifyProbability": "指定目標概率（可靠性），例如，0.9999",
+  "useTargetProAspLBChk": "使用上述目標概率（可靠性）作為下限置信區間來估算輸入",
+  "confidenceLevel": "置信水平",
+  "overlayObservedDataChk": "在圖上以每個輸入值組的點疊加觀察到的通過/好/成功",
+  "overlayObservedDataConnectLineChk": "連接每個輸入值組的疊加觀察點的線",
+  "drawVerticalRefLineMaxInputValueChk": "繪製垂直參考線以顯示觀察數據中的最小和最大輸入值",
+  "printPassRateTableChk": "打印通過率（來自觀察數據）表",
+  "printModelDetailsChkChk": "打印基礎邏輯模型摘要",
+  "verticalJustificationOffsetTargetInputValue": "控制目標輸入值標籤的垂直對齊",
+  "verticalJustificationOffsetMaxInputValue": "控制最小和最大輸入值標籤的垂直對齊",
+  "digits": "在輸出表中顯示的數字位數",
+  "mainTitle": "輸入圖表標題",
+  "xlab": "X軸標籤",
+  "ylab": "Y軸標籤",
+  "help": {
+    "title": "邏輯回歸，目標預測",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t二元邏輯回歸（觀察與擬合S曲線）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t目的\n\t\t\t\t<br/>\n\t\t\t\t此分析模型和可視化數值輸入（例如，測量）與\n\t\t\t\t二元檢查結果（例如，通過/不通過）之間的關係，使用邏輯回歸。它估算在不同輸入水平下的通過概率，並允許用戶探索目標可靠性或輸入閾值。它擬合一個二元邏輯回歸模型來建模\n\t\t\t\t通過/不通過與輸入測量。它顯示觀察到的通過率、擬合概率曲線和置信帶的S曲線。它允許\n\t\t\t\t在目標輸入或目標可靠性下估算可靠性。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t用戶輸入\n\t\t\t\t<br/>\n\t\t\t\t數據集：選擇包含變數的數據集。\n\t\t\t\t<br/>\n\t\t\t\t輸入（X變數）：連續測量或預測變數。\n\t\t\t\t<br/>\n\t\t\t\t檢查（Y變數）：具有恰好兩個級別的類別結果（例如，通過，不通過）。\n\t\t\t\t<br/>\n\t\t\t\t通過值字符串：表示通過的文本值（例如，\"通過\"，\"好\"，\"OK\"）。\n\t\t\t\t<br/>\n\t\t\t\t目標概率：通過的概率（例如，0.999）以查找相應的輸入值。\n\t\t\t\t<br/>\n\t\t\t\t目標輸入：輸入值（例如，535）以估算其可靠性概率。\n\t\t\t\t<br/>\n\t\t\t\t置信水平：預測和反向預測值的置信區間寬度（默認0.95）。\n\t\t\t\t<br/>\n\t\t\t\t小數位數：在數值結果中顯示的位數。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t輸出\n\t\t\t\t<br/>\n\t\t\t\t圖：觀察與擬合S曲線\n\t\t\t\t<br/>\n\t\t\t\t藍色曲線：擬合的邏輯回歸通過概率。\n\t\t\t\t<br/>\n\t\t\t\t陰影區域：擬合曲線的置信區間。\n\t\t\t\t<br/>\n\t\t\t\t黑點：每個輸入的觀察通過率（點大小∝觀察數量）。\n\t\t\t\t<br/>\n\t\t\t\t綠線：數據集中觀察到的最大輸入。\n\t\t\t\t<br/>\n\t\t\t\t紅線：目標輸入（如果指定）及可選外推標籤。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t表格\n\t\t\t\t<br/>\n\t\t\t\t觀察通過率：通過率、樣本大小和輸入值。\n\t\t\t\t<br/>\n\t\t\t\t從輸入預測的可靠性：用戶指定目標輸入的估算和CI值。\n\t\t\t\t<br/>\n\t\t\t\t從可靠性目標估算的輸入：與目標概率相對應的輸入值，帶有置信限。\n\t\t\t\t<br/>\n\t\t\t\t模型摘要：係數、標準誤差、顯著性和擬合模型方程。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t解釋\n\t\t\t\t<br/>\n\t\t\t\tS曲線顯示通過的概率如何隨輸入變化。\n\t\t\t\t<br/>\n\t\t\t\t更陡的曲線表示測量與檢查結果之間的關係更強。\n\t\t\t\t<br/>\n\t\t\t\t使用目標輸入線來評估所需的測量是否達到所需的可靠性。\n\t\t\t\t<br/>\n\t\t\t\t如果曲線幾乎平坦，則輸入對預測的影響很小。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

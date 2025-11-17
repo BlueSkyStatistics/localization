@@ -1,0 +1,30 @@
+{
+  "title": "逻辑回归，目标预测",
+  "navigation": "逻辑，目标预测",
+  "input": "选择一个变量（数值）以指定输入值",
+  "passFail": "选择一个变量（类别），例如，及格/不及格或一个具有0/1值的变量",
+  "passValue": "输入作为及格/好的类别值",
+  "label1": "选择是从输入值计算概率还是从概率计算输入值",
+  "computeProbability": "计算概率（即，可靠性）",
+  "computeInputValue": "计算输入值（即，优化）",
+  "specifyInputValue": "指定目标输入值",
+  "specifyProbability": "指定目标概率（可靠性），例如，0.9999",
+  "useTargetProAspLBChk": "使用上述目标概率（可靠性）作为下置信界限来估计输入",
+  "confidenceLevel": "置信水平",
+  "overlayObservedDataChk": "在图上叠加观察到的及格/好/成功点，按输入值组",
+  "overlayObservedDataConnectLineChk": "连接每个输入值组的叠加观察点的线",
+  "drawVerticalRefLineMaxInputValueChk": "绘制一条垂直参考线以显示观察数据中的最小和最大输入值",
+  "printPassRateTableChk": "打印及格率（来自观察数据）表",
+  "printModelDetailsChkChk": "打印基础逻辑模型摘要",
+  "verticalJustificationOffsetTargetInputValue": "控制目标输入值标签的垂直对齐",
+  "verticalJustificationOffsetMaxInputValue": "控制最小和最大输入值标签的垂直对齐",
+  "digits": "输出表中显示的数字位数",
+  "mainTitle": "输入图表标题",
+  "xlab": "X轴标签",
+  "ylab": "Y轴标签",
+  "help": {
+    "title": "逻辑回归，目标预测",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t二元逻辑回归（观察与拟合S曲线）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t目的\n\t\t\t\t<br/>\n\t\t\t\t本分析模型化并可视化数值输入（例如，测量）与\n\t\t\t\t二元检查结果（例如，及格/不及格）之间的关系，使用逻辑回归。它估计在不同输入水平下的及格概率，并允许用户探索目标可靠性或输入阈值。它拟合一个二元逻辑回归模型来建模\n\t\t\t\t及格/不及格与输入测量。它显示一个带有观察到的及格率、拟合概率曲线和置信带的S曲线。它允许\n\t\t\t\t在目标输入或目标可靠性下估计可靠性。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t用户输入\n\t\t\t\t<br/>\n\t\t\t\t数据集：选择包含变量的数据集。\n\t\t\t\t<br/>\n\t\t\t\t输入（X变量）：连续测量或预测变量。\n\t\t\t\t<br/>\n\t\t\t\t检查（Y变量）：具有两个水平的分类结果（例如，及格，不及格）。\n\t\t\t\t<br/>\n\t\t\t\t及格值字符串：表示及格的文本值（例如，“及格”，“好”，“OK”）。\n\t\t\t\t<br/>\n\t\t\t\t目标概率：及格的概率（例如，0.999），以找到相应的输入值。\n\t\t\t\t<br/>\n\t\t\t\t目标输入：输入值（例如，535），以估计其可靠性概率。\n\t\t\t\t<br/>\n\t\t\t\t置信水平：预测和反向预测值的置信区间宽度（默认0.95）。\n\t\t\t\t<br/>\n\t\t\t\t小数位数：在数值结果中显示的位数。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t输出\n\t\t\t\t<br/>\n\t\t\t\t图：观察与拟合S曲线\n\t\t\t\t<br/>\n\t\t\t\t蓝色曲线：拟合的逻辑回归及格概率。\n\t\t\t\t<br/>\n\t\t\t\t阴影区域：拟合曲线的置信区间。\n\t\t\t\t<br/>\n\t\t\t\t黑点：每个输入的观察到的及格率（点的大小与观察数量成正比）。\n\t\t\t\t<br/>\n\t\t\t\t绿色线：数据集中观察到的最大输入。\n\t\t\t\t<br/>\n\t\t\t\t红色线：目标输入（如果指定）及可选外推标签。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t表格\n\t\t\t\t<br/>\n\t\t\t\t观察到的及格率：及格率、样本大小和输入值。\n\t\t\t\t<br/>\n\t\t\t\t从输入预测的可靠性：用户指定目标输入的估计值和置信区间值。\n\t\t\t\t<br/>\n\t\t\t\t从可靠性目标估计的输入：与目标概率相对应的输入值，带有置信限。\n\t\t\t\t<br/>\n\t\t\t\t模型摘要：系数、标准误差、显著性和拟合模型方程。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t解释\n\t\t\t\t<br/>\n\t\t\t\tS曲线显示了及格概率如何随输入变化。\n\t\t\t\t<br/>\n\t\t\t\t更陡的曲线表示测量与检查结果之间的关系更强。\n\t\t\t\t<br/>\n\t\t\t\t使用目标输入线来评估所需的测量是否达到所需的可靠性。\n\t\t\t\t<br/>\n\t\t\t\t如果曲线几乎平坦，则输入对预测的影响很小。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

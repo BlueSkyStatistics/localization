@@ -4,7 +4,7 @@
   "label1": "테스트 선택",
   "bartlett": "바틀렛 테스트",
   "levene": "레빈 테스트",
-  "fligner": "플리그너–킬린 테스트",
+  "fligner": "플리그너-킬린 테스트",
   "normal_distribution": "정규 분포 기반 테스트",
   "pairwiseLeveneTest": "쌍별 레빈 테스트",
   "label2": "데이터 형식",
@@ -14,11 +14,11 @@
   "label4": "대립 가설",
   "alt1": "양측",
   "alt2": "더 큼",
-  "alt3": "더 작음",
+  "alt3": "더 적음",
   "label5": "P-값 조정 방법 (쌍별 레빈 테스트용)",
   "padj1": "홀름",
-  "padj2": "호흐베르크",
-  "padj3": "홈멜",
+  "padj2": "호흐버그",
+  "padj3": "호멜",
   "padj4": "본페로니",
   "padj5": "BH",
   "padj6": "BY",
@@ -27,6 +27,6 @@
   "help": {
     "title": "분산의 동등성 테스트",
     "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
-    "body": "\n<b>설명</b><br/>\n여러 그룹 간의 분산 동등성 테스트를 수행합니다.<br/>\n<ul>\n<li><b>바틀렛 테스트</b>: 정규성에서의 이탈에 민감합니다.</li>\n<li><b>레빈 테스트</b>: 비정규성에 더 강건합니다.</li>\n<li><b>플리그너–킬린 테스트</b>: 비모수적이며 매우 강건합니다.</li>\n</ul>\n<b>인수</b><br/>\n- alternative: two.sided, greater, 또는 less.<br/>\n- conf.level: 구간 추정에 대한 신뢰 수준.<br/>\n- format: 넓은 형식 또는 긴 데이터 레이아웃.<br/>\n- p.adjust.method: 다중 비교 조정 방법.\n"
+    "body": "\n<b>설명</b></br>\n분산의 동등성을 테스트합니다. 다음 형식의 데이터를 지원합니다.<br/>\n넓은 형식: 각 변수는 측정을 포함합니다. 예를 들어, 변수 1은 기계 A의 측정을 포함하고, 변수 2는 기계 B의 측정을 포함합니다...<br/>\n긴 형식: 변수의 측정값이 하나 이상의 변수에 의해 그룹화됩니다. 예를 들어, 시험 점수는 성별과 반에 따라 그룹화됩니다.<br/>\n쌍별 레빈 테스트가 선택된 경우에만 P-값 조정 방법이 적용됩니다.<br/>\n<b>사용법</b>\n<br/>\n<code> \nBSky_variance_analysis (<br/>\n    data_format = c(\"wide\" ),<br/>\n    cols_to_compare = c('A','B','C'),<br/>\n    response_col = NULL,<br/>\n    group_col = NULL,<br/>\n    conf_level = 0.95,<br/>\n    alt_hypothesis = \"two.sided\",<br/>\n    p_adjust_method = \"holm\",<br/>\n    normal_distribution =FALSE,<br/>\n    Fligner_Killeen =FALSE,<br/>\n  pairwiseComparison=FALSE,<br/>\n    data_name=\"Dataset1\"<br/>\n)<br/>\nBSky_variance_analysis (<br/>\n    data_format = c(\"long\" ),<br/>\n    cols_to_compare = NULL,<br/>\n    response_col = c('Score'),<br/>\n    group_col = c('Gender','Class'),<br/>\n    conf_level = 0.95,<br/>\n    alt_hypothesis = \"two.sided\",<br/>\n    p_adjust_method = \"holm\",<br/>\n    normal_distribution =FALSE,<br/>\n     Fligner_Killeen =FALSE,<br/>\n  pairwiseComparison=FALSE,<br/>\n    data_name=\"Dataset2\"<br/>\n)<br/>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndata_format: 넓거나 긴 형식\n</li>\n<li>\ncols_to_compare: 데이터셋이 넓은 형식일 때 분산을 비교할 변수, 긴 형식일 경우 NULL\n</li>\n<li>\nresponse_col: 그룹 간 분산을 비교할 측정 변수. 넓은 데이터의 경우 NULL\n</li>\n<li>\ngroup_col: 측정 변수를 그룹화하는 데 사용되는 하나 이상의 변수, 그룹 간 분산의 동등성을 테스트합니다.\n</li>\n<li>\nconf_level: 신뢰 구간\n</li>\n<li>\nalt_hypothesis: two.sided로 설정\n</li>\n<li>\np_adjust_method: P-값을 조정하는 데 사용되는 방법\n</li>\n<li>\nnormal_distribution: TRUE인 경우 정규성을 가정합니다.\n</li>\n<li>\nFligner_Killeen: TRUE인 경우 Fligner_Killeen 테스트를 수행합니다.\n</li>\n<li>\npairwiseComparison: 쌍별 레빈 테스트를 수행합니다.\n</li>\n<li>\ndatasetname: x, y 및 레이어(변수)가 선택되는 데이터셋의 이름\n</li>\n</ul>\n<b>값</b></br>\n지정된 신뢰 구간에 대한 본페로니 신뢰 구간. 다중 비교 테스트(정규성이 가정되지 않을 때) 및 기타 테스트의 결과\n<br/>\n<b>예시</b></br>\n<code> \nBSky_variance_analysis (<br/>\n    data_format = c(\"long\" ),<br/>\n    cols_to_compare = NULL,<br/>\n    response_col = c('Score'),<br/>\n    group_col = c('Gender','Class'),<br/>\n    conf_level = 0.95,<br/>\n    alt_hypothesis = \"two.sided\",<br/>\n    p_adjust_method = \"holm\",<br/>\n    normal_distribution =FALSE,<br/>\n     Fligner_Killeen =FALSE,<br/>\n  pairwiseComparison=FALSE,<br/>\n    data_name=\"Dataset2\"<br/>\n)<br/>\n</code> <br/>\n\n<b>세부사항</b></br>\n다중 비교 테스트</br>\n“정규 분포 기반 테스트 사용”을 선택하지 않을 때 사용됩니다. 즉, 비정규 분포에 강한 방법을 선호합니다.</br>\nk > 2 그룹이 있는 경우, 두 개의 간격이 겹치지 않으면 관련된 표준 편차가 통계적으로 다르다는 것을 보장하는 표준 편차에 대한 간격을 계산합니다.</br>\nk = 2 샘플의 경우, 가설 비율 = 1로 두 분산을 테스트하기 위해 본넷 방법을 사용합니다.</br>\n전체 다중 비교 테스트가 유의미할 경우, 겹치지 않는 간격에 해당하는 표준 편차는 통계적으로 다릅니다.</br>\n장점: 많은 상황에서 레빈 방법보다 더 강력합니다(연속 분포의 경우). 그러나 샘플 크기가 작(< 20)거나 분포가 극단적으로 왜곡되거나 두꺼운 꼬리를 가질 경우, 제1종 오류율이 증가할 수 있습니다.</br>\n테스트의 P-값</br>\n디자인에 샘플이 2개 있는 경우, 두 분산 테스트에 대한 본넷 방법을 사용하여 다중 비교 테스트의 P-값을 계산합니다. 가설 비율, Ρo,는 1입니다.</br>\n디자인에 k > 2 샘플이 있는 경우, Pij를 샘플 쌍(i, j)의 테스트 P-값으로 설정합니다. 다중 비교 절차의 P-값은 다음과 같습니다:</br>\nP =min{Pij, 1<=i<j<=k}\n</br>\n레빈 테스트 통계량</br>\n레빈 테스트는 그룹 간 분산이 동일하다는 귀무 가설(H₀: 모든 분산이 동일함)을 테스트하는 데 사용됩니다. 대립 가설은 적어도 하나의 분산이 다르다는 것입니다.</br>\n정규성을 가정하는 테스트(예: 바틀렛 테스트)에 비해 정규성에서의 이탈에 더 강력합니다.</br>\n특히, 우리는 개선된 강건성을 위해 샘플 중앙값 대신 절대 편차를 사용하는 브라운-포사이 수정 방법을 사용합니다.</br>\n해석: P-값 < α인 경우, H₀를 기각하고 분산이 동일하지 않다고 결론 내립니다.</br>\n</br>\n바틀렛 테스트 통계량</br>\n바틀렛 테스트는 데이터가 정규 분포할 때 분산의 동등성을 테스트하기 위해 설계되었습니다. H₀: 모든 분산이 동일합니다. k > 2 그룹일 경우,\n“정규 분포 기반 테스트 사용”이 선택된 경우 바틀렛 테스트를 사용합니다.</br>\n테스트 통계량(일반적으로 B로 표시됨)은 샘플 분산의 가중 산술 평균과 가중 기하 평균을 비교하는 데 기반합니다.</br>\n이 통계량은 k-1 자유도로 카이 제곱 분포를 따릅니다.</br>\n바틀렛 테스트는 정규성을 가정하므로 정규성에서의 이탈에 민감합니다(즉, 비정규 또는 두꺼운 꼬리 분포는 오해의 소지가 있는 결과를 초래할 수 있습니다).</br>\n</br>\nF-테스트 통계량</br>\n정확히 두 그룹(k = 2)이 있는 경우, “정규 분포 기반 테스트 사용”이 선택된 경우 바틀렛 테스트 대신 F-테스트를 사용합니다.</br>\nH₀: 분산이 동일하다(σ₁² = σ₂²).</br>\nF-통계량은 두 샘플 분산의 비율(더 큰 것 대 더 작은 것)로 계산됩니다. 그런 다음 P-값은 대립 가설(단측 “더 작음” 또는 “더 큼”, 또는 양측)에 따라 달라집니다.</br>\n해석: P-값 < α인 경우, H₀를 기각하고 분산이 다르다고 결론 내립니다. 이는 정규성을 가정할 때만 유효합니다.</br>\n<b>값</b><br/>\n\n<b>패키지</b></br>\n블루스카이</br>\n<b>도움말</b></br>\n추가 정보는 support@blueskystatistics.com으로 문의하십시오.\n"
   }
 }

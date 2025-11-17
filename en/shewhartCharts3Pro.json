@@ -1,6 +1,6 @@
 {
-    "title": "Shewhart charts (I-MR)",
-    "navigation": "Shewhart charts (I-MR)",
+    "title": "Shewhart charts (I-MR) ",
+    "navigation": "Shewhart charts (I-MR) ",
     "variableSelcted2": "Variable (observed data) to chart",
     "dateVariable": "(Optional) Date variable to show dates on the x-axis of the plot",
     "plotTimeSeriesChk": "(Optional) Plot a time series of the variable (observed data) - see additional date and time formatting options at the end",
@@ -14,7 +14,7 @@
     "ocCurvesChk": "Plot operating characteristic curves where applicable (must have equal sample sizes)",
     "rowsTobeUsed": "Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedAsNewData": "New Data - grouped Rows to be used as New Data to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12) - new data to plot but not included in the computations",
-    "additionalPhasesLabel": "Specify data to Chart additional phases (limited to max of 10 phases to be practical to plot on a single chart)",
+    "additionalPhasesLabel": "Specify data to Chart additional phases. You can use 'Grouped Rows' field above as Phase 1 data. Limited to max of 10 phases to be practical to plot on a single chart.",
     "rowsTobeUsedPhase2": "Phase 2 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase3": "Phase 3 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase4": "Phase 4 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
@@ -63,6 +63,9 @@
     "x_title": "X axis label",
     "y_title": "Y axis label",
     "supressSampleSizeInfoChk": "Supress sample size info in the chart title",
+    "plotPhases": "Plot phases",
+    "plotTests": "Tests for special causes",
+    "addRefLines": "Add Reference Lines",
     "help": {
         "title": "Shewhart charts (I-MR)",
         "r_help": "help(qcc, package = qcc)",

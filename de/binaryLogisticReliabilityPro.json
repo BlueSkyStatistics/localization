@@ -1,0 +1,30 @@
+{
+  "title": "Logistische Regression, Zielvorhersage",
+  "navigation": "Logistisch, Zielvorhersage",
+  "input": "Wählen Sie eine Variable (numerisch) zur Festlegung der Eingabewerte aus",
+  "passFail": "Wählen Sie eine Variable (Kategorie), z.B. Bestehen/Nichtbestehen oder eine Variable mit 0/1-Wert",
+  "passValue": "Geben Sie den kategorischen Wert ein, der als Bestehen/OK verwendet werden soll",
+  "label1": "Wählen Sie, ob die Wahrscheinlichkeit aus dem Eingabewert oder der Eingabewert aus der Wahrscheinlichkeit berechnet werden soll",
+  "computeProbability": "Wahrscheinlichkeit berechnen (d.h. Zuverlässigkeit)",
+  "computeInputValue": "Eingabewert berechnen (d.h. Optimieren)",
+  "specifyInputValue": "Einen Ziel-Eingabewert angeben",
+  "specifyProbability": "Eine Zielwahrscheinlichkeit (Zuverlässigkeit) angeben, z.B. 0.9999",
+  "useTargetProAspLBChk": "Eingabe unter Verwendung der oben angegebenen Zielwahrscheinlichkeit (Zuverlässigkeit) als untere Vertrauensgrenze schätzen",
+  "confidenceLevel": "Konfidenzniveau",
+  "overlayObservedDataChk": "Beobachtete Bestehen/OK/Erfolg als Punkte pro Eingabewertgruppe im Diagramm überlagern",
+  "overlayObservedDataConnectLineChk": "Eine Linie, um die überlagerten beobachteten Punkte pro Eingabewertgruppe zu verbinden",
+  "drawVerticalRefLineMaxInputValueChk": "Eine vertikale Referenzlinie zeichnen, um den minimalen und maximalen Eingabewert in den beobachteten Daten anzuzeigen",
+  "printPassRateTableChk": "Die Bestehensquote (aus den beobachteten Daten) Tabelle drucken",
+  "printModelDetailsChkChk": "Die Zusammenfassung des zugrunde liegenden logistischen Modells drucken",
+  "verticalJustificationOffsetTargetInputValue": "Die vertikale Ausrichtung des Labels für den Ziel-Eingabewert steuern",
+  "verticalJustificationOffsetMaxInputValue": "Die vertikale Ausrichtung des Labels für den minimalen und maximalen Eingabewert steuern",
+  "digits": "Ziffern, die in den Ausgabetabellen angezeigt werden sollen",
+  "mainTitle": "Geben Sie einen Diagrammtitel ein",
+  "xlab": "X-Achsenbeschriftung",
+  "ylab": "Y-Achsenbeschriftung",
+  "help": {
+    "title": "Logistische Regression, Zielvorhersage",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tBinäre logistische Regression (Beobachtet vs. Angepasst S-Kurve)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tZweck\n\t\t\t\t<br/>\n\t\t\t\tDiese Analyse modelliert und visualisiert die Beziehung zwischen einem numerischen Eingabewert (z.B. Messung) und \n\t\t\t\teinem binären Inspektionsergebnis (z.B. Bestehen/Nichtbestehen) unter Verwendung der logistischen Regression. Sie schätzt die Wahrscheinlichkeit des Bestehens bei \n\t\t\t\tdifferenten Eingabewerten und ermöglicht es den Benutzern, die Zielzuverlässigkeit oder Eingabeschwellen zu erkunden. Sie passt eine binäre logistische Regression an, um \n\t\t\t\tBestehen/Nichtbestehen vs. Eingabemessung zu modellieren. Sie zeigt eine S-Kurve mit beobachteten Bestehensquoten, angepasster Wahrscheinlichkeitskurve und Vertrauensband. Sie ermöglicht \n\t\t\t\testimieren der Zuverlässigkeit bei einem Ziel-Eingabewert oder Eingabewert bei einer Zielzuverlässigkeit.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBenutzereingaben\n\t\t\t\t<br/>\n\t\t\t\tDatensatz: Wählen Sie den Datensatz aus, der die Variablen enthält.\n\t\t\t\t<br/>\n\t\t\t\tEingabe (X-Variable): Kontinuierliche Messung oder Prädiktorvariable.\n\t\t\t\t<br/>\n\t\t\t\tInspektion (Y-Variable): Kategorisches Ergebnis mit genau zwei Ebenen (z.B. Bestehen, Nichtbestehen).\n\t\t\t\t<br/>\n\t\t\t\tBestehenswert-String: Der Textwert, der ein Bestehen darstellt (z.B. \"Bestehen\", \"Gut\", \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tZielwahrscheinlichkeit: Wahrscheinlichkeit des Bestehens (z.B. 0.999), um den entsprechenden Eingabewert zu finden.\n\t\t\t\t<br/>\n\t\t\t\tZiel-Eingabe: Eingabewert (z.B. 535), um die Zuverlässigkeitswahrscheinlichkeit zu schätzen.\n\t\t\t\t<br/>\n\t\t\t\tKonfidenzniveau: Breite des Konfidenzintervalls für vorhergesagte und umgekehrt vorhergesagte Werte (Standard 0.95).\n\t\t\t\t<br/>\n\t\t\t\tDezimalstellen: Anzahl der Ziffern, die in numerischen Ergebnissen angezeigt werden sollen.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAusgaben\n\t\t\t\t<br/>\n\t\t\t\tDiagramm: Beobachtet vs. Angepasst S-Kurve\n\t\t\t\t<br/>\n\t\t\t\tBlaue Kurve: Angepasste logistische Regressionswahrscheinlichkeit des Bestehens.\n\t\t\t\t<br/>\n\t\t\t\tSchattierter Bereich: Konfidenzintervall für die angepasste Kurve.\n\t\t\t\t<br/>\n\t\t\t\tSchwarze Punkte: Beobachtete Bestehensquoten pro Eingabe (Punktgröße ∝ Anzahl der Beobachtungen).\n\t\t\t\t<br/>\n\t\t\t\tGrüne Linie: Maximal beobachteter Eingabewert im Datensatz.\n\t\t\t\t<br/>\n\t\t\t\tRote Linie: Ziel-Eingabewert (falls angegeben) mit optionalem Extrapolationslabel.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTabellen\n\t\t\t\t<br/>\n\t\t\t\tBeobachtete Bestehensquoten: Bestehensquote, Stichprobengröße und Eingabewert.\n\t\t\t\t<br/>\n\t\t\t\tVorhergesagte Zuverlässigkeit aus Eingabe: Geschätzte und CI-Werte für den benutzerspezifizierten Ziel-Eingabewert.\n\t\t\t\t<br/>\n\t\t\t\tGeschätzte Eingabe aus Zuverlässigkeitsziel: Eingabewert, der einer Zielwahrscheinlichkeit entspricht, mit Vertrauensgrenzen.\n\t\t\t\t<br/>\n\t\t\t\tModellzusammenfassung: Koeffizienten, Standardfehler, Signifikanz und angepasste Modellgleichung.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretation\n\t\t\t\t<br/>\n\t\t\t\tDie S-Kurve zeigt, wie sich die Wahrscheinlichkeit des Bestehens mit dem Eingabewert ändert.\n\t\t\t\t<br/>\n\t\t\t\tEine steilere Kurve zeigt eine stärkere Beziehung zwischen Messung und Inspektionsergebnis an.\n\t\t\t\t<br/>\n\t\t\t\tVerwenden Sie die Ziel-Eingabelinie, um zu beurteilen, ob die erforderliche Messung die gewünschte Zuverlässigkeit erreicht.\n\t\t\t\t<br/>\n\t\t\t\tWenn die Kurve nahezu flach ist, hat die Eingabe wenig prädiktiven Einfluss.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

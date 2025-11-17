@@ -1,0 +1,30 @@
+{
+  "title": "Regressione Logistica, Predizione del Target",
+  "navigation": "Logistica, Predizione del Target",
+  "input": "Seleziona una variabile (numerica) per designare i valori di input",
+  "passFail": "Seleziona una variabile (categoria), ad esempio, Pass/Fail o una variabile con valore 0/1",
+  "passValue": "Inserisci il valore categorico da utilizzare come Pass/OK",
+  "label1": "Seleziona se calcolare la probabilità dal valore di input o il valore di input dalla probabilità",
+  "computeProbability": "Calcola la probabilità (cioè, Affidabilità)",
+  "computeInputValue": "Calcola il valore di input (cioè, Ottimizza)",
+  "specifyInputValue": "Specifica un valore di input target",
+  "specifyProbability": "Specifica una probabilità target (Affidabilità), ad esempio, 0.9999",
+  "useTargetProAspLBChk": "Stima l'input utilizzando la probabilità target sopra (Affidabilità) come limite inferiore di confidenza",
+  "confidenceLevel": "Livello di confidenza",
+  "overlayObservedDataChk": "Sovrapponi i dati osservati pass/ok/successo come punti per gruppo di valore di input nel grafico",
+  "overlayObservedDataConnectLineChk": "Una linea per connettere i punti osservati sovrapposti per gruppo di valore di input",
+  "drawVerticalRefLineMaxInputValueChk": "Disegna una linea di riferimento verticale per mostrare il valore minimo e massimo di input nei dati osservati",
+  "printPassRateTableChk": "Stampa la tabella del tasso di passaggio (dai dati osservati)",
+  "printModelDetailsChkChk": "Stampa il riepilogo del Modello Logistico sottostante",
+  "verticalJustificationOffsetTargetInputValue": "Controlla la giustificazione verticale dell'etichetta per il valore di input target",
+  "verticalJustificationOffsetMaxInputValue": "Controlla la giustificazione verticale dell'etichetta per il valore minimo e massimo di input",
+  "digits": "Cifre da visualizzare nelle tabelle di output",
+  "mainTitle": "Inserisci un titolo per il grafico",
+  "xlab": "Etichetta asse X",
+  "ylab": "Etichetta asse Y",
+  "help": {
+    "title": "Regressione Logistica, Predizione del Target",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tRegressione Logistica Binaria (Osservata vs Fittata S-Curve)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tScopo\n\t\t\t\t<br/>\n\t\t\t\tQuesta analisi modella e visualizza la relazione tra un input numerico (ad esempio, Misurazione) e \n\t\t\t\tun risultato di ispezione binario (ad esempio, Pass/Fail) utilizzando la regressione logistica. Stima la probabilità di passare a \n\t\t\t\tdiversi livelli di input e consente agli utenti di esplorare l'affidabilità target o le soglie di input. Si adatta a una regressione logistica binaria per modellare \n\t\t\t\tPass/Fail vs. misurazione di input. Mostra una S-curve con tassi di passaggio osservati, curva di probabilità fittata e banda di confidenza. Consente \n\t\t\t\testimare l'affidabilità a un input target o l'input a una affidabilità target.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInput Utente\n\t\t\t\t<br/>\n\t\t\t\tDataset: Seleziona il dataset contenente le variabili.\n\t\t\t\t<br/>\n\t\t\t\tInput (Variabile X): Misurazione continua o variabile predittore.\n\t\t\t\t<br/>\n\t\t\t\tIspezione (Variabile Y): Risultato categorico con esattamente due livelli (ad esempio, Pass, Fail).\n\t\t\t\t<br/>\n\t\t\t\tStringa Valore di Passaggio: Il valore testuale che rappresenta un Passaggio (ad esempio, \"Pass\", “Buono”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tProbabilità Target: Probabilità di passare (ad esempio, 0.999) per trovare il corrispondente valore di input.\n\t\t\t\t<br/>\n\t\t\t\tInput Target: Valore di input (ad esempio, 535) per stimare la sua probabilità di affidabilità.\n\t\t\t\t<br/>\n\t\t\t\tLivello di Confidenza: Larghezza dell'intervallo di confidenza per i valori previsti e inversamente previsti (default 0.95).\n\t\t\t\t<br/>\n\t\t\t\tCifre Decimali: Numero di cifre da visualizzare nei risultati numerici.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOutput\n\t\t\t\t<br/>\n\t\t\t\tGrafico: Osservato vs Fittato S-Curve\n\t\t\t\t<br/>\n\t\t\t\tCurva Blu: Probabilità di passaggio della regressione logistica fittata.\n\t\t\t\t<br/>\n\t\t\t\tArea Ombreggiata: Intervallo di confidenza per la curva fittata.\n\t\t\t\t<br/>\n\t\t\t\tPunti Neri: Tassi di passaggio osservati per input (dimensione del punto ∝ numero di osservazioni).\n\t\t\t\t<br/>\n\t\t\t\tLinea Verde: Input massimo osservato nel dataset.\n\t\t\t\t<br/>\n\t\t\t\tLinea Rossa: Input target (se specificato) con etichetta di estrapolazione opzionale.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTabelle\n\t\t\t\t<br/>\n\t\t\t\tTassi di Passaggio Osservati: Tasso di passaggio, dimensione del campione e valore di input.\n\t\t\t\t<br/>\n\t\t\t\tAffidabilità Predetta dall'Input: Valori stimati e CI per l'input target specificato dall'utente.\n\t\t\t\t<br/>\n\t\t\t\tInput Stimato da Affidabilità Target: Valore di input corrispondente a una probabilità target, con limiti di confidenza.\n\t\t\t\t<br/>\n\t\t\t\tRiepilogo del Modello: Coefficienti, errori standard, significatività e equazione del modello fittato.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretazione\n\t\t\t\t<br/>\n\t\t\t\tLa S-curve mostra come la probabilità di passare cambia con l'input.\n\t\t\t\t<br/>\n\t\t\t\tUna curva più ripida indica una relazione più forte tra misurazione e risultato di ispezione.\n\t\t\t\t<br/>\n\t\t\t\tUtilizza la linea di input target per valutare se la misurazione richiesta raggiunge l'affidabilità desiderata.\n\t\t\t\t<br/>\n\t\t\t\tSe la curva è quasi piatta, l'input ha poca influenza predittiva.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

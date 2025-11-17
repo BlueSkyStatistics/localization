@@ -14,8 +14,8 @@
   "markTestNumberChk": "Marcar el número de prueba en el gráfico (solo se marcará el primer número de prueba si se encuentra más de una prueba violada por un punto de datos)",
   "ocCurvesChk": "Trazar curvas de características operativas donde sea aplicable (deben tener tamaños de muestra iguales)",
   "rowsTobeUsed": "Filas agrupadas que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
-  "rowsTobeUsedAsNewData": "Nuevos Datos - filas agrupadas que se utilizarán como Nuevos Datos para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12) - nuevos datos para trazar pero no incluidos en los cálculos",
-  "additionalPhasesLabel": "Especificar datos para graficar fases adicionales (limitado a un máximo de 10 fases para ser práctico de graficar en un solo gráfico)",
+  "rowsTobeUsedAsNewData": "Nuevos datos - filas agrupadas que se utilizarán como nuevos datos para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12) - nuevos datos para trazar pero no incluidos en los cálculos",
+  "additionalPhasesLabel": "Especificar datos para graficar fases adicionales. Puede usar el campo 'Filas Agrupadas' anterior como datos de Fase 1. Limitado a un máximo de 10 fases para ser práctico de graficar en un solo gráfico.",
   "rowsTobeUsedPhase2": "Filas agrupadas de la Fase 2 que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase3": "Filas agrupadas de la Fase 3 que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase4": "Filas agrupadas de la Fase 4 que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
@@ -25,9 +25,9 @@
   "rowsTobeUsedPhase8": "Filas agrupadas de la Fase 8 que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase9": "Filas agrupadas de la Fase 9 que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase10": "Filas agrupadas de la Fase 10 que se utilizarán para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
-  "phaseNames": "Especificar nombres de fases (separados por comas) para un gráfico de múltiples fases - los nombres de fase predeterminados son Fase 1, Fase 2, ...",
-  "nsigmas": "Sigma - número de sigmas a utilizar para calcular límites de control. Se ignora cuando se proporciona el argumento confidence.level",
-  "confidence_level": "Nivel de Confianza - valor entre 0 y 1 que especifica el nivel de confianza de los límites de probabilidad calculados",
+  "phaseNames": "Especificar nombres de fases (separados por comas) para un gráfico multiphase - los nombres de fase predeterminados son Fase 1, Fase 2, ...",
+  "nsigmas": "Sigma - número de sigmas a utilizar para calcular los límites de control. Se ignora cuando se proporciona el argumento confidence.level",
+  "confidence_level": "Nivel de confianza - valor entre 0 y 1 que especifica el nivel de confianza de los límites de probabilidad calculados",
   "sdWarnLimits": "Agregar líneas de límite adicionales (separadas por comas) en el gráfico en las desviaciones estándar específicas (por ejemplo, 1.5, 2)",
   "addlSpecLines": "Agregar líneas de especificación adicionales (separadas por comas) en el gráfico (por ejemplo, 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Etiqueta para las líneas de especificación adicionales (el valor predeterminado es Spec)",
@@ -56,9 +56,12 @@
   "x_title": "Etiqueta del eje X",
   "y_title": "Etiqueta del eje Y",
   "supressSampleSizeInfoChk": "Suprimir información del tamaño de muestra en el título del gráfico",
+  "plotPhases": "Graficar fases",
+  "plotTests": "Pruebas para causas especiales",
+  "addRefLines": "Agregar líneas de referencia",
   "help": {
     "title": "Gráficos de Shewhart (p, np, c, u)",
     "r_help": "help(qcc, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para realizar control de calidad estadístico y graficar gráficos de Shewhart, dibujando curvas OC\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado orangejuice del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionar el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija D para variable(observados..), tamaño para el cuadro de tamaño de muestra, \n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en las filas de datos a utilizar, 30:40 en Nuevos Datos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para realizar control de calidad estadístico y graficar gráficos de Shewhart, dibujando curvas OC\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado orangejuice del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionar el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija D para variable(observados..), tamaño para el cuadro de tamaño de muestra,\n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en las filas de datos a utilizar, 30:40 en Nuevos Datos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

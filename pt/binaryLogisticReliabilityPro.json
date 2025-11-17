@@ -1,0 +1,30 @@
+{
+  "title": "Regressão Logística, Previsão de Alvo",
+  "navigation": "Logística, Previsão de Alvo",
+  "input": "Selecione uma variável (numérica) para designar valores de entrada",
+  "passFail": "Selecione uma variável (categoria), por exemplo, Passar/Falhar ou uma variável com valor 0/1",
+  "passValue": "Digite o valor categórico a ser usado como Passar/OK",
+  "label1": "Selecione se deve calcular a probabilidade a partir do valor de entrada ou o valor de entrada a partir da probabilidade",
+  "computeProbability": "Calcular probabilidade (ou seja, Confiabilidade)",
+  "computeInputValue": "Calcular valor de entrada (ou seja, Otimizar)",
+  "specifyInputValue": "Especifique um valor de entrada alvo",
+  "specifyProbability": "Especifique uma probabilidade alvo (Confiabilidade), por exemplo, 0.9999",
+  "useTargetProAspLBChk": "Estimar Entrada usando a probabilidade alvo acima (Confiabilidade) como limite inferior de confiança",
+  "confidenceLevel": "Nível de confiança",
+  "overlayObservedDataChk": "Sobrepor dados observados de passar/ok/sucesso como pontos por grupo de valor de entrada no gráfico",
+  "overlayObservedDataConnectLineChk": "Uma linha para conectar os pontos observados sobrepostos por grupo de valor de entrada",
+  "drawVerticalRefLineMaxInputValueChk": "Desenhar uma linha de referência vertical para mostrar o valor mínimo e máximo de entrada nos dados observados",
+  "printPassRateTableChk": "Imprimir a tabela de taxa de aprovação (dos dados observados)",
+  "printModelDetailsChkChk": "Imprimir o resumo do Modelo Logístico subjacente",
+  "verticalJustificationOffsetTargetInputValue": "Controlar a justificação vertical do rótulo para o valor de entrada alvo",
+  "verticalJustificationOffsetMaxInputValue": "Controlar a justificação vertical do rótulo para o valor mínimo e máximo de entrada",
+  "digits": "Dígitos a serem exibidos nas tabelas de saída",
+  "mainTitle": "Digite um título para o gráfico",
+  "xlab": "Rótulo do eixo X",
+  "ylab": "Rótulo do eixo Y",
+  "help": {
+    "title": "Regressão Logística, Previsão de Alvo",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tRegressão Logística Binária (Observada vs Ajustada S-Curve)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tObjetivo\n\t\t\t\t<br/>\n\t\t\t\tEsta análise modela e visualiza a relação entre uma entrada numérica (por exemplo, Medição) e \n\t\t\t\tum resultado de inspeção binário (por exemplo, Passar/Falhar) usando regressão logística. Ela estima a probabilidade de aprovação em \n\t\t\t\tníveis de entrada diferentes e permite que os usuários explorem a confiabilidade alvo ou os limites de entrada. Ela ajusta uma regressão logística binária para modelar \n\t\t\t\tPassar/Falhar vs. medição de entrada. Ela exibe uma curva S com taxas de aprovação observadas, curva de probabilidade ajustada e faixa de confiança. Permite \n\t\t\t\testimar a confiabilidade em uma entrada alvo ou entrada em uma confiabilidade alvo.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEntradas do Usuário\n\t\t\t\t<br/>\n\t\t\t\tConjunto de Dados: Selecione o conjunto de dados contendo as variáveis.\n\t\t\t\t<br/>\n\t\t\t\tEntrada (Variável X): Medição contínua ou variável preditora.\n\t\t\t\t<br/>\n\t\t\t\tInspeção (Variável Y): Resultado categórico com exatamente dois níveis (por exemplo, Passar, Falhar).\n\t\t\t\t<br/>\n\t\t\t\tString de Valor de Passagem: O valor de texto que representa um Passar (por exemplo, \"Passar\", “Bom”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tProbabilidade Alvo: Probabilidade de passar (por exemplo, 0.999) para encontrar o valor de entrada correspondente.\n\t\t\t\t<br/>\n\t\t\t\tEntrada Alvo: Valor de entrada (por exemplo, 535) para estimar sua probabilidade de confiabilidade.\n\t\t\t\t<br/>\n\t\t\t\tNível de Confiança: Largura do intervalo de confiança para valores previstos e inversamente previstos (padrão 0.95).\n\t\t\t\t<br/>\n\t\t\t\tDígitos Decimais: Número de dígitos a serem exibidos nos resultados numéricos.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSaídas\n\t\t\t\t<br/>\n\t\t\t\tGráfico: Curva S Observada vs Ajustada\n\t\t\t\t<br/>\n\t\t\t\tCurva Azul: Probabilidade de passar da regressão logística ajustada.\n\t\t\t\t<br/>\n\t\t\t\tÁrea Sombreada: Intervalo de confiança para a curva ajustada.\n\t\t\t\t<br/>\n\t\t\t\tPontos Pretos: Taxas de aprovação observadas por entrada (tamanho do ponto ∝ número de observações).\n\t\t\t\t<br/>\n\t\t\t\tLinha Verde: Máximo observado de entrada no conjunto de dados.\n\t\t\t\t<br/>\n\t\t\t\tLinha Vermelha: Entrada alvo (se especificada) com rótulo de extrapolação opcional.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTabelas\n\t\t\t\t<br/>\n\t\t\t\tTaxas de Aprovação Observadas: Taxa de aprovação, tamanho da amostra e valor de entrada.\n\t\t\t\t<br/>\n\t\t\t\tConfiabilidade Prevista a partir da Entrada: Valores estimados e de CI para a entrada alvo especificada pelo usuário.\n\t\t\t\t<br/>\n\t\t\t\tEntrada Estimada a partir da Meta de Confiabilidade: Valor de entrada correspondente a uma probabilidade alvo, com limites de confiança.\n\t\t\t\t<br/>\n\t\t\t\tResumo do Modelo: Coeficientes, erros padrão, significância e equação do modelo ajustado.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretação\n\t\t\t\t<br/>\n\t\t\t\tA curva S mostra como a probabilidade de passar muda com a entrada.\n\t\t\t\t<br/>\n\t\t\t\tUma curva mais íngreme indica uma relação mais forte entre a medição e o resultado da inspeção.\n\t\t\t\t<br/>\n\t\t\t\tUse a linha de entrada alvo para avaliar se a medição necessária atinge a confiabilidade desejada.\n\t\t\t\t<br/>\n\t\t\t\tSe a curva estiver quase plana, a entrada tem pouca influência preditiva.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

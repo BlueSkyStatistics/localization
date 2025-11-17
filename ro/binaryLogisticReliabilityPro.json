@@ -1,0 +1,30 @@
+{
+  "title": "Regresie Logistică, Predicția Țintei",
+  "navigation": "Regresie Logistică, Predicția Țintei",
+  "input": "Selectați o variabilă (numerică) pentru a desemna valorile de intrare",
+  "passFail": "Selectați o variabilă (categorie), de exemplu, Aprobat/Respins sau o variabilă cu valoarea 0/1",
+  "passValue": "Introduceți valoarea categorială care va fi utilizată ca Aprobat/Bine",
+  "label1": "Selectați dacă să calculați probabilitatea din valoarea de intrare sau valoarea de intrare din probabilitate",
+  "computeProbability": "Calculați probabilitatea (de exemplu, Fiabilitate)",
+  "computeInputValue": "Calculați valoarea de intrare (de exemplu, Optimizați)",
+  "specifyInputValue": "Specificați o valoare țintă de intrare",
+  "specifyProbability": "Specificați o probabilitate țintă (Fiabilitate), de exemplu, 0.9999",
+  "useTargetProAspLBChk": "Estimați intrarea folosind probabilitatea țintă (Fiabilitate) de mai sus ca limită inferioară de încredere",
+  "confidenceLevel": "Nivel de încredere",
+  "overlayObservedDataChk": "Suprapuneți datele observate aprobat/bine/succes ca puncte pe grupul de valori de intrare pe grafic",
+  "overlayObservedDataConnectLineChk": "O linie pentru a conecta punctele observate suprapuse pe grupul de valori de intrare",
+  "drawVerticalRefLineMaxInputValueChk": "Trasați o linie de referință verticală pentru a arăta valoarea minimă și maximă de intrare în datele observate",
+  "printPassRateTableChk": "Imprimați tabelul ratei de aprobat (din datele observate)",
+  "printModelDetailsChkChk": "Imprimați rezumatul modelului logistic de bază",
+  "verticalJustificationOffsetTargetInputValue": "Controlați justificarea verticală a etichetei pentru valoarea țintă de intrare",
+  "verticalJustificationOffsetMaxInputValue": "Controlați justificarea verticală a etichetei pentru valoarea minimă și maximă de intrare",
+  "digits": "Cifre de afișat în tabelele de ieșire",
+  "mainTitle": "Introduceți un titlu pentru grafic",
+  "xlab": "Eticheta axei X",
+  "ylab": "Eticheta axei Y",
+  "help": {
+    "title": "Regresie Logistică, Predicția Țintei",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tRegresie Logistică Binara (Observată vs Ajustată S-Curve)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tScop\n\t\t\t\t<br/>\n\t\t\t\tAceastă analiză modelează și vizualizează relația dintre o intrare numerică (de exemplu, Măsurare) și \n\t\t\t\trăspunsul unei inspecții binare (de exemplu, Aprobat/Respins) folosind regresia logistică. Estimează probabilitatea de aprobat la \n\t\t\t\tnivele diferite de intrare și permite utilizatorilor să exploreze fiabilitatea țintă sau pragurile de intrare. Se potrivește o regresie logistică binară pentru a modela \n\t\t\t\tAprobat/Respins vs. măsurarea de intrare. Afișează o S-curve cu ratele de aprobat observate, curba de probabilitate ajustată și banda de încredere. Permite \n\t\t\t\testimarea fiabilității la o intrare țintă sau intrarea la o fiabilitate țintă.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIntrările Utilizatorului\n\t\t\t\t<br/>\n\t\t\t\tDataset: Selectați datasetul care conține variabilele.\n\t\t\t\t<br/>\n\t\t\t\tIntrare (Variabila X): Măsurare continuă sau variabilă predictor.\n\t\t\t\t<br/>\n\t\t\t\tInspecție (Variabila Y): Rezultatul categorial cu exact două niveluri (de exemplu, Aprobat, Respins).\n\t\t\t\t<br/>\n\t\t\t\tStringul Valoare Aprobat: Valoarea text care reprezintă un Aprobat (de exemplu, \"Aprobat\", “Bine”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tProbabilitate Țintă: Probabilitatea de aprobat (de exemplu, 0.999) pentru a găsi valoarea de intrare corespunzătoare.\n\t\t\t\t<br/>\n\t\t\t\tIntrare Țintă: Valoarea de intrare (de exemplu, 535) pentru a estima probabilitatea sa de fiabilitate.\n\t\t\t\t<br/>\n\t\t\t\tNivel de Încredere: Lățimea intervalului de încredere pentru valorile prezise și inverse-predicte (implicit 0.95).\n\t\t\t\t<br/>\n\t\t\t\tCifre Zecimale: Numărul de cifre de afișat în rezultatele numerice.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIeșiri\n\t\t\t\t<br/>\n\t\t\t\tGrafic: Observat vs Ajustat S-Curve\n\t\t\t\t<br/>\n\t\t\t\tCurba Albastră: Probabilitatea ajustată a regresiei logistice de aprobat.\n\t\t\t\t<br/>\n\t\t\t\tZona Umbrită: Intervalul de încredere pentru curba ajustată.\n\t\t\t\t<br/>\n\t\t\t\tPuncte Negre: Ratele de aprobat observate pe intrare (dimensiunea punctului ∝ numărul de observații).\n\t\t\t\t<br/>\n\t\t\t\tLinia Verde: Valoarea maximă observată în dataset.\n\t\t\t\t<br/>\n\t\t\t\tLinia Roșie: Valoarea țintă de intrare (dacă este specificată) cu eticheta opțională de extrapolare.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTabele\n\t\t\t\t<br/>\n\t\t\t\tRatele de Aprobat Observate: Rata de aprobat, dimensiunea eșantionului și valoarea de intrare.\n\t\t\t\t<br/>\n\t\t\t\tFiabilitate Prezisă din Intrare: Valori estimate și CI pentru intrarea țintă specificată de utilizator.\n\t\t\t\t<br/>\n\t\t\t\tIntrare Estimată din Ținta de Fiabilitate: Valoarea de intrare corespunzătoare unei probabilități țintă, cu limite de încredere.\n\t\t\t\t<br/>\n\t\t\t\tRezumatul Modelului: Coeficienți, erori standard, semnificație și ecuația modelului ajustat.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretare\n\t\t\t\t<br/>\n\t\t\t\tS-curve arată cum se schimbă probabilitatea de aprobat cu intrarea.\n\t\t\t\t<br/>\n\t\t\t\tO curbă mai abruptă indică o relație mai puternică între măsurare și rezultatul inspecției.\n\t\t\t\t<br/>\n\t\t\t\tUtilizați linia de intrare țintă pentru a evalua dacă măsurarea necesară atinge fiabilitatea dorită.\n\t\t\t\t<br/>\n\t\t\t\tDacă curba este aproape plată, intrarea are puțin influență predictivă.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

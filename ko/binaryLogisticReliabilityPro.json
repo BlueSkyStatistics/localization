@@ -1,0 +1,30 @@
+{
+  "title": "로지스틱 회귀, 목표 예측",
+  "navigation": "로지스틱, 목표 예측",
+  "input": "입력 값을 지정할 변수를 선택하세요 (숫자형)",
+  "passFail": "변수를 선택하세요 (범주형), 예: 합격/불합격 또는 0/1 값이 있는 변수",
+  "passValue": "합격/OK로 사용할 범주형 값을 입력하세요",
+  "label1": "입력 값에서 확률을 계산할지 또는 확률에서 입력 값을 계산할지를 선택하세요",
+  "computeProbability": "확률 계산하기 (즉, 신뢰성)",
+  "computeInputValue": "입력 값 계산하기 (즉, 최적화)",
+  "specifyInputValue": "목표 입력 값을 지정하세요",
+  "specifyProbability": "목표 확률 (신뢰성)을 지정하세요, 예: 0.9999",
+  "useTargetProAspLBChk": "위의 목표 확률 (신뢰성)을 하한 신뢰 구간으로 사용하여 입력 추정하기",
+  "confidenceLevel": "신뢰 수준",
+  "overlayObservedDataChk": "관찰된 합격/OK/성공을 입력 값 그룹당 점으로 플롯에 오버레이하기",
+  "overlayObservedDataConnectLineChk": "입력 값 그룹당 오버레이된 점을 연결하는 선",
+  "drawVerticalRefLineMaxInputValueChk": "관찰된 데이터에서 최소 및 최대 입력 값을 보여주기 위해 수직 참조선 그리기",
+  "printPassRateTableChk": "관찰된 데이터에서 합격률 테이블 인쇄하기",
+  "printModelDetailsChkChk": "기본 로지스틱 모델 요약 인쇄하기",
+  "verticalJustificationOffsetTargetInputValue": "목표 입력 값의 레이블 수직 정당성을 제어하기",
+  "verticalJustificationOffsetMaxInputValue": "최소 및 최대 입력 값의 레이블 수직 정당성을 제어하기",
+  "digits": "출력 테이블에 표시할 자리수",
+  "mainTitle": "차트 제목 입력하기",
+  "xlab": "X 축 레이블",
+  "ylab": "Y 축 레이블",
+  "help": {
+    "title": "로지스틱 회귀, 목표 예측",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t이진 로지스틱 회귀 (관찰된 값 대 적합된 S-곡선)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t목적\n\t\t\t\t<br/>\n\t\t\t\t이 분석은 숫자 입력 (예: 측정값)과 \n\t\t\t\t이진 검사 결과 (예: 합격/불합격) 간의 관계를 모델링하고 시각화합니다. 이는 \n\t\t\t\t다양한 입력 수준에서 합격할 확률을 추정하고 사용자가 목표 신뢰성 또는 입력 임계값을 탐색할 수 있도록 합니다. 이진 로지스틱 회귀를 적합하여 \n\t\t\t\t합격/불합격 대 입력 측정을 모델링합니다. 관찰된 합격률, 적합된 확률 곡선 및 신뢰 구간을 포함한 S-곡선을 표시합니다. 이는 \n\t\t\t\t목표 입력에서 신뢰성을 추정하거나 목표 신뢰성에서 입력을 추정할 수 있도록 합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t사용자 입력\n\t\t\t\t<br/>\n\t\t\t\t데이터셋: 변수를 포함하는 데이터셋을 선택하세요.\n\t\t\t\t<br/>\n\t\t\t\t입력 (X 변수): 연속 측정값 또는 예측 변수.\n\t\t\t\t<br/>\n\t\t\t\t검사 (Y 변수): 정확히 두 수준 (예: 합격, 불합격)을 가진 범주형 결과.\n\t\t\t\t<br/>\n\t\t\t\t합격 값 문자열: 합격을 나타내는 텍스트 값 (예: \"합격\", “좋음”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\t목표 확률: 해당 입력 값을 찾기 위한 합격 확률 (예: 0.999).\n\t\t\t\t<br/>\n\t\t\t\t목표 입력: 신뢰성 확률을 추정하기 위한 입력 값 (예: 535).\n\t\t\t\t<br/>\n\t\t\t\t신뢰 수준: 예측 및 역 예측 값에 대한 신뢰 구간 너비 (기본값 0.95).\n\t\t\t\t<br/>\n\t\t\t\t소수 자리수: 숫자 결과에 표시할 자리수.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t출력\n\t\t\t\t<br/>\n\t\t\t\t플롯: 관찰된 값 대 적합된 S-곡선\n\t\t\t\t<br/>\n\t\t\t\t파란 곡선: 합격할 확률의 적합된 로지스틱 회귀.\n\t\t\t\t<br/>\n\t\t\t\t음영 영역: 적합된 곡선에 대한 신뢰 구간.\n\t\t\t\t<br/>\n\t\t\t\t검은 점: 입력당 관찰된 합격률 (점 크기 ∝ 관찰 수).\n\t\t\t\t<br/>\n\t\t\t\t초록 선: 데이터셋에서 최대 관찰된 입력.\n\t\t\t\t<br/>\n\t\t\t\t빨간 선: 목표 입력 (지정된 경우) 및 선택적 외삽 레이블.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t테이블\n\t\t\t\t<br/>\n\t\t\t\t관찰된 합격률: 합격률, 샘플 크기 및 입력 값.\n\t\t\t\t<br/>\n\t\t\t\t입력으로부터 예측된 신뢰성: 사용자 지정 목표 입력에 대한 추정 및 CI 값.\n\t\t\t\t<br/>\n\t\t\t\t신뢰성 목표로부터 추정된 입력: 신뢰 구간과 함께 목표 확률에 해당하는 입력 값.\n\t\t\t\t<br/>\n\t\t\t\t모델 요약: 계수, 표준 오차, 유의성 및 적합된 모델 방정식.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t해석\n\t\t\t\t<br/>\n\t\t\t\tS-곡선은 입력에 따라 합격할 확률이 어떻게 변하는지를 보여줍니다.\n\t\t\t\t<br/>\n\t\t\t\t더 가파른 곡선은 측정값과 검사 결과 간의 관계가 더 강함을 나타냅니다.\n\t\t\t\t<br/>\n\t\t\t\t목표 입력 선을 사용하여 필요한 측정값이 원하는 신뢰성을 달성하는지 평가하세요.\n\t\t\t\t<br/>\n\t\t\t\t곡선이 거의 평평하면 입력이 예측적 영향력이 적습니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

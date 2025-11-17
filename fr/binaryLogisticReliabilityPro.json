@@ -1,0 +1,30 @@
+{
+  "title": "Régression Logistique, Prédiction de Cible",
+  "navigation": "Logistique, Prédiction de Cible",
+  "input": "Sélectionnez une variable (numérique) pour désigner les valeurs d'entrée",
+  "passFail": "Sélectionnez une variable (catégorie), par exemple, Passer/Échouer ou une variable avec une valeur de 0/1",
+  "passValue": "Tapez la valeur catégorique à utiliser comme Pass/OK",
+  "label1": "Sélectionnez si vous souhaitez calculer la probabilité à partir de la valeur d'entrée ou la valeur d'entrée à partir de la probabilité",
+  "computeProbability": "Calculer la probabilité (c'est-à-dire, Fiabilité)",
+  "computeInputValue": "Calculer la valeur d'entrée (c'est-à-dire, Optimiser)",
+  "specifyInputValue": "Spécifiez une valeur d'entrée cible",
+  "specifyProbability": "Spécifiez une probabilité cible (Fiabilité), par exemple, 0.9999",
+  "useTargetProAspLBChk": "Estimer l'entrée en utilisant la probabilité cible ci-dessus (Fiabilité) comme limite de confiance inférieure",
+  "confidenceLevel": "Niveau de confiance",
+  "overlayObservedDataChk": "Superposer les données observées pass/ok/success en tant que points par groupe de valeur d'entrée sur le graphique",
+  "overlayObservedDataConnectLineChk": "Une ligne pour connecter les points observés superposés par groupe de valeur d'entrée",
+  "drawVerticalRefLineMaxInputValueChk": "Tracer une ligne de référence verticale pour montrer la valeur d'entrée minimale et maximale dans les données observées",
+  "printPassRateTableChk": "Imprimer le tableau des taux de réussite (à partir des données observées)",
+  "printModelDetailsChkChk": "Imprimer le résumé du Modèle Logistique sous-jacent",
+  "verticalJustificationOffsetTargetInputValue": "Contrôler la justification verticale de l'étiquette pour la valeur d'entrée cible",
+  "verticalJustificationOffsetMaxInputValue": "Contrôler la justification verticale de l'étiquette pour la valeur d'entrée minimale et maximale",
+  "digits": "Chiffres à afficher dans les tableaux de sortie",
+  "mainTitle": "Entrez un titre de graphique",
+  "xlab": "Étiquette de l'axe X",
+  "ylab": "Étiquette de l'axe Y",
+  "help": {
+    "title": "Régression Logistique, Prédiction de Cible",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tRégression Logistique Binaire (Observé vs Ajusté S-Curve)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tObjectif\n\t\t\t\t<br/>\n\t\t\t\tCette analyse modélise et visualise la relation entre une entrée numérique (par exemple, Mesure) et \n\t\t\t\trésultat d'inspection binaire (par exemple, Passer/Échouer) en utilisant la régression logistique. Elle estime la probabilité de réussite à \n\t\t\t\tdifférents niveaux d'entrée et permet aux utilisateurs d'explorer la fiabilité cible ou les seuils d'entrée. Elle ajuste une régression logistique binaire pour modéliser \n\t\t\t\tPasser/Échouer vs. mesure d'entrée. Elle affiche une courbe en S avec des taux de réussite observés, une courbe de probabilité ajustée et une bande de confiance. Elle permet \n\t\t\t\testimer la fiabilité à une entrée cible ou l'entrée à une fiabilité cible.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEntrées Utilisateur\n\t\t\t\t<br/>\n\t\t\t\tJeu de données : Sélectionnez le jeu de données contenant les variables.\n\t\t\t\t<br/>\n\t\t\t\tEntrée (Variable X) : Mesure continue ou variable prédictive.\n\t\t\t\t<br/>\n\t\t\t\tInspection (Variable Y) : Résultat catégorique avec exactement deux niveaux (par exemple, Passer, Échouer).\n\t\t\t\t<br/>\n\t\t\t\tChaîne de Valeur de Passer : La valeur textuelle qui représente un Passer (par exemple, \"Passer\", “Bon”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tProbabilité Cible : Probabilité de passer (par exemple, 0.999) pour trouver la valeur d'entrée correspondante.\n\t\t\t\t<br/>\n\t\t\t\tEntrée Cible : Valeur d'entrée (par exemple, 535) pour estimer sa probabilité de fiabilité.\n\t\t\t\t<br/>\n\t\t\t\tNiveau de Confiance : Largeur de l'intervalle de confiance pour les valeurs prédites et inversement prédites (par défaut 0.95).\n\t\t\t\t<br/>\n\t\t\t\tChiffres Décimaux : Nombre de chiffres à afficher dans les résultats numériques.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSorties\n\t\t\t\t<br/>\n\t\t\t\tGraphique : Observé vs Ajusté S-Curve\n\t\t\t\t<br/>\n\t\t\t\tCourbe Bleue : Probabilité de passer ajustée par régression logistique.\n\t\t\t\t<br/>\n\t\t\t\tZone Ombree : Intervalle de confiance pour la courbe ajustée.\n\t\t\t\t<br/>\n\t\t\t\tPoints Noirs : Taux de réussite observés par entrée (taille du point ∝ nombre d'observations).\n\t\t\t\t<br/>\n\t\t\t\tLigne Verte : Valeur d'entrée maximale observée dans le jeu de données.\n\t\t\t\t<br/>\n\t\t\t\tLigne Rouge : Entrée cible (si spécifiée) avec étiquette d'extrapolation optionnelle.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTableaux\n\t\t\t\t<br/>\n\t\t\t\tTaux de Réussite Observés : Taux de réussite, taille de l'échantillon et valeur d'entrée.\n\t\t\t\t<br/>\n\t\t\t\tFiabilité Prédite à partir de l'Entrée : Valeurs estimées et CI pour l'entrée cible spécifiée par l'utilisateur.\n\t\t\t\t<br/>\n\t\t\t\tEntrée Estimée à partir de la Cible de Fiabilité : Valeur d'entrée correspondant à une probabilité cible, avec limites de confiance.\n\t\t\t\t<br/>\n\t\t\t\tRésumé du Modèle : Coefficients, erreurs standards, signification et équation du modèle ajusté.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterprétation\n\t\t\t\t<br/>\n\t\t\t\tLa courbe en S montre comment la probabilité de passer change avec l'entrée.\n\t\t\t\t<br/>\n\t\t\t\tUne courbe plus raide indique une relation plus forte entre la mesure et le résultat de l'inspection.\n\t\t\t\t<br/>\n\t\t\t\tUtilisez la ligne d'entrée cible pour évaluer si la mesure requise atteint la fiabilité souhaitée.\n\t\t\t\t<br/>\n\t\t\t\tSi la courbe est presque plate, l'entrée a peu d'influence prédictive.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

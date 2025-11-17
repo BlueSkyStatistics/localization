@@ -1,6 +1,6 @@
 {
-    "title": "Shewhart charts (p, np, c, u)",
-    "navigation": "Shewhart charts (P, NP, C, U)",
+    "title": "Shewhart charts (p, np, c, u) ",
+    "navigation": "Shewhart charts (P, NP, C, U) ",
     "chartTypePChk": "p chart",
     "chartTypeNPChk": "np chart",
     "chartTypeCChk": "c chart",
@@ -15,7 +15,7 @@
     "ocCurvesChk": "Plot operating characteristic curves where applicable (must have equal sample sizes)",
     "rowsTobeUsed": "Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedAsNewData": "New Data - grouped Rows to be used as New Data to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12) - new data to plot but not included in the computations",
-    "additionalPhasesLabel": "Specify data to Chart additional phases (limited to max of 10 phases to be practical to plot on a single chart)",
+    "additionalPhasesLabel": "Specify data to Chart additional phases. You can use 'Grouped Rows' field above as Phase 1 data. Limited to max of 10 phases to be practical to plot on a single chart.",
     "rowsTobeUsedPhase2": "Phase 2 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase3": "Phase 3 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase4": "Phase 4 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
@@ -56,6 +56,9 @@
     "x_title": "X axis label",
     "y_title": "Y axis label",
     "supressSampleSizeInfoChk": "Supress sample size info in the chart title",
+    "plotPhases": "Plot phases",
+    "plotTests": "Tests for special causes",
+    "addRefLines": "Add Reference Lines",
     "help": {
         "title": "Shewhart charts (p, np, c, u)",
         "r_help": "help(qcc, package = qcc)",

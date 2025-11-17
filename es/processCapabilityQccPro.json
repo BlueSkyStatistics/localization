@@ -1,7 +1,8 @@
 {
-  "title": "Capacidad del Proceso (Sixpack)",
-  "navigation": "Capacidad del Proceso (Sixpack)",
+  "title": "Capacidad del Proceso (Sixpack) ",
+  "navigation": "Capacidad del Proceso (Sixpack) ",
   "summarySixpackPlotChk": "Sixpack (gráficos I-MR, Xbar, R, S subyacentes, Probabilidad y gráficos de Capacidad)",
+  "flipaxisPPplotChk": "Invertir el eje para el gráfico P-P",
   "displaySLlineonPlotChk": "Mostrar líneas LSL y USL en los gráficos subyacentes",
   "numOfLastSubgroupsPlot": "Número de los últimos subgrupos a graficar",
   "printObjectSummaryChk": "Imprimir resumen del objeto QCC para la capacidad del proceso",
@@ -11,11 +12,11 @@
   "variableSelcted": "Seleccionar una variable (datos observados) para analizar",
   "groupingVariable": "Variable de agrupamiento (opcional - si los datos necesitan ser agrupados)",
   "sampleSize": "El tamaño de la muestra será ignorado si se selecciona una variable de agrupamiento arriba",
-  "variableControlLimits": "Filas de datos a descartar, si las hay, antes de agrupar para límites de control de variable (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
+  "variableControlLimits": "Filas de datos que se descartarán, si las hay, antes de agrupar para límites de control de variable (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "displayGroupsChk": "Mostrar las agrupaciones en la cuadrícula de la interfaz de usuario del conjunto de datos solo para referencia",
-  "selectDatasetRad": "Opción 2: Seleccionar las variables del Conjunto de Datos si ya están agrupadas",
+  "selectDatasetRad": "Opción 2: Seleccionar las variables del conjunto de datos si ya están agrupadas",
   "variablelistSelcted": "Seleccionar una o más variables agrupadas (datos observados) para analizar",
-  "rowsTobeUsed": "Si se seleccionan filas (agrupadas) que se utilizarán para analizar la capacidad del proceso (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
+  "rowsTobeUsed": "Si se seleccionan filas (agrupadas) para ser utilizadas para analizar la capacidad del proceso (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "nsigmas": "Sigma - número de sigmas a utilizar para calcular límites de control",
   "confidence_level": "Un valor numérico entre 0 y 1 que especifica el nivel a utilizar para calcular intervalos de confianza",
   "stddev": "Método de desviación estándar para variación dentro del subgrupo",
@@ -23,15 +24,16 @@
   "stddevS": "Método de desviación estándar para gráfico S (para tamaño de grupo > 8)",
   "stddevXbarOne": "Método de desviación estándar para calcular I-MR",
   "DoNotUseUnbiasingConstantChk": "No utilizar constante de des-biasing para estimar la desviación estándar para índices de capacidad del proceso en general",
-  "lower": "LSL - valor numérico del límite de especificación inferior (escriba NA para especificar límites de especificación unilaterales)",
-  "upper": "USL - valor numérico del límite de especificación superior (escriba NA para especificar límites de especificación unilaterales)",
+  "lower": "LSL - valor numérico del límite de especificación inferior (escriba NA para especificar límites de especificación unidimensionales)",
+  "upper": "USL - valor numérico del límite de especificación superior (escriba NA para especificar límites de especificación unidimensionales)",
   "target": "Objetivo - un valor opcional que especifica el objetivo del proceso",
   "addlSpecLines": "Agregar líneas de especificación adicionales en el gráfico (separadas por comas, por ejemplo, 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Etiqueta para las líneas de especificación adicionales (separadas por comas, por ejemplo, Especificación 1, Especificación 2, Especificación 3)",
+  "addRefLines": "Agregar Líneas de Referencia",
   "digits": "Dígitos - número de dígitos a mostrar",
   "help": {
     "title": "Capacidad del Proceso (paquete qcc)",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para calcular índices de capacidad \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), y help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija la opción 1, diámetro a variable (observada..), muestra a Variable de Agrupamiento, \n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en filas agrupadas a utilizar\n\t\t\t\t<br/>\n\t\t\t\tPara el análisis de capacidad del proceso - escriba 73.95 en LSL, 74.05 en USL, y 74.0 en Límite Objetivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMétodos de Desviación Estándar:\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-R\"\n\t\t\t\t<br/>\n\t\t\t\tPromedio No Ponderado de estimaciones de subgrupos basado en Rangos de subgrupos\n\t\t\t\t<br/>\n\t\t\t\tEl tamaño máximo de muestra soportado es 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tPromedio No Ponderado de estimaciones de subgrupos basado en Desviaciones Estándar de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-R\"\n\t\t\t\t<br/>\n\t\t\t\tEstimador Lineal No Sesgado de Varianza Mínima calculado como un promedio ponderado de estimaciones de subgrupos basado en Rangos de subgrupos\n\t\t\t\t<br/>\n\t\t\t\tEl tamaño máximo de muestra soportado es 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tEstimador Lineal No Sesgado de Varianza Mínima calculado como un promedio ponderado de estimaciones de subgrupos basado en Desviaciones Estándar de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"RMSDF\"\n\t\t\t\t<br/>\n\t\t\t\tEstimador de Raíz-Cuadrada de la Media calculado como un promedio ponderado de estimaciones de subgrupos basado en Desviaciones Estándar de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMapeo de términos:\n\t\t\t\t<br/>\n\t\t\t\tPromedio de SDs No Sesgados → UWAVE-SD\n\t\t\t\t<br/>\n\t\t\t\tPromedio de Rangos → UWAVE-R\n\t\t\t\t<br/>\n\t\t\t\tSD Pooled No Sesgado → RMSDF\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función qcc calcula índices de capacidad \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), y help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija la opción 1, diámetro a variable (observada..), muestra a Variable de Agrupamiento, \n\t\t\t\t<br/>\n\t\t\t\tEscriba 1:25 en Filas agrupadas a utilizar\n\t\t\t\t<br/>\n\t\t\t\tPara el análisis de capacidad del proceso - escriba 73.95 en LSL, 74.05 en USL, y 74.0 en Límite Objetivo\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMétodos de Desviación Estándar:\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-R\"\n\t\t\t\t<br/>\n\t\t\t\tPromedio No Ponderado de estimaciones de subgrupos basado en Rangos de subgrupos\n\t\t\t\t<br/>\n\t\t\t\tEl tamaño máximo de muestra soportado es 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tPromedio No Ponderado de estimaciones de subgrupos basado en Desviaciones Estándar de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-R\"\n\t\t\t\t<br/>\n\t\t\t\tEstimador Lineal No Sesgado de Varianza Mínima calculado como un promedio ponderado de estimaciones de subgrupos basado en Rangos de subgrupos\n\t\t\t\t<br/>\n\t\t\t\tEl tamaño máximo de muestra soportado es 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tEstimador Lineal No Sesgado de Varianza Mínima calculado como un promedio ponderado de estimaciones de subgrupos basado en Desviaciones Estándar de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"RMSDF\"\n\t\t\t\t<br/>\n\t\t\t\tEstimador de Raíz-Cuadrada de la Media calculado como un promedio ponderado de estimaciones de subgrupos basado en Desviaciones Estándar de subgrupos\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMapeo de términos:\n\t\t\t\t<br/>\n\t\t\t\tPromedio de SDs No Sesgados → UWAVE-SD\n\t\t\t\t<br/>\n\t\t\t\tPromedio de Rangos → UWAVE-R\n\t\t\t\t<br/>\n\t\t\t\tSD Pooled No Sesgado → RMSDF\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

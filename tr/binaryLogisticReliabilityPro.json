@@ -1,0 +1,30 @@
+{
+  "title": "Lojistik Regresyon, Hedef Tahmini",
+  "navigation": "Lojistik, Hedef Tahmini",
+  "input": "Girdi değerlerini belirlemek için bir değişken (sayısal) seçin",
+  "passFail": "Bir değişken (kategori) seçin, örneğin, Geçti/Kaldı veya 0/1 değeri olan bir değişken",
+  "passValue": "Geçti/OK olarak kullanılacak kategorik değeri yazın",
+  "label1": "Girdi değerinden olasılık mı yoksa olasılıktan girdi değeri mi hesaplanacağını seçin",
+  "computeProbability": "Olasılığı hesapla (yani, Güvenilirlik)",
+  "computeInputValue": "Girdi değerini hesapla (yani, Optimize et)",
+  "specifyInputValue": "Hedef girdi değerini belirtin",
+  "specifyProbability": "Hedef olasılığı belirtin (Güvenilirlik), örneğin, 0.9999",
+  "useTargetProAspLBChk": "Yukarıdaki hedef olasılığı (Güvenilirlik) alt güven aralığı olarak kullanarak Girdiyi tahmin et",
+  "confidenceLevel": "Güven düzeyi",
+  "overlayObservedDataChk": "Gözlemlenen geçme/ok/başarıyı girdi değeri grubuna göre noktalar olarak grafiğe ekleyin",
+  "overlayObservedDataConnectLineChk": "Girdi değeri grubuna göre gözlemlenen noktaları bağlamak için bir çizgi",
+  "drawVerticalRefLineMaxInputValueChk": "Gözlemlenen verilerdeki min ve max girdi değerini göstermek için dikey bir referans çizgisi çizin",
+  "printPassRateTableChk": "Geçme oranı (gözlemlenen verilerden) tablosunu yazdır",
+  "printModelDetailsChkChk": "Temel Lojistik Model özetini yazdır",
+  "verticalJustificationOffsetTargetInputValue": "Hedef girdi değeri için etiketin dikey konumlandırmasını kontrol et",
+  "verticalJustificationOffsetMaxInputValue": "Min ve max girdi değeri için etiketin dikey konumlandırmasını kontrol et",
+  "digits": "Çıktı tablolarında görüntülenecek basamak sayısı",
+  "mainTitle": "Bir grafik başlığı girin",
+  "xlab": "X ekseni etiketi",
+  "ylab": "Y ekseni etiketi",
+  "help": {
+    "title": "Lojistik Regresyon, Hedef Tahmini",
+    "r_help": "help(glm, package = stats)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tİkili Lojistik Regresyon (Gözlemlenen vs Uygun S-Eğrisi)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAmaç\n\t\t\t\t<br/>\n\t\t\t\tBu analiz, sayısal bir girdi (örneğin, Ölçüm) ile \n\t\t\t\tikili bir denetim sonucu (örneğin, Geçti/Kaldı) arasındaki ilişkiyi lojistik regresyon kullanarak modellemekte ve görselleştirmektedir. Farklı girdi seviyelerinde geçme olasılığını tahmin eder ve kullanıcıların hedef güvenilirlik veya girdi eşiklerini keşfetmesine olanak tanır. Geçti/Kaldı ile girdi ölçümü arasındaki ilişkiyi modellemek için bir ikili lojistik regresyon uygular. Gözlemlenen geçme oranları, uygun olasılık eğrisi ve güven aralığı ile bir S-eğrisi gösterir. Hedef bir girdi veya hedef bir güvenilirlikte güvenilirliği tahmin etmeye olanak tanır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tKullanıcı Girdileri\n\t\t\t\t<br/>\n\t\t\t\tVeri Seti: Değişkenleri içeren veri setini seçin.\n\t\t\t\t<br/>\n\t\t\t\tGirdi (X Değişkeni): Sürekli ölçüm veya tahmin değişkeni.\n\t\t\t\t<br/>\n\t\t\t\tDenetim (Y Değişkeni): Tam olarak iki seviyeye sahip kategorik sonuç (örneğin, Geçti, Kaldı).\n\t\t\t\t<br/>\n\t\t\t\tGeçme Değeri Metni: Geçtiyi temsil eden metin değeri (örneğin, \"Geçti\", “İyi”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tHedef Olasılık: İlgili girdi değerini bulmak için geçme olasılığı (örneğin, 0.999).\n\t\t\t\t<br/>\n\t\t\t\tHedef Girdi: Güvenilirlik olasılığını tahmin etmek için girdi değeri (örneğin, 535).\n\t\t\t\t<br/>\n\t\t\t\tGüven Düzeyi: Tahmin edilen ve ters-tahmin edilen değerler için güven aralığı genişliği (varsayılan 0.95).\n\t\t\t\t<br/>\n\t\t\t\tOndalık Basamaklar: Sayısal sonuçlarda görüntülenecek basamak sayısı.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÇıktılar\n\t\t\t\t<br/>\n\t\t\t\tGrafik: Gözlemlenen vs Uygun S-Eğrisi\n\t\t\t\t<br/>\n\t\t\t\tMavi Eğri: Uygun lojistik regresyon geçme olasılığı.\n\t\t\t\t<br/>\n\t\t\t\tGölgelik Alan: Uygun eğri için güven aralığı.\n\t\t\t\t<br/>\n\t\t\t\tSiyah Noktalar: Girdi başına gözlemlenen geçme oranları (nokta boyutu ∝ gözlem sayısı).\n\t\t\t\t<br/>\n\t\t\t\tYeşil Çizgi: Veri setindeki maksimum gözlemlenen girdi.\n\t\t\t\t<br/>\n\t\t\t\tKırmızı Çizgi: Hedef girdi (belirtilmişse) ile isteğe bağlı dışarıya çıkarma etiketi.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTablolar\n\t\t\t\t<br/>\n\t\t\t\tGözlemlenen Geçme Oranları: Geçme oranı, örnek boyutu ve girdi değeri.\n\t\t\t\t<br/>\n\t\t\t\tGirdiden Tahmin Edilen Güvenilirlik: Kullanıcı tarafından belirtilen hedef girdi için tahmin edilen ve CI değerleri.\n\t\t\t\t<br/>\n\t\t\t\tGüvenilirlik Hedefinden Girdi Tahmini: Hedef olasılığa karşılık gelen girdi değeri, güven sınırları ile.\n\t\t\t\t<br/>\n\t\t\t\tModel Özeti: Katsayılar, standart hatalar, anlamlılık ve uygun model denklemi.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYorumlama\n\t\t\t\t<br/>\n\t\t\t\tS-eğrisi, geçme olasılığının girdi ile nasıl değiştiğini gösterir.\n\t\t\t\t<br/>\n\t\t\t\tDaha dik bir eğri, ölçüm ile denetim sonucu arasındaki daha güçlü bir ilişkiyi gösterir.\n\t\t\t\t<br/>\n\t\t\t\tGerekli ölçümün istenen güvenilirliği elde edip etmediğini değerlendirmek için hedef girdi çizgisini kullanın.\n\t\t\t\t<br/>\n\t\t\t\tEğri neredeyse düzse, girdi çok az tahmin edici etkiye sahiptir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

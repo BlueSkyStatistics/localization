@@ -1,28 +1,28 @@
 {
   "title": "Pareto Grafiği",
   "navigation": "Pareto Grafiği",
-  "label1": "Üç seçenek - Uzun format (varsayılan) yani hatalar ve sayılar dikey sütunlarda, Geniş format yani hatalar sütun adları olarak ve sayılar satır olarak, ve Ham veriden sayıları hesapla",
+  "label1": "Üç seçenek - Uzun format (varsayılan) yani hatalar ve sayılar dikey sütunlarda, Geniş format yani hatalar sütun adları olarak ve sayılar satır olarak, ve Ham verilerden sayıları hesapla",
   "selectLongRad": "Seçenek 1: Uzun format - hata kategorisini ve hata sayılarını seçin",
   "selectWideRad": "Seçenek 2: Geniş format - Sütun adları hata kategorisi olarak kullanılacak ve 1. satır (varsayılan) sayılar olarak kullanılacak",
-  "selectRawRad": "Seçenek 3: Ham veri - pareto grafiği çizmek için sayıları hesapla",
+  "selectRawRad": "Seçenek 3: Ham veriler - pareto grafiği çizmek için sayıları hesapla",
   "rownumForCounts": "Sayılara kullanılacak satır numarası (varsayılan 1. satır)",
-  "defects": "Grafikte gösterilecek değişken (örneğin kategoriler)",
-  "counts": "(Opsiyonel) Grafikte sayılar olarak kullanılacak değişken",
+  "defects": "Grafikte gösterilecek değişken (örneğin, kategoriler)",
+  "counts": "(Opsiyonel) Grafikte kullanılacak sayılar için değişken",
   "grouping": "(Opsiyonel) Birden fazla Pareto grafiğini yan yana çizmek için gruplama değişkeni",
-  "uniformBarOrderChk": "Çubukları aynı alfabetik sırada çiz. Her grupta azalan sıklığa göre çubukları sıralamak için işareti kaldırın",
+  "uniformBarOrderChk": "Çubukları aynı alfabetik sırada çiz. Her grup içinde azalan sıklığa göre çubukları sıralamak için işareti kaldırın",
   "grouping2": "(Opsiyonel) Birden fazla Pareto'yu yan yana çizmek için bir gruplama değişkeni",
-  "rawVariable": "Ham veriye sahip değişken (örneğin kategoriler)",
+  "rawVariable": "Ham verilerle değişken (örneğin, kategoriler)",
   "mainTitle": "Bir grafik başlığı girin",
   "xlab": "X ekseni etiketi",
   "ylab": "Y ekseni etiketi",
   "ylab2": "Sağ Y eksenindeki Y ekseni etiketi",
   "RefCumFreqLine": "Belirtilen kümülatif % için yatay bir referans çizgisi çizin (örneğin, %80 için 80 yazın) - çizgi olmaması için boş bırakın",
   "legends": "Efsaneleri göster ve eğer öyleyse, efsanelerin konumu (varsayılan sağdır)",
-  "percentStep": "Sağ taraftaki ikinci y ekseni için işaretler olarak kullanılacak yüzde adımı",
-  "digits": "İstatistik tablosu için ondalık basamak sayısı",
+  "percentStep": "Sağ taraftaki ikinci y ekseni için tik işaretleri olarak kullanılacak yüzde adımı",
+  "digits": "İstatistik tablosu için ondalık nokta sayısı",
   "help": {
     "title": "Pareto Grafiği",
     "r_help": "help(pareto.chart, package = qcc)",
-    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tpareto.chart fonksiyonu istatistikler tablosu oluşturmak ve bir Pareto grafiği çizmek için kullanılır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(pareto.chart, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için defects_frequency_pareto_chart.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsünden veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tpareto.chart fonksiyonu istatistikler tablosu oluşturmak ve Pareto grafiği çizmek için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(pareto.chart, package = qcc) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için defects_frequency_pareto_chart.xlsx adlı örnek veri seti dosyasını kullanabilirsiniz. Dosyayı dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

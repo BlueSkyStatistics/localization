@@ -1,15 +1,15 @@
 {
-  "title": "線形モデルによる実験計画分析",
-  "navigation": "設計分析 - 線形モデル",
+  "title": "線形モデルによる実験デザイン分析",
+  "navigation": "デザイン分析 - 線形モデル",
   "modelname": "モデル名を入力",
   "dependent": "応答（従属）変数",
   "independent": "独立変数",
-  "nointercept": "切片を無視する（チェックした場合、2水準因子設計の特定のオプションはチェックしないでください）",
-  "degree": "次数（空白のままにするか、主効果と2因子相互作用を持つ線形モデルのために2を入力）",
-  "effectsplot": "すべての効果プロット（次数が指定されていない場合にのみ生成されます）",
-  "generateplotchk": "残差対フィッティング、正規Q-Q、スケール-ロケーション、残差対レバレッジのプロット",
-  "weights": "重み付きの変数を指定",
-  "twoLevelDesignTypeChk": "次のオプションは2水準因子設計（例：pb、FrF2など）のみに適用されます - 上記の切片を無視するオプションがチェックされている場合は、これをチェックしないでください",
+  "nointercept": "切片を無視する（チェックした場合、2レベル因子デザインの特定のオプションはチェックしないでください）",
+  "degree": "次数（主効果の場合は空白のままにし、それ以外の場合は2次の相互作用には2、3次の相互作用には3などを入力）",
+  "effectsplot": "すべての効果プロット（次数が指定されていない場合のみ生成されます）",
+  "generateplotchk": "残差とフィッティング、正規Q-Q、スケール-ロケーション、残差とレバレッジのプロット",
+  "weights": "重みを持つ変数を指定",
+  "twoLevelDesignTypeChk": "以下のオプションは2レベル因子デザイン（例：pb、FrF2など）にのみ適用されます - また、上記の切片を無視するオプションがチェックされている場合はチェックしないでください",
   "AliasChk": "エイリアスを決定",
   "AliasCodedChk": "コーディングされたエイリアス",
   "DanielplotChk": "ダニエルプロット（効果のプロット）",
@@ -19,12 +19,12 @@
   "MEPlotChk": "MEPlot（主効果プロット）",
   "IAPlotChk": "IAPlot（相互作用プロット）",
   "IAPlotShowAliasChk": "プロットにエイリアスを表示",
-  "cubePlotChk": "モデル化された平均を持つ三因子相互作用のキューブプロット",
+  "cubePlotChk": "モデル化された平均を持つ三因子相互作用の立方体プロット",
   "cubePlotModelMeanChk": "モデル化された平均と非モデル化された平均の両方をプロット",
-  "cubePlotIndependent": "キューブプロットのために3つの独立変数を選択",
+  "cubePlotIndependent": "立方体プロットのために3つの独立変数を選択",
   "help": {
-    "title": "線形モデルによる実験計画分析",
+    "title": "線形モデルによる実験デザイン分析",
     "r_help": "help(lm, package = 'stats')",
-    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t実験から記録/収集された応答（結果）を分析するための線形回帰モデルを構築します。内部的にstatsパッケージのlm関数を呼び出します。モデルの要約、係数テーブル、Anovaテーブル、平方和テーブルを表示し、残差対フィッティング、正規Q-Q、理論的分位数、残差対レバレッジをプロットします。オプションで重み付きの変数を指定し、切片を無視することを選択できます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細については、次のRヘルプを参照してください\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>使用法</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#モデルの要約<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Anovaテーブルを表示<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#残差対フィッティング、正規Q-Q、スケール-ロケーション、残差対レバレッジをプロット<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t実験から記録/収集された応答（結果）を分析するための線形回帰モデルを構築します。内部的にstatsパッケージのlm関数を呼び出します。モデルの要約、係数テーブル、Anovaテーブル、平方和テーブルを表示し、残差とフィッティング、正規Q-Q、理論的分位数、残差とレバレッジのプロットを行います。オプションで重みを持つ変数を指定し、切片を無視することを選択できます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細については、以下のRヘルプを参照してください\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>使用法</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#モデルの要約<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Anovaテーブルの表示<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#残差とフィッティング、正規Q-Q、スケール-ロケーション、残差とレバレッジのプロット<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
   }
 }

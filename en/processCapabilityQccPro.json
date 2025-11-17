@@ -1,7 +1,8 @@
 {
-    "title": "Process Capability (Sixpack)",
-    "navigation": "Process Capability (Sixpack)",
+    "title": "Process Capability (Sixpack) ",
+    "navigation": "Process Capability (Sixpack) ",
     "summarySixpackPlotChk": "Sixpack (underlying I-MR, Xbar, R, S charts, Probability, and Capability plots)",
+    "flipaxisPPplotChk": "Flip axis for the P-P plot",
     "displaySLlineonPlotChk": "Display LSL and USL lines on the underlying plots",
     "numOfLastSubgroupsPlot": "Number of last subgroups to be plotted",
     "printObjectSummaryChk": "Print QCC object summary for the process capability",
@@ -28,6 +29,7 @@
     "target": "Target - an optional value specifying the target of the process",
     "addlSpecLines": "Add additional Spec lines on the plot (comma separated e.g. 73.98, 74.01, 74.03)",
     "addlSpecLinesLabel": "Label for the additional Spec lines (comma separated e.g. Spec 1, Spec 2, Spec 3)",
+    "addRefLines": "Add Reference Lines",
     "digits": "Digits - number of digits to display",
     "help": {
         "title": "Process Capability (qcc pkg)",

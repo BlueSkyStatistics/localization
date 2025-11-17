@@ -5,7 +5,7 @@
   "selectLongRad": "Opción 1: Formato largo - elija la categoría de defectos y los conteos de defectos",
   "selectWideRad": "Opción 2: Formato ancho - Los nombres de las columnas se utilizarán como categoría de defectos y la 1ª fila (predeterminada) se utilizará como conteos",
   "selectRawRad": "Opción 3: Datos crudos - calcular conteos para trazar el gráfico de Pareto",
-  "rownumForCounts": "Número de fila (predeterminada 1ª fila) que se utilizará para los conteos",
+  "rownumForCounts": "Número de fila (predeterminado 1ª fila) que se utilizará para los conteos",
   "defects": "Variable (por ejemplo, categorías) para trazar",
   "counts": "(Opcional) Variable a utilizar como conteos para trazar",
   "grouping": "(Opcional) Variable de agrupamiento para trazar múltiples gráficos de Pareto uno al lado del otro",
@@ -17,12 +17,12 @@
   "ylab": "Etiqueta del eje Y",
   "ylab2": "Etiqueta del eje Y en el eje Y derecho",
   "RefCumFreqLine": "Dibujar una línea de referencia horizontal para un % acumulativo especificado (por ejemplo, escriba 80 para 80%) - deje en blanco para no dibujar línea",
-  "legends": "Mostrar leyendas y, si es así, posición de las leyendas (el predeterminado es a la derecha)",
-  "percentStep": "Paso porcentual a utilizar como marcas de verificación para el segundo eje y en el lado derecho",
+  "legends": "Mostrar leyendas y, de ser así, posición de las leyendas (el predeterminado es a la derecha)",
+  "percentStep": "Paso de porcentaje que se utilizará como marcas de tick para el segundo eje y en el lado derecho",
   "digits": "Número de puntos decimales para la tabla de estadísticas",
   "help": {
     "title": "Gráfico de Pareto",
     "r_help": "help(pareto.chart, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tfunción pareto.chart para crear una tabla de estadísticas y trazar un gráfico de Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado defects_frequency_pareto_chart.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tfunción pareto.chart para crear una tabla de estadísticas y trazar un gráfico de Pareto\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado defects_frequency_pareto_chart.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

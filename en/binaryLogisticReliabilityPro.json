@@ -1,0 +1,30 @@
+{
+    "title": "Logistic Regression, Target Prediction",
+    "navigation": "Logistic, Target Prediction",
+    "input": "Select a variable (numeric) to designate input values",
+    "passFail": "Select a variable (category), e.g., Pass/Fail or a variable with 0/1 value",
+    "passValue": "Type in the categorical value to be used as Pass/OK",
+    "label1": "Select whether to compute probability from input value or input value from probability",
+    "computeProbability": "Compute probability (i.e., Reliability)",
+    "computeInputValue": "Compute input value (i.e., Optimize)",
+    "specifyInputValue": "Specify a target input value",
+    "specifyProbability": "Specify a target probability (Reliability), e.g., 0.9999",
+    "useTargetProAspLBChk": "Estimate Input using the above target probability (Reliability) as lower confidence bound",
+    "confidenceLevel": "Confidence level",
+    "overlayObservedDataChk": "Overlay observed pass/ok/success as points per input value group on the plot",
+    "overlayObservedDataConnectLineChk": "A line to connect the verlay observed points per input value group",
+    "drawVerticalRefLineMaxInputValueChk": "Draw a vertical reference line to show the min and max input value in the observed data",
+    "printPassRateTableChk": "Print the pass rate (from the observed data) table",
+    "printModelDetailsChkChk": "Print the underlying Logistic Model summary",
+    "verticalJustificationOffsetTargetInputValue": "Control the vertical justification of the label for target input value",
+    "verticalJustificationOffsetMaxInputValue": "Control the vertical justification of the label for min and max input value",
+    "digits": "Digits to display in the output tables",
+    "mainTitle": "Enter a chart title",
+    "xlab": "X axis label",
+    "ylab": "Y axis label",
+    "help": {
+        "title": "Logistic Regression, Target Prediction",
+        "r_help": "help(glm, package = stats)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tBinary Logistic Regression (Observed vs Fitted S-Curve)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPurpose\n\t\t\t\t<br/>\n\t\t\t\tThis analysis models and visualizes the relationship between a numeric input (e.g., Measurement) and \n\t\t\t\ta binary inspection result (e.g., Pass/Fail) using logistic regression. It estimates the probability of passing at \n\t\t\t\tdifferent input levels and allows users to explore target reliability or input thresholds.It fits a binary logistic regression to model \n\t\t\t\tPass/Fail vs. input measurement. It displays an S-curve with observed pass rates, fitted probability curve, and confidence band. It allows \n\t\t\t\testimating reliability at a target input or input at a target reliability.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUser Inputs\n\t\t\t\t<br/>\n\t\t\t\tDataset: Select the dataset containing the variables.\n\t\t\t\t<br/>\n\t\t\t\tInput (X Variable): Continuous measurement or predictor variable.\n\t\t\t\t<br/>\n\t\t\t\tInspection (Y Variable): Categorical outcome with exactly two levels (e.g., Pass, Fail).\n\t\t\t\t<br/>\n\t\t\t\tPass Value String: The text value that represents a Pass (e.g., \"Pass\", “Good”, \"OK\").\n\t\t\t\t<br/>\n\t\t\t\tTarget Probability: Probability of passing (e.g., 0.999) to find the corresponding input value.\n\t\t\t\t<br/>\n\t\t\t\tTarget Input: Input value (e.g., 535) to estimate its reliability probability.\n\t\t\t\t<br/>\n\t\t\t\tConfidence Level: Confidence interval width for predicted and inverse-predicted values (default 0.95).\n\t\t\t\t<br/>\n\t\t\t\tDecimal Digits: Number of digits to display in numeric results.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOutputs\n\t\t\t\t<br/>\n\t\t\t\tPlot: Observed vs Fitted S-Curve\n\t\t\t\t<br/>\n\t\t\t\tBlue Curve: Fitted logistic regression probability of passing.\n\t\t\t\t<br/>\n\t\t\t\tShaded Area: Confidence interval for the fitted curve.\n\t\t\t\t<br/>\n\t\t\t\tBlack Dots: Observed pass rates per input (dot size ∝ number of observations).\n\t\t\t\t<br/>\n\t\t\t\tGreen Line: Maximum observed input in the dataset.\n\t\t\t\t<br/>\n\t\t\t\tRed Line: Target input (if specified) with optional extrapolation label.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTables\n\t\t\t\t<br/>\n\t\t\t\tObserved Pass Rates: Pass rate, sample size, and input value.\n\t\t\t\t<br/>\n\t\t\t\tPredicted Reliability from Input: Estimated and CI values for user-specified target input.\n\t\t\t\t<br/>\n\t\t\t\tEstimated Input from Reliability Target: Input value corresponding to a target probability, with confidence limits.\n\t\t\t\t<br/>\n\t\t\t\tModel Summary: Coefficients, standard errors, significance, and fitted model equation.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretation\n\t\t\t\t<br/>\n\t\t\t\tThe S-curve shows how the probability of passing changes with input.\n\t\t\t\t<br/>\n\t\t\t\tA steeper curve indicates a stronger relationship between measurement and inspection outcome.\n\t\t\t\t<br/>\n\t\t\t\tUse the target input line to assess if the required measurement achieves the desired reliability.\n\t\t\t\t<br/>\n\t\t\t\tIf the curve is nearly flat, the input has little predictive influence.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

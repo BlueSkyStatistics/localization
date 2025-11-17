@@ -1,28 +1,28 @@
 {
   "title": "帕累托图",
   "navigation": "帕累托图",
-  "label1": "三种选项 - 长格式（默认）即缺陷和计数在垂直列中，宽格式即缺陷作为列名和计数作为行，以及从原始数据计算计数",
+  "label1": "三个选项 - 长格式（默认）即缺陷和计数在垂直列中，宽格式即缺陷作为列名和计数作为行，以及从原始数据计算计数",
   "selectLongRad": "选项 1：长格式 - 选择缺陷类别和缺陷计数",
   "selectWideRad": "选项 2：宽格式 - 列名将用作缺陷类别，第一行（默认）将用作计数",
   "selectRawRad": "选项 3：原始数据 - 计算计数以绘制帕累托图",
-  "rownumForCounts": "用于计数的行号（默认第1行）",
+  "rownumForCounts": "用于计数的行号（默认第 1 行）",
   "defects": "要绘制的变量（例如类别）",
-  "counts": "(可选) 用作计数的变量以绘制",
-  "grouping": "(可选) 分组变量以并排绘制多个帕累托图",
-  "uniformBarOrderChk": "以相同的字母顺序绘制条形图（跨组）。 取消选中以根据频率降序排列条形图（在每组内）",
-  "grouping2": "(可选) 一个分组变量以并排绘制多个帕累托图",
-  "rawVariable": "带有原始数据的变量（例如类别）",
+  "counts": "（可选）用于绘制的计数变量",
+  "grouping": "（可选）分组变量以并排绘制多个帕累托图",
+  "uniformBarOrderChk": "以相同的字母顺序绘制条形图（跨组）。 取消选中以根据频率降序排列条形图（在每个组内）",
+  "grouping2": "（可选）用于并排绘制多个帕累托图的分组变量",
+  "rawVariable": "具有原始数据的变量（例如类别）",
   "mainTitle": "输入图表标题",
   "xlab": "X 轴标签",
   "ylab": "Y 轴标签",
-  "ylab2": "右侧 Y 轴上的 Y 轴标签",
-  "RefCumFreqLine": "为指定的累积百分比绘制水平参考线（例如，输入 80 表示 80%） - 留空表示不绘制线",
+  "ylab2": "右侧 Y 轴的 Y 轴标签",
+  "RefCumFreqLine": "为指定的累积 % 绘制水平参考线（例如，输入 80 表示 80%） - 留空表示不绘制线",
   "legends": "显示图例，如果显示，图例的位置（默认在右侧）",
   "percentStep": "用于右侧第二个 y 轴的刻度标记的百分比步长",
   "digits": "统计表的小数点位数",
   "help": {
     "title": "帕累托图",
     "r_help": "help(pareto.chart, package = qcc)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tpareto.chart 函数用于创建统计表并绘制帕累托图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为 defects_frequency_pareto_chart.xlsx 的示例数据集文件。 使用文件打开菜单在数据网格中打开该文件\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tpareto.chart 函数用于创建统计表并绘制帕累托图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关详细帮助 - 使用 R help(pareto.chart, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要尝试此操作，您可以使用名为 defects_frequency_pareto_chart.xlsx 的示例数据集文件。 在文件打开菜单中打开数据网格中的文件\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

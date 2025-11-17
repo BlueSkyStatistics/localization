@@ -4,13 +4,13 @@
   "label1": "選擇測試",
   "bartlett": "巴特利特檢驗",
   "levene": "萊文檢驗",
-  "fligner": "弗萊格納–基林檢驗",
+  "fligner": "弗利格納–基林檢驗",
   "normal_distribution": "基於正態分佈的檢驗",
   "pairwiseLeveneTest": "成對萊文檢驗",
   "label2": "數據格式",
   "wide": "寬格式",
   "long": "長格式",
-  "label3": "信心水準",
+  "label3": "置信水平",
   "label4": "替代假設",
   "alt1": "雙側",
   "alt2": "大於",
@@ -27,6 +27,6 @@
   "help": {
     "title": "變異數平等性檢驗",
     "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
-    "body": "\n<b>描述</b><br/>\n執行多組之間變異數平等性的檢驗。<br/>\n<ul>\n<li><b>巴特利特檢驗</b>: 對偏離正態性敏感。</li>\n<li><b>萊文檢驗</b>: 對非正態性更具穩健性。</li>\n<li><b>弗萊格納–基林檢驗</b>: 非參數且非常穩健。</li>\n</ul>\n<b>參數</b><br/>\n- alternative: two.sided, greater, 或 less.<br/>\n- conf.level: 置信區間估計的信心水準。<br/>\n- format: 寬或長數據佈局。<br/>\n- p.adjust.method: 多重比較調整的方法。\n"
+    "body": "\n<b>描述</b></br>\n檢驗變異數的平等性。支持以下格式的數據<br/>\n寬格式：每個變量包含測量值，例如變量1包含來自機器A的測量值，變量2包含來自機器B的測量值...<br/>\n長格式：變量中的測量值按一個或多個變量分組，例如測試分數按性別和班級分組。<br/>\n僅在選擇成對萊文檢驗時應用P值調整方法。<br/>\n<b>用法</b>\n<br/>\n<code> \nBSky_variance_analysis (<br/>\n    data_format = c(\"wide\" ),<br/>\n    cols_to_compare = c('A','B','C'),<br/>\n    response_col = NULL,<br/>\n    group_col = NULL,<br/>\n    conf_level = 0.95,<br/>\n    alt_hypothesis = \"two.sided\",<br/>\n    p_adjust_method = \"holm\",<br/>\n    normal_distribution =FALSE,<br/>\n    Fligner_Killeen =FALSE,<br/>\n  pairwiseComparison=FALSE,<br/>\n    data_name=\"Dataset1\"<br/>\n)<br/>\nBSky_variance_analysis (<br/>\n    data_format = c(\"long\" ),<br/>\n    cols_to_compare = NULL,<br/>\n    response_col = c('Score'),<br/>\n    group_col = c('Gender','Class'),<br/>\n    conf_level = 0.95,<br/>\n    alt_hypothesis = \"two.sided\",<br/>\n    p_adjust_method = \"holm\",<br/>\n    normal_distribution =FALSE,<br/>\n     Fligner_Killeen =FALSE,<br/>\n  pairwiseComparison=FALSE,<br/>\n    data_name=\"Dataset2\"<br/>\n)<br/>\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\ndata_format: 可以是寬格式或長格式\n</li>\n<li>\ncols_to_compare: 在寬格式數據中比較變異數的變量，長格式數據為NULL\n</li>\n<li>\nresponse_col: 用於比較組間變異數的測量變量。寬格式數據為NULL\n</li>\n<li>\ngroup_col: 一個或多個用於分組測量變量的變量，我們檢驗組間變異數的平等性\n</li>\n<li>\nconf_level: 置信區間\n</li>\n<li>\nalt_hypothesis: 設置為two.sided\n</li>\n<li>\np_adjust_method: 用於調整P值的方法\n</li>\n<li>\nnormal_distribution: 如果為TRUE，則假設正態性\n</li>\n<li>\nFligner_Killeen: 如果為TRUE，則執行Fligner_Killeen檢驗\n</li>\n<li>\npairwiseComparison: 執行成對萊文檢驗\n</li>\n<li>\ndatasetname: 從中選擇x,y和層（變量）的數據集名稱\n</li>\n</ul>\n<b>值</b></br>\n針對指定的置信區間的邦費羅尼置信區間。多重比較檢驗的測試結果（當不假設正態性時）和其他檢驗的結果\n<br/>\n<b>示例</b></br>\n<code> \nBSky_variance_analysis (<br/>\n    data_format = c(\"long\" ),<br/>\n    cols_to_compare = NULL,<br/>\n    response_col = c('Score'),<br/>\n    group_col = c('Gender','Class'),<br/>\n    conf_level = 0.95,<br/>\n    alt_hypothesis = \"two.sided\",<br/>\n    p_adjust_method = \"holm\",<br/>\n    normal_distribution =FALSE,<br/>\n     Fligner_Killeen =FALSE,<br/>\n  pairwiseComparison=FALSE,<br/>\n    data_name=\"Dataset2\"<br/>\n)<br/>\n</code> <br/>\n\n<b>詳細</b></br>\n多重比較檢驗</br>\n當您不選擇“使用基於正態分佈的檢驗”時使用 – 即，您偏好對非正態分佈穩健的方法。</br>\n如果您有k > 2組，我們計算標準差的區間，使得如果兩個區間不重疊，則相關的標準差是\n顯著不同的。</br> \n對於k = 2樣本，使用邦特的方法檢驗兩個變異數，假設比率= 1。</br>\n當整體多重比較檢驗顯著時，對應於不重疊區間的標準差在統計上是不同的。</br>\n優勢：在許多情況下比萊文的方法更強大（對於連續分佈）。但當樣本量小（< 20）或分佈極度偏斜/重尾時，第一類錯誤率可能會上升。</br>\n檢驗的P值</br>\n如果設計中有2個樣本，則使用邦特的方法計算多重比較檢驗的P值，針對2個變異數檢驗和假設比率Ρo為1。</br>\n如果設計中有k > 2樣本，則讓Pij為任何樣本對(i, j)的檢驗P值。多重比較程序的P值作為變異數平等性的整體檢驗由以下公式給出：</br>\nP =min{Pij, 1<=i<j<=k}\n</br>\n萊文檢驗統計量</br>\n萊文檢驗用於檢驗變異數在組間是否相等的虛無假設（H₀：所有變異數相等）與至少一個變異數不同的替代假設。</br>\n與假設正態性的檢驗（例如，巴特利特檢驗）相比，它對偏離正態性更具穩健性。</br>\n具體而言，我們使用布朗-福賽斯修正（從樣本中位數而非均值的絕對偏差）以提高穩健性。</br>\n解釋：如果P值 < α，則拒絕H₀並得出變異數不相等的結論。</br>\n</br>\n巴特利特檢驗統計量</br>\n巴特利特檢驗旨在檢驗數據在正態分佈下的變異數平等性。H₀：所有變異數相等。當k > 2組時，\n我們使用巴特利特檢驗（如果選擇“使用基於正態分佈的檢驗”）。</br>\n檢驗統計量（通常記為B）基於比較加權算術平均數和加權幾何平均數的樣本變異數。</br>\n該統計量（近似）遵循自由度為k-1的卡方分佈。</br>\n因為巴特利特檢驗假設正態性，所以對偏離正態性敏感（即，非正態或重尾分佈可能導致誤導性結果）</br>\n</br>\nF檢驗統計量</br>\n當恰好有兩組（k = 2）時，我們使用F檢驗而不是巴特利特檢驗（如果選擇“使用基於正態分佈的檢驗”）。</br>\nH₀：變異數相等（σ₁² = σ₂²）。</br>\nF統計量計算為兩個樣本變異數的比率（較大者除以較小者）。然後P值取決於替代假設\n（單側“少於”或“大於”，或雙側）。</br>\n解釋：如果P值 < α，則拒絕H₀並得出變異數不同的結論。僅在假設正態性的情況下有效。</br>\n<b>值</b><br/>\n\n<b>包</b></br>\n藍天</br>\n<b>幫助</b></br>\n如需更多信息，請聯繫support@blueskystatistics.com。\n    "
   }
 }
