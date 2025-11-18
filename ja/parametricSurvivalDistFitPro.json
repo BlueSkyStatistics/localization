@@ -1,0 +1,19 @@
+{
+  "title": "パラメトリック生存分布フィット分析",
+  "navigation": "パラメトリック生存分布フィット",
+  "timevar": "イベントまたは検閲までの時間",
+  "eventvar": "イベント (1以上 = イベント, 0以下 = 検閲)",
+  "labelDistribution": "分布フィットテストのために1つ以上を選択",
+  "selectDistFuncWeibullChk": "ワイブル",
+  "selectDistFuncExpChk": "指数",
+  "selectDistFuncGammaChk": "ガンマ",
+  "selectDistFuncLnormalChk": "対数正規",
+  "selectDistFuncLogLogisChk": "対数ロジスティック",
+  "confidenceInterval": "最尤推定の信頼レベル",
+  "printModelParamChk": "分布の推定パラメータを表示",
+  "help": {
+    "title": "パラメトリック生存分布フィット分析",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

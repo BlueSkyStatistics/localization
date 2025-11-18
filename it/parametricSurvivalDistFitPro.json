@@ -1,0 +1,19 @@
+{
+  "title": "Analisi di adattamento della distribuzione di sopravvivenza parametrica",
+  "navigation": "Adattamento distribuzione sopravvivenza parametrica",
+  "timevar": "Tempo fino all'evento o censura",
+  "eventvar": "Evento (1 o superiore = evento, 0 o inferiore = censura)",
+  "labelDistribution": "Seleziona uno o più per il test di adattamento della distribuzione",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Esponenziale",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normale",
+  "selectDistFuncLogLogisChk": "Log Logistic",
+  "confidenceInterval": "Livello di confidenza per le stime di massima verosimiglianza",
+  "printModelParamChk": "Mostra i parametri stimati delle distribuzioni",
+  "help": {
+    "title": "Analisi di adattamento della distribuzione di sopravvivenza parametrica",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

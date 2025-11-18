@@ -1,0 +1,19 @@
+{
+  "title": "Parametrische Überlebensverteilungsanpassungsanalyse",
+  "navigation": "Parametrische Überlebensverteilungsanpassung",
+  "timevar": "Zeit bis zum Ereignis oder Zensur",
+  "eventvar": "Ereignis (1 oder höher = Ereignis, 0 oder niedriger = Zensur)",
+  "labelDistribution": "Wählen Sie eine oder mehrere für den Anpassungstest der Verteilung",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Exponential",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normal",
+  "selectDistFuncLogLogisChk": "Log Logistic",
+  "confidenceInterval": "Konfidenzniveau für die Maximum-Likelihood-Schätzungen",
+  "printModelParamChk": "Zeige die geschätzten Parameter der Verteilungen",
+  "help": {
+    "title": "Parametrische Überlebensverteilungsanpassungsanalyse",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

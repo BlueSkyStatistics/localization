@@ -1,0 +1,28 @@
+{
+  "title": "Gráfico da Distribuição Weibull com rótulos",
+  "navigation": "Gráfico da Distribuição Weibull Com Rótulos",
+  "shape": "Forma",
+  "scale": "Escala",
+  "pdenfun": "Plotar função de densidade",
+  "pdstfun": "Plotar função de distribuição",
+  "lblregions": "Opcionalmente especifique regiões sob a função de densidade por",
+  "xvals": "valores de x",
+  "quantiles": "quantis",
+  "lblRegFill": "Regiões a preencher (especifique uma ou duas, ou deixe em branco para opções de valores de x ou quantis). Deixe o campo 'De' vazio para plotar a cauda esquerda (inferior) e deixe o campo 'Para' vazio para plotar a cauda direita (superior)",
+  "lblreg1": "Região 1 :",
+  "lblreg2": "Região 2 :",
+  "lblregfrm": "De",
+  "lblregto": "Para",
+  "lblregcol": "Cor",
+  "lowProbBound": "Limite inferior de probabilidade usado para gerar a distribuição amostral",
+  "upperProbBound": "Limite superior de probabilidade usado para gerar a distribuição amostral",
+  "lblLegPos": "Posição da legenda",
+  "toprt": "Canto superior direito",
+  "toplt": "Canto superior esquerdo",
+  "topmid": "Centro superior",
+  "help": {
+    "title": "Gráfico da Distribuição Weibull",
+    "r_help": "ajuda(qweibull, pacote=stats)",
+    "body": "\n            ​​\n            <b>Descrição</b>\n            <br/>\n            Função de densidade, função de distribuição, função quantil e geração aleatória para a distribuição Weibull com parâmetros de forma e escala.\n            <br/>\n            <b>Uso</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumentos</b>\n            <br/>\n            <ul>\n                <li>x, q : vetor de quantis.</li>\n                \n                \n                <li>p : vetor de probabilidades.</li>\n                \n                \n                <li>n : número de observações. Se length(n) > 1, o comprimento é considerado como o número necessário.</li>\n                \n                \n                <li>shape, scale : parâmetros de forma e escala, sendo o último padrão 1.</li>\n                \n                \n                <li>log, log.p : lógico; se TRUE, as probabilidades p são dadas como log(p).</li>\n                \n                \n                <li>lower.tail : lógico; se TRUE (padrão), as probabilidades são P[X ≤ x], caso contrário, P[X > x].</li>\n            </ul>\n            \n            <br/>\n            <b>Detalhes</b>\n            <br/>\n            A distribuição Weibull com parâmetro de forma a e parâmetro de escala b tem densidade dada por\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            para x > 0. A função de distribuição acumulada é F(x) = 1 - exp(- (x/b)^a) em x > 0, a média é E(X) = b Γ(1 + 1/a), e a Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2).\n            <br/>\n            <br/><b>Valor</b>\n            <br/>\n            dweibull fornece a densidade, pweibull fornece a função de distribuição, qweibull fornece a função quantil, e rweibull gera desvios aleatórios.\n            <br/>\n            Argumentos inválidos resultarão em valor de retorno NaN, com um aviso.\n            <br/>\n            O comprimento do resultado é determinado por n para rweibull, e é o máximo dos comprimentos dos argumentos numéricos para as outras funções.\n            <br/>\n            Os argumentos numéricos além de n são reciclados para o comprimento do resultado. Apenas os primeiros elementos dos argumentos lógicos são usados.\n            <br/>\n            <br/><b>Nota</b>\n            <br/>\n            O risco acumulado <code>H(t) = - log(1 - F(t))</code> é\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            que é apenas <code>H(t) = (t/b)^a</code>.           \n"
+  }
+}

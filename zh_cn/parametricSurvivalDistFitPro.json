@@ -1,0 +1,19 @@
+{
+  "title": "参数生存分布拟合分析",
+  "navigation": "参数生存分布拟合",
+  "timevar": "事件或审查的时间",
+  "eventvar": "事件（1或更高=事件，0或更低=审查）",
+  "labelDistribution": "选择一个或多个进行分布拟合测试",
+  "selectDistFuncWeibullChk": "威布尔",
+  "selectDistFuncExpChk": "指数",
+  "selectDistFuncGammaChk": "伽马",
+  "selectDistFuncLnormalChk": "对数正态",
+  "selectDistFuncLogLogisChk": "对数逻辑斯蒂",
+  "confidenceInterval": "最大似然估计的置信水平",
+  "printModelParamChk": "显示分布的估计参数",
+  "help": {
+    "title": "参数生存分布拟合分析",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

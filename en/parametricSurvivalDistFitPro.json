@@ -1,0 +1,19 @@
+{
+    "title": "Parametric Survival Distribution Fit Analysis",
+    "navigation": "Parametric Survival Dist Fit",
+    "timevar": "Time to event or censor",
+    "eventvar": "Event (1 or higher = event, 0 or lower = censor)",
+    "labelDistribution": "Select one or more for distribution fit test",
+    "selectDistFuncWeibullChk": "Weibull",
+    "selectDistFuncExpChk": "Exponential",
+    "selectDistFuncGammaChk": "Gamma",
+    "selectDistFuncLnormalChk": "Log Normal",
+    "selectDistFuncLogLogisChk": "Log Logistic",
+    "confidenceInterval": "Confidence level for maximum likelihood estimates",
+    "printModelParamChk": "Show the estimated parameters of the distributions",
+    "help": {
+        "title": "Parametric Survival Distribution Fit Analysis",
+        "r_help": "help(flexsurvreg, package = 'flexsurv')",
+        "body": "\n\t\t\t\n"
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Graficul distribuției Weibull cu etichete",
+  "navigation": "Graficul distribuției Weibull cu etichete",
+  "shape": "Formă",
+  "scale": "Scală",
+  "pdenfun": "Grafic funcție de densitate",
+  "pdstfun": "Grafic funcție de distribuție",
+  "lblregions": "Specificați opțional regiunile sub funcția de densitate prin",
+  "xvals": "valori x",
+  "quantiles": "quantile",
+  "lblRegFill": "Regiuni de umplut (specificați una sau două, sau lăsați liber pentru opțiunea valori x sau quantile). Lăsați câmpul 'De la' gol pentru a trasa coada stângă (inferioară) și lăsați câmpul 'Până la' gol pentru a trasa coada dreaptă (superioară)",
+  "lblreg1": "Regiunea 1 :",
+  "lblreg2": "Regiunea 2 :",
+  "lblregfrm": "De la",
+  "lblregto": "Până la",
+  "lblregcol": "Culoare",
+  "lowProbBound": "Limita inferioară a probabilității utilizate pentru generarea distribuției de eșantion",
+  "upperProbBound": "Limita superioară a probabilității utilizate pentru generarea distribuției de eșantion",
+  "lblLegPos": "Poziția legendei",
+  "toprt": "Sus dreapta",
+  "toplt": "Sus stânga",
+  "topmid": "Sus centru",
+  "help": {
+    "title": "Graficul distribuției Weibull",
+    "r_help": "help(qweibull, package=stats)",
+    "body": "\n            ​​\n            <b>Descriere</b>\n            <br/>\n            Funcția de densitate, funcția de distribuție, funcția quantile și generarea aleatoare pentru distribuția Weibull cu parametrii formă și scală.\n            <br/>\n            <b>Utilizare</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>Argumente</b>\n            <br/>\n            <ul>\n                <li>x, q : vector de quantile.</li>\n                \n                \n                <li>p : vector de probabilități.</li>\n                \n                \n                <li>n : numărul de observații. Dacă lungimea(n) > 1, lungimea este considerată a fi numărul necesar.</li>\n                \n                \n                <li>formă, scală : parametrii de formă și scală, acesta din urmă având valoarea implicită 1.</li>\n                \n                \n                <li>log, log.p : logic; dacă este TRUE, probabilitățile p sunt date ca log(p).</li>\n                \n                \n                <li>lower.tail : logic; dacă este TRUE (implicit), probabilitățile sunt P[X ≤ x], altfel, P[X > x].</li>\n            </ul>\n            \n            <br/>\n            <b>Detalii</b>\n            <br/>\n            Distribuția Weibull cu parametrul de formă a și parametrul de scală b are densitatea dată de\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            pentru x > 0. Funcția de distribuție cumulativă este F(x) = 1 - exp(- (x/b)^a) pentru x > 0, media este E(X) = b Γ(1 + 1/a), iar Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2).\n            <br/>\n            <br/><b>Valoare</b>\n            <br/>\n            dweibull oferă densitatea, pweibull oferă funcția de distribuție, qweibull oferă funcția quantile, iar rweibull generează deviate aleatoare.\n            <br/>\n            Argumentele invalide vor rezulta în valoarea de returnare NaN, cu un avertisment.\n            <br/>\n            Lungimea rezultatului este determinată de n pentru rweibull și este maximul lungimilor argumentelor numerice pentru celelalte funcții.\n            <br/>\n            Argumentele numerice, altele decât n, sunt reciclate la lungimea rezultatului. Numai primele elemente ale argumentelor logice sunt utilizate.\n            <br/>\n            <br/><b>Notă</b>\n            <br/>\n            Hazardul cumulativ <code>H(t) = - log(1 - F(t))</code> este\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            care este doar <code>H(t) = (t/b)^a</code>.           \n"
+  }
+}

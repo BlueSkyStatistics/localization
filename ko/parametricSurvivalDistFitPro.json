@@ -1,0 +1,19 @@
+{
+  "title": "모수 생존 분포 적합 분석",
+  "navigation": "모수 생존 분포 적합",
+  "timevar": "사건 또는 검열까지의 시간",
+  "eventvar": "사건 (1 이상 = 사건, 0 이하 = 검열)",
+  "labelDistribution": "분포 적합 검정을 위해 하나 이상 선택",
+  "selectDistFuncWeibullChk": "웨이불",
+  "selectDistFuncExpChk": "지수",
+  "selectDistFuncGammaChk": "감마",
+  "selectDistFuncLnormalChk": "로그 정규",
+  "selectDistFuncLogLogisChk": "로그 로지스틱",
+  "confidenceInterval": "최대 우도 추정치에 대한 신뢰 수준",
+  "printModelParamChk": "분포의 추정된 매개변수 표시",
+  "help": {
+    "title": "모수 생존 분포 적합 분석",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

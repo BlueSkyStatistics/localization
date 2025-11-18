@@ -1,0 +1,19 @@
+{
+  "title": "تحليل ملاءمة توزيع البقاء البرامترية",
+  "navigation": "ملاءمة توزيع البقاء البرامترية",
+  "timevar": "الوقت حتى الحدث أو التوقف",
+  "eventvar": "الحدث (1 أو أعلى = حدث، 0 أو أقل = توقف)",
+  "labelDistribution": "اختر واحدًا أو أكثر لاختبار ملاءمة التوزيع",
+  "selectDistFuncWeibullChk": "ويبل",
+  "selectDistFuncExpChk": "أسّي",
+  "selectDistFuncGammaChk": "غاما",
+  "selectDistFuncLnormalChk": "لوغاريتمي طبيعي",
+  "selectDistFuncLogLogisChk": "لوغاريتمي لوجستي",
+  "confidenceInterval": "مستوى الثقة لتقديرات الاحتمالية القصوى",
+  "printModelParamChk": "عرض المعلمات المقدرة للتوزيعات",
+  "help": {
+    "title": "تحليل ملاءمة توزيع البقاء البرامترية",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Analyse de l'ajustement de la distribution de survie paramétrique",
+  "navigation": "Ajustement de la dist de survie paramétrique",
+  "timevar": "Temps jusqu'à l'événement ou censure",
+  "eventvar": "Événement (1 ou plus = événement, 0 ou moins = censure)",
+  "labelDistribution": "Sélectionnez une ou plusieurs pour le test d'ajustement de distribution",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Exponentielle",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normal",
+  "selectDistFuncLogLogisChk": "Log Logistic",
+  "confidenceInterval": "Niveau de confiance pour les estimations de maximum de vraisemblance",
+  "printModelParamChk": "Afficher les paramètres estimés des distributions",
+  "help": {
+    "title": "Analyse de l'ajustement de la distribution de survie paramétrique",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

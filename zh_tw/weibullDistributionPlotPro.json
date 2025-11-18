@@ -1,0 +1,28 @@
+{
+  "title": "威布爾分佈圖與標籤",
+  "navigation": "威布爾分佈圖與標籤",
+  "shape": "形狀",
+  "scale": "尺度",
+  "pdenfun": "繪製密度函數",
+  "pdstfun": "繪製分佈函數",
+  "lblregions": "可選擇通過以下方式指定密度函數下的區域",
+  "xvals": "x 值",
+  "quantiles": "分位數",
+  "lblRegFill": "要填充的區域（指定一個或兩個，或留空以選擇 x 值或分位數選項）。將 'From' 欄位留空以繪製左側（下側）尾，將 'To' 欄位留空以繪製右側（上側）尾",
+  "lblreg1": "區域 1 :",
+  "lblreg2": "區域 2 :",
+  "lblregfrm": "從",
+  "lblregto": "到",
+  "lblregcol": "顏色",
+  "lowProbBound": "用於生成樣本分佈的概率下限",
+  "upperProbBound": "用於生成樣本分佈的概率上限",
+  "lblLegPos": "圖例位置",
+  "toprt": "右上",
+  "toplt": "左上",
+  "topmid": "上中",
+  "help": {
+    "title": "威布爾分佈圖",
+    "r_help": "help(qweibull, package=stats)",
+    "body": "\n            ​​\n            <b>描述</b>\n            <br/>\n            威布爾分佈的密度、分佈函數、分位數函數和隨機生成，參數為形狀和尺度。\n            <br/>\n            <b>用法</b>\n            <br/>\n            <code>\n                dweibull(x, shape, scale = 1, log = FALSE)\n                <br/>\n                pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                qweibull(p, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)\n                <br/>\n                rweibull(n, shape, scale = 1)\n                <br/>\n            </code>\n            <br/>\n            <b>參數</b>\n            <br/>\n            <ul>\n                <li>x, q : 分位數的向量。</li>\n                \n                \n                <li>p : 概率的向量。</li>\n                \n                \n                <li>n : 觀察數。如果 length(n) > 1，則長度被視為所需的數量。</li>\n                \n                \n                <li>shape, scale : 形狀和尺度參數，後者默認為 1。</li>\n                \n                \n                <li>log, log.p : 邏輯；如果為 TRUE，則概率 p 以 log(p) 的形式給出。</li>\n                \n                \n                <li>lower.tail : 邏輯；如果為 TRUE（默認），則概率為 P[X ≤ x]，否則為 P[X > x]。</li>\n            </ul>\n            \n            <br/>\n            <b>詳細信息</b>\n            <br/>\n            形狀參數為 a 和尺度參數為 b 的威布爾分佈的密度由以下公式給出\n            <br/>\n            <code>f(x) = (a/b) (x/b)^(a-1) exp(- (x/b)^a)</code>\n            <br/>\n            當 x > 0。累積分佈函數為 F(x) = 1 - exp(- (x/b)^a) 當 x > 0，均值為 E(X) = b Γ(1 + 1/a)，方差 Var(X) = b^2 * (Γ(1 + 2/a) - (Γ(1 + 1/a))^2)。\n            <br/>\n            <br/><b>值</b>\n            <br/>\n            dweibull 給出密度，pweibull 給出分佈函數，qweibull 給出分位數函數，rweibull 生成隨機偏差。\n            <br/>\n            無效的參數將導致返回值 NaN，並發出警告。\n            <br/>\n            結果的長度由 rweibull 的 n 決定，對於其他函數則是數值參數的最大長度。\n            <br/>\n            除 n 以外的數值參數會回收至結果的長度。僅使用邏輯參數的第一個元素。\n            <br/>\n            <br/><b>注意</b>\n            <br/>\n            累積危險 <code>H(t) = - log(1 - F(t))</code> 是\n            <br/>\n            -pweibull(t, a, b, lower = FALSE, log = TRUE)\n            \n            這只是 <code>H(t) = (t/b)^a</code>。           \n"
+  }
+}

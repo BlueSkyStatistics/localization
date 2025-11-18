@@ -1,0 +1,19 @@
+{
+  "title": "Parametrik Hayatta Kalma Dağılımı Uygunluk Analizi",
+  "navigation": "Parametrik Hayatta Kalma Dağılımı Uygunluğu",
+  "timevar": "Olay için zaman veya sansür",
+  "eventvar": "Olay (1 veya daha yüksek = olay, 0 veya daha düşük = sansür)",
+  "labelDistribution": "Uygunluk testi için bir veya daha fazlasını seçin",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Üstel",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normal",
+  "selectDistFuncLogLogisChk": "Log Logistic",
+  "confidenceInterval": "Maksimum likelihood tahminleri için güven düzeyi",
+  "printModelParamChk": "Dağılımların tahmin edilen parametrelerini göster",
+  "help": {
+    "title": "Parametrik Hayatta Kalma Dağılımı Uygunluk Analizi",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

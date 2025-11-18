@@ -1,0 +1,19 @@
+{
+  "title": "參數生存分佈擬合分析",
+  "navigation": "參數生存分佈擬合",
+  "timevar": "事件或審查的時間",
+  "eventvar": "事件 (1 或更高 = 事件, 0 或更低 = 審查)",
+  "labelDistribution": "選擇一個或多個進行分佈擬合測試",
+  "selectDistFuncWeibullChk": "威布爾",
+  "selectDistFuncExpChk": "指數",
+  "selectDistFuncGammaChk": "伽瑪",
+  "selectDistFuncLnormalChk": "對數常態",
+  "selectDistFuncLogLogisChk": "對數邏輯斯",
+  "confidenceInterval": "最大似然估計的信心水準",
+  "printModelParamChk": "顯示分佈的估計參數",
+  "help": {
+    "title": "參數生存分佈擬合分析",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}

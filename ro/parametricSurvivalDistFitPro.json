@@ -1,0 +1,19 @@
+{
+  "title": "Analiza ajustării distribuției de supraviețuire parametrice",
+  "navigation": "Ajustare distribuție supraviețuire parametrică",
+  "timevar": "Timp până la eveniment sau cenzură",
+  "eventvar": "Eveniment (1 sau mai mare = eveniment, 0 sau mai mic = cenzură)",
+  "labelDistribution": "Selectați una sau mai multe pentru testul de ajustare a distribuției",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Exponențială",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normal",
+  "selectDistFuncLogLogisChk": "Log Logistic",
+  "confidenceInterval": "Nivel de încredere pentru estimările de maximă verosimilitate",
+  "printModelParamChk": "Afișați parametrii estimați ai distribuțiilor",
+  "help": {
+    "title": "Analiza ajustării distribuției de supraviețuire parametrice",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t\n"
+  }
+}
