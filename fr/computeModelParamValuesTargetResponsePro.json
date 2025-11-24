@@ -1,21 +1,23 @@
 {
-  "title": "Calculer les valeurs des variables du modèle pour atteindre la réponse cible",
-  "label100": "Cette boîte de dialogue calcule les variables du modèle pour atteindre la valeur de réponse cible du modèle\nRemarque : Si une variable non numérique est présente dans le modèle sélectionné, le calcul de la réponse cible échouera",
-  "navigation": "Calculer la réponse cible",
-  "modelSelection": "Sélectionnez un modèle pour calculer les valeurs optimales des variables",
-  "targetResponse": "Spécifiez la valeur de réponse cible (numérique) souhaitée pour le modèle sélectionné",
-  "targetResponseLower": "(Optionnel) Spécifiez la valeur de réponse cible inférieure (numérique) souhaitée pour le modèle sélectionné",
-  "targetResponseUpper": "(Optionnel) Spécifiez la valeur de réponse cible supérieure (numérique) souhaitée pour le modèle sélectionné",
-  "label200": "Contraintes de l'optimiseur de réponse cible",
-  "label12": "Variables (facteurs) dans le modèle sélectionné énumérées ci-dessous dans le même ordre qu'elles apparaissent dans le modèle",
-  "factorConstraintUseDatasetLowerChk": "Contraintes de limite inférieure : Si coché, la valeur minimale de chaque variable utilisée dans le modèle sera utilisée pour la limite inférieure",
-  "factorConstraintLower": "Contraintes de limite inférieure : (Ignoré si coché ci-dessus) Laissez vide pour ne pas avoir de contraintes sur la limite inférieure pour les valeurs des variables du modèle (c'est-à-dire les facteurs). Sinon, vous devez taper des valeurs séparées par des virgules pour chaque variable du modèle. Si une variable du modèle particulière n'a pas de limite inférieure, tapez -Inf par exemple, 0, 0.1, -Inf, 20",
-  "factorConstraintUseDatasetUpperChk": "Contraintes de limite supérieure : Si coché, la valeur maximale de chaque variable utilisée dans le modèle sera utilisée pour la limite supérieure",
-  "factorConstraintUpper": "Contraintes de limite supérieure : (Ignoré si coché ci-dessus) Laissez vide pour ne pas avoir de contraintes sur la limite supérieure pour les valeurs des variables du modèle (c'est-à-dire les facteurs). Sinon, vous devez taper des valeurs séparées par des virgules pour chaque variable du modèle. Si une variable du modèle particulière n'a pas de limite supérieure, tapez Inf par exemple, 0, 0.2, 0.9, Inf",
-  "factorInitalValues": "Valeurs de départ : Laissez vide pour que le système choisisse les valeurs de départ initiales pour les valeurs des variables du modèle (c'est-à-dire les facteurs) (par défaut : tous les zéros). Sinon, vous devez taper des valeurs séparées par des virgules pour chaque variable du modèle par exemple, 0, 0, 0, 0",
-  "help": {
-    "title": "Calculer les valeurs des variables (facteurs) du modèle pour la réponse cible pour le modèle sélectionné",
-    "r_help": "help(optim, package = 'stats')",
-    "body": "\n        "
-  }
+    "title": "Calculer les valeurs des variables du modèle pour atteindre la réponse cible",
+    "navigation": "Calculer la réponse cible",
+    "label100": "Cette boîte de dialogue calcule les variables du modèle pour atteindre la valeur de réponse cible du modèle\nRemarque : Si une variable non numérique est présente dans le modèle sélectionné,\n         le calcul de la réponse cible prendra plus de temps",
+    "modelSelection": "Sélectionnez un modèle pour calculer les valeurs optimales des variables",
+    "targetResponse": "Spécifiez la valeur de réponse cible (numérique) souhaitée pour le modèle sélectionné",
+    "targetResponseLower": "(Optionnel) Spécifiez la valeur de réponse cible inférieure (numérique) souhaitée pour le modèle sélectionné",
+    "targetResponseUpper": "(Optionnel) Spécifiez la valeur de réponse cible supérieure (numérique) souhaitée pour le modèle sélectionné",
+    "label200": "Contraintes de l'optimiseur de réponse cible",
+    "label12": "Variables (facteurs) dans le modèle sélectionné énumérées ci-dessous dans le même ordre qu'elles apparaissent dans le modèle",
+    "factorConstraintUseDatasetLowerChk": "Contraintes de limite inférieure : Si coché, la valeur minimale (pour les variables numériques uniquement) de chaque variable utilisée dans le modèle sera utilisée pour la limite inférieure",
+    "factorConstraintLower": "Contraintes de limite inférieure : (Ignoré si coché ci-dessus) Laissez vide pour ne pas avoir de contraintes sur la limite inférieure pour les valeurs des variables du modèle (c'est-à-dire les facteurs). Sinon, vous devez taper des valeurs séparées par des virgules pour chaque variable du modèle. Si une variable du modèle particulier n'a pas de limite inférieure, tapez -Inf par exemple, 0, 0.1, -Inf, 20",
+    "factorConstraintUseDatasetUpperChk": "Contraintes de limite supérieure : Si coché, la valeur maximale (pour les variables numériques uniquement) de chaque variable utilisée dans le modèle sera utilisée pour la limite supérieure",
+    "factorConstraintUpper": "Contraintes de limite supérieure : (Ignoré si coché ci-dessus) Laissez vide pour ne pas avoir de contraintes sur la limite supérieure pour les valeurs des variables du modèle (c'est-à-dire les facteurs). Sinon, vous devez taper des valeurs séparées par des virgules pour chaque variable du modèle. Si une variable du modèle particulier n'a pas de limite supérieure, tapez Inf par exemple, 0, 0.2, 0.9, Inf",
+    "factorInitalValues": "Valeurs de départ : Laissez vide pour que le système choisisse les valeurs de départ initiales pour les variables du modèle (pour les variables numériques uniquement) (par défaut : tous les zéros). Sinon, vous devez taper des valeurs séparées par des virgules pour chaque variable du modèle par exemple, 0, 0, 0, 0",
+    "confidenceLevel": "Niveau de confiance",
+    "showModelEquationChk": "Afficher l'équation du modèle (si le modèle contient des variables catégorielles, l'équation peut ne pas s'afficher)",
+    "help": {
+      "title": "Calculer les valeurs des variables (facteurs) du modèle pour la réponse cible pour le modèle sélectionné",
+      "r_help": "help(optim, package = 'stats')",
+      "body": "\n        "
+    }
 }

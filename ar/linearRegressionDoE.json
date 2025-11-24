@@ -7,7 +7,7 @@
   "nointercept": "تجاهل التقاطع (إذا تم تحديده، فلا تقم بتحديد الخيارات المحددة أدناه لتصميم العامل ذو المستويين)",
   "degree": "الدرجة (اتركها فارغة للتأثيرات الرئيسية؛ خلاف ذلك اكتب 2 للتفاعلات من المستوى الثاني، 3 للتفاعلات من المستوى الثالث، إلخ)",
   "effectsplot": "مخطط جميع التأثيرات (يتم إنشاؤه فقط عندما لا يتم تحديد الدرجة)",
-  "generateplotchk": "مخطط المتبقيات مقابل القيم المتوقعة، Q-Q العادي، موقع المقياس والمتبقيات مقابل التأثير",
+  "generateplotchk": "مخطط المتبقيات مقابل القيم المتوقعة، Q-Q العادي، موقع المقياس والمتبقيات مقابل الرفع",
   "weights": "حدد متغيرًا مع الأوزان",
   "twoLevelDesignTypeChk": "الخيارات التالية تنطبق فقط على تصميم العامل ذو المستويين (مثل pb، FrF2، ..) - أيضًا لا تقم بتحديد هذا إذا تم تحديد خيار تجاهل التقاطع أعلاه",
   "AliasChk": "تحديد الأسماء المستعارة",
@@ -22,9 +22,10 @@
   "cubePlotChk": "مخطط مكعب للتفاعلات الثلاثة مع المتوسطات النموذجية",
   "cubePlotModelMeanChk": "مخطط كل من المتوسطات النموذجية وغير النموذجية",
   "cubePlotIndependent": "حدد ثلاثة متغيرات مستقلة لمخطط المكعب",
+  "showModelEquationChk": "عرض معادلة النموذج (إذا كان النموذج يحتوي على متغيرات فئوية، قد لا تظهر المعادلة)",
   "help": {
     "title": "تحليل تصميم التجارب باستخدام النموذج الخطي",
     "r_help": "help(lm, package = 'stats')",
-    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tيبني نموذج انحدار خطي للتصميم لتحليل الاستجابة (أي النتائج المسجلة/المجمعة من التجارب). يستدعي داخليًا دالة lm في حزمة stats. يعرض ملخصًا للنموذج، جدول المعاملات، جدول Anova وجدول مجموع المربعات ويقوم برسم المتبقيات مقابل القيم المتوقعة، Q-Q العادي، الكميات النظرية، المتبقيات مقابل التأثير. يمكنك اختيار متغير مع الأوزان واختيار تجاهل التقاطع.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلمزيد من التفاصيل، راجع مساعدة R للآتي\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>الاستخدام</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#تلخيص النموذج<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#عرض جدول Anova<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#رسم المتبقيات مقابل القيم المتوقعة، Q-Q العادي، موقع المقياس، المتبقيات مقابل التأثير<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tيبني نموذج انحدار خطي للتصميم لتحليل الاستجابة (أي النتائج المسجلة/المجمعة من التجارب). يستدعي داخليًا دالة lm في حزمة stats. يعرض ملخصًا للنموذج، جدول المعاملات، جدول Anova وجدول مجموع المربعات ويقوم برسم المتبقيات مقابل القيم المتوقعة، Q-Q العادي، الكميات النظرية، المتبقيات مقابل الرفع. يمكنك اختيارياً تحديد متغير مع الأوزان واختيار تجاهل التقاطع.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلمزيد من التفاصيل، راجع مساعدة R للآتي\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>الاستخدام</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#تلخيص النموذج<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#عرض جدول Anova<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#رسم المتبقيات مقابل القيم المتوقعة، Q-Q العادي، موقع المقياس، المتبقيات مقابل الرفع<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
   }
 }

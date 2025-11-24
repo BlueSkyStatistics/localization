@@ -1,13 +1,13 @@
 {
-  "title": "Design von Experimenten Analyse mit linearem Modell",
+  "title": "Analyse des Versuchsdesigns mit linearem Modell",
   "navigation": "Designanalyse - Lineares Modell",
   "modelname": "Modellnamen eingeben",
   "dependent": "Antwort (abhängige) Variable",
   "independent": "Unabhängige Variable(n)",
   "nointercept": "Intercept ignorieren (wenn aktiviert, dann die spezifischen Optionen unten für das 2-stufige Faktordesign nicht auswählen)",
   "degree": "Grad (leer lassen für Haupteffekte; andernfalls 2 für 2. Stufe Interaktionen, 3 für 3. Stufe Interaktionen usw. eingeben)",
-  "effectsplot": "Alle Effekte Plot (wird nur generiert, wenn der Grad nicht angegeben ist)",
-  "generateplotchk": "Plot der Residuen vs. angepasste Werte, normales Q-Q, Skala-Standort und Residuen vs. Hebelwirkung",
+  "effectsplot": "Alle Effekte Plot (nur generiert, wenn der Grad nicht angegeben ist)",
+  "generateplotchk": "Plot der Residuen vs. angepasste Werte, normales Q-Q, Skalen-Lage und Residuen vs. Hebelwirkung",
   "weights": "Eine Variable mit Gewichten angeben",
   "twoLevelDesignTypeChk": "Die folgenden Optionen sind nur für ein 2-stufiges Faktordesign anwendbar (z. B. pb, FrF2, ..) - auch nicht auswählen, wenn die Option Intercept ignorieren oben aktiviert ist",
   "AliasChk": "Alias bestimmen",
@@ -21,10 +21,11 @@
   "IAPlotShowAliasChk": "Aliase im Plot anzeigen",
   "cubePlotChk": "Würfelplot von drei Faktoreninteraktionen mit modellierten Mittelwerten",
   "cubePlotModelMeanChk": "Sowohl modellierte Mittelwerte als auch nicht modellierte Mittelwerte plotten",
-  "cubePlotIndependent": "Wählen Sie drei unabhängige Variable(n) für den Würfelplot",
+  "cubePlotIndependent": "Wählen Sie drei unabhängige Variable(n) für den Würfelplot aus",
+  "showModelEquationChk": "Modellgleichung anzeigen (wenn das Modell kategoriale Variablen enthält, wird die Gleichung möglicherweise nicht angezeigt)",
   "help": {
-    "title": "Design von Experimenten Analyse mit linearem Modell",
+    "title": "Analyse des Versuchsdesigns mit linearem Modell",
     "r_help": "help(lm, package = 'stats')",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tBaut ein lineares Regressionsmodell für das Design auf, um die Antwort (d.h. die aus den Experimenten aufgezeichneten/gesammelten Ergebnisse) zu analysieren. Ruft intern die Funktion lm im stats-Paket auf. Zeigt eine Zusammenfassung des Modells, die Koeffiziententabelle, die Anova-Tabelle und die Tabelle der Quadratsummen an und plottet die folgenden Residuen vs. angepasste Werte, normales Q-Q, theoretische Quantile, Residuen vs. Hebelwirkung. Sie können optional eine Variable mit Gewichten angeben und entscheiden, ob das Intercept ignoriert werden soll.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür weitere Details siehe R-Hilfe für die folgenden\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Verwendung</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#Zusammenfassung des Modells<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Anzeigen der Anova-Tabelle<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#Plots Residuen vs. angepasste Werte, normales Q-Q, Skala-Standort, Residuen vs. Hebelwirkung<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tBaut ein lineares Regressionsmodell für das Design auf, um die Antwort (d.h. die aus den Experimenten aufgezeichneten/gesammelten Ergebnisse) zu analysieren. Ruft intern die Funktion lm im Paket stats auf. Zeigt eine Zusammenfassung des Modells, die Koeffiziententabelle, die Anova-Tabelle und die Tabelle der Quadratsummen an und plottet die folgenden Residuen vs. angepasste Werte, normales Q-Q, theoretische Quantile, Residuen vs. Hebelwirkung. Sie können optional eine Variable mit Gewichten angeben und entscheiden, ob das Intercept ignoriert werden soll.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür weitere Details siehe R-Hilfe für die folgenden\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Verwendung</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#Zusammenfassung des Modells<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Anzeigen der Anova-Tabelle<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#Plots der Residuen vs. angepasste Werte, normales Q-Q, Skalen-Lage, Residuen vs. Hebelwirkung<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
   }
 }

@@ -7,9 +7,9 @@
   "nointercept": "Kesme noktasını yok say (eğer işaretlenirse, 2 seviyeli Faktör Tasarımı için aşağıdaki özel seçenekleri işaretlemeyin)",
   "degree": "Derece (ana etkiler için boş bırakın; aksi takdirde 2. seviye etkileşimler için 2, 3. seviye etkileşimler için 3 yazın, vb.)",
   "effectsplot": "Tüm etkiler grafiği (Derece belirtilmediğinde oluşturulur)",
-  "generateplotchk": "Artıklar ile tahmin edilenler, normal Q-Q, ölçek-konum ve artıklar ile kaldıraç grafiği oluştur",
+  "generateplotchk": "Artıklar ile tahmin edilenler, normal Q-Q, ölçek-konum ve artıklar ile kaldıraç grafiğini oluştur",
   "weights": "Ağırlıklarla bir değişken belirtin",
-  "twoLevelDesignTypeChk": "Aşağıdaki seçenekler yalnızca 2 seviyeli Faktör Tasarımı için geçerlidir (örn. pb, FrF2, ..) - ayrıca yukarıda Kesme noktasını yok say seçeneği işaretlenmişse bunu işaretlemeyin",
+  "twoLevelDesignTypeChk": "Aşağıdaki seçenekler yalnızca 2 seviyeli Faktör Tasarımı için geçerlidir (örneğin pb, FrF2, ..) - ayrıca yukarıda Kesme noktasını yok say seçeneği işaretlenmişse bunu işaretlemeyin",
   "AliasChk": "Taklitleri belirle",
   "AliasCodedChk": "Kodlanmış taklitler",
   "DanielplotChk": "Daniel Grafiği (etkilerin grafiği)",
@@ -20,11 +20,12 @@
   "IAPlotChk": "IAPlot (etkileşim grafikleri)",
   "IAPlotShowAliasChk": "Grafikte taklitleri göster",
   "cubePlotChk": "Modelleme ortalamaları ile üç faktör etkileşimlerinin küp grafiği",
-  "cubePlotModelMeanChk": "Hem modelleme ortalamalarını hem de modellemeyen ortalamaları grafiğe ekle",
+  "cubePlotModelMeanChk": "Hem modelleme ortalamalarını hem de modelleme dışı ortalamaları grafiğe ekle",
   "cubePlotIndependent": "Küp grafiği için üç bağımsız değişken(ler) seçin",
+  "showModelEquationChk": "Model denklemini göster (model kategorik değişkenler içeriyorsa, denklem görünmeyebilir)",
   "help": {
     "title": "Deneylerin Analizi için Lineer Model Tasarımı",
     "r_help": "help(lm, package = 'stats')",
-    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tTasarım için bir lineer regresyon modeli oluşturur ve yanıtı analiz eder (yani deneylerden kaydedilen/toplanan sonuçlar). İçsel olarak stats paketindeki lm fonksiyonunu çağırır. Modelin bir özetini, katsayı tablosunu, Anova tablosunu ve kareler toplamı tablosunu gösterir ve aşağıdaki grafikleri çizer: artıklar ile tahmin edilenler, normal Q-Q, teorik kuantiller, artıklar ile kaldıraç. İsteğe bağlı olarak bir ağırlık değişkeni belirtebilir ve kesme noktasını yok saymayı seçebilirsiniz.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDaha fazla ayrıntı için, aşağıdaki R yardımına bakın\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Kullanım</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#Modeli özetleme<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Anova tablosunu gösterme<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#Artıklar ile tahmin edilenler, normal Q-Q, ölçek-konum, artıklar ile kaldıraç grafiği çizer<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tTasarım için bir lineer regresyon modeli oluşturur ve yanıtı analiz eder (yani deneylerden kaydedilen/toplanan sonuçlar). İçsel olarak stats paketindeki lm fonksiyonunu çağırır. Modelin bir özetini, katsayı tablosunu, Anova tablosunu ve kareler toplamı tablosunu gösterir ve aşağıdaki artıkları tahmin edilenler, normal Q-Q, teorik kuantiller, artıkları kaldıraç ile grafiğe döker. İsteğe bağlı olarak bir ağırlık değişkeni belirtebilir ve kesme noktasını yok saymayı seçebilirsiniz.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDaha fazla ayrıntı için, aşağıdaki R yardımına bakın\n\t\t\t\t<br/>\n\t\t\t\thelp(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(anova, package = stats)\n\t\t\t\t<br/>\n\t\t\t\thelp(allEffects, package = effects)\n\t\t\t\t<br/>\n\t\t\t\thelp(aliases , package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(DanielPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(MEPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(IAPlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\thelp(cubePlot, package = FrF2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Kullanım</b>\n\t\t\t\t<br/>\n\t\t\t\t<code> \n\t\t\t\tLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n\t\t\t\t#Modeli özetleme<br/>\n\t\t\t\tsummary(LinearRegModel1)<br/>\n\t\t\t\t#Anova tablosunu gösterme<br/>\n\t\t\t\tanova(LinearRegModel1)<br/>\n\t\t\t\t#Artıkları tahmin edilenler, normal Q-Q, ölçek-konum, artıkları kaldıraç ile grafiğe dökme<br/>\n\t\t\t\tplot(effects::allEffects(LinearRegModel1))<br/>\n\t\t\t\tplot(LinearRegModel1)<br/>\n                </code> <br/>\n\n\t\t\t"
   }
 }
