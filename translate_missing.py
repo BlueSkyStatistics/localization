@@ -341,7 +341,7 @@ Provide all translations:"""
         # Process all file batches concurrently
         async with aiohttp.ClientSession() as session:
             results = await asyncio.gather(
-                *[self.process_file_batch(session, batch) for batch in batches[:1]],
+                *[self.process_file_batch(session, batch) for batch in batches],
                 return_exceptions=True,
             )
 
