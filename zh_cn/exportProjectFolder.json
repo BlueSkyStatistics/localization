@@ -7,5 +7,9 @@
   "chooseExportLocTitle": "选择导出位置：",
   "customLocationForBSP": "选择一个位置以保存导出的 .bsp 文件",
   "currentprojpath": "当前项目路径：",
-  "customBSPpath": "当前导出路径："
+  "customBSPpath": "当前导出路径：",
+  "help": {
+    "title": "导出项目",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t导出项目将从项目文件夹创建一个 .bsp（压缩文件）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t.bsp 项目文件可以与他人共享，他们可以使用 '文件 -> 导入项目' 对话框来导入 .bsp 文件。\n\t\t\t\t<br/>\n"
+  }
 }

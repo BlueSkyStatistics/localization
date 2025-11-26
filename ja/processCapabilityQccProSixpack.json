@@ -25,5 +25,10 @@
   "target": "ターゲット - プロセスのターゲットを指定するオプションの値",
   "addlSpecLines": "プロットに追加のSpec行を追加します（カンマ区切り、例：73.98、74.01、74.03）",
   "digits": "Digits - 表示する桁数",
-  "addlSpecLinesLabel": "追加のSpec行のラベル（カンマ区切り、例：Spec 1、Spec 2、Spec 3）"
+  "addlSpecLinesLabel": "追加のSpec行のラベル（カンマ区切り、例：Spec 1、Spec 2、Spec 3）",
+  "help": {
+    "title": "プロセス能力 (qcc pkg)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tqcc関数は能力指数を計算します \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、Rのhelp(process.capability, package = qcc)、help(qcc, package = qcc)、help(sd.xbar, package = qcc)、およびhelp(sd.xbar.one, package = qcc)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれを試すには、qccパッケージからpistonringsというデータセットをLoad Datasetメニューで読み込み、qccパッケージを選択してからpistonringsデータセットを選択します\n\t\t\t\t<br/>\n\t\t\t\tオプション1を選択し、直径を変数（観測..）に、サンプルをグルーピング変数に設定します、 \n\t\t\t\t<br/>\n\t\t\t\t使用するグループ化された行に1:25と入力します\n\t\t\t\t<br/>\n\t\t\t\tプロセス能力分析のために、LSLに73.95、USLに74.05、ターゲットリミットに74.0と入力します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\thttps://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.htmlのqccチュートリアルに従ってください\n\t\t\t\t<br/>\n"
+  }
 }

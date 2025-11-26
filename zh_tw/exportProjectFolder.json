@@ -7,5 +7,9 @@
   "customLocationForBSP": "選擇一個您想要保存導出的 .bsp 文件的位置",
   "currentprojpath": "當前專案路徑：",
   "customBSPpath": "當前出口路徑：",
-  "chooseExportLocTitle": "選擇匯出位置："
+  "chooseExportLocTitle": "選擇匯出位置：",
+  "help": {
+    "title": "導出項目",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t導出項目將從項目文件夾創建一個 .bsp（壓縮文件）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t.bsp 項目文件可以與其他人共享，他們可以使用 '文件 -> 導入項目' 對話框來導入 .bsp 文件。 \n\t\t\t\t<br/>\n"
+  }
 }

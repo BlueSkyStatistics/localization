@@ -7,5 +7,9 @@
   "currentprojpath": "現在のプロジェクトパス:",
   "chooseExportLocTitle": "エクスポート先を選択してください：",
   "customLocationForBSP": "エクスポートされた .bsp ファイルを保存する場所を選択してください。",
-  "customBSPpath": "現在のエクスポートパス："
+  "customBSPpath": "現在のエクスポートパス：",
+  "help": {
+    "title": "プロジェクトのエクスポート",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tプロジェクトをエクスポートすると、プロジェクトフォルダーから.bsp（圧縮ファイル）が作成されます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t.bspプロジェクトファイルは他の人と共有でき、彼らは「ファイル -> プロジェクトのインポート」ダイアログを使用して.bspファイルをインポートできます。\n\t\t\t\t<br/>\n"
+  }
 }
