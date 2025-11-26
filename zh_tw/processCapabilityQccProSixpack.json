@@ -25,5 +25,10 @@
   "target": "目標 - 一個可選的值，用於指定過程的目標",
   "addlSpecLines": "在圖表上添加額外的規格行（以逗號分隔，例如 73.98, 74.01, 74.03）",
   "addlSpecLinesLabel": "額外規格行的標籤（以逗號分隔，例如：規格 1、規格 2、規格 3）",
-  "digits": "Digits - 顯示的數字位數"
+  "digits": "Digits - 顯示的數字位數",
+  "help": {
+    "title": "過程能力 (qcc 套件)",
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tqcc 函數用於計算能力指數 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細幫助 - 使用 R help(process.capability, package = qcc)、help(qcc, package = qcc)、help(sd.xbar, package = qcc) 和 help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t要嘗試這個，您可以通過選擇 qcc 套件然後選擇 pistonrings 數據集來從 qcc 套件中加載名為 pistonrings 的數據集，使用加載數據集菜單\n\t\t\t\t<br/>\n\t\t\t\t選擇選項 1，將直徑設置為變量（觀察..），樣本設置為分組變量， \n\t\t\t\t<br/>\n\t\t\t\t在分組行中輸入 1:25\n\t\t\t\t<br/>\n\t\t\t\t進行過程能力分析 - 在 LSL 中輸入 73.95，在 USL 中輸入 74.05，在目標限制中輸入 74.0\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t請參閱 qcc 教程 https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n"
+  }
 }

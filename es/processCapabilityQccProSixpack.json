@@ -28,6 +28,7 @@
   "digits": "Dígitos - número de dígitos a mostrar",
   "help": {
     "title": "Capacidad del Proceso (paquete qcc)",
-    "r_help": "help(process.capability, package = qcc)"
+    "r_help": "help(process.capability, package = qcc)",
+    "body": "\n    <b>Descripción</b></br>\n    función qcc para calcular índices de capacidad \n    <br/>\n    <br/>\n    Para la ayuda detallada - usa R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc), y help(sd.xbar.one, package = qcc)\n    <br/>\n    <br/>\n    Para probar esto, puedes cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n    <br/>\n    Elige la opción 1, diámetro a variable(observado..), muestra a variable de agrupamiento, \n    <br/>\n    Escribe 1:25 en las filas agrupadas a utilizar\n    <br/>\n    Para el análisis de capacidad del proceso - escribe 73.95 en LSL, 74.05 en USL, y 74.0 en Límite Objetivo\n    <br/>\n    <br/>\n    Sigue el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n    <br/>\n"
   }
 }
