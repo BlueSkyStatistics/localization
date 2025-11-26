@@ -25,5 +25,9 @@
   "target": "Objetivo - un valor opcional que especifica el objetivo del proceso",
   "addlSpecLines": "Agregar líneas de especificación adicionales en el gráfico (separadas por comas, por ejemplo, 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Etiqueta para las líneas de especificación adicionales (separadas por comas, por ejemplo, Especificación 1, Especificación 2, Especificación 3)",
-  "digits": "Dígitos - número de dígitos a mostrar"
+  "digits": "Dígitos - número de dígitos a mostrar",
+  "help": {
+    "title": "Capacidad del Proceso (paquete qcc)",
+    "r_help": "help(process.capability, package = qcc)"
+  }
 }
