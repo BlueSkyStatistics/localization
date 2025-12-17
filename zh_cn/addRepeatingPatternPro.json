@@ -1,0 +1,13 @@
+{
+  "title": "添加重复模式的变量",
+  "navigation": "添加重复模式",
+  "repeatPatternVarName": "用于值重复模式的变量名（如果变量已存在则更新）",
+  "repeatingValues": "要重复的逗号分隔的数字和/或字符串值（例如：1,Blue,5,Bad,Good,3,7,0）",
+  "repeatFrequencyEach": "（可选）每个项目重复的次数，逗号分隔（例如：1,5,2,2,2,3,3,3）",
+  "times": "整个项目组重复的次数（如果留空，模式将重复填满数据集长度）",
+  "help": {
+    "title": "添加重复模式的变量",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t为指定的重复模式向数据集中添加变量（即列）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t在数据集的新列中生成字符字符串、数字模式或两者的组合（例如：5次红色 / 5次蓝色 / 5次黄色 → 重复10次的序列 或 3x1 / 3x2 / 3x3 的序列）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

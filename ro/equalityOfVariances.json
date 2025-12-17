@@ -1,0 +1,32 @@
+{
+  "title": "Egalitatea variatelor",
+  "navigation": "Egalitatea variatelor",
+  "label1": "Alege teste",
+  "bartlett": "Testul Bartlett",
+  "levene": "Testul Levene",
+  "fligner": "Testul Fligner–Killeen",
+  "normal_distribution": "Test bazat pe distribuția normală",
+  "pairwiseLeveneTest": "Testul Levene pe perechi",
+  "label2": "Format de date",
+  "wide": "Format larg",
+  "long": "Format lung",
+  "label3": "Nivel de încredere",
+  "label4": "Ipoteza alternativă",
+  "alt1": "Bidirecțional",
+  "alt2": "Mai mare",
+  "alt3": "Mai mic",
+  "label5": "Metoda de ajustare a valorii P (pentru testul Levene pe perechi)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Niciuna",
+  "help": {
+    "title": "Teste pentru egalitatea variatelor",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Descriere</b><br/>\nEfectuează teste pentru egalitatea variatelor între multiple grupuri.<br/>\n<ul>\n<li><b>Testul Bartlett</b>: Sensibil la abaterile de la normalitate.</li>\n<li><b>Testul Levene</b>: Mai robust la non-normalitate.</li>\n<li><b>Testul Fligner–Killeen</b>: Non-parametric și foarte robust.</li>\n</ul>\n<b>Argumente</b><br/>\n- alternative: two.sided, greater sau less.<br/>\n- conf.level: nivel de încredere pentru estimările intervalului.<br/>\n- format: Dispunere de date largă sau lungă.<br/>\n- p.adjust.method: Metoda pentru ajustarea comparării multiple.\n"
+  }
+}

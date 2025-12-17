@@ -1,0 +1,22 @@
+{
+  "title": "响应筛选",
+  "navigation": "响应筛选",
+  "responses": "选择一个或多个响应（因变量）",
+  "predictors": "选择一个或多个预测（自变量）",
+  "sortOrder": "响应筛选摘要表的排序顺序",
+  "maxNumberOfPredictor": "使用的最大预测变量组合数（主效应分析）",
+  "adjPvalue": "调整p值的方法（默认是FDR）",
+  "label1": "在响应筛选表中显示可选列",
+  "showOptionalColumn_CountChk": "计数",
+  "showOptionalColumn_p_valueChk": "p值",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "效应大小",
+  "showOptionalColumn_RSquareChk": "R平方",
+  "help": {
+    "title": "响应筛选",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t执行自动响应筛选，以识别一个或多个响应变量的统计显著预测变量。\n\t\t\t\t<br/>\n\t\t\t\t它系统地使用所有可能的预测变量组合（最多到用户指定的限制 - 默认是1）来拟合模型，以分析主效应并报告关键统计数据\n\t\t\t\tsuch as p值，-log10(p值)，使用FDR调整的p值，-log10(FDR)，效应大小和R²值。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t关于FDR的说明：\n\t\t\t\t<br/>\n\t\t\t\t在进行许多假设检验时（如在多个预测变量之间的响应筛选），一些显著的p值可能是偶然发生的。\n\t\t\t\t<br/>\n\t\t\t\t假发现率（FDR）调整通过估计所有显著结果中假阳性的预期比例来帮助控制这一点。\n\t\t\t\t<br/>\n\t\t\t\t该函数使用Benjamini–Hochberg程序（p.adjust(..., method = \"fdr\"））计算FDR调整的p值，显示为FDR_pval。\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval提供了一个更保守的显著性估计，考虑了多重比较。\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval)将调整后的p值转换为与LogWorth相同的尺度，即-log10(p值)，使得即使在校正后也容易对预测变量进行排名。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t自动模型生成：\n\t\t\t\t<br/>\n\t\t\t\t测试每个可能的预测变量组合，直到选择的最大数量（max_predictors）。\n\t\t\t\t<br/>\n\t\t\t\t例如，设置max_predictors = 1只测试单个预测变量，2测试成对等。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t灵活的响应处理：\n\t\t\t\t<br/>\n\t\t\t\t连续响应 → 线性回归（lm()）\n\t\t\t\t<br/>\n\t\t\t\t二元分类响应 → 逻辑回归（glm(family = binomial)）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t效应大小计算公式：\n\t\t\t\t<br/>\n\t\t\t\t连续Y：假设检验的平均平方和的平方根除以响应SD的稳健估计（如果IQR > range/20，则使用IQR/1.3489795，否则使用样本SD）。\n\t\t\t\t<br/>\n\t\t\t\t分类Y，连续X：平均模型ChiSquare值的平方根。\n\t\t\t\t<br/>\n\t\t\t\t分类Y，分类X：平均Pearson ChiSquare值的平方根。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t多重检验校正：\n\t\t\t\t<br/>\n\t\t\t\t使用假发现率（FDR）方法调整所有p值，添加FDR_PValue和FDR_Logworth列。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorth指标：\n\t\t\t\t报告-log10(p值)和-log10(FDR调整的p值)以排名显著性（越大 = 越显著）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t自动案例过滤：\n\t\t\t\t跳过任何有效观察少于min_cases（默认是2）的响应。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "レスポンススクリーニング",
+  "navigation": "レスポンススクリーニング",
+  "responses": "1つ以上のレスポンス（従属）変数を選択してください",
+  "predictors": "1つ以上の予測因子（独立）変数を選択してください",
+  "sortOrder": "レスポンススクリーニングの概要テーブルのソート順",
+  "maxNumberOfPredictor": "使用する予測因子の組み合わせの最大数（主効果分析）",
+  "adjPvalue": "p値調整方法（デフォルトはFDR）",
+  "label1": "レスポンススクリーニングテーブルにオプションの列を表示",
+  "showOptionalColumn_CountChk": "カウント",
+  "showOptionalColumn_p_valueChk": "p値",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "効果量",
+  "showOptionalColumn_RSquareChk": "R二乗",
+  "help": {
+    "title": "レスポンススクリーニング",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t1つ以上のレスポンス変数に対して統計的に有意な予測因子を特定するための自動レスポンススクリーニングを実行します。\n\t\t\t\t<br/>\n\t\t\t\tすべての可能な予測因子の組み合わせ（ユーザー指定の制限まで - デフォルトは1）を使用してモデルを体系的に適合させ、主効果を分析し、p値、-log10(p値)、FDRによる調整p値、-log10(FDR)、効果量、R²値などの主要な統計を報告します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFDRに関する注意:\n\t\t\t\t<br/>\n\t\t\t\t多くの仮説検定を行う際（複数の予測因子にわたるレスポンススクリーニングのように）、いくつかの有意なp値は偶然に発生する可能性があります。\n\t\t\t\t<br/>\n\t\t\t\t偽発見率（FDR）調整は、すべての有意な結果の中での偽陽性の期待される割合を推定することによってこれを制御します。\n\t\t\t\t<br/>\n\t\t\t\tこの関数は、Benjamini–Hochberg手法（p.adjust(..., method = \"fdr\"））を使用してFDR調整p値を計算し、FDR_pvalとして表示します。\n\t\t\t\t<br/>\n\t\t\t\tFDR_pvalは、複数の比較を考慮したより保守的な有意性の推定を提供します。\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval)は、調整されたp値をLogWorthと同じスケールに変換し、補正後でも予測因子をランク付けしやすくします。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t自動モデル生成:\n\t\t\t\t<br/>\n\t\t\t\t選択した最大数（max_predictors）までの予測因子のすべての可能な組み合わせをテストします。\n\t\t\t\t<br/>\n\t\t\t\t例えば、max_predictors = 1に設定すると、単一の予測因子のみをテストし、2に設定するとペアをテストします。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t柔軟なレスポンス処理:\n\t\t\t\t<br/>\n\t\t\t\t連続レスポンス → 線形回帰 (lm())\n\t\t\t\t<br/>\n\t\t\t\t二項カテゴリレスポンス → ロジスティック回帰 (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t効果量計算の公式:\n\t\t\t\t<br/>\n\t\t\t\t連続Y: 仮説検定からの平均平方和の平方根を、応答SDのロバストな推定値で割ったもの（IQR > range/20の場合はIQR/1.3489795、そうでなければサンプルSDを使用）。\n\t\t\t\t<br/>\n\t\t\t\tカテゴリY、連続X: 平均モデルカイ二乗値の平方根。\n\t\t\t\t<br/>\n\t\t\t\tカテゴリY、カテゴリX: 平均ピアソンカイ二乗値の平方根。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t多重検定の補正:\n\t\t\t\t<br/>\n\t\t\t\t偽発見率（FDR）法を使用してすべてのp値を調整し、FDR_PValueおよびFDR_Logworth列を追加します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorthメトリック:\n\t\t\t\t有意性のランク付けのために-log10(p値)および-log10(FDR調整p値)を報告します（大きいほど有意）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t自動ケースフィルタリング:\n\t\t\t\tmin_cases（デフォルトは2）未満の有効観察を持つレスポンスはスキップします。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

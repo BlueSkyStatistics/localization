@@ -1,0 +1,12 @@
+{
+    "title": "Grubbs-Test zur Ausreißererkennung",
+    "navigation": "Grubbs Ausreißertest",
+    "variableListSelcted": "Wähle eine oder mehrere Variablen aus",
+    "alpha": "Alpha: % Wahrscheinlichkeit (Standard 5%), der am weitesten vom Mittelwert entfernte Punkt wird als Ausreißer identifiziert",
+    "plotShowOutliersChk": "Diagramm zeigt alle Punkte inkl. möglicher Ausreißer",
+    "help": {
+        "title": "Grubbs-Test zur Ausreißererkennung",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Beschreibung</b></br> Bestimmt, ob der extremste Wert einer Variablen (Y-Werte, kein X erforderlich) ein Ausreißer ist.</br></br> Der Grubbs-Test, auch bekannt als Extreme Studentized Deviate (ESD)-Methode, ist ein häufig verwendetes statistisches Verfahren zur Erkennung eines einzelnen Ausreißers in einer univariaten, normalverteilten Datenmenge.</br></br> Ziel ist es zu bestimmen, ob der extremste Wert signifikant von den anderen abweicht, also ein Ausreißer ist.</br></br> Interne Analyse-Schritte:</br> Berechne den Mittelwert (μ) und die Standardabweichung (σ) des vollständigen Datensatzes (inklusive des vermuteten Ausreißers, im Gegensatz zum robusten ROUT-Ansatz)</br> Berechne die Grubbs-Teststatistik (G auch bekannt als Z):</br></br> Berechne den kritischen Wert nach Grubbs’ Formel:</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Vergleiche das berechnete G mit dem kritischen Wert aus Grubbs’ Tabelle (abhängig von Stichprobengröße und Signifikanzniveau). Wenn G den kritischen Wert überschreitet, gilt der Wert als statistisch signifikanter Ausreißer.</br></br> Iterative Anwendung:</br> Obwohl der klassische Test jeweils nur einen Ausreißer erkennt, kann er wiederholt angewendet werden, um mehrere Ausreißer zu identifizieren — jeweils einen entfernen und neu testen.</br></br>"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Testul Grubbs pentru detectarea valorilor extreme",
+    "navigation": "Testul Grubbs pentru valori extreme",
+    "variableListSelcted": "Selectează una sau mai multe variabile",
+    "alpha": "Alfa: % șansă (implicit 5%), cel mai îndepărtat punct față de medie identificat ca valoare extremă",
+    "plotShowOutliersChk": "Afișează graficul cu toate punctele, inclusiv valorile extreme (dacă există)",
+    "help": {
+        "title": "Testul Grubbs pentru detectarea valorilor extreme",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Descriere</b></br> Determină dacă punctul extrem din variabilă (valori Y, nu este necesară o variabilă X) este o valoare extremă.</br></br> Testul Grubbs, cunoscut și sub denumirea de metoda ESD (Extreme Studentized Deviate), este o metodă statistică utilizată pe scară largă pentru a detecta un singur outlier într-un set de date univariat care urmează o distribuție normală.</br></br> Scopul este de a determina dacă valoarea cea mai extremă este semnificativ diferită de celelalte, adică dacă este o valoare extremă.</br></br> Pașii analizei interne:</br> Se calculează media (μ) și deviația standard (σ) a întregului set de date (inclusiv valoarea suspectă, spre deosebire de abordarea robustă ROUT)</br> Se calculează statistica de test Grubbs (G sau Z):</br></br> Calcularea valorii critice conform formulei Grubbs:</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Compararea valorii G calculate cu valoarea critică din tabelul Grubbs (în funcție de dimensiunea eșantionului și nivelul de semnificație). Dacă G depășește valoarea critică, valoarea este considerată un outlier semnificativ statistic.</br></br> Utilizare repetitivă:</br> Deși testul clasic detectează doar un outlier odată, poate fi aplicat repetitiv pentru a detecta mai mulți outlieri — eliminând câte un outlier și reluând testul pe datele rămase.</br></br>"
+    }
+}

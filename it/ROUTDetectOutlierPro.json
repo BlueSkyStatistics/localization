@@ -1,0 +1,15 @@
+{
+  "title": "Rilevamento Outlier con Metodo ROUT",
+  "navigation": "Test Outlier ROUT",
+  "variableListSelcted": "Seleziona una o più variabili",
+  "adjPvalue": "Regola i valori p dal confronto delle medie",
+  "FDR_Q": "Specifica il massimo tasso di Falso Scoperta (FDR) desiderato (default 1%)",
+  "plotShowOutliersChk": "Grafico per mostrare tutti i punti inclusi gli outlier, se presenti",
+  "showOnlyOuliersInSummaryTableChk": "Mostra tabella riepilogativa dell’analisi con solo outlier, se presenti",
+  "showAllPointsInSummaryTableChk": "Mostra tabella riepilogativa dell’analisi con tutti i punti",
+  "help": {
+    "title": "Metodo ROUT (Regressione Robusta) per il Rilevamento degli Outlier",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Descrizione</b><br>ROUT (Regressione Robusta e Rimozione degli Outlier) è un metodo potente e moderno per rilevare uno o più outlier. Originariamente sviluppato per la regressione non lineare, l’approccio ROUT può essere adattato per uso generale, inclusa l’identificazione degli outlier in una variabile (una colonna di dati in un dataset).<br><br>ROUT combina due idee potenti:<br>Modellazione robusta — che limita l’influenza (cioè l’impatto minimo) dei potenziali outlier durante la stima delle tendenze centrali.<br>Tasso di falsi positivi (FDR) — un metodo di controllo statistico che determina quanti degli outlier rilevati potrebbero effettivamente essere falsi positivi.<br><br>Metodi di aggiustamento del valore p:<br>Includono la correzione di Bonferroni («bonferroni») in cui i valori p sono moltiplicati per il numero di confronti, correzioni meno conservative come Holm («holm»), Hochberg («hochberg»), Hommel («hommel»), Benjamini & Hochberg («BH» o alias «fdr») e Benjamini & Yekutieli («BY»). È inclusa anche un’opzione senza correzione («none»).<br><br>I primi quattro metodi sono progettati per fornire un forte controllo del tasso di errore familiare. I metodi di Hochberg e Hommel sono validi quando i test delle ipotesi sono indipendenti o associati in modo non negativo.<br><br>I metodi «BH» e «BY» controllano il tasso di falsi positivi, che è meno restrittivo rispetto al tasso di errore familiare, e quindi sono più potenti.<br><br>Rileva gli outlier in una variabile, cioè valori Y (nessuna variabile X richiesta).<br><br>Passaggi interni all’analisi:<br>Assegna valori X fittizi: 1, 2, ..., n<br>Adatta il modello: Y = M (media costante) usando regressione robusta (rlm dal pacchetto MASS)<br>Calcola i residui dalla regressione robusta<br>Usa residui studentizzati<br>Applica la correzione FDR con Q definito dall’utente (default 1%)<br>Segna gli outlier dove il valore p corretto FDR < Q/100<br><br>Per maggiori dettagli:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

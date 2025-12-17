@@ -1,0 +1,22 @@
+{
+    "title": "Response Screening",
+    "navigation": "Response Screening",
+    "responses": "Choose one or more response (dependent) variables",
+    "predictors": "Choose one or more predictor (independent) variables",
+    "sortOrder": "Sort order for the Response Screening summary table",
+    "maxNumberOfPredictor": "Maximum number of predictors combination to use (main effect analysis)",
+    "adjPvalue": "Adjust p-values method (default is FDR)",
+    "label1": "Show optional columns in Response Screening table",
+    "showOptionalColumn_CountChk": "Count",
+    "showOptionalColumn_p_valueChk": "p.value",
+    "showOptionalColumn_Log_pvalChk": "Log_pval",
+    "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+    "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+    "showOptionalColumn_EffectSizeChk": "EffectSize",
+    "showOptionalColumn_RSquareChk": "RSquare",
+    "help": {
+        "title": "Response Screening",
+        "r_help": "help(p.adjust, package = stats)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tPerforms an automated response screening to identify statistically significant predictors for one or more response variables.\n\t\t\t\t<br/>\n\t\t\t\tIt systematically fits models using all possible combinations of predictors (up to a user-specified limit - default is 1) to analyze main effect and reports key statistics \n\t\t\t\tsuch as p-values, -log10(p-value), adjusted p-value with FDR, -log10(FDR), effect sizes, and R² values.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNote on FDR:\n\t\t\t\t<br/>\n\t\t\t\tWhen performing many hypothesis tests (as in response screening across multiple predictors), some significant p-values can occur by chance.\n\t\t\t\t<br/>\n\t\t\t\tThe False Discovery Rate (FDR) adjustment helps control this by estimating the expected proportion of false positives among all significant results.\n\t\t\t\t<br/>\n\t\t\t\tThe function uses the Benjamini–Hochberg procedure (p.adjust(..., method = \"fdr\")) to compute FDR-adjusted p-values, shown as FDR_pval.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval gives a more conservative significance estimate that accounts for multiple comparisons.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) transforms the adjusted p-value to the same scale as LogWorth i.e. -log10(p-value), making it easy to rank predictors even after correction.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAutomatic model generation:\n\t\t\t\t<br/>\n\t\t\t\tTests every possible combination of predictor variables up to a chosen maximum number (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tFor example, set max_predictors = 1 to test only single predictors, 2 for pairs, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFlexible response handling:\n\t\t\t\t<br/>\n\t\t\t\tContinuous responses → Linear regression (lm())\n\t\t\t\t<br/>\n\t\t\t\tBinary categorical responses → Logistic regression (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEffect size calculatiob formulas:\n\t\t\t\t<br/>\n\t\t\t\tContinuous Y: Square root of the average sum of squares from the hypothesis test divided by a robust estimate of response SD (using IQR/1.3489795 if IQR > range/20, else sample SD).\n\t\t\t\t<br/>\n\t\t\t\tCategorical Y, continuous X: Square root of the average model ChiSquare value.\n\t\t\t\t<br/>\n\t\t\t\tCategorical Y, categorical X: Square root of the average Pearson ChiSquare value.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMultiple testing correction:\n\t\t\t\t<br/>\n\t\t\t\tAdjusts all p-values using the False Discovery Rate (FDR) method, adding FDR_PValue and FDR_Logworth columns.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorth metric:\n\t\t\t\tReports -log10(p-value) and -log10(FDR-adjusted p-value) for ranking significance (larger = more significant).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAutomatic case filtering:\n\t\t\t\tSkips any response with fewer than min_cases (default is 2) valid observations.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

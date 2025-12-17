@@ -1,0 +1,32 @@
+{
+  "title": "분산의 동등성",
+  "navigation": "분산의 동등성",
+  "label1": "테스트 선택",
+  "bartlett": "바틀렛 테스트",
+  "levene": "레빈 테스트",
+  "fligner": "플리그너–킬린 테스트",
+  "normal_distribution": "정규 분포 기반 테스트",
+  "pairwiseLeveneTest": "쌍별 레빈 테스트",
+  "label2": "데이터 형식",
+  "wide": "넓은 형식",
+  "long": "긴 형식",
+  "label3": "신뢰 수준",
+  "label4": "대립 가설",
+  "alt1": "양측",
+  "alt2": "더 큼",
+  "alt3": "더 작음",
+  "label5": "P-값 조정 방법 (쌍별 레빈 테스트용)",
+  "padj1": "홀름",
+  "padj2": "호흐베르크",
+  "padj3": "홈멜",
+  "padj4": "본페로니",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "없음",
+  "help": {
+    "title": "분산의 동등성 테스트",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>설명</b><br/>\n여러 그룹 간의 분산 동등성 테스트를 수행합니다.<br/>\n<ul>\n<li><b>바틀렛 테스트</b>: 정규성에서의 이탈에 민감합니다.</li>\n<li><b>레빈 테스트</b>: 비정규성에 더 강건합니다.</li>\n<li><b>플리그너–킬린 테스트</b>: 비모수적이며 매우 강건합니다.</li>\n</ul>\n<b>인수</b><br/>\n- alternative: two.sided, greater, 또는 less.<br/>\n- conf.level: 구간 추정에 대한 신뢰 수준.<br/>\n- format: 넓은 형식 또는 긴 데이터 레이아웃.<br/>\n- p.adjust.method: 다중 비교 조정 방법.\n"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Varyansların Eşitliği",
+  "navigation": "Varyansların Eşitliği",
+  "label1": "Testleri seçin",
+  "bartlett": "Bartlett Testi",
+  "levene": "Levene Testi",
+  "fligner": "Fligner–Killeen Testi",
+  "normal_distribution": "Normal dağılıma dayalı test",
+  "pairwiseLeveneTest": "Çift yönlü Levene testi",
+  "label2": "Veri formatı",
+  "wide": "Geniş format",
+  "long": "Uzun format",
+  "label3": "Güven düzeyi",
+  "label4": "Alternatif hipotez",
+  "alt1": "İki yönlü",
+  "alt2": "Büyüktür",
+  "alt3": "Küçüktür",
+  "label5": "P-değeri ayarlama yöntemi (çift yönlü Levene testi için)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Hiçbiri",
+  "help": {
+    "title": "Varyansların Eşitliği için Testler",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Açıklama</b><br/>\nBirden fazla grup arasında varyansların eşitliği için testler gerçekleştirir.<br/>\n<ul>\n<li><b>Bartlett testi</b>: Normaliteden sapmalara duyarlıdır.</li>\n<li><b>Levene testi</b>: Normal olmayan durumlara daha dayanıklıdır.</li>\n<li><b>Fligner–Killeen testi</b>: Parametrik olmayan ve çok dayanıklıdır.</li>\n</ul>\n<b>Argümanlar</b><br/>\n- alternatif: iki.yönlü, büyük, veya küçük.<br/>\n- conf.level: aralık tahminleri için güven düzeyi.<br/>\n- format: Geniş veya uzun veri düzeni.<br/>\n- p.adjust.method: Çoklu karşılaştırma ayarlama yöntemi.\n"
+  }
+}

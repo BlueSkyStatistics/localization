@@ -1,0 +1,22 @@
+{
+  "title": "Filtrage des réponses",
+  "navigation": "Filtrage des réponses",
+  "responses": "Choisissez une ou plusieurs variables de réponse (dépendantes)",
+  "predictors": "Choisissez une ou plusieurs variables prédictives (indépendantes)",
+  "sortOrder": "Ordre de tri pour le tableau récapitulatif du filtrage des réponses",
+  "maxNumberOfPredictor": "Nombre maximum de combinaisons de prédicteurs à utiliser (analyse des effets principaux)",
+  "adjPvalue": "Méthode d'ajustement des p-values (par défaut FDR)",
+  "label1": "Afficher les colonnes optionnelles dans le tableau de filtrage des réponses",
+  "showOptionalColumn_CountChk": "Compter",
+  "showOptionalColumn_p_valueChk": "p.valeur",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "Taille de l'effet",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Filtrage des réponses",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tEffectue un filtrage automatisé des réponses pour identifier les prédicteurs statistiquement significatifs pour une ou plusieurs variables de réponse.\n\t\t\t\t<br/>\n\t\t\t\tIl ajuste systématiquement des modèles en utilisant toutes les combinaisons possibles de prédicteurs (jusqu'à une limite spécifiée par l'utilisateur - par défaut 1) pour analyser les effets principaux et rapporter des statistiques clés \n\t\t\t\ttelles que les p-values, -log10(p-value), p-value ajustée avec FDR, -log10(FDR), tailles d'effet et valeurs de R².\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tRemarque sur le FDR :\n\t\t\t\t<br/>\n\t\t\t\tLors de la réalisation de nombreux tests d'hypothèses (comme dans le filtrage des réponses à travers plusieurs prédicteurs), certaines p-values significatives peuvent survenir par hasard.\n\t\t\t\t<br/>\n\t\t\t\tL'ajustement du taux de fausses découvertes (FDR) aide à contrôler cela en estimant la proportion attendue de faux positifs parmi tous les résultats significatifs.\n\t\t\t\t<br/>\n\t\t\t\tLa fonction utilise la procédure de Benjamini–Hochberg (p.adjust(..., method = \"fdr\")) pour calculer les p-values ajustées par FDR, affichées comme FDR_pval.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval donne une estimation de signification plus conservatrice qui tient compte des comparaisons multiples.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) transforme la p-value ajustée à la même échelle que LogWorth c'est-à-dire -log10(p-value), facilitant le classement des prédicteurs même après correction.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGénération automatique de modèles :\n\t\t\t\t<br/>\n\t\t\t\tTeste chaque combinaison possible de variables prédictives jusqu'à un nombre maximum choisi (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tPar exemple, définissez max_predictors = 1 pour tester uniquement des prédicteurs uniques, 2 pour des paires, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGestion flexible des réponses :\n\t\t\t\t<br/>\n\t\t\t\tRéponses continues → Régression linéaire (lm())\n\t\t\t\t<br/>\n\t\t\t\tRéponses catégoriques binaires → Régression logistique (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFormules de calcul de la taille de l'effet :\n\t\t\t\t<br/>\n\t\t\t\tY continue : Racine carrée de la somme moyenne des carrés du test d'hypothèse divisée par une estimation robuste de l'écart type de la réponse (en utilisant IQR/1.3489795 si IQR > range/20, sinon écart type de l'échantillon).\n\t\t\t\t<br/>\n\t\t\t\tY catégorique, X continue : Racine carrée de la valeur moyenne du ChiSquare du modèle.\n\t\t\t\t<br/>\n\t\t\t\tY catégorique, X catégorique : Racine carrée de la valeur moyenne du ChiSquare de Pearson.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCorrection des tests multiples :\n\t\t\t\t<br/>\n\t\t\t\tAjuste toutes les p-values en utilisant la méthode du taux de fausses découvertes (FDR), ajoutant les colonnes FDR_PValue et FDR_Logworth.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMétrique LogWorth :\n\t\t\t\tRapporte -log10(p-value) et -log10(p-value ajustée par FDR) pour classer la signification (plus grand = plus significatif).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFiltrage automatique des cas :\n\t\t\t\tIgnore toute réponse avec moins de min_cases (par défaut 2) observations valides.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

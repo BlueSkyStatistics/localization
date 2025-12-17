@@ -1,0 +1,22 @@
+{
+  "title": "Yanıt Tarama",
+  "navigation": "Yanıt Tarama",
+  "responses": "Bir veya daha fazla yanıt (bağımlı) değişken seçin",
+  "predictors": "Bir veya daha fazla tahmin edici (bağımsız) değişken seçin",
+  "sortOrder": "Yanıt Tarama özet tablosu için sıralama düzeni",
+  "maxNumberOfPredictor": "Kullanılacak maksimum tahmin edici kombinasyonu (ana etki analizi)",
+  "adjPvalue": "Ayarlama p-değerleri yöntemi (varsayılan FDR'dir)",
+  "label1": "Yanıt Tarama tablosunda isteğe bağlı sütunları göster",
+  "showOptionalColumn_CountChk": "Sayı",
+  "showOptionalColumn_p_valueChk": "p.değeri",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "Etkileşim Büyüklüğü",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Yanıt Tarama",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBir veya daha fazla yanıt değişkeni için istatistiksel olarak anlamlı tahmin edicileri belirlemek amacıyla otomatik bir yanıt taraması gerçekleştirir.\n\t\t\t\t<br/>\n\t\t\t\tAna etkiyi analiz etmek için tüm olası tahmin edici kombinasyonlarını (kullanıcı tarafından belirtilen bir sınıra kadar - varsayılan 1'dir) sistematik olarak modellemektedir ve p-değerleri, -log10(p-değeri), FDR ile ayarlanmış p-değeri, -log10(FDR), etki büyüklükleri ve R² değerleri gibi ana istatistikleri rapor etmektedir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFDR hakkında not:\n\t\t\t\t<br/>\n\t\t\t\tBirçok hipotez testi gerçekleştirildiğinde (birden fazla tahmin edici üzerinden yanıt taraması gibi), bazı anlamlı p-değerleri şansa bağlı olarak ortaya çıkabilir.\n\t\t\t\t<br/>\n\t\t\t\tYanlış Keşif Oranı (FDR) ayarlaması, tüm anlamlı sonuçlar arasında yanlış pozitiflerin beklenen oranını tahmin ederek bunu kontrol etmeye yardımcı olur.\n\t\t\t\t<br/>\n\t\t\t\tFonksiyon, FDR-ayarlanmış p-değerlerini hesaplamak için Benjamini–Hochberg prosedürünü (p.adjust(..., method = \"fdr\")) kullanır ve bunlar FDR_pval olarak gösterilir.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval, çoklu karşılaştırmaları dikkate alan daha muhafazakar bir anlamlılık tahmini sağlar.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval), ayarlanmış p-değerini LogWorth ile aynı ölçeğe dönüştürür, yani -log10(p-değeri), düzeltmeden sonra bile tahmin edicileri sıralamayı kolaylaştırır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOtomatik model oluşturma:\n\t\t\t\t<br/>\n\t\t\t\tSeçilen maksimum sayıya kadar (max_predictors) tahmin edici değişkenlerin her olası kombinasyonunu test eder.\n\t\t\t\t<br/>\n\t\t\t\tÖrneğin, yalnızca tek tahmin edicileri test etmek için max_predictors = 1, çiftler için 2 vb. ayarlayın.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEsnek yanıt yönetimi:\n\t\t\t\t<br/>\n\t\t\t\tSürekli yanıtlar → Doğrusal regresyon (lm())\n\t\t\t\t<br/>\n\t\t\t\tİkili kategorik yanıtlar → Lojistik regresyon (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEtkileşim büyüklüğü hesaplama formülleri:\n\t\t\t\t<br/>\n\t\t\t\tSürekli Y: Hipotez testinden elde edilen ortalama kare toplamının karekökü, sağlam bir yanıt SD tahmini (IQR/1.3489795 kullanarak, eğer IQR > aralık/20 ise, aksi takdirde örnek SD) ile bölünmüştür.\n\t\t\t\t<br/>\n\t\t\t\tKategorik Y, sürekli X: Ortalama model ChiSquare değerinin karekökü.\n\t\t\t\t<br/>\n\t\t\t\tKategorik Y, kategorik X: Ortalama Pearson ChiSquare değerinin karekökü.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÇoklu test düzeltmesi:\n\t\t\t\t<br/>\n\t\t\t\tTüm p-değerlerini Yanlış Keşif Oranı (FDR) yöntemi kullanarak ayarlar, FDR_PValue ve FDR_Logworth sütunları ekler.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorth metriği:\n\t\t\t\tAnlamlılığı sıralamak için -log10(p-değeri) ve -log10(FDR-ayarlanmış p-değeri) rapor eder (daha büyük = daha anlamlı).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOtomatik durum filtreleme:\n\t\t\t\tmin_cases (varsayılan 2) geçerli gözlem sayısından daha az olan herhangi bir yanıtı atlar.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

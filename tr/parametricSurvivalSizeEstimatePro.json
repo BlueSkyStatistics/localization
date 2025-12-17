@@ -1,0 +1,33 @@
+{
+  "title": "Parametrik Hayatta Kalma Test Planları Tahmini",
+  "navigation": "Parametrik Hayatta Kalma Test Planı",
+  "labelDistribution": "Verilere en uygun dağılım fonksiyonunu seçin",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Üstel",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncLogLogisRad": "Log Lojistik",
+  "selectDistFuncGammaRad": "Gamma",
+  "labelDistributionParam": "Seçilen Dağılım için parametreyi belirtin (örneğin, Weibull için şekil ve boyut veya dağılım parametrelerini tahmin etmek için zaman ve olay yüzdeleri belirtin)",
+  "labelDistParamOption1": "Seçenek 1 - Seçilen dağılım için parametreyi belirtin",
+  "shape": "Weibull, loglojistik veya gamma için şekil parametresini veya lognormal için ortalamayı belirtin",
+  "scale": "Weibull, üstel, loglojistik veya gamma için ölçek parametresini veya lognormal için sdlog'u belirtin",
+  "labelDistParamOption2": "Seçenek 2 - Seçilen dağılım için parametreleri hesaplamak için zaman ve % olay (yani, arızalar) belirtin",
+  "PercentileTime": "Dağılım parametrelerini tahmin etmek için kullanılacak iki virgülle ayrılmış sayısal zaman değeri belirtin (örneğin, 100, 500)",
+  "PercentileEvent": "Dağılım parametrelerini tahmin etmek için kullanılacak olay için iki virgülle ayrılmış sayısal yüzde değeri belirtin, örneğin % arıza (10, 30)",
+  "parameter": "İstenilen yüzde olayı belirtmek için Yüzde'yi seçin, örneğin, % arıza. Eğer Yüzde boş bırakılırsa ve ölçek seçilirse, Yüzde otomatik olarak Weibull ve üstel için %63.2121 ve diğer tüm dağılımlar için %50 olarak varsayılacaktır, eğer konum seçilmişse",
+  "p": "Olay için Yüzde (örneğin, 10) e.g. arıza",
+  "precision": "Tahmin etmek için CI sınırından uzaklık olarak bir veya daha fazla değer virgülle ayrılmış olarak",
+  "boundType": "Sınır türü (varsayılan alt)",
+  "censorTime": "Varsa, belirtilen zaman, örneğin 1000",
+  "confidenceInterval": "Güven düzeyi (varsayılan 0.95)",
+  "labelAdvancedOptions": "Gelişmiş Seçenekler (varsayılan olarak bırakın)",
+  "pilotDataLength": "Simülasyonlar için kullanılacak veri satırı sayısı (varsayılan 2000)",
+  "bootIter": "Bootstrap yinelemesi",
+  "seed": "Rastgeleleştirme tohumu, dört rakamın herhangi bir kombinasyonu",
+  "repeatSampleSizeCalculation": "Ortalama almak için örnek boyutu hesaplamalarını tekrarlayın (tohum alanı boş olmalıdır)",
+  "help": {
+    "title": "Parametrik Hayatta Kalma Test Planları Tahmini",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

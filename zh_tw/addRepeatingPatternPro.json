@@ -1,0 +1,13 @@
+{
+  "title": "新增重複模式變數",
+  "navigation": "新增重複模式",
+  "repeatPatternVarName": "用於數值重複模式的變數名稱（如果變數已存在則更新）",
+  "repeatingValues": "以逗號分隔的數字和/或文字值將重複使用（例如：1,Blue,5,Bad,Good,3,7,0）",
+  "repeatFrequencyEach": "（可選）每個項目重複的次數，以逗號分隔（例如：1,5,2,2,2,3,3,3）",
+  "times": "整個項目組要重複的次數（若留空，將重複模式直至填滿資料集長度）",
+  "help": {
+    "title": "新增重複模式變數",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>說明</b></br>\n\t\t\t\t在資料集中加入指定重複模式的變數（即欄位）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t在資料集的新欄位中產生文字字串、數值模式或兩者的組合（例如：5次紅 / 5次藍 / 5次黃 → 重複10次的序列 或 3x1 / 3x2 / 3x3 的序列）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

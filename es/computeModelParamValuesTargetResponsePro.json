@@ -1,0 +1,21 @@
+{
+  "title": "Calcular los valores de las variables del modelo para lograr la respuesta objetivo",
+  "label100": "Este diálogo calcula las variables del modelo para lograr el valor de respuesta objetivo del modelo.\nNota: Si hay alguna variable no numérica presente en el modelo seleccionado, el cálculo de la respuesta objetivo fallará.",
+  "navigation": "Calcular respuesta objetivo",
+  "modelSelection": "Seleccione un modelo para calcular los valores óptimos de las variables",
+  "targetResponse": "Especifique el valor de respuesta objetivo (numérico) deseado para el modelo seleccionado",
+  "targetResponseLower": "(Opcional) Especifique el valor de respuesta objetivo inferior (numérico) deseado para el modelo seleccionado",
+  "targetResponseUpper": "(Opcional) Especifique el valor de respuesta objetivo superior (numérico) deseado para el modelo seleccionado",
+  "label200": "Restricciones del optimizador de respuesta objetivo",
+  "label12": "Variables (factores) en el modelo seleccionado enumeradas a continuación en el mismo orden en que aparecen en el modelo",
+  "factorConstraintUseDatasetLowerChk": "Restricciones de límite inferior: Si está marcado, se utilizará el valor mínimo de cada variable utilizada en el modelo como límite inferior",
+  "factorConstraintLower": "Restricciones de límite inferior: (Ignorado si está marcado arriba) Deje vacío si no hay restricciones en el límite inferior para los valores de las variables del modelo (es decir, factores). De lo contrario, debe escribir valores separados por comas para cada variable del modelo. Si una variable del modelo particular no tiene límite inferior, escriba -Inf, por ejemplo, 0, 0.1, -Inf, 20",
+  "factorConstraintUseDatasetUpperChk": "Restricciones de límite superior: Si está marcado, se utilizará el valor máximo de cada variable utilizada en el modelo como límite superior",
+  "factorConstraintUpper": "Restricciones de límite superior: (Ignorado si está marcado arriba) Deje vacío si no hay restricciones en el límite superior para los valores de las variables del modelo (es decir, factores). De lo contrario, debe escribir valores separados por comas para cada variable del modelo. Si una variable del modelo particular no tiene límite superior, escriba Inf, por ejemplo, 0, 0.2, 0.9, Inf",
+  "factorInitalValues": "Valores iniciales: Deje vacío para que el sistema elija los valores iniciales para las variables del modelo (es decir, factores) (predeterminado: todos ceros). De lo contrario, debe escribir valores separados por comas para cada variable del modelo, por ejemplo, 0, 0, 0, 0",
+  "help": {
+    "title": "Calcular los valores de las variables del modelo (factores) para la respuesta objetivo para el modelo seleccionado",
+    "r_help": "help(optim, package = 'stats')",
+    "body": "\n        "
+  }
+}

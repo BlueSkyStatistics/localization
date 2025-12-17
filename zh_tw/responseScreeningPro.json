@@ -1,0 +1,22 @@
+{
+  "title": "回應篩選",
+  "navigation": "回應篩選",
+  "responses": "選擇一個或多個回應（依賴）變數",
+  "predictors": "選擇一個或多個預測（獨立）變數",
+  "sortOrder": "回應篩選摘要表的排序順序",
+  "maxNumberOfPredictor": "可使用的最大預測變數組合數（主效應分析）",
+  "adjPvalue": "調整 p 值的方法（預設為 FDR）",
+  "label1": "在回應篩選表中顯示可選列",
+  "showOptionalColumn_CountChk": "計數",
+  "showOptionalColumn_p_valueChk": "p 值",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "效應大小",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "回應篩選",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t執行自動回應篩選，以識別一個或多個回應變數的統計顯著預測變數。\n\t\t\t\t<br/>\n\t\t\t\t它系統性地使用所有可能的預測變數組合（最多到用戶指定的限制 - 預設為 1）來擬合模型，以分析主效應並報告關鍵統計數據\n\t\t\t\tsuch as p 值、-log10(p 值)、使用 FDR 調整的 p 值、-log10(FDR)、效應大小和 R² 值。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t關於 FDR 的說明：\n\t\t\t\t<br/>\n\t\t\t\t在進行多次假設檢驗時（如在多個預測變數的回應篩選中），某些顯著的 p 值可能是偶然出現的。\n\t\t\t\t<br/>\n\t\t\t\t假陽性率（FDR）調整有助於控制這一點，通過估計所有顯著結果中假陽性的預期比例。\n\t\t\t\t<br/>\n\t\t\t\t該函數使用 Benjamini–Hochberg 程序 (p.adjust(..., method = \"fdr\")) 計算 FDR 調整的 p 值，顯示為 FDR_pval。\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval 提供了一個更保守的顯著性估計，考慮了多重比較。\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) 將調整後的 p 值轉換為與 LogWorth 相同的尺度，即 -log10(p 值)，使得即使在校正後也能輕鬆對預測變數進行排名。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t自動模型生成：\n\t\t\t\t<br/>\n\t\t\t\t測試每個可能的預測變數組合，直到選擇的最大數量（max_predictors）。\n\t\t\t\t<br/>\n\t\t\t\t例如，設置 max_predictors = 1 以僅測試單個預測變數，2 以測試成對等。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t靈活的回應處理：\n\t\t\t\t<br/>\n\t\t\t\t連續回應 → 線性回歸 (lm())\n\t\t\t\t<br/>\n\t\t\t\t二元類別回應 → 邏輯回歸 (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t效應大小計算公式：\n\t\t\t\t<br/>\n\t\t\t\t連續 Y：假設檢驗的平均平方和的平方根除以回應 SD 的穩健估計（如果 IQR > range/20，則使用 IQR/1.3489795，否則使用樣本 SD）。\n\t\t\t\t<br/>\n\t\t\t\t類別 Y，連續 X：平均模型 ChiSquare 值的平方根。\n\t\t\t\t<br/>\n\t\t\t\t類別 Y，類別 X：平均 Pearson ChiSquare 值的平方根。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t多重檢驗修正：\n\t\t\t\t<br/>\n\t\t\t\t使用假陽性率（FDR）方法調整所有 p 值，添加 FDR_PValue 和 FDR_Logworth 列。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorth 指標：\n\t\t\t\t報告 -log10(p 值) 和 -log10(FDR 調整的 p 值) 以排名顯著性（越大 = 越顯著）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t自動案例篩選：\n\t\t\t\t跳過任何具有少於 min_cases（預設為 2）個有效觀察的回應。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

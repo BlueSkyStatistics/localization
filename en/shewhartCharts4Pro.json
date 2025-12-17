@@ -59,6 +59,10 @@
     "test7": "K points in a row within 1σ of center line either side (default 15)",
     "test8": "K points in a row more than 1σ from center line either side (defualt 8)",
     "sigmaSymbol": "If the sigma symbol 'σ' is not printed correctly in the output, specify a character or string e.g. s or sigma in place of σ symbol",
+    "chart_title": "Enter a title",
+    "x_title": "X axis label",
+    "y_title": "Y axis label",
+    "supressSampleSizeInfoChk": "Supress sample size info in the chart title",
     "help": {
         "title": "Shewhart charts (I-MR Between/Within Charts)",
         "r_help": "help(qcc, package = qcc)",

@@ -1,0 +1,22 @@
+{
+  "title": "Filtrado de Respuestas",
+  "navigation": "Filtrado de Respuestas",
+  "responses": "Elija una o más variables de respuesta (dependientes)",
+  "predictors": "Elija una o más variables predictoras (independientes)",
+  "sortOrder": "Orden de clasificación para la tabla resumen de Filtrado de Respuestas",
+  "maxNumberOfPredictor": "Número máximo de combinaciones de predictores a utilizar (análisis de efecto principal)",
+  "adjPvalue": "Método de ajuste de p-valores (el valor predeterminado es FDR)",
+  "label1": "Mostrar columnas opcionales en la tabla de Filtrado de Respuestas",
+  "showOptionalColumn_CountChk": "Contar",
+  "showOptionalColumn_p_valueChk": "p.valor",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "Tamaño del Efecto",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Filtrado de Respuestas",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tRealiza un filtrado de respuestas automatizado para identificar predictores estadísticamente significativos para una o más variables de respuesta.\n\t\t\t\t<br/>\n\t\t\t\tAjusta sistemáticamente modelos utilizando todas las combinaciones posibles de predictores (hasta un límite especificado por el usuario - el valor predeterminado es 1) para analizar el efecto principal y reporta estadísticas clave \n\t\t\t\tsuch as p-valores, -log10(p-valor), p-valor ajustado con FDR, -log10(FDR), tamaños de efecto y valores de R².\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNota sobre FDR:\n\t\t\t\t<br/>\n\t\t\t\tAl realizar muchas pruebas de hipótesis (como en el filtrado de respuestas a través de múltiples predictores), algunos p-valores significativos pueden ocurrir por casualidad.\n\t\t\t\t<br/>\n\t\t\t\tEl ajuste de la Tasa de Falsos Descubrimientos (FDR) ayuda a controlar esto estimando la proporción esperada de falsos positivos entre todos los resultados significativos.\n\t\t\t\t<br/>\n\t\t\t\tLa función utiliza el procedimiento de Benjamini–Hochberg (p.adjust(..., method = \"fdr\")) para calcular p-valores ajustados por FDR, mostrados como FDR_pval.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval proporciona una estimación de significancia más conservadora que toma en cuenta múltiples comparaciones.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) transforma el p-valor ajustado a la misma escala que LogWorth es decir, -log10(p-valor), facilitando la clasificación de los predictores incluso después de la corrección.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGeneración automática de modelos:\n\t\t\t\t<br/>\n\t\t\t\tPrueba cada combinación posible de variables predictoras hasta un número máximo elegido (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tPor ejemplo, establezca max_predictors = 1 para probar solo predictores individuales, 2 para pares, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tManejo flexible de respuestas:\n\t\t\t\t<br/>\n\t\t\t\tRespuestas continuas → Regresión lineal (lm())\n\t\t\t\t<br/>\n\t\t\t\tRespuestas categóricas binarias → Regresión logística (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFórmulas de cálculo del tamaño del efecto:\n\t\t\t\t<br/>\n\t\t\t\tY continua: Raíz cuadrada de la suma promedio de cuadrados de la prueba de hipótesis dividida por una estimación robusta de la SD de respuesta (usando IQR/1.3489795 si IQR > rango/20, de lo contrario SD de muestra).\n\t\t\t\t<br/>\n\t\t\t\tY categórica, X continua: Raíz cuadrada del valor promedio del ChiCuadrado del modelo.\n\t\t\t\t<br/>\n\t\t\t\tY categórica, X categórica: Raíz cuadrada del valor promedio del ChiCuadrado de Pearson.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCorrección de pruebas múltiples:\n\t\t\t\t<br/>\n\t\t\t\tAjusta todos los p-valores utilizando el método de Tasa de Falsos Descubrimientos (FDR), añadiendo columnas FDR_PValue y FDR_Logworth.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMétrica LogWorth:\n\t\t\t\tReporta -log10(p-valor) y -log10(p-valor ajustado por FDR) para clasificar la significancia (mayor = más significativo).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFiltrado automático de casos:\n\t\t\t\tSalta cualquier respuesta con menos de min_cases (el valor predeterminado es 2) observaciones válidas.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

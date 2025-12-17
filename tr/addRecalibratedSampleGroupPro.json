@@ -1,0 +1,10 @@
+{
+  "title": "Yeniden Kalibre Edilmiş Örnek Numarası Değişkeni Ekle",
+  "navigation": "Örnek Numarasını Yeniden Kalibre Et",
+  "sampleVariableToCalibrate": "Yeniden kalibre edilecek örnek değişkenini seçin",
+  "sampleVarName": "Eklemek için yeni yeniden kalibre edilmiş örnek değişkeninin adını belirtin (örn., sample_recal). Değişken adı zaten veri kümesinde mevcutsa, güncellenecektir.",
+  "help": {
+    "title": "Yeniden Kalibre Edilmiş Örnek Numarası Değişkeni Ekle",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tİşlem Yeterliliği ve diğer alt grup analizi için alt grupların (yani örnek grubu) düzenlenmesi\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tİşlem Yeterliliği analizi gibi analizler, verilerin toplandıkları sırayla (kronolojik sırayla) girildiğini varsayar. Bu, aynı alt gruptan gelen tüm gözlemlerin veri kümesinin ardışık satırlarında görünmesi gerektiği anlamına gelir. Hangi satırların aynı alt gruba ait olduğunu tanımlamak için genellikle bir alt grup ID sütunu kullanılır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBu koşul sağlanmadığında (örneğin, aynı alt gruptan gelen satırlar veri kümesinde dağılmışsa ve yan yana yer almıyorsa), alt grup ID'leri yeniden kalibre edilmelidir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYeniden kalibrasyon, şu anlama gelir:\n\t\t\t\t<br/>\n\t\t\t\tAlt grup ID'si bir satırdan diğerine geçtiğinde yeni bir alt grup numarası atanır.\n\t\t\t\t<br/>\n\t\t\t\tAynı alt grup ID'si daha sonra tekrar ortaya çıkarsa ancak önceki durumuna bitişik değilse, yeni bir alt grup olarak kabul edilir.\n\t\t\t\t<br/>\n\t\t\t\tDiğer bir deyişle, yan yana bulunan yalnızca aynı değerler aynı alt grubun parçası olarak kabul edilir. Diğer alt gruplar tarafından ayrılan aynı değerler, yeniden kalibrasyon sırasında ayrı alt gruplara bölünecektir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVeri kümesindeki yeniden kalibre edilmiş örnek numarası değişkeni, birçok analizi gerçekleştirmek için gereklidir, örn. İşlem Yeterliliği, Shewhart grafikler gibi xbar, R, S, vb.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "ROUT離群值檢測",
+  "navigation": "ROUT離群值測試",
+  "variableListSelcted": "選擇一個或多個變數",
+  "adjPvalue": "調整均值比較的p值",
+  "FDR_Q": "指定最大期望的假發現率(FDR)（預設1%）",
+  "plotShowOutliersChk": "繪圖顯示所有點，包括離群值（如有）",
+  "showOnlyOuliersInSummaryTableChk": "僅顯示包含離群值的分析摘要表（如有）",
+  "showAllPointsInSummaryTableChk": "顯示包含所有點的分析摘要表",
+  "help": {
+    "title": "用於離群值檢測的ROUT（穩健回歸）方法",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>描述</b><br>ROUT（穩健回歸與離群值剔除）是一種強大且現代的方法，用於檢測一個或多個離群值。<br>最初為非線性回歸開發，ROUT方法可適用於通用場景，<br>包括識別變數（資料集中的欄）中的離群值。<br><br>ROUT結合了兩個強大思想：<br>穩健模型擬合——在估計中心趨勢時限制潛在離群值的影響（即影響較小）。<br>假發現率（FDR）——一種統計控制方法，用於確定檢測出的離群值中可能為假陽性的數量。<br><br>調整P值方法：<br>調整P值方法包括Bonferroni校正（\"bonferroni\"），其中p值乘以比較次數。<br>還有Holm（1979）（\"holm\"）、Hochberg（1988）（\"hochberg\"）、Hommel（1988）（\"hommel\"）、Benjamini & Hochberg（1995）（\"BH\"或別名\"fdr\"）和Benjamini & Yekutieli（2001）（\"BY\"）等較不保守的校正方法。<br>還包括一個通用選項（\"none\"）。<br><br>前四種方法旨在強有力地控制家族錯誤率。<br>無修改的Bonferroni校正幾乎無用，因為Holm方法優於它，且在任意假設下有效。<br><br>Hochberg和Hommel方法在假設檢定相互獨立或非負相關時有效。<br>Hommel方法比Hochberg更強大，但差異通常較小，且Hochberg的p值計算更快。<br><br>Benjamini、Hochberg和Yekutieli的\"BH\"（即\"fdr\"）和\"BY\"方法控制假發現率，即在拒絕的假設中預計的假陽性比例。<br>假發現率條件較家族錯誤率寬鬆，因此這些方法更有力。<br><br>檢測變數中的離群值，即Y值（不需要X變數）。<br><br>內部分析步驟：<br>分配虛擬X值：1、2、...、n<br>擬合模型：Y = M（即常數均值），使用穩健回歸（MASS包中的rlm）<br>計算穩健擬合的殘差<br>使用學生化殘差<br>使用用戶定義的Q（預設1%）應用FDR校正<br>標記FDR調整後的p值 < Q/100的離群值<br><br>更多詳情請參見<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

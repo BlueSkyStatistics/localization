@@ -1,0 +1,11 @@
+{
+  "title": "모델 그리기",
+  "navigation": "모델 그리기",
+  "modelselector1": "다음 클래스 중 하나의 모델을 선택하십시오 (괄호 안의 클래스) 선형 모델 (lm), 일반화 선형 모델 (glm)",
+  "plotScatterModelXY":"모델 매개변수 x와 y의 산점도를 모델 적합선과 함께 그립니다",
+  "help": {
+    "title": "모델 그리기",
+    "r_help": "help(plot, package ='graphics')",
+    "body": "\n                <b>설명</b></br>\nR 객체를 그리기 위한 일반적인 함수입니다. 그래픽 매개변수 인수에 대한 자세한 내용은 par을 참조하십시오.\n간단한 산점도의 경우 plot.default가 사용됩니다. 그러나 함수, 데이터 프레임, 밀도 객체 등 다양한 R 객체에 대한 플롯 메서드가 있습니다. methods(plot) 및 이러한 문서를 사용하십시오.\n<br/>\n<b>사용법</b>\n<br/>\n<code> \nplot(object)\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\nobject: 플롯 메서드가 있는 모든 R 객체를 제공할 수 있습니다.\n</li>\n</ul>\n<b>패키지</b></br>\ngraphics</br>\n<b>도움말</b></br>\n자세한 도움말은 이 대화 상자의 오른쪽 상단에 있는 R 아이콘을 클릭하거나 R 구문 편집기에서 다음 명령을 실행하십시오 help(plot, package ='graphics')\n"
+  }
+}

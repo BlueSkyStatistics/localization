@@ -1,0 +1,22 @@
+{
+  "title": "Triagem de Respostas",
+  "navigation": "Triagem de Respostas",
+  "responses": "Escolha uma ou mais variáveis de resposta (dependentes)",
+  "predictors": "Escolha uma ou mais variáveis preditoras (independentes)",
+  "sortOrder": "Ordem de classificação para a tabela resumo da Triagem de Respostas",
+  "maxNumberOfPredictor": "Número máximo de combinações de preditores a serem usadas (análise de efeito principal)",
+  "adjPvalue": "Método de ajuste de p-values (o padrão é FDR)",
+  "label1": "Mostrar colunas opcionais na tabela de Triagem de Respostas",
+  "showOptionalColumn_CountChk": "Contagem",
+  "showOptionalColumn_p_valueChk": "p.valor",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "Tamanho do Efeito",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Triagem de Respostas",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tRealiza uma triagem automatizada de respostas para identificar preditores estatisticamente significativos para uma ou mais variáveis de resposta.\n\t\t\t\t<br/>\n\t\t\t\tAjusta sistematicamente modelos usando todas as combinações possíveis de preditores (até um limite especificado pelo usuário - o padrão é 1) para analisar o efeito principal e relata estatísticas-chave \n\t\t\t\tais como p-values, -log10(p-valor), p-valor ajustado com FDR, -log10(FDR), tamanhos de efeito e valores de R².\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNota sobre FDR:\n\t\t\t\t<br/>\n\t\t\t\tAo realizar muitos testes de hipótese (como na triagem de respostas através de múltiplos preditores), alguns p-values significativos podem ocorrer por acaso.\n\t\t\t\t<br/>\n\t\t\t\tO ajuste da Taxa de Falsas Descobertas (FDR) ajuda a controlar isso ao estimar a proporção esperada de falsos positivos entre todos os resultados significativos.\n\t\t\t\t<br/>\n\t\t\t\tA função usa o procedimento de Benjamini–Hochberg (p.adjust(..., method = \"fdr\")) para calcular p-values ajustados por FDR, mostrados como FDR_pval.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval fornece uma estimativa de significância mais conservadora que leva em conta múltiplas comparações.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) transforma o p-valor ajustado para a mesma escala que LogWorth, ou seja, -log10(p-valor), facilitando a classificação dos preditores mesmo após a correção.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGeração automática de modelos:\n\t\t\t\t<br/>\n\t\t\t\tTesta todas as combinações possíveis de variáveis preditoras até um número máximo escolhido (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tPor exemplo, defina max_predictors = 1 para testar apenas preditores únicos, 2 para pares, etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tManipulação flexível de respostas:\n\t\t\t\t<br/>\n\t\t\t\tRespostas contínuas → Regressão linear (lm())\n\t\t\t\t<br/>\n\t\t\t\tRespostas categóricas binárias → Regressão logística (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFórmulas de cálculo do tamanho do efeito:\n\t\t\t\t<br/>\n\t\t\t\tY contínua: Raiz quadrada da soma média dos quadrados do teste de hipótese dividida por uma estimativa robusta do SD da resposta (usando IQR/1.3489795 se IQR > range/20, caso contrário, SD da amostra).\n\t\t\t\t<br/>\n\t\t\t\tY categórica, X contínua: Raiz quadrada do valor médio do ChiQuadrado do modelo.\n\t\t\t\t<br/>\n\t\t\t\tY categórica, X categórica: Raiz quadrada do valor médio do ChiQuadrado de Pearson.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCorreção de testes múltiplos:\n\t\t\t\t<br/>\n\t\t\t\tAjusta todos os p-values usando o método da Taxa de Falsas Descobertas (FDR), adicionando colunas FDR_PValue e FDR_Logworth.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMétrica LogWorth:\n\t\t\t\tRelata -log10(p-valor) e -log10(p-valor ajustado por FDR) para classificar a significância (maior = mais significativo).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFiltragem automática de casos:\n\t\t\t\tIgnora qualquer resposta com menos de min_cases (o padrão é 2) observações válidas.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

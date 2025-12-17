@@ -1,0 +1,12 @@
+{
+    "title": "Grubbs 異常值檢測",
+    "navigation": "Grubbs 異常值檢測",
+    "variableListSelcted": "選擇一個或多個變數",
+    "alpha": "α：% 機率（預設 5%），最遠離平均值的點被識別為異常值",
+    "plotShowOutliersChk": "繪製圖表以顯示所有資料點（包含異常值，如有）",
+    "help": {
+        "title": "Grubbs 異常值檢測",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>說明</b></br> 判定變數中的極端值（Y 值，不需要 X 變數）是否為異常值。</br></br> Grubbs 檢定（亦稱為極端學生化偏差法，Extreme Studentized Deviate, ESD），是一種廣泛使用的統計方法，用來在服從常態分佈的單變數資料集中檢測單一異常值。</br></br> 目的是判斷資料集中最極端的值是否與其他值有顯著差異，即是否為異常值。</br></br> 內部分析步驟：</br> 計算完整資料集（包含疑似異常值）的平均值（μ）與標準差（σ）（不同於 ROUT 穩健平均值法）</br> 計算 Grubbs 檢定統計量（G 或 Z）：</br></br> 使用 Grubbs 公式計算臨界值：</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> 將計算出的 G 與 Grubbs 表格中的臨界值進行比較（依樣本大小與顯著水準決定）。若 G 超過臨界值，則該值被視為統計上顯著的異常值。</br></br> 迭代使用：</br> 雖然經典檢定一次只能檢測一個異常值，但可反覆應用──每次移除一個異常值並對剩餘資料重新進行檢定，以找出多個異常值。</br></br>"
+    }
+}

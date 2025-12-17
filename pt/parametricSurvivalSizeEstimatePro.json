@@ -1,0 +1,33 @@
+{
+  "title": "Estimativa de Planos de Teste de Sobrevivência Paramétricos",
+  "navigation": "Plano de Teste de Sobrevivência Paramétrico",
+  "labelDistribution": "Selecione uma função de distribuição que melhor se ajuste aos dados",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponencial",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncLogLogisRad": "Log Logístico",
+  "selectDistFuncGammaRad": "Gamma",
+  "labelDistributionParam": "Especifique o parâmetro para a Distribuição escolhida (por exemplo, forma e tamanho para Weibull ou especifique percentis de tempo e evento para estimar os parâmetros da distribuição)",
+  "labelDistParamOption1": "Opção 1 - Especifique o parâmetro para a distribuição selecionada",
+  "shape": "especifique o parâmetro de forma para Weibull, loglogístico ou gamma, ou meanlog para lognormal",
+  "scale": "especifique o parâmetro de escala para Weibull, exponencial, forma para loglogístico ou gamma, ou sdlog para lognormal",
+  "labelDistParamOption2": "Opção 2 - Especifique o tempo e % de eventos (ou seja, falhas) para calcular os parâmetros para a distribuição selecionada",
+  "PercentileTime": "Especifique dois valores numéricos de tempo separados por vírgula (por exemplo, 100, 500) para usar na estimativa dos parâmetros da distribuição",
+  "PercentileEvent": "Especifique dois valores percentuais numéricos separados por vírgula para o evento, por exemplo, % de falha (10, 30) para usar na estimativa dos parâmetros da distribuição",
+  "parameter": "Selecione Percentil para especificar o evento percentual desejado, por exemplo, % de falha. Se você deixar Percentile vazio e selecionar escala, Percentile será automaticamente assumido como 63.2121% para Weibull e exponencial, e 50% para todas as outras distribuições, se a localização for selecionada",
+  "p": "Percentil (por exemplo, 10) para o evento, por exemplo, falha",
+  "precision": "Precisões (um ou mais valores separados por vírgula) como distâncias do limite do IC para estimar",
+  "boundType": "Tipo de limite (padrão inferior)",
+  "censorTime": "Tempo de censura, se houver, por exemplo, especifique 1000",
+  "confidenceInterval": "Nível de confiança (padrão 0.95)",
+  "labelAdvancedOptions": "Opções Avançadas (deixe como padrões)",
+  "pilotDataLength": "Número de linhas de dados a serem usadas para simulações (padrão 2000)",
+  "bootIter": "Iteração de Bootstrap",
+  "seed": "Tipo de semente de randomização, qualquer combinação de quatro dígitos",
+  "repeatSampleSizeCalculation": "Repetir cálculos de tamanho de amostra para obter a média (o campo de semente deve estar vazio)",
+  "help": {
+    "title": "Estimativa de Planos de Teste de Sobrevivência Paramétricos",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Grubb's Test for Outlier Detection",
+    "navigation": "Grubb's Outlier Test",
+    "variableListSelcted": "Select one or more variables",
+    "alpha": "alpha: % chance (default 5%), the furthest point from mean identified as outlier",
+    "plotShowOutliersChk": "Plot to show all points including outlier, if any",
+    "help": {
+        "title": "Grubb's Test for Outlier Detection",
+        "r_help": "help(sd, package = stats)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tDetermine where the extreme point is an outlier in the variable i.e., Y values (no X variable needed)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGrubbs’ Test, also known as the Extreme Studentized Deviate (ESD) method, is a widely used statistical approach for detecting a single outlier in a univariate dataset that follows a normal distribution.\n\t\t\t\t</br>\n\t\t\t\t</br>\n\t\t\t\tTo determine whether the most extreme value in a dataset is significantly different from the others, i.e., whether it is an outlier.\n\t\t\t\t</br>\n\t\t\t\t</br>\n\t\t\t\tInternal analysis steps:\n\t\t\t\t<br/>\n\t\t\t\tCalculate the mean (μ) and standard deviation (σ) of the full dataset (including the suspected outlier, unlike the ROUT robust mean approach)\n\t\t\t\t</br>\n\t\t\t\tCompute the Grubbs’ test statistic (G also known as Z):\n\t\t\t\t</br>\n\t\t\t\t</br>\n\t\t\t\tCompute critical value from Grubbs' formula\n\t\t\t\t</br>\n\t\t\t\tt_crit = qt(1 - alpha / (2 * n), df = n - 2)\n\t\t\t\t</br>\n\t\t\t\tG_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))\n\t\t\t\t</br>\n\t\t\t\t</br>\n\t\t\t\tCompare the calculated  G to a critical value from Grubbs' table (based on sample size and significance level). If G exceeds the critical value, the value is considered a statistically significant outlier.\n\t\t\t\t</br>\n\t\t\t\t</br>\n\t\t\t\tIterative Use:\n\t\t\t\t</br>\n\t\t\t\tWhile the classic test detects only one outlier at a time, it can be applied repeatedly to detect multiple outliers — removing one outlier and re-testing on the remaining data.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "title": "Parametric Survival Test Plans Estimation",
+    "navigation": "Parametric Survival Test Plan",
+    "labelDistribution": "Select a distribution function that fits the data best",
+    "selectDistFuncWeibullRad": "Weibull",
+    "selectDistFuncExpRad": "Exponential",
+    "selectDistFuncLnormalRad": "Log Normal",
+    "selectDistFuncLogLogisRad": "Log Logistic",
+    "selectDistFuncGammaRad": "Gamma",
+    "labelDistributionParam": "Either specify parameter for the chosen Distribution (e.g. shape and size for Weibull or specify time and event percentiles to estimate the distribution parameters)",
+    "labelDistParamOption1": "Option 1 - Specify the parameter for the selected distribution",
+    "shape": "specify shape parameter for Weibull, loglogistic, or gamma, or meanlog for lognormal",
+    "scale": "specify  scale parameter for Weibull, exponential, shape for loglogistic, or gamma, or sdlog for lognormal",
+    "labelDistParamOption2": "Option 2 - Specify the time and % events (i.e., failures) to compute the parameters for selected distribution",
+    "PercentileTime": "Specify two comma separated numeric time values (e.g., 100, 500) to use for estimating distribution parameters",
+    "PercentileEvent": "Specify two comma separated numeric percentile values to event e.g. % failure (10, 30) to use for estimating distribution parameters",
+    "parameter": "Select Percentile to specify desired percentile event, e.g., % failure. If you leave Percentile empty and select scale, Percentile will automatically be assumed to be 63.2121% for Weibull and exponential, and 50% for all other distributions, if location is selected",
+    "p": "Percentile (e.g., 10) for the event e.g. failure",
+    "precision": "Precisions (one or more values comma separated) as distances from bound of CI to estimate",
+    "boundType": "Bound type (default lower)",
+    "censorTime": "Time censor at, if any, e.g., specify 1000",
+    "confidenceInterval": "Confidence level (default 0.95)",
+    "labelAdvancedOptions": "Advanced Options (leave them as defaults)",
+    "pilotDataLength": "Number of data rows to be used for simulations (default 2000)",
+    "bootIter": "Bootstrap iteration",
+    "seed": "Randomization seed type any combination of four digits",
+    "repeatSampleSizeCalculation": "Repeat sample size computations to take average (seed field must be empty)",
+    "help": {
+        "title": "Parametric Survival Test Plans Estimation",
+        "r_help": "help(flexsurvreg, package = 'flexsurv')",
+        "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+    }
+}

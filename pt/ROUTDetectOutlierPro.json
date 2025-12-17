@@ -1,0 +1,15 @@
+{
+  "title": "Detecção de Outliers ROUT",
+  "navigation": "Teste de Outliers ROUT",
+  "variableListSelcted": "Selecione uma ou mais variáveis",
+  "adjPvalue": "Ajustar valores p da comparação de médias",
+  "FDR_Q": "Especifique a taxa máxima desejada de Falsas Descobertas (FDR) (padrão 1%)",
+  "plotShowOutliersChk": "Gráfico para mostrar todos os pontos, incluindo outliers, se houver",
+  "showOnlyOuliersInSummaryTableChk": "Mostrar tabela resumo da análise com apenas outliers, se houver",
+  "showAllPointsInSummaryTableChk": "Mostrar tabela resumo da análise com todos os pontos",
+  "help": {
+    "title": "Método ROUT (Regressão Robusta) para Detecção de Outliers",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Descrição</b><br>ROUT (Regressão Robusta e Remoção de Outliers) é um método poderoso e moderno para detectar um ou mais outliers. Originalmente desenvolvido para regressão não linear, a abordagem ROUT pode ser adaptada para uso geral, incluindo a identificação de outliers em uma variável (uma coluna de dados de um conjunto de dados).<br><br>ROUT combina duas ideias poderosas:<br>Ajuste robusto do modelo — que limita a influência (ou seja, impacto mínimo) de potenciais outliers durante a estimação das tendências centrais.<br>Taxa de Falsas Descobertas (FDR) — um método estatístico de controle que determina quantos dos outliers detectados podem ser falsos positivos.<br><br>Métodos de ajuste do valor p:<br>Incluem a correção de Bonferroni (“bonferroni”), onde os valores p são multiplicados pelo número de comparações, bem como correções menos conservadoras por Holm (“holm”), Hochberg (“hochberg”), Hommel (“hommel”), Benjamini & Hochberg (“BH” ou seu alias “fdr”) e Benjamini & Yekutieli (“BY”). Também está incluída uma opção sem ajuste (“none”).<br><br>Os quatro primeiros métodos são projetados para fornecer forte controle da taxa de erro familiar. Os métodos de Hochberg e Hommel são válidos quando os testes de hipóteses são independentes ou positivamente associados.<br><br>Os métodos “BH” e “BY” controlam a taxa de falsas descobertas, que é uma condição menos rigorosa do que a taxa de erro familiar, portanto, esses métodos são mais potentes.<br><br>Detectar os outliers em uma variável, ou seja, valores Y (não é necessária variável X).<br><br>Etapas internas da análise:<br>Atribuir valores X fictícios: 1, 2, ..., n<br>Ajustar modelo: Y = M (média constante) usando regressão robusta (rlm do pacote MASS)<br>Calcular resíduos do ajuste robusto<br>Usar resíduos studentizados<br>Aplicar correção FDR com Q definido pelo usuário (padrão 1%)<br>Marcar outliers onde p-valor ajustado FDR < Q/100<br><br>Mais detalhes:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

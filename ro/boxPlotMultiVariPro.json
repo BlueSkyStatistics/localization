@@ -1,0 +1,30 @@
+{
+  "title": "Boxplot cu grupare multi-variată",
+  "navigation": "Boxplot, Multi-Vari",
+  "response": "Variabila de utilizat pentru boxplot (o variabilă numerică)",
+  "YaxisGroup": "Variabila Y (o variabilă de categorie) pentru axa Y",
+  "XaxisGroup": "Variabila X (o variabilă de categorie) pentru axa X",
+  "withinXaxisGroup": "Una sau mai multe variabile de grupare (categorie) pentru a grupa boxplot-urile în cadrul grupului de axă X",
+  "flipaxisChk": "Rotește axa",
+  "connectMeanPointsChk": "Conectează punctele medii",
+  "connectMedianPointsChk": "Conectează punctele mediane",
+  "showMeanPointsChk": "Afișează punctele medii (când nu sunt conectate)",
+  "showMinMaxNumberChk": "Afișează valoarea minimă și maximă pe fiecare categorie de axă Y pe grafic",
+  "showMeanNumberChk": "Afișează valoarea medie pe grafic",
+  "showMedianNumberChk": "Afișează valoarea mediană pe grafic",
+  "showQuantileNumberChk": "Afișează valoarea cuantilei (Q1 și Q3) pe grafic",
+  "showStatTableChk": "Tipărește toate statisticile într-un tabel",
+  "chartTitle": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "meanPointColor": "Selectați o culoare pentru punctele medii (După selectarea culorii, faceți clic în afara controlului pentru a aplica)",
+  "meanPointSize": "Dimensiunea punctului mediu (implicit = 1.15)",
+  "boxPlotWidth": "Lățimea verticală a boxplot-ului (implicit = 0.4)",
+  "keepOriginalScaleChk": "Păstrează scala originală a variabilei numerice selectate pentru grafic",
+  "factorLevelOccuranceOrderChk": "Reordonați toate nivelurile variabilei de categorie în ordinea apariției lor pentru grafic",
+  "legends": "Afișează Legende și, dacă da, poziția legendelor (implicit este dreapta)",
+  "help": {
+    "title": "Boxplot cu grupare specială (Multi-Vari)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tOrganizarea subgrupurilor (de exemplu, grupul de eșantion) pentru Capacitatea Procesului și alte analize de subgrup\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAnalizele precum analiza Capacității Procesului presupun că datele sunt introduse în ordinea în care au fost colectate (ordine cronologică). Aceasta înseamnă că toate observațiile din același subgrup trebuie să apară în rânduri consecutive ale setului de date. O coloană ID de subgrup este utilizată de obicei pentru a defini care rânduri aparțin aceluiași subgrup.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDacă această condiție nu este îndeplinită (de exemplu, dacă rândurile din același subgrup sunt dispersate în întregul set de date și nu sunt plasate una lângă alta), atunci ID-urile subgrupului trebuie recalibrate.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tRecalibrarea înseamnă:\n\t\t\t\t<br/>\n\t\t\t\tUn nou număr de subgrup este atribuit de fiecare dată când ID-ul subgrupului se schimbă de la un rând la altul.\n\t\t\t\t<br/>\n\t\t\t\tDacă același ID de subgrup reapare mai târziu, dar nu este adiacent apariției sale anterioare, va fi tratat ca un nou subgrup.\n\t\t\t\t<br/>\n\t\t\t\tCu alte cuvinte, doar valorile identice care apar una lângă alta sunt considerate parte din același subgrup. Valorile identice separate de alte subgrupuri vor fi împărțite în subgrupuri separate în timpul recalibrării.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tVariabila numărului de eșantion recalibrată din setul de date este necesară pentru a efectua multe analize, de exemplu, Capacitatea Procesului, graficele Shewhart precum xbar, R, S etc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

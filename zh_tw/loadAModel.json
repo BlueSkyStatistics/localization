@@ -19,6 +19,6 @@
   "help": {
     "title": "載入模型",
     "r_help": "help(load, package='base')",
-    "body": "\n<b>描述</b></br>\n將保存到所選檔案的R模型對象載入。</br>\n我們將載入所有保存到所選檔案的R對象。如果R全局環境中存在同名對象，它們將被覆蓋。</br>\n我們將顯示一條消息，確認使用BlueSky應用程序構建的模型已被載入。</br>\n您必須單擊執行按鈕（水平三角形按鈕）以載入保存到所選檔案的R對象。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nload(file =\"檔案的路徑\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nfile:帶路徑的檔案名稱，所選的模型對象將保存到此RData檔案中\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>幫助</b></br>\n如需詳細幫助，請單擊此對話框覆蓋的右上角的R圖標，或在R編輯器窗口中運行以下命令help(load, package = 'base')\n</br>\n                "
+    "body": "\n<b>描述</b></br>\n將保存到所選檔案的R模型對象載入。</br>\n我們將載入所有保存到所選檔案的R對象。如果R全局環境中存在同名對象，它們將被覆蓋。</br>\n我們將顯示一條消息，確認使用 應用程序構建的模型已被載入。</br>\n您必須單擊執行按鈕（水平三角形按鈕）以載入保存到所選檔案的R對象。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nload(file =\"檔案的路徑\")\n</code> <br/>\n<b>參數</b><br/>\n<ul>\n<li>\nfile:帶路徑的檔案名稱，所選的模型對象將保存到此RData檔案中\n</li>\n</ul>\n<b>包</b></br>\nbase</br>\n<b>幫助</b></br>\n如需詳細幫助，請單擊此對話框覆蓋的右上角的R圖標，或在R編輯器窗口中運行以下命令help(load, package = 'base')\n</br>\n                "
   }
 }

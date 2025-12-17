@@ -1,0 +1,11 @@
+{
+  "title": "Bir Model Çiz",
+  "navigation": "Bir Model Çiz",
+  "modelselector1": "Aşağıdaki sınıflardan bir model seçin (parantez içindeki sınıf) Doğrusal model (lm), Genelleştirilmiş doğrusal modeller (glm)",
+  "plotScatterModelXY":"Model parametreleri x ve y’nin saçılım grafiğini, modele uydurulmuş çizgiyle birlikte çiz",
+  "help": {
+    "title": "Bir Model Çiz",
+    "r_help": "help(plot, package ='graphics')",
+    "body": "\n                <b>Açıklama</b></br>\nR nesnelerinin çizimi için genel bir işlev. Grafik parametre argümanları hakkında daha fazla bilgi için par'a bakın.\nBasit dağılım grafikleri için plot.default kullanılacaktır. Ancak, birçok farklı R nesnesi için çizim yöntemleri vardır; bunlar arasında fonksiyonlar, veri çerçeveleri, yoğunluk nesneleri vb. bulunmaktadır. methods(plot) ve bu belgeleri kullanın.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nplot(object)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nobject: herhangi bir R nesnesi, bir çizim yöntemi ile sağlanabilir.\n</li>\n</ul>\n<b>Paket</b></br>\ngraphics</br>\n<b>Yardım</b></br>\nDetaylı yardım için bu diyalog üst katmanının sağ üst köşesindeki R simgesine tıklayın veya R sözdizimi editöründe aşağıdaki komutu çalıştırın help(plot, package ='graphics')\n"
+  }
+}

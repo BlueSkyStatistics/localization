@@ -1,0 +1,15 @@
+{
+  "title": "ROUT 이상치 탐지",
+  "navigation": "ROUT 이상치 테스트",
+  "variableListSelcted": "하나 이상의 변수를 선택하세요",
+  "adjPvalue": "평균 비교에서 p-값 조정",
+  "FDR_Q": "최대 (기본값 1%) 원하는 거짓 발견율(FDR) 지정",
+  "plotShowOutliersChk": "이상치를 포함한 모든 점 표시 플롯 (있을 경우)",
+  "showOnlyOuliersInSummaryTableChk": "분석 요약 테이블에 이상치만 표시 (있을 경우)",
+  "showAllPointsInSummaryTableChk": "분석 요약 테이블에 모든 점 표시",
+  "help": {
+    "title": "이상치 탐지를 위한 ROUT (강건 회귀) 방법",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>설명</b><br>ROUT (강건 회귀 및 이상치 제거)은 하나 이상의 이상치를 탐지하는 강력하고 현대적인 방법입니다. 원래 비선형 회귀를 위해 개발되었으며, ROUT 방법은 일반적으로 사용할 수 있으며, 변수(데이터셋의 열) 내의 이상치를 식별하는 데도 사용할 수 있습니다.<br><br>ROUT은 두 가지 강력한 아이디어를 결합합니다:<br>강건한 모델 적합 — 중심 경향 추정 시 잠재적 이상치의 영향(즉, 영향력 제한)을 최소화합니다.<br>거짓 발견율(FDR) — 탐지된 이상치 중 얼마나 많은 것이 실제로 거짓 양성일 수 있는지 결정하는 통계적 제어 방법입니다.<br><br>조정된 p-값 방법:<br>Bonferroni 보정(“bonferroni”) 포함, 여기서 p-값은 비교 횟수로 곱해집니다. Holm(“holm”), Hochberg(“hochberg”), Hommel(“hommel”), Benjamini & Hochberg(“BH” 또는 별칭 “fdr”), Benjamini & Yekutieli(“BY”) 등 덜 보수적인 보정 방법도 포함됩니다. 패스스루 옵션(“none”)도 포함됩니다.<br><br>처음 네 가지 방법은 가족별 오류율을 강력하게 제어하도록 설계되었습니다. 수정되지 않은 Bonferroni 보정보다는 Holm 방법이 우수하며, Holm 방법은 임의의 가정 하에서도 유효합니다.<br><br>Hochberg 및 Hommel 방법은 가설 검정이 독립적이거나 음이 아닌 상관관계일 때 유효합니다. Hommel 방법이 Hochberg 방법보다 강력하지만 차이는 일반적으로 작으며 Hochberg p-값 계산이 더 빠릅니다.<br><br>Benjamini, Hochberg, Yekutieli의 “BH”(“fdr”) 및 “BY” 방법은 기각된 가설 중 거짓 발견율을 제어하며, 가족별 오류율보다 조건이 덜 엄격하여 다른 방법보다 강력합니다.<br><br>변수 내 이상치를 탐지합니다, 즉 Y 값 (X 변수 불필요).<br><br>내부 분석 단계:<br>더미 X 값 할당: 1, 2, ..., n<br>강건 회귀(rlm from MASS pkg)를 사용해 모델 적합: Y = M (상수 평균)<br>강건 적합에서 잔차 계산<br>학생화 잔차 사용<br>사용자 정의 Q(기본값 1%)로 FDR 보정 적용<br>FDR 조정 p-값 < Q/100인 곳을 이상치로 표시<br><br>자세한 내용은:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Detección de Valores Atípicos ROUT",
+  "navigation": "Prueba de Valores Atípicos ROUT",
+  "variableListSelcted": "Seleccione una o más variables",
+  "adjPvalue": "Ajustar valores p de la comparación de medias",
+  "FDR_Q": "Especifique la tasa máxima deseada de Falsos Descubrimientos (FDR) (predeterminado 1%)",
+  "plotShowOutliersChk": "Gráfico para mostrar todos los puntos, incluidos los valores atípicos, si los hay",
+  "showOnlyOuliersInSummaryTableChk": "Mostrar tabla resumen del análisis solo con valores atípicos, si los hay",
+  "showAllPointsInSummaryTableChk": "Mostrar tabla resumen del análisis con todos los puntos",
+  "help": {
+    "title": "Método ROUT (Regresión Robusta) para Detección de Valores Atípicos",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Descripción</b><br>ROUT (Regresión robusta y eliminación de valores atípicos) es un método potente y moderno para detectar uno o más valores atípicos. Originalmente desarrollado para regresión no lineal, el enfoque ROUT puede adaptarse para uso general, incluyendo la identificación de valores atípicos en una variable (una columna de datos de un conjunto de datos).<br><br>ROUT combina dos ideas poderosas:<br>Ajuste robusto del modelo — que limita la influencia (es decir, poco impacto) de posibles valores atípicos al estimar tendencias centrales.<br>Tasa de descubrimiento falso (FDR) — un método estadístico de control que determina cuántos de los valores atípicos detectados podrían ser falsos positivos.<br><br>Métodos de ajuste del valor p:<br>Incluyen la corrección de Bonferroni («bonferroni») donde los valores p se multiplican por el número de comparaciones, así como correcciones menos conservadoras por Holm («holm»), Hochberg («hochberg»), Hommel («hommel»), Benjamini & Hochberg («BH» o su alias «fdr») y Benjamini & Yekutieli («BY»). También se incluye una opción sin ajuste («none»).<br><br>Los primeros cuatro métodos están diseñados para dar un fuerte control de la tasa de error familiar. Los métodos de Hochberg y Hommel son válidos cuando las pruebas de hipótesis son independientes o están asociadas no negativamente.<br><br>Los métodos «BH» y «BY» controlan la tasa de descubrimiento falso, que es una condición menos estricta que la tasa de error familiar, por lo que estos métodos son más potentes.<br><br>Detectar valores atípicos en una variable, es decir, valores Y (no se necesita variable X).<br><br>Pasos internos del análisis:<br>Asignar valores X ficticios: 1, 2, ..., n<br>Ajustar modelo: Y = M (media constante), usando regresión robusta (rlm del paquete MASS)<br>Calcular residuos del ajuste robusto<br>Usar residuos estudiantizados<br>Aplicar corrección de tasa de descubrimiento falso con Q definido por el usuario (por defecto 1%)<br>Marcar valores atípicos donde el valor p ajustado de FDR < Q/100<br><br>Más detalles:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

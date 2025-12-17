@@ -1,0 +1,13 @@
+{
+  "title": "Adaugă o Variabilă cu un Model Repetitiv",
+  "navigation": "Adaugă Model Repetitiv",
+  "repeatPatternVarName": "Numele variabilei pentru modelul repetitiv de valori (actualizează dacă variabila există deja)",
+  "repeatingValues": "Valori numerice și/sau text separate prin virgulă pentru a fi repetate (ex.: 1,Blue,5,Bad,Good,3,7,0)",
+  "repeatFrequencyEach": "(Opțional) Numărul de repetări pentru fiecare element de mai sus, separate prin virgulă (ex.: 1,5,2,2,2,3,3,3)",
+  "times": "Numărul de ori în care grupul complet de elemente trebuie repetat (dacă este lăsat gol, modelele vor fi repetate pentru a umple lungimea setului de date)",
+  "help": {
+    "title": "Adaugă o Variabilă cu un Model Repetitiv",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tAdaugă o variabilă (adică o coloană) în setul de date pentru un model repetitiv specificat\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGenerează un șir de caractere sau modele numerice sau o combinație între ele într-o coloană nouă a setului de date (ex.: 5x roșu / 5x albastru / 5x galben → cu o repetare a secvenței de 10 SAU o secvență de 3x1 / 3x2 / 3x3 …)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "ROUT-Ausreißererkennung",
+  "navigation": "ROUT-Ausreißertest",
+  "variableListSelcted": "Wählen Sie eine oder mehrere Variablen aus",
+  "adjPvalue": "Angepasste p-Werte aus Mittelwertvergleichen",
+  "FDR_Q": "Geben Sie die maximale gewünschte Falschentdeckungsrate (FDR) an (Standard 1%)",
+  "plotShowOutliersChk": "Diagramm, das alle Punkte einschließlich Ausreißer anzeigt, falls vorhanden",
+  "showOnlyOuliersInSummaryTableChk": "Analyse-Zusammenfassungstabelle nur mit Ausreißern anzeigen, falls vorhanden",
+  "showAllPointsInSummaryTableChk": "Analyse-Zusammenfassungstabelle mit allen Punkten anzeigen",
+  "help": {
+    "title": "ROUT (Robuste Regression) Methode zur Ausreißererkennung",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Beschreibung</b><br>ROUT (Robuste Regression und Ausreißerentfernung) ist eine leistungsstarke und moderne Methode zur Erkennung eines oder mehrerer Ausreißer. Ursprünglich für nichtlineare Regression entwickelt, kann die ROUT-Methode allgemein angepasst werden, einschließlich der Identifizierung von Ausreißern in einer Variable (eine Spalte eines Datensatzes).<br><br>ROUT kombiniert zwei starke Konzepte:<br>Robustes Modell-Fitting — begrenzt den Einfluss potenzieller Ausreißer bei der Schätzung zentraler Tendenzen.<br>False Discovery Rate (FDR) — eine statistische Kontrollmethode, die bestimmt, wie viele der erkannten Ausreißer tatsächlich falsch positive sein könnten.<br><br>Anpassungsmethoden für p-Werte:<br>Beinhaltet Bonferroni-Korrektur („bonferroni“), bei der die p-Werte mit der Anzahl der Vergleiche multipliziert werden, sowie weniger konservative Korrekturen wie Holm („holm“), Hochberg („hochberg“), Hommel („hommel“), Benjamini & Hochberg („BH“ oder „fdr“) und Benjamini & Yekutieli („BY“). Ein Durchlauf („none“) ist ebenfalls enthalten.<br><br>Die ersten vier Methoden bieten eine starke Kontrolle der Familienfehlerquote. Hochberg- und Hommel-Methoden sind gültig, wenn die Hypothesentests unabhängig oder nicht-negativ assoziiert sind.<br><br>Die „BH“ und „BY“ Methoden kontrollieren die Falschentdeckungsrate, die weniger streng als die Familienfehlerquote ist und somit leistungsfähiger.<br><br>Erkennung von Ausreißern in einer Variable, d.h. Y-Werte (kein X erforderlich).<br><br>Interne Analyse-Schritte:<br>Zuweisung von Dummy-X-Werten: 1, 2, ..., n<br>Modellanpassung: Y = M (konstanter Mittelwert) mit robuster Regression (rlm aus MASS)<br>Berechnung der Residuen der robusten Anpassung<br>Verwendung studentisierter Residuen<br>Anwendung der FDR-Korrektur mit benutzerdefiniertem Q (Standard 1%)<br>Markierung von Ausreißern, wenn FDR-korrigierter p-Wert < Q/100<br><br>Weitere Details:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

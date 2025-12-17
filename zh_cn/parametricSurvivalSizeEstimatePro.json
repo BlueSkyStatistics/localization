@@ -1,0 +1,33 @@
+{
+  "title": "参数生存测试计划估计",
+  "navigation": "参数生存测试计划",
+  "labelDistribution": "选择最适合数据的分布函数",
+  "selectDistFuncWeibullRad": "威布尔",
+  "selectDistFuncExpRad": "指数",
+  "selectDistFuncLnormalRad": "对数正态",
+  "selectDistFuncLogLogisRad": "对数逻辑斯蒂",
+  "selectDistFuncGammaRad": "伽玛",
+  "labelDistributionParam": "为所选分布指定参数（例如威布尔的形状和大小，或指定时间和事件百分位数以估计分布参数）",
+  "labelDistParamOption1": "选项 1 - 为所选分布指定参数",
+  "shape": "为威布尔、对数逻辑斯蒂或伽玛指定形状参数，或为对数正态指定均值对数",
+  "scale": "为威布尔、指数、对数逻辑斯蒂或伽玛指定规模参数，或为对数正态指定标准差对数",
+  "labelDistParamOption2": "选项 2 - 指定时间和 % 事件（即失败）以计算所选分布的参数",
+  "PercentileTime": "指定两个用逗号分隔的数值时间（例如，100, 500）以用于估计分布参数",
+  "PercentileEvent": "指定两个用逗号分隔的数值百分位数以事件，例如 % 失败 (10, 30) 以用于估计分布参数",
+  "parameter": "选择百分位数以指定所需的百分位事件，例如 % 失败。如果您留空百分位数并选择规模，百分位数将自动假定为威布尔和指数的 63.2121%，以及所有其他分布的 50%，如果选择了位置",
+  "p": "事件的百分位数（例如，10）例如失败",
+  "precision": "精度（一个或多个用逗号分隔的值）作为从置信区间边界的距离进行估计",
+  "boundType": "边界类型（默认下限）",
+  "censorTime": "时间审查，如果有，例：指定 1000",
+  "confidenceInterval": "置信水平（默认 0.95）",
+  "labelAdvancedOptions": "高级选项（保持默认）",
+  "pilotDataLength": "用于模拟的数据行数（默认 2000）",
+  "bootIter": "自助法迭代",
+  "seed": "随机种子类型，任何四位数字的组合",
+  "repeatSampleSizeCalculation": "重复样本大小计算以取平均（种子字段必须为空）",
+  "help": {
+    "title": "参数生存测试计划估计",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

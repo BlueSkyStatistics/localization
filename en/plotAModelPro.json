@@ -1,0 +1,11 @@
+{
+    "title": "Plot A Model",
+    "navigation": "Plot a Model",
+    "modelselector1": "Select a model of one of the following classes (class in parenthesis) Linear model (lm), Generalized linear models (glm)",
+	"plotScatterModelXY":"Plot a scatter plot of the model parameters x and y with the model fitted line",
+    "help": {
+        "title": "Plot A Model",
+        "r_help": "help(plot, package ='graphics')",
+        "body": "\n                <b>Description</b></br>\nGeneric function for plotting of R objects. For more details about the graphical parameter arguments, see par.\nFor simple scatter plots, plot.default will be used. However, there are plot methods for many different R objects, including functions, data.frames, density objects, etc. Use methods(plot) and the documentation for these.\n<br/>\n<b>Usage</b>\n<br/>\n<code> \nplot(object)\n</code> <br/>\n<b>Arguments</b><br/>\n<ul>\n<li>\nobject: any R object with a plot method can be provided.\n</li>\n</ul>\n<b>Package</b></br>\ngraphics</br>\n<b>Help</b></br>\nFor detailed help click on the R icon on the top right hand side of this dialog overlay or run the following command in the R syntax editor help(plot, package ='graphics')\n"
+    }
+}

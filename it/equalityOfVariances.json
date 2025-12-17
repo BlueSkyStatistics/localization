@@ -1,0 +1,32 @@
+{
+  "title": "Uguaglianza delle varianze",
+  "navigation": "Uguaglianza delle varianze",
+  "label1": "Scegli test",
+  "bartlett": "Test di Bartlett",
+  "levene": "Test di Levene",
+  "fligner": "Test di Fligner–Killeen",
+  "normal_distribution": "Test basato sulla distribuzione normale",
+  "pairwiseLeveneTest": "Test di Levene a coppie",
+  "label2": "Formato dei dati",
+  "wide": "Formato largo",
+  "long": "Formato lungo",
+  "label3": "Livello di confidenza",
+  "label4": "Ipotesi alternativa",
+  "alt1": "Due lati",
+  "alt2": "Maggiore",
+  "alt3": "Minore",
+  "label5": "Metodo di aggiustamento del p-value (per il test di Levene a coppie)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Nessuno",
+  "help": {
+    "title": "Test per l'uguaglianza delle varianze",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Descrizione</b><br/>\nEsegue test per l'uguaglianza delle varianze tra più gruppi.<br/>\n<ul>\n<li><b>Test di Bartlett</b>: Sensibile alle deviazioni dalla normalità.</li>\n<li><b>Test di Levene</b>: Più robusto rispetto alla non normalità.</li>\n<li><b>Test di Fligner–Killeen</b>: Non parametrico e molto robusto.</li>\n</ul>\n<b>Argomenti</b><br/>\n- alternative: two.sided, greater, or less.<br/>\n- conf.level: livello di confidenza per le stime degli intervalli.<br/>\n- format: Layout dei dati largo o lungo.<br/>\n- p.adjust.method: Metodo per l'aggiustamento della comparazione multipla.\n"
+  }
+}

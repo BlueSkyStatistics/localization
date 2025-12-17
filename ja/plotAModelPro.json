@@ -1,0 +1,11 @@
+{
+  "title": "モデルをプロット",
+  "navigation": "モデルをプロット",
+  "modelselector1": "次のクラスのいずれかのモデルを選択してください（括弧内はクラス）線形モデル（lm）、一般化線形モデル（glm）",
+  "plotScatterModelXY":"モデルパラメータ x と y の散布図を、モデルの当てはめ直線とともにプロットします",
+  "help": {
+    "title": "モデルをプロット",
+    "r_help": "help(plot, package ='graphics')",
+    "body": "\n                <b>説明</b></br>\nRオブジェクトのプロットのための汎用関数。グラフィカルパラメータ引数の詳細については、parを参照してください。\n単純な散布図には、plot.defaultが使用されます。ただし、関数、data.frames、密度オブジェクトなど、さまざまなRオブジェクトのためのプロットメソッドがあります。methods(plot)およびこれらのドキュメントを使用してください。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nplot(object)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nobject: プロットメソッドを持つ任意のRオブジェクトを提供できます。\n</li>\n</ul>\n<b>パッケージ</b></br>\ngraphics</br>\n<b>ヘルプ</b></br>\n詳細なヘルプについては、このダイアログオーバーレイの右上隅にあるRアイコンをクリックするか、R構文エディタで次のコマンドを実行してください help(plot, package ='graphics')\n"
+  }
+}

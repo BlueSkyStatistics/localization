@@ -1,0 +1,12 @@
+{
+    "title": "Aykırı Değer Tespiti için Grubbs Testi",
+    "navigation": "Grubbs Aykırı Değer Testi",
+    "variableListSelcted": "Bir veya daha fazla değişken seçin",
+    "alpha": "Alfa: % şans (varsayılan %5), ortalamadan en uzak nokta aykırı değer olarak tanımlanır",
+    "plotShowOutliersChk": "Aykırı değerler dahil tüm noktaları grafikte göster",
+    "help": {
+        "title": "Aykırı Değer Tespiti için Grubbs Testi",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Açıklama</b></br> Değişkendeki (Y değerleri, X değişkenine gerek yok) en uç noktanın aykırı değer olup olmadığını belirler.</br></br> Grubbs Testi, aynı zamanda ESD (Extreme Studentized Deviate) yöntemi olarak da bilinir ve normal dağılıma sahip tek değişkenli veri setlerinde tek bir aykırı değeri tespit etmek için yaygın olarak kullanılan istatistiksel bir yöntemdir.</br></br> En uç değerin diğerlerinden anlamlı derecede farklı olup olmadığını, yani aykırı değer olup olmadığını belirler.</br></br> İç analiz adımları:</br> Tüm veri setinin (şüpheli aykırı değer dahil) ortalamasını (μ) ve standart sapmasını (σ) hesaplayın (ROUT yöntemi gibi sağlam ortalama yaklaşımı değil)</br> Grubbs test istatistiğini (G veya Z) hesaplayın:</br></br> Grubbs formülüne göre kritik değeri hesaplayın:</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Hesaplanan G değerini, örneklem büyüklüğüne ve anlamlılık seviyesine göre Grubbs tablosundan elde edilen kritik değer ile karşılaştırın. G, kritik değeri aşarsa, değer istatistiksel olarak anlamlı bir aykırı değer olarak kabul edilir.</br></br> Tekrarlı kullanım:</br> Klasik test her seferinde yalnızca bir aykırı değer tespit eder, ancak aykırı değerleri teker teker çıkarıp testi tekrarlayarak birden fazla aykırı değer tespit edilebilir.</br></br>"
+    }
+}

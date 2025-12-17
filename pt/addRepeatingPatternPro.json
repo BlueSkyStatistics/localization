@@ -1,0 +1,13 @@
+{
+  "title": "Adicionar uma Variável com Padrão Repetitivo",
+  "navigation": "Adicionar Padrão Repetitivo",
+  "repeatPatternVarName": "Nome da variável para o padrão repetitivo de valores (atualizar se a variável já existir)",
+  "repeatingValues": "Valores numéricos e/ou textuais separados por vírgula para serem repetidos (ex.: 1,Blue,5,Bad,Good,3,7,0)",
+  "repeatFrequencyEach": "(Opcional) Número de vezes que cada item acima será repetido, separados por vírgulas (ex.: 1,5,2,2,2,3,3,3)",
+  "times": "Número de vezes que o grupo inteiro de itens será repetido (se deixado em branco, os padrões se repetirão para preencher o tamanho do conjunto de dados)",
+  "help": {
+    "title": "Adicionar uma Variável com Padrão Repetitivo",
+    "r_help": "help(rep, package = base)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tAdiciona uma variável (ou seja, coluna) ao conjunto de dados com um padrão repetitivo especificado\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGere uma sequência de texto ou padrões numéricos ou uma combinação de ambos em uma nova coluna do conjunto de dados (ex.: 5x vermelho / 5x azul / 5x amarelo → com repetição da sequência de 10 OU uma sequência de 3x1 / 3x2 / 3x3 …)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+  }
+}

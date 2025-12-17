@@ -12,6 +12,12 @@
           "visible": true
         },
         {
+          "name": "استيراد جدول قاعدة البيانات",
+          "icon": "fas fa-folder-open",
+          "onclick": "openImportDBaseDialog(undefined)",
+          "visible": true
+        },		
+        {
           "name": "مجموعات بيانات عينة",
           "icon": "fas fa-folder-open",
           "onclick": "openSampleDataset()",
@@ -58,6 +64,7 @@
           "icon": "icon-help-circled",
           "children": [
             "./assets/js/modals/Help/helpAbout",
+            "./assets/js/modals/Help/rSessionDetails",
             "./assets/js/modals/Help/Help",
             "./assets/js/modals/Help/rFunctionHelp",
             "./assets/js/modals/Help/rPackageHelp",
@@ -73,7 +80,11 @@
           ]
         },
         "./assets/js/modals/Help/installRPackage",
-        "./assets/js/modals/Help/updateBlueSkyPackage",
+		{
+			"name": "تحديث R-Temp",
+			"icon": "fas fa-sync",
+			"onclick": "resetRTemp()"
+		},        
         {
           "name": "تحديث ذاكرة التخزين المؤقت للحوار",
           "icon": "fas fa-sync",

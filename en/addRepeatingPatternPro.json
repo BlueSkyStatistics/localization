@@ -1,0 +1,13 @@
+{
+    "title": "Add a Variable of Repeating Pattern",
+    "navigation": "Add Repeating Pattern",
+    "repeatPatternVarName": "Variable name for the repeating pattern of values (update if the variable already exists)",
+    "repeatingValues": "Comma separated number and/or string values to be repeated (e.g., 1,Blue,5,Bad,Good,3,7,0)",
+    "repeatFrequencyEach": "(Optional) Comma separated number of times each item above to be repeated (e.g., 1,5,2,2,2,3,3,3)",
+    "times": "Number of times the entire group of items to be repeated (if left blank, patterns will repeat to fill the dataset length)",
+    "help": {
+        "title": "Add a Variable of Repeating Pattern",
+        "r_help": "help(rep, package = base)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tAdd a variable (i.e., column) to the dataset for a specified repeating pattern\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGenerate a character string or a number patterns or combination of both strings and number patterns in a new column of the dataset (e.g. 5x red / 5x blue / 5x yellow à with a repetition of the sequence of 10 OR a sequence of 3x1 / 3x2 / 3x3 …)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t"
+    }
+}

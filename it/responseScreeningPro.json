@@ -1,0 +1,22 @@
+{
+  "title": "Screening delle Risposte",
+  "navigation": "Screening delle Risposte",
+  "responses": "Scegli una o più variabili di risposta (dipendenti)",
+  "predictors": "Scegli una o più variabili predittive (indipendenti)",
+  "sortOrder": "Ordine di ordinamento per la tabella di riepilogo dello Screening delle Risposte",
+  "maxNumberOfPredictor": "Numero massimo di combinazioni di predittori da utilizzare (analisi dell'effetto principale)",
+  "adjPvalue": "Metodo di aggiustamento dei valori p (il valore predefinito è FDR)",
+  "label1": "Mostra colonne opzionali nella tabella dello Screening delle Risposte",
+  "showOptionalColumn_CountChk": "Conteggio",
+  "showOptionalColumn_p_valueChk": "p.valore",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "DimensioneEffetto",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Screening delle Risposte",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tEsegue uno screening automatizzato delle risposte per identificare predittori statisticamente significativi per una o più variabili di risposta.\n\t\t\t\t<br/>\n\t\t\t\tSi adatta sistematicamente modelli utilizzando tutte le possibili combinazioni di predittori (fino a un limite specificato dall'utente - il valore predefinito è 1) per analizzare l'effetto principale e riporta statistiche chiave \n\t\t\t\tsuch as p-values, -log10(p-value), p-value aggiustato con FDR, -log10(FDR), dimensioni degli effetti e valori di R².\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNota su FDR:\n\t\t\t\t<br/>\n\t\t\t\tQuando si eseguono molti test ipotetici (come nello screening delle risposte attraverso più predittori), alcuni valori p significativi possono verificarsi per caso.\n\t\t\t\t<br/>\n\t\t\t\tL'aggiustamento della False Discovery Rate (FDR) aiuta a controllare questo stimando la proporzione attesa di falsi positivi tra tutti i risultati significativi.\n\t\t\t\t<br/>\n\t\t\t\tLa funzione utilizza la procedura di Benjamini–Hochberg (p.adjust(..., method = \"fdr\")) per calcolare i valori p aggiustati FDR, mostrati come FDR_pval.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval fornisce una stima di significatività più conservativa che tiene conto dei confronti multipli.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) trasforma il valore p aggiustato nella stessa scala di LogWorth cioè -log10(p-value), rendendo facile classificare i predittori anche dopo la correzione.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGenerazione automatica del modello:\n\t\t\t\t<br/>\n\t\t\t\tTesta ogni possibile combinazione di variabili predittive fino a un numero massimo scelto (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tAd esempio, imposta max_predictors = 1 per testare solo predittori singoli, 2 per coppie, ecc.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGestione flessibile delle risposte:\n\t\t\t\t<br/>\n\t\t\t\tRisposte continue → Regressione lineare (lm())\n\t\t\t\t<br/>\n\t\t\t\tRisposte categoriali binarie → Regressione logistica (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFormule per il calcolo della dimensione dell'effetto:\n\t\t\t\t<br/>\n\t\t\t\tY continua: Radice quadrata della somma media dei quadrati dal test ipotetico divisa per una stima robusta della SD della risposta (utilizzando IQR/1.3489795 se IQR > range/20, altrimenti SD del campione).\n\t\t\t\t<br/>\n\t\t\t\tY categoriale, X continua: Radice quadrata del valore medio del ChiSquare del modello.\n\t\t\t\t<br/>\n\t\t\t\tY categoriale, X categoriale: Radice quadrata del valore medio del ChiSquare di Pearson.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCorrezione per test multipli:\n\t\t\t\t<br/>\n\t\t\t\tAggiusta tutti i valori p utilizzando il metodo della False Discovery Rate (FDR), aggiungendo colonne FDR_PValue e FDR_Logworth.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMetrica LogWorth:\n\t\t\t\tRiporta -log10(p-value) e -log10(p-value aggiustato FDR) per classificare la significatività (maggiore = più significativo).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFiltraggio automatico dei casi:\n\t\t\t\tSalta qualsiasi risposta con meno di min_cases (il valore predefinito è 2) osservazioni valide.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

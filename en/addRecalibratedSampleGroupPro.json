@@ -1,0 +1,10 @@
+{
+    "title": "Add a Recalibrated Sample Number Variable",
+    "navigation": "Recalibrate Sample Number",
+    "sampleVariableToCalibrate": "Select the Sample variable to recalibrate",
+    "sampleVarName": "Specify the name of the new recalibrated sample variable to add (e.g., sample_recal). If the variable name is already present in the dataset, it will be updated",
+    "help": {
+        "title": "Add a Recalibrated Sample Number Variable",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tOrganizing subgroups (i.e. sample group) for Process Capability and other subgroup analysis\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAnalysis such as Process Capability analysis assumes that data are entered in the order they were collected (chronological order). This means that all observations from the same subgroup must appear in consecutive rows of the dataset. A subgroup ID column is typically used to define which rows belong to the same subgroup.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIf this condition is not met (for example, if rows from the same subgroup are scattered throughout the dataset and not placed next to each other), then the subgroup IDs need to be recalibrated.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tRecalibration means:\n\t\t\t\t<br/>\n\t\t\t\tA new subgroup number is assigned whenever the subgroup ID changes from one row to the next.\n\t\t\t\t<br/>\n\t\t\t\tIf the same subgroup ID reappears later but is not adjacent to its previous occurrence, it will be treated as a new subgroup.\n\t\t\t\t<br/>\n\t\t\t\tIn other words, only identical values that appear next to each other are considered part of the same subgroup. Identical values separated by other subgroups will be split into separate subgroups during recalibration.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe recalibrated sample number variable in the dataset is needed to perform many analysis e.g. Process Capability, Shewhart charts like xbar,R,S, etc \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

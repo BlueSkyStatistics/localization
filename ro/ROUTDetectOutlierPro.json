@@ -1,0 +1,15 @@
+{
+  "title": "Detecția valorilor aberante ROUT",
+  "navigation": "Testul valorilor aberante ROUT",
+  "variableListSelcted": "Selectați una sau mai multe variabile",
+  "adjPvalue": "Ajustarea valorilor p din compararea mediilor",
+  "FDR_Q": "Specificați rata maximă dorită de descoperiri false (FDR) (implicit 1%)",
+  "plotShowOutliersChk": "Afișează grafic toate punctele, inclusiv valorile aberante, dacă există",
+  "showOnlyOuliersInSummaryTableChk": "Afișează tabelul sumar al analizei doar cu valorile aberante, dacă există",
+  "showAllPointsInSummaryTableChk": "Afișează tabelul sumar al analizei cu toate punctele",
+  "help": {
+    "title": "Metoda ROUT (regresie robustă) pentru detectarea valorilor aberante",
+    "r_help": "help(rlm, package = MASS)",
+    "body": "<b>Descriere</b><br>ROUT (regresie robustă și eliminarea valorilor aberante) este o metodă puternică și modernă pentru detectarea unuia sau mai multor valori aberante. Inițial dezvoltată pentru regresie neliniară, abordarea ROUT poate fi adaptată pentru uz general, inclusiv identificarea valorilor aberante într-o variabilă (o coloană de date dintr-un set de date).<br><br>ROUT combină două idei puternice:<br>Potrivirea robustă a modelului — care limitează influența (adică impactul redus) a posibilelor valori aberante în timp ce estimează tendințele centrale.<br>Rata descoperirilor false (FDR) — o metodă statistică de control care determină câte dintre valorile aberante detectate ar putea fi fals pozitive.<br><br>Metode de ajustare a valorilor p:<br>Include corecția Bonferroni („bonferroni”) în care valorile p sunt înmulțite cu numărul de comparații, precum și corecții mai puțin conservatoare de Holm („holm”), Hochberg („hochberg”), Hommel („hommel”), Benjamini & Hochberg („BH” sau alias „fdr”) și Benjamini & Yekutieli („BY”). Este inclusă și o opțiune fără ajustare („none”).<br><br>Primele patru metode sunt proiectate pentru a oferi un control puternic al ratei erorii familiale. Metodele Hochberg și Hommel sunt valide atunci când testele ipotezelor sunt independente sau asociate non-negativ.<br><br>Metodele „BH” și „BY” controlează rata descoperirilor false, o condiție mai puțin strictă decât rata erorii familiale, deci aceste metode sunt mai puternice.<br><br>Detectează valorile aberante într-o variabilă, adică valori Y (nu este necesară variabila X).<br><br>Pași interni ai analizei:<br>Atribuie valori dummy X: 1, 2, ..., n<br>Potrivește modelul: Y = M (medie constantă), folosind regresie robustă (rlm din pachetul MASS)<br>Calculează reziduurile din potrivirea robustă<br>Folosește reziduuri studentizate<br>Aplică corecția FDR cu un Q definit de utilizator (implicit 1%)<br>Marchează valorile aberante unde p ajustat FDR < Q/100<br><br>Mai multe detalii:<br>help(rlm, package = MASS)<br>help(psi.huber, package = MASS)<br>help(p.adjust, package = stats)"
+  }
+}

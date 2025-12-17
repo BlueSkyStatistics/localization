@@ -1,0 +1,22 @@
+{
+  "title": "Antwortscreening",
+  "navigation": "Antwortscreening",
+  "responses": "Wählen Sie eine oder mehrere abhängige Variablen aus",
+  "predictors": "Wählen Sie eine oder mehrere unabhängige Variablen aus",
+  "sortOrder": "Sortierreihenfolge für die Zusammenfassungstabelle des Antwortscreenings",
+  "maxNumberOfPredictor": "Maximale Anzahl von Kombinationen unabhängiger Variablen, die verwendet werden sollen (Haupteffekanalyse)",
+  "adjPvalue": "Anpassungsmethode für p-Werte (Standard ist FDR)",
+  "label1": "Optionale Spalten in der Antwortscreening-Tabelle anzeigen",
+  "showOptionalColumn_CountChk": "Anzahl",
+  "showOptionalColumn_p_valueChk": "p.Wert",
+  "showOptionalColumn_Log_pvalChk": "Log_pval",
+  "showOptionalColumn_FDR_pvalChk": "Adj_pval",
+  "showOptionalColumn_Log_FDR_pvalChk": "Log_Adj_pval",
+  "showOptionalColumn_EffectSizeChk": "Effektgröße",
+  "showOptionalColumn_RSquareChk": "RSquare",
+  "help": {
+    "title": "Antwortscreening",
+    "r_help": "help(p.adjust, package = stats)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFührt ein automatisiertes Antwortscreening durch, um statistisch signifikante Prädiktoren für eine oder mehrere abhängige Variablen zu identifizieren.\n\t\t\t\t<br/>\n\t\t\t\tEs passt systematisch Modelle unter Verwendung aller möglichen Kombinationen von Prädiktoren (bis zu einer vom Benutzer festgelegten Grenze - Standard ist 1) an, um Haupteffekte zu analysieren und berichtet wichtige Statistiken \n\t\t\t\tdarunter p-Werte, -log10(p-Wert), angepasste p-Werte mit FDR, -log10(FDR), Effektgrößen und R²-Werte.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tHinweis zur FDR:\n\t\t\t\t<br/>\n\t\t\t\tBei der Durchführung vieler Hypothesentests (wie beim Antwortscreening über mehrere Prädiktoren) können einige signifikante p-Werte zufällig auftreten.\n\t\t\t\t<br/>\n\t\t\t\tDie Anpassung der False Discovery Rate (FDR) hilft, dies zu kontrollieren, indem sie den erwarteten Anteil falscher Positiver unter allen signifikanten Ergebnissen schätzt.\n\t\t\t\t<br/>\n\t\t\t\tDie Funktion verwendet das Benjamini–Hochberg-Verfahren (p.adjust(..., method = \"fdr\")), um FDR-adjustierte p-Werte zu berechnen, die als FDR_pval angezeigt werden.\n\t\t\t\t<br/>\n\t\t\t\tFDR_pval gibt eine konservativere Schätzung der Signifikanz, die mehrere Vergleiche berücksichtigt.\n\t\t\t\t<br/>\n\t\t\t\tLog_FDR_pval = -log10(FDR_pval) transformiert den angepassten p-Wert auf dieselbe Skala wie LogWorth d.h. -log10(p-Wert), was es einfach macht, Prädiktoren auch nach der Korrektur zu ranken.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAutomatische Modellerzeugung:\n\t\t\t\t<br/>\n\t\t\t\tTestet jede mögliche Kombination von Prädiktorvariablen bis zu einer gewählten maximalen Anzahl (max_predictors).\n\t\t\t\t<br/>\n\t\t\t\tZum Beispiel, setzen Sie max_predictors = 1, um nur einzelne Prädiktoren zu testen, 2 für Paare usw.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFlexible Handhabung von Antworten:\n\t\t\t\t<br/>\n\t\t\t\tKontinuierliche Antworten → Lineare Regression (lm())\n\t\t\t\t<br/>\n\t\t\t\tBinäre kategoriale Antworten → Logistische Regression (glm(family = binomial))\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFormeln zur Berechnung der Effektgröße:\n\t\t\t\t<br/>\n\t\t\t\tKontinuierliches Y: Quadratwurzel der durchschnittlichen Summe der Quadrate aus dem Hypothesentest geteilt durch eine robuste Schätzung der Antwort-SD (unter Verwendung von IQR/1.3489795, wenn IQR > Bereich/20, sonst Stichproben-SD).\n\t\t\t\t<br/>\n\t\t\t\tKategoriales Y, kontinuierliches X: Quadratwurzel des durchschnittlichen Chi-Quadrat-Wertes des Modells.\n\t\t\t\t<br/>\n\t\t\t\tKategoriales Y, kategoriales X: Quadratwurzel des durchschnittlichen Pearson-Chi-Quadrat-Wertes.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tKorrektur für multiple Tests:\n\t\t\t\t<br/>\n\t\t\t\tPasst alle p-Werte mit der Methode der False Discovery Rate (FDR) an und fügt die Spalten FDR_PValue und FDR_Logworth hinzu.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLogWorth-Metrik:\n\t\t\t\tBerichtet -log10(p-Wert) und -log10(FDR-adjustierter p-Wert) zur Rangordnung der Signifikanz (größer = signifikanter).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAutomatische Fallfilterung:\n\t\t\t\tÜberspringt jede Antwort mit weniger als min_cases (Standard ist 2) gültigen Beobachtungen.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

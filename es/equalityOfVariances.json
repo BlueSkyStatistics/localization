@@ -1,0 +1,32 @@
+{
+  "title": "Igualdad de Varianzas",
+  "navigation": "Igualdad de Varianzas",
+  "label1": "Elegir pruebas",
+  "bartlett": "Prueba de Bartlett",
+  "levene": "Prueba de Levene",
+  "fligner": "Prueba de Fligner–Killeen",
+  "normal_distribution": "Prueba basada en la distribución normal",
+  "pairwiseLeveneTest": "Prueba de Levene por pares",
+  "label2": "Formato de datos",
+  "wide": "Formato ancho",
+  "long": "Formato largo",
+  "label3": "Nivel de confianza",
+  "label4": "Hipótesis alternativa",
+  "alt1": "Dos lados",
+  "alt2": "Mayor",
+  "alt3": "Menor",
+  "label5": "Método de ajuste de valor p (para la prueba de Levene por pares)",
+  "padj1": "Holm",
+  "padj2": "Hochberg",
+  "padj3": "Hommel",
+  "padj4": "Bonferroni",
+  "padj5": "BH",
+  "padj6": "BY",
+  "padj7": "FDR",
+  "padj8": "Ninguno",
+  "help": {
+    "title": "Pruebas para la Igualdad de Varianzas",
+    "r_help": "help(bartlett.test, package=stats); help(leveneTest, package=car); help(fligner.test, package=stats)",
+    "body": "\n<b>Descripción</b><br/>\nRealiza pruebas para la igualdad de varianzas en múltiples grupos.<br/>\n<ul>\n<li><b>Prueba de Bartlett</b>: Sensible a desviaciones de la normalidad.</li>\n<li><b>Prueba de Levene</b>: Más robusta ante la no normalidad.</li>\n<li><b>Prueba de Fligner–Killeen</b>: No paramétrica y muy robusta.</li>\n</ul>\n<b>Argumentos</b><br/>\n- alternativa: dos.lados, mayor o menor.<br/>\n- conf.level: nivel de confianza para estimaciones de intervalo.<br/>\n- formato: Diseño de datos ancho o largo.<br/>\n- p.adjust.method: Método para ajuste de comparaciones múltiples.\n"
+  }
+}

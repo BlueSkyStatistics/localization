@@ -1,0 +1,12 @@
+{
+    "title": "Test de Grubbs pour la détection des valeurs aberrantes",
+    "navigation": "Test de Grubbs des valeurs aberrantes",
+    "variableListSelcted": "Sélectionnez une ou plusieurs variables",
+    "alpha": "Alpha : % de probabilité (par défaut 5%), le point le plus éloigné de la moyenne est identifié comme valeur aberrante",
+    "plotShowOutliersChk": "Tracer pour afficher tous les points, y compris les valeurs aberrantes s'il y en a",
+    "help": {
+        "title": "Test de Grubbs pour la détection des valeurs aberrantes",
+        "r_help": "help(sd, package = stats)",
+        "body": "<b>Description</b></br> Détermine si le point extrême dans la variable (valeurs Y uniquement, pas besoin de variable X) est une valeur aberrante.</br></br> Le test de Grubbs, aussi appelé méthode ESD (Extreme Studentized Deviate), est une méthode statistique largement utilisée pour détecter une valeur aberrante unique dans un jeu de données univarié suivant une distribution normale.</br></br> Le but est de déterminer si la valeur la plus extrême est significativement différente des autres, c'est-à-dire une valeur aberrante.</br></br> Étapes d'analyse internes :</br> Calculer la moyenne (μ) et l’écart-type (σ) de l’ensemble des données (y compris la valeur suspecte, contrairement à l’approche robuste ROUT)</br> Calculer la statistique de test de Grubbs (G aussi notée Z) :</br></br> Calculer la valeur critique selon la formule de Grubbs :</br> t_crit = qt(1 - alpha / (2 * n), df = n - 2)</br> G_crit = ((n - 1) / sqrt(n)) * sqrt(t_crit^2 / (n - 2 + t_crit^2))</br></br> Comparer la valeur calculée de G avec la valeur critique du tableau de Grubbs (selon la taille de l'échantillon et le niveau de signification). Si G dépasse la valeur critique, la donnée est considérée comme une valeur aberrante statistiquement significative.</br></br> Utilisation itérative :</br> Bien que le test classique ne détecte qu'une seule valeur aberrante à la fois, il peut être appliqué de façon répétée pour détecter plusieurs valeurs aberrantes — en supprimant un outlier et en relançant le test sur les données restantes.</br></br>"
+    }
+}

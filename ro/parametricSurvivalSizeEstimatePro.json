@@ -1,0 +1,33 @@
+{
+  "title": "Estimarea planurilor de testare a supraviețuirii parametrice",
+  "navigation": "Plan de testare a supraviețuirii parametrice",
+  "labelDistribution": "Selectați o funcție de distribuție care se potrivește cel mai bine datelor",
+  "selectDistFuncWeibullRad": "Weibull",
+  "selectDistFuncExpRad": "Exponențială",
+  "selectDistFuncLnormalRad": "Log Normal",
+  "selectDistFuncLogLogisRad": "Log Logistic",
+  "selectDistFuncGammaRad": "Gamma",
+  "labelDistributionParam": "Fie specificați parametru pentru Distribuția aleasă (de exemplu, formă și dimensiune pentru Weibull sau specificați timpul și percentajele evenimentelor pentru a estima parametrii distribuției)",
+  "labelDistParamOption1": "Opțiunea 1 - Specificați parametrul pentru distribuția selectată",
+  "shape": "specificați parametrul de formă pentru Weibull, loglogistic sau gamma, sau meanlog pentru lognormal",
+  "scale": "specificați parametrul de scară pentru Weibull, exponențial, formă pentru loglogistic sau gamma, sau sdlog pentru lognormal",
+  "labelDistParamOption2": "Opțiunea 2 - Specificați timpul și % evenimente (de exemplu, eșecuri) pentru a calcula parametrii pentru distribuția selectată",
+  "PercentileTime": "Specificați două valori numerice de timp separate prin virgulă (de exemplu, 100, 500) pentru a fi utilizate în estimarea parametrilor distribuției",
+  "PercentileEvent": "Specificați două valori percentuale numerice separate prin virgulă pentru eveniment, de exemplu, % eșec (10, 30) pentru a fi utilizate în estimarea parametrilor distribuției",
+  "parameter": "Selectați percentila pentru a specifica evenimentul percentil dorit, de exemplu, % eșec. Dacă lăsați percentila goală și selectați scară, percentila va fi presupusă automat a fi 63.2121% pentru Weibull și exponențial, și 50% pentru toate celelalte distribuții, dacă locația este selectată",
+  "p": "Percentila (de exemplu, 10) pentru eveniment, de exemplu, eșec",
+  "precision": "Precizii (una sau mai multe valori separate prin virgulă) ca distanțe de la limita CI pentru estimare",
+  "boundType": "Tipul limitei (implicit inferior)",
+  "censorTime": "Timpul de cenzurare, dacă este cazul, de exemplu, specificați 1000",
+  "confidenceInterval": "Nivel de încredere (implicit 0.95)",
+  "labelAdvancedOptions": "Opțiuni avansate (lăsați-le ca valori implicite)",
+  "pilotDataLength": "Numărul de rânduri de date care vor fi utilizate pentru simulări (implicit 2000)",
+  "bootIter": "Iterația bootstrap",
+  "seed": "Tipul seminței de randomizare, orice combinație de patru cifre",
+  "repeatSampleSizeCalculation": "Repetiți calculele dimensiunii eșantionului pentru a lua media (câmpul seminței trebuie să fie gol)",
+  "help": {
+    "title": "Estimarea planurilor de testare a supraviețuirii parametrice",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n\t\t\t<br/>\n            <br/>\n\t\t"
+  }
+}

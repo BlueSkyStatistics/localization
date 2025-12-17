@@ -1,0 +1,15 @@
+{
+  "title": "Restructurer les données de survie paramétriques",
+  "navigation": "Restructurer les données de survie paramétriques",
+  "newdatasetname": "Nom du nouvel ensemble de données (sans espaces ni caractères spéciaux) pour créer un ensemble de données formaté censuré",
+  "label1": "Sélectionnez les unités totales et choisissez soit la variable d'échec, soit la variable de censure, ou sélectionnez simplement à la fois l'échec et la censure et laissez les unités totales vides",
+  "variableEventSelcted": "Sélectionnez la variable pour l'événement (par exemple, échoué)",
+  "variableCensorSelcted": "Sélectionnez la variable pour la censure (par exemple, non échoué)",
+  "variableTotalUnitsSelcted": "Sélectionnez les unités totales uniquement si l'une (pas les deux) des variables échouées ou censurées est sélectionnée ci-dessus",
+  "variableSortingSelcted": "(facultatif) Sélectionnez une variable pour trier le nouvel ensemble de données",
+  "sortOrder": "Ordre de tri croissant (par défaut) ou décroissant",
+  "help": {
+    "title": "Restructurer les données de survie paramétriques",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\t<br/>"
+  }
+}

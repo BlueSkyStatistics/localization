@@ -1,0 +1,15 @@
+{
+    "title": "Reshape Parametric Survival Data",
+    "navigation": "Reshape Parametric Survival Data",
+    "newdatasetname": "New dataset name (no spaces or special characters) to create a censored formatted dataset",
+    "label1": "Select total units and select either failure or censor variable, or just select both failure and censor and leave total units empty",
+    "variableEventSelcted": "Select the variable for event (e.g., failed)",
+    "variableCensorSelcted": "Select the variable for censor (e.g., not failed)",
+    "variableTotalUnitsSelcted": "Select total units only if one (not both) of failed or censored is selected above",
+    "variableSortingSelcted": "(optional) Select a variable to sort the new dataset",
+    "sortOrder": "Sort order ascending (default) or descending",
+    "help": {
+        "title": "Reshape Parametric Survival Data",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}
