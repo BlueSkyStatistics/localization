@@ -584,84 +584,60 @@
   "projAsknameMsg5": "هل تريد استبدال المشروع الموجود بالمشروع الجديد؟",
   "projAsknameMsg6": "هو مشروع غير صالح أو تالف.",
   "jsoncomment0010": "=======القوائم الرئيسية والقوائم الفرعية أدناه=======",
-  
   "agreement_top_level_title": "اتفاقية",
   "professional_Agreement_Menu": "اتفاقية",
-
   "agreement_Method": "طريقة",
   "professional_Method": "طريقة",
-
   "agreement_Scale": "مقياس",
-
   "analysis_top_level_title": "تحليل",
   "contribution_Analysis_Menu": "تحليل",
   "professional_Analysis_Menu": "تحليل",
   "sixsigmapro_Analysis_Menu": "تحليل",
-
   "analysis_Association_Rules": "قواعد الارتباط",
   "analysis_Cluster": "عنقودية",
   "analysis_Correlations": "ارتباطات",
-
   "analysis_Crosstab": "جدول متقاطع",
   "professional_Crosstab": "جدول متقاطع",
-
   "analysis_Distribution_Analysis": "تحليل التوزيع",
   "sixsigmapro_Distribution_Analysis": "تحليل التوزيع",
-
   "analysis_Factor_Analysis": "تحليل العوامل",
-
   "analysis_Means": "المتوسطات",
   "sixsigmapro_Means": "المتوسطات",
-
   "analysis_Moments": "لحظات",
   "analysis_Non_Parametric": "غير معلمي",
-  "analysis_Outlier" : "القيم الشاذة",
+  "analysis_Outlier": "القيم الشاذة",
   "analysis_Proportions": "النسب",
-
   "analysis_Summary": "الملخص",
   "professional_Summary": "الملخص",
   "sixsigmapro_Summary": "الملخص",
-
   "analysis_Survival": "البقاء",
   "contribution_Survival": "البقاء",
   "professional_Survival": "البقاء",
-
   "analysis_Tables": "الجداول",
   "contribution_Tables": "الجداول",
-
   "analysis_Variance": "التباين",
   "contribution_Sample_Size_Menu": "حجم العينة",
   "contribution_Precision": "الدقة",
   "contribution_Tests": "الاختبارات",
-
   "contribution_Datasets_Menu": "مجموعات البيانات",
   "datasets_top_level_title": "مجموعات البيانات",
   "datasetspro_Datasets_Menu": "مجموعات البيانات",
   "professional_Datasets_Menu": "مجموعات البيانات",
-
   "contribution_Subset": "مجموعة فرعية",
   "datasets_Subset": "مجموعة فرعية",
   "professional_Subset": "مجموعة فرعية",
-
   "datasets_group_by": "تجميع حسب",
-
   "datasets_Matching": "مطابقة",
   "professional_Matching": "مطابقة",
-
   "datasets_Merge": "دمج",
   "professional_Merge": "دمج",
-
   "datasets_ReShape": "إعادة تشكيل",
   "datasets_Sampling": "أخذ عينات",
-
   "datasets_Sort": "ترتيب",
   "professional_Sort": "ترتيب",
-
   "datasets_Transpose": "انتقال",
-
   "distribution_top_level_title": "التوزيع",
   "sixsigmapro_Distribution_Menu": "التوزيع",
-
   "distribution_Beta": "بيتا",
   "distribution_Binomial": "ثنائي",
   "distribution_Cauchy": "كاوشي",
@@ -675,10 +651,8 @@
   "distribution_Logistic": "لوجستي",
   "distribution_Lognormal": "لوج-عادي",
   "distribution_Negative_Binomial": "ثنائي سلبي",
-
   "distribution_Normal": "عادي",
   "sixsigmapro_Normal": "عادي",
-
   "distribution_Poisson": "بواسون",
   "distribution_t": "تي",
   "distribution_Uniform": "منتظم",
@@ -689,52 +663,40 @@
   "doe_Inspect_Design": "تفقد التصميم",
   "doe_Modify_Design": "تعديل التصميم",
   "doe_Analyze_Design": "تحليل التصميم",
-
   "file_top_level_title": "ملف",
   "modelfitting_File": "ملف",
   "outputpro_File_Menu": "ملف",
   "projectspace_File_Menu": "ملف",
   "utility_File_Menu": "ملف",
   "utilitypro_File_Menu": "ملف",
-
   "forecasting_top_level_title": "التنبؤ",
-
   "graphics_top_level_title": "الرسومات",
   "graphicspro_Graphics_Menu": "الرسومات",
-
   "graphics_Distribution": "التوزيع",
   "graphicspro_Distribution": "التوزيع",
-
   "graphics_Line_Charts": "الرسومات الخطية",
   "graphics_Maps": "الخرائط",
   "graphics_Pie_Charts": "الرسومات الدائرية",
-
   "graphics_Scatter_Plot": "رسم مبعثر",
   "graphicspro_Scatter_Plot": "رسم مبعثر",
-
   "modelevaluation_top_level_title": "تقييم النموذج",
   "contribution_Model_Evaluation_Menu": "تقييم النموذج",
   "professional_Model_Evaluation_Menu": "تقييم النموذج",
-
   "modelevaluation_Compare": "مقارنة",
   "modelevaluation_Fit": "تطبيق",
   "modelevaluation_IRT": "IRT",
   "modelevaluation_Predict": "التنبؤ",
   "modelevaluation_Summarize": "تلخيص",
-
   "modelfitting_top_level_title": "تركيب النموذج",
   "contribution_Model_Fitting_Menu": "تركيب النموذج",
   "modelfittingpro_Model_Fitting_Menu": "تركيب النموذج",
   "professional_Model_Fitting_Menu": "تركيب النموذج",
-
   "modelfitting_Contrasts": "التباينات",
   "modelfitting_IRT": "IRT",
   "modelfitting_KNN": "KNN",
-
   "modelfitting_Regression": "الانحدار",
   "contribution_Regression": "الانحدار",
   "professional_Regression": "الانحدار",
-
   "modelfitting_Neural_Nets": "الشبكات العصبية",
   "modelfitting_Trees": "الأشجار",
   "modelfitting_File_Model": "النموذج",
@@ -743,39 +705,38 @@
   "projectspace_Open_Project": "فتح مشروع",
   "projectspace_Save_Project": "حفظ مشروع",
   "projectspace_SaveAs_Project": "حفظ المشروع كـ",
-
   "sixsigma_top_level_title": "ستة سيجما",
   "sixsigmapro_Six_Sigma_Menu": "ستة سيجما",
-
   "sixsigma_Pareto_Chart": "مخطط باريتو",
   "sixsigmapro_Pareto_Chart": "مخطط باريتو",
-
   "sixsigma_MSA": "MSA",
   "sixsigmapro_MSA": "MSA",
-
   "sixsigma_Process_Capability": "قدرة العملية",
   "sixsigmapro_Process_Capability": "قدرة العملية",
-
   "sixsigma_Shewhart_Charts": "مخططات شوهارت",
   "sixsigmapro_Shewhart_Charts": "مخططات شوهارت",
-
   "variables_top_level_title": "المتغيرات",
   "contribution_Variables_Menu": "المتغيرات",
   "professional_Variables_Menu": "المتغيرات",
-
   "variables_Box_Cox": "بوكس-كوكس",
-
   "variables_Compute": "احسب",
   "contribution_Compute": "احسب",
-
   "variables_Convert": "تحويل",
-
   "variables_Factor_Levels": "مستويات العوامل",
   "contribution_Factor_Levels": "مستويات العوامل",
-
   "analysis_Missing_Values": "القيم المفقودة",
   "professional_Missing_Values": "القيم المفقودة",
-
   "Note00": "=============القائمة أدناه تختلف عن القائمتين أعلاه===========",
-  "variables_Missing_Values": "القيم المفقودة"
+  "variables_Missing_Values": "القيم المفقودة",
+  "FBttipFO18": "الطلب الأول (نمذجة سطح الاستجابة). انقر على الزر ثم حرك متغيرًا أو أكثر. لإدراج كود عام، انقر نقرًا مزدوجًا",
+  "FBttipTWI19": "تفاعل ثنائي الاتجاه (نمذجة سطح الاستجابة). انقر على الزر ثم حرك متغيرًا أو أكثر. لإدراج كود عام، انقر نقرًا مزدوجًا",
+  "FBttipPQ20": "حد مربع تربيعي (نمذجة سطح الاستجابة). انقر على الزر ثم حرك متغيرًا أو أكثر. لإدراج كود عام، انقر نقرًا مزدوجًا",
+  "FBttipSO21": "توسيع إلى جميع الحدود (نمذجة سطح الاستجابة). انقر على الزر ثم حرك متغيرًا أو أكثر. لإدراج كود عام، انقر نقرًا مزدوجًا",
+  "CBttipFindPattern78": "انقر وحرك متغيرًا للعثور على نمط، يرجع صحيح/خطأ، لإدراج كود عام انقر نقرًا مزدوجًا",
+  "CBbtnlbl78": "البحث عن نمط(1)",
+  "CBttipFindPattern79": "انقر وحرك متغيرًا للعثور على نمط، حدد القيمة للعودة، لإدراج كود عام انقر نقرًا مزدوجًا",
+  "CBbtnlbl79": "البحث عن نمط(2)",
+  "textBoxActiveDatasetMissingTitle": "مجموعة البيانات غير متاحة",
+  "textBoxActiveDatasetMissingMsg1": "مجموعة البيانات",
+  "textBoxActiveDatasetMissingMsg2": "لا يمكن العثور عليها، تحتاج إلى فتح مجموعة البيانات"
 }

@@ -584,7 +584,6 @@
   "projAsknameMsg5": "Vuoi sostituire il progetto esistente con il nuovo?",
   "projAsknameMsg6": "è un progetto non valido o corrotto.",
   "jsoncomment0010": "=======Menu di livello superiore e sottomenu a discesa sotto questa linea=======",
- 
   "agreement_top_level_title": "Accordo",
   "professional_Agreement_Menu": "Accordo",
   "agreement_Method": "Metodo",
@@ -606,7 +605,7 @@
   "sixsigmapro_Means": "Medie",
   "analysis_Moments": "Momenti",
   "analysis_Non_Parametric": "Non Parametrico",
-  "analysis_Outlier" : "Valore anomalo",
+  "analysis_Outlier": "Valore anomalo",
   "analysis_Proportions": "Proporzioni",
   "analysis_Summary": "Sommario",
   "professional_Summary": "Sommario",
@@ -728,5 +727,16 @@
   "analysis_Missing_Values": "Valori Mancanti",
   "professional_Missing_Values": "Valori Mancanti",
   "Note00": "=============Il menu sottostante è diverso dai 2 sopra===========",
-  "variables_Missing_Values": "Valori Mancanti"
+  "variables_Missing_Values": "Valori Mancanti",
+  "FBttipFO18": "Primo ordine (modellazione della superficie di risposta). Fai clic sul pulsante e poi sposta una o più variabili. Per inserire codice generico, fai doppio clic",
+  "FBttipTWI19": "Interazione a 2 vie (modellazione della superficie di risposta). Fai clic sul pulsante e poi sposta una o più variabili. Per inserire codice generico, fai doppio clic",
+  "FBttipPQ20": "Termine quadratico (modellazione della superficie di risposta). Fai clic sul pulsante e poi sposta una o più variabili. Per inserire codice generico, fai doppio clic",
+  "FBttipSO21": "Espandi a tutti i termini (modellazione della superficie di risposta). Fai clic sul pulsante e poi sposta una o più variabili. Per inserire codice generico, fai doppio clic",
+  "CBttipFindPattern78": "Fai clic e sposta una variabile per trovare un modello, restituisce vero/falso, per inserire codice generico fai doppio clic",
+  "CBbtnlbl78": "Trova modello(1)",
+  "CBttipFindPattern79": "Fai clic e sposta una variabile per trovare un modello, specifica il valore da restituire, per inserire codice generico fai doppio clic",
+  "CBbtnlbl79": "Trova modello(2)",
+  "textBoxActiveDatasetMissingTitle": "Dataset non disponibile",
+  "textBoxActiveDatasetMissingMsg1": "Il dataset",
+  "textBoxActiveDatasetMissingMsg2": "non può essere trovato, è necessario aprire il dataset"
 }
