@@ -584,84 +584,60 @@
   "projAsknameMsg5": "기존 프로젝트를 새 프로젝트로 교체하시겠습니까?",
   "projAsknameMsg6": "유효하지 않거나 손상된 프로젝트입니다.",
   "jsoncomment0010": "=======최상위 메뉴 및 하위 메뉴 드롭다운 아래 이 줄=======",
-  
   "agreement_top_level_title": "동의",
   "professional_Agreement_Menu": "동의",
-
   "agreement_Method": "방법",
   "professional_Method": "방법",
-
   "agreement_Scale": "척도",
-
   "analysis_top_level_title": "분석",
   "contribution_Analysis_Menu": "분석",
   "professional_Analysis_Menu": "분석",
   "sixsigmapro_Analysis_Menu": "분석",
-
   "analysis_Association_Rules": "연관 규칙",
   "analysis_Cluster": "클러스터",
   "analysis_Correlations": "상관관계",
-
   "analysis_Crosstab": "교차표",
   "professional_Crosstab": "교차표",
-
   "analysis_Distribution_Analysis": "분포 분석",
   "sixsigmapro_Distribution_Analysis": "분포 분석",
-
   "analysis_Factor_Analysis": "요인 분석",
-
   "analysis_Means": "평균",
   "sixsigmapro_Means": "평균",
-
   "analysis_Moments": "모멘트",
   "analysis_Non_Parametric": "비모수",
-  "analysis_Outlier" : "이상치",
+  "analysis_Outlier": "이상치",
   "analysis_Proportions": "비율",
-
   "analysis_Summary": "요약",
   "professional_Summary": "요약",
   "sixsigmapro_Summary": "요약",
-
   "analysis_Survival": "생존 분석",
   "contribution_Survival": "생존 분석",
   "professional_Survival": "생존 분석",
-
   "analysis_Tables": "표",
   "contribution_Tables": "표",
-
   "analysis_Variance": "분산",
   "contribution_Sample_Size_Menu": "표본 크기",
   "contribution_Precision": "정확도",
   "contribution_Tests": "테스트",
-
   "contribution_Datasets_Menu": "데이터 세트",
   "datasets_top_level_title": "데이터 세트",
   "datasetspro_Datasets_Menu": "데이터 세트",
   "professional_Datasets_Menu": "데이터 세트",
-
   "contribution_Subset": "부분 집합",
   "datasets_Subset": "부분 집합",
   "professional_Subset": "부분 집합",
-
   "datasets_group_by": "그룹화",
-
   "datasets_Matching": "매칭",
   "professional_Matching": "매칭",
-
   "datasets_Merge": "병합",
   "professional_Merge": "병합",
-
   "datasets_ReShape": "형태 변경",
   "datasets_Sampling": "샘플링",
-
   "datasets_Sort": "정렬",
   "professional_Sort": "정렬",
-
   "datasets_Transpose": "전치",
-
   "distribution_top_level_title": "분포",
   "sixsigmapro_Distribution_Menu": "분포",
-
   "distribution_Beta": "베타",
   "distribution_Binomial": "이항",
   "distribution_Cauchy": "코시",
@@ -675,10 +651,8 @@
   "distribution_Logistic": "로지스틱",
   "distribution_Lognormal": "로그정규",
   "distribution_Negative_Binomial": "음이항",
-
   "distribution_Normal": "정규",
   "sixsigmapro_Normal": "정규",
-
   "distribution_Poisson": "포아송",
   "distribution_t": "t",
   "distribution_Uniform": "균등",
@@ -689,52 +663,40 @@
   "doe_Inspect_Design": "설계 점검",
   "doe_Modify_Design": "설계 수정",
   "doe_Analyze_Design": "설계 분석",
-
   "file_top_level_title": "파일",
   "modelfitting_File": "파일",
   "outputpro_File_Menu": "파일",
   "projectspace_File_Menu": "파일",
   "utility_File_Menu": "파일",
   "utilitypro_File_Menu": "파일",
-
   "forecasting_top_level_title": "예측",
-
   "graphics_top_level_title": "그래픽",
   "graphicspro_Graphics_Menu": "그래픽",
-
   "graphics_Distribution": "분포",
   "graphicspro_Distribution": "분포",
-
   "graphics_Line_Charts": "라인 차트",
   "graphics_Maps": "지도",
   "graphics_Pie_Charts": "파이 차트",
-
   "graphics_Scatter_Plot": "산점도",
   "graphicspro_Scatter_Plot": "산점도",
-
   "modelevaluation_top_level_title": "모델 평가",
   "contribution_Model_Evaluation_Menu": "모델 평가",
   "professional_Model_Evaluation_Menu": "모델 평가",
-
   "modelevaluation_Compare": "비교",
   "modelevaluation_Fit": "적합",
   "modelevaluation_IRT": "IRT",
   "modelevaluation_Predict": "예측",
   "modelevaluation_Summarize": "요약",
-
   "modelfitting_top_level_title": "모델 적합",
   "contribution_Model_Fitting_Menu": "모델 적합",
   "modelfittingpro_Model_Fitting_Menu": "모델 적합",
   "professional_Model_Fitting_Menu": "모델 적합",
-
   "modelfitting_Contrasts": "대조",
   "modelfitting_IRT": "IRT",
   "modelfitting_KNN": "KNN",
-
   "modelfitting_Regression": "회귀",
   "contribution_Regression": "회귀",
   "professional_Regression": "회귀",
-
   "modelfitting_Neural_Nets": "신경망",
   "modelfitting_Trees": "트리",
   "modelfitting_File_Model": "모델",
@@ -743,39 +705,38 @@
   "projectspace_Open_Project": "프로젝트 열기",
   "projectspace_Save_Project": "프로젝트 저장",
   "projectspace_SaveAs_Project": "다른 이름으로 저장",
-
   "sixsigma_top_level_title": "식스 시그마",
   "sixsigmapro_Six_Sigma_Menu": "식스 시그마",
-
   "sixsigma_Pareto_Chart": "파레토 차트",
   "sixsigmapro_Pareto_Chart": "파레토 차트",
-
   "sixsigma_MSA": "MSA",
   "sixsigmapro_MSA": "MSA",
-
   "sixsigma_Process_Capability": "프로세스 능력",
   "sixsigmapro_Process_Capability": "프로세스 능력",
-
   "sixsigma_Shewhart_Charts": "슈하트 차트",
   "sixsigmapro_Shewhart_Charts": "슈하트 차트",
-
   "variables_top_level_title": "변수",
   "contribution_Variables_Menu": "변수",
   "professional_Variables_Menu": "변수",
-
   "variables_Box_Cox": "박스-콕스",
-
   "variables_Compute": "계산",
   "contribution_Compute": "계산",
-
   "variables_Convert": "변환",
-
   "variables_Factor_Levels": "요인 수준",
   "contribution_Factor_Levels": "요인 수준",
-
   "analysis_Missing_Values": "누락된 값",
   "professional_Missing_Values": "누락된 값",
-
   "Note00": "=============아래의 메뉴는 위 두 개와 다릅니다===========",
-  "variables_Missing_Values": "누락된 값"
+  "variables_Missing_Values": "누락된 값",
+  "FBttipFO18": "첫 번째 주문 (반응 표면 모델링). 버튼을 클릭한 다음 하나 이상의 변수를 이동하십시오. 일반 코드를 삽입하려면 두 번 클릭하십시오.",
+  "FBttipTWI19": "2-way 상호작용 (반응 표면 모델링). 버튼을 클릭한 다음 하나 이상의 변수를 이동하십시오. 일반 코드를 삽입하려면 두 번 클릭하십시오.",
+  "FBttipPQ20": "2차 제곱 항 (반응 표면 모델링). 버튼을 클릭한 다음 하나 이상의 변수를 이동하십시오. 일반 코드를 삽입하려면 두 번 클릭하십시오.",
+  "FBttipSO21": "모든 항으로 확장 (반응 표면 모델링). 버튼을 클릭한 다음 하나 이상의 변수를 이동하십시오. 일반 코드를 삽입하려면 두 번 클릭하십시오.",
+  "CBttipFindPattern78": "패턴을 찾기 위해 변수를 클릭하고 이동하십시오, true/false를 반환합니다, 일반 코드를 삽입하려면 두 번 클릭하십시오.",
+  "CBbtnlbl78": "패턴 찾기(1)",
+  "CBttipFindPattern79": "패턴을 찾기 위해 변수를 클릭하고 이동하십시오, 반환할 값을 지정하십시오, 일반 코드를 삽입하려면 두 번 클릭하십시오.",
+  "CBbtnlbl79": "패턴 찾기(2)",
+  "textBoxActiveDatasetMissingTitle": "데이터셋을 사용할 수 없습니다",
+  "textBoxActiveDatasetMissingMsg1": "데이터셋",
+  "textBoxActiveDatasetMissingMsg2": "을(를) 찾을 수 없습니다, 데이터셋을 열어야 합니다"
 }

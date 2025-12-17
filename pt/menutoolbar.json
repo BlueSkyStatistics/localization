@@ -584,84 +584,60 @@
   "projAsknameMsg5": "Você deseja substituir o projeto existente pelo novo?",
   "projAsknameMsg6": "é um projeto inválido ou corrompido.",
   "jsoncomment0010": "=======Menus de nível superior e submenus dropdown abaixo desta linha=======",
-  
   "agreement_top_level_title": "Acordo",
   "professional_Agreement_Menu": "Acordo",
-  
   "agreement_Method": "Método",
   "professional_Method": "Método",
-
   "agreement_Scale": "Escala",
-
   "analysis_top_level_title": "Análise",
   "contribution_Analysis_Menu": "Análise",
   "professional_Analysis_Menu": "Análise",
   "sixsigmapro_Analysis_Menu": "Análise",
-
   "analysis_Association_Rules": "Regras de Associação",
   "analysis_Cluster": "Agrupamento",
   "analysis_Correlations": "Correlações",
-
   "analysis_Crosstab": "Tabela Cruzada",
   "professional_Crosstab": "Tabela Cruzada",
-
   "analysis_Distribution_Analysis": "Análise de Distribuição",
   "sixsigmapro_Distribution_Analysis": "Análise de Distribuição",
-
   "analysis_Factor_Analysis": "Análise Fatorial",
-
   "analysis_Means": "Médias",
   "sixsigmapro_Means": "Médias",
-
   "analysis_Moments": "Momentos",
   "analysis_Non_Parametric": "Não Paramétrico",
-  "analysis_Outlier" : "Valor atípico",
+  "analysis_Outlier": "Valor atípico",
   "analysis_Proportions": "Proporções",
-
   "analysis_Summary": "Resumo",
   "professional_Summary": "Resumo",
   "sixsigmapro_Summary": "Resumo",
-
   "analysis_Survival": "Sobrevivência",
   "contribution_Survival": "Sobrevivência",
   "professional_Survival": "Sobrevivência",
-
   "analysis_Tables": "Tabelas",
   "contribution_Tables": "Tabelas",
-
   "analysis_Variance": "Variância",
   "contribution_Sample_Size_Menu": "Tamanho da Amostra",
   "contribution_Precision": "Precisão",
   "contribution_Tests": "Testes",
-
   "contribution_Datasets_Menu": "Conjuntos de Dados",
   "datasets_top_level_title": "Conjuntos de Dados",
   "datasetspro_Datasets_Menu": "Conjuntos de Dados",
   "professional_Datasets_Menu": "Conjuntos de Dados",
-
   "contribution_Subset": "Subconjunto",
   "datasets_Subset": "Subconjunto",
   "professional_Subset": "Subconjunto",
-
   "datasets_group_by": "Agrupar Por",
-
   "datasets_Matching": "Correspondência",
   "professional_Matching": "Correspondência",
-
   "datasets_Merge": "Mesclar",
   "professional_Merge": "Mesclar",
-
   "datasets_ReShape": "Reconfigurar",
   "datasets_Sampling": "Amostragem",
-
   "datasets_Sort": "Ordenar",
   "professional_Sort": "Ordenar",
-
   "datasets_Transpose": "Transpor",
-
   "distribution_top_level_title": "Distribuição",
   "sixsigmapro_Distribution_Menu": "Distribuição",
-
   "distribution_Beta": "Beta",
   "distribution_Binomial": "Binomial",
   "distribution_Cauchy": "Cauchy",
@@ -675,10 +651,8 @@
   "distribution_Logistic": "Logístico",
   "distribution_Lognormal": "Lognormal",
   "distribution_Negative_Binomial": "Binomial Negativa",
-
   "distribution_Normal": "Normal",
   "sixsigmapro_Normal": "Normal",
-
   "distribution_Poisson": "Poisson",
   "distribution_t": "t",
   "distribution_Uniform": "Uniforme",
@@ -689,52 +663,40 @@
   "doe_Inspect_Design": "Inspecionar Projeto",
   "doe_Modify_Design": "Modificar Projeto",
   "doe_Analyze_Design": "Analisar Projeto",
-
   "file_top_level_title": "Arquivo",
   "modelfitting_File": "Arquivo",
   "outputpro_File_Menu": "Arquivo",
   "projectspace_File_Menu": "Arquivo",
   "utility_File_Menu": "Arquivo",
   "utilitypro_File_Menu": "Arquivo",
-
   "forecasting_top_level_title": "Previsão",
-
   "graphics_top_level_title": "Gráficos",
   "graphicspro_Graphics_Menu": "Gráficos",
-
   "graphics_Distribution": "Distribuição",
   "graphicspro_Distribution": "Distribuição",
-
   "graphics_Line_Charts": "Gráficos de Linhas",
   "graphics_Maps": "Mapas",
   "graphics_Pie_Charts": "Gráficos de Pizza",
-
   "graphics_Scatter_Plot": "Gráfico de Dispersão",
   "graphicspro_Scatter_Plot": "Gráfico de Dispersão",
-
   "modelevaluation_top_level_title": "Avaliação de Modelos",
   "contribution_Model_Evaluation_Menu": "Avaliação de Modelos",
   "professional_Model_Evaluation_Menu": "Avaliação de Modelos",
-
   "modelevaluation_Compare": "Comparar",
   "modelevaluation_Fit": "Ajustar",
   "modelevaluation_IRT": "IRT",
   "modelevaluation_Predict": "Prever",
   "modelevaluation_Summarize": "Resumir",
-
   "modelfitting_top_level_title": "Ajuste de Modelos",
   "contribution_Model_Fitting_Menu": "Ajuste de Modelos",
   "modelfittingpro_Model_Fitting_Menu": "Ajuste de Modelos",
   "professional_Model_Fitting_Menu": "Ajuste de Modelos",
-
   "modelfitting_Contrasts": "Contrastes",
   "modelfitting_IRT": "IRT",
   "modelfitting_KNN": "KNN",
-
   "modelfitting_Regression": "Regressão",
   "contribution_Regression": "Regressão",
   "professional_Regression": "Regressão",
-
   "modelfitting_Neural_Nets": "Redes Neurais",
   "modelfitting_Trees": "Árvores",
   "modelfitting_File_Model": "Modelo",
@@ -743,39 +705,38 @@
   "projectspace_Open_Project": "Abrir Projeto",
   "projectspace_Save_Project": "Salvar Projeto",
   "projectspace_SaveAs_Project": "Salvar Como Projeto",
-
   "sixsigma_top_level_title": "Seis Sigma",
   "sixsigmapro_Six_Sigma_Menu": "Seis Sigma",
-
   "sixsigma_Pareto_Chart": "Gráfico de Pareto",
   "sixsigmapro_Pareto_Chart": "Gráfico de Pareto",
-
   "sixsigma_MSA": "MSA",
   "sixsigmapro_MSA": "MSA",
-
   "sixsigma_Process_Capability": "Capacidade do Processo",
   "sixsigmapro_Process_Capability": "Capacidade do Processo",
-
   "sixsigma_Shewhart_Charts": "Gráficos de Shewhart",
   "sixsigmapro_Shewhart_Charts": "Gráficos de Shewhart",
-
   "variables_top_level_title": "Variáveis",
   "contribution_Variables_Menu": "Variáveis",
   "professional_Variables_Menu": "Variáveis",
-
   "variables_Box_Cox": "Box-Cox",
-
   "variables_Compute": "Calcular",
   "contribution_Compute": "Calcular",
-
   "variables_Convert": "Converter",
-
   "variables_Factor_Levels": "Níveis de Fatores",
   "contribution_Factor_Levels": "Níveis de Fatores",
-
   "analysis_Missing_Values": "Valores Faltantes",
   "professional_Missing_Values": "Valores Faltantes",
-
   "Note00": "=============O menu abaixo é diferente dos 2 acima===========",
-  "variables_Missing_Values": "Valores Faltantes"
+  "variables_Missing_Values": "Valores Faltantes",
+  "FBttipFO18": "Primeiro pedido (Modelagem de superfície de resposta). Clique no botão e mova uma ou mais variáveis. Para inserir código genérico, clique duas vezes",
+  "FBttipTWI19": "Interação de 2 vias (Modelagem de superfície de resposta). Clique no botão e mova uma ou mais variáveis. Para inserir código genérico, clique duas vezes",
+  "FBttipPQ20": "Termo quadrático (Modelagem de superfície de resposta). Clique no botão e mova uma ou mais variáveis. Para inserir código genérico, clique duas vezes",
+  "FBttipSO21": "Expandir para todos os termos (Modelagem de superfície de resposta). Clique no botão e mova uma ou mais variáveis. Para inserir código genérico, clique duas vezes",
+  "CBttipFindPattern78": "Clique e mova uma variável para encontrar um padrão, retorna verdadeiro/falso, para inserir código genérico clique duas vezes",
+  "CBbtnlbl78": "Encontrar Padrão(1)",
+  "CBttipFindPattern79": "Clique e mova uma variável para encontrar um padrão, especifique o valor a retornar, para inserir código genérico clique duas vezes",
+  "CBbtnlbl79": "Encontrar Padrão(2)",
+  "textBoxActiveDatasetMissingTitle": "Conjunto de dados não disponível",
+  "textBoxActiveDatasetMissingMsg1": "O conjunto de dados",
+  "textBoxActiveDatasetMissingMsg2": "não pode ser encontrado, você precisa abrir o conjunto de dados"
 }
