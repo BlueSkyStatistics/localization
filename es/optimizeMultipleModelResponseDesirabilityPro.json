@@ -28,11 +28,12 @@
   "showModelDetailsChk": "Mostrar detalles de cada modelo (haga clic para habilitar las siguientes opciones)",
   "showModelFormulaChk": "Mostrar fórmula del modelo",
   "showModelMixMaxValuesChk": "Mostrar valores mínimos, máximos y niveles categóricos del parámetro del modelo",
-  "showModelVarDetailsChk": "mostrar el tipo de dato de los parámetros del modelo",
+  "showModelVarDetailsChk": "mostrar tipo de dato de los parámetros del modelo",
   "saveModelChk": "Guardar todos los modelos para su uso posterior con el menú de Evaluación del Modelo",
   "lmSummaryTableChk": "Mostrar tabla de Resumen del Modelo",
   "residualTableChk": "Mostrar tabla de Residuales",
   "coefficientTableChk": "Mostrar tabla de Coeficientes",
+  "supressPredictWarningsChk": "Suprimir advertencias de cálculos de predicción internos",
   "help": {
     "title": "Calcular y Optimizar Respuestas de Múltiples Modelos",
     "r_help": "help(optim, package = stats)",
