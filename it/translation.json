@@ -1,18 +1,18 @@
 {
-  "r_editor_script": "Script editor R",
+  "r_editor_script": "Script dell'editor R",
   "grid_edit": "Modifica griglia",
   "open_dataset": "Apri dataset",
   "outputWindow": {
     "main": {
       "new": "Aggiungi nuovo elemento all'output",
       "save": "Salva",
-      "export": "Esporta output",
+      "export": "Salva con nome",
       "clear": "Pulisci output",
       "close": "Chiudi scheda output",
       "restart": "Riavvia R",
       "rerun": "Esegui di nuovo",
-      "freeze": "Blocca intestazioni tabella",
-      "toc": "Mostra indice"
+      "freeze": "Blocca intestazioni della tabella",
+      "toc": "Mostra tabella dei contenuti"
     },
     "code": {
       "hide": "Nascondi codice",
@@ -21,7 +21,7 @@
       "find": "Trova",
       "findNext": "Trova successivo",
       "findReplace": "Trova e sostituisci",
-      "comment": "Commento",
+      "comment": "Commenta",
       "uncomment": "Annulla commento",
       "launchDialog": "Apri dialogo",
       "showCode": "Mostra codice",
@@ -40,9 +40,9 @@
     "find": "Trova",
     "next": "Trova successivo",
     "replace": "Trova e sostituisci",
-    "comment": "Commento",
+    "comment": "Commenta",
     "uncomment": "Annulla commento",
-    "save": "",
+    "save": "Salva",
     "saveAs": "Salva come",
     "clear": "Pulisci o chiudi file",
     "toggle": "Attiva/disattiva editor R"
@@ -54,7 +54,7 @@
     "redo": "Ripeti modifiche"
   },
   "REditrOutputContext": {
-    "execute": "Eseguire",
+    "execute": "Esegui",
     "executeAll": "Esegui tutto",
     "find": "Trova",
     "next": "Trova successivo",
@@ -62,7 +62,7 @@
     "cut": "Taglia",
     "copy": "Copia",
     "paste": "Incolla",
-    "comment": "Commento",
+    "comment": "Commenta",
     "uncomment": "Annulla commento",
     "selectAll": "Seleziona tutto"
   },
@@ -74,7 +74,7 @@
   "CntxMkOrdFac": "Crea fattore ordinato",
   "CntxMkChar": "Crea carattere",
   "CntxMkNum": "Crea numerico",
-  "CntxMkNumEU": "Converti in numerico (Europeo)",
+  "CntxMkNumEU": "Crea numerico (europeo)",
   "CntxInsDtVar": "Inserisci nuova variabile data",
   "CntxInsDtVarEnd": "Inserisci nuova variabile data alla fine",
   "CntxInsDtTmVar": "Inserisci nuova variabile data e ora",
@@ -87,16 +87,21 @@
   "CntxInsFacVarEnd": "Inserisci nuova variabile fattore alla fine",
   "CntxDelCol": "Elimina colonna",
   "CntxDelVar": "Elimina variabile",
-  "CntxMkTopRowHdr": "Trasforma la riga superiore in un'intestazione",
+  "CntxMkTopRowHdr": "Rendi la riga superiore un'intestazione",
   "CntxCopy": "Copia",
   "CntxPaste": "Incolla",
-  "RenOutputTitle": "Cambia titolo della scheda di output",
-  "RenOutputOldname": "Titolo corrente",
+  "RenOutputTitle": "Cambia titolo scheda output",
+  "RenOutputOldname": "Titolo attuale",
   "RenOutputNewname": "Nuovo titolo",
   "RenOutputCancelBtn": "Annulla",
   "RenOutputRenameBtn": "Rinomina",
   "exportFileLockedOk": "Ok",
   "viewModeSplashTitle": "Attenzione! Solo modalità di visualizzazione",
-  "viewModeSplashMsg": "Questa applicazione è solo in modalità di visualizzazione. Non puoi eseguire alcuna analisi. Puoi solo visualizzare le vecchie analisi all'interno di un progetto o di un file .bmd. Se hai bisogno della piena funzionalità, ottieni una licenza software per questa applicazione.",
-  "chatAttachmentInitialMessage": "Interpreta i risultati della mia analisi"  
+  "viewModeSplashMsg": "Questa applicazione è in modalità di visualizzazione solo. Non puoi eseguire alcuna analisi. Puoi solo visualizzare analisi precedenti all'interno di un progetto o di un file .bmd. Se hai bisogno della piena funzionalità, ottieni una licenza software per questa applicazione.",
+  "chatAttachmentInitialMessage": "Interpreta i miei risultati di analisi",
+  "overwritescript1": "Un script chiamato {{datasetName}} è già aperto.",
+  "overwritescript2": "Aprire {{filepath}} sovrascriverà il file aperto.\n\nScegli \"Sovrascrivi\" per procedere, o \"Annulla\" per mantenere le tue modifiche attuali.",
+  "overwritedataset": "Il dataset {{dataset_name}} è già aperto nella griglia. Vuoi sovrascriverlo?",
+  "duplicatecolumnTitle": "Nome colonna duplicato",
+  "duplicatecolumnMessage": "Il nome della colonna {{changedvalue}} esiste già nel dataset {{dataset_name}}. Si prega di utilizzare un nome di colonna diverso."
 }

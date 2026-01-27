@@ -1,15 +1,15 @@
 {
-  "r_editor_script": "R编辑器脚本",
+  "r_editor_script": "R 编辑器脚本",
   "grid_edit": "网格编辑",
   "open_dataset": "打开数据集",
   "outputWindow": {
     "main": {
-      "new": "向输出添加新项目",
+      "new": "将新项目添加到输出",
       "save": "保存",
-      "export": "导出输出",
+      "export": "另存为",
       "clear": "清除输出",
       "close": "关闭输出标签",
-      "restart": "重启R",
+      "restart": "重启 R",
       "rerun": "重新运行",
       "freeze": "冻结表头",
       "toc": "显示目录"
@@ -27,14 +27,14 @@
       "showCode": "显示代码",
       "hideCode": "隐藏代码",
       "revert": "恢复更改",
-      "execute": "执行R代码"
+      "execute": "执行 R 代码"
     },
     "side": {
       "remove": "移除"
     }
   },
   "rEditorWindow": {
-    "execute": "执行R代码",
+    "execute": "执行 R 代码",
     "undo": "撤销",
     "redo": "重做",
     "find": "查找",
@@ -42,10 +42,10 @@
     "replace": "查找和替换",
     "comment": "注释",
     "uncomment": "取消注释",
-    "save": "",
+    "save": "保存",
     "saveAs": "另存为",
     "clear": "清除或关闭文件",
-    "toggle": "切换R编辑器"
+    "toggle": "切换 R 编辑器"
   },
   "dataGrid": {
     "add": "创建新数据集",
@@ -55,7 +55,7 @@
   },
   "REditrOutputContext": {
     "execute": "执行",
-    "executeAll": "执行全部",
+    "executeAll": "全部执行",
     "find": "查找",
     "next": "查找下一个",
     "replace": "查找和替换",
@@ -74,7 +74,7 @@
   "CntxMkOrdFac": "创建有序因子",
   "CntxMkChar": "创建字符",
   "CntxMkNum": "创建数字",
-  "CntxMkNumEU": "转换为数字（欧洲）",
+  "CntxMkNumEU": "创建数字（欧洲）",
   "CntxInsDtVar": "插入新日期变量",
   "CntxInsDtVarEnd": "在末尾插入新日期变量",
   "CntxInsDtTmVar": "插入新日期时间变量",
@@ -87,16 +87,21 @@
   "CntxInsFacVarEnd": "在末尾插入新因子变量",
   "CntxDelCol": "删除列",
   "CntxDelVar": "删除变量",
-  "CntxMkTopRowHdr": "将顶部行设为标题",
+  "CntxMkTopRowHdr": "将顶行设为标题",
   "CntxCopy": "复制",
   "CntxPaste": "粘贴",
-  "RenOutputTitle": "更改输出选项卡标题",
+  "RenOutputTitle": "更改输出标签标题",
   "RenOutputOldname": "当前标题",
   "RenOutputNewname": "新标题",
   "RenOutputCancelBtn": "取消",
   "RenOutputRenameBtn": "重命名",
-  "exportFileLockedOk": "好的",
+  "exportFileLockedOk": "确定",
   "viewModeSplashTitle": "警告！仅限查看模式",
-  "viewModeSplashMsg": "此应用程序仅处于查看模式。您无法执行任何分析。您只能查看项目或.bmd文件中的旧分析。如果您需要完整功能，请为此应用程序获取软件许可证。",
-  "chatAttachmentInitialMessage": "解释我的分析结果"  
+  "viewModeSplashMsg": "此应用程序仅处于查看模式。您无法执行任何分析。您只能查看项目或 .bmd 文件中的旧分析。如果您需要完整功能，请获取此应用程序的软件许可证。",
+  "chatAttachmentInitialMessage": "解释我的分析结果",
+  "overwritescript1": "名为 {{datasetName}} 的脚本已打开。",
+  "overwritescript2": "打开 {{filepath}} 将覆盖打开的文件。\n\n选择 \"覆盖\" 以继续，或选择 \"取消\" 以保留当前更改。",
+  "overwritedataset": "数据集 {{dataset_name}} 已在网格中打开。您想要覆盖它吗？",
+  "duplicatecolumnTitle": "重复的列名",
+  "duplicatecolumnMessage": "列名 {{changedvalue}} 已在数据集 {{dataset_name}} 中存在。请使用不同的列名。"
 }
