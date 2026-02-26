@@ -12,12 +12,6 @@
           "visible": true
         },
         {
-          "name": "مجموعات بيانات عينة",
-          "icon": "fas fa-folder-open",
-          "onclick": "openSampleDataset()",
-          "visible": true
-        },
-        {
           "name": "حفظ مجموعة البيانات",
           "icon": "fas fa-save",
           "onclick": "saveDataset()",
