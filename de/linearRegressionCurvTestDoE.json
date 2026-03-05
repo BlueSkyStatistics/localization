@@ -1,0 +1,31 @@
+{
+  "title": "Design von Experimenten (DoE) Analyse - Krümmungstest und lineares Modell",
+  "navigation": "Designanalyse - Lineares Modell und Krümmungstest",
+  "modelname": "Modellnamen eingeben",
+  "dependent": "Antwort (abhängige) Variable",
+  "independent": "Unabhängige Variable(n)",
+  "curv_test_degree": "Interaktionsterme für Modell für Krümmungstest: Grad (1 für keine Interaktionsterme und nur Haupteffekte; andernfalls 2 für 2. Ordnung Interaktionen, 3 für 3. Ordnung Interaktionen usw.)",
+  "model_degree": "Interaktionsterme für Modell (ohne zentrale/axiale Punkte): Grad (1 für keine Interaktionsterme und nur Haupteffekte; andernfalls 2 für 2. Ordnung Interaktionen, 3 für 3. Ordnung Interaktionen usw.)",
+  "axialCenterPointRowsChk": "Falls vorhanden, identifizieren Sie die Zeilennummern für zentrale Punkte und axiale/Sternpunkte im DoE-Design",
+  "effectsplot": "Alle Effekte Plot (nur generiert, wenn der Grad nicht angegeben ist)",
+  "generateplotchk": "Plot der Residuen vs. angepasste Werte, normales Q-Q, Skala-Standort und Residuen vs. Hebelwirkung",
+  "twoLevelDesignTypeChk": "Die folgenden Optionen gelten nur für ein 2-stufiges Faktordesign (z. B. pb, FrF2, Vollfaktoriell...)",
+  "AliasChk": "Alias bestimmen",
+  "AliasCodedChk": "Kodierte Aliase",
+  "DanielplotChk": "Daniel-Plot (Plot der Effekte)",
+  "DanielplotCodeChk": "Kodiertes Label",
+  "DanielplotHalfChk": "Halbnormal",
+  "DanielplotAlpha": "Alpha (Signifikanzniveau für die Beschriftung)",
+  "MEPlotChk": "MEPlot (Haupteffekte Plots)",
+  "IAPlotChk": "IAPlot (Interaktionsplots)",
+  "IAPlotShowAliasChk": "Aliase im Plot anzeigen",
+  "cubePlotChk": "Würfelplot von drei Faktorinteraktionen mit modellierten Mittelwerten",
+  "cubePlotModelMeanChk": "Sowohl modellierte Mittelwerte als auch nicht modellierte Mittelwerte plotten",
+  "cubePlotIndependent": "Wählen Sie drei unabhängige Variable(n) für den Würfelplot aus",
+  "showModelEquationChk": "Modellgleichung anzeigen (wenn das Modell kategoriale Variablen enthält, wird die Gleichung möglicherweise nicht angezeigt)",
+  "help": {
+    "title": "Design von Experimenten Analyse mit Krümmungstest und linearem Modell",
+    "r_help": "help(lm, package = 'stats')",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDesign von Experimenten (DoE) Analyse - Krümmungstest mit einem linearen Modell und dann ein lineares Modell mit Würfelpunkten erstellen \n\t\t\t\tonly (entfernen Sie alle zentralen Punkte und axialen Punkte, falls vorhanden)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDieser Dialog führt eine Design von Experimenten (DOE) Analyse durch, indem ein lineares Regressionsmodell auf Faktordaten angepasst wird, \n\t\t\t\tmit optionalem Krümmungstest, wenn zentrale Punkte vorhanden sind. Beginnen Sie, indem Sie einen Namen für Ihr Modell im Feld \"Modellnamen eingeben\" \n\t\t\t\tangeben; dieser Name wird verwendet, um das Modellobjekt während Ihrer Analyse-Sitzung zu referenzieren. Wählen Sie Ihre Antwort (abhängige) \n\t\t\t\tVariable aus, indem Sie sie von der Liste der Quellvariablen in das Antwortfeld mit der Pfeiltaste verschieben. Wählen Sie eine oder mehrere unabhängige \n\t\t\t\tVariablen (z. B. Faktoren wie Temp, Druck und Verdünner) und verschieben Sie sie mit der entsprechenden \n\t\t\t\tPfeiltaste in das Feld für unabhängige Variablen.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDas erste Gradfeld steuert das Interaktionsniveau für das Krümmungstestmodell, das unter Verwendung aller Datenzeilen einschließlich der Zentren (ohne axiale Punkte, falls vorhanden) angepasst wird; \n\t\t\t\tsetzen Sie dies auf 1 für nur Haupteffekte, 2 für zweiwegige Interaktionen und 3 für dreiwegige Interaktionen usw. Das zweite Gradfeld steuert \n\t\t\t\tdas Interaktionsniveau für das primäre lineare Modell, das nur unter Verwendung der Faktorpunkte (Würfelpunkte) angepasst wird, nachdem zentrale und axiale Punkte \n\t\t\t\tautomatisch entfernt wurden. Aktivieren Sie die Option \"Identifizieren Sie die Zeilennummern für zentrale Punkte und axiale/Sternpunkte\", um den Dialog automatisch \n\t\t\t\tdetect und berichten zu lassen, welche Zeilen in Ihrem Design zentrale Punkte, Würfelpunkte oder axiale/Sternpunkte sind.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tWenn in Ihrem Design mindestens zwei zentrale Punkte erkannt werden, wird automatisch ein Krümmungstest durchgeführt, der eine \n\t\t\t\tANOVA-Tabelle erzeugt, die eine spezielle Krümmungszeile und eine reine Fehlerzeile enthält, die aus den replizierten zentralen Punkten geschätzt wird. \n\t\t\t\tDer Krümmungs-F-Test vergleicht die mittlere Antwort an zentralen Punkten mit den Faktorpunkten und hilft Ihnen zu bestimmen, ob ein \n\t\t\t\thöherer Ordnung (quadratisches) Modell erforderlich sein könnte, um die Antwortoberfläche angemessen zu beschreiben. Wenn ja, fügen Sie axiale Punkte zum Design hinzu \n\t\t\t\tüber das Menü zur Erstellung des CCD-Designs unter DoE.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDie Optionen im Abschnitt \"2-stufiges Faktordesign\" gelten speziell für Designs, die mit FrF2, pb oder vollfaktoriellen Funktionen erstellt wurden, \n\t\t\t\tund umfassen Alias-Erkennung, Daniel-Plots, Haupteffekte-Plots, Interaktionsplots und Würfelplots. Die Würfelplot-Option ermöglicht es Ihnen, \n\t\t\t\tdie mittlere Antwort an den acht Ecken eines Drei-Faktoren-Designs zu visualisieren und optional modellvorhergesagte (modellierte) \n\t\t\t\tMittelwerte neben den rohen beobachteten Mittelwerten zu überlagern.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\n\t\t\t"
+  }
+}

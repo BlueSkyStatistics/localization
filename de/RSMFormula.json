@@ -1,13 +1,12 @@
 {
-  "title": "Design der Experimente Analyse mit Response Surface Modell (Quantitativ)",
+  "title": "Analyse von Experimenten mit dem Response Surface Modell (quantitativ)",
   "navigation": "Designanalyse - Response Surface Modell",
   "modelname": "Geben Sie den Namen des Response Surface Modells ein",
   "dependent": "Antwort (abhängige) Variable",
-  "formulaboxhint": "Sie können auch SO(var1, var2,...) für Effekte zweiter Ordnung und Wechselwirkungen oder FO(...),... aus dem rsm-Paket im obigen Formel-Builder-Feld eingeben.",
-  "independent": "Numerische Prädiktoren - fügen Sie unten die numerischen Formelvariablen ein",
+  "formulaboxhint": "Sie können auch SO(var1, var2,...) für Effekte zweiter Ordnung und Interaktionen, FO(var1, var2,..) für erster Ordnung, TWI(var1, var2, ..) für zweidimensionale Interaktionen und PQ(var1, var2,..) für quadratische Terme im obigen Formel-Builder-Feld auswählen/eingeben.",
   "generateContourPlotChk": "Kontur (Diagramme) anzeigen",
   "generateRSMPlotChk": "Response Surface (Diagramme) anzeigen",
-  "generatePathSteepestAscentChk": "Pfad des steilsten Anstiegs aus der Ridge-Analyse anzeigen",
+  "generatePathSteepestAscentChk": "Pfad des steilsten Anstiegs aus der Höhenanalyse anzeigen",
   "checkShapiroNormalityTestChk": "Shapiro-Normalitätstest",
   "normalityPlotsChk": "Diagramm zur Überprüfung der Normalität",
   "help": {

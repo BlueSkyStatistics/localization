@@ -1,10 +1,9 @@
 {
-  "title": "實驗設計分析與響應面模型（定量）",
+  "title": "實驗設計分析與響應面模型 (定量)",
   "navigation": "設計分析 - 響應面模型",
   "modelname": "輸入響應面模型名稱",
-  "dependent": "響應（因變量）",
-  "formulaboxhint": "您也可以在上述公式生成器框中輸入 SO(var1, var2,...) 以獲得二次效應和交互作用，或 FO(...),... 來自 rsm 套件。",
-  "independent": "數值預測變量 - 在下方插入數值公式變量",
+  "dependent": "響應（依賴）變數",
+  "formulaboxhint": "您也可以選擇/輸入 SO(var1, var2,...) 以獲得二次效應和交互作用，FO(var1, var2,..) 以獲得一次效應，TWI(var1, var2, ..) 以獲得雙向交互作用，以及 PQ(var1, var2,..) 以獲得上述公式生成器中的二次項。",
   "generateContourPlotChk": "顯示等高線（圖）",
   "generateRSMPlotChk": "顯示響應面（圖）",
   "generatePathSteepestAscentChk": "顯示從山脊分析的最陡上升路徑",
