@@ -1,0 +1,24 @@
+{
+  "title": "تباين العينة الواحدة",
+  "navigation": "تباين العينة الواحدة",
+  "label_samples": "عينة واحدة أو أكثر، كل منها في عمود",
+  "label_data_format": "تنسيق البيانات",
+  "wide": "تنسيق واسع (كل عينة في عمود)",
+  "long": "تنسيق طويل (الاستجابة مجمعة حسب العامل)",
+  "label_response": "متغير الاستجابة",
+  "label_group": "متغير التجميع",
+  "label_hyp_test": "اختبار الفرضية",
+  "hyp_sd": "الانحراف المعياري المفترض",
+  "hyp_var": "التباين المفترض",
+  "value_label": "القيمة",
+  "label_conf": "مستوى الثقة",
+  "label_alt": "الفرضية البديلة",
+  "alt1": "ذو جانبين (≠)",
+  "alt2": "أكبر (>)",
+  "alt3": "أقل (<)",
+  "help": {
+    "title": "تباين العينة الواحدة (مثل Minitab)",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>الوصف</b></br>\nيمثل حوار تباين العينة الواحدة في Minitab.</br>\nدائمًا يحسب كلاهما:</br>\n<ul>\n  <li><b>طريقة بونيت</b> (صالحة لأي توزيع مستمر)</li>\n  <li><b>طريقة كاي-تربيع</b> (طريقة نظرية طبيعية)</li>\n</ul>\nدائمًا يقوم بإجراء اختبار الفرضية ضد إما <b>الانحراف المعياري</b> أو <b>التباين</b> المفترض.</br>\n\n<b>الاستخدام</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>المساعدة</b></br>\nيرجى الاتصال support@blueskystatistics.com للحصول على معلومات إضافية.\n      "
+  }
+}

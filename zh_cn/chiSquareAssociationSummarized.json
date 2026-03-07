@@ -1,0 +1,20 @@
+{
+  "title": "卡方检验关联性",
+  "navigation": "卡方检验（汇总）",
+  "label_table_cols": "包含表格的列（计数）",
+  "label_row_labels": "行标签（可选）",
+  "label_cell_contents": "单元格内容",
+  "label_options": "选项",
+  "opt_counts": "计数",
+  "opt_margins": "边际总计",
+  "opt_expected": "期望计数",
+  "opt_raw_resid": "原始残差（O − E）",
+  "opt_std_resid": "标准化残差",
+  "opt_adj_resid": "调整后的残差",
+  "opt_contrib": "对卡方的贡献",
+  "help": {
+    "title": "卡方检验关联性（汇总）",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>描述</b></br>\n执行卡方检验以确定关联性，使用<b>汇总的双向表</b>\n其中每个选定的列包含列变量一个水平的计数。</br></br>\n\n<b>输入</b></br>\n<ul>\n  <li><b>包含表格的列</b>: 形成列联表的数值列（计数）。</li>\n  <li><b>行标签</b>（可选）：包含行名称/标签的列（例如，是/否）。</li>\n</ul>\n\n<b>输出</b></br>\n<ul>\n  <li>观察到的计数表</li>\n  <li>单元格内容表（计数、期望、贡献、残差 — 按选择）</li>\n  <li>卡方检验（皮尔逊和似然比）</li>\n</ul>\n\n<b>用法</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>帮助</b></br>\n如需更多信息，请联系 support@blueskystatistics.com。\n      "
+  }
+}

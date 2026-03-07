@@ -1,0 +1,20 @@
+{
+  "title": "カイ二乗検定による関連性の検定",
+  "navigation": "カイ二乗検定 (要約)",
+  "label_table_cols": "テーブルを含む列 (カウント)",
+  "label_row_labels": "行ラベル (オプション)",
+  "label_cell_contents": "セルの内容",
+  "label_options": "オプション",
+  "opt_counts": "カウント",
+  "opt_margins": "周辺合計",
+  "opt_expected": "期待値",
+  "opt_raw_resid": "生の残差 (O − E)",
+  "opt_std_resid": "標準化残差",
+  "opt_adj_resid": "調整済み残差",
+  "opt_contrib": "カイ二乗への寄与",
+  "help": {
+    "title": "カイ二乗検定による関連性の検定 (要約)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>説明</b></br>\n要約された二項テーブルを使用して関連性のためのカイ二乗検定を実行します。\n各選択された列には、列変数の1つのレベルに対するカウントが含まれています。</br></br>\n\n<b>入力</b></br>\n<ul>\n  <li><b>テーブルを含む列</b>: 確率表を形成する数値列 (カウント)。</li>\n  <li><b>行ラベル</b> (オプション): 行名/ラベルを含む列 (例: はい/いいえ)。</li>\n</ul>\n\n<b>出力</b></br>\n<ul>\n  <li>観測カウントテーブル</li>\n  <li>セルの内容テーブル (カウント、期待値、寄与、残差 — 選択されたもの)</li>\n  <li>カイ二乗検定 (ピアソンおよび尤度比)</li>\n</ul>\n\n<b>使用法</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>ヘルプ</b></br>\n追加情報についてはsupport@blueskystatistics.comまでお問い合わせください。\n      "
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Testul Chi-Cerc pentru Asociere",
+  "navigation": "Testul Chi-Cerc (Rezumat)",
+  "label_table_cols": "Coloane care conțin tabelul (număr)",
+  "label_row_labels": "Etichete de rând (opțional)",
+  "label_cell_contents": "Conținutul celulelor",
+  "label_options": "Opțiuni",
+  "opt_counts": "Număr",
+  "opt_margins": "Totaluri marginale",
+  "opt_expected": "Numere așteptate",
+  "opt_raw_resid": "Reziduuri brute (O − E)",
+  "opt_std_resid": "Reziduuri standardizate",
+  "opt_adj_resid": "Reziduuri ajustate",
+  "opt_contrib": "Contribuția la Chi-cerc",
+  "help": {
+    "title": "Testul Chi-Cerc pentru Asociere (Rezumat)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Descriere</b></br>\nEfectuează un test Chi-cerc pentru asociere folosind un <b>tabel rezumat cu două căi</b>\nunde fiecare coloană selectată conține numere pentru un nivel al variabilei de coloană.</br></br>\n\n<b>Intrări</b></br>\n<ul>\n  <li><b>Coloane care conțin tabelul</b>: coloane numerice care formează tabelul de contingență (număr).</li>\n  <li><b>Etichete de rând</b> (opțional): o coloană care conține nume/etichete de rând (de exemplu, Da/Nu).</li>\n</ul>\n\n<b>Ieșiri</b></br>\n<ul>\n  <li>Tabel de numere observate</li>\n  <li>Tabel de conținut al celulelor (Număr, Așteptat, Contribuție, Reziduuri — așa cum este selectat)</li>\n  <li>Teste Chi-cerc (Pearson și Raport de Probabilitate)</li>\n</ul>\n\n<b>Utilizare</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>Ajutor</b></br>\nVă rugăm să contactați support@blueskystatistics.com pentru informații suplimentare.\n      "
+  }
+}

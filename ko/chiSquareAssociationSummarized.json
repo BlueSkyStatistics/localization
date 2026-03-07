@@ -1,0 +1,20 @@
+{
+  "title": "카이 제곱 검정 (연관성 검정)",
+  "navigation": "카이 제곱 검정 (요약)",
+  "label_table_cols": "테이블을 포함하는 열 (빈도수)",
+  "label_row_labels": "행 레이블 (선택 사항)",
+  "label_cell_contents": "셀 내용",
+  "label_options": "옵션",
+  "opt_counts": "빈도수",
+  "opt_margins": "한계 총계",
+  "opt_expected": "기대 빈도수",
+  "opt_raw_resid": "원시 잔차 (O − E)",
+  "opt_std_resid": "표준화된 잔차",
+  "opt_adj_resid": "조정된 잔차",
+  "opt_contrib": "카이 제곱에 대한 기여",
+  "help": {
+    "title": "카이 제곱 검정 (연관성 검정) (요약)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>설명</b></br>\n요약된 <b>2차원 테이블</b>을 사용하여 연관성에 대한 카이 제곱 검정을 수행합니다.\n각 선택된 열은 열 변수의 한 수준에 대한 빈도수를 포함합니다.</br></br>\n\n<b>입력</b></br>\n<ul>\n  <li><b>테이블을 포함하는 열</b>: 연관표를 형성하는 숫자 열 (빈도수).</li>\n  <li><b>행 레이블</b> (선택 사항): 행 이름/레이블을 포함하는 열 (예: 예/아니오).</li>\n</ul>\n\n<b>출력</b></br>\n<ul>\n  <li>관찰된 빈도수 테이블</li>\n  <li>셀 내용 테이블 (빈도수, 기대값, 기여, 잔차 — 선택한 대로)</li>\n  <li>카이 제곱 검정 (피어슨 및 우도 비율)</li>\n</ul>\n\n<b>사용법</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>도움</b></br>\n추가 정보는 support@blueskystatistics.com으로 문의해 주십시오.\n      "
+  }
+}

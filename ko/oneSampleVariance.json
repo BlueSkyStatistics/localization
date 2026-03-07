@@ -1,0 +1,24 @@
+{
+  "title": "일표본 분산",
+  "navigation": "일표본 분산",
+  "label_samples": "하나 이상의 샘플, 각 열에",
+  "label_data_format": "데이터 형식",
+  "wide": "넓은 형식 (각 샘플이 하나의 열)",
+  "long": "긴 형식 (반응이 요인에 의해 그룹화됨)",
+  "label_response": "반응 변수",
+  "label_group": "그룹화 변수",
+  "label_hyp_test": "가설 검정",
+  "hyp_sd": "가설 표준 편차",
+  "hyp_var": "가설 분산",
+  "value_label": "값",
+  "label_conf": "신뢰 수준",
+  "label_alt": "대립 가설",
+  "alt1": "양측 (≠)",
+  "alt2": "더 큼 (>)",
+  "alt3": "더 작음 (<)",
+  "help": {
+    "title": "일표본 분산 (Minitab 유사)",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>설명</b></br>\nMinitab의 일표본 분산 대화 상자를 모방합니다.</br>\n항상 두 가지를 계산합니다:</br>\n<ul>\n  <li><b>Bonett</b> 방법 (모든 연속 분포에 유효)</li>\n  <li><b>카이제곱</b> 방법 (정규 이론 방법)</li>\n</ul>\n항상 가설 표준 편차 또는 가설 분산에 대한 가설 검정을 수행합니다.</br>\n\n<b>사용법</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>도움말</b></br>\n추가 정보는 support@blueskystatistics.com으로 문의하십시오.\n      "
+  }
+}

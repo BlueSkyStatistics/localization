@@ -1,0 +1,20 @@
+{
+  "title": "卡方檢定",
+  "navigation": "卡方檢定 (摘要)",
+  "label_table_cols": "包含表格的列 (計數)",
+  "label_row_labels": "行標籤 (可選)",
+  "label_cell_contents": "單元格內容",
+  "label_options": "選項",
+  "opt_counts": "計數",
+  "opt_margins": "邊際總計",
+  "opt_expected": "預期計數",
+  "opt_raw_resid": "原始殘差 (O − E)",
+  "opt_std_resid": "標準化殘差",
+  "opt_adj_resid": "調整後殘差",
+  "opt_contrib": "對卡方的貢獻",
+  "help": {
+    "title": "卡方檢定 (摘要)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>描述</b></br>\n執行卡方檢定以檢查關聯，使用<b>摘要的雙向表</b>\n其中每個選定的列包含一個列變數的計數。</br></br>\n\n<b>輸入</b></br>\n<ul>\n  <li><b>包含表格的列</b>: 形成列聯表的數值列 (計數)。</li>\n  <li><b>行標籤</b> (可選): 包含行名稱/標籤的列 (例如，Yes/No)。</li>\n</ul>\n\n<b>輸出</b></br>\n<ul>\n  <li>觀察到的計數表</li>\n  <li>單元格內容表 (計數、預期、貢獻、殘差 — 根據選擇)</li>\n  <li>卡方檢定 (Pearson 和似然比)</li>\n</ul>\n\n<b>用法</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>幫助</b></br>\n如需更多信息，請聯繫 support@blueskystatistics.com。\n      "
+  }
+}

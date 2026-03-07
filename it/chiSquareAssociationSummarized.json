@@ -1,0 +1,20 @@
+{
+  "title": "Test del Chi-quadrato per Associazione",
+  "navigation": "Test del Chi-quadrato (Riassunto)",
+  "label_table_cols": "Colonne contenenti la tabella (conteggi)",
+  "label_row_labels": "Etichette delle righe (opzionale)",
+  "label_cell_contents": "Contenuti delle celle",
+  "label_options": "Opzioni",
+  "opt_counts": "Conteggi",
+  "opt_margins": "Totali marginali",
+  "opt_expected": "Conteggi attesi",
+  "opt_raw_resid": "Residui grezzi (O − E)",
+  "opt_std_resid": "Residui standardizzati",
+  "opt_adj_resid": "Residui aggiustati",
+  "opt_contrib": "Contributo al Chi-quadrato",
+  "help": {
+    "title": "Test del Chi-quadrato per Associazione (Riassunto)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Descrizione</b></br>\nEsegue un test del Chi-quadrato per associazione utilizzando una <b>tabella a due vie riassunta</b>\nin cui ogni colonna selezionata contiene conteggi per un livello della variabile colonna.</br></br>\n\n<b>Input</b></br>\n<ul>\n  <li><b>Colonne contenenti la tabella</b>: colonne numeriche che formano la tabella di contingenza (conteggi).</li>\n  <li><b>Etichette delle righe</b> (opzionale): una colonna contenente nomi/etichette delle righe (ad es., Sì/No).</li>\n</ul>\n\n<b>Output</b></br>\n<ul>\n  <li>Tabella dei conteggi osservati</li>\n  <li>Tabella dei contenuti delle celle (Conteggio, Atteso, Contributo, Residui — come selezionato)</li>\n  <li>Test del Chi-quadrato (Pearson e Rapporto di Verosimiglianza)</li>\n</ul>\n\n<b>Utilizzo</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>Aiuto</b></br>\nSi prega di contattare support@blueskystatistics.com per ulteriori informazioni.\n      "
+  }
+}
