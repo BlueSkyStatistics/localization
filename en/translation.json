@@ -42,7 +42,7 @@
         "replace": "Find and replace",
         "comment": "Comment",
         "uncomment": "Uncomment",
-        "save": "",
+        "save": "Save",
         "saveAs": "Save as",
         "clear": "Clear or close file",
         "toggle": "Toggle R editor"
@@ -98,5 +98,11 @@
 	"exportFileLockedOk" : "Ok",
 	"viewModeSplashTitle" : "Warning! View Mode Only",
 	"viewModeSplashMsg" : "This application is in view mode only. You cannot execute any analysis. You can only view old analysis within a project or a .bmd file. If you need the full capability, obtain a software license for this application.",
-    "chatAttachmentInitialMessage": "Interpret my analysis results"
+    "chatAttachmentInitialMessage": "Interpret my analysis results",
+    "overwritescript1": "A script named {{datasetName}} is already open.",
+    "overwritescript2": "Opening {{filepath}} will overwrite the open file.\n\nChoose \"Overwrite\" to proceed, or \"Cancel\" to keep your current changes.",
+    "overwritedataset": "Dataset {{dataset_name}} is already open in the grid. Do you want to overwrite it?",
+    "duplicatecolumnTitle": "Duplicate column name",
+     "duplicatecolumnMessage": "Column name {{changedvalue}} already exists in dataset {{dataset_name}}. Please use a different column name."
+
 }
