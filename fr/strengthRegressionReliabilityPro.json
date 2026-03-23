@@ -1,0 +1,21 @@
+{
+  "title": "Régression de la force",
+  "navigation": "Régression de la force",
+  "response": "Variable de réponse",
+  "input": "Variable d'entrée",
+  "grouping": "Variable de catégorisation",
+  "groupValue": "Valeur de force (doit être l'une des catégories valides de la variable de catégorisation)",
+  "confidenceLevel": "Niveau de confiance - une valeur entre 0 et 1 (par défaut 0,95)",
+  "desiredReliability": "Fiabilité cible - une valeur entre 0 et 1 (par exemple, 0,999)",
+  "targetInput": "Entrée cible",
+  "reliabilityOptionLabel": "Fiabilité",
+  "optimizeReliabilityRad": "Optimiser la fiabilité pour déterminer l'entrée cible",
+  "calculateReliabilityRad": "Calculer la fiabilité à partir de l'entrée cible",
+  "additionalPlotChk": "Graphiques supplémentaires pour les résidus et les données d'entrée",
+  "flipaxisPPplotChk": "Inverser l'axe pour le graphique P-P",
+  "deGroupPlotsChk": "Dégrouper les graphiques pour les tracer individuellement",
+  "help": {
+    "title": "Régression de la force",
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tRégression de la force \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tObjectif\n\t\t\t\t<br/>\n\t\t\t\tLa régression de la force estime la fiabilité d'un système en quantifiant la probabilité qu'une réponse de force \n\t\t\t\t(par exemple, la capacité de couple d'une soudure) dépasse une charge de stress, où la force est modélisée comme une fonction linéaire d'une \n\t\t\t\tvariable d'entrée contrôlable. Elle fournit à la fois une estimation ponctuelle et une limite inférieure statistiquement conservatrice \n\t\t\t\tde la fiabilité à un niveau de confiance spécifié, ancrée dans le cadre de Reiser & Guttman (1988).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEntrées\n\t\t\t\t<br/>\n\t\t\t\tVariable d'entrée — le paramètre de processus contrôlable qui influence la force (par exemple, distance de déformation)\n\t\t\t\t<br/>\n\t\t\t\tVariable de réponse — la sortie mesurée représentant à la fois les observations de force et de stress dans la même colonne (par exemple, couple)\n\t\t\t\t<br/>\n\t\t\t\tVariable de catégorisation — une colonne de regroupement qui distingue les lignes de force des lignes de stress (par exemple, emplacement)\n\t\t\t\t<br/>\n\t\t\t\tValeur de force — l'étiquette de catégorie au sein de la variable de catégorisation qui identifie les observations de force (par exemple, \"Soudure\"); \n\t\t\t\ttoutes les lignes restantes sont considérées comme du stress\n\t\t\t\t<br/>\n\t\t\t\tNiveau de confiance — confiance statistique pour le calcul de la fiabilité à la limite inférieure (par défaut 0,95)\n\t\t\t\t<br/>\n\t\t\t\tOptimiser la fiabilité — trouve la valeur d'entrée cible requise pour atteindre une fiabilité cible spécifiée par l'utilisateur (par exemple, 0,999)\n\t\t\t\t<br/>\n\t\t\t\tCalculer la fiabilité — évalue la fiabilité atteinte à une valeur d'entrée cible fixe fournie par l'utilisateur\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterprétation des résultats\n\t\t\t\t<br/>\n\t\t\t\tLe résumé rapporte la moyenne et l'écart type des distributions de stress et de force, \n\t\t\t\t<br/>\n\t\t\t\tl'entrée cible (soit résolue soit fournie), et les principaux indicateurs de fiabilité. \n\t\t\t\t<br/>\n\t\t\t\tLa fiabilité estimée est l'estimation ponctuelle de la probabilité que la force dépasse le stress. \n\t\t\t\t<br/>\n\t\t\t\tLa fiabilité à la limite inférieure est la limite inférieure statistiquement conservatrice au niveau de confiance choisi — c'est le chiffre à utiliser pour les décisions d'ingénierie \n\t\t\t\tcar il prend en compte l'incertitude d'estimation tant dans la régression que dans la distribution de stress. \n\t\t\t\t<br/>\n\t\t\t\tLe facteur de sécurité fournit un contrôle de marge déterministe traditionnel. \n\t\t\t\t<br/>\n\t\t\t\tLes graphiques diagnostiques accompagnants montrent l'ajustement de la régression avec les distributions de stress et de force superposées, \n\t\t\t\t<br/>\n\t\t\t\tles vérifications des hypothèses résiduelles pour le modèle de force, et les vérifications de stabilité/normalité pour les observations de stress.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

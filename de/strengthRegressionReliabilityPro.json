@@ -1,0 +1,21 @@
+{
+  "title": "Stärke Regression",
+  "navigation": "Stärke Regression",
+  "response": "Antwortvariable",
+  "input": "Eingangsvariable",
+  "grouping": "Kategorisierende Variable",
+  "groupValue": "Stärkewert (muss eine der gültigen Kategorien aus der kategorisierenden Variable sein)",
+  "confidenceLevel": "Konfidenzniveau - ein Wert zwischen 0 und 1 (Standard 0,95)",
+  "desiredReliability": "Zielzuverlässigkeit - ein Wert zwischen 0 und 1 (z. B. 0,999)",
+  "targetInput": "Zieleingabe",
+  "reliabilityOptionLabel": "Zuverlässigkeit",
+  "optimizeReliabilityRad": "Zuverlässigkeit optimieren, um die Zieleingabe zu bestimmen",
+  "calculateReliabilityRad": "Zuverlässigkeit aus der Zieleingabe berechnen",
+  "additionalPlotChk": "Zusätzliche Plots für Residuen und Eingabedaten",
+  "flipaxisPPplotChk": "Achse für das P-P-Diagramm umdrehen",
+  "deGroupPlotsChk": "Plots entgruppieren, um sie einzeln zu plotten",
+  "help": {
+    "title": "Stärke Regression",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tStärke Regression \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tZweck\n\t\t\t\t<br/>\n\t\t\t\tStärke Regression schätzt die Zuverlässigkeit eines Systems, indem sie die Wahrscheinlichkeit quantifiziert, dass eine Stärke \n\t\t\t\tantwort (z. B. die Drehmomentkapazität einer Schweißnaht) eine Belastung übersteigt, wobei die Stärke als lineare Funktion einer \n\t\t\t\tsteuerbaren Eingangsvariable modelliert wird. Sie bietet sowohl eine Punktabschätzung als auch eine statistisch konservative Untergrenze \n\t\t\t\tZuverlässigkeit auf einem bestimmten Konfidenzniveau, basierend auf dem Rahmenwerk von Reiser & Guttman (1988).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEingaben\n\t\t\t\t<br/>\n\t\t\t\tEingangsvariable — der steuerbare Prozessparameter, der die Stärke bestimmt (z. B. Versatzdistanz)\n\t\t\t\t<br/>\n\t\t\t\tAntwortvariable — die gemessene Ausgabe, die sowohl Stärke- als auch Stressbeobachtungen in derselben Spalte darstellt (z. B. Drehmoment)\n\t\t\t\t<br/>\n\t\t\t\tKategorisierende Variable — eine Gruppierungsspalte, die Stärkezeilen von Stresszeilen unterscheidet (z. B. Standort)\n\t\t\t\t<br/>\n\t\t\t\tStärkewert — das Kategorienlabel innerhalb der kategorisierenden Variable, das die Stärke Beobachtungen identifiziert (z. B. \"Schweißnaht\"); \n\t\t\t\talle verbleibenden Zeilen werden als Stress behandelt\n\t\t\t\t<br/>\n\t\t\t\tKonfidenzniveau — statistische Zuverlässigkeit für die Berechnung der Untergrenze der Zuverlässigkeit (Standard 0,95)\n\t\t\t\t<br/>\n\t\t\t\tZuverlässigkeit optimieren — findet den erforderlichen Zielwert für die Eingabe, um eine benutzerdefinierte Zielzuverlässigkeit zu erreichen (z. B. 0,999)\n\t\t\t\t<br/>\n\t\t\t\tZuverlässigkeit berechnen — bewertet die Zuverlässigkeit, die bei einem benutzerdefinierten festen Zielwert für die Eingabe erreicht wird\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAusgabeinterpretation\n\t\t\t\t<br/>\n\t\t\t\tDie Zusammenfassung berichtet über den Mittelwert und die Standardabweichung sowohl der Stress- als auch der Stärkeverteilungen, \n\t\t\t\t<br/>\n\t\t\t\tdie Zieleingabe (entweder gelöst oder bereitgestellt) und die wichtigsten Zuverlässigkeitskennzahlen. \n\t\t\t\t<br/>\n\t\t\t\tEst. Zuverlässigkeit ist die Punktabschätzung der Wahrscheinlichkeit, dass die Stärke den Stress übersteigt. \n\t\t\t\t<br/>\n\t\t\t\tL.B. Zuverlässigkeit ist die statistisch konservative Untergrenze auf dem gewählten Konfidenzniveau — dies ist die Zahl, die für Ingenieurentscheidungen verwendet werden sollte, \n\t\t\t\tda sie die Schätzunsicherheit sowohl in der Regression als auch in der Stressverteilung berücksichtigt. \n\t\t\t\t<br/>\n\t\t\t\tSicherheitsfaktor bietet eine traditionelle deterministische Margenkontrolle. \n\t\t\t\t<br/>\n\t\t\t\tBegleitende diagnostische Plots zeigen die Regressionseinstellung mit überlagerten Stress- und Stärkeverteilungen, \n\t\t\t\t<br/>\n\t\t\t\tResiduenannahmeprüfungen für das Stärkemodell und Stabilitäts-/Normalitätsprüfungen für die Stressbeobachtungen.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

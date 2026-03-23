@@ -1,0 +1,21 @@
+{
+  "title": "Regressione della Forza",
+  "navigation": "Regressione della Forza",
+  "response": "Variabile di Risposta",
+  "input": "Variabile di Input",
+  "grouping": "Variabile di Categorizzazione",
+  "groupValue": "Valore di Forza (Deve essere uno delle categorie valide dalla variabile di categorizzazione)",
+  "confidenceLevel": "Livello di fiducia - un valore tra 0 e 1 (predefinito 0.95)",
+  "desiredReliability": "Affidabilità Target - un valore tra 0 e 1 (es. 0.999)",
+  "targetInput": "Input Target",
+  "reliabilityOptionLabel": "Affidabilità",
+  "optimizeReliabilityRad": "Ottimizza l'Affidabilità per determinare l'Input Target",
+  "calculateReliabilityRad": "Calcola l'Affidabilità dall'Input Target",
+  "additionalPlotChk": "Grafici aggiuntivi per i residui e i dati di input",
+  "flipaxisPPplotChk": "Inverti l'asse per il grafico P-P",
+  "deGroupPlotsChk": "Degruppa i grafici per plottarli individualmente",
+  "help": {
+    "title": "Regressione della Forza",
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tRegressione della Forza \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tScopo\n\t\t\t\t<br/>\n\t\t\t\tLa regressione della forza stima l'affidabilità di un sistema quantificando la probabilità che una risposta di forza \n\t\t\t\t(e.g. capacità di coppia di una saldatura) superi un carico di stress, dove la forza è modellata come una funzione lineare di una \n\t\t\t\tvariabile di input controllabile. Fornisce sia una stima puntuale che un limite inferiore statisticamente conservativo \n\t\t\t\ta un livello di fiducia specificato, basato sul framework di Reiser & Guttman (1988).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInput\n\t\t\t\t<br/>\n\t\t\t\tVariabile di Input — il parametro di processo controllabile che guida la forza (e.g. Distanza di Upset)\n\t\t\t\t<br/>\n\t\t\t\tVariabile di Risposta — l'output misurato che rappresenta sia le osservazioni di forza che di stress nella stessa colonna (e.g. Coppia)\n\t\t\t\t<br/>\n\t\t\t\tVariabile di Categorizzazione — una colonna di raggruppamento che distingue le righe di forza dalle righe di stress (e.g. Posizione)\n\t\t\t\t<br/>\n\t\t\t\tValore di Forza — l'etichetta di categoria all'interno della Variabile di Categorizzazione che identifica le osservazioni di forza (e.g. \"Saldatura\"); \n\t\t\t\ttutte le righe rimanenti sono trattate come stress\n\t\t\t\t<br/>\n\t\t\t\tLivello di Fiducia — fiducia statistica per il calcolo dell'affidabilità del limite inferiore (predefinito 0.95)\n\t\t\t\t<br/>\n\t\t\t\tOttimizza l'Affidabilità — trova il valore di Input Target necessario per raggiungere un'Affidabilità Target specificata dall'utente (e.g. 0.999)\n\t\t\t\t<br/>\n\t\t\t\tCalcola l'Affidabilità — valuta l'affidabilità raggiunta a un valore di Input Target fisso fornito dall'utente\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretazione dell'Output\n\t\t\t\t<br/>\n\t\t\t\tIl riepilogo riporta la media e la deviazione standard sia delle distribuzioni di stress che di forza, \n\t\t\t\t<br/>\n\t\t\t\til Target Input (risolto o fornito), e i principali metriche di affidabilità. \n\t\t\t\t<br/>\n\t\t\t\tL'affidabilità stimata è la stima puntuale della probabilità che la forza superi lo stress. \n\t\t\t\t<br/>\n\t\t\t\tL.B. Affidabilità è il limite inferiore statisticamente conservativo al livello di fiducia scelto — questo è il valore da utilizzare per le decisioni ingegneristiche \n\t\t\t\tpoiché tiene conto dell'incertezza di stima sia nella regressione che nella distribuzione di stress. \n\t\t\t\t<br/>\n\t\t\t\tIl Fattore di Sicurezza fornisce un controllo di margine deterministico tradizionale. \n\t\t\t\t<br/>\n\t\t\t\tI grafici diagnostici accompagnatori mostrano l'adattamento della regressione con distribuzioni di stress e forza sovrapposte, \n\t\t\t\t<br/>\n\t\t\t\tcontrolli delle assunzioni sui residui per il modello di forza, e controlli di stabilità/normale per le osservazioni di stress.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

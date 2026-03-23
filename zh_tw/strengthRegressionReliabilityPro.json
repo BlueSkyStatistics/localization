@@ -1,0 +1,21 @@
+{
+  "title": "強度回歸",
+  "navigation": "強度回歸",
+  "response": "反應變數",
+  "input": "輸入變數",
+  "grouping": "分類變數",
+  "groupValue": "強度值（必須是分類變數中的有效類別之一）",
+  "confidenceLevel": "信心水平 - 介於 0 和 1 之間的值（默認 0.95）",
+  "desiredReliability": "目標可靠性 - 介於 0 和 1 之間的值（例如，0.999）",
+  "targetInput": "目標輸入",
+  "reliabilityOptionLabel": "可靠性",
+  "optimizeReliabilityRad": "優化可靠性以確定目標輸入",
+  "calculateReliabilityRad": "從目標輸入計算可靠性",
+  "additionalPlotChk": "額外的殘差和輸入數據圖",
+  "flipaxisPPplotChk": "翻轉 P-P 圖的軸",
+  "deGroupPlotsChk": "去分組圖以單獨繪製",
+  "help": {
+    "title": "強度回歸",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t強度回歸 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t目的\n\t\t\t\t<br/>\n\t\t\t\t強度回歸通過量化強度反應（例如焊接的扭矩能力）超過應力負載的概率來估計系統的可靠性，其中強度被建模為可控輸入變數的線性函數。它提供了點估計和在指定信心水平下的統計保守下限可靠性，基於 Reiser & Guttman (1988) 框架。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t輸入\n\t\t\t\t<br/>\n\t\t\t\t輸入變數 — 驅動強度的可控過程參數（例如，擠壓距離）\n\t\t\t\t<br/>\n\t\t\t\t反應變數 — 代表強度和應力觀察的測量輸出在同一列中（例如，扭矩）\n\t\t\t\t<br/>\n\t\t\t\t分類變數 — 區分強度行和應力行的分組列（例如，位置）\n\t\t\t\t<br/>\n\t\t\t\t強度值 — 在分類變數中識別強度觀察的類別標籤（例如，\"焊接\"）；所有剩餘行被視為應力\n\t\t\t\t<br/>\n\t\t\t\t信心水平 — 下限可靠性計算的統計信心（默認 0.95）\n\t\t\t\t<br/>\n\t\t\t\t優化可靠性 — 找到達到用戶指定的目標可靠性所需的目標輸入值（例如，0.999）\n\t\t\t\t<br/>\n\t\t\t\t計算可靠性 — 評估在用戶提供的固定目標輸入值下達到的可靠性\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t輸出解釋\n\t\t\t\t<br/>\n\t\t\t\t摘要報告了應力和強度分佈的均值和標準差，\n\t\t\t\t<br/>\n\t\t\t\t目標輸入（無論是解決還是提供），以及關鍵的可靠性指標。\n\t\t\t\t<br/>\n\t\t\t\t估計可靠性是強度超過應力的概率的點估計。\n\t\t\t\t<br/>\n\t\t\t\t下限可靠性是在選定信心水平下的統計保守下限 — 這是用於工程決策的數字，因為它考慮了回歸和應力分佈中的估計不確定性。\n\t\t\t\t<br/>\n\t\t\t\t安全因子提供了傳統的確定性邊際檢查。\n\t\t\t\t<br/>\n\t\t\t\t隨附的診斷圖顯示了回歸擬合，並疊加了應力和強度分佈，\n\t\t\t\t<br/>\n\t\t\t\t強度模型的殘差假設檢查，以及應力觀察的穩定性/正態性檢查。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

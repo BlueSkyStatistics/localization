@@ -1,0 +1,21 @@
+{
+  "title": "Regresia Forței",
+  "navigation": "Regresia Forței",
+  "response": "Variabila de Răspuns",
+  "input": "Variabila de Intrare",
+  "grouping": "Variabila de Categorisire",
+  "groupValue": "Valoarea Forței (Trebuie să fie una dintre categoriile valide din variabila de categorisire)",
+  "confidenceLevel": "Nivel de încredere - o valoare între 0 și 1 (implicit 0.95)",
+  "desiredReliability": "Fiabilitate Țintă - o valoare între 0 și 1 (de exemplu, 0.999)",
+  "targetInput": "Intrare Țintă",
+  "reliabilityOptionLabel": "Fiabilitate",
+  "optimizeReliabilityRad": "Optimizează Fiabilitatea pentru a determina Intrarea Țintă",
+  "calculateReliabilityRad": "Calculează Fiabilitatea din Intrarea Țintă",
+  "additionalPlotChk": "Grafice suplimentare pentru reziduuri și date de intrare",
+  "flipaxisPPplotChk": "Rotește axa pentru graficul P-P",
+  "deGroupPlotsChk": "Degrupează graficele pentru a le plota individual",
+  "help": {
+    "title": "Regresia Forței",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tRegresia Forței \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tScop\n\t\t\t\t<br/>\n\t\t\t\tRegresia Forței estimează fiabilitatea unui sistem prin cuantificarea probabilității ca o \n\t\t\t\tvariabilă de răspuns a forței (de exemplu, capacitatea de torsiune a unei suduri) să depășească o sarcină de stres, unde forța este modelată ca o funcție liniară a unei \n\t\t\t\tvariabile de intrare controlabile. Oferă atât o estimare punctuală, cât și o limită inferioară statistic conservatoare \n\t\t\t\tfiabilitate la un nivel de încredere specificat, bazată pe cadrul Reiser & Guttman (1988).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIntrări\n\t\t\t\t<br/>\n\t\t\t\tVariabila de Intrare — parametrul procesului controlabil care determină forța (de exemplu, Distanța de Deformare)\n\t\t\t\t<br/>\n\t\t\t\tVariabila de Răspuns — ieșirea măsurată care reprezintă atât observațiile de forță, cât și cele de stres în aceeași coloană (de exemplu, Torsiune)\n\t\t\t\t<br/>\n\t\t\t\tVariabila de Categorisire — o coloană de grupare care distinge rândurile de forță de rândurile de stres (de exemplu, Locația)\n\t\t\t\t<br/>\n\t\t\t\tValoarea Forței — eticheta categoriei din Variabila de Categorisire care identifică observațiile de forță (de exemplu, \"Sudură\"); \n\t\t\t\ttoate rândurile rămase sunt tratate ca stres\n\t\t\t\t<br/>\n\t\t\t\tNivel de Încredere — încrederea statistică pentru calculul fiabilității limitei inferioare (implicit 0.95)\n\t\t\t\t<br/>\n\t\t\t\tOptimizează Fiabilitatea — găsește valoarea Intrării Țintă necesară pentru a atinge o Fiabilitate Țintă specificată de utilizator (de exemplu, 0.999)\n\t\t\t\t<br/>\n\t\t\t\tCalculează Fiabilitatea — evaluează fiabilitatea obținută la o valoare fixă de Intrare Țintă furnizată de utilizator\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretarea Ieșirii\n\t\t\t\t<br/>\n\t\t\t\tRezumatul raportează media și deviația standard a atât distribuțiilor de stres, cât și a celor de forță, \n\t\t\t\t<br/>\n\t\t\t\tIntrarea Țintă (fie rezolvată, fie furnizată) și principalii metrici de fiabilitate. \n\t\t\t\t<br/>\n\t\t\t\tFiabilitatea Estimată este estimarea punctuală a probabilității ca forța să depășească stresul. \n\t\t\t\t<br/>\n\t\t\t\tFiabilitatea L.B. este limita inferioară statistic conservatoare la nivelul de încredere ales — aceasta este cifra de utilizat pentru deciziile inginerești \n\t\t\t\tdeoarece ține cont de incertitudinea estimării atât în regresie, cât și în distribuția stresului. \n\t\t\t\t<br/>\n\t\t\t\tFactorul de Siguranță oferă o verificare tradițională a marginii deterministe. \n\t\t\t\t<br/>\n\t\t\t\tGraficele diagnostice însoțitoare arată ajustarea regresiei cu distribuțiile de stres și forță suprapuse, \n\t\t\t\t<br/>\n\t\t\t\tverificări ale presupunerilor reziduale pentru modelul de forță și verificări de stabilitate/normalitate pentru observațiile de stres.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "Strength Regression",
+    "navigation": "Strength Regression",
+    "response": "Response Variable",
+    "input": "Input Variable",
+    "grouping": "Categorizing Variable",
+    "groupValue": "Strength Value (Must be one of the valid categories from the categorizing variable)",
+    "confidenceLevel": "Confidence level - a value between 0 and 1 (default 0.95)",
+    "desiredReliability": "Target Reliability - a value between 0 and 1 (e.g., 0.999)",
+    "targetInput": "Target Input",
+    "reliabilityOptionLabel": "Reliability",
+    "optimizeReliabilityRad": "Optimize Reliability to determine Target Input",
+    "calculateReliabilityRad": "Calculate Reliability from Target Input",
+    "additionalPlotChk": "Additional plots for residuals and input data",
+    "flipaxisPPplotChk": "Flip axis for the P-P plot",
+    "deGroupPlotsChk": "De-group plots to plot individually",
+    "help": {
+        "title": "Strength Regression",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tStrength Regression \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPurpose\n\t\t\t\t<br/>\n\t\t\t\tStrength Regression estimates the reliability of a system by quantifying the probability that a strength \n\t\t\t\tresponse (e.g. a weld's torque capacity) exceeds a stress load, where strength is modelled as a linear function of a \n\t\t\t\tcontrollable input variable. It provides both a point estimate and a statistically conservative lower-bound \n\t\t\t\treliability at a specified confidence level, grounded in the Reiser & Guttman (1988) framework.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInputs\n\t\t\t\t<br/>\n\t\t\t\tInput Variable — the controllable process parameter that drives strength (e.g. Upset distance)\n\t\t\t\t<br/>\n\t\t\t\tResponse Variable — the measured output representing both strength and stress observations in the same column (e.g. Torque)\n\t\t\t\t<br/>\n\t\t\t\tCategorizing Variable — a grouping column that distinguishes strength rows from stress rows (e.g. Location)\n\t\t\t\t<br/>\n\t\t\t\tStrength Value — the category label within the Categorizing Variable that identifies the strength observations (e.g. \"Weld\"); \n\t\t\t\tall remaining rows are treated as stress\n\t\t\t\t<br/>\n\t\t\t\tConfidence Level — statistical confidence for the lower-bound reliability calculation (default 0.95)\n\t\t\t\t<br/>\n\t\t\t\tOptimize Reliability — finds the Target Input value required to achieve a user-specified Target Reliability (e.g. 0.999)\n\t\t\t\t<br/>\n\t\t\t\tCalculate Reliability — evaluates the reliability achieved at a user-supplied fixed Target Input value\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOutput Interpretation\n\t\t\t\t<br/>\n\t\t\t\tThe summary reports the mean and standard deviation of both the stress and strength distributions, \n\t\t\t\t<br/>\n\t\t\t\tthe Target Input (either solved or supplied), and the key reliability metrics. \n\t\t\t\t<br/>\n\t\t\t\tEst. Reliability is the point estimate of the probability that strength exceeds stress. \n\t\t\t\t<br/>\n\t\t\t\tL.B. Reliability is the statistically conservative lower bound at the chosen confidence level — this is the figure to use for engineering decisions \n\t\t\t\tas it accounts for estimation uncertainty in both the regression and the stress distribution. \n\t\t\t\t<br/>\n\t\t\t\tSafety Factor provides a traditional deterministic margin check. \n\t\t\t\t<br/>\n\t\t\t\tAccompanying diagnostic plots show the regression fit with overlaid stress and strength distributions, \n\t\t\t\t<br/>\n\t\t\t\tresidual assumption checks for the strength model, and stability/normality checks for the stress observations.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}
