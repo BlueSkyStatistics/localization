@@ -1,0 +1,25 @@
+{
+  "title": "汽車量測 R&R",
+  "navigation": "汽車量測 R&R",
+  "variableMeasSelcted": "選擇測量的變數（反應）",
+  "variablePartSelcted": "選擇零件的變數",
+  "variableOpSelcted": "選擇操作員/評估者的變數",
+  "variableRefSelcted": "選擇參考值的變數（可選）",
+  "label2": "產品控制",
+  "tolerance": "公差範圍（USL - LSL）",
+  "target": "目標（可選 - 如果指定，則用於錯誤分類概率圖）",
+  "label3": "過程控制",
+  "historicalStdv": "歷史過程標準差 - 可選，但強烈建議",
+  "gageName": "量測名稱",
+  "studyDate": "研究日期",
+  "performedBy": "研究執行者",
+  "showAdditionalStatChk": "顯示額外的統計分析",
+  "showResidualPlotsChk": "顯示殘差圖（正態概率、擬合、直方圖、順序）",
+  "flipaxisPPplotChk": "翻轉 P-P 圖的軸",
+  "showReportGraphChk": "顯示額外的報告圖（按零件和操作員的測量）",
+  "deGroupPlotsChk": "去分組圖以單獨繪製",
+  "help": {
+    "title": "汽車量測 R&R",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t汽車量測 R&amp;R（量測重複性和再現性）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>目的</b>\n\t\t\t\t<br/>\n\t\t\t\t汽車量測 R&amp;R 是標準 AIAG MSA 第四版的交叉雙因子研究，用於評估多個操作員對多個零件進行多次測量的測量系統。\n\t\t\t\t它將總觀察變異劃分為三個組件：\n\t\t\t\t<br/>\n\t\t\t\t<b>重複性</b> — 同一操作員測量同一零件的變異（設備變異，EV）\n\t\t\t\t<br/>\n\t\t\t\t<b>再現性</b> — 操作員之間的變異（評估者變異，AV），包括操作員與零件的交互項\n\t\t\t\t<br/>\n\t\t\t\t<b>零件間</b> — 零件之間的真實變異（PV）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t分析使用平衡的雙向交叉 ANOVA（零件 × 操作員）來估計每個變異組件，然後計算相對於公差（產品控制）和歷史過程標準差（過程控制）的 GRR 指標。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸入</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>測量</b>（必需） — 每個操作員、零件和試驗組合的量測讀數\n\t\t\t\t<br/>\n\t\t\t\t<b>零件</b>（必需） — 確定測量的是哪個零件（通常為 10 個零件）\n\t\t\t\t<br/>\n\t\t\t\t<b>操作員/評估者</b>（必需） — 確定誰進行了測量（通常為 2–3 名操作員）\n\t\t\t\t<br/>\n\t\t\t\t<b>參考值</b>（可選） — 每個零件的已知真實值；提供時，計算每個零件的偏差\n\t\t\t\t<br/>\n\t\t\t\t<b>公差範圍（USL−LSL）</b>（必需） — 用於計算 %公差（產品控制接受標準）\n\t\t\t\t<br/>\n\t\t\t\t<b>目標</b>（可選） — 名義值；將錯誤分類概率圖的 x 軸移至真實零件坐標\n\t\t\t\t<br/>\n\t\t\t\t<b>歷史過程標準差</b>（可選，強烈建議） — 用於計算 %過程；\n\t\t\t\t如果沒有它，則使用研究變異並顯示警告\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸出解釋</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>MS 標準差（GRR SD）</b> = sqrt（重複性變異 + 再現性變異）。\n\t\t\t\t這是宏報告的 \"MS 標準差\"。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>%公差</b> = GRR_SD × 6 / 公差。主要的 AIAG 接受標準：\n\t\t\t\t低於 10% 是可接受的，10–30% 是邊際的，超過 30% 是不可接受的。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>%過程</b> = GRR_SD / 歷史標準差。將測量誤差表示為真實過程能力的分數。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>百分比貢獻圓餅圖</b>顯示重複性、再現性、零件和其他（研究零件未捕獲的過程變異）作為總過程變異（歷史標準差²）的分數。\"其他\" 切片代表超出研究零件所代表的長期過程變異。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>報告圖</b>（可選） — 兩個面板：按零件的測量（顯示操作員均值連接的零件間變異）和按操作員的測量（顯示操作員級別的分佈）。\n\t\t\t\t這是識別哪些組件主導的主要診斷圖。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>殘差圖</b>（可選） — 四面板診斷：正態概率圖、殘差與擬合、殘差的直方圖、殘差與順序。用於驗證 ANOVA 假設（正態性、同方差性、獨立性）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>ANOVA 表</b>（可選） — 雙向交叉 ANOVA，包含零件、操作員和零件×操作員交互。交互項測試操作員是否在不同零件之間的測量存在差異（非顯著交互，p > 0.05，是理想的）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
