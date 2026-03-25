@@ -4,10 +4,16 @@
     "Y_variableRespSelcted": "Select the variable (numerical) for measurement/response (Y-axis)",
     "X_variableSelcted": "Select the categorical variable (X-axis)",
     "G_variableSelcted": "Select the grouping (categorical) variable ",
-    "printStatChk": "Print stats in addition to charts",
+    "plotNestedMultiVariChk": "Addionally, plot a nested Multi-Vari chart",
+    "showMeanNumbersChk": "Show mean values on the plot",
+    "digits": "Digits - number of digits to display for mean values",
     "pctMeanRangeAsYoffset": "Vertical offset to place the labels for the mean points on the plot",
     "pctMeanRangeAsXoffset": "Horizontal offset to place the labels for the mean points on the plot",
+    "printStatChk": "Print stats in addition to charts",
     "angleXaxis_text": "Angle to slant x-axis text values (default 0 for no slanting)",
+    "label1": "Horizontal reference lines",
+    "yIntercept": "Enter comma separated Y intercept value(s) for the horizontal lines, e.g. 100, 200, 300 (i.e., count values). Lines will be drawn only if a Counts axis is present",
+    "horizontalLinelabel": "Specify comma separated labels (no enclosing quotes) for the horizontal line(s)",
     "help": {
         "title": "Multi-Vari Chart",
         "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tA multi-vari chart of one quantitative response variable depending on two categorical variables\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMean values of the response variable is also plotted on the chart \n\t\t\t\t<br/>\n\t\t\t"

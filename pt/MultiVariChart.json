@@ -4,10 +4,16 @@
   "Y_variableRespSelcted": "Selecione a variável (numérica) para medição/resposta (eixo Y)",
   "X_variableSelcted": "Selecione a variável categórica (eixo X)",
   "G_variableSelcted": "Selecione a variável de agrupamento (categórica)",
-  "printStatChk": "Imprimir estatísticas além dos gráficos",
+  "plotNestedMultiVariChk": "Adicionalmente, plote um gráfico Multi-Variável aninhado",
+  "showMeanNumbersChk": "Mostrar valores médios no gráfico",
+  "digits": "Dígitos - número de dígitos a exibir para valores médios",
   "pctMeanRangeAsYoffset": "Deslocamento vertical para colocar os rótulos dos pontos médios no gráfico",
   "pctMeanRangeAsXoffset": "Deslocamento horizontal para colocar os rótulos dos pontos médios no gráfico",
-  "angleXaxis_text": "Ângulo para inclinar os valores do texto do eixo x (padrão 0 para sem inclinação)",
+  "printStatChk": "Imprimir estatísticas além dos gráficos",
+  "angleXaxis_text": "Ângulo para inclinar os valores de texto do eixo x (padrão 0 para sem inclinação)",
+  "label1": "Linhas de referência horizontal",
+  "yIntercept": "Insira valores de intercepto Y separados por vírgula para as linhas horizontais, por exemplo, 100, 200, 300 (ou seja, valores de contagem). As linhas serão desenhadas apenas se um eixo de Contagens estiver presente",
+  "horizontalLinelabel": "Especifique rótulos separados por vírgula (sem aspas) para a(s) linha(s) horizontal(is)",
   "help": {
     "title": "Gráfico Multi-Variável",
     "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tUm gráfico multi-variável de uma variável de resposta quantitativa dependendo de duas variáveis categóricas\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOs valores médios da variável de resposta também são plotados no gráfico \n\t\t\t\t<br/>\n\t\t\t"

@@ -3,13 +3,19 @@
   "navigation": "Çok Değişkenli Grafik",
   "Y_variableRespSelcted": "Ölçüm/yanıt (Y ekseni) için değişkeni (sayısal) seçin",
   "X_variableSelcted": "Kategorik değişkeni (X ekseni) seçin",
-  "G_variableSelcted": "Gruplama (kategorik) değişkenini seçin",
-  "printStatChk": "Grafiklerin yanı sıra istatistikleri de yazdır",
-  "pctMeanRangeAsYoffset": "Grafikteki ortalama noktalarının etiketlerini yerleştirmek için dikey kaydırma",
-  "pctMeanRangeAsXoffset": "Grafikteki ortalama noktalarının etiketlerini yerleştirmek için yatay kaydırma",
+  "G_variableSelcted": "Gruplama (kategorik) değişkeni seçin",
+  "plotNestedMultiVariChk": "Ayrıca, iç içe geçmiş bir Çok Değişkenli grafik çizin",
+  "showMeanNumbersChk": "Grafikte ortalama değerleri göster",
+  "digits": "Basamaklar - ortalama değerler için gösterilecek basamak sayısı",
+  "pctMeanRangeAsYoffset": "Grafikte ortalama noktaları için etiketleri yerleştirmek için dikey kaydırma",
+  "pctMeanRangeAsXoffset": "Grafikte ortalama noktaları için etiketleri yerleştirmek için yatay kaydırma",
+  "printStatChk": "Grafiklerin yanı sıra istatistikleri yazdır",
   "angleXaxis_text": "X ekseni metin değerlerini eğmek için açı (eğme yoksa varsayılan 0)",
+  "label1": "Yatay referans çizgileri",
+  "yIntercept": "Yatay çizgiler için virgülle ayrılmış Y kesişim değeri(lerini) girin, örn. 100, 200, 300 (yani, sayım değerleri). Çizgiler yalnızca bir Sayım ekseni varsa çizilecektir",
+  "horizontalLinelabel": "Yatay çizgi(ler) için virgülle ayrılmış etiketleri (tırnak işareti olmadan) belirtin",
   "help": {
     "title": "Çok Değişkenli Grafik",
-    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tİki kategorik değişkene bağlı bir nicel yanıt değişkeninin çok değişkenli grafiği\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt değişkeninin ortalama değerleri de grafikte gösterilmektedir\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tİki kategorik değişkene bağlı bir nicel yanıt değişkeninin çok değişkenli grafiği\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt değişkeninin ortalama değerleri de grafikte çizilir\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

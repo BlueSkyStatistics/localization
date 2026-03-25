@@ -4,10 +4,16 @@
   "Y_variableRespSelcted": "Seleziona la variabile (numerica) per misurazione/riposta (asse Y)",
   "X_variableSelcted": "Seleziona la variabile categorica (asse X)",
   "G_variableSelcted": "Seleziona la variabile di raggruppamento (categorica)",
+  "plotNestedMultiVariChk": "Inoltre, traccia un grafico Multi-Vari annidato",
+  "showMeanNumbersChk": "Mostra i valori medi sul grafico",
+  "digits": "Cifre - numero di cifre da visualizzare per i valori medi",
+  "pctMeanRangeAsYoffset": "Offset verticale per posizionare le etichette per i punti medi sul grafico",
+  "pctMeanRangeAsXoffset": "Offset orizzontale per posizionare le etichette per i punti medi sul grafico",
   "printStatChk": "Stampa statistiche oltre ai grafici",
-  "pctMeanRangeAsYoffset": "Offset verticale per posizionare le etichette dei punti medi sul grafico",
-  "pctMeanRangeAsXoffset": "Offset orizzontale per posizionare le etichette dei punti medi sul grafico",
   "angleXaxis_text": "Angolo per inclinare i valori del testo dell'asse x (predefinito 0 per nessuna inclinazione)",
+  "label1": "Linee di riferimento orizzontali",
+  "yIntercept": "Inserisci valori di intercetta Y separati da virgola per le linee orizzontali, ad es. 100, 200, 300 (cioè, valori di conteggio). Le linee verranno tracciate solo se è presente un asse di conteggio",
+  "horizontalLinelabel": "Specifica etichette separate da virgola (senza virgolette) per la/e linea/e orizzontale/i",
   "help": {
     "title": "Grafico Multi-Vari",
     "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tUn grafico multi-vari di una variabile di risposta quantitativa in funzione di due variabili categoriche\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tI valori medi della variabile di risposta sono anche tracciati sul grafico \n\t\t\t\t<br/>\n\t\t\t"

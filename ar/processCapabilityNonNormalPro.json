@@ -1,18 +1,18 @@
 {
-  "title": "قدرة العملية (غير طبيعية)",
-  "navigation": "قدرة العملية (غير طبيعية)",
+  "title": "قدرة العملية (غير الطبيعية)",
+  "navigation": "قدرة العملية (غير الطبيعية)",
   "printObjectSummaryChk": "طباعة ملخص كائن QCC لقدرة العملية",
   "label1": "اختر دالة توزيع تناسب البيانات بشكل أفضل",
   "variableSelcted": "اختر متغيرًا (بيانات مشاهدة) للتحليل",
-  "rowsTobeUsed": "إذا تم تحديدها، الصفوف التي ستستخدم للتحليل لقدرة العملية (على سبيل المثال، حدد كـ 1:25 أو 1،4،5،7:12)",
-  "lower": "LSL - القيمة الرقمية للحد الأدنى من المواصفات (اكتب NA لتحديد حدود المواصفات أحادية الجانب)",
-  "upper": "USL - القيمة الرقمية للحد الأقصى من المواصفات (اكتب NA لتحديد حدود المواصفات أحادية الجانب)",
+  "rowsTobeUsed": "إذا تم الاختيار، الصفوف التي ستستخدم للتحليل لقدرة العملية (على سبيل المثال، حدد كـ 1:25 أو 1,4,5,7:12)",
+  "lower": "LSL - القيمة الرقمية لحد المواصفات السفلي (اكتب NA لتحديد حدود المواصفات أحادية الجانب)",
+  "upper": "USL - القيمة الرقمية لحد المواصفات العلوي (اكتب NA لتحديد حدود المواصفات أحادية الجانب)",
   "target": "حدود المواصفات المستهدفة (اختياري)",
-  "addlSpecLines": "إضافة خطوط مواصفات إضافية على الرسم (مفصولة بفواصل على سبيل المثال 73.98، 74.01، 74.03)",
-  "addlSpecLinesLabel": "تسمية لخطوط المواصفات الإضافية (مفصولة بفواصل على سبيل المثال Spec 1، Spec 2، Spec 3)",
+  "addlSpecLines": "إضافة خطوط مواصفات إضافية على الرسم (مفصولة بفواصل، مثل 73.98، 74.01، 74.03)",
+  "addlSpecLinesLabel": "تسمية لخطوط المواصفات الإضافية (مفصولة بفواصل، مثل Spec 1، Spec 2، Spec 3)",
   "selectDistFuncWeibullRad": "ويبل",
-  "selectDistFuncExpRad": "أسّي",
-  "selectDistFuncGammaRad": "غاما",
+  "selectDistFuncExpRad": "أسي",
+  "selectDistFuncGammaRad": "جاما",
   "selectDistFuncLnormalRad": "لوغاريتمي طبيعي",
   "selectDistFuncPoissonRad": "بواسون",
   "selectDistFuncNBinomRad": "ثنائي سالب",
@@ -22,10 +22,11 @@
   "selectDistFuncLogisRad": "لوجستي",
   "selectDistFuncCauchyRad": "كوشي",
   "selectDistFuncNormRad": "طبيعي",
-  "digits": "أرقام - عدد الأرقام للعرض",
+  "selectDistFuncEmpRad": "تجريبي (اختر هذا عندما لا تناسب البيانات أي توزيع آخر بشكل جيد)",
+  "digits": "الأرقام - عدد الأرقام التي سيتم عرضها",
   "help": {
     "title": "قدرة العملية للتوزيع غير الطبيعي",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة qcc تحسب مؤشرات القدرة\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(process.capability, package = qcc)، help(qcc, package = qcc)، help(sd.xbar, package = qcc)، و help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك تحميل مجموعة البيانات المسماة pistonrings من حزمة qcc باستخدام قائمة تحميل مجموعة البيانات عن طريق تحديد حزمة qcc ثم تحديد مجموعة بيانات pistonrings\n\t\t\t\t<br/>\n\t\t\t\tاختر الخيار 1، القطر كمتغير (ملاحظ..)، العينة كمتغير تجميع،\n\t\t\t\t<br/>\n\t\t\t\tاكتب 1:25 في الصفوف المجمعة التي ستستخدم\n\t\t\t\t<br/>\n\t\t\t\tلتحليل قدرة العملية - اكتب 73.95 في LSL، 74.05 في USL، و 74.0 في حد الهدف\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tاتبع برنامج qcc التعليمي على https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة qcc لحساب مؤشرات القدرة \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(process.capability, package = qcc)، help(qcc, package = qcc)، help(sd.xbar, package = qcc)، و help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tلتجربة ذلك، يمكنك تحميل مجموعة البيانات المسماة pistonrings من حزمة qcc باستخدام قائمة تحميل مجموعة البيانات عن طريق اختيار حزمة qcc ثم اختيار مجموعة بيانات pistonrings\n\t\t\t\t<br/>\n\t\t\t\tاختر الخيار 1، القطر إلى المتغير (المشاهد..)، العينة إلى المتغير التجميعي، \n\t\t\t\t<br/>\n\t\t\t\tاكتب 1:25 في الصفوف المجمعة التي ستستخدم\n\t\t\t\t<br/>\n\t\t\t\tلتحليل قدرة العملية - اكتب 73.95 في LSL، 74.05 في USL، و 74.0 في حد الهدف\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tتابع البرنامج التعليمي لـ qcc على https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }
