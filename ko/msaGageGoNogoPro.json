@@ -1,0 +1,24 @@
+{
+  "title": "MSA Go/No-Go 검증 (로지스틱 회귀)",
+  "navigation": "MSA Go/No-Go 검증",
+  "variableInputSelcted": "변수 입력 선택 (연속 측정)",
+  "variableResultSelcted": "결과 변수 선택 (이진 통과/실패)",
+  "passCondition": "통과 조건 값 (결과 데이터와 정확히 일치해야 함)",
+  "label2": "사양 정보",
+  "usl": "USL (상한 사양 한계 — 선택 사항)",
+  "lsl": "LSL (하한 사양 한계 — 선택 사항)",
+  "upperLimitRad": "상한 한계 평가 (USL)",
+  "lowerLimitRad": "하한 한계 평가 (LSL)",
+  "gageName": "게이지 이름",
+  "studyDate": "연구 날짜",
+  "performedBy": "보고자",
+  "showResidualPlotsChk": "편차 잔차 플롯 표시",
+  "flipaxisPPplotChk": "P-P 플롯의 축 뒤집기",
+  "showFittedLinePlotChk": "신뢰 구간이 있는 이진 적합선 플롯 표시",
+  "showAdditionalStatChk": "추가 로지스틱 회귀 통계 표시",
+  "deGroupPlotsChk": "플롯을 개별적으로 플롯하기 위해 그룹 해제",
+  "help": {
+    "title": "Go/No-Go 검증 (로지스틱 회귀)",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t이진 로지스틱 회귀 (Probit/Normit 링크)를 사용한 Go/No-Go 검증\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>목적</b>\n\t\t\t\t<br/>\n\t\t\t\tGo/No-Go (속성) 게이지는 연속 측정 대신 이진 통과/실패 결정을 생성합니다. \n\t\t\t\t이 분석은 진정한 연속 입력 변수를 함수로 하여 통과 확률을 모델링하기 위해 probit (normit) 링크 함수를 사용하는 이진 로지스틱 회귀를 사용합니다. \n\t\t\t\t사양 한계 근처의 부품을 올바르게 분류하는 측정 시스템의 능력을 평가합니다.\n\t\t\t\t<br/>\n\t\t\t\tAIAG MSA 4판 접근 방식 (Thomas Rust의 Minitab MSA_VarIn.MAC)을 따르며, \n\t\t\t\t50%의 부품이 통과로 분류되는 전환점을 추정하고, \n\t\t\t\t측정 시스템 변동성을 정량화하며, 주요 수용 메트릭을 계산합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>입력</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>변수 입력</b> (필수) — 각 부품에 대한 연속 측정 (예: 직경)\n\t\t\t\t<br/>\n\t\t\t\t<b>결과 (이진)</b> (필수) — Go/No-Go 게이지 결과 (예: \"통과\"/\"실패\")\n\t\t\t\t<br/>\n\t\t\t\t<b>통과 조건</b> (필수) — 통과를 의미하는 결과 열의 정확한 문자열 값\n\t\t\t\t<br/>\n\t\t\t\t<b>개별 / 요약 결과</b> — 각 행이 하나의 측정 (개별)인지 \n\t\t\t\t아니면 이미 입력 수준당 통과 수와 총 시험 수로 요약되었는지 (요약됨)\n\t\t\t\t<br/>\n\t\t\t\t<b>USL / LSL</b> — 사양 한계; 평가되는 한계는 Bias 및 %GRR 허용 오차를 결정합니다.\n\t\t\t\t<br/>\n\t\t\t\t<b>상한/하한 한계 평가</b> — 게이지가 확인하는 사양 한계\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>출력 해석</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>전환점</b> — 게이지가 50%의 부품을 통과시키는 입력 값. \n\t\t\t\t이상적으로는 사양 한계와 같으며, 차이는 Bias입니다.\n\t\t\t\t<br/>\n\t\t\t\t<b>MS 표준 편차</b> = |1/beta| 여기서 beta는 probit 기울기입니다. 게이지의 결정 경계의 분포를 측정합니다 — 작은 값은 더 날카롭고 더 유능한 게이지를 나타냅니다.\n\t\t\t\t<br/>\n\t\t\t\t<b>95% 불확실성</b> = 2 × MS 표준 편차 — 전환점 주위의 구역으로, \n\t\t\t\t분류가 신뢰할 수 없습니다.\n\t\t\t\t<br/>\n\t\t\t\t<b>Bias</b> = 전환점 − 사양. 비영(非零) 편향은 게이지가 사양 한계 근처의 부품을 일관되게 수용하거나 거부함을 의미합니다.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Tol (허용 오차 비율)</b> = (6 × MS 표준 편차) / 허용 오차 × 100. 주요 수용 \n\t\t\t\t기준: 10% 미만은 허용 가능, 10–30%는 한계, 30% 이상은 허용 불가.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Bias of Tolerance</b> = |Bias| / 허용 오차 × 100.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Go/No-Go 검증 플롯</b> — 관찰된 통과 비율 (점)과 적합된 \n\t\t\t\tprobit S-곡선을 보여줍니다. 아래의 색상 밴드는: 빨간색 = 확신하는 실패 구역, 회색 줄무늬 = \n\t\t\t\t불확실성 구역 (전환 ± U), 녹색 = 확신하는 통과 구역.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>이진 적합선 플롯</b> (선택 사항) — 95% \n\t\t\t\t신뢰 구간이 있는 적합 probit 곡선을 보여주며, 모델 적합성을 평가하는 데 유용합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>편차 잔차 플롯</b> (선택 사항) — 로지스틱 \n\t\t\t\t회귀 모델에 대한 네 개의 진단 패널 (정규 확률, 적합의 Normit, 히스토그램, 순서 대 비교).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

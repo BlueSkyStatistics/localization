@@ -1,0 +1,24 @@
+{
+    "title": "MSA Go/No-Go Validation (Logistic Regression)",
+    "navigation": "MSA Go/No-Go Validation",
+    "variableInputSelcted": "Select the variable input (continuous measurement)",
+    "variableResultSelcted": "Select the results variable (binary pass/fail)",
+    "passCondition": "Pass condition value (must match result data exactly)",
+    "label2": "Specification Info",
+    "usl": "USL (Upper Spec Limit — optional)",
+    "lsl": "LSL (Lower Spec Limit — optional)",
+    "upperLimitRad": "Evaluating Upper Limit (USL)",
+    "lowerLimitRad": "Evaluating Lower Limit (LSL)",
+    "gageName": "Gage Name",
+    "studyDate": "Date of Study",
+    "performedBy": "Reported by",
+    "showResidualPlotsChk": "Show deviance residual plots",
+    "flipaxisPPplotChk": "Flip axis for the P-P plot",
+    "showFittedLinePlotChk": "Show binary fitted line plot with confidence bands",
+    "showAdditionalStatChk": "Show additional logistic regression statistics",
+    "deGroupPlotsChk": "De-group plots to plot individually",
+    "help": {
+        "title": "Go/No-Go Validation (Logistic Regression)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tGo/No-Go Validation using Binary Logistic Regression (Probit/Normit link)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Purpose</b>\n\t\t\t\t<br/>\n\t\t\t\tGo/No-Go (attribute) gauges produce a binary pass/fail decision rather than a continuous measurement. \n\t\t\t\tThis analysis uses binary logistic regression with a probit (normit) link function to model the \n\t\t\t\tprobability of passing as a function of the true continuous input variable. It evaluates the \n\t\t\t\tmeasurement system's ability to correctly classify parts near the specification limit.\n\t\t\t\t<br/>\n\t\t\t\tFollowing the AIAG MSA 4th Edition approach (Minitab MSA_VarIn.MAC by Thomas Rust), \n\t\t\t\tit estimates the transition point (where 50% of parts are classified as pass), quantifies \n\t\t\t\tmeasurement system variation, and computes key acceptance metrics.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Inputs</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>Variable Input</b> (required) — the continuous measurement (e.g. diameter) for each part\n\t\t\t\t<br/>\n\t\t\t\t<b>Results (binary)</b> (required) — the Go/No-Go gauge outcome (e.g. \"Pass\"/\"Fail\")\n\t\t\t\t<br/>\n\t\t\t\t<b>Pass Condition</b> (required) — the exact string value in the Results column that means Pass\n\t\t\t\t<br/>\n\t\t\t\t<b>Individual / Summarized Results</b> — whether each row is one measurement (Individual) \n\t\t\t\tor already summarized as counts of passes and total trials per input level (Summarized)\n\t\t\t\t<br/>\n\t\t\t\t<b>USL / LSL</b> — specification limits; the limit being evaluated determines Bias and %GRR Tolerance\n\t\t\t\t<br/>\n\t\t\t\t<b>Evaluating Upper/Lower Limit</b> — which spec limit the gauge is checking\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Output Interpretation</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>Transition Point</b> — the input value at which the gauge passes 50% of parts. \n\t\t\t\tIdeally equals the specification limit; any difference is the Bias.\n\t\t\t\t<br/>\n\t\t\t\t<b>MS Std Dev</b> = |1/beta| where beta is the probit slope. Measures the spread of the \n\t\t\t\tgauge's decision boundary — smaller values indicate a sharper, more capable gauge.\n\t\t\t\t<br/>\n\t\t\t\t<b>95% Uncertainty</b> = 2 × MS Std Dev — the zone around the transition point where \n\t\t\t\tclassification is unreliable.\n\t\t\t\t<br/>\n\t\t\t\t<b>Bias</b> = Transition Point − Specification. Non-zero bias means the gauge consistently \n\t\t\t\taccepts or rejects parts near the spec limit.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Tol (Tolerance Ratio)</b> = (6 × MS Std Dev) / Tolerance × 100. Primary acceptance \n\t\t\t\tcriterion: below 10% acceptable, 10–30% marginal, above 30% unacceptable.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Bias of Tolerance</b> = |Bias| / Tolerance × 100.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Go/No-Go Validation plot</b> — shows observed pass proportions (dots) and the fitted \n\t\t\t\tprobit S-curve. A coloured band below shows: red = confident Fail zone, grey hatched = \n\t\t\t\tuncertainty zone (Transition ± U), green = confident Pass zone.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Binary Fitted Line Plot</b> (optional) — shows the fitted probit curve with 95% \n\t\t\t\tconfidence bands, useful for assessing model fit.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Deviance Residual Plots</b> (optional) — four diagnostic panels for the logistic \n\t\t\t\tregression model (Normal Probability, vs Normit of Fits, Histogram, vs Order).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "MSA Go/No-Go Doğrulama (Lojistik Regresyon)",
+  "navigation": "MSA Go/No-Go Doğrulama",
+  "variableInputSelcted": "Değişken girişi seçin (sürekli ölçüm)",
+  "variableResultSelcted": "Sonuç değişkenini seçin (ikili geçme/kalma)",
+  "passCondition": "Geçme koşulu değeri (sonuç verileriyle tam olarak eşleşmelidir)",
+  "label2": "Şartname Bilgisi",
+  "usl": "USL (Üst Spesifik Limit — isteğe bağlı)",
+  "lsl": "LSL (Alt Spesifik Limit — isteğe bağlı)",
+  "upperLimitRad": "Üst Limitin Değerlendirilmesi (USL)",
+  "lowerLimitRad": "Alt Limitin Değerlendirilmesi (LSL)",
+  "gageName": "Alet Adı",
+  "studyDate": "Çalışma Tarihi",
+  "performedBy": "Raporlayan",
+  "showResidualPlotsChk": "Sapma kalıntı grafiklerini göster",
+  "flipaxisPPplotChk": "P-P grafiği için ekseni çevir",
+  "showFittedLinePlotChk": "Güven aralıkları ile ikili uyumlu çizgi grafiğini göster",
+  "showAdditionalStatChk": "Ek lojistik regresyon istatistiklerini göster",
+  "deGroupPlotsChk": "Grafikleri bireysel olarak çizmek için gruplamayı kaldır",
+  "help": {
+    "title": "Go/No-Go Doğrulama (Lojistik Regresyon)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tGo/No-Go Doğrulaması, İkili Lojistik Regresyon (Probit/Normit bağlantısı) kullanarak\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Amaç</b>\n\t\t\t\t<br/>\n\t\t\t\tGo/No-Go (özellik) ölçüleri, sürekli bir ölçüm yerine ikili geçme/kalma kararı üretir. \n\t\t\t\tBu analiz, gerçek sürekli girdi değişkeninin bir fonksiyonu olarak geçme olasılığını modellemek için \n\t\t\t\tprobit (normit) bağlantı fonksiyonu ile ikili lojistik regresyon kullanır. \n\t\t\t\tÖlçüm sisteminin, spesifikasyon limitine yakın parçaları doğru bir şekilde sınıflandırma yeteneğini değerlendirir.\n\t\t\t\t<br/>\n\t\t\t\tAIAG MSA 4. Baskı yaklaşımını (Minitab MSA_VarIn.MAC, Thomas Rust tarafından) takip ederek, \n\t\t\t\tgeçiş noktasını (parçaların %50'sinin geçme olarak sınıflandırıldığı yer) tahmin eder, \n\t\t\t\tölçüm sistemi varyansını nicelendirir ve ana kabul metriklerini hesaplar.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Girdiler</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>Değişken Girişi</b> (zorunlu) — her parça için sürekli ölçüm (örneğin, çap)\n\t\t\t\t<br/>\n\t\t\t\t<b>Sonuçlar (ikili)</b> (zorunlu) — Go/No-Go ölçüm sonucu (örneğin, \"Geçti\"/\"Kaldı\")\n\t\t\t\t<br/>\n\t\t\t\t<b>Geçme Koşulu</b> (zorunlu) — Sonuçlar sütunundaki Geçti anlamına gelen tam dize değeri\n\t\t\t\t<br/>\n\t\t\t\t<b>Bireysel / Özetlenmiş Sonuçlar</b> — her satırın bir ölçüm (Bireysel) olup olmadığı \n\t\t\t\tveya her girdi seviyesinde geçme ve toplam deneme sayılarının özetlendiği (Özetlenmiş)\n\t\t\t\t<br/>\n\t\t\t\t<b>USL / LSL</b> — spesifikasyon limitleri; değerlendirilen limit Bias ve %GRR Toleransını belirler\n\t\t\t\t<br/>\n\t\t\t\t<b>Üst/Alt Limitin Değerlendirilmesi</b> — ölçümün kontrol ettiği spesifikasyon limiti\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Çıktı Yorumu</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>Geçiş Noktası</b> — ölçümün %50'sinin geçtiği girdi değeri. \n\t\t\t\tİdeal olarak spesifikasyon limitine eşit olmalıdır; herhangi bir fark Bias'tır.\n\t\t\t\t<br/>\n\t\t\t\t<b>MS Std Dev</b> = |1/beta| burada beta probit eğimidir. Ölçümün \n\t\t\t\tkarar sınırının yayılmasını ölçer — daha küçük değerler daha keskin, daha yetenekli bir ölçüm gösterir.\n\t\t\t\t<br/>\n\t\t\t\t<b>%95 Belirsizlik</b> = 2 × MS Std Dev — geçiş noktasının etrafındaki alan, \n\t\t\t\t sınıflandırmanın güvenilir olmadığı yerdir.\n\t\t\t\t<br/>\n\t\t\t\t<b>Bias</b> = Geçiş Noktası − Spesifikasyon. Sıfırdan farklı bias, ölçümün sürekli olarak \n\t\t\t\tparçaları spesifikasyon limitine yakın kabul etmesi veya reddetmesi anlamına gelir.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Tol (Tolerans Oranı)</b> = (6 × MS Std Dev) / Tolerans × 100. Ana kabul \n\t\t\t\tkriteri: %10'un altında kabul edilebilir, %10–30% marjinal, %30'un üzerinde kabul edilemez.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Bias of Tolerance</b> = |Bias| / Tolerans × 100.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Go/No-Go Doğrulama grafiği</b> — gözlemlenen geçme oranlarını (nokta) ve uyumlu \n\t\t\t\tprobit S-eğrisini gösterir. Aşağıda bir renkli bant gösterir: kırmızı = güvenilir Kalma bölgesi, gri çizgili = \n\t\t\t\tbelirsizlik bölgesi (Geçiş ± U), yeşil = güvenilir Geçme bölgesi.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>İkili Uyumlu Çizgi Grafiği</b> (isteğe bağlı) — 95% \n\t\t\t\tgüven aralıkları ile uyumlu probit eğrisini gösterir, model uyumunu değerlendirmek için yararlıdır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Sapma Kalıntı Grafikleri</b> (isteğe bağlı) — lojistik \n\t\t\t\tregresyon modeli için dört tanısal panel (Normal Olasılık, Uygunluk Normiti, Histogram, Sıra ile).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

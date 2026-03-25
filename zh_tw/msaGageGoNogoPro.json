@@ -1,0 +1,24 @@
+{
+  "title": "MSA Go/No-Go 驗證 (邏輯回歸)",
+  "navigation": "MSA Go/No-Go 驗證",
+  "variableInputSelcted": "選擇變數輸入 (連續測量)",
+  "variableResultSelcted": "選擇結果變數 (二元通過/失敗)",
+  "passCondition": "通過條件值 (必須與結果數據完全匹配)",
+  "label2": "規格資訊",
+  "usl": "USL (上規格限 — 可選)",
+  "lsl": "LSL (下規格限 — 可選)",
+  "upperLimitRad": "評估上限 (USL)",
+  "lowerLimitRad": "評估下限 (LSL)",
+  "gageName": "量具名稱",
+  "studyDate": "研究日期",
+  "performedBy": "報告者",
+  "showResidualPlotsChk": "顯示偏差殘差圖",
+  "flipaxisPPplotChk": "翻轉 P-P 圖的軸",
+  "showFittedLinePlotChk": "顯示帶有置信區間的二元擬合線圖",
+  "showAdditionalStatChk": "顯示額外的邏輯回歸統計",
+  "deGroupPlotsChk": "去分組圖以單獨繪製",
+  "help": {
+    "title": "Go/No-Go 驗證 (邏輯回歸)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t使用二元邏輯回歸 (Probit/Normit 連結) 的 Go/No-Go 驗證\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>目的</b>\n\t\t\t\t<br/>\n\t\t\t\tGo/No-Go (屬性) 量具產生二元通過/失敗決策，而不是連續測量。\n\t\t\t\t此分析使用帶有 probit (normit) 連結函數的二元邏輯回歸來建模\n\t\t\t\t通過的概率作為真實連續輸入變數的函數。它評估測量系統\n\t\t\t\t正確分類接近規格限的零件的能力。\n\t\t\t\t<br/>\n\t\t\t\t遵循 AIAG MSA 第四版方法 (Minitab MSA_VarIn.MAC 由 Thomas Rust 提供)，\n\t\t\t\t它估計過渡點 (50% 的零件被分類為通過的地方)，量化\n\t\t\t\t測量系統變異，並計算關鍵接受指標。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸入</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>變數輸入</b> (必填) — 每個零件的連續測量 (例如直徑)\n\t\t\t\t<br/>\n\t\t\t\t<b>結果 (二元)</b> (必填) — Go/No-Go 量具結果 (例如 \"通過\"/\"失敗\")\n\t\t\t\t<br/>\n\t\t\t\t<b>通過條件</b> (必填) — 在結果列中表示通過的確切字串值\n\t\t\t\t<br/>\n\t\t\t\t<b>個別 / 總結結果</b> — 每行是否為一個測量 (個別)\n\t\t\t\t或已經總結為每個輸入水平的通過次數和總試驗次數 (總結)\n\t\t\t\t<br/>\n\t\t\t\t<b>USL / LSL</b> — 規格限；正在評估的限度決定偏差和 %GRR 容差\n\t\t\t\t<br/>\n\t\t\t\t<b>評估上/下限</b> — 量具正在檢查的規格限\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸出解釋</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>過渡點</b> — 量具通過 50% 零件的輸入值。\n\t\t\t\t理想情況下等於規格限；任何差異即為偏差。\n\t\t\t\t<br/>\n\t\t\t\t<b>MS 標準差</b> = |1/beta|，其中 beta 是 probit 斜率。測量量具決策邊界的擴散 — 值越小表示量具越尖銳、越有能力。\n\t\t\t\t<br/>\n\t\t\t\t<b>95% 不確定性</b> = 2 × MS 標準差 — 過渡點周圍的區域，其中\n\t\t\t\t分類不可靠。\n\t\t\t\t<br/>\n\t\t\t\t<b>偏差</b> = 過渡點 − 規格。非零偏差意味著量具始終\n\t\t\t\t接受或拒絕接近規格限的零件。\n\t\t\t\t<br/>\n\t\t\t\t<b>%Tol (容差比)</b> = (6 × MS 標準差) / 容差 × 100。主要接受\n\t\t\t\t標準：低於 10% 可接受，10–30% 邊際，超過 30% 不可接受。\n\t\t\t\t<br/>\n\t\t\t\t<b>%容差的偏差</b> = |偏差| / 容差 × 100。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Go/No-Go 驗證圖</b> — 顯示觀察到的通過比例 (點) 和擬合的\n\t\t\t\tprobit S 曲線。下方的彩色帶顯示：紅色 = 確信失敗區，灰色斜線 =\n\t\t\t\t不確定區 (過渡 ± U)，綠色 = 確信通過區。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>二元擬合線圖</b> (可選) — 顯示帶有 95%\n\t\t\t\t置信區間的擬合 probit 曲線，對於評估模型擬合非常有用。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>偏差殘差圖</b> (可選) — 四個診斷面板，用於邏輯\n\t\t\t\t回歸模型 (正態概率，與擬合的 normit，直方圖，與順序)。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
