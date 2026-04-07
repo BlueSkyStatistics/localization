@@ -5,7 +5,7 @@
   "selectVariableRad": "選項 1：從數據集中選擇兩個數值變量",
   "strength": "選擇一個（數值）變量（例如，強度、容量等）",
   "stress": "選擇一個（數值）變量（例如，壓力、負載等）",
-  "selectDataSummaryRad": "選項 2：輸入總結數據（選擇時，不會顯示圖表）",
+  "selectDataSummaryRad": "選項 2：輸入總結數據（選擇後，將不顯示圖表）",
   "strengthSummaryLabel": "強度（或容量）總結數據",
   "strengthSummaryMean": "平均值",
   "strengthSummarySD": "標準差",
@@ -30,8 +30,9 @@
   "bsky_comb_sd_eff_Chk": "有效的合併標準差",
   "bsky_comb_sd_Chk": "簡單合併標準差",
   "bsky_comb_sd_ub_Chk": "合併標準差 - 單側下限",
+  "benchmarkZChkDigits": "顯示下限可靠性九位數的位數",
   "help": {
     "title": "壓力與強度可靠性分析",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t壓力與強度可靠性分析 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t目的\n\t\t\t\t<br/>\n\t\t\t\t壓力與強度可靠性分析量化了組件能承受的統計邊際（其強度或容量，\n\t\t\t\t在一組零件中測量）和它在服務中實際經歷的（壓力或負載，在一組代表性\n\t\t\t\t的操作條件下測量）。因為這兩個量在不同的零件和車輛之間變化，所以都不是單一的\n\t\t\t\t固定數字——它們是分佈，設計的可靠性是任何給定零件的強度超過其遇到的負載的概率。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t此工具中的三種方法反映了主要汽車OEM和行業聯盟使用的不同標準：\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t德國VDA Arbeitskreis方法專注於平均容量和觀察到的最壞負載之間的邊際，\n\t\t\t\t<br/>\n\t\t\t\tUSCAR（北美OEM根據SAE標準使用）比較容量分佈的下尾與負載分佈的上尾，使用置信界限可靠性指數，\n\t\t\t\t<br/>\n\t\t\t\t而日本OEM方法（日產、豐田、本田）將兩個分佈之間的分離表示為必須超過99.9999%可靠性對應的固定閾值的單一標準化距離。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t執行分析所需的輸入數據\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t從左側的源變量列表中選擇您的容量和負載變量；兩者必須是數字列。\n\t\t\t\t<br/>\n\t\t\t\t僅在您的數據是總結而非原始數據時選擇總結數據選項——在處理單個測量時留空。\n\t\t\t\t<br/>\n\t\t\t\t置信水平控制所有統計邊界的寬度（默認0.95 = 95%）\n\t\t\t\t<br/>\n\t\t\t\t期望可靠性設置在所有方法中用於通過/失敗決策的最低可接受可靠性閾值（默認0.999 = 99.9%）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t選擇一個或多個分析方法：\n\t\t\t\t<br/>\n\t\t\t\t無計算標準正態干擾可靠性及其下置信界限\n\t\t\t\t<br/>\n\t\t\t\tArbeitskreis應用德國VDA安全因子SF = mean(容量) / max(負載)與專有的四組不確定性界限\n\t\t\t\t<br/>\n\t\t\t\tUSCAR應用SAE/USCAR-24安全因子SF = (X̄ − 3s)_容量 / (X̄ + 3s)_負載，使用Reiser-Guttman可靠性下界作為其d統計量\n\t\t\t\t<br/>\n\t\t\t\t日產/豐田/本田直接計算可靠性指數d並將其與99.9999%閾值進行比較。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t對於Arbeitskreis和USCAR，SF最小值字段接受行業標準的硬編碼常數（分別為1.70和1.50）——留空\n\t\t\t\t以使工具從數據中統計計算閾值。對於日產/豐田/本田，d最小值字段默認為4.76——留空\n\t\t\t\t以使用數學上精確的值4.7534。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t檢查額外圖表會為每個選定的變量生成常態概率圖、直方圖和I-MR圖，讓您驗證\n\t\t\t\t所有四種方法所依賴的常態假設。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t壓力與強度可靠性分析 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t目的\n\t\t\t\t<br/>\n\t\t\t\t壓力與強度可靠性分析量化了組件能承受的統計邊際（其強度或容量，\n\t\t\t\t在一組零件中測量）和其在服務中實際經歷的（壓力或負載，在一組代表性\n\t\t\t\t的操作條件下測量）。由於這兩個量在不同的零件和車輛之間變化，因此都不是單一的\n\t\t\t\t固定數字 - 它們是分佈，設計的可靠性是任何給定零件的強度超過其遇到的負載的概率。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t此工具中的三種方法反映了主要汽車OEM和行業聯盟使用的不同標準：\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t德國VDA Arbeitskreis方法專注於平均容量和觀察到的最壞負載之間的邊際，\n\t\t\t\t<br/>\n\t\t\t\tUSCAR（北美OEM根據SAE標準使用）比較容量分佈的下尾與負載分佈的上尾，使用置信界限可靠性指數，\n\t\t\t\t<br/>\n\t\t\t\t而日本OEM方法（如日產、豐田、本田）將兩個分佈之間的分離表示為必須超過99.9999%可靠性對應的固定閾值的單一標準化距離。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t執行分析所需的輸入數據\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t從左側的源變量列表中選擇您的容量和負載變量；兩者必須是數字列。\n\t\t\t\t<br/>\n\t\t\t\t僅在您的數據是總結而非原始數據時選擇總結數據選項 - 在處理單個測量時留空。\n\t\t\t\t<br/>\n\t\t\t\t置信水平控制所有統計邊界的寬度（默認0.95 = 95%）\n\t\t\t\t<br/>\n\t\t\t\t期望可靠性設置在所有方法中用於通過/失敗決策的最低可接受可靠性閾值（默認0.999 = 99.9%）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t選擇一個或多個分析方法：\n\t\t\t\t<br/>\n\t\t\t\t無計算標準正態干擾可靠性及其下置信界限\n\t\t\t\t<br/>\n\t\t\t\tArbeitskreis應用德國VDA安全因子SF = mean(容量) / max(負載)與專有的四組不確定性界限\n\t\t\t\t<br/>\n\t\t\t\tUSCAR應用SAE/USCAR-24安全因子SF = (X̄ − 3s)_容量 / (X̄ + 3s)_負載，使用Reiser-Guttman可靠性下界進行其d統計量\n\t\t\t\t<br/>\n\t\t\t\t日產/豐田/本田直接計算可靠性指數d並將其與99.9999%閾值進行比較。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t對於Arbeitskreis和USCAR，SF最小值字段接受行業標準的硬編碼常數（分別為1.70和1.50） - 留空\n\t\t\t\t以使工具從數據中統計計算閾值。對於日產/豐田/本田，d最小值字段默認為4.76 - 留空\n\t\t\t\t以使用數學上精確的值4.7534。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t檢查額外圖表會為每個選定的變量生成常態概率圖、直方圖和I-MR圖，讓您驗證\n\t\t\t\t所有四種方法所依賴的常態假設。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }
