@@ -1,0 +1,24 @@
+{
+  "title": "Ein-Stichproben-Varianz",
+  "navigation": "Ein-Stichproben-Varianz",
+  "label_samples": "Eine oder mehrere Stichproben, jeweils in einer Spalte",
+  "label_data_format": "Datenformat",
+  "wide": "Breites Format (jede Stichprobe ist eine Spalte)",
+  "long": "Langes Format (Antwort gruppiert nach Faktor)",
+  "label_response": "Antwortvariable",
+  "label_group": "Gruppierungsvariable",
+  "label_hyp_test": "Hypothesentest",
+  "hyp_sd": "Hypothetische Standardabweichung",
+  "hyp_var": "Hypothetische Varianz",
+  "value_label": "Wert",
+  "label_conf": "Konfidenzniveau",
+  "label_alt": "Alternative Hypothese",
+  "alt1": "Zweiseitig (≠)",
+  "alt2": "Größer (>)",
+  "alt3": "Weniger (<)",
+  "help": {
+    "title": "Ein-Stichproben-Varianz (Minitab-ähnlich)",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Beschreibung</b></br>\nImitiert den Dialog zur Ein-Stichproben-Varianz von Minitab.</br>\nBerechnet immer beides:</br>\n<ul>\n  <li><b>Bonett</b>-Methode (gültig für jede kontinuierliche Verteilung)</li>\n  <li><b>Chi-Quadrat</b>-Methode (Normaltheorie-Methode)</li>\n</ul>\nFührt immer Hypothesentests gegen entweder eine hypothetische <b>Standardabweichung</b> oder <b>Varianz</b> durch.</br>\n\n<b>Verwendung</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>Hilfe</b></br>\nBitte kontaktieren Sie support@blueskystatistics.com für weitere Informationen.\n      "
+  }
+}

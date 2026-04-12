@@ -1,0 +1,31 @@
+{
+    "title": "Design of Experiments (DoE) analysis - Curvature Test and Linear Model",
+    "navigation": "Design Analysis -  Linear Model and Curvature Test",
+    "modelname": "Enter Model Name",
+    "dependent": "Response (dependent) variable",
+    "independent": "Independent variable(s)",
+    "curv_test_degree": "Interaction terms for Model for Curvature Test: Degree (1 for no interaction terms and only main effects; otherwise type 2 for 2nd level interactions, 3 for 3rd level interactions, etc)",
+    "model_degree": "Interaction terms for Model (without any center/axial points): Degree (1 for no interaction terms and only main effects; otherwise type 2 for 2nd level interactions, 3 for 3rd level interactions, etc)",
+    "axialCenterPointRowsChk": "If any, identify the row numbers for center points and axial/star points in the DoE design",
+    "effectsplot": "All effects plot (generated only when Degree is not specified)",
+    "generateplotchk": "Plot residuals vs fitted, normal Q-Q , scale-location and residuals vs leverage",
+    "twoLevelDesignTypeChk": "The following options are only applicable for a 2-level Factor Design (e.g., pb, FrF2, Full Factorial...)",
+    "AliasChk": "Determine aliases",
+    "AliasCodedChk": "Coded aliases",
+    "DanielplotChk": "Daniel Plot (plot of effects)",
+    "DanielplotCodeChk": "Coded label",
+    "DanielplotHalfChk": "Half Normal",
+    "DanielplotAlpha": "Alpha (significance level for labelling)",
+    "MEPlotChk": "MEPlot(main effects plots)",
+    "IAPlotChk": "IAPlot(interaction plots)",
+    "IAPlotShowAliasChk": "Show aliases in the plot",
+    "cubePlotChk": "Cube plot of three factor interactions with modeled means",
+    "cubePlotModelMeanChk": "Plot both modeled means and non-modeled means",
+    "cubePlotIndependent": "Select three independent variable(s) for the cube plot",
+    "showModelEquationChk": "Show model equation (if the model contains categorical variables, equation may not show)",
+    "help": {
+        "title": "Design of Experiments analysis with Curvature Test Linear Model",
+        "r_help": "help(lm, package = 'stats')",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tDesign of Experiments (DoE) analysis - Curvature Test with a LInear Model and then build a  Linear Model with cube points \n\t\t\t\tonly (removeing any center points and axial point, if any)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThis dialog performs Design of Experiments (DOE) analysis by fitting a linear regression model to factorial design data, \n\t\t\t\twith optional curvature testing when center points are present. Begin by entering a name for your model in the \"Enter Model Name\" \n\t\t\t\tfield; this name will be used to reference the model object throughout your analysis session. Select your response (dependent) \n\t\t\t\tvariable by moving it from the Source Variables list into the Response field using the arrow button. Select one or more independent \n\t\t\t\tvariables (e.g., factors such as Temp, Pressure, and Thinner) and move them into the Independent Variables field using the corresponding \n\t\t\t\tarrow button.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe first degree field controls the interaction level for the curvature test model, which is fitted using all data rows including centers (excluding axial points, if any); \n\t\t\t\tset this to 1 for main effects only, 2 for two-way interactions, and 3 for three-way interactions, and so. The second degree field controls \n\t\t\t\tthe interaction level for the primary linear model, which is fitted using only the factorial (cube) points after center and axial points are \n\t\t\t\tautomatically removed. Check the \"Identify row numbers for center points and axial/star points\" option to have the dialog automatically \n\t\t\t\tdetect and report which rows in your design are center points, cube points, or axial/star points.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIf at least two center points are detected in your design, a curvature test will be performed automatically, producing an \n\t\t\t\tANOVA table that includes a dedicated Curvature row and a Pure Error row estimated from the replicated center points. \n\t\t\t\tThe curvature F-test compares the mean response at center points versus factorial points, helping you determine whether a \n\t\t\t\thigher-order (quadratic) model may be needed to adequately describe the response surface. If so, add axial points to the design \n\t\t\t\tusing the create CCD design menu under DoE.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe options under the \"2-level Factor Design\" section apply specifically to designs created with FrF2, pb, or full factorial functions, \n\t\t\t\tand include alias detection, Daniel plots, main effects plots, interaction plots, and cube plots. The cube plot option allows you to \n\t\t\t\tvisualize the mean response at the eight corners of a three-factor design and optionally overlay model-predicted (modeled) \n\t\t\t\tmeans alongside the raw observed means.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\n\t\t\t"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Test du Chi-Carré pour l'Association",
+  "navigation": "Test du Chi-Carré (Résumé)",
+  "label_table_cols": "Colonnes contenant le tableau (comptages)",
+  "label_row_labels": "Étiquettes de ligne (facultatif)",
+  "label_cell_contents": "Contenus des cellules",
+  "label_options": "Options",
+  "opt_counts": "Comptages",
+  "opt_margins": "Totaux marginaux",
+  "opt_expected": "Comptages attendus",
+  "opt_raw_resid": "Résidus bruts (O − E)",
+  "opt_std_resid": "Résidus standardisés",
+  "opt_adj_resid": "Résidus ajustés",
+  "opt_contrib": "Contribution au Chi-carré",
+  "help": {
+    "title": "Test du Chi-Carré pour l'Association (Résumé)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Description</b></br>\nEffectue un test du Chi-carré pour l'association en utilisant un <b>tableau à deux voies résumé</b>\noù chaque colonne sélectionnée contient des comptages pour un niveau de la variable colonne.</br></br>\n\n<b>Entrées</b></br>\n<ul>\n  <li><b>Colonnes contenant le tableau</b>: colonnes numériques qui forment le tableau de contingence (comptages).</li>\n  <li><b>Étiquettes de ligne</b> (facultatif): une colonne contenant des noms/étiquettes de ligne (par exemple, Oui/Non).</li>\n</ul>\n\n<b>Sorties</b></br>\n<ul>\n  <li>Tableau des comptages observés</li>\n  <li>Tableau des contenus des cellules (Comptage, Attendu, Contribution, Résidus — selon sélection)</li>\n  <li>Tests du Chi-carré (Pearson et Rapport de vraisemblance)</li>\n</ul>\n\n<b>Utilisation</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>Aide</b></br>\nVeuillez contacter support@blueskystatistics.com pour des informations supplémentaires.\n      "
+  }
+}

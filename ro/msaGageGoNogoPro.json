@@ -1,0 +1,24 @@
+{
+  "title": "Validarea MSA Go/No-Go (Regresie Logistică)",
+  "navigation": "Validarea MSA Go/No-Go",
+  "variableInputSelcted": "Selectați variabila de intrare (măsurare continuă)",
+  "variableResultSelcted": "Selectați variabila de rezultate (trece/fail)",
+  "passCondition": "Valoarea condiției de trecere (trebuie să se potrivească exact cu datele de rezultat)",
+  "label2": "Informații despre specificație",
+  "usl": "USL (Limită Superioară de Specificație — opțional)",
+  "lsl": "LSL (Limită Inferioară de Specificație — opțional)",
+  "upperLimitRad": "Evaluarea Limitei Superioare (USL)",
+  "lowerLimitRad": "Evaluarea Limitei Inferioare (LSL)",
+  "gageName": "Numele Gajului",
+  "studyDate": "Data Studiului",
+  "performedBy": "Raportat de",
+  "showResidualPlotsChk": "Arată graficele reziduale de devianță",
+  "flipaxisPPplotChk": "Rotește axa pentru graficul P-P",
+  "showFittedLinePlotChk": "Arată graficul liniei ajustate binare cu benzi de încredere",
+  "showAdditionalStatChk": "Arată statistici suplimentare pentru regresia logistică",
+  "deGroupPlotsChk": "Degrupează graficele pentru a le plota individual",
+  "help": {
+    "title": "Validarea Go/No-Go (Regresie Logistică)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tValidarea Go/No-Go folosind Regresia Logistică Binara (funcție de legătură Probit/Normit)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Scop</b>\n\t\t\t\t<br/>\n\t\t\t\tGajurile Go/No-Go (atribut) produc o decizie binară de trecere/fail în loc de o măsurare continuă. \n\t\t\t\tAceastă analiză folosește regresia logistică binară cu o funcție de legătură probit (normit) pentru a modela \n\t\t\t\tprobabilitatea de a trece ca o funcție a variabilei de intrare continue reale. Evaluează \n\t\t\t\tabilitatea sistemului de măsurare de a clasifica corect piesele aproape de limita de specificație.\n\t\t\t\t<br/>\n\t\t\t\tUrmând abordarea AIAG MSA a 4-a ediție (Minitab MSA_VarIn.MAC de Thomas Rust), \n\t\t\t\testimează punctul de tranziție (unde 50% din piese sunt clasificate ca trecute), cuantifică \n\t\t\t\tvariabilitatea sistemului de măsurare și calculează metrici cheie de acceptare.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Intrări</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>Variabilă de Intrare</b> (obligatorie) — măsurarea continuă (de exemplu, diametru) pentru fiecare piesă\n\t\t\t\t<br/>\n\t\t\t\t<b>Rezultate (binare)</b> (obligatorie) — rezultatul gajului Go/No-Go (de exemplu, \"Trecere\"/\"Fail\")\n\t\t\t\t<br/>\n\t\t\t\t<b>Condiția de Trecere</b> (obligatorie) — valoarea exactă a șirului în coloana Rezultate care înseamnă Trecere\n\t\t\t\t<br/>\n\t\t\t\t<b>Rezultate Individuale / Rezumate</b> — dacă fiecare rând este o măsurare (Individual) \n\t\t\t\tsau deja rezumat ca număr de treceri și total de încercări pe nivel de intrare (Rezumate)\n\t\t\t\t<br/>\n\t\t\t\t<b>USL / LSL</b> — limitele de specificație; limita evaluată determină Bias și Toleranța %GRR\n\t\t\t\t<br/>\n\t\t\t\t<b>Evaluarea Limitei Superioare/Inferioare</b> — care limită de specificație verifică gajul\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Interpretarea Ieșirii</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>Punctul de Tranziție</b> — valoarea de intrare la care gajul trece 50% din piese. \n\t\t\t\tIdeal ar trebui să fie egală cu limita de specificație; orice diferență este Bias.\n\t\t\t\t<br/>\n\t\t\t\t<b>Dev Std MS</b> = |1/beta| unde beta este panta probit. Măsoară dispersia \n\t\t\t\tlimitei de decizie a gajului — valori mai mici indică un gaj mai ascuțit și mai capabil.\n\t\t\t\t<br/>\n\t\t\t\t<b>95% Incertitudine</b> = 2 × Dev Std MS — zona din jurul punctului de tranziție unde \n\t\t\t\tclasificarea este nesigură.\n\t\t\t\t<br/>\n\t\t\t\t<b>Bias</b> = Punctul de Tranziție − Specificație. Biasul diferit de zero înseamnă că gajul acceptă sau respinge constant \n\t\t\t\tpiesele aproape de limita de specificație.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Tol (Raport de Toleranță)</b> = (6 × Dev Std MS) / Toleranță × 100. Criteriul principal de acceptare \n\t\t\t\t: sub 10% acceptabil, 10–30% marginal, peste 30% inacceptabil.\n\t\t\t\t<br/>\n\t\t\t\t<b>%Bias al Toleranței</b> = |Bias| / Toleranță × 100.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Graficul Validării Go/No-Go</b> — arată proporțiile observate de trecere (puncte) și curba probit ajustată. O bandă colorată dedesubt arată: roșu = zonă de eșec sigur, gri cu dungi = \n\t\t\t\tzonă de incertitudine (Tranziție ± U), verde = zonă de trecere sigură.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Graficul Liniei Ajustate Binare</b> (opțional) — arată curba probit ajustată cu 95% \n\t\t\t\tbenzi de încredere, util pentru evaluarea potrivirii modelului.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Graficele Reziduale de Devianță</b> (opțional) — patru panouri de diagnostic pentru modelul de regresie \n\t\t\t\tlogistică (Probabilitate Normală, vs Normit al Ajustărilor, Histogramă, vs Ordine).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

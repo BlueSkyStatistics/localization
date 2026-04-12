@@ -1,0 +1,20 @@
+{
+  "title": "Prueba de Chi-Cuadrado para Asociación",
+  "navigation": "Prueba de Chi-Cuadrado (Resumido)",
+  "label_table_cols": "Columnas que contienen la tabla (conteos)",
+  "label_row_labels": "Etiquetas de fila (opcional)",
+  "label_cell_contents": "Contenidos de la celda",
+  "label_options": "Opciones",
+  "opt_counts": "Conteos",
+  "opt_margins": "Totales marginales",
+  "opt_expected": "Conteos esperados",
+  "opt_raw_resid": "Residuos brutos (O − E)",
+  "opt_std_resid": "Residuos estandarizados",
+  "opt_adj_resid": "Residuos ajustados",
+  "opt_contrib": "Contribución al Chi-cuadrado",
+  "help": {
+    "title": "Prueba de Chi-Cuadrado para Asociación (Resumido)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Descripción</b></br>\nRealiza una prueba de Chi-cuadrado para asociación utilizando una <b>tabla bidimensional resumida</b>\n donde cada columna seleccionada contiene conteos para un nivel de la variable de columna.</br></br>\n\n<b>Entradas</b></br>\n<ul>\n  <li><b>Columnas que contienen la tabla</b>: columnas numéricas que forman la tabla de contingencia (conteos).</li>\n  <li><b>Etiquetas de fila</b> (opcional): una columna que contiene nombres/etiquetas de fila (por ejemplo, Sí/No).</li>\n</ul>\n\n<b>Salidas</b></br>\n<ul>\n  <li>Tabla de conteos observados</li>\n  <li>Tabla de contenidos de la celda (Conteo, Esperado, Contribución, Residuos — según lo seleccionado)</li>\n  <li>Pruebas de Chi-cuadrado (Pearson y Razón de Verosimilitud)</li>\n</ul>\n\n<b>Uso</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Planta1','Planta2','Planta3'),</br>\n  row_label_col = 'Retrabajo',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>Ayuda</b></br>\nPor favor, contacte a support@blueskystatistics.com para información adicional.\n      "
+  }
+}

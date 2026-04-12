@@ -1,0 +1,20 @@
+{
+  "title": "Teste Qui-Quadrado para Associação",
+  "navigation": "Teste Qui-Quadrado (Resumido)",
+  "label_table_cols": "Colunas contendo a tabela (contagens)",
+  "label_row_labels": "Rótulos de linha (opcional)",
+  "label_cell_contents": "Conteúdos da célula",
+  "label_options": "Opções",
+  "opt_counts": "Contagens",
+  "opt_margins": "Totais marginais",
+  "opt_expected": "Contagens esperadas",
+  "opt_raw_resid": "Residuais brutos (O − E)",
+  "opt_std_resid": "Residuais padronizados",
+  "opt_adj_resid": "Residuais ajustados",
+  "opt_contrib": "Contribuição para o Qui-quadrado",
+  "help": {
+    "title": "Teste Qui-Quadrado para Associação (Resumido)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Descrição</b></br>\nRealiza um teste qui-quadrado para associação usando uma <b>tabela bidimensional resumida</b>\nonde cada coluna selecionada contém contagens para um nível da variável de coluna.</br></br>\n\n<b>Entradas</b></br>\n<ul>\n  <li><b>Colunas contendo a tabela</b>: colunas numéricas que formam a tabela de contingência (contagens).</li>\n  <li><b>Rótulos de linha</b> (opcional): uma coluna contendo nomes/rótulos de linha (por exemplo, Sim/Não).</li>\n</ul>\n\n<b>Saídas</b></br>\n<ul>\n  <li>Tabela de contagens observadas</li>\n  <li>Tabela de conteúdos da célula (Contagem, Esperado, Contribuição, Residuais — conforme selecionado)</li>\n  <li>Testes qui-quadrado (Pearson e Razão de Verossimilhança)</li>\n</ul>\n\n<b>Uso</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Planta1','Planta2','Planta3'),</br>\n  row_label_col = 'Reprocessar',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>Ajuda</b></br>\nPor favor, entre em contato com support@blueskystatistics.com para informações adicionais.\n      "
+  }
+}

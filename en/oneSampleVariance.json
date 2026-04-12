@@ -1,0 +1,24 @@
+{
+    "title": "One-Sample Variance",
+    "navigation": "One-Sample Variance",
+    "label_samples": "One or more samples, each in a column",
+    "label_data_format": "Data format",
+    "wide": "Wide format (each sample is a column)",
+    "long": "Long format (response grouped by factor)",
+    "label_response": "Response variable",
+    "label_group": "Grouping variable",
+    "label_hyp_test": "Hypothesis test",
+    "hyp_sd": "Hypothesized standard deviation",
+    "hyp_var": "Hypothesized variance",
+    "value_label": "Value",
+    "label_conf": "Confidence level",
+    "label_alt": "Alternative hypothesis",
+    "alt1": "Two-sided (≠)",
+    "alt2": "Greater (>)",
+    "alt3": "Less (<)",
+    "help": {
+        "title": "One-Sample Variance (Minitab-like)",
+        "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+        "body": "\n<b>Description</b></br>\nImitates Minitab's One-Sample Variance dialog.</br>\nAlways computes both:</br>\n<ul>\n  <li><b>Bonett</b> method (valid for any continuous distribution)</li>\n  <li><b>Chi-square</b> method (normal-theory method)</li>\n</ul>\nAlways performs hypothesis testing against either a hypothesized <b>standard deviation</b> or <b>variance</b>.</br>\n\n<b>Usage</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>Help</b></br>\nPlease contact support@blueskystatistics.com for additional information.\n      "
+    }
+}

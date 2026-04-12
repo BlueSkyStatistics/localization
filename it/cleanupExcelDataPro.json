@@ -1,13 +1,15 @@
 {
-  "title": "Pulizia dei dati Excel o CSV - regola, elimina righe e colonne",
+  "title": "Pulizia dei dati Excel o CSV - regolare, eliminare righe e colonne",
   "navigation": "Pulizia Excel",
+  "createNewDataset": "Crea un nuovo dataset (consigliato)",
   "resultDatasetName": "Nome del nuovo dataset da creare",
+  "overwriteDataset": "Sovrascrivi il dataset esistente",
   "listofRowNumbersRemove": "(Facoltativo) Elenco dei numeri di riga (separati da virgola, ad es. 1,4,5,20:30) da rimuovere",
   "listofColumnNumbersRemove": "(Facoltativo) Elenco dei numeri di colonna (separati da virgola, ad es. 1,2,6:10) da rimuovere",
   "chooseColumnNamesRad": "Specifica i nomi delle colonne dal dataset",
   "rowNumbersContaingColNames": "Inserisci i numeri di riga (separati da virgola, ad es. 3,4) da utilizzare per i nomi delle colonne per il dataset di output",
   "deleteRowNumbersContaingColNamesChk": "Elimina le righe contenenti i nomi delle colonne per il dataset di output",
-  "combineWithExsitingColNamesChk": "Nomi delle colonne creati, combinali con i nomi delle intestazioni delle colonne esistenti",
+  "combineWithExsitingColNamesChk": "Nomi delle colonne creati, combinarli con i nomi delle intestazioni delle colonne esistenti",
   "specifyColumnNamesRad": "Specifica manualmente i nomi delle colonne per il dataset di output",
   "outputColumnNames": "Inserisci i nomi delle colonne (separati da virgola) da utilizzare per il dataset di output",
   "removeColsWithConstantChk": "Rimuovi tutte le colonne con valori costanti (case insensitive)",
@@ -17,14 +19,19 @@
   "label1": "Conversione dei tipi di colonna nel dataset di output",
   "convertColumnDataTypeAuto": "Determina automaticamente il tipo di dato della colonna e converte",
   "convertColumnDataTypeNone": "Non fare nulla",
-  "convertColumnDataTypeFactorToCharInt": "Converti tutte le colonne fattore in tipo carattere e intero",
+  "convertColumnDataTypeAllToCharacter": "Converti tutte le colonne in caratteri",
+  "convertColumnDataTypeFactorToCharInt": "Converti tutte le colonne fattore in caratteri e tipo intero",
   "convertColumnDataTypeCharToFactor": "Converti tutte le colonne carattere in fattori",
   "convertColumnDataTypeAllToFactor": "Converti tutte le colonne in fattori",
   "convertColumnDataTypeManual": "Digita il tipo di dato per ciascuna colonna da convertire",
   "outputColumnTypes": "Elenco dei tipi di colonna (separati da virgola, ad es. numerico, fattore, carattere, ..)",
+  "addExtraColumnsChk": "Aggiungi un insieme di colonne con valori vuoti",
+  "numExtraColumns": "Numero di colonne da aggiungere",
+  "addExtraRowsChk": "Aggiungi un insieme di righe con valori vuoti",
+  "numExtraRows": "Numero di righe da aggiungere",
   "help": {
-    "title": "Pulizia dei dati Excel o CSV - regola, elimina righe e colonne",
+    "title": "Pulizia dei dati Excel o CSV - regolare, eliminare righe e colonne",
     "r_help": "",
-    "body": "\n            <b>Descrizione</b></br>\n            Questa finestra di dialogo viene utilizzata per pulire un foglio Excel complesso per aggiungere e rimuovere righe e colonne per creare un nuovo dataset\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPer provare questo, puoi utilizzare il file di dataset di esempio chiamato Excel cleanup.xlsx\n\t\t\t<br/>\n\t\t\tApri il file nella griglia dati con il menu di apertura file\n\t\t\t<br/>\n\t\t\tNella finestra di dialogo - digita\n\t\t\t<br/>\n\t\t\tSampleGp per il nome del nuovo dataset\n\t\t\t<br/>\n\t\t\t1:3 per l'elenco dei numeri di riga da rimuovere\n\t\t\t<br/>\n\t\t\t1,2,5:8 per l'elenco dei numeri di colonna da rimuovere\n\t\t\t<br/>\n\t\t\tSeleziona l'opzione - Specifica i nomi delle colonne dai dataset\n\t\t\t<br/>\n\t\t\t2,3 per Inserisci i numeri di riga  \n\t\t\t<br/>\n\t\t\t<br/>"
+    "body": "\n            <b>Descrizione</b></br>\n            Questa finestra di dialogo viene utilizzata per pulire un foglio Excel complesso per aggiungere e rimuovere righe e colonne per creare un nuovo dataset\n\t\t\t<br/>\n\t\t\t<br/>\n\t\t\tPer provare questo, puoi utilizzare il file di dataset di esempio chiamato Excel cleanup.xlsx\n\t\t\t<br/>\n\t\t\tApri il file nella griglia dei dati con il menu di apertura file\n\t\t\t<br/>\n\t\t\tNella finestra di dialogo - digita\n\t\t\t<br/>\n\t\t\tSampleGp per il nome del nuovo dataset\n\t\t\t<br/>\n\t\t\t1:3 per l'elenco dei numeri di riga da rimuovere\n\t\t\t<br/>\n\t\t\t1,2,5:8 per l'elenco dei numeri di colonna da rimuovere\n\t\t\t<br/>\n\t\t\tSeleziona l'opzione - Specifica i nomi delle colonne dai dataset\n\t\t\t<br/>\n\t\t\t2,3 per Inserisci i numeri di riga  \n\t\t\t<br/>\n\t\t\t<br/>"
   }
 }

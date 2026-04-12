@@ -1,13 +1,19 @@
 {
   "title": "マルチバリアチャート",
   "navigation": "マルチバリアチャート",
-  "Y_variableRespSelcted": "測定/応答のための変数（数値）を選択（Y軸）",
-  "X_variableSelcted": "カテゴリ変数（X軸）を選択",
-  "G_variableSelcted": "グループ化（カテゴリ）変数を選択",
-  "printStatChk": "チャートに加えて統計を印刷",
+  "Y_variableRespSelcted": "測定/応答のための変数（数値）の選択（Y軸）",
+  "X_variableSelcted": "カテゴリ変数（X軸）の選択",
+  "G_variableSelcted": "グループ化（カテゴリ）変数の選択",
+  "plotNestedMultiVariChk": "さらに、ネストされたマルチバリアチャートをプロット",
+  "showMeanNumbersChk": "プロットに平均値を表示",
+  "digits": "桁数 - 平均値を表示する桁数",
   "pctMeanRangeAsYoffset": "プロット上の平均点のラベルを配置するための垂直オフセット",
   "pctMeanRangeAsXoffset": "プロット上の平均点のラベルを配置するための水平オフセット",
+  "printStatChk": "チャートに加えて統計を印刷",
   "angleXaxis_text": "x軸のテキスト値を傾ける角度（デフォルトは傾けないための0）",
+  "label1": "水平参照線",
+  "yIntercept": "水平線のためのY切片値をカンマ区切りで入力してください。例：100, 200, 300（すなわち、カウント値）。カウント軸が存在する場合のみ線が描画されます",
+  "horizontalLinelabel": "水平線のためのカンマ区切りのラベルを指定してください（引用符で囲まない）",
   "help": {
     "title": "マルチバリアチャート",
     "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t2つのカテゴリ変数に依存する1つの定量的応答変数のマルチバリアチャート\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t応答変数の平均値もチャートにプロットされます\n\t\t\t\t<br/>\n\t\t\t"

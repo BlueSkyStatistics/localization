@@ -1,0 +1,20 @@
+{
+  "title": "اختبار كاي-تربيع للارتباط",
+  "navigation": "اختبار كاي-تربيع (ملخص)",
+  "label_table_cols": "الأعمدة التي تحتوي على الجدول (العدادات)",
+  "label_row_labels": "تسميات الصفوف (اختياري)",
+  "label_cell_contents": "محتويات الخلية",
+  "label_options": "الخيارات",
+  "opt_counts": "العدادات",
+  "opt_margins": "المجاميع الهامشية",
+  "opt_expected": "العدادات المتوقعة",
+  "opt_raw_resid": "المتبقيات الخام (O − E)",
+  "opt_std_resid": "المتبقيات المعيارية",
+  "opt_adj_resid": "المتبقيات المعدلة",
+  "opt_contrib": "المساهمة في كاي-تربيع",
+  "help": {
+    "title": "اختبار كاي-تربيع للارتباط (ملخص)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>الوصف</b></br>\nيجري اختبار كاي-تربيع للارتباط باستخدام <b>جدول ثنائي ملخص</b>\nحيث يحتوي كل عمود مختار على عدادات لمستوى واحد من متغير العمود.</br></br>\n\n<b>المدخلات</b></br>\n<ul>\n  <li><b>الأعمدة التي تحتوي على الجدول</b>: أعمدة عددية تشكل جدول الطوارئ (العدادات).</li>\n  <li><b>تسميات الصفوف</b> (اختياري): عمود يحتوي على أسماء/تسميات الصفوف (مثل: نعم/لا).</li>\n</ul>\n\n<b>المخرجات</b></br>\n<ul>\n  <li>جدول العدادات المرصودة</li>\n  <li>جدول محتويات الخلية (العداد، المتوقع، المساهمة، المتبقيات — كما هو مختار)</li>\n  <li>اختبارات كاي-تربيع (بيرسون ونسبة الاحتمال)</li>\n</ul>\n\n<b>الاستخدام</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>المساعدة</b></br>\nيرجى الاتصال بـ support@blueskystatistics.com للحصول على معلومات إضافية.\n      "
+  }
+}

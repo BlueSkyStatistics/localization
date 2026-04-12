@@ -14,7 +14,7 @@
   "weight": "Gewicht: Geben Sie Gewichtswerte (d.h. Strafe für Abweichung vom Ziel) der Antworten an (muss > 0 sein, wenn leer gelassen, 1 für jedes Modell)",
   "importance": "Wichtigkeit: Geben Sie die Wichtigkeit für jede Antwort an, um mehrere Antworten zu kombinieren (muss > 0 sein, wenn leer gelassen, 1 für jedes Modell)",
   "predictorConstraints": "Modellvorhersage-Beschränkungsoptionen",
-  "label200": "Modellvorhersage-Numerische Variablenbeschränkungen für den Antwortoptimierer",
+  "label200": "Modellvorhersage numerische Variablenbeschränkungen für den Antwortoptimierer",
   "label12": "Die Beschränkungswerte für die numerischen Prädiktorvariablen müssen in der gleichen Reihenfolge angegeben werden, wie sie in allen Modellen erscheinen (Hinweis: Führen Sie den Dialog einmal mit den Standardbeschränkungen aus, um die Reihenfolge der numerischen Variablen in allen Modellen zu sehen)",
   "factorConstraintUseDatasetLowerChk": "Untergrenzenbeschränkungen: Wenn aktiviert, wird der Mindestwert (nur für numerische Variablen) jeder im Modell verwendeten Variablen für die Untergrenze verwendet.",
   "factorConstraintLower": "Untergrenzenbeschränkungen: (Wird ignoriert, wenn oben aktiviert) Lassen Sie es leer für keine Beschränkungen der Untergrenze für die Modellvariablenwerte. Andernfalls müssen Sie durch Kommas getrennte Werte für jede Modellvariable eingeben. Wenn eine bestimmte Modellvariable keine Untergrenze hat, geben Sie -Inf ein, z.B. 0, 0.1, -Inf, 20.",
@@ -33,6 +33,7 @@
   "lmSummaryTableChk": "Modellzusammenfassungstabelle anzeigen",
   "residualTableChk": "Residuen-Tabelle anzeigen",
   "coefficientTableChk": "Koeffizienten-Tabelle anzeigen",
+  "supressPredictWarningsChk": "Warnungen aus internen Vorhersageberechnungen unterdrücken",
   "help": {
     "title": "Berechnen und Optimieren mehrerer Modellantworten",
     "r_help": "help(optim, package = stats)",

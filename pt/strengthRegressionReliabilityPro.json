@@ -1,0 +1,21 @@
+{
+  "title": "Regressão de Força",
+  "navigation": "Regressão de Força",
+  "response": "Variável de Resposta",
+  "input": "Variável de Entrada",
+  "grouping": "Variável de Categorização",
+  "groupValue": "Valor de Força (Deve ser uma das categorias válidas da variável de categorização)",
+  "confidenceLevel": "Nível de confiança - um valor entre 0 e 1 (padrão 0,95)",
+  "desiredReliability": "Confiabilidade Alvo - um valor entre 0 e 1 (por exemplo, 0,999)",
+  "targetInput": "Entrada Alvo",
+  "reliabilityOptionLabel": "Confiabilidade",
+  "optimizeReliabilityRad": "Otimizar Confiabilidade para determinar a Entrada Alvo",
+  "calculateReliabilityRad": "Calcular Confiabilidade a partir da Entrada Alvo",
+  "additionalPlotChk": "Gráficos adicionais para resíduos e dados de entrada",
+  "flipaxisPPplotChk": "Inverter eixo para o gráfico P-P",
+  "deGroupPlotsChk": "Desagrupar gráficos para plotar individualmente",
+  "help": {
+    "title": "Regressão de Força",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tRegressão de Força \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tObjetivo\n\t\t\t\t<br/>\n\t\t\t\tA Regressão de Força estima a confiabilidade de um sistema quantificando a probabilidade de que uma \n\t\t\t\tresposta de força (por exemplo, a capacidade de torque de uma solda) exceda uma carga de estresse, onde a força é modelada como uma função linear de uma \n\t\t\t\tvariável de entrada controlável. Ela fornece tanto uma estimativa pontual quanto um limite inferior estatisticamente conservador \n\t\t\t\tpara a confiabilidade em um nível de confiança especificado, fundamentada na estrutura de Reiser & Guttman (1988).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEntradas\n\t\t\t\t<br/>\n\t\t\t\tVariável de Entrada — o parâmetro de processo controlável que impulsiona a força (por exemplo, Distância de Upset)\n\t\t\t\t<br/>\n\t\t\t\tVariável de Resposta — a saída medida que representa tanto as observações de força quanto de estresse na mesma coluna (por exemplo, Torque)\n\t\t\t\t<br/>\n\t\t\t\tVariável de Categorização — uma coluna de agrupamento que distingue as linhas de força das linhas de estresse (por exemplo, Localização)\n\t\t\t\t<br/>\n\t\t\t\tValor de Força — o rótulo da categoria dentro da Variável de Categorização que identifica as observações de força (por exemplo, \"Solda\"); \n\t\t\t\ttodas as linhas restantes são tratadas como estresse\n\t\t\t\t<br/>\n\t\t\t\tNível de Confiança — confiança estatística para o cálculo da confiabilidade do limite inferior (padrão 0,95)\n\t\t\t\t<br/>\n\t\t\t\tOtimizar Confiabilidade — encontra o valor de Entrada Alvo necessário para alcançar uma Confiabilidade Alvo especificada pelo usuário (por exemplo, 0,999)\n\t\t\t\t<br/>\n\t\t\t\tCalcular Confiabilidade — avalia a confiabilidade alcançada em um valor de Entrada Alvo fixo fornecido pelo usuário\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretação da Saída\n\t\t\t\t<br/>\n\t\t\t\tO resumo relata a média e o desvio padrão tanto das distribuições de estresse quanto de força, \n\t\t\t\t<br/>\n\t\t\t\ta Entrada Alvo (resolvida ou fornecida), e as principais métricas de confiabilidade. \n\t\t\t\t<br/>\n\t\t\t\tA Confiabilidade Estimada é a estimativa pontual da probabilidade de que a força exceda o estresse. \n\t\t\t\t<br/>\n\t\t\t\tA Confiabilidade L.B. é o limite inferior estatisticamente conservador no nível de confiança escolhido — este é o valor a ser usado para decisões de engenharia \n\t\t\t\tpois leva em conta a incerteza da estimativa tanto na regressão quanto na distribuição de estresse. \n\t\t\t\t<br/>\n\t\t\t\tO Fator de Segurança fornece uma verificação de margem determinística tradicional. \n\t\t\t\t<br/>\n\t\t\t\tGráficos diagnósticos acompanhantes mostram o ajuste da regressão com distribuições de estresse e força sobrepostas, \n\t\t\t\t<br/>\n\t\t\t\tverificações de suposições de resíduos para o modelo de força, e verificações de estabilidade/normalidade para as observações de estresse.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

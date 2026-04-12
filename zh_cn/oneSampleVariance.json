@@ -1,0 +1,24 @@
+{
+  "title": "单样本方差",
+  "navigation": "单样本方差",
+  "label_samples": "一个或多个样本，每个样本在一列中",
+  "label_data_format": "数据格式",
+  "wide": "宽格式（每个样本是一列）",
+  "long": "长格式（按因子分组的响应）",
+  "label_response": "响应变量",
+  "label_group": "分组变量",
+  "label_hyp_test": "假设检验",
+  "hyp_sd": "假设标准差",
+  "hyp_var": "假设方差",
+  "value_label": "值",
+  "label_conf": "置信水平",
+  "label_alt": "备择假设",
+  "alt1": "双侧（≠）",
+  "alt2": "大于（>）",
+  "alt3": "小于（<）",
+  "help": {
+    "title": "单样本方差（类似Minitab）",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>描述</b></br>\n模仿Minitab的单样本方差对话框。</br>\n始终计算两者：</br>\n<ul>\n  <li><b>Bonett</b> 方法（适用于任何连续分布）</li>\n  <li><b>卡方</b> 方法（正态理论方法）</li>\n</ul>\n始终针对假设的<b>标准差</b>或<b>方差</b>进行假设检验。</br>\n\n<b>用法</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>帮助</b></br>\n如需更多信息，请联系 support@blueskystatistics.com。\n      "
+  }
+}

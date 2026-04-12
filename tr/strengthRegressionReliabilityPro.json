@@ -1,0 +1,21 @@
+{
+  "title": "Güç Regresyonu",
+  "navigation": "Güç Regresyonu",
+  "response": "Yanıt Değişkeni",
+  "input": "Girdi Değişkeni",
+  "grouping": "Kategorize Edici Değişken",
+  "groupValue": "Güç Değeri (Kategorize edici değişkenden geçerli kategorilerden biri olmalıdır)",
+  "confidenceLevel": "Güven düzeyi - 0 ile 1 arasında bir değer (varsayılan 0.95)",
+  "desiredReliability": "Hedef Güvenilirlik - 0 ile 1 arasında bir değer (örneğin, 0.999)",
+  "targetInput": "Hedef Girdi",
+  "reliabilityOptionLabel": "Güvenilirlik",
+  "optimizeReliabilityRad": "Hedef Girdiyi belirlemek için Güvenilirliği Optimize Et",
+  "calculateReliabilityRad": "Hedef Girdiden Güvenilirliği Hesapla",
+  "additionalPlotChk": "Artık kalıntılar ve girdi verileri için ek grafikler",
+  "flipaxisPPplotChk": "P-P grafiği için ekseni çevir",
+  "deGroupPlotsChk": "Grafikleri bireysel olarak çizmek için gruplamayı kaldır",
+  "help": {
+    "title": "Güç Regresyonu",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tGüç Regresyonu \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAmaç\n\t\t\t\t<br/>\n\t\t\t\tGüç Regresyonu, bir güç yanıtının (örneğin, bir kaynak dikişinin tork kapasitesi) bir stres yükünü aşma olasılığını nicelendirerek bir sistemin güvenilirliğini tahmin eder; burada güç, kontrol edilebilir bir girdi değişkeninin lineer bir fonksiyonu olarak modellenir. Belirli bir güven düzeyinde, Reiser & Guttman (1988) çerçevesine dayalı olarak, hem bir nokta tahmini hem de istatistiksel olarak korumalı bir alt sınır güvenilirliği sağlar.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tGirdiler\n\t\t\t\t<br/>\n\t\t\t\tGirdi Değişkeni — gücü yönlendiren kontrol edilebilir süreç parametresi (örneğin, Bozulma mesafesi)\n\t\t\t\t<br/>\n\t\t\t\tYanıt Değişkeni — aynı sütunda hem güç hem de stres gözlemlerini temsil eden ölçülen çıktı (örneğin, Tork)\n\t\t\t\t<br/>\n\t\t\t\tKategorize Edici Değişken — güç satırlarını stres satırlarından ayıran bir gruplama sütunu (örneğin, Konum)\n\t\t\t\t<br/>\n\t\t\t\tGüç Değeri — güç gözlemlerini tanımlayan Kategorize Edici Değişken içindeki kategori etiketi (örneğin, \"Kaynak\"); kalan tüm satırlar stres olarak değerlendirilir\n\t\t\t\t<br/>\n\t\t\t\tGüven Düzeyi — alt sınır güvenilirlik hesaplaması için istatistiksel güven (varsayılan 0.95)\n\t\t\t\t<br/>\n\t\t\t\tGüvenilirliği Optimize Et — kullanıcı tarafından belirtilen Hedef Güvenilirliği elde etmek için gereken Hedef Girdi değerini bulur (örneğin, 0.999)\n\t\t\t\t<br/>\n\t\t\t\tGüvenilirliği Hesapla — kullanıcı tarafından sağlanan sabit Hedef Girdi değerinde elde edilen güvenilirliği değerlendirir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tÇıktı Yorumu\n\t\t\t\t<br/>\n\t\t\t\tÖzet, hem stres hem de güç dağılımlarının ortalamasını ve standart sapmasını, \n\t\t\t\t<br/>\n\t\t\t\tHedef Girdi'yi (ya çözümlenmiş ya da sağlanmış) ve ana güvenilirlik metriklerini rapor eder. \n\t\t\t\t<br/>\n\t\t\t\tTahmin Edilen Güvenilirlik, gücün stresin üzerinde olma olasılığının nokta tahminidir. \n\t\t\t\t<br/>\n\t\t\t\tAlt Sınır Güvenilirliği, seçilen güven düzeyinde istatistiksel olarak korumalı alt sınırdır — bu, mühendislik kararları için kullanılacak rakamdır \n\t\t\t\tçünkü hem regresyon hem de stres dağılımındaki tahmin belirsizliğini hesaba katar. \n\t\t\t\t<br/>\n\t\t\t\tGüvenlik Faktörü, geleneksel bir deterministik marj kontrolü sağlar. \n\t\t\t\t<br/>\n\t\t\t\tEşlik eden tanısal grafikler, regresyon uyumunu, üst üste binen stres ve güç dağılımlarıyla gösterir, \n\t\t\t\t<br/>\n\t\t\t\tgüç modelinin kalıntı varsayım kontrolleri ve stres gözlemleri için stabilite/normallik kontrolleri sunar.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

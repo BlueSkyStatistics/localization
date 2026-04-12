@@ -1,0 +1,19 @@
+{
+  "title": "Sınırlı ve sınırsız verilerle regresyon güvenilirlik limit analizi",
+  "navigation": "Regresyon Güvenilirlik Limiti",
+  "response": "Yanıt: bir (sayısal) değişken seçin (örneğin, patlama basıncı, bükülme açısı, vb.)",
+  "input": "Girdi: bir (sayısal) değişken seçin (örneğin, sıkıştırma çapı, kalınlık, vb.)",
+  "censored": "Sınırlı: 1 içeren bir (sayısal) değişken seçin, yani gözlemlenen bir olay ve 0 sınırsız için",
+  "responseLimit": "Yanıt Limiti",
+  "confidenceLevel": "Güven düzeyi - 0 ile 1 arasında bir değer (varsayılan 0.95)",
+  "desiredReliability": "Hedef Güvenilirlik - 0 ile 1 arasında bir değer (örneğin, 0.999)",
+  "limitLabel": "Limit Türü",
+  "selectUpperLimitRad": "Üst Limit",
+  "selectLowerLimitRad": "Alt Limit",
+  "additionalPlotChk": "Artıklar için ek grafikler",
+  "flipaxisPPplotChk": "P-P grafiği için eksenleri çevir",
+  "help": {
+    "title": "Sınırlı ve sınırsız verilerle regresyon güvenilirlik limit analizi",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tSınırlı ve Sınırsız Verilerle Regresyon Güvenilirlik Limiti Analizi \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAmaç\n\t\t\t\t<br/>\n\t\t\t\tBu analiz, bir süreç girdi değişkeninin — örneğin sıkıştırma çapı — maksimum (veya minimum) \n\t\t\t\tizin verilen değerini belirlemek için regresyon tabanlı istatistiksel tolerans limit analizi gerçekleştirir — böylece bir yanıt değişkeni — örneğin \n\t\t\t\tpatlama basıncı — belirli bir istatistiksel güven düzeyi ile minimum kalite veya güvenlik eşiğini karşılar. \n\t\t\t\tBir Censor değişkeni sağlandığında (sağlanmazsa, arka planda, tümü 0 olarak ayarlanmış bir sahte censor değişkeni oluşturulur, yani sınırsız), analiz, maksimum \n\t\t\t\tlikelihood tahmini kullanarak hayatta kalma sınırlı regresyon modelini (survreg) kullanır; bu, ölçümlerin alet limitleri tarafından kesildiği durumları doğru bir şekilde ele alır — örneğin, \n\t\t\t\tgerçek değer en az 25 olduğu halde 25 psi olarak kaydedilen patlama basınçları. \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAnalizi gerçekleştirmek için gereken girdi verileri\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt alanına Yanıt değişkeninizi (örneğin, Burst.Pressure) ve Girdi alanına Girdi değişkeninizi (örneğin, Crimp.Diameter) seçin \n\t\t\t\t<br/>\n\t\t\t\t Eğer verileriniz sınırlı gözlemleri içeriyorsa, Sınırlı alanına Censor değişkenini seçin — bu değişken, sınırlı \n\t\t\t\t gözlemler için 1 içermelidir (gerçek yanıt değeri tam olarak gözlemlenmediği durumlarda) ve sınırsız gözlemler için 0; \n\t\t\t\t <br/>\n\t\t\t\t Censor alanını boş bırakmak, tüm verileri sınırsız olarak değerlendirecektir (yani, arka planda tümü 0 olarak ayarlanmış bir sahte Censor değişkeni oluşturur)\n\t\t\t\t <br/>\n\t\t\t\t Yanıt Limitini girin — alt limit analizi için minimum kabul edilebilir yanıt değeri veya \n\t\t\t\t <br/>\n\t\t\t\t Üst limit analizi için maksimum kabul edilebilir değeri girin. \n\t\t\t\t <br/>\n\t\t\t\t Güven Düzeyini ayarlayın (varsayılan 0.95) \n\t\t\t\t <br/>\n\t\t\t\t Hedef Güvenilirliği ayarlayın (varsayılan 0.999) tolerans limitinin istatistiksel katılığını tanımlamak için\n\t\t\t\t <br/>\n\t\t\t\t Yanıtın eşiğin üzerinde kalması gerekiyorsa Alt Limiti seçin (örneğin, patlama basıncı minimumu aşmalıdır), veya \n\t\t\t\t  <br/>\n\t\t\t\t Yanıtın eşiğin altında kalması gerekiyorsa Üst Limiti seçin. \n\t\t\t\t <br/>\n\t\t\t\t İsteğe bağlı olarak, tanısal grafikler oluşturmak için Artıklar için ek grafikler seçin, ve \n\t\t\t\t <br/>\n\t\t\t\t P-P grafiği için eksenleri çevir seçeneğini işaretleyin, P-P grafiğini eksenler transpoze edilmiş olarak görüntülemek için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Varianza di un campione",
+  "navigation": "Varianza di un campione",
+  "label_samples": "Uno o più campioni, ciascuno in una colonna",
+  "label_data_format": "Formato dei dati",
+  "wide": "Formato largo (ogni campione è una colonna)",
+  "long": "Formato lungo (risposta raggruppata per fattore)",
+  "label_response": "Variabile di risposta",
+  "label_group": "Variabile di raggruppamento",
+  "label_hyp_test": "Test di ipotesi",
+  "hyp_sd": "Deviazione standard ipotizzata",
+  "hyp_var": "Varianza ipotizzata",
+  "value_label": "Valore",
+  "label_conf": "Livello di confidenza",
+  "label_alt": "Ipotesi alternativa",
+  "alt1": "Due lati (≠)",
+  "alt2": "Maggiore (>)",
+  "alt3": "Minore (<)",
+  "help": {
+    "title": "Varianza di un campione (simile a Minitab)",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Descrizione</b></br>\nImita la finestra di dialogo Varianza di un campione di Minitab.</br>\nCalcola sempre entrambi:</br>\n<ul>\n  <li><b>Metodo Bonett</b> (valido per qualsiasi distribuzione continua)</li>\n  <li><b>Metodo Chi-quadro</b> (metodo della teoria normale)</li>\n</ul>\nEsegue sempre test di ipotesi contro una <b>deviazione standard</b> o una <b>varianza</b> ipotizzata.</br>\n\n<b>Utilizzo</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>Aiuto</b></br>\nSi prega di contattare support@blueskystatistics.com per ulteriori informazioni.\n      "
+  }
+}

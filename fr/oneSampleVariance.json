@@ -1,0 +1,24 @@
+{
+  "title": "Variance à un échantillon",
+  "navigation": "Variance à un échantillon",
+  "label_samples": "Un ou plusieurs échantillons, chacun dans une colonne",
+  "label_data_format": "Format des données",
+  "wide": "Format large (chaque échantillon est une colonne)",
+  "long": "Format long (réponse groupée par facteur)",
+  "label_response": "Variable de réponse",
+  "label_group": "Variable de regroupement",
+  "label_hyp_test": "Test d'hypothèse",
+  "hyp_sd": "Écart type hypothétique",
+  "hyp_var": "Variance hypothétique",
+  "value_label": "Valeur",
+  "label_conf": "Niveau de confiance",
+  "label_alt": "Hypothèse alternative",
+  "alt1": "Deux côtés (≠)",
+  "alt2": "Plus grand (>)",
+  "alt3": "Moins (<)",
+  "help": {
+    "title": "Variance à un échantillon (similaire à Minitab)",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Description</b></br>\nImite la boîte de dialogue de variance à un échantillon de Minitab.</br>\nCalcule toujours les deux :</br>\n<ul>\n  <li><b>Méthode de Bonett</b> (valide pour toute distribution continue)</li>\n  <li><b>Méthode du chi carré</b> (méthode de théorie normale)</li>\n</ul>\nEffectue toujours un test d'hypothèse contre un <b>écart type</b> ou une <b>variance</b> hypothétique.</br>\n\n<b>Utilisation</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>Aide</b></br>\nVeuillez contacter support@blueskystatistics.com pour des informations supplémentaires.\n      "
+  }
+}

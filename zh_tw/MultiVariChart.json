@@ -4,12 +4,18 @@
   "Y_variableRespSelcted": "選擇要測量/響應的變量（數值）（Y軸）",
   "X_variableSelcted": "選擇類別變量（X軸）",
   "G_variableSelcted": "選擇分組（類別）變量",
-  "printStatChk": "除了圖表外還打印統計數據",
-  "pctMeanRangeAsYoffset": "垂直偏移量，用於在圖上放置均值點的標籤",
-  "pctMeanRangeAsXoffset": "水平偏移量，用於在圖上放置均值點的標籤",
+  "plotNestedMultiVariChk": "另外，繪製嵌套的多變量圖",
+  "showMeanNumbersChk": "在圖上顯示平均值",
+  "digits": "數字 - 顯示平均值的小數位數",
+  "pctMeanRangeAsYoffset": "垂直偏移量，用於在圖上放置平均點的標籤",
+  "pctMeanRangeAsXoffset": "水平偏移量，用於在圖上放置平均點的標籤",
+  "printStatChk": "除了圖表外，還打印統計數據",
   "angleXaxis_text": "傾斜x軸文本值的角度（默認為0，表示不傾斜）",
+  "label1": "水平參考線",
+  "yIntercept": "輸入用逗號分隔的Y截距值（例如100, 200, 300）（即計數值）。只有在存在計數軸時，才會繪製線條",
+  "horizontalLinelabel": "為水平線指定用逗號分隔的標籤（不加引號）",
   "help": {
     "title": "多變量圖",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t一個定量響應變量依賴於兩個類別變量的多變量圖\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t響應變量的均值也在圖上繪製\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t一個定量響應變量依賴於兩個類別變量的多變量圖\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t響應變量的平均值也在圖上繪製\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

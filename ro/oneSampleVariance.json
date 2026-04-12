@@ -1,0 +1,24 @@
+{
+  "title": "Varianta cu un singur eșantion",
+  "navigation": "Varianta cu un singur eșantion",
+  "label_samples": "Unul sau mai multe eșantioane, fiecare într-o coloană",
+  "label_data_format": "Format de date",
+  "wide": "Format larg (fiecare eșantion este o coloană)",
+  "long": "Format lung (răspuns grupat după factor)",
+  "label_response": "Variabila de răspuns",
+  "label_group": "Variabila de grupare",
+  "label_hyp_test": "Test de ipoteză",
+  "hyp_sd": "Deviația standard ipotetizată",
+  "hyp_var": "Varianta ipotetizată",
+  "value_label": "Valoare",
+  "label_conf": "Nivel de încredere",
+  "label_alt": "Ipoteza alternativă",
+  "alt1": "Bidirecțional (≠)",
+  "alt2": "Mai mare (>)",
+  "alt3": "Mai mic (<)",
+  "help": {
+    "title": "Varianta cu un singur eșantion (asemănător Minitab)",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Descriere</b></br>\nImită dialogul Varianta cu un singur eșantion din Minitab.</br>\nÎntotdeauna calculează ambele:</br>\n<ul>\n  <li><b>Metoda Bonett</b> (valabilă pentru orice distribuție continuă)</li>\n  <li><b>Metoda Chi-pătrat</b> (metoda teoriei normale)</li>\n</ul>\nÎntotdeauna efectuează teste de ipoteză împotriva fie a unei <b>deviații standard</b> ipotetizate, fie a unei <b>variante</b> ipotetizate.</br>\n\n<b>Utilizare</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>Ajutor</b></br>\nVă rugăm să contactați support@blueskystatistics.com pentru informații suplimentare.\n      "
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "MSA 일관성 차트",
+  "navigation": "MSA 일관성 차트",
+  "variableDateSelcted": "날짜/지수를 위한 변수를 선택하세요",
+  "variableMeasSelcted": "측정을 위한 변수를 선택하세요",
+  "reference": "참조 값 (선택 사항 — 생략 시 측정의 평균값으로 기본 설정)",
+  "label2": "제품 관리",
+  "tolerance": "허용 오차 범위 (USL - LSL)",
+  "target": "목표 (선택 사항 — 지정된 경우, 오분류 확률 플롯에 사용됨)",
+  "label3": "프로세스 관리",
+  "historicalStdv": "과거 프로세스 표준 편차 - 선택 사항, 그러나 강력히 권장됨",
+  "gageName": "게이지 이름",
+  "studyDate": "연구 날짜",
+  "performedBy": "연구 수행자",
+  "showAdditionalStatAnalysisChk": "추가 통계 분석 표시",
+  "showIChartChk": "날짜/지수에 대한 측정의 I 차트 표시",
+  "deGroupPlotsChk": "플롯을 개별적으로 플롯하기 위해 그룹 해제",
+  "help": {
+    "title": "MSA 일관성 차트",
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tMSA 일관성 차트\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>목적</b>\n\t\t\t\t<br/>\n\t\t\t\tMSA 일관성 차트는 시간에 따른 측정 시스템의 안정성을 평가합니다. \n\t\t\t\t기계 MSA와 달리, 기계 MSA는 여러 부품에 걸쳐 참조 표준에 대한 기계 판독값을 비교하는 반면, \n\t\t\t\t일관성 차트는 동일한 특성에 대해 반복적으로 측정된 단일 측정 스트림을 모니터링하여 \n\t\t\t\t측정 시스템이 교대, 일 또는 생산 런에 걸쳐 일관되고 유능한지를 평가합니다.\n\t\t\t\t<br/>\n\t\t\t\tAIAG MSA 4판 표준과 Donald Wheeler의 EMP III 방법론을 따르며, \n\t\t\t\t측정 시스템 변동성을 공학적 허용 오차 (제품 관리) 및 \n\t\t\t\t과거 프로세스 표준 편차 (프로세스 관리)에 대해 정량화합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>입력</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>날짜/지수</b> (필수) — 각 측정이 언제 이루어졌는지를 식별하는 타임스탬프 또는 순차적 인덱스; \n\t\t\t\tI 차트의 x축으로 사용됩니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>측정값</b> (필수) — 시간에 따른 특성의 반복 측정값\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>참조 값</b> (선택 사항) — 특성의 알려진 진정한 또는 명목값; \n\t\t\t\t생략 시 모든 측정의 평균이 참조값으로 사용되며, 편향은 0으로 보고됩니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>허용 오차 범위 (USL − LSL)</b> (필수) — 전체 공학적 허용 오차; \n\t\t\t\t측정 시스템 오류를 허용 가능한 부품 변동의 백분율로 표현하는 데 사용됩니다 (%Tolerance)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>목표</b> (선택 사항) — 명목 설계 값; 제공된 경우, 오분류 확률 플롯의 x축은 \n\t\t\t\t실제 부품 치수 좌표를 표시합니다 \n\t\t\t\t(예: LSL = 499.5, USL = 500.5) 중심 좌표 (LSL = −0.5, USL = +0.5) 대신.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>과거 프로세스 표준 편차</b> (선택 사항, 강력히 권장) — 알려진 장기 프로세스 SD; \n\t\t\t\t제공된 경우 변동 비율은 진정한 프로세스 능력의 백분율로 표현됩니다 (%Process); \n\t\t\t\t생략 시 연구 측정값의 변동이 사용되며 경고가 표시됩니다 (%Study)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>게이지 이름, 연구 날짜, 연구 수행자</b> (선택 사항) — 보고서 헤더의 메타데이터\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>출력 해석</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>MS 표준 편차</b>는 모든 측정의 StDev — 시간에 따른 전체 측정 시스템의 \n\t\t\t\t분산입니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>편향</b> = mean(측정값) − 참조. 비영(非零) 편향은 측정 \n\t\t\t\t시스템이 참조 값에서 체계적인 오프셋을 가지고 있음을 나타냅니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>GRR %Tolerance 수용 기준</b> — 주요 AIAG 수용 기준: 10% 미만은 수용 가능, 10–30%는 한계, 30% 이상은 수용 불가.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>GRR %Process (또는 %Study) 기준</b> — 측정 변동이 프로세스 능력의 비율로 표현됩니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>오분류 확률</b> — 특성 범위에 걸쳐 적합한 부품을 거부할 확률(알파 위험)과 비적합한 부품을 수용할 확률(베타 위험)을 보여줍니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>백분율 기여 파이</b> — 총 변동의 반복 가능성 비율을 보여줍니다. \n\t\t\t\t일관성 차트에는 부품 간 구성 요소가 없으므로 모든 변동은 \n\t\t\t\t측정 시스템에 귀속됩니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>측정의 I 차트</b> (선택 사항) — 각 측정을 날짜/지수에 대해 플롯하며 \n\t\t\t\t이동 범위를 기반으로 한 제어 한계를 설정합니다. 한계를 벗어난 점은 \n\t\t\t\t조사가 필요한 측정 시스템의 불안정성을 신호합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>편향에 대한 t-검정</b> (선택 사항) — 평균 측정값이 참조 값과 통계적으로 다른지를 테스트합니다; p &lt; 0.05는 재교정이 필요한 유의미한 편향을 나타냅니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

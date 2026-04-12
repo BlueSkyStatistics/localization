@@ -1,0 +1,24 @@
+{
+  "title": "MSA Go/No-Go 验证（逻辑回归）",
+  "navigation": "MSA Go/No-Go 验证",
+  "variableInputSelcted": "选择变量输入（连续测量）",
+  "variableResultSelcted": "选择结果变量（通过/失败）",
+  "passCondition": "通过条件值（必须与结果数据完全匹配）",
+  "label2": "规格信息",
+  "usl": "USL（上规格限 - 可选）",
+  "lsl": "LSL（下规格限 - 可选）",
+  "upperLimitRad": "评估上限（USL）",
+  "lowerLimitRad": "评估下限（LSL）",
+  "gageName": "量具名称",
+  "studyDate": "研究日期",
+  "performedBy": "报告人",
+  "showResidualPlotsChk": "显示偏差残差图",
+  "flipaxisPPplotChk": "翻转 P-P 图的轴",
+  "showFittedLinePlotChk": "显示带置信区间的二元拟合线图",
+  "showAdditionalStatChk": "显示额外的逻辑回归统计信息",
+  "deGroupPlotsChk": "去分组图以单独绘制",
+  "help": {
+    "title": "Go/No-Go 验证（逻辑回归）",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t使用二元逻辑回归（Probit/Normit 链接）的 Go/No-Go 验证\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>目的</b>\n\t\t\t\t<br/>\n\t\t\t\tGo/No-Go（属性）量具产生二元通过/失败决策，而不是连续测量。\n\t\t\t\t本分析使用带有 probit（normit）链接函数的二元逻辑回归来建模\n\t\t\t\t通过的概率作为真实连续输入变量的函数。它评估测量系统\n\t\t\t\t正确分类接近规格限的零件的能力。\n\t\t\t\t<br/>\n\t\t\t\t遵循 AIAG MSA 第四版方法（Thomas Rust 的 Minitab MSA_VarIn.MAC），\n\t\t\t\t它估计过渡点（50% 的零件被分类为通过的地方），量化\n\t\t\t\t测量系统变异，并计算关键接受指标。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>输入</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>变量输入</b>（必填）— 每个零件的连续测量（例如直径）\n\t\t\t\t<br/>\n\t\t\t\t<b>结果（二元）</b>（必填）— Go/No-Go 量具结果（例如“通过”/“失败”）\n\t\t\t\t<br/>\n\t\t\t\t<b>通过条件</b>（必填）— 结果列中表示通过的确切字符串值\n\t\t\t\t<br/>\n\t\t\t\t<b>单个/汇总结果</b> — 每行是否为一个测量（单个）\n\t\t\t\t或已经汇总为每个输入水平的通过次数和总试验次数（汇总）\n\t\t\t\t<br/>\n\t\t\t\t<b>USL / LSL</b> — 规格限；被评估的限值决定偏差和 %GRR 容差\n\t\t\t\t<br/>\n\t\t\t\t<b>评估上/下限</b> — 量具正在检查的规格限\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>输出解释</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>过渡点</b> — 量具通过 50% 零件的输入值。\n\t\t\t\t理想情况下等于规格限；任何差异即为偏差。\n\t\t\t\t<br/>\n\t\t\t\t<b>MS 标准差</b> = |1/beta|，其中 beta 是 probit 斜率。测量量具决策边界的扩展 — 较小的值表示量具更尖锐、更有能力。\n\t\t\t\t<br/>\n\t\t\t\t<b>95% 不确定性</b> = 2 × MS 标准差 — 过渡点周围的区域，其中\n\t\t\t\t分类不可靠。\n\t\t\t\t<br/>\n\t\t\t\t<b>偏差</b> = 过渡点 − 规格。非零偏差意味着量具始终\n\t\t\t\t接受或拒绝接近规格限的零件。\n\t\t\t\t<br/>\n\t\t\t\t<b>%Tol（容差比）</b> = (6 × MS 标准差) / 容差 × 100。主要接受\n\t\t\t\t标准：低于 10% 可接受，10–30% 边际，超过 30% 不可接受。\n\t\t\t\t<br/>\n\t\t\t\t<b>%容差的偏差</b> = |偏差| / 容差 × 100。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Go/No-Go 验证图</b> — 显示观察到的通过比例（点）和拟合的\n\t\t\t\tprobit S 曲线。下方的彩色带显示：红色 = 确定的失败区域，灰色阴影 =\n\t\t\t\t不确定区域（过渡 ± U），绿色 = 确定的通过区域。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>二元拟合线图</b>（可选）— 显示带有 95%\n\t\t\t\t置信区间的拟合 probit 曲线，适用于评估模型拟合。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>偏差残差图</b>（可选）— 四个用于逻辑\n\t\t\t\t回归模型的诊断面板（正态概率，拟合的 normit，直方图，按顺序）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

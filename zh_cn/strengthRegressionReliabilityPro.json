@@ -1,0 +1,21 @@
+{
+  "title": "强度回归",
+  "navigation": "强度回归",
+  "response": "响应变量",
+  "input": "输入变量",
+  "grouping": "分类变量",
+  "groupValue": "强度值（必须是分类变量中的有效类别之一）",
+  "confidenceLevel": "置信水平 - 介于 0 和 1 之间的值（默认 0.95）",
+  "desiredReliability": "目标可靠性 - 介于 0 和 1 之间的值（例如，0.999）",
+  "targetInput": "目标输入",
+  "reliabilityOptionLabel": "可靠性",
+  "optimizeReliabilityRad": "优化可靠性以确定目标输入",
+  "calculateReliabilityRad": "从目标输入计算可靠性",
+  "additionalPlotChk": "附加残差和输入数据的图",
+  "flipaxisPPplotChk": "翻转 P-P 图的轴",
+  "deGroupPlotsChk": "去分组图以单独绘制",
+  "help": {
+    "title": "强度回归",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t强度回归 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t目的\n\t\t\t\t<br/>\n\t\t\t\t强度回归通过量化强度响应（例如焊接的扭矩能力）超过应力负载的概率来估计系统的可靠性，其中强度被建模为可控输入变量的线性函数。它提供了点估计和在指定置信水平下的统计保守下限可靠性，基于 Reiser & Guttman (1988) 框架。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t输入\n\t\t\t\t<br/>\n\t\t\t\t输入变量 — 驱动强度的可控过程参数（例如，挤压距离）\n\t\t\t\t<br/>\n\t\t\t\t响应变量 — 代表强度和应力观察的测量输出在同一列中（例如，扭矩）\n\t\t\t\t<br/>\n\t\t\t\t分类变量 — 区分强度行和应力行的分组列（例如，位置）\n\t\t\t\t<br/>\n\t\t\t\t强度值 — 在分类变量中识别强度观察的类别标签（例如，“焊接”）；所有剩余行被视为应力\n\t\t\t\t<br/>\n\t\t\t\t置信水平 — 下限可靠性计算的统计置信度（默认 0.95）\n\t\t\t\t<br/>\n\t\t\t\t优化可靠性 — 查找实现用户指定目标可靠性所需的目标输入值（例如，0.999）\n\t\t\t\t<br/>\n\t\t\t\t计算可靠性 — 评估在用户提供的固定目标输入值下实现的可靠性\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t输出解释\n\t\t\t\t<br/>\n\t\t\t\t摘要报告了应力和强度分布的均值和标准差， \n\t\t\t\t<br/>\n\t\t\t\t目标输入（无论是求解还是提供），以及关键的可靠性指标。 \n\t\t\t\t<br/>\n\t\t\t\t估计可靠性是强度超过应力的概率的点估计。 \n\t\t\t\t<br/>\n\t\t\t\t下限可靠性是在所选置信水平下的统计保守下限 — 这是用于工程决策的数字，因为它考虑了回归和应力分布中的估计不确定性。 \n\t\t\t\t<br/>\n\t\t\t\t安全系数提供了传统的确定性边际检查。 \n\t\t\t\t<br/>\n\t\t\t\t附带的诊断图显示了回归拟合与叠加的应力和强度分布， \n\t\t\t\t<br/>\n\t\t\t\t强度模型的残差假设检查，以及应力观察的稳定性/正态性检查。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

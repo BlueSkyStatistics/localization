@@ -1,0 +1,22 @@
+{
+  "title": "MSA一致性圖",
+  "navigation": "MSA一致性圖",
+  "variableDateSelcted": "選擇日期/指數的變數",
+  "variableMeasSelcted": "選擇測量的變數",
+  "reference": "參考值（可選 - 如果省略，默認為測量的平均值）",
+  "label2": "產品控制",
+  "tolerance": "公差範圍（USL - LSL）",
+  "target": "目標（可選 - 如果指定，則用於錯誤分類概率圖）",
+  "label3": "過程控制",
+  "historicalStdv": "歷史過程標準差 - 可選，但強烈建議",
+  "gageName": "量具名稱",
+  "studyDate": "研究日期",
+  "performedBy": "研究執行者",
+  "showAdditionalStatAnalysisChk": "顯示額外的統計分析",
+  "showIChartChk": "顯示測量與日期/指數的I圖",
+  "deGroupPlotsChk": "去分組圖以單獨繪製",
+  "help": {
+    "title": "MSA一致性圖",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\tMSA一致性圖\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>目的</b>\n\t\t\t\t<br/>\n\t\t\t\tMSA一致性圖評估測量系統隨時間的穩定性。\n\t\t\t\t與機器MSA不同，後者比較機器讀數與多個零件的參考標準，\n\t\t\t\t一致性圖監控在同一特徵上重複進行的單一測量流，\n\t\t\t\t評估測量系統在班次、天數或生產運行中是否保持一致和有能力。\n\t\t\t\t<br/>\n\t\t\t\t遵循AIAG MSA第四版標準和Donald Wheeler的EMP III方法，\n\t\t\t\t它量化測量系統變異相對於工程公差（產品控制）\n\t\t\t\t和歷史過程標準差（過程控制）。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸入</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>日期/指數</b>（必需） - 標識每次測量何時進行的時間戳或順序索引；\n\t\t\t\t用作I圖的x軸\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>測量</b>（必需） - 隨時間重複的特徵測量\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>參考值</b>（可選） - 特徵的已知真實或名義值；\n\t\t\t\t省略時，所有測量的平均值用作參考，偏差報告為零\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>公差範圍（USL − LSL）</b>（必需） - 完整的工程公差；用於\n\t\t\t\t將測量系統誤差表示為允許零件變異的百分比（%Tolerance）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>目標</b>（可選） - 名義設計值；提供時，錯誤分類概率圖的x軸顯示實際零件尺寸坐標\n\t\t\t\t（例如，LSL = 499.5，USL = 500.5），而不是中心坐標（LSL = −0.5，USL = +0.5）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>歷史過程標準差</b>（可選，強烈建議） - 已知的長期過程標準差；\n\t\t\t\t提供時，變異比率表示為真實過程能力的百分比（%Process）；\n\t\t\t\t省略時，使用研究測量自身的變異，並顯示警告（%Study）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>量具名稱、研究日期、研究執行者</b>（可選） - 報告標題的元數據\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸出解釋</b>\n\t\t\t\t<br/>\n\t\t\t\t<b>MS標準差</b>是所有測量的標準差 - 測量系統隨時間的總體變化。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>偏差</b> = mean(測量) − 參考。非零偏差表示測量系統與參考值之間存在系統性偏移。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>GRR %Tolerance接受度計</b> - 主要的AIAG接受標準：低於10%是可接受的，10–30%是邊際的，超過30%是不可接受的。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>GRR %Process（或%Study）計</b> - 測量變異作為過程能力的比例。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>錯誤分類概率</b> - 顯示Alpha風險（拒絕符合零件的概率）和Beta風險（接受不符合零件的概率）\n\t\t\t\t在特徵範圍內。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>百分比貢獻餅圖</b> - 顯示總變異的重複性份額。\n\t\t\t\t由於一致性圖中沒有零件之間的組件，所有變異都歸因於測量系統。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>測量的I圖</b>（可選） - 繪製每次測量與其日期/指數的關係，\n\t\t\t\t控制限基於移動範圍。超出限值的點信號\n\t\t\t\t測量系統不穩定，應進行調查。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>偏差的t檢驗</b>（可選） - 測試平均測量是否在統計上與參考值不同；p < 0.05表示顯著偏差，需要重新校準。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

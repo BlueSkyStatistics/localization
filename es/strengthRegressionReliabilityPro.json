@@ -1,0 +1,21 @@
+{
+  "title": "Regresión de Fuerza",
+  "navigation": "Regresión de Fuerza",
+  "response": "Variable de Respuesta",
+  "input": "Variable de Entrada",
+  "grouping": "Variable de Clasificación",
+  "groupValue": "Valor de Fuerza (Debe ser uno de los categorías válidas de la variable de clasificación)",
+  "confidenceLevel": "Nivel de confianza - un valor entre 0 y 1 (por defecto 0.95)",
+  "desiredReliability": "Confiabilidad Objetivo - un valor entre 0 y 1 (por ejemplo, 0.999)",
+  "targetInput": "Entrada Objetivo",
+  "reliabilityOptionLabel": "Confiabilidad",
+  "optimizeReliabilityRad": "Optimizar la Confiabilidad para determinar la Entrada Objetivo",
+  "calculateReliabilityRad": "Calcular la Confiabilidad a partir de la Entrada Objetivo",
+  "additionalPlotChk": "Gráficos adicionales para residuos y datos de entrada",
+  "flipaxisPPplotChk": "Invertir el eje para el gráfico P-P",
+  "deGroupPlotsChk": "Desagrupar gráficos para graficar individualmente",
+  "help": {
+    "title": "Regresión de Fuerza",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tRegresión de Fuerza \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPropósito\n\t\t\t\t<br/>\n\t\t\t\tLa Regresión de Fuerza estima la confiabilidad de un sistema cuantificando la probabilidad de que una \n\t\t\t\trespuesta de fuerza (por ejemplo, la capacidad de torque de una soldadura) exceda una carga de tensión, donde la \n\t\t\t\tfuerza se modela como una función lineal de una variable de entrada controlable. Proporciona tanto una estimación puntual \n\t\t\t\tcomo un límite inferior estadísticamente conservador de la confiabilidad a un nivel de confianza especificado, basado en el \n\t\t\t\tmarco de Reiser & Guttman (1988).\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEntradas\n\t\t\t\t<br/>\n\t\t\t\tVariable de Entrada — el parámetro de proceso controlable que impulsa la fuerza (por ejemplo, Distancia de Upset)\n\t\t\t\t<br/>\n\t\t\t\tVariable de Respuesta — la salida medida que representa tanto las observaciones de fuerza como de tensión en la misma columna (por ejemplo, Torque)\n\t\t\t\t<br/>\n\t\t\t\tVariable de Clasificación — una columna de agrupamiento que distingue las filas de fuerza de las filas de tensión (por ejemplo, Ubicación)\n\t\t\t\t<br/>\n\t\t\t\tValor de Fuerza — la etiqueta de categoría dentro de la Variable de Clasificación que identifica las observaciones de fuerza (por ejemplo, \"Soldadura\"); \n\t\t\t\ttodas las filas restantes se tratan como tensión\n\t\t\t\t<br/>\n\t\t\t\tNivel de Confianza — confianza estadística para el cálculo de confiabilidad del límite inferior (por defecto 0.95)\n\t\t\t\t<br/>\n\t\t\t\tOptimizar Confiabilidad — encuentra el valor de Entrada Objetivo requerido para lograr una Confiabilidad Objetivo especificada por el usuario (por ejemplo, 0.999)\n\t\t\t\t<br/>\n\t\t\t\tCalcular Confiabilidad — evalúa la confiabilidad alcanzada en un valor de Entrada Objetivo fijo proporcionado por el usuario\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tInterpretación de Salida\n\t\t\t\t<br/>\n\t\t\t\tEl resumen informa la media y la desviación estándar de ambas distribuciones de tensión y fuerza, \n\t\t\t\t<br/>\n\t\t\t\tla Entrada Objetivo (ya sea resuelta o suministrada), y las métricas clave de confiabilidad. \n\t\t\t\t<br/>\n\t\t\t\tLa Est. Confiabilidad es la estimación puntual de la probabilidad de que la fuerza exceda la tensión. \n\t\t\t\t<br/>\n\t\t\t\tLa L.B. Confiabilidad es el límite inferior estadísticamente conservador al nivel de confianza elegido — esta es la cifra a utilizar para decisiones de ingeniería \n\t\t\t\tya que tiene en cuenta la incertidumbre de estimación tanto en la regresión como en la distribución de tensión. \n\t\t\t\t<br/>\n\t\t\t\tEl Factor de Seguridad proporciona un chequeo de margen determinista tradicional. \n\t\t\t\t<br/>\n\t\t\t\tLos gráficos diagnósticos acompañantes muestran el ajuste de la regresión con distribuciones de tensión y fuerza superpuestas, \n\t\t\t\t<br/>\n\t\t\t\tchequeos de suposición de residuos para el modelo de fuerza, y chequeos de estabilidad/normalidad para las observaciones de tensión.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

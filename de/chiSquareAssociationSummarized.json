@@ -1,0 +1,20 @@
+{
+  "title": "Chi-Quadrat-Test für Assoziation",
+  "navigation": "Chi-Quadrat-Test (Zusammengefasst)",
+  "label_table_cols": "Spalten, die die Tabelle enthalten (Zählungen)",
+  "label_row_labels": "Zeilenbezeichnungen (optional)",
+  "label_cell_contents": "Zelleninhalte",
+  "label_options": "Optionen",
+  "opt_counts": "Zählungen",
+  "opt_margins": "Randgesamtsummen",
+  "opt_expected": "Erwartete Zählungen",
+  "opt_raw_resid": "Rohe Residuen (O − E)",
+  "opt_std_resid": "Standardisierte Residuen",
+  "opt_adj_resid": "Angepasste Residuen",
+  "opt_contrib": "Beitrag zum Chi-Quadrat",
+  "help": {
+    "title": "Chi-Quadrat-Test für Assoziation (Zusammengefasst)",
+    "r_help": "help(chisq.test, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>Beschreibung</b></br>\nFührt einen Chi-Quadrat-Test für Assoziation unter Verwendung einer <b>zusammengefassten zweidimensionalen Tabelle</b> durch,\nbei der jede ausgewählte Spalte Zählungen für eine Ebene der Spaltenvariablen enthält.</br></br>\n\n<b>Eingaben</b></br>\n<ul>\n  <li><b>Spalten, die die Tabelle enthalten</b>: numerische Spalten, die die Kontingenztabelle (Zählungen) bilden.</li>\n  <li><b>Zeilenbezeichnungen</b> (optional): eine Spalte mit Zeilennamen/-bezeichnungen (z.B. Ja/Nein).</li>\n</ul>\n\n<b>Ausgaben</b></br>\n<ul>\n  <li>Beobachtete Zählungstabelle</li>\n  <li>Zelleninhaltestabelle (Zählung, Erwartet, Beitrag, Residuen — wie ausgewählt)</li>\n  <li>Chi-Quadrat-Tests (Pearson und Likelihood Ratio)</li>\n</ul>\n\n<b>Verwendung</b></br>\n<code>\nBSky_ChiSquare_Association_Summarized(</br>\n  data = Dataset1,</br>\n  table_cols = c('Plant1','Plant2','Plant3'),</br>\n  row_label_col = 'Rework',</br>\n  show_counts = TRUE,</br>\n  show_margins = TRUE,</br>\n  show_expected = TRUE,</br>\n  show_contrib = TRUE</br>\n)</br>\n</code>\n\n<b>Hilfe</b></br>\nBitte kontaktieren Sie support@blueskystatistics.com für weitere Informationen.\n      "
+  }
+}

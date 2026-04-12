@@ -1,0 +1,24 @@
+{
+  "title": "單樣本變異數",
+  "navigation": "單樣本變異數",
+  "label_samples": "一個或多個樣本，每個樣本在一列中",
+  "label_data_format": "數據格式",
+  "wide": "寬格式（每個樣本為一列）",
+  "long": "長格式（根據因子分組的反應）",
+  "label_response": "反應變數",
+  "label_group": "分組變數",
+  "label_hyp_test": "假設檢驗",
+  "hyp_sd": "假設的標準差",
+  "hyp_var": "假設的變異數",
+  "value_label": "值",
+  "label_conf": "信心水準",
+  "label_alt": "替代假設",
+  "alt1": "雙尾（≠）",
+  "alt2": "大於（>）",
+  "alt3": "小於（<）",
+  "help": {
+    "title": "單樣本變異數（類似Minitab）",
+    "r_help": "help(pchisq, package=stats); help(qchisq, package=stats)",
+    "body": "\n<b>描述</b></br>\n模擬Minitab的單樣本變異數對話框。</br>\n始終計算兩者：</br>\n<ul>\n  <li><b>Bonett</b> 方法（對於任何連續分佈有效）</li>\n  <li><b>卡方</b> 方法（正態理論方法）</li>\n</ul>\n始終對假設的<b>標準差</b>或<b>變異數</b>進行假設檢驗。</br>\n\n<b>用法</b></br>\n<code>\nBSky_one_sample_variance(</br>\n  data_format = \"wide\",</br>\n  cols_to_test = c('A','B'),</br>\n  response_col = NULL,</br>\n  group_col = NULL,</br>\n  conf_level = 0.95,</br>\n  alt_hypothesis = \"two.sided\",</br>\n  hypoth_type = \"sd\",</br>\n  hypoth_value = 20,</br>\n  data_name=\"Dataset1\"</br>\n)</br>\n</code>\n\n<b>幫助</b></br>\n如需更多信息，請聯繫support@blueskystatistics.com。\n      "
+  }
+}

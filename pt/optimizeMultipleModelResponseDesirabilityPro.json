@@ -11,7 +11,7 @@
   "target": "Alvo: Especifique os valores alvo das respostas",
   "lower": "Inferior: Especifique os valores mínimos aceitáveis das respostas (se deixado em branco, o valor mínimo da resposta do modelo será usado)",
   "upper": "Superior: Especifique os valores máximos aceitáveis das respostas (se deixado em branco, o valor máximo da resposta do modelo será usado)",
-  "weight": "Peso: Especifique os valores de peso (ou seja, penalidade por estar longe do alvo) das respostas (deve ser > 0, se deixado vazio, 1 para cada modelo)",
+  "weight": "Peso: Especifique os valores de Peso (ou seja, penalidade por estar longe do alvo) das respostas (deve ser > 0, se deixado vazio, 1 para cada modelo)",
   "importance": "Importância: Especifique a importância de cada resposta para combinar múltiplas respostas (deve ser > 0, se deixado vazio, 1 para cada modelo)",
   "predictorConstraints": "Opções de Restrições do Preditor do Modelo",
   "label200": "Restrições de Variáveis Numéricas do Preditor do Modelo para Otimizador de Resposta",
@@ -33,6 +33,7 @@
   "lmSummaryTableChk": "Mostrar tabela de Resumo do Modelo",
   "residualTableChk": "Mostrar tabela de Resíduos",
   "coefficientTableChk": "Mostrar tabela de Coeficientes",
+  "supressPredictWarningsChk": "Suprimir avisos de cálculos de previsão internos",
   "help": {
     "title": "Calcular e Otimizar Respostas de Múltiplos Modelos",
     "r_help": "help(optim, package = stats)",
