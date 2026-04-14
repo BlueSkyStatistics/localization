@@ -86,6 +86,9 @@
     "xInterceptStdDev": "Enter comma separated standard deviations from the mean to draw vertical reference lines e.g. 0.5,1, 1.5",
     "yInterceptStdDevLabel": "Specify comma separated labels (no enclosing quotes) for the horizontal line(s) at the specified standard deviations",
     "xInterceptStdDevLabel": "Specify comma separated labels (no enclosing quotes) for the vertical line(s) at the specified standard deviations",
+    "showResidualPlotsChk": "Show residual plots for the fitted model (select a Fit model first)",
+    "flipaxisPPplotChk": "Flip axis for the P-P plot",
+    "deGroupPlotsChk": "De-group plots to plot individually",
     "help": {
         "title": "Scatter Plot",
         "r_help": "help(geom_point, package='ggplot2')",
