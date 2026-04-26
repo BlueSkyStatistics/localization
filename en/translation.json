@@ -51,7 +51,9 @@
         "add": "Create a new dataset",
         "refresh": "Refresh dataset",
         "undo": "Undo changes",
-        "redo": "Redo changes"
+        "redo": "Redo changes",
+        "pasteWarning": "You will not be able to undo the data you are about to paste due to the large size of the data. Do you want to continue?",
+        "pasteWarningCheckbox": "Do not show this warning again."
     },
     "REditrOutputContext": {
         "execute": "Execute",
