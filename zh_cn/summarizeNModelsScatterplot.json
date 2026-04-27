@@ -1,0 +1,21 @@
+{
+  "title": "从散点图模型拟合中总结 N 个模型",
+  "navigation": "总结 N 个模型（来自散点图）",
+  "label1": "总结 N 个模型。",
+  "label2": "选择以下类别的模型（R 类在下面的括号中）",
+  "label3": "线性模型 (lm)，广义线性模型 (glm)，线性混合效应模型 (lme)，有序逻辑或概率回归 (polr)，比例风险模型 (coxph)，使用广义最小二乘法的线性模型 (gls)，生存回归模型 (survreg)，局部多项式回归拟合 (loess)，非线性最小二乘模型 (nls)，多项式对数线性模型 (multinom)",
+  "label4": "**注意：从模型调优 (class train) 创建的模型不受支持",
+  "modelselector1": "选择一个或多个模型进行总结（必须是 lm、glm、二次或三次模型）",
+  "showModelEquationChk": "显示模型方程",
+  "showModelDetailsChk": "显示模型详细信息",
+  "showResidualPlotsChk": "显示拟合模型的残差图（首先选择一个拟合模型）",
+  "checkShapiroNormalityTestChk": "残差的 Shapiro 正态性检验",
+  "checkADNormalityTestChk": "残差的 Anderson-Darling 正态性检验",
+  "flipaxisPPplotChk": "翻转 P-P 图的轴",
+  "deGroupPlotsChk": "取消分组图以单独绘制",
+  "help": {
+    "title": "从散点图生成的多个 Y 的 N 个模型总结",
+    "r_help": "help(anova,package='stats')",
+    "body": "\n               \n                "
+  }
+}

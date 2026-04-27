@@ -1,0 +1,21 @@
+{
+    "title": "Summarize N Models generated from Scatterplot model fit",
+    "navigation": "Summarize N Models (from a Scatterplot)",
+    "label1": "Summarize N models.",
+    "label2": "Select models of the following classes (R class is in parenthesis below)",
+    "label3": "Linear models (lm), Generalized linear model (glm), Linear mixed effects model (lme), Ordered Logistic or Probit Regression (polr), Proportional hazard model (coxph), Linear model using generalized least squares (gls), Survival regression model (survreg), Local Polynomial Regression Fitting (loess), Non-linear least square model (nls), Multinomial Log-Linear Models (multinom)",
+    "label4": "**NOTE: Models created from Model Tuning  (class train) are not supported",
+    "modelselector1": "Select one or more models to summarize (must be lm,glm, quadratic, or cubic models)",
+    "showModelEquationChk": "Show model equation",
+    "showModelDetailsChk": "Show model details",
+    "showResidualPlotsChk": "Show residual plots for the fitted model (select a Fit model first)",
+    "checkShapiroNormalityTestChk": "Shapiro normality test for residuals",
+    "checkADNormalityTestChk": "Anderson-Darling normality test for residuals",
+    "flipaxisPPplotChk": "Flip axis for the P-P plot",
+    "deGroupPlotsChk": "De-group plots to plot individually",
+    "help": {
+        "title": "Summarize N Models for Multiple Ys generated from a Scatterplot",
+        "r_help": "help(anova,package='stats')",
+        "body": "\n               \n                "
+    }
+}

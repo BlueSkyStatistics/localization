@@ -1,0 +1,21 @@
+{
+  "title": "Résumer N modèles générés à partir de l'ajustement du modèle Scatterplot",
+  "navigation": "Résumer N modèles (à partir d'un Scatterplot)",
+  "label1": "Résumer N modèles.",
+  "label2": "Sélectionnez des modèles des classes suivantes (la classe R est entre parenthèses ci-dessous)",
+  "label3": "Modèles linéaires (lm), Modèle linéaire généralisé (glm), Modèle à effets mixtes linéaires (lme), Régression logistique ordonnée ou Probit (polr), Modèle de risque proportionnel (coxph), Modèle linéaire utilisant les moindres carrés généralisés (gls), Modèle de régression de survie (survreg), Ajustement de régression polynomiale locale (loess), Modèle de moindres carrés non linéaires (nls), Modèles log-linéaires multinomiaux (multinom)",
+  "label4": "**REMARQUE : Les modèles créés à partir de l'ajustement du modèle (classe train) ne sont pas pris en charge",
+  "modelselector1": "Sélectionnez un ou plusieurs modèles à résumer (doivent être lm, glm, quadratique ou cubique)",
+  "showModelEquationChk": "Afficher l'équation du modèle",
+  "showModelDetailsChk": "Afficher les détails du modèle",
+  "showResidualPlotsChk": "Afficher les graphiques des résidus pour le modèle ajusté (sélectionnez d'abord un modèle d'ajustement)",
+  "checkShapiroNormalityTestChk": "Test de normalité de Shapiro pour les résidus",
+  "checkADNormalityTestChk": "Test de normalité d'Anderson-Darling pour les résidus",
+  "flipaxisPPplotChk": "Inverser l'axe pour le graphique P-P",
+  "deGroupPlotsChk": "Dégrouper les graphiques pour les tracer individuellement",
+  "help": {
+    "title": "Résumer N modèles pour plusieurs Ys générés à partir d'un Scatterplot",
+    "r_help": "help(anova,package='stats')",
+    "body": "\n               \n                "
+  }
+}
