@@ -1,0 +1,27 @@
+{
+  "language": {
+    "language": "Portuguese",
+    "key": "pt"
+  },
+  "original_json": {
+    "title": "Resumir N Modelos gerados a partir do ajuste do modelo Scatterplot",
+    "navigation": "Resumir N Modelos (a partir de um Scatterplot)",
+    "label1": "Resumir N modelos.",
+    "label2": "Selecione modelos das seguintes classes (a classe R está entre parênteses abaixo)",
+    "label3": "Modelos lineares (lm), Modelo linear generalizado (glm), Modelo de efeitos mistos lineares (lme), Regressão Logística ou Probit Ordenada (polr), Modelo de risco proporcional (coxph), Modelo linear usando mínimos quadrados generalizados (gls), Modelo de regressão de sobrevivência (survreg), Ajuste de Regressão Polinomial Local (loess), Modelo de mínimos quadrados não lineares (nls), Modelos Multinomiais Log-Linear (multinom)",
+    "label4": "**NOTA: Modelos criados a partir da Ajuste de Modelo (classe train) não são suportados",
+    "modelselector1": "Selecione um ou mais modelos para resumir (devem ser lm, glm, quadráticos ou cúbicos)",
+    "showModelEquationChk": "Mostrar equação do modelo",
+    "showModelDetailsChk": "Mostrar detalhes do modelo",
+    "showResidualPlotsChk": "Mostrar gráficos residuais para o modelo ajustado (selecione um modelo de ajuste primeiro)",
+    "checkShapiroNormalityTestChk": "Teste de normalidade de Shapiro para resíduos",
+    "checkADNormalityTestChk": "Teste de normalidade de Anderson-Darling para resíduos",
+    "flipaxisPPplotChk": "Inverter eixo para o gráfico P-P",
+    "deGroupPlotsChk": "Desagrupar gráficos para plotar individualmente",
+    "help": {
+      "title": "Resumir N Modelos para Múltiplos Ys gerados a partir de um Scatterplot",
+      "r_help": "help(anova,package='stats')",
+      "body": "\n               \n                "
+    }
+  }
+}

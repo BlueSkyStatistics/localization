@@ -1,7 +1,7 @@
 {
   "title": "Dağılım grafiği model uyumundan üretilen N Modelleri Özetle",
   "navigation": "Bir Dağılım Grafiğinden N Modelleri Özetle",
-  "label1": "N modelleri özetle.",
+  "label1": "N modellerini özetle.",
   "label2": "Aşağıdaki sınıflardan modelleri seçin (R sınıfı parantez içinde aşağıda)",
   "label3": "Doğrusal modeller (lm), Genelleştirilmiş doğrusal model (glm), Doğrusal karışık etkiler modeli (lme), Sıralı Lojistik veya Probit Regresyon (polr), Orantılı tehlike modeli (coxph), Genelleştirilmiş en küçük kareler kullanarak doğrusal model (gls), Hayatta kalma regresyon modeli (survreg), Yerel Polinom Regresyon Uygulaması (loess), Doğrusal olmayan en küçük kareler modeli (nls), Çoklu Log-Doğrusal Modeller (multinom)",
   "label4": "**NOT: Model Ayarlama (sınıf train) ile oluşturulan modeller desteklenmemektedir",
@@ -12,7 +12,7 @@
   "checkShapiroNormalityTestChk": "Kalıntılar için Shapiro normallik testi",
   "checkADNormalityTestChk": "Kalıntılar için Anderson-Darling normallik testi",
   "flipaxisPPplotChk": "P-P grafiği için ekseni çevir",
-  "deGroupPlotsChk": "Grafikleri bireysel olarak çizmek için gruplamayı kaldır",
+  "deGroupPlotsChk": "Grafikleri bireysel olarak çizmek için gruplardan ayır",
   "help": {
     "title": "Bir Dağılım Grafiğinden Üretilen Birden Fazla Y için N Modelleri Özetle",
     "r_help": "help(anova,package='stats')",

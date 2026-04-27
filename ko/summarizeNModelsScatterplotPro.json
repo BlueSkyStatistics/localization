@@ -1,0 +1,27 @@
+{
+  "language": {
+    "language": "korean",
+    "key": "ko"
+  },
+  "original_json": {
+    "title": "산점도 모델 적합에서 생성된 N 모델 요약",
+    "navigation": "산점도에서 N 모델 요약",
+    "label1": "N 모델을 요약합니다.",
+    "label2": "다음 클래스의 모델을 선택하십시오 (R 클래스는 아래 괄호 안에 있습니다)",
+    "label3": "선형 모델 (lm), 일반화 선형 모델 (glm), 선형 혼합 효과 모델 (lme), 순서형 로지스틱 또는 프로빗 회귀 (polr), 비례 위험 모델 (coxph), 일반화 최소 제곱을 사용하는 선형 모델 (gls), 생존 회귀 모델 (survreg), 로컬 다항 회귀 적합 (loess), 비선형 최소 제곱 모델 (nls), 다항 로지스틱-선형 모델 (multinom)",
+    "label4": "**참고: 모델 튜닝 (클래스 train)에서 생성된 모델은 지원되지 않습니다",
+    "modelselector1": "요약할 하나 이상의 모델을 선택하십시오 (lm, glm, 2차 또는 3차 모델이어야 함)",
+    "showModelEquationChk": "모델 방정식 표시",
+    "showModelDetailsChk": "모델 세부정보 표시",
+    "showResidualPlotsChk": "적합된 모델의 잔차 플롯 표시 (먼저 적합 모델을 선택하십시오)",
+    "checkShapiroNormalityTestChk": "잔차에 대한 Shapiro 정규성 테스트",
+    "checkADNormalityTestChk": "잔차에 대한 Anderson-Darling 정규성 테스트",
+    "flipaxisPPplotChk": "P-P 플롯의 축 뒤집기",
+    "deGroupPlotsChk": "플롯을 개별적으로 플롯하기 위해 그룹 해제",
+    "help": {
+      "title": "산점도에서 생성된 다중 Y에 대한 N 모델 요약",
+      "r_help": "help(anova,package='stats')",
+      "body": "\n               \n                "
+    }
+  }
+}

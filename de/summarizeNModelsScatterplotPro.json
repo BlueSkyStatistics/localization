@@ -1,0 +1,27 @@
+{
+  "language": {
+    "language": "german",
+    "key": "de"
+  },
+  "original_json": {
+    "title": "Fassen Sie N Modelle zusammen, die aus der Scatterplot-Modellanpassung generiert wurden",
+    "navigation": "Fassen Sie N Modelle (aus einem Scatterplot) zusammen",
+    "label1": "Fassen Sie N Modelle zusammen.",
+    "label2": "Wählen Sie Modelle der folgenden Klassen aus (R-Klasse ist in Klammern unten)",
+    "label3": "Lineare Modelle (lm), Verallgemeinertes lineares Modell (glm), Lineares gemischtes Effekte-Modell (lme), Ordinales logistisches oder Probit-Regressionsmodell (polr), Proportionales Hazard-Modell (coxph), Lineares Modell mit verallgemeinerten kleinsten Quadraten (gls), Überlebensregressionsmodell (survreg), Lokale polynomial Regression (loess), Nichtlineares kleinste Quadrate-Modell (nls), Multinomiale log-lineare Modelle (multinom)",
+    "label4": "**HINWEIS: Modelle, die aus der Modellanpassung (Klasse train) erstellt wurden, werden nicht unterstützt",
+    "modelselector1": "Wählen Sie ein oder mehrere Modelle zur Zusammenfassung aus (müssen lm, glm, quadratische oder kubische Modelle sein)",
+    "showModelEquationChk": "Modellgleichung anzeigen",
+    "showModelDetailsChk": "Modell Details anzeigen",
+    "showResidualPlotsChk": "Residuenplots für das angepasste Modell anzeigen (wählen Sie zuerst ein Anpassungsmodell aus)",
+    "checkShapiroNormalityTestChk": "Shapiro-Normalitätstest für Residuen",
+    "checkADNormalityTestChk": "Anderson-Darling-Normalitätstest für Residuen",
+    "flipaxisPPplotChk": "Achse für das P-P-Diagramm umdrehen",
+    "deGroupPlotsChk": "Plots entgruppieren, um sie einzeln zu plotten",
+    "help": {
+      "title": "Fassen Sie N Modelle für mehrere Ys zusammen, die aus einem Scatterplot generiert wurden",
+      "r_help": "help(anova,package='stats')",
+      "body": "\n               \n                "
+    }
+  }
+}

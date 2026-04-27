@@ -1,0 +1,27 @@
+{
+  "language": {
+    "language": "traditional chinese",
+    "key": "zh_tw"
+  },
+  "original_json": {
+    "title": "從散點圖模型擬合總結 N 個模型",
+    "navigation": "從散點圖總結 N 個模型",
+    "label1": "總結 N 個模型。",
+    "label2": "選擇以下類別的模型（R 類別在下面的括號中）",
+    "label3": "線性模型 (lm)、廣義線性模型 (glm)、線性混合效應模型 (lme)、有序邏輯或 Probit 回歸 (polr)、比例風險模型 (coxph)、使用廣義最小二乘法的線性模型 (gls)、生存回歸模型 (survreg)、局部多項式回歸擬合 (loess)、非線性最小二乘模型 (nls)、多項式對數線性模型 (multinom)",
+    "label4": "**注意：從模型調整 (class train) 創建的模型不受支持",
+    "modelselector1": "選擇一個或多個模型以進行總結（必須是 lm、glm、二次或三次模型）",
+    "showModelEquationChk": "顯示模型方程",
+    "showModelDetailsChk": "顯示模型詳細信息",
+    "showResidualPlotsChk": "顯示擬合模型的殘差圖（請先選擇擬合模型）",
+    "checkShapiroNormalityTestChk": "殘差的 Shapiro 正態性檢驗",
+    "checkADNormalityTestChk": "殘差的 Anderson-Darling 正態性檢驗",
+    "flipaxisPPplotChk": "翻轉 P-P 圖的軸",
+    "deGroupPlotsChk": "取消分組圖以單獨繪製",
+    "help": {
+      "title": "從散點圖總結多個 Y 的 N 個模型",
+      "r_help": "help(anova,package='stats')",
+      "body": "\n               \n                "
+    }
+  }
+}

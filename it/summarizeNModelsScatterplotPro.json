@@ -1,0 +1,27 @@
+{
+  "language": {
+    "language": "Italian",
+    "key": "it"
+  },
+  "original_json": {
+    "title": "Riepiloga N modelli generati dall'adattamento del modello Scatterplot",
+    "navigation": "Riepiloga N modelli (da un Scatterplot)",
+    "label1": "Riepiloga N modelli.",
+    "label2": "Seleziona modelli delle seguenti classi (la classe R è tra parentesi qui sotto)",
+    "label3": "Modelli lineari (lm), Modello lineare generalizzato (glm), Modello a effetti misti lineari (lme), Regressione logistica ordinata o Probit (polr), Modello di rischio proporzionale (coxph), Modello lineare utilizzando i minimi quadrati generalizzati (gls), Modello di regressione per sopravvivenza (survreg), Adattamento di regressione polinomiale locale (loess), Modello non lineare a minimi quadrati (nls), Modelli log-lineari multinomiali (multinom)",
+    "label4": "**NOTA: I modelli creati da Model Tuning (classe train) non sono supportati",
+    "modelselector1": "Seleziona uno o più modelli da riepilogare (deve essere lm, glm, quadratico o cubico)",
+    "showModelEquationChk": "Mostra l'equazione del modello",
+    "showModelDetailsChk": "Mostra i dettagli del modello",
+    "showResidualPlotsChk": "Mostra i grafici dei residui per il modello adattato (seleziona prima un modello di adattamento)",
+    "checkShapiroNormalityTestChk": "Test di normalità di Shapiro per i residui",
+    "checkADNormalityTestChk": "Test di normalità di Anderson-Darling per i residui",
+    "flipaxisPPplotChk": "Capovolgi l'asse per il grafico P-P",
+    "deGroupPlotsChk": "Degruppa i grafici per plottarli individualmente",
+    "help": {
+      "title": "Riepiloga N modelli per più Ys generati da un Scatterplot",
+      "r_help": "help(anova,package='stats')",
+      "body": "\n               \n                "
+    }
+  }
+}
