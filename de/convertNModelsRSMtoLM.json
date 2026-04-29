@@ -1,14 +1,14 @@
 {
-  "title": "Konvertiere N Modelle von RSM-Begriffen (falls vorhanden) zu LM-Begriffen",
-  "navigation": "Konvertiere N Modelle (RSM zu LM)",
-  "modelselector1": "Wählen Sie ein oder mehrere Modelle aus, um sie zu inspizieren und von RSM-Begriffen (z. B. FO, TWI, SO, PQ), falls vorhanden, in die entsprechenden LM-Begriffe im Modellformular zu konvertieren",
+  "title": "Konvertiere N Modelle von RSM-Begriffen (falls vorhanden) in erweiterte Begriffe",
+  "navigation": "Konvertiere N Modelle (RSM erweitern)",
+  "modelselector1": "Wählen Sie ein oder mehrere Modelle aus, um zu überprüfen, ob Sie RSM-Begriffe (z. B. FO, TWI, SO, PQ) in der Modellformel verwendet haben. Wenn ja, konvertieren Sie die RSM-Begriffe in äquivalente erweiterte Standardformelbegriffe (z. B. FO(A, B) => A + B und PQ(X,Y) => I(X^2) + I(Y^2)). Diese Konvertierung kann notwendig sein, da viele der Modellbewertungsanalysen möglicherweise nicht funktionieren, wenn Ihre Modellformel RSM-Begriffe enthält.",
   "outputModeLabel": "Konvertiertes Modell(e)",
   "outputModeOverride": "Ursprüngliches Modell(e) überschreiben",
   "outputModeNew": "Als neues Modell(e) mit einem Suffix speichern",
   "suffixLabel": "Suffix für neue Modellnamen",
   "help": {
-    "title": "Konvertiere N Modelle von RSM-Begriffen (falls vorhanden) zu LM-Begriffen",
-    "r_help": "help(rsm)",
+    "title": "Konvertiere N Modelle von RSM-Begriffen (falls vorhanden) in LM-Begriffe",
+    "r_help": "hilfe(rsm)",
     "body": "\n               \n                "
   }
 }

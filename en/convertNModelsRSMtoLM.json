@@ -1,7 +1,7 @@
 {
-    "title": "Convert N Models from RSM terms (if any) to LM terms",
-    "navigation": "Convert N Models (RSM to LM)",
-    "modelselector1": "Select one or more models to inspect and convert from RSM terms (e.g., FO, TWI, SO, PQ), if any, in model formula to equivalent LM terms",
+    "title": "Convert N Models from RSM terms (if any) to expanded terms",
+    "navigation": "Convert N Models (expand RSM)",
+    "modelselector1": "Select one or more models to inspect if you have used any RSM terms (e.g., FO, TWI, SO, PQ) in the model formula. If so, convert the RSM terms to equivalent expanded standard formula terms (e.g., FO(A, B) => A + B and PQ(X,Y) => I(X^2) + I(Y^2) ). This conversion may be necessary, as many of the Model Evaluation analyses may not work if your model formula contains RSM terms.",
     "outputModeLabel": "Converted model(s)",
     "outputModeOverride": "Override the original model(s)",
     "outputModeNew": "Save as new model(s) with a suffix",

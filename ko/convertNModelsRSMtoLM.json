@@ -1,13 +1,13 @@
 {
-  "title": "RSM 용어(있는 경우)의 N 모델을 LM 용어로 변환",
-  "navigation": "N 모델 변환 (RSM에서 LM으로)",
-  "modelselector1": "모델 수식에서 RSM 용어(예: FO, TWI, SO, PQ)로부터 검사하고 변환할 하나 이상의 모델을 선택하십시오(있는 경우) 해당 LM 용어로",
+  "title": "RSM 용어(있는 경우)에서 확장된 용어로 N 모델 변환",
+  "navigation": "N 모델 변환 (RSM 확장)",
+  "modelselector1": "모델 수식에 RSM 용어(예: FO, TWI, SO, PQ)를 사용한 경우, 검사할 하나 이상의 모델을 선택하십시오. 그렇다면 RSM 용어를 동등한 확장된 표준 수식 용어(예: FO(A, B) => A + B 및 PQ(X,Y) => I(X^2) + I(Y^2) )로 변환하십시오. 모델 수식에 RSM 용어가 포함되어 있으면 많은 모델 평가 분석이 작동하지 않을 수 있으므로 이 변환이 필요할 수 있습니다.",
   "outputModeLabel": "변환된 모델(들)",
-  "outputModeOverride": "원래 모델(들)을 덮어쓰기",
+  "outputModeOverride": "원래 모델(들) 덮어쓰기",
   "outputModeNew": "접미사를 가진 새 모델(들)로 저장",
-  "suffixLabel": "새 모델 이름(들)의 접미사",
+  "suffixLabel": "새 모델 이름(들)을 위한 접미사",
   "help": {
-    "title": "RSM 용어(있는 경우)의 N 모델을 LM 용어로 변환",
+    "title": "RSM 용어(있는 경우)에서 LM 용어로 N 모델 변환",
     "r_help": "help(rsm)",
     "body": "\n               \n                "
   }

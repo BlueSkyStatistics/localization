@@ -1,13 +1,13 @@
 {
-  "title": "RSM terimlerinden (varsa) LM terimlerine N Modellerini Dönüştür",
-  "navigation": "N Modellerini Dönüştür (RSM'den LM'ye)",
-  "modelselector1": "Model formülündeki RSM terimlerinden (örneğin, FO, TWI, SO, PQ) eşdeğer LM terimlerine incelemek ve dönüştürmek için bir veya daha fazla model seçin (varsa)",
+  "title": "RSM terimlerinden (varsa) N Modellerini genişletilmiş terimlere dönüştür",
+  "navigation": "N Modellerini Dönüştür (RSM'yi genişlet)",
+  "modelselector1": "Model formülünde herhangi bir RSM terimi (örneğin, FO, TWI, SO, PQ) kullanmışsanız, incelemek için bir veya daha fazla model seçin. Eğer öyleyse, RSM terimlerini eşdeğer genişletilmiş standart formül terimlerine dönüştürün (örneğin, FO(A, B) => A + B ve PQ(X,Y) => I(X^2) + I(Y^2) ). Bu dönüşüm gerekli olabilir, çünkü Model Değerlendirme analizlerinin çoğu, model formülünüz RSM terimleri içeriyorsa çalışmayabilir.",
   "outputModeLabel": "Dönüştürülmüş model(ler)",
   "outputModeOverride": "Orijinal model(ler)i geçersiz kıl",
-  "outputModeNew": "Yeni model(ler) olarak kaydet ve bir ek ile",
+  "outputModeNew": "Yeni model(ler) olarak kaydet, bir ek ile",
   "suffixLabel": "Yeni model adı(lar)ı için ek",
   "help": {
-    "title": "RSM terimlerinden (varsa) LM terimlerine N Modellerini Dönüştür",
+    "title": "RSM terimlerinden (varsa) N Modellerini LM terimlerine dönüştür",
     "r_help": "help(rsm)",
     "body": "\n               \n                "
   }

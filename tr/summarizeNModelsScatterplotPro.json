@@ -1,20 +1,20 @@
 {
-  "title": "Dağılım grafiği model uyumundan üretilen N Modelleri Özetle",
-  "navigation": "Bir Dağılım Grafiğinden N Modelleri Özetle",
+  "title": "Kalan Grafiklerle N Modellerini Özetle (örneğin, Scatterplot model uyumundan modeller)",
+  "navigation": "Grafiklerle N Modellerini Özetle",
   "label1": "N modellerini özetle.",
   "label2": "Aşağıdaki sınıflardan modelleri seçin (R sınıfı parantez içinde aşağıda)",
   "label3": "Doğrusal modeller (lm), Genelleştirilmiş doğrusal model (glm), Doğrusal karışık etkiler modeli (lme), Sıralı Lojistik veya Probit Regresyon (polr), Orantılı tehlike modeli (coxph), Genelleştirilmiş en küçük kareler kullanarak doğrusal model (gls), Hayatta kalma regresyon modeli (survreg), Yerel Polinom Regresyon Uygulaması (loess), Doğrusal olmayan en küçük kareler modeli (nls), Çoklu Log-Doğrusal Modeller (multinom)",
   "label4": "**NOT: Model Ayarlama (sınıf train) ile oluşturulan modeller desteklenmemektedir",
-  "modelselector1": "Özetlemek için bir veya daha fazla model seçin (lm, glm, kuadratik veya kübik modeller olmalıdır)",
+  "modelselector1": "Özetlemek için bir veya daha fazla model seçin (lm, kuadratik, kübik, glm, rsm modelleri olmalıdır)",
   "showModelEquationChk": "Model denklemini göster",
   "showModelDetailsChk": "Model detaylarını göster",
   "showResidualPlotsChk": "Uygulanan model için kalıntı grafiklerini göster (önce bir Uygulama modelini seçin)",
-  "checkShapiroNormalityTestChk": "Kalıntılar için Shapiro normallik testi",
-  "checkADNormalityTestChk": "Kalıntılar için Anderson-Darling normallik testi",
+  "checkShapiroNormalityTestChk": "Kalıntılar için Shapiro normalite testi",
+  "checkADNormalityTestChk": "Kalıntılar için Anderson-Darling normalite testi",
   "flipaxisPPplotChk": "P-P grafiği için ekseni çevir",
   "deGroupPlotsChk": "Grafikleri bireysel olarak çizmek için gruplardan ayır",
   "help": {
-    "title": "Bir Dağılım Grafiğinden Üretilen Birden Fazla Y için N Modelleri Özetle",
+    "title": "Scatterplot'tan Üretilen Birden Fazla Y için N Modellerini Özetle",
     "r_help": "help(anova,package='stats')",
     "body": "\n               \n                "
   }

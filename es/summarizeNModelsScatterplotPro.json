@@ -1,27 +1,21 @@
 {
-  "language": {
-    "language": "spanish",
-    "key": "es"
-  },
-  "original_json": {
-    "title": "Resumir N Modelos generados a partir del ajuste del modelo de diagrama de dispersión",
-    "navigation": "Resumir N Modelos (a partir de un diagrama de dispersión)",
-    "label1": "Resumir N modelos.",
-    "label2": "Seleccionar modelos de las siguientes clases (la clase R está entre paréntesis a continuación)",
-    "label3": "Modelos lineales (lm), Modelo lineal generalizado (glm), Modelo de efectos mixtos lineales (lme), Regresión logística ordenada o Probit (polr), Modelo de riesgo proporcional (coxph), Modelo lineal utilizando mínimos cuadrados generalizados (gls), Modelo de regresión de supervivencia (survreg), Ajuste de regresión polinómica local (loess), Modelo de mínimos cuadrados no lineales (nls), Modelos log-lineales multinomiales (multinom)",
-    "label4": "**NOTA: Los modelos creados a partir de la Ajuste de Modelos (clase train) no son compatibles",
-    "modelselector1": "Seleccionar uno o más modelos para resumir (deben ser modelos lm, glm, cuadráticos o cúbicos)",
-    "showModelEquationChk": "Mostrar ecuación del modelo",
-    "showModelDetailsChk": "Mostrar detalles del modelo",
-    "showResidualPlotsChk": "Mostrar gráficos de residuos para el modelo ajustado (seleccione primero un modelo de ajuste)",
-    "checkShapiroNormalityTestChk": "Prueba de normalidad de Shapiro para residuos",
-    "checkADNormalityTestChk": "Prueba de normalidad de Anderson-Darling para residuos",
-    "flipaxisPPplotChk": "Invertir ejes para el gráfico P-P",
-    "deGroupPlotsChk": "Desagrupar gráficos para graficar individualmente",
-    "help": {
-      "title": "Resumir N Modelos para Múltiples Ys generados a partir de un diagrama de dispersión",
-      "r_help": "help(anova,package='stats')",
-      "body": "\n               \n                "
-    }
+  "title": "Resumir N Modelos con Gráficos Residuales (por ejemplo, modelos del ajuste del modelo de dispersión)",
+  "navigation": "Resumir N Modelos con Gráficos",
+  "label1": "Resumir N modelos.",
+  "label2": "Seleccionar modelos de las siguientes clases (la clase R está entre paréntesis a continuación)",
+  "label3": "Modelos lineales (lm), Modelo lineal generalizado (glm), Modelo de efectos mixtos lineales (lme), Regresión logística o Probit ordenada (polr), Modelo de riesgo proporcional (coxph), Modelo lineal utilizando mínimos cuadrados generalizados (gls), Modelo de regresión de supervivencia (survreg), Ajuste de regresión polinómica local (loess), Modelo de mínimos cuadrados no lineales (nls), Modelos log-lineales multinomiales (multinom)",
+  "label4": "**NOTA: Los modelos creados a partir de la Ajuste de Modelos (clase train) no son compatibles",
+  "modelselector1": "Seleccionar uno o más modelos para resumir (deben ser modelos lm, cuadráticos, cúbicos, glm, rsm)",
+  "showModelEquationChk": "Mostrar ecuación del modelo",
+  "showModelDetailsChk": "Mostrar detalles del modelo",
+  "showResidualPlotsChk": "Mostrar gráficos residuales para el modelo ajustado (seleccione primero un modelo de ajuste)",
+  "checkShapiroNormalityTestChk": "Prueba de normalidad de Shapiro para los residuos",
+  "checkADNormalityTestChk": "Prueba de normalidad de Anderson-Darling para los residuos",
+  "flipaxisPPplotChk": "Invertir ejes para el gráfico P-P",
+  "deGroupPlotsChk": "Desagrupar gráficos para graficar individualmente",
+  "help": {
+    "title": "Resumir N Modelos para Múltiples Ys generados a partir de un Gráfico de Dispersión",
+    "r_help": "help(anova,package='stats')",
+    "body": "\n               \n                "
   }
 }

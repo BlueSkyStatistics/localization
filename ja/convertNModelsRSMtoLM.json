@@ -1,13 +1,13 @@
 {
-  "title": "RSM用語からLM用語へのNモデルの変換（該当する場合）",
-  "navigation": "Nモデルの変換（RSMからLM）",
-  "modelselector1": "調査し、RSM用語（例：FO、TWI、SO、PQ）から同等のLM用語に変換するために、1つ以上のモデルを選択してください",
+  "title": "RSM用語（ある場合）から拡張用語へのNモデルの変換",
+  "navigation": "Nモデルの変換（RSMを拡張）",
+  "modelselector1": "モデル式にRSM用語（例：FO、TWI、SO、PQ）を使用している場合は、検査するために1つ以上のモデルを選択してください。もしそうであれば、RSM用語を同等の拡張標準式用語（例：FO(A, B) => A + BおよびPQ(X,Y) => I(X^2) + I(Y^2)）に変換してください。この変換は必要な場合があります。モデル式にRSM用語が含まれていると、多くのモデル評価分析が機能しない可能性があります。",
   "outputModeLabel": "変換されたモデル",
   "outputModeOverride": "元のモデルを上書きする",
   "outputModeNew": "接尾辞を付けて新しいモデルとして保存",
   "suffixLabel": "新しいモデル名の接尾辞",
   "help": {
-    "title": "RSM用語からLM用語へのNモデルの変換（該当する場合）",
+    "title": "RSM用語（ある場合）からLM用語へのNモデルの変換",
     "r_help": "help(rsm)",
     "body": "\n               \n                "
   }

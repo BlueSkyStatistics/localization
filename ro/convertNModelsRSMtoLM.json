@@ -1,13 +1,13 @@
 {
-  "title": "Convertiți N modele din termenii RSM (dacă există) în termenii LM",
-  "navigation": "Convertiți N modele (RSM în LM)",
-  "modelselector1": "Selectați unul sau mai multe modele pentru a le inspecta și a le converti din termenii RSM (de exemplu, FO, TWI, SO, PQ), dacă există, în formula modelului în termenii LM echivalenți",
+  "title": "Convertiți N modele din termenii RSM (dacă există) în termeni extinși",
+  "navigation": "Convertiți N modele (extindeți RSM)",
+  "modelselector1": "Selectați unul sau mai multe modele pentru a verifica dacă ați folosit termeni RSM (de exemplu, FO, TWI, SO, PQ) în formula modelului. Dacă da, convertiți termenii RSM în termeni echivalenți de formulă standard extinsă (de exemplu, FO(A, B) => A + B și PQ(X,Y) => I(X^2) + I(Y^2)). Această conversie poate fi necesară, deoarece multe dintre analizele de evaluare a modelului s-ar putea să nu funcționeze dacă formula modelului conține termeni RSM.",
   "outputModeLabel": "Model(e) convertit(e)",
-  "outputModeOverride": "Suprascrie modelul(e) original(e)",
+  "outputModeOverride": "Suprascrieți model(e) original(e)",
   "outputModeNew": "Salvați ca model(e) nou(e) cu un sufix",
-  "suffixLabel": "Sufix pentru numele modelului(nor) nou(e)",
+  "suffixLabel": "Sufix pentru numele modelului nou(nouă)",
   "help": {
-    "title": "Convertiți N modele din termenii RSM (dacă există) în termenii LM",
+    "title": "Convertiți N modele din termenii RSM (dacă există) în termeni LM",
     "r_help": "help(rsm)",
     "body": "\n               \n                "
   }

@@ -1,27 +1,21 @@
 {
-  "language": {
-    "language": "japanese",
-    "key": "ja"
-  },
-  "original_json": {
-    "title": "散布図モデルフィットから生成されたNモデルの要約",
-    "navigation": "散布図からのNモデルの要約",
-    "label1": "Nモデルを要約します。",
-    "label2": "以下のクラスのモデルを選択してください（Rクラスは下に括弧で示されています）",
-    "label3": "線形モデル (lm)、一般化線形モデル (glm)、線形混合効果モデル (lme)、順序ロジスティックまたはプロビット回帰 (polr)、比例ハザードモデル (coxph)、一般化最小二乗法を使用した線形モデル (gls)、生存回帰モデル (survreg)、局所多項式回帰フィッティング (loess)、非線形最小二乗モデル (nls)、多項ロジスティック線形モデル (multinom)",
-    "label4": "**注意: モデルチューニングから作成されたモデル (クラス train) はサポートされていません",
-    "modelselector1": "要約するモデルを1つ以上選択してください（lm、glm、二次または三次モデルである必要があります）",
-    "showModelEquationChk": "モデル方程式を表示",
-    "showModelDetailsChk": "モデルの詳細を表示",
-    "showResidualPlotsChk": "フィットしたモデルの残差プロットを表示します（最初にフィットモデルを選択してください）",
-    "checkShapiroNormalityTestChk": "残差のシャピロ正規性検定",
-    "checkADNormalityTestChk": "残差のアンダーソン・ダーリング正規性検定",
-    "flipaxisPPplotChk": "P-Pプロットの軸を反転",
-    "deGroupPlotsChk": "プロットを個別にプロットするためにグループ解除",
-    "help": {
-      "title": "散布図から生成された複数のYのためのNモデルの要約",
-      "r_help": "help(anova,package='stats')",
-      "body": "\n               \n                "
-    }
+  "title": "残差プロットを用いてNモデルを要約する（例：散布図モデルフィットからのモデル）",
+  "navigation": "プロットを用いてNモデルを要約する",
+  "label1": "Nモデルを要約する。",
+  "label2": "以下のクラスのモデルを選択してください（Rクラスは下に括弧で示されています）",
+  "label3": "線形モデル（lm）、一般化線形モデル（glm）、線形混合効果モデル（lme）、順序ロジスティックまたはプロビット回帰（polr）、比例ハザードモデル（coxph）、一般化最小二乗法を用いた線形モデル（gls）、生存回帰モデル（survreg）、局所多項式回帰フィッティング（loess）、非線形最小二乗モデル（nls）、多項ロジスティック線形モデル（multinom）",
+  "label4": "**注意：モデルチューニングから作成されたモデル（クラスtrain）はサポートされていません",
+  "modelselector1": "要約するモデルを1つ以上選択してください（lm、二次、三次、glm、rsmモデルである必要があります）",
+  "showModelEquationChk": "モデル方程式を表示",
+  "showModelDetailsChk": "モデルの詳細を表示",
+  "showResidualPlotsChk": "フィットしたモデルの残差プロットを表示（最初にフィットモデルを選択してください）",
+  "checkShapiroNormalityTestChk": "残差のシャピロ正規性検定",
+  "checkADNormalityTestChk": "残差のアンダーソン・ダーリング正規性検定",
+  "flipaxisPPplotChk": "P-Pプロットの軸を反転",
+  "deGroupPlotsChk": "プロットを個別にプロットするためにグループ解除",
+  "help": {
+    "title": "散布図から生成された複数のYのためのNモデルを要約する",
+    "r_help": "help(anova,package='stats')",
+    "body": "\n               \n                "
   }
 }

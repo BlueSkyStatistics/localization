@@ -1,11 +1,11 @@
 {
-  "title": "Convertir N Modelos de términos RSM (si los hay) a términos LM",
-  "navigation": "Convertir N Modelos (RSM a LM)",
-  "modelselector1": "Seleccione uno o más modelos para inspeccionar y convertir de términos RSM (por ejemplo, FO, TWI, SO, PQ), si los hay, en la fórmula del modelo a términos LM equivalentes",
+  "title": "Convertir N Modelos de términos RSM (si los hay) a términos expandido",
+  "navigation": "Convertir N Modelos (expandir RSM)",
+  "modelselector1": "Seleccione uno o más modelos para inspeccionar si ha utilizado términos RSM (por ejemplo, FO, TWI, SO, PQ) en la fórmula del modelo. Si es así, convierta los términos RSM a términos de fórmula estándar expandida equivalentes (por ejemplo, FO(A, B) => A + B y PQ(X,Y) => I(X^2) + I(Y^2)). Esta conversión puede ser necesaria, ya que muchos de los análisis de Evaluación de Modelos pueden no funcionar si su fórmula de modelo contiene términos RSM.",
   "outputModeLabel": "Modelo(s) convertido(s)",
   "outputModeOverride": "Sobrescribir el/los modelo(s) original(es)",
   "outputModeNew": "Guardar como nuevo(s) modelo(s) con un sufijo",
-  "suffixLabel": "Sufijo para el/los nuevo(s) nombre(s) de modelo",
+  "suffixLabel": "Sufijo para el/los nombre(s) del nuevo modelo",
   "help": {
     "title": "Convertir N Modelos de términos RSM (si los hay) a términos LM",
     "r_help": "help(rsm)",

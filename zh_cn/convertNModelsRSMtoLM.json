@@ -1,13 +1,13 @@
 {
-  "title": "将 N 模型从 RSM 术语（如有）转换为 LM 术语",
-  "navigation": "将 N 模型（RSM 转 LM）",
-  "modelselector1": "选择一个或多个模型以检查并从 RSM 术语（例如，FO、TWI、SO、PQ）转换为等效的 LM 术语（如有），在模型公式中",
-  "outputModeLabel": "转换后的模型",
+  "title": "将 N 个模型从 RSM 术语（如有）转换为扩展术语",
+  "navigation": "转换 N 个模型（扩展 RSM）",
+  "modelselector1": "选择一个或多个模型以检查您是否在模型公式中使用了任何 RSM 术语（例如，FO、TWI、SO、PQ）。如果是，请将 RSM 术语转换为等效的扩展标准公式术语（例如，FO(A, B) => A + B 和 PQ(X,Y) => I(X^2) + I(Y^2)）。此转换可能是必要的，因为如果您的模型公式包含 RSM 术语，许多模型评估分析可能无法正常工作。",
+  "outputModeLabel": "已转换的模型",
   "outputModeOverride": "覆盖原始模型",
   "outputModeNew": "另存为带后缀的新模型",
   "suffixLabel": "新模型名称的后缀",
   "help": {
-    "title": "将 N 模型从 RSM 术语（如有）转换为 LM 术语",
+    "title": "将 N 个模型从 RSM 术语（如有）转换为 LM 术语",
     "r_help": "help(rsm)",
     "body": "\n               \n                "
   }

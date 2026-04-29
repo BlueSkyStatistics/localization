@@ -1,27 +1,21 @@
 {
-  "language": {
-    "language": "romanian",
-    "key": "ro"
-  },
-  "original_json": {
-    "title": "Rezumați N modele generate din ajustarea modelului Scatterplot",
-    "navigation": "Rezumați N modele (dintr-un Scatterplot)",
-    "label1": "Rezumați N modele.",
-    "label2": "Selectați modele din următoarele clase (clasa R este între paranteze mai jos)",
-    "label3": "Modele liniare (lm), Model liniar generalizat (glm), Model cu efecte mixte liniare (lme), Regresie logistică ordonată sau Probit (polr), Model de hazard proporțional (coxph), Model liniar folosind cele mai mici pătrate generalizate (gls), Model de regresie pentru supraviețuire (survreg), Ajustare locală a regresiei polinomiale (loess), Model de cele mai mici pătrate neliniare (nls), Modele log-lineare multinomiale (multinom)",
-    "label4": "**NOTĂ: Modelele create din ajustarea modelului (clasa train) nu sunt acceptate",
-    "modelselector1": "Selectați unul sau mai multe modele pentru a le rezuma (trebuie să fie lm, glm, modele cuadratice sau cubice)",
-    "showModelEquationChk": "Arată ecuația modelului",
-    "showModelDetailsChk": "Arată detaliile modelului",
-    "showResidualPlotsChk": "Arată graficele reziduale pentru modelul ajustat (selectați mai întâi un model de ajustare)",
-    "checkShapiroNormalityTestChk": "Testul de normalitate Shapiro pentru reziduuri",
-    "checkADNormalityTestChk": "Testul de normalitate Anderson-Darling pentru reziduuri",
-    "flipaxisPPplotChk": "Răsturnați axa pentru graficul P-P",
-    "deGroupPlotsChk": "Degrupați graficele pentru a le plota individual",
-    "help": {
-      "title": "Rezumați N modele pentru multiple Ys generate dintr-un Scatterplot",
-      "r_help": "help(anova,package='stats')",
-      "body": "\n               \n                "
-    }
+  "title": "Rezumați N modele cu grafice reziduale (de exemplu, modele din ajustarea modelului Scatterplot)",
+  "navigation": "Rezumați N modele cu grafice",
+  "label1": "Rezumați N modele.",
+  "label2": "Selectați modele din următoarele clase (clasa R este între paranteze mai jos)",
+  "label3": "Modele liniare (lm), Model liniar generalizat (glm), Model cu efecte mixte liniare (lme), Regresie logistică ordonată sau Probit (polr), Model de hazard proporțional (coxph), Model liniar folosind cele mai mici pătrate generalizate (gls), Model de regresie pentru supraviețuire (survreg), Ajustare locală a regresiei polinomiale (loess), Model non-liniar cu cele mai mici pătrate (nls), Modele log-lineare multinomiale (multinom)",
+  "label4": "**NOTĂ: Modelele create din ajustarea modelului (clasa train) nu sunt acceptate",
+  "modelselector1": "Selectați unul sau mai multe modele pentru a le rezuma (trebuie să fie lm, quadratic, cubic, glm, modele rsm)",
+  "showModelEquationChk": "Arată ecuația modelului",
+  "showModelDetailsChk": "Arată detaliile modelului",
+  "showResidualPlotsChk": "Arată graficele reziduale pentru modelul ajustat (selectați mai întâi un model de ajustare)",
+  "checkShapiroNormalityTestChk": "Testul de normalitate Shapiro pentru reziduuri",
+  "checkADNormalityTestChk": "Testul de normalitate Anderson-Darling pentru reziduuri",
+  "flipaxisPPplotChk": "Răsturnați axa pentru graficul P-P",
+  "deGroupPlotsChk": "Degrupați graficele pentru a le plota individual",
+  "help": {
+    "title": "Rezumați N modele pentru mai multe Y generate dintr-un Scatterplot",
+    "r_help": "help(anova,package='stats')",
+    "body": "\n               \n                "
   }
 }
