@@ -1,14 +1,16 @@
 {
   "title": "Deney Tasarımı (DoE) analizi - Eğrilik Testi ve Doğrusal Model",
   "navigation": "Tasarım Analizi - Doğrusal Model ve Eğrilik Testi",
-  "modelname": "Model Adını Girin",
+  "modelname": "Model Adını Girin (veri seti adı otomatik olarak eklenecektir)",
   "dependent": "Yanıt (bağımlı) değişken",
   "independent": "Bağımsız değişken(ler)",
+  "blockID": "Modelde blok kimliğinin dahil edilip edilmeyeceği",
   "curv_test_degree": "Eğrilik Testi için Modeldeki Etkileşim terimleri: Derece (etkileşim terimi yoksa ve yalnızca ana etkiler için 1; aksi takdirde 2. seviye etkileşimler için 2, 3. seviye etkileşimler için 3 yazın, vb.)",
   "model_degree": "Model için Etkileşim terimleri (herhangi bir merkez/eksensel nokta olmadan): Derece (etkileşim terimi yoksa ve yalnızca ana etkiler için 1; aksi takdirde 2. seviye etkileşimler için 2, 3. seviye etkileşimler için 3 yazın, vb.)",
+  "showDesignWithoutCenterpointsChk": "Doğrusal analizde kullanılan Merkez Noktalar (ve varsa eksensel noktalar) olmadan tasarım verilerini göster",
   "axialCenterPointRowsChk": "Varsa, DoE tasarımındaki merkez noktaları ve eksensel/yıldız noktaları için satır numaralarını belirleyin",
-  "effectsplot": "Tüm etkiler grafiği (Derece belirtilmediğinde yalnızca oluşturulur)",
-  "generateplotchk": "Artıklar ile uyumlu, normal Q-Q, ölçek-konum ve artıklar ile kaldıraç grafiği oluştur",
+  "effectsplot": "Tüm etkiler grafiği (merkez/eksensel noktalar olmadan model için Derece = 1 olduğunda yalnızca üretilir)",
+  "generateplotchk": "Artıklar ile uyumlu, normal Q-Q, ölçek-konum ve artılar ile kaldıraç grafiği oluştur",
   "twoLevelDesignTypeChk": "Aşağıdaki seçenekler yalnızca 2 seviyeli Faktör Tasarımı için geçerlidir (örneğin, pb, FrF2, Tam Faktöriyel...)",
   "AliasChk": "Taklitleri belirle",
   "AliasCodedChk": "Kodlanmış taklitler",
@@ -17,8 +19,19 @@
   "DanielplotHalfChk": "Yarı Normal",
   "DanielplotAlpha": "Alpha (etiketleme için anlamlılık seviyesi)",
   "MEPlotChk": "MEPlot (ana etkiler grafikleri)",
+  "MEPlotRefLineSectionLbl": "Yatay referans çizgileri (isteğe bağlı)",
+  "MEPlotyIntercept": "Yatay referans çizgileri için virgülle ayrılmış Y kesişim değeri(lerini) girin, örn. 150, 166, 185",
+  "MEPlothorizontalLinelabel": "Referans çizgileri için virgülle ayrılmış etiketleri belirtin (tırnak olmadan), örn. LSL, Hedef, USL",
   "IAPlotChk": "IAPlot (etkileşim grafikleri)",
   "IAPlotShowAliasChk": "Grafikte taklitleri göster",
+  "showParetoPlotsChk": "Standartlaştırılmış etkilerin Pareto grafiği",
+  "observationDiagnosticsTableChk": "Gözlem tanı tablosunu göster",
+  "VIFChk": "Varyans Şişirme Faktörlerini (VIF) göster",
+  "showResidualPlotsChk": "RSM modeli için artı grafikleri göster",
+  "checkShapiroNormalityTestChk": "Artılar için Shapiro normalite testi",
+  "checkADNormalityTestChk": "Artılar için Anderson-Darling normalite testi",
+  "flipaxisPPplotChk": "P-P grafiği için ekseni çevir",
+  "deGroupPlotsChk": "Grafikleri bireysel olarak çizmek için gruplamayı kaldır",
   "cubePlotChk": "Modelleme ortalamaları ile üç faktör etkileşimlerinin küp grafiği",
   "cubePlotModelMeanChk": "Hem modelleme ortalamalarını hem de modelleme dışı ortalamaları göster",
   "cubePlotIndependent": "Küp grafiği için üç bağımsız değişken(ler) seçin",
@@ -26,6 +39,6 @@
   "help": {
     "title": "Eğrilik Testi Doğrusal Model ile Deney Tasarımı analizi",
     "r_help": "help(lm, package = 'stats')",
-    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDeney Tasarımı (DoE) analizi - Eğrilik Testi ile bir Doğrusal Model oluşturun ve ardından yalnızca küp noktaları ile bir Doğrusal Model oluşturun \n\t\t\t\tonly (herhangi bir merkez noktası ve eksensel nokta varsa kaldırın)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBu diyalog, faktöriyel tasarım verilerine bir doğrusal regresyon modeli uydurarak Deney Tasarımı (DOE) analizi gerçekleştirir, \n\t\t\t\tmerkez noktaları mevcut olduğunda isteğe bağlı eğrilik testi ile. \"Model Adını Girin\" \n\t\t\t\talanına modeliniz için bir ad girerek başlayın; bu ad, analiz oturumunuz boyunca model nesnesini referans almak için kullanılacaktır. Yanıt (bağımlı) \n\t\t\t\tdeğişkeninizi, Kaynak Değişkenler listesinden Yanıt alanına ok butonunu kullanarak taşıyarak seçin. Bir veya daha fazla bağımsız \n\t\t\t\tdeğişken (örneğin, Sıcaklık, Basınç ve Seyreltici gibi faktörler) seçin ve bunları ilgili \n\t\t\t\tok butonunu kullanarak Bağımsız Değişkenler alanına taşıyın.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBirinci derece alanı, eğrilik test modeli için etkileşim seviyesini kontrol eder; bu model, merkezler dahil tüm veri satırları kullanılarak uydurulur (herhangi bir eksensel nokta hariç); \n\t\t\t\tbu alanı yalnızca ana etkiler için 1, iki yönlü etkileşimler için 2 ve üç yönlü etkileşimler için 3 olarak ayarlayın. İkinci derece alanı, \n\t\t\t\tbirincil doğrusal model için etkileşim seviyesini kontrol eder; bu model, merkez ve eksensel noktalar otomatik olarak kaldırıldıktan sonra yalnızca faktöriyel (küp) noktalar kullanılarak uydurulur. \"Merkez noktaları ve eksensel/yıldız noktaları için satır numaralarını belirleyin\" seçeneğini işaretleyerek, diyalogun tasarımınızdaki hangi satırların merkez noktaları, küp noktaları veya eksensel/yıldız noktaları olduğunu otomatik olarak tespit etmesini ve raporlamasını sağlayın.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEğer tasarımınızda en az iki merkez noktası tespit edilirse, otomatik olarak bir eğrilik testi gerçekleştirilecek ve \n\t\t\t\ttekrarlanan merkez noktalarından tahmin edilen özel bir Eğrilik satırı ve Saf Hata satırı içeren bir ANOVA tablosu üretilecektir. \n\t\t\t\tEğrilik F-testi, merkez noktalarındaki ortalama yanıtı faktöriyel noktalarla karşılaştırarak, daha yüksek dereceli (kuadratik) bir modelin yanıt yüzeyini yeterince tanımlamak için gerekli olup olmadığını belirlemenize yardımcı olur. Eğer öyleyse, DoE altında CCD tasarım menüsünü kullanarak tasarıma eksensel noktalar ekleyin.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"2 seviyeli Faktör Tasarımı\" bölümündeki seçenekler, yalnızca FrF2, pb veya tam faktöriyel fonksiyonları ile oluşturulan tasarımlar için geçerlidir, \n\t\t\t\tve taklit tespiti, Daniel grafikleri, ana etkiler grafikleri, etkileşim grafikleri ve küp grafikleri içerir. Küp grafiği seçeneği, üç faktörlü bir tasarımın sekiz köşesindeki ortalama yanıtı görselleştirmenizi sağlar ve isteğe bağlı olarak model tahminli (modelleme) \n\t\t\t\tortalama ile ham gözlemlenen ortalamaları üst üste bindirmenizi sağlar.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDeney Tasarımı (DoE) analizi - Eğrilik Testi ile Doğrusal Model oluşturma ve ardından yalnızca küp noktaları ile bir Doğrusal Model oluşturma (herhangi bir merkez noktası ve eksensel noktayı kaldırarak, varsa)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBu diyalog, merkez noktaları mevcut olduğunda eğrilik testi ile faktöriyel tasarım verilerine doğrusal regresyon modeli uydurarak Deney Tasarımı (DOE) analizi gerçekleştirir. Modeliniz için \"Model Adını Girin\" alanına bir ad girerek başlayın; bu ad, analiz oturumunuz boyunca model nesnesini referans almak için kullanılacaktır. Yanıt (bağımlı) değişkeninizi, Kaynak Değişkenler listesinden Yanıt alanına ok butonunu kullanarak taşıyarak seçin. Bir veya daha fazla bağımsız değişken (örneğin, Sıcaklık, Basınç ve Seyreltici gibi faktörler) seçin ve bunları ilgili ok butonunu kullanarak Bağımsız Değişkenler alanına taşıyın.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBirinci derece alanı, eğrilik testi modeli için etkileşim seviyesini kontrol eder; bu model, merkezler dahil tüm veri satırları kullanılarak uydurulur (varsa eksensel noktalar hariç); bunu yalnızca ana etkiler için 1, iki yönlü etkileşimler için 2 ve üç yönlü etkileşimler için 3 olarak ayarlayın. İkinci derece alanı, yalnızca merkez ve eksensel noktalar otomatik olarak kaldırıldıktan sonra faktöriyel (küp) noktalar kullanılarak uydurulan birincil doğrusal model için etkileşim seviyesini kontrol eder. \"Merkez noktaları ve eksensel/yıldız noktaları için satır numaralarını belirleyin\" seçeneğini işaretleyerek, diyalogun tasarımınızdaki hangi satırların merkez noktaları, küp noktaları veya eksensel/yıldız noktaları olduğunu otomatik olarak tespit etmesini ve raporlamasını sağlayın.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEğer tasarımınızda en az iki merkez noktası tespit edilirse, otomatik olarak bir eğrilik testi gerçekleştirilecek ve çoğaltılmış merkez noktalarından tahmin edilen özel bir Eğrilik satırı ve Saf Hata satırı içeren bir ANOVA tablosu üretilecektir. Eğrilik F-testi, merkez noktalarındaki ortalama yanıtı faktöriyel noktalarla karşılaştırarak, daha yüksek dereceli (kuadratik) bir modelin yanıt yüzeyini yeterince tanımlamak için gerekli olup olmadığını belirlemenize yardımcı olur. Eğer öyleyse, DoE altında CCD tasarım menüsünü kullanarak tasarıma eksensel noktalar ekleyin.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"2 seviyeli Faktör Tasarımı\" bölümündeki seçenekler, yalnızca FrF2, pb veya tam faktöriyel fonksiyonları ile oluşturulan tasarımlara özgüdür ve taklit tespiti, Daniel grafikleri, ana etkiler grafikleri, etkileşim grafikleri ve küp grafikleri içerir. Küp grafiği seçeneği, üç faktörlü bir tasarımın sekiz köşesindeki ortalama yanıtı görselleştirmenizi sağlar ve isteğe bağlı olarak model tahminli (modelleme) ortalamaları, ham gözlemlenen ortalamaların yanında gösterir.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\n\t\t\t"
   }
 }

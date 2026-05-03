@@ -1,9 +1,9 @@
 {
     "title": "Design of Experiments analysis with Response Surface Model (Quantitative)",
     "navigation": "Design Analysis - Response Surface Model",
-    "modelname": "Enter Response Surface model name",
+    "modelname": "RSM Model Name (dataset name will be appended automatically)",
     "dependent": "Response (dependent) variable",
-    "formulaboxhint": "You can also enter SO(var1, var2,...) as shortcut for main effects, interactions, and quadratic terms or FO(...) for just main effects, or TWI for two way interactions as RSM macro in the above formula builder box.",
+    "formulaboxhint": "Recommendation: Use RSM macro terms (FO, TWI, PQ, SO) for numeric factors in the formula builder. If your design is blocked, include the block column BEFORE the RSM macro: e.g., Blocks + SO(Temp, Pressure, Thinner) or Block.ccd + SO(Temp, Pressure, Thinner, Speed, Angle). The block term is automatically detected and forced into the model at every stepwise step. Type SO(var1, var2,...) for main effects + interactions + quadratics, FO(...) for main effects only, TWI(...) for two-way interactions.",
     "generateContourPlotChk": "Display Contour(plots)",
     "generateRSMPlotChk": "Display Response Surface (plots)",
     "generatePathSteepestAscentChk": "Show path of steepest ascent from ridge analysis",
@@ -26,6 +26,8 @@
     "checkADNormalityTestChk": "Anderson-Darling normality test for residuals",
     "flipaxisPPplotChk": "Flip axis for the P-P plot",
     "deGroupPlotsChk": "De-group plots to plot individually",
+    "observationDiagnosticsChk": "Show observation diagnostics table (Std. Residuals, Leverage, Cook's D, DFFITS)",
+    "VIFChk": "Show Variance Inflation Factors (VIF) for main effects",
     "help": {
         "title": "Response Surface Model with a model formula builder",
         "r_help": "help(rsm, package = rsm)",

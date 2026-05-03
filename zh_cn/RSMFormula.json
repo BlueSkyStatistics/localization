@@ -1,13 +1,13 @@
 {
   "title": "实验设计分析与响应面模型（定量）",
   "navigation": "设计分析 - 响应面模型",
-  "modelname": "输入响应面模型名称",
+  "modelname": "RSM 模型名称（数据集名称将自动附加）",
   "dependent": "响应（因变量）",
-  "formulaboxhint": "您还可以输入 SO(var1, var2,...) 作为主效应、交互作用和二次项的快捷方式，或 FO(...) 仅用于主效应，或 TWI 用于双向交互作用，作为上述公式构建器中的 RSM 宏。",
+  "formulaboxhint": "建议：在公式构建器中使用 RSM 宏术语（FO、TWI、PQ、SO）作为数值因子。如果您的设计被阻塞，请在 RSM 宏之前包含阻塞列：例如，Blocks + SO(Temp, Pressure, Thinner) 或 Block.ccd + SO(Temp, Pressure, Thinner, Speed, Angle)。阻塞项会在每个逐步步骤中自动检测并强制进入模型。输入 SO(var1, var2,...) 以获取主效应 + 交互作用 + 二次项，FO(...) 仅用于主效应，TWI(...) 用于双向交互作用。",
   "generateContourPlotChk": "显示轮廓（图）",
   "generateRSMPlotChk": "显示响应面（图）",
-  "generatePathSteepestAscentChk": "显示从岭分析的最陡上升路径",
-  "steepestHandComputedChk": "还显示手动计算的最陡上升路径，单位为自然（未编码）单位（始终从第一原理计算 - 当模型未使用编码数据拟合或启用逐步时非常有用）",
+  "generatePathSteepestAscentChk": "显示从山脊分析的最陡上升路径",
+  "steepestHandComputedChk": "还显示手动计算的最陡上升路径（以自然（未编码）单位显示）（始终从第一原理计算 — 当模型未使用编码数据拟合或启用逐步时非常有用）",
   "stepwiseSectionLbl": "逐步模型选择（可选）",
   "stepwiseChk": "启用逐步模型选择（取消勾选以拟合上述完整模型）",
   "stepwiseMethodLbl": "逐步方法",
@@ -18,17 +18,19 @@
   "alphaEnter": "0.15",
   "alphaRemoveLbl": "移除的 Alpha（用于逐步和后向消除）",
   "alphaRemove": "0.15",
-  "hierarchyChk": "在每一步要求分层模型（推荐 - 强制效应遗传）",
+  "hierarchyChk": "在每一步要求分层模型（推荐 — 强制效应遗传）",
   "showStepDetailChk": "显示选择过程每一步的详细信息",
-  "stepwiseNote": "注意：使用默认 alpha = 0.15。对于前向信息准则（forward_ic），AICc 或 BIC 替代 p 值阈值作为停止准则，避免因重复测试而导致的 Type-I 错误膨胀。分层强制确保如果选择了交互项，则所有其组成的主效应也被保留 - 与效应遗传一致。选择后，使用 rsm() 重新拟合简化模型，因此所有下游输出（轮廓图、表面图、最陡上升、典范分析）保持有效。",
+  "stepwiseNote": "注意：使用默认 alpha = 0.15。对于前向信息准则（forward_ic），AICc 或 BIC 替代 p 值阈值作为停止准则，避免因重复测试而导致的 Type-I 错误膨胀。分层强制确保如果选择了交互项，则所有其组成的主效应也被保留 — 与效应遗传一致。选择后，使用 rsm() 重新拟合简化模型，以便所有下游输出（轮廓图、表面图、最陡上升、典范分析）保持有效。",
   "showResidualPlotsChk": "显示 rsm 模型的残差图",
   "checkShapiroNormalityTestChk": "Shapiro 正态性检验残差",
   "checkADNormalityTestChk": "Anderson-Darling 正态性检验残差",
   "flipaxisPPplotChk": "翻转 P-P 图的轴",
   "deGroupPlotsChk": "去分组图以单独绘制",
+  "observationDiagnosticsChk": "显示观察诊断表（标准残差、杠杆、库克 D、DFFITS）",
+  "VIFChk": "显示主效应的方差膨胀因子（VIF）",
   "help": {
     "title": "带有模型公式构建器的响应面模型",
     "r_help": "help(rsm, package = rsm)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t响应面回归 - 拟合具有响应面组件的线性模型，并生成适当的分析和摘要\n\t\t\t\t<br/> 在公式构建器中，您可以输入 SO(var1, var2, var3, ...) 或 FO(var1, ..) 或 rsm 包中的其他函数 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关更多详细信息，请参见 R 帮助\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>逐步模型选择</b><br/>\n\t\t\t\t启用时，逐步选择识别显著 RSM 项的简化子集。可用的方法：<br/>\n\t\t\t\t<b>逐步</b>：结合前向和后向步骤，使用进入和移除的 alpha 阈值。<br/>\n\t\t\t\t<b>前向选择</b>：从空模型开始，在每一步添加最显著的项。<br/>\n\t\t\t\t<b>后向消除</b>：从完整模型开始，在每一步移除最不显著的项。<br/>\n\t\t\t\t<b>前向信息准则</b>：使用 AICc 或 BIC 作为停止准则，而不是 p 值，这避免了重复测试导致的 Type-I 错误膨胀，并直接惩罚模型复杂性。<br/>\n\t\t\t\t分层强制确保如果选择了交互项或二次项，则所有组成的低阶项也被保留（效应遗传）。<br/>\n\t\t\t\t选择后，使用 rsm() 重新拟合简化公式，因此轮廓图、表面图、最陡上升和典范分析都保持有效。<br/>\n\t\t\t\thelp(step, package = stats)<br/>\n\t\t\t\thelp(stepAIC, package = MASS)<br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t响应面回归 - 拟合具有响应面组件的线性模型，并生成适当的分析和摘要\n\t\t\t\t<br/> 在公式构建器中，您可以输入 SO(var1, var2, var3, ...) 或 FO(var1, ..) 或 rsm 包中的其他函数 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关更多详细信息，请参见 R 帮助\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>逐步模型选择</b><br/>\n\t\t\t\t启用时，逐步选择识别显著 RSM 项的简化子集。可用的方法：<br/>\n\t\t\t\t<b>逐步</b>：结合前向和后向步骤，使用进入和移除阈值的 alpha。<br/>\n\t\t\t\t<b>前向选择</b>：从空模型开始，在每一步添加最显著的项。<br/>\n\t\t\t\t<b>后向消除</b>：从完整模型开始，在每一步移除最不显著的项。<br/>\n\t\t\t\t<b>前向信息准则</b>：使用 AICc 或 BIC 作为停止准则，而不是 p 值，这避免了重复测试导致的 Type-I 错误膨胀，并直接惩罚模型复杂性。<br/>\n\t\t\t\t分层强制确保如果选择了交互或二次项，则所有组成的低阶项也被保留（效应遗传）。<br/>\n\t\t\t\t选择后，使用 rsm() 重新拟合简化公式，以便轮廓图、表面图、最陡上升和典范分析都保持有效。<br/>\n\t\t\t\thelp(step, package = stats)<br/>\n\t\t\t\thelp(stepAIC, package = MASS)<br/>\n\n\t\t\t"
   }
 }
