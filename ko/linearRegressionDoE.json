@@ -1,17 +1,23 @@
 {
   "title": "실험 설계 (DoE) 분석 - 고급 선형 모델 (중심점 제외)",
   "navigation": "설계 분석 - 고급 선형 모델",
-  "modelname": "모델 이름 입력",
-  "dependent": "종속 변수",
+  "modelname": "모델 이름 입력 (데이터셋 이름이 자동으로 추가됩니다)",
+  "dependent": "응답 (종속) 변수",
   "independent": "독립 변수(들)",
   "excludeCenterAxialPointsChk": "선형 모델에서 모든 중심점 및 축점(있는 경우)을 제외합니다",
   "axialCenterPointRowsChk": "있는 경우, DoE 설계에서 중심점 및 축/별점의 행 번호를 식별합니다",
-  "unusualObservations": "비정상 관측치에 대한 적합 및 진단",
-  "generateplotchk": "잔차 대 적합, 정규 Q-Q, 스케일-위치 및 잔차 대 레버리지 플롯",
+  "showDesignWithoutCenterpointsChk": "선형 분석에 사용된 중심점 및 축점(있는 경우) 없이 설계 데이터를 표시합니다",
+  "observationDiagnosticsTableChk": "관찰 진단 테이블 표시",
+  "generateplotchk": "잔차 대 적합, 정규 Q-Q, 스케일-위치 및 잔차 대 레버리지 플롯 생성",
   "weights": "가중치가 있는 변수를 지정합니다",
+  "showResidualPlotsChk": "rsm 모델에 대한 잔차 플롯 표시",
+  "checkShapiroNormalityTestChk": "잔차에 대한 Shapiro 정규성 테스트",
+  "checkADNormalityTestChk": "잔차에 대한 Anderson-Darling 정규성 테스트",
+  "flipaxisPPplotChk": "P-P 플롯의 축을 뒤집습니다",
+  "deGroupPlotsChk": "플롯을 개별적으로 플롯하기 위해 그룹 해제",
   "help": {
-    "title": "선형 회귀, 공식 빌더",
+    "title": "선형 회귀, 수식 빌더",
     "r_help": "help(lm, package ='stats')",
-    "body": "\n            <b>설명</b></br>\n축점이나 중심점을 제외한 후 공식 빌더를 사용하여 공식을 생성하여 선형 회귀 모델을 구축합니다. 내부적으로 stats 패키지의 lm 함수를 호출합니다. BSkyLinearRegression이라는 lm 클래스의 객체를 반환합니다. 모델 요약, 계수 테이블, Anova 테이블 및 제곱합 테이블을 표시하고 다음을 플롯합니다: 잔차 대 적합, 정규 Q-Q, 이론적 분위수, 잔차 대 레버리지. \n<br/>\n<b>사용법</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#모델 요약<br/>\nsummary(LinearRegModel1)<br/>\n#Anova 테이블 표시<br/>\nanova(LinearRegModel1)<br/>\n#잔차 대 적합, 정규 Q-Q, 스케일-위치, 잔차 대 레버리지 플롯<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndepVar: 종속 변수의 이름. 예를 들어, mpg 변수를 예측하고자 하는 cars 데이터셋이 있을 경우, mpg(종속 변수는 mpg)를 입력합니다.​\n</li>\n<li>\nindepVars: 종속 변수의 이름. 예를 들어, cars 데이터셋에 종속 변수로 horsepower, enginesize가 있을 경우, horsepower+enginesize를 입력합니다. 범주형 변수는 자동으로 더미 코딩됩니다.​\n</li>\n<li>\ndataset: 데이터프레임의 이름. BlueSky Statistics에서 데이터 프레임이나 데이터셋(e.g. csv, Excel 파일, SAS 파일)을 열면 Dataset1, Dataset2, Dataset3으로 이름이 지정되므로 Dataset1을 입력합니다.\n</li>\n</ul>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    "body": "\n            <b>설명</b></br>\n축점이나 중심점을 제외한 후 수식 빌더를 사용하여 수식을 생성하여 선형 회귀 모델을 구축합니다. 내부적으로 stats 패키지의 lm 함수를 호출합니다. BSkyLinearRegression이라는 lm 클래스의 객체를 반환합니다. 모델 요약, 계수 테이블, Anova 테이블 및 제곱합 테이블을 표시하고 다음을 플롯합니다: 잔차 대 적합, 정규 Q-Q, 이론적 분위수, 잔차 대 레버리지. \n<br/>\n<b>사용법</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#모델 요약<br/>\nsummary(LinearRegModel1)<br/>\n#Anova 테이블 표시<br/>\nanova(LinearRegModel1)<br/>\n#잔차 대 적합, 정규 Q-Q, 스케일-위치, 잔차 대 레버리지 플롯<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>인수</b><br/>\n<ul>\n<li>\ndepVar: 종속 변수의 이름. 예를 들어, mpg 변수를 예측하고자 하는 cars 데이터셋이 있을 경우, mpg(종속 변수는 mpg)를 입력합니다​\n</li>\n<li>\nindepVars: 종속 변수의 이름. 예를 들어, cars 데이터셋에 종속 변수로 horsepower, enginesize가 있을 경우, horsepower+enginesize를 입력합니다. 범주형 변수는 자동으로 더미 코딩됩니다.​\n</li>\n<li>\ndataset: 데이터프레임의 이름. BlueSky Statistics에서 데이터 프레임이나 데이터셋(e.g. csv, Excel 파일, SAS 파일)을 열면 Dataset1, Dataset2, Dataset3으로 이름이 지정되므로 Dataset1을 입력합니다\n</li>\n</ul>\n<b>패키지</b></br>\nstats</br>\n<b>도움말</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
   }
 }

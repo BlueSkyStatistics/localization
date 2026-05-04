@@ -1,17 +1,23 @@
 {
   "title": "Análisis de Diseño de Experimentos (DoE) - Modelo Lineal Avanzado (excluyendo puntos centrales)",
   "navigation": "Análisis de Diseño - Modelo Lineal Avanzado",
-  "modelname": "Ingrese el nombre del modelo",
-  "dependent": "Variable dependiente",
+  "modelname": "Ingrese el Nombre del Modelo (el nombre del conjunto de datos se añadirá automáticamente)",
+  "dependent": "Variable de respuesta (dependiente)",
   "independent": "Variable(s) independiente(s)",
   "excludeCenterAxialPointsChk": "Excluir todos los puntos centrales y puntos axiales, si los hay, del modelo lineal",
-  "axialCenterPointRowsChk": "Si los hay, identifique los números de fila para los puntos centrales y puntos axiales/estelares en el diseño de DoE",
-  "unusualObservations": "Ajuste y diagnósticos para observaciones inusuales",
+  "axialCenterPointRowsChk": "Si los hay, identificar los números de fila para los puntos centrales y puntos axiales/estelares en el diseño de DoE",
+  "showDesignWithoutCenterpointsChk": "Mostrar datos de diseño sin puntos centrales y puntos axiales, si los hay, utilizados en el análisis lineal",
+  "observationDiagnosticsTableChk": "Mostrar tabla de diagnósticos de observación",
   "generateplotchk": "Graficar residuos vs ajustados, normal Q-Q, escala-localización y residuos vs apalancamiento",
-  "weights": "Especifique una variable con pesos",
+  "weights": "Especificar una variable con pesos",
+  "showResidualPlotsChk": "Mostrar gráficos de residuos para el modelo rsm",
+  "checkShapiroNormalityTestChk": "Prueba de normalidad de Shapiro para residuos",
+  "checkADNormalityTestChk": "Prueba de normalidad de Anderson-Darling para residuos",
+  "flipaxisPPplotChk": "Invertir ejes para el gráfico P-P",
+  "deGroupPlotsChk": "Desagrupar gráficos para graficar individualmente",
   "help": {
     "title": "Regresión Lineal, generador de fórmulas",
     "r_help": "help(lm, package ='stats')",
-    "body": "\n            <b>Descripción</b></br>\nConstruye un modelo de regresión lineal después de excluir cualquier punto axial o central creando una fórmula utilizando el generador de fórmulas. Llama internamente a la función lm en el paquete stats. Devuelve un objeto llamado BSkyLinearRegression que es un objeto de la clase lm. Muestra un resumen del modelo, tabla de coeficientes, tabla de Anova y tabla de suma de cuadrados y grafica lo siguiente: residuos vs. ajustados, normal Q-Q, cuantiles teóricos, residuos vs. apalancamiento. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Resumiendo el modelo<br/>\nsummary(LinearRegModel1)<br/>\n#Mostrando la tabla de Anova<br/>\nanova(LinearRegModel1)<br/>\n#Grafica residuos vs. ajustados, normal Q-Q, escala-localización, residuos vs. apalancamiento<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndepVar: Nombre de la variable dependiente. Si tenemos un conjunto de datos de coches, con una variable mpg que queremos predecir mpg (la variable dependiente es mpg) ingrese mpg​\n</li>\n<li>\nindepVars: Nombres de la variable dependiente. Si tenemos un conjunto de datos de coches, con variable dependiente potencia, tamaño del motor, ingrese potencia+tamaño del motor. Las variables categóricas se codifican automáticamente como variables ficticias.​\n</li>\n<li>\ndataset: Nombre del marco de datos. Cuando abre marcos de datos o conjuntos de datos, por ejemplo, archivos csv, archivos de Excel, archivos de SAS en BlueSky Statistics, se nombran Dataset1, Dataset2, Dataset3, así que ingrese Dataset1\n</li>\n</ul>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    "body": "\n            <b>Descripción</b></br>\nConstruye un modelo de regresión lineal después de excluir cualquier punto axial o central creando una fórmula usando el generador de fórmulas. Llama internamente a la función lm en el paquete stats. Devuelve un objeto llamado BSkyLinearRegression que es un objeto de la clase lm. Muestra un resumen del modelo, tabla de coeficientes, tabla de Anova y tabla de suma de cuadrados y grafica los siguientes residuos vs. ajustados, normal Q-Q, cuantiles teóricos, residuos vs. apalancamiento. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Resumiendo el modelo<br/>\nsummary(LinearRegModel1)<br/>\n#Mostrando la tabla de Anova<br/>\nanova(LinearRegModel1)<br/>\n#Grafica residuos vs. ajustados, normal Q-Q, escala-localización, residuos vs. apalancamiento<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndepVar: Nombre de la variable dependiente. Si tenemos un conjunto de datos de coches, con una variable mpg que queremos predecir mpg (la variable dependiente es mpg) ingrese mpg​\n</li>\n<li>\nindepVars: Nombres de la variable dependiente. Si tenemos un conjunto de datos de coches, con variable dependiente potencia, tamaño de motor, ingrese potencia+tamaño de motor. Las variables categóricas se codifican automáticamente como variables ficticias.​\n</li>\n<li>\ndataset: Nombre del marco de datos. Cuando abre marcos de datos o conjuntos de datos, por ejemplo, archivos csv, archivos de Excel, archivos de SAS en BlueSky Statistics, se nombran Dataset1, Dataset2, Dataset3, así que ingrese Dataset1\n</li>\n</ul>\n<b>Paquete</b></br>\nstats</br>\n<b>Ayuda</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
   }
 }

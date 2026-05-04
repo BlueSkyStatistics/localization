@@ -1,17 +1,23 @@
 {
   "title": "Design von Experimenten (DoE) Analyse - Fortgeschrittenes lineares Modell (ohne Mittelpunktpunkte)",
   "navigation": "Designanalyse - Fortgeschrittenes lineares Modell",
-  "modelname": "Modellnamen eingeben",
-  "dependent": "Abhängige Variable",
+  "modelname": "Modellnamen eingeben (der Datensatzname wird automatisch angehängt)",
+  "dependent": "Antwort (abhängige) Variable",
   "independent": "Unabhängige Variable(n)",
   "excludeCenterAxialPointsChk": "Alle Mittelpunktpunkte und axialen Punkte, falls vorhanden, vom linearen Modell ausschließen",
-  "axialCenterPointRowsChk": "Falls vorhanden, die Zeilennummern für Mittelpunktpunkte und axiale/Sternpunkte im DoE-Design identifizieren",
-  "unusualObservations": "Anpassung und Diagnosen für ungewöhnliche Beobachtungen",
-  "generateplotchk": "Residuen vs. angepasste Werte, normales Q-Q, Skala-Standort und Residuen vs. Hebelwirkung plotten",
+  "axialCenterPointRowsChk": "Falls vorhanden, die Zeilennummern für Mittelpunktpunkte und axial/star Punkte im DoE-Design identifizieren",
+  "showDesignWithoutCenterpointsChk": "Designdaten ohne Mittelpunktpunkte und axiale Punkte, falls vorhanden, die in der linearen Analyse verwendet wurden, anzeigen",
+  "observationDiagnosticsTableChk": "Diagnosetabelle für Beobachtungen anzeigen",
+  "generateplotchk": "Residuen vs. angepasste Werte, normales Q-Q, Skalen-Standorte und Residuen vs. Hebel plotten",
   "weights": "Eine Variable mit Gewichten angeben",
+  "showResidualPlotsChk": "Residuenplots für das RSM-Modell anzeigen",
+  "checkShapiroNormalityTestChk": "Shapiro-Normalitätstest für Residuen",
+  "checkADNormalityTestChk": "Anderson-Darling-Normalitätstest für Residuen",
+  "flipaxisPPplotChk": "Achse für das P-P-Diagramm umdrehen",
+  "deGroupPlotsChk": "Plots entgruppieren, um sie einzeln zu plotten",
   "help": {
     "title": "Lineare Regression, Formel-Builder",
     "r_help": "help(lm, package ='stats')",
-    "body": "\n            <b>Beschreibung</b></br>\nBaut ein lineares Regressionsmodell auf, nachdem alle axialen oder Mittelpunktpunkte ausgeschlossen wurden, indem eine Formel mit dem Formel-Builder erstellt wird. Ruft intern die Funktion lm im Paket stats auf. Gibt ein Objekt namens BSkyLinearRegression zurück, das ein Objekt der Klasse lm ist. Zeigt eine Zusammenfassung des Modells, eine Koeffiziententabelle, eine Anova-Tabelle und eine Tabelle der Quadratsummen an und plottet die folgenden Residuen vs. angepasste Werte, normales Q-Q, theoretische Quantile, Residuen vs. Hebelwirkung. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Zusammenfassung des Modells<br/>\nsummary(LinearRegModel1)<br/>\n#Anzeigen der Anova-Tabelle<br/>\nanova(LinearRegModel1)<br/>\n#Plottet Residuen vs. angepasste Werte, normales Q-Q, Skala-Standort, Residuen vs. Hebelwirkung<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndepVar: Name der abhängigen Variable. Wenn wir einen Datensatz mit Autos haben, mit einer Variablen mpg, die wir vorhersagen möchten, geben Sie mpg ein (abhängige Variable ist mpg)\n</li>\n<li>\nindepVars: Namen der unabhängigen Variablen. Wenn wir einen Datensatz mit Autos haben, mit abhängiger Variable Pferdestärke, Motorgröße, geben Sie Pferdestärke+Motorgröße ein. Kategorische Variablen werden automatisch als Dummy kodiert.​\n</li>\n<li>\ndataset: Name des Datenrahmens. Wenn Sie Datenrahmen oder Datensätze z.B. csv, Excel-Dateien, SAS-Dateien in BlueSky Statistics öffnen, werden sie Dataset1, Dataset2, Dataset3 genannt, also geben Sie Dataset1 ein\n</li>\n</ul>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    "body": "\n            <b>Beschreibung</b></br>\nBaut ein lineares Regressionsmodell auf, nachdem alle axialen oder Mittelpunktpunkte ausgeschlossen wurden, indem eine Formel mit dem Formel-Builder erstellt wird. Ruft intern die Funktion lm im stats-Paket auf. Gibt ein Objekt namens BSkyLinearRegression zurück, das ein Objekt der Klasse lm ist. Zeigt eine Zusammenfassung des Modells, die Koeffiziententabelle, die Anova-Tabelle und die Tabelle der Quadratsummen an und plottet die folgenden Residuen vs. angepasste Werte, normales Q-Q, theoretische Quantile, Residuen vs. Hebel. \n<br/>\n<b>Verwendung</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Zusammenfassung des Modells<br/>\nsummary(LinearRegModel1)<br/>\n#Anzeigen der Anova-Tabelle<br/>\nanova(LinearRegModel1)<br/>\n#Plottet Residuen vs. angepasste Werte, normales Q-Q, Skalen-Standorte, Residuen vs. Hebel<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumente</b><br/>\n<ul>\n<li>\ndepVar: Name der abhängigen Variable. Wenn wir einen Datensatz mit Autos haben, mit einer Variable mpg, die wir vorhersagen möchten, geben Sie mpg ein (abhängige Variable ist mpg)\n</li>\n<li>\nindepVars: Namen der unabhängigen Variablen. Wenn wir einen Datensatz mit Autos haben, mit abhängiger Variable Pferdestärke, Motorgröße, geben Sie Pferdestärke+Motorgröße ein. Kategorische Variablen werden automatisch als Dummy codiert.​\n</li>\n<li>\ndataset: Name des Dataframes. Wenn Sie Datenrahmen oder Datensätze öffnen, z.B. csv, Excel-Dateien, SAS-Dateien in BlueSky Statistics, werden sie Dataset1, Dataset2, Dataset3 genannt, also geben Sie Dataset1 ein\n</li>\n</ul>\n<b>Paket</b></br>\nstats</br>\n<b>Hilfe</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
   }
 }

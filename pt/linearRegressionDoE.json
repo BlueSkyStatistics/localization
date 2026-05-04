@@ -1,17 +1,23 @@
 {
   "title": "Análise de Design de Experimentos (DoE) - Modelo Linear Avançado (excluindo pontos centrais)",
   "navigation": "Análise de Design - Modelo Linear Avançado",
-  "modelname": "Insira o nome do modelo",
-  "dependent": "Variável dependente",
+  "modelname": "Insira o Nome do Modelo (o nome do conjunto de dados será anexado automaticamente)",
+  "dependent": "Variável de resposta (dependente)",
   "independent": "Variável(is) independente(s)",
   "excludeCenterAxialPointsChk": "Excluir todos os pontos centrais e pontos axiais, se houver, do modelo linear",
   "axialCenterPointRowsChk": "Se houver, identifique os números das linhas para pontos centrais e pontos axiais/estelares no design do DoE",
-  "unusualObservations": "Ajuste e diagnósticos para observações incomuns",
+  "showDesignWithoutCenterpointsChk": "Mostrar dados de design sem pontos centrais e pontos axiais, se houver, usados na análise linear",
+  "observationDiagnosticsTableChk": "Mostrar tabela de diagnósticos de observação",
   "generateplotchk": "Plotar resíduos vs ajustados, normal Q-Q, escala-localização e resíduos vs alavancagem",
   "weights": "Especifique uma variável com pesos",
+  "showResidualPlotsChk": "Mostrar gráficos de resíduos para o modelo rsm",
+  "checkShapiroNormalityTestChk": "Teste de normalidade de Shapiro para resíduos",
+  "checkADNormalityTestChk": "Teste de normalidade de Anderson-Darling para resíduos",
+  "flipaxisPPplotChk": "Inverter eixos para o gráfico P-P",
+  "deGroupPlotsChk": "Desagrupar gráficos para plotar individualmente",
   "help": {
     "title": "Regressão Linear, construtor de fórmulas",
     "r_help": "help(lm, package ='stats')",
-    "body": "\n            <b>Descrição</b></br>\nConstrói um modelo de regressão linear após excluir quaisquer pontos axiais ou centrais, criando uma fórmula usando o construtor de fórmulas. Chama internamente a função lm no pacote stats. Retorna um objeto chamado BSkyLinearRegression, que é um objeto da classe lm. Exibe um resumo do modelo, tabela de coeficientes, tabela Anova e tabela de soma de quadrados e plota os seguintes resíduos vs. ajustados, normal Q-Q, quantis teóricos, resíduos vs. alavancagem. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Resumindo o modelo<br/>\nsummary(LinearRegModel1)<br/>\n#Exibindo a tabela Anova<br/>\nanova(LinearRegModel1)<br/>\n#Plota resíduos vs. ajustados, normal Q-Q, escala-localização, resíduos vs. alavancagem<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndepVar: Nome da variável dependente. Se tivermos um conjunto de dados cars, com uma variável mpg que queremos prever mpg (a variável dependente é mpg), insira mpg​\n</li>\n<li>\nindepVars: Nomes da variável dependente. Se tivermos um conjunto de dados cars, com a variável dependente horsepower, enginesize, insira horsepower+enginesize. Variáveis categóricas são automaticamente codificadas como variáveis fictícias.​\n</li>\n<li>\ndataset: Nome do dataframe. Quando você abre data frames ou conjuntos de dados, por exemplo, arquivos csv, arquivos do Excel, arquivos SAS no BlueSky Statistics, eles são nomeados Dataset1, Dataset2, Dataset3, então insira Dataset1\n</li>\n</ul>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    "body": "\n            <b>Descrição</b></br>\nConstrói um modelo de regressão linear após excluir quaisquer pontos axiais ou centrais criando uma fórmula usando o construtor de fórmulas. Chama internamente a função lm no pacote stats. Retorna um objeto chamado BSkyLinearRegression que é um objeto da classe lm. Exibe um resumo do modelo, tabela de coeficientes, tabela Anova e tabela de soma de quadrados e plota os seguintes resíduos vs. ajustados, normal Q-Q, quantis teóricos, resíduos vs. alavancagem. \n<br/>\n<b>Uso</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#Resumindo o modelo<br/>\nsummary(LinearRegModel1)<br/>\n#Exibindo a tabela Anova<br/>\nanova(LinearRegModel1)<br/>\n#Plota resíduos vs. ajustados, normal Q-Q, escala-localização, resíduos vs. alavancagem<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndepVar: Nome da variável dependente. Se tivermos um conjunto de dados cars, com uma variável mpg que queremos prever mpg (a variável dependente é mpg) insira mpg​\n</li>\n<li>\nindepVars: Nomes da variável dependente. Se tivermos um conjunto de dados cars, com variável dependente horsepower, enginesize, insira horsepower+enginesize. Variáveis categóricas são automaticamente codificadas como variáveis dummy.​\n</li>\n<li>\ndataset: Nome do dataframe. Quando você abre data frames ou conjuntos de dados, por exemplo, arquivos csv, arquivos do Excel, arquivos SAS no BlueSky Statistics, eles são nomeados Dataset1, Dataset2, Dataset3, então insira Dataset1\n</li>\n</ul>\n<b>Pacote</b></br>\nstats</br>\n<b>Ajuda</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
   }
 }

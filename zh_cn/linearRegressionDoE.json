@@ -1,17 +1,23 @@
 {
   "title": "实验设计 (DoE) 分析 - 高级线性模型 (不包括中心点)",
   "navigation": "设计分析 - 高级线性模型",
-  "modelname": "输入模型名称",
-  "dependent": "因变量",
+  "modelname": "输入模型名称（数据集名称将自动附加）",
+  "dependent": "响应（因变量）",
   "independent": "自变量",
   "excludeCenterAxialPointsChk": "从线性模型中排除所有中心点和轴点（如果有）",
   "axialCenterPointRowsChk": "如果有，请识别 DoE 设计中中心点和轴/星点的行号",
-  "unusualObservations": "异常观察的拟合和诊断",
+  "showDesignWithoutCenterpointsChk": "显示不包含中心点和轴点（如果有）的设计数据，用于线性分析",
+  "observationDiagnosticsTableChk": "显示观察诊断表",
   "generateplotchk": "绘制残差与拟合值、正态 Q-Q、尺度-位置和残差与杠杆的图",
   "weights": "指定一个带权重的变量",
+  "showResidualPlotsChk": "显示 rsm 模型的残差图",
+  "checkShapiroNormalityTestChk": "残差的 Shapiro 正态性检验",
+  "checkADNormalityTestChk": "残差的 Anderson-Darling 正态性检验",
+  "flipaxisPPplotChk": "翻转 P-P 图的轴",
+  "deGroupPlotsChk": "解组图以单独绘制",
   "help": {
     "title": "线性回归，公式生成器",
     "r_help": "help(lm, package ='stats')",
-    "body": "\n            <b>描述</b></br>\n通过使用公式生成器创建公式，构建一个线性回归模型，排除任何轴点或中心点。内部调用 stats 包中的 lm 函数。返回一个名为 BSkyLinearRegression 的对象，该对象是 lm 类的对象。显示模型摘要、系数表、方差分析表和平方和表，并绘制以下图：残差与拟合值、正态 Q-Q、理论分位数、残差与杠杆。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#总结模型<br/>\nsummary(LinearRegModel1)<br/>\n#显示方差分析表<br/>\nanova(LinearRegModel1)<br/>\n#绘制残差与拟合值、正态 Q-Q、尺度-位置、残差与杠杆的图<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndepVar: 因变量的名称。如果我们有一个数据集 cars，想要预测 mpg（因变量是 mpg），请输入 mpg​\n</li>\n<li>\nindepVars: 自变量的名称。如果我们有一个数据集 cars，因变量是 horsepower 和 enginesize，输入 horsepower+enginesize。分类变量会自动进行虚拟编码。\n</li>\n<li>\ndataset: 数据框的名称。当您在 BlueSky Statistics 中打开数据框或数据集（例如 csv、Excel 文件、SAS 文件）时，它们被命名为 Dataset1、Dataset2、Dataset3，因此输入 Dataset1\n</li>\n</ul>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    "body": "\n            <b>描述</b></br>\n通过使用公式生成器创建公式，构建一个线性回归模型，排除任何轴点或中心点。内部调用 stats 包中的 lm 函数。返回一个名为 BSkyLinearRegression 的对象，该对象是 lm 类的对象。显示模型摘要、系数表、方差分析表和平方和表，并绘制以下图形：残差与拟合值、正态 Q-Q、理论分位数、残差与杠杆。\n<br/>\n<b>用法</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#总结模型<br/>\nsummary(LinearRegModel1)<br/>\n#显示方差分析表<br/>\nanova(LinearRegModel1)<br/>\n#绘制残差与拟合值、正态 Q-Q、尺度-位置、残差与杠杆的图<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>参数</b><br/>\n<ul>\n<li>\ndepVar: 因变量的名称。如果我们有一个数据集 cars，变量 mpg 是我们想要预测的 mpg（因变量是 mpg），请输入 mpg​\n</li>\n<li>\nindepVars: 自变量的名称。如果我们有一个数据集 cars，因变量是 horsepower 和 enginesize，输入 horsepower+enginesize。分类变量会自动进行虚拟编码。\n</li>\n<li>\ndataset: 数据框的名称。当您在 BlueSky Statistics 中打开数据框或数据集（例如 csv、Excel 文件、SAS 文件）时，它们被命名为 Dataset1、Dataset2、Dataset3，因此请输入 Dataset1\n</li>\n</ul>\n<b>包</b></br>\nstats</br>\n<b>帮助</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
   }
 }

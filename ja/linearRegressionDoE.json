@@ -1,17 +1,23 @@
 {
   "title": "実験計画法 (DoE) 分析 - 高度な線形モデル (中心点を除く)",
   "navigation": "設計分析 - 高度な線形モデル",
-  "modelname": "モデル名を入力してください",
-  "dependent": "従属変数",
+  "modelname": "モデル名を入力してください (データセット名は自動的に追加されます)",
+  "dependent": "応答 (従属) 変数",
   "independent": "独立変数",
   "excludeCenterAxialPointsChk": "線形モデルからすべての中心点および軸点を除外する",
   "axialCenterPointRowsChk": "ある場合、DoE設計における中心点および軸/星点の行番号を特定する",
-  "unusualObservations": "異常観測の適合と診断",
-  "generateplotchk": "残差対適合、正規Q-Q、スケール-ロケーション、および残差対レバレッジのプロット",
-  "weights": "重みを持つ変数を指定してください",
+  "showDesignWithoutCenterpointsChk": "線形分析で使用された中心点および軸点を除いた設計データを表示する",
+  "observationDiagnosticsTableChk": "観察診断テーブルを表示する",
+  "generateplotchk": "残差対フィッティング、正規Q-Q、スケール-ロケーションおよび残差対レバレッジをプロットする",
+  "weights": "重みを持つ変数を指定する",
+  "showResidualPlotsChk": "rsmモデルの残差プロットを表示する",
+  "checkShapiroNormalityTestChk": "残差のシャピロ正規性検定",
+  "checkADNormalityTestChk": "残差のアンダーソン-ダーリング正規性検定",
+  "flipaxisPPplotChk": "P-Pプロットの軸を反転する",
+  "deGroupPlotsChk": "プロットを個別にプロットするためにグループ解除する",
   "help": {
     "title": "線形回帰、式ビルダー",
     "r_help": "help(lm, package ='stats')",
-    "body": "\n            <b>説明</b></br>\n中心点や軸点を除外した後、式ビルダーを使用して式を作成することで線形回帰モデルを構築します。内部的にstatsパッケージのlm関数を呼び出します。BSkyLinearRegressionというオブジェクトを返し、これはlmクラスのオブジェクトです。モデルの要約、係数テーブル、Anovaテーブル、平方和テーブルを表示し、残差対適合、正規Q-Q、理論的分位数、残差対レバレッジのプロットを行います。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#モデルの要約<br/>\nsummary(LinearRegModel1)<br/>\n#Anovaテーブルの表示<br/>\nanova(LinearRegModel1)<br/>\n#残差対適合、正規Q-Q、スケール-ロケーション、残差対レバレッジのプロット<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndepVar: 従属変数の名前。データセットcarsがあり、予測したい変数mpgがある場合、mpg（従属変数はmpg）を入力します。\n</li>\n<li>\nindepVars: 従属変数の名前。データセットcarsがあり、従属変数horsepower、enginesizeがある場合、horsepower+enginesizeを入力します。カテゴリ変数は自動的にダミーコーディングされます。\n</li>\n<li>\ndataset: データフレームの名前。データフレームやデータセット（例：csv、Excelファイル、SASファイル）をBlueSky Statisticsで開くと、Dataset1、Dataset2、Dataset3と名付けられますので、Dataset1を入力します。\n</li>\n</ul>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
+    "body": "\n            <b>説明</b></br>\n軸点や中心点を除外した後、式ビルダーを使用して式を作成することで線形回帰モデルを構築します。内部的にstatsパッケージのlm関数を呼び出します。BSkyLinearRegressionというオブジェクトを返し、これはlmクラスのオブジェクトです。モデルの要約、係数テーブル、Anovaテーブル、平方和テーブルを表示し、残差対フィッティング、正規Q-Q、理論的分位数、残差対レバレッジをプロットします。 \n<br/>\n<b>使用法</b>\n<br/>\n<code> \nLinearRegModel1 <- lm(depVar~indepVars, dataset)​<br/>\n#モデルの要約<br/>\nsummary(LinearRegModel1)<br/>\n#Anovaテーブルを表示<br/>\nanova(LinearRegModel1)<br/>\n#残差対フィッティング、正規Q-Q、スケール-ロケーション、残差対レバレッジをプロット<br/>\nplot(LinearRegModel1)<br/>\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndepVar: 従属変数の名前。データセットcarsがあり、予測したい変数mpgがある場合、mpg（従属変数はmpg）を入力します。\n</li>\n<li>\nindepVars: 従属変数の名前。データセットcarsがあり、従属変数horsepower、enginesizeがある場合、horsepower+enginesizeを入力します。カテゴリ変数は自動的にダミーコーディングされます。\n</li>\n<li>\ndataset: データフレームの名前。データフレームやデータセット（例：csv、Excelファイル、SASファイル）をBlueSky Statisticsで開くと、Dataset1、Dataset2、Dataset3と名付けられますので、Dataset1を入力します。\n</li>\n</ul>\n<b>パッケージ</b></br>\nstats</br>\n<b>ヘルプ</b></br>\nhelp(lm, package ='stats')\n\t\t\t"
   }
 }
