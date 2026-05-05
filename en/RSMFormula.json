@@ -8,6 +8,7 @@
     "generateRSMPlotChk": "Display Response Surface (plots)",
     "generatePathSteepestAscentChk": "Show path of steepest ascent from ridge analysis",
     "steepestHandComputedChk": "Also show hand-computed steepest ascent path in natural (un-coded) units (always computed from first principles — useful when model was not fitted with coded data or when stepwise is enabled)",
+    "createOptimLmChk": "Create an optimization-ready companion lm model with block/structural terms (if any) absorbed into the intercept",
     "stepwiseSectionLbl": "Stepwise Model Selection (optional)",
     "stepwiseChk": "Enable stepwise model selection (uncheck to fit full model as specified above)",
     "stepwiseMethodLbl": "Stepwise method",

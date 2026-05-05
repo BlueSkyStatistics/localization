@@ -7,8 +7,9 @@
   "generateContourPlotChk": "顯示等高線圖",
   "generateRSMPlotChk": "顯示響應面圖",
   "generatePathSteepestAscentChk": "顯示從山脊分析的最陡上升路徑",
-  "steepestHandComputedChk": "還顯示手動計算的最陡上升路徑，使用自然（未編碼）單位（始終從第一原則計算 — 當模型未使用編碼數據擬合或啟用逐步時非常有用）",
-  "stepwiseSectionLbl": "逐步模型選擇 (可選)",
+  "steepestHandComputedChk": "還顯示以自然（未編碼）單位手動計算的最陡上升路徑（始終從第一原則計算 — 當模型未使用編碼數據擬合或啟用逐步時非常有用）",
+  "createOptimLmChk": "創建一個優化準備的伴隨 lm 模型，將分組/結構項（如有）吸收到截距中",
+  "stepwiseSectionLbl": "逐步模型選擇（可選）",
   "stepwiseChk": "啟用逐步模型選擇（取消勾選以擬合上述完整模型）",
   "stepwiseMethodLbl": "逐步方法",
   "stepwiseMethod": "逐步",
@@ -20,7 +21,7 @@
   "alphaRemove": "0.15",
   "hierarchyChk": "在每一步要求分層模型（建議 — 強制效應遺傳）",
   "showStepDetailChk": "顯示選擇過程中每一步的詳細信息",
-  "stepwiseNote": "注意：使用默認 alpha = 0.15。對於前向信息準則（forward_ic），AICc 或 BIC 取代 p 值閾值作為停止準則，這避免了重複測試造成的 Type-I 錯誤膨脹。分層強制確保如果選擇了交互項，則所有其組成的主效應也會保留 — 與效應遺傳一致。選擇後，使用 rsm() 重新擬合簡化模型，因此所有下游輸出（等高線圖、表面圖、最陡上升、典範分析）保持有效。",
+  "stepwiseNote": "注意：使用默認 alpha = 0.15。對於前向信息準則（forward_ic），AICc 或 BIC 取代 p 值閾值作為停止準則，這避免了重複測試造成的 Type-I 錯誤膨脹。分層強制確保如果選擇了交互項，則所有其組成的主效應也會保留 — 與效應遺傳一致。選擇後，使用 rsm() 重新擬合簡化模型，以便所有下游輸出（等高線圖、表面圖、最陡上升、典範分析）保持有效。",
   "showResidualPlotsChk": "顯示 rsm 模型的殘差圖",
   "checkShapiroNormalityTestChk": "Shapiro 殘差正態性檢驗",
   "checkADNormalityTestChk": "Anderson-Darling 殘差正態性檢驗",
@@ -31,6 +32,6 @@
   "help": {
     "title": "響應面模型與模型公式生成器",
     "r_help": "help(rsm, package = rsm)",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t響應面回歸 - 擬合具有響應面組件的線性模型，並生成適當的分析和摘要\n\t\t\t\t<br/> 在公式生成器中，您可以輸入 SO(var1, var2, var3, ...) 或 FO(var1, ..) 或來自 rsm 包的其他函數 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關更多詳細信息，請參見 R 幫助文檔\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>逐步模型選擇</b><br/>\n\t\t\t\t啟用時，逐步選擇識別顯著 RSM 項的簡化子集。可用的方法：<br/>\n\t\t\t\t<b>逐步</b>：使用進入和移除閾值結合前向和後向步驟。<br/>\n\t\t\t\t<b>前向選擇</b>：從空模型開始，並在每一步添加最顯著的項。<br/>\n\t\t\t\t<b>後向消除</b>：從完整模型開始，並在每一步移除最不顯著的項。<br/>\n\t\t\t\t<b>前向信息準則</b>：使用 AICc 或 BIC 作為停止準則，而不是 p 值，這避免了重複測試造成的 Type-I 錯誤膨脹，並直接懲罰模型複雜性。<br/>\n\t\t\t\t分層強制確保如果選擇了交互或二次項，則所有組成的低階項也會保留（效應遺傳）。<br/>\n\t\t\t\t選擇後，使用 rsm() 重新擬合簡化公式，因此等高線圖、表面圖、最陡上升和典範分析都保持有效。<br/>\n\t\t\t\thelp(step, package = stats)<br/>\n\t\t\t\thelp(stepAIC, package = MASS)<br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t響應面回歸 - 擬合具有響應面組件的線性模型，並生成適當的分析和摘要\n\t\t\t\t<br/> 在公式生成器中，您可以輸入 SO(var1, var2, var3, ...) 或 FO(var1, ..) 或來自 rsm 包的其他函數 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有關更多詳細信息，請參見 R 幫助文檔\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>逐步模型選擇</b><br/>\n\t\t\t\t啟用時，逐步選擇會識別一組簡化的顯著 RSM 項。可用的方法：<br/>\n\t\t\t\t<b>逐步</b>：結合前向和後向步驟，使用進入和移除的 alpha 閾值。<br/>\n\t\t\t\t<b>前向選擇</b>：從空模型開始，在每一步添加最顯著的項。<br/>\n\t\t\t\t<b>後向消除</b>：從完整模型開始，在每一步移除最不顯著的項。<br/>\n\t\t\t\t<b>前向信息準則</b>：使用 AICc 或 BIC 作為停止準則，而不是 p 值，這避免了重複測試造成的 Type-I 錯誤膨脹，並直接懲罰模型複雜性。<br/>\n\t\t\t\t分層強制確保如果選擇了交互或二次項，則所有組成的低階項也會保留（效應遺傳）。<br/>\n\t\t\t\t選擇後，使用 rsm() 重新擬合簡化公式，以便等高線圖、表面圖、最陡上升和典範分析都保持有效。<br/>\n\t\t\t\thelp(step, package = stats)<br/>\n\t\t\t\thelp(stepAIC, package = MASS)<br/>\n\n\t\t\t"
   }
 }
