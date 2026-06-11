@@ -1,6 +1,6 @@
 {
-  "title": "Análisis de Ajuste de Distribución de Supervivencia Paramétrica",
-  "navigation": "Ajuste de Distribución de Supervivencia Paramétrica",
+  "title": "Análisis de Ajuste de Distribución de Supervivencia Paramétrica (Censurado a la Derecha)",
+  "navigation": "Ajuste de Distribución de Supervivencia Paramétrica (Derecha)",
   "timevar": "Tiempo hasta el evento o censura",
   "eventvar": "Evento (1 o más = evento, 0 o menos = censura)",
   "labelDistribution": "Seleccione uno o más para la prueba de ajuste de distribución",
@@ -8,7 +8,7 @@
   "selectDistFuncExpChk": "Exponencial",
   "selectDistFuncGammaChk": "Gamma",
   "selectDistFuncLnormalChk": "Log Normal",
-  "selectDistFuncLogLogisChk": "Log Logístico",
+  "selectDistFuncLogLogisChk": "Logístico Logarítmico",
   "confidenceInterval": "Nivel de confianza para las estimaciones de máxima verosimilitud",
   "printModelParamChk": "Mostrar los parámetros estimados de las distribuciones",
   "help": {

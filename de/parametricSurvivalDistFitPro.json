@@ -1,14 +1,14 @@
 {
-  "title": "Parametrische Überlebensverteilungsanpassungsanalyse",
-  "navigation": "Parametrische Überlebensverteilungsanpassung",
+  "title": "Parametrische Überlebensverteilungsanpassungsanalyse (Rechts zensiert)",
+  "navigation": "Parametrische Überlebensverteilung Anpassung (Rechts)",
   "timevar": "Zeit bis zum Ereignis oder Zensur",
   "eventvar": "Ereignis (1 oder höher = Ereignis, 0 oder niedriger = Zensur)",
-  "labelDistribution": "Wählen Sie eine oder mehrere für den Anpassungstest der Verteilung",
+  "labelDistribution": "Wählen Sie eine oder mehrere für den Verteilungstest aus",
   "selectDistFuncWeibullChk": "Weibull",
   "selectDistFuncExpChk": "Exponential",
   "selectDistFuncGammaChk": "Gamma",
   "selectDistFuncLnormalChk": "Log Normal",
-  "selectDistFuncLogLogisChk": "Log Logistic",
+  "selectDistFuncLogLogisChk": "Log Logistisch",
   "confidenceInterval": "Konfidenzniveau für die Maximum-Likelihood-Schätzungen",
   "printModelParamChk": "Zeige die geschätzten Parameter der Verteilungen",
   "help": {

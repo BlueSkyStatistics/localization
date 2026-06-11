@@ -1,8 +1,8 @@
 {
-  "title": "Análise de Ajuste de Distribuição de Sobrevivência Paramétrica",
-  "navigation": "Ajuste de Dist. de Sobrevivência Paramétrica",
+  "title": "Análise de Ajuste de Distribuição de Sobrevivência Paramétrica (Censurado à Direita)",
+  "navigation": "Ajuste de Dist. de Sobrevivência Paramétrica (Direita)",
   "timevar": "Tempo até o evento ou censura",
-  "eventvar": "Evento (1 ou maior = evento, 0 ou menor = censura)",
+  "eventvar": "Evento (1 ou mais = evento, 0 ou menos = censura)",
   "labelDistribution": "Selecione uma ou mais para o teste de ajuste de distribuição",
   "selectDistFuncWeibullChk": "Weibull",
   "selectDistFuncExpChk": "Exponencial",

@@ -1,0 +1,24 @@
+{
+  "title": "Probabilidades de Falha de Garantia na Tabela de Nevada",
+  "navigation": "Tabela de Previsão de Garantia Nevada",
+  "labelModelSel": "Passo 1 - Selecione o modelo flexsurvreg ajustado",
+  "modelSelection": "Selecione o modelo (deve ser um modelo flexsurvreg ajustado por Análise de Sobrevivência Paramétrica (Intervalo))",
+  "labelShipDataset": "Passo 2 - Selecione o conjunto de dados de envio / entrega (conjunto de dados ativo)",
+  "shipProdMonthCol": "Coluna do mês de produção",
+  "shipProdMonthFmt": "Formato do mês de produção",
+  "shipDeliveredCol": "Coluna de entregas / unidades enviadas",
+  "labelObsMonths": "Passo 3 - Especifique o último período de observação / previsão",
+  "obsProdMonthFmt": "Formato do último período de observação (ignorando ao inserir um deslocamento inteiro simples abaixo)",
+  "lastObsMonth": "Último período de observação - insira: (a) um mês do calendário no formato selecionado acima (por exemplo, 202608), OU (b) um deslocamento inteiro simples (por exemplo, 25) significando 'coorte mais antiga + 25 períodos'. Todos os períodos a partir de um após a coorte de produção mais antiga até este valor são gerados automaticamente como as colunas da tabela de Nevada.",
+  "labelActualRepair": "Passo 4 - Coluna de reparo / defeito real (opcional)",
+  "actualRepairCol": "Selecione a coluna contendo as contagens reais de reparo mensal. Linhas com um valor numérico = dados reais já observados. Linhas com NA = período futuro - esses meses usam a previsão da tabela de Nevada. Deixe em branco para pular a comparação e o gráfico de Real vs Previsão.",
+  "labelOutput": "Opções de saída",
+  "predictionBound": "Limite de previsão — controla qual estimativa de F(t) é usada para os valores das células. Estimado = estimativa pontual (padrão). Limite inferior = melhor caso otimista (menos falhas). Limite superior = pior caso pessimista (mais falhas).",
+  "newdatasetname": "Nome do conjunto de dados de saída para a matriz de previsão de Nevada",
+  "labelDateNote": "Selecione o formato que corresponde EXATAMENTE a como as datas são armazenadas. Mudanças do R make.names() (prefixo X, pontos) são tratadas automaticamente.",
+  "digits": "Dígitos a serem exibidos",
+  "help": {
+    "title": "Probabilidades de Falha na Tabela de Nevada",
+    "body": "\n                <b>Descrição</b><br/><br/>\n                Produz a Tabela de Probabilidades de Falha em Nevada que corresponde à saída de Análise de Garantia de outros softwares.\n                Cada célula na matriz mostra o\n                <b>número esperado de novos reparos</b> daquela coorte de produção\n                no mês de calendário de observação específico, com base no modelo\n                de sobrevivência paramétrica ajustado.<br/><br/>\n\n                <b>Pré-requisitos</b><br/>\n                <ol>\n                  <li>Execute <i>Análise de Sobrevivência Paramétrica (Intervalo)</i> para ajustar um\n                      modelo flexsurvreg. Salve o modelo anotando seu nome\n                      (por exemplo, bsky_weibull_fit).</li>\n                  <li>Tenha um conjunto de dados de envio com meses de produção e contagens\n                      entregues disponíveis como o conjunto de dados ativo.</li>\n                </ol>\n\n                <b>Meses de observação (gerados automaticamente)</b><br/>\n                Você só precisa especificar o <b>último mês de observação</b>.\n                Todos os meses de coluna a partir de um mês após a coorte de produção mais antiga\n                até o último mês de observação são gerados automaticamente.\n                A idade máxima F(t) também é calculada automaticamente como\n                last_obs_month -' oldest_production_month.<br/><br/>\n\n                <b>Fórmula da célula</b><br/>\n                Cada célula = Entregue -- f(age_months)<br/>\n                onde age_months = observation_month -' production_month (em meses)<br/>\n                e f(t) = F(t) -' F(t-'1) é a probabilidade de falha incremental\n                (proporção esperada de unidades falhando naquele mês específico de idade).<br/><br/>\n\n                <b>Linhas de cabeçalho</b><br/>\n                <ul>\n                  <li><b>Probabilidade de Falha Cumulativa</b> - F(t) em idades 1..N</li>\n                  <li><b>Probabilidade de Falha por mês</b> - f(t) = F(t) -' F(t-'1)</li>\n                </ul>\n\n                <b>Linha de SOMA da coluna</b><br/>\n                A linha inferior soma todas as células de coorte em cada mês de observação,\n                dando o total esperado de novos reparos em todas as coortes -\n                a previsão de carga de trabalho mensal de garantia.<br/><br/>\n\n                <b>Formatos de data suportados</b><br/>\n                YYYYMM | MMM-YY | MMM-YYYY | YYYY-MM | MM/YYYY | POSIXct\n            "
+  }
+}

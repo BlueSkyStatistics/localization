@@ -1,0 +1,24 @@
+{
+  "title": "参数生存分布拟合分析（区间右删失）",
+  "navigation": "参数生存分布拟合（区间）",
+  "timevarL": "开始时间 / 区间下限 (Age_L)",
+  "timevarU": "结束时间 / 区间上限 (Age_U) — 使用 NA 或 Inf 表示右删失",
+  "labelDistribution": "选择一个或多个分布进行拟合比较",
+  "selectDistFuncWeibullChk": "威布尔",
+  "selectDistFuncExpChk": "指数",
+  "selectDistFuncGammaChk": "伽马",
+  "selectDistFuncLnormalChk": "对数正态",
+  "selectDistFuncLogLogisChk": "对数逻辑斯蒂",
+  "useSummaryDataChk": "使用汇总频率数据进行拟合。按 (Age_L, Age_U) 分组行，并使用频率权重进行拟合。",
+  "confidenceInterval": "最大似然估计的置信水平",
+  "printPercentileTableChk": "显示所选分布的百分位数表",
+  "percentileInput": "百分位数表 — 分位数用逗号分隔（例如 0.01, 0.05, 0.10, 0.50）",
+  "printMTTFChk": "显示所有分布的MTTF（平均故障时间）表",
+  "printProbabilityPlotChk": "显示所选分布的概率图",
+  "printModelParamChk": "显示所有拟合分布的估计参数",
+  "help": {
+    "title": "参数生存分布拟合分析（区间右删失）",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n                <b>描述</b><br/><br/>\n                将多个参数生存分布拟合到区间右删失数据\n                使用 <code>Surv(Age_L, Age_U, type=\"interval2\")</code> 并\n                通过 AIC 进行比较（值越低，拟合越好）。<br/><br/>\n\n                <b>处理的删失类型</b><br/>\n                <ul>\n                  <li><b>精确故障</b>: Age_L == Age_U</li>\n                  <li><b>区间删失</b>: Age_L &lt; Age_U（均为有限） —\n                      故障发生在 Age_L 和 Age_U 之间</li>\n                  <li><b>右删失</b>: Age_U = Inf 或 NA — 单位在 Age_L 时仍在运行</li>\n                  <li><b>左删失</b>: Age_L = 0, Age_U 有限 — 在第一次检查之前故障</li>\n                </ul>\n\n                <b>输出</b><br/>\n                <ul>\n                  <li>AIC 比较表 — 从最佳到最差拟合的分布排名</li>\n                  <li>最佳拟合分布的生存曲线及其置信区间</li>\n                  <li>最佳拟合分布的风险曲线及其置信区间</li>\n                  <li>使用 Turnbull 非参数估计器作为叠加的经验与拟合生存图（替代需要精确时间的 Kaplan-Meier）</li>\n                  <li>可选：每个拟合分布的 MLE 参数表</li>\n                </ul>\n\n                <b>关于分布名称的说明</b><br/>\n                flexsurvreg 使用：weibull, exp, gamma, lognormal, loglogistic.\n            "
+  }
+}

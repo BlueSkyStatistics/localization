@@ -1,0 +1,24 @@
+{
+  "title": "Probabilitățile de eșec ale garanției în tabelul Nevada",
+  "navigation": "Tabelul de predicție a garanției Nevada",
+  "labelModelSel": "Pasul 1 - Selectați modelul flexsurvreg ajustat",
+  "modelSelection": "Selectați modelul (trebuie să fie un model flexsurvreg ajustat prin analiza de supraviețuire parametrică (interval))",
+  "labelShipDataset": "Pasul 2 - Selectați setul de date pentru expediere / livrare (set de date activ)",
+  "shipProdMonthCol": "Coloana lunii de producție",
+  "shipProdMonthFmt": "Formatul lunii de producție",
+  "shipDeliveredCol": "Coloana livrat / unități expediate",
+  "labelObsMonths": "Pasul 3 - Specificați ultima perioadă de observație / predicție",
+  "obsProdMonthFmt": "Formatul ultimei perioade de observație (ignorată când se introduce un offset întreg simplu mai jos)",
+  "lastObsMonth": "Ultima perioadă de observație - introduceți fie: (a) o lună calendaristică în formatul selectat mai sus (de exemplu, 202608), SAU (b) un offset întreg simplu (de exemplu, 25) care înseamnă 'cohorta cea mai veche + 25 perioade'. Toate perioadele de la una după cea mai veche cohortă de producție până la această valoare sunt generate automat ca coloane în tabelul Nevada.",
+  "labelActualRepair": "Pasul 4 - Coloana de reparație / defect real (opțional)",
+  "actualRepairCol": "Selectați coloana care conține numărul real de reparații lunare. Rândurile cu o valoare numerică = date reale deja observate. Rândurile cu NA = perioadă viitoare - acele luni folosesc prognoza din tabelul Nevada. Lăsați gol pentru a sări peste comparația și graficul Actual vs Prognoză.",
+  "labelOutput": "Opțiuni de ieșire",
+  "predictionBound": "Limita de predicție — controlează care estimare F(t) este utilizată pentru valorile celulelor. Estimat = estimare punctuală (implicit). Limita inferioară = cel mai optimist caz (mai puține eșecuri). Limita superioară = cel mai pesimist caz (mai multe eșecuri).",
+  "newdatasetname": "Numele setului de date de ieșire pentru matricea de predicție Nevada",
+  "labelDateNote": "Selectați formatul care se potrivește EXACT cu modul în care sunt stocate datele. Modificările R make.names() (prefix X, puncte) sunt gestionate automat.",
+  "digits": "Cifre de afișat",
+  "help": {
+    "title": "Probabilitățile de eșec în tabelul Nevada",
+    "body": "\n                <b>Descriere</b><br/><br/>\n                Produce probabilitățile de eșec în tabelul Nevada care se potrivesc cu ieșirea\n                analizei de garanție a altor software-uri. Fiecare celulă din matrice arată\n                <b>numărul așteptat de reparații noi</b> din acea cohortă de producție\n                în acea lună calendaristică specifică de observație, bazat pe modelul\n                de supraviețuire parametric ajustat.<br/><br/>\n\n                <b>Prerequisites</b><br/>\n                <ol>\n                  <li>Rulați <i>Analiza de supraviețuire parametrică (interval)</i> pentru a ajusta un\n                      model flexsurvreg. Salvați modelul notându-i numele\n                      (de exemplu, bsky_weibull_fit).</li>\n                  <li>Aveți un set de date de expediere cu luni de producție și numere\n                      livrate disponibile ca set de date activ.</li>\n                </ol>\n\n                <b>Lunile de observație (generate automat)</b><br/>\n                Trebuie să specificați doar <b>ultima lună de observație</b>.\n                Toate lunile coloanelor de la o lună după cea mai veche cohortă de producție\n                până la ultima lună de observație sunt generate automat.\n                Vârsta maximă F(t) este, de asemenea, calculată automat ca\n                last_obs_month -' oldest_production_month.<br/><br/>\n\n                <b>Formula celulei</b><br/>\n                Fiecare celulă = Livrat -- f(age_months)<br/>\n                unde age_months = observation_month -' production_month (în luni)<br/>\n                și f(t) = F(t) -' F(t-'1) este probabilitatea de eșec incrementală\n                (proporția așteptată de unități care eșuează în acea lună specifică de vârstă).<br/><br/>\n\n                <b>Rânduri de antet</b><br/>\n                <ul>\n                  <li><b>Probabilitatea cumulativă de eșec</b> - F(t) la vârstele 1..N</li>\n                  <li><b>Probabilitatea de eșec pe lună</b> - f(t) = F(t) -' F(t-'1)</li>\n                </ul>\n\n                <b>Rândul SUM al coloanei</b><br/>\n                Rândul de jos însumează toate celulele cohortelor în fiecare lună de observație,\n                oferind totalul așteptat de reparații noi în toate cohortele -\n                prognoza lunar a sarcinii de garanție.<br/><br/>\n\n                <b>Formate de dată acceptate</b><br/>\n                YYYYMM | MMM-YY | MMM-YYYY | YYYY-MM | MM/YYYY | POSIXct\n            "
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Parametrik Hayatta Kalma Dağılımı Uyum Analizi (Aralık Kısıtlı)",
+  "navigation": "Parametrik Hayatta Kalma Dağılımı Uyum (Aralık)",
+  "timevarL": "Başlangıç zamanı / aralığın alt sınırı (Age_L)",
+  "timevarU": "Bitiş zamanı / aralığın üst sınırı (Age_U) — sağ kısıtlı için NA veya Inf kullanın",
+  "labelDistribution": "Karşılaştırma için bir veya daha fazla dağılım seçin",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Üstel",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normal",
+  "selectDistFuncLogLogisChk": "Log Logistic",
+  "useSummaryDataChk": "Uygulama için özetlenmiş frekans verilerini kullanın. Satırları (Age_L, Age_U) ile gruplar ve frekans ağırlıkları kullanarak uyum sağlar.",
+  "confidenceInterval": "Maksimum olasılık tahminleri için güven düzeyi",
+  "printPercentileTableChk": "Seçilen dağılımlar için yüzdelik tabloyu göster",
+  "percentileInput": "Yüzdelik Tablosu — kuantiller virgülle ayrılmış (örn. 0.01, 0.05, 0.10, 0.50)",
+  "printMTTFChk": "Tüm dağılımlar için MTTF (Ortalama Arıza Süresi) Tablosunu göster",
+  "printProbabilityPlotChk": "Seçilen dağımlar için olasılık grafiğini göster",
+  "printModelParamChk": "Tüm uyumlu dağılımların tahmin edilen parametrelerini göster",
+  "help": {
+    "title": "Parametrik Hayatta Kalma Dağılımı Uyum Analizi (Aralık Kısıtlı)",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n                <b>Açıklama</b><br/><br/>\n                Aralık-kısıtlı verilere birden fazla parametrik hayatta kalma dağılımı uydurur\n                <code>Surv(Age_L, Age_U, type=\"interval2\")</code> kullanarak ve\n                bunları AIC ile karşılaştırır (daha düşük = daha iyi uyum).<br/><br/>\n\n                <b>İşlenen kısıtlama türleri</b><br/>\n                <ul>\n                  <li><b>Kesin arıza</b>: Age_L == Age_U</li>\n                  <li><b>Aralık-kısıtlı</b>: Age_L &lt; Age_U (her ikisi de sonlu) —\n                      arıza Age_L ve Age_U arasında gerçekleşmiştir</li>\n                  <li><b>Sağ-kısıtlı</b>: Age_U = Inf veya NA — birim hala Age_L'de çalışıyor</li>\n                  <li><b>Sol-kısıtlı</b>: Age_L = 0, Age_U sonlu — ilk muayeneden önce arızalandı</li>\n                </ul>\n\n                <b>Çıktılar</b><br/>\n                <ul>\n                  <li>AIC karşılaştırma tablosu — dağılımlar en iyi uyumdan en kötü uyuma sıralanmıştır</li>\n                  <li>En iyi uyan dağılım için CI ile hayatta kalma eğrisi</li>\n                  <li>En iyi uyan dağılım için CI ile tehlike eğrisi</li>\n                  <li>Kaplan-Meier'in kesin zamanlar gerektiren yerine Turnbull parametrik olmayan\n                      tahmincisini kullanarak Ampirik ile Uydurulmuş Hayatta Kalma grafiği</li>\n                  <li>İsteğe bağlı: Her uyumlu dağılım için MLE parametre tablosu</li>\n                </ul>\n\n                <b>Dağılım isimleri hakkında not</b><br/>\n                flexsurvreg şunları kullanır: weibull, exp, gamma, lognormal, loglogistic.\n            "
+  }
+}

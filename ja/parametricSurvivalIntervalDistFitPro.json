@@ -1,0 +1,24 @@
+{
+  "title": "パラメトリック生存分布フィット分析（区間検閲）",
+  "navigation": "パラメトリック生存分布フィット（区間）",
+  "timevarL": "開始時間 / 区間の下限（Age_L）",
+  "timevarU": "終了時間 / 区間の上限（Age_U） — 右検閲にはNAまたはInfを使用",
+  "labelDistribution": "フィット比較のために1つ以上の分布を選択",
+  "selectDistFuncWeibullChk": "ワイブル",
+  "selectDistFuncExpChk": "指数",
+  "selectDistFuncGammaChk": "ガンマ",
+  "selectDistFuncLnormalChk": "対数正規",
+  "selectDistFuncLogLogisChk": "対数ロジスティック",
+  "useSummaryDataChk": "フィッティングのために要約された頻度データを使用します。行を（Age_L, Age_U）でグループ化し、頻度重みを使用してフィットします。",
+  "confidenceInterval": "最尤推定の信頼レベル",
+  "printPercentileTableChk": "選択した分布のパーセンタイルテーブルを表示",
+  "percentileInput": "パーセンタイルのテーブル — 分位数をカンマ区切り（例：0.01, 0.05, 0.10, 0.50）",
+  "printMTTFChk": "すべての分布のMTTF（平均故障時間）テーブルを表示",
+  "printProbabilityPlotChk": "選択した分布の確率プロットを表示",
+  "printModelParamChk": "すべてのフィットした分布の推定パラメータを表示",
+  "help": {
+    "title": "パラメトリック生存分布フィット分析（区間検閲）",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n                <b>説明</b><br/><br/>\n                区間検閲データに対して複数のパラメトリック生存分布をフィットし\n                <code>Surv(Age_L, Age_U, type=\"interval2\")</code>を使用して\n                AICで比較します（低いほどフィットが良い）。<br/><br/>\n\n                <b>処理される検閲タイプ</b><br/>\n                <ul>\n                  <li><b>正確な故障</b>: Age_L == Age_U</li>\n                  <li><b>区間検閲</b>: Age_L &lt; Age_U（両方とも有限） —\n                      故障はAge_LとAge_Uの間に発生しました</li>\n                  <li><b>右検閲</b>: Age_U = InfまたはNA — 単位はAge_Lでまだ動作中</li>\n                  <li><b>左検閲</b>: Age_L = 0, Age_U有限 — 最初の検査前に故障</li>\n                </ul>\n\n                <b>出力</b><br/>\n                <ul>\n                  <li>AIC比較テーブル — 最良から最悪のフィットまでランク付けされた分布</li>\n                  <li>最適フィット分布のCIを持つ生存曲線</li>\n                  <li>最適フィット分布のCIを持つハザード曲線</li>\n                  <li>ターンブル非パラメトリック推定器をオーバーレイとして使用した経験的対フィット生存プロット（正確な時間を必要とするカプラン・マイヤーを置き換えます）</li>\n                  <li>オプション: フィットしたすべての分布のMLEパラメータテーブル</li>\n                </ul>\n\n                <b>分布名に関する注意</b><br/>\n                flexsurvregは次を使用します: weibull, exp, gamma, lognormal, loglogistic.\n            "
+  }
+}

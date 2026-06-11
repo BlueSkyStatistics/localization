@@ -1,0 +1,27 @@
+{
+    "title": "Build Nevada Table from Shipment and Repair Warranty Data",
+    "navigation": "Build Nevada Table from Warranty Data",
+    "labelShipNote": "SHIPMENT dataset: set as the ACTIVE dataset before opening this dialog. Select your production month and delivered columns below.",
+    "labelRepairNote": "REPAIR dataset: select from the dropdown below. Once selected its columns will appear for mapping.",
+    "shipProdMonthCol": "Shipment: Select the Production Month column",
+    "shipProdMonthFmt": "Shipment: Production Month format",
+    "shipDeliveredCol": "Shipment: Select the Delivered / units shipped column",
+    "labelRepairCols": "Repair dataset columns (available after selecting repair dataset above)",
+    "repairProdMonthCol": "Repair: Select the Production Month column",
+    "repairProdMonthFmt": "Repair: Production Month format",
+    "repairMonthCol": "Repair: Select the Repair / failure month column",
+    "repairMonthFmt": "Repair: Repair month format",
+    "chkPreAggregated": "Repair data is pre-aggregated (one row per production month / repair month combination, with a count column)",
+    "repairCountCol": "Repair: Select the repair count column (number of repairs per row)",
+    "labelPreAggNote": "When checked, the module sums the count column instead of counting rows. Leave unchecked if each row represents a single repair event (transactional format).",
+    "labelOutputOpts": "Output dataset options",
+    "newdatasetNevada": "Output dataset name - Nevada table format",
+    "colHeaderFmt": "Age column header style in generated Nevada table",
+    "newdatasetIC": "Output dataset name (Interval-censored) - leave blank to skip",
+    "sortOrder": "Sort Nevada output rows",
+    "labelDateNote": "Select the format that matches EXACTLY how dates appear in each column. All formats are converted internally to YYYYMM for arithmetic. R make.names() changes (X prefix, dots) are handled automatically.",
+    "help": {
+        "title": "Build Nevada Table from Shipment and Repair Data",
+        "body": "\n                <b>Description</b><br/><br/>\n                Constructs a Nevada (warranty matrix) table from two datasets\n                and optionally also produces the interval-censored output ready\n                for <i>Parametric Survival Analysis (Interval)</i>.<br/><br/>\n\n                <b>Setup</b><br/>\n                <ol>\n                  <li>Set the <b>shipment / delivery dataset as the active dataset</b>\n                      in BlueSky before opening this dialog.</li>\n                  <li>Select the <b>repair / failure dataset</b> from the dropdown\n                      in the left panel. Its columns will then populate the\n                      repair column selectors on the right.</li>\n                </ol>\n\n                <b>Shipment dataset</b> — one row per production cohort:<br/>\n                <ul>\n                  <li>A production month column</li>\n                  <li>A delivered / units shipped column (numeric)</li>\n                </ul>\n\n                <b>Repair dataset</b> — one row per individual repair event:<br/>\n                <ul>\n                  <li>The production month of the repaired unit</li>\n                  <li>The calendar month in which the repair occurred</li>\n                </ul>\n\n                <b>How the Nevada matrix is built</b><br/>\n                <ol>\n                  <li>Both production month columns and the repair month column\n                      are converted to YYYYMM integers using the declared formats.</li>\n                  <li>Age at repair (months) = repair_month − production_month\n                      (both converted to linear month counts).</li>\n                  <li>Repair counts are aggregated by (production month, age).</li>\n                  <li>A full cohort × age grid is built. Each cohort's maximum\n                      observable age = last repair month − cohort production month.\n                      Ages beyond this limit are NA (the upper-right triangle).</li>\n                  <li>The grid is pivoted wide and joined to the shipment delivered\n                      counts to produce the Nevada matrix.</li>\n                </ol>\n\n                <b>Supported date formats</b><br/>\n                <ul>\n                  <li><b>YYYYMM (e.g. 202501)</b> — six-digit integer</li>\n                  <li><b>MMM-YY (e.g. Jan-25)</b> — three-letter month, 2-digit year</li>\n                  <li><b>MMM-YYYY (e.g. Jan-2025)</b> — three-letter month, 4-digit year</li>\n                  <li><b>YYYY-MM (e.g. 2025-01)</b> — ISO format</li>\n                  <li><b>MM/YYYY (e.g. 01/2025)</b> — month slash year</li>\n                  <li><b>POSIXct (e.g. R date type)</b> — already a proper R date</li>\n                </ul>\n                R make.names() mangling (X prefix prepended to numeric names,\n                dots replacing hyphens/slashes) is reversed automatically —\n                select the <i>original</i> format, not the R-mangled version.<br/><br/>\n\n                <b>Interval-censored output (optional)</b><br/>\n                Produces a long-format dataset with Month, Age_L, Age_U, Status.\n                Feed directly into <i>Parametric Survival Analysis (Interval)</i>\n                selecting Age_L as Start time (L) and Age_U as End time (U).\n            "
+    }
+}

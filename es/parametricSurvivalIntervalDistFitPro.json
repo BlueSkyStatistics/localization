@@ -1,0 +1,24 @@
+{
+  "title": "Análisis de Ajuste de Distribución de Supervivencia Paramétrica (Censurado por Intervalo)",
+  "navigation": "Ajuste de Distribución de Supervivencia Paramétrica (Intervalo)",
+  "timevarL": "Hora de inicio / límite inferior del intervalo (Edad_L)",
+  "timevarU": "Hora de finalización / límite superior del intervalo (Edad_U) — use NA o Inf para censurado a la derecha",
+  "labelDistribution": "Seleccione una o más distribuciones para comparación de ajuste",
+  "selectDistFuncWeibullChk": "Weibull",
+  "selectDistFuncExpChk": "Exponencial",
+  "selectDistFuncGammaChk": "Gamma",
+  "selectDistFuncLnormalChk": "Log Normal",
+  "selectDistFuncLogLogisChk": "Log Logístico",
+  "useSummaryDataChk": "Utilizar datos de frecuencia resumidos para el ajuste. Agrupa filas por (Edad_L, Edad_U) y ajusta utilizando pesos de frecuencia.",
+  "confidenceInterval": "Nivel de confianza para estimaciones de máxima verosimilitud",
+  "printPercentileTableChk": "Mostrar tabla de percentiles para las distribuciones seleccionadas",
+  "percentileInput": "Tabla de Percentiles — cuantiles separados por comas (por ejemplo, 0.01, 0.05, 0.10, 0.50)",
+  "printMTTFChk": "Mostrar Tabla de MTTF (Tiempo Medio hasta el Fallo) para todas las distribuciones",
+  "printProbabilityPlotChk": "Mostrar gráfico de probabilidad para las distribuciones seleccionadas",
+  "printModelParamChk": "Mostrar los parámetros estimados de todas las distribuciones ajustadas",
+  "help": {
+    "title": "Análisis de Ajuste de Distribución de Supervivencia Paramétrica (Censurado por Intervalo)",
+    "r_help": "help(flexsurvreg, package = 'flexsurv')",
+    "body": "\n                <b>Descripción</b><br/><br/>\n                Ajusta múltiples distribuciones de supervivencia paramétricas a datos censurados por intervalo\n                utilizando <code>Surv(Age_L, Age_U, type=\"interval2\")</code> y\n                las compara por AIC (menor = mejor ajuste).<br/><br/>\n\n                <b>Tipos de censura manejados</b><br/>\n                <ul>\n                  <li><b>Fallo exacto</b>: Edad_L == Edad_U</li>\n                  <li><b>Censurado por intervalo</b>: Edad_L &lt; Edad_U (ambos finitos) —\n                      el fallo ocurrió entre Edad_L y Edad_U</li>\n                  <li><b>Censurado a la derecha</b>: Edad_U = Inf o NA — unidad aún funcionando en Edad_L</li>\n                  <li><b>Censurado a la izquierda</b>: Edad_L = 0, Edad_U finita — falló antes de la primera inspección</li>\n                </ul>\n\n                <b>Salidas</b><br/>\n                <ul>\n                  <li>Tabla de comparación de AIC — distribuciones clasificadas de mejor a peor ajuste</li>\n                  <li>Curva de supervivencia con CI para la distribución de mejor ajuste</li>\n                  <li>Curva de riesgo con CI para la distribución de mejor ajuste</li>\n                  <li>Gráfico de Supervivencia Empírica vs Ajustada utilizando el estimador no paramétrico de Turnbull\n                      como superposición (reemplaza a Kaplan-Meier que requiere tiempos exactos)</li>\n                  <li>Opcionalmente: tabla de parámetros MLE para cada distribución ajustada</li>\n                </ul>\n\n                <b>Nota sobre los nombres de las distribuciones</b><br/>\n                flexsurvreg utiliza: weibull, exp, gamma, lognormal, loglogistic.\n            "
+  }
+}

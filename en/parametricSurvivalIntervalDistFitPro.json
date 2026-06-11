@@ -1,0 +1,24 @@
+{
+    "title": "Parametric Survival Distribution Fit Analysis (Interval Censored)",
+    "navigation": "Parametric Survival Dist Fit (Interval)",
+    "timevarL": "Start time / lower bound of interval (Age_L)",
+    "timevarU": "End time / upper bound of interval (Age_U) — use NA or Inf for right-censored",
+    "labelDistribution": "Select one or more distributions for fit comparison",
+    "selectDistFuncWeibullChk": "Weibull",
+    "selectDistFuncExpChk": "Exponential",
+    "selectDistFuncGammaChk": "Gamma",
+    "selectDistFuncLnormalChk": "Log Normal",
+    "selectDistFuncLogLogisChk": "Log Logistic",
+    "useSummaryDataChk": "Use summarized frequency data for fitting. Groups rows by (Age_L, Age_U) and fits using frequency weights.",
+    "confidenceInterval": "Confidence level for maximum likelihood estimates",
+    "printPercentileTableChk": "Show percentile table for distributions selected",
+    "percentileInput": "Table of Percentiles — quantiles comma-separated (e.g. 0.01, 0.05, 0.10, 0.50)",
+    "printMTTFChk": "Show Table of MTTF (Mean Time to Failure) for all distributions",
+    "printProbabilityPlotChk": "Show probablity plot for distributions selected",
+    "printModelParamChk": "Show the estimated parameters of all fitted distributions",
+    "help": {
+        "title": "Parametric Survival Distribution Fit Analysis (Interval Censored)",
+        "r_help": "help(flexsurvreg, package = 'flexsurv')",
+        "body": "\n                <b>Description</b><br/><br/>\n                Fits multiple parametric survival distributions to interval-censored\n                data using <code>Surv(Age_L, Age_U, type=\"interval2\")</code> and\n                compares them by AIC (lower = better fit).<br/><br/>\n\n                <b>Censoring types handled</b><br/>\n                <ul>\n                  <li><b>Exact failure</b>: Age_L == Age_U</li>\n                  <li><b>Interval-censored</b>: Age_L &lt; Age_U (both finite) —\n                      failure occurred between Age_L and Age_U</li>\n                  <li><b>Right-censored</b>: Age_U = Inf or NA — unit still running at Age_L</li>\n                  <li><b>Left-censored</b>: Age_L = 0, Age_U finite — failed before first inspection</li>\n                </ul>\n\n                <b>Outputs</b><br/>\n                <ul>\n                  <li>AIC comparison table — distributions ranked from best to worst fit</li>\n                  <li>Survival curve with CI for the best-fitting distribution</li>\n                  <li>Hazard curve with CI for the best-fitting distribution</li>\n                  <li>Empirical vs Fitted Survival plot using the Turnbull nonparametric\n                      estimator as overlay (replaces Kaplan-Meier which requires exact times)</li>\n                  <li>Optionally: MLE parameter table for every fitted distribution</li>\n                </ul>\n\n                <b>Note on distribution names</b><br/>\n                flexsurvreg uses: weibull, exp, gamma, lognormal, loglogistic.\n            "
+    }
+}

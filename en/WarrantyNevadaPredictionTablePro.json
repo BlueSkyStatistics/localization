@@ -1,0 +1,24 @@
+{
+    "title": "Warranty Failure Probabilities in Nevada Table",
+    "navigation": "Warranty Nevada Prediction Table",
+    "labelModelSel": "Step 1 - Select the fitted flexsurvreg model",
+    "modelSelection": "Select model (must be a flexsurvreg model fitted by Parametric Survival Analysis (Interval))",
+    "labelShipDataset": "Step 2 - Select the shipment / delivery dataset (active dataset)",
+    "shipProdMonthCol": "Production Month column",
+    "shipProdMonthFmt": "Production Month format",
+    "shipDeliveredCol": "Delivered / units shipped column",
+    "labelObsMonths": "Step 3 - Specify the last observation / prediction period",
+    "obsProdMonthFmt": "Last observation period format (ignored when entering a plain integer offset below)",
+    "lastObsMonth": "Last observation period - enter either: (a) a calendar month in the format selected above (e.g. 202608), OR (b) a plain integer offset (e.g. 25) meaning 'oldest cohort + 25 periods'. All periods from one after the earliest production cohort up to this value are generated automatically as the Nevada table columns.",
+    "labelActualRepair": "Step 4 - Actual repair / defect column (optional)",
+    "actualRepairCol": "Select the column containing actual monthly repair counts. Rows with a numeric value = actual data already observed. Rows with NA = future period - those months use the forecast from the Nevada table. Leave empty to skip the Actual vs Forecast comparison and chart.",
+    "labelOutput": "Output options",
+    "predictionBound": "Prediction bound — controls which F(t) estimate is used for cell values. Estimated = point estimate (default). Lower bound = optimistic best case (fewer failures). Upper bound = pessimistic worst case (more failures).",
+    "newdatasetname": "Output dataset name for the Nevada prediction matrix",
+    "labelDateNote": "Select the format that matches EXACTLY how dates are stored. R make.names() changes (X prefix, dots) are handled automatically.",
+    "digits": "Digits to display",
+    "help": {
+        "title": "Failure Probabilities in Nevada Table",
+        "body": "\n                <b>Description</b><br/><br/>\n                Produces the Failure Probabilities in Nevada Table matching other software's\n                Warranty Analysis output. Each cell in the matrix shows the\n                <b>expected number of new repairs</b> from that production cohort\n                in that specific observation calendar month, based on the fitted\n                parametric survival model.<br/><br/>\n\n                <b>Prerequisites</b><br/>\n                <ol>\n                  <li>Run <i>Parametric Survival Analysis (Interval)</i> to fit a\n                      flexsurvreg model. Save the model by noting its name\n                      (e.g. bsky_weibull_fit).</li>\n                  <li>Have a shipment dataset with production months and delivered\n                      counts available as the active dataset.</li>\n                </ol>\n\n                <b>Observation months (auto-generated)</b><br/>\n                You only need to specify the <b>last observation month</b>.\n                All column months from one month after the earliest production cohort\n                up to the last observation month are generated automatically.\n                The maximum age F(t) is also computed automatically as\n                last_obs_month -' oldest_production_month.<br/><br/>\n\n                <b>Cell formula</b><br/>\n                Each cell = Delivered -- f(age_months)<br/>\n                where age_months = observation_month -' production_month (in months)<br/>\n                and f(t) = F(t) -' F(t-'1) is the incremental failure probability\n                (expected proportion of units failing in that specific month of age).<br/><br/>\n\n                <b>Header rows</b><br/>\n                <ul>\n                  <li><b>Cumulative Failure Probability</b> - F(t) at ages 1..N</li>\n                  <li><b>Failure Probability per month</b> - f(t) = F(t) -' F(t-'1)</li>\n                </ul>\n\n                <b>Column SUM row</b><br/>\n                The bottom row sums all cohort cells in each observation month,\n                giving the total expected new repairs across all cohorts -\n                the monthly warranty workload forecast.<br/><br/>\n\n                <b>Supported date formats</b><br/>\n                YYYYMM | MMM-YY | MMM-YYYY | YYYY-MM | MM/YYYY | POSIXct\n            "
+    }
+}
