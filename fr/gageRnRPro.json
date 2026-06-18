@@ -1,5 +1,5 @@
 {
-  "title": "Gage R&R - Analyse du Système de Mesure",
+  "title": "Gage R&R - Analyse du système de mesure",
   "navigation": "Gage R&R",
   "mainTitle": "Titre principal pour la sortie graphique",
   "subTitle": "Sous-titre pour la sortie graphique (par exemple, le nom du projet)",
@@ -16,7 +16,7 @@
   "errorTerm": "Quel terme du modèle doit être utilisé comme terme d'erreur (pour le modèle avec interaction)",
   "method": "Type d'analyse à effectuer, croisée (par défaut) ou imbriquée",
   "label1": "Détails de l'en-tête du rapport d'étude Gage R&R",
-  "gageName": "Nom du Gage",
+  "gageName": "Nom du gage",
   "dateStudy": "Date de l'étude",
   "partDescription": "Description de la pièce",
   "machineName": "Nom de la machine",
@@ -25,8 +25,8 @@
   "testLocation": "Lieu du test",
   "miscellaneous": "Divers",
   "help": {
-    "title": "Gage R&R - Analyse du Système de Mesure",
+    "title": "Gage R&R - Analyse du système de mesure",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tà partir du jeu de données d'exemple, sélectionnez la variable diamètre comme variable mesurée, Pistonring comme variable de pièce et Opérateur comme Évaluateur \n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tà partir du jeu de données d'exemple, sélectionnez la variable de diamètre comme variable mesurée, Pistonring comme variable de pièce et Opérateur comme évaluateur \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

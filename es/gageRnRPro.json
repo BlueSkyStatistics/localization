@@ -9,7 +9,7 @@
   "lsl": "LSL - valor numérico del límite de especificación inferior utilizado con USL para calcular la Variación del Estudio como %Tolerancia",
   "usl": "USL - valor numérico del límite de especificación superior utilizado con LSL para calcular la Variación del Estudio como %Tolerancia",
   "historicalStdv": "Desviación estándar histórica del proceso (si no se especifica, escriba NA)",
-  "useHistStdDevProcVarChk": "Usar desviación estándar histórica para estimar los valores de Evaluación de Gage (%Tabla de Variación del Estudio)",
+  "useHistStdDevProcVarChk": "Usar la desviación estándar histórica para estimar los valores de Evaluación de Gage (%TablaStudyVar)",
   "sigma": "Sigma - valor numérico para el número de desviaciones estándar a utilizar en el cálculo de la Variación del Estudio",
   "tolerance": "Tolerancia - valor numérico para la tolerancia - predeterminado (usl - lsl)",
   "alphaLim": "Alpha - Límite a tener en cuenta para la interacción",
@@ -27,6 +27,6 @@
   "help": {
     "title": "Gage R&R - Análisis del Sistema de Medición",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tLa función ss.rr realiza un análisis de Gage R&R para la evaluación del sistema de medición de un proceso\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado gageR_R_piston_diameter_with_measurements.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\tdel conjunto de datos de muestra, seleccione la variable de diámetro como Variable Medida, Pistonring como Variable de Parte y Operador como Evaluador \n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción ss.rr para realizar el análisis de Gage R&R para la evaluación del sistema de medición de un proceso\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar el archivo de conjunto de datos de muestra llamado gageR_R_piston_diameter_with_measurements.xlsx. Abra el archivo en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\tdel conjunto de datos de muestra, seleccione la variable de diámetro como Variable Medida, Pistonring como Variable de Parte y Operador como Evaluador\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

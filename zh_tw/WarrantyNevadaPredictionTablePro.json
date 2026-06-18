@@ -3,15 +3,15 @@
   "navigation": "內華達州保固預測表",
   "labelModelSel": "步驟 1 - 選擇擬合的 flexsurvreg 模型",
   "modelSelection": "選擇模型（必須是由參數生存分析（區間）擬合的 flexsurvreg 模型）",
-  "labelShipDataset": "步驟 2 - 選擇運輸/交付數據集（活動數據集）",
-  "shipProdMonthCol": "生產月份列",
+  "labelShipDataset": "步驟 2 - 選擇運送/交付數據集（活動數據集）",
+  "shipProdMonthCol": "生產月份欄",
   "shipProdMonthFmt": "生產月份格式",
-  "shipDeliveredCol": "交付/運送單位列",
+  "shipDeliveredCol": "交付/運送單位欄",
   "labelObsMonths": "步驟 3 - 指定最後觀察/預測期間",
   "obsProdMonthFmt": "最後觀察期間格式（在下面輸入普通整數偏移時忽略）",
   "lastObsMonth": "最後觀察期間 - 請輸入以下任一項：（a）以上述選擇的格式輸入日曆月份（例如 202608），或（b）普通整數偏移（例如 25），表示 '最舊的隊列 + 25 期間'。從最早的生產隊列之後的第一個期間到此值的所有期間將自動生成為內華達州表的列。",
-  "labelActualRepair": "步驟 4 - 實際維修/缺陷列（可選）",
-  "actualRepairCol": "選擇包含實際每月維修數量的列。數值為數字的行 = 已觀察的實際數據。NA 的行 = 未來期間 - 這些月份使用內華達州表的預測。留空以跳過實際與預測的比較和圖表。",
+  "labelActualRepair": "步驟 4 - 實際修復/缺陷欄（可選）",
+  "actualRepairCol": "選擇包含實際每月修復數的欄。數值為數字的行 = 已觀察的實際數據。NA 的行 = 未來期間 - 這些月份使用內華達州表的預測。留空以跳過實際與預測的比較和圖表。",
   "labelOutput": "輸出選項",
   "predictionBound": "預測界限 — 控制用於單元值的 F(t) 估計。估計 = 點估計（默認）。下界 = 樂觀的最佳情況（較少的失敗）。上界 = 悲觀的最壞情況（更多的失敗）。",
   "newdatasetname": "內華達預測矩陣的輸出數據集名稱",
@@ -19,6 +19,6 @@
   "digits": "顯示的位數",
   "help": {
     "title": "內華達州表中的失敗機率",
-    "body": "\n                <b>描述</b><br/><br/>\n                生成與其他軟件的保固分析輸出相匹配的內華達州失敗機率表。矩陣中的每個單元格顯示該生產隊列在特定觀察日曆月份的<b>預期新維修數量</b>，基於擬合的參數生存模型。<br/><br/>\n\n                <b>前提條件</b><br/>\n                <ol>\n                  <li>運行 <i>參數生存分析（區間）</i> 以擬合 flexsurvreg 模型。通過記下其名稱（例如 bsky_weibull_fit）來保存模型。</li>\n                  <li>擁有一個包含生產月份和交付數量的運輸數據集，作為活動數據集。</li>\n                </ol>\n\n                <b>觀察月份（自動生成）</b><br/>\n                您只需指定<b>最後觀察月份</b>。從最早的生產隊列之後的第一個月份到最後觀察月份的所有列月份將自動生成。最大年齡 F(t) 也會自動計算為 last_obs_month - ' oldest_production_month。<br/><br/>\n\n                <b>單元格公式</b><br/>\n                每個單元格 = 交付 -- f(age_months)<br/>\n                其中 age_months = observation_month - ' production_month（以月份計算）<br/>\n                且 f(t) = F(t) - ' F(t-'1) 是增量失敗機率（在該特定月份年齡中失敗的單位預期比例）。<br/><br/>\n\n                <b>標題行</b><br/>\n                <ul>\n                  <li><b>累積失敗機率</b> - F(t) 在年齡 1..N</li>\n                  <li><b>每月失敗機率</b> - f(t) = F(t) - ' F(t-'1)</li>\n                </ul>\n\n                <b>列 SUM 行</b><br/>\n                最底行將每個觀察月份中的所有隊列單元格相加，給出所有隊列的總預期新維修數量 - 每月保固工作量預測。<br/><br/>\n\n                <b>支持的日期格式</b><br/>\n                YYYYMM | MMM-YY | MMM-YYYY | YYYY-MM | MM/YYYY | POSIXct\n            "
+    "body": "\n                <b>描述</b><br/><br/>\n                生成與其他軟件的保固分析輸出相匹配的內華達州失敗機率表。矩陣中的每個單元顯示來自該生產隊列在特定觀察日曆月份的\n                <b>預期新修復數</b>，基於擬合的參數生存模型。<br/><br/>\n\n                <b>前提條件</b><br/>\n                <ol>\n                  <li>運行 <i>參數生存分析（區間）</i> 以擬合 flexsurvreg 模型。通過記下其名稱（例如 bsky_weibull_fit）來保存模型。</li>\n                  <li>擁有一個運送數據集，其中包含生產月份和交付數，作為活動數據集。</li>\n                </ol>\n\n                <b>觀察月份（自動生成）</b><br/>\n                您只需指定 <b>最後觀察月份</b>。從最早的生產隊列之後的第一個月份到最後觀察月份的所有列月份將自動生成。\n                最大年齡 F(t) 也會自動計算為 last_obs_month - ' oldest_production_month。<br/><br/>\n\n                <b>單元公式</b><br/>\n                每個單元 = 交付 -- f(age_months)<br/>\n                其中 age_months = 觀察月份 - ' 生產月份（以月份計）<br/>\n                和 f(t) = F(t) - ' F(t-'1) 是增量失敗機率\n                （在該特定月份的年齡中預期失敗的單位比例）。<br/><br/>\n\n                <b>標題行</b><br/>\n                <ul>\n                  <li><b>累積失敗機率</b> - F(t) 在年齡 1..N</li>\n                  <li><b>每月失敗機率</b> - f(t) = F(t) - ' F(t-'1)</li>\n                </ul>\n\n                <b>列 SUM 行</b><br/>\n                底部行將每個觀察月份中的所有隊列單元相加，\n                給出所有隊列的總預期新修復數 -\n                每月保固工作量預測。<br/><br/>\n\n                <b>支持的日期格式</b><br/>\n                YYYYMM | MMM-YY | MMM-YYYY | YYYY-MM | MM/YYYY | POSIXct\n            "
   }
 }

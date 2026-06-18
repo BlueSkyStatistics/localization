@@ -16,7 +16,6 @@
     "labelPreAggNote": "When checked, the module sums the count column instead of counting rows. Leave unchecked if each row represents a single repair event (transactional format).",
     "labelOutputOpts": "Output dataset options",
     "newdatasetNevada": "Output dataset name - Nevada table format",
-    "colHeaderFmt": "Age column header style in generated Nevada table",
     "newdatasetIC": "Output dataset name (Interval-censored) - leave blank to skip",
     "sortOrder": "Sort Nevada output rows",
     "labelDateNote": "Select the format that matches EXACTLY how dates appear in each column. All formats are converted internally to YYYYMM for arithmetic. R make.names() changes (X prefix, dots) are handled automatically.",

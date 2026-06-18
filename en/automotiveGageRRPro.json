@@ -10,6 +10,7 @@
     "target": "Target (Optional — if specified, used for probability of misclassification plot)",
     "label3": "Process Control",
     "historicalStdv": "Historical process std deviation - optional, but strongly recommended",
+    "alphaLim": "Alpha - p-value threshold for pooling Part x Operator interaction into error",
     "gageName": "Gage Name",
     "studyDate": "Date of Study",
     "performedBy": "Study performed by",

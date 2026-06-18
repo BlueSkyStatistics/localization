@@ -1,8 +1,8 @@
 {
-  "title": "參數生存分佈擬合分析（區間右截）",
+  "title": "參數生存分佈擬合分析（區間右截尾）",
   "navigation": "參數生存分佈擬合（區間）",
   "timevarL": "開始時間 / 區間下界（Age_L）",
-  "timevarU": "結束時間 / 區間上界（Age_U） — 使用 NA 或 Inf 代表右截",
+  "timevarU": "結束時間 / 區間上界（Age_U）— 使用 NA 或 Inf 代表右截尾",
   "labelDistribution": "選擇一個或多個分佈進行擬合比較",
   "selectDistFuncWeibullChk": "威布爾",
   "selectDistFuncExpChk": "指數",
@@ -12,13 +12,13 @@
   "useSummaryDataChk": "使用摘要頻率數據進行擬合。按（Age_L, Age_U）分組行並使用頻率權重進行擬合。",
   "confidenceInterval": "最大似然估計的置信水平",
   "printPercentileTableChk": "顯示所選分佈的百分位數表",
-  "percentileInput": "百分位數表 — 量數以逗號分隔（例如 0.01, 0.05, 0.10, 0.50）",
+  "percentileInput": "百分位數表 — 分位數以逗號分隔（例如 0.01, 0.05, 0.10, 0.50）",
   "printMTTFChk": "顯示所有分佈的MTTF（平均故障時間）表",
   "printProbabilityPlotChk": "顯示所選分佈的概率圖",
   "printModelParamChk": "顯示所有擬合分佈的估計參數",
   "help": {
-    "title": "參數生存分佈擬合分析（區間右截）",
+    "title": "參數生存分佈擬合分析（區間右截尾）",
     "r_help": "help(flexsurvreg, package = 'flexsurv')",
-    "body": "\n                <b>描述</b><br/><br/>\n                將多個參數生存分佈擬合到區間右截數據，使用 <code>Surv(Age_L, Age_U, type=\"interval2\")</code> 並通過 AIC 進行比較（越低 = 擬合越好）。<br/><br/>\n\n                <b>處理的截尾類型</b><br/>\n                <ul>\n                  <li><b>精確故障</b>: Age_L == Age_U</li>\n                  <li><b>區間右截</b>: Age_L &lt; Age_U（均為有限） — 故障發生在 Age_L 和 Age_U 之間</li>\n                  <li><b>右截</b>: Age_U = Inf 或 NA — 單位在 Age_L 時仍在運行</li>\n                  <li><b>左截</b>: Age_L = 0, Age_U 有限 — 在第一次檢查之前故障</li>\n                </ul>\n\n                <b>輸出</b><br/>\n                <ul>\n                  <li>AIC 比較表 — 分佈按擬合好壞排名</li>\n                  <li>最佳擬合分佈的生存曲線及其置信區間</li>\n                  <li>最佳擬合分佈的危險曲線及其置信區間</li>\n                  <li>使用 Turnbull 非參數估計器的經驗與擬合生存圖作為疊加（取代需要精確時間的 Kaplan-Meier）</li>\n                  <li>可選：每個擬合分佈的 MLE 參數表</li>\n                </ul>\n\n                <b>關於分佈名稱的注意事項</b><br/>\n                flexsurvreg 使用：weibull, exp, gamma, lognormal, loglogistic。\n            "
+    "body": "\n                <b>描述</b><br/><br/>\n                將多個參數生存分佈擬合到區間右截尾數據，使用 <code>Surv(Age_L, Age_U, type=\"interval2\")</code> 並通過 AIC 進行比較（越低 = 擬合越好）。<br/><br/>\n\n                <b>處理的截尾類型</b><br/>\n                <ul>\n                  <li><b>精確故障</b>: Age_L == Age_U</li>\n                  <li><b>區間右截尾</b>: Age_L &lt; Age_U（均為有限） — 故障發生在 Age_L 和 Age_U 之間</li>\n                  <li><b>右截尾</b>: Age_U = Inf 或 NA — 單位在 Age_L 時仍在運行</li>\n                  <li><b>左截尾</b>: Age_L = 0, Age_U 有限 — 在第一次檢查之前故障</li>\n                </ul>\n\n                <b>輸出</b><br/>\n                <ul>\n                  <li>AIC 比較表 — 分佈按擬合好壞排名</li>\n                  <li>最佳擬合分佈的生存曲線及其置信區間</li>\n                  <li>最佳擬合分佈的危險曲線及其置信區間</li>\n                  <li>使用 Turnbull 非參數估計器的經驗與擬合生存圖作為疊加（取代需要精確時間的 Kaplan-Meier）</li>\n                  <li>可選：每個擬合分佈的 MLE 參數表</li>\n                </ul>\n\n                <b>關於分佈名稱的說明</b><br/>\n                flexsurvreg 使用：weibull, exp, gamma, lognormal, loglogistic。\n            "
   }
 }

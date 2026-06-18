@@ -1,5 +1,5 @@
 {
-  "title": "Analisi di adattamento della distribuzione di sopravvivenza parametrica (censura per intervallo)",
+  "title": "Analisi di adattamento della distribuzione di sopravvivenza parametrica (censurata per intervallo)",
   "navigation": "Adattamento distribuzione sopravvivenza parametrica (intervallo)",
   "timevarL": "Tempo di inizio / limite inferiore dell'intervallo (Age_L)",
   "timevarU": "Tempo di fine / limite superiore dell'intervallo (Age_U) — usa NA o Inf per censura a destra",
@@ -8,16 +8,16 @@
   "selectDistFuncExpChk": "Esponenziale",
   "selectDistFuncGammaChk": "Gamma",
   "selectDistFuncLnormalChk": "Log Normale",
-  "selectDistFuncLogLogisChk": "Log Logistico",
+  "selectDistFuncLogLogisChk": "Log Logistic",
   "useSummaryDataChk": "Usa dati di frequenza riassunti per l'adattamento. Raggruppa le righe per (Age_L, Age_U) e adatta utilizzando i pesi di frequenza.",
   "confidenceInterval": "Livello di confidenza per le stime di massima verosimiglianza",
   "printPercentileTableChk": "Mostra la tabella dei percentili per le distribuzioni selezionate",
-  "percentileInput": "Tabella dei Percentili — quantili separati da virgola (ad es. 0.01, 0.05, 0.10, 0.50)",
+  "percentileInput": "Tabella dei Percentili — quantili separati da virgole (es. 0.01, 0.05, 0.10, 0.50)",
   "printMTTFChk": "Mostra la tabella di MTTF (Tempo Medio fino al Fallimento) per tutte le distribuzioni",
   "printProbabilityPlotChk": "Mostra il grafico di probabilità per le distribuzioni selezionate",
   "printModelParamChk": "Mostra i parametri stimati di tutte le distribuzioni adattate",
   "help": {
-    "title": "Analisi di adattamento della distribuzione di sopravvivenza parametrica (censura per intervallo)",
+    "title": "Analisi di adattamento della distribuzione di sopravvivenza parametrica (censurata per intervallo)",
     "r_help": "help(flexsurvreg, package = 'flexsurv')",
     "body": "\n                <b>Descrizione</b><br/><br/>\n                Adatta più distribuzioni di sopravvivenza parametriche a dati censurati per intervallo\n                utilizzando <code>Surv(Age_L, Age_U, type=\"interval2\")</code> e\n                le confronta tramite AIC (più basso = miglior adattamento).<br/><br/>\n\n                <b>Tipi di censura gestiti</b><br/>\n                <ul>\n                  <li><b>Fallimento esatto</b>: Age_L == Age_U</li>\n                  <li><b>Censurato per intervallo</b>: Age_L &lt; Age_U (entrambi finiti) —\n                      il fallimento è avvenuto tra Age_L e Age_U</li>\n                  <li><b>Censurato a destra</b>: Age_U = Inf o NA — unità ancora in funzione a Age_L</li>\n                  <li><b>Censurato a sinistra</b>: Age_L = 0, Age_U finito — fallito prima della prima ispezione</li>\n                </ul>\n\n                <b>Output</b><br/>\n                <ul>\n                  <li>Tabella di confronto AIC — distribuzioni classificate dal miglior al peggior adattamento</li>\n                  <li>Curva di sopravvivenza con CI per la distribuzione con il miglior adattamento</li>\n                  <li>Curva di rischio con CI per la distribuzione con il miglior adattamento</li>\n                  <li>Grafico di sopravvivenza empirica vs adattata utilizzando l'estimatore non parametrico di Turnbull\n                      come sovrapposizione (sostituisce Kaplan-Meier che richiede tempi esatti)</li>\n                  <li>Opzionalmente: tabella dei parametri MLE per ogni distribuzione adattata</li>\n                </ul>\n\n                <b>Nota sui nomi delle distribuzioni</b><br/>\n                flexsurvreg utilizza: weibull, exp, gamma, lognormal, loglogistic.\n            "
   }
