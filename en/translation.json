@@ -12,7 +12,11 @@
             "restart": "Restart R",
             "rerun": "Re run",
             "freeze": "Freeze table headers",
-            "toc": "Show table of contents"
+            "toc": "Show table of contents",
+            "addToChat": "Add to chat context",
+            "addDatasetColumnsToChat": "Add dataset columns to chat context",
+            "addDataframeToChat": "Add dataframe to chat context",
+            "addAllOutputToChat": "Add all output to chat context"
         },
         "code": {
             "hide": "Hide code",
@@ -52,6 +56,10 @@
         "refresh": "Refresh dataset",
         "undo": "Undo changes",
         "redo": "Redo changes",
+        "find": "Find in data",
+        "findNext": "Next match",
+        "findPrev": "Previous match",
+        "findClose": "Close",
         "pasteWarning": "You will not be able to undo the data you are about to paste due to the large size of the data. Do you want to continue?",
         "pasteWarningCheckbox": "Do not show this warning again."
     },
@@ -101,6 +109,7 @@
 	"viewModeSplashTitle" : "Warning! View Mode Only",
 	"viewModeSplashMsg" : "This application is in view mode only. You cannot execute any analysis. You can only view old analysis within a project or a .bmd file. If you need the full capability, obtain a software license for this application.",
     "chatAttachmentInitialMessage": "Interpret my analysis results",
+    "chatDataframeAttachmentInitialMessage": "Write me sample R code that uses multivariate analysis to handle missing values",
     "overwritescript1": "A script named {{datasetName}} is already open.",
     "overwritescript2": "Opening {{filepath}} will overwrite the open file.\n\nChoose \"Overwrite\" to proceed, or \"Cancel\" to keep your current changes.",
     "overwritedataset": "Dataset {{dataset_name}} is already open in the grid. Do you want to overwrite it?",
