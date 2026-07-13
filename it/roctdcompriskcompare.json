@@ -1,0 +1,32 @@
+{
+  "title": "Confronta le curve ROC, rischi competitivi dipendenti dal tempo",
+  "navigation": "Confronta le curve ROC, rischi competitivi dipendenti dal tempo",
+  "timevarlabel": "Tempo fino all'evento o censura",
+  "eventvarlabel": "Eventi (1=evento, 0=censura)",
+  "eventcodelabel": "Codice evento",
+  "markerslabel": "Marker (specificare almeno due; valori maggiori devono corrispondere a un rischio di evento più elevato)",
+  "timelabel": "Tempo di follow-up per calcolare le curve ROC",
+  "controldeflabel": "Definizione di controllo",
+  "multcompopt": "Regolazione per confronti multipli",
+  "multcompmethod": "Metodo di confronto multiplo",
+  "themedropdownlabel": "Tema",
+  "plottitlelabel": "Titolo",
+  "plottitlesize": "Dimensione del titolo del grafico (5-50)",
+  "lineoptionslabel": "Opzioni linea",
+  "linewidthlabel": "Larghezza linea",
+  "reflinelabel": "Includi linea di riferimento",
+  "colorpalette": "Palette di colori",
+  "axisoptionslabel": "Opzioni asse",
+  "axislabelsize": "Dimensione etichetta asse (5-50)",
+  "ticklabelsize": "Dimensione etichetta segno asse (5-50)",
+  "legendoptionslabel": "Opzioni legenda",
+  "legendtitle": "Titolo",
+  "legendpos": "Posizione",
+  "curvelabels": "Etichette curva, specificare come 'Etichetta 1', 'Etichetta 2', 'Etichetta 3'; usare \\n all'interno di un'etichetta per un'interruzione di riga",
+  "legendfontsize": "Dimensione etichette legenda (5-50)",
+  "help": {
+    "title": "Confronta le curve ROC, rischi competitivi dipendenti dal tempo",
+    "r_help": "help(compare, package ='timeROC')",
+    "body": "\nQuesto crea curve caratteristiche operative del ricevitore per dati di tempo fino all'evento utilizzando stimatori di pesi di censura non parametrici.\n</br></br>\nI metodi sono descritti in \"Stimare e confrontare aree dipendenti dal tempo sotto curve caratteristiche operative del ricevitore per tempi di eventi censurati con \nrischi competitivi\", Blanche P, Dartigues J, e Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397.\n\n<br/><br/>\nUna tabella di confronti a coppie delle aree delle curve ROC per il tempo di follow-up specificato è fornita. Viene anche creata un grafico delle curve ROC sovrapposte. \nSe la dimensione del campione è superiore a 2000, potrebbe richiedere del tempo per essere eseguito. \n\n<br/><br/>\n\n<b>Tempo fino all'evento o censura:</b></br>\nVariabile per il tempo fino all'evento (per coloro che hanno l'evento) e il tempo fino alla censura (per coloro che non hanno l'evento) (richiesta). Solo numerico. </br></br>\n\n<b>Eventi (1=evento, 0=censura):</b></br>\nVariabile che indica coloro che hanno l'evento (=1) e coloro censurati (=0) (richiesta). Solo numerico. </br></br>\n\n<b>Codice evento:</b></br>\nQuale codice numerico della variabile eventi definisce l'evento di interesse per i grafici ROC. </br></br>\n\n<b>Marker:</b> </br>\nSpecificare almeno due variabili marker per calcolare le curve ROC. Valori maggiori devono corrispondere a un rischio di evento più elevato.  \nNegare i valori se negativamente associati al rischio di evento. Deve essere numerico. (richiesta)</br></br>\n\n<b>Tempo di follow-up per calcolare le curve ROC:</b></br>\nIndicare il tempo di follow-up specifico per il quale si desidera calcolare le curve ROC. Deve essere sulla stessa scala \ndella variabile tempo. (richiesta)</br></br> \n\n<b>Definizione di controllo:</b></br>\nIndicare quali soggetti devono essere considerati controlli. \"Esente da qualsiasi evento\" significa soggetti con tempi di eventi maggiori dei tempi specificati (soggetti che sperimentano eventi con tempi maggiori dei tempi specificati o \ntempi censurati maggiori dei tempi specificati). I soggetti con eventi competitivi prima dei tempi specificati non sono controlli in questa definizione. \"Non un caso\" significa soggetti con tempi di eventi maggiori dei tempi specificati e quelli con eventi competitivi prima dei tempi specificati. \nI soggetti con eventi competitivi prima dei tempi specificati sono considerati controlli in questa definizione. In entrambe le definizioni, i soggetti censurati prima dei tempi specificati non sono considerati controlli. Questi soggetti censurati sono utilizzati solo per stimare i pesi (la probabilità di essere osservati). (richiesta)</br></br>   \n\n<b>Regolazione per confronti multipli:</b></br>\nQuesto produce una tabella delle aree delle curve ROC a coppie quando si esegue una regolazione per confronti multipli. \nLe opzioni sono: \"holm\",\"hochberg\",\"hommel\",\"bonferroni\",\"fdr\" (tasso di scoperta falsa),\"BY\" (Benjamini & Yekutieli) </br></br>\n\n\n<b>Opzioni grafico</b>\n</br></br>\n\n<b>Tema grafico:</b> Specificare il tema generale per il grafico\n<br/><br/>\n\n<b>Titolo grafico:</b> Specificare il titolo per il grafico. Può essere rimosso.\n<br/><br/>\n\n<b>Dimensione titolo grafico:</b> Specificare la dimensione del titolo del grafico.\n<br/><br/>\n\n<b>Opzioni linea:</b>\n<br/><br/>\n\n<b>Includi linea di riferimento:</b> Specificare l'inclusione di una linea diagonale che indica un'area della curva ROC di 0.50.\n<br/><br/>\n\n<b>Larghezza linea:</b> Specificare la dimensione delle linee nel grafico della curva ROC\n<br/><br/>\n\n<b>Palette di colori:</b> Specificare la palette di colori utilizzata per le linee della curva ROC\n<br/><br/>\n\n<b>Opzioni asse:</b>\n<br/><br/>\n\n<b>Dimensione etichetta asse:</b> Specificare la dimensione delle etichette degli assi utilizzate nel grafico.\n<br/><br/>\n\n<b>Dimensione etichetta segno asse:</b> Specificare la dimensione delle etichette dei segni degli assi.\n<br/><br/>\n\n<b>Opzioni legenda:</b>\n<br/><br/>\n\n<b>Posizione:</b> Specificare la posizione della legenda nel grafico. Può essere a destra, in alto, in basso o a sinistra.\n<br/><br/>\n\n<b>Titolo:</b> Specificare il titolo per la legenda. Può essere rimosso.\n<br/><br/>\n\n<b>Etichette curva:</b> Specificare le etichette delle curve utilizzate nella legenda corrispondenti all'ordine delle curve (marker 1, marker 2, marker 3, ecc.). Specificare nulla produrrà etichette curva utilizzando i nomi originali delle variabili marker. Se si specificano etichette, è necessario specificare etichette per tutte le curve. L'ordine delle curve è lo stesso dell'ordine specificato delle variabili marker.\n<br/><br/>\n\n<b>Dimensione etichette legenda:</b> Dimensione di tutto il testo nella legenda.\n<br/><br/>\n\n<b>Pacchetti R richiesti:</b> timeROC, ggplot2, tidyverse, ggthemes, RColorBrewer, ggsci, survival\n\t\t\t"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": "比較 ROC 曲線，時間依賴性",
+  "navigation": "比較 ROC 曲線，時間依賴性",
+  "timevarlabel": "事件或審查的時間",
+  "eventvarlabel": "事件 (1=事件, 0=審查)",
+  "markerslabel": "標記 (至少指定兩個; 較大的值必須對應於較高的事件風險)",
+  "timelabel": "計算 ROC 曲線的隨訪時間",
+  "multcompopt": "多重比較調整",
+  "multcompmethod": "多重比較方法",
+  "themedropdownlabel": "主題",
+  "plottitlelabel": "標題",
+  "plottitlesize": "圖表標題大小 (5-50)",
+  "lineoptionslabel": "線條選項",
+  "linewidthlabel": "線條寬度",
+  "reflinelabel": "包含參考線",
+  "colorpalette": "顏色調色板",
+  "axisoptionslabel": "軸選項",
+  "axislabelsize": "軸標籤大小 (5-50)",
+  "ticklabelsize": "軸刻度標籤大小 (5-50)",
+  "legendoptionslabel": "圖例選項",
+  "legendtitle": "標題",
+  "legendpos": "位置",
+  "curvelabels": "曲線標籤，指定為 '標籤 1', '標籤 2', '標籤 3'; 在標籤內使用 \\n 進行換行",
+  "legendfontsize": "圖例標籤大小 (5-50)",
+  "help": {
+    "title": "比較 ROC 曲線，時間依賴性",
+    "r_help": "help(compare, package ='timeROC')",
+    "body": "\n這會為時間到事件數據創建接收者操作特徵曲線，使用非參數逆概率審查加權估計量。\n</br></br>\n這些方法在 \"估計和比較時間依賴性接收者操作特徵曲線下的區域，針對審查事件時間與競爭風險\" 中描述，Blanche P, Dartigues J, 和 Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397。\n\n<br/><br/>\n提供了指定隨訪時間的 ROC 曲線區域的成對比較表。還創建了重疊 ROC 曲線的圖。 \n如果樣本大小大於 2000，運行可能需要一些時間。 \n\n<br/><br/>\n\n<b>事件或審查的時間:</b></br>\n事件的時間（對於有事件的人）和審查的時間（對於沒有事件的人）的變量（必填）。僅限數字。 </br></br>\n\n<b>事件 (1=事件, 0=審查):</b></br>\n指示有事件（=1）和被審查（=0）的變量（必填）。僅限數字。 </br></br>\n\n<b>標記:</b> </br>\n指定至少兩個標記變量以計算 ROC 曲線。較大的值必須對應於較高的事件風險。  \n如果與事件風險負相關，則取反值。必須是數字。（必填）</br></br>\n\n<b>計算 ROC 曲線的隨訪時間:</b></br>\n指示您希望計算 ROC 曲線的具體隨訪時間。必須與時間變量在同一尺度上。（必填）</br></br>  \n\n<b>多重比較調整:</b></br>\n這會在進行多重比較調整時生成成對 ROC 曲線區域的表。 \n選項為: \"holm\",\"hochberg\",\"hommel\",\"bonferroni\",\"fdr\"（假發現率），\"BY\"（Benjamini & Yekutieli） </br></br>\n\n\n<b>圖表選項</b>\n</br></br>\n\n<b>圖表主題:</b> 指定圖表的一般主題\n<br/><br/>\n\n<b>圖表標題:</b> 指定圖表的標題。可以刪除。\n<br/><br/>\n\n<b>圖表標題大小:</b> 指定圖表標題的大小。\n<br/><br/>\n\n<b>線條選項:</b>\n<br/><br/>\n\n<b>包含參考線:</b> 指定是否包含一條對應於 ROC 曲線區域為 0.50 的對角線。\n<br/><br/>\n\n<b>線條寬度:</b> 指定 ROC 曲線圖上線條的大小\n<br/><br/>\n\n<b>顏色調色板:</b> 指定用於 ROC 曲線線條的顏色調色板\n<br/><br/>\n\n<b>軸選項:</b>\n<br/><br/>\n\n<b>軸標籤大小:</b> 指定圖表上使用的軸標籤的大小。\n<br/><br/>\n\n<b>軸刻度標籤大小:</b> 指定軸刻度標籤的大小。\n<br/><br/>\n\n<b>圖例選項:</b>\n<br/><br/>\n\n<b>位置:</b> 指定圖例在圖中的位置。可以是右側、上方、下方或左側。\n<br/><br/>\n\n<b>標題:</b> 指定圖例的標題。可以刪除。\n<br/><br/>\n\n<b>曲線標籤:</b> 指定圖例中使用的曲線標籤，對應於曲線的順序（標記 1、標記 2、標記 3 等）。如果不指定任何標籤，將使用原始標記變量名稱生成曲線標籤。如果您指定任何標籤，則必須為所有曲線指定標籤。曲線的順序與指定的標記變量的順序相同。\n<br/><br/>\n\n<b>圖例標籤大小:</b> 圖例中所有文本的大小。\n<br/><br/>\n\n<b>所需的 R 套件:</b> timeROC, ggplot2, tidyverse, ggthemes, RColorBrewer, ggsci, survival\n\t\t\t"
+  }
+}

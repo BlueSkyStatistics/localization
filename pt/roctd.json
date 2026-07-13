@@ -1,0 +1,24 @@
+{
+  "title": "Curva ROC, dependente do tempo",
+  "navigation": "Curva ROC, dependente do tempo",
+  "timevarlabel": "Tempo até o evento ou censura",
+  "eventvarlabel": "Eventos (1=evento, 0=censura)",
+  "markerlabel": "Marcador (valores maiores devem corresponder a maior risco de evento)",
+  "timeslabel": "Tempos de acompanhamento para calcular curvas ROC (separar com vírgulas, ex. 100, 200)",
+  "outputallestlabel": "Conjunto de dados de saída com estimativas da curva ROC para todos os limites de marcador",
+  "outputdatasetlabel": "Nome do conjunto de dados de saída",
+  "themedropdownlabel": "Tema",
+  "plottitlelabel": "Título",
+  "linewidthlabel": "Largura da linha",
+  "aucchkboxlabel": "Incluir AUC no gráfico",
+  "reflinelabel": "Incluir linha de referência",
+  "aucxlabel": "Localização do eixo X",
+  "aucylabel": "Localização do eixo Y",
+  "aucroundlabel": "Número de casas decimais",
+  "aucsizelabel": "Tamanho",
+  "help": {
+    "title": "Curva ROC, dependente do tempo",
+    "r_help": "help(timeROC, package ='timeROC')",
+    "body": "\nIsso cria curvas de características operacionais do receptor para dados de tempo até o evento usando estimadores de ponderação de probabilidade inversa de censura não paramétricos.\n</br></br>\nOs métodos são descritos em \"Estimando e comparando áreas dependentes do tempo sob curvas de características operacionais do receptor para tempos de eventos censurados com \nriscos concorrentes\", Blanche P, Dartigues J, e Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397.\n\n<br/><br/>\nAs áreas sob as curvas ROC com intervalos de confiança de 95% são fornecidas. Gráficos da curva ROC para cada ponto no tempo e uma tabela de pontos de corte de marcadores \nque maximizam o Índice de Youden também são criados. Se o tamanho da amostra for maior que 2000, pode levar algum tempo para ser executado. \n\n<br/><br/>\n\n<b>Tempo até o evento ou censura:</b></br>\nVariável para o tempo até o evento (para aqueles com o evento) e o tempo até a censura (para aqueles sem o evento) (obrigatório). Apenas numérico. </br></br>\n\n<b>Eventos (1=evento, 0=censura):</b></br>\nVariável indicando aqueles com o evento (=1) e aqueles censurados (=0) (obrigatório). Apenas numérico. </br></br>\n\n<b>Marcador:</b> </br>\nEspecifique a variável do marcador para calcular a curva ROC. Valores maiores devem corresponder a maior risco de evento.  \nNegue os valores se estiverem negativamente associados ao risco de evento. Deve ser numérico. (obrigatório)</br></br>\n\n<b>Tempos de acompanhamento para calcular curvas ROC:</b></br>\nIndique os tempos de acompanhamento específicos para os quais você deseja calcular curvas ROC. Pode ser um ou mais valores. Deve estar na mesma escala \nque a variável de tempo. (obrigatório)</br></br>  \n\n<b>Conjunto de dados de saída com estimativas da curva ROC para todos os limites de marcador:</b></br>\nIsso produz um conjunto de dados de saída de todos os valores de marcador para cada tempo de acompanhamento especificado. Sensibilidades, especificidades, valores preditivos positivos, \nvalores preditivos negativos e o Índice de Youden são fornecidos. </br></br>\n\n<b>Nome do conjunto de dados de saída:</b></br>\nEspecifique o nome do conjunto de dados que armazenará os valores de marcador, sensibilidades, especificidades, etc. </br></br>\n\n<b>Opções de Gráfico</b>\n</br></br>\n\n<b>Tema:</b></br>\nEscolha um tema de gráfico para o gráfico da curva ROC</br></br>\n\n<b>Título:</b></br>\nEspecifique um título para o gráfico da curva ROC</br></br>\n\n<b>Largura da linha:</b></br>\nEspecifique a largura da linha para as linhas da curva ROC no gráfico. O padrão é 1. </br></br>\n\n<b>Incluir linha de referência:</b></br>\nEspecifique se deseja incluir uma linha de referência no gráfico da curva ROC. Esta é uma linha diagonal que corresponderia a um AUC de 0,50.</br></br>\n\n<b>Incluir AUC no gráfico:</b></br>\nEspecifique se deseja incluir os valores específicos de AUC e intervalos de confiança de 95% no gráfico da curva ROC</br></br>\n\n<b>Localização do eixo X:</b></br>\nLocalização do eixo X para colocação dos valores de AUC no gráfico da curva ROC. O padrão é .75. </br></br>\n\n<b>Localização do eixo Y:</b></br>\nLocalização do eixo Y para colocação dos valores de AUC no gráfico da curva ROC. O padrão é .1. </br></br>\n\n<b>Número de casas decimais:</b></br>\nEspecifique o número de casas decimais para arredondar os valores de AUC no gráfico. O padrão é 2. </br></br>\n\n<b>Tamanho:</b></br>\nEspecifique o tamanho para os valores de AUC no gráfico. O padrão é 4. </br></br>\n\n<b>Pacotes R Necessários:</b> timeROC, ggplot2, tidyverse, ggthemes, survival\n\t\t\t"
+  }
+}

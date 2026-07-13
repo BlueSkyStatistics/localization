@@ -1,0 +1,32 @@
+{
+    "title": "Compare ROC Curves, time-dependent competing risks",
+    "navigation": "Compare ROC Curves, time-dependent competing risks",
+    "timevarlabel": "Time to event or censor",
+    "eventvarlabel": "Events (1=event, 0=censor)",
+    "eventcodelabel": "Event code",
+    "markerslabel": "Markers (specify at least two; larger values must correspond to higher event risk)",
+    "timelabel": "Follow-up time to compute ROC curves",
+    "controldeflabel": "Control definition",
+    "multcompopt": "Multiple comparison adjustment",
+    "multcompmethod": "Multiple comparison method",
+    "themedropdownlabel": "Theme",
+    "plottitlelabel": "Title",
+    "plottitlesize": "Plot Title Size (5-50)",
+    "lineoptionslabel": "Line Options",
+    "linewidthlabel": "Line width",
+    "reflinelabel": "Include reference line",
+    "colorpalette": "Color Palette",
+    "axisoptionslabel": "Axis Options",
+    "axislabelsize": "Axis Label Size (5-50)",
+    "ticklabelsize": "Axis Tick Mark Label Size (5-50)",
+    "legendoptionslabel": "Legend Options",
+    "legendtitle": "Title",
+    "legendpos": "Position",
+    "curvelabels": "Curve Labels, specify as 'Label 1', 'Label 2', 'Label 3'; use \\n within a label for a line break",
+    "legendfontsize": "Legend Labels Size (5-50)",
+    "help": {
+        "title": "Compare ROC Curves, time-dependent competing risks",
+        "r_help": "help(compare, package ='timeROC')",
+        "body": "\nThis creates receiver operating characteristic curves for time-to-event data using nonparametric inverse probability of censoring weighting estimators.\n</br></br>\nThe methods are described in \"Estimating and comparing time-dependent areas under receiver operating characteristic curves for censored event times with \ncompeting risks\", Blanche P, Dartigues J, and Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397.\n\n<br/><br/>\nA table of pairwise comparisons of the ROC curve areas for the specified follow-up time is provided.  A plot of overlaid ROC curves is also created.  \nIf the sample size is larger than 2000, it might take some time to run. \n\n<br/><br/>\n\n<b>Time to event or censor:</b></br>\nVariable for the time to event (for those with the event) and the time to censor (for those without the event) (required). Numeric only. </br></br>\n\n<b>Events (1=event, 0=censor):</b></br>\nVariable indicating those with the event (=1) and those censored (=0) (required). Numeric only. </br></br>\n\n<b>Event code:</b></br>\nWhich numeric code of the events variable defines the event of interest for the ROC plots. </br></br>\n\n<b>Markers:</b> </br>\nSpecify at least two marker variables to compute the ROC curves for.  Larger values must correspond to higher event risk.  \nNegate values if negatively associated with event risk.  Must be numeric. (required)</br></br>\n\n<b>Follow-up time to compute ROC curves:</b></br>\nIndicate the specific follow-up time that you want to compute ROC curves for.  Must be on the same scale \nas the time variable. (required)</br></br> \n\n<b>Control definition:</b></br>\nIndicate which subjects should be considered controls.  \"Free of any event\" means subjects with event times larger than the specified times (subjects who experience events with times larger than the specified times or \ncensored times larger than the specified times).  Subjects with competing events before the specified times are not controls in this definition.  \"Not a case\" means subjects with event times larger than the specified times and those with competing events prior to the specfied times. \nSubjects with competing events before the specified times are considered controls in this definition. In both definitions, censored subjects before the specified times are not considered controls.  These censored \nsubjects are only used to estimate the weights (the probability of being observed). (required)</br></br>   \n\n<b>Multiple comparison adjustment:</b></br>\nThis produces a table of the pairwise ROC curve areas when doing a multiple comparison adjusment. \nOptions are: \"holm\",\"hochberg\",\"hommel\",\"bonferroni\",\"fdr\" (false discovery rate),\"BY\" (Benjamini & Yekutieli) </br></br>\n\n\n<b>Plot Options</b>\n</br></br>\n\n<b>Plot Theme:</b> Specify the general theme for the plot\n<br/><br/>\n\n<b>Plot Title:</b> Specify the title for the plot.  Can be removed.\n<br/><br/>\n\n<b>Plot Title Size:</b> Specify the size of the plot title.\n<br/><br/>\n\n<b>Line Options:</b>\n<br/><br/>\n\n<b>Include reference line:</b> Specify the inclusion of a diagonal line indicating an ROC curve area of 0.50.\n<br/><br/>\n\n<b>Line width:</b> Specify the size of the lines on the ROC curve plot\n<br/><br/>\n\n<b>Color Palette:</b> Specify the color palette used for the ROC curve lines\n<br/><br/>\n\n<b>Axis Options:</b>\n<br/><br/>\n\n<b>Axis Label Size:</b> Specify the size of the axis labels used on the plot.\n<br/><br/>\n\n<b>Axis Tick Mark Label Size:</b> Specify the size of the axis tick mark labels.\n<br/><br/>\n\n<b>Legend Options:</b>\n<br/><br/>\n\n<b>Position:</b> Specify the position of the legend in the plot.  Can be right, top, bottom, or left.\n<br/><br/>\n\n<b>Title:</b> Specify the title for the legend.  Can be removed.\n<br/><br/>\n\n<b>Curve Labels:</b> Specify the curve labels used in the legend corresponding to the order of the curves (marker 1, marker 2, marker 3, etc.).  Specifying nothing will yield curve \nlabels using the original marker variable names.  If you specify any labels, you must specify labels for all curves.  The order of the curves is the same as the specified order of the marker variables.\n<br/><br/>\n\n<b>Legend Labels Size:</b> Size of all text in the legend.\n<br/><br/>\n\n<b>R Packages Required:</b> timeROC, ggplot2, tidyverse, ggthemes, RColorBrewer, ggsci, survival\n\t\t\t"
+    }
+}

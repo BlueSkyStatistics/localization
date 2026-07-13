@@ -1,0 +1,24 @@
+{
+  "title": "ROC 曲線，時間依賴性",
+  "navigation": "ROC 曲線，時間依賴性",
+  "timevarlabel": "事件或審查的時間",
+  "eventvarlabel": "事件 (1=事件, 0=審查)",
+  "markerlabel": "標記 (較大的值必須對應於較高的事件風險)",
+  "timeslabel": "計算 ROC 曲線的隨訪時間 (用逗號分隔，例如 100, 200)",
+  "outputallestlabel": "輸出包含所有標記截止值的 ROC 曲線估計的數據集",
+  "outputdatasetlabel": "輸出數據集名稱",
+  "themedropdownlabel": "主題",
+  "plottitlelabel": "標題",
+  "linewidthlabel": "線寬",
+  "aucchkboxlabel": "在圖上包含 AUC",
+  "reflinelabel": "包含參考線",
+  "aucxlabel": "X 軸位置",
+  "aucylabel": "Y 軸位置",
+  "aucroundlabel": "小數位數",
+  "aucsizelabel": "大小",
+  "help": {
+    "title": "ROC 曲線，時間依賴性",
+    "r_help": "help(timeROC, package ='timeROC')",
+    "body": "\n這會為時間到事件數據創建接收者操作特徵曲線，使用非參數逆概率審查加權估計量。\n</br></br>\n這些方法在 \"估計和比較帶有競爭風險的審查事件時間的時間依賴性接收者操作特徵曲線下的面積\" 中描述，Blanche P, Dartigues J 和 Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397。\n\n<br/><br/>\n提供 ROC 曲線下的面積及其 95% 置信區間。為每個時間點創建 ROC 曲線圖和最大化 Youden 指數的標記截止點表。如果樣本大小大於 2000，則可能需要一些時間來運行。\n\n<br/><br/>\n\n<b>事件或審查的時間：</b></br>\n事件的時間變量（對於有事件的情況）和審查的時間（對於沒有事件的情況）（必填）。僅限數字。</br></br>\n\n<b>事件 (1=事件, 0=審查)：</b></br>\n指示有事件（=1）和被審查（=0）的變量（必填）。僅限數字。</br></br>\n\n<b>標記：</b></br>\n指定要計算 ROC 曲線的標記變量。較大的值必須對應於較高的事件風險。如果與事件風險負相關，則取反值。必須是數字。（必填）</br></br>\n\n<b>計算 ROC 曲線的隨訪時間：</b></br>\n指示您希望計算 ROC 曲線的具體隨訪時間。可以是一個或多個值。必須與時間變量在同一尺度上。（必填）</br></br>\n\n<b>輸出包含所有標記截止值的 ROC 曲線估計的數據集：</b></br>\n這會生成一個輸出數據集，包含每個指定隨訪時間的所有標記值。提供靈敏度、特異性、陽性預測值、陰性預測值和 Youden 指數。</br></br>\n\n<b>輸出數據集名稱：</b></br>\n指定將存儲標記值、靈敏度、特異性等的數據集名稱。</br></br>\n\n<b>圖表選項</b>\n</br></br>\n\n<b>主題：</b></br>\n為 ROC 曲線圖選擇一個圖表主題。</br></br>\n\n<b>標題：</b></br>\n為 ROC 曲線圖指定一個標題。</br></br>\n\n<b>線寬：</b></br>\n為 ROC 曲線圖上的線指定線寬。默認為 1。</br></br>\n\n<b>包含參考線：</b></br>\n指定是否在 ROC 曲線圖上包含參考線。這是一條對應於 AUC 為 0.50 的對角線。</br></br>\n\n<b>在圖上包含 AUC：</b></br>\n指定是否在 ROC 曲線圖上包含具體的 AUC 值和 95% 置信區間。</br></br>\n\n<b>X 軸位置：</b></br>\nROC 曲線圖上 AUC 值的 X 軸位置。默認為 .75。</br></br>\n\n<b>Y 軸位置：</b></br>\nROC 曲線圖上 AUC 值的 Y 軸位置。默認為 .1。</br></br>\n\n<b>小數位數：</b></br>\n指定在圖上對 AUC 值進行四捨五入的小數位數。默認為 2。</br></br>\n\n<b>大小：</b></br>\n指定圖上 AUC 值的大小。默認為 4。</br></br>\n\n<b>所需的 R 套件：</b> timeROC, ggplot2, tidyverse, ggthemes, survival\n\t\t\t"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "title": "ROC Curve, time-dependent",
+    "navigation": "ROC Curve, time-dependent",
+    "timevarlabel": "Time to event or censor",
+    "eventvarlabel": "Events (1=event, 0=censor)",
+    "markerlabel": "Marker (larger values must correspond to higher event risk)",
+    "timeslabel": "Follow-up times to compute ROC curves (separate with commas, e.g. 100, 200)",
+    "outputallestlabel": "Output dataset with ROC curve estimates for all marker cutoffs",
+    "outputdatasetlabel": "Output dataset name",
+    "themedropdownlabel": "Theme",
+    "plottitlelabel": "Title",
+    "linewidthlabel": "Line width",
+    "aucchkboxlabel": "Include AUC on plot",
+    "reflinelabel": "Include reference line",
+    "aucxlabel": "X axis location",
+    "aucylabel": "Y axis location",
+    "aucroundlabel": "Number of decimal places",
+    "aucsizelabel": "Size",
+    "help": {
+        "title": "ROC Curve, time-dependent",
+        "r_help": "help(timeROC, package ='timeROC')",
+        "body": "\nThis creates receiver operating characteristic curves for time-to-event data using nonparametric inverse probability of censoring weighting estimators.\n</br></br>\nThe methods are described in \"Estimating and comparing time-dependent areas under receiver operating characteristic curves for censored event times with \ncompeting risks\", Blanche P, Dartigues J, and Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397.\n\n<br/><br/>\nThe areas under the ROC curves with 95% confidence intervals are provided.  ROC curve plots for each time point and a table of marker cutpoints \nthat maximize Youden's Index are also created.  If the sample size is larger than 2000, it might take some time to run. \n\n<br/><br/>\n\n<b>Time to event or censor:</b></br>\nVariable for the time to event (for those with the event) and the time to censor (for those without the event) (required). Numeric only. </br></br>\n\n<b>Events (1=event, 0=censor):</b></br>\nVariable indicating those with the event (=1) and those censored (=0) (required). Numeric only. </br></br>\n\n<b>Marker:</b> </br>\nSpecify the marker variable to compute the ROC curve for.  Larger values must correspond to higher event risk.  \nNegate values if negatively associated with event risk.  Must be numeric. (required)</br></br>\n\n<b>Follow-up times to compute ROC curves:</b></br>\nIndicate the specific follow-up times that you want to compute ROC curves for.  Can be one or more values.  Must be on the same scale \nas the time variable. (required)</br></br>  \n\n<b>Output dataset with ROC curve estimates for all marker cutoffs:</b></br>\nThis produces an output dataset of all marker values for each specified follow-up time.  Sensitivities, specificities, positive predictive values, \nnegative predictive values, and Youden's Index are provided. </br></br>\n\n<b>Output dataset name:</b></br>\nSpecify the name of the dataset that will store the marker values, sensitivities, specificities, etc. </br></br>\n\n<b>Plot Options</b>\n</br></br>\n\n<b>Theme:</b></br>\nChoose a plot theme for the ROC curve plot</br></br>\n\n<b>Title:</b></br>\nSpecify a title for the ROC curve plot</br></br>\n\n<b>Line width:</b></br>\nSpecify the line width for the ROC curve lines on the plot.  Default is 1. </br></br>\n\n<b>Include reference line:</b></br>\nSpecify whether to include a reference line on the ROC curve plot.  This is a diagnoal line that would correspond to an AUC of 0.50.</br></br>\n\n<b>Include AUC on plot:</b></br>\nSpecify whether to include the specific AUC values and 95% confidence intervals on the ROC curve plot</br></br>\n\n<b>X axis location:</b></br>\nX axis location for placement of the AUC values on the ROC curve plot. Default is .75. </br></br>\n\n<b>Y axis location:</b></br>\nY axis location for placement of the AUC values on the ROC curve plot. Default is .1. </br></br>\n\n<b>Number of decimal places:</b></br>\nSpecify the number of decimals places to round to for the AUC values on the plot. Default is 2. </br></br>\n\n<b>Size:</b></br>\nSpecify the size for the AUC values on the plot. Default is 4. </br></br>\n\n<b>R Packages Required:</b> timeROC, ggplot2, tidyverse, ggthemes, survival\n\t\t\t"
+    }
+}

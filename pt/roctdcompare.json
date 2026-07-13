@@ -1,0 +1,30 @@
+{
+  "title": "Comparar Curvas ROC, dependentes do tempo",
+  "navigation": "Comparar Curvas ROC, dependentes do tempo",
+  "timevarlabel": "Tempo até o evento ou censura",
+  "eventvarlabel": "Eventos (1=evento, 0=censura)",
+  "markerslabel": "Marcadores (especifique pelo menos dois; valores maiores devem corresponder a maior risco de evento)",
+  "timelabel": "Tempo de acompanhamento para calcular curvas ROC",
+  "multcompopt": "Ajuste de comparação múltipla",
+  "multcompmethod": "Método de comparação múltipla",
+  "themedropdownlabel": "Tema",
+  "plottitlelabel": "Título",
+  "plottitlesize": "Tamanho do Título do Gráfico (5-50)",
+  "lineoptionslabel": "Opções de Linha",
+  "linewidthlabel": "Largura da linha",
+  "reflinelabel": "Incluir linha de referência",
+  "colorpalette": "Paleta de Cores",
+  "axisoptionslabel": "Opções de Eixo",
+  "axislabelsize": "Tamanho do Rótulo do Eixo (5-50)",
+  "ticklabelsize": "Tamanho do Rótulo da Marca do Eixo (5-50)",
+  "legendoptionslabel": "Opções de Legenda",
+  "legendtitle": "Título",
+  "legendpos": "Posição",
+  "curvelabels": "Rótulos das Curvas, especifique como 'Rótulo 1', 'Rótulo 2', 'Rótulo 3'; use \\n dentro de um rótulo para uma quebra de linha",
+  "legendfontsize": "Tamanho dos Rótulos da Legenda (5-50)",
+  "help": {
+    "title": "Comparar Curvas ROC, dependentes do tempo",
+    "r_help": "help(compare, package ='timeROC')",
+    "body": "\nIsso cria curvas características de operação do receptor para dados de tempo até o evento usando estimadores de ponderação de probabilidade inversa de censura não paramétricos.\n</br></br>\nOs métodos são descritos em \"Estimando e comparando áreas dependentes do tempo sob curvas características de operação do receptor para tempos de eventos censurados com \nriscos concorrentes\", Blanche P, Dartigues J, e Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397.\n\n<br/><br/>\nUma tabela de comparações par a par das áreas da curva ROC para o tempo de acompanhamento especificado é fornecida. Um gráfico de curvas ROC sobrepostas também é criado. \nSe o tamanho da amostra for maior que 2000, pode levar algum tempo para ser executado. \n\n<br/><br/>\n\n<b>Tempo até o evento ou censura:</b></br>\nVariável para o tempo até o evento (para aqueles com o evento) e o tempo até a censura (para aqueles sem o evento) (obrigatório). Apenas numérico. </br></br>\n\n<b>Eventos (1=evento, 0=censura):</b></br>\nVariável indicando aqueles com o evento (=1) e aqueles censurados (=0) (obrigatório). Apenas numérico. </br></br>\n\n<b>Marcadores:</b> </br>\nEspecifique pelo menos duas variáveis de marcador para calcular as curvas ROC. Valores maiores devem corresponder a maior risco de evento.  \nNegue valores se estiverem negativamente associados ao risco de evento. Deve ser numérico. (obrigatório)</br></br>\n\n<b>Tempo de acompanhamento para calcular curvas ROC:</b></br>\nIndique o tempo de acompanhamento específico para o qual você deseja calcular as curvas ROC. Deve estar na mesma escala \nque a variável de tempo. (obrigatório)</br></br>  \n\n<b>Ajuste de comparação múltipla:</b></br>\nIsso produz uma tabela das áreas da curva ROC par a par ao fazer um ajuste de comparação múltipla. \nAs opções são: \"holm\",\"hochberg\",\"hommel\",\"bonferroni\",\"fdr\" (taxa de descoberta falsa),\"BY\" (Benjamini & Yekutieli) </br></br>\n\n\n<b>Opções de Gráfico</b>\n</br></br>\n\n<b>Tema do Gráfico:</b> Especifique o tema geral para o gráfico\n<br/><br/>\n\n<b>Título do Gráfico:</b> Especifique o título para o gráfico. Pode ser removido.\n<br/><br/>\n\n<b>Tamanho do Título do Gráfico:</b> Especifique o tamanho do título do gráfico.\n<br/><br/>\n\n<b>Opções de Linha:</b>\n<br/><br/>\n\n<b>Incluir linha de referência:</b> Especifique a inclusão de uma linha diagonal indicando uma área da curva ROC de 0,50.\n<br/><br/>\n\n<b>Largura da linha:</b> Especifique o tamanho das linhas no gráfico da curva ROC\n<br/><br/>\n\n<b>Paleta de Cores:</b> Especifique a paleta de cores usada para as linhas da curva ROC\n<br/><br/>\n\n<b>Opções de Eixo:</b>\n<br/><br/>\n\n<b>Tamanho do Rótulo do Eixo:</b> Especifique o tamanho dos rótulos do eixo usados no gráfico.\n<br/><br/>\n\n<b>Tamanho do Rótulo da Marca do Eixo:</b> Especifique o tamanho dos rótulos das marcas do eixo.\n<br/><br/>\n\n<b>Opções de Legenda:</b>\n<br/><br/>\n\n<b>Posição:</b> Especifique a posição da legenda no gráfico. Pode ser direita, topo, fundo ou esquerda.\n<br/><br/>\n\n<b>Título:</b> Especifique o título para a legenda. Pode ser removido.\n<br/><br/>\n\n<b>Rótulos das Curvas:</b> Especifique os rótulos das curvas usados na legenda correspondendo à ordem das curvas (marcador 1, marcador 2, marcador 3, etc.).  Especificar nada resultará em rótulos de curva usando os nomes das variáveis de marcador originais.  Se você especificar quaisquer rótulos, deve especificar rótulos para todas as curvas.  A ordem das curvas é a mesma que a ordem especificada das variáveis de marcador.\n<br/><br/>\n\n<b>Tamanho dos Rótulos da Legenda:</b> Tamanho de todo o texto na legenda.\n<br/><br/>\n\n<b>Pacotes R do Requeridos:</b> timeROC, ggplot2, tidyverse, ggthemes, RColorBrewer, ggsci, survival\n\t\t\t"
+  }
+}

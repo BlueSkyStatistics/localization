@@ -1,0 +1,24 @@
+{
+  "title": "时间依赖的ROC曲线",
+  "navigation": "时间依赖的ROC曲线",
+  "timevarlabel": "事件或审查的时间",
+  "eventvarlabel": "事件 (1=事件, 0=审查)",
+  "markerlabel": "标记（较大值必须对应于更高的事件风险）",
+  "timeslabel": "计算ROC曲线的随访时间（用逗号分隔，例如100, 200）",
+  "outputallestlabel": "输出包含所有标记截止值的ROC曲线估计的数据集",
+  "outputdatasetlabel": "输出数据集名称",
+  "themedropdownlabel": "主题",
+  "plottitlelabel": "标题",
+  "linewidthlabel": "线宽",
+  "aucchkboxlabel": "在图上包含AUC",
+  "reflinelabel": "包含参考线",
+  "aucxlabel": "X轴位置",
+  "aucylabel": "Y轴位置",
+  "aucroundlabel": "小数位数",
+  "aucsizelabel": "大小",
+  "help": {
+    "title": "时间依赖的ROC曲线",
+    "r_help": "help(timeROC, package ='timeROC')",
+    "body": "\n这创建了用于时间到事件数据的接收者操作特征曲线，使用非参数逆概率审查加权估计。\n</br></br>\n这些方法在\"估计和比较审查事件时间的接收者操作特征曲线下的时间依赖区域\"中描述，\nBlanche P, Dartigues J, 和 Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397。\n\n<br/><br/>\n提供了ROC曲线下的区域及其95%的置信区间。为每个时间点创建ROC曲线图和最大化Youden指数的标记切点表。\n如果样本量大于2000，运行可能需要一些时间。\n\n<br/><br/>\n\n<b>事件或审查的时间：</b></br>\n事件的时间变量（对于有事件的情况）和审查的时间（对于没有事件的情况）（必需）。仅限数字。</br></br>\n\n<b>事件 (1=事件, 0=审查)：</b></br>\n指示有事件（=1）和被审查（=0）的变量（必需）。仅限数字。</br></br>\n\n<b>标记：</b></br>\n指定要计算ROC曲线的标记变量。较大值必须对应于更高的事件风险。\n如果与事件风险负相关，则取反值。必须是数字。（必需）</br></br>\n\n<b>计算ROC曲线的随访时间：</b></br>\n指示您希望计算ROC曲线的特定随访时间。可以是一个或多个值。必须与时间变量在同一尺度上。（必需）</br></br>\n\n<b>输出包含所有标记截止值的ROC曲线估计的数据集：</b></br>\n这会生成一个输出数据集，包含每个指定随访时间的所有标记值。提供灵敏度、特异性、阳性预测值、阴性预测值和Youden指数。</br></br>\n\n<b>输出数据集名称：</b></br>\n指定将存储标记值、灵敏度、特异性等的数据集名称。</br></br>\n\n<b>图表选项</b>\n</br></br>\n\n<b>主题：</b></br>\n选择ROC曲线图的绘图主题。</br></br>\n\n<b>标题：</b></br>\n指定ROC曲线图的标题。</br></br>\n\n<b>线宽：</b></br>\n指定ROC曲线图上ROC曲线线条的线宽。默认值为1。</br></br>\n\n<b>包含参考线：</b></br>\n指定是否在ROC曲线图上包含参考线。这是一条对应该AUC为0.50的对角线。</br></br>\n\n<b>在图上包含AUC：</b></br>\n指定是否在ROC曲线图上包含特定的AUC值和95%的置信区间。</br></br>\n\n<b>X轴位置：</b></br>\nROC曲线图上AUC值的X轴位置。默认值为0.75。</br></br>\n\n<b>Y轴位置：</b></br>\nROC曲线图上AUC值的Y轴位置。默认值为0.1。</br></br>\n\n<b>小数位数：</b></br>\n指定在图上对AUC值进行四舍五入的小数位数。默认值为2。</br></br>\n\n<b>大小：</b></br>\n指定图上AUC值的大小。默认值为4。</br></br>\n\n<b>所需的R包：</b> timeROC, ggplot2, tidyverse, ggthemes, survival\n\t\t\t"
+  }
+}

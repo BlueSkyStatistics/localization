@@ -1,0 +1,30 @@
+{
+  "title": "Comparer les courbes ROC, dépendantes du temps",
+  "navigation": "Comparer les courbes ROC, dépendantes du temps",
+  "timevarlabel": "Temps jusqu'à l'événement ou censure",
+  "eventvarlabel": "Événements (1=événement, 0=censure)",
+  "markerslabel": "Marqueurs (spécifiez au moins deux ; des valeurs plus grandes doivent correspondre à un risque d'événement plus élevé)",
+  "timelabel": "Temps de suivi pour calculer les courbes ROC",
+  "multcompopt": "Ajustement pour comparaisons multiples",
+  "multcompmethod": "Méthode de comparaison multiple",
+  "themedropdownlabel": "Thème",
+  "plottitlelabel": "Titre",
+  "plottitlesize": "Taille du titre du graphique (5-50)",
+  "lineoptionslabel": "Options de ligne",
+  "linewidthlabel": "Largeur de ligne",
+  "reflinelabel": "Inclure la ligne de référence",
+  "colorpalette": "Palette de couleurs",
+  "axisoptionslabel": "Options d'axe",
+  "axislabelsize": "Taille des étiquettes d'axe (5-50)",
+  "ticklabelsize": "Taille des étiquettes de marqueurs d'axe (5-50)",
+  "legendoptionslabel": "Options de légende",
+  "legendtitle": "Titre",
+  "legendpos": "Position",
+  "curvelabels": "Étiquettes de courbe, spécifiez comme 'Étiquette 1', 'Étiquette 2', 'Étiquette 3' ; utilisez \\n dans une étiquette pour un saut de ligne",
+  "legendfontsize": "Taille des étiquettes de légende (5-50)",
+  "help": {
+    "title": "Comparer les courbes ROC, dépendantes du temps",
+    "r_help": "help(compare, package ='timeROC')",
+    "body": "\nCela crée des courbes caractéristiques de fonctionnement du récepteur pour des données de temps jusqu'à l'événement en utilisant des estimateurs de pondération inverse non paramétriques de la probabilité de censure.\n</br></br>\nLes méthodes sont décrites dans \"Estimation et comparaison des aires sous les courbes caractéristiques de fonctionnement du récepteur dépendantes du temps pour des temps d'événements censurés avec \nrisques concurrents\", Blanche P, Dartigues J, et Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397.\n\n<br/><br/>\nUn tableau des comparaisons par paires des aires des courbes ROC pour le temps de suivi spécifié est fourni. Un graphique des courbes ROC superposées est également créé.  \nSi la taille de l'échantillon est supérieure à 2000, cela peut prendre un certain temps pour s'exécuter. \n\n<br/><br/>\n\n<b>Temps jusqu'à l'événement ou censure :</b></br>\nVariable pour le temps jusqu'à l'événement (pour ceux avec l'événement) et le temps jusqu'à la censure (pour ceux sans l'événement) (obligatoire). Numérique uniquement. </br></br>\n\n<b>Événements (1=événement, 0=censure) :</b></br>\nVariable indiquant ceux avec l'événement (=1) et ceux censurés (=0) (obligatoire). Numérique uniquement. </br></br>\n\n<b>Marqueurs :</b> </br>\nSpécifiez au moins deux variables de marqueurs pour calculer les courbes ROC. Des valeurs plus grandes doivent correspondre à un risque d'événement plus élevé.  \nNégatif si associé négativement au risque d'événement. Doit être numérique. (obligatoire)</br></br>\n\n<b>Temps de suivi pour calculer les courbes ROC :</b></br>\nIndiquez le temps de suivi spécifique pour lequel vous souhaitez calculer les courbes ROC. Doit être sur la même échelle \nque la variable de temps. (obligatoire)</br></br>  \n\n<b>Ajustement pour comparaisons multiples :</b></br>\nCela produit un tableau des aires des courbes ROC par paires lors d'un ajustement pour comparaisons multiples. \nLes options sont : \"holm\",\"hochberg\",\"hommel\",\"bonferroni\",\"fdr\" (taux de fausse découverte),\"BY\" (Benjamini & Yekutieli) </br></br>\n\n\n<b>Options de graphique</b>\n</br></br>\n\n<b>Thème du graphique :</b> Spécifiez le thème général pour le graphique\n<br/><br/>\n\n<b>Titre du graphique :</b> Spécifiez le titre pour le graphique. Peut être supprimé.\n<br/><br/>\n\n<b>Taille du titre du graphique :</b> Spécifiez la taille du titre du graphique.\n<br/><br/>\n\n<b>Options de ligne :</b>\n<br/><br/>\n\n<b>Inclure la ligne de référence :</b> Spécifiez l'inclusion d'une ligne diagonale indiquant une aire de courbe ROC de 0,50.\n<br/><br/>\n\n<b>Largeur de ligne :</b> Spécifiez la taille des lignes sur le graphique des courbes ROC\n<br/><br/>\n\n<b>Palette de couleurs :</b> Spécifiez la palette de couleurs utilisée pour les lignes de courbes ROC\n<br/><br/>\n\n<b>Options d'axe :</b>\n<br/><br/>\n\n<b>Taille des étiquettes d'axe :</b> Spécifiez la taille des étiquettes d'axe utilisées sur le graphique.\n<br/><br/>\n\n<b>Taille des étiquettes de marqueurs d'axe :</b> Spécifiez la taille des étiquettes de marqueurs d'axe.\n<br/><br/>\n\n<b>Options de légende :</b>\n<br/><br/>\n\n<b>Position :</b> Spécifiez la position de la légende dans le graphique. Peut être à droite, en haut, en bas ou à gauche.\n<br/><br/>\n\n<b>Titre :</b> Spécifiez le titre pour la légende. Peut être supprimé.\n<br/><br/>\n\n<b>Étiquettes de courbe :</b> Spécifiez les étiquettes de courbe utilisées dans la légende correspondant à l'ordre des courbes (marqueur 1, marqueur 2, marqueur 3, etc.). Ne spécifier rien donnera des étiquettes de courbe \nutilisant les noms de variables de marqueurs d'origine. Si vous spécifiez des étiquettes, vous devez spécifier des étiquettes pour toutes les courbes. L'ordre des courbes est le même que l'ordre spécifié des variables de marqueurs.\n<br/><br/>\n\n<b>Taille des étiquettes de légende :</b> Taille de tout le texte dans la légende.\n<br/><br/>\n\n<b>Packages R requis :</b> timeROC, ggplot2, tidyverse, ggthemes, RColorBrewer, ggsci, survival\n\t\t\t"
+  }
+}
