@@ -1,0 +1,20 @@
+{
+  "language": {
+    "language": "spanish",
+    "key": "es"
+  },
+  "original_json": {
+    "title": "Todos los contrastes por pares",
+    "navigation": "Todos los contrastes por pares",
+    "notelabel1": "NOTA: Debe tener acceso al conjunto de datos que creó el modelo.",
+    "notelabel2": "Modelos soportados: modelos lineales (lm), modelos lineales generalizados (glm), riesgos proporcionales de Cox (coxph), ecuación de estimación generalizada (glmgee), regresión cuantílica (rq), modelos mixtos lineales (lmerModLmerTest)",
+    "modelselectorlabel": "Seleccionar nombre del modelo",
+    "plotvarslabel": "Variables para todos los contrastes por pares",
+    "multadjlabel": "Ajuste por comparaciones múltiples",
+    "help": {
+      "title": "Todos los contrastes por pares",
+      "r_help": "help(emmeans, package = 'emmeans')",
+      "body": "\nEsto crea una tabla de todas las comparaciones de niveles por pares para predictores categóricos en un modelo.  También se proporcionan todas las direcciones (por ejemplo, nivel A en relación con el nivel B, y nivel B \nrelativo al nivel A).  Se proporcionan estimaciones en la escala de respuesta del resultado (por ejemplo, diferencias para modelos lineales, razones de riesgo para modelos de Cox, razones de odds para modelos logísticos, razones de tasa para modelos de Poisson).  \nSe pueden especificar ajustes opcionales por comparaciones múltiples para cada predictor categórico.  Actualmente, se admiten modelos de clase lm (modelos lineales), glm (modelos lineales generalizados, \nque incluyen logísticos y de Poisson), coxph (riesgos proporcionales de Cox), glmgee (ecuación de estimación generalizada), rq (regresión cuantílica) y lmerModLmerTest (modelos mixtos lineales).\n<br/><br/>\n<b>Seleccionar nombre del modelo:</b> Elija el nombre del modelo según lo especificado cuando se ajustó el modelo.  Este es un campo obligatorio.\n<br/><br/>\n<b>Variables para todos los contrastes por pares:</b> Especifique qué variables categóricas se utilizarán para las comparaciones de niveles por pares.  Estas deben haber sido incluidas como predictores cuando se ajustó el modelo.\nLas variables ingresadas como carácter, factor, ordinal, lógico o variables dummy numéricas pueden ser utilizadas.  Este es un campo obligatorio.\n<br/><br/>\n<b>Ajuste por comparaciones múltiples:</b> Especifique el ajuste por comparaciones múltiples.  Las opciones son ninguna (sin ajuste), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (tasa de descubrimiento falso), \nBH (Benjamini-Hochberg) y BY (Benjamini-Yekutieli).  Se proporcionan notas en la salida sobre qué ajuste por comparaciones múltiples se realizó para los intervalos de confianza y los valores p.\n<br/><br/>\n<b>Paquetes R requeridos:</b> emmeans\n"
+    }
+  }
+}

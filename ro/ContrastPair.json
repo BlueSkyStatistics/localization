@@ -1,0 +1,20 @@
+{
+  "language": {
+    "language": "romanian",
+    "key": "ro"
+  },
+  "original_json": {
+    "title": "Toate contrasturile pereche",
+    "navigation": "Toate contrasturile pereche",
+    "notelabel1": "NOTĂ: Trebuie să aveți acces la setul de date care a creat modelul.",
+    "notelabel2": "Modele acceptate: modele liniare (lm), modele liniare generalizate (glm), riscuri proporționale Cox (coxph), ecuații de estimare generalizate (glmgee), regresie cuantile (rq), modele mixte liniare (lmerModLmerTest)",
+    "modelselectorlabel": "Selectați numele modelului",
+    "plotvarslabel": "Variabile pentru toate contrasturile pereche",
+    "multadjlabel": "Ajustarea comparării multiple",
+    "help": {
+      "title": "Toate contrasturile pereche",
+      "r_help": "help(emmeans, package = 'emmeans')",
+      "body": "\nAceasta creează un tabel cu toate comparațiile de nivel pereche pentru predictori categorici într-un model. Toate direcțiile sunt de asemenea furnizate (de exemplu, nivel A în raport cu nivel B, și nivel B \nîn raport cu nivel A). Estimările sunt furnizate pe scala de răspuns a rezultatului (de exemplu, diferențe pentru modele liniare, rapoarte de risc pentru modelele Cox, rapoarte de șanse pentru modelele logistice, rapoarte de rată pentru modelele Poisson).  \nAjustările opționale pentru comparațiile multiple pentru fiecare predictor categorial pot fi specificate. În prezent, sunt acceptate modele de clasă lm (modele liniare), glm (modele liniare generalizate, \ncare includ logistic și Poisson), coxph (riscuri proporționale Cox), glmgee (ecuație de estimare generalizată), rq (regresie cuantile) și lmerModLmerTest (modele mixte liniare).\n<br/><br/>\n<b>Selectați numele modelului:</b> Alegeți numele modelului așa cum a fost specificat când modelul a fost ajustat. Acesta este un câmp obligatoriu.\n<br/><br/>\n<b>Variabile pentru toate contrasturile pereche:</b> Specificați care variabile categorice să fie utilizate pentru comparațiile de nivel pereche. Acestea trebuie să fi fost incluse ca predictori atunci când modelul a fost ajustat.\nVariabilele introduse ca caracter, factor, ordinal, logic sau variabile dummy numerice pot fi utilizate. Acesta este un câmp obligatoriu.\n<br/><br/>\n<b>Ajustarea comparării multiple:</b> Specificați ajustarea comparării multiple. Opțiunile sunt niciuna (fără ajustare), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (rata falselor descoperiri), \nBH (Benjamini-Hochberg) și BY (Benjamini-Yekutieli). Notele sunt furnizate în ieșire cu privire la ajustarea comparării multiple care a fost efectuată pentru intervalele de încredere și valorile p.\n<br/><br/>\n<b>Pachete R necesare:</b> emmeans\n"
+    }
+  }
+}
