@@ -1,0 +1,25 @@
+{
+  "title": "廣義估計方程，序數",
+  "navigation": "GEE，序數",
+  "modellabel": "輸入模型名稱",
+  "depvarlabel": "因變量",
+  "formulalabel": "模型表達式生成器",
+  "idlabel": "識別集群的變量",
+  "repeatedlabel": "集群內的順序變量（如果未指定，則假設數據是有序的且沒有間隙）",
+  "offsetlabel": "偏移量",
+  "linkfunclabel": "連結函數",
+  "strlabel": "局部勝算比結構",
+  "esttypelabel": "局部勝算比估計類型",
+  "homogenlabel": "當 time.exch 或 RC 結構時的同質性得分參數",
+  "restrictlabel": "當 time.exch 或 RC 結構時的單調得分參數",
+  "addamountlabel": "如果觀察到的計數為零，則添加的正常數",
+  "expparmlabel": "指數化參數估計",
+  "intrinsiclabel": "顯示內在參數估計",
+  "convergelabel": "顯示收斂信息",
+  "localorlabel": "顯示局部勝算比估計矩陣",
+  "help": {
+    "title": "廣義估計方程，序數",
+    "r_help": "help(ordLORgee, package ='multgee')",
+    "body": "\n這適合用於序數（>2 類別）響應變量的廣義估計方程模型（有序類別）。\n使用 Liang 和 Zeger (1986) 的穩健方差估計器來計算模型標準誤差。這是一個一致的估計器，即使集群內的相關模式被錯誤指定。\n該模型使用 Touloumus 等人 (2013) 的方法。\n<br/><br/>\n<b>因變量：</b></br>\n序數類別響應變量（必需）。可以是數字、名義或字符。類別將按值排序，其中最後一類將是參數估計的最高類別。<br/><br/>\n\n<b>模型表達式生成器：</b></br>\n構建響應變量的模型（必需）</br></br>\n\n<b>識別集群的變量：</b></br>\n指定識別集群的變量（必需）。具有相同值的觀察將被分配到同一集群。具有相同值的觀察是潛在相關的。\n具有不同值的觀察是無關的。</br></br>\n\n<b>集群內的順序變量：</b></br>\n一個可選變量，用於識別集群內觀察的順序。可以是數字、字符、名義或序數。當數據中存在缺失值和間隙時，該參數至關重要。默認情況下，它等於根據數據的行順序從 1 到每個集群的大小的整數。強烈建議指定此參數以確保正確估計相關性。例如，如果最大集群大小為 6，且對於大小為 4 的集群，值設置為 2、4、5、6，則意味著時間 1 和 3 的數據缺失。如果在這種情況下未指定該參數，則模型假設該集群的可用數據是在時間 1、2、3 和 4 進行的。</br></br>\n\n<b>偏移量：</b></br>\n指定一個可選的偏移變量。必須是數字。這在模型中納入了一個具有固定值的自變量。對於此變量不估計係數，並且取值為 1。</br></br>\n\n<b>連結函數：</b></br>\n指定連結函數。\"logit\" 模型表示小於或等於每個連續增加的結果水平的對數勝算（累積 logit 模型），\"probit\" 用於累積 probit 模型，\n\"cauchit\" 用於累積 cauchit 模型，\"cloglog\" 用於累積 cloglog 模型，\"acl\" 用於相鄰類別 logit 模型。相鄰類別 logit 模型建模每個結果類別相對於高一級類別的對數勝算。\n\n<b>局部勝算比結構：</b></br>\n指定響應變量水平之間和集群內水平之間的勝算比結構。詳情請參見 Touloumis 等人 (2013) 和 Touloumis (2015)。\n<ul>\n\t<li>category.exch: 類別可交換結構。這假設每個集群內對的共同局部勝算比，但允許不同對具有不同的勝算比。</li>\n\t<li>time.exch: 時間可交換結構。這假設所有集群內對的共同局部勝算比，但在響應類別之間可以有不同的勝算比。</li>\n\t<li>uniform: 均勻結構。這假設每個集群內對和每個響應類別對的勝算比相等（線性對線性關聯模型（Agresti 2013））</li>\n\t<li>RC: 行和列依賴結構。這假設集群內水平和響應類別之間的勝算比不同。</li>\n\t<li>independence: 獨立結構。這假設集群內水平和響應類別之間的勝算比為 1（無關係）</li>\n</ul>\n\nRC 局部勝算比結構可能最好僅在大樣本情況下使用（例如 N>100）。當協變量在集群內可以不同時，時間可交換和 RC 結構將提供比獨立結構更小的標準誤差。如果其他方法存在不收斂的問題，則將獨立結構作為最後的手段。</br></br>\n\n準信息準則 (QIC) (Pan, 2001)、相關信息準則 (CIC) (Hin 和 Wang, 2009) 以及 Rotnitzky 和 Jewell 的準則 (RJC) (Rotnitzky 和 Jewell, 1990) \n可用於選擇最佳的工作關聯結構。QICu 準則 (Pan, 2001) 可用於選擇最佳的協變量子集。在所有情況下，較小的值是首選。</br></br>\n\n<b>局部勝算比估計類型：</b></br>\n局部勝算比是同時估計（\"3way\"）還是獨立於每個集群內對（\"2way\"）</br></br>\n\n<b>當 time.exch 或 RC 結構時的同質性得分參數：</b></br>\n是否使用同質性得分參數</br></br>\n\n<b>當 time.exch 或 RC 結構時的單調得分參數：</b></br>\n是否使用單調得分參數</br></br>\n\n<b>如果觀察到的計數為零，則添加的正常數：</b></br>\n在定義局部勝算比的列聯表中，對於沒有觀察到的數據的單元格添加的數字。</br></br>\n\n<b>指數化參數估計：</b></br>\n是否生成指數化參數估計的表（例如，logit 和 acl 連結函數的勝算比）。</br></br>\n\n<b>顯示內在參數估計：</b></br>\n是否顯示內在參數估計。這些描述了集群內水平之間的成對關聯的整體強度。\n如果它們之間的差異很小（例如 <2 (Touloumis 等人 (2013)），這表明均勻結構可能是足夠的。\n內在參數是在異質線性對線性關聯模型（均勻）（Agresti, 2013）下估計的。</br></br>\n\n<b>顯示收斂信息：</b></br>\n是否顯示模型的收斂信息（迭代次數、準則值以及模型是否收斂）。</br></br>\n\n<b>顯示局部勝算比估計矩陣：</b></br>\n是否顯示局部勝算比估計矩陣。</br></br>\n\n<b>參考文獻：</b></br>\nTouloumis A, Agresti A, Kateri M. GEE for Multinomial Responses Using a Local Odds Ratios Parameterization. Biometrics (2013) 69: 633-640.</br></br>\nTouloumis A. R Package multgee: A Generalized Estimating Equations Solver for Multnomial Responses. Journal of Statistical Software (2015), Volume 64, Issue 8.</br></br>\n\n<b>所需的 R 套件：</b> multgee, broom.helpers, tidyverse\n\t\t\t"
+  }
+}

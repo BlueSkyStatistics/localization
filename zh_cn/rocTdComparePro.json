@@ -1,0 +1,30 @@
+{
+  "title": "比较时间依赖的ROC曲线",
+  "navigation": "比较时间依赖的ROC曲线",
+  "timevarlabel": "事件或审查的时间",
+  "eventvarlabel": "事件 (1=事件, 0=审查)",
+  "markerslabel": "标记 (至少指定两个; 较大的值必须对应于更高的事件风险)",
+  "timelabel": "计算ROC曲线的随访时间",
+  "multcompopt": "多重比较调整",
+  "multcompmethod": "多重比较方法",
+  "themedropdownlabel": "主题",
+  "plottitlelabel": "标题",
+  "plottitlesize": "图表标题大小 (5-50)",
+  "lineoptionslabel": "线条选项",
+  "linewidthlabel": "线宽",
+  "reflinelabel": "包含参考线",
+  "colorpalette": "调色板",
+  "axisoptionslabel": "轴选项",
+  "axislabelsize": "轴标签大小 (5-50)",
+  "ticklabelsize": "轴刻度标记标签大小 (5-50)",
+  "legendoptionslabel": "图例选项",
+  "legendtitle": "标题",
+  "legendpos": "位置",
+  "curvelabels": "曲线标签，指定为 '标签 1', '标签 2', '标签 3'; 在标签中使用 \\n 进行换行",
+  "legendfontsize": "图例标签大小 (5-50)",
+  "help": {
+    "title": "比较时间依赖的ROC曲线",
+    "r_help": "help(compare, package ='timeROC')",
+    "body": "\n这创建了用于时间到事件数据的接收者操作特征曲线，使用非参数逆概率审查加权估计量。\n</br></br>\n这些方法在 \"估计和比较审查事件时间的接收者操作特征曲线下的时间依赖区域\" 中描述，Blanche P, Dartigues J, 和 Jacqmin-Gadda H. 2013, Statistics in Medicine, 32: 5381-5397。\n\n<br/><br/>\n提供了指定随访时间的ROC曲线区域的成对比较表。 还创建了重叠ROC曲线的图。 \n如果样本量大于2000，运行可能需要一些时间。 \n\n<br/><br/>\n\n<b>事件或审查的时间:</b></br>\n事件的时间变量（对于有事件的情况）和审查的时间（对于没有事件的情况）（必需）。仅限数字。 </br></br>\n\n<b>事件 (1=事件, 0=审查):</b></br>\n指示有事件（=1）和被审查（=0）的变量（必需）。仅限数字。 </br></br>\n\n<b>标记:</b> </br>\n指定至少两个标记变量以计算ROC曲线。 较大的值必须对应于更高的事件风险。  \n如果与事件风险负相关，则取反值。 必须是数字。（必需）</br></br>\n\n<b>计算ROC曲线的随访时间:</b></br>\n指示您希望计算ROC曲线的特定随访时间。 必须与时间变量在同一尺度上。（必需）</br></br>  \n\n<b>多重比较调整:</b></br>\n这在进行多重比较调整时生成成对ROC曲线区域的表。 \n选项有: \"holm\",\"hochberg\",\"hommel\",\"bonferroni\",\"fdr\"（假发现率），\"BY\"（Benjamini & Yekutieli） </br></br>\n\n\n<b>图表选项</b>\n</br></br>\n\n<b>图表主题:</b> 指定图表的一般主题\n<br/><br/>\n\n<b>图表标题:</b> 指定图表的标题。 可以删除。\n<br/><br/>\n\n<b>图表标题大小:</b> 指定图表标题的大小。\n<br/><br/>\n\n<b>线条选项:</b>\n<br/><br/>\n\n<b>包含参考线:</b> 指定是否包含指示ROC曲线区域为0.50的对角线。\n<br/><br/>\n\n<b>线宽:</b> 指定ROC曲线图上线条的大小\n<br/><br/>\n\n<b>调色板:</b> 指定用于ROC曲线线条的调色板\n<br/><br/>\n\n<b>轴选项:</b>\n<br/><br/>\n\n<b>轴标签大小:</b> 指定图表上使用的轴标签的大小。\n<br/><br/>\n\n<b>轴刻度标记标签大小:</b> 指定轴刻度标记标签的大小。\n<br/><br/>\n\n<b>图例选项:</b>\n<br/><br/>\n\n<b>位置:</b> 指定图例在图中的位置。 可以是右侧、顶部、底部或左侧。\n<br/><br/>\n\n<b>标题:</b> 指定图例的标题。 可以删除。\n<br/><br/>\n\n<b>曲线标签:</b> 指定图例中使用的曲线标签，按曲线的顺序（标记1、标记2、标记3等）。 如果不指定任何标签，将使用原始标记变量名称生成曲线标签。 如果您指定任何标签，必须为所有曲线指定标签。 曲线的顺序与指定的标记变量的顺序相同。\n<br/><br/>\n\n<b>图例标签大小:</b> 图例中所有文本的大小。\n<br/><br/>\n\n<b>所需的R包:</b> timeROC, ggplot2, tidyverse, ggthemes, RColorBrewer, ggsci, survival\n\t\t\t"
+  }
+}
