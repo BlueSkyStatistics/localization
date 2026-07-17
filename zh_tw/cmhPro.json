@@ -1,0 +1,26 @@
+{
+  "helpText": "CMH 測試行變數和列變數之間的關聯，同時控制（分層於）第三個變數。行、列和分層變數必須都是類別型（因子）。共同的比值比和同質性測試（Breslow-Day, Woolf）僅在 2 x 2 x K 的情況下定義（行和列各有兩個層級）。",
+  "title": "Cochran-Mantel-Haenszel (CMH) 測試",
+  "navigation": "CMH",
+  "row": "行變數（例如：結果：成功/失敗）",
+  "column": "列變數（例如：治療組）",
+  "strata": "分層/控制變數",
+  "weight": "頻率/計數變數（可選，如果數據已經被整理）",
+  "label1": "測試選項",
+  "correct": "應用連續性修正（僅限 2 x 2 x K）",
+  "conflevel": "共同比值比的置信水平",
+  "label2": "比值比的同質性（僅限 2 x 2 x K）",
+  "breslowday": "Breslow-Day 測試",
+  "tarone": "對 Breslow-Day 應用 Tarone 修正",
+  "woolf": "Woolf 測試",
+  "label3": "廣義 CMH（針對有序類別，通過 coin）",
+  "gencmh": "廣義 CMH 測試（一般關聯 + 線性趨勢）",
+  "label4": "描述性輸出",
+  "showstrata": "顯示分層的列聯表",
+  "showindiv": "顯示每個分層的未分層卡方測試",
+  "help": {
+    "title": "Cochran-Mantel-Haenszel (CMH) 測試",
+    "r_help": "help(mantelhaen.test, package ='stats')",
+    "body": "\n<b>什麼是 Cochran-Mantel-Haenszel 測試？</b></br>\nCochran-Mantel-Haenszel (CMH) 測試測量兩個類別變數在考慮第三個將數據劃分為分層的類別變數後是否相關。通俗來說，它回答了「當我保持混雜變數不變時，這兩件事是否相關？」它通過在每個分層內形成一個單獨的列聯表，測量每個表中的關聯，然後將這些特定於分層的關聯合併為一個單一的合併測試。因為合併發生在分層內，所以跨組的分層變數不平衡本身無法創造虛假的關聯或掩蓋真實的關聯。<br/><br/>\n\n<b>臨床試驗示例</b></br>\n假設一項試驗比較一種活性藥物與安慰劑，結果是每位患者是否有反應（是/否）。患者在幾家醫院入組，這些醫院在基線反應率和每個組別貢獻的患者數量上有所不同。用單一的合併 2x2 表比較組別之間的反應會讓這些地點差異滲透到治療比較中。CMH 測試按地點分層，將治療和反應進行比較 <i>在每家醫院內</i>，然後合併證據，提供一個經過地點調整的治療效果測試，加上總結藥物在各地點的益處的共同比值比。這種「控制分層因素」的模式（地點、基線嚴重程度、地區）是 CMH 在確認性試驗中最常見的用途之一。<br/><br/>\n\n<b>描述</b></br>\n執行 Cochran-Mantel-Haenszel (CMH) 測試，檢查行變數和列變數之間的條件獨立性，控制一個或多個分層變數。內部構建一個列聯表，使用 <code>xtabs()</code> 並調用 <code>mantelhaen.test()</code> 來自 <b>stats</b> 包。可選地報告 Mantel-Haenszel 共同比值比及其置信區間，測試比值比在分層間是否保持不變的假設（Breslow-Day 和 Woolf 測試），並計算有序類別的廣義 CMH 統計量。<br/><br/>\n\nCMH 測試詢問行和列變數在保持分層變數不變的情況下是否相關。它是調整混雜變數的類別數據對應物，並廣泛用於臨床試驗中，以比較治療組之間的二元結果，同時控制分層因素，如地點或基線嚴重程度。<br/><br/>\n\n<b>注意</b><br/>\n1. 行、列和分層變數必須都是類別型（因子）。如有需要，請使用數據 > 因子層級進行轉換。<br/>\n2. 共同比值比、其置信區間以及 Breslow-Day 和 Woolf 同質性測試僅在行和列變數各有兩個層級（2 x 2 x K 設計）時定義。對於更大的表，對話框報告來自 <code>mantelhaen.test()</code> 的一般關聯卡方，並且如果請求，則報告廣義 CMH 測試，但不報告共同比值比。<br/>\n3. 同質性測試回答的問題與 CMH 測試本身不同。顯著的 Breslow-Day 或 Woolf 結果意味著比值比在分層間不同（效應修飾），在這種情況下，單一的共同比值比不是良好的總結，應報告特定於分層的估計。監管慣例是首先運行同質性測試，僅在其不顯著時報告共同比值比。<br/>\n4. 如果您的數據已經被整理（每個單元格一行，並有計數列），請將該計數列指定為頻率變數。否則，請留空，數據集的每一行將被視為一個觀察值。<br/><br/>\n\n<b>用示例數據集試用</b></br>\n提供了兩個數據集以便於使用對話框。在運行任何一個之前，使用數據 > 因子層級確認變數是因子（並且，對於有序示例，層級是有意義的順序）。<br/><br/>\n\n<b>1. cmh_test_data（2 x 2 x K 設計：二元結果，二元治療，幾個地點）</b><br/>\n此數據集有一個二元 <code>RESPONSE</code>（是/否）、一個二元 <code>TREATMENT</code>（活性/安慰劑）和一個 4 層級的 <code>SITE</code>。它演示了經典的分層 2x2 分析及其共同比值比。<ul>\n<li>行變數：<code>RESPONSE</code></li>\n<li>列變數：<code>TREATMENT</code></li>\n<li>分層/控制變數：<code>SITE</code></li>\n<li>頻率/計數變數：留空（每個主題一行）。</li>\n</ul>\n選擇的選項：勾選 <i>應用連續性修正</i>，將置信水平保持在 0.95，並勾選 <i>Breslow-Day 測試</i>（可選 <i>Woolf 測試</i> 作為第二個同質性檢查）。將 <i>廣義 CMH</i> 保持未勾選，因為這兩個變數都是名義型，而不是有序型。<i>顯示分層列聯表</i> 有助於查看計數。因為這是一個 2 x 2 x K 表，您將獲得 CMH 測試，並在兩個方向上報告共同比值比（附有命名所用的確切層級的方向註釋），以及一個不顯著的 Breslow-Day 結果，表明比值比在各地點之間是一致的。<br/>\n預先整理的版本 <code>cmh_test_data_freq</code> 包含相同的數據，整理為每個單元格一行，並有一個 <code>Freq</code> 計數列；要使用它，請選擇相同的行/列/分層變數，並在頻率變數字段中填入 <code>Freq</code>。<br/><br/>\n\n<b>2. cmh_ordinal_data（更大的 4 x 4 x 2 設計，具有有序劑量反應）</b><br/>\n此數據集有一個有序的 <code>RESPONSE</code>（無 < 小 < 中 < 明顯）、一個有序的 <code>DOSE</code>（安慰劑 < 低 < 中 < 高）和一個 2 層級的 <code>SEX</code>。它演示了廣義 CMH 測試和當表格大於 2 x 2 x K 時對話框的行為。<ul>\n<li>行變數：<code>RESPONSE</code></li>\n<li>列變數：<code>DOSE</code></li>\n<li>分層/控制變數：<code>SEX</code></li>\n<li>頻率/計數變數：留空。</li>\n</ul>\n重要：首先重新排序 <code>RESPONSE</code> 和 <code>DOSE</code> 的層級（數據 > 因子層級），使其從最低到最高，因為線性趨勢測試按層級出現的順序進行計分。選擇的選項：勾選 <i>廣義 CMH 測試</i>。您可以將 <i>Breslow-Day</i> 和 <i>Woolf</i> 保持勾選，以確認它們正確下降（它們需要 2 x 2 x K 表），而連續性修正在這裡沒有影響。因為這不是 2 x 2 x K 表，您將看到：一般關聯 CMH 卡方，解釋不報告共同比值比的消息，廣義 CMH 一般關聯測試，以及一個線性趨勢（相關）測試，因為反應隨著劑量單調增加而應該是強顯著的。一般關聯表還附有關於監管報告慣例的腳註，適用於大於 2 x 2 x K 的表。<br/><br/>\n\n<b>包</b></br>\nstats (mantelhaen.test); DescTools (BreslowDayTest); vcd (woolf_test); coin (cmh_test, lbl_test)</br>\n<b>幫助</b></br>\nhelp(mantelhaen.test, package ='stats')</br>\n<b>參考文獻</b></br>\nhttps://en.wikipedia.org/wiki/Cochran%E2%80%93Mantel%E2%80%93Haenszel_statistics</br>\n            "
+  }
+}
