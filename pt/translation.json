@@ -20,6 +20,7 @@
       "redo": "Refazer",
       "find": "Encontrar",
       "findNext": "Encontrar próximo",
+      "findPrevious": "Encontrar anterior",
       "findReplace": "Encontrar e substituir",
       "comment": "Comentar",
       "uncomment": "Descomentar",
@@ -51,7 +52,11 @@
     "add": "Criar um novo conjunto de dados",
     "refresh": "Atualizar conjunto de dados",
     "undo": "Desfazer alterações",
-    "redo": "Refazer alterações"
+    "redo": "Refazer alterações",
+    "findSettings": "Configurações de pesquisa",
+    "findSettingsTitle": "Configurações de pesquisa",
+    "findSettingsEmpty": "Ainda não há configurações de pesquisa disponíveis.",
+    "findSettingsCloseBtn": "Fechar"
   },
   "REditrOutputContext": {
     "execute": "Executar",
@@ -103,5 +108,17 @@
   "overwritescript2": "Abrir {{filepath}} irá sobrescrever o arquivo aberto.\n\nEscolha \"Sobrescrever\" para prosseguir ou \"Cancelar\" para manter suas alterações atuais.",
   "overwritedataset": "O conjunto de dados {{dataset_name}} já está aberto na grade. Você deseja sobrescrevê-lo?",
   "duplicatecolumnTitle": "Nome de coluna duplicado",
-  "duplicatecolumnMessage": "O nome da coluna {{changedvalue}} já existe no conjunto de dados {{dataset_name}}. Por favor, use um nome de coluna diferente."
+  "duplicatecolumnMessage": "O nome da coluna {{changedvalue}} já existe no conjunto de dados {{dataset_name}}. Por favor, use um nome de coluna diferente.",
+
+  "errorPrefix": "Erro:",
+  "nameKind_variable": "Variável",
+  "nameKind_dataset": "Conjunto de dados",
+  "rname_blank": "O nome de {{kind}} não pode estar vazio",
+  "rname_tooLong": "O nome de {{kind}} não pode exceder 64 caracteres.",
+  "rname_invalidChars": "Use letras, dígitos, '.' ou '_'. Deve começar com uma letra (ou um '.' não seguido de um dígito).",
+  "rname_reserved": "'{{name}}' é uma palavra-chave reservada do R. Escolha um nome diferente.",
+  "rname_dotArgs": "'{{name}}' é reservado pelo R (as formas de argumento '...' / '..1'). Escolha um nome diferente.",
+  "invalidVariableNameTitle": "Nome de variável inválido",
+  "datasetNameAlreadyOpen": "Já existe um conjunto de dados com este nome aberto. Insira um nome diferente.",
+  "variableNameAlreadyExists": "Já existe uma variável com este nome neste conjunto de dados. Insira um nome diferente."
 }

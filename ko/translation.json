@@ -20,6 +20,7 @@
       "redo": "다시 실행",
       "find": "찾기",
       "findNext": "다음 찾기",
+      "findPrevious": "이전 찾기",
       "findReplace": "찾기 및 바꾸기",
       "comment": "주석",
       "uncomment": "주석 해제",
@@ -51,7 +52,11 @@
     "add": "새 데이터셋 만들기",
     "refresh": "데이터셋 새로 고침",
     "undo": "변경 사항 실행 취소",
-    "redo": "변경 사항 다시 실행"
+    "redo": "변경 사항 다시 실행",
+    "findSettings": "검색 설정",
+    "findSettingsTitle": "검색 설정",
+    "findSettingsEmpty": "사용 가능한 검색 설정이 아직 없습니다.",
+    "findSettingsCloseBtn": "닫기"
   },
   "REditrOutputContext": {
     "execute": "실행",
@@ -103,5 +108,17 @@
   "overwritescript2": "{{filepath}}를 열면 열린 파일이 덮어씌워집니다.\n\n\"덮어쓰기\"를 선택하여 진행하거나 \"취소\"를 선택하여 현재 변경 사항을 유지하십시오.",
   "overwritedataset": "데이터셋 {{dataset_name}}이(가) 그리드에서 이미 열려 있습니다. 덮어쓰시겠습니까?",
   "duplicatecolumnTitle": "중복 열 이름",
-  "duplicatecolumnMessage": "열 이름 {{changedvalue}}가 데이터셋 {{dataset_name}}에 이미 존재합니다. 다른 열 이름을 사용하십시오."
+  "duplicatecolumnMessage": "열 이름 {{changedvalue}}가 데이터셋 {{dataset_name}}에 이미 존재합니다. 다른 열 이름을 사용하십시오.",
+
+  "errorPrefix": "오류:",
+  "nameKind_variable": "변수",
+  "nameKind_dataset": "데이터셋",
+  "rname_blank": "{{kind}} 이름은 비워 둘 수 없습니다",
+  "rname_tooLong": "{{kind}} 이름은 64자를 초과할 수 없습니다.",
+  "rname_invalidChars": "문자, 숫자, '.' 또는 '_'를 사용하십시오. 문자로 시작해야 합니다(또는 숫자가 뒤따르지 않는 '.').",
+  "rname_reserved": "'{{name}}'은(는) 예약된 R 키워드입니다. 다른 이름을 선택하십시오.",
+  "rname_dotArgs": "'{{name}}'은(는) R에 의해 예약되어 있습니다('...' / '..1' 인수 형식). 다른 이름을 선택하십시오.",
+  "invalidVariableNameTitle": "잘못된 변수 이름",
+  "datasetNameAlreadyOpen": "이 이름의 데이터셋이 이미 열려 있습니다. 다른 이름을 입력하십시오.",
+  "variableNameAlreadyExists": "이 데이터셋에 이 이름의 변수가 이미 있습니다. 다른 이름을 입력하십시오."
 }
