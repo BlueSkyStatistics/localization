@@ -1,0 +1,27 @@
+{
+  "title": "Tahmini Marjinal Ortalamalar (emmeans) Tahmin Grafiği",
+  "navigation": "Emmeans Tahmin Grafiği",
+  "labelModelSel": "Uygulanan modeli seçin",
+  "modelSelection": "Modeli seçin",
+  "labelNumericVars": "Sayısal değişkenler (en fazla 5 tane sürükleyin; göz ardı etmek için bir kutuyu boş bırakın)",
+  "numVar1": "Sayısal değişken 1",
+  "numVar2": "Sayısal değişken 2",
+  "numVar3": "Sayısal değişken 3",
+  "numVar4": "Sayısal değişken 4",
+  "numVar5": "Sayısal değişken 5",
+  "atSpecLabel": "İsteğe bağlı: bu değişken için değerler / diziler yazın, örneğin seq(1, 5, by = 1) veya 10, 12, 25 gibi bireysel noktalar yazın. Otomatik olarak minimumdan maksimuma kadar yaklaşık 10 eşit aralıklı nokta oluşturmak için boş bırakın.",
+  "labelGroupVar": "Gruplama (kategorik) değişkenler",
+  "groupVar": "Gruplama değişken(ler)i",
+  "showModelEquationChk": "Model denklemini göster",
+  "showEMMTableChk": "Tahmini Marjinal Ortalamalar (EMM) tablosunu göster",
+  "labelOptions": "Grafik seçenekleri",
+  "confLevel": "Güven düzeyi",
+  "showCI": "Güven aralığını göster (şerit)",
+  "plotTitle": "Grafik başlığı (varsayılan için boş bırakın)",
+  "xAxisLabel": "X ekseni etiketi (varsayılan için boş bırakın)",
+  "yAxisLabel": "Y ekseni etiketi (varsayılan için boş bırakın)",
+  "help": {
+    "title": "Tahmini Marjinal Ortalamalar (emmeans) Tahmin Grafiği",
+    "body": "\n                <b>Açıklama</b><br/><br/>\n                Uygulanan bir regresyon modelinden tahmini marjinal ortalamaları (tahmin edilen değerler) hesaplar\n                ve tahminleri <code>ggplot2</code> ile görselleştirir.<br/><br/>\n\n                <b>Kullanım</b>\n                <ol>\n                  <li>Daha önce uygulanmış bir modeli seçin (örneğin, Doğrusal Regresyon'dan).</li>\n                  <li>\"Sayısal değişkenler\" kutularına en fazla 5 sayısal değişken sürükleyin.\n                      Boş kutular göz ardı edilir.</li>\n                  <li>Her sayısal değişken için, isteğe bağlı olarak özel bir\n                      değer seti veya kutusunun altındaki metin alanına bir R <code>seq()</code> ifadesi yazabilirsiniz\n                      (örneğin, <code>seq(22, 42, by = 1)</code>\n                      veya <code>1, 2, 3</code>). Boş bırakılırsa, değişkenin gözlemlenen min/max değerlerini kapsayan yaklaşık 10 eşit\n                      aralıklı değer otomatik olarak oluşturulur.</li>\n                  <li>Bir veya daha fazla kategorik değişkeni \"Gruplama\n                      değişken(ler)i\" kutusuna sürükleyin. İlk gruplama değişkeni,\n                      çizilen çizgilerin ve şeritlerin rengini/doldurmasını sağlamak için kullanılır. Eğer ikinci\n                      bir gruplama değişkeni sağlanırsa, grafik ayrıca\n                      o değişkenle (ve sağlanırsa üçüncü bir değişkenle, diğer yönde) bölümlere ayrılır. Herhangi bir ek\n                      gruplama değişkeni, bölüm ızgarasına dahil edilir.</li>\n                  <li>Güven düzeyini ayarlayın (varsayılan 0.95).</li>\n                  <li>İsteğe bağlı olarak \"Güven aralığını göster\" seçeneğini işaretleyerek\n                      güven aralığı için bir şerit ekleyin.</li>\n                  <li>İsteğe bağlı olarak grafik başlığını ve eksen etiketlerini geçersiz kılın.</li>\n                </ol>\n\n                <b>Notlar</b><br/>\n                Sağlanan ilk sayısal değişken, grafiğin x ekseni olur.\n                Herhangi bir ek sayısal değişken (2-5) <code>emmeans</code> ızgarasına dahil edilir ve ortalaması alınır (veya belirtilen/otomatik olarak oluşturulan değerlerinde tutulur) ancak ayrı olarak çizilmez.<br/><br/>\n\n                Seçilen tüm sayısal ve gruplama değişkenleri, uygulanan modelin formülünde yer alan değişkenler olmalıdır. Eğer seçilen herhangi bir\n                değişken modelin bir parçası değilse, bir hata oluşur ve geçerli model değişkenlerinin listesi yazdırılır.\n            "
+  }
+}

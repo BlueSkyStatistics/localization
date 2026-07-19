@@ -1,0 +1,26 @@
+{
+  "helpText": "CMH 测试在控制（分层）第三个变量的情况下，测试行变量和列变量之间的关联。行、列和分层变量必须都是分类的（因子）。常见的比值比和同质性测试（Breslow-Day，Woolf）仅在 2 x 2 x K 情况下定义（行和列各有两个水平）。",
+  "title": "Cochran-Mantel-Haenszel (CMH) 测试",
+  "navigation": "CMH",
+  "row": "行变量（例如，结果：成功/失败）",
+  "column": "列变量（例如，治疗组）",
+  "strata": "分层/控制变量",
+  "weight": "频率/计数变量（可选，如果数据已经制表）",
+  "label1": "测试选项",
+  "correct": "应用连续性校正（仅限 2 x 2 x K）",
+  "conflevel": "常见比值比的置信水平",
+  "label2": "比值比的同质性（仅限 2 x 2 x K）",
+  "breslowday": "Breslow-Day 测试",
+  "tarone": "对 Breslow-Day 应用 Tarone 校正",
+  "woolf": "Woolf 测试",
+  "label3": "广义 CMH（用于有序类别，通过 coin）",
+  "gencmh": "广义 CMH 测试（一般关联 + 线性逐步趋势）",
+  "label4": "描述性输出",
+  "showstrata": "显示分层列联表",
+  "showindiv": "显示每个分层的非分层卡方测试",
+  "help": {
+    "title": "Cochran-Mantel-Haenszel (CMH) 测试",
+    "r_help": "help(mantelhaen.test, package ='stats')",
+    "body": "\n<b>什么是 Cochran-Mantel-Haenszel 测试？</b></br>\nCochran-Mantel-Haenszel (CMH) 测试测量在考虑一个将数据划分为分层的第三个分类变量后，两个分类变量是否相关。简单来说，它回答了“在我保持混杂因素不变的情况下，这两件事是否相关？”它通过在每个分层内形成一个单独的列联表，测量每个表中的关联，然后将这些分层特定的关联合并为一个单一的汇总测试。由于汇总发生在分层内，跨组的分层变量的不平衡本身不能创造虚假的关联或掩盖真实的关联。<br/><br/>\n\n<b>临床试验示例</b></br>\n假设一个试验比较一种活性药物与安慰剂，结果是每个患者是否有反应（是/否）。患者在多个医院入组，医院在基线反应率和每个组贡献的患者数量上有所不同。用一个单一的汇总 2x2 表比较组间反应会让这些地点差异渗透到治疗比较中。一个按地点分层的 CMH 测试比较治疗和反应 <i>在每个医院内</i>，然后结合证据，给出一个地点调整的治疗效果测试以及一个总结药物在各个地点的益处的常见比值比。这种“控制分层因素”的模式（地点、基线严重程度、区域）是 CMH 在确认性试验中最常见的用途之一。<br/><br/>\n\n<b>描述</b></br>\n执行 Cochran-Mantel-Haenszel (CMH) 测试，以检验行变量和列变量之间的条件独立性，控制一个或多个分层变量。内部构建一个列联表，使用 <code>xtabs()</code> 并调用 <code>mantelhaen.test()</code> 来自 <b>stats</b> 包。可选地报告 Mantel-Haenszel 常见比值比及其置信区间，测试比值比在分层间是否恒定的假设（Breslow-Day 和 Woolf 测试），并计算有序类别的广义 CMH 统计量。<br/><br/>\n\nCMH 测试询问行和列变量在保持分层变量不变的情况下是否相关。它是调整混杂因素的分类数据对应物，广泛用于临床试验中比较治疗组间的二元结果，同时控制分层因素，如地点或基线严重程度。<br/><br/>\n\n<b>注意</b><br/>\n1. 行、列和分层变量必须都是分类的（因子）。如有需要，请使用数据 > 因子水平进行转换。<br/>\n2. 常见比值比、其置信区间以及 Breslow-Day 和 Woolf 同质性测试仅在行和列变量各有两个水平时定义（2 x 2 x K 设计）。对于更大的表，对话框报告来自 <code>mantelhaen.test()</code> 的一般关联卡方，并且如果请求，报告广义 CMH 测试，但不报告常见比值比。<br/>\n3. 同质性测试回答与 CMH 测试本身不同的问题。显著的 Breslow-Day 或 Woolf 结果意味着比值比在分层间不同（效应修饰），在这种情况下，单一的常见比值比不是一个好的总结，应该报告分层特定的估计。监管惯例是首先运行同质性测试，仅在其不显著时报告常见比值比。<br/>\n4. 如果您的数据已经制表（每个单元一行，带有计数列），请将该计数列指定为频率变量。否则请留空，数据集的每一行视为一个观察值。<br/><br/>\n\n<b>用示例数据集试用</b></br>\n提供了两个数据集以便练习对话框。在运行任一数据集之前，请使用数据 > 因子水平确认变量是因子（并且，对于有序示例，确认水平是有意义的顺序）。<br/><br/>\n\n<b>1. cmh_test_data（一个 2 x 2 x K 设计：二元结果，二元治疗，多个地点）</b><br/>\n该数据集有一个二元 <code>RESPONSE</code>（是/否），一个二元 <code>TREATMENT</code>（活性/安慰剂），和一个 4 级 <code>SITE</code>。它演示了经典的分层 2x2 分析及其常见比值比。<ul>\n<li>行变量：<code>RESPONSE</code></li>\n<li>列变量：<code>TREATMENT</code></li>\n<li>分层/控制变量：<code>SITE</code></li>\n<li>频率/计数变量：留空（每个受试者一行）。</li>\n</ul>\n选项选择：勾选 <i>应用连续性校正</i>，将置信水平保持在 0.95，并勾选 <i>Breslow-Day 测试</i>（可选 <i>Woolf 测试</i> 作为第二个同质性检查）。将 <i>广义 CMH</i> 保持未勾选，因为两个变量都是名义的，而不是有序的。<i>显示分层列联表</i> 有助于查看计数。由于这是一个 2 x 2 x K 表，您将获得 CMH 测试，常见比值比在两个方向上报告（带有命名确切使用的水平的方向说明），以及一个非显著的 Breslow-Day 结果，表明比值比在各个地点是一致的。<br/>\n一个预制表版本 <code>cmh_test_data_freq</code> 包含相同的数据，汇总为每个单元一行，带有 <code>Freq</code> 计数列；要使用它，请选择相同的行/列/分层变量，并在频率变量字段中输入 <code>Freq</code>。<br/><br/>\n\n<b>2. cmh_ordinal_data（一个更大的 4 x 4 x 2 设计，具有有序剂量反应）</b><br/>\n该数据集有一个有序 <code>RESPONSE</code>（无 < 小 < 中 < 明显），一个有序 <code>DOSE</code>（安慰剂 < 低 < 中 < 高），和一个 2 级 <code>SEX</code>。它演示了广义 CMH 测试和当表大于 2 x 2 x K 时对话框的行为。<ul>\n<li>行变量：<code>RESPONSE</code></li>\n<li>列变量：<code>DOSE</code></li>\n<li>分层/控制变量：<code>SEX</code></li>\n<li>频率/计数变量：留空。</li>\n</ul>\n重要：首先重新排序 <code>RESPONSE</code> 和 <code>DOSE</code> 的水平（数据 > 因子水平），使其从最低到最高，因为线性逐步测试按出现顺序对水平进行评分。选项选择：勾选 <i>广义 CMH 测试</i>。您可以将 <i>Breslow-Day</i> 和 <i>Woolf</i> 保持勾选，以确认它们正确下降（它们需要 2 x 2 x K 表），而连续性校正在这里没有效果。由于这不是一个 2 x 2 x K 表，您将看到：一般关联 CMH 卡方，解释不报告常见比值比的消息，广义 CMH 一般关联测试，以及线性逐步（相关）测试，应该是显著的，因为反应随着剂量单调增加。一般关联表还带有关于监管报告惯例的脚注，适用于大于 2 x 2 x K 的表。<br/><br/>\n\n<b>包</b></br>\nstats (mantelhaen.test); DescTools (BreslowDayTest); vcd (woolf_test); coin (cmh_test, lbl_test)</br>\n<b>帮助</b></br>\nhelp(mantelhaen.test, package ='stats')</br>\n<b>参考文献</b></br>\nhttps://en.wikipedia.org/wiki/Cochran%E2%80%93Mantel%E2%80%93Haenszel_statistics</br>\n            "
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "彈性網路，Cox",
+  "navigation": "彈性網路，Cox",
+  "modellabel": "輸入模型名稱",
+  "timevarlabel": "事件時間或審查時間",
+  "eventvarlabel": "事件 (1=事件, 0=審查)",
+  "independentlabel": "自變量",
+  "offsetlabel": "偏移量",
+  "weightslabel": "權重",
+  "stratalabel": "層次",
+  "alphalabel": "混合參數 (alpha)，0=嶺回歸，1=套索回歸",
+  "cvmeaslabel": "交叉驗證度量",
+  "nfoldslabel": "交叉驗證的折數 (最大=樣本大小)",
+  "seedlabel": "設置隨機種子",
+  "outputallestlabel": "輸出包含每個 lambda 的所有模型的數據集",
+  "outputdatasetlabel": "輸出數據集名稱",
+  "onesetablelabel": "在最小 lambda + 1 SE 時創建非零係數的表",
+  "help": {
+    "title": "彈性網路，Cox",
+    "r_help": "help(cv.glmnet, package ='glmnet')",
+    "body": "\n此對話框通過懲罰最大似然擬合Cox回歸模型。正則化路徑是針對一組值（在對數尺度上）計算的套索或彈性網懲罰的正則化參數lambda。當參數的數量相對於樣本大小（或結果事件的數量）較大時，懲罰回歸是有用的。這是一個良好的解決方案，用於偏差-方差權衡，其中人們願意犧牲一些偏差以換取較少的預測變異性。alpha參數控制懲罰之間的混合，從嶺回歸（alpha=0）到套索回歸（alpha=1）。調整參數（lambda）控制懲罰的整體強度。lambda的最佳值是通過k折交叉驗證選擇的。\n</br></br>\n嶺懲罰將相關預測變量的係數縮小到彼此之間，而套索則傾向於選擇其中一個並丟棄其他。因此，套索適合於變量選擇的目的。\n</br></br>\n此實現中的理論和算法在Friedman、Hastie和Tibshirani（2010）、Simon等（2011）、Tibshirani等（2012）和Simon、Friedman和Hastie（2013）中有描述。\n</br></br>\n對於模型中使用的任何變量，缺失值的觀察會自動被刪除。在模型擬合之前，自變量會自動標準化。係數始終以原始尺度返回。生成的圖顯示了整個lambda序列中的係數值和模型標準值。\n\n<br/><br/>\n\n<b>事件時間或審查時間：</b></br>\n事件時間的變量（對於有事件的情況）和審查時間（對於沒有事件的情況）（必填）。僅限數字。</br></br>\n\n<b>事件 (1=事件, 0=審查)：</b></br>\n指示有事件（=1）和被審查（=0）的變量（必填）。僅限數字。</br></br>\n\n<b>自變量：</b></br>\n指定模型的自變量。可以是數字、因子、有序或字符。（必填）</br></br>\n\n<b>偏移量：</b></br>\n指定可選的偏移變量。必須是數字。這在模型中納入了一個具有固定值的自變量。此變量不會估計係數，並被視為1。</br></br>\n\n<b>權重：</b></br>\n指定可選的權重變量。必須是數字。這指定了在擬合過程中使用的正“先驗權重”。</br></br>\n\n<b>層次：</b></br>\n指定可選的分層變量。當指定時，這擬合一個分層Cox模型，允許每個層次水平的基線危險函數分開。可以是數字、因子或字符。</br></br>\n\n<b>混合參數 (alpha)：</b></br>\n這指定懲罰應該有多少是嶺（alpha=0）與套索（alpha=1）懲罰。alpha的一個用途是為了數值穩定性；例如，彈性網與alpha=1−epsilon（某些小的epsilon>0）表現得像套索，但消除了由極端相關性引起的任何退化和異常行為。默認值為1（套索）。</br></br>\n\n<b>交叉驗證度量：</b></br>\n指定用於評估模型性能的統計量。選項有：\n<ul>\n<li>偏差：測量擬合模型的似然與飽和模型（每個觀察一個參數）的似然之間的差異</li>\n<li>C：Harrell的C統計量，用於模型一致性；測量模型區分度，使得風險分數較高的人應該有較短的事件時間</li>\n</ul>\n\n<b>交叉驗證的折數：</b></br>\n這指定數據集將被劃分為交叉驗證的分區數。默認值為10。（最小=3，最大=樣本大小）</br></br>\n\n<b>設置隨機種子：</b></br>\n指定用於交叉驗證的隨機種子。在模型運行中使用相同的種子可實現模型的可重複性。</br></br>\n\n<b>輸出選項</b></br></br>\n<b>輸出包含每個lambda的所有模型的數據集：</b></br>\n指定是否創建一個包含每個lambda值模型的數據集。該數據集將按增長的lambda值排序，其中最小的lambda模型基本上是未懲罰的模型。該數據集將包含一個指示變量，指示該模型是否（=1）或不（=0）與最佳lambda值的1個標準誤差內的lambda值相關。在某種意義上，所有在1 SE內的模型在統計上是等效的，並且會提供類似的性能。</br></br>\n\n<b>輸出數據集名稱：</b></br>\n包含整個lambda序列模型的輸出數據集的名稱。</br></br>\n\n<b>在最小lambda + 1 SE時創建非零係數的表：</b></br>\n這指定是否生成一個係數估計的表，該表恰好是距最佳lambda 1個標準誤差。\n\n</br></br>\n參考文獻：</br></br>\n\nHastie等。彈性網介紹 <a href=\"https://glmnet.stanford.edu/articles/glmnet.html\">鏈接</a></br></br>\n\nTay等。正則化Cox回歸 <a href=\"https://glmnet.stanford.edu/articles/Coxnet.html\">鏈接</a></br></br>\n\nFriedman, Jerome, Trevor Hastie, 和 Robert Tibshirani. 2010. “通過坐標下降的廣義線性模型的正則化路徑。” 統計軟件期刊，文章33（1）：1–22。 <a href=\"https://doi.org/10.18637/jss.v033.i01\">鏈接</a></br></br>\n\nSimon, Noah, Jerome Friedman, 和 Trevor Hastie. 2013. “用於組懲罰多響應和多項式回歸的區塊下降算法。” <a href=\"https://doi.org/10.48550/arXiv.1311.6529\">鏈接</a></br></br>\n\nSimon, Noah, Jerome Friedman, Trevor Hastie, 和 Robert Tibshirani. 2011. “通過坐標下降的Cox比例風險模型的正則化路徑。” 統計軟件期刊，文章39（5）：1–13。 <a href=\"https://doi.org/10.18637/jss.v039.i05\">鏈接</a></br></br>\n\nTibshirani, Robert, Jacob Bien, Jerome Friedman, Trevor Hastie, Noah Simon, Jonathan Taylor, 和 Ryan Tibshirani. 2012. “在套索類問題中丟棄預測變量的強規則。” 皇家統計學會會報：B系列（統計方法論）74（2）：245–66。 <a href=\"https://doi.org/10.1111/j.1467-9868.2011.01004.x\">鏈接</a></br></br>\n\n<b>所需的R包：</b> glmnet, survival, broom, dplyr\n\t\t\t"
+  }
+}

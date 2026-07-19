@@ -1,0 +1,27 @@
+{
+  "title": "Plot de Predicție a Mediilor Marginale Estimate (emmeans)",
+  "navigation": "Plot de Predicție Emmeans",
+  "labelModelSel": "Selectați modelul ajustat",
+  "modelSelection": "Selectați modelul",
+  "labelNumericVars": "Variabile numerice (trageți până la 5; lăsați un câmp gol pentru a-l ignora)",
+  "numVar1": "Variabila numerică 1",
+  "numVar2": "Variabila numerică 2",
+  "numVar3": "Variabila numerică 3",
+  "numVar4": "Variabila numerică 4",
+  "numVar5": "Variabila numerică 5",
+  "atSpecLabel": "Opțional: introduceți valori / secvență pentru această variabilă, de exemplu seq(1, 5, by = 1) sau introduceți puncte individuale ca 10, 12, 25 Lăsați gol pentru a genera automat aproximativ 10 puncte distribuite uniform de la min la max.",
+  "labelGroupVar": "Variabile de grupare (categorice)",
+  "groupVar": "Variabila(e) de grupare",
+  "showModelEquationChk": "Arată ecuația modelului",
+  "showEMMTableChk": "Arată tabelul Mediilor Marginale Estimate (EMM)",
+  "labelOptions": "Opțiuni de plotare",
+  "confLevel": "Nivel de încredere",
+  "showCI": "Arată banda de încredere (ribbon)",
+  "plotTitle": "Titlul plotului (lăsați gol pentru implicit)",
+  "xAxisLabel": "Eticheta axei X (lăsați gol pentru implicit)",
+  "yAxisLabel": "Eticheta axei Y (lăsați gol pentru implicit)",
+  "help": {
+    "title": "Plot de Predicție a Mediilor Marginale Estimate (emmeans)",
+    "body": "\n                <b>Descriere</b><br/><br/>\n                Calculează mediile marginale estimate (valori prezise) dintr-un\n                model de regresie ajustat folosind pachetul <code>emmeans</code>,\n                și vizualizează predicțiile cu <code>ggplot2</code>.<br/><br/>\n\n                <b>Cum să folosești</b>\n                <ol>\n                  <li>Selectați un model ajustat anterior (de exemplu, din regresia liniară).</li>\n                  <li>Trageți până la 5 variabile numerice în casetele \"Variabile numerice\".\n                      Casetele goale sunt ignorate.</li>\n                  <li>Pentru fiecare variabilă numerică, puteți introduce opțional un set\n                      personalizat de valori sau o expresie R <code>seq()</code> în\n                      câmpul de text de sub caseta sa (de exemplu, <code>seq(22, 42, by = 1)</code>\n                      sau <code>1, 2, 3</code>). Dacă lăsați gol, aproximativ 10 valori\n                      distribuite uniform care acoperă min/max observat al variabilei sunt\n                      generate automat.</li>\n                  <li>Trageți una sau mai multe variabile categorice în caseta \"Variabila(e)\n                      de grupare\". Prima variabilă de grupare este folosită pentru a\n                      colora/umple liniile și benzile plotate. Dacă se furnizează o a doua\n                      variabilă de grupare, plotul este de asemenea\n                      facționat după acea variabilă (și o a treia, dacă este furnizată, fațonează\n                      în cealaltă direcție). Orice alte variabile de grupare sunt\n                      combinate în grila de fațonare.</li>\n                  <li>Stabiliți nivelul de încredere (implicit 0.95).</li>\n                  <li>Opțional, bifați \"Arată banda de încredere\" pentru a adăuga o bandă pentru\n                      intervalul de încredere.</li>\n                  <li>Opțional, suprascrieți titlul plotului și etichetele axelor.</li>\n                </ol>\n\n                <b>Note</b><br/>\n                Prima variabilă numerică furnizată devine axa x a plotului.\n                Orice variabile numerice suplimentare (2-5) sunt incluse în\n                grila <code>emmeans</code> și sunt mediate (sau menținute la valorile\n                specificate/generate automat) dar nu sunt plotate separat.<br/><br/>\n\n                Toate variabilele numerice și de grupare selectate trebuie să fie variabile\n                care apar în formula modelului ajustat. Dacă vreo variabilă selectată\n                nu face parte din model, se generează o eroare și lista variabilelor\n                valide ale modelului este imprimată.\n            "
+  }
+}

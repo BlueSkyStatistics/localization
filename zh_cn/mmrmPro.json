@@ -1,0 +1,30 @@
+{
+  "helpText": "MMRM需要数据以长格式呈现，每个受试者每次访问一行。如果您的数据不在长格式中，请参见数据集 > 重塑 > 更长。访问变量和治疗变量必须都是因子。",
+  "title": "MMRM（重复测量的混合效应模型）",
+  "navigation": "MMRM",
+  "modelname": "输入模型名称",
+  "dependent": "因变量（连续纵向结果，例如基线变化）",
+  "treatment": "治疗/组变量（必须是因子）",
+  "visit": "访问/时间变量（分类时间，必须是因子）",
+  "subject": "受试者标识符（重复测量在该单位内相关）",
+  "covariates": "基线协变量/额外固定效应（可选）",
+  "interaction": "包括治疗与访问的交互作用（推荐用于MMRM）",
+  "cov": "协方差结构（用于受试者内相关的残差）",
+  "groupCov": "为治疗变量的每个水平估计一个单独的协方差矩阵",
+  "method": "自由度的方法/小样本调整",
+  "vcovOpt": "系数协方差（标准误差）",
+  "estimator": "估计量",
+  "label1": "模型选项",
+  "label2": "最小二乘均值和治疗对比的选项",
+  "combon": "使用以下方法比较均值：",
+  "adjust": "调整p值的方法",
+  "anovachk": "类型III ANOVA（固定效应的Wald检验）",
+  "lsmeanschk": "按访问的最小二乘（估计边际）均值和治疗对比",
+  "covmatrixchk": "显示估计的残差协方差矩阵",
+  "diagplotchk": "诊断图（残差与拟合，正态Q-Q）",
+  "help": {
+    "title": "MMRM（重复测量的混合效应模型）",
+    "r_help": "help(mmrm, package ='mmrm')",
+    "body": "\n<b>什么是MMRM？</b></br>\n重复测量的混合效应模型（MMRM）分析在多个固定时间点对同一受试者测量的连续结果，并询问该结果在不同组之间随时间的变化。它不是将每个受试者压缩为一个数字，而是使用每次访问，并考虑到对一个人进行的重复测量是相关的。它通过固定效应（通常是治疗、访问及其交互作用，加上基线协变量）建模平均反应，并通过访问之间的残差协方差结构直接捕捉受试者内相关，而不是通过每个受试者的随机效应。一个关键的实际优势是，在随机缺失假设下，它使用受试者提供的所有数据，而不丢弃它们或填补缺失的访问，这就是为什么监管机构广泛接受它的原因。<br/><br/>\n\n<b>临床试验示例</b></br>\n假设一项试验在基线、第四周、第八周和第十二周测量活性药物与安慰剂患者的症状评分，终点是第十二周的基线变化。患者不可避免地会退出，因此许多患者会缺少一些访问。一个包含治疗、访问和治疗与访问交互作用的MMRM在每次访问时估计治疗差异，同时借用相关访问和患者之间的力量，从而给出有效的第十二周治疗效果，利用早期离开的患者的部分数据。结果通常总结为最后一次访问时两组之间的最小二乘均值差异。这是精神病学、神经学和许多其他治疗领域中纵向连续终点的标准主要分析方法。<br/><br/>\n\n<b>描述</b></br>\n构建重复测量的混合效应模型（MMRM），这是分析在临床试验中多个离散访问中测量的纵向连续结果（例如症状评分的基线变化）的标准方法。内部调用<b>mmrm</b>包中的<code>mmrm()</code>函数，并将结果存储在您指定名称的对象中。<br/><br/>\n\nMMRM通过固定效应（通常是治疗、访问和治疗与访问的交互作用，加上基线协变量）建模均值，并通过残差协方差结构直接建模受试者内相关，而不是通过受试者级别的随机效应。在随机缺失（MAR）假设下，它使用所有观察到的数据，并在不填补缺失访问的情况下产生有效的治疗效果估计，这就是为什么它被监管机构广泛接受的原因。<br/><br/>\n\n<b>注意</b><br/>\n1. 数据必须是长格式，每个受试者每次访问一行。请参见数据集 > 重塑 > 更长。<br/>\n2. 访问变量和治疗变量必须是因子。请参见数据 > 因子水平以转换和重新排序级别（治疗变量的第一个级别通常是对照/参考组）。<br/>\n3. 缺少结果的行在MAR下被模型隐式使用；它们不会被填补，也不应被删除。<br/>\n4. 与重复测量ANOVA不同，具有非结构协方差的MMRM不假设球形或方差齐性，因此Box的M、Levene和Brown-Forsythe等检验在此不适用。<br/><br/>\n\n<b>用法</b>\n<br/>\n<code>\nlibrary(mmrm)<br/>\nMMRMModel1 &lt;- mmrm(<br/>\n&nbsp;&nbsp;formula = CHG ~ ARM + AVISIT + BASE + ARM:AVISIT + us(AVISIT | USUBJID),<br/>\n&nbsp;&nbsp;data = Dataset1,<br/>\n&nbsp;&nbsp;method = \"Satterthwaite\",<br/>\n&nbsp;&nbsp;vcov = \"Asymptotic\",<br/>\n&nbsp;&nbsp;reml = TRUE)<br/>\n#总结模型<br/>\nsummary(MMRMModel1)<br/>\n#固定效应的类型III检验<br/>\ncar::Anova(MMRMModel1, type = \"III\")<br/>\n#按访问的最小二乘均值和治疗对比<br/>\nemmeans::emmeans(MMRMModel1, ~ ARM | AVISIT)<br/>\n</code> <br/>\n\n<b>参数</b><br/>\n<ul>\n<li>\n因变量：在时间上重复测量的连续结果。在临床试验中，这通常是感兴趣终点的基线变化。\n</li>\n<li>\n治疗/组变量：您希望估计其对结果影响的固定效应（例如治疗组）。它必须是因子。\n</li>\n<li>\n访问/时间变量：分类时间变量（例如基线、第四周、第八周、第十二周）。它必须是因子。它既作为固定效应出现，也出现在协方差项中。\n</li>\n<li>\n受试者标识符：识别每位患者的变量。允许对同一受试者进行的重复测量相关；该变量是协方差结构的分组单位。每个受试者/访问组合最多只能出现一次。\n</li>\n<li>\n基线协变量：可选的额外固定效应进行调整，例如感兴趣终点的基线值或分层因素。\n</li>\n</ul>\n\n<b>协方差结构</b><br/>\n<b>mmrm</b>包通过形式为<code>&lt;structure&gt;(visit | subject)</code>的函数提供受试者内协方差。此对话框中可用的选择：\n<ul>\n<li>非结构（us）：每个方差和协方差自由估计。默认和黄金标准。</li>\n<li>复合对称（cs）/异质复合对称（csh）。</li>\n<li>自回归1阶（ar1）/异质AR(1)（ar1h）。</li>\n<li>Toeplitz（toep）/异质Toeplitz（toeph）。</li>\n<li>前依赖，异质（adh）。</li>\n</ul>\n如果您勾选估计每个治疗组的单独协方差矩阵的选项，则协方差项变为<code>&lt;structure&gt;(visit | treatment / subject)</code>。当预计各组在时间上具有不同的变异性时，这很有用，但它会估计更多的参数。<br/><br/>\n\n<b>方法</b><br/>\n控制Wald检验的分母自由度和小样本调整：Satterthwaite（默认）、Kenward-Roger、残差或组间-组内。<br/><br/>\n\n<b>系数协方差</b><br/>\n渐近（默认）使用基于模型的标准误差。经验选项请求稳健的“三明治”标准误差，对错误指定的协方差结构不太敏感。Kenward-Roger系数协方差仅在方法为Kenward-Roger时可用。<br/><br/>\n\n<b>使用fev_data数据集进行尝试</b></br>\n<b>mmrm</b>包提供了一个示例数据集<code>fev_data</code>，非常适合尝试此对话框。将其加载到BlueSky中（或在R编辑器中运行<code>data(fev_data, package = \"mmrm\")</code>并将其用作数据集）。它已经是长格式，每个受试者每次访问一行，并包含一个具有真实缺失值的连续结果<code>FEV1</code>。<br/><br/>\n\n在运行之前，使用数据 > 因子水平确认<code>ARMCD</code>（治疗）和<code>AVISIT</code>（访问）是因子，并且<code>ARMCD</code>的第一个级别是您希望作为参考的对照组。<br/><br/>\n\n将变量选择到输入字段中，如下所示：\n<ul>\n<li>因变量：<code>FEV1</code>（重复的连续结果；它有缺失值，这是预期的）。</li>\n<li>治疗/组变量：<code>ARMCD</code>（级别PBO和TRT；PBO是参考）。</li>\n<li>访问/时间变量：<code>AVISIT</code>（VIS1到VIS4）。</li>\n<li>受试者标识符：<code>USUBJID</code>。</li>\n<li>基线协变量：<code>FEV1_BL</code>和<code>RACE</code>（可选<code>SEX</code>）。</li>\n</ul>\n将<code>WEIGHT</code>、<code>VISITN</code>和<code>VISITN2</code>保留在源列表中。<br/><br/>\n\n选择的选项：保持<i>包括治疗与访问的交互作用</i>选中（这是MMRM的核心）；保持<i>为治疗变量的每个水平估计单独的协方差矩阵</i>未选中；将协方差结构设置为<i>非结构（us）</i>，方法设置为<i>Satterthwaite</i>，系数协方差设置为<i>渐近</i>，估计量设置为<i>REML</i>。在选项选项卡中，有用的选择是<i>类型III ANOVA</i>和<i>按访问的最小二乘均值和治疗对比</i>；您还可以勾选<i>显示估计的残差协方差矩阵</i>和<i>诊断图</i>以查看完整输出。<br/><br/>\n\n使用这些设置拟合的模型是<code>FEV1 ~ ARMCD + AVISIT + FEV1_BL + RACE + ARMCD:AVISIT + us(AVISIT | USUBJID)</code>。您应该看到固定效应系数、模型拟合统计（注意，所有访问的结果缺失的三个受试者被删除，因此使用的受试者将少于数据中的总数）、类型III检验，以及每次访问的最小二乘均值与治疗对比。要查看稳健的标准误差，请重新运行并将系数协方差设置为<i>经验</i>：估计保持不变，而标准误差发生变化。<br/><br/>\n\n<b>包</b></br>\nmmrm; emmeans; car</br>\n<b>帮助</b></br>\nhelp(mmrm, package ='mmrm')</br>\n<b>参考文献</b></br>\nhttps://cran.r-project.org/web/packages/mmrm/vignettes/methodological_introduction.html</br>\n"
+  }
+}

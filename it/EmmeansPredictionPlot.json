@@ -1,0 +1,27 @@
+{
+  "title": "Grafico di Predizione dei Marginali Stimati (emmeans)",
+  "navigation": "Grafico di Predizione Emmeans",
+  "labelModelSel": "Seleziona il modello adattato",
+  "modelSelection": "Seleziona modello",
+  "labelNumericVars": "Variabili numeriche (trascina fino a 5; lascia una casella vuota per ignorarla)",
+  "numVar1": "Variabile numerica 1",
+  "numVar2": "Variabile numerica 2",
+  "numVar3": "Variabile numerica 3",
+  "numVar4": "Variabile numerica 4",
+  "numVar5": "Variabile numerica 5",
+  "atSpecLabel": "Opzionale: digita valori / sequenza per questa variabile, ad es. seq(1, 5, by = 1) o digita punti individuali come 10, 12, 25. Lascia vuoto per generare automaticamente circa 10 punti equidistanti da min a max.",
+  "labelGroupVar": "Variabili di raggruppamento (categoriche)",
+  "groupVar": "Variabile(i) di raggruppamento",
+  "showModelEquationChk": "Mostra equazione del modello",
+  "showEMMTableChk": "Mostra tabella dei Marginali Stimati (EMM)",
+  "labelOptions": "Opzioni del grafico",
+  "confLevel": "Livello di confidenza",
+  "showCI": "Mostra banda di confidenza (nastro)",
+  "plotTitle": "Titolo del grafico (lascia vuoto per predefinito)",
+  "xAxisLabel": "Etichetta dell'asse X (lascia vuoto per predefinito)",
+  "yAxisLabel": "Etichetta dell'asse Y (lascia vuoto per predefinito)",
+  "help": {
+    "title": "Grafico di Predizione dei Marginali Stimati (emmeans)",
+    "body": "\n                <b>Descrizione</b><br/><br/>\n                Calcola i margini stimati (valori previsti) da un\n                modello di regressione adattato utilizzando il pacchetto <code>emmeans</code>,\n                e visualizza le previsioni con <code>ggplot2</code>.<br/><br/>\n\n                <b>Come usare</b>\n                <ol>\n                  <li>Seleziona un modello precedentemente adattato (ad es. da Regressione Lineare).</li>\n                  <li>Trascina fino a 5 variabili numeriche nelle caselle \"Variabili numeriche\".\n                      Le caselle vuote vengono ignorate.</li>\n                  <li>Per ogni variabile numerica, puoi opzionalmente digitare un set di valori\n                      personalizzati o un'espressione R <code>seq()</code> nel\n                      campo di testo sotto la sua casella (ad es. <code>seq(22, 42, by = 1)</code>\n                      o <code>1, 2, 3</code>). Se lasciato vuoto, vengono\n                      generati automaticamente circa 10 valori equidistanti che coprono il min/max osservato della variabile.</li>\n                  <li>Trascina una o più variabili categoriali nella casella \"Variabile(i)\n                      di raggruppamento\". La prima variabile di raggruppamento viene utilizzata per\n                      colorare/riempire le linee e i nastri tracciati. Se viene fornita una seconda\n                      variabile di raggruppamento, il grafico viene ulteriormente\n                      suddiviso da quella variabile (e una terza, se fornita, suddivide\n                      nella direzione opposta). Qualsiasi ulteriore variabile di raggruppamento viene\n                      combinata nella griglia di suddivisione.</li>\n                  <li>Imposta il livello di confidenza (predefinito 0.95).</li>\n                  <li>Opzionalmente seleziona \"Mostra banda di confidenza\" per aggiungere un nastro per\n                      l'intervallo di confidenza.</li>\n                  <li>Opzionalmente sovrascrivi il titolo del grafico e le etichette degli assi.</li>\n                </ol>\n\n                <b>Note</b><br/>\n                La prima variabile numerica fornita diventa l'asse x del grafico.\n                Qualsiasi variabile numerica aggiuntiva (2-5) è inclusa nella\n                griglia <code>emmeans</code> e viene mediata (o mantenuta ai loro\n                valori specificati/generati automaticamente) ma non viene tracciata separatamente.<br/><br/>\n\n                Tutte le variabili numeriche e di raggruppamento selezionate devono essere variabili\n                che appaiono nella formula del modello adattato. Se una qualsiasi variabile selezionata\n                non fa parte del modello, viene sollevato un errore e viene stampata la\n                lista delle variabili valide del modello.\n            "
+  }
+}

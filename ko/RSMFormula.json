@@ -3,17 +3,17 @@
   "navigation": "설계 분석 - 응답 표면 모델",
   "modelname": "RSM 모델 이름(데이터셋 이름이 자동으로 추가됩니다)",
   "dependent": "응답(종속) 변수",
-  "formulaboxhint": "권장 사항: 수치 인자에 대해 RSM 매크로 용어(FO, TWI, PQ, SO)를 사용하세요. 디자인이 차단된 경우, RSM 매크로 앞에 블록 열을 포함하세요: 예: Blocks + SO(온도, 압력, 희석제) 또는 Block.ccd + SO(온도, 압력, 희석제, 속도, 각도). 블록 항은 자동으로 감지되어 매 단계에서 모델에 강제로 포함됩니다. 주효과 + 상호작용 + 2차항에 대해 SO(var1, var2,...)를 입력하고, 주효과만을 위해 FO(...)를, 2차 상호작용을 위해 TWI(...)를 사용하세요.",
+  "formulaboxhint": "권장 사항: 수치 인자에 대해 RSM 매크로 용어(FO, TWI, PQ, SO)를 사용하세요. 디자인이 차단된 경우, RSM 매크로 앞에 블록 열을 포함하세요: 예: Blocks + SO(온도, 압력, 희석제) 또는 Block.ccd + SO(온도, 압력, 희석제, 속도, 각도). 블록 항은 자동으로 감지되어 매 단계에서 모델에 강제로 포함됩니다. 주효과 + 상호작용 + 이차항에 대해 SO(var1, var2,...)를 입력하고, 주효과만을 위해 FO(...)를 사용하고, 이원 상호작용을 위해 TWI(...)를 사용하세요.",
   "generateContourPlotChk": "등고선(플롯) 표시",
   "generateRSMPlotChk": "응답 표면(플롯) 표시",
   "generatePathSteepestAscentChk": "능선 분석에서 가장 가파른 상승 경로 표시",
   "steepestHandComputedChk": "자연(비코드) 단위로 수동 계산된 가장 가파른 상승 경로도 표시(항상 첫 원칙에서 계산됨 - 코드화된 데이터로 모델이 적합되지 않았거나 단계별이 활성화된 경우 유용함)",
   "createOptimLmChk": "차단/구조적 항이 절편에 흡수된 최적화 준비 완료 동반 lm 모델 생성",
   "stepwiseSectionLbl": "단계별 모델 선택(선택 사항)",
-  "stepwiseChk": "단계별 모델 선택 활성화(위의 전체 모델을 적합하려면 선택 해제)",
+  "stepwiseChk": "단계별 모델 선택 활성화(위에서 지정한 전체 모델을 적합하려면 선택 해제)",
   "stepwiseMethodLbl": "단계별 방법",
   "stepwiseMethod": "단계별",
-  "stepwiseCriterionLbl": "정보 기준(방법이 Forward 정보 기준, 즉 위에서 선택한 forward_ic일 때만 사용)",
+  "stepwiseCriterionLbl": "정보 기준(방법이 Forward 정보 기준, 즉 위에서 forward_ic가 선택된 경우에만 사용됨)",
   "stepwiseCriterion": "AICc",
   "alphaEnterLbl": "추가할 알파(단계별 및 전진 추가용)",
   "alphaEnter": "0.15",
@@ -21,7 +21,9 @@
   "alphaRemove": "0.15",
   "hierarchyChk": "각 단계에서 계층적 모델 요구(권장 - 효과 유전성 강제)",
   "showStepDetailChk": "선택 절차의 각 단계에 대한 세부정보 표시",
-  "stepwiseNote": "참고: 기본 알파 = 0.15 사용. 전진 정보 기준(forward_ic)의 경우, AICc 또는 BIC가 p-값 임계값 대신 정지 기준으로 사용되어 반복 테스트로 인한 Type-I 오류의 증가를 방지합니다. 계층적 강제는 상호작용 항이 선택되면 모든 구성 주효과도 유지되도록 보장합니다 - 효과 유전성과 일치합니다. 선택 후 축소된 모델은 rsm()으로 다시 적합되어 모든 하류 출력(등고선 플롯, 표면 플롯, 가장 가파른 상승, 정준 분석)이 유효하게 유지됩니다.",
+  "stepwiseNote": "참고: 기본 알파 = 0.15 사용. 전진 정보 기준(forward_ic)의 경우, AICc 또는 BIC가 p-값 임계값을 대체하여 정지 기준으로 사용되며, 반복 테스트로 인한 Type-I 오류의 증가를 방지합니다. 계층적 강제는 상호작용 항이 선택되면 모든 구성 주효과도 유지되도록 보장합니다 - 효과 유전성과 일치합니다. 선택 후 축소된 모델은 rsm()으로 다시 적합되어 모든 하류 출력(등고선 플롯, 표면 플롯, 가장 가파른 상승, 정준 분석)이 유효하게 유지됩니다.",
+  "forceKeepVars": "주효과로 강제로 유지할 변수(선택 사항)",
+  "forceKeepVarsNote": "단계별 선택은 완전히 제약 없이 실행되며, 이 목록이 비어 있는 것처럼 작동합니다. 이후, 여기에서 선택된 변수가 최종 모델에서 누락되면 주효과(선형) 항으로 다시 추가됩니다 - 이차 및 상호작용 항은 자체 장점으로 선택되지 않았기 때문에 추가되지 않습니다. 변수의 주효과가 선택된 모델에 이미 존재하는 경우(직접적으로 유의미하거나 상호작용/이차항 중 하나가 선택되어 계층을 통해 유지된 경우), 이 옵션은 그에 영향을 미치지 않습니다. 위의 수치 RSM 예측기만 선택할 수 있습니다. 단계별 선택이 비활성화된 경우에는 영향을 미치지 않습니다.",
   "showResidualPlotsChk": "rsm 모델의 잔차 플롯 표시",
   "checkShapiroNormalityTestChk": "잔차에 대한 Shapiro 정규성 테스트",
   "checkADNormalityTestChk": "잔차에 대한 Anderson-Darling 정규성 테스트",
@@ -32,6 +34,6 @@
   "help": {
     "title": "모델 수식 빌더가 있는 응답 표면 모델",
     "r_help": "help(rsm, package = rsm)",
-    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t응답 표면 회귀 - 응답 표면 구성 요소가 있는 선형 모델을 적합하고 적절한 분석 및 요약을 생성합니다.\n\t\t\t\t<br/> 수식 빌더에서 SO(var1, var2, var3, ...) 또는 FO(var1, ..) 또는 rsm 패키지의 다른 함수를 입력할 수 있습니다 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 내용은 다음 R 도움말을 참조하세요.\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>단계별 모델 선택</b><br/>\n\t\t\t\t활성화되면 단계별 선택은 중요한 RSM 항의 축소된 하위 집합을 식별합니다. 사용 가능한 방법:<br/>\n\t\t\t\t<b>단계별</b>: alpha-to-enter 및 alpha-to-remove 임계값을 사용하여 전진 및 후진 단계를 결합합니다.<br/>\n\t\t\t\t<b>전진 선택</b>: 빈 모델에서 시작하여 각 단계에서 가장 중요한 항을 추가합니다.<br/>\n\t\t\t\t<b>후진 제거</b>: 전체 모델에서 시작하여 각 단계에서 가장 중요하지 않은 항을 제거합니다.<br/>\n\t\t\t\t<b>전진 정보 기준</b>: p-값 대신 AICc 또는 BIC를 정지 기준으로 사용하여 반복 테스트로 인한 Type-I 오류의 증가를 방지하고 모델 복잡성을 직접적으로 벌점합니다.<br/>\n\t\t\t\t계층적 강제는 상호작용 또는 2차 항이 선택되면 모든 구성 하위 항도 유지되도록 보장합니다(효과 유전성).<br/>\n\t\t\t\t선택 후 축소된 수식은 rsm()을 사용하여 다시 적합되어 등고선 플롯, 표면 플롯, 가장 가파른 상승 및 정준 분석이 모두 유효하게 유지됩니다.<br/>\n\t\t\t\thelp(step, package = stats)<br/>\n\t\t\t\thelp(stepAIC, package = MASS)<br/>\n\n\t\t\t"
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\t응답 표면 회귀 - 응답 표면 구성 요소가 있는 선형 모델을 적합하고 적절한 분석 및 요약을 생성합니다.\n\t\t\t\t<br/> 수식 빌더에서 SO(var1, var2, var3, ...) 또는 FO(var1, ..) 또는 rsm 패키지의 다른 함수를 입력할 수 있습니다 - help(SO, package =rsm)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 내용은 다음 R 도움말을 참조하세요.\n\t\t\t\t<br/>\n\t\t\t\thelp(rsm, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(SO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(FO, package = rsm)\n\t\t\t\t<br/>\n\t\t\t\thelp(contour, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(persp, package = graphics) \n\t\t\t\t<br/>\n\t\t\t\thelp(steepest, package = rsm)  \n\t\t\t\t<br/>\n\t\t\t\thelp(shapiro.test, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\thelp(qqnorm, package = stats)  \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>단계별 모델 선택</b><br/>\n\t\t\t\t활성화되면 단계별 선택은 유의미한 RSM 항의 축소된 하위 집합을 식별합니다. 사용 가능한 방법:<br/>\n\t\t\t\t<b>단계별</b>: alpha-to-enter 및 alpha-to-remove 임계값을 사용하여 전진 및 후진 단계를 결합합니다.<br/>\n\t\t\t\t<b>전진 선택</b>: 빈 모델에서 시작하여 각 단계에서 가장 유의미한 항을 추가합니다.<br/>\n\t\t\t\t<b>후진 제거</b>: 전체 모델에서 시작하여 각 단계에서 가장 유의미하지 않은 항을 제거합니다.<br/>\n\t\t\t\t<b>전진 정보 기준</b>: p-값 대신 AICc 또는 BIC를 정지 기준으로 사용하여 반복 테스트로 인한 Type-I 오류의 증가를 방지하고 모델 복잡성을 직접적으로 패널티합니다.<br/>\n\t\t\t\t계층적 강제는 상호작용 또는 이차 항이 선택되면 모든 구성 하위 항도 유지되도록 보장합니다(효과 유전성).<br/>\n\t\t\t\t선택 후 축소된 수식은 rsm()을 사용하여 다시 적합되어 등고선 플롯, 표면 플롯, 가장 가파른 상승 및 정준 분석이 모두 유효하게 유지됩니다.<br/>\n\t\t\t\thelp(step, package = stats)<br/>\n\t\t\t\thelp(stepAIC, package = MASS)<br/>\n\n\t\t\t"
   }
 }

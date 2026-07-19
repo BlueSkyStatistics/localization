@@ -1,0 +1,26 @@
+{
+  "title": "彈性網路",
+  "navigation": "彈性網路",
+  "modellabel": "輸入模型名稱",
+  "depvarlabel": "因變量",
+  "independentlabel": "自變量",
+  "offsetlabel": "偏移量",
+  "weightslabel": "權重",
+  "alphalabel": "混合參數（alpha），0=脊迴歸，1=套索迴歸",
+  "cvmeaslabel": "交叉驗證度量",
+  "nfoldslabel": "交叉驗證的折數（最大=樣本大小）",
+  "seedlabel": "設置隨機種子",
+  "outputallestlabel": "輸出包含序列中每個lambda的所有模型的數據集",
+  "outputdatasetlabel": "輸出數據集名稱",
+  "familylabel": "選擇一個家庭和鏈接函數",
+  "thetalabel": "負二項theta參數（theta>0，若選擇負二項家庭則必需，較小的值=更多的離散，較大的值=較少的離散）",
+  "varpowerlabel": "Tweedie方差指數（若選擇tweedie家庭則必需）",
+  "linkpowerlabel": "Tweedie鏈接指數（若選擇tweedie家庭則必需）",
+  "expcoeflabel": "指數化係數",
+  "onesetablelabel": "在最小lambda + 1 SE處創建非零係數的表格",
+  "help": {
+    "title": "彈性網路",
+    "r_help": "help(cv.glmnet, package ='glmnet')",
+    "body": "\n此對話框通過懲罰最大似然擬合廣義線性和類似模型。正則化路徑是針對一組值（在對數尺度上）計算的套索或彈性網懲罰的。\n當參數的數量相對於樣本大小（或結果事件的數量）較大時，懲罰回歸是有用的。這是一個良好的解決方案，解決了偏差-方差權衡，其中一方願意犧牲一些偏差以換取較少的預測變異性。\nalpha參數控制脊迴歸（alpha=0）和套索迴歸（alpha=1）之間的懲罰混合。調整參數（lambda）控制懲罰的整體強度。最佳的lambda值是通過k折交叉驗證選擇的。\n</br></br>\n脊懲罰將相關預測變量的係數縮小到彼此之間，而套索則傾向於選擇其中一個並丟棄其他。因此，套索對於變量選擇目的來說是好的。\n</br></br>\n此實現中的理論和算法在Friedman、Hastie和Tibshirani（2010）、Simon等（2011）、Tibshirani等（2012）和Simon、Friedman和Hastie（2013）中有描述。\n</br></br>\n對於模型中使用的任何變量，缺失值的觀察會自動被刪除。在模型擬合之前，自變量會自動標準化。係數始終以原始尺度返回。生成的圖顯示了整個lambda序列中的係數值和模型標準值。\n\n<br/><br/>\n\n<b>因變量：</b></br>\n模型的結果變量（必需）。可以是數值型或因子型。</br></br>\n\n<b>自變量：</b></br>\n指定模型的自變量。可以是數值型、因子型、序數型或字符型。（必需）</br></br>\n\n<b>偏移量：</b></br>\n指定可選的偏移變量。必須是數值型。這在模型中納入了一個具有固定值的自變量。此變量不會估計係數，並被視為1。</br></br>\n\n<b>權重：</b></br>\n指定可選的權重變量。必須是數值型。這指定了在擬合過程中使用的正“先驗權重”。</br></br>\n\n<b>混合參數（alpha）：</b></br>\n這指定了懲罰應該是脊（alpha=0）與套索（alpha=1）懲罰的比例。alpha的一個用途是數值穩定性；例如，彈性網在alpha=1−epsilon（某個小的epsilon>0）時的表現與套索非常相似，但消除了由極端相關性引起的任何退化和異常行為。默認值為1（套索）。</br></br>\n\n<b>交叉驗證度量：</b></br>\n指定用於評估模型性能的統計量。選項有：\n<ul>\n<li>默認：使用每種模型類型的默認度量；如果不確定，這是一個不錯的選擇</li>\n<li>mse：均方誤差 - 預測值和觀察值之間的平均平方差。對於二項數據，這相當於Brier分數。</li>\n<li>mae：平均絕對誤差 - 預測值和觀察值之間的絕對差的平均值</li>\n<li>偏差：測量擬合模型的似然與飽和模型（每個觀察一個參數）的似然之間的差異</li>\n<li>類別：錯誤分類率；僅適用於二項和多項</li>\n<li>auc：接收者操作特徵（ROC）曲線下的面積；僅適用於二項模型</li>\n</ul>\n\n<b>交叉驗證的折數：</b></br>\n這指定數據集將被劃分為交叉驗證的分區數。默認值為10。（最小=3，最大=樣本大小）</br></br>\n\n<b>設置隨機種子：</b></br>\n指定用於交叉驗證的隨機種子。在模型運行中使用相同的種子可實現模型的可重複性。</br></br>\n\n<b>選擇一個家庭和鏈接函數：</b></br>\n這指定了因變量的分佈家庭和自變量的線性函數與均值響應之間的關係的鏈接函數。</br></br>\n\n<b>負二項theta參數：</b></br>\n對於負二項家庭，這定義了離散參數。這通常有助於解釋計數數據中的過度離散，其中方差大於均值。方差為mu + mu^2/theta。假設theta是一個已知值，並且不進行估計。如果選擇負二項家庭，則必需。</br></br>\n\nTweedie分佈可以產生任何冪方差函數和任何冪鏈接函數。高斯、泊松、伽馬和逆高斯是特殊情況。方差(mu) = mu^(方差指數)，對於非零值的“鏈接指數”或log(mu)當方差指數=0。\n每個“方差指數”的值對應於特定類型的響應分佈。值0、1、2和3分別對應於正態分佈、泊松分佈、伽馬分佈和逆高斯分佈。\n有趣的Tweedie家庭出現在“方差指數”介於1和2之間。對於這些GLM，響應分佈在零處有質量（即，它有確切的零），但在正實數上是連續的（Smyth，1996；Hasan等，2012）。\n因此，只有當響應觀察是連續且正數（除了確切的零）時，“方差指數”應選擇介於1和2之間。只有當響應觀察是連續且嚴格正數時，“方差指數”應選擇大於或等於2。\n對於“方差指數”介於0和1之間，沒有理論上的Tweedie GLM（Jorgensen 1987）。Tweedie函數將適用於這些值，但家庭應以準似然的方式解釋。\n</br></br>\n\n<b>Tweedie方差指數：</b></br>\n方差指數函數的指數。對於tweedie家庭是必需的。</br></br>\n\n<b>Tweedie鏈接指數：</b></br>\n鏈接函數的指數。對於tweedie家庭是必需的。</br></br>\n\n<b>指數化係數：</b></br>\n是否計算exp（係數）。對於對數和logit鏈接函數（例如，邏輯模型中的比值比，泊松模型中的發生率比）很有用。</br></br>\n\n<b>輸出選項</b></br></br>\n<b>輸出包含序列中每個lambda的所有模型的數據集：</b></br>\n指定是否創建一個包含每個lambda值模型的數據集。該數據集將按增長的lambda值排序，其中最小的lambda模型基本上是未懲罰的模型。該數據集將包含一個指示變量，指示該模型是否（=1）或不（=0）與最佳lambda值的1個標準誤差內的lambda值相關。在某種意義上，所有在1 SE內的模型在統計上是等效的，並且會提供類似的性能。</br></br>\n\n<b>輸出數據集名稱：</b></br>\n包含整個lambda序列的模型的輸出數據集的名稱。</br></br>\n\n<b>在最小lambda + 1 SE處創建非零係數的表格：</b></br>\n這指定是否生成一個係數估計的表格，該表格正好在最佳lambda的1個標準誤差處。\n\n</br></br>\n參考文獻：</br></br>\n\nHastie等。彈性網的介紹<a href=\"https://glmnet.stanford.edu/articles/glmnet.html\">鏈接</a></br></br>\n\nFriedman，Jerome，Trevor Hastie和Robert Tibshirani。2010。“通過坐標下降的廣義線性模型的正則化路徑。”統計軟件期刊，文章33（1）：1–22。<a href=\"https://doi.org/10.18637/jss.v033.i01\">鏈接</a></br></br>\n\nSimon，Noah，Jerome Friedman和Trevor Hastie。2013。“一種分塊下降算法，用於組懲罰的多響應和多項回歸。”<a href=\"https://doi.org/10.48550/arXiv.1311.6529\">鏈接</a></br></br>\n\nSimon，Noah，Jerome Friedman，Trevor Hastie和Robert Tibshirani。2011。“通過坐標下降的Cox比例風險模型的正則化路徑。”統計軟件期刊，文章39（5）：1–13。<a href=\"https://doi.org/10.18637/jss.v039.i05\">鏈接</a></br></br>\n\nTibshirani，Robert，Jacob Bien，Jerome Friedman，Trevor Hastie，Noah Simon，Jonathan Taylor和Ryan Tibshirani。2012。“在套索類問題中丟棄預測變量的強規則。”皇家統計學會：B系列（統計方法論）74（2）：245–66。<a href=\"https://doi.org/10.1111/j.1467-9868.2011.01004.x\">鏈接</a></br></br>\n\n<b>所需的R包：</b> glmnet，MASS，statmod，broom，dplyr\n\t\t\t"
+  }
+}

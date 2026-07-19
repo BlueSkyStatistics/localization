@@ -22,6 +22,8 @@
     "hierarchyChk": "Require hierarchical model at each step (recommended — enforces effect heredity)",
     "showStepDetailChk": "Show details for each step of the selection procedure",
     "stepwiseNote": "Note: default alpha = 0.15 used. For Forward information criteria (forward_ic), AICc or BIC replaces the p-value threshold as the stopping criterion, which avoids inflated Type-I error from repeated testing. Hierarchical enforcement ensures that if an interaction term is selected, all its constituent main effects are also retained — consistent with effect heredity. After selection the reduced model is refit with rsm() so all downstream outputs (contour plots, surface plots, steepest ascent, canonical analysis) remain valid.",
+    "forceKeepVars": "Force-keep variables as main effects (optional)",
+    "forceKeepVarsNote": "Stepwise selection runs completely unconstrained, exactly as if this list were empty. Afterward, if any variable selected here is missing from the final model, it is added back as a main effect (linear) term only — its quadratic and interaction terms are not added, since they were not selected on their own merits. If a variable's main effect is already present in the selected model (whether directly significant or retained via hierarchy because one of its interactions/quadratic was selected), this option has no effect on it. Only numeric RSM predictors already present in the formula above can be selected. Has no effect when stepwise selection is disabled.",
     "showResidualPlotsChk": "Show residual plots for the rsm model",
     "checkShapiroNormalityTestChk": "Shapiro normality test for residuals",
     "checkADNormalityTestChk": "Anderson-Darling normality test for residuals",

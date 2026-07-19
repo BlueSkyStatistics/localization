@@ -1,0 +1,14 @@
+{
+  "title": "Alle paarweisen Kontraste",
+  "navigation": "Alle paarweisen Kontraste",
+  "notelabel1": "HINWEIS: Sie müssen Zugriff auf den Datensatz haben, der das Modell erstellt hat.",
+  "notelabel2": "Unterstützte Modelle: lineare Modelle (lm), verallgemeinerte lineare Modelle (glm), Cox-Proportional-Hazards (coxph), verallgemeinerte Schätzgleichung (glmgee), Quantilsregression (rq), lineare gemischte Modelle (lmerModLmerTest)",
+  "modelselectorlabel": "Modellnamen auswählen",
+  "plotvarslabel": "Variablen für alle paarweisen Kontraste",
+  "multadjlabel": "Anpassung für multiple Vergleiche",
+  "help": {
+    "title": "Alle paarweisen Kontraste",
+    "r_help": "help(emmeans, package = 'emmeans')",
+    "body": "\nDies erstellt eine Tabelle aller paarweisen Niveauvergleiche für kategoriale Prädiktoren in einem Modell. Alle Richtungen werden ebenfalls bereitgestellt (z. B. Niveau A im Vergleich zu Niveau B und Niveau B im Vergleich zu Niveau A). Schätzungen werden auf der Skala der Ergebnisantwort bereitgestellt (z. B. Unterschiede für lineare Modelle, Hazard-Ratios für Cox-Modelle, Odds-Ratios für logistische Modelle, Ratenverhältnisse für Poisson-Modelle). \nOptionale Anpassungen für multiple Vergleiche für jeden kategorialen Prädiktor können angegeben werden. Derzeit werden Modelle der Klasse lm (lineare Modelle), glm (verallgemeinerte lineare Modelle, \nzu denen logistische und Poisson-Modelle gehören), coxph (Cox-Proportional-Hazards), glmgee (verallgemeinerte Schätzgleichung), rq (Quantilsregression) und lmerModLmerTest (lineare gemischte Modelle) unterstützt.\n<br/><br/>\n<b>Modellnamen auswählen:</b> Wählen Sie den Namen des Modells, wie er angegeben wurde, als das Modell angepasst wurde. Dies ist ein erforderliches Feld.\n<br/><br/>\n<b>Variablen für alle paarweisen Kontraste:</b> Geben Sie an, für welche kategorialen Variablen paarweise Niveauvergleiche durchgeführt werden sollen. Diese müssen als Prädiktoren beim Anpassen des Modells enthalten gewesen sein.\nVariablen, die als Zeichenfolge, Faktor, ordinal, logisch oder numerische Dummy-Variablen eingegeben werden, können verwendet werden. Dies ist ein erforderliches Feld.\n<br/><br/>\n<b>Anpassung für multiple Vergleiche:</b> Geben Sie die Anpassung für multiple Vergleiche an. Optionen sind keine (keine Anpassung), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (falsche Entdeckungsrate), \nBH (Benjamini-Hochberg) und BY (Benjamini-Yekutieli). Hinweise werden in der Ausgabe bereitgestellt, welche Anpassung für die Konfidenzintervalle und p-Werte vorgenommen wurde.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> emmeans\n"
+  }
+}

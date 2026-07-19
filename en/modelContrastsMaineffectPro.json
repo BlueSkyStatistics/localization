@@ -1,0 +1,14 @@
+{
+    "title": "All Pairwise Contrasts",
+    "navigation": "All Pairwise Contrasts",
+    "notelabel1": "NOTE: You must have access to the dataset that created the model.",
+    "notelabel2": "Models supported: linear models (lm) , generalized linear models (glm), Cox proportional hazards (coxph), generalized estimating equation (glmgee), quantile regression (rq), linear mixed models (lmerModLmerTest)",
+    "modelselectorlabel": "Select Model Name",
+    "plotvarslabel": "Variables for all pairwise contrasts",
+    "multadjlabel": "Multiple comparison adjustment",
+    "help": {
+        "title": "All Pairwise Contrasts",
+        "r_help": "help(emmeans, package = 'emmeans')",
+        "body": "\nThis creates a table of all pairwise level comparisons for categorical predictors in a model.  All directions are also provided (e.g. level A relative to level B, and level B \nrelative to level A).  Estimates are provided on the outcome response scale (e.g. differences for linear models, hazard ratios for Cox models, odds ratios for logistic models, rate ratios for Poisson models).  \nOptional multiple comparison adjustments for each categorical predictor can be specified.  Currently, models of class lm (linear models), glm (generalized linear models, \nwhich includes logistic and Poisson), coxph (Cox proportional hazards), glmgee (generalized estimation equation), rq (quantile regression), and lmerModLmerTest (linear mixed models) are supported.\n<br/><br/>\n<b>Select Model Name:</b> Choose the name of the model as specified when the model was fit.  This is a required field.\n<br/><br/>\n<b>Variables for all pairwise contrasts:</b> Specify which categorical variables to do pairwise level comparisons for.  These must have been included as predictors when the model was fit.\nVariables enterered as character, factor, ordinal, logical, or numeric dummy variables can be used.  This is a required field.\n<br/><br/>\n<b>Multiple comparison adjustment:</b> Specify the multiple comparison adjustment.  Options are none (no adjustment), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (false discovery rate), \nBH (Benjamini-Hochberg), and BY (Benjamini-Yekutieli).  Notes are provided in the output as to which multiple comparison adjustment was done for the confidence intervals and p-values.\n<br/><br/>\n<b>Required R Packages:</b> emmeans\n"
+    }
+}

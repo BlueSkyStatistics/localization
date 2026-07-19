@@ -1,0 +1,27 @@
+{
+  "title": "Graphique de Prédiction des Moyennes Marginales Estimées (emmeans)",
+  "navigation": "Graphique de Prédiction des Emmeans",
+  "labelModelSel": "Sélectionnez le modèle ajusté",
+  "modelSelection": "Sélectionner le modèle",
+  "labelNumericVars": "Variables numériques (faites glisser jusqu'à 5 ; laissez une case vide pour l'ignorer)",
+  "numVar1": "Variable numérique 1",
+  "numVar2": "Variable numérique 2",
+  "numVar3": "Variable numérique 3",
+  "numVar4": "Variable numérique 4",
+  "numVar5": "Variable numérique 5",
+  "atSpecLabel": "Optionnel : tapez des valeurs / séquence pour cette variable, par ex. seq(1, 5, par = 1) ou tapez des points individuels comme 10, 12, 25 Laissez vide pour générer automatiquement environ 10 points également espacés du min au max.",
+  "labelGroupVar": "Variables de regroupement (catégorielles)",
+  "groupVar": "Variable(s) de regroupement",
+  "showModelEquationChk": "Afficher l'équation du modèle",
+  "showEMMTableChk": "Afficher le tableau des Moyennes Marginales Estimées (EMM)",
+  "labelOptions": "Options de tracé",
+  "confLevel": "Niveau de confiance",
+  "showCI": "Afficher la bande de confiance (ruban)",
+  "plotTitle": "Titre du graphique (laisser vide pour par défaut)",
+  "xAxisLabel": "Étiquette de l'axe X (laisser vide pour par défaut)",
+  "yAxisLabel": "Étiquette de l'axe Y (laisser vide pour par défaut)",
+  "help": {
+    "title": "Graphique de Prédiction des Moyennes Marginales Estimées (emmeans)",
+    "body": "\n                <b>Description</b><br/><br/>\n                Calcule les moyennes marginales estimées (valeurs prédites) à partir d'un\n                modèle de régression ajusté en utilisant le package <code>emmeans</code>,\n                et visualise les prédictions avec <code>ggplot2</code>.<br/><br/>\n\n                <b>Comment utiliser</b>\n                <ol>\n                  <li>Sélectionnez un modèle ajusté précédemment (par ex. d'une régression linéaire).</li>\n                  <li>Faites glisser jusqu'à 5 variables numériques dans les cases \"Variables numériques\".\n                      Les cases vides sont ignorées.</li>\n                  <li>Pour chaque variable numérique, vous pouvez optionnellement taper un ensemble\n                      de valeurs personnalisées ou une expression R <code>seq()</code> dans le\n                      champ de texte en dessous de sa case (par ex. <code>seq(22, 42, par = 1)</code>\n                      ou <code>1, 2, 3</code>). Si laissé vide, environ 10 valeurs également\n                      espacées couvrant le min/max observé de la variable sont\n                      générées automatiquement.</li>\n                  <li>Faites glisser une ou plusieurs variables catégorielles dans la case \"Variable(s)\n                      de regroupement\". La première variable de regroupement est utilisée pour\n                      colorer/remplir les lignes et rubans tracés. Si une seconde\n                      variable de regroupement est fournie, le graphique est en outre\n                      facetté par cette variable (et une troisième, si fournie, facette\n                      dans l'autre direction). Toute autre variable de regroupement est\n                      combinée dans la grille de facettes.</li>\n                  <li>Définissez le niveau de confiance (par défaut 0.95).</li>\n                  <li>Optionnellement, cochez \"Afficher la bande de confiance\" pour ajouter un ruban pour\n                      l'intervalle de confiance.</li>\n                  <li>Optionnellement, remplacez le titre du graphique et les étiquettes des axes.</li>\n                </ol>\n\n                <b>Remarques</b><br/>\n                La première variable numérique fournie devient l'axe des x du graphique.\n                Toute variable numérique supplémentaire (2-5) est incluse dans la\n                grille <code>emmeans</code> et est moyennée (ou maintenue à ses\n                valeurs spécifiées/générées automatiquement) mais n'est pas tracée séparément.<br/><br/>\n\n                Toutes les variables numériques et de regroupement sélectionnées doivent être des variables\n                qui apparaissent dans la formule du modèle ajusté. Si une variable sélectionnée\n                ne fait pas partie du modèle, une erreur est levée et la\n                liste des variables de modèle valides est imprimée.\n            "
+  }
+}

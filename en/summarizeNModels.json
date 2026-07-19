@@ -3,9 +3,11 @@
     "navigation": "Summarize N Models",
     "label1": "Summarize N models.",
     "label2": "Select models of the following classes (R class is in parenthesis below)",
-    "label3": "Linear models (lm), Generalized linear model (glm), Linear mixed effects model (lme), Ordered Logistic or Probit Regression (polr), Proportional hazard model (coxph), Linear model using generalized least squares (gls), Survival regression model (survreg), Local Polynomial Regression Fitting (loess), Non-linear least square model (nls), Multinomial Log-Linear Models (multinom)",
+    "label3": "Linear models (lm), Generalized linear model (glm), Linear mixed effects model (lme), Ordered Logistic or Probit Regression (polr), Proportional hazard model (coxph), Linear model using generalized least squares (gls), Survival regression model (survreg), Local Polynomial Regression Fitting (loess), Non-linear least square model (nls), Multinomial Log-Linear Models (multinom), Zero-Inflated Count Model (zeroinfl), Hurdle Count Model (hurdle)",
     "label4": "**NOTE: Models created from Model Tuning  (class train) are not supported",
     "modelselector1": "Select one or more models to compare:",
+    "zeroCheck": "Also compare observed vs. model-predicted zero rates (applies only to Poisson / Negative Binomial / Zero-Inflated / Hurdle count models among those selected; other model types are skipped)",
+    "vuongCheck": "Run a Vuong test comparing exactly two count models (e.g. Negative Binomial vs. Zero-Inflated/Hurdle) - requires exactly 2 models selected, both Poisson / Negative Binomial / Zero-Inflated / Hurdle",
     "help": {
         "title": "Summarize N Models",
         "r_help": "help(anova,package='stats')",
