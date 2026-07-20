@@ -1,0 +1,27 @@
+{
+    "title": "Estimated Marginal Means (emmeans) Prediction Plot",
+    "navigation": "Emmeans Prediction Plot",
+    "labelModelSel": "Select the fitted model",
+    "modelSelection": "Select model",
+    "labelNumericVars": "Numeric variables (drag up to 5; leave a box empty to ignore it)",
+    "numVar1": "Numeric variable 1",
+    "numVar2": "Numeric variable 2",
+    "numVar3": "Numeric variable 3",
+    "numVar4": "Numeric variable 4",
+    "numVar5": "Numeric variable 5",
+    "atSpecLabel": "Optional: type values / sequence for this variable, e.g. seq(1, 5, by = 1) or type individual points as 10, 12, 25 Leave blank to auto-generate about 10 evenly spaced points from min to max.",
+    "labelGroupVar": "Grouping (categorical) variables",
+    "groupVar": "Grouping variable(s)",
+    "showModelEquationChk": "Show model equation",
+    "showEMMTableChk": "Show Estimated Marginal Means (EMM) table",
+    "labelOptions": "Plot options",
+    "confLevel": "Confidence level",
+    "showCI": "Show confidence band (ribbon)",
+    "plotTitle": "Plot title (leave blank for default)",
+    "xAxisLabel": "X-axis label (leave blank for default)",
+    "yAxisLabel": "Y-axis label (leave blank for default)",
+    "help": {
+        "title": "Estimated Marginal Means (emmeans) Prediction Plot",
+        "body": "\n                <b>Description</b><br/><br/>\n                Computes estimated marginal means (predicted values) from a\n                fitted regression model using the <code>emmeans</code> package,\n                and visualizes the predictions with <code>ggplot2</code>.<br/><br/>\n\n                <b>How to use</b>\n                <ol>\n                  <li>Select a previously fitted model (e.g. from Linear Regression).</li>\n                  <li>Drag up to 5 numeric variables into the \"Numeric variables\" boxes.\n                      Empty boxes are ignored.</li>\n                  <li>For each numeric variable, you may optionally type a custom\n                      set of values or an R <code>seq()</code> expression in the\n                      text field below its box (e.g. <code>seq(22, 42, by = 1)</code>\n                      or <code>1, 2, 3</code>). If left blank, about 10 evenly\n                      spaced values spanning the variable's observed min/max are\n                      generated automatically.</li>\n                  <li>Drag one or more categorical variables into the \"Grouping\n                      variable(s)\" box. The first grouping variable is used to\n                      color/fill the plotted lines and ribbons. If a second\n                      grouping variable is supplied, the plot is additionally\n                      faceted by that variable (and a third, if supplied, facets\n                      the other direction). Any further grouping variables are\n                      combined into the facet grid.</li>\n                  <li>Set the confidence level (default 0.95).</li>\n                  <li>Optionally check \"Show confidence band\" to add a ribbon for\n                      the confidence interval.</li>\n                  <li>Optionally override the plot title and axis labels.</li>\n                </ol>\n\n                <b>Notes</b><br/>\n                The first numeric variable supplied becomes the x-axis of the plot.\n                Any additional numeric variables (2-5) are included in the\n                <code>emmeans</code> grid and averaged over (or held at their\n                specified/auto-generated values) but are not separately plotted.<br/><br/>\n\n                All numeric and grouping variables selected must be variables\n                that appear in the fitted model's formula. If any selected\n                variable is not part of the model, an error is raised and the\n                list of valid model variables is printed.\n            "
+    }
+}

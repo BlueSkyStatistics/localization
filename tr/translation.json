@@ -20,6 +20,7 @@
       "redo": "Yinele",
       "find": "Bul",
       "findNext": "Sonrakini bul",
+      "findPrevious": "Öncekini bul",
       "findReplace": "Bul ve değiştir",
       "comment": "Yorum",
       "uncomment": "Yorumdan çıkar",
@@ -51,7 +52,11 @@
     "add": "Yeni bir veri kümesi oluştur",
     "refresh": "Veri kümesini yenile",
     "undo": "Değişiklikleri geri al",
-    "redo": "Değişiklikleri yinele"
+    "redo": "Değişiklikleri yinele",
+    "findSettings": "Arama ayarları",
+    "findSettingsTitle": "Arama Ayarları",
+    "findSettingsEmpty": "Henüz kullanılabilir arama ayarı yok.",
+    "findSettingsCloseBtn": "Kapat"
   },
   "REditrOutputContext": {
     "execute": "Çalıştır",
@@ -103,5 +108,17 @@
   "overwritescript2": "{{filepath}}'i açmak açık dosyayı üzerine yazacaktır.\n\nDevam etmek için \"Üzerine Yaz\" seçeneğini seçin veya mevcut değişikliklerinizi korumak için \"İptal\" seçeneğini seçin.",
   "overwritedataset": "Veri kümesi {{dataset_name}} zaten grid'de açık. Üzerine yazmak istiyor musunuz?",
   "duplicatecolumnTitle": "Yinelenen sütun adı",
-  "duplicatecolumnMessage": "Sütun adı {{changedvalue}} zaten {{dataset_name}} veri kümesinde mevcut. Lütfen farklı bir sütun adı kullanın."
+  "duplicatecolumnMessage": "Sütun adı {{changedvalue}} zaten {{dataset_name}} veri kümesinde mevcut. Lütfen farklı bir sütun adı kullanın.",
+
+  "errorPrefix": "Hata:",
+  "nameKind_variable": "Değişken",
+  "nameKind_dataset": "Veri kümesi",
+  "rname_blank": "{{kind}} adı boş olamaz",
+  "rname_tooLong": "{{kind}} adı 64 karakteri aşamaz.",
+  "rname_invalidChars": "Harfler, rakamlar, '.' veya '_' kullanın. Bir harfle başlamalıdır (veya rakamla devam etmeyen bir '.').",
+  "rname_reserved": "'{{name}}' ayrılmış bir R anahtar sözcüğüdür. Farklı bir ad seçin.",
+  "rname_dotArgs": "'{{name}}' R tarafından ayrılmıştır ('...' / '..1' argüman biçimleri). Farklı bir ad seçin.",
+  "invalidVariableNameTitle": "Geçersiz değişken adı",
+  "datasetNameAlreadyOpen": "Bu ada sahip bir veri kümesi zaten açık. Farklı bir ad girin.",
+  "variableNameAlreadyExists": "Bu veri kümesinde bu ada sahip bir değişken zaten var. Farklı bir ad girin."
 }

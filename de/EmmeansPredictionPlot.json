@@ -1,0 +1,27 @@
+{
+  "title": "Geschätzte Randmittelwerte (emmeans) Vorhersage-Diagramm",
+  "navigation": "Emmeans Vorhersage-Diagramm",
+  "labelModelSel": "Wählen Sie das angepasste Modell aus",
+  "modelSelection": "Modell auswählen",
+  "labelNumericVars": "Numerische Variablen (bis zu 5 ziehen; ein Feld leer lassen, um es zu ignorieren)",
+  "numVar1": "Numerische Variable 1",
+  "numVar2": "Numerische Variable 2",
+  "numVar3": "Numerische Variable 3",
+  "numVar4": "Numerische Variable 4",
+  "numVar5": "Numerische Variable 5",
+  "atSpecLabel": "Optional: Werte / Sequenz für diese Variable eingeben, z.B. seq(1, 5, by = 1) oder einzelne Punkte als 10, 12, 25 eingeben. Leer lassen, um etwa 10 gleichmäßig verteilte Punkte von min bis max automatisch zu generieren.",
+  "labelGroupVar": "Gruppierungs- (kategorische) Variablen",
+  "groupVar": "Gruppierungsvariable(n)",
+  "showModelEquationChk": "Modellgleichung anzeigen",
+  "showEMMTableChk": "Tabelle der geschätzten Randmittelwerte (EMM) anzeigen",
+  "labelOptions": "Diagrammoptionen",
+  "confLevel": "Konfidenzniveau",
+  "showCI": "Konfidenzband (Bänder) anzeigen",
+  "plotTitle": "Diagrammtitel (leer lassen für Standard)",
+  "xAxisLabel": "X-Achsenbeschriftung (leer lassen für Standard)",
+  "yAxisLabel": "Y-Achsenbeschriftung (leer lassen für Standard)",
+  "help": {
+    "title": "Geschätzte Randmittelwerte (emmeans) Vorhersage-Diagramm",
+    "body": "\n                <b>Beschreibung</b><br/><br/>\n                Berechnet geschätzte Randmittelwerte (vorhergesagte Werte) aus einem\n                angepassten Regressionsmodell unter Verwendung des <code>emmeans</code> Pakets,\n                und visualisiert die Vorhersagen mit <code>ggplot2</code>.<br/><br/>\n\n                <b>So verwenden Sie es</b>\n                <ol>\n                  <li>Wählen Sie ein zuvor angepasstes Modell aus (z.B. aus der linearen Regression).</li>\n                  <li>Ziehen Sie bis zu 5 numerische Variablen in die Kästchen \"Numerische Variablen\".\n                      Leere Kästchen werden ignoriert.</li>\n                  <li>Für jede numerische Variable können Sie optional eine benutzerdefinierte\n                      Menge von Werten oder einen R <code>seq()</code> Ausdruck im\n                      Textfeld unter ihrem Kästchen eingeben (z.B. <code>seq(22, 42, by = 1)</code>\n                      oder <code>1, 2, 3</code>). Wenn es leer gelassen wird, werden etwa 10 gleichmäßig\n                      verteilte Werte, die das beobachtete min/max der Variablen abdecken,\n                      automatisch generiert.</li>\n                  <li>Ziehen Sie eine oder mehrere kategoriale Variablen in das Kästchen \"Gruppierungs\n                      variable(n)\". Die erste Gruppierungsvariable wird verwendet, um\n                      die gezeichneten Linien und Bänder zu färben/füllen. Wenn eine zweite\n                      Gruppierungsvariable angegeben wird, wird das Diagramm zusätzlich\n                      nach dieser Variablen facettiert (und eine dritte, wenn angegeben, facettiert\n                      in die andere Richtung). Alle weiteren Gruppierungsvariablen werden\n                      in das Facettengitter kombiniert.</li>\n                  <li>Setzen Sie das Konfidenzniveau (Standard 0.95).</li>\n                  <li>Optional \"Konfidenzband anzeigen\" aktivieren, um ein Band für\n                      das Konfidenzintervall hinzuzufügen.</li>\n                  <li>Optional den Diagrammtitel und die Achsenbeschriftungen überschreiben.</li>\n                </ol>\n\n                <b>Hinweise</b><br/>\n                Die erste angegebene numerische Variable wird zur x-Achse des Diagramms.\n                Alle zusätzlichen numerischen Variablen (2-5) werden in das\n                <code>emmeans</code> Gitter aufgenommen und über (oder auf ihren\n                angegebenen/automatisch generierten Werten) gemittelt, werden jedoch nicht separat gezeichnet.<br/><br/>\n\n                Alle ausgewählten numerischen und Gruppierungsvariablen müssen Variablen\n                sein, die in der Formel des angepassten Modells erscheinen. Wenn eine ausgewählte\n                Variable nicht Teil des Modells ist, wird ein Fehler ausgelöst und die\n                Liste der gültigen Modellvariablen wird ausgegeben.\n            "
+  }
+}

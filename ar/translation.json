@@ -20,6 +20,7 @@
       "redo": "إعادة",
       "find": "بحث",
       "findNext": "البحث التالي",
+      "findPrevious": "البحث السابق",
       "findReplace": "البحث والاستبدال",
       "comment": "تعليق",
       "uncomment": "إلغاء تعليق",
@@ -51,7 +52,11 @@
     "add": "إنشاء مجموعة بيانات جديدة",
     "refresh": "تحديث مجموعة البيانات",
     "undo": "تراجع عن التغييرات",
-    "redo": "إعادة التغييرات"
+    "redo": "إعادة التغييرات",
+    "findSettings": "إعدادات البحث",
+    "findSettingsTitle": "إعدادات البحث",
+    "findSettingsEmpty": "لا تتوفر إعدادات بحث بعد.",
+    "findSettingsCloseBtn": "إغلاق"
   },
   "REditrOutputContext": {
     "execute": "تنفيذ",
@@ -103,5 +108,17 @@
   "overwritescript2": "فتح {{filepath}} سيؤدي إلى الكتابة فوق الملف المفتوح.\n\nاختر \"استبدال\" للمتابعة، أو \"إلغاء\" للاحتفاظ بالتغييرات الحالية.",
   "overwritedataset": "مجموعة البيانات {{dataset_name}} مفتوحة بالفعل في الشبكة. هل تريد الكتابة فوقها؟",
   "duplicatecolumnTitle": "اسم العمود المكرر",
-  "duplicatecolumnMessage": "اسم العمود {{changedvalue}} موجود بالفعل في مجموعة البيانات {{dataset_name}}. يرجى استخدام اسم عمود مختلف."
+  "duplicatecolumnMessage": "اسم العمود {{changedvalue}} موجود بالفعل في مجموعة البيانات {{dataset_name}}. يرجى استخدام اسم عمود مختلف.",
+
+  "errorPrefix": "خطأ:",
+  "nameKind_variable": "متغير",
+  "nameKind_dataset": "مجموعة البيانات",
+  "rname_blank": "لا يمكن أن يكون اسم {{kind}} فارغًا",
+  "rname_tooLong": "لا يمكن أن يتجاوز اسم {{kind}} 64 حرفًا.",
+  "rname_invalidChars": "استخدم الأحرف والأرقام و'.' أو '_'. يجب أن يبدأ بحرف (أو '.' غير متبوع برقم).",
+  "rname_reserved": "'{{name}}' كلمة محجوزة في R. اختر اسمًا مختلفًا.",
+  "rname_dotArgs": "'{{name}}' محجوز بواسطة R (صيغتا الوسيطة '...' / '..1'). اختر اسمًا مختلفًا.",
+  "invalidVariableNameTitle": "اسم متغير غير صالح",
+  "datasetNameAlreadyOpen": "توجد بالفعل مجموعة بيانات بهذا الاسم مفتوحة. أدخل اسمًا مختلفًا.",
+  "variableNameAlreadyExists": "يوجد بالفعل متغير بهذا الاسم في مجموعة البيانات هذه. أدخل اسمًا مختلفًا."
 }

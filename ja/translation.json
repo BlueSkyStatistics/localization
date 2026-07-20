@@ -20,6 +20,7 @@
       "redo": "やり直す",
       "find": "検索",
       "findNext": "次を検索",
+      "findPrevious": "前を検索",
       "findReplace": "検索と置換",
       "comment": "コメント",
       "uncomment": "コメント解除",
@@ -51,7 +52,11 @@
     "add": "新しいデータセットを作成",
     "refresh": "データセットを更新",
     "undo": "変更を元に戻す",
-    "redo": "変更をやり直す"
+    "redo": "変更をやり直す",
+    "findSettings": "検索設定",
+    "findSettingsTitle": "検索設定",
+    "findSettingsEmpty": "利用可能な検索設定はまだありません。",
+    "findSettingsCloseBtn": "閉じる"
   },
   "REditrOutputContext": {
     "execute": "実行",
@@ -103,5 +108,17 @@
   "overwritescript2": "{{filepath}}を開くと、開いているファイルが上書きされます。\n\n「上書き」を選択して続行するか、「キャンセル」を選択して現在の変更を保持してください。",
   "overwritedataset": "データセット{{dataset_name}}はすでにグリッドで開いています。上書きしますか？",
   "duplicatecolumnTitle": "重複した列名",
-  "duplicatecolumnMessage": "列名{{changedvalue}}はデータセット{{dataset_name}}にすでに存在します。別の列名を使用してください。"
+  "duplicatecolumnMessage": "列名{{changedvalue}}はデータセット{{dataset_name}}にすでに存在します。別の列名を使用してください。",
+
+  "errorPrefix": "エラー:",
+  "nameKind_variable": "変数",
+  "nameKind_dataset": "データセット",
+  "rname_blank": "{{kind}}名を空にすることはできません",
+  "rname_tooLong": "{{kind}}名は64文字を超えることはできません。",
+  "rname_invalidChars": "英字、数字、'.'、または '_' を使用してください。先頭は英字である必要があります（または数字が続かない '.'）。",
+  "rname_reserved": "'{{name}}' は R の予約語です。別の名前を選択してください。",
+  "rname_dotArgs": "'{{name}}' は R によって予約されています（'...' / '..1' の引数形式）。別の名前を選択してください。",
+  "invalidVariableNameTitle": "無効な変数名",
+  "datasetNameAlreadyOpen": "この名前のデータセットはすでに開いています。別の名前を入力してください。",
+  "variableNameAlreadyExists": "この名前の変数はこのデータセットにすでに存在します。別の名前を入力してください。"
 }

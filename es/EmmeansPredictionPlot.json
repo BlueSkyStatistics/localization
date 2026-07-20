@@ -1,0 +1,27 @@
+{
+  "title": "Gráfico de Predicción de Medias Marginales Estimadas (emmeans)",
+  "navigation": "Gráfico de Predicción de Emmeans",
+  "labelModelSel": "Seleccionar el modelo ajustado",
+  "modelSelection": "Seleccionar modelo",
+  "labelNumericVars": "Variables numéricas (arrastre hasta 5; deje un cuadro vacío para ignorarlo)",
+  "numVar1": "Variable numérica 1",
+  "numVar2": "Variable numérica 2",
+  "numVar3": "Variable numérica 3",
+  "numVar4": "Variable numérica 4",
+  "numVar5": "Variable numérica 5",
+  "atSpecLabel": "Opcional: escriba valores / secuencia para esta variable, p. ej. seq(1, 5, by = 1) o escriba puntos individuales como 10, 12, 25. Deje en blanco para generar automáticamente alrededor de 10 puntos espaciados uniformemente desde el mínimo hasta el máximo.",
+  "labelGroupVar": "Variables de agrupamiento (categóricas)",
+  "groupVar": "Variable(s) de agrupamiento",
+  "showModelEquationChk": "Mostrar ecuación del modelo",
+  "showEMMTableChk": "Mostrar tabla de Medias Marginales Estimadas (EMM)",
+  "labelOptions": "Opciones de gráfico",
+  "confLevel": "Nivel de confianza",
+  "showCI": "Mostrar banda de confianza (ribbon)",
+  "plotTitle": "Título del gráfico (deje en blanco para predeterminado)",
+  "xAxisLabel": "Etiqueta del eje X (deje en blanco para predeterminado)",
+  "yAxisLabel": "Etiqueta del eje Y (deje en blanco para predeterminado)",
+  "help": {
+    "title": "Gráfico de Predicción de Medias Marginales Estimadas (emmeans)",
+    "body": "\n                <b>Descripción</b><br/><br/>\n                Calcula medias marginales estimadas (valores predichos) de un\n                modelo de regresión ajustado utilizando el paquete <code>emmeans</code>,\n                y visualiza las predicciones con <code>ggplot2</code>.<br/><br/>\n\n                <b>Cómo usar</b>\n                <ol>\n                  <li>Seleccione un modelo ajustado previamente (p. ej. de Regresión Lineal).</li>\n                  <li>Arrastre hasta 5 variables numéricas a las cajas de \"Variables numéricas\".\n                      Las cajas vacías se ignoran.</li>\n                  <li>Para cada variable numérica, puede opcionalmente escribir un conjunto\n                      personalizado de valores o una expresión R <code>seq()</code> en el\n                      campo de texto debajo de su caja (p. ej. <code>seq(22, 42, by = 1)</code>\n                      o <code>1, 2, 3</code>). Si se deja en blanco, se generan automáticamente\n                      alrededor de 10 valores espaciados uniformemente que abarcan el mínimo/máximo observado de la variable.</li>\n                  <li>Arrastre una o más variables categóricas a la caja de \"Variable(s) de agrupamiento\".\n                      La primera variable de agrupamiento se utiliza para\n                      colorear/llenar las líneas y cintas trazadas. Si se proporciona una segunda\n                      variable de agrupamiento, el gráfico se facetará adicionalmente por esa variable\n                      (y una tercera, si se proporciona, facetará en la otra dirección). Cualquier variable de agrupamiento adicional se\n                      combinará en la cuadrícula de facetas.</li>\n                  <li>Establezca el nivel de confianza (predeterminado 0.95).</li>\n                  <li>Opcionalmente marque \"Mostrar banda de confianza\" para agregar una cinta para\n                      el intervalo de confianza.</li>\n                  <li>Opcionalmente sobrescriba el título del gráfico y las etiquetas de los ejes.</li>\n                </ol>\n\n                <b>Notas</b><br/>\n                La primera variable numérica suministrada se convierte en el eje x del gráfico.\n                Cualquier variable numérica adicional (2-5) se incluye en la\n                cuadrícula <code>emmeans</code> y se promedia (o se mantiene en sus\n                valores especificados/generados automáticamente) pero no se traza por separado.<br/><br/>\n\n                Todas las variables numéricas y de agrupamiento seleccionadas deben ser variables\n                que aparezcan en la fórmula del modelo ajustado. Si alguna variable seleccionada\n                no es parte del modelo, se genera un error y se imprime la\n                lista de variables válidas del modelo.\n            "
+  }
+}

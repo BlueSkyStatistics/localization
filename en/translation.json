@@ -24,6 +24,7 @@
             "redo": "Redo",
             "find": "Find",
             "findNext": "Find next",
+            "findPrevious": "Find previous",
             "findReplace": "Find and replace",
             "comment": "Comment",
             "uncomment": "Uncomment",
@@ -60,6 +61,17 @@
         "findNext": "Next match",
         "findPrev": "Previous match",
         "findClose": "Close",
+        "findSettings": "Search settings",
+        "findColumnsScope": "Columns to search",
+        "findColumnsAll": "All Columns",
+        "findColumnsAllShort": "All",
+        "findToggleReplace": "Toggle Replace",
+        "replaceOne": "Replace",
+        "replaceAll": "Replace All",
+        "findSettingsTitle": "Search Settings",
+        "findSettingsEmpty": "No search settings are available yet.",
+        "findSettingsMaxMatchesLabel": "Maximum number of matches to find",
+        "findSettingsCloseBtn": "Close",
         "pasteWarning": "You will not be able to undo the data you are about to paste due to the large size of the data. Do you want to continue?",
         "pasteWarningCheckbox": "Do not show this warning again."
     },
@@ -114,6 +126,18 @@
     "overwritescript2": "Opening {{filepath}} will overwrite the open file.\n\nChoose \"Overwrite\" to proceed, or \"Cancel\" to keep your current changes.",
     "overwritedataset": "Dataset {{dataset_name}} is already open in the grid. Do you want to overwrite it?",
     "duplicatecolumnTitle": "Duplicate column name",
-     "duplicatecolumnMessage": "Column name {{changedvalue}} already exists in dataset {{dataset_name}}. Please use a different column name."
+     "duplicatecolumnMessage": "Column name {{changedvalue}} already exists in dataset {{dataset_name}}. Please use a different column name.",
+
+    "errorPrefix": "Error:",
+    "nameKind_variable": "Variable",
+    "nameKind_dataset": "Dataset",
+    "rname_blank": "{{kind}} name cannot be blank",
+    "rname_tooLong": "{{kind}} name cannot exceed 64 characters.",
+    "rname_invalidChars": "Use letters, digits, '.' or '_'. Must start with a letter (or a '.' not followed by a digit).",
+    "rname_reserved": "'{{name}}' is a reserved R keyword. Choose a different name.",
+    "rname_dotArgs": "'{{name}}' is reserved by R (the '...' / '..1' argument forms). Choose a different name.",
+    "invalidVariableNameTitle": "Invalid variable name",
+    "datasetNameAlreadyOpen": "A dataset with this name is already open. Enter a different name.",
+    "variableNameAlreadyExists": "A variable with this name already exists in this dataset. Enter a different name."
 
 }
