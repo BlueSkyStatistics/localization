@@ -20,6 +20,7 @@
       "redo": "Rétablir",
       "find": "Trouver",
       "findNext": "Trouver suivant",
+      "findPrevious": "Trouver précédent",
       "findReplace": "Trouver et remplacer",
       "comment": "Commenter",
       "uncomment": "Décommenter",
@@ -51,7 +52,11 @@
     "add": "Créer un nouveau jeu de données",
     "refresh": "Actualiser le jeu de données",
     "undo": "Annuler les modifications",
-    "redo": "Rétablir les modifications"
+    "redo": "Rétablir les modifications",
+    "findSettings": "Paramètres de recherche",
+    "findSettingsTitle": "Paramètres de recherche",
+    "findSettingsEmpty": "Aucun paramètre de recherche n'est disponible pour le moment.",
+    "findSettingsCloseBtn": "Fermer"
   },
   "REditrOutputContext": {
     "execute": "Exécuter",
@@ -103,5 +108,17 @@
   "overwritescript2": "Ouvrir {{filepath}} écrasera le fichier ouvert.\n\nChoisissez \"Écraser\" pour continuer, ou \"Annuler\" pour conserver vos modifications actuelles.",
   "overwritedataset": "Le jeu de données {{dataset_name}} est déjà ouvert dans la grille. Voulez-vous l'écraser ?",
   "duplicatecolumnTitle": "Nom de colonne dupliqué",
-  "duplicatecolumnMessage": "Le nom de colonne {{changedvalue}} existe déjà dans le jeu de données {{dataset_name}}. Veuillez utiliser un nom de colonne différent."
+  "duplicatecolumnMessage": "Le nom de colonne {{changedvalue}} existe déjà dans le jeu de données {{dataset_name}}. Veuillez utiliser un nom de colonne différent.",
+
+  "errorPrefix": "Erreur :",
+  "nameKind_variable": "Variable",
+  "nameKind_dataset": "Jeu de données",
+  "rname_blank": "Le nom de {{kind}} ne peut pas être vide",
+  "rname_tooLong": "Le nom de {{kind}} ne peut pas dépasser 64 caractères.",
+  "rname_invalidChars": "Utilisez des lettres, des chiffres, '.' ou '_'. Doit commencer par une lettre (ou un '.' non suivi d'un chiffre).",
+  "rname_reserved": "'{{name}}' est un mot-clé réservé de R. Choisissez un nom différent.",
+  "rname_dotArgs": "'{{name}}' est réservé par R (les formes d'argument '...' / '..1'). Choisissez un nom différent.",
+  "invalidVariableNameTitle": "Nom de variable invalide",
+  "datasetNameAlreadyOpen": "Un jeu de données portant ce nom est déjà ouvert. Saisissez un nom différent.",
+  "variableNameAlreadyExists": "Une variable portant ce nom existe déjà dans ce jeu de données. Saisissez un nom différent."
 }

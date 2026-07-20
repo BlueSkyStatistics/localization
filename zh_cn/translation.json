@@ -20,6 +20,7 @@
       "redo": "重做",
       "find": "查找",
       "findNext": "查找下一个",
+      "findPrevious": "查找上一个",
       "findReplace": "查找和替换",
       "comment": "注释",
       "uncomment": "取消注释",
@@ -51,7 +52,11 @@
     "add": "创建新数据集",
     "refresh": "刷新数据集",
     "undo": "撤销更改",
-    "redo": "重做更改"
+    "redo": "重做更改",
+    "findSettings": "搜索设置",
+    "findSettingsTitle": "搜索设置",
+    "findSettingsEmpty": "暂无可用的搜索设置。",
+    "findSettingsCloseBtn": "关闭"
   },
   "REditrOutputContext": {
     "execute": "执行",
@@ -103,5 +108,17 @@
   "overwritescript2": "打开 {{filepath}} 将覆盖打开的文件。\n\n选择 \"覆盖\" 以继续，或选择 \"取消\" 以保留当前更改。",
   "overwritedataset": "数据集 {{dataset_name}} 已在网格中打开。您想要覆盖它吗？",
   "duplicatecolumnTitle": "重复的列名",
-  "duplicatecolumnMessage": "列名 {{changedvalue}} 已在数据集 {{dataset_name}} 中存在。请使用不同的列名。"
+  "duplicatecolumnMessage": "列名 {{changedvalue}} 已在数据集 {{dataset_name}} 中存在。请使用不同的列名。",
+
+  "errorPrefix": "错误：",
+  "nameKind_variable": "变量",
+  "nameKind_dataset": "数据集",
+  "rname_blank": "{{kind}}名称不能为空",
+  "rname_tooLong": "{{kind}}名称不能超过 64 个字符。",
+  "rname_invalidChars": "请使用字母、数字、'.' 或 '_'。必须以字母开头（或后面不跟数字的 '.'）。",
+  "rname_reserved": "'{{name}}' 是 R 的保留关键字。请选择其他名称。",
+  "rname_dotArgs": "'{{name}}' 被 R 保留（'...' / '..1' 参数形式）。请选择其他名称。",
+  "invalidVariableNameTitle": "无效的变量名",
+  "datasetNameAlreadyOpen": "已存在同名的数据集且已打开。请输入其他名称。",
+  "variableNameAlreadyExists": "此数据集中已存在同名变量。请输入其他名称。"
 }

@@ -20,6 +20,7 @@
       "redo": "Ripeti",
       "find": "Trova",
       "findNext": "Trova successivo",
+      "findPrevious": "Trova precedente",
       "findReplace": "Trova e sostituisci",
       "comment": "Commenta",
       "uncomment": "Annulla commento",
@@ -51,7 +52,11 @@
     "add": "Crea un nuovo dataset",
     "refresh": "Aggiorna dataset",
     "undo": "Annulla modifiche",
-    "redo": "Ripeti modifiche"
+    "redo": "Ripeti modifiche",
+    "findSettings": "Impostazioni di ricerca",
+    "findSettingsTitle": "Impostazioni di ricerca",
+    "findSettingsEmpty": "Non sono ancora disponibili impostazioni di ricerca.",
+    "findSettingsCloseBtn": "Chiudi"
   },
   "REditrOutputContext": {
     "execute": "Esegui",
@@ -103,5 +108,17 @@
   "overwritescript2": "Aprire {{filepath}} sovrascriverà il file aperto.\n\nScegli \"Sovrascrivi\" per procedere, o \"Annulla\" per mantenere le tue modifiche attuali.",
   "overwritedataset": "Il dataset {{dataset_name}} è già aperto nella griglia. Vuoi sovrascriverlo?",
   "duplicatecolumnTitle": "Nome colonna duplicato",
-  "duplicatecolumnMessage": "Il nome della colonna {{changedvalue}} esiste già nel dataset {{dataset_name}}. Si prega di utilizzare un nome di colonna diverso."
+  "duplicatecolumnMessage": "Il nome della colonna {{changedvalue}} esiste già nel dataset {{dataset_name}}. Si prega di utilizzare un nome di colonna diverso.",
+
+  "errorPrefix": "Errore:",
+  "nameKind_variable": "Variabile",
+  "nameKind_dataset": "Dataset",
+  "rname_blank": "Il nome di {{kind}} non può essere vuoto",
+  "rname_tooLong": "Il nome di {{kind}} non può superare i 64 caratteri.",
+  "rname_invalidChars": "Usa lettere, cifre, '.' o '_'. Deve iniziare con una lettera (o un '.' non seguito da una cifra).",
+  "rname_reserved": "'{{name}}' è una parola chiave riservata di R. Scegli un nome diverso.",
+  "rname_dotArgs": "'{{name}}' è riservato da R (le forme di argomento '...' / '..1'). Scegli un nome diverso.",
+  "invalidVariableNameTitle": "Nome di variabile non valido",
+  "datasetNameAlreadyOpen": "Un dataset con questo nome è già aperto. Inserisci un nome diverso.",
+  "variableNameAlreadyExists": "Una variabile con questo nome esiste già in questo dataset. Inserisci un nome diverso."
 }

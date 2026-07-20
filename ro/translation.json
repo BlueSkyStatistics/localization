@@ -20,6 +20,7 @@
       "redo": "Refă",
       "find": "Caută",
       "findNext": "Caută următorul",
+      "findPrevious": "Caută anteriorul",
       "findReplace": "Caută și înlocuiește",
       "comment": "Comentariu",
       "uncomment": "Anulează comentariul",
@@ -51,7 +52,11 @@
     "add": "Creează un nou set de date",
     "refresh": "Reîmprospătează setul de date",
     "undo": "Anulează modificările",
-    "redo": "Refă modificările"
+    "redo": "Refă modificările",
+    "findSettings": "Setări de căutare",
+    "findSettingsTitle": "Setări de căutare",
+    "findSettingsEmpty": "Nu există încă setări de căutare disponibile.",
+    "findSettingsCloseBtn": "Închide"
   },
   "REditrOutputContext": {
     "execute": "Execută",
@@ -103,5 +108,17 @@
   "overwritescript2": "Deschiderea {{filepath}} va suprascrie fișierul deschis.\n\nAlege \"Suprascrie\" pentru a continua sau \"Anulează\" pentru a păstra modificările curente.",
   "overwritedataset": "Setul de date {{dataset_name}} este deja deschis în grilă. Vrei să-l suprascrii?",
   "duplicatecolumnTitle": "Nume de coloană duplicat",
-  "duplicatecolumnMessage": "Numele coloanei {{changedvalue}} există deja în setul de date {{dataset_name}}. Te rugăm să folosești un nume de coloană diferit."
+  "duplicatecolumnMessage": "Numele coloanei {{changedvalue}} există deja în setul de date {{dataset_name}}. Te rugăm să folosești un nume de coloană diferit.",
+
+  "errorPrefix": "Eroare:",
+  "nameKind_variable": "Variabilă",
+  "nameKind_dataset": "Set de date",
+  "rname_blank": "Numele de {{kind}} nu poate fi gol",
+  "rname_tooLong": "Numele de {{kind}} nu poate depăși 64 de caractere.",
+  "rname_invalidChars": "Folosește litere, cifre, '.' sau '_'. Trebuie să înceapă cu o literă (sau un '.' care nu este urmat de o cifră).",
+  "rname_reserved": "'{{name}}' este un cuvânt cheie rezervat în R. Alege un nume diferit.",
+  "rname_dotArgs": "'{{name}}' este rezervat de R (formele de argument '...' / '..1'). Alege un nume diferit.",
+  "invalidVariableNameTitle": "Nume de variabilă nevalid",
+  "datasetNameAlreadyOpen": "Un set de date cu acest nume este deja deschis. Introdu un nume diferit.",
+  "variableNameAlreadyExists": "O variabilă cu acest nume există deja în acest set de date. Introdu un nume diferit."
 }

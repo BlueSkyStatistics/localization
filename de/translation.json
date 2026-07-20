@@ -20,6 +20,7 @@
       "redo": "Wiederholen",
       "find": "Suchen",
       "findNext": "Nächste finden",
+      "findPrevious": "Vorherige finden",
       "findReplace": "Suchen und ersetzen",
       "comment": "Kommentar",
       "uncomment": "Kommentar aufheben",
@@ -51,7 +52,11 @@
     "add": "Neuen Datensatz erstellen",
     "refresh": "Datensatz aktualisieren",
     "undo": "Änderungen rückgängig",
-    "redo": "Änderungen wiederholen"
+    "redo": "Änderungen wiederholen",
+    "findSettings": "Sucheinstellungen",
+    "findSettingsTitle": "Sucheinstellungen",
+    "findSettingsEmpty": "Es sind noch keine Sucheinstellungen verfügbar.",
+    "findSettingsCloseBtn": "Schließen"
   },
   "REditrOutputContext": {
     "execute": "Ausführen",
@@ -103,5 +108,17 @@
   "overwritescript2": "Das Öffnen von {{filepath}} überschreibt die geöffnete Datei.\n\nWählen Sie \"Überschreiben\", um fortzufahren, oder \"Abbrechen\", um Ihre aktuellen Änderungen beizubehalten.",
   "overwritedataset": "Datensatz {{dataset_name}} ist bereits im Raster geöffnet. Möchten Sie ihn überschreiben?",
   "duplicatecolumnTitle": "Doppelter Spaltenname",
-  "duplicatecolumnMessage": "Der Spaltenname {{changedvalue}} existiert bereits im Datensatz {{dataset_name}}. Bitte verwenden Sie einen anderen Spaltennamen."
+  "duplicatecolumnMessage": "Der Spaltenname {{changedvalue}} existiert bereits im Datensatz {{dataset_name}}. Bitte verwenden Sie einen anderen Spaltennamen.",
+
+  "errorPrefix": "Fehler:",
+  "nameKind_variable": "Variable",
+  "nameKind_dataset": "Datensatz",
+  "rname_blank": "{{kind}}-Name darf nicht leer sein",
+  "rname_tooLong": "{{kind}}-Name darf 64 Zeichen nicht überschreiten.",
+  "rname_invalidChars": "Verwenden Sie Buchstaben, Ziffern, '.' oder '_'. Muss mit einem Buchstaben beginnen (oder einem '.', auf das keine Ziffer folgt).",
+  "rname_reserved": "'{{name}}' ist ein reserviertes R-Schlüsselwort. Wählen Sie einen anderen Namen.",
+  "rname_dotArgs": "'{{name}}' ist von R reserviert (die Argumentformen '...' / '..1'). Wählen Sie einen anderen Namen.",
+  "invalidVariableNameTitle": "Ungültiger Variablenname",
+  "datasetNameAlreadyOpen": "Ein Datensatz mit diesem Namen ist bereits geöffnet. Geben Sie einen anderen Namen ein.",
+  "variableNameAlreadyExists": "Eine Variable mit diesem Namen existiert bereits in diesem Datensatz. Geben Sie einen anderen Namen ein."
 }
