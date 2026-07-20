@@ -1,0 +1,12 @@
+{
+  "title": "将 DoE 设计对象转换为普通数据框",
+  "navigation": "将设计转换为数据框",
+  "lblInfo": "一些标准（非 DoE）分析和图形菜单期望一个普通的数据框。一个 DoE 设计数据集（类 \"design\"）携带额外的结构——因子水平定义、运行顺序、块/别名信息——大多数非 DoE 菜单无法识别，这可能导致错误，例如在基于 dplyr 的分析中出现 \"无法重建数据框\"。此对话框将活动数据集转换为一个新的普通数据框，保持原始设计对象不变，以便 DoE 菜单（检查设计、修改设计、导出设计、CCD 增强等）可以正常工作。",
+  "newDatasetName": "新数据集名称（可选）",
+  "newDatasetNameHelp_lbl": "转换后的普通数据框数据集的名称。留空以自动使用 '<active dataset name>_df'。如果输入的名称不是有效的 R 对象名称，它将被自动调整，并显示说明。",
+  "lbl_note": "如果活动数据集已经是一个普通的数据框（不是 DoE 设计对象），则不需要转换，也不会创建新的数据集——您可以直接使用活动数据集与任何非 DoE 菜单。",
+  "help": {
+    "title": "将 DoE 设计对象转换为普通数据框",
+    "body": "\n                <b>描述</b><br/>\n                使用 <code>as.data.frame()</code> 将活动数据集转换为普通 <code>data.frame</code>，并将结果存储为一个新的数据集——原始数据集从未被修改或覆盖。\n                <br/><br/>\n\n                <b>为什么需要这个</b><br/>\n                由 DoE 对话框创建的数据集（创建完整因子设计、创建常规/分数因子设计、创建中心复合设计等）除了 <code>\"data.frame\"</code> 之外，还携带 R 类 <code>\"design\"</code>。这个额外的类让 DoE 特定的函数（<code>design.info()</code>、<code>summary.design()</code>、CCD/中心点增强、别名结构报告等）能够正确工作。\n                <br/><br/>\n                大多数标准分析和图形菜单在 DoE 菜单之外——尤其是许多 <code>dplyr</code> / <code>tidyverse</code> 操作——不知道如何处理这个额外的类。一个常见的症状是出现如下错误：\n                <br/>\n                <code>错误：无法重建数据框。</code>\n                <br/>\n                当一个设计数据集被传递到 <code>dplyr::select()</code>、<code>dplyr::filter()</code> 或类似的动词时，因为 dplyr 无法弄清楚如何从其列的子集重建一个有效的 <code>\"design\"</code> 对象。\n                <br/><br/>\n\n                <b>此对话框的作用</b><br/>\n                <ul>\n                  <li>检查活动数据集的类是否包含 <code>\"design\"</code>。</li>\n                  <li>如果包含，则创建一个新的数据集，包含 <code>as.data.frame(activeDataset)</code>——一个普通的数据框，具有相同的行和列，但没有额外的 DoE 结构。</li>\n                  <li>如果不包含（活动数据集已经是一个普通的数据框），则不创建新的数据集——消息解释不需要转换。</li>\n                  <li>原始数据集始终保持完全不变，因此 DoE 菜单可以继续像以前一样正常工作。</li>\n                </ul>\n\n                <b>命名新数据集</b><br/>\n                <ul>\n                  <li>将名称字段留空以自动使用 <code>&lt;active dataset name&gt;_df</code>。</li>\n                  <li>或者指定您自己的名称。如果名称不是语法上有效的 R 对象名称，它会被自动调整（通过 <code>make.names()</code>），并显示说明更改的消息。</li>\n                  <li>如果结果名称的数据集已经存在，它将被覆盖——当发生这种情况时会显示说明。</li>\n                </ul>\n\n                <b>何时使用此功能</b><br/>\n                每当您想在一个最初由 DoE 设计对话框创建的数据集上运行标准（非 DoE）分析、图形或数据操作菜单时——特别是基于 <code>dplyr</code> 的任何内容——请使用此对话框。\n            "
+  }
+}
