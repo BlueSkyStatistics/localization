@@ -1,28 +1,22 @@
 {
-  "language": {
-    "language": "简体中文",
-    "key": "zh_cn"
-  },
-  "original_json": {
-    "title": "反向约翰逊变换（转换回未变换的值）",
-    "navigation": "反向约翰逊",
-    "label2": "选择一个变量或输入一个数字值，以从先前的约翰逊变换中转换回",
-    "variableSelcted": "选择一个变量（也用于读取存储的约翰逊参数，除非在下面手动指定）",
-    "selectVariableRad": "选项 1：选择一个变量，以从先前的约翰逊变换中转换回",
-    "invJohnsonColName": "（可选）指定一个新变量名称以存储转换后的值。否则将创建 <variable_invjtrans>",
-    "selectNumberRad": "选项 2：输入一个数字值，以从约翰逊变换中转换回",
-    "invNumber": "输入数字值",
-    "manualParamsChk": "手动指定约翰逊变换类型和参数。否则，如果未选中，将使用上述所选变量存储的类型和参数（由先前的约翰逊变换提供）",
-    "typeSelected": "约翰逊变换类型",
-    "gamma": "伽马 (γ)",
-    "eta": "伊塔 (η) - 必须大于 0",
-    "epsilon": "埃普西龙 (ε)",
-    "lambda": "兰姆达 (λ) - 对于 SB 和 SU，必须大于 0。对于 SL 可以留空（不使用，默认为 1）",
-    "digits": "数字 - 四舍五入到指定的小数位数",
-    "help": {
-      "title": "从先前的约翰逊变换值反向转换",
-      "r_help": "帮助(sinh)",
-      "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t使用变换类型（SB、SL 或 SU）和参数伽马 (γ)、伊塔 (η)、埃普西龙 (ε)、兰姆达 (λ) 从先前的约翰逊变换值反向转换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t类型和参数从所选变量存储的属性中读取，\n\t\t\t\t由伴随的约翰逊变换对话框提供（jtrans_type、jtrans_gamma、jtrans_eta、jtrans_epsilon、\n\t\t\t\tjtrans_lambda），或者可以手动指定 - 例如，反转在 Minitab 中执行的变换，其输出报告这些相同的参数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三种约翰逊变换函数及其反向变换</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\t反向：X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL（对数正态）：Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\t反向：X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU（无界）：Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t反向：X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t注意：反向恢复原始值，直到存储变换值时应用的四舍五入\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
-    }
+  "title": "反向约翰逊变换（转换回未变换的值）",
+  "navigation": "反向约翰逊",
+  "label2": "选择一个变量或输入一个数字值，以从先前的约翰逊变换中转换回",
+  "variableSelcted": "选择一个变量（也用于读取存储的约翰逊参数，除非在下面手动指定）",
+  "selectVariableRad": "选项 1：选择一个变量，以从先前的约翰逊变换中转换回",
+  "invJohnsonColName": "（可选）指定一个新变量名称以存储转换后的值。否则将创建 <variable_invjtrans>",
+  "selectNumberRad": "选项 2：输入一个数字值，以从约翰逊变换中转换回",
+  "invNumber": "输入数字值",
+  "manualParamsChk": "手动指定约翰逊变换类型和参数。否则，如果未选中，将使用上述所选变量存储的类型和参数（由先前的约翰逊变换提供）",
+  "typeSelected": "约翰逊变换类型",
+  "gamma": "伽马 (γ)",
+  "eta": "伊塔 (η) - 必须大于 0",
+  "epsilon": "埃普西龙 (ε)",
+  "lambda": "兰姆达 (λ) - 对于 SB 和 SU，必须大于 0。对于 SL 可以留空（不使用，默认为 1）",
+  "digits": "数字 - 四舍五入到指定的小数位数",
+  "help": {
+    "title": "从先前的约翰逊变换值反向转换",
+    "r_help": "帮助(sinh)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t使用变换类型（SB、SL 或 SU）和参数伽马 (γ)、伊塔 (η)、埃普西龙 (ε)、兰姆达 (λ) 从先前的约翰逊变换值反向转换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t类型和参数从所选变量存储的属性中读取，\n\t\t\t\t由伴随的约翰逊变换对话框提供（jtrans_type、jtrans_gamma、jtrans_eta、jtrans_epsilon、\n\t\t\t\tjtrans_lambda），或者可以手动指定 - 例如，反转在 Minitab 中执行的变换，其输出报告这些相同的参数\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三种约翰逊变换函数及其反向变换</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\t反向：X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL（对数正态）：Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\t反向：X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU（无界）：Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t反向：X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t注意：反向恢复原始值，直到存储变换值时应用的四舍五入\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

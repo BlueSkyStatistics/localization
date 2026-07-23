@@ -1,18 +1,12 @@
 {
-  "language": {
-    "language": "german",
-    "key": "de"
-  },
-  "original_json": {
-    "title": "Überprüfen Sie den Johnson-Transformationstyp und die Parameter für Variablen mit vorheriger Johnson-Transformation",
-    "navigation": "Johnson-Parameter überprüfen",
-    "label2": "Wählen Sie eine oder mehrere Variablen aus, um zu überprüfen, ob eine Johnson-Transformation angewendet wurde und wenn ja, den zugehörigen Typ (SB, SL, SU) und die Parameter",
-    "variablelistSelcted": "Zu überprüfende Variablen",
-    "digits": "Ziffern - rundet auf die angegebene Anzahl von Dezimalstellen",
-    "help": {
-      "title": "Überprüfen Sie den Johnson-Transformationstyp und die Parameter, die mit den ausgewählten Variablen verbunden sind",
-      "r_help": "hilfe(attr)",
-      "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tÜberprüfen Sie den zugehörigen Johnson-Transformationstyp und die Parameter, falls vorhanden, für die ausgewählten\n\t\t\t\tVariablen mit einer vorherigen Johnson-Transformation\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tWenn der begleitende Johnson-Transformationsdialog eine transformierte Variable speichert, werden die\n\t\t\t\tTransformationen als Attribute der Variablen aufgezeichnet: jtrans_type (SB, SL oder SU), jtrans_z (der Z-Wert\n\t\t\t\tdes besten Fits) und die Parameter jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε),\n\t\t\t\tjtrans_lambda (λ). Dieser Dialog zeigt diese Werte in einer Tabelle an und druckt die rekonstruierte Transformation\n\t\t\t\tfunktion für jede transformierte Variable unterhalb der Tabelle. Variablen ohne gespeicherte Johnson\n\t\t\t\tTransformation werden aus der Tabelle ausgeschlossen und separat darunter aufgeführt\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Die drei Johnson-Transformationsfunktionen</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (beschränkt): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (unbeschränkt): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDer korrekte Typ und die Parameter sind wichtig, da sie verwendet werden, wenn eine inverse Johnson-\n\t\t\t\tTransformation erforderlich ist. Verwenden Sie den begleitenden Dialog zum Hinzufügen/Ersetzen/Entfernen von Johnson-Parametern, um\n\t\t\t\tsie bei Bedarf zu korrigieren\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
-    }
+  "title": "Überprüfen Sie den Johnson-Transformationstyp und die Parameter für Variablen mit vorheriger Johnson-Transformation",
+  "navigation": "Johnson-Parameter überprüfen",
+  "label2": "Wählen Sie eine oder mehrere Variablen aus, um zu überprüfen, ob eine Johnson-Transformation angewendet wurde und wenn ja, den zugehörigen Typ (SB, SL, SU) und die Parameter",
+  "variablelistSelcted": "Zu überprüfende Variablen",
+  "digits": "Ziffern - rundet auf die angegebene Anzahl von Dezimalstellen",
+  "help": {
+    "title": "Überprüfen Sie den Johnson-Transformationstyp und die Parameter, die mit den ausgewählten Variablen verbunden sind",
+    "r_help": "hilfe(attr)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tÜberprüfen Sie den zugehörigen Johnson-Transformationstyp und die Parameter, falls vorhanden, für die ausgewählten\n\t\t\t\tVariablen mit einer vorherigen Johnson-Transformation\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tWenn der begleitende Johnson-Transformationsdialog eine transformierte Variable speichert, werden die\n\t\t\t\tTransformationen als Attribute der Variablen aufgezeichnet: jtrans_type (SB, SL oder SU), jtrans_z (der Z-Wert\n\t\t\t\tdes besten Fits) und die Parameter jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε),\n\t\t\t\tjtrans_lambda (λ). Dieser Dialog zeigt diese Werte in einer Tabelle an und druckt die rekonstruierte Transformation\n\t\t\t\tfunktion für jede transformierte Variable unterhalb der Tabelle. Variablen ohne gespeicherte Johnson\n\t\t\t\tTransformation werden aus der Tabelle ausgeschlossen und separat darunter aufgeführt\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Die drei Johnson-Transformationsfunktionen</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (beschränkt): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (unbeschränkt): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDer korrekte Typ und die Parameter sind wichtig, da sie verwendet werden, wenn eine inverse Johnson-\n\t\t\t\tTransformation erforderlich ist. Verwenden Sie den begleitenden Dialog zum Hinzufügen/Ersetzen/Entfernen von Johnson-Parametern, um\n\t\t\t\tsie bei Bedarf zu korrigieren\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

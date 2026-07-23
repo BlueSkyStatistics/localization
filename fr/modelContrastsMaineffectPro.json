@@ -1,20 +1,14 @@
 {
-  "language": {
-    "language": "french",
-    "key": "fr"
-  },
-  "original_json": {
+  "title": "Tous les contrastes par paires",
+  "navigation": "Tous les contrastes par paires",
+  "notelabel1": "REMARQUE : Vous devez avoir accès au jeu de données qui a créé le modèle.",
+  "notelabel2": "Modèles pris en charge : modèles linéaires (lm), modèles linéaires généralisés (glm), risques proportionnels de Cox (coxph), équation d'estimation généralisée (glmgee), régression quantile (rq), modèles mixtes linéaires (lmerModLmerTest)",
+  "modelselectorlabel": "Sélectionner le nom du modèle",
+  "plotvarslabel": "Variables pour tous les contrastes par paires",
+  "multadjlabel": "Ajustement pour comparaisons multiples",
+  "help": {
     "title": "Tous les contrastes par paires",
-    "navigation": "Tous les contrastes par paires",
-    "notelabel1": "REMARQUE : Vous devez avoir accès au jeu de données qui a créé le modèle.",
-    "notelabel2": "Modèles pris en charge : modèles linéaires (lm), modèles linéaires généralisés (glm), risques proportionnels de Cox (coxph), équation d'estimation généralisée (glmgee), régression quantile (rq), modèles mixtes linéaires (lmerModLmerTest)",
-    "modelselectorlabel": "Sélectionner le nom du modèle",
-    "plotvarslabel": "Variables pour tous les contrastes par paires",
-    "multadjlabel": "Ajustement pour comparaisons multiples",
-    "help": {
-      "title": "Tous les contrastes par paires",
-      "r_help": "help(emmeans, package = 'emmeans')",
-      "body": "\nCela crée un tableau de toutes les comparaisons de niveaux par paires pour les prédicteurs catégoriels dans un modèle. Toutes les directions sont également fournies (par exemple, niveau A par rapport au niveau B, et niveau B \npar rapport au niveau A). Les estimations sont fournies sur l'échelle de réponse du résultat (par exemple, différences pour les modèles linéaires, rapports de risque pour les modèles de Cox, rapports de cotes pour les modèles logistiques, rapports de taux pour les modèles de Poisson).  \nDes ajustements pour comparaisons multiples facultatifs pour chaque prédicteur catégoriel peuvent être spécifiés. Actuellement, les modèles de classe lm (modèles linéaires), glm (modèles linéaires généralisés, \nqui incluent logistique et Poisson), coxph (risques proportionnels de Cox), glmgee (équation d'estimation généralisée), rq (régression quantile), et lmerModLmerTest (modèles mixtes linéaires) sont pris en charge.\n<br/><br/>\n<b>Sélectionner le nom du modèle :</b> Choisissez le nom du modèle tel que spécifié lors de l'ajustement du modèle. C'est un champ requis.\n<br/><br/>\n<b>Variables pour tous les contrastes par paires :</b> Spécifiez quelles variables catégorielles faire des comparaisons de niveaux par paires. Celles-ci doivent avoir été incluses comme prédicteurs lors de l'ajustement du modèle.\nLes variables saisies en tant que caractères, facteurs, ordinales, logiques ou variables muettes numériques peuvent être utilisées. C'est un champ requis.\n<br/><br/>\n<b>Ajustement pour comparaisons multiples :</b> Spécifiez l'ajustement pour comparaisons multiples. Les options sont aucune (pas d'ajustement), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (taux de fausse découverte), \nBH (Benjamini-Hochberg), et BY (Benjamini-Yekutieli). Des notes sont fournies dans la sortie concernant l'ajustement pour comparaisons multiples effectué pour les intervalles de confiance et les p-values.\n<br/><br/>\n<b>Packages R requis :</b> emmeans\n"
-    }
+    "r_help": "help(emmeans, package = 'emmeans')",
+    "body": "\nCela crée un tableau de toutes les comparaisons de niveaux par paires pour les prédicteurs catégoriels dans un modèle. Toutes les directions sont également fournies (par exemple, niveau A par rapport au niveau B, et niveau B \npar rapport au niveau A). Les estimations sont fournies sur l'échelle de réponse du résultat (par exemple, différences pour les modèles linéaires, rapports de risque pour les modèles de Cox, rapports de cotes pour les modèles logistiques, rapports de taux pour les modèles de Poisson).  \nDes ajustements pour comparaisons multiples facultatifs pour chaque prédicteur catégoriel peuvent être spécifiés. Actuellement, les modèles de classe lm (modèles linéaires), glm (modèles linéaires généralisés, \nqui incluent logistique et Poisson), coxph (risques proportionnels de Cox), glmgee (équation d'estimation généralisée), rq (régression quantile), et lmerModLmerTest (modèles mixtes linéaires) sont pris en charge.\n<br/><br/>\n<b>Sélectionner le nom du modèle :</b> Choisissez le nom du modèle tel que spécifié lors de l'ajustement du modèle. C'est un champ requis.\n<br/><br/>\n<b>Variables pour tous les contrastes par paires :</b> Spécifiez quelles variables catégorielles faire des comparaisons de niveaux par paires. Celles-ci doivent avoir été incluses comme prédicteurs lors de l'ajustement du modèle.\nLes variables saisies en tant que caractères, facteurs, ordinales, logiques ou variables muettes numériques peuvent être utilisées. C'est un champ requis.\n<br/><br/>\n<b>Ajustement pour comparaisons multiples :</b> Spécifiez l'ajustement pour comparaisons multiples. Les options sont aucune (pas d'ajustement), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (taux de fausse découverte), \nBH (Benjamini-Hochberg), et BY (Benjamini-Yekutieli). Des notes sont fournies dans la sortie concernant l'ajustement pour comparaisons multiples effectué pour les intervalles de confiance et les p-values.\n<br/><br/>\n<b>Packages R requis :</b> emmeans\n"
   }
 }

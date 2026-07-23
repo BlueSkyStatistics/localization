@@ -1,20 +1,14 @@
 {
-  "language": {
-    "language": "Portuguese",
-    "key": "pt"
-  },
-  "original_json": {
+  "title": "Todos os Contrastes Pares",
+  "navigation": "Todos os Contrastes Pares",
+  "notelabel1": "NOTA: Você deve ter acesso ao conjunto de dados que criou o modelo.",
+  "notelabel2": "Modelos suportados: modelos lineares (lm), modelos lineares generalizados (glm), riscos proporcionais de Cox (coxph), equação de estimativa generalizada (glmgee), regressão quantílica (rq), modelos mistos lineares (lmerModLmerTest)",
+  "modelselectorlabel": "Selecionar Nome do Modelo",
+  "plotvarslabel": "Variáveis para todos os contrastes pares",
+  "multadjlabel": "Ajuste de comparação múltipla",
+  "help": {
     "title": "Todos os Contrastes Pares",
-    "navigation": "Todos os Contrastes Pares",
-    "notelabel1": "NOTA: Você deve ter acesso ao conjunto de dados que criou o modelo.",
-    "notelabel2": "Modelos suportados: modelos lineares (lm), modelos lineares generalizados (glm), riscos proporcionais de Cox (coxph), equação de estimativa generalizada (glmgee), regressão quantílica (rq), modelos mistos lineares (lmerModLmerTest)",
-    "modelselectorlabel": "Selecionar Nome do Modelo",
-    "plotvarslabel": "Variáveis para todos os contrastes pares",
-    "multadjlabel": "Ajuste de comparação múltipla",
-    "help": {
-      "title": "Todos os Contrastes Pares",
-      "r_help": "help(emmeans, package = 'emmeans')",
-      "body": "\nIsso cria uma tabela de todas as comparações de nível par a par para preditores categóricos em um modelo. Todas as direções também são fornecidas (por exemplo, nível A em relação ao nível B, e nível B em relação ao nível A). Estimativas são fornecidas na escala de resposta do resultado (por exemplo, diferenças para modelos lineares, razões de risco para modelos de Cox, razões de chances para modelos logísticos, razões de taxa para modelos de Poisson). \nAjustes opcionais de comparação múltipla para cada preditor categórico podem ser especificados. Atualmente, modelos da classe lm (modelos lineares), glm (modelos lineares generalizados, \nque incluem logísticos e Poisson), coxph (riscos proporcionais de Cox), glmgee (equação de estimativa generalizada), rq (regressão quantílica) e lmerModLmerTest (modelos mistos lineares) são suportados.\n<br/><br/>\n<b>Selecionar Nome do Modelo:</b> Escolha o nome do modelo conforme especificado quando o modelo foi ajustado. Este é um campo obrigatório.\n<br/><br/>\n<b>Variáveis para todos os contrastes pares:</b> Especifique quais variáveis categóricas fazer comparações de nível par a par. Estas devem ter sido incluídas como preditores quando o modelo foi ajustado.\nVariáveis inseridas como caractere, fator, ordinal, lógico ou variáveis dummy numéricas podem ser usadas. Este é um campo obrigatório.\n<br/><br/>\n<b>Ajuste de comparação múltipla:</b> Especifique o ajuste de comparação múltipla. As opções são nenhuma (sem ajuste), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (taxa de descoberta falsa), \nBH (Benjamini-Hochberg) e BY (Benjamini-Yekutieli). Notas são fornecidas na saída sobre qual ajuste de comparação múltipla foi feito para os intervalos de confiança e valores p.\n<br/><br/>\n<b>Pacotes R Requeridos:</b> emmeans\n"
-    }
+    "r_help": "help(emmeans, package = 'emmeans')",
+    "body": "\nIsso cria uma tabela de todas as comparações de nível par a par para preditores categóricos em um modelo. Todas as direções também são fornecidas (por exemplo, nível A em relação ao nível B, e nível B em relação ao nível A). Estimativas são fornecidas na escala de resposta do resultado (por exemplo, diferenças para modelos lineares, razões de risco para modelos de Cox, razões de chances para modelos logísticos, razões de taxa para modelos de Poisson). \nAjustes opcionais de comparação múltipla para cada preditor categórico podem ser especificados. Atualmente, modelos da classe lm (modelos lineares), glm (modelos lineares generalizados, \nque incluem logísticos e Poisson), coxph (riscos proporcionais de Cox), glmgee (equação de estimativa generalizada), rq (regressão quantílica) e lmerModLmerTest (modelos mistos lineares) são suportados.\n<br/><br/>\n<b>Selecionar Nome do Modelo:</b> Escolha o nome do modelo conforme especificado quando o modelo foi ajustado. Este é um campo obrigatório.\n<br/><br/>\n<b>Variáveis para todos os contrastes pares:</b> Especifique quais variáveis categóricas fazer comparações de nível par a par. Estas devem ter sido incluídas como preditores quando o modelo foi ajustado.\nVariáveis inseridas como caractere, fator, ordinal, lógico ou variáveis dummy numéricas podem ser usadas. Este é um campo obrigatório.\n<br/><br/>\n<b>Ajuste de comparação múltipla:</b> Especifique o ajuste de comparação múltipla. As opções são nenhuma (sem ajuste), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (taxa de descoberta falsa), \nBH (Benjamini-Hochberg) e BY (Benjamini-Yekutieli). Notas são fornecidas na saída sobre qual ajuste de comparação múltipla foi feito para os intervalos de confiança e valores p.\n<br/><br/>\n<b>Pacotes R Requeridos:</b> emmeans\n"
   }
 }

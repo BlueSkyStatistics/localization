@@ -1,28 +1,22 @@
 {
-  "language": {
-    "language": "Portuguese",
-    "key": "pt"
-  },
-  "original_json": {
-    "title": "Transformação inversa de Johnson (converter de volta para o valor não transformado)",
-    "navigation": "Johnson Inversa",
-    "label2": "Selecione uma variável ou digite um valor numérico para ser convertido de volta de uma transformação Johnson anterior",
-    "variableSelcted": "Selecione uma variável (também usada para ler os parâmetros Johnson armazenados, a menos que especificado manualmente abaixo)",
-    "selectVariableRad": "Opção 1: Selecione uma variável para ser convertida de volta de uma transformação Johnson anterior",
-    "invJohnsonColName": "(Opcional) Especifique um novo nome de variável para armazenar os valores convertidos. Caso contrário, <variable_invjtrans> será criado",
-    "selectNumberRad": "Opção 2: Digite um valor numérico para ser convertido de volta de uma transformação Johnson",
-    "invNumber": "Digite o valor numérico",
-    "manualParamsChk": "Especifique manualmente o tipo de transformação Johnson e os parâmetros abaixo. Caso contrário, se não marcado, o tipo e os parâmetros armazenados com a variável selecionada acima (por uma transformação Johnson anterior) serão usados",
-    "typeSelected": "Tipo de transformação Johnson",
-    "gamma": "Gama (γ)",
-    "eta": "Eta (η) - deve ser maior que 0",
-    "epsilon": "Épsilon (ε)",
-    "lambda": "Lambda (λ) - deve ser maior que 0 para SB e SU. Pode ser deixado em branco para SL (não utilizado, padrão é 1)",
-    "digits": "Dígitos - arredonda para o número especificado de casas decimais",
-    "help": {
-      "title": "Transformar de volta (inversa) de um valor transformado Johnson anterior",
-      "r_help": "ajuda(sinh)",
-      "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tTransformar de volta (inversa) de um valor transformado Johnson anterior usando o tipo de transformação\n\t\t\t\t(SB, SL ou SU) e os parâmetros Gama (γ), Eta (η), Épsilon (ε), Lambda (λ)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tO tipo e os parâmetros são lidos dos atributos armazenados com a variável selecionada pelo\n\t\t\t\tdiálogo de transformação Johnson acompanhante (jtrans_type, jtrans_gamma, jtrans_eta, jtrans_epsilon,\n\t\t\t\tjtrans_lambda), ou podem ser especificados manualmente - por exemplo, para inverter uma transformação que\n\t\t\t\tfoi realizada no Minitab, cujo resultado relata esses mesmos parâmetros\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>As três funções de transformação Johnson e suas inversas</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitada): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tinversa: X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tinversa: X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (ilimitada): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tinversa: X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNota: a inversa recupera os valores originais até o arredondamento que foi aplicado quando os\n\t\t\t\tvalores transformados foram armazenados\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
-    }
+  "title": "Transformação inversa de Johnson (converter de volta para o valor não transformado)",
+  "navigation": "Johnson Inversa",
+  "label2": "Selecione uma variável ou digite um valor numérico para ser convertido de volta de uma transformação Johnson anterior",
+  "variableSelcted": "Selecione uma variável (também usada para ler os parâmetros Johnson armazenados, a menos que especificado manualmente abaixo)",
+  "selectVariableRad": "Opção 1: Selecione uma variável para ser convertida de volta de uma transformação Johnson anterior",
+  "invJohnsonColName": "(Opcional) Especifique um novo nome de variável para armazenar os valores convertidos. Caso contrário, <variable_invjtrans> será criado",
+  "selectNumberRad": "Opção 2: Digite um valor numérico para ser convertido de volta de uma transformação Johnson",
+  "invNumber": "Digite o valor numérico",
+  "manualParamsChk": "Especifique manualmente o tipo de transformação Johnson e os parâmetros abaixo. Caso contrário, se não marcado, o tipo e os parâmetros armazenados com a variável selecionada acima (por uma transformação Johnson anterior) serão usados",
+  "typeSelected": "Tipo de transformação Johnson",
+  "gamma": "Gama (γ)",
+  "eta": "Eta (η) - deve ser maior que 0",
+  "epsilon": "Épsilon (ε)",
+  "lambda": "Lambda (λ) - deve ser maior que 0 para SB e SU. Pode ser deixado em branco para SL (não utilizado, padrão é 1)",
+  "digits": "Dígitos - arredonda para o número especificado de casas decimais",
+  "help": {
+    "title": "Transformar de volta (inversa) de um valor transformado Johnson anterior",
+    "r_help": "ajuda(sinh)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tTransformar de volta (inversa) de um valor transformado Johnson anterior usando o tipo de transformação\n\t\t\t\t(SB, SL ou SU) e os parâmetros Gama (γ), Eta (η), Épsilon (ε), Lambda (λ)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tO tipo e os parâmetros são lidos dos atributos armazenados com a variável selecionada pelo\n\t\t\t\tdiálogo de transformação Johnson acompanhante (jtrans_type, jtrans_gamma, jtrans_eta, jtrans_epsilon,\n\t\t\t\tjtrans_lambda), ou podem ser especificados manualmente - por exemplo, para inverter uma transformação que\n\t\t\t\tfoi realizada no Minitab, cujo resultado relata esses mesmos parâmetros\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>As três funções de transformação Johnson e suas inversas</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitada): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tinversa: X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tinversa: X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (ilimitada): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tinversa: X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNota: a inversa recupera os valores originais até o arredondamento que foi aplicado quando os\n\t\t\t\tvalores transformados foram armazenados\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }
