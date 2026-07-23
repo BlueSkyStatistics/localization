@@ -1,0 +1,19 @@
+{
+  "title": "Fügen Sie den Johnson-Transformationstyp und die Parameter für eine Variable hinzu/ersetzen/entfernen",
+  "navigation": "Johnson-Parameter hinzufügen/entfernen",
+  "label2": "Wählen Sie eine Variable aus, um den Johnson-Transformationstyp und die Parameter (γ, η, ε, λ) hinzuzufügen/zu ersetzen/zu entfernen, wo zuvor eine Johnson-Transformation angewendet wurde",
+  "variableSelcted": "Wählen Sie eine Variable aus",
+  "selectAddParamsRad": "Option 1: Fügen Sie den Johnson-Transformationstyp und die Parameter hinzu/ersetzen Sie sie",
+  "selectRemoveParamsRad": "Option 2: Entfernen Sie den Johnson-Transformationstyp und die Parameter, wenn sie versehentlich zur Variable hinzugefügt wurden",
+  "typeSelected": "Johnson-Transformationstyp",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - muss größer als 0 sein",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - muss für SB und SU größer als 0 sein. Kann für SL leer gelassen werden (nicht verwendet, Standardwert ist 1)",
+  "zvalue": "(Optional) Z-Wert der Anpassung - nur informativ, angezeigt im Inspektor-Dialog",
+  "help": {
+    "title": "Fügen Sie den Johnson-Transformationstyp und die Parameter hinzu/ersetzen/entfernen",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tDieser Dialog wird zur Bequemlichkeit bereitgestellt, wenn der Johnson-Transformationstyp (SB, SL oder SU) und\n\t\t\t\tdie Parameter Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ), die mit einer Variable verbunden sind, aufgezeichnet,\n\t\t\t\tkorrektiert oder entfernt werden müssen. Der korrekte Typ und die Parameter sind wichtig, da sie verwendet werden,\n\t\t\t\twenn eine inverse Johnson-Transformation benötigt wird\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTypische Anwendungen: Wiederanbringen der Parameter, nachdem sie verloren gegangen sind (z. B. wurde der Datensatz in\n\t\t\t\tein Dateiformat exportiert, das R-Attribute nicht beibehält, und wieder importiert), oder Aufzeichnung einer Johnson\n\t\t\t\tTransformation, die außerhalb von BlueSky Statistics durchgeführt wurde - zum Beispiel in Minitab, dessen\n\t\t\t\tAusgabe zur Johnson-Transformation genau diese Parameter in seiner Transformationsfunktion berichtet\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Die drei Johnson-Transformationsfunktionen</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (beschränkt): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (unbeschränkt): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tZur Referenz druckt Minitab die SB-Funktion mit dem oberen Grenzwert ausgeschrieben, z. B.\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - dort ist die zweite Konstante innerhalb\n\t\t\t\tdes Ln λ + ε, also λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDas Entfernen löscht immer den Typ und alle Parameter zusammen, da ein partieller Parametersatz\n\t\t\t\tnicht für die inverse Transformation verwendet werden kann\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

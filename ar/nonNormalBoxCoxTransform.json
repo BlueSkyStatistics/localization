@@ -1,20 +1,17 @@
 {
   "title": "تحويل Box-Cox للبيانات غير الطبيعية إلى طبيعية",
   "navigation": "تحويل Box-Cox",
-  "label2": "خياران - إما اختيار متغير غير طبيعي ليتم تحويله إلى طبيعي أو اختيار مجموعة البيانات بأكملها ليتم تحويلها",
+  "label2": "خياران - إما اختيار متغير غير طبيعي ليتم تحويله إلى طبيعي أو اختيار مجموعة البيانات بالكامل ليتم تحويلها",
   "selectVariableRad": "الخيار 1: اختر متغيرًا غير طبيعي من مجموعة البيانات ليتم تحويله إلى طبيعي",
   "variableSelcted": "متغير غير طبيعي ليتم تحويله",
   "boxcoxColName": "(اختياري) حدد اسم متغير جديد لتخزين القيم المحولة. خلاف ذلك، سيتم إنشاء <variable_bcox>",
-  "selectDatasetRad": "الخيار 2: تحويل مجموعة البيانات بأكملها إلى طبيعية",
+  "selectDatasetRad": "الخيار 2: تحويل مجموعة البيانات بالكامل إلى طبيعية",
   "boxcoxDatasetName": "(اختياري) حدد اسم مجموعة بيانات جديدة لتخزين القيم المحولة. خلاف ذلك، سيتم إنشاء <dataset_bcox>",
-  "johnsonDatasetName": "(اختياري) حدد اسم مجموعة بيانات جديدة لجونسون (مطلوب إذا تم اختيار الخيار 2 أعلاه)",
-  "boxcoxChk": "تحويل Box-Cox",
-  "johnsonChk": "تحويل جونسون",
-  "lambda": "(اختياري) قيمة لامدا (λ) في (-2 إلى 2) لاستخدامها في تحويل Box-Cox. إذا لم يتم تحديدها، فسوف تحدد تلقائيًا أفضل قيمة لامدا",
-  "digits": "الأرقام - تقرب إلى عدد الأماكن العشرية المحددة",
+  "lambda": "(اختياري) قيمة لامدا (λ) في (-2 إلى 2) لاستخدامها في تحويل Box-Cox. إذا لم يتم تحديدها، فسيتم التعرف تلقائيًا على أفضل قيمة لامدا",
+  "digits": "الأرقام - تقرب إلى العدد المحدد من المنازل العشرية",
   "help": {
     "title": "تحويل البيانات غير الطبيعية إلى طبيعية",
     "r_help": "help(boxcox, package = MASS)",
-    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة لتحويل متغير غير طبيعي إلى طبيعي باستخدام MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tلا يمكن إجراء تحويل Box-Cox على القيم السلبية\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">للحصول على نظرة عامة جيدة على Box-Cox من MASS، انظر https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tقيم لامدا (λ) المرتبطة بتحويلات Box-Cox المعروفة \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: تحويل مربع ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: لا تحويل؛ يعيد البيانات الأصلية ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: تحويل الجذر التربيعي ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: تحويل الجذر التكعيبي\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: تحويل الجذر الرابع\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: تحويل اللوغاريتم الطبيعي ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: تحويل الجذر التربيعي العكسي ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: تحويل عكسي (1/x)\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: تحويل مربع عكسي ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>الوصف</b></br>\n\t\t\t\tدالة لتحويل متغير غير طبيعي إلى طبيعي باستخدام MASS::boxcox \n\t\t\t\t<br/>\n\t\t\t\tلا يمكن إجراء تحويل Box-Cox على القيم السلبية\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tتستخدم صيغة Box-Cox القياسية: Y = ( X^λ - 1 ) / λ لـ λ ≠ 0، و Y = Ln(X) لـ λ = 0.\n\t\t\t\tعندما λ = 1، يتم إرجاع البيانات الأصلية دون تغيير. هذه الصيغة مستمرة في λ و\n\t\t\t\tمتوافقة مع Minitab و JMP و SAS و car::bcPower في R\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tللحصول على مساعدة تفصيلية - استخدم R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">للحصول على نظرة عامة جيدة على Box-Cox من MASS، انظر https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tقيم لامدا (λ) المرتبطة بتحويلات Box-Cox المألوفة \n\t\t\t\t<br/>\n\t\t\t\tλ = 2: تحويل مربع ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: لا تحويل؛ يعيد البيانات الأصلية ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: تحويل الجذر التربيعي ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: تحويل الجذر التكعيبي\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: تحويل الجذر الرابع\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: تحويل اللوغاريتم الطبيعي ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: تحويل الجذر التربيعي العكسي ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: تحويل عكسي (معكوس) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: تحويل مربع عكسي ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tملاحظة: بالنسبة للقيم المعروفة (مثل λ = 0.5)، تعطي الصيغة القياسية Y = ( sqrt(x) - 1 ) / 0.5،\n\t\t\t\tليس ببساطة sqrt(x). القيم مختلفة في الحجم ولكنها تنتج نتائج طبيعية متطابقة.\n\t\t\t\tتستخدم الصيغة القياسية لضمان التناسق عبر جميع قيم لامدا والتوافق مع\n\t\t\t\tبرامج إحصائية أخرى\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "title": "ジョンソン変換による非正規データの正規化",
+  "navigation": "ジョンソン変換",
+  "label2": "正規化するために最適なジョンソンファミリー（SB、SL、またはSU）を使用して変換される非正規変数を選択してください",
+  "variableSelcted": "変換される非正規変数",
+  "johnsonColName": "(オプション) 変換された値を保存するための新しい変数名を指定してください。そうでなければ <variable_jtrans> が作成されます",
+  "pvalueCriterion": "変換を選択するためのP値基準 - 最良の変換は、この基準（デフォルトは0.10）を超えるアンダーソン-ダーリング正規性p値を持たなければなりません",
+  "forceTransformChk": "変換を強制する、つまり元のデータがすでに正規性テストを通過している場合や、最良のフィットが上記のp値基準を満たさない場合でも、値を変換して保存します",
+  "digits": "桁数 - 指定された小数点以下の桁数に丸めます",
+  "help": {
+    "title": "ジョンソン変換による非正規データの正規化",
+    "r_help": "help(ad.test, package = nortest)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t非正規変数を正規に変換するために、3つのジョンソン分布ファミリー - SB、SL、およびSU - から最適な関数を選択します。ここで、B、L、およびUはそれぞれ変数が制約されている、対数正規、制約なしを指します。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこのダイアログは、アルゴリズム（Chou、PolanskyおよびMason、1998年、SlifkerおよびShapiro、1980年のパラメータ推定式）を実装しています。実装はRに自己完結しており、アーカイブされた'jtrans'パッケージには依存していません。'nortest'パッケージのみが必要です。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. 0.25から1.25までのZ値のグリッドが0.01の増分で考慮されます。\n\t\t\t\t<br/>\n\t\t\t\t2. 各Zについて、標準正規パーセンタイル-3Z、-Z、Z、3Zでサンプル分位数x1、x2、x3、x4が計算されます（補間順序統計、R分位数タイプ5、すなわちランク=n*p + 0.5）およびスプレッドm = x4 - x3、n = x2 - x1、p = x3 - x2が分位数比QR = mn/p&sup2;を与えます。\n\t\t\t\t<br/>\n\t\t\t\t3. QR > 1はSUファミリーを選択し、QR < 1はSBファミリーを選択し、QRが約1の場合はSLファミリーを選択します。ファミリーパラメータGamma (γ)、Eta (η)、Epsilon (ε)、Lambda (λ)は4つの分位数から推定されます。無効なパラメータ（例：SBの境界がデータを含まない）はスキップされます。\n\t\t\t\t<br/>\n\t\t\t\t4. 各Zの変換データは、アンダーソン-ダーリング（AD）テストで正規性がテストされます。\n\t\t\t\t<br/>\n\t\t\t\t5. p値基準（デフォルト0.10）を超える最大のAD p値を持つ変換が最良の変換として選択されます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックス-コックスとは異なり、ジョンソン変換は負の値やゼロとともに使用できます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>出力</b>\n\t\t\t\t<br/>\n\t\t\t\t- サンプルサイズテーブル（合計、N非欠損、N*欠損）\n\t\t\t\t<br/>\n\t\t\t\t- 元のデータのAD統計量とp値を持つ正規確率プロット\n\t\t\t\t<br/>\n\t\t\t\t- 各Z値に対するAD p値の「変換を選択」プロット、p値基準（Ref P）での水平参照線と最良のZでの垂直参照線\n\t\t\t\t<br/>\n\t\t\t\t- 最良の変換タイプ（SB、SL、またはSU）、最良のフィットのためのZ、最良のフィットのp値、推定されたパラメータGamma (γ)、Eta (η)、Epsilon (ε)、Lambda (λ)、およびジョンソン変換関数\n\t\t\t\t<br/>\n\t\t\t\t- 変換データのAD統計量とp値を持つ正規確率プロット\n\t\t\t\t<br/>\n\t\t\t\t- 変換された値を含む新しい変数。変換タイプとパラメータ推定値は、新しい変数の属性（jtrans_type、jtrans_z、jtrans_gamma、jtrans_eta、jtrans_epsilon、jtrans_lambda）として保存されるため、変換は追跡可能であり、逆変換が可能です。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>3つのジョンソン変換関数</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（制約あり）：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL（対数正規）：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU（制約なし）：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t元のデータがすでに正規分布に従っている場合（AD p値が基準以上）、または候補の変換がp値基準を満たさない場合、変換された変数は保存されません - 「変換を強制する」オプションがチェックされている場合を除きます。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t少なくとも8つの非欠損観測が必要です（アンダーソン-ダーリングテストの制限）；信頼できる変換には少なくとも20が必要です。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t参考文献：Chou, Y.M., Polansky, A.M., Mason, R.L. (1998) \"Transforming Non-Normal Data to Normality in Statistical Process Control\", Journal of Quality Technology, 30(2);\n\t\t\t\tSlifker, J.F., Shapiro, S.S. (1980) \"The Johnson System: Selection and Parameter Estimation\",\n\t\t\t\tTechnometrics, 22(2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

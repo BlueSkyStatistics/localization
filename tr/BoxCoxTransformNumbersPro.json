@@ -1,0 +1,16 @@
+{
+  "title": "Bir dizi sayı için Box-Cox dönüşümü (ileri: orijinal ölçekten dönüştürülmüş ölçeğe)",
+  "navigation": "Box-Cox Sayıları Dönüştür",
+  "label2": "Belirtilen Lambda (λ) ile Box-Cox dönüşümü kullanılarak dönüştürülmek üzere bir veya daha fazla pozitif sayısal değer girin (virgülle ayrılmış)",
+  "inputNumbers": "Virgülle ayrılmış bir veya daha fazla pozitif sayısal değer girin (örneğin 47.5, 50.2, 53.6)",
+  "useStoredRad": "Seçenek 1: Veri kümesinden bir değişkenle saklanan Lambda (λ) değerini kullanın (önceki bir Box-Cox dönüşümünden bcox_lambda niteliği)",
+  "variableSelcted": "Saklanan Box-Cox Lambda (λ) olan bir değişken seçin",
+  "manualLambdaRad": "Seçenek 2: Lambda (λ) değerini manuel olarak belirtin (aralık -2 ile 2 arasında)",
+  "lambda": "Lambda (λ) değeri",
+  "digits": "Basamaklar - belirtilen ondalık basamak sayısına yuvarlar",
+  "help": {
+    "title": "Bir dizi sayı için Box-Cox dönüşümü",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tKullanıcı tarafından sağlanan bir veya daha fazla pozitif sayısal değere Box-Cox dönüşümünü (ileri yön: orijinal ölçekten dönüştürülmüş ölçeğe) uygulayın. Lambda (λ), ya saklanan bir bcox_lambda niteliğine sahip bir değişkenden ya da manuel olarak girilerek elde edilir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBu, belirli bir veri kümesine uydurulmuş olan aynı Box-Cox Lambda kullanılarak spesifikasyon limitlerini, hedefleri veya herhangi bir referans değerini dönüştürmek için yararlıdır - örneğin, dönüştürülmüş ölçek üzerinde bir yetenek analizi yapmadan önce veya belirli bir orijinal ölçek değerinin dönüştürülmüş alandaki karşılığını kontrol etmek için\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTüm giriş değerleri kesinlikle pozitif olmalıdır (X &gt; 0) - Box-Cox dönüşümü sıfır veya negatif değerler için tanımlı değildir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Box-Cox dönüşümü</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : Y = Ln( X )\n\t\t\t\t<br/>\n\t\t\t\tλ ≠ 0 : Y = ( X^λ - 1 ) / λ\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tanıdık dönüşümlerle ilişkili Lambda (λ) değerleri</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: kare dönüşümü ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: dönüşüm yok; orijinal veriyi döner ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: karekök dönüşümü ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: küp kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: dördüncü kök dönüşümü\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: doğal log dönüşümü ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -0.50: ters karekök dönüşümü ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -1: ters (inverse) dönüşüm ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = -2: ters kare dönüşümü ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-Cox veya Lambda (λ) hakkında detaylı yardım için - R help(boxcox, package = MASS) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Cox hakkında iyi bir genel bakış için https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html adresine bakın</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

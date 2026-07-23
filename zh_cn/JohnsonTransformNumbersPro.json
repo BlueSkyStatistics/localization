@@ -1,0 +1,26 @@
+{
+  "language": {
+    "language": "simplified chinese",
+    "key": "zh_cn"
+  },
+  "original_json": {
+    "title": "约翰逊变换数字列表（前向：原始尺度到变换尺度）",
+    "navigation": "约翰逊变换数字",
+    "label2": "输入一个或多个数字值（用逗号分隔），以使用约翰逊变换函数进行变换",
+    "inputNumbers": "输入一个或多个用逗号分隔的数字值（例如 47.5, 50.2, 53.6）",
+    "useStoredRad": "选项 1：使用与数据集中的变量存储的约翰逊类型和参数（来自先前约翰逊变换的 jtrans_* 属性）",
+    "variableSelcted": "选择一个具有存储的约翰逊变换参数的变量",
+    "manualParamsRad": "选项 2：手动指定约翰逊变换类型和参数（例如来自 Minitab 输出）",
+    "typeSelected": "约翰逊变换类型",
+    "gamma": "伽马 (γ)",
+    "eta": "埃塔 (η) - 必须大于 0",
+    "epsilon": "埃普西龙 (ε)",
+    "lambda": "兰姆达 (λ) - 对于 SB 和 SU 必须大于 0。对于 SL 可以留空（不使用，默认为 1）",
+    "digits": "数字 - 四舍五入到指定的小数位数",
+    "help": {
+      "title": "约翰逊变换数字列表",
+      "r_help": "help(asinh)",
+      "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t将约翰逊变换（前向方向：原始尺度到变换尺度）应用于一个\n\t\t\t\t或多个用户提供的数字值。变换类型（SB、SL 或 SU）和参数\n\t\t\t\t伽马 (γ)、埃塔 (η)、埃普西龙 (ε)、兰姆达 (λ) 可以从具有存储的\n\t\t\t\t约翰逊属性的变量中获得或手动输入\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t这对于使用与数据集拟合的相同约翰逊函数变换规范限制、目标或任何参考值非常有用 - 例如，在变换尺度上运行能力分析之前，或检查特定原始尺度值在变换空间中的映射\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三种约翰逊变换函数</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\t输入 X 必须满足 ε < X < ε + λ（有界范围）。超出此范围的值\n\t\t\t\t无法变换并将被标记\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL（对数正态）：Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\t输入 X 必须满足 X > ε。等于或低于 ε 的值无法变换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU（无界）：Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t任何实值 X 都被接受（SU 家族是无界的）\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>参考 - Minitab SB 函数符号</b>\n\t\t\t\t<br/>\n\t\t\t\tMinitab 将 SB 函数打印为上限写出，例如\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - Ln 内部的第二个常数是 λ + ε，因此 λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+  }
+}

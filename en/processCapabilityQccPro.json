@@ -1,6 +1,6 @@
 {
-    "title": "Process Capability (Sixpack) ",
-    "navigation": "Process Capability (Sixpack) ",
+    "title": "Process Capability (Sixpack)",
+    "navigation": "Process Capability (Sixpack)",
     "summarySixpackPlotChk": "Sixpack (underlying I-MR, Xbar, R, S charts, Probability, and Capability plots)",
     "flipaxisPPplotChk": "Flip axis for the P-P plot",
     "displaySLlineonPlotChk": "Display LSL and USL lines on the underlying plots",
@@ -31,6 +31,7 @@
     "addlSpecLinesLabel": "Label for the additional Spec lines (comma separated e.g. Spec 1, Spec 2, Spec 3)",
     "addRefLines": "Add Reference Lines",
     "digits": "Digits - number of digits to display",
+    "ppmTableChk": "Print Performance (parts per million) table",
     "help": {
         "title": "Process Capability (qcc pkg)",
         "r_help": "help(process.capability, package = qcc)",

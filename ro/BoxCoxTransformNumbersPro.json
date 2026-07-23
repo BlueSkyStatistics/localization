@@ -1,0 +1,16 @@
+{
+  "title": "Transformarea Box-Cox pentru o listă de numere (înainte: scala originală la scala transformată)",
+  "navigation": "Transformă numerele Box-Cox",
+  "label2": "Introduceți unul sau mai multe valori numerice pozitive (separate prin virgulă) pentru a fi transformate folosind transformarea Box-Cox cu Lambda specificat (λ)",
+  "inputNumbers": "Introduceți unul sau mai multe valori numerice pozitive separate prin virgule (de exemplu, 47.5, 50.2, 53.6)",
+  "useStoredRad": "Opțiunea 1: Utilizați Lambda (λ) stocat cu o variabilă din setul de date (atributul bcox_lambda dintr-o transformare Box-Cox anterioară)",
+  "variableSelcted": "Selectați o variabilă cu un Lambda Box-Cox stocat (λ)",
+  "manualLambdaRad": "Opțiunea 2: Specificați manual valoarea Lambda (λ) (în intervalul -2 la 2)",
+  "lambda": "Valoarea Lambda (λ)",
+  "digits": "Cifre - rotunjit la numărul specificat de zecimale",
+  "help": {
+    "title": "Transformarea Box-Cox pentru o listă de numere",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tAplicați transformarea Box-Cox (direcția înainte: scala originală la scala transformată) la una\n\t\t\t\tsau mai multe valori numerice pozitive furnizate de utilizator. Lambda (λ) este obținut dintr-o variabilă\n\t\t\t\tcu un atribut bcox_lambda stocat sau introdus manual\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAcest lucru este util pentru transformarea limitelor de specificație, țintelor sau oricăror valori de referință folosind\n\t\t\t\tsame Box-Cox Lambda care a fost ajustat la un set de date - de exemplu, înainte de a rula o analiză de capacitate\n\t\t\t\tsupra scalei transformate, sau pentru a verifica ce valoare de scară originală se mapează\n\t\t\t\tîn spațiul transformat\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tToate valorile de intrare trebuie să fie strict pozitive (X &gt; 0) - transformarea Box-Cox nu este definită\n\t\t\t\tpentru valori zero sau negative\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Transformarea Box-Cox</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : Y = Ln( X )\n\t\t\t\t<br/>\n\t\t\t\tλ ≠ 0 : Y = ( X^λ - 1 ) / λ\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Valori Lambda (λ) asociate cu transformări familiare</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: transformare pătratică ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: fără transformare; returnează datele originale ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: transformare radicală pătrată ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: transformare radicală cubică\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: transformare radicală de ordinul patru\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: transformare logaritmică naturală ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -0.50: transformare radicală pătrată reciprocă ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -1: transformare reciprocă (inversă) ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = -2: transformare pătrată reciprocă ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat despre Box-Cox sau Lambda (λ) - utilizați R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">Pentru o bună prezentare generală a MASS Box-Cox, consultați https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

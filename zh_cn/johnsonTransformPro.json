@@ -1,0 +1,15 @@
+{
+  "title": "约翰逊变换非正态数据为正态",
+  "navigation": "约翰逊变换",
+  "label2": "选择一个非正态变量，以使用最佳拟合的约翰逊家族（SB、SL或SU）进行变换为正态",
+  "variableSelcted": "一个要变换的非正态变量",
+  "johnsonColName": "(可选) 指定一个新变量名称以存储变换后的值。否则将创建<variable_jtrans>",
+  "pvalueCriterion": "选择变换的P值标准 - 最佳变换的安德森-达林正态性p值必须高于此标准（默认值为0.10）",
+  "forceTransformChk": "强制变换，即使原始数据已经通过正态性测试或最佳拟合不满足上述p值标准，也要变换并存储值",
+  "digits": "数字 - 四舍五入到指定的小数位数",
+  "help": {
+    "title": "约翰逊变换非正态数据为正态",
+    "r_help": "help(ad.test, package = nortest)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t通过从三个约翰逊分布家族中选择最佳函数，将非正态变量变换为正态 - SB、SL和SU，其中B、L和U分别指被界定、对数正态和不受限的变量\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t此对话框实现了算法（Chou, Polansky和Mason, 1998年，使用Slifker和Shapiro, 1980年的参数估计公式）。该实现是自包含的\n\t\t\t\t在R中 - 它不依赖于归档的'jtrans'包。只需要'nortest'包\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. 考虑从0.25到1.25的Z值网格，增量为0.01\n\t\t\t\t<br/>\n\t\t\t\t2. 对于每个Z，计算标准正态百分位数-3Z、-Z、Z、3Z处的样本分位数x1、x2、x3、x4（插值顺序统计量，R分位数类型5，即rank = n*p + 0.5），并且\n\t\t\t\t分布m = x4 - x3，n = x2 - x1，p = x3 - x2给出分位数比QR = mn/p&sup2;\n\t\t\t\t<br/>\n\t\t\t\t3. QR &gt; 1选择SU家族，QR &lt; 1选择SB家族，QR大约为1选择SL家族。\n\t\t\t\t家族参数Gamma (γ)、Eta (η)、Epsilon (ε)、Lambda (λ)是从四个分位数中估计的。\n\t\t\t\t无效参数的拟合（例如SB界限不包含数据）被跳过\n\t\t\t\t<br/>\n\t\t\t\t4. 对每个Z的变换数据进行安德森-达林（AD）测试以检验正态性\n\t\t\t\t<br/>\n\t\t\t\t5. 选择具有最大AD p值且大于p值标准（默认0.10）的变换作为最佳变换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t与Box-Cox不同，约翰逊变换可以与负值和零一起使用\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>输出 </b>\n\t\t\t\t<br/>\n\t\t\t\t- 样本大小表（总计，N非缺失，N*缺失）\n\t\t\t\t<br/>\n\t\t\t\t- 原始数据的正态概率图，带有AD统计量和p值\n\t\t\t\t<br/>\n\t\t\t\t- “选择变换”图，AD p值与每个Z值的关系，带有p值标准（Ref P）的水平参考线和最佳Z的垂直参考线\n\t\t\t\t<br/>\n\t\t\t\t- 最佳变换类型（SB、SL或SU），最佳拟合的Z，最佳拟合的p值，估计的参数Gamma (γ)、Eta (η)、Epsilon (ε)、Lambda (λ)，以及约翰逊变换函数\n\t\t\t\t<br/>\n\t\t\t\t- 变换数据的正态概率图，带有AD统计量和p值\n\t\t\t\t<br/>\n\t\t\t\t- 包含变换值的新变量。变换类型和参数估计作为属性存储（jtrans_type、jtrans_z、jtrans_gamma、jtrans_eta、\n\t\t\t\tjtrans_epsilon、jtrans_lambda），以便变换可追溯，并且逆变换仍然可能\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三种约翰逊变换函数</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL（对数正态）：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU（无界）：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果原始数据已经遵循正态分布（AD p值达到或\n\t\t\t\t高于标准），或者如果没有候选变换满足p值标准，则不存储变换变量 - 除非选中“强制变换”选项\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t需要至少8个非缺失观察值（安德森-达林测试的限制）；\n\t\t\t\t至少20个以获得可靠的变换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t参考文献：Chou, Y.M., Polansky, A.M., Mason, R.L. (1998) \"Transforming Non-Normal Data to\n\t\t\t\tNormality in Statistical Process Control\", Journal of Quality Technology, 30(2);\n\t\t\t\tSlifker, J.F., Shapiro, S.S. (1980) \"The Johnson System: Selection and Parameter Estimation\",\n\t\t\t\tTechnometrics, 22(2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
