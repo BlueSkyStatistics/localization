@@ -1,18 +1,12 @@
 {
-  "language": {
-    "language": "traditional chinese",
-    "key": "zh_tw"
-  },
-  "original_json": {
-    "title": "檢查約翰遜轉換類型及參數，針對具有先前約翰遜轉換的變數",
-    "navigation": "檢查約翰遜參數",
-    "label2": "選擇一個或多個變數以檢查是否應用了約翰遜轉換，如果有，則檢查相關類型 (SB, SL, SU) 和參數",
-    "variablelistSelcted": "待檢查的變數",
-    "digits": "數字 - 四捨五入到指定的小數位數",
-    "help": {
-      "title": "檢查與所選變數相關的約翰遜轉換類型及參數",
-      "r_help": "help(attr)",
-      "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t檢查所選變數的相關約翰遜轉換類型及參數（如果有），這些變數具有先前的約翰遜轉換\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t當伴隨的約翰遜轉換對話框儲存一個轉換變數時，它會將轉換記錄為變數的屬性：jtrans_type (SB, SL, 或 SU)、jtrans_z (最佳擬合的 Z 值)，以及參數 jtrans_gamma (γ)、jtrans_eta (η)、jtrans_epsilon (ε)、jtrans_lambda (λ)。此對話框在表格中顯示這些值，並在表格下方列印每個轉換變數的重建轉換函數。沒有儲存約翰遜轉換的變數將被排除在表格之外，並在其下方單獨列出\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三種約翰遜轉換函數</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (有界)：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (對數常態)：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (無界)：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t正確的類型和參數很重要，因為如果需要進行逆約翰遜轉換，將會使用它們。如果需要，請使用伴隨的添加/替換/移除約翰遜參數對話框來修正它們\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
-    }
+  "title": "檢查約翰遜轉換類型及參數，針對具有先前約翰遜轉換的變數",
+  "navigation": "檢查約翰遜參數",
+  "label2": "選擇一個或多個變數以檢查是否應用了約翰遜轉換，如果有，則檢查相關類型 (SB, SL, SU) 和參數",
+  "variablelistSelcted": "待檢查的變數",
+  "digits": "數字 - 四捨五入到指定的小數位數",
+  "help": {
+    "title": "檢查與所選變數相關的約翰遜轉換類型及參數",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t檢查所選變數的相關約翰遜轉換類型及參數（如果有），這些變數具有先前的約翰遜轉換\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t當伴隨的約翰遜轉換對話框儲存一個轉換變數時，它會將轉換記錄為變數的屬性：jtrans_type (SB, SL, 或 SU)、jtrans_z (最佳擬合的 Z 值)，以及參數 jtrans_gamma (γ)、jtrans_eta (η)、jtrans_epsilon (ε)、jtrans_lambda (λ)。此對話框在表格中顯示這些值，並在表格下方列印每個轉換變數的重建轉換函數。沒有儲存約翰遜轉換的變數將被排除在表格之外，並在其下方單獨列出\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三種約翰遜轉換函數</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (有界)：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (對數常態)：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (無界)：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t正確的類型和參數很重要，因為如果需要進行逆約翰遜轉換，將會使用它們。如果需要，請使用伴隨的添加/替換/移除約翰遜參數對話框來修正它們\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

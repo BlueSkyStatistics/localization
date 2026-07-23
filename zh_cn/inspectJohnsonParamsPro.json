@@ -1,18 +1,12 @@
 {
-  "language": {
-    "language": "简体中文",
-    "key": "zh_cn"
-  },
-  "original_json": {
-    "title": "检查约翰逊变换类型和参数，适用于具有先前约翰逊变换的变量",
-    "navigation": "检查约翰逊参数",
-    "label2": "选择一个或多个变量以检查是否应用了约翰逊变换，如果应用了，相关的类型（SB、SL、SU）和参数",
-    "variablelistSelcted": "待检查的变量",
-    "digits": "数字 - 四舍五入到指定的小数位数",
-    "help": {
-      "title": "检查与所选变量相关的约翰逊变换类型和参数",
-      "r_help": "help(attr)",
-      "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t检查所选变量的相关约翰逊变换类型和参数（如果有），这些变量具有先前的约翰逊变换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当伴随的约翰逊变换对话框存储一个变换变量时，它将变换记录为变量的属性：jtrans_type（SB、SL或SU）、jtrans_z（最佳拟合的Z值）和参数jtrans_gamma（γ）、jtrans_eta（η）、jtrans_epsilon（ε）、jtrans_lambda（λ）。该对话框在表格中显示这些值，并在表格下方打印每个变换变量的重构变换函数。没有存储约翰逊变换的变量将被排除在表格之外，并单独列在其下方\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三种约翰逊变换函数</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL（对数正态）：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU（无界）：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t正确的类型和参数很重要，因为如果需要逆约翰逊变换，将使用它们。如果需要，请使用伴随的添加/替换/删除约翰逊参数对话框来更正它们\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
-    }
+  "title": "检查约翰逊变换类型和参数，适用于具有先前约翰逊变换的变量",
+  "navigation": "检查约翰逊参数",
+  "label2": "选择一个或多个变量以检查是否应用了约翰逊变换，如果应用了，相关的类型（SB、SL、SU）和参数",
+  "variablelistSelcted": "待检查的变量",
+  "digits": "数字 - 四舍五入到指定的小数位数",
+  "help": {
+    "title": "检查与所选变量相关的约翰逊变换类型和参数",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t检查所选变量的相关约翰逊变换类型和参数（如果有），这些变量具有先前的约翰逊变换\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t当伴随的约翰逊变换对话框存储一个变换变量时，它将变换记录为变量的属性：jtrans_type（SB、SL或SU）、jtrans_z（最佳拟合的Z值）和参数jtrans_gamma（γ）、jtrans_eta（η）、jtrans_epsilon（ε）、jtrans_lambda（λ）。该对话框在表格中显示这些值，并在表格下方打印每个变换变量的重构变换函数。没有存储约翰逊变换的变量将被排除在表格之外，并单独列在其下方\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三种约翰逊变换函数</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL（对数正态）：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU（无界）：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t正确的类型和参数很重要，因为如果需要逆约翰逊变换，将使用它们。如果需要，请使用伴随的添加/替换/删除约翰逊参数对话框来更正它们\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -1,20 +1,14 @@
 {
-  "language": {
-    "language": "简体中文",
-    "key": "zh_cn"
-  },
-  "original_json": {
+  "title": "所有成对对比",
+  "navigation": "所有成对对比",
+  "notelabel1": "注意：您必须访问创建模型的数据集。",
+  "notelabel2": "支持的模型：线性模型 (lm)，广义线性模型 (glm)，Cox比例风险模型 (coxph)，广义估计方程 (glmgee)，分位数回归 (rq)，线性混合模型 (lmerModLmerTest)",
+  "modelselectorlabel": "选择模型名称",
+  "plotvarslabel": "所有成对对比的变量",
+  "multadjlabel": "多重比较调整",
+  "help": {
     "title": "所有成对对比",
-    "navigation": "所有成对对比",
-    "notelabel1": "注意：您必须访问创建模型的数据集。",
-    "notelabel2": "支持的模型：线性模型 (lm)，广义线性模型 (glm)，Cox比例风险模型 (coxph)，广义估计方程 (glmgee)，分位数回归 (rq)，线性混合模型 (lmerModLmerTest)",
-    "modelselectorlabel": "选择模型名称",
-    "plotvarslabel": "所有成对对比的变量",
-    "multadjlabel": "多重比较调整",
-    "help": {
-      "title": "所有成对对比",
-      "r_help": "help(emmeans, package = 'emmeans')",
-      "body": "\n这将为模型中的分类预测变量创建所有成对水平比较的表格。 还提供了所有方向（例如，水平 A 相对于水平 B，以及水平 B \n相对于水平 A）。 估计值以结果响应尺度提供（例如，线性模型的差异，Cox 模型的风险比，逻辑模型的比值比，Poisson 模型的比率比）。  \n可以为每个分类预测变量指定可选的多重比较调整。 目前，支持的模型类别包括 lm（线性模型）、glm（广义线性模型，\n包括逻辑和 Poisson）、coxph（Cox 比例风险）、glmgee（广义估计方程）、rq（分位数回归）和 lmerModLmerTest（线性混合模型）。\n<br/><br/>\n<b>选择模型名称：</b> 选择模型拟合时指定的名称。 这是一个必填字段。\n<br/><br/>\n<b>所有成对对比的变量：</b> 指定要进行成对水平比较的分类变量。这些变量必须在模型拟合时作为预测变量包含。\n可以使用作为字符、因子、序数、逻辑或数值虚拟变量输入的变量。 这是一个必填字段。\n<br/><br/>\n<b>多重比较调整：</b> 指定多重比较调整。 选项包括无（不调整）、Tukey、Bonferroni、Sidak、Holm、Hochberg、Hommel、fdr（假发现率）、\nBH（Benjamini-Hochberg）和 BY（Benjamini-Yekutieli）。 输出中提供了关于为置信区间和 p 值所做的多重比较调整的说明。\n<br/><br/>\n<b>所需的 R 包：</b> emmeans\n"
-    }
+    "r_help": "help(emmeans, package = 'emmeans')",
+    "body": "\n这将为模型中的分类预测变量创建所有成对水平比较的表格。 还提供了所有方向（例如，水平 A 相对于水平 B，以及水平 B \n相对于水平 A）。 估计值以结果响应尺度提供（例如，线性模型的差异，Cox 模型的风险比，逻辑模型的比值比，Poisson 模型的比率比）。  \n可以为每个分类预测变量指定可选的多重比较调整。 目前，支持的模型类别包括 lm（线性模型）、glm（广义线性模型，\n包括逻辑和 Poisson）、coxph（Cox 比例风险）、glmgee（广义估计方程）、rq（分位数回归）和 lmerModLmerTest（线性混合模型）。\n<br/><br/>\n<b>选择模型名称：</b> 选择模型拟合时指定的名称。 这是一个必填字段。\n<br/><br/>\n<b>所有成对对比的变量：</b> 指定要进行成对水平比较的分类变量。这些变量必须在模型拟合时作为预测变量包含。\n可以使用作为字符、因子、序数、逻辑或数值虚拟变量输入的变量。 这是一个必填字段。\n<br/><br/>\n<b>多重比较调整：</b> 指定多重比较调整。 选项包括无（不调整）、Tukey、Bonferroni、Sidak、Holm、Hochberg、Hommel、fdr（假发现率）、\nBH（Benjamini-Hochberg）和 BY（Benjamini-Yekutieli）。 输出中提供了关于为置信区间和 p 值所做的多重比较调整的说明。\n<br/><br/>\n<b>所需的 R 包：</b> emmeans\n"
   }
 }

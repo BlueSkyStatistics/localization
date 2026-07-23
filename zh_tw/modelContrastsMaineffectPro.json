@@ -1,20 +1,14 @@
 {
-  "language": {
-    "language": "traditional chinese",
-    "key": "zh_tw"
-  },
-  "original_json": {
+  "title": "所有成對對比",
+  "navigation": "所有成對對比",
+  "notelabel1": "注意：您必須擁有創建模型的數據集的訪問權限。",
+  "notelabel2": "支持的模型：線性模型 (lm)、廣義線性模型 (glm)、Cox比例風險模型 (coxph)、廣義估計方程 (glmgee)、分位數回歸 (rq)、線性混合模型 (lmerModLmerTest)",
+  "modelselectorlabel": "選擇模型名稱",
+  "plotvarslabel": "所有成對對比的變量",
+  "multadjlabel": "多重比較調整",
+  "help": {
     "title": "所有成對對比",
-    "navigation": "所有成對對比",
-    "notelabel1": "注意：您必須擁有創建模型的數據集的訪問權限。",
-    "notelabel2": "支持的模型：線性模型 (lm)、廣義線性模型 (glm)、Cox比例風險模型 (coxph)、廣義估計方程 (glmgee)、分位數回歸 (rq)、線性混合模型 (lmerModLmerTest)",
-    "modelselectorlabel": "選擇模型名稱",
-    "plotvarslabel": "所有成對對比的變量",
-    "multadjlabel": "多重比較調整",
-    "help": {
-      "title": "所有成對對比",
-      "r_help": "help(emmeans, package = 'emmeans')",
-      "body": "\n這會為模型中的類別預測變量創建所有成對水平比較的表格。 也提供所有方向（例如，水平 A 相對於水平 B，水平 B \n相對於水平 A）。 估計值以結果響應尺度提供（例如，線性模型的差異，Cox 模型的風險比，邏輯模型的比率比，Poisson 模型的比率比）。  \n可以為每個類別預測變量指定可選的多重比較調整。 目前，支持的模型類別有 lm（線性模型）、glm（廣義線性模型，\n包括邏輯和 Poisson）、coxph（Cox 比例風險）、glmgee（廣義估計方程）、rq（分位數回歸）和 lmerModLmerTest（線性混合模型）。\n<br/><br/>\n<b>選擇模型名稱：</b> 選擇擬合模型時指定的模型名稱。 這是一個必填字段。\n<br/><br/>\n<b>所有成對對比的變量：</b> 指定要進行成對水平比較的類別變量。 這些變量必須在擬合模型時作為預測變量包含。\n以字符、因子、序數、邏輯或數值虛擬變量輸入的變量可以使用。 這是一個必填字段。\n<br/><br/>\n<b>多重比較調整：</b> 指定多重比較調整。 選項包括無（不調整）、Tukey、Bonferroni、Sidak、Holm、Hochberg、Hommel、fdr（假陽性率）、\nBH（Benjamini-Hochberg）和 BY（Benjamini-Yekutieli）。 輸出中提供了有關為置信區間和 p 值進行的多重比較調整的說明。\n<br/><br/>\n<b>所需的 R 套件：</b> emmeans\n"
-    }
+    "r_help": "help(emmeans, package = 'emmeans')",
+    "body": "\n這會為模型中的類別預測變量創建所有成對水平比較的表格。 也提供所有方向（例如，水平 A 相對於水平 B，水平 B \n相對於水平 A）。 估計值以結果響應尺度提供（例如，線性模型的差異，Cox 模型的風險比，邏輯模型的比率比，Poisson 模型的比率比）。  \n可以為每個類別預測變量指定可選的多重比較調整。 目前，支持的模型類別有 lm（線性模型）、glm（廣義線性模型，\n包括邏輯和 Poisson）、coxph（Cox 比例風險）、glmgee（廣義估計方程）、rq（分位數回歸）和 lmerModLmerTest（線性混合模型）。\n<br/><br/>\n<b>選擇模型名稱：</b> 選擇擬合模型時指定的模型名稱。 這是一個必填字段。\n<br/><br/>\n<b>所有成對對比的變量：</b> 指定要進行成對水平比較的類別變量。 這些變量必須在擬合模型時作為預測變量包含。\n以字符、因子、序數、邏輯或數值虛擬變量輸入的變量可以使用。 這是一個必填字段。\n<br/><br/>\n<b>多重比較調整：</b> 指定多重比較調整。 選項包括無（不調整）、Tukey、Bonferroni、Sidak、Holm、Hochberg、Hommel、fdr（假陽性率）、\nBH（Benjamini-Hochberg）和 BY（Benjamini-Yekutieli）。 輸出中提供了有關為置信區間和 p 值進行的多重比較調整的說明。\n<br/><br/>\n<b>所需的 R 套件：</b> emmeans\n"
   }
 }

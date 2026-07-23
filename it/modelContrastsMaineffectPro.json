@@ -1,20 +1,14 @@
 {
-  "language": {
-    "language": "Italian",
-    "key": "it"
-  },
-  "original_json": {
+  "title": "Tutti i Contrasti a Coppie",
+  "navigation": "Tutti i Contrasti a Coppie",
+  "notelabel1": "NOTA: Devi avere accesso al dataset che ha creato il modello.",
+  "notelabel2": "Modelli supportati: modelli lineari (lm), modelli lineari generalizzati (glm), rischi proporzionali di Cox (coxph), equazione di stima generalizzata (glmgee), regressione quantile (rq), modelli misti lineari (lmerModLmerTest)",
+  "modelselectorlabel": "Seleziona Nome Modello",
+  "plotvarslabel": "Variabili per tutti i contrasti a coppie",
+  "multadjlabel": "Regolazione per confronti multipli",
+  "help": {
     "title": "Tutti i Contrasti a Coppie",
-    "navigation": "Tutti i Contrasti a Coppie",
-    "notelabel1": "NOTA: Devi avere accesso al dataset che ha creato il modello.",
-    "notelabel2": "Modelli supportati: modelli lineari (lm), modelli lineari generalizzati (glm), rischi proporzionali di Cox (coxph), equazione di stima generalizzata (glmgee), regressione quantile (rq), modelli misti lineari (lmerModLmerTest)",
-    "modelselectorlabel": "Seleziona Nome Modello",
-    "plotvarslabel": "Variabili per tutti i contrasti a coppie",
-    "multadjlabel": "Regolazione per confronti multipli",
-    "help": {
-      "title": "Tutti i Contrasti a Coppie",
-      "r_help": "help(emmeans, package = 'emmeans')",
-      "body": "\nQuesto crea una tabella di tutti i confronti a livello a coppie per i predittori categorici in un modello. Tutte le direzioni sono anche fornite (ad es. livello A rispetto al livello B, e livello B \nrispetto al livello A). Le stime sono fornite sulla scala di risposta dell'outcome (ad es. differenze per modelli lineari, rapporti di rischio per modelli di Cox, rapporti di odds per modelli logistici, rapporti di tasso per modelli di Poisson). \nPossono essere specificate regolazioni per confronti multipli opzionali per ciascun predittore categorico. Attualmente, sono supportati modelli di classe lm (modelli lineari), glm (modelli lineari generalizzati, \nche includono logistici e Poisson), coxph (rischi proporzionali di Cox), glmgee (equazione di stima generalizzata), rq (regressione quantile) e lmerModLmerTest (modelli misti lineari).\n<br/><br/>\n<b>Seleziona Nome Modello:</b> Scegli il nome del modello come specificato quando il modello è stato adattato. Questo è un campo obbligatorio.\n<br/><br/>\n<b>Variabili per tutti i contrasti a coppie:</b> Specifica quali variabili categoriche fare confronti a livello a coppie. Queste devono essere state incluse come predittori quando il modello è stato adattato.\nLe variabili inserite come carattere, fattore, ordinale, logico o variabili dummy numeriche possono essere utilizzate. Questo è un campo obbligatorio.\n<br/><br/>\n<b>Regolazione per confronti multipli:</b> Specifica la regolazione per confronti multipli. Le opzioni sono nessuna (nessuna regolazione), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (tasso di scoperta falsa), \nBH (Benjamini-Hochberg) e BY (Benjamini-Yekutieli). Note sono fornite nell'output riguardo a quale regolazione per confronti multipli è stata effettuata per gli intervalli di confidenza e i valori p.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> emmeans\n"
-    }
+    "r_help": "help(emmeans, package = 'emmeans')",
+    "body": "\nQuesto crea una tabella di tutti i confronti a livello a coppie per i predittori categorici in un modello. Tutte le direzioni sono anche fornite (ad es. livello A rispetto al livello B, e livello B \nrispetto al livello A). Le stime sono fornite sulla scala di risposta dell'outcome (ad es. differenze per modelli lineari, rapporti di rischio per modelli di Cox, rapporti di odds per modelli logistici, rapporti di tasso per modelli di Poisson). \nPossono essere specificate regolazioni per confronti multipli opzionali per ciascun predittore categorico. Attualmente, sono supportati modelli di classe lm (modelli lineari), glm (modelli lineari generalizzati, \nche includono logistici e Poisson), coxph (rischi proporzionali di Cox), glmgee (equazione di stima generalizzata), rq (regressione quantile) e lmerModLmerTest (modelli misti lineari).\n<br/><br/>\n<b>Seleziona Nome Modello:</b> Scegli il nome del modello come specificato quando il modello è stato adattato. Questo è un campo obbligatorio.\n<br/><br/>\n<b>Variabili per tutti i contrasti a coppie:</b> Specifica quali variabili categoriche fare confronti a livello a coppie. Queste devono essere state incluse come predittori quando il modello è stato adattato.\nLe variabili inserite come carattere, fattore, ordinale, logico o variabili dummy numeriche possono essere utilizzate. Questo è un campo obbligatorio.\n<br/><br/>\n<b>Regolazione per confronti multipli:</b> Specifica la regolazione per confronti multipli. Le opzioni sono nessuna (nessuna regolazione), Tukey, Bonferroni, Sidak, Holm, Hochberg, Hommel, fdr (tasso di scoperta falsa), \nBH (Benjamini-Hochberg) e BY (Benjamini-Yekutieli). Note sono fornite nell'output riguardo a quale regolazione per confronti multipli è stata effettuata per gli intervalli di confidenza e i valori p.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> emmeans\n"
   }
 }
