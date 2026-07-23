@@ -6,6 +6,8 @@
     "rmstChk": "Compute restricted mean survival time (RMST)",
     "rmstSEChk": "Compute std error for RMST using bootstrap (note: it will take a while)",
     "bootIter": "Bootstrap iteration",
+    "bootCIChk": "Use bootstrap percentile confidence intervals for the Survival/Failure/Cumulative Hazard and Quantile Survival Time tables (instead of the default normal-approximation CIs). Recommended for heavily censored data, sparse events, or times/quantiles that extrapolate beyond the observed data range, where the default CIs can become unstable (e.g. 0, Inf, or identical bounds across rows). Note: it will take a while.",
+    "oneSidedChk": "Display a one-sided confidence bound (e.g. z=1.645 for a 95% bound) instead of the two-sided (z ≈ 1.96) interval shown by default",
     "labelSurvival": "Survival Plot Type",
     "survivalradioCI": "Survival with CI",
     "survivalradio": "Survival",
