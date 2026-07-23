@@ -1,0 +1,18 @@
+{
+  "language": {
+    "language": "Italian",
+    "key": "it"
+  },
+  "original_json": {
+    "title": "Ispeziona il tipo di trasformazione Johnson e i parametri per le variabili con trasformazione Johnson precedente",
+    "navigation": "Ispeziona i parametri Johnson",
+    "label2": "Seleziona una o più variabili per verificare se è stata applicata una trasformazione Johnson e, in tal caso, il tipo associato (SB, SL, SU) e i parametri",
+    "variablelistSelcted": "Variabili da ispezionare",
+    "digits": "Cifre - arrotonda al numero specificato di decimali",
+    "help": {
+      "title": "Controlla il tipo di trasformazione Johnson e i parametri associati alle variabili selezionate",
+      "r_help": "help(attr)",
+      "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tControlla il tipo di trasformazione Johnson associato e i parametri, se presenti, per le variabili selezionate con una trasformazione Johnson precedente\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tQuando la finestra di dialogo della trasformazione Johnson compagna memorizza una variabile trasformata, registra la trasformazione come attributi della variabile: jtrans_type (SB, SL o SU), jtrans_z (il valore Z della migliore adattamento), e i parametri jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε), jtrans_lambda (λ). Questa finestra di dialogo visualizza quei valori in una tabella e stampa la funzione di trasformazione ricostruita per ogni variabile trasformata sotto la tabella. Le variabili senza una trasformazione Johnson memorizzata sono escluse dalla tabella e elencate separatamente sotto di essa\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Le tre funzioni di trasformazione Johnson</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitata): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormale): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (illimitata): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIl tipo e i parametri corretti sono importanti poiché saranno utilizzati se è necessaria una trasformazione Johnson inversa. Usa la finestra di dialogo compagna Aggiungi/Sostituisci/Rimuovi parametri Johnson per correggerli se necessario\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+  }
+}

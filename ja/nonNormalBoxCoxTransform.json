@@ -1,20 +1,23 @@
 {
-  "title": "非正規データのボックス-コックス変換",
-  "navigation": "ボックス-コックス変換",
-  "label2": "2つのオプション - 非正規変数を選択して正規に変換するか、全データセットを選択して変換するか",
-  "selectVariableRad": "オプション1: データセットから非正規変数を選択して正規に変換する",
-  "variableSelcted": "変換される非正規変数",
-  "boxcoxColName": "(オプション) 変換された値を保存するための新しい変数名を指定します。指定しない場合は<variable_bcox>が作成されます",
-  "selectDatasetRad": "オプション2: 全データセットを正規に変換する",
-  "boxcoxDatasetName": "(オプション) 変換された値を保存するための新しいデータセット名を指定します。指定しない場合は<dataset_bcox>が作成されます",
-  "johnsonDatasetName": "(オプション) ジョンソンのための新しいデータセット名を指定します（上記のオプション2を選択した場合は必須）",
-  "boxcoxChk": "ボックス-コックス変換",
-  "johnsonChk": "ジョンソン変換",
-  "lambda": "(オプション) ボックス-コックス変換に使用される(-2から2の)ラムダ(λ)値。指定しない場合は、最適なラムダ値を自動的に特定します",
-  "digits": "桁 - 指定された小数点以下の桁数に丸めます",
-  "help": {
-    "title": "非正規データを正規に変換する",
-    "r_help": "help(boxcox, package = MASS)",
-    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t非正規変数をMASS::boxcoxで正規に変換する関数\n\t\t\t\t<br/>\n\t\t\t\tボックス-コックス変換は負の値に対しては実行できません\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(boxcox, package = MASS)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Coxの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.htmlを参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックス-コックス変換に関連するラムダ(λ)値\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 二乗変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータを返します ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 逆変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 逆二乗変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  "language": {
+    "language": "japanese",
+    "key": "ja"
+  },
+  "original_json": {
+    "title": "非正規データのボックス・コックス変換",
+    "navigation": "ボックス・コックス変換",
+    "label2": "2つのオプション - 正規に変換する非正規変数を選択するか、全データセットを選択して変換するか",
+    "selectVariableRad": "オプション1: データセットから正規に変換する非正規変数を選択",
+    "variableSelcted": "変換される非正規変数",
+    "boxcoxColName": "(オプション) 変換された値を保存する新しい変数名を指定します。指定しない場合は<variable_bcox>が作成されます",
+    "selectDatasetRad": "オプション2: 全データセットを正規に変換",
+    "boxcoxDatasetName": "(オプション) 変換された値を保存する新しいデータセット名を指定します。指定しない場合は<dataset_bcox>が作成されます",
+    "lambda": "(オプション) ボックス・コックス変換に使用される(-2から2の)ラムダ(λ)値。指定しない場合は、自動的に最適なラムダ値を特定します",
+    "digits": "桁数 - 指定された小数点以下の桁数に丸めます",
+    "help": {
+      "title": "非正規データを正規に変換",
+      "r_help": "help(boxcox, package = MASS)",
+      "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tMASS::boxcoxを使用して非正規変数を正規に変換する関数\n\t\t\t\t<br/>\n\t\t\t\tボックス・コックス変換は負の値に対しては実行できません\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t標準のボックス・コックスの公式を使用: Y = ( X^λ - 1 ) / λ (λ ≠ 0) および Y = Ln(X) (λ = 0)\n\t\t\t\tλ = 1のとき、元のデータは変更されずに返されます。この公式はλに対して連続的であり、\n\t\t\t\tMinitab、JMP、SAS、Rのcar::bcPowerと一貫しています\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t詳細なヘルプについては、R help(boxcox, package = MASS)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASSボックス・コックスの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.htmlを参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t馴染みのあるボックス・コックス変換に関連するラムダ(λ)値\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータを返す ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 逆数変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 逆平方変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t注意: 馴染みのあるラムダ(例: λ = 0.5)の場合、標準の公式はY = ( sqrt(x) - 1 ) / 0.5を与え、\n\t\t\t\tnot単にsqrt(x)を与えます。値は大きさが異なりますが、同じ正規性の結果を生成します。\n\t\t\t\t標準の公式はすべてのラムダ値にわたる一貫性と他の統計ソフトウェアとの互換性のために使用されます\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
   }
 }

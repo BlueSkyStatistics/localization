@@ -1,0 +1,19 @@
+{
+  "title": "Adăugați/Înlocuiți/Eliminați tipul și parametrii transformării Johnson pentru o variabilă",
+  "navigation": "Adăugați/Eliminați parametrii Johnson",
+  "label2": "Selectați o variabilă pentru a adăuga/înlocui/elimina tipul și parametrii transformării Johnson (γ, η, ε, λ) unde a fost aplicată anterior o transformare Johnson",
+  "variableSelcted": "Selectați o variabilă",
+  "selectAddParamsRad": "Opțiunea 1: Adăugați/Înlocuiți tipul și parametrii transformării Johnson",
+  "selectRemoveParamsRad": "Opțiunea 2: Eliminați tipul și parametrii transformării Johnson dacă au fost adăugați din greșeală la variabilă",
+  "typeSelected": "Tipul transformării Johnson",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - trebuie să fie mai mare decât 0",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - trebuie să fie mai mare decât 0 pentru SB și SU. Poate fi lăsat gol pentru SL (neutilizat, implicit 1)",
+  "zvalue": "(Opțional) Valoarea Z a ajustării - informativă doar, afișată de dialogul Inspect",
+  "help": {
+    "title": "Adăugați/Înlocuiți/Eliminați tipul și parametrii transformării Johnson",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tAcest dialog este oferit pentru comoditate dacă tipul transformării Johnson (SB, SL sau SU) și\n\t\t\t\tparametrii Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ) asociați cu o variabilă trebuie să fie\n\t\t\t\tînregistrați, corectați sau eliminați. Tipul și parametrii corecți sunt importanți deoarece vor fi\n\t\t\t\tutilizați dacă este necesară o transformare inversă Johnson\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUtilizări tipice: reatașarea parametrilor după ce au fost pierduți (de exemplu, setul de date a fost exportat într-un\n\t\t\t\tformat de fișier care nu păstrează atributele R și importat înapoi), sau înregistrarea unei transformări\n\t\t\t\tJohnson care a fost efectuată în afara BlueSky Statistics - de exemplu în Minitab, al cărui\n\t\t\t\traport de ieșire a transformării Johnson raportează exact acești parametri în funcția sa de transformare\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Cele trei funcții de transformare Johnson</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitată): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (nelimitată): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru referință, Minitab tipărește funcția SB cu limita superioară scrisă, de exemplu\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - acolo a doua constantă din\n\t\t\t\tLn este λ + ε, deci λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEliminarea șterge întotdeauna tipul și toți parametrii împreună, deoarece un set parțial de parametri\n\t\t\t\tnu poate fi utilizat pentru transformarea inversă\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

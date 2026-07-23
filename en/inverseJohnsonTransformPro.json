@@ -1,0 +1,22 @@
+{
+    "title": "Inverse Johnson transformation (convert back to non-transformed value)",
+    "navigation": "Inverse Johnson",
+    "label2": "Select a variable or type in a numeric value to be converted back from a prior Johnson transformation",
+    "variableSelcted": "Select a variable (also used to read the stored Johnson parameters unless manually specified below)",
+    "selectVariableRad": "Option 1: Select a variable to be converted back from a prior Johnson transformation",
+    "invJohnsonColName": "(Optional) Specify a new variable name to store the converted values. Otherwise <variable_invjtrans> will be created",
+    "selectNumberRad": "Option 2: Type in a numeric value to be converted back from a Johnson transformation",
+    "invNumber": "Type in the numeric value",
+    "manualParamsChk": "Manually specify the Johnson transformation type and parameters below. Otherwise, if unchecked, the type and parameters stored with the variable selected above (by a prior Johnson transformation) will be used",
+    "typeSelected": "Johnson transformation type",
+    "gamma": "Gamma (γ)",
+    "eta": "Eta (η) - must be greater than 0",
+    "epsilon": "Epsilon (ε)",
+    "lambda": "Lambda (λ) - must be greater than 0 for SB and SU. May be left blank for SL (not used, defaults to 1)",
+    "digits": "Digits - rounds to the specified number of decimal places",
+    "help": {
+        "title": "Transform back (inverse) from a prior Johnson transformed value",
+        "r_help": "help(sinh)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tTransform back (inverse) from a prior Johnson transformed value using the transformation type\n\t\t\t\t(SB, SL, or SU) and the parameters Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe type and parameters are read from the attributes stored with the selected variable by the\n\t\t\t\tcompanion Johnson transformation dialog (jtrans_type, jtrans_gamma, jtrans_eta, jtrans_epsilon,\n\t\t\t\tjtrans_lambda), or they can be manually specified - for example, to invert a transformation that\n\t\t\t\twas performed in Minitab, whose output reports these same parameters\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>The three Johnson transformation functions and their inverses</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (bounded): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tinverse: X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tinverse: X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (unbounded): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tinverse: X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNote: the inverse recovers the original values up to the rounding that was applied when the\n\t\t\t\ttransformed values were stored\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

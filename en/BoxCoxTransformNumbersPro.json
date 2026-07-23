@@ -1,0 +1,16 @@
+{
+    "title": "Box-Cox transformation for a list of numbers (forward: original scale to transformed scale)",
+    "navigation": "Box-Cox Transform Numbers",
+    "label2": "Type in one or more positive numeric values (comma-separated) to be transformed using the Box-Cox transformation with the specified Lambda (λ)",
+    "inputNumbers": "Type in one or more positive numeric values separated by commas (e.g. 47.5, 50.2, 53.6)",
+    "useStoredRad": "Option 1: Use the Lambda (λ) stored with a variable from the dataset (bcox_lambda attribute from a prior Box-Cox transformation)",
+    "variableSelcted": "Select a variable with a stored Box-Cox Lambda (λ)",
+    "manualLambdaRad": "Option 2: Manually specify the Lambda (λ) value (in the range -2 to 2)",
+    "lambda": "Lambda (λ) value",
+    "digits": "Digits - rounds to the specified number of decimal places",
+    "help": {
+        "title": "Box-Cox transformation for a list of numbers",
+        "r_help": "help(boxcox, package = MASS)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tApply the Box-Cox transformation (forward direction: original scale to transformed scale) to one\n\t\t\t\tor more user-supplied positive numeric values. The Lambda (λ) is obtained from either a variable\n\t\t\t\twith a stored bcox_lambda attribute or manually entered\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThis is useful for transforming specification limits, targets, or any reference values using the\n\t\t\t\tsame Box-Cox Lambda that was fitted to a dataset - for example, before running a capability\n\t\t\t\tanalysis on the transformed scale, or to check what a particular original-scale value maps to\n\t\t\t\tin the transformed space\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAll input values must be strictly positive (X &gt; 0) - the Box-Cox transformation is not defined\n\t\t\t\tfor zero or negative values\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Box-Cox transformation</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : Y = Ln( X )\n\t\t\t\t<br/>\n\t\t\t\tλ ≠ 0 : Y = ( X^λ - 1 ) / λ\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Lambda (λ) values associated with familiar transformations</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: square transformation ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: no transformation; returns the original data ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: square root transformation ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: cube root transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: fourth root transformation\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: natural log transformation ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -0.50: reciprocal square root transformation ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -1: reciprocal (inverse) transformation ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = -2: reciprocal square transformation ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help on Box-Cox or Lambda (λ) - use R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">For a good overview of MASS Box-Cox, see https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Transformação de Johnson para uma lista de números (avançar: escala original para escala transformada)",
+  "navigation": "Transformar Números com Johnson",
+  "label2": "Digite um ou mais valores numéricos (separados por vírgulas) a serem transformados usando a função de transformação de Johnson",
+  "inputNumbers": "Digite um ou mais valores numéricos separados por vírgulas (ex: 47.5, 50.2, 53.6)",
+  "useStoredRad": "Opção 1: Use o tipo de Johnson e os parâmetros armazenados com uma variável do conjunto de dados (atributos jtrans_* de uma transformação de Johnson anterior)",
+  "variableSelcted": "Selecione uma variável com parâmetros de transformação de Johnson armazenados",
+  "manualParamsRad": "Opção 2: Especifique manualmente o tipo de transformação de Johnson e os parâmetros (ex: a partir da saída do Minitab)",
+  "typeSelected": "Tipo de transformação de Johnson",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - deve ser maior que 0",
+  "epsilon": "Épsilon (ε)",
+  "lambda": "Lambda (λ) - deve ser maior que 0 para SB e SU. Pode ser deixado em branco para SL (não utilizado, padrão é 1)",
+  "digits": "Dígitos - arredonda para o número especificado de casas decimais",
+  "help": {
+    "title": "Transformação de Johnson para uma lista de números",
+    "r_help": "help(asinh)",
+    "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tAplique a transformação de Johnson (direção para frente: escala original para escala transformada) a um\n\t\t\t\tou mais valores numéricos fornecidos pelo usuário. O tipo de transformação (SB, SL ou SU) e os parâmetros\n\t\t\t\tGamma (γ), Eta (η), Épsilon (ε), Lambda (λ) são obtidos de uma variável com atributos de\n\t\t\t\tJohnson armazenados ou inseridos manualmente\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tIsso é útil para transformar limites de especificação, alvos ou quaisquer valores de referência usando a\n\t\t\t\tsame função de Johnson que foi ajustada a um conjunto de dados - por exemplo, antes de executar uma análise de capacidade\n\t\t\t\tna escala transformada, ou para verificar o que um determinado valor na escala original mapeia para\n\t\t\t\tno espaço transformado\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>As três funções de transformação de Johnson</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitada): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tA entrada X deve satisfazer ε < X < ε + λ (o intervalo limitado). Valores fora deste intervalo\n\t\t\t\tnão podem ser transformados e serão sinalizados\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tA entrada X deve satisfazer X > ε. Valores iguais ou abaixo de ε não podem ser transformados\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (ilimitada): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tQualquer X de valor real é aceito (a família SU é ilimitada)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Para referência - Notação da função SB do Minitab</b>\n\t\t\t\t<br/>\n\t\t\t\tO Minitab imprime a função SB com o limite superior escrito, ex:\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - a segunda constante dentro do\n\t\t\t\tLn é λ + ε, então λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

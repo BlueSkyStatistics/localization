@@ -1,0 +1,12 @@
+{
+  "title": "Inspectați tipul și parametrii transformării Johnson pentru variabilele cu transformare Johnson anterioară",
+  "navigation": "Inspectați parametrii Johnson",
+  "label2": "Selectați una sau mai multe variabile pentru a verifica dacă a fost aplicată o transformare Johnson și, dacă da, tipul asociat (SB, SL, SU) și parametrii",
+  "variablelistSelcted": "Variabile de inspectat",
+  "digits": "Cifre - rotunjit la numărul specificat de zecimale",
+  "help": {
+    "title": "Verificați tipul și parametrii transformării Johnson asociați cu variabilele selectate",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tVerificați tipul și parametrii asociați transformării Johnson, dacă există, pentru variabilele\n\t\t\t\tselectate cu o transformare Johnson anterioară\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCând dialogul companion pentru transformarea Johnson stochează o variabilă transformată, acesta înregistrează\n\t\t\t\ttransformarea ca atribute ale variabilei: jtrans_type (SB, SL sau SU), jtrans_z (valoarea Z\n\t\t\t\ta celei mai bune potriviri) și parametrii jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε),\n\t\t\t\tjtrans_lambda (λ). Acest dialog afișează acele valori într-un tabel și tipărește funcția de transformare\n\t\t\t\treconstruită pentru fiecare variabilă transformată sub tabel. Variabilele fără o transformare Johnson\n\t\t\t\tstocată sunt excluse din tabel și listate separat sub acesta\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Cele trei funcții de transformare Johnson</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitată): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormală): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (nelimitată): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTipul și parametrii corecți sunt importanți, deoarece vor fi utilizați dacă este necesară o\n\t\t\t\ttransformare inversă Johnson. Utilizați dialogul companion Adăugați/Înlocuiți/Eliminați parametrii Johnson pentru\n\t\t\t\tcorectarea acestora, dacă este necesar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

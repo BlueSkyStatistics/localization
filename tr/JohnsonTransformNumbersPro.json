@@ -1,0 +1,20 @@
+{
+  "title": "Johnson dönüşümü bir sayı listesi için (ileri: orijinal ölçekten dönüştürülmüş ölçeğe)",
+  "navigation": "Johnson Dönüşüm Sayıları",
+  "label2": "Johnson dönüşüm fonksiyonu kullanılarak dönüştürülmek üzere bir veya daha fazla sayısal değer girin (virgülle ayrılmış)",
+  "inputNumbers": "Virgülle ayrılmış bir veya daha fazla sayısal değer girin (örneğin 47.5, 50.2, 53.6)",
+  "useStoredRad": "Seçenek 1: Bir veri kümesinden bir değişkenle saklanan Johnson türü ve parametrelerini kullanın (önceki Johnson dönüşümünden jtrans_* özellikleri)",
+  "variableSelcted": "Saklanan Johnson dönüşüm parametrelerine sahip bir değişken seçin",
+  "manualParamsRad": "Seçenek 2: Johnson dönüşüm türünü ve parametrelerini manuel olarak belirtin (örneğin Minitab çıktısından)",
+  "typeSelected": "Johnson dönüşüm türü",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - 0'dan büyük olmalıdır",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - SB ve SU için 0'dan büyük olmalıdır. SL için boş bırakılabilir (kullanılmaz, varsayılan 1)",
+  "digits": "Basamaklar - belirtilen ondalık basamağa yuvarlar",
+  "help": {
+    "title": "Johnson dönüşümü bir sayı listesi için",
+    "r_help": "help(asinh)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tJohnson dönüşümünü (ileri yön: orijinal ölçekten dönüştürülmüş ölçeğe) bir veya daha fazla kullanıcı tarafından sağlanan sayısal değere uygulayın. Dönüşüm türü (SB, SL veya SU) ve Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ) parametreleri ya saklanan Johnson özelliklerine sahip bir değişkenden ya da manuel olarak girilerek elde edilir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBu, belirli bir orijinal ölçek değerinin dönüştürülmüş alandaki karşılığını kontrol etmek veya dönüştürülmüş ölçek üzerinde bir yeterlilik analizi yapmadan önce, aynı Johnson fonksiyonunu kullanarak spesifikasyon limitlerini, hedefleri veya herhangi bir referans değerini dönüştürmek için faydalıdır - örneğin,\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Üç Johnson dönüşüm fonksiyonu</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (sınırlı): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tGirdi X, ε < X < ε + λ (sınırlı aralık) koşulunu sağlamalıdır. Bu aralığın dışındaki değerler dönüştürülemez ve işaretlenecektir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tGirdi X, X > ε koşulunu sağlamalıdır. ε'ye eşit veya daha düşük değerler dönüştürülemez\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (sınırsız): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tHerhangi bir reel değerli X kabul edilir (SU ailesi sınırsızdır)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Referans için - Minitab SB fonksiyon notasyonu</b>\n\t\t\t\t<br/>\n\t\t\t\tMinitab, SB fonksiyonunu üst sınır yazılı olarak basar, örneğin\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - Ln içindeki ikinci sabit λ + ε'dir, bu nedenle λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "title": "Add/Replace/Remove the Johnson transformation type and parameters for a variable",
+    "navigation": "Add/Remove Johnson Parameters",
+    "label2": "Select a variable to add/replace/remove the Johnson transformation type and parameters (γ, η, ε, λ) where a Johnson transformation was applied previously",
+    "variableSelcted": "Select a variable",
+    "selectAddParamsRad": "Option 1: Add/Replace the Johnson transformation type and parameters",
+    "selectRemoveParamsRad": "Option 2: Remove the Johnson transformation type and parameters if they were mistakenly added to the variable",
+    "typeSelected": "Johnson transformation type",
+    "gamma": "Gamma (γ)",
+    "eta": "Eta (η) - must be greater than 0",
+    "epsilon": "Epsilon (ε)",
+    "lambda": "Lambda (λ) - must be greater than 0 for SB and SU. May be left blank for SL (not used, defaults to 1)",
+    "zvalue": "(Optional) Z value of the fit - informational only, shown by the Inspect dialog",
+    "help": {
+        "title": "Add/Replace/Remove the Johnson transformation type and parameters",
+        "r_help": "help(attr)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tThis dialog is provided for convenience if the Johnson transformation type (SB, SL, or SU) and\n\t\t\t\tthe parameters Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ) associated with a variable need to be\n\t\t\t\trecorded, corrected, or removed. The correct type and parameters are important as they will be\n\t\t\t\tused if an inverse Johnson transformation is needed\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTypical uses: re-attaching the parameters after they were lost (e.g. the dataset was exported to\n\t\t\t\ta file format that does not preserve R attributes and imported back), or recording a Johnson\n\t\t\t\ttransformation that was performed outside BlueSky Statistics - for example in Minitab, whose\n\t\t\t\tJohnson transformation output reports exactly these parameters in its transformation function\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>The three Johnson transformation functions</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (bounded): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (unbounded): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor reference, Minitab prints the SB function with the upper bound written out, e.g.\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - there the second constant inside\n\t\t\t\tthe Ln is λ + ε, so λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tRemoving always clears the type and all the parameters together, since a partial parameter set\n\t\t\t\tcannot be used for the inverse transformation\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

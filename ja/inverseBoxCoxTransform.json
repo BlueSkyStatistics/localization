@@ -1,17 +1,17 @@
 {
   "title": "逆ボックス-コックス変換（非変換値に戻す）",
   "navigation": "逆ボックス-コックス",
-  "label2": "以前のボックス-コックス変換から戻すために変数を選択するか、数値を入力してください（ラムダ（λ）値）",
+  "label2": "以前のボックス-コックス変換から戻すために変数を選択するか、数値を入力してください。λ（ラムダ）値",
   "variableSelcted": "変数を選択",
-  "selectVariableRad": "オプション1: 以前のボックス-コックス変換から戻すために変数を選択",
-  "invBoxCoxColName": "(オプション) 変換された値を保存するための新しい変数名を指定してください。そうでなければ<variable_Invbcox>が作成されます",
-  "selectNumberRad": "オプション2: ボックス-コックス変換から戻すために数値を入力",
+  "selectVariableRad": "オプション 1: 以前のボックス-コックス変換から戻すために変数を選択",
+  "invBoxCoxColName": "(オプション) 変換された値を保存するための新しい変数名を指定してください。そうでない場合は<variable_Invbcox>が作成されます",
+  "selectNumberRad": "オプション 2: ボックス-コックス変換から戻すために数値を入力",
   "invNumber": "数値を入力",
-  "lambda": "(オプション) ボックス-コックス変換から戻すために使用されるラムダ（λ）値を（-2から2の範囲で）指定してください。空白のままにした場合、上記で選択された変数の元のボックス-コックス変換に使用されたラムダ（λ）値が使用されます",
+  "lambda": "(オプション) ボックス-コックス変換から戻すために使用されるラムダ（λ）値を（-2から2の範囲で）指定してください。そうでない場合、空白のままにすると、上記で選択された変数の元のボックス-コックス変換に使用されたラムダ（λ）値が使用されます",
   "digits": "桁 - 指定された小数点以下の桁数に丸めます",
   "help": {
     "title": "以前のボックス-コックス変換値から戻す（逆）",
     "r_help": "help(boxcox, package = MASS)",
-    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t指定されたラムダまたは選択された変数に関連付けられたラムダを使用して、以前のボックス-コックス変換値から戻します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックス-コックスまたはラムダ（λ）に関する詳細なヘルプは、R help(boxcox, package = MASS)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASSボックス-コックスの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.htmlを参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t馴染みのあるボックス-コックス変換に関連するラムダ（λ）値\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 二乗変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータを返す ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 逆変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 逆二乗変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\t指定されたラムダまたは選択された変数に関連付けられたラムダを使用して、以前のボックス-コックス変換値から戻します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックス-コックスの標準的な逆数を使用します:\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: X = Exp( Y )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: X = Y（恒等 - 変換なし）\n\t\t\t\t<br/>\n\t\t\t\tλ ≠ 0 および λ ≠ 1: X = ( 1 + λ * Y ) ^ ( 1/λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれは、標準ボックス-コックスの正確な逆数 Y = ( X^λ - 1 ) / λ であり、\n\t\t\t\tMinitab、JMP、SAS、および R の car::bcPower と一致します\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tボックス-コックスまたはラムダ（λ）に関する詳細なヘルプは、R help(boxcox, package = MASS) を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS ボックス-コックスの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html を参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t馴染みのあるボックス-コックス変換に関連付けられたラムダ（λ）値\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータ ( x ) を返します\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 1: 逆数（逆）変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = - 2: 逆平方変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

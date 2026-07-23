@@ -1,0 +1,20 @@
+{
+    "title": "Johnson transformation for a list of numbers (forward: original scale to transformed scale)",
+    "navigation": "Johnson Transform Numbers",
+    "label2": "Type in one or more numeric values (comma-separated) to be transformed using the Johnson transformation function",
+    "inputNumbers": "Type in one or more numeric values separated by commas (e.g. 47.5, 50.2, 53.6)",
+    "useStoredRad": "Option 1: Use the Johnson type and parameters stored with a variable from the dataset (jtrans_* attributes from a prior Johnson transformation)",
+    "variableSelcted": "Select a variable with stored Johnson transformation parameters",
+    "manualParamsRad": "Option 2: Manually specify the Johnson transformation type and parameters (e.g. from Minitab output)",
+    "typeSelected": "Johnson transformation type",
+    "gamma": "Gamma (γ)",
+    "eta": "Eta (η) - must be greater than 0",
+    "epsilon": "Epsilon (ε)",
+    "lambda": "Lambda (λ) - must be greater than 0 for SB and SU. May be left blank for SL (not used, defaults to 1)",
+    "digits": "Digits - rounds to the specified number of decimal places",
+    "help": {
+        "title": "Johnson transformation for a list of numbers",
+        "r_help": "help(asinh)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tApply the Johnson transformation (forward direction: original scale to transformed scale) to one\n\t\t\t\tor more user-supplied numeric values. The transformation type (SB, SL, or SU) and the parameters\n\t\t\t\tGamma (γ), Eta (η), Epsilon (ε), Lambda (λ) are obtained from either a variable with stored\n\t\t\t\tJohnson attributes or manually entered\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThis is useful for transforming specification limits, targets, or any reference values using the\n\t\t\t\tsame Johnson function that was fitted to a dataset - for example, before running a capability\n\t\t\t\tanalysis on the transformed scale, or to check what a particular original-scale value maps to\n\t\t\t\tin the transformed space\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>The three Johnson transformation functions</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (bounded): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tThe input X must satisfy ε < X < ε + λ (the bounded range). Values outside this range\n\t\t\t\tcannot be transformed and will be flagged\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tThe input X must satisfy X > ε. Values at or below ε cannot be transformed\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (unbounded): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tAny real-valued X is accepted (the SU family is unbounded)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>For reference - Minitab SB function notation</b>\n\t\t\t\t<br/>\n\t\t\t\tMinitab prints the SB function with the upper bound written out, e.g.\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - the second constant inside the\n\t\t\t\tLn is λ + ε, so λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

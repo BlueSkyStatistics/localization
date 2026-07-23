@@ -1,9 +1,9 @@
 {
-  "title": "Capacitatea procesului (Sixpack) ",
-  "navigation": "Capacitatea procesului (Sixpack) ",
-  "summarySixpackPlotChk": "Sixpack (grafice I-MR, Xbar, R, S, probabilitate și capacitate de bază)",
+  "title": "Capacitatea procesului (Sixpack)",
+  "navigation": "Capacitatea procesului (Sixpack)",
+  "summarySixpackPlotChk": "Sixpack (grafice I-MR, Xbar, R, S, probabilitate și capacitate subiacente)",
   "flipaxisPPplotChk": "Rotește axa pentru graficul P-P",
-  "displaySLlineonPlotChk": "Afișează liniile LSL și USL pe graficele de bază",
+  "displaySLlineonPlotChk": "Afișează liniile LSL și USL pe graficele subiacente",
   "numOfLastSubgroupsPlot": "Numărul ultimelor subgrupuri de reprezentat",
   "printObjectSummaryChk": "Tipărește rezumatul obiectului QCC pentru capacitatea procesului",
   "label1": "Două opțiuni - fie selectați o variabilă (și o variabilă de grupare, după caz), fie selectați variabilele din setul de date dacă sunt deja grupate",
@@ -13,7 +13,7 @@
   "groupingVariable": "Variabilă de grupare (opțional - dacă datele trebuie grupate)",
   "sampleSize": "Dimensiunea eșantionului va fi ignorată dacă o variabilă de grupare este selectată mai sus",
   "variableControlLimits": "Rânduri de date care vor fi eliminate, dacă este cazul, înainte de gruparea pentru limitele de control ale variabilei (de exemplu, specificați ca 1:25 sau 1,4,5,7:12)",
-  "displayGroupsChk": "Afișează grupările pe interfața utilizatorului a setului de date doar pentru referință",
+  "displayGroupsChk": "Afișează grupările pe grila UI a setului de date doar pentru referință",
   "selectDatasetRad": "Opțiunea 2: Selectați variabilele din setul de date dacă sunt deja grupate",
   "variablelistSelcted": "Selectați una sau mai multe variabile grupate (date observate) pentru analiză",
   "rowsTobeUsed": "Dacă rândurile selectate (grupate) vor fi utilizate pentru analiza capacității procesului (de exemplu, specificați ca 1:25 sau 1,4,5,7:12)",
@@ -24,16 +24,17 @@
   "stddevS": "Metoda de deviație standard pentru graficul S (pentru dimensiunea grupului > 8)",
   "stddevXbarOne": "Metoda de deviație standard pentru calcularea I-MR",
   "DoNotUseUnbiasingConstantChk": "Nu utilizați constanta de neîndreptare pentru a estima deviația standard pentru indicii de capacitate a procesului global",
-  "lower": "LSL - valoare numerică a limitei de specificație inferioare (tastați NA pentru a specifica limitele de specificație unidirecționale)",
-  "upper": "USL - valoare numerică a limitei de specificație superioare (tastați NA pentru a specifica limitele de specificație unidirecționale)",
+  "lower": "LSL - valoare numerică a limitei de specificație inferioare (tastați NA pentru a specifica limite de specificație unilaterale)",
+  "upper": "USL - valoare numerică a limitei de specificație superioare (tastați NA pentru a specifica limite de specificație unilaterale)",
   "target": "Țintă - o valoare opțională care specifică ținta procesului",
   "addlSpecLines": "Adăugați linii de specificație suplimentare pe grafic (separate prin virgulă, de exemplu, 73.98, 74.01, 74.03)",
   "addlSpecLinesLabel": "Etichetă pentru liniile de specificație suplimentare (separate prin virgulă, de exemplu, Spec 1, Spec 2, Spec 3)",
   "addRefLines": "Adăugați linii de referință",
   "digits": "Cifre - numărul de cifre de afișat",
+  "ppmTableChk": "Tipărește tabelul de performanță (părți per milion)",
   "help": {
     "title": "Capacitatea procesului (pachet qcc)",
     "r_help": "help(process.capability, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția qcc calculează indicii de capacitate \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - utilizați R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) și help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți încărca setul de date numit pistonrings din pachetul qcc cu meniul Încărcați setul de date selectând pachetul qcc și apoi selectând setul de date pistonrings\n\t\t\t\t<br/>\n\t\t\t\tAlegeți opțiunea 1, diametru pentru variabilă (observată..), eșantion pentru variabila de grupare, \n\t\t\t\t<br/>\n\t\t\t\tTastați 1:25 în rândurile grupate care vor fi utilizate\n\t\t\t\t<br/>\n\t\t\t\tPentru analiza capacității procesului - tastați 73.95 în LSL, 74.05 în USL și 74.0 în limita țintă\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUrmăriți tutorialul qcc la https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMetode de deviație standard:\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-R\"\n\t\t\t\t<br/>\n\t\t\t\tMedia neponderată a estimărilor subgrupului bazate pe intervalele subgrupului\n\t\t\t\t<br/>\n\t\t\t\tDimensiunea maximă a eșantionului acceptată este 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tMedia neponderată a estimărilor subgrupului bazate pe deviațiile standard ale subgrupului\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-R\"\n\t\t\t\t<br/>\n\t\t\t\tEstimatorul liniar neîndreptat cu varianță minimă calculat ca o medie ponderată a estimărilor subgrupului bazate pe intervalele subgrupului\n\t\t\t\t<br/>\n\t\t\t\tDimensiunea maximă a eșantionului acceptată este 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tEstimatorul liniar neîndreptat cu varianță minimă calculat ca o medie ponderată a estimărilor subgrupului bazate pe deviațiile standard ale subgrupului\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"RMSDF\"\n\t\t\t\t<br/>\n\t\t\t\tEstimatorul rădăcină-media-pătrată calculat ca o medie ponderată a estimărilor subgrupului bazate pe deviațiile standard ale subgrupului\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMappingul termenilor:\n\t\t\t\t<br/>\n\t\t\t\tMedia deviațiilor standard neîndreptate → UWAVE-SD\n\t\t\t\t<br/>\n\t\t\t\tMedia intervalelor → UWAVE-R\n\t\t\t\t<br/>\n\t\t\t\tDevierea standard combinată neîndreptată → RMSDF\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tFuncția qcc pentru a calcula indicii de capacitate \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru ajutor detaliat - utilizați R help(process.capability, package = qcc), help(qcc, package = qcc), help(sd.xbar, package = qcc) și help(sd.xbar.one, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPentru a încerca acest lucru, puteți încărca setul de date numit pistonrings din pachetul qcc cu meniul Încărcați setul de date selectând pachetul qcc și apoi selectând setul de date pistonrings\n\t\t\t\t<br/>\n\t\t\t\tAlegeți opțiunea 1, diametru pentru variabilă (observată..), eșantion pentru variabila de grupare, \n\t\t\t\t<br/>\n\t\t\t\tTastați 1:25 în rândurile grupate care vor fi utilizate\n\t\t\t\t<br/>\n\t\t\t\tPentru analiza capacității procesului - tastați 73.95 în LSL, 74.05 în USL și 74.0 în limita țintă\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUrmăriți tutorialul qcc la https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMetode de deviație standard:\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-R\"\n\t\t\t\t<br/>\n\t\t\t\tMedia neponderată a estimărilor subgrupului bazată pe intervalele subgrupului\n\t\t\t\t<br/>\n\t\t\t\tDimensiunea maximă a eșantionului acceptată este 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"UWAVE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tMedia neponderată a estimărilor subgrupului bazată pe deviațiile standard ale subgrupului\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-R\"\n\t\t\t\t<br/>\n\t\t\t\tEstimatorul neîndreptat al varianței minime calculat ca o medie ponderată a estimărilor subgrupurilor bazate pe intervalele subgrupului\n\t\t\t\t<br/>\n\t\t\t\tDimensiunea maximă a eșantionului acceptată este 25 \n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"MVLUE-SD\"\n\t\t\t\t<br/>\n\t\t\t\tEstimatorul neîndreptat al varianței minime calculat ca o medie ponderată a estimărilor subgrupului bazate pe deviațiile standard ale subgrupului\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t\"RMSDF\"\n\t\t\t\t<br/>\n\t\t\t\tEstimatorul rădăcinii medii pătrate calculat ca o medie ponderată a estimărilor subgrupului bazate pe deviațiile standard ale subgrupului\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMappingul termenilor:\n\t\t\t\t<br/>\n\t\t\t\tMedia deviațiilor standard neîndreptate → UWAVE-SD\n\t\t\t\t<br/>\n\t\t\t\tMedia intervalelor → UWAVE-R\n\t\t\t\t<br/>\n\t\t\t\tDevierea standard combinată neîndreptată → RMSDF\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
   }
 }
