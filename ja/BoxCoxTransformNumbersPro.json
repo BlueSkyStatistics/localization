@@ -1,0 +1,16 @@
+{
+  "title": "数値のリストに対するBox-Cox変換（前方：元のスケールから変換されたスケールへ）",
+  "navigation": "Box-Cox 数値変換",
+  "label2": "指定されたLambda (λ)を使用してBox-Cox変換を行うために、1つ以上の正の数値をカンマ区切りで入力してください",
+  "inputNumbers": "カンマで区切った1つ以上の正の数値を入力してください（例：47.5, 50.2, 53.6）",
+  "useStoredRad": "オプション1：データセットの変数に保存されたLambda (λ)を使用する（以前のBox-Cox変換からのbcox_lambda属性）",
+  "variableSelcted": "保存されたBox-Cox Lambda (λ)を持つ変数を選択してください",
+  "manualLambdaRad": "オプション2：Lambda (λ)値を手動で指定する（範囲 -2 から 2）",
+  "lambda": "Lambda (λ)値",
+  "digits": "桁数 - 指定された小数点以下の桁数に丸めます",
+  "help": {
+    "title": "数値のリストに対するBox-Cox変換",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>説明</b></br>\n\t\t\t\tBox-Cox変換（前方方向：元のスケールから変換されたスケールへ）を1つ以上のユーザー提供の正の数値に適用します。Lambda (λ)は、保存されたbcox_lambda属性を持つ変数から取得するか、手動で入力されます\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tこれは、データセットにフィットしたBox-Cox Lambdaを使用して仕様限界、ターゲット、または任意の参照値を変換するのに便利です - 例えば、変換されたスケールで能力分析を実行する前や、特定の元のスケール値が変換された空間でどのようにマッピングされるかを確認するために\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tすべての入力値は厳密に正でなければなりません（X &gt; 0） - Box-Cox変換はゼロまたは負の値には定義されていません\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Box-Cox変換</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : Y = Ln( X )\n\t\t\t\t<br/>\n\t\t\t\tλ ≠ 0 : Y = ( X^λ - 1 ) / λ\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>よく知られた変換に関連するLambda (λ)値</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方変換 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 変換なし; 元のデータを返す ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根変換 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根変換\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然対数変換 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -0.50: 逆平方根変換 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -1: 逆変換 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = -2: 逆平方変換 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBox-CoxまたはLambda (λ)に関する詳細なヘルプは、R help(boxcox, package = MASS)を使用してください\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">MASS Box-Coxの良い概要については、https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.htmlを参照してください</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

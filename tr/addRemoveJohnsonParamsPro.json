@@ -1,0 +1,19 @@
+{
+  "title": "Johnson dönüşüm türünü ve parametrelerini bir değişken için Ekle/Değiştir/Kaldır",
+  "navigation": "Johnson Parametrelerini Ekle/Kaldır",
+  "label2": "Daha önce Johnson dönüşümünün uygulandığı bir değişkenin Johnson dönüşüm türünü ve parametrelerini (γ, η, ε, λ) eklemek/değiştirmek/kaldırmak için bir değişken seçin",
+  "variableSelcted": "Bir değişken seçin",
+  "selectAddParamsRad": "Seçenek 1: Johnson dönüşüm türünü ve parametrelerini Ekle/Değiştir",
+  "selectRemoveParamsRad": "Seçenek 2: Johnson dönüşüm türünü ve parametrelerini, yanlışlıkla değişkene eklenmişse kaldırın",
+  "typeSelected": "Johnson dönüşüm türü",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - 0'dan büyük olmalıdır",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - SB ve SU için 0'dan büyük olmalıdır. SL için boş bırakılabilir (kullanılmıyor, varsayılan 1)",
+  "zvalue": "(Opsiyonel) Uyumun Z değeri - yalnızca bilgilendirme amaçlı, İncele diyalog kutusunda gösterilir",
+  "help": {
+    "title": "Johnson dönüşüm türünü ve parametrelerini Ekle/Değiştir/Kaldır",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBu diyalog, bir değişkenle ilişkili Johnson dönüşüm türü (SB, SL veya SU) ve\n\t\t\t\tGamma (γ), Eta (η), Epsilon (ε), Lambda (λ) parametrelerinin kaydedilmesi, düzeltilmesi veya\n\t\t\t\tkaldırılması gerektiğinde kolaylık sağlamak için sunulmuştur. Doğru tür ve parametreler önemlidir\n\t\t\t\tçünkü ters Johnson dönüşümü gerektiğinde kullanılacaktır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTipik kullanımlar: parametrelerin kaybolduktan sonra yeniden eklenmesi (örneğin, veri seti\n\t\t\t\tR özelliklerini korumayan bir dosya formatına aktarılmış ve geri içe aktarılmışsa) veya BlueSky\n\t\t\t\tStatistics dışında gerçekleştirilen bir Johnson dönüşümünün kaydedilmesi - örneğin, Minitab'da,\n\t\t\t\tJohnson dönüşüm çıktısı tam olarak bu parametreleri dönüşüm fonksiyonunda rapor eder\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Üç Johnson dönüşüm fonksiyonu</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (sınırlı): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (sınırsız): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tReferans için, Minitab SB fonksiyonunu üst sınır yazılı olarak basar, örneğin\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - burada Ln içindeki ikinci sabit\n\t\t\t\tλ + ε'dir, bu nedenle λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tKaldırma her zaman türü ve tüm parametreleri birlikte temizler, çünkü kısmi bir parametre seti\n\t\t\t\tters dönüşüm için kullanılamaz\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

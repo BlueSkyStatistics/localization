@@ -1,0 +1,16 @@
+{
+  "title": "Box-Cox 转换数字列表（前向：原始尺度到转换尺度）",
+  "navigation": "Box-Cox 转换数字",
+  "label2": "输入一个或多个正数值（用逗号分隔），以使用指定的 Lambda (λ) 进行 Box-Cox 转换",
+  "inputNumbers": "输入一个或多个正数值，用逗号分隔（例如 47.5, 50.2, 53.6）",
+  "useStoredRad": "选项 1：使用数据集中变量存储的 Lambda (λ)（来自先前 Box-Cox 转换的 bcox_lambda 属性）",
+  "variableSelcted": "选择一个具有存储 Box-Cox Lambda (λ) 的变量",
+  "manualLambdaRad": "选项 2：手动指定 Lambda (λ) 值（范围 -2 到 2）",
+  "lambda": "Lambda (λ) 值",
+  "digits": "数字 - 四舍五入到指定的小数位数",
+  "help": {
+    "title": "Box-Cox 转换数字列表",
+    "r_help": "help(boxcox, package = MASS)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t对一个或多个用户提供的正数值应用 Box-Cox 转换（前向方向：原始尺度到转换尺度）。Lambda (λ) 可以从具有存储的 bcox_lambda 属性的变量中获得，或手动输入\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t这对于使用与拟合到数据集的相同 Box-Cox Lambda 转换规格限制、目标或任何参考值非常有用 - 例如，在转换尺度上运行能力分析之前，或检查特定原始尺度值在转换空间中的映射\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t所有输入值必须严格为正（X &gt; 0） - Box-Cox 转换在零或负值下未定义\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Box-Cox 转换</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 0 : Y = Ln( X )\n\t\t\t\t<br/>\n\t\t\t\tλ ≠ 0 : Y = ( X^λ - 1 ) / λ\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>与常见转换相关的 Lambda (λ) 值</b>\n\t\t\t\t<br/>\n\t\t\t\tλ = 2: 平方转换 ( x^2 )\n\t\t\t\t<br/>\n\t\t\t\tλ = 1: 无转换；返回原始数据 ( x )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.50: 平方根转换 ( sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.33: 立方根转换\n\t\t\t\t<br/>\n\t\t\t\tλ = 0.25: 四次根转换\n\t\t\t\t<br/>\n\t\t\t\tλ = 0: 自然对数转换 ( log(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -0.50: 倒数平方根转换 ( 1/sqrt(x) )\n\t\t\t\t<br/>\n\t\t\t\tλ = -1: 倒数（逆）转换 ( 1/x )\n\t\t\t\t<br/>\n\t\t\t\tλ = -2: 倒数平方转换 ( 1/x^2 )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t有关 Box-Cox 或 Lambda (λ) 的详细帮助 - 使用 R help(boxcox, package = MASS)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html\">有关 MASS Box-Cox 的良好概述，请参见 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/Transformations.html</a>\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Ters Johnson dönüşümü (dönüştürülmemiş değere geri dönüştürme)",
+  "navigation": "Ters Johnson",
+  "label2": "Bir değişken seçin veya daha önceki bir Johnson dönüşümünden geri dönüştürülmek üzere bir sayısal değer girin",
+  "variableSelcted": "Bir değişken seçin (aşağıda manuel olarak belirtilmedikçe, saklanan Johnson parametrelerini okumak için de kullanılır)",
+  "selectVariableRad": "Seçenek 1: Daha önceki bir Johnson dönüşümünden geri dönüştürülmek üzere bir değişken seçin",
+  "invJohnsonColName": "(Opsiyonel) Dönüştürülmüş değerleri saklamak için yeni bir değişken adı belirtin. Aksi takdirde <variable_invjtrans> oluşturulacaktır",
+  "selectNumberRad": "Seçenek 2: Bir Johnson dönüşümünden geri dönüştürülmek üzere bir sayısal değer girin",
+  "invNumber": "Sayısal değeri girin",
+  "manualParamsChk": "Aşağıda Johnson dönüşüm türünü ve parametrelerini manuel olarak belirtin. Aksi takdirde, işaretlenmemişse, yukarıda seçilen değişkenle (önceki bir Johnson dönüşümü tarafından) saklanan tür ve parametreler kullanılacaktır",
+  "typeSelected": "Johnson dönüşüm türü",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - 0'dan büyük olmalıdır",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - SB ve SU için 0'dan büyük olmalıdır. SL için boş bırakılabilir (kullanılmaz, varsayılan 1)",
+  "digits": "Basamaklar - belirtilen ondalık basamak sayısına yuvarlar",
+  "help": {
+    "title": "Daha önceki bir Johnson dönüşüm değerinden geri dönüştürme (ters)",
+    "r_help": "help(sinh)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDaha önceki bir Johnson dönüşüm değerinden geri dönüştürme (ters) dönüşüm türünü kullanarak\n\t\t\t\t(SB, SL veya SU) ve Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ) parametrelerini kullanarak\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTür ve parametreler, seçilen değişkenle saklanan niteliklerden okunur\n\t\t\t\teşlik eden Johnson dönüşüm iletişim kutusu (jtrans_type, jtrans_gamma, jtrans_eta, jtrans_epsilon,\n\t\t\t\tjtrans_lambda) veya manuel olarak belirtilebilir - örneğin, Minitab'da gerçekleştirilen bir dönüşümü tersine çevirmek için,\n\t\t\t\tçıkış bu aynı parametreleri raporlar\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Üç Johnson dönüşüm fonksiyonu ve tersleri</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (sınırlı): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\ttersi: X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\ttersi: X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (sınırsız): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\ttersi: X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNot: ters, dönüştürülmüş değerler saklandığında uygulanan yuvarlamaya kadar orijinal değerleri geri kazandırır\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

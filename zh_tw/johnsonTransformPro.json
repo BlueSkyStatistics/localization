@@ -1,0 +1,15 @@
+{
+  "title": "約翰遜轉換非正態數據為正態",
+  "navigation": "約翰遜轉換",
+  "label2": "選擇一個非正態變數，使用最佳擬合的約翰遜家族（SB、SL或SU）轉換為正態",
+  "variableSelcted": "要轉換的非正態變數",
+  "johnsonColName": "(可選) 指定一個新變數名稱以存儲轉換後的值。否則將創建<variable_jtrans>",
+  "pvalueCriterion": "選擇轉換的P值標準 - 最佳轉換必須具有高於此標準的安德森-達林正態性p值（默認為0.10）",
+  "forceTransformChk": "強制轉換，即使原始數據已通過正態性測試或最佳擬合不符合上述p值標準，也要轉換並存儲值",
+  "digits": "位數 - 四捨五入到指定的小數位數",
+  "help": {
+    "title": "約翰遜轉換非正態數據為正態",
+    "r_help": "help(ad.test, package = nortest)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t通過從三個約翰遜分佈家族中選擇最佳函數，將非正態變數轉換為正態 - SB、SL和SU，其中B、L和U分別指代被界定的變數、對數正態和無界\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t此對話框實現了算法（Chou、Polansky和Mason，1998年，使用Slifker和Shapiro，1980年的參數估計公式）。該實現是自包含的\n\t\t\t\t在R中 - 它不依賴於存檔的'jtrans'包。僅需要'nortest'包\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t1. 考慮從0.25到1.25的Z值網格，增量為0.01\n\t\t\t\t<br/>\n\t\t\t\t2. 對於每個Z，計算標準正態百分位數的樣本分位數x1、x2、x3、x4\n\t\t\t\t-3Z、-Z、Z、3Z（插值順序統計，R分位數類型5，即rank = n*p + 0.5），並且\n\t\t\t\t擴展m = x4 - x3，n = x2 - x1，p = x3 - x2給出分位數比QR = mn/p&sup2;\n\t\t\t\t<br/>\n\t\t\t\t3. QR &gt; 1選擇SU家族，QR &lt; 1選擇SB家族，QR約為1選擇SL家族。\n\t\t\t\t家族參數伽瑪（γ）、伊塔（η）、艾普西隆（ε）、拉姆達（λ）是從四個分位數中估計的。\n\t\t\t\t無效參數的擬合（例如SB邊界不包含數據）將被跳過\n\t\t\t\t<br/>\n\t\t\t\t4. 對每個Z測試轉換後的數據的正態性，使用安德森-達林（AD）測試\n\t\t\t\t<br/>\n\t\t\t\t5. 選擇具有最大AD p值且大於p值標準的轉換（默認為0.10）作為最佳轉換\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t與Box-Cox不同，約翰遜轉換可以與負值和零一起使用\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>輸出 </b>\n\t\t\t\t<br/>\n\t\t\t\t- 樣本大小表（總計、N非缺失、N*缺失）\n\t\t\t\t<br/>\n\t\t\t\t- 原始數據的正態概率圖，帶有AD統計量和p值\n\t\t\t\t<br/>\n\t\t\t\t- \"選擇轉換\"圖，AD p值與每個Z值的關係，帶有p值標準的水平參考線（Ref P）和最佳Z的垂直參考線\n\t\t\t\t<br/>\n\t\t\t\t- 最佳轉換類型（SB、SL或SU）、最佳擬合的Z、最佳擬合的P值、估計的\n\t\t\t\t參數伽瑪（γ）、伊塔（η）、艾普西隆（ε）、拉姆達（λ），以及約翰遜轉換函數\n\t\t\t\t<br/>\n\t\t\t\t- 轉換後數據的正態概率圖，帶有AD統計量和p值\n\t\t\t\t<br/>\n\t\t\t\t- 包含轉換值的新變數。轉換類型和參數\n\t\t\t\t估計作為屬性（jtrans_type、jtrans_z、jtrans_gamma、jtrans_eta、\n\t\t\t\tjtrans_epsilon、jtrans_lambda）存儲在新變數中，以便轉換可追溯，並且\n\t\t\t\t反向轉換仍然可能\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三個約翰遜轉換函數</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL（對數正態）：γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU（無界）：γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t如果原始數據已經遵循正態分佈（AD p值在標準之上或\n\t\t\t\t以上），或者如果沒有候選轉換符合p值標準，則不會存儲轉換變數 - 除非選中\"強制轉換\"選項\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t需要至少8個非缺失觀察值（安德森-達林測試的限制）；\n\t\t\t\t至少20個以獲得可靠的轉換\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t參考文獻：Chou, Y.M., Polansky, A.M., Mason, R.L. (1998) \"將非正態數據轉換為\n\t\t\t\t正態性在統計過程控制中\", Journal of Quality Technology, 30(2);\n\t\t\t\tSlifker, J.F., Shapiro, S.S. (1980) \"約翰遜系統：選擇和參數估計\",\n\t\t\t\tTechnometrics, 22(2)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

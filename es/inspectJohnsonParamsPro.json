@@ -1,0 +1,12 @@
+{
+  "title": "Inspeccionar el tipo de transformación Johnson y los parámetros para variables con transformación Johnson previa",
+  "navigation": "Inspeccionar Parámetros Johnson",
+  "label2": "Seleccione una o más variables para verificar si se aplicó una transformación Johnson y, de ser así, el tipo asociado (SB, SL, SU) y los parámetros",
+  "variablelistSelcted": "Variables a inspeccionar",
+  "digits": "Dígitos - redondea al número especificado de decimales",
+  "help": {
+    "title": "Verificar el tipo de transformación Johnson y los parámetros asociados con las variables seleccionadas",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tVerificar el tipo de transformación Johnson y los parámetros asociados, si los hay, para las variables\n\t\t\t\tseleccionadas con una transformación Johnson previa\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tCuando el cuadro de diálogo de transformación Johnson compañero almacena una variable transformada, registra la\n\t\t\t\ttransformación como atributos de la variable: jtrans_type (SB, SL o SU), jtrans_z (el valor Z\n\t\t\t\tdel mejor ajuste), y los parámetros jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε),\n\t\t\t\tjtrans_lambda (λ). Este cuadro de diálogo muestra esos valores en una tabla y imprime la transformación\n\t\t\t\treconstruida para cada variable transformada debajo de la tabla. Las variables sin una transformación Johnson\n\t\t\t\talmacenada se excluyen de la tabla y se enumeran por separado debajo de ella\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Las tres funciones de transformación Johnson</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (acotada): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (no acotada): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEl tipo y los parámetros correctos son importantes ya que se utilizarán si se necesita una\n\t\t\t\ttransformación inversa de Johnson. Utilice el cuadro de diálogo compañero Agregar/Reemplazar/Eliminar parámetros Johnson para\n\t\t\t\tcorregirlos si es necesario\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

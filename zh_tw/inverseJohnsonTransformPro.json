@@ -1,0 +1,22 @@
+{
+  "title": "反向約翰遜轉換（轉換回未轉換的值）",
+  "navigation": "反向約翰遜",
+  "label2": "選擇一個變數或輸入一個數值以從先前的約翰遜轉換中轉換回來",
+  "variableSelcted": "選擇一個變數（也用於讀取存儲的約翰遜參數，除非在下面手動指定）",
+  "selectVariableRad": "選項 1：選擇一個變數以從先前的約翰遜轉換中轉換回來",
+  "invJohnsonColName": "（可選）指定一個新的變數名稱以存儲轉換後的值。否則將創建 <variable_invjtrans>",
+  "selectNumberRad": "選項 2：輸入一個數值以從約翰遜轉換中轉換回來",
+  "invNumber": "輸入數值",
+  "manualParamsChk": "手動指定約翰遜轉換類型和參數。否則，如果未選中，將使用上述選擇的變數存儲的類型和參數（由先前的約翰遜轉換提供）",
+  "typeSelected": "約翰遜轉換類型",
+  "gamma": "伽瑪 (γ)",
+  "eta": "艾塔 (η) - 必須大於 0",
+  "epsilon": "艾普西隆 (ε)",
+  "lambda": "拉姆達 (λ) - 對於 SB 和 SU 必須大於 0。對於 SL 可以留空（不使用，默認為 1）",
+  "digits": "位數 - 四捨五入到指定的小數位數",
+  "help": {
+    "title": "從先前的約翰遜轉換值反向轉換",
+    "r_help": "help(sinh)",
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t使用轉換類型（SB、SL 或 SU）和參數伽瑪 (γ)、艾塔 (η)、艾普西隆 (ε)、拉姆達 (λ) 從先前的約翰遜轉換值反向轉換\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t類型和參數是從選定變數的屬性中讀取的，這些屬性由伴隨的約翰遜轉換對話框存儲（jtrans_type、jtrans_gamma、jtrans_eta、jtrans_epsilon、\n\t\t\t\tjtrans_lambda），或者可以手動指定 - 例如，反轉在 Minitab 中執行的轉換，其輸出報告這些相同的參數\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>三個約翰遜轉換函數及其反轉</b>\n\t\t\t\t<br/>\n\t\t\t\tSB（有界）：Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\t反轉：X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL（對數常態）：Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\t反轉：X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU（無界）：Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t反轉：X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t注意：反轉恢復原始值，直到存儲轉換值時應用的四捨五入\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

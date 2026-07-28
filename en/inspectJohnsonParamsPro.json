@@ -1,0 +1,12 @@
+{
+    "title": "Inspect Johnson transformation type and parameters for variables with prior Johnson transformation",
+    "navigation": "Inspect Johnson Parameters",
+    "label2": "Select one or more variables to check whether a Johnson transformation was applied and if so, the associated type (SB, SL, SU) and parameters",
+    "variablelistSelcted": "Variables to be inspected",
+    "digits": "Digits - rounds to the specified number of decimal places",
+    "help": {
+        "title": "Check for the Johnson transformation type and parameters associated with the selected variables",
+        "r_help": "help(attr)",
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tCheck for the associated Johnson transformation type and parameters, if any, for the selected\n\t\t\t\tvariables with a prior Johnson transformation\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tWhen the companion Johnson transformation dialog stores a transformed variable, it records the\n\t\t\t\ttransformation as attributes of the variable: jtrans_type (SB, SL, or SU), jtrans_z (the Z value\n\t\t\t\tof the best fit), and the parameters jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε),\n\t\t\t\tjtrans_lambda (λ). This dialog displays those values in a table, and prints the reconstructed transformation\n\t\t\t\tfunction for each transformed variable below the table. Variables without a stored Johnson\n\t\t\t\ttransformation are excluded from the table and listed separately below it\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>The three Johnson transformation functions</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (bounded): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (unbounded): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tThe correct type and parameters are important as they will be used if an inverse Johnson\n\t\t\t\ttransformation is needed. Use the companion Add/Replace/Remove Johnson parameters dialog to\n\t\t\t\tcorrect them if needed\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+    }
+}

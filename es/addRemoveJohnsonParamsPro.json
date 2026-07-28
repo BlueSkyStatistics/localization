@@ -1,0 +1,19 @@
+{
+  "title": "Agregar/Reemplazar/Eliminar el tipo de transformación Johnson y los parámetros para una variable",
+  "navigation": "Agregar/Eliminar Parámetros Johnson",
+  "label2": "Seleccione una variable para agregar/reemplazar/eliminar el tipo de transformación Johnson y los parámetros (γ, η, ε, λ) donde se aplicó previamente una transformación Johnson",
+  "variableSelcted": "Seleccione una variable",
+  "selectAddParamsRad": "Opción 1: Agregar/Reemplazar el tipo de transformación Johnson y los parámetros",
+  "selectRemoveParamsRad": "Opción 2: Eliminar el tipo de transformación Johnson y los parámetros si se añadieron erróneamente a la variable",
+  "typeSelected": "Tipo de transformación Johnson",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - debe ser mayor que 0",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - debe ser mayor que 0 para SB y SU. Puede dejarse en blanco para SL (no utilizado, por defecto es 1)",
+  "zvalue": "(Opcional) Valor Z del ajuste - solo informativo, mostrado por el diálogo de Inspección",
+  "help": {
+    "title": "Agregar/Reemplazar/Eliminar el tipo de transformación Johnson y los parámetros",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tEste diálogo se proporciona por conveniencia si el tipo de transformación Johnson (SB, SL o SU) y\n\t\t\t\tlos parámetros Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ) asociados con una variable necesitan ser\n\t\t\t\tregistrados, corregidos o eliminados. El tipo y los parámetros correctos son importantes ya que se usarán\n\t\t\t\tsi se necesita una transformación Johnson inversa\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUsos típicos: volver a adjuntar los parámetros después de que se hayan perdido (por ejemplo, el conjunto de datos fue exportado a\n\t\t\t\tun formato de archivo que no preserva los atributos de R y se importó de nuevo), o registrar una transformación Johnson\n\t\t\t\tque se realizó fuera de BlueSky Statistics - por ejemplo, en Minitab, cuyo\n\t\t\t\tinforme de salida de transformación Johnson reporta exactamente estos parámetros en su función de transformación\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Las tres funciones de transformación Johnson</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (acotada): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (no acotada): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara referencia, Minitab imprime la función SB con el límite superior escrito, por ejemplo,\n\t\t\t\t0.8046 + 0.8937 * Ln( ( X - 46.2931 ) / ( 59.8636 - X ) ) - allí la segunda constante dentro\n\t\t\t\tdel Ln es λ + ε, así que λ = 59.8636 - 46.2931 = 13.5706\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEliminar siempre borra el tipo y todos los parámetros juntos, ya que un conjunto de parámetros parcial\n\t\t\t\tno puede ser utilizado para la transformación inversa\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Transformarea inversă Johnson (convertiți înapoi la valoarea netransformată)",
+  "navigation": "Johnson invers",
+  "label2": "Selectați o variabilă sau introduceți o valoare numerică care să fie convertită înapoi dintr-o transformare Johnson anterioară",
+  "variableSelcted": "Selectați o variabilă (de asemenea, utilizată pentru a citi parametrii Johnson stocați, cu excepția cazului în care sunt specificați manual mai jos)",
+  "selectVariableRad": "Opțiunea 1: Selectați o variabilă care să fie convertită înapoi dintr-o transformare Johnson anterioară",
+  "invJohnsonColName": "(Opțional) Specificați un nou nume de variabilă pentru a stoca valorile convertite. În caz contrar, <variable_invjtrans> va fi creat",
+  "selectNumberRad": "Opțiunea 2: Introduceți o valoare numerică care să fie convertită înapoi dintr-o transformare Johnson",
+  "invNumber": "Introduceți valoarea numerică",
+  "manualParamsChk": "Specificați manual tipul și parametrii transformării Johnson mai jos. În caz contrar, dacă nu este bifat, tipul și parametrii stocați cu variabila selectată mai sus (printr-o transformare Johnson anterioară) vor fi utilizați",
+  "typeSelected": "Tipul transformării Johnson",
+  "gamma": "Gamma (γ)",
+  "eta": "Eta (η) - trebuie să fie mai mare decât 0",
+  "epsilon": "Epsilon (ε)",
+  "lambda": "Lambda (λ) - trebuie să fie mai mare decât 0 pentru SB și SU. Poate fi lăsat gol pentru SL (neutilizat, implicit 1)",
+  "digits": "Cifre - rotunjește la numărul specificat de zecimale",
+  "help": {
+    "title": "Transformare înapoi (invers) dintr-o valoare anterioară transformată Johnson",
+    "r_help": "help(sinh)",
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tTransformare înapoi (invers) dintr-o valoare anterioară transformată Johnson folosind tipul de transformare\n\t\t\t\t(SB, SL sau SU) și parametrii Gamma (γ), Eta (η), Epsilon (ε), Lambda (λ)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTipul și parametrii sunt citiți din atributele stocate cu variabila selectată de către\n\t\t\t\tdialogul companion de transformare Johnson (jtrans_type, jtrans_gamma, jtrans_eta, jtrans_epsilon,\n\t\t\t\tjtrans_lambda), sau pot fi specificați manual - de exemplu, pentru a inversa o transformare care\n\t\t\t\t a fost efectuată în Minitab, al cărei output raportează acești parametri\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Cele trei funcții de transformare Johnson și inversurile lor</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (limitată): Y = γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tinvers: X = ε + λ / ( 1 + Exp( -( Y - γ ) / η ) )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): Y = γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tinvers: X = ε + Exp( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSU (nelimitată): Y = γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\tinvers: X = ε + λ * Sinh( ( Y - γ ) / η )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tNotă: inversa recuperează valorile originale până la rotunjirea care a fost aplicată atunci când\n\t\t\t\tvalorile transformate au fost stocate\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}

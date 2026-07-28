@@ -1,0 +1,12 @@
+{
+  "title": "Johnson dönüşüm türünü ve önceden yapılmış Johnson dönüşümü olan değişkenler için parametreleri inceleyin",
+  "navigation": "Johnson Parametrelerini İnceleyin",
+  "label2": "Bir veya daha fazla değişken seçin ve bunlara Johnson dönüşümünün uygulanıp uygulanmadığını, eğer uygulanmışsa, ilişkili türü (SB, SL, SU) ve parametreleri kontrol edin",
+  "variablelistSelcted": "İncelenecek Değişkenler",
+  "digits": "Basamak - belirtilen ondalık basamak sayısına yuvarlar",
+  "help": {
+    "title": "Seçilen değişkenlerle ilişkili Johnson dönüşüm türünü ve parametrelerini kontrol edin",
+    "r_help": "help(attr)",
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tSeçilen değişkenler için, eğer varsa, ilişkili Johnson dönüşüm türünü ve parametrelerini kontrol edin\n\t\t\t\tönceden yapılmış bir Johnson dönüşümü ile\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEşlik eden Johnson dönüşüm iletişim kutusu, dönüştürülmüş bir değişkeni kaydettiğinde, dönüşümü\n\t\t\t\tdeğişkenin özellikleri olarak kaydeder: jtrans_type (SB, SL veya SU), jtrans_z (en iyi uyumun Z değeri)\n\t\t\t\tve parametreler jtrans_gamma (γ), jtrans_eta (η), jtrans_epsilon (ε),\n\t\t\t\tjtrans_lambda (λ). Bu iletişim kutusu, bu değerleri bir tabloda gösterir ve her dönüştürülmüş değişken için\n\t\t\t\ttablonun altında yeniden oluşturulmuş dönüşüm fonksiyonunu yazdırır. Kaydedilmiş bir Johnson\n\t\t\t\tdönüşümü olmayan değişkenler tablodan hariç tutulur ve onun altında ayrı olarak listelenir\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Üç Johnson dönüşüm fonksiyonu</b>\n\t\t\t\t<br/>\n\t\t\t\tSB (sınırlı): γ + η * Ln( (X - ε) / (λ + ε - X) )\n\t\t\t\t<br/>\n\t\t\t\tSL (lognormal): γ + η * Ln( X - ε )\n\t\t\t\t<br/>\n\t\t\t\tSU (sınırsız): γ + η * Asinh( (X - ε) / λ )\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDoğru tür ve parametreler önemlidir çünkü ters bir Johnson\n\t\t\t\tdönüşümü gerektiğinde kullanılacaktır. Gerekirse bunları düzeltmek için eşlik eden Ekle/Değiştir/Kaldır Johnson parametreleri iletişim kutusunu kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t"
+  }
+}
