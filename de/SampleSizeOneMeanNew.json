@@ -1,0 +1,32 @@
+{
+  "title": "Stichprobengröße, Test für einen Mittelwert oder gepaarte Mittelwerte Neu",
+  "navigation": "Einer Mittelwert oder gepaarte Mittelwerte Neu",
+  "howtouse": "Geben Sie zwei der Stichprobengröße, den Unterschied zwischen den Mittelwerten und die Power an, und der dritte wird berechnet\n\nTIPP: Jedes Feld unten akzeptiert eine durch Kommas getrennte Liste von Werten (z. B. 0,5,1,1,5). Wenn mehr als ein Feld mehrere Werte hat, wird jede Kombination berechnet und als Tabelle zurückgegeben, sodass Sie diesen Dialog nicht für jedes Szenario erneut ausführen müssen.",
+  "n": "Stichprobengröße (durch Kommas getrennt für mehrere Werte)",
+  "delta": "Unterschied zwischen den Mittelwerten (durch Kommas getrennt für mehrere Werte)",
+  "power": "Power (0-1; durch Kommas getrennt für mehrere Werte)",
+  "sd": "Standardabweichung (durch Kommas getrennt für mehrere Werte)",
+  "siglevel": "Signifikanzniveau (0-1; durch Kommas getrennt für mehrere Werte)",
+  "alternativeopt": "Alternative Hypothese",
+  "twosided": "Zweiseitig",
+  "onesided": "Einseitig",
+  "plotopt": "Power-Kurve",
+  "plotcurve": "Power-Kurve Plot generieren",
+  "curvex": "X-Achsen-Variable",
+  "curvegroup": "Gruppe / Linien nach Farbe (optional)",
+  "curvenone": "Keine",
+  "curven": "Stichprobengröße",
+  "curvedelta": "Unterschied zwischen den Mittelwerten",
+  "curvepower": "Power",
+  "curvesd": "Standardabweichung",
+  "curvesiglevel": "Signifikanzniveau",
+  "mainTitle": "Geben Sie einen Diagrammtitel ein",
+  "xlab": "X-Achsen-Beschriftung",
+  "ylab": "Y-Achsen-Beschriftung",
+  "legends": "Legenden anzeigen und wenn ja, Position der Legenden (Standard ist rechts)",
+  "help": {
+    "title": "Stichprobengröße, Test für einen Mittelwert",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für einen einseitigen t-Test eines Mittelwerts oder einen Test gepaarter Mittelwerte. Es berechnet die Stichprobengröße, den Unterschied zwischen den Mittelwerten oder die Power, wenn der Benutzer zwei davon angibt.\n<br/><br/>\n<b>Stichprobengröße:</b> Geben Sie die Anzahl der Probanden in der Studie an. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Unterschied zwischen den Mittelwerten:</b> Wenn es sich um einen einseitigen t-Test handelt, geben Sie den Unterschied zwischen dem Mittelwert unter der alternativen Hypothese und dem Mittelwert unter der Nullhypothese an. Wenn es sich um einen gepaarten t-Test handelt, geben Sie den Unterschied zwischen den gepaarten Mittelwerten unter der alternativen Hypothese an. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Power:</b> Geben Sie die gewünschte Power der Studie an, d.h. die Wahrscheinlichkeit, dass der Test die Nullhypothese ablehnt, wenn die alternative Hypothese wahr ist. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Standardabweichung:</b> Geben Sie eine Schätzung der Standardabweichung des Ergebnismaßes an. Für gepaarte Tests ist dies die Standardabweichung der gepaarten Unterschiede. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Signifikanzniveau:</b> Geben Sie das gewünschte Signifikanzniveau (d.h. Typ-I-Fehler) des Tests an. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Alternative Hypothese:</b> Geben Sie an, ob der Test zweiseitig oder einseitig ist\n<br/><br/>\n<b>Power-Kurve Plot generieren:</b> Wenn mehrere Werte für mehr als ein Feld angegeben werden, aktivieren Sie dieses Feld, um die Ergebnisse zu plotten. Wählen Sie aus, welche berechnete Größe auf der X-Achse angezeigt wird, und optional ein oder mehrere Felder, um separate Kurven zu gruppieren/färben.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> stats, broom, ggplot2\n\t\t\t"
+  }
+}

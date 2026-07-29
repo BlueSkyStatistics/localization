@@ -1,0 +1,32 @@
+{
+  "title": "Dimensiunea eșantionului, Testul a două proporții pereche noi",
+  "navigation": "Două proporții pereche noi",
+  "howtouse": "Pentru a calcula dimensiunea eșantionului (numărul de perechi): specificați puterea\nPentru a calcula puterea: specificați dimensiunea eșantionului (numărul de perechi)\n\nSfat: Orice câmp de mai jos acceptă o listă de valori separate prin virgulă (de exemplu, 0.1,0.2,0.3). Când mai multe câmpuri au valori multiple, fiecare combinație este calculată și returnată ca un tabel, astfel încât nu trebuie să rulați din nou acest dialog pentru fiecare scenariu.",
+  "n": "Dimensiunea eșantionului, numărul de perechi (separate prin virgulă pentru valori multiple)",
+  "power": "Putere (0-1; separate prin virgulă pentru valori multiple)",
+  "pdisc": "Proporția perechilor discordante PD (0-1; separate prin virgulă pentru valori multiple)",
+  "pdiff": "Diferența în proporții, trebuie să fie între -PD și PD (separate prin virgulă pentru valori multiple)",
+  "siglevel": "Nivel de semnificație (0-1; separate prin virgulă pentru valori multiple)",
+  "alternativeopt": "Ipoteza alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "plotopt": "Curba puterii",
+  "plotcurve": "Generați graficul curbei puterii",
+  "curvex": "Variabila axei X",
+  "curvegroup": "Grupare / Colorare linii după (opțional)",
+  "curvenone": "Niciuna",
+  "curven": "Dimensiunea eșantionului",
+  "curvepower": "Putere",
+  "curvepdisc": "Proporția perechilor discordante",
+  "curvepdiff": "Diferența în proporții",
+  "curvesiglevel": "Nivel de semnificație",
+  "mainTitle": "Introduceți un titlu pentru grafic",
+  "xlab": "Eticheta axei X",
+  "ylab": "Eticheta axei Y",
+  "legends": "Afișați legendele și, dacă da, poziția legendelor (implicit este dreapta)",
+  "help": {
+    "title": "Dimensiunea eșantionului, Testul a două proporții pereche",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test pereche de proporții folosind Testul McNemar.  Calculează dimensiunea eșantionului (numărul de perechi) sau puterea atunci când utilizatorul \nspecificează cealaltă.  Calculele folosesc o aproximare normală condiționată de proporția perechilor discordante.  Vezi Connor R. J. 1987. Dimensiunea eșantionului pentru testarea \ndiferențelor în proporții pentru designul de eșantion pereche. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Dimensiunea eșantionului (numărul de perechi):</b> Specificați dimensiunea eșantionului în studiu.  Acesta este numărul de subiecți care vor oferi valori de rezultat binar la ambele puncte de timp\nîntr-un design pre vs post sau numărul de perechi într-un design de subiecte potrivite (de exemplu, control de caz potrivit). Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Proporția perechilor discordante:</b> Specificați proporția așteptată de perechi care vor fi în dezacord, de exemplu, răspunsuri 'da'/'nu' sau 'nu'/'da', din numărul total de perechi. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Diferența în proporții:</b> Specificați diferența în proporțiile de rezultat (adică proporția care este 'da') pe care doriți să o detectați.  De exemplu, într-un studiu de control de caz potrivit,\naceasta este diferența dintre proporția de cazuri care sunt 'da' și proporția de controale care sunt 'da'. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Generați graficul curbei puterii:</b> Când sunt furnizate valori multiple pentru mai mult de un câmp, bifați această casetă pentru a plota rezultatele. Alegeți ce cantitate calculată merge pe axa X și, opțional, unul sau mai multe câmpuri pentru a grupa/color separa curbele.\n<br/><br/>\n<b>Pachete R necesare:</b> stats, ggplot2\n\t\t\t"
+  }
+}

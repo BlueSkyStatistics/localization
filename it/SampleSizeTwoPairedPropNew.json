@@ -1,0 +1,32 @@
+{
+  "title": "Dimensione del campione, Test di due proporzioni abbinate Nuovo",
+  "navigation": "Due proporzioni abbinate Nuovo",
+  "howtouse": "Per calcolare la dimensione del campione (numero di coppie): specificare la potenza\nPer calcolare la potenza: specificare la dimensione del campione (numero di coppie)\n\nSUGGERIMENTO: Qualsiasi campo qui sotto accetta un elenco di valori separati da virgole (ad es. 0.1,0.2,0.3). Quando più di un campo ha più valori, ogni combinazione viene calcolata e restituita come tabella, quindi non è necessario rieseguire questa finestra di dialogo per ogni scenario.",
+  "n": "Dimensione del campione, numero di coppie (separati da virgole per più valori)",
+  "power": "Potenza (0-1; separati da virgole per più valori)",
+  "pdisc": "Proporzione di coppie discordanti PD (0-1; separati da virgole per più valori)",
+  "pdiff": "Differenza nelle proporzioni, deve essere compresa tra -PD e PD (separati da virgole per più valori)",
+  "siglevel": "Livello di significatività (0-1; separati da virgole per più valori)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Due lati",
+  "onesided": "Un lato",
+  "plotopt": "Curva di potenza",
+  "plotcurve": "Genera grafico della curva di potenza",
+  "curvex": "Variabile dell'asse X",
+  "curvegroup": "Gruppo / Colore linee per (opzionale)",
+  "curvenone": "Nessuno",
+  "curven": "Dimensione del campione",
+  "curvepower": "Potenza",
+  "curvepdisc": "Proporzione di coppie discordanti",
+  "curvepdiff": "Differenza nelle proporzioni",
+  "curvesiglevel": "Livello di significatività",
+  "mainTitle": "Inserisci un titolo per il grafico",
+  "xlab": "Etichetta asse X",
+  "ylab": "Etichetta asse Y",
+  "legends": "Mostra legende e, in tal caso, posizione delle legende (predefinito a destra)",
+  "help": {
+    "title": "Dimensione del campione, Test di due proporzioni abbinate",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test abbinato di proporzioni utilizzando il Test di McNemar. Calcola la dimensione del campione (numero di coppie) o la potenza quando l'utente \nspecifica l'altro. I calcoli utilizzano un'approssimazione normale condizionata sulla proporzione di coppie discordanti. Vedi Connor R. J. 1987. Dimensione del campione per testare \ndifferenze nelle proporzioni per il design a campione abbinato. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Dimensione del campione (numero di coppie):</b> Specificare la dimensione del campione nello studio. Questo è il numero di soggetti che forniranno valori di esito binari in entrambi i punti temporali\nin un design pre vs post o il numero di coppie in un design a soggetti abbinati (ad es. caso-controllo abbinato). Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Proporzione di coppie discordanti:</b> Specificare la proporzione attesa di coppie che non saranno d'accordo, ad es. risposte 'sì'/'no' o 'no'/'sì', rispetto al numero totale di coppie. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Differenza nelle proporzioni:</b> Specificare la differenza nelle proporzioni di esito (cioè proporzione che è 'sì') che si desidera rilevare. Ad esempio, in uno studio caso-controllo abbinato\nquesto è la differenza tra la proporzione di casi che sono 'sì' e la proporzione di controlli che sono 'sì'. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Livello di significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Ipotesi alternativa:</b> Specificare se il test è a due lati o a un lato\n<br/><br/>\n<b>Genera grafico della curva di potenza:</b> Quando vengono forniti più valori per più di un campo, selezionare questa casella per tracciare i risultati. Scegliere quale quantità calcolata va sull'asse X e, facoltativamente, uno o più campi per raggruppare/colorare curve separate.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> stats, ggplot2\n\t\t\t"
+  }
+}

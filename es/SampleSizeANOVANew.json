@@ -1,0 +1,29 @@
+{
+    "title": "Tamaño de Muestra, ANOVA Nuevo",
+    "navigation": "ANOVA Nuevo",
+    "howtouse": "Para calcular el tamaño de muestra: especifique las medias de los grupos y la potencia\nPara calcular la potencia: especifique el tamaño de muestra y las medias de los grupos\n\nCONSEJO: Tamaño de Muestra, Potencia, Desviación Estándar y Nivel de Significancia a continuación aceptan una lista de valores separados por comas (por ejemplo, 0.8,0.9). Cuando más de un campo tiene múltiples valores, se calcula y devuelve cada combinación como una tabla, por lo que no necesita volver a ejecutar este diálogo para cada escenario. El Número de Grupos y las Medias de los Grupos permanecen fijos durante toda la ejecución.",
+    "numgrps": "Número de Grupos",
+    "n": "Tamaño de Muestra por Grupo (separado por comas para múltiples valores)",
+    "grpmeans": "Medias de los Grupos, especifique como valores separados por comas, por ejemplo, 20, 25, 40",
+    "power": "Potencia (0-1; separado por comas para múltiples valores)",
+    "sd": "Desviación Estándar (separada por comas para múltiples valores)",
+    "siglevel": "Nivel de Significancia (0-1; separado por comas para múltiples valores)",
+    "plotopt": "Curva de Potencia",
+    "plotcurve": "Generar Gráfico de Curva de Potencia",
+    "curvex": "Variable del Eje X",
+    "curvegroup": "Grupo / Colorear Líneas Por (opcional)",
+    "curvenone": "Ninguno",
+    "curven": "Tamaño de Muestra",
+    "curvepower": "Potencia",
+    "curvesd": "Desviación Estándar",
+    "curvesiglevel": "Nivel de Significancia",
+    "mainTitle": "Ingrese un título para el gráfico",
+    "xlab": "Etiqueta del eje X",
+    "ylab": "Etiqueta del eje Y",
+    "legends": "Mostrar Leyendas y, de ser así, posición de las Leyendas (el valor predeterminado es a la derecha)",
+    "help": {
+      "title": "Tamaño de Muestra, ANOVA",
+      "r_help": "help(power.anova.test, package ='stats')",
+      "body": "\nEsta es una evaluación del tamaño de muestra para un ANOVA unidireccional balanceado. Calcula el tamaño de muestra o la potencia, cuando el usuario especifica el otro.\n<br/><br/>\n<b>Número de Grupos:</b> Especifique el número de grupos en el estudio\n<br/><br/>\n<b>Tamaño de Muestra por Grupo:</b> Especifique el número de sujetos en cada grupo. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Medias de los Grupos:</b> Especifique las medias en cada grupo que desea poder detectar. Al menos una media tiene que ser diferente a las otras. Esto define un escenario de tamaño de efecto único para toda la ejecución.\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa fuera verdadera. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Desviación Estándar:</b> Especifique la desviación estándar del resultado. Se asume que es la misma en todos los grupos. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Nivel de Significancia:</b> Especifique el nivel de significancia deseado (es decir, error tipo I) de la prueba. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Generar Gráfico de Curva de Potencia:</b> Cuando se suministran múltiples valores para más de un campo, marque esta casilla para graficar los resultados. Elija qué cantidad calculada va en el eje X, y opcionalmente uno o más campos para agrupar/colorar curvas separadas.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> stats, ggplot2\n\t\t\t"
+    }
+}

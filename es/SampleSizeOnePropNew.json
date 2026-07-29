@@ -1,0 +1,32 @@
+{
+  "title": "Tamaño de Muestra, Prueba de Una Proporción Nueva",
+  "navigation": "Una Proporción Nueva",
+  "howtouse": "Especifique ya sea el tamaño de la muestra o la potencia, y el otro será calculado\n\nCONSEJO: Cualquier campo a continuación acepta una lista de valores separados por comas (por ejemplo, 0.2,0.3,0.4). Cuando más de un campo tiene múltiples valores, se calcula y devuelve cada combinación como una tabla, por lo que no necesita volver a ejecutar este diálogo para cada escenario.",
+  "n": "Tamaño de Muestra (separado por comas para múltiples valores)",
+  "power": "Potencia (0-1; separado por comas para múltiples valores)",
+  "prop": "Proporción Alternativa (0-1; separado por comas para múltiples valores)",
+  "prop0": "Proporción Nula (0-1; separado por comas para múltiples valores)",
+  "siglevel": "Nivel de Significancia (0-1; separado por comas para múltiples valores)",
+  "alternativeopt": "Hipótesis Alternativa",
+  "twosided": "Dos Lados",
+  "onesided": "Un Lado",
+  "plotopt": "Curva de Potencia",
+  "plotcurve": "Generar Gráfico de Curva de Potencia",
+  "curvex": "Variable del Eje X",
+  "curvegroup": "Grupo / Colorear Líneas Por (opcional)",
+  "curvenone": "Ninguno",
+  "curven": "Tamaño de Muestra",
+  "curvepower": "Potencia",
+  "curveprop": "Proporción Alternativa",
+  "curveprop0": "Proporción Nula",
+  "curvesiglevel": "Nivel de Significancia",
+  "mainTitle": "Ingrese un título para el gráfico",
+  "xlab": "Etiqueta del eje X",
+  "ylab": "Etiqueta del eje Y",
+  "legends": "Mostrar Leyendas y, de ser así, posición de las Leyendas (el valor predeterminado es a la derecha)",
+  "help": {
+    "title": "Tamaño de Muestra, Prueba de Una Proporción",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nEsta es una evaluación del tamaño de muestra para una prueba de proporción de una muestra. Calcula el tamaño de la muestra o la potencia, cuando el usuario \nespecifica uno de ellos. El cálculo utiliza la fórmula que se encuentra en Chow S, Shao J, Wang H. Cálculos de Tamaño de Muestra en Investigación Clínica (2008). Utiliza una aproximación normal con\ndesviación estándar basada en la proporción alternativa.\n<br/><br/>\n<b>Tamaño de Muestra:</b> Especifique el número de sujetos en el estudio. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Potencia:</b> Especifique la potencia deseada del estudio, es decir, la probabilidad de que la prueba rechace la hipótesis nula si la hipótesis alternativa era verdadera. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Proporción Alternativa (0-1):</b> Especifique la proporción bajo la hipótesis alternativa. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Proporción Nula (0-1):</b> Especifique la proporción bajo la hipótesis nula. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Nivel de Significancia:</b> Especifique el nivel de significancia deseado (es decir, error tipo I) de la prueba. Se aceptan listas separadas por comas.\n<br/><br/>\n<b>Hipótesis Alternativa:</b> Especifique si la prueba es de dos lados o de un lado\n<br/><br/>\n<b>Generar Gráfico de Curva de Potencia:</b> Cuando se suministran múltiples valores para más de un campo, marque esta casilla para graficar los resultados. Elija qué cantidad calculada va en el eje X, y opcionalmente uno o más campos para agrupar/colorar curvas separadas.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> stats, ggplot2\n\t\t\t"
+  }
+}

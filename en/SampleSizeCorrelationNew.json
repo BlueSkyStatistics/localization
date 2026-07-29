@@ -1,0 +1,31 @@
+{
+    "title": "Sample Size, Test Correlation New",
+    "navigation": "Correlation New",
+    "howtouse": "To compute sample size: specify correlation and power\nTo compute power: specify sample size and correlation\nTo compute detectable correlation: specify sample size and power\n\nTIP: Any field below accepts a comma-separated list of values (e.g. 0.2,0.3,0.4). When more than one field has multiple values, every combination is computed and returned as a table, so you do not need to re-run this dialog for each scenario.",
+    "n": "Sample Size (comma-separated for multiple values)",
+    "corr": "Correlation (-1 to 1; comma-separated for multiple values)",
+    "power": "Power (0-1; comma-separated for multiple values)",
+    "siglevel": "Significance Level (0-1; comma-separated for multiple values)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "greater": "Greater Than",
+    "less": "Less Than",
+    "plotopt": "Power Curve",
+    "plotcurve": "Generate Power Curve Plot",
+    "curvex": "X-Axis Variable",
+    "curvegroup": "Group / Color Lines By (optional)",
+    "curvenone": "None",
+    "curven": "Sample Size",
+    "curvecorr": "Correlation",
+    "curvepower": "Power",
+    "curvesiglevel": "Significance Level",
+    "mainTitle": "Enter a chart title",
+    "xlab": "X axis label",
+    "ylab": "Y axis label",
+    "legends": "Show Legends and if so, position of Legends (default is right)",
+    "help": {
+        "title": "Sample Size, Test Correlation",
+        "r_help": "help(pwr.r.test, package ='pwr')",
+        "body": "\nThis is an assessment of sample size for a Pearson correlation coefficient.  It computes the sample size, power, or correlation when the user \nspecifies the other two.  The null hypothesis correlation is 0.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study. Comma-separated lists are accepted.\n<br/><br/>\n<b>Correlation:</b> Specify the correlation to detect. Comma-separated lists are accepted.\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true. Comma-separated lists are accepted.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test. Comma-separated lists are accepted.\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided, greater than (one-sided), or less than (one-sided)\n<br/><br/>\n<b>Generate Power Curve Plot:</b> When multiple values are supplied for more than one field, check this box to plot the results. Choose which computed quantity goes on the X-axis, and optionally one or more fields to group/color separate curves by.\n<br/><br/>\n<b>Required R Packages:</b> pwr, ggplot2\n\t\t\t"
+    }
+}

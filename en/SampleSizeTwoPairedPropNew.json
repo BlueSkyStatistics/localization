@@ -1,0 +1,32 @@
+{
+    "title": "Sample Size, Test Two Paired Proportions New",
+    "navigation": "Two Paired Proportions New",
+    "howtouse": "To compute sample size (number of pairs): specify power\nTo compute power: specify sample size (number of pairs)\n\nTIP: Any field below accepts a comma-separated list of values (e.g. 0.1,0.2,0.3). When more than one field has multiple values, every combination is computed and returned as a table, so you do not need to re-run this dialog for each scenario.",
+    "n": "Sample Size, number of pairs (comma-separated for multiple values)",
+    "power": "Power (0-1; comma-separated for multiple values)",
+    "pdisc": "Discordant Pairs Proportion PD (0-1; comma-separated for multiple values)",
+    "pdiff": "Difference in Proportions, must be between -PD and PD (comma-separated for multiple values)",
+    "siglevel": "Significance Level (0-1; comma-separated for multiple values)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "plotopt": "Power Curve",
+    "plotcurve": "Generate Power Curve Plot",
+    "curvex": "X-Axis Variable",
+    "curvegroup": "Group / Color Lines By (optional)",
+    "curvenone": "None",
+    "curven": "Sample Size",
+    "curvepower": "Power",
+    "curvepdisc": "Discordant Pairs Proportion",
+    "curvepdiff": "Difference in Proportions",
+    "curvesiglevel": "Significance Level",
+    "mainTitle": "Enter a chart title",
+    "xlab": "X axis label",
+    "ylab": "Y axis label",
+    "legends": "Show Legends and if so, position of Legends (default is right)",
+    "help": {
+        "title": "Sample Size, Test Two Paired Proportions",
+        "r_help": "help(qnorm, package ='stats')",
+        "body": "\nThis is an assessment of sample size for a paired test of proportions using McNemar's Test.  It computes the sample size (number of pairs) or power when the user \nspecifies the other.  The computations use a normal approximation conditional on the proportion of discordant pairs.  See Connor R. J. 1987. Sample size for testing \ndifferences in proportions for the paired-sample design. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Sample Size (number of pairs):</b> Specify the sample size in the study.  This is the number of subjects that will provide binary outcome values at both time points\nin a pre vs post design or the number of pairs in a matched subject (e.g. matched case-control) design. Comma-separated lists are accepted.\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true. Comma-separated lists are accepted.\n<br/><br/>\n<b>Discordant Pairs Proportion:</b> Specify the expected proportion of pairs that will disagree, e.g. 'yes'/'no' or 'no'/'yes' responses, out of the total number of pairs. Comma-separated lists are accepted.\n<br/><br/>\n<b>Difference in Proportions:</b> Specify the difference in outcome proportions (i.e. proportion that are 'yes') that is desired to detect.  For example, in a matched case-control\nstudy this is the difference between the proportion of cases that are 'yes' and the proportion of controls that are 'yes'. Comma-separated lists are accepted.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test. Comma-separated lists are accepted.\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Generate Power Curve Plot:</b> When multiple values are supplied for more than one field, check this box to plot the results. Choose which computed quantity goes on the X-axis, and optionally one or more fields to group/color separate curves by.\n<br/><br/>\n<b>Required R Packages:</b> stats, ggplot2\n\t\t\t"
+    }
+}

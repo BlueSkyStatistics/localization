@@ -1,0 +1,32 @@
+{
+  "title": "Dimensione del campione, Test di una proporzione nuova",
+  "navigation": "Una proporzione nuova",
+  "howtouse": "Specifica sia la dimensione del campione che la potenza, e l'altra verrà calcolata\n\nTIP: Qualsiasi campo qui sotto accetta un elenco di valori separati da virgole (ad es. 0.2,0.3,0.4). Quando più di un campo ha più valori, ogni combinazione viene calcolata e restituita come una tabella, quindi non è necessario rieseguire questo dialogo per ogni scenario.",
+  "n": "Dimensione del campione (separata da virgole per più valori)",
+  "power": "Potenza (0-1; separata da virgole per più valori)",
+  "prop": "Proporzione alternativa (0-1; separata da virgole per più valori)",
+  "prop0": "Proporzione nulla (0-1; separata da virgole per più valori)",
+  "siglevel": "Livello di significatività (0-1; separata da virgole per più valori)",
+  "alternativeopt": "Ipotesi alternativa",
+  "twosided": "Due lati",
+  "onesided": "Un lato",
+  "plotopt": "Curva di potenza",
+  "plotcurve": "Genera grafico della curva di potenza",
+  "curvex": "Variabile dell'asse X",
+  "curvegroup": "Gruppo / Colore linee per (opzionale)",
+  "curvenone": "Nessuno",
+  "curven": "Dimensione del campione",
+  "curvepower": "Potenza",
+  "curveprop": "Proporzione alternativa",
+  "curveprop0": "Proporzione nulla",
+  "curvesiglevel": "Livello di significatività",
+  "mainTitle": "Inserisci un titolo per il grafico",
+  "xlab": "Etichetta asse X",
+  "ylab": "Etichetta asse Y",
+  "legends": "Mostra legende e, in tal caso, posizione delle legende (predefinito a destra)",
+  "help": {
+    "title": "Dimensione del campione, Test di una proporzione",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nQuesta è una valutazione della dimensione del campione per un test di proporzione a campione singolo. Calcola la dimensione del campione o la potenza, quando l'utente \nspecifica uno di essi. Il calcolo utilizza la formula trovata in Chow S, Shao J, Wang H. Calcoli della dimensione del campione nella ricerca clinica (2008). Utilizza un'approssimazione normale con\ndella deviazione standard basata sulla proporzione alternativa.\n<br/><br/>\n<b>Dimensione del campione:</b> Specifica il numero di soggetti nello studio. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Potenza:</b> Specifica la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Proporzione alternativa (0-1):</b> Specifica la proporzione sotto l'ipotesi alternativa. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Proporzione nulla (0-1):</b> Specifica la proporzione sotto l'ipotesi nulla. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Livello di significatività:</b> Specifica il livello di significatività desiderato (cioè errore di tipo I) del test. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Ipotesi alternativa:</b> Specifica se il test è a due lati o a un lato\n<br/><br/>\n<b>Genera grafico della curva di potenza:</b> Quando vengono forniti più valori per più di un campo, seleziona questa casella per tracciare i risultati. Scegli quale quantità calcolata va sull'asse X e, facoltativamente, uno o più campi per raggruppare/colorare curve separate.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> stats, ggplot2\n\t\t\t"
+  }
+}

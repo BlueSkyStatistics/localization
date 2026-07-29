@@ -1,0 +1,32 @@
+{
+  "title": "Örnek Büyüklüğü, Tek Oran Testi Yeni",
+  "navigation": "Tek Oran Yeni",
+  "howtouse": "Ya örnek büyüklüğünü ya da gücü belirtin, diğeri hesaplanacaktır\n\nİPUCU: Aşağıdaki her alan, virgülle ayrılmış değerler listesini kabul eder (örn. 0.2,0.3,0.4). Birden fazla alan birden fazla değer içerdiğinde, her kombinasyon hesaplanır ve bir tablo olarak döndürülür, bu nedenle her senaryo için bu diyaloğu yeniden çalıştırmanıza gerek yoktur.",
+  "n": "Örnek Büyüklüğü (birden fazla değer için virgülle ayrılmış)",
+  "power": "Güç (0-1; birden fazla değer için virgülle ayrılmış)",
+  "prop": "Alternatif Oran (0-1; birden fazla değer için virgülle ayrılmış)",
+  "prop0": "Null Oran (0-1; birden fazla değer için virgülle ayrılmış)",
+  "siglevel": "Anlamlılık Düzeyi (0-1; birden fazla değer için virgülle ayrılmış)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "plotopt": "Güç Eğrisi",
+  "plotcurve": "Güç Eğrisi Grafiği Oluştur",
+  "curvex": "X-Eksen Değişkeni",
+  "curvegroup": "Grup / Renk Çizgilerini (isteğe bağlı) Ayır",
+  "curvenone": "Yok",
+  "curven": "Örnek Büyüklüğü",
+  "curvepower": "Güç",
+  "curveprop": "Alternatif Oran",
+  "curveprop0": "Null Oran",
+  "curvesiglevel": "Anlamlılık Düzeyi",
+  "mainTitle": "Bir grafik başlığı girin",
+  "xlab": "X ekseni etiketi",
+  "ylab": "Y ekseni etiketi",
+  "legends": "Efsaneleri Göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağdır)",
+  "help": {
+    "title": "Örnek Büyüklüğü, Tek Oran Testi",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nBu, bir örnek oran testi için örnek büyüklüğünün bir değerlendirmesidir. Kullanıcı birini belirtirse, örnek büyüklüğünü veya gücü hesaplar. Hesaplama, Chow S, Shao J, Wang H. Klinik Araştırmalarda Örnek Büyüklüğü Hesaplamaları (2008) kitabında bulunan formülü kullanır. Alternatif orana dayalı standart sapma ile normal bir yaklaşım kullanır.\n<br/><br/>\n<b>Örnek Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa null hipotezi reddetme olasılığı. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Alternatif Oran (0-1):</b> Alternatif hipotez altındaki oranı belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Null Oran (0-1):</b> Null hipotez altındaki oranı belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini (yani tip I hatası) belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Güç Eğrisi Grafiği Oluştur:</b> Birden fazla alan için birden fazla değer sağlandığında, sonuçları çizmek için bu kutucuğu işaretleyin. Hangi hesaplanan miktarın X ekseninde yer alacağını seçin ve isteğe bağlı olarak bir veya daha fazla alanı gruplamak/renk ayırmak için seçin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats, ggplot2\n\t\t\t"
+  }
+}

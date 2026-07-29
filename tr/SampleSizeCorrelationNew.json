@@ -1,0 +1,31 @@
+{
+  "title": "Örnek Büyüklüğü, Test Korelasyonu Yeni",
+  "navigation": "Korelasyon Yeni",
+  "howtouse": "Örnek büyüklüğünü hesaplamak için: korelasyonu ve gücü belirtin\nGücü hesaplamak için: örnek büyüklüğünü ve korelasyonu belirtin\nTespit edilebilir korelasyonu hesaplamak için: örnek büyüklüğünü ve gücü belirtin\n\nİPUCU: Aşağıdaki herhangi bir alan, virgülle ayrılmış değerler listesini kabul eder (örneğin 0.2,0.3,0.4). Birden fazla alan birden fazla değer içerdiğinde, her kombinasyon hesaplanır ve bir tablo olarak döndürülür, bu nedenle her senaryo için bu iletişimi yeniden çalıştırmanıza gerek yoktur.",
+  "n": "Örnek Büyüklüğü (birden fazla değer için virgülle ayrılmış)",
+  "corr": "Korelasyon (-1 ile 1; birden fazla değer için virgülle ayrılmış)",
+  "power": "Güç (0-1; birden fazla değer için virgülle ayrılmış)",
+  "siglevel": "Anlamlılık Seviyesi (0-1; birden fazla değer için virgülle ayrılmış)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "greater": "Büyüktür",
+  "less": "Küçüktür",
+  "plotopt": "Güç Eğrisi",
+  "plotcurve": "Güç Eğrisi Grafiği Oluştur",
+  "curvex": "X-Eksen Değişkeni",
+  "curvegroup": "Grup / Renk Çizgilerini (isteğe bağlı) Ayır",
+  "curvenone": "Yok",
+  "curven": "Örnek Büyüklüğü",
+  "curvecorr": "Korelasyon",
+  "curvepower": "Güç",
+  "curvesiglevel": "Anlamlılık Seviyesi",
+  "mainTitle": "Bir grafik başlığı girin",
+  "xlab": "X ekseni etiketi",
+  "ylab": "Y ekseni etiketi",
+  "legends": "Efsaneleri Göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağdır)",
+  "help": {
+    "title": "Örnek Büyüklüğü, Test Korelasyonu",
+    "r_help": "help(pwr.r.test, package ='pwr')",
+    "body": "\nBu, Pearson korelasyon katsayısı için örnek büyüklüğünün bir değerlendirmesidir. Kullanıcı diğer ikisini belirttiğinde örnek büyüklüğünü, gücü veya korelasyonu hesaplar. Null hipotez korelasyonu 0'dır.\n<br/><br/>\n<b>Örnek Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Korelasyon:</b> Tespit edilecek korelasyonu belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa null hipotezi reddetme olasılığı. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Anlamlılık Seviyesi:</b> Testin istenen anlamlılık seviyesini (yani tip I hatası) belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı, büyüktür (tek taraflı) veya küçüktür (tek taraflı) olup olmadığını belirtin.\n<br/><br/>\n<b>Güç Eğrisi Grafiği Oluştur:</b> Birden fazla alan için birden fazla değer sağlandığında, sonuçları çizmek için bu kutuyu işaretleyin. Hangi hesaplanan miktarın X ekseninde yer alacağını seçin ve isteğe bağlı olarak bir veya daha fazla alanı gruplamak/rengini ayırmak için seçin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> pwr, ggplot2\n\t\t\t"
+  }
+}

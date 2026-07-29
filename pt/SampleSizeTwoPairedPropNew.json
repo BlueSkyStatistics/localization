@@ -1,0 +1,32 @@
+{
+  "title": "Tamanho da Amostra, Teste de Duas Proporções Pareadas Novo",
+  "navigation": "Duas Proporções Pareadas Novas",
+  "howtouse": "Para calcular o tamanho da amostra (número de pares): especifique o poder\nPara calcular o poder: especifique o tamanho da amostra (número de pares)\n\nDICA: Qualquer campo abaixo aceita uma lista de valores separados por vírgula (por exemplo, 0.1,0.2,0.3). Quando mais de um campo tem múltiplos valores, cada combinação é calculada e retornada como uma tabela, então você não precisa executar novamente este diálogo para cada cenário.",
+  "n": "Tamanho da Amostra, número de pares (separados por vírgula para múltiplos valores)",
+  "power": "Poder (0-1; separados por vírgula para múltiplos valores)",
+  "pdisc": "Proporção de Pares Discordantes PD (0-1; separados por vírgula para múltiplos valores)",
+  "pdiff": "Diferença nas Proporções, deve estar entre -PD e PD (separados por vírgula para múltiplos valores)",
+  "siglevel": "Nível de Significância (0-1; separados por vírgula para múltiplos valores)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "plotopt": "Curva de Poder",
+  "plotcurve": "Gerar Gráfico da Curva de Poder",
+  "curvex": "Variável do Eixo X",
+  "curvegroup": "Grupo / Colorir Linhas Por (opcional)",
+  "curvenone": "Nenhum",
+  "curven": "Tamanho da Amostra",
+  "curvepower": "Poder",
+  "curvepdisc": "Proporção de Pares Discordantes",
+  "curvepdiff": "Diferença nas Proporções",
+  "curvesiglevel": "Nível de Significância",
+  "mainTitle": "Insira um título para o gráfico",
+  "xlab": "Rótulo do eixo X",
+  "ylab": "Rótulo do eixo Y",
+  "legends": "Mostrar Legendas e, se sim, posição das Legendas (o padrão é à direita)",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Duas Proporções Pareadas",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste pareado de proporções usando o Teste de McNemar. Ele calcula o tamanho da amostra (número de pares) ou poder quando o usuário \nespecifica o outro. Os cálculos usam uma aproximação normal condicional à proporção de pares discordantes. Veja Connor R. J. 1987. Tamanho da amostra para testar \ndiferenças em proporções para o design de amostra pareada. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Tamanho da Amostra (número de pares):</b> Especifique o tamanho da amostra no estudo. Este é o número de sujeitos que fornecerão valores de resultado binário em ambos os pontos de tempo\nem um design pré vs pós ou o número de pares em um design de sujeito pareado (por exemplo, caso-controle pareado). Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Proporção de Pares Discordantes:</b> Especifique a proporção esperada de pares que discordarão, por exemplo, respostas 'sim'/'não' ou 'não'/'sim', do total de pares. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Diferença nas Proporções:</b> Especifique a diferença nas proporções de resultado (ou seja, proporção que é 'sim') que se deseja detectar. Por exemplo, em um estudo de caso-controle pareado\neste é a diferença entre a proporção de casos que são 'sim' e a proporção de controles que são 'sim'. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Gerar Gráfico da Curva de Poder:</b> Quando múltiplos valores são fornecidos para mais de um campo, marque esta caixa para plotar os resultados. Escolha qual quantidade calculada vai no eixo X e, opcionalmente, um ou mais campos para agrupar/colorir curvas separadas.\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats, ggplot2\n\t\t\t"
+  }
+}

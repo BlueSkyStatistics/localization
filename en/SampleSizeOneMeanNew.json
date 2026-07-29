@@ -1,0 +1,32 @@
+{
+    "title": "Sample Size, Test One Mean or Paired Means New",
+    "navigation": "One Mean or Paired Means New",
+    "howtouse": "Specify two of sample size, difference between means, and power, and the third will be computed\n\nTIP: Any field below accepts a comma-separated list of values (e.g. 0.5,1,1.5). When more than one field has multiple values, every combination is computed and returned as a table, so you do not need to re-run this dialog for each scenario.",
+    "n": "Sample Size (comma-separated for multiple values)",
+    "delta": "Difference Between Means (comma-separated for multiple values)",
+    "power": "Power (0-1; comma-separated for multiple values)",
+    "sd": "Standard Deviation (comma-separated for multiple values)",
+    "siglevel": "Significance Level (0-1; comma-separated for multiple values)",
+    "alternativeopt": "Alternative Hypothesis",
+    "twosided": "Two-Sided",
+    "onesided": "One-Sided",
+    "plotopt": "Power Curve",
+    "plotcurve": "Generate Power Curve Plot",
+    "curvex": "X-Axis Variable",
+    "curvegroup": "Group / Color Lines By (optional)",
+    "curvenone": "None",
+    "curven": "Sample Size",
+    "curvedelta": "Difference Between Means",
+    "curvepower": "Power",
+    "curvesd": "Standard Deviation",
+    "curvesiglevel": "Significance Level",
+    "mainTitle": "Enter a chart title",
+    "xlab": "X axis label",
+    "ylab": "Y axis label",
+    "legends": "Show Legends and if so, position of Legends (default is right)",
+    "help": {
+        "title": "Sample Size, Test One Mean",
+        "r_help": "help(power.t.test, package ='stats')",
+        "body": "\nThis is an assessment of sample size for a one-sample t-test of a mean or a test of paired means.  It computes the sample size, difference between means, or the power, when the user \nspecifies two of them.\n<br/><br/>\n<b>Sample Size:</b> Specify the number of subjects in the study. Comma-separated lists are accepted.\n<br/><br/>\n<b>Difference Between Means:</b> If a one-sample t-test, specify the difference between the mean under the alternative hypothesis and the mean under the null hypothesis.  If a\npaired t-test, specify the difference between the paired means under the alternative hypothesis. Comma-separated lists are accepted.\n<br/><br/>\n<b>Power:</b> Specify the desired power of the study, i.e. the probability that the test will reject the null hypothesis if the alternative hypothesis was true. Comma-separated lists are accepted.\n<br/><br/>\n<b>Standard Deviation:</b> Specify an estimate of the standard deviation of the outcome measure.  For paired tests, this is the standard deviation of the paired differences. Comma-separated lists are accepted.\n<br/><br/>\n<b>Significance Level:</b> Specify the desired significance level (i.e. type I error) of the test. Comma-separated lists are accepted.\n<br/><br/>\n<b>Alternative Hypothesis:</b> Specify whether the test is two-sided or one-sided\n<br/><br/>\n<b>Generate Power Curve Plot:</b> When multiple values are supplied for more than one field, check this box to plot the results. Choose which computed quantity goes on the X-axis, and optionally one or more fields to group/color separate curves by.\n<br/><br/>\n<b>Required R Packages:</b> stats, broom, ggplot2\n\t\t\t"
+    }
+}
