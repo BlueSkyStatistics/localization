@@ -1,0 +1,21 @@
+{
+  "title": "Lojistik, Firth Yanlılık Düzeltmesi",
+  "navigation": "Lojistik, Firth Yanlılık Düzeltmesi",
+  "modelname": "Model adını girin",
+  "outcomevar": "Bağımlı değişken",
+  "modelterms": "Bağımsız değişkenler için model ifadesi oluşturucu",
+  "offsetlabel": "Ofset",
+  "weightslabel": "Ağırlıklar",
+  "stattext": "Test istatistikleri ve güven aralıklarının türü",
+  "profilelikelihoodlabel": "Profil olasılığı",
+  "waldlabel": "Wald",
+  "fliclabel": "FLIC kesişim düzeltmesi",
+  "convergeoptlabel": "Kümeleme Seçenekleri",
+  "maxiterlabel": "Maksimum iterasyon sayısı",
+  "maxsteplabel": "Bir iterasyonda izin verilen parametre değerlerinin maksimum değişimi. Sonsuz adım boyutu için -1 olarak ayarlayın.",
+  "help": {
+    "title": "Lojistik, Firth Yanlılık Düzeltmesi",
+    "r_help": "help(logistf, package = 'logistf')",
+    "body": "\n            <b>Lojistik Regresyon Modeli Firth Yanlılık Düzeltmesi ile</b>\n            <br/><br/>\n            Firth'ın yanlılık azaltma yöntemini kullanarak bir lojistik regresyon modeli oluşturun, bu, Jeffreys önceliği ile log-olasılığın ceza alması ile eşdeğerdir. Güven aralıkları \n\t\t\tregresyon katsayıları için ceza profili olasılığı ile hesaplanabilir. Firth'ın yöntemi, lojistik regresyondaki ayrışma sorununa ideal bir çözüm olarak önerilmiştir, \n\t\t\tHeinze ve Schemper (2002) bakınız. Firth'ın yönteminin (FLIC) bir modifikasyonu, tarafsız tahminlere yol açar, Puhr ve ark. (2017) bakınız. Firth'ın ceza \n\t\t\tolasılık yöntemi ile yapılan analizlerin, özellikle profil olasılığı güven aralıklarının hesaplanması ve ceza olasılık oranı testleri ile birlikte yapılmasının maksimum olasılık analizine göre üstün olduğu gösterilmiştir.  \n\t\t\tBu model, standart maksimum olasılığın yanlılığa eğilimli olduğu küçük örnek boyutları ve nadir olaylar durumlarında da kullanılır.\n\t\t\t<br/><br/>\n\t\t\tModel uyum istatistikleri, parametre tahminleri ve oran oranları sağlanmaktadır.  \n\t\t\t<br/><br/>\n            <b>Bağımlı değişken:</b> Olay göstergesi. Sayısal (1=olay, 0=olay yok), faktör veya mantıksal (TRUE, FALSE) bir değişken olabilir.\n            <br/><br/>\n            <b>Bağımsız değişkenler için model ifadesi oluşturucu:</b> Sonuç riskini modellemek için kullanılacak tahmincilerin fonksiyonunu belirtin. Faktörler, dizgiler ve mantıksal değişkenler dummy kodlanacaktır.\n            <br/><br/>\n\t\t\t<b>Ofset:</b> Doğrusal tahminciye dahil edilecek önceden bilinen bir bileşen. Bunun için herhangi bir katsayı tahmin edilmeyecektir.\n            <br/><br/>\n\t\t\t<b>Ağırlıklar:</b> Durum ağırlıklarını belirtin. Girdi veri setinin her gözlemi, ağırlık değişkeninin karşılık gelen elemanı ile çarpılır.\n            <br/><br/>\n            <b>Seçenekler</b>\n            <br/><br/>\n            <b>Test istatistikleri ve güven aralıklarının türü:</b>\n            <br/>\n            Güven aralıklarının ve testlerin profil ceza log olasılığına (varsayılan) veya Wald yöntemine dayanıp dayanmayacağını belirtir.\n            <br/><br/>\n\t\t\t<b>FLIC kesişim düzeltmesi:</b>\n            <br/>\n            Seçildiğinde, kesişim, tahmin edilen olasılıkların tarafsız hale gelmesi için değiştirilirken diğer tüm katsayılar sabit tutulur (Puhr ve ark., 2017'ye bakınız).\n            <br/><br/>\n            <b>Maksimum iterasyon sayısı:</b>\n            <br/>\n            Uyum rutini için maksimum iterasyon sayısını belirtin. Başlangıçta yakınsama sağlanmadığında, yakınsama elde etmek için bunu artırmayı deneyin.\n\t\t\t<br/><br/>\n            <b>Bir iterasyonda izin verilen parametre değerlerinin maksimum değişimi:</b>\n            <br/>\n            Başlangıçta yakınsama sağlanmadığında, bunu azaltmayı deneyin.\n            <br/><br/>\n\t\t\t<b>Kaynaklar:</b>\n\t\t\t<br/><br/>\n\t\t\tFirth D (1993). Maksimum olasılık tahminlerinin yanlılığını azaltma. Biometrika 80:27--38.\n\t\t\t<br/><br/>\n\t\t\tHeinze G, Schemper M (2002). Lojistik regresyondaki ayrışma sorununa bir çözüm. İstatistikler Tıpta 21: 2409-2419.\n\t\t\t<br/><br/>\n\t\t\tPuhr R, Heinze G, Nold M, Lusa L, Geroldinger A (2017). Nadir olaylarla Firth'ın lojistik regresyonu: doğru etki tahminleri ve tahminler mi? İstatistikler Tıpta 36: 2302-2317.\n\t\t\t<br/><br/>\n            <b>Gerekli R paketleri:</b> logistf, survival\n"
+  }
+}

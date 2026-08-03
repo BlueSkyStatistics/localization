@@ -1,0 +1,14 @@
+{
+  "title": "그래프 탐색기",
+  "navigation": "그래프 탐색기",
+  "destdatalabel": "데이터셋 지정",
+  "notelabel": "이것은 그래프를 상호작용적으로 만들기 위해 웹 브라우저 창을 엽니다.",
+  "implabel": "중요!",
+  "closenotelabel": "BlueSky를 다시 사용하기 전에 'Esquisse'라는 어두운 제목 표시줄의 오른쪽에 있는 큰 X를 클릭하여 브라우저 응용 프로그램을 올바르게 닫아야 합니다. 브라우저 탭이나 브라우저를 닫는 것만으로는 응용 프로그램이 닫히지 않습니다.",
+  "reportlabel": "플롯은 브라우저 응용 프로그램 내에서 저장할 수 있습니다. BlueSky 출력 창에 플롯을 포함하려면 브라우저 응용 프로그램에서 R 코드를 복사/붙여넣기 하십시오.",
+  "help": {
+    "title": "그래프 탐색기",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\n이 대화 상자는 사용자가 Esquisse R 패키지와 그래픽 문법 프레임워크를 사용하여 웹 브라우저에서 플롯을 상호작용적으로 생성할 수 있도록 합니다. 기본 브라우저가 사용됩니다.\n<br/><br/>\n<b>중요!</b>\n<br/>\n그래프 탐색기를 종료하려면 브라우저 응용 프로그램을 적절하게 닫아야 합니다. 어두운 제목 표시줄의 오른쪽에 있는 큰 X를 클릭하여 \"Esquisse\"를 닫으십시오. 브라우저 탭이나 브라우저를 닫는 것만으로는 응용 프로그램이 닫히지 않습니다. 브라우저 응용 프로그램을 올바르게 닫지 않으면 BlueSky 통계 프로그램을 다시 시작해야 합니다.\n<br/><br/>\n플롯은 브라우저 응용 프로그램 내에서 저장할 수 있습니다. 플롯을 생성하는 R 코드는 웹 브라우저에서 BlueSky로 복사/붙여넣기 하여 저장하거나 추가 수정할 수 있습니다.\n<br/><br/>\nEsquisse에 대한 튜토리얼은 <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">여기</a>를 참조하십시오.\n<br/><br/>\n그래픽 문법에 대한 자세한 정보는 <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">여기</a>를 참조하십시오.\n<br/><br/>\n<b>필요한 R 패키지:</b> esquisse\n\t\t\t"
+  }
+}

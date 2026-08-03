@@ -1,0 +1,14 @@
+{
+  "title": "グラフエクスプローラー",
+  "navigation": "グラフエクスプローラー",
+  "destdatalabel": "データセットを指定",
+  "notelabel": "これにより、グラフを対話的に作成するためのウェブブラウザウィンドウが開きます。",
+  "implabel": "重要！",
+  "closenotelabel": "BlueSkyを再度使用する前に、'Esquisse'とラベル付けされた暗いタイトルバーの右側にある大きなXをクリックして、ブラウザアプリケーションを正しく閉じる必要があります。ブラウザタブやブラウザを閉じるだけではアプリケーションは閉じません。",
+  "reportlabel": "プロットはブラウザアプリケーション内に保存できます。プロットをBlueSkyの出力ウィンドウに含めるには、ブラウザアプリケーションからRコードをコピー/ペーストしてください。",
+  "help": {
+    "title": "グラフエクスプローラー",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nこのダイアログは、ユーザーがEsquisse Rパッケージを使用して、グラフィックスの文法フレームワークでウェブブラウザ内でプロットを対話的に作成することを可能にします。デフォルトのブラウザが使用されます。\n<br/><br/>\n<b>重要！</b>\n<br/>\nGraph Explorerを終了するには、ブラウザアプリケーションを適切に閉じる必要があります。'Esquisse'とラベル付けされた暗いタイトルバーの右側にある大きなXをクリックしてください。ブラウザタブやブラウザを閉じるだけではアプリケーションは閉じません。ブラウザアプリケーションを正しく閉じないと、BlueSky Statisticsを再起動する必要があります。\n<br/><br/>\nプロットはブラウザアプリケーション内に保存できます。プロットを作成するためのRコードも、ウェブブラウザからBlueSkyにコピー/ペーストして保存またはさらなる修正ができます。\n<br/><br/>\nEsquisseに関するチュートリアルは<a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">こちら</a>をご覧ください。\n<br/><br/>\nグラフィックスの文法に関する詳細情報は<a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">こちら</a>をご覧ください。\n<br/><br/>\n<b>必要なRパッケージ：</b> esquisse\n\t\t\t"
+  }
+}

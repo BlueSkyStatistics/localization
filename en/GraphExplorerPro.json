@@ -1,0 +1,14 @@
+{
+    "title": "Graph Explorer",
+    "navigation": "Graph Explorer",
+    "destdatalabel": "Specify Dataset",
+    "notelabel": "This opens a web browser window to interactively make a graph.",
+    "implabel": "IMPORTANT!",
+    "closenotelabel": "You must close the browser application correctly by clicking the large X on the right side of the dark title bar labelled 'Esquisse' before BlueSky can be used again.  Only closing the browser tab or the browser does not close the application.",
+    "reportlabel": "The plot can be saved within the browser application.  To include the plot in the BlueSky output window please copy/paste the R code from the browser application.",
+    "help": {
+        "title": "Graph Explorer",
+        "r_help": "help(esquisser, package ='esquisse')",
+        "body": "\nThis dialog allows the user the interactively create a plot in a web browser using the Esquisse R package with the grammar of graphics framework.  The default browser will be used.\n<br/><br/>\n<b>IMPORTANT!</b>\n<br/>\nYou must close the browser application appropriately to quit Graph Explorer. Do so by clicking the large X on the right side of the dark title bar labelled \n\"Esquisse\".  Closing the browser tab or the browser does not close the application.  Failing to close the browser application correctly will require a restart of BlueSky Statistics.\n<br/><br/>\nThe plot can be saved within the browser application.  The R code to create the plot can also be copy/pasted from the web browser into BlueSky for saving or further modifications.\n<br/><br/>\nSee <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">here</a> for a tutorial on Esquisse.\n<br/><br/>\nSee <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">here</a> for more information on the grammar of graphics.\n<br/><br/>\n<b>R Packages Required:</b> esquisse\n\t\t\t"
+    }
+}

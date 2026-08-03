@@ -1,0 +1,14 @@
+{
+  "title": "Explorador de Gráficas",
+  "navigation": "Explorador de Gráficas",
+  "destdatalabel": "Especificar Conjunto de Datos",
+  "notelabel": "Esto abre una ventana del navegador web para interactuar y crear un gráfico.",
+  "implabel": "¡IMPORTANTE!",
+  "closenotelabel": "Debes cerrar la aplicación del navegador correctamente haciendo clic en la gran X en el lado derecho de la barra de título oscura etiquetada 'Esquisse' antes de que BlueSky pueda ser utilizado nuevamente. Solo cerrar la pestaña del navegador o el navegador no cierra la aplicación.",
+  "reportlabel": "El gráfico se puede guardar dentro de la aplicación del navegador. Para incluir el gráfico en la ventana de salida de BlueSky, por favor copia/pega el código R de la aplicación del navegador.",
+  "help": {
+    "title": "Explorador de Gráficas",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nEste diálogo permite al usuario crear interactivamente un gráfico en un navegador web utilizando el paquete R Esquisse con el marco de gramática de gráficos. Se utilizará el navegador predeterminado.\n<br/><br/>\n<b>¡IMPORTANTE!</b>\n<br/>\nDebes cerrar la aplicación del navegador apropiadamente para salir del Explorador de Gráficas. Hazlo haciendo clic en la gran X en el lado derecho de la barra de título oscura etiquetada \n\"Esquisse\". Cerrar la pestaña del navegador o el navegador no cierra la aplicación. No cerrar la aplicación del navegador correctamente requerirá un reinicio de BlueSky Statistics.\n<br/><br/>\nEl gráfico se puede guardar dentro de la aplicación del navegador. El código R para crear el gráfico también se puede copiar/pegar desde el navegador web en BlueSky para guardarlo o realizar más modificaciones.\n<br/><br/>\nConsulta <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">aquí</a> para un tutorial sobre Esquisse.\n<br/><br/>\nConsulta <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">aquí</a> para más información sobre la gramática de gráficos.\n<br/><br/>\n<b>Paquetes R Requeridos:</b> esquisse\n\t\t\t"
+  }
+}

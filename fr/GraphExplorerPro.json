@@ -1,0 +1,14 @@
+{
+  "title": "Explorateur de Graphiques",
+  "navigation": "Explorateur de Graphiques",
+  "destdatalabel": "Spécifier le Jeu de Données",
+  "notelabel": "Cela ouvre une fenêtre de navigateur web pour créer un graphique de manière interactive.",
+  "implabel": "IMPORTANT !",
+  "closenotelabel": "Vous devez fermer correctement l'application du navigateur en cliquant sur le grand X sur le côté droit de la barre de titre sombre étiquetée 'Esquisse' avant que BlueSky puisse être utilisé à nouveau. Fermer uniquement l'onglet du navigateur ou le navigateur ne ferme pas l'application.",
+  "reportlabel": "Le graphique peut être enregistré dans l'application du navigateur. Pour inclure le graphique dans la fenêtre de sortie de BlueSky, veuillez copier/coller le code R depuis l'application du navigateur.",
+  "help": {
+    "title": "Explorateur de Graphiques",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nCette boîte de dialogue permet à l'utilisateur de créer un graphique de manière interactive dans un navigateur web en utilisant le package R Esquisse avec le cadre de grammaire des graphiques. Le navigateur par défaut sera utilisé.\n<br/><br/>\n<b>IMPORTANT !</b>\n<br/>\nVous devez fermer l'application du navigateur de manière appropriée pour quitter l'Explorateur de Graphiques. Faites-le en cliquant sur le grand X sur le côté droit de la barre de titre sombre étiquetée \n\"Esquisse\". Fermer l'onglet du navigateur ou le navigateur ne ferme pas l'application. Ne pas fermer correctement l'application du navigateur nécessitera un redémarrage de BlueSky Statistics.\n<br/><br/>\nLe graphique peut être enregistré dans l'application du navigateur. Le code R pour créer le graphique peut également être copié/collé depuis le navigateur web dans BlueSky pour l'enregistrement ou d'autres modifications.\n<br/><br/>\nVoir <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">ici</a> pour un tutoriel sur Esquisse.\n<br/><br/>\nVoir <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">ici</a> pour plus d'informations sur la grammaire des graphiques.\n<br/><br/>\n<b>Packages R Requis :</b> esquisse\n\t\t\t"
+  }
+}

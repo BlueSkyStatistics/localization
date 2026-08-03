@@ -1,0 +1,14 @@
+{
+  "title": "Esploratore di Grafici",
+  "navigation": "Esploratore di Grafici",
+  "destdatalabel": "Specifica Dataset",
+  "notelabel": "Questo apre una finestra del browser web per creare interattivamente un grafico.",
+  "implabel": "IMPORTANTE!",
+  "closenotelabel": "Devi chiudere correttamente l'applicazione del browser facendo clic sulla grande X sul lato destro della barra del titolo scura etichettata 'Esquisse' prima che BlueSky possa essere utilizzato di nuovo. Chiudere solo la scheda del browser o il browser non chiude l'applicazione.",
+  "reportlabel": "Il grafico può essere salvato all'interno dell'applicazione del browser. Per includere il grafico nella finestra di output di BlueSky, copia/incolla il codice R dall'applicazione del browser.",
+  "help": {
+    "title": "Esploratore di Grafici",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nQuesta finestra di dialogo consente all'utente di creare interattivamente un grafico in un browser web utilizzando il pacchetto R Esquisse con il framework della grammatica dei grafici. Verrà utilizzato il browser predefinito.\n<br/><br/>\n<b>IMPORTANTE!</b>\n<br/>\nDevi chiudere l'applicazione del browser in modo appropriato per uscire dall'Esploratore di Grafici. Fai clic sulla grande X sul lato destro della barra del titolo scura etichettata \n\"Esquisse\". Chiudere la scheda del browser o il browser non chiude l'applicazione. Non chiudere correttamente l'applicazione del browser richiederà un riavvio di BlueSky Statistics.\n<br/><br/>\nIl grafico può essere salvato all'interno dell'applicazione del browser. Il codice R per creare il grafico può anche essere copiato/incollato dal browser web in BlueSky per il salvataggio o ulteriori modifiche.\n<br/><br/>\nVedi <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">qui</a> per un tutorial su Esquisse.\n<br/><br/>\nVedi <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">qui</a> per ulteriori informazioni sulla grammatica dei grafici.\n<br/><br/>\n<b>Pacchetti R richiesti:</b> esquisse\n\t\t\t"
+  }
+}

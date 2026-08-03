@@ -1,0 +1,14 @@
+{
+  "title": "Explorator de Grafice",
+  "navigation": "Explorator de Grafice",
+  "destdatalabel": "Specificați Setul de Date",
+  "notelabel": "Aceasta deschide o fereastră de browser web pentru a crea interactiv un grafic.",
+  "implabel": "IMPORTANT!",
+  "closenotelabel": "Trebuie să închideți aplicația de browser corect făcând clic pe X-ul mare de pe partea dreaptă a barei de titlu întunecate etichetate 'Esquisse' înainte ca BlueSky să poată fi folosit din nou. Doar închiderea tab-ului de browser sau a browser-ului nu închide aplicația.",
+  "reportlabel": "Graficul poate fi salvat în cadrul aplicației de browser. Pentru a include graficul în fereastra de ieșire BlueSky, vă rugăm să copiați/lipiți codul R din aplicația de browser.",
+  "help": {
+    "title": "Explorator de Grafice",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nAcest dialog permite utilizatorului să creeze interactiv un grafic într-un browser web folosind pachetul R Esquisse cu cadrul gramaticii graficelor. Browserul implicit va fi folosit.\n<br/><br/>\n<b>IMPORTANT!</b>\n<br/>\nTrebuie să închideți aplicația de browser în mod corespunzător pentru a ieși din Exploratorul de Grafice. Faceți acest lucru făcând clic pe X-ul mare de pe partea dreaptă a barei de titlu întunecate etichetate \n\"Esquisse\". Închiderea tab-ului de browser sau a browser-ului nu închide aplicația. Nerespectarea închiderii corecte a aplicației de browser va necesita o repornire a BlueSky Statistics.\n<br/><br/>\nGraficul poate fi salvat în cadrul aplicației de browser. Codul R pentru a crea graficul poate fi, de asemenea, copiat/lipit din browserul web în BlueSky pentru salvare sau modificări ulterioare.\n<br/><br/>\nVezi <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">aici</a> pentru un tutorial despre Esquisse.\n<br/><br/>\nVezi <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">aici</a> pentru mai multe informații despre gramatica graficelor.\n<br/><br/>\n<b>Pachete R Necesare:</b> esquisse\n\t\t\t"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "邏輯斯迴歸，Firth 偏差修正",
+  "navigation": "邏輯斯迴歸，Firth 偏差修正",
+  "modelname": "輸入模型名稱",
+  "outcomevar": "依賴變數",
+  "modelterms": "獨立變數的模型表達式生成器",
+  "offsetlabel": "偏移量",
+  "weightslabel": "權重",
+  "stattext": "檢驗統計量和置信區間的類型",
+  "profilelikelihoodlabel": "輪廓似然",
+  "waldlabel": "瓦爾德",
+  "fliclabel": "FLIC 截距修正",
+  "convergeoptlabel": "收斂選項",
+  "maxiterlabel": "最大迭代次數",
+  "maxsteplabel": "在一次迭代中允許的參數值最大變化。設置為 -1 以獲得無限步長。",
+  "help": {
+    "title": "邏輯斯迴歸，Firth 偏差修正",
+    "r_help": "help(logistf, package = 'logistf')",
+    "body": "\n            <b>使用 Firth 偏差修正的邏輯迴歸模型</b>\n            <br/><br/>\n            使用 Firth 的偏差減少方法擬合邏輯迴歸模型，相當於通過 Jeffreys 先驗對對數似然進行懲罰。可以通過懲罰的輪廓似然計算回歸係數的置信區間。\n\t\t\tFirth 的方法被提出作為解決邏輯迴歸中分離問題的理想解決方案，參見 Heinze 和 Schemper (2002)。Firth 方法的修改版 (FLIC) 導致無偏的預測，參見 Puhr 等 (2017)。已顯示，通過 Firth 的懲罰似然方法進行的分析，特別是與計算輪廓似然置信區間和懲罰似然比檢驗結合使用，優於最大似然分析。\n\t\t\t此模型也用於小樣本和稀有事件的情況，其中標準最大似然容易產生偏差。\n\t\t\t<br/><br/>\n\t\t\t提供模型擬合統計、參數估計和比值比。\n\t\t\t<br/><br/>\n            <b>依賴變數：</b> 事件指示器。可以是數值型 (1=事件，0=無事件)、因子或邏輯 (TRUE, FALSE) 變數。\n            <br/><br/>\n            <b>獨立變數的模型表達式生成器：</b> 指定將用於建模結果風險的預測變數的函數。因子、字符串和邏輯變數將被虛擬編碼。\n            <br/><br/>\n\t\t\t<b>偏移量：</b> 一個事先已知的組件，將包含在線性預測中。此項不會估計係數。\n            <br/><br/>\n\t\t\t<b>權重：</b> 指定案例權重。輸入數據集的每個觀察值都乘以權重變數的相應元素。\n            <br/><br/>\n            <b>選項</b>\n            <br/><br/>\n            <b>檢驗統計量和置信區間的類型：</b>\n            <br/>\n            指定置信區間和檢驗是否應基於輪廓懲罰對數似然（默認）或基於瓦爾德方法\n            <br/><br/>\n\t\t\t<b>FLIC 截距修正：</b>\n            <br/>\n            如果選擇，截距會被改變，使得預測的概率變得無偏，同時保持所有其他係數不變（參見 Puhr 等，2017）。\n            <br/><br/>\n            <b>最大迭代次數：</b>\n            <br/>\n            指定擬合例程的最大迭代次數。在初始不收斂的情況下，嘗試增加此值以獲得收斂。\n\t\t\t<br/><br/>\n            <b>在一次迭代中允許的參數值最大變化：</b>\n            <br/>\n            在初始不收斂的情況下，嘗試減少此值以獲得收斂。\n            <br/><br/>\n\t\t\t<b>參考文獻：</b>\n\t\t\t<br/><br/>\n\t\t\tFirth D (1993)。最大似然估計的偏差減少。Biometrika 80:27--38。\n\t\t\t<br/><br/>\n\t\t\tHeinze G, Schemper M (2002)。解決邏輯迴歸中分離問題的方案。Statistics in Medicine 21: 2409-2419。\n\t\t\t<br/><br/>\n\t\t\tPuhr R, Heinze G, Nold M, Lusa L, Geroldinger A (2017)。Firth 的邏輯迴歸與稀有事件：準確的效應估計和預測？Statistics in Medicine 36: 2302-2317。\n\t\t\t<br/><br/>\n            <b>所需的 R 套件：</b> logistf, survival\n"
+  }
+}
