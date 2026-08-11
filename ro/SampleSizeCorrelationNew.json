@@ -1,0 +1,31 @@
+{
+  "title": "Dimensiunea eșantionului, Test Corelație Nouă",
+  "navigation": "Corelație Nouă",
+  "howtouse": "Pentru a calcula dimensiunea eșantionului: specificați corelația și puterea\nPentru a calcula puterea: specificați dimensiunea eșantionului și corelația\nPentru a calcula corelația detectabilă: specificați dimensiunea eșantionului și puterea\n\nSfat: Orice câmp de mai jos acceptă o listă de valori separate prin virgulă (de exemplu, 0.2,0.3,0.4). Când mai multe câmpuri au valori multiple, fiecare combinație este calculată și returnată sub formă de tabel, astfel încât nu trebuie să rulați din nou acest dialog pentru fiecare scenariu.",
+  "n": "Dimensiunea eșantionului (separată prin virgulă pentru valori multiple)",
+  "corr": "Corelație (-1 la 1; separată prin virgulă pentru valori multiple)",
+  "power": "Putere (0-1; separată prin virgulă pentru valori multiple)",
+  "siglevel": "Nivel de semnificație (0-1; separată prin virgulă pentru valori multiple)",
+  "alternativeopt": "Ipoteza alternativă",
+  "twosided": "Bidirecțional",
+  "greater": "Mai mare decât",
+  "less": "Mai mic decât",
+  "plotopt": "Curba de putere",
+  "plotcurve": "Generați graficul curbei de putere",
+  "curvex": "Variabila axei X",
+  "curvegroup": "Grupare / Colorare linii după (opțional)",
+  "curvenone": "Niciuna",
+  "curven": "Dimensiunea eșantionului",
+  "curvecorr": "Corelație",
+  "curvepower": "Putere",
+  "curvesiglevel": "Nivel de semnificație",
+  "mainTitle": "Introduceți un titlu pentru grafic",
+  "xlab": "Eticheta axei X",
+  "ylab": "Eticheta axei Y",
+  "legends": "Afișați legendele și, dacă da, poziția legendelor (implicit este dreapta)",
+  "help": {
+    "title": "Dimensiunea eșantionului, Test Corelație",
+    "r_help": "help(pwr.r.test, package ='pwr')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un coeficient de corelație Pearson. Calculează dimensiunea eșantionului, puterea sau corelația atunci când utilizatorul \nspecifice celelalte două. Ipoteza nulă a corelației este 0.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Corelație:</b> Specificați corelația de detectat. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional, mai mare decât (unidirecțional) sau mai mic decât (unidirecțional)\n<br/><br/>\n<b>Generați graficul curbei de putere:</b> Când sunt furnizate mai multe valori pentru mai mult de un câmp, bifați această casetă pentru a plota rezultatele. Alegeți ce cantitate calculată merge pe axa X și, opțional, unul sau mai multe câmpuri pentru a grupa/color curbele separate.\n<br/><br/>\n<b>Pachete R necesare:</b> pwr, ggplot2\n\t\t\t"
+  }
+}

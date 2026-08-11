@@ -1,0 +1,32 @@
+{
+  "title": "Tamanho da Amostra, Teste de Uma Média ou Médias Emparelhadas Novas",
+  "navigation": "Uma Média ou Médias Emparelhadas Novas",
+  "howtouse": "Especifique dois dos tamanhos de amostra, a diferença entre as médias e o poder, e o terceiro será calculado\n\nDICA: Qualquer campo abaixo aceita uma lista de valores separados por vírgula (por exemplo, 0.5,1,1.5). Quando mais de um campo tem múltiplos valores, cada combinação é calculada e retornada como uma tabela, então você não precisa reexecutar este diálogo para cada cenário.",
+  "n": "Tamanho da Amostra (separado por vírgula para múltiplos valores)",
+  "delta": "Diferença Entre as Médias (separado por vírgula para múltiplos valores)",
+  "power": "Poder (0-1; separado por vírgula para múltiplos valores)",
+  "sd": "Desvio Padrão (separado por vírgula para múltiplos valores)",
+  "siglevel": "Nível de Significância (0-1; separado por vírgula para múltiplos valores)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "plotopt": "Curva de Poder",
+  "plotcurve": "Gerar Gráfico da Curva de Poder",
+  "curvex": "Variável do Eixo X",
+  "curvegroup": "Agrupar / Colorir Linhas Por (opcional)",
+  "curvenone": "Nenhum",
+  "curven": "Tamanho da Amostra",
+  "curvedelta": "Diferença Entre as Médias",
+  "curvepower": "Poder",
+  "curvesd": "Desvio Padrão",
+  "curvesiglevel": "Nível de Significância",
+  "mainTitle": "Insira um título para o gráfico",
+  "xlab": "Rótulo do eixo X",
+  "ylab": "Rótulo do eixo Y",
+  "legends": "Mostrar Legendas e, se sim, posição das Legendas (o padrão é à direita)",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Uma Média",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste t de uma amostra de uma média ou um teste de médias emparelhadas. Ele calcula o tamanho da amostra, a diferença entre as médias ou o poder, quando o usuário \nespecifica dois deles.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Diferença Entre as Médias:</b> Se for um teste t de uma amostra, especifique a diferença entre a média sob a hipótese alternativa e a média sob a hipótese nula. Se for um\nteste t emparelhado, especifique a diferença entre as médias emparelhadas sob a hipótese alternativa. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Desvio Padrão:</b> Especifique uma estimativa do desvio padrão da medida de resultado. Para testes emparelhados, este é o desvio padrão das diferenças emparelhadas. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Gerar Gráfico da Curva de Poder:</b> Quando múltiplos valores são fornecidos para mais de um campo, marque esta caixa para plotar os resultados. Escolha qual quantidade calculada vai no eixo X e, opcionalmente, um ou mais campos para agrupar/colorir curvas separadas.\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats, broom, ggplot2\n\t\t\t"
+  }
+}

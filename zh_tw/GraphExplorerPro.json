@@ -1,0 +1,14 @@
+{
+  "title": "圖形探索器",
+  "navigation": "圖形探索器",
+  "destdatalabel": "指定數據集",
+  "notelabel": "這會打開一個網頁瀏覽器窗口，以互動方式製作圖形。",
+  "implabel": "重要！",
+  "closenotelabel": "您必須通過單擊黑色標題欄右側標記為 'Esquisse' 的大 X 正確關閉瀏覽器應用程序，然後才能再次使用 BlueSky。僅關閉瀏覽器標籤或瀏覽器並不會關閉應用程序。",
+  "reportlabel": "該圖可以在瀏覽器應用程序中保存。要將圖包含在 BlueSky 輸出窗口中，請從瀏覽器應用程序中複製/粘貼 R 代碼。",
+  "help": {
+    "title": "圖形探索器",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\n此對話框允許用戶使用 Esquisse R 包和圖形語法框架在網頁瀏覽器中互動式創建圖形。將使用默認瀏覽器。\n<br/><br/>\n<b>重要！</b>\n<br/>\n您必須適當關閉瀏覽器應用程序以退出圖形探索器。請通過單擊黑色標題欄右側標記為 \"Esquisse\" 的大 X 來執行此操作。關閉瀏覽器標籤或瀏覽器並不會關閉應用程序。未能正確關閉瀏覽器應用程序將需要重新啟動 BlueSky Statistics。\n<br/><br/>\n該圖可以在瀏覽器應用程序中保存。創建圖的 R 代碼也可以從網頁瀏覽器複製/粘貼到 BlueSky 中以進行保存或進一步修改。\n<br/><br/>\n請參見 <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">這裡</a> 獲取 Esquisse 的教程。\n<br/><br/>\n請參見 <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">這裡</a> 獲取有關圖形語法的更多信息。\n<br/><br/>\n<b>所需 R 包：</b> esquisse\n\t\t\t"
+  }
+}

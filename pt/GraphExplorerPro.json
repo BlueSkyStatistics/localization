@@ -1,0 +1,14 @@
+{
+  "title": "Explorador de Gráficos",
+  "navigation": "Explorador de Gráficos",
+  "destdatalabel": "Especificar Conjunto de Dados",
+  "notelabel": "Isto abre uma janela do navegador da web para interativamente criar um gráfico.",
+  "implabel": "IMPORTANTE!",
+  "closenotelabel": "Você deve fechar o aplicativo do navegador corretamente clicando no grande X no lado direito da barra de título escura rotulada 'Esquisse' antes que o BlueSky possa ser usado novamente. Apenas fechar a aba do navegador ou o navegador não fecha o aplicativo.",
+  "reportlabel": "O gráfico pode ser salvo dentro do aplicativo do navegador. Para incluir o gráfico na janela de saída do BlueSky, copie/cole o código R do aplicativo do navegador.",
+  "help": {
+    "title": "Explorador de Gráficos",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nEste diálogo permite ao usuário criar interativamente um gráfico em um navegador da web usando o pacote R Esquisse com a estrutura da gramática dos gráficos. O navegador padrão será utilizado.\n<br/><br/>\n<b>IMPORTANTE!</b>\n<br/>\nVocê deve fechar o aplicativo do navegador adequadamente para sair do Explorador de Gráficos. Faça isso clicando no grande X no lado direito da barra de título escura rotulada \n\"Esquisse\". Fechar a aba do navegador ou o navegador não fecha o aplicativo. Não fechar o aplicativo do navegador corretamente exigirá uma reinicialização do BlueSky Statistics.\n<br/><br/>\nO gráfico pode ser salvo dentro do aplicativo do navegador. O código R para criar o gráfico também pode ser copiado/colado do navegador da web para o BlueSky para salvamento ou modificações adicionais.\n<br/><br/>\nVeja <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">aqui</a> para um tutorial sobre Esquisse.\n<br/><br/>\nVeja <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">aqui</a> para mais informações sobre a gramática dos gráficos.\n<br/><br/>\n<b>Pacotes R Necessários:</b> esquisse\n\t\t\t"
+  }
+}

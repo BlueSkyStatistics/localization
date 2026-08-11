@@ -1,0 +1,29 @@
+{
+  "title": "Tamanho da Amostra, ANOVA Novo",
+  "navigation": "ANOVA Novo",
+  "howtouse": "Para calcular o tamanho da amostra: especifique as médias dos grupos e o poder\nPara calcular o poder: especifique o tamanho da amostra e as médias dos grupos\n\nDICA: Tamanho da Amostra, Poder, Desvio Padrão e Nível de Significância abaixo aceitam uma lista de valores separados por vírgulas (por exemplo, 0.8,0.9). Quando mais de um campo tem múltiplos valores, cada combinação é calculada e retornada como uma tabela, então você não precisa executar este diálogo novamente para cada cenário. O Número de Grupos e as Médias dos Grupos permanecem fixos durante toda a execução.",
+  "numgrps": "Número de Grupos",
+  "n": "Tamanho da Amostra por Grupo (separado por vírgulas para múltiplos valores)",
+  "grpmeans": "Médias dos Grupos, especifique como valores separados por vírgulas, por exemplo, 20, 25, 40",
+  "power": "Poder (0-1; separado por vírgulas para múltiplos valores)",
+  "sd": "Desvio Padrão (separado por vírgulas para múltiplos valores)",
+  "siglevel": "Nível de Significância (0-1; separado por vírgulas para múltiplos valores)",
+  "plotopt": "Curva de Poder",
+  "plotcurve": "Gerar Gráfico da Curva de Poder",
+  "curvex": "Variável do Eixo X",
+  "curvegroup": "Grupo / Colorir Linhas Por (opcional)",
+  "curvenone": "Nenhum",
+  "curven": "Tamanho da Amostra",
+  "curvepower": "Poder",
+  "curvesd": "Desvio Padrão",
+  "curvesiglevel": "Nível de Significância",
+  "mainTitle": "Insira um título para o gráfico",
+  "xlab": "Rótulo do eixo X",
+  "ylab": "Rótulo do eixo Y",
+  "legends": "Mostrar Legendas e, se sim, posição das Legendas (o padrão é à direita)",
+  "help": {
+    "title": "Tamanho da Amostra, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para uma ANOVA unidirecional balanceada. Ela calcula o tamanho da amostra ou poder, quando o usuário especifica o outro.\n<br/><br/>\n<b>Número de Grupos:</b> Especifique o número de grupos no estudo\n<br/><br/>\n<b>Tamanho da Amostra por Grupo:</b> Especifique o número de sujeitos em cada grupo. Listas separadas por vírgulas são aceitas.\n<br/><br/>\n<b>Médias dos Grupos:</b> Especifique as médias em cada grupo que você deseja detectar. Pelo menos uma média deve ser diferente das outras. Isso define um cenário de tamanho de efeito único para toda a execução.\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira. Listas separadas por vírgulas são aceitas.\n<br/><br/>\n<b>Desvio Padrão:</b> Especifique o desvio padrão do resultado. Isso é assumido como o mesmo entre os grupos. Listas separadas por vírgulas são aceitas.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste. Listas separadas por vírgulas são aceitas.\n<br/><br/>\n<b>Gerar Gráfico da Curva de Poder:</b> Quando múltiplos valores são fornecidos para mais de um campo, marque esta caixa para plotar os resultados. Escolha qual quantidade calculada vai no eixo X e, opcionalmente, um ou mais campos para agrupar/colorir curvas separadas.\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats, ggplot2\n\t\t\t"
+  }
+}

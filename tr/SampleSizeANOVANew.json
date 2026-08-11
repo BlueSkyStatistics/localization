@@ -1,0 +1,29 @@
+{
+  "title": "Örneklem Büyüklüğü, ANOVA Yeni",
+  "navigation": "ANOVA Yeni",
+  "howtouse": "Örneklem büyüklüğünü hesaplamak için: grup ortalamalarını ve gücü belirtin\nGücü hesaplamak için: örneklem büyüklüğünü ve grup ortalamalarını belirtin\n\nİPUCU: Aşağıdaki Örneklem Büyüklüğü, Güç, Standart Sapma ve Anlamlılık Düzeyi her biri virgülle ayrılmış değerler listesini kabul eder (örn. 0.8,0.9). Birden fazla alan birden fazla değer içerdiğinde, her kombinasyon hesaplanır ve bir tablo olarak döndürülür, bu nedenle her senaryo için bu iletişim kutusunu yeniden çalıştırmanıza gerek yoktur. Grupların Sayısı ve Grup Ortalamaları tüm çalışma boyunca sabit kalır.",
+  "numgrps": "Grupların Sayısı",
+  "n": "Grup Başına Örneklem Büyüklüğü (birden fazla değer için virgülle ayrılmış)",
+  "grpmeans": "Grup Ortalamaları, virgülle ayrılmış değerler olarak belirtin, örn. 20, 25, 40",
+  "power": "Güç (0-1; birden fazla değer için virgülle ayrılmış)",
+  "sd": "Standart Sapma (birden fazla değer için virgülle ayrılmış)",
+  "siglevel": "Anlamlılık Düzeyi (0-1; birden fazla değer için virgülle ayrılmış)",
+  "plotopt": "Güç Eğrisi",
+  "plotcurve": "Güç Eğrisi Grafiği Oluştur",
+  "curvex": "X-Eksen Değişkeni",
+  "curvegroup": "Grup / Renk Çizgileri (isteğe bağlı)",
+  "curvenone": "Yok",
+  "curven": "Örneklem Büyüklüğü",
+  "curvepower": "Güç",
+  "curvesd": "Standart Sapma",
+  "curvesiglevel": "Anlamlılık Düzeyi",
+  "mainTitle": "Bir grafik başlığı girin",
+  "xlab": "X ekseni etiketi",
+  "ylab": "Y ekseni etiketi",
+  "legends": "Efsaneleri Göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağdır)",
+  "help": {
+    "title": "Örneklem Büyüklüğü, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nBu, dengeli bir tek yönlü ANOVA için örneklem büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirttiğinde örneklem büyüklüğünü veya gücü hesaplar.\n<br/><br/>\n<b>Grupların Sayısı:</b> Çalışmadaki grup sayısını belirtin\n<br/><br/>\n<b>Grup Başına Örneklem Büyüklüğü:</b> Her gruptaki denek sayısını belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Grup Ortalamaları:</b> Tespit edebilmek istediğiniz her gruptaki ortalamaları belirtin. En az bir ortalama diğerlerinden farklı olmalıdır. Bu, tüm çalışma için tek bir etki büyüklüğü senaryosunu tanımlar.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa testin sıfır hipotezini reddetme olasılığı. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Standart Sapma:</b> Sonucun standart sapmasını belirtin. Bu, gruplar arasında aynı olduğu varsayılmaktadır. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini (yani tip I hatası) belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Güç Eğrisi Grafiği Oluştur:</b> Birden fazla alan için birden fazla değer sağlandığında, sonuçları çizmek için bu kutucuğu işaretleyin. Hangi hesaplanan miktarın X-ekseni üzerinde yer alacağını seçin ve isteğe bağlı olarak bir veya daha fazla alanı gruplamak/rengini ayırmak için seçin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats, ggplot2\n\t\t\t"
+  }
+}

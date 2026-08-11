@@ -1,0 +1,32 @@
+{
+  "title": "Tamanho da Amostra, Teste de Uma Proporção Nova",
+  "navigation": "Uma Proporção Nova",
+  "howtouse": "Especifique o tamanho da amostra ou o poder, e o outro será calculado\n\nDICA: Qualquer campo abaixo aceita uma lista de valores separados por vírgula (por exemplo, 0.2,0.3,0.4). Quando mais de um campo tem múltiplos valores, cada combinação é calculada e retornada como uma tabela, então você não precisa reexecutar este diálogo para cada cenário.",
+  "n": "Tamanho da Amostra (separado por vírgula para múltiplos valores)",
+  "power": "Poder (0-1; separado por vírgula para múltiplos valores)",
+  "prop": "Proporção Alternativa (0-1; separada por vírgula para múltiplos valores)",
+  "prop0": "Proporção Nula (0-1; separada por vírgula para múltiplos valores)",
+  "siglevel": "Nível de Significância (0-1; separado por vírgula para múltiplos valores)",
+  "alternativeopt": "Hipótese Alternativa",
+  "twosided": "Bilateral",
+  "onesided": "Unilateral",
+  "plotopt": "Curva de Poder",
+  "plotcurve": "Gerar Gráfico da Curva de Poder",
+  "curvex": "Variável do Eixo X",
+  "curvegroup": "Grupo / Colorir Linhas Por (opcional)",
+  "curvenone": "Nenhum",
+  "curven": "Tamanho da Amostra",
+  "curvepower": "Poder",
+  "curveprop": "Proporção Alternativa",
+  "curveprop0": "Proporção Nula",
+  "curvesiglevel": "Nível de Significância",
+  "mainTitle": "Digite um título para o gráfico",
+  "xlab": "Rótulo do eixo X",
+  "ylab": "Rótulo do eixo Y",
+  "legends": "Mostrar Legendas e, se sim, posição das Legendas (o padrão é à direita)",
+  "help": {
+    "title": "Tamanho da Amostra, Teste de Uma Proporção",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nEsta é uma avaliação do tamanho da amostra para um teste de proporção de uma amostra. Ele calcula o tamanho da amostra ou o poder, quando o usuário \nespecifica um deles. O cálculo utiliza a fórmula encontrada em Chow S, Shao J, Wang H. Cálculos de Tamanho de Amostra em Pesquisa Clínica (2008). Ele utiliza uma aproximação normal com\na desvio padrão baseado na proporção alternativa.\n<br/><br/>\n<b>Tamanho da Amostra:</b> Especifique o número de sujeitos no estudo. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Poder:</b> Especifique o poder desejado do estudo, ou seja, a probabilidade de que o teste rejeite a hipótese nula se a hipótese alternativa for verdadeira. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Proporção Alternativa (0-1):</b> Especifique a proporção sob a hipótese alternativa. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Proporção Nula (0-1):</b> Especifique a proporção sob a hipótese nula. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Nível de Significância:</b> Especifique o nível de significância desejado (ou seja, erro tipo I) do teste. Listas separadas por vírgula são aceitas.\n<br/><br/>\n<b>Hipótese Alternativa:</b> Especifique se o teste é bilateral ou unilateral\n<br/><br/>\n<b>Gerar Gráfico da Curva de Poder:</b> Quando múltiplos valores são fornecidos para mais de um campo, marque esta caixa para plotar os resultados. Escolha qual quantidade calculada vai no eixo X e, opcionalmente, um ou mais campos para agrupar/colorir curvas separadas.\n<br/><br/>\n<b>Pacotes R Necessários:</b> stats, ggplot2\n\t\t\t"
+  }
+}

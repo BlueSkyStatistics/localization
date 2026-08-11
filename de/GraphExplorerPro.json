@@ -1,0 +1,14 @@
+{
+  "title": "Graph Explorer",
+  "navigation": "Graph Explorer",
+  "destdatalabel": "Dataset angeben",
+  "notelabel": "Dies öffnet ein Webbrowserfenster, um interaktiv ein Diagramm zu erstellen.",
+  "implabel": "WICHTIG!",
+  "closenotelabel": "Sie müssen die Browseranwendung korrekt schließen, indem Sie auf das große X auf der rechten Seite der dunklen Titelleiste klicken, die mit 'Esquisse' beschriftet ist, bevor BlueSky erneut verwendet werden kann. Nur das Schließen des Browser-Tabs oder des Browsers schließt die Anwendung nicht.",
+  "reportlabel": "Das Diagramm kann innerhalb der Browseranwendung gespeichert werden. Um das Diagramm im BlueSky-Ausgabefenster einzufügen, kopieren Sie den R-Code aus der Browseranwendung und fügen Sie ihn ein.",
+  "help": {
+    "title": "Graph Explorer",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nDieses Dialogfeld ermöglicht es dem Benutzer, interaktiv ein Diagramm in einem Webbrowser mit dem Esquisse R-Paket und dem Grammatikrahmen der Grafiken zu erstellen. Der Standardbrowser wird verwendet.\n<br/><br/>\n<b>WICHTIG!</b>\n<br/>\nSie müssen die Browseranwendung angemessen schließen, um Graph Explorer zu beenden. Tun Sie dies, indem Sie auf das große X auf der rechten Seite der dunklen Titelleiste klicken, die mit \"Esquisse\" beschriftet ist. Das Schließen des Browser-Tabs oder des Browsers schließt die Anwendung nicht. Wenn die Browseranwendung nicht korrekt geschlossen wird, ist ein Neustart von BlueSky Statistics erforderlich.\n<br/><br/>\nDas Diagramm kann innerhalb der Browseranwendung gespeichert werden. Der R-Code zur Erstellung des Diagramms kann auch aus dem Webbrowser in BlueSky kopiert und eingefügt werden, um es zu speichern oder weiter zu modifizieren.\n<br/><br/>\nSiehe <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">hier</a> für ein Tutorial zu Esquisse.\n<br/><br/>\nSiehe <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">hier</a> für weitere Informationen zur Grammatik der Grafiken.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> esquisse\n\t\t\t"
+  }
+}

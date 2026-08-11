@@ -1,0 +1,32 @@
+{
+  "title": "Dimensiunea eșantionului, Testul unei proporții noi",
+  "navigation": "O proporție nouă",
+  "howtouse": "Specificați fie dimensiunea eșantionului, fie puterea, iar cealaltă va fi calculată\n\nSUGESTIE: Orice câmp de mai jos acceptă o listă de valori separate prin virgulă (de exemplu, 0.2,0.3,0.4). Când mai multe câmpuri au valori multiple, fiecare combinație este calculată și returnată sub formă de tabel, astfel încât nu trebuie să rulați din nou acest dialog pentru fiecare scenariu.",
+  "n": "Dimensiunea eșantionului (separate prin virgulă pentru valori multiple)",
+  "power": "Putere (0-1; separate prin virgulă pentru valori multiple)",
+  "prop": "Proporția alternativă (0-1; separate prin virgulă pentru valori multiple)",
+  "prop0": "Proporția nulă (0-1; separate prin virgulă pentru valori multiple)",
+  "siglevel": "Nivel de semnificație (0-1; separate prin virgulă pentru valori multiple)",
+  "alternativeopt": "Ipoteza alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "plotopt": "Curba puterii",
+  "plotcurve": "Generați graficul curbei puterii",
+  "curvex": "Variabila axei X",
+  "curvegroup": "Grupare / Colorare linii după (opțional)",
+  "curvenone": "Niciuna",
+  "curven": "Dimensiunea eșantionului",
+  "curvepower": "Putere",
+  "curveprop": "Proporția alternativă",
+  "curveprop0": "Proporția nulă",
+  "curvesiglevel": "Nivel de semnificație",
+  "mainTitle": "Introduceți un titlu pentru grafic",
+  "xlab": "Eticheta axei X",
+  "ylab": "Eticheta axei Y",
+  "legends": "Afișați legendele și, dacă da, poziția legendelor (implicit este dreapta)",
+  "help": {
+    "title": "Dimensiunea eșantionului, Testul unei proporții",
+    "r_help": "help(pnorm, package ='stats')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test de proporție cu un singur eșantion.  Calculează dimensiunea eșantionului sau puterea, atunci când utilizatorul \nspecifice unul dintre ele.  Calculul folosește formula găsită în Chow S, Shao J, Wang H. Calculul dimensiunii eșantionului în cercetarea clinică (2008).  Folosește o aproximare normală cu\ndeviația standard bazată pe proporția alternativă.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Putere:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Proporția alternativă (0-1):</b> Specificați proporția sub ipoteza alternativă. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Proporția nulă (0-1):</b> Specificați proporția sub ipoteza nulă. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b> Nivel de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Generați graficul curbei puterii:</b> Când sunt furnizate valori multiple pentru mai mult de un câmp, bifați această casetă pentru a plota rezultatele. Alegeți ce cantitate calculată merge pe axa X și, opțional, unul sau mai multe câmpuri pentru a grupa/color separa curbele.\n<br/><br/>\n<b>Pachete R necesare:</b> stats, ggplot2\n\t\t\t"
+  }
+}

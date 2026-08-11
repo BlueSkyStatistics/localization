@@ -1,0 +1,32 @@
+{
+  "title": "Örnek Büyüklüğü, Test Bir Ortalama veya Eşleştirilmiş Ortalamalar Yeni",
+  "navigation": "Bir Ortalama veya Eşleştirilmiş Ortalamalar Yeni",
+  "howtouse": "Örnek büyüklüğünün, ortalamalar arasındaki farkın ve gücün ikisini belirtin, üçüncüsü hesaplanacaktır\n\nİPUCU: Aşağıdaki herhangi bir alan, virgülle ayrılmış değerler listesini kabul eder (örn. 0.5,1,1.5). Birden fazla alan birden fazla değer içerdiğinde, her kombinasyon hesaplanır ve bir tablo olarak döndürülür, bu nedenle her senaryo için bu iletişimi yeniden çalıştırmanıza gerek yoktur.",
+  "n": "Örnek Büyüklüğü (birden fazla değer için virgülle ayrılmış)",
+  "delta": "Ortalamalar Arasındaki Fark (birden fazla değer için virgülle ayrılmış)",
+  "power": "Güç (0-1; birden fazla değer için virgülle ayrılmış)",
+  "sd": "Standart Sapma (birden fazla değer için virgülle ayrılmış)",
+  "siglevel": "Anlamlılık Düzeyi (0-1; birden fazla değer için virgülle ayrılmış)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "plotopt": "Güç Eğrisi",
+  "plotcurve": "Güç Eğrisi Grafiği Oluştur",
+  "curvex": "X-Eksen Değişkeni",
+  "curvegroup": "Grup / Renk Çizgilerini (isteğe bağlı) Ayır",
+  "curvenone": "Yok",
+  "curven": "Örnek Büyüklüğü",
+  "curvedelta": "Ortalamalar Arasındaki Fark",
+  "curvepower": "Güç",
+  "curvesd": "Standart Sapma",
+  "curvesiglevel": "Anlamlılık Düzeyi",
+  "mainTitle": "Bir grafik başlığı girin",
+  "xlab": "X ekseni etiketi",
+  "ylab": "Y ekseni etiketi",
+  "legends": "Efsaneleri Göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağdır)",
+  "help": {
+    "title": "Örnek Büyüklüğü, Test Bir Ortalama",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nBu, bir ortalama için bir örneklem t-testi veya eşleştirilmiş ortalamalar testi için örnek büyüklüğünün bir değerlendirmesidir. Kullanıcı iki tanesini belirttiğinde, örnek büyüklüğünü, ortalamalar arasındaki farkı veya gücü hesaplar.\n<br/><br/>\n<b>Örnek Büyüklüğü:</b> Çalışmadaki denek sayısını belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Ortalamalar Arasındaki Fark:</b> Eğer bir örneklem t-testi ise, alternatif hipotez altındaki ortalama ile sıfır hipotezi altındaki ortalama arasındaki farkı belirtin. Eğer bir eşleştirilmiş t-testi ise, alternatif hipotez altındaki eşleştirilmiş ortalamalar arasındaki farkı belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa sıfır hipotezini reddetme olasılığı. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Standart Sapma:</b> Sonuç ölçümünün standart sapma tahminini belirtin. Eşleştirilmiş testler için, bu eşleştirilmiş farkların standart sapmasıdır. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini (yani tip I hatası) belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Güç Eğrisi Grafiği Oluştur:</b> Birden fazla alan için birden fazla değer sağlandığında, sonuçları çizmek için bu kutucuğu işaretleyin. Hangi hesaplanan miktarın X-ekseni üzerinde yer alacağını seçin ve isteğe bağlı olarak bir veya daha fazla alanı gruplamak/renk ayırmak için seçin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats, broom, ggplot2\n\t\t\t"
+  }
+}

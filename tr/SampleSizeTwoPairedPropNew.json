@@ -1,0 +1,32 @@
+{
+  "title": "Örnek Büyüklüğü, İki Eşleşik Oranlar Testi Yeni",
+  "navigation": "İki Eşleşik Oranlar Testi Yeni",
+  "howtouse": "Örnek büyüklüğünü hesaplamak için (eşleşik sayı): güç belirtin\nGücü hesaplamak için: örnek büyüklüğünü belirtin (eşleşik sayı)\n\nİPUCU: Aşağıdaki herhangi bir alan, virgülle ayrılmış değerler listesini kabul eder (örn. 0.1,0.2,0.3). Birden fazla alan birden fazla değer içerdiğinde, her kombinasyon hesaplanır ve bir tablo olarak döndürülür, bu nedenle her senaryo için bu iletişimi yeniden çalıştırmanıza gerek yoktur.",
+  "n": "Örnek Büyüklüğü, eşleşik sayı (birden fazla değer için virgülle ayrılmış)",
+  "power": "Güç (0-1; birden fazla değer için virgülle ayrılmış)",
+  "pdisc": "Uyumsuz Eşleşik Oran PD (0-1; birden fazla değer için virgülle ayrılmış)",
+  "pdiff": "Oranlar Arasındaki Fark, -PD ile PD arasında olmalıdır (birden fazla değer için virgülle ayrılmış)",
+  "siglevel": "Anlamlılık Düzeyi (0-1; birden fazla değer için virgülle ayrılmış)",
+  "alternativeopt": "Alternatif Hipotez",
+  "twosided": "İki Taraflı",
+  "onesided": "Tek Taraflı",
+  "plotopt": "Güç Eğrisi",
+  "plotcurve": "Güç Eğrisi Grafiği Oluştur",
+  "curvex": "X-Eksen Değişkeni",
+  "curvegroup": "Grup / Renk Çizgilerini (isteğe bağlı) Ayır",
+  "curvenone": "Yok",
+  "curven": "Örnek Büyüklüğü",
+  "curvepower": "Güç",
+  "curvepdisc": "Uyumsuz Eşleşik Oran",
+  "curvepdiff": "Oranlar Arasındaki Fark",
+  "curvesiglevel": "Anlamlılık Düzeyi",
+  "mainTitle": "Bir grafik başlığı girin",
+  "xlab": "X ekseni etiketi",
+  "ylab": "Y ekseni etiketi",
+  "legends": "Efsaneleri Göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağdır)",
+  "help": {
+    "title": "Örnek Büyüklüğü, İki Eşleşik Oranlar Testi",
+    "r_help": "help(qnorm, package ='stats')",
+    "body": "\nBu, McNemar Testi kullanarak eşleşik oranlar için örnek büyüklüğünün bir değerlendirmesidir. Kullanıcı diğerini belirtirse, örnek büyüklüğünü (eşleşik sayı) veya gücü hesaplar. Hesaplamalar, uyumsuz eşleşik oranına bağlı olarak normal bir yaklaşım kullanır. Connor R. J. 1987. Eşleşik örnek tasarımı için oranlardaki farklılıkları test etmek için örnek büyüklüğü. Biometrics 43(1):207-211.\n<br/><br/>\n<b>Örnek Büyüklüğü (eşleşik sayı):</b> Çalışmadaki örnek büyüklüğünü belirtin. Bu, her iki zaman noktasında ikili sonuç değerleri sağlayacak olan deneklerin sayısıdır\nbir ön vs sonrası tasarımında veya eşleşik bir denek (örn. eşleşik vaka-kontrol) tasarımındaki eşleşik sayı. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Güç:</b> Çalışmanın istenen gücünü belirtin, yani alternatif hipotez doğruysa, testin sıfır hipotezini reddetme olasılığı. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Uyumsuz Eşleşik Oran:</b> Toplam eşleşik sayısından, 'evet'/'hayır' veya 'hayır'/'evet' yanıtlarının uyumsuz olacağı beklenen oranı belirtin. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Oranlar Arasındaki Fark:</b> Tespit edilmek istenen sonuç oranları arasındaki farkı belirtin (yani 'evet' olanların oranı). Örneğin, eşleşik vaka-kontrol\nçalışmasında, bu 'evet' olan vakaların oranı ile 'evet' olan kontrollerin oranı arasındaki farktır. Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Anlamlılık Düzeyi:</b> Testin istenen anlamlılık düzeyini belirtin (yani tip I hatası). Virgülle ayrılmış listeler kabul edilir.\n<br/><br/>\n<b>Alternatif Hipotez:</b> Testin iki taraflı mı yoksa tek taraflı mı olduğunu belirtin\n<br/><br/>\n<b>Güç Eğrisi Grafiği Oluştur:</b> Birden fazla alan için birden fazla değer sağlandığında, sonuçları çizmek için bu kutuyu işaretleyin. Hangi hesaplanan miktarın X ekseninde yer alacağını seçin ve isteğe bağlı olarak bir veya daha fazla alanı gruplamak/rengini ayırmak için seçin.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> stats, ggplot2\n\t\t\t"
+  }
+}

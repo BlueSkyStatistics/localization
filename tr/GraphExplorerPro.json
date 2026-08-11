@@ -1,0 +1,14 @@
+{
+  "title": "Grafik Gezgini",
+  "navigation": "Grafik Gezgini",
+  "destdatalabel": "Veri Kümesini Belirleyin",
+  "notelabel": "Bu, etkileşimli olarak bir grafik oluşturmak için bir web tarayıcı penceresi açar.",
+  "implabel": "ÖNEMLİ!",
+  "closenotelabel": "BlueSky tekrar kullanılmadan önce, 'Esquisse' olarak adlandırılan koyu başlık çubuğunun sağ tarafındaki büyük X'e tıklayarak tarayıcı uygulamasını doğru bir şekilde kapatmalısınız. Sadece tarayıcı sekmesini veya tarayıcıyı kapatmak uygulamayı kapatmaz.",
+  "reportlabel": "Grafik, tarayıcı uygulaması içinde kaydedilebilir. Grafiği BlueSky çıktı penceresine dahil etmek için lütfen tarayıcı uygulamasından R kodunu kopyalayıp yapıştırın.",
+  "help": {
+    "title": "Grafik Gezgini",
+    "r_help": "help(esquisser, package ='esquisse')",
+    "body": "\nBu diyalog, kullanıcının Esquisse R paketi ile grafik dilinin çerçevesini kullanarak bir grafiği etkileşimli olarak bir web tarayıcısında oluşturmasına olanak tanır. Varsayılan tarayıcı kullanılacaktır.\n<br/><br/>\n<b>ÖNEMLİ!</b>\n<br/>\nGrafik Gezgini'nden çıkmak için tarayıcı uygulamasını uygun bir şekilde kapatmalısınız. Bunu, \"Esquisse\" olarak adlandırılan koyu başlık çubuğunun sağ tarafındaki büyük X'e tıklayarak yapın. Tarayıcı sekmesini veya tarayıcıyı kapatmak uygulamayı kapatmaz. Tarayıcı uygulamasını doğru bir şekilde kapatmamayı, BlueSky Statistics'in yeniden başlatılmasını gerektirecektir.\n<br/><br/>\nGrafik, tarayıcı uygulaması içinde kaydedilebilir. Grafiği oluşturmak için R kodu, tarayıcıdan BlueSky'e kaydetmek veya daha fazla değişiklik yapmak için kopyalanıp yapıştırılabilir.\n<br/><br/>\nEsquisse hakkında bir eğitim için <a href=\"https://cran.r-project.org/web/packages/esquisse/vignettes/get-started.html\">buraya</a> bakın.\n<br/><br/>\nGrafik dilinin çerçevesi hakkında daha fazla bilgi için <a href=\"https://vita.had.co.nz/papers/layered-grammar.html\">buraya</a> bakın.\n<br/><br/>\n<b>Gerekli R Paketleri:</b> esquisse\n\t\t\t"
+  }
+}

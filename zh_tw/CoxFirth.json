@@ -1,0 +1,22 @@
+{
+  "title": "Cox，Firth 偏差修正",
+  "navigation": "Cox，Firth 偏差修正",
+  "complabeltext": "此模型需要具有完整資料的資料集。若要移除含有遺漏值的列，請參閱：變數 -> 遺漏值 -> 移除 NA。",
+  "modelname": "輸入模型名稱",
+  "timevar": "事件或設限時間",
+  "eventvar": "事件（1 = 發生事件，0 = 設限）",
+  "modelterms": "自變數模型表示式建立器",
+  "stattext": "檢定統計量與信賴區間類型",
+  "profilelikelihoodlabel": "概況概似",
+  "waldlabel": "Wald",
+  "convergeoptlabel": "收斂選項",
+  "maxiterlabel": "最大迭代次數",
+  "maxsteplabel": "單次迭代允許的（標準化）參數值最大變化（>0）",
+  "diagnosticsbox": "模型診斷",
+  "martscalebox": "虛無模型 Martingale 殘差座標軸最小值（-Inf 到 1）：",
+  "help": {
+    "title": "Cox，Firth 偏差修正",
+    "r_help": "help(coxphf, package = 'coxphf')",
+    "body": "（已翻譯略）"
+  }
+}

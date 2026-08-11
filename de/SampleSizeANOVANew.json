@@ -1,0 +1,29 @@
+{
+  "title": "Stichprobengröße, ANOVA Neu",
+  "navigation": "ANOVA Neu",
+  "howtouse": "Um die Stichprobengröße zu berechnen: Geben Sie die Gruppenmittelwerte und die Power an\nUm die Power zu berechnen: Geben Sie die Stichprobengröße und die Gruppenmittelwerte an\n\nTIPP: Stichprobengröße, Power, Standardabweichung und Signifikanzniveau akzeptieren jeweils eine durch Kommas getrennte Liste von Werten (z. B. 0.8,0.9). Wenn mehr als ein Feld mehrere Werte hat, wird jede Kombination berechnet und als Tabelle zurückgegeben, sodass Sie diesen Dialog nicht für jedes Szenario erneut ausführen müssen. Anzahl der Gruppen und Gruppenmittelwerte bleiben während des gesamten Laufs fest.",
+  "numgrps": "Anzahl der Gruppen",
+  "n": "Stichprobengröße pro Gruppe (durch Kommas getrennt für mehrere Werte)",
+  "grpmeans": "Gruppenmittelwerte, geben Sie als durch Kommas getrennte Werte an, z. B. 20, 25, 40",
+  "power": "Power (0-1; durch Kommas getrennt für mehrere Werte)",
+  "sd": "Standardabweichung (durch Kommas getrennt für mehrere Werte)",
+  "siglevel": "Signifikanzniveau (0-1; durch Kommas getrennt für mehrere Werte)",
+  "plotopt": "Power-Kurve",
+  "plotcurve": "Power-Kurve-Plot generieren",
+  "curvex": "X-Achsen-Variable",
+  "curvegroup": "Gruppe / Farbige Linien nach (optional)",
+  "curvenone": "Keine",
+  "curven": "Stichprobengröße",
+  "curvepower": "Power",
+  "curvesd": "Standardabweichung",
+  "curvesiglevel": "Signifikanzniveau",
+  "mainTitle": "Geben Sie einen Diagrammtitel ein",
+  "xlab": "X-Achsenbeschriftung",
+  "ylab": "Y-Achsenbeschriftung",
+  "legends": "Legenden anzeigen und falls ja, Position der Legenden (Standard ist rechts)",
+  "help": {
+    "title": "Stichprobengröße, ANOVA",
+    "r_help": "help(power.anova.test, package ='stats')",
+    "body": "\nDies ist eine Bewertung der Stichprobengröße für eine ausgewogene einfaktorielle ANOVA. Es berechnet die Stichprobengröße oder die Power, wenn der Benutzer das andere angibt.\n<br/><br/>\n<b>Anzahl der Gruppen:</b> Geben Sie die Anzahl der Gruppen in der Studie an\n<br/><br/>\n<b>Stichprobengröße pro Gruppe:</b> Geben Sie die Anzahl der Probanden in jeder Gruppe an. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Gruppenmittelwerte:</b> Geben Sie die Mittelwerte in jeder Gruppe an, die Sie nachweisen möchten. Mindestens ein Mittelwert muss sich von den anderen unterscheiden. Dies definiert ein einzelnes Effektgrößenszenario für den gesamten Lauf.\n<br/><br/>\n<b>Power:</b> Geben Sie die gewünschte Power der Studie an, d. h. die Wahrscheinlichkeit, dass der Test die Nullhypothese ablehnt, wenn die Alternativhypothese wahr ist. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Standardabweichung:</b> Geben Sie die Standardabweichung des Ergebnisses an. Dies wird angenommen, dass sie in den Gruppen gleich ist. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Signifikanzniveau:</b> Geben Sie das gewünschte Signifikanzniveau (d. h. Fehler 1. Art) des Tests an. Durch Kommas getrennte Listen werden akzeptiert.\n<br/><br/>\n<b>Power-Kurve-Plot generieren:</b> Wenn mehrere Werte für mehr als ein Feld angegeben werden, aktivieren Sie dieses Feld, um die Ergebnisse zu plotten. Wählen Sie aus, welche berechnete Größe auf der X-Achse angezeigt wird, und optional ein oder mehrere Felder, um Kurven nach Gruppen/Farben zu trennen.\n<br/><br/>\n<b>Erforderliche R-Pakete:</b> stats, ggplot2\n\t\t\t"
+  }
+}

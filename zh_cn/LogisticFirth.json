@@ -1,0 +1,21 @@
+{
+  "title": "逻辑回归，Firth偏差校正",
+  "navigation": "逻辑回归，Firth偏差校正",
+  "modelname": "输入模型名称",
+  "outcomevar": "因变量",
+  "modelterms": "独立变量的模型表达式构建器",
+  "offsetlabel": "偏移量",
+  "weightslabel": "权重",
+  "stattext": "检验统计量和置信区间的类型",
+  "profilelikelihoodlabel": "轮廓似然",
+  "waldlabel": "瓦尔德",
+  "fliclabel": "FLIC截距校正",
+  "convergeoptlabel": "收敛选项",
+  "maxiterlabel": "最大迭代次数",
+  "maxsteplabel": "在一次迭代中允许的参数值最大变化。设置为-1表示无限步长。",
+  "help": {
+    "title": "逻辑回归，Firth偏差校正",
+    "r_help": "help(logistf, package = 'logistf')",
+    "body": "\n            <b>使用Firth偏差校正的逻辑回归模型</b>\n            <br/><br/>\n            使用Firth的偏差减少方法拟合逻辑回归模型，相当于通过Jeffreys先验对对数似然进行惩罚。可以通过惩罚的轮廓似然计算回归系数的置信区间。\n\t\t\tFirth的方法被提出作为解决逻辑回归中分离问题的理想解决方案，参见Heinze和Schemper（2002）。Firth方法的修改（FLIC）导致无偏预测，参见Puhr等（2017）。研究表明，通过Firth的惩罚似然方法进行分析，特别是结合计算轮廓似然置信区间和惩罚似然比检验，优于最大似然分析。\n\t\t\t该模型也用于小样本和稀有事件的情况，其中标准最大似然容易产生偏差。\n\t\t\t<br/><br/>\n\t\t\t提供模型拟合统计量、参数估计和比值比。\n\t\t\t<br/><br/>\n            <b>因变量：</b> 事件指示符。可以是数值（1=事件，0=无事件）、因子或逻辑（TRUE，FALSE）变量。\n            <br/><br/>\n            <b>独立变量的模型表达式构建器：</b> 指定将用于建模结果风险的预测变量的函数。因子、字符串和逻辑变量将被虚拟编码。\n            <br/><br/>\n\t\t\t<b>偏移量：</b> 要包含在线性预测中的先验已知成分。对此不会估计系数。\n            <br/><br/>\n\t\t\t<b>权重：</b> 指定案例权重。输入数据集的每个观察值都乘以权重变量的相应元素。\n            <br/><br/>\n            <b>选项</b>\n            <br/><br/>\n            <b>检验统计量和置信区间的类型：</b>\n            <br/>\n            指定置信区间和检验是否应基于轮廓惩罚对数似然（默认）或基于瓦尔德方法\n            <br/><br/>\n\t\t\t<b>FLIC截距校正：</b>\n            <br/>\n            如果选择，截距会被改变，使得预测概率变得无偏，同时保持所有其他系数不变（参见Puhr等，2017）。\n            <br/><br/>\n            <b>最大迭代次数：</b>\n            <br/>\n            指定拟合例程的最大迭代次数。在初始不收敛的情况下，尝试增加此值以获得收敛。\n\t\t\t<br/><br/>\n            <b>在一次迭代中允许的参数值最大变化：</b>\n            <br/>\n            在初始不收敛的情况下，尝试减少此值以获得收敛。\n            <br/><br/>\n\t\t\t<b>参考文献：</b>\n\t\t\t<br/><br/>\n\t\t\tFirth D (1993). 最大似然估计的偏差减少。生物统计学 80:27--38。\n\t\t\t<br/><br/>\n\t\t\tHeinze G, Schemper M (2002). 解决逻辑回归中的分离问题。医学统计 21: 2409-2419。\n\t\t\t<br/><br/>\n\t\t\tPuhr R, Heinze G, Nold M, Lusa L, Geroldinger A (2017). Firth的逻辑回归与稀有事件：准确的效应估计和预测？医学统计 36: 2302-2317。\n\t\t\t<br/><br/>\n            <b>所需的R包：</b> logistf, survival\n"
+  }
+}

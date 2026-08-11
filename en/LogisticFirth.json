@@ -1,0 +1,21 @@
+{
+    "title": "Logistic, Firth Bias Correction",
+    "navigation": "Logistic, Firth Bias Correction",
+    "modelname": "Enter model name",
+    "outcomevar": "Dependent variable",
+    "modelterms": "Model expression builder for independent variables",
+    "offsetlabel": "Offset",
+    "weightslabel": "Weights",
+    "stattext": "Type of test statistics and confidence intervals",
+    "profilelikelihoodlabel": "Profile likelihood",
+    "waldlabel": "Wald",
+    "fliclabel": "FLIC intercept correction",
+    "convergeoptlabel": "Convergence Options",
+    "maxiterlabel": "Maximum number of iterations",
+    "maxsteplabel": "Maximum change of parameter values allowed in one iteration. Set to -1 for infinite stepsize.",
+    "help": {
+        "title": "Logistic, Firth Bias Correction",
+        "r_help": "help(logistf, package = 'logistf')",
+        "body": "\n            <b>Logistic Regression Model with Firth Bias Correction</b>\n            <br/><br/>\n            Fit a logistic regression model using Firth's bias reduction method, equivalent to penalization of the log-likelihood by the Jeffreys prior. Confidence intervals for \n\t\t\tregression coefficients can be computed by penalized profile likelihood. Firth's method was proposed as an ideal solution to the problem of separation in logistic regression, \n\t\t\tsee Heinze and Schemper (2002). A modification of Firth's method (FLIC) leads to unbiased predictions, see Puhr et al (2017). It was shown that analysis by Firth's penalized \n\t\t\tlikelihood method, particularly in conjunction with the computation of profile likelihood confidence intervals and penalized likelihood ratio tests is superior to maximum likelihood analysis.  \n\t\t\tThis model is also used in situations of small sample sizes and rare events where standard maximum likelihood is prone to bias.\n\t\t\t<br/><br/>\n\t\t\tModel fitting statistics, parameter estimates, and odds ratios are provided.  \n\t\t\t<br/><br/>\n            <b>Dependent variable:</b> Event indicator.  Can be numeric (1=event, 0=no event), factor, or a logical (TRUE, FALSE) variable.\n            <br/><br/>\n            <b>Model expression builder for independent variables:</b> Specify the function of the predictors that will be used to model the outcome risk.  Factors, strings, and logical variables will be dummy coded.\n            <br/><br/>\n\t\t\t<b>Offset:</b> An a priori known component to be included in the linear predictor.  No coefficient will be estimated for this.\n            <br/><br/>\n\t\t\t<b>Weights:</b> Specify case weights.  Each observation of the input dataset is multiplied by the corresponding element of the weights variable.\n            <br/><br/>\n            <b>Options</b>\n            <br/><br/>\n            <b>Type of test statistics and confidence intervals:</b>\n            <br/>\n            Specifies if confidence intervals and tests should be based on the profile penalized log likelihood (the default) or on the Wald method\n            <br/><br/>\n\t\t\t<b>FLIC intercept correction:</b>\n            <br/>\n            If selected, intercept is altered such that the predicted probabilities become unbiased while keeping all other coefficients constant (see Puhr et al, 2017).\n            <br/><br/>\n            <b>Maximum number of iterations:</b>\n            <br/>\n            Specify the maximum number of iterations for the fitting routine.  In cases of initial non-convergence, try increasing this to obtain convergence.\n\t\t\t<br/><br/>\n            <b>Maximum change of parameter values allowed in one iteration:</b>\n            <br/>\n            In cases of initial non-convergence, try decreasing this to obtain convergence.\n            <br/><br/>\n\t\t\t<b>References:</b>\n\t\t\t<br/><br/>\n\t\t\tFirth D (1993). Bias reduction of maximum likelihood estimates. Biometrika 80:27--38.\n\t\t\t<br/><br/>\n\t\t\tHeinze G, Schemper M (2002). A solution to the problem of separation in logistic regression. Statistics in Medicine 21: 2409-2419.\n\t\t\t<br/><br/>\n\t\t\tPuhr R, Heinze G, Nold M, Lusa L, Geroldinger A (2017). Firth's logistic regression with rare events: accurate effect estimates and predictions? Statistics in Medicine 36: 2302-2317.\n\t\t\t<br/><br/>\n            <b>Required R packages:</b> logistf, survival\n"
+    }
+}

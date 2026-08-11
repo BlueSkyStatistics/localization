@@ -1,0 +1,32 @@
+{
+  "title": "Dimensiunea eșantionului, Testul unei medii sau medii pereche noi",
+  "navigation": "O medie sau medii pereche noi",
+  "howtouse": "Specificați două dintre dimensiunea eșantionului, diferența dintre medii și puterea, iar a treia va fi calculată\n\nSUGESTIE: Orice câmp de mai jos acceptă o listă de valori separate prin virgulă (de exemplu, 0.5,1,1.5). Când mai multe câmpuri au valori multiple, fiecare combinație este calculată și returnată sub formă de tabel, așa că nu trebuie să rulați din nou acest dialog pentru fiecare scenariu.",
+  "n": "Dimensiunea eșantionului (separate prin virgulă pentru valori multiple)",
+  "delta": "Diferența dintre medii (separate prin virgulă pentru valori multiple)",
+  "power": "Puterea (0-1; separate prin virgulă pentru valori multiple)",
+  "sd": "Deviația standard (separate prin virgulă pentru valori multiple)",
+  "siglevel": "Nivelul de semnificație (0-1; separate prin virgulă pentru valori multiple)",
+  "alternativeopt": "Ipoteza alternativă",
+  "twosided": "Bidirecțional",
+  "onesided": "Unidirecțional",
+  "plotopt": "Curba puterii",
+  "plotcurve": "Generați graficul curbei puterii",
+  "curvex": "Variabila axei X",
+  "curvegroup": "Grupare / Colorare linii după (opțional)",
+  "curvenone": "Niciuna",
+  "curven": "Dimensiunea eșantionului",
+  "curvedelta": "Diferența dintre medii",
+  "curvepower": "Puterea",
+  "curvesd": "Deviația standard",
+  "curvesiglevel": "Nivelul de semnificație",
+  "mainTitle": "Introduceți un titlu pentru grafic",
+  "xlab": "Eticheta axei X",
+  "ylab": "Eticheta axei Y",
+  "legends": "Arată legendele și, dacă da, poziția legendelor (implicit este dreapta)",
+  "help": {
+    "title": "Dimensiunea eșantionului, Testul unei medii",
+    "r_help": "help(power.t.test, package ='stats')",
+    "body": "\nAceasta este o evaluare a dimensiunii eșantionului pentru un test t cu o singură mostră a unei medii sau un test al medii pereche.  Calculează dimensiunea eșantionului, diferența dintre medii sau puterea, atunci când utilizatorul \nspecifice două dintre ele.\n<br/><br/>\n<b>Dimensiunea eșantionului:</b> Specificați numărul de subiecți din studiu. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Diferența dintre medii:</b> Dacă este un test t cu o singură mostră, specificați diferența dintre media sub ipoteza alternativă și media sub ipoteza nulă.  Dacă este un\n test t pereche, specificați diferența dintre mediile pereche sub ipoteza alternativă. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Puterea:</b> Specificați puterea dorită a studiului, adică probabilitatea ca testul să respingă ipoteza nulă dacă ipoteza alternativă a fost adevărată. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Deviația standard:</b> Specificați o estimare a deviației standard a măsurii de rezultat.  Pentru teste pereche, aceasta este deviația standard a diferențelor pereche. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Nivelul de semnificație:</b> Specificați nivelul de semnificație dorit (adică eroarea de tip I) a testului. Listele separate prin virgulă sunt acceptate.\n<br/><br/>\n<b>Ipoteza alternativă:</b> Specificați dacă testul este bidirecțional sau unidirecțional\n<br/><br/>\n<b>Generați graficul curbei puterii:</b> Când sunt furnizate valori multiple pentru mai mult de un câmp, bifați această casetă pentru a plota rezultatele. Alegeți ce cantitate calculată merge pe axa X și, opțional, unul sau mai multe câmpuri pentru a grupa/color separa curbele.\n<br/><br/>\n<b>Pachete R necesare:</b> stats, broom, ggplot2\n\t\t\t"
+  }
+}

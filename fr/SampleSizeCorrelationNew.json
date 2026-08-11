@@ -1,0 +1,31 @@
+{
+  "title": "Taille d'échantillon, Test de Corrélation Nouveau",
+  "navigation": "Corrélation Nouveau",
+  "howtouse": "Pour calculer la taille de l'échantillon : spécifiez la corrélation et la puissance\nPour calculer la puissance : spécifiez la taille de l'échantillon et la corrélation\nPour calculer la corrélation détectable : spécifiez la taille de l'échantillon et la puissance\n\nASTUCE : Tout champ ci-dessous accepte une liste de valeurs séparées par des virgules (par exemple, 0.2,0.3,0.4). Lorsque plus d'un champ a plusieurs valeurs, chaque combinaison est calculée et renvoyée sous forme de tableau, donc vous n'avez pas besoin de relancer cette boîte de dialogue pour chaque scénario.",
+  "n": "Taille d'échantillon (séparée par des virgules pour plusieurs valeurs)",
+  "corr": "Corrélation (-1 à 1 ; séparée par des virgules pour plusieurs valeurs)",
+  "power": "Puissance (0-1 ; séparée par des virgules pour plusieurs valeurs)",
+  "siglevel": "Niveau de Signification (0-1 ; séparée par des virgules pour plusieurs valeurs)",
+  "alternativeopt": "Hypothèse Alternative",
+  "twosided": "Deux-Sidée",
+  "greater": "Supérieur À",
+  "less": "Inférieur À",
+  "plotopt": "Courbe de Puissance",
+  "plotcurve": "Générer le Graphique de la Courbe de Puissance",
+  "curvex": "Variable de l'Axe X",
+  "curvegroup": "Grouper / Colorer les Lignes Par (optionnel)",
+  "curvenone": "Aucun",
+  "curven": "Taille d'Échantillon",
+  "curvecorr": "Corrélation",
+  "curvepower": "Puissance",
+  "curvesiglevel": "Niveau de Signification",
+  "mainTitle": "Entrez un titre de graphique",
+  "xlab": "Étiquette de l'axe X",
+  "ylab": "Étiquette de l'axe Y",
+  "legends": "Afficher les Légendes et si oui, position des Légendes (par défaut à droite)",
+  "help": {
+    "title": "Taille d'échantillon, Test de Corrélation",
+    "r_help": "help(pwr.r.test, package ='pwr')",
+    "body": "\nCeci est une évaluation de la taille de l'échantillon pour un coefficient de corrélation de Pearson. Il calcule la taille de l'échantillon, la puissance ou la corrélation lorsque l'utilisateur \nspecifie les deux autres. L'hypothèse nulle de corrélation est 0.\n<br/><br/>\n<b>Taille d'Échantillon :</b> Spécifiez le nombre de sujets dans l'étude. Les listes séparées par des virgules sont acceptées.\n<br/><br/>\n<b>Corrélation :</b> Spécifiez la corrélation à détecter. Les listes séparées par des virgules sont acceptées.\n<br/><br/>\n<b>Puissance :</b> Spécifiez la puissance désirée de l'étude, c'est-à-dire la probabilité que le test rejette l'hypothèse nulle si l'hypothèse alternative était vraie. Les listes séparées par des virgules sont acceptées.\n<br/><br/>\n<b>Niveau de Signification :</b> Spécifiez le niveau de signification désiré (c'est-à-dire l'erreur de type I) du test. Les listes séparées par des virgules sont acceptées.\n<br/><br/>\n<b>Hypothèse Alternative :</b> Spécifiez si le test est à deux côtés, supérieur à (un côté), ou inférieur à (un côté)\n<br/><br/>\n<b>Générer le Graphique de la Courbe de Puissance :</b> Lorsque plusieurs valeurs sont fournies pour plus d'un champ, cochez cette case pour tracer les résultats. Choisissez quelle quantité calculée va sur l'axe X, et éventuellement un ou plusieurs champs pour grouper/colorer les courbes séparées.\n<br/><br/>\n<b>Packages R Requis :</b> pwr, ggplot2\n\t\t\t"
+  }
+}
