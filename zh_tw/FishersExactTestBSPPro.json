@@ -1,0 +1,18 @@
+{
+  "title": "費雪精確檢定",
+  "navigation": "費雪精確檢定",
+  "modelname": "輸入結果名稱",
+  "rowVar": "行變數（類別）",
+  "colVar": "列變數（類別）",
+  "alternative": "替代假設（僅限於2x2表格）",
+  "confidenceLevel": "信賴區間",
+  "simulatechk": "模擬p值（對於大於2x2的表格）",
+  "nsim": "模擬重複次數",
+  "showtablechk": "顯示列聯表",
+  "showpropchk": "顯示行百分比表",
+  "help": {
+    "title": "費雪精確檢定",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>描述</b><br/>\n基於超幾何分佈的兩個類別變數之間獨立性的精確檢定，而不是基於卡方近似。當預期的單元計數較小時（常見的經驗法則：任何預期計數&lt;5），請使用此方法而不是卡方檢定。<br/><br/>\n<b>要求</b><br/>\n• 兩個變數必須是類別（因子）。<br/>\n• 對於大於2x2的表格，精確計算可能會很慢或不可行 — 啟用「模擬p值」以使用蒙特卡羅近似。<br/>\n• 僅對2x2表格報告比值比和信賴區間。<br/><br/>\n<b>使用的R函數：</b> stats::fisher.test()<br/>\n<b>所需的R套件：</b> stats（基礎R — 無需安裝）\n"
+  }
+}

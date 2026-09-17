@@ -1,0 +1,15 @@
+{
+  "title": "던 테스트",
+  "navigation": "던 테스트",
+  "modelname": "결과 이름 입력",
+  "response": "응답 변수 (숫자형)",
+  "group": "그룹 요인 (≥3 수준)",
+  "padjust": "p-값 조정 방법",
+  "showkwchk": "Kruskal-Wallis 요약 표시 (맥락, 내부적으로 계산됨)",
+  "showplotchk": "그룹별 상자 그림 표시",
+  "help": {
+    "title": "던 테스트",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>설명</b><br/>\n유의미한 Kruskal-Wallis 결과 후에 특정 그룹 쌍이 다름을 식별하기 위해 사용되는 사후 쌍별 비교 테스트로, 순위 합계를 사용하여 다중 비교 p-값 조정을 수행합니다.<br/><br/>\n<b>중요</b><br/>\nBioStat Prime의 기존 Kruskal-Wallis 대화 상자는 이 사후 옵션으로 확장할 수 없으므로, 이 대화 상자는 <b>내부적으로 Kruskal-Wallis를 다시 실행</b>하여 동일한 입력을 사용한 후 던의 쌍별 비교를 계산합니다. 던의 테이블 위에 한 줄의 Kruskal-Wallis 요약이 표시되어 전체 테스트가 유의미했는지 확인한 후 개별 쌍별 결과를 해석할 수 있습니다.<br/><br/>\n<b>요구 사항</b><br/>\n• 그룹 요인은 최소 3 수준이어야 합니다.<br/><br/>\n<b>사용된 R 함수:</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>필요한 R 패키지:</b> FSA\n"
+  }
+}

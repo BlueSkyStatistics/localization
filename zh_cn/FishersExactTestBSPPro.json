@@ -1,0 +1,18 @@
+{
+  "title": "费舍尔精确检验",
+  "navigation": "费舍尔精确检验",
+  "modelname": "输入结果名称",
+  "rowVar": "行变量（分类）",
+  "colVar": "列变量（分类）",
+  "alternative": "备择假设（仅限2x2表）",
+  "confidenceLevel": "置信水平",
+  "simulatechk": "模拟p值（对于大于2x2的表）",
+  "nsim": "模拟重复次数",
+  "showtablechk": "显示列联表",
+  "showpropchk": "显示行百分比表",
+  "help": {
+    "title": "费舍尔精确检验",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>描述</b><br/>\n基于超几何分布的两个分类变量之间的独立性精确检验，而不是卡方近似。当期望单元计数较小时（常见的经验法则：任何期望计数&lt; 5）时，请使用此方法而不是卡方检验。<br/><br/>\n<b>要求</b><br/>\n• 两个变量必须是分类的（因子）。<br/>\n• 对于大于2x2的表，精确计算可能会很慢或不可行——启用“模拟p值”以使用蒙特卡洛近似。<br/>\n• 仅对2x2表报告比值比和置信区间。<br/><br/>\n<b>使用的R函数：</b> stats::fisher.test()<br/>\n<b>所需的R包：</b> stats（基础R — 无需安装）\n"
+  }
+}

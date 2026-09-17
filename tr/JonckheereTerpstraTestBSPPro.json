@@ -1,0 +1,18 @@
+{
+  "title": "Jonckheere-Terpstra Test",
+  "navigation": "Jonckheere-Terpstra Test",
+  "modelname": "Sonuç Adını Girin",
+  "response": "Yanıt Değişkeni (sayısal)",
+  "group": "Sıralı Gruplama Değişkeni (≥3 seviye)",
+  "levelOrder": "Grup Seviye Sıralaması",
+  "customOrder": "Özel Seviye Sıralaması (virgülle ayrılmış, düşük→yüksek, isteğe bağlı)",
+  "alternative": "Alternatif Hipotez (Eğilim Yönü)",
+  "exactchk": "Tam Permütasyon Testini Kullan (n < 100 önerilir)",
+  "nperm": "Permütasyon Sayısı (eğer tam değilse)",
+  "descchk": "Grup Başına Tanımlayıcı İstatistikleri Göster",
+  "help": {
+    "title": "Jonckheere-Terpstra Test",
+    "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+    "body": "\n<b>Açıklama</b><br/>\nÜç veya daha fazla <b>trend</b> için parametrik olmayan test\n<i>sıralı</i> bağımsız gruplar (örneğin, artan doz seviyeleri) arasında. Bu,\ngrupların farklı olup olmadığını test eden Kruskal-Wallis'tan farklıdır,\ngrupların belirli bir sıralı yönde farklı olup olmadığını test etmez.<br/><br/>\n<b>Gereksinimler</b><br/>\n• Gruplama değişkeninin 3 veya daha fazla seviyesi olmalıdır.<br/>\n• Seviyeler anlamlı bir sıralamayı temsil etmelidir (örneğin, kontrol &lt; düşük &lt;\norta &lt; yüksek veya artan sayısal dozlar). BioStat Prime'ın seviyeleri nasıl\nsıralayacağını \"Grup Seviye Sıralaması\" ile aşağıda seçin.<br/><br/>\n<b>Kullanılan R fonksiyonu:</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>Gerekli R Paketleri:</b> DescTools\n"
+  }
+}

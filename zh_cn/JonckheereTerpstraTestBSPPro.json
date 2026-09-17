@@ -1,0 +1,18 @@
+{
+  "title": "Jonckheere-Terpstra 检验",
+  "navigation": "Jonckheere-Terpstra 检验",
+  "modelname": "输入结果名称",
+  "response": "响应变量（数值型）",
+  "group": "有序分组变量（≥3 个级别）",
+  "levelOrder": "组级别排序",
+  "customOrder": "自定义级别顺序（以逗号分隔，从低到高，可选）",
+  "alternative": "备择假设（趋势方向）",
+  "exactchk": "使用精确置换检验（建议 n < 100）",
+  "nperm": "置换次数（如果不是精确的）",
+  "descchk": "按组显示描述性统计",
+  "help": {
+    "title": "Jonckheere-Terpstra 检验",
+    "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+    "body": "\n<b>描述</b><br/>\n非参数检验，用于三个或更多<i>有序</i>独立组之间的单调<b>趋势</b>（例如，增加的剂量水平）。这与 Kruskal-Wallis 检验不同，后者仅测试组之间是否存在差异，而不测试它们是否在特定的有序方向上存在差异。<br/><br/>\n<b>要求</b><br/>\n• 分组变量必须具有 3 个或更多级别。<br/>\n• 级别必须代表有意义的顺序（例如，控制 &lt; 低 &lt; 中 &lt; 高，或增加的数值剂量）。选择 BioStat Prime 应如何使用下面的“组级别排序”来排序级别。<br/><br/>\n<b>使用的 R 函数：</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>所需的 R 包：</b> DescTools\n"
+  }
+}

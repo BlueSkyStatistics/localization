@@ -1,0 +1,17 @@
+{
+  "title": "Dunnett's Test (vs. Kontrolle)",
+  "navigation": "Dunnett's Test",
+  "modelname": "Ergebnisnamen eingeben",
+  "response": "Antwortvariable (numerisch)",
+  "group": "Gruppenfaktor",
+  "controlGroup": "Kontrollgruppe (genaue Bezeichnung wie in den Daten)",
+  "alternative": "Alternative Hypothese",
+  "confidenceLevel": "Konfidenzniveau",
+  "showanovachk": "ANOVA-Zusammenfassung anzeigen (Kontext, intern berechnet)",
+  "showplotchk": "Boxplot nach Gruppe anzeigen",
+  "help": {
+    "title": "Dunnett's Test (vs. Kontrolle)",
+    "r_help": "help(glht, package='multcomp')",
+    "body": "\n<b>Beschreibung</b><br/>\nPost-hoc paarweise Vergleich jeder Behandlungsgruppe gegen eine einzelne\nausgewählte <b>Kontrollgruppe</b>, mit multiplikationsangepassten p-Werten und\nKonfidenzintervallen. Wird nach einer einseitigen ANOVA verwendet, um zu identifizieren, welche spezifischen\nGruppen sich von der Kontrolle unterscheiden.<br/><br/>\n<b>Wichtig</b><br/>\nDa der bestehende ANOVA-Dialog von BioStat Prime nicht mit dieser\nPost-hoc-Option erweitert werden kann, <b>passt dieser Dialog die einseitige ANOVA intern</b>\nmit denselben Eingaben an, bevor die Vergleiche von Dunnett durchgeführt werden. Wenn Sie bereits\nANOVA separat durchgeführt haben und es nicht signifikant war, interpretieren Sie diese Post-hoc\nTabelle mit entsprechender Vorsicht — eine ANOVA-Zusammenfassung wird über der\nDunnett-Tabelle für diesen Kontext angezeigt.<br/><br/>\n<b>Anforderungen</b><br/>\n• Der Gruppenfaktor muss mindestens 2 Ebenen haben (Kontrolle + ≥1 Behandlung).<br/>\n• \"Kontrollgruppe\" muss genau mit einem der Ebenenbezeichnungen des Faktors übereinstimmen,\ninklusive Groß- und Kleinschreibung.<br/><br/>\n<b>Verwendete R-Funktionen:</b> stats::aov(), multcomp::glht() mit mcp(Dunnett)<br/>\n<b>Erforderliche R-Pakete:</b> multcomp\n"
+  }
+}

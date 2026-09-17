@@ -1,0 +1,18 @@
+{
+  "title": "Prueba U de Mann-Whitney",
+  "navigation": "Prueba U de Mann-Whitney",
+  "modelname": "Ingrese el nombre del resultado",
+  "response": "Variable de respuesta (numérica)",
+  "group": "Variable de agrupamiento (2 niveles)",
+  "alternative": "Hipótesis alternativa",
+  "exactchk": "Usar valor p exacto (muestras pequeñas, sin empates)",
+  "correctchk": "Aplicar corrección de continuidad",
+  "cichk": "Calcular intervalo de confianza (Hodges-Lehmann)",
+  "confidenceLevel": "Nivel de confianza",
+  "descchk": "Mostrar estadísticas descriptivas por grupo",
+  "help": {
+    "title": "Prueba U de Mann-Whitney",
+    "r_help": "help(wilcox.test, package='stats')",
+    "body": "\n<b>Descripción</b><br/>\nPrueba no paramétrica que compara la distribución de una respuesta continua/ordinal\nentre exactamente <b>dos grupos independientes</b>. Este es el equivalente basado en rangos\nde la prueba t para muestras independientes y se utiliza cuando no se puede asumir normalidad.<br/><br/>\n<b>Requisitos</b><br/>\n• La variable de agrupamiento debe tener exactamente 2 niveles presentes en los datos.<br/>\n• El valor p exacto de R base solo es válido cuando no hay rangos empatados. Si\n\"Usar valor p exacto\" está marcado y hay empates presentes, este diálogo automáticamente\nutiliza la prueba exacta corregida por empates del paquete <b>coin</b> en lugar de volver\nsilenciosamente a una aproximación normal. Si el paquete coin no está instalado\n(o la prueba corregida por empates falla por cualquier motivo), vuelve a la aproximación\nnormal como antes, con una nota en la salida.<br/><br/>\n<b>Función R utilizada:</b> stats::wilcox.test() (y coin::wilcox_test() cuando\nlos empates requieren una prueba exacta corregida por empates)<br/>\n<b>Paquetes R requeridos:</b> stats (R base); coin (opcional — solo necesario para\nvalores p exactos con datos empatados)\n"
+  }
+}

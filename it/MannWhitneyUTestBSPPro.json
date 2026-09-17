@@ -1,0 +1,18 @@
+{
+  "title": "Test U di Mann-Whitney",
+  "navigation": "Test U di Mann-Whitney",
+  "modelname": "Inserisci Nome Risultato",
+  "response": "Variabile di Risposta (numerica)",
+  "group": "Variabile di Raggruppamento (2 livelli)",
+  "alternative": "Ipotesi Alternativa",
+  "exactchk": "Usa p-value Esatto (campioni piccoli, senza pareggi)",
+  "correctchk": "Applica Correzione di Continuità",
+  "cichk": "Calcola Intervallo di Confidenza (Hodges-Lehmann)",
+  "confidenceLevel": "Livello di Confidenza",
+  "descchk": "Mostra Statistiche Descrittive per Gruppo",
+  "help": {
+    "title": "Test U di Mann-Whitney",
+    "r_help": "help(wilcox.test, package='stats')",
+    "body": "\n<b>Descrizione</b><br/>\nTest non parametrico che confronta la distribuzione di una risposta continua/ordinal\ntra esattamente <b>due gruppi indipendenti</b>. Questo è il corrispondente basato sui ranghi\ndel test t per campioni indipendenti ed è utilizzato quando non si può assumere la normalità.<br/><br/>\n<b>Requisiti</b><br/>\n• La variabile di raggruppamento deve avere esattamente 2 livelli presenti nei dati.<br/>\n• Il p-value esatto di base R è valido solo quando non ci sono ranghi pareggiati. Se\n\"Usa p-value Esatto\" è selezionato e sono presenti pareggi, questa finestra di dialogo utilizza automaticamente\nil test esatto corretto per i pareggi del pacchetto <b>coin</b> invece di tornare silenziosamente a un'approssimazione normale. Se il pacchetto coin non è installato\n(o il test corretto per i pareggi fallisce per qualsiasi motivo), torna all'approssimazione normale come prima,\ncon una nota nell'output.<br/><br/>\n<b>Funzione R utilizzata:</b> stats::wilcox.test() (e coin::wilcox_test() quando\ni pareggi richiedono un test esatto corretto per i pareggi)<br/>\n<b>Pacchetti R richiesti:</b> stats (base R); coin (opzionale — necessario solo per\np-value esatti con dati pareggiati)\n"
+  }
+}

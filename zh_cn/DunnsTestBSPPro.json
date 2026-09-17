@@ -1,0 +1,15 @@
+{
+  "title": "邓恩检验",
+  "navigation": "邓恩检验",
+  "modelname": "输入结果名称",
+  "response": "响应变量（数值型）",
+  "group": "组因子（≥3个水平）",
+  "padjust": "p值调整方法",
+  "showkwchk": "显示Kruskal-Wallis摘要（上下文，内部计算）",
+  "showplotchk": "按组显示箱线图",
+  "help": {
+    "title": "邓恩检验",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>描述</b><br/>\n在显著的Kruskal-Wallis结果后使用的事后成对比较检验，以识别哪些特定组对不同，使用秩和并进行多重比较p值调整。<br/><br/>\n<b>重要</b><br/>\n由于BioStat Prime现有的Kruskal-Wallis对话框无法扩展此事后选项，因此该对话框<b>内部重新运行Kruskal-Wallis</b>，使用相同的输入，然后计算邓恩的成对比较。在邓恩表格上方显示一行Kruskal-Wallis摘要，以便您可以在解释单个成对结果之前查看总体检验是否显著。<br/><br/>\n<b>要求</b><br/>\n• 组因子必须至少有3个水平。<br/><br/>\n<b>使用的R函数：</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>所需的R包：</b> FSA\n"
+  }
+}

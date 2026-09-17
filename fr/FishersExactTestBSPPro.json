@@ -1,0 +1,18 @@
+{
+  "title": "Test exact de Fisher",
+  "navigation": "Test exact de Fisher",
+  "modelname": "Entrez le nom du résultat",
+  "rowVar": "Variable de ligne (catégorique)",
+  "colVar": "Variable de colonne (catégorique)",
+  "alternative": "Hypothèse alternative (tables 2x2 uniquement)",
+  "confidenceLevel": "Niveau de confiance",
+  "simulatechk": "Simuler la valeur p (pour des tables plus grandes que 2x2)",
+  "nsim": "Nombre de réplicats de simulation",
+  "showtablechk": "Afficher le tableau de contingence",
+  "showpropchk": "Afficher le tableau des pourcentages par ligne",
+  "help": {
+    "title": "Test exact de Fisher",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Description</b><br/>\nTest exact d'indépendance entre deux variables catégoriques, basé sur la\ndistribution hypergéométrique plutôt que sur l'approximation du chi carré. Utilisez\ncela au lieu du chi carré lorsque les effectifs attendus sont faibles (une règle\nempirique courante : tout effectif attendu &lt; 5).<br/><br/>\n<b>Exigences</b><br/>\n• Les deux variables doivent être catégoriques (facteurs).<br/>\n• Pour des tables plus grandes que 2x2, le calcul exact peut être lent ou\ninapplicable — activez \"Simuler la valeur p\" pour utiliser l'approximation de Monte Carlo à la place.<br/>\n• Le rapport de cotes et l'intervalle de confiance ne sont rapportés que pour les tables 2x2.<br/><br/>\n<b>Fonction R utilisée :</b> stats::fisher.test()<br/>\n<b>Packages R requis :</b> stats (R de base — aucune installation nécessaire)\n"
+  }
+}

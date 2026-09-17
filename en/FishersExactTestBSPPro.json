@@ -1,0 +1,18 @@
+{
+    "title": "Fisher's Exact Test",
+    "navigation": "Fisher's Exact Test",
+    "modelname": "Enter Result Name",
+    "rowVar": "Row Variable (categorical)",
+    "colVar": "Column Variable (categorical)",
+    "alternative": "Alternative Hypothesis (2x2 tables only)",
+    "confidenceLevel": "Confidence Level",
+    "simulatechk": "Simulate p-value (for tables larger than 2x2)",
+    "nsim": "Number of Simulation Replicates",
+    "showtablechk": "Show Contingency Table",
+    "showpropchk": "Show Row-Percentage Table",
+    "help": {
+        "title": "Fisher's Exact Test",
+        "r_help": "help(fisher.test, package='stats')",
+        "body": "\n<b>Description</b><br/>\nExact test of independence between two categorical variables, based on the\nhypergeometric distribution rather than the chi-square approximation. Use\nthis instead of chi-square when expected cell counts are small (a common\nrule of thumb: any expected count &lt; 5).<br/><br/>\n<b>Requirements</b><br/>\n• Both variables must be categorical (factors).<br/>\n• For tables larger than 2x2, exact computation can be slow or infeasible —\nenable \"Simulate p-value\" to use Monte Carlo approximation instead.<br/>\n• Odds ratio and confidence interval are only reported for 2x2 tables.<br/><br/>\n<b>R function used:</b> stats::fisher.test()<br/>\n<b>R Packages required:</b> stats (base R — no install needed)\n"
+    }
+}

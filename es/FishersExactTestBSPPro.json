@@ -1,0 +1,18 @@
+{
+  "title": "Prueba Exacta de Fisher",
+  "navigation": "Prueba Exacta de Fisher",
+  "modelname": "Ingrese el Nombre del Resultado",
+  "rowVar": "Variable de Fila (categórica)",
+  "colVar": "Variable de Columna (categórica)",
+  "alternative": "Hipótesis Alternativa (solo tablas 2x2)",
+  "confidenceLevel": "Nivel de Confianza",
+  "simulatechk": "Simular valor p (para tablas más grandes que 2x2)",
+  "nsim": "Número de Réplicas de Simulación",
+  "showtablechk": "Mostrar Tabla de Contingencia",
+  "showpropchk": "Mostrar Tabla de Porcentaje por Fila",
+  "help": {
+    "title": "Prueba Exacta de Fisher",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Descripción</b><br/>\nPrueba exacta de independencia entre dos variables categóricas, basada en la\ndistribución hipergeométrica en lugar de la aproximación de chi-cuadrado. Use\nesto en lugar de chi-cuadrado cuando los recuentos esperados en las celdas son pequeños (una regla general común: cualquier recuento esperado &lt; 5).<br/><br/>\n<b>Requisitos</b><br/>\n• Ambas variables deben ser categóricas (factores).<br/>\n• Para tablas más grandes que 2x2, el cálculo exacto puede ser lento o inviable —\nenable \"Simular valor p\" para usar la aproximación de Monte Carlo en su lugar.<br/>\n• La razón de probabilidades y el intervalo de confianza solo se informan para tablas 2x2.<br/><br/>\n<b>Función R utilizada:</b> stats::fisher.test()<br/>\n<b>Paquetes R requeridos:</b> stats (R base — no se necesita instalación)"
+  }
+}

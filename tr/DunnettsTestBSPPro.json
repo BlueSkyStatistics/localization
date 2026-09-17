@@ -1,0 +1,17 @@
+{
+  "title": "Dunnett Testi (Kontrol ile)",
+  "navigation": "Dunnett Testi",
+  "modelname": "Sonuç Adını Girin",
+  "response": "Yanıt Değişkeni (sayısal)",
+  "group": "Grup Faktörü",
+  "controlGroup": "Kontrol Grubu (verilerdeki tam etiket)",
+  "alternative": "Alternatif Hipotez",
+  "confidenceLevel": "Güven Düzeyi",
+  "showanovachk": "ANOVA Özeti Göster (bağlam, dahili olarak hesaplanır)",
+  "showplotchk": "Gruba Göre Kutu Grafiği Göster",
+  "help": {
+    "title": "Dunnett Testi (Kontrol ile)",
+    "r_help": "help(glht, package='multcomp')",
+    "body": "\n<b>Açıklama</b><br/>\nHer bir tedavi grubunun tek bir belirlenmiş <b>kontrol grubu</b> ile\npost-hoc ikili karşılaştırması, çokluluk ayarlı p-değerleri ve\ngüven aralıkları ile. Kontrol ile hangi spesifik grupların farklı olduğunu\nbelirlemek için bir yönlü ANOVA'dan sonra kullanılır.<br/><br/>\n<b>Önemli</b><br/>\nBioStat Prime'ın mevcut ANOVA diyaloğu bu post-hoc seçeneği ile\nuzatılamadığından, bu diyalog <b>içsel olarak bir yönlü ANOVA'yı yeniden\nuyguluyor</b> ve Dunnett karşılaştırmalarını çalıştırmadan önce aynı girdileri\nkullanıyor. Eğer ANOVA'yı ayrı olarak çalıştırdıysanız ve anlamlı değilse,\nbu post-hoc tabloyu uygun bir dikkatle yorumlayın — o bağlam için\nDunnett tablosunun üzerinde bir ANOVA özeti gösterilmektedir.<br/><br/>\n<b>Gereksinimler</b><br/>\n• Grup faktörünün en az 2 seviyeye sahip olması gerekir (kontrol + ≥1 tedavi).<br/>\n• \"Kontrol Grubu\" faktörün seviye etiketlerinden biriyle tam olarak,\ncase dahil, eşleşmelidir.<br/><br/>\n<b>Kullanılan R fonksiyonları:</b> stats::aov(), multcomp::glht() ile mcp(Dunnett)<br/>\n<b>Gerekli R Paketleri:</b> multcomp\n"
+  }
+}

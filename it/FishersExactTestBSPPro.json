@@ -1,0 +1,18 @@
+{
+  "title": "Test esatto di Fisher",
+  "navigation": "Test esatto di Fisher",
+  "modelname": "Inserisci il nome del risultato",
+  "rowVar": "Variabile di riga (categorica)",
+  "colVar": "Variabile di colonna (categorica)",
+  "alternative": "Ipotesi alternativa (solo tabelle 2x2)",
+  "confidenceLevel": "Livello di confidenza",
+  "simulatechk": "Simula p-value (per tabelle più grandi di 2x2)",
+  "nsim": "Numero di repliche di simulazione",
+  "showtablechk": "Mostra tabella di contingenza",
+  "showpropchk": "Mostra tabella delle percentuali di riga",
+  "help": {
+    "title": "Test esatto di Fisher",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Descrizione</b><br/>\nTest esatto di indipendenza tra due variabili categoriche, basato sulla\ndistribuzione ipergeometrica piuttosto che sull'approssimazione del chi-quadro. Usa\nquesto invece del chi-quadro quando i conteggi attesi sono piccoli (una regola comune: qualsiasi conteggio atteso &lt; 5).<br/><br/>\n<b>Requisiti</b><br/>\n• Entrambe le variabili devono essere categoriche (fattori).<br/>\n• Per tabelle più grandi di 2x2, il calcolo esatto può essere lento o non fattibile —\nabilita \"Simula p-value\" per utilizzare invece l'approssimazione di Monte Carlo.<br/>\n• Il rapporto di odds e l'intervallo di confidenza sono riportati solo per tabelle 2x2.<br/><br/>\n<b>Funzione R utilizzata:</b> stats::fisher.test()<br/>\n<b>Pacchetti R richiesti:</b> stats (base R — nessuna installazione necessaria)\n"
+  }
+}

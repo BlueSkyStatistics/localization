@@ -1,0 +1,18 @@
+{
+  "title": "Teste Exato de Fisher",
+  "navigation": "Teste Exato de Fisher",
+  "modelname": "Insira o Nome do Resultado",
+  "rowVar": "Variável da Linha (categórica)",
+  "colVar": "Variável da Coluna (categórica)",
+  "alternative": "Hipótese Alternativa (apenas tabelas 2x2)",
+  "confidenceLevel": "Nível de Confiança",
+  "simulatechk": "Simular valor-p (para tabelas maiores que 2x2)",
+  "nsim": "Número de Réplicas de Simulação",
+  "showtablechk": "Mostrar Tabela de Contingência",
+  "showpropchk": "Mostrar Tabela de Percentagem da Linha",
+  "help": {
+    "title": "Teste Exato de Fisher",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Descrição</b><br/>\nTeste exato de independência entre duas variáveis categóricas, baseado na\ndistribuição hipergeométrica em vez da aproximação do qui-quadrado. Use\nisto em vez do qui-quadrado quando as contagens esperadas das células forem pequenas (uma regra comum: qualquer contagem esperada &lt; 5).<br/><br/>\n<b>Requisitos</b><br/>\n• Ambas as variáveis devem ser categóricas (fatores).<br/>\n• Para tabelas maiores que 2x2, o cálculo exato pode ser lento ou inviável —\nenable \"Simular valor-p\" para usar a aproximação de Monte Carlo em vez disso.<br/>\n• A razão de chances e o intervalo de confiança são relatados apenas para tabelas 2x2.<br/><br/>\n<b>Função R utilizada:</b> stats::fisher.test()<br/>\n<b>Pacotes R necessários:</b> stats (R base — nenhuma instalação necessária)\n"
+  }
+}

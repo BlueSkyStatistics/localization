@@ -1,0 +1,17 @@
+{
+    "title": "Dunnett's Test (vs. Control)",
+    "navigation": "Dunnett's Test",
+    "modelname": "Enter Result Name",
+    "response": "Response Variable (numeric)",
+    "group": "Group Factor",
+    "controlGroup": "Control Group (exact label as in data)",
+    "alternative": "Alternative Hypothesis",
+    "confidenceLevel": "Confidence Level",
+    "showanovachk": "Show ANOVA Summary (context, computed internally)",
+    "showplotchk": "Show Boxplot by Group",
+    "help": {
+        "title": "Dunnett's Test (vs. Control)",
+        "r_help": "help(glht, package='multcomp')",
+        "body": "\n<b>Description</b><br/>\nPost-hoc pairwise comparison of each treatment group against a single\ndesignated <b>control group</b>, with multiplicity-adjusted p-values and\nconfidence intervals. Used after a one-way ANOVA to identify which specific\ngroups differ from control.<br/><br/>\n<b>Important</b><br/>\nBecause BioStat Prime's existing ANOVA dialog cannot be extended with this\npost-hoc option, this dialog <b>re-fits the one-way ANOVA internally</b>\nusing the same inputs before running Dunnett's comparisons. If you already\nran ANOVA separately and it was not significant, interpret this post-hoc\ntable with appropriate caution — an ANOVA summary is shown above the\nDunnett's table for that context.<br/><br/>\n<b>Requirements</b><br/>\n• Group factor must have at least 2 levels (control + ≥1 treatment).<br/>\n• \"Control Group\" must match one of the factor's level labels exactly,\nincluding case.<br/><br/>\n<b>R functions used:</b> stats::aov(), multcomp::glht() with mcp(Dunnett)<br/>\n<b>R Packages required:</b> multcomp\n"
+    }
+}

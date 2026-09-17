@@ -1,0 +1,18 @@
+{
+  "title": "Testul Exact al lui Fisher",
+  "navigation": "Testul Exact al lui Fisher",
+  "modelname": "Introduceți Numele Rezultatului",
+  "rowVar": "Variabila pe Rând (categorică)",
+  "colVar": "Variabila pe Coloană (categorică)",
+  "alternative": "Ipoteza Alternativă (doar pentru tabele 2x2)",
+  "confidenceLevel": "Nivel de Încredere",
+  "simulatechk": "Simulează p-valoarea (pentru tabele mai mari de 2x2)",
+  "nsim": "Numărul de Replicări de Simulare",
+  "showtablechk": "Arată Tabelul de Contingență",
+  "showpropchk": "Arată Tabelul de Procentaj pe Rând",
+  "help": {
+    "title": "Testul Exact al lui Fisher",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Descriere</b><br/>\nTest exact de independență între două variabile categorice, bazat pe distribuția\nhipergeometrică în loc de aproximarea chi-pătrat. Folosiți\nacesta în loc de chi-pătrat atunci când numerele așteptate în celule sunt mici (o regulă comună: orice număr așteptat &lt; 5).<br/><br/>\n<b>Cerințe</b><br/>\n• Ambele variabile trebuie să fie categorice (factori).<br/>\n• Pentru tabele mai mari de 2x2, calculul exact poate fi lent sau imposibil —\nenablați \"Simulează p-valoarea\" pentru a folosi aproximarea Monte Carlo în schimb.<br/>\n• Raportul de șanse și intervalul de încredere sunt raportate doar pentru tabele 2x2.<br/><br/>\n<b>Funcția R utilizată:</b> stats::fisher.test()<br/>\n<b>Pachete R necesare:</b> stats (R de bază — nu este necesară instalarea)"
+  }
+}

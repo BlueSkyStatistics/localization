@@ -1,0 +1,18 @@
+{
+  "title": "Test de Jonckheere-Terpstra",
+  "navigation": "Test de Jonckheere-Terpstra",
+  "modelname": "Entrez le nom du résultat",
+  "response": "Variable de réponse (numérique)",
+  "group": "Variable de regroupement ordonnée (≥3 niveaux)",
+  "levelOrder": "Ordre des niveaux de groupe",
+  "customOrder": "Ordre des niveaux personnalisé (séparé par des virgules, de bas en haut, optionnel)",
+  "alternative": "Hypothèse alternative (direction de la tendance)",
+  "exactchk": "Utiliser le test de permutation exact (n < 100 recommandé)",
+  "nperm": "Nombre de permutations (si non exact)",
+  "descchk": "Afficher les statistiques descriptives par groupe",
+  "help": {
+    "title": "Test de Jonckheere-Terpstra",
+    "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+    "body": "\n<b>Description</b><br/>\nTest non paramétrique pour une <b>tendance</b> monotone à travers trois ou plus\n<i>groupes</i> indépendants ordonnés (par exemple, niveaux de dose croissants). Ceci est\ndifférent du test de Kruskal-Wallis, qui ne teste que si les groupes diffèrent, pas\ns'ils diffèrent dans une direction ordonnée spécifique.<br/><br/>\n<b>Exigences</b><br/>\n• La variable de regroupement doit avoir 3 niveaux ou plus.<br/>\n• Les niveaux doivent représenter un ordre significatif (par exemple, contrôle &lt; faible &lt;\nmedium &lt; élevé, ou doses numériques croissantes). Choisissez comment BioStat Prime\ndevrait ordonner les niveaux en utilisant \"Ordre des niveaux de groupe\" ci-dessous.<br/><br/>\n<b>Fonction R utilisée :</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>Packages R requis :</b> DescTools\n"
+  }
+}

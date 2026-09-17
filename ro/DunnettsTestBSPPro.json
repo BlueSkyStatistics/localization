@@ -1,0 +1,17 @@
+{
+  "title": "Testul Dunnett (vs. Control)",
+  "navigation": "Testul Dunnett",
+  "modelname": "Introduceți numele rezultatului",
+  "response": "Variabila de răspuns (numerică)",
+  "group": "Factor de grup",
+  "controlGroup": "Grup de control (etichetă exactă ca în date)",
+  "alternative": "Ipoteza alternativă",
+  "confidenceLevel": "Nivel de încredere",
+  "showanovachk": "Arată rezumatul ANOVA (context, calculat intern)",
+  "showplotchk": "Arată Boxplot pe grup",
+  "help": {
+    "title": "Testul Dunnett (vs. Control)",
+    "r_help": "help(glht, package='multcomp')",
+    "body": "\n<b>Descriere</b><br/>\nComparație post-hoc pereche a fiecărui grup de tratament față de un <b>grup de control</b> desemnat, cu valori p ajustate pentru multiplicitate și intervale de încredere. Utilizat după un ANOVA unidirecțional pentru a identifica care grupuri specifice diferă de control.<br/><br/>\n<b>Important</b><br/>\nDeoarece dialogul ANOVA existent în BioStat Prime nu poate fi extins cu această opțiune post-hoc, acest dialog <b>reface ANOVA unidirecțional intern</b> folosind aceleași intrări înainte de a rula comparațiile Dunnett. Dacă ați rulat deja ANOVA separat și nu a fost semnificativ, interpretați această tabelă post-hoc cu prudență adecvată — un rezumat ANOVA este afișat deasupra tabelului Dunnett pentru acel context.<br/><br/>\n<b>Cerințe</b><br/>\n• Factorul de grup trebuie să aibă cel puțin 2 niveluri (control + ≥1 tratament).<br/>\n• \"Grup de control\" trebuie să se potrivească exact cu una dintre etichetele nivelurilor factorului, inclusiv literele mari și mici.<br/><br/>\n<b>Funcții R utilizate:</b> stats::aov(), multcomp::glht() cu mcp(Dunnett)<br/>\n<b>Pachete R necesare:</b> multcomp\n"
+  }
+}
