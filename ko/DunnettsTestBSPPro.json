@@ -1,0 +1,17 @@
+{
+  "title": "던넷 검정 (대조군 대비)",
+  "navigation": "던넷 검정",
+  "modelname": "결과 이름 입력",
+  "response": "반응 변수 (숫자형)",
+  "group": "그룹 요인",
+  "controlGroup": "대조군 (데이터와 동일한 레이블)",
+  "alternative": "대안 가설",
+  "confidenceLevel": "신뢰 수준",
+  "showanovachk": "ANOVA 요약 보기 (맥락, 내부적으로 계산됨)",
+  "showplotchk": "그룹별 상자 그림 보기",
+  "help": {
+    "title": "던넷 검정 (대조군 대비)",
+    "r_help": "help(glht, package='multcomp')",
+    "body": "\n<b>설명</b><br/>\n각 치료 그룹을 단일 지정된 <b>대조군</b>과 비교하는 사후 쌍별 비교로,\n다중성 조정된 p-값과 신뢰 구간을 제공합니다. 일원 ANOVA 후에\n어떤 특정 그룹이 대조군과 다른지를 식별하는 데 사용됩니다.<br/><br/>\n<b>중요</b><br/>\nBioStat Prime의 기존 ANOVA 대화 상자는 이 사후 옵션으로 확장할 수 없으므로,\n이 대화 상자는 <b>내부적으로 일원 ANOVA를 재적합</b>하여\n던넷 비교를 실행하기 전에 동일한 입력을 사용합니다. 이미\nANOVA를 별도로 실행했으며 유의미하지 않았다면, 이 사후\n테이블을 적절한 주의와 함께 해석하십시오 — 해당 맥락에 대한\n던넷 테이블 위에 ANOVA 요약이 표시됩니다.<br/><br/>\n<b>요구 사항</b><br/>\n• 그룹 요인은 최소 2개 수준(대조군 + ≥1 치료)을 가져야 합니다.<br/>\n• \"대조군\"은 요인의 수준 레이블 중 하나와 정확히 일치해야 하며,\n대소문자를 포함합니다.<br/><br/>\n<b>사용된 R 함수:</b> stats::aov(), multcomp::glht() with mcp(Dunnett)<br/>\n<b>필요한 R 패키지:</b> multcomp\n"
+  }
+}

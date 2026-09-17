@@ -1,0 +1,17 @@
+{
+  "title": "Teste de Dunnett (vs. Controle)",
+  "navigation": "Teste de Dunnett",
+  "modelname": "Insira o Nome do Resultado",
+  "response": "Variável de Resposta (numérica)",
+  "group": "Fator de Grupo",
+  "controlGroup": "Grupo de Controle (rótulo exato como nos dados)",
+  "alternative": "Hipótese Alternativa",
+  "confidenceLevel": "Nível de Confiança",
+  "showanovachk": "Mostrar Resumo da ANOVA (contexto, calculado internamente)",
+  "showplotchk": "Mostrar Boxplot por Grupo",
+  "help": {
+    "title": "Teste de Dunnett (vs. Controle)",
+    "r_help": "help(glht, package='multcomp')",
+    "body": "\n<b>Descrição</b><br/>\nComparação par a par pós-hoc de cada grupo de tratamento contra um único\ngruppo de <b>controle designado</b>, com valores de p ajustados para multiplicidade e\nintervalos de confiança. Usado após uma ANOVA de uma via para identificar quais grupos específicos\ndiferem do controle.<br/><br/>\n<b>Importante</b><br/>\nComo o diálogo de ANOVA existente do BioStat Prime não pode ser estendido com esta\nopção pós-hoc, este diálogo <b>refaz a ANOVA de uma via internamente</b>\nusando as mesmas entradas antes de executar as comparações de Dunnett. Se você já\nexecutou a ANOVA separadamente e não foi significativa, interprete esta tabela pós-hoc\ncom a devida cautela — um resumo da ANOVA é mostrado acima da\ntabela de Dunnett para esse contexto.<br/><br/>\n<b>Requisitos</b><br/>\n• O fator de grupo deve ter pelo menos 2 níveis (controle + ≥1 tratamento).<br/>\n• \"Grupo de Controle\" deve corresponder exatamente a um dos rótulos de nível do fator,\nincluindo maiúsculas e minúsculas.<br/><br/>\n<b>Funções R usadas:</b> stats::aov(), multcomp::glht() com mcp(Dunnett)<br/>\n<b>Pacotes R necessários:</b> multcomp\n"
+  }
+}

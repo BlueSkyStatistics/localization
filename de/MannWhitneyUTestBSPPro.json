@@ -1,0 +1,18 @@
+{
+  "title": "Mann-Whitney U-Test",
+  "navigation": "Mann-Whitney U-Test",
+  "modelname": "Ergebnisnamen eingeben",
+  "response": "Antwortvariable (numerisch)",
+  "group": "Gruppierungsvariable (2 Ebenen)",
+  "alternative": "Alternativhypothese",
+  "exactchk": "Exakten p-Wert verwenden (kleine Stichproben, keine Bindungen)",
+  "correctchk": "Kontinuitätskorrektur anwenden",
+  "cichk": "Konfidenzintervall berechnen (Hodges-Lehmann)",
+  "confidenceLevel": "Konfidenzniveau",
+  "descchk": "Deskriptive Statistiken nach Gruppe anzeigen",
+  "help": {
+    "title": "Mann-Whitney U-Test",
+    "r_help": "help(wilcox.test, package='stats')",
+    "body": "\n<b>Beschreibung</b><br/>\nNichtparametrischer Test zum Vergleich der Verteilung einer kontinuierlichen/ordinalen Antwort\nzwischen genau <b>zwei unabhängigen Gruppen</b>. Dies ist das rangbasierte\nGegenstück zum t-Test für unabhängige Stichproben und wird verwendet, wenn Normalität\nnicht angenommen werden kann.<br/><br/>\n<b>Anforderungen</b><br/>\n• Die Gruppierungsvariable muss genau 2 Ebenen in den Daten aufweisen.<br/>\n• Der exakte p-Wert von Base R ist nur gültig, wenn es keine gebundenen Ränge gibt. Wenn\n\"Exakten p-Wert verwenden\" aktiviert ist und Bindungen vorhanden sind, verwendet dieser Dialog automatisch\ndas <b>coin</b>-Paket für den bindungskorrigierten exakten Test, anstatt stillschweigend\neine normale Approximation zu verwenden. Wenn das coin-Paket nicht installiert ist\n(oder der bindungskorrigierte Test aus irgendeinem Grund fehlschlägt), fällt es auf die normale\nApproximation wie zuvor zurück, mit einer Notiz in der Ausgabe.<br/><br/>\n<b>Verwendete R-Funktion:</b> stats::wilcox.test() (und coin::wilcox_test(), wenn\nBindungen einen bindungskorrigierten exakten Test erfordern)<br/>\n<b>Erforderliche R-Pakete:</b> stats (Basis R); coin (optional — nur benötigt für\nexakte p-Werte mit gebundenen Daten)\n"
+  }
+}

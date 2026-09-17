@@ -1,0 +1,18 @@
+{
+  "title": "Jonckheere-Terpstra 測試",
+  "navigation": "Jonckheere-Terpstra 測試",
+  "modelname": "輸入結果名稱",
+  "response": "反應變數（數值型）",
+  "group": "有序分組變數（≥3 級）",
+  "levelOrder": "分組級別排序",
+  "customOrder": "自定義級別順序（以逗號分隔，低→高，可選）",
+  "alternative": "替代假設（趨勢方向）",
+  "exactchk": "使用精確置換測試（建議 n < 100）",
+  "nperm": "置換次數（如果不是精確的）",
+  "descchk": "按組顯示描述性統計",
+  "help": {
+    "title": "Jonckheere-Terpstra 測試",
+    "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+    "body": "\n<b>描述</b><br/>\n非參數檢驗，用於三個或更多<i>有序</i>獨立組之間的單調<b>趨勢</b>（例如，增加的劑量水平）。這與 Kruskal-Wallis 不同，後者僅檢驗組之間是否存在差異，而不是檢驗它們是否在特定的有序方向上存在差異。<br/><br/>\n<b>要求</b><br/>\n• 分組變數必須具有 3 個或更多級別。<br/>\n• 這些級別必須代表有意義的順序（例如，對照 &lt; 低 &lt; 中 &lt; 高，或增加的數值劑量）。選擇 BioStat Prime 應如何使用下面的「分組級別排序」來排序這些級別。<br/><br/>\n<b>使用的 R 函數：</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>所需的 R 套件：</b> DescTools\n"
+  }
+}

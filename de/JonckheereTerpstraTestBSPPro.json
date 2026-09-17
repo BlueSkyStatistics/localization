@@ -1,0 +1,18 @@
+{
+  "title": "Jonckheere-Terpstra-Test",
+  "navigation": "Jonckheere-Terpstra-Test",
+  "modelname": "Ergebnisnamen eingeben",
+  "response": "Antwortvariable (numerisch)",
+  "group": "Ordnung der Gruppierungsvariable (≥3 Ebenen)",
+  "levelOrder": "Gruppenniveauordnung",
+  "customOrder": "Benutzerdefinierte Ebenenreihenfolge (kommagetrennt, niedrig→hoch, optional)",
+  "alternative": "Alternativhypothese (Trendrichtung)",
+  "exactchk": "Exakten Permutationstest verwenden (n < 100 empfohlen)",
+  "nperm": "Anzahl der Permutationen (wenn nicht exakt)",
+  "descchk": "Deskriptive Statistiken nach Gruppe anzeigen",
+  "help": {
+    "title": "Jonckheere-Terpstra-Test",
+    "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+    "body": "\n<b>Beschreibung</b><br/>\nNichtparametrischer Test für einen monotonen <b>Trend</b> über drei oder mehr\n<i>geordneten</i> unabhängigen Gruppen (z. B. steigende Dosisniveaus). Dies ist\nanders als Kruskal-Wallis, das nur testet, ob Gruppen sich unterscheiden, nicht\nob sie sich in einer bestimmten geordneten Richtung unterscheiden.<br/><br/>\n<b>Anforderungen</b><br/>\n• Die Gruppierungsvariable muss 3 oder mehr Ebenen haben.<br/>\n• Die Ebenen müssen eine sinnvolle Reihenfolge darstellen (z. B. Kontrolle &lt; niedrig &lt;\nmittel &lt; hoch oder steigende numerische Dosen). Wählen Sie, wie BioStat Prime\nsollte die Ebenen mit \"Gruppenniveauordnung\" unten anordnen.<br/><br/>\n<b>Verwendete R-Funktion:</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>Erforderliche R-Pakete:</b> DescTools\n"
+  }
+}

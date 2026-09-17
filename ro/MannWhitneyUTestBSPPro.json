@@ -1,0 +1,18 @@
+{
+  "title": "Testul U Mann-Whitney",
+  "navigation": "Testul U Mann-Whitney",
+  "modelname": "Introduceți Numele Rezultatului",
+  "response": "Variabila de Răspuns (numerică)",
+  "group": "Variabila de Grupare (2 niveluri)",
+  "alternative": "Ipoteza Alternativă",
+  "exactchk": "Utilizați p-valoarea Exactă (mostre mici, fără legături)",
+  "correctchk": "Aplicați Corecția de Continuitate",
+  "cichk": "Calculați Intervalul de Încredere (Hodges-Lehmann)",
+  "confidenceLevel": "Nivel de Încredere",
+  "descchk": "Arată Statistici Descriptive pe Grup",
+  "help": {
+    "title": "Testul U Mann-Whitney",
+    "r_help": "help(wilcox.test, package='stats')",
+    "body": "\n<b>Descriere</b><br/>\nTest non-parametric care compară distribuția unei răspuns continuu/ordinal\nîntre exact <b>două grupuri independente</b>. Acesta este echivalentul bazat pe rang\nal testului t pentru mostre independente și este utilizat atunci când normalitatea\nnu poate fi presupusă.<br/><br/>\n<b>Cerințe</b><br/>\n• Variabila de grupare trebuie să aibă exact 2 niveluri prezente în date.<br/>\n• p-valoarea exactă a R-ului de bază este validă doar atunci când nu există ranguri legate. Dacă\n\"Utilizați p-valoarea Exactă\" este bifată și există legături, acest dialog folosește automat\npachetul <b>coin</b> pentru testul exact corectat pentru legături în loc să revină în tăcere\nla o aproximare normală. Dacă pachetul coin nu este instalat\n(sau testul corectat pentru legături eșuează din orice motiv), se revine la aproximarea normală\nca înainte, cu o notă în ieșire.<br/><br/>\n<b>Funcția R utilizată:</b> stats::wilcox.test() (și coin::wilcox_test() atunci când\nlegăturile necesită un test exact corectat pentru legături)<br/>\n<b>Pachete R necesare:</b> stats (R de bază); coin (opțional — necesar doar pentru\np-valori exacte cu date legate)\n"
+  }
+}

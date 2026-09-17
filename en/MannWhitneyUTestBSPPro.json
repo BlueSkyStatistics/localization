@@ -1,0 +1,18 @@
+{
+    "title": "Mann-Whitney U Test",
+    "navigation": "Mann-Whitney U Test",
+    "modelname": "Enter Result Name",
+    "response": "Response Variable (numeric)",
+    "group": "Grouping Variable (2 levels)",
+    "alternative": "Alternative Hypothesis",
+    "exactchk": "Use Exact p-value (small samples, no ties)",
+    "correctchk": "Apply Continuity Correction",
+    "cichk": "Compute Confidence Interval (Hodges-Lehmann)",
+    "confidenceLevel": "Confidence Level",
+    "descchk": "Show Descriptive Statistics by Group",
+    "help": {
+        "title": "Mann-Whitney U Test",
+        "r_help": "help(wilcox.test, package='stats')",
+        "body": "\n<b>Description</b><br/>\nNon-parametric test comparing the distribution of a continuous/ordinal response\nbetween exactly <b>two independent groups</b>. This is the rank-based\ncounterpart of the independent-samples t-test and is used when normality\ncannot be assumed.<br/><br/>\n<b>Requirements</b><br/>\n• Grouping variable must have exactly 2 levels present in the data.<br/>\n• Base R's exact p-value is only valid when there are no tied ranks. If\n\"Use Exact p-value\" is checked and ties are present, this dialog automatically\nuses the <b>coin</b> package's tie-corrected exact test instead of silently\nfalling back to a normal approximation. If the coin package is not installed\n(or the tie-corrected test fails for any reason), it falls back to the normal\napproximation as before, with a note in the output.<br/><br/>\n<b>R function used:</b> stats::wilcox.test() (and coin::wilcox_test() when\nties require a tie-corrected exact test)<br/>\n<b>R Packages required:</b> stats (base R); coin (optional — only needed for\nexact p-values with tied data)\n"
+    }
+}

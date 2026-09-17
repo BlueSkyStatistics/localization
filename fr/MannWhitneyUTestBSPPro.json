@@ -1,0 +1,18 @@
+{
+  "title": "Test U de Mann-Whitney",
+  "navigation": "Test U de Mann-Whitney",
+  "modelname": "Entrez le nom du résultat",
+  "response": "Variable de réponse (numérique)",
+  "group": "Variable de regroupement (2 niveaux)",
+  "alternative": "Hypothèse alternative",
+  "exactchk": "Utiliser la valeur p exacte (petits échantillons, sans égalités)",
+  "correctchk": "Appliquer la correction de continuité",
+  "cichk": "Calculer l'intervalle de confiance (Hodges-Lehmann)",
+  "confidenceLevel": "Niveau de confiance",
+  "descchk": "Afficher les statistiques descriptives par groupe",
+  "help": {
+    "title": "Test U de Mann-Whitney",
+    "r_help": "help(wilcox.test, package='stats')",
+    "body": "\n<b>Description</b><br/>\nTest non paramétrique comparant la distribution d'une réponse continue/ordinale\nentre exactement <b>deux groupes indépendants</b>. C'est le pendant basé sur le rang\ndu test t pour échantillons indépendants et est utilisé lorsque la normalité\nne peut pas être supposée.<br/><br/>\n<b>Exigences</b><br/>\n• La variable de regroupement doit avoir exactement 2 niveaux présents dans les données.<br/>\n• La valeur p exacte de R de base n'est valide que lorsqu'il n'y a pas de rangs liés. Si\n\"Utiliser la valeur p exacte\" est coché et que des égalités sont présentes, cette boîte de dialogue\nutilise automatiquement le test exact corrigé pour les égalités du package <b>coin</b> au lieu de\nretomber silencieusement sur une approximation normale. Si le package coin n'est pas installé\n(ou si le test corrigé pour les égalités échoue pour une raison quelconque), il retombe sur l'approximation\nnormale comme auparavant, avec une note dans la sortie.<br/><br/>\n<b>Fonction R utilisée :</b> stats::wilcox.test() (et coin::wilcox_test() lorsque\nles égalités nécessitent un test exact corrigé pour les égalités)<br/>\n<b>Packages R requis :</b> stats (R de base); coin (optionnel — seulement nécessaire pour\nles valeurs p exactes avec des données liées)\n"
+  }
+}

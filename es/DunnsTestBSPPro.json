@@ -1,0 +1,15 @@
+{
+  "title": "Prueba de Dunn",
+  "navigation": "Prueba de Dunn",
+  "modelname": "Ingrese el nombre del resultado",
+  "response": "Variable de respuesta (numérica)",
+  "group": "Factor de grupo (≥3 niveles)",
+  "padjust": "Método de ajuste del valor p",
+  "showkwchk": "Mostrar resumen de Kruskal-Wallis (contexto, calculado internamente)",
+  "showplotchk": "Mostrar diagrama de caja por grupo",
+  "help": {
+    "title": "Prueba de Dunn",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>Descripción</b><br/>\nPrueba de comparación por pares post-hoc utilizada después de un resultado significativo de Kruskal-Wallis\npara identificar qué pares específicos de grupos difieren, utilizando sumas de rangos\ncon un ajuste del valor p para múltiples comparaciones.<br/><br/>\n<b>Importante</b><br/>\nDebido a que el diálogo existente de Kruskal-Wallis de BioStat Prime no puede ser extendido\ncon esta opción post-hoc, este diálogo <b>vuelve a ejecutar Kruskal-Wallis\ninternamente</b> utilizando las mismas entradas antes de calcular las comparaciones por pares de Dunn. Un resumen de Kruskal-Wallis en una línea se muestra sobre la tabla de Dunn para que pueda ver si la prueba omnibus fue significativa antes de\ninterpretar los resultados individuales por pares.<br/><br/>\n<b>Requisitos</b><br/>\n• El factor de grupo debe tener al menos 3 niveles.<br/><br/>\n<b>Funciones de R utilizadas:</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>Paquetes de R requeridos:</b> FSA\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "邓尼特检验（对照组）",
+  "navigation": "邓尼特检验",
+  "modelname": "输入结果名称",
+  "response": "响应变量（数值型）",
+  "group": "组因子",
+  "controlGroup": "对照组（与数据中的标签完全一致）",
+  "alternative": "备择假设",
+  "confidenceLevel": "置信水平",
+  "showanovachk": "显示ANOVA摘要（上下文，内部计算）",
+  "showplotchk": "按组显示箱线图",
+  "help": {
+    "title": "邓尼特检验（对照组）",
+    "r_help": "help(glht, package='multcomp')",
+    "body": "\n<b>描述</b><br/>\n对每个处理组与单个指定的<b>对照组</b>进行事后成对比较，提供调整后的p值和置信区间。在单因素ANOVA之后使用，以识别哪些特定组与对照组不同。<br/><br/>\n<b>重要</b><br/>\n由于BioStat Prime现有的ANOVA对话框无法扩展此事后选项，因此此对话框<b>在内部重新拟合单因素ANOVA</b>，使用相同的输入，然后再进行邓尼特比较。如果您已经单独运行了ANOVA且结果不显著，请谨慎解读此事后表格——在邓尼特表格上方显示了该上下文的ANOVA摘要。<br/><br/>\n<b>要求</b><br/>\n• 组因子必须至少有2个水平（对照组 + ≥1处理组）。<br/>\n• “对照组”必须与因子的水平标签完全匹配，包括大小写。<br/><br/>\n<b>使用的R函数：</b> stats::aov(), multcomp::glht() with mcp(Dunnett)<br/>\n<b>所需的R包：</b> multcomp\n"
+  }
+}

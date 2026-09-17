@@ -1,0 +1,15 @@
+{
+  "title": "鄧恩檢驗",
+  "navigation": "鄧恩檢驗",
+  "modelname": "輸入結果名稱",
+  "response": "反應變數（數值型）",
+  "group": "組別因子（≥3個層級）",
+  "padjust": "p值調整方法",
+  "showkwchk": "顯示Kruskal-Wallis摘要（上下文，內部計算）",
+  "showplotchk": "按組顯示箱型圖",
+  "help": {
+    "title": "鄧恩檢驗",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>描述</b><br/>\n在顯著的Kruskal-Wallis結果後使用的事後成對比較檢驗，以識別哪些特定的組別對存在差異，使用秩和進行多重比較的p值調整。<br/><br/>\n<b>重要</b><br/>\n由於BioStat Prime現有的Kruskal-Wallis對話框無法擴展此事後選項，因此此對話框<b>在內部重新運行Kruskal-Wallis</b>，使用相同的輸入，然後計算鄧恩的成對比較。在鄧恩的表格上方顯示一行Kruskal-Wallis摘要，以便您可以在解釋個別成對結果之前查看綜合檢驗是否顯著。<br/><br/>\n<b>要求</b><br/>\n• 組別因子必須至少有3個層級。<br/><br/>\n<b>使用的R函數：</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>所需的R套件：</b> FSA\n"
+  }
+}

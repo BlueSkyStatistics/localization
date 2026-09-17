@@ -1,0 +1,18 @@
+{
+    "title": "Jonckheere-Terpstra Test",
+    "navigation": "Jonckheere-Terpstra Test",
+    "modelname": "Enter Result Name",
+    "response": "Response Variable (numeric)",
+    "group": "Ordered Grouping Variable (≥3 levels)",
+    "levelOrder": "Group Level Ordering",
+    "customOrder": "Custom Level Order (comma-separated, low→high, optional)",
+    "alternative": "Alternative Hypothesis (Trend Direction)",
+    "exactchk": "Use Exact Permutation Test (n < 100 recommended)",
+    "nperm": "Number of Permutations (if not exact)",
+    "descchk": "Show Descriptive Statistics by Group",
+    "help": {
+        "title": "Jonckheere-Terpstra Test",
+        "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+        "body": "\n<b>Description</b><br/>\nNon-parametric test for a monotonic <b>trend</b> across three or more\n<i>ordered</i> independent groups (e.g., increasing dose levels). This is\ndifferent from Kruskal-Wallis, which only tests whether groups differ, not\nwhether they differ in a specific ordered direction.<br/><br/>\n<b>Requirements</b><br/>\n• Grouping variable must have 3 or more levels.<br/>\n• The levels must represent a meaningful order (e.g., control &lt; low &lt;\nmedium &lt; high, or increasing numeric doses). Choose how BioStat Prime\nshould order the levels using \"Group Level Ordering\" below.<br/><br/>\n<b>R function used:</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>R Packages required:</b> DescTools\n"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Mann-Whitney U Test",
+  "navigation": "Mann-Whitney U Test",
+  "modelname": "Sonuç Adını Girin",
+  "response": "Yanıt Değişkeni (sayısal)",
+  "group": "Gruplama Değişkeni (2 seviye)",
+  "alternative": "Alternatif Hipotez",
+  "exactchk": "Tam p-değerini Kullan (küçük örnekler, bağlar yok)",
+  "correctchk": "Süreklilik Düzeltmesini Uygula",
+  "cichk": "Güven Aralığını Hesapla (Hodges-Lehmann)",
+  "confidenceLevel": "Güven Düzeyi",
+  "descchk": "Grup Başına Tanımlayıcı İstatistikleri Göster",
+  "help": {
+    "title": "Mann-Whitney U Test",
+    "r_help": "help(wilcox.test, package='stats')",
+    "body": "\n<b>Açıklama</b><br/>\nSürekli/ordinal bir yanıtın dağılımını\nkesin olarak <b>iki bağımsız grup</b> arasında karşılaştıran parametrik olmayan bir testtir.\nBu, bağımsız örnekler t-testinin sıralama tabanlı karşılığıdır ve normalite\nvarsayımının yapılamadığı durumlarda kullanılır.<br/><br/>\n<b>Gereksinimler</b><br/>\n• Gruplama değişkeninin verilerde kesin olarak 2 seviyeye sahip olması gerekir.<br/>\n• Temel R'nin tam p-değeri yalnızca bağlı sıralar olmadığında geçerlidir. Eğer\n\"Tam p-değerini Kullan\" seçeneği işaretlenmişse ve bağlar mevcutsa, bu diyalog otomatik olarak\n<b>coin</b> paketinin bağ düzeltmeli tam testini kullanır, sessizce\nnormal bir yaklaşık değere geri dönmek yerine. Eğer coin paketi yüklenmemişse\n(veya bağ düzeltmeli test herhangi bir nedenle başarısız olursa), daha önce olduğu gibi\nnormal yaklaşık değere geri döner, çıktıda bir not ile.<br/><br/>\n<b>Kullanılan R fonksiyonu:</b> stats::wilcox.test() (ve bağlar bağ düzeltmeli tam test gerektiriyorsa coin::wilcox_test())<br/>\n<b>Gerekli R Paketleri:</b> stats (temel R); coin (isteğe bağlı — yalnızca\nbağlı verilerle tam p-değerleri için gereklidir)\n"
+  }
+}

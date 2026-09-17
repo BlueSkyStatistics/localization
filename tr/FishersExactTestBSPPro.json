@@ -1,0 +1,18 @@
+{
+  "title": "Fisher'ın Kesin Testi",
+  "navigation": "Fisher'ın Kesin Testi",
+  "modelname": "Sonuç Adını Girin",
+  "rowVar": "Satır Değişkeni (kategorik)",
+  "colVar": "Sütun Değişkeni (kategorik)",
+  "alternative": "Alternatif Hipotez (sadece 2x2 tablolar için)",
+  "confidenceLevel": "Güven Düzeyi",
+  "simulatechk": "p-değerini Simüle Et (2x2'den büyük tablolar için)",
+  "nsim": "Simülasyon Tekrar Sayısı",
+  "showtablechk": "Karmaşık Tabloyu Göster",
+  "showpropchk": "Satır-Yüzde Tablosunu Göster",
+  "help": {
+    "title": "Fisher'ın Kesin Testi",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Açıklama</b><br/>\nİki kategorik değişken arasındaki bağımsızlık için kesin test, hipergeometrik dağılıma dayanmaktadır ve ki-kare yaklaşımından ziyade kullanılır. Beklenen hücre sayıları küçük olduğunda (yaygın bir kural: beklenen herhangi bir sayı &lt; 5) ki-kare yerine bunu kullanın.<br/><br/>\n<b>Gereksinimler</b><br/>\n• Her iki değişken de kategorik (faktör) olmalıdır.<br/>\n• 2x2'den büyük tablolar için kesin hesaplama yavaş veya imkansız olabilir — bunun yerine Monte Carlo yaklaşımını kullanmak için \"p-değerini Simüle Et\" seçeneğini etkinleştirin.<br/>\n• Odds oranı ve güven aralığı yalnızca 2x2 tablolar için rapor edilir.<br/><br/>\n<b>Kullanılan R fonksiyonu:</b> stats::fisher.test()<br/>\n<b>Gerekli R Paketleri:</b> stats (temel R — kurulum gerekmez)\n"
+  }
+}

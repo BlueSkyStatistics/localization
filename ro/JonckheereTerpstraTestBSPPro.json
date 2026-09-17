@@ -1,0 +1,18 @@
+{
+  "title": "Testul Jonckheere-Terpstra",
+  "navigation": "Testul Jonckheere-Terpstra",
+  "modelname": "Introduceți numele rezultatului",
+  "response": "Variabila de răspuns (numerică)",
+  "group": "Variabila de grupare ordonată (≥3 niveluri)",
+  "levelOrder": "Ordinea nivelului grupului",
+  "customOrder": "Ordine personalizată a nivelului (separată prin virgulă, mic→mare, opțional)",
+  "alternative": "Ipoteza alternativă (Direcția tendinței)",
+  "exactchk": "Utilizați testul de permutare exact (n < 100 recomandat)",
+  "nperm": "Numărul de permutări (dacă nu este exact)",
+  "descchk": "Arată statistici descriptive pe grupuri",
+  "help": {
+    "title": "Testul Jonckheere-Terpstra",
+    "r_help": "help(JonckheereTerpstraTest, package='DescTools')",
+    "body": "\n<b>Descriere</b><br/>\nTest non-parametric pentru o <b>tendință</b> monotonă în trei sau mai multe\n<i>grupuri</i> independente ordonate (de exemplu, niveluri de dozare crescătoare). Acesta este\ndiferit de Kruskal-Wallis, care testează doar dacă grupurile diferă, nu\ndacă diferă într-o direcție ordonată specifică.<br/><br/>\n<b>Cerințe</b><br/>\n• Variabila de grupare trebuie să aibă 3 sau mai multe niveluri.<br/>\n• Nivelurile trebuie să reprezinte o ordine semnificativă (de exemplu, control &lt; scăzut &lt;\nmediu &lt; ridicat, sau doze numerice crescătoare). Alegeți cum ar trebui să ordoneze BioStat Prime\nnivelurile folosind \"Ordinea nivelului grupului\" de mai jos.<br/><br/>\n<b>Funcția R utilizată:</b> DescTools::JonckheereTerpstraTest()<br/>\n<b>Pachete R necesare:</b> DescTools\n"
+  }
+}

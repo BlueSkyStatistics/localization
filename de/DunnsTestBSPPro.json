@@ -1,0 +1,15 @@
+{
+  "title": "Dunn's Test",
+  "navigation": "Dunn's Test",
+  "modelname": "Ergebnisnamen eingeben",
+  "response": "Antwortvariable (numerisch)",
+  "group": "Gruppenfaktor (≥3 Stufen)",
+  "padjust": "p-Wert Anpassungsmethode",
+  "showkwchk": "Kruskal-Wallis-Zusammenfassung anzeigen (Kontext, intern berechnet)",
+  "showplotchk": "Boxplot nach Gruppe anzeigen",
+  "help": {
+    "title": "Dunn's Test",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>Beschreibung</b><br/>\nPost-hoc paarweise Vergleichstest, der nach einem signifikanten Kruskal-Wallis\nErgebnis verwendet wird, um zu identifizieren, welche spezifischen Paare von Gruppen sich unterscheiden, unter Verwendung von Rangsummen\nmit einer Anpassung des p-Werts für Mehrfachvergleiche.<br/><br/>\n<b>Wichtig</b><br/>\nDa der vorhandene Kruskal-Wallis-Dialog von BioStat Prime nicht mit dieser Post-hoc-Option erweitert werden kann,\nwird dieser Dialog <b>intern Kruskal-Wallis erneut ausgeführt</b>,\nunter Verwendung der gleichen Eingaben, bevor die paarweisen Vergleiche von Dunn berechnet werden. Eine einzeilige Kruskal-Wallis-Zusammenfassung wird über der Dunn's\ntabelle angezeigt, damit Sie sehen können, ob der Omnibus-Test signifikant war, bevor\nSie die einzelnen paarweisen Ergebnisse interpretieren.<br/><br/>\n<b>Anforderungen</b><br/>\n• Der Gruppenfaktor muss mindestens 3 Stufen haben.<br/><br/>\n<b>Verwendete R-Funktionen:</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>Erforderliche R-Pakete:</b> FSA\n"
+  }
+}

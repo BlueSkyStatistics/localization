@@ -1,0 +1,15 @@
+{
+  "title": "Testul lui Dunn",
+  "navigation": "Testul lui Dunn",
+  "modelname": "Introduceți numele rezultatului",
+  "response": "Variabila de răspuns (numerică)",
+  "group": "Factor de grup (≥3 niveluri)",
+  "padjust": "Metoda de ajustare a valorii p",
+  "showkwchk": "Arată rezumatul Kruskal-Wallis (context, calculat intern)",
+  "showplotchk": "Arată Boxplot pe grup",
+  "help": {
+    "title": "Testul lui Dunn",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>Descriere</b><br/>\nTest de comparație post-hoc utilizat după un rezultat semnificativ Kruskal-Wallis\npentru a identifica care perechi specifice de grupuri diferă, folosind sume de ranguri\ncu o ajustare a valorii p pentru comparații multiple.<br/><br/>\n<b>Important</b><br/>\nDeoarece dialogul existent Kruskal-Wallis din BioStat Prime nu poate fi extins\ncu această opțiune post-hoc, acest dialog <b>re-execută Kruskal-Wallis\nintern</b> folosind aceleași intrări înainte de a calcula comparațiile\npereche ale lui Dunn. Un rezumat pe o linie al testului Kruskal-Wallis este afișat deasupra\ntabelei lui Dunn, astfel încât să puteți vedea dacă testul omnibus a fost semnificativ înainte\nde a interpreta rezultatele individuale ale perechilor.<br/><br/>\n<b>Cerințe</b><br/>\n• Factorul de grup trebuie să aibă cel puțin 3 niveluri.<br/><br/>\n<b>Funcții R utilizate:</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>Pachete R necesare:</b> FSA\n"
+  }
+}

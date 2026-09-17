@@ -1,0 +1,15 @@
+{
+  "title": "Dunn Testi",
+  "navigation": "Dunn Testi",
+  "modelname": "Sonuç Adını Girin",
+  "response": "Yanıt Değişkeni (sayısal)",
+  "group": "Grup Faktörü (≥3 seviye)",
+  "padjust": "p-değeri Ayarlama Yöntemi",
+  "showkwchk": "Kruskal-Wallis Özeti Göster (bağlam, dahili olarak hesaplanır)",
+  "showplotchk": "Gruba Göre Kutu Grafiği Göster",
+  "help": {
+    "title": "Dunn Testi",
+    "r_help": "help(dunnTest, package='FSA')",
+    "body": "\n<b>Açıklama</b><br/>\nÖnemli bir Kruskal-Wallis sonucundan sonra hangi spesifik grup çiftlerinin farklı olduğunu belirlemek için kullanılan post-hoc ikili karşılaştırma testi, sıralama toplamları ile çoklu karşılaştırma p-değeri ayarlaması yapar.<br/><br/>\n<b>Önemli</b><br/>\nBioStat Prime'ın mevcut Kruskal-Wallis diyaloğu bu post-hoc seçeneği ile genişletilemediğinden, bu diyalog <b>içsel olarak Kruskal-Wallis'ı yeniden çalıştırır</b> ve aynı girdileri kullanarak Dunn'ın ikili karşılaştırmalarını hesaplamadan önce. Dunn tablosunun üzerinde bir satırlık Kruskal-Wallis özeti gösterilir, böylece bireysel ikili sonuçları yorumlamadan önce genel testin anlamlı olup olmadığını görebilirsiniz.<br/><br/>\n<b>Gereksinimler</b><br/>\n• Grup faktörü en az 3 seviyeye sahip olmalıdır.<br/><br/>\n<b>Kullanılan R fonksiyonları:</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>Gerekli R Paketleri:</b> FSA\n"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Fisher's Exact Test",
+  "navigation": "Fisher's Exact Test",
+  "modelname": "Ergebnisnamen eingeben",
+  "rowVar": "Zeilenvariable (kategorial)",
+  "colVar": "Spaltenvariable (kategorial)",
+  "alternative": "Alternativhypothese (nur 2x2-Tabellen)",
+  "confidenceLevel": "Konfidenzniveau",
+  "simulatechk": "p-Wert simulieren (für Tabellen größer als 2x2)",
+  "nsim": "Anzahl der Simulationsreplikate",
+  "showtablechk": "Kontingenztabelle anzeigen",
+  "showpropchk": "Zeilenprozenttabelle anzeigen",
+  "help": {
+    "title": "Fisher's Exact Test",
+    "r_help": "help(fisher.test, package='stats')",
+    "body": "\n<b>Beschreibung</b><br/>\nExakter Test der Unabhängigkeit zwischen zwei kategorialen Variablen, basierend auf der\nhypergeometrischen Verteilung anstelle der Chi-Quadrat-Näherung. Verwenden Sie\ndieses anstelle von Chi-Quadrat, wenn die erwarteten Zellzahlen klein sind (eine gängige\nFaustregel: jede erwartete Zahl &lt; 5).<br/><br/>\n<b>Anforderungen</b><br/>\n• Beide Variablen müssen kategorial (Faktoren) sein.<br/>\n• Für Tabellen größer als 2x2 kann die exakte Berechnung langsam oder nicht durchführbar sein —\naktivieren Sie \"p-Wert simulieren\", um stattdessen die Monte-Carlo-Näherung zu verwenden.<br/>\n• Odds Ratio und Konfidenzintervall werden nur für 2x2-Tabellen berichtet.<br/><br/>\n<b>Verwendete R-Funktion:</b> stats::fisher.test()<br/>\n<b>Erforderliche R-Pakete:</b> stats (Basis R — keine Installation erforderlich)\n"
+  }
+}

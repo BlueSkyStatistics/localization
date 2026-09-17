@@ -1,0 +1,15 @@
+{
+    "title": "Dunn's Test",
+    "navigation": "Dunn's Test",
+    "modelname": "Enter Result Name",
+    "response": "Response Variable (numeric)",
+    "group": "Group Factor (≥3 levels)",
+    "padjust": "p-value Adjustment Method",
+    "showkwchk": "Show Kruskal-Wallis Summary (context, computed internally)",
+    "showplotchk": "Show Boxplot by Group",
+    "help": {
+        "title": "Dunn's Test",
+        "r_help": "help(dunnTest, package='FSA')",
+        "body": "\n<b>Description</b><br/>\nPost-hoc pairwise comparison test used after a significant Kruskal-Wallis\nresult to identify which specific pairs of groups differ, using rank sums\nwith a multiple-comparison p-value adjustment.<br/><br/>\n<b>Important</b><br/>\nBecause BioStat Prime's existing Kruskal-Wallis dialog cannot be extended\nwith this post-hoc option, this dialog <b>re-runs Kruskal-Wallis\ninternally</b> using the same inputs before computing Dunn's pairwise\ncomparisons. A one-line Kruskal-Wallis summary is shown above the Dunn's\ntable so you can see whether the omnibus test was significant before\ninterpreting individual pairwise results.<br/><br/>\n<b>Requirements</b><br/>\n• Group factor must have at least 3 levels.<br/><br/>\n<b>R functions used:</b> stats::kruskal.test(), FSA::dunnTest()<br/>\n<b>R Packages required:</b> FSA\n"
+    }
+}
