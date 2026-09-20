@@ -4010,14 +4010,14 @@
     "HistogramPro": {
         "dialog": "Histogram with Overlay Normal Curves",
         "menu": "GRAPHICS (PRO)",
-        "outcome": "Plots the frequency distribution of one or more numeric variables as a histogram with an overlaid fitted Normal curve, optionally split/colored by a grouping variable.",
-        "typicalQuestion": "What does the distribution of a numeric variable look like compared to a fitted Normal curve, optionally by group?",
+        "outcome": "Plots the frequency distribution of one or more numeric variables as a histogram with an overlaid fitted Normal, Weibull, Log Normal, Exponential, or Gamma curve, optionally split/colored by a grouping variable.",
+        "typicalQuestion": "What does the distribution of a numeric variable look like compared to a fitted Normal, Weibull, Log Normal, Exponential, or Gamma curve, optionally by group?",
         "dataType": "Numeric variable(s), optional categorical grouping",
         "predictorType": "Optional grouping",
         "numberOfGroups": "1+ (optionally grouped)",
         "pairedIndependent": "N/A",
-        "mainAssumptions": "None to draw the histogram; the overlaid curve assumes Normality for comparison purposes",
-        "resultMeaning": "A histogram with an overlaid Normal curve, showing how closely the variable's distribution matches Normal."
+        "mainAssumptions": "None to draw the histogram, depending on the overlay distribution selection, draw the appropriate overlaid distribution curve",
+        "resultMeaning": "A histogram with an overlaid Normal, Weibull, Log Normal, Exponential, or Gamma curve, showing how closely the variable's distribution matches Normal."
     },
     "InteractionPlotPro": {
         "dialog": "Main Effect and Interaction Plot",
@@ -4082,14 +4082,14 @@
     "boxPlotPro": {
         "dialog": "Box Plot",
         "menu": "GRAPHICS (PRO)",
-        "outcome": "Plots the distribution (median, quartiles, outliers) of one or more numeric variables, optionally across levels of a categorical variable and further split by a grouping variable.",
+        "outcome": "Plots the distribution (mean, median, quartiles, outliers) of one or more numeric variables, optionally across levels of a categorical variable and further split by a grouping variable.",
         "typicalQuestion": "What is the distribution, spread, and outlier pattern of a numeric variable, optionally by group?",
         "dataType": "Numeric variable(s), optional categorical x-axis variable, optional grouping variable",
         "predictorType": "Optional grouping (x-axis factor, fill factor)",
         "numberOfGroups": "1+ (optionally grouped)",
         "pairedIndependent": "N/A",
         "mainAssumptions": "None (descriptive visualization)",
-        "resultMeaning": "A box-and-whisker plot per group showing median, IQR, and outliers."
+        "resultMeaning": "A box-and-whisker plot per group showing mean, median, IQR, and outliers."
     },
     "dotPlotPro": {
         "dialog": "Dot Plot",
