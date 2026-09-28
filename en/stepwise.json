@@ -2,7 +2,7 @@
     "title": "Stepwise",
     "navigation": "Stepwise",
     "label1": "Select a model of one of the following classes. (R class is listed in parenthesis below)",
-    "label2": "Linear model (lm), Generalized linear model (glm), Ordered Logistic/Probit regression (polr), Feed-Forward Neural Networks and Multinomial Log-Linear Models (nnet)",
+    "label2": "Linear model (lm), Generalized linear model (glm), Ordered Logistic/Probit regression (polr), Feed-Forward Neural Networks, CoxPH models and Multinomial Log-Linear Models (nnet)",
     "label3": "**NOTE: Stepwise does not work for models built by Model > Tuning (train)",
     "label4": "**NOTE: Stepwise does not work for  Multinomial Log-Linear Models (multinom) due to an incompatibility that we have raised with the R package authors",
     "modelselector1": "Select a model",

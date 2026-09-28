@@ -1,9 +1,9 @@
 {
   "title": "Pas cu pas",
   "navigation": "Pas cu pas",
-  "label1": "Selectați un model din una dintre următoarele clase. (Clasa R este listată în paranteză mai jos)",
-  "label2": "Model liniar (lm), Model liniar generalizat (glm), Regresie logistică/probit ordonată (polr), Rețele neuronale feed-forward și modele log-lineare multinomiale (nnet)",
-  "label3": "**NOTĂ: Pas cu pas nu funcționează pentru modelele construite prin Model > Tuning (antrenare)",
+  "label1": "Selectați un model din una dintre următoarele clase. (Clasa R este listată între paranteze mai jos)",
+  "label2": "Model liniar (lm), Model liniar generalizat (glm), regresie logistică/probit ordonată (polr), Rețele neuronale feed-forward, modele CoxPH și modele log-lineare multinomiale (nnet)",
+  "label3": "**NOTĂ: Pas cu pas nu funcționează pentru modelele construite prin Model > Tuning (train)",
   "label4": "**NOTĂ: Pas cu pas nu funcționează pentru modelele log-lineare multinomiale (multinom) din cauza unei incompatibilități pe care am ridicat-o cu autorii pachetului R",
   "modelselector1": "Selectați un model",
   "label5": "Direcție",
