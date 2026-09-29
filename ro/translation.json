@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "S",
+      "aiAssistant_M_button": "M",
+      "aiAssistant_L_button": "L",
+      "aiAssistant_focus_button": "Focalizare",
+      "aiAssistant_focus_tooltip": "Restrânge grila de date la o listă de variabile pentru a face loc rezultatelor",
+      "aiAssistant_restore_grid_button": "Grilă",
+      "aiAssistant_restore_grid_tooltip": "Restabilește grila de date",
+      "aiAssistant_width_compact_tooltip": "Compact (420 px)",
+      "aiAssistant_width_comfortable_tooltip": "Confortabil (30% din fereastră)",
+      "aiAssistant_width_wide_tooltip": "Lat (45% din fereastră)"
+    }
+  },
   "r_editor_script": "Script editor R",
   "grid_edit": "Editare grilă",
   "open_dataset": "Deschide set de date",
@@ -14,14 +28,7 @@
       "freeze": "Îngheață anteturile tabelului",
       "toc": "Arată cuprinsul"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "S",
-      "medium": "M",
-      "large": "L",
-      "focus": "Focalizare"
-      }
-    },       
+     
     "code": {
       "hide": "Ascunde codul",
       "undo": "Anulează",

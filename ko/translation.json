@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "S",
+      "aiAssistant_M_button": "M",
+      "aiAssistant_L_button": "L",
+      "aiAssistant_focus_button": "포커스",
+      "aiAssistant_focus_tooltip": "출력 공간을 확보하도록 데이터 그리드를 변수 목록으로 접습니다",
+      "aiAssistant_restore_grid_button": "그리드",
+      "aiAssistant_restore_grid_tooltip": "데이터 그리드 복원",
+      "aiAssistant_width_compact_tooltip": "좁게 (420px)",
+      "aiAssistant_width_comfortable_tooltip": "보통 (창의 30%)",
+      "aiAssistant_width_wide_tooltip": "넓게 (창의 45%)"
+    }
+  },
   "r_editor_script": "R 편집기 스크립트",
   "grid_edit": "그리드 편집",
   "open_dataset": "데이터셋 열기",
@@ -14,14 +28,7 @@
       "freeze": "테이블 헤더 고정",
       "toc": "목차 표시"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "S",
-      "medium": "M",
-      "large": "L",
-      "focus": "포커스"
-      }
-    },      
+     
     "code": {
       "hide": "코드 숨기기",
       "undo": "실행 취소",

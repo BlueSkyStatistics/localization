@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "小",
+      "aiAssistant_M_button": "中",
+      "aiAssistant_L_button": "大",
+      "aiAssistant_focus_button": "聚焦",
+      "aiAssistant_focus_tooltip": "将数据网格折叠为变量列表，为输出腾出空间",
+      "aiAssistant_restore_grid_button": "网格",
+      "aiAssistant_restore_grid_tooltip": "恢复数据网格",
+      "aiAssistant_width_compact_tooltip": "紧凑 (420 像素)",
+      "aiAssistant_width_comfortable_tooltip": "舒适 (窗口的 30%)",
+      "aiAssistant_width_wide_tooltip": "宽 (窗口的 45%)"
+    }
+  },
   "r_editor_script": "R 编辑器脚本",
   "grid_edit": "网格编辑",
   "open_dataset": "打开数据集",
@@ -14,14 +28,7 @@
       "freeze": "冻结表头",
       "toc": "显示目录"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "小",
-      "medium": "中",
-      "large": "大",
-      "focus": "聚焦"
-      }
-    },       
+     
     "code": {
       "hide": "隐藏代码",
       "undo": "撤销",

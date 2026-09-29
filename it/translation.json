@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "P",
+      "aiAssistant_M_button": "M",
+      "aiAssistant_L_button": "G",
+      "aiAssistant_focus_button": "Fuoco",
+      "aiAssistant_focus_tooltip": "Comprimi la griglia dati in un elenco di variabili per dare spazio all'output",
+      "aiAssistant_restore_grid_button": "Griglia",
+      "aiAssistant_restore_grid_tooltip": "Ripristina la griglia dati",
+      "aiAssistant_width_compact_tooltip": "Compatto (420 px)",
+      "aiAssistant_width_comfortable_tooltip": "Comodo (30% della finestra)",
+      "aiAssistant_width_wide_tooltip": "Ampio (45% della finestra)"
+    }
+  },
   "r_editor_script": "Script dell'editor R",
   "grid_edit": "Modifica griglia",
   "open_dataset": "Apri dataset",
@@ -14,14 +28,7 @@
       "freeze": "Blocca intestazioni della tabella",
       "toc": "Mostra tabella dei contenuti"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "P",
-      "medium": "M",
-      "large": "G",
-      "focus": "Fuoco"
-      }
-    },   
+  
     "code": {
       "hide": "Nascondi codice",
       "undo": "Annulla",

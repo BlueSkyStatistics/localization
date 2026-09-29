@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "ص",
+      "aiAssistant_M_button": "م",
+      "aiAssistant_L_button": "ك",
+      "aiAssistant_focus_button": "التركيز",
+      "aiAssistant_focus_tooltip": "طي شبكة البيانات إلى قائمة متغيرات لإفساح المجال للمخرجات",
+      "aiAssistant_restore_grid_button": "الشبكة",
+      "aiAssistant_restore_grid_tooltip": "استعادة شبكة البيانات",
+      "aiAssistant_width_compact_tooltip": "مضغوط (420 بكسل)",
+      "aiAssistant_width_comfortable_tooltip": "مريح (30% من النافذة)",
+      "aiAssistant_width_wide_tooltip": "عريض (45% من النافذة)"
+    }
+  },
   "r_editor_script": "نص محرر R",
   "grid_edit": "تحرير الشبكة",
   "open_dataset": "فتح مجموعة البيانات",
@@ -14,14 +28,6 @@
       "freeze": "تجميد رؤوس الجدول",
       "toc": "عرض جدول المحتويات"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "ص",
-      "medium": "م",
-      "large": "ك",
-      "focus": "التركيز"
-      }
-    },     
     "code": {
       "hide": "إخفاء الكود",
       "undo": "تراجع",

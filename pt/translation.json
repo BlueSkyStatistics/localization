@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "P",
+      "aiAssistant_M_button": "M",
+      "aiAssistant_L_button": "G",
+      "aiAssistant_focus_button": "Foco",
+      "aiAssistant_focus_tooltip": "Recolher a grade de dados para uma lista de variáveis para dar espaço à saída",
+      "aiAssistant_restore_grid_button": "Grade",
+      "aiAssistant_restore_grid_tooltip": "Restaurar a grade de dados",
+      "aiAssistant_width_compact_tooltip": "Compacto (420 px)",
+      "aiAssistant_width_comfortable_tooltip": "Confortável (30% da janela)",
+      "aiAssistant_width_wide_tooltip": "Largo (45% da janela)"
+    }
+  },
   "r_editor_script": "Script do Editor R",
   "grid_edit": "Edição de grade",
   "open_dataset": "Abrir conjunto de dados",
@@ -14,14 +28,7 @@
       "freeze": "Congelar cabeçalhos da tabela",
       "toc": "Mostrar tabela de conteúdos"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "P",
-      "medium": "M",
-      "large": "G",
-      "focus": "Foco"
-      }
-    },       
+     
     "code": {
       "hide": "Ocultar código",
       "undo": "Desfazer",

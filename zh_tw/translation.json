@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "小",
+      "aiAssistant_M_button": "中",
+      "aiAssistant_L_button": "大",
+      "aiAssistant_focus_button": "聚焦",
+      "aiAssistant_focus_tooltip": "將資料網格摺疊為變數清單，為輸出騰出空間",
+      "aiAssistant_restore_grid_button": "網格",
+      "aiAssistant_restore_grid_tooltip": "還原資料網格",
+      "aiAssistant_width_compact_tooltip": "緊湊 (420 像素)",
+      "aiAssistant_width_comfortable_tooltip": "舒適 (視窗的 30%)",
+      "aiAssistant_width_wide_tooltip": "寬 (視窗的 45%)"
+    }
+  },
   "r_editor_script": "R 編輯器腳本",
   "grid_edit": "網格編輯",
   "open_dataset": "打開數據集",
@@ -14,14 +28,7 @@
       "freeze": "凍結表格標題",
       "toc": "顯示目錄"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "小",
-      "medium": "中",
-      "large": "大",
-      "focus": "聚焦"
-      }
-    },       
+      
     "code": {
       "hide": "隱藏代碼",
       "undo": "撤銷",

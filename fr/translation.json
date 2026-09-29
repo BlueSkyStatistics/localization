@@ -1,4 +1,18 @@
 {
+  "aichatpanel": {
+    "topbar": {
+      "aiAssistant_S_button": "P",
+      "aiAssistant_M_button": "M",
+      "aiAssistant_L_button": "G",
+      "aiAssistant_focus_button": "Focus",
+      "aiAssistant_focus_tooltip": "Réduire la grille de données à une liste de variables pour laisser de la place à la sortie",
+      "aiAssistant_restore_grid_button": "Grille",
+      "aiAssistant_restore_grid_tooltip": "Restaurer la grille de données",
+      "aiAssistant_width_compact_tooltip": "Compact (420 px)",
+      "aiAssistant_width_comfortable_tooltip": "Confortable (30 % de la fenêtre)",
+      "aiAssistant_width_wide_tooltip": "Large (45 % de la fenêtre)"
+    }
+  },
   "r_editor_script": "Script de l'éditeur R",
   "grid_edit": "Édition de la grille",
   "open_dataset": "Ouvrir le jeu de données",
@@ -14,14 +28,7 @@
       "freeze": "Geler les en-têtes de table",
       "toc": "Afficher la table des matières"
     },
-  "aichatpanel": {
-    "topbar": {
-      "small": "P",
-      "medium": "M",
-      "large": "G",
-      "focus": "Focus"
-      }
-    },      
+    
     "code": {
       "hide": "Masquer le code",
       "undo": "Annuler",
