@@ -4008,7 +4008,7 @@
         "resultMeaning": "A 3D scatterplot showing the joint relationship among the three variables."
     },
     "HistogramPro": {
-        "dialog": "Histogram with Overlay Normal Curves",
+        "dialog": "Histogram",
         "menu": "GRAPHICS (PRO)",
         "outcome": "Plots the frequency distribution of one or more numeric variables as a histogram with an overlaid fitted Normal, Weibull, Log Normal, Exponential, or Gamma curve, optionally split/colored by a grouping variable.",
         "typicalQuestion": "What does the distribution of a numeric variable look like compared to a fitted Normal, Weibull, Log Normal, Exponential, or Gamma curve, optionally by group?",
@@ -6226,5 +6226,101 @@
         "pairedIndependent": "N/A",
         "mainAssumptions": "The chosen transformation is appropriate for the variable's range (e.g. log requires positive values)",
         "resultMeaning": "New transformed variable(s)."
+    },
+    "analyzeMixtureDesign": {
+        "dialog": "Analyze Mixture Design",
+        "menu": "DOE",
+        "outcome": "Fits a Scheffé canonical mixture model (Linear, Quadratic, or Special Cubic, no intercept) to a mixture experiment's response, with corrected R², lack-of-fit, residual diagnostics, and a ternary plot of the fitted response surface.",
+        "typicalQuestion": "How does the blend of my mixture components affect the response, and which blend is best?",
+        "dataType": "Numeric mixture component proportions (summing to a fixed total) and a numeric response",
+        "predictorType": "Mixture components",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Components sum to a fixed total; standard regression assumptions on residuals; the design supports the chosen model order",
+        "resultMeaning": "Fitted mixture model coefficients (each pure component's predicted response plus blending terms), corrected R²/adjusted R², lack-of-fit test, residual plots, and a ternary response-surface plot."
+    },
+    "optimizeMultipleMixtureModelResponseDesirabilityPro": {
+        "dialog": "Multiple Mixture Model Response Optimizer",
+        "menu": "DOE",
+        "outcome": "Finds the mixture composition (components summing to Total) that jointly optimizes several fitted mixture models' responses using a Derringer-Suich composite desirability function.",
+        "typicalQuestion": "I have mixture models for several responses - what blend best satisfies all my response goals at once?",
+        "dataType": "One or more numeric responses, each from its own mixture model fitted by Analyze Mixture Design",
+        "predictorType": "Mixture components",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "All selected models share the same mixture components; total and component bounds are in the units used to fit the models; desirability goals and weights reflect real priorities",
+        "resultMeaning": "The optimal blend, each response's predicted value and individual desirability, and the composite desirability."
+    },
+    "optimizeSingleMixtureModelMultipleResponseDesirabilityPro": {
+        "dialog": "Multiple Mixture Responses (same model formula) Optimizer",
+        "menu": "DOE",
+        "outcome": "Fits the same Scheffé mixture model type to each selected response, then finds the mixture composition (components summing to Total) that jointly optimizes all responses using a Derringer-Suich composite desirability function.",
+        "typicalQuestion": "Using one mixture model type for several responses, what blend best satisfies all my response goals at once?",
+        "dataType": "Numeric mixture component proportions and one or more numeric responses",
+        "predictorType": "Mixture components",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Components sum to a fixed total; the chosen model type suits every response; desirability goals and weights reflect real priorities",
+        "resultMeaning": "Fitted model per response, the optimal blend, each response's predicted value and individual desirability, and the composite desirability."
+    },
+    "scoreMixtureDesign": {
+        "dialog": "Score Mixture Design Model(s)",
+        "menu": "DOE",
+        "outcome": "Scores the active dataset with one or more mixture models from Analyze Mixture Design, adding predicted response columns (optionally with confidence or prediction intervals) after checking each row's components sum to the mixture total.",
+        "typicalQuestion": "How do I use my fitted mixture model(s) to predict the response for new blends?",
+        "dataType": "N/A - operates on already-fitted mixture model(s) and a dataset with the same mixture components",
+        "predictorType": "N/A",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Models were created by Analyze Mixture Design and share the same components; rows to score lie inside the mixture region (components sum to Total)",
+        "resultMeaning": "The dataset with new predicted response column(s), optional interval columns, and NA for rows outside the mixture region unless prediction is forced."
+    },
+    "toleranceIntervalCapabilityPro": {
+        "dialog": "Tolerance Interval Capability",
+        "menu": "SIX SIGMA",
+        "outcome": "Computes the sample-size-aware k-factor for a one-sided tolerance limit and the capability needed (or achieved, from observed mean and SD) so that a stated proportion of the population clears a spec limit with a given confidence.",
+        "typicalQuestion": "Given n measurements, how far must my mean be from the spec limit so that at least p% of the population clears it with the stated confidence?",
+        "dataType": "N/A - summary inputs (sample size, confidence, reliability, limit, optional observed mean and SD)",
+        "predictorType": "N/A",
+        "numberOfGroups": "1",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Approximately normal population; one-sided specification limit",
+        "resultMeaning": "The k-factor, capability needed, and when observed mean and SD are supplied, the achieved tolerance limit, capability ratio C with PASS/FAIL, and a capability chart."
+    },
+    "createMixtureDesignPro": {
+        "dialog": "Create Mixture Design",
+        "menu": "DOE",
+        "outcome": "Creates a mixture design (Simplex Lattice, Simplex Centroid, or Extreme Vertices) for an experiment whose components are proportions that must sum to a fixed total, optionally with a centroid point, replicates, and randomized run order.",
+        "typicalQuestion": "How do I set up an experiment to study blends of components that must add up to 100%?",
+        "dataType": "N/A - design generation (component bounds table: one column per component, rows = lower and upper bound)",
+        "predictorType": "Mixture components",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Components sum to a fixed total; Extreme Vertices regions are defined by individual component bounds only",
+        "resultMeaning": "A new design dataset listing each run's component amounts, ready for data collection and Analyze Mixture Design."
+    },
+    "createDOptimalMixtureDesignPro": {
+        "dialog": "Create D-Optimal Mixture Design",
+        "menu": "DOE",
+        "outcome": "Creates a D-optimal mixture design with an exact run count, selecting runs from a candidate grid that respects each component's lower/upper bounds and the sum-to-Total constraint, for a specified (default quadratic Scheffé) model.",
+        "typicalQuestion": "My mixture region is irregular or I need a specific number of runs - which blends should I test?",
+        "dataType": "N/A - design generation (component bounds table: one column per component, rows = lower and upper bound)",
+        "predictorType": "Mixture components",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Components sum to a fixed total; the chosen model formula (no intercept) is the one you intend to fit",
+        "resultMeaning": "A new design dataset with the D-optimal set of runs and their component amounts."
+    },
+    "augmentMixtureDesignPro": {
+        "dialog": "Augment Mixture Design",
+        "menu": "DOE",
+        "outcome": "Adds D-optimal runs to an existing mixture design while keeping all existing runs fixed, so the augmented design supports a higher-order target model (Linear, Quadratic, or Special Cubic).",
+        "typicalQuestion": "I already ran a mixture design - which extra blends should I add to fit a more complex model without discarding my data?",
+        "dataType": "Existing mixture design dataset (numeric component columns summing to Total)",
+        "predictorType": "Mixture components",
+        "numberOfGroups": "N/A",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Existing runs sum to the same Total; component bounds reflect the feasible region; enough total runs for the target model",
+        "resultMeaning": "A new design dataset containing the original runs plus the added D-optimal runs."
     }
 }
