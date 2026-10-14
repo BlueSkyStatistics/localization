@@ -1,6 +1,6 @@
 {
-    "title": "Shewhart charts (I-MR) ",
-    "navigation": "Shewhart charts (I-MR) ",
+    "title": "Shewhart charts (I-MR)",
+    "navigation": "Shewhart charts (I-MR)",
     "variableSelcted2": "Variable (observed data) to chart",
     "dateVariable": "(Optional) Date variable to show dates on the x-axis of the plot",
     "plotTimeSeriesChk": "(Optional) Plot a time series of the variable (observed data) - see additional date and time formatting options at the end",
@@ -15,6 +15,7 @@
     "rowsTobeUsed": "Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedAsNewData": "New Data - grouped Rows to be used as New Data to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12) - new data to plot but not included in the computations",
     "additionalPhasesLabel": "Specify data to Chart additional phases. You can use 'Grouped Rows' field above as Phase 1 data. Limited to max of 10 phases to be practical to plot on a single chart.",
+    "beforeAfterChk": "Activate Before/After comparison - requires EXACTLY Phase 1 ('Grouped Rows' field above) and Phase 2 Grouped Rows to be filled in, and no other phase fields filled in. Adds a Mean/StDev significance comparison (gauge bars) and comments comparing the two phases.",
     "rowsTobeUsedPhase2": "Phase 2 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase3": "Phase 3 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase4": "Phase 4 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
@@ -69,6 +70,6 @@
     "help": {
         "title": "Shewhart charts (I-MR)",
         "r_help": "help(qcc, package = qcc)",
-        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to perform statistical quality control and to plot Shewhart charts\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor additional help with the std deviation methods - use R help(sd.xbar.one, package = qcc) and help(sd.R, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called pistonrings from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose diameter to variable(observed..), click run\n\t\t\t\t<br/>\n\t\t\t\tAdditionally, type 1:20 in Grouped rows to be used, click run \n\t\t\t\t<br/>\n\t\t\t\tTo plot a chart with multple phase\n\t\t\t\t<br/>\n\t\t\t\tType 25:30 in Phase 2 Grouped rows\n\t\t\t\t<br/>\n\t\t\t\tType 31:38 in Phase 3 Grouped rows\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to perform statistical quality control and to plot Shewhart charts\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor additional help with the std deviation methods - use R help(sd.xbar.one, package = qcc) and help(sd.R, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called pistonrings from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose diameter to variable(observed..), click run\n\t\t\t\t<br/>\n\t\t\t\tAdditionally, type 1:20 in Grouped rows to be used, click run\n\t\t\t\t<br/>\n\t\t\t\tTo plot a chart with multple phase\n\t\t\t\t<br/>\n\t\t\t\tType 25:30 in Phase 2 Grouped rows\n\t\t\t\t<br/>\n\t\t\t\tType 31:38 in Phase 3 Grouped rows\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo run a Before/After comparison, fill in ONLY the 'Grouped Rows' field (Phase 1 / Before) and 'Phase 2 Grouped Rows' field (Phase 2 / After), leave Phase 3-10 empty, and check 'Activate Before/After comparison' under Plot phases.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
     }
 }

@@ -2,8 +2,7 @@
   "title": "Grafico Multi-Vari",
   "navigation": "Grafico Multi-Vari",
   "Y_variableRespSelcted": "Seleziona la variabile (numerica) per misurazione/riposta (asse Y)",
-  "X_variableSelcted": "Seleziona la variabile categorica (asse X)",
-  "G_variableSelcted": "Seleziona la variabile di raggruppamento (categorica)",
+  "G_variableSelcted": "Seleziona una o più variabili di raggruppamento (categoriche). La prima variabile selezionata è utilizzata come asse X; eventuali variabili aggiuntive selezionate sono combinate in un singolo fattore di raggruppamento (può essere selezionato qualsiasi numero di variabili)",
   "plotNestedMultiVariChk": "Inoltre, traccia un grafico Multi-Vari annidato",
   "showMeanNumbersChk": "Mostra i valori medi sul grafico",
   "digits": "Cifre - numero di cifre da visualizzare per i valori medi",
@@ -11,11 +10,12 @@
   "pctMeanRangeAsXoffset": "Offset orizzontale per posizionare le etichette per i punti medi sul grafico",
   "printStatChk": "Stampa statistiche oltre ai grafici",
   "angleXaxis_text": "Angolo per inclinare i valori del testo dell'asse x (predefinito 0 per nessuna inclinazione)",
+  "legends": "Mostra Legende e, in tal caso, posizione delle Legende (il predefinito è a destra)",
   "label1": "Linee di riferimento orizzontali",
-  "yIntercept": "Inserisci valori di intercetta Y separati da virgola per le linee orizzontali, ad es. 100, 200, 300 (cioè, valori di conteggio). Le linee verranno tracciate solo se è presente un asse di conteggio",
+  "yIntercept": "Inserisci valori di intercetta Y separati da virgola per le linee orizzontali, ad es. 100, 200, 300 (cioè, valori di conteggio). Le linee saranno tracciate solo se è presente un asse di conteggio",
   "horizontalLinelabel": "Specifica etichette separate da virgola (senza virgolette) per la/e linea/e orizzontale/i",
   "help": {
     "title": "Grafico Multi-Vari",
-    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tUn grafico multi-vari di una variabile di risposta quantitativa in funzione di due variabili categoriche\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tI valori medi della variabile di risposta sono anche tracciati sul grafico \n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tUn grafico multi-vari di una variabile di risposta quantitativa in funzione di una o più variabili categoriche (di raggruppamento)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tQualsiasi numero di variabili di raggruppamento può essere selezionato. La prima variabile di raggruppamento selezionata è utilizzata come asse X; eventuali\n\t\t\t\tvariabili di raggruppamento rimanenti selezionate sono combinate in un singolo fattore di raggruppamento utilizzato per colore/forma e per il\n\t\t\t\tgrafico Multi-Vari annidato opzionale.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tI valori medi della variabile di risposta sono anche tracciati sul grafico \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

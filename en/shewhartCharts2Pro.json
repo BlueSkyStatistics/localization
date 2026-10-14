@@ -1,6 +1,6 @@
 {
-    "title": "Shewhart charts (p, np, c, u) ",
-    "navigation": "Shewhart charts (P, NP, C, U) ",
+    "title": "Shewhart charts (p, np, c, u)",
+    "navigation": "Shewhart charts (P, NP, C, U)",
     "chartTypePChk": "p chart",
     "chartTypeNPChk": "np chart",
     "chartTypeCChk": "c chart",
@@ -26,6 +26,7 @@
     "rowsTobeUsedPhase9": "Phase 9 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase10": "Phase 10 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "phaseNames": "Specify phase names (comma separated) for a multi-phase chart - default phase names are Phase 1, Phase 2, ...",
+    "beforeAfterChk": "Activate Before/After comparison - requires EXACTLY Phase 1 ('Grouped Rows' field above) and Phase 2 Grouped Rows to be filled in, and no other phase fields filled in. Adds a Mean/StDev significance comparison (gauge bars) and comments comparing the two phases.",
     "nsigmas": "Sigma - number of sigmas to use for computing control limits. It is ignored when the confidence.level argument is provided",
     "confidence_level": "Confidence Level - value between 0 and 1 specifying the confidence level of the computed probability limits",
     "sdWarnLimits": "Add additional limit lines (comma separated) on the plot at the specific std. deviations (e.g. 1.5, 2)",
@@ -62,6 +63,6 @@
     "help": {
         "title": "Shewhart charts (p, np, c, u)",
         "r_help": "help(qcc, package = qcc)",
-        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to perform statistical quality control and to plot Shewhart charts, drawing OC curves\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called orangejuice from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose D to variable(observed..), size to sample size box, \n\t\t\t\t<br/>\n\t\t\t\tType 1:25 in data rows to be used, 30:40 in New Data\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tqcc function to to perform statistical quality control and to plot Shewhart charts, drawing OC curves\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may load the dataset called orangejuice from the qcc package with Load Dataset menu by selecting qcc package and then select pistonrings dataset\n\t\t\t\t<br/>\n\t\t\t\tChoose D to variable(observed..), size to sample size box,\n\t\t\t\t<br/>\n\t\t\t\tType 1:25 in data rows to be used, 30:40 in New Data\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFollow the qcc tutorial at https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo run a Before/After comparison, fill in ONLY the 'Grouped Rows' field (Phase 1 / Before) and 'Phase 2 Grouped Rows' field (Phase 2 / After), leave Phase 3-10 empty, and check 'Activate Before/After comparison' under Plot phases.\n\t\t\t\t<br/>\n\t\t\t"
     }
 }

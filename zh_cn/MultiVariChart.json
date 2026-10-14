@@ -1,9 +1,8 @@
 {
   "title": "多变量图",
   "navigation": "多变量图",
-  "Y_variableRespSelcted": "选择用于测量/响应的变量（数值）（Y轴）",
-  "X_variableSelcted": "选择分类变量（X轴）",
-  "G_variableSelcted": "选择分组（分类）变量",
+  "Y_variableRespSelcted": "选择用于测量/响应（Y轴）的变量（数值）",
+  "G_variableSelcted": "选择一个或多个分组（分类）变量。第一个选择的变量用作X轴；任何额外选择的变量将组合成一个单一的分组因子（可以选择任意数量的变量）",
   "plotNestedMultiVariChk": "另外，绘制嵌套的多变量图",
   "showMeanNumbersChk": "在图上显示均值",
   "digits": "数字 - 显示均值的小数位数",
@@ -11,11 +10,12 @@
   "pctMeanRangeAsXoffset": "水平偏移量，用于在图上放置均值点的标签",
   "printStatChk": "除了图表外打印统计信息",
   "angleXaxis_text": "倾斜x轴文本值的角度（默认0表示不倾斜）",
+  "legends": "显示图例，如果显示，图例的位置（默认在右侧）",
   "label1": "水平参考线",
-  "yIntercept": "输入逗号分隔的Y截距值，例如100, 200, 300（即计数值）。仅在存在计数轴时绘制线条",
+  "yIntercept": "输入逗号分隔的Y截距值（例如100, 200, 300）（即计数值）。仅在存在计数轴时绘制线条",
   "horizontalLinelabel": "为水平线指定逗号分隔的标签（不加引号）",
   "help": {
     "title": "多变量图",
-    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t一个定量响应变量依赖于两个分类变量的多变量图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t响应变量的均值也在图上绘制\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>描述</b></br>\n\t\t\t\t一个定量响应变量依赖于一个或多个分类（分组）变量的多变量图\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t可以选择任意数量的分组变量。第一个选择的分组变量用作X轴；任何\n\t\t\t\t剩余选择的分组变量将组合成一个用于颜色/形状的单一分组因子，并用于\n\t\t\t\t可选的嵌套多变量图。\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t响应变量的均值也在图上绘制\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

@@ -1,16 +1,29 @@
 {
   "title": "Dimensione del campione, ANOVA",
   "navigation": "ANOVA",
-  "howtouse": "Per calcolare la dimensione del campione: specificare le medie dei gruppi e la potenza\nPer calcolare la potenza: specificare la dimensione del campione e le medie dei gruppi\nPer calcolare la varianza rilevabile delle medie dei gruppi: specificare la dimensione del campione e la potenza",
+  "howtouse": "Per calcolare la dimensione del campione: specificare le medie dei gruppi e la potenza\nPer calcolare la potenza: specificare la dimensione del campione e le medie dei gruppi\n\nTIP: Dimensione del Campione, Potenza, Deviazione Standard e Livello di Significatività accettano ciascuno un elenco di valori separati da virgole (ad es. 0.8,0.9). Quando più di un campo ha più valori, ogni combinazione viene calcolata e restituita come tabella, quindi non è necessario rieseguire questa finestra di dialogo per ogni scenario. Numero di Gruppi e Medie dei Gruppi rimangono fissi per l'intera esecuzione.",
   "numgrps": "Numero di Gruppi",
-  "n": "Dimensione del Campione per Gruppo",
+  "n": "Dimensione del Campione per Gruppo (separati da virgole per più valori)",
   "grpmeans": "Medie dei Gruppi, specificare come valori separati da virgole, ad es. 20, 25, 40",
-  "power": "Potenza (0-1)",
-  "sd": "Deviazione Standard",
-  "siglevel": "Livello di Significatività (0-1)",
+  "power": "Potenza 0-1 (separati da virgole per più valori)",
+  "sd": "Deviazione Standard (separati da virgole per più valori)",
+  "siglevel": "Livello di Significatività 0-1 (separati da virgole per più valori)",
+  "plotopt": "Curva di Potenza",
+  "plotcurve": "Genera Grafico della Curva di Potenza",
+  "curvex": "Variabile dell'Asse X",
+  "curvegroup": "Gruppo / Colore Linee Per (opzionale)",
+  "curvenone": "Nessuno",
+  "curven": "Dimensione del Campione",
+  "curvepower": "Potenza",
+  "curvesd": "Deviazione Standard",
+  "curvesiglevel": "Livello di Significatività",
+  "mainTitle": "Inserisci un titolo per il grafico",
+  "xlab": "Etichetta asse X",
+  "ylab": "Etichetta asse Y",
+  "legends": "Mostra Legende e, in tal caso, posizione delle Legende (di default a destra)",
   "help": {
     "title": "Dimensione del campione, ANOVA",
     "r_help": "help(power.anova.test, package ='stats')",
-    "body": "\nQuesta è una valutazione della dimensione del campione per un'ANOVA unidirezionale bilanciata. Calcola la dimensione del campione, la potenza o la differenza nelle medie (calcolata come la varianza tra le medie) quando l'utente \nspecifica le altre due.\n<br/><br/>\n<b>Numero di Gruppi:</b> Specificare il numero di gruppi nello studio\n<br/><br/>\n<b>Dimensione del Campione per Gruppo:</b> Specificare il numero di soggetti in ciascun gruppo\n<br/><br/>\n<b>Medie dei Gruppi:</b> Specificare le medie in ciascun gruppo che si desidera essere in grado di rilevare. Almeno una media deve essere diversa dalle altre.\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa era vera.\n<br/><br/>\n<b>Deviazione Standard:</b> Specificare la deviazione standard dell'esito. Si presume che sia la stessa tra i gruppi.\n<br/><br/>\n<b>Livello di Significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> stats\n\t\t\t"
+    "body": "\nQuesta è una valutazione della dimensione del campione per un ANOVA a una via bilanciato. Calcola la dimensione del campione o la potenza, quando l'utente specifica l'altro.\n<br/><br/>\n<b>Numero di Gruppi:</b> Specificare il numero di gruppi nello studio\n<br/><br/>\n<b>Dimensione del Campione per Gruppo:</b> Specificare il numero di soggetti in ciascun gruppo. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Medie dei Gruppi:</b> Specificare le medie in ciascun gruppo che si desidera essere in grado di rilevare. Almeno una media deve essere diversa dalle altre. Questo definisce uno scenario di dimensione dell'effetto singolo per l'intera esecuzione.\n<br/><br/>\n<b>Potenza:</b> Specificare la potenza desiderata dello studio, cioè la probabilità che il test rifiuti l'ipotesi nulla se l'ipotesi alternativa fosse vera. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Deviazione Standard:</b> Specificare la deviazione standard dell'esito. Si presume che sia la stessa tra i gruppi. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Livello di Significatività:</b> Specificare il livello di significatività desiderato (cioè errore di tipo I) del test. Sono accettati elenchi separati da virgole.\n<br/><br/>\n<b>Genera Grafico della Curva di Potenza:</b> Quando vengono forniti più valori per più di un campo, selezionare questa casella per tracciare i risultati. Scegliere quale quantità calcolata va sull'asse X e, facoltativamente, uno o più campi per raggruppare/colorare separatamente le curve.\n<br/><br/>\n<b>Pacchetti R Richiesti:</b> stats, ggplot2\n\t\t\t"
   }
 }

@@ -2,8 +2,7 @@
   "title": "Grafic Multi-Vari",
   "navigation": "Grafic Multi-Vari",
   "Y_variableRespSelcted": "Selectați variabila (numerică) pentru măsurare/răspuns (axa Y)",
-  "X_variableSelcted": "Selectați variabila categorială (axa X)",
-  "G_variableSelcted": "Selectați variabila de grupare (categorială)",
+  "G_variableSelcted": "Selectați una sau mai multe variabile de grupare (categorice). Prima variabilă selectată este utilizată ca axa X; orice variabile suplimentare selectate sunt combinate într-un singur factor de grupare (orice număr de variabile poate fi selectat)",
   "plotNestedMultiVariChk": "În plus, plotați un grafic Multi-Vari înnodat",
   "showMeanNumbersChk": "Arătați valorile medii pe grafic",
   "digits": "Cifre - numărul de cifre de afișat pentru valorile medii",
@@ -11,11 +10,12 @@
   "pctMeanRangeAsXoffset": "Offset orizontal pentru a plasa etichetele pentru punctele medii pe grafic",
   "printStatChk": "Tipăriți statistici în plus față de grafice",
   "angleXaxis_text": "Unghiul pentru a înclina valorile textului axei x (implicit 0 pentru fără înclinare)",
+  "legends": "Arătați Legende și, dacă da, poziția Legendelor (implicit este dreapta)",
   "label1": "Linii de referință orizontale",
-  "yIntercept": "Introduceți valoarea(ile) de interceptare Y separate prin virgulă pentru liniile orizontale, de exemplu 100, 200, 300 (adică, valori de numărare). Liniile vor fi desenate doar dacă este prezent un ax de numărare",
-  "horizontalLinelabel": "Specificați etichete separate prin virgulă (fără ghilimele) pentru linia(e) orizontală(e)",
+  "yIntercept": "Introduceți valori de interceptare Y separate prin virgulă pentru liniile orizontale, de exemplu 100, 200, 300 (adică, valori de numărare). Liniile vor fi desenate doar dacă este prezent un ax de numărare",
+  "horizontalLinelabel": "Specificați etichete separate prin virgulă (fără ghilimele) pentru linia/linile orizontale",
   "help": {
     "title": "Grafic Multi-Vari",
-    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tUn grafic multi-vari al unei variabile de răspuns cantitative în funcție de două variabile categoriale\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValorile medii ale variabilei de răspuns sunt, de asemenea, reprezentate pe grafic\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descriere</b></br>\n\t\t\t\tUn grafic multi-vari al unei variabile de răspuns cantitative în funcție de una sau mai multe variabile categorice (de grupare)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tOrice număr de variabile de grupare poate fi selectat. Prima variabilă de grupare selectată este utilizată ca axa X; orice\n\t\t\t\tvariabile de grupare rămase selectate sunt combinate într-un singur factor de grupare utilizat pentru culoare/formă și pentru\n\t\t\t\tgraficul Multi-Vari înnodat opțional.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tValorile medii ale variabilei de răspuns sunt, de asemenea, plotate pe grafic \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

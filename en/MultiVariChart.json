@@ -2,8 +2,7 @@
     "title": "Multi-Vari Chart",
     "navigation": "Multi-Vari Chart",
     "Y_variableRespSelcted": "Select the variable (numerical) for measurement/response (Y-axis)",
-    "X_variableSelcted": "Select the categorical variable (X-axis)",
-    "G_variableSelcted": "Select the grouping (categorical) variable ",
+    "G_variableSelcted": "Select one or more grouping (categorical) variables. The first variable selected is used as the X-axis; any additional variables selected are combined into a single grouping factor (any number of variables may be selected)",
     "plotNestedMultiVariChk": "Addionally, plot a nested Multi-Vari chart",
     "showMeanNumbersChk": "Show mean values on the plot",
     "digits": "Digits - number of digits to display for mean values",
@@ -11,11 +10,12 @@
     "pctMeanRangeAsXoffset": "Horizontal offset to place the labels for the mean points on the plot",
     "printStatChk": "Print stats in addition to charts",
     "angleXaxis_text": "Angle to slant x-axis text values (default 0 for no slanting)",
+    "legends": "Show Legends and if so, position of Legends (default is right)",
     "label1": "Horizontal reference lines",
     "yIntercept": "Enter comma separated Y intercept value(s) for the horizontal lines, e.g. 100, 200, 300 (i.e., count values). Lines will be drawn only if a Counts axis is present",
     "horizontalLinelabel": "Specify comma separated labels (no enclosing quotes) for the horizontal line(s)",
     "help": {
         "title": "Multi-Vari Chart",
-        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tA multi-vari chart of one quantitative response variable depending on two categorical variables\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMean values of the response variable is also plotted on the chart \n\t\t\t\t<br/>\n\t\t\t"
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tA multi-vari chart of one quantitative response variable depending on one or more categorical (grouping) variables\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tAny number of grouping variables may be selected. The first grouping variable selected is used as the X-axis; any\n\t\t\t\tremaining grouping variables selected are combined into a single grouping factor used for color/shape and for the\n\t\t\t\toptional nested Multi-Vari chart.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMean values of the response variable is also plotted on the chart \n\t\t\t\t<br/>\n\t\t\t"
     }
 }

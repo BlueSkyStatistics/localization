@@ -2,8 +2,7 @@
   "title": "Çok Değişkenli Grafik",
   "navigation": "Çok Değişkenli Grafik",
   "Y_variableRespSelcted": "Ölçüm/yanıt (Y ekseni) için değişkeni (sayısal) seçin",
-  "X_variableSelcted": "Kategorik değişkeni (X ekseni) seçin",
-  "G_variableSelcted": "Gruplama (kategorik) değişkeni seçin",
+  "G_variableSelcted": "Bir veya daha fazla gruplama (kategorik) değişkeni seçin. Seçilen ilk değişken X ekseni olarak kullanılır; seçilen ek değişkenler tek bir gruplama faktöründe birleştirilir (herhangi bir sayıda değişken seçilebilir)",
   "plotNestedMultiVariChk": "Ayrıca, iç içe geçmiş bir Çok Değişkenli grafik çizin",
   "showMeanNumbersChk": "Grafikte ortalama değerleri göster",
   "digits": "Basamaklar - ortalama değerler için gösterilecek basamak sayısı",
@@ -11,11 +10,12 @@
   "pctMeanRangeAsXoffset": "Grafikte ortalama noktaları için etiketleri yerleştirmek için yatay kaydırma",
   "printStatChk": "Grafiklerin yanı sıra istatistikleri yazdır",
   "angleXaxis_text": "X ekseni metin değerlerini eğmek için açı (eğme yoksa varsayılan 0)",
+  "legends": "Efsaneleri göster ve eğer öyleyse, Efsanelerin konumu (varsayılan sağda)",
   "label1": "Yatay referans çizgileri",
-  "yIntercept": "Yatay çizgiler için virgülle ayrılmış Y kesişim değeri(lerini) girin, örn. 100, 200, 300 (yani, sayım değerleri). Çizgiler yalnızca bir Sayım ekseni varsa çizilecektir",
+  "yIntercept": "Yatay çizgiler için virgülle ayrılmış Y kesişim değeri(lerini) girin, örn. 100, 200, 300 (yani, sayım değerleri). Çizgiler yalnızca bir Sayım ekseni mevcutsa çizilecektir",
   "horizontalLinelabel": "Yatay çizgi(ler) için virgülle ayrılmış etiketleri (tırnak işareti olmadan) belirtin",
   "help": {
     "title": "Çok Değişkenli Grafik",
-    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tİki kategorik değişkene bağlı bir nicel yanıt değişkeninin çok değişkenli grafiği\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt değişkeninin ortalama değerleri de grafikte çizilir\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tBir veya daha fazla kategorik (gruplama) değişkene bağlı bir nicel yanıt değişkeninin çok değişkenli grafiği\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tHerhangi bir sayıda gruplama değişkeni seçilebilir. Seçilen ilk gruplama değişkeni X ekseni olarak kullanılır; herhangi\n\t\t\t\tkalan gruplama değişkenleri tek bir gruplama faktöründe birleştirilir ve renk/şekil için ve isteğe bağlı iç içe geçmiş Çok Değişkenli grafik için kullanılır.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tYanıt değişkeninin ortalama değerleri de grafikte çizilir \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

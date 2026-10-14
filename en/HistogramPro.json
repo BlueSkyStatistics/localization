@@ -1,5 +1,5 @@
 {
-    "title": "Histogram with Overlay Normal Curves",
+    "title": "Histogram",
     "navigation": "Histogram",
     "x": "X axis, specify a numeric variable(s)",
     "bins": "Specify the number of bins",
@@ -17,6 +17,7 @@
     "Facetcolumn": "Facet column",
     "Facetwrap": "Facet wrap (if chosen, any selection of Facet row and column will be ignored)",
     "Facetscale": "Facet scale",
+    "degroupFacetsChk": "De-group facet group plots to plot individually",
     "normalCurveColor": "Optionally select a color for the overlaid distribution curve (After color selection, click outside the control to apply)",
     "rugPlot": "Display a rug plot (suitable for small datasets)",
     "normalCurve": "Display a normal curve",

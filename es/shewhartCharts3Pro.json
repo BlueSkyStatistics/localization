@@ -15,6 +15,7 @@
   "rowsTobeUsed": "Filas agrupadas a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedAsNewData": "Nuevos datos - filas agrupadas a utilizar como nuevos datos para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12) - nuevos datos para graficar pero no incluidos en los cálculos",
   "additionalPhasesLabel": "Especificar datos para graficar fases adicionales. Puede usar el campo 'Filas Agrupadas' anterior como datos de Fase 1. Limitado a un máximo de 10 fases para ser práctico de graficar en un solo gráfico.",
+  "beforeAfterChk": "Activar comparación Antes/Después - requiere EXACTAMENTE Fase 1 ('Campo de Filas Agrupadas' anterior) y Filas Agrupadas de Fase 2 para ser completadas, y ningún otro campo de fase completado. Agrega una comparación de significancia de Media/StDev (barras de medidor) y comentarios comparando las dos fases.",
   "rowsTobeUsedPhase2": "Filas agrupadas de Fase 2 a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase3": "Filas agrupadas de Fase 3 a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase4": "Filas agrupadas de Fase 4 a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
@@ -24,9 +25,9 @@
   "rowsTobeUsedPhase8": "Filas agrupadas de Fase 8 a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase9": "Filas agrupadas de Fase 9 a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase10": "Filas agrupadas de Fase 10 a utilizar para graficar (por ejemplo, especificar como 1:25 o 1,4,5,7:12)",
-  "phaseNames": "Especificar nombres de fases (separados por comas) para un gráfico de múltiples fases - los nombres de fase predeterminados son Fase 1, Fase 2, ...",
-  "nsigmas": "Sigma - número de sigmas a utilizar para calcular los límites de control. Se ignora cuando se proporciona el argumento confidence.level",
-  "confidence_level": "Nivel de confianza - valor entre 0 y 1 que especifica el nivel de confianza de los límites de probabilidad calculados",
+  "phaseNames": "Especificar nombres de fase (separados por comas) para un gráfico de múltiples fases - los nombres de fase predeterminados son Fase 1, Fase 2, ...",
+  "nsigmas": "Sigma - número de sigmas a utilizar para calcular límites de control. Se ignora cuando se proporciona el argumento confidence.level",
+  "confidence_level": "Nivel de Confianza - valor entre 0 y 1 que especifica el nivel de confianza de los límites de probabilidad calculados",
   "sdWarnLimits": "Agregar líneas de límite adicionales (separadas por comas) en el gráfico en las desviaciones estándar específicas (por ejemplo, 1.5, 2)",
   "digits": "Dígitos - número de dígitos a mostrar",
   "lower": "LSL - valor numérico del límite de especificación inferior para graficar una línea LSL",
@@ -52,8 +53,8 @@
   "test4": "K puntos en fila, alternando hacia arriba y hacia abajo (predeterminado 14)",
   "test5": "K de K+1 puntos más de 2σ de la línea central del mismo lado (predeterminado 2 de 2+1)",
   "test6": "K de K+1 puntos más de 1σ de la línea central del mismo lado (predeterminado 4 de 4+1)",
-  "test7": "K puntos en fila dentro de 1σ de la línea central de cualquier lado (predeterminado 15)",
-  "test8": "K puntos en fila más de 1σ de la línea central de cualquier lado (predeterminado 8)",
+  "test7": "K puntos en fila dentro de 1σ de la línea central de ambos lados (predeterminado 15)",
+  "test8": "K puntos en fila más de 1σ de la línea central de ambos lados (predeterminado 8)",
   "sigmaSymbol": "Si el símbolo sigma 'σ' no se imprime correctamente en la salida, especifique un carácter o cadena, por ejemplo, s o sigma en lugar del símbolo σ",
   "dateAxisFormat": "Elegir un formato para el texto del valor de fecha",
   "timeAxisFormat": "Elegir un formato para el texto del valor de tiempo",
@@ -65,10 +66,10 @@
   "supressSampleSizeInfoChk": "Suprimir información del tamaño de la muestra en el título del gráfico",
   "plotPhases": "Graficar fases",
   "plotTests": "Pruebas para causas especiales",
-  "addRefLines": "Agregar líneas de referencia",
+  "addRefLines": "Agregar Líneas de Referencia",
   "help": {
     "title": "Gráficos de Shewhart (I-MR)",
     "r_help": "help(qcc, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para realizar control de calidad estadístico y graficar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ayuda adicional con los métodos de desviación estándar - use R help(sd.xbar.one, package = qcc) y help(sd.R, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionar el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija diámetro para variable (observados..), haga clic en ejecutar\n\t\t\t\t<br/>\n\t\t\t\tAdemás, escriba 1:20 en Filas agrupadas a utilizar, haga clic en ejecutar\n\t\t\t\t<br/>\n\t\t\t\tPara graficar un gráfico con múltiples fases\n\t\t\t\t<br/>\n\t\t\t\tEscriba 25:30 en Filas agrupadas de Fase 2\n\t\t\t\t<br/>\n\t\t\t\tEscriba 31:38 en Filas agrupadas de Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción qcc para realizar control de calidad estadístico y graficar gráficos de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ayuda adicional con los métodos de desviación estándar - use R help(sd.xbar.one, package = qcc) y help(sd.R, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede cargar el conjunto de datos llamado pistonrings del paquete qcc con el menú Cargar Conjunto de Datos seleccionando el paquete qcc y luego seleccionando el conjunto de datos pistonrings\n\t\t\t\t<br/>\n\t\t\t\tElija diámetro para variable (observados..), haga clic en ejecutar\n\t\t\t\t<br/>\n\t\t\t\tAdemás, escriba 1:20 en Filas agrupadas a utilizar, haga clic en ejecutar\n\t\t\t\t<br/>\n\t\t\t\tPara graficar un gráfico con múltiples fases\n\t\t\t\t<br/>\n\t\t\t\tEscriba 25:30 en Filas agrupadas de Fase 2\n\t\t\t\t<br/>\n\t\t\t\tEscriba 31:38 en Filas agrupadas de Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara realizar una comparación Antes/Después, complete SOLAMENTE el campo 'Filas Agrupadas' (Fase 1 / Antes) y el campo 'Filas Agrupadas de Fase 2' (Fase 2 / Después), deje vacíos los campos de Fase 3-10, y marque 'Activar comparación Antes/Después' bajo Graficar fases.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSiga el tutorial de qcc en https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

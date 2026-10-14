@@ -1,14 +1,14 @@
 {
   "title": "Graphiques de Shewhart (I-MR Entre/Dans)",
   "navigation": "Graphiques de Shewhart (I-MR Entre/Dans)",
-  "label2": "Deux options - soit sélectionner une variable à tracer (et une variable de regroupement si nécessaire), soit sélectionner les variables dans l'ensemble de données à tracer si déjà regroupées",
-  "selectVariableRad": "Option 1 : Sélectionnez une variable de l'ensemble de données qui doit être regroupée",
+  "label2": "Deux options - soit sélectionner une variable à tracer (et une variable de regroupement si nécessaire), soit sélectionner les variables dans le jeu de données à tracer si déjà regroupées",
+  "selectVariableRad": "Option 1 : Sélectionnez une variable du jeu de données qui doit être regroupée",
   "variableSelcted": "Variable (données observées) à tracer",
   "groupingVariable": "Variable de regroupement",
   "sampleSize": "La taille de l'échantillon sera ignorée si une variable de regroupement est sélectionnée ci-dessus",
-  "variableControlLimits": "Lignes à ignorer si avant le regroupement pour les limites de contrôle de variable (c'est-à-dire tailles d'échantillon de variable) par exemple, spécifiez comme 1:25 ou 1,4,5,7:12",
-  "displayGroupsChk": "Afficher les regroupements sur l'interface utilisateur de l'ensemble de données",
-  "selectDatasetRad": "Option 2 : Sélectionnez les variables de l'ensemble de données si déjà regroupées",
+  "variableControlLimits": "Lignes à ignorer si présentes avant le regroupement pour les limites de contrôle de variable (c'est-à-dire les tailles d'échantillon de variable) par exemple, spécifiez comme 1:25 ou 1,4,5,7:12",
+  "displayGroupsChk": "Afficher les regroupements sur l'interface utilisateur du jeu de données",
+  "selectDatasetRad": "Option 2 : Sélectionnez les variables du jeu de données si déjà regroupées",
   "variablelistSelcted": "Sélectionnez une ou plusieurs variables regroupées (données observées) à tracer",
   "showMRChartChk": "Afficher le graphique MR des moyennes de sous-groupes",
   "printStatChk": "Imprimer les statistiques en plus des graphiques",
@@ -29,11 +29,12 @@
   "rowsTobeUsedPhase9": "Lignes regroupées de la phase 9 à utiliser pour le graphique (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12)",
   "rowsTobeUsedPhase10": "Lignes regroupées de la phase 10 à utiliser pour le graphique (par exemple, spécifiez comme 1:25 ou 1,4,5,7:12)",
   "phaseNames": "Spécifiez les noms des phases (séparés par des virgules) pour un graphique multi-phases - les noms de phases par défaut sont Phase 1, Phase 2, ...",
+  "beforeAfterChk": "Activer la comparaison Avant/Après - nécessite EXACTEMENT la phase 1 (champ 'Lignes regroupées' ci-dessus) et les lignes regroupées de la phase 2 à remplir, et aucun autre champ de phase rempli. Ajoute une comparaison de signification Moyenne/Écart type (barres de jauge) et des commentaires comparant les deux phases, en utilisant les valeurs brutes au sein des sous-groupes pour les groupes inclus dans chaque phase.",
   "nsigmas": "Sigma - nombre de sigmas à utiliser pour le calcul des limites de contrôle. Il est ignoré lorsque l'argument confidence.level est fourni",
   "confidence_level": "Niveau de confiance - valeur entre 0 et 1 spécifiant le niveau de confiance des limites de probabilité calculées",
   "sdWarnLimits": "Ajouter des lignes de limite supplémentaires (séparées par des virgules) sur le graphique aux écarts-types spécifiques (par exemple, 1.5, 2)",
   "digits": "Chiffres - nombre de chiffres à afficher",
-  "SStddev": "Méthode d'écart-type à utiliser pour le graphique 'Dans' S sous-jacent",
+  "SStddev": "Méthode d'écart type à utiliser pour le graphique 'Within' S sous-jacent",
   "lower": "LSL - valeur numérique de la limite de spécification inférieure pour tracer une ligne LSL",
   "upper": "USL - valeur numérique de la limite de spécification supérieure pour tracer une ligne USL",
   "addlSpecLinesBetween": "Ajouter des lignes de spécification supplémentaires (séparées par des virgules) sur le graphique I-MR Entre (par exemple, 73.98, 74.01, 74.03)",
@@ -56,9 +57,9 @@
   "test3": "K points consécutifs, tous croissants ou tous décroissants (par défaut 6)",
   "test4": "K points consécutifs, alternant vers le haut et vers le bas (par défaut 14)",
   "test5": "K sur K+1 points plus de 2σ du même côté de la ligne centrale (par défaut 2 sur 2+1)",
-  "test6": "K sur K+1 points plus de 1σ du même côté de la ligne centrale (par défaut 4 sur 4+1)",
+  "test6": "K sur K+1 points plus de 1σ de la ligne centrale du même côté (par défaut 4 sur 4+1)",
   "test7": "K points consécutifs dans 1σ de la ligne centrale de chaque côté (par défaut 15)",
-  "test8": "K points consécutifs plus de 1σ de la ligne centrale de chaque côté (par défaut 8)",
+  "test8": "K points consécutifs à plus de 1σ de la ligne centrale de chaque côté (par défaut 8)",
   "sigmaSymbol": "Si le symbole sigma 'σ' n'est pas imprimé correctement dans la sortie, spécifiez un caractère ou une chaîne par exemple s ou sigma à la place du symbole σ",
   "chart_title": "Entrez un titre",
   "x_title": "Étiquette de l'axe X",
@@ -70,6 +71,6 @@
   "help": {
     "title": "Graphiques de Shewhart (Graphiques I-MR Entre/Dans)",
     "r_help": "help(qcc, package = qcc)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction qcc pour effectuer un contrôle de qualité statistique et tracer des graphiques de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger l'ensemble de données appelé pistonrings depuis le package qcc avec le menu Charger l'ensemble de données en sélectionnant le package qcc puis en sélectionnant l'ensemble de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre à variable (observé..), échantillon à variable de regroupement, cliquez sur exécuter\n\t\t\t\t<br/>\n\t\t\t\tDe plus, tapez 1:20 dans les lignes regroupées à utiliser, cliquez sur exécuter \n\t\t\t\t<br/>\n\t\t\t\tPour tracer un graphique avec plusieurs phases\n\t\t\t\t<br/>\n\t\t\t\tTapez 25:30 dans les lignes regroupées de la phase 2\n\t\t\t\t<br/>\n\t\t\t\tTapez 31:38 dans les lignes regroupées de la phase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction qcc pour effectuer un contrôle de qualité statistique et tracer des graphiques de Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez charger le jeu de données appelé pistonrings du package qcc avec le menu Charger le jeu de données en sélectionnant le package qcc puis en sélectionnant le jeu de données pistonrings\n\t\t\t\t<br/>\n\t\t\t\tChoisissez l'option 1, diamètre à variable (observé..), échantillon à variable de regroupement, cliquez sur exécuter\n\t\t\t\t<br/>\n\t\t\t\tDe plus, tapez 1:20 dans les lignes regroupées à utiliser, cliquez sur exécuter \n\t\t\t\t<br/>\n\t\t\t\tPour tracer un graphique avec plusieurs phases\n\t\t\t\t<br/>\n\t\t\t\tTapez 25:30 dans les lignes regroupées de la phase 2\n\t\t\t\t<br/>\n\t\t\t\tTapez 31:38 dans les lignes regroupées de la phase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSuivez le tutoriel qcc à https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour effectuer une comparaison Avant/Après, remplissez UNIQUEMENT le champ 'Lignes regroupées' (Phase 1 / Avant) et le champ 'Lignes regroupées de la phase 2' (Phase 2 / Après), laissez les phases 3-10 vides, et cochez 'Activer la comparaison Avant/Après' sous Tracer les phases.\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

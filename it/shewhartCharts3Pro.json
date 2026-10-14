@@ -2,10 +2,10 @@
   "title": "Grafici di Shewhart (I-MR)",
   "navigation": "Grafici di Shewhart (I-MR)",
   "variableSelcted2": "Variabile (dati osservati) da graficare",
-  "dateVariable": "(Opzionale) Variabile data da mostrare sulle date dell'asse x del grafico",
+  "dateVariable": "(Opzionale) Variabile data per mostrare le date sull'asse x del grafico",
   "plotTimeSeriesChk": "(Opzionale) Grafica una serie temporale della variabile (dati osservati) - vedere le opzioni di formattazione aggiuntive per date e orari alla fine",
   "dateUnitStr": "(Opzionale) Scegli un'unità di data di raggruppamento (ad es. settimana, trimestre, ecc.) per i valori delle date, altrimenti i valori delle date saranno calcolati automaticamente",
-  "dateUnitInteger": "(Opzionale) Un'unità di data di raggruppamento aggiuntiva (ad es. 1 giorno, 2 settimane, 1 trimestre, ecc.) per i valori delle date",
+  "dateUnitInteger": "(Opzionale) Un'ulteriore unità di data di raggruppamento (ad es. 1 giorno, 2 settimane, 1 trimestre, ecc.) per i valori delle date",
   "printStatChk": "Stampa statistiche oltre ai grafici",
   "printObjectSummaryChk": "Stampa il riepilogo dell'oggetto QCC",
   "printTestSummaryChk": "Stampa il riepilogo dei test per cause speciali",
@@ -15,6 +15,7 @@
   "rowsTobeUsed": "Righe raggruppate da utilizzare per il grafico (ad es. specificare come 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedAsNewData": "Nuovi dati - righe raggruppate da utilizzare come nuovi dati da graficare (ad es. specificare come 1:25 o 1,4,5,7:12) - nuovi dati da graficare ma non inclusi nei calcoli",
   "additionalPhasesLabel": "Specifica i dati per graficare fasi aggiuntive. Puoi utilizzare il campo 'Righe Raggruppate' sopra come dati della Fase 1. Limitato a un massimo di 10 fasi per essere pratico da graficare su un singolo grafico.",
+  "beforeAfterChk": "Attiva il confronto Prima/Dopo - richiede ESATTAMENTE la Fase 1 ('Campo Righe Raggruppate' sopra) e le Righe Raggruppate della Fase 2 da compilare, e nessun altro campo fase compilato. Aggiunge un confronto di significatività Media/StDev (barre di misurazione) e commenti che confrontano le due fasi.",
   "rowsTobeUsedPhase2": "Righe raggruppate della Fase 2 da utilizzare per il grafico (ad es. specificare come 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase3": "Righe raggruppate della Fase 3 da utilizzare per il grafico (ad es. specificare come 1:25 o 1,4,5,7:12)",
   "rowsTobeUsedPhase4": "Righe raggruppate della Fase 4 da utilizzare per il grafico (ad es. specificare come 1:25 o 1,4,5,7:12)",
@@ -47,13 +48,13 @@
   "test7Chk": "Esegui test 7",
   "test8Chk": "Esegui test 8",
   "test1": "Un punto più di Kσ dalla linea centrale (predefinito 3)",
-  "test2": "K punti di fila sullo stesso lato della linea centrale (predefinito 9)",
-  "test3": "K punti di fila, tutti in aumento o tutti in diminuzione (predefinito 6)",
-  "test4": "K punti di fila, alternando su e giù (predefinito 14)",
+  "test2": "K punti consecutivi sullo stesso lato della linea centrale (predefinito 9)",
+  "test3": "K punti consecutivi, tutti in aumento o tutti in diminuzione (predefinito 6)",
+  "test4": "K punti consecutivi, alternando su e giù (predefinito 14)",
   "test5": "K su K+1 punti più di 2σ dalla linea centrale stesso lato (predefinito 2 su 2+1)",
   "test6": "K su K+1 punti più di 1σ dalla linea centrale stesso lato (predefinito 4 su 4+1)",
-  "test7": "K punti di fila entro 1σ dalla linea centrale su entrambi i lati (predefinito 15)",
-  "test8": "K punti di fila più di 1σ dalla linea centrale su entrambi i lati (predefinito 8)",
+  "test7": "K punti consecutivi entro 1σ dalla linea centrale su entrambi i lati (predefinito 15)",
+  "test8": "K punti consecutivi più di 1σ dalla linea centrale su entrambi i lati (predefinito 8)",
   "sigmaSymbol": "Se il simbolo sigma 'σ' non viene stampato correttamente nell'output, specifica un carattere o una stringa ad es. s o sigma al posto del simbolo σ",
   "dateAxisFormat": "Scegli un formato per il testo del valore della data",
   "timeAxisFormat": "Scegli un formato per il testo del valore del tempo",
@@ -69,6 +70,6 @@
   "help": {
     "title": "Grafici di Shewhart (I-MR)",
     "r_help": "help(qcc, package = qcc)",
-    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione qcc per eseguire il controllo statistico della qualità e per tracciare i grafici di Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer ulteriore aiuto con i metodi di deviazione standard - usa R help(sd.xbar.one, package = qcc) e help(sd.R, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato pistonrings dal pacchetto qcc con il menu Carica Dataset selezionando il pacchetto qcc e poi selezionando il dataset pistonrings\n\t\t\t\t<br/>\n\t\t\t\tScegli il diametro per variabile (osservata..), clicca su esegui\n\t\t\t\t<br/>\n\t\t\t\tInoltre, digita 1:20 nelle righe raggruppate da utilizzare, clicca su esegui \n\t\t\t\t<br/>\n\t\t\t\tPer tracciare un grafico con fasi multiple\n\t\t\t\t<br/>\n\t\t\t\tDigita 25:30 nelle righe raggruppate della Fase 2\n\t\t\t\t<br/>\n\t\t\t\tDigita 31:38 nelle righe raggruppate della Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial qcc su https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione qcc per eseguire il controllo qualità statistico e per tracciare i grafici di Shewhart\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - usa R help(qcc, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer ulteriore aiuto con i metodi di deviazione standard - usa R help(sd.xbar.one, package = qcc) e help(sd.R, package = qcc)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi caricare il dataset chiamato pistonrings dal pacchetto qcc con il menu Carica Dataset selezionando il pacchetto qcc e poi selezionando il dataset pistonrings\n\t\t\t\t<br/>\n\t\t\t\tScegli il diametro per variabile (osservata..), clicca su esegui\n\t\t\t\t<br/>\n\t\t\t\tInoltre, digita 1:20 in Righe raggruppate da utilizzare, clicca su esegui\n\t\t\t\t<br/>\n\t\t\t\tPer tracciare un grafico con più fasi\n\t\t\t\t<br/>\n\t\t\t\tDigita 25:30 in Righe raggruppate della Fase 2\n\t\t\t\t<br/>\n\t\t\t\tDigita 31:38 in Righe raggruppate della Fase 3\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer eseguire un confronto Prima/Dopo, compila SOLO il campo 'Righe Raggruppate' (Fase 1 / Prima) e il campo 'Righe Raggruppate della Fase 2' (Fase 2 / Dopo), lascia vuoti i campi Fase 3-10, e seleziona 'Attiva confronto Prima/Dopo' sotto Grafica fasi.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSegui il tutorial qcc su https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

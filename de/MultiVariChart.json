@@ -2,8 +2,7 @@
   "title": "Multi-Vari Chart",
   "navigation": "Multi-Vari Chart",
   "Y_variableRespSelcted": "Wählen Sie die Variable (numerisch) für die Messung/Antwort (Y-Achse)",
-  "X_variableSelcted": "Wählen Sie die kategoriale Variable (X-Achse)",
-  "G_variableSelcted": "Wählen Sie die Gruppierungsvariable (kategorial)",
+  "G_variableSelcted": "Wählen Sie eine oder mehrere Gruppierungsvariablen (kategorisch). Die erste ausgewählte Variable wird als X-Achse verwendet; alle zusätzlichen ausgewählten Variablen werden zu einem einzigen Gruppierungsfaktor kombiniert (es können beliebig viele Variablen ausgewählt werden)",
   "plotNestedMultiVariChk": "Zusätzlich ein geschachteltes Multi-Vari-Diagramm plotten",
   "showMeanNumbersChk": "Mittelwerte im Diagramm anzeigen",
   "digits": "Ziffern - Anzahl der Ziffern, die für die Mittelwerte angezeigt werden sollen",
@@ -11,11 +10,12 @@
   "pctMeanRangeAsXoffset": "Horizontaler Versatz, um die Beschriftungen für die Mittelwerte im Diagramm zu platzieren",
   "printStatChk": "Statistiken zusätzlich zu den Diagrammen drucken",
   "angleXaxis_text": "Winkel, um die x-Achsen-Textwerte zu neigen (Standard 0 für keine Neigung)",
+  "legends": "Legenden anzeigen und wenn ja, Position der Legenden (Standard ist rechts)",
   "label1": "Horizontale Referenzlinien",
   "yIntercept": "Geben Sie durch Kommas getrennte Y-Achsenabschnittswerte für die horizontalen Linien ein, z.B. 100, 200, 300 (d.h. Zählwerte). Linien werden nur gezeichnet, wenn eine Zählachse vorhanden ist",
   "horizontalLinelabel": "Geben Sie durch Kommas getrennte Beschriftungen (ohne umschließende Anführungszeichen) für die horizontalen Linien an",
   "help": {
     "title": "Multi-Vari Chart",
-    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tEin Multi-Vari-Diagramm einer quantitativen Antwortvariable, die von zwei kategorialen Variablen abhängt\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDie Mittelwerte der Antwortvariable werden ebenfalls im Diagramm dargestellt\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tEin Multi-Vari-Diagramm einer quantitativen Antwortvariable, die von einer oder mehreren kategorialen (Gruppierungs-)Variablen abhängt\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tEs können beliebig viele Gruppierungsvariablen ausgewählt werden. Die erste ausgewählte Gruppierungsvariable wird als X-Achse verwendet; alle\n\t\t\t\tverbleibenden ausgewählten Gruppierungsvariablen werden zu einem einzigen Gruppierungsfaktor kombiniert, der für Farbe/Form und für das\n\t\t\t\toptionale geschachtelte Multi-Vari-Diagramm verwendet wird.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tMittelwerte der Antwortvariable werden ebenfalls im Diagramm dargestellt\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

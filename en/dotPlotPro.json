@@ -6,7 +6,6 @@
     "dotPointSize": "Size of the dot points (default 1)",
     "stackratioSpreadPoints": "Increase or decrease the number (default 4) to spread the stacked-up points vertically",
     "flip": "Flip Axis",
-    "formatLargeNumbers": "Format numeric values > 10^5 on the X axis with a suitable separator",
     "specify_a_title": "Enter a title",
     "x_title": "X axis label",
     "y_title": "Y axis label",
@@ -16,6 +15,7 @@
     "Facetcolumn": "Facet column",
     "Facetwrap": "Facet wrap (if chosen, any selection of Facet row and column will be ignored)",
     "Facetscale": "Facet scale",
+    "degroupFacetsChk": "De-group facet group plots to plot individually",
     "help": {
         "title": "Dot Plot",
         "r_help": "help(geom_dotplot, package=ggplot2)",
