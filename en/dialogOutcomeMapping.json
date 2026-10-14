@@ -6227,7 +6227,7 @@
         "mainAssumptions": "The chosen transformation is appropriate for the variable's range (e.g. log requires positive values)",
         "resultMeaning": "New transformed variable(s)."
     },
-    "analyzeMixtureDesign": {
+    "analyzeMixtureDesignPro": {
         "dialog": "Analyze Mixture Design",
         "menu": "DOE",
         "outcome": "Fits a Scheffé canonical mixture model (Linear, Quadratic, or Special Cubic, no intercept) to a mixture experiment's response, with corrected R², lack-of-fit, residual diagnostics, and a ternary plot of the fitted response surface.",
@@ -6263,7 +6263,7 @@
         "mainAssumptions": "Components sum to a fixed total; the chosen model type suits every response; desirability goals and weights reflect real priorities",
         "resultMeaning": "Fitted model per response, the optimal blend, each response's predicted value and individual desirability, and the composite desirability."
     },
-    "scoreMixtureDesign": {
+    "scoreMixtureDesignPro": {
         "dialog": "Score Mixture Design Model(s)",
         "menu": "DOE",
         "outcome": "Scores the active dataset with one or more mixture models from Analyze Mixture Design, adding predicted response columns (optionally with confidence or prediction intervals) after checking each row's components sum to the mixture total.",
