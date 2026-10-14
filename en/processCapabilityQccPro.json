@@ -17,6 +17,9 @@
     "selectDatasetRad": "Option 2: Select the variables from the Dataset if already grouped",
     "variablelistSelcted": "Select one or more grouped variables (observed data) to analyze",
     "rowsTobeUsed": "If selected (grouped) rows to be used to analyze for process capability ( e.g.  specify as 1:25 or 1,4,5,7:12)",
+    "beforeAfterGroup": "Before/After Capability Comparison (optional - Option 1 variable only)",
+    "beforeRows": "'Before' rows of the selected variable (original dataset row numbers, e.g. specify as 1:25 or 1,4,5,7:12) - leave blank, along with 'After' rows below, to skip this comparison",
+    "afterRows": "'After' rows of the selected variable (original dataset row numbers, e.g. specify as 26:50 or 1,4,5,7:12) - leave blank, along with 'Before' rows above, to skip this comparison",
     "nsigmas": "Sigma - number of sigmas to use for computing control limits",
     "confidence_level": "A numeric value between 0 and 1 specifying the level to use for computing confidence intervals",
     "stddev": "Standard deviation method for Within-Subgroup variation",
@@ -32,6 +35,7 @@
     "addRefLines": "Add Reference Lines",
     "digits": "Digits - number of digits to display",
     "ppmTableChk": "Print Performance (parts per million) table",
+    "overlayCapabilityPlotsChk": "Overlay the Overall and Within (Potential) Process Capability plots on a single plot",
     "help": {
         "title": "Process Capability (qcc pkg)",
         "r_help": "help(process.capability, package = qcc)",
