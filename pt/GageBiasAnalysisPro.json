@@ -1,4 +1,9 @@
 {
+  "language": {
+    "language": "Portuguese",
+    "key": "pt"
+  },
+  "original_json": {
     "title": "Análise de Viés de Gage",
     "navigation": "Análise de Viés de Gage",
     "variablePartSelcted": "Selecione a variável para amostra/parte",
@@ -10,8 +15,14 @@
     "stdevMethodLabel": "Método a ser usado para estimar o desvio padrão de repetibilidade",
     "selectSampleRangeMethodRad": "Método de intervalo de amostra (padrão)",
     "selectSampleStdDevMethodRad": "Método de desvio padrão da amostra",
-    "label2": "Para calcular índices de capacidade do gage",
+    "label2": "Para calcular índices de capacidade de gage",
+    "tolTypeInRad": "Tolerância - digite um valor",
+    "tolVariableRad": "Tolerância - use uma coluna (a média da coluna é usada)",
+    "resTypeInRad": "Resolução do Gage - digite um valor",
+    "resVariableRad": "Resolução do Gage - use uma coluna (a média da coluna é usada)",
     "tolerance": "Tolerância - valor numérico para a tolerância",
+    "tolVarbox": "Selecione a variável para tolerância (a média da coluna é usada)",
+    "resVarbox": "Selecione a variável para resolução do gage (a média da coluna é usada)",
     "gageResolution": "Resolução do Gage",
     "historicalStdv": "Desvio padrão histórico do processo",
     "useHistStdDevProcVarChk": "Usar desvio padrão histórico para calcular RF (Figura de Referência)",
@@ -31,6 +42,7 @@
     "help": {
       "title": "Análise de viés de gage",
       "r_help": "help(lm, package = stats)",
-      "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar análise de viés de linearidade\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar os arquivos de conjunto de dados de amostra linearityBias.xlsx. Abra os arquivos na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\tEscolha as variáveis na caixa de seleção, Referência e Medição\n\t\t\t\t<br/>\n\t\t\t"
+      "body": "\n\t\t\t\t<b>Descrição</b></br>\n\t\t\t\tFunção para realizar análise de viés de linearidade\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara ajuda detalhada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara experimentar isso, você pode usar os arquivos de conjunto de dados de amostra linearityBias.xlsx. Abra os arquivos na grade de dados com o menu de abrir arquivo\n\t\t\t\t<br/>\n\t\t\t\tEscolha as variáveis na caixa de seleção, Referência e Medição\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolerância e Resolução do Gage</b><br/>\n\t\t\t\tTolerância e Resolução do Gage têm suas próprias opções: digite um valor ou escolha a opção de coluna e arraste uma coluna numérica para sua caixa. Com a opção de coluna, a média dos valores não ausentes da coluna é usada como a tolerância ou a resolução do gage.\n\t\t\t\t<br/>\n\t\t\t"
     }
+  }
 }

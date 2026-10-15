@@ -11,7 +11,13 @@
     "selectSampleRangeMethodRad": "Sample range method (default)",
     "selectSampleStdDevMethodRad": "Sample standard deviation method",
     "label2": "For computing gage capability indices",
+    "tolTypeInRad": "Tolerance - type in a value",
+    "tolVariableRad": "Tolerance - use a column (mean of the column is used)",
+    "resTypeInRad": "Gage Resolution - type in a value",
+    "resVariableRad": "Gage Resolution - use a column (mean of the column is used)",
     "tolerance": "Tolerance - numeric value for the tolerance",
+    "tolVarbox": "Select the variable for tolerance (mean of the column is used)",
+    "resVarbox": "Select the variable for gage resolution (mean of the column is used)",
     "gageResolution": "Gage Resolution",
     "historicalStdv": "Historical process std deviaion",
     "useHistStdDevProcVarChk": "Use historical std dev to calculate RF (Reference Figure)",
@@ -31,6 +37,6 @@
     "help": {
         "title": "Gage bias analysis",
         "r_help": "help(lm, package = stats)",
-        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to perform linearity bias analysis\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset files linearityBias.xlsx. Open the files in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tChoose the variables from the selection box, Reference and Measurement\n\t\t\t\t<br/>\n\t\t\t"
+        "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFunction to perform linearity bias analysis\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFor the detail help - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tTo try this, you may use the sample dataset files linearityBias.xlsx. Open the files in the data grid with file open menu\n\t\t\t\t<br/>\n\t\t\t\tChoose the variables from the selection box, Reference and Measurement\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolerance and Gage Resolution</b><br/>\n\t\t\t\tTolerance and Gage Resolution each have their own choice: type in a value, or choose the column option and drag a numeric column into its box. With the column option, the mean of the non-missing values of the column is used as the tolerance or the gage resolution.\n\t\t\t\t<br/>\n\t\t\t"
     }
 }

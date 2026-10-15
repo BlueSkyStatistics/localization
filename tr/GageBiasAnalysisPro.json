@@ -8,13 +8,19 @@
   "variableBiasSelcted": "Bias için değişkeni seçin",
   "includeLinearityStudyChk": "Tip 1 Çalışmasına ek olarak Doğrusalık Çalışmasını dahil et",
   "stdevMethodLabel": "Tekrar edilebilirlik standart sapmasını tahmin etmek için kullanılacak yöntem",
-  "selectSampleRangeMethodRad": "Örnek aralık yöntemi (varsayılan)",
+  "selectSampleRangeMethodRad": "Örnek aralığı yöntemi (varsayılan)",
   "selectSampleStdDevMethodRad": "Örnek standart sapma yöntemi",
   "label2": "Gage yeterlilik indekslerini hesaplamak için",
+  "tolTypeInRad": "Tolerans - bir değer girin",
+  "tolVariableRad": "Tolerans - bir sütun kullanın (sütunun ortalaması kullanılır)",
+  "resTypeInRad": "Gage Çözünürlüğü - bir değer girin",
+  "resVariableRad": "Gage Çözünürlüğü - bir sütun kullanın (sütunun ortalaması kullanılır)",
   "tolerance": "Tolerans - tolerans için sayısal değer",
+  "tolVarbox": "Tolerans için değişkeni seçin (sütunun ortalaması kullanılır)",
+  "resVarbox": "Gage çözünürlüğü için değişkeni seçin (sütunun ortalaması kullanılır)",
   "gageResolution": "Gage Çözünürlüğü",
   "historicalStdv": "Tarihsel süreç standart sapması",
-  "useHistStdDevProcVarChk": "RF'yi (Referans Şekli) hesaplamak için tarihsel standart sapmayı kullan",
+  "useHistStdDevProcVarChk": "RF (Referans Şekli) hesaplamak için tarihsel standart sapmayı kullan",
   "showPValuetChk": "Gage Bias tablosunda p değerini göster",
   "facCg": "Cg hesaplamak için faktör (varsayılan 0.2)",
   "facCgk": "Cgk hesaplamak için faktör (varsayılan 0.1)",
@@ -31,6 +37,6 @@
   "help": {
     "title": "Gage bias analizi",
     "r_help": "help(lm, package = stats)",
-    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDoğrusalık bias analizini gerçekleştiren fonksiyon\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(lm, package = stats) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, linearityBias.xlsx örnek veri seti dosyalarını kullanabilirsiniz. Dosyaları dosya aç menüsü ile veri ızgarasında açın\n\t\t\t\t<br/>\n\t\t\t\tSeçim kutusundan Referans ve Ölçüm değişkenlerini seçin\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Açıklama</b></br>\n\t\t\t\tDoğrusalık bias analizini gerçekleştiren fonksiyon\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tDetaylı yardım için - R help(lm, package = stats) kullanın\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tBunu denemek için, linearityBias.xlsx örnek veri seti dosyalarını kullanabilirsiniz. Dosyaları veri ızgarasında dosya aç menüsü ile açın\n\t\t\t\t<br/>\n\t\t\t\tSeçim kutusundan Değişkenleri, Referans ve Ölçüm seçin\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolerans ve Gage Çözünürlüğü</b><br/>\n\t\t\t\tTolerans ve Gage Çözünürlüğü her birinin kendi seçeneği vardır: bir değer girin veya sütun seçeneğini seçin ve sayısal bir sütunu kutusuna sürükleyin. Sütun seçeneği ile, sütunun eksik olmayan değerlerinin ortalaması tolerans veya gage çözünürlüğü olarak kullanılır.\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

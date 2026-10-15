@@ -1,4 +1,9 @@
 {
+  "language": {
+    "language": "french",
+    "key": "fr"
+  },
+  "original_json": {
     "title": "Analyse de biais de gage",
     "navigation": "Analyse de biais de gage",
     "variablePartSelcted": "Sélectionnez la variable pour l'échantillon/pièce",
@@ -9,9 +14,15 @@
     "includeLinearityStudyChk": "Inclure l'étude de linéarité en plus de l'étude de type 1",
     "stdevMethodLabel": "Méthode à utiliser pour estimer l'écart type de répétabilité",
     "selectSampleRangeMethodRad": "Méthode de plage d'échantillon (par défaut)",
-    "selectSampleStdDevMethodRad": "Méthode de l'écart type de l'échantillon",
+    "selectSampleStdDevMethodRad": "Méthode d'écart type d'échantillon",
     "label2": "Pour le calcul des indices de capacité de gage",
+    "tolTypeInRad": "Tolérance - saisissez une valeur",
+    "tolVariableRad": "Tolérance - utilisez une colonne (la moyenne de la colonne est utilisée)",
+    "resTypeInRad": "Résolution de gage - saisissez une valeur",
+    "resVariableRad": "Résolution de gage - utilisez une colonne (la moyenne de la colonne est utilisée)",
     "tolerance": "Tolérance - valeur numérique pour la tolérance",
+    "tolVarbox": "Sélectionnez la variable pour la tolérance (la moyenne de la colonne est utilisée)",
+    "resVarbox": "Sélectionnez la variable pour la résolution de gage (la moyenne de la colonne est utilisée)",
     "gageResolution": "Résolution de gage",
     "historicalStdv": "Écart type historique du processus",
     "useHistStdDevProcVarChk": "Utiliser l'écart type historique pour calculer RF (Figure de référence)",
@@ -27,10 +38,11 @@
     "showReferenceLineChk": "Afficher la ligne de référence sur le graphique de contrôle",
     "showReferenceToleranceLineChk": "Afficher les lignes de référence avec les limites de tolérance",
     "showMRChartChk": "Afficher le graphique MR",
-    "I_XbarOne_Stddev": "Graphique de contrôle - méthode de l'écart type à utiliser",
+    "I_XbarOne_Stddev": "Graphique de contrôle - méthode d'écart type à utiliser",
     "help": {
       "title": "Analyse de biais de gage",
       "r_help": "help(lm, package = stats)",
-      "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer une analyse de biais de linéarité\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser les fichiers de jeu de données d'exemple linearityBias.xlsx. Ouvrez les fichiers dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tChoisissez les variables dans la boîte de sélection, Référence et Mesure\n\t\t\t\t<br/>\n\t\t\t"
+      "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction pour effectuer une analyse de biais de linéarité\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser les fichiers de jeu de données d'exemple linearityBias.xlsx. Ouvrez les fichiers dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tChoisissez les variables dans la boîte de sélection, Référence et Mesure\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolérance et Résolution de Gage</b><br/>\n\t\t\t\tLa tolérance et la résolution de gage ont chacune leur propre choix : saisissez une valeur, ou choisissez l'option colonne et faites glisser une colonne numérique dans sa boîte. Avec l'option colonne, la moyenne des valeurs non manquantes de la colonne est utilisée comme tolérance ou résolution de gage.\n\t\t\t\t<br/>\n\t\t\t"
     }
+  }
 }

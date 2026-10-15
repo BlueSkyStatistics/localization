@@ -1,20 +1,31 @@
 {
+  "language": {
+    "language": "spanish",
+    "key": "es"
+  },
+  "original_json": {
     "title": "Análisis de sesgo de gage",
     "navigation": "Análisis de sesgo de gage",
     "variablePartSelcted": "Seleccione la variable para muestra/parte",
-    "variableRefSelcted": "Seleccione la variable para el valor de referencia/estándar",
+    "variableRefSelcted": "Seleccione la variable para valor de referencia/estándar",
     "label1": "Seleccione al menos uno, ya sea la medición/respuesta o el sesgo",
     "variableRespSelcted": "Seleccione la variable para medición/respuesta",
     "variableBiasSelcted": "Seleccione la variable para sesgo",
-    "includeLinearityStudyChk": "Incluir estudio de linealidad además del estudio Tipo 1",
+    "includeLinearityStudyChk": "Incluir estudio de linealidad además del estudio tipo 1",
     "stdevMethodLabel": "Método a utilizar para estimar la desviación estándar de repetibilidad",
     "selectSampleRangeMethodRad": "Método de rango de muestra (predeterminado)",
     "selectSampleStdDevMethodRad": "Método de desviación estándar de muestra",
-    "label2": "Para calcular índices de capacidad del gage",
+    "label2": "Para calcular índices de capacidad de gage",
+    "tolTypeInRad": "Tolerancia - escriba un valor",
+    "tolVariableRad": "Tolerancia - use una columna (se utiliza la media de la columna)",
+    "resTypeInRad": "Resolución de gage - escriba un valor",
+    "resVariableRad": "Resolución de gage - use una columna (se utiliza la media de la columna)",
     "tolerance": "Tolerancia - valor numérico para la tolerancia",
-    "gageResolution": "Resolución del gage",
-    "historicalStdv": "Desviación estándar histórica del proceso",
-    "useHistStdDevProcVarChk": "Usar desviación estándar histórica para calcular RF (Figura de referencia)",
+    "tolVarbox": "Seleccione la variable para tolerancia (se utiliza la media de la columna)",
+    "resVarbox": "Seleccione la variable para resolución de gage (se utiliza la media de la columna)",
+    "gageResolution": "Resolución de gage",
+    "historicalStdv": "Desviación estándar del proceso histórico",
+    "useHistStdDevProcVarChk": "Utilizar desviación estándar histórica para calcular RF (Figura de referencia)",
     "showPValuetChk": "Mostrar valor p en la tabla de sesgo de gage",
     "facCg": "Factor para calcular Cg (predeterminado 0.2)",
     "facCgk": "Factor para calcular Cgk (predeterminado 0.1)",
@@ -31,6 +42,7 @@
     "help": {
       "title": "Análisis de sesgo de gage",
       "r_help": "help(lm, package = stats)",
-      "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar análisis de sesgo de linealidad\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar los archivos de conjunto de datos de muestra linearityBias.xlsx. Abra los archivos en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\tElija las variables del cuadro de selección, Referencia y Medición\n\t\t\t\t<br/>\n\t\t\t"
+      "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tFunción para realizar análisis de sesgo de linealidad\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara la ayuda detallada - use R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPara probar esto, puede usar los archivos de conjunto de datos de muestra linearityBias.xlsx. Abra los archivos en la cuadrícula de datos con el menú de abrir archivo\n\t\t\t\t<br/>\n\t\t\t\tElija las variables del cuadro de selección, Referencia y Medición\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolerancia y Resolución de Gage</b><br/>\n\t\t\t\tTolerancia y Resolución de Gage cada una tiene su propia opción: escriba un valor, o elija la opción de columna y arrastre una columna numérica a su cuadro. Con la opción de columna, se utiliza la media de los valores no faltantes de la columna como la tolerancia o la resolución de gage.\n\t\t\t\t<br/>\n\t\t\t"
     }
+  }
 }
