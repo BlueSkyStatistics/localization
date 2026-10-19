@@ -6278,13 +6278,13 @@
     "toleranceIntervalCapabilityPro": {
         "dialog": "Tolerance Interval Capability",
         "menu": "SIX SIGMA",
-        "outcome": "Computes the sample-size-aware k-factor for a one-sided tolerance limit and the capability needed (or achieved, from observed mean and SD entered directly or computed from a dataset variable) so that a stated proportion of the population clears a spec limit with a given confidence.",
+        "outcome": "Computes the sample-size-aware k-factor for a one-sided (lower or upper) or two-sided tolerance limit, with a choice of k-factor method, and the capability needed (or achieved, from observed mean and SD entered directly or computed from a dataset variable) so that a stated proportion of the population stays within spec with a given confidence.",
         "typicalQuestion": "Given n measurements, how far must my mean be from the spec limit so that at least p% of the population clears it with the stated confidence?",
         "dataType": "Summary inputs (sample size, confidence, reliability, limit) plus either entered mean and SD or an optional numeric dataset variable",
         "predictorType": "N/A",
         "numberOfGroups": "1",
         "pairedIndependent": "N/A",
-        "mainAssumptions": "Approximately normal population; one-sided specification limit",
+        "mainAssumptions": "Approximately normal population; one-sided or two-sided specification limit(s)",
         "resultMeaning": "The k-factor, capability needed, and when observed mean and SD are supplied, the achieved tolerance limit, capability ratio C with PASS/FAIL, and a capability chart."
     },
     "createMixtureDesignPro": {
@@ -6322,5 +6322,17 @@
         "pairedIndependent": "N/A",
         "mainAssumptions": "Existing runs sum to the same Total; component bounds reflect the feasible region; enough total runs for the target model",
         "resultMeaning": "A new design dataset containing the original runs plus the added D-optimal runs."
+    },
+    "stressStrengthReliabilityNonNormalPro": {
+        "dialog": "Stress-Strength Reliability (Non-normal)",
+        "menu": "SIX SIGMA",
+        "outcome": "Estimates reliability R = P(Strength > Stress) when strength and stress each follow their own distribution (Normal, Lognormal, Weibull, Gamma, Exponential, Logistic, or Log-logistic), by numerical integration, with optional stress bounds and Monte Carlo validation.",
+        "typicalQuestion": "What fraction of parts will not fail when strength and stress are not normally distributed?",
+        "dataType": "Distribution parameters entered directly, or numeric strength and stress variables from the dataset",
+        "predictorType": "N/A - reliability calculation",
+        "numberOfGroups": "2 (strength and stress)",
+        "pairedIndependent": "Independent",
+        "mainAssumptions": "Strength and stress are independent; the chosen distributions and parameters fit the data",
+        "resultMeaning": "Reliability R and failure probability 1 - R, plus the closed-form result when both are Normal and an optional Monte Carlo check."
     }
 }
