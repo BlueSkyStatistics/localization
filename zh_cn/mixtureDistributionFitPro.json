@@ -1,0 +1,26 @@
+{
+  "title": "混合/截断分布拟合",
+  "navigation": "分布混合/截断拟合",
+  "variableSelected": "选择一个包含分布的变量",
+  "label1": "拟合正态分布的混合（例如双峰数据）、截断正态分布或两者的组合（截断混合）。对于单一的、非截断的、非混合分布，使用 '分布拟合 P 值' 对话框。",
+  "mixtureChk": "作为正态分布的混合拟合（例如双峰数据）",
+  "ncomponents": "组件数量（在下面选择 '固定组件数量' 时使用）",
+  "mixtureEngineLabel": "组件计数选择（如果下面选中 '截断'，或如果上面未选中 '作为混合拟合'，则忽略）",
+  "mixtoolsEngine": "固定组件数量（您在上面指定数量）",
+  "autoEngine": "自动选择组件数量（通过 mixtools 尝试 2 直到下面的最大值，保持最低 BIC）",
+  "maxComponentsAuto": "考虑的最大组件数量（仅限自动选择）",
+  "truncateChk": "截断分布（值是有界的）",
+  "lowerBound": "下界（留空表示 -Infinity）",
+  "upperBound": "上界（留空表示 +Infinity）",
+  "startingMeans": "每个组件的起始均值，逗号分隔（可选 - 留空以自动初始化）",
+  "seed": "设置种子",
+  "maxit": "最大迭代次数",
+  "bootSEChk": "计算自助法标准误差（仅限 mixtools 引擎，增加计算时间）",
+  "bootReps": "自助法重复次数",
+  "plotChk": "显示带有拟合密度叠加的直方图",
+  "help": {
+    "title": "混合/截断分布拟合",
+    "r_help": "help(normalmixEM, package = 'mixtools')",
+    "body": "\n            <b>描述</b></br>\n            在此对话框中通过两个复选框选择四种场景之一，拟合正态分布：\n            <ul>\n            <li><b>均未选中</b>: 单一的、非截断的正态分布（为完整性提供；'分布拟合 P 值' 对话框为此情况和许多其他分布族提供正式的 KS/CvM/AD 拟合优度 p 值，是单一分布拟合的更好选择）。</li>\n            <li><b>仅混合</b>: 两个或更多正态分布的混合（例如双峰、三峰数据），通过 EM 算法拟合，使用 <code>mixtools::normalmixEM</code>。您可以自己固定组件数量，或让对话框尝试多个组件计数并保留最低 BIC 的那个。</li>\n            <li><b>仅截断</b>: 限制在有界范围内的单一正态分布（超出界限的值不能出现），通过直接最大似然拟合，使用 <code>truncnorm</code> 的截断正态密度。</li>\n            <li><b>均已选中</b>: 正态分布的混合，所有分布共享相同的有界范围（例如，双峰过程，其中某些限制下/上的值不能物理出现）。此情况没有现成的 CRAN 函数，因此通过直接最大似然拟合：自定义的截断正态混合的对数似然，使用 <code>stats::optim</code> 优化。</li>\n            </ul>\n            <br/>\n            <b>注意 1</b>: <code>mixtools</code> 不支持截断数据。如果选中 '截断'，则下面的组件计数选择将被忽略，改为使用自定义优化路径。<br/>\n            <b>注意 2</b>: EM 算法（mixtools）和直接优化（截断情况）如果从真实值远离开始，可能会收敛到较差的局部最优，尤其是当组件数量超过 2 时。如果结果看起来不正确，或者优化器报告非零收敛代码，请尝试提供明确的起始均值，或不同的种子。自动组件计数选择出于同样的原因对每个组件计数运行几次随机重启。<br/>\n            <b>注意 3</b>: 此处混合/截断模型的拟合优度通过 AIC/BIC 和视觉密度叠加图进行评估，而不是通过 '分布拟合 P 值' 对话框中使用的 KS/CvM/AD p 值电池 - 这些测试假设单一、简单的分布形式，并且对于混合分布的定义不明确。<br/>\n            <b>注意 4</b>: 对于截断混合情况，参数在内部以无约束的尺度进行优化（标准差的对数尺度，以保持正值；混合权重的 softmax/logit 风格变换，以保持正值并总和为 1），并转换回显示。AIC/BIC 是从优化的对数似然手动计算的，而不是通过包提供的方法，因为没有单个包函数覆盖此确切模型。\n            <br/><br/>\n            <b>用法</b>\n            <br/>\n            <code>\n            mixtools::normalmixEM(x, k, mu, sigma, lambda, maxit, epsilon)<br/>\n            truncnorm::dtruncnorm(x, a, b, mean, sd)<br/>\n            stats::optim(par, fn, method, control)\n            </code> <br/>\n            <b>参数</b><br/>\n            <ul>\n            <li>x: 上面选择的数值变量，缺失值已被移除。</li>\n            <li>k: 混合组件的数量（固定，或在自动选择期间尝试的值）。</li>\n            <li>mu, sigma, lambda: 组件均值、标准差和混合权重的起始值（mixtools）。</li>\n            <li>a, b: 截断下界和上界（truncnorm）；如果留空则为 -Inf/Inf。</li>\n            <li>par, fn: 起始参数向量和被最小化的负对数似然函数（optim）。</li>\n            </ul>\n            <b>值</b><br/>\n            拟合组件参数的表（权重、均值、每个组件的标准差）、模型拟合统计的表（对数似然、AIC、BIC、N）、按最可能组件的观察计数的表（混合情况），以及如果请求，带有拟合密度（和每个组件的密度）叠加的直方图。\n            <br/>\n            <b>包</b></br>\n            mixtools, truncnorm</br>\n            <b>帮助</b></br>\n            help(normalmixEM, package = 'mixtools'), help(dtruncnorm, package = 'truncnorm')\n            <br/><br/>\n            <b>关于包选择的说明</b><br/>\n            <code>bbmle</code> 被考虑用于截断混合情况（它为自定义最大似然拟合提供了更好的 <code>summary()</code>/<code>confint()</code> 包装），但其接口期望固定的、命名的参数集，这与您选择的组件数量变化的混合不匹配。为了避免强制拟合，此对话框直接使用 <code>stats::optim</code>（始终可用，无额外依赖），并手动从优化的对数似然计算 AIC/BIC - 这种方法在其他不原生报告每个拟合统计的模型中已经使用。<br/><br/>\n            <code>mclust</code> 被考虑用于自动“最佳组件数量”选择（它在单个经过良好测试的调用中进行此搜索）。它被放弃，转而循环 <code>mixtools::normalmixEM</code> 以每个候选组件计数并手动比较 BIC：<code>mclust</code> 附带编译的 Fortran 源代码，安装它需要一个工作编译器工具链（Windows 上的 Rtools，Mac 上的 Xcode 命令行工具），这并不总是可用，这可能导致某些机器上的安装失败。<code>mixtools</code> 是纯 R，没有编译依赖，因此这种方法提供了相同的自动行为，并且安装更可靠。权衡：<code>mclust</code> 还在其搜索中比较等方差与不等方差组件结构，而此循环不这样做（它始终允许每个组件有自己的标准差），并且 <code>mclust</code> 的初始化通常比 EM 在较高组件计数下的随机重启更稳健。\n            "
+  }
+}
