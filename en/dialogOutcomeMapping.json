@@ -6334,5 +6334,17 @@
         "pairedIndependent": "Independent",
         "mainAssumptions": "Strength and stress are independent; the chosen distributions and parameters fit the data",
         "resultMeaning": "Reliability R and failure probability 1 - R, plus the closed-form result when both are Normal and an optional Monte Carlo check."
+    },
+    "mixtureDistributionFitPro": {
+        "dialog": "Mixture / Truncated Distribution Fit",
+        "menu": "ANALYSIS",
+        "outcome": "Fits a normal distribution, a mixture of two or more normal distributions (fixed or BIC-selected component count), a truncated normal, or a mixture of truncated normals to a numeric variable, with optional bootstrap standard errors and a fitted-density plot.",
+        "typicalQuestion": "Is my data bimodal or bounded, and what normal components (or truncated normal) best describe it?",
+        "dataType": "Numeric",
+        "predictorType": "N/A",
+        "numberOfGroups": "1",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Each component is approximately normal; truncation bounds reflect real physical limits; good starting values may be needed for 3+ components",
+        "resultMeaning": "Estimated component proportions, means and SDs (and bounds when truncated), log-likelihood/BIC, optional bootstrap SEs, and a histogram with the fitted density."
     }
 }
