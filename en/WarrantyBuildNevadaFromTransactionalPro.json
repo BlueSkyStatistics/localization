@@ -1,6 +1,7 @@
 {
     "title": "Build Nevada Table from Shipment and Repair Warranty Data",
     "navigation": "Build Nevada Table from Warranty Data",
+    "chkAge0Convention": "Age-0 convention (repairs begin in the same time as the shipment time)",
     "labelShipNote": "SHIPMENT dataset: set as the ACTIVE dataset before opening this dialog. Select your production date and delivered columns below.",
     "labelRepairNote": "REPAIR dataset: select from the dropdown below. Once selected its columns will appear for mapping.",
     "shipProdMonthCol": "Shipment: Select the Production date column",

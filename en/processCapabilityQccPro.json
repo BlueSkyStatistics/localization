@@ -35,6 +35,9 @@
     "addRefLines": "Add Reference Lines",
     "digits": "Digits - number of digits to display",
     "ppmTableChk": "Print Performance (parts per million) table",
+    "ciMethodBissellRad": "Method: Bissell normal approximation for all indices (default)",
+    "ciMethodExactRad": "Method: exact non-central t for one-sided indices (PPL, PPU, and Ppk/Cpk when only one spec limit is given); Bissell for two-sided Ppk/Cpk",
+    "ciTableChk": "Print confidence intervals (and one-sided lower bounds) for the capability indices (Pp, PPL, PPU, Ppk, Ppm, Cp, CPL, CPU, Cpk, Cpm) in a separate table - uses the confidence level specified above",
     "overlayCapabilityPlotsChk": "Overlay the Overall and Within (Potential) Process Capability plots on a single plot",
     "help": {
         "title": "Process Capability (qcc pkg)",

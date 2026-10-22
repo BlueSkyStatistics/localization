@@ -1,6 +1,7 @@
 {
     "title": "Reshape Nevada Warranty Data to Interval Censored Format",
     "navigation": "Reshape Nevada Warranty Data",
+    "chkAge0Convention": "Age-0 convention (repairs begin in the same time as the shipment time)",
     "varMonth": "Select the production/shipment month column (cohort label)",
     "varShipQty": "Select the units shipped / delivered (ShipQty) column",
     "varFailCols": "Select ALL failure-count columns in chronological order (earliest month first)",

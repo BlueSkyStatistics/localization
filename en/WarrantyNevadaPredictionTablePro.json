@@ -1,6 +1,7 @@
 {
     "title": "Warranty Failure Probabilities in Nevada Table",
     "navigation": "Warranty Nevada Prediction Table",
+    "chkAge0Convention": "Age-0 convention (repairs begin in the same time as the shipment time)",
     "labelModelSel": "Step 1 - Select fitted model(s)",
     "modelSelection": "Select one or more flexsurvreg models (one per sub-period). With a single model and no cut-offs, behaviour is identical to before. With multiple models, enter the same cut-off production periods used in Build Nevada so each model is correctly matched to its cohorts.",
     "subPeriodCutoffs": "Cut-off production periods -- enter ONE per model in the SAME ORDER as the models appear in the selection box. Each cut-off is the FIRST production period of that model's own sub-period. With N models enter N cut-offs (e.g. 3 models need 3 cut-offs: 202011, 202111, 202311 means period 1 starts at 202011, period 2 starts at 202111, period 3 starts at 202311). The software sorts all (model, cut-off) pairs chronologically -- visual selection order does not matter. Leave blank when using a single model.",
