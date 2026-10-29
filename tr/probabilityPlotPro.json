@@ -1,0 +1,32 @@
+{
+  "title": "Olasılık Grafiği",
+  "navigation": "Olasılık Grafiği",
+  "x": "Değişken(ler), sayısal değişken(ler)i belirtin",
+  "group": "Grupla (isteğe bağlı), bir kategori değişkeni belirtin",
+  "overlay": "Bir grafikte birden fazla değişkeni üst üste bindirin",
+  "showCI": "Güven aralığını göster",
+  "showTableOnPlot": "Grafikte parametreleri ve Anderson-Darling testini göster",
+  "showStatsTable": "Çıktıda parametreleri ve Anderson-Darling testini göster",
+  "alpha": "Opaklık (0-1)",
+  "size": "Nokta boyutu",
+  "distribution": "Dağılım",
+  "method": "Parametre tahmin yöntemi",
+  "ppos": "Grafikleme pozisyonu (medyan sıralama)",
+  "yscale": "Y ekseni ölçek türü",
+  "ciLevel": "Güven düzeyi (%)",
+  "ciType": "Güven aralığı türü",
+  "niter": "Anderson-Darling p-değeri için bootstrap yinelemeleri (0 = hesaplama yapma; varsayılan 600)",
+  "specify_a_title": "Bir başlık girin",
+  "x_title": "X Ekseni Etiketi",
+  "y_title": "Y Ekseni Etiketi",
+  "Facetrow": "Facet satırı",
+  "Facetcolumn": "Facet sütunu",
+  "Facetwrap": "Facet sarmalayıcı",
+  "Facetscale": "Facet ölçeği",
+  "facets_lbl": "Facetler",
+  "help": {
+    "title": "Olasılık Grafiği",
+    "r_help": "help(ggplot, package='ggplot2')",
+    "body": "\n            <b>Açıklama</b></br>\n            Bir olasılık grafiği (Minitab'daki gibi), bir değişkenin değerlerini X ekseninde ve karşılık gelen kümülatif yüzdeleri Y ekseninde gösterir. Y ekseni, veriler seçilen dağılımı takip ediyorsa, noktaların yaklaşık olarak düz bir çizgi üzerinde düşmesini sağlayacak şekilde ölçeklenmiştir. Grafik, bir dağılımın veriye ne kadar iyi uyduğunu değerlendirmek ve yüzdeleri tahmin etmek için kullanılır. Bu, her iki eksende de olasılıkların olduğu bir P-P grafiğinden (veya X ekseninde teorik kuantillerin olduğu bir Q-Q grafiğinden) farklıdır.\n            <br/>\n            <b>Seçenekler</b>\n            <br/>\n            <ul>\n            <li>Değişken(ler): bir veya daha fazla sayısal değişken. Varsayılan olarak her değişken için ayrı bir grafik çizilir. \"Bir grafikte birden fazla değişkeni üst üste bindirin\" seçeneğini işaretleyerek bunları tek bir grafikte çizebilirsiniz.</li>\n            <li>Grupla: isteğe bağlı bir kategori değişkeni. Her seviye ayrı ayrı uyum sağlanır ve farklı bir renk ve şekil ile gösterilir.</li>\n            <li>Dağılım: Normal, Lognormal, Weibull, Üstel, Lojistik, Loglojistik, En küçük aşırı değer, En büyük aşırı değer.</li>\n            <li>Parametre tahmin yöntemi: Maksimum olasılık veya En küçük kareler (veri değerlerinin grafikleme pozisyonlarına regresyonu).</li>\n            <li>Grafikleme pozisyonu: Medyan sıralama (Benard) (i-0.3)/(n+0.4), Ortalama sıralama i/(n+1), veya Hazen (i-0.5)/n.</li>\n            <li>Y ekseni ölçek türü: Yüzde, Olasılık veya Skor (seçilen dağılım tarafından kullanılan dönüştürülmüş değer, örneğin normal dağılım için z-skoru).</li>\n            <li>Güven aralığını göster: belirttiğiniz güven düzeyinde, uyumlu çizgi etrafında yaklaşık noktasal güven sınırları (iki taraflı, alt veya üst) çizer.</li>\n            <li>Facetler: seçilen değişken(ler)in her seviyesi için ayrı bir panel çizer. Her panel ayrı ayrı uyum sağlanır.</li>\n            </ul>\n            <b>Çıktı</b><br/>\n            Uyumlu çizgi, çizilen noktalar ve (isteğe bağlı olarak) güven sınırları grafikte çizilir. Tahmin edilen dağılım parametreleri, N, Anderson-Darling istatistiği (AD) ve p-değeri grafikte ve bir çıktı tablosu olarak gösterilebilir. Normal ve Lognormal (Maksimum olasılık) için p-değeri, nortest paketindeki Anderson-Darling testinden gelir. Diğer tüm durumlar (diğer dağılımlar veya En küçük kareler) için p-değeri, parametrik bir bootstrap p-değeridir: örnekler uyumlu dağılımdan simüle edilir, aynı yöntemle yeniden uyum sağlanır ve p-değeri, simüle edilen AD istatistiklerinin gözlemlenen değerden en az bu kadar büyük olanlarının payıdır. Yineleme sayısı Seçenekler'de ayarlanır (varsayılan 600, 0 = hesaplama yapma, bu durumda p-değeri NA olarak gösterilir). Sonuçların yeniden üretilebilir olması için sabit bir rastgele tohum (123) kullanılır. Çıktı tablosunun altında p-değerlerinin nasıl elde edildiğini belirten bir alt bilgi bulunur.<br/>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;nortest;</br>\n            <b>Yardım</b></br>\n            help(ggplot, package='ggplot2')</br>\n            Diğer: Ayrıntılı R yardımı almak için R Yardım düğmesine tıklayın. Ayrıca help(optim), help(ad.test), help(facet_wrap), help(facet_grid) yazarak yardım alabilirsiniz.</br>\n        "
+  }
+}

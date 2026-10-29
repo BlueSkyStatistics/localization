@@ -1,0 +1,32 @@
+{
+  "title": "Grafic de probabilitate",
+  "navigation": "Grafic de probabilitate",
+  "x": "Variabilă(variabile), specificați variabilă(variabile) numerică(e)",
+  "group": "Grupare după (opțional), specificați o variabilă de categorie",
+  "overlay": "Suprapuneți mai multe variabile într-un singur grafic",
+  "showCI": "Arată intervalul de încredere",
+  "showTableOnPlot": "Arată parametrii și testul Anderson-Darling pe grafic",
+  "showStatsTable": "Arată parametrii și testul Anderson-Darling în ieșire",
+  "alpha": "Opacitate (0-1)",
+  "size": "Dimensiunea punctului",
+  "distribution": "Distribuție",
+  "method": "Metodă de estimare a parametrilor",
+  "ppos": "Poziția graficului (rând median)",
+  "yscale": "Tipul scalei axei Y",
+  "ciLevel": "Nivel de încredere (%)",
+  "ciType": "Tipul intervalului de încredere",
+  "niter": "Iterații bootstrap pentru valoarea p Anderson-Darling (0 = nu se calculează; implicit 600)",
+  "specify_a_title": "Introduceți un titlu",
+  "x_title": "Eticheta axei X",
+  "y_title": "Eticheta axei Y",
+  "Facetrow": "Rând de fațete",
+  "Facetcolumn": "Coloană de fațete",
+  "Facetwrap": "Împachetare de fațete",
+  "Facetscale": "Scară de fațete",
+  "facets_lbl": "Fațete",
+  "help": {
+    "title": "Grafic de probabilitate",
+    "r_help": "help(ggplot, package='ggplot2')",
+    "body": "\n            <b>Descriere</b></br>\n            Un grafic de probabilitate (ca în Minitab) arată valorile unei variabile pe axa X și procentele cumulative corespunzătoare pe axa Y. Axa Y este scalată astfel încât, dacă datele urmează distribuția selectată, punctele să cadă aproximativ pe o linie dreaptă. Graficul este folosit pentru a evalua cât de bine se potrivește o distribuție cu datele și pentru a estima percentile. Acesta este diferit de un grafic P-P (probabilități pe ambele axe) și de un grafic Q-Q (quantile teoretice pe axa X).\n            <br/>\n            <b>Opțiuni</b>\n            <br/>\n            <ul>\n            <li>Variabilă(variabile): una sau mai multe variabile numerice. Implicit, se desenează un grafic separat pentru fiecare variabilă. Bifați \"Suprapuneți mai multe variabile într-un singur grafic\" pentru a le desena într-un singur grafic.</li>\n            <li>Grupare după: o variabilă de categorie opțională. Fiecare nivel este ajustat separat și arătat într-o culoare și formă diferită.</li>\n            <li>Distribuție: Normală, Lognormală, Weibull, Exponențială, Logistică, Loglogistică, Valoare extremă minimă, Valoare extremă maximă.</li>\n            <li>Metodă de estimare a parametrilor: Maximă verosimilitate sau Cele mai mici pătrate (regresia valorilor datelor pe pozițiile de grafic).</li>\n            <li>Poziția graficului: Rând median (Benard) (i-0.3)/(n+0.4), Rând mediu i/(n+1), sau Hazen (i-0.5)/n.</li>\n            <li>Tipul scalei axei Y: Percentaj, Probabilitate sau Scor (valoarea transformată utilizată de distribuția aleasă, de exemplu, scorul z pentru distribuția normală).</li>\n            <li>Arată intervalul de încredere: desenează limite de încredere aproximative punctuale (pe două părți, inferioare sau superioare) în jurul liniei ajustate la nivelul de încredere specificat.</li>\n            <li>Fațete: desenează un panou separat pentru fiecare nivel al variabilelor selectate. Fiecare panou este ajustat separat.</li>\n            </ul>\n            <b>Ieșire</b><br/>\n            Linia ajustată, punctele desenate și (opțional) limitele de încredere sunt desenate pe grafic. Parametrii estimati ai distribuției, N, statistica Anderson-Darling (AD) și valoarea sa p pot fi arătate pe grafic și ca un tabel de ieșire. Valoarea p pentru Normală și Lognormală (Maximă verosimilitate) provine din testul Anderson-Darling din pachetul nortest. Pentru toate celelalte cazuri (alte distribuții sau Cele mai mici pătrate) valoarea p este o valoare p bootstrap parametrică: eșantioanele sunt simulate din distribuția ajustată, reajustate cu aceeași metodă, iar valoarea p este partea de statistici AD simulate care sunt cel puțin la fel de mari ca cea observată. Numărul de iterații este setat în Opțiuni (implicit 600, 0 = nu se calculează, caz în care valoarea p apare ca NA). Se folosește o sămânță aleatoare fixă (123) astfel încât rezultatele să fie reproducibile. Un subsol sub tabelul de ieșire indică modul în care au fost obținute valorile p.<br/>\n            <b>Pachet</b></br>\n            ggplot2;ggthemes;nortest;</br>\n            <b>Ajutor</b></br>\n            help(ggplot, package='ggplot2')</br>\n            Alte: Faceți clic pe butonul Ajutor R pentru a obține ajutor detaliat R. De asemenea, puteți introduce help(optim), help(ad.test), help(facet_wrap), help(facet_grid)</br>\n        "
+  }
+}

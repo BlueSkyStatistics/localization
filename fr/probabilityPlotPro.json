@@ -1,0 +1,32 @@
+{
+  "title": "Graphique de probabilité",
+  "navigation": "Graphique de probabilité",
+  "x": "Variable(s), spécifiez la ou les variables numériques",
+  "group": "Grouper par (optionnel), spécifiez une variable de catégorie",
+  "overlay": "Superposer plusieurs variables dans un seul graphique",
+  "showCI": "Afficher l'intervalle de confiance",
+  "showTableOnPlot": "Afficher les paramètres et le test d'Anderson-Darling sur le graphique",
+  "showStatsTable": "Afficher les paramètres et le test d'Anderson-Darling dans la sortie",
+  "alpha": "Opacité (0-1)",
+  "size": "Taille des points",
+  "distribution": "Distribution",
+  "method": "Méthode d'estimation des paramètres",
+  "ppos": "Position de traçage (rang médian)",
+  "yscale": "Type d'échelle de l'axe Y",
+  "ciLevel": "Niveau de confiance (%)",
+  "ciType": "Type d'intervalle de confiance",
+  "niter": "Itérations de bootstrap pour la valeur p d'Anderson-Darling (0 = ne pas calculer ; par défaut 600)",
+  "specify_a_title": "Entrez un titre",
+  "x_title": "Étiquette de l'axe X",
+  "y_title": "Étiquette de l'axe Y",
+  "Facetrow": "Ligne de facette",
+  "Facetcolumn": "Colonne de facette",
+  "Facetwrap": "Enveloppe de facette",
+  "Facetscale": "Échelle de facette",
+  "facets_lbl": "Facettes",
+  "help": {
+    "title": "Graphique de probabilité",
+    "r_help": "help(ggplot, package='ggplot2')",
+    "body": "\n            <b>Description</b></br>\n            Un graphique de probabilité (comme dans Minitab) montre les valeurs d'une variable sur l'axe X et les pourcentages cumulés correspondants sur l'axe Y. L'axe Y est mis à l'échelle de sorte que, si les données suivent la distribution sélectionnée, les points tombent approximativement sur une ligne droite. Le graphique est utilisé pour évaluer à quel point une distribution s'adapte aux données et pour estimer les percentiles. Cela est différent d'un graphique P-P (probabilités sur les deux axes) et d'un graphique Q-Q (quantiles théoriques sur l'axe X).\n            <br/>\n            <b>Options</b>\n            <br/>\n            <ul>\n            <li>Variable(s) : une ou plusieurs variables numériques. Par défaut, un graphique séparé est tracé pour chaque variable. Cochez \"Superposer plusieurs variables dans un seul graphique\" pour les tracer dans un seul graphique.</li>\n            <li>Grouper par : une variable de catégorie optionnelle. Chaque niveau est ajusté séparément et montré dans une couleur et une forme différentes.</li>\n            <li>Distribution : Normale, Lognormale, Weibull, Exponentielle, Logistique, Loglogistique, Plus petite valeur extrême, Plus grande valeur extrême.</li>\n            <li>Méthode d'estimation des paramètres : Maximum de vraisemblance ou Moindres carrés (régression des valeurs de données sur les positions de traçage).</li>\n            <li>Position de traçage : Rang médian (Benard) (i-0.3)/(n+0.4), Rang moyen i/(n+1), ou Hazen (i-0.5)/n.</li>\n            <li>Type d'échelle de l'axe Y : Pourcentage, Probabilité ou Score (la valeur transformée utilisée par la distribution choisie, par exemple, le score z pour la distribution normale).</li>\n            <li>Afficher l'intervalle de confiance : trace des limites de confiance ponctuelles approximatives (bilatérales, inférieures ou supérieures) autour de la ligne ajustée au niveau de confiance que vous spécifiez.</li>\n            <li>Facettes : trace un panneau séparé pour chaque niveau des variables sélectionnées. Chaque panneau est ajusté séparément.</li>\n            </ul>\n            <b>Sortie</b><br/>\n            La ligne ajustée, les points tracés et (optionnellement) les limites de confiance sont tracés sur le graphique. Les paramètres de distribution estimés, N, la statistique d'Anderson-Darling (AD) et sa valeur p peuvent être affichés sur le graphique et dans un tableau de sortie. La valeur p pour Normale et Lognormale (Maximum de vraisemblance) provient du test d'Anderson-Darling dans le package nortest. Pour tous les autres cas (autres distributions, ou Moindres carrés), la valeur p est une valeur p bootstrap paramétrique : des échantillons sont simulés à partir de la distribution ajustée, réajustés avec la même méthode, et la valeur p est la part des statistiques AD simulées qui sont au moins aussi grandes que celle observée. Le nombre d'itérations est défini dans Options (par défaut 600, 0 = ne pas calculer, auquel cas la valeur p apparaît comme NA). Une graine aléatoire fixe (123) est utilisée afin que les résultats soient reproductibles. Un pied de page sous le tableau de sortie indique comment les valeurs p ont été obtenues.<br/>\n            <b>Package</b></br>\n            ggplot2;ggthemes;nortest;</br>\n            <b>Aide</b></br>\n            help(ggplot, package='ggplot2')</br>\n            Autre : Cliquez sur le bouton Aide R pour obtenir une aide détaillée sur R. Vous pouvez également entrer help(optim), help(ad.test), help(facet_wrap), help(facet_grid)</br>\n        "
+  }
+}

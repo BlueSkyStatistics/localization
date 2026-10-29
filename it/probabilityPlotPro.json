@@ -1,0 +1,32 @@
+{
+  "title": "Grafico di Probabilità",
+  "navigation": "Grafico di Probabilità",
+  "x": "Variabile(i), specificare variabile(i) numerica(e)",
+  "group": "Raggruppa per (opzionale), specificare una variabile di categoria",
+  "overlay": "Sovrapponi più variabili in un unico grafico",
+  "showCI": "Mostra intervallo di confidenza",
+  "showTableOnPlot": "Mostra parametri e test di Anderson-Darling sul grafico",
+  "showStatsTable": "Mostra parametri e test di Anderson-Darling nell'output",
+  "alpha": "Opacità (0-1)",
+  "size": "Dimensione del punto",
+  "distribution": "Distribuzione",
+  "method": "Metodo di stima dei parametri",
+  "ppos": "Posizione di tracciamento (rango mediano)",
+  "yscale": "Tipo di scala dell'asse Y",
+  "ciLevel": "Livello di confidenza (%)",
+  "ciType": "Tipo di intervallo di confidenza",
+  "niter": "Iterazioni bootstrap per il valore p di Anderson-Darling (0 = non calcolare; predefinito 600)",
+  "specify_a_title": "Inserisci un titolo",
+  "x_title": "Etichetta dell'asse X",
+  "y_title": "Etichetta dell'asse Y",
+  "Facetrow": "Riga di Facet",
+  "Facetcolumn": "Colonna di Facet",
+  "Facetwrap": "Avvolgimento di Facet",
+  "Facetscale": "Scala di Facet",
+  "facets_lbl": "Facets",
+  "help": {
+    "title": "Grafico di Probabilità",
+    "r_help": "help(ggplot, package='ggplot2')",
+    "body": "\n            <b>Descrizione</b></br>\n            Un grafico di probabilità (come in Minitab) mostra i valori di una variabile sull'asse X e le percentuali cumulative corrispondenti sull'asse Y. L'asse Y è scalato in modo tale che, se i dati seguono la distribuzione selezionata, i punti cadono approssimativamente su una retta. Il grafico viene utilizzato per valutare quanto bene una distribuzione si adatta ai dati e per stimare i percentili. Questo è diverso da un grafico P-P (probabilità su entrambi gli assi) e da un grafico Q-Q (quantili teorici sull'asse X).\n            <br/>\n            <b>Opzioni</b>\n            <br/>\n            <ul>\n            <li>Variabile(i): una o più variabili numeriche. Per impostazione predefinita, viene tracciato un grafico separato per ogni variabile. Seleziona \"Sovrapponi più variabili in un unico grafico\" per tracciarle in un unico grafico.</li>\n            <li>Raggruppa per: una variabile di categoria opzionale. Ogni livello è adattato separatamente e mostrato in un colore e forma diversi.</li>\n            <li>Distribuzione: Normale, Lognormale, Weibull, Esponenziale, Logistico, Loglogistico, Valore estremo minimo, Valore estremo massimo.</li>\n            <li>Metodo di stima dei parametri: Massima verosimiglianza o Minimi quadrati (regressione dei valori dei dati sulle posizioni di tracciamento).</li>\n            <li>Posizione di tracciamento: Rango mediano (Benard) (i-0.3)/(n+0.4), Rango medio i/(n+1), o Hazen (i-0.5)/n.</li>\n            <li>Tipo di scala dell'asse Y: Percentuale, Probabilità o Punteggio (il valore trasformato utilizzato dalla distribuzione scelta, ad es. il punteggio z per la distribuzione normale).</li>\n            <li>Mostra intervallo di confidenza: disegna limiti di confidenza puntuali approssimativi (bilaterali, inferiori o superiori) attorno alla linea adattata al livello di confidenza che specifichi.</li>\n            <li>Facets: disegna un pannello separato per ogni livello delle variabili selezionate. Ogni pannello è adattato separatamente.</li>\n            </ul>\n            <b>Output</b><br/>\n            La linea adattata, i punti tracciati e (opzionalmente) i limiti di confidenza sono disegnati sul grafico. I parametri di distribuzione stimati, N, la statistica di Anderson-Darling (AD) e il suo valore p possono essere mostrati sul grafico e come tabella di output. Il valore p per Normale e Lognormale (Massima verosimiglianza) proviene dal test di Anderson-Darling nel pacchetto nortest. Per tutti gli altri casi (altre distribuzioni, o Minimi quadrati) il valore p è un valore p bootstrap parametrico: i campioni sono simulati dalla distribuzione adattata, riadattati con lo stesso metodo, e il valore p è la quota di statistiche AD simulate che sono almeno grandi quanto quella osservata. Il numero di iterazioni è impostato nelle Opzioni (predefinito 600, 0 = non calcolare, nel qual caso il valore p appare come NA). Viene utilizzato un seme casuale fisso (123) in modo che i risultati siano riproducibili. Un piè di pagina sotto la tabella di output indica come sono stati ottenuti i valori p.<br/>\n            <b>Pacchetto</b></br>\n            ggplot2;ggthemes;nortest;</br>\n            <b>Aiuto</b></br>\n            help(ggplot, package='ggplot2')</br>\n            Altro: Clicca sul pulsante Aiuto R per ottenere aiuto dettagliato su R. Puoi anche inserire help(optim), help(ad.test), help(facet_wrap), help(facet_grid)</br>\n        "
+  }
+}

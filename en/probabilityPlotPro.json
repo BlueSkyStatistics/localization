@@ -1,0 +1,32 @@
+{
+    "title": "Probability Plot",
+    "navigation": "Probability Plot",
+    "x": "Variable(s), specify numeric variable(s)",
+    "group": "Group by (optional), specify a category variable",
+    "overlay": "Overlay multiple variables in a single plot",
+    "showCI": "Show confidence interval",
+    "showTableOnPlot": "Show parameters and Anderson-Darling test on plot",
+    "showStatsTable": "Show parameters and Anderson-Darling test in output",
+    "alpha": "Opacity (0-1)",
+    "size": "Point size",
+    "distribution": "Distribution",
+    "method": "Parameter estimation method",
+    "ppos": "Plotting position (median rank)",
+    "yscale": "Y-axis scale type",
+    "ciLevel": "Confidence level (%)",
+    "ciType": "Confidence interval type",
+    "niter": "Bootstrap iterations for the Anderson-Darling p-value (0 = do not compute; default 600)",
+    "specify_a_title": "Enter a title",
+    "x_title": "X Axis Label",
+    "y_title": "Y Axis Label",
+    "Facetrow": "Facet row",
+    "Facetcolumn": "Facet column",
+    "Facetwrap": "Facet wrap",
+    "Facetscale": "Facet scale",
+    "facets_lbl": "Facets",
+    "help": {
+        "title": "Probability Plot",
+        "r_help": "help(ggplot, package='ggplot2')",
+        "body": "\n            <b>Description</b></br>\n            A probability plot (as in Minitab) shows the values of a variable on the X axis and the corresponding cumulative percentages on the Y axis. The Y axis is scaled so that, if the data follow the selected distribution, the points fall approximately on a straight line. The plot is used to assess how well a distribution fits the data and to estimate percentiles. This is different from a P-P plot (probabilities on both axes) and from a Q-Q plot (theoretical quantiles on the X axis).\n            <br/>\n            <b>Options</b>\n            <br/>\n            <ul>\n            <li>Variable(s): one or more numeric variables. By default a separate plot is drawn for every variable. Check \"Overlay multiple variables in a single plot\" to draw them in one plot.</li>\n            <li>Group by: an optional category variable. Each level is fitted separately and shown in a different color and shape.</li>\n            <li>Distribution: Normal, Lognormal, Weibull, Exponential, Logistic, Loglogistic, Smallest extreme value, Largest extreme value.</li>\n            <li>Parameter estimation method: Maximum likelihood or Least squares (regression of the data values on the plotting positions).</li>\n            <li>Plotting position: Median rank (Benard) (i-0.3)/(n+0.4), Mean rank i/(n+1), or Hazen (i-0.5)/n.</li>\n            <li>Y-axis scale type: Percent, Probability or Score (the transformed value used by the chosen distribution, e.g. the z-score for the normal distribution).</li>\n            <li>Show confidence interval: draws approximate pointwise confidence limits (two-sided, lower or upper) around the fitted line at the confidence level that you specify.</li>\n            <li>Facets: draws a separate panel for each level of the selected variable(s). Each panel is fitted separately.</li>\n            </ul>\n            <b>Output</b><br/>\n            The fitted line, the plotted points and (optionally) confidence limits are drawn on the plot. The estimated distribution parameters, N, the Anderson-Darling statistic (AD) and its p-value can be shown on the plot and as an output table. The p-value for Normal and Lognormal (Maximum likelihood) comes from the Anderson-Darling test in the nortest package. For all other cases (other distributions, or Least squares) the p-value is a parametric bootstrap p-value: samples are simulated from the fitted distribution, refitted with the same method, and the p-value is the share of simulated AD statistics that are at least as large as the observed one. The number of iterations is set in Options (default 600, 0 = do not compute, in which case the p-value shows as NA). A fixed random seed (123) is used so results are reproducible. A footer under the output table states how the p-values were obtained.<br/>\n            <b>Package</b></br>\n            ggplot2;ggthemes;nortest;</br>\n            <b>Help</b></br>\n            help(ggplot, package='ggplot2')</br>\n            Other: Click the R Help button to get detailed R help. You can also enter help(optim), help(ad.test), help(facet_wrap), help(facet_grid)</br>\n        "
+    }
+}
