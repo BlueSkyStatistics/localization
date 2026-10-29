@@ -6346,5 +6346,29 @@
         "pairedIndependent": "N/A",
         "mainAssumptions": "Each component is approximately normal; truncation bounds reflect real physical limits; good starting values may be needed for 3+ components",
         "resultMeaning": "Estimated component proportions, means and SDs (and bounds when truncated), log-likelihood/BIC, optional bootstrap SEs, and a histogram with the fitted density."
+    },
+    "MoodsMedianTestPro": {
+        "dialog": "Mood's Median Test",
+        "menu": "ANALYSIS",
+        "outcome": "Nonparametric test of whether two or more independent groups have the same population median, using a chi-square test on counts above and at-or-below the grand median, with per-group medians, IQRs and median confidence intervals.",
+        "typicalQuestion": "Do the medians of these groups differ, without assuming normality?",
+        "dataType": "Numeric response with a categorical grouping variable",
+        "predictorType": "Group (factor)",
+        "numberOfGroups": "2+",
+        "pairedIndependent": "Independent",
+        "mainAssumptions": "Independent observations; groups have similarly shaped distributions; enough observations per group for the chi-square approximation",
+        "resultMeaning": "Chi-square statistic, DF and p-value for equal medians, a descriptive table per group, and an optional boxplot."
+    },
+    "probabilityPlotPro": {
+        "dialog": "Probability Plot",
+        "menu": "GRAPHICS",
+        "outcome": "Plots data values against cumulative percentages on a distribution-scaled axis (Normal, Lognormal, Weibull, Exponential, Logistic, Loglogistic, smallest or largest extreme value) so points fall on a straight line if the distribution fits, with fitted line, confidence bands and optional grouping or overlay.",
+        "typicalQuestion": "Does my data follow this distribution, and what are its estimated percentiles?",
+        "dataType": "One or more numeric variables, optional grouping variable",
+        "predictorType": "N/A - distribution fit visualization",
+        "numberOfGroups": "1+ (optional grouping)",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Independent observations; the chosen distribution is a plausible candidate",
+        "resultMeaning": "A probability plot per variable or group with fitted line and confidence bands, plus optional parameter and goodness-of-fit statistics."
     }
 }
