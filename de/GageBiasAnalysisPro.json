@@ -10,7 +10,7 @@
   "stdevMethodLabel": "Methode zur Schätzung der Wiederholgenauigkeit Std Dev",
   "selectSampleRangeMethodRad": "Stichprobenbereichsmethode (Standard)",
   "selectSampleStdDevMethodRad": "Stichprobenstandardabweichungsmethode",
-  "label2": "Zur Berechnung der Gage-Fähigkeitsindizes",
+  "label2": "Zur Berechnung der Gage-Fähigkeitsindizes (Sie müssen einen Toleranzwert angeben oder eine Variable auswählen, um die Toleranz als Durchschnitt zu berechnen)",
   "tolTypeInRad": "Toleranz - geben Sie einen Wert ein",
   "tolVariableRad": "Toleranz - verwenden Sie eine Spalte (Mittelwert der Spalte wird verwendet)",
   "resTypeInRad": "Gage-Auflösung - geben Sie einen Wert ein",
@@ -20,8 +20,8 @@
   "resVarbox": "Wählen Sie die Variable für die Gage-Auflösung aus (Mittelwert der Spalte wird verwendet)",
   "gageResolution": "Gage-Auflösung",
   "historicalStdv": "Historische Prozessstandardabweichung",
-  "useHistStdDevProcVarChk": "Verwenden Sie die historische Std Dev zur Berechnung RF (Referenzfigur)",
-  "showPValuetChk": "p-Wert in der Gage Bias-Tabelle anzeigen",
+  "useHistStdDevProcVarChk": "Verwenden Sie die historische Std Dev zur Berechnung von RF (Referenzfigur)",
+  "showPValuetChk": "p-Wert in der Gage-Bias-Tabelle anzeigen",
   "facCg": "Faktor zur Berechnung von Cg (Standard 0,2)",
   "facCgk": "Faktor zur Berechnung von Cgk (Standard 0,1)",
   "reqdPctBias": "Erforderlicher %Bias (Standard 0,05)",
@@ -35,7 +35,7 @@
   "showMRChartChk": "MR-Diagramm anzeigen",
   "I_XbarOne_Stddev": "Laufdiagramm - Standardabweichungsmethode, die verwendet werden soll",
   "help": {
-    "title": "Gage Bias Analyse",
+    "title": "Gage-Bias-Analyse",
     "r_help": "help(lm, package = stats)",
     "body": "\n\t\t\t\t<b>Beschreibung</b></br>\n\t\t\t\tFunktion zur Durchführung der Linearitätsverzerrungsanalyse\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tFür die detaillierte Hilfe - verwenden Sie R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tUm dies auszuprobieren, können Sie die Beispieldatensatzdateien linearityBias.xlsx verwenden. Öffnen Sie die Dateien im Datengitter mit dem Menü Datei öffnen\n\t\t\t\t<br/>\n\t\t\t\tWählen Sie die Variablen aus dem Auswahlfeld, Referenz und Messung\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Toleranz und Gage-Auflösung</b><br/>\n\t\t\t\tToleranz und Gage-Auflösung haben jeweils ihre eigene Wahl: geben Sie einen Wert ein oder wählen Sie die Spaltenoption und ziehen Sie eine numerische Spalte in ihr Feld. Mit der Spaltenoption wird der Mittelwert der nicht fehlenden Werte der Spalte als Toleranz oder Gage-Auflösung verwendet.\n\t\t\t\t<br/>\n\t\t\t"
   }
