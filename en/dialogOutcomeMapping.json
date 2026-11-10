@@ -4720,7 +4720,7 @@
         "menu": "SIX SIGMA (PRO)",
         "outcome": "Assesses measurement system bias by comparing measured values against known reference/standard values for a set of parts.",
         "typicalQuestion": "Is my measurement system biased relative to known reference/standard values?",
-        "dataType": "Part id, measured value, reference/standard value, optional bias variable",
+        "dataType": "Part id, measured value, reference/standard value, optional bias variable; tolerance and gage resolution typed in or taken as the mean of a column",
         "predictorType": "Part (grouping), measurement vs reference",
         "numberOfGroups": "N/A",
         "pairedIndependent": "Paired (measured vs reference per part)",
@@ -4821,7 +4821,7 @@
         "numberOfGroups": "2+ appraisers, 2+ parts",
         "pairedIndependent": "Repeated measures (each appraiser measures each part multiple times)",
         "mainAssumptions": "Parts and appraisers are representative of the process; measurements repeated per part/appraiser combination",
-        "resultMeaning": "Variance components (repeatability, reproducibility, part-to-part) and %GRR to judge measurement system adequacy."
+        "resultMeaning": "Variance components (repeatability, reproducibility, part-to-part) and %GRR to judge measurement system adequacy, with plots optionally bundled into one grid and the part axis optionally sorted."
     },
     "johnsonCapabilityPro": {
         "dialog": "Process Capability Analysis (non-normal data with Johnson Transformation)",
@@ -6285,7 +6285,7 @@
         "numberOfGroups": "1",
         "pairedIndependent": "N/A",
         "mainAssumptions": "Approximately normal population; one-sided or two-sided specification limit(s)",
-        "resultMeaning": "The k-factor, capability needed, and when observed mean and SD are supplied, the achieved tolerance limit, capability ratio C with PASS/FAIL, and a capability chart."
+        "resultMeaning": "The k-factor, capability needed, and when observed mean and SD are supplied, the achieved tolerance limit, capability ratio C with PASS/FAIL, and a capability chart/dashboard with a customizable title and subtitle."
     },
     "createMixtureDesignPro": {
         "dialog": "Create Mixture Design",
