@@ -1,0 +1,14 @@
+{
+  "title": "Prueba de Mediana de Mood",
+  "navigation": "Prueba de Mediana de Mood",
+  "variableSelcted": "Seleccione la variable de respuesta (numérica)",
+  "factorSelcted": "Seleccione la variable de factor (grupos a comparar)",
+  "confLevel": "Nivel de confianza para los intervalos de confianza de la mediana (entre 0 y 1, por defecto 0.95)",
+  "showBoxplotChk": "Mostrar boxplot de los grupos con la línea de mediana general",
+  "showPlotStatsChk": "Imprimir los valores de la mediana, Q1 y Q3 en el boxplot",
+  "help": {
+    "title": "Prueba de Mediana de Mood Pro",
+    "r_help": "help(chisq.test, package = stats)",
+    "body": "\n                <b>Descripción</b></br>\n                La prueba de mediana de Mood es una prueba no paramétrica para determinar si dos o más grupos independientes tienen la misma mediana poblacional.\n                <br/>\n                <br/>\n                <b>Cómo funciona</b><br/>\n                1. Se calcula la mediana general (grand) de todas las observaciones.<br/>\n                2. Para cada grupo, se cuentan las observaciones en o por debajo de la mediana general (N&lt;=) y por encima de ella (N&gt;).<br/>\n                3. Se realiza una prueba de chi-cuadrado de Pearson de asociación sobre la tabla resultante de grupos x 2. DF = número de grupos - 1.<br/>\n                <br/>\n                La hipótesis nula es que todas las medianas poblacionales son iguales. La hipótesis alternativa es que no todas las medianas poblacionales son iguales. Si el valor p es menor o igual a su nivel de significancia (por ejemplo 0.05), al menos una mediana de grupo difiere.\n                <br/>\n                <br/>\n                <b>Salida</b><br/>\n                <b>Estadísticas descriptivas</b> - para cada grupo y para todos los datos combinados: N, mediana, N&lt;=, N&gt;, el rango intercuartílico (Q3 - Q1) y un intervalo de confianza para la mediana. El intervalo de confianza es el intervalo de interpolación no lineal de la prueba de signo de una muestra. Para un grupo con menos de seis observaciones, el nivel de confianza alcanzado es inferior al nivel solicitado (reportado en el pie de la tabla).<br/>\n                <b>Prueba</b> - DF, estadístico chi-cuadrado y valor p.<br/>\n                <b>Boxplot</b> (opcional) - un box por grupo con una línea discontinua en la mediana general. Los bordes del box son Q1 y Q3 y la línea dentro del box es la mediana del grupo, calculada de la misma manera que en la tabla descriptiva. Las "
+  }
+}

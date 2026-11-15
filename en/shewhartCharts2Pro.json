@@ -16,6 +16,7 @@
     "rowsTobeUsed": "Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedAsNewData": "New Data - grouped Rows to be used as New Data to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12) - new data to plot but not included in the computations",
     "additionalPhasesLabel": "Specify data to Chart additional phases. You can use 'Grouped Rows' field above as Phase 1 data. Limited to max of 10 phases to be practical to plot on a single chart.",
+    "phaseVariable": "(Optional) Phase variable - a column whose distinct values define the phases (in order of first appearance, up to 10 phases). When selected, it is used instead of the 'Grouped Rows' and Phase 2-10 row input fields, and the values become the default phase names",
     "rowsTobeUsedPhase2": "Phase 2 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase3": "Phase 3 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",
     "rowsTobeUsedPhase4": "Phase 4 Grouped Rows to be used to Chart ( e.g.  specify as 1:25 or 1,4,5,7:12)",

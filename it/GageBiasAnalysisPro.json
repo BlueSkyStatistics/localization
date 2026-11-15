@@ -3,17 +3,17 @@
   "navigation": "Analisi del Bias del Gage",
   "variablePartSelcted": "Seleziona la variabile per campione/parte",
   "variableRefSelcted": "Seleziona la variabile per valore di riferimento/standard",
-  "label1": "Seleziona almeno uno, o la misurazione/riposta o il bias",
+  "label1": "Seleziona almeno uno, sia la misurazione/riposta che il bias",
   "variableRespSelcted": "Seleziona la variabile per misurazione/riposta",
   "variableBiasSelcted": "Seleziona la variabile per bias",
   "includeLinearityStudyChk": "Includi lo Studio di Linearità oltre allo Studio di Tipo 1",
   "stdevMethodLabel": "Metodo da utilizzare per stimare la deviazione standard di ripetibilità",
   "selectSampleRangeMethodRad": "Metodo dell'intervallo del campione (predefinito)",
   "selectSampleStdDevMethodRad": "Metodo della deviazione standard del campione",
-  "label2": "Per calcolare gli indici di capacità del gage",
-  "tolTypeInRad": "Tolleranza - inserisci un valore",
+  "label2": "Per calcolare gli indici di capacità del gage (Devi specificare un valore di Tolleranza o selezionare una variabile per calcolare la Tolleranza come media)",
+  "tolTypeInRad": "Tolleranza - digita un valore",
   "tolVariableRad": "Tolleranza - utilizza una colonna (la media della colonna è utilizzata)",
-  "resTypeInRad": "Risoluzione del Gage - inserisci un valore",
+  "resTypeInRad": "Risoluzione del Gage - digita un valore",
   "resVariableRad": "Risoluzione del Gage - utilizza una colonna (la media della colonna è utilizzata)",
   "tolerance": "Tolleranza - valore numerico per la tolleranza",
   "tolVarbox": "Seleziona la variabile per la tolleranza (la media della colonna è utilizzata)",
@@ -24,10 +24,10 @@
   "showPValuetChk": "Mostra il valore p nella tabella del Bias del Gage",
   "facCg": "Fattore per calcolare Cg (predefinito 0.2)",
   "facCgk": "Fattore per calcolare Cgk (predefinito 0.1)",
-  "reqdPctBias": "Bias % richiesto (predefinito 0.05)",
+  "reqdPctBias": "Percentuale %Bias richiesta (predefinito 0.05)",
   "reqdCapability": "Capacità richiesta (predefinito 1.33)",
-  "reqdPctRE": "RE % richiesto (predefinito 0.05)",
-  "reqdPctEV": "EV % richiesto (predefinito 0.10) - applicabile per lo studio di linearità",
+  "reqdPctRE": "Percentuale %RE richiesta (predefinito 0.05)",
+  "reqdPctEV": "Percentuale %EV richiesta (predefinito 0.10) - applicabile per lo studio di linearità",
   "alpha": "Intervallo di confidenza per la linearità (tra 0 e 1)",
   "showRunChartChk": "Mostra il Grafico di Esecuzione",
   "showReferenceLineChk": "Mostra la linea di riferimento sul Grafico di Esecuzione",
@@ -37,6 +37,6 @@
   "help": {
     "title": "Analisi del bias del gage",
     "r_help": "help(lm, package = stats)",
-    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione per eseguire l'analisi del bias di linearità\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - utilizza R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare i file di dataset di esempio linearityBias.xlsx. Apri i file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\tScegli le variabili dalla casella di selezione, Riferimento e Misurazione\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolleranza e Risoluzione del Gage</b><br/>\n\t\t\t\tTolleranza e Risoluzione del Gage hanno ciascuna la propria scelta: inserisci un valore, oppure scegli l'opzione colonna e trascina una colonna numerica nella sua casella. Con l'opzione colonna, la media dei valori non mancanti della colonna è utilizzata come tolleranza o risoluzione del gage.\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\tFunzione per eseguire l'analisi del bias di linearità\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer l'aiuto dettagliato - utilizza R help(lm, package = stats)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPer provare questo, puoi utilizzare i file di dataset di esempio linearityBias.xlsx. Apri i file nella griglia dei dati con il menu di apertura file\n\t\t\t\t<br/>\n\t\t\t\tScegli le variabili dalla casella di selezione, Riferimento e Misurazione\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t<b>Tolleranza e Risoluzione del Gage</b><br/>\n\t\t\t\tLa Tolleranza e la Risoluzione del Gage hanno ciascuna la propria scelta: digita un valore, oppure scegli l'opzione colonna e trascina una colonna numerica nella sua casella. Con l'opzione colonna, la media dei valori non mancanti della colonna è utilizzata come tolleranza o risoluzione del gage.\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

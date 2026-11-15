@@ -4041,7 +4041,7 @@
         "numberOfGroups": "2+ groups",
         "pairedIndependent": "N/A",
         "mainAssumptions": "Interval calculation (e.g. CI) assumes approximate Normality within each group",
-        "resultMeaning": "A plot of group means with interval bars, letting group differences and precision be compared visually."
+        "resultMeaning": "A plot of group means with interval bars, optionally labeled with the mean and the lower/upper interval values, letting group differences and precision be compared visually."
     },
     "scatterPlotPro": {
         "dialog": "Scatter Plot",
@@ -4720,7 +4720,7 @@
         "menu": "SIX SIGMA (PRO)",
         "outcome": "Assesses measurement system bias by comparing measured values against known reference/standard values for a set of parts.",
         "typicalQuestion": "Is my measurement system biased relative to known reference/standard values?",
-        "dataType": "Part id, measured value, reference/standard value, optional bias variable",
+        "dataType": "Part id, measured value, reference/standard value, optional bias variable; tolerance and gage resolution typed in or taken as the mean of a column",
         "predictorType": "Part (grouping), measurement vs reference",
         "numberOfGroups": "N/A",
         "pairedIndependent": "Paired (measured vs reference per part)",
@@ -4821,7 +4821,7 @@
         "numberOfGroups": "2+ appraisers, 2+ parts",
         "pairedIndependent": "Repeated measures (each appraiser measures each part multiple times)",
         "mainAssumptions": "Parts and appraisers are representative of the process; measurements repeated per part/appraiser combination",
-        "resultMeaning": "Variance components (repeatability, reproducibility, part-to-part) and %GRR to judge measurement system adequacy."
+        "resultMeaning": "Variance components (repeatability, reproducibility, part-to-part) and %GRR to judge measurement system adequacy, with plots optionally bundled into one grid and the part axis optionally sorted."
     },
     "johnsonCapabilityPro": {
         "dialog": "Process Capability Analysis (non-normal data with Johnson Transformation)",
@@ -6285,7 +6285,7 @@
         "numberOfGroups": "1",
         "pairedIndependent": "N/A",
         "mainAssumptions": "Approximately normal population; one-sided or two-sided specification limit(s)",
-        "resultMeaning": "The k-factor, capability needed, and when observed mean and SD are supplied, the achieved tolerance limit, capability ratio C with PASS/FAIL, and a capability chart."
+        "resultMeaning": "The k-factor, capability needed, and when observed mean and SD are supplied, the achieved tolerance limit, capability ratio C with PASS/FAIL, and a capability chart/dashboard with a customizable title and subtitle."
     },
     "createMixtureDesignPro": {
         "dialog": "Create Mixture Design",
@@ -6346,5 +6346,29 @@
         "pairedIndependent": "N/A",
         "mainAssumptions": "Each component is approximately normal; truncation bounds reflect real physical limits; good starting values may be needed for 3+ components",
         "resultMeaning": "Estimated component proportions, means and SDs (and bounds when truncated), log-likelihood/BIC, optional bootstrap SEs, and a histogram with the fitted density."
+    },
+    "MoodsMedianTestPro": {
+        "dialog": "Mood's Median Test",
+        "menu": "ANALYSIS",
+        "outcome": "Nonparametric test of whether two or more independent groups have the same population median, using a chi-square test on counts above and at-or-below the grand median, with per-group medians, IQRs and median confidence intervals.",
+        "typicalQuestion": "Do the medians of these groups differ, without assuming normality?",
+        "dataType": "Numeric response with a categorical grouping variable",
+        "predictorType": "Group (factor)",
+        "numberOfGroups": "2+",
+        "pairedIndependent": "Independent",
+        "mainAssumptions": "Independent observations; groups have similarly shaped distributions; enough observations per group for the chi-square approximation",
+        "resultMeaning": "Chi-square statistic, DF and p-value for equal medians, a descriptive table per group, and an optional boxplot."
+    },
+    "probabilityPlotPro": {
+        "dialog": "Probability Plot",
+        "menu": "GRAPHICS",
+        "outcome": "Plots data values against cumulative percentages on a distribution-scaled axis (Normal, Lognormal, Weibull, Exponential, Logistic, Loglogistic, smallest or largest extreme value) so points fall on a straight line if the distribution fits, with fitted line, confidence bands and optional grouping or overlay.",
+        "typicalQuestion": "Does my data follow this distribution, and what are its estimated percentiles?",
+        "dataType": "One or more numeric variables, optional grouping variable",
+        "predictorType": "N/A - distribution fit visualization",
+        "numberOfGroups": "1+ (optional grouping)",
+        "pairedIndependent": "N/A",
+        "mainAssumptions": "Independent observations; the chosen distribution is a plausible candidate",
+        "resultMeaning": "A probability plot per variable or group with fitted line and confidence bands, plus optional parameter and goodness-of-fit statistics."
     }
 }

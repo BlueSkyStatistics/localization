@@ -1,0 +1,14 @@
+{
+  "title": "Teste da Mediana de Mood",
+  "navigation": "Teste da Mediana de Mood",
+  "variableSelcted": "Selecione a variável de resposta (numérica)",
+  "factorSelcted": "Selecione a variável fator (grupos a comparar)",
+  "confLevel": "Nível de confiança para os intervalos de confiança da mediana (entre 0 e 1, padrão 0.95)",
+  "showBoxplotChk": "Mostrar boxplot dos grupos com a linha da mediana geral",
+  "showPlotStatsChk": "Imprimir os valores da mediana, Q1 e Q3 no boxplot",
+  "help": {
+    "title": "Teste da Mediana de Mood Pro",
+    "r_help": "help(chisq.test, package = stats)",
+    "body": "\n                <b>Descrição</b></br>\n                O teste da mediana de Mood é um teste não paramétrico para verificar se dois ou mais grupos independentes têm a mesma mediana populacional.\n                <br/>\n                <br/>\n                <b>Como funciona</b><br/>\n                1. A mediana geral (grand) de todas as observações é calculada.<br/>\n                2. Para cada grupo, as observações iguais ou abaixo da mediana geral (N&lt;=) e acima dela (N&gt;) são contadas.<br/>\n                3. Um teste de qui-quadrado de Pearson de associação é realizado na tabela resultante de grupos x 2. DF = número de grupos - 1.<br/>\n                <br/>\n                A hipótese nula é que todas as medianas populacionais são iguais. A hipótese alternativa é que nem todas as medianas populacionais são iguais. Se o valor p for menor ou igual ao seu nível de significância (por exemplo, 0.05), pelo menos uma mediana de grupo difere.\n                <br/>\n                <br/>\n                <b>Saída</b><br/>\n                <b>Estatísticas descritivas</b> - para cada grupo e para todos os dados combinados: N, mediana, N&lt;=, N&gt;, o intervalo interquartil (Q3 - Q1) e um intervalo de confiança para a mediana. O intervalo de confiança é o intervalo de interpolação não linear do teste de sinal de uma amostra. Para um grupo com menos de seis observações, o nível de confiança alcançado é inferior ao nível solicitado (reportado no rodapé da tabela).<br/>\n                <b>Teste</b> - DF, estatística do qui-quadrado e valor p.<br/>\n                <b>Boxplot</b> (opcional) - um box por grupo com uma linha tracejada na mediana geral. As bordas do box são Q1 e Q3 e a linha dentro do box é a mediana do grupo, calculada da mesma forma que na tabela descritiva. As "
+  }
+}

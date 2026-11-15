@@ -12,8 +12,11 @@
   "useHistStdDevProcVarChk": "Gage 평가 값을 추정하기 위해 역사적 표준 편차 사용 (%StudyVar 테이블)",
   "sigma": "시그마 - 연구 변동 계산에 사용할 표준 편차의 숫자 값",
   "tolerance": "허용 오차 - 허용 오차의 숫자 값 - 기본값 (usl - lsl)",
+  "bundlePlotsChk": "모든 플롯을 단일 두 열 그리드로 묶기",
+  "sortPartLevelsChk": "값에 따라 부품 축 정렬 (데이터 세트 순서를 사용하려면 선택 해제)",
+  "alphaNumericSortChk": "알파벳 숫자 정렬 (예: 1, 10, 2, 3, ... — 숫자 정렬 1, 2, 3, ..., 10을 위해 선택 해제)",
   "alphaLim": "알파 - 상호 작용을 고려하기 위한 한계",
-  "errorTerm": "모델의 어떤 항을 오차 항으로 사용할 것인지 (상호 작용이 있는 모델의 경우)",
+  "errorTerm": "모델의 어떤 항을 오류 항으로 사용할 것인지 (상호 작용이 있는 모델의 경우)",
   "method": "수행할 분석 유형, 교차 (기본값) 또는 중첩",
   "label1": "게이지 R&R 연구 보고서 헤더 세부정보",
   "gageName": "게이지 이름",
@@ -27,6 +30,6 @@
   "help": {
     "title": "게이지 R&R - 측정 시스템 분석",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tss.rr 함수는 프로세스의 측정 시스템 평가를 위한 게이지 R&R 분석을 수행합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(ss.rr, package = SixSigma)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 gageR_R_piston_diameter_with_measurements.xlsx라는 샘플 데이터셋 파일을 사용할 수 있습니다. 파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t\t샘플 데이터셋에서 직경 변수를 측정 변수로, 피스톤링을 부품 변수로, 운영자를 평가자로 선택합니다.\n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>설명</b></br>\n\t\t\t\tss.rr 함수는 프로세스의 측정 시스템 평가를 위한 게이지 R&R 분석을 수행합니다.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t자세한 도움말은 R help(ss.rr, package = SixSigma)를 사용하세요.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\t이것을 시도하려면 gageR_R_piston_diameter_with_measurements.xlsx라는 샘플 데이터 세트 파일을 사용할 수 있습니다. 파일 열기 메뉴에서 데이터 그리드에서 파일을 엽니다.\n\t\t\t\t<br/>\n\t\t\t\t샘플 데이터 세트에서 직경 변수를 측정 변수로, 피스톤 링을 부품 변수로, 운영자를 평가자로 선택합니다.\n\t\t\t\t<br/>\n\t\t\t"
   }
 }

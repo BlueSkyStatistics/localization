@@ -1,0 +1,32 @@
+{
+  "title": "Wahrscheinlichkeitsdiagramm",
+  "navigation": "Wahrscheinlichkeitsdiagramm",
+  "x": "Variable(n), geben Sie numerische Variable(n) an",
+  "group": "Gruppieren nach (optional), geben Sie eine Kategorievariable an",
+  "overlay": "Überlagern Sie mehrere Variablen in einem einzigen Diagramm",
+  "showCI": "Konfidenzintervall anzeigen",
+  "showTableOnPlot": "Parameter und Anderson-Darling-Test im Diagramm anzeigen",
+  "showStatsTable": "Parameter und Anderson-Darling-Test in der Ausgabe anzeigen",
+  "alpha": "Opazität (0-1)",
+  "size": "Punktgröße",
+  "distribution": "Verteilung",
+  "method": "Parameter-Schätzmethode",
+  "ppos": "Plot-Position (Median-Rang)",
+  "yscale": "Y-Achsen-Skalentyp",
+  "ciLevel": "Konfidenzniveau (%)",
+  "ciType": "Typ des Konfidenzintervalls",
+  "niter": "Bootstrap-Iterationen für den Anderson-Darling-p-Wert (0 = nicht berechnen; Standard 600)",
+  "specify_a_title": "Geben Sie einen Titel ein",
+  "x_title": "X-Achsen-Beschriftung",
+  "y_title": "Y-Achsen-Beschriftung",
+  "Facetrow": "Facet-Reihe",
+  "Facetcolumn": "Facet-Spalte",
+  "Facetwrap": "Facet-Wickel",
+  "Facetscale": "Facet-Skala",
+  "facets_lbl": "Facetten",
+  "help": {
+    "title": "Wahrscheinlichkeitsdiagramm",
+    "r_help": "help(ggplot, package='ggplot2')",
+    "body": "\n            <b>Beschreibung</b></br>\n            Ein Wahrscheinlichkeitsdiagramm (wie in Minitab) zeigt die Werte einer Variablen auf der X-Achse und die entsprechenden kumulierten Prozentsätze auf der Y-Achse. Die Y-Achse ist so skaliert, dass, wenn die Daten der ausgewählten Verteilung folgen, die Punkte ungefähr auf einer geraden Linie liegen. Das Diagramm wird verwendet, um zu beurteilen, wie gut eine Verteilung zu den Daten passt und um Perzentile zu schätzen. Dies unterscheidet sich von einem P-P-Diagramm (Wahrscheinlichkeiten auf beiden Achsen) und von einem Q-Q-Diagramm (theoretische Quantile auf der X-Achse).\n            <br/>\n            <b>Optionen</b>\n            <br/>\n            <ul>\n            <li>Variable(n): eine oder mehrere numerische Variablen. Standardmäßig wird für jede Variable ein separates Diagramm gezeichnet. Aktivieren Sie \"Überlagern Sie mehrere Variablen in einem einzigen Diagramm\", um sie in einem Diagramm darzustellen.</li>\n            <li>Gruppieren nach: eine optionale Kategorievariable. Jede Ebene wird separat angepasst und in einer anderen Farbe und Form angezeigt.</li>\n            <li>Verteilung: Normal, Lognormal, Weibull, Exponential, Logistisch, Loglogistisch, Kleinster Extremwert, Größter Extremwert.</li>\n            <li>Parameter-Schätzmethode: Maximum-Likelihood oder Kleinste Quadrate (Regression der Datenwerte auf die Plot-Positionen).</li>\n            <li>Plot-Position: Median-Rang (Benard) (i-0.3)/(n+0.4), Mittelwert-Rang i/(n+1) oder Hazen (i-0.5)/n.</li>\n            <li>Y-Achsen-Skalentyp: Prozent, Wahrscheinlichkeit oder Punktzahl (der transformierte Wert, der von der gewählten Verteilung verwendet wird, z.B. der z-Wert für die Normalverteilung).</li>\n            <li>Konfidenzintervall anzeigen: zieht ungefähre punktweise Konfidenzgrenzen (zweiseitig, untere oder obere) um die angepasste Linie auf dem angegebenen Konfidenzniveau.</li>\n            <li>Facetten: zieht ein separates Panel für jede Ebene der ausgewählten Variable(n). Jedes Panel wird separat angepasst.</li>\n            </ul>\n            <b>Ausgabe</b><br/>\n            Die angepasste Linie, die gezeichneten Punkte und (optional) Konfidenzgrenzen werden im Diagramm dargestellt. Die geschätzten Verteilungsparameter, N, die Anderson-Darling-Statistik (AD) und ihr p-Wert können im Diagramm und als Ausgabetabelle angezeigt werden. Der p-Wert für Normal und Lognormal (Maximum-Likelihood) stammt aus dem Anderson-Darling-Test im nortest-Paket. In allen anderen Fällen (andere Verteilungen oder Kleinste Quadrate) ist der p-Wert ein parametrischer Bootstrap-p-Wert: Proben werden aus der angepassten Verteilung simuliert, mit derselben Methode erneut angepasst, und der p-Wert ist der Anteil der simulierten AD-Statistiken, die mindestens so groß sind wie der beobachtete. Die Anzahl der Iterationen wird in den Optionen festgelegt (Standard 600, 0 = nicht berechnen, in diesem Fall wird der p-Wert als NA angezeigt). Ein fester Zufalls-Samen (123) wird verwendet, sodass die Ergebnisse reproduzierbar sind. Ein Fußzeilentext unter der Ausgabetabelle gibt an, wie die p-Werte erhalten wurden.<br/>\n            <b>Paket</b></br>\n            ggplot2;ggthemes;nortest;</br>\n            <b>Hilfe</b></br>\n            help(ggplot, package='ggplot2')</br>\n            Sonstiges: Klicken Sie auf die Schaltfläche R-Hilfe, um detaillierte R-Hilfe zu erhalten. Sie können auch help(optim), help(ad.test), help(facet_wrap), help(facet_grid) eingeben.</br>\n        "
+  }
+}

@@ -9,13 +9,14 @@
   "pctMeanRangeAsYoffset": "Desplazamiento vertical para colocar las etiquetas de los puntos medios en el gráfico",
   "pctMeanRangeAsXoffset": "Desplazamiento horizontal para colocar las etiquetas de los puntos medios en el gráfico",
   "printStatChk": "Imprimir estadísticas además de gráficos",
-  "angleXaxis_text": "Ángulo para inclinar los valores de texto del eje x (por defecto 0 para sin inclinación)",
-  "legends": "Mostrar leyendas y, de ser así, posición de las leyendas (por defecto es a la derecha)",
+  "angleXaxis_text": "Ángulo para inclinar las etiquetas de las marcas del eje x, con o sin etiquetas apiladas (0 para sin inclinación)",
+  "legends": "Mostrar leyendas y, de ser así, posición de las leyendas (el valor predeterminado es a la derecha)",
+  "stackedAxisChk": "Organizar las etiquetas de las marcas del eje x para el gráfico de grupo combinado en filas apiladas separadas, una fila por variable de agrupamiento. Si no está marcado, el eje x muestra una sola fila con la combinación de valores de grupo separados por guiones",
   "label1": "Líneas de referencia horizontales",
-  "yIntercept": "Ingrese valores de intersección Y separados por comas para las líneas horizontales, p. ej. 100, 200, 300 (es decir, valores de conteo). Las líneas se dibujarán solo si hay un eje de Conteos presente",
+  "yIntercept": "Ingrese valores de intersección Y separados por comas para las líneas horizontales, por ejemplo, 100, 200, 300 (es decir, valores de conteo). Las líneas se dibujarán solo si hay un eje de Conteos presente",
   "horizontalLinelabel": "Especifique etiquetas separadas por comas (sin comillas) para la(s) línea(s) horizontal(es)",
   "help": {
     "title": "Gráfico Multi-Vari",
-    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tUn gráfico multi-vari de una variable de respuesta cuantitativa dependiendo de una o más variables categóricas (de agrupamiento)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe pueden seleccionar cualquier número de variables de agrupamiento. La primera variable de agrupamiento seleccionada se utiliza como el eje X; cualquier\n\t\t\t\tvariable de agrupamiento restante seleccionada se combina en un solo factor de agrupamiento utilizado para color/forma y para el\n\t\t\t\topcional gráfico Multi-Vari anidado.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLos valores medios de la variable de respuesta también se trazan en el gráfico \n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Descripción</b></br>\n\t\t\t\tUn gráfico multi-vari de una variable de respuesta cuantitativa dependiendo de una o más variables categóricas (de agrupamiento)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tSe pueden seleccionar cualquier número de variables de agrupamiento. La primera variable de agrupamiento seleccionada se utiliza como el eje X; cualquier\n\t\t\t\tvariable de agrupamiento restante seleccionada se combina en un solo factor de agrupamiento utilizado para color/forma y para el\n\t\t\t\tgráfico Multi-Vari anidado opcional.\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tLos valores medios de la variable de respuesta también se trazan en el gráfico \n\t\t\t\t<br/>\n\t\t\t"
   }
 }

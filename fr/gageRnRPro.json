@@ -12,6 +12,9 @@
   "useHistStdDevProcVarChk": "Utiliser l'écart type historique pour estimer les valeurs d'évaluation de Gage (% tableau StudyVar)",
   "sigma": "Sigma - valeur numérique pour le nombre d'écarts types à utiliser dans le calcul de la variation de l'étude",
   "tolerance": "Tolérance - valeur numérique pour la tolérance - par défaut (usl - lsl)",
+  "bundlePlotsChk": "Regrouper tous les graphiques dans une seule grille à deux colonnes",
+  "sortPartLevelsChk": "Trier l'axe des pièces par valeur (décocher pour utiliser l'ordre du jeu de données)",
+  "alphaNumericSortChk": "Tri alphanumérique (par exemple, 1, 10, 2, 3, ... — décocher pour un tri numérique 1, 2, 3, ..., 10)",
   "alphaLim": "Alpha - Limite à prendre en compte pour l'interaction",
   "errorTerm": "Quel terme du modèle doit être utilisé comme terme d'erreur (pour le modèle avec interaction)",
   "method": "Type d'analyse à effectuer, croisée (par défaut) ou imbriquée",
@@ -27,6 +30,6 @@
   "help": {
     "title": "Gage R&R - Analyse du système de mesure",
     "r_help": "help(ss.rr, package = SixSigma)",
-    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tLa fonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tà partir du jeu de données d'exemple, sélectionnez la variable de diamètre comme variable mesurée, Pistonring comme variable de pièce et Opérateur comme évaluateur \n\t\t\t\t<br/>\n\t\t\t"
+    "body": "\n\t\t\t\t<b>Description</b></br>\n\t\t\t\tFonction ss.rr pour effectuer l'analyse Gage R&R pour l'évaluation du système de mesure d'un processus\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour l'aide détaillée - utilisez R help(ss.rr, package = SixSigma)\n\t\t\t\t<br/>\n\t\t\t\t<br/>\n\t\t\t\tPour essayer cela, vous pouvez utiliser le fichier de jeu de données d'exemple appelé gageR_R_piston_diameter_with_measurements.xlsx. Ouvrez le fichier dans la grille de données avec le menu d'ouverture de fichier\n\t\t\t\t<br/>\n\t\t\t\tà partir du jeu de données d'exemple, sélectionnez la variable diamètre comme variable mesurée, Pistonring comme variable de pièce et Opérateur comme évaluateur\n\t\t\t\t<br/>\n\t\t\t"
   }
 }
