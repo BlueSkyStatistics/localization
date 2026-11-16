@@ -5,7 +5,7 @@
   "Fixed": "Variabila X - Specificați una sau mai multe variabile de grupare (categorie)",
   "confidenceInterval": "Specificați o valoare a intervalului de încredere între 0 și 1, de exemplu 0.95",
   "showIntervalValuesChk": "Arată valorile medii și intervalele pe grafic",
-  "showGroupValuesonXaxisChk": "Arată valorile grupului pe axa x",
+  "showGroupValuesonXaxisChk": "Arată valorile grupurilor pe axa x",
   "supressIntervalsChk": "Arată barele de interval pe grafic",
   "priintStatTableChk": "Tipăriți tabelul cu valorile medii și intervalele",
   "facet_xChk": "Segmentează graficul folosind primul grup",
@@ -16,7 +16,7 @@
   "chartTitle": "Introduceți un titlu",
   "x_title": "Eticheta axei X",
   "y_title": "Eticheta axei Y",
-  "legends": "Arată Legendele și, dacă da, poziția Legendelor (implicit este dreapta)",
+  "legends": "Arată legende și, dacă da, poziția legendelor (implicit este dreapta)",
   "labelColor1": "Alegeți o culoare pentru punctul de dispersie",
   "labelColor2": "Alegeți o culoare pentru bara de interval",
   "colorHintLabel1": "Selectați o culoare (După selectarea culorii, faceți clic în afara controlului pentru a aplica)",
@@ -43,6 +43,6 @@
   "help": {
     "title": "Grafic de Interval",
     "r_help": "help(ggplot, package='ggplot2')",
-    "body": "\n\t\t\t<b>Descriere</b></br>\n\t\t\tCreează un grafic de dispersie, permite gruparea punctelor după una sau mai multe variabile de categorie (factor) \n\t\t\tPuteți adăuga sau elimina opțional intervale pe grafic (media și limitele intervalului mediei pe grup)\n\t\t\tPuteți adăuga sau elimina opțional un tabel care arată media și limitele intervalului mediei pe grup\n\t\t\tPuteți adăuga mai multe linii de referință orizontale cu etichetele respective pentru fiecare linie de referință\n\t\t\t<br/>\n    "
+    "body": "\n\t\t\t<b>Descriere</b></br>\n\t\t\tCreează un grafic de dispersie, permite gruparea punctelor după una sau mai multe variabile de categorie (factor) \n\t\t\tPuteți adăuga sau elimina opțional intervale pe grafic (media și limitele intervalului mediu pe grup)\n\t\t\tPuteți adăuga sau elimina opțional un tabel care arată media și limitele intervalului mediu pe grup\n\t\t\tPuteți adăuga mai multe linii de referință orizontale cu etichetele respective pentru fiecare linie de referință\n\t\t\t<br/>\n    "
   }
 }

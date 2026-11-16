@@ -37,12 +37,12 @@
   "verticalJustification": "Controlar la justificación vertical de la etiqueta",
   "hori_HorizontalJustification": "Controlar la justificación horizontal de la etiqueta",
   "addlLabelHlineTextPositionOffset": "Ajustes adicionales para posicionar el texto de la etiqueta para líneas horizontales",
-  "horiMovementHReflineLabel": "Mover texto horizontalmente a la izquierda o a la derecha - usar cualquier número con signo + o -",
+  "horiMovementHReflineLabel": "Mover texto horizontalmente a la izquierda o derecha - usar cualquier número con signo + o -",
   "nobreaklineHRefLabelandValueChk": "Marque esta casilla para eliminar la línea de ruptura entre el valor de la etiqueta y el texto de la etiqueta",
   "vertiMovementHReflineLabel": "Mover texto verticalmente hacia arriba o hacia abajo - usar cualquier número con signo + o -",
   "help": {
     "title": "Gráfico de Intervalos",
     "r_help": "help(ggplot, package='ggplot2')",
-    "body": "\n\t\t\t<b>Descripción</b></br>\n\t\t\tCrea un gráfico de dispersión, permite agrupar puntos por una o más variables de categoría (factor) \n\t\t\tOpcionalmente puede agregar o eliminar intervalos en el gráfico (media y límites de intervalo de la media por grupo)\n\t\t\tOpcionalmente puede agregar o eliminar una tabla que muestre la media y los límites de intervalo de la media por grupo\n\t\t\tPuede agregar múltiples líneas de referencia horizontales con etiquetas respectivas por línea de referencia\n\t\t\t<br/>\n    "
+    "body": "\n\t\t\t<b>Descripción</b></br>\n\t\t\tCrea un gráfico de dispersión, permite agrupar puntos por una o más variables de categoría (factor) \n\t\t\tOpcionalmente puede agregar o eliminar intervalos en el gráfico (media y límites de intervalo de la media por grupo)\n\t\t\tOpcionalmente puede agregar o eliminar una tabla que muestre la media y los límites de intervalo de la media por grupo\n\t\t\tPuede agregar múltiples líneas de referencia horizontales con respectivas etiquetas por línea de referencia\n\t\t\t<br/>\n    "
   }
 }

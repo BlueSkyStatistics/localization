@@ -26,13 +26,13 @@
   "yIntercept": "Inserisci valori di intercetta Y separati da virgola per le linee orizzontali, ad es. 100, 200, 300",
   "hLineColor": "Seleziona un colore per le linee e le etichette (Dopo la selezione del colore, fai clic al di fuori del controllo per applicare)",
   "lineType": "Seleziona il tipo di linea",
-  "horizontalLinelabel": "Specifica etichette separate da virgola (senza virgolette) per le linee orizzontali",
+  "horizontalLinelabel": "Specificare etichette separate da virgola (senza virgolette) per le linee orizzontali",
   "horizontalLinelabel_angle_text": "Angolo per inclinare il testo dell'etichetta della linea orizzontale (predefinito 0 per nessuna inclinazione)",
   "label2": "Nota: valori maggiori spostano il testo più in basso, valori minori spostano il testo più in alto",
   "addHoriRefLines": "Aggiungi linee di riferimento",
   "xyLimits": "Limiti dell'asse Y",
-  "label5": "Specifica un intervallo per i valori dell'asse Y",
-  "rangeYValues": "Specifica l'intervallo dell'asse Y, ad es. 0,100",
+  "label5": "Specificare un intervallo per i valori dell'asse Y",
+  "rangeYValues": "Specificare l'intervallo dell'asse Y, ad es. 0,100",
   "labelHori_HorizontalJustification": "Nota: valori maggiori posizionano il testo a sinistra, valori minori spostano il testo a destra",
   "verticalJustification": "Controlla la giustificazione verticale dell'etichetta",
   "hori_HorizontalJustification": "Controlla la giustificazione orizzontale dell'etichetta",
@@ -43,6 +43,6 @@
   "help": {
     "title": "Grafico degli Intervalli",
     "r_help": "help(ggplot, package='ggplot2')",
-    "body": "\n\t\t\t<b>Descrizione</b></br>\n\t\t\tCrea un grafico a dispersione, consente di raggruppare i punti per una o più variabili di categoria (fattore) \n\t\t\tPuoi aggiungere o rimuovere opzionalmente intervalli sul grafico (media e limiti di intervallo della media per gruppo)\n\t\t\tPuoi aggiungere o rimuovere opzionalmente una tabella che mostra la media e i limiti di intervallo della media per gruppo\n\t\t\tPuoi aggiungere più linee di riferimento orizzontali con rispettive etichette per ogni linea di riferimento\n\t\t\t<br/>\n    "
+    "body": "\n\t\t\t<b>Descrizione</b></br>\n\t\t\tCrea un grafico a dispersione, consente di raggruppare i punti per una o più variabili di categoria (fattore) \n\t\t\tPuoi opzionalmente aggiungere o rimuovere intervalli sul grafico (media e limiti di intervallo della media per gruppo)\n\t\t\tPuoi opzionalmente aggiungere o rimuovere una tabella che mostra la media e i limiti di intervallo della media per gruppo\n\t\t\tPuoi aggiungere più linee di riferimento orizzontali con rispettive etichette per ogni linea di riferimento\n\t\t\t<br/>\n    "
   }
 }

@@ -36,13 +36,13 @@
   "labelHori_HorizontalJustification": "참고: 더 큰 값은 텍스트를 왼쪽으로 배치하고, 더 작은 값은 텍스트를 오른쪽으로 이동시킵니다",
   "verticalJustification": "레이블의 수직 정렬을 제어합니다",
   "hori_HorizontalJustification": "레이블의 수평 정렬을 제어합니다",
-  "addlLabelHlineTextPositionOffset": "수평선에 대한 레이블 텍스트 위치를 조정하기 위한 추가 조정",
+  "addlLabelHlineTextPositionOffset": "수평선에 대한 레이블 텍스트 위치를 추가로 조정합니다",
   "horiMovementHReflineLabel": "텍스트를 수평으로 왼쪽 또는 오른쪽으로 이동 - + 또는 - 기호가 있는 숫자를 사용하십시오",
   "nobreaklineHRefLabelandValueChk": "레이블 값과 레이블 텍스트 사이의 줄 바꿈을 제거하려면 이 상자를 체크하십시오",
   "vertiMovementHReflineLabel": "텍스트를 수직으로 위 또는 아래로 이동 - + 또는 - 기호가 있는 숫자를 사용하십시오",
   "help": {
     "title": "구간 플롯",
     "r_help": "help(ggplot, package='ggplot2')",
-    "body": "\n\t\t\t<b>설명</b></br>\n\t\t\t산점도를 생성하며, 하나 이상의 카테고리(요인) 변수로 점을 그룹화할 수 있습니다.\n\t\t\t플롯에서 구간을 선택적으로 추가하거나 제거할 수 있습니다(그룹별 평균 및 평균의 구간 경계).\n\t\t\t그룹별 평균 및 평균의 구간 경계를 보여주는 테이블을 선택적으로 추가하거나 제거할 수 있습니다.\n\t\t\t각 참조선에 대해 해당 레이블과 함께 여러 개의 수평 참조선을 추가할 수 있습니다.\n\t\t\t<br/>\n    "
+    "body": "\n\t\t\t<b>설명</b></br>\n\t\t\t산점도를 생성하며, 하나 이상의 카테고리(요인) 변수로 점을 그룹화할 수 있습니다.\n\t\t\t플롯에서 구간(그룹별 평균 및 평균의 구간 경계)을 선택적으로 추가하거나 제거할 수 있습니다.\n\t\t\t그룹별 평균 및 평균의 구간 경계를 보여주는 테이블을 선택적으로 추가하거나 제거할 수 있습니다.\n\t\t\t각 참조선에 대한 레이블과 함께 여러 개의 수평 참조선을 추가할 수 있습니다.\n\t\t\t<br/>\n    "
   }
 }
