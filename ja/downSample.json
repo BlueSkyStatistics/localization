@@ -1,13 +1,13 @@
 {
   "title": "ダウンサンプル",
   "navigation": "サンプル, ダウンサンプル",
-  "description": "不均衡データのダウンサンプリング。DownSampleは、すべてのクラスがマイノリティクラスと同じ頻度になるようにデータセットをランダムにサンプリングします。",
+  "description": "不均衡データのダウンサンプリング。DownSampleは、すべてのクラスがマイノリティクラスと同じ頻度になるように、データセットをランダムにサンプリングします",
   "downsample": "データセットの名前を入力してください",
   "seed": "シードを設定",
   "dependent": "ダウンサンプルする変数",
   "help": {
     "title": "ダウンサンプル",
-    "r_help": "help(createDataPartition, package=\"caret\")",
-    "body": "\n<b>説明</b></br>\n不均衡データのダウンサンプリング。DownSampleは、すべてのクラスがマイノリティクラスと同じ頻度になるようにデータセットをランダムにサンプリングします。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \ndownSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 予測変数の行列またはデータフレーム\n</li>\n<li>\ny: クラスメンバーシップを持つ因子変数\n</li>\n<li>\nlist: 関数はlist(x, y)を返すべきか、それともxとyを結合すべきか？TRUEの場合、出力はデータフレームに強制されます。\n</li>\n<li>\nyname: list = FALSEの場合、クラス列のラベル\n</li>\n</ul>\n<b>詳細</b></br>\n単純なランダムサンプリングが多数派クラスのダウンサンプリングに使用されます。マイノリティクラスのデータはそのまま残され、サンプルはダウンサンプリングされたバージョンで再順序付けされます。</br>\nアップサンプリングの場合、元のデータはそのまま残され、マイノリティクラスに追加のサンプルが置換で追加されます。</br>\n<b>値</b><br/>\nデータフレームまたは要素xとyを持つリストのいずれか。</br>\n<b>例</b></br>\n## ばかげた例...\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n<b>パッケージ</b></br>\ncaret</br>\n<b>ヘルプ</b></br>\nhelp(downSample, package ='caret')\n"
+    "r_help": "help(BSkyDownSample, package=\"BlueSky\")",
+    "body": "\n<b>説明</b></br>\n不均衡データのダウンサンプリング。選択した変数の各クラスから、最小クラスが持つ行数と同じだけの行をランダムに保持し、すべてのクラスがマイノリティクラスと同じ頻度になるようにします。最小クラスのすべての行が保持されます。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyDownSample(data, dependent)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndata: データフレーム\n</li>\n<li>\ndependent: クラス（レベルまたは異なる値）の名前を文字列として指定します\n</li>\n</ul>\n<b>詳細</b></br>\n単純なランダムサンプリングを使用して、マジョリティクラスをダウンサンプルします。選択した変数が欠損している行（NA）は除外され、警告が表示されます。行が存在しないファクターレベルは無視されます。シードを設定すると、結果が再現可能になります。</br>\n<b>値</b><br/>\n元のデータセットと同じ列を持ち、同じ順序のデータフレーム。行は元の順序を保持します。</br>\n<b>例</b></br>\n<code> \nset.seed(12345)</br>\nDownSample <- BSkyDownSample(data = Dataset2, dependent = \"gender\")</br>\ntable(DownSample$gender)</br>\n</code> <br/>\n<b>パッケージ</b></br>\nBlueSky</br>\n<b>ヘルプ</b></br>\nhelp(BSkyDownSample, package ='BlueSky')\n"
   }
 }

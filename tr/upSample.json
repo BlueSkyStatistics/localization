@@ -1,12 +1,12 @@
 {
-  "title": "Yukarı Örnek",
-  "navigation": "Örnek, Yukarı Örnek",
+  "title": "Yukarı Örnekleme",
+  "navigation": "Örnek, Yukarı Örnekleme",
   "downsample": "Veri kümesinin adını girin",
   "seed": "Tohum ayarla",
   "dependent": "Yukarı örnekleme yapılacak değişken",
   "help": {
-    "title": "Yukarı Örnek",
-    "r_help": "help(createDataPartition, package=\"caret\")",
-    "body": "\n<b>Açıklama</b></br>\nDengesiz Verileri Yukarı Örnekleme. upSample, sınıf dağılımlarını eşitlemek için yerleştirme ile örnekler alır\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Sınıf\")\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\nx: bir tahmin değişkenleri matris veya veri çerçevesi\n</li>\n<li>\ny: sınıf üyelikleri ile bir faktör değişken\n</li>\n<li>\nlist: fonksiyonun list(x, y) mi yoksa x ve y'yi birleştirip mi döndürmesi gerekiyor? Eğer TRUE ise, çıktı bir veri çerçevesine dönüştürülecektir.\n</li>\n<li>\nyname: list = FALSE ise, sınıf sütunu için bir etiket\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nBasit rastgele örnekleme, çoğunluk sınıf(lar)ı için aşağı örnekleme yapmak için kullanılır. Azınlık sınıf verilerinin sağlam kaldığını ve örneklerin aşağı örneklenmiş versiyonda yeniden sıralanacağını unutmayın.</br>\nYukarı örnekleme için, tüm orijinal veriler sağlam kalır ve azınlık sınıflara yerleştirme ile ek örnekler eklenir.</br>\n<b>Değer</b><br/>\nYa bir veri çerçevesi ya da x ve y öğeleri ile bir liste.<br/>\n<b>Örnekler</b><br/>\n<code> \n## Saçma bir örnek...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Paket</b></br>\ncaret</br>\n<b>Yardım</b></br>\nhelp(upSample, package ='caret')\n"
+    "title": "Yukarı Örnekleme",
+    "r_help": "help(BSkyUpSample, package=\"BlueSky\")",
+    "body": "\n<b>Açıklama</b></br>\nDengesiz Verileri Yukarı Örnekleme. Tüm satırları korur ve seçilen değişkenin her sınıfına, en büyük sınıf kadar satır olana kadar (yerine koyarak örnekleme) rastgele seçilen tekrarları ekler, böylece sınıf dağılımları eşit olur.\n<br/>\n<b>Kullanım</b>\n<br/>\n<code> \nBSkyUpSample(data, dependent)\n</code> <br/>\n<b>Argümanlar</b><br/>\n<ul>\n<li>\ndata: bir veri çerçevesi\n</li>\n<li>\ndependent: sınıfları (düzeyleri veya farklı değerleri) dengelenen değişkenin adı, bir karakter dizesi olarak\n</li>\n</ul>\n<b>Ayrıntılar</b></br>\nTüm orijinal satırlar korunur ve ek satırlar azınlık sınıf(lar)ından yerine koyarak örneklenir. Seçilen değişkenin eksik (NA) olduğu satırlar dışarıda bırakılır ve bir uyarı verilir. Hiçbir satırın sahip olmadığı faktör düzeyleri göz ardı edilir. Tohum ayarlamak sonucu yeniden üretilebilir hale getirir.</br>\n<b>Değer</b><br/>\nOrijinal veri kümesiyle aynı sütunlara sahip, aynı sırada bir veri çerçevesi. Satırlar orijinal sıralarını korur, tekrar eden satırlar kopyaladıkları satırların yanındadır.<br/>\n<b>Örnekler</b><br/>\n<code> \nset.seed(12345)</br>\nUpSample <- BSkyUpSample(data = Dataset2, dependent = \"cinsiyet\")</br>\ntable(UpSample$cinsiyet)</br>\n</code> <br/>\n<b>Paket</b></br>\nBlueSky</br>\n<b>Yardım</b></br>\nhelp(BSkyUpSample, package ='BlueSky')\n"
   }
 }

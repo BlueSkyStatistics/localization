@@ -1,12 +1,12 @@
 {
-  "title": "Amostra para Cima",
-  "navigation": "Amostra, Amostra para Cima",
+  "title": "Amostragem para Cima",
+  "navigation": "Amostra, Amostragem para Cima",
   "downsample": "Digite o nome do conjunto de dados",
   "seed": "Definir semente",
-  "dependent": "Variável para amostragem para cima",
+  "dependent": "Variável para amostragem para cima por",
   "help": {
-    "title": "Amostra para Cima",
-    "r_help": "help(createDataPartition, package=\"caret\")",
-    "body": "\n<b>Descrição</b></br>\nAmostragem para Cima de Dados Desequilibrados. upSample amostra com reposição para tornar as distribuições de classe iguais\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Classe\")\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\nx: uma matriz ou data frame de variáveis preditoras\n</li>\n<li>\ny: uma variável fator com as associações de classe\n</li>\n<li>\nlist: a função deve retornar list(x, y) ou unir x e y? Se TRUE, a saída será convertida em um data frame.\n</li>\n<li>\nyname: se list = FALSE, um rótulo para a coluna de classe\n</li>\n</ul>\n<b>Detalhes</b></br>\nAmostragem aleatória simples é usada para amostrar para baixo as classes majoritárias. Note que os dados da classe minoritária permanecem intactos e que as amostras serão reordenadas na versão amostrada para baixo.</br>\nPara amostragem para cima, todos os dados originais permanecem intactos e amostras adicionais são adicionadas às classes minoritárias com reposição.</br>\n<b>Valor</b><br/>\nOu um data frame ou uma lista com elementos x e y.<br/>\n<b>Exemplos</b><br/>\n<code> \n## Um exemplo ridículo...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>Pacote</b></br>\ncaret</br>\n<b>Ajuda</b></br>\nhelp(upSample, package ='caret')\n"
+    "title": "Amostragem para Cima",
+    "r_help": "help(BSkyUpSample, package=\"BlueSky\")",
+    "body": "\n<b>Descrição</b></br>\nAmostragem para Cima de Dados Desequilibrados. Mantém todas as linhas e adiciona repetições escolhidas aleatoriamente de linhas (amostragem com reposição) para cada classe da variável selecionada até que tenha tantas linhas quanto a maior classe, de modo que as distribuições das classes sejam iguais.\n<br/>\n<b>Uso</b>\n<br/>\n<code> \nBSkyUpSample(data, dependent)\n</code> <br/>\n<b>Argumentos</b><br/>\n<ul>\n<li>\ndata: um data frame\n</li>\n<li>\ndependent: o nome da variável cujas classes (níveis ou valores distintos) são equilibradas, como uma string de caracteres\n</li>\n</ul>\n<b>Detalhes</b></br>\nTodas as linhas originais são mantidas, e linhas adicionais são amostradas com reposição da(s) classe(s) minoritária(s). Linhas onde a variável selecionada está ausente (NA) são deixadas de fora, com um aviso. Níveis de fator que nenhuma linha possui são ignorados. Definir semente torna o resultado reproduzível.</br>\n<b>Valor</b><br/>\nUm data frame com as mesmas colunas, na mesma ordem, que o conjunto de dados original. As linhas mantêm sua ordem original, com as linhas repetidas ao lado das linhas que copiam.<br/>\n<b>Exemplos</b><br/>\n<code> \nset.seed(12345)</br>\nUpSample <- BSkyUpSample(data = Dataset2, dependent = \"gender\")</br>\ntable(UpSample$gender)</br>\n</code> <br/>\n<b>Pacote</b></br>\nBlueSky</br>\n<b>Ajuda</b></br>\nhelp(BSkyUpSample, package ='BlueSky')\n"
   }
 }

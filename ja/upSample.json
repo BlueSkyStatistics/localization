@@ -6,7 +6,7 @@
   "dependent": "アップサンプルする変数",
   "help": {
     "title": "アップサンプル",
-    "r_help": "help(createDataPartition, package=\"caret\")",
-    "body": "\n<b>説明</b></br>\n不均衡データのアップサンプリング。upSampleは、クラス分布を等しくするために置換でサンプリングします\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nupSample(x, y, list = FALSE, yname = \"Class\")\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\nx: 予測変数の行列またはデータフレーム\n</li>\n<li>\ny: クラスメンバーシップを持つ因子変数\n</li>\n<li>\nlist: 関数はlist(x, y)を返すべきか、それともxとyを結合すべきか？ TRUEの場合、出力はデータフレームに強制されます。\n</li>\n<li>\nyname: list = FALSEの場合、クラス列のラベル\n</li>\n</ul>\n<b>詳細</b></br>\n単純なランダムサンプリングが多数派クラスのダウンサンプリングに使用されます。少数派クラスのデータはそのまま残され、サンプルはダウンサンプリングされたバージョンで再順序付けされます。</br>\nアップサンプリングの場合、元のデータはそのまま残され、少数派クラスに置換で追加サンプルが追加されます。</br>\n<b>値</b><br/>\nデータフレームまたは要素xとyを持つリストのいずれかです。<br/>\n<b>例</b><br/>\n<code> \n## ばかげた例...</br>\ndata(oil)</br>\ntable(oilType)</br>\ndownSample(fattyAcids, oilType)</br>\n</code> <br/>\n<b>パッケージ</b></br>\ncaret</br>\n<b>ヘルプ</b></br>\nhelp(upSample, package ='caret')\n"
+    "r_help": "help(BSkyUpSample, package=\"BlueSky\")",
+    "body": "\n<b>説明</b></br>\n不均衡データのアップサンプリング。すべての行を保持し、選択した変数の各クラスに対して行のランダムに選ばれた繰り返し（置換抽出）を追加して、最大クラスと同じ数の行になるまでクラス分布を等しくします。\n<br/>\n<b>使用法</b>\n<br/>\n<code> \nBSkyUpSample(data, dependent)\n</code> <br/>\n<b>引数</b><br/>\n<ul>\n<li>\ndata: データフレーム\n</li>\n<li>\ndependent: バランスを取る変数の名前（クラスまたは異なる値）を文字列として指定します\n</li>\n</ul>\n<b>詳細</b></br>\n元のすべての行が保持され、追加の行は少数クラスから置換抽出でサンプリングされます。選択した変数が欠落している（NA）行は警告とともに除外されます。どの行も持たない因子レベルは無視されます。シードを設定すると、結果が再現可能になります。</br>\n<b>値</b><br/>\n元のデータセットと同じ列を持ち、同じ順序のデータフレーム。行は元の順序を保持し、繰り返された行はコピーする行の隣に配置されます。<br/>\n<b>例</b><br/>\n<code> \nset.seed(12345)</br>\nUpSample <- BSkyUpSample(data = Dataset2, dependent = \"gender\")</br>\ntable(UpSample$gender)</br>\n</code> <br/>\n<b>パッケージ</b></br>\nBlueSky</br>\n<b>ヘルプ</b></br>\nhelp(BSkyUpSample, package ='BlueSky')\n"
   }
 }
