@@ -3,6 +3,7 @@
     "navigation": "Reshape Parametric Survival Data",
     "newdatasetname": "New dataset name (no spaces or special characters) to create a censored formatted dataset",
     "label1": "Select total units and select either failure or censor variable, or just select both failure and censor and leave total units empty",
+    "validationRule": "Select Total units plus either the failure or the censor variable, or select both failure and censor and leave Total units empty.",
     "variableEventSelcted": "Select the variable for event (e.g., failed)",
     "variableCensorSelcted": "Select the variable for censor (e.g., not failed)",
     "variableTotalUnitsSelcted": "Select total units only if one (not both) of failed or censored is selected above",

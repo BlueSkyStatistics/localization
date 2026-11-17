@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "Lansați Constructorul de Grafice Interactiv într-un nou browser",
+  "navigation": "Constructor de Grafice",
+  "label1": "Constructorul de Grafice este o interfață interactivă și exploratorie bazată pe browser pentru a construi iterativ Grafice/Ploturi (Dispersie, Linie, Cutie, Histogramă, Bară, Punct, Plăcintă, Interval și I-MR)",
+  "label2": "Dacă Constructorul de Grafice nu reușește să se lanseze într-un nou browser, relansați-l",
+  "label3": "Numai un singur Constructor de Grafice poate fi în funcțiune în orice moment dat. Închideți Constructorul de Grafice dacă este în execuție, înainte de a lansa unul nou",
+  "label4": "Când Constructorul de Grafice este lansat, va folosi instantaneul curent al stării datelor din toate seturile de date deschise în prezent în grila de date",
+  "label5": "După ce Constructorul de Grafice este lansat, dacă se deschide un nou set de date și se fac modificări în oricare dintre seturile de date deschise, Constructorul de Grafice trebuie să fie relansat pentru a vedea modificările de date sau seturile de date nou deschise",
+  "graphHeight": "Înălțimea (implicit 600px) Zonei de Plotare",
+  "launchAsSubprocess": "Lansați Constructorul de Grafice ca un subprocess separat astfel încât aplicația principală să rămână utilizabilă (adică, să nu fie blocată). Debifați această opțiune pentru a-l rula în cadrul sesiunii aplicației principale. Aplicația principală va fi blocată până când închideți Constructorul de Grafice. Debifați această opțiune doar dacă lansarea subprocess-ului eșuează pe sistemul dumneavoastră.",
+  "showWarnings": "Afișați mesaje de avertizare în ieșire. Se aplică doar atunci când Constructorul de Grafice rulează în cadrul sesiunii aplicației principale",
+  "help": {
+    "title": "Constructor de Grafice Interactiv",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

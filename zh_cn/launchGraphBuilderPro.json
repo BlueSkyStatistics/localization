@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "在新浏览器中启动交互式图形构建器",
+  "navigation": "图形构建器",
+  "label1": "图形构建器是一个交互式和探索性的基于浏览器的界面，用于迭代构建图形/图表（散点图、折线图、箱线图、直方图、条形图、点图、饼图、区间图和I-MR）",
+  "label2": "如果图形构建器未能在新浏览器中启动，请重新启动它",
+  "label3": "在任何给定时间只能有一个图形构建器在运行。在启动另一个之前，请关闭正在运行的图形构建器",
+  "label4": "当图形构建器启动时，它将使用当前数据网格中所有已打开数据集的数据状态的快照",
+  "label5": "在图形构建器启动后，如果打开任何新数据集并且任何已打开数据集中的数据发生变化，则需要重新启动图形构建器以查看数据变化或新打开的数据集",
+  "graphHeight": "图表区域的高度（默认600px）",
+  "launchAsSubprocess": "将图形构建器作为单独的子进程启动，以便主应用程序保持可用（即，不被阻塞）。取消选中此选项以在主应用程序会话中运行它。主应用程序将在您关闭图形构建器之前被阻塞。仅在您的系统上启动子进程失败时取消选中此选项。",
+  "showWarnings": "在输出中显示警告消息。仅在图形构建器在主应用程序会话中运行时适用",
+  "help": {
+    "title": "交互式图形构建器",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

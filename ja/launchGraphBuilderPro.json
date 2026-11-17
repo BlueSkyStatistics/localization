@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "新しいブラウザでインタラクティブグラフビルダーを起動",
+  "navigation": "グラフビルダー",
+  "label1": "グラフビルダーは、グラフ/プロット（散布図、折れ線グラフ、箱ひげ図、ヒストグラム、棒グラフ、点グラフ、円グラフ、区間、I-MR）を反復的に構築するためのインタラクティブで探索的なブラウザベースのインターフェースです。",
+  "label2": "グラフビルダーが新しいブラウザで起動しない場合は、再起動してください。",
+  "label3": "同時に操作できるグラフビルダーは1つだけです。別のものを起動する前に、実行中のグラフビルダーを閉じてください。",
+  "label4": "グラフビルダーが起動すると、データグリッドで現在開いているすべてのデータセットのデータの状態の現在のスナップショットを使用します。",
+  "label5": "グラフビルダーが起動した後に新しいデータセットが開かれたり、開いているデータセットのデータが変更された場合、データの変更や新しく開かれたデータセットを見るためにグラフビルダーを再起動する必要があります。",
+  "graphHeight": "プロットエリアの高さ（デフォルト600px）",
+  "launchAsSubprocess": "グラフビルダーを別のサブプロセスとして起動し、メインアプリが使用可能な状態を保ちます（つまり、ブロックされません）。このオプションのチェックを外すと、メインアプリセッション内で実行されます。グラフビルダーを閉じるまでメインアプリはブロックされます。このオプションのチェックを外すのは、サブプロセスの起動がシステムで失敗した場合のみです。",
+  "showWarnings": "出力に警告メッセージを表示します。グラフビルダーがメインアプリセッション内で実行されている場合にのみ適用されます。",
+  "help": {
+    "title": "インタラクティブグラフビルダー",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

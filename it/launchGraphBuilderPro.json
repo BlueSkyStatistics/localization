@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "Avvia il Costruttore di Grafici Interattivo in un nuovo browser",
+  "navigation": "Costruttore di Grafici",
+  "label1": "Il Costruttore di Grafici è un'interfaccia interattiva ed esplorativa basata su browser per costruire iterativamente Grafici/Diagrammi (Dispersione, Linea, Box, Istogramma, Barre, Punto, Torta, Intervallo e I-MR)",
+  "label2": "Se il Costruttore di Grafici non riesce ad avviarsi in un nuovo browser, riavvialo",
+  "label3": "Solo un Costruttore di Grafici può essere in funzione in un dato momento. Chiudi il Costruttore di Grafici se è in esecuzione, prima di avviarne un altro",
+  "label4": "Quando il Costruttore di Grafici viene avviato, utilizzerà l'attuale istantanea dello stato dei dati in tutti i dataset attualmente aperti nella griglia dati",
+  "label5": "Dopo che il Costruttore di Grafici è stato avviato, se viene aperto un nuovo dataset e ci sono modifiche nei dati in uno dei dataset aperti, il Costruttore di Grafici deve essere riavviato per vedere le modifiche ai dati o i nuovi dataset aperti",
+  "graphHeight": "Altezza (predefinita 600px) dell'Area del Grafico",
+  "launchAsSubprocess": "Avvia il Costruttore di Grafici come un processo secondario separato in modo che l'app principale rimanga utilizzabile (cioè, non bloccata). Deseleziona questa opzione per eseguirlo all'interno della sessione dell'app principale. L'app principale sarà bloccata fino a quando non chiudi il Costruttore di Grafici. Deseleziona questa opzione solo se l'avvio del processo secondario fallisce sul tuo sistema.",
+  "showWarnings": "Mostra messaggi di avviso nell'output. Si applica solo quando il Costruttore di Grafici viene eseguito all'interno della sessione dell'app principale",
+  "help": {
+    "title": "Costruttore di Grafici Interattivo",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

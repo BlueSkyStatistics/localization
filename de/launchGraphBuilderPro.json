@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "Interaktiven Graph Builder in einem neuen Browser starten",
+  "navigation": "Graph Builder",
+  "label1": "Der Graph Builder ist eine interaktive und explorative browserbasierte Schnittstelle, um Graphen/Plots (Streudiagramm, Linie, Box, Histogramm, Balken, Punkt, Kreis, Intervall und I-MR) iterativ zu erstellen.",
+  "label2": "Wenn der Graph Builder nicht in einem neuen Browser gestartet werden kann, starten Sie ihn erneut.",
+  "label3": "Es kann jeweils nur ein Graph Builder in Betrieb sein. Schließen Sie den Graph Builder, wenn er läuft, bevor Sie einen weiteren starten.",
+  "label4": "Wenn der Graph Builder gestartet wird, verwendet er den aktuellen Snapshot des Zustands der Daten in allen Datensätzen, die derzeit im Datenraster geöffnet sind.",
+  "label5": "Nachdem der Graph Builder gestartet wurde, muss er neu gestartet werden, um Datenänderungen oder neu geöffnete Datensätze zu sehen, wenn ein neuer Datensatz geöffnet wird und sich Daten in einem der offenen Datensätze ändern.",
+  "graphHeight": "Höhe (Standard 600px) des Plotbereichs",
+  "launchAsSubprocess": "Starten Sie den Graph Builder als separaten Unterprozess, damit die Hauptanwendung weiterhin verwendbar bleibt (d.h. nicht blockiert). Deaktivieren Sie diese Option, um ihn stattdessen innerhalb der Hauptanwendungssitzung auszuführen. Die Hauptanwendung wird blockiert, bis Sie den Graph Builder schließen. Deaktivieren Sie diese Option nur, wenn das Starten des Unterprozesses auf Ihrem System fehlschlägt.",
+  "showWarnings": "Warnmeldungen in der Ausgabe anzeigen. Gilt nur, wenn der Graph Builder innerhalb der Hauptanwendungssitzung ausgeführt wird.",
+  "help": {
+    "title": "Interaktiver Graph Builder",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

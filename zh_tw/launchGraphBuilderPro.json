@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "在新瀏覽器中啟動互動圖形生成器",
+  "navigation": "圖形生成器",
+  "label1": "圖形生成器是一個互動式和探索性的基於瀏覽器的界面，用於迭代構建圖形/圖表（散點圖、折線圖、箱形圖、直方圖、條形圖、點圖、餅圖、區間圖和I-MR）",
+  "label2": "如果圖形生成器無法在新瀏覽器中啟動，請重新啟動它",
+  "label3": "同一時間只能運行一個圖形生成器。在啟動另一個之前，請關閉正在運行的圖形生成器",
+  "label4": "當圖形生成器啟動時，它將使用數據網格中當前打開的所有數據集的數據狀態的當前快照",
+  "label5": "在圖形生成器啟動後，如果打開任何新的數據集並且任何打開的數據集中的數據發生變化，則需要重新啟動圖形生成器以查看數據變化或新打開的數據集",
+  "graphHeight": "圖形區域的高度（默認為600px）",
+  "launchAsSubprocess": "將圖形生成器作為單獨的子進程啟動，以便主應用程序保持可用（即不被阻塞）。取消選中此選項以在主應用程序會話中運行它。主應用程序將在您關閉圖形生成器之前被阻塞。僅在您的系統上啟動子進程失敗時取消選中此選項。",
+  "showWarnings": "在輸出中顯示警告消息。僅在圖形生成器在主應用程序會話中運行時適用",
+  "help": {
+    "title": "互動圖形生成器",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

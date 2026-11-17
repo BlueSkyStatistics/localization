@@ -1,15 +1,16 @@
 {
-  "title": "Riformatta i dati di sopravvivenza parametrici",
-  "navigation": "Riformatta i dati di sopravvivenza parametrici",
+  "title": "Ristruttura i dati di sopravvivenza parametrici",
+  "navigation": "Ristruttura i dati di sopravvivenza parametrici",
   "newdatasetname": "Nome del nuovo dataset (senza spazi o caratteri speciali) per creare un dataset formattato censurato",
-  "label1": "Seleziona le unità totali e seleziona la variabile di fallimento o di censura, oppure seleziona entrambe le variabili di fallimento e censura e lascia vuote le unità totali",
+  "label1": "Seleziona le unità totali e seleziona sia la variabile di fallimento che quella di censura, oppure seleziona entrambe le variabili di fallimento e censura e lascia vuote le unità totali",
+  "validationRule": "Seleziona le unità totali più una delle variabili di fallimento o di censura, oppure seleziona entrambe le variabili di fallimento e censura e lascia vuote le unità totali.",
   "variableEventSelcted": "Seleziona la variabile per l'evento (ad es., fallito)",
   "variableCensorSelcted": "Seleziona la variabile per la censura (ad es., non fallito)",
-  "variableTotalUnitsSelcted": "Seleziona le unità totali solo se una (non entrambe) delle variabili di fallito o censurato è selezionata sopra",
+  "variableTotalUnitsSelcted": "Seleziona le unità totali solo se una (non entrambe) delle variabili fallite o censurate è selezionata sopra",
   "variableSortingSelcted": "(opzionale) Seleziona una variabile per ordinare il nuovo dataset",
   "sortOrder": "Ordine di ordinamento crescente (predefinito) o decrescente",
   "help": {
-    "title": "Riformatta i dati di sopravvivenza parametrici",
+    "title": "Ristruttura i dati di sopravvivenza parametrici",
     "body": "\n\t\t\t\t<b>Descrizione</b></br>\n\t\t\t\t<br/>"
   }
 }

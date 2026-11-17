@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "Yeni bir tarayıcıda Etkileşimli Grafik Oluşturucu'yu Başlat",
+  "navigation": "Grafik Oluşturucu",
+  "label1": "Grafik Oluşturucu, Grafikler/Çizimler (Dağılım, Çizgi, Kutu, Histogram, Çubuk, Nokta, Pasta, Aralık ve I-MR) oluşturmak için etkileşimli ve keşif odaklı bir tarayıcı tabanlı arayüzdür.",
+  "label2": "Grafik Oluşturucu yeni bir tarayıcıda başlatılamazsa, yeniden başlatın.",
+  "label3": "Herhangi bir anda yalnızca bir Grafik Oluşturucu çalışabilir. Başka bir tane başlatmadan önce, çalışıyorsa Grafik Oluşturucu'yu kapatın.",
+  "label4": "Grafik Oluşturucu başlatıldığında, veri ızgarasında şu anda açık olan tüm veri setlerindeki verilerin mevcut anlık görüntüsünü kullanacaktır.",
+  "label5": "Grafik Oluşturucu başlatıldıktan sonra, herhangi bir yeni veri seti açılırsa ve açık veri setlerinden herhangi birinde veri değişiklikleri olursa, veri değişikliklerini veya yeni açılan veri setlerini görmek için Grafik Oluşturucu'yu yeniden başlatmanız gerekir.",
+  "graphHeight": "Grafik Alanının Yüksekliği (varsayılan 600px)",
+  "launchAsSubprocess": "Ana uygulamanın kullanılabilir kalması için Grafik Oluşturucu'yu ayrı bir alt işlem olarak başlatın (yani, engellenmez). Bunun yerine ana uygulama oturumu içinde çalıştırmak için bu seçeneği işaretlemeyin. Grafik Oluşturucu'yu kapatana kadar ana uygulama engellenecektir. Alt işlemi başlatmak sisteminizde başarısız olursa bu seçeneği yalnızca işaretlemeyin.",
+  "showWarnings": "Çıktıda uyarı mesajlarını göster. Sadece Grafik Oluşturucu ana uygulama oturumu içinde çalıştığında geçerlidir.",
+  "help": {
+    "title": "Etkileşimli Grafik Oluşturucu",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

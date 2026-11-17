@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "إطلاق منشئ الرسوم البيانية التفاعلي في متصفح جديد",
+  "navigation": "منشئ الرسوم البيانية",
+  "label1": "منشئ الرسوم البيانية هو واجهة تفاعلية واستكشافية قائمة على المتصفح لبناء الرسوم البيانية/المخططات (نقاط، خط، صندوق، هيستوغرام، شريط، نقطة، فطيرة، فترة، و I-MR) بشكل تكراري",
+  "label2": "إذا فشل منشئ الرسوم البيانية في الإطلاق في متصفح جديد، أعد إطلاقه",
+  "label3": "يمكن أن يكون هناك منشئ رسوم بيانية واحد فقط قيد التشغيل في أي وقت. أغلق منشئ الرسوم البيانية إذا كان قيد التشغيل، قبل إطلاق واحد آخر",
+  "label4": "عند إطلاق منشئ الرسوم البيانية، سيستخدم اللقطة الحالية لحالة البيانات في جميع مجموعات البيانات المفتوحة حاليًا في شبكة البيانات",
+  "label5": "بعد إطلاق منشئ الرسوم البيانية، إذا تم فتح أي مجموعة بيانات جديدة وأي تغييرات في البيانات في أي من مجموعات البيانات المفتوحة، يحتاج منشئ الرسوم البيانية إلى إعادة الإطلاق لرؤية تغييرات البيانات أو مجموعات البيانات الجديدة المفتوحة",
+  "graphHeight": "ارتفاع (افتراضي 600 بكسل) منطقة الرسم",
+  "launchAsSubprocess": "إطلاق منشئ الرسوم البيانية كعملية فرعية منفصلة بحيث تظل التطبيق الرئيسي قابلاً للاستخدام (أي، غير محجوز). قم بإلغاء تحديد هذا الخيار لتشغيله داخل جلسة التطبيق الرئيسي بدلاً من ذلك. سيتم حجز التطبيق الرئيسي حتى تغلق منشئ الرسوم البيانية. قم بإلغاء تحديد هذا الخيار فقط إذا فشل إطلاق العملية الفرعية على نظامك.",
+  "showWarnings": "عرض رسائل التحذير في المخرجات. ينطبق فقط عندما يعمل منشئ الرسوم البيانية داخل جلسة التطبيق الرئيسي",
+  "help": {
+    "title": "منشئ الرسوم البيانية التفاعلي",
+    "r_help": "",
+    "body": "\n        "
+  }
 }

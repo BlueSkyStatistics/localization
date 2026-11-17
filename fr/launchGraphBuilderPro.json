@@ -1,15 +1,17 @@
 {
-    "title": "Launch Interactive Graph Builder into a new browser (beta)",
-    "navigation": "Graph Builder (beta)",
-    "label1": "The Graph Builder is an interactive and exploratory browser-based interface to iteratively build Graphs/Plots (Scatter, Line, Box, Histogram, Bar, Dot, and Pie)",
-    "label2": "If the Graph Builder fails to launch into a new browser, relaunch it",
-    "label3": "One only Graph Builder can be in operation at any given time. close the Graph Builder if running, before launching another one",
-    "label4": "When the Graph Builder is launched, it will use the current snapshot of the state of the data in all the datasets currently opened in the data grid",
-    "label5": "After the Graph builder is launched, if any new dataset is opened and any data changes in any of the open dataset, the Graph builder needs to be relaunced to see the data changes or newly opened datasets",
-    "graphHeight": "Height (default 600px) of the Plot Area",
-    "help": {
-        "title": "Interactive Graph Builder",
-        "r_help": "",
-        "body": "\n        "
-    }
+  "title": "Lancer le constructeur de graphiques interactifs dans un nouveau navigateur",
+  "navigation": "Constructeur de graphiques",
+  "label1": "Le constructeur de graphiques est une interface interactive et exploratoire basée sur un navigateur pour construire itérativement des graphiques/plots (nuage de points, ligne, boîte, histogramme, barre, point, tarte, intervalle et I-MR)",
+  "label2": "Si le constructeur de graphiques ne parvient pas à se lancer dans un nouveau navigateur, relancez-le",
+  "label3": "Un seul constructeur de graphiques peut être en fonctionnement à tout moment. Fermez le constructeur de graphiques s'il est en cours d'exécution avant d'en lancer un autre",
+  "label4": "Lorsque le constructeur de graphiques est lancé, il utilisera l'instantané actuel de l'état des données dans tous les ensembles de données actuellement ouverts dans la grille de données",
+  "label5": "Après le lancement du constructeur de graphiques, si un nouvel ensemble de données est ouvert et que des données changent dans l'un des ensembles de données ouverts, le constructeur de graphiques doit être relancé pour voir les changements de données ou les nouveaux ensembles de données ouverts",
+  "graphHeight": "Hauteur (par défaut 600px) de la zone de tracé",
+  "launchAsSubprocess": "Lancer le constructeur de graphiques en tant que sous-processus séparé afin que l'application principale reste utilisable (c'est-à-dire non bloquée). Décochez cette option pour l'exécuter dans la session de l'application principale à la place. L'application principale sera bloquée jusqu'à ce que vous fermiez le constructeur de graphiques. Décochez cette option uniquement si le lancement du sous-processus échoue sur votre système.",
+  "showWarnings": "Afficher les messages d'avertissement dans la sortie. S'applique uniquement lorsque le constructeur de graphiques s'exécute à l'intérieur de la session de l'application principale",
+  "help": {
+    "title": "Constructeur de graphiques interactifs",
+    "r_help": "",
+    "body": "\n        "
+  }
 }
